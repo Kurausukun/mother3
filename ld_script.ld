@@ -22,6 +22,7 @@ SECTIONS
     .text :
 	ALIGN(4)
 	{
+        asm/crt0.o(.text);
 		asm/rom.o(.text);
 	} = 0
 

@@ -230,5 +230,5 @@ $(ELF): $(OBJ_DIR)/ld_script.ld $(OBJS)
 	cd $(OBJ_DIR) && $(LD) $(LDFLAGS) -T $(LDSCRIPT) $(OBJS_REL) ../../tools/agbcc/lib/libgcc.a ../../tools/agbcc/lib/libc.a -o ../../$@
 
 $(ROM): %.gba: %.elf
-	$(OBJCOPY) -O binary --gap-fill=0xFF --pad-to 0x8800000 $< $@
+	$(OBJCOPY) -O binary --gap-fill=0xFF --pad-to 0xA000000 $< $@
 	$(GBAFIX) $@ -p -t"$(TITLE)" -c$(GAME_CODE) -m$(MAKER_CODE) -r$(GAME_REVISION) --silent
