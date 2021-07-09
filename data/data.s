@@ -1,5 +1,26 @@
-	.section .rodata
+    .section .data
 
+    .global gUnknown_080C17A0
+gUnknown_080C17A0:
+    .word sub_080008AC+1
+    .word sub_080008D0+1
+    .word sub_080008DC+1
+    .word sub_080008DC+1
+    .word sub_080008DC+1
+    .word sub_080008DC+1
+    .word sub_080008DC+1
+    .word sub_080008DC+1
+    .word sub_080008DC+1
+    .word sub_080008DC+1
+    .word sub_080008DC+1
+    .word sub_080008DC+1
+    .word sub_080008DC+1
+    .word sub_080008DC+1
+	
+    .global gUnknown_080C17D8
+gUnknown_080C17D8:
+    .incbin "baserom.gba", 0x000C17D8, 0x28
+	
     .global gUnknown_080C1800
 gUnknown_080C1800:
     .incbin "baserom.gba", 0x000C1800, 0x258
