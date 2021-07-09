@@ -1,6 +1,6 @@
 # mother3
 
-This is a decompilation of Pokémon Emerald.
+This is a decompilation of Mother 3.
 
 It builds the following ROM:
 
