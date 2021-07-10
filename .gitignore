@@ -35,3 +35,8 @@ porymap.project.cfg
 .fuse_hidden*
 *.sna
 tools/
+*.id0
+*.id1
+*.idb
+*.nam
+*.til

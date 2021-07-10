@@ -24,6 +24,8 @@ SECTIONS
 	{
         asm/crt0.o(.text);
 		asm/rom.o(.text);
+        src/sub_080689B4.o(.text);
+        asm/rom2.o(.text);
 	} = 0
 
     .data :
@@ -32,6 +34,8 @@ SECTIONS
         data/data.o(.data);
     } = 0
     
+    _vt.9_080689B4 = 0x09F7EAA8;
+
     ROM_END = .;
     
     /* DWARF debug sections.
