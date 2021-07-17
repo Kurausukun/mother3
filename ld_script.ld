@@ -23,7 +23,7 @@ SECTIONS
 	ALIGN(4)
 	{
         asm/crt0.o(.text);
-		asm/rom.o(.text);
+        asm/rom.o(.text);
         src/core/base.o(.text);
         asm/code_080689D4.o(.text);
         src/core/fit.o(.text);
