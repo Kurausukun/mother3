@@ -23,15 +23,25 @@ SECTIONS
 	ALIGN(4)
 	{
         asm/crt0.o(.text);
-		asm/rom.o(.text);
+        asm/rom.o(.text);
+        src/core/base.o(.text);
+        asm/code_080689D4.o(.text);
+        src/core/fit.o(.text);
+        asm/rom2.o(.text);
+        src/goods.o(.text);
+        asm/rom3.o(.text);
 	} = 0
 
     .data :
 	ALIGN(4)
     {
-        data/data.o(.data);
+        data/data1.o(.data);
+        data/data2.o(.data);
     } = 0
-    
+    __vt_5Goods = 0x09F797A0;
+    __vt_4Base = 0x09F7EAA8;
+    __vt_12FitAllocator = 0x09F7EB10;
+
     ROM_END = .;
     
     /* DWARF debug sections.
