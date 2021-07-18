@@ -42,11 +42,11 @@ _0808F900:
 	ldr r4, [r1, #4]
 	subs r0, r0, r5
 	adds r1, r7, #0
-	bl sub_0808ECEC
+	bl umul3232H32
 	adds r1, r0, #0
 	adds r1, r5, r1
 	adds r0, r4, #0
-	bl sub_0808ECEC
+	bl umul3232H32
 	pop {r4, r5, r6, r7}
 	pop {r1}
 	bx r1
@@ -102,7 +102,7 @@ _0808F994: .4byte 0x68736D53
 	thumb_func_start sub_0808F998
 sub_0808F998: @ 0x0808F998
 	push {r4, r5, r6, lr}
-	ldr r0, _0808F9EC @ =sub_0808ED80
+	ldr r0, _0808F9EC @ =SoundMainRAM
 	movs r1, #2
 	rsbs r1, r1, #0
 	ands r0, r1
@@ -141,7 +141,7 @@ _0808F9E6:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0808F9EC: .4byte sub_0808ED80
+_0808F9EC: .4byte SoundMainRAM
 _0808F9F0: .4byte gUnknown_03000000
 _0808F9F4: .4byte 0x04000100
 _0808F9F8: .4byte gUnknown_03001B20
@@ -154,7 +154,7 @@ _0808FA0C: .4byte gUnknown_03002E60
 	thumb_func_start sub_0808FA10
 sub_0808FA10: @ 0x0808FA10
 	push {lr}
-	bl sub_0808ECFC
+	bl SoundMain
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -533,17 +533,17 @@ sub_0808FC7C: @ 0x0808FC7C
 	ldr r1, _0808FD58 @ =gUnknown_03002AD0
 	ldr r0, _0808FD5C @ =sub_08090CF4
 	str r0, [r1, #0x20]
-	ldr r0, _0808FD60 @ =sub_0808F8C4
+	ldr r0, _0808FD60 @ =ply_lfos
 	str r0, [r1, #0x44]
-	ldr r0, _0808FD64 @ =sub_0808F8D8
+	ldr r0, _0808FD64 @ =ply_mod
 	str r0, [r1, #0x4c]
 	ldr r0, _0808FD68 @ =sub_08090E4C
 	str r0, [r1, #0x70]
-	ldr r0, _0808FD6C @ =sub_0808F850
+	ldr r0, _0808FD6C @ =ply_endtie
 	str r0, [r1, #0x74]
 	ldr r0, _0808FD70 @ =sub_0808FEB8
 	str r0, [r1, #0x78]
-	ldr r0, _0808FD74 @ =sub_0808F5D4
+	ldr r0, _0808FD74 @ =TrackStop
 	str r0, [r1, #0x7c]
 	adds r2, r1, #0
 	adds r2, #0x80
@@ -603,12 +603,12 @@ _0808FD50: .4byte gUnknown_03007FF0
 _0808FD54: .4byte 0x68736D53
 _0808FD58: .4byte gUnknown_03002AD0
 _0808FD5C: .4byte sub_08090CF4
-_0808FD60: .4byte sub_0808F8C4
-_0808FD64: .4byte sub_0808F8D8
+_0808FD60: .4byte ply_lfos
+_0808FD64: .4byte ply_mod
 _0808FD68: .4byte sub_08090E4C
-_0808FD6C: .4byte sub_0808F850
+_0808FD6C: .4byte ply_endtie
 _0808FD70: .4byte sub_0808FEB8
-_0808FD74: .4byte sub_0808F5D4
+_0808FD74: .4byte TrackStop
 _0808FD78: .4byte sub_08090320
 _0808FD7C: .4byte sub_080903E8
 _0808FD80: .4byte sub_08090600
@@ -717,7 +717,7 @@ _0808FDEA:
 	strb r0, [r5, #6]
 	movs r0, #0xf
 	strb r0, [r5, #7]
-	ldr r0, _0808FEA8 @ =sub_0808F650
+	ldr r0, _0808FEA8 @ =ply_note
 	str r0, [r5, #0x38]
 	ldr r0, _0808FEAC @ =sub_08090F6C
 	str r0, [r5, #0x28]
@@ -726,7 +726,7 @@ _0808FDEA:
 	str r0, [r5, #0x3c]
 	ldr r4, _0808FEB0 @ =gUnknown_03002AD0
 	adds r0, r4, #0
-	bl sub_0808F194
+	bl MPlayJumpTableCopy
 	str r4, [r5, #0x34]
 	movs r0, #0x80
 	lsls r0, r0, #0xb
@@ -750,7 +750,7 @@ _0808FE98: .4byte 0x040000A0
 _0808FE9C: .4byte 0x040000A4
 _0808FEA0: .4byte gUnknown_03007FF0
 _0808FEA4: .4byte 0x050003EC
-_0808FEA8: .4byte sub_0808F650
+_0808FEA8: .4byte ply_note
 _0808FEAC: .4byte sub_08090F6C
 _0808FEB0: .4byte gUnknown_03002AD0
 _0808FEB4: .4byte 0x68736D53
@@ -1166,7 +1166,7 @@ _080901CC:
 	str r0, [r5, #0x20]
 _080901DC:
 	str r7, [r5, #0x24]
-	ldr r0, _080901F8 @ =sub_0808F358
+	ldr r0, _080901F8 @ =MPlayMain
 	str r0, [r5, #0x20]
 	ldr r0, _080901F4 @ =0x68736D53
 	str r0, [r5]
@@ -1178,7 +1178,7 @@ _080901E8:
 	.align 2, 0
 _080901F0: .4byte gUnknown_03007FF0
 _080901F4: .4byte 0x68736D53
-_080901F8: .4byte sub_0808F358
+_080901F8: .4byte MPlayMain
 
 	thumb_func_start sub_080901FC
 sub_080901FC: @ 0x080901FC
@@ -1246,7 +1246,7 @@ _08090242:
 _08090270:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0808F5D4
+	bl TrackStop
 	movs r0, #0xc0
 	strb r0, [r4]
 	mov r0, r8
@@ -1274,7 +1274,7 @@ _0809029C:
 _080902A6:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0808F5D4
+	bl TrackStop
 	mov r0, r8
 	strb r0, [r4]
 	adds r6, #1
@@ -1324,7 +1324,7 @@ sub_080902E0: @ 0x080902E0
 _08090302:
 	adds r0, r6, #0
 	adds r1, r5, #0
-	bl sub_0808F5D4
+	bl TrackStop
 	subs r4, #1
 	adds r5, #0x50
 	cmp r4, #0
@@ -1389,7 +1389,7 @@ _08090364:
 _0809037A:
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl sub_0808F5D4
+	bl TrackStop
 	ldrh r0, [r6, #0x28]
 	movs r1, #1
 	ands r1, r0
