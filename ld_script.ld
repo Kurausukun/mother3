@@ -28,8 +28,10 @@ SECTIONS
         asm/code_080689D4.o(.text);
         src/core/fit.o(.text);
         asm/rom2.o(.text);
+		asm/m4a_1.o(.text);
+		asm/rom3.o(.text);
         src/goods.o(.text);
-        asm/rom3.o(.text);
+        asm/rom4.o(.text);
 	} = 0
 
     .data :
