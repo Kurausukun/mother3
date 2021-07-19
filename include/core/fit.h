@@ -4,6 +4,12 @@
 #include "global.h"
 
 struct Fit {
+    Fit() {
+        *(u32*)sig = 0;
+        size = 0;
+        next = 0;
+    }
+
     char sig[4];
     u32 size;
     Fit* next;

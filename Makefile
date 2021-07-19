@@ -24,7 +24,7 @@ SCANINC := tools/scaninc/scaninc$(EXE)
 PREPROC := tools/preproc/preproc$(EXE)
 GBAFIX := tools/gbafix/gbafix$(EXE)
 
-CC1FLAGS := -fembedded-cxx -mthumb-interwork -Wimplicit -Wparentheses -O2 -g
+CC1FLAGS := -fno-exceptions -fno-rtti -mthumb-interwork -Wimplicit -Wparentheses -O2 -g
 CPPFLAGS := -I tools/agbcc/include -iquote include -nostdinc -undef -D VERSION_$(GAME_VERSION) -D REVISION=$(GAME_REVISION) -D $(GAME_REGION) -D DEBUG=$(DEBUG)
 ASFLAGS  := -mcpu=arm7tdmi -mthumb-interwork -I asminclude -I include --defsym VERSION_$(GAME_VERSION)=1 --defsym REVISION=$(GAME_REVISION) --defsym $(GAME_REGION)=1 --defsym DEBUG=$(DEBUG)
 

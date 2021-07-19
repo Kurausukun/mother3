@@ -28,6 +28,8 @@ SECTIONS
         asm/code_080689D4.o(.text);
         src/core/fit.o(.text);
         asm/rom2.o(.text);
+        src/core/clock.o(.text);
+        asm/rom2b.o(.text);
 		asm/m4a_1.o(.text);
 		asm/rom3.o(.text);
         src/goods.o(.text);
@@ -41,8 +43,9 @@ SECTIONS
         data/data2.o(.data);
     } = 0
     __vt_5Goods = 0x09F797A0;
-    __vt_4Base = 0x09F7EAA8;
-    __vt_12FitAllocator = 0x09F7EB10;
+    _vt.4Base = 0x09F7EAA8;
+    _vt.12FitAllocator = 0x09F7EB10;
+    _vt.5Clock = 0x09F7EBA0;
 
     ROM_END = .;
     

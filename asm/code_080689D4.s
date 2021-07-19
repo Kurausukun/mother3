@@ -3,8 +3,8 @@
 .syntax unified
 .section .text
 
-	thumb_func_start sub_080689D4
-sub_080689D4: @ 0x080689D4
+	thumb_func_start _._4Base
+_._4Base: @ 0x080689D4
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	adds r7, r1, #0
@@ -73,7 +73,7 @@ sub_08068A40: @ 0x08068A40
 	adds r0, r2, r0
 	ldr r2, [r1, #0xc]
 	movs r1, #3
-	bl sub_0809193C
+	bl _call_via_r2
 	b _08068A66
 _08068A5E:
 	ldrh r1, [r2, #2]
@@ -135,7 +135,7 @@ _08068AA0:
 	b _08068D82
 _08068AA8:
 	movs r0, #0x14
-	bl sub_0805D3B4
+	bl __builtin_new
 	str r0, [sp, #0x14]
 	str r5, [r0]
 	ldr r1, [r4, #0x1c]
@@ -143,7 +143,7 @@ _08068AA8:
 	ldrsh r0, [r1, r2]
 	adds r0, r4, r0
 	ldr r1, [r1, #0x14]
-	bl sub_08091938
+	bl _call_via_r1
 	ldr r1, [sp, #0x14]
 	str r0, [r1, #4]
 	ldr r3, [sp, #0x18]
@@ -155,7 +155,7 @@ _08068AA8:
 	ldrsh r0, [r1, r2]
 	adds r0, r4, r0
 	ldr r1, [r1, #0x14]
-	bl sub_08091938
+	bl _call_via_r1
 	str r0, [sp, #0x10]
 	adds r7, r5, #4
 	add r5, sp, #0x10
@@ -581,7 +581,7 @@ _08068DD4:
 	ldrsh r0, [r1, r6]
 	adds r0, r2, r0
 	ldr r1, [r1, #0x14]
-	bl sub_08091938
+	bl _call_via_r1
 	str r0, [sp]
 	adds r1, r4, #4
 	movs r3, #0
@@ -698,7 +698,7 @@ sub_08068EA0: @ 0x08068EA0
 	ldrsh r0, [r1, r2]
 	add r0, sl
 	ldr r1, [r1, #0x14]
-	bl sub_08091938
+	bl _call_via_r1
 	adds r3, r0, #0
 	str r3, [sp]
 	mov r0, sb
@@ -834,7 +834,7 @@ _08068F8C:
 	add r0, sb
 	ldr r2, [r1, #0xc]
 	movs r1, #3
-	bl sub_0809193C
+	bl _call_via_r2
 _08068FB4:
 	add sp, #0xc
 	pop {r3, r4, r5}
