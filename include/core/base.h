@@ -28,13 +28,16 @@ public:
     virtual void base_34();
     virtual void registerClock(Base& sender, Base& receiver, u32 mask, Callback fn);
     virtual void base_44();
-    virtual void base_4c();
-    virtual void base_54(Clock& clock);
+    virtual void base_4c(u32 mask, Base& base, u32 mask2);
+    virtual void base_54(Base& clock);
     virtual void base_5c();
     virtual void base_64();
 
-    u16 _0;
-    u16 _2;
+    void free_fit1();
+    void free_fit2();
+
+    s16 _0;
+    s16 _2;
     Fit mFit1;
     Fit mFit2;
 };

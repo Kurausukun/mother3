@@ -27,6 +27,8 @@ SECTIONS
         src/core/base.o(.text);
         asm/code_080689D4.o(.text);
         src/core/fit.o(.text);
+        asm/code_0806988C.o(.text);
+        src/core/irc.o(.text);
         asm/rom2.o(.text);
         src/core/clock.o(.text);
         asm/rom2b.o(.text);
@@ -46,6 +48,7 @@ SECTIONS
     _vt.4Base = 0x09F7EAA8;
     _vt.12FitAllocator = 0x09F7EB10;
     _vt.5Clock = 0x09F7EBA0;
+    _vt.3Irc = 0x09f7eb20;
 
     ROM_END = .;
     

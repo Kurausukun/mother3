@@ -24,6 +24,9 @@ public:
 
     virtual void* manager();
 
+    u32 getTime();
+
+private:
     u32 mTime;
 };
 

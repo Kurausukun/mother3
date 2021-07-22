@@ -10,6 +10,11 @@ struct Fit {
         next = 0;
     }
 
+    ~Fit() {
+        if (next)
+            delete next;
+    }
+
     char sig[4];
     u32 size;
     Fit* next;
