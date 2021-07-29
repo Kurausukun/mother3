@@ -24,7 +24,8 @@ SCANINC := tools/scaninc/scaninc$(EXE)
 PREPROC := tools/preproc/preproc$(EXE)
 GBAFIX := tools/gbafix/gbafix$(EXE)
 
-CC1FLAGS := -fembedded-cxx -mthumb-interwork -Wimplicit -Wparentheses -O2 -g
+CXXFLAGS := -fno-exceptions -fno-rtti
+CC1FLAGS := -mthumb-interwork -Wimplicit -Wparentheses -O2 -g
 CPPFLAGS := -I tools/agbcc/include -iquote include -nostdinc -undef -D VERSION_$(GAME_VERSION) -D REVISION=$(GAME_REVISION) -D $(GAME_REGION) -D DEBUG=$(DEBUG)
 ASFLAGS  := -mcpu=arm7tdmi -mthumb-interwork -I asminclude -I include --defsym VERSION_$(GAME_VERSION)=1 --defsym REVISION=$(GAME_REVISION) --defsym $(GAME_REGION)=1 --defsym DEBUG=$(DEBUG)
 
@@ -68,10 +69,9 @@ WAVE_ASM_BUILDDIR = $(OBJ_DIR)/$(WAVE_ASM_SUBDIR)
 
 #$(shell mkdir -p $(C_BUILDDIR) $(C_DATA_BUILDDIR) $(SRC_ASM_BUILDDIR) $(ASM_BUILDDIR) $(DATA_ASM_BUILDDIR) $(RODATA_ASM_BUILDDIR) $(SOUND_ASM_BUILDDIR) $(BANK_ASM_BUILDDIR) $(SEQ_ASM_BUILDDIR) $(WAVE_ASM_BUILDDIR))
 
-#C_SRCS_IN := $(wildcard $(C_SUBDIR)/*.c $(C_SUBDIR)/*/*.c $(C_SUBDIR)/*/*/*.c $(C_SUBDIR)/*/*/*/*.c)
-#C_SRCS := $(foreach src,$(C_SRCS_IN),$(if $(findstring .inc.c,$(src)),,$(src)))
-#C_SRCS := $(wildcard $(C_SUBDIR)/*.c)
-#C_OBJS := $(patsubst $(C_SUBDIR)/%.c,$(C_BUILDDIR)/%.o,$(C_SRCS))
+C_SRCS_IN := $(wildcard $(C_SUBDIR)/*.c $(C_SUBDIR)/*/*.c $(C_SUBDIR)/*/*/*.c $(C_SUBDIR)/*/*/*/*.c)
+C_SRCS := $(foreach src,$(C_SRCS_IN),$(if $(findstring .inc.c,$(src)),,$(src)))
+C_OBJS := $(patsubst $(C_SUBDIR)/%.c,$(C_BUILDDIR)/%.o,$(C_SRCS))
 CPP_SRCS_IN := $(wildcard $(C_SUBDIR)/*.cpp $(C_SUBDIR)/*/*.cpp $(C_SUBDIR)/*/*/*.cpp $(C_SUBDIR)/*/*/*/*.cpp)
 CPP_SRCS := $(foreach src,$(CPP_SRCS_IN),$(if $(findstring .inc.cpp,$(src)),,$(src)))
 CPP_OBJS := $(patsubst $(C_SUBDIR)/%.cpp,$(C_BUILDDIR)/%.o,$(CPP_SRCS))
@@ -199,10 +199,17 @@ $(OBJ_DIR)/sym_ewram.txt: sym_ewram.txt
 $(OBJ_DIR)/sym_iwram.txt: sym_iwram.txt
 	$(CPP) -P $(CPPFLAGS) $< | sed -e "s#tools/#../../tools/#g" > $@
 
+$(C_OBJS): $(C_SRCS)
+	$(CPP) $(CPPFLAGS) $< -o $(C_BUILDDIR)/$(<F).i
+	$(PREPROC) $(C_BUILDDIR)/$(<F).i charmap.txt > $(C_BUILDDIR)/$(<F).p.i
+	$(PREPROC) $(C_BUILDDIR)/$(<F).i charmap.txt | $(CC1) $(CC1FLAGS) -o $(C_BUILDDIR)/$(<F).s
+	@echo -e ".text\n\t.align\t2, 0\n" >> $(C_BUILDDIR)/$(<F).s
+	$(AS) $(ASFLAGS) -o $@ $(C_BUILDDIR)/$(<F).s
+
 $(C_BUILDDIR)/%.o : $(C_SUBDIR)/%.cpp $$(c_dep)
 	$(CPP) $(CPPFLAGS) $< -o $(C_BUILDDIR)/$*.i
 	$(PREPROC) $(C_BUILDDIR)/$*.i charmap.txt > $(C_BUILDDIR)/$*.p.i
-	$(PREPROC) $(C_BUILDDIR)/$*.i charmap.txt | $(CXX) $(CC1FLAGS) -o $(C_BUILDDIR)/$*.s
+	$(PREPROC) $(C_BUILDDIR)/$*.i charmap.txt | $(CXX) $(CXXFLAGS) $(CC1FLAGS) -o $(C_BUILDDIR)/$*.s
 	@echo -e ".text\n\t.align\t2, 0\n" >> $(C_BUILDDIR)/$*.s
 	$(AS) $(ASFLAGS) -o $@ $(C_BUILDDIR)/$*.s
 
@@ -232,7 +239,7 @@ $(WAVE_ASM_BUILDDIR)/%.o: $(WAVE_ASM_SUBDIR)/%.s
 	$(AS) $(ASFLAGS) -o $@ $<
     
 
-$(ELF): $(OBJ_DIR)/ld_script.ld $(OBJS)
+$(ELF): $(OBJ_DIR)/ld_script.ld $(OBJS) $(C_OBJS)
 	cd $(OBJ_DIR) && $(LD) $(LDFLAGS) -T $(LDSCRIPT) $(OBJS_REL) ../../tools/agbcc/lib/libgcc.a ../../tools/agbcc/lib/libc.a -o ../../$@
 
 $(ROM): %.gba: %.elf

@@ -24,11 +24,18 @@ SECTIONS
 	{
         asm/crt0.o(.text);
         asm/rom.o(.text);
+        src/script.o(.text);
+        asm/code_0801BEE0.o(.text);
         src/core/base.o(.text);
         asm/code_080689D4.o(.text);
         src/core/fit.o(.text);
+        asm/code_0806988C.o(.text);
+        src/core/irc.o(.text);
         asm/rom2.o(.text);
+        src/core/clock.o(.text);
+        asm/rom2b.o(.text);
 		asm/m4a_1.o(.text);
+        asm/libc.o(.text);
 		asm/rom3.o(.text);
         src/goods.o(.text);
         asm/rom4.o(.text);
@@ -41,8 +48,10 @@ SECTIONS
         data/data2.o(.data);
     } = 0
     __vt_5Goods = 0x09F797A0;
-    __vt_4Base = 0x09F7EAA8;
-    __vt_12FitAllocator = 0x09F7EB10;
+    _vt.4Base = 0x09F7EAA8;
+    _vt.12FitAllocator = 0x09F7EB10;
+    _vt.5Clock = 0x09F7EBA0;
+    _vt.3Irc = 0x09f7eb20;
 
     ROM_END = .;
     

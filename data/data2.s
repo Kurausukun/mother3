@@ -1140,8 +1140,8 @@ gUnknown_08D2D654:
 gUnknown_08D2D658:
     .incbin "baserom.gba", 0x00D2D658, 0x400
 
-    .global gUnknown_08D2DA58
-gUnknown_08D2DA58:
+    .global gScriptCmdTable
+gScriptCmdTable:
     .incbin "baserom.gba", 0x00D2DA58, 0x400
 
     .global gUnknown_08D2DE58
