@@ -24,6 +24,8 @@ SECTIONS
 	{
         asm/crt0.o(.text);
         asm/rom.o(.text);
+        src/script.o(.text);
+        asm/code_0801BEE0.o(.text);
         src/core/base.o(.text);
         asm/code_080689D4.o(.text);
         src/core/fit.o(.text);
