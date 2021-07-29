@@ -315,9 +315,9 @@
 . = 0x00015F28; gUnknown_02015F28 = .;
 . = 0x00015F30; gUnknown_02015F30 = .;
 . = 0x00015F48; gUnknown_02015F48 = .;
-. = 0x00015F58; gUnknown_02015F58 = .;
-. = 0x00015F68; gUnknown_02015F68 = .;
-. = 0x00015F70; gUnknown_02015F70 = .;
+. = 0x00015F58; eh_context_s_eh = .;
+. = 0x00015F68; eh_context_s_init = .;
+. = 0x00015F70; eh_context_s_top_elt = .;
 . = 0x00015F78; gUnknown_02015F78 = .;
 . = 0x00015F7C; gUnknown_02015F7C = .;
 . = 0x00015F80; gUnknown_02015F80 = .;

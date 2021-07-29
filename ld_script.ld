@@ -35,6 +35,7 @@ SECTIONS
         src/core/clock.o(.text);
         asm/rom2b.o(.text);
 		asm/m4a_1.o(.text);
+        asm/libc.o(.text);
 		asm/rom3.o(.text);
         src/goods.o(.text);
         asm/rom4.o(.text);

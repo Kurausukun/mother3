@@ -63,7 +63,7 @@ void sub_0802A038(s32);
 void sub_0802A0F8(u32, u32);
 
 // verify if function name is correct
-inline void scriptstack_push() {
+inline void scriptstack_pop() {
     (*gScript._9470)--;
     gScript.stack[gScript._9474] = gScript.stack[gScript._9474 - 1];
     gScript._9474++;
@@ -109,7 +109,7 @@ u16 sub_0801BF84(s32* sp) {
     if (sprite == NULL || sprite->speed == 0)
         return 0;
 
-    scriptstack_push();
+    scriptstack_pop();
     return 1;
 }
 
@@ -145,7 +145,7 @@ u16 sub_0801C074(s32* sp) {
 
     temp = scriptstack_peek(sp, 0);
     if ((gUnknown_02016028._2ca2 & temp) == 0) {
-        scriptstack_push();
+        scriptstack_pop();
         return 1;
     } else {
         scriptstack_push(gUnknown_02016028._2ca2 & temp);
@@ -165,7 +165,7 @@ u16 sub_0801C0FC(s32* sp) {
     if ((sprite == 0) || (sprite->_ca << 28 < 0))
         return 0;
 
-    scriptstack_push();
+    scriptstack_pop();
     return 1;
 }
 

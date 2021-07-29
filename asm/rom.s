@@ -718,7 +718,7 @@ sub_08000838: @ 0x08000838
 	ldr r0, _08000890 @ =gUnknown_020051F0
 	ldr r1, _08000894 @ =gUnknown_080C17A0
 	movs r2, #0x38
-	bl sub_08093C60
+	bl memcpy
 	ldr r1, _08000898 @ =0x040000D4
 	ldr r0, _0800089C @ =IntrMain
 	str r0, [r1]
@@ -10478,7 +10478,7 @@ sub_08005364: @ 0x08005364
 	ldr r0, _080053BC @ =gUnknown_020051F0
 	ldr r1, _080053C0 @ =gUnknown_080C1A58
 	movs r2, #0x38
-	bl sub_08093C60
+	bl memcpy
 	ldr r0, _080053C4 @ =sub_0803D474
 	ldr r1, _080053C8 @ =gUnknown_03004B14
 	movs r2, #0x80
