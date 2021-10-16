@@ -12,7 +12,18 @@ struct Script {
     u8 _67ae[0x16];
     u8 _67c4_1 : 6;
     u8 _67c4_40 : 1;
-    u8 _67c5[0x1cbf];
+    u8 _67c5[0x1ad4];
+    u8 party_count;
+    u8 _829a;
+    u8 _829b;
+    u8 _829c;
+    u8 _829d[0x17];
+    u16 _82b4;
+    u8 _82b6 : 1;
+    u8 _82b7;
+    u8 _82b8_1 : 5;
+    u8 _82b8_20 : 1;
+    u8 _82ba[0x1cb];
     u32 _8484;
     u8 _8488[0xc];
     u8 _8494_1 : 1;
@@ -38,7 +49,6 @@ struct Script {
     u32 _9484;
     u32 _9488;
 };
-
 Script gScript;
 
 #endif  // SCRIPT_H
