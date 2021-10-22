@@ -52647,7 +52647,7 @@ sub_080830F0: @ 0x080830F0
 	str r1, [r0, #8]
 	movs r0, #0x6c
 	muls r0, r5, r0
-	ldr r2, _08083140 @ =gUnknown_080E5108
+	ldr r2, _08083140 @ =gItemData
 	adds r0, r0, r2
 	str r0, [r4, #0x24]
 	str r6, [r4, #0x28]
@@ -52664,7 +52664,7 @@ sub_080830F0: @ 0x080830F0
 	bx r1
 	.align 2, 0
 _0808313C: .4byte 0x09F83C28
-_08083140: .4byte gUnknown_080E5108
+_08083140: .4byte gItemData
 
 	thumb_func_start sub_08083144
 sub_08083144: @ 0x08083144

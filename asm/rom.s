@@ -16009,7 +16009,7 @@ _08008138:
 	adds r6, r0, #0
 _0800814A:
 	adds r0, r4, #0
-	bl get_party_member
+	bl get_char_data
 	adds r1, r0, #0
 	ldrb r0, [r1]
 	cmp r0, #0
@@ -55844,7 +55844,7 @@ _0801B6C6:
 	ldr r5, _0801B7CC @ =0x00000FCC
 	add r5, sp
 	str r3, [r5]
-	bl sub_0801B98C
+	bl exec_cmd
 	ldr r0, _0801B7AC @ =0x00000FB4
 	add r0, sp
 	ldrh r0, [r0]
@@ -56026,7 +56026,7 @@ _0801B89E:
 	ldr r2, _0801B918 @ =0x00009476
 	adds r1, r6, r2
 	movs r2, #0
-	bl sub_0801B98C
+	bl exec_cmd
 	ldrh r0, [r4]
 	strh r0, [r5]
 	ldr r1, _0801B91C @ =0x0000845A
@@ -56110,8 +56110,8 @@ _0801B980: .4byte gUnknown_0200F064
 _0801B984: .4byte gUnknown_02000058
 _0801B988: .4byte 0xFFFFF060
 
-	thumb_func_start sub_0801B98C
-sub_0801B98C: @ 0x0801B98C
+	thumb_func_start exec_cmd
+exec_cmd: @ 0x0801B98C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -56294,7 +56294,7 @@ _0801BAE4:
 	lsls r1, r5, #2
 	subs r1, #4
 	adds r1, r6, r1
-	bl sub_0801BEE0
+	bl exec_extended
 	mov r1, sp
 	strh r0, [r1, #2]
 	ldrb r4, [r4]
