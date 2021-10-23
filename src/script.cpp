@@ -145,7 +145,7 @@ u16 sub_0801C1D0() {
     if (gScript.state_1 != 5)
         return 0;
 
-    gScript._8494_1 = 0;
+    gScript.disable_collision = 0;
     sub_08024744();
     gScript.state_80 = 1;
     sub_08005BFC();

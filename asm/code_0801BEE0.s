@@ -127821,7 +127821,7 @@ sub_0805D494: @ 0x0805D494
 	bl sub_080698C4
 	ldr r1, _0805D558 @ =gUnknown_020051F0
 	bl init__3IrcP8IrqTable
-	bl makeSingleton__t8ClockMgr1Z5Clock
+	bl init__3Mgr
 	bl sub_0806FD80
 	bl sub_0806FDB0
 	ldr r1, [r0, #0x1c]
@@ -127841,7 +127841,7 @@ sub_0805D494: @ 0x0805D494
 	bl __builtin_new
 	bl sub_08068770
 	str r0, [r5, #0x20]
-	bl getSingleton__t8ClockMgr1Z5Clock
+	bl getClock__3Mgr
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -127902,7 +127902,7 @@ _0805D588:
 	bl sub_0806B07C
 	bl sub_0806A9B0
 	bl sub_0806FDBC
-	bl destroySingleton__t8ClockMgr1Z5Clock
+	bl destroy__3Mgr
 	bl sub_080698D0
 	adds r0, r4, #0
 	adds r1, r5, #0
@@ -128162,7 +128162,7 @@ sub_0805D74C: @ 0x0805D74C
 sub_0805D768: @ 0x0805D768
 	push {lr}
 	bl sub_0806CC10
-	bl sub_0806CD50
+	bl getKeys__6KeyPad
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, #0xf
@@ -128178,7 +128178,7 @@ sub_0805D784: @ 0x0805D784
 	push {r4, lr}
 	ldr r4, _0805D798 @ =gUnknown_02001F88
 	adds r0, r4, #0
-	bl sub_08068938
+	bl __9Singleton
 	ldr r0, _0805D79C @ =0x09F44FD8
 	str r0, [r4, #8]
 	pop {r4}
@@ -128438,7 +128438,7 @@ sub_0805D8FC: @ 0x0805D8FC
 	str r0, [r7, #0x5c]
 	movs r0, #0xd4
 	bl __builtin_new
-	bl sub_0806A57C
+	bl __15struct_0806A57C
 	adds r4, r0, #0
 	str r4, [r7, #0x28]
 	bl sub_08000D54
@@ -128451,18 +128451,18 @@ sub_0805D8FC: @ 0x0805D8FC
 	movs r1, #0xe6
 _0805D95A:
 	adds r0, r4, #0
-	bl sub_0806A5C4
+	bl set__15struct_0806A57CUi
 	ldr r0, [r7, #0x28]
 	movs r5, #0x80
 	lsls r5, r5, #1
 	adds r1, r5, #0
-	bl sub_0806A5D4
+	bl set2__15struct_0806A57CUi
 	ldr r0, [r7, #0x28]
 	adds r1, r5, #0
-	bl sub_0806A5E4
+	bl set4__15struct_0806A57CUi
 	movs r0, #0xd4
 	bl __builtin_new
-	bl sub_0806A57C
+	bl __15struct_0806A57C
 	adds r4, r0, #0
 	str r4, [r7, #0x2c]
 	bl sub_08000D54
@@ -128474,16 +128474,16 @@ _0805D95A:
 	movs r1, #0xe6
 _0805D992:
 	adds r0, r4, #0
-	bl sub_0806A5C4
+	bl set__15struct_0806A57CUi
 	ldr r0, [r7, #0x2c]
 	adds r1, r5, #0
-	bl sub_0806A5D4
+	bl set2__15struct_0806A57CUi
 	ldr r0, [r7, #0x2c]
 	adds r1, r5, #0
-	bl sub_0806A5E4
+	bl set4__15struct_0806A57CUi
 	movs r0, #0xd4
 	bl __builtin_new
-	bl sub_0806A57C
+	bl __15struct_0806A57C
 	adds r4, r0, #0
 	str r4, [r7, #0x30]
 	bl sub_08000D54
@@ -128495,13 +128495,13 @@ _0805D992:
 	movs r1, #0xe6
 _0805D9C6:
 	adds r0, r4, #0
-	bl sub_0806A5C4
+	bl set__15struct_0806A57CUi
 	ldr r0, [r7, #0x30]
 	adds r1, r5, #0
-	bl sub_0806A5D4
+	bl set2__15struct_0806A57CUi
 	ldr r0, [r7, #0x30]
 	adds r1, r5, #0
-	bl sub_0806A5E4
+	bl set4__15struct_0806A57CUi
 	bl sub_0806B070
 	adds r4, r0, #0
 	adds r0, r7, #0
@@ -131080,42 +131080,42 @@ sub_0805EDD8: @ 0x0805EDD8
 	push {r4, lr}
 	ldr r4, _0805EE40 @ =gUnknown_02002004
 	adds r0, r4, #0
-	bl sub_08068938
+	bl __9Singleton
 	ldr r0, _0805EE44 @ =0x09F45618
 	str r0, [r4, #8]
 	ldr r4, _0805EE48 @ =gUnknown_02001FF8
 	adds r0, r4, #0
-	bl sub_08068938
+	bl __9Singleton
 	ldr r0, _0805EE4C @ =0x09F45598
 	str r0, [r4, #8]
 	ldr r4, _0805EE50 @ =gUnknown_02001FEC
 	adds r0, r4, #0
-	bl sub_08068938
+	bl __9Singleton
 	ldr r0, _0805EE54 @ =0x09F45518
 	str r0, [r4, #8]
 	ldr r4, _0805EE58 @ =gUnknown_02001FE0
 	adds r0, r4, #0
-	bl sub_08068938
+	bl __9Singleton
 	ldr r0, _0805EE5C @ =0x09F45498
 	str r0, [r4, #8]
 	ldr r4, _0805EE60 @ =gUnknown_02001FD4
 	adds r0, r4, #0
-	bl sub_08068938
+	bl __9Singleton
 	ldr r0, _0805EE64 @ =0x09F45418
 	str r0, [r4, #8]
 	ldr r4, _0805EE68 @ =gUnknown_02001FC8
 	adds r0, r4, #0
-	bl sub_08068938
+	bl __9Singleton
 	ldr r0, _0805EE6C @ =0x09F45398
 	str r0, [r4, #8]
 	ldr r4, _0805EE70 @ =gUnknown_02001FBC
 	adds r0, r4, #0
-	bl sub_08068938
+	bl __9Singleton
 	ldr r0, _0805EE74 @ =0x09F45318
 	str r0, [r4, #8]
 	ldr r4, _0805EE78 @ =gUnknown_02001FB0
 	adds r0, r4, #0
-	bl sub_08068938
+	bl __9Singleton
 	ldr r0, _0805EE7C @ =0x09F45298
 	str r0, [r4, #8]
 	pop {r4}
@@ -131403,7 +131403,7 @@ sub_0805F018: @ 0x0805F018
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl getSingleton__t8ClockMgr1Z5Clock
+	bl getClock__3Mgr
 	mov r8, r0
 	add r0, sp, #0x24
 	bl __4Base
@@ -132651,7 +132651,7 @@ sub_0805F98C: @ 0x0805F98C
 	str r0, [r1]
 	adds r0, r7, #0
 	bl sub_0805FA48
-	bl getSingleton__t8ClockMgr1Z5Clock
+	bl getClock__3Mgr
 	adds r5, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -136741,7 +136741,7 @@ sub_08061A68: @ 0x08061A68
 	strb r0, [r1]
 	adds r0, r5, #0
 	bl sub_08061AE8
-	bl getSingleton__t8ClockMgr1Z5Clock
+	bl getClock__3Mgr
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -137715,7 +137715,7 @@ sub_080621F0: @ 0x080621F0
 	push {r4, lr}
 	ldr r4, _08062204 @ =gUnknown_02002318
 	adds r0, r4, #0
-	bl sub_08068938
+	bl __9Singleton
 	ldr r0, _08062208 @ =0x09F4BD38
 	str r0, [r4, #8]
 	pop {r4}
@@ -138010,7 +138010,7 @@ sub_08062384: @ 0x08062384
 	strb r2, [r0]
 	adds r0, r7, #0
 	bl sub_08062448
-	bl getSingleton__t8ClockMgr1Z5Clock
+	bl getClock__3Mgr
 	adds r5, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -143286,7 +143286,7 @@ sub_08064FCC: @ 0x08064FCC
 	push {r4, lr}
 	ldr r4, _08064FE0 @ =gUnknown_020038B0
 	adds r0, r4, #0
-	bl sub_08068938
+	bl __9Singleton
 	ldr r0, _08064FE4 @ =0x09F79D20
 	str r0, [r4, #8]
 	pop {r4}
@@ -143571,7 +143571,7 @@ _080651EC:
 	add r1, sp, #4
 	bl sub_0806D4D0
 	str r4, [sp, #0xc]
-	bl getSingleton__t8ClockMgr1Z5Clock
+	bl getClock__3Mgr
 	adds r5, r0, #0
 	add r0, sp, #0x10
 	bl __4Base
@@ -144168,7 +144168,7 @@ sub_080655FC: @ 0x080655FC
 	lsrs r1, r1, #0x10
 	mov r0, sb
 	bl sub_0806DB60
-	bl getSingleton__t8ClockMgr1Z5Clock
+	bl getClock__3Mgr
 	adds r5, r0, #0
 	add r0, sp, #8
 	bl __4Base
@@ -144455,7 +144455,7 @@ sub_08065864: @ 0x08065864
 	mov r0, r8
 	movs r1, #0x29
 	bl sub_0806DB60
-	bl getSingleton__t8ClockMgr1Z5Clock
+	bl getClock__3Mgr
 	adds r6, r0, #0
 	add r0, sp, #8
 	bl __4Base
@@ -145118,7 +145118,7 @@ sub_08065DEC: @ 0x08065DEC
 	str r0, [r7, #0x34]
 	movs r0, #0xd4
 	bl __builtin_new
-	bl sub_0806A57C
+	bl __15struct_0806A57C
 	adds r4, r0, #0
 	str r4, [r7, #0x24]
 	bl sub_08000D54
@@ -145131,18 +145131,18 @@ sub_08065DEC: @ 0x08065DEC
 	movs r1, #0xe6
 _08065E1E:
 	adds r0, r4, #0
-	bl sub_0806A5C4
+	bl set__15struct_0806A57CUi
 	ldr r0, [r7, #0x24]
 	movs r5, #0x80
 	lsls r5, r5, #1
 	adds r1, r5, #0
-	bl sub_0806A5D4
+	bl set2__15struct_0806A57CUi
 	ldr r0, [r7, #0x24]
 	adds r1, r5, #0
-	bl sub_0806A5E4
+	bl set4__15struct_0806A57CUi
 	movs r0, #0xd4
 	bl __builtin_new
-	bl sub_0806A57C
+	bl __15struct_0806A57C
 	adds r4, r0, #0
 	str r4, [r7, #0x28]
 	bl sub_08000D54
@@ -145154,16 +145154,16 @@ _08065E1E:
 	movs r1, #0xe6
 _08065E56:
 	adds r0, r4, #0
-	bl sub_0806A5C4
+	bl set__15struct_0806A57CUi
 	ldr r0, [r7, #0x28]
 	adds r1, r5, #0
-	bl sub_0806A5D4
+	bl set2__15struct_0806A57CUi
 	ldr r0, [r7, #0x28]
 	adds r1, r5, #0
-	bl sub_0806A5E4
+	bl set4__15struct_0806A57CUi
 	movs r0, #0xd4
 	bl __builtin_new
-	bl sub_0806A57C
+	bl __15struct_0806A57C
 	adds r4, r0, #0
 	str r4, [r7, #0x2c]
 	bl sub_08000D54
@@ -145175,13 +145175,13 @@ _08065E56:
 	movs r1, #0xe6
 _08065E8A:
 	adds r0, r4, #0
-	bl sub_0806A5C4
+	bl set__15struct_0806A57CUi
 	ldr r0, [r7, #0x2c]
 	adds r1, r5, #0
-	bl sub_0806A5D4
+	bl set2__15struct_0806A57CUi
 	ldr r0, [r7, #0x2c]
 	adds r1, r5, #0
-	bl sub_0806A5E4
+	bl set4__15struct_0806A57CUi
 	bl sub_0806B070
 	adds r4, r0, #0
 	add r2, sp, #0x28
@@ -145250,7 +145250,7 @@ _08065E8A:
 	adds r0, r0, r2
 	ldr r1, [r1, #4]
 	bl _call_via_r1
-	bl getSingleton__t8ClockMgr1Z5Clock
+	bl getClock__3Mgr
 	adds r5, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -145544,7 +145544,7 @@ _08066178:
 	ldr r1, [r1, #4]
 	bl _call_via_r1
 	adds r1, r4, #0
-	bl sub_0806A638
+	bl setBAll__15struct_0806A57CUi
 	ldr r1, [r5, #0x1c]
 	adds r1, #0x78
 	movs r2, #0
@@ -145553,7 +145553,7 @@ _08066178:
 	ldr r1, [r1, #4]
 	bl _call_via_r1
 	adds r1, r4, #0
-	bl sub_0806A638
+	bl setBAll__15struct_0806A57CUi
 	ldr r1, [r5, #0x1c]
 	adds r1, #0x80
 	movs r2, #0
@@ -145562,7 +145562,7 @@ _08066178:
 	ldr r1, [r1, #4]
 	bl _call_via_r1
 	adds r1, r4, #0
-	bl sub_0806A638
+	bl setBAll__15struct_0806A57CUi
 	movs r0, #1
 	bl sub_0807068C
 	adds r6, #1
@@ -145597,7 +145597,7 @@ _080661E8:
 	ldr r1, [r1, #4]
 	bl _call_via_r1
 	adds r1, r4, #0
-	bl sub_0806A638
+	bl setBAll__15struct_0806A57CUi
 	ldr r1, [r5, #0x1c]
 	adds r1, #0x78
 	movs r2, #0
@@ -145606,7 +145606,7 @@ _080661E8:
 	ldr r1, [r1, #4]
 	bl _call_via_r1
 	adds r1, r4, #0
-	bl sub_0806A638
+	bl setBAll__15struct_0806A57CUi
 	ldr r1, [r5, #0x1c]
 	adds r1, #0x80
 	movs r2, #0
@@ -145615,7 +145615,7 @@ _080661E8:
 	ldr r1, [r1, #4]
 	bl _call_via_r1
 	adds r1, r4, #0
-	bl sub_0806A638
+	bl setBAll__15struct_0806A57CUi
 	movs r0, #1
 	bl sub_0807068C
 	adds r7, #1
@@ -145650,7 +145650,7 @@ sub_08066258: @ 0x08066258
 sub_0806625C: @ 0x0806625C
 	push {lr}
 	bl sub_0806CC10
-	bl sub_0806CD54
+	bl getNewKeys__6KeyPad
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, #0xf
@@ -145666,7 +145666,7 @@ sub_08066278: @ 0x08066278
 	push {r4, lr}
 	ldr r4, _0806628C @ =gUnknown_020040E0
 	adds r0, r4, #0
-	bl sub_08068938
+	bl __9Singleton
 	ldr r0, _08066290 @ =0x09F7E310
 	str r0, [r4, #8]
 	pop {r4}
@@ -150401,8 +150401,8 @@ _0806892A:
 _08068930: .4byte gUnknown_0200107C
 _08068934: .4byte gUnknown_02001070
 
-	thumb_func_start sub_08068938
-sub_08068938: @ 0x08068938
+	thumb_func_start __9Singleton
+__9Singleton: @ 0x__9Singleton
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _08068958 @ =0x09F7EA90

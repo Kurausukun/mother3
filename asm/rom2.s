@@ -853,7 +853,7 @@ sub_0806A0A8: @ 0x0806A0A8
 	push {r4, lr}
 	ldr r4, _0806A0BC @ =gUnknown_02001C5C
 	adds r0, r4, #0
-	bl sub_08068938
+	bl __9Singleton
 	ldr r0, _0806A0C0 @ =0x09F7EB88
 	str r0, [r4, #8]
 	pop {r4}

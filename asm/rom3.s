@@ -6020,7 +6020,7 @@ sub_0809A920: @ 0x0809A920
 	push {r6}
 	sub sp, #0x28
 	adds r5, r0, #0
-	bl getSingleton__t8ClockMgr1Z5Clock
+	bl getClock__3Mgr
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -6107,13 +6107,13 @@ sub_0809A9D0: @ 0x0809A9D0
 	sub sp, #0x28
 	adds r5, r0, #0
 	adds r4, r1, #0
-	bl getSingleton__t8ClockMgr1Z5Clock
-	bl sub_0806A394
+	bl getClock__3Mgr
+	bl getTime__5Clock
 	ldr r2, _0809AA34 @ =0x00000F94
 	adds r1, r5, r2
 	adds r0, r0, r4
 	str r0, [r1]
-	bl getSingleton__t8ClockMgr1Z5Clock
+	bl getClock__3Mgr
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -15114,7 +15114,7 @@ _0809F1CE:
 	adds r0, r7, #0
 	movs r1, #2
 	bl _._4Base
-	bl getSingleton__t8ClockMgr1Z5Clock
+	bl getClock__3Mgr
 	adds r6, r0, #0
 	add r0, sp, #0x44
 	bl __4Base
@@ -15247,7 +15247,7 @@ _0809F2E4:
 	adds r0, r7, #0
 	movs r1, #2
 	bl _._4Base
-	bl getSingleton__t8ClockMgr1Z5Clock
+	bl getClock__3Mgr
 	adds r5, r0, #0
 	adds r0, r7, #0
 	bl __4Base

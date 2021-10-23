@@ -52,15 +52,17 @@
 . = 0x00001C5C; gUnknown_02001C5C = .;
 . = 0x00001C68; gUnknown_02001C68 = .;
 . = 0x00001C6C; gUnknown_02001C6C = .;
-. = 0x00001C70; _t8ClockMgr1Z5Clock.mInstance = .;
-. = 0x00001C7C; _t8ClockMgr1Z12PostSysClock.mInstance = .;
-. = 0x00001C88; _t8ClockMgr1Z12PostAppClock.mInstance = .;
-. = 0x00001C94; _t8ClockMgr1Z8AppClock.mInstance = .;
-. = 0x00001CA0; _t8ClockMgr1Z11PreAppClock.mInstance = .;
-. = 0x00001CAC; _t8ClockMgr1Z8SysClock.mInstance = .;
-. = 0x00001CB8; _t8ClockMgr1Z11PreSysClock.mInstance = .;
-. = 0x00001CC4; _t8ClockMgr1Z5Clock.mSingletonGuard = .;
-. = 0x00001CC8; _t8ClockMgr1Z5Clock.mSingleton = .;
+. = 0x00001C70; _3Mgr.mInstance = .;
+. = 0x00001C70; sClockSingleton = .;
+. = 0x00001C7C; sPostSysClockSingleton = .;
+. = 0x00001C88; sPostAppClockSingleton = .;
+. = 0x00001C94; sAppClockSingleton = .;
+. = 0x00001CA0; sPreAppClockSingleton = .;
+. = 0x00001CAC; sSysClockSingleton = .;
+. = 0x00001CB8; sPreSysClockSingleton = .;
+. = 0x00001CC4; _3Mgr.mSingletonGuard = .;
+. = 0x00001CC8; _3Mgr.mSingleton = .;
+
 . = 0x00001CCC; gUnknown_02001CCC = .;
 . = 0x00001CD8; gUnknown_02001CD8 = .;
 . = 0x00001CDC; gUnknown_02001CDC = .;

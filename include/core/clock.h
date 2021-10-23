@@ -3,24 +3,24 @@
 
 #include "core/base.h"
 
-template <typename T>
-class ClockMgr {
-public:
-    static ClockMgr* get();
-    static T* getSingleton();
-    static T* makeSingleton();
-    static void destroySingleton();
-
-private:
-    static ClockMgr mInstance;
-    static s32 mSingletonGuard;
-    static T* mSingleton;
-};
-
 class Clock : public Base {
 public:
     Clock();
+    Clock(u32 time);
     virtual ~Clock();
+
+    virtual void* manager();
+
+    u32 getTime();
+
+    u32 mTime;
+};
+
+class PreSysClock : public Base {
+public:
+    PreSysClock();
+    PreSysClock(u32 time);
+    virtual ~PreSysClock();
 
     virtual void* manager();
 
@@ -30,52 +30,74 @@ private:
     u32 mTime;
 };
 
-class PreSysClock : public Clock {
-public:
-    PreSysClock();
-    virtual ~PreSysClock();
-
-    virtual void* manager();
-};
-
-class SysClock : public Clock {
+class SysClock : public Base {
 public:
     SysClock();
+    SysClock(u32 time);
     virtual ~SysClock();
 
     virtual void* manager();
+
+    u32 getTime();
+
+private:
+    u32 mTime;
 };
 
-class PreAppClock : public Clock {
+class PreAppClock : public Base {
 public:
     PreAppClock();
+    PreAppClock(u32 time);
     virtual ~PreAppClock();
 
     virtual void* manager();
+
+    u32 getTime();
+
+private:
+    u32 mTime;
 };
 
-class AppClock : public Clock {
+class AppClock : public Base {
 public:
     AppClock();
+    AppClock(u32 time);
     virtual ~AppClock();
 
     virtual void* manager();
+
+    u32 getTime();
+
+private:
+    u32 mTime;
 };
 
-class PostAppClock : public Clock {
+class PostAppClock : public Base {
 public:
     PostAppClock();
+    PostAppClock(u32 time);
     virtual ~PostAppClock();
 
     virtual void* manager();
+
+    u32 getTime();
+
+private:
+    u32 mTime;
 };
 
-class PostSysClock : public Clock {
+class PostSysClock : public Base {
 public:
     PostSysClock();
+    PostSysClock(u32 time);
     virtual ~PostSysClock();
 
     virtual void* manager();
+
+    u32 getTime();
+
+private:
+    u32 mTime;
 };
 
-#endif // CORE_CLOCK_H
+#endif  // CORE_CLOCK_H
