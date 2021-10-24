@@ -1,68 +1,68 @@
 #include "core/clock.h"
 
-ClockMgr<PreSysClock>* ClockMgr<PreSysClock>::get() {
+struct Singleton {
+    Singleton();
+
+    u32 _0;
+    u32 _4;
+
+    virtual const char* getName();
+    virtual void* init();
+};
+
+#define SINGLETON(CLASS)                                                                           \
+    struct CLASS##Singleton : Singleton {                                                          \
+        virtual const char* getName();                                                             \
+        virtual void* alloc();                                                                     \
+    };                                                                                             \
+    CLASS##Singleton s##CLASS##Singleton;                                                          \
+                                                                                                   \
+    Singleton* CLASS##Singleton_get() { return &s##CLASS##Singleton; }                            \
+                                                                                                   \
+    void* CLASS::manager() { return CLASS##Singleton_get(); }
+
+SINGLETON(PreSysClock);
+SINGLETON(SysClock);
+SINGLETON(PreAppClock);
+SINGLETON(AppClock);
+SINGLETON(PostAppClock);
+SINGLETON(PostSysClock);
+// SINGLETON(Clock);
+struct ClockSingleton : Singleton {
+    virtual const char* getName();
+    virtual void* alloc();
+    Singleton* get();
+};
+ClockSingleton sClockSingleton;
+
+class Mgr {
+public:
+    static Mgr* get();
+    static Clock* getClock();
+    static Clock* init();
+    static void destroy();
+
+private:
+    static Mgr mInstance;
+    static s32 mSingletonGuard;
+    static Clock* mSingleton;
+};
+
+Mgr* Mgr::get() {
     return &mInstance;
 }
 
-void* PreSysClock::manager() {
-    return ClockMgr<PreSysClock>::get();
-}
-
-ClockMgr<SysClock>* ClockMgr<SysClock>::get() {
-    return &mInstance;
-}
-
-void* SysClock::manager() {
-    return ClockMgr<SysClock>::get();
-}
-
-ClockMgr<PreAppClock>* ClockMgr<PreAppClock>::get() {
-    return &mInstance;
-}
-
-void* PreAppClock::manager() {
-    return ClockMgr<PreAppClock>::get();
-}
-
-ClockMgr<AppClock>* ClockMgr<AppClock>::get() {
-    return &mInstance;
-}
-
-void* AppClock::manager() {
-    return ClockMgr<AppClock>::get();
-}
-
-ClockMgr<PostAppClock>* ClockMgr<PostAppClock>::get() {
-    return &mInstance;
-}
-
-void* PostAppClock::manager() {
-    return ClockMgr<PostAppClock>::get();
-}
-
-ClockMgr<PostSysClock>* ClockMgr<PostSysClock>::get() {
-    return &mInstance;
-}
-
-void* PostSysClock::manager() {
-    return ClockMgr<PostSysClock>::get();
-}
-
-ClockMgr<Clock>* ClockMgr<Clock>::get() {
-    return &mInstance;
-}
-
-Clock* ClockMgr<Clock>::makeSingleton() {
+Clock* Mgr::init() {
     if (++mSingletonGuard == 1)
         mSingleton = new Clock();
     return mSingleton;
 }
 
-Clock* ClockMgr<Clock>::getSingleton() {
+Clock* Mgr::getClock() {
     return mSingleton;
 }
 
-void ClockMgr<Clock>::destroySingleton() {
+void Mgr::destroy() {
     if (mSingletonGuard <= 0 || --mSingletonGuard != 0)
         return;
 
@@ -72,9 +72,196 @@ void ClockMgr<Clock>::destroySingleton() {
 }
 
 void* Clock::manager() {
-    return ClockMgr<Clock>::get();
+    return Mgr::get();
 }
 
 Clock::Clock() : mTime(0) {}
 
 Clock::~Clock() {}
+
+extern "C" NAKED void sub_0806A1F8(Clock* dest, u32 count) {
+    asm_unified("\n\
+	push {r4, r5, r6, r7, lr}\n\
+	mov r7, sb\n\
+	mov r6, r8\n\
+	push {r6, r7}\n\
+	sub sp, #0x24\n\
+	adds r7, r0, #0\n\
+	mov r8, r1\n\
+	cmp r1, #0\n\
+	bgt _0806A20C\n\
+	b _0806A36A\n\
+_0806A20C:\n\
+	ldr r0, _0806A378 @ =0x09F44FF0\n\
+	mov sb, r0\n\
+_0806A210:\n\
+	adds r0, r7, #0\n\
+	bl getTime__5Clock\n\
+	cmp r0, #0\n\
+	ble _0806A2EA\n\
+	ldr r4, [r7, #0x1c]\n\
+	adds r4, #0x50\n\
+	movs r0, #0\n\
+	ldrsh r5, [r4, r0]\n\
+	adds r5, r7, r5\n\
+	adds r0, r7, #0\n\
+	bl getTime__5Clock\n\
+	adds r6, r0, #0\n\
+	mov r0, sp\n\
+	bl __4Base\n\
+	ldr r0, _0806A37C @ =0x09F7EDA0\n\
+	str r0, [sp, #0x1c]\n\
+	str r6, [sp, #0x20]\n\
+	ldr r2, [r4, #4]\n\
+	adds r0, r5, #0\n\
+	mov r1, sp\n\
+	bl _call_via_r2\n\
+	mov r0, sb\n\
+	str r0, [sp, #0x1c]\n\
+	mov r0, sp\n\
+	movs r1, #2\n\
+	bl _._4Base\n\
+	ldr r4, [r7, #0x1c]\n\
+	adds r4, #0x50\n\
+	movs r0, #0\n\
+	ldrsh r5, [r4, r0]\n\
+	adds r5, r7, r5\n\
+	adds r0, r7, #0\n\
+	bl getTime__5Clock\n\
+	adds r6, r0, #0\n\
+	mov r0, sp\n\
+	bl __4Base\n\
+	ldr r0, _0806A380 @ =0x09F7ED20\n\
+	str r0, [sp, #0x1c]\n\
+	str r6, [sp, #0x20]\n\
+	ldr r2, [r4, #4]\n\
+	adds r0, r5, #0\n\
+	mov r1, sp\n\
+	bl _call_via_r2\n\
+	mov r0, sb\n\
+	str r0, [sp, #0x1c]\n\
+	mov r0, sp\n\
+	movs r1, #2\n\
+	bl _._4Base\n\
+	ldr r4, [r7, #0x1c]\n\
+	adds r4, #0x50\n\
+	movs r0, #0\n\
+	ldrsh r5, [r4, r0]\n\
+	adds r5, r7, r5\n\
+	adds r0, r7, #0\n\
+	bl getTime__5Clock\n\
+	adds r6, r0, #0\n\
+	mov r0, sp\n\
+	bl __4Base\n\
+	ldr r0, _0806A384 @ =0x09F7ECA0\n\
+	str r0, [sp, #0x1c]\n\
+	str r6, [sp, #0x20]\n\
+	ldr r2, [r4, #4]\n\
+	adds r0, r5, #0\n\
+	mov r1, sp\n\
+	bl _call_via_r2\n\
+	mov r0, sb\n\
+	str r0, [sp, #0x1c]\n\
+	mov r0, sp\n\
+	movs r1, #2\n\
+	bl _._4Base\n\
+	ldr r4, [r7, #0x1c]\n\
+	adds r4, #0x50\n\
+	movs r0, #0\n\
+	ldrsh r5, [r4, r0]\n\
+	adds r5, r7, r5\n\
+	adds r0, r7, #0\n\
+	bl getTime__5Clock\n\
+	adds r6, r0, #0\n\
+	mov r0, sp\n\
+	bl __4Base\n\
+	ldr r0, _0806A388 @ =0x09F7EC20\n\
+	str r0, [sp, #0x1c]\n\
+	str r6, [sp, #0x20]\n\
+	ldr r2, [r4, #4]\n\
+	adds r0, r5, #0\n\
+	mov r1, sp\n\
+	bl _call_via_r2\n\
+	mov r0, sb\n\
+	str r0, [sp, #0x1c]\n\
+	mov r0, sp\n\
+	movs r1, #2\n\
+	bl _._4Base\n\
+_0806A2EA:\n\
+	bl sub_08090FBC\n\
+	ldr r0, [r7, #0x20]\n\
+	adds r0, #1\n\
+	str r0, [r7, #0x20]\n\
+	ldr r4, [r7, #0x1c]\n\
+	adds r4, #0x50\n\
+	movs r0, #0\n\
+	ldrsh r5, [r4, r0]\n\
+	adds r5, r7, r5\n\
+	adds r0, r7, #0\n\
+	bl getTime__5Clock\n\
+	adds r6, r0, #0\n\
+	mov r0, sp\n\
+	bl __4Base\n\
+	ldr r0, _0806A38C @ =0x09F7EEA0\n\
+	str r0, [sp, #0x1c]\n\
+	str r6, [sp, #0x20]\n\
+	ldr r2, [r4, #4]\n\
+	adds r0, r5, #0\n\
+	mov r1, sp\n\
+	bl _call_via_r2\n\
+	mov r0, sb\n\
+	str r0, [sp, #0x1c]\n\
+	mov r0, sp\n\
+	movs r1, #2\n\
+	bl _._4Base\n\
+	ldr r4, [r7, #0x1c]\n\
+	adds r4, #0x50\n\
+	movs r0, #0\n\
+	ldrsh r5, [r4, r0]\n\
+	adds r5, r7, r5\n\
+	adds r0, r7, #0\n\
+	bl getTime__5Clock\n\
+	adds r6, r0, #0\n\
+	mov r0, sp\n\
+	bl __4Base\n\
+	ldr r0, _0806A390 @ =0x09F7EE20\n\
+	str r0, [sp, #0x1c]\n\
+	str r6, [sp, #0x20]\n\
+	ldr r2, [r4, #4]\n\
+	adds r0, r5, #0\n\
+	mov r1, sp\n\
+	bl _call_via_r2\n\
+	mov r0, sb\n\
+	str r0, [sp, #0x1c]\n\
+	mov r0, sp\n\
+	movs r1, #2\n\
+	bl _._4Base\n\
+	movs r0, #1\n\
+	rsbs r0, r0, #0\n\
+	add r8, r0\n\
+	mov r0, r8\n\
+	cmp r0, #0\n\
+	ble _0806A36A\n\
+	b _0806A210\n\
+_0806A36A:\n\
+	add sp, #0x24\n\
+	pop {r3, r4}\n\
+	mov r8, r3\n\
+	mov sb, r4\n\
+	pop {r4, r5, r6, r7}\n\
+	pop {r0}\n\
+	bx r0\n\
+	.align 2, 0\n\
+_0806A378: .4byte 0x09F44FF0\n\
+_0806A37C: .4byte 0x09F7EDA0\n\
+_0806A380: .4byte 0x09F7ED20\n\
+_0806A384: .4byte 0x09F7ECA0\n\
+_0806A388: .4byte 0x09F7EC20\n\
+_0806A38C: .4byte 0x09F7EEA0\n\
+_0806A390: .4byte 0x09F7EE20\n\
+    ");
+}
+
+u32 Clock::getTime() {
+    return mTime;
+}

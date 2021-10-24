@@ -33,11 +33,16 @@ SECTIONS
         src/core/irc.o(.text);
         asm/rom2.o(.text);
         src/core/clock.o(.text);
+        src/core/clock_2.o(.text);
         asm/rom2b.o(.text);
+        src/keypad.o(.text);
+        asm/rom2c.o(.text);
 		asm/m4a_1.o(.text);
         asm/libc.o(.text);
 		asm/rom3.o(.text);
         src/goods.o(.text);
+        asm/rom3b.o(.text);
+        src/core/inst.o(.text);
         asm/rom4.o(.text);
 	} = 0
 
@@ -50,8 +55,23 @@ SECTIONS
     __vt_5Goods = 0x09F797A0;
     _vt.4Base = 0x09F7EAA8;
     _vt.12FitAllocator = 0x09F7EB10;
-    _vt.5Clock = 0x09F7EBA0;
     _vt.3Irc = 0x09f7eb20;
+    _vt.5Clock = 0x09F7EBA0;
+    _vt.14ClockSingleton = 0x09f7ec08;
+    _vt.12PostSysClock = 0x09f7ec20;
+    _vt.21PostSysClockSingleton = 0x09f7ec88;
+    _vt.12PostAppClock = 0x09f7eca0;
+    _vt.21PostAppClockSingleton = 0x09f7ed08;
+    _vt.8AppClock = 0x09f7ed20;
+    _vt.17AppClockSingleton = 0x09f7ed88;
+    _vt.11PreAppClock = 0x09f7eda0;
+    _vt.20PreAppClockSingleton = 0x09f7ee08;
+    _vt.8SysClock = 0x09f7ee20;
+    _vt.17SysClockSingleton = 0x09f7ee88;
+    _vt.11PreSysClock = 0x09f7eea0;
+    _vt.20PreSysClockSingleton = 0x09f7ef08;
+    _vt.Q215struct_0806A57C1A = 0x09f7ef20;
+    _vt.6KeyPad = 0x09f7fbb0;
 
     ROM_END = .;
     

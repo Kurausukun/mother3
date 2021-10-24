@@ -16,6 +16,11 @@ struct BaseNode {
     Callback fn;
 };
 
+struct ClockData {
+    u32 mask;
+    Callback callback;
+};
+
 class Base {
 public:
     Base();
