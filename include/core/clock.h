@@ -9,7 +9,7 @@ public:
     Clock(u32 time);
     virtual ~Clock();
 
-    virtual void* manager();
+    virtual void* getInstance();
 
     u32 getTime();
 
@@ -22,7 +22,7 @@ public:
     PreSysClock(u32 time);
     virtual ~PreSysClock();
 
-    virtual void* manager();
+    virtual void* getInstance();
 
     u32 getTime();
 
@@ -36,7 +36,7 @@ public:
     SysClock(u32 time);
     virtual ~SysClock();
 
-    virtual void* manager();
+    virtual void* getInstance();
 
     u32 getTime();
 
@@ -50,7 +50,7 @@ public:
     PreAppClock(u32 time);
     virtual ~PreAppClock();
 
-    virtual void* manager();
+    virtual void* getInstance();
 
     u32 getTime();
 
@@ -64,7 +64,7 @@ public:
     AppClock(u32 time);
     virtual ~AppClock();
 
-    virtual void* manager();
+    virtual void* getInstance();
 
     u32 getTime();
 
@@ -78,7 +78,7 @@ public:
     PostAppClock(u32 time);
     virtual ~PostAppClock();
 
-    virtual void* manager();
+    virtual void* getInstance();
 
     u32 getTime();
 
@@ -92,12 +92,20 @@ public:
     PostSysClock(u32 time);
     virtual ~PostSysClock();
 
-    virtual void* manager();
+    virtual void* getInstance();
 
     u32 getTime();
 
 private:
     u32 mTime;
 };
+
+SINGLETON(PreSysClock)
+SINGLETON(SysClock)
+SINGLETON(PreAppClock)
+SINGLETON(AppClock)
+SINGLETON(PostAppClock)
+SINGLETON(PostSysClock)
+SINGLETON_MGR(Clock)
 
 #endif  // CORE_CLOCK_H

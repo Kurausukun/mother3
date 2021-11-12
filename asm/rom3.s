@@ -26,7 +26,7 @@ sub_08097788: @ 0x08097788
 	push {lr}
 	movs r0, #0x24
 	bl __builtin_new
-	bl sub_0805D494
+	bl __6System
 	pop {r1}
 	bx r1
 
@@ -37,8 +37,8 @@ sub_08097798: @ 0x08097798
 	.align 2, 0
 _0809779C: .4byte gUnknown_080F24D0
 
-	thumb_func_start sub_080977A0
-sub_080977A0: @ 0x080977A0
+	thumb_func_start _._3Unk
+_._3Unk: @ 0x080977A0
 	push {lr}
 	ldr r2, _080977B0 @ =0x09F44FF0
 	str r2, [r0, #0x1c]
@@ -2179,21 +2179,21 @@ sub_080988DC: @ 0x080988DC
 	ldr r0, [r0, #8]
 	cmp r0, #0
 	beq _080988FA
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _080988FA:
 	ldr r1, _0809893C @ =0x00000F78
 	adds r0, r4, r1
 	ldr r0, [r0, #8]
 	cmp r0, #0
 	beq _08098908
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _08098908:
 	ldr r1, _08098940 @ =0x00000F6C
 	adds r0, r4, r1
 	ldr r0, [r0, #8]
 	cmp r0, #0
 	beq _08098916
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _08098916:
 	movs r1, #0xf6
 	lsls r1, r1, #4
@@ -2201,7 +2201,7 @@ _08098916:
 	ldr r0, [r0, #8]
 	cmp r0, #0
 	beq _08098926
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _08098926:
 	adds r0, r4, #0
 	adds r1, r5, #0
@@ -4791,21 +4791,21 @@ _08099EAC:
 	ldr r0, [r0, #8]
 	cmp r0, #0
 	beq _08099EC4
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _08099EC4:
 	ldr r3, _08099F10 @ =0x00000F78
 	adds r0, r4, r3
 	ldr r0, [r0, #8]
 	cmp r0, #0
 	beq _08099ED2
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _08099ED2:
 	ldr r1, _08099F14 @ =0x00000F6C
 	adds r0, r4, r1
 	ldr r0, [r0, #8]
 	cmp r0, #0
 	beq _08099EE0
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _08099EE0:
 	movs r3, #0xf6
 	lsls r3, r3, #4
@@ -4813,7 +4813,7 @@ _08099EE0:
 	ldr r0, [r0, #8]
 	cmp r0, #0
 	beq _08099EF0
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _08099EF0:
 	adds r0, r4, #0
 	adds r1, r5, #0
@@ -5977,21 +5977,21 @@ sub_0809A8B8: @ 0x0809A8B8
 	ldr r0, [r0, #8]
 	cmp r0, #0
 	beq _0809A8D6
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _0809A8D6:
 	ldr r1, _0809A918 @ =0x00000F78
 	adds r0, r4, r1
 	ldr r0, [r0, #8]
 	cmp r0, #0
 	beq _0809A8E4
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _0809A8E4:
 	ldr r1, _0809A91C @ =0x00000F6C
 	adds r0, r4, r1
 	ldr r0, [r0, #8]
 	cmp r0, #0
 	beq _0809A8F2
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _0809A8F2:
 	movs r1, #0xf6
 	lsls r1, r1, #4
@@ -5999,7 +5999,7 @@ _0809A8F2:
 	ldr r0, [r0, #8]
 	cmp r0, #0
 	beq _0809A902
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _0809A902:
 	adds r0, r4, #0
 	adds r1, r5, #0
@@ -6020,7 +6020,7 @@ sub_0809A920: @ 0x0809A920
 	push {r6}
 	sub sp, #0x28
 	adds r5, r0, #0
-	bl getClock__3Mgr
+	bl get__12ClockManager
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -6107,13 +6107,13 @@ sub_0809A9D0: @ 0x0809A9D0
 	sub sp, #0x28
 	adds r5, r0, #0
 	adds r4, r1, #0
-	bl getClock__3Mgr
+	bl get__12ClockManager
 	bl getTime__5Clock
 	ldr r2, _0809AA34 @ =0x00000F94
 	adds r1, r5, r2
 	adds r0, r0, r4
 	str r0, [r1]
-	bl getClock__3Mgr
+	bl get__12ClockManager
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -7296,21 +7296,21 @@ sub_0809B420: @ 0x0809B420
 	ldr r0, [r0, #8]
 	cmp r0, #0
 	beq _0809B43E
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _0809B43E:
 	ldr r1, _0809B480 @ =0x00000F78
 	adds r0, r4, r1
 	ldr r0, [r0, #8]
 	cmp r0, #0
 	beq _0809B44C
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _0809B44C:
 	ldr r1, _0809B484 @ =0x00000F6C
 	adds r0, r4, r1
 	ldr r0, [r0, #8]
 	cmp r0, #0
 	beq _0809B45A
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _0809B45A:
 	movs r1, #0xf6
 	lsls r1, r1, #4
@@ -7318,7 +7318,7 @@ _0809B45A:
 	ldr r0, [r0, #8]
 	cmp r0, #0
 	beq _0809B46A
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _0809B46A:
 	adds r0, r4, #0
 	adds r1, r5, #0
@@ -7386,21 +7386,21 @@ sub_0809B4D4: @ 0x0809B4D4
 	ldr r0, [r0, #8]
 	cmp r0, #0
 	beq _0809B4F2
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _0809B4F2:
 	ldr r1, _0809B534 @ =0x00000F78
 	adds r0, r4, r1
 	ldr r0, [r0, #8]
 	cmp r0, #0
 	beq _0809B500
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _0809B500:
 	ldr r1, _0809B538 @ =0x00000F6C
 	adds r0, r4, r1
 	ldr r0, [r0, #8]
 	cmp r0, #0
 	beq _0809B50E
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _0809B50E:
 	movs r1, #0xf6
 	lsls r1, r1, #4
@@ -7408,7 +7408,7 @@ _0809B50E:
 	ldr r0, [r0, #8]
 	cmp r0, #0
 	beq _0809B51E
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _0809B51E:
 	adds r0, r4, #0
 	adds r1, r5, #0
@@ -7573,7 +7573,7 @@ _0809B622:
 _0809B66E:
 	adds r5, r1, #0
 	lsls r0, r5, #2
-	bl sub_0805D3C8
+	bl __builtin_vec_new
 	adds r6, r0, #0
 	ldr r3, [r4, #8]
 	adds r2, r6, #0
@@ -7591,7 +7591,7 @@ _0809B68E:
 	ldr r0, [r4, #8]
 	cmp r0, #0
 	beq _0809B698
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _0809B698:
 	str r5, [r4]
 	str r6, [r4, #8]
@@ -7633,7 +7633,7 @@ _0809B69C:
 _0809B6E4:
 	adds r5, r1, #0
 	lsls r0, r5, #2
-	bl sub_0805D3C8
+	bl __builtin_vec_new
 	adds r6, r0, #0
 	ldr r3, [r4, #8]
 	adds r2, r6, #0
@@ -7651,7 +7651,7 @@ _0809B704:
 	ldr r0, [r4, #8]
 	cmp r0, #0
 	beq _0809B70E
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _0809B70E:
 	str r5, [r4]
 	str r6, [r4, #8]
@@ -7693,7 +7693,7 @@ _0809B712:
 _0809B75A:
 	adds r5, r1, #0
 	lsls r0, r5, #2
-	bl sub_0805D3C8
+	bl __builtin_vec_new
 	adds r6, r0, #0
 	ldr r3, [r4, #8]
 	adds r2, r6, #0
@@ -7711,7 +7711,7 @@ _0809B77A:
 	ldr r0, [r4, #8]
 	cmp r0, #0
 	beq _0809B784
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _0809B784:
 	str r5, [r4]
 	str r6, [r4, #8]
@@ -7753,7 +7753,7 @@ _0809B788:
 _0809B7D0:
 	adds r5, r1, #0
 	lsls r0, r5, #2
-	bl sub_0805D3C8
+	bl __builtin_vec_new
 	adds r6, r0, #0
 	ldr r3, [r4, #8]
 	adds r2, r6, #0
@@ -7771,7 +7771,7 @@ _0809B7F0:
 	ldr r0, [r4, #8]
 	cmp r0, #0
 	beq _0809B7FA
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _0809B7FA:
 	str r5, [r4]
 	str r6, [r4, #8]
@@ -8468,21 +8468,21 @@ sub_0809BD50: @ 0x0809BD50
 	ldr r0, [r0, #8]
 	cmp r0, #0
 	beq _0809BD6E
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _0809BD6E:
 	ldr r1, _0809BDB0 @ =0x00000F78
 	adds r0, r4, r1
 	ldr r0, [r0, #8]
 	cmp r0, #0
 	beq _0809BD7C
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _0809BD7C:
 	ldr r1, _0809BDB4 @ =0x00000F6C
 	adds r0, r4, r1
 	ldr r0, [r0, #8]
 	cmp r0, #0
 	beq _0809BD8A
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _0809BD8A:
 	movs r1, #0xf6
 	lsls r1, r1, #4
@@ -8490,7 +8490,7 @@ _0809BD8A:
 	ldr r0, [r0, #8]
 	cmp r0, #0
 	beq _0809BD9A
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _0809BD9A:
 	adds r0, r4, #0
 	adds r1, r5, #0
@@ -11124,7 +11124,7 @@ _0809D32C:
 _0809D39C:
 	adds r4, r1, #0
 	lsls r0, r4, #1
-	bl sub_0805D3C8
+	bl __builtin_vec_new
 	adds r6, r0, #0
 	ldr r3, [sp, #8]
 	adds r2, r6, #0
@@ -11144,7 +11144,7 @@ _0809D3C0:
 	ldr r0, [r5, #8]
 	cmp r0, #0
 	beq _0809D3CA
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _0809D3CA:
 	str r4, [r5]
 	str r6, [r5, #8]
@@ -11247,7 +11247,7 @@ _0809D494:
 	ldr r0, [sp, #8]
 	cmp r0, #0
 	beq _0809D4A0
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _0809D4A0:
 	adds r0, r4, #0
 	b _0809D4A6
@@ -15114,7 +15114,7 @@ _0809F1CE:
 	adds r0, r7, #0
 	movs r1, #2
 	bl _._4Base
-	bl getClock__3Mgr
+	bl get__12ClockManager
 	adds r6, r0, #0
 	add r0, sp, #0x44
 	bl __4Base
@@ -15247,7 +15247,7 @@ _0809F2E4:
 	adds r0, r7, #0
 	movs r1, #2
 	bl _._4Base
-	bl getClock__3Mgr
+	bl get__12ClockManager
 	adds r5, r0, #0
 	adds r0, r7, #0
 	bl __4Base
@@ -17373,7 +17373,7 @@ sub_080A051C: @ 0x080A051C
 	mov r4, sp
 	adds r6, r1, #0
 	movs r0, #8
-	bl sub_0805D3C8
+	bl __builtin_vec_new
 	adds r5, r0, #0
 	ldr r3, [sp, #8]
 	adds r2, r5, #0
@@ -17393,7 +17393,7 @@ _080A055A:
 	ldr r0, [r4, #8]
 	cmp r0, #0
 	beq _080A0564
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _080A0564:
 	movs r0, #4
 	str r0, [r4]
@@ -17428,7 +17428,7 @@ _080A0564:
 _080A05A2:
 	adds r4, r0, #0
 	lsls r0, r4, #1
-	bl sub_0805D3C8
+	bl __builtin_vec_new
 	adds r6, r0, #0
 	ldr r3, [sp, #8]
 	adds r2, r6, #0
@@ -17448,7 +17448,7 @@ _080A05C6:
 	ldr r0, [r5, #8]
 	cmp r0, #0
 	beq _080A05D0
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _080A05D0:
 	str r4, [r5]
 	str r6, [r5, #8]
@@ -17484,7 +17484,7 @@ _080A05E4:
 _080A060C:
 	adds r4, r0, #0
 	lsls r0, r4, #1
-	bl sub_0805D3C8
+	bl __builtin_vec_new
 	adds r6, r0, #0
 	ldr r3, [sp, #8]
 	adds r2, r6, #0
@@ -17504,7 +17504,7 @@ _080A0630:
 	ldr r0, [r5, #8]
 	cmp r0, #0
 	beq _080A063A
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _080A063A:
 	str r4, [r5]
 	str r6, [r5, #8]
@@ -17532,7 +17532,7 @@ _080A064E:
 	ldr r0, [sp, #8]
 	cmp r0, #0
 	beq _080A0672
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _080A0672:
 	adds r0, r4, #0
 	add sp, #0x14
@@ -44337,7 +44337,7 @@ sub_080ADE38: @ 0x080ADE38
 	mov r4, sp
 	adds r6, r1, #0
 	movs r0, #8
-	bl sub_0805D3C8
+	bl __builtin_vec_new
 	adds r5, r0, #0
 	ldr r3, [sp, #8]
 	adds r2, r5, #0
@@ -44357,7 +44357,7 @@ _080ADE76:
 	ldr r0, [r4, #8]
 	cmp r0, #0
 	beq _080ADE80
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _080ADE80:
 	movs r0, #4
 	str r0, [r4]
@@ -44394,7 +44394,7 @@ _080ADE80:
 _080ADEC0:
 	adds r4, r0, #0
 	lsls r0, r4, #1
-	bl sub_0805D3C8
+	bl __builtin_vec_new
 	adds r6, r0, #0
 	ldr r3, [sp, #8]
 	adds r2, r6, #0
@@ -44414,7 +44414,7 @@ _080ADEE4:
 	ldr r0, [r5, #8]
 	cmp r0, #0
 	beq _080ADEEE
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _080ADEEE:
 	str r4, [r5]
 	str r6, [r5, #8]
@@ -44454,7 +44454,7 @@ _080ADF04:
 _080ADF30:
 	adds r4, r0, #0
 	lsls r0, r4, #1
-	bl sub_0805D3C8
+	bl __builtin_vec_new
 	adds r6, r0, #0
 	ldr r3, [sp, #8]
 	adds r2, r6, #0
@@ -44474,7 +44474,7 @@ _080ADF54:
 	ldr r0, [r5, #8]
 	cmp r0, #0
 	beq _080ADF5E
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _080ADF5E:
 	str r4, [r5]
 	str r6, [r5, #8]
@@ -44514,7 +44514,7 @@ _080ADF74:
 _080ADFA0:
 	adds r4, r0, #0
 	lsls r0, r4, #1
-	bl sub_0805D3C8
+	bl __builtin_vec_new
 	adds r6, r0, #0
 	ldr r3, [sp, #8]
 	adds r2, r6, #0
@@ -44534,7 +44534,7 @@ _080ADFC4:
 	ldr r0, [r5, #8]
 	cmp r0, #0
 	beq _080ADFCE
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _080ADFCE:
 	str r4, [r5]
 	str r6, [r5, #8]
@@ -44563,7 +44563,7 @@ _080ADFE4:
 	ldr r0, [sp, #8]
 	cmp r0, #0
 	beq _080AE008
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _080AE008:
 	adds r0, r4, #0
 	add sp, #0x14
@@ -52192,7 +52192,7 @@ _080B1A1E:
 _080B1A50:
 	adds r4, r1, #0
 	lsls r0, r4, #1
-	bl sub_0805D3C8
+	bl __builtin_vec_new
 	adds r6, r0, #0
 	ldr r3, [sp, #8]
 	adds r2, r6, #0
@@ -52212,7 +52212,7 @@ _080B1A74:
 	ldr r0, [r5, #8]
 	cmp r0, #0
 	beq _080B1A7E
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _080B1A7E:
 	str r4, [r5]
 	str r6, [r5, #8]
@@ -52394,7 +52394,7 @@ _080B1C00:
 	ldr r0, [sp, #8]
 	cmp r0, #0
 	beq _080B1C0A
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _080B1C0A:
 	add sp, #0xc0
 	pop {r3, r4, r5}
@@ -56794,7 +56794,7 @@ _080B3E7E:
 _080B3EB0:
 	adds r4, r1, #0
 	lsls r0, r4, #1
-	bl sub_0805D3C8
+	bl __builtin_vec_new
 	adds r6, r0, #0
 	ldr r3, [sp, #8]
 	adds r2, r6, #0
@@ -56814,7 +56814,7 @@ _080B3ED4:
 	ldr r0, [r5, #8]
 	cmp r0, #0
 	beq _080B3EDE
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _080B3EDE:
 	str r4, [r5]
 	str r6, [r5, #8]
@@ -56967,7 +56967,7 @@ _080B401E:
 	ldr r0, [sp, #8]
 	cmp r0, #0
 	beq _080B4028
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _080B4028:
 	add sp, #0xbc
 	pop {r3, r4, r5}
@@ -57151,7 +57151,7 @@ _080B414E:
 _080B4184:
 	adds r4, r1, #0
 	lsls r0, r4, #2
-	bl sub_0805D3C8
+	bl __builtin_vec_new
 	adds r7, r0, #0
 	ldr r3, [sp, #8]
 	adds r2, r7, #0
@@ -57169,7 +57169,7 @@ _080B41A4:
 	ldr r0, [r5, #8]
 	cmp r0, #0
 	beq _080B41AE
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _080B41AE:
 	str r4, [r5]
 	str r7, [r5, #8]
@@ -57251,7 +57251,7 @@ _080B4230:
 	ldr r0, [sp, #8]
 	cmp r0, #0
 	beq _080B424E
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _080B424E:
 	adds r0, r4, #0
 _080B4250:
@@ -75624,7 +75624,7 @@ _080BD5CC:
 _080BD602:
 	adds r4, r1, #0
 	lsls r0, r4, #2
-	bl sub_0805D3C8
+	bl __builtin_vec_new
 	adds r6, r0, #0
 	ldr r3, [sp, #8]
 	adds r2, r6, #0
@@ -75642,7 +75642,7 @@ _080BD622:
 	ldr r0, [r5, #8]
 	cmp r0, #0
 	beq _080BD62C
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _080BD62C:
 	str r4, [r5]
 	str r6, [r5, #8]
@@ -75734,7 +75734,7 @@ _080BD6D8:
 	ldr r0, [sp, #8]
 	cmp r0, #0
 	beq _080BD6E8
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _080BD6E8:
 	add sp, #0x10
 	pop {r3, r4}

@@ -58,7 +58,7 @@ extern "C" NAKED KeyPad* __6KeyPad() {
 	adds r1, #0x26\n\
 	ldr r2, _0806CD14 @ =0x01000010\n\
 	bl sub_08090F78\n\
-	bl getClock__3Mgr\n\
+	bl get__12ClockManager\n\
 	mov r8, r0\n\
 	add r0, sp, #8\n\
 	bl __4Base\n\
@@ -80,7 +80,7 @@ extern "C" NAKED KeyPad* __6KeyPad() {
 	adds r0, r6, #0\n\
 	movs r1, #2\n\
 	bl _._4Base\n\
-	bl getClock__3Mgr\n\
+	bl get__12ClockManager\n\
 	mov r8, r0\n\
 	adds r0, r6, #0\n\
 	bl __4Base\n\

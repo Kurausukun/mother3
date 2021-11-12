@@ -39,8 +39,8 @@
 . = 0x00001060; gUnknown_02001060 = .;
 . = 0x00001064; gUnknown_02001064 = .;
 . = 0x00001068; gUnknown_02001068 = .;
-. = 0x00001070; gUnknown_02001070 = .;
-. = 0x0000107C; gUnknown_0200107C = .;
+. = 0x00001070; _Q29Singleton9Allocator.instance = .;
+. = 0x0000107C; _Q29Singleton9Allocator.guard = .;
 . = 0x00001080; gUnknown_02001080 = .;
 . = 0x00001084; gUnknown_02001084 = .;
 . = 0x00001A44; gUnknown_02001A44 = .;
@@ -52,7 +52,7 @@
 . = 0x00001C5C; gUnknown_02001C5C = .;
 . = 0x00001C68; gUnknown_02001C68 = .;
 . = 0x00001C6C; gUnknown_02001C6C = .;
-. = 0x00001C70; _3Mgr.mInstance = .;
+. = 0x00001C70; sClockManager = .;
 . = 0x00001C70; sClockSingleton = .;
 . = 0x00001C7C; sPostSysClockSingleton = .;
 . = 0x00001C88; sPostAppClockSingleton = .;
@@ -60,8 +60,8 @@
 . = 0x00001CA0; sPreAppClockSingleton = .;
 . = 0x00001CAC; sSysClockSingleton = .;
 . = 0x00001CB8; sPreSysClockSingleton = .;
-. = 0x00001CC4; _3Mgr.mSingletonGuard = .;
-. = 0x00001CC8; _3Mgr.mSingleton = .;
+. = 0x00001CC4; _12ClockManager.mSingletonGuard = .;
+. = 0x00001CC8; _12ClockManager.mSingleton = .;
 
 . = 0x00001CCC; gUnknown_02001CCC = .;
 . = 0x00001CD8; gUnknown_02001CD8 = .;
@@ -117,11 +117,11 @@
 . = 0x00001F20; gUnknown_02001F20 = .;
 . = 0x00001F24; gUnknown_02001F24 = .;
 . = 0x00001F28; gUnknown_02001F28 = .;
-. = 0x00001F68; gUnknown_02001F68 = .;
+. = 0x00001F68; sSystemAllocator = .;
 . = 0x00001F70; gUnknown_02001F70 = .;
-. = 0x00001F88; gUnknown_02001F88 = .;
-. = 0x00001F94; gUnknown_02001F94 = .;
-. = 0x00001F98; gUnknown_02001F98 = .;
+. = 0x00001F88; sSystemManager = .;
+. = 0x00001F94; _13SystemManager.mSingletonGuard = .;
+. = 0x00001F98; _13SystemManager.mSingleton = .;
 . = 0x00001F9C; gUnknown_02001F9C = .;
 . = 0x00001FA8; gUnknown_02001FA8 = .;
 . = 0x00001FAC; gUnknown_02001FAC = .;

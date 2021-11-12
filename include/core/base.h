@@ -2,6 +2,7 @@
 #define GUARD_CORE_BASE_H
 
 #include "core/fit.h"
+#include "core/singleton.h"
 
 class Clock;
 class Base;
@@ -26,7 +27,7 @@ public:
     Base();
     virtual ~Base();
 
-    virtual void* manager();
+    virtual void* getInstance();
     virtual void base_1c();
     virtual s32 base_24();
     virtual void base_2c();
@@ -45,6 +46,11 @@ public:
     s16 _2;
     Fit mFit1;
     Fit mFit2;
+};
+
+struct Unk : public Base {
+    Unk();
+    ~Unk() {}
 };
 
 #endif  // GUARD_CORE_BASE_H

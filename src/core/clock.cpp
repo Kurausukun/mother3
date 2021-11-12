@@ -1,79 +1,52 @@
 #include "core/clock.h"
 
-struct Singleton {
-    Singleton();
+SINGLETON_IMPL(PreSysClock)
+SINGLETON_IMPL(SysClock)
+SINGLETON_IMPL(PreAppClock)
+SINGLETON_IMPL(AppClock)
+SINGLETON_IMPL(PostAppClock)
+SINGLETON_IMPL(PostSysClock)
+SINGLETON_MGR_IMPL(Clock)
 
-    u32 _0;
-    u32 _4;
+// class Mgr {
+// public:
+//     static Mgr* get();
+//     static Clock* getClock();
+//     static Clock* init();
+//     static void destroy();
 
-    virtual const char* getName();
-    virtual void* init();
-};
+// private:
+//     static Mgr mInstance;
+//     static s32 mSingletonGuard;
+//     static Clock* mSingleton;
+// };
 
-#define SINGLETON(CLASS)                                                                           \
-    struct CLASS##Singleton : Singleton {                                                          \
-        virtual const char* getName();                                                             \
-        virtual void* alloc();                                                                     \
-    };                                                                                             \
-    CLASS##Singleton s##CLASS##Singleton;                                                          \
-                                                                                                   \
-    Singleton* CLASS##Singleton_get() { return &s##CLASS##Singleton; }                            \
-                                                                                                   \
-    void* CLASS::manager() { return CLASS##Singleton_get(); }
+// Mgr* Mgr::get() {
+//     return &mInstance;
+// }
 
-SINGLETON(PreSysClock);
-SINGLETON(SysClock);
-SINGLETON(PreAppClock);
-SINGLETON(AppClock);
-SINGLETON(PostAppClock);
-SINGLETON(PostSysClock);
-// SINGLETON(Clock);
-struct ClockSingleton : Singleton {
-    virtual const char* getName();
-    virtual void* alloc();
-    Singleton* get();
-};
-ClockSingleton sClockSingleton;
+// Clock* Mgr::init() {
+//     if (++mSingletonGuard == 1)
+//         mSingleton = new Clock();
+//     return mSingleton;
+// }
 
-class Mgr {
-public:
-    static Mgr* get();
-    static Clock* getClock();
-    static Clock* init();
-    static void destroy();
+// Clock* Mgr::getClock() {
+//     return mSingleton;
+// }
 
-private:
-    static Mgr mInstance;
-    static s32 mSingletonGuard;
-    static Clock* mSingleton;
-};
+// void Mgr::destroy() {
+//     if (mSingletonGuard <= 0 || --mSingletonGuard != 0)
+//         return;
 
-Mgr* Mgr::get() {
-    return &mInstance;
-}
+//     if (mSingleton != 0)
+//         delete mSingleton;
+//     mSingleton = 0;
+// }
 
-Clock* Mgr::init() {
-    if (++mSingletonGuard == 1)
-        mSingleton = new Clock();
-    return mSingleton;
-}
-
-Clock* Mgr::getClock() {
-    return mSingleton;
-}
-
-void Mgr::destroy() {
-    if (mSingletonGuard <= 0 || --mSingletonGuard != 0)
-        return;
-
-    if (mSingleton != 0)
-        delete mSingleton;
-    mSingleton = 0;
-}
-
-void* Clock::manager() {
-    return Mgr::get();
-}
+// void* Clock::getInstance() {
+//     return Mgr::get();
+// }
 
 Clock::Clock() : mTime(0) {}
 
@@ -265,3 +238,5 @@ _0806A390: .4byte 0x09F7EE20\n\
 u32 Clock::getTime() {
     return mTime;
 }
+
+// global constructor @ 806A398

@@ -1,4 +1,5 @@
 #include "core/clock.h"
+#include "gba/gba.h"
 
 u32 PostSysClock::getTime() {
     return mTime;
@@ -59,13 +60,20 @@ struct struct_0806A57C {
     u32 getB2();
     u32 getB4();
 
+    void sub_0806A67C(s32, u16*, u16*);
+    void sub_0806A760();
+    void sub_0806A80C();
+    void sub_0806A8BC();
+
     s16 _0;
     s16 _2;
     s16 _4;
     s16 _6;
     s16 _8;
     s16 _a;
-    u16 _c[96];
+    u16 _c[0x20];
+    u8 _4c[0x40];
+    u8 _8c[0x40];
     u8 _cc;
     A _d0;
 };
@@ -149,3 +157,38 @@ u32 struct_0806A57C::getB2() {
 u32 struct_0806A57C::getB4() {
     return _a;
 }
+
+NONMATCH("asm/non_matching/struct_0806A57C/sub_0806A67C.inc",
+         void struct_0806A57C::sub_0806A67C(s32 a2, u16* a3, u16* a4)) {
+    if (_cc & 1) {
+        sub_0806A760();
+        _cc &= ~1;
+    }
+    if (_cc & 2) {
+        sub_0806A80C();
+        _cc &= ~2;
+    }
+    if (_cc & 4) {
+        sub_0806A8BC();
+        _cc &= ~4;
+    }
+    if (_cc & (0x8 | 0x10 | 0x20)) {
+        for (int i = 0; i < a2; i++) {
+            u32 x, y, z;
+            x = (*a3 & 0x1F);
+            y = (*a3 & (0x1F << 5));
+            z = (*a3 & (0x1F << 10));
+            *a4 = _c[x] | *(u16*)(_4c + (y >> 4)) | *(u16*)(_8c + (z >> 9));
+            ++a3, ++a4;
+        }
+    } else if (a2 << 1 > 0) {
+        DmaSet(3, a3, a4, ((a2 << 1) >> 1) | 0x80000000);
+    }
+}
+END_NONMATCH
+
+ASM_FUNC("asm/non_matching/struct_0806A57C/sub_0806A760.inc", void struct_0806A57C::sub_0806A760())
+
+ASM_FUNC("asm/non_matching/struct_0806A57C/sub_0806A80C.inc", void struct_0806A57C::sub_0806A80C())
+
+ASM_FUNC("asm/non_matching/struct_0806A57C/sub_0806A8BC.inc", void struct_0806A57C::sub_0806A8BC())

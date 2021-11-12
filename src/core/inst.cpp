@@ -1,20 +1,10 @@
 #include "core/clock.h"
+#include "core/singleton.h"
 
-extern const char gUnknown_080FEF44[];
-extern const char gUnknown_080FEF2C[];
-
-Clock* sub_080C0BFC() {
-    return new Clock();
-}
-
-const char* sub_080C0C0C() {
-    return gUnknown_080FEF44;
-}
-
-PostSysClock* sub_080C0C14() {
-    return new PostSysClock();
-}
-
-const char* sub_080C0C24() {
-    return gUnknown_080FEF2C;
-}
+SINGLETON_DEBUG_MGR(Clock, gUnknown_080FEF44)
+SINGLETON_DEBUG(PostSysClock, gUnknown_080FEF2C)
+SINGLETON_DEBUG(PostAppClock, gUnknown_080FEF0C)
+SINGLETON_DEBUG(AppClock, gUnknown_080FEEF0)
+SINGLETON_DEBUG(PreAppClock, gUnknown_080FEED8)
+SINGLETON_DEBUG(SysClock, gUnknown_080FEEC0)
+SINGLETON_DEBUG(PreSysClock, gUnknown_080FEEA8)
