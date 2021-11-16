@@ -8,46 +8,6 @@ SINGLETON_IMPL(PostAppClock)
 SINGLETON_IMPL(PostSysClock)
 SINGLETON_MGR_IMPL(Clock)
 
-// class Mgr {
-// public:
-//     static Mgr* get();
-//     static Clock* getClock();
-//     static Clock* init();
-//     static void destroy();
-
-// private:
-//     static Mgr mInstance;
-//     static s32 mSingletonGuard;
-//     static Clock* mSingleton;
-// };
-
-// Mgr* Mgr::get() {
-//     return &mInstance;
-// }
-
-// Clock* Mgr::init() {
-//     if (++mSingletonGuard == 1)
-//         mSingleton = new Clock();
-//     return mSingleton;
-// }
-
-// Clock* Mgr::getClock() {
-//     return mSingleton;
-// }
-
-// void Mgr::destroy() {
-//     if (mSingletonGuard <= 0 || --mSingletonGuard != 0)
-//         return;
-
-//     if (mSingleton != 0)
-//         delete mSingleton;
-//     mSingleton = 0;
-// }
-
-// void* Clock::getInstance() {
-//     return Mgr::get();
-// }
-
 Clock::Clock() : mTime(0) {}
 
 Clock::~Clock() {}

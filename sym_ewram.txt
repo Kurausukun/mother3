@@ -49,9 +49,9 @@
 . = 0x00001A58; gUnknown_02001A58 = .;
 . = 0x00001B58; gUnknown_02001B58 = .;
 . = 0x00001C58; gUnknown_02001C58 = .;
-. = 0x00001C5C; gUnknown_02001C5C = .;
-. = 0x00001C68; gUnknown_02001C68 = .;
-. = 0x00001C6C; gUnknown_02001C6C = .;
+. = 0x00001C5C; sIrcManager = .;
+. = 0x00001C68; _10IrcManager.mSingletonGuard = .;
+. = 0x00001C6C; _10IrcManager.mSingleton = .;
 . = 0x00001C70; sClockManager = .;
 . = 0x00001C70; sClockSingleton = .;
 . = 0x00001C7C; sPostSysClockSingleton = .;
@@ -117,8 +117,8 @@
 . = 0x00001F20; gUnknown_02001F20 = .;
 . = 0x00001F24; gUnknown_02001F24 = .;
 . = 0x00001F28; gUnknown_02001F28 = .;
-. = 0x00001F68; sSystemAllocator = .;
-. = 0x00001F70; gUnknown_02001F70 = .;
+. = 0x00001F68; gSystemAllocator = .;
+. = 0x00001F70; sSystemAllocator = .;
 . = 0x00001F88; sSystemManager = .;
 . = 0x00001F94; _13SystemManager.mSingletonGuard = .;
 . = 0x00001F98; _13SystemManager.mSingleton = .;

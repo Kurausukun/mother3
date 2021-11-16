@@ -27,15 +27,18 @@ struct Intr2 {
 };
 
 struct Interrupt {
-  u8 enabled;
-  u32 states[4];
-  Intr2 _18[4];
+    u8 enabled;
+    u32 states[4];
+    Intr2 _18[4];
+
 };
 
 class Irc : public Base {
 public:
     Irc();
     virtual ~Irc();
+
+    virtual void* getInstance();
 
     void init(IrqTable* tbl);
     void disableAll();
@@ -57,10 +60,13 @@ public:
     void sub_08069DAC(u32, u32, Intr2);
     void sub_08069DF4(u32, Intr2);
     u32 sub_08069F1C();
+    void handleIrq(u32);
 
     s32 mDisabled;
     u32 _24;
     Interrupt mIntrs[13];
 };
 
-#endif // CORE_IRC_H
+SINGLETON_MGR(Irc)
+
+#endif  // CORE_IRC_H

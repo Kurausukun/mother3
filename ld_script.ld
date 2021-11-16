@@ -33,9 +33,7 @@ SECTIONS
         src/core/base.o(.text);
         asm/code_080689D4.o(.text);
         src/core/fit.o(.text);
-        asm/code_0806988C.o(.text);
         src/core/irc.o(.text);
-        asm/rom2.o(.text);
         src/core/clock.o(.text);
         src/core/clock_2.o(.text);
         asm/rom2b.o(.text);
@@ -43,6 +41,7 @@ SECTIONS
         asm/rom2c.o(.text);
 		asm/m4a_1.o(.text);
         asm/libc.o(.text);
+        src/rom3.o(.text);
 		asm/rom3.o(.text);
         src/goods.o(.text);
         asm/rom3b.o(.text);
@@ -56,6 +55,7 @@ SECTIONS
         data/data1.o(.data);
         data/data2.o(.data);
     } = 0
+    _vt.1D = 0x09f44f08;
     _vt.15SystemAllocator = 0x09F44F28;
     _vt.3Unk = 0x09F44FF0;
     _vt.6System = 0x09F44F38;
@@ -65,6 +65,7 @@ SECTIONS
     _vt.4Base = 0x09F7EAA8;
     _vt.12FitAllocator = 0x09F7EB10;
     _vt.3Irc = 0x09f7eb20;
+    _vt.10IrcManager = 0x09f7eb88;
     _vt.5Clock = 0x09F7EBA0;
     _vt.12ClockManager = 0x09f7ec08;
     _vt.12PostSysClock = 0x09f7ec20;

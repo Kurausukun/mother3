@@ -17,8 +17,8 @@
 	bl sub_080692C0
 	bl sub_08069318
 	bl sub_0805D210
-	bl sub_08069894
-	bl sub_080698C4
+	bl makeInstance__10IrcManager
+	bl get__10IrcManager
 	ldr r1, _0805D558 @ =gUnknown_020051F0
 	bl init__3IrcP8IrqTable
 	bl makeInstance__12ClockManager
@@ -56,7 +56,7 @@
 	adds r0, r5, #0
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BaseR4BaseT1UiPFP4Base_v
+	bl registerClock__4BaseP4BaseRC4BaseUiPFP4Base_v
 	mov r1, r8
 	str r1, [sp, #0x20]
 	add r0, sp, #4

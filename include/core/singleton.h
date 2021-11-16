@@ -86,11 +86,7 @@ struct Singleton {
     extern const char STR[];                                                                       \
     void* CLASS##Singleton::init() { return new CLASS; }                                           \
     const char* CLASS##Singleton::getName() { return STR; }                                        \
-    struct CLASS##Unk : public Unk {                                                               \
-        CLASS##Unk();                                                                              \
-        virtual ~CLASS##Unk();                                                                     \
-    };                                                                                             \
-    CLASS##Unk::~CLASS##Unk() {}
+    CLASS::~CLASS() {}
 
 #define SINGLETON_DEBUG_MGR(CLASS, STR)                                                            \
     /*const char* class##Manager::getName() { return #CLASS; }*/                                   \

@@ -127158,7 +127158,7 @@ _0805D004:
 	ldr r1, [r3, #0x18]
 _0805D024:
 	ldr r2, _0805D038 @ =0x01000010
-	bl sub_08090F78
+	bl CpuSet
 	b _0805D044
 	.align 2, 0
 _0805D02C: .4byte gUnknown_02005090
@@ -127322,7 +127322,7 @@ sub_0805D154: @ 0x0805D154
 _0805D164:
 	lsls r2, r2, #0xa
 	lsrs r2, r2, #0xb
-	bl sub_08090F78
+	bl CpuSet
 	ldr r0, [r4, #4]
 	lsrs r0, r0, #5
 	pop {r4}

@@ -88,7 +88,7 @@ void Base::base_2c() {}
 void Base::base_34() {}
 
 NAKED
-void Base::registerClock(Base& sender, Base& receiver, u32 mask, Callback fn) {
+void Base::registerClock(Base* sender, const Base& receiver, u32 mask, Callback fn) {
     asm_unified("\n\
 	sub sp, #4\n\
 	push {r4, r5, r6, r7, lr}\n\

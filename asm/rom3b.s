@@ -5269,7 +5269,7 @@ sub_080C0940: @ 0x080C0940
 	adds r0, r5, #0
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BaseR4BaseT1UiPFP4Base_v
+	bl registerClock__4BaseP4BaseRC4BaseUiPFP4Base_v
 	mov r0, r8
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -5288,7 +5288,7 @@ sub_080C0940: @ 0x080C0940
 	adds r0, r5, #0
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BaseR4BaseT1UiPFP4Base_v
+	bl registerClock__4BaseP4BaseRC4BaseUiPFP4Base_v
 	mov r0, r8
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -5307,7 +5307,7 @@ sub_080C0940: @ 0x080C0940
 	adds r0, r5, #0
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BaseR4BaseT1UiPFP4Base_v
+	bl registerClock__4BaseP4BaseRC4BaseUiPFP4Base_v
 	mov r0, r8
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -5363,7 +5363,7 @@ sub_080C0A20: @ 0x080C0A20
 	adds r0, r5, #0
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BaseR4BaseT1UiPFP4Base_v
+	bl registerClock__4BaseP4BaseRC4BaseUiPFP4Base_v
 	mov r0, r8
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -5382,7 +5382,7 @@ sub_080C0A20: @ 0x080C0A20
 	adds r0, r5, #0
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BaseR4BaseT1UiPFP4Base_v
+	bl registerClock__4BaseP4BaseRC4BaseUiPFP4Base_v
 	mov r0, r8
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -5401,7 +5401,7 @@ sub_080C0A20: @ 0x080C0A20
 	adds r0, r5, #0
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BaseR4BaseT1UiPFP4Base_v
+	bl registerClock__4BaseP4BaseRC4BaseUiPFP4Base_v
 	mov r0, r8
 	str r0, [sp, #0x20]
 	add r0, sp, #4

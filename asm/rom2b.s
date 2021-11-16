@@ -260,7 +260,7 @@ _0806AB10:
 	adds r0, r7, #0
 	adds r1, r5, #0
 	add r2, sp, #4
-	bl registerClock__4BaseR4BaseT1UiPFP4Base_v
+	bl registerClock__4BaseP4BaseRC4BaseUiPFP4Base_v
 	str r6, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -1284,7 +1284,7 @@ _0806B1E0:
 	adds r0, r7, #0
 	adds r1, r5, #0
 	add r2, sp, #4
-	bl registerClock__4BaseR4BaseT1UiPFP4Base_v
+	bl registerClock__4BaseP4BaseRC4BaseUiPFP4Base_v
 	str r6, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -3069,7 +3069,7 @@ _0806BE86:
 	adds r0, r7, #0
 	adds r1, r5, #0
 	add r2, sp, #4
-	bl registerClock__4BaseR4BaseT1UiPFP4Base_v
+	bl registerClock__4BaseP4BaseRC4BaseUiPFP4Base_v
 	str r6, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -3087,7 +3087,7 @@ _0806BE86:
 	adds r0, r7, #0
 	adds r1, r5, #0
 	add r2, sp, #4
-	bl registerClock__4BaseR4BaseT1UiPFP4Base_v
+	bl registerClock__4BaseP4BaseRC4BaseUiPFP4Base_v
 	str r6, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -3875,7 +3875,7 @@ _0806C4C6:
 	adds r0, r7, #0
 	adds r1, r5, #0
 	add r2, sp, #4
-	bl registerClock__4BaseR4BaseT1UiPFP4Base_v
+	bl registerClock__4BaseP4BaseRC4BaseUiPFP4Base_v
 	str r6, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -4340,7 +4340,7 @@ sub_0806C800: @ 0x0806C800
 	adds r0, r5, #0
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BaseR4BaseT1UiPFP4Base_v
+	bl registerClock__4BaseP4BaseRC4BaseUiPFP4Base_v
 	mov r0, r8
 	str r0, [sp, #0x20]
 	add r0, sp, #4

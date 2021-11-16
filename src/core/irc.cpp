@@ -18,6 +18,8 @@ void irq_key();
 void sub_08069E2C(Irc*, u32, u32, Intr2, u32);
 }
 
+SINGLETON_MGR_IMPL(Irc)
+
 Irc::Irc() : mDisabled(false), _24(0) {
     for (int i = 0; i < 13; ++i) {
         mIntrs[i].enabled = 0;
@@ -178,3 +180,58 @@ extern "C" ASM_FUNC("asm/non_matching/struct_0806A57C/sub_08069E2C.inc", void su
 u32 Irc::sub_08069F1C() {
     return _24;
 }
+
+void irq_vblank() {
+    IrcManager::get()->handleIrq(0);
+    IrcManager::get()->_24++;
+}
+
+void irq_hblank() {
+    IrcManager::get()->handleIrq(1);
+}
+
+void irq_vcount() {
+    IrcManager::get()->handleIrq(2);
+}
+
+void irq_timer0() {
+    IrcManager::get()->handleIrq(3);
+}
+
+void irq_timer1() {
+    IrcManager::get()->handleIrq(4);
+}
+
+void irq_timer2() {
+    IrcManager::get()->handleIrq(5);
+}
+
+void irq_timer3() {
+    IrcManager::get()->handleIrq(6);
+}
+
+void irq_serial() {
+    IrcManager::get()->handleIrq(7);
+}
+
+void irq_dma0() {
+    IrcManager::get()->handleIrq(8);
+}
+
+void irq_dma1() {
+    IrcManager::get()->handleIrq(9);
+}
+
+void irq_dma2() {
+    IrcManager::get()->handleIrq(10);
+}
+
+void irq_dma3() {
+    IrcManager::get()->handleIrq(11);
+}
+
+void irq_key() {
+    IrcManager::get()->handleIrq(12);
+}
+
+ASM_FUNC("asm/non_matching/irc/handleIrq.inc", void Irc::handleIrq(u32 idx));

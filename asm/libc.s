@@ -108,7 +108,7 @@ sub_0808F998: @ 0x0808F998
 	ands r0, r1
 	ldr r1, _0808F9F0 @ =gUnknown_03000000
 	ldr r2, _0808F9F4 @ =0x04000100
-	bl sub_08090F78
+	bl CpuSet
 	ldr r0, _0808F9F8 @ =gUnknown_03001B20
 	bl sub_0808FDC0
 	ldr r0, _0808F9FC @ =gUnknown_03002B60
@@ -566,7 +566,7 @@ sub_0808FC7C: @ 0x0808FC7C
 	ldr r2, _0808FD90 @ =0x05000040
 	mov r0, sp
 	adds r1, r5, #0
-	bl sub_08090F78
+	bl CpuSet
 	movs r0, #1
 	strb r0, [r5, #1]
 	movs r0, #0x11
@@ -712,7 +712,7 @@ _0808FDEA:
 	ldr r2, _0808FEA4 @ =0x050003EC
 	mov r0, sp
 	adds r1, r5, #0
-	bl sub_08090F78
+	bl CpuSet
 	movs r0, #8
 	strb r0, [r5, #6]
 	movs r0, #0xf
@@ -980,7 +980,7 @@ _0809004A:
 	adds r1, r2, r0
 	ldr r2, _08090088 @ =0x05000318
 	mov r0, sp
-	bl sub_08090F78
+	bl CpuSet
 _0809006A:
 	add sp, #4
 	pop {r0}
@@ -3082,8 +3082,8 @@ sub_08090F74: @ 0x08090F74
 	svc #0xc
 	bx lr
 
-	thumb_func_start sub_08090F78
-sub_08090F78: @ 0x08090F78
+	thumb_func_start CpuSet
+CpuSet: @ 0x08090F78
 	svc #0xb
 	bx lr
 

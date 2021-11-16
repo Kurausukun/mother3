@@ -10,7 +10,7 @@ extern "C" void sub_0806BE20();
 extern "C" void sub_0806B07C();
 extern "C" void sub_0806A9B0();
 extern "C" void sub_0806FDBC();
-extern "C" void sub_080698D0();
+extern "C" void destroy__10IrcManager();
 extern "C" u16 sub_080029BC(u32);
 extern "C" void sub_080026C0();
 extern "C" KeyPad* sub_0806CC10();
@@ -22,22 +22,22 @@ struct SystemAllocator : FitAllocator {
     SystemAllocator(Fit* fit, u32 size);
     virtual ~SystemAllocator();
 };
-SystemAllocator* sSystemAllocator;
+SystemAllocator* gSystemAllocator;
 
-extern u8 gUnknown_02001F70;
+extern u8 sSystemAllocator[sizeof(SystemAllocator)];
 
 extern "C" SystemAllocator* sub_0805D328(Fit* fit, u32 size) {
-    sSystemAllocator = new (&gUnknown_02001F70) SystemAllocator(fit, size);
-    return sSystemAllocator;
+    gSystemAllocator = new (sSystemAllocator) SystemAllocator(fit, size);
+    return gSystemAllocator;
 }
 
 extern "C" SystemAllocator* sub_0805D350() {
-    return sSystemAllocator;
+    return gSystemAllocator;
 }
 
 extern "C" void sub_0805D35C() {
-    sSystemAllocator->~SystemAllocator();
-    sSystemAllocator = 0;
+    gSystemAllocator->~SystemAllocator();
+    gSystemAllocator = 0;
 }
 
 SystemAllocator::SystemAllocator(Fit* fit, u32 size) : FitAllocator(size, fit) {}
@@ -66,11 +66,11 @@ void operator delete[](void* ptr) {
 
 SINGLETON_MGR_IMPL(System)
 
-extern "C" ASM_FUNC("asm/non_matching/system/sub_0805D494.inc", System* __6System())
+extern "C" ASM_FUNC("asm/non_matching/system/sub_0805D494.inc", System* __6System());
 
-    System::~System() {
-    if (_20 != 0) {
-        delete _20;
+System::~System() {
+    if (mHandle != 0) {
+        delete mHandle;
     }
 
     sub_0806E4C4();
@@ -80,11 +80,11 @@ extern "C" ASM_FUNC("asm/non_matching/system/sub_0805D494.inc", System* __6Syste
     sub_0806A9B0();
     sub_0806FDBC();
     ClockManager::destroy();
-    sub_080698D0();
+    destroy__10IrcManager();
 }
 
-System::A* System::sub_0805D5BC() {
-    return _20;
+System::SARHandle* System::sub_0805D5BC() {
+    return mHandle;
 }
 
 u32 System::sub_0805D5C0() {

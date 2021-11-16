@@ -5,10 +5,9 @@
 
 class System : Base {
 public:
-    struct A {
-        virtual ~A();
-
-        u32 _0;
+    struct SARHandle {
+        virtual ~SARHandle();
+        u8* ptr;
     };
 
     System();
@@ -16,7 +15,7 @@ public:
 
     virtual void* getInstance();
 
-    virtual A* sub_0805D5BC();
+    virtual SARHandle* sub_0805D5BC();
     virtual u32 sub_0805D5C0();
     virtual u32 sub_0805D5D0();
     virtual u32 sub_0805D604();
@@ -26,7 +25,7 @@ public:
     
     void sub_0805D768();
 
-    A* _20;
+    SARHandle* mHandle;
 };
 SINGLETON_MGR(System)
 

@@ -1,17 +1,19 @@
-#include "global.h"
 #include "keypad.h"
+#include "core/clock.h"
+extern "C" {
+#include "gba/gba.h"
+}
 
-extern ClockData d1;
-extern ClockData d2;
+extern ClockData gUnknown_080FF9B4;
+extern ClockData gUnknown_080FF9BC;
 
-struct BattleBase : Base {
-    BattleBase() {
-    }
+// struct BattleBase : Unk {
+//     BattleBase() {}
 
-    virtual ~BattleBase() {}
+//     virtual ~BattleBase() {}
 
-    virtual void* manager();  
-};
+//     virtual void* manager();
+// };
 
 void* sub_0806CBD8();
 
@@ -20,14 +22,14 @@ void* sub_0806CC58() {
 }
 
 #ifdef NONMATCHING
-KeyPad::KeyPad() : _24(0), _46(0), _48(0) {
+KeyPad::KeyPad() : keys(0), newKeys(0), _48(0) {
     _20 = 0x2d;
     _22 = 0x8;
 
-    u16 fill = 0;
-    CpuSet(&fill, &arr, CPU_SET_SRC_FIXED | sizeof(arr));
-    registerClock(ClockMgr<Clock>::getSingleton(), &SysClock(), d1.mask, d1.callback);
-    registerClock(ClockMgr<Clock>::getSingleton(), &BattleBase(), d2.mask, d2.callback);
+    //CpuSet(&fill, holdTimer, CPU_SET_SRC_FIXED | sizeof(holdTimer));
+	CpuFill16(0, holdTimer, sizeof(holdTimer));
+    registerClock(ClockManager::get(), SysClock(), gUnknown_080FF9B4.mask, gUnknown_080FF9B4.callback);
+    registerClock(ClockManager::get(), AppClock(), gUnknown_080FF9BC.mask, gUnknown_080FF9BC.callback);
 }
 #else
 extern "C" NAKED KeyPad* __6KeyPad() {
@@ -57,7 +59,7 @@ extern "C" NAKED KeyPad* __6KeyPad() {
 	adds r1, r5, #0\n\
 	adds r1, #0x26\n\
 	ldr r2, _0806CD14 @ =0x01000010\n\
-	bl sub_08090F78\n\
+	bl CpuSet\n\
 	bl get__12ClockManager\n\
 	mov r8, r0\n\
 	add r0, sp, #8\n\
@@ -74,7 +76,7 @@ extern "C" NAKED KeyPad* __6KeyPad() {
 	adds r0, r5, #0\n\
 	mov r1, r8\n\
 	adds r2, r6, #0\n\
-	bl registerClock__4BaseR4BaseT1UiPFP4Base_v\n\
+	bl registerClock__4BaseP4BaseRC4BaseUiPFP4Base_v\n\
 	mov r0, sb\n\
 	str r0, [sp, #0x24]\n\
 	adds r0, r6, #0\n\
@@ -93,7 +95,7 @@ extern "C" NAKED KeyPad* __6KeyPad() {
 	adds r0, r5, #0\n\
 	mov r1, r8\n\
 	adds r2, r6, #0\n\
-	bl registerClock__4BaseR4BaseT1UiPFP4Base_v\n\
+	bl registerClock__4BaseP4BaseRC4BaseUiPFP4Base_v\n\
 	mov r0, sb\n\
 	str r0, [sp, #0x24]\n\
 	adds r0, r6, #0\n\
@@ -122,25 +124,25 @@ _0806CD28: .4byte gUnknown_080FF9BC\n\
 KeyPad::~KeyPad() {}
 
 void KeyPad::set_20(u32 val) {
-	_20 = val;
+    _20 = val;
 }
 
 void KeyPad::set_22(u32 val) {
-	_22 = val;
+    _22 = val;
 }
 
 u32 KeyPad::get_20() {
-	return _20;
+    return _20;
 }
 
 u32 KeyPad::get_22() {
-	return _22;
+    return _22;
 }
 
 u32 KeyPad::getKeys() {
-	return keys;
+    return keys;
 }
 
 u32 KeyPad::getNewKeys() {
-	return newKeys;
+    return newKeys;
 }
