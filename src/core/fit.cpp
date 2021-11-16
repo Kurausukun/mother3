@@ -45,19 +45,18 @@ void* FitAllocator::malloc(u32 size) {
     if ((size_aligned & 3) != 0)
         size_aligned += 4 - (size_aligned & 3);
 
-    Fit* f = _8;
-    for (; f != 0;) {
-        if (f->next->size < size_aligned)
+    Fit* f = (Fit*)&_8;
+    for (;; f = f->next) {
+        if (f->next == 0 || f->next->size < size_aligned)
             break;
-        f = f->next;
     }
 
-    Fit* next = f->next;
-    if (next == 0)
+    if (f->next == 0)
         return 0;
 
-    Fit* blk = (Fit*)((u8*)next + size_aligned);
-    if (next->size - size_aligned <= 0x18) {
+    Fit* next = f->next;
+    Fit* blk = (Fit*)((u8*)f->next + size_aligned);
+    if (f->next->size - size_aligned <= 0x18) {
         f->next = next->next;
         next->sig[0] = 'u';
         next->sig[1] = 's';
@@ -168,12 +167,15 @@ _0806974C:\n\
 }
 #endif
 
+extern const char gUnknown_080FED18[];
+
 #ifdef NONMATCHING
 void FitAllocator::free(void* ptr) {
     if (ptr != 0) {
         Fit* f = (Fit*)((u8*)ptr - 8);
         if (*(u32*)f->sig != 0x20657375) {
-            err_msg("ƒGƒ‰[FFitAllocator.free() - •s³‚Èƒƒ‚ƒŠ%p‚ð‰ð•ú‚µ‚æ‚¤‚Æ‚µ‚Ü‚µ‚½B");
+            // ï¿½Gï¿½ï¿½ï¿½[ï¿½FFitAllocator.free() - ï¿½sï¿½ï¿½ï¿½Èƒï¿½ï¿½ï¿½ï¿½ï¿½%pï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½æ‚¤ï¿½Æ‚ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½B
+            sub_08087E74(gUnknown_080FED18, ptr);
         } else {
             f->sig[0] = 'f';
             f->sig[1] = 'r';
@@ -181,7 +183,7 @@ void FitAllocator::free(void* ptr) {
             f->sig[3] = 'e';
 
             Fit* next;
-            for (next = _8; next->next != 0 && next->next <= f; next = next->next) {
+            for (next = (Fit*)&_8; next->next != 0 && next->next <= f; next = next->next) {
             }
             f->next = next->next;
             next->next = f;
@@ -244,8 +246,8 @@ _080697A4:\n\
 #endif
 
 void FitAllocator::collapse() {
-	Fit* f = head;
-	
+    Fit* f = head;
+
     for (Fit* f = head; f != 0; f = f->next) {
         Fit* next = f->next;
         Fit* f2 = (Fit*)((u8*)f + f->size);
@@ -280,8 +282,10 @@ void FitAllocator::check() {
     }
 }
 
-// matching, but strings need to be implemented
-#ifdef NONMATCHING
+extern const char gUnknown_080FEDA4[];
+extern const char gUnknown_080FEDB4[];
+extern const char gUnknown_080FEDC4[];
+
 void FitAllocator::getInfo() {
     int size;
     int num_chunks;
@@ -292,52 +296,9 @@ void FitAllocator::getInfo() {
         size += f->size;
         num_chunks++;
     }
-    sub_08087D04((const char*)0x080feda4, buf_size - size);
-    sub_08087D04((const char*)0x080fedb4, size);
-    sub_08087D04((const char*)0x080fedc4, num_chunks);
+    sub_08087D04((const char*)gUnknown_080FEDA4, buf_size - size);
+    sub_08087D04((const char*)gUnknown_080FEDB4, size);
+    sub_08087D04((const char*)gUnknown_080FEDC4, num_chunks);
     sub_08087C70(10);
     sub_08087D48();
 }
-#else
-NAKED
-void FitAllocator::getInfo() {
-    asm_unified("\n\
-	push {r4, r5, lr}\n\
-	adds r1, r0, #0\n\
-	movs r5, #0\n\
-	movs r4, #0\n\
-	ldr r2, [r1, #0x10]\n\
-	ldr r3, _08069880 @ =gUnknown_080FEDA4\n\
-	cmp r2, #0\n\
-	beq _08069854\n\
-_08069848:\n\
-	ldr r0, [r2, #4]\n\
-	adds r4, r4, r0\n\
-	adds r5, #1\n\
-	ldr r2, [r2, #8]\n\
-	cmp r2, #0\n\
-	bne _08069848\n\
-_08069854:\n\
-	ldr r1, [r1]\n\
-	subs r1, r1, r4\n\
-	adds r0, r3, #0\n\
-	bl sub_08087D04\n\
-	ldr r0, _08069884 @ =gUnknown_080FEDB4\n\
-	adds r1, r4, #0\n\
-	bl sub_08087D04\n\
-	ldr r0, _08069888 @ =gUnknown_080FEDC4\n\
-	adds r1, r5, #0\n\
-	bl sub_08087D04\n\
-	movs r0, #0xa\n\
-	bl sub_08087C70\n\
-	bl sub_08087D48\n\
-	pop {r4, r5}\n\
-	pop {r0}\n\
-	bx r0\n\
-	.align 2, 0\n\
-_08069880: .4byte gUnknown_080FEDA4\n\
-_08069884: .4byte gUnknown_080FEDB4\n\
-_08069888: .4byte gUnknown_080FEDC4\n\
-    ");
-}
-#endif

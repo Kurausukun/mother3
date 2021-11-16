@@ -1,79 +1,12 @@
 #include "core/clock.h"
 
-struct Singleton {
-    Singleton();
-
-    u32 _0;
-    u32 _4;
-
-    virtual const char* getName();
-    virtual void* init();
-};
-
-#define SINGLETON(CLASS)                                                                           \
-    struct CLASS##Singleton : Singleton {                                                          \
-        virtual const char* getName();                                                             \
-        virtual void* alloc();                                                                     \
-    };                                                                                             \
-    CLASS##Singleton s##CLASS##Singleton;                                                          \
-                                                                                                   \
-    Singleton* CLASS##Singleton_get() { return &s##CLASS##Singleton; }                            \
-                                                                                                   \
-    void* CLASS::manager() { return CLASS##Singleton_get(); }
-
-SINGLETON(PreSysClock);
-SINGLETON(SysClock);
-SINGLETON(PreAppClock);
-SINGLETON(AppClock);
-SINGLETON(PostAppClock);
-SINGLETON(PostSysClock);
-// SINGLETON(Clock);
-struct ClockSingleton : Singleton {
-    virtual const char* getName();
-    virtual void* alloc();
-    Singleton* get();
-};
-ClockSingleton sClockSingleton;
-
-class Mgr {
-public:
-    static Mgr* get();
-    static Clock* getClock();
-    static Clock* init();
-    static void destroy();
-
-private:
-    static Mgr mInstance;
-    static s32 mSingletonGuard;
-    static Clock* mSingleton;
-};
-
-Mgr* Mgr::get() {
-    return &mInstance;
-}
-
-Clock* Mgr::init() {
-    if (++mSingletonGuard == 1)
-        mSingleton = new Clock();
-    return mSingleton;
-}
-
-Clock* Mgr::getClock() {
-    return mSingleton;
-}
-
-void Mgr::destroy() {
-    if (mSingletonGuard <= 0 || --mSingletonGuard != 0)
-        return;
-
-    if (mSingleton != 0)
-        delete mSingleton;
-    mSingleton = 0;
-}
-
-void* Clock::manager() {
-    return Mgr::get();
-}
+SINGLETON_IMPL(PreSysClock)
+SINGLETON_IMPL(SysClock)
+SINGLETON_IMPL(PreAppClock)
+SINGLETON_IMPL(AppClock)
+SINGLETON_IMPL(PostAppClock)
+SINGLETON_IMPL(PostSysClock)
+SINGLETON_MGR_IMPL(Clock)
 
 Clock::Clock() : mTime(0) {}
 
@@ -265,3 +198,5 @@ _0806A390: .4byte 0x09F7EE20\n\
 u32 Clock::getTime() {
     return mTime;
 }
+
+// global constructor @ 806A398

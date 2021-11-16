@@ -3,152 +3,6 @@
 .syntax unified
 .section .text
 
-	thumb_func_start sub_080C0C2C
-sub_080C0C2C: @ 0x080C0C2C
-	push {lr}
-	ldr r2, _080C0C3C @ =0x09F44FF0
-	str r2, [r0, #0x1c]
-	bl _._4Base
-	pop {r0}
-	bx r0
-	.align 2, 0
-_080C0C3C: .4byte 0x09F44FF0
-
-	thumb_func_start sub_080C0C40
-sub_080C0C40: @ 0x080C0C40
-	push {lr}
-	movs r0, #0x24
-	bl __builtin_new
-	bl __12PostAppClock
-	pop {r1}
-	bx r1
-
-	thumb_func_start sub_080C0C50
-sub_080C0C50: @ 0x080C0C50
-	ldr r0, _080C0C54 @ =gUnknown_080FEF0C
-	bx lr
-	.align 2, 0
-_080C0C54: .4byte gUnknown_080FEF0C
-
-	thumb_func_start sub_080C0C58
-sub_080C0C58: @ 0x080C0C58
-	push {lr}
-	ldr r2, _080C0C68 @ =0x09F44FF0
-	str r2, [r0, #0x1c]
-	bl _._4Base
-	pop {r0}
-	bx r0
-	.align 2, 0
-_080C0C68: .4byte 0x09F44FF0
-
-	thumb_func_start sub_080C0C6C
-sub_080C0C6C: @ 0x080C0C6C
-	push {lr}
-	movs r0, #0x24
-	bl __builtin_new
-	bl __8AppClock
-	pop {r1}
-	bx r1
-
-	thumb_func_start sub_080C0C7C
-sub_080C0C7C: @ 0x080C0C7C
-	ldr r0, _080C0C80 @ =gUnknown_080FEEF0
-	bx lr
-	.align 2, 0
-_080C0C80: .4byte gUnknown_080FEEF0
-
-	thumb_func_start sub_080C0C84
-sub_080C0C84: @ 0x080C0C84
-	push {lr}
-	ldr r2, _080C0C94 @ =0x09F44FF0
-	str r2, [r0, #0x1c]
-	bl _._4Base
-	pop {r0}
-	bx r0
-	.align 2, 0
-_080C0C94: .4byte 0x09F44FF0
-
-	thumb_func_start sub_080C0C98
-sub_080C0C98: @ 0x080C0C98
-	push {lr}
-	movs r0, #0x24
-	bl __builtin_new
-	bl __11PreAppClock
-	pop {r1}
-	bx r1
-
-	thumb_func_start sub_080C0CA8
-sub_080C0CA8: @ 0x080C0CA8
-	ldr r0, _080C0CAC @ =gUnknown_080FEED8
-	bx lr
-	.align 2, 0
-_080C0CAC: .4byte gUnknown_080FEED8
-
-	thumb_func_start sub_080C0CB0
-sub_080C0CB0: @ 0x080C0CB0
-	push {lr}
-	ldr r2, _080C0CC0 @ =0x09F44FF0
-	str r2, [r0, #0x1c]
-	bl _._4Base
-	pop {r0}
-	bx r0
-	.align 2, 0
-_080C0CC0: .4byte 0x09F44FF0
-
-	thumb_func_start sub_080C0CC4
-sub_080C0CC4: @ 0x080C0CC4
-	push {lr}
-	movs r0, #0x24
-	bl __builtin_new
-	bl __8SysClock
-	pop {r1}
-	bx r1
-
-	thumb_func_start sub_080C0CD4
-sub_080C0CD4: @ 0x080C0CD4
-	ldr r0, _080C0CD8 @ =gUnknown_080FEEC0
-	bx lr
-	.align 2, 0
-_080C0CD8: .4byte gUnknown_080FEEC0
-
-	thumb_func_start sub_080C0CDC
-sub_080C0CDC: @ 0x080C0CDC
-	push {lr}
-	ldr r2, _080C0CEC @ =0x09F44FF0
-	str r2, [r0, #0x1c]
-	bl _._4Base
-	pop {r0}
-	bx r0
-	.align 2, 0
-_080C0CEC: .4byte 0x09F44FF0
-
-	thumb_func_start sub_080C0CF0
-sub_080C0CF0: @ 0x080C0CF0
-	push {lr}
-	movs r0, #0x24
-	bl __builtin_new
-	bl __11PreSysClock
-	pop {r1}
-	bx r1
-
-	thumb_func_start sub_080C0D00
-sub_080C0D00: @ 0x080C0D00
-	ldr r0, _080C0D04 @ =gUnknown_080FEEA8
-	bx lr
-	.align 2, 0
-_080C0D04: .4byte gUnknown_080FEEA8
-
-	thumb_func_start sub_080C0D08
-sub_080C0D08: @ 0x080C0D08
-	push {lr}
-	ldr r2, _080C0D18 @ =0x09F44FF0
-	str r2, [r0, #0x1c]
-	bl _._4Base
-	pop {r0}
-	bx r0
-	.align 2, 0
-_080C0D18: .4byte 0x09F44FF0
-
 	thumb_func_start sub_080C0D1C
 sub_080C0D1C: @ 0x080C0D1C
 	push {lr}
@@ -201,7 +55,7 @@ sub_080C0D50: @ 0x080C0D50
 	ldr r0, [r4, #8]
 	cmp r0, #0
 	beq _080C0D74
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _080C0D74:
 	mov r1, r8
 	ldr r0, [r1, #4]
@@ -220,7 +74,7 @@ _080C0D8E:
 	str r0, [r5, #4]
 	str r0, [r4, #4]
 	lsls r0, r0, #1
-	bl sub_0805D3C8
+	bl __builtin_vec_new
 	str r0, [r4, #8]
 	mov r7, r8
 	ldr r3, [r7, #8]
@@ -258,7 +112,7 @@ _080C0DC0:
 	ldr r0, [r4, #8]
 	cmp r0, #0
 	beq _080C0DE2
-	bl sub_0805D3F4
+	bl __builtin_vec_delete
 _080C0DE2:
 	mov r3, r8
 	ldr r0, [r3, #4]
@@ -273,7 +127,7 @@ _080C0DF4:
 	str r0, [r5, #0x18]
 	str r0, [r7, #4]
 	lsls r0, r0, #5
-	bl sub_0805D3C8
+	bl __builtin_vec_new
 	str r0, [r7, #8]
 	mov r1, sb
 	ldr r1, [r1, #8]
@@ -348,7 +202,7 @@ _080C0E7E:
 	str r0, [r4, #4]
 	str r1, [r5, #4]
 	lsls r0, r1, #1
-	bl sub_0805D3C8
+	bl __builtin_vec_new
 	str r0, [r5, #8]
 	ldr r3, [r7, #8]
 	adds r2, r0, #0
@@ -390,7 +244,7 @@ _080C0ECE:
 	str r0, [r4, #0x18]
 	str r1, [r7, #4]
 	lsls r0, r1, #5
-	bl sub_0805D3C8
+	bl __builtin_vec_new
 	str r0, [r7, #8]
 	ldr r5, [r5, #8]
 	mov ip, r5

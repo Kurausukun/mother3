@@ -21,7 +21,7 @@ NAKED void Base_dtor() {
         ldr r0, [r6, #0x18]\n\
         cmp r0, #0\n\
         beq _080689F4\n\
-        bl sub_0805D3F4\n\
+        bl __builtin_vec_delete\n\
     _080689F4:\n\
         adds r5, r6, #4\n\
         movs r0, #0\n\
@@ -40,7 +40,7 @@ NAKED void Base_dtor() {
         ldr r0, [r4, #0xc]\n\
         cmp r0, #0\n\
         beq _08068A18\n\
-        bl sub_0805D3F4\n\
+        bl __builtin_vec_delete\n\
     _08068A18:\n\
         ldr r0, [r5, #8]\n\
         cmp r0, r4\n\
@@ -48,7 +48,7 @@ NAKED void Base_dtor() {
     _08068A1E:\n\
         ldr r0, [r5, #8]\n\
         subs r0, #4\n\
-        bl sub_0805D3F4\n\
+        bl __builtin_vec_delete\n\
     _08068A26:\n\
         movs r0, #1\n\
         ands r0, r7\n\
@@ -73,7 +73,7 @@ void Base::base_5c() {
     }
 }
 
-void* Base::manager() {
+void* Base::getInstance() {
     return NULL;
 }
 
@@ -88,7 +88,7 @@ void Base::base_2c() {}
 void Base::base_34() {}
 
 NAKED
-void Base::registerClock(Base& sender, Base& receiver, u32 mask, Callback fn) {
+void Base::registerClock(Base* sender, const Base& receiver, u32 mask, Callback fn) {
     asm_unified("\n\
 	sub sp, #4\n\
 	push {r4, r5, r6, r7, lr}\n\
@@ -181,7 +181,7 @@ _08068B0C:\n\
 _08068B2C:\n\
 	adds r5, r0, #0\n\
 	lsls r0, r5, #2\n\
-	bl sub_0805D3C8\n\
+	bl __builtin_vec_new\n\
 	adds r6, r0, #0\n\
 	ldr r3, [r4, #8]\n\
 	adds r2, r6, #0\n\
@@ -199,7 +199,7 @@ _08068B4C:\n\
 	ldr r0, [r4, #8]\n\
 	cmp r0, #0\n\
 	beq _08068B56\n\
-	bl sub_0805D3F4\n\
+	bl __builtin_vec_delete\n\
 _08068B56:\n\
 	str r5, [r4]\n\
 	str r6, [r4, #8]\n\
@@ -241,7 +241,7 @@ _08068B98:\n\
 	mov r8, r0\n\
 	lsls r0, r0, #4\n\
 	adds r0, #4\n\
-	bl sub_0805D3C8\n\
+	bl __builtin_vec_new\n\
 	mov r1, r8\n\
 	stm r0!, {r1}\n\
 	adds r4, r0, #0\n\
@@ -283,7 +283,7 @@ _08068BDE:\n\
 	cmp r0, #0\n\
 	beq _08068BF4\n\
 	str r1, [sp, #0x28]\n\
-	bl sub_0805D3F4\n\
+	bl __builtin_vec_delete\n\
 	ldr r1, [sp, #0x28]\n\
 _08068BF4:\n\
 	ldr r0, [r5, #8]\n\
@@ -301,7 +301,7 @@ _08068C06:\n\
 	str r0, [r4, #8]\n\
 	lsls r0, r0, #2\n\
 	str r1, [sp, #0x28]\n\
-	bl sub_0805D3C8\n\
+	bl __builtin_vec_new\n\
 	str r0, [r4, #0xc]\n\
 	ldr r6, [r5, #0xc]\n\
 	adds r3, r0, #0\n\
@@ -336,7 +336,7 @@ _08068C48:\n\
 	ldr r0, [r4, #0xc]\n\
 	cmp r0, #0\n\
 	beq _08068C54\n\
-	bl sub_0805D3F4\n\
+	bl __builtin_vec_delete\n\
 _08068C54:\n\
 	ldr r0, [r7, #8]\n\
 	cmp r0, r4\n\
@@ -344,7 +344,7 @@ _08068C54:\n\
 _08068C5A:\n\
 	ldr r0, [r7, #8]\n\
 	subs r0, #4\n\
-	bl sub_0805D3F4\n\
+	bl __builtin_vec_delete\n\
 _08068C62:\n\
 	mov r3, r8\n\
 	str r3, [r7]\n\
@@ -366,7 +366,7 @@ _08068C6A:\n\
 	ldr r0, [r4, #8]\n\
 	cmp r0, #0\n\
 	beq _08068C8C\n\
-	bl sub_0805D3F4\n\
+	bl __builtin_vec_delete\n\
 _08068C8C:\n\
 	ldr r0, [r5, #4]\n\
 	cmp r0, #0\n\
@@ -381,7 +381,7 @@ _08068C9C:\n\
 	ldr r0, [r5, #4]\n\
 	str r0, [r4, #4]\n\
 	lsls r0, r0, #2\n\
-	bl sub_0805D3C8\n\
+	bl __builtin_vec_new\n\
 	str r0, [r4, #8]\n\
 	ldr r3, [r5, #8]\n\
 	adds r2, r0, #0\n\
@@ -415,7 +415,7 @@ _08068CC0:\n\
 _08068CE0:\n\
 	adds r5, r0, #0\n\
 	lsls r0, r5, #2\n\
-	bl sub_0805D3C8\n\
+	bl __builtin_vec_new\n\
 	adds r6, r0, #0\n\
 	ldr r3, [r4, #8]\n\
 	adds r2, r6, #0\n\
@@ -433,7 +433,7 @@ _08068D00:\n\
 	ldr r0, [r4, #8]\n\
 	cmp r0, #0\n\
 	beq _08068D0A\n\
-	bl sub_0805D3F4\n\
+	bl __builtin_vec_delete\n\
 _08068D0A:\n\
 	str r5, [r4]\n\
 	str r6, [r4, #8]\n\
@@ -450,7 +450,7 @@ _08068D0E:\n\
 	ldr r0, [sp, #0xc]\n\
 	cmp r0, #0\n\
 	beq _08068D2A\n\
-	bl sub_0805D3F4\n\
+	bl __builtin_vec_delete\n\
 _08068D2A:\n\
 	ldr r4, [sp, #0x24]\n\
 	add r7, sp, #0x14\n\
@@ -468,7 +468,7 @@ _08068D2A:\n\
 _08068D44:\n\
 	adds r5, r0, #0\n\
 	lsls r0, r5, #2\n\
-	bl sub_0805D3C8\n\
+	bl __builtin_vec_new\n\
 	adds r6, r0, #0\n\
 	ldr r3, [r4, #8]\n\
 	adds r2, r6, #0\n\
@@ -486,7 +486,7 @@ _08068D64:\n\
 	ldr r0, [r4, #8]\n\
 	cmp r0, #0\n\
 	beq _08068D6E\n\
-	bl sub_0805D3F4\n\
+	bl __builtin_vec_delete\n\
 _08068D6E:\n\
 	str r5, [r4]\n\
 	str r6, [r4, #8]\n\

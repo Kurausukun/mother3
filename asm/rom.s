@@ -3187,7 +3187,7 @@ _08001AE4:
 	orrs r2, r0
 	mov r0, sp
 	adds r1, r3, #0
-	bl sub_08090F78
+	bl CpuSet
 	b _08001B12
 _08001AFE:
 	str r0, [sp, #4]
@@ -3225,7 +3225,7 @@ _08001B36:
 	lsls r2, r2, #0xa
 	lsrs r2, r2, #0xb
 	adds r0, r3, #0
-	bl sub_08090F78
+	bl CpuSet
 	b _08001B4C
 _08001B42:
 	lsls r2, r2, #9
@@ -3261,7 +3261,7 @@ _08001B6A:
 	orrs r2, r0
 	mov r0, sp
 	adds r1, r3, #0
-	bl sub_08090F78
+	bl CpuSet
 	b _08001B96
 _08001B82:
 	str r2, [sp, #4]
