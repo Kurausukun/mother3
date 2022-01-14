@@ -21,15 +21,15 @@ void* sub_0806CC58() {
     return sub_0806CBD8();
 }
 
+// matches, but Clock needs to be inlined
 #ifdef NONMATCHING
 KeyPad::KeyPad() : keys(0), newKeys(0), _48(0) {
     _20 = 0x2d;
     _22 = 0x8;
 
-    //CpuSet(&fill, holdTimer, CPU_SET_SRC_FIXED | sizeof(holdTimer));
-	CpuFill16(0, holdTimer, sizeof(holdTimer));
-    registerClock(ClockManager::get(), SysClock(), gUnknown_080FF9B4.mask, gUnknown_080FF9B4.callback);
-    registerClock(ClockManager::get(), AppClock(), gUnknown_080FF9BC.mask, gUnknown_080FF9BC.callback);
+    CpuFill16(0, holdTimer, sizeof(holdTimer));
+    registerClock(ClockManager::get(), SysClock(), gUnknown_080FF9B4);
+    registerClock(ClockManager::get(), AppClock(), gUnknown_080FF9BC);
 }
 #else
 extern "C" NAKED KeyPad* __6KeyPad() {
@@ -76,7 +76,7 @@ extern "C" NAKED KeyPad* __6KeyPad() {
 	adds r0, r5, #0\n\
 	mov r1, r8\n\
 	adds r2, r6, #0\n\
-	bl registerClock__4BaseP4BaseRC4BaseUiPFP4Base_v\n\
+	bl registerClock__4BaseP4BaseRC4BaseG9ClockData\n\
 	mov r0, sb\n\
 	str r0, [sp, #0x24]\n\
 	adds r0, r6, #0\n\
@@ -95,7 +95,7 @@ extern "C" NAKED KeyPad* __6KeyPad() {
 	adds r0, r5, #0\n\
 	mov r1, r8\n\
 	adds r2, r6, #0\n\
-	bl registerClock__4BaseP4BaseRC4BaseUiPFP4Base_v\n\
+	bl registerClock__4BaseP4BaseRC4BaseG9ClockData\n\
 	mov r0, sb\n\
 	str r0, [sp, #0x24]\n\
 	adds r0, r6, #0\n\
