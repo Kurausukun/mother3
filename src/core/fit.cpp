@@ -14,13 +14,13 @@ FitAllocator::FitAllocator(u32 size, Fit* fit) {
     fit->sig[2] = 'e';
     fit->sig[3] = 'e';
     fit->size = size;
-    fit->next = 0;
+    fit->data = 0;
     head = fit;
 }
 
 FitAllocator::~FitAllocator() {
     int addr = 0;
-    for (Fit* i = head; i != 0; i = i->next) {
+    for (Fit* i = head; i != 0; i = i->next()) {
         if (*(u32*)i->sig != 0x65657266) {
             sub_08087E74((const char*)0x080FEC68, i);
         }
@@ -28,8 +28,8 @@ FitAllocator::~FitAllocator() {
     }
     if (addr != buf_size) {
         sub_08087E74((const char*)0x080FECAC, addr, buf_size);
-        for (Fit* i = head; i != 0; i = i->next) {
-            if (i->next != 0 && i->next != (Fit*)((u8*)i + i->size)) {
+        for (Fit* i = head; i != 0; i = i->next()) {
+            if (i->next() != 0 && i->next() != (Fit*)((u8*)i + i->size)) {
                 sub_08087E74((const char*)0x080FECF0, i, i->size);
             }
         }
@@ -248,20 +248,20 @@ _080697A4:\n\
 void FitAllocator::collapse() {
     Fit* f = head;
 
-    for (Fit* f = head; f != 0; f = f->next) {
-        Fit* next = f->next;
+    for (Fit* f = head; f != 0; f = f->next()) {
+        Fit* next = f->next();
         Fit* f2 = (Fit*)((u8*)f + f->size);
 
         if (f2 == next) {
             f->size = f->size + f2->size;
-            f->next = f2->next;
+            f->data = f2->next();
         }
     }
 }
 
 u32 FitAllocator::bytesRemaining() {
     u32 size = 0;
-    for (Fit* f = head; f != 0; f = f->next) {
+    for (Fit* f = head; f != 0; f = f->next()) {
         size += f->size;
     }
     return buf_size - size;
@@ -271,7 +271,7 @@ void FitAllocator::check() {
     u32 size;
 
     size = 0;
-    for (Fit* f = head; f != 0; f = f->next) {
+    for (Fit* f = head; f != 0; f = f->next()) {
         if (f < _4 || f >= (Fit*)((u8*)_4 + buf_size)) {
             sub_08087DCC((const char*)0x080fed60);
         }
@@ -292,7 +292,7 @@ void FitAllocator::getInfo() {
 
     num_chunks = 0;
     size = 0;
-    for (Fit* f = head; f != 0; f = f->next) {
+    for (Fit* f = head; f != 0; f = f->next()) {
         size += f->size;
         num_chunks++;
     }

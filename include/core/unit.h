@@ -1,0 +1,194 @@
+#ifndef CORE_UNIT_H
+#define CORE_UNIT_H
+
+#include "core/base.h"
+
+inline s32 clampS32(s32 value, s32 min, s32 max) {
+    if (value < min)
+        return min;
+    if (value > max)
+        return max;
+    return value;
+}
+
+struct Object {
+    virtual ~Object() {}
+};
+
+struct ID {
+    u32 value;
+};
+
+struct UnitCmd;
+
+class Unit : public Base, public Object {
+public:
+    Unit();
+    virtual ~Unit();
+
+    void setClamped(s16* dest, s32 value) {
+        *dest = clampS32(value, 0, 999);
+    }
+
+    s16 get48(u32 idx) const {
+        return *(_48 + idx);
+    }
+
+    s16 get58(u32 idx) const {
+        return *(_58 + idx);
+    }
+
+    virtual u8 unit_68();
+    virtual s32 unit_70(Unit* u) const;
+
+    virtual void unit_78(u32 a1);
+    virtual void unit_80(u32 a1);
+    virtual void unit_88(u32 a1);
+    virtual void unit_90(u32 a1);
+    virtual void unit_98(u32 a1);
+    virtual void unit_a0(u32 a1);
+
+    virtual void unit_a8();
+    virtual void unit_b0();
+    virtual void unit_b8();
+    virtual bool unit_c0();
+    virtual bool unit_c8();
+    virtual bool unit_d0();
+
+    virtual void unit_d8(u32 a1);
+    virtual void unit_e0(u32 a1);
+    virtual void unit_e8(u32 a1);
+    virtual void unit_f0(u32 a1);
+    virtual void unit_f8(u32 a1);
+    virtual void unit_100(u32 a1);
+    virtual void unit_108();
+
+    virtual void setLevel(s32 level);
+    virtual void setHP(s32 hp);
+    virtual void setMaxHP(s32 hp);
+    virtual void setPP(s32 pp);
+    virtual void setMaxPP(s32 pp);
+    
+    virtual void unit_138(s32 a1);
+    virtual void unit_140(s32 a1);
+    virtual void unit_148(s32 a1);
+    virtual void unit_150(s32 a1);
+    virtual void unit_158(s32 a1);
+    virtual void unit_160(s32 idx, s32 value);
+    virtual void unit_168(u16 idx, s32 value);
+    virtual void unit_170(u32 value);
+    
+    virtual void unit_178() = 0;
+    virtual void unit_180() = 0;
+    virtual void unit_188() = 0;
+
+    virtual s32 getLevel() const;
+    virtual s32 getHP() const;
+    virtual s32 unit_1a0() const;
+    virtual s32 getMaxHP() const;
+    virtual s32 getPP() const;
+    virtual s32 unit_1b8() const;
+    virtual s32 getMaxPP() const;
+
+    virtual s32 unit_1c8() const;
+    virtual s32 unit_1d0() const;
+    virtual s32 unit_1d8() const;
+    virtual s32 unit_1e0() const;
+    virtual s32 unit_1e8() const;
+
+    virtual s32 unit_1f0(u32 idx) const;
+    virtual s32 unit_1f8(u16 idx) const;
+    virtual s32 unit_200() const;
+
+    virtual void unit_208() = 0;
+    virtual void unit_210() = 0;
+    virtual void unit_218() = 0;
+    
+    virtual void unit_220();
+    virtual void unit_228();
+    virtual void unit_230();
+    virtual void unit_238();
+    virtual void unit_240();
+    virtual void unit_248();
+    virtual void unit_250();
+    virtual void unit_258();
+    virtual void unit_260();
+    virtual void unit_268();
+    virtual u32 unit_270(u32 a1);
+    virtual void unit_278();
+    virtual void unit_280();
+    virtual s32 unit_288();
+    virtual u16 unit_290(u32 a1);
+    virtual UnitCmd* unit_298(u32 a1);
+    virtual u8 unit_2a0(u32 a1);
+    virtual Unit* unit_2a8(u32 a1);
+
+    void nullsub_106();
+    void nullsub_27();
+
+    void sub_08074BA4();
+    void sub_08074C50();
+    bool sub_08074C60(u32 a1, u8 a2);
+
+    void sub_08075840();
+    void sub_08075400();
+
+private:
+    /* 0x24 */ u16 _24;
+    /* 0x26 */ u16 _26;
+    /* 0x28 */ u16 mLevel;
+    /* 0x2c */ u32 mHP;
+    /* 0x30 */ u32 mMaxHP;
+    /* 0x34 */ s16 mPP;
+    /* 0x36 */ s16 mMaxPP;
+    /* 0x38 */ s16 _38;
+    /* 0x3a */ s16 _3a;
+    /* 0x3c */ s16 _3c;
+    /* 0x3e */ s16 _3e;
+    /* 0x40 */ s16 _40;
+    /* 0x44 */ s32 _44;
+    /* 0x48 */ s16 _48[6];
+    /* 0x54 */ s32 _54;
+    /* 0x58 */ s16 _58[64];
+    /* 0xd8 */ u32 _d8;
+    /* 0xdc */ Fit _dc;
+    /* 0xe8 */ Fit _e8;
+    /* 0xf4 */ ID _f4;
+};
+
+struct UnitCmd : Base {
+    virtual ~UnitCmd();
+
+    virtual void x_68();
+    virtual void x_70();
+    virtual void x_78();
+    virtual void x_80();
+    virtual void x_88();
+    virtual void x_90();
+    virtual void x_98();
+    virtual void x_a0();
+    virtual void x_a8();
+    virtual void x_b0();
+    virtual void x_b8();
+    virtual void x_c0();
+    virtual void x_c8();
+    virtual void x_d0();
+    virtual void x_d8();
+    virtual void x_e0();
+    virtual void x_e8();
+    virtual void x_f0();
+    virtual void x_f8();
+    virtual void x_100();
+    virtual void x_108();
+    virtual void x_110();
+    virtual void x_118();
+    virtual void x_120();
+    virtual void x_128(Unit*) const;
+    virtual void x_130();
+    virtual u8 x_138();
+
+    void* p;
+    u8 _4[4];
+};
+
+#endif  // CORE_UNIT_H

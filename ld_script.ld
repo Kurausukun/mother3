@@ -39,9 +39,12 @@ SECTIONS
         asm/rom2b.o(.text);
         src/keypad.o(.text);
         asm/rom2c.o(.text);
+        src/core/unit.o(.text);
+        asm/rom2d.o(.text);
 		asm/m4a_1.o(.text);
         asm/libc.o(.text);
         src/rom3.o(.text);
+        asm/rom3a.o(.text);
 		asm/rom3.o(.text);
         src/goods.o(.text);
         asm/rom3b.o(.text);
@@ -82,6 +85,29 @@ SECTIONS
     _vt.20PreSysClockSingleton = 0x09f7ef08;
     _vt.Q215struct_0806A57C1A = 0x09f7ef20;
     _vt.6KeyPad = 0x09f7fbb0;
+    _vt.10UpKeyPress = 0x09f7fb30;
+    _vt.12DownKeyPress = 0x09f7fa30;
+    _vt.12LeftKeyPress = 0x09f7f930;
+    _vt.13RightKeyPress = 0x09f7f830;
+    _vt.9AKeyPress = 0x09f7f730;
+    _vt.9BKeyPress = 0x09f7f630;
+    _vt.9RKeyPress = 0x09f7f430;
+    _vt.9LKeyPress = 0x09f7f530;
+    _vt.13StartKeyPress = 0x09f7f330;
+    _vt.14SelectKeyPress = 0x09f7f230;
+    _vt.14UpKeyLongPress = 0x09f7fab0;
+    _vt.16DownKeyLongPress = 0x09f7f9b0;
+    _vt.16LeftKeyLongPress = 0x09f7f8b0;
+    _vt.17RightKeyLongPress = 0x09f7f7b0;
+    _vt.13AKeyLongPress = 0x09f7f6b0;
+    _vt.13BKeyLongPress = 0x09f7f5b0;
+    _vt.13LKeyLongPress = 0x09f7f4b0;
+    _vt.13RKeyLongPress = 0x09f7f3b0;
+    _vt.17StartKeyLongPress = 0x09f7f2b0;
+    _vt.18SelectKeyLongPress = 0x09f7f1b0;
+    _vt.4Unit.6Object = 0x09f81418;
+    _vt.4Unit = 0x09f81490;
+    _vt.6Object = 0x09f81a50;
 
     ROM_END = .;
     

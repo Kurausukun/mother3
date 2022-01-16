@@ -9059,7 +9059,7 @@ sub_08061E4C: @ 0x08061E4C
 	adds r5, r0, #0
 	lsls r4, r1, #0x10
 	lsrs r4, r4, #0x10
-	bl sub_08074AAC
+	bl __4Unit
 	ldr r0, _08061F18 @ =0x09F4B9D8
 	str r0, [r5, #0x20]
 	ldr r0, _08061F1C @ =0x09F4BA50
@@ -9279,7 +9279,7 @@ sub_08062034: @ 0x08062034
 	str r2, [r0, #0x20]
 	ldr r2, _0806204C @ =0x09F4BA50
 	str r2, [r0, #0x1c]
-	bl sub_08074B44
+	bl _._4Unit
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -9290,7 +9290,7 @@ _0806204C: .4byte 0x09F4BA50
 sub_08062050: @ 0x08062050
 	push {r4, r5, lr}
 	adds r4, r0, #0
-	bl sub_08074CA8
+	bl unit_d0__4Unit
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -9622,7 +9622,7 @@ nullsub_104: @ 0x08062250
 sub_08062254: @ 0x08062254
 	push {r4, lr}
 	adds r4, r0, #0
-	bl sub_08074AAC
+	bl __4Unit
 	ldr r0, _0806226C @ =0x09F4B9D8
 	str r0, [r4, #0x20]
 	ldr r0, _08062270 @ =0x09F4BA50
