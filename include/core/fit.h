@@ -7,17 +7,21 @@ struct Fit {
     Fit() {
         *(u32*)sig = 0;
         size = 0;
-        next = 0;
+        data = 0;
     }
 
     ~Fit() {
-        if (next)
-            delete next;
+        if (data)
+            delete[] data;
+    }
+
+    Fit* next() {
+        return static_cast<Fit*>(data);
     }
 
     char sig[4];
     u32 size;
-    Fit* next;
+    void* data;
 };
 
 class FitAllocator {

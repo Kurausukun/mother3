@@ -1,5 +1,7 @@
 #include "core/clock.h"
 
+#ifdef NONMATCHING
+
 SINGLETON_IMPL(PreSysClock)
 SINGLETON_IMPL(SysClock)
 SINGLETON_IMPL(PreAppClock)
@@ -200,3 +202,8 @@ u32 Clock::getTime() {
 }
 
 // global constructor @ 806A398
+
+#else
+asm(".include \"asm/clock_singletons.inc\"");
+asm(".include \"asm/clock_inlines.inc\"");
+#endif

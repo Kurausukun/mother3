@@ -18,9 +18,9 @@ public:
 
 class PreSysClock : public Unk {
 public:
-    PreSysClock();
-    PreSysClock(u32 time);
-    virtual ~PreSysClock();
+    inline PreSysClock() {}
+    inline PreSysClock(u32 time) : mTime(time)  {}
+    inline virtual ~PreSysClock() {}
 
     virtual void* getInstance();
 
@@ -32,9 +32,9 @@ private:
 
 class SysClock : public Unk {
 public:
-    SysClock();
-    SysClock(u32 time);
-    virtual ~SysClock();
+    inline SysClock() {}
+    inline SysClock(u32 time) : mTime(time) {}
+    inline virtual ~SysClock() {}
 
     virtual void* getInstance();
 
@@ -46,9 +46,9 @@ private:
 
 class PreAppClock : public Unk {
 public:
-    PreAppClock();
-    PreAppClock(u32 time);
-    virtual ~PreAppClock();
+    inline PreAppClock() {}
+    inline PreAppClock(u32 time) : mTime(time)  {}
+    inline virtual ~PreAppClock() {}
 
     virtual void* getInstance();
 
@@ -60,9 +60,9 @@ private:
 
 class AppClock : public Unk {
 public:
-    AppClock();
-    AppClock(u32 time);
-    virtual ~AppClock();
+    inline AppClock() {}
+    inline AppClock(u32 time) : mTime(time) {}
+    inline virtual ~AppClock() {}
 
     virtual void* getInstance();
 
@@ -74,9 +74,9 @@ private:
 
 class PostAppClock : public Unk {
 public:
-    PostAppClock();
-    PostAppClock(u32 time);
-    virtual ~PostAppClock();
+    inline PostAppClock() {}
+    inline PostAppClock(u32 time)  : mTime(time) { }
+    inline virtual ~PostAppClock() {}
 
     virtual void* getInstance();
 
@@ -88,9 +88,9 @@ private:
 
 class PostSysClock : public Unk {
 public:
-    PostSysClock();
-    PostSysClock(u32 time);
-    virtual ~PostSysClock();
+    inline PostSysClock() {}
+    inline PostSysClock(u32 time) : mTime(time) {}
+    inline virtual ~PostSysClock() {}
 
     virtual void* getInstance();
 

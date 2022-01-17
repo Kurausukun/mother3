@@ -7,7 +7,7 @@
 class Clock;
 class Base;
 
-typedef void (*Callback)(Base*);
+typedef void (*Callback)(Base*, Clock*);
 
 struct BaseNode {
     Base* sender;
@@ -32,10 +32,10 @@ public:
     virtual s32 base_24();
     virtual void base_2c();
     virtual void base_34();
-    virtual void registerClock(Base* sender, const Base& receiver, u32 mask, Callback fn);
+    virtual void registerClock(Base* sender, const Base& receiver, ClockData data);
     virtual void base_44();
     virtual void base_4c(u32 mask, Base& base, u32 mask2);
-    virtual void base_54(Base& clock);
+    virtual void base_54(const Base& clock);
     virtual void base_5c();
     virtual void base_64();
 

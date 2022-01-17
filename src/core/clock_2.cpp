@@ -1,42 +1,6 @@
 #include "core/clock.h"
 #include "gba/gba.h"
 
-u32 PostSysClock::getTime() {
-    return mTime;
-}
-PostSysClock::PostSysClock(u32 time) : mTime(time) {}
-PostSysClock::PostSysClock() {}
-
-u32 PostAppClock::getTime() {
-    return mTime;
-}
-PostAppClock::PostAppClock(u32 time) : mTime(time) {}
-PostAppClock::PostAppClock() {}
-
-u32 AppClock::getTime() {
-    return mTime;
-}
-AppClock::AppClock(u32 time) : mTime(time) {}
-AppClock::AppClock() {}
-
-u32 PreAppClock::getTime() {
-    return mTime;
-}
-PreAppClock::PreAppClock(u32 time) : mTime(time) {}
-PreAppClock::PreAppClock() {}
-
-u32 SysClock::getTime() {
-    return mTime;
-}
-SysClock::SysClock(u32 time) : mTime(time) {}
-SysClock::SysClock() {}
-
-u32 PreSysClock::getTime() {
-    return mTime;
-}
-PreSysClock::PreSysClock(u32 time) : mTime(time) {}
-PreSysClock::PreSysClock() {}
-
 struct struct_0806A57C {
     struct_0806A57C();
     ~struct_0806A57C();
