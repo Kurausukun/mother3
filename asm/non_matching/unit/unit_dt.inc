@@ -11,9 +11,9 @@
 	adds r0, r4, #0
 	bl unit_108__4Unit
 	adds r0, r4, #0
-	bl sub_08075840__4Unit
+	bl unit_280__4Unit
 	adds r0, r4, #0
-	bl sub_08075400__4Unit
+	bl unit_230__4Unit
 	adds r0, r4, #0
 	adds r0, #0xe8
 	ldr r0, [r0, #8]

@@ -367,7 +367,7 @@ _08000588: .4byte gUnknown_020047D0
 _0800058C:
 	ldr r0, _080005AC @ =0x00000315
 	movs r1, #0
-	bl sub_080028BC
+	bl set_event_flag
 	ldr r1, _080005B0 @ =gUnknown_02004100
 	movs r0, #0xd
 	strb r0, [r1]
@@ -826,7 +826,7 @@ sub_08000920: @ 0x08000920
 	bl sub_08000944
 	movs r0, #0x9d
 	adds r1, r4, #0
-	bl sub_080028BC
+	bl set_event_flag
 	bl sub_08000BE8
 	pop {r4}
 	pop {r0}
@@ -5084,8 +5084,8 @@ sub_080028B8: @ 0x080028B8
 	ldr r0, [r0]
 	bx lr
 
-	thumb_func_start sub_080028BC
-sub_080028BC: @ 0x080028BC
+	thumb_func_start set_event_flag
+set_event_flag: @ 0x080028BC
 	push {r4, r5, lr}
 	lsls r0, r0, #0x10
 	lsls r1, r1, #0x10
@@ -8989,7 +8989,7 @@ _08004686:
 	lsrs r4, r4, #0x10
 	adds r0, r5, #0
 	movs r1, #1
-	bl sub_080028BC
+	bl set_event_flag
 	movs r0, #7
 	strb r0, [r6]
 	bl sub_08013EB8
@@ -9001,7 +9001,7 @@ _08004686:
 	bl sub_08005C4C
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_080028BC
+	bl set_event_flag
 _080046C8:
 	ldr r0, _08004734 @ =gUnknown_03004B00
 	movs r1, #0

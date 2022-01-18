@@ -3916,13 +3916,13 @@ sub_080A1FC0: @ 0x080A1FC0
 	str r1, [r0]
 	adds r0, r5, #0
 	movs r1, #0x16
-	bl sub_0807559C
+	bl unit_268__4UnitUi
 	adds r0, r5, #0
 	movs r1, #0x16
-	bl sub_0807559C
+	bl unit_268__4UnitUi
 	adds r0, r5, #0
 	movs r1, #0x16
-	bl sub_0807559C
+	bl unit_268__4UnitUi
 	adds r0, r5, #0
 	add sp, #0x28
 	pop {r3, r4}
@@ -6724,7 +6724,7 @@ sub_080A3950: @ 0x080A3950
 	str r1, [r0]
 	adds r0, r5, #0
 	movs r1, #0x18
-	bl sub_0807559C
+	bl unit_268__4UnitUi
 	adds r0, r5, #0
 	add sp, #0x28
 	pop {r3, r4}
@@ -14845,7 +14845,7 @@ sub_080A7D14: @ 0x080A7D14
 	lsls r1, r1, #0x10
 	lsrs r5, r1, #0x10
 	adds r1, r5, #0
-	bl sub_08075770
+	bl unit_270__4UnitUi
 	lsls r0, r0, #0x18
 	lsrs r6, r0, #0x18
 	cmp r5, #0x16
@@ -19132,7 +19132,7 @@ sub_080A9EE8: @ 0x080A9EE8
 	lsls r4, r1, #0x10
 	lsrs r4, r4, #0x10
 	adds r1, r4, #0
-	bl sub_08075770
+	bl unit_270__4UnitUi
 	lsls r0, r0, #0x18
 	lsrs r6, r0, #0x18
 	cmp r4, #0x16
@@ -22325,7 +22325,7 @@ sub_080AB7C4: @ 0x080AB7C4
 	lsls r1, r1, #0x10
 	lsrs r5, r1, #0x10
 	adds r1, r5, #0
-	bl sub_08075770
+	bl unit_270__4UnitUi
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1

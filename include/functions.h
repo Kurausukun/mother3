@@ -20,7 +20,7 @@ void sub_08005C14();
 void sub_08001B18(u32*, u32*, u32);
 void sub_08013D38();
 void sub_0802610C(u32);
-void sub_080028BC(u32, u32);
+void set_event_flag(u32, u32);
 void sub_08002938(u32, u32);
 void sub_08002950(u32, u32);
 u16 sub_08002970(u32);

@@ -1,6 +1,8 @@
 #include "core/unit.h"
+#include "functions.h"
 
 Unit* sub_080651A4(u16, Unit*);
+extern u16 gUnknown_08106360[];
 
 Unit::Unit() : _44(0), _54(0) {
     mLevel = 1;
@@ -35,7 +37,7 @@ Unit::Unit() : _44(0), _54(0) {
 extern "C" NONMATCH("asm/non_matching/unit/unit_dt.inc", void Unit_dt(Unit* t)) {
     t->nullsub_27();
     t->sub_08075840();
-    t->sub_08075400();
+    t->unit_230();
 }
 END_NONMATCH
 
@@ -244,3 +246,116 @@ NONMATCH("asm/non_matching/unit/unit_220__4UnitUi.inc", Unit* Unit::unit_220(u32
     return u;
 }
 END_NONMATCH
+
+ASM_FUNC("asm/non_matching/unit/unit_228__4UnitUi.inc", bool Unit::unit_228(u32 a1));
+
+void Unit::unit_230(void) {
+    while (unit_238() > 0) {
+        unit_228(unit_240(0));
+    }
+}
+
+s32 Unit::unit_238() const {
+    const Fit* f = &_dc;
+    return f->size;
+}
+
+NONMATCH("asm/non_matching/unit/unit_240__4Uniti.inc", u16 Unit::unit_240(s32 a1)) {
+    UnitCmd* tmp = (UnitCmd*)_dc.next()->content()[a1];
+    return tmp->x_78();
+}
+END_NONMATCH
+
+NONMATCH("asm/non_matching/unit/unit_248__4Uniti.inc", UnitCmd* Unit::unit_248(s32 a1)) {
+    return ((UnitCmd**)_dc.next()->content())[a1];
+}
+END_NONMATCH
+
+bool Unit::unit_250(u16 a1) {
+    return unit_258(a1) < unit_238();
+}
+
+s32 Unit::unit_258(u16 a1) {
+    for (int i = 0; i < unit_238(); ++i) {
+        if (unit_240(i) == a1) {
+            return i;
+        }
+    }
+    return unit_238();
+}
+
+s32 Unit::unit_260(u16 a1) {
+    for (int i = 0; i < unit_238(); ++i) {
+        if (unit_240(i) == a1) {
+            return unit_240(i);
+        }
+    }
+    return 0;
+}
+
+ASM_FUNC("asm/non_matching/unit/unit_268__4UnitUi.inc", u32 Unit::unit_268(u32 a1));
+
+bool Unit::flagStuff(u16 idx) {
+    u16 x = idx - 1;
+    if (x <= 7) {
+        set_event_flag(gUnknown_08106360[idx - 1], 1);
+        return true;
+    }
+    return false;
+}
+
+ASM_FUNC("asm/non_matching/unit/unit_270__4UnitUi.inc", u32 Unit::unit_270(u32 a1));
+
+void Unit::unit_278(u16 a1) {
+    while (unit_2a0(a1) == 1) {
+        unit_270(a1);
+    }
+}
+
+void Unit::unit_280(void) {
+    while (unit_288() > 0) {
+        unit_270(unit_290(0));
+    }
+}
+
+s32 Unit::unit_288() const {
+    const Fit* f = &_e8;
+    return f->size;
+}
+
+NONMATCH("asm/non_matching/unit/unit_290__4Uniti.inc", u16 Unit::unit_290(s32 a1)) {
+    UnitCmd* tmp = (UnitCmd*)_e8.next()->content()[a1];
+    return tmp->x_e8();
+}
+END_NONMATCH
+
+NONMATCH("asm/non_matching/unit/unit_298__4Uniti.inc", UnitCmd* Unit::unit_298(s32 a1)) {
+    return ((UnitCmd**)_dc.next()->content())[a1];
+}
+END_NONMATCH
+
+bool Unit::unit_2a0(u16 a1) {
+    return unit_2a8(a1) < unit_288();
+}
+
+s32 Unit::unit_2a8(u16 a1) {
+    for (int i = 0; i < unit_288(); ++i) {
+        if (unit_290(i) == a1) {
+            return i;
+        }
+    }
+    return unit_288();
+}
+
+ASM_FUNC("asm/non_matching/unit/unit_2b0__4UnitUs.inc", s32 Unit::unit_2b0(u16 a1));
+
+s32 Unit::unit_2b8(u16 a1) {
+    s32 num = 0;
+
+    for (int i = 0; i < unit_288(); i++) {
+        if (unit_290(i) == a1) {
+            num++;
+        }
+    }
+    return num;
+}

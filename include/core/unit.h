@@ -13,6 +13,20 @@ inline s32 clampS32(s32 value, s32 min, s32 max) {
 
 struct Object {
     virtual ~Object() {}
+
+    virtual void object_10() = 0;
+    virtual void object_18() = 0;
+    virtual void object_20() = 0;
+    virtual void object_28() = 0;
+    virtual void object_30() = 0;
+    virtual void object_38() = 0;
+    virtual void object_40() = 0;
+    virtual void object_48() = 0;
+    virtual void object_50() = 0;
+    virtual void object_58() = 0;
+    virtual void object_60() = 0;
+    virtual void object_68() = 0;
+    virtual void object_70() = 0;
 };
 
 struct ID {
@@ -26,17 +40,10 @@ public:
     Unit();
     virtual ~Unit();
 
-    void setClamped(s16* dest, s32 value) {
-        *dest = clampS32(value, 0, 999);
-    }
+    void setClamped(s16* dest, s32 value) { *dest = clampS32(value, 0, 999); }
 
-    s16 get48(u32 idx) const {
-        return *(_48 + idx);
-    }
-
-    s16 get58(u32 idx) const {
-        return *(_58 + idx);
-    }
+    s16 get48(u32 idx) const { return *(_48 + idx); }
+    s16 get58(u32 idx) const { return *(_58 + idx); }
 
     virtual u8 unit_68();
     virtual s32 unit_70(Unit* u) const;
@@ -68,7 +75,7 @@ public:
     virtual void setMaxHP(s32 hp);
     virtual void setPP(s32 pp);
     virtual void setMaxPP(s32 pp);
-    
+
     virtual void unit_138(s32 a1);
     virtual void unit_140(s32 a1);
     virtual void unit_148(s32 a1);
@@ -77,7 +84,7 @@ public:
     virtual void unit_160(s32 idx, s32 value);
     virtual void unit_168(u16 idx, s32 value);
     virtual void unit_170(u32 value);
-    
+
     virtual void unit_178() = 0;
     virtual void unit_180() = 0;
     virtual void unit_188() = 0;
@@ -103,35 +110,36 @@ public:
     virtual void unit_208() = 0;
     virtual void unit_210() = 0;
     virtual void unit_218() = 0;
-    
-    virtual Unit* Unit::unit_220(u32 a1);
-    virtual void unit_228();
+
+    virtual Unit* unit_220(u32 a1);
+    virtual bool unit_228(u32 a1);
     virtual void unit_230();
-    virtual void unit_238();
-    virtual void unit_240();
-    virtual void unit_248();
-    virtual void unit_250();
-    virtual void unit_258();
-    virtual void unit_260();
-    virtual void unit_268();
+    virtual s32 unit_238() const;
+    virtual u16 unit_240(s32 a1);
+    virtual UnitCmd* unit_248(s32 a1);
+    virtual bool unit_250(u16 a1);
+    virtual s32 unit_258(u16 a1);
+    virtual s32 unit_260(u16 a1);
+    virtual u32 unit_268(u32 a1);
     virtual u32 unit_270(u32 a1);
-    virtual void unit_278();
+    virtual void unit_278(u16 a1);
     virtual void unit_280();
-    virtual s32 unit_288();
-    virtual u16 unit_290(u32 a1);
-    virtual UnitCmd* unit_298(u32 a1);
-    virtual u8 unit_2a0(u32 a1);
-    virtual Unit* unit_2a8(u32 a1);
+    virtual s32 unit_288() const;
+    virtual u16 unit_290(s32 a1);
+    virtual UnitCmd* unit_298(s32 a1);
+    virtual bool unit_2a0(u16 a1);
+    virtual s32 unit_2a8(u16 a1);
+    virtual s32 unit_2b0(u16 a1);
+    virtual s32 unit_2b8(u16 a1);
 
     void nullsub_106();
     void nullsub_27();
-
     void sub_08074BA4();
     void sub_08074C50();
     bool sub_08074C60(u32 a1, u8 a2);
-
     void sub_08075840();
     void sub_08075400();
+    bool flagStuff(u16 idx);
 
 private:
     /* 0x24 */ u16 _24;
@@ -161,7 +169,7 @@ struct UnitCmd : Base {
 
     virtual void x_68();
     virtual void x_70();
-    virtual void x_78();
+    virtual s32 x_78();
     virtual void x_80();
     virtual void x_88();
     virtual void x_90();
@@ -175,7 +183,7 @@ struct UnitCmd : Base {
     virtual void x_d0();
     virtual void x_d8();
     virtual void x_e0();
-    virtual void x_e8();
+    virtual s32 x_e8();
     virtual void x_f0();
     virtual void x_f8();
     virtual void x_100();
