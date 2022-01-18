@@ -1,0 +1,2 @@
+*.inc linguist-language=Assembly
+*.py linguist-vendored

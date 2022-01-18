@@ -656,10 +656,10 @@ sub_08097C94: @ 0x08097C94
 	push {lr}
 	ldr r0, _08097CAC @ =0x00000173
 	movs r1, #1
-	bl sub_080028BC
+	bl set_event_flag
 	ldr r0, _08097CB0 @ =0x00000285
 	movs r1, #1
-	bl sub_080028BC
+	bl set_event_flag
 	movs r0, #1
 	pop {r1}
 	bx r1

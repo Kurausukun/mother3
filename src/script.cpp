@@ -398,7 +398,7 @@ u16 sub_0801C4A4(s32* sp) {
     flag = scriptstack_peek(sp, 1);
     value = scriptstack_peek(sp, 0) & 1;
     if (flag < 0x800)
-        sub_080028BC(flag, value);
+        set_event_flag(flag, value);
     return 0;
 }
 
@@ -772,7 +772,7 @@ u16 sub_0801C8C8(s32* sp) {
         }
     }
     if (gScript.party_count > 1) {
-        sub_080028BC(0x3e3, 1);
+        set_event_flag(0x3e3, 1);
     }
     return 0;
 }
@@ -809,7 +809,7 @@ _0801C8F6:\n\
 	bls _0801C90A\n\
 	ldr r0, _0801C920 @ =0x000003E3\n\
 	movs r1, #1\n\
-	bl sub_080028BC\n\
+	bl set_event_flag\n\
 _0801C90A:\n\
 	movs r0, #0\n\
 	pop {r4}\n\
@@ -853,7 +853,7 @@ u16 sub_0801C970(s32* sp) {
         }
     }
     if (gScript.party_count == 1) {
-        sub_080028BC(0x3e3, 0);
+        set_event_flag(0x3e3, 0);
     }
     return 0;
 }
@@ -891,7 +891,7 @@ _0801C9A0:\n\
 	bne _0801C9B4\n\
 	ldr r0, _0801C9C8 @ =0x000003E3\n\
 	movs r1, #0\n\
-	bl sub_080028BC\n\
+	bl set_event_flag\n\
 _0801C9B4:\n\
 	movs r0, #0\n\
 	pop {r1}\n\
@@ -1014,7 +1014,7 @@ u16 sub_0801CB48(s32* sp) {
         }
     }
     if (gScript.party_count > 1) {
-        sub_080028BC(0x3e3, 1);
+        set_event_flag(0x3e3, 1);
     }
     return 0;
 }
@@ -1051,7 +1051,7 @@ _0801CB76:\n\
 	bls _0801CB8A\n\
 	ldr r0, _0801CBA0 @ =0x000003E3\n\
 	movs r1, #1\n\
-	bl sub_080028BC\n\
+	bl set_event_flag\n\
 _0801CB8A:\n\
 	movs r0, #0\n\
 	pop {r4}\n\

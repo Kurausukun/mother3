@@ -21,7 +21,7 @@ FitAllocator::FitAllocator(u32 size, Fit* fit) {
 FitAllocator::~FitAllocator() {
     int addr = 0;
     for (Fit* i = head; i != 0; i = i->next()) {
-        if (*(u32*)i->sig != 0x65657266) {
+        if (i->sig32 != 0x65657266) {
             sub_08087E74((const char*)0x080FEC68, i);
         }
         addr += i->size;

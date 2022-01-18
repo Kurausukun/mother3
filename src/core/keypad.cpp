@@ -1,19 +1,12 @@
-#include "keypad.h"
 #include "core/clock.h"
+#include "core/keypad.h"
+
 extern "C" {
 #include "gba/gba.h"
 }
 
 extern ClockData gUnknown_080FF9B4;
 extern ClockData gUnknown_080FF9BC;
-
-// struct BattleBase : Unk {
-//     BattleBase() {}
-
-//     virtual ~BattleBase() {}
-
-//     virtual void* manager();
-// };
 
 void* sub_0806CBD8();
 

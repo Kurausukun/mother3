@@ -98004,7 +98004,7 @@ sub_0804EEE8: @ 0x0804EEE8
 	adds r0, r0, r1
 	ldrh r0, [r0]
 	movs r1, #1
-	bl sub_080028BC
+	bl set_event_flag
 	movs r0, #0xd2
 	bl sub_0800399C
 	bl sub_0804C004
