@@ -15303,8 +15303,8 @@ sub_08065194: @ 0x08065194
 	.align 2, 0
 _080651A0: .4byte gUnknown_02003CC0
 
-	thumb_func_start sub_080651A4
-sub_080651A4: @ 0x080651A4
+	thumb_func_start sub_080651A4__FUsP4Unit
+sub_080651A4__FUsP4Unit: @ 0x080651A4
 	push {lr}
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10

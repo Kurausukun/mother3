@@ -1,5 +1,7 @@
 #include "core/unit.h"
 
+Unit* sub_080651A4(u16, Unit*);
+
 Unit::Unit() : _44(0), _54(0) {
     mLevel = 1;
     mHP = 1;
@@ -234,3 +236,11 @@ s32 Unit::unit_1f8(u16 idx) const {
 s32 Unit::unit_200() const {
     return _d8;
 }
+
+NONMATCH("asm/non_matching/unit/unit_220__4UnitUi.inc", Unit* Unit::unit_220(u32 a1)) {
+    Unit* u = sub_080651A4(a1, this);
+    u->unit_68();
+    _dc.append((void**)&u);
+    return u;
+}
+END_NONMATCH

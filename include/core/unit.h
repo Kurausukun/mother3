@@ -104,7 +104,7 @@ public:
     virtual void unit_210() = 0;
     virtual void unit_218() = 0;
     
-    virtual void unit_220();
+    virtual Unit* Unit::unit_220(u32 a1);
     virtual void unit_228();
     virtual void unit_230();
     virtual void unit_238();
