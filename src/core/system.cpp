@@ -1,7 +1,7 @@
-#include "core/system.h"
 #include <stddef.h>
+#include "core/system.h"
 #include "core/clock.h"
-#include "keypad.h"
+#include "core/keypad.h"
 #include "structs.h"
 
 extern "C" void sub_0806E4C4();

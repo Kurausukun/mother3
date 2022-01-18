@@ -37,7 +37,7 @@ SECTIONS
         src/core/clock.o(.text);
         src/core/clock_2.o(.text);
         asm/rom2b.o(.text);
-        src/keypad.o(.text);
+        src/core/keypad.o(.text);
         asm/rom2c.o(.text);
         src/core/unit.o(.text);
         asm/rom2d.o(.text);
