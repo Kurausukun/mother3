@@ -25,11 +25,11 @@ SECTIONS
         asm/crt0.o(.text);
         asm/rom.o(.text);
         src/script.o(.text);
-        src/core/irc_2.o(.text);
         asm/code_0801BEE0.o(.text);
         src/core/system.o(.text);
         asm/battle.o(.text);
         asm/guest.o(.text);
+        src/guest.o(.text);
         asm/goods.o(.text);
         asm/sndmon.o(.text);
         asm/code_0805D74C.o(.text);
@@ -55,9 +55,12 @@ SECTIONS
         asm/rhythm.o(.text);
         asm/unit.o(.text);
         src/core/unit.o(.text);
+        asm/rom2.o(.text);
+        src/skill.o(.text);
         asm/player.o(.text);
         asm/playerskill.o(.text);
         asm/guestskill.o(.text);
+        src/guestskill.o(.text);
         asm/monster.o(.text);
         asm/monsterskill.o(.text);
         asm/psi.o(.text);

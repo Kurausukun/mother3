@@ -3,30 +3,6 @@
 .syntax unified
 .section .text
 
-	thumb_func_start sub_0808075C
-sub_0808075C: @ 0x0808075C
-	push {r4, lr}
-	adds r4, r0, #0
-	bl __4Base
-	adds r1, r4, #0
-	adds r1, #0x28
-	movs r0, #0
-	str r0, [r4, #0x28]
-	str r0, [r1, #4]
-	str r0, [r1, #8]
-	adds r1, #0xc
-	str r0, [r4, #0x34]
-	str r0, [r1, #4]
-	str r0, [r1, #8]
-	ldr r0, _08080784 @ =0x09F82A28
-	str r0, [r4, #0x1c]
-	adds r0, r4, #0
-	pop {r4}
-	pop {r1}
-	bx r1
-	.align 2, 0
-_08080784: .4byte 0x09F82A28
-
 	thumb_func_start sub_08080788
 sub_08080788: @ 0x08080788
 	ldr r0, _0808078C @ =gUnknown_02002368
@@ -382,17 +358,3 @@ sub_08080998: @ 0x08080998
 	movs r0, #0
 	bx lr
 
-	thumb_func_start sub_0808099C
-sub_0808099C: @ 0x0808099C
-	push {r4, lr}
-	ldr r4, _080809B0 @ =gUnknown_02002368
-	adds r0, r4, #0
-	bl __9Singleton
-	ldr r0, _080809B4 @ =0x09F82F80
-	str r0, [r4, #8]
-	pop {r4}
-	pop {r0}
-	bx r0
-	.align 2, 0
-_080809B0: .4byte gUnknown_02002368
-_080809B4: .4byte 0x09F82F80

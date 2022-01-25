@@ -8313,3 +8313,27 @@ sub_08080740: @ 0x08080740
 	.align 2, 0
 _08080754: .4byte gUnknown_02002200
 _08080758: .4byte 0x09F82CC8
+
+	thumb_func_start sub_0808075C
+sub_0808075C: @ 0x0808075C
+	push {r4, lr}
+	adds r4, r0, #0
+	bl __4Base
+	adds r1, r4, #0
+	adds r1, #0x28
+	movs r0, #0
+	str r0, [r4, #0x28]
+	str r0, [r1, #4]
+	str r0, [r1, #8]
+	adds r1, #0xc
+	str r0, [r4, #0x34]
+	str r0, [r1, #4]
+	str r0, [r1, #8]
+	ldr r0, _08080784 @ =0x09F82A28
+	str r0, [r4, #0x1c]
+	adds r0, r4, #0
+	pop {r4}
+	pop {r1}
+	bx r1
+	.align 2, 0
+_08080784: .4byte 0x09F82A28

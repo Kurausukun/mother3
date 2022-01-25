@@ -204,6 +204,6 @@ u32 Clock::getTime() {
 // global constructor @ 806A398
 
 #else
-asm(".include \"asm/clock_singletons.inc\"");
-asm(".include \"asm/clock_inlines.inc\"");
+asm(".include \"asm/non_matching/clock_singletons.inc\"");
+asm(".include \"asm/non_matching/clock_inlines.inc\"");
 #endif

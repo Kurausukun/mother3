@@ -6076,8 +6076,8 @@ sub_08061E14: @ 0x08061E14
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_08061E20
-sub_08061E20: @ 0x08061E20
+	thumb_func_start sub_08061E20__FP4BaseUi
+sub_08061E20__FP4BaseUi: @ 0x08061E20
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	lsls r1, r1, #0x10
@@ -6485,106 +6485,3 @@ _08062164:
 	pop {r1}
 	bx r1
 	.align 2, 0
-
-	thumb_func_start sub_0806217C
-sub_0806217C: @ 0x0806217C
-	movs r0, #0
-	bx lr
-
-	thumb_func_start sub_08062180
-sub_08062180: @ 0x08062180
-	adds r0, #0xf8
-	ldrh r0, [r0]
-	bx lr
-	.align 2, 0
-
-	thumb_func_start sub_08062188
-sub_08062188: @ 0x08062188
-	push {r4, lr}
-	adds r4, r0, #0
-	adds r1, #0xf8
-	ldrh r1, [r1]
-	bl sub_08061E20
-	adds r0, r4, #0
-	pop {r4}
-	pop {r1}
-	bx r1
-
-	thumb_func_start sub_0806219C
-sub_0806219C: @ 0x0806219C
-	adds r0, #0xfc
-	ldr r0, [r0]
-	ldrb r0, [r0, #0x12]
-	bx lr
-
-	thumb_func_start sub_080621A4
-sub_080621A4: @ 0x080621A4
-	movs r0, #0
-	bx lr
-
-	thumb_func_start sub_080621A8
-sub_080621A8: @ 0x080621A8
-	movs r0, #0
-	bx lr
-
-	thumb_func_start sub_080621AC
-sub_080621AC: @ 0x080621AC
-	movs r0, #0
-	bx lr
-
-	thumb_func_start sub_080621B0
-sub_080621B0: @ 0x080621B0
-	push {lr}
-	ldr r1, [r0, #0x1c]
-	movs r2, #0xb4
-	lsls r2, r2, #2
-	adds r1, r1, r2
-	movs r3, #0
-	ldrsh r2, [r1, r3]
-	adds r0, r0, r2
-	ldr r1, [r1, #4]
-	bl _call_via_r1
-	pop {r0}
-	bx r0
-	.align 2, 0
-
-	thumb_func_start nullsub_96
-nullsub_96: @ 0x080621CC
-	bx lr
-	.align 2, 0
-
-	thumb_func_start sub_080621D0
-sub_080621D0: @ 0x080621D0
-	push {lr}
-	ldr r1, [r0, #0x1c]
-	movs r2, #0xb6
-	lsls r2, r2, #2
-	adds r1, r1, r2
-	movs r3, #0
-	ldrsh r2, [r1, r3]
-	adds r0, r0, r2
-	ldr r1, [r1, #4]
-	bl _call_via_r1
-	pop {r0}
-	bx r0
-	.align 2, 0
-
-	thumb_func_start nullsub_97
-nullsub_97: @ 0x080621EC
-	bx lr
-	.align 2, 0
-
-	thumb_func_start sub_080621F0
-sub_080621F0: @ 0x080621F0
-	push {r4, lr}
-	ldr r4, _08062204 @ =gUnknown_02002318
-	adds r0, r4, #0
-	bl __9Singleton
-	ldr r0, _08062208 @ =0x09F4BD38
-	str r0, [r4, #8]
-	pop {r4}
-	pop {r0}
-	bx r0
-	.align 2, 0
-_08062204: .4byte gUnknown_02002318
-_08062208: .4byte 0x09F4BD38

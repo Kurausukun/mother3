@@ -12,5 +12,5 @@ SINGLETON_DEBUG(SysClock, gUnknown_080FEEC0)
 SINGLETON_DEBUG(PreSysClock, gUnknown_080FEEA8)
 
 #else
-asm(".include \"asm/inst.inc\"");
+asm(".include \"asm/non_matching/inst.inc\"");
 #endif
