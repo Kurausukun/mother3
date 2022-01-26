@@ -32,7 +32,7 @@ void* sub_080BDAC0() {
     return sub_08064FE8();
 }
 
-extern const char gUnknown_080FA950[]; // "Goods"
+extern const char gUnknown_080FA950[];  // "Goods"
 const char* sub_080BDAD0() {
     return gUnknown_080FA950;
 }
@@ -146,5 +146,4 @@ void* sub_080BDE20(u16 r0, u32 r1, u16 r2) {
     void* temp = __builtin_new(0x50);
     return sub_080BE0FC(temp, r0, r1, r2);
 }
-
 }

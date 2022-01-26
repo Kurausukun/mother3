@@ -1,9 +1,9 @@
-#include "core/system.h"
 #include "core/singleton.h"
+#include "core/system.h"
 
 struct A {
     A() {}
-    A(u32 val) {_0 = val; }
+    A(u32 val) { _0 = val; }
     u32 _0;
 };
 
@@ -23,12 +23,9 @@ struct D : C, virtual B {
     u32 sub_0805D2F0(A** p, u32 idx);
 };
 
-D::~D() {
-    
-}
+D::~D() {}
 
 SINGLETON_DEBUG_MGR(System, gUnknown_080F24D0)
-
 
 // todo: figure out how to generate this here naturally
 extern "C" NAKED void temp_080977A0() {
@@ -44,4 +41,3 @@ extern "C" NAKED void temp_080977A0() {
 _080977B0: .4byte 0x09F44FF0\n\
     ");
 }
-

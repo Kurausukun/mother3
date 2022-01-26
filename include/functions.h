@@ -88,7 +88,6 @@ void sub_08012830(u16, u16, s32, u32);
 void sub_08011564(u32);
 void sub_0801A594(u32, u16*);
 void sub_0801097C(u32, u32, u32);
-
 }
 
 #endif  // FUNCTIONS_H

@@ -1266,5 +1266,5 @@ gUnknown_08F3C344:
 
     .global gUnknown_08F9003C
 gUnknown_08F9003C:
-    .incbin "baserom.gba", 0x00F9003C, 0x106FFC4
+    .incbin "baserom.gba", 0x00F9003C, 0xfb4ecc
 

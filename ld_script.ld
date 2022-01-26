@@ -81,6 +81,7 @@ SECTIONS
     {
         data/data1.o(.data);
         data/data2.o(.data);
+        data/vtables.o(.data);
     } = 0
     _vt.1D = 0x09f44f08;
     _vt.15SystemAllocator = 0x09F44F28;

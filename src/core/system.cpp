@@ -1,5 +1,5 @@
-#include <stddef.h>
 #include "core/system.h"
+#include <stddef.h>
 #include "core/clock.h"
 #include "core/keypad.h"
 #include "structs.h"
