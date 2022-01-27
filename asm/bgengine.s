@@ -582,7 +582,7 @@ _0806B480:
 	ldrsh r4, [r5, r0]
 	adds r0, r4, #0
 	movs r1, #8
-	bl sub_08091A08
+	bl __modsi3
 	cmp r0, #0
 	bne _0806B498
 	adds r0, r4, #0
@@ -592,7 +592,7 @@ _0806B498:
 	adds r0, #8
 _0806B49C:
 	movs r1, #8
-	bl sub_08091970
+	bl __divsi3
 	lsls r0, r0, #3
 	lsls r0, r0, #0x10
 	asrs r0, r0, #0x10
@@ -606,7 +606,7 @@ _0806B4AE:
 	ldrsh r4, [r5, r1]
 	adds r0, r4, #0
 	movs r1, #8
-	bl sub_08091A08
+	bl __modsi3
 	cmp r0, #0
 	bne _0806B4C6
 	adds r0, r4, #0
@@ -616,7 +616,7 @@ _0806B4C6:
 	adds r0, #8
 _0806B4CA:
 	movs r1, #8
-	bl sub_08091970
+	bl __divsi3
 	lsls r0, r0, #3
 	lsls r0, r0, #0x10
 	asrs r0, r0, #0x10
@@ -729,7 +729,7 @@ _0806B594:
 	ldrsh r4, [r5, r0]
 	adds r0, r4, #0
 	movs r1, #8
-	bl sub_08091A08
+	bl __modsi3
 	cmp r0, #0
 	bne _0806B5AA
 	adds r0, r4, #0
@@ -739,7 +739,7 @@ _0806B5AA:
 	adds r0, #8
 _0806B5AE:
 	movs r1, #8
-	bl sub_08091970
+	bl __divsi3
 	lsls r0, r0, #3
 	lsls r0, r0, #0x10
 	asrs r0, r0, #0x10
@@ -753,7 +753,7 @@ _0806B5C0:
 	ldrsh r4, [r5, r1]
 	adds r0, r4, #0
 	movs r1, #8
-	bl sub_08091A08
+	bl __modsi3
 	cmp r0, #0
 	bne _0806B5D8
 	adds r0, r4, #0
@@ -763,7 +763,7 @@ _0806B5D8:
 	adds r0, #8
 _0806B5DC:
 	movs r1, #8
-	bl sub_08091970
+	bl __divsi3
 	lsls r0, r0, #3
 	lsls r0, r0, #0x10
 	asrs r0, r0, #0x10

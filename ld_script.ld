@@ -67,6 +67,41 @@ SECTIONS
         asm/rom2d.o(.text);
 		asm/m4a_1.o(.text);
         asm/libc.o(.text);
+        *libc.a:libcfunc.o(.text);
+        *libc.a:malloc.o(.text);
+        *libc.a:mallocr.o(.text);
+        *libc.a:memcpy.o(.text);
+        *libc.a:memset.o(.text);
+        *libc.a:mlock.o(.text);
+        *libc.a:sbrkr.o(.text);
+        *libc.a:strcmp.o(.text);
+        *libc.a:syscalls.o(.text);
+        *libc.a:vsprintf.o(.text);
+        *libc.a:errno.o(.text);
+        *libc.a:freer.o(.text);
+        *libc.a:strlen.o(.text);
+        *libc.a:vfprintf.o(.text);
+        *libc.a:wsetup.o(.text);
+        *libc.a:dtoa.o(.text);
+        *libc.a:fflush.o(.text);
+        *libc.a:findfp.o(.text);
+        *libc.a:fvwrite.o(.text);
+        *libc.a:fwalk.o(.text);
+        *libc.a:locale.o(.text);
+        *libc.a:makebuf.o(.text);
+        *libc.a:mbtowc_r.o(.text);
+        *libc.a:memchr.o(.text);
+        *libc.a:memmove.o(.text);
+        *libc.a:mprec.o(.text);
+        *libc.a:s_isinf.o(.text);
+        *libc.a:s_isnan.o(.text);
+        *libc.a:stdio.o(.text);
+        *libc.a:writer.o(.text);
+        *libc.a:callocr.o(.text);
+        *libc.a:closer.o(.text);
+        *libc.a:fstatr.o(.text);
+        *libc.a:lseekr.o(.text);
+        *libc.a:readr.o(.text);
         src/rom3.o(.text);
         asm/rom3a.o(.text);
 		asm/rom3.o(.text);
@@ -79,9 +114,19 @@ SECTIONS
     .data :
 	ALIGN(4)
     {
+
         data/data1.o(.data);
         data/data2.o(.data);
+
+        *libc.a:syscalls.o(.rodata);
+        *libc.a:vfprintf.o(.rodata);
+        *libc.a:dtoa.o(.rodata);
+        *libc.a:locale.o(.rodata);
+        *libc.a:mprec.o(.rodata);
+
+        data/data3.o(.data);
         data/vtables.o(.data);
+
     } = 0
     _vt.1D = 0x09f44f08;
     _vt.15SystemAllocator = 0x09F44F28;
@@ -133,6 +178,24 @@ SECTIONS
     _vt.4Unit.6Object = 0x09f81418;
     _vt.4Unit = 0x09f81490;
     _vt.6Object = 0x09f81a50;
+
+    _impure_ptr = 0x09f44aac;
+
+    __malloc_av_ = 0x09f44ab0;
+    __malloc_top_pad = 0x09f44ebc;
+    __malloc_current_mallinfo = 0x09f44ecc;
+    __malloc_sbrk_base = 0x09f44ec0;
+    __malloc_trim_threshold = 0x09f44eb8;
+    __malloc_max_sbrked_mem = 0x09f44ec4;
+    __malloc_max_total_mem = 0x09f44ec8;
+
+    __mb_cur_max = 0x09f44ef4;
+
+    __mprec_tens = 0x08cdb398;
+    __mprec_bigtens = 0x08cdb460;
+
+    endl__FR7ostream = 0;
+    /* _M_insert_aux__t6vector2ZiZt24__default_alloc_template2b0i0PiRCi = 0; */
 
     ROM_END = .;
     

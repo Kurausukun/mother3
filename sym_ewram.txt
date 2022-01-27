@@ -302,7 +302,7 @@
 . = 0x00015E28; gUnknown_02015E28 = .;
 . = 0x00015E2C; gUnknown_02015E2C = .;
 . = 0x00015E30; gUnknown_02015E30 = .;
-. = 0x00015E34; gUnknown_02015E34 = .;
+. = 0x00015E34; errno = .;
 . = 0x00015E38; gUnknown_02015E38 = .;
 . = 0x00015EA8; gUnknown_02015EA8 = .;
 . = 0x00015EB0; gUnknown_02015EB0 = .;
@@ -321,10 +321,7 @@
 . = 0x00015F68; eh_context_s_init = .;
 . = 0x00015F70; eh_context_s_top_elt = .;
 . = 0x00015F78; gUnknown_02015F78 = .;
-. = 0x00015F7C; gUnknown_02015F7C = .;
-. = 0x00015F80; gUnknown_02015F80 = .;
-. = 0x00015F84; gUnknown_02015F84 = .;
-. = 0x00015F88; gUnknown_02015F88 = .;
+*libc.a:syscalls.o(.bss);
 . = 0x00016028; gUnknown_02016028 = .;
 . = 0x00016078; gUnknown_02016078 = .;
 . = 0x00016878; gUnknown_02016878 = .;
@@ -434,5 +431,5 @@
 . = 0x0002AF38; gUnknown_0202AF38 = .;
 . = 0x0002CD38; gUnknown_0202CD38 = .;
 . = 0x00034D38; gUnknown_02034D38 = .;
-. = 0x00036028; gUnknown_02036028 = .;
+. = 0x00036028; end = .;
 . = 0x00570000; gUnknown_02570000 = .;

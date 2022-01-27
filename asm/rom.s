@@ -1722,7 +1722,7 @@ _0800102A:
 _08001034:
 	ldr r0, [sp, #0x10]
 	movs r1, #9
-	bl sub_08091AE0
+	bl __udivsi3
 	ldrh r1, [r4]
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
@@ -1833,7 +1833,7 @@ _08001108:
 	mov r1, r8
 	ldrh r0, [r1]
 	movs r1, #3
-	bl sub_08091AE0
+	bl __udivsi3
 	mov r2, r8
 	strh r0, [r2]
 	mov r1, r8
@@ -2797,7 +2797,7 @@ sub_08001814: @ 0x08001814
 	muls r0, r4, r0
 	muls r2, r3, r2
 	adds r0, r0, r2
-	bl sub_08091970
+	bl __divsi3
 	mov r1, r8
 	strh r0, [r1]
 	ldrh r0, [r6]
@@ -5831,7 +5831,7 @@ _08002DE2:
 	adds r0, r1, #0
 	muls r0, r1, r0
 	adds r1, r4, #0
-	bl sub_08091970
+	bl __divsi3
 	adds r1, r0, #0
 	lsls r0, r1, #3
 	subs r0, r0, r1
@@ -22314,7 +22314,7 @@ sub_0800B358: @ 0x0800B358
 	cmp r0, r5
 	blo _0800B3C6
 	adds r1, r5, #0
-	bl sub_08091AE0
+	bl __udivsi3
 	lsls r0, r0, #0x10
 	lsrs r4, r0, #0x10
 	mov r8, r4
@@ -31268,7 +31268,7 @@ _0800F802:
 	ble _0800F85E
 	adds r0, r2, #1
 	adds r1, r3, #1
-	bl sub_08091970
+	bl __divsi3
 	mov r1, r8
 	muls r1, r0, r1
 	adds r0, r1, #0
@@ -31276,10 +31276,10 @@ _0800F802:
 _0800F85E:
 	adds r0, r3, #1
 	adds r1, r2, #1
-	bl sub_08091970
+	bl __divsi3
 	adds r1, r0, #0
 	mov r0, r8
-	bl sub_08091970
+	bl __divsi3
 _0800F86E:
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
@@ -31294,16 +31294,16 @@ _0800F86E:
 	ble _0800F890
 	adds r0, r2, #1
 	adds r1, #1
-	bl sub_08091970
+	bl __divsi3
 	muls r0, r4, r0
 	b _0800F8A0
 _0800F890:
 	adds r0, r1, #1
 	adds r1, r2, #1
-	bl sub_08091970
+	bl __divsi3
 	adds r1, r0, #0
 	adds r0, r4, #0
-	bl sub_08091970
+	bl __divsi3
 _0800F8A0:
 	lsls r0, r0, #0x10
 	lsrs r4, r0, #0x10
@@ -47244,7 +47244,7 @@ _0801766C:
 	lsrs r3, r3, #0x1b
 	adds r0, r0, r3
 	movs r1, #0xa
-	bl sub_08091970
+	bl __divsi3
 	lsls r0, r0, #0x10
 	lsrs r6, r0, #0x10
 	adds r7, r6, #0
@@ -47453,7 +47453,7 @@ _0801780C:
 	lsrs r3, r3, #0x1b
 	adds r0, r0, r3
 	movs r1, #0xa
-	bl sub_08091970
+	bl __divsi3
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	ldr r3, [sp, #4]
@@ -52515,7 +52515,7 @@ _08019E66:
 	ldr r2, _08019EE4 @ =0x000067BE
 	adds r1, r5, r2
 	ldrh r1, [r1]
-	bl sub_08091B58
+	bl __umodsi3
 	ldrh r1, [r4]
 	adds r1, r1, r0
 	strh r1, [r6]
@@ -56611,7 +56611,7 @@ _0801BD90:
 	subs r4, r1, #4
 	ldr r0, [r4]
 	ldr r1, [r1]
-	bl sub_08091970
+	bl __divsi3
 	str r0, [r4]
 	b _0801BEB4
 _0801BDA8:
@@ -56647,7 +56647,7 @@ _0801BDD4:
 	subs r4, r1, #4
 	ldr r0, [r4]
 	ldr r1, [r1]
-	bl sub_08091A08
+	bl __modsi3
 	str r0, [r4]
 	b _0801BEB4
 _0801BDEC:
