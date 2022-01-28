@@ -26,7 +26,7 @@ Init:
 	ldr r1, _08000250 @ =gUnknown_03007FFC
 	add r0, pc, #0x18 @ =IntrMain
 	str r0, [r1]
-	ldr r1, _08000254 @ =sub_08000264
+	ldr r1, _08000254 @ =AgbMain
 	mov lr, pc
 	bx r1
 	b Init
@@ -132,7 +132,7 @@ _08000234:
 	bx r0
 	.align 2, 0
 _08000250: .4byte gUnknown_03007FFC
-_08000254: .4byte sub_08000264
+_08000254: .4byte AgbMain
 _08000258: .4byte 0x0000200A
 _0800025C: .4byte gUnknown_020051F0
 _08000260: .4byte gUnknown_020051F0

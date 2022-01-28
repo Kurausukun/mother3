@@ -23,6 +23,7 @@ SECTIONS
 	ALIGN(4)
 	{
         asm/crt0.o(.text);
+        src/main.o(.text);
         asm/rom.o(.text);
         src/script.o(.text);
         asm/code_0801BEE0.o(.text);

@@ -26,7 +26,7 @@ GBAFIX := tools/gbafix/gbafix$(EXE)
 
 CXXFLAGS := -fno-exceptions -fno-rtti
 CC1FLAGS := -mthumb-interwork -Wimplicit -Wparentheses -O2 -g3
-CPPFLAGS := -Itools/agbcc/include/c++ -I tools/agbcc/include -iquote include -nostdinc -undef -D VERSION_$(GAME_VERSION) -D REVISION=$(GAME_REVISION) -D $(GAME_REGION) -D DEBUG=$(DEBUG)
+CPPFLAGS := -I tools/agbcc/include -iquote include -nostdinc -undef -D VERSION_$(GAME_VERSION) -D REVISION=$(GAME_REVISION) -D $(GAME_REGION) -D DEBUG=$(DEBUG)
 ASFLAGS  := -mcpu=arm7tdmi -mthumb-interwork -I asminclude -I include --defsym VERSION_$(GAME_VERSION)=1 --defsym REVISION=$(GAME_REVISION) --defsym $(GAME_REGION)=1 --defsym DEBUG=$(DEBUG)
 
 #### Files ####
