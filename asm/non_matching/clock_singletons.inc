@@ -429,7 +429,7 @@ sub_0806A1F8:
 	bgt _0806A20C
 	b _0806A36A
 _0806A20C:
-	ldr r0, _0806A378 @ =0x09F44FF0
+	ldr r0, _0806A378 @ =vt_09F44FF0
 	mov sb, r0
 _0806A210:
 	adds r0, r7, #0
@@ -446,7 +446,7 @@ _0806A210:
 	adds r6, r0, #0
 	mov r0, sp
 	bl __4Base
-	ldr r0, _0806A37C @ =0x09F7EDA0
+	ldr r0, _0806A37C @ =vt_09F7EDA0
 	str r0, [sp, #0x1c]
 	str r6, [sp, #0x20]
 	ldr r2, [r4, #4]
@@ -468,7 +468,7 @@ _0806A210:
 	adds r6, r0, #0
 	mov r0, sp
 	bl __4Base
-	ldr r0, _0806A380 @ =0x09F7ED20
+	ldr r0, _0806A380 @ =vt_09F7ED20
 	str r0, [sp, #0x1c]
 	str r6, [sp, #0x20]
 	ldr r2, [r4, #4]
@@ -490,7 +490,7 @@ _0806A210:
 	adds r6, r0, #0
 	mov r0, sp
 	bl __4Base
-	ldr r0, _0806A384 @ =0x09F7ECA0
+	ldr r0, _0806A384 @ =vt_09F7ECA0
 	str r0, [sp, #0x1c]
 	str r6, [sp, #0x20]
 	ldr r2, [r4, #4]
@@ -512,7 +512,7 @@ _0806A210:
 	adds r6, r0, #0
 	mov r0, sp
 	bl __4Base
-	ldr r0, _0806A388 @ =0x09F7EC20
+	ldr r0, _0806A388 @ =vt_09F7EC20
 	str r0, [sp, #0x1c]
 	str r6, [sp, #0x20]
 	ldr r2, [r4, #4]
@@ -539,7 +539,7 @@ _0806A2EA:
 	adds r6, r0, #0
 	mov r0, sp
 	bl __4Base
-	ldr r0, _0806A38C @ =0x09F7EEA0
+	ldr r0, _0806A38C @ =vt_09F7EEA0
 	str r0, [sp, #0x1c]
 	str r6, [sp, #0x20]
 	ldr r2, [r4, #4]
@@ -561,7 +561,7 @@ _0806A2EA:
 	adds r6, r0, #0
 	mov r0, sp
 	bl __4Base
-	ldr r0, _0806A390 @ =0x09F7EE20
+	ldr r0, _0806A390 @ =vt_09F7EE20
 	str r0, [sp, #0x1c]
 	str r6, [sp, #0x20]
 	ldr r2, [r4, #4]
@@ -589,13 +589,13 @@ _0806A36A:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0806A378: .4byte 0x09F44FF0
-_0806A37C: .4byte 0x09F7EDA0
-_0806A380: .4byte 0x09F7ED20
-_0806A384: .4byte 0x09F7ECA0
-_0806A388: .4byte 0x09F7EC20
-_0806A38C: .4byte 0x09F7EEA0
-_0806A390: .4byte 0x09F7EE20
+_0806A378: .4byte vt_09F44FF0
+_0806A37C: .4byte vt_09F7EDA0
+_0806A380: .4byte vt_09F7ED20
+_0806A384: .4byte vt_09F7ECA0
+_0806A388: .4byte vt_09F7EC20
+_0806A38C: .4byte vt_09F7EEA0
+_0806A390: .4byte vt_09F7EE20
     
 .syntax divided
 	.code	16

@@ -89,7 +89,7 @@ sub_0806BE68: @ 0x0806BE68
 	sub sp, #0x28
 	adds r7, r0, #0
 	bl __4Base
-	ldr r0, _0806BF40 @ =0x09F7F030
+	ldr r0, _0806BF40 @ =vt_09F7F030
 	str r0, [r7, #0x1c]
 	adds r0, r7, #0
 	adds r0, #0x20
@@ -140,8 +140,8 @@ _0806BE86:
 	adds r5, r0, #0
 	add r0, sp, #4
 	bl __4Base
-	ldr r6, _0806BF54 @ =0x09F44FF0
-	ldr r0, _0806BF58 @ =0x09F7EE20
+	ldr r6, _0806BF54 @ =vt_09F44FF0
+	ldr r0, _0806BF58 @ =vt_09F7EE20
 	str r0, [sp, #0x20]
 	ldr r0, _0806BF5C @ =gUnknown_080FF3FC
 	ldr r3, [r0]
@@ -159,7 +159,7 @@ _0806BE86:
 	adds r5, r0, #0
 	add r0, sp, #4
 	bl __4Base
-	ldr r0, _0806BF60 @ =0x09F7EC20
+	ldr r0, _0806BF60 @ =vt_09F7EC20
 	str r0, [sp, #0x20]
 	ldr r0, _0806BF64 @ =gUnknown_080FF404
 	ldr r3, [r0]
@@ -181,15 +181,15 @@ _0806BE86:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0806BF40: .4byte 0x09F7F030
+_0806BF40: .4byte vt_09F7F030
 _0806BF44: .4byte 0x00000834
 _0806BF48: .4byte 0x00000938
 _0806BF4C: .4byte 0x00000B4C
 _0806BF50: .4byte 0x0000EF9F
-_0806BF54: .4byte 0x09F44FF0
-_0806BF58: .4byte 0x09F7EE20
+_0806BF54: .4byte vt_09F44FF0
+_0806BF58: .4byte vt_09F7EE20
 _0806BF5C: .4byte gUnknown_080FF3FC
-_0806BF60: .4byte 0x09F7EC20
+_0806BF60: .4byte vt_09F7EC20
 _0806BF64: .4byte gUnknown_080FF404
 
 	thumb_func_start sub_0806BF68
@@ -197,7 +197,7 @@ sub_0806BF68: @ 0x0806BF68
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
-	ldr r0, _0806BFA4 @ =0x09F7F030
+	ldr r0, _0806BFA4 @ =vt_09F7F030
 	str r0, [r4, #0x1c]
 	bl sub_0806C7B8
 	bl sub_0806C464
@@ -219,7 +219,7 @@ _0806BF96:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0806BFA4: .4byte 0x09F7F030
+_0806BFA4: .4byte vt_09F7F030
 _0806BFA8: .4byte 0x0000EF9F
 _0806BFAC: .4byte 0x00000938
 
@@ -832,11 +832,11 @@ sub_0806C404: @ 0x0806C404
 	ldr r4, _0806C418 @ =gUnknown_02001CF4
 	adds r0, r4, #0
 	bl __9Singleton
-	ldr r0, _0806C41C @ =0x09F7F098
+	ldr r0, _0806C41C @ =vt_09F7F098
 	str r0, [r4, #8]
 	pop {r4}
 	pop {r0}
 	bx r0
 	.align 2, 0
 _0806C418: .4byte gUnknown_02001CF4
-_0806C41C: .4byte 0x09F7F098
+_0806C41C: .4byte vt_09F7F098

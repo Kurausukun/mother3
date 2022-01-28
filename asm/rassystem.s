@@ -9,7 +9,7 @@ sub_0806E820: @ 0x0806E820
 	sub sp, #0x2c
 	adds r7, r0, #0
 	bl __4Base
-	ldr r0, _0806E8AC @ =0x09F7FFE0
+	ldr r0, _0806E8AC @ =vt_09F7FFE0
 	str r0, [r7, #0x1c]
 	adds r0, r7, #0
 	adds r0, #0x20
@@ -47,8 +47,8 @@ sub_0806E820: @ 0x0806E820
 	adds r5, r0, #0
 	add r0, sp, #4
 	bl __4Base
-	ldr r6, _0806E8B0 @ =0x09F44FF0
-	ldr r0, _0806E8B4 @ =0x09F7ED20
+	ldr r6, _0806E8B0 @ =vt_09F44FF0
+	ldr r0, _0806E8B4 @ =vt_09F7ED20
 	str r0, [sp, #0x20]
 	ldr r0, _0806E8B8 @ =gUnknown_081002E4
 	ldr r3, [r0]
@@ -68,9 +68,9 @@ sub_0806E820: @ 0x0806E820
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0806E8AC: .4byte 0x09F7FFE0
-_0806E8B0: .4byte 0x09F44FF0
-_0806E8B4: .4byte 0x09F7ED20
+_0806E8AC: .4byte vt_09F7FFE0
+_0806E8B0: .4byte vt_09F44FF0
+_0806E8B4: .4byte vt_09F7ED20
 _0806E8B8: .4byte gUnknown_081002E4
 
 	thumb_func_start sub_0806E8BC
@@ -78,7 +78,7 @@ sub_0806E8BC: @ 0x0806E8BC
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
-	ldr r0, _0806E908 @ =0x09F7FFE0
+	ldr r0, _0806E908 @ =vt_09F7FFE0
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
 	bl sub_0806E93C
@@ -108,7 +108,7 @@ _0806E8DA:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0806E908: .4byte 0x09F7FFE0
+_0806E908: .4byte vt_09F7FFE0
 
 	thumb_func_start sub_0806E90C
 sub_0806E90C: @ 0x0806E90C
@@ -595,7 +595,7 @@ sub_0806EC5C: @ 0x0806EC5C
 	sub sp, #8
 	adds r6, r0, #0
 	bl __4Base
-	ldr r0, _0806ECFC @ =0x09F800B0
+	ldr r0, _0806ECFC @ =vt_09F800B0
 	str r0, [r6, #0x1c]
 	adds r0, r6, #0
 	adds r0, #0x30
@@ -659,14 +659,14 @@ sub_0806EC5C: @ 0x0806EC5C
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0806ECFC: .4byte 0x09F800B0
+_0806ECFC: .4byte vt_09F800B0
 
 	thumb_func_start sub_0806ED00
 sub_0806ED00: @ 0x0806ED00
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
-	ldr r0, _0806ED28 @ =0x09F800B0
+	ldr r0, _0806ED28 @ =vt_09F800B0
 	str r0, [r4, #0x1c]
 	bl sub_0806B07C
 	adds r0, r4, #0
@@ -680,7 +680,7 @@ sub_0806ED00: @ 0x0806ED00
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0806ED28: .4byte 0x09F800B0
+_0806ED28: .4byte vt_09F800B0
 
 	thumb_func_start sub_0806ED2C
 sub_0806ED2C: @ 0x0806ED2C
@@ -789,11 +789,11 @@ sub_0806EDD4: @ 0x0806EDD4
 	ldr r4, _0806EDE8 @ =gUnknown_02001E6C
 	adds r0, r4, #0
 	bl __9Singleton
-	ldr r0, _0806EDEC @ =0x09F80150
+	ldr r0, _0806EDEC @ =vt_09F80150
 	str r0, [r4, #8]
 	pop {r4}
 	pop {r0}
 	bx r0
 	.align 2, 0
 _0806EDE8: .4byte gUnknown_02001E6C
-_0806EDEC: .4byte 0x09F80150
+_0806EDEC: .4byte vt_09F80150

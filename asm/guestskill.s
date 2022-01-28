@@ -37,7 +37,7 @@ sub_080807AC: @ 0x080807AC
 	lsls r4, r4, #0x10
 	lsrs r4, r4, #0x10
 	bl sub_08077F34
-	ldr r0, _080807D4 @ =0x09F82CE0
+	ldr r0, _080807D4 @ =vt_09F82CE0
 	str r0, [r5, #0x1c]
 	movs r0, #0x2c
 	muls r0, r4, r0
@@ -49,19 +49,19 @@ sub_080807AC: @ 0x080807AC
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080807D4: .4byte 0x09F82CE0
+_080807D4: .4byte vt_09F82CE0
 _080807D8: .4byte gUnknown_080D0228
 
 	thumb_func_start sub_080807DC
 sub_080807DC: @ 0x080807DC
 	push {lr}
-	ldr r2, _080807EC @ =0x09F82CE0
+	ldr r2, _080807EC @ =vt_09F82CE0
 	str r2, [r0, #0x1c]
 	bl sub_080781E0
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080807EC: .4byte 0x09F82CE0
+_080807EC: .4byte vt_09F82CE0
 
 	thumb_func_start sub_080807F0
 sub_080807F0: @ 0x080807F0
