@@ -44,7 +44,7 @@ public:
 
     s16 _0;
     s16 _2;
-    Fit mFit1;
+    List mFit1;
     Fit mFit2;
 };
 

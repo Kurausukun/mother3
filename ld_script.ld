@@ -195,7 +195,7 @@ SECTIONS
     __mprec_bigtens = 0x08cdb460;
 
     endl__FR7ostream = 0;
-    /* _M_insert_aux__t6vector2ZiZt24__default_alloc_template2b0i0PiRCi = 0; */
+    _t24__default_alloc_template2b0i0._S_free_list = 0;
 
     ROM_END = .;
     
