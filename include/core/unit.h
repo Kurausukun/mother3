@@ -85,9 +85,9 @@ public:
     virtual void unit_168(u16 idx, s32 value);
     virtual void unit_170(u32 value);
 
-    virtual void unit_178() = 0;
-    virtual void unit_180() = 0;
-    virtual void unit_188() = 0;
+    virtual bool unit_178() = 0;
+    virtual u32 unit_180() = 0;
+    virtual Unit* unit_188() = 0;
 
     virtual s32 getLevel() const;
     virtual s32 getHP() const;
@@ -107,9 +107,9 @@ public:
     virtual s32 unit_1f8(u16 idx) const;
     virtual s32 unit_200() const;
 
-    virtual void unit_208() = 0;
-    virtual void unit_210() = 0;
-    virtual void unit_218() = 0;
+    virtual bool unit_208() = 0;
+    virtual bool unit_210() = 0;
+    virtual bool unit_218() = 0;
 
     virtual Unit* unit_220(u32 a1);
     virtual bool unit_228(u32 a1);

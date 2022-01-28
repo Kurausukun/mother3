@@ -32,18 +32,18 @@ struct Script {
     u8 _829a;
     u8 _829b;
     u8 _829c;
-    u8 _829d[0x82ad-0x829c];
+    u8 _829d[0x82ad - 0x829c];
     s8 _82ae;
-    u8 _82af[0x82b4-0x82af];
+    u8 _82af[0x82b4 - 0x82af];
     u16 _82b4;
     u8 _82b6 : 1;
     u8 _82b7;
     u8 _82b8_1 : 5;
     u8 _82b8_20 : 1;
-    u8 _82b9[0x8450-0x82b9];
+    u8 _82b9[0x8450 - 0x82b9];
     s16 _8450;
-    u8 _8452[0x846f-0x8452];
-    u8 _846f[0x8484-0x846f];
+    u8 _8452[0x846f - 0x8452];
+    u8 _846f[0x8484 - 0x846f];
     u32 _8484;
     u8 _8488[0xc];
     u8 disable_collision : 1;
@@ -77,6 +77,5 @@ struct Script {
     u32 _9488;
 };
 Script gScript;
-
 
 #endif  // SCRIPT_H

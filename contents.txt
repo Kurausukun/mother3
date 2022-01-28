@@ -1,0 +1,1758 @@
+
+toascii.o:
+00000000 t .gcc2_compiled.
+00000000 T toascii
+
+isdigit.o:
+00000000 t .gcc2_compiled.
+         U _ctype_
+00000000 T isdigit
+
+_tolower.o:
+00000000 t .gcc2_compiled.
+         U _ctype_
+00000000 T _tolower
+
+isascii.o:
+00000000 t .gcc2_compiled.
+00000000 T isascii
+
+isxdigit.o:
+00000000 t .gcc2_compiled.
+         U _ctype_
+00000000 T isxdigit
+
+_toupper.o:
+00000000 t .gcc2_compiled.
+         U _ctype_
+00000000 T _toupper
+
+isprint.o:
+00000000 t .gcc2_compiled.
+         U _ctype_
+00000000 T isgraph
+00000014 T isprint
+
+ispunct.o:
+00000000 t .gcc2_compiled.
+         U _ctype_
+00000000 T ispunct
+
+ctype_.o:
+00000000 t .gcc2_compiled.
+00000000 R _ctype_
+
+isalpha.o:
+00000000 t .gcc2_compiled.
+         U _ctype_
+00000000 T isalpha
+
+toupper.o:
+00000000 t .gcc2_compiled.
+         U _ctype_
+00000000 T toupper
+
+islower.o:
+00000000 t .gcc2_compiled.
+         U _ctype_
+00000000 T islower
+
+isupper.o:
+00000000 t .gcc2_compiled.
+         U _ctype_
+00000000 T isupper
+
+tolower.o:
+00000000 t .gcc2_compiled.
+         U _ctype_
+00000000 T tolower
+
+iscntrl.o:
+00000000 t .gcc2_compiled.
+         U _ctype_
+00000000 T iscntrl
+
+isspace.o:
+00000000 t .gcc2_compiled.
+         U _ctype_
+00000000 T isspace
+
+isalnum.o:
+00000000 t .gcc2_compiled.
+         U _ctype_
+00000000 T isalnum
+
+dprintf.o:
+00000000 t .gcc2_compiled.
+00000000 T __dprintf
+         U __udivsi3
+         U __umodsi3
+         U __unctrl
+         U _ctype_
+         U _impure_ptr
+         U _write_r
+00000000 b big_endian_p
+00000000 d chars.12
+00000288 t get_number
+00000248 t parse_number
+0000032c t print_number
+         U strlen
+0000037c t write_char
+0000039c t write_string
+
+ffs.o:
+00000000 t .gcc2_compiled.
+00000000 T ffs
+
+unctrl.o:
+00000000 t .gcc2_compiled.
+00000000 R __unctrl
+000009ff R __unctrllen
+00000000 d sccsid
+
+errno.o:
+00000000 t .gcc2_compiled.
+00000000 T __errno
+         U _impure_ptr
+
+locale.o:
+00000000 t .gcc2_compiled.
+00000000 D __mb_cur_max
+         U _impure_ptr
+0000003c T _localeconv_r
+00000000 T _setlocale_r
+0000000c d last_lc_ctype.4
+00000004 d lc_ctype.3
+00000000 r lconv
+0000005c T localeconv
+00000044 T setlocale
+         U strcmp
+
+s_modf.o:
+00000000 t .gcc2_compiled.
+         U __subdf3
+00000000 T modf
+00000000 r one
+
+sf_scalbn.o:
+00000000 t .gcc2_compiled.
+         U __addsf3
+         U __mulsf3
+         U copysignf
+00000008 r huge
+00000000 T scalbnf
+0000000c r tiny
+00000000 r two25
+00000004 r twom25
+
+sf_finite.o:
+00000000 t .gcc2_compiled.
+00000000 T finitef
+
+s_copysign.o:
+00000000 t .gcc2_compiled.
+00000000 T copysign
+
+sf_copysign.o:
+00000000 t .gcc2_compiled.
+00000000 T copysignf
+
+sf_ldexp.o:
+00000000 t .gcc2_compiled.
+         U __eqsf2
+         U __errno
+         U finitef
+00000000 T ldexpf
+         U scalbnf
+
+sf_frexp.o:
+00000000 t .gcc2_compiled.
+         U __mulsf3
+00000000 T frexpf
+00000000 r two25
+
+sf_isinf.o:
+00000000 t .gcc2_compiled.
+00000000 T isinff
+
+s_isnan.o:
+00000000 t .gcc2_compiled.
+00000000 T isnan
+
+s_ldexp.o:
+00000000 t .gcc2_compiled.
+         U __eqdf2
+         U __errno
+         U finite
+00000000 T ldexp
+         U scalbn
+
+s_scalbn.o:
+00000000 t .gcc2_compiled.
+         U __adddf3
+         U __muldf3
+         U copysign
+00000010 r huge
+00000000 T scalbn
+00000018 r tiny
+00000000 r two54
+00000008 r twom54
+
+s_finite.o:
+00000000 t .gcc2_compiled.
+00000000 T finite
+
+s_frexp.o:
+00000000 t .gcc2_compiled.
+         U __muldf3
+00000000 T frexp
+00000000 r two54
+
+s_isinf.o:
+00000000 t .gcc2_compiled.
+00000000 T isinf
+
+sf_isnan.o:
+00000000 t .gcc2_compiled.
+00000000 T isnanf
+
+s_infconst.o:
+00000000 t .gcc2_compiled.
+00000000 R __infinity
+
+sf_modf.o:
+00000000 t .gcc2_compiled.
+         U __subsf3
+00000000 T modff
+00000000 r one
+
+lcltime_r.o:
+00000000 t .gcc2_compiled.
+         U __divsi3
+         U __modsi3
+00000000 T localtime_r
+00000000 r mon_lengths
+00000060 r year_lengths
+
+mktime.o:
+00000000 t .gcc2_compiled.
+00000000 r DAYS_IN_MONTH
+00000030 r _DAYS_BEFORE_MONTH
+         U __modsi3
+         U div
+000001c4 T mktime
+00000000 t validate_structure
+
+ctime.o:
+00000000 t .gcc2_compiled.
+         U asctime
+00000000 T ctime
+         U localtime
+
+gmtime_r.o:
+00000000 t .gcc2_compiled.
+00000000 T gmtime_r
+         U localtime_r
+
+asctime.o:
+00000000 t .gcc2_compiled.
+         U _impure_ptr
+00000000 T asctime
+         U asctime_r
+
+gmtime.o:
+00000000 t .gcc2_compiled.
+00000000 T gmtime
+         U localtime
+
+lcltime.o:
+00000000 t .gcc2_compiled.
+         U _impure_ptr
+00000000 T localtime
+         U localtime_r
+
+ctime_r.o:
+00000000 t .gcc2_compiled.
+         U asctime_r
+00000000 T ctime_r
+         U localtime_r
+
+asctime_r.o:
+00000000 t .gcc2_compiled.
+00000000 T asctime_r
+00000000 r day_name.3
+00000015 r mon_name.4
+         U sprintf
+
+clock.o:
+00000000 t .gcc2_compiled.
+         U _impure_ptr
+         U _times_r
+00000000 T clock
+
+strftime.o:
+00000000 t .gcc2_compiled.
+         U __divsi3
+         U __modsi3
+0000001c r dname
+00000000 r dname_len
+000000ac r mname
+0000007c r mname_len
+         U sprintf
+00000000 T strftime
+
+time.o:
+00000000 t .gcc2_compiled.
+         U _gettimeofday_r
+         U _impure_ptr
+00000000 T time
+
+difftime.o:
+00000000 t .gcc2_compiled.
+         U __floatsidf
+         U __subdf3
+00000000 T difftime
+
+refill.o:
+00000000 t .gcc2_compiled.
+         U __sinit
+         U __smakebuf
+00000008 T __srefill
+         U _call_via_r3
+         U _free_r
+         U _fwalk
+         U _impure_ptr
+         U fflush
+00000000 t lflush
+
+freopen.o:
+00000000 t .gcc2_compiled.
+         U __sclose
+         U __sflags
+         U __sinit
+         U __sread
+         U __sseek
+         U __swrite
+         U _call_via_r1
+         U _free_r
+         U _impure_ptr
+         U _open_r
+         U fclose
+         U fflush
+00000000 T freopen
+
+printf.o:
+00000000 t .gcc2_compiled.
+         U _impure_ptr
+00000000 T _printf_r
+         U _vfprintf_r
+00000014 T printf
+         U vfprintf
+
+siprintf.o:
+00000000 t .gcc2_compiled.
+         U _impure_ptr
+00000000 T siprintf
+         U vfiprintf
+
+scanf.o:
+00000000 t .gcc2_compiled.
+         U __svfscanf
+         U _impure_ptr
+0000001c T _scanf_r
+00000000 T scanf
+
+setbuf.o:
+00000000 t .gcc2_compiled.
+00000000 T setbuf
+         U setvbuf
+
+fputs.o:
+00000000 t .gcc2_compiled.
+         U __sfvwrite
+00000000 T fputs
+         U strlen
+
+fscanf.o:
+00000000 t .gcc2_compiled.
+         U __svfscanf
+00000000 T fscanf
+
+fiprintf.o:
+00000000 t .gcc2_compiled.
+00000000 T fiprintf
+         U vfiprintf
+
+clearerr.o:
+00000000 t .gcc2_compiled.
+00000000 T clearerr
+
+fdopen.o:
+00000000 t .gcc2_compiled.
+         U __sclose
+         U __sflags
+         U __sfp
+         U __sread
+         U __sseek
+         U __swrite
+         U _fcntl
+00000000 T _fdopen_r
+         U _impure_ptr
+00000090 T fdopen
+
+makebuf.o:
+00000000 t .gcc2_compiled.
+00000000 T __smakebuf
+         U __sseek
+         U _cleanup_r
+         U _fstat_r
+         U _malloc_r
+         U isatty
+
+fflush.o:
+00000000 t .gcc2_compiled.
+         U __sinit
+         U _call_via_r3
+         U _fwalk
+         U _impure_ptr
+00000000 T fflush
+
+rename.o:
+00000000 t .gcc2_compiled.
+         U _impure_ptr
+         U _link_r
+00000000 T _rename_r
+         U _unlink_r
+00000028 T rename
+
+tmpnam.o:
+00000000 t .gcc2_compiled.
+         U _close_r
+         U _getpid_r
+         U _impure_ptr
+         U _malloc_r
+         U _open_r
+         U _sprintf_r
+000000b4 T _tempnam_r
+0000006c T _tmpnam_r
+         U getenv
+         U strlen
+00000130 T tempnam
+00000148 T tmpnam
+00000000 t worker
+
+gets.o:
+00000000 t .gcc2_compiled.
+         U _getchar_r
+00000000 T _gets_r
+         U _impure_ptr
+00000034 T gets
+
+fopen.o:
+00000000 t .gcc2_compiled.
+         U __sclose
+         U __sflags
+         U __sfp
+         U __sread
+         U __sseek
+         U __swrite
+00000000 T _fopen_r
+         U _impure_ptr
+         U _open_r
+00000080 T fopen
+         U fseek
+
+fwalk.o:
+00000000 t .gcc2_compiled.
+         U _call_via_r8
+00000000 T _fwalk
+
+fseek.o:
+00000000 t .gcc2_compiled.
+         U __sinit
+         U __smakebuf
+         U __srefill
+         U __sseek
+         U _call_via_r3
+         U _free_r
+         U _fstat_r
+         U _impure_ptr
+         U fflush
+00000000 T fseek
+
+setvbuf.o:
+00000000 t .gcc2_compiled.
+         U __sinit
+         U _cleanup_r
+         U _free_r
+         U _impure_ptr
+         U fflush
+         U malloc
+00000000 T setvbuf
+
+ungetc.o:
+00000000 t .gcc2_compiled.
+         U __sinit
+00000000 T __submore
+         U _impure_ptr
+         U _malloc_r
+         U _realloc_r
+         U fflush
+         U memcpy
+00000080 T ungetc
+
+fgetc.o:
+00000000 t .gcc2_compiled.
+         U __srget
+00000000 T fgetc
+
+stdio.o:
+00000000 t .gcc2_compiled.
+000000b4 T __sclose
+00000000 T __sread
+00000074 T __sseek
+00000034 T __swrite
+         U _close_r
+         U _lseek_r
+         U _read_r
+         U _write_r
+
+vsprintf.o:
+00000000 t .gcc2_compiled.
+         U _impure_ptr
+         U vfprintf
+00000000 T vsprintf
+
+vfprintf.o:
+00000000 t .gcc2_compiled.
+         U __divsi3
+         U __eqdf2
+         U __ltdf2
+         U __mb_cur_max
+         U __modsi3
+         U __nedf2
+         U __negdf2
+00000020 t __sbprintf
+         U __sfvwrite
+         U __sinit
+00000000 t __sprint
+         U __swsetup
+         U __udivsi3
+         U __umodsi3
+         U _dtoa_r
+         U _impure_ptr
+         U _mbtowc_r
+000000a8 T _vfprintf_r
+00000000 r blanks.12
+00001008 t cvt
+000010fc t exponent
+         U fflush
+         U isinf
+         U isnan
+         U localeconv
+         U memchr
+         U strlen
+00000094 T vfprintf
+00000010 r zeroes.13
+
+fprintf.o:
+00000000 t .gcc2_compiled.
+00000000 T fprintf
+         U vfprintf
+
+putc.o:
+00000000 t .gcc2_compiled.
+         U __swbuf
+00000000 T putc
+
+wsetup.o:
+00000000 t .gcc2_compiled.
+         U __sinit
+         U __smakebuf
+00000000 T __swsetup
+         U _free_r
+         U _impure_ptr
+
+sprintf.o:
+00000000 t .gcc2_compiled.
+         U _impure_ptr
+00000000 T _sprintf_r
+0000003c T sprintf
+         U vfprintf
+
+tmpfile.o:
+00000000 t .gcc2_compiled.
+         U _impure_ptr
+00000000 T _tmpfile_r
+         U _tmpnam_r
+         U fopen
+         U remove
+00000040 T tmpfile
+
+sscanf.o:
+00000000 t .gcc2_compiled.
+         U __svfscanf
+         U _impure_ptr
+00000000 t eofread
+00000004 T sscanf
+         U strlen
+
+vprintf.o:
+00000000 t .gcc2_compiled.
+         U _impure_ptr
+         U vfprintf
+00000000 T vprintf
+
+putchar.o:
+00000000 t .gcc2_compiled.
+         U __swbuf
+         U _impure_ptr
+00000000 T _putchar_r
+00000048 T putchar
+
+feof.o:
+00000000 t .gcc2_compiled.
+00000000 T feof
+
+ferror.o:
+00000000 t .gcc2_compiled.
+00000000 T ferror
+
+getchar.o:
+00000000 t .gcc2_compiled.
+         U __srget
+00000000 T _getchar_r
+         U _impure_ptr
+00000020 T getchar
+
+vfscanf.o:
+00000000 t .gcc2_compiled.
+00000bd8 T __sccl
+         U __srefill
+00000000 T __svfscanf
+         U __truncdfsf2
+         U _call_via_r3
+         U _ctype_
+         U atof
+00000000 r basefix.3
+         U fread
+         U strtol
+         U strtoul
+         U ungetc
+
+getc.o:
+00000000 t .gcc2_compiled.
+         U __srget
+00000000 T getc
+
+perror.o:
+00000000 t .gcc2_compiled.
+         U _impure_ptr
+00000000 T _perror_r
+         U fputc
+         U fputs
+00000040 T perror
+         U strerror
+
+fread.o:
+00000000 t .gcc2_compiled.
+         U __srefill
+         U __udivsi3
+00000000 T fread
+         U memcpy
+
+mktemp.o:
+00000000 t .gcc2_compiled.
+         U __udivsi3
+         U __umodsi3
+         U _ctype_
+         U _getpid_r
+00000000 t _gettemp
+         U _impure_ptr
+00000110 T _mkstemp_r
+0000012c T _mktemp_r
+         U _open_r
+         U _stat_r
+00000144 T mkstemp
+00000168 T mktemp
+
+fputc.o:
+00000000 t .gcc2_compiled.
+         U __swbuf
+00000000 T fputc
+
+iprintf.o:
+00000000 t .gcc2_compiled.
+         U _impure_ptr
+00000020 T _iprintf_r
+00000000 T iprintf
+         U vfiprintf
+
+flags.o:
+00000000 t .gcc2_compiled.
+00000000 T __sflags
+
+remove.o:
+00000000 t .gcc2_compiled.
+         U _impure_ptr
+00000000 T _remove_r
+         U _unlink_r
+00000018 T remove
+
+rewind.o:
+00000000 t .gcc2_compiled.
+         U fseek
+00000000 T rewind
+
+rget.o:
+00000000 t .gcc2_compiled.
+         U __srefill
+00000000 T __srget
+
+puts.o:
+00000000 t .gcc2_compiled.
+         U __sfvwrite
+         U _impure_ptr
+00000000 T _puts_r
+00000040 T puts
+         U strlen
+
+ftell.o:
+00000000 t .gcc2_compiled.
+         U __sinit
+         U _call_via_r3
+         U _impure_ptr
+         U fflush
+00000000 T ftell
+
+fileno.o:
+00000000 t .gcc2_compiled.
+         U __sinit
+         U _impure_ptr
+00000000 T fileno
+
+fwrite.o:
+00000000 t .gcc2_compiled.
+         U __sfvwrite
+         U __udivsi3
+00000000 T fwrite
+
+wbuf.o:
+00000000 t .gcc2_compiled.
+         U __sinit
+00000000 T __swbuf
+         U __swsetup
+         U _impure_ptr
+         U fflush
+
+fvwrite.o:
+00000000 t .gcc2_compiled.
+00000000 T __sfvwrite
+         U __swsetup
+         U _call_via_r3
+         U fflush
+         U memchr
+         U memmove
+
+fgets.o:
+00000000 t .gcc2_compiled.
+         U __srefill
+00000000 T fgets
+         U memchr
+         U memcpy
+
+fsetpos.o:
+00000000 t .gcc2_compiled.
+         U fseek
+00000000 T fsetpos
+
+findfp.o:
+00000000 t .gcc2_compiled.
+         U __sclose
+00000038 T __sfmoreglue
+00000068 T __sfp
+000000fc T __sinit
+         U __sread
+         U __sseek
+         U __swrite
+000000ec T _cleanup
+000000dc T _cleanup_r
+         U _fwalk
+         U _impure_ptr
+         U _malloc_r
+         U fflush
+         U memset
+00000000 t std
+
+fgetpos.o:
+00000000 t .gcc2_compiled.
+00000000 T fgetpos
+         U ftell
+
+fclose.o:
+00000000 t .gcc2_compiled.
+         U __sinit
+         U _call_via_r1
+         U _free_r
+         U _impure_ptr
+00000000 T fclose
+         U fflush
+
+reent.o:
+00000000 t .gcc2_compiled.
+         U _call_via_r0
+         U _call_via_r1
+         U _free_r
+         U _impure_ptr
+0000001c T _reclaim_reent
+000000b4 T _wrapup_reent
+00000000 T cleanup_glue
+
+linkr.o:
+00000000 t .gcc2_compiled.
+         U _link
+00000000 T _link_r
+         U _unlink
+0000002c T _unlink_r
+         U errno
+
+timer.o:
+00000000 t .gcc2_compiled.
+         U _gettimeofday
+0000000c T _gettimeofday_r
+         U _times
+00000000 T _times_r
+         U errno
+
+writer.o:
+00000000 t .gcc2_compiled.
+         U _write
+00000000 T _write_r
+         U errno
+
+signalr.o:
+00000000 t .gcc2_compiled.
+         U _getpid
+0000002c T _getpid_r
+         U _kill
+00000000 T _kill_r
+         U errno
+
+closer.o:
+00000000 t .gcc2_compiled.
+         U _close
+00000000 T _close_r
+         U errno
+
+execr.o:
+00000000 t .gcc2_compiled.
+         U _execve
+00000000 T _execve_r
+         U _fork
+00000030 T _fork_r
+         U _wait
+00000058 T _wait_r
+         U errno
+
+sbrkr.o:
+00000000 t .gcc2_compiled.
+         U _sbrk
+00000000 T _sbrk_r
+00000004 C errno
+
+statr.o:
+00000000 t .gcc2_compiled.
+         U _stat
+00000000 T _stat_r
+         U errno
+
+lseekr.o:
+00000000 t .gcc2_compiled.
+         U _lseek
+00000000 T _lseek_r
+         U errno
+
+fstatr.o:
+00000000 t .gcc2_compiled.
+         U _fstat
+00000000 T _fstat_r
+         U errno
+
+openr.o:
+00000000 t .gcc2_compiled.
+         U _open
+00000000 T _open_r
+         U errno
+
+impure.o:
+00000000 t .gcc2_compiled.
+000002ec D _impure_ptr
+00000000 d impure_data
+
+readr.o:
+00000000 t .gcc2_compiled.
+         U _read
+00000000 T _read_r
+         U errno
+
+atoi.o:
+00000000 t .gcc2_compiled.
+00000000 T atoi
+         U strtol
+
+mbstowcs_r.o:
+00000000 t .gcc2_compiled.
+         U __mb_cur_max
+00000000 T _mbstowcs_r
+         U _mbtowc_r
+
+__adjust.o:
+00000000 t .gcc2_compiled.
+00000000 T __adjust
+         U __divdf3
+         U __exp10
+         U __infinity
+         U __muldf3
+         U __negdf2
+
+valloc.o:
+00000000 t .gcc2_compiled.
+         U _impure_ptr
+         U _pvalloc_r
+         U _valloc_r
+00000014 T pvalloc
+00000000 T valloc
+
+rand.o:
+00000000 t .gcc2_compiled.
+         U _impure_ptr
+0000000c T rand
+00000000 T srand
+
+eprintf.o:
+00000000 t .gcc2_compiled.
+00000000 T __eprintf
+         U _impure_ptr
+         U abort
+         U fiprintf
+
+labs.o:
+00000000 t .gcc2_compiled.
+00000000 T labs
+
+dtoa.o:
+00000000 t .gcc2_compiled.
+         U _Balloc
+         U _Bfree
+         U __adddf3
+         U __divdf3
+         U __eqdf2
+         U __fixdfsi
+         U __floatsidf
+         U __gtdf2
+         U __ledf2
+         U __ltdf2
+         U __mcmp
+         U __mdiff
+         U __mprec_bigtens
+         U __mprec_tens
+         U __muldf3
+         U __nedf2
+         U __negdf2
+         U __subdf3
+         U __udivsi3
+         U _d2b
+0000015c T _dtoa_r
+         U _hi0bits
+         U _i2b
+         U _lshift
+         U _multadd
+         U _multiply
+         U _pow5mult
+         U memcpy
+00000000 t quorem
+
+atoff.o:
+00000000 t .gcc2_compiled.
+00000000 T atoff
+         U strtodf
+
+mblen.o:
+00000000 t .gcc2_compiled.
+00000000 T mblen
+
+strtol.o:
+00000000 t .gcc2_compiled.
+         U __udivsi3
+         U __umodsi3
+         U _ctype_
+         U _impure_ptr
+00000000 T _strtol_r
+0000012c T strtol
+
+wctomb_r.o:
+00000000 t .gcc2_compiled.
+00000000 T _wctomb_r
+         U strcmp
+         U strlen
+
+malign.o:
+00000000 t .gcc2_compiled.
+         U _impure_ptr
+         U _memalign_r
+00000000 T memalign
+
+system.o:
+00000000 t .gcc2_compiled.
+         U __errno
+         U _impure_ptr
+00000000 T _system_r
+00000018 T system
+
+exit.o:
+00000000 t .gcc2_compiled.
+         U _call_via_r0
+         U _call_via_r1
+         U _exit
+         U _impure_ptr
+00000000 T exit
+
+putenv.o:
+00000000 t .gcc2_compiled.
+         U free
+         U index
+00000000 T putenv
+         U setenv
+         U strdup
+
+mbstowcs.o:
+00000000 t .gcc2_compiled.
+00000000 T mbstowcs
+
+abort.o:
+00000000 t .gcc2_compiled.
+00000000 D _dummy_abort
+
+div.o:
+00000000 t .gcc2_compiled.
+         U __divsi3
+         U __modsi3
+00000000 T div
+
+wcstombs.o:
+00000000 t .gcc2_compiled.
+00000000 T wcstombs
+
+getenv.o:
+00000000 t .gcc2_compiled.
+00000000 T _findenv
+         U environ
+00000064 T getenv
+         U strncmp
+
+assert.o:
+00000000 t .gcc2_compiled.
+00000000 T __assert
+         U _impure_ptr
+         U abort
+         U fiprintf
+
+qsort.o:
+00000000 t .gcc2_compiled.
+         U __udivsi3
+         U _call_via_r2
+00000000 T qsort
+
+mbtowc_r.o:
+00000000 t .gcc2_compiled.
+00000000 T _mbtowc_r
+
+setenv.o:
+00000000 t .gcc2_compiled.
+         U _findenv
+00000000 b alloced.3
+         U bcopy
+         U environ
+         U malloc
+         U realloc
+00000000 T setenv
+         U strlen
+0000014c T unsetenv
+
+dtoastub.o:
+00000000 t .gcc2_compiled.
+00000000 T __dtoa
+         U _dtoa_r
+         U _impure_ptr
+
+strdup.o:
+00000000 t .gcc2_compiled.
+         U malloc
+         U memcpy
+00000000 T strdup
+         U strlen
+
+calloc.o:
+00000000 t .gcc2_compiled.
+         U _calloc_r
+         U _impure_ptr
+00000000 T calloc
+
+mlock.o:
+00000000 t .gcc2_compiled.
+00000000 T __malloc_lock
+00000004 T __malloc_unlock
+
+ecvtbuf.o:
+00000000 t .gcc2_compiled.
+         U __divsi3
+         U __eqdf2
+         U __gedf2
+         U __gtdf2
+         U __ledf2
+         U __ltdf2
+         U __negdf2
+0000053c T _dcvt
+         U _dtoa_r
+00000374 T _gcvt
+         U _impure_ptr
+         U _mprec_log10
+         U _realloc_r
+000002d8 T ecvtbuf
+000001d0 T fcvtbuf
+000000dc t print_e
+00000000 t print_f
+         U strcpy
+
+realloc.o:
+00000000 t .gcc2_compiled.
+         U _impure_ptr
+         U _realloc_r
+00000000 T realloc
+
+strtoul.o:
+00000000 t .gcc2_compiled.
+         U __udivsi3
+         U __umodsi3
+         U _ctype_
+         U _impure_ptr
+00000000 T _strtoul_r
+00000118 T strtoul
+
+mtrim.o:
+00000000 t .gcc2_compiled.
+         U _impure_ptr
+         U _malloc_trim_r
+00000000 T malloc_trim
+
+mprec.o:
+00000000 t .gcc2_compiled.
+00000000 T _Balloc
+00000058 T _Bfree
+         U __divdf3
+         U __divsi3
+00000520 T __mcmp
+00000560 T __mdiff
+000000d4 R __mprec_bigtens
+0000000c R __mprec_tens
+000000fc R __mprec_tinytens
+         U __muldf3
+0000069c T _b2d
+         U _calloc_r
+00000758 T _d2b
+0000018c T _hi0bits
+00000268 T _i2b
+000001e4 T _lo0bits
+00000480 T _lshift
+00000890 T _mprec_log10
+00000070 T _multadd
+0000027c T _multiply
+000003e8 T _pow5mult
+00000840 T _ratio
+00000108 T _s2b
+00000650 T _ulp
+         U memcpy
+00000000 r p05.27
+
+wcstombs_r.o:
+00000000 t .gcc2_compiled.
+00000000 T _wcstombs_r
+         U _wctomb_r
+
+mstats.o:
+00000000 t .gcc2_compiled.
+         U _impure_ptr
+         U _mallinfo_r
+         U _malloc_stats_r
+         U _mallopt_r
+00000040 T _mstats_r
+         U fiprintf
+00000000 T mallinfo
+00000018 T malloc_stats
+00000028 T mallopt
+0000005c T mstats
+
+rand_r.o:
+00000000 t .gcc2_compiled.
+00000000 T rand_r
+
+ldiv.o:
+00000000 t .gcc2_compiled.
+         U __divsi3
+         U __modsi3
+00000000 T ldiv
+
+malloc.o:
+00000000 t .gcc2_compiled.
+         U _free_r
+         U _impure_ptr
+         U _malloc_r
+00000014 T free
+00000000 T malloc
+
+wctomb.o:
+00000000 t .gcc2_compiled.
+00000000 T wctomb
+
+mbtowc.o:
+00000000 t .gcc2_compiled.
+00000000 T mbtowc
+
+bsearch.o:
+00000000 t .gcc2_compiled.
+         U _call_via_r2
+00000000 T bsearch
+
+atexit.o:
+00000000 t .gcc2_compiled.
+         U _impure_ptr
+00000000 T atexit
+         U malloc
+
+__ten_mu.o:
+00000000 t .gcc2_compiled.
+         U __adddf3
+         U __floatsidf
+         U __muldf3
+00000000 T __ten_mul
+
+strtod.o:
+00000000 t .gcc2_compiled.
+         U _Balloc
+         U _Bfree
+         U __adddf3
+         U __divdf3
+         U __eqdf2
+         U __fixdfsi
+         U __floatsidf
+         U __gedf2
+         U __gtdf2
+         U __infinity
+         U __ledf2
+         U __ltdf2
+         U __mcmp
+         U __mdiff
+         U __mprec_bigtens
+         U __mprec_tens
+         U __mprec_tinytens
+         U __muldf3
+         U __negdf2
+         U __subdf3
+         U __truncdfsf2
+         U _d2b
+         U _i2b
+         U _impure_ptr
+         U _lshift
+         U _multiply
+         U _pow5mult
+         U _ratio
+         U _s2b
+00000000 T _strtod_r
+         U _ulp
+         U memcpy
+00000b34 T strtod
+00000b4c T strtodf
+
+atol.o:
+00000000 t .gcc2_compiled.
+00000000 T atol
+         U strtol
+
+msize.o:
+00000000 t .gcc2_compiled.
+         U _impure_ptr
+         U _malloc_usable_size_r
+00000000 T malloc_usable_size
+
+atof.o:
+00000000 t .gcc2_compiled.
+00000000 T atof
+         U strtod
+
+getopt.o:
+00000000 t .gcc2_compiled.
+         U _impure_ptr
+         U fprintf
+00000000 T getopt
+00000004 C optarg
+00000000 D opterr
+00000004 D optind
+00000004 C optopt
+00000004 C optreset
+00000008 d place.3
+         U strchr
+
+environ.o:
+00000000 t .gcc2_compiled.
+00000004 D environ
+00000000 d initial_env
+
+__exp10.o:
+00000000 t .gcc2_compiled.
+00000000 T __exp10
+         U __muldf3
+00000000 r powtab.3
+
+abs.o:
+00000000 t .gcc2_compiled.
+00000000 T abs
+
+efgcvt.o:
+00000000 t .gcc2_compiled.
+         U __extendsfdf2
+         U __ltdf2
+         U _gcvt
+         U _impure_ptr
+00000044 T ecvt
+         U ecvtbuf
+00000058 T ecvtf
+00000000 T fcvt
+         U fcvtbuf
+00000014 T fcvtf
+00000074 T gcvt
+00000030 T gcvtf
+
+memcpy.o:
+00000000 t .gcc2_compiled.
+00000000 T memcpy
+
+strchr.o:
+00000000 t .gcc2_compiled.
+00000000 T strchr
+
+strupr.o:
+00000000 t .gcc2_compiled.
+         U _ctype_
+00000000 T strupr
+
+strtok.o:
+00000000 t .gcc2_compiled.
+         U _impure_ptr
+00000000 T strtok
+         U strtok_r
+
+strcspn.o:
+00000000 t .gcc2_compiled.
+00000000 T strcspn
+
+strlwr.o:
+00000000 t .gcc2_compiled.
+         U _ctype_
+00000000 T strlwr
+
+strncat.o:
+00000000 t .gcc2_compiled.
+00000000 T strncat
+
+strspn.o:
+00000000 t .gcc2_compiled.
+00000000 T strspn
+
+strcasecmp.o:
+00000000 t .gcc2_compiled.
+         U _ctype_
+00000000 T strcasecmp
+
+strncasecmp.o:
+00000000 t .gcc2_compiled.
+         U _ctype_
+00000000 T strncasecmp
+
+u_strerr.o:
+00000000 t .gcc2_compiled.
+00000000 T _user_strerror
+
+strstr.o:
+00000000 t .gcc2_compiled.
+00000000 T strstr
+
+strcat.o:
+00000000 t .gcc2_compiled.
+00000000 T strcat
+         U strcpy
+
+strxfrm.o:
+00000000 t .gcc2_compiled.
+00000000 T strxfrm
+
+strcoll.o:
+00000000 t .gcc2_compiled.
+         U strcmp
+00000000 T strcoll
+
+strpbrk.o:
+00000000 t .gcc2_compiled.
+00000000 T strpbrk
+
+memcmp.o:
+00000000 t .gcc2_compiled.
+00000000 T memcmp
+
+strlen.o:
+00000000 t .gcc2_compiled.
+00000000 T strlen
+
+strncmp.o:
+00000000 t .gcc2_compiled.
+00000000 T strncmp
+
+index.o:
+00000000 t .gcc2_compiled.
+00000000 T index
+         U strchr
+
+bcopy.o:
+00000000 t .gcc2_compiled.
+00000000 T bcopy
+         U memmove
+
+strrchr.o:
+00000000 t .gcc2_compiled.
+00000000 T strrchr
+
+rindex.o:
+00000000 t .gcc2_compiled.
+00000000 T rindex
+         U strrchr
+
+memmove.o:
+00000000 t .gcc2_compiled.
+00000000 T memmove
+
+strtok_r.o:
+00000000 t .gcc2_compiled.
+00000000 T strtok_r
+
+strcmp.o:
+00000000 t .gcc2_compiled.
+00000000 T strcmp
+
+bzero.o:
+00000000 t .gcc2_compiled.
+00000000 T bzero
+
+strerror.o:
+00000000 t .gcc2_compiled.
+         U _user_strerror
+00000000 T strerror
+
+memset.o:
+00000000 t .gcc2_compiled.
+00000000 T memset
+
+strcpy.o:
+00000000 t .gcc2_compiled.
+00000000 T strcpy
+
+memchr.o:
+00000000 t .gcc2_compiled.
+00000000 T memchr
+
+bcmp.o:
+00000000 t .gcc2_compiled.
+00000000 T bcmp
+         U memcmp
+
+strncpy.o:
+00000000 t .gcc2_compiled.
+00000000 T strncpy
+
+syscalls.o:
+00000000 t .gcc2_compiled.
+         U __errno
+00000370 T _close
+0000037c T _exit
+000003fc T _fstat
+000003bc T _getpid
+00000414 T _gettimeofday
+         U _impure_ptr
+0000039c T _kill
+0000020c T _lseek
+00000328 T _open
+00000410 T _raise
+00000140 T _read
+000003c0 T _sbrk
+0000033c T _swiclose
+00000188 T _swilseek
+00000288 T _swiopen
+0000011c T _swiread
+00000218 T _swiwrite
+00000440 T _times
+00000408 T _unlink
+0000023c T _write
+         U abort
+         U end
+000000f0 t error
+00000000 t findslot
+000000dc t get_errno
+00000000 b heap_end.63
+0000006c T initialise_monitor_handles
+0000000c b monitor_stderr
+00000004 b monitor_stdin
+00000008 b monitor_stdout
+00000010 b openfiles
+00000020 t remap_handle
+         U strlen
+00000104 t wrap
+
+libcfunc.o:
+00000000 t .gcc2_compiled.
+00000000 T abort
+00000024 T alarm
+00000020 T isatty
+
+raise.o:
+00000000 t .gcc2_compiled.
+00000004 C _dummy_raise
+
+signal.o:
+00000000 t .gcc2_compiled.
+000001bc T __sigtramp
+0000010c T __sigtramp_r
+         U _call_via_r2
+         U _getpid_r
+         U _impure_ptr
+000001ac T _init_signal
+00000000 T _init_signal_r
+         U _kill_r
+         U _malloc_r
+00000080 T _raise_r
+0000003c T _signal_r
+00000180 T raise
+00000194 T signal
+
+sysexecve.o:
+00000000 t .gcc2_compiled.
+         U _execve
+00000000 T execve
+
+syskill.o:
+00000000 t .gcc2_compiled.
+         U _kill
+00000000 T kill
+
+syswait.o:
+00000000 t .gcc2_compiled.
+         U _wait
+00000000 T wait
+
+sysstat.o:
+00000000 t .gcc2_compiled.
+         U _stat
+00000000 T stat
+
+syssbrk.o:
+00000000 t .gcc2_compiled.
+         U _sbrk
+00000000 T sbrk
+
+sysopen.o:
+00000000 t .gcc2_compiled.
+         U _open
+00000000 T open
+
+sysfstat.o:
+00000000 t .gcc2_compiled.
+         U _fstat
+00000000 T fstat
+
+sysgettod.o:
+00000000 t .gcc2_compiled.
+         U _gettimeofday
+00000000 T gettimeofday
+
+sysgetpid.o:
+00000000 t .gcc2_compiled.
+         U _getpid
+00000000 T getpid
+
+syswrite.o:
+00000000 t .gcc2_compiled.
+         U _write
+00000000 T write
+
+sysclose.o:
+00000000 t .gcc2_compiled.
+         U _close
+00000000 T close
+
+sysfork.o:
+00000000 t .gcc2_compiled.
+         U _fork
+00000000 T fork
+
+sysfcntl.o:
+00000000 t .gcc2_compiled.
+         U _fcntl
+00000000 T fcntl
+
+systimes.o:
+00000000 t .gcc2_compiled.
+         U _times
+00000000 T times
+
+sysunlink.o:
+00000000 t .gcc2_compiled.
+         U _unlink
+00000000 T unlink
+
+syslink.o:
+00000000 t .gcc2_compiled.
+         U _link
+00000000 T link
+
+sysread.o:
+00000000 t .gcc2_compiled.
+         U _read
+00000000 T read
+
+syslseek.o:
+00000000 t .gcc2_compiled.
+         U _lseek
+00000000 T lseek
+
+mallocr.o:
+00000000 t .gcc2_compiled.
+00000000 D __malloc_av_
+0000041c D __malloc_current_mallinfo
+         U __malloc_lock
+00000414 D __malloc_max_sbrked_mem
+00000418 D __malloc_max_total_mem
+00000410 D __malloc_sbrk_base
+0000040c D __malloc_top_pad
+00000408 D __malloc_trim_threshold
+         U __malloc_unlock
+         U _free_r
+0000015c T _malloc_r
+         U _sbrk_r
+00000000 t malloc_extend_top
+
+freer.o:
+00000000 t .gcc2_compiled.
+         U __malloc_av_
+         U __malloc_current_mallinfo
+         U __malloc_lock
+         U __malloc_sbrk_base
+         U __malloc_top_pad
+         U __malloc_trim_threshold
+         U __malloc_unlock
+         U __udivsi3
+00000000 T _free_r
+000001c0 T _malloc_trim_r
+         U _sbrk_r
+
+reallocr.o:
+00000000 t .gcc2_compiled.
+         U __malloc_av_
+         U __malloc_lock
+         U __malloc_unlock
+         U _free_r
+         U _malloc_r
+00000000 T _realloc_r
+         U memcpy
+
+callocr.o:
+00000000 t .gcc2_compiled.
+00000000 T _calloc_r
+         U _malloc_r
+         U memset
+
+cfreer.o:
+00000000 t .gcc2_compiled.
+         U _free_r
+         U _impure_ptr
+00000000 T cfree
+
+malignr.o:
+00000000 t .gcc2_compiled.
+         U __malloc_lock
+         U __malloc_unlock
+         U __umodsi3
+         U _free_r
+         U _malloc_r
+00000000 T _memalign_r
+
+vallocr.o:
+00000000 t .gcc2_compiled.
+         U _memalign_r
+00000000 T _valloc_r
+
+pvallocr.o:
+00000000 t .gcc2_compiled.
+         U _memalign_r
+00000000 T _pvalloc_r
+
+mallinfor.o:
+00000000 t .gcc2_compiled.
+         U __malloc_av_
+         U __malloc_current_mallinfo
+         U __malloc_lock
+         U __malloc_unlock
+00000000 T __malloc_update_mallinfo
+0000006c T _mallinfo_r
+
+mallstatsr.o:
+00000000 t .gcc2_compiled.
+         U __malloc_current_mallinfo
+         U __malloc_lock
+         U __malloc_max_total_mem
+         U __malloc_unlock
+         U __malloc_update_mallinfo
+00000000 T _malloc_stats_r
+         U fiprintf
+
+msizer.o:
+00000000 t .gcc2_compiled.
+00000000 T _malloc_usable_size_r
+
+malloptr.o:
+00000000 t .gcc2_compiled.
+         U __malloc_lock
+         U __malloc_top_pad
+         U __malloc_trim_threshold
+         U __malloc_unlock
+00000000 T _mallopt_r
+
+vfiprintf.o:
+00000000 t .gcc2_compiled.
+         U __mb_cur_max
+00000020 t __sbprintf
+         U __sfvwrite
+         U __sinit
+00000000 t __sprint
+         U __swsetup
+         U __udivsi3
+         U __umodsi3
+         U _impure_ptr
+         U _mbtowc_r
+000000a8 T _vfiprintf_r
+00000000 r blanks.12
+         U fflush
+         U memchr
+         U strlen
+00000094 T vfiprintf
+00000010 r zeroes.13
+
+setjmp.o:
+
+trap.o:

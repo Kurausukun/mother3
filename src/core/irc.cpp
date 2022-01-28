@@ -177,7 +177,7 @@ void Irc::sub_08069DF4(u32 a1, Intr2 a2) {
 
 extern "C" ASM_FUNC("asm/non_matching/struct_0806A57C/sub_08069E2C.inc", void sub_08069E2C())
 
-u32 Irc::sub_08069F1C() {
+    u32 Irc::sub_08069F1C() {
     return _24;
 }
 

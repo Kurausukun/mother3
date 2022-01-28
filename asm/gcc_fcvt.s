@@ -35,7 +35,7 @@ sub_080691C0: @ 0x080691C0
 	push {lr}
 	cmp r1, #0
 	beq _080691CA
-	bl sub_08091970
+	bl __divsi3
 _080691CA:
 	pop {r1}
 	bx r1
@@ -46,7 +46,7 @@ sub_080691D0: @ 0x080691D0
 	push {lr}
 	cmp r1, #0
 	beq _080691DA
-	bl sub_08091A08
+	bl __modsi3
 _080691DA:
 	pop {r1}
 	bx r1
@@ -59,14 +59,14 @@ sub_080691E0: @ 0x080691E0
 	adds r4, r0, #0
 	ldr r3, _08069204 @ =0x00000000
 	ldr r2, _08069200 @ =0x00000000
-	bl sub_08092798
+	bl __ltdf2
 	cmp r0, #0
 	blt _08069210
 	ldr r2, _08069208 @ =0x3FE00000
 	ldr r3, _0806920C @ =0x00000000
 	adds r1, r5, #0
 	adds r0, r4, #0
-	bl sub_080920A4
+	bl __adddf3
 	b _0806921C
 	.align 2, 0
 _08069200: .4byte 0x00000000
@@ -78,9 +78,9 @@ _08069210:
 	ldr r2, _08069228 @ =0x3FE00000
 	adds r1, r5, #0
 	adds r0, r4, #0
-	bl sub_080920D4
+	bl __subdf3
 _0806921C:
-	bl sub_080928AC
+	bl __fixdfsi
 	pop {r4, r5}
 	pop {r1}
 	bx r1
@@ -93,10 +93,10 @@ sub_08069230: @ 0x08069230
 	push {lr}
 	ldr r3, _0806924C @ =0x54442D11
 	ldr r2, _08069248 @ =0x400921FB
-	bl sub_0809210C
+	bl __muldf3
 	ldr r2, _08069250 @ =0x40668000
 	ldr r3, _08069254 @ =0x00000000
-	bl sub_080923B4
+	bl __divdf3
 	pop {r2}
 	bx r2
 	.align 2, 0
@@ -110,10 +110,10 @@ sub_08069258: @ 0x08069258
 	push {lr}
 	ldr r3, _08069274 @ =0x00000000
 	ldr r2, _08069270 @ =0x40668000
-	bl sub_0809210C
+	bl __muldf3
 	ldr r2, _08069278 @ =0x400921FB
 	ldr r3, _0806927C @ =0x54442D11
-	bl sub_080923B4
+	bl __divdf3
 	pop {r2}
 	bx r2
 	.align 2, 0
@@ -494,9 +494,9 @@ sub_08069538: @ 0x08069538
 	adds r1, r2, #0
 	muls r1, r2, r1
 	subs r0, r0, r1
-	bl sub_08092830
+	bl __floatsidf
 	bl sub_080692B0
-	bl sub_080928AC
+	bl __fixdfsi
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -550,7 +550,7 @@ sub_080695A4: @ 0x080695A4
 	asrs r0, r0, #8
 	lsls r1, r1, #0x10
 	asrs r1, r1, #0x10
-	bl sub_08091970
+	bl __divsi3
 	lsls r0, r0, #0x10
 	asrs r0, r0, #0x10
 	pop {r1}
@@ -565,7 +565,7 @@ sub_080695BC: @ 0x080695BC
 	lsls r0, r0, #9
 	lsls r1, r1, #0x10
 	asrs r1, r1, #0x10
-	bl sub_08091970
+	bl __divsi3
 	lsls r0, r0, #0x10
 	asrs r0, r0, #0x10
 	pop {r1}

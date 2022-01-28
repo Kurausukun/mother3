@@ -1,5 +1,5 @@
-#include "core/clock.h"
 #include "core/keypad.h"
+#include "core/clock.h"
 
 extern "C" {
 #include "gba/gba.h"

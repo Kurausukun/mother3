@@ -19934,7 +19934,7 @@ sub_080AA50C: @ 0x080AA50C
 	ldr r1, [r1, #4]
 	bl _call_via_r1
 	movs r1, #3
-	bl sub_08091A08
+	bl __modsi3
 	cmp r0, #0
 	bgt _080AA54A
 	movs r0, #0
@@ -19961,7 +19961,7 @@ _080AA54A:
 	ldr r1, [r1, #4]
 	bl _call_via_r1
 	movs r1, #3
-	bl sub_08091A08
+	bl __modsi3
 	cmp r0, #1
 	bgt _080AA588
 	movs r0, #0

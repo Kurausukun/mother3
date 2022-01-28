@@ -10,21 +10,19 @@
 #if NON_MATCHING
 #define ASM_FUNC(path, decl)
 #else
-#define ASM_FUNC(path, decl)    \
-    NAKED decl {                \
-        asm(".include " #path); \
-    }
+#define ASM_FUNC(path, decl)                                                                       \
+    NAKED decl { asm(".include " #path); }
 #endif
 
 #if NON_MATCHING
 #define NONMATCH(path, decl) decl
 #define END_NONMATCH
 #else
-#define NONMATCH(path, decl)    \
-    NAKED decl {                \
-        asm(".include " #path); \
+#define NONMATCH(path, decl)                                                                       \
+    NAKED decl {                                                                                   \
+        asm(".include " #path);                                                                    \
         if (0)
 #define END_NONMATCH }
 #endif
 
-#endif // GUARD_GLOBAL_H
+#endif  // GUARD_GLOBAL_H
