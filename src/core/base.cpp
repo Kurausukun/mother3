@@ -5,64 +5,9 @@ Base::Base() {
     _2 = 0;
 }
 
-NAKED void Base_dtor() {
-    asm_unified("\n\
-        .global _._4Base\n\
-        _._4Base:\n\
-        push {r4, r5, r6, r7, lr}\n\
-        adds r6, r0, #0\n\
-        adds r7, r1, #0\n\
-        ldr r0, _08068A3C @ =0x09F7EAA8\n\
-        str r0, [r6, #0x1c]\n\
-        adds r0, r6, #0\n\
-        bl free_fit1__4Base\n\
-        adds r0, r6, #0\n\
-        bl free_fit2__4Base\n\
-        ldr r0, [r6, #0x18]\n\
-        cmp r0, #0\n\
-        beq _080689F4\n\
-        bl __builtin_vec_delete\n\
-    _080689F4:\n\
-        adds r5, r6, #4\n\
-        movs r0, #0\n\
-        str r0, [r5, #4]\n\
-        ldr r1, [r5, #8]\n\
-        cmp r1, #0\n\
-        beq _08068A26\n\
-        subs r0, r1, #4\n\
-        ldr r0, [r0]\n\
-        lsls r0, r0, #4\n\
-        adds r4, r1, r0\n\
-        cmp r1, r4\n\
-        beq _08068A1E\n\
-    _08068A0C:\n\
-        subs r4, #0x10\n\
-        ldr r0, [r4, #0xc]\n\
-        cmp r0, #0\n\
-        beq _08068A18\n\
-        bl __builtin_vec_delete\n\
-    _08068A18:\n\
-        ldr r0, [r5, #8]\n\
-        cmp r0, r4\n\
-        bne _08068A0C\n\
-    _08068A1E:\n\
-        ldr r0, [r5, #8]\n\
-        subs r0, #4\n\
-        bl __builtin_vec_delete\n\
-    _08068A26:\n\
-        movs r0, #1\n\
-        ands r0, r7\n\
-        cmp r0, #0\n\
-        beq _08068A34\n\
-        adds r0, r6, #0\n\
-        bl __builtin_delete\n\
-    _08068A34:\n\
-        pop {r4, r5, r6, r7}\n\
-        pop {r0}\n\
-        bx r0\n\
-        .align 2, 0\n\
-    _08068A3C: .4byte 0x09F7EAA8\n\
-        ");
+Base::~Base() {
+	free_fit1();
+	free_fit2();
 }
 
 void Base::base_5c() {

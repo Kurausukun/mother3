@@ -11,8 +11,7 @@ struct Fit {
     }
 
     ~Fit() {
-        if (data)
-            delete[] data;
+        delete[] data;
     }
 
     Fit* next() {
@@ -55,6 +54,38 @@ struct Fit {
     };
     s32 size;
     void* data;
+};
+
+struct List {
+    struct Node {
+        ~Node() {
+            delete[] stuff;
+        }
+
+        u8* _4;
+        u8* _8;
+        u8* _c;
+        u8* stuff;
+    };
+
+    List() {
+        _0 = 0;
+        size = 0;
+        nodes = 0;
+    }
+
+    ~List() {
+        size = 0;
+        delete[] nodes;
+    }
+
+    union {
+        void* _0;
+        char sig[4];
+        s32 sig32;
+    };
+    s32 size;
+    Node* nodes;
 };
 
 class FitAllocator {
