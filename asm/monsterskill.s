@@ -427,7 +427,7 @@ sub_08081C48: @ 0x08081C48
 	adds r0, r5, #0
 	mov r1, sp
 	bl sub_0806D4D0
-	ldr r1, _08081D3C @ =vt_09F44F08
+	ldr r1, _08081D3C @ =_vt.1D
 	mov r8, r1
 	str r1, [sp, #8]
 	adds r0, r5, #0
@@ -494,7 +494,7 @@ sub_08081C48: @ 0x08081C48
 	.align 2, 0
 _08081D34: .4byte vt_09F83418
 _08081D38: .4byte 0x00000179
-_08081D3C: .4byte vt_09F44F08
+_08081D3C: .4byte _vt.1D
 _08081D40: .4byte 0x040000D4
 _08081D44: .4byte 0x80000010
 

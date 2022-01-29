@@ -429,7 +429,7 @@ sub_0806A1F8:
 	bgt _0806A20C
 	b _0806A36A
 _0806A20C:
-	ldr r0, _0806A378 @ =vt_09F44FF0
+	ldr r0, _0806A378 @ =_vt.3Unk
 	mov sb, r0
 _0806A210:
 	adds r0, r7, #0
@@ -446,7 +446,7 @@ _0806A210:
 	adds r6, r0, #0
 	mov r0, sp
 	bl __4Base
-	ldr r0, _0806A37C @ =vt_09F7EDA0
+	ldr r0, _0806A37C @ =_vt.11PreAppClock
 	str r0, [sp, #0x1c]
 	str r6, [sp, #0x20]
 	ldr r2, [r4, #4]
@@ -468,7 +468,7 @@ _0806A210:
 	adds r6, r0, #0
 	mov r0, sp
 	bl __4Base
-	ldr r0, _0806A380 @ =vt_09F7ED20
+	ldr r0, _0806A380 @ =_vt.8AppClock
 	str r0, [sp, #0x1c]
 	str r6, [sp, #0x20]
 	ldr r2, [r4, #4]
@@ -490,7 +490,7 @@ _0806A210:
 	adds r6, r0, #0
 	mov r0, sp
 	bl __4Base
-	ldr r0, _0806A384 @ =vt_09F7ECA0
+	ldr r0, _0806A384 @ =_vt.12PostAppClock
 	str r0, [sp, #0x1c]
 	str r6, [sp, #0x20]
 	ldr r2, [r4, #4]
@@ -512,7 +512,7 @@ _0806A210:
 	adds r6, r0, #0
 	mov r0, sp
 	bl __4Base
-	ldr r0, _0806A388 @ =vt_09F7EC20
+	ldr r0, _0806A388 @ =_vt.12PostSysClock
 	str r0, [sp, #0x1c]
 	str r6, [sp, #0x20]
 	ldr r2, [r4, #4]
@@ -539,7 +539,7 @@ _0806A2EA:
 	adds r6, r0, #0
 	mov r0, sp
 	bl __4Base
-	ldr r0, _0806A38C @ =vt_09F7EEA0
+	ldr r0, _0806A38C @ =_vt.11PreSysClock
 	str r0, [sp, #0x1c]
 	str r6, [sp, #0x20]
 	ldr r2, [r4, #4]
@@ -561,7 +561,7 @@ _0806A2EA:
 	adds r6, r0, #0
 	mov r0, sp
 	bl __4Base
-	ldr r0, _0806A390 @ =vt_09F7EE20
+	ldr r0, _0806A390 @ =_vt.8SysClock
 	str r0, [sp, #0x1c]
 	str r6, [sp, #0x20]
 	ldr r2, [r4, #4]
@@ -589,13 +589,13 @@ _0806A36A:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0806A378: .4byte vt_09F44FF0
-_0806A37C: .4byte vt_09F7EDA0
-_0806A380: .4byte vt_09F7ED20
-_0806A384: .4byte vt_09F7ECA0
-_0806A388: .4byte vt_09F7EC20
-_0806A38C: .4byte vt_09F7EEA0
-_0806A390: .4byte vt_09F7EE20
+_0806A378: .4byte _vt.3Unk
+_0806A37C: .4byte _vt.11PreAppClock
+_0806A380: .4byte _vt.8AppClock
+_0806A384: .4byte _vt.12PostAppClock
+_0806A388: .4byte _vt.12PostSysClock
+_0806A38C: .4byte _vt.11PreSysClock
+_0806A390: .4byte _vt.8SysClock
     
 .syntax divided
 	.code	16

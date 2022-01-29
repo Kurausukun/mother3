@@ -25,9 +25,21 @@ gUnknown_080C17D8:
 gUnknown_080C1800:
     .incbin "baserom.gba", 0x000C1800, 0x258
 
-    .global gUnknown_080C1A58
-gUnknown_080C1A58:
-    .incbin "baserom.gba", 0x000C1A58, 0x38
+gUnknown_080C1A58::
+    .word sub_080053D0+1
+    .word gUnknown_03004B14
+    .word sub_080055E4+1
+    .word nullsub_60+1
+    .word nullsub_60+1
+    .word nullsub_60+1
+    .word nullsub_60+1
+    .word nullsub_60+1
+    .word nullsub_60+1
+    .word nullsub_60+1
+    .word nullsub_60+1
+    .word nullsub_60+1
+    .word nullsub_60+1
+    .word nullsub_60+1
 
     .global gUnknown_080C1A90
 gUnknown_080C1A90:
@@ -225,9 +237,21 @@ gUnknown_080C5AC8:
 gUnknown_080C5BB8:
     .incbin "baserom.gba", 0x000C5BB8, 0x3E8
 
-    .global gUnknown_080C5FA0
-gUnknown_080C5FA0:
-    .incbin "baserom.gba", 0x000C5FA0, 0x38
+gUnknown_080C5FA0::
+    .4byte sub_0803E358+1
+    .4byte sub_0803E3B4+1
+    .4byte sub_0803E3C0+1
+    .4byte nullsub_77+1
+    .4byte nullsub_77+1
+    .4byte sub_0803E3EC+1
+    .4byte nullsub_77+1
+    .4byte nullsub_77+1
+    .4byte nullsub_77+1
+    .4byte nullsub_77+1
+    .4byte nullsub_77+1
+    .4byte nullsub_77+1
+    .4byte nullsub_77+1
+    .4byte nullsub_77+1
 
     .global gUnknown_080C5FD8
 gUnknown_080C5FD8:
@@ -485,17 +509,41 @@ gUnknown_080C71B2:
 gUnknown_080C737A:
     .incbin "baserom.gba", 0x000C737A, 0x2AE
 
-    .global gUnknown_080C7628
-gUnknown_080C7628:
-    .incbin "baserom.gba", 0x000C7628, 0x38
+gUnknown_080C7628::
+    .4byte sub_08056948+1
+    .4byte sub_080569A8+1
+    .4byte nullsub_087+1
+    .4byte nullsub_087+1
+    .4byte nullsub_087+1
+    .4byte nullsub_086+1
+    .4byte nullsub_087+1
+    .4byte nullsub_087+1
+    .4byte nullsub_087+1
+    .4byte nullsub_087+1
+    .4byte nullsub_087+1
+    .4byte nullsub_087+1
+    .4byte nullsub_087+1
+    .4byte nullsub_087+1
 
     .global gUnknown_080C7660
 gUnknown_080C7660:
     .incbin "baserom.gba", 0x000C7660, 0x8
 
-    .global gUnknown_080C7668
-gUnknown_080C7668:
-    .incbin "baserom.gba", 0x000C7668, 0x38
+gUnknown_080C7668::
+    .4byte sub_08058698+1
+    .4byte sub_080586C8+1
+    .4byte nullsub_92+1
+    .4byte nullsub_92+1
+    .4byte nullsub_92+1
+    .4byte nullsub_91+1
+    .4byte nullsub_92+1
+    .4byte nullsub_92+1
+    .4byte nullsub_92+1
+    .4byte nullsub_92+1
+    .4byte nullsub_92+1
+    .4byte nullsub_92+1
+    .4byte nullsub_92+1
+    .4byte nullsub_92+1
 
     .global gUnknown_080C76A0
 gUnknown_080C76A0:
@@ -509,9 +557,21 @@ gUnknown_080C7D28:
 gUnknown_080C7D80:
     .incbin "baserom.gba", 0x000C7D80, 0x30
 
-    .global gUnknown_080C7DB0
-gUnknown_080C7DB0:
-    .incbin "baserom.gba", 0x000C7DB0, 0x38
+gUnknown_080C7DB0::
+    .4byte sub_0805A464+1
+    .4byte nullsub_93+1
+    .4byte nullsub_93+1
+    .4byte nullsub_93+1
+    .4byte nullsub_93+1
+    .4byte nullsub_93+1
+    .4byte nullsub_93+1
+    .4byte nullsub_93+1
+    .4byte nullsub_93+1
+    .4byte nullsub_93+1
+    .4byte nullsub_93+1
+    .4byte nullsub_93+1
+    .4byte nullsub_93+1
+    .4byte nullsub_93+1
 
     .global gUnknown_080C7DE8
 gUnknown_080C7DE8:

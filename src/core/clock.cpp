@@ -27,7 +27,7 @@ extern "C" NAKED void sub_0806A1F8(Clock* dest, u32 count) {
 	bgt _0806A20C\n\
 	b _0806A36A\n\
 _0806A20C:\n\
-	ldr r0, _0806A378 @ =0x09F44FF0\n\
+	ldr r0, _0806A378 @ =_vt.3Unk\n\
 	mov sb, r0\n\
 _0806A210:\n\
 	adds r0, r7, #0\n\
@@ -44,7 +44,7 @@ _0806A210:\n\
 	adds r6, r0, #0\n\
 	mov r0, sp\n\
 	bl __4Base\n\
-	ldr r0, _0806A37C @ =0x09F7EDA0\n\
+	ldr r0, _0806A37C @ =_vt.11PreAppClock\n\
 	str r0, [sp, #0x1c]\n\
 	str r6, [sp, #0x20]\n\
 	ldr r2, [r4, #4]\n\
@@ -66,7 +66,7 @@ _0806A210:\n\
 	adds r6, r0, #0\n\
 	mov r0, sp\n\
 	bl __4Base\n\
-	ldr r0, _0806A380 @ =0x09F7ED20\n\
+	ldr r0, _0806A380 @ =_vt.8AppClock\n\
 	str r0, [sp, #0x1c]\n\
 	str r6, [sp, #0x20]\n\
 	ldr r2, [r4, #4]\n\
@@ -88,7 +88,7 @@ _0806A210:\n\
 	adds r6, r0, #0\n\
 	mov r0, sp\n\
 	bl __4Base\n\
-	ldr r0, _0806A384 @ =0x09F7ECA0\n\
+	ldr r0, _0806A384 @ =_vt.12PostAppClock\n\
 	str r0, [sp, #0x1c]\n\
 	str r6, [sp, #0x20]\n\
 	ldr r2, [r4, #4]\n\
@@ -110,7 +110,7 @@ _0806A210:\n\
 	adds r6, r0, #0\n\
 	mov r0, sp\n\
 	bl __4Base\n\
-	ldr r0, _0806A388 @ =0x09F7EC20\n\
+	ldr r0, _0806A388 @ =_vt.12PostSysClock\n\
 	str r0, [sp, #0x1c]\n\
 	str r6, [sp, #0x20]\n\
 	ldr r2, [r4, #4]\n\
@@ -137,7 +137,7 @@ _0806A2EA:\n\
 	adds r6, r0, #0\n\
 	mov r0, sp\n\
 	bl __4Base\n\
-	ldr r0, _0806A38C @ =0x09F7EEA0\n\
+	ldr r0, _0806A38C @ =_vt.11PreSysClock\n\
 	str r0, [sp, #0x1c]\n\
 	str r6, [sp, #0x20]\n\
 	ldr r2, [r4, #4]\n\
@@ -159,7 +159,7 @@ _0806A2EA:\n\
 	adds r6, r0, #0\n\
 	mov r0, sp\n\
 	bl __4Base\n\
-	ldr r0, _0806A390 @ =0x09F7EE20\n\
+	ldr r0, _0806A390 @ =_vt.8SysClock\n\
 	str r0, [sp, #0x1c]\n\
 	str r6, [sp, #0x20]\n\
 	ldr r2, [r4, #4]\n\
@@ -187,13 +187,13 @@ _0806A36A:\n\
 	pop {r0}\n\
 	bx r0\n\
 	.align 2, 0\n\
-_0806A378: .4byte 0x09F44FF0\n\
-_0806A37C: .4byte 0x09F7EDA0\n\
-_0806A380: .4byte 0x09F7ED20\n\
-_0806A384: .4byte 0x09F7ECA0\n\
-_0806A388: .4byte 0x09F7EC20\n\
-_0806A38C: .4byte 0x09F7EEA0\n\
-_0806A390: .4byte 0x09F7EE20\n\
+_0806A378: .4byte _vt.3Unk\n\
+_0806A37C: .4byte _vt.11PreAppClock\n\
+_0806A380: .4byte _vt.8AppClock\n\
+_0806A384: .4byte _vt.12PostAppClock\n\
+_0806A388: .4byte _vt.12PostSysClock\n\
+_0806A38C: .4byte _vt.11PreSysClock\n\
+_0806A390: .4byte _vt.8SysClock\n\
     ");
 }
 

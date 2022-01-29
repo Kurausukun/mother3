@@ -1,6 +1,7 @@
     .section .data
 
-vt_09F44F08::
+.global _vt.1D
+_vt.1D:
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -16,7 +17,8 @@ vt_09F44F18::
 	.2byte 0
 	.4byte sub_0805D2B4
 
-vt_09F44F28::
+.global _vt.15SystemAllocator
+_vt.15SystemAllocator:
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -24,7 +26,7 @@ vt_09F44F28::
 	.2byte 0
 	.4byte _._15SystemAllocator
 
-vt_09F44F38::
+_vt.6System::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -86,7 +88,7 @@ vt_09F44F38::
 	.2byte 0
 	.4byte sub_0805D6F8__6System
 
-vt_09F44FD8::
+_vt.13SystemManager::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -97,7 +99,7 @@ vt_09F44FD8::
 	.2byte 0
 	.4byte init__13SystemManager
 
-vt_09F44FF0::
+_vt.3Unk::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -81473,7 +81475,7 @@ vt_09F794E8::
 	.2byte 0
 	.4byte sub_08083074
 
-vt_09F797A0::
+__vt_5Goods::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -89519,7 +89521,7 @@ vt_09F7EA80::
 	.2byte 0
 	.4byte sub_080687AC
 
-vt_09F7EA90::
+_vt.9Singleton::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -89530,7 +89532,7 @@ vt_09F7EA90::
 	.2byte 0
 	.4byte sub_08091AD8
 
-vt_09F7EAA8::
+_vt.4Base::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -89571,7 +89573,7 @@ vt_09F7EAA8::
 	.2byte 0
 	.4byte base_64__4Base
 
-vt_09F7EB10::
+_vt.12FitAllocator::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -89579,7 +89581,7 @@ vt_09F7EB10::
 	.2byte 0
 	.4byte _._12FitAllocator
 
-vt_09F7EB20::
+_vt.3Irc::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -89620,7 +89622,7 @@ vt_09F7EB20::
 	.2byte 0
 	.4byte base_64__4Base
 
-vt_09F7EB88::
+_vt.10IrcManager::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -89631,7 +89633,7 @@ vt_09F7EB88::
 	.2byte 0
 	.4byte sub_080C0BE0
 
-vt_09F7EBA0::
+_vt.5Clock::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -89672,7 +89674,7 @@ vt_09F7EBA0::
 	.2byte 0
 	.4byte base_64__4Base
 
-vt_09F7EC08::
+_vt.12ClockManager::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -89683,7 +89685,7 @@ vt_09F7EC08::
 	.2byte 0
 	.4byte init__12ClockManager
 
-vt_09F7EC20::
+_vt.12PostSysClock::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -89724,7 +89726,7 @@ vt_09F7EC20::
 	.2byte 0
 	.4byte base_64__4Base
 
-vt_09F7EC88::
+_vt.21PostSysClockSingleton::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -89735,7 +89737,7 @@ vt_09F7EC88::
 	.2byte 0
 	.4byte init__21PostSysClockSingleton
 
-vt_09F7ECA0::
+_vt.12PostAppClock::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -89776,7 +89778,7 @@ vt_09F7ECA0::
 	.2byte 0
 	.4byte base_64__4Base
 
-vt_09F7ED08::
+_vt.21PostAppClockSingleton::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -89787,7 +89789,7 @@ vt_09F7ED08::
 	.2byte 0
 	.4byte init__21PostAppClockSingleton
 
-vt_09F7ED20::
+_vt.8AppClock::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -89828,7 +89830,7 @@ vt_09F7ED20::
 	.2byte 0
 	.4byte base_64__4Base
 
-vt_09F7ED88::
+_vt.17AppClockSingleton::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -89839,7 +89841,7 @@ vt_09F7ED88::
 	.2byte 0
 	.4byte init__17AppClockSingleton
 
-vt_09F7EDA0::
+_vt.11PreAppClock::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -89880,7 +89882,7 @@ vt_09F7EDA0::
 	.2byte 0
 	.4byte base_64__4Base
 
-vt_09F7EE08::
+_vt.20PreAppClockSingleton::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -89891,7 +89893,7 @@ vt_09F7EE08::
 	.2byte 0
 	.4byte init__20PreAppClockSingleton
 
-vt_09F7EE20::
+_vt.8SysClock::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -89932,7 +89934,7 @@ vt_09F7EE20::
 	.2byte 0
 	.4byte base_64__4Base
 
-vt_09F7EE88::
+_vt.17SysClockSingleton::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -89943,7 +89945,7 @@ vt_09F7EE88::
 	.2byte 0
 	.4byte init__17SysClockSingleton
 
-vt_09F7EEA0::
+_vt.11PreSysClock::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -89984,7 +89986,7 @@ vt_09F7EEA0::
 	.2byte 0
 	.4byte base_64__4Base
 
-vt_09F7EF08::
+_vt.20PreSysClockSingleton::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -89995,7 +89997,7 @@ vt_09F7EF08::
 	.2byte 0
 	.4byte init__20PreSysClockSingleton
 
-vt_09F7EF20::
+_vt.Q215struct_0806A57C1A::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -90263,7 +90265,7 @@ vt_09F7F198::
 	.2byte 0
 	.4byte sub_080C0F5C
 
-vt_09F7F1B0::
+_vt.18SelectKeyLongPress::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -90315,7 +90317,7 @@ vt_09F7F218::
 	.2byte 0
 	.4byte sub_080C0F74
 
-vt_09F7F230::
+_vt.14SelectKeyPress::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -90367,7 +90369,7 @@ vt_09F7F298::
 	.2byte 0
 	.4byte sub_080C0FB0
 
-vt_09F7F2B0::
+_vt.17StartKeyLongPress::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -90419,7 +90421,7 @@ vt_09F7F318::
 	.2byte 0
 	.4byte sub_080C0FEC
 
-vt_09F7F330::
+_vt.13StartKeyPress::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -90471,7 +90473,7 @@ vt_09F7F398::
 	.2byte 0
 	.4byte sub_080C1028
 
-vt_09F7F3B0::
+_vt.13RKeyLongPress::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -90523,7 +90525,7 @@ vt_09F7F418::
 	.2byte 0
 	.4byte sub_080C1064
 
-vt_09F7F430::
+_vt.9RKeyPress::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -90575,7 +90577,7 @@ vt_09F7F498::
 	.2byte 0
 	.4byte sub_080C10A0
 
-vt_09F7F4B0::
+_vt.13LKeyLongPress::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -90627,7 +90629,7 @@ vt_09F7F518::
 	.2byte 0
 	.4byte sub_080C10DC
 
-vt_09F7F530::
+_vt.9LKeyPress::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -90679,7 +90681,7 @@ vt_09F7F598::
 	.2byte 0
 	.4byte sub_080C1118
 
-vt_09F7F5B0::
+_vt.13BKeyLongPress::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -90731,7 +90733,7 @@ vt_09F7F618::
 	.2byte 0
 	.4byte sub_080C1154
 
-vt_09F7F630::
+_vt.9BKeyPress::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -90783,7 +90785,7 @@ vt_09F7F698::
 	.2byte 0
 	.4byte sub_080C1190
 
-vt_09F7F6B0::
+_vt.13AKeyLongPress::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -90835,7 +90837,7 @@ vt_09F7F718::
 	.2byte 0
 	.4byte sub_080C11CC
 
-vt_09F7F730::
+_vt.9AKeyPress::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -90887,7 +90889,7 @@ vt_09F7F798::
 	.2byte 0
 	.4byte sub_080C1208
 
-vt_09F7F7B0::
+_vt.17RightKeyLongPress::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -90939,7 +90941,7 @@ vt_09F7F818::
 	.2byte 0
 	.4byte sub_080C1244
 
-vt_09F7F830::
+_vt.13RightKeyPress::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -90991,7 +90993,7 @@ vt_09F7F898::
 	.2byte 0
 	.4byte sub_080C1280
 
-vt_09F7F8B0::
+_vt.16LeftKeyLongPress::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -91043,7 +91045,7 @@ vt_09F7F918::
 	.2byte 0
 	.4byte sub_080C12BC
 
-vt_09F7F930::
+_vt.12LeftKeyPress::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -91095,7 +91097,7 @@ vt_09F7F998::
 	.2byte 0
 	.4byte sub_080C12F8
 
-vt_09F7F9B0::
+_vt.16DownKeyLongPress::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -91147,7 +91149,7 @@ vt_09F7FA18::
 	.2byte 0
 	.4byte sub_080C1334
 
-vt_09F7FA30::
+_vt.12DownKeyPress::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -91199,7 +91201,7 @@ vt_09F7FA98::
 	.2byte 0
 	.4byte sub_080C1370
 
-vt_09F7FAB0::
+_vt.14UpKeyLongPress::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -91251,7 +91253,7 @@ vt_09F7FB18::
 	.2byte 0
 	.4byte sub_080C13AC
 
-vt_09F7FB30::
+_vt.10UpKeyPress::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -91303,7 +91305,7 @@ vt_09F7FB98::
 	.2byte 0
 	.4byte sub_080C13E8
 
-vt_09F7FBB0::
+_vt.6KeyPad::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -93730,7 +93732,7 @@ vt_09F81400::
 	.2byte 0
 	.4byte sub_080C152C
 
-vt_09F81418::
+_vt.4Unit.6Object::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -93777,7 +93779,7 @@ vt_09F81418::
 	.2byte 0
 	.4byte sub_08091AD8
 
-vt_09F81490::
+_vt.4Unit::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -94355,7 +94357,7 @@ vt_09F81A38::
 	.2byte 0
 	.4byte sub_080C1620
 
-vt_09F81A50::
+_vt.6Object::
 	.2byte 0
 	.2byte 0
 	.4byte 0

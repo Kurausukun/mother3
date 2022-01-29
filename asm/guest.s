@@ -250,7 +250,7 @@ sub_0805F018: @ 0x0805F018
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
-	ldr r0, _0805F0B0 @ =vt_09F44FF0
+	ldr r0, _0805F0B0 @ =_vt.3Unk
 	mov sb, r0
 	ldr r0, _0805F0B4 @ =vt_09F453B0
 	str r0, [sp, #0x20]
@@ -271,7 +271,7 @@ sub_0805F018: @ 0x0805F018
 	mov r8, r0
 	add r0, sp, #0x24
 	bl __4Base
-	ldr r0, _0805F0BC @ =vt_09F7ED20
+	ldr r0, _0805F0BC @ =_vt.8AppClock
 	str r0, [sp, #0x40]
 	add r6, sp, #0x24
 	ldr r0, _0805F0C0 @ =gUnknown_080F3878
@@ -297,10 +297,10 @@ sub_0805F018: @ 0x0805F018
 	bx r1
 	.align 2, 0
 _0805F0AC: .4byte vt_09F466F0
-_0805F0B0: .4byte vt_09F44FF0
+_0805F0B0: .4byte _vt.3Unk
 _0805F0B4: .4byte vt_09F453B0
 _0805F0B8: .4byte gUnknown_080F3870
-_0805F0BC: .4byte vt_09F7ED20
+_0805F0BC: .4byte _vt.8AppClock
 _0805F0C0: .4byte gUnknown_080F3878
 
 	thumb_func_start nullsub_26
@@ -483,7 +483,7 @@ sub_0805F1C0: @ 0x0805F1C0
 	mov r1, sb
 	add r2, sp, #4
 	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
-	ldr r1, _0805F434 @ =vt_09F44FF0
+	ldr r1, _0805F434 @ =_vt.3Unk
 	str r1, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -501,7 +501,7 @@ sub_0805F1C0: @ 0x0805F1C0
 	mov r1, sb
 	add r2, sp, #4
 	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
-	ldr r1, _0805F434 @ =vt_09F44FF0
+	ldr r1, _0805F434 @ =_vt.3Unk
 	str r1, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -519,7 +519,7 @@ sub_0805F1C0: @ 0x0805F1C0
 	mov r1, sb
 	add r2, sp, #4
 	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
-	ldr r1, _0805F434 @ =vt_09F44FF0
+	ldr r1, _0805F434 @ =_vt.3Unk
 	str r1, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -538,7 +538,7 @@ sub_0805F1C0: @ 0x0805F1C0
 	mov r1, sb
 	add r2, sp, #4
 	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
-	ldr r1, _0805F434 @ =vt_09F44FF0
+	ldr r1, _0805F434 @ =_vt.3Unk
 	str r1, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -556,7 +556,7 @@ sub_0805F1C0: @ 0x0805F1C0
 	mov r1, sb
 	add r2, sp, #4
 	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
-	ldr r1, _0805F434 @ =vt_09F44FF0
+	ldr r1, _0805F434 @ =_vt.3Unk
 	str r1, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -574,7 +574,7 @@ sub_0805F1C0: @ 0x0805F1C0
 	mov r1, sb
 	add r2, sp, #4
 	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
-	ldr r1, _0805F434 @ =vt_09F44FF0
+	ldr r1, _0805F434 @ =_vt.3Unk
 	str r1, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -597,7 +597,7 @@ sub_0805F1C0: @ 0x0805F1C0
 	mov r1, sb
 	add r2, sp, #4
 	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
-	ldr r1, _0805F434 @ =vt_09F44FF0
+	ldr r1, _0805F434 @ =_vt.3Unk
 	str r1, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -615,7 +615,7 @@ sub_0805F1C0: @ 0x0805F1C0
 	mov r1, sb
 	add r2, sp, #4
 	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
-	ldr r1, _0805F434 @ =vt_09F44FF0
+	ldr r1, _0805F434 @ =_vt.3Unk
 	str r1, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -633,7 +633,7 @@ sub_0805F1C0: @ 0x0805F1C0
 	mov r1, sb
 	add r2, sp, #4
 	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
-	ldr r1, _0805F434 @ =vt_09F44FF0
+	ldr r1, _0805F434 @ =_vt.3Unk
 	str r1, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -652,7 +652,7 @@ sub_0805F1C0: @ 0x0805F1C0
 	mov r1, sb
 	add r2, sp, #4
 	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
-	ldr r1, _0805F434 @ =vt_09F44FF0
+	ldr r1, _0805F434 @ =_vt.3Unk
 	str r1, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -670,7 +670,7 @@ sub_0805F1C0: @ 0x0805F1C0
 	mov r1, sb
 	add r2, sp, #4
 	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
-	ldr r1, _0805F434 @ =vt_09F44FF0
+	ldr r1, _0805F434 @ =_vt.3Unk
 	str r1, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -688,7 +688,7 @@ sub_0805F1C0: @ 0x0805F1C0
 	mov r1, sb
 	add r2, sp, #4
 	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
-	ldr r1, _0805F434 @ =vt_09F44FF0
+	ldr r1, _0805F434 @ =_vt.3Unk
 	str r1, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -706,7 +706,7 @@ sub_0805F1C0: @ 0x0805F1C0
 _0805F428: .4byte vt_09F46768
 _0805F42C: .4byte vt_09F818D0
 _0805F430: .4byte gUnknown_080F3F00
-_0805F434: .4byte vt_09F44FF0
+_0805F434: .4byte _vt.3Unk
 _0805F438: .4byte vt_09F81850
 _0805F43C: .4byte vt_09F817D0
 _0805F440: .4byte gUnknown_080F3F08
@@ -1519,8 +1519,8 @@ sub_0805F98C: @ 0x0805F98C
 	adds r5, r0, #0
 	add r0, sp, #4
 	bl __4Base
-	ldr r6, _0805FA3C @ =vt_09F44FF0
-	ldr r0, _0805FA40 @ =vt_09F7ED20
+	ldr r6, _0805FA3C @ =_vt.3Unk
+	ldr r0, _0805FA40 @ =_vt.8AppClock
 	str r0, [sp, #0x20]
 	ldr r0, _0805FA44 @ =gUnknown_080F4590
 	ldr r3, [r0]
@@ -1542,8 +1542,8 @@ sub_0805F98C: @ 0x0805F98C
 	.align 2, 0
 _0805FA34: .4byte vt_09F467F8
 _0805FA38: .4byte gSave
-_0805FA3C: .4byte vt_09F44FF0
-_0805FA40: .4byte vt_09F7ED20
+_0805FA3C: .4byte _vt.3Unk
+_0805FA40: .4byte _vt.8AppClock
 _0805FA44: .4byte gUnknown_080F4590
 
 	thumb_func_start sub_0805FA48
@@ -2493,7 +2493,7 @@ _08060120:
 	adds r5, r7, r5
 	mov r0, sp
 	bl __4Base
-	ldr r1, _080601BC @ =vt_09F44FF0
+	ldr r1, _080601BC @ =_vt.3Unk
 	mov r8, r1
 	ldr r0, _080601C0 @ =vt_09F819D0
 	str r0, [sp, #0x1c]
@@ -2546,7 +2546,7 @@ _08060120:
 	bl _._4Base
 	b _08060320
 	.align 2, 0
-_080601BC: .4byte vt_09F44FF0
+_080601BC: .4byte _vt.3Unk
 _080601C0: .4byte vt_09F819D0
 _080601C4: .4byte vt_09F818D0
 _080601C8: .4byte vt_09F81950
@@ -2666,7 +2666,7 @@ _08060276:
 	adds r5, r7, r5
 	mov r0, sp
 	bl __4Base
-	ldr r1, _08060330 @ =vt_09F44FF0
+	ldr r1, _08060330 @ =_vt.3Unk
 	mov r8, r1
 	ldr r0, _08060334 @ =vt_09F819D0
 	str r0, [sp, #0x1c]
@@ -2727,7 +2727,7 @@ _08060320:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08060330: .4byte vt_09F44FF0
+_08060330: .4byte _vt.3Unk
 _08060334: .4byte vt_09F819D0
 _08060338: .4byte vt_09F81750
 _0806033C: .4byte vt_09F81950
@@ -2853,7 +2853,7 @@ _080603F2:
 	add r5, sb
 	mov r0, sp
 	bl __4Base
-	ldr r3, _080604BC @ =vt_09F44FF0
+	ldr r3, _080604BC @ =_vt.3Unk
 	mov r8, r3
 	ldr r0, _080604C0 @ =vt_09F819D0
 	str r0, [sp, #0x1c]
@@ -2924,7 +2924,7 @@ _080604AA:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080604BC: .4byte vt_09F44FF0
+_080604BC: .4byte _vt.3Unk
 _080604C0: .4byte vt_09F819D0
 _080604C4: .4byte vt_09F817D0
 _080604C8: .4byte vt_09F81950
@@ -3056,7 +3056,7 @@ _0806058A:
 	add r5, sb
 	mov r0, sp
 	bl __4Base
-	ldr r3, _08060654 @ =vt_09F44FF0
+	ldr r3, _08060654 @ =_vt.3Unk
 	mov r8, r3
 	ldr r0, _08060658 @ =vt_09F819D0
 	str r0, [sp, #0x1c]
@@ -3127,7 +3127,7 @@ _08060642:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08060654: .4byte vt_09F44FF0
+_08060654: .4byte _vt.3Unk
 _08060658: .4byte vt_09F819D0
 _0806065C: .4byte vt_09F81750
 _08060660: .4byte vt_09F81950
@@ -3199,7 +3199,7 @@ _080606CC:
 	adds r0, r5, #0
 	add r1, sp, #4
 	bl _call_via_r2
-	ldr r2, _08060868 @ =vt_09F44FF0
+	ldr r2, _08060868 @ =_vt.3Unk
 	str r2, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -3352,7 +3352,7 @@ _080606CC:
 	adds r0, r5, #0
 	add r1, sp, #4
 	bl _call_via_r2
-	ldr r2, _08060868 @ =vt_09F44FF0
+	ldr r2, _08060868 @ =_vt.3Unk
 	str r2, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -3361,7 +3361,7 @@ _080606CC:
 	b _080608A6
 	.align 2, 0
 _08060864: .4byte vt_09F819D0
-_08060868: .4byte vt_09F44FF0
+_08060868: .4byte _vt.3Unk
 _0806086C: .4byte 0x000001D5
 _08060870: .4byte vt_09F81950
 _08060874:
@@ -3525,7 +3525,7 @@ _0806096E:
 	add r5, sb
 	mov r0, sp
 	bl __4Base
-	ldr r3, _08060A38 @ =vt_09F44FF0
+	ldr r3, _08060A38 @ =_vt.3Unk
 	mov r8, r3
 	ldr r0, _08060A3C @ =vt_09F819D0
 	str r0, [sp, #0x1c]
@@ -3596,7 +3596,7 @@ _08060A26:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08060A38: .4byte vt_09F44FF0
+_08060A38: .4byte _vt.3Unk
 _08060A3C: .4byte vt_09F819D0
 _08060A40: .4byte vt_09F81850
 _08060A44: .4byte vt_09F81950
@@ -5609,9 +5609,9 @@ sub_08061A68: @ 0x08061A68
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
-	ldr r0, _08061ADC @ =vt_09F44FF0
+	ldr r0, _08061ADC @ =_vt.3Unk
 	mov r8, r0
-	ldr r0, _08061AE0 @ =vt_09F7ED20
+	ldr r0, _08061AE0 @ =_vt.8AppClock
 	str r0, [sp, #0x20]
 	ldr r0, _08061AE4 @ =gUnknown_080F6704
 	ldr r3, [r0]
@@ -5635,8 +5635,8 @@ sub_08061A68: @ 0x08061A68
 	bx r1
 	.align 2, 0
 _08061AD8: .4byte vt_09F4B948
-_08061ADC: .4byte vt_09F44FF0
-_08061AE0: .4byte vt_09F7ED20
+_08061ADC: .4byte _vt.3Unk
+_08061AE0: .4byte _vt.8AppClock
 _08061AE4: .4byte gUnknown_080F6704
 
 	thumb_func_start sub_08061AE8
@@ -5969,7 +5969,7 @@ _08061D2C:
 	adds r5, r7, r5
 	mov r0, sp
 	bl __4Base
-	ldr r1, _08061DD4 @ =vt_09F44FF0
+	ldr r1, _08061DD4 @ =_vt.3Unk
 	mov r8, r1
 	ldr r0, _08061DD8 @ =vt_09F819D0
 	str r0, [sp, #0x1c]
@@ -6028,7 +6028,7 @@ _08061D2C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08061DD4: .4byte vt_09F44FF0
+_08061DD4: .4byte _vt.3Unk
 _08061DD8: .4byte vt_09F819D0
 _08061DDC: .4byte vt_09F818D0
 _08061DE0: .4byte vt_09F81950
@@ -6143,7 +6143,7 @@ sub_08061E4C: @ 0x08061E4C
 	add r4, sp, #4
 	adds r0, r4, #0
 	bl __4Base
-	ldr r1, _08061F28 @ =vt_09F44FF0
+	ldr r1, _08061F28 @ =_vt.3Unk
 	mov r8, r1
 	ldr r0, _08061F2C @ =vt_09F455B0
 	str r0, [sp, #0x20]
@@ -6197,7 +6197,7 @@ _08061F18: .4byte vt_09F4B9D8
 _08061F1C: .4byte vt_09F4BA50
 _08061F20: .4byte gUnknown_02004110
 _08061F24: .4byte gUnknown_080CC4E8
-_08061F28: .4byte vt_09F44FF0
+_08061F28: .4byte _vt.3Unk
 _08061F2C: .4byte vt_09F455B0
 _08061F30: .4byte gUnknown_080F6D8C
 _08061F34: .4byte vt_09F45530

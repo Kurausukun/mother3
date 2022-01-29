@@ -47,8 +47,8 @@ sub_0806E820: @ 0x0806E820
 	adds r5, r0, #0
 	add r0, sp, #4
 	bl __4Base
-	ldr r6, _0806E8B0 @ =vt_09F44FF0
-	ldr r0, _0806E8B4 @ =vt_09F7ED20
+	ldr r6, _0806E8B0 @ =_vt.3Unk
+	ldr r0, _0806E8B4 @ =_vt.8AppClock
 	str r0, [sp, #0x20]
 	ldr r0, _0806E8B8 @ =gUnknown_081002E4
 	ldr r3, [r0]
@@ -69,8 +69,8 @@ sub_0806E820: @ 0x0806E820
 	bx r1
 	.align 2, 0
 _0806E8AC: .4byte vt_09F7FFE0
-_0806E8B0: .4byte vt_09F44FF0
-_0806E8B4: .4byte vt_09F7ED20
+_0806E8B0: .4byte _vt.3Unk
+_0806E8B4: .4byte _vt.8AppClock
 _0806E8B8: .4byte gUnknown_081002E4
 
 	thumb_func_start sub_0806E8BC

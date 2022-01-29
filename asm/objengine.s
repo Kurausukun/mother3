@@ -140,8 +140,8 @@ _0806BE86:
 	adds r5, r0, #0
 	add r0, sp, #4
 	bl __4Base
-	ldr r6, _0806BF54 @ =vt_09F44FF0
-	ldr r0, _0806BF58 @ =vt_09F7EE20
+	ldr r6, _0806BF54 @ =_vt.3Unk
+	ldr r0, _0806BF58 @ =_vt.8SysClock
 	str r0, [sp, #0x20]
 	ldr r0, _0806BF5C @ =gUnknown_080FF3FC
 	ldr r3, [r0]
@@ -159,7 +159,7 @@ _0806BE86:
 	adds r5, r0, #0
 	add r0, sp, #4
 	bl __4Base
-	ldr r0, _0806BF60 @ =vt_09F7EC20
+	ldr r0, _0806BF60 @ =_vt.12PostSysClock
 	str r0, [sp, #0x20]
 	ldr r0, _0806BF64 @ =gUnknown_080FF404
 	ldr r3, [r0]
@@ -186,10 +186,10 @@ _0806BF44: .4byte 0x00000834
 _0806BF48: .4byte 0x00000938
 _0806BF4C: .4byte 0x00000B4C
 _0806BF50: .4byte 0x0000EF9F
-_0806BF54: .4byte vt_09F44FF0
-_0806BF58: .4byte vt_09F7EE20
+_0806BF54: .4byte _vt.3Unk
+_0806BF58: .4byte _vt.8SysClock
 _0806BF5C: .4byte gUnknown_080FF3FC
-_0806BF60: .4byte vt_09F7EC20
+_0806BF60: .4byte _vt.12PostSysClock
 _0806BF64: .4byte gUnknown_080FF404
 
 	thumb_func_start sub_0806BF68

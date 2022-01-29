@@ -146,7 +146,7 @@ sub_08080A24: @ 0x08080A24
 	add r4, sp, #4
 	adds r0, r4, #0
 	bl __4Base
-	ldr r0, _08080B4C @ =vt_09F44FF0
+	ldr r0, _08080B4C @ =_vt.3Unk
 	mov r8, r0
 	ldr r0, _08080B50 @ =vt_09F455B0
 	str r0, [sp, #0x20]
@@ -196,7 +196,7 @@ sub_08080A24: @ 0x08080A24
 _08080B40: .4byte vt_09F82F98
 _08080B44: .4byte vt_09F83010
 _08080B48: .4byte gUnknown_080D0D28
-_08080B4C: .4byte vt_09F44FF0
+_08080B4C: .4byte _vt.3Unk
 _08080B50: .4byte vt_09F455B0
 _08080B54: .4byte gUnknown_0810B278
 _08080B58: .4byte vt_09F45530

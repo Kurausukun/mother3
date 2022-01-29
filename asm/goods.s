@@ -292,8 +292,8 @@ sub_08062384: @ 0x08062384
 	adds r5, r0, #0
 	add r0, sp, #4
 	bl __4Base
-	ldr r6, _0806243C @ =vt_09F44FF0
-	ldr r0, _08062440 @ =vt_09F7ED20
+	ldr r6, _0806243C @ =_vt.3Unk
+	ldr r0, _08062440 @ =_vt.8AppClock
 	str r0, [sp, #0x20]
 	ldr r0, _08062444 @ =gUnknown_080F812C
 	ldr r3, [r0]
@@ -314,8 +314,8 @@ sub_08062384: @ 0x08062384
 	bx r1
 	.align 2, 0
 _08062438: .4byte vt_09F4E320
-_0806243C: .4byte vt_09F44FF0
-_08062440: .4byte vt_09F7ED20
+_0806243C: .4byte _vt.3Unk
+_08062440: .4byte _vt.8AppClock
 _08062444: .4byte gUnknown_080F812C
 
 	thumb_func_start sub_08062448
@@ -2169,7 +2169,7 @@ _08063220:
 	adds r5, r7, r5
 	mov r0, sp
 	bl __4Base
-	ldr r3, _080632D4 @ =vt_09F44FF0
+	ldr r3, _080632D4 @ =_vt.3Unk
 	mov r8, r3
 	ldr r0, _080632D8 @ =vt_09F819D0
 	str r0, [sp, #0x1c]
@@ -2230,7 +2230,7 @@ _08063220:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080632D4: .4byte vt_09F44FF0
+_080632D4: .4byte _vt.3Unk
 _080632D8: .4byte vt_09F819D0
 _080632DC: .4byte vt_09F818D0
 _080632E0: .4byte vt_09F81950
@@ -2350,7 +2350,7 @@ _080633A0:
 	add r4, sb
 	mov r0, sp
 	bl __4Base
-	ldr r3, _08063468 @ =vt_09F44FF0
+	ldr r3, _08063468 @ =_vt.3Unk
 	mov r8, r3
 	ldr r0, _0806346C @ =vt_09F819D0
 	str r0, [sp, #0x1c]
@@ -2434,7 +2434,7 @@ _08063458:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08063468: .4byte vt_09F44FF0
+_08063468: .4byte _vt.3Unk
 _0806346C: .4byte vt_09F819D0
 _08063470: .4byte vt_09F817D0
 _08063474: .4byte vt_09F81950
@@ -2552,7 +2552,7 @@ _0806352E:
 	add r5, sb
 	mov r0, sp
 	bl __4Base
-	ldr r0, _080636FC @ =vt_09F44FF0
+	ldr r0, _080636FC @ =_vt.3Unk
 	mov r8, r0
 	ldr r0, _08063700 @ =vt_09F819D0
 	str r0, [sp, #0x1c]
@@ -2757,7 +2757,7 @@ _080636EC:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080636FC: .4byte vt_09F44FF0
+_080636FC: .4byte _vt.3Unk
 _08063700: .4byte vt_09F819D0
 _08063704: .4byte vt_09F81750
 _08063708: .4byte vt_09F81950
@@ -2878,7 +2878,7 @@ _080637CC:
 	add r4, sb
 	mov r0, sp
 	bl __4Base
-	ldr r0, _080638A8 @ =vt_09F44FF0
+	ldr r0, _080638A8 @ =_vt.3Unk
 	mov r8, r0
 	ldr r0, _080638AC @ =vt_09F819D0
 	str r0, [sp, #0x1c]
@@ -2971,7 +2971,7 @@ _08063896:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080638A8: .4byte vt_09F44FF0
+_080638A8: .4byte _vt.3Unk
 _080638AC: .4byte vt_09F819D0
 _080638B0: .4byte vt_09F81750
 _080638B4: .4byte vt_09F81950

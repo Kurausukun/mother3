@@ -4,9 +4,9 @@
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
-	ldr r0, _08074B94 @ =vt_09F81418
+	ldr r0, _08074B94 @ =_vt.4Unit.6Object
 	str r0, [r4, #0x20]
-	ldr r0, _08074B98 @ =vt_09F81490
+	ldr r0, _08074B98 @ =_vt.4Unit
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
 	bl unit_108__4Unit
@@ -28,7 +28,7 @@ _08074B72:
 	beq _08074B80
 	bl __builtin_vec_delete
 _08074B80:
-	ldr r0, _08074B9C @ =vt_09F81A50
+	ldr r0, _08074B9C @ =_vt.6Object
 	str r0, [r4, #0x20]
 	adds r0, r4, #0
 	adds r1, r5, #0
@@ -37,7 +37,7 @@ _08074B80:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08074B94: .4byte vt_09F81418
-_08074B98: .4byte vt_09F81490
-_08074B9C: .4byte vt_09F81A50
+_08074B94: .4byte _vt.4Unit.6Object
+_08074B98: .4byte _vt.4Unit
+_08074B9C: .4byte _vt.6Object
     .syntax divided

@@ -453,7 +453,7 @@ sub_08066584: @ 0x08066584
 	movs r0, #1
 	rsbs r0, r0, #0
 	mov sl, r0
-	ldr r5, _080666E4 @ =vt_09F44F08
+	ldr r5, _080666E4 @ =_vt.1D
 	str r5, [sp, #0xc]
 	str r2, [sp, #4]
 	str r0, [sp, #8]
@@ -584,7 +584,7 @@ sub_08066584: @ 0x08066584
 	.align 2, 0
 _080666DC: .4byte vt_09F7E3E8
 _080666E0: .4byte gUnknown_08CE39F8
-_080666E4: .4byte vt_09F44F08
+_080666E4: .4byte _vt.1D
 _080666E8: .4byte vt_09F7E458
 _080666EC: .4byte 0x00000289
 _080666F0: .4byte 0x000003A7
@@ -648,7 +648,7 @@ sub_0806673C: @ 0x0806673C
 	ldr r0, _08066B24 @ =gUnknown_08CE39F8
 	movs r1, #1
 	rsbs r1, r1, #0
-	ldr r4, _08066B28 @ =vt_09F44F08
+	ldr r4, _08066B28 @ =_vt.1D
 	str r4, [sp, #0xc]
 	str r0, [sp, #4]
 	str r1, [sp, #8]
@@ -756,7 +756,7 @@ _08066808:
 	mov r2, r8
 	adds r3, r6, #0
 	bl sub_0806D744
-	ldr r2, _08066B28 @ =vt_09F44F08
+	ldr r2, _08066B28 @ =_vt.1D
 	mov r8, r2
 	str r2, [sp, #0x30]
 	str r2, [sp, #0x24]
@@ -1080,7 +1080,7 @@ _08066A14:
 _08066B1C: .4byte vt_09F7E538
 _08066B20: .4byte 0x000004D4
 _08066B24: .4byte gUnknown_08CE39F8
-_08066B28: .4byte vt_09F44F08
+_08066B28: .4byte _vt.1D
 _08066B2C: .4byte vt_09F7E458
 _08066B30: .4byte 0x0000043C
 _08066B34: .4byte 0x0000028E
@@ -1177,9 +1177,9 @@ _08066B5C:
 	bl sub_0806DF50
 	adds r0, r7, #0
 	bl __4Base
-	ldr r1, _08066E1C @ =vt_09F44FF0
+	ldr r1, _08066E1C @ =_vt.3Unk
 	mov r8, r1
-	ldr r0, _08066E20 @ =vt_09F7FB30
+	ldr r0, _08066E20 @ =_vt.10UpKeyPress
 	str r0, [sp, #0x2c]
 	movs r6, #0xcd
 	lsls r6, r6, #3
@@ -1200,7 +1200,7 @@ _08066B5C:
 	bl _._4Base
 	adds r0, r7, #0
 	bl __4Base
-	ldr r0, _08066E28 @ =vt_09F7FAB0
+	ldr r0, _08066E28 @ =_vt.14UpKeyLongPress
 	str r0, [sp, #0x2c]
 	str r5, [sp]
 	adds r3, r4, #0
@@ -1215,7 +1215,7 @@ _08066B5C:
 	bl _._4Base
 	adds r0, r7, #0
 	bl __4Base
-	ldr r0, _08066E2C @ =vt_09F7FA30
+	ldr r0, _08066E2C @ =_vt.12DownKeyPress
 	str r0, [sp, #0x2c]
 	ldr r0, _08066E30 @ =gUnknown_080FE1E8
 	ldr r4, [r0]
@@ -1233,7 +1233,7 @@ _08066B5C:
 	bl _._4Base
 	adds r0, r7, #0
 	bl __4Base
-	ldr r0, _08066E34 @ =vt_09F7F9B0
+	ldr r0, _08066E34 @ =_vt.16DownKeyLongPress
 	str r0, [sp, #0x2c]
 	str r5, [sp]
 	adds r3, r4, #0
@@ -1248,7 +1248,7 @@ _08066B5C:
 	bl _._4Base
 	adds r0, r7, #0
 	bl __4Base
-	ldr r0, _08066E38 @ =vt_09F7F930
+	ldr r0, _08066E38 @ =_vt.12LeftKeyPress
 	str r0, [sp, #0x2c]
 	ldr r0, _08066E3C @ =gUnknown_080FE1F0
 	ldr r4, [r0]
@@ -1266,7 +1266,7 @@ _08066B5C:
 	bl _._4Base
 	adds r0, r7, #0
 	bl __4Base
-	ldr r0, _08066E40 @ =vt_09F7F8B0
+	ldr r0, _08066E40 @ =_vt.16LeftKeyLongPress
 	str r0, [sp, #0x2c]
 	str r5, [sp]
 	adds r3, r4, #0
@@ -1281,7 +1281,7 @@ _08066B5C:
 	bl _._4Base
 	adds r0, r7, #0
 	bl __4Base
-	ldr r0, _08066E44 @ =vt_09F7F830
+	ldr r0, _08066E44 @ =_vt.13RightKeyPress
 	str r0, [sp, #0x2c]
 	ldr r0, _08066E48 @ =gUnknown_080FE1F8
 	ldr r4, [r0]
@@ -1299,7 +1299,7 @@ _08066B5C:
 	bl _._4Base
 	adds r0, r7, #0
 	bl __4Base
-	ldr r0, _08066E4C @ =vt_09F7F7B0
+	ldr r0, _08066E4C @ =_vt.17RightKeyLongPress
 	str r0, [sp, #0x2c]
 	str r5, [sp]
 	adds r3, r4, #0
@@ -1314,7 +1314,7 @@ _08066B5C:
 	bl _._4Base
 	adds r0, r7, #0
 	bl __4Base
-	ldr r0, _08066E50 @ =vt_09F7F730
+	ldr r0, _08066E50 @ =_vt.9AKeyPress
 	str r0, [sp, #0x2c]
 	ldr r0, _08066E54 @ =gUnknown_080FE200
 	ldr r4, [r0]
@@ -1332,7 +1332,7 @@ _08066B5C:
 	bl _._4Base
 	adds r0, r7, #0
 	bl __4Base
-	ldr r0, _08066E58 @ =vt_09F7F6B0
+	ldr r0, _08066E58 @ =_vt.13AKeyLongPress
 	str r0, [sp, #0x2c]
 	str r5, [sp]
 	adds r3, r4, #0
@@ -1347,7 +1347,7 @@ _08066B5C:
 	bl _._4Base
 	adds r0, r7, #0
 	bl __4Base
-	ldr r0, _08066E5C @ =vt_09F7F630
+	ldr r0, _08066E5C @ =_vt.9BKeyPress
 	str r0, [sp, #0x2c]
 	ldr r0, _08066E60 @ =gUnknown_080FE208
 	ldr r3, [r0]
@@ -1364,7 +1364,7 @@ _08066B5C:
 	bl _._4Base
 	adds r0, r7, #0
 	bl __4Base
-	ldr r0, _08066E64 @ =vt_09F7F430
+	ldr r0, _08066E64 @ =_vt.9RKeyPress
 	str r0, [sp, #0x2c]
 	ldr r0, _08066E68 @ =gUnknown_080FE210
 	ldr r3, [r0]
@@ -1394,25 +1394,25 @@ _08066B5C:
 _08066E10: .4byte 0x000004D4
 _08066E14: .4byte 0x000003A5
 _08066E18: .4byte 0x00000287
-_08066E1C: .4byte vt_09F44FF0
-_08066E20: .4byte vt_09F7FB30
+_08066E1C: .4byte _vt.3Unk
+_08066E20: .4byte _vt.10UpKeyPress
 _08066E24: .4byte gUnknown_080FE1E0
-_08066E28: .4byte vt_09F7FAB0
-_08066E2C: .4byte vt_09F7FA30
+_08066E28: .4byte _vt.14UpKeyLongPress
+_08066E2C: .4byte _vt.12DownKeyPress
 _08066E30: .4byte gUnknown_080FE1E8
-_08066E34: .4byte vt_09F7F9B0
-_08066E38: .4byte vt_09F7F930
+_08066E34: .4byte _vt.16DownKeyLongPress
+_08066E38: .4byte _vt.12LeftKeyPress
 _08066E3C: .4byte gUnknown_080FE1F0
-_08066E40: .4byte vt_09F7F8B0
-_08066E44: .4byte vt_09F7F830
+_08066E40: .4byte _vt.16LeftKeyLongPress
+_08066E44: .4byte _vt.13RightKeyPress
 _08066E48: .4byte gUnknown_080FE1F8
-_08066E4C: .4byte vt_09F7F7B0
-_08066E50: .4byte vt_09F7F730
+_08066E4C: .4byte _vt.17RightKeyLongPress
+_08066E50: .4byte _vt.9AKeyPress
 _08066E54: .4byte gUnknown_080FE200
-_08066E58: .4byte vt_09F7F6B0
-_08066E5C: .4byte vt_09F7F630
+_08066E58: .4byte _vt.13AKeyLongPress
+_08066E5C: .4byte _vt.9BKeyPress
 _08066E60: .4byte gUnknown_080FE208
-_08066E64: .4byte vt_09F7F430
+_08066E64: .4byte _vt.9RKeyPress
 _08066E68: .4byte gUnknown_080FE210
 
 	thumb_func_start sub_08066E6C
@@ -2252,7 +2252,7 @@ sub_08067438: @ 0x08067438
 	movs r0, #1
 	rsbs r0, r0, #0
 	mov r8, r0
-	ldr r3, _080675D4 @ =vt_09F44F08
+	ldr r3, _080675D4 @ =_vt.1D
 	add r5, sp, #0x64
 	movs r6, #0xa
 _080674D6:
@@ -2286,7 +2286,7 @@ _080674D6:
 	ldr r0, _080675D8 @ =gUnknown_08CE39F8
 	movs r1, #1
 	rsbs r1, r1, #0
-	ldr r5, _080675D4 @ =vt_09F44F08
+	ldr r5, _080675D4 @ =_vt.1D
 	str r5, [sp, #0x18]
 	str r0, [sp, #0x10]
 	ldr r3, [sp, #0xbc]
@@ -2369,7 +2369,7 @@ _080674D6:
 	b _08067634
 	.align 2, 0
 _080675D0: .4byte vt_09F7E758
-_080675D4: .4byte vt_09F44F08
+_080675D4: .4byte _vt.1D
 _080675D8: .4byte gUnknown_08CE39F8
 _080675DC: .4byte vt_09F7E458
 _080675E0: .4byte 0x0000081C
@@ -2431,7 +2431,7 @@ _08067634:
 	mov r2, sl
 	ldr r3, [sp, #0xc0]
 	bl sub_0806D744
-	ldr r0, _08067A14 @ =vt_09F44F08
+	ldr r0, _08067A14 @ =_vt.1D
 	str r0, [sp, #0x60]
 	str r0, [sp, #0x54]
 	str r0, [sp, #0x48]
@@ -2811,7 +2811,7 @@ _08067954:
 	add r2, sp, #0x4c
 	add r3, sp, #0x58
 	bl sub_0806D9F4
-	ldr r0, _08067A14 @ =vt_09F44F08
+	ldr r0, _08067A14 @ =_vt.1D
 	str r0, [sp, #0x60]
 	str r0, [sp, #0x54]
 	str r0, [sp, #0x48]
@@ -2851,7 +2851,7 @@ _08067954:
 	.align 2, 0
 _08067A0C: .4byte 0x0000028F
 _08067A10: .4byte 0x00000286
-_08067A14: .4byte vt_09F44F08
+_08067A14: .4byte _vt.1D
 _08067A18: .4byte 0x000004B4
 _08067A1C: .4byte 0x000004BC
 _08067A20: .4byte 0x000004C4
@@ -2976,9 +2976,9 @@ _08067A40:
 	bl sub_08071F28
 	add r0, sp, #0x40
 	bl __4Base
-	ldr r0, _08067D3C @ =vt_09F44FF0
+	ldr r0, _08067D3C @ =_vt.3Unk
 	mov r8, r0
-	ldr r0, _08067D40 @ =vt_09F7FB30
+	ldr r0, _08067D40 @ =_vt.10UpKeyPress
 	str r0, [sp, #0x5c]
 	movs r1, #0xa9
 	lsls r1, r1, #4
@@ -2999,7 +2999,7 @@ _08067A40:
 	bl _._4Base
 	mov r0, sl
 	bl __4Base
-	ldr r0, _08067D48 @ =vt_09F7FAB0
+	ldr r0, _08067D48 @ =_vt.14UpKeyLongPress
 	str r0, [sp, #0x5c]
 	str r5, [sp]
 	adds r3, r4, #0
@@ -3014,7 +3014,7 @@ _08067A40:
 	bl _._4Base
 	mov r0, sl
 	bl __4Base
-	ldr r0, _08067D4C @ =vt_09F7FA30
+	ldr r0, _08067D4C @ =_vt.12DownKeyPress
 	str r0, [sp, #0x5c]
 	ldr r0, _08067D50 @ =gUnknown_080FE678
 	ldr r4, [r0]
@@ -3032,7 +3032,7 @@ _08067A40:
 	bl _._4Base
 	mov r0, sl
 	bl __4Base
-	ldr r0, _08067D54 @ =vt_09F7F9B0
+	ldr r0, _08067D54 @ =_vt.16DownKeyLongPress
 	str r0, [sp, #0x5c]
 	str r5, [sp]
 	adds r3, r4, #0
@@ -3047,7 +3047,7 @@ _08067A40:
 	bl _._4Base
 	mov r0, sl
 	bl __4Base
-	ldr r0, _08067D58 @ =vt_09F7F930
+	ldr r0, _08067D58 @ =_vt.12LeftKeyPress
 	str r0, [sp, #0x5c]
 	ldr r0, _08067D5C @ =gUnknown_080FE680
 	ldr r4, [r0]
@@ -3065,7 +3065,7 @@ _08067A40:
 	bl _._4Base
 	mov r0, sl
 	bl __4Base
-	ldr r0, _08067D60 @ =vt_09F7F8B0
+	ldr r0, _08067D60 @ =_vt.16LeftKeyLongPress
 	str r0, [sp, #0x5c]
 	str r5, [sp]
 	adds r3, r4, #0
@@ -3080,7 +3080,7 @@ _08067A40:
 	bl _._4Base
 	mov r0, sl
 	bl __4Base
-	ldr r0, _08067D64 @ =vt_09F7F830
+	ldr r0, _08067D64 @ =_vt.13RightKeyPress
 	str r0, [sp, #0x5c]
 	ldr r0, _08067D68 @ =gUnknown_080FE688
 	ldr r4, [r0]
@@ -3098,7 +3098,7 @@ _08067A40:
 	bl _._4Base
 	mov r0, sl
 	bl __4Base
-	ldr r0, _08067D6C @ =vt_09F7F7B0
+	ldr r0, _08067D6C @ =_vt.17RightKeyLongPress
 	str r0, [sp, #0x5c]
 	str r5, [sp]
 	adds r3, r4, #0
@@ -3113,7 +3113,7 @@ _08067A40:
 	bl _._4Base
 	mov r0, sl
 	bl __4Base
-	ldr r0, _08067D70 @ =vt_09F7F730
+	ldr r0, _08067D70 @ =_vt.9AKeyPress
 	str r0, [sp, #0x5c]
 	ldr r0, _08067D74 @ =gUnknown_080FE690
 	ldr r4, [r0]
@@ -3131,7 +3131,7 @@ _08067A40:
 	bl _._4Base
 	mov r0, sl
 	bl __4Base
-	ldr r0, _08067D78 @ =vt_09F7F6B0
+	ldr r0, _08067D78 @ =_vt.13AKeyLongPress
 	str r0, [sp, #0x5c]
 	str r5, [sp]
 	adds r3, r4, #0
@@ -3146,7 +3146,7 @@ _08067A40:
 	bl _._4Base
 	mov r0, sl
 	bl __4Base
-	ldr r0, _08067D7C @ =vt_09F7F630
+	ldr r0, _08067D7C @ =_vt.9BKeyPress
 	str r0, [sp, #0x5c]
 	ldr r0, _08067D80 @ =gUnknown_080FE698
 	ldr r3, [r0]
@@ -3163,7 +3163,7 @@ _08067A40:
 	bl _._4Base
 	mov r0, sl
 	bl __4Base
-	ldr r0, _08067D84 @ =vt_09F7F530
+	ldr r0, _08067D84 @ =_vt.9LKeyPress
 	str r0, [sp, #0x5c]
 	ldr r0, _08067D88 @ =gUnknown_080FE6A0
 	ldr r3, [r0]
@@ -3195,25 +3195,25 @@ _08067A40:
 _08067D30: .4byte 0x0000081C
 _08067D34: .4byte 0x00000958
 _08067D38: .4byte 0x000009F4
-_08067D3C: .4byte vt_09F44FF0
-_08067D40: .4byte vt_09F7FB30
+_08067D3C: .4byte _vt.3Unk
+_08067D40: .4byte _vt.10UpKeyPress
 _08067D44: .4byte gUnknown_080FE670
-_08067D48: .4byte vt_09F7FAB0
-_08067D4C: .4byte vt_09F7FA30
+_08067D48: .4byte _vt.14UpKeyLongPress
+_08067D4C: .4byte _vt.12DownKeyPress
 _08067D50: .4byte gUnknown_080FE678
-_08067D54: .4byte vt_09F7F9B0
-_08067D58: .4byte vt_09F7F930
+_08067D54: .4byte _vt.16DownKeyLongPress
+_08067D58: .4byte _vt.12LeftKeyPress
 _08067D5C: .4byte gUnknown_080FE680
-_08067D60: .4byte vt_09F7F8B0
-_08067D64: .4byte vt_09F7F830
+_08067D60: .4byte _vt.16LeftKeyLongPress
+_08067D64: .4byte _vt.13RightKeyPress
 _08067D68: .4byte gUnknown_080FE688
-_08067D6C: .4byte vt_09F7F7B0
-_08067D70: .4byte vt_09F7F730
+_08067D6C: .4byte _vt.17RightKeyLongPress
+_08067D70: .4byte _vt.9AKeyPress
 _08067D74: .4byte gUnknown_080FE690
-_08067D78: .4byte vt_09F7F6B0
-_08067D7C: .4byte vt_09F7F630
+_08067D78: .4byte _vt.13AKeyLongPress
+_08067D7C: .4byte _vt.9BKeyPress
 _08067D80: .4byte gUnknown_080FE698
-_08067D84: .4byte vt_09F7F530
+_08067D84: .4byte _vt.9LKeyPress
 _08067D88: .4byte gUnknown_080FE6A0
 
 	thumb_func_start sub_08067D8C
@@ -4494,10 +4494,10 @@ sub_08068770: @ 0x08068770
 	bl sub_0805D2A4
 	ldr r0, _080687A0 @ =vt_09F7EA80
 	str r0, [r4, #4]
-	ldr r0, _080687A4 @ =0x09C90960
+	ldr r0, _080687A4 @ =gUnknown_09C90960
 	movs r1, #1
 	rsbs r1, r1, #0
-	ldr r5, _080687A8 @ =vt_09F44F08
+	ldr r5, _080687A8 @ =_vt.1D
 	str r5, [sp, #8]
 	str r0, [sp]
 	str r1, [sp, #4]
@@ -4512,8 +4512,8 @@ sub_08068770: @ 0x08068770
 	bx r1
 	.align 2, 0
 _080687A0: .4byte vt_09F7EA80
-_080687A4: .4byte 0x09C90960
-_080687A8: .4byte vt_09F44F08
+_080687A4: .4byte gUnknown_09C90960
+_080687A8: .4byte _vt.1D
 
 	thumb_func_start sub_080687AC
 sub_080687AC: @ 0x080687AC

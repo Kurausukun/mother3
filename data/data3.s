@@ -106,9 +106,14 @@ gUnknown_08D1CE78:
 gUnknown_08D1EE78:
     .incbin "baserom.gba", 0x00D1EE78, 0xE470
 
-    .global gUnknown_08D2D2E8
-gUnknown_08D2D2E8:
-    .incbin "baserom.gba", 0x00D2D2E8, 0x1C
+gUnknown_08D2D2E8::
+    .4byte sub_0800B1FC+1
+    .4byte sub_0800B358+1
+    .4byte sub_0800B474+1
+    .4byte sub_0800B504+1
+    .4byte sub_0800B614+1
+    .4byte sub_0800B63C+1
+    .4byte sub_0800B660+1
 
     .global gUnknown_08D2D304
 gUnknown_08D2D304:
@@ -328,5 +333,70 @@ gUnknown_08F3C344:
 
     .global gUnknown_08F9003C
 gUnknown_08F9003C:
-    .incbin "baserom.gba", 0x00F9003C, 0xfb4ecc
+    .incbin "baserom.gba", 0x00F9003C, 0x1f1740
 
+    .global gUnknown_0918177C
+gUnknown_0918177C:
+    .incbin "baserom.gba", 0x0118177C, 0x17494
+
+    .global gUnknown_09198C10
+gUnknown_09198C10:
+    .incbin "baserom.gba", 0x01198C10, 0x1d1ae4
+
+    .global gUnknown_0936A6F4
+gUnknown_0936A6F4:
+    .incbin "baserom.gba", 0x0136A6F4, 0xc9688
+
+    .global gUnknown_09433D7C
+gUnknown_09433D7C:
+    .incbin "baserom.gba", 0x01433D7C, 0x2eec
+
+    .global gUnknown_09436C68
+gUnknown_09436C68:
+    .incbin "baserom.gba", 0x01436C68, 0x177c
+
+    .global gUnknown_094383E4
+gUnknown_094383E4:
+    .incbin "baserom.gba", 0x014383E4, 0x51384c
+
+    .global gUnknown_0994BC30
+gUnknown_0994BC30:
+    .incbin "baserom.gba", 0x0194BC30, 0xb5688
+
+    .global gUnknown_09A012B8
+gUnknown_09A012B8:
+    .incbin "baserom.gba", 0x01A012B8, 0x357e8
+
+    .global gUnknown_09A36AA0
+gUnknown_09A36AA0:
+    .incbin "baserom.gba", 0x01A36AA0, 0xbccf0
+
+    .global gUnknown_09AF3790
+gUnknown_09AF3790:
+    .incbin "baserom.gba", 0x01AF3790, 0x9c830
+
+    .global gUnknown_09B8FFC0
+gUnknown_09B8FFC0:
+    .incbin "baserom.gba", 0x01B8FFC0, 0x3ddcc
+
+    .global gUnknown_09BCDD8C
+gUnknown_09BCDD8C:
+    .incbin "baserom.gba", 0x01BCDD8C, 0x91fa0
+
+    .global gUnknown_09C5FD2C
+gUnknown_09C5FD2C:
+    .incbin "baserom.gba", 0x01C5FD2C, 0x2f664
+
+    .global gUnknown_09C8F390
+gUnknown_09C8F390:
+    .incbin "baserom.gba", 0x01C8F390, 0x15d0
+
+    .global gUnknown_09C90960
+gUnknown_09C90960:
+    .incbin "baserom.gba", 0x01C90960, 0x2b3e40
+
+gUnknown_09F447A0::
+    .incbin "baserom.gba", 0x01F447A0, 0x14
+
+gUnknown_09F447B4::
+    .incbin "baserom.gba", 0x01F447B4, 0x754
