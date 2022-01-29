@@ -17,7 +17,7 @@ SECTIONS
     {
         INCLUDE "sym_iwram.txt"
     }
-    
+
 	. = 0x08000000;
     .text :
 	ALIGN(4)
@@ -66,8 +66,10 @@ SECTIONS
         asm/monsterskill.o(.text);
         asm/psi.o(.text);
         asm/rom2d.o(.text);
-		asm/m4a_1.o(.text);
+
+        asm/m4a_1.o(.text);
         asm/libc.o(.text);
+
         *libc.a:libcfunc.o(.text);
         *libc.a:malloc.o(.text);
         *libc.a:mallocr.o(.text);
@@ -103,9 +105,10 @@ SECTIONS
         *libc.a:fstatr.o(.text);
         *libc.a:lseekr.o(.text);
         *libc.a:readr.o(.text);
+
         src/rom3.o(.text);
         asm/rom3a.o(.text);
-		asm/rom3.o(.text);
+        asm/rom3.o(.text);
         src/goods2.o(.text);
         asm/rom3b.o(.text);
         src/core/inst.o(.text);
@@ -116,9 +119,10 @@ SECTIONS
 	ALIGN(4)
     {
 
-        data/data1.o(.data);
-        data/data2.o(.data);
+        data/data1.o(.rodata);
+        data/data2.o(.rodata);
 
+        *libc.a:impure.o(.rodata);
         *libc.a:syscalls.o(.rodata);
         *libc.a:vfprintf.o(.rodata);
         *libc.a:dtoa.o(.rodata);
@@ -126,27 +130,16 @@ SECTIONS
         *libc.a:mprec.o(.rodata);
 
         data/data3.o(.data);
+
+        *libc.a:impure.o(.data);
+        *libc.a:mallocr.o(.data);
+        *libc.a:locale.o(.data);
+
         data/vtables.o(.data);
 
     } = 0
 
-    _impure_ptr = 0x09f44aac;
-
-    __malloc_av_ = 0x09f44ab0;
-    __malloc_top_pad = 0x09f44ebc;
-    __malloc_current_mallinfo = 0x09f44ecc;
-    __malloc_sbrk_base = 0x09f44ec0;
-    __malloc_trim_threshold = 0x09f44eb8;
-    __malloc_max_sbrked_mem = 0x09f44ec4;
-    __malloc_max_total_mem = 0x09f44ec8;
-
-    __mb_cur_max = 0x09f44ef4;
-
-    __mprec_tens = 0x08cdb398;
-    __mprec_bigtens = 0x08cdb460;
-
     endl__FR7ostream = 0;
-    _t24__default_alloc_template2b0i0._S_free_list = 0;
 
     ROM_END = .;
     

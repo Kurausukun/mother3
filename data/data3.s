@@ -399,4 +399,4 @@ gUnknown_09F447A0::
     .incbin "baserom.gba", 0x01F447A0, 0x14
 
 gUnknown_09F447B4::
-    .incbin "baserom.gba", 0x01F447B4, 0x754
+    .incbin "baserom.gba", 0x01F447B4, 0xc
