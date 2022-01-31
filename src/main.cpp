@@ -111,7 +111,6 @@ extern const char gUnknown_08CDB8A8[];
 extern u8 gUnknown_03000008;
 extern void* gUnknown_02015E38;
 
-
 extern "C" void AgbMain() {
     REG_WAITCNT = 0x45b4;
     REG_IE = 0x2000;
@@ -581,7 +580,7 @@ extern "C" void sub_08000D64(volatile u16 a) {
 
 extern "C" void sub_08000D88(void) {
     char* dest = (char*)0x03000000;
-    
+
     for (u16 i = 0; i < 8; ++i, ++dest) {
         u32 tmp = gUnknown_02004848.flags_u8._1;
         if (tmp) {
@@ -594,7 +593,7 @@ extern "C" void sub_08000D88(void) {
 
 extern "C" void sub_08000DC0() {
     char* dest = (char*)0x03000000;
-    
+
     for (u16 i = 0; i < 8; ++i, ++dest) {
         if (*dest != gUnknown_08CDB8A8[i]) {
             gUnknown_02004848.flags_u8._1 = 0;

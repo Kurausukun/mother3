@@ -101176,4 +101176,3 @@ vt_09F85EC8::
     .global gUnknown_09F85FA0
 gUnknown_08F9003C:
     .incbin "baserom.gba", 0x01F85FA0, 0x7a060
-
