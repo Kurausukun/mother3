@@ -8,7 +8,7 @@
 . = 0x00002B5C; gUnknown_03002B5C = .;
 . = 0x00002B60; gUnknown_03002B60 = .;
 . = 0x00002E60; gUnknown_03002E60 = .;
-. = 0x00002EF0; gUnknown_03002EF0 = .;
+. = 0x00002EF0; gIntrVector = .;
 . = 0x000036F0; gUnknown_030036F0 = .;
 . = 0x000038F0; gUnknown_030038F0 = .;
 . = 0x00003CF0; gUnknown_03003CF0 = .;

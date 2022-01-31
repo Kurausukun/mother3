@@ -19,7 +19,7 @@
 	bl sub_0805D210
 	bl makeInstance__10IrcManager
 	bl get__10IrcManager
-	ldr r1, _0805D558 @ =gUnknown_020051F0
+	ldr r1, _0805D558 @ =gIntrHandlers
 	bl init__3IrcP8IrqTable
 	bl makeInstance__12ClockManager
 	bl sub_0806FD80
@@ -73,7 +73,7 @@
 _0805D54C: .4byte _vt.6System
 _0805D550: .4byte gSave
 _0805D554: .4byte 0x00001111
-_0805D558: .4byte gUnknown_020051F0
+_0805D558: .4byte gIntrHandlers
 _0805D55C: .4byte _vt.3Unk
 _0805D560: .4byte _vt.8AppClock
 _0805D564: .4byte gUnknown_080F24D8

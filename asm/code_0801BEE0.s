@@ -64911,7 +64911,7 @@ sub_0803E304: @ 0x0803E304
 	ldr r0, _0803E348 @ =0x0000FFE7
 	ands r0, r1
 	strh r0, [r2]
-	ldr r0, _0803E34C @ =gUnknown_020051F0
+	ldr r0, _0803E34C @ =gIntrHandlers
 	ldr r1, _0803E350 @ =gUnknown_080C5FA0
 	movs r2, #0x38
 	bl memcpy
@@ -64928,7 +64928,7 @@ _0803E33C: .4byte 0x04000200
 _0803E340: .4byte 0x0000FFFC
 _0803E344: .4byte 0x04000004
 _0803E348: .4byte 0x0000FFE7
-_0803E34C: .4byte gUnknown_020051F0
+_0803E34C: .4byte gIntrHandlers
 _0803E350: .4byte gUnknown_080C5FA0
 _0803E354: .4byte gUnknown_03004B00
 
@@ -65148,7 +65148,7 @@ sub_0803E4B8: @ 0x0803E4B8
 	adds r1, r4, #0
 	orrs r0, r1
 	strh r0, [r2]
-	ldr r1, _0803E504 @ =gUnknown_020051F0
+	ldr r1, _0803E504 @ =gIntrHandlers
 	ldr r0, _0803E508 @ =sub_0803E3D8
 	str r0, [r1, #8]
 	movs r0, #1
@@ -65160,7 +65160,7 @@ sub_0803E4B8: @ 0x0803E4B8
 _0803E4F8: .4byte 0x04000208
 _0803E4FC: .4byte 0x04000200
 _0803E500: .4byte 0x04000004
-_0803E504: .4byte gUnknown_020051F0
+_0803E504: .4byte gIntrHandlers
 _0803E508: .4byte sub_0803E3D8
 
 	thumb_func_start sub_0803E50C
@@ -113793,7 +113793,7 @@ sub_080568F4: @ 0x080568F4
 	ldr r0, _08056938 @ =0x0000FFE7
 	ands r0, r1
 	strh r0, [r2]
-	ldr r0, _0805693C @ =gUnknown_020051F0
+	ldr r0, _0805693C @ =gIntrHandlers
 	ldr r1, _08056940 @ =gUnknown_080C7628
 	movs r2, #0x38
 	bl memcpy
@@ -113810,7 +113810,7 @@ _0805692C: .4byte 0x04000200
 _08056930: .4byte 0x0000FFFC
 _08056934: .4byte 0x04000004
 _08056938: .4byte 0x0000FFE7
-_0805693C: .4byte gUnknown_020051F0
+_0805693C: .4byte gIntrHandlers
 _08056940: .4byte gUnknown_080C7628
 _08056944: .4byte gUnknown_03004B00
 
@@ -117589,7 +117589,7 @@ sub_08058644: @ 0x08058644
 	ldr r0, _08058688 @ =0x0000FFE7
 	ands r0, r1
 	strh r0, [r2]
-	ldr r0, _0805868C @ =gUnknown_020051F0
+	ldr r0, _0805868C @ =gIntrHandlers
 	ldr r1, _08058690 @ =gUnknown_080C7668
 	movs r2, #0x38
 	bl memcpy
@@ -117606,7 +117606,7 @@ _0805867C: .4byte 0x04000200
 _08058680: .4byte 0x0000FFFC
 _08058684: .4byte 0x04000004
 _08058688: .4byte 0x0000FFE7
-_0805868C: .4byte gUnknown_020051F0
+_0805868C: .4byte gIntrHandlers
 _08058690: .4byte gUnknown_080C7668
 _08058694: .4byte gUnknown_03004B00
 
@@ -121356,7 +121356,7 @@ sub_0805A418: @ 0x0805A418
 	ldr r0, _0805A458 @ =0x0000FFE7
 	ands r0, r1
 	strh r0, [r2]
-	ldr r0, _0805A45C @ =gUnknown_020051F0
+	ldr r0, _0805A45C @ =gIntrHandlers
 	ldr r1, _0805A460 @ =gUnknown_080C7DB0
 	movs r2, #0x38
 	bl memcpy
@@ -121371,7 +121371,7 @@ _0805A44C: .4byte 0x04000200
 _0805A450: .4byte 0x0000FFFC
 _0805A454: .4byte 0x04000004
 _0805A458: .4byte 0x0000FFE7
-_0805A45C: .4byte gUnknown_020051F0
+_0805A45C: .4byte gIntrHandlers
 _0805A460: .4byte gUnknown_080C7DB0
 
 	thumb_func_start sub_0805A464
