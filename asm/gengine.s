@@ -250,8 +250,8 @@ _0806AB10:
 	adds r5, r0, #0
 	add r0, sp, #4
 	bl __4Base
-	ldr r6, _0806AB78 @ =vt_09F44FF0
-	ldr r0, _0806AB7C @ =vt_09F7EE20
+	ldr r6, _0806AB78 @ =_vt.3Unk
+	ldr r0, _0806AB7C @ =_vt.8SysClock
 	str r0, [sp, #0x20]
 	ldr r0, _0806AB80 @ =gUnknown_080FF19C
 	ldr r3, [r0]
@@ -276,8 +276,8 @@ _0806AB10:
 	bx r1
 	.align 2, 0
 _0806AB74: .4byte vt_09F7EF30
-_0806AB78: .4byte vt_09F44FF0
-_0806AB7C: .4byte vt_09F7EE20
+_0806AB78: .4byte _vt.3Unk
+_0806AB7C: .4byte _vt.8SysClock
 _0806AB80: .4byte gUnknown_080FF19C
 
 	thumb_func_start sub_0806AB84

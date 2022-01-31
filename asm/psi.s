@@ -105,7 +105,7 @@ sub_08082510: @ 0x08082510
 	add r4, sp, #4
 	adds r0, r4, #0
 	bl __4Base
-	ldr r0, _08082628 @ =vt_09F44FF0
+	ldr r0, _08082628 @ =_vt.3Unk
 	mov sb, r0
 	ldr r0, _0808262C @ =vt_09F455B0
 	str r0, [sp, #0x20]
@@ -195,7 +195,7 @@ sub_08082510: @ 0x08082510
 	.align 2, 0
 _08082620: .4byte vt_09F83810
 _08082624: .4byte gUnknown_080E1708
-_08082628: .4byte vt_09F44FF0
+_08082628: .4byte _vt.3Unk
 _0808262C: .4byte vt_09F455B0
 _08082630: .4byte gUnknown_0810C608
 _08082634: .4byte vt_09F454B0

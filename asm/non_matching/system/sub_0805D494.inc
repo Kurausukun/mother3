@@ -5,7 +5,7 @@
 	sub sp, #0x28
 	adds r5, r0, #0
 	bl __4Base
-	ldr r0, _0805D54C @ =vt_09F44F38
+	ldr r0, _0805D54C @ =_vt.6System
 	str r0, [r5, #0x1c]
 	ldr r0, _0805D550 @ =gSave
 	movs r1, #0x84
@@ -19,7 +19,7 @@
 	bl sub_0805D210
 	bl makeInstance__10IrcManager
 	bl get__10IrcManager
-	ldr r1, _0805D558 @ =gUnknown_020051F0
+	ldr r1, _0805D558 @ =gIntrHandlers
 	bl init__3IrcP8IrqTable
 	bl makeInstance__12ClockManager
 	bl sub_0806FD80
@@ -45,9 +45,9 @@
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
-	ldr r0, _0805D55C @ =vt_09F44FF0
+	ldr r0, _0805D55C @ =_vt.3Unk
 	mov r8, r0
-	ldr r0, _0805D560 @ =vt_09F7ED20
+	ldr r0, _0805D560 @ =_vt.8AppClock
 	str r0, [sp, #0x20]
 	ldr r0, _0805D564 @ =gUnknown_080F24D8
 	ldr r3, [r0]
@@ -70,11 +70,11 @@
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0805D54C: .4byte vt_09F44F38
+_0805D54C: .4byte _vt.6System
 _0805D550: .4byte gSave
 _0805D554: .4byte 0x00001111
-_0805D558: .4byte gUnknown_020051F0
-_0805D55C: .4byte vt_09F44FF0
-_0805D560: .4byte vt_09F7ED20
+_0805D558: .4byte gIntrHandlers
+_0805D55C: .4byte _vt.3Unk
+_0805D560: .4byte _vt.8AppClock
 _0805D564: .4byte gUnknown_080F24D8
     .syntax divided

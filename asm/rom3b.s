@@ -5256,7 +5256,7 @@ sub_080C0940: @ 0x080C0940
 	add r4, sp, #4
 	adds r0, r4, #0
 	bl __4Base
-	ldr r0, _080C0A00 @ =vt_09F44FF0
+	ldr r0, _080C0A00 @ =_vt.3Unk
 	mov r8, r0
 	ldr r0, _080C0A04 @ =vt_09F455B0
 	str r0, [sp, #0x20]
@@ -5324,7 +5324,7 @@ sub_080C0940: @ 0x080C0940
 	bx r1
 	.align 2, 0
 _080C09FC: .4byte vt_09F7DD98
-_080C0A00: .4byte vt_09F44FF0
+_080C0A00: .4byte _vt.3Unk
 _080C0A04: .4byte vt_09F455B0
 _080C0A08: .4byte gUnknown_080FB708
 _080C0A0C: .4byte vt_09F454B0
@@ -5350,7 +5350,7 @@ sub_080C0A20: @ 0x080C0A20
 	add r4, sp, #4
 	adds r0, r4, #0
 	bl __4Base
-	ldr r0, _080C0ADC @ =vt_09F44FF0
+	ldr r0, _080C0ADC @ =_vt.3Unk
 	mov r8, r0
 	ldr r0, _080C0AE0 @ =vt_09F455B0
 	str r0, [sp, #0x20]
@@ -5416,7 +5416,7 @@ sub_080C0A20: @ 0x080C0A20
 	bx r1
 	.align 2, 0
 _080C0AD8: .4byte vt_09F7DD98
-_080C0ADC: .4byte vt_09F44FF0
+_080C0ADC: .4byte _vt.3Unk
 _080C0AE0: .4byte vt_09F455B0
 _080C0AE4: .4byte gUnknown_080FB708
 _080C0AE8: .4byte vt_09F454B0

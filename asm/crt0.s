@@ -106,7 +106,7 @@ IntrMain_FoundIntr:
 	bic r3, r3, #0xdf
 	orr r3, r3, #0x1f
 	msr cpsr_fc, r3
-	ldr r1, _0800025C @ =gUnknown_020051F0
+	ldr r1, _0800025C @ =gIntrHandlers
 	add r1, r1, ip
 	ldr r0, [r1]
 	stmdb sp!, {lr}
@@ -126,7 +126,7 @@ _08000234:
 	strh r0, [r3, #2]
 	pop {r0, r1, r2, r3, lr}
 	msr spsr_fc, r0
-	ldr r1, _08000260 @ =gUnknown_020051F0
+	ldr r1, _08000260 @ =gIntrHandlers
 	add r1, r1, ip
 	ldr r0, [r1]
 	bx r0
@@ -134,5 +134,5 @@ _08000234:
 _08000250: .4byte gUnknown_03007FFC
 _08000254: .4byte AgbMain
 _08000258: .4byte 0x0000200A
-_0800025C: .4byte gUnknown_020051F0
-_08000260: .4byte gUnknown_020051F0
+_0800025C: .4byte gIntrHandlers
+_08000260: .4byte gIntrHandlers

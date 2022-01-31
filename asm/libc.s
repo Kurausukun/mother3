@@ -8144,12 +8144,12 @@ __default_terminate: @ 0x08093300
 	thumb_func_start __terminate
 __terminate: @ 0x08093308
 	push {lr}
-	ldr r0, _08093314 @ =0x09F447B8
+	ldr r0, _08093314 @ =gUnknown_09F447B8
 	ldr r0, [r0]
 	bl _call_via_r0
 	pop {pc}
 	.align 2, 0
-_08093314: .4byte 0x09F447B8
+_08093314: .4byte gUnknown_09F447B8
 
 	thumb_func_start __throw_type_match
 __throw_type_match: @ 0x08093318
@@ -8194,34 +8194,34 @@ _08093342:
 	thumb_func_start __get_eh_context
 __get_eh_context: @ 0x08093358
 	push {lr}
-	ldr r0, _08093364 @ =0x09F447BC
+	ldr r0, _08093364 @ =gUnknown_09F447BC
 	ldr r0, [r0]
 	bl _call_via_r0
 	pop {pc}
 	.align 2, 0
-_08093364: .4byte 0x09F447BC
+_08093364: .4byte gUnknown_09F447BC
 
 	thumb_func_start __get_eh_info
 __get_eh_info: @ 0x08093368
 	push {lr}
-	ldr r0, _08093378 @ =0x09F447BC
+	ldr r0, _08093378 @ =gUnknown_09F447BC
 	ldr r0, [r0]
 	bl _call_via_r0
 	adds r0, #8
 	pop {pc}
 	.align 2, 0
-_08093378: .4byte 0x09F447BC
+_08093378: .4byte gUnknown_09F447BC
 
 	thumb_func_start eh_context_initialize
 eh_context_initialize: @ 0x0809337C
 	push {lr}
-	ldr r1, _0809338C @ =0x09F447BC
+	ldr r1, _0809338C @ =gUnknown_09F447BC
 	ldr r0, _08093390 @ =eh_context_static
 	str r0, [r1]
 	bl _call_via_r0
 	pop {pc}
 	.align 2, 0
-_0809338C: .4byte 0x09F447BC
+_0809338C: .4byte gUnknown_09F447BC
 _08093390: .4byte eh_context_static
 
 	thumb_func_start eh_context_static
@@ -8251,13 +8251,13 @@ _080933C0: .4byte eh_context_s_top_elt
 	thumb_func_start __get_dynamic_handler_chain
 __get_dynamic_handler_chain: @ 0x080933C4
 	push {lr}
-	ldr r0, _080933D4 @ =0x09F447BC
+	ldr r0, _080933D4 @ =gUnknown_09F447BC
 	ldr r0, [r0]
 	bl _call_via_r0
 	adds r0, #4
 	pop {pc}
 	.align 2, 0
-_080933D4: .4byte 0x09F447BC
+_080933D4: .4byte gUnknown_09F447BC
 __sjthrow:
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
@@ -8267,7 +8267,7 @@ __sjthrow:
 	ldr r4, _08093430 @ =0xFFFFF9B0
 	add sp, r4
 	mov r7, sp
-	ldr r0, _08093434 @ =0x09F447BC
+	ldr r0, _08093434 @ =gUnknown_09F447BC
 	ldr r0, [r0]
 	bl _call_via_r0
 	movs r1, #0xc8
@@ -8304,7 +8304,7 @@ __sjthrow:
 	b _08093446
 	.align 2, 0
 _08093430: .4byte 0xFFFFF9B0
-_08093434: .4byte 0x09F447BC
+_08093434: .4byte gUnknown_09F447BC
 _08093438: .4byte 0x00000644
 _0809343C: .4byte 0x0000064C
 _08093440: .4byte _08093444
@@ -8403,7 +8403,7 @@ __sjpopnthrow: @ 0x080934E8
 	ldr r4, _08093538 @ =0xFFFFF9B4
 	add sp, r4
 	mov r7, sp
-	ldr r0, _0809353C @ =0x09F447BC
+	ldr r0, _0809353C @ =gUnknown_09F447BC
 	ldr r0, [r0]
 	bl _call_via_r0
 	adds r1, r0, #4
@@ -8436,7 +8436,7 @@ __sjpopnthrow: @ 0x080934E8
 	b _0809354A
 	.align 2, 0
 _08093538: .4byte 0xFFFFF9B4
-_0809353C: .4byte 0x09F447BC
+_0809353C: .4byte gUnknown_09F447BC
 _08093540: .4byte 0x00000644
 _08093544: .4byte _08093548
 _08093548:
@@ -8632,7 +8632,7 @@ _0809368E:
 sub_08093698: @ 0x08093698
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
-	ldr r5, _080936CC @ =0x09F44AAC
+	ldr r5, _080936CC @ =_impure_ptr
 	ldr r1, [r5]
 	movs r4, #0xa4
 	lsls r4, r4, #1
@@ -8657,7 +8657,7 @@ _080936B4:
 	rsbs r0, r0, #0
 	b _080936F0
 	.align 2, 0
-_080936CC: .4byte 0x09F44AAC
+_080936CC: .4byte _impure_ptr
 _080936D0:
 	movs r0, #0
 	str r0, [r3, #4]

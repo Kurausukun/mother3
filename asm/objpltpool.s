@@ -109,9 +109,9 @@ sub_0806C800: @ 0x0806C800
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
-	ldr r0, _0806C864 @ =vt_09F44FF0
+	ldr r0, _0806C864 @ =_vt.3Unk
 	mov r8, r0
-	ldr r0, _0806C868 @ =vt_09F7EE20
+	ldr r0, _0806C868 @ =_vt.8SysClock
 	str r0, [sp, #0x20]
 	ldr r0, _0806C86C @ =gUnknown_080FF664
 	ldr r3, [r0]
@@ -135,8 +135,8 @@ sub_0806C800: @ 0x0806C800
 	bx r1
 	.align 2, 0
 _0806C860: .4byte vt_09F7F130
-_0806C864: .4byte vt_09F44FF0
-_0806C868: .4byte vt_09F7EE20
+_0806C864: .4byte _vt.3Unk
+_0806C868: .4byte _vt.8SysClock
 _0806C86C: .4byte gUnknown_080FF664
 
 	thumb_func_start sub_0806C870

@@ -383,7 +383,7 @@ sub_0806F030: @ 0x0806F030
 	ldr r0, [r7, #0x30]
 	adds r0, #4
 	movs r1, #0x40
-	ldr r4, _0806F17C @ =vt_09F44F08
+	ldr r4, _0806F17C @ =_vt.1D
 	str r4, [sp, #0x24]
 	str r0, [sp, #0x1c]
 	str r1, [r2, #4]
@@ -443,7 +443,7 @@ _0806F14A:
 	b _0806F1A2
 	.align 2, 0
 _0806F178: .4byte vt_09F80238
-_0806F17C: .4byte vt_09F44F08
+_0806F17C: .4byte _vt.1D
 _0806F180:
 	movs r0, #0x38
 	bl __builtin_new
@@ -464,8 +464,8 @@ _0806F1A2:
 	adds r5, r0, #0
 	add r0, sp, #4
 	bl __4Base
-	ldr r6, _0806F1E0 @ =vt_09F44FF0
-	ldr r0, _0806F1E4 @ =vt_09F7ED20
+	ldr r6, _0806F1E0 @ =_vt.3Unk
+	ldr r0, _0806F1E4 @ =_vt.8AppClock
 	str r0, [sp, #0x20]
 	ldr r0, _0806F1E8 @ =gUnknown_081006B4
 	ldr r3, [r0]
@@ -488,8 +488,8 @@ _0806F1A2:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0806F1E0: .4byte vt_09F44FF0
-_0806F1E4: .4byte vt_09F7ED20
+_0806F1E0: .4byte _vt.3Unk
+_0806F1E4: .4byte _vt.8AppClock
 _0806F1E8: .4byte gUnknown_081006B4
 
 	thumb_func_start sub_0806F1EC
@@ -1017,9 +1017,9 @@ sub_0806F56C: @ 0x0806F56C
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
-	ldr r0, _0806F5E0 @ =vt_09F44FF0
+	ldr r0, _0806F5E0 @ =_vt.3Unk
 	mov r8, r0
-	ldr r0, _0806F5E4 @ =vt_09F7ED20
+	ldr r0, _0806F5E4 @ =_vt.8AppClock
 	str r0, [sp, #0x20]
 	ldr r0, _0806F5E8 @ =gUnknown_081017FC
 	ldr r3, [r0]
@@ -1043,8 +1043,8 @@ sub_0806F56C: @ 0x0806F56C
 	bx r1
 	.align 2, 0
 _0806F5DC: .4byte vt_09F80340
-_0806F5E0: .4byte vt_09F44FF0
-_0806F5E4: .4byte vt_09F7ED20
+_0806F5E0: .4byte _vt.3Unk
+_0806F5E4: .4byte _vt.8AppClock
 _0806F5E8: .4byte gUnknown_081017FC
 
 	thumb_func_start sub_0806F5EC
@@ -1365,9 +1365,9 @@ sub_0806F7EC: @ 0x0806F7EC
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
-	ldr r0, _0806F890 @ =vt_09F44FF0
+	ldr r0, _0806F890 @ =_vt.3Unk
 	mov r8, r0
-	ldr r0, _0806F894 @ =vt_09F7ED20
+	ldr r0, _0806F894 @ =_vt.8AppClock
 	str r0, [sp, #0x20]
 	ldr r0, _0806F898 @ =gUnknown_08101944
 	ldr r3, [r0]
@@ -1392,8 +1392,8 @@ sub_0806F7EC: @ 0x0806F7EC
 	.align 2, 0
 _0806F888: .4byte vt_09F803D8
 _0806F88C: .4byte 0xFFFF0000
-_0806F890: .4byte vt_09F44FF0
-_0806F894: .4byte vt_09F7ED20
+_0806F890: .4byte _vt.3Unk
+_0806F894: .4byte _vt.8AppClock
 _0806F898: .4byte gUnknown_08101944
 
 	thumb_func_start sub_0806F89C
@@ -1538,9 +1538,9 @@ sub_0806F97C: @ 0x0806F97C
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
-	ldr r0, _0806F9F4 @ =vt_09F44FF0
+	ldr r0, _0806F9F4 @ =_vt.3Unk
 	mov r8, r0
-	ldr r0, _0806F9F8 @ =vt_09F7ED20
+	ldr r0, _0806F9F8 @ =_vt.8AppClock
 	str r0, [sp, #0x20]
 	ldr r0, _0806F9FC @ =gUnknown_08101A8C
 	ldr r3, [r0]
@@ -1564,8 +1564,8 @@ sub_0806F97C: @ 0x0806F97C
 	bx r1
 	.align 2, 0
 _0806F9F0: .4byte vt_09F80470
-_0806F9F4: .4byte vt_09F44FF0
-_0806F9F8: .4byte vt_09F7ED20
+_0806F9F4: .4byte _vt.3Unk
+_0806F9F8: .4byte _vt.8AppClock
 _0806F9FC: .4byte gUnknown_08101A8C
 
 	thumb_func_start sub_0806FA00

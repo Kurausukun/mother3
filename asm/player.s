@@ -51,7 +51,7 @@ sub_08077F34: @ 0x08077F34
 	mov r1, sb
 	add r2, sp, #4
 	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
-	ldr r0, _080781CC @ =vt_09F44FF0
+	ldr r0, _080781CC @ =_vt.3Unk
 	str r0, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -70,7 +70,7 @@ sub_08077F34: @ 0x08077F34
 	mov r1, sb
 	add r2, sp, #4
 	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
-	ldr r1, _080781CC @ =vt_09F44FF0
+	ldr r1, _080781CC @ =_vt.3Unk
 	str r1, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -89,7 +89,7 @@ sub_08077F34: @ 0x08077F34
 	mov r1, sb
 	add r2, sp, #4
 	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
-	ldr r0, _080781CC @ =vt_09F44FF0
+	ldr r0, _080781CC @ =_vt.3Unk
 	str r0, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -109,7 +109,7 @@ sub_08077F34: @ 0x08077F34
 	mov r1, sb
 	add r2, sp, #4
 	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
-	ldr r1, _080781CC @ =vt_09F44FF0
+	ldr r1, _080781CC @ =_vt.3Unk
 	str r1, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -128,7 +128,7 @@ sub_08077F34: @ 0x08077F34
 	mov r1, sb
 	add r2, sp, #4
 	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
-	ldr r0, _080781CC @ =vt_09F44FF0
+	ldr r0, _080781CC @ =_vt.3Unk
 	str r0, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -147,7 +147,7 @@ sub_08077F34: @ 0x08077F34
 	mov r1, sb
 	add r2, sp, #4
 	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
-	ldr r1, _080781CC @ =vt_09F44FF0
+	ldr r1, _080781CC @ =_vt.3Unk
 	str r1, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -171,7 +171,7 @@ sub_08077F34: @ 0x08077F34
 	mov r1, sb
 	add r2, sp, #4
 	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
-	ldr r0, _080781CC @ =vt_09F44FF0
+	ldr r0, _080781CC @ =_vt.3Unk
 	str r0, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -190,7 +190,7 @@ sub_08077F34: @ 0x08077F34
 	mov r1, sb
 	add r2, sp, #4
 	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
-	ldr r1, _080781CC @ =vt_09F44FF0
+	ldr r1, _080781CC @ =_vt.3Unk
 	str r1, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -209,7 +209,7 @@ sub_08077F34: @ 0x08077F34
 	mov r1, sb
 	add r2, sp, #4
 	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
-	ldr r0, _080781CC @ =vt_09F44FF0
+	ldr r0, _080781CC @ =_vt.3Unk
 	str r0, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -229,7 +229,7 @@ sub_08077F34: @ 0x08077F34
 	mov r1, sb
 	add r2, sp, #4
 	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
-	ldr r1, _080781CC @ =vt_09F44FF0
+	ldr r1, _080781CC @ =_vt.3Unk
 	str r1, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -248,7 +248,7 @@ sub_08077F34: @ 0x08077F34
 	mov r1, sb
 	add r2, sp, #4
 	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
-	ldr r0, _080781CC @ =vt_09F44FF0
+	ldr r0, _080781CC @ =_vt.3Unk
 	str r0, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -267,7 +267,7 @@ sub_08077F34: @ 0x08077F34
 	mov r1, sb
 	add r2, sp, #4
 	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
-	ldr r1, _080781CC @ =vt_09F44FF0
+	ldr r1, _080781CC @ =_vt.3Unk
 	str r1, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -285,7 +285,7 @@ sub_08077F34: @ 0x08077F34
 _080781C0: .4byte vt_09F81DD0
 _080781C4: .4byte vt_09F818D0
 _080781C8: .4byte gUnknown_08107DB0
-_080781CC: .4byte vt_09F44FF0
+_080781CC: .4byte _vt.3Unk
 _080781D0: .4byte vt_09F81850
 _080781D4: .4byte vt_09F817D0
 _080781D8: .4byte gUnknown_08107DB8
@@ -5391,7 +5391,7 @@ sub_0807A904: @ 0x0807A904
 	add r4, sp, #4
 	adds r0, r4, #0
 	bl __4Base
-	ldr r0, _0807AAC8 @ =vt_09F44FF0
+	ldr r0, _0807AAC8 @ =_vt.3Unk
 	mov sb, r0
 	ldr r0, _0807AACC @ =vt_09F455B0
 	str r0, [sp, #0x20]
@@ -5482,7 +5482,7 @@ _0807AAB8: .4byte vt_09F820E8
 _0807AABC: .4byte gUnknown_02004110
 _0807AAC0: .4byte gUnknown_080CC4E8
 _0807AAC4: .4byte 0x0000020A
-_0807AAC8: .4byte vt_09F44FF0
+_0807AAC8: .4byte _vt.3Unk
 _0807AACC: .4byte vt_09F455B0
 _0807AAD0: .4byte gUnknown_08108440
 _0807AAD4: .4byte vt_09F45530

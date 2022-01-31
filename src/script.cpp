@@ -2,10 +2,6 @@
 #include "functions.h"
 
 extern "C" {
-
-extern ItemData gItemData[];
-extern CharData gUnknown_02004110[];
-
 extern u32 gUnknown_03005314;
 extern u8 gUnknown_02005080;
 extern u8 gUnknown_080C1FF0[];

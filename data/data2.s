@@ -1,4 +1,4 @@
-    .section .data
+    .section .rodata
 
     .global gUnknown_080FEC68
 gUnknown_080FEC68:
@@ -858,4 +858,4 @@ gUnknown_08120E94:
 
     .global gUnknown_08CDB134
 gUnknown_08CDB134:
-    .incbin "baserom.gba", 0x00CDB134, 0x164
+    .incbin "baserom.gba", 0x00CDB134, 0x160

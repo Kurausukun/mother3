@@ -51,12 +51,12 @@ NAKED void guest_sinit() {
 	ldr r4, _08062204 @ =gUnknown_02002318\n\
 	adds r0, r4, #0\n\
 	bl __9Singleton\n\
-	ldr r0, _08062208 @ =0x09F4BD38\n\
+	ldr r0, _08062208 @ =vt_09F4BD38\n\
 	str r0, [r4, #8]\n\
 	pop {r4}\n\
 	pop {r0}\n\
 	bx r0\n\
 	.align 2, 0\n\
 _08062204: .4byte gUnknown_02002318\n\
-_08062208: .4byte 0x09F4BD38\n");
+_08062208: .4byte vt_09F4BD38\n");
 }
