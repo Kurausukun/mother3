@@ -13134,7 +13134,7 @@ vt_09F4D600::
 	.4byte sub_080A0B90
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080790
+	.4byte getInstance__10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -13293,91 +13293,91 @@ vt_09F4D600::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080807F0
+	.4byte skill_1c0__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080804
+	.4byte getID__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808080C
+	.4byte skill_1d0__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808083C
+	.4byte skill_1d8__10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808084C
+	.4byte skill_1e0__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080850
+	.4byte getEffect__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080858
+	.4byte getElement__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080860
+	.4byte getTarget__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080868
+	.4byte getAttackMult__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080870
+	.4byte getHealLo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080878
+	.4byte getHealHi__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080880
+	.4byte getAilment__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080888
+	.4byte getAilmentChance__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080890
+	.4byte hasAction__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080808A0
+	.4byte getPriority__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A0B54
 	.2byte 0
 	.2byte 0
-	.4byte sub_080808D0
+	.4byte skill_240__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080808F8
+	.4byte getTextBank__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808090C
+	.4byte getTextNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080914
+	.4byte getAnimBank__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808091C
+	.4byte getNextAnim__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080960
+	.4byte getAnimNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A0D48
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080974
+	.4byte getSfxNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808097C
+	.4byte canMiss__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080990
+	.4byte skill_288__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080994
+	.4byte skill_290__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080998
+	.4byte skill_298__10GuestSkill
 
 vt_09F4D8A0::
 	.2byte 0
@@ -13388,7 +13388,7 @@ vt_09F4D8A0::
 	.4byte sub_080A0BCC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080790
+	.4byte getInstance__10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -13547,91 +13547,91 @@ vt_09F4D8A0::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080807F0
+	.4byte skill_1c0__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080804
+	.4byte getID__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808080C
+	.4byte skill_1d0__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808083C
+	.4byte skill_1d8__10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808084C
+	.4byte skill_1e0__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080850
+	.4byte getEffect__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080858
+	.4byte getElement__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080860
+	.4byte getTarget__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080868
+	.4byte getAttackMult__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080870
+	.4byte getHealLo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080878
+	.4byte getHealHi__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080880
+	.4byte getAilment__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080888
+	.4byte getAilmentChance__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080890
+	.4byte hasAction__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080808A0
+	.4byte getPriority__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080808A8
+	.4byte skill_238__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080808D0
+	.4byte skill_240__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080808F8
+	.4byte getTextBank__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808090C
+	.4byte getTextNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080914
+	.4byte getAnimBank__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808091C
+	.4byte getNextAnim__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080960
+	.4byte getAnimNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A0D48
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080974
+	.4byte getSfxNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808097C
+	.4byte canMiss__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080990
+	.4byte skill_288__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080994
+	.4byte skill_290__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080998
+	.4byte skill_298__10GuestSkill
 
 vt_09F4DB40::
 	.2byte 0
@@ -13642,7 +13642,7 @@ vt_09F4DB40::
 	.4byte sub_080A0C18
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080790
+	.4byte getInstance__10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -13801,91 +13801,91 @@ vt_09F4DB40::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080807F0
+	.4byte skill_1c0__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080804
+	.4byte getID__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808080C
+	.4byte skill_1d0__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808083C
+	.4byte skill_1d8__10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808084C
+	.4byte skill_1e0__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080850
+	.4byte getEffect__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080858
+	.4byte getElement__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080860
+	.4byte getTarget__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080868
+	.4byte getAttackMult__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080870
+	.4byte getHealLo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080878
+	.4byte getHealHi__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080880
+	.4byte getAilment__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080888
+	.4byte getAilmentChance__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080890
+	.4byte hasAction__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080808A0
+	.4byte getPriority__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080808A8
+	.4byte skill_238__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080808D0
+	.4byte skill_240__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080808F8
+	.4byte getTextBank__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808090C
+	.4byte getTextNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080914
+	.4byte getAnimBank__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808091C
+	.4byte getNextAnim__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080960
+	.4byte getAnimNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A0D48
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080974
+	.4byte getSfxNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808097C
+	.4byte canMiss__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080990
+	.4byte skill_288__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080994
+	.4byte skill_290__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080998
+	.4byte skill_298__10GuestSkill
 
 vt_09F4DDE0::
 	.2byte 0
@@ -13896,7 +13896,7 @@ vt_09F4DDE0::
 	.4byte sub_080A0D34
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080790
+	.4byte getInstance__10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -14055,91 +14055,91 @@ vt_09F4DDE0::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080807F0
+	.4byte skill_1c0__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080804
+	.4byte getID__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808080C
+	.4byte skill_1d0__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808083C
+	.4byte skill_1d8__10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808084C
+	.4byte skill_1e0__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080850
+	.4byte getEffect__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080858
+	.4byte getElement__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080860
+	.4byte getTarget__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080868
+	.4byte getAttackMult__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080870
+	.4byte getHealLo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080878
+	.4byte getHealHi__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080880
+	.4byte getAilment__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080888
+	.4byte getAilmentChance__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080890
+	.4byte hasAction__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080808A0
+	.4byte getPriority__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080808A8
+	.4byte skill_238__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080808D0
+	.4byte skill_240__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080808F8
+	.4byte getTextBank__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808090C
+	.4byte getTextNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080914
+	.4byte getAnimBank__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808091C
+	.4byte getNextAnim__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080960
+	.4byte getAnimNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A0D48
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080974
+	.4byte getSfxNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808097C
+	.4byte canMiss__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080990
+	.4byte skill_288__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080994
+	.4byte skill_290__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080998
+	.4byte skill_298__10GuestSkill
 
 vt_09F4E080::
 	.2byte 0
@@ -14150,7 +14150,7 @@ vt_09F4E080::
 	.4byte sub_080A0DD0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080790
+	.4byte getInstance__10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -14309,91 +14309,91 @@ vt_09F4E080::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080807F0
+	.4byte skill_1c0__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080804
+	.4byte getID__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808080C
+	.4byte skill_1d0__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808083C
+	.4byte skill_1d8__10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808084C
+	.4byte skill_1e0__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080850
+	.4byte getEffect__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080858
+	.4byte getElement__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080860
+	.4byte getTarget__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080868
+	.4byte getAttackMult__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080870
+	.4byte getHealLo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080878
+	.4byte getHealHi__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080880
+	.4byte getAilment__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080888
+	.4byte getAilmentChance__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080890
+	.4byte hasAction__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080808A0
+	.4byte getPriority__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080808A8
+	.4byte skill_238__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080808D0
+	.4byte skill_240__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080808F8
+	.4byte getTextBank__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808090C
+	.4byte getTextNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080914
+	.4byte getAnimBank__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808091C
+	.4byte getNextAnim__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080960
+	.4byte getAnimNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A0D48
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080974
+	.4byte getSfxNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808097C
+	.4byte canMiss__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080990
+	.4byte skill_288__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080994
+	.4byte skill_290__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080998
+	.4byte skill_298__10GuestSkill
 
 vt_09F4E320::
 	.2byte 0
@@ -94707,7 +94707,7 @@ vt_09F81DD0::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080781E0
+	.4byte _._5Skill
 	.2byte 0
 	.2byte 0
 	.4byte getInstance__4Base
@@ -96171,16 +96171,16 @@ vt_09F82CC8::
 	.2byte 0
 	.4byte sub_080C16B0
 
-vt_09F82CE0::
+_vt.10GuestSkill::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080807DC
+	.4byte _._10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080790
+	.4byte getInstance__10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -96339,93 +96339,93 @@ vt_09F82CE0::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080807F0
+	.4byte skill_1c0__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080804
+	.4byte getID__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808080C
+	.4byte skill_1d0__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808083C
+	.4byte skill_1d8__10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808084C
+	.4byte skill_1e0__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080850
+	.4byte getEffect__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080858
+	.4byte getElement__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080860
+	.4byte getTarget__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080868
+	.4byte getAttackMult__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080870
+	.4byte getHealLo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080878
+	.4byte getHealHi__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080880
+	.4byte getAilment__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080888
+	.4byte getAilmentChance__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080890
+	.4byte hasAction__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080808A0
+	.4byte getPriority__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080808A8
+	.4byte skill_238__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080808D0
+	.4byte skill_240__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080808F8
+	.4byte getTextBank__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808090C
+	.4byte getTextNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080914
+	.4byte getAnimBank__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808091C
+	.4byte getNextAnim__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080960
+	.4byte getAnimNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080968
+	.4byte getSfxBank__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080974
+	.4byte getSfxNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808097C
+	.4byte canMiss__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080990
+	.4byte skill_288__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080994
+	.4byte skill_290__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080998
+	.4byte skill_298__10GuestSkill
 
-vt_09F82F80::
+_vt.19GuestSkillSingleton::
 	.2byte 0
 	.2byte 0
 	.4byte 0

@@ -3,8 +3,8 @@
 .syntax unified
 .section .text
 
-	thumb_func_start sub_08077F34
-sub_08077F34: @ 0x08077F34
+	thumb_func_start __5SkillUi
+__5SkillUi: @ 0x08077F34
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -291,8 +291,8 @@ _080781D4: .4byte vt_09F817D0
 _080781D8: .4byte gUnknown_08107DB8
 _080781DC: .4byte vt_09F81750
 
-	thumb_func_start sub_080781E0
-sub_080781E0: @ 0x080781E0
+	thumb_func_start _._5Skill
+_._5Skill: @ 0x080781E0
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0

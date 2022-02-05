@@ -60,7 +60,6 @@ SECTIONS
         src/skill.o(.text);
         asm/player.o(.text);
         asm/playerskill.o(.text);
-        asm/guestskill.o(.text);
         src/guestskill.o(.text);
         asm/monster.o(.text);
         asm/monsterskill.o(.text);

@@ -1185,7 +1185,7 @@ sub_080A0AC8: @ 0x080A0AC8
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_080807AC
+	bl __10GuestSkillUsUi
 	ldr r0, _080A0AE0 @ =vt_09F4D600
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -1201,7 +1201,7 @@ sub_080A0AE4: @ 0x080A0AE4
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_080807AC
+	bl __10GuestSkillUsUi
 	ldr r0, _080A0AFC @ =vt_09F4D8A0
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -1217,7 +1217,7 @@ sub_080A0B00: @ 0x080A0B00
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_080807AC
+	bl __10GuestSkillUsUi
 	ldr r0, _080A0B18 @ =vt_09F4DB40
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -1233,7 +1233,7 @@ sub_080A0B1C: @ 0x080A0B1C
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_080807AC
+	bl __10GuestSkillUsUi
 	ldr r0, _080A0B34 @ =vt_09F4DDE0
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -1249,7 +1249,7 @@ sub_080A0B38: @ 0x080A0B38
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_080807AC
+	bl __10GuestSkillUsUi
 	ldr r0, _080A0B50 @ =vt_09F4E080
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -1294,7 +1294,7 @@ sub_080A0B90: @ 0x080A0B90
 	push {lr}
 	ldr r2, _080A0BA0 @ =vt_09F4E080
 	str r2, [r0, #0x1c]
-	bl sub_080807DC
+	bl _._10GuestSkill
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -1328,7 +1328,7 @@ sub_080A0BCC: @ 0x080A0BCC
 	push {lr}
 	ldr r2, _080A0BDC @ =vt_09F4E080
 	str r2, [r0, #0x1c]
-	bl sub_080807DC
+	bl _._10GuestSkill
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -1368,7 +1368,7 @@ sub_080A0C18: @ 0x080A0C18
 	push {lr}
 	ldr r2, _080A0C28 @ =vt_09F4E080
 	str r2, [r0, #0x1c]
-	bl sub_080807DC
+	bl _._10GuestSkill
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -1506,7 +1506,7 @@ sub_080A0D34: @ 0x080A0D34
 	push {lr}
 	ldr r2, _080A0D44 @ =vt_09F4E080
 	str r2, [r0, #0x1c]
-	bl sub_080807DC
+	bl _._10GuestSkill
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -1516,7 +1516,7 @@ _080A0D44: .4byte vt_09F4E080
 sub_080A0D48: @ 0x080A0D48
 	push {r4, r5, lr}
 	adds r4, r0, #0
-	bl sub_08080968
+	bl getSfxBank__C10GuestSkill
 	adds r5, r0, #0
 	cmp r5, #0x63
 	bgt _080A0DC6
@@ -1584,7 +1584,7 @@ sub_080A0DD0: @ 0x080A0DD0
 	push {lr}
 	ldr r2, _080A0DE0 @ =vt_09F4E080
 	str r2, [r0, #0x1c]
-	bl sub_080807DC
+	bl _._10GuestSkill
 	pop {r0}
 	bx r0
 	.align 2, 0

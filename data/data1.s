@@ -605,8 +605,8 @@ gUnknown_080CF228:
 gUnknown_080CF728:
     .incbin "baserom.gba", 0x000CF728, 0xB00
 
-    .global gUnknown_080D0228
-gUnknown_080D0228:
+    .global gGuestSkillInfo
+gGuestSkillInfo:
     .incbin "baserom.gba", 0x000D0228, 0xB00
 
     .global gUnknown_080D0D28

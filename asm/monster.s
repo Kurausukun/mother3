@@ -18,14 +18,14 @@ sub_080809B8: @ 0x080809B8
 	str r0, [r4, #0x34]
 	str r0, [r1, #4]
 	str r0, [r1, #8]
-	ldr r0, _080809E0 @ =vt_09F82CE0
+	ldr r0, _080809E0 @ =_vt.10GuestSkill
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
 	pop {r4}
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080809E0: .4byte vt_09F82CE0
+_080809E0: .4byte _vt.10GuestSkill
 
 	thumb_func_start sub_080809E4
 sub_080809E4: @ 0x080809E4
