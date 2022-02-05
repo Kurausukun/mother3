@@ -1,6 +1,6 @@
 def apply(config, args):
-    config["baseimg"] = "test.o"
-    config["myimg"] = "test.o"
+    config["baseimg"] = "baserom.gba"
+    config["myimg"] = "mother3.gba"
     config["mapfile"] = "mother3.map"
     config["source_directories"] = ["."]
     # config["show_line_numbers_default"] = True

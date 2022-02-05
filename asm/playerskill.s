@@ -7818,7 +7818,7 @@ sub_080803F4: @ 0x080803F4
 	adds r1, r2, #0
 	lsls r4, r4, #0x10
 	lsrs r4, r4, #0x10
-	bl sub_08077F34
+	bl __5SkillUi
 	ldr r0, _0808041C @ =vt_09F82A28
 	str r0, [r5, #0x1c]
 	movs r0, #0x2c
@@ -7839,7 +7839,7 @@ sub_08080424: @ 0x08080424
 	push {lr}
 	ldr r2, _08080434 @ =vt_09F82A28
 	str r2, [r0, #0x1c]
-	bl sub_080781E0
+	bl _._5Skill
 	pop {r0}
 	bx r0
 	.align 2, 0
