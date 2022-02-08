@@ -101,7 +101,11 @@ _0808F994: .4byte 0x68736D53
 
 	thumb_func_start sub_0808F998
 sub_0808F998: @ 0x0808F998
+.ifdef DISABLE_M4A
+	bx lr
+.else
 	push {r4, r5, r6, lr}
+.endif
 	ldr r0, _0808F9EC @ =SoundMainRAM
 	movs r1, #2
 	rsbs r1, r1, #0
@@ -1182,7 +1186,11 @@ _080901F8: .4byte MPlayMain
 
 	thumb_func_start sub_080901FC
 sub_080901FC: @ 0x080901FC
+.ifdef DISABLE_M4A
+	bx lr
+.else
 	push {r4, r5, r6, r7, lr}
+.endif
 	mov r7, r8
 	push {r7}
 	adds r5, r0, #0

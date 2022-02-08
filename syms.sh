@@ -2,7 +2,7 @@
 # output is mangled name
 
 function searchfor() {
-    for file in build/mother3/**/*.o
+    for file in `find ./build/mother3 -name "*.o"`
     do
         nm $file | cut -d' ' -f3 | sed 's/\(.*\)/\1\n/' | sed '/^$/d' | grep $1
     done
