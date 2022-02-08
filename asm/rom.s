@@ -577,15 +577,15 @@ _08001706:
 	ldrh r0, [r1, #2]
 	cmp r0, #0xf
 	bne _08001710
-	bl sub_08001718
+	bl DoReset
 _08001710:
 	pop {r0}
 	bx r0
 	.align 2, 0
 _08001714: .4byte gUnknown_02004848
 
-	thumb_func_start sub_08001718
-sub_08001718: @ 0x08001718
+	thumb_func_start DoReset
+DoReset: @ 0x08001718
 	push {lr}
 	bl sub_0808FB50
 	bl sub_0808FA10
@@ -1433,7 +1433,7 @@ sub_08001D2C: @ 0x08001D2C
 	push {lr}
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
-	ldr r2, _08001D4C @ =gUnknown_080CC4E8
+	ldr r2, _08001D4C @ =gLevelInfo
 	lsls r1, r0, #2
 	adds r1, r1, r0
 	lsls r1, r1, #4
@@ -1447,7 +1447,7 @@ sub_08001D2C: @ 0x08001D2C
 	movs r0, #1
 	b _08001D52
 	.align 2, 0
-_08001D4C: .4byte gUnknown_080CC4E8
+_08001D4C: .4byte gLevelInfo
 _08001D50:
 	movs r0, #0
 _08001D52:
@@ -13954,7 +13954,7 @@ _08008138:
 	adds r6, r0, #0
 _0800814A:
 	adds r0, r4, #0
-	bl get_char_data
+	bl get_guest_stats
 	adds r1, r0, #0
 	ldrb r0, [r1]
 	cmp r0, #0

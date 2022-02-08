@@ -41,8 +41,8 @@ gUnknown_080C1A58::
     .word nullsub_60+1
     .word nullsub_60+1
 
-    .global gUnknown_080C1A90
-gUnknown_080C1A90:
+    .global gDirectionTable
+gDirectionTable:
     .incbin "baserom.gba", 0x000C1A90, 0x90
 
     .global gUnknown_080C1B20
@@ -585,8 +585,8 @@ gUnknown_080C7FE8:
 gUnknown_080CBFE8:
     .incbin "baserom.gba", 0x000CBFE8, 0x500
 
-    .global gUnknown_080CC4E8
-gUnknown_080CC4E8:
+    .global gLevelInfo
+gLevelInfo:
     .incbin "baserom.gba", 0x000CC4E8, 0x4
 
     .global gUnknown_080CC4EC
@@ -609,8 +609,8 @@ gUnknown_080CF728:
 gGuestSkillInfo:
     .incbin "baserom.gba", 0x000D0228, 0xB00
 
-    .global gUnknown_080D0D28
-gUnknown_080D0D28:
+    .global gEnemyData
+gEnemyData:
     .incbin "baserom.gba", 0x000D0D28, 0x9000
 
     .global gUnknown_080D9D28

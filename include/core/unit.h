@@ -14,17 +14,18 @@ inline s32 clampS32(s32 value, s32 min, s32 max) {
 struct Object {
     virtual ~Object() {}
 
+    virtual void object_8() {}
     virtual void object_10() = 0;
     virtual void object_18() = 0;
     virtual void object_20() = 0;
     virtual void object_28() = 0;
-    virtual void object_30() = 0;
+    virtual u32 object_30() = 0;
     virtual void object_38() = 0;
     virtual void object_40() = 0;
     virtual void object_48() = 0;
-    virtual void object_50() = 0;
+    virtual u32 object_50() = 0;
     virtual void object_58() = 0;
-    virtual void object_60() = 0;
+    virtual u32 object_60() = 0;
     virtual void object_68() = 0;
     virtual void object_70() = 0;
 };
@@ -60,7 +61,7 @@ public:
     virtual void unit_b8();
     virtual bool unit_c0();
     virtual bool unit_c8();
-    virtual bool unit_d0();
+    virtual u8 unit_d0();
 
     virtual void unit_d8(u32 a1);
     virtual void unit_e0(u32 a1);
@@ -76,8 +77,8 @@ public:
     virtual void setPP(s32 pp);
     virtual void setMaxPP(s32 pp);
 
-    virtual void unit_138(s32 a1);
-    virtual void unit_140(s32 a1);
+    virtual void setIQ(s32 a1);
+    virtual void setSpeed(s32 a1);
     virtual void unit_148(s32 a1);
     virtual void unit_150(s32 a1);
     virtual void unit_158(s32 a1);
@@ -87,7 +88,7 @@ public:
 
     virtual bool unit_178() = 0;
     virtual u32 unit_180() = 0;
-    virtual Unit* unit_188() = 0;
+    virtual Unit* unit_188(Unit*) = 0;
 
     virtual s32 getLevel() const;
     virtual s32 getHP() const;
@@ -197,6 +198,46 @@ struct UnitCmd : Base {
 
     void* p;
     u8 _4[4];
+};
+
+class AttackData : public Base {
+public:
+    AttackData(u16, u32);
+    virtual ~AttackData();
+
+    virtual void attackdata_68();
+    virtual void attackdata_70();
+    virtual void attackdata_78();
+    virtual void attackdata_80();
+    virtual void attackdata_88();
+    virtual void attackdata_90();
+    virtual void attackdata_98();
+    virtual void attackdata_a0();
+    virtual void attackdata_a8();
+    virtual void attackdata_b0();
+    virtual void attackdata_b8();
+    virtual void attackdata_c0();
+    virtual u32 attackdata_c8();
+    virtual void attackdata_d0();
+    virtual void attackdata_d8();
+    virtual void attackdata_e0();
+    virtual void attackdata_e8();
+    virtual void attackdata_f0();
+    virtual void attackdata_f8();
+    virtual void attackdata_100();
+    virtual void attackdata_108();
+    virtual s32 attackdata_110();
+    virtual u32 attackdata_118(u32 idx);
+
+    u8** _24;
+    void* _28;
+    void* _2c;
+    void* _30;
+    void* _34;
+    void* _38;
+    void* _3c;
+    void* _40;
+    void* _44;
 };
 
 #endif  // CORE_UNIT_H

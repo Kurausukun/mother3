@@ -484,7 +484,7 @@ sub_0807C718: @ 0x0807C718
 	adds r0, r6, #0
 	adds r1, r5, #0
 	mov r2, r8
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	mov r1, sb
 	str r1, [sp, #0x2c]
 	mov r0, r8
@@ -1648,7 +1648,7 @@ sub_0807D0EC: @ 0x0807D0EC
 	adds r0, r5, #0
 	mov r1, r8
 	adds r2, r6, #0
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	mov r0, sb
 	str r0, [sp, #0x38]
 	adds r0, r6, #0
@@ -2419,7 +2419,7 @@ _0807D804:
 	mov r0, sl
 	adds r1, r7, #0
 	mov r2, sb
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x44]
 	mov r0, sb
 	movs r1, #2
@@ -2433,7 +2433,7 @@ _0807D804:
 	mov r0, sl
 	adds r1, r7, #0
 	mov r2, sb
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x44]
 	mov r0, sb
 	movs r1, #2
@@ -2450,7 +2450,7 @@ _0807D804:
 	mov r0, sl
 	adds r1, r7, #0
 	mov r2, sb
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x44]
 	mov r0, sb
 	movs r1, #2
@@ -2464,7 +2464,7 @@ _0807D804:
 	mov r0, sl
 	adds r1, r7, #0
 	mov r2, sb
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x44]
 	mov r0, sb
 	movs r1, #2
@@ -2480,7 +2480,7 @@ _0807D804:
 	mov r0, sl
 	adds r1, r7, #0
 	mov r2, sb
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x44]
 	mov r0, sb
 	movs r1, #2
@@ -2496,7 +2496,7 @@ _0807D804:
 	mov r0, sl
 	adds r1, r7, #0
 	mov r2, sb
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x44]
 	mov r0, sb
 	movs r1, #2
@@ -2512,7 +2512,7 @@ _0807D804:
 	mov r0, sl
 	adds r1, r7, #0
 	mov r2, sb
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x44]
 	mov r0, sb
 	movs r1, #2
@@ -2529,7 +2529,7 @@ _0807D804:
 	mov r0, sl
 	adds r1, r7, #0
 	mov r2, sb
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x44]
 	mov r0, sb
 	movs r1, #2
@@ -2543,7 +2543,7 @@ _0807D804:
 	mov r0, sl
 	adds r1, r7, #0
 	mov r2, sb
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x44]
 	mov r0, sb
 	movs r1, #2
@@ -2557,7 +2557,7 @@ _0807D804:
 	mov r0, sl
 	adds r1, r7, #0
 	mov r2, sb
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x44]
 	mov r0, sb
 	movs r1, #2
@@ -2571,7 +2571,7 @@ _0807D804:
 	mov r0, sl
 	adds r1, r7, #0
 	mov r2, sb
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x44]
 	mov r0, sb
 	movs r1, #2
@@ -2587,7 +2587,7 @@ _0807D804:
 	mov r0, sl
 	adds r1, r7, #0
 	mov r2, sb
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x44]
 	mov r0, sb
 	movs r1, #2
@@ -2605,7 +2605,7 @@ _0807D804:
 	mov r0, sl
 	adds r1, r5, #0
 	mov r2, sb
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x44]
 	mov r0, sb
 	movs r1, #2
@@ -2627,7 +2627,7 @@ _0807D804:
 	mov r0, sl
 	mov r1, r8
 	mov r2, sb
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x44]
 	mov r0, sb
 	movs r1, #2
@@ -2645,7 +2645,7 @@ _0807D804:
 	mov r0, sl
 	mov r1, r8
 	mov r2, sb
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x44]
 	mov r0, sb
 	movs r1, #2
@@ -2663,7 +2663,7 @@ _0807D804:
 	mov r0, sl
 	adds r1, r5, #0
 	mov r2, sb
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x44]
 	mov r0, sb
 	movs r1, #2
@@ -3617,7 +3617,7 @@ _0807E1DE:
 	adds r5, r5, r0
 	mov r0, sp
 	adds r1, r6, #0
-	bl sub_080766B8
+	bl attackdata_118__10AttackDataUi
 	adds r1, r0, #0
 	ldr r2, [r4, #4]
 	adds r0, r5, #0
@@ -3625,7 +3625,7 @@ _0807E1DE:
 	adds r6, #1
 _0807E202:
 	mov r0, sp
-	bl sub_080766B4
+	bl attackdata_110__10AttackData
 	cmp r6, r0
 	blt _0807E1DE
 	adds r0, r7, #0
@@ -5033,7 +5033,7 @@ _0807ED1E:
 	mov r0, sl
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	mov r0, r8
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -5048,7 +5048,7 @@ _0807ED1E:
 	mov r0, sl
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	mov r1, r8
 	str r1, [sp, #0x20]
 	add r0, sp, #4
@@ -5066,7 +5066,7 @@ _0807ED1E:
 	mov r0, sl
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	mov r3, r8
 	str r3, [sp, #0x20]
 	add r0, sp, #4
@@ -5081,7 +5081,7 @@ _0807ED1E:
 	mov r0, sl
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	mov r4, r8
 	str r4, [sp, #0x20]
 	add r0, sp, #4
@@ -5099,7 +5099,7 @@ _0807ED1E:
 	mov r0, sl
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	mov r0, r8
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -5114,7 +5114,7 @@ _0807ED1E:
 	mov r0, sl
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	mov r1, r8
 	str r1, [sp, #0x20]
 	add r0, sp, #4
@@ -5129,7 +5129,7 @@ _0807ED1E:
 	mov r0, sl
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	mov r3, r8
 	str r3, [sp, #0x20]
 	add r0, sp, #4
@@ -5144,7 +5144,7 @@ _0807ED1E:
 	mov r0, sl
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	mov r4, r8
 	str r4, [sp, #0x20]
 	add r0, sp, #4
@@ -5161,7 +5161,7 @@ _0807ED1E:
 	mov r0, sl
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	mov r5, r8
 	str r5, [sp, #0x20]
 	add r0, sp, #4
@@ -5181,7 +5181,7 @@ _0807ED1E:
 	mov r0, sl
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	mov r0, r8
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -5197,7 +5197,7 @@ _0807ED1E:
 	mov r0, sl
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	mov r1, r8
 	str r1, [sp, #0x20]
 	add r0, sp, #4
@@ -5213,7 +5213,7 @@ _0807ED1E:
 	mov r0, sl
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	mov r3, r8
 	str r3, [sp, #0x20]
 	add r0, sp, #4
@@ -5237,7 +5237,7 @@ _0807ED1E:
 	mov r0, sl
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	mov r0, r8
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -5256,7 +5256,7 @@ _0807ED1E:
 	mov r0, sl
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	mov r0, r8
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -5300,7 +5300,7 @@ _0807EFD0:
 	mov r0, sl
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	mov r0, r8
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -5320,7 +5320,7 @@ _0807EFD0:
 	mov r0, sl
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	mov r0, r8
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -5339,7 +5339,7 @@ _0807EFD0:
 	mov r0, sl
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	mov r0, r8
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -5358,7 +5358,7 @@ _0807EFD0:
 	mov r0, sl
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	mov r4, r8
 	str r4, [sp, #0x20]
 	add r0, sp, #4
@@ -5378,7 +5378,7 @@ _0807EFD0:
 	mov r0, sl
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	mov r0, r8
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -5394,7 +5394,7 @@ _0807EFD0:
 	mov r0, sl
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	mov r1, r8
 	str r1, [sp, #0x20]
 	add r0, sp, #4
@@ -5410,7 +5410,7 @@ _0807EFD0:
 	mov r0, sl
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	mov r3, r8
 	str r3, [sp, #0x20]
 	add r0, sp, #4
@@ -7315,7 +7315,7 @@ _08080038:
 	thumb_func_start sub_08080040
 sub_08080040: @ 0x08080040
 	push {lr}
-	bl sub_0805D874
+	bl get__15BattleSingleton
 	ldr r1, [r0, #0x1c]
 	movs r2, #0x98
 	lsls r2, r2, #1
@@ -7376,7 +7376,7 @@ _080800AE:
 	adds r5, r7, r5
 	mov r0, sp
 	adds r1, r6, #0
-	bl sub_080766B8
+	bl attackdata_118__10AttackDataUi
 	adds r1, r0, #0
 	ldr r2, [r4, #4]
 	adds r0, r5, #0
@@ -7384,7 +7384,7 @@ _080800AE:
 	adds r6, #1
 _080800D0:
 	mov r0, sp
-	bl sub_080766B4
+	bl attackdata_110__10AttackData
 	cmp r6, r0
 	blt _080800AE
 	mov r0, sp

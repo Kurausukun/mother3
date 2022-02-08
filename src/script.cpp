@@ -1,4 +1,5 @@
 #include "script.h"
+#include "guest.h"
 #include "functions.h"
 
 extern "C" {
@@ -592,7 +593,7 @@ u16 sub_0801C79C(s32* sp) {
     } else {
         cnt = 0;
         for (u16 i = 0; i < gScript.party_count; ++i) {
-            item = (u8*)get_char_data(i);
+            item = (u8*)get_guest_stats(i);
             if (*item != 0) {
                 temp = sub_08001D2C(*item);
                 if (temp != 0) {
@@ -643,7 +644,7 @@ _0801C7D0:\n\
 	mov r8, r0\n\
 _0801C7E2:\n\
 	adds r0, r5, #0\n\
-	bl get_char_data\n\
+	bl get_guest_stats\n\
 	adds r4, r0, #0\n\
 	ldrb r0, [r4]\n\
 	cmp r0, #0\n\
@@ -1062,19 +1063,19 @@ _0801CBA0: .4byte 0x000003E3\n\
 }
 #endif
 
-struct Unk {
+struct Unkx {
     u32 lo : 16;
     u32 hi : 16;
 };
-void sub_08029684(u32, u32, u32, Unk*);
-void sub_08029FC8(u32, u32, u32, Unk*);
+void sub_08029684(u32, u32, u32, Unkx*);
+void sub_08029FC8(u32, u32, u32, Unkx*);
 
 u16 sub_0801CBA4(s32* sp) {
     u16 a;
     u16 b;
     u16 c;
     u16 d;
-    Unk u;
+    Unkx u;
 
     a = scriptstack_peek(sp, 4);
     b = scriptstack_peek(sp, 3);
@@ -1120,7 +1121,7 @@ u16 sub_0801CC70(s32* sp) {
             sub_0805BB34(auStack32, chrNum);
             temp = sub_0802B8C4(chrNum);
             if ((s16)temp != -1) {
-                a = get_char_data(temp);
+                a = get_guest_stats(temp);
                 b = sub_0802B874(temp);
                 sub_0802941C(a, b);
                 sub_080294DC(a, b);
@@ -1128,7 +1129,7 @@ u16 sub_0801CC70(s32* sp) {
             }
         }
         if (sprNum != -1) {
-            gUnknown_02004110[chrNum]._1 = sprNum;
+            gGuestStats[chrNum]._1 = sprNum;
         }
     }
     return 0;
@@ -1179,7 +1180,7 @@ u16 sub_0801CC70(s32* sp) {
 	cmp r0, r5\n\
 	beq _0801CCF4\n\
 	adds r0, r4, #0\n\
-	bl get_char_data\n\
+	bl get_guest_stats\n\
 	adds r5, r0, #0\n\
 	adds r0, r4, #0\n\
 	bl sub_0802B874\n\
@@ -1201,7 +1202,7 @@ _0801CCF4:\n\
 	rsbs r1, r1, #0\n\
 	cmp r0, r1\n\
 	beq _0801CD0E\n\
-	ldr r1, _0801CD1C @ =gUnknown_02004110\n\
+	ldr r1, _0801CD1C @ =gGuestStats\n\
 	movs r0, #0x6c\n\
 	muls r0, r7, r0\n\
 	adds r0, r0, r1\n\
@@ -1216,7 +1217,7 @@ _0801CD0E:\n\
 	pop {r1}\n\
 	bx r1\n\
 	.align 2, 0\n\
-_0801CD1C: .4byte gUnknown_02004110\n\
+_0801CD1C: .4byte gGuestStats\n\
     ");
 }
 #endif
@@ -1293,7 +1294,7 @@ _0801CDA6:\n\
 	cmp r1, #4\n\
 	bgt _0801CDF4\n\
 	lsrs r0, r2, #0x10\n\
-	bl get_char_data\n\
+	bl get_guest_stats\n\
 	adds r4, r0, #0\n\
 	lsls r6, r6, #0x10\n\
 	asrs r2, r6, #0x10\n\
@@ -1337,10 +1338,10 @@ _0801CDF4:\n\
 
 u16 sub_0801CE00(s32* sp) {
     u16 idx;
-    CharData* pm;
+    GuestStats* pm;
 
     idx = scriptstack_peek(sp, 4);
-    pm = get_char_data(idx);
+    pm = get_guest_stats(idx);
     scriptstack_set(sp, 3, pm->curHP);
     scriptstack_set(sp, 2, pm->maxHP);
     scriptstack_set(sp, 1, pm->curPP);
@@ -1418,7 +1419,7 @@ u16 sub_0801CFA4(s32* sp) {
     u16 b;
     u16 c;
     u32 d;
-    Unk u;
+    Unkx u;
 
     a = scriptstack_peek(sp, 4);
     b = scriptstack_peek(sp, 3);
@@ -1438,7 +1439,7 @@ u16 sub_0801D038(s32* sp) {
     u32 idx;
     s32 b;
     Sprite* spr;
-    CharData* cd;
+    GuestStats* cd;
     u64 t;
 
     idx = scriptstack_peek(sp, 1);
@@ -1448,7 +1449,7 @@ u16 sub_0801D038(s32* sp) {
     if (spr != 0) {
         chr = spr->character;
         if (chr < 5) {
-            cd = get_char_data(chr);
+            cd = get_guest_stats(chr);
             c = sub_08001D2C(cd->charNo);
             if (c != 0) {
                 sub_0805BC8C(&t, cd->charNo, b);
@@ -1522,7 +1523,7 @@ u16 sub_0801D24C(s32* sp) {
 
     idx = scriptstack_peek(sp, 0);
     if (idx > 0 && idx < 16) {
-        scriptstack_push(gUnknown_02004110[idx].level);
+        scriptstack_push(gGuestStats[idx].level);
     }
     return 0;
 }
@@ -1601,7 +1602,7 @@ u16 sub_0801D320(s32* sp) {
 	ble _0801D374\n\
 	movs r0, #0x6c\n\
 	muls r0, r5, r0\n\
-	ldr r1, _0801D370 @ =gUnknown_02004110\n\
+	ldr r1, _0801D370 @ =gGuestStats\n\
 	adds r0, r0, r1\n\
 	lsrs r1, r3, #0x10\n\
 	lsls r2, r2, #0x18\n\
@@ -1609,7 +1610,7 @@ u16 sub_0801D320(s32* sp) {
 	bl sub_0805C300\n\
 	b _0801D412\n\
 	.align 2, 0\n\
-_0801D370: .4byte gUnknown_02004110\n\
+_0801D370: .4byte gGuestStats\n\
 _0801D374:\n\
 	movs r0, #1\n\
 	rsbs r0, r0, #0\n\
@@ -1617,13 +1618,13 @@ _0801D374:\n\
 	bne _0801D390\n\
 	movs r0, #0x6c\n\
 	muls r0, r5, r0\n\
-	ldr r1, _0801D38C @ =gUnknown_02004110\n\
+	ldr r1, _0801D38C @ =gGuestStats\n\
 	adds r0, r0, r1\n\
 	ldrb r1, [r0, #0x12]\n\
 	bl sub_0805C458\n\
 	b _0801D412\n\
 	.align 2, 0\n\
-_0801D38C: .4byte gUnknown_02004110\n\
+_0801D38C: .4byte gGuestStats\n\
 _0801D390:\n\
 	movs r0, #2\n\
 	rsbs r0, r0, #0\n\
@@ -1631,7 +1632,7 @@ _0801D390:\n\
 	bne _0801D412\n\
 	cmp r5, #2\n\
 	bne _0801D3D4\n\
-	ldr r0, _0801D3C0 @ =gUnknown_02004110\n\
+	ldr r0, _0801D3C0 @ =gGuestStats\n\
 	adds r0, #0xd8\n\
 	bl sub_0805C3B8\n\
 	ldr r1, _0801D3C4 @ =gSave\n\
@@ -1648,7 +1649,7 @@ _0801D390:\n\
 	ldr r0, _0801D3D0 @ =0x0000071E\n\
 	b _0801D3FE\n\
 	.align 2, 0\n\
-_0801D3C0: .4byte gUnknown_02004110\n\
+_0801D3C0: .4byte gGuestStats\n\
 _0801D3C4: .4byte gSave\n\
 _0801D3C8: .4byte 0x0000071A\n\
 _0801D3CC: .4byte 0x0000071B\n\
@@ -1656,7 +1657,7 @@ _0801D3D0: .4byte 0x0000071E\n\
 _0801D3D4:\n\
 	cmp r7, #4\n\
 	bne _0801D402\n\
-	ldr r0, _0801D420 @ =gUnknown_02004110\n\
+	ldr r0, _0801D420 @ =gGuestStats\n\
 	movs r1, #0xd8\n\
 	lsls r1, r1, #1\n\
 	adds r0, r0, r1\n\
@@ -1693,7 +1694,7 @@ _0801D412:\n\
 	pop {r1}\n\
 	bx r1\n\
 	.align 2, 0\n\
-_0801D420: .4byte gUnknown_02004110\n\
+_0801D420: .4byte gGuestStats\n\
 _0801D424: .4byte gSave\n\
 _0801D428: .4byte 0x00000734\n\
 _0801D42C: .4byte 0x00000735\n\
@@ -1713,7 +1714,7 @@ s32 sub_0801D438(s32* sp) {
     x[3] = scriptstack_peek(sp, 0);
 
     if (idx > 0 && idx < 0x10) {
-        CharData* s = &gUnknown_02004110[idx];
+        GuestStats* s = &gGuestStats[idx];
         if (x[0] == -1 || x[1] == -1 || x[2] == -1 || x[3] == -1)
             sub_0802A74C(s, x);
         else
@@ -1764,7 +1765,7 @@ u16 sub_0801D544(s32* sp) {
 
 u16 sub_0801D594(s32* sp) {
     u16 cnt;
-    CharData* cd;
+    GuestStats* cd;
 
     gSave._78d = 0;
     gSave._78c = 0;
@@ -1773,7 +1774,7 @@ u16 sub_0801D594(s32* sp) {
     sub_08001ACC(gSave._78e, 0x80);
     cnt = 0;
     for (u16 i = 0; i < gScript.party_count; ++i) {
-        cd = get_char_data(i);
+        cd = get_guest_stats(i);
         if (cd->charNo != 0 && sub_08001D2C(cd->charNo) != 0) {
             sub_0802A7F8(cd, cnt);
             cnt++;
@@ -1783,13 +1784,13 @@ u16 sub_0801D594(s32* sp) {
 }
 
 u16 sub_0801D620(s32* sp) {
-    CharData* cd;
+    GuestStats* cd;
 
     if (sub_0802A98C() == 0) {
         scriptstack_push(1);
     } else {
         for (u16 i = 0; i < gScript.party_count; ++i) {
-            cd = get_char_data(i);
+            cd = get_guest_stats(i);
             if (cd->charNo != 0 && sub_08001D2C(cd->charNo) != 0) {
                 sub_0802A8D4(cd);
             }
@@ -1806,14 +1807,14 @@ u16 sub_0801D620(s32* sp) {
 u16 sub_0801D698(s32* sp) {
     u16 tmp;
     u16 idx;
-    CharData* pCVar3;
+    GuestStats* pCVar3;
 
     tmp = scriptstack_peek(sp, 1);
     idx = scriptstack_peek(sp, 0);
     if (gItemData[idx].type == Key) {
         scriptstack_push(gSave._10[idx]);
     } else if (tmp < 5) {
-        u16 tmp2 = sub_0802A3D0(get_char_data(tmp), idx);
+        u16 tmp2 = sub_0802A3D0(get_guest_stats(tmp), idx);
         scriptstack_push(tmp2);
     }
     return 0;

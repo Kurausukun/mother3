@@ -105,7 +105,7 @@ sub_08080A24: @ 0x08080A24
 	lsls r0, r4, #3
 	adds r0, r0, r4
 	lsls r0, r0, #4
-	ldr r1, _08080B48 @ =gUnknown_080D0D28
+	ldr r1, _08080B48 @ =gEnemyData
 	adds r0, r0, r1
 	str r0, [r2]
 	adds r0, #0x68
@@ -141,14 +141,14 @@ sub_08080A24: @ 0x08080A24
 	adds r1, r7, #0
 	bl sub_08081C48
 	str r0, [r4]
-	bl sub_0805D874
+	bl get__15BattleSingleton
 	adds r5, r0, #0
 	add r4, sp, #4
 	adds r0, r4, #0
 	bl __4Base
 	ldr r0, _08080B4C @ =_vt.3Unk
 	mov r8, r0
-	ldr r0, _08080B50 @ =vt_09F455B0
+	ldr r0, _08080B50 @ =_vt.10RoundBegin
 	str r0, [sp, #0x20]
 	strh r6, [r4, #0x20]
 	ldr r0, _08080B54 @ =gUnknown_0810B278
@@ -158,18 +158,18 @@ sub_08080A24: @ 0x08080A24
 	adds r0, r7, #0
 	adds r1, r5, #0
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	mov r1, r8
 	str r1, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl sub_0805D874
+	bl get__15BattleSingleton
 	adds r5, r0, #0
 	add r4, sp, #4
 	adds r0, r4, #0
 	bl __4Base
-	ldr r0, _08080B58 @ =vt_09F45530
+	ldr r0, _08080B58 @ =_vt.8RoundEnd
 	str r0, [sp, #0x20]
 	strh r6, [r4, #0x20]
 	ldr r0, _08080B5C @ =gUnknown_0810B280
@@ -179,7 +179,7 @@ sub_08080A24: @ 0x08080A24
 	adds r0, r7, #0
 	adds r1, r5, #0
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	mov r3, r8
 	str r3, [sp, #0x20]
 	add r0, sp, #4
@@ -195,11 +195,11 @@ sub_08080A24: @ 0x08080A24
 	.align 2, 0
 _08080B40: .4byte vt_09F82F98
 _08080B44: .4byte vt_09F83010
-_08080B48: .4byte gUnknown_080D0D28
+_08080B48: .4byte gEnemyData
 _08080B4C: .4byte _vt.3Unk
-_08080B50: .4byte vt_09F455B0
+_08080B50: .4byte _vt.10RoundBegin
 _08080B54: .4byte gUnknown_0810B278
-_08080B58: .4byte vt_09F45530
+_08080B58: .4byte _vt.8RoundEnd
 _08080B5C: .4byte gUnknown_0810B280
 
 	thumb_func_start sub_08080B60
@@ -654,9 +654,9 @@ sub_08080EB8: @ 0x08080EB8
 	adds r2, r0, #0
 	mov r0, sp
 	adds r1, r4, #0
-	bl sub_08075BB0
+	bl __10AttackDataUsUi
 	mov r0, sp
-	bl sub_08075DD4
+	bl attackdata_c8__10AttackData
 	mov r8, r0
 	movs r6, #0
 	b _08080F28
@@ -670,7 +670,7 @@ _08080F06:
 	adds r5, r7, r5
 	mov r0, sp
 	adds r1, r6, #0
-	bl sub_080766B8
+	bl attackdata_118__10AttackDataUi
 	adds r1, r0, #0
 	ldr r2, [r4, #4]
 	adds r0, r5, #0
@@ -678,7 +678,7 @@ _08080F06:
 	adds r6, #1
 _08080F28:
 	mov r0, sp
-	bl sub_080766B4
+	bl attackdata_110__10AttackData
 	cmp r6, r0
 	blt _08080F06
 	movs r4, #0
@@ -689,7 +689,7 @@ _08080F28:
 _08080F3C:
 	mov r0, sp
 	movs r1, #2
-	bl sub_08075BF8
+	bl _._10AttackData
 	adds r0, r4, #0
 	add sp, #0x44
 	pop {r3}
@@ -1907,7 +1907,7 @@ sub_080817D0: @ 0x080817D0
 	lsls r2, r1, #3
 	adds r2, r2, r1
 	lsls r2, r2, #4
-	ldr r0, _08081974 @ =gUnknown_080D0D28
+	ldr r0, _08081974 @ =gEnemyData
 	adds r2, r2, r0
 	str r2, [r4]
 	movs r0, #0x80
@@ -2089,7 +2089,7 @@ _08081936:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08081974: .4byte gUnknown_080D0D28
+_08081974: .4byte gEnemyData
 
 	thumb_func_start sub_08081978
 sub_08081978: @ 0x08081978

@@ -2477,7 +2477,7 @@ _0801FA98:
 	adds r1, r4, r0
 	ldr r0, _0801FB8C @ =0x0000FFFF
 	strh r0, [r1]
-	ldr r2, _0801FB90 @ =gUnknown_02004110
+	ldr r2, _0801FB90 @ =gGuestStats
 	adds r0, r6, #0
 	adds r0, #0x86
 	ldrb r1, [r0]
@@ -2579,7 +2579,7 @@ _0801FB80: .4byte gScript
 _0801FB84: .4byte 0x0000829B
 _0801FB88: .4byte 0x000082AC
 _0801FB8C: .4byte 0x0000FFFF
-_0801FB90: .4byte gUnknown_02004110
+_0801FB90: .4byte gGuestStats
 _0801FB94: .4byte 0x00008375
 _0801FB98: .4byte 0x000067AC
 _0801FB9C: .4byte 0x000082BC
@@ -6016,7 +6016,7 @@ sub_08021724: @ 0x08021724
 	thumb_func_start sub_08021734
 sub_08021734: @ 0x08021734
 	push {lr}
-	bl sub_08001718
+	bl DoReset
 	movs r0, #1
 	pop {r1}
 	bx r1
@@ -16551,7 +16551,7 @@ _08026B44:
 	.align 2, 0
 _08026B70: .4byte 0x00000796
 _08026B74:
-	ldr r2, _08026B8C @ =gUnknown_080D0D28
+	ldr r2, _08026B8C @ =gEnemyData
 	adds r0, r1, #0
 	adds r0, #0x88
 	ldrh r1, [r0]
@@ -16564,7 +16564,7 @@ _08026B74:
 	ldrh r2, [r0, #0xc]
 	b _08026B96
 	.align 2, 0
-_08026B8C: .4byte gUnknown_080D0D28
+_08026B8C: .4byte gEnemyData
 _08026B90: .4byte 0xFFFFFF00
 _08026B94:
 	ldr r2, _08026BC0 @ =0x00000794
@@ -17215,7 +17215,7 @@ sub_0802706C: @ 0x0802706C
 	push {lr}
 	lsls r0, r0, #0x10
 	movs r2, #0
-	ldr r3, _0802708C @ =gUnknown_080C1A90
+	ldr r3, _0802708C @ =gDirectionTable
 	movs r1, #0xf0
 	lsls r1, r1, #0x10
 	ands r1, r0
@@ -17229,7 +17229,7 @@ _0802707C:
 	adds r0, r2, #0
 	b _0802709C
 	.align 2, 0
-_0802708C: .4byte gUnknown_080C1A90
+_0802708C: .4byte gDirectionTable
 _08027090:
 	adds r0, r2, #1
 	lsls r0, r0, #0x10
@@ -17244,7 +17244,7 @@ _0802709C:
 	thumb_func_start sub_080270A0
 sub_080270A0: @ 0x080270A0
 	lsls r0, r0, #0x10
-	ldr r3, _080270B4 @ =gUnknown_080C1A90
+	ldr r3, _080270B4 @ =gDirectionTable
 	lsrs r0, r0, #0xc
 	adds r0, r0, r3
 	ldrh r3, [r0, #2]
@@ -17253,18 +17253,18 @@ sub_080270A0: @ 0x080270A0
 	strh r0, [r2]
 	bx lr
 	.align 2, 0
-_080270B4: .4byte gUnknown_080C1A90
+_080270B4: .4byte gDirectionTable
 
 	thumb_func_start sub_080270B8
 sub_080270B8: @ 0x080270B8
 	lsls r0, r0, #0x10
-	ldr r1, _080270C4 @ =gUnknown_080C1A90
+	ldr r1, _080270C4 @ =gDirectionTable
 	lsrs r0, r0, #0xc
 	adds r0, r0, r1
 	ldrh r0, [r0, #6]
 	bx lr
 	.align 2, 0
-_080270C4: .4byte gUnknown_080C1A90
+_080270C4: .4byte gDirectionTable
 
 	thumb_func_start sub_080270C8
 sub_080270C8: @ 0x080270C8
@@ -17291,13 +17291,13 @@ _080270E4: .4byte gUnknown_08D2DF08
 	thumb_func_start sub_080270E8
 sub_080270E8: @ 0x080270E8
 	lsls r0, r0, #0x10
-	ldr r1, _080270F4 @ =gUnknown_080C1A90
+	ldr r1, _080270F4 @ =gDirectionTable
 	lsrs r0, r0, #0xc
 	adds r0, r0, r1
 	ldrh r0, [r0, #8]
 	bx lr
 	.align 2, 0
-_080270F4: .4byte gUnknown_080C1A90
+_080270F4: .4byte gDirectionTable
 
 	thumb_func_start sub_080270F8
 sub_080270F8: @ 0x080270F8
@@ -17315,15 +17315,15 @@ sub_080270F8: @ 0x080270F8
 _08027110:
 	cmp r2, #0
 	beq _08027124
-	ldr r0, _08027120 @ =gUnknown_080C1A90
+	ldr r0, _08027120 @ =gDirectionTable
 	lsls r1, r4, #4
 	adds r1, r1, r0
 	ldrh r0, [r1, #0xc]
 	b _0802712C
 	.align 2, 0
-_08027120: .4byte gUnknown_080C1A90
+_08027120: .4byte gDirectionTable
 _08027124:
-	ldr r0, _08027134 @ =gUnknown_080C1A90
+	ldr r0, _08027134 @ =gDirectionTable
 	lsls r1, r5, #4
 	adds r1, r1, r0
 	ldrh r0, [r1, #0xa]
@@ -17332,7 +17332,7 @@ _0802712C:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08027134: .4byte gUnknown_080C1A90
+_08027134: .4byte gDirectionTable
 
 	thumb_func_start sub_08027138
 sub_08027138: @ 0x08027138
@@ -19468,7 +19468,7 @@ _0802827E:
 	bne _08028290
 	b _08028756
 _08028290:
-	ldr r0, _080282B8 @ =gUnknown_02004110
+	ldr r0, _080282B8 @ =gGuestStats
 	movs r1, #0x6c
 	muls r1, r6, r1
 	adds r1, r1, r0
@@ -19487,7 +19487,7 @@ _080282A0:
 	.align 2, 0
 _080282B0: .4byte 0x00000681
 _080282B4: .4byte gSave
-_080282B8: .4byte gUnknown_02004110
+_080282B8: .4byte gGuestStats
 _080282BC:
 	mov r1, sp
 	movs r0, #0
@@ -20792,7 +20792,7 @@ _08028CE6:
 	bne _08028D06
 	b _08028FB4
 _08028D06:
-	ldr r1, _08029044 @ =gUnknown_02004110
+	ldr r1, _08029044 @ =gGuestStats
 	movs r0, #0x6c
 	muls r0, r5, r0
 	adds r0, r0, r1
@@ -21197,7 +21197,7 @@ _08029034: .4byte 0x00000681
 _08029038: .4byte 0x00000682
 _0802903C: .4byte 0x0000069A
 _08029040: .4byte gSave
-_08029044: .4byte gUnknown_02004110
+_08029044: .4byte gGuestStats
 _08029048: .4byte gScript
 _0802904C: .4byte 0x000082AC
 _08029050: .4byte 0x0000FFFF
@@ -21260,7 +21260,7 @@ _080290B0:
 	bne _080290C2
 	b _08029214
 _080290C2:
-	ldr r1, _08029104 @ =gUnknown_02004110
+	ldr r1, _08029104 @ =gGuestStats
 	movs r0, #0x6c
 	muls r0, r4, r0
 	adds r0, r0, r1
@@ -21291,7 +21291,7 @@ _080290F4:
 _080290F8: .4byte 0xFFFFFBE8
 _080290FC: .4byte 0x00000414
 _08029100: .4byte gSave
-_08029104: .4byte gUnknown_02004110
+_08029104: .4byte gGuestStats
 _08029108: .4byte gScript
 _0802910C: .4byte 0x0000829B
 _08029110:
@@ -21649,7 +21649,7 @@ sub_080293C8: @ 0x080293C8
 	adds r7, r0, #0
 _080293DA:
 	adds r0, r6, #0
-	bl get_char_data
+	bl get_guest_stats
 	adds r4, r0, #0
 	adds r0, r6, #0
 	bl sub_0802B874
@@ -22083,7 +22083,7 @@ _08029704:
 	mov r4, sp
 	ldrb r4, [r4, #4]
 	strb r4, [r2]
-	ldr r2, _0802974C @ =gUnknown_02004110
+	ldr r2, _0802974C @ =gGuestStats
 	movs r0, #0x6c
 	ldr r4, [sp, #4]
 	adds r1, r4, #0
@@ -22104,7 +22104,7 @@ _0802973C: .4byte gScript
 _08029740: .4byte 0x00008299
 _08029744: .4byte gSave
 _08029748: .4byte 0x00008294
-_0802974C: .4byte gUnknown_02004110
+_0802974C: .4byte gGuestStats
 _08029750:
 	mov r1, sp
 	movs r0, #0
@@ -22909,7 +22909,7 @@ sub_08029D9C: @ 0x08029D9C
 	cmp r0, r1
 	beq _08029DD8
 	adds r0, r2, #0
-	bl get_char_data
+	bl get_guest_stats
 	bl sub_0805C1DC
 	lsls r0, r0, #0x18
 	cmp r0, #0
@@ -22929,7 +22929,7 @@ _08029DD8:
 	cmp r0, r1
 	beq _08029E0A
 	adds r0, r2, #0
-	bl get_char_data
+	bl get_guest_stats
 	bl sub_0805C1DC
 	lsls r0, r0, #0x18
 	cmp r0, #0
@@ -23374,7 +23374,7 @@ sub_0802A124: @ 0x0802A124
 	adds r7, r0, #0
 _0802A13A:
 	adds r0, r5, #0
-	bl get_char_data
+	bl get_guest_stats
 	adds r4, r0, #0
 	ldrb r0, [r4]
 	cmp r0, #0
@@ -23451,7 +23451,7 @@ _0802A1C0:
 	mov sl, r5
 _0802A1D2:
 	adds r0, r7, #0
-	bl get_char_data
+	bl get_guest_stats
 	adds r5, r0, #0
 	ldrb r0, [r5]
 	cmp r0, #0
@@ -23547,7 +23547,7 @@ sub_0802A264: @ 0x0802A264
 	mov sl, r0
 _0802A28C:
 	mov r0, r8
-	bl get_char_data
+	bl get_guest_stats
 	adds r5, r0, #0
 	ldrb r0, [r5]
 	cmp r0, #0
@@ -23635,7 +23635,7 @@ sub_0802A310: @ 0x0802A310
 	mov sl, r0
 _0802A33C:
 	adds r0, r6, #0
-	bl get_char_data
+	bl get_guest_stats
 	adds r5, r0, #0
 	ldrb r0, [r5]
 	cmp r0, #0
@@ -24631,7 +24631,7 @@ _0802AA80:
 	cmp r0, #0
 	beq _0802AADA
 	adds r0, r6, #0
-	bl get_char_data
+	bl get_guest_stats
 	adds r4, r0, #0
 	adds r0, r6, #0
 	bl sub_0802B874
@@ -24694,7 +24694,7 @@ sub_0802AAEC: @ 0x0802AAEC
 	cmp r5, #0
 	beq _0802ABC6
 	adds r0, r6, #0
-	bl get_char_data
+	bl get_guest_stats
 	adds r7, r0, #0
 	adds r0, r6, #0
 	adds r1, r4, #0
@@ -24816,7 +24816,7 @@ sub_0802ABCC: @ 0x0802ABCC
 	b _0802AC46
 _0802ABD4:
 	adds r0, r4, #0
-	bl get_char_data
+	bl get_guest_stats
 	adds r5, r0, #0
 	ldrb r0, [r5]
 	adds r7, r4, #1
@@ -25091,7 +25091,7 @@ set_ailment: @ 0x0802ADCC
 	lsrs r5, r1, #0x10
 	mov r1, sp
 	strh r2, [r1]
-	bl get_char_data
+	bl get_guest_stats
 	adds r4, r0, #0
 	cmp r5, #8
 	bls _0802ADE8
@@ -25271,7 +25271,7 @@ sub_0802AF24: @ 0x0802AF24
 	adds r6, r1, #0
 	movs r5, #0x6c
 	movs r4, #0
-	ldr r1, _0802AF5C @ =gUnknown_02004110
+	ldr r1, _0802AF5C @ =gGuestStats
 _0802AF3C:
 	cmp r6, #0
 	beq _0802AF50
@@ -25291,7 +25291,7 @@ _0802AF50:
 	bls _0802AF3C
 	b _0802AF7C
 	.align 2, 0
-_0802AF5C: .4byte gUnknown_02004110
+_0802AF5C: .4byte gGuestStats
 _0802AF60:
 	cmp r1, #0
 	beq _0802AF7C
@@ -25299,7 +25299,7 @@ _0802AF60:
 	bgt _0802AF7C
 	movs r0, #0x6c
 	muls r1, r0, r1
-	ldr r0, _0802AF84 @ =gUnknown_02004110
+	ldr r0, _0802AF84 @ =gGuestStats
 	adds r2, r1, r0
 	ldr r0, [r2, #0x20]
 	str r0, [r2, #0x18]
@@ -25312,7 +25312,7 @@ _0802AF7C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0802AF84: .4byte gUnknown_02004110
+_0802AF84: .4byte gGuestStats
 
 	thumb_func_start sub_0802AF88
 sub_0802AF88: @ 0x0802AF88
@@ -25381,7 +25381,7 @@ sub_0802AFF0: @ 0x0802AFF0
 	lsls r4, r4, #0x10
 	lsrs r4, r4, #0x10
 	adds r0, r7, #0
-	bl get_char_data
+	bl get_guest_stats
 	adds r6, r0, #0
 	adds r0, r7, #0
 	bl sub_0802B874
@@ -25426,7 +25426,7 @@ sub_0802B048: @ 0x0802B048
 	lsls r4, r4, #0x10
 	lsrs r4, r4, #0x10
 	adds r0, r6, #0
-	bl get_char_data
+	bl get_guest_stats
 	adds r5, r0, #0
 	adds r0, r6, #0
 	bl sub_0802B874
@@ -25499,7 +25499,7 @@ sub_0802B0D0: @ 0x0802B0D0
 	lsrs r5, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r4, r2, #0x10
-	bl get_char_data
+	bl get_guest_stats
 	adds r3, r0, #0
 	cmp r5, #4
 	bhi _0802B182
@@ -25883,7 +25883,7 @@ _0802B3B2:
 	mov sl, r3
 _0802B3D6:
 	adds r0, r5, #0
-	bl get_char_data
+	bl get_guest_stats
 	adds r3, r0, #0
 	ldr r2, [r3, #0x18]
 	cmp r2, #0
@@ -26033,7 +26033,7 @@ sub_0802B4D8: @ 0x0802B4D8
 	adds r6, r0, #0
 _0802B504:
 	adds r0, r4, #0
-	bl get_char_data
+	bl get_guest_stats
 	ldr r0, [r0, #0x18]
 	cmp r0, #0
 	bgt _0802B528
@@ -26179,7 +26179,7 @@ _0802B618:
 	mov r8, r3
 _0802B622:
 	adds r0, r6, #0
-	bl get_char_data
+	bl get_guest_stats
 	adds r4, r0, #0
 	ldrb r0, [r4]
 	cmp r0, #0
@@ -26445,14 +26445,14 @@ sub_0802B844: @ 0x0802B844
 	lsrs r0, r0, #0x10
 	movs r1, #0x6c
 	muls r0, r1, r0
-	ldr r1, _0802B854 @ =gUnknown_02004110
+	ldr r1, _0802B854 @ =gGuestStats
 	adds r0, r0, r1
 	bx lr
 	.align 2, 0
-_0802B854: .4byte gUnknown_02004110
+_0802B854: .4byte gGuestStats
 
-	thumb_func_start get_char_data
-get_char_data: @ 0x0802B858
+	thumb_func_start get_guest_stats
+get_guest_stats: @ 0x0802B858
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	ldr r1, _0802B86C @ =gSave
@@ -26460,12 +26460,12 @@ get_char_data: @ 0x0802B858
 	ldrb r1, [r0]
 	movs r0, #0x6c
 	muls r0, r1, r0
-	ldr r1, _0802B870 @ =gUnknown_02004110
+	ldr r1, _0802B870 @ =gGuestStats
 	adds r0, r0, r1
 	bx lr
 	.align 2, 0
 _0802B86C: .4byte gSave
-_0802B870: .4byte gUnknown_02004110
+_0802B870: .4byte gGuestStats
 
 	thumb_func_start sub_0802B874
 sub_0802B874: @ 0x0802B874
@@ -26618,7 +26618,7 @@ sub_0802B954: @ 0x0802B954
 	adds r7, r0, #0
 _0802B96A:
 	adds r0, r5, #0
-	bl get_char_data
+	bl get_guest_stats
 	adds r4, r0, #0
 	ldrb r0, [r4]
 	cmp r0, #0
@@ -31467,9 +31467,9 @@ sub_0802DEB0: @ 0x0802DEB0
 	cmp r0, #0
 	bge _0802DF00
 	movs r0, #0
-	bl get_char_data
+	bl get_guest_stats
 	ldrb r2, [r0, #0x12]
-	ldr r3, _0802DF04 @ =gUnknown_080D0D28
+	ldr r3, _0802DF04 @ =gEnemyData
 	adds r0, r5, #0
 	adds r0, #0x88
 	ldrh r1, [r0]
@@ -31500,7 +31500,7 @@ _0802DF00:
 	movs r0, #0
 	b _0802DF0E
 	.align 2, 0
-_0802DF04: .4byte gUnknown_080D0D28
+_0802DF04: .4byte gEnemyData
 _0802DF08: .4byte 0xFFFFFF00
 _0802DF0C:
 	movs r0, #1
@@ -33213,7 +33213,7 @@ sub_0802EB5C: @ 0x0802EB5C
 	rsbs r0, r0, #0
 	cmp r1, r0
 	bne _0802EB94
-	ldr r2, _0802EB8C @ =gUnknown_080D0D28
+	ldr r2, _0802EB8C @ =gEnemyData
 	adds r0, r3, #0
 	adds r0, #0x88
 	ldrh r1, [r0]
@@ -33227,7 +33227,7 @@ sub_0802EB5C: @ 0x0802EB5C
 	bl sub_0800399C
 	b _0802EB9A
 	.align 2, 0
-_0802EB8C: .4byte gUnknown_080D0D28
+_0802EB8C: .4byte gEnemyData
 _0802EB90: .4byte 0xFFFFFF00
 _0802EB94:
 	ldrh r0, [r2, #2]
@@ -44698,7 +44698,7 @@ sub_080343B8: @ 0x080343B8
 	adds r5, r0, #0
 _080343F0:
 	adds r0, r4, #0
-	bl get_char_data
+	bl get_guest_stats
 	adds r0, #0x30
 	ldrb r1, [r0]
 	ands r1, r5
@@ -44740,7 +44740,7 @@ _0803443E:
 	cmp r4, r0
 	bhs _0803445E
 	adds r0, r4, #0
-	bl get_char_data
+	bl get_guest_stats
 	adds r0, #0x30
 	ldrb r1, [r0]
 	movs r0, #8
@@ -45108,7 +45108,7 @@ _08034736:
 	b _08034760
 _0803473A:
 	movs r0, #0
-	bl get_char_data
+	bl get_guest_stats
 	adds r1, r4, #0
 	adds r1, #0x88
 	ldrh r2, [r1]
@@ -45150,7 +45150,7 @@ _08034780: .4byte gScript
 _08034784: .4byte 0x0000829B
 _08034788:
 	movs r0, #0
-	bl get_char_data
+	bl get_guest_stats
 	adds r1, r4, #0
 	adds r1, #0x88
 	ldrh r2, [r1]
@@ -53428,7 +53428,7 @@ sub_08038600: @ 0x08038600
 	adds r7, r0, #0
 _08038620:
 	adds r0, r5, #0
-	bl get_char_data
+	bl get_guest_stats
 	adds r4, r0, #0
 	ldrb r0, [r4]
 	cmp r0, #0
@@ -53570,7 +53570,7 @@ _0803872A:
 	lsls r6, r2, #0x10
 _08038744:
 	adds r0, r5, #0
-	bl get_char_data
+	bl get_guest_stats
 	adds r4, r0, #0
 	ldrb r0, [r4]
 	cmp r0, #0
@@ -103898,7 +103898,7 @@ _08051E1E:
 	ldrb r1, [r2]
 	movs r0, #0x6c
 	muls r1, r0, r1
-	ldr r0, _08051F44 @ =gUnknown_02004110
+	ldr r0, _08051F44 @ =gGuestStats
 	adds r4, r1, r0
 	ldrb r0, [r4]
 	ldr r1, [sp, #0x2c]
@@ -103952,7 +103952,7 @@ _08051F34: .4byte gSave
 _08051F38: .4byte gUnknown_02016028
 _08051F3C: .4byte 0x00002DFA
 _08051F40: .4byte 0x0000081E
-_08051F44: .4byte gUnknown_02004110
+_08051F44: .4byte gGuestStats
 _08051F48: .4byte gUnknown_0200F920
 _08051F4C:
 	ldr r2, _08051F7C @ =gUnknown_0200F920
@@ -104139,7 +104139,7 @@ sub_080520A0: @ 0x080520A0
 	ldr r0, _080520F8 @ =0x00002CB0
 	adds r6, r5, r0
 	adds r5, r4, #0
-	ldr r4, _080520FC @ =gUnknown_02004110
+	ldr r4, _080520FC @ =gGuestStats
 _080520CE:
 	adds r0, r3, r2
 	ldrb r0, [r0]
@@ -104163,7 +104163,7 @@ _080520EA:
 _080520F0: .4byte gUnknown_02016028
 _080520F4: .4byte 0x00002DFA
 _080520F8: .4byte 0x00002CB0
-_080520FC: .4byte gUnknown_02004110
+_080520FC: .4byte gGuestStats
 
 	thumb_func_start sub_08052100
 sub_08052100: @ 0x08052100
@@ -110432,11 +110432,11 @@ sub_08054FCC: @ 0x08054FCC
 	lsrs r0, r0, #0x10
 	movs r1, #0x6c
 	muls r0, r1, r0
-	ldr r1, _08054FDC @ =gUnknown_02004110
+	ldr r1, _08054FDC @ =gGuestStats
 	adds r0, r0, r1
 	bx lr
 	.align 2, 0
-_08054FDC: .4byte gUnknown_02004110
+_08054FDC: .4byte gGuestStats
 
 	thumb_func_start sub_08054FE0
 sub_08054FE0: @ 0x08054FE0
@@ -110509,7 +110509,7 @@ _08055044:
 
 	thumb_func_start sub_0805504C
 sub_0805504C: @ 0x0805504C
-	ldr r2, _08055064 @ =gUnknown_080CC4E8
+	ldr r2, _08055064 @ =gLevelInfo
 	ldrb r1, [r0]
 	lsls r0, r1, #2
 	adds r0, r0, r1
@@ -110521,7 +110521,7 @@ sub_0805504C: @ 0x0805504C
 	ldrb r0, [r0]
 	bx lr
 	.align 2, 0
-_08055064: .4byte gUnknown_080CC4E8
+_08055064: .4byte gLevelInfo
 
 	thumb_func_start sub_08055068
 sub_08055068: @ 0x08055068
@@ -112590,7 +112590,7 @@ sub_08055FD4: @ 0x08055FD4
 	bl sub_08003B58
 	movs r0, #1
 	bl sub_08003B58
-	ldr r2, _08056010 @ =gUnknown_080D0D28
+	ldr r2, _08056010 @ =gEnemyData
 	ldr r0, _08056014 @ =gUnknown_020047E0
 	movs r3, #0xc
 	ldrsh r1, [r0, r3]
@@ -112606,7 +112606,7 @@ sub_08055FD4: @ 0x08055FD4
 	bx r0
 	.align 2, 0
 _0805600C: .4byte gUnknown_03004B00
-_08056010: .4byte gUnknown_080D0D28
+_08056010: .4byte gEnemyData
 _08056014: .4byte gUnknown_020047E0
 _08056018: .4byte 0xFFFFFF00
 
@@ -112872,7 +112872,7 @@ _08056210:
 	ldrb r1, [r0]
 	movs r0, #0x6c
 	muls r1, r0, r1
-	ldr r0, _08056298 @ =gUnknown_02004110
+	ldr r0, _08056298 @ =gGuestStats
 	adds r4, r1, r0
 	adds r0, r6, #0
 	bl sub_08054FF0
@@ -112936,7 +112936,7 @@ _08056276:
 	.align 2, 0
 _08056290: .4byte 0x000003E7
 _08056294: .4byte gSave
-_08056298: .4byte gUnknown_02004110
+_08056298: .4byte gGuestStats
 
 	thumb_func_start sub_0805629C
 sub_0805629C: @ 0x0805629C
@@ -123559,7 +123559,7 @@ sub_0805B528: @ 0x0805B528
 	push {r5, r6, r7}
 	sub sp, #0xc
 	movs r7, #0
-	ldr r0, _0805B5E0 @ =gUnknown_02004110
+	ldr r0, _0805B5E0 @ =gGuestStats
 	mov sl, r0
 	movs r1, #0
 	mov sb, r1
@@ -123569,7 +123569,7 @@ _0805B53E:
 	lsls r0, r0, #4
 	adds r0, r0, r7
 	lsls r0, r0, #2
-	ldr r2, _0805B5E4 @ =gUnknown_080CC4E8
+	ldr r2, _0805B5E4 @ =gLevelInfo
 	adds r0, r0, r2
 	ldrh r4, [r0, #2]
 	mov r0, sp
@@ -123611,7 +123611,7 @@ _0805B56E:
 	lsls r5, r0, #2
 	ldr r3, _0805B5F0 @ =gUnknown_080CC4EC
 	adds r7, r1, #0
-	ldr r6, _0805B5E0 @ =gUnknown_02004110
+	ldr r6, _0805B5E0 @ =gGuestStats
 _0805B5A0:
 	lsls r0, r4, #1
 	adds r0, r0, r5
@@ -123645,8 +123645,8 @@ _0805B5BA:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0805B5E0: .4byte gUnknown_02004110
-_0805B5E4: .4byte gUnknown_080CC4E8
+_0805B5E0: .4byte gGuestStats
+_0805B5E4: .4byte gLevelInfo
 _0805B5E8: .4byte gUnknown_0200414C
 _0805B5EC: .4byte gUnknown_02004148
 _0805B5F0: .4byte gUnknown_080CC4EC
@@ -124416,14 +124416,14 @@ sub_0805BB34: @ 0x0805BB34
 	movs r0, #0x6c
 	adds r2, r1, #0
 	muls r2, r0, r2
-	ldr r0, _0805BC74 @ =gUnknown_02004110
+	ldr r0, _0805BC74 @ =gGuestStats
 	adds r7, r2, r0
 	lsls r4, r1, #2
 	adds r4, r4, r1
 	lsls r4, r4, #4
 	adds r4, r4, r1
 	lsls r4, r4, #2
-	ldr r0, _0805BC78 @ =gUnknown_080CC4E8
+	ldr r0, _0805BC78 @ =gLevelInfo
 	adds r4, r4, r0
 	mov r0, sp
 	adds r1, r7, #0
@@ -124563,8 +124563,8 @@ sub_0805BB34: @ 0x0805BB34
 	pop {r2}
 	bx r2
 	.align 2, 0
-_0805BC74: .4byte gUnknown_02004110
-_0805BC78: .4byte gUnknown_080CC4E8
+_0805BC74: .4byte gGuestStats
+_0805BC78: .4byte gLevelInfo
 _0805BC7C: .4byte 0xFFFFFF00
 _0805BC80: .4byte 0xFFFF00FF
 _0805BC84: .4byte 0xFF00FFFF
@@ -124583,14 +124583,14 @@ sub_0805BC8C: @ 0x0805BC8C
 	movs r0, #0x6c
 	adds r2, r1, #0
 	muls r2, r0, r2
-	ldr r0, _0805BD10 @ =gUnknown_02004110
+	ldr r0, _0805BD10 @ =gGuestStats
 	adds r7, r2, r0
 	lsls r0, r1, #2
 	adds r0, r0, r1
 	lsls r0, r0, #4
 	adds r0, r0, r1
 	lsls r0, r0, #2
-	ldr r1, _0805BD14 @ =gUnknown_080CC4E8
+	ldr r1, _0805BD14 @ =gLevelInfo
 	adds r0, r0, r1
 	str r0, [sp, #0xc0]
 	add r0, sp, #8
@@ -124639,8 +124639,8 @@ _0805BCCC:
 	str r4, [sp, #0xf4]
 	b _0805BF52
 	.align 2, 0
-_0805BD10: .4byte gUnknown_02004110
-_0805BD14: .4byte gUnknown_080CC4E8
+_0805BD10: .4byte gGuestStats
+_0805BD14: .4byte gLevelInfo
 _0805BD18:
 	ldrb r0, [r7, #0x12]
 	adds r0, #1
@@ -125030,7 +125030,7 @@ _0805C026:
 	lsls r1, r1, #4
 	adds r1, r1, r0
 	lsls r1, r1, #2
-	ldr r0, _0805C09C @ =gUnknown_080CC4E8
+	ldr r0, _0805C09C @ =gLevelInfo
 	adds r1, r1, r0
 	adds r4, r1, #0
 	adds r4, #0xc0
@@ -125080,7 +125080,7 @@ _0805C08C: .4byte 0xFFFFFF00
 _0805C090: .4byte 0xFFFF00FF
 _0805C094: .4byte 0xFF00FFFF
 _0805C098: .4byte 0x00FFFFFF
-_0805C09C: .4byte gUnknown_080CC4E8
+_0805C09C: .4byte gLevelInfo
 
 	thumb_func_start sub_0805C0A0
 sub_0805C0A0: @ 0x0805C0A0
@@ -125211,22 +125211,22 @@ sub_0805C178: @ 0x0805C178
 	movs r1, #0x6c
 	adds r3, r0, #0
 	muls r3, r1, r3
-	ldr r1, _0805C1A0 @ =gUnknown_02004110
+	ldr r1, _0805C1A0 @ =gGuestStats
 	adds r3, r3, r1
 	lsls r1, r0, #2
 	adds r1, r1, r0
 	lsls r1, r1, #4
 	adds r1, r1, r0
 	lsls r1, r1, #2
-	ldr r0, _0805C1A4 @ =gUnknown_080CC4E8
+	ldr r0, _0805C1A4 @ =gLevelInfo
 	adds r1, r1, r0
 	adds r0, r3, #0
 	bl sub_0805C1A8
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0805C1A0: .4byte gUnknown_02004110
-_0805C1A4: .4byte gUnknown_080CC4E8
+_0805C1A0: .4byte gGuestStats
+_0805C1A4: .4byte gLevelInfo
 
 	thumb_func_start sub_0805C1A8
 sub_0805C1A8: @ 0x0805C1A8
@@ -125612,7 +125612,7 @@ sub_0805C458: @ 0x0805C458
 	lsls r1, r1, #4
 	adds r1, r1, r0
 	lsls r1, r1, #2
-	ldr r0, _0805C4B0 @ =gUnknown_080CC4E8
+	ldr r0, _0805C4B0 @ =gLevelInfo
 	adds r1, r1, r0
 	ldr r6, _0805C4B4 @ =gUnknown_02004F80
 	adds r4, r1, #0
@@ -125641,7 +125641,7 @@ _0805C4A4:
 	bge _0805C482
 	b _0805C508
 	.align 2, 0
-_0805C4B0: .4byte gUnknown_080CC4E8
+_0805C4B0: .4byte gLevelInfo
 _0805C4B4: .4byte gUnknown_02004F80
 _0805C4B8:
 	adds r0, r4, #0
@@ -125656,7 +125656,7 @@ _0805C4B8:
 	lsls r1, r1, #4
 	adds r1, r1, r0
 	lsls r1, r1, #2
-	ldr r0, _0805C510 @ =gUnknown_080CC4E8
+	ldr r0, _0805C510 @ =gLevelInfo
 	adds r1, r1, r0
 	ldr r6, _0805C514 @ =gUnknown_02004F9A
 	adds r4, r1, #0
@@ -125688,7 +125688,7 @@ _0805C508:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0805C510: .4byte gUnknown_080CC4E8
+_0805C510: .4byte gLevelInfo
 _0805C514: .4byte gUnknown_02004F9A
 
 	thumb_func_start sub_0805C518
@@ -125822,9 +125822,9 @@ _0805C5E2:
 	add r2, sp, #0x18
 	mov sl, r2
 	lsls r7, r6, #3
-	ldr r3, _0805C6B8 @ =gUnknown_080CC4E8
+	ldr r3, _0805C6B8 @ =gLevelInfo
 	mov sb, r3
-	ldr r5, _0805C6BC @ =gUnknown_02004110
+	ldr r5, _0805C6BC @ =gGuestStats
 _0805C5F4:
 	mov r1, ip
 	adds r0, r4, r1
@@ -125929,8 +125929,8 @@ _0805C6A0:
 	mov pc, r0
 	.align 2, 0
 _0805C6B4: .4byte gSave
-_0805C6B8: .4byte gUnknown_080CC4E8
-_0805C6BC: .4byte gUnknown_02004110
+_0805C6B8: .4byte gLevelInfo
+_0805C6BC: .4byte gGuestStats
 _0805C6C0: .4byte gUnknown_080E1908
 _0805C6C4: .4byte _0805C6C8
 _0805C6C8: @ jump table
@@ -126224,9 +126224,9 @@ _0805C8DA:
 	movs r0, #0x3c
 	adds r0, r0, r7
 	mov sb, r0
-	ldr r1, _0805C9B0 @ =gUnknown_080CC4E8
+	ldr r1, _0805C9B0 @ =gLevelInfo
 	mov r8, r1
-	ldr r5, _0805C9B4 @ =gUnknown_02004110
+	ldr r5, _0805C9B4 @ =gGuestStats
 _0805C8F0:
 	mov r2, ip
 	adds r0, r4, r2
@@ -126331,8 +126331,8 @@ _0805C9A0:
 	mov pc, r0
 	.align 2, 0
 _0805C9AC: .4byte gSave
-_0805C9B0: .4byte gUnknown_080CC4E8
-_0805C9B4: .4byte gUnknown_02004110
+_0805C9B0: .4byte gLevelInfo
+_0805C9B4: .4byte gGuestStats
 _0805C9B8: .4byte gItemData
 _0805C9BC: .4byte _0805C9C0
 _0805C9C0: @ jump table
@@ -126938,7 +126938,7 @@ _0805CE56:
 sub_0805CE5C: @ 0x0805CE5C
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
-	ldr r2, _0805CE70 @ =gUnknown_080D0D28
+	ldr r2, _0805CE70 @ =gEnemyData
 	lsls r1, r0, #3
 	adds r1, r1, r0
 	lsls r1, r1, #4
@@ -126947,7 +126947,7 @@ sub_0805CE5C: @ 0x0805CE5C
 	ldrb r0, [r1]
 	bx lr
 	.align 2, 0
-_0805CE70: .4byte gUnknown_080D0D28
+_0805CE70: .4byte gEnemyData
 
 	thumb_func_start sub_0805CE74
 sub_0805CE74: @ 0x0805CE74
@@ -126962,7 +126962,7 @@ sub_0805CE74: @ 0x0805CE74
 	lsls r0, r5, #3
 	adds r0, r0, r5
 	lsls r0, r0, #4
-	ldr r1, _0805CF80 @ =gUnknown_080D0D28
+	ldr r1, _0805CF80 @ =gEnemyData
 	adds r0, r0, r1
 	str r0, [sp, #0x54]
 	add r0, sp, #0xc
@@ -127080,7 +127080,7 @@ sub_0805CE74: @ 0x0805CE74
 	b _0805CFBC
 	.align 2, 0
 _0805CF7C: .4byte gUnknown_02005090
-_0805CF80: .4byte gUnknown_080D0D28
+_0805CF80: .4byte gEnemyData
 _0805CF84: .4byte _vt.1D
 _0805CF88: .4byte gUnknown_09C90960
 _0805CF8C: .4byte 0x00000179

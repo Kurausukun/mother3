@@ -31,6 +31,7 @@ SECTIONS
         asm/battle.o(.text);
         asm/guest.o(.text);
         src/guest.o(.text);
+        src/guestFactory.o(.text);
         asm/goods.o(.text);
         asm/sndmon.o(.text);
         asm/code_0805D74C.o(.text);
@@ -60,7 +61,7 @@ SECTIONS
         src/skill.o(.text);
         asm/player.o(.text);
         asm/playerskill.o(.text);
-        src/guestskill.o(.text);
+        src/guestSkill.o(.text);
         asm/monster.o(.text);
         asm/monsterskill.o(.text);
         asm/psi.o(.text);

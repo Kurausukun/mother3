@@ -1,8 +1,77 @@
 #include "guest.h"
+#include "core/battle.h"
 
-Base* sub_08061E20(Base*, u32);
+extern "C" u32 sub_08001C5C(u32, u16);
+extern "C" u16 sub_08001DB0(u32);
+extern "C" void sub_0806E238(Base*, u32, u32);
 
-// guest_2c8 dependant on GuestSkill
+extern ClockData gUnknown_080F6D8C;
+extern ClockData gUnknown_080F6D94;
+
+void battle_end_callback(Guest* g) {
+    g->base_64();
+}
+
+SINGLETON_IMPL(Guest);
+
+Base* sub_08061E20(Base* b, u32 c) {
+    sub_0806E238(b, sub_08001C5C(6, c), sub_08001DB0(6));
+    return b;
+}
+
+Guest::Guest(u16 id) : _f8(id), mStats(&gGuestStats[id]), mLevelInfo(&gLevelInfo[id]) {
+    setupStats();
+
+    registerClock(BattleSingleton::get(), RoundBegin(), gUnknown_080F6D8C);
+    registerClock(BattleSingleton::get(), RoundEnd(), gUnknown_080F6D94);
+}
+
+void Guest::setupStats() {
+    setMaxHP(mStats->maxHP);
+    setHP(mStats->curHP);
+    setMaxPP(mStats->maxPP);
+    setPP(mStats->curPP);
+    setIQ(mStats->iq);
+    setSpeed(mStats->speed);
+    unit_148(mStats->_2c);
+    unit_150(mStats->_2d);
+    unit_158(mStats->_2e);
+}
+
+Guest::~Guest() {}
+
+u8 Guest::unit_d0() {
+    if (Unit::unit_d0() != 1) {
+        return false;
+    }
+
+    Unit* tmp = guest_2c0();
+    if (tmp == 0) {
+        return false;
+    }
+
+    if (guest_2c8(tmp) != 1) {
+        delete tmp;
+        return false;
+    }
+
+    u8 result = unit_70(tmp);
+    delete tmp;
+    return result;
+}
+
+Unit* Guest::guest_2c0() {
+    return NULL;
+}
+
+bool Guest::guest_2e8(Skill* skill) {
+    AttackData data(skill->getAttackMult(), skill->skill_168());
+    u32 unk = data.attackdata_c8();
+    for (int i = 0; i < data.attackdata_110(); ++i) {
+        skill->skill_170(data.attackdata_118(i));
+    }
+    return unk == 0;
+}
 
 bool Guest::unit_178() {
     return false;
@@ -18,7 +87,7 @@ Unit* Guest::unit_188(Unit* u) {
 }
 
 s32 Guest::getLevel() const {
-    return _fc[0x12];
+    return mStats->level;
 }
 
 bool Guest::unit_208() {
@@ -44,19 +113,3 @@ void guest_callback2(Guest* p) {
 }
 
 void Guest::guest_2d8() {}
-
-NAKED void guest_sinit() {
-    asm_unified("\n\
-	push {r4, lr}\n\
-	ldr r4, _08062204 @ =gUnknown_02002318\n\
-	adds r0, r4, #0\n\
-	bl __9Singleton\n\
-	ldr r0, _08062208 @ =vt_09F4BD38\n\
-	str r0, [r4, #8]\n\
-	pop {r4}\n\
-	pop {r0}\n\
-	bx r0\n\
-	.align 2, 0\n\
-_08062204: .4byte gUnknown_02002318\n\
-_08062208: .4byte vt_09F4BD38\n");
-}

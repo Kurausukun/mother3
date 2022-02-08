@@ -14,7 +14,7 @@ extern "C" void destroy__10IrcManager();
 extern "C" u16 sub_080029BC(u32);
 extern "C" void sub_080026C0();
 extern "C" KeyPad* sub_0806CC10();
-extern "C" void sub_08001718();
+extern "C" void DoReset();
 
 void* operator new(size_t size, void* ptr);
 
@@ -154,7 +154,7 @@ void sub_0805D74C(System* system) {
 void System::sub_0805D768() {
     u16 keys = sub_0806CC10()->getKeys();
     if (keys == 0xF)
-        sub_08001718();
+        DoReset();
 }
 
 // global constructor @ 0805D784

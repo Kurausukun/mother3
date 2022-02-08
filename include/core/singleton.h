@@ -23,24 +23,26 @@ struct Singleton {
 
     // todo: make pure virtual once children are finished
     virtual const char* getName();  // = 0;
-    virtual void* init();           // = 0;
 
-    Singleton* prev;
+    Singleton* prev; // debug related?
     Singleton* next;
 };
 
 #define SINGLETON(CLASS)                                                                           \
     struct CLASS##Singleton : Singleton {                                                          \
         virtual const char* getName();                                                             \
-        virtual void* init();                                                                      \
+                                                                                                   \
+        static void* init(u16 id);                                                                 \
+        static void* get();                                                                        \
     };
 
 #define SINGLETON_IMPL(CLASS)                                                                      \
     CLASS##Singleton s##CLASS##Singleton;                                                          \
                                                                                                    \
-    Singleton* CLASS##Singleton_get() { return &s##CLASS##Singleton; }                             \
+    void* CLASS##Singleton::get() { return &s##CLASS##Singleton; }                     \
                                                                                                    \
-    void* CLASS::getInstance() { return CLASS##Singleton_get(); }
+    /* this is implementing a CLASS member function!!! */                                          \
+    void* CLASS::getInstance() { return CLASS##Singleton::get(); }
 
 #define SINGLETON_MGR(CLASS)                                                                       \
     struct CLASS##Manager : Singleton {                                                            \

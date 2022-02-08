@@ -25,4 +25,9 @@
 #define END_NONMATCH }
 #endif
 
+// agbcc stddef.h doesnt have this
+#ifdef __cplusplus
+#define NULL 0
+#endif
+
 #endif  // GUARD_GLOBAL_H

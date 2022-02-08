@@ -56,36 +56,41 @@ struct Fit {
     void* data;
 };
 
-struct List {
-    struct Node {
-        ~Node() {
-            delete[] stuff;
+// thanks to: maide, pixel, ibot02
+template <class T>
+struct Vector {
+    Vector() {
+        capacity = 0;
+        size = 0;
+        storage = (T*)NULL;
+    }
+
+    ~Vector() {
+        size = 0;
+        delete[] storage;
+    }
+
+    void append(const T& data) {
+        s32 new_size = size + 1;
+        if (capacity < new_size) {
+            new_size = max(4, new_size * 2);
+            T* dest = new T[new_size];
+            T* src = storage;
+            T* dest_copy = dest;
+            for (int i = 0; i < size; i++) {
+                *dest_copy++ = *src++;
+            }
+            delete[] storage;
+            capacity = new_size;
+            storage = dest;
         }
 
-        u8* _4;
-        u8* _8;
-        u8* _c;
-        u8* stuff;
-    };
-
-    List() {
-        _0 = 0;
-        size = 0;
-        nodes = 0;
+        storage[size++] = data;
     }
 
-    ~List() {
-        size = 0;
-        delete[] nodes;
-    }
-
-    union {
-        void* _0;
-        char sig[4];
-        s32 sig32;
-    };
+    s32 capacity;
     s32 size;
-    Node* nodes;
+    T* storage;
 };
 
 class FitAllocator {

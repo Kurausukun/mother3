@@ -1,4 +1,5 @@
 #include "gba/gba.h"
+#include "guest.h"
 #include "structs.h"
 
 static void sub_080002E0();
@@ -49,7 +50,7 @@ extern "C" void sub_08000838();
 extern "C" void sub_080008E0();
 extern "C" void sub_08003720();
 extern "C" void sub_08000904();
-extern "C" void sub_08001718();
+extern "C" void DoReset();
 extern "C" void sub_08000910();
 extern "C" void sub_08000920();
 extern "C" void sub_080004D8();
@@ -132,7 +133,7 @@ extern "C" void AgbMain() {
     sub_08003720();
     sub_08000904();
     sub_080002E0();
-    sub_08001718();
+    DoReset();
 }
 
 void sub_080002E0() {
@@ -464,7 +465,7 @@ void sub_08000944() {
         gSave._236[i] = 0;
     }
     for (i = 0; i < 0x100; ++i) {
-        gSave._240[i] = 0;
+        gSave.event_flags[i] = 0;
     }
     for (i = 0; i < 0x40; ++i) {
         gSave._340[i] = 0;
@@ -532,41 +533,41 @@ void sub_08000944() {
 void sub_08000BE8() {
     u32 tmp = sub_08001DB0(5);
     for (u16 i = 0; i < 0x10; ++i) {
-        sub_08001B54(&gUnknown_02004110[i].name, sizeof gUnknown_02004110[i].name, -1);
-        sub_08002420(&gUnknown_02004110[i].name, sub_08001C5C(6, i), tmp);
+        sub_08001B54(&gGuestStats[i].name, sizeof gGuestStats[i].name, -1);
+        sub_08002420(&gGuestStats[i].name, sub_08001C5C(6, i), tmp);
     }
-    gUnknown_02004110[0].charNo = 0;
-    gUnknown_02004110[0].spriteNo = 0;
-    gUnknown_02004110[1].charNo = 1;
-    gUnknown_02004110[1].spriteNo = 1;
-    gUnknown_02004110[2].charNo = 2;
-    gUnknown_02004110[2].spriteNo = 3;
-    gUnknown_02004110[3].charNo = 3;
-    gUnknown_02004110[3].spriteNo = 15;
-    gUnknown_02004110[4].charNo = 4;
-    gUnknown_02004110[4].spriteNo = 11;
-    gUnknown_02004110[5].charNo = 5;
-    gUnknown_02004110[5].spriteNo = 9;
-    gUnknown_02004110[6].charNo = 6;
-    gUnknown_02004110[6].spriteNo = 18;
-    gUnknown_02004110[7].charNo = 7;
-    gUnknown_02004110[7].spriteNo = 14;
-    gUnknown_02004110[8].charNo = 8;
-    gUnknown_02004110[8].spriteNo = 32;
-    gUnknown_02004110[9].charNo = 9;
-    gUnknown_02004110[9].spriteNo = 116;
-    gUnknown_02004110[10].charNo = 10;
-    gUnknown_02004110[10].spriteNo = 86;
-    gUnknown_02004110[11].charNo = 11;
-    gUnknown_02004110[11].spriteNo = 88;
-    gUnknown_02004110[12].charNo = 12;
-    gUnknown_02004110[12].spriteNo = 17;
-    gUnknown_02004110[13].charNo = 13;
-    gUnknown_02004110[13].spriteNo = 5;
-    gUnknown_02004110[14].charNo = 0;
-    gUnknown_02004110[14].spriteNo = 0;
-    gUnknown_02004110[15].charNo = 0;
-    gUnknown_02004110[15].spriteNo = 0;
+    gGuestStats[0].charNo = 0;
+    gGuestStats[0].spriteNo = 0;
+    gGuestStats[1].charNo = 1;
+    gGuestStats[1].spriteNo = 1;
+    gGuestStats[2].charNo = 2;
+    gGuestStats[2].spriteNo = 3;
+    gGuestStats[3].charNo = 3;
+    gGuestStats[3].spriteNo = 15;
+    gGuestStats[4].charNo = 4;
+    gGuestStats[4].spriteNo = 11;
+    gGuestStats[5].charNo = 5;
+    gGuestStats[5].spriteNo = 9;
+    gGuestStats[6].charNo = 6;
+    gGuestStats[6].spriteNo = 18;
+    gGuestStats[7].charNo = 7;
+    gGuestStats[7].spriteNo = 14;
+    gGuestStats[8].charNo = 8;
+    gGuestStats[8].spriteNo = 32;
+    gGuestStats[9].charNo = 9;
+    gGuestStats[9].spriteNo = 116;
+    gGuestStats[10].charNo = 10;
+    gGuestStats[10].spriteNo = 86;
+    gGuestStats[11].charNo = 11;
+    gGuestStats[11].spriteNo = 88;
+    gGuestStats[12].charNo = 12;
+    gGuestStats[12].spriteNo = 17;
+    gGuestStats[13].charNo = 13;
+    gGuestStats[13].spriteNo = 5;
+    gGuestStats[14].charNo = 0;
+    gGuestStats[14].spriteNo = 0;
+    gGuestStats[15].charNo = 0;
+    gGuestStats[15].spriteNo = 0;
     sub_0805B528();
 }
 
