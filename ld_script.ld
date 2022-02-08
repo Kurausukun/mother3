@@ -106,6 +106,8 @@ SECTIONS
         *libc.a:lseekr.o(.text);
         *libc.a:readr.o(.text);
 
+        *libc.a:*(.text);
+
         src/rom3.o(.text);
         asm/rom3a.o(.text);
         asm/rom3.o(.text);
@@ -118,7 +120,6 @@ SECTIONS
     .data :
 	ALIGN(4)
     {
-
         data/data1.o(.rodata);
         data/data2.o(.rodata);
 
@@ -129,6 +130,8 @@ SECTIONS
         *libc.a:locale.o(.rodata);
         *libc.a:mprec.o(.rodata);
 
+        *.o(.rodata);
+
         data/data3.o(.data);
 
         *libc.a:impure.o(.data);
@@ -136,7 +139,6 @@ SECTIONS
         *libc.a:locale.o(.data);
 
         data/vtables.o(.data);
-
     } = 0
 
     endl__FR7ostream = 0;

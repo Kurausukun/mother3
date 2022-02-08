@@ -928,7 +928,9 @@ gUnknown_0918177C:
 
     .global gUnknown_09198C10
 gUnknown_09198C10:
+.if !DEBUG
     .incbin "baserom.gba", 0x01198C10, 0x1d1ae4
+.endif
 
     .global gUnknown_0936A6F4
 gUnknown_0936A6F4:
