@@ -82,7 +82,7 @@ extern "C" void sub_080037BC();
 extern "C" void sub_0800303C();
 extern "C" void sub_08000944();
 extern "C" void sub_08000BE8();
-extern "C" u32 sub_08002970(u32);
+extern "C" u32 get_flag(u32);
 extern "C" void sub_08000944();
 extern "C" void sub_08000BE8();
 extern "C" u32 sub_08001DB0(u32);
@@ -436,7 +436,7 @@ void sub_08000910() {
 }
 
 void sub_08000920() {
-    u16 val = sub_08002970(157);
+    u16 val = get_flag(157);
     sub_08000944();
     set_event_flag(157, val);
     sub_08000BE8();

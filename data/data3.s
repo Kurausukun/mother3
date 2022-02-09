@@ -401,80 +401,80 @@ gUnknown_08D2D658:
 
     .global gScriptCmdTable
 gScriptCmdTable:
-           .4byte sub_0801BF48+1
-           .4byte sub_0801BF84+1
+           .4byte cmd_delay+1
+           .4byte cmd_set_anim_speed+1
            .4byte 00000000      
-           .4byte sub_0801BFFC+1
-           .4byte sub_0801C044+1
-           .4byte sub_0801C074+1
-           .4byte sub_0801C0FC+1
-           .4byte sub_0801C178+1
-           .4byte sub_0801C1D0+1
+           .4byte cmd_load_subscript+1
+           .4byte cmd_04+1
+           .4byte cmd_05+1
+           .4byte cmd_06+1
+           .4byte cmd_07+1
+           .4byte cmd_reload_room+1
            .4byte 00000000      
-           .4byte sub_0801C4A4+1
-           .4byte sub_0801C4D8+1
-           .4byte sub_0801C508+1
-           .4byte sub_0801C534+1
-           .4byte sub_0801C560+1
-           .4byte sub_0801C584+1
-           .4byte sub_0801C5A8+1
-           .4byte sub_0801C5E8+1
-           .4byte sub_0801C620+1
+           .4byte cmd_set_flag+1
+           .4byte cmd_0B+1
+           .4byte cmd_0C+1
+           .4byte cmd_push_flag+1
+           .4byte cmd_0E+1
+           .4byte cmd_0F+1
+           .4byte cmd_flag_equals+1
+           .4byte cmd_11+1
+           .4byte cmd_12+1
            .4byte 00000000      
-           .4byte sub_0801C6E4+1
-           .4byte sub_0801C730+1
-           .4byte sub_0801C74C+1
-           .4byte sub_0801C760+1
-           .4byte sub_0801C774+1
-           .4byte sub_0801C79C+1
-           .4byte sub_0801C830+1
-           .4byte sub_0801C84C+1
-           .4byte sub_0801C88C+1
-           .4byte sub_0801C924+1
-           .4byte sub_0801C8C8+1
-           .4byte sub_0801C970+1
-           .4byte sub_0801C9CC+1
-           .4byte sub_0801CA14+1
-           .4byte sub_0801CA48+1
-           .4byte sub_0801CA74+1
-           .4byte sub_0801CA8C+1
-           .4byte sub_0801CAB4+1
-           .4byte sub_0801CAC8+1
-           .4byte sub_0801CADC+1
-           .4byte sub_0801CAFC+1
-           .4byte sub_0801CB48+1
-           .4byte sub_0801CC28+1
-           .4byte sub_0801CC70+1
-           .4byte sub_0801CD20+1
-           .4byte sub_0801CE00+1
-           .4byte sub_0801CE48+1
-           .4byte sub_0801CE68+1
-           .4byte sub_0801CE84+1
-           .4byte sub_0801CBA4+1
-           .4byte sub_0801D6FC+1
-           .4byte sub_0801D864+1
-           .4byte sub_0801D9C4+1
-           .4byte sub_0801D9F8+1
-           .4byte sub_0801DA2C+1
-           .4byte sub_0801DA48+1
-           .4byte sub_0801DA7C+1
-           .4byte sub_0801DB10+1
-           .4byte sub_0801DB48+1
-           .4byte sub_0801DBB0+1
-           .4byte sub_0801DBBC+1
-           .4byte sub_0801DCC0+1
-           .4byte sub_0801DDB4+1
-           .4byte sub_0801DDB8+1
-           .4byte sub_0801DE30+1
-           .4byte sub_0801DEDC+1
-           .4byte sub_0801DF88+1
-           .4byte sub_0801E0E0+1
-           .4byte sub_0801E120+1
-           .4byte sub_0801E14C+1
-           .4byte sub_0801E164+1
-           .4byte sub_0801E17C+1
-           .4byte sub_0801E1F0+1
-           .4byte sub_0801E2AC+1
+           .4byte cmd_14+1
+           .4byte cmd_push_map_id+1
+           .4byte cmd_add_pocket+1
+           .4byte cmd_push_pocket+1
+           .4byte cmd_set_key_item+1
+           .4byte cmd_get_item_count+1
+           .4byte cmd_get_party_size+1
+           .4byte cmd_has_party_member+1
+           .4byte cmd_has_party_member_2+1
+           .4byte cmd_party_heal+1
+           .4byte cmd_party_add+1
+           .4byte cmd_party_remove+1
+           .4byte cmd_20+1
+           .4byte cmd_set_giftbox_flag+1
+           .4byte cmd_get_giftbox_flag+1
+           .4byte cmd_member_heal+1
+           .4byte cmd_24+1
+           .4byte cmd_add_bank+1
+           .4byte cmd_get_bank+1
+           .4byte cmd_27+1
+           .4byte cmd_28+1
+           .4byte cmd_29+1
+           .4byte cmd_2A+1
+           .4byte cmd_cfg_member+1
+           .4byte cmd_cfg_member_item+1
+           .4byte cmd_get_hp_pp+1
+           .4byte cmd_2E+1
+           .4byte cmd_2F+1
+           .4byte cmd_set_ailment+1
+           .4byte cmd_31+1
+           .4byte cmd_disp_msg+1
+           .4byte cmd_disp_msg_0+1
+           .4byte cmd_34+1
+           .4byte cmd_35+1
+           .4byte cmd_get_menu_selection+1
+           .4byte cmd_37+1
+           .4byte cmd_38+1
+           .4byte cmd_load_name+1
+           .4byte cmd_3A+1
+           .4byte cmd_3B+1
+           .4byte cmd_change_room+1
+           .4byte cmd_3D+1
+           .4byte cmd_3E+1
+           .4byte cmd_3F+1
+           .4byte cmd_pan_to_pos+1
+           .4byte cmd_41+1
+           .4byte cmd_pan_to_map_pos+1
+           .4byte cmd_43+1
+           .4byte cmd_44+1
+           .4byte cmd_45+1
+           .4byte cmd_46+1
+           .4byte cmd_47+1
+           .4byte cmd_48+1
+           .4byte cmd_cam_follow_sprite+1
            .4byte sub_0801E2FC+1
            .4byte sub_0801E3D0+1
            .4byte sub_0801E430+1
@@ -928,9 +928,7 @@ gUnknown_0918177C:
 
     .global gUnknown_09198C10
 gUnknown_09198C10:
-.if !DEBUG
     .incbin "baserom.gba", 0x01198C10, 0x1d1ae4
-.endif
 
     .global gUnknown_0936A6F4
 gUnknown_0936A6F4:

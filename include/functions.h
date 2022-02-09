@@ -24,7 +24,7 @@ void sub_0802610C(u32);
 void set_event_flag(u32, u32);
 void sub_08002938(u32, u32);
 void sub_08002950(u32, u32);
-u16 sub_08002970(u32);
+u16 get_flag(u32);
 u32 sub_080029BC(u32);
 u32 sub_080029D4(u32);
 void sub_080218B0(u32, u32);

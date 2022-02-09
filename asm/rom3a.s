@@ -13882,7 +13882,7 @@ sub_0809E910: @ 0x0809E910
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r0, _0809E948 @ =0x000002F1
-	bl sub_08002970
+	bl get_flag
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, #1

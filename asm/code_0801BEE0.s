@@ -4757,7 +4757,7 @@ sub_08020D04: @ 0x08020D04
 	strh r7, [r0]
 	movs r0, #0x82
 	lsls r0, r0, #3
-	bl sub_08002970
+	bl get_flag
 	lsls r0, r0, #0x10
 	cmp r0, #0
 	beq _08020DEE
@@ -15565,7 +15565,7 @@ _080263E6:
 	b _08026412
 _080263F0:
 	adds r0, r1, #0
-	bl sub_08002970
+	bl get_flag
 	b _0802640E
 _080263F8:
 	adds r0, r1, #0
@@ -25599,7 +25599,7 @@ sub_0802B188: @ 0x0802B188
 	push {r4, r5, r6, r7, lr}
 	movs r0, #0xfa
 	lsls r0, r0, #2
-	bl sub_08002970
+	bl get_flag
 	lsls r0, r0, #0x10
 	cmp r0, #0
 	beq _0802B19A
@@ -26097,7 +26097,7 @@ _0802B576:
 sub_0802B57C: @ 0x0802B57C
 	push {lr}
 	ldr r0, _0802B5B4 @ =0x00000315
-	bl sub_08002970
+	bl get_flag
 	lsls r0, r0, #0x10
 	cmp r0, #0
 	bne _0802B5AE
@@ -26146,7 +26146,7 @@ sub_0802B5D8: @ 0x0802B5D8
 	push {r5, r6, r7}
 	movs r0, #0xfa
 	lsls r0, r0, #2
-	bl sub_08002970
+	bl get_flag
 	lsls r0, r0, #0x10
 	cmp r0, #0
 	beq _0802B5F2
@@ -36704,7 +36704,7 @@ _080305FA:
 	orrs r0, r1
 	strb r0, [r4]
 	ldr r0, _080306AC @ =0x000002DE
-	bl sub_08002970
+	bl get_flag
 	lsls r0, r0, #0x10
 	cmp r0, #0
 	beq _08030670
@@ -47706,7 +47706,7 @@ sub_08035A88: @ 0x08035A88
 	cmp r0, #0
 	beq _08035ABE
 	ldr r0, _08035ADC @ =0x000003E3
-	bl sub_08002970
+	bl get_flag
 	lsls r0, r0, #0x10
 	cmp r0, #0
 	bne _08035ACA
@@ -54714,7 +54714,7 @@ _0803906E:
 	cmp r2, r0
 	beq _0803913A
 	adds r0, r2, #0
-	bl sub_08002970
+	bl get_flag
 	lsls r0, r0, #0x10
 	cmp r0, #0
 	beq _0803913A
@@ -105432,7 +105432,7 @@ _08052A84:
 	lsls r5, r4, #1
 	adds r0, r5, r0
 	ldrh r0, [r0]
-	bl sub_08002970
+	bl get_flag
 	lsls r0, r0, #0x10
 	cmp r0, #0
 	beq _08052AD4
@@ -105444,7 +105444,7 @@ _08052A84:
 	ldr r0, _08052AF8 @ =gUnknown_080C70A8
 	adds r0, r5, r0
 	ldrh r0, [r0]
-	bl sub_08002970
+	bl get_flag
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	movs r1, #1
