@@ -154,8 +154,8 @@
 . = 0x00002210; gUnknown_02002210 = .;
 . = 0x00002214; gUnknown_02002214 = .;
 . = 0x00002218; gUnknown_02002218 = .;
-. = 0x00002318; gUnknown_02002318 = .;
-. = 0x00002328; gUnknown_02002328 = .;
+. = 0x00002318; sGuestSingleton = .;
+. = 0x00002328; sGuestSpawners = .;
 . = 0x00002368; sGuestSkillSingleton = .;
 . = 0x00002378; gUnknown_02002378 = .;
 . = 0x00002508; gUnknown_02002508 = .;
@@ -179,7 +179,7 @@
 . = 0x000040EC; gUnknown_020040EC = .;
 . = 0x000040F0; gUnknown_020040F0 = .;
 . = 0x00004100; gUnknown_02004100 = .;
-. = 0x00004110; gUnknown_02004110 = .;
+. = 0x00004110; gGuestStats = .;
 . = 0x00004112; gUnknown_02004112 = .;
 . = 0x00004148; gUnknown_02004148 = .;
 . = 0x0000414C; gUnknown_0200414C = .;
@@ -202,7 +202,7 @@
 . = 0x00004970; gUnknown_02004970 = .;
 . = 0x00004A8C; gUnknown_02004A8C = .;
 . = 0x00004A96; gUnknown_02004A96 = .;
-. = 0x00004AA0; gUnknown_02004AA0 = .;
+. = 0x00004AA0; gEventFlags = .;
 . = 0x00004BA0; gUnknown_02004BA0 = .;
 . = 0x00004C60; gUnknown_02004C60 = .;
 . = 0x00004CE2; gUnknown_02004CE2 = .;

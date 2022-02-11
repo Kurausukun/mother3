@@ -56,31 +56,6 @@ struct Sprite {
     u8 _ca;
 };
 
-struct CharData {
-    u8 charNo;
-    u8 spriteNo;
-    u8 name[16];
-    u8 level;
-    u32 xp;
-    u32 curHP;
-    s16 curPP;
-    u32 maxHP;
-    s16 maxPP;
-    u8 offense;
-    u8 defense;
-    u8 iq;
-    u8 speed;
-    u32 _2c;
-    u8 ailments;
-    u8 weapon;
-    u8 body;
-    u8 head;
-    u8 other[4];
-    u32 inventory_lyt;
-    u8 inventory[16];
-    u16 item_timers[16];
-};
-
 struct struct_02016028 {
     u8 filler[0x2ca2];
     u16 _2ca2;
@@ -119,7 +94,7 @@ struct struct_02016028 {
     };
 };
 
-struct struct_02004860 {
+struct Save {
     u8 _0[0x8];
     u32 dp_pocket;
     u32 dp_bank;
@@ -133,7 +108,7 @@ struct struct_02004860 {
     u16 _222[5];
     u16 _22c[5];
     u16 _236[5];
-    u8 _240[0x100];
+    u8 event_flags[0x100];
     u8 _340[0x40];
     u8 _380[0x40];
     u8 _3c0[0x40];
@@ -184,9 +159,8 @@ struct struct_02004860 {
     u8 _81e;
 };
 
-extern CharData gUnknown_02004110[];
 extern ItemData gItemData[];
-extern struct_02004860 gSave;
+extern Save gSave;
 extern struct_02016028 gUnknown_02016028;
 
 #endif  // STRUCTS_H

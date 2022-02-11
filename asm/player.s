@@ -50,7 +50,7 @@ __5SkillUi: @ 0x08077F34
 	adds r0, r6, #0
 	mov r1, sb
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	ldr r0, _080781CC @ =_vt.3Unk
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -69,7 +69,7 @@ __5SkillUi: @ 0x08077F34
 	adds r0, r6, #0
 	mov r1, sb
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	ldr r1, _080781CC @ =_vt.3Unk
 	str r1, [sp, #0x20]
 	add r0, sp, #4
@@ -88,7 +88,7 @@ __5SkillUi: @ 0x08077F34
 	adds r0, r6, #0
 	mov r1, sb
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	ldr r0, _080781CC @ =_vt.3Unk
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -108,7 +108,7 @@ __5SkillUi: @ 0x08077F34
 	adds r0, r6, #0
 	mov r1, sb
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	ldr r1, _080781CC @ =_vt.3Unk
 	str r1, [sp, #0x20]
 	add r0, sp, #4
@@ -127,7 +127,7 @@ __5SkillUi: @ 0x08077F34
 	adds r0, r6, #0
 	mov r1, sb
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	ldr r0, _080781CC @ =_vt.3Unk
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -146,7 +146,7 @@ __5SkillUi: @ 0x08077F34
 	adds r0, r6, #0
 	mov r1, sb
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	ldr r1, _080781CC @ =_vt.3Unk
 	str r1, [sp, #0x20]
 	add r0, sp, #4
@@ -170,7 +170,7 @@ __5SkillUi: @ 0x08077F34
 	adds r0, r6, #0
 	mov r1, sb
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	ldr r0, _080781CC @ =_vt.3Unk
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -189,7 +189,7 @@ __5SkillUi: @ 0x08077F34
 	adds r0, r6, #0
 	mov r1, sb
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	ldr r1, _080781CC @ =_vt.3Unk
 	str r1, [sp, #0x20]
 	add r0, sp, #4
@@ -208,7 +208,7 @@ __5SkillUi: @ 0x08077F34
 	adds r0, r6, #0
 	mov r1, sb
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	ldr r0, _080781CC @ =_vt.3Unk
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -228,7 +228,7 @@ __5SkillUi: @ 0x08077F34
 	adds r0, r6, #0
 	mov r1, sb
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	ldr r1, _080781CC @ =_vt.3Unk
 	str r1, [sp, #0x20]
 	add r0, sp, #4
@@ -247,7 +247,7 @@ __5SkillUi: @ 0x08077F34
 	adds r0, r6, #0
 	mov r1, sb
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	ldr r0, _080781CC @ =_vt.3Unk
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -266,7 +266,7 @@ __5SkillUi: @ 0x08077F34
 	adds r0, r6, #0
 	mov r1, sb
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	ldr r1, _080781CC @ =_vt.3Unk
 	str r1, [sp, #0x20]
 	add r0, sp, #4
@@ -4469,9 +4469,9 @@ sub_0807A28C: @ 0x0807A28C
 	adds r2, r0, #0
 	mov r0, sp
 	adds r1, r4, #0
-	bl sub_08075BB0
+	bl __10AttackDataUsUi
 	mov r0, sp
-	bl sub_08075DD4
+	bl attackdata_c8__10AttackData
 	cmp r0, #0
 	bne _0807A394
 	ldr r0, [r6, #0x40]
@@ -4511,13 +4511,13 @@ _0807A31C:
 _0807A338:
 	mov r0, sp
 	adds r1, r4, #0
-	bl sub_080766B8
+	bl attackdata_118__10AttackDataUi
 	ldr r1, [r5, #0x20]
 	cmp r0, r1
 	beq _0807A358
 	mov r0, sp
 	adds r1, r4, #0
-	bl sub_080766B8
+	bl attackdata_118__10AttackDataUi
 	adds r1, r0, #0
 	mov r0, sp
 	bl sub_08076658
@@ -4526,7 +4526,7 @@ _0807A358:
 	adds r4, #1
 _0807A35A:
 	mov r0, sp
-	bl sub_080766B4
+	bl attackdata_110__10AttackData
 	cmp r4, r0
 	blt _0807A338
 	movs r7, #0
@@ -4541,7 +4541,7 @@ _0807A368:
 	adds r5, r6, r5
 	mov r0, sp
 	adds r1, r7, #0
-	bl sub_080766B8
+	bl attackdata_118__10AttackDataUi
 	adds r1, r0, #0
 	ldr r2, [r4, #4]
 	adds r0, r5, #0
@@ -4549,13 +4549,13 @@ _0807A368:
 	adds r7, #1
 _0807A38A:
 	mov r0, sp
-	bl sub_080766B4
+	bl attackdata_110__10AttackData
 	cmp r7, r0
 	blt _0807A368
 _0807A394:
 	mov r0, sp
 	movs r1, #2
-	bl sub_08075BF8
+	bl _._10AttackData
 _0807A39C:
 	add sp, #0x44
 	pop {r4, r5, r6, r7}
@@ -4808,9 +4808,9 @@ _0807A538:
 	adds r2, r0, #0
 	mov r0, sp
 	adds r1, r4, #0
-	bl sub_08075BB0
+	bl __10AttackDataUsUi
 	mov r0, sp
-	bl sub_08075DD4
+	bl attackdata_c8__10AttackData
 	ldr r1, [sp, #0x44]
 	mov r0, sp
 	bl sub_0807620C
@@ -4821,7 +4821,7 @@ _0807A538:
 	bge _0807A592
 	mov r0, sp
 	movs r1, #2
-	bl sub_08075BF8
+	bl _._10AttackData
 	b _0807A704
 _0807A592:
 	adds r5, r6, #0
@@ -4975,7 +4975,7 @@ _0807A69C:
 	adds r5, r6, r5
 	mov r0, sp
 	adds r1, r7, #0
-	bl sub_080766B8
+	bl attackdata_118__10AttackDataUi
 	adds r1, r0, #0
 	ldr r2, [r4, #4]
 	adds r0, r5, #0
@@ -4983,7 +4983,7 @@ _0807A69C:
 	adds r7, #1
 _0807A6BE:
 	mov r0, sp
-	bl sub_080766B4
+	bl attackdata_110__10AttackData
 	mov r1, r8
 	cmp r1, r0
 	ble _0807A6CC
@@ -5015,7 +5015,7 @@ _0807A6D0:
 _0807A6FC:
 	mov r0, sp
 	movs r1, #2
-	bl sub_08075BF8
+	bl _._10AttackData
 _0807A704:
 	add sp, #0x48
 	pop {r3, r4, r5}
@@ -5341,7 +5341,7 @@ sub_0807A904: @ 0x0807A904
 	adds r2, #0xfc
 	movs r0, #0x6c
 	muls r0, r4, r0
-	ldr r1, _0807AABC @ =gUnknown_02004110
+	ldr r1, _0807AABC @ =gGuestStats
 	adds r0, r0, r1
 	str r0, [r2]
 	movs r3, #0x80
@@ -5352,7 +5352,7 @@ sub_0807A904: @ 0x0807A904
 	lsls r0, r0, #4
 	adds r0, r0, r4
 	lsls r0, r0, #2
-	ldr r1, _0807AAC0 @ =gUnknown_080CC4E8
+	ldr r1, _0807AAC0 @ =gLevelInfo
 	adds r0, r0, r1
 	str r0, [r2]
 	movs r1, #0x82
@@ -5386,14 +5386,14 @@ sub_0807A904: @ 0x0807A904
 	adds r0, r0, r2
 	ldr r1, [r1, #4]
 	bl _call_via_r1
-	bl sub_0805D874
+	bl get__15BattleSingleton
 	mov r8, r0
 	add r4, sp, #4
 	adds r0, r4, #0
 	bl __4Base
 	ldr r0, _0807AAC8 @ =_vt.3Unk
 	mov sb, r0
-	ldr r0, _0807AACC @ =vt_09F455B0
+	ldr r0, _0807AACC @ =_vt.10RoundBegin
 	str r0, [sp, #0x20]
 	strh r6, [r4, #0x20]
 	ldr r0, _0807AAD0 @ =gUnknown_08108440
@@ -5403,18 +5403,18 @@ sub_0807A904: @ 0x0807A904
 	adds r0, r5, #0
 	mov r1, r8
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	mov r1, sb
 	str r1, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl sub_0805D874
+	bl get__15BattleSingleton
 	mov r8, r0
 	add r4, sp, #4
 	adds r0, r4, #0
 	bl __4Base
-	ldr r0, _0807AAD4 @ =vt_09F45530
+	ldr r0, _0807AAD4 @ =_vt.8RoundEnd
 	str r0, [sp, #0x20]
 	strh r6, [r4, #0x20]
 	ldr r0, _0807AAD8 @ =gUnknown_08108448
@@ -5424,13 +5424,13 @@ sub_0807A904: @ 0x0807A904
 	adds r0, r5, #0
 	mov r1, r8
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	mov r3, sb
 	str r3, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl sub_0805D874
+	bl get__15BattleSingleton
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -5443,13 +5443,13 @@ sub_0807A904: @ 0x0807A904
 	adds r0, r5, #0
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	mov r0, sb
 	str r0, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl sub_0805D874
+	bl get__15BattleSingleton
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -5462,7 +5462,7 @@ sub_0807A904: @ 0x0807A904
 	adds r0, r5, #0
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	mov r1, sb
 	str r1, [sp, #0x20]
 	add r0, sp, #4
@@ -5479,13 +5479,13 @@ sub_0807A904: @ 0x0807A904
 	.align 2, 0
 _0807AAB4: .4byte vt_09F82070
 _0807AAB8: .4byte vt_09F820E8
-_0807AABC: .4byte gUnknown_02004110
-_0807AAC0: .4byte gUnknown_080CC4E8
+_0807AABC: .4byte gGuestStats
+_0807AAC0: .4byte gLevelInfo
 _0807AAC4: .4byte 0x0000020A
 _0807AAC8: .4byte _vt.3Unk
-_0807AACC: .4byte vt_09F455B0
+_0807AACC: .4byte _vt.10RoundBegin
 _0807AAD0: .4byte gUnknown_08108440
-_0807AAD4: .4byte vt_09F45530
+_0807AAD4: .4byte _vt.8RoundEnd
 _0807AAD8: .4byte gUnknown_08108448
 _0807AADC: .4byte vt_09F453B0
 _0807AAE0: .4byte gUnknown_08108450

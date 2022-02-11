@@ -75,7 +75,7 @@ bool Unit::unit_c8() {
     return _f4.value == 1;
 }
 
-bool Unit::unit_d0() {
+u8 Unit::unit_d0() {
     if (unit_68() != 1) {
         unit_108();
         return false;
@@ -147,11 +147,11 @@ void Unit::setMaxPP(s32 pp) {
     mMaxPP = clampS32(pp, 0, 99999999);
 }
 
-void Unit::unit_138(s32 a1) {
+void Unit::setIQ(s32 a1) {
     _38 = clampS32(a1, 0, 255);
 }
 
-void Unit::unit_140(s32 a1) {
+void Unit::setSpeed(s32 a1) {
     _3a = clampS32(a1, 0, 255);
 }
 

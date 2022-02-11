@@ -100,14 +100,14 @@ sub_08082510: @ 0x08082510
 	strh r0, [r5, #0x30]
 	mov r0, r8
 	strh r0, [r5, #0x32]
-	bl sub_0805D874
+	bl get__15BattleSingleton
 	adds r6, r0, #0
 	add r4, sp, #4
 	adds r0, r4, #0
 	bl __4Base
 	ldr r0, _08082628 @ =_vt.3Unk
 	mov sb, r0
-	ldr r0, _0808262C @ =vt_09F455B0
+	ldr r0, _0808262C @ =_vt.10RoundBegin
 	str r0, [sp, #0x20]
 	mov r0, r8
 	strh r0, [r4, #0x20]
@@ -118,13 +118,13 @@ sub_08082510: @ 0x08082510
 	adds r0, r5, #0
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	mov r0, sb
 	str r0, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl sub_0805D874
+	bl get__15BattleSingleton
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -137,13 +137,13 @@ sub_08082510: @ 0x08082510
 	adds r0, r5, #0
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	mov r0, sb
 	str r0, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl sub_0805D874
+	bl get__15BattleSingleton
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -156,18 +156,18 @@ sub_08082510: @ 0x08082510
 	adds r0, r5, #0
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	mov r0, sb
 	str r0, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl sub_0805D874
+	bl get__15BattleSingleton
 	adds r6, r0, #0
 	add r4, sp, #4
 	adds r0, r4, #0
 	bl __4Base
-	ldr r0, _08082644 @ =vt_09F45530
+	ldr r0, _08082644 @ =_vt.8RoundEnd
 	str r0, [sp, #0x20]
 	mov r0, r8
 	strh r0, [r4, #0x20]
@@ -178,7 +178,7 @@ sub_08082510: @ 0x08082510
 	adds r0, r5, #0
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	mov r0, sb
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -196,13 +196,13 @@ sub_08082510: @ 0x08082510
 _08082620: .4byte vt_09F83810
 _08082624: .4byte gUnknown_080E1708
 _08082628: .4byte _vt.3Unk
-_0808262C: .4byte vt_09F455B0
+_0808262C: .4byte _vt.10RoundBegin
 _08082630: .4byte gUnknown_0810C608
 _08082634: .4byte vt_09F454B0
 _08082638: .4byte gUnknown_0810C610
 _0808263C: .4byte vt_09F45430
 _08082640: .4byte gUnknown_0810C618
-_08082644: .4byte vt_09F45530
+_08082644: .4byte _vt.8RoundEnd
 _08082648: .4byte gUnknown_0810C620
 
 	thumb_func_start sub_0808264C

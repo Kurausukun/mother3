@@ -824,7 +824,7 @@ _vt.5Clock:
 	.word	base_34__4Base
 	.short	0
 	.short	0
-	.word	registerClock__4BaseP4BaseRC4BaseG9ClockData
+	.word	registerClock__4BasePvRC4BaseG9ClockData
 	.short	0
 	.short	0
 	.word	base_44__4Base

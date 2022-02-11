@@ -541,7 +541,7 @@ sub_08081D70: @ 0x08081D70
 	lsls r4, r0, #3
 	adds r4, r4, r0
 	lsls r4, r4, #4
-	ldr r0, _08081DD8 @ =gUnknown_080D0D28
+	ldr r0, _08081DD8 @ =gEnemyData
 	adds r4, r4, r0
 	adds r0, r6, #0
 	adds r1, r5, #0
@@ -570,7 +570,7 @@ sub_08081D70: @ 0x08081D70
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08081DD8: .4byte gUnknown_080D0D28
+_08081DD8: .4byte gEnemyData
 
 	thumb_func_start sub_08081DDC
 sub_08081DDC: @ 0x08081DDC
@@ -596,7 +596,7 @@ sub_08081DDC: @ 0x08081DDC
 	lsls r4, r0, #3
 	adds r4, r4, r0
 	lsls r4, r4, #4
-	ldr r0, _08081E8C @ =gUnknown_080D0D28
+	ldr r0, _08081E8C @ =gEnemyData
 	adds r4, r4, r0
 	mov r1, r8
 	ldrh r0, [r1]
@@ -658,7 +658,7 @@ sub_08081DDC: @ 0x08081DDC
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08081E8C: .4byte gUnknown_080D0D28
+_08081E8C: .4byte gEnemyData
 
 	thumb_func_start sub_08081E90
 sub_08081E90: @ 0x08081E90
@@ -781,7 +781,7 @@ _08081F3E:
 	lsls r1, r0, #3
 	adds r1, r1, r0
 	lsls r1, r1, #4
-	ldr r0, _08081F84 @ =gUnknown_080D0D28
+	ldr r0, _08081F84 @ =gEnemyData
 	adds r1, r1, r0
 	ldr r0, [r1, #0x6c]
 	lsls r0, r0, #2
@@ -796,7 +796,7 @@ _08081F3E:
 	.align 2, 0
 _08081F7C: .4byte gUnknown_0200253C
 _08081F80: .4byte gUnknown_02002530
-_08081F84: .4byte gUnknown_080D0D28
+_08081F84: .4byte gEnemyData
 
 	thumb_func_start sub_08081F88
 sub_08081F88: @ 0x08081F88

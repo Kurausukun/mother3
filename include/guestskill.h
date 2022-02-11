@@ -1,7 +1,7 @@
 #ifndef GUESTSKILL_H
 #define GUESTSKILL_H
 
-#include "core/skill.h"
+#include "skill.h"
 
 struct GuestSkillInfo {
     u8 id;

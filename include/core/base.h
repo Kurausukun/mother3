@@ -6,8 +6,20 @@
 
 class Clock;
 class Base;
+struct Singleton;
 
 typedef void (*Callback)(Base*, Clock*);
+
+struct Listener {
+    ~Listener() {
+        delete[] stuff;
+    }
+
+    u8* _4;
+    u8* _8;
+    u8* _c;
+    u8* stuff;
+};
 
 struct BaseNode {
     Base* sender;
@@ -32,7 +44,7 @@ public:
     virtual s32 base_24();
     virtual void base_2c();
     virtual void base_34();
-    virtual void registerClock(Base* sender, const Base& receiver, ClockData data);
+    virtual void registerClock(void* target, const Base& trigger, ClockData callback);
     virtual void base_44();
     virtual void base_4c(u32 mask, Base& base, u32 mask2);
     virtual void base_54(const Base& clock);
@@ -44,7 +56,7 @@ public:
 
     s16 _0;
     s16 _2;
-    List mFit1;
+    Vector<Listener> mFit1;
     Fit mFit2;
 };
 

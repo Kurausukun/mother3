@@ -43,3 +43,5 @@ tools/
 mother3.elf.id2
 __pycache__/diff_settings.cpython-39.pyc
 ctx.c
+salsa/salsa
+salsa/salsa.exe

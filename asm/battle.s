@@ -146,8 +146,8 @@ _0805D868: .4byte gUnknown_02002010
 _0805D86C: .4byte gUnknown_02002014
 _0805D870: .4byte vt_09F45058
 
-	thumb_func_start sub_0805D874
-sub_0805D874: @ 0x0805D874
+	thumb_func_start get__15BattleSingleton
+get__15BattleSingleton: @ 0x0805D874
 	ldr r0, _0805D87C @ =gUnknown_02002014
 	ldr r0, [r0]
 	bx lr
@@ -435,7 +435,7 @@ _0805D9C6:
 	bl sub_08064834
 	bl sub_08065014
 	bl sub_08065168
-	bl sub_08062274
+	bl init__12GuestFactory
 	bl sub_08062308
 	bl sub_08063AD0
 	bl sub_08063EE4
@@ -455,7 +455,7 @@ _0805D9C6:
 	adds r0, r7, #0
 	adds r1, r6, #0
 	adds r2, r5, #0
-	bl registerClock__4BaseP4BaseRC4BaseG9ClockData
+	bl registerClock__4BasePvRC4BaseG9ClockData
 	mov r1, r8
 	str r1, [sp, #0x38]
 	adds r0, r5, #0
@@ -828,7 +828,7 @@ sub_0805DE24: @ 0x0805DE24
 	movs r1, #0
 	ldrsh r0, [r4, r1]
 	adds r5, r5, r0
-	ldr r2, _0805DEAC @ =gUnknown_080D0D28
+	ldr r2, _0805DEAC @ =gEnemyData
 	mov r8, r2
 	movs r0, #0
 	bl sub_08072E18
@@ -873,7 +873,7 @@ sub_0805DE24: @ 0x0805DE24
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0805DEAC: .4byte gUnknown_080D0D28
+_0805DEAC: .4byte gEnemyData
 
 	thumb_func_start sub_0805DEB0
 sub_0805DEB0: @ 0x0805DEB0
@@ -1253,7 +1253,7 @@ sub_0805E1BC: @ 0x0805E1BC
 	bl __4Base
 	ldr r2, _0805E228 @ =_vt.3Unk
 	mov sb, r2
-	ldr r0, _0805E22C @ =vt_09F455B0
+	ldr r0, _0805E22C @ =_vt.10RoundBegin
 	str r0, [sp, #0x1c]
 	mov r3, r8
 	strh r3, [r6, #0x20]
@@ -1286,7 +1286,7 @@ sub_0805E1BC: @ 0x0805E1BC
 	b _0805E24E
 	.align 2, 0
 _0805E228: .4byte _vt.3Unk
-_0805E22C: .4byte vt_09F455B0
+_0805E22C: .4byte _vt.10RoundBegin
 _0805E230:
 	adds r0, r4, #0
 	bl sub_080729F8
@@ -1686,7 +1686,7 @@ sub_0805E510: @ 0x0805E510
 	bl __4Base
 	ldr r2, _0805E580 @ =_vt.3Unk
 	mov sl, r2
-	ldr r0, _0805E584 @ =vt_09F45530
+	ldr r0, _0805E584 @ =_vt.8RoundEnd
 	str r0, [sp, #0x1c]
 	mov r1, sb
 	mov r0, r8
@@ -1720,7 +1720,7 @@ sub_0805E510: @ 0x0805E510
 	b _0805E58A
 	.align 2, 0
 _0805E580: .4byte _vt.3Unk
-_0805E584: .4byte vt_09F45530
+_0805E584: .4byte _vt.8RoundEnd
 _0805E588:
 	movs r0, #0
 _0805E58A:

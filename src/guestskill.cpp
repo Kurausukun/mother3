@@ -1,4 +1,4 @@
-#include "guestskill.h"
+#include "guestSkill.h"
 
 extern "C" void sub_08077D8C(Skill*, u32);
 extern "C" Skill* sub_0808079C(Skill*, u32);
