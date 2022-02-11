@@ -26,7 +26,7 @@ GBAFIX := tools/gbafix/gbafix$(EXE)
 
 CXXFLAGS := -fno-exceptions -fno-rtti
 CC1FLAGS := -mthumb-interwork -Wimplicit -Wparentheses -O2 -g3
-CPPFLAGS := -I tools/agbcc/include/c++ -I tools/agbcc/include -iquote include -nostdinc -undef -D VERSION_$(GAME_VERSION) -D REVISION=$(GAME_REVISION) -D $(GAME_REGION) -D DEBUG=$(DEBUG)
+CPPFLAGS := -I tools/agbcc/include -iquote include -nostdinc -undef -D VERSION_$(GAME_VERSION) -D REVISION=$(GAME_REVISION) -D $(GAME_REGION) -D DEBUG=$(DEBUG)
 ASFLAGS  := -mcpu=arm7tdmi -mthumb-interwork -I asminclude -I include --defsym VERSION_$(GAME_VERSION)=1 --defsym REVISION=$(GAME_REVISION) --defsym $(GAME_REGION)=1 --defsym DEBUG=$(DEBUG)
 #### Files ####
 OBJ_DIR  := build/$(BUILD_NAME)
@@ -116,7 +116,7 @@ $(C_BUILDDIR)/m4a_4.o: CC1FLAGS := -mthumb-interwork -O1
 #### Main Rules ####
 
 # Available targets
-.PHONY: all clean tidy tools
+.PHONY: all clean tidy tools text
 
 MAKEFLAGS += --no-print-directory
 # Secondary expansion is required for dependency variables in object rules.
@@ -197,6 +197,13 @@ $(OBJ_DIR)/sym_ewram.txt: sym_ewram.txt
     
 $(OBJ_DIR)/sym_iwram.txt: sym_iwram.txt
 	$(CPP) -P $(CPPFLAGS) $< | sed -e "s#tools/#../../tools/#g" > $@
+
+tools:
+	make -C salsa
+	salsa/salsa --extract baserom.gba data/mainscript.txt
+
+text: data/mainscript.txt
+	salsa/salsa --build data/mainscript.txt build/mainscript.o
 
 $(C_OBJS): $(C_SRCS)
 	$(CPP) $(CPPFLAGS) $< -o $(C_BUILDDIR)/$(<F).i
