@@ -46,7 +46,7 @@ struct TextBlock {
         std::vector<Message> messages;
     };
 
-    s32 bank_count;
+    s32 bank_count = 0;
     std::vector<BankHeader> headers;
     u32 total_size;
     std::vector<Bank> banks;

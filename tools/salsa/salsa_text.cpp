@@ -34,16 +34,11 @@ struct TextBlockParser {
             TextBlock::Bank bank;
 
             if (header.is_nulled()) {
-                std::cout << std::dec << h << " null bank at " << std::hex << rom.tellg()
-                          << std::endl;
                 auto next_not_nulled =
                     std::find_if(block.headers.begin() + h + 1, block.headers.end(),
                                  [](const auto& n) { return !n.is_nulled(); });
 
                 if (next_not_nulled != block.headers.end()) {
-                    std::cout << "now pos " << rom.tellg() << std::endl;
-                    std::cout << "expected pos " << offset + next_not_nulled->start_message_offsets
-                              << std::endl;
                     assert(rom.tellg() == offset + next_not_nulled->start_message_offsets);
                 }
                 block.banks.emplace_back(bank);
@@ -51,8 +46,7 @@ struct TextBlockParser {
             }
 
             if (header.start_message_offsets == header.start_messages) {
-                std::cout << std::dec << h << " empty bank at " << std::hex << rom.tellg()
-                          << std::endl;
+                // empty bank
                 block.banks.emplace_back(bank);
                 rom.seekg((long)rom.tellg() + 4, std::ios::beg);
                 block.banks.back().messages.emplace_back(TextBlock::Bank::Message{});
@@ -74,7 +68,6 @@ struct TextBlockParser {
                 }
                 bank.message_offsets.emplace_back(offset);
             }
-            std::cout << "offsets done at " << rom.tellg() << std::endl;
 
             // messages are padded to 8 byte boundaries...
             // so sometimes there is a 0x0000 pad before the 0xFFFF above
@@ -122,12 +115,10 @@ struct TextBlockParser {
                     bank.messages.emplace_back(TextBlock::Bank::Message{read_string(rom, size)});
                 }
             }
-            std::cout << "messages done at " << rom.tellg() << std::endl;
 
             block.banks.emplace_back(bank);
             // pad the current pos to 4 byte boundary
             rom.seekg(pad_to<4>(rom.tellg()), std::ios::beg);
-            std::cout << std::dec << h << " padded to " << std::hex << rom.tellg() << std::endl;
         }
 
         return block;
@@ -143,14 +134,10 @@ struct TextBlockParser {
             auto bank_idx = std::stoi(trimmed.substr(0, trimmed.find("-")));
             auto message_idx = std::stoi(trimmed.substr(trimmed.find("-") + 1));
 
-            if (bank_idx > block.bank_count - 1) {
-                // handle nulled banks too
-                while (bank_idx > block.bank_count - 1) {
-                    block.banks.emplace_back(TextBlock::Bank{});
-                    block.headers.emplace_back(TextBlock::BankHeader{});
-                    block.bank_count++;
-                }
-                std::cout << "Reading bank " << bank_idx << std::endl;
+            while (bank_idx > block.bank_count - 1) {
+                block.banks.emplace_back(TextBlock::Bank{});
+                block.headers.emplace_back(TextBlock::BankHeader{});
+                block.bank_count++;
             }
 
             auto& cur_bank = block.banks[bank_idx];
@@ -204,7 +191,6 @@ struct TextBlockParser {
                 continue;
             }
 
-            std::cout << "Bank " << i << std::endl;
             block.headers[i].start_message_offsets = offset;
             offset += pad_to<4>(block.banks[i].message_offsets.size() * 2);
             block.headers[i].start_messages = offset;
@@ -411,7 +397,6 @@ void write_binary(const char* src_path, const char* dest_path) {
     for (int i = 0; i < block.banks.size(); ++i) {
         auto& bank = block.banks[i];
         if (bank.is_nulled()) {
-            std::cout << "null bank " << std::dec << i << std::hex << std::endl;
             continue;
         }
 
@@ -421,7 +406,7 @@ void write_binary(const char* src_path, const char* dest_path) {
         }
 
         if (bank.messages.size() == 1 && bank.messages[0].text.empty()) {
-            std::cout << "empty bank " << std::dec << i << std::hex << std::endl;
+            // empty bank
             write<u16>(dest, 0xFFFF);
             write<u16>(dest, 0x0000);
             continue;
