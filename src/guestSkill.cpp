@@ -81,13 +81,13 @@ u32 GuestSkill::getPriority() const {
 }
 
 // Seems to pass `this` as thisptr for the called function, but uses the vtable of `s` ??????
-NONMATCH("asm/non_matching/guestskill/sub_080808A8.inc", Skill* GuestSkill::skill_238(Skill* s)) {
+NONMATCH("asm/non_matching/guestSkill/sub_080808A8.inc", Skill* GuestSkill::skill_238(Skill* s)) {
     // s->skill_150(this, s->mInfo->move.text_no);
     return this;
 }
 END_NONMATCH
 
-NONMATCH("asm/non_matching/guestskill/sub_080808D0.inc", Skill* GuestSkill::skill_240(Skill* s)) {
+NONMATCH("asm/non_matching/guestSkill/sub_080808D0.inc", Skill* GuestSkill::skill_240(Skill* s)) {
     // s->skill_150(this, s->mInfo->move.text_no);
     return this;
 }
