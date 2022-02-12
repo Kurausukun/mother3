@@ -133,6 +133,7 @@ SECTIONS
         *.o(.rodata);
 
         data/data3.o(.data);
+        data/mainscript.o(.data);
         data/data4.o(.data);
 
         *libc.a:impure.o(.data);

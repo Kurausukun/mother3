@@ -202,8 +202,9 @@ tools:
 	make -C salsa
 	salsa/salsa --extract baserom.gba data/mainscript.txt
 
-text: data/mainscript.txt
+$(DATA_ASM_BUILDDIR)/mainscript.o: $(DATA_ASM_SUBDIR)/mainscript.s
 	salsa/salsa --build data/mainscript.txt build/mainscript.o
+	$(AS) $(ASFLAGS) -o $@ $<
 
 $(C_OBJS): $(C_SRCS)
 	$(CPP) $(CPPFLAGS) $< -o $(C_BUILDDIR)/$(<F).i
@@ -243,7 +244,6 @@ $(SEQ_ASM_BUILDDIR)/%.o: $(SEQ_ASM_SUBDIR)/%.s
     
 $(WAVE_ASM_BUILDDIR)/%.o: $(WAVE_ASM_SUBDIR)/%.s
 	$(AS) $(ASFLAGS) -o $@ $<
-    
 
 $(ELF): $(OBJ_DIR)/ld_script.ld $(OBJS) $(C_OBJS)
 	cd $(OBJ_DIR) && $(LD) $(LDFLAGS) -T $(LDSCRIPT) $(OBJS_REL) ../../tools/agbcc/lib/libgcc.a ../../tools/agbcc/lib/libc.a -o ../../$@

@@ -134,7 +134,7 @@
 . = 0x00001FF8; gUnknown_02001FF8 = .;
 . = 0x00002004; gUnknown_02002004 = .;
 . = 0x00002010; gUnknown_02002010 = .;
-. = 0x00002014; gUnknown_02002014 = .;
+. = 0x00002014; sBattleInstance = .;
 . = 0x00002018; gUnknown_02002018 = .;
 . = 0x0000211C; gUnknown_0200211C = .;
 . = 0x00002128; gUnknown_02002128 = .;

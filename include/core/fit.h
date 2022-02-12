@@ -100,7 +100,7 @@ public:
 
     void* malloc(u32 size);
     void free(void* ptr);
-    void collapse();
+    void defragment();
     // debug
     u32 bytesRemaining();
     void check();

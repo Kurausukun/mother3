@@ -124209,7 +124209,7 @@ init_battle: @ 0x0805b9ac
 	ldr r0, _0805B9EC @ =gUnknown_02016028
 	movs r1, #0x80
 	lsls r1, r1, #0xa
-	bl sub_0805D328
+	bl init__15SystemAllocatorP3FitUi
 	bl makeInstance__13SystemManager
 	ldr r0, _0805B9F0 @ =gUnknown_020047E0
 	ldrh r0, [r0, #0xa]
@@ -124225,7 +124225,7 @@ init_battle: @ 0x0805b9ac
 	bl _call_via_r1
 	bl sub_0805D880
 	bl destroy__13SystemManager
-	bl sub_0805D35C
+	bl destroy__15SystemAllocator
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -124331,7 +124331,7 @@ sub_0805BA98: @ 0x0805BA98
 	ldr r0, _0805BAD0 @ =gUnknown_02016028
 	movs r1, #0x80
 	lsls r1, r1, #0xa
-	bl sub_0805D328
+	bl init__15SystemAllocatorP3FitUi
 	bl makeInstance__13SystemManager
 	bl sub_08065D68
 	bl sub_08065D98
@@ -124344,7 +124344,7 @@ sub_0805BA98: @ 0x0805BA98
 	bl _call_via_r1
 	bl sub_08065DA4
 	bl destroy__13SystemManager
-	bl sub_0805D35C
+	bl destroy__15SystemAllocator
 	pop {r0}
 	bx r0
 	.align 2, 0

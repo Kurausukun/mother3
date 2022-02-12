@@ -68,7 +68,7 @@ _vt.6System::
 	.4byte base_64__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805D5BC__6System
+	.4byte getHandle__6System
 	.2byte 0
 	.2byte 0
 	.4byte sub_0805D5C0__6System

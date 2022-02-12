@@ -245,7 +245,7 @@ _080697A4:\n\
 }
 #endif
 
-void FitAllocator::collapse() {
+void FitAllocator::defragment() {
     Fit* f = head;
 
     for (Fit* f = head; f != 0; f = f->next()) {

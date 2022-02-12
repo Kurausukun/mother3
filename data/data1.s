@@ -704,7 +704,7 @@ gUnknown_080F24D0:
     .global gUnknown_080F24D8
 gUnknown_080F24D8:
     .4byte 0xFFFF0000
-    .4byte sub_0805D74C__FP6System+1
+    .4byte system_callback__FP6System+1
     .incbin "baserom.gba", 0x000F24E0, 0x454
 
     .global gUnknown_080F2934

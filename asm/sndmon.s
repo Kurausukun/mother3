@@ -2356,7 +2356,7 @@ sub_08066258: @ 0x08066258
 	thumb_func_start sub_0806625C
 sub_0806625C: @ 0x0806625C
 	push {lr}
-	bl sub_0806CC10
+	bl KeyPadInstance
 	bl getNewKeys__6KeyPad
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10

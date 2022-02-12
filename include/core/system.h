@@ -15,7 +15,7 @@ public:
 
     virtual void* getInstance();
 
-    virtual SARHandle* sub_0805D5BC();
+    virtual SARHandle* getHandle();
     virtual u32 sub_0805D5C0();
     virtual u32 sub_0805D5D0();
     virtual u32 sub_0805D604();
@@ -23,7 +23,7 @@ public:
     virtual u32 sub_0805D64C();
     virtual void sub_0805D6F8();
     
-    void sub_0805D768();
+    void checkResetKeys();
 
     SARHandle* mHandle;
 };

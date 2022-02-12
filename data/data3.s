@@ -929,7 +929,3 @@ gUnknown_0918177C:
     .global gUnknown_09198C10
 gUnknown_09198C10:
     .incbin "baserom.gba", 0x01198C10, 0x1d1ae4
-
-    .global gMainScript
-gMainScript:
-    .incbin "build/mainscript.o"

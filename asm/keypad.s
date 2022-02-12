@@ -334,8 +334,8 @@ _0806CBFC:
 _0806CC08: .4byte gUnknown_02001E2C
 _0806CC0C: .4byte gUnknown_02001E30
 
-	thumb_func_start sub_0806CC10
-sub_0806CC10: @ 0x0806CC10
+	thumb_func_start KeyPadInstance
+KeyPadInstance: @ 0x0806CC10
 	ldr r0, _0806CC18 @ =gUnknown_02001E30
 	ldr r0, [r0]
 	bx lr
