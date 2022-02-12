@@ -7,7 +7,7 @@ all: salsa
 	@:
 
 salsa: $(SRCS)
-	$(CC) -std=c++17 -O2 $(SRCS) -o $@ $(LDFLAGS)
+	$(CC) -std=c++14 -O2 $(SRCS) -o $@ $(LDFLAGS)
 
 clean:
 	$(RM) salsa salsa.exe

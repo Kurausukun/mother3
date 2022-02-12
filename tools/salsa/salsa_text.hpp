@@ -11,43 +11,43 @@ namespace SalsaText {
 
 struct CCode {
     std::string name;
-    uint argcount;
+    u32 argcount;
 };
 
-extern const std::map<ushort, CCode> cc_map;
+extern const std::map<u16, CCode> cc_map;
 
 struct TextBlock {
     struct BankHeader {
-        constexpr bool is_nulled() const { return start_message_offsets == 0; }
+        bool is_nulled() const { return start_message_offsets == 0; }
 
-        uint start_message_offsets; /* relative to beginning of the block */
-        uint start_messages;        /* relative to beginning of the block */
+        u32 start_message_offsets; /* relative to beginning of the block */
+        u32 start_messages;        /* relative to beginning of the block */
     };
 
     struct Bank {
         struct MessageOffset {
-            MessageOffset(ushort value) : value(value) {}
+            MessageOffset(u16 value) : value(value) {}
 
             bool operator==(const MessageOffset& other) {
                 return value == other.value && is_duplicate == other.is_duplicate;
             }
             bool is_duplicate = false;
-            ushort value;
+            u16 value;
         };
 
         struct Message {
             std::string text;
         };
 
-        constexpr bool is_nulled() const { return messages.size() == 0; }
+        bool is_nulled() const { return messages.size() == 0; }
 
         std::vector<MessageOffset> message_offsets; /* relative to start_messages */
-        ushort num_msg;
+        u16 num_msg;
         std::vector<Message> messages;
     };
 
-    int bank_count;
+    s32 bank_count;
     std::vector<BankHeader> headers;
-    uint total_size;
+    u32 total_size;
     std::vector<Bank> banks;
 };

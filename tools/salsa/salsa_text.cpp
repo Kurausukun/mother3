@@ -1,4 +1,6 @@
 #include "salsa_text.hpp"
+#include <algorithm>
+#include <cassert>
 #include <cstdint>
 #include <fstream>
 #include <iostream>
@@ -14,10 +16,10 @@ struct TextBlockParser {
 
         rom.seekg(offset);
 
-        block.bank_count = rom.read<uint>() / 2;
+        block.bank_count = rom.read<u32>() / 2;
         for (int i = 0; i < block.bank_count; i++) {
-            uint begin = rom.read<uint>();
-            uint end = rom.read<uint>();
+            u32 begin = rom.read<u32>();
+            u32 end = rom.read<u32>();
 
             if (begin == 0) {
                 // nulled banks have both fields == 0
@@ -25,7 +27,7 @@ struct TextBlockParser {
             }
             block.headers.emplace_back(TextBlock::BankHeader{begin, end});
         }
-        block.total_size = rom.read<uint>();
+        block.total_size = rom.read<u32>();
 
         for (int h = 0; h < block.headers.size(); h++) {
             auto& header = block.headers[h];
@@ -60,8 +62,8 @@ struct TextBlockParser {
             // first bank should be right after the table
             assert(rom.tellg() == offset + block.headers[h].start_message_offsets);
 
-            uint off;
-            while ((off = rom.read<ushort>()) != 0xFFFF) {
+            u32 off;
+            while ((off = rom.read<u16>()) != 0xFFFF) {
                 TextBlock::Bank::MessageOffset offset(off);
 
                 // determine if the message is a duplicate of another
@@ -84,7 +86,7 @@ struct TextBlockParser {
             // + 2 because we already read the 0xFFFF
             assert(rom.tellg() == offset + header.start_messages + 2);
             // number of messages now
-            assert(rom.read<ushort>() == bank.message_offsets.size());
+            assert(rom.read<u16>() == bank.message_offsets.size());
             bank.num_msg = bank.message_offsets.size();
 
             // first message should be right after the offsets
@@ -186,7 +188,7 @@ struct TextBlockParser {
         }
 
         std::cout << "Creating bank headers..." << std::endl;
-        uint offset = 8 + block.bank_count * 8;
+        u32 offset = 8 + block.bank_count * 8;
         for (int i = 0; i < block.bank_count; i++) {
             if (i == 812) {
                 offset -= 4;
@@ -213,7 +215,7 @@ struct TextBlockParser {
         return block;
     }
 
-    static std::string hex_string(uint value) {
+    static std::string hex_string(u32 value) {
         std::stringstream ss;
         ss << std::hex << value;
         return ss.str();
@@ -221,8 +223,8 @@ struct TextBlockParser {
 
     static std::string read_string(RomStream& rom, int size) {
         std::string s;
-        uint code;
-        uint start = rom.tellg();
+        u32 code;
+        u32 start = rom.tellg();
 
         // again, getting around the fact that [END] markers may not actually be the end
         auto condition = [&]() {
@@ -233,7 +235,7 @@ struct TextBlockParser {
         };
 
         do {
-            code = rom.read<ushort>();
+            code = rom.read<u16>();
 
             if (code == 0xFFFF) {
                 s += "[END]";
@@ -254,7 +256,7 @@ struct TextBlockParser {
                 auto cc = iter->second;
                 s += "[" + cc.name;
                 for (int i = 0; i < cc.argcount; ++i) {
-                    s += " " + hex_string(rom.read<ushort>());
+                    s += " " + hex_string(rom.read<u16>());
                 }
                 s += "]";
             }
@@ -262,8 +264,8 @@ struct TextBlockParser {
         return s;
     }
 
-    static std::vector<ushort> write_string(const std::string& src) {
-        std::vector<ushort> result;
+    static std::vector<u16> write_string(const std::string& src) {
+        std::vector<u16> result;
         std::string rem(src);
 
         while (!rem.empty()) {
@@ -420,21 +422,21 @@ void write_binary(const char* src_path, const char* dest_path) {
 
         if (bank.messages.size() == 1 && bank.messages[0].text.empty()) {
             std::cout << "empty bank " << std::dec << i << std::hex << std::endl;
-            write<ushort>(dest, 0xFFFF);
-            write<ushort>(dest, 0x0000);
+            write<u16>(dest, 0xFFFF);
+            write<u16>(dest, 0x0000);
             continue;
         }
 
         for (auto& offset : bank.message_offsets) {
-            write<ushort>(dest, offset.value);
+            write<u16>(dest, offset.value);
         }
         // pad to 4 bytes
         if (dest.tellp() % 4 != 0) {
-            write<ushort>(dest, 0x0000);
+            write<u16>(dest, 0x0000);
         }
 
-        write<ushort>(dest, 0xFFFF);
-        write<ushort>(dest, bank.message_offsets.size());
+        write<u16>(dest, 0xFFFF);
+        write<u16>(dest, bank.message_offsets.size());
         for (auto& message : bank.messages) {
             for (auto& c : message.text) {
                 write<unsigned char>(dest, c);
@@ -442,7 +444,7 @@ void write_binary(const char* src_path, const char* dest_path) {
         }
         // pad to 4 bytes
         if (dest.tellp() % 4 != 0) {
-            write<ushort>(dest, 0x0000);
+            write<u16>(dest, 0x0000);
         }
     }
 
@@ -451,7 +453,7 @@ void write_binary(const char* src_path, const char* dest_path) {
 
 }  // namespace SalsaText
 
-const std::map<ushort, CCode> cc_map = {
+const std::map<u16, CCode> cc_map = {
     {0x0000, {"NUL", 0}},           {0xFF00, {"@", 0}},        {0xFF01, {"BREAK", 0}},
     {0xFF02, {"WAIT2", 0}},         {0xFF03, {"WAIT", 0}},     {0xFF04, {"PAUSE", 1}},
     {0xFF05, {"COLOR", 1}},         {0xFF06, {"MENU", 1}},     {0xFF07, {"EVENT", 0}},
