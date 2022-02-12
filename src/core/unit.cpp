@@ -4,6 +4,13 @@
 Unit* sub_080651A4(u16, Unit*);
 extern u16 gUnknown_08106360[];
 
+SINGLETON_IMPL(Suspend);
+SINGLETON_IMPL(Resume);
+SINGLETON_IMPL(UnitJoin);
+SINGLETON_IMPL(UnitRevive);
+SINGLETON_IMPL(UnitEscape);
+SINGLETON_IMPL(UnitDie);
+
 Unit::Unit() : _44(0), _54(0) {
     mLevel = 1;
     mHP = 1;

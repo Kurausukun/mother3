@@ -55,8 +55,8 @@ SECTIONS
         asm/sndsystem.o(.text);
         asm/keyfocusmanager.o(.text);
         asm/rhythm.o(.text);
-        asm/unit.o(.text);
         src/core/unit.o(.text);
+        src/unitTarget.o(.text);
         asm/rom2.o(.text);
         src/skill.o(.text);
         asm/player.o(.text);

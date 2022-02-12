@@ -94045,16 +94045,16 @@ _vt.4Unit::
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
 
-vt_09F81750::
+_vt.7UnitDie::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C155C
+	.4byte _._7UnitDie
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074AA0
+	.4byte getInstance__7UnitDie
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -94086,7 +94086,7 @@ vt_09F81750::
 	.2byte 0
 	.4byte base_64__4Base
 
-vt_09F817B8::
+_vt.16UnitDieSingleton::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -94097,16 +94097,16 @@ vt_09F817B8::
 	.2byte 0
 	.4byte sub_080C1544
 
-vt_09F817D0::
+_vt.10UnitEscape::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1588
+	.4byte _._10UnitEscape
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074A8C
+	.4byte getInstance__10UnitEscape
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -94138,7 +94138,7 @@ vt_09F817D0::
 	.2byte 0
 	.4byte base_64__4Base
 
-vt_09F81838::
+_vt.19UnitEscapeSingleton::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -94149,16 +94149,16 @@ vt_09F81838::
 	.2byte 0
 	.4byte sub_080C1570
 
-vt_09F81850::
+_vt.10UnitRevive::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C15B4
+	.4byte _._10UnitRevive
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074A78
+	.4byte getInstance__10UnitRevive
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -94190,7 +94190,7 @@ vt_09F81850::
 	.2byte 0
 	.4byte base_64__4Base
 
-vt_09F818B8::
+_vt.19UnitReviveSingleton::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -94201,16 +94201,16 @@ vt_09F818B8::
 	.2byte 0
 	.4byte sub_080C159C
 
-vt_09F818D0::
+_vt.8UnitJoin::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C15E0
+	.4byte _._8UnitJoin
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074A64
+	.4byte getInstance__8UnitJoin
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -94242,7 +94242,7 @@ vt_09F818D0::
 	.2byte 0
 	.4byte base_64__4Base
 
-vt_09F81938::
+_vt.17UnitJoinSingleton::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -94253,16 +94253,16 @@ vt_09F81938::
 	.2byte 0
 	.4byte sub_080C15C8
 
-vt_09F81950::
+_vt.6Resume::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C160C
+	.4byte _._6Resume
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074A50
+	.4byte getInstance__6Resume
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -94294,7 +94294,7 @@ vt_09F81950::
 	.2byte 0
 	.4byte base_64__4Base
 
-vt_09F819B8::
+_vt.15ResumeSingleton::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -94305,16 +94305,16 @@ vt_09F819B8::
 	.2byte 0
 	.4byte sub_080C15F4
 
-vt_09F819D0::
+_vt.7Suspend::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1638
+	.4byte _._7Suspend
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074A3C
+	.4byte getInstance__7Suspend
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -94346,7 +94346,7 @@ vt_09F819D0::
 	.2byte 0
 	.4byte base_64__4Base
 
-vt_09F81A38::
+_vt.16SuspendSingleton::
 	.2byte 0
 	.2byte 0
 	.4byte 0
