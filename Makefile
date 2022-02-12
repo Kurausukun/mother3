@@ -23,6 +23,7 @@ MID := $(abspath tools/mid2agb/mid2agb)$(EXE)
 SCANINC := tools/scaninc/scaninc$(EXE)
 PREPROC := tools/preproc/preproc$(EXE)
 GBAFIX := tools/gbafix/gbafix$(EXE)
+SALSA := tools/salsa/salsa$(EXE)
 
 CXXFLAGS := -fno-exceptions -fno-rtti
 CC1FLAGS := -mthumb-interwork -Wimplicit -Wparentheses -O2 -g3
@@ -198,12 +199,16 @@ $(OBJ_DIR)/sym_ewram.txt: sym_ewram.txt
 $(OBJ_DIR)/sym_iwram.txt: sym_iwram.txt
 	$(CPP) -P $(CPPFLAGS) $< | sed -e "s#tools/#../../tools/#g" > $@
 
-tools:
-	make -C salsa
-	salsa/salsa --extract baserom.gba data/mainscript.txt
+setup:
+	make -C tools/gbafix
+	make -C tools/preproc
+	make -C tools/salsa
+	make -C tools/scaninc
+
+	$(SALSA) --extract baserom.gba data/mainscript.txt
 
 $(DATA_ASM_BUILDDIR)/mainscript.o: $(DATA_ASM_SUBDIR)/mainscript.s
-	salsa/salsa --build data/mainscript.txt build/mainscript.o
+	$(SALSA) --build data/mainscript.txt build/mainscript.o
 	$(AS) $(ASFLAGS) -o $@ $<
 
 $(C_OBJS): $(C_SRCS)
