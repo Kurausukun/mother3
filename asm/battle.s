@@ -124,7 +124,7 @@ sub_0805D834: @ 0x0805D834
 	str r0, [r1]
 	cmp r0, #1
 	bne _0805D85E
-	ldr r5, _0805D86C @ =gUnknown_02002014
+	ldr r5, _0805D86C @ =sBattleInstance
 	movs r0, #0x80
 	bl __builtin_new
 	adds r4, r0, #0
@@ -136,23 +136,23 @@ sub_0805D834: @ 0x0805D834
 	bl sub_08071F8C
 	str r4, [r5]
 _0805D85E:
-	ldr r0, _0805D86C @ =gUnknown_02002014
+	ldr r0, _0805D86C @ =sBattleInstance
 	ldr r0, [r0]
 	pop {r4, r5}
 	pop {r1}
 	bx r1
 	.align 2, 0
 _0805D868: .4byte gUnknown_02002010
-_0805D86C: .4byte gUnknown_02002014
+_0805D86C: .4byte sBattleInstance
 _0805D870: .4byte vt_09F45058
 
 	thumb_func_start get__15BattleSingleton
 get__15BattleSingleton: @ 0x0805D874
-	ldr r0, _0805D87C @ =gUnknown_02002014
+	ldr r0, _0805D87C @ =sBattleInstance
 	ldr r0, [r0]
 	bx lr
 	.align 2, 0
-_0805D87C: .4byte gUnknown_02002014
+_0805D87C: .4byte sBattleInstance
 
 	thumb_func_start sub_0805D880
 sub_0805D880: @ 0x0805D880
@@ -165,7 +165,7 @@ sub_0805D880: @ 0x0805D880
 	str r4, [r1]
 	cmp r4, #0
 	bne _0805D8AC
-	ldr r5, _0805D8B8 @ =gUnknown_02002014
+	ldr r5, _0805D8B8 @ =sBattleInstance
 	ldr r2, [r5]
 	cmp r2, #0
 	beq _0805D8AA
@@ -184,7 +184,7 @@ _0805D8AC:
 	bx r0
 	.align 2, 0
 _0805D8B4: .4byte gUnknown_02002010
-_0805D8B8: .4byte gUnknown_02002014
+_0805D8B8: .4byte sBattleInstance
 
 	thumb_func_start sub_0805D8BC
 sub_0805D8BC: @ 0x0805D8BC
@@ -208,17 +208,17 @@ sub_0805D8C8: @ 0x0805D8C8
 	bl sub_0805EF90
 	adds r0, r4, #0
 	bl sub_0805EFFC
-	ldr r1, _0805D8F8 @ =gUnknown_02002014
+	ldr r1, _0805D8F8 @ =sBattleInstance
 	str r0, [r1]
 _0805D8E8:
-	ldr r0, _0805D8F8 @ =gUnknown_02002014
+	ldr r0, _0805D8F8 @ =sBattleInstance
 	ldr r0, [r0]
 	pop {r4}
 	pop {r1}
 	bx r1
 	.align 2, 0
 _0805D8F4: .4byte gUnknown_02002010
-_0805D8F8: .4byte gUnknown_02002014
+_0805D8F8: .4byte sBattleInstance
 
 	thumb_func_start sub_0805D8FC
 sub_0805D8FC: @ 0x0805D8FC
@@ -439,7 +439,7 @@ _0805D9C6:
 	bl sub_08062308
 	bl sub_08063AD0
 	bl sub_08063EE4
-	bl sub_0806CC10
+	bl KeyPadInstance
 	adds r6, r0, #0
 	add r0, sp, #0x1c
 	bl __4Base

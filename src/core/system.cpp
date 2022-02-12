@@ -13,7 +13,7 @@ extern "C" void sub_0806FDBC();
 extern "C" void destroy__10IrcManager();
 extern "C" u16 sub_080029BC(u32);
 extern "C" void sub_080026C0();
-extern "C" KeyPad* sub_0806CC10();
+extern "C" KeyPad* KeyPadInstance();
 extern "C" void DoReset();
 
 void* operator new(size_t size, void* ptr);
@@ -21,23 +21,27 @@ void* operator new(size_t size, void* ptr);
 struct SystemAllocator : FitAllocator {
     SystemAllocator(Fit* fit, u32 size);
     virtual ~SystemAllocator();
+
+    static SystemAllocator* init(Fit* fit, u32 size);
+    static SystemAllocator* instance();
+    static void destroy();
 };
 SystemAllocator* gSystemAllocator;
 
 extern u8 sSystemAllocator[sizeof(SystemAllocator)];
 
-extern "C" SystemAllocator* sub_0805D328(Fit* fit, u32 size) {
+SystemAllocator* SystemAllocator::init(Fit* fit, u32 size) {
     gSystemAllocator = new (sSystemAllocator) SystemAllocator(fit, size);
     return gSystemAllocator;
 }
 
-extern "C" SystemAllocator* sub_0805D350() {
+SystemAllocator* SystemAllocator::instance() {
     return gSystemAllocator;
 }
 
-extern "C" void sub_0805D35C() {
+void SystemAllocator::destroy() {
     gSystemAllocator->~SystemAllocator();
-    gSystemAllocator = 0;
+    gSystemAllocator = NULL;
 }
 
 SystemAllocator::SystemAllocator(Fit* fit, u32 size) : FitAllocator(size, fit) {}
@@ -45,11 +49,11 @@ SystemAllocator::SystemAllocator(Fit* fit, u32 size) : FitAllocator(size, fit) {
 SystemAllocator::~SystemAllocator() {}
 
 void* operator new(size_t size) {
-    return sub_0805D350()->malloc(size);
+    return SystemAllocator::instance()->malloc(size);
 }
 
 void* operator new[](size_t size) {
-    return sub_0805D350()->malloc(size);
+    return SystemAllocator::instance()->malloc(size);
 }
 
 void* operator new(size_t size, void* ptr) {
@@ -57,11 +61,11 @@ void* operator new(size_t size, void* ptr) {
 }
 
 void operator delete(void* ptr) {
-    sub_0805D350()->free(ptr);
+    SystemAllocator::instance()->free(ptr);
 }
 
 void operator delete[](void* ptr) {
-    sub_0805D350()->free(ptr);
+    SystemAllocator::instance()->free(ptr);
 }
 
 SINGLETON_MGR_IMPL(System)
@@ -69,9 +73,7 @@ SINGLETON_MGR_IMPL(System)
 extern "C" ASM_FUNC("asm/non_matching/system/sub_0805D494.inc", System* __6System());
 
 System::~System() {
-    if (mHandle != 0) {
-        delete mHandle;
-    }
+    delete mHandle;
 
     sub_0806E4C4();
     sub_0806CC1C();
@@ -83,7 +85,7 @@ System::~System() {
     destroy__10IrcManager();
 }
 
-System::SARHandle* System::sub_0805D5BC() {
+System::SARHandle* System::getHandle() {
     return mHandle;
 }
 
@@ -145,14 +147,14 @@ u32 System::sub_0805D64C() {
 
 ASM_FUNC("asm/non_matching/system/sub_0805D6F8.inc", void System::sub_0805D6F8())
 
-void sub_0805D74C(System* system) {
-    sub_0805D350()->collapse();
+void system_callback(System* system) {
+    SystemAllocator::instance()->defragment();
     sub_080026C0();
-    system->sub_0805D768();
+    system->checkResetKeys();
 }
 
-void System::sub_0805D768() {
-    u16 keys = sub_0806CC10()->getKeys();
+void System::checkResetKeys() {
+    u16 keys = KeyPadInstance()->getKeys();
     if (keys == 0xF)
         DoReset();
 }

@@ -2008,7 +2008,7 @@ _08063220:
 	bl __4Base
 	ldr r3, _080632D4 @ =_vt.3Unk
 	mov r8, r3
-	ldr r0, _080632D8 @ =vt_09F819D0
+	ldr r0, _080632D8 @ =_vt.7Suspend
 	str r0, [sp, #0x1c]
 	ldr r2, [r4, #4]
 	adds r0, r5, #0
@@ -2028,7 +2028,7 @@ _08063220:
 	add r0, sp, #0x20
 	bl __4Base
 	str r6, [sp, #0x40]
-	ldr r0, _080632DC @ =vt_09F818D0
+	ldr r0, _080632DC @ =_vt.8UnitJoin
 	str r0, [sp, #0x3c]
 	ldr r2, [r4, #4]
 	adds r0, r5, #0
@@ -2046,7 +2046,7 @@ _08063220:
 	adds r5, r7, r5
 	mov r0, sp
 	bl __4Base
-	ldr r0, _080632E0 @ =vt_09F81950
+	ldr r0, _080632E0 @ =_vt.6Resume
 	str r0, [sp, #0x1c]
 	ldr r2, [r4, #4]
 	adds r0, r5, #0
@@ -2068,9 +2068,9 @@ _08063220:
 	bx r1
 	.align 2, 0
 _080632D4: .4byte _vt.3Unk
-_080632D8: .4byte vt_09F819D0
-_080632DC: .4byte vt_09F818D0
-_080632E0: .4byte vt_09F81950
+_080632D8: .4byte _vt.7Suspend
+_080632DC: .4byte _vt.8UnitJoin
+_080632E0: .4byte _vt.6Resume
 
 	thumb_func_start sub_080632E4
 sub_080632E4: @ 0x080632E4
@@ -2189,7 +2189,7 @@ _080633A0:
 	bl __4Base
 	ldr r3, _08063468 @ =_vt.3Unk
 	mov r8, r3
-	ldr r0, _0806346C @ =vt_09F819D0
+	ldr r0, _0806346C @ =_vt.7Suspend
 	str r0, [sp, #0x1c]
 	ldr r2, [r5, #4]
 	adds r0, r4, #0
@@ -2218,7 +2218,7 @@ _080633A0:
 	add r0, sp, #0x20
 	bl __4Base
 	str r6, [sp, #0x40]
-	ldr r0, _08063470 @ =vt_09F817D0
+	ldr r0, _08063470 @ =_vt.10UnitEscape
 	str r0, [sp, #0x3c]
 	ldr r2, [r4, #4]
 	adds r0, r5, #0
@@ -2237,7 +2237,7 @@ _080633A0:
 	add r5, sb
 	mov r0, sp
 	bl __4Base
-	ldr r0, _08063474 @ =vt_09F81950
+	ldr r0, _08063474 @ =_vt.6Resume
 	str r0, [sp, #0x1c]
 	ldr r2, [r4, #4]
 	adds r0, r5, #0
@@ -2272,9 +2272,9 @@ _08063458:
 	bx r0
 	.align 2, 0
 _08063468: .4byte _vt.3Unk
-_0806346C: .4byte vt_09F819D0
-_08063470: .4byte vt_09F817D0
-_08063474: .4byte vt_09F81950
+_0806346C: .4byte _vt.7Suspend
+_08063470: .4byte _vt.10UnitEscape
+_08063474: .4byte _vt.6Resume
 
 	thumb_func_start sub_08063478
 sub_08063478: @ 0x08063478
@@ -2391,7 +2391,7 @@ _0806352E:
 	bl __4Base
 	ldr r0, _080636FC @ =_vt.3Unk
 	mov r8, r0
-	ldr r0, _08063700 @ =vt_09F819D0
+	ldr r0, _08063700 @ =_vt.7Suspend
 	str r0, [sp, #0x1c]
 	ldr r2, [r4, #4]
 	adds r0, r5, #0
@@ -2420,7 +2420,7 @@ _0806352E:
 	add r0, sp, #0x20
 	bl __4Base
 	str r6, [sp, #0x40]
-	ldr r0, _08063704 @ =vt_09F81750
+	ldr r0, _08063704 @ =_vt.7UnitDie
 	str r0, [sp, #0x3c]
 	ldr r2, [r4, #4]
 	adds r0, r5, #0
@@ -2439,7 +2439,7 @@ _0806352E:
 	add r5, sb
 	mov r0, sp
 	bl __4Base
-	ldr r0, _08063708 @ =vt_09F81950
+	ldr r0, _08063708 @ =_vt.6Resume
 	str r0, [sp, #0x1c]
 	ldr r2, [r4, #4]
 	adds r0, r5, #0
@@ -2595,9 +2595,9 @@ _080636EC:
 	bx r0
 	.align 2, 0
 _080636FC: .4byte _vt.3Unk
-_08063700: .4byte vt_09F819D0
-_08063704: .4byte vt_09F81750
-_08063708: .4byte vt_09F81950
+_08063700: .4byte _vt.7Suspend
+_08063704: .4byte _vt.7UnitDie
+_08063708: .4byte _vt.6Resume
 _0806370C: .4byte gUnknown_020047E0
 
 	thumb_func_start sub_08063710
@@ -2717,7 +2717,7 @@ _080637CC:
 	bl __4Base
 	ldr r0, _080638A8 @ =_vt.3Unk
 	mov r8, r0
-	ldr r0, _080638AC @ =vt_09F819D0
+	ldr r0, _080638AC @ =_vt.7Suspend
 	str r0, [sp, #0x1c]
 	ldr r2, [r5, #4]
 	adds r0, r4, #0
@@ -2738,7 +2738,7 @@ _080637CC:
 	add r0, sp, #0x20
 	bl __4Base
 	str r6, [sp, #0x40]
-	ldr r0, _080638B0 @ =vt_09F81750
+	ldr r0, _080638B0 @ =_vt.7UnitDie
 	str r0, [sp, #0x3c]
 	ldr r2, [r4, #4]
 	adds r0, r5, #0
@@ -2757,7 +2757,7 @@ _080637CC:
 	add r5, sb
 	mov r0, sp
 	bl __4Base
-	ldr r0, _080638B4 @ =vt_09F81950
+	ldr r0, _080638B4 @ =_vt.6Resume
 	str r0, [sp, #0x1c]
 	ldr r2, [r4, #4]
 	adds r0, r5, #0
@@ -2809,9 +2809,9 @@ _08063896:
 	bx r0
 	.align 2, 0
 _080638A8: .4byte _vt.3Unk
-_080638AC: .4byte vt_09F819D0
-_080638B0: .4byte vt_09F81750
-_080638B4: .4byte vt_09F81950
+_080638AC: .4byte _vt.7Suspend
+_080638B0: .4byte _vt.7UnitDie
+_080638B4: .4byte _vt.6Resume
 _080638B8: .4byte gUnknown_020047E0
 
 	thumb_func_start sub_080638BC

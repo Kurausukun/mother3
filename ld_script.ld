@@ -55,8 +55,8 @@ SECTIONS
         asm/sndsystem.o(.text);
         asm/keyfocusmanager.o(.text);
         asm/rhythm.o(.text);
-        asm/unit.o(.text);
         src/core/unit.o(.text);
+        src/unitTarget.o(.text);
         asm/rom2.o(.text);
         src/skill.o(.text);
         asm/player.o(.text);
@@ -133,6 +133,7 @@ SECTIONS
         *.o(.rodata);
 
         data/data3.o(.data);
+        data/mainscript.o(.data);
         data/data4.o(.data);
 
         *libc.a:impure.o(.data);

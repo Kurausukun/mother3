@@ -165,6 +165,68 @@ private:
     /* 0xf4 */ ID _f4;
 };
 
+struct Suspend : Unk {
+    Suspend() {}
+    inline virtual ~Suspend();
+
+    virtual void* getInstance();
+};
+
+struct Resume : Unk {
+    Resume() {}
+    inline virtual ~Resume();
+
+    virtual void* getInstance();
+};
+
+struct UnitMove : Unk {
+    UnitMove() {}
+    UnitMove(u32 t) : t(t) {}
+    virtual ~UnitMove() {}
+
+    u32 t;
+};
+
+struct UnitJoin : UnitMove {
+    UnitJoin() : UnitMove(0) {}
+    UnitJoin(u32 t) : UnitMove(t) {}
+    inline virtual ~UnitJoin();
+
+    virtual void* getInstance();
+
+    u32 t;
+};
+
+struct UnitRevive : UnitMove {
+    UnitRevive() : UnitMove(0) {}
+    UnitRevive(u32 t) : UnitMove(t) {}
+    inline virtual ~UnitRevive();
+
+    virtual void* getInstance();
+
+    u32 t;
+};
+
+struct UnitEscape : UnitMove {
+    UnitEscape() : UnitMove(0) {}
+    UnitEscape(u32 t) : UnitMove(t) {}
+    inline virtual ~UnitEscape();
+
+    virtual void* getInstance();
+
+    u32 t;
+};
+
+struct UnitDie : UnitMove {
+    UnitDie() : UnitMove(0) {}
+    UnitDie(u32 t) : UnitMove(t) {}
+    inline virtual ~UnitDie();
+
+    virtual void* getInstance();
+
+    u32 t;
+};
+
 struct UnitCmd : Base {
     virtual ~UnitCmd();
 
@@ -200,44 +262,11 @@ struct UnitCmd : Base {
     u8 _4[4];
 };
 
-class AttackData : public Base {
-public:
-    AttackData(u16, u32);
-    virtual ~AttackData();
-
-    virtual void attackdata_68();
-    virtual void attackdata_70();
-    virtual void attackdata_78();
-    virtual void attackdata_80();
-    virtual void attackdata_88();
-    virtual void attackdata_90();
-    virtual void attackdata_98();
-    virtual void attackdata_a0();
-    virtual void attackdata_a8();
-    virtual void attackdata_b0();
-    virtual void attackdata_b8();
-    virtual void attackdata_c0();
-    virtual u32 attackdata_c8();
-    virtual void attackdata_d0();
-    virtual void attackdata_d8();
-    virtual void attackdata_e0();
-    virtual void attackdata_e8();
-    virtual void attackdata_f0();
-    virtual void attackdata_f8();
-    virtual void attackdata_100();
-    virtual void attackdata_108();
-    virtual s32 attackdata_110();
-    virtual u32 attackdata_118(u32 idx);
-
-    u8** _24;
-    void* _28;
-    void* _2c;
-    void* _30;
-    void* _34;
-    void* _38;
-    void* _3c;
-    void* _40;
-    void* _44;
-};
+SINGLETON(Suspend);
+SINGLETON(Resume);
+SINGLETON(UnitJoin);
+SINGLETON(UnitRevive);
+SINGLETON(UnitEscape);
+SINGLETON(UnitDie);
 
 #endif  // CORE_UNIT_H

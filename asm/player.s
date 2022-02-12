@@ -38,7 +38,7 @@ __5SkillUi: @ 0x08077F34
 	bl __4Base
 	mov r0, r8
 	str r0, [sp, #0x24]
-	ldr r1, _080781C4 @ =vt_09F818D0
+	ldr r1, _080781C4 @ =_vt.8UnitJoin
 	mov sl, r1
 	str r1, [sp, #0x20]
 	ldr r0, _080781C8 @ =gUnknown_08107DB0
@@ -100,7 +100,7 @@ __5SkillUi: @ 0x08077F34
 	bl __4Base
 	mov r1, r8
 	str r1, [sp, #0x24]
-	ldr r0, _080781D0 @ =vt_09F81850
+	ldr r0, _080781D0 @ =_vt.10UnitRevive
 	mov sl, r0
 	str r0, [sp, #0x20]
 	str r7, [sp]
@@ -158,7 +158,7 @@ __5SkillUi: @ 0x08077F34
 	bl __4Base
 	mov r0, r8
 	str r0, [sp, #0x24]
-	ldr r1, _080781D4 @ =vt_09F817D0
+	ldr r1, _080781D4 @ =_vt.10UnitEscape
 	mov sl, r1
 	str r1, [sp, #0x20]
 	ldr r0, _080781D8 @ =gUnknown_08107DB8
@@ -220,7 +220,7 @@ __5SkillUi: @ 0x08077F34
 	bl __4Base
 	mov r1, r8
 	str r1, [sp, #0x24]
-	ldr r0, _080781DC @ =vt_09F81750
+	ldr r0, _080781DC @ =_vt.7UnitDie
 	mov sl, r0
 	str r0, [sp, #0x20]
 	str r7, [sp]
@@ -283,13 +283,13 @@ __5SkillUi: @ 0x08077F34
 	bx r1
 	.align 2, 0
 _080781C0: .4byte vt_09F81DD0
-_080781C4: .4byte vt_09F818D0
+_080781C4: .4byte _vt.8UnitJoin
 _080781C8: .4byte gUnknown_08107DB0
 _080781CC: .4byte _vt.3Unk
-_080781D0: .4byte vt_09F81850
-_080781D4: .4byte vt_09F817D0
+_080781D0: .4byte _vt.10UnitRevive
+_080781D4: .4byte _vt.10UnitEscape
 _080781D8: .4byte gUnknown_08107DB8
-_080781DC: .4byte vt_09F81750
+_080781DC: .4byte _vt.7UnitDie
 
 	thumb_func_start _._5Skill
 _._5Skill: @ 0x080781E0

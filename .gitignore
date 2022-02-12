@@ -34,7 +34,6 @@ porymap.project.cfg
 *.a
 .fuse_hidden*
 *.sna
-tools/
 *.id0
 *.id1
 *.idb

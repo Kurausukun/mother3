@@ -1202,7 +1202,7 @@ sub_080C1544: @ 0x080C1544
 	push {lr}
 	movs r0, #0x24
 	bl __builtin_new
-	bl sub_08075ABC
+	bl __7UnitDie
 	pop {r1}
 	bx r1
 
@@ -1213,8 +1213,8 @@ sub_080C1554: @ 0x080C1554
 	.align 2, 0
 _080C1558: .4byte gUnknown_081062B0
 
-	thumb_func_start sub_080C155C
-sub_080C155C: @ 0x080C155C
+	thumb_func_start _._7UnitDie
+_._7UnitDie: @ 0x080C155C
 	push {lr}
 	ldr r2, _080C156C @ =_vt.3Unk
 	str r2, [r0, #0x1c]
@@ -1229,7 +1229,7 @@ sub_080C1570: @ 0x080C1570
 	push {lr}
 	movs r0, #0x24
 	bl __builtin_new
-	bl sub_08075AF4
+	bl __10UnitEscape
 	pop {r1}
 	bx r1
 
@@ -1240,8 +1240,8 @@ sub_080C1580: @ 0x080C1580
 	.align 2, 0
 _080C1584: .4byte gUnknown_0810629C
 
-	thumb_func_start sub_080C1588
-sub_080C1588: @ 0x080C1588
+	thumb_func_start _._10UnitEscape
+_._10UnitEscape: @ 0x080C1588
 	push {lr}
 	ldr r2, _080C1598 @ =_vt.3Unk
 	str r2, [r0, #0x1c]
@@ -1256,7 +1256,7 @@ sub_080C159C: @ 0x080C159C
 	push {lr}
 	movs r0, #0x24
 	bl __builtin_new
-	bl sub_08075B2C
+	bl __10UnitRevive
 	pop {r1}
 	bx r1
 
@@ -1267,8 +1267,8 @@ sub_080C15AC: @ 0x080C15AC
 	.align 2, 0
 _080C15B0: .4byte gUnknown_08106284
 
-	thumb_func_start sub_080C15B4
-sub_080C15B4: @ 0x080C15B4
+	thumb_func_start _._10UnitRevive
+_._10UnitRevive: @ 0x080C15B4
 	push {lr}
 	ldr r2, _080C15C4 @ =_vt.3Unk
 	str r2, [r0, #0x1c]
@@ -1283,7 +1283,7 @@ sub_080C15C8: @ 0x080C15C8
 	push {lr}
 	movs r0, #0x24
 	bl __builtin_new
-	bl sub_08075B64
+	bl __8UnitJoin
 	pop {r1}
 	bx r1
 
@@ -1294,8 +1294,8 @@ sub_080C15D8: @ 0x080C15D8
 	.align 2, 0
 _080C15DC: .4byte gUnknown_0810626C
 
-	thumb_func_start sub_080C15E0
-sub_080C15E0: @ 0x080C15E0
+	thumb_func_start _._8UnitJoin
+_._8UnitJoin: @ 0x080C15E0
 	push {lr}
 	ldr r2, _080C15F0 @ =_vt.3Unk
 	str r2, [r0, #0x1c]
@@ -1310,7 +1310,7 @@ sub_080C15F4: @ 0x080C15F4
 	push {lr}
 	movs r0, #0x20
 	bl __builtin_new
-	bl sub_08075B80
+	bl __6Resume
 	pop {r1}
 	bx r1
 
@@ -1321,8 +1321,8 @@ sub_080C1604: @ 0x080C1604
 	.align 2, 0
 _080C1608: .4byte gUnknown_08106258
 
-	thumb_func_start sub_080C160C
-sub_080C160C: @ 0x080C160C
+	thumb_func_start _._6Resume
+_._6Resume: @ 0x080C160C
 	push {lr}
 	ldr r2, _080C161C @ =_vt.3Unk
 	str r2, [r0, #0x1c]
@@ -1337,7 +1337,7 @@ sub_080C1620: @ 0x080C1620
 	push {lr}
 	movs r0, #0x20
 	bl __builtin_new
-	bl sub_08075B98
+	bl __7Suspend
 	pop {r1}
 	bx r1
 
@@ -1348,8 +1348,8 @@ sub_080C1630: @ 0x080C1630
 	.align 2, 0
 _080C1634: .4byte gUnknown_08106248
 
-	thumb_func_start sub_080C1638
-sub_080C1638: @ 0x080C1638
+	thumb_func_start _._7Suspend
+_._7Suspend: @ 0x080C1638
 	push {lr}
 	ldr r2, _080C1648 @ =_vt.3Unk
 	str r2, [r0, #0x1c]

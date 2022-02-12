@@ -23,6 +23,7 @@ MID := $(abspath tools/mid2agb/mid2agb)$(EXE)
 SCANINC := tools/scaninc/scaninc$(EXE)
 PREPROC := tools/preproc/preproc$(EXE)
 GBAFIX := tools/gbafix/gbafix$(EXE)
+SALSA := tools/salsa/salsa$(EXE)
 
 CXXFLAGS := -fno-exceptions -fno-rtti
 CC1FLAGS := -mthumb-interwork -Wimplicit -Wparentheses -O2 -g3
@@ -198,12 +199,17 @@ $(OBJ_DIR)/sym_ewram.txt: sym_ewram.txt
 $(OBJ_DIR)/sym_iwram.txt: sym_iwram.txt
 	$(CPP) -P $(CPPFLAGS) $< | sed -e "s#tools/#../../tools/#g" > $@
 
-tools:
-	make -C salsa
-	salsa/salsa --extract baserom.gba data/mainscript.txt
+setup:
+	make -C tools/gbafix
+	make -C tools/preproc
+	make -C tools/salsa
+	make -C tools/scaninc
 
-text: data/mainscript.txt
-	salsa/salsa --build data/mainscript.txt build/mainscript.o
+	$(SALSA) --extract baserom.gba data/mainscript.txt
+
+$(DATA_ASM_BUILDDIR)/mainscript.o: $(DATA_ASM_SUBDIR)/mainscript.s
+	$(SALSA) --build data/mainscript.txt build/mainscript.o
+	$(AS) $(ASFLAGS) -o $@ $<
 
 $(C_OBJS): $(C_SRCS)
 	$(CPP) $(CPPFLAGS) $< -o $(C_BUILDDIR)/$(<F).i
@@ -243,7 +249,6 @@ $(SEQ_ASM_BUILDDIR)/%.o: $(SEQ_ASM_SUBDIR)/%.s
     
 $(WAVE_ASM_BUILDDIR)/%.o: $(WAVE_ASM_SUBDIR)/%.s
 	$(AS) $(ASFLAGS) -o $@ $<
-    
 
 $(ELF): $(OBJ_DIR)/ld_script.ld $(OBJS) $(C_OBJS)
 	cd $(OBJ_DIR) && $(LD) $(LDFLAGS) -T $(LDSCRIPT) $(OBJS_REL) ../../tools/agbcc/lib/libgcc.a ../../tools/agbcc/lib/libc.a -o ../../$@
