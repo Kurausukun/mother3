@@ -2,7 +2,7 @@
 #define GUEST_H
 
 #include "core/unit.h"
-#include "guestskill.h"
+#include "guestSkill.h"
 
 struct GuestStats;
 
