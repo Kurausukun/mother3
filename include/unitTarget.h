@@ -3,10 +3,10 @@
 
 #include "core/unit.h"
 
-class AttackData : public Base {
+class UnitTarget : public Base {
 public:
-    AttackData(u16 target, Unit* unit);
-    virtual ~AttackData();
+    UnitTarget(u16 target, Unit* unit);
+    virtual ~UnitTarget();
 
     virtual void attackdata_68();
     virtual void attackdata_70();

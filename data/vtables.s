@@ -94410,7 +94410,7 @@ vt_09F81AC8::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte _._10AttackData
+	.4byte _._10UnitTarget
 	.2byte 0
 	.2byte 0
 	.4byte getInstance__4Base
@@ -94482,7 +94482,7 @@ vt_09F81AC8::
 	.4byte sub_08075DC4
 	.2byte 0
 	.2byte 0
-	.4byte attackdata_c8__10AttackData
+	.4byte attackdata_c8__10UnitTarget
 	.2byte 0
 	.2byte 0
 	.4byte sub_08076104
@@ -94509,10 +94509,10 @@ vt_09F81AC8::
 	.4byte sub_08076658
 	.2byte 0
 	.2byte 0
-	.4byte attackdata_110__10AttackData
+	.4byte attackdata_110__10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte attackdata_118__10AttackDataUi
+	.4byte attackdata_118__10UnitTargetUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_080766C4
@@ -94622,10 +94622,10 @@ vt_09F81BF0::
 	.4byte sub_08076658
 	.2byte 0
 	.2byte 0
-	.4byte attackdata_110__10AttackData
+	.4byte attackdata_110__10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte attackdata_118__10AttackDataUi
+	.4byte attackdata_118__10UnitTargetUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_080766C4

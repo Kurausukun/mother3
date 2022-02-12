@@ -5151,7 +5151,7 @@ sub_08061678: @ 0x08061678
 _080616A2:
 	mov r0, sp
 	movs r1, #0
-	bl attackdata_118__10AttackDataUi
+	bl attackdata_118__10UnitTargetUi
 	bl sub_080729B0
 	adds r4, r0, #0
 	mov r0, sp

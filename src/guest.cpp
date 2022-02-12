@@ -1,5 +1,6 @@
 #include "guest.h"
 #include "core/battle.h"
+#include "unitTarget.h"
 
 extern "C" u32 sub_08001C5C(u32, u16);
 extern "C" u16 sub_08001DB0(u32);
@@ -65,10 +66,10 @@ Unit* Guest::guest_2c0() {
 }
 
 bool Guest::guest_2e8(Skill* skill) {
-    AttackData data(skill->getAttackMult(), skill->skill_168());
-    u32 unk = data.attackdata_c8();
-    for (int i = 0; i < data.attackdata_110(); ++i) {
-        skill->skill_170(data.attackdata_118(i));
+    UnitTarget target(skill->getAttackMult(), skill->skill_168());
+    u32 unk = target.attackdata_c8();
+    for (int i = 0; i < target.attackdata_110(); ++i) {
+        skill->skill_170(target.attackdata_118(i));
     }
     return unk == 0;
 }
