@@ -654,9 +654,9 @@ sub_08080EB8: @ 0x08080EB8
 	adds r2, r0, #0
 	mov r0, sp
 	adds r1, r4, #0
-	bl __10AttackDataUsUi
+	bl __10UnitTargetUsP4Unit
 	mov r0, sp
-	bl attackdata_c8__10AttackData
+	bl attackdata_c8__10UnitTarget
 	mov r8, r0
 	movs r6, #0
 	b _08080F28
@@ -670,7 +670,7 @@ _08080F06:
 	adds r5, r7, r5
 	mov r0, sp
 	adds r1, r6, #0
-	bl attackdata_118__10AttackDataUi
+	bl attackdata_118__10UnitTargetUi
 	adds r1, r0, #0
 	ldr r2, [r4, #4]
 	adds r0, r5, #0
@@ -678,7 +678,7 @@ _08080F06:
 	adds r6, #1
 _08080F28:
 	mov r0, sp
-	bl attackdata_110__10AttackData
+	bl attackdata_110__10UnitTarget
 	cmp r6, r0
 	blt _08080F06
 	movs r4, #0
@@ -689,7 +689,7 @@ _08080F28:
 _08080F3C:
 	mov r0, sp
 	movs r1, #2
-	bl _._10AttackData
+	bl _._10UnitTarget
 	adds r0, r4, #0
 	add sp, #0x44
 	pop {r3}

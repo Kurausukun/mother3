@@ -3617,7 +3617,7 @@ _0807E1DE:
 	adds r5, r5, r0
 	mov r0, sp
 	adds r1, r6, #0
-	bl attackdata_118__10AttackDataUi
+	bl attackdata_118__10UnitTargetUi
 	adds r1, r0, #0
 	ldr r2, [r4, #4]
 	adds r0, r5, #0
@@ -3625,7 +3625,7 @@ _0807E1DE:
 	adds r6, #1
 _0807E202:
 	mov r0, sp
-	bl attackdata_110__10AttackData
+	bl attackdata_110__10UnitTarget
 	cmp r6, r0
 	blt _0807E1DE
 	adds r0, r7, #0
@@ -7376,7 +7376,7 @@ _080800AE:
 	adds r5, r7, r5
 	mov r0, sp
 	adds r1, r6, #0
-	bl attackdata_118__10AttackDataUi
+	bl attackdata_118__10UnitTargetUi
 	adds r1, r0, #0
 	ldr r2, [r4, #4]
 	adds r0, r5, #0
@@ -7384,7 +7384,7 @@ _080800AE:
 	adds r6, #1
 _080800D0:
 	mov r0, sp
-	bl attackdata_110__10AttackData
+	bl attackdata_110__10UnitTarget
 	cmp r6, r0
 	blt _080800AE
 	mov r0, sp

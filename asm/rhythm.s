@@ -3724,10 +3724,10 @@ sub_08074234: @ 0x08074234
 	adds r2, r0, #0
 	mov r0, sp
 	adds r1, r4, #0
-	bl __10AttackDataUsUi
+	bl __10UnitTargetUsP4Unit
 	movs r4, #0
 	mov r0, sp
-	bl attackdata_c8__10AttackData
+	bl attackdata_c8__10UnitTarget
 	cmp r0, #0
 	bne _080742C6
 	movs r6, #0
@@ -3742,7 +3742,7 @@ _08074282:
 	adds r5, r7, r5
 	mov r0, sp
 	adds r1, r6, #0
-	bl attackdata_118__10AttackDataUi
+	bl attackdata_118__10UnitTargetUi
 	adds r1, r0, #0
 	ldr r2, [r4, #4]
 	adds r0, r5, #0
@@ -3750,7 +3750,7 @@ _08074282:
 	adds r6, #1
 _080742A4:
 	mov r0, sp
-	bl attackdata_110__10AttackData
+	bl attackdata_110__10UnitTarget
 	cmp r6, r0
 	blt _08074282
 	ldr r1, [r7, #0x1c]
@@ -3777,7 +3777,7 @@ _080742C6:
 _080742DA:
 	mov r0, sp
 	movs r1, #2
-	bl _._10AttackData
+	bl _._10UnitTarget
 	adds r0, r4, #0
 	add sp, #0x44
 	pop {r4, r5, r6, r7}
