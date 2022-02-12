@@ -3,6 +3,8 @@
 
 #include "core/base.h"
 
+class Unit;
+
 class Skill : public Base {
 public:
     Skill(u32 unk);
