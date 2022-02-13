@@ -542,7 +542,7 @@ _0805DBFA:
 	adds r0, r4, #0
 	adds r0, #0x60
 	movs r1, #2
-	bl sub_08071FBC
+	bl _._10KeyFocuser
 	adds r0, r4, #0
 	adds r1, r5, #0
 	bl _._4Base

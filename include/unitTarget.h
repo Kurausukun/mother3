@@ -2,45 +2,75 @@
 #define UNIT_TARGET_H
 
 #include "core/unit.h"
+#include "keyFocusManager.h"
+#include "textAccessor.h"
+
+struct UnitTargetInfo;
 
 class UnitTarget : public Base {
 public:
     UnitTarget(u16 target, Unit* unit);
     virtual ~UnitTarget();
 
-    virtual void attackdata_68();
-    virtual void attackdata_70();
-    virtual void attackdata_78();
-    virtual void attackdata_80();
-    virtual void attackdata_88();
-    virtual void attackdata_90();
-    virtual void attackdata_98();
-    virtual void attackdata_a0();
-    virtual void attackdata_a8();
-    virtual void attackdata_b0();
-    virtual void attackdata_b8();
-    virtual void attackdata_c0();
-    virtual u32 attackdata_c8();
-    virtual void attackdata_d0();
-    virtual void attackdata_d8();
-    virtual void attackdata_e0();
-    virtual void attackdata_e8();
-    virtual void attackdata_f0();
-    virtual void attackdata_f8();
-    virtual void attackdata_100();
-    virtual void attackdata_108();
-    virtual s32 attackdata_110();
-    virtual u32 attackdata_118(u32 idx);
+    virtual bool attackdata_68();
+    virtual bool attackdata_70();
+    virtual u32 getType() const;
+    virtual Unit* getUnit() const;
+    virtual u32 getSelection() const;
+    virtual bool targettingAlly();
+    virtual bool attackdata_98();
+    virtual s32 attackdata_a0() const;
+    virtual bool attackdata_a8() const;
+    virtual bool attackdata_b0() const;
+    virtual u32 attackdata_b8() const;
+    virtual bool attackdata_c0() const;
+    virtual s32 attackdata_c8();
+    virtual Unit* addTarget(Unit*);
+    virtual bool removeTarget(Unit*);
+    virtual s32 getNumTargets() const;
+    virtual s32 attackdata_e8() const;
+    virtual Unit* attackdata_f0(s32 idx);
+    virtual s32 attackdata_f8(Unit*) const;
+    virtual Unit* attackdata_100(Unit*);
+    virtual bool attackdata_108(Unit* u);
+    virtual s32 attackdata_110() const;
+    virtual Unit* attackdata_118(s32 idx);
+    virtual s32 attackdata_120(Unit* unit) const;
 
-    u8** _24;
-    void* _28;
-    void* _2c;
-    void* _30;
-    void* _34;
-    void* _38;
-    void* _3c;
-    void* _40;
-    void* _44;
+private:
+    void* _20;
+    UnitTargetInfo* mInfo;
+    Unit* mUnit;
+    Vector<Unit*> mTargets;
+    Vector<Unit*> _38;
 };
 
-#endif // UNIT_TARGET_H
+class UnitTargetChoice : public UnitTarget {
+public:
+    UnitTargetChoice(u16 target, Unit* unit);
+    virtual ~UnitTargetChoice();
+
+    void sub_08077CF0(Unit*, u32);
+
+//private:
+    Vector<void*> _44;
+    Vector<void*> _50;
+    u8 _5c;
+    u32 _60;
+    u16 _64;
+    TextAccessor _68;
+    u8 _118[60];
+    Vector<Unit*> _154;
+    KeyFocuser mKeyFocuser;
+};
+
+struct UnitTargetInfo {
+    u16 type;
+    u32 selection;
+    u16 _8;
+    u32 _c;
+    u8 _10;
+};
+extern UnitTargetInfo gUnitTargetInfo[];
+
+#endif  // UNIT_TARGET_H

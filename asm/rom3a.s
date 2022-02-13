@@ -15229,7 +15229,7 @@ _0809F2E4:
 	bl _._4Base
 	add r0, sp, #4
 	movs r1, #2
-	bl sub_08071FBC
+	bl _._10KeyFocuser
 _0809F412:
 	mov r3, sl
 	ldr r1, [r3, #0x1c]

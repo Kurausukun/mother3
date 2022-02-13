@@ -128,6 +128,8 @@ struct TextBlockParser {
         TextBlock block;
 
         std::string line;
+
+        std::cout << "Reading text..." << std::endl;
         while (std::getline(src, line)) {
             auto trimmed = line.substr(0, line.find(":"));
             auto message = line.substr(line.find(":") + 1);

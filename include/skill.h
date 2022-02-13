@@ -42,7 +42,7 @@ public:
     virtual void skill_158();
     virtual void skill_160();
     virtual Unit* skill_168();
-    virtual void skill_170(u32);
+    virtual void skill_170(Unit*);
     virtual void skill_178();
     virtual void skill_180();
     virtual void skill_188();

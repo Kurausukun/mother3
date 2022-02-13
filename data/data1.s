@@ -597,8 +597,8 @@ gUnknown_080CC4EC:
 gUnknown_080CD928:
     .incbin "baserom.gba", 0x000CD928, 0x1900
 
-    .global gUnknown_080CF228
-gUnknown_080CF228:
+    .global gUnitTargetInfo
+gUnitTargetInfo:
     .incbin "baserom.gba", 0x000CF228, 0x500
 
     .global gUnknown_080CF728
