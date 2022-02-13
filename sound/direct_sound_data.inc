@@ -2821,7 +2821,3 @@ DirectSoundWaveData_08BBF3EC::
 	.align 2
 DirectSoundWaveData_08BC04D4::
 	.incbin "sound/direct_sound_samples/08BC04D4.bin"
-
-	.align 2
-DirectSoundWaveData_09F92600::
-	.incbin "sound/direct_sound_samples/09F92600.bin"
