@@ -5847,7 +5847,7 @@ sub_08003D84: @ 0x08003D84
 	push {lr}
 	lsls r0, r0, #0x10
 	ldr r2, _08003DB4 @ =gMPlayTable
-	ldr r1, _08003DB8 @ =gSong_Table
+	ldr r1, _08003DB8 @ =gSongTable
 	lsrs r0, r0, #0xd
 	adds r0, r0, r1
 	ldrh r1, [r0, #4]
@@ -5870,7 +5870,7 @@ _08003D9E:
 	b _08003DCA
 	.align 2, 0
 _08003DB4: .4byte gMPlayTable
-_08003DB8: .4byte gSong_Table
+_08003DB8: .4byte gSongTable
 _08003DBC:
 	adds r0, r1, #1
 	lsls r0, r0, #0x10

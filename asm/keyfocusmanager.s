@@ -96,7 +96,7 @@ _0806FFDC:
 _0806FFE4:
 	movs r2, #0
 	strh r3, [r4, #0x20]
-	ldr r1, _08070040 @ =gSong_Table
+	ldr r1, _08070040 @ =gSongTable
 	lsls r0, r3, #3
 	adds r0, r0, r1
 	ldrh r1, [r0, #4]
@@ -138,7 +138,7 @@ _08070038:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08070040: .4byte gSong_Table
+_08070040: .4byte gSongTable
 _08070044: .4byte gMPlayTable
 
 	thumb_func_start sub_08070048

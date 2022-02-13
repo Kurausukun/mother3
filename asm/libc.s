@@ -168,7 +168,7 @@ sub_0808FA1C: @ 0x0808FA1C
 	push {lr}
 	lsls r0, r0, #0x10
 	ldr r3, _0808FA40 @ =gMPlayTable
-	ldr r1, _0808FA44 @ =gSong_Table
+	ldr r1, _0808FA44 @ =gSongTable
 	lsrs r0, r0, #0xd
 	adds r0, r0, r1
 	ldrh r2, [r0, #4]
@@ -184,14 +184,14 @@ sub_0808FA1C: @ 0x0808FA1C
 	bx r0
 	.align 2, 0
 _0808FA40: .4byte gMPlayTable
-_0808FA44: .4byte gSong_Table
+_0808FA44: .4byte gSongTable
 
 	thumb_func_start sub_0808FA48
 sub_0808FA48: @ 0x0808FA48
 	push {lr}
 	lsls r0, r0, #0x10
 	ldr r3, _0808FA74 @ =gMPlayTable
-	ldr r1, _0808FA78 @ =gSong_Table
+	ldr r1, _0808FA78 @ =gSongTable
 	lsrs r0, r0, #0xd
 	adds r0, r0, r1
 	ldrh r2, [r0, #4]
@@ -210,7 +210,7 @@ sub_0808FA48: @ 0x0808FA48
 	b _0808FA90
 	.align 2, 0
 _0808FA74: .4byte gMPlayTable
-_0808FA78: .4byte gSong_Table
+_0808FA78: .4byte gSongTable
 _0808FA7C:
 	ldr r2, [r1, #4]
 	ldrh r0, [r1, #4]
@@ -231,7 +231,7 @@ sub_0808FA94: @ 0x0808FA94
 	push {lr}
 	lsls r0, r0, #0x10
 	ldr r3, _0808FAC0 @ =gMPlayTable
-	ldr r1, _0808FAC4 @ =gSong_Table
+	ldr r1, _0808FAC4 @ =gSongTable
 	lsrs r0, r0, #0xd
 	adds r0, r0, r1
 	ldrh r2, [r0, #4]
@@ -250,7 +250,7 @@ sub_0808FA94: @ 0x0808FA94
 	b _0808FAE4
 	.align 2, 0
 _0808FAC0: .4byte gMPlayTable
-_0808FAC4: .4byte gSong_Table
+_0808FAC4: .4byte gSongTable
 _0808FAC8:
 	ldr r2, [r1, #4]
 	ldrh r0, [r1, #4]
@@ -274,7 +274,7 @@ sub_0808FAE8: @ 0x0808FAE8
 	push {lr}
 	lsls r0, r0, #0x10
 	ldr r3, _0808FB14 @ =gMPlayTable
-	ldr r1, _0808FB18 @ =gSong_Table
+	ldr r1, _0808FB18 @ =gSongTable
 	lsrs r0, r0, #0xd
 	adds r0, r0, r1
 	ldrh r2, [r0, #4]
@@ -294,14 +294,14 @@ _0808FB0E:
 	bx r0
 	.align 2, 0
 _0808FB14: .4byte gMPlayTable
-_0808FB18: .4byte gSong_Table
+_0808FB18: .4byte gSongTable
 
 	thumb_func_start sub_0808FB1C
 sub_0808FB1C: @ 0x0808FB1C
 	push {lr}
 	lsls r0, r0, #0x10
 	ldr r3, _0808FB48 @ =gMPlayTable
-	ldr r1, _0808FB4C @ =gSong_Table
+	ldr r1, _0808FB4C @ =gSongTable
 	lsrs r0, r0, #0xd
 	adds r0, r0, r1
 	ldrh r2, [r0, #4]
@@ -324,7 +324,7 @@ _0808FB42:
 	bx r0
 	.align 2, 0
 _0808FB48: .4byte gMPlayTable
-_0808FB4C: .4byte gSong_Table
+_0808FB4C: .4byte gSongTable
 
 	thumb_func_start sub_0808FB50
 sub_0808FB50: @ 0x0808FB50

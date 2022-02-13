@@ -122,8 +122,7 @@ SECTIONS
     {
         data/data1.o(.rodata);
         data/data2.o(.rodata);
-		data/sound_data.o(.rodata);
-		data/song_data.o(.rodata);
+		data/sound.o(.rodata);
 		data/temp.o(.rodata);
 
         *libc.a:impure.o(.rodata);
