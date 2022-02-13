@@ -5158,7 +5158,7 @@ sub_080037F0: @ 0x080037F0
 	lsls r0, r0, #1
 	strh r0, [r1]
 	strh r0, [r1, #2]
-	ldr r4, _08003834 @ =gUnknown_08120E1C
+	ldr r4, _08003834 @ =gMPlayTable
 	ldr r0, [r4]
 	bl sub_080902E0
 	ldr r0, [r4, #0xc]
@@ -5168,7 +5168,7 @@ sub_080037F0: @ 0x080037F0
 _08003828: .4byte gUnknown_02015ED8
 _0800382C: .4byte gUnknown_02015EC0
 _08003830: .4byte gUnknown_02015EF0
-_08003834: .4byte gUnknown_08120E1C
+_08003834: .4byte gMPlayTable
 _08003838:
 	adds r0, r7, #0
 	bl sub_08003D84
@@ -5196,7 +5196,7 @@ _08003838:
 	strh r0, [r5]
 	adds r0, r7, #0
 	bl sub_0808FA94
-	ldr r0, _0800389C @ =gUnknown_08120E1C
+	ldr r0, _0800389C @ =gMPlayTable
 	adds r4, r4, r6
 	lsls r4, r4, #2
 	adds r4, r4, r0
@@ -5215,7 +5215,7 @@ _0800388A:
 _08003890: .4byte gUnknown_02015ED8
 _08003894: .4byte gUnknown_02015EC0
 _08003898: .4byte gUnknown_02015EF0
-_0800389C: .4byte gUnknown_08120E1C
+_0800389C: .4byte gMPlayTable
 _080038A0: .4byte 0x0000FFFF
 
 	thumb_func_start sub_080038A4
@@ -5312,7 +5312,7 @@ sub_08003928: @ 0x08003928
 	strh r0, [r5]
 	adds r0, r7, #0
 	bl sub_0808FA94
-	ldr r0, _08003994 @ =gUnknown_08120E1C
+	ldr r0, _08003994 @ =gMPlayTable
 	adds r4, r4, r6
 	lsls r4, r4, #2
 	adds r4, r4, r0
@@ -5331,7 +5331,7 @@ _08003980:
 _08003988: .4byte gUnknown_02015ED8
 _0800398C: .4byte gUnknown_02015EC0
 _08003990: .4byte gUnknown_02015EF0
-_08003994: .4byte gUnknown_08120E1C
+_08003994: .4byte gMPlayTable
 _08003998: .4byte 0x0000FFFF
 
 	thumb_func_start sub_0800399C
@@ -5558,7 +5558,7 @@ sub_08003B58: @ 0x08003B58
 	bgt _08003B90
 	cmp r0, #0
 	blt _08003B90
-	ldr r1, _08003B98 @ =gUnknown_08120E1C
+	ldr r1, _08003B98 @ =gMPlayTable
 	lsls r4, r0, #1
 	adds r0, r4, r0
 	lsls r0, r0, #2
@@ -5583,7 +5583,7 @@ _08003B90:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08003B98: .4byte gUnknown_08120E1C
+_08003B98: .4byte gMPlayTable
 _08003B9C: .4byte gUnknown_02015ED8
 _08003BA0: .4byte gUnknown_02015EC0
 _08003BA4: .4byte gUnknown_02015EF0
@@ -5597,7 +5597,7 @@ sub_08003BA8: @ 0x08003BA8
 	bgt _08003BE0
 	cmp r0, #2
 	blt _08003BE0
-	ldr r1, _08003BE8 @ =gUnknown_08120E1C
+	ldr r1, _08003BE8 @ =gMPlayTable
 	lsls r4, r0, #1
 	adds r0, r4, r0
 	lsls r0, r0, #2
@@ -5622,7 +5622,7 @@ _08003BE0:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08003BE8: .4byte gUnknown_08120E1C
+_08003BE8: .4byte gMPlayTable
 _08003BEC: .4byte gUnknown_02015ED8
 _08003BF0: .4byte gUnknown_02015EC0
 _08003BF4: .4byte gUnknown_02015EF0
@@ -5636,7 +5636,7 @@ sub_08003BF8: @ 0x08003BF8
 	bgt _08003C16
 	cmp r2, #0
 	blt _08003C16
-	ldr r0, _08003C1C @ =gUnknown_08120E1C
+	ldr r0, _08003C1C @ =gMPlayTable
 	lsls r1, r2, #1
 	adds r1, r1, r2
 	lsls r1, r1, #2
@@ -5647,7 +5647,7 @@ _08003C16:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08003C1C: .4byte gUnknown_08120E1C
+_08003C1C: .4byte gMPlayTable
 
 	thumb_func_start sub_08003C20
 sub_08003C20: @ 0x08003C20
@@ -5658,7 +5658,7 @@ sub_08003C20: @ 0x08003C20
 	bgt _08003C3E
 	cmp r2, #0
 	blt _08003C3E
-	ldr r0, _08003C44 @ =gUnknown_08120E1C
+	ldr r0, _08003C44 @ =gMPlayTable
 	lsls r1, r2, #1
 	adds r1, r1, r2
 	lsls r1, r1, #2
@@ -5669,7 +5669,7 @@ _08003C3E:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08003C44: .4byte gUnknown_08120E1C
+_08003C44: .4byte gMPlayTable
 
 	thumb_func_start sub_08003C48
 sub_08003C48: @ 0x08003C48
@@ -5682,7 +5682,7 @@ sub_08003C48: @ 0x08003C48
 	bgt _08003C74
 	cmp r0, #0
 	blt _08003C74
-	ldr r1, _08003C7C @ =gUnknown_08120E1C
+	ldr r1, _08003C7C @ =gMPlayTable
 	lsls r4, r0, #1
 	adds r0, r4, r0
 	lsls r0, r0, #2
@@ -5699,7 +5699,7 @@ _08003C74:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08003C7C: .4byte gUnknown_08120E1C
+_08003C7C: .4byte gMPlayTable
 _08003C80: .4byte 0x0000FFFF
 _08003C84: .4byte gUnknown_02015EF0
 
@@ -5714,7 +5714,7 @@ sub_08003C88: @ 0x08003C88
 	bgt _08003CBC
 	cmp r0, #0
 	blt _08003CBC
-	ldr r1, _08003CC4 @ =gUnknown_08120E1C
+	ldr r1, _08003CC4 @ =gMPlayTable
 	lsls r5, r0, #1
 	adds r0, r5, r0
 	lsls r0, r0, #2
@@ -5734,7 +5734,7 @@ _08003CBC:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08003CC4: .4byte gUnknown_08120E1C
+_08003CC4: .4byte gMPlayTable
 _08003CC8: .4byte 0x0000FFFF
 _08003CCC: .4byte gUnknown_02015EF0
 
@@ -5846,8 +5846,8 @@ _08003D7E:
 sub_08003D84: @ 0x08003D84
 	push {lr}
 	lsls r0, r0, #0x10
-	ldr r2, _08003DB4 @ =gUnknown_08120E1C
-	ldr r1, _08003DB8 @ =gUnknown_08120E94
+	ldr r2, _08003DB4 @ =gMPlayTable
+	ldr r1, _08003DB8 @ =gSong_Table
 	lsrs r0, r0, #0xd
 	adds r0, r0, r1
 	ldrh r1, [r0, #4]
@@ -5869,8 +5869,8 @@ _08003D9E:
 	asrs r0, r0, #0x10
 	b _08003DCA
 	.align 2, 0
-_08003DB4: .4byte gUnknown_08120E1C
-_08003DB8: .4byte gUnknown_08120E94
+_08003DB4: .4byte gMPlayTable
+_08003DB8: .4byte gSong_Table
 _08003DBC:
 	adds r0, r1, #1
 	lsls r0, r0, #0x10
@@ -5893,7 +5893,7 @@ sub_08003DD0: @ 0x08003DD0
 	bgt _08003DF0
 	cmp r2, #0
 	blt _08003DF0
-	ldr r0, _08003DEC @ =gUnknown_08120E1C
+	ldr r0, _08003DEC @ =gMPlayTable
 	lsls r1, r2, #1
 	adds r1, r1, r2
 	lsls r1, r1, #2
@@ -5901,7 +5901,7 @@ sub_08003DD0: @ 0x08003DD0
 	ldr r0, [r1]
 	b _08003DF2
 	.align 2, 0
-_08003DEC: .4byte gUnknown_08120E1C
+_08003DEC: .4byte gMPlayTable
 _08003DF0:
 	movs r0, #0
 _08003DF2:
@@ -5918,7 +5918,7 @@ sub_08003DF8: @ 0x08003DF8
 	bgt _08003E18
 	cmp r2, #2
 	blt _08003E18
-	ldr r0, _08003E14 @ =gUnknown_08120E1C
+	ldr r0, _08003E14 @ =gMPlayTable
 	lsls r1, r2, #1
 	adds r1, r1, r2
 	lsls r1, r1, #2
@@ -5926,7 +5926,7 @@ sub_08003DF8: @ 0x08003DF8
 	ldr r0, [r1]
 	b _08003E1A
 	.align 2, 0
-_08003E14: .4byte gUnknown_08120E1C
+_08003E14: .4byte gMPlayTable
 _08003E18:
 	movs r0, #0
 _08003E1A:

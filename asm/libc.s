@@ -124,7 +124,7 @@ sub_0808F998: @ 0x0808F998
 	lsrs r0, r0, #0x10
 	cmp r0, #0
 	beq _0808F9E6
-	ldr r5, _0808FA08 @ =gUnknown_08120E1C
+	ldr r5, _0808FA08 @ =gMPlayTable
 	adds r6, r0, #0
 _0808F9CA:
 	ldr r4, [r5]
@@ -152,7 +152,7 @@ _0808F9F8: .4byte gUnknown_03001B20
 _0808F9FC: .4byte gUnknown_03002B60
 _0808FA00: .4byte 0x0095FC00
 _0808FA04: .4byte 0x0000000A
-_0808FA08: .4byte gUnknown_08120E1C
+_0808FA08: .4byte gMPlayTable
 _0808FA0C: .4byte gUnknown_03002E60
 
 	thumb_func_start sub_0808FA10
@@ -167,8 +167,8 @@ sub_0808FA10: @ 0x0808FA10
 sub_0808FA1C: @ 0x0808FA1C
 	push {lr}
 	lsls r0, r0, #0x10
-	ldr r3, _0808FA40 @ =gUnknown_08120E1C
-	ldr r1, _0808FA44 @ =gUnknown_08120E94
+	ldr r3, _0808FA40 @ =gMPlayTable
+	ldr r1, _0808FA44 @ =gSong_Table
 	lsrs r0, r0, #0xd
 	adds r0, r0, r1
 	ldrh r2, [r0, #4]
@@ -183,15 +183,15 @@ sub_0808FA1C: @ 0x0808FA1C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0808FA40: .4byte gUnknown_08120E1C
-_0808FA44: .4byte gUnknown_08120E94
+_0808FA40: .4byte gMPlayTable
+_0808FA44: .4byte gSong_Table
 
 	thumb_func_start sub_0808FA48
 sub_0808FA48: @ 0x0808FA48
 	push {lr}
 	lsls r0, r0, #0x10
-	ldr r3, _0808FA74 @ =gUnknown_08120E1C
-	ldr r1, _0808FA78 @ =gUnknown_08120E94
+	ldr r3, _0808FA74 @ =gMPlayTable
+	ldr r1, _0808FA78 @ =gSong_Table
 	lsrs r0, r0, #0xd
 	adds r0, r0, r1
 	ldrh r2, [r0, #4]
@@ -209,8 +209,8 @@ sub_0808FA48: @ 0x0808FA48
 	bl sub_080901FC
 	b _0808FA90
 	.align 2, 0
-_0808FA74: .4byte gUnknown_08120E1C
-_0808FA78: .4byte gUnknown_08120E94
+_0808FA74: .4byte gMPlayTable
+_0808FA78: .4byte gSong_Table
 _0808FA7C:
 	ldr r2, [r1, #4]
 	ldrh r0, [r1, #4]
@@ -230,8 +230,8 @@ _0808FA90:
 sub_0808FA94: @ 0x0808FA94
 	push {lr}
 	lsls r0, r0, #0x10
-	ldr r3, _0808FAC0 @ =gUnknown_08120E1C
-	ldr r1, _0808FAC4 @ =gUnknown_08120E94
+	ldr r3, _0808FAC0 @ =gMPlayTable
+	ldr r1, _0808FAC4 @ =gSong_Table
 	lsrs r0, r0, #0xd
 	adds r0, r0, r1
 	ldrh r2, [r0, #4]
@@ -249,8 +249,8 @@ sub_0808FA94: @ 0x0808FA94
 	bl sub_080901FC
 	b _0808FAE4
 	.align 2, 0
-_0808FAC0: .4byte gUnknown_08120E1C
-_0808FAC4: .4byte gUnknown_08120E94
+_0808FAC0: .4byte gMPlayTable
+_0808FAC4: .4byte gSong_Table
 _0808FAC8:
 	ldr r2, [r1, #4]
 	ldrh r0, [r1, #4]
@@ -273,8 +273,8 @@ _0808FAE4:
 sub_0808FAE8: @ 0x0808FAE8
 	push {lr}
 	lsls r0, r0, #0x10
-	ldr r3, _0808FB14 @ =gUnknown_08120E1C
-	ldr r1, _0808FB18 @ =gUnknown_08120E94
+	ldr r3, _0808FB14 @ =gMPlayTable
+	ldr r1, _0808FB18 @ =gSong_Table
 	lsrs r0, r0, #0xd
 	adds r0, r0, r1
 	ldrh r2, [r0, #4]
@@ -293,15 +293,15 @@ _0808FB0E:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0808FB14: .4byte gUnknown_08120E1C
-_0808FB18: .4byte gUnknown_08120E94
+_0808FB14: .4byte gMPlayTable
+_0808FB18: .4byte gSong_Table
 
 	thumb_func_start sub_0808FB1C
 sub_0808FB1C: @ 0x0808FB1C
 	push {lr}
 	lsls r0, r0, #0x10
-	ldr r3, _0808FB48 @ =gUnknown_08120E1C
-	ldr r1, _0808FB4C @ =gUnknown_08120E94
+	ldr r3, _0808FB48 @ =gMPlayTable
+	ldr r1, _0808FB4C @ =gSong_Table
 	lsrs r0, r0, #0xd
 	adds r0, r0, r1
 	ldrh r2, [r0, #4]
@@ -323,8 +323,8 @@ _0808FB42:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0808FB48: .4byte gUnknown_08120E1C
-_0808FB4C: .4byte gUnknown_08120E94
+_0808FB48: .4byte gMPlayTable
+_0808FB4C: .4byte gSong_Table
 
 	thumb_func_start sub_0808FB50
 sub_0808FB50: @ 0x0808FB50
@@ -334,7 +334,7 @@ sub_0808FB50: @ 0x0808FB50
 	lsrs r0, r0, #0x10
 	cmp r0, #0
 	beq _0808FB6E
-	ldr r5, _0808FB78 @ =gUnknown_08120E1C
+	ldr r5, _0808FB78 @ =gMPlayTable
 	adds r4, r0, #0
 _0808FB60:
 	ldr r0, [r5]
@@ -349,7 +349,7 @@ _0808FB6E:
 	bx r0
 	.align 2, 0
 _0808FB74: .4byte 0x0000000A
-_0808FB78: .4byte gUnknown_08120E1C
+_0808FB78: .4byte gMPlayTable
 
 	thumb_func_start sub_0808FB7C
 sub_0808FB7C: @ 0x0808FB7C
@@ -367,7 +367,7 @@ sub_0808FB88: @ 0x0808FB88
 	lsrs r0, r0, #0x10
 	cmp r0, #0
 	beq _0808FBA6
-	ldr r5, _0808FBB0 @ =gUnknown_08120E1C
+	ldr r5, _0808FBB0 @ =gMPlayTable
 	adds r4, r0, #0
 _0808FB98:
 	ldr r0, [r5]
@@ -382,7 +382,7 @@ _0808FBA6:
 	bx r0
 	.align 2, 0
 _0808FBAC: .4byte 0x0000000A
-_0808FBB0: .4byte gUnknown_08120E1C
+_0808FBB0: .4byte gMPlayTable
 
 	thumb_func_start sub_0808FBB4
 sub_0808FBB4: @ 0x0808FBB4
