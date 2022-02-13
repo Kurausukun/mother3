@@ -5138,25 +5138,25 @@ sub_08061678: @ 0x08061678
 	adds r2, r0, #0
 	mov r0, sp
 	movs r1, #2
-	bl sub_080766F8
+	bl __16UnitTargetChoiceUsP4Unit
 	mov r0, sp
 	bl sub_08076B30
 	cmp r0, #0
 	beq _080616A2
 	mov r0, sp
 	movs r1, #2
-	bl sub_08076A68
+	bl _._16UnitTargetChoice
 	movs r0, #0
 	b _080616BA
 _080616A2:
 	mov r0, sp
 	movs r1, #0
-	bl attackdata_118__10UnitTargetUi
+	bl attackdata_118__10UnitTargeti
 	bl sub_080729B0
 	adds r4, r0, #0
 	mov r0, sp
 	movs r1, #2
-	bl sub_08076A68
+	bl _._16UnitTargetChoice
 	adds r0, r4, #0
 _080616BA:
 	add sp, #0x180

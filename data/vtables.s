@@ -93420,7 +93420,7 @@ vt_09F810F8::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08071FBC
+	.4byte _._10KeyFocuser
 	.2byte 0
 	.2byte 0
 	.4byte getInstance__4Base
@@ -94404,7 +94404,7 @@ _vt.6Object::
 	.2byte 0
 	.4byte sub_08091AD8
 
-vt_09F81AC8::
+_vt.10UnitTarget::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -94446,84 +94446,84 @@ vt_09F81AC8::
 	.4byte base_64__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075E30
+	.4byte attackdata_68__10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08076240
+	.4byte attackdata_70__10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075C28
+	.4byte getType__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075C30
+	.4byte getUnit__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075C34
+	.4byte getSelection__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075C3C
+	.4byte targettingAlly__10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075CD8
+	.4byte attackdata_98__10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075D74
+	.4byte attackdata_a0__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075D7C
+	.4byte attackdata_a8__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075D9C
+	.4byte attackdata_b0__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075DBC
+	.4byte attackdata_b8__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075DC4
+	.4byte attackdata_c0__C10UnitTarget
 	.2byte 0
 	.2byte 0
 	.4byte attackdata_c8__10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08076104
+	.4byte addTarget__10UnitTargetP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807616C
+	.4byte removeTarget__10UnitTargetP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080761C8
+	.4byte getNumTargets__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_080761CC
+	.4byte attackdata_e8__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08076200
+	.4byte attackdata_f0__10UnitTargeti
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807620C
+	.4byte attackdata_f8__C10UnitTargetP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080765F0
+	.4byte attackdata_100__10UnitTargetP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08076658
+	.4byte attackdata_108__10UnitTargetP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte attackdata_110__10UnitTarget
+	.4byte attackdata_110__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte attackdata_118__10UnitTargetUi
+	.4byte attackdata_118__10UnitTargeti
 	.2byte 0
 	.2byte 0
-	.4byte sub_080766C4
+	.4byte attackdata_120__C10UnitTargetP4Unit
 
-vt_09F81BF0::
+_vt.16UnitTargetChoice::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08076A68
+	.4byte _._16UnitTargetChoice
 	.2byte 0
 	.2byte 0
 	.4byte getInstance__4Base
@@ -94559,76 +94559,76 @@ vt_09F81BF0::
 	.4byte base_64__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075E30
+	.4byte attackdata_68__10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08076240
+	.4byte attackdata_70__10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075C28
+	.4byte getType__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075C30
+	.4byte getUnit__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075C34
+	.4byte getSelection__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075C3C
+	.4byte targettingAlly__10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075CD8
+	.4byte attackdata_98__10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075D74
+	.4byte attackdata_a0__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075D7C
+	.4byte attackdata_a8__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075D9C
+	.4byte attackdata_b0__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075DBC
+	.4byte attackdata_b8__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075DC4
+	.4byte attackdata_c0__C10UnitTarget
 	.2byte 0
 	.2byte 0
 	.4byte sub_08076B30
 	.2byte 0
 	.2byte 0
-	.4byte sub_08076104
+	.4byte addTarget__10UnitTargetP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807616C
+	.4byte removeTarget__10UnitTargetP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080761C8
+	.4byte getNumTargets__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_080761CC
+	.4byte attackdata_e8__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08076200
+	.4byte attackdata_f0__10UnitTargeti
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807620C
+	.4byte attackdata_f8__C10UnitTargetP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080765F0
+	.4byte attackdata_100__10UnitTargetP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08076658
+	.4byte attackdata_108__10UnitTargetP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte attackdata_110__10UnitTarget
+	.4byte attackdata_110__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte attackdata_118__10UnitTargetUi
+	.4byte attackdata_118__10UnitTargeti
 	.2byte 0
 	.2byte 0
-	.4byte sub_080766C4
+	.4byte attackdata_120__C10UnitTargetP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08076E80
@@ -97764,7 +97764,7 @@ vt_09F83D28::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083CBC
+	.4byte _._12TextAccessor
 	.2byte 0
 	.2byte 0
 	.4byte getInstance__4Base

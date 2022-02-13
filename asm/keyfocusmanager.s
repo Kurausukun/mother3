@@ -4438,8 +4438,8 @@ sub_08071F8C: @ 0x08071F8C
 	.align 2, 0
 _08071FB8: .4byte vt_09F810F8
 
-	thumb_func_start sub_08071FBC
-sub_08071FBC: @ 0x08071FBC
+	thumb_func_start _._10KeyFocuser
+_._10KeyFocuser: @ 0x08071FBC
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0

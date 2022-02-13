@@ -1500,7 +1500,7 @@ _08066F04:
 	lsls r1, r1, #3
 	adds r0, r5, r1
 	movs r1, #2
-	bl sub_08071FBC
+	bl _._10KeyFocuser
 	movs r2, #0xb8
 	lsls r2, r2, #3
 	adds r0, r5, r2
@@ -3321,7 +3321,7 @@ _08067E56:
 	lsls r1, r1, #4
 	adds r0, r6, r1
 	movs r1, #2
-	bl sub_08071FBC
+	bl _._10KeyFocuser
 	ldr r2, _08067EF4 @ =0x000009F4
 	adds r0, r6, r2
 	movs r1, #2

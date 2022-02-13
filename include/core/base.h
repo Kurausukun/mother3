@@ -8,6 +8,16 @@ class Clock;
 class Base;
 struct Singleton;
 
+// wut
+template<typename T>
+class SafeVector : Vector<T> {
+public:
+    SafeVector() {}
+    ~SafeVector() {
+        mSize = 0;
+    }
+};
+
 typedef void (*Callback)(Base*, Clock*);
 
 struct Listener {
@@ -56,7 +66,7 @@ public:
 
     s16 _0;
     s16 _2;
-    Vector<Listener> mFit1;
+    SafeVector<Listener> mFit1;
     Fit mFit2;
 };
 

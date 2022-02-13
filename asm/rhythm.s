@@ -3742,7 +3742,7 @@ _08074282:
 	adds r5, r7, r5
 	mov r0, sp
 	adds r1, r6, #0
-	bl attackdata_118__10UnitTargetUi
+	bl attackdata_118__10UnitTargeti
 	adds r1, r0, #0
 	ldr r2, [r4, #4]
 	adds r0, r5, #0
@@ -3750,7 +3750,7 @@ _08074282:
 	adds r6, #1
 _080742A4:
 	mov r0, sp
-	bl attackdata_110__10UnitTarget
+	bl attackdata_110__C10UnitTarget
 	cmp r6, r0
 	blt _08074282
 	ldr r1, [r7, #0x1c]

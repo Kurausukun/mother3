@@ -4492,7 +4492,7 @@ _0807A2FC:
 	bl _call_via_r2
 	adds r1, r0, #0
 	mov r0, sp
-	bl sub_08076658
+	bl attackdata_108__10UnitTargetP4Unit
 	adds r4, #1
 _0807A31C:
 	ldr r1, [r6, #0x1c]
@@ -4511,22 +4511,22 @@ _0807A31C:
 _0807A338:
 	mov r0, sp
 	adds r1, r4, #0
-	bl attackdata_118__10UnitTargetUi
+	bl attackdata_118__10UnitTargeti
 	ldr r1, [r5, #0x20]
 	cmp r0, r1
 	beq _0807A358
 	mov r0, sp
 	adds r1, r4, #0
-	bl attackdata_118__10UnitTargetUi
+	bl attackdata_118__10UnitTargeti
 	adds r1, r0, #0
 	mov r0, sp
-	bl sub_08076658
+	bl attackdata_108__10UnitTargetP4Unit
 	subs r4, #1
 _0807A358:
 	adds r4, #1
 _0807A35A:
 	mov r0, sp
-	bl attackdata_110__10UnitTarget
+	bl attackdata_110__C10UnitTarget
 	cmp r4, r0
 	blt _0807A338
 	movs r7, #0
@@ -4541,7 +4541,7 @@ _0807A368:
 	adds r5, r6, r5
 	mov r0, sp
 	adds r1, r7, #0
-	bl attackdata_118__10UnitTargetUi
+	bl attackdata_118__10UnitTargeti
 	adds r1, r0, #0
 	ldr r2, [r4, #4]
 	adds r0, r5, #0
@@ -4549,7 +4549,7 @@ _0807A368:
 	adds r7, #1
 _0807A38A:
 	mov r0, sp
-	bl attackdata_110__10UnitTarget
+	bl attackdata_110__C10UnitTarget
 	cmp r7, r0
 	blt _0807A368
 _0807A394:
@@ -4813,10 +4813,10 @@ _0807A538:
 	bl attackdata_c8__10UnitTarget
 	ldr r1, [sp, #0x44]
 	mov r0, sp
-	bl sub_0807620C
+	bl attackdata_f8__C10UnitTargetP4Unit
 	adds r4, r0, #0
 	mov r0, sp
-	bl sub_080761C8
+	bl getNumTargets__C10UnitTarget
 	cmp r4, r0
 	bge _0807A592
 	mov r0, sp
@@ -4949,7 +4949,7 @@ _0807A660:
 	bl _call_via_r2
 	adds r1, r0, #0
 	mov r0, sp
-	bl sub_08076658
+	bl attackdata_108__10UnitTargetP4Unit
 	adds r4, #1
 _0807A680:
 	ldr r1, [r6, #0x1c]
@@ -4975,7 +4975,7 @@ _0807A69C:
 	adds r5, r6, r5
 	mov r0, sp
 	adds r1, r7, #0
-	bl attackdata_118__10UnitTargetUi
+	bl attackdata_118__10UnitTargeti
 	adds r1, r0, #0
 	ldr r2, [r4, #4]
 	adds r0, r5, #0
@@ -4983,7 +4983,7 @@ _0807A69C:
 	adds r7, #1
 _0807A6BE:
 	mov r0, sp
-	bl attackdata_110__10UnitTarget
+	bl attackdata_110__C10UnitTarget
 	mov r1, r8
 	cmp r1, r0
 	ble _0807A6CC

@@ -2968,7 +2968,7 @@ sub_0807DCE8: @ 0x0807DCE8
 	lsls r1, r1, #3
 	adds r0, r5, r1
 	movs r1, #2
-	bl sub_08071FBC
+	bl _._10KeyFocuser
 	ldr r2, _0807DDB4 @ =0x00000604
 	adds r0, r5, r2
 	ldr r1, _0807DDB8 @ =vt_09F82898
@@ -3589,7 +3589,7 @@ sub_0807E174: @ 0x0807E174
 	adds r2, r0, #0
 	mov r0, sp
 	adds r1, r4, #0
-	bl sub_080766F8
+	bl __16UnitTargetChoiceUsP4Unit
 	mov r0, sp
 	bl sub_08076B30
 	cmp r0, #1
@@ -3617,7 +3617,7 @@ _0807E1DE:
 	adds r5, r5, r0
 	mov r0, sp
 	adds r1, r6, #0
-	bl attackdata_118__10UnitTargetUi
+	bl attackdata_118__10UnitTargeti
 	adds r1, r0, #0
 	ldr r2, [r4, #4]
 	adds r0, r5, #0
@@ -3625,7 +3625,7 @@ _0807E1DE:
 	adds r6, #1
 _0807E202:
 	mov r0, sp
-	bl attackdata_110__10UnitTarget
+	bl attackdata_110__C10UnitTarget
 	cmp r6, r0
 	blt _0807E1DE
 	adds r0, r7, #0
@@ -3666,7 +3666,7 @@ _0807E242:
 	bl _call_via_r1
 	mov r0, sp
 	movs r1, #2
-	bl sub_08076A68
+	bl _._16UnitTargetChoice
 	add sp, #0x180
 	pop {r4, r5, r6, r7}
 	pop {r0}
@@ -5804,7 +5804,7 @@ _0807F3E2:
 	lsls r1, r1, #1
 	adds r0, r6, r1
 	movs r1, #2
-	bl sub_08071FBC
+	bl _._10KeyFocuser
 	movs r3, #0x9a
 	lsls r3, r3, #1
 	adds r0, r6, r3
@@ -5816,7 +5816,7 @@ _0807F3FE:
 	adds r0, r6, #0
 	adds r0, #0x48
 	movs r1, #2
-	bl sub_08083CBC
+	bl _._12TextAccessor
 	ldr r0, [r6, #0x30]
 	cmp r0, #0
 	beq _0807F412
@@ -7360,7 +7360,7 @@ sub_08080060: @ 0x08080060
 	adds r2, r0, #0
 	mov r0, sp
 	adds r1, r4, #0
-	bl sub_080766F8
+	bl __16UnitTargetChoiceUsP4Unit
 	mov r0, sp
 	bl sub_08076B30
 	mov r8, r0
@@ -7376,7 +7376,7 @@ _080800AE:
 	adds r5, r7, r5
 	mov r0, sp
 	adds r1, r6, #0
-	bl attackdata_118__10UnitTargetUi
+	bl attackdata_118__10UnitTargeti
 	adds r1, r0, #0
 	ldr r2, [r4, #4]
 	adds r0, r5, #0
@@ -7384,12 +7384,12 @@ _080800AE:
 	adds r6, #1
 _080800D0:
 	mov r0, sp
-	bl attackdata_110__10UnitTarget
+	bl attackdata_110__C10UnitTarget
 	cmp r6, r0
 	blt _080800AE
 	mov r0, sp
 	movs r1, #2
-	bl sub_08076A68
+	bl _._16UnitTargetChoice
 	mov r0, r8
 	add sp, #0x180
 	pop {r3}
