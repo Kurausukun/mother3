@@ -1,5 +1,5 @@
 #include "gba/gba.h"
-#include "guest.h"
+#include "battle/guest.h"
 #include "structs.h"
 
 static void sub_080002E0();

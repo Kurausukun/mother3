@@ -1,5 +1,5 @@
-#include "core/singleton.h"
-#include "core/system.h"
+#include "singleton.h"
+#include "battle/system.h"
 
 struct A {
     A() {}
