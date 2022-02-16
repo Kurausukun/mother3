@@ -4404,7 +4404,7 @@ _0807A24A:
 	adds r1, r0, #0
 	subs r2, r5, r7
 	mov r0, r8
-	bl sub_0806E288
+	bl __5AssetPCUcUi
 	mov r0, sp
 	movs r1, #2
 	bl sub_0806E308

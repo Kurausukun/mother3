@@ -1,5 +1,5 @@
-#ifndef CORE_BATTLE_H
-#define CORE_BATTLE_H
+#ifndef BATTLE_H
+#define BATTLE_H
 
 #include "base.h"
 
@@ -29,4 +29,4 @@ public:
 
 SINGLETON(Battle);
 
-#endif // CORE_BATTLE_H
+#endif // BATTLE_H

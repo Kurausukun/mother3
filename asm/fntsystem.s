@@ -2103,7 +2103,7 @@ _0806E252:
 _0806E260:
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl sub_0806E288
+	bl __5AssetPCUcUi
 	adds r0, r6, #0
 	pop {r4, r5, r6}
 	pop {r1}
@@ -2123,8 +2123,8 @@ sub_0806E274: @ 0x0806E274
 	.align 2, 0
 _0806E284: .4byte vt_09F7FF40
 
-	thumb_func_start sub_0806E288
-sub_0806E288: @ 0x0806E288
+	thumb_func_start __5AssetPCUcUi
+__5AssetPCUcUi: @ 0x0806E288
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	adds r6, r1, #0

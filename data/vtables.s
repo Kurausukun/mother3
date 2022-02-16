@@ -99668,13 +99668,13 @@ vt_09F85068::
 	.2byte 0
 	.4byte sub_080888D4
 
-vt_09F85078::
+_vt.9BXTHandle::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08088D7C
+	.4byte _._9BXTHandle
 
 vt_09F85088::
 	.2byte 0

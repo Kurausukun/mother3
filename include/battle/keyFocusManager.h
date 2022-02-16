@@ -1,5 +1,5 @@
-#ifndef KEY_FOCUS_MANAGER_H
-#define KEY_FOCUS_MANAGER_H
+#ifndef BATTLE_KEY_FOCUS_MANAGER_H
+#define BATTLE_KEY_FOCUS_MANAGER_H
 
 #include "base.h"
 
@@ -12,4 +12,4 @@ public:
     virtual ~KeyFocuser();
 };
 
-#endif // KEY_FOCUS_MANAGER_H
+#endif // BATTLE_KEY_FOCUS_MANAGER_H

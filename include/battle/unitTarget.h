@@ -1,5 +1,5 @@
-#ifndef UNIT_TARGET_H
-#define UNIT_TARGET_H
+#ifndef BATTLE_UNIT_TARGET_H
+#define BATTLE_UNIT_TARGET_H
 
 #include "battle/unit.h"
 #include "battle/keyFocusManager.h"
@@ -73,4 +73,4 @@ struct UnitTargetInfo {
 };
 extern UnitTargetInfo gUnitTargetInfo[];
 
-#endif  // UNIT_TARGET_H
+#endif  // BATTLE_UNIT_TARGET_H

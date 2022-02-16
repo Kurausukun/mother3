@@ -1,5 +1,5 @@
-#ifndef KEYPAD_H
-#define KEYPAD_H
+#ifndef BATTLE_KEYPAD_H
+#define BATTLE_KEYPAD_H
 
 #include "base.h"
 
@@ -106,4 +106,4 @@ struct SelectKeyLongPress : Unk {
     inline virtual ~SelectKeyLongPress() {}
 };
 
-#endif // KEYPAD_H
+#endif // BATTLE_KEYPAD_H

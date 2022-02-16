@@ -1,5 +1,5 @@
-#ifndef GUARD_CORE_SINGLETON_H
-#define GUARD_CORE_SINGLETON_H
+#ifndef SINGLETON_H
+#define SINGLETON_H
 
 #include "base.h"
 #include "global.h"
@@ -96,4 +96,4 @@ struct Singleton {
     void* CLASS##Manager::init() { return new CLASS; }                                             \
     const char* CLASS##Manager::getName() { return STR; }
 
-#endif  // GUARD_CORE_SINGLETON_H
+#endif  // SINGLETON_H

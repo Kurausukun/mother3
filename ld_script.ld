@@ -66,6 +66,8 @@ SECTIONS
         asm/monsterskill.o(.text);
         asm/psi.o(.text);
         asm/rom2d.o(.text);
+        src/battle/archive.o(.text);
+        asm/rom2e.o(.text);
 
         asm/m4a_1.o(.text);
         asm/libc.o(.text);

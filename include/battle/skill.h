@@ -1,5 +1,5 @@
-#ifndef CORE_SKILL_H
-#define CORE_SKILL_H
+#ifndef BATTLE_SKILL_H
+#define BATTLE_SKILL_H
 
 #include "base.h"
 
@@ -107,4 +107,4 @@ struct MoveInfo {
     // u16 redirectable;
 };
 
-#endif  // CORE_SKILL_H
+#endif  // BATTLE_SKILL_H

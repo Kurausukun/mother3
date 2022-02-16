@@ -1,5 +1,5 @@
-#ifndef CORE_UNIT_H
-#define CORE_UNIT_H
+#ifndef BATTLE_UNIT_H
+#define BATTLE_UNIT_H
 
 #include "base.h"
 
@@ -269,4 +269,4 @@ SINGLETON(UnitRevive);
 SINGLETON(UnitEscape);
 SINGLETON(UnitDie);
 
-#endif  // CORE_UNIT_H
+#endif  // BATTLE_UNIT_H

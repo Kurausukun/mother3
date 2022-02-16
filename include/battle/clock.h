@@ -1,5 +1,5 @@
-#ifndef CORE_CLOCK_H
-#define CORE_CLOCK_H
+#ifndef BATTLE_CLOCK_H
+#define BATTLE_CLOCK_H
 
 #include "base.h"
 
@@ -108,4 +108,4 @@ SINGLETON(PostAppClock)
 SINGLETON(PostSysClock)
 SINGLETON_MGR(Clock)
 
-#endif  // CORE_CLOCK_H
+#endif  // BATTLE_CLOCK_H

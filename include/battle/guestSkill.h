@@ -1,5 +1,5 @@
-#ifndef GUESTSKILL_H
-#define GUESTSKILL_H
+#ifndef BATTLE_GUEST_SKILL_H
+#define BATTLE_GUEST_SKILL_H
 
 #include "skill.h"
 
@@ -52,4 +52,4 @@ private:
 
 SINGLETON(GuestSkill);
 
-#endif  // GUESTSKILL_H
+#endif  // BATTLE_GUEST_SKILL_H

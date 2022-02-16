@@ -1,5 +1,5 @@
-#ifndef GUARD_CORE_SYSTEM_H
-#define GUARD_CORE_SYSTEM_H
+#ifndef BATTLE_SYSTEM_H
+#define BATTLE_SYSTEM_H
 
 #include "base.h"
 
@@ -29,4 +29,4 @@ public:
 };
 SINGLETON_MGR(System)
 
-#endif  // GUARD_CORE_SYSTEM_H
+#endif  // BATTLE_SYSTEM_H

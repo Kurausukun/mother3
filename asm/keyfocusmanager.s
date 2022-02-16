@@ -1073,14 +1073,14 @@ sub_080706D0: @ 0x080706D0
 	bl sub_0805D2F0
 	mov r0, sp
 	adds r1, r5, #0
-	bl sub_08088D58
+	bl __9BXTHandleRC6BXTRef
 	mov r0, r8
 	mov r1, sp
 	adds r2, r6, #0
-	bl sub_08088DF0
+	bl __7MessageP9BXTHandleUi
 	mov r0, sp
 	movs r1, #2
-	bl sub_08088D7C
+	bl _._9BXTHandle
 	ldr r0, _08070734 @ =_vt.1D
 	str r0, [sp, #0x18]
 	mov r0, r8
