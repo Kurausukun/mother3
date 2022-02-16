@@ -1,7 +1,7 @@
 CC = g++
 .PHONY: all clean
 
-SRCS = main.cpp salsa_text.cpp
+SRCS = main.cpp salsa_text.cpp salsa_maintext.cpp salsa_battletext.cpp
 
 all: salsa
 	@:

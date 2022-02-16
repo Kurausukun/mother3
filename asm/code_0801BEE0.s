@@ -19061,7 +19061,7 @@ sub_08027F38: @ 0x08027F38
 	push {r4, r5, r6, lr}
 	lsls r0, r0, #0x10
 	lsrs r6, r0, #0x10
-	ldr r4, _08027F54 @ =gMainScript
+	ldr r4, _08027F54 @ =_binary_build_mother3_assets_mainscript_bin_start
 	adds r0, r4, #0
 	movs r1, #0
 	bl sub_0800289C
@@ -19071,7 +19071,7 @@ sub_08027F38: @ 0x08027F38
 	movs r0, #0
 	b _08027F68
 	.align 2, 0
-_08027F54: .4byte gMainScript
+_08027F54: .4byte _binary_build_mother3_assets_mainscript_bin_start
 _08027F58:
 	adds r0, r4, #0
 	movs r1, #1
@@ -19094,7 +19094,7 @@ sub_08027F70: @ 0x08027F70
 	lsrs r2, r2, #0x10
 	lsls r1, r1, #0x10
 	lsrs r7, r1, #0x10
-	ldr r4, _08027F98 @ =gMainScript
+	ldr r4, _08027F98 @ =_binary_build_mother3_assets_mainscript_bin_start
 	adds r2, #1
 	lsls r6, r2, #1
 	lsls r2, r2, #0x11
@@ -19108,7 +19108,7 @@ sub_08027F70: @ 0x08027F70
 	movs r0, #0
 	b _08027FB0
 	.align 2, 0
-_08027F98: .4byte gMainScript
+_08027F98: .4byte _binary_build_mother3_assets_mainscript_bin_start
 _08027F9C:
 	adds r1, r6, #1
 	lsls r1, r1, #0x10
