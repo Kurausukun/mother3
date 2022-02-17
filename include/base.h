@@ -76,4 +76,6 @@ struct Unk : public Base {
     ~Unk() {}
 };
 
+extern "C" void sub_0806E238(Base*, u32, u32);
+
 #endif  // BASE_H

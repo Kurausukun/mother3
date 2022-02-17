@@ -112,7 +112,7 @@ public:
     virtual bool unit_210() = 0;
     virtual bool unit_218() = 0;
 
-    virtual Unit* unit_220(u32 a1);
+    virtual UnitCmd* unit_220(u32 a1);
     virtual bool unit_228(u32 a1);
     virtual void unit_230();
     virtual s32 unit_238() const;
@@ -130,7 +130,7 @@ public:
     virtual UnitCmd* unit_298(s32 a1);
     virtual bool unit_2a0(u16 a1);
     virtual s32 unit_2a8(u16 a1);
-    virtual s32 unit_2b0(u16 a1);
+    virtual s32 setAilment(u16 a1);
     virtual s32 unit_2b8(u16 a1);
 
     void nullsub_106();
@@ -160,7 +160,7 @@ private:
     /* 0x54 */ s32 _54;
     /* 0x58 */ s16 _58[64];
     /* 0xd8 */ u32 _d8;
-    /* 0xdc */ Fit _dc;
+    /* 0xdc */ Vector<UnitCmd*> _dc;
     /* 0xe8 */ Fit _e8;
     /* 0xf4 */ ID _f4;
 };

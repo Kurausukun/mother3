@@ -2887,7 +2887,7 @@ vt_09F469A8::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -3365,7 +3365,7 @@ vt_09F46E98::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -3846,7 +3846,7 @@ vt_09F47390::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -4327,7 +4327,7 @@ vt_09F47888::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -4808,7 +4808,7 @@ vt_09F47D80::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -5289,7 +5289,7 @@ vt_09F48278::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -5773,7 +5773,7 @@ vt_09F48778::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -6254,7 +6254,7 @@ vt_09F48C70::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -6594,7 +6594,7 @@ vt_09F49158::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -6848,7 +6848,7 @@ vt_09F493F8::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -7105,7 +7105,7 @@ vt_09F496A0::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -7362,7 +7362,7 @@ vt_09F49948::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -7392,7 +7392,7 @@ vt_09F49948::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078410
+	.4byte sub_08078410__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -7616,7 +7616,7 @@ vt_09F49BE8::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -7646,7 +7646,7 @@ vt_09F49BE8::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078410
+	.4byte sub_08078410__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -7870,7 +7870,7 @@ vt_09F49E88::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -8124,7 +8124,7 @@ vt_09F4A128::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -8378,7 +8378,7 @@ vt_09F4A3C8::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -8632,7 +8632,7 @@ vt_09F4A668::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -8889,7 +8889,7 @@ vt_09F4A910::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -9146,7 +9146,7 @@ vt_09F4ABB8::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -9403,7 +9403,7 @@ vt_09F4AE60::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -9660,7 +9660,7 @@ vt_09F4B108::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -9917,7 +9917,7 @@ vt_09F4B3B0::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -9947,7 +9947,7 @@ vt_09F4B3B0::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078410
+	.4byte sub_08078410__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -10204,7 +10204,7 @@ vt_09F4B6A8::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -10234,7 +10234,7 @@ vt_09F4B6A8::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078410
+	.4byte sub_08078410__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -10696,7 +10696,7 @@ _vt.5Guest::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -11035,7 +11035,7 @@ vt_09F4BDC8::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -11375,7 +11375,7 @@ vt_09F4C148::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -11724,7 +11724,7 @@ vt_09F4C4E0::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -12067,7 +12067,7 @@ vt_09F4C868::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -12413,7 +12413,7 @@ vt_09F4CBF8::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -12753,7 +12753,7 @@ vt_09F4CF78::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -13093,7 +13093,7 @@ vt_09F4D2F8::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -13251,7 +13251,7 @@ vt_09F4D600::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -13281,7 +13281,7 @@ vt_09F4D600::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078410
+	.4byte sub_08078410__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -13302,7 +13302,7 @@ vt_09F4D600::
 	.4byte skill_1d0__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__10GuestSkill
+	.4byte skill_1d8__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -13505,7 +13505,7 @@ vt_09F4D8A0::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -13535,7 +13535,7 @@ vt_09F4D8A0::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078410
+	.4byte sub_08078410__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -13556,7 +13556,7 @@ vt_09F4D8A0::
 	.4byte skill_1d0__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__10GuestSkill
+	.4byte skill_1d8__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -13759,7 +13759,7 @@ vt_09F4DB40::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -13789,7 +13789,7 @@ vt_09F4DB40::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078410
+	.4byte sub_08078410__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -13810,7 +13810,7 @@ vt_09F4DB40::
 	.4byte skill_1d0__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__10GuestSkill
+	.4byte skill_1d8__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -14013,7 +14013,7 @@ vt_09F4DDE0::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -14043,7 +14043,7 @@ vt_09F4DDE0::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078410
+	.4byte sub_08078410__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -14064,7 +14064,7 @@ vt_09F4DDE0::
 	.4byte skill_1d0__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__10GuestSkill
+	.4byte skill_1d8__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -14267,7 +14267,7 @@ vt_09F4E080::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -14297,7 +14297,7 @@ vt_09F4E080::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078410
+	.4byte sub_08078410__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -14318,7 +14318,7 @@ vt_09F4E080::
 	.4byte skill_1d0__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__10GuestSkill
+	.4byte skill_1d8__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -14845,7 +14845,7 @@ vt_09F4E508::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -15299,7 +15299,7 @@ vt_09F4E9B8::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -15779,7 +15779,7 @@ vt_09F4EEA8::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -16233,7 +16233,7 @@ vt_09F4F358::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -16735,7 +16735,7 @@ vt_09F4F888::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -17198,7 +17198,7 @@ vt_09F4FD50::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -17661,7 +17661,7 @@ vt_09F50218::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -18139,7 +18139,7 @@ vt_09F50708::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -18593,7 +18593,7 @@ vt_09F50BB8::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -19050,7 +19050,7 @@ vt_09F51070::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -19504,7 +19504,7 @@ vt_09F51520::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -19958,7 +19958,7 @@ vt_09F519D0::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -20424,7 +20424,7 @@ vt_09F51EA0::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -20881,7 +20881,7 @@ vt_09F52358::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -21353,7 +21353,7 @@ vt_09F52838::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -21807,7 +21807,7 @@ vt_09F52CE8::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -22282,7 +22282,7 @@ vt_09F531D0::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -22736,7 +22736,7 @@ vt_09F53680::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -23190,7 +23190,7 @@ vt_09F53B30::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -23644,7 +23644,7 @@ vt_09F53FE0::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -24098,7 +24098,7 @@ vt_09F54490::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -24552,7 +24552,7 @@ vt_09F54940::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -25006,7 +25006,7 @@ vt_09F54DF0::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -25460,7 +25460,7 @@ vt_09F552A0::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -25914,7 +25914,7 @@ vt_09F55750::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -26368,7 +26368,7 @@ vt_09F55C00::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -26822,7 +26822,7 @@ vt_09F560B0::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -27276,7 +27276,7 @@ vt_09F56560::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -27745,7 +27745,7 @@ vt_09F56A38::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -28199,7 +28199,7 @@ vt_09F56EE8::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -28653,7 +28653,7 @@ vt_09F57398::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -29107,7 +29107,7 @@ vt_09F57848::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -29570,7 +29570,7 @@ vt_09F57D10::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -30024,7 +30024,7 @@ vt_09F581C0::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -30478,7 +30478,7 @@ vt_09F58670::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -30932,7 +30932,7 @@ vt_09F58B20::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -31389,7 +31389,7 @@ vt_09F58FD8::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -31843,7 +31843,7 @@ vt_09F59488::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -32309,7 +32309,7 @@ vt_09F59958::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -32772,7 +32772,7 @@ vt_09F59E20::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -33226,7 +33226,7 @@ vt_09F5A2D0::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -33680,7 +33680,7 @@ vt_09F5A780::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -34143,7 +34143,7 @@ vt_09F5AC48::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -34600,7 +34600,7 @@ vt_09F5B100::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -35054,7 +35054,7 @@ vt_09F5B5B0::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -35508,7 +35508,7 @@ vt_09F5BA60::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -35974,7 +35974,7 @@ vt_09F5BF30::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -36428,7 +36428,7 @@ vt_09F5C3E0::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -36882,7 +36882,7 @@ vt_09F5C890::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -37336,7 +37336,7 @@ vt_09F5CD40::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -37799,7 +37799,7 @@ vt_09F5D208::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -38253,7 +38253,7 @@ vt_09F5D6B8::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -38707,7 +38707,7 @@ vt_09F5DB68::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -39161,7 +39161,7 @@ vt_09F5E018::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -39615,7 +39615,7 @@ vt_09F5E4C8::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -40069,7 +40069,7 @@ vt_09F5E978::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -40532,7 +40532,7 @@ vt_09F5EE40::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -40986,7 +40986,7 @@ vt_09F5F2F0::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -41449,7 +41449,7 @@ vt_09F5F7B8::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -41903,7 +41903,7 @@ vt_09F5FC68::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -42357,7 +42357,7 @@ vt_09F60118::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -42811,7 +42811,7 @@ vt_09F605C8::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -43265,7 +43265,7 @@ vt_09F60A78::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -43719,7 +43719,7 @@ vt_09F60F28::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -44185,7 +44185,7 @@ vt_09F613F8::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -44651,7 +44651,7 @@ vt_09F618C8::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -45114,7 +45114,7 @@ vt_09F61D90::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -45568,7 +45568,7 @@ vt_09F62240::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -46022,7 +46022,7 @@ vt_09F626F0::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -46476,7 +46476,7 @@ vt_09F62BA0::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -46930,7 +46930,7 @@ vt_09F63050::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -47384,7 +47384,7 @@ vt_09F63500::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -47838,7 +47838,7 @@ vt_09F639B0::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -48295,7 +48295,7 @@ vt_09F63E68::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -48749,7 +48749,7 @@ vt_09F64318::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -81738,13 +81738,13 @@ __vt_5Goods::
 	.2byte 0
 	.4byte sub_08083074
 
-vt_09F79A58::
+_vt.5Goods::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649E8
+	.4byte _._5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_08064974
@@ -81864,7 +81864,7 @@ vt_09F79A58::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -81894,7 +81894,7 @@ vt_09F79A58::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -81906,106 +81906,106 @@ vt_09F79A58::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte getID__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte getEffect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte getElement__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte getTarget__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte getAttackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte getHealLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte getHealHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte getAilment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte getAilmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte getPriority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte getTextBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte getTextNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte getAnimBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte getNextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte getAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F08
+	.4byte getSfxBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte getSfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte canMiss__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FA0
+	.4byte isConsumable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 
 vt_09F79D20::
 	.2byte 0
@@ -82144,7 +82144,7 @@ vt_09F79D38::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -82174,7 +82174,7 @@ vt_09F79D38::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -82186,106 +82186,106 @@ vt_09F79D38::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte getID__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte getEffect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte getElement__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte getTarget__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte getAttackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte getHealLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte getHealHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte getAilment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte getAilmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte getPriority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte getTextBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte getTextNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte getAnimBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte getNextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte getAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte getSfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte canMiss__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -82422,7 +82422,7 @@ vt_09F7A018::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -82452,7 +82452,7 @@ vt_09F7A018::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -82464,106 +82464,106 @@ vt_09F7A018::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte getID__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte getEffect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte getElement__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte getTarget__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte getAttackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte getHealLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte getHealHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte getAilment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte getAilmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte getPriority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte getTextBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte getTextNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte getAnimBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte getNextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte getAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte getSfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte canMiss__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -82700,7 +82700,7 @@ vt_09F7A2F8::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -82730,7 +82730,7 @@ vt_09F7A2F8::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -82742,106 +82742,106 @@ vt_09F7A2F8::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte getID__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte getEffect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte getElement__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte getTarget__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte getAttackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte getHealLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte getHealHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte getAilment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte getAilmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte getPriority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte getTextBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte getTextNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte getAnimBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte getNextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte getAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte getSfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte canMiss__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -82978,7 +82978,7 @@ vt_09F7A5D8::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -83008,7 +83008,7 @@ vt_09F7A5D8::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -83020,106 +83020,106 @@ vt_09F7A5D8::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte getID__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte getEffect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte getElement__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte getTarget__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte getAttackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte getHealLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte getHealHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte getAilment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte getAilmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte getPriority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte getTextBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte getTextNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte getAnimBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte getNextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte getAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte getSfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte canMiss__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -83256,7 +83256,7 @@ vt_09F7A8B8::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -83286,7 +83286,7 @@ vt_09F7A8B8::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -83298,106 +83298,106 @@ vt_09F7A8B8::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte getID__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte getEffect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte getElement__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte getTarget__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte getAttackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte getHealLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte getHealHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte getAilment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte getAilmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte getPriority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte getTextBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte getTextNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte getAnimBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte getNextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte getAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte getSfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte canMiss__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -83534,7 +83534,7 @@ vt_09F7AB98::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -83564,7 +83564,7 @@ vt_09F7AB98::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -83576,106 +83576,106 @@ vt_09F7AB98::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte getID__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte getEffect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte getElement__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte getTarget__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte getAttackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte getHealLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte getHealHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte getAilment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte getAilmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte getPriority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte getTextBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte getTextNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte getAnimBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte getNextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte getAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte getSfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte canMiss__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -83812,7 +83812,7 @@ vt_09F7AE78::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -83842,7 +83842,7 @@ vt_09F7AE78::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -83854,106 +83854,106 @@ vt_09F7AE78::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte getID__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte getEffect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte getElement__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte getTarget__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte getAttackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte getHealLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte getHealHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte getAilment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte getAilmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte getPriority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte getTextBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte getTextNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte getAnimBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte getNextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte getAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte getSfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte canMiss__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -84090,7 +84090,7 @@ vt_09F7B158::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -84120,7 +84120,7 @@ vt_09F7B158::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -84132,106 +84132,106 @@ vt_09F7B158::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte getID__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte getEffect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte getElement__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte getTarget__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte getAttackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte getHealLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte getHealHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte getAilment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte getAilmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte getPriority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte getTextBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte getTextNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte getAnimBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte getNextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte getAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte getSfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte canMiss__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -84368,7 +84368,7 @@ vt_09F7B438::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -84398,7 +84398,7 @@ vt_09F7B438::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -84410,106 +84410,106 @@ vt_09F7B438::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte getID__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte getEffect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte getElement__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte getTarget__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte getAttackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte getHealLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte getHealHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte getAilment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte getAilmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte getPriority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte getTextBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte getTextNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte getAnimBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte getNextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte getAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte getSfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte canMiss__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -84646,7 +84646,7 @@ vt_09F7B718::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -84676,7 +84676,7 @@ vt_09F7B718::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -84688,106 +84688,106 @@ vt_09F7B718::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte getID__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte getEffect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte getElement__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte getTarget__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte getAttackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte getHealLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte getHealHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte getAilment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte getAilmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte getPriority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte getTextBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte getTextNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte getAnimBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte getNextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte getAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte getSfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte canMiss__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -84924,7 +84924,7 @@ vt_09F7B9F8::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -84954,7 +84954,7 @@ vt_09F7B9F8::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -84966,106 +84966,106 @@ vt_09F7B9F8::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte getID__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte getEffect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte getElement__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte getTarget__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte getAttackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte getHealLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte getHealHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte getAilment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte getAilmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte getPriority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte getTextBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte getTextNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte getAnimBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte getNextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte getAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte getSfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte canMiss__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -85202,7 +85202,7 @@ vt_09F7BCD8::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -85232,7 +85232,7 @@ vt_09F7BCD8::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -85244,106 +85244,106 @@ vt_09F7BCD8::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte getID__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte getEffect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte getElement__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte getTarget__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte getAttackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte getHealLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte getHealHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte getAilment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte getAilmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte getPriority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte getTextBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte getTextNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte getAnimBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte getNextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte getAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte getSfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte canMiss__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -85480,7 +85480,7 @@ vt_09F7BFB8::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -85510,7 +85510,7 @@ vt_09F7BFB8::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -85522,106 +85522,106 @@ vt_09F7BFB8::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte getID__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte getEffect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte getElement__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte getTarget__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte getAttackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte getHealLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte getHealHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte getAilment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte getAilmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte getPriority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte getTextBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte getTextNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte getAnimBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte getNextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte getAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte getSfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte canMiss__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -85758,7 +85758,7 @@ vt_09F7C298::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -85788,7 +85788,7 @@ vt_09F7C298::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -85800,106 +85800,106 @@ vt_09F7C298::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte getID__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte getEffect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte getElement__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte getTarget__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte getAttackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte getHealLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte getHealHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte getAilment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte getAilmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte getPriority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte getTextBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte getTextNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte getAnimBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte getNextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte getAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte getSfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte canMiss__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -86036,7 +86036,7 @@ vt_09F7C578::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -86066,7 +86066,7 @@ vt_09F7C578::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -86078,106 +86078,106 @@ vt_09F7C578::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte getID__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte getEffect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte getElement__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte getTarget__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte getAttackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte getHealLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte getHealHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte getAilment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte getAilmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte getPriority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte getTextBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte getTextNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte getAnimBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte getNextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte getAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte getSfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte canMiss__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -86314,7 +86314,7 @@ vt_09F7C858::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -86344,7 +86344,7 @@ vt_09F7C858::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -86356,106 +86356,106 @@ vt_09F7C858::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte getID__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte getEffect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte getElement__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte getTarget__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte getAttackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte getHealLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte getHealHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte getAilment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte getAilmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte getPriority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte getTextBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte getTextNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte getAnimBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte getNextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte getAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte getSfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte canMiss__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -86592,7 +86592,7 @@ vt_09F7CB38::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -86622,7 +86622,7 @@ vt_09F7CB38::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -86634,106 +86634,106 @@ vt_09F7CB38::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte getID__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte getEffect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte getElement__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte getTarget__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte getAttackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte getHealLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte getHealHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte getAilment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte getAilmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte getPriority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte getTextBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte getTextNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte getAnimBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte getNextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte getAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte getSfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte canMiss__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -86870,7 +86870,7 @@ vt_09F7CE18::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -86900,7 +86900,7 @@ vt_09F7CE18::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -86912,106 +86912,106 @@ vt_09F7CE18::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte getID__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte getEffect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte getElement__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte getTarget__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte getAttackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte getHealLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte getHealHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte getAilment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte getAilmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte getPriority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte getTextBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte getTextNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte getAnimBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte getNextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte getAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte getSfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte canMiss__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -87148,7 +87148,7 @@ vt_09F7D0F8::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -87178,7 +87178,7 @@ vt_09F7D0F8::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -87190,106 +87190,106 @@ vt_09F7D0F8::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte getID__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte getEffect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte getElement__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte getTarget__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte getAttackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte getHealLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte getHealHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte getAilment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte getAilmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte getPriority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte getTextBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte getTextNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte getAnimBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte getNextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte getAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte getSfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte canMiss__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -87426,7 +87426,7 @@ vt_09F7D3D8::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -87456,7 +87456,7 @@ vt_09F7D3D8::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -87468,34 +87468,34 @@ vt_09F7D3D8::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte getID__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte getEffect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte getElement__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte getTarget__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte getAttackMult__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BFEE4
@@ -87504,70 +87504,70 @@ vt_09F7D3D8::
 	.4byte sub_080BFECC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte getAilment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte getAilmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte getPriority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte getTextBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte getTextNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte getAnimBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte getNextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte getAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte getSfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte canMiss__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -87704,7 +87704,7 @@ vt_09F7D6B8::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -87734,7 +87734,7 @@ vt_09F7D6B8::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -87746,58 +87746,58 @@ vt_09F7D6B8::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte getID__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte getEffect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte getElement__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte getTarget__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte getAttackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte getHealLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte getHealHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte getAilment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte getAilmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte getPriority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0048
@@ -87806,46 +87806,46 @@ vt_09F7D6B8::
 	.4byte sub_080C0064
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte getAnimBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte getNextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte getAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte getSfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte canMiss__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -87985,7 +87985,7 @@ vt_09F7D9A0::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -88015,7 +88015,7 @@ vt_09F7D9A0::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -88027,106 +88027,106 @@ vt_09F7D9A0::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte getID__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte getEffect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte getElement__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte getTarget__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte getAttackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte getHealLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte getHealHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte getAilment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte getAilmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte getPriority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte getTextBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte getTextNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte getAnimBank__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte getNextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte getAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte getSfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte canMiss__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -94040,7 +94040,7 @@ _vt.4Unit::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -94827,7 +94827,7 @@ vt_09F81DD0::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -94857,7 +94857,7 @@ vt_09F81DD0::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078410
+	.4byte sub_08078410__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -95263,7 +95263,7 @@ vt_09F820E8::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -96032,7 +96032,7 @@ vt_09F82A28::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -96062,7 +96062,7 @@ vt_09F82A28::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078410
+	.4byte sub_08078410__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -96297,7 +96297,7 @@ _vt.10GuestSkill::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -96327,7 +96327,7 @@ _vt.10GuestSkill::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078410
+	.4byte sub_08078410__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -96348,7 +96348,7 @@ _vt.10GuestSkill::
 	.4byte skill_1d0__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__10GuestSkill
+	.4byte skill_1d8__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -96744,7 +96744,7 @@ vt_09F83010::
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs

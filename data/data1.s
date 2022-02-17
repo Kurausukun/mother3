@@ -637,8 +637,8 @@ gUnknown_080E1910:
 gUnknown_080E1918:
     .incbin "baserom.gba", 0x000E1918, 0x37F0
 
-    .global gItemData
-gItemData:
+    .global gGoodsInfo
+gGoodsInfo:
     .incbin "baserom.gba", 0x000E5108, 0x4
 
     .global gUnknown_080E510C

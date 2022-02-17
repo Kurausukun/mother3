@@ -623,8 +623,8 @@ _08078408:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_08078410
-sub_08078410: @ 0x08078410
+	thumb_func_start sub_08078410__5Goods
+sub_08078410__5Goods: @ 0x08078410
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -4311,8 +4311,8 @@ _0807A1B8:
 	bx r0
 	.align 2, 0
 
-	thumb_func_start nullsub_28
-nullsub_28: @ 0x0807A1C0
+	thumb_func_start nullsub_28__5Goods
+nullsub_28__5Goods: @ 0x0807A1C0
 	bx lr
 	.align 2, 0
 

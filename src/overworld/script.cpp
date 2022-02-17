@@ -588,7 +588,7 @@ u16 cmd_get_item_count(s32* sp) {
     u8* item;
     u16 idx;
     idx = scriptstack_peek(sp, 0);
-    if (gItemData[idx].type == Key) {
+    if (gGoodsInfo[idx].type == Key) {
         cnt = gSave._10[idx];
     } else {
         cnt = 0;
@@ -616,7 +616,7 @@ u16 cmd_get_item_count(s32* sp) {
 	bl scriptstack_peek\n\
 	lsls r0, r0, #0x10\n\
 	lsrs r6, r0, #0x10\n\
-	ldr r1, _0801C7C8 @ =gItemData\n\
+	ldr r1, _0801C7C8 @ =gGoodsInfo\n\
 	movs r0, #0x6c\n\
 	muls r0, r6, r0\n\
 	adds r1, #4\n\
@@ -630,7 +630,7 @@ u16 cmd_get_item_count(s32* sp) {
 	ldrb r0, [r0]\n\
 	b _0801C818\n\
 	.align 2, 0\n\
-_0801C7C8: .4byte gItemData\n\
+_0801C7C8: .4byte gGoodsInfo\n\
 _0801C7CC: .4byte gSave\n\
 _0801C7D0:\n\
 	movs r7, #0\n\
@@ -1244,7 +1244,7 @@ u16 cmd_cfg_member_item(s32* sp) {
 	bl scriptstack_peek\n\
 	lsls r0, r0, #0x10\n\
 	lsrs r6, r0, #0x10\n\
-	ldr r1, _0801CD68 @ =gItemData\n\
+	ldr r1, _0801CD68 @ =gGoodsInfo\n\
 	movs r0, #0x6c\n\
 	muls r0, r5, r0\n\
 	adds r1, #4\n\
@@ -1258,7 +1258,7 @@ u16 cmd_cfg_member_item(s32* sp) {
 	bl sub_0802A0F8\n\
 	b _0801CDF4\n\
 	.align 2, 0\n\
-_0801CD68: .4byte gItemData\n\
+_0801CD68: .4byte gGoodsInfo\n\
 _0801CD6C:\n\
 	lsls r2, r7, #0x10\n\
 	asrs r1, r2, #0x10\n\
@@ -1386,7 +1386,7 @@ u16 sub_0801CEE0(s32* sp) {
     idx = scriptstack_peek(sp, 0);
     if (idx == -1) {
         scriptstack_push(gScript._82ae);
-    } else if (gItemData[idx].type == Key || sub_0802A124(idx) != 0) {
+    } else if (gGoodsInfo[idx].type == Key || sub_0802A124(idx) != 0) {
         scriptstack_push(1);
     } else {
         scriptstack_push(0);
@@ -1811,7 +1811,7 @@ u16 sub_0801D698(s32* sp) {
 
     tmp = scriptstack_peek(sp, 1);
     idx = scriptstack_peek(sp, 0);
-    if (gItemData[idx].type == Key) {
+    if (gGoodsInfo[idx].type == Key) {
         scriptstack_push(gSave._10[idx]);
     } else if (tmp < 5) {
         u16 tmp2 = sub_0802A3D0(get_guest_stats(tmp), idx);

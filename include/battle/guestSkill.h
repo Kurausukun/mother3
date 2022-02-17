@@ -1,7 +1,7 @@
 #ifndef BATTLE_GUEST_SKILL_H
 #define BATTLE_GUEST_SKILL_H
 
-#include "skill.h"
+#include "battle/skill.h"
 
 struct GuestSkillInfo {
     u8 id;
@@ -17,9 +17,9 @@ public:
     void* getInstance();
 
     Skill* skill_1c0();
-    u32 getID() const;
+    u16 getID() const;
     Skill* skill_1d0(Skill*);
-    Skill* skill_1d8();
+    Skill* skill_1d8(Skill*);
     u32 skill_1e0();
     u32 getEffect() const;
     u32 getElement() const;

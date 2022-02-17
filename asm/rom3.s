@@ -33234,7 +33234,7 @@ sub_080B09F4: @ 0x080B09F4
 	movs r1, #2
 	bl sub_0806E308
 	adds r0, r5, #0
-	bl sub_080729B0
+	bl sub_080729B0__5Goods
 	adds r4, r0, #0
 	cmp r4, #0
 	beq _080B0A6A
@@ -35177,7 +35177,7 @@ sub_080B19B4: @ 0x080B19B4
 	str r0, [sp, #4]
 	str r0, [sp, #8]
 	adds r0, r4, #0
-	bl sub_080729B0
+	bl sub_080729B0__5Goods
 	mov r8, r0
 	movs r6, #0
 	add r0, sp, #0xc
@@ -35201,13 +35201,13 @@ _080B19E0:
 	mov r0, sb
 	mov r2, r8
 	movs r3, #0
-	bl sub_080649AC
+	bl __5GoodsUsUiUs
 	mov r0, sb
-	bl sub_08064F98
+	bl getType__C5Goods
 	cmp r0, #4
 	beq _080B1A1E
 	mov r0, sb
-	bl sub_08064F98
+	bl getType__C5Goods
 	adds r7, r6, #1
 	cmp r0, #6
 	bne _080B1A94
@@ -35276,7 +35276,7 @@ _080B1A82:
 _080B1A94:
 	mov r0, sb
 	movs r1, #2
-	bl sub_080649E8
+	bl _._5Goods
 	adds r6, r7, #0
 _080B1A9E:
 	mov r4, r8
@@ -35354,10 +35354,10 @@ _080B1B02:
 	mov r0, sl
 	mov r2, r8
 	movs r3, #0
-	bl sub_080649AC
+	bl __5GoodsUsUiUs
 	adds r0, r7, #0
 	mov r1, sl
-	bl sub_08064B30
+	bl skill_1d0__5GoodsP5Skill
 	mov r0, sb
 	adds r1, r7, #0
 	bl sub_0806E374
@@ -35366,7 +35366,7 @@ _080B1B02:
 	bl sub_0806E308
 	mov r0, sl
 	movs r1, #2
-	bl sub_080649E8
+	bl _._5Goods
 	ldr r3, [r5, #0x1c]
 	adds r3, r3, r4
 	movs r2, #0
@@ -38748,7 +38748,7 @@ sub_080B363C: @ 0x080B363C
 	sub sp, #0x18
 	adds r5, r0, #0
 	adds r0, r1, #0
-	bl sub_080729B0
+	bl sub_080729B0__5Goods
 	adds r6, r0, #0
 	cmp r6, #0
 	bne _080B3650
@@ -39681,7 +39681,7 @@ _080B3D68: .4byte vt_09F72120
 sub_080B3D6C: @ 0x080B3D6C
 	push {r4, lr}
 	adds r0, r1, #0
-	bl sub_080729B0
+	bl sub_080729B0__5Goods
 	adds r4, r0, #0
 	cmp r4, #0
 	beq _080B3DA6
@@ -39771,7 +39771,7 @@ sub_080B3E00: @ 0x080B3E00
 	b _080B4028
 _080B3E22:
 	adds r0, r4, #0
-	bl sub_080729B0
+	bl sub_080729B0__5Goods
 	adds r7, r0, #0
 	cmp r7, #0
 	bne _080B3E30
@@ -39801,14 +39801,14 @@ _080B3E3C:
 	adds r0, r4, #0
 	adds r2, r7, #0
 	movs r3, #0
-	bl sub_080649AC
+	bl __5GoodsUsUiUs
 	adds r0, r4, #0
-	bl sub_08064F98
+	bl getType__C5Goods
 	mov sl, r4
 	cmp r0, #4
 	beq _080B3E7E
 	mov r0, sl
-	bl sub_08064F98
+	bl getType__C5Goods
 	adds r3, r6, #1
 	mov r8, r3
 	cmp r0, #6
@@ -39878,7 +39878,7 @@ _080B3EE2:
 _080B3EF4:
 	mov r0, sl
 	movs r1, #2
-	bl sub_080649E8
+	bl _._5Goods
 	mov r6, r8
 _080B3EFE:
 	ldr r1, [r7, #0x1c]
@@ -39958,10 +39958,10 @@ _080B3F66:
 	mov r0, sb
 	adds r2, r7, #0
 	movs r3, #0
-	bl sub_080649AC
+	bl __5GoodsUsUiUs
 	mov r0, r8
 	mov r1, sb
-	bl sub_08064B30
+	bl skill_1d0__5GoodsP5Skill
 	mov r0, sl
 	mov r1, r8
 	bl sub_0806E374
@@ -39970,7 +39970,7 @@ _080B3F66:
 	bl sub_0806E308
 	mov r0, sb
 	movs r1, #2
-	bl sub_080649E8
+	bl _._5Goods
 	ldr r3, [r5, #0x1c]
 	adds r3, r3, r4
 	movs r2, #0
@@ -53186,7 +53186,7 @@ sub_080BA908: @ 0x080BA908
 	adds r0, r5, r0
 	ldr r1, [r1, #4]
 	bl _call_via_r1
-	bl sub_080729B0
+	bl sub_080729B0__5Goods
 	ldr r1, [r0, #0x1c]
 	movs r3, #0xd4
 	lsls r3, r3, #2
@@ -53233,7 +53233,7 @@ sub_080BA960: @ 0x080BA960
 	adds r0, r7, r0
 	ldr r1, [r1, #4]
 	bl _call_via_r1
-	bl sub_080729B0
+	bl sub_080729B0__5Goods
 	adds r4, r0, #0
 	ldr r1, [r4, #0x1c]
 	movs r5, #0xe6

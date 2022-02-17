@@ -971,7 +971,7 @@ sub_08082088: @ 0x08082088
 	cmp r0, r1
 	blt _080820C6
 	adds r0, r5, #0
-	bl sub_08078410
+	bl sub_08078410__5Goods
 	b _0808212A
 _080820C6:
 	ldr r2, [r5, #0x1c]
@@ -1102,7 +1102,7 @@ sub_080821A0: @ 0x080821A0
 	movs r2, #0
 	bl sub_08073CF0
 	adds r0, r4, #0
-	bl nullsub_28
+	bl nullsub_28__5Goods
 	pop {r4, r5}
 	pop {r0}
 	bx r0
@@ -1270,7 +1270,7 @@ sub_080822C4: @ 0x080822C4
 	ldr r0, [r1, #0x48]
 	ldrh r1, [r0, #0x24]
 	adds r0, r4, #0
-	bl sub_08073444
+	bl sub_08073444__5GoodsUs
 	adds r0, r4, #0
 	pop {r4}
 	pop {r1}

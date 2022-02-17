@@ -33,6 +33,7 @@ SECTIONS
         src/battle/guest.o(.text);
         src/battle/guestFactory.o(.text);
         asm/goods.o(.text);
+        src/battle/goods.o(.text);
         asm/sndmon.o(.text);
         asm/code_0805D74C.o(.text);
         src/singleton.o(.text);

@@ -2753,13 +2753,13 @@ _0807DB1E:
 	mov r0, sp
 	adds r1, r4, #0
 	movs r3, #0
-	bl sub_080649AC
+	bl __5GoodsUsUiUs
 	mov r0, sp
-	bl sub_08064F3C
+	bl goods_2c0__5Goods
 	adds r4, r0, #0
 	mov r0, sp
 	movs r1, #2
-	bl sub_080649E8
+	bl _._5Goods
 	lsls r4, r4, #0x18
 	lsrs r4, r4, #0x18
 	cmp r4, #1
@@ -3478,13 +3478,13 @@ sub_0807E088: @ 0x0807E088
 	mov r0, sp
 	adds r1, r4, #0
 	movs r3, #0
-	bl sub_080649AC
+	bl __5GoodsUsUiUs
 	mov r0, sp
-	bl sub_08064F3C
+	bl goods_2c0__5Goods
 	adds r4, r0, #0
 	mov r0, sp
 	movs r1, #2
-	bl sub_080649E8
+	bl _._5Goods
 	lsls r4, r4, #0x18
 	lsrs r4, r4, #0x18
 	cmp r4, #1
@@ -4226,7 +4226,7 @@ _0807E694:
 	mov r0, sp
 	adds r1, r4, #0
 	movs r3, #0
-	bl sub_080649AC
+	bl __5GoodsUsUiUs
 	mov r0, r8
 	bl sub_0806E274
 	ldr r0, [sp, #0x84]
@@ -4245,7 +4245,7 @@ _0807E694:
 	bl sub_0806E34C
 	adds r0, r7, #0
 	mov r1, sp
-	bl sub_08064B30
+	bl skill_1d0__5GoodsP5Skill
 	mov r0, r8
 	adds r1, r7, #0
 	bl sub_0806E374
@@ -4261,7 +4261,7 @@ _0807E6F4:
 	bl sub_0806E34C
 	adds r0, r7, #0
 	mov r1, sp
-	bl sub_08064B30
+	bl skill_1d0__5GoodsP5Skill
 	mov r0, r8
 	adds r1, r7, #0
 	bl sub_0806E374
@@ -4288,7 +4288,7 @@ _0807E714:
 	mov r1, r8
 	bl _call_via_r2
 	mov r0, sp
-	bl sub_08064F3C
+	bl goods_2c0__5Goods
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -4327,7 +4327,7 @@ _0807E782:
 	bl sub_0806E308
 	mov r0, sp
 	movs r1, #2
-	bl sub_080649E8
+	bl _._5Goods
 	b _0807E7C8
 _0807E794:
 	movs r0, #0x5c
@@ -4463,7 +4463,7 @@ _0807E7DE:
 	mov r0, sp
 	adds r1, r4, #0
 	movs r3, #0
-	bl sub_080649AC
+	bl __5GoodsUsUiUs
 	ldr r3, _0807E988 @ =0x0000051C
 	adds r4, r6, r3
 	ldr r1, [r6, #0x1c]
@@ -4477,7 +4477,7 @@ _0807E7DE:
 	adds r0, r4, #0
 	bl sub_080867D4
 	mov r0, sp
-	bl sub_08064B20
+	bl getID__C5Goods
 	adds r1, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
@@ -4542,7 +4542,7 @@ _0807E7DE:
 	bl sub_0806DB38
 	mov r0, sp
 	movs r1, #2
-	bl sub_080649E8
+	bl _._5Goods
 _0807E974:
 	add sp, #0x98
 	pop {r3, r4, r5}
@@ -8109,7 +8109,7 @@ sub_080805F4: @ 0x080805F4
 	ldr r0, [r1, #0x48]
 	ldrh r1, [r0, #0x20]
 	adds r0, r4, #0
-	bl sub_08073444
+	bl sub_08073444__5GoodsUs
 	adds r0, r4, #0
 	pop {r4}
 	pop {r1}

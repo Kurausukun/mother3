@@ -1165,7 +1165,7 @@ _08082D44:
 	b _08082D66
 _08082D60:
 	adds r0, r5, #0
-	bl sub_08078410
+	bl sub_08078410__5Goods
 _08082D66:
 	add sp, #0x18
 	pop {r4, r5, r6}
@@ -1215,7 +1215,7 @@ sub_08082D70: @ 0x08082D70
 	bl sub_08073CF0
 _08082DC4:
 	adds r0, r5, #0
-	bl nullsub_28
+	bl nullsub_28__5Goods
 	pop {r4, r5}
 	pop {r0}
 	bx r0
@@ -1483,7 +1483,7 @@ sub_08082F90: @ 0x08082F90
 	ldr r0, [r1, #0x48]
 	ldrh r1, [r0, #0x2c]
 	adds r0, r4, #0
-	bl sub_08073444
+	bl sub_08073444__5GoodsUs
 	adds r0, r4, #0
 	pop {r4}
 	pop {r1}
