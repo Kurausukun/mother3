@@ -582,8 +582,8 @@ _080729A8:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080729B0
-sub_080729B0: @ 0x080729B0
+	thumb_func_start sub_080729B0__5Goods
+sub_080729B0__5Goods: @ 0x080729B0
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	cmp r5, #0
@@ -1970,8 +1970,8 @@ _0807343C:
 	pop {r0}
 	bx r0
 
-	thumb_func_start sub_08073444
-sub_08073444: @ 0x08073444
+	thumb_func_start sub_08073444__5GoodsUs
+sub_08073444__5GoodsUs: @ 0x08073444
 	push {r4, lr}
 	adds r4, r0, #0
 	lsls r2, r1, #0x10
@@ -1998,7 +1998,7 @@ sub_08073460: @ 0x08073460
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
 	add r0, sp, #4
-	bl sub_08073444
+	bl sub_08073444__5GoodsUs
 	str r4, [sp]
 	mov r0, r8
 	add r1, sp, #4

@@ -3,8 +3,23 @@
 .syntax unified
 .section .text
 
-	thumb_func_start sub_08064FE8
-sub_08064FE8: @ 0x08064FE8
+	thumb_func_start sub_08064FCC
+sub_08064FCC: @ 0x08064FCC
+	push {r4, lr}
+	ldr r4, _08064FE0 @ =gUnknown_020038B0
+	adds r0, r4, #0
+	bl __9Singleton
+	ldr r0, _08064FE4 @ =vt_09F79D20
+	str r0, [r4, #8]
+	pop {r4}
+	pop {r0}
+	bx r0
+	.align 2, 0
+_08064FE0: .4byte gUnknown_020038B0
+_08064FE4: .4byte vt_09F79D20
+
+	thumb_func_start __5Goods
+__5Goods: @ 0x08064FE8
 	push {r4, lr}
 	adds r4, r0, #0
 	bl __4Base
@@ -18,14 +33,14 @@ sub_08064FE8: @ 0x08064FE8
 	str r0, [r4, #0x34]
 	str r0, [r1, #4]
 	str r0, [r1, #8]
-	ldr r0, _08065010 @ =vt_09F79A58
+	ldr r0, _08065010 @ =_vt.5Goods
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
 	pop {r4}
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08065010: .4byte vt_09F79A58
+_08065010: .4byte _vt.5Goods
 
 	thumb_func_start sub_08065014
 sub_08065014: @ 0x08065014

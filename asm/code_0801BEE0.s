@@ -21699,7 +21699,7 @@ sub_08029428: @ 0x08029428
 	strh r0, [r3, #0x26]
 	strh r0, [r3, #0x2c]
 	movs r6, #0
-	ldr r5, _080294D8 @ =gItemData
+	ldr r5, _080294D8 @ =gGoodsInfo
 	movs r4, #0x6c
 _08029444:
 	mov r2, ip
@@ -21776,7 +21776,7 @@ _08029444:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080294D8: .4byte gItemData
+_080294D8: .4byte gGoodsInfo
 
 	thumb_func_start sub_080294DC
 sub_080294DC: @ 0x080294DC
@@ -24535,7 +24535,7 @@ sub_0802A9B4: @ 0x0802A9B4
 	adds r0, r0, r1
 	movs r1, #0
 	str r1, [r0]
-	ldr r1, _0802A9FC @ =gItemData
+	ldr r1, _0802A9FC @ =gGoodsInfo
 	movs r0, #0x6c
 	muls r0, r3, r0
 	adds r1, #4
@@ -24557,7 +24557,7 @@ sub_0802A9B4: @ 0x0802A9B4
 	.align 2, 0
 _0802A9F4: .4byte gUnknown_02016028
 _0802A9F8: .4byte 0x00004AD0
-_0802A9FC: .4byte gItemData
+_0802A9FC: .4byte gGoodsInfo
 _0802AA00: .4byte gScript
 _0802AA04: .4byte 0x0000845C
 _0802AA08:
@@ -26668,7 +26668,7 @@ sub_0802B9C0: @ 0x0802B9C0
 	push {lr}
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
-	ldr r1, _0802B9DC @ =gItemData
+	ldr r1, _0802B9DC @ =gGoodsInfo
 	movs r2, #0x6c
 	muls r0, r2, r0
 	adds r1, #4
@@ -26679,7 +26679,7 @@ sub_0802B9C0: @ 0x0802B9C0
 	movs r0, #0
 	b _0802B9E2
 	.align 2, 0
-_0802B9DC: .4byte gItemData
+_0802B9DC: .4byte gGoodsInfo
 _0802B9E0:
 	movs r0, #1
 _0802B9E2:
@@ -26692,7 +26692,7 @@ sub_0802B9E8: @ 0x0802B9E8
 	push {lr}
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
-	ldr r1, _0802BA10 @ =gItemData
+	ldr r1, _0802BA10 @ =gGoodsInfo
 	movs r2, #0x6c
 	muls r0, r2, r0
 	adds r1, #4
@@ -26709,7 +26709,7 @@ sub_0802B9E8: @ 0x0802B9E8
 	movs r0, #4
 	b _0802BA22
 	.align 2, 0
-_0802BA10: .4byte gItemData
+_0802BA10: .4byte gGoodsInfo
 _0802BA14:
 	movs r0, #0
 	b _0802BA22
@@ -66755,7 +66755,7 @@ sub_0803F1AC: @ 0x0803F1AC
 	strh r0, [r3, #0x26]
 	strh r0, [r3, #0x2c]
 	movs r6, #0
-	ldr r5, _0803F25C @ =gItemData
+	ldr r5, _0803F25C @ =gGoodsInfo
 	movs r4, #0x6c
 _0803F1C8:
 	mov r2, ip
@@ -66832,7 +66832,7 @@ _0803F1C8:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0803F25C: .4byte gItemData
+_0803F25C: .4byte gGoodsInfo
 
 	thumb_func_start sub_0803F260
 sub_0803F260: @ 0x0803F260
@@ -74213,7 +74213,7 @@ sub_08042F50: @ 0x08042F50
 	lsrs r2, r0, #0x10
 	cmp r4, #0
 	beq _08042FAA
-	ldr r1, _08042FC8 @ =gItemData
+	ldr r1, _08042FC8 @ =gGoodsInfo
 	movs r0, #0x6c
 	muls r0, r4, r0
 	adds r0, r0, r1
@@ -74234,7 +74234,7 @@ _08042FAA:
 _08042FBC: .4byte gUnknown_0200F920
 _08042FC0: .4byte gUnknown_02016028
 _08042FC4: .4byte 0x000041C2
-_08042FC8: .4byte gItemData
+_08042FC8: .4byte gGoodsInfo
 _08042FCC: .4byte 0x000041BC
 _08042FD0:
 	add r0, sp, #0x10
@@ -74544,7 +74544,7 @@ _08043238:
 	ldrb r3, [r7]
 	lsls r1, r3
 	lsrs r1, r1, #0x10
-	ldr r2, _080432C8 @ =gItemData
+	ldr r2, _080432C8 @ =gGoodsInfo
 	movs r0, #0x6c
 	ldr r3, [sp, #0x44]
 	muls r0, r3, r0
@@ -74599,7 +74599,7 @@ _08043238:
 	subs r0, #0x14
 	b _08043308
 	.align 2, 0
-_080432C8: .4byte gItemData
+_080432C8: .4byte gGoodsInfo
 _080432CC: .4byte gUnknown_080C6454
 _080432D0:
 	adds r0, r7, #0
@@ -78173,7 +78173,7 @@ _08044F3C:
 	ldrb r0, [r7]
 	lsls r1, r0
 	lsrs r1, r1, #0x10
-	ldr r2, _08044FC4 @ =gItemData
+	ldr r2, _08044FC4 @ =gGoodsInfo
 	movs r0, #0x6c
 	muls r0, r6, r0
 	adds r0, r0, r2
@@ -78195,7 +78195,7 @@ _08044F3C:
 _08044FB8: .4byte gUnknown_080C629C
 _08044FBC: .4byte gUnknown_080C6994
 _08044FC0: .4byte gUnknown_080C69B8
-_08044FC4: .4byte gItemData
+_08044FC4: .4byte gGoodsInfo
 _08044FC8:
 	add r0, sp, #0x18
 	adds r1, r5, #0
@@ -78690,7 +78690,7 @@ sub_08045390: @ 0x08045390
 	ldr r2, _080453B8 @ =0x000044EE
 	adds r1, r1, r2
 	strh r0, [r1]
-	ldr r2, _080453BC @ =gItemData
+	ldr r2, _080453BC @ =gGoodsInfo
 	movs r1, #0x6c
 	muls r0, r1, r0
 	adds r0, r0, r2
@@ -78703,7 +78703,7 @@ sub_08045390: @ 0x08045390
 	.align 2, 0
 _080453B4: .4byte gUnknown_02016028
 _080453B8: .4byte 0x000044EE
-_080453BC: .4byte gItemData
+_080453BC: .4byte gGoodsInfo
 _080453C0:
 	movs r0, #0xbd
 	bl sub_080486A0
@@ -79268,7 +79268,7 @@ sub_08045854: @ 0x08045854
 	lsrs r5, r2, #0x10
 	add r1, sp, #0x18
 	strh r3, [r1]
-	ldr r2, _080458B4 @ =gItemData
+	ldr r2, _080458B4 @ =gGoodsInfo
 	movs r1, #0x6c
 	muls r0, r1, r0
 	adds r0, r0, r2
@@ -79305,7 +79305,7 @@ _0804587C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080458B4: .4byte gItemData
+_080458B4: .4byte gGoodsInfo
 
 	thumb_func_start sub_080458B8
 sub_080458B8: @ 0x080458B8
@@ -80813,7 +80813,7 @@ sub_08046510: @ 0x08046510
 	adds r4, r0, #0
 	lsls r4, r4, #0x10
 	lsrs r4, r4, #0x10
-	ldr r2, _080465EC @ =gItemData
+	ldr r2, _080465EC @ =gGoodsInfo
 	ldrb r1, [r6]
 	movs r0, #0x6c
 	muls r0, r1, r0
@@ -80878,7 +80878,7 @@ sub_08046510: @ 0x08046510
 	.align 2, 0
 _080465E4: .4byte gUnknown_02016028
 _080465E8: .4byte 0x000041D5
-_080465EC: .4byte gItemData
+_080465EC: .4byte gGoodsInfo
 _080465F0: .4byte 0x000044F0
 _080465F4: .4byte 0x0000C5A0
 
@@ -98165,7 +98165,7 @@ _0804F04E:
 	.align 2, 0
 _0804F058: .4byte gUnknown_02019D6C
 _0804F05C:
-	ldr r1, _0804F08C @ =gItemData
+	ldr r1, _0804F08C @ =gGoodsInfo
 	ldrb r2, [r4]
 	movs r0, #0x6c
 	muls r0, r2, r0
@@ -98184,7 +98184,7 @@ _0804F05C:
 	bl nullsub_22
 	b _0804F0C6
 	.align 2, 0
-_0804F08C: .4byte gItemData
+_0804F08C: .4byte gGoodsInfo
 _0804F090:
 	movs r0, #0xd2
 	bl sub_0800399C
@@ -99859,7 +99859,7 @@ _0804FEB4:
 	adds r4, r0, #0
 	movs r0, #0xd2
 	bl sub_0800399C
-	ldr r1, _0804FF1C @ =gItemData
+	ldr r1, _0804FF1C @ =gGoodsInfo
 	ldr r0, _0804FF20 @ =0x000041D5
 	adds r7, r5, r0
 	ldrb r2, [r7]
@@ -99895,7 +99895,7 @@ _0804FF14:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0804FF1C: .4byte gItemData
+_0804FF1C: .4byte gGoodsInfo
 _0804FF20: .4byte 0x000041D5
 _0804FF24: .4byte 0x000041D7
 _0804FF28: .4byte 0x0000FFFF
@@ -100053,7 +100053,7 @@ _0805003C:
 	lsls r0, r0, #0x10
 	cmp r0, #0
 	beq _080500BC
-	ldr r1, _080500CC @ =gItemData
+	ldr r1, _080500CC @ =gGoodsInfo
 	movs r0, #0x6c
 	muls r0, r5, r0
 	adds r0, r0, r1
@@ -100081,7 +100081,7 @@ _080500BC:
 	bx r0
 	.align 2, 0
 _080500C8: .4byte 0x000041D5
-_080500CC: .4byte gItemData
+_080500CC: .4byte gGoodsInfo
 _080500D0: .4byte 0x000041D6
 
 	thumb_func_start sub_080500D4
@@ -104781,7 +104781,7 @@ _08052580:
 	movs r0, #0x6c
 	adds r1, r2, #0
 	muls r1, r0, r1
-	ldr r3, _08052634 @ =gItemData
+	ldr r3, _08052634 @ =gGoodsInfo
 	adds r5, r1, r3
 	ldrh r7, [r5, #0xa]
 	str r7, [sp]
@@ -104858,7 +104858,7 @@ _08052580:
 	.align 2, 0
 _0805262C: .4byte gUnknown_020194A8
 _08052630: .4byte 0x00000DEC
-_08052634: .4byte gItemData
+_08052634: .4byte gGoodsInfo
 _08052638: .4byte gUnknown_080E510C
 _0805263C: .4byte gUnknown_02016028
 _08052640: .4byte 0x00004260
@@ -105510,7 +105510,7 @@ sub_08052AFC: @ 0x08052AFC
 	bhs _08052B8C
 	mov sb, r5
 	movs r4, #0x40
-	ldr r1, _08052B5C @ =gItemData
+	ldr r1, _08052B5C @ =gGoodsInfo
 	mov ip, r1
 	movs r0, #0x41
 	rsbs r0, r0, #0
@@ -105530,7 +105530,7 @@ _08052B3E:
 	.align 2, 0
 _08052B54: .4byte gUnknown_02016028
 _08052B58: .4byte 0x0000426C
-_08052B5C: .4byte gItemData
+_08052B5C: .4byte gGoodsInfo
 _08052B60:
 	ldrb r1, [r2]
 	movs r0, #0x6c
@@ -105627,7 +105627,7 @@ sub_08052BE0: @ 0x08052BE0
 	bhs _08052C70
 	mov sb, r5
 	movs r4, #0x40
-	ldr r1, _08052C40 @ =gItemData
+	ldr r1, _08052C40 @ =gGoodsInfo
 	mov ip, r1
 	movs r0, #0x41
 	rsbs r0, r0, #0
@@ -105647,7 +105647,7 @@ _08052C22:
 	.align 2, 0
 _08052C38: .4byte gUnknown_02016028
 _08052C3C: .4byte 0x0000426E
-_08052C40: .4byte gItemData
+_08052C40: .4byte gGoodsInfo
 _08052C44:
 	ldrb r1, [r2]
 	movs r0, #0x6c
@@ -106223,7 +106223,7 @@ _0805307A:
 	movs r0, #0x6c
 	adds r1, r2, #0
 	muls r1, r0, r1
-	ldr r3, _080530E4 @ =gItemData
+	ldr r3, _080530E4 @ =gGoodsInfo
 	adds r0, r1, r3
 	ldrh r0, [r0, #0xa]
 	lsls r6, r0, #1
@@ -106267,7 +106267,7 @@ _080530D4: .4byte gUnknown_02019D6C
 _080530D8: .4byte 0x0000053C
 _080530DC: .4byte gUnknown_080EBD08
 _080530E0: .4byte 0xFFFFC2BC
-_080530E4: .4byte gItemData
+_080530E4: .4byte gGoodsInfo
 _080530E8: .4byte gUnknown_080E510C
 _080530EC: .4byte gUnknown_02004870
 _080530F0: .4byte 0x00002DF0
@@ -108703,7 +108703,7 @@ _08054314:
 	lsls r0, r0, #0x10
 	cmp r0, #0
 	beq _08054330
-	ldr r1, _08054354 @ =gItemData
+	ldr r1, _08054354 @ =gGoodsInfo
 	movs r0, #0x6c
 	muls r0, r4, r0
 	adds r1, #4
@@ -108719,7 +108719,7 @@ _08054330:
 	ands r0, r1
 	cmp r0, #0
 	beq _08054358
-	ldr r1, _08054354 @ =gItemData
+	ldr r1, _08054354 @ =gGoodsInfo
 	movs r0, #0x6c
 	muls r0, r4, r0
 	adds r1, #4
@@ -108731,7 +108731,7 @@ _0805434E:
 	movs r0, #0
 	b _0805435A
 	.align 2, 0
-_08054354: .4byte gItemData
+_08054354: .4byte gGoodsInfo
 _08054358:
 	movs r0, #1
 _0805435A:
@@ -108771,7 +108771,7 @@ sub_0805438C: @ 0x0805438C
 	push {lr}
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
-	ldr r1, _080543AC @ =gItemData
+	ldr r1, _080543AC @ =gGoodsInfo
 	movs r2, #0x6c
 	muls r0, r2, r0
 	adds r1, #4
@@ -108785,7 +108785,7 @@ sub_0805438C: @ 0x0805438C
 	ldr r0, [r0]
 	mov pc, r0
 	.align 2, 0
-_080543AC: .4byte gItemData
+_080543AC: .4byte gGoodsInfo
 _080543B0: .4byte _080543B4
 _080543B4: @ jump table
 	.4byte _080543DC @ case 0
@@ -109814,7 +109814,7 @@ sub_08054B30: @ 0x08054B30
 	stm r2!, {r3, r4, r6}
 	ldr r0, [r0]
 	str r0, [r2]
-	ldr r2, _08054B70 @ =gItemData
+	ldr r2, _08054B70 @ =gGoodsInfo
 	movs r0, #0x6c
 	muls r0, r1, r0
 	adds r0, r0, r2
@@ -109833,7 +109833,7 @@ sub_08054B30: @ 0x08054B30
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08054B70: .4byte gItemData
+_08054B70: .4byte gGoodsInfo
 
 	thumb_func_start sub_08054B74
 sub_08054B74: @ 0x08054B74
@@ -109850,7 +109850,7 @@ sub_08054B74: @ 0x08054B74
 	stm r3!, {r4, r6, r7}
 	ldr r0, [r0]
 	str r0, [r3]
-	ldr r3, _08054BB4 @ =gItemData
+	ldr r3, _08054BB4 @ =gGoodsInfo
 	movs r0, #0x6c
 	muls r0, r1, r0
 	adds r0, r0, r3
@@ -109867,14 +109867,14 @@ sub_08054B74: @ 0x08054B74
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08054BB4: .4byte gItemData
+_08054BB4: .4byte gGoodsInfo
 
 	thumb_func_start sub_08054BB8
 sub_08054BB8: @ 0x08054BB8
 	push {r4, lr}
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
-	ldr r2, _08054BDC @ =gItemData
+	ldr r2, _08054BDC @ =gGoodsInfo
 	movs r1, #0x6c
 	muls r1, r0, r1
 	adds r1, r1, r2
@@ -109888,7 +109888,7 @@ sub_08054BB8: @ 0x08054BB8
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08054BDC: .4byte gItemData
+_08054BDC: .4byte gGoodsInfo
 
 	thumb_func_start sub_08054BE0
 sub_08054BE0: @ 0x08054BE0
@@ -110083,7 +110083,7 @@ _08054D26:
 	mov r0, ip
 	adds r0, #0x2c
 	str r0, [sp, #0x18]
-	ldr r7, _08054EEC @ =gItemData
+	ldr r7, _08054EEC @ =gGoodsInfo
 	movs r6, #0x6c
 _08054D60:
 	lsls r0, r5, #1
@@ -110298,7 +110298,7 @@ _08054EBE:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08054EEC: .4byte gItemData
+_08054EEC: .4byte gGoodsInfo
 _08054EF0: .4byte 0x000003E7
 
 	thumb_func_start sub_08054EF4
@@ -110306,7 +110306,7 @@ sub_08054EF4: @ 0x08054EF4
 	push {lr}
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
-	ldr r1, _08054F1C @ =gItemData
+	ldr r1, _08054F1C @ =gGoodsInfo
 	movs r2, #0x6c
 	muls r0, r2, r0
 	adds r1, #4
@@ -110323,7 +110323,7 @@ sub_08054EF4: @ 0x08054EF4
 	movs r0, #4
 	b _08054F2E
 	.align 2, 0
-_08054F1C: .4byte gItemData
+_08054F1C: .4byte gGoodsInfo
 _08054F20:
 	movs r0, #0
 	b _08054F2E
@@ -110345,7 +110345,7 @@ sub_08054F34: @ 0x08054F34
 	push {lr}
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
-	ldr r1, _08054F50 @ =gItemData
+	ldr r1, _08054F50 @ =gGoodsInfo
 	movs r2, #0x6c
 	muls r0, r2, r0
 	adds r1, #4
@@ -110356,7 +110356,7 @@ sub_08054F34: @ 0x08054F34
 	movs r0, #0
 	b _08054F56
 	.align 2, 0
-_08054F50: .4byte gItemData
+_08054F50: .4byte gGoodsInfo
 _08054F54:
 	movs r0, #1
 _08054F56:
@@ -111346,7 +111346,7 @@ _08055630:
 	movs r0, #0xd1
 	b _0805568A
 _08055634:
-	ldr r0, _08055650 @ =gItemData
+	ldr r0, _08055650 @ =gGoodsInfo
 	movs r1, #0x6c
 	muls r1, r2, r1
 	adds r0, #4
@@ -111360,7 +111360,7 @@ _08055634:
 	ldr r0, [r0]
 	mov pc, r0
 	.align 2, 0
-_08055650: .4byte gItemData
+_08055650: .4byte gGoodsInfo
 _08055654: .4byte _08055658
 _08055658: @ jump table
 	.4byte _08055680 @ case 0
@@ -126180,7 +126180,7 @@ sub_0805C888: @ 0x0805C888
 sub_0805C894: @ 0x0805C894
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
-	ldr r1, _0805C8A8 @ =gItemData
+	ldr r1, _0805C8A8 @ =gGoodsInfo
 	movs r2, #0x6c
 	muls r0, r2, r0
 	adds r1, #0x48
@@ -126188,7 +126188,7 @@ sub_0805C894: @ 0x0805C894
 	ldr r0, [r0]
 	bx lr
 	.align 2, 0
-_0805C8A8: .4byte gItemData
+_0805C8A8: .4byte gGoodsInfo
 
 	thumb_func_start sub_0805C8AC
 sub_0805C8AC: @ 0x0805C8AC
@@ -126299,7 +126299,7 @@ _0805C96A:
 	blt _0805C972
 	b _0805CB2C
 _0805C972:
-	ldr r0, _0805C9B8 @ =gItemData
+	ldr r0, _0805C9B8 @ =gGoodsInfo
 	movs r1, #0x6c
 	muls r1, r6, r1
 	adds r0, #0x48
@@ -126333,7 +126333,7 @@ _0805C9A0:
 _0805C9AC: .4byte gSave
 _0805C9B0: .4byte gLevelInfo
 _0805C9B4: .4byte gGuestStats
-_0805C9B8: .4byte gItemData
+_0805C9B8: .4byte gGoodsInfo
 _0805C9BC: .4byte _0805C9C0
 _0805C9C0: @ jump table
 	.4byte _0805CA70 @ case 0
@@ -126734,7 +126734,7 @@ sub_0805CCDC: @ 0x0805CCDC
 	ldrb r0, [r1]
 	cmp r0, #0
 	beq _0805CD28
-	ldr r2, _0805CD24 @ =gItemData
+	ldr r2, _0805CD24 @ =gGoodsInfo
 	ldrb r1, [r1]
 	movs r0, #0x6c
 	muls r0, r1, r0
@@ -126764,7 +126764,7 @@ _0805CD1C:
 	movs r0, #1
 	b _0805CD2A
 	.align 2, 0
-_0805CD24: .4byte gItemData
+_0805CD24: .4byte gGoodsInfo
 _0805CD28:
 	movs r0, #0
 _0805CD2A:

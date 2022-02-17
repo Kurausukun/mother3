@@ -1000,7 +1000,7 @@ sub_0805F624: @ 0x0805F624
 	movs r5, #0xff
 _0805F654:
 	adds r0, r4, #0
-	bl sub_080729B0
+	bl sub_080729B0__5Goods
 	adds r4, r0, #0
 	cmp r4, #0
 	beq _0805F6A2
@@ -3214,7 +3214,7 @@ _080606CC:
 	add r0, sp, #0x10
 	mov r8, r0
 	mov r1, sl
-	bl sub_08064980
+	bl sub_08064980__5GoodsUs
 	ldr r2, [r7, #0x1c]
 	movs r1, #0xc4
 	lsls r1, r1, #1
@@ -3287,7 +3287,7 @@ _080606CC:
 	bl _call_via_r1
 	mov r0, r8
 	mov r1, sl
-	bl sub_08064980
+	bl sub_08064980__5GoodsUs
 	ldr r2, [r7, #0x1c]
 	movs r0, #0xc4
 	lsls r0, r0, #1
@@ -4473,7 +4473,7 @@ sub_0806105C: @ 0x0806105C
 	bl sub_0806E274
 	ldrh r1, [r5, #0x24]
 	mov r0, r8
-	bl sub_08064980
+	bl sub_08064980__5GoodsUs
 	adds r0, r7, #0
 	bl sub_0806E274
 	add r1, sp, #0x34
@@ -4547,7 +4547,7 @@ sub_0806105C: @ 0x0806105C
 	bl _call_via_r2
 	ldrh r1, [r5, #0x24]
 	adds r0, r7, #0
-	bl sub_08064980
+	bl sub_08064980__5GoodsUs
 	mov r0, sb
 	bl sub_0806E274
 	mov r1, sb
@@ -4685,7 +4685,7 @@ sub_0806124C: @ 0x0806124C
 _080612AA:
 	ldrh r1, [r4, #0x24]
 	add r0, sp, #4
-	bl sub_08064980
+	bl sub_08064980__5GoodsUs
 	add r5, sp, #0x10
 	adds r0, r5, #0
 	bl sub_0806E274
@@ -4778,7 +4778,7 @@ sub_08061338: @ 0x08061338
 	ldrh r1, [r4, #0x24]
 	add r5, sp, #0x10
 	adds r0, r5, #0
-	bl sub_08064980
+	bl sub_08064980__5GoodsUs
 	add r4, sp, #0x1c
 	adds r0, r4, #0
 	bl sub_0806E274
@@ -4815,7 +4815,7 @@ _080613A0:
 	ldrh r1, [r4, #0x24]
 	add r5, sp, #0x10
 	adds r0, r5, #0
-	bl sub_08064980
+	bl sub_08064980__5GoodsUs
 	add r4, sp, #0x1c
 	adds r0, r4, #0
 	bl sub_0806E274
@@ -4872,13 +4872,13 @@ _0806141E:
 	ldrh r3, [r0, #2]
 	add r0, sp, #4
 	adds r2, r7, #0
-	bl sub_080649AC
+	bl __5GoodsUsUiUs
 	add r0, sp, #4
-	bl sub_08064FB8
+	bl isKeyItem__C5Goods
 	adds r4, r0, #0
 	add r0, sp, #4
 	movs r1, #2
-	bl sub_080649E8
+	bl _._5Goods
 	lsls r4, r4, #0x18
 	lsrs r4, r4, #0x18
 	cmp r4, #1
@@ -4888,7 +4888,7 @@ _0806141E:
 	add r3, sp, #0x60
 	mov r8, r3
 	mov r0, r8
-	bl sub_08064980
+	bl sub_08064980__5GoodsUs
 	add r6, sp, #0x6c
 	adds r0, r6, #0
 	bl sub_0806E274
@@ -4933,7 +4933,7 @@ _080614C4:
 	ldrh r1, [r0]
 	add r6, sp, #0x10
 	adds r0, r6, #0
-	bl sub_08064980
+	bl sub_08064980__5GoodsUs
 	add r5, sp, #0x1c
 	adds r0, r5, #0
 	bl sub_0806E274
@@ -5075,11 +5075,11 @@ _0806159C:
 	add r0, sp, #0x84
 	ldrh r1, [r0]
 	ldr r0, [sp, #0x98]
-	bl sub_08064980
+	bl sub_08064980__5GoodsUs
 	mov r0, sb
 	ldrh r1, [r0, #0x24]
 	mov r0, r8
-	bl sub_08064980
+	bl sub_08064980__5GoodsUs
 	mov r1, r8
 	str r1, [sp]
 	adds r0, r6, #0
@@ -5152,7 +5152,7 @@ _080616A2:
 	mov r0, sp
 	movs r1, #0
 	bl attackdata_118__10UnitTargeti
-	bl sub_080729B0
+	bl sub_080729B0__5Goods
 	adds r4, r0, #0
 	mov r0, sp
 	movs r1, #2
@@ -5255,7 +5255,7 @@ sub_0806176C: @ 0x0806176C
 	ldrh r1, [r0, #0x24]
 	add r6, sp, #0x10
 	adds r0, r6, #0
-	bl sub_08064980
+	bl sub_08064980__5GoodsUs
 	add r5, sp, #0x1c
 	adds r0, r5, #0
 	bl sub_0806E274
@@ -5396,7 +5396,7 @@ sub_0806188C: @ 0x0806188C
 	ldrh r1, [r4, #0x24]
 	add r5, sp, #0x10
 	adds r0, r5, #0
-	bl sub_08064980
+	bl sub_08064980__5GoodsUs
 	add r4, sp, #0x1c
 	adds r0, r4, #0
 	bl sub_0806E274
@@ -5433,7 +5433,7 @@ _080618F4:
 	ldrh r1, [r4, #0x24]
 	add r5, sp, #0x10
 	adds r0, r5, #0
-	bl sub_08064980
+	bl sub_08064980__5GoodsUs
 	add r4, sp, #0x1c
 	adds r0, r4, #0
 	bl sub_0806E274

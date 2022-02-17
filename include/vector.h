@@ -1,6 +1,8 @@
 #ifndef VECTOR_H
 #define VECTOR_H
 
+#include "gba/types.h"
+
 inline s32 max(s32 a, s32 b) {
     return a >= b ? a : b;
 }

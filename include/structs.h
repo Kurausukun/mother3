@@ -159,7 +159,7 @@ struct Save {
     u8 _81e;
 };
 
-extern ItemData gItemData[];
+extern ItemData gGoodsInfo[];
 extern Save gSave;
 extern struct_02016028 gUnknown_02016028;
 

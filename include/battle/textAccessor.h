@@ -1,5 +1,5 @@
-#ifndef TEXT_ACCESSOR_H
-#define TEXT_ACCESSOR_H
+#ifndef BATTLE_TEXT_ACCESSOR_H
+#define BATTLE_TEXT_ACCESSOR_H
 
 #include "base.h"
 
@@ -12,4 +12,4 @@ public:
     u32 _ac;
 };
 
-#endif // TEXT_ACCESSOR_H
+#endif // BATTLE_TEXT_ACCESSOR_H

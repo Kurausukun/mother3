@@ -1,6 +1,5 @@
 #include "battle/guestSkill.h"
 
-extern "C" void sub_08077D8C(Skill*, u32);
 extern "C" Skill* sub_0808079C(Skill*, u32);
 extern "C" void sub_0806E274(Skill*);
 
@@ -20,7 +19,7 @@ Skill* GuestSkill::skill_1c0() {
     return this;
 }
 
-u32 GuestSkill::getID() const {
+u16 GuestSkill::getID() const {
     return mInfo->id;
 }
 
@@ -30,7 +29,7 @@ Skill* GuestSkill::skill_1d0(Skill* s) {
     return this;
 }
 
-Skill* GuestSkill::skill_1d8() {
+Skill* GuestSkill::skill_1d8(Skill* s) {
     sub_0806E274(this);
     return this;
 }

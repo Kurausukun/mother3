@@ -1,5 +1,5 @@
-#ifndef GUEST_H
-#define GUEST_H
+#ifndef BATTLE_GUEST_H
+#define BATTLE_GUEST_H
 
 #include "battle/unit.h"
 #include "battle/guestSkill.h"
@@ -108,4 +108,4 @@ void sub_0802A670(GuestStats*, s16*);
 
 SINGLETON(Guest);
 
-#endif  // GUEST_H
+#endif  // BATTLE_GUEST_H

@@ -1,5 +1,5 @@
-#ifndef GUARD_CORE_FIT_H
-#define GUARD_CORE_FIT_H
+#ifndef ALLOCATOR_H
+#define ALLOCATOR_H
 
 #include "global.h"
 
@@ -82,4 +82,4 @@ private:
     Fit* head;
 };
 
-#endif  // GUARD_CORE_FIT_H
+#endif  // ALLOCATOR_H

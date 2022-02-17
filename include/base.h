@@ -1,5 +1,5 @@
-#ifndef GUARD_CORE_BASE_H
-#define GUARD_CORE_BASE_H
+#ifndef BASE_H
+#define BASE_H
 
 #include "allocator.h"
 #include "singleton.h"
@@ -76,4 +76,6 @@ struct Unk : public Base {
     ~Unk() {}
 };
 
-#endif  // GUARD_CORE_BASE_H
+extern "C" void sub_0806E238(Base*, u32, u32);
+
+#endif  // BASE_H

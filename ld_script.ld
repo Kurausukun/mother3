@@ -33,6 +33,7 @@ SECTIONS
         src/battle/guest.o(.text);
         src/battle/guestFactory.o(.text);
         asm/goods.o(.text);
+        src/battle/goods.o(.text);
         asm/sndmon.o(.text);
         asm/code_0805D74C.o(.text);
         src/singleton.o(.text);
@@ -66,6 +67,8 @@ SECTIONS
         asm/monsterskill.o(.text);
         asm/psi.o(.text);
         asm/rom2d.o(.text);
+        src/battle/archive.o(.text);
+        asm/rom2e.o(.text);
 
         asm/m4a_1.o(.text);
         asm/libc.o(.text);

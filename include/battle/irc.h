@@ -1,5 +1,5 @@
-#ifndef CORE_IRC_H
-#define CORE_IRC_H
+#ifndef BATTLE_IRC_H
+#define BATTLE_IRC_H
 
 #include "base.h"
 
@@ -69,4 +69,4 @@ public:
 
 SINGLETON_MGR(Irc)
 
-#endif  // CORE_IRC_H
+#endif  // BATTLE_IRC_H

@@ -1,7 +1,7 @@
 #include "battle/unit.h"
 #include "functions.h"
 
-Unit* sub_080651A4(u16, Unit*);
+UnitCmd* sub_080651A4(u16, Unit*);
 extern u16 gUnknown_08106360[];
 
 SINGLETON_IMPL(Suspend);
@@ -246,10 +246,10 @@ s32 Unit::unit_200() const {
     return _d8;
 }
 
-NONMATCH("asm/non_matching/unit/unit_220__4UnitUi.inc", Unit* Unit::unit_220(u32 a1)) {
-    Unit* u = sub_080651A4(a1, this);
-    u->unit_68();
-    _dc.append((void**)&u);
+NONMATCH("asm/non_matching/unit/unit_220__4UnitUi.inc", UnitCmd* Unit::unit_220(u32 a1)) {
+    UnitCmd* u = sub_080651A4(a1, this);
+    u->x_68();
+    _dc.append(u);
     return u;
 }
 END_NONMATCH
@@ -263,20 +263,16 @@ void Unit::unit_230(void) {
 }
 
 s32 Unit::unit_238() const {
-    const Fit* f = &_dc;
-    return f->size;
+    return _dc.size();
 }
 
-NONMATCH("asm/non_matching/unit/unit_240__4Uniti.inc", u16 Unit::unit_240(s32 a1)) {
-    UnitCmd* tmp = (UnitCmd*)_dc.next()->content()[a1];
-    return tmp->x_78();
+u16 Unit::unit_240(s32 a1) {
+    return _dc[a1]->x_78();
 }
-END_NONMATCH
 
-NONMATCH("asm/non_matching/unit/unit_248__4Uniti.inc", UnitCmd* Unit::unit_248(s32 a1)) {
-    return ((UnitCmd**)_dc.next()->content())[a1];
+UnitCmd* Unit::unit_248(s32 a1) {
+    return _dc[a1];
 }
-END_NONMATCH
 
 bool Unit::unit_250(u16 a1) {
     return unit_258(a1) < unit_238();
@@ -337,7 +333,7 @@ NONMATCH("asm/non_matching/unit/unit_290__4Uniti.inc", u16 Unit::unit_290(s32 a1
 END_NONMATCH
 
 NONMATCH("asm/non_matching/unit/unit_298__4Uniti.inc", UnitCmd* Unit::unit_298(s32 a1)) {
-    return ((UnitCmd**)_dc.next()->content())[a1];
+    return _dc[a1];
 }
 END_NONMATCH
 
@@ -354,7 +350,7 @@ s32 Unit::unit_2a8(u16 a1) {
     return unit_288();
 }
 
-ASM_FUNC("asm/non_matching/unit/unit_2b0__4UnitUs.inc", s32 Unit::unit_2b0(u16 a1));
+ASM_FUNC("asm/non_matching/unit/unit_2b0__4UnitUs.inc", s32 Unit::setAilment(u16 a1));
 
 s32 Unit::unit_2b8(u16 a1) {
     s32 num = 0;

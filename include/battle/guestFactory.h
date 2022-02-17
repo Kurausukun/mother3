@@ -1,5 +1,5 @@
-#ifndef GUEST_FACTORY_H
-#define GUEST_FACTORY_H
+#ifndef BATTLE_GUEST_FACTORY_H
+#define BATTLE_GUEST_FACTORY_H
 
 #include "guest.h"
 
@@ -54,4 +54,4 @@ SINGLETON(Fuel);
 SINGLETON(Alec);
 SINGLETON(Fassad);
 
-#endif // GUEST_FACTORY_H
+#endif // BATTLE_GUEST_FACTORY_H

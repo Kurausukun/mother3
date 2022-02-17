@@ -1,9 +1,8 @@
-#ifndef CORE_SKILL_H
-#define CORE_SKILL_H
+#ifndef BATTLE_SKILL_H
+#define BATTLE_SKILL_H
 
 #include "base.h"
-
-class Unit;
+#include "battle/unit.h"
 
 class Skill : public Base {
 public:
@@ -28,8 +27,8 @@ public:
     virtual void skill_e8();
     virtual void skill_f0();
     virtual void skill_f8();
-    virtual void skill_100();
-    virtual void skill_108();
+    virtual u8 skill_100(u32);
+    virtual u8 skill_108(u32);
     virtual void skill_110();
     virtual void skill_118();
     virtual void skill_120();
@@ -45,18 +44,18 @@ public:
     virtual void skill_170(Unit*);
     virtual void skill_178();
     virtual void skill_180();
-    virtual void skill_188();
-    virtual void skill_190();
+    virtual s32 skill_188();
+    virtual Unit* skill_190(u32);
     virtual void skill_198();
-    virtual void skill_1a0();
-    virtual void skill_1a8();
-    virtual void skill_1b0();
-    virtual void skill_1b8();
+    virtual u32 skill_1a0();
+    virtual u32 skill_1a8();
+    virtual u8 skill_1b0();
+    virtual u8 skill_1b8();
 
     virtual Skill* skill_1c0() = 0;
-    virtual u32 getID() const = 0;
+    virtual u16 getID() const = 0;
     virtual Skill* skill_1d0(Skill*) = 0;
-    virtual Skill* skill_1d8() = 0;
+    virtual Skill* skill_1d8(Skill*) = 0;
     virtual u32 skill_1e0() = 0;
     virtual u32 getEffect() const = 0;
     virtual u32 getElement() const = 0;
@@ -107,4 +106,6 @@ struct MoveInfo {
     // u16 redirectable;
 };
 
-#endif  // CORE_SKILL_H
+extern "C" void sub_08077D8C(Skill*, u32);
+
+#endif  // BATTLE_SKILL_H

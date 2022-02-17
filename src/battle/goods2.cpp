@@ -2,7 +2,7 @@
 
 extern "C" {
 
-void* sub_08064FE8();
+void* __5Goods();
 void* __builtin_new(u32);
 void* sub_080BDE48(void*, u32, u32, u32);
 void* sub_080BDE68(void*, u32, u32, u32);
@@ -29,7 +29,7 @@ void* sub_080BE0FC(void*, u32, u32, u32);
 
 void* sub_080BDAC0() {
     __builtin_new(0x50);
-    return sub_08064FE8();
+    return __5Goods();
 }
 
 extern const char gUnknown_080FA950[];  // "Goods"

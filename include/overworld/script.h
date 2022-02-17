@@ -1,5 +1,5 @@
-#ifndef SCRIPT_H
-#define SCRIPT_H
+#ifndef OVERWORLD_SCRIPT_H
+#define OVERWORLD_SCRIPT_H
 
 #include "global.h"
 
@@ -78,4 +78,4 @@ struct Script {
 };
 Script gScript;
 
-#endif  // SCRIPT_H
+#endif  // OVERWORLD_SCRIPT_H
