@@ -1,13 +1,14 @@
 CC = g++
 .PHONY: all clean
 
-SRCS = main.cpp salsa_text.cpp salsa_maintext.cpp salsa_battletext.cpp
+SRCS = main.cpp salsa_text.cpp conv_script.cpp conv_misc_text.cpp
+HEADERS = salsa_text.hpp salsa.hpp
 
 all: salsa
 	@:
 
-salsa: $(SRCS)
-	$(CC) -std=c++14 -O3 $(SRCS) -o $@ $(LDFLAGS)
+salsa: $(SRCS) ${HEADERS}
+	$(CC) -O3 -std=c++17 -fno-strict-aliasing $(SRCS) -o $@ $(LDFLAGS)
 
 clean:
 	$(RM) salsa salsa.exe

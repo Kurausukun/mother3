@@ -1,15 +1,16 @@
+#include <cstring>
 #include <iostream>
 #include "salsa.hpp"
 #include "salsa_text.hpp"
 
-std::map<std::string, SalsaFunc> read_map = {
+std::unordered_map<std::string, SalsaRead> read_map = {
     {"mainscript.salsa", &salsa_maintext_read},
-    {"battletext.salsa", &salsa_battletext_read},
+    {"misctext.salsa", &salsa_misctext_read},
 };
 
-std::map<std::string, SalsaFunc> write_map = {
+std::unordered_map<std::string, SalsaWrite> write_map = {
     {"mainscript.salsa", &salsa_maintext_write},
-    {"battletext.salsa", &salsa_battletext_write},
+    {"misctext.salsa", &salsa_misctext_write},
 };
 
 int main(int argc, char** argv) {
@@ -42,6 +43,9 @@ int main(int argc, char** argv) {
     // file content type is determined by name
     // this makes it a lot easier for the build process
     if (extract) {
+        SalsaStream src(src_path);
+        SalsaPath dest(dest_path);
+
         const char* dest_filename = std::strrchr(dest_path, '/');
         if (dest_filename == nullptr) {
             dest_filename = dest_path;
@@ -52,8 +56,11 @@ int main(int argc, char** argv) {
             std::cerr << "Unknown file type: " << dest_filename << std::endl;
             exit(1);
         }
-        read_map[dest_filename](src_path, dest_path);
+        read_map[dest_filename](src, dest);
     } else {
+        SalsaPath src(src_path);
+        SalsaStream dest(dest_path);
+
         const char* src_filename = std::strrchr(src_path, '/');
         if (src_filename == nullptr) {
             src_filename = src_path;
@@ -64,7 +71,7 @@ int main(int argc, char** argv) {
             std::cerr << "Unknown file type: " << src_filename << std::endl;
             exit(1);
         }
-        write_map[src_filename](src_path, dest_path);
+        write_map[src_filename](src, dest);
     }
     return 0;
 }

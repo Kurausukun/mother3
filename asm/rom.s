@@ -1229,7 +1229,7 @@ sub_08001B9C: @ 0x08001B9C
 	adds r4, r0, #0
 	lsls r4, r4, #0x10
 	lsrs r4, r4, #0x10
-	ldr r6, _08001BC8 @ =gUnknown_08D1EE78
+	ldr r6, _08001BC8 @ =_binary_build_mother3_assets_misctext_bin_start
 	adds r0, r6, #0
 	movs r1, #1
 	bl sub_0800289C
@@ -1246,7 +1246,7 @@ sub_08001B9C: @ 0x08001B9C
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08001BC8: .4byte gUnknown_08D1EE78
+_08001BC8: .4byte _binary_build_mother3_assets_misctext_bin_start
 
 	thumb_func_start sub_08001BCC
 sub_08001BCC: @ 0x08001BCC
@@ -1254,7 +1254,7 @@ sub_08001BCC: @ 0x08001BCC
 	adds r4, r0, #0
 	lsls r4, r4, #0x10
 	lsrs r4, r4, #0x10
-	ldr r6, _08001BF8 @ =gUnknown_08D1EE78
+	ldr r6, _08001BF8 @ =_binary_build_mother3_assets_misctext_bin_start
 	adds r0, r6, #0
 	movs r1, #4
 	bl sub_0800289C
@@ -1271,7 +1271,7 @@ sub_08001BCC: @ 0x08001BCC
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08001BF8: .4byte gUnknown_08D1EE78
+_08001BF8: .4byte _binary_build_mother3_assets_misctext_bin_start
 
 	thumb_func_start sub_08001BFC
 sub_08001BFC: @ 0x08001BFC
@@ -1279,7 +1279,7 @@ sub_08001BFC: @ 0x08001BFC
 	adds r4, r0, #0
 	lsls r4, r4, #0x10
 	lsrs r4, r4, #0x10
-	ldr r6, _08001C28 @ =gUnknown_08D1EE78
+	ldr r6, _08001C28 @ =_binary_build_mother3_assets_misctext_bin_start
 	adds r0, r6, #0
 	movs r1, #0xa
 	bl sub_0800289C
@@ -1296,7 +1296,7 @@ sub_08001BFC: @ 0x08001BFC
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08001C28: .4byte gUnknown_08D1EE78
+_08001C28: .4byte _binary_build_mother3_assets_misctext_bin_start
 
 	thumb_func_start sub_08001C2C
 sub_08001C2C: @ 0x08001C2C
@@ -1304,7 +1304,7 @@ sub_08001C2C: @ 0x08001C2C
 	adds r4, r0, #0
 	lsls r4, r4, #0x10
 	lsrs r4, r4, #0x10
-	ldr r6, _08001C58 @ =gUnknown_08D1EE78
+	ldr r6, _08001C58 @ =_binary_build_mother3_assets_misctext_bin_start
 	adds r0, r6, #0
 	movs r1, #0xf
 	bl sub_0800289C
@@ -1321,7 +1321,7 @@ sub_08001C2C: @ 0x08001C2C
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08001C58: .4byte gUnknown_08D1EE78
+_08001C58: .4byte _binary_build_mother3_assets_misctext_bin_start
 
 	thumb_func_start sub_08001C5C
 sub_08001C5C: @ 0x08001C5C
@@ -1413,7 +1413,7 @@ _08001D04: .4byte gUnknown_02004F14
 _08001D08: .4byte 0x0000FFFF
 _08001D0C: .4byte gUnknown_08CDB8B4
 _08001D10:
-	ldr r0, _08001D28 @ =gUnknown_08D1EE78
+	ldr r0, _08001D28 @ =_binary_build_mother3_assets_misctext_bin_start
 	adds r1, r2, #0
 	bl sub_0800289C
 	ldrh r2, [r0]
@@ -1426,7 +1426,7 @@ _08001D22:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08001D28: .4byte gUnknown_08D1EE78
+_08001D28: .4byte _binary_build_mother3_assets_misctext_bin_start
 
 	thumb_func_start sub_08001D2C
 sub_08001D2C: @ 0x08001D2C
@@ -1516,13 +1516,13 @@ sub_08001DB0: @ 0x08001DB0
 	adds r1, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	ldr r0, _08001DC4 @ =gUnknown_08D1EE78
+	ldr r0, _08001DC4 @ =_binary_build_mother3_assets_misctext_bin_start
 	bl sub_0800289C
 	ldrh r0, [r0]
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08001DC4: .4byte gUnknown_08D1EE78
+_08001DC4: .4byte _binary_build_mother3_assets_misctext_bin_start
 
 	thumb_func_start sub_08001DC8
 sub_08001DC8: @ 0x08001DC8
