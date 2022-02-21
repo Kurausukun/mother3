@@ -2,7 +2,7 @@
 #include <cassert>
 #include <cstring>
 #include <sstream>
-#include "salsa_text.hpp"
+#include "salsaText.hpp"
 
 std::vector<TextBlockType> makeSpec() {
     std::vector<TextBlockType> spec;
