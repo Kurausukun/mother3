@@ -144,42 +144,40 @@ std::pair<u32, u32> readU8Char(const std::string& s) {
     return {num_chrs, result};
 };
 
-DynamicMessageBlock DynamicMessageBlock::dump(SalsaStream* stream, s32 messages_top, bool hack) {
-    DynamicMessageBlock block;
-
+DynamicMessageBlock::DynamicMessageBlock(SalsaStream* stream, s32 messages_top, bool hack) {
     u32 off;
     while ((off = stream->read<u16>()) != 0xFFFF) {
         MessageHeader header(off);
 
         // determine if the message is a duplicate of another
-        auto iter = std::find(block.message_headers.begin(), block.message_headers.end(), header);
-        if (iter != block.message_headers.end()) {
+        auto iter = std::find(message_headers.begin(), message_headers.end(), header);
+        if (iter != message_headers.end()) {
             header.is_duplicate = true;
         }
-        block.message_headers.emplace_back(header);
+        message_headers.emplace_back(header);
     }
 
     // messages are padded to 8 byte boundaries...
     // so sometimes there is a 0x0000 pad before the 0xFFFF above
     // (0xFFFF is part of the "messages" section but we break on it for convenience)
     // does this tell us anything else about how they structured the data?
-    if (block.message_headers.size() != 0 && block.message_headers.back().offset == 0) {
-        block.message_headers.pop_back();
+    if (message_headers.size() != 0 && message_headers.back().offset == 0) {
+        message_headers.pop_back();
     }
     // number of messages now
-    assert(stream->read<u16>() == block.message_headers.size());
-    block.num_msg = block.message_headers.size();
+    assert(stream->read<u16>() == message_headers.size());
+    num_msg = message_headers.size();
 
     // first message should be right after the offsets
-    for (int i = 0; i < block.message_headers.size(); ++i) {
-        auto& message_off = block.message_headers[i];
+    for (int i = 0; i < message_headers.size(); ++i) {
+        auto& message_off = message_headers[i];
         // if the message is duplicate, we want to reference the parent message
         if (message_off.is_duplicate) {
             std::string ccode = "[DUP]";
-            block.messages.emplace_back(Message{ccode});
+            messages.emplace_back(Message{ccode});
 
             // HACK FIXME
-            if (i == block.message_headers.size() - 1 && hack) {  // bank == 811?
+            if (i == message_headers.size() - 1 && hack) {  // bank == 811?
                 stream->seekg((long)stream->tellg() - 2, std::ios::beg);
             }
         } else {
@@ -189,31 +187,31 @@ DynamicMessageBlock DynamicMessageBlock::dump(SalsaStream* stream, s32 messages_
 
             // im letting these break on 0xFFFF, hopefully they dont overlap the above edge
             // cases
-            if (!block.message_headers[i + 1].is_duplicate) {
-                if (i != block.message_headers.size() - 1) {
-                    msg_size = block.message_headers[i + 1].offset - message_off.offset;
+            if (!message_headers[i + 1].is_duplicate) {
+                if (i != message_headers.size() - 1) {
+                    msg_size = message_headers[i + 1].offset - message_off.offset;
                 } else {
-                    msg_size = messages_top - block.message_headers.back().offset;
+                    msg_size = messages_top - message_headers.back().offset;
                 }
             }
-            block.messages.emplace_back(Message::dump(stream, msg_size));
+            messages.emplace_back(Message::dump(stream, msg_size));
         }
     }
-    return block;
 }
 
 const std::unordered_map<u16, CCode> cc_map = {
-    {0x0000, {"NUL", 0}},           {0xFF00, {"@", 0}},        {0xFF01, {"BREAK", 0}},
-    {0xFF02, {"WAIT2", 0}},         {0xFF03, {"WAIT", 0}},     {0xFF04, {"PAUSE", 1}},
-    {0xFF05, {"COLOR", 1}},         {0xFF06, {"MENU", 1}},     {0xFF07, {"EVENT", 0}},
-    {0xFF08, {"SOUND", 1}},         {0xFF09, {"CENTER", 0}},   {0xFF0A, {"CENTER2", 0}},
-    {0xFF0B, {"ALTERNATEFONT", 0}}, {0xFF0C, {"CC_C", 1}},     {0xFF21, {"ITEM", 1}},
-    {0xFF22, {"CHARNAME2", 1}},     {0xFF23, {"CHARNAME", 1}}, {0xFF24, {"ENEMYNAME", 1}},
-    {0xFF25, {"CC_25", 1}},         {0xFF26, {"CC_26", 2}},    {0xFF42, {"CC_42", 1}},
-    {0xFF45, {"FAVFOOD", 0}},       {0xFF46, {"FAVTHING", 0}}, {0xFF47, {"PLAYERNAME2", 0}},
-    {0xFF48, {"PLAYERNAME", 0}},    {0xFF80, {"CC_80", 1}},    {0xFF81, {"CC_81", 0}},
-    {0xFF82, {"CC_82", 0}},         {0xFF83, {"CC_83", 0}},    {0xFF84, {"CC_84", 0}},
-    {0xFFE0, {"CC_E0", 0}},         {0xFFE1, {"CC_E1", 0}},    {0xFFFF, {"END", 0}},
+    {0x0000, {"NUL", 0}},      {0xD389, {"UNK_D389", 0}},    {0xD84D, {"UNK_D84D", 0}},
+    {0xFF00, {"@", 0}},        {0xFF01, {"BREAK", 0}},       {0xFF02, {"WAIT2", 0}},
+    {0xFF03, {"WAIT", 0}},     {0xFF04, {"PAUSE", 1}},       {0xFF05, {"COLOR", 1}},
+    {0xFF06, {"MENU", 1}},     {0xFF07, {"EVENT", 0}},       {0xFF08, {"SOUND", 1}},
+    {0xFF09, {"CENTER", 0}},   {0xFF0A, {"CENTER2", 0}},     {0xFF0B, {"ALTERNATEFONT", 0}},
+    {0xFF0C, {"CC_C", 1}},     {0xFF21, {"ITEM", 1}},        {0xFF22, {"CHARNAME2", 1}},
+    {0xFF23, {"CHARNAME", 1}}, {0xFF24, {"ENEMYNAME", 1}},   {0xFF25, {"CC_25", 1}},
+    {0xFF26, {"CC_26", 2}},    {0xFF42, {"CC_42", 1}},       {0xFF45, {"FAVFOOD", 0}},
+    {0xFF46, {"FAVTHING", 0}}, {0xFF47, {"PLAYERNAME2", 0}}, {0xFF48, {"PLAYERNAME", 0}},
+    {0xFF80, {"CC_80", 1}},    {0xFF81, {"CC_81", 0}},       {0xFF82, {"CC_82", 0}},
+    {0xFF83, {"CC_83", 0}},    {0xFF84, {"CC_84", 0}},       {0xFFE0, {"CC_E0", 0}},
+    {0xFFE1, {"CC_E1", 1}},    {0xFFFF, {"END", 0}},
 };
 
 // todo: implement this with wchar array? then create an inverted map
