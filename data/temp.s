@@ -1,6 +1,8 @@
 	.align 2
 	.section .rodata
 
+	.incbin "baserom.gba", 0xCDB0B4, 0xCDB134 - 0xCDB0B4
+
     .global gUnknown_08CDB134
 gUnknown_08CDB134:
         .4byte gUnknown_08CDB1B0
