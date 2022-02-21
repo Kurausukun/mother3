@@ -136,6 +136,8 @@ SECTIONS
         *.o(.rodata);
 
         data/data3.o(.data);
+        /* assets/misctext.o(.data); */
+        data/data3a.o(.data);
         assets/mainscript.o(.data);
         data/data4.o(.data);
 

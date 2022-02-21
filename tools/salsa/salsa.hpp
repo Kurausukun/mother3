@@ -1,7 +1,9 @@
 #pragma once
 
+#include <filesystem>
 #include <fstream>
 #include <iostream>
+#include <memory>
 
 typedef unsigned char u8;
 typedef unsigned short u16;
@@ -14,14 +16,14 @@ typedef signed int s32;
 typedef signed long long s64;
 
 template <long T>
-static long pad_to(long offset) { return offset + ((T - (offset & (T - 1))) & ~T); }
-
-typedef void (*SalsaFunc)(const char* src, const char* dest);
+static long pad_to(long offset) {
+    return offset + ((T - (offset & (T - 1))) & ~T);
+}
 
 struct ISalsaFile {
     ISalsaFile() = default;
     ISalsaFile(const char* path) {
-        std::fstream(path, std::ios::out | std::ios::app).close(); // make sure exists
+        std::fstream(path, std::ios::out | std::ios::app).close();  // make sure exists
         file = std::make_unique<std::fstream>(path);
     }
 
@@ -46,3 +48,10 @@ struct SalsaStream : ISalsaFile, std::iostream {
         std::iostream::write(reinterpret_cast<char*>(&value), sizeof(T));
     }
 };
+
+struct SalsaPath : std::filesystem::path {
+    SalsaPath(const char* path) : std::filesystem::path(path) {}
+};
+
+typedef void (*SalsaRead)(SalsaStream& src, SalsaPath& dest);
+typedef void (*SalsaWrite)(SalsaPath& src, SalsaStream& dest);

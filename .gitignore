@@ -44,3 +44,5 @@ __pycache__/diff_settings.cpython-39.pyc
 ctx.c
 salsa/salsa
 salsa/salsa.exe
+assets/*
+!assets/.gitkeep

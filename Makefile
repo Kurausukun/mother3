@@ -143,6 +143,7 @@ compare: $(ROM)
 	$(SHA1) -c $(BUILD_NAME).sha1
 
 clean: mostlyclean
+	rm -f $(ASSETS_SRCS)
 
 mostlyclean: tidy
 	find . \( -iname '*.1bpp' -o -iname '*.4bpp' -o -iname '*.8bpp' -o -iname '*.gbapal' -o -iname '*.lz' -o -iname '*.latfont' -o -iname '*.hwjpnfont' -o -iname '*.fwjpnfont' -o -iname '*.bcg' \) -exec rm {} +
@@ -210,6 +211,7 @@ setup:
 	make -C tools/scaninc
 
 	$(SALSA) --extract baserom.gba assets/mainscript.salsa
+	# $(SALSA) --extract baserom.gba assets/misctext.salsa
 
 $(C_OBJS): $(C_SRCS)
 	$(CPP) $(CPPFLAGS) $< -o $(C_BUILDDIR)/$(<F).i
