@@ -101,6 +101,6 @@ gUnknown_08D0B010:
 gUnknown_08D1CE78:
     .incbin "baserom.gba", 0x00D1CE78, 0x2000
 
-    .global _binary_build_mother3_assets_misctext_bin_start
-_binary_build_mother3_assets_misctext_bin_start:
-    .incbin "baserom.gba", 0xd1ee78, 0xD2D2D8 - 0xd1ee78
+//     .global _binary_build_mother3_assets_misctext_bin_start
+// _binary_build_mother3_assets_misctext_bin_start:
+//     .incbin "baserom.gba", 0xd1ee78, 0xD2D2D8 - 0xd1ee78

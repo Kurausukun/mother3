@@ -3,19 +3,19 @@
 #include <tuple>
 #include "salsa_text.hpp"
 
-static const std::array<std::pair<std::string, BlockSpec>, 12> s_block_map = {{
-    {"room_descriptions.txt", {TextBlockType::DynamicMsg, -1}},
-    {"item_names.txt", {TextBlockType::FixedMsg, 22}},
-    {"item_descriptions.txt", {TextBlockType::DynamicMsg, -1}},
-    {"character_names.txt", {TextBlockType::FixedMsg, 20}},
-    {"party_character_names.txt", {TextBlockType::FixedMsg, 9}},
-    {"enemy_names.txt", {TextBlockType::FixedMsg, 25}},
-    {"psi_names.txt", {TextBlockType::FixedMsg, 20}},
-    {"psi_descriptions.txt", {TextBlockType::DynamicMsg, -1}},
-    {"status_names.txt", {TextBlockType::FixedMsg, 15}},
-    {"default_names.txt", {TextBlockType::FixedMsg, 9}},
-    {"special_text.txt", {TextBlockType::FixedMsg, 20}},
-    {"skill_descriptions.txt", {TextBlockType::DynamicMsg, -1}},
+static const std::array<std::pair<std::string, TextBlockType>, 12> s_block_map = {{
+    {"room_descriptions.txt", TextBlockType::DynamicMsg},
+    {"item_names.txt", TextBlockType::FixedMsg},
+    {"item_descriptions.txt", TextBlockType::DynamicMsg},
+    {"character_names.txt", TextBlockType::FixedMsg},
+    {"party_character_names.txt", TextBlockType::FixedMsg},
+    {"enemy_names.txt", TextBlockType::FixedMsg},
+    {"psi_names.txt", TextBlockType::FixedMsg},
+    {"psi_descriptions.txt", TextBlockType::DynamicMsg},
+    {"status_names.txt", TextBlockType::FixedMsg},
+    {"default_names.txt", TextBlockType::FixedMsg},
+    {"special_text.txt", TextBlockType::FixedMsg},
+    {"skill_descriptions.txt", TextBlockType::DynamicMsg},
 }};
 
 struct BinaryBlock {
@@ -71,11 +71,13 @@ struct TextBlock {
 //             case TextBlockType::DynamicMsg:
 //                 // DynamicMessageBlock::dump(stream)
 //                 bank.blocks.emplace_back(BinaryBlock::dump(
-//                     stream, bank.block_headers[i + 1]->start() - bank.block_headers[i]->start()));
+//                     stream, bank.block_headers[i + 1]->start() -
+//                     bank.block_headers[i]->start()));
 //                 break;
 //             case TextBlockType::FixedMsg:
 //                 bank.blocks.emplace_back(BinaryBlock::dump(
-//                     stream, bank.block_headers[i + 1]->start() - bank.block_headers[i]->start()));
+//                     stream, bank.block_headers[i + 1]->start() -
+//                     bank.block_headers[i]->start()));
 //                 break;
 //             }
 //         }
@@ -128,12 +130,12 @@ struct TextBlock {
 void salsa_misctext_read(SalsaStream& src, SalsaPath& dest) {
     SalsaStream desc(dest);
     // MiscTextBank bank = MiscTextBank::dump(&src, cMiscTextOffset);
-    std::vector<BlockSpec> specs;
-    std::transform(s_block_map.begin(), s_block_map.end(), std::back_inserter(specs), [](auto& pair) {
-        return pair.second;
-    });
 
-    auto bank = TextBank::dump(&src, cMiscTextOffset, specs);
+    std::vector<TextBlockType> blocktypes;
+    std::transform(s_block_map.begin(), s_block_map.end(), std::back_inserter(blocktypes),
+                   [](auto& pair) { return pair.second; });
+
+    auto bank = TextBank::dump(&src, cMiscTextOffset, blocktypes);
 
     dest.replace_extension("");
     std::filesystem::create_directory(dest);
@@ -141,39 +143,33 @@ void salsa_misctext_read(SalsaStream& src, SalsaPath& dest) {
     for (int i = 0; i < bank->block_count; i++) {
         auto t = s_block_map[i];
         std::string block_name = t.first;
-        BlockSpec spec = t.second;
+        TextBlockType blocktype = t.second;
         SalsaStream file(dest / block_name);
         // file.std::ostream::write(bank.blocks[i].content.data(), bank.blocks[i].content.size());
         auto& block = bank->blocks[i];
-        if (block.isNulled()) {
+        if (block->isNulled()) {
             continue;
         }
-        for (int j = 0; j < block.messages.size(); ++j) {
-            auto& message = block.messages[j];
+        for (int j = 0; j < block->messages.size(); ++j) {
+            auto& message = block->messages[j];
 
             file << std::dec << j << ":";
             file << message.text << std::endl;
         }
 
-        desc << block_name << ": " << s_block_type_name.at(spec.type) << std::endl;
+        if (blocktype == TextBlockType::DynamicMsg) {
+            desc << block_name << std::endl;
+        } else if (blocktype == TextBlockType::FixedMsg) {
+            u32 len = dynamic_cast<FixedMessageBlock&>(*block).message_len;
+            desc << block_name << ":" << len << std::endl;
+        }
     }
 }
 
 void salsa_misctext_write(SalsaPath& src, SalsaStream& dest) {
-    SalsaStream desc(src);
+    std::vector<TextBlockType> blocktypes;
+    std::transform(s_block_map.begin(), s_block_map.end(), std::back_inserter(blocktypes),
+                   [](auto& pair) { return pair.second; });
 
-    // src.replace_extension("");
-    // auto bank = MiscTextBank::parse(&src);
-
-    // dest.write<u32>(bank.block_count);
-    // for (int i = 0; i < bank.block_count; i++) {
-    //     dest.write<u32>(bank.block_headers[i]->start());
-    // }
-
-    // dest.write<u32>(bank.total_size);
-
-    // u32 offset = cMiscTextOffset + 8 + 4 * bank.block_count;
-    // for (auto& block : bank.blocks) {
-    //     dest.std::ostream::write(block.content.data(), block.content.size());
-    // }
+    TextBank::write(&src, &dest, blocktypes, false);
 }
