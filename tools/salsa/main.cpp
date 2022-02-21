@@ -1,7 +1,7 @@
 #include <cstring>
 #include <iostream>
 #include "salsa.hpp"
-#include "salsa_text.hpp"
+#include "salsaText.hpp"
 
 std::unordered_map<std::string, SalsaRead> read_map = {
     {"mainscript.salsa", &salsa_maintext_read},
