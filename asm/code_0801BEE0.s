@@ -3,574 +3,6 @@
 .syntax unified
 .section .text
 
-	thumb_func_start cmd_50
-cmd_50: @ 0x0801E774
-	push {r4, r5, r6, r7, lr}
-	mov r7, r8
-	push {r7}
-	adds r4, r0, #0
-	movs r1, #3
-	bl scriptstack_peek
-	adds r7, r0, #0
-	adds r0, r4, #0
-	movs r1, #2
-	bl scriptstack_peek
-	adds r6, r0, #0
-	adds r0, r4, #0
-	movs r1, #1
-	bl scriptstack_peek
-	adds r5, r0, #0
-	adds r0, r4, #0
-	movs r1, #0
-	bl scriptstack_peek
-	lsls r0, r0, #0x10
-	lsrs r0, r0, #0x10
-	mov r8, r0
-	adds r0, r7, #0
-	bl sub_0802718C
-	adds r4, r0, #0
-	cmp r4, #0
-	beq _0801E82C
-	movs r0, #1
-	rsbs r0, r0, #0
-	cmp r6, r0
-	beq _0801E7BE
-	cmp r6, #0xc
-	ble _0801E7C6
-_0801E7BE:
-	adds r0, r4, #0
-	adds r0, #0x8b
-	ldrb r0, [r0]
-	lsrs r6, r0, #3
-_0801E7C6:
-	movs r0, #1
-	rsbs r0, r0, #0
-	cmp r5, r0
-	beq _0801E7D2
-	cmp r5, #7
-	ble _0801E7DC
-_0801E7D2:
-	adds r0, r4, #0
-	adds r0, #0x8b
-	ldrb r0, [r0]
-	movs r5, #7
-	ands r5, r0
-_0801E7DC:
-	movs r0, #2
-	rsbs r0, r0, #0
-	cmp r7, r0
-	bne _0801E7F2
-	lsls r0, r6, #0x10
-	lsrs r0, r0, #0x10
-	lsls r1, r5, #0x10
-	asrs r1, r1, #0x10
-	bl sub_08033948
-	b _0801E81C
-_0801E7F2:
-	adds r3, r4, #0
-	adds r3, #0xbc
-	movs r0, #7
-	adds r1, r5, #0
-	ands r1, r0
-	lsls r1, r1, #2
-	ldrb r2, [r3]
-	movs r0, #0x1d
-	rsbs r0, r0, #0
-	ands r0, r2
-	orrs r0, r1
-	strb r0, [r3]
-	adds r0, r4, #0
-	adds r0, #0x85
-	ldrb r0, [r0]
-	lsls r1, r6, #0x10
-	lsrs r1, r1, #0x10
-	lsls r2, r5, #0x10
-	lsrs r2, r2, #0x10
-	bl sub_080332AC
-_0801E81C:
-	mov r0, r8
-	cmp r0, #0
-	bne _0801E82C
-	adds r0, r4, #0
-	adds r0, #0x85
-	ldrb r0, [r0]
-	bl sub_08033484
-_0801E82C:
-	movs r0, #0
-	pop {r3}
-	mov r8, r3
-	pop {r4, r5, r6, r7}
-	pop {r1}
-	bx r1
-
-	thumb_func_start cmd_play_anim
-cmd_play_anim: @ 0x0801E838
-	push {r4, r5, r6, r7, lr}
-	adds r4, r0, #0
-	movs r1, #2
-	bl scriptstack_peek
-	adds r6, r0, #0
-	adds r0, r4, #0
-	movs r1, #1
-	bl scriptstack_peek
-	lsls r0, r0, #0x10
-	lsrs r5, r0, #0x10
-	adds r0, r4, #0
-	movs r1, #0
-	bl scriptstack_peek
-	lsls r0, r0, #0x10
-	lsrs r7, r0, #0x10
-	adds r0, r6, #0
-	bl sub_0802718C
-	adds r4, r0, #0
-	cmp r4, #0
-	beq _0801E8F4
-	cmp r5, #0xff
-	bhi _0801E890
-	movs r0, #2
-	rsbs r0, r0, #0
-	cmp r6, r0
-	bne _0801E880
-	subs r0, r5, #1
-	lsls r0, r0, #0x10
-	lsrs r0, r0, #0x10
-	bl sub_08033A54
-	b _0801E890
-_0801E880:
-	adds r0, r4, #0
-	adds r0, #0x85
-	ldrb r0, [r0]
-	subs r1, r5, #1
-	lsls r1, r1, #0x10
-	lsrs r1, r1, #0x10
-	bl sub_08033374
-_0801E890:
-	cmp r7, #0
-	bne _0801E89E
-	adds r0, r4, #0
-	adds r0, #0x85
-	ldrb r0, [r0]
-	bl sub_08033484
-_0801E89E:
-	ldr r0, _0801E8D4 @ =gScript
-	ldr r1, _0801E8D8 @ =0x000067AC
-	adds r0, r0, r1
-	ldrh r1, [r0]
-	movs r0, #0x9e
-	lsls r0, r0, #2
-	cmp r1, r0
-	bne _0801E8F4
-	subs r7, r5, #1
-	adds r6, r4, #0
-	adds r6, #0x86
-	ldrb r0, [r6]
-	adds r5, r4, #0
-	adds r5, #0x88
-	ldrh r1, [r5]
-	movs r2, #4
-	bl sub_08035C0C
-	lsls r0, r0, #0x10
-	lsrs r0, r0, #0x10
-	cmp r7, r0
-	bne _0801E8DC
-	adds r0, r4, #0
-	bl sub_08036BA4
-	b _0801E8F4
-	.align 2, 0
-_0801E8D4: .4byte gScript
-_0801E8D8: .4byte 0x000067AC
-_0801E8DC:
-	ldrb r0, [r6]
-	ldrh r1, [r5]
-	movs r2, #0
-	bl sub_08035C0C
-	lsls r0, r0, #0x10
-	lsrs r0, r0, #0x10
-	cmp r7, r0
-	bne _0801E8F4
-	adds r0, r4, #0
-	bl sub_08036BA4
-_0801E8F4:
-	movs r0, #0
-	pop {r4, r5, r6, r7}
-	pop {r1}
-	bx r1
-
-	thumb_func_start cmd_linemove
-cmd_linemove: @ 0x0801E8FC
-	push {r4, r5, r6, r7, lr}
-	adds r4, r0, #0
-	movs r1, #3
-	bl scriptstack_peek
-	adds r6, r0, #0
-	adds r0, r4, #0
-	movs r1, #2
-	bl scriptstack_peek
-	adds r0, #1
-	lsls r0, r0, #0x10
-	lsrs r7, r0, #0x10
-	adds r0, r4, #0
-	movs r1, #1
-	bl scriptstack_peek
-	lsls r0, r0, #0x10
-	lsrs r5, r0, #0x10
-	adds r0, r4, #0
-	movs r1, #0
-	bl scriptstack_peek
-	lsls r0, r0, #0x10
-	lsrs r4, r0, #0x10
-	adds r0, r6, #0
-	bl sub_0802718C
-	adds r2, r0, #0
-	cmp r2, #0
-	beq _0801E95E
-	movs r0, #2
-	rsbs r0, r0, #0
-	cmp r6, r0
-	bne _0801E94A
-	adds r1, r2, #0
-	adds r1, #0x87
-	movs r0, #3
-	strb r0, [r1]
-_0801E94A:
-	cmp r7, #8
-	bhi _0801E95E
-	cmp r5, #5
-	bhi _0801E95E
-	adds r0, r2, #0
-	adds r1, r7, #0
-	adds r2, r5, #0
-	adds r3, r4, #0
-	bl sub_08035C8C
-_0801E95E:
-	movs r0, #0
-	pop {r4, r5, r6, r7}
-	pop {r1}
-	bx r1
-	.align 2, 0
-
-	thumb_func_start cmd_53
-cmd_53: @ 0x0801E968
-	push {r4, r5, r6, r7, lr}
-	mov r7, sl
-	mov r6, sb
-	mov r5, r8
-	push {r5, r6, r7}
-	sub sp, #0x1c
-	adds r4, r0, #0
-	add r5, sp, #8
-	adds r0, r5, #0
-	bl sub_0801A530
-	add r0, sp, #8
-	ldrh r1, [r0]
-	ldr r0, _0801EA30 @ =0xFFFF0000
-	mov sb, r0
-	ldr r0, [sp, #0xc]
-	mov r2, sb
-	ands r0, r2
-	orrs r0, r1
-	str r0, [sp, #0xc]
-	ldrh r0, [r5, #2]
-	add r5, sp, #0xc
-	strh r0, [r5, #2]
-	movs r0, #0xf0
-	strh r0, [r5, #4]
-	movs r0, #0xa0
-	strh r0, [r5, #6]
-	adds r0, r4, #0
-	movs r1, #4
-	bl scriptstack_peek
-	mov r8, r0
-	adds r0, r4, #0
-	movs r1, #3
-	bl scriptstack_peek
-	lsls r0, r0, #0x10
-	lsrs r0, r0, #0x10
-	mov r7, sb
-	ldr r1, [sp, #0x14]
-	ands r1, r7
-	orrs r1, r0
-	str r1, [sp, #0x14]
-	adds r0, r4, #0
-	movs r1, #2
-	bl scriptstack_peek
-	lsls r0, r0, #0x10
-	ldr r2, _0801EA34 @ =0x0000FFFF
-	ldr r1, [sp, #0x14]
-	ands r1, r2
-	orrs r1, r0
-	str r1, [sp, #0x14]
-	adds r0, r4, #0
-	movs r1, #1
-	bl scriptstack_peek
-	lsls r0, r0, #0x10
-	lsrs r0, r0, #0x10
-	mov sl, r0
-	adds r0, r4, #0
-	movs r1, #0
-	bl scriptstack_peek
-	lsls r0, r0, #0x10
-	lsrs r0, r0, #0x10
-	str r0, [sp, #0x18]
-	mov r0, r8
-	bl sub_0802718C
-	adds r4, r0, #0
-	adds r6, r5, #0
-	cmp r4, #0
-	bne _0801E9FE
-	b _0801EAF8
-_0801E9FE:
-	movs r5, #2
-	rsbs r5, r5, #0
-	cmp r8, r5
-	bne _0801EA0E
-	adds r1, r4, #0
-	adds r1, #0x87
-	movs r0, #3
-	strb r0, [r1]
-_0801EA0E:
-	add r0, sp, #0x14
-	ldrh r2, [r0]
-	movs r1, #0
-	ldrsh r3, [r0, r1]
-	asrs r1, r7, #0x10
-	mov r8, r0
-	cmp r3, r1
-	bne _0801EA38
-	ldrh r0, [r4, #0x14]
-	lsrs r0, r0, #1
-	ldrh r1, [r6]
-	subs r1, r1, r0
-	lsls r1, r1, #0x10
-	lsrs r1, r1, #0x10
-	ldr r0, [sp, #0x14]
-	ands r0, r7
-	b _0801EA74
-	.align 2, 0
-_0801EA30: .4byte 0xFFFF0000
-_0801EA34: .4byte 0x0000FFFF
-_0801EA38:
-	cmp r3, r5
-	bne _0801EA4A
-	ldrh r0, [r6, #4]
-	ldrh r2, [r6]
-	adds r0, r0, r2
-	ldrh r1, [r4, #0x14]
-	lsrs r1, r1, #1
-	adds r0, r0, r1
-	b _0801EA58
-_0801EA4A:
-	movs r0, #3
-	rsbs r0, r0, #0
-	cmp r3, r0
-	bne _0801EA66
-	ldrh r0, [r4]
-	lsls r0, r0, #0x10
-	asrs r0, r0, #0x14
-_0801EA58:
-	lsls r0, r0, #0x10
-	lsrs r0, r0, #0x10
-	ldr r1, [sp, #0x14]
-	ands r1, r7
-	orrs r1, r0
-	str r1, [sp, #0x14]
-	b _0801EA78
-_0801EA66:
-	adds r1, r2, #0
-	adds r1, #8
-	lsls r1, r1, #0x10
-	lsrs r1, r1, #0x10
-	ldr r0, [sp, #0x14]
-	mov r2, sb
-	ands r0, r2
-_0801EA74:
-	orrs r0, r1
-	str r0, [sp, #0x14]
-_0801EA78:
-	ldr r3, [sp, #0x14]
-	asrs r2, r3, #0x10
-	adds r1, r2, #0
-	movs r0, #1
-	rsbs r0, r0, #0
-	cmp r1, r0
-	bne _0801EA9C
-	ldrh r0, [r4, #0x16]
-	lsrs r0, r0, #1
-	ldrh r1, [r6, #2]
-	subs r1, r1, r0
-	lsls r1, r1, #0x10
-	ldr r0, _0801EA98 @ =0x0000FFFF
-	ands r3, r0
-	orrs r3, r1
-	b _0801EADC
-	.align 2, 0
-_0801EA98: .4byte 0x0000FFFF
-_0801EA9C:
-	movs r0, #2
-	rsbs r0, r0, #0
-	cmp r1, r0
-	bne _0801EAC0
-	ldrh r1, [r6, #2]
-	ldrh r0, [r6, #6]
-	adds r1, r1, r0
-	ldrh r0, [r4, #0x16]
-	lsrs r0, r0, #1
-	adds r1, r1, r0
-	lsls r1, r1, #0x10
-	ldr r0, _0801EABC @ =0x0000FFFF
-	ands r3, r0
-	orrs r3, r1
-	b _0801EADC
-	.align 2, 0
-_0801EABC: .4byte 0x0000FFFF
-_0801EAC0:
-	movs r0, #3
-	rsbs r0, r0, #0
-	cmp r1, r0
-	bne _0801EAD0
-	ldrh r0, [r4, #2]
-	lsls r0, r0, #0x10
-	asrs r0, r0, #0x14
-	b _0801EAD4
-_0801EAD0:
-	adds r0, r2, #0
-	adds r0, #8
-_0801EAD4:
-	lsls r0, r0, #0x10
-	ldr r1, _0801EB0C @ =0x0000FFFF
-	ands r3, r1
-	orrs r3, r0
-_0801EADC:
-	str r3, [sp, #0x14]
-	mov r0, sl
-	cmp r0, #5
-	bhi _0801EAF8
-	ldr r1, [sp, #0x18]
-	str r1, [sp]
-	movs r0, #0
-	str r0, [sp, #4]
-	adds r0, r4, #0
-	movs r1, #0
-	mov r2, r8
-	mov r3, sl
-	bl sub_08036EB8
-_0801EAF8:
-	movs r0, #0
-	add sp, #0x1c
-	pop {r3, r4, r5}
-	mov r8, r3
-	mov sb, r4
-	mov sl, r5
-	pop {r4, r5, r6, r7}
-	pop {r1}
-	bx r1
-	.align 2, 0
-_0801EB0C: .4byte 0x0000FFFF
-
-	thumb_func_start cmd_54
-cmd_54: @ 0x0801EB10
-	push {r4, r5, r6, r7, lr}
-	mov r7, r8
-	push {r7}
-	sub sp, #0xc
-	adds r4, r0, #0
-	movs r1, #4
-	bl scriptstack_peek
-	adds r6, r0, #0
-	adds r0, r4, #0
-	movs r1, #3
-	bl scriptstack_peek
-	lsls r0, r0, #0x10
-	lsrs r0, r0, #0x10
-	ldr r7, _0801EBE0 @ =0xFFFF0000
-	ldr r1, [sp, #8]
-	ands r1, r7
-	orrs r1, r0
-	str r1, [sp, #8]
-	adds r0, r4, #0
-	movs r1, #2
-	bl scriptstack_peek
-	lsls r0, r0, #0x10
-	ldr r5, _0801EBE4 @ =0x0000FFFF
-	ldr r1, [sp, #8]
-	ands r1, r5
-	orrs r1, r0
-	str r1, [sp, #8]
-	adds r0, r4, #0
-	movs r1, #1
-	bl scriptstack_peek
-	lsls r0, r0, #0x10
-	lsrs r0, r0, #0x10
-	mov r8, r0
-	adds r0, r4, #0
-	movs r1, #0
-	bl scriptstack_peek
-	lsls r0, r0, #0x10
-	lsrs r4, r0, #0x10
-	adds r0, r6, #0
-	bl sub_0802718C
-	adds r3, r0, #0
-	cmp r3, #0
-	beq _0801EBD0
-	movs r0, #2
-	rsbs r0, r0, #0
-	cmp r6, r0
-	bne _0801EB82
-	adds r1, r3, #0
-	adds r1, #0x87
-	movs r0, #3
-	strb r0, [r1]
-_0801EB82:
-	add r0, sp, #8
-	ldrh r2, [r0]
-	lsls r2, r2, #0x14
-	lsrs r2, r2, #0x10
-	ldr r0, [sp, #8]
-	ands r0, r7
-	orrs r2, r0
-	lsls r0, r0, #4
-	ands r2, r5
-	orrs r2, r0
-	str r2, [sp, #8]
-	add r0, sp, #8
-	ldrh r1, [r0]
-	adds r1, #8
-	lsls r1, r1, #0x10
-	lsrs r1, r1, #0x10
-	adds r0, r7, #0
-	ands r0, r2
-	orrs r0, r1
-	asrs r1, r0, #0x10
-	adds r1, #8
-	lsls r1, r1, #0x10
-	ands r0, r5
-	orrs r0, r1
-	str r0, [sp, #8]
-	mov r0, r8
-	cmp r0, #5
-	bhi _0801EBD0
-	cmp r4, #3
-	bhi _0801EBD0
-	str r4, [sp]
-	movs r0, #0
-	str r0, [sp, #4]
-	adds r0, r3, #0
-	movs r1, #0
-	add r2, sp, #8
-	mov r3, r8
-	bl sub_08036EB8
-_0801EBD0:
-	movs r0, #0
-	add sp, #0xc
-	pop {r3}
-	mov r8, r3
-	pop {r4, r5, r6, r7}
-	pop {r1}
-	bx r1
-	.align 2, 0
-_0801EBE0: .4byte 0xFFFF0000
-_0801EBE4: .4byte 0x0000FFFF
-
 	thumb_func_start cmd_55
 cmd_55: @ 0x0801EBE8
 	push {r4, r5, r6, r7, lr}
@@ -599,12 +31,12 @@ cmd_55: @ 0x0801EBE8
 	lsrs r0, r0, #0x10
 	mov sb, r0
 	adds r0, r6, #0
-	bl sub_0802718C
+	bl get_obj
 	adds r5, r0, #0
 	cmp r5, #0
 	beq _0801ECEC
 	adds r0, r7, #0
-	bl sub_0802718C
+	bl get_obj
 	adds r4, r0, #0
 	cmp r4, #0
 	beq _0801ECEC
@@ -745,7 +177,7 @@ cmd_56: @ 0x0801ECFC
 	lsls r0, r0, #0x10
 	lsrs r4, r0, #0x10
 	adds r0, r5, #0
-	bl sub_0802718C
+	bl get_obj
 	adds r2, r0, #0
 	cmp r2, #0
 	beq _0801ED82
@@ -804,7 +236,7 @@ cmd_57: @ 0x0801ED94
 	bl scriptstack_peek
 	adds r7, r0, #0
 	adds r0, r5, #0
-	bl sub_0802718C
+	bl get_obj
 	adds r4, r0, #0
 	cmp r4, #0
 	beq _0801EE1A
@@ -865,7 +297,7 @@ cmd_58: @ 0x0801EE24
 	adds r5, r0, #0
 	movs r1, #2
 	bl scriptstack_peek
-	bl sub_0802718C
+	bl get_obj
 	adds r4, r0, #0
 	cmp r4, #0
 	beq _0801EE5A
@@ -957,7 +389,7 @@ _0801EEDC: .4byte gScript
 _0801EEE0: .4byte 0x000082B6
 _0801EEE4:
 	adds r0, r5, #0
-	bl sub_0802718C
+	bl get_obj
 	cmp r0, #0
 	beq _0801EEFC
 	cmp r4, #0x10
@@ -1020,7 +452,7 @@ cmd_5B: @ 0x0801EF04
 	ands r7, r1
 	orrs r7, r0
 	adds r0, r6, #0
-	bl sub_0802718C
+	bl get_obj
 	adds r2, r0, #0
 	cmp r2, #0
 	beq _0801F03A
@@ -1153,7 +585,7 @@ cmd_5C: @ 0x0801F050
 	adds r5, r0, #0
 	movs r1, #2
 	bl scriptstack_peek
-	bl sub_0802718C
+	bl get_obj
 	cmp r0, #0
 	beq _0801F08A
 	mov r4, sp
@@ -1193,7 +625,7 @@ cmd_set_member_sprite: @ 0x0801F094
 	lsrs r4, r0, #0x10
 	adds r6, r4, #0
 	adds r0, r5, #0
-	bl sub_0802718C
+	bl get_obj
 	adds r1, r0, #0
 	cmp r1, #0
 	beq _0801F0DA
@@ -1231,12 +663,12 @@ cmd_5E: @ 0x0801F0E4
 	bl scriptstack_peek
 	adds r4, r0, #0
 	adds r0, r6, #0
-	bl sub_0802718C
+	bl get_obj
 	adds r5, r0, #0
 	cmp r5, #0
 	beq _0801F138
 	adds r0, r4, #0
-	bl sub_0802718C
+	bl get_obj
 	adds r1, r0, #0
 	cmp r1, #0
 	beq _0801F138
@@ -1269,7 +701,7 @@ cmd_5F: @ 0x0801F140
 	push {lr}
 	movs r1, #0
 	bl scriptstack_peek
-	bl sub_0802718C
+	bl get_obj
 	adds r1, r0, #0
 	cmp r1, #0
 	beq _0801F176
@@ -1315,7 +747,7 @@ cmd_60: @ 0x0801F17C
 	bl scriptstack_peek
 	adds r4, r0, #0
 	adds r0, r5, #0
-	bl sub_0802718C
+	bl get_obj
 	cmp r0, #0
 	beq _0801F1C4
 	adds r0, #0x85
@@ -1338,7 +770,7 @@ cmd_61: @ 0x0801F1CC
 	push {lr}
 	movs r1, #0
 	bl scriptstack_peek
-	bl sub_0802718C
+	bl get_obj
 	cmp r0, #0
 	beq _0801F1E8
 	adds r0, #0xbc
@@ -1366,7 +798,7 @@ cmd_62: @ 0x0801F1F0
 	lsrs r4, r0, #0x10
 	adds r6, r4, #0
 	adds r0, r5, #0
-	bl sub_0802718C
+	bl get_obj
 	cmp r0, #0
 	beq _0801F236
 	cmp r4, #1
@@ -1406,7 +838,7 @@ cmd_63: @ 0x0801F240
 	bl scriptstack_peek
 	adds r4, r0, #0
 	adds r0, r5, #0
-	bl sub_0802718C
+	bl get_obj
 	adds r2, r0, #0
 	cmp r2, #0
 	beq _0801F2B0
@@ -1476,7 +908,7 @@ cmd_64: @ 0x0801F2B8
 	lsls r0, r0, #0x10
 	lsrs r4, r0, #0x10
 	adds r0, r5, #0
-	bl sub_0802718C
+	bl get_obj
 	adds r2, r0, #0
 	cmp r2, #0
 	beq _0801F32E
@@ -1537,7 +969,7 @@ cmd_65: @ 0x0801F338
 	bl scriptstack_peek
 	adds r6, r0, #0
 	adds r0, r5, #0
-	bl sub_0802718C
+	bl get_obj
 	adds r4, r0, #0
 	cmp r4, #0
 	beq _0801F37C
@@ -1577,7 +1009,7 @@ cmd_66: @ 0x0801F384
 	lsrs r4, r0, #0x10
 	adds r6, r4, #0
 	adds r0, r5, #0
-	bl sub_0802718C
+	bl get_obj
 	cmp r0, #0
 	beq _0801F3CA
 	cmp r4, #1
@@ -1635,7 +1067,7 @@ cmd_68: @ 0x0801F3F4
 	lsls r0, r0, #0x10
 	lsrs r4, r0, #0x10
 	adds r0, r5, #0
-	bl sub_0802718C
+	bl get_obj
 	adds r2, r0, #0
 	cmp r2, #0
 	beq _0801F468
@@ -1696,7 +1128,7 @@ cmd_69: @ 0x0801F484
 	movs r5, #1
 	rsbs r5, r5, #0
 	adds r0, r5, #0
-	bl sub_0802718C
+	bl get_obj
 	adds r4, r0, #0
 	cmp r4, #0
 	bne _0801F49C
@@ -1719,7 +1151,7 @@ cmd_6A: @ 0x0801F4B0
 	movs r5, #1
 	rsbs r5, r5, #0
 	adds r0, r5, #0
-	bl sub_0802718C
+	bl get_obj
 	adds r4, r0, #0
 	cmp r4, #0
 	bne _0801F4C8
@@ -1760,7 +1192,7 @@ cmd_6B: @ 0x0801F4DC
 	lsls r0, r0, #0x10
 	lsrs r4, r0, #0x10
 	adds r0, r6, #0
-	bl sub_0802718C
+	bl get_obj
 	adds r2, r0, #0
 	cmp r2, #0
 	beq _0801F53E
@@ -1803,7 +1235,7 @@ cmd_6C: @ 0x0801F548
 	lsrs r4, r0, #0x10
 	adds r6, r4, #0
 	adds r0, r5, #0
-	bl sub_0802718C
+	bl get_obj
 	cmp r0, #0
 	beq _0801F58E
 	cmp r4, #1
@@ -1853,7 +1285,7 @@ cmd_6D: @ 0x0801F598
 	lsrs r4, r0, #0x10
 	adds r7, r4, #0
 	adds r0, r5, #0
-	bl sub_0802718C
+	bl get_obj
 	adds r1, r0, #0
 	cmp r1, #0
 	beq _0801F602
@@ -1938,7 +1370,7 @@ cmd_B4: @ 0x0801F610
 	lsls r0, r0, #0x10
 	lsrs r5, r0, #0x10
 	mov r0, sb
-	bl sub_0802718C
+	bl get_obj
 	adds r4, r0, #0
 	cmp r4, #0
 	beq _0801F6C8
@@ -2034,7 +1466,7 @@ cmd_B8: @ 0x0801F720
 	adds r5, r0, #0
 	movs r1, #3
 	bl scriptstack_peek
-	bl sub_0802718C
+	bl get_obj
 	adds r4, r0, #0
 	cmp r4, #0
 	beq _0801F74C
@@ -2071,7 +1503,7 @@ cmd_BA: @ 0x0801F754
 	bl scriptstack_peek
 	lsls r6, r0, #0x10
 	adds r0, r5, #0
-	bl sub_0802718C
+	bl get_obj
 	adds r2, r0, #0
 	cmp r2, #0
 	beq _0801F7B0
@@ -2140,7 +1572,7 @@ cmd_C0: @ 0x0801F7CC
 	ands r6, r1
 	orrs r6, r0
 	adds r0, r5, #0
-	bl sub_0802718C
+	bl get_obj
 	adds r2, r0, #0
 	cmp r2, #0
 	beq _0801F822
@@ -2172,7 +1604,7 @@ cmd_get_talker_sprite: @ 0x0801F834
 	push {r4, lr}
 	movs r1, #0
 	bl scriptstack_peek
-	bl sub_0802718C
+	bl get_obj
 	adds r4, r0, #0
 	cmp r4, #0
 	bne _0801F84E
@@ -2201,7 +1633,7 @@ cmd_C2: @ 0x0801F860
 	bl scriptstack_peek
 	adds r4, r0, #0
 	adds r0, r5, #0
-	bl sub_0802718C
+	bl get_obj
 	adds r5, r0, #0
 	cmp r5, #0
 	beq _0801F8C6
@@ -2259,12 +1691,12 @@ cmd_C3: @ 0x0801F8D0
 	bl scriptstack_peek
 	adds r4, r0, #0
 	adds r0, r6, #0
-	bl sub_0802718C
+	bl get_obj
 	adds r5, r0, #0
 	cmp r5, #0
 	beq _0801F924
 	adds r0, r4, #0
-	bl sub_0802718C
+	bl get_obj
 	adds r1, r0, #0
 	cmp r1, #0
 	beq _0801F924
@@ -2305,7 +1737,7 @@ cmd_C4: @ 0x0801F92C
 	bl scriptstack_peek
 	adds r4, r0, #0
 	adds r0, r5, #0
-	bl sub_0802718C
+	bl get_obj
 	cmp r0, #0
 	beq _0801F95E
 	lsls r1, r4, #0x10
@@ -2636,7 +2068,7 @@ cmd_CA: @ 0x0801FBF8
 	bl scriptstack_peek
 	adds r6, r0, #0
 	adds r0, r5, #0
-	bl sub_0802718C
+	bl get_obj
 	adds r4, r0, #0
 	cmp r4, #0
 	beq _0801FC58
@@ -2653,7 +2085,7 @@ cmd_CA: @ 0x0801FBF8
 	b _0801FC58
 _0801FC3A:
 	adds r0, r7, #0
-	bl sub_0802718C
+	bl get_obj
 	adds r1, r0, #0
 	cmp r1, #0
 	beq _0801FC58
@@ -2683,7 +2115,7 @@ cmd_D2: @ 0x0801FC60
 	bl scriptstack_peek
 	adds r4, r0, #0
 	adds r0, r5, #0
-	bl sub_0802718C
+	bl get_obj
 	cmp r0, #0
 	beq _0801FCA2
 	cmp r4, #1
@@ -2725,7 +2157,7 @@ cmd_D3: @ 0x0801FCAC
 	lsrs r4, r0, #0x10
 	adds r6, r4, #0
 	adds r0, r5, #0
-	bl sub_0802718C
+	bl get_obj
 	adds r1, r0, #0
 	cmp r1, #0
 	beq _0801FCEE
@@ -2763,7 +2195,7 @@ cmd_D5: @ 0x0801FCF8
 	lsls r0, r0, #0x10
 	lsrs r6, r0, #0x10
 	adds r0, r5, #0
-	bl sub_0802718C
+	bl get_obj
 	adds r5, r0, #0
 	cmp r5, #0
 	beq _0801FD68
@@ -2818,7 +2250,7 @@ cmd_D6: @ 0x0801FD80
 	push {lr}
 	movs r1, #0
 	bl scriptstack_peek
-	bl sub_0802718C
+	bl get_obj
 	cmp r0, #0
 	beq _0801FD94
 	bl sub_08035298
@@ -2862,7 +2294,7 @@ cmd_D7: @ 0x0801FD9C
 	lsls r0, r0, #0x10
 	lsrs r6, r0, #0x10
 	mov r0, sb
-	bl sub_0802718C
+	bl get_obj
 	adds r4, r0, #0
 	cmp r4, #0
 	beq _0801FE14
@@ -2933,7 +2365,7 @@ cmd_D9: @ 0x0801FE28
 	lsls r0, r0, #0x10
 	lsrs r6, r0, #0x10
 	mov r0, sl
-	bl sub_0802718C
+	bl get_obj
 	adds r4, r0, #0
 	cmp r4, #0
 	beq _0801FEAC
@@ -2977,7 +2409,7 @@ cmd_DA: @ 0x0801FEC0
 	movs r1, #0
 	bl scriptstack_peek
 	adds r0, r5, #0
-	bl sub_0802718C
+	bl get_obj
 	adds r6, r0, #0
 	cmp r6, #0
 	beq _0801FF38
@@ -3059,7 +2491,7 @@ cmd_F3: @ 0x0801FF68
 	lsls r0, r0, #0x10
 	lsrs r4, r0, #0x10
 	adds r0, r5, #0
-	bl sub_0802718C
+	bl get_obj
 	cmp r0, #0
 	beq _0801FF94
 	lsls r2, r4, #0x10
@@ -3085,7 +2517,7 @@ cmd_F7: @ 0x0801FF9C
 	lsls r0, r0, #0x10
 	lsrs r4, r0, #0x10
 	adds r0, r5, #0
-	bl sub_0802718C
+	bl get_obj
 	adds r2, r0, #0
 	cmp r2, #0
 	beq _08020010
@@ -3139,7 +2571,7 @@ cmd_FD: @ 0x08020018
 	push {lr}
 	movs r1, #0
 	bl scriptstack_peek
-	bl sub_0802718C
+	bl get_obj
 	cmp r0, #0
 	beq _08020032
 	adds r0, #0x8b
@@ -3163,7 +2595,7 @@ cmd_FE: @ 0x08020038
 	bl scriptstack_peek
 	adds r4, r0, #0
 	adds r0, r5, #0
-	bl sub_0802718C
+	bl get_obj
 	cmp r0, #0
 	beq _0802005C
 	adds r0, #0xbb
@@ -3179,7 +2611,7 @@ cmd_96: @ 0x08020064
 	push {lr}
 	movs r1, #0
 	bl scriptstack_peek
-	bl sub_0802718C
+	bl get_obj
 	cmp r0, #0
 	beq _08020088
 	movs r1, #0
@@ -3603,7 +3035,7 @@ cmd_play_anim_above: @ 0x080203B8
 	lsrs r6, r0, #0x10
 	adds r7, r6, #0
 	adds r0, r5, #0
-	bl sub_0802718C
+	bl get_obj
 	adds r4, r0, #0
 	cmp r4, #0
 	beq _0802041A
@@ -3643,7 +3075,7 @@ cmd_79: @ 0x08020428
 	push {lr}
 	movs r1, #0
 	bl scriptstack_peek
-	bl sub_0802718C
+	bl get_obj
 	cmp r0, #0
 	beq _08020440
 	adds r0, #0x85
@@ -3836,7 +3268,7 @@ cmd_7E: @ 0x080205B0
 	push {lr}
 	movs r1, #0
 	bl scriptstack_peek
-	bl sub_0802718C
+	bl get_obj
 	cmp r0, #0
 	beq _080205DA
 	ldr r1, _080205E0 @ =gScript
@@ -4549,7 +3981,7 @@ cmd_CF: @ 0x08020B60
 	bl scriptstack_peek
 	adds r6, r0, #0
 	mov r0, r8
-	bl sub_0802718C
+	bl get_obj
 	adds r4, r0, #0
 	cmp r4, #0
 	beq _08020BFE
@@ -5735,7 +5167,7 @@ cmd_93: @ 0x080214F0
 	push {lr}
 	movs r1, #0
 	bl scriptstack_peek
-	bl sub_0802718C
+	bl get_obj
 	cmp r0, #0
 	beq _08021508
 	adds r0, #0x85
@@ -5818,7 +5250,7 @@ cmd_open_save: @ 0x0802159C
 	push {lr}
 	movs r0, #1
 	rsbs r0, r0, #0
-	bl sub_0802718C
+	bl get_obj
 	adds r2, r0, #0
 	cmp r2, #0
 	beq _080215BA
@@ -17386,8 +16818,8 @@ _08027186:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_0802718C
-sub_0802718C: @ 0x0802718C
+	thumb_func_start get_obj
+get_obj: @ 0x0802718C
 	push {r4, lr}
 	adds r2, r0, #0
 	cmp r2, #0x18

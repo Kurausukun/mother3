@@ -8,7 +8,7 @@ extern "C" {
 void scriptstack_push(u32);
 s32 scriptstack_peek(s32* sp, u16 idx);
 void scriptstack_set(s32* sp, s32 offset, s32 value);
-Sprite* sub_0802718C(s32);
+Object* get_obj(s32);
 void sub_0800AD6C();
 void sub_08023EF8();
 u16 sub_0801BF18();
@@ -60,7 +60,7 @@ void sub_08009E38(u8*, u32);
 void sub_0800ACA0(u32);
 void sub_08018910(u32, u32, u32, u32);
 void sub_08010528(u16*, u16, u16);
-void sub_08036BEC(Sprite*, u16*);
+void sub_08036BEC(Object*, u16*);
 void sub_0801059C(u16*);
 u32 sub_0801A218(u16*);
 void sub_0801084C();
@@ -82,6 +82,14 @@ void sub_08012830(u16, u16, s32, u32);
 void sub_08011564(u32);
 void sub_0801A594(u32, u16*);
 void sub_0801097C(u32, u32, u32);
+void sub_08033948(u16, s16);
+void sub_080332AC(u32, u16, u16);
+void sub_08033484(u32);
+void sub_08033A54(u16);
+void sub_08033374(u32, u16);
+u16 sub_08035C0C(u32, u32, u32);
+void sub_08036BA4(Object*);
+void sub_08035C8C(Object*, u32, u32, u32);
 }
 
 #endif  // FUNCTIONS_H

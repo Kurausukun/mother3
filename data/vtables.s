@@ -10388,7 +10388,7 @@ vt_09F4B948::
 	.2byte 0
 	.4byte sub_08061DE8
 
-_vt.5Guest.6Object::
+_vt.5Guest.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -93732,7 +93732,7 @@ vt_09F81400::
 	.2byte 0
 	.4byte sub_080C152C
 
-_vt.4Unit.6Object::
+_vt.4Unit.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0

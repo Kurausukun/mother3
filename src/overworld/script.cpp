@@ -1,6 +1,6 @@
 #include "overworld/script.h"
-#include "functions.h"
 #include "battle/guest.h"
+#include "functions.h"
 
 extern "C" {
 extern u32 gUnknown_03005314;
@@ -44,13 +44,13 @@ u16 cmd_delay(s32* sp) {
 
 u16 cmd_set_anim_speed(s32* sp) {
     s32 idx;
-    Sprite* sprite;
+    Object* sprite;
 
     if (gScript.state_1 != 5)
         return 0;
 
     idx = scriptstack_peek(sp, 0);
-    sprite = sub_0802718C(idx);
+    sprite = get_obj(idx);
     if (sprite == NULL || sprite->speed == 0)
         return 0;
 
@@ -100,13 +100,13 @@ u16 cmd_05(s32* sp) {
 
 u16 cmd_06(s32* sp) {
     s32 idx;
-    Sprite* sprite;
+    Object* sprite;
 
     if (gScript.state_1 != 5)
         return 0;
 
     idx = scriptstack_peek(sp, 0);
-    sprite = sub_0802718C(idx);
+    sprite = get_obj(idx);
     if (sprite == 0 || (sprite->_ca << 28 < 0))
         return 0;
 
@@ -1363,7 +1363,7 @@ u16 cmd_set_ailment(s32* sp) {
     s32 idx;
     u16 ailment;
     u16 status;
-    Sprite* spr;
+    Object* spr;
 
     idx = scriptstack_peek(sp, 2);
     ailment = scriptstack_peek(sp, 1);
@@ -1371,7 +1371,7 @@ u16 cmd_set_ailment(s32* sp) {
     if (idx == -2) {
         sub_0802AD88(ailment, status);
     } else {
-        spr = sub_0802718C(idx);
+        spr = get_obj(idx);
         if ((spr != 0) && (spr->character < 5)) {
             set_ailment(spr->character, ailment, status);
         }
@@ -1398,7 +1398,7 @@ u16 cmd_E5(s32* sp) {
     s32 idx;
     u16 stat;
     s32 value;
-    Sprite* spr;
+    Object* spr;
 
     idx = scriptstack_peek(sp, 2);
     stat = scriptstack_peek(sp, 1);
@@ -1406,7 +1406,7 @@ u16 cmd_E5(s32* sp) {
     if (idx == -2) {
         sub_0802B094(stat, value);
     } else {
-        spr = sub_0802718C(idx);
+        spr = get_obj(idx);
         if ((spr != 0) && (spr->character < 5)) {
             sub_0802B0D0(spr->character, stat, value);
         }
@@ -1438,14 +1438,14 @@ u16 cmd_E7(s32* sp) {
     u16 c;
     u32 idx;
     s32 b;
-    Sprite* spr;
+    Object* spr;
     CharStats* cd;
     u64 t;
 
     idx = scriptstack_peek(sp, 1);
     b = scriptstack_peek(sp, 0);
     scriptstack_push(0);
-    spr = sub_0802718C(idx);
+    spr = get_obj(idx);
     if (spr != 0) {
         chr = spr->character;
         if (chr < 5) {
@@ -1532,7 +1532,7 @@ u16 cmd_heal_hp(s32* sp) {
     s32 idx;
     s32 hp;
     s32 v4;
-    Sprite* spr;
+    Object* spr;
     s32 v7;
 
     idx = scriptstack_peek(sp, 1);
@@ -1541,7 +1541,7 @@ u16 cmd_heal_hp(s32* sp) {
         v4 = sub_0802AF88((s16)hp);
         sub_0802B4D8();
     } else {
-        spr = sub_0802718C(idx);
+        spr = get_obj(idx);
         if (spr) {
             if (spr->character <= 4) {
                 v7 = sub_0802AFF0(spr->character, hp);
@@ -1555,14 +1555,14 @@ u16 cmd_heal_hp(s32* sp) {
 u16 cmd_heal_pp(s32* sp) {
     s32 idx;
     s32 pp;
-    Sprite* spr;
+    Object* spr;
 
     idx = scriptstack_peek(sp, 1);
     pp = scriptstack_peek(sp, 0);
     if (idx == -2) {
         sub_0802AFBC(pp);
     } else {
-        spr = sub_0802718C(idx);
+        spr = get_obj(idx);
         if (spr) {
             if (spr->character <= 4)
                 sub_0802B048(spr->character, pp);
@@ -1853,7 +1853,7 @@ u16 cmd_disp_msg(s32* sp) {
 	rsbs r4, r4, #0\n\
 _0801D738:\n\
 	adds r0, r4, #0\n\
-	bl sub_0802718C\n\
+	bl get_obj\n\
 	adds r6, r0, #0\n\
 	cmp r6, #0\n\
 	beq _0801D77C\n\
@@ -2029,7 +2029,7 @@ u16 cmd_disp_msg_0(s32* sp) {
 	rsbs r4, r4, #0\n\
 _0801D8A2:\n\
 	adds r0, r4, #0\n\
-	bl sub_0802718C\n\
+	bl get_obj\n\
 	adds r5, r0, #0\n\
 	cmp r5, #0\n\
 	beq _0801D8E4\n\
@@ -2169,7 +2169,7 @@ _0801D9BA:\n\
 }
 
 u16 cmd_34(s32* sp) {
-    if (gUnknown_02016028._4b04 == 2 && gUnknown_02016028._4b08 == 0)
+    if (gUnknown_02016028.msg_type == 2 && gUnknown_02016028.msg_choice == 0)
         scriptstack_push(1);
     else
         scriptstack_push(0);
@@ -2177,15 +2177,15 @@ u16 cmd_34(s32* sp) {
 }
 
 u16 cmd_35(s32* sp) {
-    if (gUnknown_02016028._4b04 == 2 && gUnknown_02016028._4b08 == 1)
+    if (gUnknown_02016028.msg_type == 2 && gUnknown_02016028.msg_choice == 1)
         scriptstack_push(1);
     else
         scriptstack_push(0);
     return 0;
 }
 
-u16 cmd_get_menu_selection(s32* sp) {
-    scriptstack_push(gUnknown_02016028._4b08);
+u16 cmd_get_msg_choice(s32* sp) {
+    scriptstack_push(gUnknown_02016028.msg_choice);
     return 0;
 }
 
@@ -2224,7 +2224,7 @@ u16 cmd_load_name(s32* sp) {
 
     v2 = scriptstack_peek(sp, 1);
     if (v2 <= 7)
-        gUnknown_02016028._4ad0[v2] = scriptstack_peek(sp, 0);
+        gUnknown_02016028.char_names[v2] = scriptstack_peek(sp, 0);
     return 0;
 }
 
@@ -2601,7 +2601,7 @@ _0801DED8: .4byte gScript\n\
 u16 cmd_41(s32* sp) {
     u32 v2;
     u16 v3;
-    Sprite* spr;
+    Object* spr;
     u32 v5;
     u16 i;
     u16 y[2];
@@ -2609,7 +2609,7 @@ u16 cmd_41(s32* sp) {
 
     v2 = scriptstack_peek(sp, 1);
     v3 = scriptstack_peek(sp, 0);
-    spr = sub_0802718C(v2);
+    spr = get_obj(v2);
     if (spr) {
         u16* p = y;
 
@@ -2886,15 +2886,15 @@ u16 cmd_48(s32* sp) {
 
 u16 cmd_cam_follow_sprite(s32* sp) {
     s32 idx;
-    Sprite* spr;
+    Object* spr;
 
     idx = scriptstack_peek(sp, 0);
     if (idx == -2) {
-        gScript._67b8 = -1;
+        gScript.cam_target = -1;
     } else {
-        spr = sub_0802718C(idx);
+        spr = get_obj(idx);
         if (spr != 0) {
-            gScript._67b8 = spr->character;
+            gScript.cam_target = spr->character;
         }
     }
     return 0;
@@ -3282,6 +3282,345 @@ u16 cmd_F1(s32* sp) {
     u16* p = v3;
     sub_0801A594(v1, v3);
     sub_0801097C(v1, v3[0], p[1]);
+    return 0;
+}
+
+u16 cmd_50(s32* sp) {
+    s32 b, c;
+    u32 idx;
+    u16 a;
+    Object* obj;
+
+    idx = scriptstack_peek(sp, 3);
+    c = scriptstack_peek(sp, 2);
+    b = scriptstack_peek(sp, 1);
+    a = scriptstack_peek(sp, 0);
+    obj = get_obj(idx);
+    if (obj == NULL) {
+        return 0;
+    }
+
+    if (c == -1 || c > 12) {
+        c = obj->_8b >> 3;
+    }
+    if (b == -1 || b > 7) {
+        b = obj->_8b & 7;
+    }
+
+    if (idx == -2) {
+        sub_08033948(c, b);
+    } else {
+        obj->_bc_1 = b;
+        sub_080332AC(obj->character, c, b);
+    }
+    if (!a) {
+        sub_08033484(obj->character);
+    }
+    return 0;
+}
+
+u16 cmd_play_anim(s32* sp) {
+    u32 idx = scriptstack_peek(sp, 2);
+    u16 anim = scriptstack_peek(sp, 1);
+    u16 loop = scriptstack_peek(sp, 0);
+
+    Object* obj = get_obj(idx);
+    if (obj == NULL) {
+        return 0;
+    }
+    if (anim < 0x100) {
+        if (idx == -2) {
+            sub_08033A54(anim - 1);
+        } else {
+            sub_08033374(obj->character, anim - 1);
+        }
+    }
+    if (!loop) {
+        sub_08033484(obj->character);
+    }
+    if (gScript._67ac == 632) {
+        if (anim - 1 == sub_08035C0C(obj->_86, obj->_88, 4)) {
+            sub_08036BA4(obj);
+        } else if (anim - 1 == sub_08035C0C(obj->_86, obj->_88, 0)) {
+            sub_08036BA4(obj);
+        }
+    }
+    return 0;
+}
+
+u16 cmd_linemove(s32* sp) {
+    u32 idx = scriptstack_peek(sp, 3);
+    u16 direction = scriptstack_peek(sp, 2) + 1;
+    u16 flags = scriptstack_peek(sp, 1);
+    u16 frames = scriptstack_peek(sp, 0);
+
+    Object* obj = get_obj(idx);
+    if (obj == NULL) {
+        return 0;
+    }
+    if (idx == -2) {
+        obj->_87 = 3;
+    }
+    if (direction < 9 && flags < 6) {
+        sub_08035C8C(obj, direction, flags, frames);
+    }
+    return 0;
+}
+
+NAKED
+u16 cmd_53(s32* sp) {
+    asm_unified("\n\
+	push {r4, r5, r6, r7, lr}\n\
+	mov r7, sl\n\
+	mov r6, sb\n\
+	mov r5, r8\n\
+	push {r5, r6, r7}\n\
+	sub sp, #0x1c\n\
+	adds r4, r0, #0\n\
+	add r5, sp, #8\n\
+	adds r0, r5, #0\n\
+	bl sub_0801A530\n\
+	add r0, sp, #8\n\
+	ldrh r1, [r0]\n\
+	ldr r0, _0801EA30 @ =0xFFFF0000\n\
+	mov sb, r0\n\
+	ldr r0, [sp, #0xc]\n\
+	mov r2, sb\n\
+	ands r0, r2\n\
+	orrs r0, r1\n\
+	str r0, [sp, #0xc]\n\
+	ldrh r0, [r5, #2]\n\
+	add r5, sp, #0xc\n\
+	strh r0, [r5, #2]\n\
+	movs r0, #0xf0\n\
+	strh r0, [r5, #4]\n\
+	movs r0, #0xa0\n\
+	strh r0, [r5, #6]\n\
+	adds r0, r4, #0\n\
+	movs r1, #4\n\
+	bl scriptstack_peek\n\
+	mov r8, r0\n\
+	adds r0, r4, #0\n\
+	movs r1, #3\n\
+	bl scriptstack_peek\n\
+	lsls r0, r0, #0x10\n\
+	lsrs r0, r0, #0x10\n\
+	mov r7, sb\n\
+	ldr r1, [sp, #0x14]\n\
+	ands r1, r7\n\
+	orrs r1, r0\n\
+	str r1, [sp, #0x14]\n\
+	adds r0, r4, #0\n\
+	movs r1, #2\n\
+	bl scriptstack_peek\n\
+	lsls r0, r0, #0x10\n\
+	ldr r2, _0801EA34 @ =0x0000FFFF\n\
+	ldr r1, [sp, #0x14]\n\
+	ands r1, r2\n\
+	orrs r1, r0\n\
+	str r1, [sp, #0x14]\n\
+	adds r0, r4, #0\n\
+	movs r1, #1\n\
+	bl scriptstack_peek\n\
+	lsls r0, r0, #0x10\n\
+	lsrs r0, r0, #0x10\n\
+	mov sl, r0\n\
+	adds r0, r4, #0\n\
+	movs r1, #0\n\
+	bl scriptstack_peek\n\
+	lsls r0, r0, #0x10\n\
+	lsrs r0, r0, #0x10\n\
+	str r0, [sp, #0x18]\n\
+	mov r0, r8\n\
+	bl get_obj\n\
+	adds r4, r0, #0\n\
+	adds r6, r5, #0\n\
+	cmp r4, #0\n\
+	bne _0801E9FE\n\
+	b _0801EAF8\n\
+_0801E9FE:\n\
+	movs r5, #2\n\
+	rsbs r5, r5, #0\n\
+	cmp r8, r5\n\
+	bne _0801EA0E\n\
+	adds r1, r4, #0\n\
+	adds r1, #0x87\n\
+	movs r0, #3\n\
+	strb r0, [r1]\n\
+_0801EA0E:\n\
+	add r0, sp, #0x14\n\
+	ldrh r2, [r0]\n\
+	movs r1, #0\n\
+	ldrsh r3, [r0, r1]\n\
+	asrs r1, r7, #0x10\n\
+	mov r8, r0\n\
+	cmp r3, r1\n\
+	bne _0801EA38\n\
+	ldrh r0, [r4, #0x14]\n\
+	lsrs r0, r0, #1\n\
+	ldrh r1, [r6]\n\
+	subs r1, r1, r0\n\
+	lsls r1, r1, #0x10\n\
+	lsrs r1, r1, #0x10\n\
+	ldr r0, [sp, #0x14]\n\
+	ands r0, r7\n\
+	b _0801EA74\n\
+	.align 2, 0\n\
+_0801EA30: .4byte 0xFFFF0000\n\
+_0801EA34: .4byte 0x0000FFFF\n\
+_0801EA38:\n\
+	cmp r3, r5\n\
+	bne _0801EA4A\n\
+	ldrh r0, [r6, #4]\n\
+	ldrh r2, [r6]\n\
+	adds r0, r0, r2\n\
+	ldrh r1, [r4, #0x14]\n\
+	lsrs r1, r1, #1\n\
+	adds r0, r0, r1\n\
+	b _0801EA58\n\
+_0801EA4A:\n\
+	movs r0, #3\n\
+	rsbs r0, r0, #0\n\
+	cmp r3, r0\n\
+	bne _0801EA66\n\
+	ldrh r0, [r4]\n\
+	lsls r0, r0, #0x10\n\
+	asrs r0, r0, #0x14\n\
+_0801EA58:\n\
+	lsls r0, r0, #0x10\n\
+	lsrs r0, r0, #0x10\n\
+	ldr r1, [sp, #0x14]\n\
+	ands r1, r7\n\
+	orrs r1, r0\n\
+	str r1, [sp, #0x14]\n\
+	b _0801EA78\n\
+_0801EA66:\n\
+	adds r1, r2, #0\n\
+	adds r1, #8\n\
+	lsls r1, r1, #0x10\n\
+	lsrs r1, r1, #0x10\n\
+	ldr r0, [sp, #0x14]\n\
+	mov r2, sb\n\
+	ands r0, r2\n\
+_0801EA74:\n\
+	orrs r0, r1\n\
+	str r0, [sp, #0x14]\n\
+_0801EA78:\n\
+	ldr r3, [sp, #0x14]\n\
+	asrs r2, r3, #0x10\n\
+	adds r1, r2, #0\n\
+	movs r0, #1\n\
+	rsbs r0, r0, #0\n\
+	cmp r1, r0\n\
+	bne _0801EA9C\n\
+	ldrh r0, [r4, #0x16]\n\
+	lsrs r0, r0, #1\n\
+	ldrh r1, [r6, #2]\n\
+	subs r1, r1, r0\n\
+	lsls r1, r1, #0x10\n\
+	ldr r0, _0801EA98 @ =0x0000FFFF\n\
+	ands r3, r0\n\
+	orrs r3, r1\n\
+	b _0801EADC\n\
+	.align 2, 0\n\
+_0801EA98: .4byte 0x0000FFFF\n\
+_0801EA9C:\n\
+	movs r0, #2\n\
+	rsbs r0, r0, #0\n\
+	cmp r1, r0\n\
+	bne _0801EAC0\n\
+	ldrh r1, [r6, #2]\n\
+	ldrh r0, [r6, #6]\n\
+	adds r1, r1, r0\n\
+	ldrh r0, [r4, #0x16]\n\
+	lsrs r0, r0, #1\n\
+	adds r1, r1, r0\n\
+	lsls r1, r1, #0x10\n\
+	ldr r0, _0801EABC @ =0x0000FFFF\n\
+	ands r3, r0\n\
+	orrs r3, r1\n\
+	b _0801EADC\n\
+	.align 2, 0\n\
+_0801EABC: .4byte 0x0000FFFF\n\
+_0801EAC0:\n\
+	movs r0, #3\n\
+	rsbs r0, r0, #0\n\
+	cmp r1, r0\n\
+	bne _0801EAD0\n\
+	ldrh r0, [r4, #2]\n\
+	lsls r0, r0, #0x10\n\
+	asrs r0, r0, #0x14\n\
+	b _0801EAD4\n\
+_0801EAD0:\n\
+	adds r0, r2, #0\n\
+	adds r0, #8\n\
+_0801EAD4:\n\
+	lsls r0, r0, #0x10\n\
+	ldr r1, _0801EB0C @ =0x0000FFFF\n\
+	ands r3, r1\n\
+	orrs r3, r0\n\
+_0801EADC:\n\
+	str r3, [sp, #0x14]\n\
+	mov r0, sl\n\
+	cmp r0, #5\n\
+	bhi _0801EAF8\n\
+	ldr r1, [sp, #0x18]\n\
+	str r1, [sp]\n\
+	movs r0, #0\n\
+	str r0, [sp, #4]\n\
+	adds r0, r4, #0\n\
+	movs r1, #0\n\
+	mov r2, r8\n\
+	mov r3, sl\n\
+	bl sub_08036EB8\n\
+_0801EAF8:\n\
+	movs r0, #0\n\
+	add sp, #0x1c\n\
+	pop {r3, r4, r5}\n\
+	mov r8, r3\n\
+	mov sb, r4\n\
+	mov sl, r5\n\
+	pop {r4, r5, r6, r7}\n\
+	pop {r1}\n\
+	bx r1\n\
+	.align 2, 0\n\
+_0801EB0C: .4byte 0x0000FFFF\n\
+	");
+}
+
+struct Size {
+    u16 w;
+    s16 h;
+};
+void sub_08036EB8(Object*, u32, Size*, u32, u32, u32);
+
+u16 cmd_54(s32* sp) {
+    register u32 idx asm("r6");
+    Size size;
+    u16 a, b;
+
+    idx = scriptstack_peek(sp, 4);
+    size.w = scriptstack_peek(sp, 3);
+    size.h = scriptstack_peek(sp, 2);
+    b = scriptstack_peek(sp, 1);
+    a = scriptstack_peek(sp, 0);
+
+    Object* obj = get_obj(idx);
+    if (obj == NULL) {
+        return 0;
+    }
+
+    if (idx == -2) {
+        obj->_87 = 3;
+    }
+
+    size.w *= 16;
+    size.h *= 16;
+    size.w += 8;
+    size.h += 8;
+    if (b < 6 && a < 4) {
+        sub_08036EB8(obj, 0, &size, b, a, 0);
+    }
     return 0;
 }
 }

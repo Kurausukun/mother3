@@ -4,7 +4,7 @@
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
-	ldr r0, _08074B94 @ =_vt.4Unit.6Object
+	ldr r0, _08074B94 @ =_vt.4Unit.10UnitObject
 	str r0, [r4, #0x20]
 	ldr r0, _08074B98 @ =_vt.4Unit
 	str r0, [r4, #0x1c]
@@ -37,7 +37,7 @@ _08074B80:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08074B94: .4byte _vt.4Unit.6Object
+_08074B94: .4byte _vt.4Unit.10UnitObject
 _08074B98: .4byte _vt.4Unit
 _08074B9C: .4byte _vt.6Object
     .syntax divided

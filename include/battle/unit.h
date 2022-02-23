@@ -11,8 +11,8 @@ inline s32 clampS32(s32 value, s32 min, s32 max) {
     return value;
 }
 
-struct Object {
-    virtual ~Object() {}
+struct UnitObject {
+    virtual ~UnitObject() {}
 
     virtual void object_8() {}
     virtual void object_10() = 0;
@@ -36,7 +36,7 @@ struct ID {
 
 struct UnitCmd;
 
-class Unit : public Base, public Object {
+class Unit : public Base, public UnitObject {
 public:
     Unit();
     virtual ~Unit();

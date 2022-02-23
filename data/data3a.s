@@ -361,7 +361,7 @@ gScriptCmdTable:
            .4byte cmd_disp_msg_0+1
            .4byte cmd_34+1
            .4byte cmd_35+1
-           .4byte cmd_get_menu_selection+1
+           .4byte cmd_get_msg_choice+1
            .4byte cmd_37+1
            .4byte cmd_38+1
            .4byte cmd_load_name+1

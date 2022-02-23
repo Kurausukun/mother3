@@ -47,12 +47,24 @@ struct ItemData {
     u32 battle_info;
 };
 
-struct Sprite {
-    u8 filler[0x34];
+struct Object {
+    u8 filler[0x20];
+    u16 _20;
+    u16 _22;
+    u8 _24[0x34 - 0x24];
     u32 speed;
     u8 _38[0x4d];
     u8 character;
-    u8 _86[0x44];
+    u8 _86;
+    u8 _87;
+    u16 _88;
+    u8 _8a;
+    u8 _8b;
+    u8 _8c[0x30];
+    u8 _bc_0 : 2;
+    u8 _bc_1 : 3;
+    u8 _bc_2 : 3;
+    u8 _bd[0xd];
     u8 _ca;
 };
 
@@ -60,10 +72,10 @@ struct struct_02016028 {
     u8 filler[0x2ca2];
     u16 _2ca2;
     u8 _2ca3[0x4ad0 - 0x2ca4];
-    u32 _4ad0[0xd];
-    u16 _4b04;
+    u32 char_names[0xd];
+    u16 msg_type;
     u16 _4b06;
-    u16 _4b08;
+    u16 msg_choice;
     u16 _4b0a;
     u16 _4b0c;
     u16 _4b0e;

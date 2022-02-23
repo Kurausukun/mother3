@@ -19,7 +19,7 @@ struct Script {
     u8 _5988[0x67ac - 0x5988];
     u16 _67ac;
     u8 _67ae[0x67b8 - 0x67ae];
-    u16 _67b8;
+    u16 cam_target;
     u8 _67ba[0x67c0 - 0x67ba];
     u16 _67c0;
     u16 _67c2;
