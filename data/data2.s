@@ -85,7 +85,7 @@ gUnknown_080FF278:
     .global gUnknown_080FF2CC
 gUnknown_080FF2CC:
     .4byte 0xFFFF0000
-    .4byte sub_0806BB48+1
+    .4byte bgengine_updateScrollHorizontal+1
     .incbin "baserom.gba", 0x000FF2D4, 0xEC
 
     .global gUnknown_080FF3C0

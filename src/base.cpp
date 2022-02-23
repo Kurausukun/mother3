@@ -6,8 +6,8 @@ Base::Base() {
 }
 
 Base::~Base() {
-	free_fit1();
-	free_fit2();
+    free_fit1();
+    free_fit2();
 }
 
 void Base::base_5c() {
@@ -32,8 +32,8 @@ void Base::base_2c() {}
 
 void Base::base_34() {}
 
-extern "C" NAKED void
-registerClock__4BasePvRC4BaseG9ClockData(void* target, const Base& trigger, ClockData callback) {
+extern "C" NAKED void registerClock__4BasePvRC4BaseG9ClockData(void* target, const Base& trigger,
+                                                               ClockData callback) {
     asm_unified("\n\
 	sub sp, #4\n\
 	push {r4, r5, r6, r7, lr}\n\
@@ -978,6 +978,14 @@ _0806910E:\n\
 	.align 2, 0\n\
     ");
 }
+
+/*
+void Base::base_64() {
+    for (int i = 0; i < mFit1.size(); i++) {
+		mFit1[i]._8.removeAll(0);
+	}
+}
+*/
 
 NAKED
 void Base::base_64() {

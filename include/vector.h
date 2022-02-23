@@ -44,6 +44,10 @@ struct Vector {
         }
     }
 
+    void clear() {
+        mSize = 0;
+    }
+
     bool remove(const T& value) {
         for (int i = 0; i < mSize; i++) {
             if (mStorage[i] == value) {
@@ -53,6 +57,15 @@ struct Vector {
             }
         }
         return false;
+    }
+
+    void removeAll(const T& value) {
+        for (int i = 0; i < mSize; i++) {
+            if (mStorage[i] == value) {
+                copy(&mStorage[i + 1], &mStorage[i], mSize - 1 - i);
+                mSize--;
+            }
+        }
     }
 
     // thanks to: maide, pixel, ibot02

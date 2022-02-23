@@ -95,12 +95,12 @@ struct struct_02016028 {
 };
 
 struct Save {
-    u8 _0[0x8];
+    u8 party[5];
     u32 dp_pocket;
     u32 dp_bank;
-    u8 _10[0x100];
-    u8 _110[0x100];
-    u32 _210;
+    u8 key_items[0x100];
+    u8 item_guy[0x100];
+    u32 playtime;
     u8 _214;
     u32 _218;
     u32 _21c;
@@ -112,17 +112,17 @@ struct Save {
     u8 _340[0x40];
     u8 _380[0x40];
     u8 _3c0[0x40];
-    u8 _400[0x80];
+    u8 giftbox_flags[0x80];
     u8 _480;
     u8 _481;
     u16 _482[0x80];
     u16 _582[0x80];
-    u8 _682[0x10];
-    u8 _692[0x10];
-    u8 _6a2[0x12];
-    u8 _6b4[0x12];
-    u8 _6c6[0x12];
-    u8 _6d8[0x20];
+    u8 hinawa_name[0x10];
+    u8 claus_name[0x10];
+    u8 fav_food[0x12];
+    u8 fav_thing[0x12];
+    u8 playername_short[0x12];
+    u8 playername[0x20];
     u16 _6f8;
     u16 _6fa;
     u16 _6fc;
@@ -148,8 +148,8 @@ struct Save {
     u8 _738[12];
     u32 _744;
     u16 _748;
-    u8 _74a[0x20];
-    u8 _76a[0x20];
+    u8 enemy_seen_front[0x20];
+    u8 enemy_seen_back[0x20];
     u8 _78a;
     u8 _78b;
     u8 _78c;

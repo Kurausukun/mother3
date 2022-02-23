@@ -179,7 +179,7 @@
 . = 0x000040EC; gUnknown_020040EC = .;
 . = 0x000040F0; gUnknown_020040F0 = .;
 . = 0x00004100; gUnknown_02004100 = .;
-. = 0x00004110; gGuestStats = .;
+. = 0x00004110; gCharStats = .;
 . = 0x00004112; gUnknown_02004112 = .;
 . = 0x00004148; gUnknown_02004148 = .;
 . = 0x0000414C; gUnknown_0200414C = .;

@@ -5341,7 +5341,7 @@ sub_0807A904: @ 0x0807A904
 	adds r2, #0xfc
 	movs r0, #0x6c
 	muls r0, r4, r0
-	ldr r1, _0807AABC @ =gGuestStats
+	ldr r1, _0807AABC @ =gCharStats
 	adds r0, r0, r1
 	str r0, [r2]
 	movs r3, #0x80
@@ -5479,7 +5479,7 @@ sub_0807A904: @ 0x0807A904
 	.align 2, 0
 _0807AAB4: .4byte vt_09F82070
 _0807AAB8: .4byte vt_09F820E8
-_0807AABC: .4byte gGuestStats
+_0807AABC: .4byte gCharStats
 _0807AAC0: .4byte gLevelInfo
 _0807AAC4: .4byte 0x0000020A
 _0807AAC8: .4byte _vt.3Unk

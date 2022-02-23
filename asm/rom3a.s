@@ -453,7 +453,7 @@ sub_08097A94: @ 0x08097A94
 	adds r0, r5, r3
 	str r4, [r0]
 	movs r1, #0
-	ldr r0, _08097B54 @ =gGuestStats
+	ldr r0, _08097B54 @ =gCharStats
 	movs r2, #0
 	adds r0, #0x18
 _08097AF6:
@@ -498,7 +498,7 @@ _08097B44: .4byte vt_09F46450
 _08097B48: .4byte 0x00000F6C
 _08097B4C: .4byte vt_09F458E8
 _08097B50: .4byte 0x00000F94
-_08097B54: .4byte gGuestStats
+_08097B54: .4byte gCharStats
 _08097B58: .4byte 0x00000F98
 
 	thumb_func_start sub_08097B5C
@@ -696,7 +696,7 @@ _08097CD8:
 	ldr r1, _08097D0C @ =0x80000410
 	str r1, [r0, #8]
 	ldr r1, [r0, #8]
-	ldr r1, _08097D10 @ =gGuestStats
+	ldr r1, _08097D10 @ =gCharStats
 	movs r3, #0x8a
 	lsls r3, r3, #4
 	adds r2, r4, r3
@@ -714,7 +714,7 @@ _08097CFE:
 _08097D04: .4byte gSave
 _08097D08: .4byte 0x040000D4
 _08097D0C: .4byte 0x80000410
-_08097D10: .4byte gGuestStats
+_08097D10: .4byte gCharStats
 _08097D14: .4byte 0x80000360
 
 	thumb_func_start DefaultBattle_ctor
@@ -8377,7 +8377,7 @@ _0809BD04:
 	movs r1, #0x8a
 	lsls r1, r1, #4
 	adds r0, r5, r1
-	ldr r2, _0809BD3C @ =gGuestStats
+	ldr r2, _0809BD3C @ =gCharStats
 	ldr r1, _0809BD40 @ =0x040000D4
 	str r0, [r1]
 	str r2, [r1, #4]
@@ -8403,7 +8403,7 @@ _0809BD34:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0809BD3C: .4byte gGuestStats
+_0809BD3C: .4byte gCharStats
 _0809BD40: .4byte 0x040000D4
 _0809BD44: .4byte 0x80000360
 _0809BD48: .4byte gSave
@@ -10029,7 +10029,7 @@ _0809CB12:
 	lsrs r0, r0, #0x10
 	movs r1, #0x6c
 	muls r1, r0, r1
-	ldr r0, _0809CBC8 @ =gGuestStats
+	ldr r0, _0809CBC8 @ =gCharStats
 	adds r1, r1, r0
 	mov r8, r1
 	ldr r1, [r6, #0x1c]
@@ -10092,7 +10092,7 @@ _0809CBB4:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0809CBC8: .4byte gGuestStats
+_0809CBC8: .4byte gCharStats
 _0809CBCC: .4byte gLevelInfo
 
 	thumb_func_start sub_0809CBD0
@@ -10115,7 +10115,7 @@ sub_0809CBD0: @ 0x0809CBD0
 	lsrs r0, r0, #0x10
 	movs r1, #0x6c
 	muls r1, r0, r1
-	ldr r0, _0809CCAC @ =gGuestStats
+	ldr r0, _0809CCAC @ =gCharStats
 	adds r1, r1, r0
 	mov r8, r1
 	mov r0, r8
@@ -10203,7 +10203,7 @@ _0809CC9E:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0809CCAC: .4byte gGuestStats
+_0809CCAC: .4byte gCharStats
 _0809CCB0: .4byte gLevelInfo
 _0809CCB4: .4byte gUnknown_02004F94
 
@@ -10251,7 +10251,7 @@ sub_0809CCF4: @ 0x0809CCF4
 	lsrs r0, r0, #0x10
 	movs r1, #0x6c
 	muls r1, r0, r1
-	ldr r0, _0809CD2C @ =gGuestStats
+	ldr r0, _0809CD2C @ =gCharStats
 	adds r6, r1, r0
 	adds r0, r6, #0
 	bl sub_0805C1DC
@@ -10262,7 +10262,7 @@ sub_0809CCF4: @ 0x0809CCF4
 	movs r5, #0
 	b _0809CD5C
 	.align 2, 0
-_0809CD2C: .4byte gGuestStats
+_0809CD2C: .4byte gCharStats
 _0809CD30:
 	lsls r0, r5, #0x10
 	lsrs r4, r0, #0x10
@@ -10351,7 +10351,7 @@ _0809CDAA:
 	lsrs r0, r0, #0x10
 	movs r1, #0x6c
 	muls r1, r0, r1
-	ldr r0, _0809CE60 @ =gGuestStats
+	ldr r0, _0809CE60 @ =gCharStats
 	adds r1, r1, r0
 	mov r8, r1
 	ldr r1, [r6, #0x1c]
@@ -10414,7 +10414,7 @@ _0809CE4C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0809CE60: .4byte gGuestStats
+_0809CE60: .4byte gCharStats
 _0809CE64: .4byte gLevelInfo
 
 	thumb_func_start sub_0809CE68
@@ -10437,7 +10437,7 @@ sub_0809CE68: @ 0x0809CE68
 	lsrs r0, r0, #0x10
 	movs r1, #0x6c
 	muls r1, r0, r1
-	ldr r0, _0809CF44 @ =gGuestStats
+	ldr r0, _0809CF44 @ =gCharStats
 	adds r1, r1, r0
 	mov r8, r1
 	mov r0, r8
@@ -10525,7 +10525,7 @@ _0809CF36:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0809CF44: .4byte gGuestStats
+_0809CF44: .4byte gCharStats
 _0809CF48: .4byte gLevelInfo
 _0809CF4C: .4byte gUnknown_02004F7A
 
@@ -10573,7 +10573,7 @@ sub_0809CF8C: @ 0x0809CF8C
 	lsrs r0, r0, #0x10
 	movs r1, #0x6c
 	muls r1, r0, r1
-	ldr r0, _0809CFC4 @ =gGuestStats
+	ldr r0, _0809CFC4 @ =gCharStats
 	adds r6, r1, r0
 	adds r0, r6, #0
 	bl sub_0805C1DC
@@ -10584,7 +10584,7 @@ sub_0809CF8C: @ 0x0809CF8C
 	movs r5, #0
 	b _0809CFF4
 	.align 2, 0
-_0809CFC4: .4byte gGuestStats
+_0809CFC4: .4byte gCharStats
 _0809CFC8:
 	lsls r0, r5, #0x10
 	lsrs r4, r0, #0x10

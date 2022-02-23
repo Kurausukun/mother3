@@ -11,7 +11,7 @@ struct Singleton;
 
 // wut
 template<typename T>
-class SafeVector : Vector<T> {
+class SafeVector : public Vector<T> {
 public:
     SafeVector() {}
     ~SafeVector() {
@@ -22,14 +22,10 @@ public:
 typedef void (*Callback)(Base*, Clock*);
 
 struct Listener {
-    ~Listener() {
-        delete[] stuff;
-    }
+    ~Listener() {}
 
-    u8* _4;
-    u8* _8;
-    u8* _c;
-    u8* stuff;
+    Base* _4;
+    Vector<Listener*> _8;
 };
 
 struct BaseNode {
@@ -68,7 +64,7 @@ public:
     s16 _0;
     s16 _2;
     SafeVector<Listener> mFit1;
-    Fit mFit2;
+    Vector<Listener*> mFit2;
 };
 
 struct Unk : public Base {

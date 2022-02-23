@@ -3239,8 +3239,8 @@ sub_080029F8: @ 0x080029F8
 	.align 2, 0
 _08002A2C: .4byte gSave
 
-	thumb_func_start sub_08002A30
-sub_08002A30: @ 0x08002A30
+	thumb_func_start get_giftbox_flag
+get_giftbox_flag: @ 0x08002A30
 	adds r2, r0, #0
 	lsls r2, r2, #0x10
 	ldr r0, _08002A54 @ =gSave
@@ -13954,7 +13954,7 @@ _08008138:
 	adds r6, r0, #0
 _0800814A:
 	adds r0, r4, #0
-	bl get_guest_stats
+	bl get_char_stats
 	adds r1, r0, #0
 	ldrb r0, [r1]
 	cmp r0, #0
@@ -30960,7 +30960,7 @@ _0801063C:
 	strb r0, [r5, #0xa]
 	str r4, [r5]
 	ldrh r0, [r4, #0xc]
-	bl sub_08002A30
+	bl get_giftbox_flag
 	mov r2, r8
 	ands r2, r0
 	lsls r2, r2, #1

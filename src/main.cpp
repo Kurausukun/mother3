@@ -79,14 +79,14 @@ extern "C" void sub_0805ACF4();
 extern "C" void IntrMain();
 extern "C" void sub_080037A8();
 extern "C" void sub_080037BC();
-extern "C" void sub_0800303C();
-extern "C" void sub_08000944();
+extern "C" void sub_0800303C(u32);
+extern "C" void init_save();
 extern "C" void sub_08000BE8();
 extern "C" u32 get_flag(u32);
-extern "C" void sub_08000944();
+extern "C" void init_save();
 extern "C" void sub_08000BE8();
 extern "C" u32 sub_08001DB0(u32);
-extern "C" void sub_08001B54(void*, u32, u32);
+extern "C" void sub_08001B54(void*, u32, s32);
 extern "C" u32 sub_08001C5C(u32, u32);
 extern "C" void sub_08002420(void*, u32, s16);
 extern "C" void sub_0800272C();
@@ -431,30 +431,30 @@ void sub_08000904() {
 }
 
 void sub_08000910() {
-    sub_08000944();
+    init_save();
     sub_08000BE8();
 }
 
 void sub_08000920() {
     u16 val = get_flag(157);
-    sub_08000944();
+    init_save();
     set_event_flag(157, val);
     sub_08000BE8();
 }
 
-void sub_08000944() {
+void init_save() {
     u16 i;
 
     for (i = 0; i < 5; ++i) {
-        gSave._0[i] = 0;
+        gSave.party[i] = 0;
     }
     gSave.dp_pocket = 0;
     gSave.dp_bank = 0;
     for (i = 0; i < 0x100; ++i) {
-        gSave._10[i] = 0;
-        gSave._110[i] = 0;
+        gSave.key_items[i] = 0;
+        gSave.item_guy[i] = 0;
     }
-    gSave._210 = 0;
+    gSave.playtime = 0;
     gSave._214 = 0;
     gSave._218 = 0;
     gSave._21c = 0;
@@ -473,7 +473,7 @@ void sub_08000944() {
         gSave._3c0[i] = 0;
     }
     for (i = 0; i < 0x80; ++i) {
-        gSave._400[i] = 0;
+        gSave.giftbox_flags[i] = 0;
     }
     gSave._480 = 1;
     for (i = 0; i < 0x80; ++i) {
@@ -481,14 +481,14 @@ void sub_08000944() {
         gSave._582[i] = 100;
     }
     u16 tmp = sub_08001DB0(5);
-    sub_08001B54(gSave._682, sizeof gSave._682, -1);
-    sub_08002420(gSave._682, sub_08001C5C(5, 8), tmp);
-    sub_08001B54(gSave._692, sizeof gSave._692, -1);
-    sub_08002420(gSave._692, sub_08001C5C(5, 5), tmp);
-    sub_08001B54(gSave._6a2, sizeof gSave._6a2, -1);
-    sub_08001B54(gSave._6b4, sizeof gSave._6b4, -1);
-    sub_08001B54(gSave._6c6, sizeof gSave._6c6, -1);
-    sub_08001B54(gSave._6d8, sizeof gSave._6d8, -1);
+    sub_08001B54(gSave.hinawa_name, sizeof gSave.hinawa_name, -1);
+    sub_08002420(gSave.hinawa_name, sub_08001C5C(5, 8), tmp);
+    sub_08001B54(gSave.claus_name, sizeof gSave.claus_name, -1);
+    sub_08002420(gSave.claus_name, sub_08001C5C(5, 5), tmp);
+    sub_08001B54(gSave.fav_food, sizeof gSave.fav_food, -1);
+    sub_08001B54(gSave.fav_thing, sizeof gSave.fav_thing, -1);
+    sub_08001B54(gSave.playername_short, sizeof gSave.playername_short, -1);
+    sub_08001B54(gSave.playername, sizeof gSave.playername, -1);
     gSave._6f8 = 0;
     gSave._6fa = 0;
     gSave._6fc = 0;
@@ -514,8 +514,8 @@ void sub_08000944() {
     }
     sub_0800272C();
     for (i = 0; i < 0x20; ++i) {
-        gSave._74a[i] = 0;
-        gSave._76a[i] = 0;
+        gSave.enemy_seen_front[i] = 0;
+        gSave.enemy_seen_back[i] = 0;
     }
     gSave._78a = 0;
     gSave._78b = 0;
@@ -533,41 +533,41 @@ void sub_08000944() {
 void sub_08000BE8() {
     u32 tmp = sub_08001DB0(5);
     for (u16 i = 0; i < 0x10; ++i) {
-        sub_08001B54(&gGuestStats[i].name, sizeof gGuestStats[i].name, -1);
-        sub_08002420(&gGuestStats[i].name, sub_08001C5C(6, i), tmp);
+        sub_08001B54(&gCharStats[i].name, sizeof gCharStats[i].name, -1);
+        sub_08002420(&gCharStats[i].name, sub_08001C5C(6, i), tmp);
     }
-    gGuestStats[0].charNo = 0;
-    gGuestStats[0].spriteNo = 0;
-    gGuestStats[1].charNo = 1;
-    gGuestStats[1].spriteNo = 1;
-    gGuestStats[2].charNo = 2;
-    gGuestStats[2].spriteNo = 3;
-    gGuestStats[3].charNo = 3;
-    gGuestStats[3].spriteNo = 15;
-    gGuestStats[4].charNo = 4;
-    gGuestStats[4].spriteNo = 11;
-    gGuestStats[5].charNo = 5;
-    gGuestStats[5].spriteNo = 9;
-    gGuestStats[6].charNo = 6;
-    gGuestStats[6].spriteNo = 18;
-    gGuestStats[7].charNo = 7;
-    gGuestStats[7].spriteNo = 14;
-    gGuestStats[8].charNo = 8;
-    gGuestStats[8].spriteNo = 32;
-    gGuestStats[9].charNo = 9;
-    gGuestStats[9].spriteNo = 116;
-    gGuestStats[10].charNo = 10;
-    gGuestStats[10].spriteNo = 86;
-    gGuestStats[11].charNo = 11;
-    gGuestStats[11].spriteNo = 88;
-    gGuestStats[12].charNo = 12;
-    gGuestStats[12].spriteNo = 17;
-    gGuestStats[13].charNo = 13;
-    gGuestStats[13].spriteNo = 5;
-    gGuestStats[14].charNo = 0;
-    gGuestStats[14].spriteNo = 0;
-    gGuestStats[15].charNo = 0;
-    gGuestStats[15].spriteNo = 0;
+    gCharStats[0].charNo = 0;
+    gCharStats[0].spriteNo = 0;
+    gCharStats[1].charNo = 1;
+    gCharStats[1].spriteNo = 1;
+    gCharStats[2].charNo = 2;
+    gCharStats[2].spriteNo = 3;
+    gCharStats[3].charNo = 3;
+    gCharStats[3].spriteNo = 15;
+    gCharStats[4].charNo = 4;
+    gCharStats[4].spriteNo = 11;
+    gCharStats[5].charNo = 5;
+    gCharStats[5].spriteNo = 9;
+    gCharStats[6].charNo = 6;
+    gCharStats[6].spriteNo = 18;
+    gCharStats[7].charNo = 7;
+    gCharStats[7].spriteNo = 14;
+    gCharStats[8].charNo = 8;
+    gCharStats[8].spriteNo = 32;
+    gCharStats[9].charNo = 9;
+    gCharStats[9].spriteNo = 116;
+    gCharStats[10].charNo = 10;
+    gCharStats[10].spriteNo = 86;
+    gCharStats[11].charNo = 11;
+    gCharStats[11].spriteNo = 88;
+    gCharStats[12].charNo = 12;
+    gCharStats[12].spriteNo = 17;
+    gCharStats[13].charNo = 13;
+    gCharStats[13].spriteNo = 5;
+    gCharStats[14].charNo = 0;
+    gCharStats[14].spriteNo = 0;
+    gCharStats[15].charNo = 0;
+    gCharStats[15].spriteNo = 0;
     sub_0805B528();
 }
 

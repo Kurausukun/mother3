@@ -38,7 +38,7 @@ void sub_08033BCC(u32);
 void sub_0802B4D8();
 void sub_08028040();
 void sub_080029F8(u32, u32);
-u32 sub_08002A30(u32);
+u32 get_giftbox_flag(u32);
 void sub_0802AF24(u32);
 void sub_0802A05C(s32);
 u32 sub_0802B954(u32);

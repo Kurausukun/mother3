@@ -163,14 +163,14 @@ u16 cmd_reload_room() {
     return 0;
 }
 
-u16 sub_0801C288() {
+u16 cmd_C9() {
     if (gScript.state_1 == 5)
         gScript._8494_4 = 1;
     return 0;
 }
 
 NAKED
-u16 sub_0801C2B8(s32* sp) {
+u16 cmd_E4(s32* sp) {
     asm_unified("\n\
 	push {r4, r5, r6, r7, lr}\n\
 	sub sp, #4\n\
@@ -364,7 +364,7 @@ _0801C444: .4byte 0x0000FFFF\n\
     ");
 }
 
-u16 sub_0801C448(s32* sp) {
+u16 cmd_F5(s32* sp) {
     u16 b;
     u16 a;
     u32 temp;
@@ -499,7 +499,7 @@ u16 cmd_12(s32* sp) {
     return 0;
 }
 
-u16 sub_0801C658(s32* sp) {
+u16 cmd_DD(s32* sp) {
     u16 idx;
     u16 val;
 
@@ -511,7 +511,7 @@ u16 sub_0801C658(s32* sp) {
     return 0;
 }
 
-u16 sub_0801C688(s32* sp) {
+u16 cmd_DE(s32* sp) {
     u16 idx;
     u16 val;
 
@@ -523,7 +523,7 @@ u16 sub_0801C688(s32* sp) {
     return 0;
 }
 
-u16 sub_0801C6AC(s32* sp) {
+u16 cmd_DF(s32* sp) {
     u16 val;
     u16 idx;
 
@@ -593,7 +593,7 @@ u16 cmd_get_item_count(s32* sp) {
     } else {
         cnt = 0;
         for (u16 i = 0; i < gScript.party_count; ++i) {
-            item = (u8*)get_guest_stats(i);
+            item = (u8*)get_char_stats(i);
             if (*item != 0) {
                 temp = sub_08001D2C(*item);
                 if (temp != 0) {
@@ -644,7 +644,7 @@ _0801C7D0:\n\
 	mov r8, r0\n\
 _0801C7E2:\n\
 	adds r0, r5, #0\n\
-	bl get_guest_stats\n\
+	bl get_char_stats\n\
 	adds r4, r0, #0\n\
 	ldrb r0, [r4]\n\
 	cmp r0, #0\n\
@@ -931,7 +931,7 @@ u16 cmd_get_giftbox_flag(s32* sp) {
 
     idx = scriptstack_peek(sp, 0);
     if (idx < 0x400) {
-        val = sub_08002A30(idx);
+        val = get_giftbox_flag(idx);
         scriptstack_push(val);
     }
     return 0;
@@ -1121,7 +1121,7 @@ u16 cmd_cfg_member(s32* sp) {
             sub_0805BB34(auStack32, chrNum);
             temp = sub_0802B8C4(chrNum);
             if ((s16)temp != -1) {
-                a = get_guest_stats(temp);
+                a = get_char_stats(temp);
                 b = sub_0802B874(temp);
                 sub_0802941C(a, b);
                 sub_080294DC(a, b);
@@ -1129,7 +1129,7 @@ u16 cmd_cfg_member(s32* sp) {
             }
         }
         if (sprNum != -1) {
-            gGuestStats[chrNum]._1 = sprNum;
+            gCharStats[chrNum]._1 = sprNum;
         }
     }
     return 0;
@@ -1180,7 +1180,7 @@ u16 cmd_cfg_member(s32* sp) {
 	cmp r0, r5\n\
 	beq _0801CCF4\n\
 	adds r0, r4, #0\n\
-	bl get_guest_stats\n\
+	bl get_char_stats\n\
 	adds r5, r0, #0\n\
 	adds r0, r4, #0\n\
 	bl sub_0802B874\n\
@@ -1202,7 +1202,7 @@ _0801CCF4:\n\
 	rsbs r1, r1, #0\n\
 	cmp r0, r1\n\
 	beq _0801CD0E\n\
-	ldr r1, _0801CD1C @ =gGuestStats\n\
+	ldr r1, _0801CD1C @ =gCharStats\n\
 	movs r0, #0x6c\n\
 	muls r0, r7, r0\n\
 	adds r0, r0, r1\n\
@@ -1217,7 +1217,7 @@ _0801CD0E:\n\
 	pop {r1}\n\
 	bx r1\n\
 	.align 2, 0\n\
-_0801CD1C: .4byte gGuestStats\n\
+_0801CD1C: .4byte gCharStats\n\
     ");
 }
 #endif
@@ -1294,7 +1294,7 @@ _0801CDA6:\n\
 	cmp r1, #4\n\
 	bgt _0801CDF4\n\
 	lsrs r0, r2, #0x10\n\
-	bl get_guest_stats\n\
+	bl get_char_stats\n\
 	adds r4, r0, #0\n\
 	lsls r6, r6, #0x10\n\
 	asrs r2, r6, #0x10\n\
@@ -1338,10 +1338,10 @@ _0801CDF4:\n\
 
 u16 cmd_get_hp_pp(s32* sp) {
     u16 idx;
-    GuestStats* pm;
+    CharStats* pm;
 
     idx = scriptstack_peek(sp, 4);
-    pm = get_guest_stats(idx);
+    pm = get_char_stats(idx);
     scriptstack_set(sp, 3, pm->curHP);
     scriptstack_set(sp, 2, pm->maxHP);
     scriptstack_set(sp, 1, pm->curPP);
@@ -1379,7 +1379,7 @@ u16 cmd_set_ailment(s32* sp) {
     return 0;
 }
 
-u16 sub_0801CEE0(s32* sp) {
+u16 cmd_E3(s32* sp) {
     u16 sVar1;
     s16 idx;
 
@@ -1394,7 +1394,7 @@ u16 sub_0801CEE0(s32* sp) {
     return 0;
 }
 
-u16 sub_0801CF44(s32* sp) {
+u16 cmd_E5(s32* sp) {
     s32 idx;
     u16 stat;
     s32 value;
@@ -1414,7 +1414,7 @@ u16 sub_0801CF44(s32* sp) {
     return 0;
 }
 
-u16 sub_0801CFA4(s32* sp) {
+u16 cmd_E6(s32* sp) {
     u16 a;
     u16 b;
     u16 c;
@@ -1433,13 +1433,13 @@ u16 sub_0801CFA4(s32* sp) {
     return 0;
 }
 
-u16 sub_0801D038(s32* sp) {
+u16 cmd_E7(s32* sp) {
     u8 chr;
     u16 c;
     u32 idx;
     s32 b;
     Sprite* spr;
-    GuestStats* cd;
+    CharStats* cd;
     u64 t;
 
     idx = scriptstack_peek(sp, 1);
@@ -1449,7 +1449,7 @@ u16 sub_0801D038(s32* sp) {
     if (spr != 0) {
         chr = spr->character;
         if (chr < 5) {
-            cd = get_guest_stats(chr);
+            cd = get_char_stats(chr);
             c = sub_08001D2C(cd->charNo);
             if (c != 0) {
                 sub_0805BC8C(&t, cd->charNo, b);
@@ -1465,7 +1465,7 @@ u16 sub_0801D038(s32* sp) {
     return 0;
 }
 
-u16 sub_0801D0C8(s32* sp) {
+u16 cmd_E8(s32* sp) {
     u16 idx;
 
     idx = scriptstack_peek(sp, 0);
@@ -1497,7 +1497,7 @@ u16 sub_0801D0C8(s32* sp) {
     return 0;
 }
 
-u16 sub_0801D18C(s32* sp) {
+u16 cmd_EA(s32* sp) {
     u16 a;
 
     a = scriptstack_peek(sp, 4);
@@ -1518,17 +1518,17 @@ u16 sub_0801D18C(s32* sp) {
     return 0;
 }
 
-u16 sub_0801D24C(s32* sp) {
+u16 cmd_get_char_lvl(s32* sp) {
     u16 idx;
 
     idx = scriptstack_peek(sp, 0);
     if (idx > 0 && idx < 16) {
-        scriptstack_push(gGuestStats[idx].level);
+        scriptstack_push(gCharStats[idx].level);
     }
     return 0;
 }
 
-u16 sub_0801D280(s32* sp) {
+u16 cmd_heal_hp(s32* sp) {
     s32 idx;
     s32 hp;
     s32 v4;
@@ -1552,7 +1552,7 @@ u16 sub_0801D280(s32* sp) {
     return 0;
 }
 
-u16 sub_0801D2D4(s32* sp) {
+u16 cmd_heal_pp(s32* sp) {
     s32 idx;
     s32 pp;
     Sprite* spr;
@@ -1572,7 +1572,7 @@ u16 sub_0801D2D4(s32* sp) {
 }
 
 NAKED
-u16 sub_0801D320(s32* sp) {
+u16 cmd_set_psi(s32* sp) {
     asm_unified("\n\
 	push {r4, r5, r6, r7, lr}\n\
 	adds r4, r0, #0\n\
@@ -1602,7 +1602,7 @@ u16 sub_0801D320(s32* sp) {
 	ble _0801D374\n\
 	movs r0, #0x6c\n\
 	muls r0, r5, r0\n\
-	ldr r1, _0801D370 @ =gGuestStats\n\
+	ldr r1, _0801D370 @ =gCharStats\n\
 	adds r0, r0, r1\n\
 	lsrs r1, r3, #0x10\n\
 	lsls r2, r2, #0x18\n\
@@ -1610,7 +1610,7 @@ u16 sub_0801D320(s32* sp) {
 	bl sub_0805C300\n\
 	b _0801D412\n\
 	.align 2, 0\n\
-_0801D370: .4byte gGuestStats\n\
+_0801D370: .4byte gCharStats\n\
 _0801D374:\n\
 	movs r0, #1\n\
 	rsbs r0, r0, #0\n\
@@ -1618,13 +1618,13 @@ _0801D374:\n\
 	bne _0801D390\n\
 	movs r0, #0x6c\n\
 	muls r0, r5, r0\n\
-	ldr r1, _0801D38C @ =gGuestStats\n\
+	ldr r1, _0801D38C @ =gCharStats\n\
 	adds r0, r0, r1\n\
 	ldrb r1, [r0, #0x12]\n\
 	bl sub_0805C458\n\
 	b _0801D412\n\
 	.align 2, 0\n\
-_0801D38C: .4byte gGuestStats\n\
+_0801D38C: .4byte gCharStats\n\
 _0801D390:\n\
 	movs r0, #2\n\
 	rsbs r0, r0, #0\n\
@@ -1632,7 +1632,7 @@ _0801D390:\n\
 	bne _0801D412\n\
 	cmp r5, #2\n\
 	bne _0801D3D4\n\
-	ldr r0, _0801D3C0 @ =gGuestStats\n\
+	ldr r0, _0801D3C0 @ =gCharStats\n\
 	adds r0, #0xd8\n\
 	bl sub_0805C3B8\n\
 	ldr r1, _0801D3C4 @ =gSave\n\
@@ -1649,7 +1649,7 @@ _0801D390:\n\
 	ldr r0, _0801D3D0 @ =0x0000071E\n\
 	b _0801D3FE\n\
 	.align 2, 0\n\
-_0801D3C0: .4byte gGuestStats\n\
+_0801D3C0: .4byte gCharStats\n\
 _0801D3C4: .4byte gSave\n\
 _0801D3C8: .4byte 0x0000071A\n\
 _0801D3CC: .4byte 0x0000071B\n\
@@ -1657,7 +1657,7 @@ _0801D3D0: .4byte 0x0000071E\n\
 _0801D3D4:\n\
 	cmp r7, #4\n\
 	bne _0801D402\n\
-	ldr r0, _0801D420 @ =gGuestStats\n\
+	ldr r0, _0801D420 @ =gCharStats\n\
 	movs r1, #0xd8\n\
 	lsls r1, r1, #1\n\
 	adds r0, r0, r1\n\
@@ -1694,7 +1694,7 @@ _0801D412:\n\
 	pop {r1}\n\
 	bx r1\n\
 	.align 2, 0\n\
-_0801D420: .4byte gGuestStats\n\
+_0801D420: .4byte gCharStats\n\
 _0801D424: .4byte gSave\n\
 _0801D428: .4byte 0x00000734\n\
 _0801D42C: .4byte 0x00000735\n\
@@ -1703,7 +1703,7 @@ _0801D434: .4byte 0x000082B9\n\
     ");
 }
 
-s32 sub_0801D438(s32* sp) {
+s32 cmd_F2(s32* sp) {
     u16 idx;
     s16 x[4];
 
@@ -1714,7 +1714,7 @@ s32 sub_0801D438(s32* sp) {
     x[3] = scriptstack_peek(sp, 0);
 
     if (idx > 0 && idx < 0x10) {
-        GuestStats* s = &gGuestStats[idx];
+        CharStats* s = &gCharStats[idx];
         if (x[0] == -1 || x[1] == -1 || x[2] == -1 || x[3] == -1)
             sub_0802A74C(s, x);
         else
@@ -1723,12 +1723,12 @@ s32 sub_0801D438(s32* sp) {
     return 0;
 }
 
-u16 sub_0801D4DC(s32* sp) {
+u16 cmd_F8(s32* sp) {
     scriptstack_push(gScript._8450);
     return 0;
 }
 
-u16 sub_0801D4FC(s32* sp) {
+u16 cmd_F9(s32* sp) {
     u16 cnt = 0;
     for (u16 i = 0; i < 10; ++i) {
         u16 bit = 1;
@@ -1743,7 +1743,7 @@ u16 sub_0801D4FC(s32* sp) {
     return 0;
 }
 
-u16 sub_0801D544(s32* sp) {
+u16 cmd_FA(s32* sp) {
     u16 cnt = 0;
 
     for (u16 i = 0; i < 10; ++i) {
@@ -1763,9 +1763,9 @@ u16 sub_0801D544(s32* sp) {
     return 0;
 }
 
-u16 sub_0801D594(s32* sp) {
+u16 cmd_put_ocho(s32* sp) {
     u16 cnt;
-    GuestStats* cd;
+    CharStats* cd;
 
     gSave._78d = 0;
     gSave._78c = 0;
@@ -1774,7 +1774,7 @@ u16 sub_0801D594(s32* sp) {
     sub_08001ACC(gSave._78e, 0x80);
     cnt = 0;
     for (u16 i = 0; i < gScript.party_count; ++i) {
-        cd = get_guest_stats(i);
+        cd = get_char_stats(i);
         if (cd->charNo != 0 && sub_08001D2C(cd->charNo) != 0) {
             sub_0802A7F8(cd, cnt);
             cnt++;
@@ -1783,14 +1783,14 @@ u16 sub_0801D594(s32* sp) {
     return 0;
 }
 
-u16 sub_0801D620(s32* sp) {
-    GuestStats* cd;
+u16 cmd_get_ocho(s32* sp) {
+    CharStats* cd;
 
     if (sub_0802A98C() == 0) {
         scriptstack_push(1);
     } else {
         for (u16 i = 0; i < gScript.party_count; ++i) {
-            cd = get_guest_stats(i);
+            cd = get_char_stats(i);
             if (cd->charNo != 0 && sub_08001D2C(cd->charNo) != 0) {
                 sub_0802A8D4(cd);
             }
@@ -1804,17 +1804,17 @@ u16 sub_0801D620(s32* sp) {
     return 0;
 }
 
-u16 sub_0801D698(s32* sp) {
+u16 cmd_FF(s32* sp) {
     u16 tmp;
     u16 idx;
-    GuestStats* pCVar3;
+    CharStats* pCVar3;
 
     tmp = scriptstack_peek(sp, 1);
     idx = scriptstack_peek(sp, 0);
     if (gGoodsInfo[idx].type == Key) {
-        scriptstack_push(gSave._10[idx]);
+        scriptstack_push(gSave.key_items[idx]);
     } else if (tmp < 5) {
-        u16 tmp2 = sub_0802A3D0(get_guest_stats(tmp), idx);
+        u16 tmp2 = sub_0802A3D0(get_char_stats(tmp), idx);
         scriptstack_push(tmp2);
     }
     return 0;
@@ -2901,7 +2901,7 @@ u16 cmd_cam_follow_sprite(s32* sp) {
 }
 
 NAKED
-u16 sub_0801E2FC(s32* sp) {
+u16 cmd_4A(s32* sp) {
     asm_unified("\n\
 	push {r4, r5, r6, r7, lr}\n\
 	sub sp, #4\n\
@@ -3008,7 +3008,7 @@ _0801E3CC: .4byte 0x000121BB\n\
     ");
 }
 
-u16 sub_0801E3D0(s32* sp) {
+u16 cmd_4B(s32* sp) {
     scriptstack_set(sp, 3, gScript._5980);
     scriptstack_set(sp, 2, gScript._5982);
     scriptstack_set(sp, 1, gScript._5984);
@@ -3016,7 +3016,7 @@ u16 sub_0801E3D0(s32* sp) {
     return 0;
 }
 
-u16 sub_0801E430(s32* sp) {
+u16 cmd_4C(s32* sp) {
     s32 v2;
     u16 v3;
     u16 v4;
@@ -3034,7 +3034,7 @@ u16 sub_0801E430(s32* sp) {
 }
 
 NAKED
-u16 sub_0801E48C(s32* sp) {
+u16 cmd_4D(s32* sp) {
     asm_unified("\n\
 	push {r4, r5, r6, lr}\n\
 	sub sp, #4\n\
@@ -3118,7 +3118,7 @@ _0801E526:\n\
     ");
 }
 
-u16 sub_0801E530(s32* sp) {
+u16 cmd_4E(s32* sp) {
     u16 v2;
     u16 v3;
     u16 v4;
@@ -3133,12 +3133,12 @@ u16 sub_0801E530(s32* sp) {
     return 0;
 }
 
-u16 sub_0801E588(s32* sp) {
+u16 cmd_4F(s32* sp) {
     gScript._67c0 = scriptstack_peek(sp, 0);
     return 0;
 }
 
-u16 sub_0801E5A8(s32* sp) {
+u16 cmd_CC(s32* sp) {
     u16 temp;
 
     temp = scriptstack_peek(sp, 0);
@@ -3147,7 +3147,7 @@ u16 sub_0801E5A8(s32* sp) {
     return 0;
 }
 
-u16 sub_0801E5D8(s32* sp) {
+u16 cmd_CD(s32* sp) {
     s32 temp;
 
     temp = scriptstack_peek(sp, 0);
@@ -3159,7 +3159,7 @@ u16 sub_0801E5D8(s32* sp) {
     return 0;
 }
 
-u16 sub_0801E614(s32* sp) {
+u16 cmd_E0(s32* sp) {
     u16 uVar1;
     s16 iVar2;
     s16 uVar3;
@@ -3183,7 +3183,7 @@ u16 sub_0801E614(s32* sp) {
 }
 
 NAKED
-u16 sub_0801E688(s32* sp) {
+u16 cmd_EB(s32* sp) {
     asm_unified("\n\
 	push {r4, r5, lr}\n\
 	movs r1, #0\n\
@@ -3266,7 +3266,7 @@ _0801E728: .4byte 0x000067C2\n\
     ");
 }
 
-u16 sub_0801E72C(s32* sp) {
+u16 cmd_F0(s32* sp) {
     u16 temp;
 
     temp = scriptstack_peek(sp, 0);
@@ -3274,7 +3274,7 @@ u16 sub_0801E72C(s32* sp) {
     return 0;
 }
 
-u16 sub_0801E744(s32* sp) {
+u16 cmd_F1(s32* sp) {
     u16 v1;
     u16 v3[2];
 

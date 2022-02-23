@@ -20,7 +20,7 @@ Base* sub_08061E20(Base* b, u32 c) {
     return b;
 }
 
-Guest::Guest(u16 id) : _f8(id), mStats(&gGuestStats[id]), mLevelInfo(&gLevelInfo[id]) {
+Guest::Guest(u16 id) : _f8(id), mStats(&gCharStats[id]), mLevelInfo(&gLevelInfo[id]) {
     setupStats();
 
     registerClock(BattleSingleton::get(), RoundBegin(), gUnknown_080F6D8C);
