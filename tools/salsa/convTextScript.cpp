@@ -4,6 +4,8 @@
 #include <sstream>
 #include "salsaText.hpp"
 
+using namespace text;
+
 std::vector<TextBlockType> makeSpec() {
     std::vector<TextBlockType> spec;
     for (int i = 0; i < 1001; i++) {

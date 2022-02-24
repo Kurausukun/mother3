@@ -1,5 +1,7 @@
 #include "salsaText.hpp"
 
+namespace text {
+
 DynamicBlockHeader::DynamicBlockHeader() = default;
 
 DynamicBlockHeader::DynamicBlockHeader(u32 start_headers, u32 start_msgs)
@@ -127,7 +129,7 @@ void DynamicMessageBlock::write(SalsaStream* stream) {
     }
 }
 
-void DynamicMessageBlock::appendMessage(const std::string& message) {
+void DynamicMessageBlock::append(const std::string& message) {
     // messages should be in order
 
     if (message == "[DUP]") {
@@ -152,3 +154,5 @@ void DynamicMessageBlock::appendMessage(const std::string& message) {
     }
     messages.emplace_back(Message{converted_string});
 }
+
+} // namespace text

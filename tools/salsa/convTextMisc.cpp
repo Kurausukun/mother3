@@ -3,6 +3,8 @@
 #include <tuple>
 #include "salsaText.hpp"
 
+using namespace text;
+
 static const std::array<std::pair<std::string, TextBlockType>, 12> s_block_map = {{
     {"room_descriptions.txt", TextBlockType::DynamicMsg},
     {"item_names.txt", TextBlockType::FixedMsg},

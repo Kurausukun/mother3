@@ -16,6 +16,8 @@ void salsa_maintext_write(SalsaPath& src, SalsaStream& dest);
 void salsa_misctext_read(SalsaStream& src, SalsaPath& dest);
 void salsa_misctext_write(SalsaPath& src, SalsaStream& dest);
 
+namespace text {
+
 struct CCode {
     std::string name;
     u32 argcount;
@@ -87,7 +89,7 @@ struct MessageBlock {
     virtual u32 headerSize() const = 0;
     virtual u32 messagesSize() const = 0;
     virtual void write(SalsaStream* stream) = 0;
-    virtual void appendMessage(const std::string& message) = 0;
+    virtual void append(const std::string& message) = 0;
 
     u16 num_msg;
     std::vector<Message> messages;
@@ -191,7 +193,7 @@ struct DynamicMessageBlock : public MessageBlock {
 
     void write(SalsaStream* stream) override;
 
-    void appendMessage(const std::string& message) override;
+    void append(const std::string& message) override;
 
     std::vector<MessageHeader> message_headers;
 };
@@ -205,7 +207,7 @@ struct FixedMessageBlock : public MessageBlock {
     u32 messagesSize() const override { return message_len * 2 * messages.size(); }
 
     void write(SalsaStream* stream) override;
-    void appendMessage(const std::string& message) override;
+    void append(const std::string& message) override;
 
     u16 message_len;
 };
@@ -221,3 +223,5 @@ static std::string hex_string(u32 value) {
     ss << std::hex << value;
     return ss.str();
 }
+
+} // namespace text

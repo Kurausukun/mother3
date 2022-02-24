@@ -1,5 +1,7 @@
 #include "salsaText.hpp"
 
+namespace text {
+
 FixedBlockHeader::FixedBlockHeader() = default;
 FixedBlockHeader::FixedBlockHeader(u32 start_msgs) : start_messages(start_msgs) {}
 FixedBlockHeader::FixedBlockHeader(SalsaStream* stream) : start_messages(stream->read<u32>()) {}
@@ -61,7 +63,7 @@ void FixedMessageBlock::write(SalsaStream* stream) {
     }
 }
 
-void FixedMessageBlock::appendMessage(const std::string& message) {
+void FixedMessageBlock::append(const std::string& message) {
     // convert the message into a vector<u16>
     // then "store" inside a string to be compatible with our Message struct
     auto converted_raw = Message::parse(message);
@@ -72,3 +74,5 @@ void FixedMessageBlock::appendMessage(const std::string& message) {
     assert(converted_string.size() <= message_len * 2);
     messages.emplace_back(Message{converted_string});
 }
+
+} // namespace text
