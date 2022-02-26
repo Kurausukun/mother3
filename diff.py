@@ -1129,6 +1129,30 @@ def search_map_file(
                 # At this time it is recommended to always use -o when running the diff
                 # script as this mode does not make use of the ram-rom conversion.
                 return objfile, rom
+    elif project.map_format == "agbcc":
+        lines = contents.split("\n")
+
+        try:
+            cur_objfile = None
+            ram_to_rom = None
+            cands = []
+            last_line = ""
+            for line in lines:
+                if line.startswith(" .text"):
+                    cur_objfile = line.split()[3]
+                if line.endswith(" " + fn_name):
+                    ram = int(line.split()[0], 0)
+                    if cur_objfile is not None and ram is not None:
+                        cands.append((cur_objfile, ram - 0x08000000))
+                last_line = line
+        except Exception as e:
+            traceback.print_exc()
+            fail(f"Internal error while parsing map file")
+
+        if len(cands) > 1:
+            fail(f"Found multiple occurrences of function {fn_name} in map file.")
+        if len(cands) == 1:
+            return cands[0]
     else:
         fail(f"Linker map format {project.map_format} unrecognised.")
     return None, None

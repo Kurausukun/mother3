@@ -990,7 +990,7 @@ sub_0805F624: @ 0x0805F624
 	adds r5, r0, #0
 	subs r0, r5, #4
 	adds r1, r5, #4
-	bl sub_08070660
+	bl randS32
 	movs r5, #0
 	cmp r0, #0
 	blt _0805F654
@@ -3769,8 +3769,8 @@ _08060B4A:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_08060B54
-sub_08060B54: @ 0x08060B54
+	thumb_func_start tellExperience
+tellExperience: @ 0x08060B54
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -3778,7 +3778,7 @@ sub_08060B54: @ 0x08060B54
 	sub sp, #0x44
 	adds r7, r0, #0
 	mov sb, r1
-	bl sub_08060CF8
+	bl metalMonkeyCheck
 	mov r0, sb
 	cmp r0, #0
 	bgt _08060B6E
@@ -3960,8 +3960,8 @@ _08060CE8:
 	bx r0
 	.align 2, 0
 
-	thumb_func_start sub_08060CF8
-sub_08060CF8: @ 0x08060CF8
+	thumb_func_start metalMonkeyCheck
+metalMonkeyCheck: @ 0x08060CF8
 	push {r4, r5, r6, lr}
 	sub sp, #0x38
 	bl sub_080725E8
@@ -4029,7 +4029,7 @@ sub_08060D78: @ 0x08060D78
 	mov r0, sp
 	bl sub_08061024
 	mov r0, sp
-	bl sub_0806105C
+	bl tellPresent
 	mov r0, sp
 	movs r1, #2
 	bl sub_08061048
@@ -4423,8 +4423,8 @@ sub_08061048: @ 0x08061048
 	.align 2, 0
 _08061058: .4byte vt_09F490E8
 
-	thumb_func_start sub_0806105C
-sub_0806105C: @ 0x0806105C
+	thumb_func_start tellPresent
+tellPresent: @ 0x0806105C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -4505,7 +4505,7 @@ sub_0806105C: @ 0x0806105C
 	adds r0, r6, #0
 	adds r1, r5, #0
 	add r2, sp, #4
-	bl sub_0806124C
+	bl druggedPresentCheck
 	add r0, sp, #4
 	adds r1, r6, #0
 	bl sub_0806E2E8
@@ -4521,7 +4521,7 @@ sub_0806105C: @ 0x0806105C
 	movs r2, #1
 	bl sub_080735E0
 	adds r0, r5, #0
-	bl sub_080612FC
+	bl reqInventorySlot
 	adds r4, r0, #0
 	cmp r4, #0
 	beq _080611D2
@@ -4581,7 +4581,7 @@ sub_0806105C: @ 0x0806105C
 _080611D2:
 	adds r0, r6, #0
 	adds r1, r5, #0
-	bl sub_08061338
+	bl tellPlayerInventoryFull
 	add r1, sp, #0x4c
 	strb r4, [r1]
 	strb r4, [r1, #1]
@@ -4615,11 +4615,11 @@ _08061210:
 	b _0806122A
 _0806121C:
 	adds r0, r5, #0
-	bl sub_08061400
+	bl throwAwayItem
 	b _0806122A
 _08061224:
 	adds r0, r5, #0
-	bl sub_0806176C
+	bl checkGiveUpItem
 _0806122A:
 	ldr r0, [r5, #0x28]
 	cmp r0, #2
@@ -4639,8 +4639,8 @@ _08061230:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_0806124C
-sub_0806124C: @ 0x0806124C
+	thumb_func_start druggedPresentCheck
+druggedPresentCheck: @ 0x0806124C
 	push {r4, r5, r6, lr}
 	sub sp, #0x28
 	adds r6, r0, #0
@@ -4719,8 +4719,8 @@ _080612F2:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080612FC
-sub_080612FC: @ 0x080612FC
+	thumb_func_start reqInventorySlot
+reqInventorySlot: @ 0x080612FC
 	push {r4, r5, lr}
 	movs r5, #0
 	b _08061328
@@ -4744,7 +4744,7 @@ _08061302:
 _08061326:
 	adds r5, #1
 _08061328:
-	bl sub_080729DC
+	bl getPartyCount
 	cmp r5, r0
 	blt _08061302
 	movs r0, #0
@@ -4753,13 +4753,13 @@ _08061332:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_08061338
-sub_08061338: @ 0x08061338
+	thumb_func_start tellPlayerInventoryFull
+tellPlayerInventoryFull: @ 0x08061338
 	push {r4, r5, r6, lr}
 	sub sp, #0x28
 	adds r6, r0, #0
 	adds r4, r1, #0
-	bl sub_080729DC
+	bl getPartyCount
 	cmp r0, #1
 	bgt _080613A0
 	movs r0, #0
@@ -4841,8 +4841,8 @@ _080613F6:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_08061400
-sub_08061400: @ 0x08061400
+	thumb_func_start throwAwayItem
+throwAwayItem: @ 0x08061400
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -5243,8 +5243,8 @@ _08061752:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_0806176C
-sub_0806176C: @ 0x0806176C
+	thumb_func_start checkGiveUpItem
+checkGiveUpItem: @ 0x0806176C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -5295,7 +5295,7 @@ sub_0806176C: @ 0x0806176C
 	add r4, sp, #0x34
 	adds r0, r4, #0
 	mov r1, sl
-	bl sub_0806188C
+	bl tellGaveUpItem
 	add r1, sp, #0x68
 	strb r7, [r1]
 	strb r7, [r1, #1]
@@ -5371,13 +5371,13 @@ _0806187A:
 	bx r0
 	.align 2, 0
 
-	thumb_func_start sub_0806188C
-sub_0806188C: @ 0x0806188C
+	thumb_func_start tellGaveUpItem
+tellGaveUpItem: @ 0x0806188C
 	push {r4, r5, r6, lr}
 	sub sp, #0x28
 	adds r6, r0, #0
 	adds r4, r1, #0
-	bl sub_080729DC
+	bl getPartyCount
 	cmp r0, #1
 	bgt _080618F4
 	movs r0, #0

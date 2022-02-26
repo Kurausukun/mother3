@@ -1561,8 +1561,8 @@ sub_0806BB34: @ 0x0806BB34
 	str r1, [r0]
 	bx lr
 
-	thumb_func_start sub_0806BB48
-sub_0806BB48: @ 0x0806BB48
+	thumb_func_start bgengine_updateScrollHorizontal
+bgengine_updateScrollHorizontal: @ 0x0806BB48
 	push {r4, r5, r6, r7, lr}
 	sub sp, #4
 	adds r6, r0, #0

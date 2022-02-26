@@ -1,16 +1,19 @@
 #include <cstring>
 #include <iostream>
 #include "salsa.hpp"
+#include "salsaLogic.hpp"
 #include "salsaText.hpp"
 
 std::unordered_map<std::string, SalsaRead> read_map = {
     {"mainscript.salsa", &salsa_maintext_read},
     {"misctext.salsa", &salsa_misctext_read},
+    {"logic.salsa", &salsa_logic_read},
 };
 
 std::unordered_map<std::string, SalsaWrite> write_map = {
     {"mainscript.salsa", &salsa_maintext_write},
     {"misctext.salsa", &salsa_misctext_write},
+    {"logic.salsa", &salsa_logic_write},
 };
 
 int main(int argc, char** argv) {
@@ -53,7 +56,7 @@ int main(int argc, char** argv) {
             ++dest_filename;
         }
         if (read_map.find(dest_filename) == read_map.end()) {
-            std::cerr << "Unknown file type: " << dest_filename << std::endl;
+            std::cerr << "Don't know how to extract " << dest_filename << std::endl;
             exit(1);
         }
         read_map[dest_filename](src, dest);
@@ -68,7 +71,7 @@ int main(int argc, char** argv) {
             ++src_filename;
         }
         if (write_map.find(src_filename) == write_map.end()) {
-            std::cerr << "Unknown file type: " << src_filename << std::endl;
+            std::cerr << "Don't know how to build " << src_filename << std::endl;
             exit(1);
         }
         write_map[src_filename](src, dest);

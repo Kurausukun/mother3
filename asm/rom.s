@@ -3239,8 +3239,8 @@ sub_080029F8: @ 0x080029F8
 	.align 2, 0
 _08002A2C: .4byte gSave
 
-	thumb_func_start sub_08002A30
-sub_08002A30: @ 0x08002A30
+	thumb_func_start get_giftbox_flag
+get_giftbox_flag: @ 0x08002A30
 	adds r2, r0, #0
 	lsls r2, r2, #0x10
 	ldr r0, _08002A54 @ =gSave
@@ -6065,7 +6065,7 @@ sub_08003EF8: @ 0x08003EF8
 	ldrb r0, [r0]
 	cmp r0, #3
 	bne _08003F48
-	ldr r1, _08003F44 @ =gUnknown_020047E0
+	ldr r1, _08003F44 @ =gEncounter
 	ldrb r0, [r1]
 	cmp r0, #1
 	bne _08003F48
@@ -6092,7 +6092,7 @@ sub_08003EF8: @ 0x08003EF8
 	b _08003F4C
 	.align 2, 0
 _08003F40: .4byte gUnknown_02005080
-_08003F44: .4byte gUnknown_020047E0
+_08003F44: .4byte gEncounter
 _08003F48:
 	bl sub_08000E30
 _08003F4C:
@@ -6202,7 +6202,7 @@ sub_08004044: @ 0x08004044
 	ldrb r0, [r0]
 	cmp r0, #1
 	bne _08004066
-	ldr r0, _08004084 @ =gUnknown_020047E0
+	ldr r0, _08004084 @ =gEncounter
 	ldrb r0, [r0]
 	cmp r0, #0
 	bne _08004066
@@ -6223,7 +6223,7 @@ _0800407A:
 	bx r0
 	.align 2, 0
 _08004080: .4byte gUnknown_020051E4
-_08004084: .4byte gUnknown_020047E0
+_08004084: .4byte gEncounter
 _08004088: .4byte gUnknown_02004100
 
 	thumb_func_start sub_0800408C
@@ -12718,7 +12718,7 @@ _08007682:
 	ldrb r0, [r0]
 	cmp r0, #3
 	bne _08007720
-	ldr r1, _080076DC @ =gUnknown_020047E0
+	ldr r1, _080076DC @ =gEncounter
 	ldrb r0, [r1]
 	cmp r0, #1
 	bne _08007720
@@ -12744,7 +12744,7 @@ _080076CC: .4byte 0x0000CA40
 _080076D0: .4byte 0x0000CA41
 _080076D4: .4byte gUnknown_03005314
 _080076D8: .4byte 0x00009488
-_080076DC: .4byte gUnknown_020047E0
+_080076DC: .4byte gEncounter
 _080076E0:
 	ldr r5, _08007700 @ =gUnknown_03005314
 	ldr r1, _08007704 @ =gUnknown_0200F088
@@ -13954,7 +13954,7 @@ _08008138:
 	adds r6, r0, #0
 _0800814A:
 	adds r0, r4, #0
-	bl get_guest_stats
+	bl get_char_stats
 	adds r1, r0, #0
 	ldrb r0, [r1]
 	cmp r0, #0
@@ -28036,7 +28036,7 @@ _0800EF44:
 	movs r3, #1
 _0800EF64:
 	adds r0, r4, #0
-	bl sub_08025340
+	bl object_interact
 	ldr r0, _0800EF78 @ =gScript
 	ldr r1, _0800EF7C @ =0x00008494
 	adds r0, r0, r1
@@ -28092,7 +28092,7 @@ sub_0800EF9C: @ 0x0800EF9C
 	movs r3, #1
 _0800EFD6:
 	mov r0, ip
-	bl sub_08025340
+	bl object_interact
 	ldrb r0, [r4]
 	lsls r0, r0, #0x1f
 	lsrs r0, r0, #0x1f
@@ -28139,7 +28139,7 @@ _0800F020:
 	lsrs r2, r2, #0x17
 	adds r0, r3, #0
 	movs r3, #0
-	bl sub_08025340
+	bl object_interact
 	ldrb r0, [r4]
 	lsls r0, r0, #0x1f
 	lsrs r0, r0, #0x1f
@@ -28293,7 +28293,7 @@ _0800F14E:
 	adds r0, r4, #0
 	movs r1, #6
 	movs r2, #0
-	bl sub_08025340
+	bl object_interact
 	ldr r1, _0800F16C @ =0x00008494
 	adds r0, r6, r1
 	b _0800F27E
@@ -28387,7 +28387,7 @@ _0800F1FA:
 	lsls r3, r3, #0x1e
 	lsrs r3, r3, #0x1f
 	adds r0, r4, #0
-	bl sub_08025340
+	bl object_interact
 	b _0800F278
 	.align 2, 0
 _0800F21C: .4byte 0x0000829B
@@ -28436,7 +28436,7 @@ _0800F26E:
 	adds r0, r4, #0
 	movs r1, #6
 	movs r2, #0
-	bl sub_08025340
+	bl object_interact
 _0800F278:
 	ldr r0, _0800F288 @ =gScript
 	ldr r1, _0800F290 @ =0x00008494
@@ -28494,7 +28494,7 @@ _0800F2B0:
 	adds r0, r4, #0
 	movs r1, #8
 	movs r3, #0
-	bl sub_08025340
+	bl object_interact
 	movs r0, #1
 	b _0800F30E
 	.align 2, 0
@@ -30960,7 +30960,7 @@ _0801063C:
 	strb r0, [r5, #0xa]
 	str r4, [r5]
 	ldrh r0, [r4, #0xc]
-	bl sub_08002A30
+	bl get_giftbox_flag
 	mov r2, r8
 	ands r2, r0
 	lsls r2, r2, #1
@@ -39563,7 +39563,7 @@ sub_080148D4: @ 0x080148D4
 	strb r0, [r2]
 	bl sub_08037958
 	bl sub_0805B7D4
-	ldr r1, _0801495C @ =gUnknown_020047E0
+	ldr r1, _0801495C @ =gEncounter
 	adds r1, #0x66
 	strb r0, [r1]
 	ldrb r3, [r1]
@@ -39584,7 +39584,7 @@ _0801494C: .4byte gUnknown_080C2A9C
 _08014950: .4byte 0x000121B8
 _08014954: .4byte 0x000121C0
 _08014958: .4byte 0x000121BB
-_0801495C: .4byte gUnknown_020047E0
+_0801495C: .4byte gEncounter
 _08014960:
 	cmp r3, #2
 	beq _08014980
@@ -41693,7 +41693,7 @@ _08015AE4:
 	strb r1, [r0]
 	bl sub_0802691C
 	bl sub_0805B7D4
-	ldr r1, _08015B70 @ =gUnknown_020047E0
+	ldr r1, _08015B70 @ =gEncounter
 	adds r5, r1, #0
 	adds r5, #0x66
 	strb r0, [r5]
@@ -41723,7 +41723,7 @@ _08015B60: .4byte gUnknown_02016028
 _08015B64: .4byte 0x000121B8
 _08015B68: .4byte 0x00011D9C
 _08015B6C: .4byte 0x000121C0
-_08015B70: .4byte gUnknown_020047E0
+_08015B70: .4byte gEncounter
 _08015B74:
 	cmp r1, #2
 	beq _08015B94
@@ -41755,7 +41755,7 @@ _08015B9C:
 	ands r0, r1
 	cmp r0, #0
 	bne _08015BAE
-	ldr r1, _08015BCC @ =gUnknown_020047E0
+	ldr r1, _08015BCC @ =gEncounter
 	movs r0, #3
 	strb r0, [r1]
 _08015BAE:
@@ -41769,7 +41769,7 @@ _08015BB2:
 	.align 2, 0
 _08015BC4: .4byte 0x000121C1
 _08015BC8: .4byte gScript
-_08015BCC: .4byte gUnknown_020047E0
+_08015BCC: .4byte gEncounter
 _08015BD0:
 	ldr r7, _08015CB8 @ =0x00005962
 	adds r0, r4, r7

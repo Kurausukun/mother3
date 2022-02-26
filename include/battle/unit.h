@@ -11,8 +11,8 @@ inline s32 clampS32(s32 value, s32 min, s32 max) {
     return value;
 }
 
-struct Object {
-    virtual ~Object() {}
+struct UnitObject {
+    virtual ~UnitObject() {}
 
     virtual void object_8() {}
     virtual void object_10() = 0;
@@ -31,12 +31,12 @@ struct Object {
 };
 
 struct ID {
-    u32 value;
+    u32 dead;
 };
 
 struct UnitCmd;
 
-class Unit : public Base, public Object {
+class Unit : public Base, public UnitObject {
 public:
     Unit();
     virtual ~Unit();
@@ -59,8 +59,8 @@ public:
     virtual void unit_a8();
     virtual void unit_b0();
     virtual void unit_b8();
-    virtual bool unit_c0();
-    virtual bool unit_c8();
+    virtual bool isAlive();
+    virtual bool isDead();
     virtual u8 unit_d0();
 
     virtual void unit_d8(u32 a1);
@@ -123,21 +123,21 @@ public:
     virtual s32 unit_260(u16 a1);
     virtual u32 unit_268(u32 a1);
     virtual u32 unit_270(u32 a1);
-    virtual void unit_278(u16 a1);
+    virtual void removeStatus(u16 a1);
     virtual void unit_280();
     virtual s32 unit_288() const;
     virtual u16 unit_290(s32 a1);
     virtual UnitCmd* unit_298(s32 a1);
-    virtual bool unit_2a0(u16 a1);
+    virtual bool hasStatus(u16 a1);
     virtual s32 unit_2a8(u16 a1);
     virtual s32 setAilment(u16 a1);
     virtual s32 unit_2b8(u16 a1);
 
     void nullsub_106();
     void nullsub_27();
-    void sub_08074BA4();
-    void sub_08074C50();
-    bool sub_08074C60(u32 a1, u8 a2);
+    void kill();
+    void revive();
+    bool setDead(u32 a1, u8 a2);
     void sub_08075840();
     void sub_08075400();
     bool flagStuff(u16 idx);

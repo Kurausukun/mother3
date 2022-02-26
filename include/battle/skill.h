@@ -29,10 +29,10 @@ public:
     virtual void skill_f8();
     virtual u8 skill_100(u32);
     virtual u8 skill_108(u32);
-    virtual void skill_110();
+    virtual void onUse(Unit* target);
     virtual void skill_118();
     virtual void skill_120();
-    virtual void skill_128();
+    virtual void onFail();
     virtual void skill_130();
     virtual void skill_138();
     virtual void skill_140();

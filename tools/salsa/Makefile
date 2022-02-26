@@ -1,8 +1,8 @@
 CC = g++
 .PHONY: all clean
 
-SRCS = convTextMisc.cpp convTextScript.cpp main.cpp salsaText.cpp salsaTextDynamic.cpp salsaTextFixed.cpp salsaTextMap.cpp
-HEADERS = salsaBinary.hpp salsaText.hpp salsa.hpp
+SRCS = convLogic.cpp convTextMisc.cpp convTextScript.cpp main.cpp salsaLogic.cpp salsaText.cpp salsaTextDynamic.cpp salsaTextFixed.cpp salsaTextMap.cpp
+HEADERS = salsaBinary.hpp salsaContainer.hpp salsaLogic.hpp salsaText.hpp salsa.hpp
 
 all: salsa
 	@:

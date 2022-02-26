@@ -4,7 +4,7 @@
 #include "battle/unit.h"
 #include "battle/guestSkill.h"
 
-struct GuestStats;
+struct CharStats;
 
 class Guest : public Unit {
 public:
@@ -60,11 +60,11 @@ public:
 
     u16 _f8;
     u16 _fa;
-    GuestStats* mStats;
+    CharStats* mStats;
     void* mLevelInfo;
 };
 
-struct GuestStats {
+struct CharStats {
     u8 charNo;
     u8 spriteNo;
     u8 name[16];
@@ -86,11 +86,11 @@ struct GuestStats {
     u8 body;
     u8 head;
     u8 other[4];
-    u32 inventory_lyt;
+    u32 equip_lyt;
     u8 inventory[16];
     u16 item_timers[16];
 };
-extern GuestStats gGuestStats[];
+extern CharStats gCharStats[];
 
 struct LevelInfo {
     u8 filler[324];
@@ -98,12 +98,12 @@ struct LevelInfo {
 extern LevelInfo gLevelInfo[];
 
 extern "C" {
-GuestStats* get_guest_stats(u32 idx);
-void sub_0802A7F8(GuestStats*, u32);
-void sub_0802A8D4(GuestStats*);
-u16 sub_0802A3D0(GuestStats*, u32);
-void sub_0802A74C(GuestStats*, s16*);
-void sub_0802A670(GuestStats*, s16*);
+CharStats* get_char_stats(u32 idx);
+void sub_0802A7F8(CharStats*, u32);
+void sub_0802A8D4(CharStats*);
+u16 sub_0802A3D0(CharStats*, u32);
+void sub_0802A74C(CharStats*, s16*);
+void sub_0802A670(CharStats*, s16*);
 }
 
 SINGLETON(Guest);

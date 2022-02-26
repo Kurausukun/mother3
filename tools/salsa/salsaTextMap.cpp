@@ -1,5 +1,7 @@
 #include "salsaText.hpp"
 
+namespace text {
+
 const std::unordered_map<u16, CCode> cc_map = {
     {0x0000, {"NUL", 0}},      {0xD389, {"UNK_D389", 0}},    {0xD84D, {"UNK_D84D", 0}},
     {0xFF00, {"@", 0}},        {0xFF01, {"BREAK", 0}},       {0xFF02, {"WAIT2", 0}},
@@ -629,3 +631,5 @@ const std::vector<const char*> jp_charmap = {
     "?",    "?",    "?",    "?",    "?",    "?",    "?",    "?",    "?",    "?",    "?",    "?",
     "?",    "?",    "?",    "?",    "?",    "?",    "?",    "?",    "?",    "?",    "?",    "?",
 };
+
+} // namespace text

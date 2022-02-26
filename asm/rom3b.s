@@ -2281,7 +2281,7 @@ _080BF062:
 	movs r1, #0x1a
 	bl _call_via_r2
 	ldr r0, _080BF0F8 @ =0x0000062B
-	bl sub_08070824
+	bl playSoundMaybe
 	movs r0, #0xa6
 	adds r1, r5, #0
 	adds r2, r5, #0
@@ -2915,7 +2915,7 @@ sub_080BF5A0: @ 0x080BF5A0
 	adds r5, r1, #0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	cmp r0, #0x31
 	bgt _080BF5BE
 	adds r0, r4, #0
@@ -3184,7 +3184,7 @@ sub_080BF7A4: @ 0x080BF7A4
 	adds r6, r1, #0
 	movs r0, #0
 	movs r1, #9
-	bl sub_08070660
+	bl randS32
 	cmp r0, #9
 	bls _080BF7BA
 	b _080BFADC
@@ -3214,7 +3214,7 @@ _080BF7F0:
 	bl sub_080730FC
 	movs r0, #0x50
 	movs r1, #0x8c
-	bl sub_08070660
+	bl randS32
 	adds r1, r0, #0
 	adds r0, r6, #0
 	movs r2, #1
@@ -3241,7 +3241,7 @@ _080BF82C:
 	bl sub_080730FC
 	movs r0, #0x14
 	movs r1, #0x32
-	bl sub_08070660
+	bl randS32
 	adds r1, r0, #0
 	adds r0, r6, #0
 	movs r2, #1
@@ -3808,7 +3808,7 @@ sub_080BFCAC: @ 0x080BFCAC
 	adds r4, r0, #0
 	bl sub_08078784
 	ldr r0, _080BFD30 @ =0x0000055E
-	bl sub_08070824
+	bl playSoundMaybe
 	ldr r1, [r4, #0x1c]
 	movs r0, #0xb0
 	lsls r0, r0, #1
@@ -3886,7 +3886,7 @@ sub_080BFD48: @ 0x080BFD48
 	adds r7, r1, #0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	cmp r0, #0x59
 	bgt _080BFE38
 	ldr r3, [r5, #0x1c]
@@ -3913,7 +3913,7 @@ sub_080BFD48: @ 0x080BFD48
 	movs r1, #2
 	bl sub_0806E308
 	ldr r0, _080BFE34 @ =0x00000452
-	bl sub_08070824
+	bl playSoundMaybe
 	movs r0, #0
 	mov r8, r0
 	add r1, sp, #0x10
@@ -3924,7 +3924,7 @@ sub_080BFD48: @ 0x080BFD48
 _080BFDAC:
 	movs r0, #8
 	movs r1, #0x10
-	bl sub_08070660
+	bl randS32
 	adds r4, r0, #0
 	adds r0, r7, #0
 	adds r1, r4, #0
@@ -3945,7 +3945,7 @@ _080BFDAC:
 	bl sub_08073198
 	movs r0, #0xc
 	movs r1, #0xf
-	bl sub_08070660
+	bl randS32
 	bl sub_0807068C
 	add r8, r4
 	subs r6, #1
@@ -4009,11 +4009,11 @@ _080BFE38:
 	lsls r0, r0, #2
 	movs r1, #0xd7
 	lsls r1, r1, #2
-	bl sub_08070660
+	bl randS32
 	adds r1, r0, #0
 	adds r0, r7, #0
 	movs r2, #1
-	bl sub_08073734
+	bl hitPlayer
 	ldr r1, [r5, #0x1c]
 	movs r2, #0xb0
 	lsls r2, r2, #1
@@ -4305,7 +4305,7 @@ sub_080C0084: @ 0x080C0084
 	adds r0, r4, #0
 	movs r1, #1
 	movs r2, #1
-	bl sub_08073734
+	bl hitPlayer
 	b _080C00CE
 _080C00AE:
 	ldr r1, [r4, #0x1c]
@@ -4321,7 +4321,7 @@ _080C00AE:
 	subs r1, #1
 	adds r0, r4, #0
 	movs r2, #1
-	bl sub_08073734
+	bl hitPlayer
 _080C00CE:
 	pop {r4}
 	pop {r0}
@@ -5055,7 +5055,7 @@ _080C0752:
 	bne _080C0858
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	cmp r0, #1
 	bgt _080C0858
 	ldr r1, [r6, #0x1c]
@@ -5448,7 +5448,7 @@ sub_080C0AF8: @ 0x080C0AF8
 	adds r4, r0, #0
 	movs r0, #1
 	movs r1, #3
-	bl sub_08070660
+	bl randS32
 	adds r1, r0, #0
 	adds r0, r4, #0
 	movs r2, #1

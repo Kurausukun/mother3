@@ -5,7 +5,7 @@ extern "C" bool sub_08072938(Unit* u);
 extern "C" bool sub_08072D58(Unit* u);
 extern "C" s32 sub_08072A88();
 extern "C" Unit* sub_08072AA4(s32);
-extern "C" s32 sub_080729DC();
+extern "C" s32 getPartyCount();
 extern "C" Unit* sub_080729F8(s32);
 extern "C" s32 sub_08072EA8();
 extern "C" Unit* sub_08072EC4(s32);
@@ -157,7 +157,7 @@ bool UnitTarget::attackdata_68() {
         }
         break;
     case 3:
-        for (int i = 0; i < sub_080729DC(); i++) {
+        for (int i = 0; i < getPartyCount(); i++) {
             addTarget(sub_080729F8(i));
         }
         break;

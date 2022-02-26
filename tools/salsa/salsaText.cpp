@@ -1,6 +1,8 @@
 #include "salsaText.hpp"
 #include <cassert>
 
+namespace text {
+
 std::unique_ptr<TextBank> TextBank::dump(SalsaStream* stream, uintptr_t offset,
                                          const std::vector<TextBlockType>& blocktypes) {
     auto bank = std::make_unique<TextBank>();
@@ -105,8 +107,7 @@ TextBank TextBank::parse(SalsaStream* stream, const std::vector<TextBlockType>& 
             bank.block_count++;
         }
         auto& cur_block = bank.blocks[block_idx];
-
-        cur_block->appendMessage(message);
+        cur_block->append(message);
     }
 
     // fill in the rest of the blocks per spec
@@ -199,7 +200,7 @@ void TextBank::parseSingleBlockFile(SalsaStream* stream, TextBlockType blocktype
     while (std::getline(*stream, line)) {
         auto message_idx = std::stoi(line.substr(0, line.find(':')));
         auto message = line.substr(line.find(':') + 1);
-        cur_block->appendMessage(message);
+        cur_block->append(message);
     }
 }
 
@@ -352,3 +353,5 @@ std::pair<u32, u32> readU8Char(const std::string& s) {
     }
     return {num_chrs, result};
 };
+
+} // namespace text

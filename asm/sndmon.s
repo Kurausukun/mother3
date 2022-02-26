@@ -270,7 +270,7 @@ _080651EC:
 	strh r4, [r7, #0x2c]
 	ldr r1, _08065294 @ =0x000003FF
 	movs r0, #0
-	bl sub_08070660
+	bl randS32
 	strh r0, [r7, #0x2e]
 	movs r0, #0x11
 	strh r0, [r7, #0x30]

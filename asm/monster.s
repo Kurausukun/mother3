@@ -752,7 +752,7 @@ _08080F86:
 	bl sub_080735E0
 _08080FC0:
 	adds r0, r4, #0
-	bl sub_08074BA4__4Unit
+	bl kill__4Unit
 	add sp, #4
 	pop {r4}
 	pop {r0}
@@ -802,7 +802,7 @@ _08080FFE:
 	bgt _08081042
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	cmp r0, r4
 	bge _08081042
 	mov r8, r4

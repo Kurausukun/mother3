@@ -23,7 +23,7 @@ Unit::Unit() : _44(0), _54(0) {
     _3e = 0;
     _40 = 0;
     _d8 = 0;
-    _f4.value = 0;
+    _f4.dead = 0;
 
     u32 value1 = 100;
     for (int i = 0; i < 5; ++i) {
@@ -50,9 +50,9 @@ END_NONMATCH
 
 void Unit::nullsub_106() {}
 
-void Unit::sub_08074BA4() {
+void Unit::kill() {
     unit_108();
-    sub_08074C60(1, 0);
+    setDead(1, 0);
     for (int i = 0; i < unit_288(); ++i) {
         UnitCmd* c = unit_298(i);
         if (c->x_138() == 1) {
@@ -62,24 +62,24 @@ void Unit::sub_08074BA4() {
     }
 }
 
-void Unit::sub_08074C50() {
-    sub_08074C60(0, 0);
+void Unit::revive() {
+    setDead(0, 0);
 }
 
-bool Unit::sub_08074C60(u32 a1, u8 a2) {
-    if (_f4.value != a1 || a2 == 1) {
-        _f4.value = a1;
+bool Unit::setDead(u32 a1, u8 a2) {
+    if (_f4.dead != a1 || a2 == 1) {
+        _f4.dead = a1;
         return true;
     }
     return false;
 }
 
-bool Unit::unit_c0() {
-    return _f4.value == 0;
+bool Unit::isAlive() {
+    return _f4.dead == 0;
 }
 
-bool Unit::unit_c8() {
-    return _f4.value == 1;
+bool Unit::isDead() {
+    return _f4.dead == 1;
 }
 
 u8 Unit::unit_d0() {
@@ -309,8 +309,8 @@ bool Unit::flagStuff(u16 idx) {
 
 ASM_FUNC("asm/non_matching/unit/unit_270__4UnitUi.inc", u32 Unit::unit_270(u32 a1));
 
-void Unit::unit_278(u16 a1) {
-    while (unit_2a0(a1) == 1) {
+void Unit::removeStatus(u16 a1) {
+    while (hasStatus(a1) == 1) {
         unit_270(a1);
     }
 }
@@ -337,7 +337,7 @@ NONMATCH("asm/non_matching/unit/unit_298__4Uniti.inc", UnitCmd* Unit::unit_298(s
 }
 END_NONMATCH
 
-bool Unit::unit_2a0(u16 a1) {
+bool Unit::hasStatus(u16 a1) {
     return unit_2a8(a1) < unit_288();
 }
 

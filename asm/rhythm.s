@@ -607,8 +607,8 @@ _080729D4:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080729DC
-sub_080729DC: @ 0x080729DC
+	thumb_func_start getPartyCount
+getPartyCount: @ 0x080729DC
 	push {lr}
 	bl sub_080728B8
 	ldr r1, [r0, #0x1c]
@@ -2327,8 +2327,8 @@ _0807372C:
 	pop {r0}
 	bx r0
 
-	thumb_func_start sub_08073734
-sub_08073734: @ 0x08073734
+	thumb_func_start hitPlayer
+hitPlayer: @ 0x08073734
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -2529,7 +2529,7 @@ _0807389A:
 	bne _08073902
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	cmp r0, #0x27
 	bgt _08073902
 	adds r0, r7, #0

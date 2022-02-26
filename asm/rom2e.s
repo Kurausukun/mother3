@@ -2879,7 +2879,7 @@ _0808A38C:
 _0808A392:
 	movs r0, #0
 	movs r1, #7
-	bl sub_08069454
+	bl randU32
 	adds r2, r0, #0
 	adds r0, r4, #0
 	adds r1, r5, #0
@@ -3540,7 +3540,7 @@ _0808A8B4:
 _0808A8BA:
 	movs r0, #0
 	movs r1, #7
-	bl sub_08069454
+	bl randU32
 	adds r2, r0, #0
 	adds r0, r4, #0
 	adds r1, r5, #0
@@ -4603,7 +4603,7 @@ sub_0808B0D8: @ 0x0808B0D8
 	strh r0, [r1]
 	strh r0, [r1, #2]
 	movs r1, #0x3f
-	bl sub_08070660
+	bl randS32
 	adds r1, r5, #0
 	adds r1, #0x98
 	strb r0, [r1]
@@ -5133,7 +5133,7 @@ _0808B532:
 	adds r4, r6, r4
 	ldr r0, [sp, #0xbc]
 	mov r1, sb
-	bl sub_08082B1C
+	bl tellTurnAction
 	ldr r2, [r5, #4]
 	adds r0, r4, #0
 	ldr r1, [sp, #0xbc]
@@ -7151,7 +7151,7 @@ _0808C5BE:
 	adds r0, r4, #0
 	bl sub_0808C7CC
 	movs r0, #0xd0
-	bl sub_08070824
+	bl playSoundMaybe
 	b _0808C612
 _0808C5EE:
 	ldr r1, [r4, #0x1c]
@@ -7168,7 +7168,7 @@ _0808C5EE:
 	adds r0, r4, #0
 	bl sub_0808C7CC
 	movs r0, #0xd0
-	bl sub_08070824
+	bl playSoundMaybe
 _0808C612:
 	pop {r4, r5}
 	pop {r0}
@@ -7213,7 +7213,7 @@ _0808C63A:
 	adds r0, r4, #0
 	bl sub_0808C7CC
 	movs r0, #0xd0
-	bl sub_08070824
+	bl playSoundMaybe
 	b _0808C68E
 _0808C66A:
 	ldr r1, [r4, #0x1c]
@@ -7230,7 +7230,7 @@ _0808C66A:
 	adds r0, r4, #0
 	bl sub_0808C7CC
 	movs r0, #0xd0
-	bl sub_08070824
+	bl playSoundMaybe
 _0808C68E:
 	pop {r4, r5}
 	pop {r0}
@@ -7264,7 +7264,7 @@ sub_0808C694: @ 0x0808C694
 	adds r0, r4, #0
 	bl sub_0808C7CC
 	movs r0, #0xda
-	bl sub_08070824
+	bl playSoundMaybe
 _0808C6D0:
 	pop {r4}
 	pop {r0}
@@ -7305,7 +7305,7 @@ _0808C6FA:
 	adds r0, r4, #0
 	bl sub_0808C7CC
 	movs r0, #0xd3
-	bl sub_08070824
+	bl playSoundMaybe
 	b _0808C752
 _0808C720:
 	ldr r1, [r4, #0x1c]
@@ -7323,13 +7323,13 @@ _0808C738:
 	adds r0, r4, #0
 	bl sub_0808C7CC
 	movs r0, #0xd2
-	bl sub_08070824
+	bl playSoundMaybe
 	b _0808C752
 _0808C746:
 	adds r0, r4, #0
 	bl sub_0808C7CC
 	movs r0, #0xd3
-	bl sub_08070824
+	bl playSoundMaybe
 _0808C752:
 	pop {r4}
 	pop {r0}
@@ -7369,7 +7369,7 @@ _0808C77A:
 	adds r0, r4, #0
 	bl sub_0808C7CC
 	movs r0, #0xd3
-	bl sub_08070824
+	bl playSoundMaybe
 	b _0808C7C4
 _0808C7A0:
 	ldr r1, [r4, #0x1c]
@@ -7386,7 +7386,7 @@ _0808C7A0:
 	adds r0, r4, #0
 	bl sub_0808C7CC
 	movs r0, #0xd3
-	bl sub_08070824
+	bl playSoundMaybe
 _0808C7C4:
 	pop {r4}
 	pop {r0}
@@ -9621,7 +9621,7 @@ sub_0808DA04: @ 0x0808DA04
 	adds r0, r4, #0
 	bl sub_0808DBD4
 	movs r0, #0xd0
-	bl sub_08070824
+	bl playSoundMaybe
 _0808DA3E:
 	pop {r4}
 	pop {r0}
@@ -9654,7 +9654,7 @@ sub_0808DA44: @ 0x0808DA44
 	adds r0, r4, #0
 	bl sub_0808DBD4
 	movs r0, #0xd0
-	bl sub_08070824
+	bl playSoundMaybe
 _0808DA7E:
 	pop {r4}
 	pop {r0}
@@ -9687,7 +9687,7 @@ sub_0808DA84: @ 0x0808DA84
 	adds r0, r4, #0
 	bl sub_0808DBD4
 	movs r0, #0xd1
-	bl sub_08070824
+	bl playSoundMaybe
 _0808DABE:
 	pop {r4}
 	pop {r0}
@@ -9720,7 +9720,7 @@ sub_0808DAC4: @ 0x0808DAC4
 	adds r0, r4, #0
 	bl sub_0808DBD4
 	movs r0, #0xd1
-	bl sub_08070824
+	bl playSoundMaybe
 _0808DAFE:
 	pop {r4}
 	pop {r0}
@@ -9753,7 +9753,7 @@ sub_0808DB04: @ 0x0808DB04
 	adds r0, r4, #0
 	bl sub_0808DBD4
 	movs r0, #0xda
-	bl sub_08070824
+	bl playSoundMaybe
 _0808DB3E:
 	pop {r4}
 	pop {r0}
@@ -9786,13 +9786,13 @@ sub_0808DB44: @ 0x0808DB44
 	adds r0, r4, #0
 	bl sub_0808DBD4
 	movs r0, #0xd2
-	bl sub_08070824
+	bl playSoundMaybe
 	b _0808DB8C
 _0808DB80:
 	adds r0, r4, #0
 	bl sub_0808DBD4
 	movs r0, #0xd3
-	bl sub_08070824
+	bl playSoundMaybe
 _0808DB8C:
 	pop {r4}
 	pop {r0}
@@ -9826,7 +9826,7 @@ sub_0808DB94: @ 0x0808DB94
 	adds r0, r4, #0
 	bl sub_0808DBD4
 	movs r0, #0xd3
-	bl sub_08070824
+	bl playSoundMaybe
 _0808DBCE:
 	pop {r4}
 	pop {r0}
@@ -10680,7 +10680,7 @@ sub_0808E2DC: @ 0x0808E2DC
 	movs r0, #1
 	str r0, [r1, #0x2c]
 	movs r0, #0xd3
-	bl sub_08070824
+	bl playSoundMaybe
 _0808E2FC:
 	pop {r0}
 	bx r0
