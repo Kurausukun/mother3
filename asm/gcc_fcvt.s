@@ -354,8 +354,8 @@ _08069448: .4byte 0x000009BC
 _0806944C: .4byte 0x9D2C5680
 _08069450: .4byte 0xEFC60000
 
-	thumb_func_start sub_08069454
-sub_08069454: @ 0x08069454
+	thumb_func_start randU32
+randU32: @ 0x08069454
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	subs r4, r1, r5

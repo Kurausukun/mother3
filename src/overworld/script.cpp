@@ -1,4 +1,5 @@
 #include "overworld/script.h"
+#include "battle/goods.h"
 #include "battle/guest.h"
 #include "functions.h"
 
@@ -1386,7 +1387,7 @@ u16 cmd_E3(s32* sp) {
     idx = scriptstack_peek(sp, 0);
     if (idx == -1) {
         scriptstack_push(gScript._82ae);
-    } else if (gGoodsInfo[idx].type == Key || sub_0802A124(idx) != 0) {
+    } else if (gGoodsInfo[idx].item_type == Key || sub_0802A124(idx) != 0) {
         scriptstack_push(1);
     } else {
         scriptstack_push(0);
@@ -1811,7 +1812,7 @@ u16 cmd_FF(s32* sp) {
 
     tmp = scriptstack_peek(sp, 1);
     idx = scriptstack_peek(sp, 0);
-    if (gGoodsInfo[idx].type == Key) {
+    if (gGoodsInfo[idx].item_type == Key) {
         scriptstack_push(gSave.key_items[idx]);
     } else if (tmp < 5) {
         u16 tmp2 = sub_0802A3D0(get_char_stats(tmp), idx);
@@ -2604,28 +2605,26 @@ u16 cmd_41(s32* sp) {
     Object* spr;
     u32 v5;
     u16 i;
-    u16 y[2];
-    u16 x[2];
+    Size y;
+    Size x;
 
     v2 = scriptstack_peek(sp, 1);
     v3 = scriptstack_peek(sp, 0);
     spr = get_obj(v2);
     if (spr) {
-        u16* p = y;
-
-        sub_08036BEC(spr, y);
-        sub_08010528(x, y[0], p[1]);
-        sub_0801059C(x);
+        sub_08036BEC(spr, &y);
+        sub_08010528(&x, y.w, y.h);
+        sub_0801059C(&x);
         switch (gScript.state_1) {
         case 2:
         case 3:
-            v5 = sub_0801A218(x);
+            v5 = sub_0801A218(&x);
             sub_0801084C();
             break;
         case 5:
             for (i = 0; i <= 2; ++i) {
                 if ((i || gScript._f << 31) && (i != 1 || (gScript._11 << 0x1c) >= 0))
-                    sub_08018988(i, v3, x);
+                    sub_08018988(i, v3, &x);
             }
             break;
         }
@@ -3588,12 +3587,6 @@ _0801EB0C: .4byte 0x0000FFFF\n\
 	");
 }
 
-struct Size {
-    u16 w;
-    s16 h;
-};
-void sub_08036EB8(Object*, u32, Size*, u32, u32, u32);
-
 u16 cmd_54(s32* sp) {
     register u32 idx asm("r6");
     Size size;
@@ -3623,4 +3616,349 @@ u16 cmd_54(s32* sp) {
     }
     return 0;
 }
+
+u16 cmd_55(s32* sp) {
+    u16 a, b;
+    s32 idx, idx2;
+
+    idx = scriptstack_peek(sp, 3);
+    idx2 = scriptstack_peek(sp, 2);
+    b = scriptstack_peek(sp, 1);
+    a = scriptstack_peek(sp, 0);
+
+    Object* obj = get_obj(idx);
+    if (!obj) {
+        return 0;
+    }
+
+    Object* obj2 = get_obj(idx2);
+    if (!obj2) {
+        return 0;
+    }
+    if (idx == -2) {
+        obj->_87 = 3;
+    }
+
+    Size sz;
+    sub_08036BEC(obj2, &sz);
+
+    if (b == 0) {
+        if (obj->_0 > obj2->_0) {
+            sz.w += obj->_a6 + obj2->_a6;
+        } else if (obj->_0 < obj2->_0) {
+            sz.w -= obj->_a6 + obj2->_a6;
+        }
+    } else {
+        if (obj->_2 > obj2->_2) {
+            sz.h += obj->_a8 + obj2->_a8;
+        } else if (obj->_2 < obj2->_2) {
+            sz.h -= obj->_a8 + obj2->_a8;
+        }
+    }
+
+    if (a < 6) {
+        sub_08036EB8(obj, 0, &sz, a, 2, 0);
+    }
+    return 0;
+}
+
+u16 cmd_56(s32* sp) {
+    s32 idx = scriptstack_peek(sp, 3);
+    Size sz;
+    sz.w = scriptstack_peek(sp, 2);
+    sz.h = scriptstack_peek(sp, 1);
+    u16 a = scriptstack_peek(sp, 0);
+
+    Object* obj = get_obj(idx);
+    if (obj == 0) {
+        return 0;
+    }
+    if (idx == -2) {
+        obj->_87 = 3;
+    }
+    sz.w += 8;
+    sz.h += 8;
+    sub_08035DFC(obj, a, &sz);
+    return 0;
+}
+
+u16 cmd_57(s32* sp) {
+    s32 idx = scriptstack_peek(sp, 2);
+    u16 b = scriptstack_peek(sp, 1);
+    u32 a = scriptstack_peek(sp, 0);
+    Object* obj = get_obj(idx);
+    if (obj == 0) {
+        return 0;
+    }
+    if (idx == -2) {
+        obj->_87 = 3;
+    }
+
+    Size sz;
+    sub_08036BEC(obj, &sz);
+
+    // matching hack
+    u32 tmp = 0;
+    tmp = 0xf;
+
+    if (b < 6) {
+        sub_08036EB8(obj, 0, &sz, b, 2, 0);
+        if (a < 8) {
+            obj->_c7_1 = a;
+        } else {
+            obj->_c7_1 = 8;
+        }
+    }
+    return 0;
+}
+
+u16 cmd_58(s32* sp) {
+    s32 idx = scriptstack_peek(sp, 2);
+    Object* obj = get_obj(idx);
+    if (obj == 0) {
+        return 0;
+    }
+    obj->_ae = scriptstack_peek(sp, 1);
+    obj->_b0 = 0;
+    obj->_b2 = scriptstack_peek(sp, 0);
+    return 0;
+}
+
+u16 cmd_59(s32* sp) {
+    sub_08029EF0();
+    sub_08035170(1);
+    return 0;
+}
+
+u16 cmd_5A(s32* sp) {
+    s32 idx = scriptstack_peek(sp, 1);
+    u16 a = scriptstack_peek(sp, 0);
+    if (idx == -2) {
+        switch (a) {
+        case 0:
+            gScript._82b6 = 0;
+            break;
+        case 1:
+            gScript._82b6 = 1;
+            break;
+        case 2 ... 7:
+            sub_08033B20(a);
+            break;
+        }
+    } else {
+        Object* obj = get_obj(idx);
+        if (obj != 0 && a < 17) {
+            sub_08033620(obj->character, a);
+        }
+    }
+    return 0;
+}
+
+NAKED
+u16 cmd_5B(s32* sp) {
+	asm_unified("\n\
+	push {r4, r5, r6, r7, lr}\n\
+	mov r7, sb\n\
+	mov r6, r8\n\
+	push {r6, r7}\n\
+	sub sp, #0xc\n\
+	adds r5, r0, #0\n\
+	mov r4, sp\n\
+	mov r0, sp\n\
+	bl sub_0801A530\n\
+	mov r0, sp\n\
+	ldrh r1, [r0]\n\
+	ldr r0, _0801EF8C @ =0xFFFF0000\n\
+	mov sb, r0\n\
+	ldr r0, [sp, #4]\n\
+	mov r2, sb\n\
+	ands r0, r2\n\
+	orrs r0, r1\n\
+	str r0, [sp, #4]\n\
+	ldrh r0, [r4, #2]\n\
+	add r4, sp, #4\n\
+	strh r0, [r4, #2]\n\
+	movs r0, #0xf0\n\
+	strh r0, [r4, #4]\n\
+	movs r0, #0xa0\n\
+	strh r0, [r4, #6]\n\
+	adds r0, r5, #0\n\
+	movs r1, #2\n\
+	bl scriptstack_peek\n\
+	adds r6, r0, #0\n\
+	adds r0, r5, #0\n\
+	movs r1, #1\n\
+	bl scriptstack_peek\n\
+	lsls r0, r0, #0x10\n\
+	lsrs r0, r0, #0x10\n\
+	mov r8, sb\n\
+	mov r3, r8\n\
+	ands r7, r3\n\
+	orrs r7, r0\n\
+	adds r0, r5, #0\n\
+	movs r1, #0\n\
+	bl scriptstack_peek\n\
+	lsls r0, r0, #0x10\n\
+	ldr r1, _0801EF90 @ =0x0000FFFF\n\
+	ands r7, r1\n\
+	orrs r7, r0\n\
+	adds r0, r6, #0\n\
+	bl get_obj\n\
+	adds r2, r0, #0\n\
+	cmp r2, #0\n\
+	beq _0801F03A\n\
+	lsls r0, r7, #0x10\n\
+	asrs r1, r0, #0x10\n\
+	mov r3, r8\n\
+	asrs r0, r3, #0x10\n\
+	cmp r1, r0\n\
+	bne _0801EF94\n\
+	ldrh r1, [r2, #0x14]\n\
+	lsrs r1, r1, #1\n\
+	ldrh r0, [r4]\n\
+	subs r0, r0, r1\n\
+	lsls r0, r0, #0x10\n\
+	lsrs r0, r0, #0x10\n\
+	b _0801EFD6\n\
+	.align 2, 0\n\
+_0801EF8C: .4byte 0xFFFF0000\n\
+_0801EF90: .4byte 0x0000FFFF\n\
+_0801EF94:\n\
+	movs r0, #2\n\
+	rsbs r0, r0, #0\n\
+	cmp r1, r0\n\
+	bne _0801EFB4\n\
+	ldrh r1, [r4, #4]\n\
+	ldrh r0, [r4]\n\
+	adds r1, r1, r0\n\
+	ldrh r0, [r2, #0x14]\n\
+	lsrs r0, r0, #1\n\
+	adds r1, r1, r0\n\
+	lsls r1, r1, #0x10\n\
+	lsrs r1, r1, #0x10\n\
+	mov r3, r8\n\
+	ands r7, r3\n\
+	orrs r7, r1\n\
+	b _0801EFDA\n\
+_0801EFB4:\n\
+	movs r0, #3\n\
+	rsbs r0, r0, #0\n\
+	cmp r1, r0\n\
+	bne _0801EFCC\n\
+	ldrh r0, [r2]\n\
+	lsls r0, r0, #0x10\n\
+	asrs r0, r0, #0x14\n\
+	lsls r0, r0, #0x10\n\
+	lsrs r0, r0, #0x10\n\
+	mov r1, r8\n\
+	ands r7, r1\n\
+	b _0801EFD8\n\
+_0801EFCC:\n\
+	adds r0, r7, #0\n\
+	adds r0, #8\n\
+	lsls r0, r0, #0x10\n\
+	lsrs r0, r0, #0x10\n\
+	mov r3, sb\n\
+_0801EFD6:\n\
+	ands r7, r3\n\
+_0801EFD8:\n\
+	orrs r7, r0\n\
+_0801EFDA:\n\
+	asrs r3, r7, #0x10\n\
+	adds r1, r3, #0\n\
+	movs r0, #1\n\
+	rsbs r0, r0, #0\n\
+	cmp r1, r0\n\
+	bne _0801EFF0\n\
+	ldrh r0, [r2, #0x16]\n\
+	lsrs r0, r0, #1\n\
+	ldrh r1, [r4, #2]\n\
+	subs r1, r1, r0\n\
+	b _0801F004\n\
+_0801EFF0:\n\
+	movs r0, #2\n\
+	rsbs r0, r0, #0\n\
+	cmp r1, r0\n\
+	bne _0801F014\n\
+	ldrh r1, [r4, #2]\n\
+	ldrh r0, [r4, #6]\n\
+	adds r1, r1, r0\n\
+	ldrh r0, [r2, #0x16]\n\
+	lsrs r0, r0, #1\n\
+	adds r1, r1, r0\n\
+_0801F004:\n\
+	lsls r1, r1, #0x10\n\
+	ldr r0, _0801F010 @ =0x0000FFFF\n\
+	ands r7, r0\n\
+	orrs r7, r1\n\
+	b _0801F030\n\
+	.align 2, 0\n\
+_0801F010: .4byte 0x0000FFFF\n\
+_0801F014:\n\
+	movs r0, #3\n\
+	rsbs r0, r0, #0\n\
+	cmp r1, r0\n\
+	bne _0801F024\n\
+	ldrh r0, [r2, #2]\n\
+	lsls r0, r0, #0x10\n\
+	asrs r0, r0, #0x14\n\
+	b _0801F028\n\
+_0801F024:\n\
+	adds r0, r3, #0\n\
+	adds r0, #8\n\
+_0801F028:\n\
+	lsls r0, r0, #0x10\n\
+	ldr r1, _0801F04C @ =0x0000FFFF\n\
+	ands r7, r1\n\
+	orrs r7, r0\n\
+_0801F030:\n\
+	lsls r0, r7, #4\n\
+	strh r0, [r2]\n\
+	asrs r0, r7, #0x10\n\
+	lsls r0, r0, #4\n\
+	strh r0, [r2, #2]\n\
+_0801F03A:\n\
+	movs r0, #0\n\
+	add sp, #0xc\n\
+	pop {r3, r4}\n\
+	mov r8, r3\n\
+	mov sb, r4\n\
+	pop {r4, r5, r6, r7}\n\
+	pop {r1}\n\
+	bx r1\n\
+	.align 2, 0\n\
+_0801F04C: .4byte 0x0000FFFF\n\
+	");
+}
+
+u16 cmd_5C(s32* sp) {
+    s32 idx = scriptstack_peek(sp, 2);
+    Object* obj = get_obj(idx);
+    if (obj == 0) {
+        return 0;
+    }
+    Size sz;
+    sub_08036BEC(obj, &sz);
+    scriptstack_set(sp, 1, (s16)sz.w + 8);
+    scriptstack_set(sp, 0, sz.h + 8);
+    return 0;
+}
+
+u16 cmd_set_member_sprite(s32* sp) {
+    s32 idx = scriptstack_peek(sp, 1);
+    u16 a = scriptstack_peek(sp, 0);
+    Object* obj = get_obj(idx);
+    if (obj == 0) {
+        return 0;
+    }
+    if (a < 8) {
+        if (idx == -2) {
+            sub_08036B34(a);
+        } else {
+            sub_08036A1C(obj->character, a);
+        }
+    }
+    return 0;
+}
+
 }

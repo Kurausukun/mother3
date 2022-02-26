@@ -171,12 +171,12 @@ _0807639E:
 	ldr r1, [r5, #4]
 	subs r1, #1
 	movs r0, #0
-	bl sub_08069454
+	bl randU32
 	adds r4, r0, #0
 	ldr r1, [r5, #4]
 	subs r1, #1
 	movs r0, #0
-	bl sub_08069454
+	bl randU32
 	ldr r1, [r5, #8]
 	lsls r4, r4, #2
 	adds r4, r4, r1
@@ -247,7 +247,7 @@ _0807641C:
 	ldr r1, [r0, #4]
 	subs r1, #1
 	movs r0, #0
-	bl sub_08070660
+	bl randS32
 	adds r1, r0, #0
 	ldr r2, [r4, #4]
 	adds r0, r5, #0

@@ -170,7 +170,7 @@ sub_08062448: @ 0x08062448
 	cmp r0, #1
 	bne _080624C8
 	movs r5, #0
-	ldr r0, _080624C0 @ =gUnknown_020047E0
+	ldr r0, _080624C0 @ =gEncounter
 	ldrb r1, [r0, #5]
 	cmp r5, r1
 	blt _0806246E
@@ -218,7 +218,7 @@ _0806247A:
 	blt _0806247A
 	b _0806258C
 	.align 2, 0
-_080624C0: .4byte gUnknown_020047E0
+_080624C0: .4byte gEncounter
 _080624C4: .4byte 0xFFFFFF00
 _080624C8:
 	bl sub_08072628
@@ -273,7 +273,7 @@ _08062526:
 	cmp r0, #1
 	bne _0806258C
 	movs r5, #0
-	ldr r0, _0806259C @ =gUnknown_020047E0
+	ldr r0, _0806259C @ =gEncounter
 	ldrb r1, [r0, #5]
 	cmp r5, r1
 	bge _0806258C
@@ -327,7 +327,7 @@ _0806258C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0806259C: .4byte gUnknown_020047E0
+_0806259C: .4byte gEncounter
 _080625A0: .4byte 0xFFFFFF00
 
 	thumb_func_start sub_080625A4
@@ -2547,7 +2547,7 @@ _0806352E:
 	adds r0, r0, r2
 	ldr r1, [r1, #4]
 	bl _call_via_r1
-	ldr r4, _0806370C @ =gUnknown_020047E0
+	ldr r4, _0806370C @ =gEncounter
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	ldrb r1, [r4, #5]
@@ -2598,7 +2598,7 @@ _080636FC: .4byte _vt.3Unk
 _08063700: .4byte _vt.7Suspend
 _08063704: .4byte _vt.7UnitDie
 _08063708: .4byte _vt.6Resume
-_0806370C: .4byte gUnknown_020047E0
+_0806370C: .4byte gEncounter
 
 	thumb_func_start sub_08063710
 sub_08063710: @ 0x08063710
@@ -2778,7 +2778,7 @@ _080637CC:
 	adds r0, r0, r2
 	ldr r1, [r1, #4]
 	bl _call_via_r1
-	ldr r1, _080638B8 @ =gUnknown_020047E0
+	ldr r1, _080638B8 @ =gEncounter
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	adds r1, #0x3d
@@ -2812,7 +2812,7 @@ _080638A8: .4byte _vt.3Unk
 _080638AC: .4byte _vt.7Suspend
 _080638B0: .4byte _vt.7UnitDie
 _080638B4: .4byte _vt.6Resume
-_080638B8: .4byte gUnknown_020047E0
+_080638B8: .4byte gEncounter
 
 	thumb_func_start sub_080638BC
 sub_080638BC: @ 0x080638BC

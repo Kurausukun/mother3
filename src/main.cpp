@@ -41,7 +41,7 @@ struct struct_020047E0 {
     u8 filler[0x30];
     u8 _3c;
 };
-extern struct_020047E0 gUnknown_020047E0;
+extern struct_020047E0 gEncounter;
 
 extern "C" void sub_08000E0C();
 extern "C" void sub_08000E30();
@@ -234,8 +234,8 @@ void sub_080003D8(void) {
 }
 
 void sub_080004D8() {
-    if (gUnknown_020047E0._0 == 3) {
-        gUnknown_020047E0._3c = 1;
+    if (gEncounter._0 == 3) {
+        gEncounter._3c = 1;
         sub_080037F0(0);
         sub_08026C28();
         gUnknown_02004848._0 = 5;
@@ -244,21 +244,21 @@ void sub_080004D8() {
     }
 
     init_battle();
-    gUnknown_020047E0._4 = 0;
+    gEncounter._4 = 0;
 
-    if (gUnknown_020047E0._0 == 2) {
+    if (gEncounter._0 == 2) {
         gUnknown_02004848._0 = 9;
         gUnknown_02004100 = 4;
         sub_080037E4();
         return;
     }
 
-    switch (gUnknown_020047E0._3c) {
+    switch (gEncounter._3c) {
     case 1:
         sub_08026C28();
         break;
     case 3:
-        if (gUnknown_020047E0._0 == 1 && gUnknown_020047E0._a == 23) {
+        if (gEncounter._0 == 1 && gEncounter._a == 23) {
             sub_08026CD0();
         } else {
             if (gSave._708 == 0) {
@@ -468,7 +468,7 @@ void init_save() {
         gSave.event_flags[i] = 0;
     }
     for (i = 0; i < 0x40; ++i) {
-        gSave._340[i] = 0;
+        gSave.shop_flags[i] = 0;
         gSave._380[i] = 0;
         gSave._3c0[i] = 0;
     }

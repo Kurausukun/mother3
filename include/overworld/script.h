@@ -75,6 +75,8 @@ struct Script {
     u8 _9486_2 : 1;
     u8 _9487;
     u32 _9488;
+    u8 _948c[2184];
+    u8 battle_mode;
 };
 Script gScript;
 

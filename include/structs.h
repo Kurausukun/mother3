@@ -27,31 +27,33 @@ enum EquipFlags {
     _80,
 };
 
-struct ItemData {
-    u32 id;
-    ItemType type;
-    u16 key_item_flags;
-    u16 sell_price;
-    EquipFlags equip_flags;
-    s32 hp_increase;
-    s32 pp_increase;
-    s8 off_increase;
-    s8 def_increase;
-    s8 iq_increase;
-    s8 spd_increase;
-    s8 knd_increase;
-    u8 status_protect[22];
-    u8 elem_protect[5];
-    u8 attack_type[5];
-    u8 gen_info[40];
-    u32 battle_info;
-};
+// struct ItemData {
+//     u32 id;
+//     ItemType type;
+//     u16 key_item_flags;
+//     u16 sell_price;
+//     EquipFlags equip_flags;
+//     s32 hp_increase;
+//     s32 pp_increase;
+//     s8 off_increase;
+//     s8 def_increase;
+//     s8 iq_increase;
+//     s8 spd_increase;
+//     s8 knd_increase;
+//     u8 status_protect[22];
+//     u8 elem_protect[5];
+//     u8 attack_type[5];
+//     u8 gen_info[40];
+//     u32 battle_info;
+// };
 
 struct Object {
-    u8 filler[0x20];
+    s16 _0;
+    s16 _2;
+    u8 filler[0x1c];
     u16 _20;
     u16 _22;
-    u8 _24[0x34 - 0x24];
+    u8 _24[0x10];
     u32 speed;
     u8 _38[0x4d];
     u8 character;
@@ -60,11 +62,21 @@ struct Object {
     u16 _88;
     u8 _8a;
     u8 _8b;
-    u8 _8c[0x30];
+    u8 _8c[26];
+    u16 _a6;
+    u16 _a8;
+    u8 _aa[4];
+    u16 _ae;
+    u16 _b0;
+    u16 _b2;
+    u8 _b4[8];
     u8 _bc_0 : 2;
     u8 _bc_1 : 3;
     u8 _bc_2 : 3;
-    u8 _bd[0xd];
+    u8 _bd[10];
+    u8 _c7_0 : 4;
+    u8 _c7_1 : 4;
+    u8 _c8[2];
     u8 _ca;
 };
 
@@ -121,7 +133,7 @@ struct Save {
     u16 _22c[5];
     u16 _236[5];
     u8 event_flags[0x100];
-    u8 _340[0x40];
+    u8 shop_flags[0x40];
     u8 _380[0x40];
     u8 _3c0[0x40];
     u8 giftbox_flags[0x80];
@@ -171,8 +183,13 @@ struct Save {
     u8 _81e;
 };
 
-extern ItemData gGoodsInfo[];
+// extern ItemData gGoodsInfo[];
 extern Save gSave;
 extern struct_02016028 gUnknown_02016028;
+
+struct Size {
+    u16 w;
+    s16 h;
+};
 
 #endif  // STRUCTS_H

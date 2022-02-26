@@ -192,7 +192,7 @@
 . = 0x000042C2; gUnknown_020042C2 = .;
 . = 0x0000439A; gUnknown_0200439A = .;
 . = 0x000047D0; gUnknown_020047D0 = .;
-. = 0x000047E0; gUnknown_020047E0 = .;
+. = 0x000047E0; gEncounter = .;
 . = 0x000047EC; gUnknown_020047EC = .;
 . = 0x00004848; gUnknown_02004848 = .;
 . = 0x00004850; gUnknown_02004850 = .;

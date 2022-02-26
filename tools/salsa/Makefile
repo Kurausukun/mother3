@@ -8,7 +8,7 @@ all: salsa
 	@:
 
 salsa: $(SRCS) ${HEADERS}
-	$(CC) -O0 -std=c++17 -fno-strict-aliasing $(SRCS) -o $@ $(LDFLAGS)
+	$(CC) -O3 -std=c++17 -fno-strict-aliasing $(SRCS) -o $@ $(LDFLAGS)
 
 clean:
 	$(RM) salsa salsa.exe

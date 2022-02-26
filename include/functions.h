@@ -59,12 +59,13 @@ void sub_0800A240(u8*);
 void sub_08009E38(u8*, u32);
 void sub_0800ACA0(u32);
 void sub_08018910(u32, u32, u32, u32);
-void sub_08010528(u16*, u16, u16);
-void sub_08036BEC(Object*, u16*);
-void sub_0801059C(u16*);
-u32 sub_0801A218(u16*);
+void sub_08010528(Size*, u16, u16);
+void sub_08036EB8(Object*, u32, Size*, u32, u32, u32);
+void sub_08036BEC(Object*, Size*);
+void sub_0801059C(Size*);
+u32 sub_0801A218(Size*);
 void sub_0801084C();
-void sub_08018988(u32, u32, u16*);
+void sub_08018988(u32, u32, Size*);
 void sub_0801263C(u32, u32, u32, u32);
 void sub_080127BC(s16, s16);
 void sub_08013CC8(s16, s16);
@@ -90,6 +91,13 @@ void sub_08033374(u32, u16);
 u16 sub_08035C0C(u32, u32, u32);
 void sub_08036BA4(Object*);
 void sub_08035C8C(Object*, u32, u32, u32);
+void sub_08035DFC(Object*, u32, Size*);
+void sub_08029EF0();
+void sub_08035170(u32);
+void sub_08033B20(u32);
+void sub_08033620(u32, u32);
+void sub_08036B34(u32);
+void sub_08036A1C(u32, u32);
 }
 
 #endif  // FUNCTIONS_H

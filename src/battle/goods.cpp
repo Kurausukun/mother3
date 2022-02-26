@@ -107,7 +107,7 @@ u16 Goods::sub_08064D68(u16 idx) {
     if (goods_2b8() != 4 || skill_188() <= 0)
         return idx;
 
-    if (skill_190(0)->unit_2a0(7) != 1)
+    if (skill_190(0)->hasStatus(7) != 1)
         return idx;
 
     switch (idx) {

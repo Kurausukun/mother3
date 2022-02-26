@@ -980,10 +980,10 @@ sub_08070654: @ 0x08070654
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_08070660
-sub_08070660: @ 0x08070660
+	thumb_func_start randS32
+randS32: @ 0x08070660
 	push {lr}
-	bl sub_08069454
+	bl randU32
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -1218,8 +1218,8 @@ _0807081C:
 	bx r0
 	.align 2, 0
 
-	thumb_func_start sub_08070824
-sub_08070824: @ 0x08070824
+	thumb_func_start playSoundMaybe
+playSoundMaybe: @ 0x08070824
 	push {lr}
 	sub sp, #0x38
 	lsls r0, r0, #0x10
