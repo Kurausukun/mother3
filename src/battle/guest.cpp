@@ -20,7 +20,7 @@ Base* sub_08061E20(Base* b, u32 c) {
     return b;
 }
 
-Guest::Guest(u16 id) : _f8(id), mStats(&gCharStats[id]), mLevelInfo(&gLevelInfo[id]) {
+Guest::Guest(u16 id) : _f8(id), mStats(&gCharStats[id]), mLevelInfo(&gLevelStatTable[id]) {
     setupStats();
 
     registerClock(BattleSingleton::get(), RoundBegin(), gUnknown_080F6D8C);
@@ -66,7 +66,7 @@ Unit* Guest::guest_2c0() {
 }
 
 bool Guest::guest_2e8(Skill* skill) {
-    UnitTarget target(skill->getAttackMult(), skill->skill_168());
+    UnitTarget target(skill->attackMult(), skill->skill_168());
     u32 unk = target.attackdata_c8();
     for (int i = 0; i < target.attackdata_110(); ++i) {
         skill->skill_170(target.attackdata_118(i));

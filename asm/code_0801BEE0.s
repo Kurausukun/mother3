@@ -15301,7 +15301,7 @@ sub_08026AF8: @ 0x08026AF8
 	ldrb r0, [r4]
 	cmp r0, #1
 	bne _08026B44
-	ldr r1, _08026B40 @ =gUnknown_080EC930
+	ldr r1, _08026B40 @ =gBattleGroupTable
 	ldrh r0, [r4, #0xa]
 	lsls r0, r0, #4
 	adds r0, r0, r1
@@ -15310,7 +15310,7 @@ sub_08026AF8: @ 0x08026AF8
 	.align 2, 0
 _08026B38: .4byte gScript
 _08026B3C: .4byte gEncounter
-_08026B40: .4byte gUnknown_080EC930
+_08026B40: .4byte gBattleGroupTable
 _08026B44:
 	adds r2, r4, #0
 	adds r2, #0x52
@@ -15335,7 +15335,7 @@ _08026B44:
 	.align 2, 0
 _08026B70: .4byte 0x00000796
 _08026B74:
-	ldr r2, _08026B8C @ =gEnemyData
+	ldr r2, _08026B8C @ =gMonsterData
 	adds r0, r1, #0
 	adds r0, #0x88
 	ldrh r1, [r0]
@@ -15348,7 +15348,7 @@ _08026B74:
 	ldrh r2, [r0, #0xc]
 	b _08026B96
 	.align 2, 0
-_08026B8C: .4byte gEnemyData
+_08026B8C: .4byte gMonsterData
 _08026B90: .4byte 0xFFFFFF00
 _08026B94:
 	ldr r2, _08026BC0 @ =0x00000794
@@ -30253,7 +30253,7 @@ sub_0802DEB0: @ 0x0802DEB0
 	movs r0, #0
 	bl get_char_stats
 	ldrb r2, [r0, #0x12]
-	ldr r3, _0802DF04 @ =gEnemyData
+	ldr r3, _0802DF04 @ =gMonsterData
 	adds r0, r5, #0
 	adds r0, #0x88
 	ldrh r1, [r0]
@@ -30284,7 +30284,7 @@ _0802DF00:
 	movs r0, #0
 	b _0802DF0E
 	.align 2, 0
-_0802DF04: .4byte gEnemyData
+_0802DF04: .4byte gMonsterData
 _0802DF08: .4byte 0xFFFFFF00
 _0802DF0C:
 	movs r0, #1
@@ -31997,7 +31997,7 @@ sub_0802EB5C: @ 0x0802EB5C
 	rsbs r0, r0, #0
 	cmp r1, r0
 	bne _0802EB94
-	ldr r2, _0802EB8C @ =gEnemyData
+	ldr r2, _0802EB8C @ =gMonsterData
 	adds r0, r3, #0
 	adds r0, #0x88
 	ldrh r1, [r0]
@@ -32011,7 +32011,7 @@ sub_0802EB5C: @ 0x0802EB5C
 	bl sub_0800399C
 	b _0802EB9A
 	.align 2, 0
-_0802EB8C: .4byte gEnemyData
+_0802EB8C: .4byte gMonsterData
 _0802EB90: .4byte 0xFFFFFF00
 _0802EB94:
 	ldrh r0, [r2, #2]
@@ -53787,7 +53787,7 @@ sub_080392C4: @ 0x080392C4
 	lsls r0, r1, #1
 	adds r0, r0, r1
 	lsls r0, r0, #2
-	ldr r1, _0803930C @ =gUnknown_080C2BE8
+	ldr r1, _0803930C @ =gTownMapInfoTable
 	adds r7, r0, r1
 	ldrh r0, [r7, #2]
 	cmp r0, #0
@@ -53807,7 +53807,7 @@ sub_080392C4: @ 0x080392C4
 	.align 2, 0
 _08039304: .4byte gScript
 _08039308: .4byte 0x000067AC
-_0803930C: .4byte gUnknown_080C2BE8
+_0803930C: .4byte gTownMapInfoTable
 _08039310:
 	bl sub_0801A5EC
 	adds r6, r0, #0
@@ -62101,7 +62101,7 @@ sub_0803D61C: @ sub_803D61C
 	ldr r0, _0803D670 @ =gUnknown_03004B10
 	ldrh r6, [r0]
 	movs r5, #0x9f
-	ldr r0, _0803D674 @ =gUnknown_080C17D8
+	ldr r0, _0803D674 @ =gSineTable
 	mov r8, r0
 	movs r1, #0xff
 	mov ip, r1
@@ -62131,7 +62131,7 @@ _0803D63C:
 _0803D668: .4byte gUnknown_03004B0C
 _0803D66C: .4byte gUnknown_03004B0E
 _0803D670: .4byte gUnknown_03004B10
-_0803D674: .4byte gUnknown_080C17D8
+_0803D674: .4byte gSineTable
 
 	thumb_func_start sub_0803D678
 sub_0803D678: @ 0x0803D678
@@ -66671,7 +66671,7 @@ sub_0803FA8C: @ 0x0803FA8C
 	bl sub_0803FAC8
 	bl sub_0803FB60
 	ldr r4, _0803FAC0 @ =gUnknown_02016078
-	ldr r5, _0803FAC4 @ =gUnknown_080C5FE0
+	ldr r5, _0803FAC4 @ =gMenuTextPalette
 	adds r0, r4, #0
 	adds r1, r5, #0
 	movs r2, #0
@@ -66690,7 +66690,7 @@ sub_0803FA8C: @ 0x0803FA8C
 	bx r0
 	.align 2, 0
 _0803FAC0: .4byte gUnknown_02016078
-_0803FAC4: .4byte gUnknown_080C5FE0
+_0803FAC4: .4byte gMenuTextPalette
 
 	thumb_func_start sub_0803FAC8
 sub_0803FAC8: @ 0x0803FAC8
@@ -68873,7 +68873,7 @@ _08040D18:
 	blo _08040D36
 	b _08040E50
 _08040D36:
-	ldr r0, _08040D8C @ =gUnknown_080E1908
+	ldr r0, _08040D8C @ =gPsiData
 	mov sb, r0
 	movs r1, #1
 	mov r8, r1
@@ -68915,7 +68915,7 @@ _08040D40:
 	.align 2, 0
 _08040D84: .4byte gUnknown_02016028
 _08040D88: .4byte 0x00004270
-_08040D8C: .4byte gUnknown_080E1908
+_08040D8C: .4byte gPsiData
 _08040D90:
 	ldrb r1, [r5]
 	lsls r0, r1, #3
@@ -69024,7 +69024,7 @@ _08040E50:
 	lsrs r6, r0, #0x1f
 	cmp r6, #0
 	beq _08040EA4
-	ldr r2, _08040EA0 @ =gUnknown_080E1908
+	ldr r2, _08040EA0 @ =gPsiData
 	ldrb r1, [r5]
 	lsls r0, r1, #3
 	subs r0, r0, r1
@@ -69054,9 +69054,9 @@ _08040E50:
 	bl sub_08046BA8
 	b _08040EDC
 	.align 2, 0
-_08040EA0: .4byte gUnknown_080E1908
+_08040EA0: .4byte gPsiData
 _08040EA4:
-	ldr r2, _08040F0C @ =gUnknown_080E1908
+	ldr r2, _08040F0C @ =gPsiData
 	ldrb r1, [r5]
 	lsls r0, r1, #3
 	subs r0, r0, r1
@@ -69107,7 +69107,7 @@ _08040EDC:
 	bl sub_08047CDC
 	b _08040F54
 	.align 2, 0
-_08040F0C: .4byte gUnknown_080E1908
+_08040F0C: .4byte gPsiData
 _08040F10: .4byte gUnknown_02016028
 _08040F14: .4byte 0x00004270
 _08040F18:
@@ -69593,7 +69593,7 @@ _08041302:
 	lsls r0, r1, #3
 	subs r0, r0, r1
 	lsls r0, r0, #3
-	ldr r2, _08041404 @ =gUnknown_080E1908
+	ldr r2, _08041404 @ =gPsiData
 	adds r0, r0, r2
 	ldrh r0, [r0, #0xc]
 	lsls r4, r6, #1
@@ -69623,7 +69623,7 @@ _08041302:
 	lsls r0, r1, #3
 	subs r0, r0, r1
 	lsls r0, r0, #3
-	ldr r2, _08041404 @ =gUnknown_080E1908
+	ldr r2, _08041404 @ =gPsiData
 	adds r0, r0, r2
 	ldrh r0, [r0, #0xc]
 	movs r3, #1
@@ -69660,7 +69660,7 @@ _08041386:
 	ldrh r0, [r0]
 	cmp r0, #0
 	beq _080413D2
-	ldr r2, _08041404 @ =gUnknown_080E1908
+	ldr r2, _08041404 @ =gPsiData
 	ldrb r1, [r5]
 	lsls r0, r1, #3
 	subs r0, r0, r1
@@ -69710,7 +69710,7 @@ _080413D2:
 	.align 2, 0
 _080413FC: .4byte gUnknown_02016028
 _08041400: .4byte 0x0000427A
-_08041404: .4byte gUnknown_080E1908
+_08041404: .4byte gPsiData
 _08041408:
 	add r0, sp, #0x18
 	ldrh r0, [r0]
@@ -90700,7 +90700,7 @@ sub_0804BB58: @ 0x0804BB58
 	adds r0, r7, r6
 	bl sub_0804BD34
 	movs r2, #0
-	ldr r3, _0804BD30 @ =gUnknown_080C6000
+	ldr r3, _0804BD30 @ =gOverworldMenuScrollTable
 _0804BCBE:
 	lsls r0, r2, #5
 	adds r1, r0, r7
@@ -90742,7 +90742,7 @@ _0804BD20: .4byte 0x000013E6
 _0804BD24: .4byte 0x0000143C
 _0804BD28: .4byte 0x00001444
 _0804BD2C: .4byte 0x0000144C
-_0804BD30: .4byte gUnknown_080C6000
+_0804BD30: .4byte gOverworldMenuScrollTable
 
 	thumb_func_start sub_0804BD34
 sub_0804BD34: @ 0x0804BD34
@@ -91188,7 +91188,7 @@ sub_0804C050: @ 0x0804C050
 	adds r0, #0x6c
 	ldrh r0, [r0]
 	strh r0, [r2, #2]
-	ldr r1, _0804C128 @ =gUnknown_080C6D62
+	ldr r1, _0804C128 @ =gBattleMemoryEnemyHeight
 	ldrh r0, [r2]
 	lsls r0, r0, #1
 	adds r0, r0, r1
@@ -91220,7 +91220,7 @@ _0804C118: .4byte 0x0000CA24
 _0804C11C: .4byte 0x00012A24
 _0804C120: .4byte gUnknown_02004100
 _0804C124: .4byte gUnknown_0200F920
-_0804C128: .4byte gUnknown_080C6D62
+_0804C128: .4byte gBattleMemoryEnemyHeight
 _0804C12C: .4byte 0x000044F2
 _0804C130:
 	ldr r1, _0804C140 @ =0x000044F2
@@ -91249,7 +91249,7 @@ _0804C144:
 	ldrb r0, [r1]
 	strh r0, [r2]
 	strh r4, [r2, #2]
-	ldr r1, _0804C194 @ =gUnknown_080C6D62
+	ldr r1, _0804C194 @ =gBattleMemoryEnemyHeight
 	ldrh r0, [r2]
 	lsls r0, r0, #1
 	adds r0, r0, r1
@@ -91272,7 +91272,7 @@ _0804C144:
 	b _0804C1AA
 	.align 2, 0
 _0804C190: .4byte 0x00002EE4
-_0804C194: .4byte gUnknown_080C6D62
+_0804C194: .4byte gBattleMemoryEnemyHeight
 _0804C198: .4byte 0x000044F2
 _0804C19C:
 	ldr r1, _0804C1D8 @ =0x000044F2
@@ -93384,7 +93384,7 @@ _0804D316:
 	strh r0, [r1]
 	mov r0, sl
 	strh r0, [r1, #2]
-	ldr r2, _0804D370 @ =gUnknown_080C6D62
+	ldr r2, _0804D370 @ =gBattleMemoryEnemyHeight
 	ldrb r0, [r3]
 	lsls r0, r0, #1
 	adds r0, r0, r2
@@ -93412,7 +93412,7 @@ _0804D35E:
 _0804D364: .4byte 0x0000427C
 _0804D368: .4byte 0x0000C5AD
 _0804D36C: .4byte gUnknown_02005090
-_0804D370: .4byte gUnknown_080C6D62
+_0804D370: .4byte gBattleMemoryEnemyHeight
 _0804D374: .4byte 0x0000C5B5
 _0804D378:
 	mov r3, sb
@@ -96585,7 +96585,7 @@ _0804ED4C: .4byte 0x0000FFFF
 _0804ED50:
 	movs r0, #0xd2
 	bl sub_0800399C
-	ldr r1, _0804ED9C @ =gUnknown_080E1908
+	ldr r1, _0804ED9C @ =gPsiData
 	ldrb r3, [r4]
 	lsls r0, r3, #3
 	subs r0, r0, r3
@@ -96619,7 +96619,7 @@ _0804ED50:
 	strh r6, [r0]
 	b _0804EDEA
 	.align 2, 0
-_0804ED9C: .4byte gUnknown_080E1908
+_0804ED9C: .4byte gPsiData
 _0804EDA0: .4byte 0xFFFFF8FC
 _0804EDA4: .4byte 0x00000CD3
 _0804EDA8: .4byte 0x00000FEC
@@ -98700,7 +98700,7 @@ sub_0804FF30: @ 0x0804FF30
 	ldrh r0, [r4]
 	bl sub_08054FF0
 	adds r4, r0, #0
-	ldr r2, _0804FF88 @ =gUnknown_080E1908
+	ldr r2, _0804FF88 @ =gPsiData
 	ldr r1, _0804FF8C @ =0x00001395
 	adds r0, r6, r1
 	ldrb r1, [r0]
@@ -98725,7 +98725,7 @@ sub_0804FF30: @ 0x0804FF30
 	.align 2, 0
 _0804FF80: .4byte gUnknown_02018E68
 _0804FF84: .4byte 0x00001390
-_0804FF88: .4byte gUnknown_080E1908
+_0804FF88: .4byte gPsiData
 _0804FF8C: .4byte 0x00001395
 _0804FF90: .4byte 0x00009788
 _0804FF94:
@@ -104082,7 +104082,7 @@ sub_08052964: @ 0x08052964
 	strh r0, [r1]
 	adds r5, r4, #0
 	movs r6, #0
-	ldr r2, _08052A58 @ =gUnknown_080C6B64
+	ldr r2, _08052A58 @ =gBattleMemoryEnemyLayout
 	movs r0, #0
 	ldrsh r1, [r2, r0]
 	movs r0, #1
@@ -104099,7 +104099,7 @@ sub_08052964: @ 0x08052964
 	mov sl, r2
 _080529A6:
 	lsls r0, r6, #1
-	ldr r1, _08052A58 @ =gUnknown_080C6B64
+	ldr r1, _08052A58 @ =gBattleMemoryEnemyLayout
 	adds r0, r0, r1
 	ldrh r0, [r0]
 	adds r4, r0, #0
@@ -104166,7 +104166,7 @@ _08052A24:
 	cmp r6, #0xfe
 	bhi _08052A40
 	lsls r0, r6, #1
-	ldr r1, _08052A58 @ =gUnknown_080C6B64
+	ldr r1, _08052A58 @ =gBattleMemoryEnemyLayout
 	adds r0, r0, r1
 	movs r2, #0
 	ldrsh r1, [r0, r2]
@@ -104186,7 +104186,7 @@ _08052A40:
 	.align 2, 0
 _08052A50: .4byte gUnknown_02019828
 _08052A54: .4byte 0x00000A7C
-_08052A58: .4byte gUnknown_080C6B64
+_08052A58: .4byte gBattleMemoryEnemyLayout
 _08052A5C: .4byte gUnknown_02016028
 _08052A60: .4byte 0x0000427C
 
@@ -104580,7 +104580,7 @@ sub_08052D1C: @ 0x08052D1C
 	movs r4, #0
 	cmp r4, r5
 	bhs _08052D8C
-	ldr r0, _08052DB4 @ =gUnknown_080E1908
+	ldr r0, _08052DB4 @ =gPsiData
 	mov r8, r0
 	movs r1, #0x21
 	rsbs r1, r1, #0
@@ -104629,7 +104629,7 @@ _08052D9A:
 	.align 2, 0
 _08052DAC: .4byte gUnknown_02016028
 _08052DB0: .4byte 0x00004270
-_08052DB4: .4byte gUnknown_080E1908
+_08052DB4: .4byte gPsiData
 _08052DB8: .4byte 0x00004266
 
 	thumb_func_start sub_08052DBC
@@ -104985,7 +104985,7 @@ sub_08053034: @ 0x08053034
 	lsls r0, r5, #4
 	subs r0, r0, r5
 	lsls r0, r0, #2
-	ldr r1, _080530DC @ =gUnknown_080EBD08
+	ldr r1, _080530DC @ =gShopData
 	adds r0, r0, r1
 	mov ip, r0
 	movs r7, #0
@@ -105049,7 +105049,7 @@ _080530A8:
 	.align 2, 0
 _080530D4: .4byte gUnknown_02019D6C
 _080530D8: .4byte 0x0000053C
-_080530DC: .4byte gUnknown_080EBD08
+_080530DC: .4byte gShopData
 _080530E0: .4byte 0xFFFFC2BC
 _080530E4: .4byte gGoodsInfo
 _080530E8: .4byte gUnknown_080E510C
@@ -109293,7 +109293,7 @@ _08055044:
 
 	thumb_func_start sub_0805504C
 sub_0805504C: @ 0x0805504C
-	ldr r2, _08055064 @ =gLevelInfo
+	ldr r2, _08055064 @ =gLevelStatTable
 	ldrb r1, [r0]
 	lsls r0, r1, #2
 	adds r0, r0, r1
@@ -109305,7 +109305,7 @@ sub_0805504C: @ 0x0805504C
 	ldrb r0, [r0]
 	bx lr
 	.align 2, 0
-_08055064: .4byte gLevelInfo
+_08055064: .4byte gLevelStatTable
 
 	thumb_func_start sub_08055068
 sub_08055068: @ 0x08055068
@@ -111374,7 +111374,7 @@ sub_08055FD4: @ 0x08055FD4
 	bl sub_08003B58
 	movs r0, #1
 	bl sub_08003B58
-	ldr r2, _08056010 @ =gEnemyData
+	ldr r2, _08056010 @ =gMonsterData
 	ldr r0, _08056014 @ =gEncounter
 	movs r3, #0xc
 	ldrsh r1, [r0, r3]
@@ -111390,7 +111390,7 @@ sub_08055FD4: @ 0x08055FD4
 	bx r0
 	.align 2, 0
 _0805600C: .4byte gUnknown_03004B00
-_08056010: .4byte gEnemyData
+_08056010: .4byte gMonsterData
 _08056014: .4byte gEncounter
 _08056018: .4byte 0xFFFFFF00
 
@@ -121559,19 +121559,19 @@ _0805AF30: .4byte 0x00002CA0
 	thumb_func_start sub_0805AF34
 sub_0805AF34: @ 0x0805AF34
 	push {r4, r5, r6, lr}
-	ldr r0, _0805AFB4 @ =gUnknown_080C7FE8
+	ldr r0, _0805AFB4 @ =gGBPlayerLogoGfx
 	ldr r1, _0805AFB8 @ =0x06008000
 	movs r2, #0x80
 	lsls r2, r2, #7
 	bl sub_08001A14
-	ldr r0, _0805AFBC @ =gUnknown_080CBFE8
+	ldr r0, _0805AFBC @ =gGBPlayerLogoLayout
 	movs r1, #0xc0
 	lsls r1, r1, #0x13
 	movs r2, #0xa0
 	lsls r2, r2, #3
 	bl sub_08001A14
 	ldr r4, _0805AFC0 @ =gUnknown_02016078
-	ldr r1, _0805AFC4 @ =gUnknown_080C7DE8
+	ldr r1, _0805AFC4 @ =gGBPlayerLogoPalette
 	movs r3, #0x80
 	lsls r3, r3, #2
 	adds r0, r4, #0
@@ -121617,11 +121617,11 @@ sub_0805AF34: @ 0x0805AF34
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0805AFB4: .4byte gUnknown_080C7FE8
+_0805AFB4: .4byte gGBPlayerLogoGfx
 _0805AFB8: .4byte 0x06008000
-_0805AFBC: .4byte gUnknown_080CBFE8
+_0805AFBC: .4byte gGBPlayerLogoLayout
 _0805AFC0: .4byte gUnknown_02016078
-_0805AFC4: .4byte gUnknown_080C7DE8
+_0805AFC4: .4byte gGBPlayerLogoPalette
 _0805AFC8: .4byte 0x00002C60
 
 	thumb_func_start sub_0805AFCC
@@ -122353,7 +122353,7 @@ _0805B53E:
 	lsls r0, r0, #4
 	adds r0, r0, r7
 	lsls r0, r0, #2
-	ldr r2, _0805B5E4 @ =gLevelInfo
+	ldr r2, _0805B5E4 @ =gLevelStatTable
 	adds r0, r0, r2
 	ldrh r4, [r0, #2]
 	mov r0, sp
@@ -122393,7 +122393,7 @@ _0805B56E:
 	lsls r0, r0, #4
 	adds r0, r0, r7
 	lsls r5, r0, #2
-	ldr r3, _0805B5F0 @ =gUnknown_080CC4EC
+	ldr r3, _0805B5F0 @ =gLevelStatTable2
 	adds r7, r1, #0
 	ldr r6, _0805B5E0 @ =gCharStats
 _0805B5A0:
@@ -122430,10 +122430,10 @@ _0805B5BA:
 	bx r0
 	.align 2, 0
 _0805B5E0: .4byte gCharStats
-_0805B5E4: .4byte gLevelInfo
+_0805B5E4: .4byte gLevelStatTable
 _0805B5E8: .4byte gUnknown_0200414C
 _0805B5EC: .4byte gUnknown_02004148
-_0805B5F0: .4byte gUnknown_080CC4EC
+_0805B5F0: .4byte gLevelStatTable2
 
 	thumb_func_start sub_0805B5F4
 sub_0805B5F4: @ 0x0805B5F4
@@ -122743,7 +122743,7 @@ _0805B7E8:
 	ldrb r0, [r1, #6]
 	cmp r0, #1
 	beq _0805B808
-	ldr r0, _0805B804 @ =gUnknown_080EC930
+	ldr r0, _0805B804 @ =gBattleGroupTable
 	ldrh r1, [r1, #0xa]
 	lsls r1, r1, #4
 	adds r1, r1, r0
@@ -122753,7 +122753,7 @@ _0805B7E8:
 	movs r0, #2
 	b _0805B80C
 	.align 2, 0
-_0805B804: .4byte gUnknown_080EC930
+_0805B804: .4byte gBattleGroupTable
 _0805B808:
 	bl sub_0805B810
 _0805B80C:
@@ -123078,7 +123078,7 @@ _0805BA58:
 	bls _0805BA60
 	strh r1, [r2, #0xa]
 _0805BA60:
-	ldr r4, _0805BA94 @ =gUnknown_080EC930
+	ldr r4, _0805BA94 @ =gBattleGroupTable
 	ldrh r0, [r2, #0xa]
 	lsls r0, r0, #4
 	adds r3, r0, r4
@@ -123107,7 +123107,7 @@ _0805BA8C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0805BA94: .4byte gUnknown_080EC930
+_0805BA94: .4byte gBattleGroupTable
 
 	thumb_func_start sub_0805BA98
 sub_0805BA98: @ 0x0805BA98
@@ -123207,7 +123207,7 @@ sub_0805BB34: @ 0x0805BB34
 	lsls r4, r4, #4
 	adds r4, r4, r1
 	lsls r4, r4, #2
-	ldr r0, _0805BC78 @ =gLevelInfo
+	ldr r0, _0805BC78 @ =gLevelStatTable
 	adds r4, r4, r0
 	mov r0, sp
 	adds r1, r7, #0
@@ -123348,7 +123348,7 @@ sub_0805BB34: @ 0x0805BB34
 	bx r2
 	.align 2, 0
 _0805BC74: .4byte gCharStats
-_0805BC78: .4byte gLevelInfo
+_0805BC78: .4byte gLevelStatTable
 _0805BC7C: .4byte 0xFFFFFF00
 _0805BC80: .4byte 0xFFFF00FF
 _0805BC84: .4byte 0xFF00FFFF
@@ -123374,7 +123374,7 @@ sub_0805BC8C: @ 0x0805BC8C
 	lsls r0, r0, #4
 	adds r0, r0, r1
 	lsls r0, r0, #2
-	ldr r1, _0805BD14 @ =gLevelInfo
+	ldr r1, _0805BD14 @ =gLevelStatTable
 	adds r0, r0, r1
 	str r0, [sp, #0xc0]
 	add r0, sp, #8
@@ -123424,7 +123424,7 @@ _0805BCCC:
 	b _0805BF52
 	.align 2, 0
 _0805BD10: .4byte gCharStats
-_0805BD14: .4byte gLevelInfo
+_0805BD14: .4byte gLevelStatTable
 _0805BD18:
 	ldrb r0, [r7, #0x12]
 	adds r0, #1
@@ -123814,7 +123814,7 @@ _0805C026:
 	lsls r1, r1, #4
 	adds r1, r1, r0
 	lsls r1, r1, #2
-	ldr r0, _0805C09C @ =gLevelInfo
+	ldr r0, _0805C09C @ =gLevelStatTable
 	adds r1, r1, r0
 	adds r4, r1, #0
 	adds r4, #0xc0
@@ -123864,7 +123864,7 @@ _0805C08C: .4byte 0xFFFFFF00
 _0805C090: .4byte 0xFFFF00FF
 _0805C094: .4byte 0xFF00FFFF
 _0805C098: .4byte 0x00FFFFFF
-_0805C09C: .4byte gLevelInfo
+_0805C09C: .4byte gLevelStatTable
 
 	thumb_func_start sub_0805C0A0
 sub_0805C0A0: @ 0x0805C0A0
@@ -124002,7 +124002,7 @@ sub_0805C178: @ 0x0805C178
 	lsls r1, r1, #4
 	adds r1, r1, r0
 	lsls r1, r1, #2
-	ldr r0, _0805C1A4 @ =gLevelInfo
+	ldr r0, _0805C1A4 @ =gLevelStatTable
 	adds r1, r1, r0
 	adds r0, r3, #0
 	bl sub_0805C1A8
@@ -124010,7 +124010,7 @@ sub_0805C178: @ 0x0805C178
 	bx r1
 	.align 2, 0
 _0805C1A0: .4byte gCharStats
-_0805C1A4: .4byte gLevelInfo
+_0805C1A4: .4byte gLevelStatTable
 
 	thumb_func_start sub_0805C1A8
 sub_0805C1A8: @ 0x0805C1A8
@@ -124019,7 +124019,7 @@ sub_0805C1A8: @ 0x0805C1A8
 	movs r3, #0
 	cmp r3, r4
 	bge _0805C1D0
-	ldr r2, _0805C1D8 @ =gUnknown_080CD928
+	ldr r2, _0805C1D8 @ =gLevelExpTable
 	ldrb r1, [r1]
 	lsls r0, r1, #1
 	adds r0, r0, r1
@@ -124041,7 +124041,7 @@ _0805C1D0:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0805C1D8: .4byte gUnknown_080CD928
+_0805C1D8: .4byte gLevelExpTable
 
 	thumb_func_start sub_0805C1DC
 sub_0805C1DC: @ 0x0805C1DC
@@ -124396,7 +124396,7 @@ sub_0805C458: @ 0x0805C458
 	lsls r1, r1, #4
 	adds r1, r1, r0
 	lsls r1, r1, #2
-	ldr r0, _0805C4B0 @ =gLevelInfo
+	ldr r0, _0805C4B0 @ =gLevelStatTable
 	adds r1, r1, r0
 	ldr r6, _0805C4B4 @ =gUnknown_02004F80
 	adds r4, r1, #0
@@ -124425,7 +124425,7 @@ _0805C4A4:
 	bge _0805C482
 	b _0805C508
 	.align 2, 0
-_0805C4B0: .4byte gLevelInfo
+_0805C4B0: .4byte gLevelStatTable
 _0805C4B4: .4byte gUnknown_02004F80
 _0805C4B8:
 	adds r0, r4, #0
@@ -124440,7 +124440,7 @@ _0805C4B8:
 	lsls r1, r1, #4
 	adds r1, r1, r0
 	lsls r1, r1, #2
-	ldr r0, _0805C510 @ =gLevelInfo
+	ldr r0, _0805C510 @ =gLevelStatTable
 	adds r1, r1, r0
 	ldr r6, _0805C514 @ =gUnknown_02004F9A
 	adds r4, r1, #0
@@ -124472,7 +124472,7 @@ _0805C508:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0805C510: .4byte gLevelInfo
+_0805C510: .4byte gLevelStatTable
 _0805C514: .4byte gUnknown_02004F9A
 
 	thumb_func_start sub_0805C518
@@ -124606,7 +124606,7 @@ _0805C5E2:
 	add r2, sp, #0x18
 	mov sl, r2
 	lsls r7, r6, #3
-	ldr r3, _0805C6B8 @ =gLevelInfo
+	ldr r3, _0805C6B8 @ =gLevelStatTable
 	mov sb, r3
 	ldr r5, _0805C6BC @ =gCharStats
 _0805C5F4:
@@ -124666,7 +124666,7 @@ _0805C644:
 	cmp r5, r0
 	blt _0805C644
 _0805C65E:
-	ldr r2, _0805C6C0 @ =gUnknown_080E1908
+	ldr r2, _0805C6C0 @ =gPsiData
 	subs r0, r7, r6
 	lsls r0, r0, #3
 	adds r0, r0, r2
@@ -124684,7 +124684,7 @@ _0805C676:
 	blt _0805C67E
 	b _0805C792
 _0805C67E:
-	ldr r1, _0805C6C0 @ =gUnknown_080E1908
+	ldr r1, _0805C6C0 @ =gPsiData
 	subs r0, r7, r6
 	lsls r0, r0, #3
 	adds r1, #0x18
@@ -124713,9 +124713,9 @@ _0805C6A0:
 	mov pc, r0
 	.align 2, 0
 _0805C6B4: .4byte gSave
-_0805C6B8: .4byte gLevelInfo
+_0805C6B8: .4byte gLevelStatTable
 _0805C6BC: .4byte gCharStats
-_0805C6C0: .4byte gUnknown_080E1908
+_0805C6C0: .4byte gPsiData
 _0805C6C4: .4byte _0805C6C8
 _0805C6C8: @ jump table
 	.4byte _0805C6E4 @ case 0
@@ -124804,7 +124804,7 @@ _0805C770:
 _0805C786:
 	adds r4, #1
 	ldr r3, [sp]
-	ldr r2, _0805C7EC @ =gUnknown_080E1908
+	ldr r2, _0805C7EC @ =gPsiData
 	cmp r4, r3
 	bge _0805C792
 	b _0805C67E
@@ -124855,7 +124855,7 @@ _0805C7CC:
 	bx r1
 	.align 2, 0
 _0805C7E8: .4byte gUnknown_080E1918
-_0805C7EC: .4byte gUnknown_080E1908
+_0805C7EC: .4byte gPsiData
 
 	thumb_func_start sub_0805C7F0
 sub_0805C7F0: @ 0x0805C7F0
@@ -125008,7 +125008,7 @@ _0805C8DA:
 	movs r0, #0x3c
 	adds r0, r0, r7
 	mov sb, r0
-	ldr r1, _0805C9B0 @ =gLevelInfo
+	ldr r1, _0805C9B0 @ =gLevelStatTable
 	mov r8, r1
 	ldr r5, _0805C9B4 @ =gCharStats
 _0805C8F0:
@@ -125115,7 +125115,7 @@ _0805C9A0:
 	mov pc, r0
 	.align 2, 0
 _0805C9AC: .4byte gSave
-_0805C9B0: .4byte gLevelInfo
+_0805C9B0: .4byte gLevelStatTable
 _0805C9B4: .4byte gCharStats
 _0805C9B8: .4byte gGoodsInfo
 _0805C9BC: .4byte _0805C9C0
@@ -125722,7 +125722,7 @@ _0805CE56:
 sub_0805CE5C: @ 0x0805CE5C
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
-	ldr r2, _0805CE70 @ =gEnemyData
+	ldr r2, _0805CE70 @ =gMonsterData
 	lsls r1, r0, #3
 	adds r1, r1, r0
 	lsls r1, r1, #4
@@ -125731,7 +125731,7 @@ sub_0805CE5C: @ 0x0805CE5C
 	ldrb r0, [r1]
 	bx lr
 	.align 2, 0
-_0805CE70: .4byte gEnemyData
+_0805CE70: .4byte gMonsterData
 
 	thumb_func_start sub_0805CE74
 sub_0805CE74: @ 0x0805CE74
@@ -125746,7 +125746,7 @@ sub_0805CE74: @ 0x0805CE74
 	lsls r0, r5, #3
 	adds r0, r0, r5
 	lsls r0, r0, #4
-	ldr r1, _0805CF80 @ =gEnemyData
+	ldr r1, _0805CF80 @ =gMonsterData
 	adds r0, r0, r1
 	str r0, [sp, #0x54]
 	add r0, sp, #0xc
@@ -125864,7 +125864,7 @@ sub_0805CE74: @ 0x0805CE74
 	b _0805CFBC
 	.align 2, 0
 _0805CF7C: .4byte gUnknown_02005090
-_0805CF80: .4byte gEnemyData
+_0805CF80: .4byte gMonsterData
 _0805CF84: .4byte _vt.1D
 _0805CF88: .4byte gUnknown_09C90960
 _0805CF8C: .4byte 0x00000179

@@ -3739,7 +3739,7 @@ sub_08084D8C: @ 0x08084D8C
 	adds r0, r4, #0
 	bl sub_08084E88
 	movs r0, #0xd1
-	bl playSoundMaybe
+	bl playSound
 _08084DB4:
 	pop {r4}
 	pop {r0}
@@ -3764,7 +3764,7 @@ sub_08084DBC: @ 0x08084DBC
 	adds r0, r4, #0
 	bl sub_08084E88
 	movs r0, #0xd1
-	bl playSoundMaybe
+	bl playSound
 _08084DE4:
 	pop {r4}
 	pop {r0}
@@ -3846,7 +3846,7 @@ _08084E3E:
 	movs r2, #0xd2
 _08084E7C:
 	adds r0, r2, #0
-	bl playSoundMaybe
+	bl playSound
 _08084E82:
 	pop {r4}
 	pop {r0}
@@ -5600,7 +5600,7 @@ _08085C00:
 	bl _call_via_r1
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
-	bl playSoundMaybe
+	bl playSound
 _08085C32:
 	movs r0, #1
 	bl sub_0807068C
@@ -7648,7 +7648,7 @@ sub_08086C94: @ 0x08086C94
 	adds r6, r1, #0
 	movs r0, #0
 	bl sub_080707C4
-	ldr r2, _08086CF0 @ =gUnknown_080ECD40
+	ldr r2, _08086CF0 @ =gSoundPlayerTable
 	lsls r1, r6, #1
 	adds r1, r1, r6
 	lsls r1, r1, #2
@@ -7682,7 +7682,7 @@ _08086CC0:
 	str r5, [sp, #8]
 	b _08086D06
 	.align 2, 0
-_08086CF0: .4byte gUnknown_080ECD40
+_08086CF0: .4byte gSoundPlayerTable
 _08086CF4: .4byte gUnknown_09C8F390
 _08086CF8: .4byte _vt.1D
 _08086CFC:
@@ -7708,7 +7708,7 @@ sub_08086D14: @ 0x08086D14
 	str r0, [r4, #0x1c]
 	movs r0, #0
 	strh r0, [r4, #0x3c]
-	ldr r0, _08086D34 @ =gUnknown_080ECD40
+	ldr r0, _08086D34 @ =gSoundPlayerTable
 	str r0, [r4, #0x40]
 	adds r0, r4, #0
 	pop {r4}
@@ -7716,7 +7716,7 @@ sub_08086D14: @ 0x08086D14
 	bx r1
 	.align 2, 0
 _08086D30: .4byte vt_09F84AE8
-_08086D34: .4byte gUnknown_080ECD40
+_08086D34: .4byte gSoundPlayerTable
 
 	thumb_func_start sub_08086D38
 sub_08086D38: @ 0x08086D38
@@ -7724,7 +7724,7 @@ sub_08086D38: @ 0x08086D38
 	adds r6, r0, #0
 	lsls r5, r1, #0x10
 	lsrs r5, r5, #0x10
-	ldr r0, _08086D64 @ =gUnknown_080ECD40
+	ldr r0, _08086D64 @ =gSoundPlayerTable
 	lsls r4, r5, #1
 	adds r4, r4, r5
 	lsls r4, r4, #2
@@ -7741,7 +7741,7 @@ sub_08086D38: @ 0x08086D38
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08086D64: .4byte gUnknown_080ECD40
+_08086D64: .4byte gSoundPlayerTable
 _08086D68: .4byte vt_09F84AE8
 
 	thumb_func_start sub_08086D6C

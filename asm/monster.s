@@ -105,7 +105,7 @@ sub_08080A24: @ 0x08080A24
 	lsls r0, r4, #3
 	adds r0, r0, r4
 	lsls r0, r0, #4
-	ldr r1, _08080B48 @ =gEnemyData
+	ldr r1, _08080B48 @ =gMonsterData
 	adds r0, r0, r1
 	str r0, [r2]
 	adds r0, #0x68
@@ -195,7 +195,7 @@ sub_08080A24: @ 0x08080A24
 	.align 2, 0
 _08080B40: .4byte vt_09F82F98
 _08080B44: .4byte vt_09F83010
-_08080B48: .4byte gEnemyData
+_08080B48: .4byte gMonsterData
 _08080B4C: .4byte _vt.3Unk
 _08080B50: .4byte _vt.10RoundBegin
 _08080B54: .4byte gUnknown_0810B278
@@ -1907,7 +1907,7 @@ sub_080817D0: @ 0x080817D0
 	lsls r2, r1, #3
 	adds r2, r2, r1
 	lsls r2, r2, #4
-	ldr r0, _08081974 @ =gEnemyData
+	ldr r0, _08081974 @ =gMonsterData
 	adds r2, r2, r0
 	str r2, [r4]
 	movs r0, #0x80
@@ -2089,7 +2089,7 @@ _08081936:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08081974: .4byte gEnemyData
+_08081974: .4byte gMonsterData
 
 	thumb_func_start sub_08081978
 sub_08081978: @ 0x08081978

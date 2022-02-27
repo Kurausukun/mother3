@@ -71,6 +71,6 @@ struct UnitTargetInfo {
     u32 _c;
     u8 _10;
 };
-extern UnitTargetInfo gUnitTargetInfo[];
+extern UnitTargetInfo gUnitTargetData[];
 
 #endif  // BATTLE_UNIT_TARGET_H

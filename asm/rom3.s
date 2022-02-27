@@ -1516,7 +1516,7 @@ _080A0D44: .4byte vt_09F4E080
 sub_080A0D48: @ 0x080A0D48
 	push {r4, r5, lr}
 	adds r4, r0, #0
-	bl getSfxBank__C10GuestSkill
+	bl missChance__C10GuestSkill
 	adds r5, r0, #0
 	cmp r5, #0x63
 	bgt _080A0DC6
@@ -12869,7 +12869,7 @@ _080A6D64:
 	movs r1, #2
 	bl sub_0806E308
 	ldr r0, _080A6EC0 @ =0x0000064E
-	bl playSoundMaybe
+	bl playSound
 	movs r0, #0x47
 	adds r1, r7, #0
 	adds r2, r7, #0
@@ -17343,7 +17343,7 @@ _080A906C:
 	movs r1, #2
 	bl sub_0806E308
 	ldr r0, _080A9230 @ =0x0000064E
-	bl playSoundMaybe
+	bl playSound
 	movs r0, #0x47
 	adds r1, r6, #0
 	adds r2, r6, #0
@@ -17587,7 +17587,7 @@ _080A92BC:
 	cmp r0, #1
 	bne _080A9350
 	ldr r0, _080A935C @ =0x0000028A
-	bl playSoundMaybe
+	bl playSound
 	ldr r1, [r7, #0x1c]
 	movs r0, #0xc0
 	lsls r0, r0, #2
@@ -20141,7 +20141,7 @@ _080AA678:
 	movs r1, #2
 	bl sub_0806E308
 	ldr r0, _080AA814 @ =0x0000064E
-	bl playSoundMaybe
+	bl playSound
 	movs r0, #0x47
 	adds r1, r6, #0
 	adds r2, r6, #0
@@ -21998,7 +21998,7 @@ _080AB4D8:
 	movs r1, #2
 	bl sub_0806E308
 	ldr r0, _080AB64C @ =0x0000064E
-	bl playSoundMaybe
+	bl playSound
 	movs r0, #0x47
 	adds r1, r7, #0
 	adds r2, r7, #0
@@ -28853,7 +28853,7 @@ _080AE95C:
 	movs r1, #2
 	bl sub_0806E308
 	ldr r0, _080AEACC @ =0x0000064E
-	bl playSoundMaybe
+	bl playSound
 	movs r0, #0x47
 	adds r1, r7, #0
 	adds r2, r7, #0
@@ -29537,7 +29537,7 @@ _080AEEBC:
 	movs r1, #2
 	bl sub_0806E308
 	ldr r0, _080AEFF0 @ =0x0000064E
-	bl playSoundMaybe
+	bl playSound
 	movs r0, #0x47
 	adds r1, r4, #0
 	adds r2, r4, #0
@@ -32878,7 +32878,7 @@ sub_080B0758: @ 0x080B0758
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _080B0770 @ =0x0000044C
-	bl playSoundMaybe
+	bl playSound
 	adds r0, r4, #0
 	bl sub_08078700
 	pop {r4}
@@ -32973,7 +32973,7 @@ sub_080B0820: @ 0x080B0820
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _080B0838 @ =0x0000044C
-	bl playSoundMaybe
+	bl playSound
 	adds r0, r4, #0
 	bl sub_08078700
 	pop {r4}
@@ -33149,7 +33149,7 @@ sub_080B097C: @ 0x080B097C
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _080B0994 @ =0x0000044C
-	bl playSoundMaybe
+	bl playSound
 	adds r0, r4, #0
 	bl sub_08078700
 	pop {r4}
@@ -33285,7 +33285,7 @@ sub_080B0A8C: @ 0x080B0A8C
 	adds r4, r1, #0
 	bl nullsub_37
 	ldr r0, _080B0B28 @ =0x000003E5
-	bl playSoundMaybe
+	bl playSound
 	movs r5, #2
 _080B0AA0:
 	movs r0, #0xba
@@ -33420,7 +33420,7 @@ sub_080B0B88: @ 0x080B0B88
 	movs r1, #2
 	bl sub_080639B4
 	ldr r0, _080B0C74 @ =0x00000563
-	bl playSoundMaybe
+	bl playSound
 	ldr r1, [r6, #0x1c]
 	movs r0, #0xb0
 	lsls r0, r0, #1
@@ -33585,7 +33585,7 @@ sub_080B0CFC: @ 0x080B0CFC
 	adds r6, r0, #0
 	bl nullsub_37
 	ldr r0, _080B0D9C @ =0x0000055D
-	bl playSoundMaybe
+	bl playSound
 	add r1, sp, #0x18
 	movs r0, #0xc8
 	movs r2, #0x20
@@ -33682,7 +33682,7 @@ sub_080B0DCC: @ 0x080B0DCC
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _080B0DE4 @ =0x0000044C
-	bl playSoundMaybe
+	bl playSound
 	adds r0, r4, #0
 	bl sub_08078700
 	pop {r4}
@@ -33708,7 +33708,7 @@ sub_080B0DFC: @ 0x080B0DFC
 	adds r4, r1, #0
 	bl nullsub_37
 	ldr r0, _080B0E4C @ =0x0000028A
-	bl playSoundMaybe
+	bl playSound
 	adds r0, r4, #0
 	bl sub_08072DD0
 	adds r5, r0, #0
@@ -33801,7 +33801,7 @@ sub_080B0EBC: @ 0x080B0EBC
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	ldr r0, _080B0F20 @ =0x000002EA
-	bl playSoundMaybe
+	bl playSound
 	ldr r1, [r6, #0x1c]
 	movs r0, #0xb0
 	lsls r0, r0, #1
@@ -33864,7 +33864,7 @@ sub_080B0F38: @ 0x080B0F38
 	sub sp, #0x44
 	bl nullsub_37
 	ldr r0, _080B1134 @ =0x00000562
-	bl playSoundMaybe
+	bl playSound
 	mov r1, sp
 	movs r5, #0x78
 	movs r6, #0x50
@@ -34237,7 +34237,7 @@ sub_080B1238: @ 0x080B1238
 	sub sp, #8
 	adds r7, r0, #0
 	ldr r0, _080B1258 @ =0x0000031A
-	bl playSoundMaybe
+	bl playSound
 	adds r0, r7, #0
 	bl sub_08078784
 	movs r5, #0
@@ -34550,7 +34550,7 @@ sub_080B147C: @ 0x080B147C
 	movs r0, #0x14
 	bl sub_0807068C
 	ldr r0, _080B15A8 @ =0x00000614
-	bl playSoundMaybe
+	bl playSound
 	movs r0, #5
 	bl sub_0807068C
 	movs r5, #0xc0
@@ -34857,7 +34857,7 @@ sub_080B1744: @ 0x080B1744
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _080B175C @ =0x0000044C
-	bl playSoundMaybe
+	bl playSound
 	adds r0, r4, #0
 	bl sub_08078700
 	pop {r4}
@@ -35003,7 +35003,7 @@ sub_080B1868: @ 0x080B1868
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _080B1880 @ =0x0000044C
-	bl playSoundMaybe
+	bl playSound
 	adds r0, r4, #0
 	bl sub_08078700
 	pop {r4}
@@ -35587,7 +35587,7 @@ sub_080B1C9C: @ 0x080B1C9C
 	adds r5, r0, #0
 	movs r0, #0xb8
 	lsls r0, r0, #2
-	bl playSoundMaybe
+	bl playSound
 	mov r0, r8
 	ldr r4, [r0, #0x1c]
 	movs r1, #0xac
@@ -35725,7 +35725,7 @@ sub_080B1E14: @ 0x080B1E14
 	movs r1, #2
 	bl sub_080639B4
 	ldr r0, _080B1F00 @ =0x000002FB
-	bl playSoundMaybe
+	bl playSound
 	ldr r1, [r6, #0x1c]
 	movs r0, #0xb0
 	lsls r0, r0, #1
@@ -35838,7 +35838,7 @@ sub_080B1F34: @ 0x080B1F34
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _080B1F4C @ =0x0000044C
-	bl playSoundMaybe
+	bl playSound
 	adds r0, r4, #0
 	bl sub_08078700
 	pop {r4}
@@ -36002,7 +36002,7 @@ sub_080B2080: @ 0x080B2080
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _080B2098 @ =0x0000044C
-	bl playSoundMaybe
+	bl playSound
 	adds r0, r4, #0
 	bl sub_08078700
 	pop {r4}
@@ -36172,7 +36172,7 @@ sub_080B21D0: @ 0x080B21D0
 	adds r4, r0, #0
 	movs r0, #0xac
 	lsls r0, r0, #3
-	bl playSoundMaybe
+	bl playSound
 	adds r0, r4, #0
 	bl sub_08078700
 	pop {r4}
@@ -36199,7 +36199,7 @@ sub_080B21FC: @ 0x080B21FC
 	adds r6, r0, #0
 	bl nullsub_37
 	ldr r0, _080B2300 @ =0x00000611
-	bl playSoundMaybe
+	bl playSound
 	add r0, sp, #0xc
 	mov r8, r0
 	movs r7, #0xb0
@@ -36401,7 +36401,7 @@ sub_080B23B0: @ 0x080B23B0
 	sub sp, #0x10
 	adds r5, r0, #0
 	ldr r0, _080B2424 @ =0x00000613
-	bl playSoundMaybe
+	bl playSound
 	ldr r0, [r5, #0x1c]
 	movs r1, #0xac
 	lsls r1, r1, #2
@@ -36463,7 +36463,7 @@ sub_080B242C: @ 0x080B242C
 	adds r7, r0, #0
 	bl nullsub_37
 	ldr r0, _080B2550 @ =0x00000613
-	bl playSoundMaybe
+	bl playSound
 	ldr r1, [r7, #0x1c]
 	movs r0, #0xac
 	lsls r0, r0, #2
@@ -36500,7 +36500,7 @@ sub_080B242C: @ 0x080B242C
 	movs r1, #2
 	bl sub_080639B4
 	ldr r0, _080B2554 @ =0x00000634
-	bl playSoundMaybe
+	bl playSound
 	ldr r1, [r7, #0x1c]
 	adds r1, r1, r6
 	movs r2, #0
@@ -37026,7 +37026,7 @@ sub_080B2848: @ 0x080B2848
 	adds r6, r0, #0
 	movs r0, #0xb8
 	lsls r0, r0, #2
-	bl playSoundMaybe
+	bl playSound
 	cmp r6, #0
 	beq _080B293C
 	ldr r4, [r7, #0x1c]
@@ -37158,7 +37158,7 @@ sub_080B29C8: @ 0x080B29C8
 	adds r6, r0, #0
 	bl nullsub_37
 	ldr r0, _080B2A50 @ =0x0000055D
-	bl playSoundMaybe
+	bl playSound
 	movs r0, #0x41
 	bl sub_08072F54
 	adds r3, r0, #0
@@ -37244,7 +37244,7 @@ sub_080B2A80: @ 0x080B2A80
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _080B2A98 @ =0x0000044C
-	bl playSoundMaybe
+	bl playSound
 	adds r0, r4, #0
 	bl sub_08078700
 	pop {r4}
@@ -37524,7 +37524,7 @@ sub_080B2CBC: @ 0x080B2CBC
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _080B2CD4 @ =0x0000044C
-	bl playSoundMaybe
+	bl playSound
 	adds r0, r4, #0
 	bl sub_08078700
 	pop {r4}
@@ -40863,7 +40863,7 @@ _080B467C:
 	bl sub_0807068C
 	movs r0, #0xc2
 	lsls r0, r0, #3
-	bl playSoundMaybe
+	bl playSound
 	ldr r1, [r5, #0x1c]
 	movs r0, #0xb0
 	lsls r0, r0, #1
@@ -41946,7 +41946,7 @@ sub_080B4F68: @ 0x080B4F68
 	adds r4, r0, #0
 	movs r0, #0xc2
 	lsls r0, r0, #3
-	bl playSoundMaybe
+	bl playSound
 	ldr r1, [r4, #0x1c]
 	movs r5, #0xb0
 	lsls r5, r5, #1
@@ -59218,7 +59218,7 @@ sub_080BD9DC: @ 0x080BD9DC
 	cmp r0, #0
 	bgt _080BDA98
 	ldr r0, _080BDA90 @ =0x0000050A
-	bl playSoundMaybe
+	bl playSound
 	movs r0, #0x46
 	adds r1, r6, #0
 	adds r2, r6, #0

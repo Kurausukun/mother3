@@ -7,7 +7,7 @@ struct GuestSkillInfo {
     u8 id;
     MoveInfo move;
 };
-extern GuestSkillInfo gGuestSkillInfo[];
+extern GuestSkillInfo gGuestSkillData2[];
 
 class GuestSkill : public Skill {
 public:
@@ -17,30 +17,30 @@ public:
     void* getInstance();
 
     Skill* skill_1c0();
-    u16 getID() const;
+    u16 id() const;
     Skill* skill_1d0(Skill*);
     Skill* skill_1d8(Skill*);
     u32 skill_1e0();
-    u32 getEffect() const;
-    u32 getElement() const;
-    u32 getTarget() const;
-    u32 getAttackMult() const;
-    u32 getHealLo() const;
-    u32 getHealHi() const;
-    u32 getAilment() const;
-    u32 getAilmentChance() const;
+    u32 effect() const;
+    u32 element() const;
+    u32 target() const;
+    u32 attackMult() const;
+    u32 healLo() const;
+    u32 healHi() const;
+    u32 ailment() const;
+    u32 ailmentChance() const;
     u32 hasAction() const;
-    u32 getPriority() const;
+    u32 priority() const;
     Skill* skill_238(Skill* s);
     Skill* skill_240(Skill* s);
-    u32 getTextBank() const;
-    u32 getTextNo() const;
-    u32 getAnimBank() const;
-    u16 getNextAnim() const;
-    u32 getAnimNo() const;
-    u32 getSfxBank() const;
-    u32 getSfxNo() const;
-    bool canMiss() const;
+    u32 hasDim() const;
+    u32 animNo() const;
+    u32 successAnimNo() const;
+    u16 nextAnim() const;
+    u32 sfxNo() const;
+    u32 missChance() const;
+    u32 critChance() const;
+    bool redirectable() const;
     u32 skill_288();
     u32 skill_290();
     u32 skill_298();

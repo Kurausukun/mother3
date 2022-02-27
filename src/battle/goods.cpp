@@ -30,7 +30,7 @@ Skill* Goods::skill_1c0() {
     return this;
 }
 
-u16 Goods::getID() const {
+u16 Goods::id() const {
     return mInfo->item_id;
 }
 
@@ -39,7 +39,7 @@ u32 Goods::goods_2a0() const {
 }
 
 Skill* Goods::skill_1d0(Skill* s) {
-    sub_08064980(s->getID());
+    sub_08064980(s->id());
     return this;
 }
 
@@ -49,35 +49,35 @@ u32 Goods::skill_1e0() {
     return 0;
 }
 
-u32 Goods::getEffect() const {
+u32 Goods::effect() const {
     return mInfo->action.effect;
 }
 
-u32 Goods::getElement() const {
+u32 Goods::element() const {
     return mInfo->action.element;
 }
 
-u32 Goods::getTarget() const {
+u32 Goods::target() const {
     return (u16)*(u32*)&mInfo->action.target;
 }
 
-u32 Goods::getAttackMult() const {
+u32 Goods::attackMult() const {
     return mInfo->action.atk_mult;
 }
 
-u32 Goods::getHealLo() const {
+u32 Goods::healLo() const {
     return mInfo->action.heal_lo;
 }
 
-u32 Goods::getHealHi() const {
+u32 Goods::healHi() const {
     return mInfo->action.heal_hi;
 }
 
-u32 Goods::getAilment() const {
+u32 Goods::ailment() const {
     return mInfo->action.ailment;
 }
 
-u32 Goods::getAilmentChance() const {
+u32 Goods::ailmentChance() const {
     return mInfo->action.ailment_chance;
 }
 
@@ -86,7 +86,7 @@ u32 Goods::hasAction() const {
     return action ? 1 : 0;
 }
 
-u32 Goods::getPriority() const {
+u32 Goods::priority() const {
     return mInfo->action.priority;
 }
 
@@ -95,9 +95,9 @@ NONMATCH("asm/non_matching/goods/skill_238.inc", Skill* Goods::skill_238(Skill* 
     Goods* o = reinterpret_cast<Goods*>(s);
 
     if (o->skill_188() == 1 && o->skill_190(0) == o->skill_168()) {
-        sub_08073444(o->sub_08064D68(o->mInfo->action.text_no));
+        sub_08073444(o->sub_08064D68(o->mInfo->action.anim_no));
     } else {
-        sub_08073444(o->sub_08064D68(o->mInfo->action.text_no + 1));
+        sub_08073444(o->sub_08064D68(o->mInfo->action.anim_no + 1));
     }
     return this;
 }
@@ -135,47 +135,47 @@ Skill* Goods::skill_240(Skill* s) {
     Goods* o = reinterpret_cast<Goods*>(s);
 
     if (o->skill_188() == 1 && o->skill_190(0) == o->skill_168()) {
-        sub_08073444(o->mInfo->action.unk2);
+        sub_08073444(o->mInfo->action.msg_no);
     } else {
-        sub_08073444(o->mInfo->action.unk2 + 1);
+        sub_08073444(o->mInfo->action.msg_no + 1);
     }
     return this;
 }
 
-u32 Goods::getTextBank() const {
-    u32 bank = mInfo->action.text_bank;
+u32 Goods::hasDim() const {
+    u32 bank = mInfo->action.has_dim;
     return bank ? 1 : 0;
 }
 
-u32 Goods::getTextNo() const {
-    return mInfo->action.text_no;
-}
-
-u32 Goods::getAnimBank() const {
-    return mInfo->action.anim_bank;
-}
-
-u16 Goods::getNextAnim() const {
-    if (!getNextAnim()) {
-        return 0;
-    }
-    return getNextAnim() + 1;
-}
-
-u32 Goods::getAnimNo() const {
+u32 Goods::animNo() const {
     return mInfo->action.anim_no;
 }
 
-u32 Goods::getSfxBank() const {
-    return 100 - mInfo->action.sfx_bank;
+u32 Goods::successAnimNo() const {
+    return mInfo->action.anim_success;
 }
 
-u32 Goods::getSfxNo() const {
+u16 Goods::nextAnim() const {
+    if (!nextAnim()) {
+        return 0;
+    }
+    return nextAnim() + 1;
+}
+
+u32 Goods::sfxNo() const {
     return mInfo->action.sfx_no;
 }
 
-bool Goods::canMiss() const {
-    return mInfo->action.miss_chance != 0;
+u32 Goods::missChance() const {
+    return 100 - mInfo->action.miss_chance;
+}
+
+u32 Goods::critChance() const {
+    return mInfo->action.smash_chance;
+}
+
+bool Goods::redirectable() const {
+    return mInfo->action.redirectable != 0;
 }
 
 u32 Goods::skill_288() {

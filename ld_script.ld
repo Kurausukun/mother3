@@ -124,6 +124,8 @@ SECTIONS
 	ALIGN(4)
     {
         data/data1.o(.rodata);
+        src/battle/monsterSkillData.o(.rodata);
+        data/data1b.o(.rodata);
         data/data2.o(.rodata);
 
         *libc.a:impure.o(.rodata);

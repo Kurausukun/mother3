@@ -828,7 +828,7 @@ sub_0805DE24: @ 0x0805DE24
 	movs r1, #0
 	ldrsh r0, [r4, r1]
 	adds r5, r5, r0
-	ldr r2, _0805DEAC @ =gEnemyData
+	ldr r2, _0805DEAC @ =gMonsterData
 	mov r8, r2
 	movs r0, #0
 	bl sub_08072E18
@@ -873,7 +873,7 @@ sub_0805DE24: @ 0x0805DE24
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0805DEAC: .4byte gEnemyData
+_0805DEAC: .4byte gMonsterData
 
 	thumb_func_start sub_0805DEB0
 sub_0805DEB0: @ 0x0805DEB0
@@ -2427,12 +2427,12 @@ sub_0805EADC: @ 0x0805EADC
 	ldr r0, _0805EAE8 @ =gEncounter
 	ldrh r0, [r0, #0xa]
 	lsls r0, r0, #4
-	ldr r1, _0805EAEC @ =gUnknown_080EC930
+	ldr r1, _0805EAEC @ =gBattleGroupTable
 	adds r0, r0, r1
 	bx lr
 	.align 2, 0
 _0805EAE8: .4byte gEncounter
-_0805EAEC: .4byte gUnknown_080EC930
+_0805EAEC: .4byte gBattleGroupTable
 
 	thumb_func_start sub_0805EAF0
 sub_0805EAF0: @ 0x0805EAF0

@@ -988,7 +988,7 @@ sub_080786DC: @ 0x080786DC
 	bl _call_via_r1
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
-	bl playSoundMaybe
+	bl playSound
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -5352,7 +5352,7 @@ sub_0807A904: @ 0x0807A904
 	lsls r0, r0, #4
 	adds r0, r0, r4
 	lsls r0, r0, #2
-	ldr r1, _0807AAC0 @ =gLevelInfo
+	ldr r1, _0807AAC0 @ =gLevelStatTable
 	adds r0, r0, r1
 	str r0, [r2]
 	movs r1, #0x82
@@ -5480,7 +5480,7 @@ sub_0807A904: @ 0x0807A904
 _0807AAB4: .4byte vt_09F82070
 _0807AAB8: .4byte vt_09F820E8
 _0807AABC: .4byte gCharStats
-_0807AAC0: .4byte gLevelInfo
+_0807AAC0: .4byte gLevelStatTable
 _0807AAC4: .4byte 0x0000020A
 _0807AAC8: .4byte _vt.3Unk
 _0807AACC: .4byte _vt.10RoundBegin
@@ -6810,7 +6810,7 @@ sub_0807B528: @ 0x0807B528
 	cmp r0, #1
 	bne _0807B5A8
 	ldr r0, _0807B5D0 @ =0x0000044E
-	bl playSoundMaybe
+	bl playSound
 	ldr r2, [r7, #0x1c]
 	movs r0, #0xc4
 	lsls r0, r0, #1
@@ -6898,7 +6898,7 @@ sub_0807B5D4: @ 0x0807B5D4
 	cmp r0, #1
 	bne _0807B670
 	ldr r0, _0807B678 @ =0x00000427
-	bl playSoundMaybe
+	bl playSound
 	ldr r2, [r4, #0x1c]
 	movs r0, #0xc4
 	lsls r0, r0, #1
@@ -7483,7 +7483,7 @@ sub_0807BAE4: @ 0x0807BAE4
 	b _0807BB16
 _0807BB0E:
 	movs r0, #0xf5
-	bl playSoundMaybe
+	bl playSound
 	movs r0, #1
 _0807BB16:
 	pop {r4}

@@ -6,6 +6,25 @@
 
 struct CharStats;
 
+struct GuestID {
+    enum {
+        Empty,
+        Flint,
+        Lucas,
+        Duster,
+        Kumatora,
+        Boney,
+        Salsa,
+        Wess,
+        Thomas,
+        Ionia,
+        Fuel,
+        Alec,
+        Fassad,
+        Claus,
+    };
+};
+
 class Guest : public Unit {
 public:
     Guest() {}
@@ -95,7 +114,7 @@ extern CharStats gCharStats[];
 struct LevelInfo {
     u8 filler[324];
 };
-extern LevelInfo gLevelInfo[];
+extern LevelInfo gLevelStatTable[];
 
 extern "C" {
 CharStats* get_char_stats(u32 idx);
