@@ -6,12 +6,12 @@ void GuestFactory::init() {
     for (u32 i = 0; i < 16; i++) {
         put(i, DefaultGuestSingleton::init);
     }
-    put(8, ThomasSingleton::init);
-    put(10, FuelSingleton::init);
-    put(11, AlecSingleton::init);
-    put(7, WessSingleton::init);
-    put(12, FassadSingleton::init);
-    put(9, IoniaSingleton::init);
+    put(GuestID::Thomas, ThomasSingleton::init);
+    put(GuestID::Fuel, FuelSingleton::init);
+    put(GuestID::Alec, AlecSingleton::init);
+    put(GuestID::Wess, WessSingleton::init);
+    put(GuestID::Fassad, FassadSingleton::init);
+    put(GuestID::Ionia, IoniaSingleton::init);
 }
 
 void GuestFactory::put(u16 id, void* (*spawn)(u16 id)) {

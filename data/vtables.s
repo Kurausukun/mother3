@@ -13296,7 +13296,7 @@ vt_09F4D600::
 	.4byte skill_1c0__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getID__C10GuestSkill
+	.4byte id__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d0__10GuestSkillP5Skill
@@ -13311,34 +13311,34 @@ vt_09F4D600::
 	.4byte skill_1e0__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getEffect__C10GuestSkill
+	.4byte effect__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getElement__C10GuestSkill
+	.4byte element__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C10GuestSkill
+	.4byte target__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAttackMult__C10GuestSkill
+	.4byte attackMult__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getHealLo__C10GuestSkill
+	.4byte healLo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getHealHi__C10GuestSkill
+	.4byte healHi__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAilment__C10GuestSkill
+	.4byte ailment__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAilmentChance__C10GuestSkill
+	.4byte ailmentChance__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte hasAction__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getPriority__C10GuestSkill
+	.4byte priority__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A0B54
@@ -13347,28 +13347,28 @@ vt_09F4D600::
 	.4byte skill_240__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte getTextBank__C10GuestSkill
+	.4byte hasDim__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getTextNo__C10GuestSkill
+	.4byte animNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAnimBank__C10GuestSkill
+	.4byte successAnimNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getNextAnim__C10GuestSkill
+	.4byte nextAnim__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAnimNo__C10GuestSkill
+	.4byte sfxNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A0D48
 	.2byte 0
 	.2byte 0
-	.4byte getSfxNo__C10GuestSkill
+	.4byte critChance__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte canMiss__C10GuestSkill
+	.4byte redirectable__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte skill_288__10GuestSkill
@@ -13550,7 +13550,7 @@ vt_09F4D8A0::
 	.4byte skill_1c0__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getID__C10GuestSkill
+	.4byte id__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d0__10GuestSkillP5Skill
@@ -13565,34 +13565,34 @@ vt_09F4D8A0::
 	.4byte skill_1e0__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getEffect__C10GuestSkill
+	.4byte effect__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getElement__C10GuestSkill
+	.4byte element__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C10GuestSkill
+	.4byte target__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAttackMult__C10GuestSkill
+	.4byte attackMult__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getHealLo__C10GuestSkill
+	.4byte healLo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getHealHi__C10GuestSkill
+	.4byte healHi__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAilment__C10GuestSkill
+	.4byte ailment__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAilmentChance__C10GuestSkill
+	.4byte ailmentChance__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte hasAction__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getPriority__C10GuestSkill
+	.4byte priority__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte skill_238__10GuestSkillP5Skill
@@ -13601,28 +13601,28 @@ vt_09F4D8A0::
 	.4byte skill_240__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte getTextBank__C10GuestSkill
+	.4byte hasDim__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getTextNo__C10GuestSkill
+	.4byte animNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAnimBank__C10GuestSkill
+	.4byte successAnimNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getNextAnim__C10GuestSkill
+	.4byte nextAnim__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAnimNo__C10GuestSkill
+	.4byte sfxNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A0D48
 	.2byte 0
 	.2byte 0
-	.4byte getSfxNo__C10GuestSkill
+	.4byte critChance__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte canMiss__C10GuestSkill
+	.4byte redirectable__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte skill_288__10GuestSkill
@@ -13804,7 +13804,7 @@ vt_09F4DB40::
 	.4byte skill_1c0__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getID__C10GuestSkill
+	.4byte id__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d0__10GuestSkillP5Skill
@@ -13819,34 +13819,34 @@ vt_09F4DB40::
 	.4byte skill_1e0__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getEffect__C10GuestSkill
+	.4byte effect__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getElement__C10GuestSkill
+	.4byte element__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C10GuestSkill
+	.4byte target__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAttackMult__C10GuestSkill
+	.4byte attackMult__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getHealLo__C10GuestSkill
+	.4byte healLo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getHealHi__C10GuestSkill
+	.4byte healHi__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAilment__C10GuestSkill
+	.4byte ailment__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAilmentChance__C10GuestSkill
+	.4byte ailmentChance__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte hasAction__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getPriority__C10GuestSkill
+	.4byte priority__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte skill_238__10GuestSkillP5Skill
@@ -13855,28 +13855,28 @@ vt_09F4DB40::
 	.4byte skill_240__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte getTextBank__C10GuestSkill
+	.4byte hasDim__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getTextNo__C10GuestSkill
+	.4byte animNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAnimBank__C10GuestSkill
+	.4byte successAnimNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getNextAnim__C10GuestSkill
+	.4byte nextAnim__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAnimNo__C10GuestSkill
+	.4byte sfxNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A0D48
 	.2byte 0
 	.2byte 0
-	.4byte getSfxNo__C10GuestSkill
+	.4byte critChance__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte canMiss__C10GuestSkill
+	.4byte redirectable__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte skill_288__10GuestSkill
@@ -14058,7 +14058,7 @@ vt_09F4DDE0::
 	.4byte skill_1c0__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getID__C10GuestSkill
+	.4byte id__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d0__10GuestSkillP5Skill
@@ -14073,34 +14073,34 @@ vt_09F4DDE0::
 	.4byte skill_1e0__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getEffect__C10GuestSkill
+	.4byte effect__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getElement__C10GuestSkill
+	.4byte element__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C10GuestSkill
+	.4byte target__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAttackMult__C10GuestSkill
+	.4byte attackMult__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getHealLo__C10GuestSkill
+	.4byte healLo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getHealHi__C10GuestSkill
+	.4byte healHi__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAilment__C10GuestSkill
+	.4byte ailment__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAilmentChance__C10GuestSkill
+	.4byte ailmentChance__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte hasAction__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getPriority__C10GuestSkill
+	.4byte priority__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte skill_238__10GuestSkillP5Skill
@@ -14109,28 +14109,28 @@ vt_09F4DDE0::
 	.4byte skill_240__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte getTextBank__C10GuestSkill
+	.4byte hasDim__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getTextNo__C10GuestSkill
+	.4byte animNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAnimBank__C10GuestSkill
+	.4byte successAnimNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getNextAnim__C10GuestSkill
+	.4byte nextAnim__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAnimNo__C10GuestSkill
+	.4byte sfxNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A0D48
 	.2byte 0
 	.2byte 0
-	.4byte getSfxNo__C10GuestSkill
+	.4byte critChance__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte canMiss__C10GuestSkill
+	.4byte redirectable__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte skill_288__10GuestSkill
@@ -14312,7 +14312,7 @@ vt_09F4E080::
 	.4byte skill_1c0__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getID__C10GuestSkill
+	.4byte id__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d0__10GuestSkillP5Skill
@@ -14327,34 +14327,34 @@ vt_09F4E080::
 	.4byte skill_1e0__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getEffect__C10GuestSkill
+	.4byte effect__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getElement__C10GuestSkill
+	.4byte element__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C10GuestSkill
+	.4byte target__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAttackMult__C10GuestSkill
+	.4byte attackMult__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getHealLo__C10GuestSkill
+	.4byte healLo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getHealHi__C10GuestSkill
+	.4byte healHi__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAilment__C10GuestSkill
+	.4byte ailment__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAilmentChance__C10GuestSkill
+	.4byte ailmentChance__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte hasAction__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getPriority__C10GuestSkill
+	.4byte priority__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte skill_238__10GuestSkillP5Skill
@@ -14363,28 +14363,28 @@ vt_09F4E080::
 	.4byte skill_240__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte getTextBank__C10GuestSkill
+	.4byte hasDim__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getTextNo__C10GuestSkill
+	.4byte animNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAnimBank__C10GuestSkill
+	.4byte successAnimNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getNextAnim__C10GuestSkill
+	.4byte nextAnim__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAnimNo__C10GuestSkill
+	.4byte sfxNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A0D48
 	.2byte 0
 	.2byte 0
-	.4byte getSfxNo__C10GuestSkill
+	.4byte critChance__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte canMiss__C10GuestSkill
+	.4byte redirectable__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte skill_288__10GuestSkill
@@ -81909,7 +81909,7 @@ _vt.5Goods::
 	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getID__C5Goods
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d0__5GoodsP5Skill
@@ -81924,34 +81924,34 @@ _vt.5Goods::
 	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getEffect__C5Goods
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getElement__C5Goods
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Goods
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAttackMult__C5Goods
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealLo__C5Goods
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealHi__C5Goods
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilment__C5Goods
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilmentChance__C5Goods
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getPriority__C5Goods
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_238__5GoodsP5Skill
@@ -81960,28 +81960,28 @@ _vt.5Goods::
 	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte getTextBank__C5Goods
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTextNo__C5Goods
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimBank__C5Goods
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getNextAnim__C5Goods
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimNo__C5Goods
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getSfxBank__C5Goods
+	.4byte missChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getSfxNo__C5Goods
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte canMiss__C5Goods
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_288__5Goods
@@ -82189,7 +82189,7 @@ vt_09F79D38::
 	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getID__C5Goods
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d0__5GoodsP5Skill
@@ -82204,34 +82204,34 @@ vt_09F79D38::
 	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getEffect__C5Goods
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getElement__C5Goods
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Goods
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAttackMult__C5Goods
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealLo__C5Goods
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealHi__C5Goods
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilment__C5Goods
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilmentChance__C5Goods
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getPriority__C5Goods
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_238__5GoodsP5Skill
@@ -82240,28 +82240,28 @@ vt_09F79D38::
 	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte getTextBank__C5Goods
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTextNo__C5Goods
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimBank__C5Goods
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getNextAnim__C5Goods
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimNo__C5Goods
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte getSfxNo__C5Goods
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte canMiss__C5Goods
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_288__5Goods
@@ -82467,7 +82467,7 @@ vt_09F7A018::
 	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getID__C5Goods
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d0__5GoodsP5Skill
@@ -82482,34 +82482,34 @@ vt_09F7A018::
 	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getEffect__C5Goods
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getElement__C5Goods
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Goods
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAttackMult__C5Goods
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealLo__C5Goods
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealHi__C5Goods
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilment__C5Goods
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilmentChance__C5Goods
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getPriority__C5Goods
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_238__5GoodsP5Skill
@@ -82518,28 +82518,28 @@ vt_09F7A018::
 	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte getTextBank__C5Goods
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTextNo__C5Goods
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimBank__C5Goods
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getNextAnim__C5Goods
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimNo__C5Goods
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte getSfxNo__C5Goods
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte canMiss__C5Goods
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_288__5Goods
@@ -82745,7 +82745,7 @@ vt_09F7A2F8::
 	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getID__C5Goods
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d0__5GoodsP5Skill
@@ -82760,34 +82760,34 @@ vt_09F7A2F8::
 	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getEffect__C5Goods
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getElement__C5Goods
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Goods
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAttackMult__C5Goods
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealLo__C5Goods
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealHi__C5Goods
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilment__C5Goods
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilmentChance__C5Goods
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getPriority__C5Goods
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_238__5GoodsP5Skill
@@ -82796,28 +82796,28 @@ vt_09F7A2F8::
 	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte getTextBank__C5Goods
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTextNo__C5Goods
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimBank__C5Goods
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getNextAnim__C5Goods
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimNo__C5Goods
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte getSfxNo__C5Goods
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte canMiss__C5Goods
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_288__5Goods
@@ -83023,7 +83023,7 @@ vt_09F7A5D8::
 	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getID__C5Goods
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d0__5GoodsP5Skill
@@ -83038,34 +83038,34 @@ vt_09F7A5D8::
 	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getEffect__C5Goods
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getElement__C5Goods
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Goods
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAttackMult__C5Goods
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealLo__C5Goods
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealHi__C5Goods
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilment__C5Goods
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilmentChance__C5Goods
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getPriority__C5Goods
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_238__5GoodsP5Skill
@@ -83074,28 +83074,28 @@ vt_09F7A5D8::
 	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte getTextBank__C5Goods
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTextNo__C5Goods
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimBank__C5Goods
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getNextAnim__C5Goods
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimNo__C5Goods
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte getSfxNo__C5Goods
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte canMiss__C5Goods
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_288__5Goods
@@ -83301,7 +83301,7 @@ vt_09F7A8B8::
 	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getID__C5Goods
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d0__5GoodsP5Skill
@@ -83316,34 +83316,34 @@ vt_09F7A8B8::
 	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getEffect__C5Goods
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getElement__C5Goods
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Goods
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAttackMult__C5Goods
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealLo__C5Goods
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealHi__C5Goods
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilment__C5Goods
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilmentChance__C5Goods
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getPriority__C5Goods
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_238__5GoodsP5Skill
@@ -83352,28 +83352,28 @@ vt_09F7A8B8::
 	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte getTextBank__C5Goods
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTextNo__C5Goods
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimBank__C5Goods
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getNextAnim__C5Goods
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimNo__C5Goods
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte getSfxNo__C5Goods
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte canMiss__C5Goods
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_288__5Goods
@@ -83579,7 +83579,7 @@ vt_09F7AB98::
 	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getID__C5Goods
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d0__5GoodsP5Skill
@@ -83594,34 +83594,34 @@ vt_09F7AB98::
 	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getEffect__C5Goods
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getElement__C5Goods
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Goods
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAttackMult__C5Goods
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealLo__C5Goods
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealHi__C5Goods
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilment__C5Goods
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilmentChance__C5Goods
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getPriority__C5Goods
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_238__5GoodsP5Skill
@@ -83630,28 +83630,28 @@ vt_09F7AB98::
 	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte getTextBank__C5Goods
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTextNo__C5Goods
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimBank__C5Goods
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getNextAnim__C5Goods
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimNo__C5Goods
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte getSfxNo__C5Goods
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte canMiss__C5Goods
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_288__5Goods
@@ -83857,7 +83857,7 @@ vt_09F7AE78::
 	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getID__C5Goods
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d0__5GoodsP5Skill
@@ -83872,34 +83872,34 @@ vt_09F7AE78::
 	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getEffect__C5Goods
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getElement__C5Goods
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Goods
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAttackMult__C5Goods
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealLo__C5Goods
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealHi__C5Goods
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilment__C5Goods
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilmentChance__C5Goods
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getPriority__C5Goods
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_238__5GoodsP5Skill
@@ -83908,28 +83908,28 @@ vt_09F7AE78::
 	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte getTextBank__C5Goods
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTextNo__C5Goods
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimBank__C5Goods
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getNextAnim__C5Goods
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimNo__C5Goods
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte getSfxNo__C5Goods
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte canMiss__C5Goods
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_288__5Goods
@@ -84135,7 +84135,7 @@ vt_09F7B158::
 	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getID__C5Goods
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d0__5GoodsP5Skill
@@ -84150,34 +84150,34 @@ vt_09F7B158::
 	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getEffect__C5Goods
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getElement__C5Goods
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Goods
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAttackMult__C5Goods
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealLo__C5Goods
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealHi__C5Goods
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilment__C5Goods
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilmentChance__C5Goods
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getPriority__C5Goods
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_238__5GoodsP5Skill
@@ -84186,28 +84186,28 @@ vt_09F7B158::
 	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte getTextBank__C5Goods
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTextNo__C5Goods
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimBank__C5Goods
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getNextAnim__C5Goods
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimNo__C5Goods
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte getSfxNo__C5Goods
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte canMiss__C5Goods
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_288__5Goods
@@ -84413,7 +84413,7 @@ vt_09F7B438::
 	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getID__C5Goods
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d0__5GoodsP5Skill
@@ -84428,34 +84428,34 @@ vt_09F7B438::
 	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getEffect__C5Goods
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getElement__C5Goods
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Goods
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAttackMult__C5Goods
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealLo__C5Goods
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealHi__C5Goods
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilment__C5Goods
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilmentChance__C5Goods
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getPriority__C5Goods
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_238__5GoodsP5Skill
@@ -84464,28 +84464,28 @@ vt_09F7B438::
 	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte getTextBank__C5Goods
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTextNo__C5Goods
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimBank__C5Goods
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getNextAnim__C5Goods
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimNo__C5Goods
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte getSfxNo__C5Goods
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte canMiss__C5Goods
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_288__5Goods
@@ -84691,7 +84691,7 @@ vt_09F7B718::
 	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getID__C5Goods
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d0__5GoodsP5Skill
@@ -84706,34 +84706,34 @@ vt_09F7B718::
 	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getEffect__C5Goods
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getElement__C5Goods
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Goods
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAttackMult__C5Goods
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealLo__C5Goods
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealHi__C5Goods
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilment__C5Goods
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilmentChance__C5Goods
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getPriority__C5Goods
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_238__5GoodsP5Skill
@@ -84742,28 +84742,28 @@ vt_09F7B718::
 	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte getTextBank__C5Goods
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTextNo__C5Goods
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimBank__C5Goods
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getNextAnim__C5Goods
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimNo__C5Goods
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte getSfxNo__C5Goods
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte canMiss__C5Goods
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_288__5Goods
@@ -84969,7 +84969,7 @@ vt_09F7B9F8::
 	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getID__C5Goods
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d0__5GoodsP5Skill
@@ -84984,34 +84984,34 @@ vt_09F7B9F8::
 	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getEffect__C5Goods
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getElement__C5Goods
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Goods
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAttackMult__C5Goods
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealLo__C5Goods
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealHi__C5Goods
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilment__C5Goods
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilmentChance__C5Goods
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getPriority__C5Goods
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_238__5GoodsP5Skill
@@ -85020,28 +85020,28 @@ vt_09F7B9F8::
 	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte getTextBank__C5Goods
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTextNo__C5Goods
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimBank__C5Goods
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getNextAnim__C5Goods
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimNo__C5Goods
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte getSfxNo__C5Goods
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte canMiss__C5Goods
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_288__5Goods
@@ -85247,7 +85247,7 @@ vt_09F7BCD8::
 	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getID__C5Goods
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d0__5GoodsP5Skill
@@ -85262,34 +85262,34 @@ vt_09F7BCD8::
 	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getEffect__C5Goods
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getElement__C5Goods
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Goods
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAttackMult__C5Goods
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealLo__C5Goods
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealHi__C5Goods
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilment__C5Goods
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilmentChance__C5Goods
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getPriority__C5Goods
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_238__5GoodsP5Skill
@@ -85298,28 +85298,28 @@ vt_09F7BCD8::
 	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte getTextBank__C5Goods
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTextNo__C5Goods
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimBank__C5Goods
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getNextAnim__C5Goods
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimNo__C5Goods
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte getSfxNo__C5Goods
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte canMiss__C5Goods
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_288__5Goods
@@ -85525,7 +85525,7 @@ vt_09F7BFB8::
 	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getID__C5Goods
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d0__5GoodsP5Skill
@@ -85540,34 +85540,34 @@ vt_09F7BFB8::
 	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getEffect__C5Goods
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getElement__C5Goods
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Goods
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAttackMult__C5Goods
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealLo__C5Goods
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealHi__C5Goods
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilment__C5Goods
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilmentChance__C5Goods
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getPriority__C5Goods
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_238__5GoodsP5Skill
@@ -85576,28 +85576,28 @@ vt_09F7BFB8::
 	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte getTextBank__C5Goods
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTextNo__C5Goods
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimBank__C5Goods
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getNextAnim__C5Goods
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimNo__C5Goods
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte getSfxNo__C5Goods
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte canMiss__C5Goods
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_288__5Goods
@@ -85803,7 +85803,7 @@ vt_09F7C298::
 	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getID__C5Goods
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d0__5GoodsP5Skill
@@ -85818,34 +85818,34 @@ vt_09F7C298::
 	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getEffect__C5Goods
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getElement__C5Goods
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Goods
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAttackMult__C5Goods
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealLo__C5Goods
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealHi__C5Goods
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilment__C5Goods
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilmentChance__C5Goods
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getPriority__C5Goods
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_238__5GoodsP5Skill
@@ -85854,28 +85854,28 @@ vt_09F7C298::
 	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte getTextBank__C5Goods
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTextNo__C5Goods
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimBank__C5Goods
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getNextAnim__C5Goods
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimNo__C5Goods
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte getSfxNo__C5Goods
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte canMiss__C5Goods
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_288__5Goods
@@ -86081,7 +86081,7 @@ vt_09F7C578::
 	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getID__C5Goods
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d0__5GoodsP5Skill
@@ -86096,34 +86096,34 @@ vt_09F7C578::
 	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getEffect__C5Goods
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getElement__C5Goods
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Goods
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAttackMult__C5Goods
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealLo__C5Goods
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealHi__C5Goods
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilment__C5Goods
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilmentChance__C5Goods
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getPriority__C5Goods
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_238__5GoodsP5Skill
@@ -86132,28 +86132,28 @@ vt_09F7C578::
 	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte getTextBank__C5Goods
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTextNo__C5Goods
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimBank__C5Goods
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getNextAnim__C5Goods
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimNo__C5Goods
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte getSfxNo__C5Goods
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte canMiss__C5Goods
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_288__5Goods
@@ -86359,7 +86359,7 @@ vt_09F7C858::
 	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getID__C5Goods
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d0__5GoodsP5Skill
@@ -86374,34 +86374,34 @@ vt_09F7C858::
 	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getEffect__C5Goods
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getElement__C5Goods
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Goods
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAttackMult__C5Goods
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealLo__C5Goods
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealHi__C5Goods
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilment__C5Goods
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilmentChance__C5Goods
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getPriority__C5Goods
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_238__5GoodsP5Skill
@@ -86410,28 +86410,28 @@ vt_09F7C858::
 	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte getTextBank__C5Goods
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTextNo__C5Goods
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimBank__C5Goods
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getNextAnim__C5Goods
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimNo__C5Goods
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte getSfxNo__C5Goods
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte canMiss__C5Goods
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_288__5Goods
@@ -86637,7 +86637,7 @@ vt_09F7CB38::
 	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getID__C5Goods
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d0__5GoodsP5Skill
@@ -86652,34 +86652,34 @@ vt_09F7CB38::
 	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getEffect__C5Goods
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getElement__C5Goods
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Goods
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAttackMult__C5Goods
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealLo__C5Goods
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealHi__C5Goods
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilment__C5Goods
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilmentChance__C5Goods
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getPriority__C5Goods
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_238__5GoodsP5Skill
@@ -86688,28 +86688,28 @@ vt_09F7CB38::
 	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte getTextBank__C5Goods
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTextNo__C5Goods
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimBank__C5Goods
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getNextAnim__C5Goods
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimNo__C5Goods
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte getSfxNo__C5Goods
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte canMiss__C5Goods
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_288__5Goods
@@ -86915,7 +86915,7 @@ vt_09F7CE18::
 	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getID__C5Goods
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d0__5GoodsP5Skill
@@ -86930,34 +86930,34 @@ vt_09F7CE18::
 	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getEffect__C5Goods
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getElement__C5Goods
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Goods
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAttackMult__C5Goods
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealLo__C5Goods
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealHi__C5Goods
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilment__C5Goods
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilmentChance__C5Goods
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getPriority__C5Goods
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_238__5GoodsP5Skill
@@ -86966,28 +86966,28 @@ vt_09F7CE18::
 	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte getTextBank__C5Goods
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTextNo__C5Goods
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimBank__C5Goods
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getNextAnim__C5Goods
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimNo__C5Goods
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte getSfxNo__C5Goods
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte canMiss__C5Goods
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_288__5Goods
@@ -87193,7 +87193,7 @@ vt_09F7D0F8::
 	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getID__C5Goods
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d0__5GoodsP5Skill
@@ -87208,34 +87208,34 @@ vt_09F7D0F8::
 	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getEffect__C5Goods
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getElement__C5Goods
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Goods
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAttackMult__C5Goods
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealLo__C5Goods
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealHi__C5Goods
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilment__C5Goods
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilmentChance__C5Goods
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getPriority__C5Goods
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_238__5GoodsP5Skill
@@ -87244,28 +87244,28 @@ vt_09F7D0F8::
 	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte getTextBank__C5Goods
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTextNo__C5Goods
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimBank__C5Goods
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getNextAnim__C5Goods
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimNo__C5Goods
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte getSfxNo__C5Goods
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte canMiss__C5Goods
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_288__5Goods
@@ -87471,7 +87471,7 @@ vt_09F7D3D8::
 	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getID__C5Goods
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d0__5GoodsP5Skill
@@ -87486,16 +87486,16 @@ vt_09F7D3D8::
 	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getEffect__C5Goods
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getElement__C5Goods
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Goods
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAttackMult__C5Goods
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BFEE4
@@ -87504,16 +87504,16 @@ vt_09F7D3D8::
 	.4byte sub_080BFECC
 	.2byte 0
 	.2byte 0
-	.4byte getAilment__C5Goods
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilmentChance__C5Goods
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getPriority__C5Goods
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_238__5GoodsP5Skill
@@ -87522,28 +87522,28 @@ vt_09F7D3D8::
 	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte getTextBank__C5Goods
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTextNo__C5Goods
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimBank__C5Goods
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getNextAnim__C5Goods
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimNo__C5Goods
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte getSfxNo__C5Goods
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte canMiss__C5Goods
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_288__5Goods
@@ -87749,7 +87749,7 @@ vt_09F7D6B8::
 	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getID__C5Goods
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d0__5GoodsP5Skill
@@ -87764,34 +87764,34 @@ vt_09F7D6B8::
 	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getEffect__C5Goods
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getElement__C5Goods
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Goods
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAttackMult__C5Goods
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealLo__C5Goods
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealHi__C5Goods
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilment__C5Goods
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilmentChance__C5Goods
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getPriority__C5Goods
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_238__5GoodsP5Skill
@@ -87806,22 +87806,22 @@ vt_09F7D6B8::
 	.4byte sub_080C0064
 	.2byte 0
 	.2byte 0
-	.4byte getAnimBank__C5Goods
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getNextAnim__C5Goods
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimNo__C5Goods
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte getSfxNo__C5Goods
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte canMiss__C5Goods
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_288__5Goods
@@ -88030,7 +88030,7 @@ vt_09F7D9A0::
 	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getID__C5Goods
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d0__5GoodsP5Skill
@@ -88045,34 +88045,34 @@ vt_09F7D9A0::
 	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getEffect__C5Goods
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getElement__C5Goods
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Goods
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAttackMult__C5Goods
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealLo__C5Goods
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getHealHi__C5Goods
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilment__C5Goods
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAilmentChance__C5Goods
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getPriority__C5Goods
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_238__5GoodsP5Skill
@@ -88081,28 +88081,28 @@ vt_09F7D9A0::
 	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte getTextBank__C5Goods
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getTextNo__C5Goods
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimBank__C5Goods
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getNextAnim__C5Goods
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getAnimNo__C5Goods
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte getSfxNo__C5Goods
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte canMiss__C5Goods
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte skill_288__5Goods
@@ -96342,7 +96342,7 @@ _vt.10GuestSkill::
 	.4byte skill_1c0__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getID__C10GuestSkill
+	.4byte id__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d0__10GuestSkillP5Skill
@@ -96357,34 +96357,34 @@ _vt.10GuestSkill::
 	.4byte skill_1e0__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getEffect__C10GuestSkill
+	.4byte effect__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getElement__C10GuestSkill
+	.4byte element__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C10GuestSkill
+	.4byte target__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAttackMult__C10GuestSkill
+	.4byte attackMult__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getHealLo__C10GuestSkill
+	.4byte healLo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getHealHi__C10GuestSkill
+	.4byte healHi__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAilment__C10GuestSkill
+	.4byte ailment__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAilmentChance__C10GuestSkill
+	.4byte ailmentChance__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte hasAction__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getPriority__C10GuestSkill
+	.4byte priority__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte skill_238__10GuestSkillP5Skill
@@ -96393,28 +96393,28 @@ _vt.10GuestSkill::
 	.4byte skill_240__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte getTextBank__C10GuestSkill
+	.4byte hasDim__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getTextNo__C10GuestSkill
+	.4byte animNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAnimBank__C10GuestSkill
+	.4byte successAnimNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getNextAnim__C10GuestSkill
+	.4byte nextAnim__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAnimNo__C10GuestSkill
+	.4byte sfxNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getSfxBank__C10GuestSkill
+	.4byte missChance__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getSfxNo__C10GuestSkill
+	.4byte critChance__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte canMiss__C10GuestSkill
+	.4byte redirectable__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte skill_288__10GuestSkill

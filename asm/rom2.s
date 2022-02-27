@@ -1461,7 +1461,7 @@ sub_080775E8: @ 0x080775E8
 	adds r0, r4, #0
 	bl sub_08077A64
 	movs r0, #0xd1
-	bl playSoundMaybe
+	bl playSound
 _08077626:
 	pop {r4}
 	pop {r0}
@@ -1496,7 +1496,7 @@ sub_0807762C: @ 0x0807762C
 	adds r0, r4, #0
 	bl sub_08077A64
 	movs r0, #0xd1
-	bl playSoundMaybe
+	bl playSound
 _0807766A:
 	pop {r4}
 	pop {r0}
@@ -1529,7 +1529,7 @@ sub_08077670: @ 0x08077670
 	cmp r0, #1
 	bne _080776A8
 	movs r0, #0xd2
-	bl playSoundMaybe
+	bl playSound
 _080776A8:
 	pop {r0}
 	bx r0
@@ -1561,7 +1561,7 @@ sub_080776AC: @ 0x080776AC
 	cmp r0, #1
 	bne _080776E4
 	movs r0, #0xd3
-	bl playSoundMaybe
+	bl playSound
 _080776E4:
 	pop {r0}
 	bx r0

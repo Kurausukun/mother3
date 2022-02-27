@@ -1218,8 +1218,8 @@ _0807081C:
 	bx r0
 	.align 2, 0
 
-	thumb_func_start playSoundMaybe
-playSoundMaybe: @ 0x08070824
+	thumb_func_start playSound
+playSound: @ 0x08070824
 	push {lr}
 	sub sp, #0x38
 	lsls r0, r0, #0x10

@@ -2281,7 +2281,7 @@ _080BF062:
 	movs r1, #0x1a
 	bl _call_via_r2
 	ldr r0, _080BF0F8 @ =0x0000062B
-	bl playSoundMaybe
+	bl playSound
 	movs r0, #0xa6
 	adds r1, r5, #0
 	adds r2, r5, #0
@@ -3808,7 +3808,7 @@ sub_080BFCAC: @ 0x080BFCAC
 	adds r4, r0, #0
 	bl sub_08078784
 	ldr r0, _080BFD30 @ =0x0000055E
-	bl playSoundMaybe
+	bl playSound
 	ldr r1, [r4, #0x1c]
 	movs r0, #0xb0
 	lsls r0, r0, #1
@@ -3913,7 +3913,7 @@ sub_080BFD48: @ 0x080BFD48
 	movs r1, #2
 	bl sub_0806E308
 	ldr r0, _080BFE34 @ =0x00000452
-	bl playSoundMaybe
+	bl playSound
 	movs r0, #0
 	mov r8, r0
 	add r1, sp, #0x10
@@ -4054,7 +4054,7 @@ _080BFEC8: .4byte vt_09F7D9A0
 sub_080BFECC: @ 0x080BFECC
 	push {r4, lr}
 	adds r4, r0, #0
-	bl getHealHi__C5Goods
+	bl healHi__C5Goods
 	adds r4, #0x50
 	ldrh r1, [r4]
 	muls r0, r1, r0
@@ -4068,7 +4068,7 @@ sub_080BFECC: @ 0x080BFECC
 sub_080BFEE4: @ 0x080BFEE4
 	push {r4, lr}
 	adds r4, r0, #0
-	bl getHealLo__C5Goods
+	bl healLo__C5Goods
 	adds r4, #0x50
 	ldrh r1, [r4]
 	muls r0, r1, r0
@@ -4257,7 +4257,7 @@ sub_080C0048: @ 0x080C0048
 	cmp r0, #1
 	beq _080C005C
 	adds r0, r1, #0
-	bl getTextBank__C5Goods
+	bl hasDim__C5Goods
 	b _080C005E
 _080C005C:
 	movs r0, #0
@@ -4275,7 +4275,7 @@ sub_080C0064: @ 0x080C0064
 	cmp r0, #1
 	beq _080C007C
 	adds r0, r1, #0
-	bl getTextNo__C5Goods
+	bl animNo__C5Goods
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	b _080C007E
@@ -4780,7 +4780,7 @@ _080C05A4:
 sub_080C05AC: @ 0x080C05AC
 	push {r4, r5, lr}
 	adds r4, r0, #0
-	bl getSfxBank__C5Goods
+	bl missChance__C5Goods
 	adds r5, r0, #0
 	cmp r5, #0x63
 	bgt _080C062A

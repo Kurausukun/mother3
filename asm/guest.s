@@ -1551,7 +1551,7 @@ sub_0805FA48: @ 0x0805FA48
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	movs r5, #0
-	ldr r6, _0805FA88 @ =gLevelInfo
+	ldr r6, _0805FA88 @ =gLevelStatTable
 _0805FA50:
 	ldr r0, [r4, #0x24]
 	adds r0, r0, r5
@@ -1582,7 +1582,7 @@ _0805FA7C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0805FA88: .4byte gLevelInfo
+_0805FA88: .4byte gLevelStatTable
 
 	thumb_func_start sub_0805FA8C
 sub_0805FA8C: @ 0x0805FA8C
@@ -5644,7 +5644,7 @@ sub_08061AE8: @ 0x08061AE8
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	movs r4, #0
-	ldr r6, _08061B28 @ =gLevelInfo
+	ldr r6, _08061B28 @ =gLevelStatTable
 _08061AF0:
 	ldr r0, _08061B2C @ =gSave
 	adds r0, r4, r0
@@ -5675,7 +5675,7 @@ _08061B1C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08061B28: .4byte gLevelInfo
+_08061B28: .4byte gLevelStatTable
 _08061B2C: .4byte gSave
 
 	thumb_func_start sub_08061B30

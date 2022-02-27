@@ -3939,7 +3939,7 @@ sub_0807E44C: @ 0x0807E44C
 	adds r0, r4, #0
 	bl sub_0807E61C
 	movs r0, #0xd0
-	bl playSoundMaybe
+	bl playSound
 _0807E486:
 	pop {r4}
 	pop {r0}
@@ -3972,7 +3972,7 @@ sub_0807E48C: @ 0x0807E48C
 	adds r0, r4, #0
 	bl sub_0807E61C
 	movs r0, #0xd0
-	bl playSoundMaybe
+	bl playSound
 _0807E4C6:
 	pop {r4}
 	pop {r0}
@@ -4005,7 +4005,7 @@ sub_0807E4CC: @ 0x0807E4CC
 	adds r0, r4, #0
 	bl sub_0807E61C
 	movs r0, #0xd1
-	bl playSoundMaybe
+	bl playSound
 _0807E506:
 	pop {r4}
 	pop {r0}
@@ -4038,7 +4038,7 @@ sub_0807E50C: @ 0x0807E50C
 	adds r0, r4, #0
 	bl sub_0807E61C
 	movs r0, #0xd1
-	bl playSoundMaybe
+	bl playSound
 _0807E546:
 	pop {r4}
 	pop {r0}
@@ -4071,7 +4071,7 @@ sub_0807E54C: @ 0x0807E54C
 	adds r0, r4, #0
 	bl sub_0807E61C
 	movs r0, #0xda
-	bl playSoundMaybe
+	bl playSound
 _0807E586:
 	pop {r4}
 	pop {r0}
@@ -4104,13 +4104,13 @@ sub_0807E58C: @ 0x0807E58C
 	adds r0, r4, #0
 	bl sub_0807E61C
 	movs r0, #0xd2
-	bl playSoundMaybe
+	bl playSound
 	b _0807E5D4
 _0807E5C8:
 	adds r0, r4, #0
 	bl sub_0807E61C
 	movs r0, #0xd3
-	bl playSoundMaybe
+	bl playSound
 _0807E5D4:
 	pop {r4}
 	pop {r0}
@@ -4144,7 +4144,7 @@ sub_0807E5DC: @ 0x0807E5DC
 	adds r0, r4, #0
 	bl sub_0807E61C
 	movs r0, #0xd3
-	bl playSoundMaybe
+	bl playSound
 _0807E616:
 	pop {r4}
 	pop {r0}
@@ -4477,7 +4477,7 @@ _0807E7DE:
 	adds r0, r4, #0
 	bl sub_080867D4
 	mov r0, sp
-	bl getID__C5Goods
+	bl id__C5Goods
 	adds r1, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
@@ -7481,7 +7481,7 @@ sub_0808014C: @ 0x0808014C
 	adds r0, r4, #0
 	bl sub_080802A4
 	movs r0, #0xd1
-	bl playSoundMaybe
+	bl playSound
 	b _0808019C
 _08080180:
 	ldr r0, [r4, #0x2c]
@@ -7494,7 +7494,7 @@ _08080180:
 	adds r0, r4, #0
 	bl sub_080802A4
 	movs r0, #0xd1
-	bl playSoundMaybe
+	bl playSound
 _0808019C:
 	pop {r4}
 	pop {r0}
@@ -7524,7 +7524,7 @@ sub_080801A4: @ 0x080801A4
 	adds r0, r4, #0
 	bl sub_080802A4
 	movs r0, #0xd1
-	bl playSoundMaybe
+	bl playSound
 	b _080801F0
 _080801D8:
 	cmp r0, #0
@@ -7535,7 +7535,7 @@ _080801D8:
 	adds r0, r4, #0
 	bl sub_080802A4
 	movs r0, #0xd1
-	bl playSoundMaybe
+	bl playSound
 _080801F0:
 	pop {r4}
 	pop {r0}
@@ -7563,7 +7563,7 @@ sub_080801FC: @ 0x080801FC
 	movs r0, #1
 	str r0, [r1, #0x40]
 	movs r0, #0xd2
-	bl playSoundMaybe
+	bl playSound
 _0808021C:
 	pop {r0}
 	bx r0
@@ -7584,7 +7584,7 @@ sub_08080220: @ 0x08080220
 	movs r0, #2
 	str r0, [r1, #0x40]
 	movs r0, #0xd3
-	bl playSoundMaybe
+	bl playSound
 _08080240:
 	pop {r0}
 	bx r0
@@ -7823,7 +7823,7 @@ sub_080803F4: @ 0x080803F4
 	str r0, [r5, #0x1c]
 	movs r0, #0x2c
 	muls r0, r4, r0
-	ldr r1, _08080420 @ =gUnknown_080CF728
+	ldr r1, _08080420 @ =gGuestSkillData
 	adds r0, r0, r1
 	str r0, [r5, #0x48]
 	adds r0, r5, #0
@@ -7832,7 +7832,7 @@ sub_080803F4: @ 0x080803F4
 	bx r1
 	.align 2, 0
 _0808041C: .4byte vt_09F82A28
-_08080420: .4byte gUnknown_080CF728
+_08080420: .4byte gGuestSkillData
 
 	thumb_func_start sub_08080424
 sub_08080424: @ 0x08080424

@@ -25,7 +25,7 @@ extern ClockData gUnknown_081070A0;
 extern ClockData gUnknown_081070A8;
 
 UnitTarget::UnitTarget(u16 target, Unit* unit) {
-    mInfo = &gUnitTargetInfo[target];
+    mInfo = &gUnitTargetData[target];
     mUnit = unit;
 }
 

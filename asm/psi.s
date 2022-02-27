@@ -947,7 +947,7 @@ sub_08082B78: @ 0x08082B78
 	lsls r0, r4, #3
 	subs r0, r0, r4
 	lsls r0, r0, #3
-	ldr r1, _08082BA4 @ =gUnknown_080E1908
+	ldr r1, _08082BA4 @ =gPsiData
 	adds r0, r0, r1
 	str r0, [r5, #0x48]
 	adds r0, r5, #0
@@ -956,7 +956,7 @@ sub_08082B78: @ 0x08082B78
 	bx r1
 	.align 2, 0
 _08082BA0: .4byte vt_09F83958
-_08082BA4: .4byte gUnknown_080E1908
+_08082BA4: .4byte gPsiData
 
 	thumb_func_start  sub_08082BA8
  sub_08082BA8: @ 0x08082BA8

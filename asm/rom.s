@@ -1433,7 +1433,7 @@ sub_08001D2C: @ 0x08001D2C
 	push {lr}
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
-	ldr r2, _08001D4C @ =gLevelInfo
+	ldr r2, _08001D4C @ =gLevelStatTable
 	lsls r1, r0, #2
 	adds r1, r1, r0
 	lsls r1, r1, #4
@@ -1447,7 +1447,7 @@ sub_08001D2C: @ 0x08001D2C
 	movs r0, #1
 	b _08001D52
 	.align 2, 0
-_08001D4C: .4byte gLevelInfo
+_08001D4C: .4byte gLevelStatTable
 _08001D50:
 	movs r0, #0
 _08001D52:
@@ -4006,7 +4006,7 @@ _08002F88: .4byte 0xFFFFFF00
 	thumb_func_start sub_08002F8C
 sub_08002F8C: @ 0x08002F8C
 	lsls r0, r0, #0x10
-	ldr r2, _08002FA0 @ =gUnknown_080C17D8
+	ldr r2, _08002FA0 @ =gSineTable
 	movs r1, #0xff
 	lsls r1, r1, #0x10
 	ands r1, r0
@@ -4016,12 +4016,12 @@ sub_08002F8C: @ 0x08002F8C
 	ldrsh r0, [r1, r2]
 	bx lr
 	.align 2, 0
-_08002FA0: .4byte gUnknown_080C17D8
+_08002FA0: .4byte gSineTable
 
 	thumb_func_start sub_08002FA4
 sub_08002FA4: @ 0x08002FA4
 	lsls r0, r0, #0x10
-	ldr r2, _08002FBC @ =gUnknown_080C17D8
+	ldr r2, _08002FBC @ =gSineTable
 	movs r1, #0xff
 	lsls r1, r1, #0x10
 	ands r1, r0
@@ -4032,7 +4032,7 @@ sub_08002FA4: @ 0x08002FA4
 	ldrsh r0, [r1, r2]
 	bx lr
 	.align 2, 0
-_08002FBC: .4byte gUnknown_080C17D8
+_08002FBC: .4byte gSineTable
 
 	thumb_func_start sub_08002FC0
 sub_08002FC0: @ 0x08002FC0
@@ -50572,7 +50572,7 @@ sub_08019F90: @ 0x08019F90
 	lsls r0, r1, #1
 	adds r0, r0, r1
 	lsls r0, r0, #2
-	ldr r1, _08019FD4 @ =gUnknown_080C2BE8
+	ldr r1, _08019FD4 @ =gTownMapInfoTable
 	adds r0, r0, r1
 	ldr r2, _08019FD8 @ =gUnknown_02016028
 	ldrh r3, [r0, #2]
@@ -50597,7 +50597,7 @@ sub_08019F90: @ 0x08019F90
 	.align 2, 0
 _08019FCC: .4byte gScript
 _08019FD0: .4byte 0x000067AC
-_08019FD4: .4byte gUnknown_080C2BE8
+_08019FD4: .4byte gTownMapInfoTable
 _08019FD8: .4byte gUnknown_02016028
 _08019FDC: .4byte 0x00003678
 _08019FE0: .4byte 0x0000367E
@@ -50614,7 +50614,7 @@ sub_08019FE4: @ 0x08019FE4
 	lsls r0, r1, #1
 	adds r0, r0, r1
 	lsls r0, r0, #2
-	ldr r1, _0801A010 @ =gUnknown_080C2BE8
+	ldr r1, _0801A010 @ =gTownMapInfoTable
 	adds r5, r0, r1
 	ldrb r0, [r5]
 	cmp r0, #0xf0
@@ -50625,7 +50625,7 @@ sub_08019FE4: @ 0x08019FE4
 	.align 2, 0
 _0801A008: .4byte gScript
 _0801A00C: .4byte 0x000067AC
-_0801A010: .4byte gUnknown_080C2BE8
+_0801A010: .4byte gTownMapInfoTable
 _0801A014:
 	cmp r0, #0xef
 	beq _0801A02C
@@ -50669,7 +50669,7 @@ _0801A058:
 	lsls r0, r3, #1
 	adds r0, r0, r3
 	lsls r0, r0, #2
-	ldr r1, _0801A0A4 @ =gUnknown_080C2AF8
+	ldr r1, _0801A0A4 @ =gTownMapSizeTable
 	adds r6, r0, r1
 	ldr r7, _0801A0A8 @ =gUnknown_02016028
 	ldr r2, _0801A0AC @ =0x00003684
@@ -50705,7 +50705,7 @@ _0801A058:
 	strh r2, [r0, #2]
 	b _0801A1A2
 	.align 2, 0
-_0801A0A4: .4byte gUnknown_080C2AF8
+_0801A0A4: .4byte gTownMapSizeTable
 _0801A0A8: .4byte gUnknown_02016028
 _0801A0AC: .4byte 0x00003684
 _0801A0B0: .4byte 0x00003686
@@ -53322,12 +53322,12 @@ _0801B39E:
 sub_0801B3A4: @ 0x0801B3A4
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
-	ldr r1, _0801B3B0 @ =gUnknown_080C5BB8
+	ldr r1, _0801B3B0 @ =gMapMusicTable
 	adds r0, r0, r1
 	ldrb r0, [r0]
 	bx lr
 	.align 2, 0
-_0801B3B0: .4byte gUnknown_080C5BB8
+_0801B3B0: .4byte gMapMusicTable
 
 	thumb_func_start sub_0801B3B4
 sub_0801B3B4: @ 0x0801B3B4
