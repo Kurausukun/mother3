@@ -38,6 +38,7 @@ SECTIONS
         src/singleton.o(.text);
         src/base.o(.text);
         asm/gcc_fcvt.o(.text);
+        asm/gcc_fcvt2.o(.text);
         src/allocator.o(.text);
         src/battle/irc.o(.text);
         src/battle/clock.o(.text);

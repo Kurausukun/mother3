@@ -41,8 +41,8 @@
 . = 0x00001068; gUnknown_02001068 = .;
 . = 0x00001070; _Q29Singleton9Allocator.instance = .;
 . = 0x0000107C; _Q29Singleton9Allocator.guard = .;
-. = 0x00001080; gUnknown_02001080 = .;
-. = 0x00001084; gUnknown_02001084 = .;
+. = 0x00001080; left = .;
+. = 0x00001084; state = .;
 . = 0x00001A44; gUnknown_02001A44 = .;
 . = 0x00001A48; gUnknown_02001A48 = .;
 . = 0x00001A50; gUnknown_02001A50 = .;

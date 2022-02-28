@@ -876,7 +876,7 @@ sub_08082AF0: @ 0x08082AF0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
 	movs r0, #8
-	bl sub_08001C5C
+	bl get_string
 	adds r4, r0, #0
 	movs r0, #8
 	bl sub_08001DB0

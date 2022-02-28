@@ -14,8 +14,8 @@
 	ldr r0, [r0]
 	ldr r3, _0805D554 @ =0x00001111
 	adds r0, r0, r3
-	bl sub_080692C0
-	bl sub_08069318
+	bl seedMT
+	bl randomMT
 	bl sub_0805D210
 	bl makeInstance__10IrcManager
 	bl get__10IrcManager

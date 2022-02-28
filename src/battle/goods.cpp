@@ -1,10 +1,10 @@
 #include "battle/goods.h"
 
-extern "C" u32 sub_08001C5C(u32, u32);
+extern "C" u32 get_string(u32, u32);
 extern "C" u16 sub_08001DB0(u32);
 
 Goods* Goods::sub_08064980(u16 idx) {
-    sub_0806E238(this, sub_08001C5C(2, idx), sub_08001DB0(2));
+    sub_0806E238(this, get_string(2, idx), sub_08001DB0(2));
     return this;
 }
 

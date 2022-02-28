@@ -34,7 +34,7 @@ sub_080830C4: @ 0x080830C4
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
 	movs r0, #2
-	bl sub_08001C5C
+	bl get_string
 	adds r4, r0, #0
 	movs r0, #2
 	bl sub_08001DB0

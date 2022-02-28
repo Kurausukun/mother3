@@ -186,7 +186,7 @@ void Unit::unit_170(u32 value) {
     _d8 = value;
 }
 
-s32 Unit::getLevel() const {
+s32 Unit::level() const {
     return mLevel;
 }
 

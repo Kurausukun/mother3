@@ -65,7 +65,7 @@ public:
     virtual bool unit_178();
     virtual u32 unit_180();
     virtual Unit* unit_188(Unit* u);
-    virtual s32 getLevel() const;
+    virtual s32 level() const;
     virtual bool unit_208();
     virtual bool unit_210();
     virtual bool unit_218();

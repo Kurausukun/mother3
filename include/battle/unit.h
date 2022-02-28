@@ -90,7 +90,7 @@ public:
     virtual u32 unit_180() = 0;
     virtual Unit* unit_188(Unit*) = 0;
 
-    virtual s32 getLevel() const;
+    virtual s32 level() const;
     virtual s32 getHP() const;
     virtual s32 unit_1a0() const;
     virtual s32 getMaxHP() const;
