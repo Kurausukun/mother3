@@ -3,8 +3,8 @@
 .syntax unified
 .section .text
 
-	thumb_func_start sub_0808F8EC
-sub_0808F8EC: @ 0x0808F8EC
+	thumb_func_start MidiKeyToFreq
+MidiKeyToFreq: @ 0x0808F8EC
 	push {r4, r5, r6, r7, lr}
 	mov ip, r0
 	lsls r1, r1, #0x18
@@ -469,7 +469,7 @@ _0808FC30:
 	beq _0808FC62
 	adds r0, r4, #0
 	str r2, [sp]
-	bl sub_0808FDAC
+	bl Clear64byte
 	ldr r2, [sp]
 	strb r2, [r4]
 	movs r0, #2
@@ -551,10 +551,10 @@ sub_0808FC7C: @ 0x0808FC7C
 	str r0, [r1, #0x7c]
 	adds r2, r1, #0
 	adds r2, #0x80
-	ldr r0, _0808FD78 @ =sub_08090320
+	ldr r0, _0808FD78 @ =FadeOutBody
 	str r0, [r2]
 	adds r1, #0x84
-	ldr r0, _0808FD7C @ =sub_080903E8
+	ldr r0, _0808FD7C @ =TrkVolPitSet
 	str r0, [r1]
 	str r5, [r4, #0x1c]
 	ldr r0, _0808FD80 @ =sub_08090600
@@ -613,8 +613,8 @@ _0808FD68: .4byte sub_08090E4C
 _0808FD6C: .4byte ply_endtie
 _0808FD70: .4byte sub_0808FEB8
 _0808FD74: .4byte TrackStop
-_0808FD78: .4byte sub_08090320
-_0808FD7C: .4byte sub_080903E8
+_0808FD78: .4byte FadeOutBody
+_0808FD7C: .4byte TrkVolPitSet
 _0808FD80: .4byte sub_08090600
 _0808FD84: .4byte sub_08090544
 _0808FD88: .4byte sub_0809049C
@@ -626,8 +626,8 @@ sub_0808FD94: @ 0x0808FD94
 	svc #0x2a
 	bx lr
 
-	thumb_func_start sub_0808FD98
-sub_0808FD98: @ 0x0808FD98
+	thumb_func_start ClearChain
+ClearChain: @ 0x0808FD98
 	push {lr}
 	ldr r1, _0808FDA8 @ =gUnknown_03002B58
 	ldr r1, [r1]
@@ -637,8 +637,8 @@ sub_0808FD98: @ 0x0808FD98
 	.align 2, 0
 _0808FDA8: .4byte gUnknown_03002B58
 
-	thumb_func_start sub_0808FDAC
-sub_0808FDAC: @ 0x0808FDAC
+	thumb_func_start Clear64byte
+Clear64byte: @ 0x0808FDAC
 	push {lr}
 	ldr r1, _0808FDBC @ =gUnknown_03002B5C
 	ldr r1, [r1]
@@ -1142,7 +1142,7 @@ _08090198:
 	adds r0, r1, #1
 	str r0, [r5]
 	adds r0, r7, #0
-	bl sub_0808FDAC
+	bl Clear64byte
 	str r6, [r7, #0x2c]
 	strb r4, [r7, #8]
 	movs r0, #0x80
@@ -1347,8 +1347,8 @@ _08090316:
 	.align 2, 0
 _0809031C: .4byte 0x68736D53
 
-	thumb_func_start sub_08090320
-sub_08090320: @ 0x08090320
+	thumb_func_start FadeOutBody
+FadeOutBody: @ 0x08090320
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	ldrh r1, [r6, #0x24]
@@ -1458,8 +1458,8 @@ _080903E2:
 	pop {r0}
 	bx r0
 
-	thumb_func_start sub_080903E8
-sub_080903E8: @ 0x080903E8
+	thumb_func_start TrkVolPitSet
+TrkVolPitSet: @ 0x080903E8
 	push {r4, lr}
 	adds r2, r1, #0
 	ldrb r1, [r2]

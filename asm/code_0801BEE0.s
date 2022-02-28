@@ -5699,7 +5699,7 @@ _08021E2C: .4byte gUnknown_02004112
 _08021E30:
 	movs r0, #5
 	adds r1, r4, #0
-	bl sub_08001C5C
+	bl get_string
 	adds r4, r0, #0
 	movs r0, #5
 	bl sub_08001DB0
@@ -5740,7 +5740,7 @@ _08021E78: @ jump table
 _08021E90:
 	movs r0, #2
 	adds r1, r4, #0
-	bl sub_08001C5C
+	bl get_string
 	adds r4, r0, #0
 	movs r0, #2
 	b _08021F22
@@ -5784,7 +5784,7 @@ _08021EE4: .4byte gUnknown_02004112
 _08021EE8:
 	movs r0, #5
 	adds r1, r4, #0
-	bl sub_08001C5C
+	bl get_string
 	adds r4, r0, #0
 	movs r0, #5
 	b _08021F22
@@ -5801,14 +5801,14 @@ _08021F04: .4byte gUnknown_02004112
 _08021F08:
 	movs r0, #7
 	adds r1, r4, #0
-	bl sub_08001C5C
+	bl get_string
 	adds r4, r0, #0
 	movs r0, #7
 	b _08021F22
 _08021F16:
 	movs r0, #8
 	adds r1, r4, #0
-	bl sub_08001C5C
+	bl get_string
 	adds r4, r0, #0
 	movs r0, #8
 _08021F22:
@@ -5974,7 +5974,7 @@ _08022068:
 	adds r0, r0, r1
 	ldrh r1, [r0]
 	movs r0, #2
-	bl sub_08001C5C
+	bl get_string
 	adds r4, r0, #0
 	movs r0, #2
 	bl sub_08001DB0
@@ -6351,7 +6351,7 @@ _08022320:
 	bne _0802233E
 	movs r0, #5
 	adds r1, r4, #0
-	bl sub_08001C5C
+	bl get_string
 	b _0802234A
 _0802233E:
 	lsls r0, r2, #0x10
@@ -9348,7 +9348,7 @@ _08023B10:
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
 	movs r0, #7
-	bl sub_08001C5C
+	bl get_string
 	str r0, [sp, #8]
 	movs r0, #7
 	bl sub_08001DB0
@@ -79129,7 +79129,7 @@ sub_080460C8: @ 0x080460C8
 	bl sub_08046974
 	ldrb r1, [r4]
 	movs r0, #2
-	bl sub_08001C5C
+	bl get_string
 	adds r4, r0, #0
 	str r6, [sp]
 	movs r5, #1
@@ -79274,7 +79274,7 @@ sub_0804626C: @ 0x0804626C
 	bl sub_08046974
 	ldrb r1, [r4]
 	movs r0, #2
-	bl sub_08001C5C
+	bl get_string
 	adds r4, r0, #0
 	movs r1, #0xf
 	mov r8, r1
@@ -79371,7 +79371,7 @@ _0804634C:
 	bl sub_08046974
 	ldrb r1, [r4]
 	movs r0, #2
-	bl sub_08001C5C
+	bl get_string
 	adds r4, r0, #0
 	movs r0, #0xf
 	mov r8, r0
@@ -79452,7 +79452,7 @@ sub_080463F8: @ 0x080463F8
 	bl sub_08046974
 	ldrb r1, [r4]
 	movs r0, #2
-	bl sub_08001C5C
+	bl get_string
 	adds r4, r0, #0
 	movs r1, #0xf
 	mov r8, r1
@@ -79579,7 +79579,7 @@ sub_08046510: @ 0x08046510
 	bl sub_08046974
 	ldrb r1, [r6]
 	movs r0, #2
-	bl sub_08001C5C
+	bl get_string
 	adds r7, r0, #0
 	movs r1, #0xf
 	mov sb, r1
@@ -80859,7 +80859,7 @@ _08046F4A:
 _08046F68:
 	ldrb r1, [r5]
 	movs r0, #2
-	bl sub_08001C5C
+	bl get_string
 	adds r4, r6, #2
 	lsls r4, r4, #0x10
 	lsrs r4, r4, #0x10
@@ -80871,7 +80871,7 @@ _08046F68:
 	adds r5, #4
 	ldrb r1, [r5]
 	movs r0, #2
-	bl sub_08001C5C
+	bl get_string
 	str r7, [sp]
 	movs r1, #0xc
 	adds r2, r4, #0
@@ -80891,7 +80891,7 @@ _08046FA4:
 	beq _08046FC8
 	ldrb r1, [r5]
 	movs r0, #2
-	bl sub_08001C5C
+	bl get_string
 	adds r2, r6, #2
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
@@ -80961,7 +80961,7 @@ _0804701C:
 _08047038:
 	ldrb r1, [r5]
 	movs r0, #2
-	bl sub_08001C5C
+	bl get_string
 	adds r4, r6, #2
 	lsls r4, r4, #0x10
 	lsrs r4, r4, #0x10
@@ -80973,7 +80973,7 @@ _08047038:
 	adds r5, #4
 	ldrb r1, [r5]
 	movs r0, #2
-	bl sub_08001C5C
+	bl get_string
 	str r7, [sp]
 	movs r1, #0xb
 	adds r2, r4, #0
@@ -80993,7 +80993,7 @@ _08047074:
 	beq _08047098
 	ldrb r1, [r5]
 	movs r0, #2
-	bl sub_08001C5C
+	bl get_string
 	adds r2, r6, #2
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
@@ -81048,7 +81048,7 @@ _080470C6:
 _080470EC:
 	ldrb r1, [r1]
 	movs r0, #2
-	bl sub_08001C5C
+	bl get_string
 	lsls r2, r4, #0x11
 	movs r1, #0xc0
 	lsls r1, r1, #0xa
@@ -81182,7 +81182,7 @@ _080471F8:
 _08047212:
 	ldrb r1, [r4]
 	movs r0, #8
-	bl sub_08001C5C
+	bl get_string
 	adds r3, r0, #0
 	adds r1, r6, #2
 	lsls r0, r1, #0x10
@@ -81205,7 +81205,7 @@ _08047232:
 	adds r4, #4
 	ldrb r1, [r4]
 	movs r0, #8
-	bl sub_08001C5C
+	bl get_string
 	adds r1, r0, #0
 	lsls r0, r5, #0x10
 	lsrs r2, r0, #0x10
@@ -81242,7 +81242,7 @@ _08047280:
 	beq _080472B4
 	ldrb r1, [r4]
 	movs r0, #8
-	bl sub_08001C5C
+	bl get_string
 	adds r1, r0, #0
 	adds r0, r6, #2
 	lsls r0, r0, #0x10
@@ -81303,7 +81303,7 @@ _080472DC:
 _080472FE:
 	ldrb r1, [r1]
 	movs r0, #2
-	bl sub_08001C5C
+	bl get_string
 	adds r2, r4, #5
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
@@ -81489,7 +81489,7 @@ _08047486:
 	beq _080474D4
 	ldrb r1, [r5]
 	movs r0, #8
-	bl sub_08001C5C
+	bl get_string
 	adds r4, r6, #2
 	lsls r4, r4, #0x10
 	lsrs r4, r4, #0x10
@@ -81501,7 +81501,7 @@ _08047486:
 	adds r5, #4
 	ldrb r1, [r5]
 	movs r0, #8
-	bl sub_08001C5C
+	bl get_string
 	str r7, [sp]
 	movs r1, #0xa
 	adds r2, r4, #0
@@ -81522,7 +81522,7 @@ _080474D4:
 	beq _080474FE
 	ldrb r1, [r5]
 	movs r0, #2
-	bl sub_08001C5C
+	bl get_string
 	adds r4, r6, #2
 	lsls r4, r4, #0x10
 	lsrs r4, r4, #0x10
@@ -81538,7 +81538,7 @@ _080474D4:
 _080474FE:
 	ldrb r1, [r5]
 	movs r0, #0xd
-	bl sub_08001C5C
+	bl get_string
 	adds r4, r6, #2
 	lsls r4, r4, #0x10
 	lsrs r4, r4, #0x10
@@ -81551,7 +81551,7 @@ _080474FE:
 	ldrb r1, [r5]
 	movs r0, #0xd
 _0804751E:
-	bl sub_08001C5C
+	bl get_string
 	str r7, [sp]
 	movs r1, #0xb
 	adds r2, r4, #0
@@ -81587,7 +81587,7 @@ _08047556:
 	ldrb r1, [r5]
 	movs r0, #2
 _08047562:
-	bl sub_08001C5C
+	bl get_string
 	adds r2, r6, #2
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
@@ -81600,7 +81600,7 @@ _08047562:
 _0804757A:
 	ldrb r1, [r5]
 	movs r0, #0xd
-	bl sub_08001C5C
+	bl get_string
 	adds r2, r6, #2
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
@@ -81800,7 +81800,7 @@ _080476EA:
 	bge _08047718
 	ldrb r1, [r4]
 	movs r0, #7
-	bl sub_08001C5C
+	bl get_string
 	adds r2, r5, #2
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
@@ -81873,7 +81873,7 @@ _08047762:
 _08047774:
 	ldrb r1, [r4]
 	movs r0, #2
-	bl sub_08001C5C
+	bl get_string
 	adds r1, r0, #0
 	adds r0, r5, #2
 	lsls r0, r0, #0x10
@@ -81934,7 +81934,7 @@ _080477D0:
 _080477E4:
 	ldrb r1, [r4]
 	movs r0, #2
-	bl sub_08001C5C
+	bl get_string
 	adds r1, r0, #0
 	adds r0, r5, #2
 	lsls r0, r0, #0x10
@@ -82029,7 +82029,7 @@ _08047872:
 _08047890:
 	ldrb r1, [r5]
 	movs r0, #2
-	bl sub_08001C5C
+	bl get_string
 	adds r4, r6, #2
 	lsls r4, r4, #0x10
 	lsrs r4, r4, #0x10
@@ -82041,7 +82041,7 @@ _08047890:
 	adds r5, #4
 	ldrb r1, [r5]
 	movs r0, #2
-	bl sub_08001C5C
+	bl get_string
 	str r7, [sp]
 	movs r1, #0xc
 	adds r2, r4, #0
@@ -82061,7 +82061,7 @@ _080478CC:
 	beq _080478F0
 	ldrb r1, [r5]
 	movs r0, #2
-	bl sub_08001C5C
+	bl get_string
 	adds r2, r6, #2
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
@@ -82130,7 +82130,7 @@ _08047944:
 _0804795E:
 	ldrb r1, [r5]
 	movs r0, #2
-	bl sub_08001C5C
+	bl get_string
 	adds r4, r6, #2
 	lsls r4, r4, #0x10
 	lsrs r4, r4, #0x10
@@ -82142,7 +82142,7 @@ _0804795E:
 	adds r5, #4
 	ldrb r1, [r5]
 	movs r0, #2
-	bl sub_08001C5C
+	bl get_string
 	str r7, [sp]
 	movs r1, #0xa
 	adds r2, r4, #0
@@ -82166,7 +82166,7 @@ _080479A4:
 	beq _080479C8
 	ldrb r1, [r5]
 	movs r0, #2
-	bl sub_08001C5C
+	bl get_string
 	adds r2, r6, #2
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
@@ -82318,7 +82318,7 @@ _08047AC8: .4byte 0x0000426E
 _08047ACC:
 	ldrb r1, [r4]
 	movs r0, #2
-	bl sub_08001C5C
+	bl get_string
 	adds r1, r0, #0
 	adds r0, r5, #2
 	lsls r0, r0, #0x10
@@ -83302,7 +83302,7 @@ _08048254: @ jump table
 _0804826C:
 	movs r0, #2
 	adds r1, r4, #0
-	bl sub_08001C5C
+	bl get_string
 	adds r4, r0, #0
 	movs r0, #2
 	b _080482F0
@@ -83346,7 +83346,7 @@ _080482C0: .4byte gUnknown_02004112
 _080482C4:
 	movs r0, #5
 	adds r1, r4, #0
-	bl sub_08001C5C
+	bl get_string
 	adds r4, r0, #0
 	movs r0, #5
 	b _080482F0
@@ -83363,7 +83363,7 @@ _080482E0: .4byte gUnknown_02004112
 _080482E4:
 	movs r0, #8
 	adds r1, r4, #0
-	bl sub_08001C5C
+	bl get_string
 	adds r4, r0, #0
 	movs r0, #8
 _080482F0:
@@ -83527,7 +83527,7 @@ _08048430:
 	adds r0, r0, r2
 	ldrh r1, [r0]
 	movs r0, #2
-	bl sub_08001C5C
+	bl get_string
 	adds r4, r0, #0
 	movs r0, #2
 	b _0804845E
@@ -83540,7 +83540,7 @@ _0804844C:
 	adds r0, r0, r1
 	ldrh r1, [r0]
 	movs r0, #8
-	bl sub_08001C5C
+	bl get_string
 	adds r4, r0, #0
 	movs r0, #8
 _0804845E:
@@ -91738,7 +91738,7 @@ _0804C54E:
 	beq _0804C578
 	ldrh r0, [r5, #2]
 	ldrh r1, [r5, #4]
-	bl sub_08001C5C
+	bl get_string
 	adds r1, r0, #0
 	mov r2, r8
 	adds r0, r4, r2
@@ -91809,7 +91809,7 @@ sub_0804C5B0: @ 0x0804C5B0
 	beq _0804C64C
 	ldrh r0, [r6, #2]
 	ldrh r1, [r6, #4]
-	bl sub_08001C5C
+	bl get_string
 	adds r1, r0, #0
 	ldr r0, _0804C628 @ =0x00004C12
 	add r0, r8
@@ -99303,7 +99303,7 @@ sub_08050458: @ 0x08050458
 	adds r1, r1, r7
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08001C5C
+	bl get_string
 	adds r1, r0, #0
 	ldrb r0, [r6]
 	lsls r0, r0, #5
@@ -99369,7 +99369,7 @@ _080504FC:
 	adds r1, r1, r7
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08001C5C
+	bl get_string
 	adds r1, r0, #0
 	ldrb r0, [r6]
 	lsls r0, r0, #5
@@ -109182,7 +109182,7 @@ _08054F84:
 	bne _08054FA2
 	movs r0, #5
 	adds r1, r4, #0
-	bl sub_08001C5C
+	bl get_string
 	b _08054FAE
 _08054FA2:
 	lsls r0, r2, #0x10

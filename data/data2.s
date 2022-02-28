@@ -990,8 +990,8 @@ gUnknown_0811996C:
 gUnknown_08119976:
     .incbin "baserom.gba", 0x00119976, 0x6
 
-    .global gUnknown_0811997C
-gUnknown_0811997C:
+    .global gMPlayJumpTableTemplate
+gMPlayJumpTableTemplate:
     .incbin "baserom.gba", 0x0011997C, 0x90
 
     .global gUnknown_08119A0C
@@ -1022,8 +1022,8 @@ gUnknown_08119BA4:
 gUnknown_08119BE0:
     .incbin "baserom.gba", 0x00119BE0, 0x10
 
-    .global gUnknown_08119BF0
-gUnknown_08119BF0:
+    .global gClockTable
+gClockTable:
     .incbin "baserom.gba", 0x00119BF0, 0x34
 
     .global gUnknown_08119C24

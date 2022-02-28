@@ -2,7 +2,7 @@
 #include "battle.h"
 #include "battle/unitTarget.h"
 
-extern "C" u32 sub_08001C5C(u32, u16);
+extern "C" u32 get_string(u32, u16);
 extern "C" u16 sub_08001DB0(u32);
 extern "C" void sub_0806E238(Base*, u32, u32);
 
@@ -16,7 +16,7 @@ void battle_end_callback(Guest* g) {
 SINGLETON_IMPL(Guest);
 
 Base* sub_08061E20(Base* b, u32 c) {
-    sub_0806E238(b, sub_08001C5C(6, c), sub_08001DB0(6));
+    sub_0806E238(b, get_string(6, c), sub_08001DB0(6));
     return b;
 }
 
@@ -87,7 +87,7 @@ Unit* Guest::unit_188(Unit* u) {
     return this;
 }
 
-s32 Guest::getLevel() const {
+s32 Guest::level() const {
     return mStats->level;
 }
 

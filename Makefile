@@ -134,9 +134,9 @@ MAKEFLAGS += --no-print-directory
 .DELETE_ON_ERROR:
 
 all: $(ROM)
-	perl calcrom.pl $(MAP)
+	@python3 progress.py
 ifeq ($(COMPARE),1)
-	$(SHA1) $(BUILD_NAME).sha1
+	@$(SHA1) $(BUILD_NAME).sha1
 endif
 
 compare: $(ROM)

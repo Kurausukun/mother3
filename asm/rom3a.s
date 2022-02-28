@@ -9071,7 +9071,7 @@ sub_0809C294: @ 0x0809C294
 	ldr r0, _0809C378 @ =vt_09F47D80
 	str r0, [r7, #0x1c]
 	adds r0, r7, #0
-	bl getLevel__C4Unit
+	bl level__C4Unit
 	movs r2, #0x87
 	lsls r2, r2, #2
 	adds r1, r7, r2
@@ -9167,7 +9167,7 @@ sub_0809C37C: @ 0x0809C37C
 	ldr r0, _0809C460 @ =vt_09F48278
 	str r0, [r7, #0x1c]
 	adds r0, r7, #0
-	bl getLevel__C4Unit
+	bl level__C4Unit
 	movs r2, #0x87
 	lsls r2, r2, #2
 	adds r1, r7, r2

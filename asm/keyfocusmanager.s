@@ -975,7 +975,7 @@ _08070650: .4byte 0x0000FFFF
 	thumb_func_start sub_08070654
 sub_08070654: @ 0x08070654
 	push {lr}
-	bl sub_08069318
+	bl randomMT
 	pop {r1}
 	bx r1
 	.align 2, 0
