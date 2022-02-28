@@ -19,8 +19,7 @@ SECTIONS
     }
 
 	. = 0x08000000;
-    .text :
-	ALIGN(4)
+    ROM : ALIGN(4)
 	{
         asm/crt0.o(.text);
         src/main.o(.text);
@@ -118,13 +117,10 @@ SECTIONS
         asm/rom3b.o(.text);
         src/inst.o(.text);
         asm/rom4.o(.text);
-	} = 0
 
-    .data :
-	ALIGN(4)
-    {
         data/data1.o(.rodata);
-        src/battle/monsterSkillData.o(.rodata);
+        src/data/monsterData.o(.rodata);
+        src/data/monsterSkillData.o(.rodata);
         data/data1b.o(.rodata);
         data/data2.o(.rodata);
 
@@ -148,7 +144,7 @@ SECTIONS
         *libc.a:locale.o(.data);
 
         data/vtables.o(.data);
-    } = 0
+	} = 0
 
     endl__FR7ostream = 0;
 

@@ -609,6 +609,6 @@ gGuestSkillData:
 gGuestSkillData2:
     .incbin "baserom.gba", 0x000D0228, 0xB00
 
-    .global gMonsterData
-gMonsterData:
-    .incbin "baserom.gba", 0x000D0D28, 0x9000
+//     .global gMonsterData
+// gMonsterData:
+//     .incbin "baserom.gba", 0x000D0D28, 0x9000
