@@ -89,7 +89,7 @@ sub_0806FE04: @ 0x0806FE04
 	bl __4Base
 	ldr r0, _0806FE58 @ =vt_09F805D0
 	str r0, [r4, #0x1c]
-	bl sub_0808FB50
+	bl m4aMPlayAllStop
 	movs r0, #0x50
 	strh r0, [r4, #0x20]
 	adds r1, r4, #0
@@ -164,7 +164,7 @@ _0806FEB8: .4byte gUnknown_08101CC4
 	thumb_func_start sub_0806FEBC
 sub_0806FEBC: @ 0x0806FEBC
 	push {lr}
-	bl sub_0809008C
+	bl m4aSoundVSyncOn
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -172,7 +172,7 @@ sub_0806FEBC: @ 0x0806FEBC
 	thumb_func_start sub_0806FEC8
 sub_0806FEC8: @ 0x0806FEC8
 	push {lr}
-	bl sub_0809000C
+	bl m4aSoundVSyncOff
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -214,7 +214,7 @@ sub_0806FEFC: @ 0x0806FEFC
 	thumb_func_start sub_0806FF04
 sub_0806FF04: @ 0x0806FF04
 	push {lr}
-	bl sub_0808FA10
+	bl m4aSoundMain
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -222,7 +222,7 @@ sub_0806FF04: @ 0x0806FF04
 	thumb_func_start sub_0806FF10
 sub_0806FF10: @ 0x0806FF10
 	push {lr}
-	bl sub_08090104
+	bl m4aSoundVSync
 	pop {r0}
 	bx r0
 	.align 2, 0

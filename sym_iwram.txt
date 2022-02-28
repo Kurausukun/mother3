@@ -2,13 +2,13 @@
 . = 0x00000000; gUnknown_03000000 = .;
 . = 0x00000001; gUnknown_03000001 = .;
 . = 0x00000008; gUnknown_03000008 = .;
-. = 0x00001B20; gUnknown_03001B20 = .;
-. = 0x00002AD0; gUnknown_03002AD0 = .;
+. = 0x00001B20; gSoundInfo = .;
+. = 0x00002AD0; gMPlayJumpTable = .;
 . = 0x00002AD4; gUnknown_03002AD4 = .;
 . = 0x00002B58; gUnknown_03002B58 = .;
 . = 0x00002B5C; gUnknown_03002B5C = .;
-. = 0x00002B60; gUnknown_03002B60 = .;
-. = 0x00002E60; gUnknown_03002E60 = .;
+. = 0x00002B60; gCgbChans = .;
+. = 0x00002E60; gMPlayMemAccArea = .;
 . = 0x00002EF0; gIntrVector = .;
 . = 0x000036F0; gUnknown_030036F0 = .;
 . = 0x000038F0; gUnknown_030038F0 = .;

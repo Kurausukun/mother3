@@ -1,6 +1,7 @@
 OUTPUT_ARCH(arm)
 
-gNumMusicPlayers = 4;
+gNumMusicPlayers = 10;
+gMaxLines = 0;
 
 SECTIONS
 {
@@ -71,6 +72,7 @@ SECTIONS
         asm/rom2e.o(.text);
 
         asm/m4a_1.o(.text);
+        src/m4a.o(.text);
         asm/libc.o(.text);
 
         *libc.a:libcfunc.o(.text);
