@@ -205,6 +205,7 @@ $(OBJ_DIR)/sym_iwram.txt: sym_iwram.txt
 	$(CPP) -P $(CPPFLAGS) $< | sed -e "s#tools/#../../tools/#g" > $@
 
 setup:
+	make -C tools/aif2pcm
 	make -C tools/gbafix
 	make -C tools/preproc
 	make -C tools/salsa
