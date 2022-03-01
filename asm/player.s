@@ -623,8 +623,8 @@ _08078408:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_08078410
-sub_08078410: @ 0x08078410
+	thumb_func_start sub_08078410__5Goods
+sub_08078410__5Goods: @ 0x08078410
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -988,7 +988,7 @@ sub_080786DC: @ 0x080786DC
 	bl _call_via_r1
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
-	bl sub_08070824
+	bl playSound
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -1250,11 +1250,11 @@ _080788F8:
 	adds r4, r0, #0
 	movs r0, #0xa4
 	movs r1, #0xba
-	bl sub_08070660
+	bl randS32
 	adds r1, r0, #0
 	adds r0, r4, #0
 	movs r2, #1
-	bl sub_08073734
+	bl hitPlayer
 	b _08078966
 _0807891E:
 	ldr r1, [r6, #0x1c]
@@ -1289,7 +1289,7 @@ _0807891E:
 _0807895E:
 	mov r0, sb
 	movs r2, #1
-	bl sub_08073734
+	bl hitPlayer
 _08078966:
 	ldr r1, [r6, #0x1c]
 	movs r4, #0xb0
@@ -1737,7 +1737,7 @@ _08078CFE:
 	subs r6, r6, r0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	movs r1, #0
 	cmp r0, r6
 	bge _08078D12
@@ -1803,7 +1803,7 @@ sub_08078D4C: @ 0x08078D4C
 	bl _call_via_r1
 	adds r1, r0, #0
 	adds r0, r4, #0
-	bl sub_08070660
+	bl randS32
 	mov r8, r0
 	ldr r4, [r7, #0x1c]
 	movs r0, #0xf8
@@ -1967,7 +1967,7 @@ _08078EBC:
 _08078ED8:
 	adds r0, r7, #0
 	movs r2, #1
-	bl sub_08073734
+	bl hitPlayer
 	ldr r1, [r6, #0x1c]
 	movs r0, #0x98
 	lsls r0, r0, #1
@@ -2055,7 +2055,7 @@ _08078ED8:
 	mov r1, r8
 _08078F9C:
 	movs r2, #1
-	bl sub_08073734
+	bl hitPlayer
 	ldr r1, [r6, #0x1c]
 	movs r0, #0x96
 	lsls r0, r0, #2
@@ -2112,8 +2112,8 @@ _0807900A:
 	bx r0
 	.align 2, 0
 
-	thumb_func_start sub_08079018
-sub_08079018: @ 0x08079018
+	thumb_func_start calcHit
+calcHit: @ 0x08079018
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -2176,7 +2176,7 @@ _08079082:
 	lsls r1, r6, #4
 	adds r1, r1, r6
 	asrs r1, r1, #4
-	bl sub_08070660
+	bl randS32
 	adds r6, r0, #0
 	mov r0, r8
 	ldr r1, [r0, #0x1c]
@@ -2314,7 +2314,7 @@ _08079198:
 _080791B4:
 	adds r0, r7, #0
 	movs r2, #1
-	bl sub_08073734
+	bl hitPlayer
 	mov r0, r8
 	ldr r1, [r0, #0x1c]
 	movs r2, #0x98
@@ -2393,7 +2393,7 @@ _080791B4:
 	adds r1, r6, #0
 _08079264:
 	movs r2, #1
-	bl sub_08073734
+	bl hitPlayer
 	mov r0, r8
 	ldr r1, [r0, #0x1c]
 	movs r2, #0x96
@@ -2617,7 +2617,7 @@ _08079422:
 	lsls r1, r7, #4
 	adds r1, r1, r7
 	asrs r1, r1, #4
-	bl sub_08070660
+	bl randS32
 	adds r7, r0, #0
 	movs r0, #1
 	cmp r0, r7
@@ -2805,7 +2805,7 @@ _080795A8:
 _080795C4:
 	mov r0, r8
 	movs r2, #1
-	bl sub_08073734
+	bl hitPlayer
 	ldr r1, [r6, #0x1c]
 	movs r0, #0x98
 	lsls r0, r0, #1
@@ -2956,7 +2956,7 @@ _08079674:
 	adds r1, r7, #0
 _08079704:
 	movs r2, #1
-	bl sub_08073734
+	bl hitPlayer
 	ldr r1, [r6, #0x1c]
 	movs r0, #0x96
 	lsls r0, r0, #2
@@ -3099,7 +3099,7 @@ _08079822:
 	adds r2, r7, r6
 	adds r0, r7, #0
 	adds r1, r2, #0
-	bl sub_08070660
+	bl randS32
 	add sp, #4
 	pop {r3, r4}
 	mov r8, r3
@@ -3115,7 +3115,7 @@ sub_0807983C: @ 0x0807983C
 	adds r4, r0, #0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	adds r5, r0, #0
 	ldr r0, [r4, #0x1c]
 	movs r1, #0x9e
@@ -3163,7 +3163,7 @@ sub_08079870: @ 0x08079870
 	bl _call_via_r1
 	adds r1, r0, #0
 	adds r0, r5, #0
-	bl sub_08070660
+	bl randS32
 	adds r5, r0, #0
 	ldr r0, [r4, #0x1c]
 	movs r3, #0xb0
@@ -3223,7 +3223,7 @@ sub_080798F0: @ 0x080798F0
 	bl _call_via_r1
 	adds r1, r0, #0
 	adds r0, r5, #0
-	bl sub_08070660
+	bl randS32
 	adds r5, r0, #0
 	ldr r0, [r4, #0x1c]
 	movs r3, #0xb0
@@ -3284,7 +3284,7 @@ sub_08079970: @ 0x08079970
 	bl _call_via_r1
 	adds r1, r0, #0
 	adds r0, r5, #0
-	bl sub_08070660
+	bl randS32
 	adds r1, r0, #0
 	adds r0, r6, #0
 	movs r2, #1
@@ -3533,7 +3533,7 @@ _08079B72:
 _08079B8E:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	mov r8, r0
 	ldr r1, [r6, #0x1c]
 	movs r2, #0xfc
@@ -4011,7 +4011,7 @@ sub_08079EE4: @ 0x08079EE4
 _08079F56:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	cmp r0, r8
 	bge _08079F6E
 	adds r0, r5, #0
@@ -4311,8 +4311,8 @@ _0807A1B8:
 	bx r0
 	.align 2, 0
 
-	thumb_func_start nullsub_28
-nullsub_28: @ 0x0807A1C0
+	thumb_func_start nullsub_28__5Goods
+nullsub_28__5Goods: @ 0x0807A1C0
 	bx lr
 	.align 2, 0
 
@@ -4404,7 +4404,7 @@ _0807A24A:
 	adds r1, r0, #0
 	subs r2, r5, r7
 	mov r0, r8
-	bl sub_0806E288
+	bl __5AssetPCUcUi
 	mov r0, sp
 	movs r1, #2
 	bl sub_0806E308
@@ -4492,7 +4492,7 @@ _0807A2FC:
 	bl _call_via_r2
 	adds r1, r0, #0
 	mov r0, sp
-	bl sub_08076658
+	bl attackdata_108__10UnitTargetP4Unit
 	adds r4, #1
 _0807A31C:
 	ldr r1, [r6, #0x1c]
@@ -4511,22 +4511,22 @@ _0807A31C:
 _0807A338:
 	mov r0, sp
 	adds r1, r4, #0
-	bl attackdata_118__10UnitTargetUi
+	bl attackdata_118__10UnitTargeti
 	ldr r1, [r5, #0x20]
 	cmp r0, r1
 	beq _0807A358
 	mov r0, sp
 	adds r1, r4, #0
-	bl attackdata_118__10UnitTargetUi
+	bl attackdata_118__10UnitTargeti
 	adds r1, r0, #0
 	mov r0, sp
-	bl sub_08076658
+	bl attackdata_108__10UnitTargetP4Unit
 	subs r4, #1
 _0807A358:
 	adds r4, #1
 _0807A35A:
 	mov r0, sp
-	bl attackdata_110__10UnitTarget
+	bl attackdata_110__C10UnitTarget
 	cmp r4, r0
 	blt _0807A338
 	movs r7, #0
@@ -4541,7 +4541,7 @@ _0807A368:
 	adds r5, r6, r5
 	mov r0, sp
 	adds r1, r7, #0
-	bl attackdata_118__10UnitTargetUi
+	bl attackdata_118__10UnitTargeti
 	adds r1, r0, #0
 	ldr r2, [r4, #4]
 	adds r0, r5, #0
@@ -4549,7 +4549,7 @@ _0807A368:
 	adds r7, #1
 _0807A38A:
 	mov r0, sp
-	bl attackdata_110__10UnitTarget
+	bl attackdata_110__C10UnitTarget
 	cmp r7, r0
 	blt _0807A368
 _0807A394:
@@ -4813,10 +4813,10 @@ _0807A538:
 	bl attackdata_c8__10UnitTarget
 	ldr r1, [sp, #0x44]
 	mov r0, sp
-	bl sub_0807620C
+	bl attackdata_f8__C10UnitTargetP4Unit
 	adds r4, r0, #0
 	mov r0, sp
-	bl sub_080761C8
+	bl getNumTargets__C10UnitTarget
 	cmp r4, r0
 	bge _0807A592
 	mov r0, sp
@@ -4949,7 +4949,7 @@ _0807A660:
 	bl _call_via_r2
 	adds r1, r0, #0
 	mov r0, sp
-	bl sub_08076658
+	bl attackdata_108__10UnitTargetP4Unit
 	adds r4, #1
 _0807A680:
 	ldr r1, [r6, #0x1c]
@@ -4975,7 +4975,7 @@ _0807A69C:
 	adds r5, r6, r5
 	mov r0, sp
 	adds r1, r7, #0
-	bl attackdata_118__10UnitTargetUi
+	bl attackdata_118__10UnitTargeti
 	adds r1, r0, #0
 	ldr r2, [r4, #4]
 	adds r0, r5, #0
@@ -4983,7 +4983,7 @@ _0807A69C:
 	adds r7, #1
 _0807A6BE:
 	mov r0, sp
-	bl attackdata_110__10UnitTarget
+	bl attackdata_110__C10UnitTarget
 	mov r1, r8
 	cmp r1, r0
 	ble _0807A6CC
@@ -5341,7 +5341,7 @@ sub_0807A904: @ 0x0807A904
 	adds r2, #0xfc
 	movs r0, #0x6c
 	muls r0, r4, r0
-	ldr r1, _0807AABC @ =gGuestStats
+	ldr r1, _0807AABC @ =gCharStats
 	adds r0, r0, r1
 	str r0, [r2]
 	movs r3, #0x80
@@ -5352,7 +5352,7 @@ sub_0807A904: @ 0x0807A904
 	lsls r0, r0, #4
 	adds r0, r0, r4
 	lsls r0, r0, #2
-	ldr r1, _0807AAC0 @ =gLevelInfo
+	ldr r1, _0807AAC0 @ =gLevelStatTable
 	adds r0, r0, r1
 	str r0, [r2]
 	movs r1, #0x82
@@ -5479,8 +5479,8 @@ sub_0807A904: @ 0x0807A904
 	.align 2, 0
 _0807AAB4: .4byte vt_09F82070
 _0807AAB8: .4byte vt_09F820E8
-_0807AABC: .4byte gGuestStats
-_0807AAC0: .4byte gLevelInfo
+_0807AABC: .4byte gCharStats
+_0807AAC0: .4byte gLevelStatTable
 _0807AAC4: .4byte 0x0000020A
 _0807AAC8: .4byte _vt.3Unk
 _0807AACC: .4byte _vt.10RoundBegin
@@ -6810,7 +6810,7 @@ sub_0807B528: @ 0x0807B528
 	cmp r0, #1
 	bne _0807B5A8
 	ldr r0, _0807B5D0 @ =0x0000044E
-	bl sub_08070824
+	bl playSound
 	ldr r2, [r7, #0x1c]
 	movs r0, #0xc4
 	lsls r0, r0, #1
@@ -6867,7 +6867,7 @@ _0807B5A8:
 	ldr r1, [r1, #4]
 	bl _call_via_r1
 	adds r0, r7, #0
-	bl sub_08074BA4__4Unit
+	bl kill__4Unit
 	add sp, #0x38
 	pop {r4, r5, r6, r7}
 	pop {r0}
@@ -6880,7 +6880,7 @@ sub_0807B5D4: @ 0x0807B5D4
 	push {r4, r5, r6, lr}
 	sub sp, #0x38
 	adds r4, r0, #0
-	bl sub_08074C50__4Unit
+	bl revive__4Unit
 	movs r1, #0x86
 	lsls r1, r1, #2
 	adds r0, r4, r1
@@ -6898,7 +6898,7 @@ sub_0807B5D4: @ 0x0807B5D4
 	cmp r0, #1
 	bne _0807B670
 	ldr r0, _0807B678 @ =0x00000427
-	bl sub_08070824
+	bl playSound
 	ldr r2, [r4, #0x1c]
 	movs r0, #0xc4
 	lsls r0, r0, #1
@@ -6950,8 +6950,8 @@ _0807B670:
 	.align 2, 0
 _0807B678: .4byte 0x00000427
 
-	thumb_func_start sub_0807B67C
-sub_0807B67C: @ 0x0807B67C
+	thumb_func_start levelUp
+levelUp: @ 0x0807B67C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -7289,7 +7289,7 @@ _0807B8DE:
 	adds r0, r7, #0
 	add r1, sp, #4
 	movs r2, #0
-	bl sub_0807BA3C
+	bl tellStatUpgrade
 	adds r2, r0, #0
 	mov r1, sb
 	ldrb r3, [r1, #2]
@@ -7297,7 +7297,7 @@ _0807B8DE:
 	str r0, [sp]
 	adds r0, r7, #0
 	add r1, sp, #4
-	bl sub_0807BA3C
+	bl tellStatUpgrade
 	adds r2, r0, #0
 	mov r0, sb
 	ldrb r3, [r0, #3]
@@ -7305,7 +7305,7 @@ _0807B8DE:
 	str r0, [sp]
 	adds r0, r7, #0
 	add r1, sp, #4
-	bl sub_0807BA3C
+	bl tellStatUpgrade
 	adds r2, r0, #0
 	mov r1, sb
 	ldrb r3, [r1, #4]
@@ -7313,7 +7313,7 @@ _0807B8DE:
 	str r0, [sp]
 	adds r0, r7, #0
 	add r1, sp, #4
-	bl sub_0807BA3C
+	bl tellStatUpgrade
 	adds r2, r0, #0
 	mov r0, sb
 	ldrb r3, [r0, #5]
@@ -7321,7 +7321,7 @@ _0807B8DE:
 	str r0, [sp]
 	adds r0, r7, #0
 	add r1, sp, #4
-	bl sub_0807BA3C
+	bl tellStatUpgrade
 	adds r2, r0, #0
 	mov r1, sb
 	ldrb r3, [r1, #6]
@@ -7329,7 +7329,7 @@ _0807B8DE:
 	str r0, [sp]
 	adds r0, r7, #0
 	add r1, sp, #4
-	bl sub_0807BA3C
+	bl tellStatUpgrade
 	adds r2, r0, #0
 	mov r0, sb
 	ldrb r3, [r0, #7]
@@ -7337,7 +7337,7 @@ _0807B8DE:
 	str r0, [sp]
 	adds r0, r7, #0
 	add r1, sp, #4
-	bl sub_0807BA3C
+	bl tellStatUpgrade
 	add r0, sp, #4
 	bl sub_0806E414
 	adds r1, r0, #0
@@ -7382,8 +7382,8 @@ _0807BA30: .4byte 0x00000799
 _0807BA34: .4byte 0x0000FF02
 _0807BA38: .4byte 0x0000FFFF
 
-	thumb_func_start sub_0807BA3C
-sub_0807BA3C: @ 0x0807BA3C
+	thumb_func_start tellStatUpgrade
+tellStatUpgrade: @ 0x0807BA3C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -7483,7 +7483,7 @@ sub_0807BAE4: @ 0x0807BAE4
 	b _0807BB16
 _0807BB0E:
 	movs r0, #0xf5
-	bl sub_08070824
+	bl playSound
 	movs r0, #1
 _0807BB16:
 	pop {r4}
@@ -8509,7 +8509,7 @@ sub_0807C1E4: @ 0x0807C1E4
 	adds r5, r0, #0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	adds r7, r0, #0
 	movs r4, #0
 	movs r6, #0
@@ -8587,7 +8587,7 @@ sub_0807C264: @ 0x0807C264
 	lsrs r0, r0, #0x18
 	cmp r0, #1
 	bne _0807C31E
-	ldr r0, _0807C2B8 @ =gUnknown_020047E0
+	ldr r0, _0807C2B8 @ =gEncounter
 	ldrh r0, [r0, #0xa]
 	cmp r0, #4
 	bne _0807C2BC
@@ -8615,7 +8615,7 @@ _0807C2AE:
 	bl _call_via_r2
 	b _0807C306
 	.align 2, 0
-_0807C2B8: .4byte gUnknown_020047E0
+_0807C2B8: .4byte gEncounter
 _0807C2BC:
 	ldr r1, [r4, #0x1c]
 	movs r3, #0x8c

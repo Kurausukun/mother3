@@ -100,7 +100,7 @@ struct CgbChannel
     u8 le;
     u8 sw;
     u32 fr;
-    u32 wp;
+    u32* wp;
     u32 cp;
     u32 tp;
     u32 pp;
@@ -150,6 +150,8 @@ struct SoundChannel
 #define MAX_DIRECTSOUND_CHANNELS 12
 
 #define PCM_DMA_BUF_SIZE 1584 // size of Direct Sound buffer
+
+typedef void (*MPlayFunc)();
 
 struct SoundInfo
 {
@@ -340,10 +342,10 @@ extern u8 gMPlayMemAccArea[];
 
 extern char SoundMainRAM[];
 
-extern void *gMPlayJumpTable[];
+extern MPlayFunc gMPlayJumpTable[];
 
 typedef void (*XcmdFunc)(struct MusicPlayerInfo *, struct MusicPlayerTrack *);
-extern const XcmdFunc gXcmdTable[];
+extern const XcmdFunc gUnknown_08119C24[];
 
 extern struct CgbChannel gCgbChans[];
 
@@ -374,7 +376,7 @@ void RealClearChain(void *x);
 
 void MPlayContinue(struct MusicPlayerInfo *mplayInfo);
 void MPlayStart(struct MusicPlayerInfo *mplayInfo, struct SongHeader *songHeader);
-void m4aMPlayStop(struct MusicPlayerInfo *mplayInfo);
+void MPlayStop(struct MusicPlayerInfo *mplayInfo);
 void FadeOutBody(struct MusicPlayerInfo *mplayInfo);
 void TrkVolPitSet(struct MusicPlayerInfo *mplayInfo, struct MusicPlayerTrack *track);
 void MPlayFadeOut(struct MusicPlayerInfo *mplayInfo, u16 speed);

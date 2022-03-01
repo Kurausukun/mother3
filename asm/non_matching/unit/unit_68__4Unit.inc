@@ -117,7 +117,7 @@ _08074DBE:
 	bne _08074E16
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	cmp r0, #0x31
 	bgt _08074E16
 	ldr r1, [r4, #0x1c]

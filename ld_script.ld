@@ -1,6 +1,7 @@
 OUTPUT_ARCH(arm)
 
-gNumMusicPlayers = 4;
+gNumMusicPlayers = 10;
+gMaxLines = 0;
 
 SECTIONS
 {
@@ -19,55 +20,59 @@ SECTIONS
     }
 
 	. = 0x08000000;
-    .text :
-	ALIGN(4)
+    ROM : ALIGN(4)
 	{
         asm/crt0.o(.text);
         src/main.o(.text);
         asm/rom.o(.text);
-        src/script.o(.text);
+        src/overworld/script.o(.text);
         asm/code_0801BEE0.o(.text);
-        src/core/system.o(.text);
+        src/battle/system.o(.text);
         asm/battle.o(.text);
         asm/guest.o(.text);
-        src/guest.o(.text);
-        src/guestFactory.o(.text);
+        src/battle/guest.o(.text);
+        src/battle/guestFactory.o(.text);
         asm/goods.o(.text);
+        src/battle/goods.o(.text);
         asm/sndmon.o(.text);
         asm/code_0805D74C.o(.text);
-        src/core/singleton.o(.text);
-        src/core/base.o(.text);
+        src/singleton.o(.text);
+        src/base.o(.text);
         asm/gcc_fcvt.o(.text);
-        src/core/fit.o(.text);
-        src/core/irc.o(.text);
-        src/core/clock.o(.text);
-        src/core/clock_2.o(.text);
+        asm/gcc_fcvt2.o(.text);
+        src/allocator.o(.text);
+        src/battle/irc.o(.text);
+        src/battle/clock.o(.text);
+        src/battle/clock_2.o(.text);
         asm/gengine.o(.text);
         asm/bgengine.o(.text);
         asm/objengine.o(.text);
         asm/objchrpool.o(.text);
         asm/objpltpool.o(.text);
         asm/keypad.o(.text);
-        src/core/keypad.o(.text);
+        src/battle/keypad.o(.text);
         asm/fntsystem.o(.text);
         asm/rassystem.o(.text);
         asm/efcsystem.o(.text);
         asm/sndsystem.o(.text);
         asm/keyfocusmanager.o(.text);
         asm/rhythm.o(.text);
-        src/core/unit.o(.text);
-        src/unitTarget.o(.text);
+        src/battle/unit.o(.text);
+        src/battle/unitTarget.o(.text);
         asm/rom2.o(.text);
-        src/skill.o(.text);
+        src/battle/skill.o(.text);
         asm/player.o(.text);
         asm/playerskill.o(.text);
-        src/guestSkill.o(.text);
+        src/battle/guestSkill.o(.text);
         asm/monster.o(.text);
         asm/monsterskill.o(.text);
         asm/psi.o(.text);
         asm/rom2d.o(.text);
+        src/battle/archive.o(.text);
+        asm/rom2e.o(.text);
 
         asm/m4a_1.o(.text);
+        src/m4a.o(.text);
         asm/libc.o(.text);
 
         *libc.a:libcfunc.o(.text);
@@ -111,16 +116,15 @@ SECTIONS
         src/rom3.o(.text);
         asm/rom3a.o(.text);
         asm/rom3.o(.text);
-        src/goods2.o(.text);
+        src/battle/goods2.o(.text);
         asm/rom3b.o(.text);
-        src/core/inst.o(.text);
+        src/inst.o(.text);
         asm/rom4.o(.text);
-	} = 0
 
-    .data :
-	ALIGN(4)
-    {
         data/data1.o(.rodata);
+        src/data/monsterData.o(.rodata);
+        src/data/monsterSkillData.o(.rodata);
+        data/data1b.o(.rodata);
         data/data2.o(.rodata);
 		data/sound_data.o(.rodata);
 		data/temp.o(.rodata);
@@ -135,7 +139,9 @@ SECTIONS
         *.o(.rodata);
 
         data/data3.o(.data);
-        data/mainscript.o(.data);
+        assets/misctext.o(.data);
+        data/data3a.o(.data);
+        assets/mainscript.o(.data);
         data/data4.o(.data);
 
         *libc.a:impure.o(.data);
@@ -143,7 +149,7 @@ SECTIONS
         *libc.a:locale.o(.data);
 
         data/vtables.o(.data);
-    } = 0
+	} = 0
 
     endl__FR7ostream = 0;
 

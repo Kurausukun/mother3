@@ -29,6 +29,7 @@
 
 // agbcc stddef.h doesnt have this
 #ifdef __cplusplus
+#undef NULL
 #define NULL 0
 #endif
 

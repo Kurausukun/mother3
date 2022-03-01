@@ -64,6 +64,7 @@ SOUND_ASM_BUILDDIR = $(OBJ_DIR)/$(SOUND_ASM_SUBDIR)
 BANK_ASM_BUILDDIR = $(OBJ_DIR)/$(BANK_ASM_SUBDIR)
 SEQ_ASM_BUILDDIR = $(OBJ_DIR)/$(SEQ_ASM_SUBDIR)
 WAVE_ASM_BUILDDIR = $(OBJ_DIR)/$(WAVE_ASM_SUBDIR)
+ASSETS_BUILDDIR = $(OBJ_DIR)/$(ASSETS_SUBDIR)
 
 #$(shell mkdir -p $(C_BUILDDIR) $(C_DATA_BUILDDIR) $(SRC_ASM_BUILDDIR) $(ASM_BUILDDIR) $(DATA_ASM_BUILDDIR) $(RODATA_ASM_BUILDDIR) $(SOUND_ASM_BUILDDIR) $(BANK_ASM_BUILDDIR) $(SEQ_ASM_BUILDDIR) $(WAVE_ASM_BUILDDIR))
 
@@ -98,7 +99,10 @@ SEQ_ASM_OBJS := $(patsubst $(SEQ_ASM_SUBDIR)/%.s,$(SEQ_ASM_BUILDDIR)/%.o,$(SEQ_A
 WAVE_ASM_SRCS := $(wildcard $(WAVE_ASM_SUBDIR)/*.s)
 WAVE_ASM_OBJS := $(patsubst $(WAVE_ASM_SUBDIR)/%.s,$(WAVE_ASM_BUILDDIR)/%.o,$(WAVE_ASM_SRCS))
 
-OBJS := $(CPP_OBJS) $(C_DATA_OBJS) $(SRC_ASM_OBJS) $(ASM_OBJS) $(SOUND_ASM_OBJS) $(BANK_ASM_OBJS) $(SEQ_ASM_OBJS) $(WAVE_ASM_OBJS) $(DATA_ASM_OBJS) $(RODATA_ASM_OBJS) 
+ASSETS_SRCS := $(wildcard $(ASSETS_SUBDIR)/*.salsa)
+ASSETS_OBJS := $(patsubst $(ASSETS_SUBDIR)/%.salsa,$(ASSETS_BUILDDIR)/%.o,$(ASSETS_SRCS))
+
+OBJS := $(CPP_OBJS) $(C_DATA_OBJS) $(SRC_ASM_OBJS) $(ASM_OBJS) $(SOUND_ASM_OBJS) $(BANK_ASM_OBJS) $(SEQ_ASM_OBJS) $(WAVE_ASM_OBJS) $(DATA_ASM_OBJS) $(RODATA_ASM_OBJS) $(ASSETS_OBJS)
 OBJS_REL := $(patsubst $(OBJ_DIR)/%,%,$(OBJS))
 
 SUBDIRS  := $(sort $(dir $(OBJS)))
@@ -110,7 +114,6 @@ $(C_BUILDDIR)/sub_801E0EC.o: CC1FLAGS := -O0 -mthumb-interwork -g
 
 $(C_BUILDDIR)/m4a_2.o: CC1FLAGS := -mthumb-interwork -O1
 $(C_BUILDDIR)/m4a_4.o: CC1FLAGS := -mthumb-interwork -O1
-
 
 #### Main Rules ####
 
@@ -128,15 +131,16 @@ MAKEFLAGS += --no-print-directory
 .DELETE_ON_ERROR:
 
 all: $(ROM)
-	perl calcrom.pl $(MAP)
+	@python3 progress.py
 ifeq ($(COMPARE),1)
-	$(SHA1) $(BUILD_NAME).sha1
+	@$(SHA1) $(BUILD_NAME).sha1
 endif
 
 compare: $(ROM)
 	$(SHA1) -c $(BUILD_NAME).sha1
 
 clean: mostlyclean
+	rm -rf $(ASSETS_SRCS) $(basename $(ASSETS_SRCS))
 
 mostlyclean: tidy
 	rm -f $(SAMPLE_SUBDIR)/*.bin
@@ -206,11 +210,8 @@ setup:
 	make -C tools/salsa
 	make -C tools/scaninc
 
-	$(SALSA) --extract baserom.gba data/mainscript.txt
-
-$(DATA_ASM_BUILDDIR)/mainscript.o: $(DATA_ASM_SUBDIR)/mainscript.s
-	$(SALSA) --build data/mainscript.txt build/mainscript.o
-	$(AS) $(ASFLAGS) -o $@ $<
+	$(SALSA) --extract baserom.gba assets/mainscript.salsa
+	$(SALSA) --extract baserom.gba assets/misctext.salsa
 
 $(C_OBJS): $(C_SRCS)
 	$(CPP) $(CPPFLAGS) $< -o $(C_BUILDDIR)/$(<F).i
@@ -250,6 +251,10 @@ $(SEQ_ASM_BUILDDIR)/%.o: $(SEQ_ASM_SUBDIR)/%.s
     
 $(WAVE_ASM_BUILDDIR)/%.o: $(WAVE_ASM_SUBDIR)/%.s
 	$(AS) $(ASFLAGS) -o $@ $<
+
+$(ASSETS_BUILDDIR)/%.o: $(ASSETS_SUBDIR)/%.salsa
+	$(SALSA) --build $(ASSETS_SUBDIR)/$*.salsa $(ASSETS_BUILDDIR)/$*.bin
+	$(OBJCOPY) -I binary -B armv4t -O elf32-littlearm $(ASSETS_BUILDDIR)/$*.bin $(ASSETS_BUILDDIR)/$*.o
 
 $(ELF): $(OBJ_DIR)/ld_script.ld $(OBJS) $(C_OBJS)
 	cd $(OBJ_DIR) && $(LD) $(LDFLAGS) -T $(LDSCRIPT) $(OBJS_REL) ../../tools/agbcc/lib/libgcc.a ../../tools/agbcc/lib/libc.a -o ../../$@

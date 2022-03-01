@@ -541,7 +541,7 @@ sub_08081D70: @ 0x08081D70
 	lsls r4, r0, #3
 	adds r4, r4, r0
 	lsls r4, r4, #4
-	ldr r0, _08081DD8 @ =gEnemyData
+	ldr r0, _08081DD8 @ =gMonsterData
 	adds r4, r4, r0
 	adds r0, r6, #0
 	adds r1, r5, #0
@@ -570,7 +570,7 @@ sub_08081D70: @ 0x08081D70
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08081DD8: .4byte gEnemyData
+_08081DD8: .4byte gMonsterData
 
 	thumb_func_start sub_08081DDC
 sub_08081DDC: @ 0x08081DDC
@@ -596,7 +596,7 @@ sub_08081DDC: @ 0x08081DDC
 	lsls r4, r0, #3
 	adds r4, r4, r0
 	lsls r4, r4, #4
-	ldr r0, _08081E8C @ =gEnemyData
+	ldr r0, _08081E8C @ =gMonsterData
 	adds r4, r4, r0
 	mov r1, r8
 	ldrh r0, [r1]
@@ -658,7 +658,7 @@ sub_08081DDC: @ 0x08081DDC
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08081E8C: .4byte gEnemyData
+_08081E8C: .4byte gMonsterData
 
 	thumb_func_start sub_08081E90
 sub_08081E90: @ 0x08081E90
@@ -781,7 +781,7 @@ _08081F3E:
 	lsls r1, r0, #3
 	adds r1, r1, r0
 	lsls r1, r1, #4
-	ldr r0, _08081F84 @ =gEnemyData
+	ldr r0, _08081F84 @ =gMonsterData
 	adds r1, r1, r0
 	ldr r0, [r1, #0x6c]
 	lsls r0, r0, #2
@@ -796,7 +796,7 @@ _08081F3E:
 	.align 2, 0
 _08081F7C: .4byte gUnknown_0200253C
 _08081F80: .4byte gUnknown_02002530
-_08081F84: .4byte gEnemyData
+_08081F84: .4byte gMonsterData
 
 	thumb_func_start sub_08081F88
 sub_08081F88: @ 0x08081F88
@@ -921,7 +921,7 @@ sub_08082044: @ 0x08082044
 	lsls r0, r4, #1
 	adds r0, r0, r4
 	lsls r0, r0, #4
-	ldr r1, _08082070 @ =gUnknown_080D9D28
+	ldr r1, _08082070 @ =gMonsterSkillData
 	adds r0, r0, r1
 	str r0, [r5, #0x48]
 	adds r0, r5, #0
@@ -930,7 +930,7 @@ sub_08082044: @ 0x08082044
 	bx r1
 	.align 2, 0
 _0808206C: .4byte vt_09F83548
-_08082070: .4byte gUnknown_080D9D28
+_08082070: .4byte gMonsterSkillData
 
 	thumb_func_start sub_08082074
 sub_08082074: @ 0x08082074
@@ -971,7 +971,7 @@ sub_08082088: @ 0x08082088
 	cmp r0, r1
 	blt _080820C6
 	adds r0, r5, #0
-	bl sub_08078410
+	bl sub_08078410__5Goods
 	b _0808212A
 _080820C6:
 	ldr r2, [r5, #0x1c]
@@ -1102,7 +1102,7 @@ sub_080821A0: @ 0x080821A0
 	movs r2, #0
 	bl sub_08073CF0
 	adds r0, r4, #0
-	bl nullsub_28
+	bl nullsub_28__5Goods
 	pop {r4, r5}
 	pop {r0}
 	bx r0
@@ -1270,7 +1270,7 @@ sub_080822C4: @ 0x080822C4
 	ldr r0, [r1, #0x48]
 	ldrh r1, [r0, #0x24]
 	adds r0, r4, #0
-	bl sub_08073444
+	bl sub_08073444__5GoodsUs
 	adds r0, r4, #0
 	pop {r4}
 	pop {r1}

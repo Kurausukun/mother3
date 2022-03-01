@@ -27,32 +27,56 @@ enum EquipFlags {
     _80,
 };
 
-struct ItemData {
-    u32 id;
-    ItemType type;
-    u16 key_item_flags;
-    u16 sell_price;
-    EquipFlags equip_flags;
-    s32 hp_increase;
-    s32 pp_increase;
-    s8 off_increase;
-    s8 def_increase;
-    s8 iq_increase;
-    s8 spd_increase;
-    s8 knd_increase;
-    u8 status_protect[22];
-    u8 elem_protect[5];
-    u8 attack_type[5];
-    u8 gen_info[40];
-    u32 battle_info;
-};
+// struct ItemData {
+//     u32 id;
+//     ItemType type;
+//     u16 key_item_flags;
+//     u16 sell_price;
+//     EquipFlags equip_flags;
+//     s32 hp_increase;
+//     s32 pp_increase;
+//     s8 off_increase;
+//     s8 def_increase;
+//     s8 iq_increase;
+//     s8 spd_increase;
+//     s8 knd_increase;
+//     u8 status_protect[22];
+//     u8 elem_protect[5];
+//     u8 attack_type[5];
+//     u8 gen_info[40];
+//     u32 battle_info;
+// };
 
-struct Sprite {
-    u8 filler[0x34];
+struct Object {
+    s16 _0;
+    s16 _2;
+    u8 filler[0x1c];
+    u16 _20;
+    u16 _22;
+    u8 _24[0x10];
     u32 speed;
     u8 _38[0x4d];
     u8 character;
-    u8 _86[0x44];
+    u8 _86;
+    u8 _87;
+    u16 _88;
+    u8 _8a;
+    u8 _8b;
+    u8 _8c[26];
+    u16 _a6;
+    u16 _a8;
+    u8 _aa[4];
+    u16 _ae;
+    u16 _b0;
+    u16 _b2;
+    u8 _b4[8];
+    u8 _bc_0 : 2;
+    u8 _bc_1 : 3;
+    u8 _bc_2 : 3;
+    u8 _bd[10];
+    u8 _c7_0 : 4;
+    u8 _c7_1 : 4;
+    u8 _c8[2];
     u8 _ca;
 };
 
@@ -60,10 +84,10 @@ struct struct_02016028 {
     u8 filler[0x2ca2];
     u16 _2ca2;
     u8 _2ca3[0x4ad0 - 0x2ca4];
-    u32 _4ad0[0xd];
-    u16 _4b04;
+    u32 char_names[0xd];
+    u16 msg_type;
     u16 _4b06;
-    u16 _4b08;
+    u16 msg_choice;
     u16 _4b0a;
     u16 _4b0c;
     u16 _4b0e;
@@ -95,12 +119,12 @@ struct struct_02016028 {
 };
 
 struct Save {
-    u8 _0[0x8];
+    u8 party[5];
     u32 dp_pocket;
     u32 dp_bank;
-    u8 _10[0x100];
-    u8 _110[0x100];
-    u32 _210;
+    u8 key_items[0x100];
+    u8 item_guy[0x100];
+    u32 playtime;
     u8 _214;
     u32 _218;
     u32 _21c;
@@ -109,20 +133,20 @@ struct Save {
     u16 _22c[5];
     u16 _236[5];
     u8 event_flags[0x100];
-    u8 _340[0x40];
+    u8 shop_flags[0x40];
     u8 _380[0x40];
     u8 _3c0[0x40];
-    u8 _400[0x80];
+    u8 giftbox_flags[0x80];
     u8 _480;
     u8 _481;
     u16 _482[0x80];
     u16 _582[0x80];
-    u8 _682[0x10];
-    u8 _692[0x10];
-    u8 _6a2[0x12];
-    u8 _6b4[0x12];
-    u8 _6c6[0x12];
-    u8 _6d8[0x20];
+    u8 hinawa_name[0x10];
+    u8 claus_name[0x10];
+    u8 fav_food[0x12];
+    u8 fav_thing[0x12];
+    u8 playername_short[0x12];
+    u8 playername[0x20];
     u16 _6f8;
     u16 _6fa;
     u16 _6fc;
@@ -148,8 +172,8 @@ struct Save {
     u8 _738[12];
     u32 _744;
     u16 _748;
-    u8 _74a[0x20];
-    u8 _76a[0x20];
+    u8 enemy_seen_front[0x20];
+    u8 enemy_seen_back[0x20];
     u8 _78a;
     u8 _78b;
     u8 _78c;
@@ -159,8 +183,13 @@ struct Save {
     u8 _81e;
 };
 
-extern ItemData gItemData[];
+// extern ItemData gGoodsInfo[];
 extern Save gSave;
 extern struct_02016028 gUnknown_02016028;
+
+struct Size {
+    u16 w;
+    s16 h;
+};
 
 #endif  // STRUCTS_H

@@ -27,8 +27,8 @@ sub_08082484: @ 0x08082484
 	.align 2, 0
 _080824AC: .4byte vt_09F83548
 
-	thumb_func_start sub_080824B0
-sub_080824B0: @ 0x080824B0
+	thumb_func_start tellStatus
+tellStatus: @ 0x080824B0
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -294,7 +294,7 @@ sub_08082694: @ 0x08082694
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
 	adds r0, r4, #0
-	bl sub_080824B0
+	bl tellStatus
 	adds r0, r4, #0
 	pop {r4}
 	pop {r1}
@@ -876,7 +876,7 @@ sub_08082AF0: @ 0x08082AF0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
 	movs r0, #8
-	bl sub_08001C5C
+	bl get_string
 	adds r4, r0, #0
 	movs r0, #8
 	bl sub_08001DB0
@@ -891,8 +891,8 @@ sub_08082AF0: @ 0x08082AF0
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_08082B1C
-sub_08082B1C: @ 0x08082B1C
+	thumb_func_start tellTurnAction
+tellTurnAction: @ 0x08082B1C
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -947,7 +947,7 @@ sub_08082B78: @ 0x08082B78
 	lsls r0, r4, #3
 	subs r0, r0, r4
 	lsls r0, r0, #3
-	ldr r1, _08082BA4 @ =gUnknown_080E1908
+	ldr r1, _08082BA4 @ =gPsiData
 	adds r0, r0, r1
 	str r0, [r5, #0x48]
 	adds r0, r5, #0
@@ -956,7 +956,7 @@ sub_08082B78: @ 0x08082B78
 	bx r1
 	.align 2, 0
 _08082BA0: .4byte vt_09F83958
-_08082BA4: .4byte gUnknown_080E1908
+_08082BA4: .4byte gPsiData
 
 	thumb_func_start  sub_08082BA8
  sub_08082BA8: @ 0x08082BA8
@@ -1099,7 +1099,7 @@ _08082C5A:
 _08082CCE:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	cmp r0, #0x45
 	bgt _08082D60
 	ldr r1, [r5, #0x1c]
@@ -1165,7 +1165,7 @@ _08082D44:
 	b _08082D66
 _08082D60:
 	adds r0, r5, #0
-	bl sub_08078410
+	bl sub_08078410__5Goods
 _08082D66:
 	add sp, #0x18
 	pop {r4, r5, r6}
@@ -1215,7 +1215,7 @@ sub_08082D70: @ 0x08082D70
 	bl sub_08073CF0
 _08082DC4:
 	adds r0, r5, #0
-	bl nullsub_28
+	bl nullsub_28__5Goods
 	pop {r4, r5}
 	pop {r0}
 	bx r0
@@ -1483,7 +1483,7 @@ sub_08082F90: @ 0x08082F90
 	ldr r0, [r1, #0x48]
 	ldrh r1, [r0, #0x2c]
 	adds r0, r4, #0
-	bl sub_08073444
+	bl sub_08073444__5GoodsUs
 	adds r0, r4, #0
 	pop {r4}
 	pop {r1}

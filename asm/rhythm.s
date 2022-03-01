@@ -582,8 +582,8 @@ _080729A8:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080729B0
-sub_080729B0: @ 0x080729B0
+	thumb_func_start sub_080729B0__5Goods
+sub_080729B0__5Goods: @ 0x080729B0
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	cmp r5, #0
@@ -607,8 +607,8 @@ _080729D4:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080729DC
-sub_080729DC: @ 0x080729DC
+	thumb_func_start getPartyCount
+getPartyCount: @ 0x080729DC
 	push {lr}
 	bl sub_080728B8
 	ldr r1, [r0, #0x1c]
@@ -1970,8 +1970,8 @@ _0807343C:
 	pop {r0}
 	bx r0
 
-	thumb_func_start sub_08073444
-sub_08073444: @ 0x08073444
+	thumb_func_start sub_08073444__5GoodsUs
+sub_08073444__5GoodsUs: @ 0x08073444
 	push {r4, lr}
 	adds r4, r0, #0
 	lsls r2, r1, #0x10
@@ -1998,7 +1998,7 @@ sub_08073460: @ 0x08073460
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
 	add r0, sp, #4
-	bl sub_08073444
+	bl sub_08073444__5GoodsUs
 	str r4, [sp]
 	mov r0, r8
 	add r1, sp, #4
@@ -2327,8 +2327,8 @@ _0807372C:
 	pop {r0}
 	bx r0
 
-	thumb_func_start sub_08073734
-sub_08073734: @ 0x08073734
+	thumb_func_start hitPlayer
+hitPlayer: @ 0x08073734
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -2529,7 +2529,7 @@ _0807389A:
 	bne _08073902
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	cmp r0, #0x27
 	bgt _08073902
 	adds r0, r7, #0
@@ -3742,7 +3742,7 @@ _08074282:
 	adds r5, r7, r5
 	mov r0, sp
 	adds r1, r6, #0
-	bl attackdata_118__10UnitTargetUi
+	bl attackdata_118__10UnitTargeti
 	adds r1, r0, #0
 	ldr r2, [r4, #4]
 	adds r0, r5, #0
@@ -3750,7 +3750,7 @@ _08074282:
 	adds r6, #1
 _080742A4:
 	mov r0, sp
-	bl attackdata_110__10UnitTarget
+	bl attackdata_110__C10UnitTarget
 	cmp r6, r0
 	blt _08074282
 	ldr r1, [r7, #0x1c]

@@ -85,7 +85,7 @@ gUnknown_080FF278:
     .global gUnknown_080FF2CC
 gUnknown_080FF2CC:
     .4byte 0xFFFF0000
-    .4byte sub_0806BB48+1
+    .4byte bgengine_updateScrollHorizontal+1
     .incbin "baserom.gba", 0x000FF2D4, 0xEC
 
     .global gUnknown_080FF3C0
@@ -990,42 +990,52 @@ gUnknown_0811996C:
 gUnknown_08119976:
     .incbin "baserom.gba", 0x00119976, 0x6
 
-    .global gUnknown_0811997C
-gUnknown_0811997C:
+    .global gMPlayJumpTableTemplate
+gMPlayJumpTableTemplate:
     .incbin "baserom.gba", 0x0011997C, 0x90
 
-    .global gUnknown_08119A0C
-gUnknown_08119A0C:
+    .global gScaleTable
+gScaleTable:
     .incbin "baserom.gba", 0x00119A0C, 0xB4
 
-    .global gUnknown_08119AC0
-gUnknown_08119AC0:
+    .global gFreqTable
+gFreqTable:
     .incbin "baserom.gba", 0x00119AC0, 0x30
 
-    .global gUnknown_08119AF0
-gUnknown_08119AF0:
+    .global gPcmSamplesPerVBlankTable
+gPcmSamplesPerVBlankTable:
     .incbin "baserom.gba", 0x00119AF0, 0x18
 
-    .global gUnknown_08119B08
-gUnknown_08119B08:
+    .global gCgbScaleTable
+gCgbScaleTable:
     .incbin "baserom.gba", 0x00119B08, 0x84
 
-    .global gUnknown_08119B8C
-gUnknown_08119B8C:
+    .global gCgbFreqTable
+gCgbFreqTable:
     .incbin "baserom.gba", 0x00119B8C, 0x18
 
-    .global gUnknown_08119BA4
-gUnknown_08119BA4:
+    .global gNoiseTable
+gNoiseTable:
     .incbin "baserom.gba", 0x00119BA4, 0x3C
 
-    .global gUnknown_08119BE0
-gUnknown_08119BE0:
+    .global gCgb3Vol
+gCgb3Vol:
     .incbin "baserom.gba", 0x00119BE0, 0x10
 
-    .global gUnknown_08119BF0
-gUnknown_08119BF0:
+    .global gClockTable
+gClockTable:
     .incbin "baserom.gba", 0x00119BF0, 0x34
 
     .global gUnknown_08119C24
 gUnknown_08119C24:
     .incbin "baserom.gba", 0x00119C24, 0x30
+=======
+    .incbin "baserom.gba", 0x00119C24, 0x71F8
+
+    .global gMPlayTable
+gMPlayTable:
+    .incbin "baserom.gba", 0x00120E1C, 0x78
+
+    .global gSongTable
+gSongTable:
+    .incbin "baserom.gba", 0x00120E94, 0xBBA2A0

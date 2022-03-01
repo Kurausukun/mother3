@@ -542,7 +542,7 @@ _0805DBFA:
 	adds r0, r4, #0
 	adds r0, #0x60
 	movs r1, #2
-	bl sub_08071FBC
+	bl _._10KeyFocuser
 	adds r0, r4, #0
 	adds r1, r5, #0
 	bl _._4Base
@@ -570,28 +570,28 @@ _0805DC2E:
 	beq _0805DC50
 	b _0805DC5C
 _0805DC38:
-	ldr r0, _0805DC40 @ =gUnknown_020047E0
+	ldr r0, _0805DC40 @ =gEncounter
 	adds r0, #0x3c
 	movs r1, #1
 	b _0805DC62
 	.align 2, 0
-_0805DC40: .4byte gUnknown_020047E0
+_0805DC40: .4byte gEncounter
 _0805DC44:
-	ldr r0, _0805DC4C @ =gUnknown_020047E0
+	ldr r0, _0805DC4C @ =gEncounter
 	adds r0, #0x3c
 	movs r1, #3
 	b _0805DC62
 	.align 2, 0
-_0805DC4C: .4byte gUnknown_020047E0
+_0805DC4C: .4byte gEncounter
 _0805DC50:
-	ldr r0, _0805DC58 @ =gUnknown_020047E0
+	ldr r0, _0805DC58 @ =gEncounter
 	adds r0, #0x3c
 	movs r1, #1
 	b _0805DC62
 	.align 2, 0
-_0805DC58: .4byte gUnknown_020047E0
+_0805DC58: .4byte gEncounter
 _0805DC5C:
-	ldr r0, _0805DC68 @ =gUnknown_020047E0
+	ldr r0, _0805DC68 @ =gEncounter
 	adds r0, #0x3c
 	movs r1, #2
 _0805DC62:
@@ -599,14 +599,14 @@ _0805DC62:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0805DC68: .4byte gUnknown_020047E0
+_0805DC68: .4byte gEncounter
 
 	thumb_func_start sub_0805DC6C
 sub_0805DC6C: @ 0x0805DC6C
 	push {r4, lr}
 	sub sp, #4
 	adds r4, r0, #0
-	ldr r0, _0805DDE0 @ =gUnknown_020047E0
+	ldr r0, _0805DDE0 @ =gEncounter
 	adds r0, #0x66
 	ldrb r0, [r0]
 	str r0, [r4, #0x38]
@@ -771,7 +771,7 @@ _0805DDD8:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0805DDE0: .4byte gUnknown_020047E0
+_0805DDE0: .4byte gEncounter
 
 	thumb_func_start sub_0805DDE4
 sub_0805DDE4: @ 0x0805DDE4
@@ -828,7 +828,7 @@ sub_0805DE24: @ 0x0805DE24
 	movs r1, #0
 	ldrsh r0, [r4, r1]
 	adds r5, r5, r0
-	ldr r2, _0805DEAC @ =gEnemyData
+	ldr r2, _0805DEAC @ =gMonsterData
 	mov r8, r2
 	movs r0, #0
 	bl sub_08072E18
@@ -873,7 +873,7 @@ sub_0805DE24: @ 0x0805DE24
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0805DEAC: .4byte gEnemyData
+_0805DEAC: .4byte gMonsterData
 
 	thumb_func_start sub_0805DEB0
 sub_0805DEB0: @ 0x0805DEB0
@@ -1302,7 +1302,7 @@ _0805E230:
 	bl _call_via_r2
 	adds r4, #1
 _0805E24E:
-	bl sub_080729DC
+	bl getPartyCount
 	cmp r4, r0
 	blt _0805E230
 	movs r4, #0
@@ -1457,14 +1457,14 @@ _0805E34C:
 	b _0805E38A
 _0805E372:
 	adds r4, #1
-	bl sub_080729DC
+	bl getPartyCount
 	cmp r4, r0
 	blt _0805E34C
 	b _0805E388
 _0805E37E:
 	adds r4, #1
 _0805E380:
-	bl sub_080729DC
+	bl getPartyCount
 	cmp r4, r0
 	blt _0805E340
 _0805E388:
@@ -1478,7 +1478,7 @@ _0805E38A:
 sub_0805E390: @ 0x0805E390
 	push {r4, r5, lr}
 	adds r5, r1, #0
-	bl sub_080729DC
+	bl getPartyCount
 	subs r4, r0, #1
 	cmp r4, #0
 	blt _0805E41E
@@ -2159,8 +2159,8 @@ sub_0805E8A4: @ 0x0805E8A4
 _0805E8E8: .4byte _vt.3Unk
 _0805E8EC: .4byte vt_09F45330
 
-	thumb_func_start sub_0805E8F0
-sub_0805E8F0: @ 0x0805E8F0
+	thumb_func_start onBattleLost
+onBattleLost: @ 0x0805E8F0
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -2379,7 +2379,7 @@ sub_0805EA8C: @ 0x0805EA8C
 sub_0805EA90: @ 0x0805EA90
 	push {lr}
 	movs r1, #0
-	ldr r0, _0805EAA4 @ =gUnknown_020047E0
+	ldr r0, _0805EAA4 @ =gEncounter
 	ldrb r0, [r0]
 	cmp r0, #0
 	bne _0805EA9E
@@ -2389,11 +2389,11 @@ _0805EA9E:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0805EAA4: .4byte gUnknown_020047E0
+_0805EAA4: .4byte gEncounter
 
 	thumb_func_start sub_0805EAA8
 sub_0805EAA8: @ 0x0805EAA8
-	ldr r0, _0805EABC @ =gUnknown_020047E0
+	ldr r0, _0805EABC @ =gEncounter
 	movs r2, #0xc
 	ldrsh r1, [r0, r2]
 	lsls r0, r1, #3
@@ -2403,14 +2403,14 @@ sub_0805EAA8: @ 0x0805EAA8
 	adds r0, r0, r1
 	bx lr
 	.align 2, 0
-_0805EABC: .4byte gUnknown_020047E0
+_0805EABC: .4byte gEncounter
 _0805EAC0: .4byte gUnknown_080C7D28
 
 	thumb_func_start sub_0805EAC4
 sub_0805EAC4: @ 0x0805EAC4
 	push {lr}
 	movs r1, #0
-	ldr r0, _0805EAD8 @ =gUnknown_020047E0
+	ldr r0, _0805EAD8 @ =gEncounter
 	ldrb r0, [r0]
 	cmp r0, #1
 	bne _0805EAD2
@@ -2420,25 +2420,25 @@ _0805EAD2:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0805EAD8: .4byte gUnknown_020047E0
+_0805EAD8: .4byte gEncounter
 
 	thumb_func_start sub_0805EADC
 sub_0805EADC: @ 0x0805EADC
-	ldr r0, _0805EAE8 @ =gUnknown_020047E0
+	ldr r0, _0805EAE8 @ =gEncounter
 	ldrh r0, [r0, #0xa]
 	lsls r0, r0, #4
-	ldr r1, _0805EAEC @ =gUnknown_080EC930
+	ldr r1, _0805EAEC @ =gBattleGroupTable
 	adds r0, r0, r1
 	bx lr
 	.align 2, 0
-_0805EAE8: .4byte gUnknown_020047E0
-_0805EAEC: .4byte gUnknown_080EC930
+_0805EAE8: .4byte gEncounter
+_0805EAEC: .4byte gBattleGroupTable
 
 	thumb_func_start sub_0805EAF0
 sub_0805EAF0: @ 0x0805EAF0
 	push {lr}
 	movs r1, #0
-	ldr r0, _0805EB04 @ =gUnknown_020047E0
+	ldr r0, _0805EB04 @ =gEncounter
 	ldrb r0, [r0]
 	cmp r0, #2
 	bne _0805EAFE
@@ -2448,11 +2448,11 @@ _0805EAFE:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0805EB04: .4byte gUnknown_020047E0
+_0805EB04: .4byte gEncounter
 
 	thumb_func_start sub_0805EB08
 sub_0805EB08: @ 0x0805EB08
-	ldr r0, _0805EB1C @ =gUnknown_020047E0
+	ldr r0, _0805EB1C @ =gEncounter
 	movs r2, #0xc
 	ldrsh r1, [r0, r2]
 	lsls r0, r1, #3
@@ -2462,7 +2462,7 @@ sub_0805EB08: @ 0x0805EB08
 	adds r0, r0, r1
 	bx lr
 	.align 2, 0
-_0805EB1C: .4byte gUnknown_020047E0
+_0805EB1C: .4byte gEncounter
 _0805EB20: .4byte gUnknown_080C7D28
 
 	thumb_func_start sub_0805EB24
@@ -2525,7 +2525,7 @@ sub_0805EB60: @ 0x0805EB60
 	cmp r0, #1
 	bne _0805EB94
 	movs r1, #0
-	ldr r0, _0805EB90 @ =gUnknown_020047E0
+	ldr r0, _0805EB90 @ =gEncounter
 	ldrb r0, [r0, #4]
 	cmp r0, #0
 	bne _0805EB8C
@@ -2534,7 +2534,7 @@ _0805EB8C:
 	adds r0, r1, #0
 	b _0805EBFA
 	.align 2, 0
-_0805EB90: .4byte gUnknown_020047E0
+_0805EB90: .4byte gEncounter
 _0805EB94:
 	ldr r1, [r4, #0x1c]
 	movs r0, #0xb8
@@ -2550,7 +2550,7 @@ _0805EB94:
 	cmp r0, #1
 	bne _0805EBE0
 	movs r5, #0
-	ldr r0, _0805EBDC @ =gUnknown_020047E0
+	ldr r0, _0805EBDC @ =gEncounter
 	ldrb r0, [r0, #4]
 	cmp r0, #0
 	beq _0805EBD4
@@ -2572,7 +2572,7 @@ _0805EBD6:
 	adds r0, r5, #0
 	b _0805EBFA
 	.align 2, 0
-_0805EBDC: .4byte gUnknown_020047E0
+_0805EBDC: .4byte gEncounter
 _0805EBE0:
 	ldr r1, [r4, #0x1c]
 	movs r0, #0xc0

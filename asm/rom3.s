@@ -84,7 +84,7 @@ sub_080A02BC: @ 0x080A02BC
 	adds r4, r0, #0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #0x1a
 	cmp r1, #0x21
@@ -142,7 +142,7 @@ _080A0318:
 	bl _call_via_r2
 	movs r0, #2
 	movs r1, #3
-	bl sub_08070660
+	bl randS32
 	movs r2, #0x86
 	lsls r2, r2, #1
 	adds r1, r4, r2
@@ -162,7 +162,7 @@ sub_080A034C: @ 0x080A034C
 	adds r4, r0, #0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #0x22
 	cmp r1, #0x1e
@@ -184,7 +184,7 @@ sub_080A0374: @ 0x080A0374
 	adds r4, r0, #0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #0x1d
 	cmp r1, #0x3c
@@ -211,7 +211,7 @@ sub_080A039C: @ 0x080A039C
 	beq _080A03FE
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	cmp r0, #0x45
 	bgt _080A03FE
 	ldr r1, [r4, #0x1c]
@@ -568,7 +568,7 @@ _080A064E:
 	ldr r1, [sp, #4]
 	subs r1, #1
 	movs r0, #0
-	bl sub_08070660
+	bl randS32
 	lsls r0, r0, #1
 	ldr r1, [sp, #8]
 	adds r1, r1, r0
@@ -630,7 +630,7 @@ _080A06C4:
 	bgt _080A0702
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	cmp r0, #0x31
 	bgt _080A06E0
 	movs r0, #0x14
@@ -656,7 +656,7 @@ _080A06E8:
 _080A0702:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	cmp r0, #0x31
 	bgt _080A0712
 	movs r0, #0x14
@@ -852,7 +852,7 @@ _080A0854:
 	bne _080A0882
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	cmp r0, #0x45
 	bgt _080A0882
 	movs r0, #0x13
@@ -891,7 +891,7 @@ _080A08AA:
 _080A08BE:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #0xd
 	cmp r1, #0x21
@@ -958,7 +958,7 @@ sub_080A0934: @ 0x080A0934
 	adds r4, r0, #0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #7
 	cmp r1, #0x21
@@ -994,7 +994,7 @@ sub_080A0978: @ 0x080A0978
 	adds r4, r0, #0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #1
 	cmp r0, #0x19
 	blt _080A0998
@@ -1273,7 +1273,7 @@ sub_080A0B54: @ 0x080A0B54
 	adds r5, r5, r0
 	ldr r0, _080A0B88 @ =0x000002BB
 	ldr r1, _080A0B8C @ =0x000002CD
-	bl sub_08070660
+	bl randS32
 	adds r2, r0, #0
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
@@ -1516,7 +1516,7 @@ _080A0D44: .4byte vt_09F4E080
 sub_080A0D48: @ 0x080A0D48
 	push {r4, r5, lr}
 	adds r4, r0, #0
-	bl getSfxBank__C10GuestSkill
+	bl missChance__C10GuestSkill
 	adds r5, r0, #0
 	cmp r5, #0x63
 	bgt _080A0DC6
@@ -3564,7 +3564,7 @@ sub_080A1C94: @ 0x080A1C94
 	str r2, [r0]
 	movs r0, #2
 	movs r1, #3
-	bl sub_08070660
+	bl randS32
 	movs r2, #0xa6
 	lsls r2, r2, #1
 	adds r1, r5, r2
@@ -3689,7 +3689,7 @@ sub_080A1DB4: @ 0x080A1DB4
 	str r2, [r0]
 	movs r0, #2
 	movs r1, #3
-	bl sub_08070660
+	bl randS32
 	movs r2, #0xa6
 	lsls r2, r2, #1
 	adds r1, r5, r2
@@ -10202,7 +10202,7 @@ sub_080A5978: @ 0x080A5978
 	adds r4, r0, #0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080A599C @ =0x0000027F
 	cmp r0, #0x32
 	bge _080A598C
@@ -10508,7 +10508,7 @@ _080A5BB0:
 	bne _080A5BD8
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080A5BD4 @ =0x00000277
 	cmp r0, #0x32
 	bge _080A5BD0
@@ -10536,7 +10536,7 @@ _080A5BD8:
 _080A5BF8:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	ldr r0, _080A5C24 @ =0x0000027B
 	cmp r1, #0x21
@@ -10705,7 +10705,7 @@ _080A5D4A:
 	bne _080A5D7C
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080A5D78 @ =0x00000277
 	cmp r0, #0x32
 	bge _080A5D6A
@@ -10736,7 +10736,7 @@ _080A5D7C:
 _080A5D9C:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	ldr r0, _080A5DD0 @ =0x0000027B
 	cmp r1, #0x21
@@ -10888,7 +10888,7 @@ sub_080A5EA4: @ 0x080A5EA4
 	ble _080A5ED0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	cmp r0, #0x31
 	bgt _080A5ED0
 	movs r0, #0x90
@@ -10912,7 +10912,7 @@ _080A5ED0:
 	bgt _080A5F08
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080A5F04 @ =0x00000277
 	cmp r0, #0x37
 	bge _080A5F2A
@@ -10922,7 +10922,7 @@ _080A5F04: .4byte 0x00000277
 _080A5F08:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080A5F38 @ =0x00000276
 	cmp r0, #0x28
 	blt _080A5F2A
@@ -10965,7 +10965,7 @@ sub_080A5F3C: @ 0x080A5F3C
 	ble _080A5F68
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	cmp r0, #0x31
 	bgt _080A5F68
 	movs r0, #0x90
@@ -10973,7 +10973,7 @@ sub_080A5F3C: @ 0x080A5F3C
 _080A5F68:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080A5F88 @ =0x00000277
 	cmp r0, #0x3c
 	bge _080A5F78
@@ -11477,7 +11477,7 @@ sub_080A62FC: @ 0x080A62FC
 	bne _080A6346
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080A6354 @ =0x00000265
 	cmp r0, #0xf
 	blt _080A633A
@@ -11522,7 +11522,7 @@ sub_080A6358: @ 0x080A6358
 	bne _080A63A8
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080A63B4 @ =0x00000265
 	cmp r0, #0xf
 	blt _080A639C
@@ -11570,7 +11570,7 @@ sub_080A63B8: @ 0x080A63B8
 	bne _080A6408
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080A6414 @ =0x00000265
 	cmp r0, #0xf
 	blt _080A63FC
@@ -11618,7 +11618,7 @@ sub_080A6418: @ 0x080A6418
 	bne _080A6468
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080A6474 @ =0x00000265
 	cmp r0, #0x14
 	blt _080A645C
@@ -11826,7 +11826,7 @@ _080A65B0:
 	bne _080A65F0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	ldr r0, _080A65EC @ =0x00000265
 	cmp r1, #0x1e
@@ -11842,7 +11842,7 @@ _080A65EC: .4byte 0x00000265
 _080A65F0:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080A661C @ =0x00000265
 	cmp r0, #0xf
 	blt _080A660C
@@ -11900,7 +11900,7 @@ _080A6644:
 	bne _080A6688
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080A6684 @ =0x00000265
 	cmp r0, #0x14
 	blt _080A66AA
@@ -11918,7 +11918,7 @@ _080A6684: .4byte 0x00000265
 _080A6688:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080A66B8 @ =0x00000265
 	cmp r0, #0xf
 	blt _080A66AA
@@ -11979,7 +11979,7 @@ _080A66E0:
 	bne _080A6724
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080A6720 @ =0x00000265
 	cmp r0, #0x14
 	blt _080A678A
@@ -12011,7 +12011,7 @@ _080A6724:
 	bne _080A6768
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080A6764 @ =0x00000265
 	cmp r0, #0x14
 	blt _080A678A
@@ -12029,7 +12029,7 @@ _080A6764: .4byte 0x00000265
 _080A6768:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080A6798 @ =0x00000265
 	cmp r0, #0xf
 	blt _080A678A
@@ -12104,7 +12104,7 @@ _080A67C4:
 _080A67FC:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080A6818 @ =0x00000267
 	cmp r0, #0x32
 	bge _080A687E
@@ -12129,7 +12129,7 @@ _080A681C:
 	bne _080A685C
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080A6858 @ =0x00000265
 	cmp r0, #0x19
 	blt _080A687E
@@ -12147,7 +12147,7 @@ _080A6858: .4byte 0x00000265
 _080A685C:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080A688C @ =0x00000265
 	cmp r0, #0x14
 	blt _080A687E
@@ -12214,7 +12214,7 @@ _080A68DC: .4byte 0x00000265
 _080A68E0:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	ldr r0, _080A6904 @ =0x00000265
 	cmp r1, #0x3c
@@ -12331,7 +12331,7 @@ _080A69AC:
 _080A69BA:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0xd7
 	lsls r1, r1, #1
 	cmp r0, #0x19
@@ -12374,7 +12374,7 @@ _080A69FC:
 _080A6A0A:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080A6A28 @ =0x000001B9
 	cmp r0, #0x37
 	bge _080A6A1A
@@ -12511,7 +12511,7 @@ _080A6AE8:
 	bl _call_via_r3
 	movs r0, #2
 	movs r1, #3
-	bl sub_08070660
+	bl randS32
 	movs r2, #0xa6
 	lsls r2, r2, #1
 	adds r1, r4, r2
@@ -12570,7 +12570,7 @@ sub_080A6B6C: @ 0x080A6B6C
 	adds r4, r0, #0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0xd7
 	lsls r1, r1, #1
 	cmp r0, #0x19
@@ -12596,7 +12596,7 @@ sub_080A6B9C: @ 0x080A6B9C
 	adds r4, r0, #0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080A6BC0 @ =0x000001B9
 	cmp r0, #0x37
 	bge _080A6BB0
@@ -12732,7 +12732,7 @@ _080A6C80:
 	bl _call_via_r3
 	movs r0, #2
 	movs r1, #3
-	bl sub_08070660
+	bl randS32
 	movs r2, #0xa6
 	lsls r2, r2, #1
 	adds r1, r4, r2
@@ -12869,7 +12869,7 @@ _080A6D64:
 	movs r1, #2
 	bl sub_0806E308
 	ldr r0, _080A6EC0 @ =0x0000064E
-	bl sub_08070824
+	bl playSound
 	movs r0, #0x47
 	adds r1, r7, #0
 	adds r2, r7, #0
@@ -12885,7 +12885,7 @@ _080A6D64:
 	bl _call_via_r1
 	movs r1, #0x14
 	movs r2, #1
-	bl sub_08073734
+	bl hitPlayer
 	ldr r1, [r6, #0x1c]
 	movs r0, #0xb0
 	lsls r0, r0, #1
@@ -13145,7 +13145,7 @@ _080A6FEC:
 	bne _080A702C
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	adds r0, r6, #0
 	cmp r1, #0x2d
@@ -13369,7 +13369,7 @@ _080A71C4:
 _080A71C6:
 	adds r6, #1
 _080A71C8:
-	bl sub_080729DC
+	bl getPartyCount
 	cmp r6, r0
 	blt _080A711C
 	adds r0, r7, #0
@@ -13420,7 +13420,7 @@ _080A7224:
 _080A7226:
 	adds r5, #1
 _080A7228:
-	bl sub_080729DC
+	bl getPartyCount
 	cmp r5, r0
 	blt _080A71E0
 	adds r0, r6, #0
@@ -13471,7 +13471,7 @@ _080A7284:
 _080A7286:
 	adds r5, #1
 _080A7288:
-	bl sub_080729DC
+	bl getPartyCount
 	cmp r5, r0
 	blt _080A7240
 	adds r0, r6, #0
@@ -13673,7 +13673,7 @@ _080A73E8:
 	adds r1, r0, #0
 	subs r1, #1
 	movs r0, #0
-	bl sub_08070660
+	bl randS32
 	adds r1, r0, #0
 	ldr r2, [r5, #4]
 	adds r0, r4, #0
@@ -13727,7 +13727,7 @@ _080A746A:
 	bgt _080A74B0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080A74AC @ =0x0000019F
 	cmp r0, #0xf
 	blt _080A74D2
@@ -13744,7 +13744,7 @@ _080A74AC: .4byte 0x0000019F
 _080A74B0:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080A74E0 @ =0x0000019F
 	cmp r0, #0xa
 	blt _080A74D2
@@ -13775,7 +13775,7 @@ sub_080A74E4: @ 0x080A74E4
 	adds r4, r0, #0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080A7518 @ =0x0000019F
 	cmp r0, #0xf
 	blt _080A750A
@@ -13875,7 +13875,7 @@ _080A756C:
 	adds r1, r0, #0
 	subs r1, #1
 	movs r0, #0
-	bl sub_08070660
+	bl randS32
 	adds r1, r0, #0
 	ldr r2, [r5, #4]
 	adds r0, r4, #0
@@ -14125,7 +14125,7 @@ sub_080A777C: @ 0x080A777C
 	bgt _080A77C4
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080A77C0 @ =0x00000241
 	cmp r0, #0x3c
 	blt _080A77BC
@@ -14155,7 +14155,7 @@ _080A77C4:
 	bgt _080A77EE
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0x82
 	lsls r1, r1, #1
 	cmp r0, #0x1e
@@ -14170,7 +14170,7 @@ _080A77C4:
 _080A77EE:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #0x82
 	lsls r0, r0, #1
@@ -14383,7 +14383,7 @@ sub_080A798C: @ 0x080A798C
 	adds r4, r0, #0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080A79B0 @ =0x0000019D
 	cmp r0, #0x46
 	bge _080A79A0
@@ -14549,7 +14549,7 @@ sub_080A7AC4: @ 0x080A7AC4
 	bgt _080A7AF4
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #0x82
 	lsls r0, r0, #1
@@ -14565,7 +14565,7 @@ _080A7AF0: .4byte 0x00000243
 _080A7AF4:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0xea
 	lsls r1, r1, #1
 	cmp r0, #0x50
@@ -14722,7 +14722,7 @@ sub_080A7BF4: @ 0x080A7BF4
 	bge _080A7C48
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #0x82
 	lsls r0, r0, #1
@@ -14747,7 +14747,7 @@ _080A7C48:
 	ble _080A7C7C
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0x82
 	lsls r1, r1, #1
 	cmp r0, #0x14
@@ -14763,7 +14763,7 @@ _080A7C48:
 _080A7C7C:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0x82
 	lsls r1, r1, #1
 	cmp r0, #0xf
@@ -14788,7 +14788,7 @@ _080A7CA2:
 	ble _080A7CCA
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #0x82
 	lsls r0, r0, #1
@@ -14802,7 +14802,7 @@ _080A7CA2:
 _080A7CCA:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0x82
 	lsls r1, r1, #1
 	cmp r0, #0x14
@@ -15205,7 +15205,7 @@ _080A7FD4:
 	bgt _080A8020
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080A801C @ =0x00000242
 	cmp r0, #0x41
 	bge _080A8018
@@ -15218,7 +15218,7 @@ _080A801C: .4byte 0x00000242
 _080A8020:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	ldr r0, _080A8044 @ =0x000001ED
 	cmp r1, #0x3c
@@ -15253,12 +15253,12 @@ _080A804C:
 _080A806C:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	cmp r0, #0x45
 	bgt _080A80A0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080A80B0 @ =0x000001F1
 	cmp r0, #0x19
 	blt _080A8094
@@ -15302,7 +15302,7 @@ sub_080A80B4: @ 0x080A80B4
 	bgt _080A80E6
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0xf7
 	lsls r1, r1, #1
 	cmp r0, #0x32
@@ -15350,7 +15350,7 @@ _080A8112:
 	bne _080A814E
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #0x8e
 	lsls r0, r0, #2
@@ -15390,7 +15390,7 @@ _080A814E:
 	bne _080A81A4
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0x65
 	cmp r0, #0x46
 	bge _080A819A
@@ -15427,7 +15427,7 @@ _080A81A4:
 	bne _080A81F8
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #0x8e
 	lsls r0, r0, #2
@@ -15466,7 +15466,7 @@ sub_080A820C: @ 0x080A820C
 	bgt _080A823E
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0xf7
 	lsls r1, r1, #1
 	cmp r0, #0x32
@@ -15525,7 +15525,7 @@ _080A827E:
 	bne _080A82BA
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #0x8e
 	lsls r0, r0, #2
@@ -15553,7 +15553,7 @@ _080A82BA:
 	bne _080A82F0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0x65
 	cmp r0, #0x46
 	bge _080A823A
@@ -15564,7 +15564,7 @@ _080A82EC: .4byte 0x00000223
 _080A82F0:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #0x8e
 	lsls r0, r0, #2
@@ -15647,7 +15647,7 @@ _080A8374:
 	bgt _080A83B8
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	ldr r0, _080A83B0 @ =0x000001ED
 	cmp r1, #0x28
@@ -15663,7 +15663,7 @@ _080A83B4: .4byte 0x00000242
 _080A83B8:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080A83E4 @ =0x000001ED
 	cmp r0, #0x1e
 	blt _080A83D4
@@ -15767,7 +15767,7 @@ _080A844A:
 	adds r1, r0, #0
 	subs r1, #1
 	movs r0, #0
-	bl sub_08070660
+	bl randS32
 	adds r1, r0, #0
 	ldr r2, [r5, #4]
 	adds r0, r4, #0
@@ -15899,7 +15899,7 @@ _080A8568:
 _080A858E:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	adds r0, r6, #0
 	cmp r1, #0x21
@@ -15934,7 +15934,7 @@ _080A85D0: .4byte 0x00000195
 _080A85D4:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	adds r0, r6, #0
 	cmp r1, #0x19
@@ -16065,7 +16065,7 @@ _080A86DC:
 _080A86DE:
 	adds r6, #1
 _080A86E0:
-	bl sub_080729DC
+	bl getPartyCount
 	cmp r6, r0
 	blt _080A8668
 	adds r0, r7, #0
@@ -16091,7 +16091,7 @@ sub_080A86F0: @ 0x080A86F0
 _080A870C:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080A8720 @ =0x00000193
 	cmp r0, #0x28
 	bge _080A87E8
@@ -16127,7 +16127,7 @@ _080A8740:
 	ble _080A8768
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	cmp r0, #0x1d
 	bgt _080A8768
 	movs r0, #0x90
@@ -16162,7 +16162,7 @@ _080A8768:
 	bgt _080A87BE
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #0xc9
 	lsls r0, r0, #1
@@ -16176,7 +16176,7 @@ _080A8768:
 _080A87BE:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0xc9
 	lsls r1, r1, #1
 	cmp r0, #0xf
@@ -16702,7 +16702,7 @@ sub_080A8BB4: @ 0x080A8BB4
 	adds r4, r0, #0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080A8BF0 @ =0x00000113
 	cmp r0, #0xf
 	blt _080A8BE2
@@ -16838,7 +16838,7 @@ _080A8C96:
 	adds r1, r0, #0
 	subs r1, #1
 	movs r0, #0
-	bl sub_08070660
+	bl randS32
 	adds r1, r0, #0
 	ldr r2, [r5, #4]
 	adds r0, r4, #0
@@ -16879,7 +16879,7 @@ sub_080A8D14: @ 0x080A8D14
 	bgt _080A8D44
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080A8D40 @ =0x00000113
 	cmp r0, #0x37
 	blt _080A8D60
@@ -16896,7 +16896,7 @@ _080A8D40: .4byte 0x00000113
 _080A8D44:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080A8D70 @ =0x00000113
 	cmp r0, #0x19
 	blt _080A8D60
@@ -17343,7 +17343,7 @@ _080A906C:
 	movs r1, #2
 	bl sub_0806E308
 	ldr r0, _080A9230 @ =0x0000064E
-	bl sub_08070824
+	bl playSound
 	movs r0, #0x47
 	adds r1, r6, #0
 	adds r2, r6, #0
@@ -17359,7 +17359,7 @@ _080A906C:
 	bl _call_via_r1
 	movs r1, #0x14
 	movs r2, #1
-	bl sub_08073734
+	bl hitPlayer
 	ldr r1, [r7, #0x1c]
 	movs r0, #0xb0
 	lsls r0, r0, #1
@@ -17587,7 +17587,7 @@ _080A92BC:
 	cmp r0, #1
 	bne _080A9350
 	ldr r0, _080A935C @ =0x0000028A
-	bl sub_08070824
+	bl playSound
 	ldr r1, [r7, #0x1c]
 	movs r0, #0xc0
 	lsls r0, r0, #2
@@ -17771,7 +17771,7 @@ sub_080A9424: @ 0x080A9424
 	bne _080A945C
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	cmp r0, #0x13
 	bgt _080A945C
 _080A9452:
@@ -17796,7 +17796,7 @@ _080A945C:
 	bne _080A9486
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	cmp r0, #0x31
 	ble _080A9452
 _080A9486:
@@ -17816,7 +17816,7 @@ _080A9486:
 	bne _080A94B0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	cmp r0, #0x45
 	ble _080A9452
 _080A94B0:
@@ -17835,7 +17835,7 @@ _080A94B0:
 	bne _080A94EC
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #0xfc
 	lsls r0, r0, #1
@@ -17851,7 +17851,7 @@ _080A94E8: .4byte 0x000001F7
 _080A94EC:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #0xfb
 	lsls r0, r0, #1
@@ -17876,7 +17876,7 @@ sub_080A9518: @ 0x080A9518
 	adds r4, r0, #0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	ldr r0, _080A9540 @ =0x000001FB
 	cmp r1, #0x21
@@ -18002,7 +18002,7 @@ _080A95E6:
 	adds r1, r0, #0
 	subs r1, #1
 	movs r0, #0
-	bl sub_08070660
+	bl randS32
 	adds r1, r0, #0
 	ldr r2, [r5, #4]
 	adds r0, r4, #0
@@ -18101,7 +18101,7 @@ sub_080A96D8: @ 0x080A96D8
 	bgt _080A9708
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	ldr r0, _080A9700 @ =0x00000113
 	cmp r1, #0xf
@@ -18117,7 +18117,7 @@ _080A9704: .4byte 0x000001D9
 _080A9708:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080A9728 @ =0x000001D9
 	cmp r0, #0x19
 	bge _080A9718
@@ -18164,7 +18164,7 @@ sub_080A9748: @ 0x080A9748
 	bne _080A977C
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080A9778 @ =0x000001C5
 	cmp r0, #0x23
 	bge _080A97B8
@@ -18178,7 +18178,7 @@ _080A977C:
 	bgt _080A97A8
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	ldr r0, _080A97A0 @ =0x00000113
 	cmp r1, #0xf
@@ -18194,7 +18194,7 @@ _080A97A4: .4byte 0x000001D9
 _080A97A8:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080A97C8 @ =0x000001D9
 	cmp r0, #0x23
 	bge _080A97B8
@@ -18282,7 +18282,7 @@ sub_080A9850: @ 0x080A9850
 	adds r4, r0, #0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0x30
 	cmp r0, #0x4b
 	bge _080A9864
@@ -18327,7 +18327,7 @@ sub_080A9890: @ 0x080A9890
 	bne _080A98C0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0xe3
 	lsls r1, r1, #1
 	cmp r0, #0x4b
@@ -18337,7 +18337,7 @@ sub_080A9890: @ 0x080A9890
 _080A98C0:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0x30
 	cmp r0, #0x4b
 	bge _080A98D0
@@ -18423,7 +18423,7 @@ sub_080A9964: @ 0x080A9964
 	adds r4, r0, #0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #0xec
 	lsls r0, r0, #1
@@ -18472,7 +18472,7 @@ sub_080A99AC: @ 0x080A99AC
 	bne _080A99E4
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #0xdf
 	lsls r0, r0, #1
@@ -18486,7 +18486,7 @@ sub_080A99AC: @ 0x080A99AC
 _080A99E4:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #0xec
 	lsls r0, r0, #1
@@ -18603,7 +18603,7 @@ _080A9AB4:
 	bne _080A9AE8
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #0xe2
 	lsls r0, r0, #1
@@ -18617,7 +18617,7 @@ _080A9AB4:
 _080A9AE8:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0xa7
 	lsls r1, r1, #1
 	cmp r0, #0x32
@@ -18748,7 +18748,7 @@ _080A9BBC:
 	blt _080A9C08
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #0xa7
 	lsls r0, r0, #1
@@ -18762,7 +18762,7 @@ _080A9BBC:
 _080A9C08:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0xa7
 	lsls r1, r1, #1
 	cmp r0, #0x41
@@ -18910,7 +18910,7 @@ _080A9D14:
 _080A9D34:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0x85
 	lsls r1, r1, #2
 	cmp r0, #0x41
@@ -18937,7 +18937,7 @@ sub_080A9D64: @ 0x080A9D64
 	adds r4, r0, #0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080A9D94 @ =0x00000213
 	cmp r0, #0x2d
 	blt _080A9D84
@@ -19004,7 +19004,7 @@ sub_080A9DEC: @ 0x080A9DEC
 	adds r4, r0, #0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	ldr r0, _080A9E14 @ =0x00000219
 	cmp r1, #0x21
@@ -19080,7 +19080,7 @@ sub_080A9E54: @ 0x080A9E54
 	bge _080A9EA8
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #0x6d
 	cmp r1, #0x2d
@@ -19095,7 +19095,7 @@ _080A9EA4: .4byte 0x0000020D
 _080A9EA8:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #0x6d
 	cmp r1, #0x37
@@ -19258,7 +19258,7 @@ _080A9FDC:
 	bne _080AA018
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	ldr r0, _080AA014 @ =0x000001ED
 	cmp r1, #0x2d
@@ -19293,12 +19293,12 @@ _080AA018:
 _080AA03A:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	cmp r0, #0x45
 	bgt _080AA06E
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080AA07C @ =0x000001F1
 	cmp r0, #0x19
 	blt _080AA062
@@ -19382,7 +19382,7 @@ _080AA0E8: .4byte 0x000001EF
 _080AA0EC:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080AA118 @ =0x000001ED
 	cmp r0, #0x14
 	blt _080AA10A
@@ -19447,7 +19447,7 @@ _080AA168: .4byte 0x000001EF
 _080AA16C:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080AA198 @ =0x000001ED
 	cmp r0, #0x14
 	blt _080AA18A
@@ -19499,7 +19499,7 @@ sub_080AA19C: @ 0x080AA19C
 _080AA1CE:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	ldr r0, _080AA1F4 @ =0x000001ED
 	cmp r1, #0x2d
@@ -19612,7 +19612,7 @@ _080AA274:
 	adds r1, r0, #0
 	subs r1, #1
 	movs r0, #0
-	bl sub_08070660
+	bl randS32
 	adds r1, r0, #0
 	ldr r2, [r5, #4]
 	adds r0, r4, #0
@@ -19818,7 +19818,7 @@ sub_080AA434: @ 0x080AA434
 	bgt _080AA45C
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	ldr r0, _080AA458 @ =0x00000113
 	cmp r1, #0x19
@@ -19832,7 +19832,7 @@ _080AA458: .4byte 0x00000113
 _080AA45C:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	ldr r0, _080AA480 @ =0x00000113
 	cmp r1, #0x23
@@ -19875,7 +19875,7 @@ sub_080AA4A4: @ 0x080AA4A4
 	bgt _080AA4D0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	ldr r0, _080AA4CC @ =0x000001D9
 	cmp r1, #0x19
@@ -19891,7 +19891,7 @@ _080AA4CC: .4byte 0x000001D9
 _080AA4D0:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0xed
 	lsls r1, r1, #1
 	cmp r0, #0x23
@@ -19939,7 +19939,7 @@ sub_080AA50C: @ 0x080AA50C
 	bgt _080AA54A
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #0x96
 	lsls r0, r0, #2
@@ -19966,7 +19966,7 @@ _080AA54A:
 	bgt _080AA588
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	ldr r0, _080AA584 @ =0x0000025B
 	cmp r1, #0x21
@@ -19981,7 +19981,7 @@ _080AA584: .4byte 0x0000025B
 _080AA588:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080AA5B8 @ =0x0000025E
 	cmp r0, #0x14
 	blt _080AA5AA
@@ -20141,7 +20141,7 @@ _080AA678:
 	movs r1, #2
 	bl sub_0806E308
 	ldr r0, _080AA814 @ =0x0000064E
-	bl sub_08070824
+	bl playSound
 	movs r0, #0x47
 	adds r1, r6, #0
 	adds r2, r6, #0
@@ -20157,7 +20157,7 @@ _080AA678:
 	bl _call_via_r1
 	movs r1, #0x14
 	movs r2, #1
-	bl sub_08073734
+	bl hitPlayer
 	ldr r1, [r7, #0x1c]
 	movs r0, #0xb0
 	lsls r0, r0, #1
@@ -20344,7 +20344,7 @@ sub_080AA82C: @ 0x080AA82C
 	bne _080AA892
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0xf5
 	lsls r1, r1, #1
 	cmp r0, #0x28
@@ -20353,7 +20353,7 @@ sub_080AA82C: @ 0x080AA82C
 _080AA892:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	ldr r0, _080AA8B0 @ =0x000001E9
 	cmp r1, #0x28
@@ -20369,7 +20369,7 @@ _080AA8B0: .4byte 0x000001E9
 _080AA8B4:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0xf5
 	lsls r1, r1, #1
 	cmp r0, #0x41
@@ -20426,7 +20426,7 @@ sub_080AA8D4: @ 0x080AA8D4
 	adds r1, r0, #0
 	subs r1, #1
 	movs r0, #0
-	bl sub_08070660
+	bl randS32
 	adds r1, r0, #0
 	ldr r2, [r5, #4]
 	adds r0, r4, #0
@@ -20489,7 +20489,7 @@ sub_080AA990: @ 0x080AA990
 	beq _080AA9B8
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #0x1d
 	cmp r1, #0x2d
@@ -20502,7 +20502,7 @@ sub_080AA990: @ 0x080AA990
 _080AA9B8:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #0x1d
 	cmp r1, #0x32
@@ -20543,7 +20543,7 @@ sub_080AA9FC: @ 0x080AA9FC
 	bgt _080AAA22
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #4
 	cmp r1, #0x32
@@ -20556,7 +20556,7 @@ sub_080AA9FC: @ 0x080AA9FC
 _080AAA22:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0x5d
 	cmp r0, #0x46
 	bge _080AAA32
@@ -20612,7 +20612,7 @@ sub_080AAA5C: @ 0x080AAA5C
 	blt _080AAAAC
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0x1a
 	cmp r0, #0x23
 	blt _080AAACA
@@ -20626,7 +20626,7 @@ sub_080AAA5C: @ 0x080AAA5C
 _080AAAAC:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0x1a
 	cmp r0, #0x1e
 	blt _080AAACA
@@ -20776,7 +20776,7 @@ sub_080AAB98: @ 0x080AAB98
 	bne _080AABEC
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #0xbe
 	lsls r0, r0, #1
@@ -20790,7 +20790,7 @@ sub_080AAB98: @ 0x080AAB98
 _080AABEC:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0xbe
 	lsls r1, r1, #1
 	cmp r0, #0x1e
@@ -20818,7 +20818,7 @@ _080AAC0E:
 	bne _080AAC48
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0xbe
 	lsls r1, r1, #1
 	cmp r0, #0x28
@@ -20835,7 +20835,7 @@ _080AAC0E:
 _080AAC48:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0xbe
 	lsls r1, r1, #1
 	cmp r0, #0x1e
@@ -20981,7 +20981,7 @@ sub_080AAD64: @ 0x080AAD64
 	adds r4, r0, #0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0x19
 	cmp r0, #0xa
 	blt _080AAD84
@@ -21321,7 +21321,7 @@ sub_080AAFD8: @ 0x080AAFD8
 	bgt _080AB00C
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080AB008 @ =0x00000173
 	cmp r0, #0x32
 	bge _080AB004
@@ -21439,7 +21439,7 @@ _080AB09E:
 	adds r1, r0, #0
 	subs r1, #1
 	movs r0, #0
-	bl sub_08070660
+	bl randS32
 	adds r1, r0, #0
 	ldr r2, [r5, #4]
 	adds r0, r4, #0
@@ -21528,7 +21528,7 @@ sub_080AB184: @ 0x080AB184
 	adds r4, r0, #0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #0xb6
 	lsls r0, r0, #1
@@ -21552,7 +21552,7 @@ sub_080AB1B0: @ 0x080AB1B0
 	adds r4, r0, #0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080AB1E0 @ =0x00000167
 	cmp r0, #0x19
 	blt _080AB1D0
@@ -21614,7 +21614,7 @@ sub_080AB1E4: @ 0x080AB1E4
 	adds r1, r0, #0
 	subs r1, #1
 	movs r0, #0
-	bl sub_08070660
+	bl randS32
 	adds r1, r0, #0
 	ldr r2, [r5, #4]
 	adds r0, r4, #0
@@ -21788,7 +21788,7 @@ _080AB36C:
 	ble _080AB39A
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #2
 	cmp r1, #0x1e
@@ -21845,7 +21845,7 @@ sub_080AB3C4: @ 0x080AB3C4
 _080AB3F2:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	ldr r0, _080AB418 @ =0x00000127
 	cmp r1, #0x37
@@ -21998,7 +21998,7 @@ _080AB4D8:
 	movs r1, #2
 	bl sub_0806E308
 	ldr r0, _080AB64C @ =0x0000064E
-	bl sub_08070824
+	bl playSound
 	movs r0, #0x47
 	adds r1, r7, #0
 	adds r2, r7, #0
@@ -22014,7 +22014,7 @@ _080AB4D8:
 	bl _call_via_r1
 	movs r1, #0x14
 	movs r2, #1
-	bl sub_08073734
+	bl hitPlayer
 	ldr r1, [r6, #0x1c]
 	movs r0, #0xb0
 	lsls r0, r0, #1
@@ -22157,7 +22157,7 @@ sub_080AB660: @ 0x080AB660
 	bne _080AB694
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0x2c
 	cmp r0, #0x3c
 	bge _080AB690
@@ -22168,7 +22168,7 @@ _080AB690:
 _080AB694:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #0x73
 	cmp r1, #0x23
@@ -22225,7 +22225,7 @@ sub_080AB6B8: @ 0x080AB6B8
 	adds r1, r0, #0
 	subs r1, #1
 	movs r0, #0
-	bl sub_08070660
+	bl randS32
 	adds r1, r0, #0
 	ldr r2, [r5, #4]
 	adds r0, r4, #0
@@ -22518,7 +22518,7 @@ sub_080AB924: @ 0x080AB924
 	bne _080AB964
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080AB960 @ =0x00000177
 	cmp r0, #0x28
 	bge _080AB95A
@@ -22531,7 +22531,7 @@ _080AB960: .4byte 0x00000177
 _080AB964:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #0xbb
 	lsls r0, r0, #1
@@ -22590,7 +22590,7 @@ _080AB9BC:
 	bne _080ABA00
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	ldr r0, _080AB9FC @ =0x00000179
 	cmp r1, #0x14
@@ -22721,7 +22721,7 @@ sub_080ABAD8: @ 0x080ABAD8
 	adds r4, r0, #0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0x9d
 	cmp r0, #0x46
 	bge _080ABAEC
@@ -22779,7 +22779,7 @@ sub_080ABB40: @ 0x080ABB40
 	bgt _080ABB78
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #2
 	cmp r0, #0x14
 	blt _080ABB70
@@ -22802,7 +22802,7 @@ _080ABB74: .4byte 0x0000012B
 _080ABB78:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	ldr r0, _080ABBA0 @ =0x00000113
 	cmp r1, #0x3c
@@ -23004,7 +23004,7 @@ sub_080ABCD4: @ 0x080ABCD4
 _080ABCFE:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #0xf2
 	lsls r0, r0, #1
@@ -23055,7 +23055,7 @@ sub_080ABD3C: @ 0x080ABD3C
 	bne _080ABD84
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080ABD80 @ =0x000001E3
 	cmp r0, #0x14
 	blt _080ABDA6
@@ -23072,7 +23072,7 @@ _080ABD80: .4byte 0x000001E3
 _080ABD84:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080ABDB4 @ =0x000001E3
 	cmp r0, #0xa
 	blt _080ABDA6
@@ -23481,7 +23481,7 @@ _080AC098:
 	bgt _080AC0B8
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	cmp r0, #9
 	bgt _080AC0B8
 	ldr r0, _080AC0B4 @ =0x000001DF
@@ -23516,7 +23516,7 @@ _080AC0B8:
 	bne _080AC102
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0xee
 	lsls r1, r1, #1
 	cmp r0, #0x2d
@@ -23526,7 +23526,7 @@ _080AC0B8:
 _080AC102:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	ldr r0, _080AC11C @ =0x000001DB
 	cmp r1, #0x28
@@ -23570,7 +23570,7 @@ _080AC13E:
 	bne _080AC180
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080AC17C @ =0x000001DB
 	cmp r0, #0xa
 	blt _080AC1A2
@@ -23587,7 +23587,7 @@ _080AC17C: .4byte 0x000001DB
 _080AC180:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080AC1B0 @ =0x000001DB
 	cmp r0, #0xa
 	blt _080AC1A2
@@ -23643,7 +23643,7 @@ sub_080AC1D0: @ 0x080AC1D0
 	bgt _080AC200
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0x4d
 	cmp r0, #0x3c
 	bge _080AC1FC
@@ -23721,7 +23721,7 @@ sub_080AC260: @ 0x080AC260
 	bne _080AC290
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	movs r1, #0
 	cmp r0, #0x45
 	bgt _080AC28C
@@ -23756,7 +23756,7 @@ sub_080AC2A0: @ 0x080AC2A0
 	bne _080AC2D0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #7
 	cmp r0, #0x41
 	bge _080AC2CC
@@ -23767,7 +23767,7 @@ _080AC2CC:
 _080AC2D0:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	ldr r0, _080AC2F8 @ =0x00000101
 	cmp r1, #0x28
@@ -23907,7 +23907,7 @@ sub_080AC3BC: @ 0x080AC3BC
 _080AC3DE:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	ldr r0, _080AC404 @ =0x0000015B
 	cmp r1, #0x19
@@ -23986,7 +23986,7 @@ _080AC448:
 	adds r1, r0, #0
 	subs r1, #1
 	movs r0, #0
-	bl sub_08070660
+	bl randS32
 	adds r1, r0, #0
 	ldr r2, [r5, #4]
 	adds r0, r4, #0
@@ -24044,7 +24044,7 @@ sub_080AC4A8: @ 0x080AC4A8
 	adds r1, r0, #0
 	subs r1, #1
 	movs r0, #0
-	bl sub_08070660
+	bl randS32
 	adds r1, r0, #0
 	ldr r2, [r5, #4]
 	adds r0, r4, #0
@@ -24266,7 +24266,7 @@ _080AC69A:
 	ble _080AC6BA
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0xb2
 	lsls r1, r1, #1
 	cmp r0, #0x46
@@ -24276,7 +24276,7 @@ _080AC69A:
 _080AC6BA:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080AC6E4 @ =0x00000105
 	cmp r0, #0x2d
 	blt _080AC6D6
@@ -24326,7 +24326,7 @@ sub_080AC704: @ 0x080AC704
 _080AC716:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0x60
 	cmp r0, #0x19
 	bge _080AC726
@@ -24364,7 +24364,7 @@ sub_080AC750: @ 0x080AC750
 	bgt _080AC77A
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	cmp r0, #0x13
 	bgt _080AC79A
 	movs r0, #0xb7
@@ -24378,7 +24378,7 @@ _080AC77A:
 	bgt _080AC79A
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	cmp r0, #9
 	bgt _080AC79A
 	movs r0, #0xb7
@@ -24396,7 +24396,7 @@ sub_080AC7A0: @ 0x080AC7A0
 	adds r4, r0, #0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #2
 	cmp r1, #0x32
@@ -24435,7 +24435,7 @@ sub_080AC7E4: @ 0x080AC7E4
 	bgt _080AC810
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #2
 	cmp r0, #0x23
 	blt _080AC80C
@@ -24452,7 +24452,7 @@ _080AC80C:
 _080AC810:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #2
 	cmp r1, #0x41
@@ -24510,7 +24510,7 @@ sub_080AC850: @ 0x080AC850
 	blt _080AC8A0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #8
 	cmp r0, #0xf
 	blt _080AC8BC
@@ -24524,7 +24524,7 @@ sub_080AC850: @ 0x080AC850
 _080AC8A0:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #8
 	cmp r0, #0x14
 	blt _080AC8BC
@@ -24642,7 +24642,7 @@ _080AC974: .4byte 0x0000014D
 _080AC978:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080AC9A4 @ =0x0000014B
 	cmp r0, #0x28
 	blt _080AC994
@@ -24670,7 +24670,7 @@ sub_080AC9A8: @ 0x080AC9A8
 	adds r4, r0, #0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	ldr r0, _080AC9D0 @ =0x0000014B
 	cmp r1, #0x37
@@ -24729,7 +24729,7 @@ sub_080AC9D4: @ 0x080AC9D4
 	adds r1, r0, #0
 	subs r1, #1
 	movs r0, #0
-	bl sub_08070660
+	bl randS32
 	adds r1, r0, #0
 	ldr r2, [r5, #4]
 	adds r0, r4, #0
@@ -24792,7 +24792,7 @@ sub_080ACA90: @ 0x080ACA90
 	beq _080ACAB0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0xf2
 	cmp r0, #0x1e
 	bge _080ACAC0
@@ -24801,7 +24801,7 @@ sub_080ACA90: @ 0x080ACA90
 _080ACAB0:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0xd7
 	cmp r0, #0x46
 	bge _080ACAC0
@@ -24919,7 +24919,7 @@ _080ACB7C:
 _080ACB9A:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0xac
 	lsls r1, r1, #1
 	cmp r0, #0x10
@@ -24953,7 +24953,7 @@ sub_080ACBD4: @ 0x080ACBD4
 	adds r4, r0, #0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0xa9
 	lsls r1, r1, #1
 	cmp r0, #0x19
@@ -25014,7 +25014,7 @@ sub_080ACC04: @ 0x080ACC04
 	adds r1, r0, #0
 	subs r1, #1
 	movs r0, #0
-	bl sub_08070660
+	bl randS32
 	adds r1, r0, #0
 	ldr r2, [r5, #4]
 	adds r0, r4, #0
@@ -25154,7 +25154,7 @@ sub_080ACD00: @ 0x080ACD00
 	bne _080ACD7E
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	cmp r0, #0x13
 	bgt _080ACD7E
 	movs r0, #0xa7
@@ -25314,7 +25314,7 @@ sub_080ACE64: @ 0x080ACE64
 	bgt _080ACEC2
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0x18
 	cmp r0, #0x14
 	blt _080ACF12
@@ -25329,7 +25329,7 @@ sub_080ACE64: @ 0x080ACE64
 _080ACEC2:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #0x18
 	cmp r1, #0x14
@@ -25348,7 +25348,7 @@ _080ACEDC:
 	bgt _080ACF02
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #0x18
 	cmp r1, #0x28
@@ -25361,7 +25361,7 @@ _080ACEDC:
 _080ACF02:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0x1f
 	cmp r0, #0x32
 	bge _080ACF12
@@ -25533,7 +25533,7 @@ _080AD04C:
 _080AD050:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #2
 	cmp r1, #0x4b
@@ -25672,7 +25672,7 @@ _080AD154:
 	ble _080AD170
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	cmp r0, #0x31
 	bgt _080AD170
 	movs r0, #0x3b
@@ -25680,7 +25680,7 @@ _080AD154:
 _080AD170:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #0xa
 	cmp r1, #0x28
@@ -25722,7 +25722,7 @@ sub_080AD1B4: @ 0x080AD1B4
 	bgt _080AD1DE
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	cmp r0, #0x13
 	bgt _080AD1DE
 	movs r0, #0x45
@@ -25736,7 +25736,7 @@ _080AD1DE:
 	bgt _080AD1FE
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	cmp r0, #9
 	bgt _080AD1FE
 	movs r0, #0x45
@@ -25863,7 +25863,7 @@ sub_080AD2C8: @ 0x080AD2C8
 	bgt _080AD2F4
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0x81
 	cmp r0, #0x32
 	bge _080AD2F0
@@ -25914,7 +25914,7 @@ sub_080AD320: @ 0x080AD320
 	bne _080AD354
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0xca
 	cmp r0, #0x32
 	bge _080AD350
@@ -26140,7 +26140,7 @@ sub_080AD4E8: @ 0x080AD4E8
 	adds r4, r0, #0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080AD518 @ =0x00000175
 	cmp r0, #0x1e
 	blt _080AD508
@@ -26187,7 +26187,7 @@ _080AD544: .4byte 0x00000143
 _080AD548:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0xa2
 	lsls r1, r1, #1
 	cmp r0, #0x46
@@ -26230,7 +26230,7 @@ sub_080AD568: @ 0x080AD568
 	blt _080AD5BC
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	ldr r0, _080AD5B8 @ =0x00000175
 	cmp r1, #0x32
@@ -26335,7 +26335,7 @@ _080AD632:
 	adds r1, r0, #0
 	subs r1, #1
 	movs r0, #0
-	bl sub_08070660
+	bl randS32
 	adds r1, r0, #0
 	ldr r2, [r5, #4]
 	adds r0, r4, #0
@@ -26548,7 +26548,7 @@ _080AD7E8:
 _080AD806:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080AD830 @ =0x00000145
 	cmp r0, #0x23
 	blt _080AD822
@@ -26587,7 +26587,7 @@ sub_080AD848: @ 0x080AD848
 	adds r4, r0, #0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	ldr r0, _080AD870 @ =0x00000145
 	cmp r1, #0x2d
@@ -26687,7 +26687,7 @@ _080AD8D6:
 	adds r1, r0, #0
 	subs r1, #1
 	movs r0, #0
-	bl sub_08070660
+	bl randS32
 	adds r1, r0, #0
 	ldr r2, [r5, #4]
 	adds r0, r4, #0
@@ -26944,7 +26944,7 @@ _080ADAF6:
 	mov r8, r1
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	cmp r0, #0x19
 	bge _080ADB20
 	ldrh r0, [r5]
@@ -27027,7 +27027,7 @@ _080ADB92:
 	add r7, sp, #8
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	cmp r0, #0x1e
 	bge _080ADBB8
 	ldrh r0, [r4]
@@ -27104,7 +27104,7 @@ sub_080ADBE8: @ 0x080ADBE8
 	adds r1, r0, #0
 	subs r1, #1
 	movs r0, #0
-	bl sub_08070660
+	bl randS32
 	adds r1, r0, #0
 	ldr r2, [r5, #4]
 	adds r0, r4, #0
@@ -27599,7 +27599,7 @@ _080ADFE4:
 	ldr r1, [sp, #4]
 	subs r1, #1
 	movs r0, #0
-	bl sub_08070660
+	bl randS32
 	lsls r0, r0, #1
 	ldr r1, [sp, #8]
 	adds r1, r1, r0
@@ -27784,7 +27784,7 @@ sub_080AE118: @ 0x080AE118
 	bgt _080AE176
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #9
 	cmp r0, #0x14
 	blt _080AE1C6
@@ -27799,7 +27799,7 @@ sub_080AE118: @ 0x080AE118
 _080AE176:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #9
 	cmp r1, #0x14
@@ -27818,7 +27818,7 @@ _080AE190:
 	bgt _080AE1B6
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #9
 	cmp r1, #0x23
@@ -27831,7 +27831,7 @@ _080AE190:
 _080AE1B6:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0x11
 	cmp r0, #0x23
 	bge _080AE1C6
@@ -28360,7 +28360,7 @@ _080AE5E8: .4byte 0x00000209
 _080AE5EC:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	cmp r0, #0x28
 	bge _080AE604
 	movs r0, #0x7f
@@ -28431,7 +28431,7 @@ _080AE638:
 	bge _080AE684
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	cmp r0, #0x1d
 	ble _080AE6B4
 _080AE684:
@@ -28445,7 +28445,7 @@ _080AE686:
 	bgt _080AE6A2
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	cmp r0, #0x46
 	bge _080AE6A6
 _080AE6A2:
@@ -28502,7 +28502,7 @@ sub_080AE6E4: @ 0x080AE6E4
 	bgt _080AE714
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0x37
 	cmp r0, #0x41
 	bge _080AE710
@@ -28513,7 +28513,7 @@ _080AE710:
 _080AE714:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #2
 	cmp r1, #0x28
@@ -28671,7 +28671,7 @@ _080AE83C:
 	ble _080AE85C
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0xc2
 	cmp r0, #0x32
 	bge _080AE858
@@ -28682,7 +28682,7 @@ _080AE858:
 _080AE85C:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #2
 	cmp r1, #0x21
@@ -28853,7 +28853,7 @@ _080AE95C:
 	movs r1, #2
 	bl sub_0806E308
 	ldr r0, _080AEACC @ =0x0000064E
-	bl sub_08070824
+	bl playSound
 	movs r0, #0x47
 	adds r1, r7, #0
 	adds r2, r7, #0
@@ -28869,7 +28869,7 @@ _080AE95C:
 	bl _call_via_r1
 	movs r1, #0x14
 	movs r2, #1
-	bl sub_08073734
+	bl hitPlayer
 	ldr r1, [r6, #0x1c]
 	movs r0, #0xb0
 	lsls r0, r0, #1
@@ -29173,7 +29173,7 @@ _080AEC3A:
 	beq _080AEC64
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	ldr r1, _080AEC60 @ =0x00000131
 	cmp r0, #0x32
 	bge _080AEC56
@@ -29187,7 +29187,7 @@ _080AEC60: .4byte 0x00000131
 _080AEC64:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r0, #0
 	movs r0, #0x98
 	lsls r0, r0, #1
@@ -29259,7 +29259,7 @@ _080AECF0: .4byte 0x0000012D
 _080AECF4:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	adds r1, r5, #0
 	cmp r0, #0x32
 	bge _080AED06
@@ -29537,7 +29537,7 @@ _080AEEBC:
 	movs r1, #2
 	bl sub_0806E308
 	ldr r0, _080AEFF0 @ =0x0000064E
-	bl sub_08070824
+	bl playSound
 	movs r0, #0x47
 	adds r1, r4, #0
 	adds r2, r4, #0
@@ -29553,7 +29553,7 @@ _080AEEBC:
 	bl _call_via_r1
 	movs r1, #0x14
 	movs r2, #1
-	bl sub_08073734
+	bl hitPlayer
 	ldr r1, [r6, #0x1c]
 	adds r1, r1, r4
 	movs r2, #0
@@ -29678,7 +29678,7 @@ sub_080AF034: @ 0x080AF034
 	adds r6, r0, #0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	adds r5, r0, #0
 	ldr r4, _080AF0CC @ =gUnknown_080F8E6C
 	ldr r1, [r6, #0x1c]
@@ -29983,7 +29983,7 @@ _080AF27C:
 	adds r1, r0, #0
 	subs r1, #1
 	movs r0, #0
-	bl sub_08070660
+	bl randS32
 	adds r1, r0, #0
 	ldr r2, [r5, #4]
 	adds r0, r4, #0
@@ -31970,7 +31970,7 @@ sub_080B00DC: @ 0x080B00DC
 	str r0, [r5, #0x1c]
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	adds r4, r0, #0
 	bl sub_08072DFC
 	movs r2, #0
@@ -32777,7 +32777,7 @@ sub_080B065C: @ 0x080B065C
 	ldr r7, _080B0750 @ =gUnknown_080F9618
 	movs r0, #0
 	movs r1, #0xf
-	bl sub_08070660
+	bl randS32
 	lsls r0, r0, #1
 	adds r0, r0, r7
 	ldrh r1, [r0]
@@ -32810,7 +32810,7 @@ sub_080B065C: @ 0x080B065C
 	adds r5, r5, r0
 	movs r0, #0
 	movs r1, #0xf
-	bl sub_08070660
+	bl randS32
 	lsls r0, r0, #1
 	adds r0, r0, r7
 	ldrh r1, [r0]
@@ -32878,7 +32878,7 @@ sub_080B0758: @ 0x080B0758
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _080B0770 @ =0x0000044C
-	bl sub_08070824
+	bl playSound
 	adds r0, r4, #0
 	bl sub_08078700
 	pop {r4}
@@ -32909,7 +32909,7 @@ sub_080B0788: @ 0x080B0788
 	ldr r4, _080B0818 @ =gUnknown_080F95F8
 	movs r0, #0
 	movs r1, #0xf
-	bl sub_08070660
+	bl randS32
 	lsls r0, r0, #1
 	adds r0, r0, r4
 	ldrh r0, [r0]
@@ -32973,7 +32973,7 @@ sub_080B0820: @ 0x080B0820
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _080B0838 @ =0x0000044C
-	bl sub_08070824
+	bl playSound
 	adds r0, r4, #0
 	bl sub_08078700
 	pop {r4}
@@ -33043,7 +33043,7 @@ sub_080B0894: @ 0x080B0894
 	bne _080B08BC
 	movs r0, #1
 	movs r1, #2
-	bl sub_08070660
+	bl randS32
 	adds r4, r0, #0
 	b _080B08C6
 _080B08BC:
@@ -33065,7 +33065,7 @@ _080B08C6:
 _080B08DA:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0xab
 	cmp r0, #0x14
 	blt _080B08FC
@@ -33125,7 +33125,7 @@ sub_080B0950: @ 0x080B0950
 	push {r4, lr}
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	adds r4, r0, #0
 	bl sub_08072DFC
 	movs r2, #0
@@ -33149,7 +33149,7 @@ sub_080B097C: @ 0x080B097C
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _080B0994 @ =0x0000044C
-	bl sub_08070824
+	bl playSound
 	adds r0, r4, #0
 	bl sub_08078700
 	pop {r4}
@@ -33234,7 +33234,7 @@ sub_080B09F4: @ 0x080B09F4
 	movs r1, #2
 	bl sub_0806E308
 	adds r0, r5, #0
-	bl sub_080729B0
+	bl sub_080729B0__5Goods
 	adds r4, r0, #0
 	cmp r4, #0
 	beq _080B0A6A
@@ -33285,7 +33285,7 @@ sub_080B0A8C: @ 0x080B0A8C
 	adds r4, r1, #0
 	bl nullsub_37
 	ldr r0, _080B0B28 @ =0x000003E5
-	bl sub_08070824
+	bl playSound
 	movs r5, #2
 _080B0AA0:
 	movs r0, #0xba
@@ -33420,7 +33420,7 @@ sub_080B0B88: @ 0x080B0B88
 	movs r1, #2
 	bl sub_080639B4
 	ldr r0, _080B0C74 @ =0x00000563
-	bl sub_08070824
+	bl playSound
 	ldr r1, [r6, #0x1c]
 	movs r0, #0xb0
 	lsls r0, r0, #1
@@ -33512,7 +33512,7 @@ sub_080B0C78: @ 0x080B0C78
 	push {r4, lr}
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	adds r4, r0, #0
 	bl sub_08072DFC
 	movs r2, #0
@@ -33585,7 +33585,7 @@ sub_080B0CFC: @ 0x080B0CFC
 	adds r6, r0, #0
 	bl nullsub_37
 	ldr r0, _080B0D9C @ =0x0000055D
-	bl sub_08070824
+	bl playSound
 	add r1, sp, #0x18
 	movs r0, #0xc8
 	movs r2, #0x20
@@ -33658,7 +33658,7 @@ sub_080B0DA0: @ 0x080B0DA0
 	push {r4, lr}
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	adds r4, r0, #0
 	bl sub_08072DFC
 	movs r2, #0
@@ -33682,7 +33682,7 @@ sub_080B0DCC: @ 0x080B0DCC
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _080B0DE4 @ =0x0000044C
-	bl sub_08070824
+	bl playSound
 	adds r0, r4, #0
 	bl sub_08078700
 	pop {r4}
@@ -33708,7 +33708,7 @@ sub_080B0DFC: @ 0x080B0DFC
 	adds r4, r1, #0
 	bl nullsub_37
 	ldr r0, _080B0E4C @ =0x0000028A
-	bl sub_08070824
+	bl playSound
 	adds r0, r4, #0
 	bl sub_08072DD0
 	adds r5, r0, #0
@@ -33801,7 +33801,7 @@ sub_080B0EBC: @ 0x080B0EBC
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	ldr r0, _080B0F20 @ =0x000002EA
-	bl sub_08070824
+	bl playSound
 	ldr r1, [r6, #0x1c]
 	movs r0, #0xb0
 	lsls r0, r0, #1
@@ -33864,7 +33864,7 @@ sub_080B0F38: @ 0x080B0F38
 	sub sp, #0x44
 	bl nullsub_37
 	ldr r0, _080B1134 @ =0x00000562
-	bl sub_08070824
+	bl playSound
 	mov r1, sp
 	movs r5, #0x78
 	movs r6, #0x50
@@ -34203,7 +34203,7 @@ _080B117E:
 	adds r5, r5, r0
 	movs r0, #0x1e
 	movs r1, #0x32
-	bl sub_08070660
+	bl randS32
 	adds r1, r0, #0
 	ldr r2, [r4, #4]
 	adds r0, r5, #0
@@ -34237,7 +34237,7 @@ sub_080B1238: @ 0x080B1238
 	sub sp, #8
 	adds r7, r0, #0
 	ldr r0, _080B1258 @ =0x0000031A
-	bl sub_08070824
+	bl playSound
 	adds r0, r7, #0
 	bl sub_08078784
 	movs r5, #0
@@ -34438,7 +34438,7 @@ sub_080B13D4: @ 0x080B13D4
 	bgt _080B13EE
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	cmp r0, #0x1d
 	bgt _080B13EE
 	movs r4, #1
@@ -34550,7 +34550,7 @@ sub_080B147C: @ 0x080B147C
 	movs r0, #0x14
 	bl sub_0807068C
 	ldr r0, _080B15A8 @ =0x00000614
-	bl sub_08070824
+	bl playSound
 	movs r0, #5
 	bl sub_0807068C
 	movs r5, #0xc0
@@ -34833,7 +34833,7 @@ sub_080B1718: @ 0x080B1718
 	push {r4, lr}
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	adds r4, r0, #0
 	bl sub_08072DFC
 	movs r2, #0
@@ -34857,7 +34857,7 @@ sub_080B1744: @ 0x080B1744
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _080B175C @ =0x0000044C
-	bl sub_08070824
+	bl playSound
 	adds r0, r4, #0
 	bl sub_08078700
 	pop {r4}
@@ -34979,7 +34979,7 @@ sub_080B183C: @ 0x080B183C
 	push {r4, lr}
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	adds r4, r0, #0
 	bl sub_08072DFC
 	movs r2, #0
@@ -35003,7 +35003,7 @@ sub_080B1868: @ 0x080B1868
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _080B1880 @ =0x0000044C
-	bl sub_08070824
+	bl playSound
 	adds r0, r4, #0
 	bl sub_08078700
 	pop {r4}
@@ -35177,7 +35177,7 @@ sub_080B19B4: @ 0x080B19B4
 	str r0, [sp, #4]
 	str r0, [sp, #8]
 	adds r0, r4, #0
-	bl sub_080729B0
+	bl sub_080729B0__5Goods
 	mov r8, r0
 	movs r6, #0
 	add r0, sp, #0xc
@@ -35201,13 +35201,13 @@ _080B19E0:
 	mov r0, sb
 	mov r2, r8
 	movs r3, #0
-	bl sub_080649AC
+	bl __5GoodsUsUiUs
 	mov r0, sb
-	bl sub_08064F98
+	bl getType__C5Goods
 	cmp r0, #4
 	beq _080B1A1E
 	mov r0, sb
-	bl sub_08064F98
+	bl getType__C5Goods
 	adds r7, r6, #1
 	cmp r0, #6
 	bne _080B1A94
@@ -35276,7 +35276,7 @@ _080B1A82:
 _080B1A94:
 	mov r0, sb
 	movs r1, #2
-	bl sub_080649E8
+	bl _._5Goods
 	adds r6, r7, #0
 _080B1A9E:
 	mov r4, r8
@@ -35310,12 +35310,12 @@ _080B1AD4:
 	ldr r1, [r6, #4]
 	subs r1, #1
 	movs r0, #0
-	bl sub_08069454
+	bl randU32
 	adds r4, r0, #0
 	ldr r1, [r6, #4]
 	subs r1, #1
 	movs r0, #0
-	bl sub_08069454
+	bl randU32
 	ldr r1, [r6, #8]
 	lsls r4, r4, #1
 	adds r4, r4, r1
@@ -35354,10 +35354,10 @@ _080B1B02:
 	mov r0, sl
 	mov r2, r8
 	movs r3, #0
-	bl sub_080649AC
+	bl __5GoodsUsUiUs
 	adds r0, r7, #0
 	mov r1, sl
-	bl sub_08064B30
+	bl skill_1d0__5GoodsP5Skill
 	mov r0, sb
 	adds r1, r7, #0
 	bl sub_0806E374
@@ -35366,7 +35366,7 @@ _080B1B02:
 	bl sub_0806E308
 	mov r0, sl
 	movs r1, #2
-	bl sub_080649E8
+	bl _._5Goods
 	ldr r3, [r5, #0x1c]
 	adds r3, r3, r4
 	movs r2, #0
@@ -35458,7 +35458,7 @@ sub_080B1C1C: @ 0x080B1C1C
 	push {lr}
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	movs r1, #0
 	cmp r0, #0x31
 	bgt _080B1C2E
@@ -35587,7 +35587,7 @@ sub_080B1C9C: @ 0x080B1C9C
 	adds r5, r0, #0
 	movs r0, #0xb8
 	lsls r0, r0, #2
-	bl sub_08070824
+	bl playSound
 	mov r0, r8
 	ldr r4, [r0, #0x1c]
 	movs r1, #0xac
@@ -35725,7 +35725,7 @@ sub_080B1E14: @ 0x080B1E14
 	movs r1, #2
 	bl sub_080639B4
 	ldr r0, _080B1F00 @ =0x000002FB
-	bl sub_08070824
+	bl playSound
 	ldr r1, [r6, #0x1c]
 	movs r0, #0xb0
 	lsls r0, r0, #1
@@ -35814,7 +35814,7 @@ sub_080B1F08: @ 0x080B1F08
 	push {r4, lr}
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	adds r4, r0, #0
 	bl sub_08072DFC
 	movs r2, #0
@@ -35838,7 +35838,7 @@ sub_080B1F34: @ 0x080B1F34
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _080B1F4C @ =0x0000044C
-	bl sub_08070824
+	bl playSound
 	adds r0, r4, #0
 	bl sub_08078700
 	pop {r4}
@@ -35978,7 +35978,7 @@ sub_080B2054: @ 0x080B2054
 	push {r4, lr}
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	adds r4, r0, #0
 	bl sub_08072DFC
 	movs r2, #0
@@ -36002,7 +36002,7 @@ sub_080B2080: @ 0x080B2080
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _080B2098 @ =0x0000044C
-	bl sub_08070824
+	bl playSound
 	adds r0, r4, #0
 	bl sub_08078700
 	pop {r4}
@@ -36071,7 +36071,7 @@ sub_080B20F4: @ 0x080B20F4
 	bne _080B211A
 	movs r0, #1
 	movs r1, #2
-	bl sub_08070660
+	bl randS32
 	adds r4, r0, #0
 	b _080B2124
 _080B211A:
@@ -36091,7 +36091,7 @@ _080B2124:
 _080B2134:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08069454
+	bl randU32
 	movs r1, #0x3c
 	cmp r0, #0x19
 	blt _080B2150
@@ -36147,7 +36147,7 @@ sub_080B21A4: @ 0x080B21A4
 	push {r4, lr}
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	adds r4, r0, #0
 	bl sub_08072DFC
 	movs r2, #0
@@ -36172,7 +36172,7 @@ sub_080B21D0: @ 0x080B21D0
 	adds r4, r0, #0
 	movs r0, #0xac
 	lsls r0, r0, #3
-	bl sub_08070824
+	bl playSound
 	adds r0, r4, #0
 	bl sub_08078700
 	pop {r4}
@@ -36199,7 +36199,7 @@ sub_080B21FC: @ 0x080B21FC
 	adds r6, r0, #0
 	bl nullsub_37
 	ldr r0, _080B2300 @ =0x00000611
-	bl sub_08070824
+	bl playSound
 	add r0, sp, #0xc
 	mov r8, r0
 	movs r7, #0xb0
@@ -36401,7 +36401,7 @@ sub_080B23B0: @ 0x080B23B0
 	sub sp, #0x10
 	adds r5, r0, #0
 	ldr r0, _080B2424 @ =0x00000613
-	bl sub_08070824
+	bl playSound
 	ldr r0, [r5, #0x1c]
 	movs r1, #0xac
 	lsls r1, r1, #2
@@ -36463,7 +36463,7 @@ sub_080B242C: @ 0x080B242C
 	adds r7, r0, #0
 	bl nullsub_37
 	ldr r0, _080B2550 @ =0x00000613
-	bl sub_08070824
+	bl playSound
 	ldr r1, [r7, #0x1c]
 	movs r0, #0xac
 	lsls r0, r0, #2
@@ -36500,7 +36500,7 @@ sub_080B242C: @ 0x080B242C
 	movs r1, #2
 	bl sub_080639B4
 	ldr r0, _080B2554 @ =0x00000634
-	bl sub_08070824
+	bl playSound
 	ldr r1, [r7, #0x1c]
 	adds r1, r1, r6
 	movs r2, #0
@@ -36591,7 +36591,7 @@ sub_080B255C: @ 0x080B255C
 	push {r4, lr}
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	adds r4, r0, #0
 	bl sub_08072DFC
 	movs r2, #0
@@ -36833,7 +36833,7 @@ sub_080B2740: @ 0x080B2740
 	bgt _080B275A
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	cmp r0, #0x1d
 	bgt _080B275A
 	movs r4, #1
@@ -37026,7 +37026,7 @@ sub_080B2848: @ 0x080B2848
 	adds r6, r0, #0
 	movs r0, #0xb8
 	lsls r0, r0, #2
-	bl sub_08070824
+	bl playSound
 	cmp r6, #0
 	beq _080B293C
 	ldr r4, [r7, #0x1c]
@@ -37158,7 +37158,7 @@ sub_080B29C8: @ 0x080B29C8
 	adds r6, r0, #0
 	bl nullsub_37
 	ldr r0, _080B2A50 @ =0x0000055D
-	bl sub_08070824
+	bl playSound
 	movs r0, #0x41
 	bl sub_08072F54
 	adds r3, r0, #0
@@ -37220,7 +37220,7 @@ sub_080B2A54: @ 0x080B2A54
 	push {r4, lr}
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	adds r4, r0, #0
 	bl sub_08072DFC
 	movs r2, #0
@@ -37244,7 +37244,7 @@ sub_080B2A80: @ 0x080B2A80
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _080B2A98 @ =0x0000044C
-	bl sub_08070824
+	bl playSound
 	adds r0, r4, #0
 	bl sub_08078700
 	pop {r4}
@@ -37500,7 +37500,7 @@ sub_080B2C90: @ 0x080B2C90
 	push {r4, lr}
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	adds r4, r0, #0
 	bl sub_08072DFC
 	movs r2, #0
@@ -37524,7 +37524,7 @@ sub_080B2CBC: @ 0x080B2CBC
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _080B2CD4 @ =0x0000044C
-	bl sub_08070824
+	bl playSound
 	adds r0, r4, #0
 	bl sub_08078700
 	pop {r4}
@@ -38352,7 +38352,7 @@ sub_080B331C: @ 0x080B331C
 	adds r5, r1, #0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	cmp r0, #0x27
 	bgt _080B334C
 	ldr r2, [r4, #0x1c]
@@ -38748,7 +38748,7 @@ sub_080B363C: @ 0x080B363C
 	sub sp, #0x18
 	adds r5, r0, #0
 	adds r0, r1, #0
-	bl sub_080729B0
+	bl sub_080729B0__5Goods
 	adds r6, r0, #0
 	cmp r6, #0
 	bne _080B3650
@@ -38756,7 +38756,7 @@ sub_080B363C: @ 0x080B363C
 _080B3650:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	cmp r0, #0x31
 	bgt _080B3678
 	ldr r2, [r5, #0x1c]
@@ -39406,7 +39406,7 @@ sub_080B3B64: @ 0x080B3B64
 	push {lr}
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	movs r1, #0
 	cmp r0, #0x45
 	bgt _080B3B76
@@ -39567,7 +39567,7 @@ sub_080B3CA8: @ 0x080B3CA8
 	push {lr}
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	movs r1, #0
 	cmp r0, #0x45
 	bgt _080B3CBA
@@ -39681,7 +39681,7 @@ _080B3D68: .4byte vt_09F72120
 sub_080B3D6C: @ 0x080B3D6C
 	push {r4, lr}
 	adds r0, r1, #0
-	bl sub_080729B0
+	bl sub_080729B0__5Goods
 	adds r4, r0, #0
 	cmp r4, #0
 	beq _080B3DA6
@@ -39762,16 +39762,16 @@ sub_080B3E00: @ 0x080B3E00
 	sub sp, #0xbc
 	str r0, [sp, #0xb4]
 	adds r4, r1, #0
-	bl sub_08079018
+	bl calcHit
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	cmp r0, #0x3b
 	ble _080B3E22
 	b _080B4028
 _080B3E22:
 	adds r0, r4, #0
-	bl sub_080729B0
+	bl sub_080729B0__5Goods
 	adds r7, r0, #0
 	cmp r7, #0
 	bne _080B3E30
@@ -39801,14 +39801,14 @@ _080B3E3C:
 	adds r0, r4, #0
 	adds r2, r7, #0
 	movs r3, #0
-	bl sub_080649AC
+	bl __5GoodsUsUiUs
 	adds r0, r4, #0
-	bl sub_08064F98
+	bl getType__C5Goods
 	mov sl, r4
 	cmp r0, #4
 	beq _080B3E7E
 	mov r0, sl
-	bl sub_08064F98
+	bl getType__C5Goods
 	adds r3, r6, #1
 	mov r8, r3
 	cmp r0, #6
@@ -39878,7 +39878,7 @@ _080B3EE2:
 _080B3EF4:
 	mov r0, sl
 	movs r1, #2
-	bl sub_080649E8
+	bl _._5Goods
 	mov r6, r8
 _080B3EFE:
 	ldr r1, [r7, #0x1c]
@@ -39914,12 +39914,12 @@ _080B3F38:
 	ldr r1, [r6, #4]
 	subs r1, #1
 	movs r0, #0
-	bl sub_08069454
+	bl randU32
 	adds r4, r0, #0
 	ldr r1, [r6, #4]
 	subs r1, #1
 	movs r0, #0
-	bl sub_08069454
+	bl randU32
 	ldr r1, [r6, #8]
 	lsls r4, r4, #1
 	adds r4, r4, r1
@@ -39958,10 +39958,10 @@ _080B3F66:
 	mov r0, sb
 	adds r2, r7, #0
 	movs r3, #0
-	bl sub_080649AC
+	bl __5GoodsUsUiUs
 	mov r0, r8
 	mov r1, sb
-	bl sub_08064B30
+	bl skill_1d0__5GoodsP5Skill
 	mov r0, sl
 	mov r1, r8
 	bl sub_0806E374
@@ -39970,7 +39970,7 @@ _080B3F66:
 	bl sub_0806E308
 	mov r0, sb
 	movs r1, #2
-	bl sub_080649E8
+	bl _._5Goods
 	ldr r3, [r5, #0x1c]
 	adds r3, r3, r4
 	movs r2, #0
@@ -40405,7 +40405,7 @@ sub_080B4310: @ 0x080B4310
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
-	bl sub_08079018
+	bl calcHit
 	ldr r1, [r4, #0x1c]
 	movs r6, #0xcc
 	lsls r6, r6, #1
@@ -40421,7 +40421,7 @@ sub_080B4310: @ 0x080B4310
 	bl sub_0807068C
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08079018
+	bl calcHit
 	ldr r1, [r4, #0x1c]
 	adds r1, r1, r6
 	movs r2, #0
@@ -40435,7 +40435,7 @@ sub_080B4310: @ 0x080B4310
 	bl sub_0807068C
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08079018
+	bl calcHit
 	ldr r1, [r4, #0x1c]
 	adds r1, r1, r6
 	movs r2, #0
@@ -40449,7 +40449,7 @@ sub_080B4310: @ 0x080B4310
 	bl sub_0807068C
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08079018
+	bl calcHit
 	ldr r1, [r4, #0x1c]
 	adds r1, r1, r6
 	movs r2, #0
@@ -40463,7 +40463,7 @@ sub_080B4310: @ 0x080B4310
 	bl sub_0807068C
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08079018
+	bl calcHit
 	ldr r1, [r4, #0x1c]
 	adds r1, r1, r6
 	movs r2, #0
@@ -40477,7 +40477,7 @@ sub_080B4310: @ 0x080B4310
 	bl sub_0807068C
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08079018
+	bl calcHit
 	ldr r1, [r4, #0x1c]
 	adds r1, r1, r6
 	movs r2, #0
@@ -40491,7 +40491,7 @@ sub_080B4310: @ 0x080B4310
 	bl sub_0807068C
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08079018
+	bl calcHit
 	ldr r1, [r4, #0x1c]
 	adds r1, r1, r6
 	movs r2, #0
@@ -40557,7 +40557,7 @@ sub_080B4414: @ 0x080B4414
 	bl sub_08073270
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl sub_08079018
+	bl calcHit
 	ldr r0, [r5, #0x4c]
 	adds r0, #1
 	str r0, [r5, #0x4c]
@@ -40640,7 +40640,7 @@ sub_080B44A0: @ 0x080B44A0
 	bl sub_08073270
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_08079018
+	bl calcHit
 	ldr r0, [r4, #0x4c]
 	adds r0, #1
 	str r0, [r4, #0x4c]
@@ -40687,7 +40687,7 @@ sub_080B4540: @ 0x080B4540
 	bl _call_via_r2
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_08079018
+	bl calcHit
 	pop {r4, r5}
 	pop {r0}
 	bx r0
@@ -40863,7 +40863,7 @@ _080B467C:
 	bl sub_0807068C
 	movs r0, #0xc2
 	lsls r0, r0, #3
-	bl sub_08070824
+	bl playSound
 	ldr r1, [r5, #0x1c]
 	movs r0, #0xb0
 	lsls r0, r0, #1
@@ -41373,7 +41373,7 @@ sub_080B4AE8: @ 0x080B4AE8
 	push {lr}
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	movs r1, #0
 	cmp r0, #0x4f
 	bgt _080B4AFA
@@ -41716,7 +41716,7 @@ sub_080B4D74: @ 0x080B4D74
 	bl _call_via_r1
 	adds r1, r0, #0
 	adds r0, r5, #0
-	bl sub_08070660
+	bl randS32
 	adds r1, r0, #0
 	adds r0, r6, #0
 	movs r2, #1
@@ -41743,7 +41743,7 @@ sub_080B4DD8: @ 0x080B4DD8
 	push {lr}
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	movs r1, #0
 	cmp r0, #0x4f
 	bgt _080B4DEA
@@ -41946,7 +41946,7 @@ sub_080B4F68: @ 0x080B4F68
 	adds r4, r0, #0
 	movs r0, #0xc2
 	lsls r0, r0, #3
-	bl sub_08070824
+	bl playSound
 	ldr r1, [r4, #0x1c]
 	movs r5, #0xb0
 	lsls r5, r5, #1
@@ -45152,7 +45152,7 @@ sub_080B69B8: @ 0x080B69B8
 	str r0, [r4, #0x1c]
 	movs r0, #1
 	movs r1, #2
-	bl sub_08070660
+	bl randS32
 	adds r1, r0, #0
 	adds r0, r4, #0
 	bl sub_08082680
@@ -45174,7 +45174,7 @@ sub_080B69E4: @ 0x080B69E4
 	str r0, [r4, #0x1c]
 	movs r0, #2
 	movs r1, #3
-	bl sub_08070660
+	bl randS32
 	adds r1, r0, #0
 	adds r0, r4, #0
 	bl sub_08082680
@@ -45295,7 +45295,7 @@ sub_080B6AC0: @ 0x080B6AC0
 	str r0, [r4, #0x1c]
 	movs r0, #2
 	movs r1, #3
-	bl sub_08070660
+	bl randS32
 	adds r1, r0, #0
 	adds r0, r4, #0
 	bl sub_08082680
@@ -45368,7 +45368,7 @@ sub_080B6B48: @ 0x080B6B48
 	str r0, [r4, #0x1c]
 	movs r0, #2
 	movs r1, #3
-	bl sub_08070660
+	bl randS32
 	str r0, [r4, #0x34]
 	adds r0, r4, #0
 	pop {r4}
@@ -45468,7 +45468,7 @@ sub_080B6BFC: @ 0x080B6BFC
 	str r0, [r4, #0x1c]
 	movs r0, #1
 	movs r1, #2
-	bl sub_08070660
+	bl randS32
 	adds r1, r0, #0
 	adds r0, r4, #0
 	bl sub_08082680
@@ -53186,7 +53186,7 @@ sub_080BA908: @ 0x080BA908
 	adds r0, r5, r0
 	ldr r1, [r1, #4]
 	bl _call_via_r1
-	bl sub_080729B0
+	bl sub_080729B0__5Goods
 	ldr r1, [r0, #0x1c]
 	movs r3, #0xd4
 	lsls r3, r3, #2
@@ -53233,7 +53233,7 @@ sub_080BA960: @ 0x080BA960
 	adds r0, r7, r0
 	ldr r1, [r1, #4]
 	bl _call_via_r1
-	bl sub_080729B0
+	bl sub_080729B0__5Goods
 	adds r4, r0, #0
 	ldr r1, [r4, #0x1c]
 	movs r5, #0xe6
@@ -55288,11 +55288,11 @@ sub_080BB8DC: @ 0x080BB8DC
 	bl sub_080730FC
 	movs r0, #0x82
 	movs r1, #0x96
-	bl sub_08070660
+	bl randS32
 	adds r1, r0, #0
 	adds r0, r5, #0
 	movs r2, #1
-	bl sub_08073734
+	bl hitPlayer
 	ldr r1, [r4, #0x1c]
 	adds r1, #0xe0
 	movs r2, #0
@@ -56138,7 +56138,7 @@ _080BBF70:
 	adds r1, r0, #0
 	adds r0, r5, #0
 	movs r2, #1
-	bl sub_08073734
+	bl hitPlayer
 	movs r0, #0xaa
 	adds r1, r5, #0
 	adds r2, r5, #0
@@ -56271,7 +56271,7 @@ _080BC07C:
 	adds r1, r0, #0
 	adds r0, r5, #0
 	movs r2, #1
-	bl sub_08073734
+	bl hitPlayer
 	movs r0, #0xaa
 	adds r1, r5, #0
 	adds r2, r5, #0
@@ -57841,7 +57841,7 @@ _080BCE08:
 _080BCE34:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	adds r1, r0, #0
 	cmp r1, r4
 	bge _080BCE5E
@@ -58166,7 +58166,7 @@ sub_080BD094: @ 0x080BD094
 	bl _call_via_r1
 	adds r1, r0, #0
 	adds r0, r4, #0
-	bl sub_08070660
+	bl randS32
 	adds r4, r0, #0
 	ldr r1, [r6, #0x1c]
 	movs r0, #0xd8
@@ -58222,7 +58222,7 @@ sub_080BD138: @ 0x080BD138
 	push {lr}
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	movs r1, #0
 	cmp r0, #0x59
 	bgt _080BD14A
@@ -58370,7 +58370,7 @@ _080BD220:
 	bl sub_0807066C
 	adds r1, r0, #0
 	adds r0, r5, #0
-	bl sub_08070660
+	bl randS32
 	movs r1, #1
 	cmp r1, r0
 	bge _080BD266
@@ -58378,7 +58378,7 @@ _080BD220:
 _080BD266:
 	adds r0, r6, #0
 	movs r2, #1
-	bl sub_08073734
+	bl hitPlayer
 	mov r0, r8
 	ldr r1, [r0, #0x1c]
 	movs r2, #0x98
@@ -58916,7 +58916,7 @@ _080BD7E2:
 _080BD7E4:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	movs r1, #0
 	cmp r0, r5
 	bge _080BD7F4
@@ -59072,7 +59072,7 @@ _080BD906:
 _080BD908:
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	movs r1, #0
 	cmp r0, r5
 	bge _080BD918
@@ -59218,7 +59218,7 @@ sub_080BD9DC: @ 0x080BD9DC
 	cmp r0, #0
 	bgt _080BDA98
 	ldr r0, _080BDA90 @ =0x0000050A
-	bl sub_08070824
+	bl playSound
 	movs r0, #0x46
 	adds r1, r6, #0
 	adds r2, r6, #0

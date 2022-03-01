@@ -49,7 +49,7 @@ sub_080809F8: @ 0x080809F8
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
 	movs r0, #7
-	bl sub_08001C5C
+	bl get_string
 	adds r4, r0, #0
 	movs r0, #7
 	bl sub_08001DB0
@@ -105,7 +105,7 @@ sub_08080A24: @ 0x08080A24
 	lsls r0, r4, #3
 	adds r0, r0, r4
 	lsls r0, r0, #4
-	ldr r1, _08080B48 @ =gEnemyData
+	ldr r1, _08080B48 @ =gMonsterData
 	adds r0, r0, r1
 	str r0, [r2]
 	adds r0, #0x68
@@ -195,7 +195,7 @@ sub_08080A24: @ 0x08080A24
 	.align 2, 0
 _08080B40: .4byte vt_09F82F98
 _08080B44: .4byte vt_09F83010
-_08080B48: .4byte gEnemyData
+_08080B48: .4byte gMonsterData
 _08080B4C: .4byte _vt.3Unk
 _08080B50: .4byte _vt.10RoundBegin
 _08080B54: .4byte gUnknown_0810B278
@@ -670,7 +670,7 @@ _08080F06:
 	adds r5, r7, r5
 	mov r0, sp
 	adds r1, r6, #0
-	bl attackdata_118__10UnitTargetUi
+	bl attackdata_118__10UnitTargeti
 	adds r1, r0, #0
 	ldr r2, [r4, #4]
 	adds r0, r5, #0
@@ -678,7 +678,7 @@ _08080F06:
 	adds r6, #1
 _08080F28:
 	mov r0, sp
-	bl attackdata_110__10UnitTarget
+	bl attackdata_110__C10UnitTarget
 	cmp r6, r0
 	blt _08080F06
 	movs r4, #0
@@ -752,7 +752,7 @@ _08080F86:
 	bl sub_080735E0
 _08080FC0:
 	adds r0, r4, #0
-	bl sub_08074BA4__4Unit
+	bl kill__4Unit
 	add sp, #4
 	pop {r4}
 	pop {r0}
@@ -802,7 +802,7 @@ _08080FFE:
 	bgt _08081042
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	cmp r0, r4
 	bge _08081042
 	mov r8, r4
@@ -1907,7 +1907,7 @@ sub_080817D0: @ 0x080817D0
 	lsls r2, r1, #3
 	adds r2, r2, r1
 	lsls r2, r2, #4
-	ldr r0, _08081974 @ =gEnemyData
+	ldr r0, _08081974 @ =gMonsterData
 	adds r2, r2, r0
 	str r2, [r4]
 	movs r0, #0x80
@@ -2089,7 +2089,7 @@ _08081936:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08081974: .4byte gEnemyData
+_08081974: .4byte gMonsterData
 
 	thumb_func_start sub_08081978
 sub_08081978: @ 0x08081978

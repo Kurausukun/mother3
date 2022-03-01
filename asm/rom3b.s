@@ -11,7 +11,7 @@ sub_080BDE48: @ 0x080BDE48
 	lsrs r1, r1, #0x10
 	lsls r3, r3, #0x10
 	lsrs r3, r3, #0x10
-	bl sub_080649AC
+	bl __5GoodsUsUiUs
 	ldr r0, _080BDE64 @ =vt_09F79D38
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -29,7 +29,7 @@ sub_080BDE68: @ 0x080BDE68
 	lsrs r1, r1, #0x10
 	lsls r3, r3, #0x10
 	lsrs r3, r3, #0x10
-	bl sub_080649AC
+	bl __5GoodsUsUiUs
 	ldr r0, _080BDE84 @ =vt_09F7A018
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -47,7 +47,7 @@ sub_080BDE88: @ 0x080BDE88
 	lsrs r1, r1, #0x10
 	lsls r3, r3, #0x10
 	lsrs r3, r3, #0x10
-	bl sub_080649AC
+	bl __5GoodsUsUiUs
 	ldr r0, _080BDEA4 @ =vt_09F7A2F8
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -65,7 +65,7 @@ sub_080BDEA8: @ 0x080BDEA8
 	lsrs r1, r1, #0x10
 	lsls r3, r3, #0x10
 	lsrs r3, r3, #0x10
-	bl sub_080649AC
+	bl __5GoodsUsUiUs
 	ldr r0, _080BDEC4 @ =vt_09F7A5D8
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -83,7 +83,7 @@ sub_080BDEC8: @ 0x080BDEC8
 	lsrs r1, r1, #0x10
 	lsls r3, r3, #0x10
 	lsrs r3, r3, #0x10
-	bl sub_080649AC
+	bl __5GoodsUsUiUs
 	ldr r0, _080BDEE4 @ =vt_09F7A8B8
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -101,7 +101,7 @@ sub_080BDEE8: @ 0x080BDEE8
 	lsrs r1, r1, #0x10
 	lsls r3, r3, #0x10
 	lsrs r3, r3, #0x10
-	bl sub_080649AC
+	bl __5GoodsUsUiUs
 	ldr r0, _080BDF04 @ =vt_09F7AB98
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -119,7 +119,7 @@ sub_080BDF08: @ 0x080BDF08
 	lsrs r1, r1, #0x10
 	lsls r3, r3, #0x10
 	lsrs r3, r3, #0x10
-	bl sub_080649AC
+	bl __5GoodsUsUiUs
 	ldr r0, _080BDF24 @ =vt_09F7AE78
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -137,7 +137,7 @@ sub_080BDF28: @ 0x080BDF28
 	lsrs r1, r1, #0x10
 	lsls r3, r3, #0x10
 	lsrs r3, r3, #0x10
-	bl sub_080649AC
+	bl __5GoodsUsUiUs
 	ldr r0, _080BDF44 @ =vt_09F7B158
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -155,7 +155,7 @@ sub_080BDF48: @ 0x080BDF48
 	lsrs r1, r1, #0x10
 	lsls r3, r3, #0x10
 	lsrs r3, r3, #0x10
-	bl sub_080649AC
+	bl __5GoodsUsUiUs
 	ldr r0, _080BDF64 @ =vt_09F7B438
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -173,7 +173,7 @@ sub_080BDF68: @ 0x080BDF68
 	lsrs r1, r1, #0x10
 	lsls r3, r3, #0x10
 	lsrs r3, r3, #0x10
-	bl sub_080649AC
+	bl __5GoodsUsUiUs
 	ldr r0, _080BDF84 @ =vt_09F7B718
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -191,7 +191,7 @@ sub_080BDF88: @ 0x080BDF88
 	lsrs r1, r1, #0x10
 	lsls r3, r3, #0x10
 	lsrs r3, r3, #0x10
-	bl sub_080649AC
+	bl __5GoodsUsUiUs
 	ldr r0, _080BDFA4 @ =vt_09F7B9F8
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -209,7 +209,7 @@ sub_080BDFA8: @ 0x080BDFA8
 	lsrs r1, r1, #0x10
 	lsls r3, r3, #0x10
 	lsrs r3, r3, #0x10
-	bl sub_080649AC
+	bl __5GoodsUsUiUs
 	ldr r0, _080BDFC4 @ =vt_09F7BCD8
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -227,7 +227,7 @@ sub_080BDFC8: @ 0x080BDFC8
 	lsrs r1, r1, #0x10
 	lsls r3, r3, #0x10
 	lsrs r3, r3, #0x10
-	bl sub_080649AC
+	bl __5GoodsUsUiUs
 	ldr r0, _080BDFE4 @ =vt_09F7BFB8
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -245,7 +245,7 @@ sub_080BDFE8: @ 0x080BDFE8
 	lsrs r1, r1, #0x10
 	lsls r3, r3, #0x10
 	lsrs r3, r3, #0x10
-	bl sub_080649AC
+	bl __5GoodsUsUiUs
 	ldr r0, _080BE004 @ =vt_09F7C298
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -263,7 +263,7 @@ sub_080BE008: @ 0x080BE008
 	lsrs r1, r1, #0x10
 	lsls r3, r3, #0x10
 	lsrs r3, r3, #0x10
-	bl sub_080649AC
+	bl __5GoodsUsUiUs
 	ldr r0, _080BE024 @ =vt_09F7C578
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -281,7 +281,7 @@ sub_080BE028: @ 0x080BE028
 	lsrs r1, r1, #0x10
 	lsls r3, r3, #0x10
 	lsrs r3, r3, #0x10
-	bl sub_080649AC
+	bl __5GoodsUsUiUs
 	ldr r0, _080BE044 @ =vt_09F7C858
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -299,7 +299,7 @@ sub_080BE048: @ 0x080BE048
 	lsrs r1, r1, #0x10
 	lsls r3, r3, #0x10
 	lsrs r3, r3, #0x10
-	bl sub_080649AC
+	bl __5GoodsUsUiUs
 	ldr r0, _080BE064 @ =vt_09F7CB38
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -317,7 +317,7 @@ sub_080BE068: @ 0x080BE068
 	lsrs r1, r1, #0x10
 	lsls r3, r3, #0x10
 	lsrs r3, r3, #0x10
-	bl sub_080649AC
+	bl __5GoodsUsUiUs
 	ldr r0, _080BE084 @ =vt_09F7CE18
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -335,7 +335,7 @@ sub_080BE088: @ 0x080BE088
 	lsrs r1, r1, #0x10
 	lsls r3, r3, #0x10
 	lsrs r3, r3, #0x10
-	bl sub_080649AC
+	bl __5GoodsUsUiUs
 	ldr r0, _080BE0A4 @ =vt_09F7D0F8
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -353,7 +353,7 @@ sub_080BE0A8: @ 0x080BE0A8
 	lsrs r1, r1, #0x10
 	lsls r3, r3, #0x10
 	lsrs r3, r3, #0x10
-	bl sub_080649AC
+	bl __5GoodsUsUiUs
 	ldr r0, _080BE0D0 @ =vt_09F7D3D8
 	str r0, [r4, #0x1c]
 	adds r1, r4, #0
@@ -376,7 +376,7 @@ sub_080BE0D4: @ 0x080BE0D4
 	lsrs r1, r1, #0x10
 	lsls r3, r3, #0x10
 	lsrs r3, r3, #0x10
-	bl sub_080649AC
+	bl __5GoodsUsUiUs
 	ldr r0, _080BE0F8 @ =vt_09F7D6B8
 	str r0, [r4, #0x1c]
 	adds r1, r4, #0
@@ -398,7 +398,7 @@ sub_080BE0FC: @ 0x080BE0FC
 	lsrs r1, r1, #0x10
 	lsls r3, r3, #0x10
 	lsrs r3, r3, #0x10
-	bl sub_080649AC
+	bl __5GoodsUsUiUs
 	ldr r0, _080BE118 @ =vt_09F7D9A0
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -857,7 +857,7 @@ sub_080BE4E4: @ 0x080BE4E4
 	push {lr}
 	ldr r2, _080BE4F4 @ =vt_09F7D9A0
 	str r2, [r0, #0x1c]
-	bl sub_080649E8
+	bl _._5Goods
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -1218,7 +1218,7 @@ sub_080BE7E0: @ 0x080BE7E0
 	push {lr}
 	ldr r2, _080BE7F0 @ =vt_09F7D9A0
 	str r2, [r0, #0x1c]
-	bl sub_080649E8
+	bl _._5Goods
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -1581,7 +1581,7 @@ sub_080BEAE8: @ 0x080BEAE8
 	push {lr}
 	ldr r2, _080BEAF8 @ =vt_09F7D9A0
 	str r2, [r0, #0x1c]
-	bl sub_080649E8
+	bl _._5Goods
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -1986,7 +1986,7 @@ sub_080BEE4C: @ 0x080BEE4C
 	push {lr}
 	ldr r2, _080BEE5C @ =vt_09F7D9A0
 	str r2, [r0, #0x1c]
-	bl sub_080649E8
+	bl _._5Goods
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -2181,7 +2181,7 @@ sub_080BEFD4: @ 0x080BEFD4
 	push {lr}
 	ldr r2, _080BEFE4 @ =vt_09F7D9A0
 	str r2, [r0, #0x1c]
-	bl sub_080649E8
+	bl _._5Goods
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -2281,7 +2281,7 @@ _080BF062:
 	movs r1, #0x1a
 	bl _call_via_r2
 	ldr r0, _080BF0F8 @ =0x0000062B
-	bl sub_08070824
+	bl playSound
 	movs r0, #0xa6
 	adds r1, r5, #0
 	adds r2, r5, #0
@@ -2348,7 +2348,7 @@ sub_080BF138: @ 0x080BF138
 	push {lr}
 	ldr r2, _080BF148 @ =vt_09F7D9A0
 	str r2, [r0, #0x1c]
-	bl sub_080649E8
+	bl _._5Goods
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -2481,7 +2481,7 @@ sub_080BF240: @ 0x080BF240
 	push {lr}
 	ldr r2, _080BF250 @ =vt_09F7D9A0
 	str r2, [r0, #0x1c]
-	bl sub_080649E8
+	bl _._5Goods
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -2625,7 +2625,7 @@ sub_080BF35C: @ 0x080BF35C
 	push {lr}
 	ldr r2, _080BF36C @ =vt_09F7D9A0
 	str r2, [r0, #0x1c]
-	bl sub_080649E8
+	bl _._5Goods
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -2702,7 +2702,7 @@ sub_080BF3F0: @ 0x080BF3F0
 	push {lr}
 	ldr r2, _080BF400 @ =vt_09F7D9A0
 	str r2, [r0, #0x1c]
-	bl sub_080649E8
+	bl _._5Goods
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -2901,7 +2901,7 @@ sub_080BF58C: @ 0x080BF58C
 	push {lr}
 	ldr r2, _080BF59C @ =vt_09F7D9A0
 	str r2, [r0, #0x1c]
-	bl sub_080649E8
+	bl _._5Goods
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -2915,7 +2915,7 @@ sub_080BF5A0: @ 0x080BF5A0
 	adds r5, r1, #0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	cmp r0, #0x31
 	bgt _080BF5BE
 	adds r0, r4, #0
@@ -3054,7 +3054,7 @@ sub_080BF6B8: @ 0x080BF6B8
 	push {lr}
 	ldr r2, _080BF6C8 @ =vt_09F7D9A0
 	str r2, [r0, #0x1c]
-	bl sub_080649E8
+	bl _._5Goods
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -3112,7 +3112,7 @@ sub_080BF724: @ 0x080BF724
 	push {lr}
 	ldr r2, _080BF734 @ =vt_09F7D9A0
 	str r2, [r0, #0x1c]
-	bl sub_080649E8
+	bl _._5Goods
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -3170,7 +3170,7 @@ sub_080BF790: @ 0x080BF790
 	push {lr}
 	ldr r2, _080BF7A0 @ =vt_09F7D9A0
 	str r2, [r0, #0x1c]
-	bl sub_080649E8
+	bl _._5Goods
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -3184,7 +3184,7 @@ sub_080BF7A4: @ 0x080BF7A4
 	adds r6, r1, #0
 	movs r0, #0
 	movs r1, #9
-	bl sub_08070660
+	bl randS32
 	cmp r0, #9
 	bls _080BF7BA
 	b _080BFADC
@@ -3214,7 +3214,7 @@ _080BF7F0:
 	bl sub_080730FC
 	movs r0, #0x50
 	movs r1, #0x8c
-	bl sub_08070660
+	bl randS32
 	adds r1, r0, #0
 	adds r0, r6, #0
 	movs r2, #1
@@ -3241,7 +3241,7 @@ _080BF82C:
 	bl sub_080730FC
 	movs r0, #0x14
 	movs r1, #0x32
-	bl sub_08070660
+	bl randS32
 	adds r1, r0, #0
 	adds r0, r6, #0
 	movs r2, #1
@@ -3577,7 +3577,7 @@ sub_080BFAE4: @ 0x080BFAE4
 	push {lr}
 	ldr r2, _080BFAF4 @ =vt_09F7D9A0
 	str r2, [r0, #0x1c]
-	bl sub_080649E8
+	bl _._5Goods
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -3614,7 +3614,7 @@ sub_080BFB28: @ 0x080BFB28
 	push {lr}
 	ldr r2, _080BFB38 @ =vt_09F7D9A0
 	str r2, [r0, #0x1c]
-	bl sub_080649E8
+	bl _._5Goods
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -3729,7 +3729,7 @@ sub_080BFC14: @ 0x080BFC14
 	push {lr}
 	ldr r2, _080BFC24 @ =vt_09F7D9A0
 	str r2, [r0, #0x1c]
-	bl sub_080649E8
+	bl _._5Goods
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -3795,7 +3795,7 @@ sub_080BFC98: @ 0x080BFC98
 	push {lr}
 	ldr r2, _080BFCA8 @ =vt_09F7D9A0
 	str r2, [r0, #0x1c]
-	bl sub_080649E8
+	bl _._5Goods
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -3808,7 +3808,7 @@ sub_080BFCAC: @ 0x080BFCAC
 	adds r4, r0, #0
 	bl sub_08078784
 	ldr r0, _080BFD30 @ =0x0000055E
-	bl sub_08070824
+	bl playSound
 	ldr r1, [r4, #0x1c]
 	movs r0, #0xb0
 	lsls r0, r0, #1
@@ -3868,7 +3868,7 @@ sub_080BFD34: @ 0x080BFD34
 	push {lr}
 	ldr r2, _080BFD44 @ =vt_09F7D9A0
 	str r2, [r0, #0x1c]
-	bl sub_080649E8
+	bl _._5Goods
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -3886,7 +3886,7 @@ sub_080BFD48: @ 0x080BFD48
 	adds r7, r1, #0
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	cmp r0, #0x59
 	bgt _080BFE38
 	ldr r3, [r5, #0x1c]
@@ -3913,7 +3913,7 @@ sub_080BFD48: @ 0x080BFD48
 	movs r1, #2
 	bl sub_0806E308
 	ldr r0, _080BFE34 @ =0x00000452
-	bl sub_08070824
+	bl playSound
 	movs r0, #0
 	mov r8, r0
 	add r1, sp, #0x10
@@ -3924,7 +3924,7 @@ sub_080BFD48: @ 0x080BFD48
 _080BFDAC:
 	movs r0, #8
 	movs r1, #0x10
-	bl sub_08070660
+	bl randS32
 	adds r4, r0, #0
 	adds r0, r7, #0
 	adds r1, r4, #0
@@ -3945,7 +3945,7 @@ _080BFDAC:
 	bl sub_08073198
 	movs r0, #0xc
 	movs r1, #0xf
-	bl sub_08070660
+	bl randS32
 	bl sub_0807068C
 	add r8, r4
 	subs r6, #1
@@ -4009,11 +4009,11 @@ _080BFE38:
 	lsls r0, r0, #2
 	movs r1, #0xd7
 	lsls r1, r1, #2
-	bl sub_08070660
+	bl randS32
 	adds r1, r0, #0
 	adds r0, r7, #0
 	movs r2, #1
-	bl sub_08073734
+	bl hitPlayer
 	ldr r1, [r5, #0x1c]
 	movs r2, #0xb0
 	lsls r2, r2, #1
@@ -4044,7 +4044,7 @@ sub_080BFEB8: @ 0x080BFEB8
 	push {lr}
 	ldr r2, _080BFEC8 @ =vt_09F7D9A0
 	str r2, [r0, #0x1c]
-	bl sub_080649E8
+	bl _._5Goods
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -4054,7 +4054,7 @@ _080BFEC8: .4byte vt_09F7D9A0
 sub_080BFECC: @ 0x080BFECC
 	push {r4, lr}
 	adds r4, r0, #0
-	bl sub_08064C80
+	bl healHi__C5Goods
 	adds r4, #0x50
 	ldrh r1, [r4]
 	muls r0, r1, r0
@@ -4068,7 +4068,7 @@ sub_080BFECC: @ 0x080BFECC
 sub_080BFEE4: @ 0x080BFEE4
 	push {r4, lr}
 	adds r4, r0, #0
-	bl sub_08064C78
+	bl healLo__C5Goods
 	adds r4, #0x50
 	ldrh r1, [r4]
 	muls r0, r1, r0
@@ -4242,7 +4242,7 @@ sub_080C0034: @ 0x080C0034
 	push {lr}
 	ldr r2, _080C0044 @ =vt_09F7D9A0
 	str r2, [r0, #0x1c]
-	bl sub_080649E8
+	bl _._5Goods
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -4257,7 +4257,7 @@ sub_080C0048: @ 0x080C0048
 	cmp r0, #1
 	beq _080C005C
 	adds r0, r1, #0
-	bl sub_08064E98
+	bl hasDim__C5Goods
 	b _080C005E
 _080C005C:
 	movs r0, #0
@@ -4275,7 +4275,7 @@ sub_080C0064: @ 0x080C0064
 	cmp r0, #1
 	beq _080C007C
 	adds r0, r1, #0
-	bl sub_08064EAC
+	bl animNo__C5Goods
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	b _080C007E
@@ -4305,7 +4305,7 @@ sub_080C0084: @ 0x080C0084
 	adds r0, r4, #0
 	movs r1, #1
 	movs r2, #1
-	bl sub_08073734
+	bl hitPlayer
 	b _080C00CE
 _080C00AE:
 	ldr r1, [r4, #0x1c]
@@ -4321,7 +4321,7 @@ _080C00AE:
 	subs r1, #1
 	adds r0, r4, #0
 	movs r2, #1
-	bl sub_08073734
+	bl hitPlayer
 _080C00CE:
 	pop {r4}
 	pop {r0}
@@ -4683,7 +4683,7 @@ sub_080C04F0: @ 0x080C04F0
 	push {lr}
 	ldr r2, _080C0500 @ =vt_09F7D9A0
 	str r2, [r0, #0x1c]
-	bl sub_080649E8
+	bl _._5Goods
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -4752,7 +4752,7 @@ _080C0572:
 sub_080C0578: @ 0x080C0578
 	push {r4, r5, lr}
 	adds r4, r0, #0
-	bl sub_08064FA0
+	bl isConsumable__C5Goods
 	lsls r0, r0, #0x18
 	lsrs r5, r0, #0x18
 	ldr r0, [r4, #0x1c]
@@ -4780,7 +4780,7 @@ _080C05A4:
 sub_080C05AC: @ 0x080C05AC
 	push {r4, r5, lr}
 	adds r4, r0, #0
-	bl sub_08064F08
+	bl missChance__C5Goods
 	adds r5, r0, #0
 	cmp r5, #0x63
 	bgt _080C062A
@@ -5055,7 +5055,7 @@ _080C0752:
 	bne _080C0858
 	movs r0, #0
 	movs r1, #0x63
-	bl sub_08070660
+	bl randS32
 	cmp r0, #1
 	bgt _080C0858
 	ldr r1, [r6, #0x1c]
@@ -5147,7 +5147,7 @@ sub_080C0890: @ 0x080C0890
 	push {lr}
 	ldr r2, _080C08A0 @ =vt_09F7D9A0
 	str r2, [r0, #0x1c]
-	bl sub_080649E8
+	bl _._5Goods
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -5448,7 +5448,7 @@ sub_080C0AF8: @ 0x080C0AF8
 	adds r4, r0, #0
 	movs r0, #1
 	movs r1, #3
-	bl sub_08070660
+	bl randS32
 	adds r1, r0, #0
 	adds r0, r4, #0
 	movs r2, #1

@@ -1,6 +1,20 @@
+#include <cstring>
 #include <iostream>
 #include "salsa.hpp"
-#include "salsa_text.hpp"
+#include "salsaLogic.hpp"
+#include "salsaText.hpp"
+
+std::unordered_map<std::string, SalsaRead> read_map = {
+    {"mainscript.salsa", &salsa_maintext_read},
+    {"misctext.salsa", &salsa_misctext_read},
+    {"logic.salsa", &salsa_logic_read},
+};
+
+std::unordered_map<std::string, SalsaWrite> write_map = {
+    {"mainscript.salsa", &salsa_maintext_write},
+    {"misctext.salsa", &salsa_misctext_write},
+    {"logic.salsa", &salsa_logic_write},
+};
 
 int main(int argc, char** argv) {
     std::vector<const char*> args{};
@@ -29,10 +43,38 @@ int main(int argc, char** argv) {
         printusage();
     }
 
+    // file content type is determined by name
+    // this makes it a lot easier for the build process
     if (extract) {
-        SalsaText::read_binary(src_path, dest_path);
+        SalsaStream src(src_path);
+        SalsaPath dest(dest_path);
+
+        const char* dest_filename = std::strrchr(dest_path, '/');
+        if (dest_filename == nullptr) {
+            dest_filename = dest_path;
+        } else {
+            ++dest_filename;
+        }
+        if (read_map.find(dest_filename) == read_map.end()) {
+            std::cerr << "Don't know how to extract " << dest_filename << std::endl;
+            exit(1);
+        }
+        read_map[dest_filename](src, dest);
     } else {
-        SalsaText::write_binary(src_path, dest_path);
+        SalsaPath src(src_path);
+        SalsaStream dest(dest_path);
+
+        const char* src_filename = std::strrchr(src_path, '/');
+        if (src_filename == nullptr) {
+            src_filename = src_path;
+        } else {
+            ++src_filename;
+        }
+        if (write_map.find(src_filename) == write_map.end()) {
+            std::cerr << "Don't know how to build " << src_filename << std::endl;
+            exit(1);
+        }
+        write_map[src_filename](src, dest);
     }
     return 0;
 }

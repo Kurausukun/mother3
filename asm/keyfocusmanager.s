@@ -159,22 +159,22 @@ sub_08070048: @ 0x08070048
 	cmp r6, #0
 	bgt _08070072
 	ldrh r0, [r5, #0x20]
-	bl sub_0808FA1C
+	bl m4aSongNumStart
 	b _080700AC
 _08070072:
 	ldrh r0, [r5, #0x20]
-	bl sub_0808FA1C
+	bl m4aSongNumStart
 	ldr r0, [r5, #0x24]
 	ldr r0, [r0]
-	bl sub_0808FC14
+	bl m4aMPlayImmInit
 	ldr r0, [r5, #0x24]
 	ldr r0, [r0]
 	ldr r1, _080700D8 @ =0x0000FFFF
 	movs r2, #0
-	bl sub_08090AA4
+	bl m4aMPlayVolumeControl
 	ldr r0, [r5, #0x24]
 	ldr r0, [r0]
-	bl sub_080902E0
+	bl MPlayStop
 	ldr r0, [r5, #0x24]
 	ldr r4, [r0]
 	adds r0, r5, #0
@@ -184,7 +184,7 @@ _08070072:
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
 	adds r0, r4, #0
-	bl sub_0808FBE8
+	bl m4aMPlayFadeIn
 _080700AC:
 	ldr r2, _080700DC @ =gUnknown_02001F28
 	ldr r1, [r5, #0x24]
@@ -224,7 +224,7 @@ sub_080700E4: @ 0x080700E4
 	bgt _080700FC
 	ldr r0, [r2, #0x24]
 	ldr r0, [r0]
-	bl sub_080902E0
+	bl MPlayStop
 	b _08070112
 _080700FC:
 	ldr r0, [r2, #0x24]
@@ -235,7 +235,7 @@ _080700FC:
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
 	adds r0, r4, #0
-	bl sub_0808FBC4
+	bl m4aMPlayFadeOutTemporarily
 _08070112:
 	pop {r4}
 	pop {r0}
@@ -252,7 +252,7 @@ sub_08070118: @ 0x08070118
 	bgt _08070130
 	ldr r0, [r2, #0x24]
 	ldr r0, [r0]
-	bl sub_0808FB7C
+	bl m4aMPlayContinue
 	b _08070146
 _08070130:
 	ldr r0, [r2, #0x24]
@@ -263,7 +263,7 @@ _08070130:
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
 	adds r0, r4, #0
-	bl sub_0808FBE8
+	bl m4aMPlayFadeIn
 _08070146:
 	pop {r4}
 	pop {r0}
@@ -280,7 +280,7 @@ sub_0807014C: @ 0x0807014C
 	bgt _08070164
 	ldr r0, [r5, #0x24]
 	ldr r0, [r0]
-	bl sub_080902E0
+	bl MPlayStop
 	b _0807017A
 _08070164:
 	ldr r0, [r5, #0x24]
@@ -291,7 +291,7 @@ _08070164:
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
 	adds r0, r4, #0
-	bl sub_0808FBC4
+	bl m4aMPlayFadeOutTemporarily
 _0807017A:
 	ldr r2, _080701A4 @ =gUnknown_02001F28
 	ldr r1, [r5, #0x24]
@@ -487,7 +487,7 @@ sub_080702C0: @ 0x080702C0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
 	adds r0, r4, #0
-	bl sub_08090A80
+	bl m4aMPlayTempoControl
 _080702E4:
 	pop {r4}
 	pop {r0}
@@ -513,7 +513,7 @@ sub_080702EC: @ 0x080702EC
 	lsrs r2, r2, #0x10
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_08090AA4
+	bl m4aMPlayVolumeControl
 _08070314:
 	pop {r4, r5}
 	pop {r0}
@@ -545,7 +545,7 @@ sub_08070320: @ 0x08070320
 	asrs r2, r2, #0x18
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_08090B80
+	bl m4aMPlayPanpotControl
 _08070352:
 	pop {r4, r5}
 	pop {r0}
@@ -975,15 +975,15 @@ _08070650: .4byte 0x0000FFFF
 	thumb_func_start sub_08070654
 sub_08070654: @ 0x08070654
 	push {lr}
-	bl sub_08069318
+	bl randomMT
 	pop {r1}
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_08070660
-sub_08070660: @ 0x08070660
+	thumb_func_start randS32
+randS32: @ 0x08070660
 	push {lr}
-	bl sub_08069454
+	bl randU32
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -1073,14 +1073,14 @@ sub_080706D0: @ 0x080706D0
 	bl sub_0805D2F0
 	mov r0, sp
 	adds r1, r5, #0
-	bl sub_08088D58
+	bl __9BXTHandleRC6BXTRef
 	mov r0, r8
 	mov r1, sp
 	adds r2, r6, #0
-	bl sub_08088DF0
+	bl __7MessageP9BXTHandleUi
 	mov r0, sp
 	movs r1, #2
-	bl sub_08088D7C
+	bl _._9BXTHandle
 	ldr r0, _08070734 @ =_vt.1D
 	str r0, [sp, #0x18]
 	mov r0, r8
@@ -1218,8 +1218,8 @@ _0807081C:
 	bx r0
 	.align 2, 0
 
-	thumb_func_start sub_08070824
-sub_08070824: @ 0x08070824
+	thumb_func_start playSound
+playSound: @ 0x08070824
 	push {lr}
 	sub sp, #0x38
 	lsls r0, r0, #0x10
@@ -4438,8 +4438,8 @@ sub_08071F8C: @ 0x08071F8C
 	.align 2, 0
 _08071FB8: .4byte vt_09F810F8
 
-	thumb_func_start sub_08071FBC
-sub_08071FBC: @ 0x08071FBC
+	thumb_func_start _._10KeyFocuser
+_._10KeyFocuser: @ 0x08071FBC
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0

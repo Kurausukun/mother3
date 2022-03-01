@@ -239,7 +239,7 @@ vt_09F45058::
 	.4byte sub_0805E8A4
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E8F0
+	.4byte onBattleLost
 	.2byte 0
 	.2byte 0
 	.4byte sub_0805E9EC
@@ -832,7 +832,7 @@ vt_09F45630::
 	.4byte sub_0805E8A4
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E8F0
+	.4byte onBattleLost
 	.2byte 0
 	.2byte 0
 	.4byte sub_0805E9EC
@@ -1095,7 +1095,7 @@ vt_09F458E8::
 	.4byte sub_0805E8A4
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E8F0
+	.4byte onBattleLost
 	.2byte 0
 	.2byte 0
 	.4byte sub_0805E9EC
@@ -1266,7 +1266,7 @@ vt_09F458E8::
 	.4byte sub_080995EC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08099240
+	.4byte evtFlintIntervene
 	.2byte 0
 	.2byte 0
 	.4byte sub_08098F38
@@ -1391,7 +1391,7 @@ vt_09F45BF8::
 	.4byte sub_0805E8A4
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E8F0
+	.4byte onBattleLost
 	.2byte 0
 	.2byte 0
 	.4byte sub_0805E9EC
@@ -1666,7 +1666,7 @@ vt_09F45ED0::
 	.4byte sub_0805E8A4
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E8F0
+	.4byte onBattleLost
 	.2byte 0
 	.2byte 0
 	.4byte sub_0805E9EC
@@ -1946,7 +1946,7 @@ vt_09F46280::
 	.4byte sub_0805E8A4
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E8F0
+	.4byte onBattleLost
 	.2byte 0
 	.2byte 0
 	.4byte sub_0805E9EC
@@ -2200,7 +2200,7 @@ vt_09F46450::
 	.4byte sub_0805E8A4
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E8F0
+	.4byte onBattleLost
 	.2byte 0
 	.2byte 0
 	.4byte sub_0805E9EC
@@ -2542,7 +2542,7 @@ vt_09F467F8::
 	.4byte sub_08060B20
 	.2byte 0
 	.2byte 0
-	.4byte sub_08060B54
+	.4byte tellExperience
 	.2byte 0
 	.2byte 0
 	.4byte sub_08060D78
@@ -2701,10 +2701,10 @@ vt_09F469A8::
 	.4byte sub_0807B5D4
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807B450
@@ -2779,7 +2779,7 @@ vt_09F469A8::
 	.4byte sub_0807BC80
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -2866,7 +2866,7 @@ vt_09F469A8::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -2881,13 +2881,13 @@ vt_09F469A8::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -2935,7 +2935,7 @@ vt_09F469A8::
 	.4byte sub_0807B444
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B67C
+	.4byte levelUp
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807BAE4
@@ -3179,10 +3179,10 @@ vt_09F46E98::
 	.4byte sub_0807B5D4
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807B450
@@ -3257,7 +3257,7 @@ vt_09F46E98::
 	.4byte sub_0807BC80
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -3344,7 +3344,7 @@ vt_09F46E98::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -3359,13 +3359,13 @@ vt_09F46E98::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -3413,7 +3413,7 @@ vt_09F46E98::
 	.4byte sub_0807B444
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B67C
+	.4byte levelUp
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807BAE4
@@ -3660,10 +3660,10 @@ vt_09F47390::
 	.4byte sub_0807B5D4
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807B450
@@ -3738,7 +3738,7 @@ vt_09F47390::
 	.4byte sub_0807BC80
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -3825,7 +3825,7 @@ vt_09F47390::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -3840,13 +3840,13 @@ vt_09F47390::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -3894,7 +3894,7 @@ vt_09F47390::
 	.4byte sub_0807B444
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B67C
+	.4byte levelUp
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807BAE4
@@ -4141,10 +4141,10 @@ vt_09F47888::
 	.4byte sub_0807B5D4
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807B450
@@ -4219,7 +4219,7 @@ vt_09F47888::
 	.4byte sub_0807BC80
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -4306,7 +4306,7 @@ vt_09F47888::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -4321,13 +4321,13 @@ vt_09F47888::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -4375,7 +4375,7 @@ vt_09F47888::
 	.4byte sub_0807B444
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B67C
+	.4byte levelUp
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807BAE4
@@ -4622,10 +4622,10 @@ vt_09F47D80::
 	.4byte sub_0807B5D4
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807B450
@@ -4700,7 +4700,7 @@ vt_09F47D80::
 	.4byte sub_0807BC80
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -4787,7 +4787,7 @@ vt_09F47D80::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -4802,13 +4802,13 @@ vt_09F47D80::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -4856,7 +4856,7 @@ vt_09F47D80::
 	.4byte sub_0807B444
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B67C
+	.4byte levelUp
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807BAE4
@@ -5103,10 +5103,10 @@ vt_09F48278::
 	.4byte sub_0807B5D4
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807B450
@@ -5181,7 +5181,7 @@ vt_09F48278::
 	.4byte sub_0807BC80
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -5268,7 +5268,7 @@ vt_09F48278::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -5283,13 +5283,13 @@ vt_09F48278::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -5337,7 +5337,7 @@ vt_09F48278::
 	.4byte sub_0807B444
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B67C
+	.4byte levelUp
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807BAE4
@@ -5587,10 +5587,10 @@ vt_09F48778::
 	.4byte sub_0807B5D4
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807B450
@@ -5665,7 +5665,7 @@ vt_09F48778::
 	.4byte sub_0807BC80
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -5752,7 +5752,7 @@ vt_09F48778::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -5767,13 +5767,13 @@ vt_09F48778::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -5821,7 +5821,7 @@ vt_09F48778::
 	.4byte sub_0807B444
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B67C
+	.4byte levelUp
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807BAE4
@@ -6068,10 +6068,10 @@ vt_09F48C70::
 	.4byte sub_0807B5D4
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807B450
@@ -6146,7 +6146,7 @@ vt_09F48C70::
 	.4byte sub_0807BC80
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -6233,7 +6233,7 @@ vt_09F48C70::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -6248,13 +6248,13 @@ vt_09F48C70::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -6302,7 +6302,7 @@ vt_09F48C70::
 	.4byte sub_0807B444
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B67C
+	.4byte levelUp
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807BAE4
@@ -6466,7 +6466,7 @@ vt_09F490E8::
 	.4byte base_64__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806105C
+	.4byte tellPresent
 
 vt_09F49158::
 	.2byte 0
@@ -6546,7 +6546,7 @@ vt_09F49158::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -6594,7 +6594,7 @@ vt_09F49158::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -6800,7 +6800,7 @@ vt_09F493F8::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -6848,7 +6848,7 @@ vt_09F493F8::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -7057,7 +7057,7 @@ vt_09F496A0::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -7105,7 +7105,7 @@ vt_09F496A0::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -7314,7 +7314,7 @@ vt_09F49948::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -7362,7 +7362,7 @@ vt_09F49948::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -7392,7 +7392,7 @@ vt_09F49948::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078410
+	.4byte sub_08078410__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -7568,7 +7568,7 @@ vt_09F49BE8::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -7616,7 +7616,7 @@ vt_09F49BE8::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -7646,7 +7646,7 @@ vt_09F49BE8::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078410
+	.4byte sub_08078410__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -7822,7 +7822,7 @@ vt_09F49E88::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -7870,7 +7870,7 @@ vt_09F49E88::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -8076,7 +8076,7 @@ vt_09F4A128::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -8124,7 +8124,7 @@ vt_09F4A128::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -8330,7 +8330,7 @@ vt_09F4A3C8::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -8378,7 +8378,7 @@ vt_09F4A3C8::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -8584,7 +8584,7 @@ vt_09F4A668::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -8632,7 +8632,7 @@ vt_09F4A668::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -8841,7 +8841,7 @@ vt_09F4A910::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -8889,7 +8889,7 @@ vt_09F4A910::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -9098,7 +9098,7 @@ vt_09F4ABB8::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -9146,7 +9146,7 @@ vt_09F4ABB8::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -9355,7 +9355,7 @@ vt_09F4AE60::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -9403,7 +9403,7 @@ vt_09F4AE60::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -9612,7 +9612,7 @@ vt_09F4B108::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -9660,7 +9660,7 @@ vt_09F4B108::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -9917,7 +9917,7 @@ vt_09F4B3B0::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -9947,7 +9947,7 @@ vt_09F4B3B0::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078410
+	.4byte sub_08078410__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -10156,7 +10156,7 @@ vt_09F4B6A8::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -10204,7 +10204,7 @@ vt_09F4B6A8::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -10234,7 +10234,7 @@ vt_09F4B6A8::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078410
+	.4byte sub_08078410__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -10388,7 +10388,7 @@ vt_09F4B948::
 	.2byte 0
 	.4byte sub_08061DE8
 
-_vt.5Guest.6Object::
+_vt.5Guest.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -10504,16 +10504,16 @@ _vt.5Guest::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074BA4__4Unit
+	.4byte kill__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_d0__5Guest
@@ -10588,7 +10588,7 @@ _vt.5Guest::
 	.4byte unit_188__5GuestP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C5Guest
+	.4byte level__C5Guest
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -10675,7 +10675,7 @@ _vt.5Guest::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -10690,13 +10690,13 @@ _vt.5Guest::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -10843,16 +10843,16 @@ vt_09F4BDC8::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074BA4__4Unit
+	.4byte kill__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_d0__5Guest
@@ -10927,7 +10927,7 @@ vt_09F4BDC8::
 	.4byte unit_188__5GuestP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C5Guest
+	.4byte level__C5Guest
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -11014,7 +11014,7 @@ vt_09F4BDC8::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -11029,13 +11029,13 @@ vt_09F4BDC8::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -11183,16 +11183,16 @@ vt_09F4C148::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074BA4__4Unit
+	.4byte kill__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_d0__5Guest
@@ -11267,7 +11267,7 @@ vt_09F4C148::
 	.4byte unit_188__5GuestP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C5Guest
+	.4byte level__C5Guest
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -11354,7 +11354,7 @@ vt_09F4C148::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -11369,13 +11369,13 @@ vt_09F4C148::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -11532,16 +11532,16 @@ vt_09F4C4E0::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074BA4__4Unit
+	.4byte kill__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_d0__5Guest
@@ -11616,7 +11616,7 @@ vt_09F4C4E0::
 	.4byte unit_188__5GuestP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C5Guest
+	.4byte level__C5Guest
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -11703,7 +11703,7 @@ vt_09F4C4E0::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -11718,13 +11718,13 @@ vt_09F4C4E0::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -11875,16 +11875,16 @@ vt_09F4C868::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074BA4__4Unit
+	.4byte kill__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_d0__5Guest
@@ -11959,7 +11959,7 @@ vt_09F4C868::
 	.4byte unit_188__5GuestP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C5Guest
+	.4byte level__C5Guest
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -12046,7 +12046,7 @@ vt_09F4C868::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -12061,13 +12061,13 @@ vt_09F4C868::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -12221,16 +12221,16 @@ vt_09F4CBF8::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074BA4__4Unit
+	.4byte kill__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_d0__5Guest
@@ -12305,7 +12305,7 @@ vt_09F4CBF8::
 	.4byte unit_188__5GuestP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C5Guest
+	.4byte level__C5Guest
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -12392,7 +12392,7 @@ vt_09F4CBF8::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -12407,13 +12407,13 @@ vt_09F4CBF8::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -12561,16 +12561,16 @@ vt_09F4CF78::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074BA4__4Unit
+	.4byte kill__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_d0__5Guest
@@ -12645,7 +12645,7 @@ vt_09F4CF78::
 	.4byte unit_188__5GuestP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C5Guest
+	.4byte level__C5Guest
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -12732,7 +12732,7 @@ vt_09F4CF78::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -12747,13 +12747,13 @@ vt_09F4CF78::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -12901,16 +12901,16 @@ vt_09F4D2F8::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074BA4__4Unit
+	.4byte kill__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_d0__5Guest
@@ -12985,7 +12985,7 @@ vt_09F4D2F8::
 	.4byte unit_188__5GuestP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C5Guest
+	.4byte level__C5Guest
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -13072,7 +13072,7 @@ vt_09F4D2F8::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -13087,13 +13087,13 @@ vt_09F4D2F8::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -13203,7 +13203,7 @@ vt_09F4D600::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -13251,7 +13251,7 @@ vt_09F4D600::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -13281,7 +13281,7 @@ vt_09F4D600::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078410
+	.4byte sub_08078410__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -13296,13 +13296,13 @@ vt_09F4D600::
 	.4byte skill_1c0__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getID__C10GuestSkill
+	.4byte id__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d0__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__10GuestSkill
+	.4byte skill_1d8__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -13311,34 +13311,34 @@ vt_09F4D600::
 	.4byte skill_1e0__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getEffect__C10GuestSkill
+	.4byte effect__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getElement__C10GuestSkill
+	.4byte element__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C10GuestSkill
+	.4byte target__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAttackMult__C10GuestSkill
+	.4byte attackMult__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getHealLo__C10GuestSkill
+	.4byte healLo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getHealHi__C10GuestSkill
+	.4byte healHi__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAilment__C10GuestSkill
+	.4byte ailment__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAilmentChance__C10GuestSkill
+	.4byte ailmentChance__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte hasAction__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getPriority__C10GuestSkill
+	.4byte priority__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A0B54
@@ -13347,28 +13347,28 @@ vt_09F4D600::
 	.4byte skill_240__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte getTextBank__C10GuestSkill
+	.4byte hasDim__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getTextNo__C10GuestSkill
+	.4byte animNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAnimBank__C10GuestSkill
+	.4byte successAnimNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getNextAnim__C10GuestSkill
+	.4byte nextAnim__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAnimNo__C10GuestSkill
+	.4byte sfxNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A0D48
 	.2byte 0
 	.2byte 0
-	.4byte getSfxNo__C10GuestSkill
+	.4byte critChance__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte canMiss__C10GuestSkill
+	.4byte redirectable__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte skill_288__10GuestSkill
@@ -13457,7 +13457,7 @@ vt_09F4D8A0::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -13505,7 +13505,7 @@ vt_09F4D8A0::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -13535,7 +13535,7 @@ vt_09F4D8A0::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078410
+	.4byte sub_08078410__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -13550,13 +13550,13 @@ vt_09F4D8A0::
 	.4byte skill_1c0__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getID__C10GuestSkill
+	.4byte id__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d0__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__10GuestSkill
+	.4byte skill_1d8__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -13565,34 +13565,34 @@ vt_09F4D8A0::
 	.4byte skill_1e0__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getEffect__C10GuestSkill
+	.4byte effect__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getElement__C10GuestSkill
+	.4byte element__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C10GuestSkill
+	.4byte target__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAttackMult__C10GuestSkill
+	.4byte attackMult__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getHealLo__C10GuestSkill
+	.4byte healLo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getHealHi__C10GuestSkill
+	.4byte healHi__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAilment__C10GuestSkill
+	.4byte ailment__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAilmentChance__C10GuestSkill
+	.4byte ailmentChance__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte hasAction__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getPriority__C10GuestSkill
+	.4byte priority__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte skill_238__10GuestSkillP5Skill
@@ -13601,28 +13601,28 @@ vt_09F4D8A0::
 	.4byte skill_240__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte getTextBank__C10GuestSkill
+	.4byte hasDim__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getTextNo__C10GuestSkill
+	.4byte animNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAnimBank__C10GuestSkill
+	.4byte successAnimNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getNextAnim__C10GuestSkill
+	.4byte nextAnim__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAnimNo__C10GuestSkill
+	.4byte sfxNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A0D48
 	.2byte 0
 	.2byte 0
-	.4byte getSfxNo__C10GuestSkill
+	.4byte critChance__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte canMiss__C10GuestSkill
+	.4byte redirectable__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte skill_288__10GuestSkill
@@ -13711,7 +13711,7 @@ vt_09F4DB40::
 	.4byte sub_080A0BE0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -13759,7 +13759,7 @@ vt_09F4DB40::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -13789,7 +13789,7 @@ vt_09F4DB40::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078410
+	.4byte sub_08078410__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -13804,13 +13804,13 @@ vt_09F4DB40::
 	.4byte skill_1c0__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getID__C10GuestSkill
+	.4byte id__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d0__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__10GuestSkill
+	.4byte skill_1d8__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -13819,34 +13819,34 @@ vt_09F4DB40::
 	.4byte skill_1e0__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getEffect__C10GuestSkill
+	.4byte effect__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getElement__C10GuestSkill
+	.4byte element__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C10GuestSkill
+	.4byte target__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAttackMult__C10GuestSkill
+	.4byte attackMult__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getHealLo__C10GuestSkill
+	.4byte healLo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getHealHi__C10GuestSkill
+	.4byte healHi__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAilment__C10GuestSkill
+	.4byte ailment__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAilmentChance__C10GuestSkill
+	.4byte ailmentChance__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte hasAction__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getPriority__C10GuestSkill
+	.4byte priority__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte skill_238__10GuestSkillP5Skill
@@ -13855,28 +13855,28 @@ vt_09F4DB40::
 	.4byte skill_240__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte getTextBank__C10GuestSkill
+	.4byte hasDim__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getTextNo__C10GuestSkill
+	.4byte animNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAnimBank__C10GuestSkill
+	.4byte successAnimNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getNextAnim__C10GuestSkill
+	.4byte nextAnim__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAnimNo__C10GuestSkill
+	.4byte sfxNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A0D48
 	.2byte 0
 	.2byte 0
-	.4byte getSfxNo__C10GuestSkill
+	.4byte critChance__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte canMiss__C10GuestSkill
+	.4byte redirectable__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte skill_288__10GuestSkill
@@ -13965,7 +13965,7 @@ vt_09F4DDE0::
 	.4byte sub_080A0C2C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -14013,7 +14013,7 @@ vt_09F4DDE0::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -14043,7 +14043,7 @@ vt_09F4DDE0::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078410
+	.4byte sub_08078410__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -14058,13 +14058,13 @@ vt_09F4DDE0::
 	.4byte skill_1c0__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getID__C10GuestSkill
+	.4byte id__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d0__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__10GuestSkill
+	.4byte skill_1d8__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -14073,34 +14073,34 @@ vt_09F4DDE0::
 	.4byte skill_1e0__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getEffect__C10GuestSkill
+	.4byte effect__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getElement__C10GuestSkill
+	.4byte element__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C10GuestSkill
+	.4byte target__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAttackMult__C10GuestSkill
+	.4byte attackMult__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getHealLo__C10GuestSkill
+	.4byte healLo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getHealHi__C10GuestSkill
+	.4byte healHi__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAilment__C10GuestSkill
+	.4byte ailment__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAilmentChance__C10GuestSkill
+	.4byte ailmentChance__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte hasAction__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getPriority__C10GuestSkill
+	.4byte priority__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte skill_238__10GuestSkillP5Skill
@@ -14109,28 +14109,28 @@ vt_09F4DDE0::
 	.4byte skill_240__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte getTextBank__C10GuestSkill
+	.4byte hasDim__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getTextNo__C10GuestSkill
+	.4byte animNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAnimBank__C10GuestSkill
+	.4byte successAnimNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getNextAnim__C10GuestSkill
+	.4byte nextAnim__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAnimNo__C10GuestSkill
+	.4byte sfxNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A0D48
 	.2byte 0
 	.2byte 0
-	.4byte getSfxNo__C10GuestSkill
+	.4byte critChance__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte canMiss__C10GuestSkill
+	.4byte redirectable__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte skill_288__10GuestSkill
@@ -14219,7 +14219,7 @@ vt_09F4E080::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -14267,7 +14267,7 @@ vt_09F4E080::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -14297,7 +14297,7 @@ vt_09F4E080::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078410
+	.4byte sub_08078410__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -14312,13 +14312,13 @@ vt_09F4E080::
 	.4byte skill_1c0__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getID__C10GuestSkill
+	.4byte id__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d0__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__10GuestSkill
+	.4byte skill_1d8__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -14327,34 +14327,34 @@ vt_09F4E080::
 	.4byte skill_1e0__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getEffect__C10GuestSkill
+	.4byte effect__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getElement__C10GuestSkill
+	.4byte element__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C10GuestSkill
+	.4byte target__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAttackMult__C10GuestSkill
+	.4byte attackMult__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getHealLo__C10GuestSkill
+	.4byte healLo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getHealHi__C10GuestSkill
+	.4byte healHi__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAilment__C10GuestSkill
+	.4byte ailment__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAilmentChance__C10GuestSkill
+	.4byte ailmentChance__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte hasAction__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getPriority__C10GuestSkill
+	.4byte priority__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte skill_238__10GuestSkillP5Skill
@@ -14363,28 +14363,28 @@ vt_09F4E080::
 	.4byte skill_240__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte getTextBank__C10GuestSkill
+	.4byte hasDim__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getTextNo__C10GuestSkill
+	.4byte animNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAnimBank__C10GuestSkill
+	.4byte successAnimNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getNextAnim__C10GuestSkill
+	.4byte nextAnim__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAnimNo__C10GuestSkill
+	.4byte sfxNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A0D48
 	.2byte 0
 	.2byte 0
-	.4byte getSfxNo__C10GuestSkill
+	.4byte critChance__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte canMiss__C10GuestSkill
+	.4byte redirectable__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte skill_288__10GuestSkill
@@ -14656,13 +14656,13 @@ vt_09F4E508::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -14737,7 +14737,7 @@ vt_09F4E508::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -14824,7 +14824,7 @@ vt_09F4E508::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -14839,13 +14839,13 @@ vt_09F4E508::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -15110,13 +15110,13 @@ vt_09F4E9B8::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -15191,7 +15191,7 @@ vt_09F4E9B8::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -15278,7 +15278,7 @@ vt_09F4E9B8::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -15293,13 +15293,13 @@ vt_09F4E9B8::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -15590,13 +15590,13 @@ vt_09F4EEA8::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -15671,7 +15671,7 @@ vt_09F4EEA8::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -15758,7 +15758,7 @@ vt_09F4EEA8::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -15773,13 +15773,13 @@ vt_09F4EEA8::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -16044,13 +16044,13 @@ vt_09F4F358::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -16125,7 +16125,7 @@ vt_09F4F358::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -16212,7 +16212,7 @@ vt_09F4F358::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -16227,13 +16227,13 @@ vt_09F4F358::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -16546,13 +16546,13 @@ vt_09F4F888::
 	.4byte sub_080A6B18
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -16627,7 +16627,7 @@ vt_09F4F888::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -16714,7 +16714,7 @@ vt_09F4F888::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -16729,13 +16729,13 @@ vt_09F4F888::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -17009,13 +17009,13 @@ vt_09F4FD50::
 	.4byte sub_080A6CB0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -17090,7 +17090,7 @@ vt_09F4FD50::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -17177,7 +17177,7 @@ vt_09F4FD50::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -17192,13 +17192,13 @@ vt_09F4FD50::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -17472,13 +17472,13 @@ vt_09F50218::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -17553,7 +17553,7 @@ vt_09F50218::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -17640,7 +17640,7 @@ vt_09F50218::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -17655,13 +17655,13 @@ vt_09F50218::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -17950,13 +17950,13 @@ vt_09F50708::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -18031,7 +18031,7 @@ vt_09F50708::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -18118,7 +18118,7 @@ vt_09F50708::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -18133,13 +18133,13 @@ vt_09F50708::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -18404,13 +18404,13 @@ vt_09F50BB8::
 	.4byte sub_080A79B4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -18485,7 +18485,7 @@ vt_09F50BB8::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -18572,7 +18572,7 @@ vt_09F50BB8::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -18587,13 +18587,13 @@ vt_09F50BB8::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -18861,13 +18861,13 @@ vt_09F51070::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -18942,7 +18942,7 @@ vt_09F51070::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -19029,7 +19029,7 @@ vt_09F51070::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -19044,13 +19044,13 @@ vt_09F51070::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -19315,13 +19315,13 @@ vt_09F51520::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -19396,7 +19396,7 @@ vt_09F51520::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -19483,7 +19483,7 @@ vt_09F51520::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -19498,13 +19498,13 @@ vt_09F51520::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -19769,13 +19769,13 @@ vt_09F519D0::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -19850,7 +19850,7 @@ vt_09F519D0::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -19937,7 +19937,7 @@ vt_09F519D0::
 	.4byte sub_080A7D14
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -19952,13 +19952,13 @@ vt_09F519D0::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -20235,13 +20235,13 @@ vt_09F51EA0::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -20316,7 +20316,7 @@ vt_09F51EA0::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -20403,7 +20403,7 @@ vt_09F51EA0::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -20418,13 +20418,13 @@ vt_09F51EA0::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -20692,13 +20692,13 @@ vt_09F52358::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -20773,7 +20773,7 @@ vt_09F52358::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -20860,7 +20860,7 @@ vt_09F52358::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -20875,13 +20875,13 @@ vt_09F52358::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -21164,13 +21164,13 @@ vt_09F52838::
 	.4byte sub_080A8D78
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -21245,7 +21245,7 @@ vt_09F52838::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -21332,7 +21332,7 @@ vt_09F52838::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -21347,13 +21347,13 @@ vt_09F52838::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -21618,13 +21618,13 @@ vt_09F52CE8::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -21699,7 +21699,7 @@ vt_09F52CE8::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -21786,7 +21786,7 @@ vt_09F52CE8::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -21801,13 +21801,13 @@ vt_09F52CE8::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -22093,13 +22093,13 @@ vt_09F531D0::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -22174,7 +22174,7 @@ vt_09F531D0::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -22261,7 +22261,7 @@ vt_09F531D0::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -22276,13 +22276,13 @@ vt_09F531D0::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -22547,13 +22547,13 @@ vt_09F53680::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -22628,7 +22628,7 @@ vt_09F53680::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -22715,7 +22715,7 @@ vt_09F53680::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -22730,13 +22730,13 @@ vt_09F53680::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -23001,13 +23001,13 @@ vt_09F53B30::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -23082,7 +23082,7 @@ vt_09F53B30::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -23169,7 +23169,7 @@ vt_09F53B30::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -23184,13 +23184,13 @@ vt_09F53B30::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -23455,13 +23455,13 @@ vt_09F53FE0::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -23536,7 +23536,7 @@ vt_09F53FE0::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -23623,7 +23623,7 @@ vt_09F53FE0::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -23638,13 +23638,13 @@ vt_09F53FE0::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -23909,13 +23909,13 @@ vt_09F54490::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -23990,7 +23990,7 @@ vt_09F54490::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -24077,7 +24077,7 @@ vt_09F54490::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -24092,13 +24092,13 @@ vt_09F54490::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -24363,13 +24363,13 @@ vt_09F54940::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -24444,7 +24444,7 @@ vt_09F54940::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -24531,7 +24531,7 @@ vt_09F54940::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -24546,13 +24546,13 @@ vt_09F54940::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -24817,13 +24817,13 @@ vt_09F54DF0::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -24898,7 +24898,7 @@ vt_09F54DF0::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -24985,7 +24985,7 @@ vt_09F54DF0::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -25000,13 +25000,13 @@ vt_09F54DF0::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -25271,13 +25271,13 @@ vt_09F552A0::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -25352,7 +25352,7 @@ vt_09F552A0::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -25439,7 +25439,7 @@ vt_09F552A0::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -25454,13 +25454,13 @@ vt_09F552A0::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -25725,13 +25725,13 @@ vt_09F55750::
 	.4byte sub_080A9D98
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -25806,7 +25806,7 @@ vt_09F55750::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -25893,7 +25893,7 @@ vt_09F55750::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -25908,13 +25908,13 @@ vt_09F55750::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -26179,13 +26179,13 @@ vt_09F55C00::
 	.4byte sub_080A9E18
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -26260,7 +26260,7 @@ vt_09F55C00::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -26347,7 +26347,7 @@ vt_09F55C00::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -26362,13 +26362,13 @@ vt_09F55C00::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -26633,13 +26633,13 @@ vt_09F560B0::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -26714,7 +26714,7 @@ vt_09F560B0::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -26801,7 +26801,7 @@ vt_09F560B0::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -26816,13 +26816,13 @@ vt_09F560B0::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -27087,13 +27087,13 @@ vt_09F56560::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -27168,7 +27168,7 @@ vt_09F56560::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -27255,7 +27255,7 @@ vt_09F56560::
 	.4byte sub_080A9EE8
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -27270,13 +27270,13 @@ vt_09F56560::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -27556,13 +27556,13 @@ vt_09F56A38::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -27637,7 +27637,7 @@ vt_09F56A38::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -27724,7 +27724,7 @@ vt_09F56A38::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -27739,13 +27739,13 @@ vt_09F56A38::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -28010,13 +28010,13 @@ vt_09F56EE8::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -28091,7 +28091,7 @@ vt_09F56EE8::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -28178,7 +28178,7 @@ vt_09F56EE8::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -28193,13 +28193,13 @@ vt_09F56EE8::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -28464,13 +28464,13 @@ vt_09F57398::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -28545,7 +28545,7 @@ vt_09F57398::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -28632,7 +28632,7 @@ vt_09F57398::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -28647,13 +28647,13 @@ vt_09F57398::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -28918,13 +28918,13 @@ vt_09F57848::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -28999,7 +28999,7 @@ vt_09F57848::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -29086,7 +29086,7 @@ vt_09F57848::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -29101,13 +29101,13 @@ vt_09F57848::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -29381,13 +29381,13 @@ vt_09F57D10::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -29462,7 +29462,7 @@ vt_09F57D10::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -29549,7 +29549,7 @@ vt_09F57D10::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -29564,13 +29564,13 @@ vt_09F57D10::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -29835,13 +29835,13 @@ vt_09F581C0::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -29916,7 +29916,7 @@ vt_09F581C0::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -30003,7 +30003,7 @@ vt_09F581C0::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -30018,13 +30018,13 @@ vt_09F581C0::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -30289,13 +30289,13 @@ vt_09F58670::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -30370,7 +30370,7 @@ vt_09F58670::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -30457,7 +30457,7 @@ vt_09F58670::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -30472,13 +30472,13 @@ vt_09F58670::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -30743,13 +30743,13 @@ vt_09F58B20::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -30824,7 +30824,7 @@ vt_09F58B20::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -30911,7 +30911,7 @@ vt_09F58B20::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -30926,13 +30926,13 @@ vt_09F58B20::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -31200,13 +31200,13 @@ vt_09F58FD8::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -31281,7 +31281,7 @@ vt_09F58FD8::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -31368,7 +31368,7 @@ vt_09F58FD8::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -31383,13 +31383,13 @@ vt_09F58FD8::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -31654,13 +31654,13 @@ vt_09F59488::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -31735,7 +31735,7 @@ vt_09F59488::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -31822,7 +31822,7 @@ vt_09F59488::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -31837,13 +31837,13 @@ vt_09F59488::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -32120,13 +32120,13 @@ vt_09F59958::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -32201,7 +32201,7 @@ vt_09F59958::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -32288,7 +32288,7 @@ vt_09F59958::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -32303,13 +32303,13 @@ vt_09F59958::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -32583,13 +32583,13 @@ vt_09F59E20::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -32664,7 +32664,7 @@ vt_09F59E20::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -32751,7 +32751,7 @@ vt_09F59E20::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -32766,13 +32766,13 @@ vt_09F59E20::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -33037,13 +33037,13 @@ vt_09F5A2D0::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -33118,7 +33118,7 @@ vt_09F5A2D0::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -33205,7 +33205,7 @@ vt_09F5A2D0::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -33220,13 +33220,13 @@ vt_09F5A2D0::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -33491,13 +33491,13 @@ vt_09F5A780::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -33572,7 +33572,7 @@ vt_09F5A780::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -33659,7 +33659,7 @@ vt_09F5A780::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -33674,13 +33674,13 @@ vt_09F5A780::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -33954,13 +33954,13 @@ vt_09F5AC48::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -34035,7 +34035,7 @@ vt_09F5AC48::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -34122,7 +34122,7 @@ vt_09F5AC48::
 	.4byte sub_080AB7C4
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -34137,13 +34137,13 @@ vt_09F5AC48::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -34411,13 +34411,13 @@ vt_09F5B100::
 	.4byte sub_080ABAFC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -34492,7 +34492,7 @@ vt_09F5B100::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -34579,7 +34579,7 @@ vt_09F5B100::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -34594,13 +34594,13 @@ vt_09F5B100::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -34865,13 +34865,13 @@ vt_09F5B5B0::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -34946,7 +34946,7 @@ vt_09F5B5B0::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -35033,7 +35033,7 @@ vt_09F5B5B0::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -35048,13 +35048,13 @@ vt_09F5B5B0::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -35319,13 +35319,13 @@ vt_09F5BA60::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -35400,7 +35400,7 @@ vt_09F5BA60::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -35487,7 +35487,7 @@ vt_09F5BA60::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -35502,13 +35502,13 @@ vt_09F5BA60::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -35785,13 +35785,13 @@ vt_09F5BF30::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -35866,7 +35866,7 @@ vt_09F5BF30::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -35953,7 +35953,7 @@ vt_09F5BF30::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -35968,13 +35968,13 @@ vt_09F5BF30::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -36239,13 +36239,13 @@ vt_09F5C3E0::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -36320,7 +36320,7 @@ vt_09F5C3E0::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -36407,7 +36407,7 @@ vt_09F5C3E0::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -36422,13 +36422,13 @@ vt_09F5C3E0::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -36693,13 +36693,13 @@ vt_09F5C890::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -36774,7 +36774,7 @@ vt_09F5C890::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -36861,7 +36861,7 @@ vt_09F5C890::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -36876,13 +36876,13 @@ vt_09F5C890::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -37147,13 +37147,13 @@ vt_09F5CD40::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -37228,7 +37228,7 @@ vt_09F5CD40::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -37315,7 +37315,7 @@ vt_09F5CD40::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -37330,13 +37330,13 @@ vt_09F5CD40::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -37610,13 +37610,13 @@ vt_09F5D208::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -37691,7 +37691,7 @@ vt_09F5D208::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -37778,7 +37778,7 @@ vt_09F5D208::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -37793,13 +37793,13 @@ vt_09F5D208::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -38064,13 +38064,13 @@ vt_09F5D6B8::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -38145,7 +38145,7 @@ vt_09F5D6B8::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -38232,7 +38232,7 @@ vt_09F5D6B8::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -38247,13 +38247,13 @@ vt_09F5D6B8::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -38518,13 +38518,13 @@ vt_09F5DB68::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -38599,7 +38599,7 @@ vt_09F5DB68::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -38686,7 +38686,7 @@ vt_09F5DB68::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -38701,13 +38701,13 @@ vt_09F5DB68::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -38972,13 +38972,13 @@ vt_09F5E018::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -39053,7 +39053,7 @@ vt_09F5E018::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -39140,7 +39140,7 @@ vt_09F5E018::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -39155,13 +39155,13 @@ vt_09F5E018::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -39426,13 +39426,13 @@ vt_09F5E4C8::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -39507,7 +39507,7 @@ vt_09F5E4C8::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -39594,7 +39594,7 @@ vt_09F5E4C8::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -39609,13 +39609,13 @@ vt_09F5E4C8::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -39880,13 +39880,13 @@ vt_09F5E978::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -39961,7 +39961,7 @@ vt_09F5E978::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -40048,7 +40048,7 @@ vt_09F5E978::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -40063,13 +40063,13 @@ vt_09F5E978::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -40343,13 +40343,13 @@ vt_09F5EE40::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -40424,7 +40424,7 @@ vt_09F5EE40::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -40511,7 +40511,7 @@ vt_09F5EE40::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -40526,13 +40526,13 @@ vt_09F5EE40::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -40797,13 +40797,13 @@ vt_09F5F2F0::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -40878,7 +40878,7 @@ vt_09F5F2F0::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -40965,7 +40965,7 @@ vt_09F5F2F0::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -40980,13 +40980,13 @@ vt_09F5F2F0::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -41260,13 +41260,13 @@ vt_09F5F7B8::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -41341,7 +41341,7 @@ vt_09F5F7B8::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -41428,7 +41428,7 @@ vt_09F5F7B8::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -41443,13 +41443,13 @@ vt_09F5F7B8::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -41714,13 +41714,13 @@ vt_09F5FC68::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -41795,7 +41795,7 @@ vt_09F5FC68::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -41882,7 +41882,7 @@ vt_09F5FC68::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -41897,13 +41897,13 @@ vt_09F5FC68::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -42168,13 +42168,13 @@ vt_09F60118::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -42249,7 +42249,7 @@ vt_09F60118::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -42336,7 +42336,7 @@ vt_09F60118::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -42351,13 +42351,13 @@ vt_09F60118::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -42622,13 +42622,13 @@ vt_09F605C8::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -42703,7 +42703,7 @@ vt_09F605C8::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -42790,7 +42790,7 @@ vt_09F605C8::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -42805,13 +42805,13 @@ vt_09F605C8::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -43076,13 +43076,13 @@ vt_09F60A78::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -43157,7 +43157,7 @@ vt_09F60A78::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -43244,7 +43244,7 @@ vt_09F60A78::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -43259,13 +43259,13 @@ vt_09F60A78::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -43530,13 +43530,13 @@ vt_09F60F28::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -43611,7 +43611,7 @@ vt_09F60F28::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -43698,7 +43698,7 @@ vt_09F60F28::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -43713,13 +43713,13 @@ vt_09F60F28::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -43996,13 +43996,13 @@ vt_09F613F8::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -44077,7 +44077,7 @@ vt_09F613F8::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -44164,7 +44164,7 @@ vt_09F613F8::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -44179,13 +44179,13 @@ vt_09F613F8::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -44462,13 +44462,13 @@ vt_09F618C8::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -44543,7 +44543,7 @@ vt_09F618C8::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -44630,7 +44630,7 @@ vt_09F618C8::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -44645,13 +44645,13 @@ vt_09F618C8::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -44925,13 +44925,13 @@ vt_09F61D90::
 	.4byte sub_080AE01C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -45006,7 +45006,7 @@ vt_09F61D90::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -45093,7 +45093,7 @@ vt_09F61D90::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -45108,13 +45108,13 @@ vt_09F61D90::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -45379,13 +45379,13 @@ vt_09F62240::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -45460,7 +45460,7 @@ vt_09F62240::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -45547,7 +45547,7 @@ vt_09F62240::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -45562,13 +45562,13 @@ vt_09F62240::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -45833,13 +45833,13 @@ vt_09F626F0::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -45914,7 +45914,7 @@ vt_09F626F0::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -46001,7 +46001,7 @@ vt_09F626F0::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -46016,13 +46016,13 @@ vt_09F626F0::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -46287,13 +46287,13 @@ vt_09F62BA0::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -46368,7 +46368,7 @@ vt_09F62BA0::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -46455,7 +46455,7 @@ vt_09F62BA0::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -46470,13 +46470,13 @@ vt_09F62BA0::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -46741,13 +46741,13 @@ vt_09F63050::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -46822,7 +46822,7 @@ vt_09F63050::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -46909,7 +46909,7 @@ vt_09F63050::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -46924,13 +46924,13 @@ vt_09F63050::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -47195,13 +47195,13 @@ vt_09F63500::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -47276,7 +47276,7 @@ vt_09F63500::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -47363,7 +47363,7 @@ vt_09F63500::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -47378,13 +47378,13 @@ vt_09F63500::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -47649,13 +47649,13 @@ vt_09F639B0::
 	.4byte sub_080AEC8C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -47730,7 +47730,7 @@ vt_09F639B0::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -47817,7 +47817,7 @@ vt_09F639B0::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -47832,13 +47832,13 @@ vt_09F639B0::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -48106,13 +48106,13 @@ vt_09F63E68::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -48187,7 +48187,7 @@ vt_09F63E68::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -48274,7 +48274,7 @@ vt_09F63E68::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -48289,13 +48289,13 @@ vt_09F63E68::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -48560,13 +48560,13 @@ vt_09F64318::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -48641,7 +48641,7 @@ vt_09F64318::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -48728,7 +48728,7 @@ vt_09F64318::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -48743,13 +48743,13 @@ vt_09F64318::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -48973,7 +48973,7 @@ vt_09F64750::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -49233,7 +49233,7 @@ vt_09F64A00::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -49493,7 +49493,7 @@ vt_09F64CB0::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -49753,7 +49753,7 @@ vt_09F64F60::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -50013,7 +50013,7 @@ vt_09F65210::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -50273,7 +50273,7 @@ vt_09F654C0::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -50533,7 +50533,7 @@ vt_09F65770::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -50793,7 +50793,7 @@ vt_09F65A20::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -51053,7 +51053,7 @@ vt_09F65CD0::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -51313,7 +51313,7 @@ vt_09F65F80::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -51573,7 +51573,7 @@ vt_09F66230::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -51833,7 +51833,7 @@ vt_09F664E0::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -52093,7 +52093,7 @@ vt_09F66790::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -52353,7 +52353,7 @@ vt_09F66A40::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -52613,7 +52613,7 @@ vt_09F66CF0::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -52873,7 +52873,7 @@ vt_09F66FA0::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -53133,7 +53133,7 @@ vt_09F67250::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -53393,7 +53393,7 @@ vt_09F67500::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -53653,7 +53653,7 @@ vt_09F677B0::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -53913,7 +53913,7 @@ vt_09F67A60::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -54173,7 +54173,7 @@ vt_09F67D10::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -54433,7 +54433,7 @@ vt_09F67FC0::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -54693,7 +54693,7 @@ vt_09F68270::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -54953,7 +54953,7 @@ vt_09F68520::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -55213,7 +55213,7 @@ vt_09F687D0::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -55473,7 +55473,7 @@ vt_09F68A80::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -55733,7 +55733,7 @@ vt_09F68D30::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -55993,7 +55993,7 @@ vt_09F68FE0::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -56253,7 +56253,7 @@ vt_09F69290::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -56516,7 +56516,7 @@ vt_09F69548::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -56776,7 +56776,7 @@ vt_09F697F8::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -57036,7 +57036,7 @@ vt_09F69AA8::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -57296,7 +57296,7 @@ vt_09F69D58::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -57556,7 +57556,7 @@ vt_09F6A008::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -57816,7 +57816,7 @@ vt_09F6A2B8::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -58076,7 +58076,7 @@ vt_09F6A568::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -58336,7 +58336,7 @@ vt_09F6A818::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -58596,7 +58596,7 @@ vt_09F6AAC8::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -58856,7 +58856,7 @@ vt_09F6AD78::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -59116,7 +59116,7 @@ vt_09F6B028::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -59376,7 +59376,7 @@ vt_09F6B2D8::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -59636,7 +59636,7 @@ vt_09F6B588::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -59902,7 +59902,7 @@ vt_09F6B848::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -60162,7 +60162,7 @@ vt_09F6BAF8::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -60422,7 +60422,7 @@ vt_09F6BDA8::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -60682,7 +60682,7 @@ vt_09F6C058::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -60942,7 +60942,7 @@ vt_09F6C308::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -61202,7 +61202,7 @@ vt_09F6C5B8::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -61462,7 +61462,7 @@ vt_09F6C868::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -61722,7 +61722,7 @@ vt_09F6CB18::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -61982,7 +61982,7 @@ vt_09F6CDC8::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -62242,7 +62242,7 @@ vt_09F6D078::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -62502,7 +62502,7 @@ vt_09F6D328::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -62762,7 +62762,7 @@ vt_09F6D5D8::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -63022,7 +63022,7 @@ vt_09F6D888::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -63282,7 +63282,7 @@ vt_09F6DB38::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -63542,7 +63542,7 @@ vt_09F6DDE8::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -63802,7 +63802,7 @@ vt_09F6E098::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -64062,7 +64062,7 @@ vt_09F6E348::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -64842,7 +64842,7 @@ vt_09F6EB58::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -66142,7 +66142,7 @@ vt_09F6F8C8::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -66402,7 +66402,7 @@ vt_09F6FB78::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -66662,7 +66662,7 @@ vt_09F6FE28::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -66922,7 +66922,7 @@ vt_09F700D8::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -67182,7 +67182,7 @@ vt_09F70388::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -67442,7 +67442,7 @@ vt_09F70638::
 	.4byte sub_080B4820
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -67702,7 +67702,7 @@ vt_09F708E8::
 	.4byte sub_080B48A8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -67962,7 +67962,7 @@ vt_09F70B98::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -68222,7 +68222,7 @@ vt_09F70E48::
 	.4byte sub_080B4A4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -68482,7 +68482,7 @@ vt_09F710F8::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -68742,7 +68742,7 @@ vt_09F713A8::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -69005,7 +69005,7 @@ vt_09F71660::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -69265,7 +69265,7 @@ vt_09F71910::
 	.4byte sub_080B4D74
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -69525,7 +69525,7 @@ vt_09F71BC0::
 	.4byte sub_080B4F28
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -69785,7 +69785,7 @@ vt_09F71E70::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -70045,7 +70045,7 @@ vt_09F72120::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -78131,7 +78131,7 @@ vt_09F77440::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -78394,7 +78394,7 @@ vt_09F776F8::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -78657,7 +78657,7 @@ vt_09F779B0::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -78920,7 +78920,7 @@ vt_09F77C68::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -79183,7 +79183,7 @@ vt_09F77F20::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -79446,7 +79446,7 @@ vt_09F781D8::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -79709,7 +79709,7 @@ vt_09F78490::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -79972,7 +79972,7 @@ vt_09F78748::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -80238,7 +80238,7 @@ vt_09F78A08::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -80501,7 +80501,7 @@ vt_09F78CC0::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -80764,7 +80764,7 @@ vt_09F78F78::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -81027,7 +81027,7 @@ vt_09F79230::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -81290,7 +81290,7 @@ vt_09F794E8::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -81553,7 +81553,7 @@ __vt_5Goods::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -81738,13 +81738,13 @@ __vt_5Goods::
 	.2byte 0
 	.4byte sub_08083074
 
-vt_09F79A58::
+_vt.5Goods::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649E8
+	.4byte _._5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_08064974
@@ -81816,7 +81816,7 @@ vt_09F79A58::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -81864,7 +81864,7 @@ vt_09F79A58::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -81894,7 +81894,7 @@ vt_09F79A58::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -81906,106 +81906,106 @@ vt_09F79A58::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F08
+	.4byte missChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FA0
+	.4byte isConsumable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 
 vt_09F79D20::
 	.2byte 0
@@ -82096,7 +82096,7 @@ vt_09F79D38::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -82144,7 +82144,7 @@ vt_09F79D38::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -82174,7 +82174,7 @@ vt_09F79D38::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -82186,106 +82186,106 @@ vt_09F79D38::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -82374,7 +82374,7 @@ vt_09F7A018::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -82422,7 +82422,7 @@ vt_09F7A018::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -82452,7 +82452,7 @@ vt_09F7A018::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -82464,106 +82464,106 @@ vt_09F7A018::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -82652,7 +82652,7 @@ vt_09F7A2F8::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -82700,7 +82700,7 @@ vt_09F7A2F8::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -82730,7 +82730,7 @@ vt_09F7A2F8::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -82742,106 +82742,106 @@ vt_09F7A2F8::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -82930,7 +82930,7 @@ vt_09F7A5D8::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -82978,7 +82978,7 @@ vt_09F7A5D8::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -83008,7 +83008,7 @@ vt_09F7A5D8::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -83020,106 +83020,106 @@ vt_09F7A5D8::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -83208,7 +83208,7 @@ vt_09F7A8B8::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -83256,7 +83256,7 @@ vt_09F7A8B8::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -83286,7 +83286,7 @@ vt_09F7A8B8::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -83298,106 +83298,106 @@ vt_09F7A8B8::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -83486,7 +83486,7 @@ vt_09F7AB98::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -83534,7 +83534,7 @@ vt_09F7AB98::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -83564,7 +83564,7 @@ vt_09F7AB98::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -83576,106 +83576,106 @@ vt_09F7AB98::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -83764,7 +83764,7 @@ vt_09F7AE78::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -83812,7 +83812,7 @@ vt_09F7AE78::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -83842,7 +83842,7 @@ vt_09F7AE78::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -83854,106 +83854,106 @@ vt_09F7AE78::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -84042,7 +84042,7 @@ vt_09F7B158::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -84090,7 +84090,7 @@ vt_09F7B158::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -84120,7 +84120,7 @@ vt_09F7B158::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -84132,106 +84132,106 @@ vt_09F7B158::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -84320,7 +84320,7 @@ vt_09F7B438::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -84368,7 +84368,7 @@ vt_09F7B438::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -84398,7 +84398,7 @@ vt_09F7B438::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -84410,106 +84410,106 @@ vt_09F7B438::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -84598,7 +84598,7 @@ vt_09F7B718::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -84646,7 +84646,7 @@ vt_09F7B718::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -84676,7 +84676,7 @@ vt_09F7B718::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -84688,106 +84688,106 @@ vt_09F7B718::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -84876,7 +84876,7 @@ vt_09F7B9F8::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -84924,7 +84924,7 @@ vt_09F7B9F8::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -84954,7 +84954,7 @@ vt_09F7B9F8::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -84966,106 +84966,106 @@ vt_09F7B9F8::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -85154,7 +85154,7 @@ vt_09F7BCD8::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -85202,7 +85202,7 @@ vt_09F7BCD8::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -85232,7 +85232,7 @@ vt_09F7BCD8::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -85244,106 +85244,106 @@ vt_09F7BCD8::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -85432,7 +85432,7 @@ vt_09F7BFB8::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -85480,7 +85480,7 @@ vt_09F7BFB8::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -85510,7 +85510,7 @@ vt_09F7BFB8::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -85522,106 +85522,106 @@ vt_09F7BFB8::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -85710,7 +85710,7 @@ vt_09F7C298::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -85758,7 +85758,7 @@ vt_09F7C298::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -85788,7 +85788,7 @@ vt_09F7C298::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -85800,106 +85800,106 @@ vt_09F7C298::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -85988,7 +85988,7 @@ vt_09F7C578::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -86036,7 +86036,7 @@ vt_09F7C578::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -86066,7 +86066,7 @@ vt_09F7C578::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -86078,106 +86078,106 @@ vt_09F7C578::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -86266,7 +86266,7 @@ vt_09F7C858::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -86314,7 +86314,7 @@ vt_09F7C858::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -86344,7 +86344,7 @@ vt_09F7C858::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -86356,106 +86356,106 @@ vt_09F7C858::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -86544,7 +86544,7 @@ vt_09F7CB38::
 	.4byte sub_080BFC28
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -86592,7 +86592,7 @@ vt_09F7CB38::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -86622,7 +86622,7 @@ vt_09F7CB38::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -86634,106 +86634,106 @@ vt_09F7CB38::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -86822,7 +86822,7 @@ vt_09F7CE18::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -86870,7 +86870,7 @@ vt_09F7CE18::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -86900,7 +86900,7 @@ vt_09F7CE18::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -86912,106 +86912,106 @@ vt_09F7CE18::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -87100,7 +87100,7 @@ vt_09F7D0F8::
 	.4byte sub_080BFD48
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -87148,7 +87148,7 @@ vt_09F7D0F8::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -87178,7 +87178,7 @@ vt_09F7D0F8::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -87190,106 +87190,106 @@ vt_09F7D0F8::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -87378,7 +87378,7 @@ vt_09F7D3D8::
 	.4byte sub_080BFEFC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -87426,7 +87426,7 @@ vt_09F7D3D8::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -87456,7 +87456,7 @@ vt_09F7D3D8::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -87468,34 +87468,34 @@ vt_09F7D3D8::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BFEE4
@@ -87504,70 +87504,70 @@ vt_09F7D3D8::
 	.4byte sub_080BFECC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -87656,7 +87656,7 @@ vt_09F7D6B8::
 	.4byte sub_080C0084
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -87704,7 +87704,7 @@ vt_09F7D6B8::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -87734,7 +87734,7 @@ vt_09F7D6B8::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -87746,58 +87746,58 @@ vt_09F7D6B8::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0048
@@ -87806,46 +87806,46 @@ vt_09F7D6B8::
 	.4byte sub_080C0064
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -87937,7 +87937,7 @@ vt_09F7D9A0::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -87985,7 +87985,7 @@ vt_09F7D9A0::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064A3C
+	.4byte skill_150__5GoodsP5SkillUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -88015,7 +88015,7 @@ vt_09F7D9A0::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_080649FC
+	.4byte skill_1a0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -88027,106 +88027,106 @@ vt_09F7D9A0::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B0C
+	.4byte skill_1c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B20
+	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B30
+	.4byte skill_1d0__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B60
+	.4byte skill_1d8__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C50
+	.4byte skill_1e0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C54
+	.4byte effect__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C5C
+	.4byte element__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C64
+	.4byte target__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C70
+	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C78
+	.4byte healLo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C80
+	.4byte healHi__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C88
+	.4byte ailment__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C90
+	.4byte ailmentChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064C98
+	.4byte hasAction__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CAC
+	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064CB4
+	.4byte skill_238__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E20
+	.4byte skill_240__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064E98
+	.4byte hasDim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EAC
+	.4byte animNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EB4
+	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064EBC
+	.4byte nextAnim__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F00
+	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C05AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F14
+	.4byte critChance__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F1C
+	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F30
+	.4byte skill_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F34
+	.4byte skill_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F38
+	.4byte skill_298__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064B28
+	.4byte goods_2a0__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F3C
+	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064F98
+	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0578
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064FB8
+	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0728
@@ -93420,7 +93420,7 @@ vt_09F810F8::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08071FBC
+	.4byte _._10KeyFocuser
 	.2byte 0
 	.2byte 0
 	.4byte getInstance__4Base
@@ -93732,7 +93732,7 @@ vt_09F81400::
 	.2byte 0
 	.4byte sub_080C152C
 
-_vt.4Unit.6Object::
+_vt.4Unit.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -93848,16 +93848,16 @@ _vt.4Unit::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074BA4__4Unit
+	.4byte kill__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_d0__4Unit
@@ -93932,7 +93932,7 @@ _vt.4Unit::
 	.4byte sub_08091AD8
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -94019,7 +94019,7 @@ _vt.4Unit::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -94034,13 +94034,13 @@ _vt.4Unit::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -94404,7 +94404,7 @@ _vt.6Object::
 	.2byte 0
 	.4byte sub_08091AD8
 
-vt_09F81AC8::
+_vt.10UnitTarget::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -94446,84 +94446,84 @@ vt_09F81AC8::
 	.4byte base_64__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075E30
+	.4byte attackdata_68__10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08076240
+	.4byte attackdata_70__10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075C28
+	.4byte getType__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075C30
+	.4byte getUnit__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075C34
+	.4byte getSelection__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075C3C
+	.4byte targettingAlly__10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075CD8
+	.4byte attackdata_98__10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075D74
+	.4byte attackdata_a0__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075D7C
+	.4byte attackdata_a8__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075D9C
+	.4byte attackdata_b0__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075DBC
+	.4byte attackdata_b8__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075DC4
+	.4byte attackdata_c0__C10UnitTarget
 	.2byte 0
 	.2byte 0
 	.4byte attackdata_c8__10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08076104
+	.4byte addTarget__10UnitTargetP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807616C
+	.4byte removeTarget__10UnitTargetP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080761C8
+	.4byte getNumTargets__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_080761CC
+	.4byte attackdata_e8__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08076200
+	.4byte attackdata_f0__10UnitTargeti
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807620C
+	.4byte attackdata_f8__C10UnitTargetP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080765F0
+	.4byte attackdata_100__10UnitTargetP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08076658
+	.4byte attackdata_108__10UnitTargetP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte attackdata_110__10UnitTarget
+	.4byte attackdata_110__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte attackdata_118__10UnitTargetUi
+	.4byte attackdata_118__10UnitTargeti
 	.2byte 0
 	.2byte 0
-	.4byte sub_080766C4
+	.4byte attackdata_120__C10UnitTargetP4Unit
 
-vt_09F81BF0::
+_vt.16UnitTargetChoice::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08076A68
+	.4byte _._16UnitTargetChoice
 	.2byte 0
 	.2byte 0
 	.4byte getInstance__4Base
@@ -94559,76 +94559,76 @@ vt_09F81BF0::
 	.4byte base_64__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075E30
+	.4byte attackdata_68__10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08076240
+	.4byte attackdata_70__10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075C28
+	.4byte getType__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075C30
+	.4byte getUnit__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075C34
+	.4byte getSelection__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075C3C
+	.4byte targettingAlly__10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075CD8
+	.4byte attackdata_98__10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075D74
+	.4byte attackdata_a0__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075D7C
+	.4byte attackdata_a8__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075D9C
+	.4byte attackdata_b0__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075DBC
+	.4byte attackdata_b8__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08075DC4
+	.4byte attackdata_c0__C10UnitTarget
 	.2byte 0
 	.2byte 0
 	.4byte sub_08076B30
 	.2byte 0
 	.2byte 0
-	.4byte sub_08076104
+	.4byte addTarget__10UnitTargetP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807616C
+	.4byte removeTarget__10UnitTargetP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080761C8
+	.4byte getNumTargets__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_080761CC
+	.4byte attackdata_e8__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte sub_08076200
+	.4byte attackdata_f0__10UnitTargeti
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807620C
+	.4byte attackdata_f8__C10UnitTargetP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080765F0
+	.4byte attackdata_100__10UnitTargetP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08076658
+	.4byte attackdata_108__10UnitTargetP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte attackdata_110__10UnitTarget
+	.4byte attackdata_110__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte attackdata_118__10UnitTargetUi
+	.4byte attackdata_118__10UnitTargeti
 	.2byte 0
 	.2byte 0
-	.4byte sub_080766C4
+	.4byte attackdata_120__C10UnitTargetP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08076E80
@@ -94779,7 +94779,7 @@ vt_09F81DD0::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -94827,7 +94827,7 @@ vt_09F81DD0::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -94857,7 +94857,7 @@ vt_09F81DD0::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078410
+	.4byte sub_08078410__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -95077,10 +95077,10 @@ vt_09F820E8::
 	.4byte sub_0807B5D4
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807B450
@@ -95155,7 +95155,7 @@ vt_09F820E8::
 	.4byte sub_0807BC80
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -95242,7 +95242,7 @@ vt_09F820E8::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -95257,13 +95257,13 @@ vt_09F820E8::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -95311,7 +95311,7 @@ vt_09F820E8::
 	.4byte sub_0807B444
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B67C
+	.4byte levelUp
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807BAE4
@@ -95984,7 +95984,7 @@ vt_09F82A28::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -96032,7 +96032,7 @@ vt_09F82A28::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -96062,7 +96062,7 @@ vt_09F82A28::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078410
+	.4byte sub_08078410__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -96249,7 +96249,7 @@ _vt.10GuestSkill::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -96297,7 +96297,7 @@ _vt.10GuestSkill::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28
+	.4byte nullsub_28__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -96327,7 +96327,7 @@ _vt.10GuestSkill::
 	.4byte sub_08078388
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078410
+	.4byte sub_08078410__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -96342,13 +96342,13 @@ _vt.10GuestSkill::
 	.4byte skill_1c0__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getID__C10GuestSkill
+	.4byte id__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d0__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__10GuestSkill
+	.4byte skill_1d8__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -96357,34 +96357,34 @@ _vt.10GuestSkill::
 	.4byte skill_1e0__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getEffect__C10GuestSkill
+	.4byte effect__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getElement__C10GuestSkill
+	.4byte element__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C10GuestSkill
+	.4byte target__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAttackMult__C10GuestSkill
+	.4byte attackMult__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getHealLo__C10GuestSkill
+	.4byte healLo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getHealHi__C10GuestSkill
+	.4byte healHi__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAilment__C10GuestSkill
+	.4byte ailment__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAilmentChance__C10GuestSkill
+	.4byte ailmentChance__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte hasAction__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getPriority__C10GuestSkill
+	.4byte priority__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte skill_238__10GuestSkillP5Skill
@@ -96393,28 +96393,28 @@ _vt.10GuestSkill::
 	.4byte skill_240__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte getTextBank__C10GuestSkill
+	.4byte hasDim__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getTextNo__C10GuestSkill
+	.4byte animNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAnimBank__C10GuestSkill
+	.4byte successAnimNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getNextAnim__C10GuestSkill
+	.4byte nextAnim__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getAnimNo__C10GuestSkill
+	.4byte sfxNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getSfxBank__C10GuestSkill
+	.4byte missChance__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getSfxNo__C10GuestSkill
+	.4byte critChance__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte canMiss__C10GuestSkill
+	.4byte redirectable__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte skill_288__10GuestSkill
@@ -96555,13 +96555,13 @@ vt_09F83010::
 	.4byte sub_08080F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074C50__4Unit
+	.4byte revive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c0__4Unit
+	.4byte isAlive__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_c8__4Unit
+	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080E28
@@ -96636,7 +96636,7 @@ vt_09F83010::
 	.4byte sub_08081504
 	.2byte 0
 	.2byte 0
-	.4byte getLevel__C4Unit
+	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getHP__C4Unit
@@ -96723,7 +96723,7 @@ vt_09F83010::
 	.4byte unit_270__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_278__4UnitUs
+	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_280__4Unit
@@ -96738,13 +96738,13 @@ vt_09F83010::
 	.4byte unit_298__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a0__4UnitUs
+	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2a8__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b0__4UnitUs
+	.4byte setAilment__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_2b8__4UnitUs
@@ -97068,7 +97068,7 @@ vt_09F83548::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -97464,7 +97464,7 @@ vt_09F83958::
 	.4byte sub_08078D4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079018
+	.4byte calcHit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080792E4
@@ -97764,7 +97764,7 @@ vt_09F83D28::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083CBC
+	.4byte _._12TextAccessor
 	.2byte 0
 	.2byte 0
 	.4byte getInstance__4Base
@@ -99668,13 +99668,13 @@ vt_09F85068::
 	.2byte 0
 	.4byte sub_080888D4
 
-vt_09F85078::
+_vt.9BXTHandle::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08088D7C
+	.4byte _._9BXTHandle
 
 vt_09F85088::
 	.2byte 0

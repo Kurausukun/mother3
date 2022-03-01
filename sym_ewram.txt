@@ -41,8 +41,8 @@
 . = 0x00001068; gUnknown_02001068 = .;
 . = 0x00001070; _Q29Singleton9Allocator.instance = .;
 . = 0x0000107C; _Q29Singleton9Allocator.guard = .;
-. = 0x00001080; gUnknown_02001080 = .;
-. = 0x00001084; gUnknown_02001084 = .;
+. = 0x00001080; left = .;
+. = 0x00001084; state = .;
 . = 0x00001A44; gUnknown_02001A44 = .;
 . = 0x00001A48; gUnknown_02001A48 = .;
 . = 0x00001A50; gUnknown_02001A50 = .;
@@ -179,7 +179,7 @@
 . = 0x000040EC; gUnknown_020040EC = .;
 . = 0x000040F0; gUnknown_020040F0 = .;
 . = 0x00004100; gUnknown_02004100 = .;
-. = 0x00004110; gGuestStats = .;
+. = 0x00004110; gCharStats = .;
 . = 0x00004112; gUnknown_02004112 = .;
 . = 0x00004148; gUnknown_02004148 = .;
 . = 0x0000414C; gUnknown_0200414C = .;
@@ -192,7 +192,7 @@
 . = 0x000042C2; gUnknown_020042C2 = .;
 . = 0x0000439A; gUnknown_0200439A = .;
 . = 0x000047D0; gUnknown_020047D0 = .;
-. = 0x000047E0; gUnknown_020047E0 = .;
+. = 0x000047E0; gEncounter = .;
 . = 0x000047EC; gUnknown_020047EC = .;
 . = 0x00004848; gUnknown_02004848 = .;
 . = 0x00004850; gUnknown_02004850 = .;

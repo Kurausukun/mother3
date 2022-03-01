@@ -587,8 +587,8 @@ _08001714: .4byte gUnknown_02004848
 	thumb_func_start DoReset
 DoReset: @ 0x08001718
 	push {lr}
-	bl sub_0808FB50
-	bl sub_0808FA10
+	bl m4aMPlayAllStop
+	bl m4aSoundMain
 	bl sub_08000D88
 	ldr r0, _0800173C @ =0x04000084
 	movs r1, #0
@@ -1229,7 +1229,7 @@ sub_08001B9C: @ 0x08001B9C
 	adds r4, r0, #0
 	lsls r4, r4, #0x10
 	lsrs r4, r4, #0x10
-	ldr r6, _08001BC8 @ =gUnknown_08D1EE78
+	ldr r6, _08001BC8 @ =_binary_build_mother3_assets_misctext_bin_start
 	adds r0, r6, #0
 	movs r1, #1
 	bl sub_0800289C
@@ -1246,7 +1246,7 @@ sub_08001B9C: @ 0x08001B9C
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08001BC8: .4byte gUnknown_08D1EE78
+_08001BC8: .4byte _binary_build_mother3_assets_misctext_bin_start
 
 	thumb_func_start sub_08001BCC
 sub_08001BCC: @ 0x08001BCC
@@ -1254,7 +1254,7 @@ sub_08001BCC: @ 0x08001BCC
 	adds r4, r0, #0
 	lsls r4, r4, #0x10
 	lsrs r4, r4, #0x10
-	ldr r6, _08001BF8 @ =gUnknown_08D1EE78
+	ldr r6, _08001BF8 @ =_binary_build_mother3_assets_misctext_bin_start
 	adds r0, r6, #0
 	movs r1, #4
 	bl sub_0800289C
@@ -1271,7 +1271,7 @@ sub_08001BCC: @ 0x08001BCC
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08001BF8: .4byte gUnknown_08D1EE78
+_08001BF8: .4byte _binary_build_mother3_assets_misctext_bin_start
 
 	thumb_func_start sub_08001BFC
 sub_08001BFC: @ 0x08001BFC
@@ -1279,7 +1279,7 @@ sub_08001BFC: @ 0x08001BFC
 	adds r4, r0, #0
 	lsls r4, r4, #0x10
 	lsrs r4, r4, #0x10
-	ldr r6, _08001C28 @ =gUnknown_08D1EE78
+	ldr r6, _08001C28 @ =_binary_build_mother3_assets_misctext_bin_start
 	adds r0, r6, #0
 	movs r1, #0xa
 	bl sub_0800289C
@@ -1296,7 +1296,7 @@ sub_08001BFC: @ 0x08001BFC
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08001C28: .4byte gUnknown_08D1EE78
+_08001C28: .4byte _binary_build_mother3_assets_misctext_bin_start
 
 	thumb_func_start sub_08001C2C
 sub_08001C2C: @ 0x08001C2C
@@ -1304,7 +1304,7 @@ sub_08001C2C: @ 0x08001C2C
 	adds r4, r0, #0
 	lsls r4, r4, #0x10
 	lsrs r4, r4, #0x10
-	ldr r6, _08001C58 @ =gUnknown_08D1EE78
+	ldr r6, _08001C58 @ =_binary_build_mother3_assets_misctext_bin_start
 	adds r0, r6, #0
 	movs r1, #0xf
 	bl sub_0800289C
@@ -1321,10 +1321,10 @@ sub_08001C2C: @ 0x08001C2C
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08001C58: .4byte gUnknown_08D1EE78
+_08001C58: .4byte _binary_build_mother3_assets_misctext_bin_start
 
-	thumb_func_start sub_08001C5C
-sub_08001C5C: @ 0x08001C5C
+	thumb_func_start get_string
+get_string: @ 0x08001C5C
 	push {r4, r5, r6, r7, lr}
 	lsls r0, r0, #0x10
 	lsrs r2, r0, #0x10
@@ -1413,7 +1413,7 @@ _08001D04: .4byte gUnknown_02004F14
 _08001D08: .4byte 0x0000FFFF
 _08001D0C: .4byte gUnknown_08CDB8B4
 _08001D10:
-	ldr r0, _08001D28 @ =gUnknown_08D1EE78
+	ldr r0, _08001D28 @ =_binary_build_mother3_assets_misctext_bin_start
 	adds r1, r2, #0
 	bl sub_0800289C
 	ldrh r2, [r0]
@@ -1426,14 +1426,14 @@ _08001D22:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08001D28: .4byte gUnknown_08D1EE78
+_08001D28: .4byte _binary_build_mother3_assets_misctext_bin_start
 
 	thumb_func_start sub_08001D2C
 sub_08001D2C: @ 0x08001D2C
 	push {lr}
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
-	ldr r2, _08001D4C @ =gLevelInfo
+	ldr r2, _08001D4C @ =gLevelStatTable
 	lsls r1, r0, #2
 	adds r1, r1, r0
 	lsls r1, r1, #4
@@ -1447,7 +1447,7 @@ sub_08001D2C: @ 0x08001D2C
 	movs r0, #1
 	b _08001D52
 	.align 2, 0
-_08001D4C: .4byte gLevelInfo
+_08001D4C: .4byte gLevelStatTable
 _08001D50:
 	movs r0, #0
 _08001D52:
@@ -1516,13 +1516,13 @@ sub_08001DB0: @ 0x08001DB0
 	adds r1, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	ldr r0, _08001DC4 @ =gUnknown_08D1EE78
+	ldr r0, _08001DC4 @ =_binary_build_mother3_assets_misctext_bin_start
 	bl sub_0800289C
 	ldrh r0, [r0]
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08001DC4: .4byte gUnknown_08D1EE78
+_08001DC4: .4byte _binary_build_mother3_assets_misctext_bin_start
 
 	thumb_func_start sub_08001DC8
 sub_08001DC8: @ 0x08001DC8
@@ -3239,8 +3239,8 @@ sub_080029F8: @ 0x080029F8
 	.align 2, 0
 _08002A2C: .4byte gSave
 
-	thumb_func_start sub_08002A30
-sub_08002A30: @ 0x08002A30
+	thumb_func_start get_giftbox_flag
+get_giftbox_flag: @ 0x08002A30
 	adds r2, r0, #0
 	lsls r2, r2, #0x10
 	ldr r0, _08002A54 @ =gSave
@@ -4006,7 +4006,7 @@ _08002F88: .4byte 0xFFFFFF00
 	thumb_func_start sub_08002F8C
 sub_08002F8C: @ 0x08002F8C
 	lsls r0, r0, #0x10
-	ldr r2, _08002FA0 @ =gUnknown_080C17D8
+	ldr r2, _08002FA0 @ =gSineTable
 	movs r1, #0xff
 	lsls r1, r1, #0x10
 	ands r1, r0
@@ -4016,12 +4016,12 @@ sub_08002F8C: @ 0x08002F8C
 	ldrsh r0, [r1, r2]
 	bx lr
 	.align 2, 0
-_08002FA0: .4byte gUnknown_080C17D8
+_08002FA0: .4byte gSineTable
 
 	thumb_func_start sub_08002FA4
 sub_08002FA4: @ 0x08002FA4
 	lsls r0, r0, #0x10
-	ldr r2, _08002FBC @ =gUnknown_080C17D8
+	ldr r2, _08002FBC @ =gSineTable
 	movs r1, #0xff
 	lsls r1, r1, #0x10
 	ands r1, r0
@@ -4032,7 +4032,7 @@ sub_08002FA4: @ 0x08002FA4
 	ldrsh r0, [r1, r2]
 	bx lr
 	.align 2, 0
-_08002FBC: .4byte gUnknown_080C17D8
+_08002FBC: .4byte gSineTable
 
 	thumb_func_start sub_08002FC0
 sub_08002FC0: @ 0x08002FC0
@@ -5058,7 +5058,7 @@ _08003734:
 	lsrs r3, r0, #0x10
 	cmp r3, #9
 	bls _08003734
-	bl sub_0808F998
+	bl m4aSoundInit
 	ldr r1, _08003778 @ =gUnknown_02015F1C
 	movs r0, #0
 	strh r0, [r1]
@@ -5078,8 +5078,8 @@ sub_0800377C: @ 0x0800377C
 	ldr r5, _080037A0 @ =0x04000208
 	movs r0, #1
 	strh r0, [r5]
-	bl sub_0808FB50
-	bl sub_0808FA10
+	bl m4aMPlayAllStop
+	bl m4aSoundMain
 	ldr r0, _080037A4 @ =0x04000084
 	movs r4, #0
 	strh r4, [r0]
@@ -5095,7 +5095,7 @@ _080037A4: .4byte 0x04000084
 	thumb_func_start sub_080037A8
 sub_080037A8: @ 0x080037A8
 	push {lr}
-	bl sub_08090104
+	bl m4aSoundVSync
 	ldr r1, _080037B8 @ =gUnknown_02015F1C
 	movs r0, #0
 	strh r0, [r1]
@@ -5111,7 +5111,7 @@ sub_080037BC: @ 0x080037BC
 	ldrh r0, [r4]
 	cmp r0, #0
 	bne _080037CE
-	bl sub_0808FA10
+	bl m4aSoundMain
 	movs r0, #1
 	strh r0, [r4]
 _080037CE:
@@ -5124,7 +5124,7 @@ _080037D4: .4byte gUnknown_02015F1C
 	thumb_func_start sub_080037D8
 sub_080037D8: @ 0x080037D8
 	push {lr}
-	bl sub_0809008C
+	bl m4aSoundVSyncOn
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -5132,7 +5132,7 @@ sub_080037D8: @ 0x080037D8
 	thumb_func_start sub_080037E4
 sub_080037E4: @ 0x080037E4
 	push {lr}
-	bl sub_0809000C
+	bl m4aSoundVSyncOff
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -5160,9 +5160,9 @@ sub_080037F0: @ 0x080037F0
 	strh r0, [r1, #2]
 	ldr r4, _08003834 @ =gMPlayTable
 	ldr r0, [r4]
-	bl sub_080902E0
+	bl MPlayStop
 	ldr r0, [r4, #0xc]
-	bl sub_080902E0
+	bl MPlayStop
 	b _0800388A
 	.align 2, 0
 _08003828: .4byte gUnknown_02015ED8
@@ -5195,18 +5195,18 @@ _08003838:
 	lsls r0, r0, #1
 	strh r0, [r5]
 	adds r0, r7, #0
-	bl sub_0808FA94
+	bl m4aSongNumStartOrContinue
 	ldr r0, _0800389C @ =gMPlayTable
 	adds r4, r4, r6
 	lsls r4, r4, #2
 	adds r4, r4, r0
 	ldr r4, [r4]
 	adds r0, r4, #0
-	bl sub_0808FC14
+	bl m4aMPlayImmInit
 	ldr r1, _080038A0 @ =0x0000FFFF
 	ldrh r2, [r5]
 	adds r0, r4, #0
-	bl sub_08090AA4
+	bl m4aMPlayVolumeControl
 _0800388A:
 	pop {r4, r5, r6, r7}
 	pop {r0}
@@ -5240,7 +5240,7 @@ sub_080038A4: @ 0x080038A4
 	strh r0, [r1]
 	strh r0, [r1, #2]
 	movs r0, #0
-	bl sub_0808FA1C
+	bl m4aSongNumStart
 	b _08003916
 	.align 2, 0
 _080038D4: .4byte gUnknown_02015ED8
@@ -5271,7 +5271,7 @@ _080038E0:
 	lsls r0, r0, #1
 	strh r0, [r1]
 	adds r0, r4, #0
-	bl sub_0808FA1C
+	bl m4aSongNumStart
 _08003916:
 	pop {r4}
 	pop {r0}
@@ -5311,18 +5311,18 @@ sub_08003928: @ 0x08003928
 	lsls r0, r0, #1
 	strh r0, [r5]
 	adds r0, r7, #0
-	bl sub_0808FA94
+	bl m4aSongNumStartOrContinue
 	ldr r0, _08003994 @ =gMPlayTable
 	adds r4, r4, r6
 	lsls r4, r4, #2
 	adds r4, r4, r0
 	ldr r4, [r4]
 	adds r0, r4, #0
-	bl sub_0808FC14
+	bl m4aMPlayImmInit
 	ldr r1, _08003998 @ =0x0000FFFF
 	ldrh r2, [r5]
 	adds r0, r4, #0
-	bl sub_08090AA4
+	bl m4aMPlayVolumeControl
 _08003980:
 	pop {r4, r5, r6, r7}
 	pop {r0}
@@ -5354,7 +5354,7 @@ sub_0800399C: @ 0x0800399C
 	cmp r4, #0xf6
 	bne _080039C6
 	ldr r0, _080039F0 @ =0x000003DA
-	bl sub_0808FA1C
+	bl m4aSongNumStart
 _080039C6:
 	ldr r3, _080039F4 @ =gUnknown_02015ED8
 	lsls r1, r5, #0x10
@@ -5371,7 +5371,7 @@ _080039C6:
 	lsls r0, r0, #1
 	strh r0, [r1]
 	adds r0, r6, #0
-	bl sub_0808FA1C
+	bl m4aSongNumStart
 _080039E8:
 	pop {r4, r5, r6}
 	pop {r0}
@@ -5402,16 +5402,16 @@ sub_08003A00: @ 0x08003A00
 	cmp r0, #0
 	bge _08003A4C
 	adds r0, r4, #0
-	bl sub_0808FC14
+	bl m4aMPlayImmInit
 	ldr r1, _08003A58 @ =0x0000FFFF
 	adds r0, r4, #0
 	movs r2, #0
-	bl sub_08090AA4
+	bl m4aMPlayVolumeControl
 	adds r0, r5, #0
-	bl sub_0808FAE8
+	bl m4aSongNumStop
 	adds r0, r4, #0
 	adds r1, r7, #0
-	bl sub_0808FBE8
+	bl m4aMPlayFadeIn
 	ldr r0, _08003A5C @ =gUnknown_02015EF0
 	adds r0, r6, r0
 	movs r1, #0x80
@@ -5443,16 +5443,16 @@ sub_08003A60: @ 0x08003A60
 	adds r0, r4, r0
 	ldrh r5, [r0]
 	adds r0, r6, #0
-	bl sub_0808FC14
+	bl m4aMPlayImmInit
 	ldr r1, _08003AB0 @ =0x0000FFFF
 	adds r0, r6, #0
 	movs r2, #0
-	bl sub_08090AA4
+	bl m4aMPlayVolumeControl
 	adds r0, r5, #0
-	bl sub_0808FAE8
+	bl m4aSongNumStop
 	adds r0, r6, #0
 	adds r1, r7, #0
-	bl sub_0808FBE8
+	bl m4aMPlayFadeIn
 	ldr r0, _08003AB4 @ =gUnknown_02015EF0
 	adds r4, r4, r0
 	movs r0, #0x80
@@ -5483,7 +5483,7 @@ sub_08003AB8: @ 0x08003AB8
 	blt _08003ADA
 	adds r0, r1, #0
 	adds r1, r4, #0
-	bl sub_0808FBC4
+	bl m4aMPlayFadeOutTemporarily
 _08003ADA:
 	pop {r4}
 	pop {r0}
@@ -5509,16 +5509,16 @@ sub_08003AE0: @ 0x08003AE0
 	cmp r0, #0
 	blt _08003B22
 	adds r0, r4, #0
-	bl sub_0808FC14
+	bl m4aMPlayImmInit
 	ldr r1, _08003B2C @ =0x0000FFFF
 	adds r0, r4, #0
 	movs r2, #0
-	bl sub_08090AA4
+	bl m4aMPlayVolumeControl
 	adds r0, r5, #0
-	bl sub_0808FAE8
+	bl m4aSongNumStop
 	adds r0, r4, #0
 	adds r1, r6, #0
-	bl sub_0808FBE8
+	bl m4aMPlayFadeIn
 _08003B22:
 	pop {r4, r5, r6}
 	pop {r0}
@@ -5543,7 +5543,7 @@ sub_08003B30: @ 0x08003B30
 	blt _08003B52
 	adds r0, r1, #0
 	adds r1, r4, #0
-	bl sub_0808FBB4
+	bl m4aMPlayFadeOut
 _08003B52:
 	pop {r4}
 	pop {r0}
@@ -5564,7 +5564,7 @@ sub_08003B58: @ 0x08003B58
 	lsls r0, r0, #2
 	adds r0, r0, r1
 	ldr r0, [r0]
-	bl sub_080902E0
+	bl MPlayStop
 	ldr r1, _08003B9C @ =gUnknown_02015ED8
 	adds r1, r4, r1
 	ldr r0, _08003BA0 @ =gUnknown_02015EC0
@@ -5603,7 +5603,7 @@ sub_08003BA8: @ 0x08003BA8
 	lsls r0, r0, #2
 	adds r0, r0, r1
 	ldr r0, [r0]
-	bl sub_080902E0
+	bl MPlayStop
 	ldr r1, _08003BEC @ =gUnknown_02015ED8
 	adds r1, r4, r1
 	ldr r0, _08003BF0 @ =gUnknown_02015EC0
@@ -5642,7 +5642,7 @@ sub_08003BF8: @ 0x08003BF8
 	lsls r1, r1, #2
 	adds r1, r1, r0
 	ldr r0, [r1]
-	bl sub_080902E0
+	bl MPlayStop
 _08003C16:
 	pop {r0}
 	bx r0
@@ -5664,7 +5664,7 @@ sub_08003C20: @ 0x08003C20
 	lsls r1, r1, #2
 	adds r1, r1, r0
 	ldr r0, [r1]
-	bl sub_0808FB7C
+	bl m4aMPlayContinue
 _08003C3E:
 	pop {r0}
 	bx r0
@@ -5690,7 +5690,7 @@ sub_08003C48: @ 0x08003C48
 	ldr r0, [r0]
 	ldr r1, _08003C80 @ =0x0000FFFF
 	adds r2, r5, #0
-	bl sub_08090AA4
+	bl m4aMPlayVolumeControl
 	ldr r0, _08003C84 @ =gUnknown_02015EF0
 	adds r4, r4, r0
 	strh r5, [r4]
@@ -5721,11 +5721,11 @@ sub_08003C88: @ 0x08003C88
 	adds r0, r0, r1
 	ldr r4, [r0]
 	adds r0, r4, #0
-	bl sub_0808FC14
+	bl m4aMPlayImmInit
 	ldr r1, _08003CC8 @ =0x0000FFFF
 	adds r0, r4, #0
 	adds r2, r6, #0
-	bl sub_08090AA4
+	bl m4aMPlayVolumeControl
 	ldr r0, _08003CCC @ =gUnknown_02015EF0
 	adds r5, r5, r0
 	strh r6, [r5]
@@ -5766,7 +5766,7 @@ _08003CFA:
 	lsls r2, r4, #0x18
 	asrs r2, r2, #0x18
 	adds r0, r3, #0
-	bl sub_08090B80
+	bl m4aMPlayPanpotControl
 _08003D06:
 	pop {r4}
 	pop {r0}
@@ -6065,7 +6065,7 @@ sub_08003EF8: @ 0x08003EF8
 	ldrb r0, [r0]
 	cmp r0, #3
 	bne _08003F48
-	ldr r1, _08003F44 @ =gUnknown_020047E0
+	ldr r1, _08003F44 @ =gEncounter
 	ldrb r0, [r1]
 	cmp r0, #1
 	bne _08003F48
@@ -6092,7 +6092,7 @@ sub_08003EF8: @ 0x08003EF8
 	b _08003F4C
 	.align 2, 0
 _08003F40: .4byte gUnknown_02005080
-_08003F44: .4byte gUnknown_020047E0
+_08003F44: .4byte gEncounter
 _08003F48:
 	bl sub_08000E30
 _08003F4C:
@@ -6202,7 +6202,7 @@ sub_08004044: @ 0x08004044
 	ldrb r0, [r0]
 	cmp r0, #1
 	bne _08004066
-	ldr r0, _08004084 @ =gUnknown_020047E0
+	ldr r0, _08004084 @ =gEncounter
 	ldrb r0, [r0]
 	cmp r0, #0
 	bne _08004066
@@ -6223,7 +6223,7 @@ _0800407A:
 	bx r0
 	.align 2, 0
 _08004080: .4byte gUnknown_020051E4
-_08004084: .4byte gUnknown_020047E0
+_08004084: .4byte gEncounter
 _08004088: .4byte gUnknown_02004100
 
 	thumb_func_start sub_0800408C
@@ -12718,7 +12718,7 @@ _08007682:
 	ldrb r0, [r0]
 	cmp r0, #3
 	bne _08007720
-	ldr r1, _080076DC @ =gUnknown_020047E0
+	ldr r1, _080076DC @ =gEncounter
 	ldrb r0, [r1]
 	cmp r0, #1
 	bne _08007720
@@ -12744,7 +12744,7 @@ _080076CC: .4byte 0x0000CA40
 _080076D0: .4byte 0x0000CA41
 _080076D4: .4byte gUnknown_03005314
 _080076D8: .4byte 0x00009488
-_080076DC: .4byte gUnknown_020047E0
+_080076DC: .4byte gEncounter
 _080076E0:
 	ldr r5, _08007700 @ =gUnknown_03005314
 	ldr r1, _08007704 @ =gUnknown_0200F088
@@ -13954,7 +13954,7 @@ _08008138:
 	adds r6, r0, #0
 _0800814A:
 	adds r0, r4, #0
-	bl get_guest_stats
+	bl get_char_stats
 	adds r1, r0, #0
 	ldrb r0, [r1]
 	cmp r0, #0
@@ -28036,7 +28036,7 @@ _0800EF44:
 	movs r3, #1
 _0800EF64:
 	adds r0, r4, #0
-	bl sub_08025340
+	bl object_interact
 	ldr r0, _0800EF78 @ =gScript
 	ldr r1, _0800EF7C @ =0x00008494
 	adds r0, r0, r1
@@ -28092,7 +28092,7 @@ sub_0800EF9C: @ 0x0800EF9C
 	movs r3, #1
 _0800EFD6:
 	mov r0, ip
-	bl sub_08025340
+	bl object_interact
 	ldrb r0, [r4]
 	lsls r0, r0, #0x1f
 	lsrs r0, r0, #0x1f
@@ -28139,7 +28139,7 @@ _0800F020:
 	lsrs r2, r2, #0x17
 	adds r0, r3, #0
 	movs r3, #0
-	bl sub_08025340
+	bl object_interact
 	ldrb r0, [r4]
 	lsls r0, r0, #0x1f
 	lsrs r0, r0, #0x1f
@@ -28293,7 +28293,7 @@ _0800F14E:
 	adds r0, r4, #0
 	movs r1, #6
 	movs r2, #0
-	bl sub_08025340
+	bl object_interact
 	ldr r1, _0800F16C @ =0x00008494
 	adds r0, r6, r1
 	b _0800F27E
@@ -28387,7 +28387,7 @@ _0800F1FA:
 	lsls r3, r3, #0x1e
 	lsrs r3, r3, #0x1f
 	adds r0, r4, #0
-	bl sub_08025340
+	bl object_interact
 	b _0800F278
 	.align 2, 0
 _0800F21C: .4byte 0x0000829B
@@ -28436,7 +28436,7 @@ _0800F26E:
 	adds r0, r4, #0
 	movs r1, #6
 	movs r2, #0
-	bl sub_08025340
+	bl object_interact
 _0800F278:
 	ldr r0, _0800F288 @ =gScript
 	ldr r1, _0800F290 @ =0x00008494
@@ -28494,7 +28494,7 @@ _0800F2B0:
 	adds r0, r4, #0
 	movs r1, #8
 	movs r3, #0
-	bl sub_08025340
+	bl object_interact
 	movs r0, #1
 	b _0800F30E
 	.align 2, 0
@@ -30960,7 +30960,7 @@ _0801063C:
 	strb r0, [r5, #0xa]
 	str r4, [r5]
 	ldrh r0, [r4, #0xc]
-	bl sub_08002A30
+	bl get_giftbox_flag
 	mov r2, r8
 	ands r2, r0
 	lsls r2, r2, #1
@@ -39563,7 +39563,7 @@ sub_080148D4: @ 0x080148D4
 	strb r0, [r2]
 	bl sub_08037958
 	bl sub_0805B7D4
-	ldr r1, _0801495C @ =gUnknown_020047E0
+	ldr r1, _0801495C @ =gEncounter
 	adds r1, #0x66
 	strb r0, [r1]
 	ldrb r3, [r1]
@@ -39584,7 +39584,7 @@ _0801494C: .4byte gUnknown_080C2A9C
 _08014950: .4byte 0x000121B8
 _08014954: .4byte 0x000121C0
 _08014958: .4byte 0x000121BB
-_0801495C: .4byte gUnknown_020047E0
+_0801495C: .4byte gEncounter
 _08014960:
 	cmp r3, #2
 	beq _08014980
@@ -41693,7 +41693,7 @@ _08015AE4:
 	strb r1, [r0]
 	bl sub_0802691C
 	bl sub_0805B7D4
-	ldr r1, _08015B70 @ =gUnknown_020047E0
+	ldr r1, _08015B70 @ =gEncounter
 	adds r5, r1, #0
 	adds r5, #0x66
 	strb r0, [r5]
@@ -41723,7 +41723,7 @@ _08015B60: .4byte gUnknown_02016028
 _08015B64: .4byte 0x000121B8
 _08015B68: .4byte 0x00011D9C
 _08015B6C: .4byte 0x000121C0
-_08015B70: .4byte gUnknown_020047E0
+_08015B70: .4byte gEncounter
 _08015B74:
 	cmp r1, #2
 	beq _08015B94
@@ -41755,7 +41755,7 @@ _08015B9C:
 	ands r0, r1
 	cmp r0, #0
 	bne _08015BAE
-	ldr r1, _08015BCC @ =gUnknown_020047E0
+	ldr r1, _08015BCC @ =gEncounter
 	movs r0, #3
 	strb r0, [r1]
 _08015BAE:
@@ -41769,7 +41769,7 @@ _08015BB2:
 	.align 2, 0
 _08015BC4: .4byte 0x000121C1
 _08015BC8: .4byte gScript
-_08015BCC: .4byte gUnknown_020047E0
+_08015BCC: .4byte gEncounter
 _08015BD0:
 	ldr r7, _08015CB8 @ =0x00005962
 	adds r0, r4, r7
@@ -50572,7 +50572,7 @@ sub_08019F90: @ 0x08019F90
 	lsls r0, r1, #1
 	adds r0, r0, r1
 	lsls r0, r0, #2
-	ldr r1, _08019FD4 @ =gUnknown_080C2BE8
+	ldr r1, _08019FD4 @ =gTownMapInfoTable
 	adds r0, r0, r1
 	ldr r2, _08019FD8 @ =gUnknown_02016028
 	ldrh r3, [r0, #2]
@@ -50597,7 +50597,7 @@ sub_08019F90: @ 0x08019F90
 	.align 2, 0
 _08019FCC: .4byte gScript
 _08019FD0: .4byte 0x000067AC
-_08019FD4: .4byte gUnknown_080C2BE8
+_08019FD4: .4byte gTownMapInfoTable
 _08019FD8: .4byte gUnknown_02016028
 _08019FDC: .4byte 0x00003678
 _08019FE0: .4byte 0x0000367E
@@ -50614,7 +50614,7 @@ sub_08019FE4: @ 0x08019FE4
 	lsls r0, r1, #1
 	adds r0, r0, r1
 	lsls r0, r0, #2
-	ldr r1, _0801A010 @ =gUnknown_080C2BE8
+	ldr r1, _0801A010 @ =gTownMapInfoTable
 	adds r5, r0, r1
 	ldrb r0, [r5]
 	cmp r0, #0xf0
@@ -50625,7 +50625,7 @@ sub_08019FE4: @ 0x08019FE4
 	.align 2, 0
 _0801A008: .4byte gScript
 _0801A00C: .4byte 0x000067AC
-_0801A010: .4byte gUnknown_080C2BE8
+_0801A010: .4byte gTownMapInfoTable
 _0801A014:
 	cmp r0, #0xef
 	beq _0801A02C
@@ -50669,7 +50669,7 @@ _0801A058:
 	lsls r0, r3, #1
 	adds r0, r0, r3
 	lsls r0, r0, #2
-	ldr r1, _0801A0A4 @ =gUnknown_080C2AF8
+	ldr r1, _0801A0A4 @ =gTownMapSizeTable
 	adds r6, r0, r1
 	ldr r7, _0801A0A8 @ =gUnknown_02016028
 	ldr r2, _0801A0AC @ =0x00003684
@@ -50705,7 +50705,7 @@ _0801A058:
 	strh r2, [r0, #2]
 	b _0801A1A2
 	.align 2, 0
-_0801A0A4: .4byte gUnknown_080C2AF8
+_0801A0A4: .4byte gTownMapSizeTable
 _0801A0A8: .4byte gUnknown_02016028
 _0801A0AC: .4byte 0x00003684
 _0801A0B0: .4byte 0x00003686
@@ -53322,12 +53322,12 @@ _0801B39E:
 sub_0801B3A4: @ 0x0801B3A4
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
-	ldr r1, _0801B3B0 @ =gUnknown_080C5BB8
+	ldr r1, _0801B3B0 @ =gMapMusicTable
 	adds r0, r0, r1
 	ldrb r0, [r0]
 	bx lr
 	.align 2, 0
-_0801B3B0: .4byte gUnknown_080C5BB8
+_0801B3B0: .4byte gMapMusicTable
 
 	thumb_func_start sub_0801B3B4
 sub_0801B3B4: @ 0x0801B3B4
