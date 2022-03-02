@@ -1,11 +1,11 @@
 #include "battle/guestSkill.h"
 
-extern "C" Skill* sub_0808079C(Skill*, u32);
+extern "C" Skill* getName(Skill*, u32);
 extern "C" void sub_0806E274(Skill*);
 
 SINGLETON_IMPL(GuestSkill);
 
-extern "C" Skill* sub_0808079C(Skill* s, u32 id) {
+extern "C" Skill* getName(Skill* s, u32 id) {
     sub_0806E274(s);
     return s;
 }
@@ -23,9 +23,9 @@ u16 GuestSkill::id() const {
     return mInfo->id;
 }
 
-Skill* GuestSkill::skill_1d0(Skill* s) {
+Skill* GuestSkill::name(Skill* s) {
     u16 tmp = s->id();
-    sub_0808079C(this, tmp);
+    getName(this, tmp);
     return this;
 }
 
@@ -80,13 +80,13 @@ u32 GuestSkill::priority() const {
 }
 
 // Seems to pass `this` as thisptr for the called function, but uses the vtable of `s` ??????
-NONMATCH("asm/non_matching/guestSkill/sub_080808A8.inc", Skill* GuestSkill::skill_238(Skill* s)) {
+NONMATCH("asm/non_matching/guestSkill/sub_080808A8.inc", Skill* GuestSkill::showUseMessage(Skill* s)) {
     // s->skill_150(this, s->mInfo->move.text_no);
     return this;
 }
 END_NONMATCH
 
-NONMATCH("asm/non_matching/guestSkill/sub_080808D0.inc", Skill* GuestSkill::skill_240(Skill* s)) {
+NONMATCH("asm/non_matching/guestSkill/sub_080808D0.inc", Skill* GuestSkill::showForceUseMessage(Skill* s)) {
     // s->skill_150(this, s->mInfo->move.text_no);
     return this;
 }
@@ -116,7 +116,7 @@ u32 GuestSkill::sfxNo() const {
     return mInfo->move.sfx_no;
 }
 
-u32 GuestSkill::missChance() const {
+u32 GuestSkill::hitChance() const {
     return 100 - mInfo->move.miss_chance;
 }
 

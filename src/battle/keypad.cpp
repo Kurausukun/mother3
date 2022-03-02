@@ -19,8 +19,8 @@ KeyPad::KeyPad() : keys(0), new_keys(0), long_keys(0) {
     _22 = 0x8;  // START_BUTTON?
 
     CpuFill16(0, hold_timers, sizeof(hold_timers));
-    registerClock(ClockManager::get(), SysClock(), gUnknown_080FF9B4);
-    registerClock(ClockManager::get(), AppClock(), gUnknown_080FF9BC);
+    listen(ClockManager::get(), SysClock(), gUnknown_080FF9B4);
+    listen(ClockManager::get(), AppClock(), gUnknown_080FF9BC);
 }
 
 KeyPad::~KeyPad() {}

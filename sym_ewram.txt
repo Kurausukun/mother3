@@ -310,7 +310,7 @@
 . = 0x00015ED8; gUnknown_02015ED8 = .;
 . = 0x00015EF0; gUnknown_02015EF0 = .;
 . = 0x00015F08; gUnknown_02015F08 = .;
-. = 0x00015F1C; gUnknown_02015F1C = .;
+. = 0x00015F1C; gAudioSynced = .;
 . = 0x00015F20; gUnknown_02015F20 = .;
 . = 0x00015F22; gUnknown_02015F22 = .;
 . = 0x00015F24; gUnknown_02015F24 = .;
@@ -405,8 +405,8 @@
 . = 0x000225EB; gUnknown_020225EB = .;
 . = 0x00027CCC; gUnknown_02027CCC = .;
 . = 0x00027DC8; gUnknown_02027DC8 = .;
-. = 0x000281D8; gUnknown_020281D8 = .;
-. = 0x000281DA; gUnknown_020281DA = .;
+. = 0x000281D8; gSceneObjCount = .;
+. = 0x000281DA; gMenuObjCount = .;
 . = 0x000281E0; gUnknown_020281E0 = .;
 . = 0x000281F8; gUnknown_020281F8 = .;
 . = 0x000291F8; gUnknown_020291F8 = .;
@@ -432,4 +432,3 @@
 . = 0x0002CD38; gUnknown_0202CD38 = .;
 . = 0x00034D38; gUnknown_02034D38 = .;
 . = 0x00036028; end = .;
-. = 0x00570000; gUnknown_02570000 = .;

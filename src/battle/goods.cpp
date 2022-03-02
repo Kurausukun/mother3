@@ -1,10 +1,10 @@
 #include "battle/goods.h"
 
 extern "C" u32 get_string(u32, u32);
-extern "C" u16 sub_08001DB0(u32);
+extern "C" u16 get_misctext_block(u32);
 
-Goods* Goods::sub_08064980(u16 idx) {
-    sub_0806E238(this, get_string(2, idx), sub_08001DB0(2));
+Goods* Goods::getName(u16 idx) {
+    sub_0806E238(this, get_string(2, idx), get_misctext_block(2));
     return this;
 }
 
@@ -38,8 +38,8 @@ u32 Goods::goods_2a0() const {
     return _4c;
 }
 
-Skill* Goods::skill_1d0(Skill* s) {
-    sub_08064980(s->id());
+Skill* Goods::name(Skill* s) {
+    getName(s->id());
     return this;
 }
 
@@ -91,23 +91,23 @@ u32 Goods::priority() const {
 }
 
 // weird vtable thing, same as in battle/skill.cpp
-NONMATCH("asm/non_matching/goods/skill_238.inc", Skill* Goods::skill_238(Skill* s)) {
+NONMATCH("asm/non_matching/goods/skill_238.inc", Skill* Goods::showUseMessage(Skill* s)) {
     Goods* o = reinterpret_cast<Goods*>(s);
 
-    if (o->skill_188() == 1 && o->skill_190(0) == o->skill_168()) {
-        sub_08073444(o->sub_08064D68(o->mInfo->action.anim_no));
+    if (o->numTargets() == 1 && o->getTarget(0) == o->getUser()) {
+        sub_08073444(o->calcMessage(o->mInfo->action.msg_no));
     } else {
-        sub_08073444(o->sub_08064D68(o->mInfo->action.anim_no + 1));
+        sub_08073444(o->calcMessage(o->mInfo->action.msg_no + 1));
     }
     return this;
 }
 END_NONMATCH
 
-u16 Goods::sub_08064D68(u16 idx) {
-    if (goods_2b8() != 4 || skill_188() <= 0)
+u16 Goods::calcMessage(u16 idx) {
+    if (goods_2b8() != 4 || numTargets() <= 0)
         return idx;
 
-    if (skill_190(0)->hasStatus(7) != 1)
+    if (getTarget(0)->hasStatus(Status::Nauseous) != 1)
         return idx;
 
     switch (idx) {
@@ -131,10 +131,10 @@ u16 Goods::sub_08064D68(u16 idx) {
     return idx;
 }
 
-Skill* Goods::skill_240(Skill* s) {
+Skill* Goods::showForceUseMessage(Skill* s) {
     Goods* o = reinterpret_cast<Goods*>(s);
 
-    if (o->skill_188() == 1 && o->skill_190(0) == o->skill_168()) {
+    if (o->numTargets() == 1 && o->getTarget(0) == o->getUser()) {
         sub_08073444(o->mInfo->action.msg_no);
     } else {
         sub_08073444(o->mInfo->action.msg_no + 1);
@@ -166,7 +166,7 @@ u32 Goods::sfxNo() const {
     return mInfo->action.sfx_no;
 }
 
-u32 Goods::missChance() const {
+u32 Goods::hitChance() const {
     return 100 - mInfo->action.miss_chance;
 }
 

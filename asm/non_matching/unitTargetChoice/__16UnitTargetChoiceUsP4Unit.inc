@@ -66,7 +66,7 @@
 	ldr r0, [sp, #0x48]
 	mov r1, r8
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, sl
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -81,7 +81,7 @@
 	ldr r0, [sp, #0x48]
 	mov r1, r8
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r1, sl
 	str r1, [sp, #0x20]
 	add r0, sp, #4
@@ -100,7 +100,7 @@
 	ldr r0, [sp, #0x48]
 	mov r1, r8
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r2, sl
 	str r2, [sp, #0x20]
 	add r0, sp, #4
@@ -115,7 +115,7 @@
 	ldr r0, [sp, #0x48]
 	mov r1, r8
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, sl
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -134,7 +134,7 @@
 	ldr r0, [sp, #0x48]
 	mov r1, r8
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r1, sl
 	str r1, [sp, #0x20]
 	add r0, sp, #4
@@ -149,7 +149,7 @@
 	ldr r0, [sp, #0x48]
 	mov r1, r8
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r2, sl
 	str r2, [sp, #0x20]
 	add r0, sp, #4
@@ -164,7 +164,7 @@
 	ldr r0, [sp, #0x48]
 	mov r1, r8
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, sl
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -179,7 +179,7 @@
 	ldr r0, [sp, #0x48]
 	mov r1, r8
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r1, sl
 	str r1, [sp, #0x20]
 	add r0, sp, #4
@@ -196,7 +196,7 @@
 	ldr r0, [sp, #0x48]
 	mov r1, r8
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r2, sl
 	str r2, [sp, #0x20]
 	add r0, sp, #4
@@ -215,7 +215,7 @@
 	ldr r0, [sp, #0x48]
 	adds r1, r5, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, sl
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -239,7 +239,7 @@
 	adds r3, r4, #0
 	ldr r0, [sp, #0x48]
 	adds r1, r6, #0
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, sl
 	str r0, [sp, #0x40]
 	mov r0, r8
@@ -258,7 +258,7 @@
 	ldr r0, [sp, #0x48]
 	mov r1, r8
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r2, sl
 	str r2, [sp, #0x20]
 	add r0, sp, #4
@@ -281,7 +281,7 @@
 	ldr r0, [sp, #0x48]
 	mov r1, r8
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r1, sl
 	str r1, [sp, #0x20]
 	add r0, sp, #4
@@ -300,7 +300,7 @@
 	ldr r0, [sp, #0x48]
 	mov r1, r8
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, sl
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -319,7 +319,7 @@
 	ldr r0, [sp, #0x48]
 	adds r1, r5, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r1, sl
 	str r1, [sp, #0x20]
 	add r0, sp, #4

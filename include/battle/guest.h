@@ -40,21 +40,21 @@ public:
     virtual void object_28() {}
     virtual u32 object_30() { return 0; }
     virtual void object_38() {
-        _0 = 0;
-        _2 = 0;
+        num_active_listeners = 0;
+        lifetime = 0;
     }
     virtual void object_40() {
-        _0 = 0;
-        _2 = 0;
+        num_active_listeners = 0;
+        lifetime = 0;
     }
     virtual void object_48() {
-        _0 = 0;
-        _2 = 0;
+        num_active_listeners = 0;
+        lifetime = 0;
     }
     virtual u32 object_50() { return 0; }
     virtual void object_58() {
-        _0 = 0;
-        _2 = 0;
+        num_active_listeners = 0;
+        lifetime = 0;
     }
     virtual u32 object_60() { return 0; }
     virtual void object_68() {}
@@ -63,8 +63,8 @@ public:
     virtual void* getInstance();
     virtual u8 unit_d0();
     virtual bool unit_178();
-    virtual u32 unit_180();
-    virtual Unit* unit_188(Unit* u);
+    virtual u32 id();
+    virtual Unit* name(Unit* u);
     virtual s32 level() const;
     virtual bool unit_208();
     virtual bool unit_210();
@@ -72,12 +72,12 @@ public:
 
     virtual Unit* guest_2c0();
     virtual bool guest_2c8(Base*);
-    virtual void guest_2d0();
-    virtual void guest_2d8();
+    virtual void onRoundBegin();
+    virtual void onRoundEnd();
     virtual void guest_2e0();
     virtual bool guest_2e8(Skill* skill);
 
-    u16 _f8;
+    u16 mID;
     u16 _fa;
     CharStats* mStats;
     void* mLevelInfo;

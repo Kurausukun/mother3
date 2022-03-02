@@ -64,7 +64,7 @@ _08074D58:
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	b _08075004
 _08074D72:
 	ldr r1, [r4, #0x1c]

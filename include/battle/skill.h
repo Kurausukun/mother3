@@ -20,7 +20,7 @@ public:
     virtual void skill_b0();
     virtual void skill_b8();
     virtual void skill_c0();
-    virtual void skill_c8();
+    virtual void calcHit();
     virtual void skill_d0();
     virtual void skill_d8();
     virtual void skill_e0();
@@ -40,12 +40,12 @@ public:
     virtual void skill_150(Skill*, u32);
     virtual void skill_158();
     virtual void skill_160();
-    virtual Unit* skill_168();
+    virtual Unit* getUser();
     virtual void skill_170(Unit*);
     virtual void skill_178();
     virtual void skill_180();
-    virtual s32 skill_188();
-    virtual Unit* skill_190(u32);
+    virtual s32 numTargets();
+    virtual Unit* getTarget(u32);
     virtual void skill_198();
     virtual u32 skill_1a0();
     virtual u32 skill_1a8();
@@ -54,7 +54,7 @@ public:
 
     virtual Skill* skill_1c0() = 0;
     virtual u16 id() const = 0;
-    virtual Skill* skill_1d0(Skill*) = 0;
+    virtual Skill* name(Skill*) = 0;
     virtual Skill* skill_1d8(Skill*) = 0;
     virtual u32 skill_1e0() = 0;
     virtual u32 effect() const = 0;
@@ -67,14 +67,14 @@ public:
     virtual u32 ailmentChance() const = 0;
     virtual u32 hasAction() const = 0;
     virtual u32 priority() const = 0;
-    virtual Skill* skill_238(Skill* s) = 0;
-    virtual Skill* skill_240(Skill* s) = 0;
+    virtual Skill* showUseMessage(Skill* s) = 0;
+    virtual Skill* showForceUseMessage(Skill* s) = 0;
     virtual u32 hasDim() const = 0;
     virtual u32 animNo() const = 0;
     virtual u32 successAnimNo() const = 0;
     virtual u16 nextAnim() const = 0;
     virtual u32 sfxNo() const = 0;
-    virtual u32 missChance() const = 0;
+    virtual u32 hitChance() const = 0;
     virtual u32 critChance() const = 0;
     virtual bool redirectable() const = 0;
     virtual u32 skill_288() = 0;

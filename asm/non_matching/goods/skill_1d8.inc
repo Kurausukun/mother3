@@ -33,7 +33,7 @@
 	lsrs r1, r1, #0x10
 	add r4, sp, #0x10
 	adds r0, r4, #0
-	bl sub_08064980__5GoodsUs
+	bl getName__5GoodsUs
 	adds r6, r4, #0
 	ldr r1, [r5, #0x1c]
 	movs r0, #0xb0
@@ -88,16 +88,16 @@ _08064C08:
 	bl sub_080734A0
 	adds r0, r4, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	adds r0, r5, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	mov r0, r8
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	add r0, sp, #4
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	adds r0, r7, #0
 	add sp, #0x34
 	pop {r3}

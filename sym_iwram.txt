@@ -10,9 +10,9 @@
 . = 0x00002B60; gCgbChans = .;
 . = 0x00002E60; gMPlayMemAccArea = .;
 . = 0x00002EF0; gIntrVector = .;
-. = 0x000036F0; gUnknown_030036F0 = .;
+. = 0x000036F0; gSceneObjBuffer = .;
 . = 0x000038F0; gUnknown_030038F0 = .;
-. = 0x00003CF0; gUnknown_03003CF0 = .;
+. = 0x00003CF0; gMenuObjBuffer = .;
 . = 0x000040F0; gUnknown_030040F0 = .;
 . = 0x00004230; gUnknown_03004230 = .;
 . = 0x00004370; gUnknown_03004370 = .;
@@ -45,7 +45,7 @@
 . = 0x00004D15; gUnknown_03004D15 = .;
 . = 0x00004E14; gUnknown_03004E14 = .;
 . = 0x00004E15; gUnknown_03004E15 = .;
-. = 0x00004F14; gUnknown_03004F14 = .;
+. = 0x00004F14; gOAMObjBuffer = .;
 . = 0x00005314; gUnknown_03005314 = .;
 . = 0x00005494; gUnknown_03005494 = .;
 . = 0x000054D4; gUnknown_030054D4 = .;
@@ -58,5 +58,3 @@
 . = 0x00007FF0; gUnknown_03007FF0 = .;
 . = 0x00007FF8; gUnknown_03007FF8 = .;
 . = 0x00007FFC; gUnknown_03007FFC = .;
-. = 0x00830000; gUnknown_03830000 = .;
-. = 0x00E70000; gUnknown_03E70000 = .;

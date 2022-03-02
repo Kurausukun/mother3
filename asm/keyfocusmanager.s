@@ -638,7 +638,7 @@ sub_080703A4: @ 0x080703A4
 	adds r0, r5, #0
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, r8
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -2383,7 +2383,7 @@ sub_08070FE8: @ 0x08070FE8
 	adds r0, r5, #0
 	adds r1, r6, #0
 	add r2, sp, #8
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, r8
 	str r0, [sp, #0x24]
 	add r0, sp, #8
@@ -2753,7 +2753,7 @@ sub_08071268: @ 0x08071268
 	adds r0, r7, #0
 	adds r1, r6, #0
 	adds r2, r5, #0
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, r8
 	str r0, [sp, #0x2c]
 	adds r0, r5, #0
@@ -3410,7 +3410,7 @@ _0807175C:
 	adds r0, r7, #0
 	adds r1, r5, #0
 	mov r2, r8
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x2c]
 	mov r0, r8
 	movs r1, #2
@@ -3874,7 +3874,7 @@ sub_08071AC4: @ 0x08071AC4
 	adds r0, r5, #0
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, r8
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -4024,7 +4024,7 @@ sub_08071BF8: @ 0x08071BF8
 	adds r0, r5, #0
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, r8
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -4174,7 +4174,7 @@ sub_08071D2C: @ 0x08071D2C
 	adds r0, r5, #0
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, r8
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -4323,7 +4323,7 @@ sub_08071E5C: @ 0x08071E5C
 	adds r0, r5, #0
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, r8
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -4581,7 +4581,7 @@ sub_0807207C: @ 0x0807207C
 	adds r0, r6, #0
 	mov r1, r8
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, sl
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -4596,7 +4596,7 @@ sub_0807207C: @ 0x0807207C
 	adds r0, r6, #0
 	mov r1, r8
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, sl
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -4611,7 +4611,7 @@ sub_0807207C: @ 0x0807207C
 	adds r0, r6, #0
 	mov r1, r8
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, sl
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -4626,7 +4626,7 @@ sub_0807207C: @ 0x0807207C
 	adds r0, r6, #0
 	mov r1, r8
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, sl
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -4641,7 +4641,7 @@ sub_0807207C: @ 0x0807207C
 	adds r0, r6, #0
 	mov r1, r8
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, sl
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -4656,7 +4656,7 @@ sub_0807207C: @ 0x0807207C
 	adds r0, r6, #0
 	mov r1, r8
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, sl
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -4671,7 +4671,7 @@ sub_0807207C: @ 0x0807207C
 	adds r0, r6, #0
 	mov r1, r8
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, sl
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -4686,7 +4686,7 @@ sub_0807207C: @ 0x0807207C
 	adds r0, r6, #0
 	mov r1, r8
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, sl
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -4701,7 +4701,7 @@ sub_0807207C: @ 0x0807207C
 	adds r0, r6, #0
 	mov r1, r8
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, sl
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -4716,7 +4716,7 @@ sub_0807207C: @ 0x0807207C
 	adds r0, r6, #0
 	mov r1, r8
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, sl
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -4731,7 +4731,7 @@ sub_0807207C: @ 0x0807207C
 	adds r0, r6, #0
 	mov r1, r8
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, sl
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -4746,7 +4746,7 @@ sub_0807207C: @ 0x0807207C
 	adds r0, r6, #0
 	mov r1, r8
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, sl
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -4761,7 +4761,7 @@ sub_0807207C: @ 0x0807207C
 	adds r0, r6, #0
 	mov r1, r8
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, sl
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -4776,7 +4776,7 @@ sub_0807207C: @ 0x0807207C
 	adds r0, r6, #0
 	mov r1, r8
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, sl
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -4791,7 +4791,7 @@ sub_0807207C: @ 0x0807207C
 	adds r0, r6, #0
 	mov r1, r8
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, sl
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -4806,7 +4806,7 @@ sub_0807207C: @ 0x0807207C
 	adds r0, r6, #0
 	mov r1, r8
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, sl
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -4821,7 +4821,7 @@ sub_0807207C: @ 0x0807207C
 	adds r0, r6, #0
 	mov r1, r8
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, sl
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -4836,7 +4836,7 @@ sub_0807207C: @ 0x0807207C
 	adds r0, r6, #0
 	mov r1, r8
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, sl
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -4851,7 +4851,7 @@ sub_0807207C: @ 0x0807207C
 	adds r0, r6, #0
 	mov r1, r8
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, sl
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -4866,7 +4866,7 @@ sub_0807207C: @ 0x0807207C
 	adds r0, r6, #0
 	mov r1, r8
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, sl
 	str r0, [sp, #0x20]
 	add r0, sp, #4

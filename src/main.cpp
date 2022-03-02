@@ -77,22 +77,22 @@ extern "C" void sub_0805A2DC();
 extern "C" void sub_080037D8();
 extern "C" void sub_0805ACF4();
 extern "C" void IntrMain();
-extern "C" void sub_080037A8();
-extern "C" void sub_080037BC();
+extern "C" void snd_vsync();
+extern "C" void snd_main();
 extern "C" void sub_0800303C(u32);
 extern "C" void init_save();
 extern "C" void sub_08000BE8();
 extern "C" u32 get_flag(u32);
 extern "C" void init_save();
 extern "C" void sub_08000BE8();
-extern "C" u32 sub_08001DB0(u32);
+extern "C" u32 get_misctext_block(u32);
 extern "C" void sub_08001B54(void*, u32, s32);
 extern "C" u32 get_string(u32, u32);
 extern "C" void sub_08002420(void*, u32, s16);
 extern "C" void sub_0800272C();
 extern "C" void sub_0805B528();
 extern "C" void sub_080019DC(void*, u32);
-extern "C" void sub_08001ACC(void*, u32);
+extern "C" void memclear(void*, u32);
 
 void sub_08001158(u16, u16);
 
@@ -406,8 +406,8 @@ void sub_08000838() {
 }
 
 extern "C" void sub_080008AC() {
-    sub_080037A8();
-    sub_080037BC();
+    snd_vsync();
+    snd_main();
 
     REG_IME = 0;
     INTR_CHECK = 1;
@@ -480,7 +480,7 @@ void init_save() {
         gSave._482[i] = 0;
         gSave._582[i] = 100;
     }
-    u16 tmp = sub_08001DB0(5);
+    u16 tmp = get_misctext_block(5);
     sub_08001B54(gSave.hinawa_name, sizeof gSave.hinawa_name, -1);
     sub_08002420(gSave.hinawa_name, get_string(5, 8), tmp);
     sub_08001B54(gSave.claus_name, sizeof gSave.claus_name, -1);
@@ -531,7 +531,7 @@ void init_save() {
 }
 
 void sub_08000BE8() {
-    u32 tmp = sub_08001DB0(5);
+    u32 tmp = get_misctext_block(5);
     for (u16 i = 0; i < 0x10; ++i) {
         sub_08001B54(&gCharStats[i].name, sizeof gCharStats[i].name, -1);
         sub_08002420(&gCharStats[i].name, get_string(6, i), tmp);
@@ -610,9 +610,9 @@ void sub_08000E0C(void) {
 }
 
 void sub_08000E30() {
-    sub_08001ACC((void*)0x6000000, 0x18000);
-    sub_08001ACC((void*)0x5000000, 0x400);
-    sub_08001ACC((void*)0x7000000, 0x400);
+    memclear((void*)0x6000000, 0x18000);
+    memclear((void*)0x5000000, 0x400);
+    memclear((void*)0x7000000, 0x400);
 }
 
 extern "C" ASM_FUNC("asm/non_matching/main/sub_08000E5C.inc", void sub_08000E5C(void* p));

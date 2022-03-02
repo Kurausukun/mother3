@@ -871,7 +871,7 @@ sub_08097DE0: @ 0x08097DE0
 	bl sub_080735E0
 	adds r0, r5, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	movs r0, #0x78
 	bl sub_0807068C
 	mov r3, sb
@@ -903,7 +903,7 @@ sub_08097DE0: @ 0x08097DE0
 	bl sub_080735E0
 	adds r0, r5, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	movs r1, #0x80
 	lsls r1, r1, #1
 	mov r2, sp
@@ -1011,7 +1011,7 @@ _08097F50:
 	bl sub_080735E0
 	adds r0, r5, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	mov r0, r8
 	bl sub_0807068C
 	ldr r3, [r7, #0x1c]
@@ -1036,7 +1036,7 @@ _08097F50:
 	bl sub_080735E0
 	adds r0, r5, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	mov r0, r8
 	bl sub_0807068C
 	ldr r3, [r7, #0x1c]
@@ -1061,7 +1061,7 @@ _08097F50:
 	bl sub_080735E0
 	adds r0, r5, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	add r0, sp, #8
 	movs r1, #2
 	bl _._5Guest
@@ -1137,7 +1137,7 @@ sub_08098034: @ 0x08098034
 	bl sub_080736B4
 	add r0, sp, #8
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	ldr r3, [r5, #0x1c]
 	add r3, sl
 	movs r2, #0
@@ -1156,7 +1156,7 @@ sub_08098034: @ 0x08098034
 	bl sub_080736B4
 	add r0, sp, #8
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	adds r4, #0x81
 	mov r0, sp
 	mov r3, sb
@@ -1215,7 +1215,7 @@ sub_08098034: @ 0x08098034
 	bl sub_080735E0
 	add r0, sp, #8
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	movs r0, #0x3c
 	bl sub_0807068C
 	ldr r1, _08098208 @ =0x00000F94
@@ -1266,7 +1266,7 @@ sub_08098034: @ 0x08098034
 	bl sub_080735E0
 	add r0, sp, #8
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	movs r0, #0x96
 	lsls r0, r0, #1
 	bl sub_0807068C
@@ -1382,7 +1382,7 @@ _0809828E:
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	ldr r1, [r4, #0x1c]
 	movs r2, #0xa6
 	lsls r2, r2, #2
@@ -1471,7 +1471,7 @@ _0809836A:
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	b _080984FE
 	.align 2, 0
 _0809839C: .4byte 0x00000672
@@ -1638,7 +1638,7 @@ _080984EE:
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 _080984FE:
 	ldr r1, [r4, #0x1c]
 	movs r0, #0xa6
@@ -1716,7 +1716,7 @@ sub_08098580: @ 0x08098580
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	ldr r1, [r4, #0x1c]
 	movs r0, #0xa6
 	lsls r0, r0, #2
@@ -1837,7 +1837,7 @@ _0809868C:
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	b _080986D8
 	.align 2, 0
 _080986A4: .4byte 0x0000066E
@@ -1862,7 +1862,7 @@ _080986A8:
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 _080986D8:
 	ldr r1, [r4, #0x1c]
 	movs r0, #0xa6
@@ -2600,7 +2600,7 @@ _08098C52:
 	bl sub_080736B4
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	movs r0, #1
 _08098CBA:
 	add sp, #0x10
@@ -2738,7 +2738,7 @@ _08098D74:
 	bl sub_080736B4
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	movs r0, #0x5a
 	bl sub_0807068C
 	ldr r1, [r5, #0x1c]
@@ -2843,7 +2843,7 @@ sub_08098E48: @ 0x08098E48
 	bl sub_080736B4
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	movs r0, #0x5a
 	bl sub_0807068C
 	ldr r1, [r4, #0x1c]
@@ -2877,7 +2877,7 @@ sub_08098E48: @ 0x08098E48
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	ldr r0, [r4, #0x1c]
 	movs r1, #0xa6
 	lsls r1, r1, #2
@@ -3211,7 +3211,7 @@ _08099166:
 	bl sub_080736B4
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	movs r0, #0x5a
 	bl sub_0807068C
 	ldr r1, [r6, #0x1c]
@@ -3414,16 +3414,16 @@ _0809930C:
 	bl sub_080735E0
 	add r0, sp, #4
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	mov r0, r8
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	mov r0, sb
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	mov r0, sl
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	ldr r2, [r7]
 	movs r0, #0x90
 	adds r1, r2, #0
@@ -3472,7 +3472,7 @@ _080993C4:
 	bl sub_0807367C
 	add r0, sp, #4
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	ldr r3, [r6, #0x1c]
 	movs r0, #0x98
 	lsls r0, r0, #2
@@ -3493,7 +3493,7 @@ _080993C4:
 	bl sub_080735E0
 	add r0, sp, #4
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	ldr r1, [r7]
 	movs r0, #0x44
 	movs r2, #0
@@ -3520,7 +3520,7 @@ _080993C4:
 	bl sub_080735E0
 	add r0, sp, #4
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	movs r0, #0xb4
 	bl sub_0807068C
 	ldr r3, [r6, #0x1c]
@@ -3543,7 +3543,7 @@ _080993C4:
 	bl sub_0807367C
 	add r0, sp, #4
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	movs r0, #0xb4
 	bl sub_0807068C
 	ldr r1, [r7]
@@ -3587,16 +3587,16 @@ _080993C4:
 	bl sub_080735E0
 	add r0, sp, #4
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	mov r0, r8
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	mov r0, sb
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	mov r0, sl
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	ldr r2, [r7]
 	movs r0, #0x90
 	adds r1, r2, #0
@@ -3641,7 +3641,7 @@ _0809955A:
 	bl sub_080735E0
 	add r0, sp, #4
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	ldr r1, [r6, #0x1c]
 	movs r3, #0xa6
 	lsls r3, r3, #2
@@ -3807,7 +3807,7 @@ _08099692:
 	bl sub_080736B4
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	ldr r3, [r7, #0x1c]
 	adds r3, r3, r6
 	movs r0, #0
@@ -3827,7 +3827,7 @@ _08099692:
 	bl sub_080736B4
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	movs r0, #0x5a
 	bl sub_0807068C
 	ldr r1, [r7, #0x1c]
@@ -3879,7 +3879,7 @@ _08099692:
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	ldr r1, [r7, #0x1c]
 	movs r3, #0xa6
 	lsls r3, r3, #2
@@ -4045,7 +4045,7 @@ _08099892:
 	bl sub_080736B4
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	movs r0, #0x5a
 	bl sub_0807068C
 	ldr r1, [r7, #0x1c]
@@ -4079,7 +4079,7 @@ _08099892:
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	ldr r1, [r7, #0x1c]
 	movs r2, #0xa6
 	lsls r2, r2, #2
@@ -4170,7 +4170,7 @@ sub_08099994: @ 0x08099994
 	bl sub_080736B4
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	movs r0, #0x5a
 	bl sub_0807068C
 	ldr r1, [r4, #0x1c]
@@ -4204,7 +4204,7 @@ sub_08099994: @ 0x08099994
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	ldr r0, [r4, #0x1c]
 	movs r1, #0xa6
 	lsls r1, r1, #2
@@ -4434,7 +4434,7 @@ sub_08099BE4: @ 0x08099BE4
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	movs r0, #1
 	add sp, #0x10
 	pop {r4, r5}
@@ -4869,7 +4869,7 @@ sub_08099F74: @ 0x08099F74
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	movs r0, #1
 	b _08099FCE
 _08099FCC:
@@ -4962,7 +4962,7 @@ sub_08099FD8: @ 0x08099FD8
 	bl sub_0807367C
 	add r0, sp, #8
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	movs r0, #0x5a
 	bl sub_0807068C
 	mov r3, r8
@@ -5129,7 +5129,7 @@ _0809A142:
 	bl sub_0807367C
 	add r0, sp, #8
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	ldr r0, [r7]
 	ldr r1, [r0, #0x1c]
 	movs r2, #0xc0
@@ -5351,7 +5351,7 @@ _0809A142:
 	bl sub_080735E0
 	add r0, sp, #8
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	movs r0, #0x5a
 	b _0809A444
 	.align 2, 0
@@ -5496,7 +5496,7 @@ sub_0809A4AC: @ 0x0809A4AC
 	bl sub_0807367C
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	movs r0, #0x5a
 	bl sub_0807068C
 	ldr r1, [r7, #0x1c]
@@ -5594,7 +5594,7 @@ sub_0809A578: @ 0x0809A578
 	bl sub_0807367C
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	movs r0, #0x5a
 	bl sub_0807068C
 	ldr r1, [r7, #0x1c]
@@ -5688,7 +5688,7 @@ sub_0809A640: @ 0x0809A640
 	bl sub_0807367C
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	movs r0, #0x5a
 	bl sub_0807068C
 	ldr r1, [r7, #0x1c]
@@ -5785,7 +5785,7 @@ sub_0809A70C: @ 0x0809A70C
 	bl sub_0807367C
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	movs r0, #0x5a
 	bl sub_0807068C
 	ldr r1, [r7, #0x1c]
@@ -6220,7 +6220,7 @@ sub_0809AA98: @ 0x0809AA98
 	bl sub_080735E0
 	add r0, sp, #8
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	ldr r1, [r6, #0x1c]
 	movs r0, #0xb4
 	lsls r0, r0, #2
@@ -6267,7 +6267,7 @@ sub_0809AA98: @ 0x0809AA98
 	bl sub_080735E0
 	add r0, sp, #8
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	movs r0, #0x5a
 	bl sub_0807068C
 	movs r0, #0x82
@@ -6295,7 +6295,7 @@ sub_0809AA98: @ 0x0809AA98
 	bl sub_080735E0
 	add r0, sp, #8
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	movs r0, #0x5a
 	bl sub_0807068C
 	ldr r3, [r6, #0x1c]
@@ -6317,7 +6317,7 @@ sub_0809AA98: @ 0x0809AA98
 	bl sub_0807367C
 	add r0, sp, #8
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	movs r0, #0xc
 	adds r1, r7, #0
 	bl sub_08073F88
@@ -6341,7 +6341,7 @@ sub_0809AA98: @ 0x0809AA98
 	bl sub_080735E0
 	add r0, sp, #8
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	movs r0, #0x5a
 	bl sub_0807068C
 	ldr r3, [r6, #0x1c]
@@ -6363,7 +6363,7 @@ sub_0809AA98: @ 0x0809AA98
 	bl sub_0807367C
 	add r0, sp, #8
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	movs r0, #0xe
 	adds r1, r7, #0
 	bl sub_08073F88
@@ -6425,7 +6425,7 @@ sub_0809AA98: @ 0x0809AA98
 	bl sub_080735E0
 	add r0, sp, #8
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	movs r0, #0x5a
 	bl sub_0807068C
 	ldr r3, [r6, #0x1c]
@@ -6447,7 +6447,7 @@ sub_0809AA98: @ 0x0809AA98
 	bl sub_0807367C
 	add r0, sp, #8
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	movs r0, #0x10
 	adds r1, r7, #0
 	bl sub_08073F88
@@ -6506,7 +6506,7 @@ sub_0809AA98: @ 0x0809AA98
 	bl sub_080735E0
 	add r0, sp, #8
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	movs r0, #0x5a
 	bl sub_0807068C
 	ldr r3, [r6, #0x1c]
@@ -6528,7 +6528,7 @@ sub_0809AA98: @ 0x0809AA98
 	bl sub_0807367C
 	add r0, sp, #8
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	movs r0, #0x12
 	adds r1, r7, #0
 	bl sub_08073F88
@@ -6784,16 +6784,16 @@ sub_0809AFA8: @ 0x0809AFA8
 	bl sub_080735E0
 	add r0, sp, #4
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	adds r0, r4, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	adds r0, r5, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	mov r0, r8
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	ldr r0, _0809B08C @ =0x0000026D
 	adds r1, r7, #0
 	bl sub_080741AC
@@ -6872,16 +6872,16 @@ _0809B090:
 	bl sub_080735E0
 	add r0, sp, #4
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	mov r0, sl
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	add r0, sp, #0x1c
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	add r0, sp, #0x10
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	b _0809B13E
 	.align 2, 0
 _0809B120: .4byte 0x00000676
@@ -7114,16 +7114,16 @@ _0809B13E:
 	bl sub_080735E0
 	add r0, sp, #4
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	mov r0, sl
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	add r0, sp, #0x1c
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	add r0, sp, #0x10
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	movs r0, #0x5a
 	bl sub_0807068C
 	movs r0, #1
@@ -8275,13 +8275,13 @@ sub_0809BC10: @ 0x0809BC10
 	bl sub_08073460
 	adds r0, r4, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	adds r0, r6, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	add r0, sp, #4
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	mov r0, r8
 	add sp, #0x28
 	pop {r3}
@@ -8678,7 +8678,7 @@ sub_0809BF18: @ 0x0809BF18
 	adds r0, r5, #0
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, r8
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -8697,7 +8697,7 @@ sub_0809BF18: @ 0x0809BF18
 	adds r0, r5, #0
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, r8
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -8762,7 +8762,7 @@ sub_0809BFE8: @ 0x0809BFE8
 	adds r0, r7, #0
 	adds r1, r5, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -8780,7 +8780,7 @@ sub_0809BFE8: @ 0x0809BFE8
 	adds r0, r7, #0
 	adds r1, r5, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -8863,7 +8863,7 @@ sub_0809C0DC: @ 0x0809C0DC
 	adds r0, r7, #0
 	adds r1, r5, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -8881,7 +8881,7 @@ sub_0809C0DC: @ 0x0809C0DC
 	adds r0, r7, #0
 	adds r1, r5, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -8953,7 +8953,7 @@ sub_0809C1B8: @ 0x0809C1B8
 	adds r0, r7, #0
 	adds r1, r5, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -8971,7 +8971,7 @@ sub_0809C1B8: @ 0x0809C1B8
 	adds r0, r7, #0
 	adds r1, r5, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -9043,7 +9043,7 @@ sub_0809C294: @ 0x0809C294
 	adds r0, r7, #0
 	adds r1, r5, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -9061,7 +9061,7 @@ sub_0809C294: @ 0x0809C294
 	adds r0, r7, #0
 	adds r1, r5, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -9139,7 +9139,7 @@ sub_0809C37C: @ 0x0809C37C
 	adds r0, r7, #0
 	adds r1, r5, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -9157,7 +9157,7 @@ sub_0809C37C: @ 0x0809C37C
 	adds r0, r7, #0
 	adds r1, r5, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -9235,7 +9235,7 @@ sub_0809C464: @ 0x0809C464
 	adds r0, r7, #0
 	adds r1, r5, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -9253,7 +9253,7 @@ sub_0809C464: @ 0x0809C464
 	adds r0, r7, #0
 	adds r1, r5, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -9328,7 +9328,7 @@ sub_0809C540: @ 0x0809C540
 	adds r0, r5, #0
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, r8
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -9347,7 +9347,7 @@ sub_0809C540: @ 0x0809C540
 	adds r0, r5, #0
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, r8
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -9555,19 +9555,19 @@ _0809C69C:
 	bl sub_080735E0
 	add r0, sp, #4
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	adds r0, r4, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	adds r0, r5, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	mov r0, sl
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	mov r0, r8
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	ldr r1, [r7, #0x1c]
 	movs r2, #0xb0
 	lsls r2, r2, #1
@@ -11015,7 +11015,7 @@ _0809D2D4:
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	str r4, [sp]
 	str r4, [sp, #4]
 	str r4, [sp, #8]
@@ -12036,7 +12036,7 @@ sub_0809DA84: @ 0x0809DA84
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	add sp, #0x10
 	pop {r4}
 	pop {r0}
@@ -12096,7 +12096,7 @@ _0809DAF0:
 	bl sub_0806E374
 	adds r0, r4, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	ldr r1, _0809DB58 @ =0x0000FF01
 	mov r0, sp
 	bl sub_0806E34C
@@ -12170,7 +12170,7 @@ _0809DBD2:
 	bl sub_0806E374
 	mov r0, r8
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 _0809DBE2:
 	adds r6, #1
 _0809DBE4:
@@ -12196,7 +12196,7 @@ _0809DBE4:
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 _0809DC18:
 	add sp, #0x20
 	pop {r3, r4, r5}
@@ -12300,7 +12300,7 @@ sub_0809DC9C: @ 0x0809DC9C
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	add sp, #0x10
 	pop {r4}
 	pop {r0}
@@ -12433,7 +12433,7 @@ sub_0809DD9C: @ 0x0809DD9C
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	add sp, #0x10
 	pop {r4}
 	pop {r0}
@@ -12502,7 +12502,7 @@ sub_0809DDE0: @ 0x0809DDE0
 	bl sub_080735E0
 	add r0, sp, #4
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	b _0809DEA2
 	.align 2, 0
 _0809DE6C: .4byte 0x00000243
@@ -12528,7 +12528,7 @@ _0809DE70:
 	bl sub_080735E0
 	add r0, sp, #4
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 _0809DEA2:
 	add sp, #0x18
 	pop {r4, r5, r6, r7}
@@ -12885,7 +12885,7 @@ sub_0809E134: @ 0x0809E134
 	bl sub_080735E0
 	add r0, sp, #4
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	movs r5, #0
 	b _0809E19C
 	.align 2, 0
@@ -12971,7 +12971,7 @@ sub_0809E1E0: @ 0x0809E1E0
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	bl sub_080728B8
 	adds r5, r0, #0
 	ldr r4, [r5, #0x1c]
@@ -13139,7 +13139,7 @@ sub_0809E338: @ 0x0809E338
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	b _0809E386
 	.align 2, 0
 _0809E37C: .4byte 0x0000027A
@@ -13384,7 +13384,7 @@ _0809E4DA:
 	bl sub_080735E0
 	add r0, sp, #4
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	b _0809E596
 _0809E564:
 	ldr r2, [r4, #0x1c]
@@ -13408,7 +13408,7 @@ _0809E564:
 	bl sub_080735E0
 	add r0, sp, #4
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 _0809E596:
 	add sp, #0x18
 	pop {r4, r5, r6}
@@ -13453,7 +13453,7 @@ sub_0809E5B4: @ 0x0809E5B4
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	add sp, #0x10
 	pop {r4}
 	pop {r0}
@@ -13517,7 +13517,7 @@ sub_0809E630: @ 0x0809E630
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	add sp, #0x10
 	pop {r4}
 	pop {r0}
@@ -13575,7 +13575,7 @@ sub_0809E694: @ 0x0809E694
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	add sp, #0x10
 	pop {r4, r5}
 	pop {r0}
@@ -13621,7 +13621,7 @@ sub_0809E700: @ 0x0809E700
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	add sp, #0x10
 	pop {r4}
 	pop {r0}
@@ -13685,7 +13685,7 @@ sub_0809E77C: @ 0x0809E77C
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	add sp, #0x10
 	pop {r4}
 	pop {r0}
@@ -13744,7 +13744,7 @@ sub_0809E7E0: @ 0x0809E7E0
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	add sp, #0x10
 	pop {r4, r5}
 	pop {r0}
@@ -13836,7 +13836,7 @@ sub_0809E898: @ 0x0809E898
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	add sp, #0x10
 	pop {r4}
 	pop {r0}
@@ -14668,7 +14668,7 @@ sub_0809EEAC: @ 0x0809EEAC
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 _0809EF4A:
 	movs r0, #0x33
 	adds r1, r7, #0
@@ -14743,7 +14743,7 @@ _0809EF60:
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 _0809EFEC:
 	movs r0, #0x36
 	adds r1, r7, #0
@@ -15550,7 +15550,7 @@ sub_0809F670: @ 0x0809F670
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	movs r0, #0
 	b _0809F6D4
 _0809F6CC:
@@ -15725,7 +15725,7 @@ _0809F814:
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	movs r0, #0
 	b _0809F836
 _0809F830:
@@ -15872,7 +15872,7 @@ _0809F944:
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	movs r0, #0
 	b _0809F966
 _0809F960:
@@ -16139,7 +16139,7 @@ _0809FB5C:
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	movs r0, #0
 	b _0809FB7E
 _0809FB78:
@@ -16423,7 +16423,7 @@ sub_0809FD44: @ 0x0809FD44
 	adds r0, r5, #0
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, r8
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -16442,7 +16442,7 @@ sub_0809FD44: @ 0x0809FD44
 	adds r0, r5, #0
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, r8
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -16506,7 +16506,7 @@ sub_0809FE04: @ 0x0809FE04
 	adds r0, r5, #0
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r1, r8
 	str r1, [sp, #0x20]
 	add r0, sp, #4
@@ -16525,7 +16525,7 @@ sub_0809FE04: @ 0x0809FE04
 	adds r0, r5, #0
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r2, r8
 	str r2, [sp, #0x20]
 	add r0, sp, #4
@@ -16602,7 +16602,7 @@ sub_0809FEE4: @ 0x0809FEE4
 	adds r0, r5, #0
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r1, r8
 	str r1, [sp, #0x20]
 	add r0, sp, #4
@@ -16621,7 +16621,7 @@ sub_0809FEE4: @ 0x0809FEE4
 	adds r0, r5, #0
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, r8
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -16691,7 +16691,7 @@ sub_0809FFB4: @ 0x0809FFB4
 	adds r0, r5, #0
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r1, sb
 	str r1, [sp, #0x20]
 	add r0, sp, #4
@@ -16710,7 +16710,7 @@ sub_0809FFB4: @ 0x0809FFB4
 	adds r0, r5, #0
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, sb
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -16783,7 +16783,7 @@ sub_080A008C: @ 0x080A008C
 	adds r0, r5, #0
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, r8
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -16802,7 +16802,7 @@ sub_080A008C: @ 0x080A008C
 	adds r0, r5, #0
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, r8
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -16864,7 +16864,7 @@ sub_080A014C: @ 0x080A014C
 	adds r0, r5, #0
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, r8
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -16883,7 +16883,7 @@ sub_080A014C: @ 0x080A014C
 	adds r0, r5, #0
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, r8
 	str r0, [sp, #0x20]
 	add r0, sp, #4

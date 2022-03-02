@@ -494,7 +494,7 @@ sub_0806D64C: @ 0x0806D64C
 	adds r0, r7, #0
 	adds r1, r5, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -872,7 +872,7 @@ sub_0806D8EC: @ 0x0806D8EC
 	adds r0, r7, #0
 	adds r1, r5, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -1367,7 +1367,7 @@ sub_0806DC78: @ 0x0806DC78
 	adds r0, r7, #0
 	adds r1, r5, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -2069,7 +2069,7 @@ _0806E21C:
 	bl sub_0806E2B8
 	adds r0, r6, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	adds r0, r7, #0
 	add sp, #0x18
 	pop {r4, r5, r6, r7}
@@ -2188,8 +2188,8 @@ sub_0806E2E8: @ 0x0806E2E8
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_0806E308
-sub_0806E308: @ 0x0806E308
+	thumb_func_start Message_dtor
+Message_dtor: @ 0x0806E308
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -2594,7 +2594,7 @@ _0806E576:
 	adds r0, r7, #0
 	adds r1, r5, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2

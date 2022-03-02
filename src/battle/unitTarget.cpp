@@ -136,7 +136,7 @@ s32 UnitTarget::attackdata_c8() {
 }
 
 bool UnitTarget::attackdata_68() {
-    while (getNumTargets() > 0) {
+    while (numTargets() > 0) {
         removeTarget(attackdata_f0(0));
     }
 
@@ -211,12 +211,12 @@ bool UnitTarget::removeTarget(Unit* u) {
     return mTargets.remove(u);
 }
 
-s32 UnitTarget::getNumTargets() const {
+s32 UnitTarget::numTargets() const {
     return mTargets.size();
 }
 
 s32 UnitTarget::attackdata_e8() const {
-    s32 a = getNumTargets();
+    s32 a = numTargets();
     s32 b = attackdata_a0();
     if (b > a)
         b = a;
@@ -245,11 +245,11 @@ NONMATCH("asm/non_matching/unitTarget/attackdata_70.inc", bool UnitTarget::attac
         break;
     case 1:
         for (int i = 0; i < attackdata_a0(); i++) {
-            attackdata_100(attackdata_f0(sub_0807067C(i, getNumTargets())));
+            attackdata_100(attackdata_f0(sub_0807067C(i, numTargets())));
         }
         break;
     case 2:
-        h = getNumTargets() / 2;
+        h = numTargets() / 2;
         if (mTargets.size() > 0) {
             for (int i = 0; i < h; i++) {
                 s32 ia = randrange(0, mTargets.size() - 1);
@@ -270,7 +270,7 @@ NONMATCH("asm/non_matching/unitTarget/attackdata_70.inc", bool UnitTarget::attac
         break;
     case 4:
         Vector<Unit*> v;
-        for (int i = 0; i < getNumTargets(); i++) {
+        for (int i = 0; i < numTargets(); i++) {
             v.append(attackdata_f0(i));
         }
         for (int i = 0; i < v.size(); i++) {
@@ -321,21 +321,21 @@ extern "C" NONMATCH("asm/non_matching/unitTargetChoice/__16UnitTargetChoiceUsP4U
     thisx->_60 = 1;
     thisx->_64 = 0;
 
-    thisx->registerClock(&thisx->mKeyFocuser, LeftKeyPress(), gUnknown_08107070);
-    thisx->registerClock(&thisx->mKeyFocuser, LeftKeyLongPress(), gUnknown_08107070);
-    thisx->registerClock(&thisx->mKeyFocuser, RightKeyPress(), gUnknown_08107078);
-    thisx->registerClock(&thisx->mKeyFocuser, RightKeyLongPress(), gUnknown_08107078);
-    thisx->registerClock(&thisx->mKeyFocuser, AKeyPress(), gUnknown_08107080);
-    thisx->registerClock(&thisx->mKeyFocuser, AKeyLongPress(), gUnknown_08107080);
-    thisx->registerClock(&thisx->mKeyFocuser, LKeyPress(), gUnknown_08107080);
-    thisx->registerClock(&thisx->mKeyFocuser, LKeyLongPress(), gUnknown_08107080);
-    thisx->registerClock(&thisx->mKeyFocuser, BKeyPress(), gUnknown_08107088);
-    thisx->registerClock(sub_080728B8(), Suspend(), gUnknown_08107090);
-    thisx->registerClock(sub_080728B8(), UnitJoin(), gUnknown_08107098);
-    thisx->registerClock(sub_080728B8(), UnitRevive(), gUnknown_08107098);
-    thisx->registerClock(sub_080728B8(), UnitEscape(), gUnknown_081070A0);
-    thisx->registerClock(sub_080728B8(), UnitDie(), gUnknown_081070A0);
-    thisx->registerClock(sub_080728B8(), Resume(), gUnknown_081070A8);
+    thisx->listen(&thisx->mKeyFocuser, LeftKeyPress(), gUnknown_08107070);
+    thisx->listen(&thisx->mKeyFocuser, LeftKeyLongPress(), gUnknown_08107070);
+    thisx->listen(&thisx->mKeyFocuser, RightKeyPress(), gUnknown_08107078);
+    thisx->listen(&thisx->mKeyFocuser, RightKeyLongPress(), gUnknown_08107078);
+    thisx->listen(&thisx->mKeyFocuser, AKeyPress(), gUnknown_08107080);
+    thisx->listen(&thisx->mKeyFocuser, AKeyLongPress(), gUnknown_08107080);
+    thisx->listen(&thisx->mKeyFocuser, LKeyPress(), gUnknown_08107080);
+    thisx->listen(&thisx->mKeyFocuser, LKeyLongPress(), gUnknown_08107080);
+    thisx->listen(&thisx->mKeyFocuser, BKeyPress(), gUnknown_08107088);
+    thisx->listen(sub_080728B8(), Suspend(), gUnknown_08107090);
+    thisx->listen(sub_080728B8(), UnitJoin(), gUnknown_08107098);
+    thisx->listen(sub_080728B8(), UnitRevive(), gUnknown_08107098);
+    thisx->listen(sub_080728B8(), UnitEscape(), gUnknown_081070A0);
+    thisx->listen(sub_080728B8(), UnitDie(), gUnknown_081070A0);
+    thisx->listen(sub_080728B8(), Resume(), gUnknown_081070A8);
 }
 END_NONMATCH
 
@@ -343,7 +343,7 @@ UnitTargetChoice::~UnitTargetChoice() {
     for (int i = 0; i < _154.size(); i++) {
         delete _154[i];
     }
-    for (int i = 0; i < getNumTargets(); i++) {
+    for (int i = 0; i < numTargets(); i++) {
         sub_08077CF0(attackdata_f0(i), 0);
     }
 }

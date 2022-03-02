@@ -87,8 +87,8 @@ public:
     virtual void unit_170(u32 value);
 
     virtual bool unit_178() = 0;
-    virtual u32 unit_180() = 0;
-    virtual Unit* unit_188(Unit*) = 0;
+    virtual u32 id() = 0;
+    virtual Unit* name(Unit*) = 0;
 
     virtual s32 level() const;
     virtual s32 getHP() const;
@@ -98,8 +98,8 @@ public:
     virtual s32 unit_1b8() const;
     virtual s32 getMaxPP() const;
 
-    virtual s32 unit_1c8() const;
-    virtual s32 unit_1d0() const;
+    virtual s32 getIQ() const;
+    virtual s32 getSpeed() const;
     virtual s32 unit_1d8() const;
     virtual s32 unit_1e0() const;
     virtual s32 unit_1e8() const;
@@ -150,8 +150,8 @@ private:
     /* 0x30 */ u32 mMaxHP;
     /* 0x34 */ s16 mPP;
     /* 0x36 */ s16 mMaxPP;
-    /* 0x38 */ s16 _38;
-    /* 0x3a */ s16 _3a;
+    /* 0x38 */ s16 mIQ;
+    /* 0x3a */ s16 mSpeed;
     /* 0x3c */ s16 _3c;
     /* 0x3e */ s16 _3e;
     /* 0x40 */ s16 _40;
@@ -260,6 +260,63 @@ struct UnitCmd : Base {
 
     void* p;
     u8 _4[4];
+};
+
+struct Status {
+    enum {
+        None,
+        Poison,
+        Numb,
+        Sleep,
+        Strange,
+        Crying,
+        Forgetful,
+        Nauseous,
+        Fleas,
+        OnFire,
+        Frozen,
+        Smelly,
+        DCMC,
+        Stapled,
+        Apologetic,
+        Laughing,
+        Defense,
+        NoExp,
+        OffDownWeak,
+        OffDownStrong,
+        DefDownWeak,
+        DefDownStrong,
+        Shield,
+        Counter,
+        Electrocuted,
+        PsiShield,
+        PsiCounter,
+        OffUpWeak,
+        OffUpStrong,
+        DefUpWeak,
+        DefUpStrong,
+        EscapeFail,
+        Dance,
+        OffDownMid,
+        DefDownMid,
+        TimeBomb,
+        ParamsUp,
+        ParamsDown,
+        Refresh,
+        Fell,
+        MonkeyDanceOff,
+        MonkeyDanceDef,
+        MonkeyDanceSP,
+        MonkeyDanceIQ,
+        MonkeyDanceOff2,
+        MonkeyDanceDef2,
+        MonkeyDanceSP2,
+        MonkeyDanceIQ2,
+        Endure,
+        OffUpMid,
+        DefUpMid,
+        NoBackSprite,
+    };
 };
 
 SINGLETON(Suspend);

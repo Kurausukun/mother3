@@ -17,8 +17,8 @@ Unit::Unit() : _44(0), _54(0) {
     mMaxHP = 1;
     mPP = 0;
     mMaxPP = 0;
-    _38 = 0;
-    _3a = 0;
+    mIQ = 0;
+    mSpeed = 0;
     _3c = 0;
     _3e = 0;
     _40 = 0;
@@ -106,7 +106,8 @@ void Unit::unit_e0(u32 a1) {
     unit_80(a1);
 }
 
-void Unit::unit_80(u32 a1) {}
+void Unit::unit_80(u32 a1) {
+}
 
 void Unit::unit_e8(u32 a1) {
     unit_88(a1);
@@ -155,11 +156,11 @@ void Unit::setMaxPP(s32 pp) {
 }
 
 void Unit::setIQ(s32 a1) {
-    _38 = clampS32(a1, 0, 255);
+    mIQ = clampS32(a1, 0, 255);
 }
 
 void Unit::setSpeed(s32 a1) {
-    _3a = clampS32(a1, 0, 255);
+    mSpeed = clampS32(a1, 0, 255);
 }
 
 void Unit::unit_148(s32 a1) {
@@ -214,12 +215,12 @@ s32 Unit::getMaxPP() const {
     return mMaxPP;
 }
 
-s32 Unit::unit_1c8() const {
-    return _38;
+s32 Unit::getIQ() const {
+    return mIQ;
 }
 
-s32 Unit::unit_1d0() const {
-    return _3a;
+s32 Unit::getSpeed() const {
+    return mSpeed;
 }
 
 s32 Unit::unit_1d8() const {

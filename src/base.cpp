@@ -1,20 +1,20 @@
 #include "base.h"
 
 Base::Base() {
-    _0 = 0;
-    _2 = 0;
+    num_active_listeners = 0;
+    lifetime = 0;
 }
 
 Base::~Base() {
-    free_fit1();
-    free_fit2();
+    releaseOutgoing();
+    releaseIncoming();
 }
 
 void Base::base_5c() {
-    if (_0 < 1) {
+    if (num_active_listeners < 1) {
         delete this;
     } else {
-        _2 |= 1;
+        lifetime |= 1;
     }
 }
 
@@ -32,8 +32,8 @@ void Base::base_2c() {}
 
 void Base::base_34() {}
 
-extern "C" NAKED void registerClock__4BasePvRC4BaseG9ClockData(void* target, const Base& trigger,
-                                                               ClockData callback) {
+extern "C" NAKED void listen__4BasePvRC4BaseG9ClockData(void* target, const Base& trigger,
+                                                        ClockData callback) {
     asm_unified("\n\
 	sub sp, #4\n\
 	push {r4, r5, r6, r7, lr}\n\
@@ -459,7 +459,7 @@ _08068D82:\n\
 }
 
 void Base::base_44() {
-    free_fit1();
+    releaseOutgoing();
 }
 
 NAKED
@@ -774,7 +774,7 @@ _08068FB4:\n\
 }
 
 NAKED
-void Base::free_fit2() {
+void Base::releaseIncoming() {
     asm_unified("\n\
 	push {r4, r5, r6, r7, lr}\n\
 	mov r7, sl\n\
@@ -885,7 +885,7 @@ _0806906E:\n\
 }
 
 NAKED
-void Base::free_fit1() {
+void Base::releaseOutgoing() {
     asm_unified("\n\
 	push {r4, r5, r6, r7, lr}\n\
 	mov r7, sb\n\
@@ -980,15 +980,15 @@ _0806910E:\n\
 }
 
 /*
-void Base::base_64() {
+void Base::clearNullOutgoing() {
     for (int i = 0; i < mFit1.size(); i++) {
-		mFit1[i]._8.removeAll(0);
-	}
+        mFit1[i]._8.removeAll(0);
+    }
 }
 */
 
 NAKED
-void Base::base_64() {
+void Base::clearNullOutgoing() {
     asm_unified("\n\
 	push {r4, r5, r6, r7, lr}\n\
 	movs r1, #0\n\

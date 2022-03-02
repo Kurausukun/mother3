@@ -52,7 +52,7 @@ sub_080809F8: @ 0x080809F8
 	bl get_string
 	adds r4, r0, #0
 	movs r0, #7
-	bl sub_08001DB0
+	bl get_misctext_block
 	adds r2, r0, #0
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
@@ -158,7 +158,7 @@ sub_08080A24: @ 0x08080A24
 	adds r0, r7, #0
 	adds r1, r5, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r1, r8
 	str r1, [sp, #0x20]
 	add r0, sp, #4
@@ -179,7 +179,7 @@ sub_08080A24: @ 0x08080A24
 	adds r0, r7, #0
 	adds r1, r5, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r3, r8
 	str r3, [sp, #0x20]
 	add r0, sp, #4
@@ -486,16 +486,16 @@ sub_08080D48: @ 0x08080D48
 	bl sub_0806E2E8
 	add r0, sp, #4
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	adds r0, r5, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	adds r0, r6, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	mov r0, r8
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	add sp, #0x34
 	pop {r3, r4}
 	mov r8, r3
@@ -537,7 +537,7 @@ _08080DFA:
 	lsls r3, r3, #1
 	adds r0, r4, r3
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	adds r0, r4, #0
 	adds r1, r5, #0
 	bl _._4Unit
@@ -1493,13 +1493,13 @@ sub_08081518: @ 0x08081518
 	bl sub_08073460
 	adds r0, r5, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	adds r0, r6, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	add r0, sp, #4
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	mov r0, r8
 	add sp, #0x28
 	pop {r3}

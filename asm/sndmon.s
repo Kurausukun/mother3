@@ -307,7 +307,7 @@ _080651EC:
 	adds r0, r7, #0
 	adds r1, r5, #0
 	mov r2, r8
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x2c]
 	mov r0, r8
 	movs r1, #2
@@ -905,7 +905,7 @@ sub_080655FC: @ 0x080655FC
 	adds r0, r6, #0
 	adds r1, r5, #0
 	add r2, sp, #8
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r1, r8
 	str r1, [sp, #0x24]
 	add r0, sp, #8
@@ -1192,7 +1192,7 @@ sub_08065864: @ 0x08065864
 	adds r0, r5, #0
 	adds r1, r6, #0
 	add r2, sp, #8
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r1, r8
 	str r1, [sp, #0x24]
 	add r0, sp, #8
@@ -1986,7 +1986,7 @@ _08065E8A:
 	adds r0, r7, #0
 	adds r1, r5, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2

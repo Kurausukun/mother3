@@ -15,7 +15,7 @@ public:
     virtual Skill* skill_1c0();
     virtual u32 skill_1a0();
     virtual u16 id() const;
-    virtual Skill* skill_1d0(Skill*);
+    virtual Skill* name(Skill*);
     virtual Skill* skill_1d8(Skill*);
     virtual u32 skill_1e0();
     virtual u32 effect() const;
@@ -28,14 +28,14 @@ public:
     virtual u32 ailmentChance() const;
     virtual u32 hasAction() const;
     virtual u32 priority() const;
-    virtual Skill* skill_238(Skill* s);
-    virtual Skill* skill_240(Skill* s);
+    virtual Skill* showUseMessage(Skill* s);
+    virtual Skill* showForceUseMessage(Skill* s);
     virtual u32 hasDim() const;
     virtual u32 animNo() const;
     virtual u32 successAnimNo() const;
     virtual u16 nextAnim() const;
     virtual u32 sfxNo() const;
-    virtual u32 missChance() const;
+    virtual u32 hitChance() const;
     virtual u32 critChance() const;
     virtual bool redirectable() const;
     virtual u32 skill_288();
@@ -54,8 +54,8 @@ public:
     u32 sub_08078410();
     void nullsub_28();
     Goods* sub_080729B0();
-    Goods* sub_08064980(u16);
-    u16 sub_08064D68(u16 idx);
+    Goods* getName(u16);
+    u16 calcMessage(u16 idx);
     void sub_08073444(u16 idx);
 
     u32 _20;

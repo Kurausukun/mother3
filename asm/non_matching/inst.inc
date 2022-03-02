@@ -587,7 +587,7 @@ _vt.12PostSysClock:
 	.word	base_34__4Base
 	.short	0
 	.short	0
-	.word	registerClock__4BasePvRC4BaseG9ClockData
+	.word	listen__4BasePvRC4BaseG9ClockData
 	.short	0
 	.short	0
 	.word	base_44__4Base
@@ -602,7 +602,7 @@ _vt.12PostSysClock:
 	.word	base_5c__4Base
 	.short	0
 	.short	0
-	.word	base_64__4Base
+	.word	clearNullOutgoing__4Base
 	.weak	_vt.12PostAppClock
 	.section .gnu.linkonce.d._vt.12PostAppClock,"aw"
 	.align	2, 0
@@ -632,7 +632,7 @@ _vt.12PostAppClock:
 	.word	base_34__4Base
 	.short	0
 	.short	0
-	.word	registerClock__4BasePvRC4BaseG9ClockData
+	.word	listen__4BasePvRC4BaseG9ClockData
 	.short	0
 	.short	0
 	.word	base_44__4Base
@@ -647,7 +647,7 @@ _vt.12PostAppClock:
 	.word	base_5c__4Base
 	.short	0
 	.short	0
-	.word	base_64__4Base
+	.word	clearNullOutgoing__4Base
 	.weak	_vt.8AppClock
 	.section .gnu.linkonce.d._vt.8AppClock,"aw"
 	.align	2, 0
@@ -677,7 +677,7 @@ _vt.8AppClock:
 	.word	base_34__4Base
 	.short	0
 	.short	0
-	.word	registerClock__4BasePvRC4BaseG9ClockData
+	.word	listen__4BasePvRC4BaseG9ClockData
 	.short	0
 	.short	0
 	.word	base_44__4Base
@@ -692,7 +692,7 @@ _vt.8AppClock:
 	.word	base_5c__4Base
 	.short	0
 	.short	0
-	.word	base_64__4Base
+	.word	clearNullOutgoing__4Base
 	.weak	_vt.11PreAppClock
 	.section .gnu.linkonce.d._vt.11PreAppClock,"aw"
 	.align	2, 0
@@ -722,7 +722,7 @@ _vt.11PreAppClock:
 	.word	base_34__4Base
 	.short	0
 	.short	0
-	.word	registerClock__4BasePvRC4BaseG9ClockData
+	.word	listen__4BasePvRC4BaseG9ClockData
 	.short	0
 	.short	0
 	.word	base_44__4Base
@@ -737,7 +737,7 @@ _vt.11PreAppClock:
 	.word	base_5c__4Base
 	.short	0
 	.short	0
-	.word	base_64__4Base
+	.word	clearNullOutgoing__4Base
 	.weak	_vt.8SysClock
 	.section .gnu.linkonce.d._vt.8SysClock,"aw"
 	.align	2, 0
@@ -767,7 +767,7 @@ _vt.8SysClock:
 	.word	base_34__4Base
 	.short	0
 	.short	0
-	.word	registerClock__4BasePvRC4BaseG9ClockData
+	.word	listen__4BasePvRC4BaseG9ClockData
 	.short	0
 	.short	0
 	.word	base_44__4Base
@@ -782,7 +782,7 @@ _vt.8SysClock:
 	.word	base_5c__4Base
 	.short	0
 	.short	0
-	.word	base_64__4Base
+	.word	clearNullOutgoing__4Base
 	.weak	_vt.11PreSysClock
 	.section .gnu.linkonce.d._vt.11PreSysClock,"aw"
 	.align	2, 0
@@ -812,7 +812,7 @@ _vt.11PreSysClock:
 	.word	base_34__4Base
 	.short	0
 	.short	0
-	.word	registerClock__4BasePvRC4BaseG9ClockData
+	.word	listen__4BasePvRC4BaseG9ClockData
 	.short	0
 	.short	0
 	.word	base_44__4Base
@@ -827,7 +827,7 @@ _vt.11PreSysClock:
 	.word	base_5c__4Base
 	.short	0
 	.short	0
-	.word	base_64__4Base
+	.word	clearNullOutgoing__4Base
 	.weak	_vt.3Unk
 	.section .gnu.linkonce.d._vt.3Unk,"aw"
 	.align	2, 0
@@ -857,7 +857,7 @@ _vt.3Unk:
 	.word	base_34__4Base
 	.short	0
 	.short	0
-	.word	registerClock__4BasePvRC4BaseG9ClockData
+	.word	listen__4BasePvRC4BaseG9ClockData
 	.short	0
 	.short	0
 	.word	base_44__4Base
@@ -872,7 +872,7 @@ _vt.3Unk:
 	.word	base_5c__4Base
 	.short	0
 	.short	0
-	.word	base_64__4Base
+	.word	clearNullOutgoing__4Base
 	.section .gnu.linkonce.t._._3Unk,"ax",%progbits
 	.align	2, 0
 	.weak	_._3Unk
