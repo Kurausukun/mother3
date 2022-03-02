@@ -1004,7 +1004,7 @@ _080820C6:
 	bl sub_0806E374
 	adds r0, r4, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	add r1, sp, #0x18
 	movs r0, #0
 	strb r0, [r1]
@@ -1015,7 +1015,7 @@ _080820C6:
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	movs r0, #0
 _0808212A:
 	add sp, #0x1c

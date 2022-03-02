@@ -18,7 +18,7 @@ public:
 
     Skill* skill_1c0();
     u16 id() const;
-    Skill* skill_1d0(Skill*);
+    Skill* name(Skill*);
     Skill* skill_1d8(Skill*);
     u32 skill_1e0();
     u32 effect() const;
@@ -31,14 +31,14 @@ public:
     u32 ailmentChance() const;
     u32 hasAction() const;
     u32 priority() const;
-    Skill* skill_238(Skill* s);
-    Skill* skill_240(Skill* s);
+    Skill* showUseMessage(Skill* s);
+    Skill* showForceUseMessage(Skill* s);
     u32 hasDim() const;
     u32 animNo() const;
     u32 successAnimNo() const;
     u16 nextAnim() const;
     u32 sfxNo() const;
-    u32 missChance() const;
+    u32 hitChance() const;
     u32 critChance() const;
     bool redirectable() const;
     u32 skill_288();

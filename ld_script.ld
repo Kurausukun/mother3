@@ -3,24 +3,25 @@ OUTPUT_ARCH(arm)
 gNumMusicPlayers = 10;
 gMaxLines = 0;
 
+MEMORY {
+    ewram (w!x) : ORIGIN = 0x02000000, LENGTH = 256K
+    iwram (w!x) : ORIGIN = 0x03000000, LENGTH = 32K
+    rom (rx) : ORIGIN = 0x08000000, LENGTH = 32M
+}
+
 SECTIONS
 {
-    . = 0x02000000;
-    EWRAM (NOLOAD) :
-    ALIGN(4)
+    ewram (NOLOAD) : ALIGN(4)
     {
         INCLUDE "sym_ewram.txt"
-    }
+    } >ewram
 
-    . = 0x03000000;
-    IWRAM (NOLOAD) :
-    ALIGN(4)
+    iwram (NOLOAD) : ALIGN(4)
     {
         INCLUDE "sym_iwram.txt"
-    }
+    } >iwram
 
-	. = 0x08000000;
-    ROM : ALIGN(4)
+    rom : ALIGN(4)
 	{
         asm/crt0.o(.text);
         src/main.o(.text);
@@ -147,7 +148,7 @@ SECTIONS
         *libc.a:locale.o(.data);
 
         data/vtables.o(.data);
-	} = 0
+	} >rom
 
     endl__FR7ostream = 0;
 

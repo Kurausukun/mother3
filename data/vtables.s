@@ -50,7 +50,7 @@ _vt.6System::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -65,7 +65,7 @@ _vt.6System::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte getHandle__6System
@@ -123,7 +123,7 @@ _vt.3Unk::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -138,7 +138,7 @@ _vt.3Unk::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 vt_09F45058::
 	.2byte 0
@@ -164,7 +164,7 @@ vt_09F45058::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -179,7 +179,7 @@ vt_09F45058::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0805DDF4
@@ -393,7 +393,7 @@ vt_09F452B0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -408,7 +408,7 @@ vt_09F452B0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 vt_09F45318::
 	.2byte 0
@@ -445,7 +445,7 @@ vt_09F45330::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -460,7 +460,7 @@ vt_09F45330::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 vt_09F45398::
 	.2byte 0
@@ -497,7 +497,7 @@ vt_09F453B0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -512,7 +512,7 @@ vt_09F453B0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 vt_09F45418::
 	.2byte 0
@@ -549,7 +549,7 @@ vt_09F45430::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -564,7 +564,7 @@ vt_09F45430::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 vt_09F45498::
 	.2byte 0
@@ -601,7 +601,7 @@ vt_09F454B0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -616,7 +616,7 @@ vt_09F454B0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 vt_09F45518::
 	.2byte 0
@@ -653,7 +653,7 @@ _vt.8RoundEnd::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -668,7 +668,7 @@ _vt.8RoundEnd::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 vt_09F45598::
 	.2byte 0
@@ -705,7 +705,7 @@ _vt.10RoundBegin::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -720,7 +720,7 @@ _vt.10RoundBegin::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 vt_09F45618::
 	.2byte 0
@@ -757,7 +757,7 @@ vt_09F45630::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -772,7 +772,7 @@ vt_09F45630::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0805DDF4
@@ -1020,7 +1020,7 @@ vt_09F458E8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -1035,7 +1035,7 @@ vt_09F458E8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0805DDF4
@@ -1316,7 +1316,7 @@ vt_09F45BF8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -1331,7 +1331,7 @@ vt_09F45BF8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0805DDF4
@@ -1591,7 +1591,7 @@ vt_09F45ED0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -1606,7 +1606,7 @@ vt_09F45ED0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0805DDF4
@@ -1869,7 +1869,7 @@ vt_09F461B0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -1884,7 +1884,7 @@ vt_09F461B0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0805DDF4
@@ -2125,7 +2125,7 @@ vt_09F46450::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -2140,7 +2140,7 @@ vt_09F46450::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0805DDF4
@@ -2379,7 +2379,7 @@ vt_09F466F0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -2394,7 +2394,7 @@ vt_09F466F0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0805F0FC
@@ -2426,7 +2426,7 @@ vt_09F46768::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -2441,7 +2441,7 @@ vt_09F46768::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0805F478
@@ -2482,7 +2482,7 @@ vt_09F467F8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -2497,7 +2497,7 @@ vt_09F467F8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0805FB30
@@ -2650,7 +2650,7 @@ vt_09F469A8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -2665,7 +2665,7 @@ vt_09F469A8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -2800,10 +2800,10 @@ vt_09F469A8::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -3128,7 +3128,7 @@ vt_09F46E98::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -3143,7 +3143,7 @@ vt_09F46E98::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -3278,10 +3278,10 @@ vt_09F46E98::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -3609,7 +3609,7 @@ vt_09F47390::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -3624,7 +3624,7 @@ vt_09F47390::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -3759,10 +3759,10 @@ vt_09F47390::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -4090,7 +4090,7 @@ vt_09F47888::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -4105,7 +4105,7 @@ vt_09F47888::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -4240,10 +4240,10 @@ vt_09F47888::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -4571,7 +4571,7 @@ vt_09F47D80::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -4586,7 +4586,7 @@ vt_09F47D80::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -4721,10 +4721,10 @@ vt_09F47D80::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -5052,7 +5052,7 @@ vt_09F48278::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -5067,7 +5067,7 @@ vt_09F48278::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -5202,10 +5202,10 @@ vt_09F48278::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -5536,7 +5536,7 @@ vt_09F48778::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -5551,7 +5551,7 @@ vt_09F48778::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -5686,10 +5686,10 @@ vt_09F48778::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -6017,7 +6017,7 @@ vt_09F48C70::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -6032,7 +6032,7 @@ vt_09F48C70::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -6167,10 +6167,10 @@ vt_09F48C70::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -6448,7 +6448,7 @@ vt_09F490E8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -6463,7 +6463,7 @@ vt_09F490E8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte tellPresent
@@ -6492,7 +6492,7 @@ vt_09F49158::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -6507,7 +6507,7 @@ vt_09F49158::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -6746,7 +6746,7 @@ vt_09F493F8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -6761,7 +6761,7 @@ vt_09F493F8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -7003,7 +7003,7 @@ vt_09F496A0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -7018,7 +7018,7 @@ vt_09F496A0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -7260,7 +7260,7 @@ vt_09F49948::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -7275,7 +7275,7 @@ vt_09F49948::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -7514,7 +7514,7 @@ vt_09F49BE8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -7529,7 +7529,7 @@ vt_09F49BE8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -7768,7 +7768,7 @@ vt_09F49E88::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -7783,7 +7783,7 @@ vt_09F49E88::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -8022,7 +8022,7 @@ vt_09F4A128::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -8037,7 +8037,7 @@ vt_09F4A128::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -8276,7 +8276,7 @@ vt_09F4A3C8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -8291,7 +8291,7 @@ vt_09F4A3C8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -8530,7 +8530,7 @@ vt_09F4A668::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -8545,7 +8545,7 @@ vt_09F4A668::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -8787,7 +8787,7 @@ vt_09F4A910::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -8802,7 +8802,7 @@ vt_09F4A910::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -9044,7 +9044,7 @@ vt_09F4ABB8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -9059,7 +9059,7 @@ vt_09F4ABB8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -9301,7 +9301,7 @@ vt_09F4AE60::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -9316,7 +9316,7 @@ vt_09F4AE60::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -9558,7 +9558,7 @@ vt_09F4B108::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -9573,7 +9573,7 @@ vt_09F4B108::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -9815,7 +9815,7 @@ vt_09F4B3B0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -9830,7 +9830,7 @@ vt_09F4B3B0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -10102,7 +10102,7 @@ vt_09F4B6A8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -10117,7 +10117,7 @@ vt_09F4B6A8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -10356,7 +10356,7 @@ vt_09F4B948::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -10371,7 +10371,7 @@ vt_09F4B948::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08061B94
@@ -10459,7 +10459,7 @@ _vt.5Guest::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -10474,7 +10474,7 @@ _vt.5Guest::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -10582,10 +10582,10 @@ _vt.5Guest::
 	.4byte unit_178__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_180__5Guest
+	.4byte id__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_188__5GuestP4Unit
+	.4byte name__5GuestP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte level__C5Guest
@@ -10609,10 +10609,10 @@ _vt.5Guest::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -10708,10 +10708,10 @@ _vt.5Guest::
 	.4byte guest_2e8__5GuestP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte guest_2d0__5Guest
+	.4byte onRoundBegin__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte guest_2d8__5Guest
+	.4byte onRoundEnd__5Guest
 	.2byte 0
 	.2byte 0
 	.4byte object_38__5Guest
@@ -10798,7 +10798,7 @@ vt_09F4BDC8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -10813,7 +10813,7 @@ vt_09F4BDC8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -10921,10 +10921,10 @@ vt_09F4BDC8::
 	.4byte unit_178__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_180__5Guest
+	.4byte id__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_188__5GuestP4Unit
+	.4byte name__5GuestP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte level__C5Guest
@@ -10948,10 +10948,10 @@ vt_09F4BDC8::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -11047,10 +11047,10 @@ vt_09F4BDC8::
 	.4byte guest_2e8__5GuestP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte guest_2d0__5Guest
+	.4byte onRoundBegin__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte guest_2d8__5Guest
+	.4byte onRoundEnd__5Guest
 	.2byte 0
 	.2byte 0
 	.4byte object_38__5Guest
@@ -11138,7 +11138,7 @@ vt_09F4C148::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -11153,7 +11153,7 @@ vt_09F4C148::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -11261,10 +11261,10 @@ vt_09F4C148::
 	.4byte unit_178__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_180__5Guest
+	.4byte id__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_188__5GuestP4Unit
+	.4byte name__5GuestP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte level__C5Guest
@@ -11288,10 +11288,10 @@ vt_09F4C148::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -11387,10 +11387,10 @@ vt_09F4C148::
 	.4byte guest_2e8__5GuestP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte guest_2d0__5Guest
+	.4byte onRoundBegin__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte guest_2d8__5Guest
+	.4byte onRoundEnd__5Guest
 	.2byte 0
 	.2byte 0
 	.4byte object_38__5Guest
@@ -11487,7 +11487,7 @@ vt_09F4C4E0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -11502,7 +11502,7 @@ vt_09F4C4E0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -11610,10 +11610,10 @@ vt_09F4C4E0::
 	.4byte unit_178__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_180__5Guest
+	.4byte id__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_188__5GuestP4Unit
+	.4byte name__5GuestP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte level__C5Guest
@@ -11637,10 +11637,10 @@ vt_09F4C4E0::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -11736,10 +11736,10 @@ vt_09F4C4E0::
 	.4byte guest_2e8__5GuestP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte guest_2d0__5Guest
+	.4byte onRoundBegin__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte guest_2d8__5Guest
+	.4byte onRoundEnd__5Guest
 	.2byte 0
 	.2byte 0
 	.4byte object_38__5Guest
@@ -11830,7 +11830,7 @@ vt_09F4C868::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -11845,7 +11845,7 @@ vt_09F4C868::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -11953,10 +11953,10 @@ vt_09F4C868::
 	.4byte unit_178__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_180__5Guest
+	.4byte id__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_188__5GuestP4Unit
+	.4byte name__5GuestP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte level__C5Guest
@@ -11980,10 +11980,10 @@ vt_09F4C868::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -12079,10 +12079,10 @@ vt_09F4C868::
 	.4byte guest_2e8__5GuestP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte guest_2d0__5Guest
+	.4byte onRoundBegin__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte guest_2d8__5Guest
+	.4byte onRoundEnd__5Guest
 	.2byte 0
 	.2byte 0
 	.4byte object_38__5Guest
@@ -12176,7 +12176,7 @@ vt_09F4CBF8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -12191,7 +12191,7 @@ vt_09F4CBF8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -12299,10 +12299,10 @@ vt_09F4CBF8::
 	.4byte unit_178__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_180__5Guest
+	.4byte id__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_188__5GuestP4Unit
+	.4byte name__5GuestP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte level__C5Guest
@@ -12326,10 +12326,10 @@ vt_09F4CBF8::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -12425,10 +12425,10 @@ vt_09F4CBF8::
 	.4byte guest_2e8__5GuestP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte guest_2d0__5Guest
+	.4byte onRoundBegin__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte guest_2d8__5Guest
+	.4byte onRoundEnd__5Guest
 	.2byte 0
 	.2byte 0
 	.4byte object_38__5Guest
@@ -12516,7 +12516,7 @@ vt_09F4CF78::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -12531,7 +12531,7 @@ vt_09F4CF78::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -12639,10 +12639,10 @@ vt_09F4CF78::
 	.4byte unit_178__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_180__5Guest
+	.4byte id__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_188__5GuestP4Unit
+	.4byte name__5GuestP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte level__C5Guest
@@ -12666,10 +12666,10 @@ vt_09F4CF78::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -12765,10 +12765,10 @@ vt_09F4CF78::
 	.4byte guest_2e8__5GuestP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte guest_2d0__5Guest
+	.4byte onRoundBegin__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte guest_2d8__5Guest
+	.4byte onRoundEnd__5Guest
 	.2byte 0
 	.2byte 0
 	.4byte object_38__5Guest
@@ -12856,7 +12856,7 @@ vt_09F4D2F8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -12871,7 +12871,7 @@ vt_09F4D2F8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -12979,10 +12979,10 @@ vt_09F4D2F8::
 	.4byte unit_178__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_180__5Guest
+	.4byte id__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_188__5GuestP4Unit
+	.4byte name__5GuestP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte level__C5Guest
@@ -13006,10 +13006,10 @@ vt_09F4D2F8::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -13105,10 +13105,10 @@ vt_09F4D2F8::
 	.4byte guest_2e8__5GuestP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte guest_2d0__5Guest
+	.4byte onRoundBegin__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte guest_2d8__5Guest
+	.4byte onRoundEnd__5Guest
 	.2byte 0
 	.2byte 0
 	.4byte object_38__5Guest
@@ -13149,7 +13149,7 @@ vt_09F4D600::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -13164,7 +13164,7 @@ vt_09F4D600::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -13299,7 +13299,7 @@ vt_09F4D600::
 	.4byte id__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d0__10GuestSkillP5Skill
+	.4byte name__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d8__10GuestSkillP5Skill
@@ -13344,7 +13344,7 @@ vt_09F4D600::
 	.4byte sub_080A0B54
 	.2byte 0
 	.2byte 0
-	.4byte skill_240__10GuestSkillP5Skill
+	.4byte showForceUseMessage__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C10GuestSkill
@@ -13403,7 +13403,7 @@ vt_09F4D8A0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -13418,7 +13418,7 @@ vt_09F4D8A0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -13553,7 +13553,7 @@ vt_09F4D8A0::
 	.4byte id__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d0__10GuestSkillP5Skill
+	.4byte name__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d8__10GuestSkillP5Skill
@@ -13595,10 +13595,10 @@ vt_09F4D8A0::
 	.4byte priority__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_238__10GuestSkillP5Skill
+	.4byte showUseMessage__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte skill_240__10GuestSkillP5Skill
+	.4byte showForceUseMessage__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C10GuestSkill
@@ -13657,7 +13657,7 @@ vt_09F4DB40::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -13672,7 +13672,7 @@ vt_09F4DB40::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -13807,7 +13807,7 @@ vt_09F4DB40::
 	.4byte id__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d0__10GuestSkillP5Skill
+	.4byte name__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d8__10GuestSkillP5Skill
@@ -13849,10 +13849,10 @@ vt_09F4DB40::
 	.4byte priority__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_238__10GuestSkillP5Skill
+	.4byte showUseMessage__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte skill_240__10GuestSkillP5Skill
+	.4byte showForceUseMessage__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C10GuestSkill
@@ -13911,7 +13911,7 @@ vt_09F4DDE0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -13926,7 +13926,7 @@ vt_09F4DDE0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -14061,7 +14061,7 @@ vt_09F4DDE0::
 	.4byte id__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d0__10GuestSkillP5Skill
+	.4byte name__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d8__10GuestSkillP5Skill
@@ -14103,10 +14103,10 @@ vt_09F4DDE0::
 	.4byte priority__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_238__10GuestSkillP5Skill
+	.4byte showUseMessage__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte skill_240__10GuestSkillP5Skill
+	.4byte showForceUseMessage__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C10GuestSkill
@@ -14165,7 +14165,7 @@ vt_09F4E080::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -14180,7 +14180,7 @@ vt_09F4E080::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -14315,7 +14315,7 @@ vt_09F4E080::
 	.4byte id__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d0__10GuestSkillP5Skill
+	.4byte name__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d8__10GuestSkillP5Skill
@@ -14357,10 +14357,10 @@ vt_09F4E080::
 	.4byte priority__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_238__10GuestSkillP5Skill
+	.4byte showUseMessage__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte skill_240__10GuestSkillP5Skill
+	.4byte showForceUseMessage__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C10GuestSkill
@@ -14419,7 +14419,7 @@ vt_09F4E320::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -14434,7 +14434,7 @@ vt_09F4E320::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0806298C
@@ -14608,7 +14608,7 @@ vt_09F4E508::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -14623,7 +14623,7 @@ vt_09F4E508::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -14758,10 +14758,10 @@ vt_09F4E508::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -15062,7 +15062,7 @@ vt_09F4E9B8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -15077,7 +15077,7 @@ vt_09F4E9B8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -15212,10 +15212,10 @@ vt_09F4E9B8::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -15542,7 +15542,7 @@ vt_09F4EEA8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -15557,7 +15557,7 @@ vt_09F4EEA8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -15692,10 +15692,10 @@ vt_09F4EEA8::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -15996,7 +15996,7 @@ vt_09F4F358::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -16011,7 +16011,7 @@ vt_09F4F358::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -16146,10 +16146,10 @@ vt_09F4F358::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -16498,7 +16498,7 @@ vt_09F4F888::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -16513,7 +16513,7 @@ vt_09F4F888::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -16648,10 +16648,10 @@ vt_09F4F888::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -16961,7 +16961,7 @@ vt_09F4FD50::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -16976,7 +16976,7 @@ vt_09F4FD50::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -17111,10 +17111,10 @@ vt_09F4FD50::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -17424,7 +17424,7 @@ vt_09F50218::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -17439,7 +17439,7 @@ vt_09F50218::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -17574,10 +17574,10 @@ vt_09F50218::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -17902,7 +17902,7 @@ vt_09F50708::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -17917,7 +17917,7 @@ vt_09F50708::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -18052,10 +18052,10 @@ vt_09F50708::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -18356,7 +18356,7 @@ vt_09F50BB8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -18371,7 +18371,7 @@ vt_09F50BB8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -18506,10 +18506,10 @@ vt_09F50BB8::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -18813,7 +18813,7 @@ vt_09F51070::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -18828,7 +18828,7 @@ vt_09F51070::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -18963,10 +18963,10 @@ vt_09F51070::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -19267,7 +19267,7 @@ vt_09F51520::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -19282,7 +19282,7 @@ vt_09F51520::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -19417,10 +19417,10 @@ vt_09F51520::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -19721,7 +19721,7 @@ vt_09F519D0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -19736,7 +19736,7 @@ vt_09F519D0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -19871,10 +19871,10 @@ vt_09F519D0::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -20187,7 +20187,7 @@ vt_09F51EA0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -20202,7 +20202,7 @@ vt_09F51EA0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -20337,10 +20337,10 @@ vt_09F51EA0::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -20644,7 +20644,7 @@ vt_09F52358::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -20659,7 +20659,7 @@ vt_09F52358::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -20794,10 +20794,10 @@ vt_09F52358::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -21116,7 +21116,7 @@ vt_09F52838::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -21131,7 +21131,7 @@ vt_09F52838::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -21266,10 +21266,10 @@ vt_09F52838::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -21570,7 +21570,7 @@ vt_09F52CE8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -21585,7 +21585,7 @@ vt_09F52CE8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -21720,10 +21720,10 @@ vt_09F52CE8::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -22045,7 +22045,7 @@ vt_09F531D0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -22060,7 +22060,7 @@ vt_09F531D0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -22195,10 +22195,10 @@ vt_09F531D0::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -22499,7 +22499,7 @@ vt_09F53680::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -22514,7 +22514,7 @@ vt_09F53680::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -22649,10 +22649,10 @@ vt_09F53680::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -22953,7 +22953,7 @@ vt_09F53B30::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -22968,7 +22968,7 @@ vt_09F53B30::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -23103,10 +23103,10 @@ vt_09F53B30::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -23407,7 +23407,7 @@ vt_09F53FE0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -23422,7 +23422,7 @@ vt_09F53FE0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -23557,10 +23557,10 @@ vt_09F53FE0::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -23861,7 +23861,7 @@ vt_09F54490::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -23876,7 +23876,7 @@ vt_09F54490::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -24011,10 +24011,10 @@ vt_09F54490::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -24315,7 +24315,7 @@ vt_09F54940::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -24330,7 +24330,7 @@ vt_09F54940::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -24465,10 +24465,10 @@ vt_09F54940::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -24769,7 +24769,7 @@ vt_09F54DF0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -24784,7 +24784,7 @@ vt_09F54DF0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -24919,10 +24919,10 @@ vt_09F54DF0::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -25223,7 +25223,7 @@ vt_09F552A0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -25238,7 +25238,7 @@ vt_09F552A0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -25373,10 +25373,10 @@ vt_09F552A0::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -25677,7 +25677,7 @@ vt_09F55750::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -25692,7 +25692,7 @@ vt_09F55750::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -25827,10 +25827,10 @@ vt_09F55750::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -26131,7 +26131,7 @@ vt_09F55C00::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -26146,7 +26146,7 @@ vt_09F55C00::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -26281,10 +26281,10 @@ vt_09F55C00::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -26585,7 +26585,7 @@ vt_09F560B0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -26600,7 +26600,7 @@ vt_09F560B0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -26735,10 +26735,10 @@ vt_09F560B0::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -27039,7 +27039,7 @@ vt_09F56560::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -27054,7 +27054,7 @@ vt_09F56560::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -27189,10 +27189,10 @@ vt_09F56560::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -27508,7 +27508,7 @@ vt_09F56A38::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -27523,7 +27523,7 @@ vt_09F56A38::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -27658,10 +27658,10 @@ vt_09F56A38::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -27962,7 +27962,7 @@ vt_09F56EE8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -27977,7 +27977,7 @@ vt_09F56EE8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -28112,10 +28112,10 @@ vt_09F56EE8::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -28416,7 +28416,7 @@ vt_09F57398::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -28431,7 +28431,7 @@ vt_09F57398::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -28566,10 +28566,10 @@ vt_09F57398::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -28870,7 +28870,7 @@ vt_09F57848::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -28885,7 +28885,7 @@ vt_09F57848::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -29020,10 +29020,10 @@ vt_09F57848::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -29333,7 +29333,7 @@ vt_09F57D10::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -29348,7 +29348,7 @@ vt_09F57D10::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -29483,10 +29483,10 @@ vt_09F57D10::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -29787,7 +29787,7 @@ vt_09F581C0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -29802,7 +29802,7 @@ vt_09F581C0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -29937,10 +29937,10 @@ vt_09F581C0::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -30241,7 +30241,7 @@ vt_09F58670::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -30256,7 +30256,7 @@ vt_09F58670::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -30391,10 +30391,10 @@ vt_09F58670::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -30695,7 +30695,7 @@ vt_09F58B20::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -30710,7 +30710,7 @@ vt_09F58B20::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -30845,10 +30845,10 @@ vt_09F58B20::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -31152,7 +31152,7 @@ vt_09F58FD8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -31167,7 +31167,7 @@ vt_09F58FD8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -31302,10 +31302,10 @@ vt_09F58FD8::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -31606,7 +31606,7 @@ vt_09F59488::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -31621,7 +31621,7 @@ vt_09F59488::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -31756,10 +31756,10 @@ vt_09F59488::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -32072,7 +32072,7 @@ vt_09F59958::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -32087,7 +32087,7 @@ vt_09F59958::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -32222,10 +32222,10 @@ vt_09F59958::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -32535,7 +32535,7 @@ vt_09F59E20::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -32550,7 +32550,7 @@ vt_09F59E20::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -32685,10 +32685,10 @@ vt_09F59E20::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -32989,7 +32989,7 @@ vt_09F5A2D0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -33004,7 +33004,7 @@ vt_09F5A2D0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -33139,10 +33139,10 @@ vt_09F5A2D0::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -33443,7 +33443,7 @@ vt_09F5A780::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -33458,7 +33458,7 @@ vt_09F5A780::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -33593,10 +33593,10 @@ vt_09F5A780::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -33906,7 +33906,7 @@ vt_09F5AC48::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -33921,7 +33921,7 @@ vt_09F5AC48::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -34056,10 +34056,10 @@ vt_09F5AC48::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -34363,7 +34363,7 @@ vt_09F5B100::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -34378,7 +34378,7 @@ vt_09F5B100::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -34513,10 +34513,10 @@ vt_09F5B100::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -34817,7 +34817,7 @@ vt_09F5B5B0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -34832,7 +34832,7 @@ vt_09F5B5B0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -34967,10 +34967,10 @@ vt_09F5B5B0::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -35271,7 +35271,7 @@ vt_09F5BA60::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -35286,7 +35286,7 @@ vt_09F5BA60::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -35421,10 +35421,10 @@ vt_09F5BA60::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -35737,7 +35737,7 @@ vt_09F5BF30::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -35752,7 +35752,7 @@ vt_09F5BF30::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -35887,10 +35887,10 @@ vt_09F5BF30::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -36191,7 +36191,7 @@ vt_09F5C3E0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -36206,7 +36206,7 @@ vt_09F5C3E0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -36341,10 +36341,10 @@ vt_09F5C3E0::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -36645,7 +36645,7 @@ vt_09F5C890::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -36660,7 +36660,7 @@ vt_09F5C890::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -36795,10 +36795,10 @@ vt_09F5C890::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -37099,7 +37099,7 @@ vt_09F5CD40::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -37114,7 +37114,7 @@ vt_09F5CD40::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -37249,10 +37249,10 @@ vt_09F5CD40::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -37562,7 +37562,7 @@ vt_09F5D208::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -37577,7 +37577,7 @@ vt_09F5D208::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -37712,10 +37712,10 @@ vt_09F5D208::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -38016,7 +38016,7 @@ vt_09F5D6B8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -38031,7 +38031,7 @@ vt_09F5D6B8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -38166,10 +38166,10 @@ vt_09F5D6B8::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -38470,7 +38470,7 @@ vt_09F5DB68::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -38485,7 +38485,7 @@ vt_09F5DB68::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -38620,10 +38620,10 @@ vt_09F5DB68::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -38924,7 +38924,7 @@ vt_09F5E018::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -38939,7 +38939,7 @@ vt_09F5E018::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -39074,10 +39074,10 @@ vt_09F5E018::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -39378,7 +39378,7 @@ vt_09F5E4C8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -39393,7 +39393,7 @@ vt_09F5E4C8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -39528,10 +39528,10 @@ vt_09F5E4C8::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -39832,7 +39832,7 @@ vt_09F5E978::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -39847,7 +39847,7 @@ vt_09F5E978::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -39982,10 +39982,10 @@ vt_09F5E978::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -40295,7 +40295,7 @@ vt_09F5EE40::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -40310,7 +40310,7 @@ vt_09F5EE40::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -40445,10 +40445,10 @@ vt_09F5EE40::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -40749,7 +40749,7 @@ vt_09F5F2F0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -40764,7 +40764,7 @@ vt_09F5F2F0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -40899,10 +40899,10 @@ vt_09F5F2F0::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -41212,7 +41212,7 @@ vt_09F5F7B8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -41227,7 +41227,7 @@ vt_09F5F7B8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -41362,10 +41362,10 @@ vt_09F5F7B8::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -41666,7 +41666,7 @@ vt_09F5FC68::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -41681,7 +41681,7 @@ vt_09F5FC68::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -41816,10 +41816,10 @@ vt_09F5FC68::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -42120,7 +42120,7 @@ vt_09F60118::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -42135,7 +42135,7 @@ vt_09F60118::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -42270,10 +42270,10 @@ vt_09F60118::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -42574,7 +42574,7 @@ vt_09F605C8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -42589,7 +42589,7 @@ vt_09F605C8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -42724,10 +42724,10 @@ vt_09F605C8::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -43028,7 +43028,7 @@ vt_09F60A78::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -43043,7 +43043,7 @@ vt_09F60A78::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -43178,10 +43178,10 @@ vt_09F60A78::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -43482,7 +43482,7 @@ vt_09F60F28::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -43497,7 +43497,7 @@ vt_09F60F28::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -43632,10 +43632,10 @@ vt_09F60F28::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -43948,7 +43948,7 @@ vt_09F613F8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -43963,7 +43963,7 @@ vt_09F613F8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -44098,10 +44098,10 @@ vt_09F613F8::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -44414,7 +44414,7 @@ vt_09F618C8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -44429,7 +44429,7 @@ vt_09F618C8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -44564,10 +44564,10 @@ vt_09F618C8::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -44877,7 +44877,7 @@ vt_09F61D90::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -44892,7 +44892,7 @@ vt_09F61D90::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -45027,10 +45027,10 @@ vt_09F61D90::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -45331,7 +45331,7 @@ vt_09F62240::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -45346,7 +45346,7 @@ vt_09F62240::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -45481,10 +45481,10 @@ vt_09F62240::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -45785,7 +45785,7 @@ vt_09F626F0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -45800,7 +45800,7 @@ vt_09F626F0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -45935,10 +45935,10 @@ vt_09F626F0::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -46239,7 +46239,7 @@ vt_09F62BA0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -46254,7 +46254,7 @@ vt_09F62BA0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -46389,10 +46389,10 @@ vt_09F62BA0::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -46693,7 +46693,7 @@ vt_09F63050::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -46708,7 +46708,7 @@ vt_09F63050::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -46843,10 +46843,10 @@ vt_09F63050::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -47147,7 +47147,7 @@ vt_09F63500::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -47162,7 +47162,7 @@ vt_09F63500::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -47297,10 +47297,10 @@ vt_09F63500::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -47601,7 +47601,7 @@ vt_09F639B0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -47616,7 +47616,7 @@ vt_09F639B0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -47751,10 +47751,10 @@ vt_09F639B0::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -48058,7 +48058,7 @@ vt_09F63E68::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -48073,7 +48073,7 @@ vt_09F63E68::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -48208,10 +48208,10 @@ vt_09F63E68::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -48512,7 +48512,7 @@ vt_09F64318::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -48527,7 +48527,7 @@ vt_09F64318::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -48662,10 +48662,10 @@ vt_09F64318::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -48919,7 +48919,7 @@ vt_09F64750::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -48934,7 +48934,7 @@ vt_09F64750::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -49179,7 +49179,7 @@ vt_09F64A00::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -49194,7 +49194,7 @@ vt_09F64A00::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -49439,7 +49439,7 @@ vt_09F64CB0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -49454,7 +49454,7 @@ vt_09F64CB0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -49699,7 +49699,7 @@ vt_09F64F60::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -49714,7 +49714,7 @@ vt_09F64F60::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -49959,7 +49959,7 @@ vt_09F65210::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -49974,7 +49974,7 @@ vt_09F65210::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -50219,7 +50219,7 @@ vt_09F654C0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -50234,7 +50234,7 @@ vt_09F654C0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -50479,7 +50479,7 @@ vt_09F65770::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -50494,7 +50494,7 @@ vt_09F65770::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -50739,7 +50739,7 @@ vt_09F65A20::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -50754,7 +50754,7 @@ vt_09F65A20::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -50999,7 +50999,7 @@ vt_09F65CD0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -51014,7 +51014,7 @@ vt_09F65CD0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -51259,7 +51259,7 @@ vt_09F65F80::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -51274,7 +51274,7 @@ vt_09F65F80::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -51519,7 +51519,7 @@ vt_09F66230::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -51534,7 +51534,7 @@ vt_09F66230::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -51779,7 +51779,7 @@ vt_09F664E0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -51794,7 +51794,7 @@ vt_09F664E0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -52039,7 +52039,7 @@ vt_09F66790::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -52054,7 +52054,7 @@ vt_09F66790::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -52299,7 +52299,7 @@ vt_09F66A40::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -52314,7 +52314,7 @@ vt_09F66A40::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -52559,7 +52559,7 @@ vt_09F66CF0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -52574,7 +52574,7 @@ vt_09F66CF0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -52819,7 +52819,7 @@ vt_09F66FA0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -52834,7 +52834,7 @@ vt_09F66FA0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -53079,7 +53079,7 @@ vt_09F67250::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -53094,7 +53094,7 @@ vt_09F67250::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -53339,7 +53339,7 @@ vt_09F67500::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -53354,7 +53354,7 @@ vt_09F67500::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -53599,7 +53599,7 @@ vt_09F677B0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -53614,7 +53614,7 @@ vt_09F677B0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -53859,7 +53859,7 @@ vt_09F67A60::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -53874,7 +53874,7 @@ vt_09F67A60::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -54119,7 +54119,7 @@ vt_09F67D10::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -54134,7 +54134,7 @@ vt_09F67D10::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -54379,7 +54379,7 @@ vt_09F67FC0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -54394,7 +54394,7 @@ vt_09F67FC0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -54639,7 +54639,7 @@ vt_09F68270::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -54654,7 +54654,7 @@ vt_09F68270::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -54899,7 +54899,7 @@ vt_09F68520::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -54914,7 +54914,7 @@ vt_09F68520::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -55159,7 +55159,7 @@ vt_09F687D0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -55174,7 +55174,7 @@ vt_09F687D0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -55419,7 +55419,7 @@ vt_09F68A80::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -55434,7 +55434,7 @@ vt_09F68A80::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -55679,7 +55679,7 @@ vt_09F68D30::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -55694,7 +55694,7 @@ vt_09F68D30::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -55939,7 +55939,7 @@ vt_09F68FE0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -55954,7 +55954,7 @@ vt_09F68FE0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -56199,7 +56199,7 @@ vt_09F69290::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -56214,7 +56214,7 @@ vt_09F69290::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -56462,7 +56462,7 @@ vt_09F69548::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -56477,7 +56477,7 @@ vt_09F69548::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -56722,7 +56722,7 @@ vt_09F697F8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -56737,7 +56737,7 @@ vt_09F697F8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -56982,7 +56982,7 @@ vt_09F69AA8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -56997,7 +56997,7 @@ vt_09F69AA8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -57242,7 +57242,7 @@ vt_09F69D58::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -57257,7 +57257,7 @@ vt_09F69D58::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -57502,7 +57502,7 @@ vt_09F6A008::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -57517,7 +57517,7 @@ vt_09F6A008::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -57762,7 +57762,7 @@ vt_09F6A2B8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -57777,7 +57777,7 @@ vt_09F6A2B8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -58022,7 +58022,7 @@ vt_09F6A568::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -58037,7 +58037,7 @@ vt_09F6A568::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -58282,7 +58282,7 @@ vt_09F6A818::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -58297,7 +58297,7 @@ vt_09F6A818::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -58542,7 +58542,7 @@ vt_09F6AAC8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -58557,7 +58557,7 @@ vt_09F6AAC8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -58802,7 +58802,7 @@ vt_09F6AD78::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -58817,7 +58817,7 @@ vt_09F6AD78::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -59062,7 +59062,7 @@ vt_09F6B028::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -59077,7 +59077,7 @@ vt_09F6B028::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -59322,7 +59322,7 @@ vt_09F6B2D8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -59337,7 +59337,7 @@ vt_09F6B2D8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -59582,7 +59582,7 @@ vt_09F6B588::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -59597,7 +59597,7 @@ vt_09F6B588::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -59848,7 +59848,7 @@ vt_09F6B848::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -59863,7 +59863,7 @@ vt_09F6B848::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -60108,7 +60108,7 @@ vt_09F6BAF8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -60123,7 +60123,7 @@ vt_09F6BAF8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -60368,7 +60368,7 @@ vt_09F6BDA8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -60383,7 +60383,7 @@ vt_09F6BDA8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -60628,7 +60628,7 @@ vt_09F6C058::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -60643,7 +60643,7 @@ vt_09F6C058::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -60888,7 +60888,7 @@ vt_09F6C308::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -60903,7 +60903,7 @@ vt_09F6C308::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -61148,7 +61148,7 @@ vt_09F6C5B8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -61163,7 +61163,7 @@ vt_09F6C5B8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -61408,7 +61408,7 @@ vt_09F6C868::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -61423,7 +61423,7 @@ vt_09F6C868::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -61668,7 +61668,7 @@ vt_09F6CB18::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -61683,7 +61683,7 @@ vt_09F6CB18::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -61928,7 +61928,7 @@ vt_09F6CDC8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -61943,7 +61943,7 @@ vt_09F6CDC8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -62188,7 +62188,7 @@ vt_09F6D078::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -62203,7 +62203,7 @@ vt_09F6D078::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -62448,7 +62448,7 @@ vt_09F6D328::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -62463,7 +62463,7 @@ vt_09F6D328::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -62708,7 +62708,7 @@ vt_09F6D5D8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -62723,7 +62723,7 @@ vt_09F6D5D8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -62968,7 +62968,7 @@ vt_09F6D888::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -62983,7 +62983,7 @@ vt_09F6D888::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -63228,7 +63228,7 @@ vt_09F6DB38::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -63243,7 +63243,7 @@ vt_09F6DB38::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -63488,7 +63488,7 @@ vt_09F6DDE8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -63503,7 +63503,7 @@ vt_09F6DDE8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -63748,7 +63748,7 @@ vt_09F6E098::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -63763,7 +63763,7 @@ vt_09F6E098::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -64008,7 +64008,7 @@ vt_09F6E348::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -64023,7 +64023,7 @@ vt_09F6E348::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -64268,7 +64268,7 @@ vt_09F6E5F8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -64283,7 +64283,7 @@ vt_09F6E5F8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -64528,7 +64528,7 @@ vt_09F6E8A8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -64543,7 +64543,7 @@ vt_09F6E8A8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -64788,7 +64788,7 @@ vt_09F6EB58::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -64803,7 +64803,7 @@ vt_09F6EB58::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -65048,7 +65048,7 @@ vt_09F6EE08::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -65063,7 +65063,7 @@ vt_09F6EE08::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -65308,7 +65308,7 @@ vt_09F6F0B8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -65323,7 +65323,7 @@ vt_09F6F0B8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -65568,7 +65568,7 @@ vt_09F6F368::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -65583,7 +65583,7 @@ vt_09F6F368::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -65828,7 +65828,7 @@ vt_09F6F618::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -65843,7 +65843,7 @@ vt_09F6F618::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -66088,7 +66088,7 @@ vt_09F6F8C8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -66103,7 +66103,7 @@ vt_09F6F8C8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -66348,7 +66348,7 @@ vt_09F6FB78::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -66363,7 +66363,7 @@ vt_09F6FB78::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -66608,7 +66608,7 @@ vt_09F6FE28::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -66623,7 +66623,7 @@ vt_09F6FE28::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -66868,7 +66868,7 @@ vt_09F700D8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -66883,7 +66883,7 @@ vt_09F700D8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -67128,7 +67128,7 @@ vt_09F70388::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -67143,7 +67143,7 @@ vt_09F70388::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -67388,7 +67388,7 @@ vt_09F70638::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -67403,7 +67403,7 @@ vt_09F70638::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -67648,7 +67648,7 @@ vt_09F708E8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -67663,7 +67663,7 @@ vt_09F708E8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -67908,7 +67908,7 @@ vt_09F70B98::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -67923,7 +67923,7 @@ vt_09F70B98::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -68168,7 +68168,7 @@ vt_09F70E48::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -68183,7 +68183,7 @@ vt_09F70E48::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -68428,7 +68428,7 @@ vt_09F710F8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -68443,7 +68443,7 @@ vt_09F710F8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -68688,7 +68688,7 @@ vt_09F713A8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -68703,7 +68703,7 @@ vt_09F713A8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -68951,7 +68951,7 @@ vt_09F71660::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -68966,7 +68966,7 @@ vt_09F71660::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -69211,7 +69211,7 @@ vt_09F71910::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -69226,7 +69226,7 @@ vt_09F71910::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -69471,7 +69471,7 @@ vt_09F71BC0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -69486,7 +69486,7 @@ vt_09F71BC0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -69731,7 +69731,7 @@ vt_09F71E70::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -69746,7 +69746,7 @@ vt_09F71E70::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -69991,7 +69991,7 @@ vt_09F72120::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -70006,7 +70006,7 @@ vt_09F72120::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -70251,7 +70251,7 @@ vt_09F723D0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -70266,7 +70266,7 @@ vt_09F723D0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -70376,7 +70376,7 @@ vt_09F72518::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -70391,7 +70391,7 @@ vt_09F72518::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -70501,7 +70501,7 @@ vt_09F72660::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -70516,7 +70516,7 @@ vt_09F72660::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -70626,7 +70626,7 @@ vt_09F727A8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -70641,7 +70641,7 @@ vt_09F727A8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -70802,7 +70802,7 @@ vt_09F72978::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -70817,7 +70817,7 @@ vt_09F72978::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -70978,7 +70978,7 @@ vt_09F72B48::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -70993,7 +70993,7 @@ vt_09F72B48::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -71154,7 +71154,7 @@ vt_09F72D18::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -71169,7 +71169,7 @@ vt_09F72D18::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -71330,7 +71330,7 @@ vt_09F72EE8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -71345,7 +71345,7 @@ vt_09F72EE8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -71506,7 +71506,7 @@ vt_09F730B8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -71521,7 +71521,7 @@ vt_09F730B8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -71682,7 +71682,7 @@ vt_09F73288::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -71697,7 +71697,7 @@ vt_09F73288::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -71858,7 +71858,7 @@ vt_09F73458::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -71873,7 +71873,7 @@ vt_09F73458::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -72034,7 +72034,7 @@ vt_09F73628::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -72049,7 +72049,7 @@ vt_09F73628::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -72210,7 +72210,7 @@ vt_09F737F8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -72225,7 +72225,7 @@ vt_09F737F8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -72386,7 +72386,7 @@ vt_09F739C8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -72401,7 +72401,7 @@ vt_09F739C8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -72562,7 +72562,7 @@ vt_09F73B98::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -72577,7 +72577,7 @@ vt_09F73B98::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -72738,7 +72738,7 @@ vt_09F73D68::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -72753,7 +72753,7 @@ vt_09F73D68::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -72914,7 +72914,7 @@ vt_09F73F38::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -72929,7 +72929,7 @@ vt_09F73F38::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -73090,7 +73090,7 @@ vt_09F74108::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -73105,7 +73105,7 @@ vt_09F74108::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -73266,7 +73266,7 @@ vt_09F742D8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -73281,7 +73281,7 @@ vt_09F742D8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -73442,7 +73442,7 @@ vt_09F744A8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -73457,7 +73457,7 @@ vt_09F744A8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -73618,7 +73618,7 @@ vt_09F74678::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -73633,7 +73633,7 @@ vt_09F74678::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -73794,7 +73794,7 @@ vt_09F74848::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -73809,7 +73809,7 @@ vt_09F74848::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -73970,7 +73970,7 @@ vt_09F74A18::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -73985,7 +73985,7 @@ vt_09F74A18::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -74146,7 +74146,7 @@ vt_09F74BE8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -74161,7 +74161,7 @@ vt_09F74BE8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -74322,7 +74322,7 @@ vt_09F74DB8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -74337,7 +74337,7 @@ vt_09F74DB8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -74498,7 +74498,7 @@ vt_09F74F88::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -74513,7 +74513,7 @@ vt_09F74F88::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -74674,7 +74674,7 @@ vt_09F75158::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -74689,7 +74689,7 @@ vt_09F75158::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -74850,7 +74850,7 @@ vt_09F75328::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -74865,7 +74865,7 @@ vt_09F75328::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -75026,7 +75026,7 @@ vt_09F754F8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -75041,7 +75041,7 @@ vt_09F754F8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -75202,7 +75202,7 @@ vt_09F756C8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -75217,7 +75217,7 @@ vt_09F756C8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -75327,7 +75327,7 @@ vt_09F75810::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -75342,7 +75342,7 @@ vt_09F75810::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -75452,7 +75452,7 @@ vt_09F75958::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -75467,7 +75467,7 @@ vt_09F75958::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -75577,7 +75577,7 @@ vt_09F75AA0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -75592,7 +75592,7 @@ vt_09F75AA0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -75702,7 +75702,7 @@ vt_09F75BE8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -75717,7 +75717,7 @@ vt_09F75BE8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -75827,7 +75827,7 @@ vt_09F75D30::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -75842,7 +75842,7 @@ vt_09F75D30::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -75952,7 +75952,7 @@ vt_09F75E78::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -75967,7 +75967,7 @@ vt_09F75E78::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -76077,7 +76077,7 @@ vt_09F75FC0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -76092,7 +76092,7 @@ vt_09F75FC0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -76202,7 +76202,7 @@ vt_09F76108::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -76217,7 +76217,7 @@ vt_09F76108::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -76327,7 +76327,7 @@ vt_09F76250::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -76342,7 +76342,7 @@ vt_09F76250::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -76452,7 +76452,7 @@ vt_09F76398::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -76467,7 +76467,7 @@ vt_09F76398::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -76577,7 +76577,7 @@ vt_09F764E0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -76592,7 +76592,7 @@ vt_09F764E0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -76702,7 +76702,7 @@ vt_09F76628::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -76717,7 +76717,7 @@ vt_09F76628::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -76827,7 +76827,7 @@ vt_09F76770::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -76842,7 +76842,7 @@ vt_09F76770::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -76952,7 +76952,7 @@ vt_09F768B8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -76967,7 +76967,7 @@ vt_09F768B8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -77077,7 +77077,7 @@ vt_09F76A00::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -77092,7 +77092,7 @@ vt_09F76A00::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -77202,7 +77202,7 @@ vt_09F76B48::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -77217,7 +77217,7 @@ vt_09F76B48::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -77327,7 +77327,7 @@ vt_09F76C90::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -77342,7 +77342,7 @@ vt_09F76C90::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -77452,7 +77452,7 @@ vt_09F76DD8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -77467,7 +77467,7 @@ vt_09F76DD8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -77577,7 +77577,7 @@ vt_09F76F20::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -77592,7 +77592,7 @@ vt_09F76F20::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -77702,7 +77702,7 @@ vt_09F77068::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -77717,7 +77717,7 @@ vt_09F77068::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -77827,7 +77827,7 @@ vt_09F771B0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -77842,7 +77842,7 @@ vt_09F771B0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -77952,7 +77952,7 @@ vt_09F772F8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -77967,7 +77967,7 @@ vt_09F772F8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -78077,7 +78077,7 @@ vt_09F77440::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -78092,7 +78092,7 @@ vt_09F77440::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -78340,7 +78340,7 @@ vt_09F776F8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -78355,7 +78355,7 @@ vt_09F776F8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -78603,7 +78603,7 @@ vt_09F779B0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -78618,7 +78618,7 @@ vt_09F779B0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -78866,7 +78866,7 @@ vt_09F77C68::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -78881,7 +78881,7 @@ vt_09F77C68::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -79129,7 +79129,7 @@ vt_09F77F20::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -79144,7 +79144,7 @@ vt_09F77F20::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -79392,7 +79392,7 @@ vt_09F781D8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -79407,7 +79407,7 @@ vt_09F781D8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -79655,7 +79655,7 @@ vt_09F78490::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -79670,7 +79670,7 @@ vt_09F78490::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -79918,7 +79918,7 @@ vt_09F78748::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -79933,7 +79933,7 @@ vt_09F78748::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -80184,7 +80184,7 @@ vt_09F78A08::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -80199,7 +80199,7 @@ vt_09F78A08::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -80447,7 +80447,7 @@ vt_09F78CC0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -80462,7 +80462,7 @@ vt_09F78CC0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -80710,7 +80710,7 @@ vt_09F78F78::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -80725,7 +80725,7 @@ vt_09F78F78::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -80973,7 +80973,7 @@ vt_09F79230::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -80988,7 +80988,7 @@ vt_09F79230::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -81236,7 +81236,7 @@ vt_09F794E8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -81251,7 +81251,7 @@ vt_09F794E8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -81499,7 +81499,7 @@ __vt_5Goods::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -81514,7 +81514,7 @@ __vt_5Goods::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -81762,7 +81762,7 @@ _vt.5Goods::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -81777,7 +81777,7 @@ _vt.5Goods::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -81912,7 +81912,7 @@ _vt.5Goods::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d0__5GoodsP5Skill
+	.4byte name__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d8__5GoodsP5Skill
@@ -81954,10 +81954,10 @@ _vt.5Goods::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_238__5GoodsP5Skill
+	.4byte showUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte skill_240__5GoodsP5Skill
+	.4byte showForceUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -81975,7 +81975,7 @@ _vt.5Goods::
 	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte missChance__C5Goods
+	.4byte hitChance__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C5Goods
@@ -82042,7 +82042,7 @@ vt_09F79D38::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -82057,7 +82057,7 @@ vt_09F79D38::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -82192,7 +82192,7 @@ vt_09F79D38::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d0__5GoodsP5Skill
+	.4byte name__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d8__5GoodsP5Skill
@@ -82234,10 +82234,10 @@ vt_09F79D38::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_238__5GoodsP5Skill
+	.4byte showUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte skill_240__5GoodsP5Skill
+	.4byte showForceUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -82320,7 +82320,7 @@ vt_09F7A018::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -82335,7 +82335,7 @@ vt_09F7A018::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -82470,7 +82470,7 @@ vt_09F7A018::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d0__5GoodsP5Skill
+	.4byte name__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d8__5GoodsP5Skill
@@ -82512,10 +82512,10 @@ vt_09F7A018::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_238__5GoodsP5Skill
+	.4byte showUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte skill_240__5GoodsP5Skill
+	.4byte showForceUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -82598,7 +82598,7 @@ vt_09F7A2F8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -82613,7 +82613,7 @@ vt_09F7A2F8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -82748,7 +82748,7 @@ vt_09F7A2F8::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d0__5GoodsP5Skill
+	.4byte name__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d8__5GoodsP5Skill
@@ -82790,10 +82790,10 @@ vt_09F7A2F8::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_238__5GoodsP5Skill
+	.4byte showUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte skill_240__5GoodsP5Skill
+	.4byte showForceUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -82876,7 +82876,7 @@ vt_09F7A5D8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -82891,7 +82891,7 @@ vt_09F7A5D8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -83026,7 +83026,7 @@ vt_09F7A5D8::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d0__5GoodsP5Skill
+	.4byte name__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d8__5GoodsP5Skill
@@ -83068,10 +83068,10 @@ vt_09F7A5D8::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_238__5GoodsP5Skill
+	.4byte showUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte skill_240__5GoodsP5Skill
+	.4byte showForceUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -83154,7 +83154,7 @@ vt_09F7A8B8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -83169,7 +83169,7 @@ vt_09F7A8B8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -83304,7 +83304,7 @@ vt_09F7A8B8::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d0__5GoodsP5Skill
+	.4byte name__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d8__5GoodsP5Skill
@@ -83346,10 +83346,10 @@ vt_09F7A8B8::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_238__5GoodsP5Skill
+	.4byte showUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte skill_240__5GoodsP5Skill
+	.4byte showForceUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -83432,7 +83432,7 @@ vt_09F7AB98::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -83447,7 +83447,7 @@ vt_09F7AB98::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -83582,7 +83582,7 @@ vt_09F7AB98::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d0__5GoodsP5Skill
+	.4byte name__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d8__5GoodsP5Skill
@@ -83624,10 +83624,10 @@ vt_09F7AB98::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_238__5GoodsP5Skill
+	.4byte showUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte skill_240__5GoodsP5Skill
+	.4byte showForceUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -83710,7 +83710,7 @@ vt_09F7AE78::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -83725,7 +83725,7 @@ vt_09F7AE78::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -83860,7 +83860,7 @@ vt_09F7AE78::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d0__5GoodsP5Skill
+	.4byte name__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d8__5GoodsP5Skill
@@ -83902,10 +83902,10 @@ vt_09F7AE78::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_238__5GoodsP5Skill
+	.4byte showUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte skill_240__5GoodsP5Skill
+	.4byte showForceUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -83988,7 +83988,7 @@ vt_09F7B158::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -84003,7 +84003,7 @@ vt_09F7B158::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -84138,7 +84138,7 @@ vt_09F7B158::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d0__5GoodsP5Skill
+	.4byte name__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d8__5GoodsP5Skill
@@ -84180,10 +84180,10 @@ vt_09F7B158::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_238__5GoodsP5Skill
+	.4byte showUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte skill_240__5GoodsP5Skill
+	.4byte showForceUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -84266,7 +84266,7 @@ vt_09F7B438::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -84281,7 +84281,7 @@ vt_09F7B438::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -84416,7 +84416,7 @@ vt_09F7B438::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d0__5GoodsP5Skill
+	.4byte name__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d8__5GoodsP5Skill
@@ -84458,10 +84458,10 @@ vt_09F7B438::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_238__5GoodsP5Skill
+	.4byte showUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte skill_240__5GoodsP5Skill
+	.4byte showForceUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -84544,7 +84544,7 @@ vt_09F7B718::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -84559,7 +84559,7 @@ vt_09F7B718::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -84694,7 +84694,7 @@ vt_09F7B718::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d0__5GoodsP5Skill
+	.4byte name__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d8__5GoodsP5Skill
@@ -84736,10 +84736,10 @@ vt_09F7B718::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_238__5GoodsP5Skill
+	.4byte showUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte skill_240__5GoodsP5Skill
+	.4byte showForceUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -84822,7 +84822,7 @@ vt_09F7B9F8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -84837,7 +84837,7 @@ vt_09F7B9F8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -84972,7 +84972,7 @@ vt_09F7B9F8::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d0__5GoodsP5Skill
+	.4byte name__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d8__5GoodsP5Skill
@@ -85014,10 +85014,10 @@ vt_09F7B9F8::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_238__5GoodsP5Skill
+	.4byte showUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte skill_240__5GoodsP5Skill
+	.4byte showForceUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -85100,7 +85100,7 @@ vt_09F7BCD8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -85115,7 +85115,7 @@ vt_09F7BCD8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -85250,7 +85250,7 @@ vt_09F7BCD8::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d0__5GoodsP5Skill
+	.4byte name__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d8__5GoodsP5Skill
@@ -85292,10 +85292,10 @@ vt_09F7BCD8::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_238__5GoodsP5Skill
+	.4byte showUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte skill_240__5GoodsP5Skill
+	.4byte showForceUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -85378,7 +85378,7 @@ vt_09F7BFB8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -85393,7 +85393,7 @@ vt_09F7BFB8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -85528,7 +85528,7 @@ vt_09F7BFB8::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d0__5GoodsP5Skill
+	.4byte name__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d8__5GoodsP5Skill
@@ -85570,10 +85570,10 @@ vt_09F7BFB8::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_238__5GoodsP5Skill
+	.4byte showUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte skill_240__5GoodsP5Skill
+	.4byte showForceUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -85656,7 +85656,7 @@ vt_09F7C298::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -85671,7 +85671,7 @@ vt_09F7C298::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -85806,7 +85806,7 @@ vt_09F7C298::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d0__5GoodsP5Skill
+	.4byte name__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d8__5GoodsP5Skill
@@ -85848,10 +85848,10 @@ vt_09F7C298::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_238__5GoodsP5Skill
+	.4byte showUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte skill_240__5GoodsP5Skill
+	.4byte showForceUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -85934,7 +85934,7 @@ vt_09F7C578::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -85949,7 +85949,7 @@ vt_09F7C578::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -86084,7 +86084,7 @@ vt_09F7C578::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d0__5GoodsP5Skill
+	.4byte name__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d8__5GoodsP5Skill
@@ -86126,10 +86126,10 @@ vt_09F7C578::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_238__5GoodsP5Skill
+	.4byte showUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte skill_240__5GoodsP5Skill
+	.4byte showForceUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -86212,7 +86212,7 @@ vt_09F7C858::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -86227,7 +86227,7 @@ vt_09F7C858::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -86362,7 +86362,7 @@ vt_09F7C858::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d0__5GoodsP5Skill
+	.4byte name__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d8__5GoodsP5Skill
@@ -86404,10 +86404,10 @@ vt_09F7C858::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_238__5GoodsP5Skill
+	.4byte showUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte skill_240__5GoodsP5Skill
+	.4byte showForceUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -86490,7 +86490,7 @@ vt_09F7CB38::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -86505,7 +86505,7 @@ vt_09F7CB38::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -86640,7 +86640,7 @@ vt_09F7CB38::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d0__5GoodsP5Skill
+	.4byte name__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d8__5GoodsP5Skill
@@ -86682,10 +86682,10 @@ vt_09F7CB38::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_238__5GoodsP5Skill
+	.4byte showUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte skill_240__5GoodsP5Skill
+	.4byte showForceUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -86768,7 +86768,7 @@ vt_09F7CE18::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -86783,7 +86783,7 @@ vt_09F7CE18::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -86918,7 +86918,7 @@ vt_09F7CE18::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d0__5GoodsP5Skill
+	.4byte name__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d8__5GoodsP5Skill
@@ -86960,10 +86960,10 @@ vt_09F7CE18::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_238__5GoodsP5Skill
+	.4byte showUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte skill_240__5GoodsP5Skill
+	.4byte showForceUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -87046,7 +87046,7 @@ vt_09F7D0F8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -87061,7 +87061,7 @@ vt_09F7D0F8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -87196,7 +87196,7 @@ vt_09F7D0F8::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d0__5GoodsP5Skill
+	.4byte name__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d8__5GoodsP5Skill
@@ -87238,10 +87238,10 @@ vt_09F7D0F8::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_238__5GoodsP5Skill
+	.4byte showUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte skill_240__5GoodsP5Skill
+	.4byte showForceUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -87324,7 +87324,7 @@ vt_09F7D3D8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -87339,7 +87339,7 @@ vt_09F7D3D8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -87474,7 +87474,7 @@ vt_09F7D3D8::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d0__5GoodsP5Skill
+	.4byte name__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d8__5GoodsP5Skill
@@ -87516,10 +87516,10 @@ vt_09F7D3D8::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_238__5GoodsP5Skill
+	.4byte showUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte skill_240__5GoodsP5Skill
+	.4byte showForceUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -87602,7 +87602,7 @@ vt_09F7D6B8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -87617,7 +87617,7 @@ vt_09F7D6B8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -87752,7 +87752,7 @@ vt_09F7D6B8::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d0__5GoodsP5Skill
+	.4byte name__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d8__5GoodsP5Skill
@@ -87794,10 +87794,10 @@ vt_09F7D6B8::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_238__5GoodsP5Skill
+	.4byte showUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte skill_240__5GoodsP5Skill
+	.4byte showForceUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0048
@@ -87883,7 +87883,7 @@ vt_09F7D9A0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -87898,7 +87898,7 @@ vt_09F7D9A0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -88033,7 +88033,7 @@ vt_09F7D9A0::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d0__5GoodsP5Skill
+	.4byte name__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d8__5GoodsP5Skill
@@ -88075,10 +88075,10 @@ vt_09F7D9A0::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_238__5GoodsP5Skill
+	.4byte showUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte skill_240__5GoodsP5Skill
+	.4byte showForceUseMessage__5GoodsP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -88161,7 +88161,7 @@ vt_09F7DC80::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -88176,7 +88176,7 @@ vt_09F7DC80::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08083174
@@ -88268,7 +88268,7 @@ vt_09F7DD98::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -88283,7 +88283,7 @@ vt_09F7DD98::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08083174
@@ -88375,7 +88375,7 @@ vt_09F7DEB0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -88390,7 +88390,7 @@ vt_09F7DEB0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_080652DC
@@ -88443,7 +88443,7 @@ vt_09F7DF60::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -88458,7 +88458,7 @@ vt_09F7DF60::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08065798
@@ -88583,7 +88583,7 @@ vt_09F7E0D0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -88598,7 +88598,7 @@ vt_09F7E0D0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_080659BC
@@ -88749,7 +88749,7 @@ vt_09F7E280::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -88764,7 +88764,7 @@ vt_09F7E280::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08066004
@@ -88816,7 +88816,7 @@ vt_09F7E328::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -88831,7 +88831,7 @@ vt_09F7E328::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_080662C4
@@ -88890,7 +88890,7 @@ vt_09F7E3E8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -88905,7 +88905,7 @@ vt_09F7E3E8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_29
@@ -88934,7 +88934,7 @@ vt_09F7E458::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -88949,7 +88949,7 @@ vt_09F7E458::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0806E90C
@@ -89020,7 +89020,7 @@ vt_09F7E538::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -89035,7 +89035,7 @@ vt_09F7E538::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808735C
@@ -89133,7 +89133,7 @@ vt_09F7E660::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -89148,7 +89148,7 @@ vt_09F7E660::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0806D9F4
@@ -89228,7 +89228,7 @@ vt_09F7E758::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -89243,7 +89243,7 @@ vt_09F7E758::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808735C
@@ -89347,7 +89347,7 @@ vt_09F7E890::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -89362,7 +89362,7 @@ vt_09F7E890::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0806D9F4
@@ -89442,7 +89442,7 @@ vt_09F7E988::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -89457,7 +89457,7 @@ vt_09F7E988::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0806D9F4
@@ -89527,10 +89527,10 @@ _vt.9Singleton::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 
 _vt.4Base::
 	.2byte 0
@@ -89556,7 +89556,7 @@ _vt.4Base::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -89571,7 +89571,7 @@ _vt.4Base::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 _vt.12FitAllocator::
 	.2byte 0
@@ -89605,7 +89605,7 @@ _vt.3Irc::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -89620,7 +89620,7 @@ _vt.3Irc::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 _vt.10IrcManager::
 	.2byte 0
@@ -89657,7 +89657,7 @@ _vt.5Clock::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -89672,7 +89672,7 @@ _vt.5Clock::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 _vt.12ClockManager::
 	.2byte 0
@@ -89709,7 +89709,7 @@ _vt.12PostSysClock::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -89724,7 +89724,7 @@ _vt.12PostSysClock::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 _vt.21PostSysClockSingleton::
 	.2byte 0
@@ -89761,7 +89761,7 @@ _vt.12PostAppClock::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -89776,7 +89776,7 @@ _vt.12PostAppClock::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 _vt.21PostAppClockSingleton::
 	.2byte 0
@@ -89813,7 +89813,7 @@ _vt.8AppClock::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -89828,7 +89828,7 @@ _vt.8AppClock::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 _vt.17AppClockSingleton::
 	.2byte 0
@@ -89865,7 +89865,7 @@ _vt.11PreAppClock::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -89880,7 +89880,7 @@ _vt.11PreAppClock::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 _vt.20PreAppClockSingleton::
 	.2byte 0
@@ -89917,7 +89917,7 @@ _vt.8SysClock::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -89932,7 +89932,7 @@ _vt.8SysClock::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 _vt.17SysClockSingleton::
 	.2byte 0
@@ -89969,7 +89969,7 @@ _vt.11PreSysClock::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -89984,7 +89984,7 @@ _vt.11PreSysClock::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 _vt.20PreSysClockSingleton::
 	.2byte 0
@@ -90029,7 +90029,7 @@ vt_09F7EF30::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -90044,7 +90044,7 @@ vt_09F7EF30::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 vt_09F7EF98::
 	.2byte 0
@@ -90081,7 +90081,7 @@ vt_09F7EFB0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -90096,7 +90096,7 @@ vt_09F7EFB0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 vt_09F7F018::
 	.2byte 0
@@ -90133,7 +90133,7 @@ vt_09F7F030::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -90148,7 +90148,7 @@ vt_09F7F030::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 vt_09F7F098::
 	.2byte 0
@@ -90185,7 +90185,7 @@ vt_09F7F0B0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -90200,7 +90200,7 @@ vt_09F7F0B0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 vt_09F7F118::
 	.2byte 0
@@ -90237,7 +90237,7 @@ vt_09F7F130::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -90252,7 +90252,7 @@ vt_09F7F130::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 vt_09F7F198::
 	.2byte 0
@@ -90289,7 +90289,7 @@ _vt.18SelectKeyLongPress::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -90304,7 +90304,7 @@ _vt.18SelectKeyLongPress::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 vt_09F7F218::
 	.2byte 0
@@ -90341,7 +90341,7 @@ _vt.14SelectKeyPress::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -90356,7 +90356,7 @@ _vt.14SelectKeyPress::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 vt_09F7F298::
 	.2byte 0
@@ -90393,7 +90393,7 @@ _vt.17StartKeyLongPress::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -90408,7 +90408,7 @@ _vt.17StartKeyLongPress::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 vt_09F7F318::
 	.2byte 0
@@ -90445,7 +90445,7 @@ _vt.13StartKeyPress::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -90460,7 +90460,7 @@ _vt.13StartKeyPress::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 vt_09F7F398::
 	.2byte 0
@@ -90497,7 +90497,7 @@ _vt.13RKeyLongPress::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -90512,7 +90512,7 @@ _vt.13RKeyLongPress::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 vt_09F7F418::
 	.2byte 0
@@ -90549,7 +90549,7 @@ _vt.9RKeyPress::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -90564,7 +90564,7 @@ _vt.9RKeyPress::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 vt_09F7F498::
 	.2byte 0
@@ -90601,7 +90601,7 @@ _vt.13LKeyLongPress::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -90616,7 +90616,7 @@ _vt.13LKeyLongPress::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 vt_09F7F518::
 	.2byte 0
@@ -90653,7 +90653,7 @@ _vt.9LKeyPress::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -90668,7 +90668,7 @@ _vt.9LKeyPress::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 vt_09F7F598::
 	.2byte 0
@@ -90705,7 +90705,7 @@ _vt.13BKeyLongPress::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -90720,7 +90720,7 @@ _vt.13BKeyLongPress::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 vt_09F7F618::
 	.2byte 0
@@ -90757,7 +90757,7 @@ _vt.9BKeyPress::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -90772,7 +90772,7 @@ _vt.9BKeyPress::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 vt_09F7F698::
 	.2byte 0
@@ -90809,7 +90809,7 @@ _vt.13AKeyLongPress::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -90824,7 +90824,7 @@ _vt.13AKeyLongPress::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 vt_09F7F718::
 	.2byte 0
@@ -90861,7 +90861,7 @@ _vt.9AKeyPress::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -90876,7 +90876,7 @@ _vt.9AKeyPress::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 vt_09F7F798::
 	.2byte 0
@@ -90913,7 +90913,7 @@ _vt.17RightKeyLongPress::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -90928,7 +90928,7 @@ _vt.17RightKeyLongPress::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 vt_09F7F818::
 	.2byte 0
@@ -90965,7 +90965,7 @@ _vt.13RightKeyPress::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -90980,7 +90980,7 @@ _vt.13RightKeyPress::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 vt_09F7F898::
 	.2byte 0
@@ -91017,7 +91017,7 @@ _vt.16LeftKeyLongPress::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -91032,7 +91032,7 @@ _vt.16LeftKeyLongPress::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 vt_09F7F918::
 	.2byte 0
@@ -91069,7 +91069,7 @@ _vt.12LeftKeyPress::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -91084,7 +91084,7 @@ _vt.12LeftKeyPress::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 vt_09F7F998::
 	.2byte 0
@@ -91121,7 +91121,7 @@ _vt.16DownKeyLongPress::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -91136,7 +91136,7 @@ _vt.16DownKeyLongPress::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 vt_09F7FA18::
 	.2byte 0
@@ -91173,7 +91173,7 @@ _vt.12DownKeyPress::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -91188,7 +91188,7 @@ _vt.12DownKeyPress::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 vt_09F7FA98::
 	.2byte 0
@@ -91225,7 +91225,7 @@ _vt.14UpKeyLongPress::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -91240,7 +91240,7 @@ _vt.14UpKeyLongPress::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 vt_09F7FB18::
 	.2byte 0
@@ -91277,7 +91277,7 @@ _vt.10UpKeyPress::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -91292,7 +91292,7 @@ _vt.10UpKeyPress::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 vt_09F7FB98::
 	.2byte 0
@@ -91329,7 +91329,7 @@ _vt.6KeyPad::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -91344,7 +91344,7 @@ _vt.6KeyPad::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 vt_09F7FC18::
 	.2byte 0
@@ -91397,7 +91397,7 @@ vt_09F7FC50::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -91412,7 +91412,7 @@ vt_09F7FC50::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0806D744
@@ -91474,7 +91474,7 @@ vt_09F7FD18::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -91489,7 +91489,7 @@ vt_09F7FD18::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0806D9F4
@@ -91569,7 +91569,7 @@ vt_09F7FE10::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -91584,7 +91584,7 @@ vt_09F7FE10::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0806DDA0
@@ -91667,7 +91667,7 @@ vt_09F7FF40::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806E308
+	.4byte Message_dtor
 
 vt_09F7FF50::
 	.2byte 0
@@ -91693,7 +91693,7 @@ vt_09F7FF50::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -91708,7 +91708,7 @@ vt_09F7FF50::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0806E6D8
@@ -91751,7 +91751,7 @@ vt_09F7FFE0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -91766,7 +91766,7 @@ vt_09F7FFE0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0806E90C
@@ -91831,7 +91831,7 @@ vt_09F800B0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -91846,7 +91846,7 @@ vt_09F800B0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0806ED2C
@@ -91904,7 +91904,7 @@ vt_09F80168::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -91919,7 +91919,7 @@ vt_09F80168::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08089520
@@ -91984,7 +91984,7 @@ vt_09F80238::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -91999,7 +91999,7 @@ vt_09F80238::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08089520
@@ -92085,7 +92085,7 @@ vt_09F80340::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -92100,7 +92100,7 @@ vt_09F80340::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08089520
@@ -92144,7 +92144,7 @@ vt_09F803D8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -92159,7 +92159,7 @@ vt_09F803D8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08089520
@@ -92203,7 +92203,7 @@ vt_09F80470::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -92218,7 +92218,7 @@ vt_09F80470::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08089520
@@ -92262,7 +92262,7 @@ vt_09F80508::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -92277,7 +92277,7 @@ vt_09F80508::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0806FC54
@@ -92341,7 +92341,7 @@ vt_09F805D0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -92356,7 +92356,7 @@ vt_09F805D0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0806FEBC
@@ -92411,7 +92411,7 @@ vt_09F80680::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -92426,7 +92426,7 @@ vt_09F80680::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0806FFBC
@@ -92503,7 +92503,7 @@ vt_09F80770::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -92518,7 +92518,7 @@ vt_09F80770::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08070478
@@ -92553,7 +92553,7 @@ vt_09F807F0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -92568,7 +92568,7 @@ vt_09F807F0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_105
@@ -92693,7 +92693,7 @@ vt_09F80960::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -92708,7 +92708,7 @@ vt_09F80960::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_105
@@ -92833,7 +92833,7 @@ vt_09F80AD0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -92848,7 +92848,7 @@ vt_09F80AD0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0806E90C
@@ -92919,7 +92919,7 @@ vt_09F80BB0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -92934,7 +92934,7 @@ vt_09F80BB0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08071364
@@ -93002,7 +93002,7 @@ vt_09F80C88::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -93017,7 +93017,7 @@ vt_09F80C88::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08071828
@@ -93058,7 +93058,7 @@ vt_09F80D18::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -93073,7 +93073,7 @@ vt_09F80D18::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0806D9F4
@@ -93153,7 +93153,7 @@ vt_09F80E10::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -93168,7 +93168,7 @@ vt_09F80E10::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0806D9F4
@@ -93248,7 +93248,7 @@ vt_09F80F08::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -93263,7 +93263,7 @@ vt_09F80F08::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0806D9F4
@@ -93343,7 +93343,7 @@ vt_09F81000::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -93358,7 +93358,7 @@ vt_09F81000::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0806D9F4
@@ -93438,7 +93438,7 @@ vt_09F810F8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -93453,7 +93453,7 @@ vt_09F810F8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 vt_09F81160::
 	.2byte 0
@@ -93479,7 +93479,7 @@ vt_09F81160::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -93494,7 +93494,7 @@ vt_09F81160::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08072424
@@ -93540,7 +93540,7 @@ vt_09F811F8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -93555,7 +93555,7 @@ vt_09F811F8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 vt_09F81260::
 	.2byte 0
@@ -93592,7 +93592,7 @@ vt_09F81278::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -93607,7 +93607,7 @@ vt_09F81278::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 vt_09F812E0::
 	.2byte 0
@@ -93644,7 +93644,7 @@ vt_09F812F8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -93659,7 +93659,7 @@ vt_09F812F8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0806FFBC
@@ -93741,43 +93741,43 @@ _vt.4Unit.10UnitObject::
 	.4byte _._4Unit + 1
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 
 _vt.4Unit::
 	.2byte 0
@@ -93803,7 +93803,7 @@ _vt.4Unit::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -93818,7 +93818,7 @@ _vt.4Unit::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -93923,13 +93923,13 @@ _vt.4Unit::
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -93953,10 +93953,10 @@ _vt.4Unit::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -93977,13 +93977,13 @@ _vt.4Unit::
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -94069,7 +94069,7 @@ _vt.7UnitDie::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -94084,7 +94084,7 @@ _vt.7UnitDie::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 _vt.16UnitDieSingleton::
 	.2byte 0
@@ -94121,7 +94121,7 @@ _vt.10UnitEscape::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -94136,7 +94136,7 @@ _vt.10UnitEscape::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 _vt.19UnitEscapeSingleton::
 	.2byte 0
@@ -94173,7 +94173,7 @@ _vt.10UnitRevive::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -94188,7 +94188,7 @@ _vt.10UnitRevive::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 _vt.19UnitReviveSingleton::
 	.2byte 0
@@ -94225,7 +94225,7 @@ _vt.8UnitJoin::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -94240,7 +94240,7 @@ _vt.8UnitJoin::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 _vt.17UnitJoinSingleton::
 	.2byte 0
@@ -94277,7 +94277,7 @@ _vt.6Resume::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -94292,7 +94292,7 @@ _vt.6Resume::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 _vt.15ResumeSingleton::
 	.2byte 0
@@ -94329,7 +94329,7 @@ _vt.7Suspend::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -94344,7 +94344,7 @@ _vt.7Suspend::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 _vt.16SuspendSingleton::
 	.2byte 0
@@ -94366,43 +94366,43 @@ _vt.6Object::
 	.4byte sub_080C164C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 
 _vt.10UnitTarget::
 	.2byte 0
@@ -94428,7 +94428,7 @@ _vt.10UnitTarget::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -94443,7 +94443,7 @@ _vt.10UnitTarget::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte attackdata_68__10UnitTarget
@@ -94491,7 +94491,7 @@ _vt.10UnitTarget::
 	.4byte removeTarget__10UnitTargetP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getNumTargets__C10UnitTarget
+	.4byte numTargets__C10UnitTarget
 	.2byte 0
 	.2byte 0
 	.4byte attackdata_e8__C10UnitTarget
@@ -94541,7 +94541,7 @@ _vt.16UnitTargetChoice::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -94556,7 +94556,7 @@ _vt.16UnitTargetChoice::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte attackdata_68__10UnitTarget
@@ -94604,7 +94604,7 @@ _vt.16UnitTargetChoice::
 	.4byte removeTarget__10UnitTargetP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getNumTargets__C10UnitTarget
+	.4byte numTargets__C10UnitTarget
 	.2byte 0
 	.2byte 0
 	.4byte attackdata_e8__C10UnitTarget
@@ -94725,7 +94725,7 @@ vt_09F81DD0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -94740,7 +94740,7 @@ vt_09F81DD0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -94869,91 +94869,91 @@ vt_09F81DD0::
 	.4byte sub_0807A1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 
 vt_09F82070::
 	.2byte -32
@@ -95026,7 +95026,7 @@ vt_09F820E8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -95041,7 +95041,7 @@ vt_09F820E8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -95176,10 +95176,10 @@ vt_09F820E8::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -95456,7 +95456,7 @@ vt_09F82558::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -95471,7 +95471,7 @@ vt_09F82558::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807CA78
@@ -95548,7 +95548,7 @@ vt_09F82648::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -95563,7 +95563,7 @@ vt_09F82648::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807D24C
@@ -95598,7 +95598,7 @@ vt_09F826C8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -95613,7 +95613,7 @@ vt_09F826C8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0806E90C
@@ -95684,7 +95684,7 @@ vt_09F827A8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -95699,7 +95699,7 @@ vt_09F827A8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807DED4
@@ -95776,7 +95776,7 @@ vt_09F82898::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -95791,7 +95791,7 @@ vt_09F82898::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0806D9F4
@@ -95871,7 +95871,7 @@ vt_09F82990::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -95886,7 +95886,7 @@ vt_09F82990::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807F424
@@ -95930,7 +95930,7 @@ vt_09F82A28::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -95945,7 +95945,7 @@ vt_09F82A28::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -96195,7 +96195,7 @@ _vt.10GuestSkill::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -96210,7 +96210,7 @@ _vt.10GuestSkill::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -96345,7 +96345,7 @@ _vt.10GuestSkill::
 	.4byte id__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d0__10GuestSkillP5Skill
+	.4byte name__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte skill_1d8__10GuestSkillP5Skill
@@ -96387,10 +96387,10 @@ _vt.10GuestSkill::
 	.4byte priority__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_238__10GuestSkillP5Skill
+	.4byte showUseMessage__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
-	.4byte skill_240__10GuestSkillP5Skill
+	.4byte showForceUseMessage__10GuestSkillP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C10GuestSkill
@@ -96408,7 +96408,7 @@ _vt.10GuestSkill::
 	.4byte sfxNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte missChance__C10GuestSkill
+	.4byte hitChance__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C10GuestSkill
@@ -96507,7 +96507,7 @@ vt_09F83010::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -96522,7 +96522,7 @@ vt_09F83010::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte unit_68__4Unit
@@ -96657,10 +96657,10 @@ vt_09F83010::
 	.4byte getMaxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1c8__C4Unit
+	.4byte getIQ__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d0__C4Unit
+	.4byte getSpeed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
@@ -96898,7 +96898,7 @@ vt_09F83418::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -96913,7 +96913,7 @@ vt_09F83418::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0806D9F4
@@ -97014,7 +97014,7 @@ vt_09F83548::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -97029,7 +97029,7 @@ vt_09F83548::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -97285,7 +97285,7 @@ vt_09F83810::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -97300,7 +97300,7 @@ vt_09F83810::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082980
@@ -97410,7 +97410,7 @@ vt_09F83958::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -97425,7 +97425,7 @@ vt_09F83958::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08078590
@@ -97684,7 +97684,7 @@ vt_09F83C28::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -97699,7 +97699,7 @@ vt_09F83C28::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08083174
@@ -97782,7 +97782,7 @@ vt_09F83D28::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -97797,7 +97797,7 @@ vt_09F83D28::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08083CF4
@@ -97835,7 +97835,7 @@ vt_09F83DB0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -97850,7 +97850,7 @@ vt_09F83DB0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08084038
@@ -97891,7 +97891,7 @@ vt_09F83E40::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -97906,7 +97906,7 @@ vt_09F83E40::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0806E90C
@@ -97977,7 +97977,7 @@ vt_09F83F20::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -97992,7 +97992,7 @@ vt_09F83F20::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08084AE4
@@ -98066,7 +98066,7 @@ vt_09F84008::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -98081,7 +98081,7 @@ vt_09F84008::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08085130
@@ -98116,7 +98116,7 @@ vt_09F84088::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -98131,7 +98131,7 @@ vt_09F84088::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_080859E4
@@ -98166,7 +98166,7 @@ vt_09F84108::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -98181,7 +98181,7 @@ vt_09F84108::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08085D84
@@ -98306,7 +98306,7 @@ vt_09F84278::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -98321,7 +98321,7 @@ vt_09F84278::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08085F10
@@ -98446,7 +98446,7 @@ vt_09F843E8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -98461,7 +98461,7 @@ vt_09F843E8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08086084
@@ -98586,7 +98586,7 @@ vt_09F84558::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -98601,7 +98601,7 @@ vt_09F84558::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08086238
@@ -98726,7 +98726,7 @@ vt_09F846C8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -98741,7 +98741,7 @@ vt_09F846C8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08086408
@@ -98866,7 +98866,7 @@ vt_09F84838::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -98881,7 +98881,7 @@ vt_09F84838::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08089604
@@ -98970,7 +98970,7 @@ vt_09F84948::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -98985,7 +98985,7 @@ vt_09F84948::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_080867D4
@@ -99035,7 +99035,7 @@ vt_09F849F0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -99050,7 +99050,7 @@ vt_09F849F0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0806D9F4
@@ -99130,7 +99130,7 @@ vt_09F84AE8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -99145,7 +99145,7 @@ vt_09F84AE8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0806FFBC
@@ -99263,7 +99263,7 @@ vt_09F84C40::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -99278,7 +99278,7 @@ vt_09F84C40::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 vt_09F84CA8::
 	.2byte 0
@@ -99289,31 +99289,31 @@ vt_09F84CA8::
 	.4byte sub_080C1740
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 
 vt_09F84D00::
 	.2byte -32
@@ -99374,7 +99374,7 @@ vt_09F84D58::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -99389,7 +99389,7 @@ vt_09F84D58::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 
 vt_09F84DC0::
 	.2byte 0
@@ -99415,7 +99415,7 @@ vt_09F84DC0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -99430,7 +99430,7 @@ vt_09F84DC0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0806DDA0
@@ -99537,7 +99537,7 @@ vt_09F84F00::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -99552,7 +99552,7 @@ vt_09F84F00::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808735C
@@ -99716,7 +99716,7 @@ vt_09F850A8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -99731,7 +99731,7 @@ vt_09F850A8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08089520
@@ -99775,7 +99775,7 @@ vt_09F85140::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -99790,7 +99790,7 @@ vt_09F85140::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08089604
@@ -99834,7 +99834,7 @@ vt_09F851D8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -99849,7 +99849,7 @@ vt_09F851D8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08089604
@@ -99935,7 +99935,7 @@ vt_09F852E0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -99950,7 +99950,7 @@ vt_09F852E0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08089604
@@ -99994,7 +99994,7 @@ vt_09F85378::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -100009,7 +100009,7 @@ vt_09F85378::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08089604
@@ -100053,7 +100053,7 @@ vt_09F85410::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -100068,7 +100068,7 @@ vt_09F85410::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08089604
@@ -100112,7 +100112,7 @@ vt_09F854A8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -100127,7 +100127,7 @@ vt_09F854A8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08089604
@@ -100171,7 +100171,7 @@ vt_09F85540::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -100186,7 +100186,7 @@ vt_09F85540::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08089604
@@ -100230,7 +100230,7 @@ vt_09F855D8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -100245,7 +100245,7 @@ vt_09F855D8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08089604
@@ -100289,7 +100289,7 @@ vt_09F85670::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -100304,7 +100304,7 @@ vt_09F85670::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08089604
@@ -100348,7 +100348,7 @@ vt_09F85708::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -100363,7 +100363,7 @@ vt_09F85708::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_08089604
@@ -100407,7 +100407,7 @@ vt_09F857A0::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -100422,7 +100422,7 @@ vt_09F857A0::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0806E90C
@@ -100493,7 +100493,7 @@ vt_09F85880::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -100508,7 +100508,7 @@ vt_09F85880::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808AF08
@@ -100564,7 +100564,7 @@ vt_09F85938::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -100579,7 +100579,7 @@ vt_09F85938::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0806D9F4
@@ -100659,7 +100659,7 @@ vt_09F85A30::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -100674,7 +100674,7 @@ vt_09F85A30::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0806D9F4
@@ -100754,7 +100754,7 @@ vt_09F85B28::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -100769,7 +100769,7 @@ vt_09F85B28::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808BFF8
@@ -100855,7 +100855,7 @@ vt_09F85C30::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -100870,7 +100870,7 @@ vt_09F85C30::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808D5E8
@@ -100947,7 +100947,7 @@ vt_09F85D20::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -100962,7 +100962,7 @@ vt_09F85D20::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808E244
@@ -101000,7 +101000,7 @@ vt_09F85DA8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -101015,7 +101015,7 @@ vt_09F85DA8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808E64C
@@ -101064,31 +101064,31 @@ vt_09F85E70::
 	.4byte sub_080C1780
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_08091AD8
+	.4byte __pure_virtual
 
 vt_09F85EC8::
 	.2byte 0
@@ -101114,7 +101114,7 @@ vt_09F85EC8::
 	.4byte base_34__4Base
 	.2byte 0
 	.2byte 0
-	.4byte registerClock__4BasePvRC4BaseG9ClockData
+	.4byte listen__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte base_44__4Base
@@ -101129,7 +101129,7 @@ vt_09F85EC8::
 	.4byte base_5c__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_64__4Base
+	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808E930

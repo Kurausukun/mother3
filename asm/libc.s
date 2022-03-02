@@ -1598,8 +1598,8 @@ _08091ACC:
 	pop {pc}
 	.align 2, 0
 
-	thumb_func_start sub_08091AD8
-sub_08091AD8: @ 0x08091AD8
+	thumb_func_start __pure_virtual
+__pure_virtual: @ 0x08091AD8
 	push {lr}
 	bl __terminate
 	pop {pc}

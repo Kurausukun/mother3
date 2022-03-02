@@ -3,7 +3,7 @@
 	.include "asm/constants/m4a_constants.inc"
 
 	.syntax unified
-	.text
+	.section .text
 
 	thumb_func_start umul3232H32
 umul3232H32:

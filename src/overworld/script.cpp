@@ -67,7 +67,7 @@ u16 cmd_load_subscript(s32* sp) {
     case 0:
     case 2:
     case 3:
-        sub_08025620(sub_08036BD8(0), 5, temp);
+        sub_08025620(get_obj_direct(0), 5, temp);
         break;
     default:
         break;
@@ -155,7 +155,7 @@ u16 cmd_reload_room() {
         gUnknown_02016028._121bb_10 = 1;
         sub_0800AD6C();
         sub_08001B18(&gScript._9488, &gUnknown_03005314, 0x400);
-        gScript._0 = 6;
+        gScript.mode = 6;
         sub_08013D38();
         sub_0802610C(0);
     } else {
@@ -381,7 +381,7 @@ u16 cmd_F5(s32* sp) {
     case 0:
     case 2:
     case 3:
-        sub_08025620(sub_08036BD8(0), temp, b);
+        sub_08025620(get_obj_direct(0), temp, b);
         break;
     default:
         break;
@@ -549,7 +549,7 @@ u16 cmd_14(s32* sp) {
             gSave._220 = idx;
             break;
         default:
-            gScript._67ac = idx;
+            gScript.cur_room = idx;
             break;
         }
     }
@@ -557,7 +557,7 @@ u16 cmd_14(s32* sp) {
 }
 
 u16 cmd_push_map_id(s32* sp) {
-    scriptstack_push(gScript._67ac);
+    scriptstack_push(gScript.cur_room);
     return 0;
 }
 
@@ -1457,7 +1457,7 @@ u16 cmd_E7(s32* sp) {
                 gUnknown_02016028._121c8 = t;
                 scriptstack_push(gUnknown_02016028._121c8_b.b0 & 0xff);
                 if (gUnknown_02016028._121c8_b.b1 != 0) {
-                    sub_0802AFF0(spr->character, gUnknown_02016028._121c8_b.b1);
+                    heal_hp(spr->character, gUnknown_02016028._121c8_b.b1);
                     sub_0802B4D8();
                 }
             }
@@ -1545,7 +1545,7 @@ u16 cmd_heal_hp(s32* sp) {
         spr = get_obj(idx);
         if (spr) {
             if (spr->character <= 4) {
-                v7 = sub_0802AFF0(spr->character, hp);
+                v7 = heal_hp(spr->character, hp);
                 sub_0802B4D8();
             }
         }
@@ -1772,7 +1772,7 @@ u16 cmd_put_ocho(s32* sp) {
     gSave._78c = 0;
     gSave._78b = 0;
     gSave._78a = 0;
-    sub_08001ACC(gSave._78e, 0x80);
+    memclear(gSave._78e, 0x80);
     cnt = 0;
     for (u16 i = 0; i < gScript.party_count; ++i) {
         cd = get_char_stats(i);
@@ -3008,7 +3008,7 @@ _0801E3CC: .4byte 0x000121BB\n\
 }
 
 u16 cmd_4B(s32* sp) {
-    scriptstack_set(sp, 3, gScript._5980);
+    scriptstack_set(sp, 3, gScript.last_room);
     scriptstack_set(sp, 2, gScript._5982);
     scriptstack_set(sp, 1, gScript._5984);
     scriptstack_set(sp, 0, gScript._5986);
@@ -3337,7 +3337,7 @@ u16 cmd_play_anim(s32* sp) {
     if (!loop) {
         sub_08033484(obj->character);
     }
-    if (gScript._67ac == 632) {
+    if (gScript.cur_room == 632) { // osohe mirror room?
         if (anim - 1 == sub_08035C0C(obj->_86, obj->_88, 4)) {
             sub_08036BA4(obj);
         } else if (anim - 1 == sub_08035C0C(obj->_86, obj->_88, 0)) {

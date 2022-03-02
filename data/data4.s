@@ -247,8 +247,8 @@ gUnknown_09B8FFB0::
     .4byte sub_08055828+1
     .4byte sub_0805585C+1
 
-    .global gUnknown_09B8FFC0
-gUnknown_09B8FFC0:
+    .global gMenuData
+gMenuData:
     .incbin "baserom.gba", 0x01B8FFC0, 0x3dc80
 
 gUnknown_09BCDC40::

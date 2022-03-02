@@ -35,14 +35,14 @@
 
 #if DEBUG
 #define DBPRINT(...)                                                                               \
-    u16 hax[46];                                                                                   \
+    { u16 hax[46];                                                                                   \
     hax[0] = 0x46E4; /* mov r12, r12 */                                                            \
     hax[1] = 0xE02A; /* b pc + 88 */                                                               \
     hax[2] = 0x6464;                                                                               \
     hax[3] = 0;                                                                                    \
     hax[45] = 0x4770;                                                                              \
     sprintf((char*)&hax[4], __VA_ARGS__);                                                          \
-    ((void (*)())((u8*)(&hax) + 1))();
+    ((void (*)())((u8*)(&hax) + 1))(); }
 #else
 #define DBPRINT(...)
 #endif

@@ -57,7 +57,7 @@ sub_0806E820: @ 0x0806E820
 	adds r0, r7, #0
 	adds r1, r5, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -96,7 +96,7 @@ _0806E8DA:
 	adds r0, r4, #0
 	adds r0, #0x2c
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	adds r0, r4, #0
 	adds r0, #0x20
 	movs r1, #2

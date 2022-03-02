@@ -24,16 +24,18 @@ typedef void (*Callback)(Base*, Clock*);
 struct Listener {
     ~Listener() {}
 
-    Base* _4;
-    Vector<Listener*> _8;
+    Base* sender;
+    Base* trigger;
+    Base* receiver;
+    u32 callback;
+    u32 flags;
 };
 
-struct BaseNode {
-    Base* sender;
-    Base* receiver;
-    Base* base;
-    u32 mask;
-    Callback fn;
+struct Dispatcher {
+    ~Dispatcher() {}
+
+    void* _0;
+    Vector<Listener*> listeners;
 };
 
 struct ClockData {
@@ -51,20 +53,20 @@ public:
     virtual s32 base_24();
     virtual void base_2c();
     virtual void base_34();
-    virtual void registerClock(void* target, const Base& trigger, ClockData callback);
+    virtual void listen(void* target, const Base& trigger, ClockData callback);
     virtual void base_44();
     virtual void base_4c(u32 mask, Base& base, u32 mask2);
     virtual void base_54(const Base& clock);
     virtual void base_5c();
-    virtual void base_64();
+    virtual void clearNullOutgoing();
 
-    void free_fit1();
-    void free_fit2();
+    void releaseOutgoing();
+    void releaseIncoming();
 
-    s16 _0;
-    s16 _2;
-    SafeVector<Listener> mFit1;
-    Vector<Listener*> mFit2;
+    s16 num_active_listeners;
+    s16 lifetime;
+    SafeVector<Dispatcher> outgoing;
+    Vector<Listener*> incoming;
 };
 
 struct Unk : public Base {

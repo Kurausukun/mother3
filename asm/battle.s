@@ -455,7 +455,7 @@ _0805D9C6:
 	adds r0, r7, #0
 	adds r1, r6, #0
 	adds r2, r5, #0
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r1, r8
 	str r1, [sp, #0x38]
 	adds r0, r5, #0
@@ -963,16 +963,16 @@ sub_0805DF00: @ 0x0805DF00
 	bl sub_0806E2E8
 	adds r0, r4, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	adds r0, r5, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	adds r0, r6, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	mov r0, r8
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	b _0805DFEC
 _0805DF84:
 	movs r0, #0
@@ -1007,16 +1007,16 @@ _0805DF84:
 	bl sub_0806E2E8
 	adds r0, r4, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	adds r0, r5, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	adds r0, r6, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	mov r0, r8
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 _0805DFEC:
 	mov r7, r8
 	mov r1, sb
@@ -1069,17 +1069,17 @@ _0805E030:
 	bl sub_0806E374
 	adds r0, r4, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	adds r0, r5, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	adds r0, r6, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	adds r0, r7, #0
 _0805E072:
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	b _0805E0C2
 _0805E07A:
 	adds r0, r7, #0
@@ -1099,16 +1099,16 @@ _0805E07A:
 	bl sub_0806E374
 	adds r0, r4, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	adds r0, r5, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	adds r0, r6, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	adds r0, r7, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 _0805E0C2:
 	add r1, sp, #0x40
 	movs r0, #0
@@ -1120,7 +1120,7 @@ _0805E0C2:
 	bl sub_080735E0
 	add r0, sp, #4
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	add sp, #0x44
 	pop {r3, r4}
 	mov r8, r3
@@ -2109,7 +2109,7 @@ sub_0805E808: @ 0x0805E808
 	bl sub_080735E0
 	adds r0, r5, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	mov r0, sp
 	movs r1, #2
 	bl sub_0806DD48
@@ -2225,16 +2225,16 @@ onBattleLost: @ 0x0805E8F0
 	bl sub_080735E0
 	add r0, sp, #4
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	adds r0, r4, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	adds r0, r5, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	adds r0, r6, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	mov r0, r8
 	bl sub_0805E9BC
 	add sp, #0x40

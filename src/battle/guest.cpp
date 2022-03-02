@@ -3,28 +3,28 @@
 #include "battle/unitTarget.h"
 
 extern "C" u32 get_string(u32, u16);
-extern "C" u16 sub_08001DB0(u32);
+extern "C" u16 get_misctext_block(u32);
 extern "C" void sub_0806E238(Base*, u32, u32);
 
 extern ClockData gUnknown_080F6D8C;
 extern ClockData gUnknown_080F6D94;
 
 void battle_end_callback(Guest* g) {
-    g->base_64();
+    g->clearNullOutgoing();
 }
 
 SINGLETON_IMPL(Guest);
 
-Base* sub_08061E20(Base* b, u32 c) {
-    sub_0806E238(b, get_string(6, c), sub_08001DB0(6));
+Base* getName(Base* b, u32 idx) {
+    sub_0806E238(b, get_string(6, idx), get_misctext_block(6));
     return b;
 }
 
-Guest::Guest(u16 id) : _f8(id), mStats(&gCharStats[id]), mLevelInfo(&gLevelStatTable[id]) {
+Guest::Guest(u16 id) : mID(id), mStats(&gCharStats[id]), mLevelInfo(&gLevelStatTable[id]) {
     setupStats();
 
-    registerClock(BattleSingleton::get(), RoundBegin(), gUnknown_080F6D8C);
-    registerClock(BattleSingleton::get(), RoundEnd(), gUnknown_080F6D94);
+    listen(BattleSingleton::get(), RoundBegin(), gUnknown_080F6D8C);
+    listen(BattleSingleton::get(), RoundEnd(), gUnknown_080F6D94);
 }
 
 void Guest::setupStats() {
@@ -66,7 +66,7 @@ Unit* Guest::guest_2c0() {
 }
 
 bool Guest::guest_2e8(Skill* skill) {
-    UnitTarget target(skill->attackMult(), skill->skill_168());
+    UnitTarget target(skill->attackMult(), skill->getUser());
     u32 unk = target.attackdata_c8();
     for (int i = 0; i < target.attackdata_110(); ++i) {
         skill->skill_170(target.attackdata_118(i));
@@ -78,12 +78,12 @@ bool Guest::unit_178() {
     return false;
 }
 
-u32 Guest::unit_180() {
-    return _f8;
+u32 Guest::id() {
+    return mID;
 }
 
-Unit* Guest::unit_188(Unit* u) {
-    sub_08061E20(this, static_cast<Guest*>(u)->_f8);
+Unit* Guest::name(Unit* u) {
+    getName(this, static_cast<Guest*>(u)->mID);
     return this;
 }
 
@@ -104,13 +104,13 @@ bool Guest::unit_218() {
 }
 
 void guest_callback1(Guest* p) {
-    p->guest_2d0();
+    p->onRoundBegin();
 }
 
-void Guest::guest_2d0() {}
+void Guest::onRoundBegin() {}
 
 void guest_callback2(Guest* p) {
-    p->guest_2d8();
+    p->onRoundEnd();
 }
 
-void Guest::guest_2d8() {}
+void Guest::onRoundEnd() {}

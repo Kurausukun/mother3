@@ -1665,7 +1665,7 @@ _080777A8:
 	adds r4, #1
 _080777AA:
 	mov r0, sp
-	bl getNumTargets__C10UnitTarget
+	bl numTargets__C10UnitTarget
 	cmp r4, r0
 	blt _08077788
 	movs r4, #0
@@ -1738,7 +1738,7 @@ _08077824:
 	adds r7, #1
 _08077842:
 	mov r0, sp
-	bl getNumTargets__C10UnitTarget
+	bl numTargets__C10UnitTarget
 	cmp r7, r0
 	blt _08077824
 	adds r0, r6, #0
@@ -1840,7 +1840,7 @@ _080778D8:
 	bl attackdata_f8__C10UnitTargetP4Unit
 	adds r4, r0, #0
 	mov r0, sp
-	bl getNumTargets__C10UnitTarget
+	bl numTargets__C10UnitTarget
 	cmp r4, r0
 	bge _08077924
 	b _08077A34
@@ -1900,7 +1900,7 @@ _08077976:
 	adds r7, #1
 _08077994:
 	mov r0, sp
-	bl getNumTargets__C10UnitTarget
+	bl numTargets__C10UnitTarget
 	cmp r7, r0
 	blt _08077976
 	adds r0, r6, #0
@@ -2320,7 +2320,7 @@ _08077CCE:
 	bl sub_08083D14
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	add sp, #0x34
 	pop {r3, r4, r5}
 	mov r8, r3
@@ -2480,13 +2480,13 @@ sub_08077DBC: @ 0x08077DBC
 	bl sub_08073460
 	adds r0, r5, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	adds r0, r6, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	add r0, sp, #4
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	mov r0, r8
 	add sp, #0x28
 	pop {r3}

@@ -5,19 +5,50 @@
 
 extern u16 (*gScriptCmdTable[])(s32* sp);
 
+enum Mode {
+    MODE_NORMAL,
+    MODE_SCRIPT = 1,
+    MODE_TITLE_CARD = 4,
+    MODE_FADE_IN = 0x6,
+    MODE_LOAD_ROOM = 0x7,
+    MODE_PAUSE_MENU = 0xA,
+    MODE_MAP_VIEW = 0xD,
+    MODE_DROPDOWN = 0xE,
+    MODE_DEBUG_MENU = 0xF,
+};
+
 struct Script {
-    u8 _0;
+    u8 mode;
     u8 _1[0xe];
     u8 _f;
     u8 _10;
     u8 _11;
-    u8 _12[0x5980 - 0x12];
-    u16 _5980;
+    u8 _12[0x1c - 0x12];
+    u8 bg0_flags;
+    u8 _1d;
+    u8 _1e;
+    u8 _1f;
+    u8 bg1_flags;
+    u8 _21;
+    u8 _22;
+    u8 _23;
+    u8 bg2_flags;
+    u8 _25;
+    u8 _26;
+    u8 _27;
+    u8 _28[0x595a - 0x28];
+    u8 room_enter_dir;
+    u8 _595b[0x5978 - 0x595b];
+    u16 next_room;
+    u16 _597a;
+    u16 _597c;
+    u16 _597e;
+    u16 last_room;
     s16 _5982;
     s16 _5984;
     s16 _5986;
     u8 _5988[0x67ac - 0x5988];
-    u16 _67ac;
+    u16 cur_room;
     u8 _67ae[0x67b8 - 0x67ae];
     u16 cam_target;
     u8 _67ba[0x67c0 - 0x67ba];
@@ -27,7 +58,9 @@ struct Script {
     u8 _67c4_10 : 1;
     u8 _67c4_20 : 1;
     u8 _67c4_40 : 1;
-    u8 _67c5[0x1ad4];
+    u8 _67c5[0x7d08 - 0x67c5];
+    u32 path_memory[0x140];
+    u8 _8208[0x8299 - 0x8208];
     u8 party_count;
     u8 _829a;
     u8 _829b;

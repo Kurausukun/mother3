@@ -46,7 +46,7 @@
 	adds r0, #0x5c
 	ldrh r1, [r0]
 	adds r0, r6, #0
-	bl sub_08064D68__5GoodsUs
+	bl calcMessage__5GoodsUs
 	adds r2, r0, #0
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
@@ -70,7 +70,7 @@ _08064D2E:
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
 	adds r0, r6, #0
-	bl sub_08064D68__5GoodsUs
+	bl calcMessage__5GoodsUs
 	adds r2, r0, #0
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10

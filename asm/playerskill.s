@@ -380,7 +380,7 @@ sub_0807C718: @ 0x0807C718
 	bl _call_via_r2
 	mov r0, r8
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	movs r0, #0xe4
 	bl __builtin_new
 	mov r1, sl
@@ -484,7 +484,7 @@ sub_0807C718: @ 0x0807C718
 	adds r0, r6, #0
 	adds r1, r5, #0
 	mov r2, r8
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r1, sb
 	str r1, [sp, #0x2c]
 	mov r0, r8
@@ -1648,7 +1648,7 @@ sub_0807D0EC: @ 0x0807D0EC
 	adds r0, r5, #0
 	mov r1, r8
 	adds r2, r6, #0
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, sb
 	str r0, [sp, #0x38]
 	adds r0, r6, #0
@@ -2419,7 +2419,7 @@ _0807D804:
 	mov r0, sl
 	adds r1, r7, #0
 	mov r2, sb
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x44]
 	mov r0, sb
 	movs r1, #2
@@ -2433,7 +2433,7 @@ _0807D804:
 	mov r0, sl
 	adds r1, r7, #0
 	mov r2, sb
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x44]
 	mov r0, sb
 	movs r1, #2
@@ -2450,7 +2450,7 @@ _0807D804:
 	mov r0, sl
 	adds r1, r7, #0
 	mov r2, sb
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x44]
 	mov r0, sb
 	movs r1, #2
@@ -2464,7 +2464,7 @@ _0807D804:
 	mov r0, sl
 	adds r1, r7, #0
 	mov r2, sb
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x44]
 	mov r0, sb
 	movs r1, #2
@@ -2480,7 +2480,7 @@ _0807D804:
 	mov r0, sl
 	adds r1, r7, #0
 	mov r2, sb
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x44]
 	mov r0, sb
 	movs r1, #2
@@ -2496,7 +2496,7 @@ _0807D804:
 	mov r0, sl
 	adds r1, r7, #0
 	mov r2, sb
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x44]
 	mov r0, sb
 	movs r1, #2
@@ -2512,7 +2512,7 @@ _0807D804:
 	mov r0, sl
 	adds r1, r7, #0
 	mov r2, sb
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x44]
 	mov r0, sb
 	movs r1, #2
@@ -2529,7 +2529,7 @@ _0807D804:
 	mov r0, sl
 	adds r1, r7, #0
 	mov r2, sb
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x44]
 	mov r0, sb
 	movs r1, #2
@@ -2543,7 +2543,7 @@ _0807D804:
 	mov r0, sl
 	adds r1, r7, #0
 	mov r2, sb
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x44]
 	mov r0, sb
 	movs r1, #2
@@ -2557,7 +2557,7 @@ _0807D804:
 	mov r0, sl
 	adds r1, r7, #0
 	mov r2, sb
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x44]
 	mov r0, sb
 	movs r1, #2
@@ -2571,7 +2571,7 @@ _0807D804:
 	mov r0, sl
 	adds r1, r7, #0
 	mov r2, sb
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x44]
 	mov r0, sb
 	movs r1, #2
@@ -2587,7 +2587,7 @@ _0807D804:
 	mov r0, sl
 	adds r1, r7, #0
 	mov r2, sb
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x44]
 	mov r0, sb
 	movs r1, #2
@@ -2605,7 +2605,7 @@ _0807D804:
 	mov r0, sl
 	adds r1, r5, #0
 	mov r2, sb
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x44]
 	mov r0, sb
 	movs r1, #2
@@ -2627,7 +2627,7 @@ _0807D804:
 	mov r0, sl
 	mov r1, r8
 	mov r2, sb
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x44]
 	mov r0, sb
 	movs r1, #2
@@ -2645,7 +2645,7 @@ _0807D804:
 	mov r0, sl
 	mov r1, r8
 	mov r2, sb
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x44]
 	mov r0, sb
 	movs r1, #2
@@ -2663,7 +2663,7 @@ _0807D804:
 	mov r0, sl
 	adds r1, r5, #0
 	mov r2, sb
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x44]
 	mov r0, sb
 	movs r1, #2
@@ -4245,13 +4245,13 @@ _0807E694:
 	bl sub_0806E34C
 	adds r0, r7, #0
 	mov r1, sp
-	bl skill_1d0__5GoodsP5Skill
+	bl name__5GoodsP5Skill
 	mov r0, r8
 	adds r1, r7, #0
 	bl sub_0806E374
 	adds r0, r7, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	b _0807E714
 	.align 2, 0
 _0807E6F0: .4byte 0x0000FF22
@@ -4261,13 +4261,13 @@ _0807E6F4:
 	bl sub_0806E34C
 	adds r0, r7, #0
 	mov r1, sp
-	bl skill_1d0__5GoodsP5Skill
+	bl name__5GoodsP5Skill
 	mov r0, r8
 	adds r1, r7, #0
 	bl sub_0806E374
 	adds r0, r7, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 _0807E714:
 	movs r0, #0x5c
 	mov r2, sb
@@ -4324,7 +4324,7 @@ _0807E766:
 _0807E782:
 	mov r0, r8
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	mov r0, sp
 	movs r1, #2
 	bl _._5Goods
@@ -4352,7 +4352,7 @@ _0807E794:
 	bl _call_via_r2
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 _0807E7C8:
 	movs r0, #1
 	add sb, r0
@@ -4504,7 +4504,7 @@ _0807E7DE:
 	bl sub_08071150
 	mov r0, r8
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	movs r3, #0xb5
 	lsls r3, r3, #3
 	adds r4, r6, r3
@@ -4527,7 +4527,7 @@ _0807E7DE:
 	bl sub_08071150
 	mov r0, r8
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	ldr r3, _0807E990 @ =0x00000604
 	adds r4, r6, r3
 	ldr r1, [r6, #0x1c]
@@ -5033,7 +5033,7 @@ _0807ED1E:
 	mov r0, sl
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, r8
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -5048,7 +5048,7 @@ _0807ED1E:
 	mov r0, sl
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r1, r8
 	str r1, [sp, #0x20]
 	add r0, sp, #4
@@ -5066,7 +5066,7 @@ _0807ED1E:
 	mov r0, sl
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r3, r8
 	str r3, [sp, #0x20]
 	add r0, sp, #4
@@ -5081,7 +5081,7 @@ _0807ED1E:
 	mov r0, sl
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r4, r8
 	str r4, [sp, #0x20]
 	add r0, sp, #4
@@ -5099,7 +5099,7 @@ _0807ED1E:
 	mov r0, sl
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, r8
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -5114,7 +5114,7 @@ _0807ED1E:
 	mov r0, sl
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r1, r8
 	str r1, [sp, #0x20]
 	add r0, sp, #4
@@ -5129,7 +5129,7 @@ _0807ED1E:
 	mov r0, sl
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r3, r8
 	str r3, [sp, #0x20]
 	add r0, sp, #4
@@ -5144,7 +5144,7 @@ _0807ED1E:
 	mov r0, sl
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r4, r8
 	str r4, [sp, #0x20]
 	add r0, sp, #4
@@ -5161,7 +5161,7 @@ _0807ED1E:
 	mov r0, sl
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r5, r8
 	str r5, [sp, #0x20]
 	add r0, sp, #4
@@ -5181,7 +5181,7 @@ _0807ED1E:
 	mov r0, sl
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, r8
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -5197,7 +5197,7 @@ _0807ED1E:
 	mov r0, sl
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r1, r8
 	str r1, [sp, #0x20]
 	add r0, sp, #4
@@ -5213,7 +5213,7 @@ _0807ED1E:
 	mov r0, sl
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r3, r8
 	str r3, [sp, #0x20]
 	add r0, sp, #4
@@ -5237,7 +5237,7 @@ _0807ED1E:
 	mov r0, sl
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, r8
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -5256,7 +5256,7 @@ _0807ED1E:
 	mov r0, sl
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, r8
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -5300,7 +5300,7 @@ _0807EFD0:
 	mov r0, sl
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, r8
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -5320,7 +5320,7 @@ _0807EFD0:
 	mov r0, sl
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, r8
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -5339,7 +5339,7 @@ _0807EFD0:
 	mov r0, sl
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, r8
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -5358,7 +5358,7 @@ _0807EFD0:
 	mov r0, sl
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r4, r8
 	str r4, [sp, #0x20]
 	add r0, sp, #4
@@ -5378,7 +5378,7 @@ _0807EFD0:
 	mov r0, sl
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r0, r8
 	str r0, [sp, #0x20]
 	add r0, sp, #4
@@ -5394,7 +5394,7 @@ _0807EFD0:
 	mov r0, sl
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r1, r8
 	str r1, [sp, #0x20]
 	add r0, sp, #4
@@ -5410,7 +5410,7 @@ _0807EFD0:
 	mov r0, sl
 	adds r1, r6, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	mov r3, r8
 	str r3, [sp, #0x20]
 	add r0, sp, #4
@@ -6172,16 +6172,16 @@ sub_0807F648: @ 0x0807F648
 	str r0, [sp, #4]
 	adds r0, r4, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	adds r0, r5, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	adds r0, r6, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	mov r0, r8
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	ldr r0, [sp, #4]
 	ldr r1, [r0, #0x1c]
 	adds r1, #0x68
@@ -6359,16 +6359,16 @@ sub_0807F7DC: @ 0x0807F7DC
 	str r0, [sp, #4]
 	adds r0, r4, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	adds r0, r5, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	adds r0, r6, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	mov r0, r8
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	ldr r0, [sp, #4]
 	ldr r1, [r0, #0x1c]
 	adds r1, #0x68
@@ -6546,16 +6546,16 @@ sub_0807F964: @ 0x0807F964
 	str r0, [sp, #4]
 	adds r0, r4, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	adds r0, r5, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	adds r0, r6, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	mov r0, r8
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	ldr r0, [sp, #4]
 	ldr r1, [r0, #0x1c]
 	adds r1, #0x68
@@ -6734,16 +6734,16 @@ sub_0807FAF4: @ 0x0807FAF4
 	str r0, [sp, #4]
 	adds r0, r4, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	adds r0, r5, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	adds r0, r6, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	mov r0, r8
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	ldr r0, [sp, #4]
 	ldr r1, [r0, #0x1c]
 	adds r1, #0x68
@@ -6922,16 +6922,16 @@ sub_0807FC84: @ 0x0807FC84
 	str r0, [sp, #4]
 	adds r0, r4, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	adds r0, r5, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	adds r0, r6, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	mov r0, r8
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	ldr r0, [sp, #4]
 	ldr r1, [r0, #0x1c]
 	adds r1, #0x68
@@ -7104,16 +7104,16 @@ sub_0807FE08: @ 0x0807FE08
 	str r0, [sp, #4]
 	adds r0, r4, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	adds r0, r5, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	adds r0, r6, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	mov r0, r8
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	ldr r0, [sp, #4]
 	ldr r1, [r0, #0x1c]
 	adds r1, #0x68
@@ -7680,7 +7680,7 @@ sub_080802A4: @ 0x080802A4
 	bl sub_08083D14
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	adds r0, r4, #0
 	movs r1, #2
 	bl sub_08077D98
@@ -7798,7 +7798,7 @@ sub_080803C8: @ 0x080803C8
 	bl get_string
 	adds r4, r0, #0
 	movs r0, #0xd
-	bl sub_08001DB0
+	bl get_misctext_block
 	adds r2, r0, #0
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
@@ -7978,16 +7978,16 @@ _08080528:
 	bl sub_080734A0
 	adds r0, r4, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	adds r0, r5, #0
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	mov r0, r8
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 	add r0, sp, #4
 	movs r1, #2
-	bl sub_0806E308
+	bl Message_dtor
 
 	thumb_func_start sub_08080560
 sub_08080560: @ 0x08080560

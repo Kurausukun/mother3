@@ -118,7 +118,7 @@ _0806C4C6:
 	adds r0, r7, #0
 	adds r1, r5, #0
 	add r2, sp, #4
-	bl registerClock__4BasePvRC4BaseG9ClockData
+	bl listen__4BasePvRC4BaseG9ClockData
 	str r6, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2

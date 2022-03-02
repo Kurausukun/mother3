@@ -31,7 +31,7 @@ def parse_map(non_matching_funcs):
         line = map.readline()
         while not line.startswith('Linker script and memory map'):
             line = map.readline()
-        while not line.startswith('ROM'):
+        while not line.startswith('rom'):
             line = map.readline()
 
         prev_symbol = None
