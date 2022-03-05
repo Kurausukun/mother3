@@ -3,6 +3,8 @@
 
 #include "battle/skill.h"
 
+struct Player;
+
 struct GoodsInfo;
 
 class Goods : public Skill {
@@ -11,12 +13,12 @@ public:
     Goods(u16 idx, u32 unk, u16 a2);
     virtual ~Goods();
 
-    virtual void skill_150(Skill*, u32);
+    virtual void skill_150();
     virtual Skill* skill_1c0();
     virtual u32 skill_1a0();
     virtual u16 id() const;
-    virtual Skill* name(Skill*);
-    virtual Skill* skill_1d8(Skill*);
+    virtual Msg name() const;
+    virtual Msg skill_1d8() const;
     virtual u32 skill_1e0();
     virtual u32 effect() const;
     virtual u32 element() const;
@@ -28,8 +30,8 @@ public:
     virtual u32 ailmentChance() const;
     virtual u32 hasAction() const;
     virtual u32 priority() const;
-    virtual Skill* showUseMessage(Skill* s);
-    virtual Skill* showForceUseMessage(Skill* s);
+    virtual Msg showUseMessage() const;
+    virtual Msg showForceUseMessage() const;
     virtual u32 hasDim() const;
     virtual u32 animNo() const;
     virtual u32 successAnimNo() const;
@@ -45,7 +47,7 @@ public:
     virtual u32 goods_2a0() const;
     virtual u16 goods_2a8();
     virtual u32 goods_2b0();
-    virtual u32 goods_2b8();
+    virtual u32 goods_2b8() const;
     virtual bool goods_2c0();
     virtual u32 getType() const;
     virtual bool isConsumable() const;
@@ -53,10 +55,10 @@ public:
 
     u32 sub_08078410();
     void nullsub_28();
-    Goods* sub_080729B0();
-    Goods* getName(u16);
-    u16 calcMessage(u16 idx);
-    void sub_08073444(u16 idx);
+    static Player* tryCastPlayer(Unit*);
+    static Msg getName(u16);
+    u16 calcMessage(u16 idx) const;
+    static Msg sub_08073444(u16 idx);
 
     u32 _20;
     u32 _24;

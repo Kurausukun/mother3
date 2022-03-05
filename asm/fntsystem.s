@@ -2047,7 +2047,7 @@ _0806E1D4:
 	cmp r4, #0
 	bgt _0806E1D4
 	adds r0, r6, #0
-	bl sub_0806E274
+	bl __3Msg
 	adds r2, r5, #0
 	cmp r2, #0
 	beq _0806E21C
@@ -2069,7 +2069,7 @@ _0806E21C:
 	bl sub_0806E2B8
 	adds r0, r6, #0
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	adds r0, r7, #0
 	add sp, #0x18
 	pop {r4, r5, r6, r7}
@@ -2077,8 +2077,8 @@ _0806E21C:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_0806E238
-sub_0806E238: @ 0x0806E238
+	thumb_func_start __3MsgPvUi
+__3MsgPvUi: @ 0x0806E238
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r4, r1, #0
@@ -2111,9 +2111,9 @@ _0806E260:
 	.align 2, 0
 _0806E270: .4byte 0x0000FFFF
 
-	thumb_func_start sub_0806E274
-sub_0806E274: @ 0x0806E274
-	ldr r1, _0806E284 @ =vt_09F7FF40
+	thumb_func_start __3Msg
+__3Msg: @ 0x0806E274
+	ldr r1, _0806E284 @ =_vt.3Msg
 	str r1, [r0, #8]
 	movs r1, #0
 	str r1, [r0]
@@ -2121,7 +2121,7 @@ sub_0806E274: @ 0x0806E274
 	strh r1, [r0, #6]
 	bx lr
 	.align 2, 0
-_0806E284: .4byte vt_09F7FF40
+_0806E284: .4byte _vt.3Msg
 
 	thumb_func_start __5AssetPCUcUi
 __5AssetPCUcUi: @ 0x0806E288
@@ -2129,7 +2129,7 @@ __5AssetPCUcUi: @ 0x0806E288
 	adds r4, r0, #0
 	adds r6, r1, #0
 	adds r5, r2, #0
-	ldr r0, _0806E2B4 @ =vt_09F7FF40
+	ldr r0, _0806E2B4 @ =_vt.3Msg
 	str r0, [r4, #8]
 	lsls r0, r5, #1
 	bl __builtin_vec_new
@@ -2145,14 +2145,14 @@ __5AssetPCUcUi: @ 0x0806E288
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0806E2B4: .4byte vt_09F7FF40
+_0806E2B4: .4byte _vt.3Msg
 
 	thumb_func_start sub_0806E2B8
 sub_0806E2B8: @ 0x0806E2B8
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
-	ldr r0, _0806E2E4 @ =vt_09F7FF40
+	ldr r0, _0806E2E4 @ =_vt.3Msg
 	str r0, [r5, #8]
 	ldrh r0, [r4, #6]
 	lsls r0, r0, #1
@@ -2169,7 +2169,7 @@ sub_0806E2B8: @ 0x0806E2B8
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0806E2E4: .4byte vt_09F7FF40
+_0806E2E4: .4byte _vt.3Msg
 
 	thumb_func_start sub_0806E2E8
 sub_0806E2E8: @ 0x0806E2E8
@@ -2188,12 +2188,12 @@ sub_0806E2E8: @ 0x0806E2E8
 	bx r1
 	.align 2, 0
 
-	thumb_func_start Message_dtor
-Message_dtor: @ 0x0806E308
+	thumb_func_start _._3Msg
+_._3Msg: @ 0x0806E308
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
-	ldr r0, _0806E330 @ =vt_09F7FF40
+	ldr r0, _0806E330 @ =_vt.3Msg
 	str r0, [r4, #8]
 	ldr r0, [r4]
 	cmp r0, #0
@@ -2211,7 +2211,7 @@ _0806E32A:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0806E330: .4byte vt_09F7FF40
+_0806E330: .4byte _vt.3Msg
 
 	thumb_func_start sub_0806E334
 sub_0806E334: @ 0x0806E334

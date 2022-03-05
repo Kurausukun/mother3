@@ -365,7 +365,7 @@ sub_08081C08: @ 0x08081C08
 	movs r1, #0x84
 	lsls r1, r1, #1
 	adds r0, r4, r1
-	bl sub_0806E274
+	bl __3Msg
 	movs r0, #0x8e
 	lsls r0, r0, #1
 	adds r1, r4, r0
@@ -901,7 +901,7 @@ sub_08082028: @ 0x08082028
 sub_08082034: @ 0x08082034
 	push {r4, lr}
 	adds r4, r0, #0
-	bl sub_0806E274
+	bl __3Msg
 	adds r0, r4, #0
 	pop {r4}
 	pop {r1}
@@ -1004,7 +1004,7 @@ _080820C6:
 	bl sub_0806E374
 	adds r0, r4, #0
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	add r1, sp, #0x18
 	movs r0, #0
 	strb r0, [r1]
@@ -1015,7 +1015,7 @@ _080820C6:
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	movs r0, #0
 _0808212A:
 	add sp, #0x1c
@@ -1155,7 +1155,7 @@ sub_08082200: @ 0x08082200
 sub_08082230: @ 0x08082230
 	push {r4, lr}
 	adds r4, r0, #0
-	bl sub_0806E274
+	bl __3Msg
 	adds r0, r4, #0
 	pop {r4}
 	pop {r1}

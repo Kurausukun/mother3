@@ -443,7 +443,7 @@ _08065352:
 	adds r0, #6
 	strh r0, [r4, #0x2c]
 	movs r0, #1
-	bl sub_0807068C
+	bl setsleep
 	subs r5, #1
 	cmp r5, #0
 	bge _08065352
@@ -1593,7 +1593,7 @@ sub_08065C34: @ 0x08065C34
 	b _08065C4C
 _08065C46:
 	movs r0, #1
-	bl sub_0807068C
+	bl setsleep
 _08065C4C:
 	ldr r0, [sp]
 	ldr r2, [r0, #0x1c]
@@ -2286,7 +2286,7 @@ _08066178:
 	adds r1, r4, #0
 	bl setBAll__15struct_0806A57CUi
 	movs r0, #1
-	bl sub_0807068C
+	bl setsleep
 	adds r6, #1
 	cmp r6, r7
 	ble _08066178
@@ -2339,7 +2339,7 @@ _080661E8:
 	adds r1, r4, #0
 	bl setBAll__15struct_0806A57CUi
 	movs r0, #1
-	bl sub_0807068C
+	bl setsleep
 	adds r7, #1
 	cmp r7, r6
 	ble _080661E8

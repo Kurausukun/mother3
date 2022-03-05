@@ -34,16 +34,16 @@ sub_080830C4: @ 0x080830C4
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
 	movs r0, #2
-	bl get_string
+	bl get_misctext_msg
 	adds r4, r0, #0
 	movs r0, #2
-	bl get_misctext_block
+	bl get_misctext_len
 	adds r2, r0, #0
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0806E238
+	bl __3MsgPvUi
 	adds r0, r5, #0
 	pop {r4, r5}
 	pop {r1}
@@ -2123,23 +2123,23 @@ _0808412E:
 	b _080841A4
 _08084136:
 	movs r0, #5
-	bl sub_0807068C
+	bl setsleep
 	b _080841A4
 _0808413E:
 	movs r0, #0xa
-	bl sub_0807068C
+	bl setsleep
 	b _080841A4
 _08084146:
 	movs r0, #0x1e
-	bl sub_0807068C
+	bl setsleep
 	b _080841A4
 _0808414E:
 	movs r0, #0x3c
-	bl sub_0807068C
+	bl setsleep
 	b _080841A4
 _08084156:
 	movs r0, #0x5a
-	bl sub_0807068C
+	bl setsleep
 	b _080841A4
 _0808415E:
 	ldrh r2, [r6, #0x2a]
@@ -2331,13 +2331,13 @@ sub_080842C0: @ 0x080842C0
 	cmp r0, #0
 	bne _080842D2
 	bl sub_08070754
-	bl sub_0807068C
+	bl setsleep
 	b _080842DC
 _080842D2:
 	cmp r0, #1
 	bne _080842DC
 	movs r0, #1
-	bl sub_0807068C
+	bl setsleep
 _080842DC:
 	pop {r0}
 	bx r0
@@ -2360,7 +2360,7 @@ sub_080842E0: @ 0x080842E0
 	str r0, [r4, #0x30]
 _08084300:
 	movs r0, #1
-	bl sub_0807068C
+	bl setsleep
 	ldr r0, [r4, #0x30]
 	cmp r0, #2
 	beq _08084300
@@ -3537,7 +3537,7 @@ sub_08084C48: @ 0x08084C48
 	cmp r0, #0
 	beq _08084C5E
 	adds r0, r2, #0
-	bl sub_0807068C
+	bl setsleep
 _08084C5E:
 	pop {r0}
 	bx r0
@@ -3561,7 +3561,7 @@ sub_08084C64: @ 0x08084C64
 	str r0, [r4, #0x3c]
 _08084C84:
 	movs r0, #1
-	bl sub_0807068C
+	bl setsleep
 	ldr r0, [r4, #0x3c]
 	cmp r0, #3
 	beq _08084C84
@@ -3584,7 +3584,7 @@ sub_08084CA0: @ 0x08084CA0
 	b _08084CB6
 _08084CB0:
 	movs r0, #1
-	bl sub_0807068C
+	bl setsleep
 _08084CB6:
 	ldr r0, [r4, #0x3c]
 	cmp r0, #4
@@ -4256,7 +4256,7 @@ sub_080851A0: @ 0x080851A0
 	str r0, [sp, #8]
 	add r4, sp, #0xc
 	adds r0, r4, #0
-	bl sub_0806E274
+	bl __3Msg
 	movs r5, #0
 	b _080852CA
 _080851C4:
@@ -4320,7 +4320,7 @@ _08085216:
 _0808523C:
 	adds r0, r5, #0
 	str r1, [sp, #0x28]
-	bl sub_0806E274
+	bl __3Msg
 	adds r5, #0xc
 	subs r4, #1
 	ldr r1, [sp, #0x28]
@@ -4435,7 +4435,7 @@ _080852FA:
 	mov sb, r0
 _0808531E:
 	adds r0, r5, #0
-	bl sub_0806E274
+	bl __3Msg
 	adds r5, #0xc
 	subs r4, #1
 	cmp r4, sb
@@ -4651,23 +4651,23 @@ _080854B8:
 	b _0808552E
 _080854C0:
 	movs r0, #5
-	bl sub_0807068C
+	bl setsleep
 	b _0808552E
 _080854C8:
 	movs r0, #0xa
-	bl sub_0807068C
+	bl setsleep
 	b _0808552E
 _080854D0:
 	movs r0, #0x1e
-	bl sub_0807068C
+	bl setsleep
 	b _0808552E
 _080854D8:
 	movs r0, #0x3c
-	bl sub_0807068C
+	bl setsleep
 	b _0808552E
 _080854E0:
 	movs r0, #0x5a
-	bl sub_0807068C
+	bl setsleep
 	b _0808552E
 _080854E8:
 	ldr r7, [sp, #0x1c]
@@ -4710,7 +4710,7 @@ _08085530:
 	blt _08085458
 	add r0, sp, #0xc
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	mov r5, sp
 	ldr r2, [sp, #8]
 	cmp r2, #0
@@ -4888,7 +4888,7 @@ _08085684: .4byte 0x0000FFFF
 sub_08085688: @ 0x08085688
 	push {lr}
 	movs r0, #0xa
-	bl sub_0807068C
+	bl setsleep
 	pop {r0}
 	bx r0
 
@@ -4903,7 +4903,7 @@ sub_08085694: @ 0x08085694
 	ble _080856BE
 _080856A2:
 	movs r0, #1
-	bl sub_0807068C
+	bl setsleep
 	subs r4, #1
 	ldr r0, [r5, #0x2c]
 	cmp r0, #1
@@ -4918,7 +4918,7 @@ _080856B4:
 	b _080856CC
 _080856BE:
 	movs r0, #1
-	bl sub_0807068C
+	bl setsleep
 	ldr r0, [r5, #0x2c]
 	cmp r0, #1
 	beq _080856BE
@@ -5372,23 +5372,23 @@ _08085A62:
 	b _08085AD8
 _08085A6A:
 	movs r0, #5
-	bl sub_0807068C
+	bl setsleep
 	b _08085AD8
 _08085A72:
 	movs r0, #0xa
-	bl sub_0807068C
+	bl setsleep
 	b _08085AD8
 _08085A7A:
 	movs r0, #0x1e
-	bl sub_0807068C
+	bl setsleep
 	b _08085AD8
 _08085A82:
 	movs r0, #0x3c
-	bl sub_0807068C
+	bl setsleep
 	b _08085AD8
 _08085A8A:
 	movs r0, #0x5a
-	bl sub_0807068C
+	bl setsleep
 	b _08085AD8
 _08085A92:
 	ldrh r2, [r6, #0x28]
@@ -5603,7 +5603,7 @@ _08085C00:
 	bl playSound
 _08085C32:
 	movs r0, #1
-	bl sub_0807068C
+	bl setsleep
 	adds r6, #1
 _08085C3A:
 	bl sub_08070754
@@ -5631,7 +5631,7 @@ sub_08085C48: @ 0x08085C48
 	str r0, [r4, #0x2c]
 _08085C68:
 	movs r0, #1
-	bl sub_0807068C
+	bl setsleep
 	ldr r0, [r4, #0x2c]
 	cmp r0, #1
 	beq _08085C68
@@ -9265,7 +9265,7 @@ _08087848:
 	mov r0, sp
 	bl sub_08071F8C
 	adds r0, r4, #0
-	bl sub_0807068C
+	bl setsleep
 	mov r0, sp
 	movs r1, #2
 	bl _._10KeyFocuser

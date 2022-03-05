@@ -4225,7 +4225,7 @@ sub_0808AE38: @ 0x0808AE38
 	adds r0, #0x54
 	strh r4, [r0]
 	mov r0, sp
-	bl sub_0806E274
+	bl __3Msg
 	mov r0, sp
 	adds r1, r4, #0
 	bl sub_0806E34C
@@ -4240,7 +4240,7 @@ sub_0808AE38: @ 0x0808AE38
 	bl _call_via_r2
 	mov r0, sp
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	add sp, #0xc
 	pop {r4, r5}
 	pop {r0}
@@ -4784,8 +4784,8 @@ _0808B26C: .4byte 0x00000291
 _0808B270: .4byte 0x00000283
 _0808B274: .4byte _vt.1D
 
-	thumb_func_start sub_0808B278
-sub_0808B278: @ 0x0808B278
+	thumb_func_start __9DebugMenu
+__9DebugMenu: @ 0x0808B278
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -5140,7 +5140,7 @@ _0808B532:
 	bl _call_via_r2
 	ldr r0, [sp, #0xbc]
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	mov r0, r8
 	ldr r2, [r0, #0x1c]
 	adds r2, #0x90
@@ -6384,7 +6384,7 @@ sub_0808BFF8: @ 0x0808BFF8
 	b _0808C018
 _0808C002:
 	movs r0, #1
-	bl sub_0807068C
+	bl setsleep
 	movs r0, #1
 	movs r1, #0
 	bl sub_08073018
@@ -6489,7 +6489,7 @@ sub_0808C0AC: @ 0x0808C0AC
 	b _0808C0CC
 _0808C0B6:
 	movs r0, #1
-	bl sub_0807068C
+	bl setsleep
 	movs r0, #1
 	movs r1, #0
 	bl sub_08073018
@@ -7485,7 +7485,7 @@ _0808C82E:
 	bl sub_08071150
 	adds r0, r4, #0
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	adds r6, r7, #0
 	adds r6, #0x5c
 	adds r0, r6, #0
@@ -7554,13 +7554,13 @@ _0808C916:
 	adds r4, r4, r3
 	adds r4, r5, r4
 	mov r0, sp
-	bl sub_0806E274
+	bl __3Msg
 	adds r0, r4, #0
 	mov r1, sp
 	bl sub_08071150
 	mov r0, sp
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	adds r4, #0x5c
 	adds r0, r4, #0
 	movs r1, #0
@@ -7713,7 +7713,7 @@ _0808C960:
 	bl sub_08071150
 	adds r0, r4, #0
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	adds r0, r4, #0
 	mov r1, sp
 	movs r2, #1
@@ -7723,7 +7723,7 @@ _0808C960:
 	bl sub_08071150
 	adds r0, r4, #0
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	mov r0, sp
 	movs r1, #2
 	bl  sub_08082BA8
@@ -7734,21 +7734,21 @@ _0808CAB4: .4byte 0x0000069C
 _0808CAB8: .4byte 0x00000764
 _0808CABC:
 	mov r0, sp
-	bl sub_0806E274
+	bl __3Msg
 	adds r0, r6, #0
 	mov r1, sp
 	bl sub_08071150
 	mov r0, sp
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	mov r0, sp
-	bl sub_0806E274
+	bl __3Msg
 	adds r0, r7, #0
 	mov r1, sp
 	bl sub_08071150
 	mov r0, sp
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 _0808CAE8:
 	movs r3, #0xf8
 	lsls r3, r3, #3
@@ -9053,7 +9053,7 @@ sub_0808D5E8: @ 0x0808D5E8
 	b _0808D608
 _0808D5F2:
 	movs r0, #1
-	bl sub_0807068C
+	bl setsleep
 	movs r0, #1
 	movs r1, #0
 	bl sub_08073018
@@ -9895,7 +9895,7 @@ _0808DC10:
 	bl _call_via_r2
 	mov r0, sp
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	b _0808DC88
 _0808DC56:
 	movs r0, #0x5c
@@ -9912,14 +9912,14 @@ _0808DC56:
 	ldrsh r0, [r5, r2]
 	adds r4, r4, r0
 	mov r0, sp
-	bl sub_0806E274
+	bl __3Msg
 	ldr r2, [r5, #4]
 	adds r0, r4, #0
 	mov r1, sp
 	bl _call_via_r2
 	mov r0, sp
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 _0808DC88:
 	adds r6, #1
 	cmp r6, #1
@@ -10052,7 +10052,7 @@ _0808DC88:
 	bl sub_08071150
 	mov r0, sp
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	add r1, sp, #0x10
 	movs r6, #0x24
 	movs r0, #0x86
@@ -10087,7 +10087,7 @@ _0808DC88:
 	bl sub_08071150
 	mov r0, sp
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	add r1, sp, #0x14
 	movs r0, #0x92
 	strh r6, [r1]
@@ -10133,7 +10133,7 @@ _0808DE18:
 	bl sub_08071150
 	mov r0, sp
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	add r1, sp, #0x18
 	movs r6, #0xc
 	movs r0, #0x86
@@ -10168,7 +10168,7 @@ _0808DE18:
 	bl sub_08071150
 	mov r0, sp
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	add r1, sp, #0x1c
 	movs r0, #0x92
 	strh r6, [r1]
@@ -10587,7 +10587,7 @@ sub_0808E244: @ 0x0808E244
 	str r0, [r4, #0x2c]
 _0808E24C:
 	movs r0, #1
-	bl sub_0807068C
+	bl setsleep
 	movs r0, #1
 	movs r1, #0
 	bl sub_08073018
@@ -11071,7 +11071,7 @@ sub_0808E64C: @ 0x0808E64C
 	b _0808E658
 _0808E652:
 	movs r0, #1
-	bl sub_0807068C
+	bl setsleep
 _0808E658:
 	ldrh r0, [r4, #0x24]
 	cmp r0, #3

@@ -2,9 +2,9 @@
 #include "battle.h"
 #include "battle/unitTarget.h"
 
-extern "C" u32 get_string(u32, u16);
-extern "C" u16 get_misctext_block(u32);
-extern "C" void sub_0806E238(Base*, u32, u32);
+extern "C" u32 get_misctext_msg(u32, u16);
+extern "C" u16 get_misctext_len(u32);
+extern "C" void __3MsgPvUi(Base*, u32, u32);
 
 extern ClockData gUnknown_080F6D8C;
 extern ClockData gUnknown_080F6D94;
@@ -16,7 +16,7 @@ void battle_end_callback(Guest* g) {
 SINGLETON_IMPL(Guest);
 
 Base* getName(Base* b, u32 idx) {
-    sub_0806E238(b, get_string(6, idx), get_misctext_block(6));
+    __3MsgPvUi(b, get_misctext_msg(6, idx), get_misctext_len(6));
     return b;
 }
 

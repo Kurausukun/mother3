@@ -1,11 +1,12 @@
 #include "battle/goods.h"
+#include "battle/player.h"
 
-extern "C" u32 get_string(u32, u32);
-extern "C" u16 get_misctext_block(u32);
+extern "C" void* get_misctext_msg(u32, u32);
+extern "C" u16 get_misctext_len(u32);
+extern "C" void* sub_08001BCC(u32);
 
-Goods* Goods::getName(u16 idx) {
-    sub_0806E238(this, get_string(2, idx), get_misctext_block(2));
-    return this;
+Msg Goods::getName(u16 idx) {
+    return Msg(get_misctext_msg(2, idx), get_misctext_len(2));
 }
 
 Goods::Goods(u16 idx, u32 unk, u16 a2) : Skill(unk) {
@@ -23,7 +24,19 @@ u32 Goods::skill_1a0() {
     return sub_08078410();
 }
 
-ASM_FUNC("asm/non_matching/goods/skill_150.inc", void Goods::skill_150(Skill* s, u32 a2));
+void Goods::skill_150() {
+    if (skill_1b0() == 1 && goods_2c0() == 1) {
+        Player* p;
+        if ((p = tryCastPlayer(getUser())) == NULL) {
+            return;
+        }
+
+        if (p->player_410(goods_2a8()) != 1) {
+            p->player_408(id());
+        }
+    }
+    nullsub_28();
+}
 
 Skill* Goods::skill_1c0() {
     sub_08077D8C(this, 7);
@@ -38,12 +51,15 @@ u32 Goods::goods_2a0() const {
     return _4c;
 }
 
-Skill* Goods::name(Skill* s) {
-    getName(s->id());
-    return this;
+Msg Goods::name() const {
+    return getName(id());
 }
 
-ASM_FUNC("asm/non_matching/goods/skill_1d8.inc", Skill* Goods::skill_1d8(Skill* s));
+NONMATCH("asm/non_matching/goods/skill_1d8.inc", Msg Goods::skill_1d8() const) {
+    Msg m = Msg(sub_08001BCC(id()), -1);
+    return m;
+}
+END_NONMATCH
 
 u32 Goods::skill_1e0() {
     return 0;
@@ -58,7 +74,7 @@ u32 Goods::element() const {
 }
 
 u32 Goods::target() const {
-    return (u16)*(u32*)&mInfo->action.target;
+    return (u16) * (u32*)&mInfo->action.target;
 }
 
 u32 Goods::attackMult() const {
@@ -90,20 +106,15 @@ u32 Goods::priority() const {
     return mInfo->action.priority;
 }
 
-// weird vtable thing, same as in battle/skill.cpp
-NONMATCH("asm/non_matching/goods/skill_238.inc", Skill* Goods::showUseMessage(Skill* s)) {
-    Goods* o = reinterpret_cast<Goods*>(s);
-
-    if (o->numTargets() == 1 && o->getTarget(0) == o->getUser()) {
-        sub_08073444(o->calcMessage(o->mInfo->action.msg_no));
+Msg Goods::showUseMessage() const {
+    if (numTargets() == 1 && getTarget(0) == getUser()) {
+        return skill_158(calcMessage(mInfo->action.msg_no));
     } else {
-        sub_08073444(o->calcMessage(o->mInfo->action.msg_no + 1));
+        return skill_158(calcMessage(mInfo->action.msg_no + 1));
     }
-    return this;
 }
-END_NONMATCH
 
-u16 Goods::calcMessage(u16 idx) {
+u16 Goods::calcMessage(u16 idx) const {
     if (goods_2b8() != 4 || numTargets() <= 0)
         return idx;
 
@@ -131,15 +142,12 @@ u16 Goods::calcMessage(u16 idx) {
     return idx;
 }
 
-Skill* Goods::showForceUseMessage(Skill* s) {
-    Goods* o = reinterpret_cast<Goods*>(s);
-
-    if (o->numTargets() == 1 && o->getTarget(0) == o->getUser()) {
-        sub_08073444(o->mInfo->action.msg_no);
+Msg Goods::showForceUseMessage() const {
+    if (numTargets() == 1 && getTarget(0) == getUser()) {
+        return sub_08073444(mInfo->action.msg_no);
     } else {
-        sub_08073444(o->mInfo->action.msg_no + 1);
+        return sub_08073444(mInfo->action.msg_no + 1);
     }
-    return this;
 }
 
 u32 Goods::hasDim() const {

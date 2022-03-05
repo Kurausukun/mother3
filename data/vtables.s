@@ -13299,10 +13299,10 @@ vt_09F4D600::
 	.4byte id__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte name__10GuestSkillP5Skill
+	.4byte name__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__10GuestSkillP5Skill
+	.4byte skill_1d8__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -13344,7 +13344,7 @@ vt_09F4D600::
 	.4byte sub_080A0B54
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__10GuestSkillP5Skill
+	.4byte showForceUseMessage__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C10GuestSkill
@@ -13553,10 +13553,10 @@ vt_09F4D8A0::
 	.4byte id__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte name__10GuestSkillP5Skill
+	.4byte name__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__10GuestSkillP5Skill
+	.4byte skill_1d8__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -13595,10 +13595,10 @@ vt_09F4D8A0::
 	.4byte priority__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__10GuestSkillP5Skill
+	.4byte showUseMessage__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__10GuestSkillP5Skill
+	.4byte showForceUseMessage__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C10GuestSkill
@@ -13807,10 +13807,10 @@ vt_09F4DB40::
 	.4byte id__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte name__10GuestSkillP5Skill
+	.4byte name__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__10GuestSkillP5Skill
+	.4byte skill_1d8__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -13849,10 +13849,10 @@ vt_09F4DB40::
 	.4byte priority__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__10GuestSkillP5Skill
+	.4byte showUseMessage__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__10GuestSkillP5Skill
+	.4byte showForceUseMessage__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C10GuestSkill
@@ -14061,10 +14061,10 @@ vt_09F4DDE0::
 	.4byte id__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte name__10GuestSkillP5Skill
+	.4byte name__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__10GuestSkillP5Skill
+	.4byte skill_1d8__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -14103,10 +14103,10 @@ vt_09F4DDE0::
 	.4byte priority__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__10GuestSkillP5Skill
+	.4byte showUseMessage__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__10GuestSkillP5Skill
+	.4byte showForceUseMessage__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C10GuestSkill
@@ -14315,10 +14315,10 @@ vt_09F4E080::
 	.4byte id__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte name__10GuestSkillP5Skill
+	.4byte name__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__10GuestSkillP5Skill
+	.4byte skill_1d8__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -14357,10 +14357,10 @@ vt_09F4E080::
 	.4byte priority__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__10GuestSkillP5Skill
+	.4byte showUseMessage__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__10GuestSkillP5Skill
+	.4byte showForceUseMessage__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C10GuestSkill
@@ -81864,7 +81864,7 @@ _vt.5Goods::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5GoodsP5SkillUi
+	.4byte skill_150__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -81912,10 +81912,10 @@ _vt.5Goods::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -81954,10 +81954,10 @@ _vt.5Goods::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__5GoodsP5Skill
+	.4byte showUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__5GoodsP5Skill
+	.4byte showForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -82018,7 +82018,7 @@ vt_09F79D20::
 	.2byte 0
 	.4byte sub_080BDAC0
 
-vt_09F79D38::
+_vt.11TriviaCard4::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -82144,7 +82144,7 @@ vt_09F79D38::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5GoodsP5SkillUi
+	.4byte skill_150__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -82192,10 +82192,10 @@ vt_09F79D38::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -82234,10 +82234,10 @@ vt_09F79D38::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__5GoodsP5Skill
+	.4byte showUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__5GoodsP5Skill
+	.4byte showForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -82296,7 +82296,7 @@ vt_09F79D38::
 	.2byte 0
 	.4byte sub_080C0504
 
-vt_09F7A018::
+_vt.11TriviaCard3::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -82422,7 +82422,7 @@ vt_09F7A018::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5GoodsP5SkillUi
+	.4byte skill_150__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -82470,10 +82470,10 @@ vt_09F7A018::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -82512,10 +82512,10 @@ vt_09F7A018::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__5GoodsP5Skill
+	.4byte showUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__5GoodsP5Skill
+	.4byte showForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -82574,7 +82574,7 @@ vt_09F7A018::
 	.2byte 0
 	.4byte sub_080C0504
 
-vt_09F7A2F8::
+_vt.11TriviaCard2::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -82700,7 +82700,7 @@ vt_09F7A2F8::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5GoodsP5SkillUi
+	.4byte skill_150__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -82748,10 +82748,10 @@ vt_09F7A2F8::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -82790,10 +82790,10 @@ vt_09F7A2F8::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__5GoodsP5Skill
+	.4byte showUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__5GoodsP5Skill
+	.4byte showForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -82852,7 +82852,7 @@ vt_09F7A2F8::
 	.2byte 0
 	.4byte sub_080C0504
 
-vt_09F7A5D8::
+_vt.11TriviaCard1::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -82978,7 +82978,7 @@ vt_09F7A5D8::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5GoodsP5SkillUi
+	.4byte skill_150__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -83026,10 +83026,10 @@ vt_09F7A5D8::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -83068,10 +83068,10 @@ vt_09F7A5D8::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__5GoodsP5Skill
+	.4byte showUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__5GoodsP5Skill
+	.4byte showForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -83130,7 +83130,7 @@ vt_09F7A5D8::
 	.2byte 0
 	.4byte sub_080C0504
 
-vt_09F7A8B8::
+_vt.9DragoFang::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -83256,7 +83256,7 @@ vt_09F7A8B8::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5GoodsP5SkillUi
+	.4byte skill_150__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -83304,10 +83304,10 @@ vt_09F7A8B8::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -83346,10 +83346,10 @@ vt_09F7A8B8::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__5GoodsP5Skill
+	.4byte showUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__5GoodsP5Skill
+	.4byte showForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -83408,7 +83408,7 @@ vt_09F7A8B8::
 	.2byte 0
 	.4byte sub_080C0504
 
-vt_09F7AB98::
+_vt.14ShieldSnatcher::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -83534,7 +83534,7 @@ vt_09F7AB98::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5GoodsP5SkillUi
+	.4byte skill_150__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -83582,10 +83582,10 @@ vt_09F7AB98::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -83624,10 +83624,10 @@ vt_09F7AB98::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__5GoodsP5Skill
+	.4byte showUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__5GoodsP5Skill
+	.4byte showForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -83686,7 +83686,7 @@ vt_09F7AB98::
 	.2byte 0
 	.4byte sub_080C0504
 
-vt_09F7AE78::
+_vt.16CupOfLifenoodles::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -83812,7 +83812,7 @@ vt_09F7AE78::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5GoodsP5SkillUi
+	.4byte skill_150__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -83860,10 +83860,10 @@ vt_09F7AE78::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -83902,10 +83902,10 @@ vt_09F7AE78::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__5GoodsP5Skill
+	.4byte showUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__5GoodsP5Skill
+	.4byte showForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -83964,7 +83964,7 @@ vt_09F7AE78::
 	.2byte 0
 	.4byte sub_080C0504
 
-vt_09F7B158::
+_vt.10SecretHerb::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -84090,7 +84090,7 @@ vt_09F7B158::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5GoodsP5SkillUi
+	.4byte skill_150__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -84138,10 +84138,10 @@ vt_09F7B158::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -84180,10 +84180,10 @@ vt_09F7B158::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__5GoodsP5Skill
+	.4byte showUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__5GoodsP5Skill
+	.4byte showForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -84242,7 +84242,7 @@ vt_09F7B158::
 	.2byte 0
 	.4byte sub_080C0504
 
-vt_09F7B438::
+_vt.8PaperFan::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -84368,7 +84368,7 @@ vt_09F7B438::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5GoodsP5SkillUi
+	.4byte skill_150__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -84416,10 +84416,10 @@ vt_09F7B438::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -84458,10 +84458,10 @@ vt_09F7B438::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__5GoodsP5Skill
+	.4byte showUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__5GoodsP5Skill
+	.4byte showForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -84520,7 +84520,7 @@ vt_09F7B438::
 	.2byte 0
 	.4byte sub_080C0504
 
-vt_09F7B718::
+_vt.11MadeYouLook::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -84646,7 +84646,7 @@ vt_09F7B718::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5GoodsP5SkillUi
+	.4byte skill_150__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -84694,10 +84694,10 @@ vt_09F7B718::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -84736,10 +84736,10 @@ vt_09F7B718::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__5GoodsP5Skill
+	.4byte showUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__5GoodsP5Skill
+	.4byte showForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -84798,7 +84798,7 @@ vt_09F7B718::
 	.2byte 0
 	.4byte sub_080C0504
 
-vt_09F7B9F8::
+_vt.15AttackAttractor::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -84924,7 +84924,7 @@ vt_09F7B9F8::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5GoodsP5SkillUi
+	.4byte skill_150__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -84972,10 +84972,10 @@ vt_09F7B9F8::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -85014,10 +85014,10 @@ vt_09F7B9F8::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__5GoodsP5Skill
+	.4byte showUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__5GoodsP5Skill
+	.4byte showForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -85076,7 +85076,7 @@ vt_09F7B9F8::
 	.2byte 0
 	.4byte sub_080C0504
 
-vt_09F7BCD8::
+_vt.15EnemyWimperizer::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -85202,7 +85202,7 @@ vt_09F7BCD8::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5GoodsP5SkillUi
+	.4byte skill_150__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -85250,10 +85250,10 @@ vt_09F7BCD8::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -85292,10 +85292,10 @@ vt_09F7BCD8::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__5GoodsP5Skill
+	.4byte showUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__5GoodsP5Skill
+	.4byte showForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -85354,7 +85354,7 @@ vt_09F7BCD8::
 	.2byte 0
 	.4byte sub_080C0504
 
-vt_09F7BFB8::
+_vt.15EnemyBufferizer::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -85480,7 +85480,7 @@ vt_09F7BFB8::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5GoodsP5SkillUi
+	.4byte skill_150__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -85528,10 +85528,10 @@ vt_09F7BFB8::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -85570,10 +85570,10 @@ vt_09F7BFB8::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__5GoodsP5Skill
+	.4byte showUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__5GoodsP5Skill
+	.4byte showForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -85632,7 +85632,7 @@ vt_09F7BFB8::
 	.2byte 0
 	.4byte sub_080C0504
 
-vt_09F7C298::
+_vt.9LottoMeal::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -85758,7 +85758,7 @@ vt_09F7C298::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5GoodsP5SkillUi
+	.4byte skill_150__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -85806,10 +85806,10 @@ vt_09F7C298::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -85848,10 +85848,10 @@ vt_09F7C298::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__5GoodsP5Skill
+	.4byte showUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__5GoodsP5Skill
+	.4byte showForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -85910,7 +85910,7 @@ vt_09F7C298::
 	.2byte 0
 	.4byte sub_080C0504
 
-vt_09F7C578::
+_vt.9DoggyFood::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -86036,7 +86036,7 @@ vt_09F7C578::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5GoodsP5SkillUi
+	.4byte skill_150__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -86084,10 +86084,10 @@ vt_09F7C578::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -86126,10 +86126,10 @@ vt_09F7C578::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__5GoodsP5Skill
+	.4byte showUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__5GoodsP5Skill
+	.4byte showForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -86188,7 +86188,7 @@ vt_09F7C578::
 	.2byte 0
 	.4byte sub_080C0504
 
-vt_09F7C858::
+_vt.14PeculiarCheese::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -86314,7 +86314,7 @@ vt_09F7C858::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5GoodsP5SkillUi
+	.4byte skill_150__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -86362,10 +86362,10 @@ vt_09F7C858::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -86404,10 +86404,10 @@ vt_09F7C858::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__5GoodsP5Skill
+	.4byte showUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__5GoodsP5Skill
+	.4byte showForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -86466,7 +86466,7 @@ vt_09F7C858::
 	.2byte 0
 	.4byte sub_080C0504
 
-vt_09F7CB38::
+_vt.8BugSpray::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -86592,7 +86592,7 @@ vt_09F7CB38::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5GoodsP5SkillUi
+	.4byte skill_150__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -86640,10 +86640,10 @@ vt_09F7CB38::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -86682,10 +86682,10 @@ vt_09F7CB38::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__5GoodsP5Skill
+	.4byte showUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__5GoodsP5Skill
+	.4byte showForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -86744,7 +86744,7 @@ vt_09F7CB38::
 	.2byte 0
 	.4byte sub_080C0504
 
-vt_09F7CE18::
+_vt.13AncientBanana::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -86870,7 +86870,7 @@ vt_09F7CE18::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5GoodsP5SkillUi
+	.4byte skill_150__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -86918,10 +86918,10 @@ vt_09F7CE18::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -86960,10 +86960,10 @@ vt_09F7CE18::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__5GoodsP5Skill
+	.4byte showUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__5GoodsP5Skill
+	.4byte showForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -87022,7 +87022,7 @@ vt_09F7CE18::
 	.2byte 0
 	.4byte sub_080C0504
 
-vt_09F7D0F8::
+_vt.11HoneyShower::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -87148,7 +87148,7 @@ vt_09F7D0F8::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5GoodsP5SkillUi
+	.4byte skill_150__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -87196,10 +87196,10 @@ vt_09F7D0F8::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -87238,10 +87238,10 @@ vt_09F7D0F8::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__5GoodsP5Skill
+	.4byte showUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__5GoodsP5Skill
+	.4byte showForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -87300,7 +87300,7 @@ vt_09F7D0F8::
 	.2byte 0
 	.4byte sub_080C0504
 
-vt_09F7D3D8::
+_vt.12SaltwaterGun::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -87426,7 +87426,7 @@ vt_09F7D3D8::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5GoodsP5SkillUi
+	.4byte skill_150__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -87474,10 +87474,10 @@ vt_09F7D3D8::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -87516,10 +87516,10 @@ vt_09F7D3D8::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__5GoodsP5Skill
+	.4byte showUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__5GoodsP5Skill
+	.4byte showForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -87578,7 +87578,7 @@ vt_09F7D3D8::
 	.2byte 0
 	.4byte sub_080C0504
 
-vt_09F7D6B8::
+_vt.15NewYearsEveBomb::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -87704,7 +87704,7 @@ vt_09F7D6B8::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5GoodsP5SkillUi
+	.4byte skill_150__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -87752,10 +87752,10 @@ vt_09F7D6B8::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -87794,10 +87794,10 @@ vt_09F7D6B8::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__5GoodsP5Skill
+	.4byte showUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__5GoodsP5Skill
+	.4byte showForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0048
@@ -87859,7 +87859,7 @@ vt_09F7D6B8::
 	.2byte 0
 	.4byte sub_080C0150
 
-vt_09F7D9A0::
+_vt.12DefaultGoods::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -87985,7 +87985,7 @@ vt_09F7D9A0::
 	.4byte sub_0807A178
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5GoodsP5SkillUi
+	.4byte skill_150__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A73C
@@ -88033,10 +88033,10 @@ vt_09F7D9A0::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -88075,10 +88075,10 @@ vt_09F7D9A0::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__5GoodsP5Skill
+	.4byte showUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__5GoodsP5Skill
+	.4byte showForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -91661,13 +91661,13 @@ vt_09F7FE10::
 	.2byte 0
 	.4byte sub_0806DFDC
 
-vt_09F7FF40::
+_vt.3Msg::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte Message_dtor
+	.4byte _._3Msg
 
 vt_09F7FF50::
 	.2byte 0
@@ -96345,10 +96345,10 @@ _vt.10GuestSkill::
 	.4byte id__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte name__10GuestSkillP5Skill
+	.4byte name__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__10GuestSkillP5Skill
+	.4byte skill_1d8__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -96387,10 +96387,10 @@ _vt.10GuestSkill::
 	.4byte priority__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__10GuestSkillP5Skill
+	.4byte showUseMessage__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__10GuestSkillP5Skill
+	.4byte showForceUseMessage__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C10GuestSkill
