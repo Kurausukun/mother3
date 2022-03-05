@@ -134,7 +134,7 @@ sub_0806FE64: @ 0x0806FE64
 	ldrb r0, [r0]
 	cmp r0, #1
 	bne _0806FE82
-	bl sub_08090FBC
+	bl VBlankIntrWait
 	adds r0, r4, #0
 	bl sub_0806FEC8
 _0806FE82:

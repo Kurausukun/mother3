@@ -40,7 +40,7 @@ _08076B40:
 	bne _08076BA2
 _08076B7A:
 	movs r0, #1
-	bl sub_0807068C
+	bl setsleep
 	movs r0, #1
 	movs r1, #0
 	bl sub_08073018

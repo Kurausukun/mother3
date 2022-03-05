@@ -247,13 +247,12 @@ s32 Unit::unit_200() const {
     return _d8;
 }
 
-NONMATCH("asm/non_matching/unit/unit_220__4UnitUi.inc", UnitCmd* Unit::unit_220(u32 a1)) {
+UnitCmd* Unit::unit_220(u32 a1) {
     UnitCmd* u = sub_080651A4(a1, this);
     u->x_68();
     _dc.append(u);
     return u;
 }
-END_NONMATCH
 
 ASM_FUNC("asm/non_matching/unit/unit_228__4UnitUi.inc", bool Unit::unit_228(u32 a1));
 
@@ -323,20 +322,17 @@ void Unit::unit_280(void) {
 }
 
 s32 Unit::unit_288() const {
-    const Fit* f = &_e8;
-    return f->size;
+    return _e8.size();
 }
 
-NONMATCH("asm/non_matching/unit/unit_290__4Uniti.inc", u16 Unit::unit_290(s32 a1)) {
-    UnitCmd* tmp = (UnitCmd*)_e8.next()->content()[a1];
-    return tmp->x_e8();
+u16 Unit::unit_290(s32 a1) {
+    UnitCmd* tmp = _e8[a1];
+    return tmp->x_e0();
 }
-END_NONMATCH
 
-NONMATCH("asm/non_matching/unit/unit_298__4Uniti.inc", UnitCmd* Unit::unit_298(s32 a1)) {
-    return _dc[a1];
+UnitCmd* Unit::unit_298(s32 a1) {
+    return _e8[a1];
 }
-END_NONMATCH
 
 bool Unit::hasStatus(u16 a1) {
     return unit_2a8(a1) < unit_288();

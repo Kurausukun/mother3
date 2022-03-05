@@ -837,7 +837,7 @@ sub_08097DE0: @ 0x08097DE0
 	add r1, sp, #8
 	bl sub_080742EC
 	movs r0, #0x78
-	bl sub_0807068C
+	bl setsleep
 	movs r2, #0xf9
 	lsls r2, r2, #4
 	adds r0, r7, r2
@@ -846,7 +846,7 @@ sub_08097DE0: @ 0x08097DE0
 	adds r1, r2, #0
 	bl sub_080730FC
 	movs r0, #0x3c
-	bl sub_0807068C
+	bl setsleep
 	ldr r3, [r7, #0x1c]
 	movs r0, #0x98
 	lsls r0, r0, #2
@@ -873,7 +873,7 @@ sub_08097DE0: @ 0x08097DE0
 	movs r1, #2
 	bl Message_dtor
 	movs r0, #0x78
-	bl sub_0807068C
+	bl setsleep
 	mov r3, sb
 	ldr r2, [r3]
 	movs r0, #0xc0
@@ -882,7 +882,7 @@ sub_08097DE0: @ 0x08097DE0
 	movs r0, #0x96
 	lsls r0, r0, #1
 	mov sb, r0
-	bl sub_0807068C
+	bl setsleep
 	ldr r3, [r7, #0x1c]
 	add r3, r8
 	movs r2, #0
@@ -987,7 +987,7 @@ _08097F50:
 	movs r0, #0x96
 	lsls r0, r0, #1
 	mov r8, r0
-	bl sub_0807068C
+	bl setsleep
 	ldr r3, [r7, #0x1c]
 	movs r1, #0x98
 	lsls r1, r1, #2
@@ -1013,7 +1013,7 @@ _08097F50:
 	movs r1, #2
 	bl Message_dtor
 	mov r0, r8
-	bl sub_0807068C
+	bl setsleep
 	ldr r3, [r7, #0x1c]
 	movs r0, #0x98
 	lsls r0, r0, #2
@@ -1038,7 +1038,7 @@ _08097F50:
 	movs r1, #2
 	bl Message_dtor
 	mov r0, r8
-	bl sub_0807068C
+	bl setsleep
 	ldr r3, [r7, #0x1c]
 	movs r0, #0x98
 	lsls r0, r0, #2
@@ -1113,7 +1113,7 @@ sub_08098034: @ 0x08098034
 	adds r2, r7, #0
 	bl sub_08074518
 	movs r0, #0x5a
-	bl sub_0807068C
+	bl setsleep
 	ldr r3, [r5, #0x1c]
 	movs r2, #0x98
 	lsls r2, r2, #2
@@ -1196,7 +1196,7 @@ sub_08098034: @ 0x08098034
 	movs r3, #1
 	bl sub_08074494
 	movs r0, #0xb4
-	bl sub_0807068C
+	bl setsleep
 	ldr r3, [r5, #0x1c]
 	add r3, sl
 	movs r0, #0
@@ -1217,7 +1217,7 @@ sub_08098034: @ 0x08098034
 	movs r1, #2
 	bl Message_dtor
 	movs r0, #0x3c
-	bl sub_0807068C
+	bl setsleep
 	ldr r1, _08098208 @ =0x00000F94
 	adds r4, r5, r1
 	ldr r2, [r4]
@@ -1225,7 +1225,7 @@ sub_08098034: @ 0x08098034
 	adds r1, r2, #0
 	bl sub_080730FC
 	movs r0, #0x78
-	bl sub_0807068C
+	bl setsleep
 	movs r0, #0xf0
 	lsls r0, r0, #2
 	bl playSound
@@ -1241,13 +1241,13 @@ sub_08098034: @ 0x08098034
 	movs r1, #1
 	bl _call_via_r2
 	movs r0, #0xf0
-	bl sub_0807068C
+	bl setsleep
 	ldr r2, [r4]
 	movs r0, #0x43
 	adds r1, r2, #0
 	bl sub_080730FC
 	movs r0, #0xb4
-	bl sub_0807068C
+	bl setsleep
 	ldr r3, [r5, #0x1c]
 	add r3, sl
 	movs r0, #0
@@ -1269,7 +1269,7 @@ sub_08098034: @ 0x08098034
 	bl Message_dtor
 	movs r0, #0x96
 	lsls r0, r0, #1
-	bl sub_0807068C
+	bl setsleep
 	movs r0, #1
 	add sp, #0x24
 	pop {r3, r4, r5}
@@ -1352,7 +1352,7 @@ _08098242:
 	b _08098704
 _0809828E:
 	movs r0, #0x78
-	bl sub_0807068C
+	bl setsleep
 	ldr r1, [r4, #0x1c]
 	movs r0, #0xa4
 	lsls r0, r0, #2
@@ -1428,7 +1428,7 @@ _080982F0:
 	b _08098704
 _08098336:
 	movs r0, #0x78
-	bl sub_0807068C
+	bl setsleep
 	ldr r1, [r4, #0x1c]
 	movs r2, #0xa4
 	lsls r2, r2, #2
@@ -1528,7 +1528,7 @@ _08098406:
 	b _080985B2
 _0809840C:
 	movs r0, #0x78
-	bl sub_0807068C
+	bl setsleep
 	ldr r1, [r4, #0x1c]
 	movs r2, #0xa4
 	lsls r2, r2, #2
@@ -1607,7 +1607,7 @@ _080984AE:
 	b _080985B2
 _080984B4:
 	movs r0, #0x78
-	bl sub_0807068C
+	bl setsleep
 	ldr r1, [r4, #0x1c]
 	movs r2, #0xa4
 	lsls r2, r2, #2
@@ -1683,7 +1683,7 @@ _08098518:
 	b _08098704
 _08098554:
 	movs r0, #0x78
-	bl sub_0807068C
+	bl setsleep
 	ldr r1, [r4, #0x1c]
 	movs r2, #0xa4
 	lsls r2, r2, #2
@@ -1744,7 +1744,7 @@ _080985B2:
 	b _08098704
 _080985D2:
 	movs r0, #0x78
-	bl sub_0807068C
+	bl setsleep
 	ldr r1, [r4, #0x1c]
 	movs r0, #0xa4
 	lsls r0, r0, #2
@@ -2578,7 +2578,7 @@ _08098C52:
 	adds r1, r2, #0
 	bl _call_via_r3
 	movs r0, #0x5a
-	bl sub_0807068C
+	bl setsleep
 	ldr r3, [r4, #0x1c]
 	movs r0, #0x98
 	lsls r0, r0, #2
@@ -2716,7 +2716,7 @@ _08098D74:
 	adds r2, r4, #0
 	bl _call_via_r3
 	movs r0, #0x5a
-	bl sub_0807068C
+	bl setsleep
 	ldr r3, [r5, #0x1c]
 	movs r0, #0x98
 	lsls r0, r0, #2
@@ -2740,7 +2740,7 @@ _08098D74:
 	movs r1, #2
 	bl Message_dtor
 	movs r0, #0x5a
-	bl sub_0807068C
+	bl setsleep
 	ldr r1, [r5, #0x1c]
 	movs r3, #0x84
 	lsls r3, r3, #2
@@ -2770,7 +2770,7 @@ _08098D74:
 	adds r2, r4, #0
 	bl _call_via_r3
 	movs r0, #0xb4
-	bl sub_0807068C
+	bl setsleep
 	ldr r1, [r5, #0x1c]
 	movs r3, #0xa6
 	lsls r3, r3, #2
@@ -2819,7 +2819,7 @@ sub_08098E48: @ 0x08098E48
 	adds r2, r5, #0
 	bl _call_via_r3
 	movs r0, #0x5a
-	bl sub_0807068C
+	bl setsleep
 	ldr r3, [r4, #0x1c]
 	movs r0, #0x98
 	lsls r0, r0, #2
@@ -2845,7 +2845,7 @@ sub_08098E48: @ 0x08098E48
 	movs r1, #2
 	bl Message_dtor
 	movs r0, #0x5a
-	bl sub_0807068C
+	bl setsleep
 	ldr r1, [r4, #0x1c]
 	movs r0, #0xc2
 	lsls r0, r0, #2
@@ -2858,7 +2858,7 @@ sub_08098E48: @ 0x08098E48
 	adds r2, r5, #0
 	bl _call_via_r3
 	movs r0, #0xb4
-	bl sub_0807068C
+	bl setsleep
 	ldr r3, [r4, #0x1c]
 	add r3, r8
 	movs r0, #0
@@ -3188,7 +3188,7 @@ _08099166:
 	adds r2, r4, #0
 	bl _call_via_r3
 	movs r0, #0x5a
-	bl sub_0807068C
+	bl setsleep
 	ldr r3, [r6, #0x1c]
 	movs r0, #0x98
 	lsls r0, r0, #2
@@ -3213,7 +3213,7 @@ _08099166:
 	movs r1, #2
 	bl Message_dtor
 	movs r0, #0x5a
-	bl sub_0807068C
+	bl setsleep
 	ldr r1, [r6, #0x1c]
 	movs r3, #0x84
 	lsls r3, r3, #2
@@ -3243,7 +3243,7 @@ _08099166:
 	adds r2, r4, #0
 	bl _call_via_r3
 	movs r0, #0xb4
-	bl sub_0807068C
+	bl setsleep
 	ldr r1, [r6, #0x1c]
 	movs r3, #0xa6
 	lsls r3, r3, #2
@@ -3522,7 +3522,7 @@ _080993C4:
 	movs r1, #2
 	bl Message_dtor
 	movs r0, #0xb4
-	bl sub_0807068C
+	bl setsleep
 	ldr r3, [r6, #0x1c]
 	movs r0, #0x98
 	lsls r0, r0, #2
@@ -3545,7 +3545,7 @@ _080993C4:
 	movs r1, #2
 	bl Message_dtor
 	movs r0, #0xb4
-	bl sub_0807068C
+	bl setsleep
 	ldr r1, [r7]
 	ldr r0, _080995D4 @ =0x000001BD
 	bl sub_080741AC
@@ -3652,7 +3652,7 @@ _0809955A:
 	ldr r1, [r1, #4]
 	bl _call_via_r1
 	movs r0, #0xb4
-	bl sub_0807068C
+	bl setsleep
 	ldr r1, [r6, #0x1c]
 	adds r1, #0xc0
 	movs r3, #0
@@ -3784,7 +3784,7 @@ _08099692:
 	adds r2, r5, #0
 	bl _call_via_r3
 	movs r0, #0x5a
-	bl sub_0807068C
+	bl setsleep
 	ldr r3, [r7, #0x1c]
 	movs r6, #0x98
 	lsls r6, r6, #2
@@ -3829,7 +3829,7 @@ _08099692:
 	movs r1, #2
 	bl Message_dtor
 	movs r0, #0x5a
-	bl sub_0807068C
+	bl setsleep
 	ldr r1, [r7, #0x1c]
 	movs r2, #0x84
 	lsls r2, r2, #2
@@ -3859,7 +3859,7 @@ _08099692:
 	adds r2, r5, #0
 	bl _call_via_r3
 	movs r0, #0xb4
-	bl sub_0807068C
+	bl setsleep
 	ldr r3, [r7, #0x1c]
 	adds r3, r3, r6
 	movs r0, #0
@@ -4022,7 +4022,7 @@ _08099892:
 	adds r2, r4, #0
 	bl _call_via_r3
 	movs r0, #0x5a
-	bl sub_0807068C
+	bl setsleep
 	ldr r3, [r7, #0x1c]
 	movs r6, #0x98
 	lsls r6, r6, #2
@@ -4047,7 +4047,7 @@ _08099892:
 	movs r1, #2
 	bl Message_dtor
 	movs r0, #0x5a
-	bl sub_0807068C
+	bl setsleep
 	ldr r1, [r7, #0x1c]
 	movs r2, #0xc2
 	lsls r2, r2, #2
@@ -4060,7 +4060,7 @@ _08099892:
 	adds r2, r4, #0
 	bl _call_via_r3
 	movs r0, #0xb4
-	bl sub_0807068C
+	bl setsleep
 	ldr r3, [r7, #0x1c]
 	adds r3, r3, r6
 	movs r0, #0
@@ -4146,7 +4146,7 @@ sub_08099994: @ 0x08099994
 	adds r2, r5, #0
 	bl _call_via_r3
 	movs r0, #0x5a
-	bl sub_0807068C
+	bl setsleep
 	ldr r3, [r4, #0x1c]
 	movs r0, #0x98
 	lsls r0, r0, #2
@@ -4172,7 +4172,7 @@ sub_08099994: @ 0x08099994
 	movs r1, #2
 	bl Message_dtor
 	movs r0, #0x5a
-	bl sub_0807068C
+	bl setsleep
 	ldr r1, [r4, #0x1c]
 	movs r0, #0xc2
 	lsls r0, r0, #2
@@ -4185,7 +4185,7 @@ sub_08099994: @ 0x08099994
 	adds r2, r5, #0
 	bl _call_via_r3
 	movs r0, #0xb4
-	bl sub_0807068C
+	bl setsleep
 	ldr r3, [r4, #0x1c]
 	add r3, r8
 	movs r0, #0
@@ -4891,7 +4891,7 @@ sub_08099FD8: @ 0x08099FD8
 	sub sp, #0x64
 	adds r6, r0, #0
 	movs r0, #0x78
-	bl sub_0807068C
+	bl setsleep
 	ldr r1, [r6, #0x1c]
 	movs r0, #0xa4
 	lsls r0, r0, #2
@@ -4940,7 +4940,7 @@ sub_08099FD8: @ 0x08099FD8
 	movs r3, #1
 	bl sub_0807459C
 	movs r0, #0x5a
-	bl sub_0807068C
+	bl setsleep
 	ldr r3, [r6, #0x1c]
 	movs r0, #0x98
 	lsls r0, r0, #2
@@ -4964,7 +4964,7 @@ sub_08099FD8: @ 0x08099FD8
 	movs r1, #2
 	bl Message_dtor
 	movs r0, #0x5a
-	bl sub_0807068C
+	bl setsleep
 	mov r3, r8
 	ldr r1, [r3]
 	ldr r2, [r1, #0x20]
@@ -5107,7 +5107,7 @@ _0809A142:
 	movs r1, #1
 	bl _call_via_r2
 	movs r0, #0x3c
-	bl sub_0807068C
+	bl setsleep
 	ldr r3, [r6, #0x1c]
 	movs r0, #0x98
 	lsls r0, r0, #2
@@ -5176,7 +5176,7 @@ _0809A142:
 	movs r1, #0
 	bl _call_via_r2
 	movs r0, #0x5a
-	bl sub_0807068C
+	bl setsleep
 	ldr r0, [r7]
 	ldr r2, [r0, #0x20]
 	adds r0, #0x20
@@ -5219,7 +5219,7 @@ _0809A142:
 	movs r2, #0xe
 	bl sub_08073070
 	movs r0, #0x5a
-	bl sub_0807068C
+	bl setsleep
 	ldr r0, _0809A434 @ =0x000003C9
 	bl playSound
 	ldr r0, [r7]
@@ -5231,7 +5231,7 @@ _0809A142:
 	movs r2, #0xf
 	bl sub_08073070
 	movs r0, #3
-	bl sub_0807068C
+	bl setsleep
 	ldr r0, [r7]
 	add r1, sp, #0x54
 	movs r2, #0x54
@@ -5241,7 +5241,7 @@ _0809A142:
 	movs r2, #0x14
 	bl sub_08073070
 	movs r0, #0x2d
-	bl sub_0807068C
+	bl setsleep
 	ldr r0, _0809A438 @ =0x000003CA
 	bl playSound
 	ldr r0, [r7]
@@ -5252,7 +5252,7 @@ _0809A142:
 	movs r2, #0x10
 	bl sub_08073070
 	movs r0, #0x3c
-	bl sub_0807068C
+	bl setsleep
 	ldr r0, _0809A43C @ =0x000003CB
 	bl playSound
 	ldr r0, [r7]
@@ -5263,7 +5263,7 @@ _0809A142:
 	movs r2, #0x3c
 	bl sub_08073070
 	movs r0, #0x3c
-	bl sub_0807068C
+	bl setsleep
 	movs r0, #0xf3
 	lsls r0, r0, #2
 	bl playSound
@@ -5277,7 +5277,7 @@ _0809A142:
 	adds r1, r2, #0
 	bl sub_08073198
 	movs r0, #0xf
-	bl sub_0807068C
+	bl setsleep
 	mov r1, r8
 	ldr r0, [r1]
 	bl sub_08072FE0
@@ -5294,7 +5294,7 @@ _0809A142:
 	movs r3, #1
 	bl sub_08074518
 	movs r0, #8
-	bl sub_0807068C
+	bl setsleep
 	ldr r0, [r7]
 	ldr r1, [r0, #0x1c]
 	movs r3, #0xc0
@@ -5316,7 +5316,7 @@ _0809A142:
 	movs r1, #6
 	bl _call_via_r2
 	movs r0, #8
-	bl sub_0807068C
+	bl setsleep
 	mov r0, sp
 	strb r5, [r0]
 	mov r0, sb
@@ -5329,7 +5329,7 @@ _0809A142:
 	bl sub_08074494
 	bl sub_08073270
 	movs r0, #0x5a
-	bl sub_0807068C
+	bl setsleep
 	ldr r3, [r6, #0x1c]
 	movs r1, #0x98
 	lsls r1, r1, #2
@@ -5367,7 +5367,7 @@ _0809A438: .4byte 0x000003CA
 _0809A43C: .4byte 0x000003CB
 _0809A440: .4byte 0x00000644
 _0809A444:
-	bl sub_0807068C
+	bl setsleep
 	ldr r1, [r6, #0x1c]
 	movs r0, #0xa6
 	lsls r0, r0, #2
@@ -5465,7 +5465,7 @@ sub_0809A4AC: @ 0x0809A4AC
 	cmp r0, #1
 	bne _0809A56C
 	movs r0, #0x78
-	bl sub_0807068C
+	bl setsleep
 	ldr r1, [r7, #0x1c]
 	movs r0, #0xa4
 	lsls r0, r0, #2
@@ -5498,7 +5498,7 @@ sub_0809A4AC: @ 0x0809A4AC
 	movs r1, #2
 	bl Message_dtor
 	movs r0, #0x5a
-	bl sub_0807068C
+	bl setsleep
 	ldr r1, [r7, #0x1c]
 	movs r0, #0xa6
 	lsls r0, r0, #2
@@ -5562,7 +5562,7 @@ sub_0809A578: @ 0x0809A578
 	cmp r0, #1
 	bne _0809A636
 	movs r0, #0x78
-	bl sub_0807068C
+	bl setsleep
 	ldr r1, [r7, #0x1c]
 	movs r0, #0xa4
 	lsls r0, r0, #2
@@ -5596,7 +5596,7 @@ sub_0809A578: @ 0x0809A578
 	movs r1, #2
 	bl Message_dtor
 	movs r0, #0x5a
-	bl sub_0807068C
+	bl setsleep
 	ldr r1, [r7, #0x1c]
 	movs r0, #0xa6
 	lsls r0, r0, #2
@@ -5657,7 +5657,7 @@ sub_0809A640: @ 0x0809A640
 	cmp r0, #1
 	bne _0809A700
 	movs r0, #0x78
-	bl sub_0807068C
+	bl setsleep
 	ldr r1, [r7, #0x1c]
 	movs r0, #0xa4
 	lsls r0, r0, #2
@@ -5690,7 +5690,7 @@ sub_0809A640: @ 0x0809A640
 	movs r1, #2
 	bl Message_dtor
 	movs r0, #0x5a
-	bl sub_0807068C
+	bl setsleep
 	ldr r1, [r7, #0x1c]
 	movs r0, #0xa6
 	lsls r0, r0, #2
@@ -5754,7 +5754,7 @@ sub_0809A70C: @ 0x0809A70C
 	cmp r0, #1
 	bne _0809A7CC
 	movs r0, #0x78
-	bl sub_0807068C
+	bl setsleep
 	ldr r1, [r7, #0x1c]
 	movs r0, #0xa4
 	lsls r0, r0, #2
@@ -5787,7 +5787,7 @@ sub_0809A70C: @ 0x0809A70C
 	movs r1, #2
 	bl Message_dtor
 	movs r0, #0x5a
-	bl sub_0807068C
+	bl setsleep
 	ldr r1, [r7, #0x1c]
 	movs r0, #0xa6
 	lsls r0, r0, #2
@@ -6020,7 +6020,7 @@ sub_0809A980: @ 0x0809A980
 	b _0809A98C
 _0809A986:
 	movs r0, #1
-	bl sub_0807068C
+	bl setsleep
 _0809A98C:
 	ldr r1, [r4, #0x1c]
 	movs r0, #0x84
@@ -6269,7 +6269,7 @@ sub_0809AA98: @ 0x0809AA98
 	movs r1, #2
 	bl Message_dtor
 	movs r0, #0x5a
-	bl sub_0807068C
+	bl setsleep
 	movs r0, #0x82
 	lsls r0, r0, #1
 	bl __builtin_new
@@ -6297,7 +6297,7 @@ sub_0809AA98: @ 0x0809AA98
 	movs r1, #2
 	bl Message_dtor
 	movs r0, #0x5a
-	bl sub_0807068C
+	bl setsleep
 	ldr r3, [r6, #0x1c]
 	add r3, sb
 	movs r0, #0
@@ -6343,7 +6343,7 @@ sub_0809AA98: @ 0x0809AA98
 	movs r1, #2
 	bl Message_dtor
 	movs r0, #0x5a
-	bl sub_0807068C
+	bl setsleep
 	ldr r3, [r6, #0x1c]
 	add r3, sb
 	movs r0, #0
@@ -6427,7 +6427,7 @@ sub_0809AA98: @ 0x0809AA98
 	movs r1, #2
 	bl Message_dtor
 	movs r0, #0x5a
-	bl sub_0807068C
+	bl setsleep
 	ldr r3, [r6, #0x1c]
 	add r3, sb
 	movs r0, #0
@@ -6508,7 +6508,7 @@ sub_0809AA98: @ 0x0809AA98
 	movs r1, #2
 	bl Message_dtor
 	movs r0, #0x5a
-	bl sub_0807068C
+	bl setsleep
 	ldr r3, [r6, #0x1c]
 	add r3, sb
 	movs r0, #0
@@ -6750,7 +6750,7 @@ sub_0809AFA8: @ 0x0809AFA8
 	ldr r0, _0809B084 @ =0x00000676
 	bl playSound
 	movs r0, #0x5a
-	bl sub_0807068C
+	bl setsleep
 	ldr r2, [r7, #0x1c]
 	movs r0, #0xc4
 	lsls r0, r0, #1
@@ -6841,7 +6841,7 @@ _0809B090:
 	ldr r0, _0809B120 @ =0x00000676
 	bl playSound
 	movs r0, #0x5a
-	bl sub_0807068C
+	bl setsleep
 	ldr r2, [r7, #0x1c]
 	movs r3, #0xc4
 	lsls r3, r3, #1
@@ -6901,7 +6901,7 @@ _0809B13E:
 	cmp r0, #0
 	bgt _0809B128
 	movs r0, #0x5a
-	bl sub_0807068C
+	bl setsleep
 	ldr r1, [r6, #0x1c]
 	movs r3, #0x8a
 	lsls r3, r3, #2
@@ -7125,7 +7125,7 @@ _0809B13E:
 	movs r1, #2
 	bl Message_dtor
 	movs r0, #0x5a
-	bl sub_0807068C
+	bl setsleep
 	movs r0, #1
 _0809B352:
 	add sp, #0x80
@@ -12768,7 +12768,7 @@ sub_0809E060: @ 0x0809E060
 	push {r4, r5, r6}
 	adds r5, r0, #0
 	movs r0, #0x78
-	bl sub_0807068C
+	bl setsleep
 	ldr r1, [r5, #0x1c]
 	movs r0, #0xb0
 	lsls r0, r0, #1
@@ -12778,7 +12778,7 @@ sub_0809E060: @ 0x0809E060
 	adds r0, r5, r0
 	ldr r1, [r1, #4]
 	bl _call_via_r1
-	bl sub_080729B0__5Goods
+	bl tryCastPlayer__5GoodsP4Unit
 	adds r4, r0, #0
 	ldr r1, [r4, #0x1c]
 	movs r0, #0xe6
@@ -12980,7 +12980,7 @@ sub_0809E1E0: @ 0x0809E1E0
 	ldrsh r0, [r4, r1]
 	adds r5, r5, r0
 	adds r0, r6, #0
-	bl sub_080729B0__5Goods
+	bl tryCastPlayer__5GoodsP4Unit
 	adds r1, r0, #0
 	ldr r2, [r4, #4]
 	adds r0, r5, #0
@@ -14057,7 +14057,7 @@ _0809EA56:
 	mov r1, r8
 	bl _call_via_r2
 	movs r0, #1
-	bl sub_0807068C
+	bl setsleep
 	ldr r0, [sp, #0x30]
 	cmp r0, #0
 	bge _0809E9C0
@@ -15100,7 +15100,7 @@ _0809F2DE:
 	str r3, [r0, #0x58]
 _0809F2E4:
 	movs r0, #1
-	bl sub_0807068C
+	bl setsleep
 	mov r1, sl
 	ldr r0, [r1, #0x58]
 	cmp r0, #4

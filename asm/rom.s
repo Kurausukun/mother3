@@ -899,7 +899,7 @@ _08001958:
 	thumb_func_start sub_08001960
 sub_08001960: @ 0x08001960
 	push {lr}
-	bl sub_08090FBC
+	bl VBlankIntrWait
 	pop {r0}
 	bx r0
 	.align 2, 0

@@ -73,8 +73,8 @@ sub_08090FB8: @ 0x08090FB8
 	svc #8
 	bx lr
 
-	thumb_func_start sub_08090FBC
-sub_08090FBC: @ 0x08090FBC
+	thumb_func_start VBlankIntrWait
+VBlankIntrWait: @ 0x08090FBC
 	movs r2, #0
 	svc #5
 	bx lr

@@ -525,7 +525,7 @@ _0806A210:
 	movs r1, #2
 	bl _._4Base
 _0806A2EA:
-	bl sub_08090FBC
+	bl VBlankIntrWait
 	ldr r0, [r7, #0x20]
 	adds r0, #1
 	str r0, [r7, #0x20]

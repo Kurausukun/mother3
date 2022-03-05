@@ -3210,7 +3210,7 @@ sub_0807DED4: @ 0x0807DED4
 	b _0807DEF4
 _0807DEDE:
 	movs r0, #1
-	bl sub_0807068C
+	bl setsleep
 	movs r0, #1
 	movs r1, #0
 	bl sub_08073018
@@ -5841,7 +5841,7 @@ _0807F428:
 	str r0, [r4, #0x40]
 _0807F42E:
 	movs r0, #1
-	bl sub_0807068C
+	bl setsleep
 	movs r0, #1
 	movs r1, #0
 	bl sub_08073018
@@ -6217,7 +6217,7 @@ _0807F724:
 	bl _call_via_r1
 	adds r1, r0, #0
 	adds r0, r4, #0
-	bl sub_0808B278
+	bl __9DebugMenu
 	str r0, [sp, #4]
 	ldr r1, [r0, #0x1c]
 	adds r1, #0xe0

@@ -4,6 +4,10 @@
 #include "base.h"
 #include "battle/unit.h"
 
+struct Msg {
+    u32 x[10];
+};
+
 class Skill : public Base {
 public:
     Skill(u32 unk);
@@ -24,7 +28,7 @@ public:
     virtual void skill_d0();
     virtual void skill_d8();
     virtual void skill_e0();
-    virtual void skill_e8();
+    virtual u8 skill_e8();
     virtual void skill_f0();
     virtual void skill_f8();
     virtual u8 skill_100(u32);
@@ -37,15 +41,15 @@ public:
     virtual void skill_138();
     virtual void skill_140();
     virtual void skill_148();
-    virtual void skill_150(Skill*, u32);
-    virtual void skill_158();
+    virtual void skill_150();
+    virtual Msg skill_158(u32) const;
     virtual void skill_160();
-    virtual Unit* getUser();
+    virtual Unit* getUser() const;
     virtual void skill_170(Unit*);
     virtual void skill_178();
-    virtual void skill_180();
-    virtual s32 numTargets();
-    virtual Unit* getTarget(u32);
+    virtual void skill_180(s32) const;
+    virtual s32 numTargets() const;
+    virtual Unit* getTarget(u32) const;
     virtual void skill_198();
     virtual u32 skill_1a0();
     virtual u32 skill_1a8();
@@ -67,8 +71,8 @@ public:
     virtual u32 ailmentChance() const = 0;
     virtual u32 hasAction() const = 0;
     virtual u32 priority() const = 0;
-    virtual Skill* showUseMessage(Skill* s) = 0;
-    virtual Skill* showForceUseMessage(Skill* s) = 0;
+    virtual Msg showUseMessage() const = 0;
+    virtual Msg showForceUseMessage() const = 0;
     virtual u32 hasDim() const = 0;
     virtual u32 animNo() const = 0;
     virtual u32 successAnimNo() const = 0;

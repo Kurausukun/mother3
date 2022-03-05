@@ -1000,7 +1000,7 @@ sub_0805F624: @ 0x0805F624
 	movs r5, #0xff
 _0805F654:
 	adds r0, r4, #0
-	bl sub_080729B0__5Goods
+	bl tryCastPlayer__5GoodsP4Unit
 	adds r4, r0, #0
 	cmp r4, #0
 	beq _0805F6A2
@@ -5152,7 +5152,7 @@ _080616A2:
 	mov r0, sp
 	movs r1, #0
 	bl attackdata_118__10UnitTargeti
-	bl sub_080729B0__5Goods
+	bl tryCastPlayer__5GoodsP4Unit
 	adds r4, r0, #0
 	mov r0, sp
 	movs r1, #2

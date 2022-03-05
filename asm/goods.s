@@ -1800,7 +1800,7 @@ _0806309E:
 	b _08062FAA
 _080630B4:
 	movs r0, #1
-	bl sub_0807068C
+	bl setsleep
 	ldr r3, [sp, #0x54]
 	str r3, [sp, #0x50]
 	ldr r0, [sp, #0x4c]

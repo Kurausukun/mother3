@@ -4784,8 +4784,8 @@ _0808B26C: .4byte 0x00000291
 _0808B270: .4byte 0x00000283
 _0808B274: .4byte _vt.1D
 
-	thumb_func_start sub_0808B278
-sub_0808B278: @ 0x0808B278
+	thumb_func_start __9DebugMenu
+__9DebugMenu: @ 0x0808B278
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -6384,7 +6384,7 @@ sub_0808BFF8: @ 0x0808BFF8
 	b _0808C018
 _0808C002:
 	movs r0, #1
-	bl sub_0807068C
+	bl setsleep
 	movs r0, #1
 	movs r1, #0
 	bl sub_08073018
@@ -6489,7 +6489,7 @@ sub_0808C0AC: @ 0x0808C0AC
 	b _0808C0CC
 _0808C0B6:
 	movs r0, #1
-	bl sub_0807068C
+	bl setsleep
 	movs r0, #1
 	movs r1, #0
 	bl sub_08073018
@@ -9053,7 +9053,7 @@ sub_0808D5E8: @ 0x0808D5E8
 	b _0808D608
 _0808D5F2:
 	movs r0, #1
-	bl sub_0807068C
+	bl setsleep
 	movs r0, #1
 	movs r1, #0
 	bl sub_08073018
@@ -10587,7 +10587,7 @@ sub_0808E244: @ 0x0808E244
 	str r0, [r4, #0x2c]
 _0808E24C:
 	movs r0, #1
-	bl sub_0807068C
+	bl setsleep
 	movs r0, #1
 	movs r1, #0
 	bl sub_08073018
@@ -11071,7 +11071,7 @@ sub_0808E64C: @ 0x0808E64C
 	b _0808E658
 _0808E652:
 	movs r0, #1
-	bl sub_0807068C
+	bl setsleep
 _0808E658:
 	ldrh r0, [r4, #0x24]
 	cmp r0, #3

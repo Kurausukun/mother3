@@ -123,7 +123,7 @@ _0806A210:\n\
 	movs r1, #2\n\
 	bl _._4Base\n\
 _0806A2EA:\n\
-	bl sub_08090FBC\n\
+	bl VBlankIntrWait\n\
 	ldr r0, [r7, #0x20]\n\
 	adds r0, #1\n\
 	str r0, [r7, #0x20]\n\

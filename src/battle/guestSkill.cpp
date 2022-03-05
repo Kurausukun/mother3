@@ -79,18 +79,13 @@ u32 GuestSkill::priority() const {
     return mInfo->move.priority;
 }
 
-// Seems to pass `this` as thisptr for the called function, but uses the vtable of `s` ??????
-NONMATCH("asm/non_matching/guestSkill/sub_080808A8.inc", Skill* GuestSkill::showUseMessage(Skill* s)) {
-    // s->skill_150(this, s->mInfo->move.text_no);
-    return this;
+Msg GuestSkill::showUseMessage() const {
+    return skill_158(mInfo->move.msg_no);
 }
-END_NONMATCH
 
-NONMATCH("asm/non_matching/guestSkill/sub_080808D0.inc", Skill* GuestSkill::showForceUseMessage(Skill* s)) {
-    // s->skill_150(this, s->mInfo->move.text_no);
-    return this;
+Msg GuestSkill::showForceUseMessage() const {
+    return skill_158(mInfo->move.msg_no);
 }
-END_NONMATCH
 
 u32 GuestSkill::hasDim() const {
     u32 bank = mInfo->move.has_dim;

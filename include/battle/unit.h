@@ -161,7 +161,7 @@ private:
     /* 0x58 */ s16 _58[64];
     /* 0xd8 */ u32 _d8;
     /* 0xdc */ Vector<UnitCmd*> _dc;
-    /* 0xe8 */ Fit _e8;
+    /* 0xe8 */ Vector<UnitCmd*> _e8;
     /* 0xf4 */ ID _f4;
 };
 
@@ -245,7 +245,7 @@ struct UnitCmd : Base {
     virtual void x_c8();
     virtual void x_d0();
     virtual void x_d8();
-    virtual void x_e0();
+    virtual s32 x_e0();
     virtual s32 x_e8();
     virtual void x_f0();
     virtual void x_f8();

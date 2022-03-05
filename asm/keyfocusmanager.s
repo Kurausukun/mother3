@@ -1010,8 +1010,8 @@ _08070686:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_0807068C
-sub_0807068C: @ 0x0807068C
+	thumb_func_start setsleep
+setsleep: @ 0x0807068C
 	push {r4, lr}
 	adds r4, r0, #0
 	bl get__12ClockManager
@@ -1201,7 +1201,7 @@ sub_080707E4: @ 0x080707E4
 	b _08070806
 _08070800:
 	movs r0, #1
-	bl sub_0807068C
+	bl setsleep
 _08070806:
 	mov r0, sp
 	bl sub_080701AC

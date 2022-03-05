@@ -582,8 +582,8 @@ _080729A8:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080729B0__5Goods
-sub_080729B0__5Goods: @ 0x080729B0
+	thumb_func_start tryCastPlayer__5GoodsP4Unit
+tryCastPlayer__5GoodsP4Unit: @ 0x080729B0
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	cmp r5, #0
@@ -1537,7 +1537,7 @@ _080730A0:
 	adds r1, r4, #0
 	bl _call_via_r2
 	movs r0, #1
-	bl sub_0807068C
+	bl setsleep
 	adds r6, #1
 	cmp r6, r5
 	ble _080730A0
@@ -1918,7 +1918,7 @@ _080733A6:
 _080733CE:
 	adds r4, r0, #0
 	movs r0, #1
-	bl sub_0807068C
+	bl setsleep
 _080733D6:
 	subs r5, #1
 	cmp r5, #0
@@ -3922,7 +3922,7 @@ _080743EA:
 	bl setBAll__15struct_0806A57CUi
 _080743F8:
 	movs r0, #1
-	bl sub_0807068C
+	bl setsleep
 	adds r5, #1
 	cmp r5, r6
 	ble _080743BC
@@ -3986,7 +3986,7 @@ _0807446A:
 	bl setBAll__15struct_0806A57CUi
 _08074478:
 	movs r0, #1
-	bl sub_0807068C
+	bl setsleep
 	adds r6, #1
 	cmp r6, r5
 	ble _0807443C
@@ -4052,7 +4052,7 @@ _080744EE:
 	bl setBAll__15struct_0806A57CUi
 _080744FC:
 	movs r0, #1
-	bl sub_0807068C
+	bl setsleep
 	adds r6, #1
 	cmp r6, r5
 	ble _080744BC
@@ -4118,7 +4118,7 @@ _08074572:
 	bl setBAll__15struct_0806A57CUi
 _08074580:
 	movs r0, #1
-	bl sub_0807068C
+	bl setsleep
 	adds r5, #1
 	cmp r5, r6
 	ble _08074540

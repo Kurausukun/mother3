@@ -1647,7 +1647,7 @@ _0805E4D0:
 	cmp r0, #1
 	beq _0805E500
 	movs r0, #0xa
-	bl sub_0807068C
+	bl setsleep
 	movs r0, #1
 	b _0805E502
 	.align 2, 0

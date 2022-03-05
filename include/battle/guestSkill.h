@@ -31,8 +31,8 @@ public:
     u32 ailmentChance() const;
     u32 hasAction() const;
     u32 priority() const;
-    Skill* showUseMessage(Skill* s);
-    Skill* showForceUseMessage(Skill* s);
+    Msg showUseMessage() const;
+    Msg showForceUseMessage() const;
     u32 hasDim() const;
     u32 animNo() const;
     u32 successAnimNo() const;
