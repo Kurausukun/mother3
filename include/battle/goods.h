@@ -17,8 +17,8 @@ public:
     virtual Skill* skill_1c0();
     virtual u32 skill_1a0();
     virtual u16 id() const;
-    virtual Skill* name(Skill*);
-    virtual Skill* skill_1d8(Skill*);
+    virtual Msg name() const;
+    virtual Msg skill_1d8() const;
     virtual u32 skill_1e0();
     virtual u32 effect() const;
     virtual u32 element() const;
@@ -56,7 +56,7 @@ public:
     u32 sub_08078410();
     void nullsub_28();
     static Player* tryCastPlayer(Unit*);
-    Goods* getName(u16);
+    static Msg getName(u16);
     u16 calcMessage(u16 idx) const;
     static Msg sub_08073444(u16 idx);
 

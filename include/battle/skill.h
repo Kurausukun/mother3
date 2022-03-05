@@ -5,6 +5,9 @@
 #include "battle/unit.h"
 
 struct Msg {
+    Msg();
+    Msg(void* p, u32 idx);
+    virtual ~Msg();
     u32 x[10];
 };
 
@@ -58,8 +61,8 @@ public:
 
     virtual Skill* skill_1c0() = 0;
     virtual u16 id() const = 0;
-    virtual Skill* name(Skill*) = 0;
-    virtual Skill* skill_1d8(Skill*) = 0;
+    virtual Msg name() const = 0;
+    virtual Msg skill_1d8() const = 0;
     virtual u32 skill_1e0() = 0;
     virtual u32 effect() const = 0;
     virtual u32 element() const = 0;

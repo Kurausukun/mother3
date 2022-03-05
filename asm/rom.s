@@ -1323,8 +1323,8 @@ sub_08001C2C: @ 0x08001C2C
 	.align 2, 0
 _08001C58: .4byte _binary_build_mother3_assets_misctext_bin_start
 
-	thumb_func_start get_string
-get_string: @ 0x08001C5C
+	thumb_func_start get_misctext_msg
+get_misctext_msg: @ 0x08001C5C
 	push {r4, r5, r6, r7, lr}
 	lsls r0, r0, #0x10
 	lsrs r2, r0, #0x10
@@ -1510,8 +1510,8 @@ _08001DAA:
 	pop {r1}
 	bx r1
 
-	thumb_func_start get_misctext_block
-get_misctext_block: @ 0x08001DB0
+	thumb_func_start get_misctext_len
+get_misctext_len: @ 0x08001DB0
 	push {lr}
 	adds r1, r0, #0
 	lsls r1, r1, #0x10

@@ -542,7 +542,7 @@ sub_08066584: @ 0x08066584
 	bl sub_08071150
 	adds r0, r6, #0
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	adds r0, r7, #0
 	movs r1, #1
 	bl sub_08071174
@@ -562,7 +562,7 @@ sub_08066584: @ 0x08066584
 	bl sub_08071150
 	adds r0, r6, #0
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	ldr r0, [sp, #0x60]
 	movs r1, #1
 	bl sub_08071174
@@ -2113,7 +2113,7 @@ _08067334:
 	bl sub_08071150
 	mov r0, sp
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	movs r0, #0xa6
 	lsls r0, r0, #3
 	adds r0, r0, r7
@@ -4204,7 +4204,7 @@ _08068490:
 	bl _call_via_r2
 	mov r0, sp
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	b _0806853E
 	.align 2, 0
 _08068518: .4byte 0x0000043E
@@ -4235,13 +4235,13 @@ _0806853E:
 	lsls r2, r2, #3
 	adds r4, r6, r2
 	mov r0, sp
-	bl sub_0806E274
+	bl __3Msg
 	adds r0, r4, #0
 	mov r1, sp
 	bl sub_08071150
 	mov r0, sp
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	adds r0, r4, #0
 	movs r1, #0
 	bl sub_0806E948
@@ -4400,7 +4400,7 @@ _08068680:
 	bl sub_08071150
 	mov r0, sp
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	adds r0, r4, #0
 	movs r1, #1
 	bl sub_0806E948

@@ -34,16 +34,16 @@ sub_080830C4: @ 0x080830C4
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
 	movs r0, #2
-	bl get_string
+	bl get_misctext_msg
 	adds r4, r0, #0
 	movs r0, #2
-	bl get_misctext_block
+	bl get_misctext_len
 	adds r2, r0, #0
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0806E238
+	bl __3MsgPvUi
 	adds r0, r5, #0
 	pop {r4, r5}
 	pop {r1}
@@ -4256,7 +4256,7 @@ sub_080851A0: @ 0x080851A0
 	str r0, [sp, #8]
 	add r4, sp, #0xc
 	adds r0, r4, #0
-	bl sub_0806E274
+	bl __3Msg
 	movs r5, #0
 	b _080852CA
 _080851C4:
@@ -4320,7 +4320,7 @@ _08085216:
 _0808523C:
 	adds r0, r5, #0
 	str r1, [sp, #0x28]
-	bl sub_0806E274
+	bl __3Msg
 	adds r5, #0xc
 	subs r4, #1
 	ldr r1, [sp, #0x28]
@@ -4435,7 +4435,7 @@ _080852FA:
 	mov sb, r0
 _0808531E:
 	adds r0, r5, #0
-	bl sub_0806E274
+	bl __3Msg
 	adds r5, #0xc
 	subs r4, #1
 	cmp r4, sb
@@ -4710,7 +4710,7 @@ _08085530:
 	blt _08085458
 	add r0, sp, #0xc
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	mov r5, sp
 	ldr r2, [sp, #8]
 	cmp r2, #0

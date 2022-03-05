@@ -16,7 +16,7 @@ sub_0806E820: @ 0x0806E820
 	bl sub_08088E18
 	adds r0, r7, #0
 	adds r0, #0x2c
-	bl sub_0806E274
+	bl __3Msg
 	movs r4, #0
 	movs r0, #0
 	strh r0, [r7, #0x38]
@@ -96,7 +96,7 @@ _0806E8DA:
 	adds r0, r4, #0
 	adds r0, #0x2c
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	adds r0, r4, #0
 	adds r0, #0x20
 	movs r1, #2

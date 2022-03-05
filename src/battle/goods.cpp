@@ -1,12 +1,12 @@
 #include "battle/goods.h"
 #include "battle/player.h"
 
-extern "C" u32 get_string(u32, u32);
-extern "C" u16 get_misctext_block(u32);
+extern "C" void* get_misctext_msg(u32, u32);
+extern "C" u16 get_misctext_len(u32);
+extern "C" void* sub_08001BCC(u32);
 
-Goods* Goods::getName(u16 idx) {
-    sub_0806E238(this, get_string(2, idx), get_misctext_block(2));
-    return this;
+Msg Goods::getName(u16 idx) {
+    return Msg(get_misctext_msg(2, idx), get_misctext_len(2));
 }
 
 Goods::Goods(u16 idx, u32 unk, u16 a2) : Skill(unk) {
@@ -51,12 +51,15 @@ u32 Goods::goods_2a0() const {
     return _4c;
 }
 
-Skill* Goods::name(Skill* s) {
-    getName(s->id());
-    return this;
+Msg Goods::name() const {
+    return getName(id());
 }
 
-ASM_FUNC("asm/non_matching/goods/skill_1d8.inc", Skill* Goods::skill_1d8(Skill* s));
+NONMATCH("asm/non_matching/goods/skill_1d8.inc", Msg Goods::skill_1d8() const) {
+    Msg m = Msg(sub_08001BCC(id()), -1);
+    return m;
+}
+END_NONMATCH
 
 u32 Goods::skill_1e0() {
     return 0;

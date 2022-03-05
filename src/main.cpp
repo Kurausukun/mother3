@@ -85,9 +85,9 @@ extern "C" void sub_08000BE8();
 extern "C" u32 get_flag(u32);
 extern "C" void init_save();
 extern "C" void sub_08000BE8();
-extern "C" u32 get_misctext_block(u32);
+extern "C" u32 get_misctext_len(u32);
 extern "C" void sub_08001B54(void*, u32, s32);
-extern "C" u32 get_string(u32, u32);
+extern "C" u32 get_misctext_msg(u32, u32);
 extern "C" void sub_08002420(void*, u32, s16);
 extern "C" void sub_0800272C();
 extern "C" void sub_0805B528();
@@ -480,11 +480,11 @@ void init_save() {
         gSave._482[i] = 0;
         gSave._582[i] = 100;
     }
-    u16 tmp = get_misctext_block(5);
+    u16 tmp = get_misctext_len(5);
     sub_08001B54(gSave.hinawa_name, sizeof gSave.hinawa_name, -1);
-    sub_08002420(gSave.hinawa_name, get_string(5, 8), tmp);
+    sub_08002420(gSave.hinawa_name, get_misctext_msg(5, 8), tmp);
     sub_08001B54(gSave.claus_name, sizeof gSave.claus_name, -1);
-    sub_08002420(gSave.claus_name, get_string(5, 5), tmp);
+    sub_08002420(gSave.claus_name, get_misctext_msg(5, 5), tmp);
     sub_08001B54(gSave.fav_food, sizeof gSave.fav_food, -1);
     sub_08001B54(gSave.fav_thing, sizeof gSave.fav_thing, -1);
     sub_08001B54(gSave.playername_short, sizeof gSave.playername_short, -1);
@@ -531,10 +531,10 @@ void init_save() {
 }
 
 void sub_08000BE8() {
-    u32 tmp = get_misctext_block(5);
+    u32 tmp = get_misctext_len(5);
     for (u16 i = 0; i < 0x10; ++i) {
         sub_08001B54(&gCharStats[i].name, sizeof gCharStats[i].name, -1);
-        sub_08002420(&gCharStats[i].name, get_string(6, i), tmp);
+        sub_08002420(&gCharStats[i].name, get_misctext_msg(6, i), tmp);
     }
     gCharStats[0].charNo = 0;
     gCharStats[0].spriteNo = 0;

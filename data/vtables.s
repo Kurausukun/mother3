@@ -13299,10 +13299,10 @@ vt_09F4D600::
 	.4byte id__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte name__10GuestSkillP5Skill
+	.4byte name__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__10GuestSkillP5Skill
+	.4byte skill_1d8__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -13553,10 +13553,10 @@ vt_09F4D8A0::
 	.4byte id__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte name__10GuestSkillP5Skill
+	.4byte name__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__10GuestSkillP5Skill
+	.4byte skill_1d8__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -13807,10 +13807,10 @@ vt_09F4DB40::
 	.4byte id__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte name__10GuestSkillP5Skill
+	.4byte name__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__10GuestSkillP5Skill
+	.4byte skill_1d8__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -14061,10 +14061,10 @@ vt_09F4DDE0::
 	.4byte id__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte name__10GuestSkillP5Skill
+	.4byte name__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__10GuestSkillP5Skill
+	.4byte skill_1d8__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -14315,10 +14315,10 @@ vt_09F4E080::
 	.4byte id__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte name__10GuestSkillP5Skill
+	.4byte name__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__10GuestSkillP5Skill
+	.4byte skill_1d8__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -81912,10 +81912,10 @@ _vt.5Goods::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -82192,10 +82192,10 @@ _vt.11TriviaCard4::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -82470,10 +82470,10 @@ _vt.11TriviaCard3::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -82748,10 +82748,10 @@ _vt.11TriviaCard2::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -83026,10 +83026,10 @@ _vt.11TriviaCard1::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -83304,10 +83304,10 @@ _vt.9DragoFang::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -83582,10 +83582,10 @@ _vt.14ShieldSnatcher::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -83860,10 +83860,10 @@ _vt.16CupOfLifenoodles::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -84138,10 +84138,10 @@ _vt.10SecretHerb::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -84416,10 +84416,10 @@ _vt.8PaperFan::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -84694,10 +84694,10 @@ _vt.11MadeYouLook::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -84972,10 +84972,10 @@ _vt.15AttackAttractor::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -85250,10 +85250,10 @@ _vt.15EnemyWimperizer::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -85528,10 +85528,10 @@ _vt.15EnemyBufferizer::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -85806,10 +85806,10 @@ _vt.9LottoMeal::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -86084,10 +86084,10 @@ _vt.9DoggyFood::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -86362,10 +86362,10 @@ _vt.14PeculiarCheese::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -86640,10 +86640,10 @@ _vt.8BugSpray::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -86918,10 +86918,10 @@ _vt.13AncientBanana::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -87196,10 +87196,10 @@ _vt.11HoneyShower::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -87474,10 +87474,10 @@ _vt.12SaltwaterGun::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -87752,10 +87752,10 @@ _vt.15NewYearsEveBomb::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -88033,10 +88033,10 @@ _vt.12DefaultGoods::
 	.4byte id__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte name__5GoodsP5Skill
+	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__5GoodsP5Skill
+	.4byte skill_1d8__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4
@@ -91661,13 +91661,13 @@ vt_09F7FE10::
 	.2byte 0
 	.4byte sub_0806DFDC
 
-vt_09F7FF40::
+_vt.3Msg::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte Message_dtor
+	.4byte _._3Msg
 
 vt_09F7FF50::
 	.2byte 0
@@ -96345,10 +96345,10 @@ _vt.10GuestSkill::
 	.4byte id__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte name__10GuestSkillP5Skill
+	.4byte name__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__10GuestSkillP5Skill
+	.4byte skill_1d8__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1F4

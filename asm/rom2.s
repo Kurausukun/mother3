@@ -2313,14 +2313,14 @@ _08077C94:
 	b _08077CCE
 _08077CC8:
 	mov r0, sp
-	bl sub_0806E274
+	bl __3Msg
 _08077CCE:
 	adds r0, r4, #0
 	mov r1, sp
 	bl sub_08083D14
 	mov r0, sp
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	add sp, #0x34
 	pop {r3, r4, r5}
 	mov r8, r3
@@ -2465,13 +2465,13 @@ sub_08077DBC: @ 0x08077DBC
 	lsls r4, r4, #0x10
 	lsrs r4, r4, #0x10
 	add r0, sp, #4
-	bl sub_0806E274
+	bl __3Msg
 	add r6, sp, #0x10
 	adds r0, r6, #0
-	bl sub_0806E274
+	bl __3Msg
 	add r5, sp, #0x1c
 	adds r0, r5, #0
-	bl sub_0806E274
+	bl __3Msg
 	str r5, [sp]
 	mov r0, r8
 	adds r1, r4, #0
@@ -2480,13 +2480,13 @@ sub_08077DBC: @ 0x08077DBC
 	bl sub_08073460
 	adds r0, r5, #0
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	adds r0, r6, #0
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	add r0, sp, #4
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	mov r0, r8
 	add sp, #0x28
 	pop {r3}

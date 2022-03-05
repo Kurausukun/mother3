@@ -20,7 +20,7 @@
 	adds r1, r0, #0
 	ldr r2, _08064BFC @ =0x0000FFFF
 	add r0, sp, #4
-	bl sub_0806E238
+	bl __3MsgPvUi
 	ldr r1, [r5, #0x1c]
 	adds r1, r1, r4
 	movs r2, #0
@@ -74,12 +74,12 @@ _08064BFC: .4byte 0x0000FFFF
 _08064C00:
 	add r4, sp, #0x1c
 	adds r0, r4, #0
-	bl sub_0806E274
+	bl __3Msg
 _08064C08:
 	adds r5, r4, #0
 	add r4, sp, #0x28
 	adds r0, r4, #0
-	bl sub_0806E274
+	bl __3Msg
 	str r4, [sp]
 	adds r0, r7, #0
 	add r1, sp, #4
@@ -88,16 +88,16 @@ _08064C08:
 	bl sub_080734A0
 	adds r0, r4, #0
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	adds r0, r5, #0
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	mov r0, r8
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	add r0, sp, #4
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	adds r0, r7, #0
 	add sp, #0x34
 	pop {r3}

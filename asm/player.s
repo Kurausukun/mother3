@@ -1018,7 +1018,7 @@ sub_08078700: @ 0x08078700
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	add sp, #0x10
 	pop {r0}
 	bx r0
@@ -1207,7 +1207,7 @@ _08078874:
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	ldr r1, [r6, #0x1c]
 	movs r3, #0xb0
 	lsls r3, r3, #1
@@ -1662,7 +1662,7 @@ sub_08078C3C: @ 0x08078C3C
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	add sp, #0x10
 	pop {r4}
 	pop {r0}
@@ -1927,7 +1927,7 @@ _08078DF6:
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	movs r0, #0x33
 	adds r1, r7, #0
 	adds r2, r7, #0
@@ -2035,7 +2035,7 @@ _08078ED8:
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	movs r0, #0x36
 	adds r1, r7, #0
 	adds r2, r7, #0
@@ -2274,7 +2274,7 @@ _080790F2:
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	movs r0, #0x33
 	adds r1, r7, #0
 	adds r2, r7, #0
@@ -2372,7 +2372,7 @@ _080791B4:
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	movs r0, #0x36
 	adds r1, r7, #0
 	adds r2, r7, #0
@@ -2767,7 +2767,7 @@ _08079488:
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	movs r0, #0x39
 	mov r1, r8
 	mov r2, r8
@@ -2936,7 +2936,7 @@ _08079674:
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	movs r0, #0x3c
 	mov r1, r8
 	mov r2, r8
@@ -3693,7 +3693,7 @@ _08079CC4:
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	b _08079D10
 _08079CDE:
 	ldr r2, [r4, #0x1c]
@@ -3717,7 +3717,7 @@ _08079CDE:
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 _08079D10:
 	mov r0, r8
 	b _08079E48
@@ -3845,7 +3845,7 @@ _08079DFA:
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	b _08079E46
 _08079E14:
 	ldr r2, [r4, #0x1c]
@@ -3870,7 +3870,7 @@ _08079E2E:
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 _08079E46:
 	movs r0, #0
 _08079E48:
@@ -4056,7 +4056,7 @@ _08079FA6:
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 _08079FBE:
 	movs r0, #0
 _08079FC0:
@@ -4407,14 +4407,14 @@ _0807A24A:
 	bl __5AssetPCUcUi
 	mov r0, sp
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	b _0807A27A
 _0807A26C:
 	mov r0, r8
-	bl sub_0806E274
+	bl __3Msg
 	mov r0, sp
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 _0807A27A:
 	mov r0, r8
 	add sp, #0xc
@@ -5119,7 +5119,7 @@ sub_0807A73C: @ 0x0807A73C
 _0807A7BE:
 	add r4, sp, #0x1c
 	adds r0, r4, #0
-	bl sub_0806E274
+	bl __3Msg
 _0807A7C6:
 	str r4, [sp]
 	adds r0, r7, #0
@@ -5129,13 +5129,13 @@ _0807A7C6:
 	bl sub_08073460
 	adds r0, r4, #0
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	mov r0, sb
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	add r0, sp, #4
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	adds r0, r7, #0
 	add sp, #0x28
 	pop {r3, r4}
@@ -5195,7 +5195,7 @@ sub_0807A7FC: @ 0x0807A7FC
 _0807A85C:
 	add r4, sp, #0x10
 	adds r0, r4, #0
-	bl sub_0806E274
+	bl __3Msg
 _0807A864:
 	str r4, [sp]
 	adds r0, r5, #0
@@ -5205,10 +5205,10 @@ _0807A864:
 	bl sub_08073460
 	adds r0, r4, #0
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	add r0, sp, #4
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	adds r0, r5, #0
 	add sp, #0x1c
 	pop {r4, r5, r6, r7}
@@ -5264,7 +5264,7 @@ sub_0807A8CC: @ 0x0807A8CC
 	bne _0807A8E8
 	ldr r1, _0807A8E4 @ =gUnknown_02004EE2
 	movs r2, #9
-	bl sub_0806E238
+	bl __3MsgPvUi
 	b _0807A8F8
 	.align 2, 0
 _0807A8E4: .4byte gUnknown_02004EE2
@@ -5275,7 +5275,7 @@ _0807A8E8:
 	adds r1, r1, r0
 	adds r0, r4, #0
 	movs r2, #8
-	bl sub_0806E238
+	bl __3MsgPvUi
 _0807A8F8:
 	adds r0, r4, #0
 	pop {r4}
@@ -6641,7 +6641,7 @@ _0807B3F4:
 	bl sub_080735E0
 	mov r0, sp
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 _0807B40C:
 	movs r0, #0
 _0807B40E:
@@ -6824,10 +6824,10 @@ sub_0807B528: @ 0x0807B528
 	bl _call_via_r2
 	add r5, sp, #0x1c
 	adds r0, r5, #0
-	bl sub_0806E274
+	bl __3Msg
 	add r4, sp, #0x28
 	adds r0, r4, #0
-	bl sub_0806E274
+	bl __3Msg
 	str r4, [sp]
 	add r0, sp, #4
 	movs r1, #0x74
@@ -6844,16 +6844,16 @@ sub_0807B528: @ 0x0807B528
 	bl sub_080735E0
 	add r0, sp, #4
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	adds r0, r4, #0
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	adds r0, r5, #0
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	adds r0, r6, #0
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 _0807B5A8:
 	movs r1, #0x86
 	lsls r1, r1, #2
@@ -6912,10 +6912,10 @@ sub_0807B5D4: @ 0x0807B5D4
 	bl _call_via_r2
 	add r5, sp, #0x1c
 	adds r0, r5, #0
-	bl sub_0806E274
+	bl __3Msg
 	add r4, sp, #0x28
 	adds r0, r4, #0
-	bl sub_0806E274
+	bl __3Msg
 	str r4, [sp]
 	add r0, sp, #4
 	movs r1, #0x75
@@ -6932,16 +6932,16 @@ sub_0807B5D4: @ 0x0807B5D4
 	bl sub_080735E0
 	add r0, sp, #4
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	adds r0, r4, #0
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	adds r0, r5, #0
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	adds r0, r6, #0
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 _0807B670:
 	add sp, #0x38
 	pop {r4, r5, r6}
@@ -7232,7 +7232,7 @@ _0807B8AC:
 	bl sub_0807459C
 _0807B8DE:
 	add r0, sp, #4
-	bl sub_0806E274
+	bl __3Msg
 	ldr r2, [r7, #0x1c]
 	movs r0, #0xc4
 	lsls r0, r0, #1
@@ -7259,7 +7259,7 @@ _0807B8DE:
 	bl sub_0806E1C8
 	add r5, sp, #0x34
 	adds r0, r5, #0
-	bl sub_0806E274
+	bl __3Msg
 	str r5, [sp]
 	add r4, sp, #0x10
 	adds r0, r4, #0
@@ -7272,16 +7272,16 @@ _0807B8DE:
 	bl sub_0806E2E8
 	adds r0, r4, #0
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	adds r0, r5, #0
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	adds r0, r6, #0
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	mov r0, r8
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	mov r0, sb
 	ldrb r3, [r0, #1]
 	movs r0, #0x80
@@ -7368,7 +7368,7 @@ _0807BA06:
 	bl sub_080735E0
 	add r0, sp, #4
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 _0807BA20:
 	add sp, #0x4c
 	pop {r3, r4}
@@ -7403,10 +7403,10 @@ tellStatUpgrade: @ 0x0807BA3C
 	bl sub_0806E1C8
 	add r5, sp, #0x1c
 	adds r0, r5, #0
-	bl sub_0806E274
+	bl __3Msg
 	add r4, sp, #0x28
 	adds r0, r4, #0
-	bl sub_0806E274
+	bl __3Msg
 	str r4, [sp]
 	add r0, sp, #4
 	mov r1, sb
@@ -7418,16 +7418,16 @@ tellStatUpgrade: @ 0x0807BA3C
 	bl sub_0806E374
 	add r0, sp, #4
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	adds r0, r4, #0
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	adds r0, r5, #0
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	adds r0, r6, #0
 	movs r1, #2
-	bl Message_dtor
+	bl _._3Msg
 	lsrs r0, r7, #0x1f
 	adds r0, r7, r0
 	asrs r0, r0, #1
