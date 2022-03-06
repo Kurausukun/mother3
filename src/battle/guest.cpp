@@ -4,7 +4,8 @@
 
 extern "C" void* get_misctext_msg(u32, u16);
 extern "C" u16 get_misctext_len(u32);
-extern "C" void __3MsgPvUi(Base*, u32, u32);
+// extern "C" void genMisctextMsg(Base*, u32, u32);
+extern "C" Msg genMisctextMsg(void*, u32);
 
 extern ClockData gUnknown_080F6D8C;
 extern ClockData gUnknown_080F6D94;
@@ -16,7 +17,7 @@ void battle_end_callback(Guest* g) {
 SINGLETON_IMPL(Guest);
 
 Msg getName(u32 idx) {
-    return Msg(get_misctext_msg(6, idx), get_misctext_len(6));
+    return Msg::genMisctextMsg(get_misctext_msg(6, idx), get_misctext_len(6));
 }
 
 Guest::Guest(u16 id) : mID(id), mStats(&gCharStats[id]), mLevelInfo(&gLevelStatTable[id]) {
@@ -34,7 +35,7 @@ void Guest::setupStats() {
     setIQ(mStats->iq);
     setSpeed(mStats->speed);
     unit_148(mStats->_2c);
-    unit_150(mStats->_2d);
+    setClumsiness(mStats->_2d);
     unit_158(mStats->_2e);
 }
 
@@ -64,11 +65,11 @@ Unit* Guest::guest_2c0() {
     return NULL;
 }
 
-bool Guest::guest_2e8(Skill* skill) {
-    UnitTarget target(skill->target(), skill->getUser());
+bool Guest::guest_2e8(Action* action) {
+    UnitTarget target(action->target(), action->getUser());
     u32 unk = target.attackdata_c8();
     for (int i = 0; i < target.attackdata_110(); ++i) {
-        skill->addTarget(target.attackdata_118(i));
+        action->addTarget(target.attackdata_118(i));
     }
     return unk == 0;
 }

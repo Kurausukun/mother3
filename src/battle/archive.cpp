@@ -46,6 +46,7 @@ u32 BXTHandle::count() const {
     return mCount;
 }
 
-BattleMessage::BattleMessage(BXTHandle* handle, u32 index)
-    : Asset(handle->mBlock + handle->mOffsets[index],
-            ((u32)(handle->mOffsets[index + 1] - handle->mOffsets[index]) >> 1) - 1) {}
+Msg BXTHandle::getMessage(u32 index) {
+    return Msg((u16*)(mBlock + mOffsets[index]),
+               ((u32)(mOffsets[index + 1] - mOffsets[index]) >> 1) - 1);
+}

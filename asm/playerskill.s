@@ -4498,7 +4498,7 @@ _0807E7DE:
 	mov r0, r8
 	mov r1, sp
 	movs r2, #0
-	bl sub_0807A1F4
+	bl action_fixme__6Actioni
 	adds r0, r4, #0
 	mov r1, r8
 	bl sub_08071150
@@ -4521,7 +4521,7 @@ _0807E7DE:
 	mov r0, r8
 	mov r1, sp
 	movs r2, #1
-	bl sub_0807A1F4
+	bl action_fixme__6Actioni
 	adds r0, r4, #0
 	mov r1, r8
 	bl sub_08071150
@@ -7804,7 +7804,7 @@ sub_080803C8: @ 0x080803C8
 	lsrs r2, r2, #0x10
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl __3MsgPvUi
+	bl genMisctextMsg__3MsgPvUi
 	adds r0, r5, #0
 	pop {r4, r5}
 	pop {r1}
@@ -7818,7 +7818,7 @@ sub_080803F4: @ 0x080803F4
 	adds r1, r2, #0
 	lsls r4, r4, #0x10
 	lsrs r4, r4, #0x10
-	bl __5SkillP4Unit
+	bl __6ActionP4Unit
 	ldr r0, _0808041C @ =vt_09F82A28
 	str r0, [r5, #0x1c]
 	movs r0, #0x2c
@@ -7839,7 +7839,7 @@ sub_08080424: @ 0x08080424
 	push {lr}
 	ldr r2, _08080434 @ =vt_09F82A28
 	str r2, [r0, #0x1c]
-	bl _._5Skill
+	bl _._6Action
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -7912,7 +7912,7 @@ sub_08080484: @ 0x08080484
 	adds r1, r0, #0
 	ldr r2, _0808051C @ =0x0000FFFF
 	add r0, sp, #4
-	bl __3MsgPvUi
+	bl genMisctextMsg__3MsgPvUi
 	ldr r2, [r5, #0x1c]
 	movs r0, #0xe4
 	lsls r0, r0, #1

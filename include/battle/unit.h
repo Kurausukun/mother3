@@ -2,6 +2,7 @@
 #define BATTLE_UNIT_H
 
 #include "base.h"
+#include "battle/status.h"
 
 inline s32 clampS32(s32 value, s32 min, s32 max) {
     if (value < min)
@@ -34,7 +35,7 @@ struct ID {
     u32 dead;
 };
 
-class Skill;
+class Action;
 struct UnitCmd;
 
 class Unit : public Base, public UnitObject {
@@ -44,18 +45,18 @@ public:
 
     void setClamped(s16* dest, s32 value) { *dest = clampS32(value, 0, 999); }
 
-    s16 get48(u32 idx) const { return *(_48 + idx); }
+    s16 get48(u32 idx) const { return *(mWeaknesses + idx); }
     s16 get58(u32 idx) const { return *(_58 + idx); }
 
     virtual u8 unit_68();
     virtual s32 unit_70(Unit* u) const;
 
-    virtual void unit_78(Skill* a1);
-    virtual void unit_80(u32 a1);
-    virtual void unit_88(u32 a1);
-    virtual void unit_90(Skill* a1);
-    virtual void unit_98(u32 a1);
-    virtual void unit_a0(u32 a1);
+    virtual void unit_78(Action* a1);
+    virtual void unit_80(Action* a1);
+    virtual void unit_88(Action* a1);
+    virtual void unit_90(Action* a1);
+    virtual void unit_98(Action* a1);
+    virtual void unit_a0(Action* a1);
 
     virtual void unit_a8();
     virtual void unit_b0();
@@ -64,26 +65,25 @@ public:
     virtual bool isDead();
     virtual u8 unit_d0();
 
-    virtual void unit_d8(Skill* a1);
-    virtual void unit_e0(u32 a1);
-    virtual void unit_e8(u32 a1);
-    virtual void unit_f0(Skill* a1);
-    virtual void unit_f8(u32 a1);
-    virtual void unit_100(u32 a1);
+    virtual void unit_d8(Action* a1);
+    virtual void unit_e0(Action* a1);
+    virtual void unit_e8(Action* a1);
+    virtual void unit_f0(Action* a1);
+    virtual void unit_f8(Action* a1);
+    virtual void unit_100(Action* a1);
     virtual void unit_108();
 
-    virtual void setLevel(s32 level);
-    virtual void setHP(s32 hp);
-    virtual void setMaxHP(s32 hp);
-    virtual void setPP(s32 pp);
-    virtual void setMaxPP(s32 pp);
-
-    virtual void setIQ(s32 a1);
-    virtual void setSpeed(s32 a1);
-    virtual void unit_148(s32 a1);
-    virtual void unit_150(s32 a1);
-    virtual void unit_158(s32 a1);
-    virtual void unit_160(s32 idx, s32 value);
+    virtual void setLevel(s32 value);
+    virtual void setHP(s32 value);
+    virtual void setMaxHP(s32 value);
+    virtual void setPP(s32 value);
+    virtual void setMaxPP(s32 value);
+    virtual void setIQ(s32 value);
+    virtual void setSpeed(s32 value);
+    virtual void unit_148(s32 value);
+    virtual void setClumsiness(s32 value);
+    virtual void unit_158(s32 value);
+    virtual void setElementDefense(s32 idx, s32 value);
     virtual void unit_168(u16 idx, s32 value);
     virtual void unit_170(u32 value);
 
@@ -92,20 +92,20 @@ public:
     virtual Msg name() const = 0;
 
     virtual s32 level() const;
-    virtual s32 getHP() const;
-    virtual s32 unit_1a0() const;
-    virtual s32 getMaxHP() const;
-    virtual s32 getPP() const;
-    virtual s32 unit_1b8() const;
-    virtual s32 getMaxPP() const;
+    virtual s32 hpReal() const;
+    virtual s32 hp() const;
+    virtual s32 maxHP() const;
+    virtual s32 ppReal() const;
+    virtual s32 pp() const;
+    virtual s32 maxPP() const;
 
-    virtual s32 getIQ() const;
-    virtual s32 getSpeed() const;
+    virtual s32 iq() const;
+    virtual s32 speed() const;
     virtual s32 unit_1d8() const;
-    virtual s32 unit_1e0() const;
+    virtual s32 clumsiness() const;
     virtual s32 unit_1e8() const;
 
-    virtual s32 unit_1f0(u32 idx) const;
+    virtual s32 getElementWeakness(u32 idx) const;
     virtual s32 unit_1f8(u16 idx) const;
     virtual s32 unit_200() const;
 
@@ -123,22 +123,23 @@ public:
     virtual s32 unit_258(u16 a1);
     virtual s32 unit_260(u16 a1);
     virtual u32 unit_268(u32 a1);
-    virtual u32 unit_270(u32 a1);
-    virtual void removeStatus(u16 a1);
-    virtual void unit_280();
-    virtual s32 unit_288() const;
-    virtual u16 unit_290(s32 a1);
-    virtual UnitCmd* unit_298(s32 a1);
-    virtual bool hasStatus(u16 a1);
-    virtual s32 unit_2a8(u16 a1);
-    virtual s32 setAilment(u16 a1);
-    virtual s32 unit_2b8(u16 a1);
+    virtual s32 removeOneStatus(s32 idx);
+    virtual void removeStatus(Status::Type type);
+    virtual void clearAllStatuses();
+    virtual s32 statusCount() const;
+    virtual Status::Type getStatusType(s32 idx);
+    virtual Status* getStatus(s32 idx);
+    virtual bool hasStatus(Status::Type type);
+    virtual s32 getStatusIdx(Status::Type type);
+    virtual Status* findStatus(Status::Type type);
+    virtual s32 getStatusTypeCount(Status::Type type);
 
-    void nullsub_106();
-    void nullsub_27();
     void kill();
     void revive();
-    bool setDead(u32 a1, u8 a2);
+
+    bool setDead(u32 value, u8 force);
+    void nullsub_106();
+    void nullsub_27();
     void sub_08075840();
     void sub_08075400();
     bool flagStuff(u16 idx);
@@ -154,15 +155,15 @@ private:
     /* 0x38 */ s16 mIQ;
     /* 0x3a */ s16 mSpeed;
     /* 0x3c */ s16 _3c;
-    /* 0x3e */ s16 _3e;
+    /* 0x3e */ s16 mClumsiness;
     /* 0x40 */ s16 _40;
-    /* 0x44 */ s32 _44;
-    /* 0x48 */ s16 _48[6];
+    /* 0x44 */ s32 mWeaknessCount;
+    /* 0x48 */ s16 mWeaknesses[6];
     /* 0x54 */ s32 _54;
     /* 0x58 */ s16 _58[64];
     /* 0xd8 */ u32 _d8;
     /* 0xdc */ Vector<UnitCmd*> _dc;
-    /* 0xe8 */ Vector<UnitCmd*> _e8;
+    /* 0xe8 */ Vector<Status*> mStatuses;
     /* 0xf4 */ ID _f4;
 };
 
@@ -263,60 +264,46 @@ struct UnitCmd : Base {
     u8 _4[4];
 };
 
-struct Status {
+struct ElementType {
     enum {
         None,
-        Poison,
-        Numb,
-        Sleep,
-        Strange,
-        Crying,
-        Forgetful,
-        Nauseous,
-        Fleas,
-        OnFire,
-        Frozen,
-        Smelly,
-        DCMC,
-        Stapled,
-        Apologetic,
-        Laughing,
-        Defense,
-        NoExp,
-        OffDownWeak,
-        OffDownStrong,
-        DefDownWeak,
-        DefDownStrong,
-        Shield,
-        Counter,
-        Electrocuted,
-        PsiShield,
-        PsiCounter,
-        OffUpWeak,
-        OffUpStrong,
-        DefUpWeak,
-        DefUpStrong,
-        EscapeFail,
-        Dance,
-        OffDownMid,
-        DefDownMid,
-        TimeBomb,
-        ParamsUp,
-        ParamsDown,
-        Refresh,
-        Fell,
-        MonkeyDanceOff,
-        MonkeyDanceDef,
-        MonkeyDanceSP,
-        MonkeyDanceIQ,
-        MonkeyDanceOff2,
-        MonkeyDanceDef2,
-        MonkeyDanceSP2,
-        MonkeyDanceIQ2,
-        Endure,
-        OffUpMid,
-        DefUpMid,
-        NoBackSprite,
+        Fire,
+        Ice,
+        Thunder,
+        Explosion,
+    };
+};
+
+struct TargetType {
+    enum {
+        Self,
+        ChooseOneAlly2,
+        ChooseOneAlly3,
+        AllAllies,
+        AllAllies_,
+        RandomAlly,
+        TwoRandomAlly,
+        ThreeRandomAlly,
+        FourRandomAlly,
+        FiveRandomAlly,
+        SixRandomAlly,
+        EightRandomAlly,
+        ChooseOneAlly,
+        ChooseOneEnemy,
+        AllEnemies,
+        RandomEnemy,
+        TwoRandomEnemy,
+        ThreeRandomEnemy,
+        FourRandomEnemy,
+        FiveRandomEnemy,
+        RandomEnemy_,
+        RandomAny,
+        All,
+        Special,
+        FirstAlly,
+        SecondAlly,
+        ThirdAlly,
+        FourthAlly,
     };
 };
 

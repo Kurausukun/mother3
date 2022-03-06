@@ -885,7 +885,7 @@ sub_08082AF0: @ 0x08082AF0
 	lsrs r2, r2, #0x10
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl __3MsgPvUi
+	bl genMisctextMsg__3MsgPvUi
 	adds r0, r5, #0
 	pop {r4, r5}
 	pop {r1}
@@ -941,7 +941,7 @@ sub_08082B78: @ 0x08082B78
 	adds r1, r2, #0
 	lsls r4, r4, #0x10
 	lsrs r4, r4, #0x10
-	bl __5SkillP4Unit
+	bl __6ActionP4Unit
 	ldr r0, _08082BA0 @ =vt_09F83958
 	str r0, [r5, #0x1c]
 	lsls r0, r4, #3
@@ -963,7 +963,7 @@ _08082BA4: .4byte gPsiData
 	push {lr}
 	ldr r2, _08082BB8 @ =vt_09F83958
 	str r2, [r0, #0x1c]
-	bl _._5Skill
+	bl _._6Action
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -1165,7 +1165,7 @@ _08082D44:
 	b _08082D66
 _08082D60:
 	adds r0, r5, #0
-	bl skill_1a0__5Skill
+	bl action_1a0__6Action
 _08082D66:
 	add sp, #0x18
 	pop {r4, r5, r6}
@@ -1215,7 +1215,7 @@ sub_08082D70: @ 0x08082D70
 	bl sub_08073CF0
 _08082DC4:
 	adds r0, r5, #0
-	bl nullsub_28__5Goods
+	bl action_150__6Action
 	pop {r4, r5}
 	pop {r0}
 	bx r0
@@ -1287,7 +1287,7 @@ sub_08082E1C: @ 0x08082E1C
 	adds r1, r0, #0
 	ldr r2, _08082EB4 @ =0x0000FFFF
 	add r0, sp, #4
-	bl __3MsgPvUi
+	bl genMisctextMsg__3MsgPvUi
 	ldr r2, [r5, #0x1c]
 	movs r0, #0xe4
 	lsls r0, r0, #1

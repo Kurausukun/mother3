@@ -11,7 +11,7 @@ SINGLETON_IMPL(UnitRevive);
 SINGLETON_IMPL(UnitEscape);
 SINGLETON_IMPL(UnitDie);
 
-Unit::Unit() : _44(0), _54(0) {
+Unit::Unit() : mWeaknessCount(0), _54(0) {
     mLevel = 1;
     mHP = 1;
     mMaxHP = 1;
@@ -20,15 +20,15 @@ Unit::Unit() : _44(0), _54(0) {
     mIQ = 0;
     mSpeed = 0;
     _3c = 0;
-    _3e = 0;
+    mClumsiness = 0;
     _40 = 0;
     _d8 = 0;
     _f4.dead = 0;
 
     u32 value1 = 100;
     for (int i = 0; i < 5; ++i) {
-        if (_44 + 1 <= 5) {
-            _48[_44++] = value1;
+        if (mWeaknessCount + 1 < 6) {
+            mWeaknesses[mWeaknessCount++] = value1;
         }
     }
 
@@ -53,10 +53,10 @@ void Unit::nullsub_106() {}
 void Unit::kill() {
     unit_108();
     setDead(1, 0);
-    for (int i = 0; i < unit_288(); ++i) {
-        UnitCmd* c = unit_298(i);
-        if (c->x_138() == 1) {
-            unit_270(unit_290(i));
+    for (int i = 0; i < statusCount(); ++i) {
+        Status* c = getStatus(i);
+        if (c->removeOnDeath() == 1) {
+            removeOneStatus(getStatusType(i));
             i--;
         }
     }
@@ -66,9 +66,9 @@ void Unit::revive() {
     setDead(0, 0);
 }
 
-bool Unit::setDead(u32 a1, u8 a2) {
-    if (_f4.dead != a1 || a2 == 1) {
-        _f4.dead = a1;
+bool Unit::setDead(u32 value, u8 force) {
+    if (_f4.dead != value || force == 1) {
+        _f4.dead = value;
         return true;
     }
     return false;
@@ -93,90 +93,90 @@ u8 Unit::unit_d0() {
 ASM_FUNC("asm/non_matching/unit/unit_68__4Unit.inc", u8 Unit::unit_68());
 
 s32 Unit::unit_70(Unit* u) const {
-    return u->getHP();
+    return u->hpReal();
 }
 
-void Unit::unit_d8(Skill* a1) {
+void Unit::unit_d8(Action* a1) {
     unit_78(a1);
 }
 
-void Unit::unit_78(Skill* a1) {}
+void Unit::unit_78(Action* a1) {}
 
-void Unit::unit_e0(u32 a1) {
+void Unit::unit_e0(Action* a1) {
     unit_80(a1);
 }
 
-void Unit::unit_80(u32 a1) {
+void Unit::unit_80(Action* a1) {
 }
 
-void Unit::unit_e8(u32 a1) {
+void Unit::unit_e8(Action* a1) {
     unit_88(a1);
 }
 
-void Unit::unit_88(u32 a1) {}
+void Unit::unit_88(Action* a1) {}
 
-void Unit::unit_f0(Skill* a1) {
+void Unit::unit_f0(Action* a1) {
     unit_90(a1);
 }
 
-void Unit::unit_90(Skill* a1) {}
+void Unit::unit_90(Action* a1) {}
 
-void Unit::unit_f8(u32 a1) {
+void Unit::unit_f8(Action* a1) {
     unit_98(a1);
 }
 
-void Unit::unit_98(u32 a1) {}
+void Unit::unit_98(Action* a1) {}
 
-void Unit::unit_100(u32 a1) {
+void Unit::unit_100(Action* a1) {
     unit_a0(a1);
 }
 
-void Unit::unit_a0(u32 a1) {}
+void Unit::unit_a0(Action* a1) {}
 
 void Unit::unit_108() {}
 
-void Unit::setLevel(s32 level) {
-    mLevel = clampS32(level, 0, 99);
+void Unit::setLevel(s32 value) {
+    mLevel = clampS32(value, 0, 99);
 }
 
-void Unit::setHP(s32 hp) {
-    mHP = clampS32(hp, 0, getMaxHP());
+void Unit::setHP(s32 value) {
+    mHP = clampS32(value, 0, maxHP());
 }
 
-void Unit::setMaxHP(s32 hp) {
-    mMaxHP = clampS32(hp, 0, 99999999);
+void Unit::setMaxHP(s32 value) {
+    mMaxHP = clampS32(value, 0, 99999999);
 }
 
-void Unit::setPP(s32 pp) {
-    mPP = clampS32(pp, 0, getMaxPP());
+void Unit::setPP(s32 value) {
+    mPP = clampS32(value, 0, maxPP());
 }
 
-void Unit::setMaxPP(s32 pp) {
-    mMaxPP = clampS32(pp, 0, 99999999);
+void Unit::setMaxPP(s32 value) {
+    mMaxPP = clampS32(value, 0, 99999999);
 }
 
-void Unit::setIQ(s32 a1) {
-    mIQ = clampS32(a1, 0, 255);
+void Unit::setIQ(s32 value) {
+    mIQ = clampS32(value, 0, 255);
 }
 
-void Unit::setSpeed(s32 a1) {
-    mSpeed = clampS32(a1, 0, 255);
+void Unit::setSpeed(s32 value) {
+    mSpeed = clampS32(value, 0, 255);
 }
 
-void Unit::unit_148(s32 a1) {
-    _3c = clampS32(a1, 0, 255);
+void Unit::unit_148(s32 value) {
+    _3c = clampS32(value, 0, 255);
 }
 
-void Unit::unit_150(s32 a1) {
-    _3e = clampS32(a1, 0, 255);
+void Unit::setClumsiness(s32 value) {
+    mClumsiness = clampS32(value, 0, 255);
 }
 
-void Unit::unit_158(s32 a1) {
-    _40 = clampS32(a1, 0, 255);
+void Unit::unit_158(s32 value) {
+    _40 = clampS32(value, 0, 255);
 }
 
-void Unit::unit_160(s32 idx, s32 value) {
-    setClamped(&_48[idx], value);
+void Unit::setElementDefense(s32 idx, s32 value) {
+    setClamped(&mWeaknesses[idx], value);
 }
 
 void Unit::unit_168(u16 idx, s32 value) {
@@ -191,35 +191,35 @@ s32 Unit::level() const {
     return mLevel;
 }
 
-s32 Unit::getHP() const {
+s32 Unit::hpReal() const {
     return mHP;
 }
 
-s32 Unit::unit_1a0() const {
-    return getHP();
+s32 Unit::hp() const {
+    return hpReal();
 }
 
-s32 Unit::getMaxHP() const {
+s32 Unit::maxHP() const {
     return mMaxHP;
 }
 
-s32 Unit::getPP() const {
+s32 Unit::ppReal() const {
     return mPP;
 }
 
-s32 Unit::unit_1b8() const {
-    return getPP();
+s32 Unit::pp() const {
+    return ppReal();
 }
 
-s32 Unit::getMaxPP() const {
+s32 Unit::maxPP() const {
     return mMaxPP;
 }
 
-s32 Unit::getIQ() const {
+s32 Unit::iq() const {
     return mIQ;
 }
 
-s32 Unit::getSpeed() const {
+s32 Unit::speed() const {
     return mSpeed;
 }
 
@@ -227,15 +227,15 @@ s32 Unit::unit_1d8() const {
     return _3c;
 }
 
-s32 Unit::unit_1e0() const {
-    return _3e;
+s32 Unit::clumsiness() const {
+    return mClumsiness;
 }
 
 s32 Unit::unit_1e8() const {
     return _40;
 }
 
-s32 Unit::unit_1f0(u32 idx) const {
+s32 Unit::getElementWeakness(u32 idx) const {
     return get48(idx);
 }
 
@@ -307,53 +307,53 @@ bool Unit::flagStuff(u16 idx) {
     return false;
 }
 
-ASM_FUNC("asm/non_matching/unit/unit_270__4UnitUi.inc", u32 Unit::unit_270(u32 a1));
+ASM_FUNC("asm/non_matching/unit/unit_270__4UnitUi.inc", s32 Unit::removeOneStatus(s32 idx));
 
-void Unit::removeStatus(u16 a1) {
-    while (hasStatus(a1) == 1) {
-        unit_270(a1);
+void Unit::removeStatus(Status::Type type) {
+    while (hasStatus(type) == 1) {
+        removeOneStatus(type);
     }
 }
 
-void Unit::unit_280(void) {
-    while (unit_288() > 0) {
-        unit_270(unit_290(0));
+void Unit::clearAllStatuses() {
+    while (statusCount() > 0) {
+        removeOneStatus(getStatusType(0));
     }
 }
 
-s32 Unit::unit_288() const {
-    return _e8.size();
+s32 Unit::statusCount() const {
+    return mStatuses.size();
 }
 
-u16 Unit::unit_290(s32 a1) {
-    UnitCmd* tmp = _e8[a1];
-    return tmp->x_e0();
+Status::Type Unit::getStatusType(s32 idx) {
+    Status* s = mStatuses[idx];
+    return s->getStatusType();
 }
 
-UnitCmd* Unit::unit_298(s32 a1) {
-    return _e8[a1];
+Status* Unit::getStatus(s32 idx) {
+    return mStatuses[idx];
 }
 
-bool Unit::hasStatus(u16 a1) {
-    return unit_2a8(a1) < unit_288();
+bool Unit::hasStatus(Status::Type type) {
+    return getStatusIdx(type) < statusCount();
 }
 
-s32 Unit::unit_2a8(u16 a1) {
-    for (int i = 0; i < unit_288(); ++i) {
-        if (unit_290(i) == a1) {
+s32 Unit::getStatusIdx(Status::Type type) {
+    for (int i = 0; i < statusCount(); ++i) {
+        if (getStatusType(i) == type) {
             return i;
         }
     }
-    return unit_288();
+    return statusCount();
 }
 
-ASM_FUNC("asm/non_matching/unit/unit_2b0__4UnitUs.inc", s32 Unit::setAilment(u16 a1));
+ASM_FUNC("asm/non_matching/unit/unit_2b0__4UnitUs.inc", Status* Unit::findStatus(Status::Type type));
 
-s32 Unit::unit_2b8(u16 a1) {
+s32 Unit::getStatusTypeCount(Status::Type type) {
     s32 num = 0;
 
-    for (int i = 0; i < unit_288(); i++) {
-        if (unit_290(i) == a1) {
+    for (int i = 0; i < statusCount(); i++) {
+        if (getStatusType(i) == type) {
             num++;
         }
     }

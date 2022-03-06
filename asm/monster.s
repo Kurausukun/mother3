@@ -58,7 +58,7 @@ sub_080809F8: @ 0x080809F8
 	lsrs r2, r2, #0x10
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl __3MsgPvUi
+	bl genMisctextMsg__3MsgPvUi
 	adds r0, r5, #0
 	pop {r4, r5}
 	pop {r1}
@@ -722,7 +722,7 @@ sub_08080F54: @ 0x08080F54
 	lsrs r0, r0, #0x10
 	adds r1, r4, #0
 	adds r2, r4, #0
-	bl sub_080730FC
+	bl playSeq
 _08080F86:
 	ldr r2, [r4, #0x20]
 	adds r0, r4, #0

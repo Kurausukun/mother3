@@ -82,12 +82,18 @@ struct PrintSettings {
 
 struct Msg {
     Msg();
-    Msg(void* p, u32 idx);
+    Msg(const void* ptr, u32 size);
     virtual ~Msg();
 
-    void print(const PrintSettings&, bool);
+    static Msg genMisctextMsg(void*, u32 idx);
 
-    u32 x[2];
+    void print(const PrintSettings&, bool);
+    s32 sub_0806E414();
+    u16* sub_0806E334(s32 idx);
+
+    u16* ptr;
+    u16 _4;
+    u16 _6;
 };
 
 #endif  // BASE_H

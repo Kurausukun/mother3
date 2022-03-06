@@ -11,7 +11,7 @@
 	adds r0, r4, #0
 	bl unit_108__4Unit
 	adds r0, r4, #0
-	bl unit_280__4Unit
+	bl clearAllStatuses__4Unit
 	adds r0, r4, #0
 	bl unit_230__4Unit
 	adds r0, r4, #0

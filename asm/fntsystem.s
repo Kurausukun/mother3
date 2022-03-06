@@ -2077,8 +2077,8 @@ _0806E21C:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start __3MsgPvUi
-__3MsgPvUi: @ 0x0806E238
+	thumb_func_start genMisctextMsg__3MsgPvUi
+genMisctextMsg__3MsgPvUi: @ 0x0806E238
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r4, r1, #0
@@ -2103,7 +2103,7 @@ _0806E252:
 _0806E260:
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl __5AssetPCUcUi
+	bl __3MsgPCvUi
 	adds r0, r6, #0
 	pop {r4, r5, r6}
 	pop {r1}
@@ -2123,8 +2123,8 @@ __3Msg: @ 0x0806E274
 	.align 2, 0
 _0806E284: .4byte _vt.3Msg
 
-	thumb_func_start __5AssetPCUcUi
-__5AssetPCUcUi: @ 0x0806E288
+	thumb_func_start __3MsgPCvUi
+__3MsgPCvUi: @ 0x0806E288
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	adds r6, r1, #0
@@ -2213,8 +2213,8 @@ _0806E32A:
 	.align 2, 0
 _0806E330: .4byte _vt.3Msg
 
-	thumb_func_start sub_0806E334
-sub_0806E334: @ 0x0806E334
+	thumb_func_start sub_0806E334__3Msgi
+sub_0806E334__3Msgi: @ 0x0806E334
 	lsls r1, r1, #1
 	ldr r0, [r0]
 	adds r0, r0, r1
@@ -2346,8 +2346,8 @@ _0806E40C:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_0806E414
-sub_0806E414: @ 0x0806E414
+	thumb_func_start sub_0806E414__3Msg
+sub_0806E414__3Msg: @ 0x0806E414
 	ldrh r0, [r0, #6]
 	bx lr
 

@@ -6,26 +6,26 @@ extern "C" u16 get_misctext_len(u32);
 extern "C" void* sub_08001BCC(u32);
 
 Msg Goods::getName(u16 idx) {
-    return Msg(get_misctext_msg(2, idx), get_misctext_len(2));
+    return Msg::genMisctextMsg(get_misctext_msg(2, idx), get_misctext_len(2));
 }
 
-Goods::Goods(u16 id, Unit* user, u16 a2) : Skill(user) {
+Goods::Goods(u16 id, Unit* user, u16 a2) : Action(user) {
     mInfo = &gGoodsInfo[id];
     _4c = a2;
 }
 
 Goods::~Goods() {}
 
-u32 Goods::skill_1a0() {
-    if (skill_1b8() == 1) {
-        skill_78();
+u32 Goods::action_1a0() {
+    if (action_1b8() == 1) {
+        playSfx();
         return 1;
     }
-    return Skill::skill_1a0();
+    return Action::action_1a0();
 }
 
-void Goods::skill_150() {
-    if (skill_1b0() == 1 && goods_2b8() == 1) {
+void Goods::action_150() {
+    if (action_1b0() == 1 && goods_2b8() == 1) {
         Player* p;
         if ((p = tryCastPlayer(getUser())) == NULL) {
             return;
@@ -35,10 +35,10 @@ void Goods::skill_150() {
             p->player_408(id());
         }
     }
-    nullsub_28();
+    Action::action_150();
 }
 
-Skill* Goods::skill_1c0() {
+Action* Goods::action_1c0() {
     sub_08077D8C(this, 7);
     return this;
 }
@@ -55,13 +55,13 @@ Msg Goods::name() const {
     return getName(id());
 }
 
-NONMATCH("asm/non_matching/goods/skill_1d8.inc", Msg Goods::skill_1d8() const) {
-    Msg m = Msg(sub_08001BCC(id()), -1);
+NONMATCH("asm/non_matching/goods/skill_1d8.inc", Msg Goods::action_1d8() const) {
+    Msg m = Msg::genMisctextMsg(sub_08001BCC(id()), -1);
     return m;
 }
 END_NONMATCH
 
-u32 Goods::skill_1e0() {
+u32 Goods::action_1e0() {
     return 0;
 }
 
@@ -89,7 +89,7 @@ u32 Goods::healHi() const {
     return mInfo->action.heal_hi;
 }
 
-u32 Goods::ailment() const {
+u16 Goods::ailment() const {
     return mInfo->action.ailment;
 }
 
@@ -97,7 +97,7 @@ u32 Goods::ailmentChance() const {
     return mInfo->action.ailment_chance;
 }
 
-u32 Goods::hasAction() const {
+u8 Goods::hasAction() const {
     u32 action = mInfo->action.action;
     return action ? 1 : 0;
 }
@@ -106,11 +106,11 @@ u32 Goods::priority() const {
     return mInfo->action.priority;
 }
 
-Msg Goods::showUseMessage() const {
+Msg Goods::getUseMessage() const {
     if (numTargets() == 1 && getTarget(0) == getUser()) {
-        return skill_158(calcMessage(mInfo->action.msg_no));
+        return action_158(calcMessage(mInfo->action.msg_no));
     } else {
-        return skill_158(calcMessage(mInfo->action.msg_no + 1));
+        return action_158(calcMessage(mInfo->action.msg_no + 1));
     }
 }
 
@@ -142,7 +142,7 @@ u16 Goods::calcMessage(u16 idx) const {
     return idx;
 }
 
-Msg Goods::showForceUseMessage() const {
+Msg Goods::getForceUseMessage() const {
     if (numTargets() == 1 && getTarget(0) == getUser()) {
         return sub_08073444(mInfo->action.msg_no);
     } else {
@@ -174,11 +174,11 @@ u32 Goods::sfxNo() const {
     return mInfo->action.sfx_no;
 }
 
-u32 Goods::hitChance() const {
+s32 Goods::hitChance() const {
     return 100 - mInfo->action.miss_chance;
 }
 
-u32 Goods::critChance() const {
+s32 Goods::critChance() const {
     return mInfo->action.smash_chance;
 }
 
@@ -186,15 +186,15 @@ bool Goods::redirectable() const {
     return mInfo->action.redirectable != 0;
 }
 
-u32 Goods::skill_288() {
+u32 Goods::action_288() {
     return 0;
 }
 
-u32 Goods::skill_290() {
+u32 Goods::action_290() {
     return 0;
 }
 
-u32 Goods::skill_298() {
+u32 Goods::action_298() {
     return 0;
 }
 

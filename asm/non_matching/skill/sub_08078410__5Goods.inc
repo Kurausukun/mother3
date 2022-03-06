@@ -23,7 +23,7 @@ _0807843A:
 	adds r0, r6, #0
 	movs r1, #1
 	movs r2, #0
-	bl sub_0807A714
+	bl fieldSet__6Actionib
 	ldr r1, [r6, #0x1c]
 	adds r1, #0x68
 	movs r3, #0
@@ -34,7 +34,7 @@ _0807843A:
 	adds r0, r6, #0
 	movs r1, #2
 	movs r2, #0
-	bl sub_0807A714
+	bl fieldSet__6Actionib
 	b _08078506
 _08078460:
 	adds r5, r6, #0
@@ -161,7 +161,7 @@ _0807854E:
 	adds r0, r6, #0
 	movs r1, #3
 	movs r2, #0
-	bl sub_0807A714
+	bl fieldSet__6Actionib
 	ldr r1, [r6, #0x1c]
 	movs r3, #0x9c
 	lsls r3, r3, #1
@@ -174,7 +174,7 @@ _0807854E:
 	adds r0, r6, #0
 	movs r1, #4
 	movs r2, #0
-	bl sub_0807A714
+	bl fieldSet__6Actionib
 	movs r1, #0
 	ldr r0, [r6, #0x40]
 	cmp r0, #4

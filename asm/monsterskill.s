@@ -915,7 +915,7 @@ sub_08082044: @ 0x08082044
 	adds r1, r2, #0
 	lsls r4, r4, #0x10
 	lsrs r4, r4, #0x10
-	bl __5SkillP4Unit
+	bl __6ActionP4Unit
 	ldr r0, _0808206C @ =vt_09F83548
 	str r0, [r5, #0x1c]
 	lsls r0, r4, #1
@@ -937,7 +937,7 @@ sub_08082074: @ 0x08082074
 	push {lr}
 	ldr r2, _08082084 @ =vt_09F83548
 	str r2, [r0, #0x1c]
-	bl _._5Skill
+	bl _._6Action
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -971,7 +971,7 @@ sub_08082088: @ 0x08082088
 	cmp r0, r1
 	blt _080820C6
 	adds r0, r5, #0
-	bl skill_1a0__5Skill
+	bl action_1a0__6Action
 	b _0808212A
 _080820C6:
 	ldr r2, [r5, #0x1c]
@@ -1032,7 +1032,7 @@ sub_0808213C: @ 0x0808213C
 	mov r6, r8
 	push {r6}
 	adds r4, r0, #0
-	bl skill_78__5Skill
+	bl playSfx__6Action
 	ldr r1, [r4, #0x1c]
 	movs r0, #0xaa
 	lsls r0, r0, #2
@@ -1066,7 +1066,7 @@ sub_0808213C: @ 0x0808213C
 	adds r2, r0, #0
 	adds r0, r5, #0
 	mov r1, r8
-	bl sub_080730FC
+	bl playSeq
 	pop {r3}
 	mov r8, r3
 	pop {r4, r5, r6}
@@ -1102,7 +1102,7 @@ sub_080821A0: @ 0x080821A0
 	movs r2, #0
 	bl sub_08073CF0
 	adds r0, r4, #0
-	bl nullsub_28__5Goods
+	bl action_150__6Action
 	pop {r4, r5}
 	pop {r0}
 	bx r0

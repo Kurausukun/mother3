@@ -8,7 +8,7 @@
 	adds r6, r0, #0
 	adds r4, r1, #0
 	bl __4Base
-	ldr r0, _080781C0 @ =_vt.5Skill
+	ldr r0, _080781C0 @ =_vt.6Action
 	str r0, [r6, #0x1c]
 	adds r0, r6, #0
 	adds r0, #0x28
@@ -276,7 +276,7 @@
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080781C0: .4byte _vt.5Skill
+_080781C0: .4byte _vt.6Action
 _080781C4: .4byte _vt.8UnitJoin
 _080781C8: .4byte gUnknown_08107DB0
 _080781CC: .4byte _vt.3Unk

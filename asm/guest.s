@@ -3258,7 +3258,7 @@ _080606CC:
 	movs r0, #0x20
 	adds r1, r7, #0
 	adds r2, r7, #0
-	bl sub_080730FC
+	bl playSeq
 	ldr r0, [r7, #0x1c]
 	movs r1, #0x8c
 	lsls r1, r1, #1

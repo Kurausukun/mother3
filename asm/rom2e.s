@@ -7707,7 +7707,7 @@ _0808C960:
 	adds r0, r4, #0
 	mov r1, sp
 	movs r2, #0
-	bl sub_0807A1F4
+	bl action_fixme__6Actioni
 	adds r0, r6, #0
 	adds r1, r4, #0
 	bl sub_08071150
@@ -7717,7 +7717,7 @@ _0808C960:
 	adds r0, r4, #0
 	mov r1, sp
 	movs r2, #1
-	bl sub_0807A1F4
+	bl action_fixme__6Actioni
 	adds r0, r7, #0
 	adds r1, r4, #0
 	bl sub_08071150

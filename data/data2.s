@@ -472,12 +472,12 @@ gUnknown_081070A8:
     .global gUnknown_08107DB0
 gUnknown_08107DB0:
     .4byte 0xFFFF0000
-    .4byte sub_0807A28C+1
+    .4byte unit_join_callback+1
 
     .global gUnknown_08107DB8
 gUnknown_08107DB8:
     .4byte 0xFFFF0000
-    .4byte sub_0807A3A4+1
+    .4byte unit_leave_callback+1
     .incbin "baserom.gba", 0x00107DC0, 0x5F8
 
     .global gUnknown_081083B8

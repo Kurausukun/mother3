@@ -1,4 +1,4 @@
-#include "battle/skill.h"
+#include "battle/action.h"
 
 extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {

@@ -3,14 +3,7 @@
 
 #include "global.h"
 #include "vector.h"
-
-struct Asset {
-    Asset(const u8* ptr, u32 size);
-
-    u16* ptr;
-    u16 _4;
-    u16 _6;
-};
+#include "base.h"
 
 struct BXT {
     u32 magic;
@@ -32,6 +25,7 @@ class BXTHandle {
     BXTHandle(const BXTRef& ref);
     virtual ~BXTHandle();
     
+    Msg getMessage(u32 index);
     u32 getType(const BXTRef& ref) const;
     u32 count() const;
 
@@ -47,7 +41,7 @@ private:
     const u16* mOffsets;
 };
 
-struct BattleMessage : Asset {
+struct BattleMessage : Msg {
     BattleMessage(BXTHandle* handle, u32 index);
 };
 
