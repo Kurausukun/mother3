@@ -941,7 +941,7 @@ sub_08082B78: @ 0x08082B78
 	adds r1, r2, #0
 	lsls r4, r4, #0x10
 	lsrs r4, r4, #0x10
-	bl __5SkillUi
+	bl __5SkillP4Unit
 	ldr r0, _08082BA0 @ =vt_09F83958
 	str r0, [r5, #0x1c]
 	lsls r0, r4, #3
@@ -1013,7 +1013,7 @@ sub_08082BBC: @ 0x08082BBC
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -1157,7 +1157,7 @@ _08082D44:
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -1165,7 +1165,7 @@ _08082D44:
 	b _08082D66
 _08082D60:
 	adds r0, r5, #0
-	bl sub_08078410__5Goods
+	bl skill_1a0__5Skill
 _08082D66:
 	add sp, #0x18
 	pop {r4, r5, r6}

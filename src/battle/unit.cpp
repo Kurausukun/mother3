@@ -96,11 +96,11 @@ s32 Unit::unit_70(Unit* u) const {
     return u->getHP();
 }
 
-void Unit::unit_d8(u32 a1) {
+void Unit::unit_d8(Skill* a1) {
     unit_78(a1);
 }
 
-void Unit::unit_78(u32 a1) {}
+void Unit::unit_78(Skill* a1) {}
 
 void Unit::unit_e0(u32 a1) {
     unit_80(a1);
@@ -115,11 +115,11 @@ void Unit::unit_e8(u32 a1) {
 
 void Unit::unit_88(u32 a1) {}
 
-void Unit::unit_f0(u32 a1) {
+void Unit::unit_f0(Skill* a1) {
     unit_90(a1);
 }
 
-void Unit::unit_90(u32 a1) {}
+void Unit::unit_90(Skill* a1) {}
 
 void Unit::unit_f8(u32 a1) {
     unit_98(a1);

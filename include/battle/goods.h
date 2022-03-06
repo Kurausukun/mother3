@@ -10,7 +10,7 @@ struct GoodsInfo;
 class Goods : public Skill {
 public:
     Goods();
-    Goods(u16 idx, u32 unk, u16 a2);
+    Goods(u16 id, Unit* user, u16 a2);
     virtual ~Goods();
 
     virtual void skill_150();
@@ -32,9 +32,9 @@ public:
     virtual u32 priority() const;
     virtual Msg showUseMessage() const;
     virtual Msg showForceUseMessage() const;
-    virtual u32 hasDim() const;
-    virtual u32 animNo() const;
-    virtual u32 successAnimNo() const;
+    virtual u8 hasDim() const;
+    virtual u16 animNo() const;
+    virtual u16 successAnimNo() const;
     virtual u16 nextAnim() const;
     virtual u32 sfxNo() const;
     virtual u32 hitChance() const;
@@ -44,10 +44,10 @@ public:
     virtual u32 skill_290();
     virtual u32 skill_298();
 
-    virtual u32 goods_2a0() const;
+    virtual u16 goods_2a0() const;
     virtual u16 goods_2a8();
-    virtual u32 goods_2b0();
-    virtual u32 goods_2b8() const;
+    virtual u32 goods_2b0() const;
+    virtual bool goods_2b8() const;
     virtual bool goods_2c0();
     virtual u32 getType() const;
     virtual bool isConsumable() const;
@@ -60,16 +60,6 @@ public:
     u16 calcMessage(u16 idx) const;
     static Msg sub_08073444(u16 idx);
 
-    u32 _20;
-    u32 _24;
-    u32 _28;
-    u32 _2c;
-    u32 _30;
-    u32 _34;
-    u32 _38;
-    u32 _3c;
-    u32 _40;
-    u32 _44;
     GoodsInfo* mInfo;
     u16 _4c;
 };

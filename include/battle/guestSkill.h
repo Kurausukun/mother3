@@ -11,7 +11,7 @@ extern GuestSkillInfo gGuestSkillData2[];
 
 class GuestSkill : public Skill {
 public:
-    GuestSkill(u16 idx, u32 unk);
+    GuestSkill(u16 id, Unit* user);
     virtual ~GuestSkill();
 
     void* getInstance();
@@ -33,9 +33,9 @@ public:
     u32 priority() const;
     Msg showUseMessage() const;
     Msg showForceUseMessage() const;
-    u32 hasDim() const;
-    u32 animNo() const;
-    u32 successAnimNo() const;
+    u8 hasDim() const;
+    u16 animNo() const;
+    u16 successAnimNo() const;
     u16 nextAnim() const;
     u32 sfxNo() const;
     u32 hitChance() const;
@@ -46,7 +46,6 @@ public:
     u32 skill_298();
 
 private:
-    u8 filler[0x28];
     GuestSkillInfo* mInfo;
 };
 

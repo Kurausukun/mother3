@@ -18,6 +18,7 @@ struct Vector {
     ~Vector() { delete[] mStorage; }
 
     T& operator[](s32 index) { return mStorage[index]; }
+    const T& operator[](s32 index) const { return mStorage[index]; }
 
     s32 size() const { return mSize; }
 
@@ -82,6 +83,15 @@ struct Vector {
 
         mStorage[mSize++] = data;
     }
+
+    void popFront() {
+        if (mSize > 0) {
+            copy(mStorage + 1, mStorage, mSize - 1);
+            mSize--;
+        }
+    }
+
+    T* data() { return mStorage; }
 
 protected:
     s32 mCapacity;

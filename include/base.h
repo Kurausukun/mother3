@@ -74,6 +74,20 @@ struct Unk : public Base {
     ~Unk() {}
 };
 
-extern "C" void __3MsgPvUi(Base*, u32, u32);
+struct PrintSettings {
+    PrintSettings(u32 x, u32 y, u32 z) : x(x), y(y), z(z) {}
+
+    u8 x,y,z;
+};
+
+struct Msg {
+    Msg();
+    Msg(void* p, u32 idx);
+    virtual ~Msg();
+
+    void print(const PrintSettings&, bool);
+
+    u32 x[2];
+};
 
 #endif  // BASE_H

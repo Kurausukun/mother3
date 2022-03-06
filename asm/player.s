@@ -3,1099 +3,6 @@
 .syntax unified
 .section .text
 
-	thumb_func_start __5SkillUi
-__5SkillUi: @ 0x08077F34
-	push {r4, r5, r6, r7, lr}
-	mov r7, sl
-	mov r6, sb
-	mov r5, r8
-	push {r5, r6, r7}
-	sub sp, #0x28
-	adds r6, r0, #0
-	adds r4, r1, #0
-	bl __4Base
-	ldr r0, _080781C0 @ =vt_09F81DD0
-	str r0, [r6, #0x1c]
-	adds r0, r6, #0
-	adds r0, #0x28
-	movs r1, #0
-	mov r8, r1
-	str r1, [r6, #0x28]
-	str r1, [r0, #4]
-	str r1, [r0, #8]
-	adds r0, #0xc
-	str r1, [r6, #0x34]
-	str r1, [r0, #4]
-	str r1, [r0, #8]
-	str r4, [r6, #0x24]
-	str r1, [r6, #0x40]
-	adds r0, #0x10
-	mov r1, r8
-	strb r1, [r0]
-	bl sub_080728B8
-	mov sb, r0
-	add r0, sp, #4
-	bl __4Base
-	mov r0, r8
-	str r0, [sp, #0x24]
-	ldr r1, _080781C4 @ =_vt.8UnitJoin
-	mov sl, r1
-	str r1, [sp, #0x20]
-	ldr r0, _080781C8 @ =gUnknown_08107DB0
-	ldr r4, [r0]
-	ldr r5, [r0, #4]
-	adds r7, r5, #0
-	str r7, [sp]
-	adds r3, r4, #0
-	adds r0, r6, #0
-	mov r1, sb
-	add r2, sp, #4
-	bl listen__4BasePvRC4BaseG9ClockData
-	ldr r0, _080781CC @ =_vt.3Unk
-	str r0, [sp, #0x20]
-	add r0, sp, #4
-	movs r1, #2
-	bl _._4Base
-	bl sub_080728D8
-	mov sb, r0
-	add r0, sp, #4
-	bl __4Base
-	mov r1, r8
-	str r1, [sp, #0x24]
-	mov r0, sl
-	str r0, [sp, #0x20]
-	str r7, [sp]
-	adds r3, r4, #0
-	adds r0, r6, #0
-	mov r1, sb
-	add r2, sp, #4
-	bl listen__4BasePvRC4BaseG9ClockData
-	ldr r1, _080781CC @ =_vt.3Unk
-	str r1, [sp, #0x20]
-	add r0, sp, #4
-	movs r1, #2
-	bl _._4Base
-	bl sub_080728F8
-	mov sb, r0
-	add r0, sp, #4
-	bl __4Base
-	mov r0, r8
-	str r0, [sp, #0x24]
-	mov r1, sl
-	str r1, [sp, #0x20]
-	str r7, [sp]
-	adds r3, r4, #0
-	adds r0, r6, #0
-	mov r1, sb
-	add r2, sp, #4
-	bl listen__4BasePvRC4BaseG9ClockData
-	ldr r0, _080781CC @ =_vt.3Unk
-	str r0, [sp, #0x20]
-	add r0, sp, #4
-	movs r1, #2
-	bl _._4Base
-	bl sub_080728B8
-	mov sb, r0
-	add r0, sp, #4
-	bl __4Base
-	mov r1, r8
-	str r1, [sp, #0x24]
-	ldr r0, _080781D0 @ =_vt.10UnitRevive
-	mov sl, r0
-	str r0, [sp, #0x20]
-	str r7, [sp]
-	adds r3, r4, #0
-	adds r0, r6, #0
-	mov r1, sb
-	add r2, sp, #4
-	bl listen__4BasePvRC4BaseG9ClockData
-	ldr r1, _080781CC @ =_vt.3Unk
-	str r1, [sp, #0x20]
-	add r0, sp, #4
-	movs r1, #2
-	bl _._4Base
-	bl sub_080728D8
-	mov sb, r0
-	add r0, sp, #4
-	bl __4Base
-	mov r0, r8
-	str r0, [sp, #0x24]
-	mov r1, sl
-	str r1, [sp, #0x20]
-	str r7, [sp]
-	adds r3, r4, #0
-	adds r0, r6, #0
-	mov r1, sb
-	add r2, sp, #4
-	bl listen__4BasePvRC4BaseG9ClockData
-	ldr r0, _080781CC @ =_vt.3Unk
-	str r0, [sp, #0x20]
-	add r0, sp, #4
-	movs r1, #2
-	bl _._4Base
-	bl sub_080728F8
-	mov sb, r0
-	add r0, sp, #4
-	bl __4Base
-	mov r1, r8
-	str r1, [sp, #0x24]
-	mov r0, sl
-	str r0, [sp, #0x20]
-	str r7, [sp]
-	adds r3, r4, #0
-	adds r0, r6, #0
-	mov r1, sb
-	add r2, sp, #4
-	bl listen__4BasePvRC4BaseG9ClockData
-	ldr r1, _080781CC @ =_vt.3Unk
-	str r1, [sp, #0x20]
-	add r0, sp, #4
-	movs r1, #2
-	bl _._4Base
-	bl sub_080728B8
-	mov sb, r0
-	add r0, sp, #4
-	bl __4Base
-	mov r0, r8
-	str r0, [sp, #0x24]
-	ldr r1, _080781D4 @ =_vt.10UnitEscape
-	mov sl, r1
-	str r1, [sp, #0x20]
-	ldr r0, _080781D8 @ =gUnknown_08107DB8
-	ldr r4, [r0]
-	ldr r5, [r0, #4]
-	adds r7, r5, #0
-	str r7, [sp]
-	adds r3, r4, #0
-	adds r0, r6, #0
-	mov r1, sb
-	add r2, sp, #4
-	bl listen__4BasePvRC4BaseG9ClockData
-	ldr r0, _080781CC @ =_vt.3Unk
-	str r0, [sp, #0x20]
-	add r0, sp, #4
-	movs r1, #2
-	bl _._4Base
-	bl sub_080728D8
-	mov sb, r0
-	add r0, sp, #4
-	bl __4Base
-	mov r1, r8
-	str r1, [sp, #0x24]
-	mov r0, sl
-	str r0, [sp, #0x20]
-	str r7, [sp]
-	adds r3, r4, #0
-	adds r0, r6, #0
-	mov r1, sb
-	add r2, sp, #4
-	bl listen__4BasePvRC4BaseG9ClockData
-	ldr r1, _080781CC @ =_vt.3Unk
-	str r1, [sp, #0x20]
-	add r0, sp, #4
-	movs r1, #2
-	bl _._4Base
-	bl sub_080728F8
-	mov sb, r0
-	add r0, sp, #4
-	bl __4Base
-	mov r0, r8
-	str r0, [sp, #0x24]
-	mov r1, sl
-	str r1, [sp, #0x20]
-	str r7, [sp]
-	adds r3, r4, #0
-	adds r0, r6, #0
-	mov r1, sb
-	add r2, sp, #4
-	bl listen__4BasePvRC4BaseG9ClockData
-	ldr r0, _080781CC @ =_vt.3Unk
-	str r0, [sp, #0x20]
-	add r0, sp, #4
-	movs r1, #2
-	bl _._4Base
-	bl sub_080728B8
-	mov sb, r0
-	add r0, sp, #4
-	bl __4Base
-	mov r1, r8
-	str r1, [sp, #0x24]
-	ldr r0, _080781DC @ =_vt.7UnitDie
-	mov sl, r0
-	str r0, [sp, #0x20]
-	str r7, [sp]
-	adds r3, r4, #0
-	adds r0, r6, #0
-	mov r1, sb
-	add r2, sp, #4
-	bl listen__4BasePvRC4BaseG9ClockData
-	ldr r1, _080781CC @ =_vt.3Unk
-	str r1, [sp, #0x20]
-	add r0, sp, #4
-	movs r1, #2
-	bl _._4Base
-	bl sub_080728D8
-	mov sb, r0
-	add r0, sp, #4
-	bl __4Base
-	mov r0, r8
-	str r0, [sp, #0x24]
-	mov r1, sl
-	str r1, [sp, #0x20]
-	str r7, [sp]
-	adds r3, r4, #0
-	adds r0, r6, #0
-	mov r1, sb
-	add r2, sp, #4
-	bl listen__4BasePvRC4BaseG9ClockData
-	ldr r0, _080781CC @ =_vt.3Unk
-	str r0, [sp, #0x20]
-	add r0, sp, #4
-	movs r1, #2
-	bl _._4Base
-	bl sub_080728F8
-	mov sb, r0
-	add r0, sp, #4
-	bl __4Base
-	mov r1, r8
-	str r1, [sp, #0x24]
-	mov r0, sl
-	str r0, [sp, #0x20]
-	str r7, [sp]
-	adds r3, r4, #0
-	adds r0, r6, #0
-	mov r1, sb
-	add r2, sp, #4
-	bl listen__4BasePvRC4BaseG9ClockData
-	ldr r1, _080781CC @ =_vt.3Unk
-	str r1, [sp, #0x20]
-	add r0, sp, #4
-	movs r1, #2
-	bl _._4Base
-	adds r0, r6, #0
-	add sp, #0x28
-	pop {r3, r4, r5}
-	mov r8, r3
-	mov sb, r4
-	mov sl, r5
-	pop {r4, r5, r6, r7}
-	pop {r1}
-	bx r1
-	.align 2, 0
-_080781C0: .4byte vt_09F81DD0
-_080781C4: .4byte _vt.8UnitJoin
-_080781C8: .4byte gUnknown_08107DB0
-_080781CC: .4byte _vt.3Unk
-_080781D0: .4byte _vt.10UnitRevive
-_080781D4: .4byte _vt.10UnitEscape
-_080781D8: .4byte gUnknown_08107DB8
-_080781DC: .4byte _vt.7UnitDie
-
-	thumb_func_start _._5Skill
-_._5Skill: @ 0x080781E0
-	push {r4, r5, lr}
-	adds r4, r0, #0
-	adds r5, r1, #0
-	ldr r0, _0807820C @ =vt_09F81DD0
-	str r0, [r4, #0x1c]
-	ldr r0, [r4, #0x3c]
-	cmp r0, #0
-	beq _080781F4
-	bl __builtin_vec_delete
-_080781F4:
-	ldr r0, [r4, #0x30]
-	cmp r0, #0
-	beq _080781FE
-	bl __builtin_vec_delete
-_080781FE:
-	adds r0, r4, #0
-	adds r1, r5, #0
-	bl _._4Base
-	pop {r4, r5}
-	pop {r0}
-	bx r0
-	.align 2, 0
-_0807820C: .4byte vt_09F81DD0
-
-	thumb_func_start sub_08078210
-sub_08078210: @ 0x08078210
-	ldr r0, [r0, #0x24]
-	bx lr
-
-	thumb_func_start sub_08078214
-sub_08078214: @ 0x08078214
-	push {r4, r5, r6, r7, lr}
-	sub sp, #4
-	str r1, [sp]
-	adds r4, r0, #0
-	adds r4, #0x34
-	mov r7, sp
-	ldr r1, [r4, #4]
-	adds r5, r1, #1
-	ldr r0, [r0, #0x34]
-	cmp r0, r5
-	bge _08078262
-	lsls r1, r5, #1
-	movs r0, #4
-	cmp r0, r1
-	bge _08078234
-	adds r0, r1, #0
-_08078234:
-	adds r5, r0, #0
-	lsls r0, r5, #2
-	bl __builtin_vec_new
-	adds r6, r0, #0
-	ldr r3, [r4, #8]
-	adds r2, r6, #0
-	ldr r0, [r4, #4]
-	cmp r0, #0
-	ble _08078254
-	adds r1, r0, #0
-_0807824A:
-	ldm r3!, {r0}
-	stm r2!, {r0}
-	subs r1, #1
-	cmp r1, #0
-	bne _0807824A
-_08078254:
-	ldr r0, [r4, #8]
-	cmp r0, #0
-	beq _0807825E
-	bl __builtin_vec_delete
-_0807825E:
-	str r5, [r4]
-	str r6, [r4, #8]
-_08078262:
-	ldr r2, [r4, #4]
-	ldr r1, [r4, #8]
-	lsls r0, r2, #2
-	adds r0, r0, r1
-	ldr r1, [r7]
-	str r1, [r0]
-	adds r2, #1
-	str r2, [r4, #4]
-	ldr r0, [sp]
-	add sp, #4
-	pop {r4, r5, r6, r7}
-	pop {r1}
-	bx r1
-
-	thumb_func_start sub_0807827C
-sub_0807827C: @ 0x0807827C
-	push {r4, r5, r6, r7, lr}
-	mov r7, r8
-	push {r7}
-	sub sp, #4
-	mov ip, r0
-	str r1, [sp]
-	movs r0, #0
-	mov r8, r0
-	mov r6, ip
-	adds r6, #0x28
-	mov r7, sp
-	movs r5, #0
-	ldr r3, [r6, #4]
-	cmp r5, r3
-	bge _080782D6
-	ldr r0, [r6, #8]
-	adds r4, r0, #4
-	adds r2, r0, #0
-_080782A0:
-	ldr r1, [r2]
-	ldr r0, [r7]
-	cmp r1, r0
-	bne _080782CA
-	adds r0, r5, #1
-	subs r0, r3, r0
-	adds r3, r4, #0
-	adds r1, r2, #0
-	ldr r4, [r6, #4]
-	cmp r0, #0
-	ble _080782C2
-	adds r2, r0, #0
-_080782B8:
-	ldm r3!, {r0}
-	stm r1!, {r0}
-	subs r2, #1
-	cmp r2, #0
-	bne _080782B8
-_080782C2:
-	subs r0, r4, #1
-	str r0, [r6, #4]
-	movs r0, #1
-	b _080782D8
-_080782CA:
-	adds r4, #4
-	adds r2, #4
-	adds r5, #1
-	ldr r3, [r6, #4]
-	cmp r5, r3
-	blt _080782A0
-_080782D6:
-	movs r0, #0
-_080782D8:
-	cmp r0, #0
-	bne _0807832C
-	mov r6, ip
-	adds r6, #0x34
-	mov r7, sp
-	movs r5, #0
-	ldr r3, [r6, #4]
-	cmp r5, r3
-	bge _08078326
-	ldr r0, [r6, #8]
-	adds r4, r0, #4
-	adds r2, r0, #0
-_080782F0:
-	ldr r1, [r2]
-	ldr r0, [r7]
-	cmp r1, r0
-	bne _0807831A
-	adds r0, r5, #1
-	subs r0, r3, r0
-	adds r3, r4, #0
-	adds r1, r2, #0
-	ldr r4, [r6, #4]
-	cmp r0, #0
-	ble _08078312
-	adds r2, r0, #0
-_08078308:
-	ldm r3!, {r0}
-	stm r1!, {r0}
-	subs r2, #1
-	cmp r2, #0
-	bne _08078308
-_08078312:
-	subs r0, r4, #1
-	str r0, [r6, #4]
-	movs r0, #1
-	b _08078328
-_0807831A:
-	adds r4, #4
-	adds r2, #4
-	adds r5, #1
-	ldr r3, [r6, #4]
-	cmp r5, r3
-	blt _080782F0
-_08078326:
-	movs r0, #0
-_08078328:
-	cmp r0, #0
-	beq _08078330
-_0807832C:
-	movs r0, #1
-	mov r8, r0
-_08078330:
-	mov r0, r8
-	add sp, #4
-	pop {r3}
-	mov r8, r3
-	pop {r4, r5, r6, r7}
-	pop {r1}
-	bx r1
-	.align 2, 0
-
-	thumb_func_start sub_08078340
-sub_08078340: @ 0x08078340
-	movs r1, #0
-	str r1, [r0, #0x2c]
-	adds r0, #0x34
-	str r1, [r0, #4]
-	bx lr
-	.align 2, 0
-
-	thumb_func_start sub_0807834C
-sub_0807834C: @ 0x0807834C
-	adds r1, r0, #0
-	ldr r0, [r1, #0x2c]
-	ldr r1, [r1, #0x38]
-	adds r0, r0, r1
-	bx lr
-	.align 2, 0
-
-	thumb_func_start sub_08078358
-sub_08078358: @ 0x08078358
-	push {lr}
-	adds r2, r1, #0
-	adds r3, r0, #0
-	adds r3, #0x28
-	ldr r1, [r3, #4]
-	cmp r2, r1
-	bge _0807836A
-	lsls r0, r2, #2
-	b _0807837E
-_0807836A:
-	adds r3, r0, #0
-	adds r3, #0x34
-	ldr r0, [r3, #4]
-	adds r0, r1, r0
-	cmp r2, r0
-	blt _0807837A
-	movs r0, #0
-	b _08078384
-_0807837A:
-	subs r0, r2, r1
-	lsls r0, r0, #2
-_0807837E:
-	ldr r1, [r3, #8]
-	adds r1, r1, r0
-	ldr r0, [r1]
-_08078384:
-	pop {r1}
-	bx r1
-
-	thumb_func_start sub_08078388
-sub_08078388: @ 0x08078388
-	push {r4, r5, r6, r7, lr}
-	sub sp, #4
-	mov ip, r0
-	str r1, [sp]
-	mov r3, ip
-	adds r3, #0x28
-	movs r2, #0
-	ldr r0, [r3, #4]
-	cmp r2, r0
-	bge _080783B0
-	adds r5, r1, #0
-	adds r4, r0, #0
-	ldr r1, [r3, #8]
-_080783A2:
-	ldr r0, [r1]
-	cmp r0, r5
-	beq _080783B2
-	adds r1, #4
-	adds r2, #1
-	cmp r2, r4
-	blt _080783A2
-_080783B0:
-	ldr r2, [r3, #4]
-_080783B2:
-	mov r0, ip
-	adds r0, #0x28
-	ldr r1, [r0, #4]
-	adds r7, r0, #0
-	cmp r2, r1
-	bge _080783C2
-	adds r0, r2, #0
-	b _08078408
-_080783C2:
-	mov r3, ip
-	adds r3, #0x34
-	movs r2, #0
-	ldr r0, [r3, #4]
-	adds r6, r3, #0
-	cmp r2, r0
-	bge _080783E4
-	ldr r5, [sp]
-	adds r4, r0, #0
-	ldr r1, [r6, #8]
-_080783D6:
-	ldr r0, [r1]
-	cmp r0, r5
-	beq _080783E6
-	adds r1, #4
-	adds r2, #1
-	cmp r2, r4
-	blt _080783D6
-_080783E4:
-	ldr r2, [r3, #4]
-_080783E6:
-	ldr r0, [r6, #4]
-	cmp r2, r0
-	blt _08078404
-	mov r0, ip
-	ldr r1, [r0, #0x1c]
-	movs r2, #0xc0
-	lsls r2, r2, #1
-	adds r1, r1, r2
-	movs r2, #0
-	ldrsh r0, [r1, r2]
-	add r0, ip
-	ldr r1, [r1, #4]
-	bl _call_via_r1
-	b _08078408
-_08078404:
-	ldr r0, [r7, #4]
-	adds r0, r0, r2
-_08078408:
-	add sp, #4
-	pop {r4, r5, r6, r7}
-	pop {r1}
-	bx r1
-
-	thumb_func_start sub_08078410__5Goods
-sub_08078410__5Goods: @ 0x08078410
-	push {r4, r5, r6, r7, lr}
-	mov r7, sb
-	mov r6, r8
-	push {r6, r7}
-	adds r6, r0, #0
-	ldr r1, [r6, #0x1c]
-	movs r0, #0xd8
-	lsls r0, r0, #1
-	adds r1, r1, r0
-	movs r2, #0
-	ldrsh r0, [r1, r2]
-	adds r0, r6, r0
-	ldr r1, [r1, #4]
-	bl _call_via_r1
-	lsls r0, r0, #0x18
-	lsrs r0, r0, #0x18
-	cmp r0, #1
-	bne _0807843A
-	movs r0, #0
-	b _08078582
-_0807843A:
-	adds r0, r6, #0
-	movs r1, #1
-	movs r2, #0
-	bl sub_0807A714
-	ldr r1, [r6, #0x1c]
-	adds r1, #0x68
-	movs r3, #0
-	ldrsh r0, [r1, r3]
-	adds r0, r6, r0
-	ldr r1, [r1, #4]
-	bl _call_via_r1
-	adds r0, r6, #0
-	movs r1, #2
-	movs r2, #0
-	bl sub_0807A714
-	b _08078506
-_08078460:
-	adds r5, r6, #0
-	adds r5, #0x34
-	movs r1, #0
-	ldr r0, [r5, #4]
-	mov sb, r5
-	cmp r0, #0
-	bgt _08078470
-	movs r1, #1
-_08078470:
-	cmp r1, #0
-	bne _0807854E
-	ldr r2, [r6, #0x1c]
-	adds r2, #0x98
-	movs r1, #0
-	ldrsh r0, [r2, r1]
-	adds r0, r6, r0
-	ldr r1, [r5, #8]
-	ldr r1, [r1]
-	ldr r2, [r2, #4]
-	bl _call_via_r2
-	adds r4, r6, #0
-	adds r4, #0x28
-	ldr r5, [r5, #8]
-	mov r8, r5
-	ldr r0, [r4, #4]
-	adds r5, r0, #1
-	ldr r0, [r6, #0x28]
-	cmp r0, r5
-	bge _080784D2
-	lsls r0, r5, #1
-	movs r1, #4
-	cmp r1, r0
-	bge _080784A4
-	adds r1, r0, #0
-_080784A4:
-	adds r5, r1, #0
-	lsls r0, r5, #2
-	bl __builtin_vec_new
-	adds r7, r0, #0
-	ldr r3, [r4, #8]
-	adds r2, r7, #0
-	ldr r0, [r4, #4]
-	cmp r0, #0
-	ble _080784C4
-	adds r1, r0, #0
-_080784BA:
-	ldm r3!, {r0}
-	stm r2!, {r0}
-	subs r1, #1
-	cmp r1, #0
-	bne _080784BA
-_080784C4:
-	ldr r0, [r4, #8]
-	cmp r0, #0
-	beq _080784CE
-	bl __builtin_vec_delete
-_080784CE:
-	str r5, [r4]
-	str r7, [r4, #8]
-_080784D2:
-	ldr r2, [r4, #4]
-	ldr r1, [r4, #8]
-	lsls r0, r2, #2
-	adds r0, r0, r1
-	mov r3, r8
-	ldr r1, [r3]
-	str r1, [r0]
-	adds r2, #1
-	str r2, [r4, #4]
-	mov r3, sb
-	ldr r2, [r3, #4]
-	cmp r2, #0
-	ble _08078506
-	ldr r0, [r3, #8]
-	subs r1, r2, #1
-	adds r5, r0, #4
-	adds r4, r0, #0
-	cmp r1, #0
-	ble _08078502
-_080784F8:
-	ldm r5!, {r0}
-	stm r4!, {r0}
-	subs r1, #1
-	cmp r1, #0
-	bne _080784F8
-_08078502:
-	subs r0, r2, #1
-	str r0, [r3, #4]
-_08078506:
-	ldr r1, [r6, #0x1c]
-	movs r0, #0xd8
-	lsls r0, r0, #1
-	adds r1, r1, r0
-	movs r2, #0
-	ldrsh r0, [r1, r2]
-	adds r0, r6, r0
-	ldr r1, [r1, #4]
-	bl _call_via_r1
-	lsls r0, r0, #0x18
-	lsrs r0, r0, #0x18
-	cmp r0, #1
-	beq _0807854E
-	movs r0, #1
-	movs r1, #0
-	bl sub_08073018
-	bl sub_08072B70
-	bl sub_08072D0C
-	ldr r1, [r6, #0x1c]
-	movs r3, #0xd8
-	lsls r3, r3, #1
-	adds r1, r1, r3
-	movs r2, #0
-	ldrsh r0, [r1, r2]
-	adds r0, r6, r0
-	ldr r1, [r1, #4]
-	bl _call_via_r1
-	lsls r0, r0, #0x18
-	lsrs r0, r0, #0x18
-	cmp r0, #1
-	bne _08078460
-_0807854E:
-	adds r0, r6, #0
-	movs r1, #3
-	movs r2, #0
-	bl sub_0807A714
-	ldr r1, [r6, #0x1c]
-	movs r3, #0x9c
-	lsls r3, r3, #1
-	adds r1, r1, r3
-	movs r2, #0
-	ldrsh r0, [r1, r2]
-	adds r0, r6, r0
-	ldr r1, [r1, #4]
-	bl _call_via_r1
-	adds r0, r6, #0
-	movs r1, #4
-	movs r2, #0
-	bl sub_0807A714
-	movs r1, #0
-	ldr r0, [r6, #0x40]
-	cmp r0, #4
-	bne _08078580
-	movs r1, #1
-_08078580:
-	adds r0, r1, #0
-_08078582:
-	pop {r3, r4}
-	mov r8, r3
-	mov sb, r4
-	pop {r4, r5, r6, r7}
-	pop {r1}
-	bx r1
-	.align 2, 0
-
-	thumb_func_start sub_08078590
-sub_08078590: @ 0x08078590
-	push {r4, r5, lr}
-	adds r4, r0, #0
-	movs r0, #1
-	movs r1, #0
-	bl sub_08073018
-	bl sub_08072B70
-	bl sub_08072D0C
-	ldr r1, [r4, #0x1c]
-	movs r0, #0xd8
-	lsls r0, r0, #1
-	adds r1, r1, r0
-	movs r2, #0
-	ldrsh r0, [r1, r2]
-	adds r0, r4, r0
-	ldr r1, [r1, #4]
-	bl _call_via_r1
-	lsls r0, r0, #0x18
-	lsrs r0, r0, #0x18
-	cmp r0, #1
-	bne _080785C2
-	b _080786D2
-_080785C2:
-	ldr r1, [r4, #0x1c]
-	movs r3, #0xb0
-	lsls r3, r3, #1
-	adds r1, r1, r3
-	movs r2, #0
-	ldrsh r0, [r1, r2]
-	adds r0, r4, r0
-	ldr r1, [r1, #4]
-	bl _call_via_r1
-	ldr r1, [r0, #0x1c]
-	adds r1, #0xd8
-	movs r3, #0
-	ldrsh r2, [r1, r3]
-	adds r0, r0, r2
-	ldr r2, [r1, #4]
-	adds r1, r4, #0
-	bl _call_via_r2
-	movs r5, #0
-	b _08078616
-_080785EC:
-	ldr r1, [r4, #0x1c]
-	movs r0, #0xc4
-	lsls r0, r0, #1
-	adds r1, r1, r0
-	movs r2, #0
-	ldrsh r0, [r1, r2]
-	adds r0, r4, r0
-	ldr r2, [r1, #4]
-	adds r1, r5, #0
-	bl _call_via_r2
-	ldr r2, [r0, #0x1c]
-	adds r2, #0xf0
-	movs r3, #0
-	ldrsh r1, [r2, r3]
-	adds r0, r0, r1
-	ldr r2, [r2, #4]
-	adds r1, r4, #0
-	bl _call_via_r2
-	adds r5, #1
-_08078616:
-	ldr r1, [r4, #0x1c]
-	movs r0, #0xc0
-	lsls r0, r0, #1
-	adds r1, r1, r0
-	movs r2, #0
-	ldrsh r0, [r1, r2]
-	adds r0, r4, r0
-	ldr r1, [r1, #4]
-	bl _call_via_r1
-	cmp r5, r0
-	blt _080785EC
-	ldr r1, [r4, #0x1c]
-	adds r1, #0x70
-	movs r3, #0
-	ldrsh r0, [r1, r3]
-	adds r0, r4, r0
-	ldr r1, [r1, #4]
-	bl _call_via_r1
-	ldr r1, [r4, #0x1c]
-	adds r1, #0x78
-	movs r2, #0
-	ldrsh r0, [r1, r2]
-	adds r0, r4, r0
-	ldr r1, [r1, #4]
-	bl _call_via_r1
-	movs r0, #1
-	movs r1, #0
-	bl sub_08073018
-	bl sub_08072B70
-	bl sub_08072D0C
-	ldr r1, [r4, #0x1c]
-	movs r3, #0xd8
-	lsls r3, r3, #1
-	adds r1, r1, r3
-	movs r2, #0
-	ldrsh r0, [r1, r2]
-	adds r0, r4, r0
-	ldr r1, [r1, #4]
-	bl _call_via_r1
-	lsls r0, r0, #0x18
-	lsrs r0, r0, #0x18
-	cmp r0, #1
-	beq _080786D2
-	adds r2, r4, #0
-	adds r2, #0x44
-	ldrb r1, [r2]
-	movs r0, #1
-	orrs r0, r1
-	strb r0, [r2]
-	ldr r1, [r4, #0x1c]
-	adds r1, #0x80
-	movs r3, #0
-	ldrsh r0, [r1, r3]
-	adds r0, r4, r0
-	ldr r1, [r1, #4]
-	bl _call_via_r1
-	ldr r1, [r4, #0x1c]
-	movs r0, #0xd8
-	lsls r0, r0, #1
-	adds r1, r1, r0
-	movs r2, #0
-	ldrsh r0, [r1, r2]
-	adds r0, r4, r0
-	ldr r1, [r1, #4]
-	bl _call_via_r1
-	lsls r0, r0, #0x18
-	lsrs r0, r0, #0x18
-	cmp r0, #1
-	beq _080786D2
-	ldr r1, [r4, #0x1c]
-	adds r1, #0x88
-	movs r3, #0
-	ldrsh r0, [r1, r3]
-	adds r0, r4, r0
-	ldr r1, [r1, #4]
-	bl _call_via_r1
-	ldr r1, [r4, #0x1c]
-	adds r1, #0x90
-	movs r2, #0
-	ldrsh r0, [r1, r2]
-	adds r0, r4, r0
-	ldr r1, [r1, #4]
-	bl _call_via_r1
-_080786D2:
-	pop {r4, r5}
-	pop {r0}
-	bx r0
-
-	thumb_func_start nullsub_38
-nullsub_38: @ 0x080786D8
-	bx lr
-	.align 2, 0
-
-	thumb_func_start sub_080786DC
-sub_080786DC: @ 0x080786DC
-	push {lr}
-	ldr r1, [r0, #0x1c]
-	movs r2, #0x9a
-	lsls r2, r2, #2
-	adds r1, r1, r2
-	movs r3, #0
-	ldrsh r2, [r1, r3]
-	adds r0, r0, r2
-	ldr r1, [r1, #4]
-	bl _call_via_r1
-	lsls r0, r0, #0x10
-	lsrs r0, r0, #0x10
-	bl playSound
-	pop {r0}
-	bx r0
-	.align 2, 0
-
-	thumb_func_start sub_08078700
-sub_08078700: @ 0x08078700
-	push {lr}
-	sub sp, #0x10
-	adds r1, r0, #0
-	ldr r2, [r1, #0x1c]
-	movs r0, #0x8e
-	lsls r0, r0, #2
-	adds r2, r2, r0
-	movs r0, #0
-	ldrsh r3, [r2, r0]
-	mov r0, sp
-	ldr r2, [r2, #4]
-	adds r1, r1, r3
-	bl _call_via_r2
-	add r1, sp, #0xc
-	movs r0, #0
-	strb r0, [r1]
-	strb r0, [r1, #1]
-	strb r0, [r1, #2]
-	mov r0, sp
-	movs r2, #1
-	bl sub_080735E0
-	mov r0, sp
-	movs r1, #2
-	bl _._3Msg
-	add sp, #0x10
-	pop {r0}
-	bx r0
-
-	thumb_func_start sub_0807873C
-sub_0807873C: @ 0x0807873C
-	push {r4, lr}
-	adds r4, r0, #0
-	ldr r1, [r4, #0x1c]
-	movs r0, #0x92
-	lsls r0, r0, #2
-	adds r1, r1, r0
-	movs r2, #0
-	ldrsh r0, [r1, r2]
-	adds r0, r4, r0
-	ldr r1, [r1, #4]
-	bl _call_via_r1
-	lsls r0, r0, #0x18
-	lsrs r0, r0, #0x18
-	cmp r0, #1
-	bne _0807877C
-	ldr r1, [r4, #0x1c]
-	movs r0, #0xb0
-	lsls r0, r0, #1
-	adds r1, r1, r0
-	movs r2, #0
-	ldrsh r0, [r1, r2]
-	adds r0, r4, r0
-	ldr r1, [r1, #4]
-	bl _call_via_r1
-	adds r1, r0, #0
-	movs r0, #0xb5
-	movs r2, #0
-	movs r3, #0
-	bl sub_08073150
-_0807877C:
-	pop {r4}
-	pop {r0}
-	bx r0
-	.align 2, 0
-
-	thumb_func_start sub_08078784
-sub_08078784: @ 0x08078784
-	push {r4, r5, lr}
-	adds r4, r0, #0
-	ldr r1, [r4, #0x1c]
-	movs r0, #0x94
-	lsls r0, r0, #2
-	adds r1, r1, r0
-	movs r2, #0
-	ldrsh r0, [r1, r2]
-	adds r0, r4, r0
-	ldr r1, [r1, #4]
-	bl _call_via_r1
-	adds r5, r0, #0
-	lsls r5, r5, #0x10
-	lsrs r5, r5, #0x10
-	ldr r1, [r4, #0x1c]
-	movs r0, #0xb0
-	lsls r0, r0, #1
-	adds r1, r1, r0
-	movs r2, #0
-	ldrsh r0, [r1, r2]
-	adds r0, r4, r0
-	ldr r1, [r1, #4]
-	bl _call_via_r1
-	adds r1, r0, #0
-	adds r4, #0x34
-	ldr r2, [r4, #4]
-	ldr r3, [r4, #8]
-	adds r0, r5, #0
-	bl sub_08073150
-	pop {r4, r5}
-	pop {r0}
-	bx r0
-	.align 2, 0
-
 	thumb_func_start sub_080787CC
 sub_080787CC: @ 0x080787CC
 	push {r4, r5, r6, r7, lr}
@@ -1204,7 +111,7 @@ _08078874:
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -1659,7 +566,7 @@ sub_08078C3C: @ 0x08078C3C
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -1924,7 +831,7 @@ _08078DF6:
 	strb r4, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -2032,7 +939,7 @@ _08078ED8:
 	strb r4, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -2271,7 +1178,7 @@ _080790F2:
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -2369,7 +1276,7 @@ _080791B4:
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -2764,7 +1671,7 @@ _08079488:
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -2933,7 +1840,7 @@ _08079674:
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -3690,7 +2597,7 @@ _08079CC4:
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -3714,7 +2621,7 @@ _08079CDE:
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -3842,7 +2749,7 @@ _08079DFA:
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -3867,7 +2774,7 @@ _08079E2E:
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -4053,7 +2960,7 @@ _08079FA6:
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -5220,7 +4127,7 @@ sub_0807A88C: @ 0x0807A88C
 	push {r4, lr}
 	adds r4, r0, #0
 	bl __4Base
-	ldr r0, _0807A8B4 @ =vt_09F81DD0
+	ldr r0, _0807A8B4 @ =_vt.5Skill
 	str r0, [r4, #0x1c]
 	adds r1, r4, #0
 	adds r1, #0x28
@@ -5237,7 +4144,7 @@ sub_0807A88C: @ 0x0807A88C
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0807A8B4: .4byte vt_09F81DD0
+_0807A8B4: .4byte _vt.5Skill
 
 	thumb_func_start sub_0807A8B8
 sub_0807A8B8: @ 0x0807A8B8
@@ -6638,7 +5545,7 @@ _0807B3F4:
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -6841,7 +5748,7 @@ sub_0807B528: @ 0x0807B528
 	strb r0, [r1, #2]
 	add r0, sp, #4
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -6929,7 +5836,7 @@ sub_0807B5D4: @ 0x0807B5D4
 	strb r0, [r1, #2]
 	add r0, sp, #4
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -7365,7 +6272,7 @@ _0807BA06:
 	strb r0, [r1, #2]
 	add r0, sp, #4
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg

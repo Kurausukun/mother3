@@ -868,7 +868,7 @@ sub_08097DE0: @ 0x08097DE0
 	strb r4, [r1, #2]
 	adds r0, r5, #0
 	movs r2, #0
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	adds r0, r5, #0
 	movs r1, #2
 	bl _._3Msg
@@ -900,7 +900,7 @@ sub_08097DE0: @ 0x08097DE0
 	strb r4, [r1, #2]
 	adds r0, r5, #0
 	movs r2, #0
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	adds r0, r5, #0
 	movs r1, #2
 	bl _._3Msg
@@ -1008,7 +1008,7 @@ _08097F50:
 	adds r0, r5, #0
 	adds r1, r6, #0
 	movs r2, #0
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	adds r0, r5, #0
 	movs r1, #2
 	bl _._3Msg
@@ -1033,7 +1033,7 @@ _08097F50:
 	adds r0, r5, #0
 	mov r1, sb
 	movs r2, #0
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	adds r0, r5, #0
 	movs r1, #2
 	bl _._3Msg
@@ -1058,7 +1058,7 @@ _08097F50:
 	adds r0, r5, #0
 	mov r1, sl
 	movs r2, #0
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	adds r0, r5, #0
 	movs r1, #2
 	bl _._3Msg
@@ -1212,7 +1212,7 @@ sub_08098034: @ 0x08098034
 	strb r6, [r1, #2]
 	add r0, sp, #8
 	movs r2, #0
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	add r0, sp, #8
 	movs r1, #2
 	bl _._3Msg
@@ -1263,7 +1263,7 @@ sub_08098034: @ 0x08098034
 	strb r6, [r1, #2]
 	add r0, sp, #8
 	movs r2, #0
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	add r0, sp, #8
 	movs r1, #2
 	bl _._3Msg
@@ -1379,7 +1379,7 @@ _0809828E:
 	strb r7, [r1, #2]
 	mov r0, sp
 	movs r2, #0
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -1468,7 +1468,7 @@ _0809836A:
 	strb r7, [r1, #2]
 	mov r0, sp
 	movs r2, #0
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -1635,7 +1635,7 @@ _080984B4:
 _080984EE:
 	mov r0, sp
 	movs r2, #0
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -1713,7 +1713,7 @@ sub_08098580: @ 0x08098580
 	strb r7, [r1, #2]
 	mov r0, sp
 	movs r2, #0
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -1834,7 +1834,7 @@ _0809868C:
 	strb r7, [r1, #2]
 	mov r0, sp
 	movs r2, #0
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -1859,7 +1859,7 @@ _080986A8:
 	strb r7, [r1, #2]
 	mov r0, sp
 	movs r2, #0
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -2874,7 +2874,7 @@ sub_08098E48: @ 0x08098E48
 	strb r6, [r1, #2]
 	mov r0, sp
 	movs r2, #0
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -3411,7 +3411,7 @@ _0809930C:
 	strb r5, [r1, #2]
 	add r0, sp, #4
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -3490,7 +3490,7 @@ _080993C4:
 	strb r5, [r1, #2]
 	add r0, sp, #4
 	movs r2, #0
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -3517,7 +3517,7 @@ _080993C4:
 	strb r5, [r1, #2]
 	add r0, sp, #4
 	movs r2, #0
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -3584,7 +3584,7 @@ _080993C4:
 	strb r5, [r1, #2]
 	add r0, sp, #4
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -3638,7 +3638,7 @@ _0809955A:
 	strb r5, [r1, #2]
 	add r0, sp, #4
 	movs r2, #0
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -3876,7 +3876,7 @@ _08099692:
 	strb r2, [r1, #2]
 	mov r0, sp
 	movs r2, #0
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -4076,7 +4076,7 @@ _08099892:
 	strb r5, [r1, #2]
 	mov r0, sp
 	movs r2, #0
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -4201,7 +4201,7 @@ sub_08099994: @ 0x08099994
 	strb r6, [r1, #2]
 	mov r0, sp
 	movs r2, #0
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -4431,7 +4431,7 @@ sub_08099BE4: @ 0x08099BE4
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -4866,7 +4866,7 @@ sub_08099F74: @ 0x08099F74
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #0
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -5348,7 +5348,7 @@ _0809A142:
 	strb r3, [r1, #2]
 	add r0, sp, #8
 	movs r2, #0
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	add r0, sp, #8
 	movs r1, #2
 	bl _._3Msg
@@ -6217,7 +6217,7 @@ sub_0809AA98: @ 0x0809AA98
 	strb r3, [r1, #1]
 	strb r3, [r1, #2]
 	add r0, sp, #8
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	add r0, sp, #8
 	movs r1, #2
 	bl _._3Msg
@@ -6264,7 +6264,7 @@ sub_0809AA98: @ 0x0809AA98
 	strb r2, [r1, #2]
 	add r0, sp, #8
 	movs r2, #0
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	add r0, sp, #8
 	movs r1, #2
 	bl _._3Msg
@@ -6292,7 +6292,7 @@ sub_0809AA98: @ 0x0809AA98
 	strb r2, [r1, #2]
 	add r0, sp, #8
 	movs r2, #0
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	add r0, sp, #8
 	movs r1, #2
 	bl _._3Msg
@@ -6338,7 +6338,7 @@ sub_0809AA98: @ 0x0809AA98
 	strb r2, [r1, #2]
 	add r0, sp, #8
 	movs r2, #0
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	add r0, sp, #8
 	movs r1, #2
 	bl _._3Msg
@@ -6422,7 +6422,7 @@ sub_0809AA98: @ 0x0809AA98
 	strb r2, [r1, #2]
 	add r0, sp, #8
 	movs r2, #0
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	add r0, sp, #8
 	movs r1, #2
 	bl _._3Msg
@@ -6503,7 +6503,7 @@ sub_0809AA98: @ 0x0809AA98
 	strb r2, [r1, #2]
 	add r0, sp, #8
 	movs r2, #0
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	add r0, sp, #8
 	movs r1, #2
 	bl _._3Msg
@@ -6781,7 +6781,7 @@ sub_0809AFA8: @ 0x0809AFA8
 	strb r2, [r1, #2]
 	add r0, sp, #4
 	movs r2, #0
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -6869,7 +6869,7 @@ _0809B090:
 	strb r4, [r1, #2]
 	add r0, sp, #4
 	movs r2, #0
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -7111,7 +7111,7 @@ _0809B13E:
 	strb r3, [r1, #2]
 	add r0, sp, #4
 	movs r2, #0
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -9552,7 +9552,7 @@ _0809C69C:
 	strb r0, [r1, #2]
 	add r0, sp, #4
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -9614,7 +9614,7 @@ _0809C7E8: .4byte 0x000002FF
 sub_0809C7EC: @ 0x0809C7EC
 	push {r4, lr}
 	adds r4, r0, #0
-	bl unit_90__4UnitUi
+	bl unit_90__4UnitP5Skill
 	ldr r1, [r4, #0x1c]
 	movs r0, #0x80
 	lsls r0, r0, #2
@@ -11012,7 +11012,7 @@ _0809D2D4:
 	strb r4, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -11041,7 +11041,7 @@ _0809D32C:
 	mov r0, r8
 	adds r2, r7, #0
 	movs r3, #0
-	bl __5GoodsUsUiUs
+	bl __5GoodsUsP4UnitUs
 	mov r0, r8
 	bl getType__C5Goods
 	adds r6, r0, #0
@@ -12033,7 +12033,7 @@ sub_0809DA84: @ 0x0809DA84
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -12193,7 +12193,7 @@ _0809DBE4:
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -12297,7 +12297,7 @@ sub_0809DC9C: @ 0x0809DC9C
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -12387,7 +12387,7 @@ _0809DD6C:
 	thumb_func_start sub_0809DD74
 sub_0809DD74: @ 0x0809DD74
 	push {lr}
-	bl sub_08078700
+	bl skill_80__5Skill
 	ldr r0, _0809DD84 @ =0x000002EE
 	bl sub_080707E4
 	pop {r0}
@@ -12430,7 +12430,7 @@ sub_0809DD9C: @ 0x0809DD9C
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -12499,7 +12499,7 @@ sub_0809DDE0: @ 0x0809DDE0
 	strb r0, [r1, #2]
 	add r0, sp, #4
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -12525,7 +12525,7 @@ _0809DE70:
 	strb r0, [r1, #2]
 	add r0, sp, #4
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -12631,7 +12631,7 @@ sub_0809DF50: @ 0x0809DF50
 	ldr r0, _0809DF68 @ =0x00000652
 	bl playSound
 	adds r0, r4, #0
-	bl sub_08078784
+	bl skill_90__5Skill
 	pop {r4}
 	pop {r0}
 	bx r0
@@ -12742,7 +12742,7 @@ _0809E036:
 	cmp r5, r0
 	blt _0809DFF2
 	adds r0, r6, #0
-	bl sub_08078700
+	bl skill_80__5Skill
 	add sp, #4
 	pop {r4, r5, r6}
 	pop {r0}
@@ -12822,7 +12822,7 @@ sub_0809E060: @ 0x0809E060
 	movs r1, #0
 	bl _call_via_r2
 	adds r0, r5, #0
-	bl sub_08078700
+	bl skill_80__5Skill
 	ldr r1, [r4, #0x1c]
 	add r1, r8
 	movs r2, #0
@@ -12882,7 +12882,7 @@ sub_0809E134: @ 0x0809E134
 	strb r0, [r1, #2]
 	add r0, sp, #4
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -12968,7 +12968,7 @@ sub_0809E1E0: @ 0x0809E1E0
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -13136,7 +13136,7 @@ sub_0809E338: @ 0x0809E338
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -13145,7 +13145,7 @@ sub_0809E338: @ 0x0809E338
 _0809E37C: .4byte 0x0000027A
 _0809E380:
 	adds r0, r4, #0
-	bl sub_08078700
+	bl skill_80__5Skill
 _0809E386:
 	add sp, #0x10
 	pop {r4}
@@ -13381,7 +13381,7 @@ _0809E4DA:
 	strb r0, [r1, #2]
 	add r0, sp, #4
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -13405,7 +13405,7 @@ _0809E564:
 	strb r0, [r1, #2]
 	add r0, sp, #4
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -13450,7 +13450,7 @@ sub_0809E5B4: @ 0x0809E5B4
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -13514,7 +13514,7 @@ sub_0809E630: @ 0x0809E630
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -13572,7 +13572,7 @@ sub_0809E694: @ 0x0809E694
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -13618,7 +13618,7 @@ sub_0809E700: @ 0x0809E700
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -13682,7 +13682,7 @@ sub_0809E77C: @ 0x0809E77C
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -13741,7 +13741,7 @@ sub_0809E7E0: @ 0x0809E7E0
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -13833,7 +13833,7 @@ sub_0809E898: @ 0x0809E898
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -14665,7 +14665,7 @@ sub_0809EEAC: @ 0x0809EEAC
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -14740,7 +14740,7 @@ _0809EF60:
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -15547,7 +15547,7 @@ sub_0809F670: @ 0x0809F670
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #0
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -15722,7 +15722,7 @@ _0809F814:
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -15730,7 +15730,7 @@ _0809F814:
 	b _0809F836
 _0809F830:
 	adds r0, r4, #0
-	bl sub_08078410__5Goods
+	bl skill_1a0__5Skill
 _0809F836:
 	add sp, #0x14
 	pop {r4, r5, r6}
@@ -15869,7 +15869,7 @@ _0809F944:
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -15877,7 +15877,7 @@ _0809F944:
 	b _0809F966
 _0809F960:
 	adds r0, r4, #0
-	bl sub_08078410__5Goods
+	bl skill_1a0__5Skill
 _0809F966:
 	add sp, #0x14
 	pop {r4, r5, r6}
@@ -15935,7 +15935,7 @@ sub_0809F990: @ 0x0809F990
 	mov r0, sp
 	adds r1, r4, #0
 	movs r3, #0
-	bl __5GoodsUsUiUs
+	bl __5GoodsUsP4UnitUs
 	adds r0, r6, #0
 	mov r1, sp
 	bl skill_1d8__C5Goods
@@ -16136,7 +16136,7 @@ _0809FB5C:
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -16144,7 +16144,7 @@ _0809FB5C:
 	b _0809FB7E
 _0809FB78:
 	adds r0, r4, #0
-	bl sub_08078410__5Goods
+	bl skill_1a0__5Skill
 _0809FB7E:
 	add sp, #0x14
 	pop {r4, r5, r6}

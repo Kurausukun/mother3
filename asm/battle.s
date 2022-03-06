@@ -1117,7 +1117,7 @@ _0805E0C2:
 	strb r0, [r1, #2]
 	add r0, sp, #4
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -2106,7 +2106,7 @@ sub_0805E808: @ 0x0805E808
 	strb r4, [r1, #2]
 	adds r0, r5, #0
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	adds r0, r5, #0
 	movs r1, #2
 	bl _._3Msg
@@ -2222,7 +2222,7 @@ onBattleLost: @ 0x0805E8F0
 	strb r0, [r1, #2]
 	add r0, sp, #4
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
