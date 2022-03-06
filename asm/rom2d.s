@@ -7675,7 +7675,7 @@ _08086CC0:
 	adds r0, r7, #0
 	adds r1, r4, #0
 	adds r2, r6, #0
-	bl __7MessageP9BXTHandleUi
+	bl __13BattleMessageP9BXTHandleUi
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._9BXTHandle

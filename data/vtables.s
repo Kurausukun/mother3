@@ -2683,7 +2683,7 @@ vt_09F469A8::
 	.4byte sub_0807B4D8
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_98__4UnitUi
@@ -2710,7 +2710,7 @@ vt_09F469A8::
 	.4byte sub_0807B450
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -2719,7 +2719,7 @@ vt_09F469A8::
 	.4byte unit_e8__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_f0__4UnitUi
+	.4byte unit_f0__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_f8__4UnitUi
@@ -3188,7 +3188,7 @@ vt_09F46E98::
 	.4byte sub_0807B450
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -3197,7 +3197,7 @@ vt_09F46E98::
 	.4byte unit_e8__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_f0__4UnitUi
+	.4byte unit_f0__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_f8__4UnitUi
@@ -3642,7 +3642,7 @@ vt_09F47390::
 	.4byte sub_0807B4D8
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_98__4UnitUi
@@ -3669,7 +3669,7 @@ vt_09F47390::
 	.4byte sub_0807B450
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -3678,7 +3678,7 @@ vt_09F47390::
 	.4byte unit_e8__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_f0__4UnitUi
+	.4byte unit_f0__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_f8__4UnitUi
@@ -4123,7 +4123,7 @@ vt_09F47888::
 	.4byte sub_0807B4D8
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_98__4UnitUi
@@ -4150,7 +4150,7 @@ vt_09F47888::
 	.4byte sub_0807B450
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -4159,7 +4159,7 @@ vt_09F47888::
 	.4byte unit_e8__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_f0__4UnitUi
+	.4byte unit_f0__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_f8__4UnitUi
@@ -4604,7 +4604,7 @@ vt_09F47D80::
 	.4byte sub_0807B4D8
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_98__4UnitUi
@@ -4631,7 +4631,7 @@ vt_09F47D80::
 	.4byte sub_0807B450
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -4640,7 +4640,7 @@ vt_09F47D80::
 	.4byte unit_e8__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_f0__4UnitUi
+	.4byte unit_f0__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_f8__4UnitUi
@@ -5085,7 +5085,7 @@ vt_09F48278::
 	.4byte sub_0807B4D8
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_98__4UnitUi
@@ -5112,7 +5112,7 @@ vt_09F48278::
 	.4byte sub_0807B450
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -5121,7 +5121,7 @@ vt_09F48278::
 	.4byte unit_e8__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_f0__4UnitUi
+	.4byte unit_f0__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_f8__4UnitUi
@@ -5569,7 +5569,7 @@ vt_09F48778::
 	.4byte sub_0807B4D8
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_98__4UnitUi
@@ -5596,7 +5596,7 @@ vt_09F48778::
 	.4byte sub_0807B450
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -5605,7 +5605,7 @@ vt_09F48778::
 	.4byte unit_e8__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_f0__4UnitUi
+	.4byte unit_f0__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_f8__4UnitUi
@@ -6050,7 +6050,7 @@ vt_09F48C70::
 	.4byte sub_0807B4D8
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_98__4UnitUi
@@ -6077,7 +6077,7 @@ vt_09F48C70::
 	.4byte sub_0807B450
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -6086,7 +6086,7 @@ vt_09F48C70::
 	.4byte unit_e8__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_f0__4UnitUi
+	.4byte unit_f0__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_f8__4UnitUi
@@ -6510,22 +6510,22 @@ vt_09F49158::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809DD74
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -6603,25 +6603,25 @@ vt_09F49158::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F854
@@ -6764,19 +6764,19 @@ vt_09F493F8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809DF50
@@ -6857,25 +6857,25 @@ vt_09F493F8::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809FA6C
@@ -7021,22 +7021,22 @@ vt_09F496A0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809DF80
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -7114,25 +7114,25 @@ vt_09F496A0::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809FA6C
@@ -7278,22 +7278,22 @@ vt_09F49948::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809E060
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -7371,28 +7371,28 @@ vt_09F49948::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078410__5Goods
+	.4byte skill_1a0__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -7532,22 +7532,22 @@ vt_09F49BE8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809E338
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -7625,28 +7625,28 @@ vt_09F49BE8::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078410__5Goods
+	.4byte skill_1a0__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -7786,22 +7786,22 @@ vt_09F49E88::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -7879,25 +7879,25 @@ vt_09F49E88::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F724
@@ -8040,22 +8040,22 @@ vt_09F4A128::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809E694
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -8133,25 +8133,25 @@ vt_09F4A128::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F724
@@ -8294,22 +8294,22 @@ vt_09F4A3C8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809E7E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -8387,25 +8387,25 @@ vt_09F4A3C8::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F724
@@ -8548,22 +8548,22 @@ vt_09F4A668::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -8641,25 +8641,25 @@ vt_09F4A668::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809FA6C
@@ -8805,22 +8805,22 @@ vt_09F4A910::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -8898,25 +8898,25 @@ vt_09F4A910::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809FA6C
@@ -9062,22 +9062,22 @@ vt_09F4ABB8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -9155,25 +9155,25 @@ vt_09F4ABB8::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809FA6C
@@ -9319,22 +9319,22 @@ vt_09F4AE60::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -9412,25 +9412,25 @@ vt_09F4AE60::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809FA6C
@@ -9576,22 +9576,22 @@ vt_09F4B108::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -9669,25 +9669,25 @@ vt_09F4B108::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809FA6C
@@ -9833,22 +9833,22 @@ vt_09F4B3B0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -9926,28 +9926,28 @@ vt_09F4B3B0::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078410__5Goods
+	.4byte skill_1a0__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -10120,22 +10120,22 @@ vt_09F4B6A8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -10213,28 +10213,28 @@ vt_09F4B6A8::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078410__5Goods
+	.4byte skill_1a0__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -10483,7 +10483,7 @@ _vt.5Guest::
 	.4byte unit_70__C4UnitP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -10492,7 +10492,7 @@ _vt.5Guest::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_98__4UnitUi
@@ -10519,7 +10519,7 @@ _vt.5Guest::
 	.4byte unit_d0__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -10528,7 +10528,7 @@ _vt.5Guest::
 	.4byte unit_e8__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_f0__4UnitUi
+	.4byte unit_f0__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_f8__4UnitUi
@@ -10582,10 +10582,10 @@ _vt.5Guest::
 	.4byte unit_178__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte id__5Guest
+	.4byte id__C5Guest
 	.2byte 0
 	.2byte 0
-	.4byte name__5GuestP4Unit
+	.4byte name__C5Guest
 	.2byte 0
 	.2byte 0
 	.4byte level__C5Guest
@@ -10822,7 +10822,7 @@ vt_09F4BDC8::
 	.4byte sub_080A09DC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -10831,7 +10831,7 @@ vt_09F4BDC8::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_98__4UnitUi
@@ -10858,7 +10858,7 @@ vt_09F4BDC8::
 	.4byte unit_d0__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -10867,7 +10867,7 @@ vt_09F4BDC8::
 	.4byte unit_e8__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_f0__4UnitUi
+	.4byte unit_f0__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_f8__4UnitUi
@@ -10921,10 +10921,10 @@ vt_09F4BDC8::
 	.4byte unit_178__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte id__5Guest
+	.4byte id__C5Guest
 	.2byte 0
 	.2byte 0
-	.4byte name__5GuestP4Unit
+	.4byte name__C5Guest
 	.2byte 0
 	.2byte 0
 	.4byte level__C5Guest
@@ -11162,7 +11162,7 @@ vt_09F4C148::
 	.4byte sub_080A09DC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -11171,7 +11171,7 @@ vt_09F4C148::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_98__4UnitUi
@@ -11198,7 +11198,7 @@ vt_09F4C148::
 	.4byte unit_d0__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -11207,7 +11207,7 @@ vt_09F4C148::
 	.4byte unit_e8__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_f0__4UnitUi
+	.4byte unit_f0__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_f8__4UnitUi
@@ -11261,10 +11261,10 @@ vt_09F4C148::
 	.4byte unit_178__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte id__5Guest
+	.4byte id__C5Guest
 	.2byte 0
 	.2byte 0
-	.4byte name__5GuestP4Unit
+	.4byte name__C5Guest
 	.2byte 0
 	.2byte 0
 	.4byte level__C5Guest
@@ -11511,7 +11511,7 @@ vt_09F4C4E0::
 	.4byte sub_080A04CC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -11520,7 +11520,7 @@ vt_09F4C4E0::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_98__4UnitUi
@@ -11547,7 +11547,7 @@ vt_09F4C4E0::
 	.4byte unit_d0__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -11556,7 +11556,7 @@ vt_09F4C4E0::
 	.4byte unit_e8__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_f0__4UnitUi
+	.4byte unit_f0__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_f8__4UnitUi
@@ -11610,10 +11610,10 @@ vt_09F4C4E0::
 	.4byte unit_178__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte id__5Guest
+	.4byte id__C5Guest
 	.2byte 0
 	.2byte 0
-	.4byte name__5GuestP4Unit
+	.4byte name__C5Guest
 	.2byte 0
 	.2byte 0
 	.4byte level__C5Guest
@@ -11854,7 +11854,7 @@ vt_09F4C868::
 	.4byte sub_080A0758
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -11863,7 +11863,7 @@ vt_09F4C868::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_98__4UnitUi
@@ -11890,7 +11890,7 @@ vt_09F4C868::
 	.4byte unit_d0__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -11899,7 +11899,7 @@ vt_09F4C868::
 	.4byte unit_e8__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_f0__4UnitUi
+	.4byte unit_f0__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_f8__4UnitUi
@@ -11953,10 +11953,10 @@ vt_09F4C868::
 	.4byte unit_178__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte id__5Guest
+	.4byte id__C5Guest
 	.2byte 0
 	.2byte 0
-	.4byte name__5GuestP4Unit
+	.4byte name__C5Guest
 	.2byte 0
 	.2byte 0
 	.4byte level__C5Guest
@@ -12200,7 +12200,7 @@ vt_09F4CBF8::
 	.4byte sub_080A09DC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -12209,7 +12209,7 @@ vt_09F4CBF8::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_98__4UnitUi
@@ -12236,7 +12236,7 @@ vt_09F4CBF8::
 	.4byte unit_d0__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -12245,7 +12245,7 @@ vt_09F4CBF8::
 	.4byte unit_e8__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_f0__4UnitUi
+	.4byte unit_f0__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_f8__4UnitUi
@@ -12299,10 +12299,10 @@ vt_09F4CBF8::
 	.4byte unit_178__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte id__5Guest
+	.4byte id__C5Guest
 	.2byte 0
 	.2byte 0
-	.4byte name__5GuestP4Unit
+	.4byte name__C5Guest
 	.2byte 0
 	.2byte 0
 	.4byte level__C5Guest
@@ -12540,7 +12540,7 @@ vt_09F4CF78::
 	.4byte sub_080A09DC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -12549,7 +12549,7 @@ vt_09F4CF78::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_98__4UnitUi
@@ -12576,7 +12576,7 @@ vt_09F4CF78::
 	.4byte unit_d0__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -12585,7 +12585,7 @@ vt_09F4CF78::
 	.4byte unit_e8__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_f0__4UnitUi
+	.4byte unit_f0__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_f8__4UnitUi
@@ -12639,10 +12639,10 @@ vt_09F4CF78::
 	.4byte unit_178__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte id__5Guest
+	.4byte id__C5Guest
 	.2byte 0
 	.2byte 0
-	.4byte name__5GuestP4Unit
+	.4byte name__C5Guest
 	.2byte 0
 	.2byte 0
 	.4byte level__C5Guest
@@ -12880,7 +12880,7 @@ vt_09F4D2F8::
 	.4byte sub_080A09DC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -12889,7 +12889,7 @@ vt_09F4D2F8::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_98__4UnitUi
@@ -12916,7 +12916,7 @@ vt_09F4D2F8::
 	.4byte unit_d0__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -12925,7 +12925,7 @@ vt_09F4D2F8::
 	.4byte unit_e8__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_f0__4UnitUi
+	.4byte unit_f0__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_f8__4UnitUi
@@ -12979,10 +12979,10 @@ vt_09F4D2F8::
 	.4byte unit_178__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte id__5Guest
+	.4byte id__C5Guest
 	.2byte 0
 	.2byte 0
-	.4byte name__5GuestP4Unit
+	.4byte name__C5Guest
 	.2byte 0
 	.2byte 0
 	.4byte level__C5Guest
@@ -13167,22 +13167,22 @@ vt_09F4D600::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -13260,28 +13260,28 @@ vt_09F4D600::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078410__5Goods
+	.4byte skill_1a0__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -13421,22 +13421,22 @@ vt_09F4D8A0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -13514,28 +13514,28 @@ vt_09F4D8A0::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078410__5Goods
+	.4byte skill_1a0__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -13675,22 +13675,22 @@ vt_09F4DB40::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -13768,28 +13768,28 @@ vt_09F4DB40::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078410__5Goods
+	.4byte skill_1a0__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -13929,22 +13929,22 @@ vt_09F4DDE0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -14022,28 +14022,28 @@ vt_09F4DDE0::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078410__5Goods
+	.4byte skill_1a0__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -14183,22 +14183,22 @@ vt_09F4E080::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -14276,28 +14276,28 @@ vt_09F4E080::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078410__5Goods
+	.4byte skill_1a0__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -14632,7 +14632,7 @@ vt_09F4E508::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -14641,7 +14641,7 @@ vt_09F4E508::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -14668,7 +14668,7 @@ vt_09F4E508::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -15086,7 +15086,7 @@ vt_09F4E9B8::
 	.4byte sub_080A5DD4
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -15095,7 +15095,7 @@ vt_09F4E9B8::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -15122,7 +15122,7 @@ vt_09F4E9B8::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -15566,7 +15566,7 @@ vt_09F4EEA8::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -15575,7 +15575,7 @@ vt_09F4EEA8::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -15602,7 +15602,7 @@ vt_09F4EEA8::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -16020,7 +16020,7 @@ vt_09F4F358::
 	.4byte sub_080A647C
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -16029,7 +16029,7 @@ vt_09F4F358::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -16056,7 +16056,7 @@ vt_09F4F358::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -16522,7 +16522,7 @@ vt_09F4F888::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -16531,7 +16531,7 @@ vt_09F4F888::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -16558,7 +16558,7 @@ vt_09F4F888::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -16985,7 +16985,7 @@ vt_09F4FD50::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -16994,7 +16994,7 @@ vt_09F4FD50::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -17021,7 +17021,7 @@ vt_09F4FD50::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -17448,7 +17448,7 @@ vt_09F50218::
 	.4byte sub_080A6F4C
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -17457,7 +17457,7 @@ vt_09F50218::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A6D04
@@ -17484,7 +17484,7 @@ vt_09F50218::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -17926,7 +17926,7 @@ vt_09F50708::
 	.4byte sub_080A76B8
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -17935,7 +17935,7 @@ vt_09F50708::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -17962,7 +17962,7 @@ vt_09F50708::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -18380,7 +18380,7 @@ vt_09F50BB8::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -18389,7 +18389,7 @@ vt_09F50BB8::
 	.4byte sub_080A78A4
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -18416,7 +18416,7 @@ vt_09F50BB8::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -18837,7 +18837,7 @@ vt_09F51070::
 	.4byte sub_080A79FC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -18846,7 +18846,7 @@ vt_09F51070::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -18873,7 +18873,7 @@ vt_09F51070::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -19291,7 +19291,7 @@ vt_09F51520::
 	.4byte sub_080A7B30
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -19300,7 +19300,7 @@ vt_09F51520::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -19327,7 +19327,7 @@ vt_09F51520::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -19745,7 +19745,7 @@ vt_09F519D0::
 	.4byte sub_080A7EFC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -19754,7 +19754,7 @@ vt_09F519D0::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -19781,7 +19781,7 @@ vt_09F519D0::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -20211,7 +20211,7 @@ vt_09F51EA0::
 	.4byte sub_080A84C8
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -20220,7 +20220,7 @@ vt_09F51EA0::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -20247,7 +20247,7 @@ vt_09F51EA0::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -20668,7 +20668,7 @@ vt_09F52358::
 	.4byte sub_080A8854
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -20677,7 +20677,7 @@ vt_09F52358::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -20704,7 +20704,7 @@ vt_09F52358::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -21140,7 +21140,7 @@ vt_09F52838::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -21149,7 +21149,7 @@ vt_09F52838::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -21176,7 +21176,7 @@ vt_09F52838::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -21594,7 +21594,7 @@ vt_09F52CE8::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -21603,7 +21603,7 @@ vt_09F52CE8::
 	.4byte sub_080A9234
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A900C
@@ -21630,7 +21630,7 @@ vt_09F52CE8::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -22069,7 +22069,7 @@ vt_09F531D0::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -22078,7 +22078,7 @@ vt_09F531D0::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -22105,7 +22105,7 @@ vt_09F531D0::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -22523,7 +22523,7 @@ vt_09F53680::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -22532,7 +22532,7 @@ vt_09F53680::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -22559,7 +22559,7 @@ vt_09F53680::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -22977,7 +22977,7 @@ vt_09F53B30::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -22986,7 +22986,7 @@ vt_09F53B30::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -23013,7 +23013,7 @@ vt_09F53B30::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -23431,7 +23431,7 @@ vt_09F53FE0::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -23440,7 +23440,7 @@ vt_09F53FE0::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -23467,7 +23467,7 @@ vt_09F53FE0::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -23885,7 +23885,7 @@ vt_09F54490::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -23894,7 +23894,7 @@ vt_09F54490::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -23921,7 +23921,7 @@ vt_09F54490::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -24339,7 +24339,7 @@ vt_09F54940::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -24348,7 +24348,7 @@ vt_09F54940::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -24375,7 +24375,7 @@ vt_09F54940::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -24793,7 +24793,7 @@ vt_09F54DF0::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -24802,7 +24802,7 @@ vt_09F54DF0::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -24829,7 +24829,7 @@ vt_09F54DF0::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -25247,7 +25247,7 @@ vt_09F552A0::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -25256,7 +25256,7 @@ vt_09F552A0::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -25283,7 +25283,7 @@ vt_09F552A0::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -25701,7 +25701,7 @@ vt_09F55750::
 	.4byte sub_080A9C50
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -25710,7 +25710,7 @@ vt_09F55750::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -25737,7 +25737,7 @@ vt_09F55750::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -26155,7 +26155,7 @@ vt_09F55C00::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -26164,7 +26164,7 @@ vt_09F55C00::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -26191,7 +26191,7 @@ vt_09F55C00::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -26609,7 +26609,7 @@ vt_09F560B0::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -26618,7 +26618,7 @@ vt_09F560B0::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -26645,7 +26645,7 @@ vt_09F560B0::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -27063,7 +27063,7 @@ vt_09F56560::
 	.4byte sub_080A9F3C
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -27072,7 +27072,7 @@ vt_09F56560::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -27099,7 +27099,7 @@ vt_09F56560::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -27532,7 +27532,7 @@ vt_09F56A38::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -27541,7 +27541,7 @@ vt_09F56A38::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -27568,7 +27568,7 @@ vt_09F56A38::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -27986,7 +27986,7 @@ vt_09F56EE8::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -27995,7 +27995,7 @@ vt_09F56EE8::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -28022,7 +28022,7 @@ vt_09F56EE8::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -28440,7 +28440,7 @@ vt_09F57398::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -28449,7 +28449,7 @@ vt_09F57398::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -28476,7 +28476,7 @@ vt_09F57398::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -28894,7 +28894,7 @@ vt_09F57848::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -28903,7 +28903,7 @@ vt_09F57848::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AA618
@@ -28930,7 +28930,7 @@ vt_09F57848::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -29357,7 +29357,7 @@ vt_09F57D10::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -29366,7 +29366,7 @@ vt_09F57D10::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -29393,7 +29393,7 @@ vt_09F57D10::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -29811,7 +29811,7 @@ vt_09F581C0::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -29820,7 +29820,7 @@ vt_09F581C0::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -29847,7 +29847,7 @@ vt_09F581C0::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -30265,7 +30265,7 @@ vt_09F58670::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -30274,7 +30274,7 @@ vt_09F58670::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -30301,7 +30301,7 @@ vt_09F58670::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -30719,7 +30719,7 @@ vt_09F58B20::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -30728,7 +30728,7 @@ vt_09F58B20::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -30755,7 +30755,7 @@ vt_09F58B20::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -31176,7 +31176,7 @@ vt_09F58FD8::
 	.4byte sub_080AAC9C
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -31185,7 +31185,7 @@ vt_09F58FD8::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -31212,7 +31212,7 @@ vt_09F58FD8::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -31630,7 +31630,7 @@ vt_09F59488::
 	.4byte sub_080AAE94
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -31639,7 +31639,7 @@ vt_09F59488::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -31666,7 +31666,7 @@ vt_09F59488::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -32096,7 +32096,7 @@ vt_09F59958::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -32105,7 +32105,7 @@ vt_09F59958::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -32132,7 +32132,7 @@ vt_09F59958::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -32559,7 +32559,7 @@ vt_09F59E20::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -32568,7 +32568,7 @@ vt_09F59E20::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -32595,7 +32595,7 @@ vt_09F59E20::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -33013,7 +33013,7 @@ vt_09F5A2D0::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -33022,7 +33022,7 @@ vt_09F5A2D0::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -33049,7 +33049,7 @@ vt_09F5A2D0::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -33467,7 +33467,7 @@ vt_09F5A780::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -33476,7 +33476,7 @@ vt_09F5A780::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AB478
@@ -33503,7 +33503,7 @@ vt_09F5A780::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -33930,7 +33930,7 @@ vt_09F5AC48::
 	.4byte sub_080AB824
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -33939,7 +33939,7 @@ vt_09F5AC48::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -33966,7 +33966,7 @@ vt_09F5AC48::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -34387,7 +34387,7 @@ vt_09F5B100::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -34396,7 +34396,7 @@ vt_09F5B100::
 	.4byte sub_080ABAAC
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -34423,7 +34423,7 @@ vt_09F5B100::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -34841,7 +34841,7 @@ vt_09F5B5B0::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -34850,7 +34850,7 @@ vt_09F5B5B0::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -34877,7 +34877,7 @@ vt_09F5B5B0::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -35295,7 +35295,7 @@ vt_09F5BA60::
 	.4byte sub_080ABC00
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -35304,7 +35304,7 @@ vt_09F5BA60::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -35331,7 +35331,7 @@ vt_09F5BA60::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -35761,7 +35761,7 @@ vt_09F5BF30::
 	.4byte sub_080ABF7C
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -35770,7 +35770,7 @@ vt_09F5BF30::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -35797,7 +35797,7 @@ vt_09F5BF30::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -36215,7 +36215,7 @@ vt_09F5C3E0::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -36224,7 +36224,7 @@ vt_09F5C3E0::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -36251,7 +36251,7 @@ vt_09F5C3E0::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -36669,7 +36669,7 @@ vt_09F5C890::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -36678,7 +36678,7 @@ vt_09F5C890::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -36705,7 +36705,7 @@ vt_09F5C890::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -37123,7 +37123,7 @@ vt_09F5CD40::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -37132,7 +37132,7 @@ vt_09F5CD40::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -37159,7 +37159,7 @@ vt_09F5CD40::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -37586,7 +37586,7 @@ vt_09F5D208::
 	.4byte sub_080AC590
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -37595,7 +37595,7 @@ vt_09F5D208::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -37622,7 +37622,7 @@ vt_09F5D208::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -38040,7 +38040,7 @@ vt_09F5D6B8::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -38049,7 +38049,7 @@ vt_09F5D6B8::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -38076,7 +38076,7 @@ vt_09F5D6B8::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -38494,7 +38494,7 @@ vt_09F5DB68::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -38503,7 +38503,7 @@ vt_09F5DB68::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -38530,7 +38530,7 @@ vt_09F5DB68::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -38948,7 +38948,7 @@ vt_09F5E018::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -38957,7 +38957,7 @@ vt_09F5E018::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -38984,7 +38984,7 @@ vt_09F5E018::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -39402,7 +39402,7 @@ vt_09F5E4C8::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -39411,7 +39411,7 @@ vt_09F5E4C8::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -39438,7 +39438,7 @@ vt_09F5E4C8::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -39856,7 +39856,7 @@ vt_09F5E978::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -39865,7 +39865,7 @@ vt_09F5E978::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -39892,7 +39892,7 @@ vt_09F5E978::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -40319,7 +40319,7 @@ vt_09F5EE40::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -40328,7 +40328,7 @@ vt_09F5EE40::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -40355,7 +40355,7 @@ vt_09F5EE40::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -40773,7 +40773,7 @@ vt_09F5F2F0::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -40782,7 +40782,7 @@ vt_09F5F2F0::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -40809,7 +40809,7 @@ vt_09F5F2F0::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -41236,7 +41236,7 @@ vt_09F5F7B8::
 	.4byte sub_080ACD84
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -41245,7 +41245,7 @@ vt_09F5F7B8::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -41272,7 +41272,7 @@ vt_09F5F7B8::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -41690,7 +41690,7 @@ vt_09F5FC68::
 	.4byte sub_080ACF3C
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -41699,7 +41699,7 @@ vt_09F5FC68::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -41726,7 +41726,7 @@ vt_09F5FC68::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -42144,7 +42144,7 @@ vt_09F60118::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -42153,7 +42153,7 @@ vt_09F60118::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -42180,7 +42180,7 @@ vt_09F60118::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -42598,7 +42598,7 @@ vt_09F605C8::
 	.4byte sub_080AD204
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -42607,7 +42607,7 @@ vt_09F605C8::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -42634,7 +42634,7 @@ vt_09F605C8::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -43052,7 +43052,7 @@ vt_09F60A78::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -43061,7 +43061,7 @@ vt_09F60A78::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -43088,7 +43088,7 @@ vt_09F60A78::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -43506,7 +43506,7 @@ vt_09F60F28::
 	.4byte sub_080AD3E4
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -43515,7 +43515,7 @@ vt_09F60F28::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -43542,7 +43542,7 @@ vt_09F60F28::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -43972,7 +43972,7 @@ vt_09F613F8::
 	.4byte sub_080AD6F0
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -43981,7 +43981,7 @@ vt_09F613F8::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -44008,7 +44008,7 @@ vt_09F613F8::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -44438,7 +44438,7 @@ vt_09F618C8::
 	.4byte sub_080AD9B4
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -44447,7 +44447,7 @@ vt_09F618C8::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -44474,7 +44474,7 @@ vt_09F618C8::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -44901,7 +44901,7 @@ vt_09F61D90::
 	.4byte sub_080ADD38
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -44910,7 +44910,7 @@ vt_09F61D90::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -44937,7 +44937,7 @@ vt_09F61D90::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -45355,7 +45355,7 @@ vt_09F62240::
 	.4byte sub_080AE054
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -45364,7 +45364,7 @@ vt_09F62240::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -45391,7 +45391,7 @@ vt_09F62240::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -45809,7 +45809,7 @@ vt_09F626F0::
 	.4byte sub_080AE1F0
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -45818,7 +45818,7 @@ vt_09F626F0::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -45845,7 +45845,7 @@ vt_09F626F0::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -46263,7 +46263,7 @@ vt_09F62BA0::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -46272,7 +46272,7 @@ vt_09F62BA0::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -46299,7 +46299,7 @@ vt_09F62BA0::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -46717,7 +46717,7 @@ vt_09F63050::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -46726,7 +46726,7 @@ vt_09F63050::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -46753,7 +46753,7 @@ vt_09F63050::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -47171,7 +47171,7 @@ vt_09F63500::
 	.4byte sub_080AE754
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -47180,7 +47180,7 @@ vt_09F63500::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -47207,7 +47207,7 @@ vt_09F63500::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -47625,7 +47625,7 @@ vt_09F639B0::
 	.4byte sub_080AEAD0
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -47634,7 +47634,7 @@ vt_09F639B0::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AE8FC
@@ -47661,7 +47661,7 @@ vt_09F639B0::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -48082,7 +48082,7 @@ vt_09F63E68::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -48091,7 +48091,7 @@ vt_09F63E68::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -48118,7 +48118,7 @@ vt_09F63E68::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -48536,7 +48536,7 @@ vt_09F64318::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -48545,7 +48545,7 @@ vt_09F64318::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -48572,7 +48572,7 @@ vt_09F64318::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -48937,10 +48937,10 @@ vt_09F64750::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
@@ -48949,10 +48949,10 @@ vt_09F64750::
 	.4byte sub_080B0758
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -49030,25 +49030,25 @@ vt_09F64750::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -49197,10 +49197,10 @@ vt_09F64A00::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
@@ -49209,10 +49209,10 @@ vt_09F64A00::
 	.4byte sub_080B0820
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -49290,25 +49290,25 @@ vt_09F64A00::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -49457,10 +49457,10 @@ vt_09F64CB0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
@@ -49469,10 +49469,10 @@ vt_09F64CB0::
 	.4byte sub_080B097C
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -49550,25 +49550,25 @@ vt_09F64CB0::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -49717,22 +49717,22 @@ vt_09F64F60::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -49810,25 +49810,25 @@ vt_09F64F60::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -49977,22 +49977,22 @@ vt_09F65210::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -50070,25 +50070,25 @@ vt_09F65210::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -50237,22 +50237,22 @@ vt_09F654C0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -50330,25 +50330,25 @@ vt_09F654C0::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -50497,10 +50497,10 @@ vt_09F65770::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
@@ -50509,10 +50509,10 @@ vt_09F65770::
 	.4byte sub_080B0DCC
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -50590,25 +50590,25 @@ vt_09F65770::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -50757,22 +50757,22 @@ vt_09F65A20::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -50850,25 +50850,25 @@ vt_09F65A20::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -51017,10 +51017,10 @@ vt_09F65CD0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
@@ -51029,10 +51029,10 @@ vt_09F65CD0::
 	.4byte sub_080B0E64
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -51110,25 +51110,25 @@ vt_09F65CD0::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -51277,10 +51277,10 @@ vt_09F65F80::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
@@ -51289,10 +51289,10 @@ vt_09F65F80::
 	.4byte sub_080B0EBC
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -51370,25 +51370,25 @@ vt_09F65F80::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -51537,22 +51537,22 @@ vt_09F66230::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -51630,25 +51630,25 @@ vt_09F66230::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -51797,22 +51797,22 @@ vt_09F664E0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -51890,25 +51890,25 @@ vt_09F664E0::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -52057,19 +52057,19 @@ vt_09F66790::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B1238
@@ -52150,25 +52150,25 @@ vt_09F66790::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -52317,10 +52317,10 @@ vt_09F66A40::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
@@ -52329,10 +52329,10 @@ vt_09F66A40::
 	.4byte sub_080B13F8
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -52410,25 +52410,25 @@ vt_09F66A40::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -52577,19 +52577,19 @@ vt_09F66CF0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B1428
@@ -52670,25 +52670,25 @@ vt_09F66CF0::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -52837,22 +52837,22 @@ vt_09F66FA0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -52930,25 +52930,25 @@ vt_09F66FA0::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -53097,22 +53097,22 @@ vt_09F67250::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -53190,25 +53190,25 @@ vt_09F67250::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -53357,10 +53357,10 @@ vt_09F67500::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
@@ -53369,10 +53369,10 @@ vt_09F67500::
 	.4byte sub_080B1744
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -53450,25 +53450,25 @@ vt_09F67500::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -53617,10 +53617,10 @@ vt_09F677B0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
@@ -53629,10 +53629,10 @@ vt_09F677B0::
 	.4byte sub_080B1868
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -53710,25 +53710,25 @@ vt_09F677B0::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -53877,22 +53877,22 @@ vt_09F67A60::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -53970,25 +53970,25 @@ vt_09F67A60::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -54137,22 +54137,22 @@ vt_09F67D10::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -54230,25 +54230,25 @@ vt_09F67D10::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -54397,22 +54397,22 @@ vt_09F67FC0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -54490,25 +54490,25 @@ vt_09F67FC0::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -54657,22 +54657,22 @@ vt_09F68270::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -54750,25 +54750,25 @@ vt_09F68270::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -54917,22 +54917,22 @@ vt_09F68520::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -55010,25 +55010,25 @@ vt_09F68520::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -55177,10 +55177,10 @@ vt_09F687D0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
@@ -55189,10 +55189,10 @@ vt_09F687D0::
 	.4byte sub_080B1F34
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -55270,25 +55270,25 @@ vt_09F687D0::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -55437,10 +55437,10 @@ vt_09F68A80::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
@@ -55449,10 +55449,10 @@ vt_09F68A80::
 	.4byte sub_080B2080
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -55530,25 +55530,25 @@ vt_09F68A80::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -55697,10 +55697,10 @@ vt_09F68D30::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
@@ -55709,10 +55709,10 @@ vt_09F68D30::
 	.4byte sub_080B21D0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -55790,25 +55790,25 @@ vt_09F68D30::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -55957,22 +55957,22 @@ vt_09F68FE0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -56050,25 +56050,25 @@ vt_09F68FE0::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -56217,22 +56217,22 @@ vt_09F69290::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -56310,25 +56310,25 @@ vt_09F69290::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -56480,22 +56480,22 @@ vt_09F69548::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -56573,25 +56573,25 @@ vt_09F69548::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -56740,10 +56740,10 @@ vt_09F697F8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
@@ -56752,10 +56752,10 @@ vt_09F697F8::
 	.4byte sub_080B25D8
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -56833,25 +56833,25 @@ vt_09F697F8::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -57000,10 +57000,10 @@ vt_09F69AA8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
@@ -57012,10 +57012,10 @@ vt_09F69AA8::
 	.4byte sub_080B2764
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -57093,25 +57093,25 @@ vt_09F69AA8::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -57260,22 +57260,22 @@ vt_09F69D58::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -57353,25 +57353,25 @@ vt_09F69D58::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -57520,22 +57520,22 @@ vt_09F6A008::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -57613,25 +57613,25 @@ vt_09F6A008::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -57780,10 +57780,10 @@ vt_09F6A2B8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
@@ -57792,10 +57792,10 @@ vt_09F6A2B8::
 	.4byte sub_080B2958
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -57873,25 +57873,25 @@ vt_09F6A2B8::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -58040,10 +58040,10 @@ vt_09F6A568::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
@@ -58052,10 +58052,10 @@ vt_09F6A568::
 	.4byte sub_080B2A80
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -58133,25 +58133,25 @@ vt_09F6A568::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -58300,22 +58300,22 @@ vt_09F6A818::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -58393,25 +58393,25 @@ vt_09F6A818::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -58560,10 +58560,10 @@ vt_09F6AAC8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
@@ -58572,10 +58572,10 @@ vt_09F6AAC8::
 	.4byte sub_080B2CBC
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -58653,25 +58653,25 @@ vt_09F6AAC8::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -58820,22 +58820,22 @@ vt_09F6AD78::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -58913,25 +58913,25 @@ vt_09F6AD78::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -59080,22 +59080,22 @@ vt_09F6B028::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -59173,25 +59173,25 @@ vt_09F6B028::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -59340,22 +59340,22 @@ vt_09F6B2D8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -59433,25 +59433,25 @@ vt_09F6B2D8::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -59600,22 +59600,22 @@ vt_09F6B588::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -59693,25 +59693,25 @@ vt_09F6B588::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -59866,22 +59866,22 @@ vt_09F6B848::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -59959,25 +59959,25 @@ vt_09F6B848::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -60126,22 +60126,22 @@ vt_09F6BAF8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -60219,25 +60219,25 @@ vt_09F6BAF8::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -60386,22 +60386,22 @@ vt_09F6BDA8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -60479,25 +60479,25 @@ vt_09F6BDA8::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -60646,22 +60646,22 @@ vt_09F6C058::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -60739,25 +60739,25 @@ vt_09F6C058::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -60906,22 +60906,22 @@ vt_09F6C308::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -60999,25 +60999,25 @@ vt_09F6C308::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -61166,22 +61166,22 @@ vt_09F6C5B8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -61259,25 +61259,25 @@ vt_09F6C5B8::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -61426,22 +61426,22 @@ vt_09F6C868::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -61519,25 +61519,25 @@ vt_09F6C868::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -61686,22 +61686,22 @@ vt_09F6CB18::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -61779,25 +61779,25 @@ vt_09F6CB18::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -61946,22 +61946,22 @@ vt_09F6CDC8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -62039,25 +62039,25 @@ vt_09F6CDC8::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -62206,22 +62206,22 @@ vt_09F6D078::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -62299,25 +62299,25 @@ vt_09F6D078::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -62466,22 +62466,22 @@ vt_09F6D328::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -62559,25 +62559,25 @@ vt_09F6D328::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -62726,7 +62726,7 @@ vt_09F6D5D8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B3A2C
@@ -62738,10 +62738,10 @@ vt_09F6D5D8::
 	.4byte sub_080B39F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -62819,25 +62819,25 @@ vt_09F6D5D8::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -62986,19 +62986,19 @@ vt_09F6D888::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B3A84
@@ -63079,25 +63079,25 @@ vt_09F6D888::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -63246,22 +63246,22 @@ vt_09F6DB38::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -63339,25 +63339,25 @@ vt_09F6DB38::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -63506,19 +63506,19 @@ vt_09F6DDE8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_142
@@ -63599,25 +63599,25 @@ vt_09F6DDE8::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -63766,22 +63766,22 @@ vt_09F6E098::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -63859,25 +63859,25 @@ vt_09F6E098::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -64026,22 +64026,22 @@ vt_09F6E348::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -64119,25 +64119,25 @@ vt_09F6E348::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -64286,19 +64286,19 @@ vt_09F6E5F8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B3DAC
@@ -64379,25 +64379,25 @@ vt_09F6E5F8::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -64546,22 +64546,22 @@ vt_09F6E8A8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -64639,25 +64639,25 @@ vt_09F6E8A8::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -64806,10 +64806,10 @@ vt_09F6EB58::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4110
@@ -64818,10 +64818,10 @@ vt_09F6EB58::
 	.4byte sub_080B4094
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -64899,25 +64899,25 @@ vt_09F6EB58::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4124
@@ -65066,22 +65066,22 @@ vt_09F6EE08::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -65159,25 +65159,25 @@ vt_09F6EE08::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -65326,22 +65326,22 @@ vt_09F6F0B8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -65419,25 +65419,25 @@ vt_09F6F0B8::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -65586,22 +65586,22 @@ vt_09F6F368::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -65679,25 +65679,25 @@ vt_09F6F368::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -65846,22 +65846,22 @@ vt_09F6F618::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -65939,25 +65939,25 @@ vt_09F6F618::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -66106,22 +66106,22 @@ vt_09F6F8C8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4598
@@ -66199,25 +66199,25 @@ vt_09F6F8C8::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -66366,22 +66366,22 @@ vt_09F6FB78::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B45C8
@@ -66459,25 +66459,25 @@ vt_09F6FB78::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -66626,19 +66626,19 @@ vt_09F6FE28::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4638
@@ -66719,25 +66719,25 @@ vt_09F6FE28::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -66886,22 +66886,22 @@ vt_09F700D8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -66979,25 +66979,25 @@ vt_09F700D8::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -67146,22 +67146,22 @@ vt_09F70388::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -67239,25 +67239,25 @@ vt_09F70388::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -67406,22 +67406,22 @@ vt_09F70638::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -67499,25 +67499,25 @@ vt_09F70638::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -67666,19 +67666,19 @@ vt_09F708E8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B48F0
@@ -67759,25 +67759,25 @@ vt_09F708E8::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -67926,22 +67926,22 @@ vt_09F70B98::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -68019,25 +68019,25 @@ vt_09F70B98::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -68186,22 +68186,22 @@ vt_09F70E48::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -68279,25 +68279,25 @@ vt_09F70E48::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -68446,22 +68446,22 @@ vt_09F710F8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4B14
@@ -68539,25 +68539,25 @@ vt_09F710F8::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -68706,19 +68706,19 @@ vt_09F713A8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4B90
@@ -68799,25 +68799,25 @@ vt_09F713A8::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -68969,19 +68969,19 @@ vt_09F71660::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4C44
@@ -69062,25 +69062,25 @@ vt_09F71660::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -69229,22 +69229,22 @@ vt_09F71910::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -69322,25 +69322,25 @@ vt_09F71910::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -69489,22 +69489,22 @@ vt_09F71BC0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -69582,25 +69582,25 @@ vt_09F71BC0::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -69749,19 +69749,19 @@ vt_09F71E70::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4F68
@@ -69842,25 +69842,25 @@ vt_09F71E70::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -70009,22 +70009,22 @@ vt_09F72120::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -70102,25 +70102,25 @@ vt_09F72120::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -78095,22 +78095,22 @@ vt_09F77440::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -78188,25 +78188,25 @@ vt_09F77440::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
@@ -78358,22 +78358,22 @@ vt_09F776F8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -78451,25 +78451,25 @@ vt_09F776F8::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
@@ -78621,22 +78621,22 @@ vt_09F779B0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -78714,25 +78714,25 @@ vt_09F779B0::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
@@ -78884,22 +78884,22 @@ vt_09F77C68::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -78977,25 +78977,25 @@ vt_09F77C68::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
@@ -79147,22 +79147,22 @@ vt_09F77F20::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -79240,25 +79240,25 @@ vt_09F77F20::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
@@ -79410,22 +79410,22 @@ vt_09F781D8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -79503,25 +79503,25 @@ vt_09F781D8::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
@@ -79673,22 +79673,22 @@ vt_09F78490::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -79766,25 +79766,25 @@ vt_09F78490::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
@@ -79936,22 +79936,22 @@ vt_09F78748::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -80029,25 +80029,25 @@ vt_09F78748::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
@@ -80202,22 +80202,22 @@ vt_09F78A08::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -80295,25 +80295,25 @@ vt_09F78A08::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
@@ -80465,22 +80465,22 @@ vt_09F78CC0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -80558,25 +80558,25 @@ vt_09F78CC0::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
@@ -80728,19 +80728,19 @@ vt_09F78F78::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BD5B4
@@ -80821,25 +80821,25 @@ vt_09F78F78::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
@@ -80991,19 +80991,19 @@ vt_09F79230::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_144
@@ -81084,25 +81084,25 @@ vt_09F79230::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
@@ -81254,19 +81254,19 @@ vt_09F794E8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_145
@@ -81347,25 +81347,25 @@ vt_09F794E8::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
@@ -81517,22 +81517,22 @@ __vt_5Goods::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -81610,25 +81610,25 @@ __vt_5Goods::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
@@ -81780,22 +81780,22 @@ _vt.5Goods::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -81873,25 +81873,25 @@ _vt.5Goods::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte skill_1a0__5Goods
@@ -82060,22 +82060,22 @@ _vt.11TriviaCard4::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0864
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06AC
@@ -82153,25 +82153,25 @@ _vt.11TriviaCard4::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte skill_1a0__5Goods
@@ -82338,22 +82338,22 @@ _vt.11TriviaCard3::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0864
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06AC
@@ -82431,25 +82431,25 @@ _vt.11TriviaCard3::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte skill_1a0__5Goods
@@ -82616,22 +82616,22 @@ _vt.11TriviaCard2::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0864
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06AC
@@ -82709,25 +82709,25 @@ _vt.11TriviaCard2::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte skill_1a0__5Goods
@@ -82894,22 +82894,22 @@ _vt.11TriviaCard1::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0864
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06AC
@@ -82987,25 +82987,25 @@ _vt.11TriviaCard1::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte skill_1a0__5Goods
@@ -83172,22 +83172,22 @@ _vt.9DragoFang::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0864
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06AC
@@ -83265,25 +83265,25 @@ _vt.9DragoFang::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte skill_1a0__5Goods
@@ -83450,22 +83450,22 @@ _vt.14ShieldSnatcher::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0864
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06AC
@@ -83543,25 +83543,25 @@ _vt.14ShieldSnatcher::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte skill_1a0__5Goods
@@ -83728,22 +83728,22 @@ _vt.16CupOfLifenoodles::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0864
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06AC
@@ -83821,25 +83821,25 @@ _vt.16CupOfLifenoodles::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte skill_1a0__5Goods
@@ -84006,22 +84006,22 @@ _vt.10SecretHerb::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0864
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06AC
@@ -84099,25 +84099,25 @@ _vt.10SecretHerb::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte skill_1a0__5Goods
@@ -84284,22 +84284,22 @@ _vt.8PaperFan::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0864
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06AC
@@ -84377,25 +84377,25 @@ _vt.8PaperFan::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte skill_1a0__5Goods
@@ -84562,22 +84562,22 @@ _vt.11MadeYouLook::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0864
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06AC
@@ -84655,25 +84655,25 @@ _vt.11MadeYouLook::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte skill_1a0__5Goods
@@ -84840,22 +84840,22 @@ _vt.15AttackAttractor::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0864
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06AC
@@ -84933,25 +84933,25 @@ _vt.15AttackAttractor::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte skill_1a0__5Goods
@@ -85118,22 +85118,22 @@ _vt.15EnemyWimperizer::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0864
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06AC
@@ -85211,25 +85211,25 @@ _vt.15EnemyWimperizer::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte skill_1a0__5Goods
@@ -85396,22 +85396,22 @@ _vt.15EnemyBufferizer::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0864
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06AC
@@ -85489,25 +85489,25 @@ _vt.15EnemyBufferizer::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte skill_1a0__5Goods
@@ -85674,22 +85674,22 @@ _vt.9LottoMeal::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0864
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06AC
@@ -85767,25 +85767,25 @@ _vt.9LottoMeal::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte skill_1a0__5Goods
@@ -85952,22 +85952,22 @@ _vt.9DoggyFood::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0864
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06AC
@@ -86045,25 +86045,25 @@ _vt.9DoggyFood::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte skill_1a0__5Goods
@@ -86230,22 +86230,22 @@ _vt.14PeculiarCheese::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0864
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06AC
@@ -86323,25 +86323,25 @@ _vt.14PeculiarCheese::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte skill_1a0__5Goods
@@ -86508,22 +86508,22 @@ _vt.8BugSpray::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0864
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06AC
@@ -86601,25 +86601,25 @@ _vt.8BugSpray::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte skill_1a0__5Goods
@@ -86786,19 +86786,19 @@ _vt.13AncientBanana::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0864
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BFCAC
@@ -86879,25 +86879,25 @@ _vt.13AncientBanana::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte skill_1a0__5Goods
@@ -87064,22 +87064,22 @@ _vt.11HoneyShower::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0864
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06AC
@@ -87157,25 +87157,25 @@ _vt.11HoneyShower::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte skill_1a0__5Goods
@@ -87342,22 +87342,22 @@ _vt.12SaltwaterGun::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0864
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06AC
@@ -87435,25 +87435,25 @@ _vt.12SaltwaterGun::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte skill_1a0__5Goods
@@ -87620,22 +87620,22 @@ _vt.15NewYearsEveBomb::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C04C8
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C00E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06AC
@@ -87713,25 +87713,25 @@ _vt.15NewYearsEveBomb::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte skill_1a0__5Goods
@@ -87901,22 +87901,22 @@ _vt.12DefaultGoods::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0864
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06AC
@@ -87994,25 +87994,25 @@ _vt.12DefaultGoods::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte skill_1a0__5Goods
@@ -93827,7 +93827,7 @@ _vt.4Unit::
 	.4byte unit_70__C4UnitP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -93836,7 +93836,7 @@ _vt.4Unit::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_98__4UnitUi
@@ -93863,7 +93863,7 @@ _vt.4Unit::
 	.4byte unit_d0__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -93872,7 +93872,7 @@ _vt.4Unit::
 	.4byte unit_e8__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_f0__4UnitUi
+	.4byte unit_f0__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_f8__4UnitUi
@@ -94701,7 +94701,7 @@ vt_09F81DA0::
 	.2byte 0
 	.4byte sub_08077EB0
 
-vt_09F81DD0::
+_vt.5Skill::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -94743,22 +94743,22 @@ vt_09F81DD0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -94836,28 +94836,28 @@ vt_09F81DD0::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078410__5Goods
+	.4byte skill_1a0__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -95059,7 +95059,7 @@ vt_09F820E8::
 	.4byte sub_0807B4D8
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_98__4UnitUi
@@ -95086,7 +95086,7 @@ vt_09F820E8::
 	.4byte sub_0807B450
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -95095,7 +95095,7 @@ vt_09F820E8::
 	.4byte unit_e8__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_f0__4UnitUi
+	.4byte unit_f0__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_f8__4UnitUi
@@ -95948,22 +95948,22 @@ vt_09F82A28::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -96041,28 +96041,28 @@ vt_09F82A28::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078410__5Goods
+	.4byte skill_1a0__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -96213,22 +96213,22 @@ _vt.10GuestSkill::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -96306,28 +96306,28 @@ _vt.10GuestSkill::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078410__5Goods
+	.4byte skill_1a0__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807A1C4
@@ -96531,7 +96531,7 @@ vt_09F83010::
 	.4byte unit_70__C4UnitP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitUi
+	.4byte unit_78__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_80__4UnitUi
@@ -96540,7 +96540,7 @@ vt_09F83010::
 	.4byte unit_88__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitUi
+	.4byte unit_90__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_98__4UnitUi
@@ -96567,7 +96567,7 @@ vt_09F83010::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitUi
+	.4byte unit_d8__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_e0__4UnitUi
@@ -96576,7 +96576,7 @@ vt_09F83010::
 	.4byte unit_e8__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_f0__4UnitUi
+	.4byte unit_f0__4UnitP5Skill
 	.2byte 0
 	.2byte 0
 	.4byte unit_f8__4UnitUi
@@ -97032,22 +97032,22 @@ vt_09F83548::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -97125,25 +97125,25 @@ vt_09F83548::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -97428,22 +97428,22 @@ vt_09F83958::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078590
+	.4byte skill_68__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_38
+	.4byte skill_70__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080786DC
+	.4byte skill_78__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078700
+	.4byte skill_80__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807873C
+	.4byte skill_88__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078784
+	.4byte skill_90__5Skill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080787CC
@@ -97521,25 +97521,25 @@ vt_09F83958::
 	.4byte sub_0807A7FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078210
+	.4byte getUser__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078214
+	.4byte addTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807827C
+	.4byte removeTarget__5SkillP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078340
+	.4byte clearTargets__5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807834C
+	.4byte numTargets__C5Skill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078358
+	.4byte getTarget__C5Skilli
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078388
+	.4byte getTargetIdx__C5SkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC

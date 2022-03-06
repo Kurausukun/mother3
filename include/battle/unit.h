@@ -34,6 +34,7 @@ struct ID {
     u32 dead;
 };
 
+class Skill;
 struct UnitCmd;
 
 class Unit : public Base, public UnitObject {
@@ -49,10 +50,10 @@ public:
     virtual u8 unit_68();
     virtual s32 unit_70(Unit* u) const;
 
-    virtual void unit_78(u32 a1);
+    virtual void unit_78(Skill* a1);
     virtual void unit_80(u32 a1);
     virtual void unit_88(u32 a1);
-    virtual void unit_90(u32 a1);
+    virtual void unit_90(Skill* a1);
     virtual void unit_98(u32 a1);
     virtual void unit_a0(u32 a1);
 
@@ -63,10 +64,10 @@ public:
     virtual bool isDead();
     virtual u8 unit_d0();
 
-    virtual void unit_d8(u32 a1);
+    virtual void unit_d8(Skill* a1);
     virtual void unit_e0(u32 a1);
     virtual void unit_e8(u32 a1);
-    virtual void unit_f0(u32 a1);
+    virtual void unit_f0(Skill* a1);
     virtual void unit_f8(u32 a1);
     virtual void unit_100(u32 a1);
     virtual void unit_108();
@@ -87,8 +88,8 @@ public:
     virtual void unit_170(u32 value);
 
     virtual bool unit_178() = 0;
-    virtual u32 id() = 0;
-    virtual Unit* name(Unit*) = 0;
+    virtual u32 id() const = 0;
+    virtual Msg name() const = 0;
 
     virtual s32 level() const;
     virtual s32 getHP() const;

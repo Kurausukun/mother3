@@ -2,7 +2,7 @@
 #include "battle.h"
 #include "battle/unitTarget.h"
 
-extern "C" u32 get_misctext_msg(u32, u16);
+extern "C" void* get_misctext_msg(u32, u16);
 extern "C" u16 get_misctext_len(u32);
 extern "C" void __3MsgPvUi(Base*, u32, u32);
 
@@ -15,9 +15,8 @@ void battle_end_callback(Guest* g) {
 
 SINGLETON_IMPL(Guest);
 
-Base* getName(Base* b, u32 idx) {
-    __3MsgPvUi(b, get_misctext_msg(6, idx), get_misctext_len(6));
-    return b;
+Msg getName(u32 idx) {
+    return Msg(get_misctext_msg(6, idx), get_misctext_len(6));
 }
 
 Guest::Guest(u16 id) : mID(id), mStats(&gCharStats[id]), mLevelInfo(&gLevelStatTable[id]) {
@@ -66,10 +65,10 @@ Unit* Guest::guest_2c0() {
 }
 
 bool Guest::guest_2e8(Skill* skill) {
-    UnitTarget target(skill->attackMult(), skill->getUser());
+    UnitTarget target(skill->target(), skill->getUser());
     u32 unk = target.attackdata_c8();
     for (int i = 0; i < target.attackdata_110(); ++i) {
-        skill->skill_170(target.attackdata_118(i));
+        skill->addTarget(target.attackdata_118(i));
     }
     return unk == 0;
 }
@@ -78,13 +77,12 @@ bool Guest::unit_178() {
     return false;
 }
 
-u32 Guest::id() {
+u32 Guest::id() const {
     return mID;
 }
 
-Unit* Guest::name(Unit* u) {
-    getName(this, static_cast<Guest*>(u)->mID);
-    return this;
+Msg Guest::name() const {
+    return getName(mID);
 }
 
 s32 Guest::level() const {

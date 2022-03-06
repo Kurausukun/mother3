@@ -1077,7 +1077,7 @@ sub_080706D0: @ 0x080706D0
 	mov r0, r8
 	mov r1, sp
 	adds r2, r6, #0
-	bl __7MessageP9BXTHandleUi
+	bl __13BattleMessageP9BXTHandleUi
 	mov r0, sp
 	movs r1, #2
 	bl _._9BXTHandle

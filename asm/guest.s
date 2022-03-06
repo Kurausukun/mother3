@@ -3242,7 +3242,7 @@ _080606CC:
 	strb r6, [r1, #2]
 	add r0, sp, #4
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -3315,7 +3315,7 @@ _080606CC:
 	strb r6, [r1, #2]
 	add r0, sp, #4
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -3914,7 +3914,7 @@ _08060C8C:
 	strb r0, [r1, #2]
 	add r0, sp, #4
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	movs r4, #0
 	b _08060CCC
 _08060CA2:
@@ -3995,7 +3995,7 @@ metalMonkeyCheck: @ 0x08060CF8
 	strb r0, [r1, #2]
 	add r0, sp, #4
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -4456,7 +4456,7 @@ tellPresent: @ 0x0806105C
 	strb r0, [r1, #2]
 	add r0, sp, #4
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -4519,7 +4519,7 @@ tellPresent: @ 0x0806105C
 	strb r0, [r1, #2]
 	add r0, sp, #4
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	adds r0, r5, #0
 	bl reqInventorySlot
 	adds r4, r0, #0
@@ -4564,7 +4564,7 @@ tellPresent: @ 0x0806105C
 	strb r0, [r1, #2]
 	adds r0, r6, #0
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	adds r0, r6, #0
 	movs r1, #2
 	bl _._3Msg
@@ -4872,7 +4872,7 @@ _0806141E:
 	ldrh r3, [r0, #2]
 	add r0, sp, #4
 	adds r2, r7, #0
-	bl __5GoodsUsUiUs
+	bl __5GoodsUsP4UnitUs
 	add r0, sp, #4
 	bl isKeyItem__C5Goods
 	adds r4, r0, #0
@@ -4909,7 +4909,7 @@ _0806141E:
 	strb r0, [r1, #2]
 	adds r0, r4, #0
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -5095,7 +5095,7 @@ _0806159C:
 	adds r0, r6, #0
 	adds r1, r5, #0
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	adds r0, r6, #0
 	movs r1, #2
 	bl _._3Msg
@@ -5302,7 +5302,7 @@ checkGiveUpItem: @ 0x0806176C
 	strb r7, [r1, #2]
 	adds r0, r4, #0
 	movs r2, #1
-	bl sub_080735E0
+	bl print__3MsgRC13PrintSettingsb
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg

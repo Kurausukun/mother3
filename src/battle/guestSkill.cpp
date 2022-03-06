@@ -9,7 +9,7 @@ extern "C" Msg getName(u32 id) {
     return Msg();
 }
 
-GuestSkill::GuestSkill(u16 idx, u32 unk) : Skill(unk), mInfo(&gGuestSkillData2[idx]) {}
+GuestSkill::GuestSkill(u16 id, Unit* user) : Skill(user), mInfo(&gGuestSkillData2[id]) {}
 
 GuestSkill::~GuestSkill() {}
 
@@ -83,24 +83,24 @@ Msg GuestSkill::showForceUseMessage() const {
     return skill_158(mInfo->move.msg_no);
 }
 
-u32 GuestSkill::hasDim() const {
+u8 GuestSkill::hasDim() const {
     u32 bank = mInfo->move.has_dim;
     return bank ? 1 : 0;
 }
 
-u32 GuestSkill::animNo() const {
+u16 GuestSkill::animNo() const {
     return mInfo->move.anim_no;
 }
 
-u32 GuestSkill::successAnimNo() const {
+u16 GuestSkill::successAnimNo() const {
     return mInfo->move.anim_success;
 }
 
 u16 GuestSkill::nextAnim() const {
-    if (!nextAnim()) {
+    if (!successAnimNo()) {
         return 0;
     }
-    return nextAnim() + 1;
+    return successAnimNo() + 1;
 }
 
 u32 GuestSkill::sfxNo() const {

@@ -9,8 +9,8 @@ Msg Goods::getName(u16 idx) {
     return Msg(get_misctext_msg(2, idx), get_misctext_len(2));
 }
 
-Goods::Goods(u16 idx, u32 unk, u16 a2) : Skill(unk) {
-    mInfo = &gGoodsInfo[idx];
+Goods::Goods(u16 id, Unit* user, u16 a2) : Skill(user) {
+    mInfo = &gGoodsInfo[id];
     _4c = a2;
 }
 
@@ -21,17 +21,17 @@ u32 Goods::skill_1a0() {
         skill_78();
         return 1;
     }
-    return sub_08078410();
+    return Skill::skill_1a0();
 }
 
 void Goods::skill_150() {
-    if (skill_1b0() == 1 && goods_2c0() == 1) {
+    if (skill_1b0() == 1 && goods_2b8() == 1) {
         Player* p;
         if ((p = tryCastPlayer(getUser())) == NULL) {
             return;
         }
 
-        if (p->player_410(goods_2a8()) != 1) {
+        if (p->player_410(goods_2a0()) != 1) {
             p->player_408(id());
         }
     }
@@ -47,7 +47,7 @@ u16 Goods::id() const {
     return mInfo->item_id;
 }
 
-u32 Goods::goods_2a0() const {
+u16 Goods::goods_2a0() const {
     return _4c;
 }
 
@@ -115,7 +115,7 @@ Msg Goods::showUseMessage() const {
 }
 
 u16 Goods::calcMessage(u16 idx) const {
-    if (goods_2b8() != 4 || numTargets() <= 0)
+    if (goods_2b0() != 4 || numTargets() <= 0)
         return idx;
 
     if (getTarget(0)->hasStatus(Status::Nauseous) != 1)
@@ -150,24 +150,24 @@ Msg Goods::showForceUseMessage() const {
     }
 }
 
-u32 Goods::hasDim() const {
+u8 Goods::hasDim() const {
     u32 bank = mInfo->action.has_dim;
     return bank ? 1 : 0;
 }
 
-u32 Goods::animNo() const {
+u16 Goods::animNo() const {
     return mInfo->action.anim_no;
 }
 
-u32 Goods::successAnimNo() const {
+u16 Goods::successAnimNo() const {
     return mInfo->action.anim_success;
 }
 
 u16 Goods::nextAnim() const {
-    if (!nextAnim()) {
+    if (!successAnimNo()) {
         return 0;
     }
-    return nextAnim() + 1;
+    return successAnimNo() + 1;
 }
 
 u32 Goods::sfxNo() const {
@@ -199,7 +199,7 @@ u32 Goods::skill_298() {
 }
 
 bool Goods::goods_2c0() {
-    switch (goods_2b8()) {
+    switch (goods_2b0()) {
     default:
         return false;
     case 0:

@@ -35,7 +35,7 @@ class BXTHandle {
     u32 getType(const BXTRef& ref) const;
     u32 count() const;
 
-    friend class Message;
+    friend class BattleMessage;
 
 private:
     bool init(const BXTRef& ref);
@@ -47,8 +47,8 @@ private:
     const u16* mOffsets;
 };
 
-struct Message : Asset {
-    Message(BXTHandle* handle, u32 index);
+struct BattleMessage : Asset {
+    BattleMessage(BXTHandle* handle, u32 index);
 };
 
 #endif // BATTLE_ARCHIVE_H

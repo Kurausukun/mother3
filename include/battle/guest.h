@@ -63,8 +63,8 @@ public:
     virtual void* getInstance();
     virtual u8 unit_d0();
     virtual bool unit_178();
-    virtual u32 id();
-    virtual Unit* name(Unit* u);
+    virtual u32 id() const;
+    virtual Msg name() const;
     virtual s32 level() const;
     virtual bool unit_208();
     virtual bool unit_210();

@@ -2753,7 +2753,7 @@ _0807DB1E:
 	mov r0, sp
 	adds r1, r4, #0
 	movs r3, #0
-	bl __5GoodsUsUiUs
+	bl __5GoodsUsP4UnitUs
 	mov r0, sp
 	bl goods_2c0__5Goods
 	adds r4, r0, #0
@@ -3478,7 +3478,7 @@ sub_0807E088: @ 0x0807E088
 	mov r0, sp
 	adds r1, r4, #0
 	movs r3, #0
-	bl __5GoodsUsUiUs
+	bl __5GoodsUsP4UnitUs
 	mov r0, sp
 	bl goods_2c0__5Goods
 	adds r4, r0, #0
@@ -4226,7 +4226,7 @@ _0807E694:
 	mov r0, sp
 	adds r1, r4, #0
 	movs r3, #0
-	bl __5GoodsUsUiUs
+	bl __5GoodsUsP4UnitUs
 	mov r0, r8
 	bl __3Msg
 	ldr r0, [sp, #0x84]
@@ -4463,7 +4463,7 @@ _0807E7DE:
 	mov r0, sp
 	adds r1, r4, #0
 	movs r3, #0
-	bl __5GoodsUsUiUs
+	bl __5GoodsUsP4UnitUs
 	ldr r3, _0807E988 @ =0x0000051C
 	adds r4, r6, r3
 	ldr r1, [r6, #0x1c]
@@ -7818,7 +7818,7 @@ sub_080803F4: @ 0x080803F4
 	adds r1, r2, #0
 	lsls r4, r4, #0x10
 	lsrs r4, r4, #0x10
-	bl __5SkillUi
+	bl __5SkillP4Unit
 	ldr r0, _0808041C @ =vt_09F82A28
 	str r0, [r5, #0x1c]
 	movs r0, #0x2c

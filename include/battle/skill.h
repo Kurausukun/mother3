@@ -4,16 +4,9 @@
 #include "base.h"
 #include "battle/unit.h"
 
-struct Msg {
-    Msg();
-    Msg(void* p, u32 idx);
-    virtual ~Msg();
-    u32 x[10];
-};
-
 class Skill : public Base {
 public:
-    Skill(u32 unk);
+    Skill(Unit* user);
     virtual ~Skill();
 
     virtual void skill_68();
@@ -22,7 +15,7 @@ public:
     virtual void skill_80();
     virtual void skill_88();
     virtual void skill_90();
-    virtual void skill_a0();
+    virtual void skill_a0(Unit*);
     virtual void skill_a8();
     virtual void skill_b0();
     virtual void skill_b8();
@@ -32,11 +25,11 @@ public:
     virtual void skill_d8();
     virtual void skill_e0();
     virtual u8 skill_e8();
-    virtual void skill_f0();
+    virtual void onFailed();
     virtual void skill_f8();
-    virtual u8 skill_100(u32);
+    virtual u8 onNoEffect(u32);
     virtual u8 skill_108(u32);
-    virtual void onUse(Unit* target);
+    virtual void onSuccess(Unit* target);
     virtual void skill_118();
     virtual void skill_120();
     virtual void onFail();
@@ -48,12 +41,12 @@ public:
     virtual Msg skill_158(u32) const;
     virtual void skill_160();
     virtual Unit* getUser() const;
-    virtual void skill_170(Unit*);
-    virtual void skill_178();
-    virtual void skill_180(s32) const;
+    virtual Unit* addTarget(Unit*);
+    virtual bool removeTarget(Unit*);
+    virtual void clearTargets();
     virtual s32 numTargets() const;
-    virtual Unit* getTarget(u32) const;
-    virtual void skill_198();
+    virtual Unit* getTarget(s32) const;
+    virtual s32 getTargetIdx(Unit*) const;
     virtual u32 skill_1a0();
     virtual u32 skill_1a8();
     virtual u8 skill_1b0();
@@ -63,6 +56,9 @@ public:
     virtual u16 id() const = 0;
     virtual Msg name() const = 0;
     virtual Msg skill_1d8() const = 0;
+    //
+    virtual void skill_fixme();
+
     virtual u32 skill_1e0() = 0;
     virtual u32 effect() const = 0;
     virtual u32 element() const = 0;
@@ -76,9 +72,9 @@ public:
     virtual u32 priority() const = 0;
     virtual Msg showUseMessage() const = 0;
     virtual Msg showForceUseMessage() const = 0;
-    virtual u32 hasDim() const = 0;
-    virtual u32 animNo() const = 0;
-    virtual u32 successAnimNo() const = 0;
+    virtual u8 hasDim() const = 0;
+    virtual u16 animNo() const = 0;
+    virtual u16 successAnimNo() const = 0;
     virtual u16 nextAnim() const = 0;
     virtual u32 sfxNo() const = 0;
     virtual u32 hitChance() const = 0;
@@ -87,6 +83,13 @@ public:
     virtual u32 skill_288() = 0;
     virtual u32 skill_290() = 0;
     virtual u32 skill_298() = 0;
+
+    u32 _20;
+    Unit* mUser;
+    Vector<Unit*> mAllyTargets;
+    Vector<Unit*> mEnemyTargets;
+    u32 _40;
+    u8 _44;
 };
 
 struct MoveInfo {
