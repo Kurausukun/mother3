@@ -75,7 +75,7 @@ public:
     virtual void onRoundBegin();
     virtual void onRoundEnd();
     virtual void guest_2e0();
-    virtual bool guest_2e8(Skill* skill);
+    virtual bool guest_2e8(Action* action);
 
     u16 mID;
     u16 _fa;

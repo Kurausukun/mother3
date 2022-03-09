@@ -275,7 +275,7 @@ NONMATCH("asm/non_matching/unitTarget/attackdata_70.inc", bool UnitTarget::attac
         }
         for (int i = 0; i < v.size(); i++) {
             for (int j = v.size() - 2; j >= i; j--) {
-                if (v[j]->getHP() > v[j + 1]->getHP()) {
+                if (v[j]->hpReal() > v[j + 1]->hpReal()) {
                     Unit* tmp = v[j];
                     v[j] = v[j - 1];
                     v[j - 1] = tmp;

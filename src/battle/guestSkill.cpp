@@ -1,6 +1,6 @@
 #include "battle/guestSkill.h"
 
-// extern "C" Skill* getName(Skill*, u32);
+// extern "C" Action* getName(Action*, u32);
 extern "C" Msg* __3Msg();
 
 SINGLETON_IMPL(GuestSkill);
@@ -9,11 +9,11 @@ extern "C" Msg getName(u32 id) {
     return Msg();
 }
 
-GuestSkill::GuestSkill(u16 id, Unit* user) : Skill(user), mInfo(&gGuestSkillData2[id]) {}
+GuestSkill::GuestSkill(u16 id, Unit* user) : Action(user), mInfo(&gGuestSkillData2[id]) {}
 
 GuestSkill::~GuestSkill() {}
 
-Skill* GuestSkill::skill_1c0() {
+Action* GuestSkill::action_1c0() {
     sub_08077D8C(this, 0);
     return this;
 }
@@ -26,11 +26,11 @@ Msg GuestSkill::name() const {
     return getName(id());
 }
 
-Msg GuestSkill::skill_1d8() const {
+Msg GuestSkill::action_1d8() const {
     return Msg();
 }
 
-u32 GuestSkill::skill_1e0() {
+u32 GuestSkill::action_1e0() {
     return 0;
 }
 
@@ -58,7 +58,7 @@ u32 GuestSkill::healHi() const {
     return mInfo->move.heal_hi;
 }
 
-u32 GuestSkill::ailment() const {
+u16 GuestSkill::ailment() const {
     return mInfo->move.ailment;
 }
 
@@ -66,7 +66,7 @@ u32 GuestSkill::ailmentChance() const {
     return mInfo->move.ailment_chance;
 }
 
-u32 GuestSkill::hasAction() const {
+u8 GuestSkill::hasAction() const {
     u32 action = mInfo->move.action;
     return action ? 1 : 0;
 }
@@ -75,12 +75,12 @@ u32 GuestSkill::priority() const {
     return mInfo->move.priority;
 }
 
-Msg GuestSkill::showUseMessage() const {
-    return skill_158(mInfo->move.msg_no);
+Msg GuestSkill::getUseMessage() const {
+    return action_158(mInfo->move.msg_no);
 }
 
-Msg GuestSkill::showForceUseMessage() const {
-    return skill_158(mInfo->move.msg_no);
+Msg GuestSkill::getForceUseMessage() const {
+    return action_158(mInfo->move.msg_no);
 }
 
 u8 GuestSkill::hasDim() const {
@@ -107,11 +107,11 @@ u32 GuestSkill::sfxNo() const {
     return mInfo->move.sfx_no;
 }
 
-u32 GuestSkill::hitChance() const {
+s32 GuestSkill::hitChance() const {
     return 100 - mInfo->move.miss_chance;
 }
 
-u32 GuestSkill::critChance() const {
+s32 GuestSkill::critChance() const {
     return mInfo->move.smash_chance;
 }
 
@@ -119,14 +119,14 @@ bool GuestSkill::redirectable() const {
     return mInfo->move.redirectable != 0;
 }
 
-u32 GuestSkill::skill_288() {
+u32 GuestSkill::action_288() {
     return 0;
 }
 
-u32 GuestSkill::skill_290() {
+u32 GuestSkill::action_290() {
     return 0;
 }
 
-u32 GuestSkill::skill_298() {
+u32 GuestSkill::action_298() {
     return 0;
 }

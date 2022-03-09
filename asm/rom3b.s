@@ -421,7 +421,7 @@ sub_080BE46C: @ 0x080BE46C
 _080BE4B0:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08078BB0
+	bl isResisted__6ActionP4Unit
 	b _080BE4DE
 _080BE4BA:
 	adds r0, r4, #0
@@ -782,7 +782,7 @@ sub_080BE768: @ 0x080BE768
 _080BE7AC:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08078BB0
+	bl isResisted__6ActionP4Unit
 	b _080BE7DA
 _080BE7B6:
 	adds r0, r4, #0
@@ -1145,7 +1145,7 @@ sub_080BEA70: @ 0x080BEA70
 _080BEAB4:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08078BB0
+	bl isResisted__6ActionP4Unit
 	b _080BEAE2
 _080BEABE:
 	adds r0, r4, #0
@@ -1550,7 +1550,7 @@ sub_080BEDD4: @ 0x080BEDD4
 _080BEE18:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08078BB0
+	bl isResisted__6ActionP4Unit
 	b _080BEE46
 _080BEE22:
 	adds r0, r4, #0
@@ -1629,7 +1629,7 @@ sub_080BEEA4: @ 0x080BEEA4
 	sub sp, #0x14
 	adds r5, r0, #0
 	adds r6, r1, #0
-	bl nullsub_37
+	bl onSuccess__6ActionP4Unit
 	ldr r3, [r5, #0x1c]
 	movs r0, #0xa8
 	lsls r0, r0, #1
@@ -1659,7 +1659,7 @@ sub_080BEEA4: @ 0x080BEEA4
 	movs r0, #0xb6
 	adds r1, r6, #0
 	adds r2, r6, #0
-	bl sub_080730FC
+	bl playSeq
 	ldr r3, [r5, #0x1c]
 	add r3, r8
 	movs r0, #0
@@ -1880,7 +1880,7 @@ _080BF062:
 	movs r0, #0xa6
 	adds r1, r5, #0
 	adds r2, r5, #0
-	bl sub_080730FC
+	bl playSeq
 	ldr r3, [r6, #0x1c]
 	movs r0, #0xa8
 	lsls r0, r0, #1
@@ -2309,7 +2309,7 @@ sub_080BF404: @ 0x080BF404
 	sub sp, #0x10
 	adds r5, r0, #0
 	adds r4, r1, #0
-	bl nullsub_37
+	bl onSuccess__6ActionP4Unit
 	ldr r0, _080BF478 @ =0x00000451
 	bl sub_080707E4
 	adds r0, r4, #0
@@ -2484,7 +2484,7 @@ _080BF578:
 _080BF57C:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08078BB0
+	bl isResisted__6ActionP4Unit
 _080BF584:
 	pop {r4, r5}
 	pop {r1}
@@ -2515,7 +2515,7 @@ sub_080BF5A0: @ 0x080BF5A0
 	bgt _080BF5BE
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_080799C0
+	bl action_118__6ActionP4Unit
 	b _080BF5F0
 _080BF5BE:
 	ldr r3, [r4, #0x1c]
@@ -2620,7 +2620,7 @@ sub_080BF640: @ 0x080BF640
 _080BF688:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08078BB0
+	bl isResisted__6ActionP4Unit
 	b _080BF6B2
 _080BF692:
 	ldr r1, [r4, #0x1c]
@@ -2687,7 +2687,7 @@ sub_080BF6CC: @ 0x080BF6CC
 _080BF706:
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_08078BB0
+	bl isResisted__6ActionP4Unit
 _080BF70E:
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
@@ -2745,7 +2745,7 @@ sub_080BF738: @ 0x080BF738
 _080BF772:
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_08078BB0
+	bl isResisted__6ActionP4Unit
 _080BF77A:
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
@@ -2806,7 +2806,7 @@ _080BF7F0:
 	movs r0, #0x1b
 	adds r1, r6, #0
 	adds r2, r6, #0
-	bl sub_080730FC
+	bl playSeq
 	movs r0, #0x50
 	movs r1, #0x8c
 	bl randS32
@@ -2833,7 +2833,7 @@ _080BF82C:
 	movs r0, #0x2d
 	adds r1, r6, #0
 	adds r2, r6, #0
-	bl sub_080730FC
+	bl playSeq
 	movs r0, #0x14
 	movs r1, #0x32
 	bl randS32
@@ -3192,7 +3192,7 @@ sub_080BFAF8: @ 0x080BFAF8
 	bne _080BFB18
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08079870
+	bl action_f8__6ActionP4Unit
 	b _080BFB22
 _080BFB18:
 	adds r0, r4, #0
@@ -3239,7 +3239,7 @@ sub_080BFB3C: @ 0x080BFB3C
 	movs r1, #2
 	bl sub_0807A8CC
 	mov r0, sp
-	bl sub_0806E414
+	bl sub_0806E414__3Msg
 	ands r0, r4
 	movs r4, #0x3c
 	cmp r0, #0
@@ -3353,7 +3353,7 @@ sub_080BFC28: @ 0x080BFC28
 	bne _080BFC5C
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08078D4C
+	bl calcHit__6ActionP4Unit
 	b _080BFC90
 _080BFC5C:
 	ldr r3, [r5, #0x1c]
@@ -3401,7 +3401,7 @@ sub_080BFCAC: @ 0x080BFCAC
 	push {r4, r5, lr}
 	sub sp, #0x10
 	adds r4, r0, #0
-	bl skill_90__5Skill
+	bl playAnim__6Action
 	ldr r0, _080BFD30 @ =0x0000055E
 	bl playSound
 	ldr r1, [r4, #0x1c]
@@ -3427,7 +3427,7 @@ sub_080BFCAC: @ 0x080BFCAC
 	adds r2, r0, #0
 	movs r0, #0x49
 	adds r1, r5, #0
-	bl sub_080730FC
+	bl playSeq
 	ldr r3, [r4, #0x1c]
 	movs r0, #0xa8
 	lsls r0, r0, #1
@@ -3621,7 +3621,7 @@ _080BFE38:
 	adds r1, r0, #0
 	movs r0, #0x4b
 	adds r2, r7, #0
-	bl sub_080730FC
+	bl playSeq
 _080BFEA4:
 	add sp, #0x1c
 	pop {r3, r4, r5}
@@ -3732,7 +3732,7 @@ _080BFF6A:
 _080BFF6C:
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl sub_08078D4C
+	bl calcHit__6ActionP4Unit
 _080BFF74:
 	pop {r4, r5, r6, r7}
 	pop {r0}
@@ -3771,7 +3771,7 @@ sub_080BFF7C: @ 0x080BFF7C
 _080BFFB6:
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_08078BB0
+	bl isResisted__6ActionP4Unit
 _080BFFBE:
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
@@ -3953,7 +3953,7 @@ sub_080C00E0: @ 0x080C00E0
 	cmp r0, #1
 	beq _080C0108
 	adds r0, r4, #0
-	bl skill_80__5Skill
+	bl tellUseMessage__6Action
 _080C0108:
 	adds r0, r4, #0
 	adds r0, #0x50
@@ -4256,7 +4256,7 @@ _080C04C2:
 sub_080C04C8: @ 0x080C04C8
 	push {r4, lr}
 	adds r4, r0, #0
-	bl skill_70__5Skill
+	bl action_70__6Action
 	ldr r1, [r4, #0x1c]
 	movs r0, #0xb8
 	lsls r0, r0, #2
@@ -4519,7 +4519,7 @@ sub_080C06AC: @ 0x080C06AC
 	beq _080C06D8
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_080787CC
+	bl action_a0__6ActionP4Unit
 _080C06D8:
 	pop {r4, r5}
 	pop {r0}
@@ -4558,7 +4558,7 @@ sub_080C06E0: @ 0x080C06E0
 _080C071A:
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_08078BB0
+	bl isResisted__6ActionP4Unit
 _080C0722:
 	pop {r4, r5}
 	pop {r1}
@@ -4731,7 +4731,7 @@ sub_080C0864: @ 0x080C0864
 	cmp r0, #1
 	beq _080C088A
 	adds r0, r4, #0
-	bl skill_80__5Skill
+	bl tellUseMessage__6Action
 _080C088A:
 	pop {r4}
 	pop {r0}

@@ -2677,19 +2677,19 @@ vt_09F469A8::
 	.4byte sub_0807B4B8
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807B4D8
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__4UnitUi
+	.4byte unit_98__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -2710,22 +2710,22 @@ vt_09F469A8::
 	.4byte sub_0807B450
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f0__4UnitP5Skill
+	.4byte unit_f0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__4UnitUi
+	.4byte unit_f8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_100__4UnitUi
+	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807B4F8
@@ -2755,13 +2755,13 @@ vt_09F469A8::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -2782,40 +2782,40 @@ vt_09F469A8::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807BCF4
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807BD34
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -2863,34 +2863,34 @@ vt_09F469A8::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807AAEC
@@ -3155,7 +3155,7 @@ vt_09F46E98::
 	.4byte sub_0809C818
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807B4D8
@@ -3164,7 +3164,7 @@ vt_09F46E98::
 	.4byte sub_0809C7EC
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__4UnitUi
+	.4byte unit_98__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809C61C
@@ -3188,22 +3188,22 @@ vt_09F46E98::
 	.4byte sub_0807B450
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f0__4UnitP5Skill
+	.4byte unit_f0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__4UnitUi
+	.4byte unit_f8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_100__4UnitUi
+	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807B4F8
@@ -3233,13 +3233,13 @@ vt_09F46E98::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -3260,40 +3260,40 @@ vt_09F46E98::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807BCF4
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807BD34
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -3341,34 +3341,34 @@ vt_09F46E98::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807AAEC
@@ -3636,19 +3636,19 @@ vt_09F47390::
 	.4byte sub_0807B4B8
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807B4D8
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__4UnitUi
+	.4byte unit_98__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -3669,22 +3669,22 @@ vt_09F47390::
 	.4byte sub_0807B450
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f0__4UnitP5Skill
+	.4byte unit_f0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__4UnitUi
+	.4byte unit_f8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_100__4UnitUi
+	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807B4F8
@@ -3714,13 +3714,13 @@ vt_09F47390::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -3741,40 +3741,40 @@ vt_09F47390::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807BCF4
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807BD34
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -3822,34 +3822,34 @@ vt_09F47390::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807AAEC
@@ -4117,19 +4117,19 @@ vt_09F47888::
 	.4byte sub_0807B4B8
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807B4D8
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__4UnitUi
+	.4byte unit_98__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -4150,22 +4150,22 @@ vt_09F47888::
 	.4byte sub_0807B450
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f0__4UnitP5Skill
+	.4byte unit_f0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__4UnitUi
+	.4byte unit_f8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_100__4UnitUi
+	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807B4F8
@@ -4195,13 +4195,13 @@ vt_09F47888::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -4222,40 +4222,40 @@ vt_09F47888::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807BCF4
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807BD34
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -4303,34 +4303,34 @@ vt_09F47888::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807AAEC
@@ -4598,19 +4598,19 @@ vt_09F47D80::
 	.4byte sub_0807B4B8
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807B4D8
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__4UnitUi
+	.4byte unit_98__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -4631,22 +4631,22 @@ vt_09F47D80::
 	.4byte sub_0807B450
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f0__4UnitP5Skill
+	.4byte unit_f0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__4UnitUi
+	.4byte unit_f8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_100__4UnitUi
+	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807B4F8
@@ -4676,13 +4676,13 @@ vt_09F47D80::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -4703,40 +4703,40 @@ vt_09F47D80::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807BCF4
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807BD34
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -4784,34 +4784,34 @@ vt_09F47D80::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807AAEC
@@ -5079,19 +5079,19 @@ vt_09F48278::
 	.4byte sub_0807B4B8
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807B4D8
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__4UnitUi
+	.4byte unit_98__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -5112,22 +5112,22 @@ vt_09F48278::
 	.4byte sub_0807B450
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f0__4UnitP5Skill
+	.4byte unit_f0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__4UnitUi
+	.4byte unit_f8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_100__4UnitUi
+	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807B4F8
@@ -5157,13 +5157,13 @@ vt_09F48278::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -5184,40 +5184,40 @@ vt_09F48278::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807BCF4
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807BD34
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -5265,34 +5265,34 @@ vt_09F48278::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807AAEC
@@ -5563,19 +5563,19 @@ vt_09F48778::
 	.4byte sub_0807B4B8
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807B4D8
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__4UnitUi
+	.4byte unit_98__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -5596,22 +5596,22 @@ vt_09F48778::
 	.4byte sub_0807B450
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f0__4UnitP5Skill
+	.4byte unit_f0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__4UnitUi
+	.4byte unit_f8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_100__4UnitUi
+	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807B4F8
@@ -5641,13 +5641,13 @@ vt_09F48778::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -5668,40 +5668,40 @@ vt_09F48778::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807BCF4
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807BD34
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -5749,34 +5749,34 @@ vt_09F48778::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807AAEC
@@ -6044,19 +6044,19 @@ vt_09F48C70::
 	.4byte sub_0807B4B8
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807B4D8
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__4UnitUi
+	.4byte unit_98__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -6077,22 +6077,22 @@ vt_09F48C70::
 	.4byte sub_0807B450
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f0__4UnitP5Skill
+	.4byte unit_f0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__4UnitUi
+	.4byte unit_f8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_100__4UnitUi
+	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807B4F8
@@ -6122,13 +6122,13 @@ vt_09F48C70::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -6149,40 +6149,40 @@ vt_09F48C70::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807BCF4
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807BD34
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -6230,34 +6230,34 @@ vt_09F48C70::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807AAEC
@@ -6510,25 +6510,25 @@ vt_09F49158::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809DD74
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809DC2C
@@ -6543,97 +6543,97 @@ vt_09F49158::
 	.4byte sub_0809DC9C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809DAD4
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28__5Goods
+	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F854
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F840
@@ -6648,7 +6648,7 @@ vt_09F49158::
 	.4byte sub_08080484
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080570
@@ -6764,25 +6764,25 @@ vt_09F493F8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809DF50
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809DEB0
@@ -6797,97 +6797,97 @@ vt_09F493F8::
 	.4byte sub_0809DF04
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809DDE0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28__5Goods
+	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809FA6C
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809FA58
@@ -6902,7 +6902,7 @@ vt_09F493F8::
 	.4byte sub_0809F990
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F970
@@ -7021,130 +7021,130 @@ vt_09F496A0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809DF80
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28__5Goods
+	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809FA6C
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809FA58
@@ -7159,7 +7159,7 @@ vt_09F496A0::
 	.4byte sub_0809F990
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F970
@@ -7278,130 +7278,130 @@ vt_09F49948::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809E060
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28__5Goods
+	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte skill_1a0__5Skill
+	.4byte action_1a0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080438
@@ -7416,7 +7416,7 @@ vt_09F49948::
 	.4byte sub_08080484
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080570
@@ -7532,25 +7532,25 @@ vt_09F49BE8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809E338
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809E244
@@ -7559,103 +7559,103 @@ vt_09F49BE8::
 	.4byte sub_0809E134
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809E1E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28__5Goods
+	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte skill_1a0__5Skill
+	.4byte action_1a0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080438
@@ -7670,7 +7670,7 @@ vt_09F49BE8::
 	.4byte sub_08080484
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080570
@@ -7786,130 +7786,130 @@ vt_09F49E88::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809E3A4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28__5Goods
+	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F724
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F710
@@ -7924,7 +7924,7 @@ vt_09F49E88::
 	.4byte sub_08080484
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080570
@@ -8040,25 +8040,25 @@ vt_09F4A128::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809E694
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809E5F8
@@ -8073,97 +8073,97 @@ vt_09F4A128::
 	.4byte sub_0809E630
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28__5Goods
+	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F724
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F710
@@ -8178,7 +8178,7 @@ vt_09F4A128::
 	.4byte sub_08080484
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080570
@@ -8294,25 +8294,25 @@ vt_09F4A3C8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809E7E0
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809E744
@@ -8327,97 +8327,97 @@ vt_09F4A3C8::
 	.4byte sub_0809E77C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28__5Goods
+	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F724
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F710
@@ -8432,7 +8432,7 @@ vt_09F4A3C8::
 	.4byte sub_08080484
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080570
@@ -8548,130 +8548,130 @@ vt_09F4A668::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28__5Goods
+	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809FA6C
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809FA58
@@ -8686,7 +8686,7 @@ vt_09F4A668::
 	.4byte sub_0809F990
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F970
@@ -8805,130 +8805,130 @@ vt_09F4A910::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28__5Goods
+	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809FA6C
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809FA58
@@ -8943,7 +8943,7 @@ vt_09F4A910::
 	.4byte sub_0809F990
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F970
@@ -9062,130 +9062,130 @@ vt_09F4ABB8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28__5Goods
+	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809FA6C
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809FA58
@@ -9200,7 +9200,7 @@ vt_09F4ABB8::
 	.4byte sub_0809F990
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F970
@@ -9319,130 +9319,130 @@ vt_09F4AE60::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28__5Goods
+	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809FA6C
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809FA58
@@ -9457,7 +9457,7 @@ vt_09F4AE60::
 	.4byte sub_0809F990
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F970
@@ -9576,130 +9576,130 @@ vt_09F4B108::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809E898
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28__5Goods
+	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809FA6C
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809FA58
@@ -9714,7 +9714,7 @@ vt_09F4B108::
 	.4byte sub_0809F990
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F970
@@ -9833,130 +9833,130 @@ vt_09F4B3B0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F670
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F6DC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F098
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28__5Goods
+	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte skill_1a0__5Skill
+	.4byte action_1a0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080438
@@ -9971,7 +9971,7 @@ vt_09F4B3B0::
 	.4byte sub_08080484
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080570
@@ -10120,130 +10120,130 @@ vt_09F4B6A8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28__5Goods
+	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte skill_1a0__5Skill
+	.4byte action_1a0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080438
@@ -10258,7 +10258,7 @@ vt_09F4B6A8::
 	.4byte sub_08080484
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080570
@@ -10483,22 +10483,22 @@ _vt.5Guest::
 	.4byte unit_70__C4UnitP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__4UnitUi
+	.4byte unit_98__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -10519,22 +10519,22 @@ _vt.5Guest::
 	.4byte unit_d0__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f0__4UnitP5Skill
+	.4byte unit_f0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__4UnitUi
+	.4byte unit_f8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_100__4UnitUi
+	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_108__4Unit
@@ -10564,13 +10564,13 @@ _vt.5Guest::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -10591,40 +10591,40 @@ _vt.5Guest::
 	.4byte level__C5Guest
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -10672,40 +10672,40 @@ _vt.5Guest::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte guest_2c0__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte guest_2e8__5GuestP5Skill
+	.4byte guest_2e8__5GuestP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onRoundBegin__5Guest
@@ -10822,22 +10822,22 @@ vt_09F4BDC8::
 	.4byte sub_080A09DC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__4UnitUi
+	.4byte unit_98__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -10858,22 +10858,22 @@ vt_09F4BDC8::
 	.4byte unit_d0__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f0__4UnitP5Skill
+	.4byte unit_f0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__4UnitUi
+	.4byte unit_f8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_100__4UnitUi
+	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_108__4Unit
@@ -10903,13 +10903,13 @@ vt_09F4BDC8::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -10930,40 +10930,40 @@ vt_09F4BDC8::
 	.4byte level__C5Guest
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -11011,40 +11011,40 @@ vt_09F4BDC8::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A02BC
 	.2byte 0
 	.2byte 0
-	.4byte guest_2e8__5GuestP5Skill
+	.4byte guest_2e8__5GuestP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onRoundBegin__5Guest
@@ -11162,22 +11162,22 @@ vt_09F4C148::
 	.4byte sub_080A09DC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__4UnitUi
+	.4byte unit_98__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -11198,22 +11198,22 @@ vt_09F4C148::
 	.4byte unit_d0__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f0__4UnitP5Skill
+	.4byte unit_f0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__4UnitUi
+	.4byte unit_f8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_100__4UnitUi
+	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_108__4Unit
@@ -11243,13 +11243,13 @@ vt_09F4C148::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -11270,40 +11270,40 @@ vt_09F4C148::
 	.4byte level__C5Guest
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -11351,40 +11351,40 @@ vt_09F4C148::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A039C
 	.2byte 0
 	.2byte 0
-	.4byte guest_2e8__5GuestP5Skill
+	.4byte guest_2e8__5GuestP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onRoundBegin__5Guest
@@ -11511,22 +11511,22 @@ vt_09F4C4E0::
 	.4byte sub_080A04CC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__4UnitUi
+	.4byte unit_98__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -11547,22 +11547,22 @@ vt_09F4C4E0::
 	.4byte unit_d0__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f0__4UnitP5Skill
+	.4byte unit_f0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__4UnitUi
+	.4byte unit_f8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_100__4UnitUi
+	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_108__4Unit
@@ -11592,13 +11592,13 @@ vt_09F4C4E0::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -11619,40 +11619,40 @@ vt_09F4C4E0::
 	.4byte level__C5Guest
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -11700,40 +11700,40 @@ vt_09F4C4E0::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A0680
 	.2byte 0
 	.2byte 0
-	.4byte guest_2e8__5GuestP5Skill
+	.4byte guest_2e8__5GuestP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onRoundBegin__5Guest
@@ -11854,22 +11854,22 @@ vt_09F4C868::
 	.4byte sub_080A0758
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__4UnitUi
+	.4byte unit_98__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -11890,22 +11890,22 @@ vt_09F4C868::
 	.4byte unit_d0__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f0__4UnitP5Skill
+	.4byte unit_f0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__4UnitUi
+	.4byte unit_f8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_100__4UnitUi
+	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_108__4Unit
@@ -11935,13 +11935,13 @@ vt_09F4C868::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -11962,40 +11962,40 @@ vt_09F4C868::
 	.4byte level__C5Guest
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -12043,40 +12043,40 @@ vt_09F4C868::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A08E4
 	.2byte 0
 	.2byte 0
-	.4byte guest_2e8__5GuestP5Skill
+	.4byte guest_2e8__5GuestP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onRoundBegin__5Guest
@@ -12200,22 +12200,22 @@ vt_09F4CBF8::
 	.4byte sub_080A09DC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__4UnitUi
+	.4byte unit_98__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -12236,22 +12236,22 @@ vt_09F4CBF8::
 	.4byte unit_d0__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f0__4UnitP5Skill
+	.4byte unit_f0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__4UnitUi
+	.4byte unit_f8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_100__4UnitUi
+	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_108__4Unit
@@ -12281,13 +12281,13 @@ vt_09F4CBF8::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -12308,40 +12308,40 @@ vt_09F4CBF8::
 	.4byte level__C5Guest
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -12389,40 +12389,40 @@ vt_09F4CBF8::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A0934
 	.2byte 0
 	.2byte 0
-	.4byte guest_2e8__5GuestP5Skill
+	.4byte guest_2e8__5GuestP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onRoundBegin__5Guest
@@ -12540,22 +12540,22 @@ vt_09F4CF78::
 	.4byte sub_080A09DC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__4UnitUi
+	.4byte unit_98__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -12576,22 +12576,22 @@ vt_09F4CF78::
 	.4byte unit_d0__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f0__4UnitP5Skill
+	.4byte unit_f0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__4UnitUi
+	.4byte unit_f8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_100__4UnitUi
+	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_108__4Unit
@@ -12621,13 +12621,13 @@ vt_09F4CF78::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -12648,40 +12648,40 @@ vt_09F4CF78::
 	.4byte level__C5Guest
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -12729,40 +12729,40 @@ vt_09F4CF78::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A0978
 	.2byte 0
 	.2byte 0
-	.4byte guest_2e8__5GuestP5Skill
+	.4byte guest_2e8__5GuestP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onRoundBegin__5Guest
@@ -12880,22 +12880,22 @@ vt_09F4D2F8::
 	.4byte sub_080A09DC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__4UnitUi
+	.4byte unit_98__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -12916,22 +12916,22 @@ vt_09F4D2F8::
 	.4byte unit_d0__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f0__4UnitP5Skill
+	.4byte unit_f0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__4UnitUi
+	.4byte unit_f8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_100__4UnitUi
+	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_108__4Unit
@@ -12961,13 +12961,13 @@ vt_09F4D2F8::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -12988,40 +12988,40 @@ vt_09F4D2F8::
 	.4byte level__C5Guest
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -13069,40 +13069,40 @@ vt_09F4D2F8::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte guest_2c0__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte guest_2e8__5GuestP5Skill
+	.4byte guest_2e8__5GuestP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onRoundBegin__5Guest
@@ -13167,133 +13167,133 @@ vt_09F4D600::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28__5Goods
+	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte skill_1a0__5Skill
+	.4byte action_1a0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_1c0__10GuestSkill
+	.4byte action_1c0__10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte id__C10GuestSkill
@@ -13302,13 +13302,13 @@ vt_09F4D600::
 	.4byte name__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__C10GuestSkill
+	.4byte action_1d8__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte skill_1e0__10GuestSkill
+	.4byte action_1e0__10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte effect__C10GuestSkill
@@ -13344,7 +13344,7 @@ vt_09F4D600::
 	.4byte sub_080A0B54
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__C10GuestSkill
+	.4byte getForceUseMessage__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C10GuestSkill
@@ -13371,13 +13371,13 @@ vt_09F4D600::
 	.4byte redirectable__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_288__10GuestSkill
+	.4byte action_288__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_290__10GuestSkill
+	.4byte action_290__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_298__10GuestSkill
+	.4byte action_298__10GuestSkill
 
 vt_09F4D8A0::
 	.2byte 0
@@ -13421,133 +13421,133 @@ vt_09F4D8A0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A0BA4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28__5Goods
+	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte skill_1a0__5Skill
+	.4byte action_1a0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_1c0__10GuestSkill
+	.4byte action_1c0__10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte id__C10GuestSkill
@@ -13556,13 +13556,13 @@ vt_09F4D8A0::
 	.4byte name__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__C10GuestSkill
+	.4byte action_1d8__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte skill_1e0__10GuestSkill
+	.4byte action_1e0__10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte effect__C10GuestSkill
@@ -13595,10 +13595,10 @@ vt_09F4D8A0::
 	.4byte priority__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__C10GuestSkill
+	.4byte getUseMessage__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__C10GuestSkill
+	.4byte getForceUseMessage__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C10GuestSkill
@@ -13625,13 +13625,13 @@ vt_09F4D8A0::
 	.4byte redirectable__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_288__10GuestSkill
+	.4byte action_288__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_290__10GuestSkill
+	.4byte action_290__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_298__10GuestSkill
+	.4byte action_298__10GuestSkill
 
 vt_09F4DB40::
 	.2byte 0
@@ -13675,133 +13675,133 @@ vt_09F4DB40::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A0BE0
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28__5Goods
+	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte skill_1a0__5Skill
+	.4byte action_1a0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_1c0__10GuestSkill
+	.4byte action_1c0__10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte id__C10GuestSkill
@@ -13810,13 +13810,13 @@ vt_09F4DB40::
 	.4byte name__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__C10GuestSkill
+	.4byte action_1d8__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte skill_1e0__10GuestSkill
+	.4byte action_1e0__10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte effect__C10GuestSkill
@@ -13849,10 +13849,10 @@ vt_09F4DB40::
 	.4byte priority__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__C10GuestSkill
+	.4byte getUseMessage__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__C10GuestSkill
+	.4byte getForceUseMessage__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C10GuestSkill
@@ -13879,13 +13879,13 @@ vt_09F4DB40::
 	.4byte redirectable__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_288__10GuestSkill
+	.4byte action_288__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_290__10GuestSkill
+	.4byte action_290__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_298__10GuestSkill
+	.4byte action_298__10GuestSkill
 
 vt_09F4DDE0::
 	.2byte 0
@@ -13929,133 +13929,133 @@ vt_09F4DDE0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A0C2C
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28__5Goods
+	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte skill_1a0__5Skill
+	.4byte action_1a0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_1c0__10GuestSkill
+	.4byte action_1c0__10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte id__C10GuestSkill
@@ -14064,13 +14064,13 @@ vt_09F4DDE0::
 	.4byte name__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__C10GuestSkill
+	.4byte action_1d8__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte skill_1e0__10GuestSkill
+	.4byte action_1e0__10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte effect__C10GuestSkill
@@ -14103,10 +14103,10 @@ vt_09F4DDE0::
 	.4byte priority__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__C10GuestSkill
+	.4byte getUseMessage__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__C10GuestSkill
+	.4byte getForceUseMessage__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C10GuestSkill
@@ -14133,13 +14133,13 @@ vt_09F4DDE0::
 	.4byte redirectable__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_288__10GuestSkill
+	.4byte action_288__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_290__10GuestSkill
+	.4byte action_290__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_298__10GuestSkill
+	.4byte action_298__10GuestSkill
 
 vt_09F4E080::
 	.2byte 0
@@ -14183,133 +14183,133 @@ vt_09F4E080::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28__5Goods
+	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte skill_1a0__5Skill
+	.4byte action_1a0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_1c0__10GuestSkill
+	.4byte action_1c0__10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte id__C10GuestSkill
@@ -14318,13 +14318,13 @@ vt_09F4E080::
 	.4byte name__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__C10GuestSkill
+	.4byte action_1d8__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte skill_1e0__10GuestSkill
+	.4byte action_1e0__10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte effect__C10GuestSkill
@@ -14357,10 +14357,10 @@ vt_09F4E080::
 	.4byte priority__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__C10GuestSkill
+	.4byte getUseMessage__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__C10GuestSkill
+	.4byte getForceUseMessage__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C10GuestSkill
@@ -14387,13 +14387,13 @@ vt_09F4E080::
 	.4byte redirectable__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_288__10GuestSkill
+	.4byte action_288__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_290__10GuestSkill
+	.4byte action_290__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_298__10GuestSkill
+	.4byte action_298__10GuestSkill
 
 vt_09F4E320::
 	.2byte 0
@@ -14632,22 +14632,22 @@ vt_09F4E508::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -14668,13 +14668,13 @@ vt_09F4E508::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -14713,13 +14713,13 @@ vt_09F4E508::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -14740,40 +14740,40 @@ vt_09F4E508::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -14821,34 +14821,34 @@ vt_09F4E508::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A5978
@@ -15086,22 +15086,22 @@ vt_09F4E9B8::
 	.4byte sub_080A5DD4
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -15122,10 +15122,10 @@ vt_09F4E9B8::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A5AD4
@@ -15167,13 +15167,13 @@ vt_09F4E9B8::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -15194,40 +15194,40 @@ vt_09F4E9B8::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -15275,34 +15275,34 @@ vt_09F4E9B8::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A5F8C
@@ -15566,22 +15566,22 @@ vt_09F4EEA8::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -15602,13 +15602,13 @@ vt_09F4EEA8::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -15647,13 +15647,13 @@ vt_09F4EEA8::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -15674,40 +15674,40 @@ vt_09F4EEA8::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -15755,34 +15755,34 @@ vt_09F4EEA8::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A6040
@@ -16020,16 +16020,16 @@ vt_09F4F358::
 	.4byte sub_080A647C
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -16056,13 +16056,13 @@ vt_09F4F358::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -16101,13 +16101,13 @@ vt_09F4F358::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -16128,40 +16128,40 @@ vt_09F4F358::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -16209,34 +16209,34 @@ vt_09F4F358::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A6908
@@ -16522,22 +16522,22 @@ vt_09F4F888::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -16558,13 +16558,13 @@ vt_09F4F888::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -16603,13 +16603,13 @@ vt_09F4F888::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -16630,40 +16630,40 @@ vt_09F4F888::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -16711,34 +16711,34 @@ vt_09F4F888::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A6A2C
@@ -16985,22 +16985,22 @@ vt_09F4FD50::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -17021,13 +17021,13 @@ vt_09F4FD50::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -17066,13 +17066,13 @@ vt_09F4FD50::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -17093,40 +17093,40 @@ vt_09F4FD50::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -17174,34 +17174,34 @@ vt_09F4FD50::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A6BC4
@@ -17448,22 +17448,22 @@ vt_09F50218::
 	.4byte sub_080A6F4C
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A6D04
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -17484,13 +17484,13 @@ vt_09F50218::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -17529,13 +17529,13 @@ vt_09F50218::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -17556,40 +17556,40 @@ vt_09F50218::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -17637,34 +17637,34 @@ vt_09F50218::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A751C
@@ -17926,22 +17926,22 @@ vt_09F50708::
 	.4byte sub_080A76B8
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -17962,13 +17962,13 @@ vt_09F50708::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -18007,13 +18007,13 @@ vt_09F50708::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -18034,40 +18034,40 @@ vt_09F50708::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -18115,34 +18115,34 @@ vt_09F50708::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A777C
@@ -18380,16 +18380,16 @@ vt_09F50BB8::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A78A4
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -18416,13 +18416,13 @@ vt_09F50BB8::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -18461,13 +18461,13 @@ vt_09F50BB8::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -18488,40 +18488,40 @@ vt_09F50BB8::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -18569,34 +18569,34 @@ vt_09F50BB8::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A798C
@@ -18837,22 +18837,22 @@ vt_09F51070::
 	.4byte sub_080A79FC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -18873,13 +18873,13 @@ vt_09F51070::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -18918,13 +18918,13 @@ vt_09F51070::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -18945,40 +18945,40 @@ vt_09F51070::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -19026,34 +19026,34 @@ vt_09F51070::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A7AC4
@@ -19291,22 +19291,22 @@ vt_09F51520::
 	.4byte sub_080A7B30
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -19327,13 +19327,13 @@ vt_09F51520::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -19372,13 +19372,13 @@ vt_09F51520::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -19399,40 +19399,40 @@ vt_09F51520::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -19480,34 +19480,34 @@ vt_09F51520::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A7BF4
@@ -19745,22 +19745,22 @@ vt_09F519D0::
 	.4byte sub_080A7EFC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -19781,13 +19781,13 @@ vt_09F519D0::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -19826,13 +19826,13 @@ vt_09F519D0::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -19853,40 +19853,40 @@ vt_09F519D0::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -19940,28 +19940,28 @@ vt_09F519D0::
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A83E8
@@ -20211,22 +20211,22 @@ vt_09F51EA0::
 	.4byte sub_080A84C8
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -20247,13 +20247,13 @@ vt_09F51EA0::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -20292,13 +20292,13 @@ vt_09F51EA0::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -20319,40 +20319,40 @@ vt_09F51EA0::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -20400,34 +20400,34 @@ vt_09F51EA0::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A86F0
@@ -20668,22 +20668,22 @@ vt_09F52358::
 	.4byte sub_080A8854
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -20704,13 +20704,13 @@ vt_09F52358::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -20749,13 +20749,13 @@ vt_09F52358::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -20776,40 +20776,40 @@ vt_09F52358::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -20857,34 +20857,34 @@ vt_09F52358::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A8BF4
@@ -21140,22 +21140,22 @@ vt_09F52838::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -21176,13 +21176,13 @@ vt_09F52838::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -21221,13 +21221,13 @@ vt_09F52838::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -21248,40 +21248,40 @@ vt_09F52838::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -21329,34 +21329,34 @@ vt_09F52838::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A8D14
@@ -21594,22 +21594,22 @@ vt_09F52CE8::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A9234
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A900C
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -21630,13 +21630,13 @@ vt_09F52CE8::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -21675,13 +21675,13 @@ vt_09F52CE8::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -21702,40 +21702,40 @@ vt_09F52CE8::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -21783,34 +21783,34 @@ vt_09F52CE8::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A9544
@@ -22069,22 +22069,22 @@ vt_09F531D0::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -22105,13 +22105,13 @@ vt_09F531D0::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -22150,13 +22150,13 @@ vt_09F531D0::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -22177,40 +22177,40 @@ vt_09F531D0::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -22258,34 +22258,34 @@ vt_09F531D0::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A96D8
@@ -22523,22 +22523,22 @@ vt_09F53680::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -22559,13 +22559,13 @@ vt_09F53680::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -22604,13 +22604,13 @@ vt_09F53680::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -22631,40 +22631,40 @@ vt_09F53680::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -22712,34 +22712,34 @@ vt_09F53680::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A9748
@@ -22977,22 +22977,22 @@ vt_09F53B30::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -23013,13 +23013,13 @@ vt_09F53B30::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -23058,13 +23058,13 @@ vt_09F53B30::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -23085,40 +23085,40 @@ vt_09F53B30::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -23166,34 +23166,34 @@ vt_09F53B30::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A9850
@@ -23431,22 +23431,22 @@ vt_09F53FE0::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -23467,13 +23467,13 @@ vt_09F53FE0::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -23512,13 +23512,13 @@ vt_09F53FE0::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -23539,40 +23539,40 @@ vt_09F53FE0::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -23620,34 +23620,34 @@ vt_09F53FE0::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A9890
@@ -23885,22 +23885,22 @@ vt_09F54490::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -23921,13 +23921,13 @@ vt_09F54490::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -23966,13 +23966,13 @@ vt_09F54490::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -23993,40 +23993,40 @@ vt_09F54490::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -24074,34 +24074,34 @@ vt_09F54490::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A9964
@@ -24339,22 +24339,22 @@ vt_09F54940::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -24375,13 +24375,13 @@ vt_09F54940::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -24420,13 +24420,13 @@ vt_09F54940::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -24447,40 +24447,40 @@ vt_09F54940::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -24528,34 +24528,34 @@ vt_09F54940::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A99AC
@@ -24793,22 +24793,22 @@ vt_09F54DF0::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -24829,13 +24829,13 @@ vt_09F54DF0::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -24874,13 +24874,13 @@ vt_09F54DF0::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -24901,40 +24901,40 @@ vt_09F54DF0::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -24982,34 +24982,34 @@ vt_09F54DF0::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A9A90
@@ -25247,22 +25247,22 @@ vt_09F552A0::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -25283,13 +25283,13 @@ vt_09F552A0::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -25328,13 +25328,13 @@ vt_09F552A0::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -25355,40 +25355,40 @@ vt_09F552A0::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -25436,34 +25436,34 @@ vt_09F552A0::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A9B98
@@ -25701,22 +25701,22 @@ vt_09F55750::
 	.4byte sub_080A9C50
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -25737,13 +25737,13 @@ vt_09F55750::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -25782,13 +25782,13 @@ vt_09F55750::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -25809,40 +25809,40 @@ vt_09F55750::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -25890,34 +25890,34 @@ vt_09F55750::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A9D64
@@ -26155,22 +26155,22 @@ vt_09F55C00::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -26191,13 +26191,13 @@ vt_09F55C00::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -26236,13 +26236,13 @@ vt_09F55C00::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -26263,40 +26263,40 @@ vt_09F55C00::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -26344,34 +26344,34 @@ vt_09F55C00::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A9DEC
@@ -26609,22 +26609,22 @@ vt_09F560B0::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -26645,13 +26645,13 @@ vt_09F560B0::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -26690,13 +26690,13 @@ vt_09F560B0::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -26717,40 +26717,40 @@ vt_09F560B0::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -26798,34 +26798,34 @@ vt_09F560B0::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A9E54
@@ -27063,22 +27063,22 @@ vt_09F56560::
 	.4byte sub_080A9F3C
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -27099,13 +27099,13 @@ vt_09F56560::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -27144,13 +27144,13 @@ vt_09F56560::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -27171,40 +27171,40 @@ vt_09F56560::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -27258,28 +27258,28 @@ vt_09F56560::
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AA1F8
@@ -27532,22 +27532,22 @@ vt_09F56A38::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -27568,13 +27568,13 @@ vt_09F56A38::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -27613,13 +27613,13 @@ vt_09F56A38::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -27640,40 +27640,40 @@ vt_09F56A38::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -27721,34 +27721,34 @@ vt_09F56A38::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AA434
@@ -27986,22 +27986,22 @@ vt_09F56EE8::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -28022,13 +28022,13 @@ vt_09F56EE8::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -28067,13 +28067,13 @@ vt_09F56EE8::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -28094,40 +28094,40 @@ vt_09F56EE8::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -28175,34 +28175,34 @@ vt_09F56EE8::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AA4A4
@@ -28440,22 +28440,22 @@ vt_09F57398::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -28476,13 +28476,13 @@ vt_09F57398::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -28521,13 +28521,13 @@ vt_09F57398::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -28548,40 +28548,40 @@ vt_09F57398::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -28629,34 +28629,34 @@ vt_09F57398::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AA50C
@@ -28894,22 +28894,22 @@ vt_09F57848::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AA618
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -28930,13 +28930,13 @@ vt_09F57848::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -28975,13 +28975,13 @@ vt_09F57848::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -29002,40 +29002,40 @@ vt_09F57848::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -29083,34 +29083,34 @@ vt_09F57848::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AA8D4
@@ -29357,22 +29357,22 @@ vt_09F57D10::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -29393,13 +29393,13 @@ vt_09F57D10::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -29438,13 +29438,13 @@ vt_09F57D10::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -29465,40 +29465,40 @@ vt_09F57D10::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -29546,34 +29546,34 @@ vt_09F57D10::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AA990
@@ -29811,22 +29811,22 @@ vt_09F581C0::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -29847,13 +29847,13 @@ vt_09F581C0::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -29892,13 +29892,13 @@ vt_09F581C0::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -29919,40 +29919,40 @@ vt_09F581C0::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -30000,34 +30000,34 @@ vt_09F581C0::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AA9FC
@@ -30265,22 +30265,22 @@ vt_09F58670::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -30301,13 +30301,13 @@ vt_09F58670::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -30346,13 +30346,13 @@ vt_09F58670::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -30373,40 +30373,40 @@ vt_09F58670::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -30454,34 +30454,34 @@ vt_09F58670::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AAA5C
@@ -30719,22 +30719,22 @@ vt_09F58B20::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -30755,13 +30755,13 @@ vt_09F58B20::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -30800,13 +30800,13 @@ vt_09F58B20::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -30827,40 +30827,40 @@ vt_09F58B20::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -30908,34 +30908,34 @@ vt_09F58B20::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AAB98
@@ -31176,22 +31176,22 @@ vt_09F58FD8::
 	.4byte sub_080AAC9C
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -31212,13 +31212,13 @@ vt_09F58FD8::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -31257,13 +31257,13 @@ vt_09F58FD8::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -31284,40 +31284,40 @@ vt_09F58FD8::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -31365,34 +31365,34 @@ vt_09F58FD8::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AAD64
@@ -31630,22 +31630,22 @@ vt_09F59488::
 	.4byte sub_080AAE94
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -31666,13 +31666,13 @@ vt_09F59488::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -31711,13 +31711,13 @@ vt_09F59488::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -31738,40 +31738,40 @@ vt_09F59488::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -31819,34 +31819,34 @@ vt_09F59488::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AB03C
@@ -32096,22 +32096,22 @@ vt_09F59958::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -32132,13 +32132,13 @@ vt_09F59958::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -32177,13 +32177,13 @@ vt_09F59958::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -32204,40 +32204,40 @@ vt_09F59958::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -32285,34 +32285,34 @@ vt_09F59958::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AB1E4
@@ -32559,22 +32559,22 @@ vt_09F59E20::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -32595,13 +32595,13 @@ vt_09F59E20::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -32640,13 +32640,13 @@ vt_09F59E20::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -32667,40 +32667,40 @@ vt_09F59E20::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -32748,34 +32748,34 @@ vt_09F59E20::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AB348
@@ -33013,22 +33013,22 @@ vt_09F5A2D0::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -33049,13 +33049,13 @@ vt_09F5A2D0::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -33094,13 +33094,13 @@ vt_09F5A2D0::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -33121,40 +33121,40 @@ vt_09F5A2D0::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -33202,34 +33202,34 @@ vt_09F5A2D0::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AB3C4
@@ -33467,22 +33467,22 @@ vt_09F5A780::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AB478
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -33503,13 +33503,13 @@ vt_09F5A780::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -33548,13 +33548,13 @@ vt_09F5A780::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -33575,40 +33575,40 @@ vt_09F5A780::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -33656,34 +33656,34 @@ vt_09F5A780::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AB6B8
@@ -33930,22 +33930,22 @@ vt_09F5AC48::
 	.4byte sub_080AB824
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -33966,13 +33966,13 @@ vt_09F5AC48::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -34011,13 +34011,13 @@ vt_09F5AC48::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -34038,40 +34038,40 @@ vt_09F5AC48::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -34125,28 +34125,28 @@ vt_09F5AC48::
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AB98C
@@ -34387,16 +34387,16 @@ vt_09F5B100::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080ABAAC
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -34423,13 +34423,13 @@ vt_09F5B100::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -34468,13 +34468,13 @@ vt_09F5B100::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -34495,40 +34495,40 @@ vt_09F5B100::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -34576,34 +34576,34 @@ vt_09F5B100::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080ABAD8
@@ -34841,22 +34841,22 @@ vt_09F5B5B0::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -34877,13 +34877,13 @@ vt_09F5B5B0::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -34922,13 +34922,13 @@ vt_09F5B5B0::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -34949,40 +34949,40 @@ vt_09F5B5B0::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -35030,34 +35030,34 @@ vt_09F5B5B0::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080ABB40
@@ -35295,22 +35295,22 @@ vt_09F5BA60::
 	.4byte sub_080ABC00
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -35331,13 +35331,13 @@ vt_09F5BA60::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -35376,13 +35376,13 @@ vt_09F5BA60::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -35403,40 +35403,40 @@ vt_09F5BA60::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -35484,34 +35484,34 @@ vt_09F5BA60::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080ABDBC
@@ -35761,22 +35761,22 @@ vt_09F5BF30::
 	.4byte sub_080ABF7C
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -35797,13 +35797,13 @@ vt_09F5BF30::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -35842,13 +35842,13 @@ vt_09F5BF30::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -35869,40 +35869,40 @@ vt_09F5BF30::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -35950,34 +35950,34 @@ vt_09F5BF30::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AC044
@@ -36215,22 +36215,22 @@ vt_09F5C3E0::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -36251,13 +36251,13 @@ vt_09F5C3E0::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -36296,13 +36296,13 @@ vt_09F5C3E0::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -36323,40 +36323,40 @@ vt_09F5C3E0::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -36404,34 +36404,34 @@ vt_09F5C3E0::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AC1D0
@@ -36669,22 +36669,22 @@ vt_09F5C890::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -36705,13 +36705,13 @@ vt_09F5C890::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -36750,13 +36750,13 @@ vt_09F5C890::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -36777,34 +36777,34 @@ vt_09F5C890::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -36858,34 +36858,34 @@ vt_09F5C890::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AC2A0
@@ -37123,22 +37123,22 @@ vt_09F5CD40::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -37159,13 +37159,13 @@ vt_09F5CD40::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -37204,13 +37204,13 @@ vt_09F5CD40::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -37231,40 +37231,40 @@ vt_09F5CD40::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -37312,34 +37312,34 @@ vt_09F5CD40::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AC4A8
@@ -37586,22 +37586,22 @@ vt_09F5D208::
 	.4byte sub_080AC590
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -37622,13 +37622,13 @@ vt_09F5D208::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -37667,13 +37667,13 @@ vt_09F5D208::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -37694,40 +37694,40 @@ vt_09F5D208::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -37775,34 +37775,34 @@ vt_09F5D208::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AC678
@@ -38040,22 +38040,22 @@ vt_09F5D6B8::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -38076,13 +38076,13 @@ vt_09F5D6B8::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -38121,13 +38121,13 @@ vt_09F5D6B8::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -38148,40 +38148,40 @@ vt_09F5D6B8::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -38229,34 +38229,34 @@ vt_09F5D6B8::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AC704
@@ -38494,22 +38494,22 @@ vt_09F5DB68::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -38530,13 +38530,13 @@ vt_09F5DB68::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -38575,13 +38575,13 @@ vt_09F5DB68::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -38602,40 +38602,40 @@ vt_09F5DB68::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -38683,34 +38683,34 @@ vt_09F5DB68::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AC7A0
@@ -38948,22 +38948,22 @@ vt_09F5E018::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -38984,13 +38984,13 @@ vt_09F5E018::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -39029,13 +39029,13 @@ vt_09F5E018::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -39056,40 +39056,40 @@ vt_09F5E018::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -39137,34 +39137,34 @@ vt_09F5E018::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AC7E4
@@ -39402,22 +39402,22 @@ vt_09F5E4C8::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -39438,13 +39438,13 @@ vt_09F5E4C8::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -39483,13 +39483,13 @@ vt_09F5E4C8::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -39510,40 +39510,40 @@ vt_09F5E4C8::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -39591,34 +39591,34 @@ vt_09F5E4C8::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AC850
@@ -39856,22 +39856,22 @@ vt_09F5E978::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -39892,13 +39892,13 @@ vt_09F5E978::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -39937,13 +39937,13 @@ vt_09F5E978::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -39964,40 +39964,40 @@ vt_09F5E978::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -40045,34 +40045,34 @@ vt_09F5E978::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AC9D4
@@ -40319,22 +40319,22 @@ vt_09F5EE40::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -40355,13 +40355,13 @@ vt_09F5EE40::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -40400,13 +40400,13 @@ vt_09F5EE40::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -40427,40 +40427,40 @@ vt_09F5EE40::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -40508,34 +40508,34 @@ vt_09F5EE40::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080ACA90
@@ -40773,22 +40773,22 @@ vt_09F5F2F0::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -40809,13 +40809,13 @@ vt_09F5F2F0::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -40854,13 +40854,13 @@ vt_09F5F2F0::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -40881,40 +40881,40 @@ vt_09F5F2F0::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -40962,34 +40962,34 @@ vt_09F5F2F0::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080ACC04
@@ -41236,16 +41236,16 @@ vt_09F5F7B8::
 	.4byte sub_080ACD84
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
@@ -41272,13 +41272,13 @@ vt_09F5F7B8::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -41317,13 +41317,13 @@ vt_09F5F7B8::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -41344,40 +41344,40 @@ vt_09F5F7B8::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -41425,34 +41425,34 @@ vt_09F5F7B8::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080ACE64
@@ -41690,22 +41690,22 @@ vt_09F5FC68::
 	.4byte sub_080ACF3C
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -41726,13 +41726,13 @@ vt_09F5FC68::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -41771,13 +41771,13 @@ vt_09F5FC68::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -41798,40 +41798,40 @@ vt_09F5FC68::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -41879,34 +41879,34 @@ vt_09F5FC68::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AD004
@@ -42144,22 +42144,22 @@ vt_09F60118::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -42180,13 +42180,13 @@ vt_09F60118::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -42225,13 +42225,13 @@ vt_09F60118::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -42252,40 +42252,40 @@ vt_09F60118::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -42333,34 +42333,34 @@ vt_09F60118::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AD10C
@@ -42598,22 +42598,22 @@ vt_09F605C8::
 	.4byte sub_080AD204
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -42634,13 +42634,13 @@ vt_09F605C8::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -42679,13 +42679,13 @@ vt_09F605C8::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -42706,40 +42706,40 @@ vt_09F605C8::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -42787,34 +42787,34 @@ vt_09F605C8::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AD2C8
@@ -43052,22 +43052,22 @@ vt_09F60A78::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -43088,13 +43088,13 @@ vt_09F60A78::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -43133,13 +43133,13 @@ vt_09F60A78::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -43160,40 +43160,40 @@ vt_09F60A78::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -43241,34 +43241,34 @@ vt_09F60A78::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AD320
@@ -43506,22 +43506,22 @@ vt_09F60F28::
 	.4byte sub_080AD3E4
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -43542,13 +43542,13 @@ vt_09F60F28::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -43587,13 +43587,13 @@ vt_09F60F28::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -43614,34 +43614,34 @@ vt_09F60F28::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -43695,34 +43695,34 @@ vt_09F60F28::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AD5D0
@@ -43972,22 +43972,22 @@ vt_09F613F8::
 	.4byte sub_080AD6F0
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -44008,13 +44008,13 @@ vt_09F613F8::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -44053,13 +44053,13 @@ vt_09F613F8::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -44080,40 +44080,40 @@ vt_09F613F8::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -44161,34 +44161,34 @@ vt_09F613F8::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AD874
@@ -44438,22 +44438,22 @@ vt_09F618C8::
 	.4byte sub_080AD9B4
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -44474,13 +44474,13 @@ vt_09F618C8::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -44519,13 +44519,13 @@ vt_09F618C8::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -44546,40 +44546,40 @@ vt_09F618C8::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -44627,34 +44627,34 @@ vt_09F618C8::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080ADBE8
@@ -44901,22 +44901,22 @@ vt_09F61D90::
 	.4byte sub_080ADD38
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -44937,13 +44937,13 @@ vt_09F61D90::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -44982,13 +44982,13 @@ vt_09F61D90::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -45009,40 +45009,40 @@ vt_09F61D90::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -45090,34 +45090,34 @@ vt_09F61D90::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080ADE38
@@ -45355,22 +45355,22 @@ vt_09F62240::
 	.4byte sub_080AE054
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -45391,13 +45391,13 @@ vt_09F62240::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -45436,13 +45436,13 @@ vt_09F62240::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -45463,40 +45463,40 @@ vt_09F62240::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -45544,34 +45544,34 @@ vt_09F62240::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AE118
@@ -45809,22 +45809,22 @@ vt_09F626F0::
 	.4byte sub_080AE1F0
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -45845,13 +45845,13 @@ vt_09F626F0::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -45890,13 +45890,13 @@ vt_09F626F0::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -45917,40 +45917,40 @@ vt_09F626F0::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -45998,34 +45998,34 @@ vt_09F626F0::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AE490
@@ -46263,22 +46263,22 @@ vt_09F62BA0::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -46299,13 +46299,13 @@ vt_09F62BA0::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -46344,13 +46344,13 @@ vt_09F62BA0::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -46371,40 +46371,40 @@ vt_09F62BA0::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -46452,34 +46452,34 @@ vt_09F62BA0::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AE630
@@ -46717,22 +46717,22 @@ vt_09F63050::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -46753,13 +46753,13 @@ vt_09F63050::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -46798,13 +46798,13 @@ vt_09F63050::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -46825,40 +46825,40 @@ vt_09F63050::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -46906,34 +46906,34 @@ vt_09F63050::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AE6E4
@@ -47171,22 +47171,22 @@ vt_09F63500::
 	.4byte sub_080AE754
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -47207,13 +47207,13 @@ vt_09F63500::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -47252,13 +47252,13 @@ vt_09F63500::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -47279,40 +47279,40 @@ vt_09F63500::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -47360,34 +47360,34 @@ vt_09F63500::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AE818
@@ -47625,22 +47625,22 @@ vt_09F639B0::
 	.4byte sub_080AEAD0
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AE8FC
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -47661,13 +47661,13 @@ vt_09F639B0::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -47706,13 +47706,13 @@ vt_09F639B0::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -47733,34 +47733,34 @@ vt_09F639B0::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -47814,34 +47814,34 @@ vt_09F639B0::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEBB8
@@ -48082,22 +48082,22 @@ vt_09F63E68::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -48118,13 +48118,13 @@ vt_09F63E68::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -48163,13 +48163,13 @@ vt_09F63E68::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -48190,40 +48190,40 @@ vt_09F63E68::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -48271,34 +48271,34 @@ vt_09F63E68::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AECC4
@@ -48536,22 +48536,22 @@ vt_09F64318::
 	.4byte sub_080AF1BC
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEE58
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -48572,13 +48572,13 @@ vt_09F64318::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF014
@@ -48617,13 +48617,13 @@ vt_09F64318::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -48644,40 +48644,40 @@ vt_09F64318::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -48725,34 +48725,34 @@ vt_09F64318::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AF25C
@@ -48937,10 +48937,10 @@ vt_09F64750::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
@@ -48949,118 +48949,118 @@ vt_09F64750::
 	.4byte sub_080B0758
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B065C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -49075,7 +49075,7 @@ vt_09F64750::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -49197,10 +49197,10 @@ vt_09F64A00::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
@@ -49209,118 +49209,118 @@ vt_09F64A00::
 	.4byte sub_080B0820
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B0788
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -49335,7 +49335,7 @@ vt_09F64A00::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -49457,10 +49457,10 @@ vt_09F64CB0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
@@ -49469,13 +49469,13 @@ vt_09F64CB0::
 	.4byte sub_080B097C
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B0950
@@ -49484,103 +49484,103 @@ vt_09F64CB0::
 	.4byte sub_080B0850
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B0894
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -49595,7 +49595,7 @@ vt_09F64CB0::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -49717,130 +49717,130 @@ vt_09F64F60::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B09AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B09F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -49855,7 +49855,7 @@ vt_09F64F60::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -49977,130 +49977,130 @@ vt_09F65210::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B0A8C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -50115,7 +50115,7 @@ vt_09F65210::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -50237,25 +50237,25 @@ vt_09F654C0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B0C78
@@ -50264,103 +50264,103 @@ vt_09F654C0::
 	.4byte sub_080B0B44
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B0B88
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -50375,7 +50375,7 @@ vt_09F654C0::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -50497,10 +50497,10 @@ vt_09F65770::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
@@ -50509,13 +50509,13 @@ vt_09F65770::
 	.4byte sub_080B0DCC
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B0DA0
@@ -50524,103 +50524,103 @@ vt_09F65770::
 	.4byte sub_080B0CB8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B0CFC
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -50635,7 +50635,7 @@ vt_09F65770::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -50757,130 +50757,130 @@ vt_09F65A20::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B0DFC
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -50895,7 +50895,7 @@ vt_09F65A20::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -51017,10 +51017,10 @@ vt_09F65CD0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
@@ -51029,118 +51029,118 @@ vt_09F65CD0::
 	.4byte sub_080B0E64
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -51155,7 +51155,7 @@ vt_09F65CD0::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -51277,10 +51277,10 @@ vt_09F65F80::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
@@ -51289,118 +51289,118 @@ vt_09F65F80::
 	.4byte sub_080B0EBC
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -51415,7 +51415,7 @@ vt_09F65F80::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -51537,130 +51537,130 @@ vt_09F66230::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B0F38
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -51675,7 +51675,7 @@ vt_09F66230::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -51797,130 +51797,130 @@ vt_09F664E0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B1158
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -51935,7 +51935,7 @@ vt_09F664E0::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -52057,130 +52057,130 @@ vt_09F66790::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B1238
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -52195,7 +52195,7 @@ vt_09F66790::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -52317,10 +52317,10 @@ vt_09F66A40::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
@@ -52329,13 +52329,13 @@ vt_09F66A40::
 	.4byte sub_080B13F8
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B13D4
@@ -52344,103 +52344,103 @@ vt_09F66A40::
 	.4byte sub_080B1380
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B13C4
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -52455,7 +52455,7 @@ vt_09F66A40::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -52577,130 +52577,130 @@ vt_09F66CF0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B1428
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -52715,7 +52715,7 @@ vt_09F66CF0::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -52837,130 +52837,130 @@ vt_09F66FA0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B147C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -52975,7 +52975,7 @@ vt_09F66FA0::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -53097,130 +53097,130 @@ vt_09F67250::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B15C0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -53235,7 +53235,7 @@ vt_09F67250::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -53357,10 +53357,10 @@ vt_09F67500::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
@@ -53369,13 +53369,13 @@ vt_09F67500::
 	.4byte sub_080B1744
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B1718
@@ -53384,103 +53384,103 @@ vt_09F67500::
 	.4byte sub_080B1650
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B1694
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -53495,7 +53495,7 @@ vt_09F67500::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -53617,10 +53617,10 @@ vt_09F677B0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
@@ -53629,13 +53629,13 @@ vt_09F677B0::
 	.4byte sub_080B1868
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B183C
@@ -53644,103 +53644,103 @@ vt_09F677B0::
 	.4byte sub_080B1774
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B17B8
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -53755,7 +53755,7 @@ vt_09F677B0::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -53877,130 +53877,130 @@ vt_09F67A60::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B1898
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -54015,7 +54015,7 @@ vt_09F67A60::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -54137,130 +54137,130 @@ vt_09F67D10::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B1904
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -54275,7 +54275,7 @@ vt_09F67D10::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -54397,25 +54397,25 @@ vt_09F67FC0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B1C1C
@@ -54424,103 +54424,103 @@ vt_09F67FC0::
 	.4byte sub_080B1970
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B19B4
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -54535,7 +54535,7 @@ vt_09F67FC0::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -54657,130 +54657,130 @@ vt_09F68270::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B1C48
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -54795,7 +54795,7 @@ vt_09F68270::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -54917,130 +54917,130 @@ vt_09F68520::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B1DA8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B1C9C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -55055,7 +55055,7 @@ vt_09F68520::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -55177,10 +55177,10 @@ vt_09F687D0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
@@ -55189,13 +55189,13 @@ vt_09F687D0::
 	.4byte sub_080B1F34
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B1F08
@@ -55204,103 +55204,103 @@ vt_09F687D0::
 	.4byte sub_080B1DD0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B1E14
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -55315,7 +55315,7 @@ vt_09F687D0::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -55437,10 +55437,10 @@ vt_09F68A80::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
@@ -55449,13 +55449,13 @@ vt_09F68A80::
 	.4byte sub_080B2080
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B2054
@@ -55464,103 +55464,103 @@ vt_09F68A80::
 	.4byte sub_080B1F64
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B1FA8
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -55575,7 +55575,7 @@ vt_09F68A80::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -55697,10 +55697,10 @@ vt_09F68D30::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
@@ -55709,13 +55709,13 @@ vt_09F68D30::
 	.4byte sub_080B21D0
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B21A4
@@ -55724,103 +55724,103 @@ vt_09F68D30::
 	.4byte sub_080B20B0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B20F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -55835,7 +55835,7 @@ vt_09F68D30::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -55957,130 +55957,130 @@ vt_09F68FE0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B21FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -56095,7 +56095,7 @@ vt_09F68FE0::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -56217,25 +56217,25 @@ vt_09F69290::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B255C
@@ -56244,103 +56244,103 @@ vt_09F69290::
 	.4byte sub_080B23B0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B242C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -56355,7 +56355,7 @@ vt_09F69290::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -56480,130 +56480,130 @@ vt_09F69548::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B259C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -56618,7 +56618,7 @@ vt_09F69548::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -56740,10 +56740,10 @@ vt_09F697F8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
@@ -56752,118 +56752,118 @@ vt_09F697F8::
 	.4byte sub_080B25D8
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -56878,7 +56878,7 @@ vt_09F697F8::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -57000,10 +57000,10 @@ vt_09F69AA8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
@@ -57012,13 +57012,13 @@ vt_09F69AA8::
 	.4byte sub_080B2764
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B2740
@@ -57027,103 +57027,103 @@ vt_09F69AA8::
 	.4byte sub_080B2634
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B26BC
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -57138,7 +57138,7 @@ vt_09F69AA8::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -57260,130 +57260,130 @@ vt_09F69D58::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B2794
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -57398,7 +57398,7 @@ vt_09F69D58::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -57520,130 +57520,130 @@ vt_09F6A008::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B27E8
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -57658,7 +57658,7 @@ vt_09F6A008::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -57780,10 +57780,10 @@ vt_09F6A2B8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
@@ -57792,13 +57792,13 @@ vt_09F6A2B8::
 	.4byte sub_080B2958
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B2950
@@ -57807,103 +57807,103 @@ vt_09F6A2B8::
 	.4byte nullsub_141
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B2848
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -57918,7 +57918,7 @@ vt_09F6A2B8::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -58040,10 +58040,10 @@ vt_09F6A568::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
@@ -58052,13 +58052,13 @@ vt_09F6A568::
 	.4byte sub_080B2A80
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B2A54
@@ -58067,103 +58067,103 @@ vt_09F6A568::
 	.4byte sub_080B2984
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B29C8
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -58178,7 +58178,7 @@ vt_09F6A568::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -58300,130 +58300,130 @@ vt_09F6A818::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B2AB0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -58438,7 +58438,7 @@ vt_09F6A818::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -58560,10 +58560,10 @@ vt_09F6AAC8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
@@ -58572,13 +58572,13 @@ vt_09F6AAC8::
 	.4byte sub_080B2CBC
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B2C90
@@ -58587,103 +58587,103 @@ vt_09F6AAC8::
 	.4byte sub_080B2BA0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B2BE4
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -58698,7 +58698,7 @@ vt_09F6AAC8::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -58820,130 +58820,130 @@ vt_09F6AD78::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B2D18
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B2CEC
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -58958,7 +58958,7 @@ vt_09F6AD78::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -59080,130 +59080,130 @@ vt_09F6B028::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B2D9C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -59218,7 +59218,7 @@ vt_09F6B028::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -59340,130 +59340,130 @@ vt_09F6B2D8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B2E20
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -59478,7 +59478,7 @@ vt_09F6B2D8::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -59600,31 +59600,31 @@ vt_09F6B588::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B30D8
@@ -59633,97 +59633,97 @@ vt_09F6B588::
 	.4byte sub_080B3090
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B2F98
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -59738,7 +59738,7 @@ vt_09F6B588::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -59866,130 +59866,130 @@ vt_09F6B848::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B3160
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -60004,7 +60004,7 @@ vt_09F6B848::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -60126,25 +60126,25 @@ vt_09F6BAF8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B3270
@@ -60153,103 +60153,103 @@ vt_09F6BAF8::
 	.4byte sub_080B322C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -60264,7 +60264,7 @@ vt_09F6BAF8::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -60386,130 +60386,130 @@ vt_09F6BDA8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B32B4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -60524,7 +60524,7 @@ vt_09F6BDA8::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -60646,130 +60646,130 @@ vt_09F6C058::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B32E8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -60784,7 +60784,7 @@ vt_09F6C058::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -60906,130 +60906,130 @@ vt_09F6C308::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B331C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -61044,7 +61044,7 @@ vt_09F6C308::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -61166,130 +61166,130 @@ vt_09F6C5B8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B33E4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -61304,7 +61304,7 @@ vt_09F6C5B8::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -61426,130 +61426,130 @@ vt_09F6C868::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B34AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -61564,7 +61564,7 @@ vt_09F6C868::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -61686,130 +61686,130 @@ vt_09F6CB18::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B3574
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -61824,7 +61824,7 @@ vt_09F6CB18::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -61946,130 +61946,130 @@ vt_09F6CDC8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B363C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -62084,7 +62084,7 @@ vt_09F6CDC8::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -62206,130 +62206,130 @@ vt_09F6D078::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B37B4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -62344,7 +62344,7 @@ vt_09F6D078::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -62466,28 +62466,28 @@ vt_09F6D328::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B387C
@@ -62496,100 +62496,100 @@ vt_09F6D328::
 	.4byte sub_080B38FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B38C0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -62604,7 +62604,7 @@ vt_09F6D328::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -62726,7 +62726,7 @@ vt_09F6D5D8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B3A2C
@@ -62738,118 +62738,118 @@ vt_09F6D5D8::
 	.4byte sub_080B39F4
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B396C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B3940
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -62864,7 +62864,7 @@ vt_09F6D5D8::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -62986,130 +62986,130 @@ vt_09F6D888::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B3A84
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -63124,7 +63124,7 @@ vt_09F6D888::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -63246,130 +63246,130 @@ vt_09F6DB38::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -63384,7 +63384,7 @@ vt_09F6DB38::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -63506,19 +63506,19 @@ vt_09F6DDE8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_142
@@ -63533,103 +63533,103 @@ vt_09F6DDE8::
 	.4byte sub_080B3B04
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -63644,7 +63644,7 @@ vt_09F6DDE8::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -63766,25 +63766,25 @@ vt_09F6E098::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B3CA8
@@ -63799,97 +63799,97 @@ vt_09F6E098::
 	.4byte sub_080B3CC0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B3C40
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B3BD8
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -63904,7 +63904,7 @@ vt_09F6E098::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -64026,130 +64026,130 @@ vt_09F6E348::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -64164,7 +64164,7 @@ vt_09F6E348::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -64286,130 +64286,130 @@ vt_09F6E5F8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B3DAC
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B3D6C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -64424,7 +64424,7 @@ vt_09F6E5F8::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -64546,130 +64546,130 @@ vt_09F6E8A8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B3E00
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -64684,7 +64684,7 @@ vt_09F6E8A8::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -64806,10 +64806,10 @@ vt_09F6EB58::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4110
@@ -64818,118 +64818,118 @@ vt_09F6EB58::
 	.4byte sub_080B4094
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4054
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4124
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -64944,7 +64944,7 @@ vt_09F6EB58::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -65066,130 +65066,130 @@ vt_09F6EE08::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4310
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4288
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4274
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -65204,7 +65204,7 @@ vt_09F6EE08::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -65326,130 +65326,130 @@ vt_09F6F0B8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4414
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -65464,7 +65464,7 @@ vt_09F6F0B8::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -65586,130 +65586,130 @@ vt_09F6F368::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B44A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -65724,7 +65724,7 @@ vt_09F6F368::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -65846,130 +65846,130 @@ vt_09F6F618::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4540
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -65984,7 +65984,7 @@ vt_09F6F618::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -66106,130 +66106,130 @@ vt_09F6F8C8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4598
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -66244,7 +66244,7 @@ vt_09F6F8C8::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -66366,130 +66366,130 @@ vt_09F6FB78::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B45C8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -66504,7 +66504,7 @@ vt_09F6FB78::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -66626,130 +66626,130 @@ vt_09F6FE28::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4638
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B45F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -66764,7 +66764,7 @@ vt_09F6FE28::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -66886,130 +66886,130 @@ vt_09F700D8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4730
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -67024,7 +67024,7 @@ vt_09F700D8::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -67146,130 +67146,130 @@ vt_09F70388::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B47E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -67284,7 +67284,7 @@ vt_09F70388::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -67406,130 +67406,130 @@ vt_09F70638::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4820
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -67544,7 +67544,7 @@ vt_09F70638::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -67666,130 +67666,130 @@ vt_09F708E8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B48F0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B48A8
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B487C
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -67804,7 +67804,7 @@ vt_09F708E8::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -67926,130 +67926,130 @@ vt_09F70B98::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B493C
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -68064,7 +68064,7 @@ vt_09F70B98::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -68186,25 +68186,25 @@ vt_09F70E48::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4AE8
@@ -68213,103 +68213,103 @@ vt_09F70E48::
 	.4byte sub_080B49D4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4A4C
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4A18
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -68324,7 +68324,7 @@ vt_09F70E48::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -68446,130 +68446,130 @@ vt_09F710F8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4B14
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -68584,7 +68584,7 @@ vt_09F710F8::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -68706,130 +68706,130 @@ vt_09F713A8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4B90
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -68844,7 +68844,7 @@ vt_09F713A8::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -68969,130 +68969,130 @@ vt_09F71660::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4C44
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -69107,7 +69107,7 @@ vt_09F71660::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -69229,25 +69229,25 @@ vt_09F71910::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4DD8
@@ -69265,94 +69265,94 @@ vt_09F71910::
 	.4byte sub_080B4D74
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4CE0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -69367,7 +69367,7 @@ vt_09F71910::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -69489,130 +69489,130 @@ vt_09F71BC0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4F28
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4E70
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -69627,7 +69627,7 @@ vt_09F71BC0::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -69749,130 +69749,130 @@ vt_09F71E70::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4F68
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -69887,7 +69887,7 @@ vt_09F71E70::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -70009,130 +70009,130 @@ vt_09F72120::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -70147,7 +70147,7 @@ vt_09F72120::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -78095,130 +78095,130 @@ vt_09F77440::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BC4D0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082D70
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082DD0
@@ -78233,7 +78233,7 @@ vt_09F77440::
 	.4byte sub_08082E1C
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082F08
@@ -78358,130 +78358,130 @@ vt_09F776F8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BC5D8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082D70
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082DD0
@@ -78496,7 +78496,7 @@ vt_09F776F8::
 	.4byte sub_08082E1C
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082F08
@@ -78621,130 +78621,130 @@ vt_09F779B0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BC69C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082D70
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082DD0
@@ -78759,7 +78759,7 @@ vt_09F779B0::
 	.4byte sub_08082E1C
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082F08
@@ -78884,130 +78884,130 @@ vt_09F77C68::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BC768
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082D70
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082DD0
@@ -79022,7 +79022,7 @@ vt_09F77C68::
 	.4byte sub_08082E1C
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082F08
@@ -79147,130 +79147,130 @@ vt_09F77F20::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BC830
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082D70
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082DD0
@@ -79285,7 +79285,7 @@ vt_09F77F20::
 	.4byte sub_08082E1C
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082F08
@@ -79410,130 +79410,130 @@ vt_09F781D8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BC8F8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082D70
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082DD0
@@ -79548,7 +79548,7 @@ vt_09F781D8::
 	.4byte sub_08082E1C
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082F08
@@ -79673,130 +79673,130 @@ vt_09F78490::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BC9C0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082D70
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082DD0
@@ -79811,7 +79811,7 @@ vt_09F78490::
 	.4byte sub_08082E1C
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082F08
@@ -79936,130 +79936,130 @@ vt_09F78748::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BCDDC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082D70
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082DD0
@@ -80074,7 +80074,7 @@ vt_09F78748::
 	.4byte sub_08082E1C
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082F08
@@ -80202,130 +80202,130 @@ vt_09F78A08::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BCFAC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082D70
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082DD0
@@ -80340,7 +80340,7 @@ vt_09F78A08::
 	.4byte sub_08082E1C
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082F08
@@ -80465,25 +80465,25 @@ vt_09F78CC0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BD138
@@ -80498,97 +80498,97 @@ vt_09F78CC0::
 	.4byte sub_080BD150
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BD094
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_143
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BD000
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082DD0
@@ -80603,7 +80603,7 @@ vt_09F78CC0::
 	.4byte sub_08082E1C
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082F08
@@ -80728,130 +80728,130 @@ vt_09F78F78::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BD5B4
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BD294
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BD1D0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082D70
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082DD0
@@ -80866,7 +80866,7 @@ vt_09F78F78::
 	.4byte sub_08082E1C
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082F08
@@ -80991,19 +80991,19 @@ vt_09F79230::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_144
@@ -81018,103 +81018,103 @@ vt_09F79230::
 	.4byte sub_080BD730
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BD70C
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082D70
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082DD0
@@ -81129,7 +81129,7 @@ vt_09F79230::
 	.4byte sub_08082E1C
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082F08
@@ -81254,19 +81254,19 @@ vt_09F794E8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_145
@@ -81281,103 +81281,103 @@ vt_09F794E8::
 	.4byte sub_080BD854
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BD830
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082D70
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082DD0
@@ -81392,7 +81392,7 @@ vt_09F794E8::
 	.4byte sub_08082E1C
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082F08
@@ -81517,130 +81517,130 @@ __vt_5Goods::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082D70
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082DD0
@@ -81655,7 +81655,7 @@ __vt_5Goods::
 	.4byte sub_08082E1C
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082F08
@@ -81780,133 +81780,133 @@ _vt.5Goods::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5Goods
+	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte skill_1a0__5Goods
+	.4byte action_1a0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_1c0__5Goods
+	.4byte action_1c0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte id__C5Goods
@@ -81915,13 +81915,13 @@ _vt.5Goods::
 	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__C5Goods
+	.4byte action_1d8__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte skill_1e0__5Goods
+	.4byte action_1e0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte effect__C5Goods
@@ -81954,10 +81954,10 @@ _vt.5Goods::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__C5Goods
+	.4byte getUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__C5Goods
+	.4byte getForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -81984,13 +81984,13 @@ _vt.5Goods::
 	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_288__5Goods
+	.4byte action_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_290__5Goods
+	.4byte action_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_298__5Goods
+	.4byte action_298__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte goods_2a0__C5Goods
@@ -82060,31 +82060,31 @@ _vt.11TriviaCard4::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0864
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BE46C
@@ -82093,100 +82093,100 @@ _vt.11TriviaCard4::
 	.4byte sub_080BE428
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BE11C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5Goods
+	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte skill_1a0__5Goods
+	.4byte action_1a0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_1c0__5Goods
+	.4byte action_1c0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte id__C5Goods
@@ -82195,13 +82195,13 @@ _vt.11TriviaCard4::
 	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__C5Goods
+	.4byte action_1d8__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte skill_1e0__5Goods
+	.4byte action_1e0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte effect__C5Goods
@@ -82234,10 +82234,10 @@ _vt.11TriviaCard4::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__C5Goods
+	.4byte getUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__C5Goods
+	.4byte getForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -82264,13 +82264,13 @@ _vt.11TriviaCard4::
 	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_288__5Goods
+	.4byte action_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_290__5Goods
+	.4byte action_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_298__5Goods
+	.4byte action_298__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte goods_2a0__C5Goods
@@ -82338,31 +82338,31 @@ _vt.11TriviaCard3::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0864
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BE768
@@ -82371,100 +82371,100 @@ _vt.11TriviaCard3::
 	.4byte sub_080BE724
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BE4F8
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5Goods
+	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte skill_1a0__5Goods
+	.4byte action_1a0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_1c0__5Goods
+	.4byte action_1c0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte id__C5Goods
@@ -82473,13 +82473,13 @@ _vt.11TriviaCard3::
 	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__C5Goods
+	.4byte action_1d8__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte skill_1e0__5Goods
+	.4byte action_1e0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte effect__C5Goods
@@ -82512,10 +82512,10 @@ _vt.11TriviaCard3::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__C5Goods
+	.4byte getUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__C5Goods
+	.4byte getForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -82542,13 +82542,13 @@ _vt.11TriviaCard3::
 	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_288__5Goods
+	.4byte action_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_290__5Goods
+	.4byte action_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_298__5Goods
+	.4byte action_298__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte goods_2a0__C5Goods
@@ -82616,31 +82616,31 @@ _vt.11TriviaCard2::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0864
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BEA70
@@ -82649,100 +82649,100 @@ _vt.11TriviaCard2::
 	.4byte sub_080BEA2C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BE7F4
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5Goods
+	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte skill_1a0__5Goods
+	.4byte action_1a0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_1c0__5Goods
+	.4byte action_1c0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte id__C5Goods
@@ -82751,13 +82751,13 @@ _vt.11TriviaCard2::
 	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__C5Goods
+	.4byte action_1d8__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte skill_1e0__5Goods
+	.4byte action_1e0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte effect__C5Goods
@@ -82790,10 +82790,10 @@ _vt.11TriviaCard2::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__C5Goods
+	.4byte getUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__C5Goods
+	.4byte getForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -82820,13 +82820,13 @@ _vt.11TriviaCard2::
 	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_288__5Goods
+	.4byte action_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_290__5Goods
+	.4byte action_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_298__5Goods
+	.4byte action_298__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte goods_2a0__C5Goods
@@ -82894,31 +82894,31 @@ _vt.11TriviaCard1::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0864
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BEDD4
@@ -82927,100 +82927,100 @@ _vt.11TriviaCard1::
 	.4byte sub_080BED90
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BEAFC
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5Goods
+	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte skill_1a0__5Goods
+	.4byte action_1a0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_1c0__5Goods
+	.4byte action_1c0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte id__C5Goods
@@ -83029,13 +83029,13 @@ _vt.11TriviaCard1::
 	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__C5Goods
+	.4byte action_1d8__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte skill_1e0__5Goods
+	.4byte action_1e0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte effect__C5Goods
@@ -83068,10 +83068,10 @@ _vt.11TriviaCard1::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__C5Goods
+	.4byte getUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__C5Goods
+	.4byte getForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -83098,13 +83098,13 @@ _vt.11TriviaCard1::
 	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_288__5Goods
+	.4byte action_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_290__5Goods
+	.4byte action_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_298__5Goods
+	.4byte action_298__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte goods_2a0__C5Goods
@@ -83172,22 +83172,22 @@ _vt.9DragoFang::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0864
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06AC
@@ -83205,100 +83205,100 @@ _vt.9DragoFang::
 	.4byte sub_080BEF74
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BEEA4
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5Goods
+	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte skill_1a0__5Goods
+	.4byte action_1a0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_1c0__5Goods
+	.4byte action_1c0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte id__C5Goods
@@ -83307,13 +83307,13 @@ _vt.9DragoFang::
 	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__C5Goods
+	.4byte action_1d8__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte skill_1e0__5Goods
+	.4byte action_1e0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte effect__C5Goods
@@ -83346,10 +83346,10 @@ _vt.9DragoFang::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__C5Goods
+	.4byte getUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__C5Goods
+	.4byte getForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -83376,13 +83376,13 @@ _vt.9DragoFang::
 	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_288__5Goods
+	.4byte action_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_290__5Goods
+	.4byte action_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_298__5Goods
+	.4byte action_298__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte goods_2a0__C5Goods
@@ -83450,133 +83450,133 @@ _vt.14ShieldSnatcher::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0864
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BEFE8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5Goods
+	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte skill_1a0__5Goods
+	.4byte action_1a0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_1c0__5Goods
+	.4byte action_1c0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte id__C5Goods
@@ -83585,13 +83585,13 @@ _vt.14ShieldSnatcher::
 	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__C5Goods
+	.4byte action_1d8__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte skill_1e0__5Goods
+	.4byte action_1e0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte effect__C5Goods
@@ -83624,10 +83624,10 @@ _vt.14ShieldSnatcher::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__C5Goods
+	.4byte getUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__C5Goods
+	.4byte getForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -83654,13 +83654,13 @@ _vt.14ShieldSnatcher::
 	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_288__5Goods
+	.4byte action_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_290__5Goods
+	.4byte action_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_298__5Goods
+	.4byte action_298__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte goods_2a0__C5Goods
@@ -83728,133 +83728,133 @@ _vt.16CupOfLifenoodles::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0864
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BF14C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5Goods
+	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte skill_1a0__5Goods
+	.4byte action_1a0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_1c0__5Goods
+	.4byte action_1c0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte id__C5Goods
@@ -83863,13 +83863,13 @@ _vt.16CupOfLifenoodles::
 	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__C5Goods
+	.4byte action_1d8__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte skill_1e0__5Goods
+	.4byte action_1e0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte effect__C5Goods
@@ -83902,10 +83902,10 @@ _vt.16CupOfLifenoodles::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__C5Goods
+	.4byte getUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__C5Goods
+	.4byte getForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -83932,13 +83932,13 @@ _vt.16CupOfLifenoodles::
 	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_288__5Goods
+	.4byte action_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_290__5Goods
+	.4byte action_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_298__5Goods
+	.4byte action_298__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte goods_2a0__C5Goods
@@ -84006,133 +84006,133 @@ _vt.10SecretHerb::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0864
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BF254
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5Goods
+	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte skill_1a0__5Goods
+	.4byte action_1a0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_1c0__5Goods
+	.4byte action_1c0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte id__C5Goods
@@ -84141,13 +84141,13 @@ _vt.10SecretHerb::
 	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__C5Goods
+	.4byte action_1d8__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte skill_1e0__5Goods
+	.4byte action_1e0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte effect__C5Goods
@@ -84180,10 +84180,10 @@ _vt.10SecretHerb::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__C5Goods
+	.4byte getUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__C5Goods
+	.4byte getForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -84210,13 +84210,13 @@ _vt.10SecretHerb::
 	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_288__5Goods
+	.4byte action_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_290__5Goods
+	.4byte action_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_298__5Goods
+	.4byte action_298__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte goods_2a0__C5Goods
@@ -84284,133 +84284,133 @@ _vt.8PaperFan::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0864
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BF370
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5Goods
+	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte skill_1a0__5Goods
+	.4byte action_1a0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_1c0__5Goods
+	.4byte action_1c0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte id__C5Goods
@@ -84419,13 +84419,13 @@ _vt.8PaperFan::
 	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__C5Goods
+	.4byte action_1d8__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte skill_1e0__5Goods
+	.4byte action_1e0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte effect__C5Goods
@@ -84458,10 +84458,10 @@ _vt.8PaperFan::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__C5Goods
+	.4byte getUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__C5Goods
+	.4byte getForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -84488,13 +84488,13 @@ _vt.8PaperFan::
 	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_288__5Goods
+	.4byte action_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_290__5Goods
+	.4byte action_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_298__5Goods
+	.4byte action_298__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte goods_2a0__C5Goods
@@ -84562,31 +84562,31 @@ _vt.11MadeYouLook::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0864
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BF4C8
@@ -84595,100 +84595,100 @@ _vt.11MadeYouLook::
 	.4byte sub_080BF47C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BF404
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5Goods
+	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte skill_1a0__5Goods
+	.4byte action_1a0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_1c0__5Goods
+	.4byte action_1c0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte id__C5Goods
@@ -84697,13 +84697,13 @@ _vt.11MadeYouLook::
 	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__C5Goods
+	.4byte action_1d8__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte skill_1e0__5Goods
+	.4byte action_1e0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte effect__C5Goods
@@ -84736,10 +84736,10 @@ _vt.11MadeYouLook::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__C5Goods
+	.4byte getUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__C5Goods
+	.4byte getForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -84766,13 +84766,13 @@ _vt.11MadeYouLook::
 	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_288__5Goods
+	.4byte action_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_290__5Goods
+	.4byte action_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_298__5Goods
+	.4byte action_298__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte goods_2a0__C5Goods
@@ -84840,31 +84840,31 @@ _vt.15AttackAttractor::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0864
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BF640
@@ -84873,100 +84873,100 @@ _vt.15AttackAttractor::
 	.4byte sub_080BF5FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BF5A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5Goods
+	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte skill_1a0__5Goods
+	.4byte action_1a0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_1c0__5Goods
+	.4byte action_1c0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte id__C5Goods
@@ -84975,13 +84975,13 @@ _vt.15AttackAttractor::
 	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__C5Goods
+	.4byte action_1d8__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte skill_1e0__5Goods
+	.4byte action_1e0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte effect__C5Goods
@@ -85014,10 +85014,10 @@ _vt.15AttackAttractor::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__C5Goods
+	.4byte getUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__C5Goods
+	.4byte getForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -85044,13 +85044,13 @@ _vt.15AttackAttractor::
 	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_288__5Goods
+	.4byte action_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_290__5Goods
+	.4byte action_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_298__5Goods
+	.4byte action_298__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte goods_2a0__C5Goods
@@ -85118,133 +85118,133 @@ _vt.15EnemyWimperizer::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0864
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BF6CC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5Goods
+	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte skill_1a0__5Goods
+	.4byte action_1a0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_1c0__5Goods
+	.4byte action_1c0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte id__C5Goods
@@ -85253,13 +85253,13 @@ _vt.15EnemyWimperizer::
 	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__C5Goods
+	.4byte action_1d8__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte skill_1e0__5Goods
+	.4byte action_1e0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte effect__C5Goods
@@ -85292,10 +85292,10 @@ _vt.15EnemyWimperizer::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__C5Goods
+	.4byte getUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__C5Goods
+	.4byte getForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -85322,13 +85322,13 @@ _vt.15EnemyWimperizer::
 	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_288__5Goods
+	.4byte action_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_290__5Goods
+	.4byte action_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_298__5Goods
+	.4byte action_298__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte goods_2a0__C5Goods
@@ -85396,133 +85396,133 @@ _vt.15EnemyBufferizer::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0864
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BF738
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5Goods
+	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte skill_1a0__5Goods
+	.4byte action_1a0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_1c0__5Goods
+	.4byte action_1c0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte id__C5Goods
@@ -85531,13 +85531,13 @@ _vt.15EnemyBufferizer::
 	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__C5Goods
+	.4byte action_1d8__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte skill_1e0__5Goods
+	.4byte action_1e0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte effect__C5Goods
@@ -85570,10 +85570,10 @@ _vt.15EnemyBufferizer::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__C5Goods
+	.4byte getUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__C5Goods
+	.4byte getForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -85600,13 +85600,13 @@ _vt.15EnemyBufferizer::
 	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_288__5Goods
+	.4byte action_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_290__5Goods
+	.4byte action_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_298__5Goods
+	.4byte action_298__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte goods_2a0__C5Goods
@@ -85674,133 +85674,133 @@ _vt.9LottoMeal::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0864
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BF7A4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5Goods
+	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte skill_1a0__5Goods
+	.4byte action_1a0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_1c0__5Goods
+	.4byte action_1c0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte id__C5Goods
@@ -85809,13 +85809,13 @@ _vt.9LottoMeal::
 	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__C5Goods
+	.4byte action_1d8__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte skill_1e0__5Goods
+	.4byte action_1e0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte effect__C5Goods
@@ -85848,10 +85848,10 @@ _vt.9LottoMeal::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__C5Goods
+	.4byte getUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__C5Goods
+	.4byte getForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -85878,13 +85878,13 @@ _vt.9LottoMeal::
 	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_288__5Goods
+	.4byte action_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_290__5Goods
+	.4byte action_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_298__5Goods
+	.4byte action_298__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte goods_2a0__C5Goods
@@ -85952,133 +85952,133 @@ _vt.9DoggyFood::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0864
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BFAF8
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5Goods
+	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte skill_1a0__5Goods
+	.4byte action_1a0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_1c0__5Goods
+	.4byte action_1c0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte id__C5Goods
@@ -86087,13 +86087,13 @@ _vt.9DoggyFood::
 	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__C5Goods
+	.4byte action_1d8__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte skill_1e0__5Goods
+	.4byte action_1e0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte effect__C5Goods
@@ -86126,10 +86126,10 @@ _vt.9DoggyFood::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__C5Goods
+	.4byte getUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__C5Goods
+	.4byte getForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -86156,13 +86156,13 @@ _vt.9DoggyFood::
 	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_288__5Goods
+	.4byte action_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_290__5Goods
+	.4byte action_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_298__5Goods
+	.4byte action_298__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte goods_2a0__C5Goods
@@ -86230,133 +86230,133 @@ _vt.14PeculiarCheese::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0864
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BFB3C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5Goods
+	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte skill_1a0__5Goods
+	.4byte action_1a0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_1c0__5Goods
+	.4byte action_1c0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte id__C5Goods
@@ -86365,13 +86365,13 @@ _vt.14PeculiarCheese::
 	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__C5Goods
+	.4byte action_1d8__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte skill_1e0__5Goods
+	.4byte action_1e0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte effect__C5Goods
@@ -86404,10 +86404,10 @@ _vt.14PeculiarCheese::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__C5Goods
+	.4byte getUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__C5Goods
+	.4byte getForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -86434,13 +86434,13 @@ _vt.14PeculiarCheese::
 	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_288__5Goods
+	.4byte action_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_290__5Goods
+	.4byte action_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_298__5Goods
+	.4byte action_298__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte goods_2a0__C5Goods
@@ -86508,133 +86508,133 @@ _vt.8BugSpray::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0864
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BFC28
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5Goods
+	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte skill_1a0__5Goods
+	.4byte action_1a0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_1c0__5Goods
+	.4byte action_1c0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte id__C5Goods
@@ -86643,13 +86643,13 @@ _vt.8BugSpray::
 	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__C5Goods
+	.4byte action_1d8__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte skill_1e0__5Goods
+	.4byte action_1e0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte effect__C5Goods
@@ -86682,10 +86682,10 @@ _vt.8BugSpray::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__C5Goods
+	.4byte getUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__C5Goods
+	.4byte getForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -86712,13 +86712,13 @@ _vt.8BugSpray::
 	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_288__5Goods
+	.4byte action_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_290__5Goods
+	.4byte action_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_298__5Goods
+	.4byte action_298__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte goods_2a0__C5Goods
@@ -86786,19 +86786,19 @@ _vt.13AncientBanana::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0864
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BFCAC
@@ -86807,112 +86807,112 @@ _vt.13AncientBanana::
 	.4byte sub_080C06AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5Goods
+	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte skill_1a0__5Goods
+	.4byte action_1a0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_1c0__5Goods
+	.4byte action_1c0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte id__C5Goods
@@ -86921,13 +86921,13 @@ _vt.13AncientBanana::
 	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__C5Goods
+	.4byte action_1d8__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte skill_1e0__5Goods
+	.4byte action_1e0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte effect__C5Goods
@@ -86960,10 +86960,10 @@ _vt.13AncientBanana::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__C5Goods
+	.4byte getUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__C5Goods
+	.4byte getForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -86990,13 +86990,13 @@ _vt.13AncientBanana::
 	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_288__5Goods
+	.4byte action_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_290__5Goods
+	.4byte action_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_298__5Goods
+	.4byte action_298__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte goods_2a0__C5Goods
@@ -87064,133 +87064,133 @@ _vt.11HoneyShower::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0864
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BFD48
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5Goods
+	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte skill_1a0__5Goods
+	.4byte action_1a0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_1c0__5Goods
+	.4byte action_1c0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte id__C5Goods
@@ -87199,13 +87199,13 @@ _vt.11HoneyShower::
 	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__C5Goods
+	.4byte action_1d8__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte skill_1e0__5Goods
+	.4byte action_1e0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte effect__C5Goods
@@ -87238,10 +87238,10 @@ _vt.11HoneyShower::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__C5Goods
+	.4byte getUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__C5Goods
+	.4byte getForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -87268,13 +87268,13 @@ _vt.11HoneyShower::
 	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_288__5Goods
+	.4byte action_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_290__5Goods
+	.4byte action_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_298__5Goods
+	.4byte action_298__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte goods_2a0__C5Goods
@@ -87342,133 +87342,133 @@ _vt.12SaltwaterGun::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0864
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BFF7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BFEFC
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5Goods
+	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte skill_1a0__5Goods
+	.4byte action_1a0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_1c0__5Goods
+	.4byte action_1c0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte id__C5Goods
@@ -87477,13 +87477,13 @@ _vt.12SaltwaterGun::
 	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__C5Goods
+	.4byte action_1d8__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte skill_1e0__5Goods
+	.4byte action_1e0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte effect__C5Goods
@@ -87516,10 +87516,10 @@ _vt.12SaltwaterGun::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__C5Goods
+	.4byte getUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__C5Goods
+	.4byte getForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -87546,13 +87546,13 @@ _vt.12SaltwaterGun::
 	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_288__5Goods
+	.4byte action_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_290__5Goods
+	.4byte action_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_298__5Goods
+	.4byte action_298__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte goods_2a0__C5Goods
@@ -87620,31 +87620,31 @@ _vt.15NewYearsEveBomb::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C04C8
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C00E0
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C00D8
@@ -87656,97 +87656,97 @@ _vt.15NewYearsEveBomb::
 	.4byte sub_080C0084
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5Goods
+	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte skill_1a0__5Goods
+	.4byte action_1a0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_1c0__5Goods
+	.4byte action_1c0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte id__C5Goods
@@ -87755,13 +87755,13 @@ _vt.15NewYearsEveBomb::
 	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__C5Goods
+	.4byte action_1d8__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte skill_1e0__5Goods
+	.4byte action_1e0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte effect__C5Goods
@@ -87794,10 +87794,10 @@ _vt.15NewYearsEveBomb::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__C5Goods
+	.4byte getUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__C5Goods
+	.4byte getForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0048
@@ -87824,13 +87824,13 @@ _vt.15NewYearsEveBomb::
 	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_288__5Goods
+	.4byte action_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_290__5Goods
+	.4byte action_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_298__5Goods
+	.4byte action_298__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte goods_2a0__C5Goods
@@ -87901,133 +87901,133 @@ _vt.12DefaultGoods::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C0864
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080C06E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_150__5Goods
+	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte skill_1a0__5Goods
+	.4byte action_1a0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_1c0__5Goods
+	.4byte action_1c0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte id__C5Goods
@@ -88036,13 +88036,13 @@ _vt.12DefaultGoods::
 	.4byte name__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__C5Goods
+	.4byte action_1d8__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte skill_1e0__5Goods
+	.4byte action_1e0__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte effect__C5Goods
@@ -88075,10 +88075,10 @@ _vt.12DefaultGoods::
 	.4byte priority__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__C5Goods
+	.4byte getUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__C5Goods
+	.4byte getForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C5Goods
@@ -88105,13 +88105,13 @@ _vt.12DefaultGoods::
 	.4byte redirectable__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_288__5Goods
+	.4byte action_288__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_290__5Goods
+	.4byte action_290__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte skill_298__5Goods
+	.4byte action_298__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte goods_2a0__C5Goods
@@ -93827,22 +93827,22 @@ _vt.4Unit::
 	.4byte unit_70__C4UnitP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__4UnitUi
+	.4byte unit_98__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -93863,22 +93863,22 @@ _vt.4Unit::
 	.4byte unit_d0__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f0__4UnitP5Skill
+	.4byte unit_f0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__4UnitUi
+	.4byte unit_f8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_100__4UnitUi
+	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_108__4Unit
@@ -93908,13 +93908,13 @@ _vt.4Unit::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -93935,40 +93935,40 @@ _vt.4Unit::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -94016,34 +94016,34 @@ _vt.4Unit::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 
 _vt.7UnitDie::
 	.2byte 0
@@ -94701,13 +94701,13 @@ vt_09F81DA0::
 	.2byte 0
 	.4byte sub_08077EB0
 
-_vt.5Skill::
+_vt.6Action::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte _._5Skill
+	.4byte _._6Action
 	.2byte 0
 	.2byte 0
 	.4byte getInstance__4Base
@@ -94743,130 +94743,130 @@ _vt.5Skill::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28__5Goods
+	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte skill_1a0__5Skill
+	.4byte action_1a0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte __pure_virtual
@@ -94881,7 +94881,7 @@ _vt.5Skill::
 	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte __pure_virtual
@@ -95053,19 +95053,19 @@ vt_09F820E8::
 	.4byte sub_0807B4B8
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807B4D8
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__4UnitUi
+	.4byte unit_98__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -95086,22 +95086,22 @@ vt_09F820E8::
 	.4byte sub_0807B450
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f0__4UnitP5Skill
+	.4byte unit_f0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__4UnitUi
+	.4byte unit_f8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_100__4UnitUi
+	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807B4F8
@@ -95131,13 +95131,13 @@ vt_09F820E8::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -95158,40 +95158,40 @@ vt_09F820E8::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807BCF4
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807BD34
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -95239,34 +95239,34 @@ vt_09F820E8::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807AAEC
@@ -95948,130 +95948,130 @@ vt_09F82A28::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28__5Goods
+	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte skill_1a0__5Skill
+	.4byte action_1a0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080438
@@ -96086,7 +96086,7 @@ vt_09F82A28::
 	.4byte sub_08080484
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080570
@@ -96213,133 +96213,133 @@ _vt.10GuestSkill::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_28__5Goods
+	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte skill_1a0__5Skill
+	.4byte action_1a0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_1c0__10GuestSkill
+	.4byte action_1c0__10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte id__C10GuestSkill
@@ -96348,13 +96348,13 @@ _vt.10GuestSkill::
 	.4byte name__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_1d8__C10GuestSkill
+	.4byte action_1d8__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte skill_1e0__10GuestSkill
+	.4byte action_1e0__10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte effect__C10GuestSkill
@@ -96387,10 +96387,10 @@ _vt.10GuestSkill::
 	.4byte priority__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte showUseMessage__C10GuestSkill
+	.4byte getUseMessage__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte showForceUseMessage__C10GuestSkill
+	.4byte getForceUseMessage__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte hasDim__C10GuestSkill
@@ -96417,13 +96417,13 @@ _vt.10GuestSkill::
 	.4byte redirectable__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_288__10GuestSkill
+	.4byte action_288__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_290__10GuestSkill
+	.4byte action_290__10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte skill_298__10GuestSkill
+	.4byte action_298__10GuestSkill
 
 _vt.19GuestSkillSingleton::
 	.2byte 0
@@ -96531,22 +96531,22 @@ vt_09F83010::
 	.4byte unit_70__C4UnitP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_78__4UnitP5Skill
+	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitUi
+	.4byte unit_80__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_88__4UnitUi
+	.4byte unit_88__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_90__4UnitP5Skill
+	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__4UnitUi
+	.4byte unit_98__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_a0__4UnitUi
+	.4byte unit_a0__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte nullsub_106__4Unit
@@ -96567,22 +96567,22 @@ vt_09F83010::
 	.4byte sub_08080E28
 	.2byte 0
 	.2byte 0
-	.4byte unit_d8__4UnitP5Skill
+	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitUi
+	.4byte unit_e0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e8__4UnitUi
+	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f0__4UnitP5Skill
+	.4byte unit_f0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__4UnitUi
+	.4byte unit_f8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_100__4UnitUi
+	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_108__4Unit
@@ -96612,13 +96612,13 @@ vt_09F83010::
 	.4byte unit_148__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_150__4Uniti
+	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_160__4Unitii
+	.4byte setElementDefense__4Unitii
 	.2byte 0
 	.2byte 0
 	.4byte unit_168__4UnitUsi
@@ -96639,40 +96639,40 @@ vt_09F83010::
 	.4byte level__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getHP__C4Unit
+	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1a0__C4Unit
+	.4byte hp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxHP__C4Unit
+	.4byte maxHP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getPP__C4Unit
+	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1b8__C4Unit
+	.4byte pp__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getMaxPP__C4Unit
+	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getIQ__C4Unit
+	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte getSpeed__C4Unit
+	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1d8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e0__C4Unit
+	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f0__C4UnitUi
+	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
 	.4byte unit_1f8__C4UnitUs
@@ -96720,34 +96720,34 @@ vt_09F83010::
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_270__4UnitUi
+	.4byte removeOneStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_280__4Unit
+	.4byte clearAllStatuses__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_288__C4Unit
+	.4byte statusCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_290__4Uniti
+	.4byte getStatusType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_298__4Uniti
+	.4byte getStatus__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte hasStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2a8__4UnitUs
+	.4byte getStatusIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte setAilment__4UnitUs
+	.4byte findStatus__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_2b8__4UnitUs
+	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080EB4
@@ -97032,130 +97032,130 @@ vt_09F83548::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0808213C
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080821E4
@@ -97170,7 +97170,7 @@ vt_09F83548::
 	.4byte sub_08082230
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082240
@@ -97428,130 +97428,130 @@ vt_09F83958::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte skill_68__5Skill
+	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_70__5Skill
+	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_78__5Skill
+	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_80__5Skill
+	.4byte tellUseMessage__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_88__5Skill
+	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte skill_90__5Skill
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080787CC
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C7C
+	.4byte calcMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D1C
+	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078BB0
+	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078C3C
+	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08078D4C
+	.4byte calcHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit
+	.4byte action_d0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080792E4
+	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_080793B8
+	.4byte action_e0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079780
+	.4byte action_e8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807983C
+	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079870
+	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080798F0
+	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079970
+	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_37
+	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080799C0
+	.4byte action_118__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079A4C
+	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079E58
+	.4byte onFail__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079EE4
+	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_08079FD0
+	.4byte action_138__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A0D4
+	.4byte action_140__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A178
+	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082D70
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A73C
+	.4byte action_158__C6ActionUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A7FC
+	.4byte action_160__C6ActionUsRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte getUser__C5Skill
+	.4byte getUser__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte addTarget__5SkillP4Unit
+	.4byte addTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte removeTarget__5SkillP4Unit
+	.4byte removeTarget__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte clearTargets__5Skill
+	.4byte clearTargets__6Action
 	.2byte 0
 	.2byte 0
-	.4byte numTargets__C5Skill
+	.4byte numTargets__C6Action
 	.2byte 0
 	.2byte 0
-	.4byte getTarget__C5Skilli
+	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C5SkillP4Unit
+	.4byte getTargetIdx__C6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1C4
+	.4byte action_1a8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1D4
+	.4byte action_1b0__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1E0
+	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082DD0
@@ -97566,7 +97566,7 @@ vt_09F83958::
 	.4byte sub_08082E1C
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A1F4
+	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082F08

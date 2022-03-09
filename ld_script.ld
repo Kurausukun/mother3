@@ -61,7 +61,7 @@ SECTIONS
         src/battle/unit.o(.text);
         src/battle/unitTarget.o(.text);
         asm/rom2.o(.text);
-        src/battle/skill.o(.text);
+        src/battle/action.o(.text);
         asm/player.o(.text);
         asm/playerskill.o(.text);
         src/battle/guestSkill.o(.text);

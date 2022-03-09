@@ -43,7 +43,7 @@ sub_080830C4: @ 0x080830C4
 	lsrs r2, r2, #0x10
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl __3MsgPvUi
+	bl genMisctextMsg__3MsgPvUi
 	adds r0, r5, #0
 	pop {r4, r5}
 	pop {r1}
@@ -2177,7 +2177,7 @@ _080841A4:
 	adds r7, #1
 _080841A6:
 	mov r0, r8
-	bl sub_0806E414
+	bl sub_0806E414__3Msg
 	cmp r7, r0
 	blt _080840CE
 	adds r0, r6, #0
@@ -3314,7 +3314,7 @@ _08084AAE:
 	mov sb, r8
 _08084AB0:
 	mov r0, sl
-	bl sub_0806E414
+	bl sub_0806E414__3Msg
 	cmp sb, r0
 	bge _08084ABC
 	b _08084844
@@ -4393,13 +4393,13 @@ _080852C8:
 	mov r5, sl
 _080852CA:
 	ldr r0, [sp, #0x20]
-	bl sub_0806E414
+	bl sub_0806E414__3Msg
 	cmp r5, r0
 	bge _080852D6
 	b _080851C4
 _080852D6:
 	add r0, sp, #0xc
-	bl sub_0806E414
+	bl sub_0806E414__3Msg
 	cmp r0, #0
 	ble _080853A0
 	mov r7, sp
@@ -4525,7 +4525,7 @@ _080853C8:
 	ldr r0, [sp, #8]
 	adds r0, r0, r4
 	adds r1, r6, #0
-	bl sub_0806E334
+	bl sub_0806E334__3Msgi
 	ldrh r0, [r0]
 	movs r1, #0xff
 	lsls r1, r1, #8
@@ -4540,7 +4540,7 @@ _080853E0:
 	lsls r4, r0, #2
 	ldr r0, [sp, #8]
 	adds r0, r0, r4
-	bl sub_0806E414
+	bl sub_0806E414__3Msg
 	cmp r6, r0
 	blt _080853C8
 	movs r0, #0xf
@@ -4705,7 +4705,7 @@ _0808552E:
 	adds r6, #1
 _08085530:
 	ldr r0, [sp, #0x20]
-	bl sub_0806E414
+	bl sub_0806E414__3Msg
 	cmp r6, r0
 	blt _08085458
 	add r0, sp, #0xc
@@ -5426,7 +5426,7 @@ _08085AD8:
 	adds r7, #1
 _08085ADA:
 	mov r0, r8
-	bl sub_0806E414
+	bl sub_0806E414__3Msg
 	cmp r7, r0
 	blt _08085A02
 	adds r0, r6, #0
@@ -7675,7 +7675,7 @@ _08086CC0:
 	adds r0, r7, #0
 	adds r1, r4, #0
 	adds r2, r6, #0
-	bl __13BattleMessageP9BXTHandleUi
+	bl getMessage__9BXTHandleUi
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._9BXTHandle

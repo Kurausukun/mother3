@@ -1314,7 +1314,7 @@ sub_080A0BA4: @ 0x080A0BA4
 	beq _080A0BC4
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08078BB0
+	bl isResisted__6ActionP4Unit
 	b _080A0BC6
 _080A0BC4:
 	movs r0, #0
@@ -1340,7 +1340,7 @@ sub_080A0BE0: @ 0x080A0BE0
 	sub sp, #4
 	adds r4, r0, #0
 	adds r6, r1, #0
-	bl sub_08078D4C
+	bl calcHit__6ActionP4Unit
 	ldr r1, [r4, #0x1c]
 	movs r0, #0x94
 	lsls r0, r0, #1
@@ -1397,7 +1397,7 @@ sub_080A0C2C: @ 0x080A0C2C
 	bl sub_0807014C
 	adds r0, r6, #0
 	adds r1, r5, #0
-	bl sub_08078D4C
+	bl calcHit__6ActionP4Unit
 	bl sub_08073270
 	b _080A0C88
 _080A0C6A:
@@ -4723,21 +4723,21 @@ sub_080A2714: @ 0x080A2714
 	str r0, [r5, #0x1c]
 	adds r0, r5, #0
 	movs r1, #1
-	bl unit_1f0__C4UnitUi
+	bl getElementWeakness__C4UnitUi
 	movs r2, #0xa4
 	lsls r2, r2, #1
 	adds r1, r5, r2
 	str r0, [r1]
 	adds r0, r5, #0
 	movs r1, #2
-	bl unit_1f0__C4UnitUi
+	bl getElementWeakness__C4UnitUi
 	movs r2, #0xa6
 	lsls r2, r2, #1
 	adds r1, r5, r2
 	str r0, [r1]
 	adds r0, r5, #0
 	movs r1, #3
-	bl unit_1f0__C4UnitUi
+	bl getElementWeakness__C4UnitUi
 	movs r2, #0xa8
 	lsls r2, r2, #1
 	adds r1, r5, r2
@@ -10393,7 +10393,7 @@ sub_080A5AD4: @ 0x080A5AD4
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
-	bl unit_e8__4UnitUi
+	bl unit_e8__4UnitP6Action
 	movs r1, #0xa0
 	lsls r1, r1, #2
 	adds r0, r4, #0
@@ -11366,7 +11366,7 @@ sub_080A6238: @ 0x080A6238
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
-	bl unit_a0__4UnitUi
+	bl unit_a0__4UnitP6Action
 	ldr r1, [r4, #0x1c]
 	movs r0, #0xcc
 	lsls r0, r0, #1
@@ -12791,7 +12791,7 @@ sub_080A6D04: @ 0x080A6D04
 	sub sp, #0x3c
 	adds r7, r0, #0
 	adds r6, r1, #0
-	bl unit_98__4UnitUi
+	bl unit_98__4UnitP6Action
 	ldr r1, [r7, #0x1c]
 	movs r0, #0xcc
 	lsls r0, r0, #1
@@ -12873,7 +12873,7 @@ _080A6D64:
 	movs r0, #0x47
 	adds r1, r7, #0
 	adds r2, r7, #0
-	bl sub_080730FC
+	bl playSeq
 	ldr r1, [r6, #0x1c]
 	movs r2, #0xb0
 	lsls r2, r2, #1
@@ -12908,7 +12908,7 @@ _080A6D64:
 	adds r2, r0, #0
 	movs r0, #0x49
 	adds r1, r4, #0
-	bl sub_080730FC
+	bl playSeq
 	ldr r1, [r6, #0x1c]
 	movs r0, #0xb0
 	lsls r0, r0, #1
@@ -14206,7 +14206,7 @@ sub_080A7830: @ 0x080A7830
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
-	bl unit_a0__4UnitUi
+	bl unit_a0__4UnitP6Action
 	ldr r1, [r4, #0x1c]
 	movs r0, #0xcc
 	lsls r0, r0, #1
@@ -14262,7 +14262,7 @@ sub_080A78A4: @ 0x080A78A4
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
-	bl unit_88__4UnitUi
+	bl unit_88__4UnitP6Action
 	movs r1, #0x87
 	lsls r1, r1, #2
 	adds r0, r4, #0
@@ -14845,7 +14845,7 @@ sub_080A7D14: @ 0x080A7D14
 	lsls r1, r1, #0x10
 	lsrs r5, r1, #0x10
 	adds r1, r5, #0
-	bl unit_270__4UnitUi
+	bl removeOneStatus__4Uniti
 	lsls r0, r0, #0x18
 	lsrs r6, r0, #0x18
 	cmp r5, #0x16
@@ -17265,7 +17265,7 @@ sub_080A900C: @ 0x080A900C
 	sub sp, #0x3c
 	adds r6, r0, #0
 	adds r7, r1, #0
-	bl unit_98__4UnitUi
+	bl unit_98__4UnitP6Action
 	ldr r1, [r6, #0x1c]
 	movs r0, #0xcc
 	lsls r0, r0, #1
@@ -17347,7 +17347,7 @@ _080A906C:
 	movs r0, #0x47
 	adds r1, r6, #0
 	adds r2, r6, #0
-	bl sub_080730FC
+	bl playSeq
 	ldr r1, [r7, #0x1c]
 	movs r2, #0xb0
 	lsls r2, r2, #1
@@ -17382,7 +17382,7 @@ _080A906C:
 	adds r2, r0, #0
 	movs r0, #0x49
 	adds r1, r4, #0
-	bl sub_080730FC
+	bl playSeq
 	ldr r1, [r7, #0x1c]
 	movs r0, #0xb0
 	lsls r0, r0, #1
@@ -17516,7 +17516,7 @@ sub_080A9234: @ 0x080A9234
 	sub sp, #0x38
 	adds r7, r0, #0
 	adds r4, r1, #0
-	bl unit_88__4UnitUi
+	bl unit_88__4UnitP6Action
 	ldr r1, _080A9264 @ =0x000001FB
 	adds r0, r4, #0
 	bl sub_080741E8
@@ -19132,7 +19132,7 @@ sub_080A9EE8: @ 0x080A9EE8
 	lsls r4, r1, #0x10
 	lsrs r4, r4, #0x10
 	adds r1, r4, #0
-	bl unit_270__4UnitUi
+	bl removeOneStatus__4Uniti
 	lsls r0, r0, #0x18
 	lsrs r6, r0, #0x18
 	cmp r4, #0x16
@@ -20063,7 +20063,7 @@ sub_080AA618: @ 0x080AA618
 	sub sp, #0x3c
 	adds r6, r0, #0
 	adds r7, r1, #0
-	bl unit_98__4UnitUi
+	bl unit_98__4UnitP6Action
 	ldr r1, [r6, #0x1c]
 	movs r0, #0xcc
 	lsls r0, r0, #1
@@ -20145,7 +20145,7 @@ _080AA678:
 	movs r0, #0x47
 	adds r1, r6, #0
 	adds r2, r6, #0
-	bl sub_080730FC
+	bl playSeq
 	ldr r1, [r7, #0x1c]
 	movs r2, #0xb0
 	lsls r2, r2, #1
@@ -20180,7 +20180,7 @@ _080AA678:
 	adds r2, r0, #0
 	movs r0, #0x49
 	adds r1, r4, #0
-	bl sub_080730FC
+	bl playSeq
 	ldr r1, [r7, #0x1c]
 	movs r0, #0xb0
 	lsls r0, r0, #1
@@ -21920,7 +21920,7 @@ sub_080AB478: @ 0x080AB478
 	sub sp, #0x3c
 	adds r7, r0, #0
 	adds r6, r1, #0
-	bl unit_98__4UnitUi
+	bl unit_98__4UnitP6Action
 	ldr r1, [r7, #0x1c]
 	movs r0, #0xcc
 	lsls r0, r0, #1
@@ -22002,7 +22002,7 @@ _080AB4D8:
 	movs r0, #0x47
 	adds r1, r7, #0
 	adds r2, r7, #0
-	bl sub_080730FC
+	bl playSeq
 	ldr r1, [r6, #0x1c]
 	movs r2, #0xb0
 	lsls r2, r2, #1
@@ -22037,7 +22037,7 @@ _080AB4D8:
 	adds r2, r0, #0
 	movs r0, #0x49
 	adds r1, r4, #0
-	bl sub_080730FC
+	bl playSeq
 	ldr r1, [r6, #0x1c]
 	movs r0, #0xb0
 	lsls r0, r0, #1
@@ -22325,7 +22325,7 @@ sub_080AB7C4: @ 0x080AB7C4
 	lsls r1, r1, #0x10
 	lsrs r5, r1, #0x10
 	adds r1, r5, #0
-	bl unit_270__4UnitUi
+	bl removeOneStatus__4Uniti
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -22640,7 +22640,7 @@ sub_080ABA38: @ 0x080ABA38
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
-	bl unit_a0__4UnitUi
+	bl unit_a0__4UnitP6Action
 	ldr r1, [r4, #0x1c]
 	movs r0, #0xcc
 	lsls r0, r0, #1
@@ -22696,7 +22696,7 @@ sub_080ABAAC: @ 0x080ABAAC
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
-	bl unit_88__4UnitUi
+	bl unit_88__4UnitP6Action
 	movs r1, #0x87
 	lsls r1, r1, #2
 	adds r0, r4, #0
@@ -23698,7 +23698,7 @@ sub_080AC22C: @ 0x080AC22C
 _080AC252:
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_1f0__C4UnitUi
+	bl getElementWeakness__C4UnitUi
 _080AC25A:
 	pop {r4, r5}
 	pop {r1}
@@ -25109,7 +25109,7 @@ sub_080ACD00: @ 0x080ACD00
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
-	bl unit_a0__4UnitUi
+	bl unit_a0__4UnitP6Action
 	ldr r1, [r5, #0x1c]
 	movs r0, #0xcc
 	lsls r0, r0, #1
@@ -25962,7 +25962,7 @@ sub_080AD380: @ 0x080AD380
 	b _080AD39E
 _080AD398:
 	adds r0, r2, #0
-	bl unit_1f0__C4UnitUi
+	bl getElementWeakness__C4UnitUi
 _080AD39E:
 	pop {r1}
 	bx r1
@@ -28726,7 +28726,7 @@ sub_080AE89C: @ 0x080AE89C
 	b _080AE8B6
 _080AE8B0:
 	adds r0, r2, #0
-	bl unit_1f0__C4UnitUi
+	bl getElementWeakness__C4UnitUi
 _080AE8B6:
 	pop {r1}
 	bx r1
@@ -28775,7 +28775,7 @@ sub_080AE8FC: @ 0x080AE8FC
 	sub sp, #0x3c
 	adds r7, r0, #0
 	adds r6, r1, #0
-	bl unit_98__4UnitUi
+	bl unit_98__4UnitP6Action
 	ldr r1, [r7, #0x1c]
 	movs r0, #0xcc
 	lsls r0, r0, #1
@@ -28857,7 +28857,7 @@ _080AE95C:
 	movs r0, #0x47
 	adds r1, r7, #0
 	adds r2, r7, #0
-	bl sub_080730FC
+	bl playSeq
 	ldr r1, [r6, #0x1c]
 	movs r2, #0xb0
 	lsls r2, r2, #1
@@ -28892,7 +28892,7 @@ _080AE95C:
 	adds r2, r0, #0
 	movs r0, #0x49
 	adds r1, r4, #0
-	bl sub_080730FC
+	bl playSeq
 	ldr r1, [r6, #0x1c]
 	movs r0, #0xb0
 	lsls r0, r0, #1
@@ -29443,7 +29443,7 @@ sub_080AEE38: @ 0x080AEE38
 	beq _080AEE52
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_100__4UnitUi
+	bl unit_100__4UnitP6Action
 _080AEE52:
 	pop {r4, r5}
 	pop {r0}
@@ -29457,7 +29457,7 @@ sub_080AEE58: @ 0x080AEE58
 	sub sp, #0x3c
 	adds r4, r0, #0
 	adds r6, r1, #0
-	bl unit_98__4UnitUi
+	bl unit_98__4UnitP6Action
 	ldr r1, [r4, #0x1c]
 	movs r0, #0xcc
 	lsls r0, r0, #1
@@ -29541,7 +29541,7 @@ _080AEEBC:
 	movs r0, #0x47
 	adds r1, r4, #0
 	adds r2, r4, #0
-	bl sub_080730FC
+	bl playSeq
 	ldr r1, [r6, #0x1c]
 	movs r4, #0xb0
 	lsls r4, r4, #1
@@ -29572,7 +29572,7 @@ _080AEEBC:
 	adds r2, r0, #0
 	movs r0, #0x49
 	adds r1, r5, #0
-	bl sub_080730FC
+	bl playSeq
 	ldr r1, [r6, #0x1c]
 	adds r1, r1, r4
 	movs r2, #0
@@ -29647,7 +29647,7 @@ sub_080AEFF4: @ 0x080AEFF4
 	beq _080AF00E
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_f8__4UnitUi
+	bl unit_f8__4UnitP6Action
 _080AF00E:
 	pop {r4, r5}
 	pop {r0}
@@ -29665,7 +29665,7 @@ sub_080AF014: @ 0x080AF014
 	beq _080AF02E
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_f0__4UnitP5Skill
+	bl unit_f0__4UnitP6Action
 _080AF02E:
 	pop {r4, r5}
 	pop {r0}
@@ -32766,7 +32766,7 @@ sub_080B065C: @ 0x080B065C
 	push {r5, r6, r7}
 	sub sp, #0x20
 	mov sb, r0
-	bl nullsub_37
+	bl onSuccess__6ActionP4Unit
 	bl sub_080728F8
 	adds r5, r0, #0
 	ldr r4, [r5, #0x1c]
@@ -32880,7 +32880,7 @@ sub_080B0758: @ 0x080B0758
 	ldr r0, _080B0770 @ =0x0000044C
 	bl playSound
 	adds r0, r4, #0
-	bl skill_80__5Skill
+	bl tellUseMessage__6Action
 	pop {r4}
 	pop {r0}
 	bx r0
@@ -32905,7 +32905,7 @@ sub_080B0788: @ 0x080B0788
 	push {r6}
 	sub sp, #0x1c
 	adds r6, r0, #0
-	bl nullsub_37
+	bl onSuccess__6ActionP4Unit
 	ldr r4, _080B0818 @ =gUnknown_080F95F8
 	movs r0, #0
 	movs r1, #0xf
@@ -32975,7 +32975,7 @@ sub_080B0820: @ 0x080B0820
 	ldr r0, _080B0838 @ =0x0000044C
 	bl playSound
 	adds r0, r4, #0
-	bl skill_80__5Skill
+	bl tellUseMessage__6Action
 	pop {r4}
 	pop {r0}
 	bx r0
@@ -33036,7 +33036,7 @@ sub_080B0894: @ 0x080B0894
 	push {r5, r6, r7}
 	sub sp, #0x10
 	adds r6, r0, #0
-	bl nullsub_37
+	bl onSuccess__6ActionP4Unit
 	movs r4, #0
 	bl sub_08072DFC
 	cmp r0, #1
@@ -33151,7 +33151,7 @@ sub_080B097C: @ 0x080B097C
 	ldr r0, _080B0994 @ =0x0000044C
 	bl playSound
 	adds r0, r4, #0
-	bl skill_80__5Skill
+	bl tellUseMessage__6Action
 	pop {r4}
 	pop {r0}
 	bx r0
@@ -33174,7 +33174,7 @@ sub_080B09AC: @ 0x080B09AC
 	push {r4, lr}
 	sub sp, #0x10
 	adds r4, r0, #0
-	bl sub_08078D1C
+	bl tellMissed__6ActionP4Unit
 	ldr r3, [r4, #0x1c]
 	movs r0, #0xa8
 	lsls r0, r0, #1
@@ -33210,7 +33210,7 @@ sub_080B09F4: @ 0x080B09F4
 	sub sp, #0x10
 	adds r4, r0, #0
 	adds r5, r1, #0
-	bl nullsub_37
+	bl onSuccess__6ActionP4Unit
 	ldr r3, [r4, #0x1c]
 	movs r0, #0xa8
 	lsls r0, r0, #1
@@ -33283,7 +33283,7 @@ sub_080B0A8C: @ 0x080B0A8C
 	sub sp, #0x10
 	adds r6, r0, #0
 	adds r4, r1, #0
-	bl nullsub_37
+	bl onSuccess__6ActionP4Unit
 	ldr r0, _080B0B28 @ =0x000003E5
 	bl playSound
 	movs r5, #2
@@ -33291,7 +33291,7 @@ _080B0AA0:
 	movs r0, #0xba
 	adds r1, r4, #0
 	adds r2, r4, #0
-	bl sub_080730FC
+	bl playSeq
 	movs r0, #0xa
 	bl setsleep
 	subs r5, #1
@@ -33403,7 +33403,7 @@ sub_080B0B88: @ 0x080B0B88
 	push {r6, r7}
 	sub sp, #0x2c
 	adds r6, r0, #0
-	bl nullsub_37
+	bl onSuccess__6ActionP4Unit
 	bl sub_08072DFC
 	adds r4, r0, #0
 	adds r4, #1
@@ -33583,7 +33583,7 @@ sub_080B0CFC: @ 0x080B0CFC
 	push {r7}
 	sub sp, #0x24
 	adds r6, r0, #0
-	bl nullsub_37
+	bl onSuccess__6ActionP4Unit
 	ldr r0, _080B0D9C @ =0x0000055D
 	bl playSound
 	add r1, sp, #0x18
@@ -33684,7 +33684,7 @@ sub_080B0DCC: @ 0x080B0DCC
 	ldr r0, _080B0DE4 @ =0x0000044C
 	bl playSound
 	adds r0, r4, #0
-	bl skill_80__5Skill
+	bl tellUseMessage__6Action
 	pop {r4}
 	pop {r0}
 	bx r0
@@ -33706,7 +33706,7 @@ _080B0DF8: .4byte vt_09F72120
 sub_080B0DFC: @ 0x080B0DFC
 	push {r4, r5, lr}
 	adds r4, r1, #0
-	bl nullsub_37
+	bl onSuccess__6ActionP4Unit
 	ldr r0, _080B0E4C @ =0x0000028A
 	bl playSound
 	adds r0, r4, #0
@@ -33779,7 +33779,7 @@ sub_080B0E64: @ 0x080B0E64
 	movs r1, #0
 	bl _call_via_r2
 	adds r0, r4, #0
-	bl skill_80__5Skill
+	bl tellUseMessage__6Action
 _080B0EA2:
 	pop {r4}
 	pop {r0}
@@ -33835,7 +33835,7 @@ sub_080B0EBC: @ 0x080B0EBC
 	adds r0, r4, #0
 	bl sub_0807323C
 	adds r0, r6, #0
-	bl skill_80__5Skill
+	bl tellUseMessage__6Action
 _080B0F18:
 	pop {r4, r5, r6}
 	pop {r0}
@@ -33862,7 +33862,7 @@ sub_080B0F38: @ 0x080B0F38
 	mov r5, r8
 	push {r5, r6, r7}
 	sub sp, #0x44
-	bl nullsub_37
+	bl onSuccess__6ActionP4Unit
 	ldr r0, _080B1134 @ =0x00000562
 	bl playSound
 	mov r1, sp
@@ -34130,7 +34130,7 @@ sub_080B1158: @ 0x080B1158
 	push {r5, r6, r7}
 	sub sp, #0x18
 	mov sb, r1
-	bl nullsub_37
+	bl onSuccess__6ActionP4Unit
 	movs r0, #0x20
 	add r0, sb
 	mov sl, r0
@@ -34239,7 +34239,7 @@ sub_080B1238: @ 0x080B1238
 	ldr r0, _080B1258 @ =0x0000031A
 	bl playSound
 	adds r0, r7, #0
-	bl skill_90__5Skill
+	bl playAnim__6Action
 	movs r5, #0
 	mov r4, sp
 	movs r6, #0xff
@@ -34423,7 +34423,7 @@ _080B13C0: .4byte 0x000003A5
 	thumb_func_start sub_080B13C4
 sub_080B13C4: @ 0x080B13C4
 	push {lr}
-	bl nullsub_37
+	bl onSuccess__6ActionP4Unit
 	movs r0, #0xac
 	bl sub_08072F54
 	pop {r0}
@@ -34456,7 +34456,7 @@ sub_080B13F8: @ 0x080B13F8
 	ldr r0, _080B1410 @ =0x0000055F
 	bl sub_080707E4
 	adds r0, r4, #0
-	bl skill_80__5Skill
+	bl tellUseMessage__6Action
 	pop {r4}
 	pop {r0}
 	bx r0
@@ -34478,7 +34478,7 @@ _080B1424: .4byte vt_09F72120
 sub_080B1428: @ 0x080B1428
 	push {r4, lr}
 	adds r4, r0, #0
-	bl skill_90__5Skill
+	bl playAnim__6Action
 	ldr r0, [r4, #0x1c]
 	movs r1, #0xb0
 	lsls r1, r1, #1
@@ -34521,7 +34521,7 @@ sub_080B147C: @ 0x080B147C
 	push {r4, r5, r6, r7, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
-	bl nullsub_37
+	bl onSuccess__6ActionP4Unit
 	adds r0, r5, #0
 	bl sub_08072DD0
 	adds r7, r0, #0
@@ -34666,7 +34666,7 @@ _080B15BC: .4byte vt_09F72120
 sub_080B15C0: @ 0x080B15C0
 	push {r4, r5, r6, lr}
 	adds r4, r1, #0
-	bl nullsub_37
+	bl onSuccess__6ActionP4Unit
 	ldr r0, [r4, #0x1c]
 	movs r1, #0x9c
 	lsls r1, r1, #1
@@ -34772,7 +34772,7 @@ sub_080B1694: @ 0x080B1694
 	push {r6}
 	sub sp, #0x1c
 	adds r6, r0, #0
-	bl nullsub_37
+	bl onSuccess__6ActionP4Unit
 	movs r0, #0x9f
 	bl sub_08072F54
 	adds r3, r0, #0
@@ -34859,7 +34859,7 @@ sub_080B1744: @ 0x080B1744
 	ldr r0, _080B175C @ =0x0000044C
 	bl playSound
 	adds r0, r4, #0
-	bl skill_80__5Skill
+	bl tellUseMessage__6Action
 	pop {r4}
 	pop {r0}
 	bx r0
@@ -34918,7 +34918,7 @@ sub_080B17B8: @ 0x080B17B8
 	push {r6}
 	sub sp, #0x1c
 	adds r6, r0, #0
-	bl nullsub_37
+	bl onSuccess__6ActionP4Unit
 	movs r0, #0xa1
 	bl sub_08072F54
 	adds r3, r0, #0
@@ -35005,7 +35005,7 @@ sub_080B1868: @ 0x080B1868
 	ldr r0, _080B1880 @ =0x0000044C
 	bl playSound
 	adds r0, r4, #0
-	bl skill_80__5Skill
+	bl tellUseMessage__6Action
 	pop {r4}
 	pop {r0}
 	bx r0
@@ -35028,7 +35028,7 @@ sub_080B1898: @ 0x080B1898
 	push {r4, lr}
 	sub sp, #0x10
 	adds r4, r0, #0
-	bl nullsub_37
+	bl onSuccess__6ActionP4Unit
 	movs r0, #0xc7
 	lsls r0, r0, #1
 	movs r1, #0x10
@@ -35080,7 +35080,7 @@ sub_080B1904: @ 0x080B1904
 	push {r4, lr}
 	sub sp, #0x10
 	adds r4, r0, #0
-	bl nullsub_37
+	bl onSuccess__6ActionP4Unit
 	ldr r0, _080B1954 @ =0x0000018F
 	movs r1, #0x10
 	movs r2, #0
@@ -35171,7 +35171,7 @@ sub_080B19B4: @ 0x080B19B4
 	sub sp, #0xc0
 	str r0, [sp, #0xb8]
 	adds r4, r1, #0
-	bl nullsub_37
+	bl onSuccess__6ActionP4Unit
 	movs r0, #0
 	str r0, [sp]
 	str r0, [sp, #4]
@@ -35483,7 +35483,7 @@ _080B1C44: .4byte vt_09F72120
 sub_080B1C48: @ 0x080B1C48
 	push {r4, lr}
 	adds r4, r0, #0
-	bl nullsub_37
+	bl onSuccess__6ActionP4Unit
 	ldr r0, [r4, #0x1c]
 	movs r1, #0xb0
 	lsls r1, r1, #1
@@ -35530,7 +35530,7 @@ sub_080B1C9C: @ 0x080B1C9C
 	push {r4, r5, r6}
 	sub sp, #0x30
 	mov r8, r0
-	bl nullsub_37
+	bl onSuccess__6ActionP4Unit
 	add r5, sp, #0x20
 	movs r0, #0
 	mov sl, r0
@@ -35708,7 +35708,7 @@ sub_080B1E14: @ 0x080B1E14
 	push {r6, r7}
 	sub sp, #0x2c
 	adds r6, r0, #0
-	bl nullsub_37
+	bl onSuccess__6ActionP4Unit
 	bl sub_08072DFC
 	adds r4, r0, #0
 	adds r4, #1
@@ -35840,7 +35840,7 @@ sub_080B1F34: @ 0x080B1F34
 	ldr r0, _080B1F4C @ =0x0000044C
 	bl playSound
 	adds r0, r4, #0
-	bl skill_80__5Skill
+	bl tellUseMessage__6Action
 	pop {r4}
 	pop {r0}
 	bx r0
@@ -35899,7 +35899,7 @@ sub_080B1FA8: @ 0x080B1FA8
 	push {r6}
 	sub sp, #0x1c
 	adds r6, r0, #0
-	bl nullsub_37
+	bl onSuccess__6ActionP4Unit
 	ldr r1, [r6, #0x1c]
 	movs r0, #0xb0
 	lsls r0, r0, #1
@@ -36004,7 +36004,7 @@ sub_080B2080: @ 0x080B2080
 	ldr r0, _080B2098 @ =0x0000044C
 	bl playSound
 	adds r0, r4, #0
-	bl skill_80__5Skill
+	bl tellUseMessage__6Action
 	pop {r4}
 	pop {r0}
 	bx r0
@@ -36064,7 +36064,7 @@ sub_080B20F4: @ 0x080B20F4
 	push {r6, r7}
 	sub sp, #0x10
 	adds r6, r0, #0
-	bl nullsub_37
+	bl onSuccess__6ActionP4Unit
 	movs r4, #0
 	bl sub_08072DFC
 	cmp r0, #1
@@ -36174,7 +36174,7 @@ sub_080B21D0: @ 0x080B21D0
 	lsls r0, r0, #3
 	bl playSound
 	adds r0, r4, #0
-	bl skill_80__5Skill
+	bl tellUseMessage__6Action
 	pop {r4}
 	pop {r0}
 	bx r0
@@ -36197,7 +36197,7 @@ sub_080B21FC: @ 0x080B21FC
 	push {r7}
 	sub sp, #0x10
 	adds r6, r0, #0
-	bl nullsub_37
+	bl onSuccess__6ActionP4Unit
 	ldr r0, _080B2300 @ =0x00000611
 	bl playSound
 	add r0, sp, #0xc
@@ -36224,7 +36224,7 @@ _080B221A:
 	adds r2, r0, #0
 	movs r0, #0xba
 	adds r1, r4, #0
-	bl sub_080730FC
+	bl playSeq
 	movs r0, #0xa
 	bl setsleep
 	subs r5, #1
@@ -36461,7 +36461,7 @@ sub_080B242C: @ 0x080B242C
 	push {r5, r6, r7}
 	sub sp, #0x2c
 	adds r7, r0, #0
-	bl nullsub_37
+	bl onSuccess__6ActionP4Unit
 	ldr r0, _080B2550 @ =0x00000613
 	bl playSound
 	ldr r1, [r7, #0x1c]
@@ -36624,7 +36624,7 @@ _080B2598: .4byte vt_09F72120
 	thumb_func_start sub_080B259C
 sub_080B259C: @ 0x080B259C
 	push {r4, lr}
-	bl nullsub_37
+	bl onSuccess__6ActionP4Unit
 	movs r0, #0x5d
 	bl sub_08072EE4
 	adds r4, r0, #0
@@ -36656,7 +36656,7 @@ _080B25D4: .4byte vt_09F72120
 sub_080B25D8: @ 0x080B25D8
 	push {r4, lr}
 	adds r4, r0, #0
-	bl skill_80__5Skill
+	bl tellUseMessage__6Action
 	ldr r0, [r4, #0x1c]
 	movs r1, #0xb0
 	lsls r1, r1, #1
@@ -36768,7 +36768,7 @@ sub_080B26BC: @ 0x080B26BC
 	push {r6}
 	sub sp, #0x1c
 	adds r6, r0, #0
-	bl nullsub_37
+	bl onSuccess__6ActionP4Unit
 	movs r0, #0x95
 	bl sub_08072F54
 	adds r3, r0, #0
@@ -36851,7 +36851,7 @@ sub_080B2764: @ 0x080B2764
 	ldr r0, _080B277C @ =0x0000055F
 	bl sub_080707E4
 	adds r0, r4, #0
-	bl skill_80__5Skill
+	bl tellUseMessage__6Action
 	pop {r4}
 	pop {r0}
 	bx r0
@@ -36873,7 +36873,7 @@ _080B2790: .4byte vt_09F72120
 sub_080B2794: @ 0x080B2794
 	push {r4, lr}
 	adds r4, r0, #0
-	bl nullsub_37
+	bl onSuccess__6ActionP4Unit
 	ldr r0, [r4, #0x1c]
 	movs r1, #0xb0
 	lsls r1, r1, #1
@@ -36915,7 +36915,7 @@ _080B27E4: .4byte vt_09F72120
 sub_080B27E8: @ 0x080B27E8
 	push {r4, lr}
 	adds r4, r0, #0
-	bl nullsub_37
+	bl onSuccess__6ActionP4Unit
 	ldr r0, [r4, #0x1c]
 	movs r1, #0xb0
 	lsls r1, r1, #1
@@ -36970,7 +36970,7 @@ sub_080B2848: @ 0x080B2848
 	push {r5, r6, r7}
 	sub sp, #0x30
 	adds r7, r0, #0
-	bl nullsub_37
+	bl onSuccess__6ActionP4Unit
 	add r5, sp, #0x20
 	movs r0, #0
 	mov sl, r0
@@ -37098,7 +37098,7 @@ sub_080B2958: @ 0x080B2958
 	cmp r0, #1
 	bne _080B296A
 	adds r0, r1, #0
-	bl skill_80__5Skill
+	bl tellUseMessage__6Action
 _080B296A:
 	pop {r0}
 	bx r0
@@ -37156,7 +37156,7 @@ sub_080B29C8: @ 0x080B29C8
 	push {r6}
 	sub sp, #0x1c
 	adds r6, r0, #0
-	bl nullsub_37
+	bl onSuccess__6ActionP4Unit
 	ldr r0, _080B2A50 @ =0x0000055D
 	bl playSound
 	movs r0, #0x41
@@ -37246,7 +37246,7 @@ sub_080B2A80: @ 0x080B2A80
 	ldr r0, _080B2A98 @ =0x0000044C
 	bl playSound
 	adds r0, r4, #0
-	bl skill_80__5Skill
+	bl tellUseMessage__6Action
 	pop {r4}
 	pop {r0}
 	bx r0
@@ -37273,7 +37273,7 @@ sub_080B2AB0: @ 0x080B2AB0
 	push {r5, r6, r7}
 	sub sp, #0x14
 	adds r6, r0, #0
-	bl nullsub_37
+	bl onSuccess__6ActionP4Unit
 	movs r0, #0xb0
 	lsls r0, r0, #1
 	mov sl, r0
@@ -37421,7 +37421,7 @@ sub_080B2BE4: @ 0x080B2BE4
 	push {r6}
 	sub sp, #0x1c
 	adds r6, r0, #0
-	bl nullsub_37
+	bl onSuccess__6ActionP4Unit
 	ldr r1, [r6, #0x1c]
 	movs r0, #0xb0
 	lsls r0, r0, #1
@@ -37526,7 +37526,7 @@ sub_080B2CBC: @ 0x080B2CBC
 	ldr r0, _080B2CD4 @ =0x0000044C
 	bl playSound
 	adds r0, r4, #0
-	bl skill_80__5Skill
+	bl tellUseMessage__6Action
 	pop {r4}
 	pop {r0}
 	bx r0
@@ -37570,7 +37570,7 @@ sub_080B2D18: @ 0x080B2D18
 	push {r4, lr}
 	sub sp, #0x10
 	adds r4, r0, #0
-	bl nullsub_37
+	bl onSuccess__6ActionP4Unit
 	ldr r1, [r4, #0x1c]
 	movs r0, #0xb0
 	lsls r0, r0, #1
@@ -37633,7 +37633,7 @@ _080B2D98: .4byte vt_09F72120
 sub_080B2D9C: @ 0x080B2D9C
 	push {r4, lr}
 	adds r4, r0, #0
-	bl nullsub_37
+	bl onSuccess__6ActionP4Unit
 	ldr r0, [r4, #0x1c]
 	movs r1, #0xb0
 	lsls r1, r1, #1
@@ -38010,7 +38010,7 @@ sub_080B3090: @ 0x080B3090
 	push {r4, lr}
 	sub sp, #0x10
 	adds r4, r0, #0
-	bl sub_08078C3C
+	bl tellResisted__6ActionP4Unit
 	ldr r3, [r4, #0x1c]
 	movs r0, #0xa8
 	lsls r0, r0, #1
@@ -38837,7 +38837,7 @@ _080B36BE:
 	adds r1, r0, #0
 	adds r0, r4, #0
 	adds r2, r6, #0
-	bl sub_080730FC
+	bl playSeq
 	ldr r3, [r5, #0x1c]
 	movs r0, #0xa8
 	lsls r0, r0, #1
@@ -39092,7 +39092,7 @@ _080B38F8: .4byte 0x0000055E
 sub_080B38FC: @ 0x080B38FC
 	push {r4, lr}
 	adds r4, r1, #0
-	bl sub_08078BB0
+	bl isResisted__6ActionP4Unit
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -39213,7 +39213,7 @@ _080B39F0: .4byte 0x0000043C
 sub_080B39F4: @ 0x080B39F4
 	push {r4, lr}
 	adds r4, r0, #0
-	bl skill_80__5Skill
+	bl tellUseMessage__6Action
 	ldr r0, [r4, #0x1c]
 	movs r1, #0xb0
 	lsls r1, r1, #1
@@ -39241,7 +39241,7 @@ sub_080B39F4: @ 0x080B39F4
 sub_080B3A2C: @ 0x080B3A2C
 	push {r4, r5, lr}
 	adds r4, r0, #0
-	bl skill_70__5Skill
+	bl action_70__6Action
 	movs r0, #0x83
 	bl sub_08072EE4
 	adds r5, r0, #0
@@ -39306,9 +39306,9 @@ sub_080B3A84: @ 0x080B3A84
 	adds r2, r0, #0
 	movs r0, #0x90
 	adds r1, r6, #0
-	bl sub_080730FC
+	bl playSeq
 	adds r0, r4, #0
-	bl skill_90__5Skill
+	bl playAnim__6Action
 	pop {r4, r5, r6}
 	pop {r0}
 	bx r0
@@ -39330,7 +39330,7 @@ sub_080B3AD8: @ 0x080B3AD8
 	adds r4, r0, #0
 	ldr r1, _080B3AEC @ =gUnknown_02004F14
 	movs r2, #9
-	bl __3MsgPvUi
+	bl genMisctextMsg__3MsgPvUi
 	adds r0, r4, #0
 	pop {r4}
 	pop {r1}
@@ -39388,10 +39388,10 @@ sub_080B3B48: @ 0x080B3B48
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
-	bl skill_90__5Skill
+	bl playAnim__6Action
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_080787CC
+	bl action_a0__6ActionP4Unit
 	pop {r4, r5}
 	pop {r0}
 	bx r0
@@ -39432,7 +39432,7 @@ sub_080B3B90: @ 0x080B3B90
 	push {r4, lr}
 	sub sp, #0x10
 	adds r4, r0, #0
-	bl sub_08078D1C
+	bl tellMissed__6ActionP4Unit
 	ldr r3, [r4, #0x1c]
 	movs r0, #0xa8
 	lsls r0, r0, #1
@@ -39469,7 +39469,7 @@ sub_080B3BD8: @ 0x080B3BD8
 	adds r4, r0, #0
 	lsls r2, r2, #0x18
 	lsrs r2, r2, #0x18
-	bl sub_08079FD0
+	bl action_138__6ActionP4Unitb
 	ldr r1, [r4, #0x1c]
 	movs r0, #0xb0
 	lsls r0, r0, #1
@@ -39714,7 +39714,7 @@ _080B3DA6:
 sub_080B3DAC: @ 0x080B3DAC
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
-	bl skill_90__5Skill
+	bl playAnim__6Action
 	ldr r1, [r4, #0x1c]
 	movs r5, #0xb0
 	lsls r5, r5, #1
@@ -39736,7 +39736,7 @@ sub_080B3DAC: @ 0x080B3DAC
 	adds r2, r0, #0
 	movs r0, #0x92
 	adds r1, r6, #0
-	bl sub_080730FC
+	bl playSeq
 	pop {r4, r5, r6}
 	pop {r0}
 	bx r0
@@ -39762,7 +39762,7 @@ sub_080B3E00: @ 0x080B3E00
 	sub sp, #0xbc
 	str r0, [sp, #0xb4]
 	adds r4, r1, #0
-	bl calcHit
+	bl action_d0__6ActionP4Unit
 	movs r0, #0
 	movs r1, #0x63
 	bl randS32
@@ -40081,7 +40081,7 @@ sub_080B4094: @ 0x080B4094
 	cmp r0, #0
 	bgt _080B40D0
 	adds r0, r4, #0
-	bl skill_80__5Skill
+	bl tellUseMessage__6Action
 	ldr r1, [r4, #0x1c]
 	movs r0, #0xb0
 	lsls r0, r0, #1
@@ -40405,7 +40405,7 @@ sub_080B4310: @ 0x080B4310
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
-	bl calcHit
+	bl action_d0__6ActionP4Unit
 	ldr r1, [r4, #0x1c]
 	movs r6, #0xcc
 	lsls r6, r6, #1
@@ -40421,7 +40421,7 @@ sub_080B4310: @ 0x080B4310
 	bl setsleep
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl calcHit
+	bl action_d0__6ActionP4Unit
 	ldr r1, [r4, #0x1c]
 	adds r1, r1, r6
 	movs r2, #0
@@ -40435,7 +40435,7 @@ sub_080B4310: @ 0x080B4310
 	bl setsleep
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl calcHit
+	bl action_d0__6ActionP4Unit
 	ldr r1, [r4, #0x1c]
 	adds r1, r1, r6
 	movs r2, #0
@@ -40449,7 +40449,7 @@ sub_080B4310: @ 0x080B4310
 	bl setsleep
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl calcHit
+	bl action_d0__6ActionP4Unit
 	ldr r1, [r4, #0x1c]
 	adds r1, r1, r6
 	movs r2, #0
@@ -40463,7 +40463,7 @@ sub_080B4310: @ 0x080B4310
 	bl setsleep
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl calcHit
+	bl action_d0__6ActionP4Unit
 	ldr r1, [r4, #0x1c]
 	adds r1, r1, r6
 	movs r2, #0
@@ -40477,7 +40477,7 @@ sub_080B4310: @ 0x080B4310
 	bl setsleep
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl calcHit
+	bl action_d0__6ActionP4Unit
 	ldr r1, [r4, #0x1c]
 	adds r1, r1, r6
 	movs r2, #0
@@ -40491,7 +40491,7 @@ sub_080B4310: @ 0x080B4310
 	bl setsleep
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl calcHit
+	bl action_d0__6ActionP4Unit
 	ldr r1, [r4, #0x1c]
 	adds r1, r1, r6
 	movs r2, #0
@@ -40557,7 +40557,7 @@ sub_080B4414: @ 0x080B4414
 	bl sub_08073270
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl calcHit
+	bl action_d0__6ActionP4Unit
 	ldr r0, [r5, #0x4c]
 	adds r0, #1
 	str r0, [r5, #0x4c]
@@ -40640,7 +40640,7 @@ sub_080B44A0: @ 0x080B44A0
 	bl sub_08073270
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl calcHit
+	bl action_d0__6ActionP4Unit
 	ldr r0, [r4, #0x4c]
 	adds r0, #1
 	str r0, [r4, #0x4c]
@@ -40687,7 +40687,7 @@ sub_080B4540: @ 0x080B4540
 	bl _call_via_r2
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl calcHit
+	bl action_d0__6ActionP4Unit
 	pop {r4, r5}
 	pop {r0}
 	bx r0
@@ -40713,7 +40713,7 @@ sub_080B4598: @ 0x080B4598
 _080B45A0:
 	adds r0, r6, #0
 	adds r1, r5, #0
-	bl sub_080787CC
+	bl action_a0__6ActionP4Unit
 	subs r4, #1
 	cmp r4, #0
 	bge _080B45A0
@@ -40737,10 +40737,10 @@ sub_080B45C8: @ 0x080B45C8
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
-	bl sub_080787CC
+	bl action_a0__6ActionP4Unit
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_080787CC
+	bl action_a0__6ActionP4Unit
 	pop {r4, r5}
 	pop {r0}
 	bx r0
@@ -40886,9 +40886,9 @@ _080B467C:
 	adds r2, r0, #0
 	movs r0, #0xb6
 	adds r1, r4, #0
-	bl sub_080730FC
+	bl playSeq
 	adds r0, r5, #0
-	bl skill_90__5Skill
+	bl playAnim__6Action
 _080B4714:
 	pop {r4, r5, r6, r7}
 	pop {r0}
@@ -41030,7 +41030,7 @@ sub_080B4820: @ 0x080B4820
 	push {r4, lr}
 	sub sp, #0x10
 	adds r4, r0, #0
-	bl sub_08078D4C
+	bl calcHit__6ActionP4Unit
 	ldr r3, [r4, #0x1c]
 	movs r0, #0xa8
 	lsls r0, r0, #1
@@ -41097,7 +41097,7 @@ sub_080B48A8: @ 0x080B48A8
 	push {r4, lr}
 	sub sp, #0x10
 	adds r4, r0, #0
-	bl sub_08078D4C
+	bl calcHit__6ActionP4Unit
 	ldr r3, [r4, #0x1c]
 	movs r0, #0xa8
 	lsls r0, r0, #1
@@ -41131,7 +41131,7 @@ _080B48EC: .4byte 0x00000493
 sub_080B48F0: @ 0x080B48F0
 	push {r4, lr}
 	adds r4, r0, #0
-	bl skill_90__5Skill
+	bl playAnim__6Action
 	ldr r0, [r4, #0x1c]
 	movs r1, #0xb0
 	lsls r1, r1, #1
@@ -41241,7 +41241,7 @@ sub_080B49D4: @ 0x080B49D4
 	push {r4, lr}
 	sub sp, #0x10
 	adds r4, r0, #0
-	bl sub_08078D1C
+	bl tellMissed__6ActionP4Unit
 	ldr r2, [r4, #0x1c]
 	movs r0, #0xa8
 	lsls r0, r0, #1
@@ -41276,7 +41276,7 @@ sub_080B4A18: @ 0x080B4A18
 	adds r5, r1, #0
 	lsls r2, r2, #0x18
 	lsrs r2, r2, #0x18
-	bl sub_08079FD0
+	bl action_138__6ActionP4Unitb
 	ldr r0, [r4, #0x1c]
 	movs r1, #0xb0
 	lsls r1, r1, #1
@@ -41290,7 +41290,7 @@ sub_080B4A18: @ 0x080B4A18
 	adds r1, r0, #0
 	movs r0, #0x7c
 	adds r2, r5, #0
-	bl sub_080730FC
+	bl playSeq
 	pop {r4, r5}
 	pop {r0}
 	bx r0
@@ -41316,7 +41316,7 @@ sub_080B4A4C: @ 0x080B4A4C
 	adds r5, r0, #0
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl sub_08078D4C
+	bl calcHit__6ActionP4Unit
 	ldr r0, [r4, #0x1c]
 	add r0, r8
 	movs r2, #0
@@ -41403,7 +41403,7 @@ sub_080B4B14: @ 0x080B4B14
 _080B4B1C:
 	adds r0, r6, #0
 	adds r1, r5, #0
-	bl sub_080787CC
+	bl action_a0__6ActionP4Unit
 	subs r4, #1
 	cmp r4, #0
 	bge _080B4B1C
@@ -41570,7 +41570,7 @@ sub_080B4C44: @ 0x080B4C44
 	movs r1, #1
 	bl _call_via_r2
 	adds r0, r4, #0
-	bl skill_90__5Skill
+	bl playAnim__6Action
 	pop {r4}
 	pop {r0}
 	bx r0
@@ -41592,7 +41592,7 @@ sub_080B4C98: @ 0x080B4C98
 	push {r4, lr}
 	sub sp, #0x10
 	adds r4, r0, #0
-	bl sub_08078D1C
+	bl tellMissed__6ActionP4Unit
 	ldr r3, [r4, #0x1c]
 	movs r0, #0xa8
 	lsls r0, r0, #1
@@ -41629,7 +41629,7 @@ sub_080B4CE0: @ 0x080B4CE0
 	adds r4, r0, #0
 	lsls r2, r2, #0x18
 	lsrs r2, r2, #0x18
-	bl sub_08079FD0
+	bl action_138__6ActionP4Unitb
 	ldr r1, [r4, #0x1c]
 	movs r5, #0xb0
 	lsls r5, r5, #1
@@ -41650,7 +41650,7 @@ sub_080B4CE0: @ 0x080B4CE0
 	adds r2, r0, #0
 	movs r0, #0x7c
 	adds r1, r6, #0
-	bl sub_080730FC
+	bl playSeq
 	ldr r1, [r4, #0x1c]
 	adds r1, r1, r5
 	movs r2, #0
@@ -41831,7 +41831,7 @@ sub_080B4E70: @ 0x080B4E70
 	adds r5, r1, #0
 	lsls r2, r2, #0x18
 	lsrs r2, r2, #0x18
-	bl sub_08079FD0
+	bl action_138__6ActionP4Unitb
 	ldr r1, [r4, #0x1c]
 	movs r6, #0xb0
 	lsls r6, r6, #1
@@ -41852,7 +41852,7 @@ sub_080B4E70: @ 0x080B4E70
 	adds r2, r0, #0
 	movs r0, #0x7c
 	mov r1, r8
-	bl sub_080730FC
+	bl playSeq
 	ldr r0, [r5, #0x1c]
 	movs r1, #0xcc
 	lsls r1, r1, #1
@@ -41923,7 +41923,7 @@ sub_080B4F28: @ 0x080B4F28
 	str r0, [r5, #0x4c]
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08078D4C
+	bl calcHit__6ActionP4Unit
 	pop {r4, r5}
 	pop {r0}
 	bx r0
@@ -41967,9 +41967,9 @@ sub_080B4F68: @ 0x080B4F68
 	adds r2, r0, #0
 	movs r0, #0xb6
 	adds r1, r6, #0
-	bl sub_080730FC
+	bl playSeq
 	adds r0, r4, #0
-	bl skill_90__5Skill
+	bl playAnim__6Action
 	pop {r4, r5, r6}
 	pop {r0}
 	bx r0
@@ -53499,7 +53499,7 @@ sub_080BAB44: @ 0x080BAB44
 	lsrs r0, r0, #0x10
 	adds r1, r6, #0
 	adds r2, r6, #0
-	bl sub_080730FC
+	bl playSeq
 	ldr r2, [r5, #0x1c]
 	movs r0, #0x90
 	lsls r0, r0, #1
@@ -53590,7 +53590,7 @@ sub_080BABD0: @ 0x080BABD0
 	lsrs r0, r0, #0x10
 	adds r1, r5, #0
 	adds r2, r5, #0
-	bl sub_080730FC
+	bl playSeq
 	ldr r2, [r6, #0x1c]
 	movs r0, #0x90
 	lsls r0, r0, #1
@@ -55099,7 +55099,7 @@ _080BB7CE:
 	movs r0, #0x1a
 	adds r1, r5, #0
 	adds r2, r5, #0
-	bl sub_080730FC
+	bl playSeq
 _080BB7E0:
 	movs r0, #1
 _080BB7E2:
@@ -55285,7 +55285,7 @@ sub_080BB8DC: @ 0x080BB8DC
 	movs r0, #0x4b
 	adds r1, r5, #0
 	adds r2, r5, #0
-	bl sub_080730FC
+	bl playSeq
 	movs r0, #0x82
 	movs r1, #0x96
 	bl randS32
@@ -56142,7 +56142,7 @@ _080BBF70:
 	movs r0, #0xaa
 	adds r1, r5, #0
 	adds r2, r5, #0
-	bl sub_080730FC
+	bl playSeq
 _080BBFE2:
 	movs r0, #1
 _080BBFE4:
@@ -56275,7 +56275,7 @@ _080BC07C:
 	movs r0, #0xaa
 	adds r1, r5, #0
 	adds r2, r5, #0
-	bl sub_080730FC
+	bl playSeq
 _080BC0EE:
 	movs r0, #1
 _080BC0F0:
@@ -58082,7 +58082,7 @@ sub_080BD000: @ 0x080BD000
 	adds r1, r0, #0
 	adds r0, r5, #0
 	movs r2, #0
-	bl sub_08079FD0
+	bl action_138__6ActionP4Unitb
 	ldr r1, [r5, #0x1c]
 	adds r1, r1, r4
 	movs r2, #0
@@ -58620,7 +58620,7 @@ _080BD5A0:
 _080BD5A4:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08078C7C
+	bl calcMissed__6ActionP4Unit
 _080BD5AC:
 	pop {r4, r5}
 	pop {r1}
@@ -58747,7 +58747,7 @@ _080BD694:
 	cmp r6, r0
 	blt _080BD674
 	adds r0, r7, #0
-	bl skill_90__5Skill
+	bl playAnim__6Action
 	ldr r1, [r7, #0x1c]
 	movs r2, #0xbc
 	lsls r2, r2, #1
@@ -58812,11 +58812,11 @@ sub_080BD70C: @ 0x080BD70C
 	lsrs r6, r6, #0x18
 	movs r0, #0x13
 	adds r2, r5, #0
-	bl sub_080730FC
+	bl playSeq
 	adds r0, r4, #0
 	adds r1, r5, #0
 	adds r2, r6, #0
-	bl sub_08079FD0
+	bl action_138__6ActionP4Unitb
 	pop {r4, r5, r6}
 	pop {r0}
 	bx r0
@@ -58935,10 +58935,10 @@ sub_080BD800: @ 0x080BD800
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
-	bl skill_90__5Skill
+	bl playAnim__6Action
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_080787CC
+	bl action_a0__6ActionP4Unit
 	pop {r4, r5}
 	pop {r0}
 	bx r0
@@ -58968,11 +58968,11 @@ sub_080BD830: @ 0x080BD830
 	lsrs r6, r6, #0x18
 	movs r0, #0x11
 	adds r2, r5, #0
-	bl sub_080730FC
+	bl playSeq
 	adds r0, r4, #0
 	adds r1, r5, #0
 	adds r2, r6, #0
-	bl sub_08079FD0
+	bl action_138__6ActionP4Unitb
 	pop {r4, r5, r6}
 	pop {r0}
 	bx r0
@@ -59091,10 +59091,10 @@ sub_080BD924: @ 0x080BD924
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
-	bl skill_90__5Skill
+	bl playAnim__6Action
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_080787CC
+	bl action_a0__6ActionP4Unit
 	pop {r4, r5}
 	pop {r0}
 	bx r0
@@ -59222,7 +59222,7 @@ sub_080BD9DC: @ 0x080BD9DC
 	movs r0, #0x46
 	adds r1, r6, #0
 	adds r2, r6, #0
-	bl sub_080730FC
+	bl playSeq
 	ldr r0, [r7, #0x1c]
 	movs r1, #0xac
 	lsls r1, r1, #1
@@ -59269,7 +59269,7 @@ _080BDA94: .4byte 0x000004F3
 _080BDA98:
 	adds r0, r7, #0
 	adds r1, r6, #0
-	bl sub_08078C3C
+	bl tellResisted__6ActionP4Unit
 _080BDAA0:
 	add sp, #0x1c
 	pop {r3}

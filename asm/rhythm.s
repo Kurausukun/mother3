@@ -1550,8 +1550,8 @@ _080730EE:
 	pop {r0}
 	bx r0
 
-	thumb_func_start sub_080730FC
-sub_080730FC: @ 0x080730FC
+	thumb_func_start playSeq
+playSeq: @ 0x080730FC
 	push {r4, r5, r6, r7, lr}
 	sub sp, #8
 	adds r7, r1, #0
@@ -2145,7 +2145,7 @@ _080735B0:
 	adds r6, #1
 _080735B2:
 	adds r0, r4, #0
-	bl sub_0806E414
+	bl sub_0806E414__3Msg
 	cmp r6, r0
 	bge _080735BE
 	b _080734C0
@@ -2175,7 +2175,7 @@ print__3MsgRC13PrintSettingsb: @ 0x080735E0
 	adds r4, r1, #0
 	lsls r2, r2, #0x18
 	lsrs r5, r2, #0x18
-	bl sub_0806E414
+	bl sub_0806E414__3Msg
 	cmp r0, #0
 	ble _0807361C
 	mov r0, sp
@@ -2244,7 +2244,7 @@ sub_0807367C: @ 0x0807367C
 	ldr r4, _080736AC @ =0xFFFFE894
 	add sp, r4
 	adds r4, r0, #0
-	bl sub_0806E414
+	bl sub_0806E414__3Msg
 	cmp r0, #0
 	ble _080736A2
 	mov r0, sp
@@ -2272,7 +2272,7 @@ sub_080736B4: @ 0x080736B4
 	add sp, r4
 	adds r4, r0, #0
 	adds r5, r1, #0
-	bl sub_0806E414
+	bl sub_0806E414__3Msg
 	cmp r0, #0
 	ble _080736E4
 	mov r0, sp
@@ -2444,7 +2444,7 @@ _0807376A:
 	movs r0, #0x4d
 	adds r1, r7, #0
 	adds r2, r7, #0
-	bl sub_080730FC
+	bl playSeq
 	ldr r2, [r7, #0x1c]
 	movs r0, #0xc4
 	lsls r0, r0, #1
@@ -2675,7 +2675,7 @@ _08073962:
 	movs r0, #0x4d
 	adds r1, r7, #0
 	adds r2, r7, #0
-	bl sub_080730FC
+	bl playSeq
 	ldr r2, [r7, #0x1c]
 	movs r0, #0xc4
 	lsls r0, r0, #1
@@ -2858,7 +2858,7 @@ _08073AF2:
 	movs r0, #0x4d
 	adds r1, r7, #0
 	adds r2, r7, #0
-	bl sub_080730FC
+	bl playSeq
 	ldr r2, [r7, #0x1c]
 	movs r0, #0xc4
 	lsls r0, r0, #1
@@ -3215,7 +3215,7 @@ sub_08073E3C: @ 0x08073E3C
 	lsrs r0, r0, #0x10
 	adds r1, r5, #0
 	adds r2, r5, #0
-	bl sub_080730FC
+	bl playSeq
 	ldr r2, [r4, #0x1c]
 	movs r0, #0x90
 	lsls r0, r0, #1
