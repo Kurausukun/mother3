@@ -273,13 +273,13 @@ void MPlayExtender(struct CgbChannel *cgbChans)
 
     CpuFill32(0, cgbChans, sizeof(struct CgbChannel) * 4);
 
-    cgbChans[0].ty = 1;
+    cgbChans[0].type = 1;
     cgbChans[0].panMask = 0x11;
-    cgbChans[1].ty = 2;
+    cgbChans[1].type = 2;
     cgbChans[1].panMask = 0x22;
-    cgbChans[2].ty = 3;
+    cgbChans[2].type = 3;
     cgbChans[2].panMask = 0x44;
-    cgbChans[3].ty = 4;
+    cgbChans[3].type = 4;
     cgbChans[3].panMask = 0x88;
 
     soundInfo->ident = ident;
@@ -399,7 +399,7 @@ void m4aSoundMode(u32 mode)
 
         while (temp != 0)
         {
-            chan->status = 0;
+            chan->statusFlags = 0;
             temp--;
             chan++;
         }
@@ -444,7 +444,7 @@ void SoundClear(void)
 
     while (i > 0)
     {
-        ((struct SoundChannel *)chan)->status = 0;
+        ((struct SoundChannel *)chan)->statusFlags = 0;
         i--;
         chan = (void *)((s32)chan + sizeof(struct SoundChannel));
     }
@@ -458,7 +458,7 @@ void SoundClear(void)
         while (i <= 4)
         {
             soundInfo->CgbOscOff(i);
-            ((struct CgbChannel *)chan)->sf = 0;
+            ((struct CgbChannel *)chan)->statusFlags = 0;
             i++;
             chan = (void *)((s32)chan + sizeof(struct CgbChannel));
         }
@@ -881,632 +881,332 @@ void CgbModVol(struct CgbChannel *chan)
     if (!CgbPan(chan, r, l))
     {
         chan->pan = 0xFF;
-        chan->eg = ((chan->rightVolume + chan->leftVolume) & 0xFFFFFFFF) / 16;
+        chan->envelopeGoal = ((chan->rightVolume + chan->leftVolume) & 0xFFFFFFFF) / 16;
     }
     else
     {
-        chan->eg = ((chan->rightVolume + chan->leftVolume) & 0xFFFFFFFF) / 16;
-        if (chan->eg > 15)
-            chan->eg = 15;
+        chan->envelopeGoal = ((chan->rightVolume + chan->leftVolume) & 0xFFFFFFFF) / 16;
+        if (chan->envelopeGoal > 15)
+            chan->envelopeGoal = 15;
     }
 
-    chan->sg = (chan->eg * chan->su + 15) >> 4;
+    chan->sustainGoal = (chan->envelopeGoal * chan->sustain + 15) >> 4;
     chan->pan &= chan->panMask;
 }
 
-NAKED
-void CgbSound(void) {
-    asm_unified("\n\
-	push {r4, r5, r6, r7, lr}\n\
-	mov r7, sl\n\
-	mov r6, sb\n\
-	mov r5, r8\n\
-	push {r5, r6, r7}\n\
-	sub sp, #0x24\n\
-	ldr r0, _08090620 @ =gUnknown_03007FF0\n\
-	ldr r0, [r0]\n\
-	str r0, [sp, #8]\n\
-	ldrb r0, [r0, #0xa]\n\
-	cmp r0, #0\n\
-	beq _08090624\n\
-	subs r0, #1\n\
-	ldr r1, [sp, #8]\n\
-	strb r0, [r1, #0xa]\n\
-	b _0809062A\n\
-	.align 2, 0\n\
-_08090620: .4byte gUnknown_03007FF0\n\
-_08090624:\n\
-	movs r0, #0xe\n\
-	ldr r3, [sp, #8]\n\
-	strb r0, [r3, #0xa]\n\
-_0809062A:\n\
-	movs r6, #1\n\
-	ldr r0, [sp, #8]\n\
-	ldr r4, [r0, #0x1c]\n\
-	mov r1, sp\n\
-	str r1, [sp, #0x1c]\n\
-_08090634:\n\
-	ldrb r1, [r4]\n\
-	movs r0, #0xc7\n\
-	ands r0, r1\n\
-	adds r3, r6, #1\n\
-	mov sl, r3\n\
-	movs r1, #0x40\n\
-	adds r1, r1, r4\n\
-	mov sb, r1\n\
-	cmp r0, #0\n\
-	bne _0809064A\n\
-	b _08090A66\n\
-_0809064A:\n\
-	cmp r6, #2\n\
-	beq _08090680\n\
-	cmp r6, #2\n\
-	bgt _08090658\n\
-	cmp r6, #1\n\
-	beq _0809065E\n\
-	b _080906C8\n\
-_08090658:\n\
-	cmp r6, #3\n\
-	beq _080906A4\n\
-	b _080906C8\n\
-_0809065E:\n\
-	ldr r3, _08090674 @ =0x04000060\n\
-	str r3, [sp, #0xc]\n\
-	adds r3, #2\n\
-	ldr r0, _08090678 @ =0x04000063\n\
-	str r0, [sp, #0x10]\n\
-	ldr r1, _0809067C @ =0x04000064\n\
-	str r1, [sp, #0x14]\n\
-	adds r0, #2\n\
-	str r0, [sp, #0x18]\n\
-	movs r0, #0\n\
-	b _080906DC\n\
-	.align 2, 0\n\
-_08090674: .4byte 0x04000060\n\
-_08090678: .4byte 0x04000063\n\
-_0809067C: .4byte 0x04000064\n\
-_08090680:\n\
-	ldr r3, _08090698 @ =0x04000061\n\
-	str r3, [sp, #0xc]\n\
-	adds r3, #7\n\
-	ldr r0, _0809069C @ =0x04000069\n\
-	str r0, [sp, #0x10]\n\
-	ldr r1, _080906A0 @ =0x0400006C\n\
-	str r1, [sp, #0x14]\n\
-	adds r0, #4\n\
-	str r0, [sp, #0x18]\n\
-	movs r0, #1\n\
-	b _080906DC\n\
-	.align 2, 0\n\
-_08090698: .4byte 0x04000061\n\
-_0809069C: .4byte 0x04000069\n\
-_080906A0: .4byte 0x0400006C\n\
-_080906A4:\n\
-	ldr r3, _080906BC @ =0x04000070\n\
-	str r3, [sp, #0xc]\n\
-	adds r3, #2\n\
-	ldr r0, _080906C0 @ =0x04000073\n\
-	str r0, [sp, #0x10]\n\
-	ldr r1, _080906C4 @ =0x04000074\n\
-	str r1, [sp, #0x14]\n\
-	adds r0, #2\n\
-	str r0, [sp, #0x18]\n\
-	movs r0, #2\n\
-	b _080906DC\n\
-	.align 2, 0\n\
-_080906BC: .4byte 0x04000070\n\
-_080906C0: .4byte 0x04000073\n\
-_080906C4: .4byte 0x04000074\n\
-_080906C8:\n\
-	ldr r3, _08090730 @ =0x04000071\n\
-	str r3, [sp, #0xc]\n\
-	adds r3, #7\n\
-	ldr r0, _08090734 @ =0x04000079\n\
-	str r0, [sp, #0x10]\n\
-	ldr r1, _08090738 @ =0x0400007C\n\
-	str r1, [sp, #0x14]\n\
-	adds r0, #4\n\
-	str r0, [sp, #0x18]\n\
-	movs r0, #3\n\
-_080906DC:\n\
-	ldr r1, [sp, #0x1c]\n\
-	strb r0, [r1]\n\
-	ldr r0, [sp, #8]\n\
-	ldrb r0, [r0, #0xa]\n\
-	str r0, [sp, #4]\n\
-	ldr r1, [sp, #0x10]\n\
-	ldrb r0, [r1]\n\
-	mov r8, r0\n\
-	ldrb r2, [r4]\n\
-	movs r0, #0x80\n\
-	ands r0, r2\n\
-	cmp r0, #0\n\
-	beq _080907D6\n\
-	movs r7, #0x40\n\
-	adds r0, r7, #0\n\
-	ands r0, r2\n\
-	lsls r0, r0, #0x18\n\
-	lsrs r5, r0, #0x18\n\
-	adds r0, r6, #1\n\
-	mov sl, r0\n\
-	movs r1, #0x40\n\
-	adds r1, r1, r4\n\
-	mov sb, r1\n\
-	cmp r5, #0\n\
-	beq _08090710\n\
-	b _0809080C\n\
-_08090710:\n\
-	movs r0, #3\n\
-	strb r0, [r4]\n\
-	strb r0, [r4, #0x1d]\n\
-	adds r0, r4, #0\n\
-	str r3, [sp, #0x20]\n\
-	bl CgbModVol\n\
-	ldr r3, [sp, #0x20]\n\
-	cmp r6, #2\n\
-	beq _08090748\n\
-	cmp r6, #2\n\
-	bgt _0809073C\n\
-	cmp r6, #1\n\
-	beq _08090742\n\
-	b _0809079C\n\
-	.align 2, 0\n\
-_08090730: .4byte 0x04000071\n\
-_08090734: .4byte 0x04000079\n\
-_08090738: .4byte 0x0400007C\n\
-_0809073C:\n\
-	cmp r6, #3\n\
-	beq _08090754\n\
-	b _0809079C\n\
-_08090742:\n\
-	ldrb r0, [r4, #0x1f]\n\
-	ldr r1, [sp, #0xc]\n\
-	strb r0, [r1]\n\
-_08090748:\n\
-	ldr r0, [r4, #0x24]\n\
-	lsls r0, r0, #6\n\
-	ldrb r1, [r4, #0x1e]\n\
-	adds r0, r0, r1\n\
-	strb r0, [r3]\n\
-	b _080907A8\n\
-_08090754:\n\
-	ldr r1, [r4, #0x24]\n\
-	ldr r0, [r4, #0x28]\n\
-	cmp r1, r0\n\
-	beq _0809077C\n\
-	ldr r0, [sp, #0xc]\n\
-	strb r7, [r0]\n\
-	ldr r1, _08090790 @ =0x04000090\n\
-	ldr r2, [r4, #0x24]\n\
-	ldr r0, [r2]\n\
-	str r0, [r1]\n\
-	adds r1, #4\n\
-	ldr r0, [r2, #4]\n\
-	str r0, [r1]\n\
-	adds r1, #4\n\
-	ldr r0, [r2, #8]\n\
-	str r0, [r1]\n\
-	adds r1, #4\n\
-	ldr r0, [r2, #0xc]\n\
-	str r0, [r1]\n\
-	str r2, [r4, #0x28]\n\
-_0809077C:\n\
-	ldr r1, [sp, #0xc]\n\
-	strb r5, [r1]\n\
-	ldrb r0, [r4, #0x1e]\n\
-	strb r0, [r3]\n\
-	ldrb r0, [r4, #0x1e]\n\
-	cmp r0, #0\n\
-	beq _08090794\n\
-	movs r0, #0xc0\n\
-	b _080907B6\n\
-	.align 2, 0\n\
-_08090790: .4byte 0x04000090\n\
-_08090794:\n\
-	movs r3, #0x80\n\
-	rsbs r3, r3, #0\n\
-	strb r3, [r4, #0x1a]\n\
-	b _080907B8\n\
-_0809079C:\n\
-	ldrb r0, [r4, #0x1e]\n\
-	strb r0, [r3]\n\
-	ldr r0, [r4, #0x24]\n\
-	lsls r0, r0, #3\n\
-	ldr r1, [sp, #0x14]\n\
-	strb r0, [r1]\n\
-_080907A8:\n\
-	ldrb r0, [r4, #4]\n\
-	adds r0, #8\n\
-	mov r8, r0\n\
-	ldrb r0, [r4, #0x1e]\n\
-	cmp r0, #0\n\
-	beq _080907B6\n\
-	movs r0, #0x40\n\
-_080907B6:\n\
-	strb r0, [r4, #0x1a]\n\
-_080907B8:\n\
-	ldrb r1, [r4, #4]\n\
-	movs r2, #0\n\
-	strb r1, [r4, #0xb]\n\
-	movs r0, #0xff\n\
-	ands r0, r1\n\
-	adds r3, r6, #1\n\
-	mov sl, r3\n\
-	movs r1, #0x40\n\
-	adds r1, r1, r4\n\
-	mov sb, r1\n\
-	cmp r0, #0\n\
-	bne _080907D2\n\
-	b _08090926\n\
-_080907D2:\n\
-	strb r2, [r4, #9]\n\
-	b _08090954\n\
-_080907D6:\n\
-	movs r0, #4\n\
-	ands r0, r2\n\
-	cmp r0, #0\n\
-	bne _080907F0\n\
-	ldr r0, _0809081C @ =0x04000084\n\
-	ldrb r1, [r0]\n\
-	ldr r3, [sp, #0x1c]\n\
-	ldrb r0, [r3]\n\
-	asrs r1, r0\n\
-	movs r0, #1\n\
-	ands r1, r0\n\
-	cmp r1, #0\n\
-	bne _08090820\n\
-_080907F0:\n\
-	ldrb r0, [r4, #0xd]\n\
-	subs r0, #1\n\
-	strb r0, [r4, #0xd]\n\
-	movs r1, #0xff\n\
-	ands r0, r1\n\
-	lsls r0, r0, #0x18\n\
-	adds r3, r6, #1\n\
-	mov sl, r3\n\
-	movs r1, #0x40\n\
-	adds r1, r1, r4\n\
-	mov sb, r1\n\
-	cmp r0, #0\n\
-	ble _0809080C\n\
-	b _08090966\n\
-_0809080C:\n\
-	lsls r0, r6, #0x18\n\
-	lsrs r0, r0, #0x18\n\
-	bl CgbOscOff\n\
-	movs r0, #0\n\
-	strb r0, [r4]\n\
-	b _08090A62\n\
-	.align 2, 0\n\
-_0809081C: .4byte 0x04000084\n\
-_08090820:\n\
-	movs r0, #0x40\n\
-	ands r0, r2\n\
-	adds r3, r6, #1\n\
-	mov sl, r3\n\
-	movs r1, #0x40\n\
-	adds r1, r1, r4\n\
-	mov sb, r1\n\
-	cmp r0, #0\n\
-	beq _08090860\n\
-	movs r0, #3\n\
-	ands r0, r2\n\
-	cmp r0, #0\n\
-	beq _08090860\n\
-	movs r0, #0xfc\n\
-	ands r0, r2\n\
-	movs r2, #0\n\
-	strb r0, [r4]\n\
-	ldrb r1, [r4, #7]\n\
-	strb r1, [r4, #0xb]\n\
-	movs r0, #0xff\n\
-	ands r0, r1\n\
-	cmp r0, #0\n\
-	beq _08090892\n\
-	ldrb r0, [r4, #0x1d]\n\
-	movs r1, #1\n\
-	orrs r0, r1\n\
-	strb r0, [r4, #0x1d]\n\
-	cmp r6, #3\n\
-	beq _08090954\n\
-	ldrb r3, [r4, #7]\n\
-	mov r8, r3\n\
-	b _08090954\n\
-_08090860:\n\
-	ldrb r0, [r4, #0xb]\n\
-	cmp r0, #0\n\
-	bne _08090954\n\
-	cmp r6, #3\n\
-	bne _08090872\n\
-	ldrb r1, [r4, #0x1d]\n\
-	movs r0, #1\n\
-	orrs r0, r1\n\
-	strb r0, [r4, #0x1d]\n\
-_08090872:\n\
-	adds r0, r4, #0\n\
-	bl CgbModVol\n\
-	ldrb r0, [r4]\n\
-	movs r1, #3\n\
-	ands r1, r0\n\
-	cmp r1, #0\n\
-	bne _080908C4\n\
-	ldrb r0, [r4, #9]\n\
-	subs r0, #1\n\
-	strb r0, [r4, #9]\n\
-	movs r1, #0xff\n\
-	ands r0, r1\n\
-	lsls r0, r0, #0x18\n\
-	cmp r0, #0\n\
-	bgt _080908C0\n\
-_08090892:\n\
-	ldrb r1, [r4, #0xa]\n\
-	ldrb r0, [r4, #0xc]\n\
-	muls r0, r1, r0\n\
-	adds r0, #0xff\n\
-	asrs r0, r0, #8\n\
-	movs r1, #0\n\
-	strb r0, [r4, #9]\n\
-	lsls r0, r0, #0x18\n\
-	cmp r0, #0\n\
-	beq _0809080C\n\
-	ldrb r0, [r4]\n\
-	movs r1, #4\n\
-	orrs r0, r1\n\
-	strb r0, [r4]\n\
-	ldrb r0, [r4, #0x1d]\n\
-	movs r1, #1\n\
-	orrs r0, r1\n\
-	strb r0, [r4, #0x1d]\n\
-	cmp r6, #3\n\
-	beq _08090966\n\
-	movs r3, #8\n\
-	mov r8, r3\n\
-	b _08090966\n\
-_080908C0:\n\
-	ldrb r0, [r4, #7]\n\
-	b _08090952\n\
-_080908C4:\n\
-	cmp r1, #1\n\
-	bne _080908D0\n\
-_080908C8:\n\
-	ldrb r0, [r4, #0x19]\n\
-	strb r0, [r4, #9]\n\
-	movs r0, #7\n\
-	b _08090952\n\
-_080908D0:\n\
-	cmp r1, #2\n\
-	bne _08090916\n\
-	ldrb r0, [r4, #9]\n\
-	subs r0, #1\n\
-	strb r0, [r4, #9]\n\
-	movs r1, #0xff\n\
-	ands r0, r1\n\
-	lsls r0, r0, #0x18\n\
-	asrs r0, r0, #0x18\n\
-	movs r1, #0x19\n\
-	ldrsb r1, [r4, r1]\n\
-	cmp r0, r1\n\
-	bgt _08090912\n\
-_080908EA:\n\
-	ldrb r0, [r4, #6]\n\
-	cmp r0, #0\n\
-	bne _080908FA\n\
-	ldrb r1, [r4]\n\
-	movs r0, #0xfc\n\
-	ands r0, r1\n\
-	strb r0, [r4]\n\
-	b _08090892\n\
-_080908FA:\n\
-	ldrb r0, [r4]\n\
-	subs r0, #1\n\
-	strb r0, [r4]\n\
-	ldrb r1, [r4, #0x1d]\n\
-	movs r0, #1\n\
-	orrs r0, r1\n\
-	strb r0, [r4, #0x1d]\n\
-	cmp r6, #3\n\
-	beq _080908C8\n\
-	movs r3, #8\n\
-	mov r8, r3\n\
-	b _080908C8\n\
-_08090912:\n\
-	ldrb r0, [r4, #5]\n\
-	b _08090952\n\
-_08090916:\n\
-	ldrb r0, [r4, #9]\n\
-	adds r0, #1\n\
-	strb r0, [r4, #9]\n\
-	movs r1, #0xff\n\
-	ands r0, r1\n\
-	ldrb r3, [r4, #0xa]\n\
-	cmp r0, r3\n\
-	blo _08090950\n\
-_08090926:\n\
-	ldrb r0, [r4]\n\
-	subs r0, #1\n\
-	movs r2, #0\n\
-	strb r0, [r4]\n\
-	ldrb r1, [r4, #5]\n\
-	strb r1, [r4, #0xb]\n\
-	movs r0, #0xff\n\
-	ands r0, r1\n\
-	cmp r0, #0\n\
-	beq _080908EA\n\
-	ldrb r0, [r4, #0x1d]\n\
-	movs r1, #1\n\
-	orrs r0, r1\n\
-	strb r0, [r4, #0x1d]\n\
-	ldrb r0, [r4, #0xa]\n\
-	strb r0, [r4, #9]\n\
-	cmp r6, #3\n\
-	beq _08090954\n\
-	ldrb r0, [r4, #5]\n\
-	mov r8, r0\n\
-	b _08090954\n\
-_08090950:\n\
-	ldrb r0, [r4, #4]\n\
-_08090952:\n\
-	strb r0, [r4, #0xb]\n\
-_08090954:\n\
-	ldrb r0, [r4, #0xb]\n\
-	subs r0, #1\n\
-	strb r0, [r4, #0xb]\n\
-	ldr r1, [sp, #4]\n\
-	cmp r1, #0\n\
-	bne _08090966\n\
-	subs r1, #1\n\
-	str r1, [sp, #4]\n\
-	b _08090860\n\
-_08090966:\n\
-	ldrb r1, [r4, #0x1d]\n\
-	movs r0, #2\n\
-	ands r0, r1\n\
-	cmp r0, #0\n\
-	beq _080909E0\n\
-	cmp r6, #3\n\
-	bgt _080909A6\n\
-	ldrb r1, [r4, #1]\n\
-	movs r0, #8\n\
-	ands r0, r1\n\
-	cmp r0, #0\n\
-	beq _080909A6\n\
-	ldr r0, _08090990 @ =0x04000089\n\
-	ldrb r0, [r0]\n\
-	adds r1, r0, #0\n\
-	cmp r1, #0x3f\n\
-	bgt _08090998\n\
-	ldr r0, [r4, #0x20]\n\
-	adds r0, #2\n\
-	ldr r1, _08090994 @ =0x000007FC\n\
-	b _080909A2\n\
-	.align 2, 0\n\
-_08090990: .4byte 0x04000089\n\
-_08090994: .4byte 0x000007FC\n\
-_08090998:\n\
-	cmp r1, #0x7f\n\
-	bgt _080909A6\n\
-	ldr r0, [r4, #0x20]\n\
-	adds r0, #1\n\
-	ldr r1, _080909B0 @ =0x000007FE\n\
-_080909A2:\n\
-	ands r0, r1\n\
-	str r0, [r4, #0x20]\n\
-_080909A6:\n\
-	cmp r6, #4\n\
-	beq _080909B4\n\
-	ldr r0, [r4, #0x20]\n\
-	b _080909C0\n\
-	.align 2, 0\n\
-_080909B0: .4byte 0x000007FE\n\
-_080909B4:\n\
-	ldr r1, [sp, #0x14]\n\
-	ldrb r0, [r1]\n\
-	movs r1, #8\n\
-	ands r1, r0\n\
-	ldr r0, [r4, #0x20]\n\
-	orrs r0, r1\n\
-_080909C0:\n\
-	ldr r3, [sp, #0x14]\n\
-	strb r0, [r3]\n\
-	ldrb r0, [r4, #0x1a]\n\
-	movs r1, #0xc0\n\
-	ands r1, r0\n\
-	ldr r0, [r4, #0x20]\n\
-	movs r2, #0xfc\n\
-	lsls r2, r2, #6\n\
-	ands r0, r2\n\
-	lsrs r0, r0, #8\n\
-	adds r1, r1, r0\n\
-	strb r1, [r4, #0x1a]\n\
-	movs r0, #0xff\n\
-	ands r1, r0\n\
-	ldr r3, [sp, #0x18]\n\
-	strb r1, [r3]\n\
-_080909E0:\n\
-	ldrb r1, [r4, #0x1d]\n\
-	movs r0, #1\n\
-	ands r0, r1\n\
-	cmp r0, #0\n\
-	beq _08090A62\n\
-	ldr r2, _08090A28 @ =0x04000081\n\
-	ldrb r1, [r4, #0x1c]\n\
-	ldrb r0, [r2]\n\
-	bics r0, r1\n\
-	ldrb r1, [r4, #0x1b]\n\
-	orrs r0, r1\n\
-	strb r0, [r2]\n\
-	cmp r6, #3\n\
-	bne _08090A30\n\
-	ldr r1, _08090A2C @ =gCgb3Vol\n\
-	ldrb r0, [r4, #9]\n\
-	adds r0, r0, r1\n\
-	ldrb r0, [r0]\n\
-	ldr r1, [sp, #0x10]\n\
-	strb r0, [r1]\n\
-	ldrb r1, [r4, #0x1a]\n\
-	movs r2, #0x80\n\
-	adds r0, r2, #0\n\
-	ands r0, r1\n\
-	cmp r0, #0\n\
-	beq _08090A62\n\
-	ldr r3, [sp, #0xc]\n\
-	strb r2, [r3]\n\
-	ldrb r0, [r4, #0x1a]\n\
-	ldr r1, [sp, #0x18]\n\
-	strb r0, [r1]\n\
-	ldrb r1, [r4, #0x1a]\n\
-	movs r0, #0x7f\n\
-	ands r0, r1\n\
-	strb r0, [r4, #0x1a]\n\
-	b _08090A62\n\
-	.align 2, 0\n\
-_08090A28: .4byte 0x04000081\n\
-_08090A2C: .4byte gCgb3Vol\n\
-_08090A30:\n\
-	movs r0, #0xf\n\
-	mov r3, r8\n\
-	ands r3, r0\n\
-	mov r8, r3\n\
-	ldrb r0, [r4, #9]\n\
-	lsls r0, r0, #4\n\
-	add r0, r8\n\
-	ldr r1, [sp, #0x10]\n\
-	strb r0, [r1]\n\
-	ldrb r0, [r4, #0x1a]\n\
-	movs r2, #0x80\n\
-	orrs r0, r2\n\
-	ldr r3, [sp, #0x18]\n\
-	strb r0, [r3]\n\
-	cmp r6, #1\n\
-	bne _08090A62\n\
-	ldr r0, [sp, #0xc]\n\
-	ldrb r1, [r0]\n\
-	movs r0, #8\n\
-	ands r0, r1\n\
-	cmp r0, #0\n\
-	bne _08090A62\n\
-	ldrb r0, [r4, #0x1a]\n\
-	orrs r0, r2\n\
-	strb r0, [r3]\n\
-_08090A62:\n\
-	movs r0, #0\n\
-	strb r0, [r4, #0x1d]\n\
-_08090A66:\n\
-	mov r6, sl\n\
-	mov r4, sb\n\
-	cmp r6, #4\n\
-	bgt _08090A70\n\
-	b _08090634\n\
-_08090A70:\n\
-	add sp, #0x24\n\
-	pop {r3, r4, r5}\n\
-	mov r8, r3\n\
-	mov sb, r4\n\
-	mov sl, r5\n\
-	pop {r4, r5, r6, r7}\n\
-	pop {r0}\n\
-	bx r0\n\
-    ");
+void CgbSound(void)
+{
+    s32 ch;
+    struct CgbChannel *channels;
+    s32 prevC15;
+    struct SoundInfo *soundInfo = SOUND_INFO_PTR;
+    vu8 *nrx0ptr;
+    vu8 *nrx1ptr;
+    vu8 *nrx2ptr;
+    vu8 *nrx3ptr;
+    vu8 *nrx4ptr;
+    vu8 *sp1C;
+    u8 sp00;
+    s32 envelopeStepTimeAndDir;
+
+    // Most comparision operations that cast to s8 perform 'and' by 0xFF.
+    int mask = 0xff;
+
+    if (soundInfo->c15)
+        soundInfo->c15--;
+    else
+        soundInfo->c15 = 14;
+
+    for (ch = 1, channels = soundInfo->cgbChans, sp1C = &sp00; ch <= 4; ch++, channels++)
+    {
+        if (!(channels->statusFlags & SOUND_CHANNEL_SF_ON))
+            continue;
+
+        /* 1. determine hardware channel registers */
+        switch (ch)
+        {
+        case 1:
+            nrx0ptr = (vu8 *)(REG_ADDR_NR10);
+            nrx1ptr = (vu8 *)(REG_ADDR_NR11);
+            nrx2ptr = (vu8 *)(REG_ADDR_NR12);
+            nrx3ptr = (vu8 *)(REG_ADDR_NR13);
+            nrx4ptr = (vu8 *)(REG_ADDR_NR14);
+            *sp1C = 0;
+            break;
+        case 2:
+            nrx0ptr = (vu8 *)(REG_ADDR_NR10+1);
+            nrx1ptr = (vu8 *)(REG_ADDR_NR21);
+            nrx2ptr = (vu8 *)(REG_ADDR_NR22);
+            nrx3ptr = (vu8 *)(REG_ADDR_NR23);
+            nrx4ptr = (vu8 *)(REG_ADDR_NR24);
+            *sp1C = 1;
+            break;
+        case 3:
+            nrx0ptr = (vu8 *)(REG_ADDR_NR30);
+            nrx1ptr = (vu8 *)(REG_ADDR_NR31);
+            nrx2ptr = (vu8 *)(REG_ADDR_NR32);
+            nrx3ptr = (vu8 *)(REG_ADDR_NR33);
+            nrx4ptr = (vu8 *)(REG_ADDR_NR34);
+            *sp1C = 2;
+            break;
+        default:
+            nrx0ptr = (vu8 *)(REG_ADDR_NR30+1);
+            nrx1ptr = (vu8 *)(REG_ADDR_NR41);
+            nrx2ptr = (vu8 *)(REG_ADDR_NR42);
+            nrx3ptr = (vu8 *)(REG_ADDR_NR43);
+            nrx4ptr = (vu8 *)(REG_ADDR_NR44);
+            *sp1C = 3;
+            break;
+        }
+        prevC15 = soundInfo->c15;
+        envelopeStepTimeAndDir = *nrx2ptr;
+
+        /* 2. calculate envelope volume */
+        if (channels->statusFlags & SOUND_CHANNEL_SF_START)
+        {
+            if (!(channels->statusFlags & SOUND_CHANNEL_SF_STOP))
+            {
+                channels->statusFlags = SOUND_CHANNEL_SF_ENV_ATTACK;
+                channels->modify = CGB_CHANNEL_MO_PIT | CGB_CHANNEL_MO_VOL;
+                CgbModVol(channels);
+                switch (ch)
+                {
+                case 1:
+                    *nrx0ptr = channels->sweep;
+                    // fallthrough
+                case 2:
+                    *nrx1ptr = ((u32)channels->wavePointer << 6) + channels->length;
+                    goto init_env_step_time_dir;
+                case 3:
+                    if (channels->wavePointer != channels->currentPointer)
+                    {
+                        *nrx0ptr = 0x40;
+                        REG_WAVE_RAM0 = channels->wavePointer[0];
+                        REG_WAVE_RAM1 = channels->wavePointer[1];
+                        REG_WAVE_RAM2 = channels->wavePointer[2];
+                        REG_WAVE_RAM3 = channels->wavePointer[3];
+                        channels->currentPointer = channels->wavePointer;
+                    }
+                    *nrx0ptr = 0;
+                    *nrx1ptr = channels->length;
+                    if (channels->length)
+                        channels->n4 = 0xC0;
+                    else
+                        channels->n4 = 0x80;
+                    break;
+                default:
+                    *nrx1ptr = channels->length;
+                    *nrx3ptr = (u32)channels->wavePointer << 3;
+                init_env_step_time_dir:
+                    envelopeStepTimeAndDir = channels->attack + CGB_NRx2_ENV_DIR_INC;
+                    if (channels->length)
+                        channels->n4 = 0x40;
+                    else
+                        channels->n4 = 0x00;
+                    break;
+                }
+                channels->envelopeCounter = channels->attack;
+                if ((s8)(channels->attack & mask))
+                {
+                    channels->envelopeVolume = 0;
+                    goto envelope_step_complete;
+                }
+                else
+                {
+                    // skip attack phase if attack is instantaneous (=0)
+                    goto envelope_decay_start;
+                }
+            }
+            else
+            {
+                goto oscillator_off;
+            }
+        }
+        else if (channels->statusFlags & SOUND_CHANNEL_SF_IEC || !((REG_NR52 >> *sp1C) & 1))
+        {
+            channels->pseudoEchoLength--;
+            if ((s8)(channels->pseudoEchoLength & mask) <= 0)
+            {
+            oscillator_off:
+                CgbOscOff(ch);
+                channels->statusFlags = 0;
+                goto channel_complete;
+            }
+            goto envelope_complete;
+        }
+        else if ((channels->statusFlags & SOUND_CHANNEL_SF_STOP) && (channels->statusFlags & SOUND_CHANNEL_SF_ENV))
+        {
+            channels->statusFlags &= ~SOUND_CHANNEL_SF_ENV;
+            channels->envelopeCounter = channels->release;
+            if ((s8)(channels->release & mask))
+            {
+                channels->modify |= CGB_CHANNEL_MO_VOL;
+                if (ch != 3)
+                    envelopeStepTimeAndDir = channels->release | CGB_NRx2_ENV_DIR_DEC;
+                goto envelope_step_complete;
+            }
+            else
+            {
+                goto envelope_pseudoecho_start;
+            }
+        }
+        else
+        {
+        envelope_step_repeat:
+            if (channels->envelopeCounter == 0)
+            {
+                if (ch == 3)
+                    channels->modify |= CGB_CHANNEL_MO_VOL;
+
+                CgbModVol(channels);
+                if ((channels->statusFlags & SOUND_CHANNEL_SF_ENV) == SOUND_CHANNEL_SF_ENV_RELEASE)
+                {
+                    channels->envelopeVolume--;
+                    if ((s8)(channels->envelopeVolume & mask) <= 0)
+                    {
+                    envelope_pseudoecho_start:
+                        channels->envelopeVolume = ((channels->envelopeGoal * channels->pseudoEchoVolume) + 0xFF) >> 8;
+                        if (channels->envelopeVolume)
+                        {
+                            channels->statusFlags |= SOUND_CHANNEL_SF_IEC;
+                            channels->modify |= CGB_CHANNEL_MO_VOL;
+                            if (ch != 3)
+                                envelopeStepTimeAndDir = 0 | CGB_NRx2_ENV_DIR_INC;
+                            goto envelope_complete;
+                        }
+                        else
+                        {
+                            goto oscillator_off;
+                        }
+                    }
+                    else
+                    {
+                        channels->envelopeCounter = channels->release;
+                    }
+                }
+                else if ((channels->statusFlags & SOUND_CHANNEL_SF_ENV) == SOUND_CHANNEL_SF_ENV_SUSTAIN)
+                {
+                envelope_sustain:
+                    channels->envelopeVolume = channels->sustainGoal;
+                    channels->envelopeCounter = 7;
+                }
+                else if ((channels->statusFlags & SOUND_CHANNEL_SF_ENV) == SOUND_CHANNEL_SF_ENV_DECAY)
+                {
+                    int envelopeVolume, sustainGoal;
+
+                    channels->envelopeVolume--;
+                    envelopeVolume = (s8)(channels->envelopeVolume & mask);
+                    sustainGoal = (s8)(channels->sustainGoal);
+                    if (envelopeVolume <= sustainGoal)
+                    {
+                    envelope_sustain_start:
+                        if (channels->sustain == 0)
+                        {
+                            channels->statusFlags &= ~SOUND_CHANNEL_SF_ENV;
+                            goto envelope_pseudoecho_start;
+                        }
+                        else
+                        {
+                            channels->statusFlags--;
+                            channels->modify |= CGB_CHANNEL_MO_VOL;
+                            if (ch != 3)
+                                envelopeStepTimeAndDir = 0 | CGB_NRx2_ENV_DIR_INC;
+                            goto envelope_sustain;
+                        }
+                    }
+                    else
+                    {
+                        channels->envelopeCounter = channels->decay;
+                    }
+                }
+                else
+                {
+                    channels->envelopeVolume++;
+                    if ((u8)(channels->envelopeVolume & mask) >= channels->envelopeGoal)
+                    {
+                    envelope_decay_start:
+                        channels->statusFlags--;
+                        channels->envelopeCounter = channels->decay;
+                        if ((u8)(channels->envelopeCounter & mask))
+                        {
+                            channels->modify |= CGB_CHANNEL_MO_VOL;
+                            channels->envelopeVolume = channels->envelopeGoal;
+                            if (ch != 3)
+                                envelopeStepTimeAndDir = channels->decay | CGB_NRx2_ENV_DIR_DEC;
+                        }
+                        else
+                        {
+                            goto envelope_sustain_start;
+                        }
+                    }
+                    else
+                    {
+                        channels->envelopeCounter = channels->attack;
+                    }
+                }
+            }
+        }
+
+    envelope_step_complete:
+        // every 15 frames, envelope calculation has to be done twice
+        // to keep up with the hardware envelope rate (1/64 s)
+        channels->envelopeCounter--;
+        if (prevC15 == 0)
+        {
+            prevC15--;
+            goto envelope_step_repeat;
+        }
+
+    envelope_complete:
+        /* 3. apply pitch to HW registers */
+        if (channels->modify & CGB_CHANNEL_MO_PIT)
+        {
+            if (ch < 4 && (channels->type & TONEDATA_TYPE_FIX))
+            {
+                int dac_pwm_rate = REG_SOUNDBIAS_H;
+                asm("":::"r0");
+                if (dac_pwm_rate < 0x40)        // if PWM rate = 32768 Hz
+                    channels->frequency = ((channels -> frequency + 2) & 0x7FF) >> 2 << 2;
+                else if (dac_pwm_rate < 0x80)   // if PWM rate = 65536 Hz
+                    channels->frequency = ((channels -> frequency + 1) & 0x7FF) >> 1 << 1;
+            }
+
+            if (ch != 4)
+                *nrx3ptr = channels->frequency;
+            else
+                *nrx3ptr = (*nrx3ptr & 0x08) | channels->frequency;
+
+            channels->n4 = (channels->n4 & 0xC0) + ((channels->frequency & 0x3F00) >> 8);
+            *nrx4ptr = (s8)(channels->n4 & mask);
+        }
+
+        /* 4. apply envelope & volume to HW registers */
+        if (channels->modify & CGB_CHANNEL_MO_VOL)
+        {
+            REG_NR51 = (REG_NR51 & ~channels->panMask) | channels->pan;
+            if (ch == 3)
+            {
+                *nrx2ptr = gCgb3Vol[channels->envelopeVolume];
+                if (channels->n4 & 0x80)
+                {
+                    *nrx0ptr = 0x80;
+                    *nrx4ptr = channels->n4;
+                    channels->n4 &= 0x7f;
+                }
+            }
+            else
+            {
+                u32 envMask = 0xF;
+                *nrx2ptr = (envelopeStepTimeAndDir & envMask) + (channels->envelopeVolume << 4);
+                *nrx4ptr = channels->n4 | 0x80;
+                if (ch == 1 && !(*nrx0ptr & 0x08))
+                    *nrx4ptr = channels->n4 | 0x80;
+            }
+        }
+
+    channel_complete:
+        channels->modify = 0;
+    }
 }
 
 void m4aMPlayTempoControl(struct MusicPlayerInfo *mplayInfo, u16 tempo)
