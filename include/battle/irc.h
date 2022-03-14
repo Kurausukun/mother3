@@ -68,5 +68,6 @@ public:
 };
 
 SINGLETON_MGR(Irc)
+SINGLETON(Irc)
 
 #endif  // BATTLE_IRC_H

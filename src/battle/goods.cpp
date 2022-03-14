@@ -81,11 +81,11 @@ u32 Goods::attackMult() const {
     return mInfo->action.atk_mult;
 }
 
-u32 Goods::healLo() const {
+s32 Goods::healLo() const {
     return mInfo->action.heal_lo;
 }
 
-u32 Goods::healHi() const {
+s32 Goods::healHi() const {
     return mInfo->action.heal_hi;
 }
 
@@ -108,9 +108,9 @@ u32 Goods::priority() const {
 
 Msg Goods::getUseMessage() const {
     if (numTargets() == 1 && getTarget(0) == getUser()) {
-        return action_158(calcMessage(mInfo->action.msg_no));
+        return createMsg(calcMessage(mInfo->action.msg_no));
     } else {
-        return action_158(calcMessage(mInfo->action.msg_no + 1));
+        return createMsg(calcMessage(mInfo->action.msg_no + 1));
     }
 }
 
@@ -150,9 +150,8 @@ Msg Goods::getForceUseMessage() const {
     }
 }
 
-u8 Goods::hasDim() const {
-    u32 bank = mInfo->action.has_dim;
-    return bank ? 1 : 0;
+bool Goods::hasDim() const {
+    return mInfo->action.has_dim;
 }
 
 u16 Goods::animNo() const {
@@ -222,7 +221,7 @@ u32 Goods::getType() const {
     return mInfo->item_type;
 }
 
-bool Goods::isConsumable() const {
+bool Goods::isConsumable(Unit* target) const {
     return mInfo->consumable == 1;
 }
 

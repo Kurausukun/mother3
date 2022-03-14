@@ -18,8 +18,8 @@ sub_0807A8C0: @ 0x0807A8C0
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_0807A8CC
-sub_0807A8CC: @ 0x0807A8CC
+	thumb_func_start createPlayerName
+createPlayerName: @ 0x0807A8CC
 	push {r4, lr}
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
@@ -2103,7 +2103,7 @@ _0807B8DE:
 	add r1, sp, #4
 	bl tellStatUpgrade
 	add r0, sp, #4
-	bl sub_0806E414__3Msg
+	bl len__3Msg
 	adds r1, r0, #0
 	subs r1, #1
 	add r0, sp, #4
@@ -2113,7 +2113,7 @@ _0807B8DE:
 	cmp r1, r0
 	bne _0807BA06
 	add r0, sp, #4
-	bl sub_0806E414__3Msg
+	bl len__3Msg
 	adds r1, r0, #0
 	subs r1, #1
 	add r0, sp, #4
@@ -2464,7 +2464,7 @@ sub_0807BC80: @ 0x0807BC80
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
 	adds r0, r4, #0
-	bl sub_0807A8CC
+	bl createPlayerName
 	adds r0, r4, #0
 	pop {r4}
 	pop {r1}

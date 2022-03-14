@@ -50,11 +50,11 @@ u32 GuestSkill::attackMult() const {
     return mInfo->move.atk_mult;
 }
 
-u32 GuestSkill::healLo() const {
+s32 GuestSkill::healLo() const {
     return mInfo->move.heal_lo;
 }
 
-u32 GuestSkill::healHi() const {
+s32 GuestSkill::healHi() const {
     return mInfo->move.heal_hi;
 }
 
@@ -76,16 +76,15 @@ u32 GuestSkill::priority() const {
 }
 
 Msg GuestSkill::getUseMessage() const {
-    return action_158(mInfo->move.msg_no);
+    return createMsg(mInfo->move.msg_no);
 }
 
 Msg GuestSkill::getForceUseMessage() const {
-    return action_158(mInfo->move.msg_no);
+    return createMsg(mInfo->move.msg_no);
 }
 
-u8 GuestSkill::hasDim() const {
-    u32 bank = mInfo->move.has_dim;
-    return bank ? 1 : 0;
+bool GuestSkill::hasDim() const {
+    return mInfo->move.has_dim;
 }
 
 u16 GuestSkill::animNo() const {

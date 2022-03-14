@@ -543,8 +543,8 @@ _0807295C:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_08072964
-sub_08072964: @ 0x08072964
+	thumb_func_start unitIsPlayer
+unitIsPlayer: @ 0x08072964
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	lsls r1, r1, #0x10
@@ -1069,8 +1069,8 @@ _08072D22:
 	bx r0
 	.align 2, 0
 
-	thumb_func_start sub_08072D58
-sub_08072D58: @ 0x08072D58
+	thumb_func_start typeIsMonster
+typeIsMonster: @ 0x08072D58
 	push {r4, r5, lr}
 	adds r2, r0, #0
 	movs r5, #0
@@ -1132,8 +1132,8 @@ _08072DC8:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_08072DD0
-sub_08072DD0: @ 0x08072DD0
+	thumb_func_start dynaCastMonster
+dynaCastMonster: @ 0x08072DD0
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	cmp r5, #0
@@ -2112,7 +2112,7 @@ _08073558:
 	adds r0, r7, #0
 	movs r1, #2
 _0807356C:
-	bl sub_0807A8CC
+	bl createPlayerName
 	mov r0, sp
 	adds r1, r7, #0
 	bl sub_0806E374
@@ -2145,7 +2145,7 @@ _080735B0:
 	adds r6, #1
 _080735B2:
 	adds r0, r4, #0
-	bl sub_0806E414__3Msg
+	bl len__3Msg
 	cmp r6, r0
 	bge _080735BE
 	b _080734C0
@@ -2175,7 +2175,7 @@ print__3MsgRC13PrintSettingsb: @ 0x080735E0
 	adds r4, r1, #0
 	lsls r2, r2, #0x18
 	lsrs r5, r2, #0x18
-	bl sub_0806E414__3Msg
+	bl len__3Msg
 	cmp r0, #0
 	ble _0807361C
 	mov r0, sp
@@ -2244,7 +2244,7 @@ sub_0807367C: @ 0x0807367C
 	ldr r4, _080736AC @ =0xFFFFE894
 	add sp, r4
 	adds r4, r0, #0
-	bl sub_0806E414__3Msg
+	bl len__3Msg
 	cmp r0, #0
 	ble _080736A2
 	mov r0, sp
@@ -2272,7 +2272,7 @@ sub_080736B4: @ 0x080736B4
 	add sp, r4
 	adds r4, r0, #0
 	adds r5, r1, #0
-	bl sub_0806E414__3Msg
+	bl len__3Msg
 	cmp r0, #0
 	ble _080736E4
 	mov r0, sp

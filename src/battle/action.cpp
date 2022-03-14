@@ -37,7 +37,7 @@ extern "C" void sub_08072B70();
 extern "C" void sub_08072D0C();
 extern "C" void playSound(u16);
 
-extern "C" u8 sub_08072964(Unit*, u32);
+extern "C" u8 unitIsPlayer(Unit*, u32);
 extern "C" Messager* sub_080728B8();
 extern "C" void playSeq(u32, Unit*, Unit*);
 extern "C" u8 sub_08072D84(Unit*, u32);
@@ -220,10 +220,10 @@ void Action::action_a0(Unit* target) {
     }
 
     // franklin badge check
-    if (element() == ElementType::Thunder && sub_08072964(target, 2) == 1 &&
+    if (element() == ElementType::Thunder && unitIsPlayer(target, 2) == 1 &&
         sub_080728B8()->messager_f8(0xc1) == 1) {
         playSeq(0xc3, target, target);
-        action_158(0x188).print(PrintSettings(0, 0, 0), 1);
+        createMsg(0x188).print(PrintSettings(0, 0, 0), 1);
         if (sub_08072D84(getUser(), 0xbd) == 1 || sub_08072D84(getUser(), 0xbe) == 1) {
             hitPlayer(getUser(), randS32(164, 186), 1);
         } else {
@@ -279,7 +279,7 @@ void Action::action_a0(Unit* target) {
     target->unit_f8(this);
 }
 
-u8 Action::isResisted(Unit* target) {
+bool Action::isResisted(Unit* target) {
     switch (effect()) {
     case EffectType::Damage:
     case EffectType::Attack:
@@ -296,7 +296,7 @@ u8 Action::isResisted(Unit* target) {
 }
 
 void Action::tellResisted(Unit* target) {
-    action_158(0xec).print(PrintSettings(0, 0, 0), 1);
+    createMsg(0xec).print(PrintSettings(0, 0, 0), 1);
 }
 
 u8 Action::calcMissed(Unit* target) {
@@ -520,11 +520,11 @@ NONMATCH("asm/non_matching/skill/sub_08079EE4.inc",
          bool Action::action_130(Unit* target, u16 status, s32 chance, bool unk)) {
     if (target->hasStatus(status) != 1) {
         if (effect() == 6 && unk == 1) {
-            action_158(0xeb).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0xeb).print(PrintSettings(0, 0, 0), 1);
         }
         return false;
     } else if (randS32(0, 99) < chance) {
-        action_158(0xec).print(PrintSettings(0, 0, 0), 1);
+        createMsg(0xec).print(PrintSettings(0, 0, 0), 1);
         return false;
     } else {
         return sub_08073EE8(target, status, unk);
@@ -577,7 +577,7 @@ NONMATCH("asm/non_matching/skill/action_fixme__6Actioni.inc", Msg Action::action
     Msg m = action_1d8();
     s32 i, j = 0;
     s32 count = 0;
-    while (i < m.sub_0806E414()) {
+    while (i < m.len()) {
         if (*m.sub_0806E334(i) == 0xFF01) {
             if (++count > idx) {
                 break;
@@ -630,7 +630,7 @@ bool Action::fieldSet(s32 value, bool force) {
 
 extern "C" Msg sub_08073460(u32, const Msg&, const Msg&, const Msg&);
 
-Msg Action::action_158(u16 idx) const {
+Msg Action::createMsg(u16 idx) const {
     return sub_08073460(idx, name(), getUser()->name(), mNextTargets.size() > 0 ? mNextTargets[0]->name() : Msg());
 }
 

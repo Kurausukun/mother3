@@ -2346,8 +2346,8 @@ _0806E40C:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_0806E414__3Msg
-sub_0806E414__3Msg: @ 0x0806E414
+	thumb_func_start len__3Msg
+len__3Msg: @ 0x0806E414
 	ldrh r0, [r0, #6]
 	bx lr
 

@@ -51,6 +51,17 @@ public:
     virtual void player_400();
     virtual void player_408(u32);
     virtual u8 player_410(u32);
+
+    enum {
+        None,
+        Flint,
+        Lucas,
+        Duster,
+        Kumatora,
+        Boney,
+        Salsa,
+        NUM_PLAYERS
+    };
 };
 
 #endif // BATTLE_PLAYER_H

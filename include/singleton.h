@@ -86,7 +86,7 @@ struct Singleton {
 #define SINGLETON_DEBUG(CLASS, STR)                                                                \
     /*const char* class##Singleton::getName() { return #CLASS; }*/                                 \
     extern const char STR[];                                                                       \
-    void* CLASS##Singleton::init() { return new CLASS; }                                           \
+    void* CLASS##Singleton::init(u16 id) { return new CLASS; }                                     \
     const char* CLASS##Singleton::getName() { return STR; }                                        \
     /* CLASS::~CLASS() {} TODO: class destructor is inlined here, how do we generate this? */
 

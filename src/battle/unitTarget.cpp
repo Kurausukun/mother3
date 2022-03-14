@@ -2,7 +2,7 @@
 #include "battle/keypad.h"
 
 extern "C" bool sub_08072938(Unit* u);
-extern "C" bool sub_08072D58(Unit* u);
+extern "C" bool typeIsMonster(Unit* u);
 extern "C" s32 sub_08072A88();
 extern "C" Unit* sub_08072AA4(s32);
 extern "C" s32 getPartyCount();
@@ -77,7 +77,7 @@ bool UnitTarget::targettingAlly() {
 bool UnitTarget::attackdata_98() {
     switch (getSelection()) {
     case 0:
-        return sub_08072D58(getUnit());
+        return typeIsMonster(getUnit());
     case 1:
     case 2:
     case 3:

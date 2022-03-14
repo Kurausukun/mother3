@@ -9438,7 +9438,7 @@ _0809C658:
 	adds r0, r7, r0
 	ldr r1, [r1, #4]
 	bl _call_via_r1
-	bl sub_08072D58
+	bl typeIsMonster
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -12055,7 +12055,7 @@ sub_0809DAD4: @ 0x0809DAD4
 	sub sp, #0x20
 	mov sl, r0
 	adds r0, r1, #0
-	bl sub_08072DD0
+	bl dynaCastMonster
 	adds r7, r0, #0
 	cmp r7, #0
 	bne _0809DAF0
@@ -12151,7 +12151,7 @@ _0809DB5C:
 	adds r1, r5, #0
 	bl _call_via_r3
 	mov r0, sp
-	bl sub_0806E414__3Msg
+	bl len__3Msg
 	cmp r0, #0
 	ble _0809DBD2
 	movs r0, #1
@@ -12215,7 +12215,7 @@ sub_0809DC2C: @ 0x0809DC2C
 	adds r5, r0, #0
 	adds r4, r1, #0
 	adds r0, r4, #0
-	bl sub_08072D58
+	bl typeIsMonster
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -12314,7 +12314,7 @@ sub_0809DCE8: @ 0x0809DCE8
 	adds r5, r0, #0
 	adds r4, r1, #0
 	adds r0, r4, #0
-	bl sub_08072D58
+	bl typeIsMonster
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -12447,7 +12447,7 @@ sub_0809DDE0: @ 0x0809DDE0
 	adds r5, r0, #0
 	adds r7, r1, #0
 	adds r0, r7, #0
-	bl sub_08072DD0
+	bl dynaCastMonster
 	adds r6, r0, #0
 	cmp r6, #0
 	beq _0809DEA2
@@ -12541,7 +12541,7 @@ _0809DEAC: .4byte 0x0000023F
 sub_0809DEB0: @ 0x0809DEB0
 	push {r4, r5, lr}
 	adds r0, r1, #0
-	bl sub_08072DD0
+	bl dynaCastMonster
 	adds r4, r0, #0
 	cmp r4, #0
 	bne _0809DEC2
@@ -13234,7 +13234,7 @@ _0809E40A:
 	b _0809E4D2
 _0809E424:
 	adds r0, r6, #0
-	bl sub_08072DD0
+	bl dynaCastMonster
 	adds r5, r0, #0
 	cmp r5, #0
 	bne _0809E432
@@ -14628,7 +14628,7 @@ sub_0809EEAC: @ 0x0809EEAC
 	ldrsh r5, [r4, r0]
 	adds r5, r6, r5
 	adds r0, r7, #0
-	bl sub_08072DD0
+	bl dynaCastMonster
 	adds r1, r0, #0
 	ldr r2, [r4, #4]
 	adds r0, r5, #0
@@ -14703,7 +14703,7 @@ _0809EF60:
 	ldrsh r5, [r4, r1]
 	adds r5, r6, r5
 	adds r0, r7, #0
-	bl sub_08072DD0
+	bl dynaCastMonster
 	adds r1, r0, #0
 	ldr r2, [r4, #4]
 	adds r0, r5, #0
@@ -14839,7 +14839,7 @@ sub_0809F098: @ 0x0809F098
 	mov sl, r0
 	str r1, [sp, #0x80]
 	adds r0, r1, #0
-	bl sub_08072DD0
+	bl dynaCastMonster
 	str r0, [sp, #0x84]
 	ldr r0, [sp, #0x80]
 	ldr r2, [r0, #0x20]
@@ -15256,7 +15256,7 @@ _0809F412:
 	movs r3, #0x28
 	strh r5, [r2]
 	strh r3, [r2, #2]
-	bl sub_080655FC
+	bl __9AutoComboUiRC11ComboRhythm
 	adds r0, r4, #0
 	bl __builtin_new
 	mov r2, sl
@@ -15265,7 +15265,7 @@ _0809F412:
 	movs r3, #0x34
 	strh r5, [r2]
 	strh r3, [r2, #2]
-	bl sub_08065864
+	bl __15AutoComboResultUiRC11ComboRhythm
 _0809F462:
 	mov r3, sl
 	ldr r1, [r3, #0x1c]

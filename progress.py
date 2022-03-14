@@ -39,6 +39,11 @@ def parse_map(non_matching_funcs):
         for line in map:
             if line.startswith(' .'):
                 arr = line.split()
+
+                # hack to get around .gnu.linkonce thing
+                if len(arr) != 4:
+                    continue
+
                 section = arr[0]
                 size = int(arr[2], 16)
                 filepath = arr[3]

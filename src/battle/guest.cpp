@@ -78,7 +78,7 @@ bool Guest::unit_178() {
     return false;
 }
 
-u32 Guest::id() const {
+u16 Guest::id() const {
     return mID;
 }
 

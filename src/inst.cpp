@@ -1,4 +1,5 @@
 #include "battle/clock.h"
+#include "battle/irc.h"
 #include "singleton.h"
 
 #ifdef NONMATCHING

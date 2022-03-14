@@ -1,8 +1,8 @@
-#include "gba/gba.h"
 #include "battle/guest.h"
+#include "gba/gba.h"
 #include "structs.h"
 
-static void sub_080002E0();
+static void main_loop();
 static void sub_080003D8();
 
 struct struct_02004848 {
@@ -43,15 +43,15 @@ struct struct_020047E0 {
 };
 extern struct_020047E0 gEncounter;
 
-extern "C" void sub_08000E0C();
-extern "C" void sub_08000E30();
-extern "C" void sub_08000DC0();
-extern "C" void sub_08000838();
-extern "C" void sub_080008E0();
-extern "C" void sub_08003720();
-extern "C" void sub_08000904();
+extern "C" void clear_ram();
+extern "C" void clear_gfx();
+extern "C" void copy_ram_magic();
+extern "C" void setup_vectors();
+extern "C" void seed_rng();
+extern "C" void init_audio();
+extern "C" void init_sram();
 extern "C" void DoReset();
-extern "C" void sub_08000910();
+extern "C" void init_all_data();
 extern "C" void sub_08000920();
 extern "C" void sub_080004D8();
 extern "C" void sub_08000600();
@@ -113,16 +113,17 @@ extern u8 gUnknown_03000008;
 extern void* gUnknown_02015E38;
 
 extern "C" void AgbMain() {
-    REG_WAITCNT = 0x45b4;
-    REG_IE = 0x2000;
+    REG_WAITCNT = WAITCNT_PREFETCH_ENABLE | WAITCNT_WS2_S_1 | WAITCNT_WS2_N_3 | WAITCNT_WS1_S_1 |
+                  WAITCNT_WS1_N_3 | WAITCNT_WS0_S_1 | WAITCNT_WS0_N_3;
+    REG_IE = INTR_FLAG_GAMEPAK;
     REG_RCNT = 0;
-    REG_SIOCNT = 0x2000;
+    REG_SIOCNT = SIO_MULTI_MODE;
 
-    sub_08000E0C();
-    sub_08000E30();
-    sub_08000DC0();
-    sub_08000838();
-    sub_080008E0();
+    clear_ram();
+    clear_gfx();
+    copy_ram_magic();
+    setup_vectors();
+    seed_rng();
 
     u32 keys = ~REG_KEYINPUT;
     if (((keys << 0x16) >> 0x16) == 0xf) {
@@ -130,17 +131,19 @@ extern "C" void AgbMain() {
         s[1] |= 2;
     }
 
-    sub_08003720();
-    sub_08000904();
-    sub_080002E0();
+    init_audio();
+    init_sram();
+
+    main_loop();
+
     DoReset();
 }
 
-void sub_080002E0() {
+void main_loop() {
     do {
         switch (gUnknown_02004848._0) {
         case 0:
-            sub_08000910();
+            init_all_data();
             sub_080003D8();
             if (gUnknown_02005084 != 6) {
                 sub_08000600();
@@ -180,12 +183,12 @@ void sub_080002E0() {
             if (gUnknown_020050C0._284 & 0x18) {
                 gUnknown_02004100 = 10;
                 sub_0803DBB8();
-                sub_08000838();
+                setup_vectors();
                 sub_080512CC(0);
             }
             break;
         }
-        sub_08000838();
+        setup_vectors();
     } while (true);
 }
 
@@ -395,7 +398,7 @@ void sub_080007CC(void) {
     gUnknown_020047D0 = 0;
 }
 
-void sub_08000838() {
+void setup_vectors() {
     REG_IME = 0;
     REG_IE &= ~7;
     REG_DISPSTAT &= ~0x38;
@@ -420,17 +423,17 @@ extern "C" void sub_080008D0() {
 
 extern "C" void sub_080008DC() {}
 
-void sub_080008E0() {
+void seed_rng() {
     gUnknown_02004848._0 = 13;
     gUnknown_02004848.flags_s8._2 = 0;
     sub_0800303C(0x1105);
 }
 
-void sub_08000904() {
+void init_sram() {
     sub_080512CC(1);
 }
 
-void sub_08000910() {
+void init_all_data() {
     init_save();
     sub_08000BE8();
 }
@@ -592,7 +595,7 @@ extern "C" void sub_08000D88(void) {
     }
 }
 
-extern "C" void sub_08000DC0() {
+extern "C" void copy_ram_magic() {
     char* dest = (char*)0x03000000;
 
     for (u16 i = 0; i < 8; ++i, ++dest) {
@@ -604,12 +607,12 @@ extern "C" void sub_08000DC0() {
     gUnknown_02004848.flags_u8._1 = 1;
 }
 
-void sub_08000E0C(void) {
+void clear_ram(void) {
     sub_080019DC((void*)0x2000000, 0x40000);
     sub_080019DC(&gUnknown_03000008, 0x7D98);
 }
 
-void sub_08000E30() {
+void clear_gfx() {
     memclear((void*)0x6000000, 0x18000);
     memclear((void*)0x5000000, 0x400);
     memclear((void*)0x7000000, 0x400);

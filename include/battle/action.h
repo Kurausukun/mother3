@@ -2,10 +2,10 @@
 #define BATTLE_action_H
 
 #include "base.h"
-#include "battle/unit.h"
 #include "battle/archive.h"
+#include "battle/unit.h"
 
-class Action: public Base {
+class Action : public Base {
 public:
     Action() {}
     Action(Unit* user);
@@ -20,7 +20,7 @@ public:
     virtual void action_a0(Unit* target);
     virtual u8 calcMissed(Unit* target);
     virtual void tellMissed(Unit* target);
-    virtual u8 isResisted(Unit* target);
+    virtual bool isResisted(Unit* target);
     virtual void tellResisted(Unit* target);
     virtual void calcHit(Unit* target);
     virtual void action_d0(Unit* target);
@@ -40,7 +40,7 @@ public:
     virtual void action_140();
     virtual void action_148();
     virtual void action_150();
-    virtual Msg action_158(u16) const;
+    virtual Msg createMsg(u16) const;
     virtual Msg action_160(u16, const Msg&) const;
     virtual Unit* getUser() const;
     virtual Unit* addTarget(Unit* target);
@@ -66,15 +66,15 @@ public:
     virtual u32 element() const = 0;
     virtual u32 target() const = 0;
     virtual u32 attackMult() const = 0;
-    virtual u32 healLo() const = 0;
-    virtual u32 healHi() const = 0;
+    virtual s32 healLo() const = 0;
+    virtual s32 healHi() const = 0;
     virtual u16 ailment() const = 0;
     virtual u32 ailmentChance() const = 0;
     virtual u8 hasAction() const = 0;
     virtual u32 priority() const = 0;
     virtual Msg getUseMessage() const = 0;
     virtual Msg getForceUseMessage() const = 0;
-    virtual u8 hasDim() const = 0;
+    virtual bool hasDim() const = 0;
     virtual u16 animNo() const = 0;
     virtual u16 successAnimNo() const = 0;
     virtual u16 nextAnim() const = 0;

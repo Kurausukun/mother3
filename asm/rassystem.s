@@ -305,7 +305,7 @@ sub_0806EA34: @ 0x0806EA34
 	bl sub_08088E58
 	adds r0, r6, #0
 	adds r0, #0x2c
-	bl sub_0806E414__3Msg
+	bl len__3Msg
 	mov r1, sp
 	movs r2, #0
 	ldrsh r1, [r1, r2]
@@ -491,13 +491,13 @@ _0806EB6E:
 	adds r5, #1
 _0806EBA6:
 	mov r0, r8
-	bl sub_0806E414__3Msg
+	bl len__3Msg
 	cmp r5, r0
 	blt _0806EB6E
 	ldr r0, [r4, #0x38]
 	str r0, [r4, #0x44]
 	mov r0, sl
-	bl sub_0806E414__3Msg
+	bl len__3Msg
 	adds r1, r4, #0
 	adds r1, #0x48
 	strb r0, [r1]

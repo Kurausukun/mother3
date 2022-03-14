@@ -7,7 +7,7 @@ struct Player;
 
 struct GoodsInfo;
 
-class Goods : public Action{
+class Goods : public Action {
 public:
     Goods();
     Goods(u16 id, Unit* user, u16 a2);
@@ -24,15 +24,15 @@ public:
     virtual u32 element() const;
     virtual u32 target() const;
     virtual u32 attackMult() const;
-    virtual u32 healLo() const;
-    virtual u32 healHi() const;
+    virtual s32 healLo() const;
+    virtual s32 healHi() const;
     virtual u16 ailment() const;
     virtual u32 ailmentChance() const;
     virtual u8 hasAction() const;
     virtual u32 priority() const;
     virtual Msg getUseMessage() const;
     virtual Msg getForceUseMessage() const;
-    virtual u8 hasDim() const;
+    virtual bool hasDim() const;
     virtual u16 animNo() const;
     virtual u16 successAnimNo() const;
     virtual u16 nextAnim() const;
@@ -45,12 +45,15 @@ public:
     virtual u32 action_298();
 
     virtual u16 goods_2a0() const;
+    // FAKE
     virtual u16 goods_2a8();
     virtual u32 goods_2b0() const;
     virtual bool goods_2b8() const;
+
+
     virtual bool goods_2c0();
     virtual u32 getType() const;
-    virtual bool isConsumable() const;
+    virtual bool isConsumable(Unit* target) const;
     virtual bool isKeyItem() const;
 
     u32 sub_08078410();
@@ -86,4 +89,4 @@ struct GoodsInfo {
 };
 extern GoodsInfo gGoodsInfo[];
 
-#endif // BATTLE_GOODS_H
+#endif  // BATTLE_GOODS_H

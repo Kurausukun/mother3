@@ -6597,7 +6597,7 @@ vt_09F49158::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -6851,7 +6851,7 @@ vt_09F493F8::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -7108,7 +7108,7 @@ vt_09F496A0::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -7365,7 +7365,7 @@ vt_09F49948::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -7619,7 +7619,7 @@ vt_09F49BE8::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -7873,7 +7873,7 @@ vt_09F49E88::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -8127,7 +8127,7 @@ vt_09F4A128::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -8381,7 +8381,7 @@ vt_09F4A3C8::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -8635,7 +8635,7 @@ vt_09F4A668::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -8892,7 +8892,7 @@ vt_09F4A910::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -9149,7 +9149,7 @@ vt_09F4ABB8::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -9406,7 +9406,7 @@ vt_09F4AE60::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -9663,7 +9663,7 @@ vt_09F4B108::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -9920,7 +9920,7 @@ vt_09F4B3B0::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -10207,7 +10207,7 @@ vt_09F4B6A8::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -13254,7 +13254,7 @@ vt_09F4D600::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -13508,7 +13508,7 @@ vt_09F4D8A0::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -13762,7 +13762,7 @@ vt_09F4DB40::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -14016,7 +14016,7 @@ vt_09F4DDE0::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -14270,7 +14270,7 @@ vt_09F4E080::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -49024,7 +49024,7 @@ vt_09F64750::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -49284,7 +49284,7 @@ vt_09F64A00::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -49544,7 +49544,7 @@ vt_09F64CB0::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -49804,7 +49804,7 @@ vt_09F64F60::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -50064,7 +50064,7 @@ vt_09F65210::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -50324,7 +50324,7 @@ vt_09F654C0::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -50584,7 +50584,7 @@ vt_09F65770::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -50844,7 +50844,7 @@ vt_09F65A20::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -51104,7 +51104,7 @@ vt_09F65CD0::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -51364,7 +51364,7 @@ vt_09F65F80::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -51624,7 +51624,7 @@ vt_09F66230::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -51884,7 +51884,7 @@ vt_09F664E0::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -52144,7 +52144,7 @@ vt_09F66790::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -52404,7 +52404,7 @@ vt_09F66A40::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -52664,7 +52664,7 @@ vt_09F66CF0::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -52924,7 +52924,7 @@ vt_09F66FA0::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -53184,7 +53184,7 @@ vt_09F67250::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -53444,7 +53444,7 @@ vt_09F67500::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -53704,7 +53704,7 @@ vt_09F677B0::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -53964,7 +53964,7 @@ vt_09F67A60::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -54224,7 +54224,7 @@ vt_09F67D10::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -54484,7 +54484,7 @@ vt_09F67FC0::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -54744,7 +54744,7 @@ vt_09F68270::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -55004,7 +55004,7 @@ vt_09F68520::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -55264,7 +55264,7 @@ vt_09F687D0::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -55524,7 +55524,7 @@ vt_09F68A80::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -55784,7 +55784,7 @@ vt_09F68D30::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -56044,7 +56044,7 @@ vt_09F68FE0::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -56304,7 +56304,7 @@ vt_09F69290::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -56567,7 +56567,7 @@ vt_09F69548::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -56827,7 +56827,7 @@ vt_09F697F8::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -57087,7 +57087,7 @@ vt_09F69AA8::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -57347,7 +57347,7 @@ vt_09F69D58::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -57607,7 +57607,7 @@ vt_09F6A008::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -57867,7 +57867,7 @@ vt_09F6A2B8::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -58127,7 +58127,7 @@ vt_09F6A568::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -58387,7 +58387,7 @@ vt_09F6A818::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -58647,7 +58647,7 @@ vt_09F6AAC8::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -58907,7 +58907,7 @@ vt_09F6AD78::
 	.4byte sub_080B2CEC
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -59167,7 +59167,7 @@ vt_09F6B028::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -59427,7 +59427,7 @@ vt_09F6B2D8::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -59687,7 +59687,7 @@ vt_09F6B588::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -59953,7 +59953,7 @@ vt_09F6B848::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -60213,7 +60213,7 @@ vt_09F6BAF8::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -60473,7 +60473,7 @@ vt_09F6BDA8::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -60733,7 +60733,7 @@ vt_09F6C058::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -60993,7 +60993,7 @@ vt_09F6C308::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -61253,7 +61253,7 @@ vt_09F6C5B8::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -61513,7 +61513,7 @@ vt_09F6C868::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -61773,7 +61773,7 @@ vt_09F6CB18::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -62033,7 +62033,7 @@ vt_09F6CDC8::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -62293,7 +62293,7 @@ vt_09F6D078::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -62553,7 +62553,7 @@ vt_09F6D328::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -62813,7 +62813,7 @@ vt_09F6D5D8::
 	.4byte sub_080B3940
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -63073,7 +63073,7 @@ vt_09F6D888::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -63333,7 +63333,7 @@ vt_09F6DB38::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -63593,7 +63593,7 @@ vt_09F6DDE8::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -63853,7 +63853,7 @@ vt_09F6E098::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -64113,7 +64113,7 @@ vt_09F6E348::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -64373,7 +64373,7 @@ vt_09F6E5F8::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -64633,7 +64633,7 @@ vt_09F6E8A8::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -64893,7 +64893,7 @@ vt_09F6EB58::
 	.4byte sub_080B4054
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -65153,7 +65153,7 @@ vt_09F6EE08::
 	.4byte sub_080B4274
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -65413,7 +65413,7 @@ vt_09F6F0B8::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -65673,7 +65673,7 @@ vt_09F6F368::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -65933,7 +65933,7 @@ vt_09F6F618::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -66193,7 +66193,7 @@ vt_09F6F8C8::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -66453,7 +66453,7 @@ vt_09F6FB78::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -66713,7 +66713,7 @@ vt_09F6FE28::
 	.4byte sub_080B45F4
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -66973,7 +66973,7 @@ vt_09F700D8::
 	.4byte sub_080B4730
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -67233,7 +67233,7 @@ vt_09F70388::
 	.4byte sub_080B47E0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -67493,7 +67493,7 @@ vt_09F70638::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -67753,7 +67753,7 @@ vt_09F708E8::
 	.4byte sub_080B487C
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -68013,7 +68013,7 @@ vt_09F70B98::
 	.4byte sub_080B493C
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -68273,7 +68273,7 @@ vt_09F70E48::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -68533,7 +68533,7 @@ vt_09F710F8::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -68793,7 +68793,7 @@ vt_09F713A8::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -69056,7 +69056,7 @@ vt_09F71660::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -69316,7 +69316,7 @@ vt_09F71910::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -69576,7 +69576,7 @@ vt_09F71BC0::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -69836,7 +69836,7 @@ vt_09F71E70::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -70096,7 +70096,7 @@ vt_09F72120::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -78182,7 +78182,7 @@ vt_09F77440::
 	.4byte sub_08082D70
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -78445,7 +78445,7 @@ vt_09F776F8::
 	.4byte sub_08082D70
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -78708,7 +78708,7 @@ vt_09F779B0::
 	.4byte sub_08082D70
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -78971,7 +78971,7 @@ vt_09F77C68::
 	.4byte sub_08082D70
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -79234,7 +79234,7 @@ vt_09F77F20::
 	.4byte sub_08082D70
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -79497,7 +79497,7 @@ vt_09F781D8::
 	.4byte sub_08082D70
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -79760,7 +79760,7 @@ vt_09F78490::
 	.4byte sub_08082D70
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -80023,7 +80023,7 @@ vt_09F78748::
 	.4byte sub_08082D70
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -80289,7 +80289,7 @@ vt_09F78A08::
 	.4byte sub_08082D70
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -80552,7 +80552,7 @@ vt_09F78CC0::
 	.4byte sub_080BD000
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -80815,7 +80815,7 @@ vt_09F78F78::
 	.4byte sub_08082D70
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -81078,7 +81078,7 @@ vt_09F79230::
 	.4byte sub_08082D70
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -81341,7 +81341,7 @@ vt_09F794E8::
 	.4byte sub_08082D70
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -81604,7 +81604,7 @@ __vt_5Goods::
 	.4byte sub_08082D70
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -81867,7 +81867,7 @@ _vt.5Goods::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -82002,7 +82002,7 @@ _vt.5Goods::
 	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte isConsumable__C5Goods
+	.4byte isConsumable__C5GoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte isKeyItem__C5Goods
@@ -82024,7 +82024,7 @@ _vt.11TriviaCard4::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BE4E4
+	.4byte _._11TriviaCard4
 	.2byte 0
 	.2byte 0
 	.4byte sub_08064974
@@ -82069,7 +82069,7 @@ _vt.11TriviaCard4::
 	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0864
+	.4byte tellUseMessage__12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte playDim__6Action
@@ -82078,7 +82078,7 @@ _vt.11TriviaCard4::
 	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C06AC
+	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcMissed__6ActionP4Unit
@@ -82087,10 +82087,10 @@ _vt.11TriviaCard4::
 	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BE46C
+	.4byte isResisted__11TriviaCard4P4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BE428
+	.4byte tellResisted__11TriviaCard4P4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcHit__6ActionP4Unit
@@ -82120,7 +82120,7 @@ _vt.11TriviaCard4::
 	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BE11C
+	.4byte onSuccess__11TriviaCard4P4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_118__6ActionP4Unit
@@ -82147,7 +82147,7 @@ _vt.11TriviaCard4::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -82255,7 +82255,7 @@ _vt.11TriviaCard4::
 	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C05AC
+	.4byte hitChance__C12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C5Goods
@@ -82282,19 +82282,19 @@ _vt.11TriviaCard4::
 	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0578
+	.4byte isConsumable__C12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0728
+	.4byte dogTax__12DefaultGoods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0634
+	.4byte dg_2__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0504
+	.4byte dg_3__12DefaultGoods
 
 _vt.11TriviaCard3::
 	.2byte 0
@@ -82302,7 +82302,7 @@ _vt.11TriviaCard3::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BE7E0
+	.4byte _._11TriviaCard3
 	.2byte 0
 	.2byte 0
 	.4byte sub_08064974
@@ -82347,7 +82347,7 @@ _vt.11TriviaCard3::
 	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0864
+	.4byte tellUseMessage__12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte playDim__6Action
@@ -82356,7 +82356,7 @@ _vt.11TriviaCard3::
 	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C06AC
+	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcMissed__6ActionP4Unit
@@ -82365,10 +82365,10 @@ _vt.11TriviaCard3::
 	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BE768
+	.4byte isResisted__11TriviaCard3P4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BE724
+	.4byte tellResisted__11TriviaCard3P4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcHit__6ActionP4Unit
@@ -82398,7 +82398,7 @@ _vt.11TriviaCard3::
 	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BE4F8
+	.4byte onSuccess__11TriviaCard3P4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_118__6ActionP4Unit
@@ -82425,7 +82425,7 @@ _vt.11TriviaCard3::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -82533,7 +82533,7 @@ _vt.11TriviaCard3::
 	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C05AC
+	.4byte hitChance__C12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C5Goods
@@ -82560,19 +82560,19 @@ _vt.11TriviaCard3::
 	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0578
+	.4byte isConsumable__C12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0728
+	.4byte dogTax__12DefaultGoods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0634
+	.4byte dg_2__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0504
+	.4byte dg_3__12DefaultGoods
 
 _vt.11TriviaCard2::
 	.2byte 0
@@ -82580,7 +82580,7 @@ _vt.11TriviaCard2::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BEAE8
+	.4byte _._11TriviaCard2
 	.2byte 0
 	.2byte 0
 	.4byte sub_08064974
@@ -82625,7 +82625,7 @@ _vt.11TriviaCard2::
 	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0864
+	.4byte tellUseMessage__12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte playDim__6Action
@@ -82634,7 +82634,7 @@ _vt.11TriviaCard2::
 	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C06AC
+	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcMissed__6ActionP4Unit
@@ -82643,10 +82643,10 @@ _vt.11TriviaCard2::
 	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BEA70
+	.4byte isResisted__11TriviaCard2P4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BEA2C
+	.4byte tellResisted__11TriviaCard2P4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcHit__6ActionP4Unit
@@ -82676,7 +82676,7 @@ _vt.11TriviaCard2::
 	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BE7F4
+	.4byte onSuccess__11TriviaCard2P4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_118__6ActionP4Unit
@@ -82703,7 +82703,7 @@ _vt.11TriviaCard2::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -82811,7 +82811,7 @@ _vt.11TriviaCard2::
 	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C05AC
+	.4byte hitChance__C12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C5Goods
@@ -82838,19 +82838,19 @@ _vt.11TriviaCard2::
 	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0578
+	.4byte isConsumable__C12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0728
+	.4byte dogTax__12DefaultGoods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0634
+	.4byte dg_2__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0504
+	.4byte dg_3__12DefaultGoods
 
 _vt.11TriviaCard1::
 	.2byte 0
@@ -82858,7 +82858,7 @@ _vt.11TriviaCard1::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BEE4C
+	.4byte _._11TriviaCard1
 	.2byte 0
 	.2byte 0
 	.4byte sub_08064974
@@ -82903,7 +82903,7 @@ _vt.11TriviaCard1::
 	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0864
+	.4byte tellUseMessage__12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte playDim__6Action
@@ -82912,7 +82912,7 @@ _vt.11TriviaCard1::
 	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C06AC
+	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcMissed__6ActionP4Unit
@@ -82921,10 +82921,10 @@ _vt.11TriviaCard1::
 	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BEDD4
+	.4byte isResisted__11TriviaCard1P4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BED90
+	.4byte tellResisted__11TriviaCard1P4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcHit__6ActionP4Unit
@@ -82954,7 +82954,7 @@ _vt.11TriviaCard1::
 	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BEAFC
+	.4byte onSuccess__11TriviaCard1P4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_118__6ActionP4Unit
@@ -82981,7 +82981,7 @@ _vt.11TriviaCard1::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -83089,7 +83089,7 @@ _vt.11TriviaCard1::
 	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C05AC
+	.4byte hitChance__C12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C5Goods
@@ -83116,19 +83116,19 @@ _vt.11TriviaCard1::
 	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0578
+	.4byte isConsumable__C12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0728
+	.4byte dogTax__12DefaultGoods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0634
+	.4byte dg_2__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0504
+	.4byte dg_3__12DefaultGoods
 
 _vt.9DragoFang::
 	.2byte 0
@@ -83136,7 +83136,7 @@ _vt.9DragoFang::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BEFD4
+	.4byte _._9DragoFang
 	.2byte 0
 	.2byte 0
 	.4byte sub_08064974
@@ -83181,7 +83181,7 @@ _vt.9DragoFang::
 	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0864
+	.4byte tellUseMessage__12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte playDim__6Action
@@ -83190,19 +83190,19 @@ _vt.9DragoFang::
 	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C06AC
+	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BEF3C
+	.4byte calcMissed__9DragoFangP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BEE60
+	.4byte tellMissed__9DragoFangP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BEFB8
+	.4byte isResisted__9DragoFangP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BEF74
+	.4byte tellResisted__9DragoFangP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcHit__6ActionP4Unit
@@ -83232,7 +83232,7 @@ _vt.9DragoFang::
 	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BEEA4
+	.4byte onSuccess__9DragoFangP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_118__6ActionP4Unit
@@ -83259,7 +83259,7 @@ _vt.9DragoFang::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -83367,7 +83367,7 @@ _vt.9DragoFang::
 	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C05AC
+	.4byte hitChance__C12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C5Goods
@@ -83394,19 +83394,19 @@ _vt.9DragoFang::
 	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0578
+	.4byte isConsumable__C12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0728
+	.4byte dogTax__12DefaultGoods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0634
+	.4byte dg_2__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0504
+	.4byte dg_3__12DefaultGoods
 
 _vt.14ShieldSnatcher::
 	.2byte 0
@@ -83414,7 +83414,7 @@ _vt.14ShieldSnatcher::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BF138
+	.4byte _._14ShieldSnatcher
 	.2byte 0
 	.2byte 0
 	.4byte sub_08064974
@@ -83459,7 +83459,7 @@ _vt.14ShieldSnatcher::
 	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0864
+	.4byte tellUseMessage__12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte playDim__6Action
@@ -83468,7 +83468,7 @@ _vt.14ShieldSnatcher::
 	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C06AC
+	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcMissed__6ActionP4Unit
@@ -83477,7 +83477,7 @@ _vt.14ShieldSnatcher::
 	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C06E0
+	.4byte isResisted__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellResisted__6ActionP4Unit
@@ -83519,7 +83519,7 @@ _vt.14ShieldSnatcher::
 	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BEFE8
+	.4byte onFail__14ShieldSnatcherP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_130__6ActionP4UnitUsib
@@ -83537,7 +83537,7 @@ _vt.14ShieldSnatcher::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -83645,7 +83645,7 @@ _vt.14ShieldSnatcher::
 	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C05AC
+	.4byte hitChance__C12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C5Goods
@@ -83672,19 +83672,19 @@ _vt.14ShieldSnatcher::
 	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0578
+	.4byte isConsumable__C12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0728
+	.4byte dogTax__12DefaultGoods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0634
+	.4byte dg_2__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0504
+	.4byte dg_3__12DefaultGoods
 
 _vt.16CupOfLifenoodles::
 	.2byte 0
@@ -83692,7 +83692,7 @@ _vt.16CupOfLifenoodles::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BF240
+	.4byte _._16CupOfLifenoodles
 	.2byte 0
 	.2byte 0
 	.4byte sub_08064974
@@ -83737,7 +83737,7 @@ _vt.16CupOfLifenoodles::
 	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0864
+	.4byte tellUseMessage__12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte playDim__6Action
@@ -83746,7 +83746,7 @@ _vt.16CupOfLifenoodles::
 	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C06AC
+	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcMissed__6ActionP4Unit
@@ -83755,7 +83755,7 @@ _vt.16CupOfLifenoodles::
 	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C06E0
+	.4byte isResisted__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellResisted__6ActionP4Unit
@@ -83797,7 +83797,7 @@ _vt.16CupOfLifenoodles::
 	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BF14C
+	.4byte onFail__16CupOfLifenoodlesP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_130__6ActionP4UnitUsib
@@ -83815,7 +83815,7 @@ _vt.16CupOfLifenoodles::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -83923,7 +83923,7 @@ _vt.16CupOfLifenoodles::
 	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C05AC
+	.4byte hitChance__C12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C5Goods
@@ -83950,19 +83950,19 @@ _vt.16CupOfLifenoodles::
 	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0578
+	.4byte isConsumable__C12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0728
+	.4byte dogTax__12DefaultGoods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0634
+	.4byte dg_2__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0504
+	.4byte dg_3__12DefaultGoods
 
 _vt.10SecretHerb::
 	.2byte 0
@@ -83970,7 +83970,7 @@ _vt.10SecretHerb::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BF35C
+	.4byte _._10SecretHerb
 	.2byte 0
 	.2byte 0
 	.4byte sub_08064974
@@ -84015,7 +84015,7 @@ _vt.10SecretHerb::
 	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0864
+	.4byte tellUseMessage__12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte playDim__6Action
@@ -84024,7 +84024,7 @@ _vt.10SecretHerb::
 	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C06AC
+	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcMissed__6ActionP4Unit
@@ -84033,7 +84033,7 @@ _vt.10SecretHerb::
 	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C06E0
+	.4byte isResisted__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellResisted__6ActionP4Unit
@@ -84075,7 +84075,7 @@ _vt.10SecretHerb::
 	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BF254
+	.4byte onFail__10SecretHerbP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_130__6ActionP4UnitUsib
@@ -84093,7 +84093,7 @@ _vt.10SecretHerb::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -84201,7 +84201,7 @@ _vt.10SecretHerb::
 	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C05AC
+	.4byte hitChance__C12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C5Goods
@@ -84228,19 +84228,19 @@ _vt.10SecretHerb::
 	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0578
+	.4byte isConsumable__C12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0728
+	.4byte dogTax__12DefaultGoods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0634
+	.4byte dg_2__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0504
+	.4byte dg_3__12DefaultGoods
 
 _vt.8PaperFan::
 	.2byte 0
@@ -84248,7 +84248,7 @@ _vt.8PaperFan::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BF3F0
+	.4byte _._8PaperFan
 	.2byte 0
 	.2byte 0
 	.4byte sub_08064974
@@ -84293,7 +84293,7 @@ _vt.8PaperFan::
 	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0864
+	.4byte tellUseMessage__12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte playDim__6Action
@@ -84302,7 +84302,7 @@ _vt.8PaperFan::
 	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C06AC
+	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcMissed__6ActionP4Unit
@@ -84311,7 +84311,7 @@ _vt.8PaperFan::
 	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C06E0
+	.4byte isResisted__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellResisted__6ActionP4Unit
@@ -84353,7 +84353,7 @@ _vt.8PaperFan::
 	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BF370
+	.4byte onFail__8PaperFanP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_130__6ActionP4UnitUsib
@@ -84371,7 +84371,7 @@ _vt.8PaperFan::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -84479,7 +84479,7 @@ _vt.8PaperFan::
 	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C05AC
+	.4byte hitChance__C12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C5Goods
@@ -84506,19 +84506,19 @@ _vt.8PaperFan::
 	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0578
+	.4byte isConsumable__C12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0728
+	.4byte dogTax__12DefaultGoods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0634
+	.4byte dg_2__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0504
+	.4byte dg_3__12DefaultGoods
 
 _vt.11MadeYouLook::
 	.2byte 0
@@ -84526,7 +84526,7 @@ _vt.11MadeYouLook::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BF58C
+	.4byte _._11MadeYouLook
 	.2byte 0
 	.2byte 0
 	.4byte sub_08064974
@@ -84571,7 +84571,7 @@ _vt.11MadeYouLook::
 	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0864
+	.4byte tellUseMessage__12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte playDim__6Action
@@ -84580,7 +84580,7 @@ _vt.11MadeYouLook::
 	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C06AC
+	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcMissed__6ActionP4Unit
@@ -84589,10 +84589,10 @@ _vt.11MadeYouLook::
 	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BF4C8
+	.4byte isResisted__11MadeYouLookP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BF47C
+	.4byte tellResisted__11MadeYouLookP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcHit__6ActionP4Unit
@@ -84622,7 +84622,7 @@ _vt.11MadeYouLook::
 	.4byte action_108__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BF404
+	.4byte onSuccess__11MadeYouLookP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_118__6ActionP4Unit
@@ -84649,7 +84649,7 @@ _vt.11MadeYouLook::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -84757,7 +84757,7 @@ _vt.11MadeYouLook::
 	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C05AC
+	.4byte hitChance__C12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C5Goods
@@ -84784,19 +84784,19 @@ _vt.11MadeYouLook::
 	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0578
+	.4byte isConsumable__C12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0728
+	.4byte dogTax__12DefaultGoods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0634
+	.4byte dg_2__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0504
+	.4byte dg_3__12DefaultGoods
 
 _vt.15AttackAttractor::
 	.2byte 0
@@ -84804,7 +84804,7 @@ _vt.15AttackAttractor::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BF6B8
+	.4byte _._15AttackAttractor
 	.2byte 0
 	.2byte 0
 	.4byte sub_08064974
@@ -84849,7 +84849,7 @@ _vt.15AttackAttractor::
 	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0864
+	.4byte tellUseMessage__12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte playDim__6Action
@@ -84858,7 +84858,7 @@ _vt.15AttackAttractor::
 	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C06AC
+	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcMissed__6ActionP4Unit
@@ -84867,10 +84867,10 @@ _vt.15AttackAttractor::
 	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BF640
+	.4byte isResisted__15AttackAttractorP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BF5FC
+	.4byte tellResisted__15AttackAttractorP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcHit__6ActionP4Unit
@@ -84903,7 +84903,7 @@ _vt.15AttackAttractor::
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BF5A0
+	.4byte action_118__15AttackAttractorP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -84927,7 +84927,7 @@ _vt.15AttackAttractor::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -85035,7 +85035,7 @@ _vt.15AttackAttractor::
 	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C05AC
+	.4byte hitChance__C12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C5Goods
@@ -85062,19 +85062,19 @@ _vt.15AttackAttractor::
 	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0578
+	.4byte isConsumable__C12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0728
+	.4byte dogTax__12DefaultGoods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0634
+	.4byte dg_2__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0504
+	.4byte dg_3__12DefaultGoods
 
 _vt.15EnemyWimperizer::
 	.2byte 0
@@ -85082,7 +85082,7 @@ _vt.15EnemyWimperizer::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BF724
+	.4byte _._15EnemyWimperizer
 	.2byte 0
 	.2byte 0
 	.4byte sub_08064974
@@ -85127,7 +85127,7 @@ _vt.15EnemyWimperizer::
 	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0864
+	.4byte tellUseMessage__12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte playDim__6Action
@@ -85136,7 +85136,7 @@ _vt.15EnemyWimperizer::
 	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C06AC
+	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcMissed__6ActionP4Unit
@@ -85145,7 +85145,7 @@ _vt.15EnemyWimperizer::
 	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BF6CC
+	.4byte isResisted__15EnemyWimperizerP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellResisted__6ActionP4Unit
@@ -85205,7 +85205,7 @@ _vt.15EnemyWimperizer::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -85313,7 +85313,7 @@ _vt.15EnemyWimperizer::
 	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C05AC
+	.4byte hitChance__C12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C5Goods
@@ -85340,19 +85340,19 @@ _vt.15EnemyWimperizer::
 	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0578
+	.4byte isConsumable__C12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0728
+	.4byte dogTax__12DefaultGoods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0634
+	.4byte dg_2__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0504
+	.4byte dg_3__12DefaultGoods
 
 _vt.15EnemyBufferizer::
 	.2byte 0
@@ -85360,7 +85360,7 @@ _vt.15EnemyBufferizer::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BF790
+	.4byte _._15EnemyBufferizer
 	.2byte 0
 	.2byte 0
 	.4byte sub_08064974
@@ -85405,7 +85405,7 @@ _vt.15EnemyBufferizer::
 	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0864
+	.4byte tellUseMessage__12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte playDim__6Action
@@ -85414,7 +85414,7 @@ _vt.15EnemyBufferizer::
 	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C06AC
+	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcMissed__6ActionP4Unit
@@ -85423,7 +85423,7 @@ _vt.15EnemyBufferizer::
 	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BF738
+	.4byte isResisted__15EnemyBufferizerP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellResisted__6ActionP4Unit
@@ -85483,7 +85483,7 @@ _vt.15EnemyBufferizer::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -85591,7 +85591,7 @@ _vt.15EnemyBufferizer::
 	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C05AC
+	.4byte hitChance__C12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C5Goods
@@ -85618,19 +85618,19 @@ _vt.15EnemyBufferizer::
 	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0578
+	.4byte isConsumable__C12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0728
+	.4byte dogTax__12DefaultGoods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0634
+	.4byte dg_2__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0504
+	.4byte dg_3__12DefaultGoods
 
 _vt.9LottoMeal::
 	.2byte 0
@@ -85638,7 +85638,7 @@ _vt.9LottoMeal::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BFAE4
+	.4byte _._9LottoMeal
 	.2byte 0
 	.2byte 0
 	.4byte sub_08064974
@@ -85683,7 +85683,7 @@ _vt.9LottoMeal::
 	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0864
+	.4byte tellUseMessage__12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte playDim__6Action
@@ -85692,7 +85692,7 @@ _vt.9LottoMeal::
 	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C06AC
+	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcMissed__6ActionP4Unit
@@ -85701,7 +85701,7 @@ _vt.9LottoMeal::
 	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C06E0
+	.4byte isResisted__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellResisted__6ActionP4Unit
@@ -85737,7 +85737,7 @@ _vt.9LottoMeal::
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BF7A4
+	.4byte action_118__9LottoMealP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -85761,7 +85761,7 @@ _vt.9LottoMeal::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -85869,7 +85869,7 @@ _vt.9LottoMeal::
 	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C05AC
+	.4byte hitChance__C12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C5Goods
@@ -85896,19 +85896,19 @@ _vt.9LottoMeal::
 	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0578
+	.4byte isConsumable__C12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0728
+	.4byte dogTax__12DefaultGoods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0634
+	.4byte dg_2__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0504
+	.4byte dg_3__12DefaultGoods
 
 _vt.9DoggyFood::
 	.2byte 0
@@ -85916,7 +85916,7 @@ _vt.9DoggyFood::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BFB28
+	.4byte _._9DoggyFood
 	.2byte 0
 	.2byte 0
 	.4byte sub_08064974
@@ -85961,7 +85961,7 @@ _vt.9DoggyFood::
 	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0864
+	.4byte tellUseMessage__12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte playDim__6Action
@@ -85970,7 +85970,7 @@ _vt.9DoggyFood::
 	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C06AC
+	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcMissed__6ActionP4Unit
@@ -85979,7 +85979,7 @@ _vt.9DoggyFood::
 	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C06E0
+	.4byte isResisted__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellResisted__6ActionP4Unit
@@ -86003,7 +86003,7 @@ _vt.9DoggyFood::
 	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BFAF8
+	.4byte action_f8__9DoggyFoodP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onNoEffect__6ActionP4Unit
@@ -86039,7 +86039,7 @@ _vt.9DoggyFood::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -86147,7 +86147,7 @@ _vt.9DoggyFood::
 	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C05AC
+	.4byte hitChance__C12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C5Goods
@@ -86174,19 +86174,19 @@ _vt.9DoggyFood::
 	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0578
+	.4byte isConsumable__C12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0728
+	.4byte dogTax__12DefaultGoods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0634
+	.4byte dg_2__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0504
+	.4byte dg_3__12DefaultGoods
 
 _vt.14PeculiarCheese::
 	.2byte 0
@@ -86194,7 +86194,7 @@ _vt.14PeculiarCheese::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BFC14
+	.4byte _._14PeculiarCheese
 	.2byte 0
 	.2byte 0
 	.4byte sub_08064974
@@ -86239,7 +86239,7 @@ _vt.14PeculiarCheese::
 	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0864
+	.4byte tellUseMessage__12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte playDim__6Action
@@ -86248,7 +86248,7 @@ _vt.14PeculiarCheese::
 	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C06AC
+	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcMissed__6ActionP4Unit
@@ -86257,7 +86257,7 @@ _vt.14PeculiarCheese::
 	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C06E0
+	.4byte isResisted__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellResisted__6ActionP4Unit
@@ -86281,7 +86281,7 @@ _vt.14PeculiarCheese::
 	.4byte calcCrit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BFB3C
+	.4byte action_f8__14PeculiarCheeseP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onNoEffect__6ActionP4Unit
@@ -86317,7 +86317,7 @@ _vt.14PeculiarCheese::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -86425,7 +86425,7 @@ _vt.14PeculiarCheese::
 	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C05AC
+	.4byte hitChance__C12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C5Goods
@@ -86452,19 +86452,19 @@ _vt.14PeculiarCheese::
 	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0578
+	.4byte isConsumable__C12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0728
+	.4byte dogTax__12DefaultGoods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0634
+	.4byte dg_2__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0504
+	.4byte dg_3__12DefaultGoods
 
 _vt.8BugSpray::
 	.2byte 0
@@ -86472,7 +86472,7 @@ _vt.8BugSpray::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BFC98
+	.4byte _._8BugSpray
 	.2byte 0
 	.2byte 0
 	.4byte sub_08064974
@@ -86517,7 +86517,7 @@ _vt.8BugSpray::
 	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0864
+	.4byte tellUseMessage__12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte playDim__6Action
@@ -86526,7 +86526,7 @@ _vt.8BugSpray::
 	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C06AC
+	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcMissed__6ActionP4Unit
@@ -86535,13 +86535,13 @@ _vt.8BugSpray::
 	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C06E0
+	.4byte isResisted__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BFC28
+	.4byte calcHit__8BugSprayP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -86595,7 +86595,7 @@ _vt.8BugSpray::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -86703,7 +86703,7 @@ _vt.8BugSpray::
 	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C05AC
+	.4byte hitChance__C12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C5Goods
@@ -86730,19 +86730,19 @@ _vt.8BugSpray::
 	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0578
+	.4byte isConsumable__C12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0728
+	.4byte dogTax__12DefaultGoods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0634
+	.4byte dg_2__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0504
+	.4byte dg_3__12DefaultGoods
 
 _vt.13AncientBanana::
 	.2byte 0
@@ -86750,7 +86750,7 @@ _vt.13AncientBanana::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BFD34
+	.4byte _._13AncientBanana
 	.2byte 0
 	.2byte 0
 	.4byte sub_08064974
@@ -86795,16 +86795,16 @@ _vt.13AncientBanana::
 	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0864
+	.4byte tellUseMessage__12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BFCAC
+	.4byte playAnim__13AncientBanana
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C06AC
+	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcMissed__6ActionP4Unit
@@ -86813,7 +86813,7 @@ _vt.13AncientBanana::
 	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C06E0
+	.4byte isResisted__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellResisted__6ActionP4Unit
@@ -86873,7 +86873,7 @@ _vt.13AncientBanana::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -86981,7 +86981,7 @@ _vt.13AncientBanana::
 	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C05AC
+	.4byte hitChance__C12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C5Goods
@@ -87008,19 +87008,19 @@ _vt.13AncientBanana::
 	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0578
+	.4byte isConsumable__C12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0728
+	.4byte dogTax__12DefaultGoods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0634
+	.4byte dg_2__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0504
+	.4byte dg_3__12DefaultGoods
 
 _vt.11HoneyShower::
 	.2byte 0
@@ -87028,7 +87028,7 @@ _vt.11HoneyShower::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BFEB8
+	.4byte _._11HoneyShower
 	.2byte 0
 	.2byte 0
 	.4byte sub_08064974
@@ -87073,7 +87073,7 @@ _vt.11HoneyShower::
 	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0864
+	.4byte tellUseMessage__12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte playDim__6Action
@@ -87082,7 +87082,7 @@ _vt.11HoneyShower::
 	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C06AC
+	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcMissed__6ActionP4Unit
@@ -87091,13 +87091,13 @@ _vt.11HoneyShower::
 	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C06E0
+	.4byte isResisted__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BFD48
+	.4byte calcHit__11HoneyShowerP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -87151,7 +87151,7 @@ _vt.11HoneyShower::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -87259,7 +87259,7 @@ _vt.11HoneyShower::
 	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C05AC
+	.4byte hitChance__C12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C5Goods
@@ -87286,19 +87286,19 @@ _vt.11HoneyShower::
 	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0578
+	.4byte isConsumable__C12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0728
+	.4byte dogTax__12DefaultGoods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0634
+	.4byte dg_2__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0504
+	.4byte dg_3__12DefaultGoods
 
 _vt.12SaltwaterGun::
 	.2byte 0
@@ -87306,7 +87306,7 @@ _vt.12SaltwaterGun::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0034
+	.4byte _._12SaltwaterGun
 	.2byte 0
 	.2byte 0
 	.4byte sub_08064974
@@ -87351,7 +87351,7 @@ _vt.12SaltwaterGun::
 	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0864
+	.4byte tellUseMessage__12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte playDim__6Action
@@ -87360,7 +87360,7 @@ _vt.12SaltwaterGun::
 	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C06AC
+	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcMissed__6ActionP4Unit
@@ -87369,13 +87369,13 @@ _vt.12SaltwaterGun::
 	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BFF7C
+	.4byte isResisted__12SaltwaterGunP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BFEFC
+	.4byte calcHit__12SaltwaterGunP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -87429,7 +87429,7 @@ _vt.12SaltwaterGun::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -87498,10 +87498,10 @@ _vt.12SaltwaterGun::
 	.4byte attackMult__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BFEE4
+	.4byte healLo__C12SaltwaterGun
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BFECC
+	.4byte healHi__C12SaltwaterGun
 	.2byte 0
 	.2byte 0
 	.4byte ailment__C5Goods
@@ -87537,7 +87537,7 @@ _vt.12SaltwaterGun::
 	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C05AC
+	.4byte hitChance__C12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C5Goods
@@ -87564,19 +87564,19 @@ _vt.12SaltwaterGun::
 	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0578
+	.4byte isConsumable__C12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0728
+	.4byte dogTax__12DefaultGoods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0634
+	.4byte dg_2__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0504
+	.4byte dg_3__12DefaultGoods
 
 _vt.15NewYearsEveBomb::
 	.2byte 0
@@ -87584,7 +87584,7 @@ _vt.15NewYearsEveBomb::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C04F0
+	.4byte _._15NewYearsEveBomb
 	.2byte 0
 	.2byte 0
 	.4byte sub_08064974
@@ -87623,13 +87623,13 @@ _vt.15NewYearsEveBomb::
 	.4byte action_68__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C04C8
+	.4byte action_70__15NewYearsEveBomb
 	.2byte 0
 	.2byte 0
 	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C00E0
+	.4byte tellUseMessage__15NewYearsEveBomb
 	.2byte 0
 	.2byte 0
 	.4byte playDim__6Action
@@ -87638,7 +87638,7 @@ _vt.15NewYearsEveBomb::
 	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C06AC
+	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcMissed__6ActionP4Unit
@@ -87647,13 +87647,13 @@ _vt.15NewYearsEveBomb::
 	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C00D8
+	.4byte isResisted__15NewYearsEveBombP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_146
+	.4byte tellResisted__15NewYearsEveBombP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0084
+	.4byte calcHit__15NewYearsEveBombP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -87707,7 +87707,7 @@ _vt.15NewYearsEveBomb::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -87800,10 +87800,10 @@ _vt.15NewYearsEveBomb::
 	.4byte getForceUseMessage__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0048
+	.4byte hasDim__C15NewYearsEveBomb
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0064
+	.4byte animNo__C15NewYearsEveBomb
 	.2byte 0
 	.2byte 0
 	.4byte successAnimNo__C5Goods
@@ -87815,7 +87815,7 @@ _vt.15NewYearsEveBomb::
 	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C05AC
+	.4byte hitChance__C12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C5Goods
@@ -87842,22 +87842,22 @@ _vt.15NewYearsEveBomb::
 	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0578
+	.4byte isConsumable__C12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0728
+	.4byte dogTax__12DefaultGoods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0634
+	.4byte dg_2__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0504
+	.4byte dg_3__12DefaultGoods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0150
+	.4byte nye_4__15NewYearsEveBomb
 
 _vt.12DefaultGoods::
 	.2byte 0
@@ -87865,7 +87865,7 @@ _vt.12DefaultGoods::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0890
+	.4byte _._12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte sub_08064974
@@ -87910,7 +87910,7 @@ _vt.12DefaultGoods::
 	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0864
+	.4byte tellUseMessage__12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte playDim__6Action
@@ -87919,7 +87919,7 @@ _vt.12DefaultGoods::
 	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C06AC
+	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcMissed__6ActionP4Unit
@@ -87928,7 +87928,7 @@ _vt.12DefaultGoods::
 	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C06E0
+	.4byte isResisted__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellResisted__6ActionP4Unit
@@ -87988,7 +87988,7 @@ _vt.12DefaultGoods::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -88096,7 +88096,7 @@ _vt.12DefaultGoods::
 	.4byte sfxNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C05AC
+	.4byte hitChance__C12DefaultGoods
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C5Goods
@@ -88123,19 +88123,19 @@ _vt.12DefaultGoods::
 	.4byte getType__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0578
+	.4byte isConsumable__C12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte isKeyItem__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0728
+	.4byte dogTax__12DefaultGoods
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0634
+	.4byte dg_2__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0504
+	.4byte dg_3__12DefaultGoods
 
 vt_09F7DC80::
 	.2byte 0
@@ -94830,7 +94830,7 @@ _vt.6Action::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -96035,7 +96035,7 @@ vt_09F82A28::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -96300,7 +96300,7 @@ _vt.10GuestSkill::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -97119,7 +97119,7 @@ vt_09F83548::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -97515,7 +97515,7 @@ vt_09F83958::
 	.4byte sub_08082D70
 	.2byte 0
 	.2byte 0
-	.4byte action_158__C6ActionUs
+	.4byte createMsg__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg

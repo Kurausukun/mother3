@@ -30,7 +30,7 @@ _0807A22A:
 	adds r5, #1
 _0807A22C:
 	mov r0, sp
-	bl sub_0806E414__3Msg
+	bl len__3Msg
 	cmp r5, r0
 	bge _0807A24A
 	mov r0, sp

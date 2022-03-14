@@ -25,15 +25,15 @@ public:
     u32 element() const;
     u32 target() const;
     u32 attackMult() const;
-    u32 healLo() const;
-    u32 healHi() const;
+    s32 healLo() const;
+    s32 healHi() const;
     u16 ailment() const;
     u32 ailmentChance() const;
     u8 hasAction() const;
     u32 priority() const;
     Msg getUseMessage() const;
     Msg getForceUseMessage() const;
-    u8 hasDim() const;
+    bool hasDim() const;
     u16 animNo() const;
     u16 successAnimNo() const;
     u16 nextAnim() const;

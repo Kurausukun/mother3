@@ -148,7 +148,7 @@ SECTIONS
         *libc.a:locale.o(.data);
 
         data/vtables.o(.data);
-	} >rom
+     } >rom
 
     endl__FR7ostream = 0;
 
