@@ -167,7 +167,7 @@ _080AE3A4:
 	.pool
 
 _080AE3B0:
-	ldrb r6, [r4, o_SoundChannel_status]
+	ldrb r6, [r4, o_SoundChannel_statusFlags]
 	movs r0, 0xC7
 	tst r0, r6
 	bne _080AE3BA
@@ -180,14 +180,14 @@ _080AE3BA:
 	tst r0, r6
 	bne _080AE3FA
 	movs r6, 0x3
-	strb r6, [r4, o_SoundChannel_status]
+	strb r6, [r4, o_SoundChannel_statusFlags]
 	adds r0, r3, 0
 	adds r0, 0x10
-	str r0, [r4, o_SoundChannel_cp]
+	str r0, [r4, o_SoundChannel_currentPointer]
 	ldr r0, [r3, 0xC]
-	str r0, [r4, o_SoundChannel_ct]
+	str r0, [r4, o_SoundChannel_count]
 	movs r5, 0
-	strb r5, [r4, o_SoundChannel_ev]
+	strb r5, [r4, o_SoundChannel_envelopeVolume]
 	str r5, [r4, o_SoundChannel_fw]
 	ldrb r2, [r3, 0x3]
 	movs r0, 0xC0
@@ -195,20 +195,20 @@ _080AE3BA:
 	beq _080AE442
 	movs r0, 0x10
 	orrs r6, r0
-	strb r6, [r4, o_SoundChannel_status]
+	strb r6, [r4, o_SoundChannel_statusFlags]
 	b _080AE442
 _080AE3EA:
-	ldrb r5, [r4, o_SoundChannel_ev]
+	ldrb r5, [r4, o_SoundChannel_envelopeVolume]
 	movs r0, 0x4
 	tst r0, r6
 	beq _080AE400
-	ldrb r0, [r4, o_SoundChannel_iel]
+	ldrb r0, [r4, o_SoundChannel_pseudoEchoLength]
 	subs r0, 0x1
-	strb r0, [r4, o_SoundChannel_iel]
+	strb r0, [r4, o_SoundChannel_pseudoEchoLength]
 	bhi _080AE450
 _080AE3FA:
 	movs r0, 0
-	strb r0, [r4, o_SoundChannel_status]
+	strb r0, [r4, o_SoundChannel_statusFlags]
 	b _080AE678
 _080AE400:
 	movs r0, 0x40
@@ -217,16 +217,16 @@ _080AE400:
 	ldrb r0, [r4, o_SoundChannel_release]
 	muls r5, r0
 	lsrs r5, 8
-	ldrb r0, [r4, o_SoundChannel_iev]
+	ldrb r0, [r4, o_SoundChannel_pseudoEchoVolume]
 	cmp r5, r0
 	bhi _080AE450
 _080AE412:
-	ldrb r5, [r4, o_SoundChannel_iev]
+	ldrb r5, [r4, o_SoundChannel_pseudoEchoVolume]
 	cmp r5, 0
 	beq _080AE3FA
 	movs r0, 0x4
 	orrs r6, r0
-	strb r6, [r4, o_SoundChannel_status]
+	strb r6, [r4, o_SoundChannel_statusFlags]
 	b _080AE450
 _080AE420:
 	movs r2, 0x3
@@ -242,7 +242,7 @@ _080AE420:
 	adds r5, r0, 0
 	beq _080AE412
 	subs r6, 0x1
-	strb r6, [r4, o_SoundChannel_status]
+	strb r6, [r4, o_SoundChannel_statusFlags]
 	b _080AE450
 _080AE43E:
 	cmp r2, 0x3
@@ -254,9 +254,9 @@ _080AE442:
 	bcc _080AE450
 	movs r5, 0xFF
 	subs r6, 0x1
-	strb r6, [r4, o_SoundChannel_status]
+	strb r6, [r4, o_SoundChannel_statusFlags]
 _080AE450:
-	strb r5, [r4, o_SoundChannel_ev]
+	strb r5, [r4, o_SoundChannel_envelopeVolume]
 	ldr r0, [sp, 0x18]
 	ldrb r0, [r0, o_SoundChannel_release]
 	adds r0, 0x1
@@ -265,11 +265,11 @@ _080AE450:
 	ldrb r0, [r4, o_SoundChannel_rightVolume]
 	muls r0, r5
 	lsrs r0, 8
-	strb r0, [r4, o_SoundChannel_er]
+	strb r0, [r4, o_SoundChannel_envelopeVolumeRight]
 	ldrb r0, [r4, o_SoundChannel_leftVolume]
 	muls r0, r5
 	lsrs r0, 8
-	strb r0, [r4, o_SoundChannel_el]
+	strb r0, [r4, o_SoundChannel_envelopeVolumeLeft]
 	movs r0, 0x10
 	ands r0, r6
 	str r0, [sp, 0x10]
@@ -284,15 +284,15 @@ _080AE450:
 	str r0, [sp, 0x10]
 _080AE484:
 	ldr r5, [sp, 0x8]
-	ldr r2, [r4, o_SoundChannel_ct]
-	ldr r3, [r4, o_SoundChannel_cp]
+	ldr r2, [r4, o_SoundChannel_count]
+	ldr r3, [r4, o_SoundChannel_currentPointer]
 	adr r0, _080AE490
 	bx r0
 	.arm
 _080AE490:
 	str r8, [sp]
-	ldrb r10, [r4, o_SoundChannel_er]
-	ldrb r11, [r4, o_SoundChannel_el]
+	ldrb r10, [r4, o_SoundChannel_envelopeVolumeRight]
+	ldrb r11, [r4, o_SoundChannel_envelopeVolumeLeft]
 	mov r10, r10, lsl 16
 	mov r11, r11, lsl 16
 	ldrb r0, [r4, o_SoundChannel_type]
@@ -371,7 +371,7 @@ _080AE598:
 	ldrne r3, [sp, 0xC]
 	bne _080AE54C
 _080AE5A8:
-	strb r2, [r4, o_SoundChannel_status]
+	strb r2, [r4, o_SoundChannel_statusFlags]
 	mov r0, r5, lsr 30
 	bic r5, r5, 0xC0000000
 	rsb r0, r0, 0x3
@@ -384,7 +384,7 @@ _080AE5A8:
 _080AE5D0:
 	stmdb sp!, {r4,r12}
 	ldr lr, [r4, o_SoundChannel_fw]
-	ldr r1, [r4, o_SoundChannel_freq]
+	ldr r1, [r4, o_SoundChannel_frequency]
 	mul r4, r12, r1
 	ldrsb r0, [r3]
 	ldrsb r1, [r3, 0x1]!
@@ -424,8 +424,8 @@ _080AE640:
 	ldmia sp!, {r4,r12}
 	str lr, [r4, o_SoundChannel_fw]
 _080AE664:
-	str r2, [r4, o_SoundChannel_ct]
-	str r3, [r4, o_SoundChannel_cp]
+	str r2, [r4, o_SoundChannel_count]
+	str r3, [r4, o_SoundChannel_currentPointer]
 _080AE66C:
 	ldr r8, [sp]
 	add r0, pc, 0x1
@@ -1071,7 +1071,7 @@ _080AEAB8:
 	cmp r4, 0
 	beq _0808F5A0
 _080AEAD6:
-	ldrb r1, [r4, o_SoundChannel_status]
+	ldrb r1, [r4, o_SoundChannel_statusFlags]
 	movs r0, 0xC7
 	tst r0, r1
 	bne _080AEAE6
@@ -1089,16 +1089,16 @@ _080AEAE6:
 	bl ChnVolSetAsm
 	cmp r6, 0
 	beq _080AEB04
-	ldrb r0, [r4, o_CgbChannel_mo]
+	ldrb r0, [r4, o_CgbChannel_modify]
 	movs r1, 0x1
 	orrs r0, r1
-	strb r0, [r4, o_CgbChannel_mo]
+	strb r0, [r4, o_CgbChannel_modify]
 _080AEB04:
 	ldrb r3, [r5, o_MusicPlayerTrack_flags]
 	movs r0, 0xC
 	tst r0, r3
 	beq _080AEB42
-	ldrb r1, [r4, o_SoundChannel_ky]
+	ldrb r1, [r4, o_SoundChannel_key]
 	movs r0, 0x8
 	ldrsb r0, [r5, r0]
 	adds r2, r1, r0
@@ -1113,18 +1113,18 @@ _080AEB18:
 	ldrb r2, [r5, o_MusicPlayerTrack_pitM]
 	adds r0, r6, 0
 	bl call_r3_2
-	str r0, [r4, o_CgbChannel_fr]
-	ldrb r0, [r4, o_CgbChannel_mo]
+	str r0, [r4, o_CgbChannel_frequency]
+	ldrb r0, [r4, o_CgbChannel_modify]
 	movs r1, 0x2
 	orrs r0, r1
-	strb r0, [r4, o_CgbChannel_mo]
+	strb r0, [r4, o_CgbChannel_modify]
 	b _080AEB42
 _080AEB36:
 	adds r1, r2, 0
 	ldrb r2, [r5, o_MusicPlayerTrack_pitM]
 	ldr r0, [r4, o_SoundChannel_wav]
 	bl MidiKeyToFreq
-	str r0, [r4, o_SoundChannel_freq]
+	str r0, [r4, o_SoundChannel_frequency]
 _080AEB42:
 	ldr r1, [r4, #0x34]
 	cmp r1, r4
@@ -1178,7 +1178,7 @@ TrackStop:
 	beq TrackStop_3
 	movs r6, 0
 TrackStop_Loop:
-	ldrb r0, [r4, o_SoundChannel_status]
+	ldrb r0, [r4, o_SoundChannel_statusFlags]
 	cmp r0, 0
 	beq TrackStop_2
 	ldrb r0, [r4, o_SoundChannel_type]
@@ -1190,10 +1190,10 @@ TrackStop_Loop:
 	ldr r3, [r3, o_SoundInfo_CgbOscOff]
 	bl call_r3_2
 TrackStop_1:
-	strb r6, [r4, o_SoundChannel_status]
+	strb r6, [r4, o_SoundChannel_statusFlags]
 TrackStop_2:
 	str r6, [r4, o_SoundChannel_track]
-	ldr r0, [r4, o_SoundChannel_np]
+	ldr r0, [r4, o_SoundChannel_nextChannelPointer]
 	cmp r0, r4
 	bne _0808F60E
 	movs r0, #0
@@ -1539,20 +1539,20 @@ _080AEE04:
 	movs r4, 0x83
 	movs r5, 0x40
 _080AEE0E:
-	ldrb r2, [r1, o_SoundChannel_status]
+	ldrb r2, [r1, o_SoundChannel_statusFlags]
 	tst r2, r4
 	beq _080AEE26
 	tst r2, r5
 	bne _080AEE26
-	ldrb r0, [r1, o_SoundChannel_mk]
+	ldrb r0, [r1, o_SoundChannel_midiKey]
 	cmp r0, r3
 	bne _080AEE26
 	movs r0, 0x40
 	orrs r2, r0
-	strb r2, [r1, o_SoundChannel_status]
+	strb r2, [r1, o_SoundChannel_statusFlags]
 	b _080AEE2C
 _080AEE26:
-	ldr r2, [r1, o_SoundChannel_np]
+	ldr r2, [r1, o_SoundChannel_nextChannelPointer]
 	cmp r2, r1
 	bne _0808F890
 	movs r2, #0
