@@ -10324,7 +10324,7 @@ _080A5A56:
 	adds r0, r4, #0
 	bl sub_08072AA4
 	movs r1, #2
-	bl sub_08072964
+	bl unitIsPlayer
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -11037,7 +11037,7 @@ _080A5FD2:
 	adds r0, r4, #0
 	bl sub_08072AA4
 	movs r1, #2
-	bl sub_08072964
+	bl unitIsPlayer
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -33304,7 +33304,7 @@ _080B0AA0:
 	movs r0, #0x1e
 	bl setsleep
 	adds r0, r4, #0
-	bl sub_08072DD0
+	bl dynaCastMonster
 	adds r2, r0, #0
 	cmp r2, #0
 	beq _080B0B1E
@@ -33710,7 +33710,7 @@ sub_080B0DFC: @ 0x080B0DFC
 	ldr r0, _080B0E4C @ =0x0000028A
 	bl playSound
 	adds r0, r4, #0
-	bl sub_08072DD0
+	bl dynaCastMonster
 	adds r5, r0, #0
 	cmp r5, #0
 	beq _080B0E44
@@ -33764,7 +33764,7 @@ sub_080B0E64: @ 0x080B0E64
 	adds r0, r4, r0
 	ldr r1, [r1, #4]
 	bl _call_via_r1
-	bl sub_08072DD0
+	bl dynaCastMonster
 	adds r2, r0, #0
 	cmp r2, #0
 	beq _080B0EA2
@@ -33811,7 +33811,7 @@ sub_080B0EBC: @ 0x080B0EBC
 	adds r0, r6, r0
 	ldr r1, [r1, #4]
 	bl _call_via_r1
-	bl sub_08072DD0
+	bl dynaCastMonster
 	adds r5, r0, #0
 	cmp r5, #0
 	beq _080B0F18
@@ -34192,7 +34192,7 @@ _080B117E:
 	cmp r1, #0
 	bge _080B117E
 	mov r0, sb
-	bl sub_08072DD0
+	bl dynaCastMonster
 	bl sub_08072FE0
 	bl sub_080728B8
 	adds r5, r0, #0
@@ -34489,7 +34489,7 @@ sub_080B1428: @ 0x080B1428
 	ldr r1, [r0, #4]
 	adds r0, r4, #0
 	bl _call_via_r1
-	bl sub_08072DD0
+	bl dynaCastMonster
 	ldr r1, [r0, #0x1c]
 	movs r3, #0xc0
 	lsls r3, r3, #2
@@ -34523,7 +34523,7 @@ sub_080B147C: @ 0x080B147C
 	adds r5, r1, #0
 	bl onSuccess__6ActionP4Unit
 	adds r0, r5, #0
-	bl sub_08072DD0
+	bl dynaCastMonster
 	adds r7, r0, #0
 	ldr r1, [r4, #0x1c]
 	movs r5, #0xb0
@@ -35494,7 +35494,7 @@ sub_080B1C48: @ 0x080B1C48
 	ldr r1, [r0, #4]
 	adds r0, r4, #0
 	bl _call_via_r1
-	bl sub_08072DD0
+	bl dynaCastMonster
 	ldr r1, [r0, #0x1c]
 	movs r3, #0xc0
 	lsls r3, r3, #2
@@ -36260,7 +36260,7 @@ _080B221A:
 	adds r0, r6, r0
 	ldr r1, [r1, #4]
 	bl _call_via_r1
-	bl sub_08072DD0
+	bl dynaCastMonster
 	ldr r1, [r0, #0x1c]
 	movs r3, #0xc0
 	lsls r3, r3, #2
@@ -36417,7 +36417,7 @@ sub_080B23B0: @ 0x080B23B0
 	adds r0, r5, r0
 	ldr r1, [r1, #4]
 	bl _call_via_r1
-	bl sub_08072DD0
+	bl dynaCastMonster
 	adds r1, r0, #0
 	ldr r2, [r6, #4]
 	adds r0, r4, #0
@@ -36479,7 +36479,7 @@ sub_080B242C: @ 0x080B242C
 	adds r0, r7, r0
 	ldr r1, [r1, #4]
 	bl _call_via_r1
-	bl sub_08072DD0
+	bl dynaCastMonster
 	adds r1, r0, #0
 	ldr r2, [r5, #4]
 	adds r0, r4, #0
@@ -36667,7 +36667,7 @@ sub_080B25D8: @ 0x080B25D8
 	ldr r1, [r0, #4]
 	adds r0, r4, #0
 	bl _call_via_r1
-	bl sub_08072DD0
+	bl dynaCastMonster
 	ldr r1, [r0, #0x1c]
 	movs r3, #0xc0
 	lsls r3, r3, #2
@@ -36884,7 +36884,7 @@ sub_080B2794: @ 0x080B2794
 	ldr r1, [r0, #4]
 	adds r0, r4, #0
 	bl _call_via_r1
-	bl sub_08072DD0
+	bl dynaCastMonster
 	ldr r1, [r0, #0x1c]
 	movs r3, #0xc0
 	lsls r3, r3, #2
@@ -36926,7 +36926,7 @@ sub_080B27E8: @ 0x080B27E8
 	ldr r1, [r0, #4]
 	adds r0, r4, #0
 	bl _call_via_r1
-	bl sub_08072DD0
+	bl dynaCastMonster
 	ldr r1, [r0, #0x1c]
 	movs r3, #0xc0
 	lsls r3, r3, #2
@@ -37358,7 +37358,7 @@ _080B2ADA:
 	adds r0, r6, r0
 	ldr r1, [r1, #4]
 	bl _call_via_r1
-	bl sub_08072DD0
+	bl dynaCastMonster
 	bl sub_08072FE0
 	add sp, #0x14
 	pop {r3, r4, r5}
@@ -37557,7 +37557,7 @@ sub_080B2CEC: @ 0x080B2CEC
 	adds r0, r4, r0
 	ldr r1, [r1, #4]
 	bl _call_via_r1
-	bl sub_08072DD0
+	bl dynaCastMonster
 	bl sub_08072FE0
 	adds r0, r4, #0
 	bl sub_080821A0
@@ -37644,7 +37644,7 @@ sub_080B2D9C: @ 0x080B2D9C
 	ldr r1, [r0, #4]
 	adds r0, r4, #0
 	bl _call_via_r1
-	bl sub_08072DD0
+	bl dynaCastMonster
 	adds r4, r0, #0
 	ldr r1, [r4, #0x1c]
 	movs r0, #0xd4
@@ -39139,7 +39139,7 @@ sub_080B3940: @ 0x080B3940
 	adds r0, r4, r0
 	ldr r1, [r1, #4]
 	bl _call_via_r1
-	bl sub_08072DD0
+	bl dynaCastMonster
 	bl sub_08072FE0
 	adds r0, r4, #0
 	bl sub_080821A0
@@ -40674,7 +40674,7 @@ sub_080B4540: @ 0x080B4540
 	adds r0, r4, r0
 	ldr r1, [r1, #4]
 	bl _call_via_r1
-	bl sub_08072DD0
+	bl dynaCastMonster
 	ldr r1, [r0, #0x1c]
 	movs r3, #0xc0
 	lsls r3, r3, #2
@@ -40769,7 +40769,7 @@ sub_080B45F4: @ 0x080B45F4
 	adds r0, r4, r0
 	ldr r1, [r1, #4]
 	bl _call_via_r1
-	bl sub_08072DD0
+	bl dynaCastMonster
 	adds r2, r0, #0
 	cmp r2, #0
 	beq _080B4632
@@ -40845,7 +40845,7 @@ _080B467C:
 	adds r0, r5, r0
 	ldr r1, [r1, #4]
 	bl _call_via_r1
-	bl sub_08072DD0
+	bl dynaCastMonster
 	adds r2, r0, #0
 	cmp r2, #0
 	beq _080B4714
@@ -40920,7 +40920,7 @@ sub_080B4730: @ 0x080B4730
 	adds r0, r7, r0
 	ldr r1, [r1, #4]
 	bl _call_via_r1
-	bl sub_08072DD0
+	bl dynaCastMonster
 	adds r4, r0, #0
 	cmp r4, #0
 	beq _080B47BE
@@ -41006,7 +41006,7 @@ sub_080B47E0: @ 0x080B47E0
 	adds r0, r4, r0
 	ldr r1, [r1, #4]
 	bl _call_via_r1
-	bl sub_08072DD0
+	bl dynaCastMonster
 	bl sub_08072FE0
 	adds r0, r4, #0
 	bl sub_080821A0
@@ -41084,7 +41084,7 @@ sub_080B487C: @ 0x080B487C
 	adds r0, r4, r0
 	ldr r1, [r1, #4]
 	bl _call_via_r1
-	bl sub_08072DD0
+	bl dynaCastMonster
 	bl sub_08072FE0
 	adds r0, r4, #0
 	bl sub_080821A0
@@ -41180,7 +41180,7 @@ sub_080B493C: @ 0x080B493C
 	adds r0, r4, r0
 	ldr r1, [r1, #4]
 	bl _call_via_r1
-	bl sub_08072DD0
+	bl dynaCastMonster
 	ldr r1, [r0, #0x1c]
 	movs r3, #0xc0
 	lsls r3, r3, #2
@@ -41520,7 +41520,7 @@ sub_080B4B90: @ 0x080B4B90
 	ldr r1, [r1, #4]
 	adds r0, r4, #0
 	bl _call_via_r1
-	bl sub_08072DD0
+	bl dynaCastMonster
 	adds r1, r0, #0
 	ldr r2, [r6, #4]
 	adds r0, r5, #0
@@ -41558,7 +41558,7 @@ sub_080B4C44: @ 0x080B4C44
 	adds r0, r4, r0
 	ldr r1, [r1, #4]
 	bl _call_via_r1
-	bl sub_08072DD0
+	bl dynaCastMonster
 	ldr r1, [r0, #0x1c]
 	movs r3, #0xc0
 	lsls r3, r3, #2
@@ -54844,7 +54844,7 @@ sub_080BB5C4: @ 0x080BB5C4
 	adds r0, r4, r0
 	ldr r1, [r1, #4]
 	bl _call_via_r1
-	bl sub_08072D58
+	bl typeIsMonster
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -54886,7 +54886,7 @@ _080BB620:
 	adds r0, r4, r0
 	ldr r1, [r1, #4]
 	bl _call_via_r1
-	bl sub_08072D58
+	bl typeIsMonster
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -57555,7 +57555,7 @@ sub_080BCA88: @ 0x080BCA88
 	push {r4, lr}
 	adds r4, r1, #0
 	adds r0, r4, #0
-	bl sub_08072D58
+	bl typeIsMonster
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -57904,7 +57904,7 @@ _080BCEAA:
 	cmp r1, r0
 	bge _080BCF56
 	adds r0, r5, #0
-	bl sub_08072DD0
+	bl dynaCastMonster
 	adds r6, r0, #0
 	cmp r6, #0
 	beq _080BCF8A
@@ -58307,7 +58307,7 @@ sub_080BD1D0: @ 0x080BD1D0
 	push {r7}
 	mov r8, r0
 	adds r0, r1, #0
-	bl sub_08072DD0
+	bl dynaCastMonster
 	adds r6, r0, #0
 	cmp r6, #0
 	beq _080BD288
@@ -58405,7 +58405,7 @@ sub_080BD294: @ 0x080BD294
 	adds r5, r0, #0
 	adds r4, r1, #0
 	adds r0, r4, #0
-	bl sub_08072D58
+	bl typeIsMonster
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -58861,7 +58861,7 @@ sub_080BD774: @ 0x080BD774
 	push {r4, r5, lr}
 	sub sp, #4
 	adds r0, r1, #0
-	bl sub_08072DD0
+	bl dynaCastMonster
 	adds r4, r0, #0
 	cmp r4, #0
 	bne _080BD788
@@ -59017,7 +59017,7 @@ sub_080BD898: @ 0x080BD898
 	push {r4, r5, lr}
 	sub sp, #4
 	adds r0, r1, #0
-	bl sub_08072DD0
+	bl dynaCastMonster
 	adds r4, r0, #0
 	cmp r4, #0
 	bne _080BD8AC

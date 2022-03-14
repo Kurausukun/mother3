@@ -792,8 +792,8 @@ sub_080655D4: @ 0x080655D4
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080655FC
-sub_080655FC: @ 0x080655FC
+	thumb_func_start __9AutoComboUiRC11ComboRhythm
+__9AutoComboUiRC11ComboRhythm: @ 0x080655FC
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -1086,8 +1086,8 @@ _0806585E:
 	bx r0
 	.align 2, 0
 
-	thumb_func_start sub_08065864
-sub_08065864: @ 0x08065864
+	thumb_func_start __15AutoComboResultUiRC11ComboRhythm
+__15AutoComboResultUiRC11ComboRhythm: @ 0x08065864
 	push {r4, r5, r6, lr}
 	mov r6, sl
 	mov r5, sb

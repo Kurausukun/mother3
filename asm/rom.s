@@ -5028,8 +5028,8 @@ _08003716:
 	bx r0
 	.align 2, 0
 
-	thumb_func_start sub_08003720
-sub_08003720: @ 0x08003720
+	thumb_func_start init_audio
+init_audio: @ 0x08003720
 	push {r4, r5, r6, r7, lr}
 	movs r3, #0
 	ldr r0, _08003768 @ =gUnknown_02015EC0
@@ -5083,7 +5083,7 @@ sub_0800377C: @ 0x0800377C
 	ldr r0, _080037A4 @ =0x04000084
 	movs r4, #0
 	strh r4, [r0]
-	bl sub_08003720
+	bl init_audio
 	strh r4, [r5]
 	pop {r4, r5}
 	pop {r0}
@@ -6094,7 +6094,7 @@ sub_08003EF8: @ 0x08003EF8
 _08003F40: .4byte gUnknown_02005080
 _08003F44: .4byte gEncounter
 _08003F48:
-	bl sub_08000E30
+	bl clear_gfx
 _08003F4C:
 	bl sub_080030A4
 	bl sub_08003008

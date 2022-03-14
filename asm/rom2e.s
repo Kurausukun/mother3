@@ -5839,7 +5839,7 @@ sub_0808BB8C: @ 0x0808BB8C
 	ldr r1, [r1, #4]
 	bl _call_via_r1
 	movs r1, #2
-	bl sub_08072964
+	bl unitIsPlayer
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -5861,7 +5861,7 @@ _0808BBCC:
 	ldr r1, [r1, #4]
 	bl _call_via_r1
 	movs r1, #4
-	bl sub_08072964
+	bl unitIsPlayer
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -6175,7 +6175,7 @@ sub_0808BE60: @ 0x0808BE60
 	ldr r1, [r1, #4]
 	bl _call_via_r1
 	movs r1, #2
-	bl sub_08072964
+	bl unitIsPlayer
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -6210,7 +6210,7 @@ _0808BEB2:
 	ldr r1, [r1, #4]
 	bl _call_via_r1
 	movs r1, #4
-	bl sub_08072964
+	bl unitIsPlayer
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -8633,7 +8633,7 @@ sub_0808D280: @ 0x0808D280
 	ldr r1, [r1, #4]
 	bl _call_via_r1
 	movs r1, #1
-	bl sub_08072964
+	bl unitIsPlayer
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -8650,7 +8650,7 @@ _0808D2AE:
 	ldr r1, [r1, #4]
 	bl _call_via_r1
 	movs r1, #3
-	bl sub_08072964
+	bl unitIsPlayer
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -8667,7 +8667,7 @@ _0808D2D4:
 	ldr r1, [r1, #4]
 	bl _call_via_r1
 	movs r1, #6
-	bl sub_08072964
+	bl unitIsPlayer
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -8869,7 +8869,7 @@ sub_0808D470: @ 0x0808D470
 	ldr r1, [r1, #4]
 	bl _call_via_r1
 	movs r1, #1
-	bl sub_08072964
+	bl unitIsPlayer
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -8886,7 +8886,7 @@ _0808D4AE:
 	ldr r1, [r1, #4]
 	bl _call_via_r1
 	movs r1, #3
-	bl sub_08072964
+	bl unitIsPlayer
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -8903,7 +8903,7 @@ _0808D4D4:
 	ldr r1, [r1, #4]
 	bl _call_via_r1
 	movs r1, #6
-	bl sub_08072964
+	bl unitIsPlayer
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1

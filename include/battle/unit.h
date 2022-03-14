@@ -88,7 +88,7 @@ public:
     virtual void unit_170(u32 value);
 
     virtual bool unit_178() = 0;
-    virtual u32 id() const = 0;
+    virtual u16 id() const = 0;
     virtual Msg name() const = 0;
 
     virtual s32 level() const;

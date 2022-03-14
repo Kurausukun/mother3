@@ -2,6 +2,7 @@
 #define BATTLE_MONSTER_H
 
 #include "global.h"
+#include "battle/unit.h"
 
 struct MonsterData {
     u32 id;
@@ -48,6 +49,38 @@ struct MonsterData {
     u32 experience;
     u32 money;
     u16 smell_weaknesses[2];
+};
+
+class Monster : public Unit {
+public:
+    Monster();
+    virtual ~Monster();
+
+    virtual void monster_2c0();
+    virtual void monster_2c8();
+    virtual void monster_2d0();
+    virtual void monster_2d8();
+    virtual void monster_2e0();
+    virtual void monster_2e8();
+    virtual void monster_2f0();
+    virtual void monster_2f8();
+    virtual void monster_300(bool);
+    virtual void monster_308();
+    virtual void monster_310();
+    virtual void monster_318();
+    virtual void monster_320();
+    virtual void monster_328();
+    virtual void monster_330();
+    virtual void monster_338();
+    virtual void monster_340();
+    virtual u32 monster_348();
+    virtual u32 monster_350();
+    virtual void monster_358();
+    virtual void monster_360();
+    virtual void monster_368();
+    virtual void monster_370();
+    virtual void monster_378();
+    virtual bool monster_380();
 };
 
 #endif // BATTLE_MONSTER_H

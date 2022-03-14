@@ -88,7 +88,7 @@ struct Msg {
     static Msg genMisctextMsg(void*, u32 idx);
 
     void print(const PrintSettings&, bool);
-    s32 sub_0806E414();
+    s32 len();
     u16* sub_0806E334(s32 idx);
 
     u16* ptr;

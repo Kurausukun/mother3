@@ -62850,7 +62850,7 @@ sub_0803DBB8: @ 0x0803DBB8
 	ldr r0, _0803DC1C @ =gUnknown_03004B00
 	strh r4, [r0]
 _0803DBF2:
-	bl sub_08000E30
+	bl clear_gfx
 	bl sub_0803ECC0
 	ldrb r0, [r5]
 	cmp r0, #0xd
@@ -112361,7 +112361,7 @@ sub_08056740: @ 0x08056740
 	ldrb r0, [r0]
 	cmp r0, #2
 	bne _0805678C
-	bl sub_08000E30
+	bl clear_gfx
 	bl sub_080568F4
 	ldr r0, _0805677C @ =gUnknown_03004B00
 	movs r3, #1
@@ -112388,7 +112388,7 @@ _08056780: .4byte 0x04000208
 _08056784: .4byte 0x04000200
 _08056788: .4byte 0x04000004
 _0805678C:
-	bl sub_08000E30
+	bl clear_gfx
 	bl sub_080568F4
 	ldr r1, _080567CC @ =gUnknown_03004B00
 	movs r0, #1
@@ -116198,7 +116198,7 @@ _08058506:
 sub_0805850C: @ 0x0805850C
 	push {lr}
 	bl sub_08058644
-	bl sub_08000E30
+	bl clear_gfx
 	bl sub_08058C54
 	ldr r0, _08058530 @ =gUnknown_02004850
 	ldrh r0, [r0]
@@ -121283,7 +121283,7 @@ sub_0805ACF4: @ 0x0805ACF4
 	.align 2, 0
 _0805AD08: .4byte gUnknown_020050B0
 _0805AD0C:
-	bl sub_08000838
+	bl setup_vectors
 	bl sub_0805ADBC
 	bl sub_0805AD24
 	b _0805AD1E

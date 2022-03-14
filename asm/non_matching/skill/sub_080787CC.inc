@@ -60,7 +60,7 @@ _08078828:
 _08078842:
 	adds r0, r7, #0
 	movs r1, #2
-	bl sub_08072964
+	bl unitIsPlayer
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
