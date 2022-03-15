@@ -23,6 +23,7 @@ SECTIONS
 
     rom : ALIGN(4)
 	{
+        FILL(0)
         asm/crt0.o(.text);
         src/main.o(.text);
         asm/rom.o(.text);
@@ -118,6 +119,17 @@ SECTIONS
         asm/rom3a.o(.text);
         asm/rom3.o(.text);
         src/battle/goods2.o(.text);
+        src/battle/goods3.o(.text);
+        src/battle/goods2.o(.gnu.linkonce.t.dg_3__12DefaultGoods);
+        src/battle/goods2.o(.gnu.linkonce.t.isConsumable__C12DefaultGoodsP4Unit);
+        src/battle/goods2.o(.gnu.linkonce.t.hitChance__C12DefaultGoods);
+        src/battle/goods2.o(.gnu.linkonce.t.dg_2__12DefaultGoodsP4Unit);
+        src/battle/goods2.o(.gnu.linkonce.t.action_a0__12DefaultGoodsP4Unit);
+        src/battle/goods2.o(.gnu.linkonce.t.isResisted__12DefaultGoodsP4Unit);
+        src/battle/goods2.o(.gnu.linkonce.t.dogTax__12DefaultGoods);
+        src/battle/goods2.o(.gnu.linkonce.t.tellUseMessage__12DefaultGoods);
+        src/battle/goods2.o(.gnu.linkonce.t._._12DefaultGoods);
+
         asm/rom3b.o(.text);
         src/inst.o(.text);
         asm/rom4.o(.text);
@@ -148,7 +160,7 @@ SECTIONS
         *libc.a:locale.o(.data);
 
         data/vtables.o(.data);
-     } >rom
+     } >rom = 0
 
     endl__FR7ostream = 0;
 
