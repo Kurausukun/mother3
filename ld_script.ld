@@ -119,7 +119,7 @@ SECTIONS
         asm/rom3a.o(.text);
         asm/rom3.o(.text);
         src/battle/goods2.o(.text);
-        src/battle/goods3.o(.text);
+        src/battle/goodsImpl.o(.text);
         src/battle/goods2.o(.gnu.linkonce.t.dg_3__12DefaultGoods);
         src/battle/goods2.o(.gnu.linkonce.t.isConsumable__C12DefaultGoodsP4Unit);
         src/battle/goods2.o(.gnu.linkonce.t.hitChance__C12DefaultGoods);

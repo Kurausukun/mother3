@@ -148,32 +148,4 @@ AncientBanana::AncientBanana(u16 id, Unit* user, u16 a3) : DefaultGoods(id, user
 HoneyShower::HoneyShower(u16 id, Unit* user, u16 a3) : DefaultGoods(id, user, a3) {}
 SaltwaterGun::SaltwaterGun(u16 id, Unit* user, u16 a3) : DefaultGoods(id, user, a3), _50(0x100) {}
 NewYearsEveBomb::NewYearsEveBomb(u16 id, Unit* user, u16 a3) : DefaultGoods(id, user, a3), _50(0) {}
-
-// asm(".globl	__12DefaultGoodsUsP4UnitUs\n\
-//             __12DefaultGoodsUsP4UnitUs:");
 DefaultGoods::DefaultGoods(u16 id, void* user, u16 r2) : Goods(id, (Unit*)user, r2) {}
-
-// NAKED void inlinepls() {
-//     asm("\n\
-// 	.globl	__12DefaultGoodsUsP4UnitUs\n\
-// __12DefaultGoodsUsP4UnitUs:\n\
-// 	.globl	__12DefaultGoodsUsPvUs\n\
-// 	.thumb_func\n\
-// __12DefaultGoodsUsPvUs:\n\
-// 	push	{r4, lr}\n\
-// 	add	r4, r0, #0\n\
-// 	lsl	r1, r1, #16\n\
-// 	lsr	r1, r1, #16\n\
-// 	lsl	r3, r3, #16\n\
-// 	lsr	r3, r3, #16\n\
-// 	bl	__5GoodsUsP4UnitUs\n\
-// 	ldr	r0, .L9XX\n\
-// 	str	r0, [r4, #28]\n\
-// 	add	r0, r4, #0\n\
-// 	pop	{r4}\n\
-// 	pop	{r1}\n\
-// 	bx	r1\n\
-// 	.align	2, 0\n\
-// .L9XX:\n\
-// 	.word	_vt.12DefaultGoods");
-// }

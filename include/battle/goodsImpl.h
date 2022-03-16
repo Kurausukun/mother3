@@ -6,12 +6,6 @@
 #include "battle/player.h"
 #include "enums.h"
 
-#define INLINE_VT_END                                                                              \
-    virtual void VT_HACK(); /*necessary for inline classes using baserom                           \
-                               vtables*/
-#define DUMP_INLINE(CLASS)                                                                         \
-    NAKED void CLASS::VT_HACK() {} /* establish a reference to the class, but create no code */
-
 extern "C" void playSeq(u32, Unit*, Unit*);
 extern "C" bool typeIsMonster(Unit*);
 extern "C" Monster* dynaCastMonster(Unit*);
