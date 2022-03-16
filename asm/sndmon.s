@@ -49,7 +49,7 @@ sub_08065014: @ 0x08065014
 _08065018:
 	lsls r0, r4, #0x10
 	lsrs r0, r0, #0x10
-	ldr r1, _080650E0 @ =sub_080BDE20
+	ldr r1, _080650E0 @ =MakeInstance__H1Z12DefaultGoods_UsP4UnitUs_PX01
 	bl sub_08065138
 	adds r4, #1
 	cmp r4, #0xff
@@ -125,7 +125,7 @@ _08065018:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080650E0: .4byte sub_080BDE20
+_080650E0: .4byte MakeInstance__H1Z12DefaultGoods_UsP4UnitUs_PX01
 _080650E4: .4byte sub_080BDDF8
 _080650E8: .4byte sub_080BDDD0
 _080650EC: .4byte sub_080BDDA8

@@ -1,0 +1,26 @@
+#include "battle/goodsImpl.h"
+
+// SEE HEADER FILE
+
+// DUMP_INLINE(DefaultGoods)
+DUMP_INLINE(NewYearsEveBomb)
+DUMP_INLINE(SaltwaterGun)
+DUMP_INLINE(HoneyShower)
+DUMP_INLINE(AncientBanana)
+DUMP_INLINE(BugSpray)
+DUMP_INLINE(PeculiarCheese)
+DUMP_INLINE(DoggyFood)
+DUMP_INLINE(LottoMeal)
+DUMP_INLINE(EnemyBufferizer)
+DUMP_INLINE(EnemyWimperizer)
+DUMP_INLINE(AttackAttractor)
+DUMP_INLINE(MadeYouLook)
+DUMP_INLINE(PaperFan)
+DUMP_INLINE(SecretHerb)
+DUMP_INLINE(CupOfLifenoodles)
+DUMP_INLINE(ShieldSnatcher)
+DUMP_INLINE(DragoFang)
+DUMP_INLINE(TriviaCard1)
+DUMP_INLINE(TriviaCard2)
+DUMP_INLINE(TriviaCard3)
+DUMP_INLINE(TriviaCard4)
