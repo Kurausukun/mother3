@@ -23,7 +23,7 @@ MID := $(abspath tools/mid2agb/mid2agb)$(EXE)
 SCANINC := tools/scaninc/scaninc$(EXE)
 PREPROC := tools/preproc/preproc$(EXE)
 GBAFIX := tools/gbafix/gbafix$(EXE)
-SALSA := tools/salsa/salsa$(EXE)
+SALSA := tools/salsa/build/salsa$(EXE)
 
 CXXFLAGS := -fno-exceptions -fno-rtti -quiet
 CC1FLAGS := -mthumb-interwork -Wimplicit -Wparentheses -O2 -g3
@@ -208,11 +208,14 @@ setup:
 	make -C tools/aif2pcm
 	make -C tools/gbafix
 	make -C tools/preproc
-	make -C tools/salsa
 	make -C tools/scaninc
+
+	cmake -S tools/salsa -B tools/salsa/build
+	make -C tools/salsa/build
 
 	$(SALSA) --extract baserom.gba assets/mainscript.salsa
 	$(SALSA) --extract baserom.gba assets/misctext.salsa
+	# $(SALSA) --extract baserom.gba assets/logic.salsa
 
 $(C_OBJS): $(C_SRCS)
 	$(CPP) $(CPPFLAGS) $< -o $(C_BUILDDIR)/$(<F).i

@@ -28,8 +28,8 @@ std::unique_ptr<LogicBank> LogicBank::dump(SalsaStream* stream, uintptr_t offset
         // or, if last non-null header, calculate block size from total size
         auto next_header = bank->nextGoodHeader(h);
         s32 content_size = next_header != bank->headers.end() ?
-                        (*next_header)->start() - header->startContent() :
-                        bank->total_size - header->startContent();
+                               (*next_header)->start() - header->startContent() :
+                               bank->total_size - header->startContent();
         if (next_header != bank->headers.end()) {
             std::cerr << "next header at " << (*next_header)->start() << std::endl;
             std::cerr << "this header at " << header->start() << std::endl;
@@ -53,11 +53,11 @@ std::unique_ptr<Block> BlockHeader::dumpBlock(SalsaStream* stream, s32 content_s
 
     if (isEmpty()) {
         std::cerr << "Empty block at " << std::hex << stream->tellg() << std::endl;
-        
-        assert(0); // we dont know how to handle this yet
+
+        assert(0);  // we dont know how to handle this yet
 
         auto block = std::make_unique<Block>();
-        block->scripts.emplace_back(Script{});
+        block->scripts.emplace_back(std::make_unique<Script>());
         stream->seekg((long)stream->tellg() + 4, std::ios::beg);
         return block;
     }
@@ -73,7 +73,7 @@ Block::Block(SalsaStream* stream, s32 content_size) {
     }
 
     stream->seekg(pad_to<4>(stream->tellg()), std::ios::beg);
-    u32 start = stream->tellg(); // this *should* be the same as in the block header
+    u32 start = stream->tellg();  // this *should* be the same as in the block header
 
     std::cerr << std::hex << "content start: " << start << std::endl;
     std::cerr << "content size: " << std::hex << content_size << std::endl;
@@ -83,9 +83,9 @@ Block::Block(SalsaStream* stream, s32 content_size) {
 
     // read the weird beginning stuff?
     if (script_count == 5) {
-        scripts.emplace_back(Script(stream, content_size));
+        scripts.emplace_back(std::make_unique<Script>(stream, content_size));
     } else {
-        scripts.emplace_back(Script(stream, headers[5].offset - ((long)stream->tellg() - start)));
+        scripts.emplace_back(std::make_unique<Script>(stream, headers[5].offset - ((long)stream->tellg() - start)));
     }
 
     for (int i = 5; i < script_count; i++) {
@@ -99,9 +99,10 @@ Block::Block(SalsaStream* stream, s32 content_size) {
             script_size = headers[i + 1].offset - header.offset;
         }
 
-        std::cerr << std::hex << "script " << i << " size: " << script_size << " offset: " << stream->tellg() << std::endl;
+        std::cerr << std::hex << "script " << i << " size: " << script_size
+                  << " offset: " << stream->tellg() << std::endl;
 
-        scripts.emplace_back(Script{stream, script_size});
+        scripts.emplace_back(std::make_unique<Script>(stream, script_size));
     }
 }
 
