@@ -280,7 +280,7 @@ const std::vector<std::string> ext_cmd_names = {
     "cmd_FF",
 };
 
-const std::vector<u8> math_argmap = {1, 2, 2, 2, 2, 2, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 1, 0, 0, 0};
+const std::vector<u8> math_argmap = {1, 2, 2, 2, 2, 2, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0};
 
 const std::vector<std::string> math_cmd_names = {
     "neg", "add", "sub", "mul", "div", "mod", "inc",  "dec",     "and",      "or",

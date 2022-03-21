@@ -1,8 +1,8 @@
 #pragma once
 
+#include <list>
 #include <sstream>
 #include <vector>
-#include <list>
 #include "salsa.hpp"
 
 namespace logic {
@@ -16,7 +16,7 @@ struct MsgCommentHelper {
     static bool loaded;
     static std::vector<std::string> comments;
 
-    static std::string find_msg(u32 bank, u32 idx) {
+    static std::string find_msg(const std::string& bank, const std::string& idx) {
         if (!loaded) {
             std::ifstream ifs("eng_script.txt");
             std::string line;
@@ -26,7 +26,7 @@ struct MsgCommentHelper {
             loaded = true;
         }
 
-        auto id_str = std::to_string(bank) + "-" + std::to_string(idx) + ":";
+        auto id_str = bank + "-" + idx + ":";
         for (auto& comment : comments) {
             if (comment.find(id_str) == 0) {
                 return comment;
@@ -35,7 +35,7 @@ struct MsgCommentHelper {
         return "?msg?";
     }
 
-    static std::string find_glob_msg(u32 idx) { return find_msg(0, idx); }
+    static std::string find_glob_msg(const std::string& idx) { return find_msg("0", idx); }
 };
 
 struct Command {
@@ -65,53 +65,109 @@ struct Command {
     virtual void process(iterator it) = 0;
     virtual std::string toString() const = 0;
 
-    virtual u32 getValueAsArg() const { return 0; }
+    virtual std::string getValueAsArg() const { return toString(); }
     virtual u32 getArgc() const { return 0; }
+    virtual u32 getCommandCount() const { return 1; }
 
-    u32 raw;
+    virtual void disableInlineAll() { disable_inline = true; }
+
+    u32 raw = 0;
+    u32 rom_off = 0;
+    bool disable_inline = false; // whether "arguments" are inlined into the command
 };
 
 struct Frame2StackCommand : Command {
     Frame2StackCommand(u32 raw) : Command(raw) {}
     virtual ~Frame2StackCommand() {}
 
-    void process(Command::iterator it) override { }
-    std::string toString() const override { return "todo Frame2Stack"; }
+    void process(Command::iterator it) override {
+        frame = (raw >> 8) & 0xFF;
+        value = (raw >> 16) & 0xFFFF;
+    }
+
+    std::string toString() const override {
+        std::stringstream ss;
+        ss << "LOAD_REG(" << frame << "," << value << ")";
+        return ss.str();
+    }
+
+    u32 frame = 0;
+    s16 value = 0;
 };
 
 struct PushImmCommand : Command {
     PushImmCommand(u32 raw) : Command(raw) {}
     virtual ~PushImmCommand() {}
 
-    void process(Command::iterator it) override {
-        value = sign_extend<s32>(raw >> 8, 24);
-    }
+    void process(Command::iterator it) override { value = sign_extend<s32>(raw >> 8, 24); }
 
     std::string toString() const override {
         std::stringstream ss;
-        ss << "PUSH #" << value;
+        ss << "PUSH " << value;
         return ss.str();
     }
 
-    u32 getValueAsArg() const override { return value; }
+    std::string getValueAsArg() const override { return std::to_string(value); }
 
     s32 value;
 };
 
 struct FrameAddrCommand : Command {
     FrameAddrCommand(u32 raw) : Command(raw) {}
-    virtual ~FrameAddrCommand() {}
+    virtual ~FrameAddrCommand() {
+        frame = (raw >> 8) & 0xFF;
+        value = (raw >> 16) & 0xFFFF;
+    }
 
-    void process(Command::iterator it) override { }
-    std::string toString() const override { return "todo FrameAddr"; }
+    void process(Command::iterator it) override {}
+    std::string toString() const override {
+        std::stringstream ss;
+        ss << "REG_ADDR(" << frame << "," << value << ")";
+        return ss.str();
+    }
+
+    u32 frame = 0;
+    s32 value = 0;
 };
 
 struct Stack2FrameCommand : Command {
     Stack2FrameCommand(u32 raw) : Command(raw) {}
-    virtual ~Stack2FrameCommand() {}
+    virtual ~Stack2FrameCommand() {
+        frame = (raw >> 8) & 0xFF;
+        value = (raw >> 16) & 0xFFFF;
+    }
 
-    void process(Command::iterator it) override { }
-    std::string toString() const override { return "todo Stack2Frame"; }
+    void process(Command::iterator it) override { arg = *--it++; }
+
+    std::string toString() const override {
+        std::stringstream ss;
+        if (disable_inline) {
+            ss << arg->toString() << "\n";
+            ss << "STORE_REG(" << frame << "," << value << ")";
+        } else {
+            ss << "STORE_REG(" << arg->getValueAsArg() << "," << frame << "," << value << ")";
+        }
+        return ss.str();
+    }
+
+    u32 getArgc() const override { return arg != nullptr ? 1 : 0; }
+    u32 getCommandCount() const override {
+        int count = 1;
+        if (arg != nullptr) {
+            count += arg->getCommandCount();
+        }
+        return count;
+    }
+    virtual void disableInlineAll() override {
+        disable_inline = true;
+        if (arg != nullptr) {
+            arg->disableInlineAll();
+        }
+    }
+
+    u32 frame = 0;
+    s16 value = 0;
+    Command* arg = nullptr;
 };
 
 struct ExtendedCommand : Command {
@@ -139,26 +195,45 @@ struct ExtendedCommand : Command {
     std::string toString() const override {
         std::stringstream ss;
 
-        ss << ext_cmd_names[func];
-        if (argc != 0) {
+        if (disable_inline) {
+            for (int i = 0; i < argc; i++) {
+                ss << args[i]->toString() << "\n";
+            }
+            ss << ext_cmd_names[func] << "()";
+        } else {
+            ss << ext_cmd_names[func];
             ss << "(";
             for (int i = 0; i < argc; i++) {
                 if (i != 0)
                     ss << ", ";
-                ss << args[i]->toString();
+                ss << args[i]->getValueAsArg();
             }
             ss << ")";
-
-            if (func == 0x32) {
-                ss << " // local bank msg " << args[2]->getValueAsArg();
-            } else if (func == 0x33) {
-                ss << " // " << MsgCommentHelper::find_glob_msg(args[2]->getValueAsArg());
-            }
         }
+
+        if (func == 0x32) {
+            ss << " // local bank msg " << args[2]->getValueAsArg();
+        } else if (func == 0x33) {
+            ss << " // " << MsgCommentHelper::find_glob_msg(args[2]->getValueAsArg());
+        }
+
         return ss.str();
     }
 
     u32 getArgc() const override { return argc; }
+    u32 getCommandCount() const override {
+        int count = 1;
+        for (auto& arg : args) {
+            count += arg->getCommandCount();
+        }
+        return count;
+    }
+    virtual void disableInlineAll() override {
+        disable_inline = true;
+        for (auto& arg : args) {
+            arg->disableInlineAll();
+        }
+    }
 
     u32 func = 0;
     u32 argc = 0;
@@ -169,39 +244,81 @@ struct CallfCommand : Command {
     CallfCommand(u32 raw) : Command(raw) {}
     virtual ~CallfCommand() {}
 
-    void process(Command::iterator it) override {}
-    std::string toString() const override { return "todo Callf"; }
+    void process(Command::iterator it) override {
+        frame = (raw >> 8) & 0xFF;
+        func = (raw >> 16) & 0xFFFF;
+    }
+
+    std::string toString() const override {
+        std::stringstream ss;
+        ss << "CALL_REG(" << frame << ", func_" << func << ")";
+        return ss.str();
+    }
+
+    u32 frame = 0;
+    u32 func = 0;
 };
 
 struct RetfCommand : Command {
     RetfCommand(u32 raw) : Command(raw) {}
     virtual ~RetfCommand() {}
 
-    void process(Command::iterator it) override { }
-    std::string toString() const override { return "RETF"; }
+    void process(Command::iterator it) override {
+        frame = (raw >> 8) & 0xFF;
+        func = (raw >> 16) & 0xFFFF;
+    }
+    std::string toString() const override {
+        std::stringstream ss;
+        ss << "RET_REG(" << frame << "," << func << ")";
+        return ss.str();
+    }
+
+    u32 frame = 0;
+    u32 func = 0;
 };
 
 struct CallCommand : Command {
     CallCommand(u32 raw) : Command(raw) {}
     virtual ~CallCommand() {}
 
-    void process(Command::iterator it) override { }
-    std::string toString() const override { return "todo Call"; }
+    void process(Command::iterator it) override {
+        frame = (raw >> 8) & 0xFF;
+        lbl = (raw >> 16) & 0xFFFF;
+    }
+
+    std::string toString() const override {
+        std::stringstream ss;
+        ss << "CALL(" << frame << "," << "lbl_" << lbl << ")";
+        return ss.str();
+    }
+
+    u32 frame = 0;
+    u32 lbl = 0;
 };
 
 struct RetCommand : Command {
-    RetCommand(u32 raw) : Command(raw) {}
+    RetCommand(u32 raw) : Command(raw) {
+        frame = (raw >> 8) & 0xFF;
+        func = (raw >> 16) & 0xFFFF;
+    }
     virtual ~RetCommand() {}
 
-    void process(Command::iterator it) override {  }
-    std::string toString() const override { return "RET"; }
+    void process(Command::iterator it) override {}
+    std::string toString() const override {
+        std::stringstream ss;
+        ss << "RET(" << frame << "," << func << ")";
+        return ss.str();
+    }
+
+    u32 frame = 0;
+    u32 func = 0;
 };
 
 struct EndCommand : Command {
     EndCommand(u32 raw) : Command(raw) {}
     virtual ~EndCommand() {}
 
-    void process(Command::iterator it) override {  }
+    void process(Command::iterator it) override {}
     std::string toString() const override { return "END"; }
 };
 
@@ -209,25 +326,41 @@ struct FramePushCommand : Command {
     FramePushCommand(u32 raw) : Command(raw) {}
     virtual ~FramePushCommand() {}
 
-    void process(Command::iterator it) override {  }
-    std::string toString() const override { return "todo FramePush"; }
+    void process(Command::iterator it) override {
+        frame = (raw >> 8) & 0xFF;
+        value = (raw >> 16) & 0xFFFF;
+    }
+
+    std::string toString() const override {
+        std::stringstream ss;
+        ss << "PUSH_REG(" << frame << "," << value << ")";
+        return ss.str();
+    }
+
+    u32 frame = 0;
+    s16 value = 0;
 };
 
 struct SpAllocCommand : Command {
     SpAllocCommand(u32 raw) : Command(raw) {}
     virtual ~SpAllocCommand() {}
 
-    void process(Command::iterator it) override { }
-    std::string toString() const override { return "todo SpAlloc"; }
+    void process(Command::iterator it) override { value = raw >> 8; }
+
+    std::string toString() const override {
+        std::stringstream ss;
+        ss << "SP_ALLOC(" << value << ")";
+        return ss.str();
+    }
+
+    u32 value = 0;
 };
 
 struct JumpCommand : Command {
     JumpCommand(u32 raw) : Command(raw) {}
     virtual ~JumpCommand() {}
 
-    void process(Command::iterator it) override {
-        dest = raw >> 16;
-    }
+    void process(Command::iterator it) override { dest = raw >> 16; }
 
     std::string toString() const override {
         std::stringstream ss;
@@ -242,9 +375,7 @@ struct JumpIfCommand : Command {
     JumpIfCommand(u32 raw) : Command(raw) {}
     virtual ~JumpIfCommand() {}
 
-    void process(Command::iterator it) override {
-        dest = raw >> 16;
-    }
+    void process(Command::iterator it) override { dest = raw >> 16; }
 
     std::string toString() const override {
         std::stringstream ss;
@@ -280,20 +411,41 @@ struct MathCommand : Command {
     std::string toString() const override {
         std::stringstream ss;
 
-        ss << math_cmd_names[func];
-        if (argc != 0) {
-            ss << "(";
+        if (disable_inline) {
             for (int i = 0; i < argc; i++) {
-                if (i != 0)
-                    ss << ", ";
-                ss << args[i]->toString();
+                ss << args[i]->toString() << "\n";
             }
-            ss << ")";
+            ss << math_cmd_names[func] << "()";
+        } else {
+            ss << math_cmd_names[func];
+            if (argc != 0) {
+                ss << "(";
+                for (int i = 0; i < argc; i++) {
+                    if (i != 0)
+                        ss << ", ";
+                    ss << args[i]->getValueAsArg();
+                }
+                ss << ")";
+            }
         }
+
         return ss.str();
     }
 
     u32 getArgc() const override { return argc; }
+    u32 getCommandCount() const override {
+        int count = 1;
+        for (auto& arg : args) {
+            count += arg->getCommandCount();
+        }
+        return count;
+    }
+    virtual void disableInlineAll() override {
+        disable_inline = true;
+        for (auto& arg : args) {
+            arg->disableInlineAll();
+        }
+    }
 
     u32 func = 0;
     u32 argc = 0;
@@ -327,12 +479,14 @@ struct Script {
                 break;
             case Command::Callf:
                 commands.emplace_back(new CallfCommand(cmd));
+                global_targets.emplace_back(cmd >> 16);
                 break;
             case Command::Retf:
                 commands.emplace_back(new RetfCommand(cmd));
                 break;
             case Command::Call:
                 commands.emplace_back(new CallCommand(cmd));
+                local_targets.emplace_back(cmd >> 16);
                 break;
             case Command::Ret:
                 commands.emplace_back(new RetCommand(cmd));
@@ -361,8 +515,10 @@ struct Script {
                 assert(false);  // invalid or garbage
                 break;
             }
+            commands.back()->rom_off = stream->tellg();
         }
 
+        // this is where we collect label references and figure out what commands are used as arguments
         for (Command::iterator it = commands.begin(); it != commands.end(); ++it) {
             (*it)->process(it);
             u32 argc = (*it)->getArgc();
@@ -372,7 +528,7 @@ struct Script {
                 it = commands.erase(it - argc, it);
         }
 
-        // PLZ SORT
+        /* we sort in convLogic.cpp */
         // local_targets.sort();
         // local_targets.unique();
     }
@@ -386,6 +542,7 @@ struct Script {
 
     std::vector<Command*> commands;
     std::list<u32> local_targets;
+    std::list<u32> global_targets;
 };
 
 }  // namespace logic

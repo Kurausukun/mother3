@@ -25,7 +25,7 @@ struct Block {
     Block(SalsaStream* stream, s32 content_size);
     u32 script_count;
     std::vector<ScriptHeader> headers;
-    std::vector<std::unique_ptr<Script>> scripts;
+    std::vector<std::unique_ptr<Script> > scripts;
 };
 
 struct BlockHeader {

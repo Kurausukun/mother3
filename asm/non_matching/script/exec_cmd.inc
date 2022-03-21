@@ -9,7 +9,7 @@
 	mov sb, r1
 	mov r0, sp
 	strh r2, [r0]
-	ldr r2, _0801B9B8 @ =gScript
+	ldr r2, _0801B9B8 @ =gGame
 	ldr r1, _0801B9BC @ =0x00009480
 	adds r0, r2, r1
 	ldrb r1, [r0]
@@ -21,7 +21,7 @@
 	str r0, [sp, #0xc]
 	b _0801B9C8
 	.align 2, 0
-_0801B9B8: .4byte gScript
+_0801B9B8: .4byte gGame
 _0801B9BC: .4byte 0x00009480
 _0801B9C0:
 	ldr r3, _0801BA0C @ =0x000084C0
@@ -29,7 +29,7 @@ _0801B9C0:
 	ldr r1, [sp, #0xc]
 	str r1, [r0]
 _0801B9C8:
-	ldr r1, _0801BA10 @ =gScript
+	ldr r1, _0801BA10 @ =gGame
 	ldr r2, _0801BA14 @ =0x00009470
 	adds r0, r1, r2
 	mov r3, sb
@@ -50,7 +50,7 @@ _0801B9E8:
 	mov r1, sl
 	mov r2, sb
 	bl sub_08021878
-	ldr r1, _0801BA10 @ =gScript
+	ldr r1, _0801BA10 @ =gGame
 	ldr r2, _0801BA1C @ =0x000084BC
 	adds r1, r1, r2
 	str r0, [r1]
@@ -66,7 +66,7 @@ _0801BA02:
 	mov pc, r0
 	.align 2, 0
 _0801BA0C: .4byte 0x000084C0
-_0801BA10: .4byte gScript
+_0801BA10: .4byte gGame
 _0801BA14: .4byte 0x00009470
 _0801BA18: .4byte 0x000084C4
 _0801BA1C: .4byte 0x000084BC
@@ -157,7 +157,7 @@ _0801BAB8:
 	.align 2, 0
 _0801BAE0: .4byte gUnknown_0200F064
 _0801BAE4:
-	ldr r4, _0801BB54 @ =gScript
+	ldr r4, _0801BB54 @ =gGame
 	ldr r3, _0801BB58 @ =0x00009474
 	adds r7, r4, r3
 	strh r5, [r7]
@@ -214,7 +214,7 @@ _0801BB38:
 	ldr r4, [r0]
 	b _0801BB68
 	.align 2, 0
-_0801BB54: .4byte gScript
+_0801BB54: .4byte gGame
 _0801BB58: .4byte 0x00009474
 _0801BB5C: .4byte 0x00009480
 _0801BB60:
@@ -238,7 +238,7 @@ _0801BB78:
 	adds r0, r5, #1
 	b _0801BEB0
 _0801BB82:
-	ldr r2, _0801BBA8 @ =gScript
+	ldr r2, _0801BBA8 @ =gGame
 	ldr r3, _0801BBAC @ =0x00009480
 	adds r2, r2, r3
 	ldrb r0, [r2]
@@ -257,11 +257,11 @@ _0801BB82:
 	adds r1, r1, r3
 	b _0801BC28
 	.align 2, 0
-_0801BBA8: .4byte gScript
+_0801BBA8: .4byte gGame
 _0801BBAC: .4byte 0x00009480
 _0801BBB0: .4byte gUnknown_0200F064
 _0801BBB4:
-	ldr r3, _0801BC08 @ =gScript
+	ldr r3, _0801BC08 @ =gGame
 	ldr r0, _0801BC0C @ =0x00009480
 	adds r2, r3, r0
 	ldrb r1, [r2]
@@ -304,7 +304,7 @@ _0801BBB4:
 	str r3, [sp, #0xc]
 	b _0801BEB4
 	.align 2, 0
-_0801BC08: .4byte gScript
+_0801BC08: .4byte gGame
 _0801BC0C: .4byte 0x00009480
 _0801BC10: .4byte gUnknown_0200F064
 _0801BC14: .4byte 0x000084C0
@@ -657,7 +657,7 @@ _0801BEB4:
 	bne _0801BEBE
 	b _0801B9E8
 _0801BEBE:
-	ldr r0, _0801BED8 @ =gScript
+	ldr r0, _0801BED8 @ =gGame
 	ldr r3, _0801BEDC @ =0x00009474
 	adds r0, r0, r3
 	strh r5, [r0]
@@ -671,6 +671,6 @@ _0801BEC6:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0801BED8: .4byte gScript
+_0801BED8: .4byte gGame
 _0801BEDC: .4byte 0x00009474
     .syntax divided

@@ -235,7 +235,7 @@
 . = 0x00005204; gUnknown_02005204 = .;
 . = 0x00005230; gUnknown_02005230 = .;
 . = 0x00005BF0; gUnknown_02005BF0 = .;
-. = 0x00005C00; gScript = .;
+. = 0x00005C00; gGame = .;
 . = 0x00005C0C; gUnknown_02005C0C = .;
 . = 0x00005C1C; gUnknown_02005C1C = .;
 . = 0x00005C2C; gUnknown_02005C2C = .;

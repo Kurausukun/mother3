@@ -8,6 +8,7 @@ extern u32 gUnknown_03005314;
 extern u8 gUnknown_02005080;
 extern u8 gUnknown_080C1FF0[];
 
+// not functionally equivalent
 NONMATCH("asm/non_matching/script/exec_cmd.inc", void exec_cmd(void* script, u16* unk)) {
     void* v1 = script;
     void* v2 = script;
@@ -25,96 +26,96 @@ NONMATCH("asm/non_matching/script/exec_cmd.inc", void exec_cmd(void* script, u16
         s32 raw;
     };
 
-    if (gScript.state_10) {
+    if (gGame.state_10) {
         v1 = sub_08027E60();
-        v2 = gScript._84c0;
+        v2 = gGame._84c0;
     }
-    gScript._84c0 = v2;
-    gScript._9470 = unk;
+    gGame._84c0 = v2;
+    gGame._9470 = unk;
 
-    u16 sp = gScript.sp;
+    u16 sp = gGame.sp;
     bool ok = false;
     do {
-        gScript._84bc = sub_08021878(v2, &onearg.val, unk);
-        switch (*gScript._84bc) {
+        gGame.script_pc = sub_08021878(v2, &onearg.val, unk);
+        switch (*gGame.script_pc) {
         case 0x0:
-            gScript.stack[sp] = gScript.stack[gScript._948c[twoarg.u8val] + (u16)(raw >> 8)];
+            gGame.stack[sp] = gGame.stack[gGame.registers[twoarg.u8val] + (u16)(raw >> 8)];
             sp++;
             break;
         case 0x1:
-            gScript.stack[sp] = raw;
+            gGame.stack[sp] = raw;
             sp++;
             break;
         case 0x2:
-            gScript.stack[sp] = gScript._948c[twoarg.u8val] + (u16)(raw >> 8);
+            gGame.stack[sp] = gGame.registers[twoarg.u8val] + (u16)(raw >> 8);
             sp++;
             break;
         case 0x3:
             sp--;
-            gScript.stack[gScript._948c[twoarg.u8val] + (u16)(raw >> 8)] = gScript.stack[sp];
+            gGame.stack[gGame.registers[twoarg.u8val] + (u16)(raw >> 8)] = gGame.stack[sp];
             break;
         case 0x4:
-            gScript.state_40 = 0;
-            gScript.sp = sp;
+            gGame.state_40 = 0;
+            gGame.sp = sp;
             argc = sub_08021920((u16)(raw >> 8));
-            ok = exec_extended((u16)(raw >> 8), &gScript.stack[sp - 1]);
-            if (gScript.state_20) {
+            ok = exec_extended((u16)(raw >> 8), &gGame.stack[sp - 1]);
+            if (gGame.state_20) {
                 return;
             }
-            if (!gScript.state_40) {
+            if (!gGame.state_40) {
                 u32 temp;
                 u32 x;
-                if (gScript.sp != sp) {
+                if (gGame.sp != sp) {
                     x = 1;
-                    sp = gScript.sp - 1;
-                    temp = gScript.stack[sp];
+                    sp = gGame.sp - 1;
+                    temp = gGame.stack[sp];
                 } else {
                     x = 0;
                     temp = 0;
                 }
                 sp -= argc;
                 if (x) {
-                    gScript.stack[sp] = temp;
+                    gGame.stack[sp] = temp;
                     sp++;
                 }
             }
             break;
         case 0x5:
-            gScript.state_10 = 1;
+            gGame.state_10 = 1;
             v2 = sub_08027E60();
             goto CASE_7;
-            // gScript.stack[sp] = gScript._948c[raw - 19];
-            // gScript.stack[sp + 1] = *unk;
-            // gScript._948c[raw - 19] = sp;
+            // gGame.stack[sp] = gGame.registers[raw - 19];
+            // gGame.stack[sp + 1] = *unk;
+            // gGame.registers[raw - 19] = sp;
             // *unk = (u16)(raw >> 8);
             break;
         case 0x6:
-            gScript.state_10 = 0;
-            tmp = gScript.stack[(u16)(sp - 1)];
-            sp = gScript._948c[twoarg.u8val];
-            gScript._948c[twoarg.u8val] = gScript.stack[sp];
-            *unk = gScript.stack[sp];
+            gGame.state_10 = 0;
+            tmp = gGame.stack[(u16)(sp - 1)];
+            sp = gGame.registers[twoarg.u8val];
+            gGame.registers[twoarg.u8val] = gGame.stack[sp];
+            *unk = gGame.stack[sp];
             sp -= (u16)((u32)raw >> 8);
-            gScript.stack[sp] = tmp;
+            gGame.stack[sp] = tmp;
             sp++;
-            v2 = gScript._84c0;
+            v2 = gGame._84c0;
             break;
         case 0x7:
         CASE_7:
-            gScript.stack[sp] = gScript._948c[raw - 19];
-            gScript.stack[sp + 1] = *unk;
-            gScript._948c[raw - 19] = sp;
+            gGame.stack[sp] = gGame.registers[raw - 19];
+            gGame.stack[sp + 1] = *unk;
+            gGame.registers[raw - 19] = sp;
             *unk = (u16)(raw >> 8);
             break;
         case 0x8:
-            tmp = gScript.stack[sp - 1];
-            sp = gScript._948c[twoarg.u8val];
-            gScript._948c[twoarg.u8val] = gScript.stack[sp];
-            *unk = gScript.stack[sp + 1];
+            tmp = gGame.stack[sp - 1];
+            sp = gGame.registers[twoarg.u8val];
+            gGame.registers[twoarg.u8val] = gGame.stack[sp];
+            *unk = gGame.stack[sp + 1];
             sp -= (u16)(raw >> 8);
-            gScript.stack[sp] = tmp;
+            gGame.stack[sp] = tmp;
             sp++;
-            if (gScript.stack[sp + 1] == 0) {
+            if (gGame.stack[sp + 1] == 0) {
                 ok = 1;
                 sub_0801BF18();
             }
@@ -124,7 +125,7 @@ NONMATCH("asm/non_matching/script/exec_cmd.inc", void exec_cmd(void* script, u16
             sub_0801BF18();
             break;
         case 0xA:
-            *(u16*)&gScript.stack[1000] = raw;
+            *(u16*)&gGame.stack[1000] = raw;
             break;
         case 0xB:
             sp += raw;
@@ -134,75 +135,75 @@ NONMATCH("asm/non_matching/script/exec_cmd.inc", void exec_cmd(void* script, u16
             break;
         case 0xD:
             sp--;
-            if (gScript.stack[sp] == 0) {
+            if (gGame.stack[sp] == 0) {
                 *unk = raw >> 8;
             }
             break;
         case 0xE:
             switch (raw) {
             case 0:
-                gScript.stack[sp - 1] = -gScript.stack[sp - 1];
+                gGame.stack[sp - 1] = -gGame.stack[sp - 1];
                 break;
             case 1:
                 sp--;
-                gScript.stack[sp - 1] += gScript.stack[sp];
+                gGame.stack[sp - 1] += gGame.stack[sp];
                 break;
             case 2:
                 sp--;
-                gScript.stack[sp - 1] -= gScript.stack[sp];
+                gGame.stack[sp - 1] -= gGame.stack[sp];
                 break;
             case 3:
                 sp--;
-                gScript.stack[sp - 1] *= gScript.stack[sp];
+                gGame.stack[sp - 1] *= gGame.stack[sp];
                 break;
             case 4:
                 sp--;
-                gScript.stack[sp - 1] /= gScript.stack[sp];
+                gGame.stack[sp - 1] /= gGame.stack[sp];
                 break;
             case 5:
                 sp--;
-                gScript.stack[sp - 1] %= gScript.stack[sp];
+                gGame.stack[sp - 1] %= gGame.stack[sp];
                 break;
             case 6:
-                gScript.stack[sp - 1]++;
+                gGame.stack[sp - 1]++;
                 break;
             case 7:
-                gScript.stack[sp - 1]--;
+                gGame.stack[sp - 1]--;
                 break;
             case 8:
                 sp--;
-                gScript.stack[sp - 1] &= gScript.stack[sp];
+                gGame.stack[sp - 1] &= gGame.stack[sp];
                 break;
             case 9:
                 sp--;
-                gScript.stack[sp - 1] |= gScript.stack[sp];
+                gGame.stack[sp - 1] |= gGame.stack[sp];
                 break;
             case 0xA:
                 sp--;
-                gScript.stack[sp - 1] = gScript.stack[sp - 1] == gScript.stack[sp];
+                gGame.stack[sp - 1] = gGame.stack[sp - 1] == gGame.stack[sp];
                 break;
             case 0xB:
                 sp--;
-                gScript.stack[sp - 1] = gScript.stack[sp - 1] != gScript.stack[sp];
+                gGame.stack[sp - 1] = gGame.stack[sp - 1] != gGame.stack[sp];
                 break;
             case 0xC:
                 sp--;
-                gScript.stack[sp - 1] = gScript.stack[sp - 1] < gScript.stack[sp];
+                gGame.stack[sp - 1] = gGame.stack[sp - 1] < gGame.stack[sp];
                 break;
             case 0xD:
                 sp--;
-                gScript.stack[sp - 1] = gScript.stack[sp] > gScript.stack[sp - 1];
+                gGame.stack[sp - 1] = gGame.stack[sp] > gGame.stack[sp - 1];
                 break;
             case 0xE:
                 sp--;
-                gScript.stack[sp - 1] = gScript.stack[sp - 1] <= gScript.stack[sp];
+                gGame.stack[sp - 1] = gGame.stack[sp - 1] <= gGame.stack[sp];
                 break;
             case 0xF:
                 sp--;
-                gScript.stack[sp - 1] = gScript.stack[sp] <= gScript.stack[sp - 1];
+                gGame.stack[sp - 1] = gGame.stack[sp] <= gGame.stack[sp - 1];
                 break;
             case 0x10:
-                gScript.stack[sp - 1] = gScript.stack[sp];
+                gGame.stack[sp - 1] = gGame.stack[sp];
                 sp++;
                 break;
             case 0x11:
@@ -213,15 +214,15 @@ NONMATCH("asm/non_matching/script/exec_cmd.inc", void exec_cmd(void* script, u16
             break;
         }
     } while (!ok);
-    gScript.sp = sp;
+    gGame.sp = sp;
 }
 END_NONMATCH
 
 // verify if function name is accurate
 inline void scriptstack_pop() {
-    (*gScript._9470)--;
-    gScript.stack[gScript.sp] = gScript.stack[gScript.sp - 1];
-    gScript.sp++;
+    (*gGame._9470)--;
+    gGame.stack[gGame.sp] = gGame.stack[gGame.sp - 1];
+    gGame.sp++;
 }
 
 u16 exec_extended(u16 cmd, s32* sp) {
@@ -235,8 +236,8 @@ u16 exec_extended(u16 cmd, s32* sp) {
 }
 
 u16 sub_0801BF18() {
-    if (gScript.state_1 == 5) {
-        if (gScript.state_8 == 0) {
+    if (gGame.state_1 == 5) {
+        if (gGame.state_8 == 0) {
             sub_0800AD6C();
         }
         sub_08023EF8();
@@ -245,10 +246,10 @@ u16 sub_0801BF18() {
 }
 
 u16 cmd_delay(s32* sp) {
-    if (gScript.state_1 != 5)
+    if (gGame.state_1 != 5)
         return 0;
 
-    gScript.delay = scriptstack_peek(sp, 0);
+    gGame.delay = scriptstack_peek(sp, 0);
     return 1;
 }
 
@@ -256,7 +257,7 @@ u16 cmd_set_anim_speed(s32* sp) {
     s32 idx;
     Object* sprite;
 
-    if (gScript.state_1 != 5)
+    if (gGame.state_1 != 5)
         return 0;
 
     idx = scriptstack_peek(sp, 0);
@@ -272,7 +273,7 @@ u16 cmd_load_subscript(s32* sp) {
     u16 temp;
 
     temp = scriptstack_peek(sp, 0);
-    switch (gScript.state_1) {
+    switch (gGame.state_1) {
     case 0:
     case 2:
     case 3:
@@ -285,7 +286,7 @@ u16 cmd_load_subscript(s32* sp) {
 }
 
 u16 cmd_04(s32* sp) {
-    if (gScript.state_8 != 0)
+    if (gGame.state_8 != 0)
         scriptstack_push(1);
     else
         scriptstack_push(0);
@@ -295,7 +296,7 @@ u16 cmd_04(s32* sp) {
 u16 cmd_05(s32* sp) {
     s32 temp;
 
-    if (gScript.state_1 != 5)
+    if (gGame.state_1 != 5)
         return 0;
 
     temp = scriptstack_peek(sp, 0);
@@ -312,7 +313,7 @@ u16 cmd_06(s32* sp) {
     s32 idx;
     Object* sprite;
 
-    if (gScript.state_1 != 5)
+    if (gGame.state_1 != 5)
         return 0;
 
     idx = scriptstack_peek(sp, 0);
@@ -325,7 +326,7 @@ u16 cmd_06(s32* sp) {
 }
 
 u16 cmd_07() {
-    if (gScript._8495 / 128 != 0) {
+    if (gGame._8495 / 128 != 0) {
         scriptstack_push(3);
         return 0;
     }
@@ -349,33 +350,33 @@ u16 cmd_07() {
 }
 
 u16 cmd_reload_room() {
-    if (gScript.state_1 != 5)
+    if (gGame.state_1 != 5)
         return 0;
 
-    gScript.disable_collision = 0;
+    gGame.disable_collision = 0;
     sub_08024744();
-    gScript.state_80 = 1;
+    gGame.state_80 = 1;
     sub_08005BFC();
     sub_0801B5E8(2);
     sub_08005C14();
-    gScript.state_80 = 0;
-    gScript.state_20 = 1;
-    if (gScript._8484 != 0) {
+    gGame.state_80 = 0;
+    gGame.state_20 = 1;
+    if (gGame._8484 != 0) {
         gUnknown_02016028._121bb_10 = 1;
         sub_0800AD6C();
-        sub_08001B18(&gScript._9488, &gUnknown_03005314, 0x400);
-        gScript.mode = 6;
+        sub_08001B18(&gGame._9488, &gUnknown_03005314, 0x400);
+        gGame.mode = 6;
         sub_08013D38();
         sub_0802610C(0);
     } else {
-        gScript._67c4_40 = 1;
+        gGame._67c4_40 = 1;
     }
     return 0;
 }
 
 u16 cmd_C9() {
-    if (gScript.state_1 == 5)
-        gScript._8494_4 = 1;
+    if (gGame.state_1 == 5)
+        gGame._8494_4 = 1;
     return 0;
 }
 
@@ -385,7 +386,7 @@ u16 cmd_E4(s32* sp) {
 	push {r4, r5, r6, r7, lr}\n\
 	sub sp, #4\n\
 	adds r5, r0, #0\n\
-	ldr r7, _0801C31C @ =gScript\n\
+	ldr r7, _0801C31C @ =gGame\n\
 	ldr r1, _0801C320 @ =0x00009480\n\
 	adds r0, r7, r1\n\
 	ldrb r1, [r0]\n\
@@ -432,7 +433,7 @@ _0801C308:\n\
 	movs r4, #1\n\
 	b _0801C332\n\
 	.align 2, 0\n\
-_0801C31C: .4byte gScript\n\
+_0801C31C: .4byte gGame\n\
 _0801C320: .4byte 0x00009480\n\
 _0801C324: .4byte 0x0000947C\n\
 _0801C328: .4byte 0x0000947E\n\
@@ -441,7 +442,7 @@ _0801C32C:\n\
 	movs r0, #0\n\
 	strh r0, [r1]\n\
 _0801C332:\n\
-	ldr r1, _0801C36C @ =gScript\n\
+	ldr r1, _0801C36C @ =gGame\n\
 	ldr r2, _0801C370 @ =0x0000947C\n\
 	adds r3, r1, r2\n\
 	ldrh r2, [r3]\n\
@@ -470,7 +471,7 @@ _0801C332:\n\
 	bl scriptstack_push\n\
 	b _0801C432\n\
 	.align 2, 0\n\
-_0801C36C: .4byte gScript\n\
+_0801C36C: .4byte gGame\n\
 _0801C370: .4byte 0x0000947C\n\
 _0801C374: .4byte 0x0000FFFF\n\
 _0801C378: .4byte 0x0000947E\n\
@@ -555,7 +556,7 @@ _0801C41C: .4byte 0x00009480\n\
 _0801C420: .4byte 0x00009470\n\
 _0801C424:\n\
 	bl scriptstack_push\n\
-	ldr r0, _0801C43C @ =gScript\n\
+	ldr r0, _0801C43C @ =gGame\n\
 	ldr r2, _0801C440 @ =0x0000947C\n\
 	adds r0, r0, r2\n\
 	ldr r1, _0801C444 @ =0x0000FFFF\n\
@@ -568,7 +569,7 @@ _0801C434:\n\
 	pop {r1}\n\
 	bx r1\n\
 	.align 2, 0\n\
-_0801C43C: .4byte gScript\n\
+_0801C43C: .4byte gGame\n\
 _0801C440: .4byte 0x0000947C\n\
 _0801C444: .4byte 0x0000FFFF\n\
     ");
@@ -586,7 +587,7 @@ u16 cmd_F5(s32* sp) {
     else
         temp = 4;
 
-    switch (gScript.state_1) {
+    switch (gGame.state_1) {
     case 0:
     case 2:
     case 3:
@@ -758,7 +759,7 @@ u16 cmd_14(s32* sp) {
             gSave._220 = idx;
             break;
         default:
-            gScript.cur_room = idx;
+            gGame.cur_room = idx;
             break;
         }
     }
@@ -766,7 +767,7 @@ u16 cmd_14(s32* sp) {
 }
 
 u16 cmd_push_map_id(s32* sp) {
-    scriptstack_push(gScript.cur_room);
+    scriptstack_push(gGame.cur_room);
     return 0;
 }
 
@@ -802,7 +803,7 @@ u16 cmd_get_item_count(s32* sp) {
         cnt = gSave._10[idx];
     } else {
         cnt = 0;
-        for (u16 i = 0; i < gScript.party_count; ++i) {
+        for (u16 i = 0; i < gGame.party_count; ++i) {
             item = (u8*)get_char_stats(i);
             if (*item != 0) {
                 temp = sub_08001D2C(*item);
@@ -845,7 +846,7 @@ _0801C7CC: .4byte gSave\n\
 _0801C7D0:\n\
 	movs r7, #0\n\
 	movs r5, #0\n\
-	ldr r0, _0801C828 @ =gScript\n\
+	ldr r0, _0801C828 @ =gGame\n\
 	ldr r1, _0801C82C @ =0x00008299\n\
 	adds r0, r0, r1\n\
 	ldrb r1, [r0]\n\
@@ -888,14 +889,14 @@ _0801C818:\n\
 	pop {r1}\n\
 	bx r1\n\
 	.align 2, 0\n\
-_0801C828: .4byte gScript\n\
+_0801C828: .4byte gGame\n\
 _0801C82C: .4byte 0x00008299\n\
     ");
 }
 #endif
 
 u16 cmd_get_party_size(s32* sp) {
-    scriptstack_push(gScript.party_count);
+    scriptstack_push(gGame.party_count);
     return 0;
 }
 
@@ -978,7 +979,7 @@ u16 cmd_party_add(s32* sp) {
             sub_080296E4(idx);
         }
     }
-    if (gScript.party_count > 1) {
+    if (gGame.party_count > 1) {
         set_event_flag(0x3e3, 1);
     }
     return 0;
@@ -1008,7 +1009,7 @@ u16 cmd_party_add(s32* sp) {
 	adds r0, r4, #0\n\
 	bl sub_080296E4\n\
 _0801C8F6:\n\
-	ldr r0, _0801C918 @ =gScript\n\
+	ldr r0, _0801C918 @ =gGame\n\
 	ldr r1, _0801C91C @ =0x00008299\n\
 	adds r0, r0, r1\n\
 	ldrb r0, [r0]\n\
@@ -1024,7 +1025,7 @@ _0801C90A:\n\
 	bx r1\n\
 	.align 2, 0\n\
 _0801C914: .4byte 0xFFFF0000\n\
-_0801C918: .4byte gScript\n\
+_0801C918: .4byte gGame\n\
 _0801C91C: .4byte 0x00008299\n\
 _0801C920: .4byte 0x000003E3\n\
     ");
@@ -1059,7 +1060,7 @@ u16 cmd_party_remove(s32* sp) {
             sub_08029B18(status);
         }
     }
-    if (gScript.party_count == 1) {
+    if (gGame.party_count == 1) {
         set_event_flag(0x3e3, 0);
     }
     return 0;
@@ -1090,7 +1091,7 @@ u16 cmd_party_remove(s32* sp) {
 	adds r0, r2, #0\n\
 	bl sub_08029B18\n\
 _0801C9A0:\n\
-	ldr r0, _0801C9C0 @ =gScript\n\
+	ldr r0, _0801C9C0 @ =gGame\n\
 	ldr r1, _0801C9C4 @ =0x00008299\n\
 	adds r0, r0, r1\n\
 	ldrb r0, [r0]\n\
@@ -1105,7 +1106,7 @@ _0801C9B4:\n\
 	bx r1\n\
 	.align 2, 0\n\
 _0801C9BC: .4byte 0xFFFF0000\n\
-_0801C9C0: .4byte gScript\n\
+_0801C9C0: .4byte gGame\n\
 _0801C9C4: .4byte 0x00008299\n\
 _0801C9C8: .4byte 0x000003E3\n\
     ");
@@ -1117,9 +1118,9 @@ u16 cmd_20(s32* sp) {
 
     clear = scriptstack_peek(sp, 0);
     if (clear == 1)
-        gScript._82b6 = 0;
+        gGame._82b6 = 0;
     else if (clear == 0)
-        gScript._82b6 = 1;
+        gGame._82b6 = 1;
     return 0;
 }
 
@@ -1159,7 +1160,7 @@ u16 cmd_24(s32* sp) {
     u16 idx;
 
     idx = scriptstack_peek(sp, 0);
-    gScript._82b4 = idx * 60;
+    gGame._82b4 = idx * 60;
     return 0;
 }
 
@@ -1188,10 +1189,10 @@ u16 cmd_28(s32* sp) {
     u32 val;
     u32 idx;
 
-    if (gScript.state_8)
-        idx = gScript._829b;
+    if (gGame.state_8)
+        idx = gGame._829b;
     else
-        idx = gScript._829c;
+        idx = gGame._829c;
 
     switch (idx) {
     case 3:
@@ -1220,7 +1221,7 @@ u16 cmd_29(s32* sp) {
             sub_080296E4(idx);
         }
     }
-    if (gScript.party_count > 1) {
+    if (gGame.party_count > 1) {
         set_event_flag(0x3e3, 1);
     }
     return 0;
@@ -1250,7 +1251,7 @@ u16 cmd_29(s32* sp) {
 	adds r0, r4, #0\n\
 	bl sub_080296E4\n\
 _0801CB76:\n\
-	ldr r0, _0801CB98 @ =gScript\n\
+	ldr r0, _0801CB98 @ =gGame\n\
 	ldr r1, _0801CB9C @ =0x00008299\n\
 	adds r0, r0, r1\n\
 	ldrb r0, [r0]\n\
@@ -1266,7 +1267,7 @@ _0801CB8A:\n\
 	bx r1\n\
 	.align 2, 0\n\
 _0801CB94: .4byte 0xFFFF0000\n\
-_0801CB98: .4byte gScript\n\
+_0801CB98: .4byte gGame\n\
 _0801CB9C: .4byte 0x00008299\n\
 _0801CBA0: .4byte 0x000003E3\n\
     ");
@@ -1306,9 +1307,9 @@ u16 cmd_2A(s32* sp) {
 
     idx = scriptstack_peek(sp, 0);
     if (idx == 1) {
-        gScript._82b8_20 = 0;
+        gGame._82b8_20 = 0;
     } else if (idx == 0) {
-        gScript._82b8_20 = 1;
+        gGame._82b8_20 = 1;
     }
     return 0;
 }
@@ -1595,7 +1596,7 @@ u16 cmd_E3(s32* sp) {
 
     idx = scriptstack_peek(sp, 0);
     if (idx == -1) {
-        scriptstack_push(gScript._82ae);
+        scriptstack_push(gGame._82ae);
     } else if (gGoodsInfo[idx].item_type == Key || sub_0802A124(idx) != 0) {
         scriptstack_push(1);
     } else {
@@ -1889,7 +1890,7 @@ _0801D3FE:\n\
 	adds r1, r1, r0\n\
 	strh r2, [r1]\n\
 _0801D402:\n\
-	ldr r0, _0801D430 @ =gScript\n\
+	ldr r0, _0801D430 @ =gGame\n\
 	ldr r1, _0801D434 @ =0x000082B9\n\
 	adds r0, r0, r1\n\
 	ldrb r2, [r0]\n\
@@ -1908,7 +1909,7 @@ _0801D420: .4byte gCharStats\n\
 _0801D424: .4byte gSave\n\
 _0801D428: .4byte 0x00000734\n\
 _0801D42C: .4byte 0x00000735\n\
-_0801D430: .4byte gScript\n\
+_0801D430: .4byte gGame\n\
 _0801D434: .4byte 0x000082B9\n\
     ");
 }
@@ -1934,7 +1935,7 @@ s32 cmd_F2(s32* sp) {
 }
 
 u16 cmd_F8(s32* sp) {
-    scriptstack_push(gScript._8450);
+    scriptstack_push(gGame._8450);
     return 0;
 }
 
@@ -1943,7 +1944,7 @@ u16 cmd_F9(s32* sp) {
     for (u16 i = 0; i < 10; ++i) {
         u16 bit = 1;
         for (u16 j = 0; j < 8; ++j) {
-            if ((gScript._846f[i] & bit) != 0) {
+            if ((gGame._846f[i] & bit) != 0) {
                 cnt++;
             }
             bit <<= 1;
@@ -1959,7 +1960,7 @@ u16 cmd_FA(s32* sp) {
     for (u16 i = 0; i < 10; ++i) {
         u16 bit = 1;
         for (u16 j = 0; j < 8; ++j) {
-            u8* p = &gScript._846f[i];
+            u8* p = &gGame._846f[i];
             if ((*p & bit) != 0) {
                 *p &= ~bit;
                 scriptstack_push(cnt);
@@ -1983,7 +1984,7 @@ u16 cmd_put_ocho(s32* sp) {
     gSave._78a = 0;
     memclear(gSave._78e, 0x80);
     cnt = 0;
-    for (u16 i = 0; i < gScript.party_count; ++i) {
+    for (u16 i = 0; i < gGame.party_count; ++i) {
         cd = get_char_stats(i);
         if (cd->charNo != 0 && sub_08001D2C(cd->charNo) != 0) {
             sub_0802A7F8(cd, cnt);
@@ -1999,7 +2000,7 @@ u16 cmd_get_ocho(s32* sp) {
     if (sub_0802A98C() == 0) {
         scriptstack_push(1);
     } else {
-        for (u16 i = 0; i < gScript.party_count; ++i) {
+        for (u16 i = 0; i < gGame.party_count; ++i) {
             cd = get_char_stats(i);
             if (cd->charNo != 0 && sub_08001D2C(cd->charNo) != 0) {
                 sub_0802A8D4(cd);
@@ -2043,7 +2044,7 @@ u16 cmd_disp_msg(s32* sp) {
 	adds r0, r7, #0\n\
 	movs r1, #1\n\
 	bl scriptstack_peek\n\
-	ldr r0, _0801D76C @ =gScript\n\
+	ldr r0, _0801D76C @ =gGame\n\
 	ldr r1, _0801D770 @ =0x00008452\n\
 	adds r5, r0, r1\n\
 	ldr r1, _0801D774 @ =0x0000FFFF\n\
@@ -2086,7 +2087,7 @@ _0801D738:\n\
 	bl sub_080332AC\n\
 	b _0801D784\n\
 	.align 2, 0\n\
-_0801D76C: .4byte gScript\n\
+_0801D76C: .4byte gGame\n\
 _0801D770: .4byte 0x00008452\n\
 _0801D774: .4byte 0x0000FFFF\n\
 _0801D778: .4byte 0x00008454\n\
@@ -2096,7 +2097,7 @@ _0801D77C:\n\
 	orrs r0, r1\n\
 	strh r0, [r5]\n\
 _0801D784:\n\
-	ldr r2, _0801D804 @ =gScript\n\
+	ldr r2, _0801D804 @ =gGame\n\
 	mov r8, r2\n\
 	ldr r0, _0801D808 @ =0x000067AC\n\
 	add r0, r8\n\
@@ -2156,7 +2157,7 @@ _0801D784:\n\
 	strh r0, [r4]\n\
 	b _0801D84E\n\
 	.align 2, 0\n\
-_0801D804: .4byte gScript\n\
+_0801D804: .4byte gGame\n\
 _0801D808: .4byte 0x000067AC\n\
 _0801D80C: .4byte gUnknown_02016028\n\
 _0801D810: .4byte 0x0001ED10\n\
@@ -2218,7 +2219,7 @@ u16 cmd_disp_msg_0(s32* sp) {
 	adds r0, r7, #0\n\
 	movs r1, #1\n\
 	bl scriptstack_peek\n\
-	ldr r0, _0801D8D4 @ =gScript\n\
+	ldr r0, _0801D8D4 @ =gGame\n\
 	ldr r1, _0801D8D8 @ =0x00008452\n\
 	adds r6, r0, r1\n\
 	ldr r1, _0801D8DC @ =0x0000FFFF\n\
@@ -2262,7 +2263,7 @@ _0801D8A2:\n\
 	bl sub_080332AC\n\
 	b _0801D8EC\n\
 	.align 2, 0\n\
-_0801D8D4: .4byte gScript\n\
+_0801D8D4: .4byte gGame\n\
 _0801D8D8: .4byte 0x00008452\n\
 _0801D8DC: .4byte 0x0000FFFF\n\
 _0801D8E0: .4byte 0x00008454\n\
@@ -2292,7 +2293,7 @@ _0801D8EC:\n\
 	strb r0, [r2]\n\
 	adds r0, r4, #0\n\
 	bl sub_08021930\n\
-	ldr r2, _0801D968 @ =gScript\n\
+	ldr r2, _0801D968 @ =gGame\n\
 	ldr r1, _0801D96C @ =0x00008452\n\
 	adds r0, r2, r1\n\
 	movs r3, #0\n\
@@ -2328,7 +2329,7 @@ _0801D8EC:\n\
 	.align 2, 0\n\
 _0801D960: .4byte gUnknown_02016028\n\
 _0801D964: .4byte 0x0001ED10\n\
-_0801D968: .4byte gScript\n\
+_0801D968: .4byte gGame\n\
 _0801D96C: .4byte 0x00008452\n\
 _0801D970: .4byte 0x00004AF2\n\
 _0801D974: .4byte 0x0000FFFF\n\
@@ -2439,8 +2440,8 @@ u16 cmd_load_name(s32* sp) {
 }
 
 u16 cmd_3A(s32* sp) {
-    gScript._9486 = 0;
-    gScript._9486_2 = 0;
+    gGame._9486 = 0;
+    gGame._9486_2 = 0;
     sub_0800A240(gUnknown_080C1FF0);
     sub_08009E38(&gUnknown_02016028._5778[0], 0);
     sub_0800ACA0(0);
@@ -2506,7 +2507,7 @@ _0801DC12:\n\
 	ldr r0, _0801DC94 @ =0x000003E7\n\
 	cmp r8, r0\n\
 	bhi _0801DCB0\n\
-	ldr r6, _0801DC98 @ =gScript\n\
+	ldr r6, _0801DC98 @ =gGame\n\
 	ldr r2, _0801DC9C @ =0x0000595B\n\
 	adds r0, r6, r2\n\
 	ldrb r0, [r0]\n\
@@ -2560,7 +2561,7 @@ _0801DC86:\n\
 _0801DC8C: .4byte 0xFFFF0000\n\
 _0801DC90: .4byte 0x0000FFFF\n\
 _0801DC94: .4byte 0x000003E7\n\
-_0801DC98: .4byte gScript\n\
+_0801DC98: .4byte gGame\n\
 _0801DC9C: .4byte 0x0000595B\n\
 _0801DCA0: .4byte 0x00009480\n\
 _0801DCA4: .4byte 0x00008494\n\
@@ -2607,7 +2608,7 @@ u16 cmd_3D(s32* sp) {
 	adds r1, #1\n\
 	lsls r1, r1, #3\n\
 	adds r1, r0, r1\n\
-	ldr r0, _0801DD08 @ =gScript\n\
+	ldr r0, _0801DD08 @ =gGame\n\
 	ldr r2, _0801DD0C @ =0x0000595B\n\
 	adds r0, r0, r2\n\
 	ldrb r0, [r0]\n\
@@ -2616,7 +2617,7 @@ u16 cmd_3D(s32* sp) {
 	movs r2, #2\n\
 	b _0801DD16\n\
 	.align 2, 0\n\
-_0801DD08: .4byte gScript\n\
+_0801DD08: .4byte gGame\n\
 _0801DD0C: .4byte 0x0000595B\n\
 _0801DD10:\n\
 	ldrb r0, [r4, #1]\n\
@@ -2652,7 +2653,7 @@ _0801DD42:\n\
 	adds r2, r3, #0\n\
 	adds r3, r7, #0\n\
 	bl sub_0801A434\n\
-	ldr r2, _0801DD90 @ =gScript\n\
+	ldr r2, _0801DD90 @ =gGame\n\
 	ldr r1, _0801DD94 @ =0x00005982\n\
 	adds r0, r2, r1\n\
 	strh r6, [r0]\n\
@@ -2683,7 +2684,7 @@ _0801DD8A:\n\
 	movs r0, #1\n\
 	b _0801DDAA\n\
 	.align 2, 0\n\
-_0801DD90: .4byte gScript\n\
+_0801DD90: .4byte gGame\n\
 _0801DD94: .4byte 0x00005982\n\
 _0801DD98: .4byte 0x00009480\n\
 _0801DD9C: .4byte 0x00008494\n\
@@ -2715,7 +2716,7 @@ u16 cmd_3F(s32* sp) {
     v4 = scriptstack_peek(sp, 0);
     if (v2 <= 8 && v3 <= 5) {
         for (i = 0; i <= 2; i++) {
-            if ((i || gScript._f << 0x1f) && (i != 1 || (gScript._11 << 0x1c) >= 0))
+            if ((i || gGame._f << 0x1f) && (i != 1 || (gGame._11 << 0x1c) >= 0))
                 sub_08018910(i, v2, v3, v4);
         }
     }
@@ -2768,7 +2769,7 @@ NAKED u16 cmd_pan_to_pos(s32* sp) {
 	mov r0, sp\n\
 	bl sub_0801059C\n\
 	movs r4, #0\n\
-	ldr r5, _0801DED8 @ =gScript\n\
+	ldr r5, _0801DED8 @ =gGame\n\
 _0801DE94:\n\
 	cmp r4, #0\n\
 	bne _0801DEA0\n\
@@ -2804,7 +2805,7 @@ _0801DEB6:\n\
 	.align 2, 0\n\
 _0801DED0: .4byte 0xFFFF0000\n\
 _0801DED4: .4byte 0x0000FFFF\n\
-_0801DED8: .4byte gScript\n\
+_0801DED8: .4byte gGame\n\
     ");
 }
 
@@ -2824,7 +2825,7 @@ u16 cmd_41(s32* sp) {
         sub_08036BEC(spr, &y);
         sub_08010528(&x, y.w, y.h);
         sub_0801059C(&x);
-        switch (gScript.state_1) {
+        switch (gGame.state_1) {
         case 2:
         case 3:
             v5 = sub_0801A218(&x);
@@ -2832,7 +2833,7 @@ u16 cmd_41(s32* sp) {
             break;
         case 5:
             for (i = 0; i <= 2; ++i) {
-                if ((i || gScript._f << 31) && (i != 1 || (gScript._11 << 0x1c) >= 0))
+                if ((i || gGame._f << 31) && (i != 1 || (gGame._11 << 0x1c) >= 0))
                     sub_08018988(i, v3, &x);
             }
             break;
@@ -2917,7 +2918,7 @@ _0801DFFC:\n\
 _0801E01C: .4byte 0xFFFF0000\n\
 _0801E020: .4byte 0x0000FFFF\n\
 _0801E024:\n\
-	ldr r7, _0801E08C @ =gScript\n\
+	ldr r7, _0801E08C @ =gGame\n\
 	ldr r1, _0801E090 @ =0x000067AC\n\
 	adds r0, r7, r1\n\
 	ldrh r1, [r0]\n\
@@ -2969,7 +2970,7 @@ _0801E038:\n\
 	strb r4, [r7, #0x1c]\n\
 	b _0801E0A4\n\
 	.align 2, 0\n\
-_0801E08C: .4byte gScript\n\
+_0801E08C: .4byte gGame\n\
 _0801E090: .4byte 0x000067AC\n\
 _0801E094: .4byte 0x00000326\n\
 _0801E098:\n\
@@ -2979,7 +2980,7 @@ _0801E098:\n\
 	adds r1, r6, #0\n\
 	bl sub_0801A238\n\
 _0801E0A4:\n\
-	ldr r0, _0801E0C4 @ =gScript\n\
+	ldr r0, _0801E0C4 @ =gGame\n\
 	ldr r1, _0801E0C8 @ =0x00009480\n\
 	adds r0, r0, r1\n\
 	ldrb r1, [r0]\n\
@@ -2992,7 +2993,7 @@ _0801E0A4:\n\
 	bl sub_08005C14\n\
 	b _0801E0D0\n\
 	.align 2, 0\n\
-_0801E0C4: .4byte gScript\n\
+_0801E0C4: .4byte gGame\n\
 _0801E0C8: .4byte 0x00009480\n\
 _0801E0CC:\n\
 	bl sub_0801084C\n\
@@ -3098,11 +3099,11 @@ u16 cmd_cam_follow_sprite(s32* sp) {
 
     idx = scriptstack_peek(sp, 0);
     if (idx == -2) {
-        gScript.cam_target = -1;
+        gGame.cam_target = -1;
     } else {
         spr = get_obj(idx);
         if (spr != 0) {
-            gScript.cam_target = spr->character;
+            gGame.cam_target = spr->character;
         }
     }
     return 0;
@@ -3142,7 +3143,7 @@ _0801E32E:\n\
 	movs r3, #0\n\
 	adds r6, r0, #0\n\
 	mov r4, sp\n\
-	ldr r7, _0801E388 @ =gScript\n\
+	ldr r7, _0801E388 @ =gGame\n\
 	adds r5, r6, #0\n\
 _0801E342:\n\
 	lsls r1, r3, #3\n\
@@ -3179,7 +3180,7 @@ _0801E342:\n\
 	bl sub_08005900\n\
 	b _0801E3BC\n\
 	.align 2, 0\n\
-_0801E388: .4byte gScript\n\
+_0801E388: .4byte gGame\n\
 _0801E38C: .4byte 0x000058E5\n\
 _0801E390:\n\
 	mov r0, sp\n\
@@ -3217,10 +3218,10 @@ _0801E3CC: .4byte 0x000121BB\n\
 }
 
 u16 cmd_4B(s32* sp) {
-    scriptstack_set(sp, 3, gScript.last_room);
-    scriptstack_set(sp, 2, gScript._5982);
-    scriptstack_set(sp, 1, gScript._5984);
-    scriptstack_set(sp, 0, gScript._5986);
+    scriptstack_set(sp, 3, gGame.last_room);
+    scriptstack_set(sp, 2, gGame._5982);
+    scriptstack_set(sp, 1, gGame._5984);
+    scriptstack_set(sp, 0, gGame._5986);
     return 0;
 }
 
@@ -3278,7 +3279,7 @@ u16 cmd_4D(s32* sp) {
 	cmp r5, r0\n\
 	bne _0801E518\n\
 	movs r4, #0\n\
-	ldr r5, _0801E514 @ =gScript\n\
+	ldr r5, _0801E514 @ =gGame\n\
 	lsls r6, r1, #0x10\n\
 _0801E4DC:\n\
 	cmp r4, #0\n\
@@ -3309,7 +3310,7 @@ _0801E4FE:\n\
 	.align 2, 0\n\
 _0801E50C: .4byte 0xFFFF0000\n\
 _0801E510: .4byte 0x0000FFFF\n\
-_0801E514: .4byte gScript\n\
+_0801E514: .4byte gGame\n\
 _0801E518:\n\
 	lsls r0, r5, #0x10\n\
 	lsrs r0, r0, #0x10\n\
@@ -3342,7 +3343,7 @@ u16 cmd_4E(s32* sp) {
 }
 
 u16 cmd_4F(s32* sp) {
-    gScript._67c0 = scriptstack_peek(sp, 0);
+    gGame._67c0 = scriptstack_peek(sp, 0);
     return 0;
 }
 
@@ -3350,7 +3351,7 @@ u16 cmd_CC(s32* sp) {
     u16 temp;
 
     temp = scriptstack_peek(sp, 0);
-    gScript._67c4_10 = 0;
+    gGame._67c4_10 = 0;
     sub_08012C48(temp);
     return 0;
 }
@@ -3359,7 +3360,7 @@ u16 cmd_CD(s32* sp) {
     s32 temp;
 
     temp = scriptstack_peek(sp, 0);
-    if (gScript.state_1 == 5) {
+    if (gGame.state_1 == 5) {
         sub_08012D50(temp);
     } else {
         sub_08012CEC(temp);
@@ -3402,7 +3403,7 @@ u16 cmd_EB(s32* sp) {
 	rsbs r0, r0, #0\n\
 	cmp r4, r0\n\
 	bne _0801E6F4\n\
-	ldr r4, _0801E6E4 @ =gScript\n\
+	ldr r4, _0801E6E4 @ =gGame\n\
 	ldr r1, _0801E6E8 @ =0x000067AC\n\
 	adds r0, r4, r1\n\
 	ldrh r0, [r0]\n\
@@ -3440,12 +3441,12 @@ _0801E6D6:\n\
 	bls _0801E6CC\n\
 	b _0801E716\n\
 	.align 2, 0\n\
-_0801E6E4: .4byte gScript\n\
+_0801E6E4: .4byte gGame\n\
 _0801E6E8: .4byte 0x000067AC\n\
 _0801E6EC: .4byte 0x000067C5\n\
 _0801E6F0: .4byte 0x000058B0\n\
 _0801E6F4:\n\
-	ldr r3, _0801E720 @ =gScript\n\
+	ldr r3, _0801E720 @ =gGame\n\
 	ldr r1, _0801E724 @ =0x000067C5\n\
 	adds r2, r3, r1\n\
 	ldrb r0, [r2]\n\
@@ -3468,7 +3469,7 @@ _0801E716:\n\
 	pop {r1}\n\
 	bx r1\n\
 	.align 2, 0\n\
-_0801E720: .4byte gScript\n\
+_0801E720: .4byte gGame\n\
 _0801E724: .4byte 0x000067C5\n\
 _0801E728: .4byte 0x000067C2\n\
     ");
@@ -3546,7 +3547,7 @@ u16 cmd_play_anim(s32* sp) {
     if (!loop) {
         sub_08033484(obj->character);
     }
-    if (gScript.cur_room == 632) {  // osohe mirror room?
+    if (gGame.cur_room == 632) {  // osohe mirror room?
         if (anim - 1 == sub_08035C0C(obj->_86, obj->_88, 4)) {
             sub_08036BA4(obj);
         } else if (anim - 1 == sub_08035C0C(obj->_86, obj->_88, 0)) {
@@ -3945,10 +3946,10 @@ u16 cmd_5A(s32* sp) {
     if (idx == -2) {
         switch (a) {
         case 0:
-            gScript._82b6 = 0;
+            gGame._82b6 = 0;
             break;
         case 1:
-            gScript._82b6 = 1;
+            gGame._82b6 = 1;
             break;
         case 2 ... 7:
             sub_08033B20(a);

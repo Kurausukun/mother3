@@ -17,7 +17,7 @@ enum Mode {
     MODE_DEBUG_MENU = 0xF,
 };
 
-struct Script {
+struct Game {
     u8 mode;
     u8 _1[0xe];
     u8 _f;
@@ -84,9 +84,10 @@ struct Script {
     u8 _8494_4 : 1;
     u8 _8495;
     u8 _8496[0x26];
-    u8* _84bc;
+    u8* script_pc;
     void* _84c0;
-    s32 stack[0x3EA];
+    s32 stack[1000];
+    u16 registers[4];
     s32 _946c;
     u16* _9470;
     u16 sp;
@@ -113,6 +114,6 @@ struct Script {
     u16 _948c[1092];
     u8 battle_mode;
 };
-Script gScript;
+Game gGame;
 
 #endif  // OVERWORLD_SCRIPT_H
