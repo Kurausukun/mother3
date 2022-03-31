@@ -83,11 +83,13 @@ struct Script {
     u8 _8494_2 : 1;
     u8 _8494_4 : 1;
     u8 _8495;
-    u8 _8496[0x2E];
+    u8 _8496[0x26];
+    u8* _84bc;
+    void* _84c0;
     s32 stack[0x3EA];
     s32 _946c;
     u16* _9470;
-    u16 _9474;
+    u16 sp;
     u16 _0476;
     u16 _0478;
     u16 delay;
@@ -108,7 +110,7 @@ struct Script {
     u8 _9486_2 : 1;
     u8 _9487;
     u32 _9488;
-    u8 _948c[2184];
+    u16 _948c[1092];
     u8 battle_mode;
 };
 Script gScript;

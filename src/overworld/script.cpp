@@ -8,11 +8,220 @@ extern u32 gUnknown_03005314;
 extern u8 gUnknown_02005080;
 extern u8 gUnknown_080C1FF0[];
 
+NONMATCH("asm/non_matching/script/exec_cmd.inc", void exec_cmd(void* script, u16* unk)) {
+    void* v1 = script;
+    void* v2 = script;
+    u32 argc;
+    u32 tmp;
+
+    union {
+        struct {
+            s32 val;
+        } onearg;
+        struct {
+            u8 u8val;
+            u16 u16val;
+        } twoarg;
+        s32 raw;
+    };
+
+    if (gScript.state_10) {
+        v1 = sub_08027E60();
+        v2 = gScript._84c0;
+    }
+    gScript._84c0 = v2;
+    gScript._9470 = unk;
+
+    u16 sp = gScript.sp;
+    bool ok = false;
+    do {
+        gScript._84bc = sub_08021878(v2, &onearg.val, unk);
+        switch (*gScript._84bc) {
+        case 0x0:
+            gScript.stack[sp] = gScript.stack[gScript._948c[twoarg.u8val] + (u16)(raw >> 8)];
+            sp++;
+            break;
+        case 0x1:
+            gScript.stack[sp] = raw;
+            sp++;
+            break;
+        case 0x2:
+            gScript.stack[sp] = gScript._948c[twoarg.u8val] + (u16)(raw >> 8);
+            sp++;
+            break;
+        case 0x3:
+            sp--;
+            gScript.stack[gScript._948c[twoarg.u8val] + (u16)(raw >> 8)] = gScript.stack[sp];
+            break;
+        case 0x4:
+            gScript.state_40 = 0;
+            gScript.sp = sp;
+            argc = sub_08021920((u16)(raw >> 8));
+            ok = exec_extended((u16)(raw >> 8), &gScript.stack[sp - 1]);
+            if (gScript.state_20) {
+                return;
+            }
+            if (!gScript.state_40) {
+                u32 temp;
+                u32 x;
+                if (gScript.sp != sp) {
+                    x = 1;
+                    sp = gScript.sp - 1;
+                    temp = gScript.stack[sp];
+                } else {
+                    x = 0;
+                    temp = 0;
+                }
+                sp -= argc;
+                if (x) {
+                    gScript.stack[sp] = temp;
+                    sp++;
+                }
+            }
+            break;
+        case 0x5:
+            gScript.state_10 = 1;
+            v2 = sub_08027E60();
+            goto CASE_7;
+            // gScript.stack[sp] = gScript._948c[raw - 19];
+            // gScript.stack[sp + 1] = *unk;
+            // gScript._948c[raw - 19] = sp;
+            // *unk = (u16)(raw >> 8);
+            break;
+        case 0x6:
+            gScript.state_10 = 0;
+            tmp = gScript.stack[(u16)(sp - 1)];
+            sp = gScript._948c[twoarg.u8val];
+            gScript._948c[twoarg.u8val] = gScript.stack[sp];
+            *unk = gScript.stack[sp];
+            sp -= (u16)((u32)raw >> 8);
+            gScript.stack[sp] = tmp;
+            sp++;
+            v2 = gScript._84c0;
+            break;
+        case 0x7:
+        CASE_7:
+            gScript.stack[sp] = gScript._948c[raw - 19];
+            gScript.stack[sp + 1] = *unk;
+            gScript._948c[raw - 19] = sp;
+            *unk = (u16)(raw >> 8);
+            break;
+        case 0x8:
+            tmp = gScript.stack[sp - 1];
+            sp = gScript._948c[twoarg.u8val];
+            gScript._948c[twoarg.u8val] = gScript.stack[sp];
+            *unk = gScript.stack[sp + 1];
+            sp -= (u16)(raw >> 8);
+            gScript.stack[sp] = tmp;
+            sp++;
+            if (gScript.stack[sp + 1] == 0) {
+                ok = 1;
+                sub_0801BF18();
+            }
+            break;
+        case 0x9:
+            ok = 1;
+            sub_0801BF18();
+            break;
+        case 0xA:
+            *(u16*)&gScript.stack[1000] = raw;
+            break;
+        case 0xB:
+            sp += raw;
+            break;
+        case 0xC:
+            *unk = raw >> 8;
+            break;
+        case 0xD:
+            sp--;
+            if (gScript.stack[sp] == 0) {
+                *unk = raw >> 8;
+            }
+            break;
+        case 0xE:
+            switch (raw) {
+            case 0:
+                gScript.stack[sp - 1] = -gScript.stack[sp - 1];
+                break;
+            case 1:
+                sp--;
+                gScript.stack[sp - 1] += gScript.stack[sp];
+                break;
+            case 2:
+                sp--;
+                gScript.stack[sp - 1] -= gScript.stack[sp];
+                break;
+            case 3:
+                sp--;
+                gScript.stack[sp - 1] *= gScript.stack[sp];
+                break;
+            case 4:
+                sp--;
+                gScript.stack[sp - 1] /= gScript.stack[sp];
+                break;
+            case 5:
+                sp--;
+                gScript.stack[sp - 1] %= gScript.stack[sp];
+                break;
+            case 6:
+                gScript.stack[sp - 1]++;
+                break;
+            case 7:
+                gScript.stack[sp - 1]--;
+                break;
+            case 8:
+                sp--;
+                gScript.stack[sp - 1] &= gScript.stack[sp];
+                break;
+            case 9:
+                sp--;
+                gScript.stack[sp - 1] |= gScript.stack[sp];
+                break;
+            case 0xA:
+                sp--;
+                gScript.stack[sp - 1] = gScript.stack[sp - 1] == gScript.stack[sp];
+                break;
+            case 0xB:
+                sp--;
+                gScript.stack[sp - 1] = gScript.stack[sp - 1] != gScript.stack[sp];
+                break;
+            case 0xC:
+                sp--;
+                gScript.stack[sp - 1] = gScript.stack[sp - 1] < gScript.stack[sp];
+                break;
+            case 0xD:
+                sp--;
+                gScript.stack[sp - 1] = gScript.stack[sp] > gScript.stack[sp - 1];
+                break;
+            case 0xE:
+                sp--;
+                gScript.stack[sp - 1] = gScript.stack[sp - 1] <= gScript.stack[sp];
+                break;
+            case 0xF:
+                sp--;
+                gScript.stack[sp - 1] = gScript.stack[sp] <= gScript.stack[sp - 1];
+                break;
+            case 0x10:
+                gScript.stack[sp - 1] = gScript.stack[sp];
+                sp++;
+                break;
+            case 0x11:
+            case 0x12:
+                sp--;
+                break;
+            }
+            break;
+        }
+    } while (!ok);
+    gScript.sp = sp;
+}
+END_NONMATCH
+
 // verify if function name is accurate
 inline void scriptstack_pop() {
     (*gScript._9470)--;
-    gScript.stack[gScript._9474] = gScript.stack[gScript._9474 - 1];
-    gScript._9474++;
+    gScript.stack[gScript.sp] = gScript.stack[gScript.sp - 1];
+    gScript.sp++;
 }
 
 u16 exec_extended(u16 cmd, s32* sp) {
@@ -3337,7 +3546,7 @@ u16 cmd_play_anim(s32* sp) {
     if (!loop) {
         sub_08033484(obj->character);
     }
-    if (gScript.cur_room == 632) { // osohe mirror room?
+    if (gScript.cur_room == 632) {  // osohe mirror room?
         if (anim - 1 == sub_08035C0C(obj->_86, obj->_88, 4)) {
             sub_08036BA4(obj);
         } else if (anim - 1 == sub_08035C0C(obj->_86, obj->_88, 0)) {
@@ -3756,7 +3965,7 @@ u16 cmd_5A(s32* sp) {
 
 NAKED
 u16 cmd_5B(s32* sp) {
-	asm_unified("\n\
+    asm_unified("\n\
 	push {r4, r5, r6, r7, lr}\n\
 	mov r7, sb\n\
 	mov r6, r8\n\
@@ -3960,5 +4169,4 @@ u16 cmd_set_member_sprite(s32* sp) {
     }
     return 0;
 }
-
 }

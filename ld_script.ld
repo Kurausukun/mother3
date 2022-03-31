@@ -163,9 +163,10 @@ SECTIONS
      } >rom = 0
 
     endl__FR7ostream = 0;
+    .LI1_809 = 0;
 
     ROM_END = .;
-    
+
     /* DWARF debug sections.
        Symbols in the DWARF debugging sections are relative to the beginning
        of the section so we begin them at 0.  */
