@@ -6130,7 +6130,7 @@ _08003F9E:
 	b _08004028
 _08003FA8:
 	bl sub_08007398
-	ldr r4, _08003FE4 @ =gScript
+	ldr r4, _08003FE4 @ =gGame
 	ldr r1, _08003FE8 @ =0x00008299
 	adds r0, r4, r1
 	movs r1, #0
@@ -6156,7 +6156,7 @@ _08003FA8:
 	bl sub_08001B18
 	b _08004028
 	.align 2, 0
-_08003FE4: .4byte gScript
+_08003FE4: .4byte gGame
 _08003FE8: .4byte 0x00008299
 _08003FEC: .4byte 0x00008370
 _08003FF0: .4byte 0x00008494
@@ -6164,7 +6164,7 @@ _08003FF4: .4byte gUnknown_02004CE2
 _08003FF8: .4byte 0x00009C88
 _08003FFC:
 	bl sub_08007398
-	ldr r1, _08004034 @ =gScript
+	ldr r1, _08004034 @ =gGame
 	ldr r2, _08004038 @ =0x00008299
 	adds r0, r1, r2
 	movs r2, #0
@@ -6188,7 +6188,7 @@ _08004028:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08004034: .4byte gScript
+_08004034: .4byte gGame
 _08004038: .4byte 0x00008299
 _0800403C: .4byte 0x00008370
 _08004040: .4byte 0x00008494
@@ -6232,7 +6232,7 @@ sub_0800408C: @ 0x0800408C
 	movs r0, #0
 	bl get_obj_direct
 	ldr r2, _080040E8 @ =gSave
-	ldr r0, _080040EC @ =gScript
+	ldr r0, _080040EC @ =gGame
 	ldr r1, _080040F0 @ =0x000067AC
 	adds r0, r0, r1
 	ldrh r1, [r0]
@@ -6274,7 +6274,7 @@ _080040B0:
 	b _08004104
 	.align 2, 0
 _080040E8: .4byte gSave
-_080040EC: .4byte gScript
+_080040EC: .4byte gGame
 _080040F0: .4byte 0x000067AC
 _080040F4: .4byte 0x00000236
 _080040F8: .4byte 0x00000222
@@ -6315,7 +6315,7 @@ sub_08004114: @ 0x08004114
 	ldrb r0, [r5]
 	cmp r0, #1
 	bne _08004168
-	ldr r0, _08004160 @ =gScript
+	ldr r0, _08004160 @ =gGame
 	ldr r1, _08004164 @ =0x000067AC
 	adds r0, r0, r1
 	ldrh r0, [r0]
@@ -6328,10 +6328,10 @@ _08004150: .4byte 0x04000208
 _08004154: .4byte 0x04000200
 _08004158: .4byte 0x04000004
 _0800415C: .4byte gUnknown_02005080
-_08004160: .4byte gScript
+_08004160: .4byte gGame
 _08004164: .4byte 0x000067AC
 _08004168:
-	ldr r4, _080041E0 @ =gScript
+	ldr r4, _080041E0 @ =gGame
 	ldr r2, _080041E4 @ =0x000067AC
 	adds r0, r4, r2
 	ldrh r0, [r0]
@@ -6350,7 +6350,7 @@ _08004168:
 	bl sub_08003ECC
 _0800418E:
 	ldr r4, _080041EC @ =gUnknown_02016028
-	ldr r5, _080041E0 @ =gScript
+	ldr r5, _080041E0 @ =gGame
 	ldr r1, _080041F0 @ =0x0000679C
 	adds r0, r5, r1
 	ldrh r0, [r0]
@@ -6391,7 +6391,7 @@ _080041D8:
 	beq _0800429C
 	b _080043DA
 	.align 2, 0
-_080041E0: .4byte gScript
+_080041E0: .4byte gGame
 _080041E4: .4byte 0x000067AC
 _080041E8: .4byte 0x00008494
 _080041EC: .4byte gUnknown_02016028
@@ -6417,7 +6417,7 @@ _08004214:
 	beq _08004220
 	b _080043DA
 _08004220:
-	ldr r1, _0800423C @ =gScript
+	ldr r1, _0800423C @ =gGame
 	ldr r2, _08004240 @ =0x00008496
 	adds r0, r1, r2
 	ldrb r0, [r0]
@@ -6430,7 +6430,7 @@ _08004220:
 	b _080043D6
 	.align 2, 0
 _08004238: .4byte 0x000067AC
-_0800423C: .4byte gScript
+_0800423C: .4byte gGame
 _08004240: .4byte 0x00008496
 _08004244: .4byte 0x00009485
 _08004248:
@@ -6585,13 +6585,13 @@ _08004394:
 	ands r1, r0
 	cmp r1, #0
 	beq _080043B8
-	ldr r1, _080043B4 @ =gScript
+	ldr r1, _080043B4 @ =gGame
 	movs r0, #0xe
 	b _080043D8
 	.align 2, 0
 _080043AC: .4byte gUnknown_02016028
 _080043B0: .4byte 0x000035BA
-_080043B4: .4byte gScript
+_080043B4: .4byte gGame
 _080043B8:
 	ldrb r0, [r2]
 	cmp r0, #4
@@ -6606,7 +6606,7 @@ _080043B8:
 	.align 2, 0
 _080043D0: .4byte gUnknown_020051E8
 _080043D4:
-	ldr r1, _080043E0 @ =gScript
+	ldr r1, _080043E0 @ =gGame
 _080043D6:
 	movs r0, #0
 _080043D8:
@@ -6615,7 +6615,7 @@ _080043DA:
 	ldr r4, _080043E4 @ =gUnknown_020051E4
 	b _080043EC
 	.align 2, 0
-_080043E0: .4byte gScript
+_080043E0: .4byte gGame
 _080043E4: .4byte gUnknown_020051E4
 _080043E8:
 	bl sub_0800444C
@@ -6663,7 +6663,7 @@ _08004448: .4byte 0x0000FFE7
 	thumb_func_start sub_0800444C
 sub_0800444C: @ 0x0800444C
 	push {r4, lr}
-	ldr r4, _080044A0 @ =gScript
+	ldr r4, _080044A0 @ =gGame
 	ldr r0, _080044A4 @ =0x00009D14
 	adds r2, r4, r0
 	ldrb r1, [r2]
@@ -6703,7 +6703,7 @@ sub_0800444C: @ 0x0800444C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080044A0: .4byte gScript
+_080044A0: .4byte gGame
 _080044A4: .4byte 0x00009D14
 _080044A8: .4byte 0x000067C4
 _080044AC: .4byte 0x000067AC
@@ -6713,7 +6713,7 @@ _080044B4: .4byte gUnknown_03005314
 	thumb_func_start sub_080044B8
 sub_080044B8: @ 0x080044B8
 	push {r4, r5, r6, lr}
-	ldr r3, _08004514 @ =gScript
+	ldr r3, _08004514 @ =gGame
 	ldr r0, _08004518 @ =0x00009D14
 	adds r2, r3, r0
 	ldrb r0, [r2]
@@ -6746,7 +6746,7 @@ _080044F6:
 	cmp r0, #0
 	beq _080044D8
 _080044FE:
-	ldr r0, _08004514 @ =gScript
+	ldr r0, _08004514 @ =gGame
 	ldr r1, _08004518 @ =0x00009D14
 	adds r0, r0, r1
 	ldrb r2, [r0]
@@ -6758,7 +6758,7 @@ _080044FE:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08004514: .4byte gScript
+_08004514: .4byte gGame
 _08004518: .4byte 0x00009D14
 
 	thumb_func_start sub_0800451C
@@ -6849,7 +6849,7 @@ _080045BA:
 	ldrh r0, [r2]
 	strh r0, [r1]
 	bl sub_080037D8
-	ldr r4, _08004654 @ =gScript
+	ldr r4, _08004654 @ =gGame
 	ldr r0, _08004658 @ =0x00009D14
 	adds r5, r4, r0
 	ldrb r1, [r5]
@@ -6897,7 +6897,7 @@ _08004644: .4byte 0x000121B6
 _08004648: .4byte 0x04000130
 _0800464C: .4byte 0x000003FF
 _08004650: .4byte gUnknown_02018CC8
-_08004654: .4byte gScript
+_08004654: .4byte gGame
 _08004658: .4byte 0x00009D14
 _0800465C: .4byte 0x000082B9
 
@@ -6910,7 +6910,7 @@ sub_08004660: @ 0x08004660
 	mov r1, sp
 	strh r0, [r1]
 	bl sub_08004F7C
-	ldr r6, _08004724 @ =gScript
+	ldr r6, _08004724 @ =gGame
 	ldr r0, _08004728 @ =0x00008494
 	adds r0, r0, r6
 	mov r8, r0
@@ -6991,7 +6991,7 @@ _080046C8:
 	strb r1, [r0]
 	b _08004764
 	.align 2, 0
-_08004724: .4byte gScript
+_08004724: .4byte gGame
 _08004728: .4byte 0x00008494
 _0800472C: .4byte 0x00000315
 _08004730: .4byte 0x0000595C
@@ -7012,7 +7012,7 @@ _08004754:
 	strb r0, [r6]
 	bl sub_08013D38
 _08004764:
-	ldr r1, _0800477C @ =gScript
+	ldr r1, _0800477C @ =gGame
 	ldr r2, _08004780 @ =0x00008494
 	adds r0, r1, r2
 	ldrb r0, [r0]
@@ -7020,12 +7020,12 @@ _08004764:
 	cmp r0, #0
 	beq _08004784
 _08004772:
-	ldr r1, _0800477C @ =gScript
+	ldr r1, _0800477C @ =gGame
 	movs r0, #1
 	strb r0, [r1]
 	b _08004786
 	.align 2, 0
-_0800477C: .4byte gScript
+_0800477C: .4byte gGame
 _08004780: .4byte 0x00008494
 _08004784:
 	strb r7, [r1]
@@ -7068,7 +7068,7 @@ sub_08004794: @ 0x08004794
 	orrs r0, r1
 	strh r0, [r2]
 	strh r3, [r5]
-	ldr r5, _080048B0 @ =gScript
+	ldr r5, _080048B0 @ =gGame
 	ldrb r7, [r5]
 	ldr r1, _080048B4 @ =0x00005962
 	adds r0, r5, r1
@@ -7130,7 +7130,7 @@ _0800483C:
 	cmp r4, r5
 	blo _0800483C
 _08004852:
-	ldr r4, _080048B0 @ =gScript
+	ldr r4, _080048B0 @ =gGame
 	movs r0, #2
 	strb r0, [r4]
 	bl sub_08013EB8
@@ -7169,7 +7169,7 @@ _08004852:
 _080048A4: .4byte 0x04000208
 _080048A8: .4byte 0x04000200
 _080048AC: .4byte 0x04000004
-_080048B0: .4byte gScript
+_080048B0: .4byte gGame
 _080048B4: .4byte 0x00005962
 _080048B8: .4byte 0x00005960
 _080048BC: .4byte 0x0000595C
@@ -7185,7 +7185,7 @@ _080048E0:
 	strb r7, [r4]
 _080048E2:
 	ldr r2, _0800492C @ =gUnknown_02016028
-	ldr r1, _08004930 @ =gScript
+	ldr r1, _08004930 @ =gGame
 	ldr r3, _08004934 @ =0x0000679C
 	adds r0, r1, r3
 	ldrh r0, [r0]
@@ -7222,7 +7222,7 @@ _080048E2:
 	bx r0
 	.align 2, 0
 _0800492C: .4byte gUnknown_02016028
-_08004930: .4byte gScript
+_08004930: .4byte gGame
 _08004934: .4byte 0x0000679C
 _08004938: .4byte 0x0000679E
 _0800493C: .4byte 0x000067A0
@@ -7259,7 +7259,7 @@ sub_0800494C: @ 0x0800494C
 	orrs r0, r1
 	strh r0, [r2]
 	strh r4, [r3]
-	ldr r3, _080049D4 @ =gScript
+	ldr r3, _080049D4 @ =gGame
 	ldrb r0, [r3]
 	mov sl, r0
 	movs r1, #0
@@ -7297,7 +7297,7 @@ sub_0800494C: @ 0x0800494C
 _080049C8: .4byte 0x04000208
 _080049CC: .4byte 0x04000200
 _080049D0: .4byte 0x04000004
-_080049D4: .4byte gScript
+_080049D4: .4byte gGame
 _080049D8: .4byte 0x000067C4
 _080049DC: .4byte gUnknown_02016028
 _080049E0: .4byte 0x00011D16
@@ -7390,7 +7390,7 @@ _08004A8C:
 	cmp r5, r1
 	bhs _08004B08
 	mov sb, r0
-	ldr r4, _08004B80 @ =gScript
+	ldr r4, _08004B80 @ =gGame
 	ldr r2, _08004B84 @ =0x000083B0
 	adds r2, r2, r4
 	mov r8, r2
@@ -7451,7 +7451,7 @@ _08004B08:
 	movs r1, #0x80
 	lsls r1, r1, #4
 	bl memclear
-	ldr r0, _08004B80 @ =gScript
+	ldr r0, _08004B80 @ =gGame
 	movs r4, #0
 	mov r1, sl
 	strb r1, [r0]
@@ -7495,7 +7495,7 @@ _08004B08:
 _08004B74: .4byte gUnknown_02016028
 _08004B78: .4byte 0x000053A0
 _08004B7C: .4byte 0x000121BB
-_08004B80: .4byte gScript
+_08004B80: .4byte gGame
 _08004B84: .4byte 0x000083B0
 _08004B88: .4byte 0x000067C4
 _08004B8C: .4byte 0x0000FFE1
@@ -7535,7 +7535,7 @@ sub_08004BB8: @ 0x08004BB8
 	orrs r0, r1
 	strh r0, [r2]
 	strh r3, [r4]
-	ldr r2, _08004C98 @ =gScript
+	ldr r2, _08004C98 @ =gGame
 	ldrb r7, [r2]
 	movs r0, #4
 	strb r0, [r2]
@@ -7578,7 +7578,7 @@ _08004C30:
 	movs r1, #0x80
 	lsls r1, r1, #4
 	bl memclear
-	ldr r0, _08004C98 @ =gScript
+	ldr r0, _08004C98 @ =gGame
 	movs r4, #0
 	strb r7, [r0]
 	ldr r0, _08004CA0 @ =gUnknown_02016028
@@ -7616,7 +7616,7 @@ _08004C30:
 _08004C8C: .4byte 0x04000208
 _08004C90: .4byte 0x04000200
 _08004C94: .4byte 0x04000004
-_08004C98: .4byte gScript
+_08004C98: .4byte gGame
 _08004C9C: .4byte 0x000067C4
 _08004CA0: .4byte gUnknown_02016028
 _08004CA4: .4byte 0x00011D16
@@ -7650,7 +7650,7 @@ sub_08004CB8: @ 0x08004CB8
 	orrs r0, r1
 	strh r0, [r2]
 	strh r3, [r5]
-	ldr r2, _08004D24 @ =gScript
+	ldr r2, _08004D24 @ =gGame
 	ldrb r6, [r2]
 	movs r0, #5
 	strb r0, [r2]
@@ -7676,7 +7676,7 @@ sub_08004CB8: @ 0x08004CB8
 _08004D18: .4byte 0x04000208
 _08004D1C: .4byte 0x04000200
 _08004D20: .4byte 0x04000004
-_08004D24: .4byte gScript
+_08004D24: .4byte gGame
 _08004D28: .4byte 0x000067C4
 _08004D2C: .4byte gUnknown_02016028
 _08004D30: .4byte 0x00011D16
@@ -7752,7 +7752,7 @@ _08004DA6:
 	movs r1, #0x80
 	lsls r1, r1, #4
 	bl memclear
-	ldr r1, _08004E48 @ =gScript
+	ldr r1, _08004E48 @ =gGame
 	movs r4, #0
 	strb r6, [r1]
 	ldr r2, _08004E4C @ =0x000067C4
@@ -7799,7 +7799,7 @@ _08004E38: .4byte gUnknown_02016028
 _08004E3C: .4byte 0x00002CA0
 _08004E40: .4byte 0x06008000
 _08004E44: .4byte 0x06006000
-_08004E48: .4byte gScript
+_08004E48: .4byte gGame
 _08004E4C: .4byte 0x000067C4
 _08004E50: .4byte 0x00011D16
 _08004E54: .4byte 0x000121B8
@@ -7811,7 +7811,7 @@ _08004E60: .4byte 0x04000004
 sub_08004E64: @ 0x08004E64
 	push {r4, r5, r6, lr}
 	sub sp, #8
-	ldr r0, _08004F5C @ =gScript
+	ldr r0, _08004F5C @ =gGame
 	ldrb r6, [r0]
 	movs r3, #0
 	ldr r4, _08004F60 @ =gUnknown_02016028
@@ -7857,7 +7857,7 @@ _08004E74:
 	ldr r2, _08004F6C @ =0x000121BE
 	adds r0, r4, r2
 	strh r1, [r0]
-	ldr r4, _08004F5C @ =gScript
+	ldr r4, _08004F5C @ =gGame
 	ldr r1, _08004F70 @ =0x0000829B
 	adds r0, r4, r1
 	ldrb r0, [r0]
@@ -7912,7 +7912,7 @@ _08004F0E:
 	movs r2, #1
 	orrs r0, r2
 	strb r0, [r1]
-	ldr r3, _08004F5C @ =gScript
+	ldr r3, _08004F5C @ =gGame
 	ldr r1, _08004F74 @ =0x00009D14
 	adds r2, r3, r1
 	ldrb r1, [r2]
@@ -7927,7 +7927,7 @@ _08004F0E:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08004F5C: .4byte gScript
+_08004F5C: .4byte gGame
 _08004F60: .4byte gUnknown_02016028
 _08004F64: .4byte 0x000121B9
 _08004F68: .4byte 0x00003684
@@ -7939,7 +7939,7 @@ _08004F78: .4byte 0x000121B8
 	thumb_func_start sub_08004F7C
 sub_08004F7C: @ 0x08004F7C
 	push {r4, lr}
-	ldr r0, _08004FAC @ =gScript
+	ldr r0, _08004FAC @ =gGame
 	ldr r1, _08004FB0 @ =0x00008494
 	adds r2, r0, r1
 	ldrb r1, [r2]
@@ -7961,7 +7961,7 @@ _08004FA4:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08004FAC: .4byte gScript
+_08004FAC: .4byte gGame
 _08004FB0: .4byte 0x00008494
 
 	thumb_func_start sub_08004FB4
@@ -7971,7 +7971,7 @@ sub_08004FB4: @ 0x08004FB4
 	ldr r4, _08004FE8 @ =gUnknown_02018CC8
 	adds r0, r4, #0
 	bl sub_0800164C
-	ldr r1, _08004FEC @ =gScript
+	ldr r1, _08004FEC @ =gGame
 	ldrb r0, [r1]
 	cmp r0, #2
 	bne _08004FF4
@@ -7990,7 +7990,7 @@ sub_08004FB4: @ 0x08004FB4
 	b _080050E6
 	.align 2, 0
 _08004FE8: .4byte gUnknown_02018CC8
-_08004FEC: .4byte gScript
+_08004FEC: .4byte gGame
 _08004FF0: .4byte 0xFFFFD360
 _08004FF4:
 	cmp r0, #3
@@ -8082,7 +8082,7 @@ _080050AE:
 	ldr r4, _080050F0 @ =gUnknown_02018CC8
 	adds r0, r4, #0
 	bl nullsub_2
-	ldr r5, _080050F4 @ =gScript
+	ldr r5, _080050F4 @ =gGame
 	ldrb r1, [r5, #1]
 	movs r0, #5
 	ands r0, r1
@@ -8109,7 +8109,7 @@ _080050E6:
 	.align 2, 0
 _080050EC: .4byte 0xFFFFD360
 _080050F0: .4byte gUnknown_02018CC8
-_080050F4: .4byte gScript
+_080050F4: .4byte gGame
 _080050F8: .4byte 0x00009D14
 
 	thumb_func_start nullsub_1
@@ -8127,7 +8127,7 @@ exec_mode: @ 0x08005104
 	push {r4, lr}
 	adds r4, r0, #0
 	bl sub_080016E4
-	ldr r0, _08005120 @ =gScript
+	ldr r0, _08005120 @ =gGame
 	ldrb r0, [r0]
 	cmp r0, #0xf
 	bhi _08005196
@@ -8137,7 +8137,7 @@ exec_mode: @ 0x08005104
 	ldr r0, [r0]
 	mov pc, r0
 	.align 2, 0
-_08005120: .4byte gScript
+_08005120: .4byte gGame
 _08005124: .4byte _08005128
 _08005128: @ jump table
 	.4byte _08005168 @ case 0
@@ -8187,7 +8187,7 @@ _08005196:
 	thumb_func_start sub_0800519C
 sub_0800519C: @ 0x0800519C
 	push {lr}
-	ldr r1, _080051CC @ =gScript
+	ldr r1, _080051CC @ =gGame
 	ldrb r2, [r1, #1]
 	movs r0, #5
 	rsbs r0, r0, #0
@@ -8209,7 +8209,7 @@ sub_0800519C: @ 0x0800519C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080051CC: .4byte gScript
+_080051CC: .4byte gGame
 _080051D0: .4byte 0x0000844C
 _080051D4: .4byte 0x0000844E
 _080051D8: .4byte gUnknown_02016028
@@ -8342,7 +8342,7 @@ sub_080052E4: @ 0x080052E4
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	adds r3, r0, #0
-	ldr r4, _08005314 @ =gScript
+	ldr r4, _08005314 @ =gGame
 	ldr r0, _08005318 @ =0x00009D14
 	adds r2, r4, r0
 	ldrb r0, [r2]
@@ -8362,7 +8362,7 @@ sub_080052E4: @ 0x080052E4
 	movs r0, #0x14
 	b _08005340
 	.align 2, 0
-_08005314: .4byte gScript
+_08005314: .4byte gGame
 _08005318: .4byte 0x00009D14
 _0800531C: .4byte gUnknown_020051E4
 _08005320: .4byte 0x0000595C
@@ -8454,7 +8454,7 @@ sub_080053D0: @ 0x080053D0
 	push {lr}
 	bl snd_vsync
 	bl sub_080058D8
-	ldr r1, _080053FC @ =gScript
+	ldr r1, _080053FC @ =gGame
 	ldrb r2, [r1, #2]
 	lsls r0, r2, #0x1c
 	cmp r0, #0
@@ -8472,7 +8472,7 @@ sub_080053D0: @ 0x080053D0
 	strb r0, [r1, #2]
 	b _08005420
 	.align 2, 0
-_080053FC: .4byte gScript
+_080053FC: .4byte gGame
 _08005400: .4byte gUnknown_02016028
 _08005404: .4byte 0x000121BB
 _08005408:
@@ -9144,7 +9144,7 @@ _08005984:
 	.align 2, 0
 _08005988: .4byte sub_0803D1B4
 _0800598C:
-	ldr r2, _080059C4 @ =gScript
+	ldr r2, _080059C4 @ =gGame
 	ldr r1, _080059C8 @ =0x000067AC
 	adds r0, r2, r1
 	ldrh r0, [r0]
@@ -9172,7 +9172,7 @@ _0800598C:
 	strh r0, [r2]
 	b _08005A24
 	.align 2, 0
-_080059C4: .4byte gScript
+_080059C4: .4byte gGame
 _080059C8: .4byte 0x000067AC
 _080059CC: .4byte 0x04000200
 _080059D0: .4byte 0x0000FFFD
@@ -9495,7 +9495,7 @@ _08005C48: .4byte gUnknown_03004B02
 	thumb_func_start sub_08005C4C
 sub_08005C4C: @ 0x08005C4C
 	push {r4, r5, lr}
-	ldr r2, _08005D20 @ =gScript
+	ldr r2, _08005D20 @ =gGame
 	ldr r0, _08005D24 @ =0x00009D10
 	adds r1, r2, r0
 	ldr r0, [r1]
@@ -9532,7 +9532,7 @@ _08005C8E:
 	ldr r2, _08005D34 @ =gUnknown_02000004
 	movs r0, #0
 	strh r0, [r2]
-	ldr r0, _08005D20 @ =gScript
+	ldr r0, _08005D20 @ =gGame
 	ldr r1, _08005D38 @ =0x0000598C
 	adds r0, r0, r1
 	ldrb r1, [r0]
@@ -9578,7 +9578,7 @@ _08005CC0:
 	bne _08005CFC
 	bl snd_main
 _08005CFC:
-	ldr r2, _08005D20 @ =gScript
+	ldr r2, _08005D20 @ =gGame
 	ldr r0, _08005D4C @ =0x000082A4
 	adds r1, r2, r0
 	ldrh r0, [r1]
@@ -9599,7 +9599,7 @@ _08005D1A:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08005D20: .4byte gScript
+_08005D20: .4byte gGame
 _08005D24: .4byte 0x00009D10
 _08005D28: .4byte gUnknown_02000000
 _08005D2C: .4byte 0x0000595B
@@ -9805,7 +9805,7 @@ _08005EB4:
 	ldrh r1, [r4, #0x20]
 	strh r0, [r4, #0x20]
 _08005ED6:
-	ldr r0, _08005FB0 @ =gScript
+	ldr r0, _08005FB0 @ =gGame
 	ldrb r1, [r0, #1]
 	movs r0, #5
 	ands r0, r1
@@ -9880,7 +9880,7 @@ _08005FA0: .4byte 0xFFFEB430
 _08005FA4: .4byte gUnknown_0202AD38
 _08005FA8: .4byte gUnknown_030049B0
 _08005FAC: .4byte 0xFFFEB2F0
-_08005FB0: .4byte gScript
+_08005FB0: .4byte gGame
 
 	thumb_func_start sub_08005FB4
 sub_08005FB4: @ 0x08005FB4
@@ -10039,7 +10039,7 @@ _080060CA:
 	lsls r0, r0, #0xa
 	orrs r1, r0
 	strh r1, [r3]
-	ldr r2, _080061B4 @ =gScript
+	ldr r2, _080061B4 @ =gGame
 	ldrb r1, [r2, #1]
 	movs r0, #5
 	ands r0, r1
@@ -10140,7 +10140,7 @@ _080061A4: .4byte 0x0FFF0000
 _080061A8: .4byte gUnknown_03005314
 _080061AC: .4byte 0x00002C4C
 _080061B0: .4byte 0x00002C4E
-_080061B4: .4byte gScript
+_080061B4: .4byte gGame
 _080061B8: .4byte gUnknown_02016028
 _080061BC: .4byte gUnknown_02000000
 _080061C0: .4byte 0x000035BA
@@ -10150,7 +10150,7 @@ _080061C8: .4byte 0x0001ED10
 	thumb_func_start sub_080061CC
 sub_080061CC: @ 0x080061CC
 	push {r4, r5, lr}
-	ldr r0, _08006204 @ =gScript
+	ldr r0, _08006204 @ =gGame
 	ldr r1, _08006208 @ =0x000067AC
 	adds r0, r0, r1
 	ldrh r1, [r0]
@@ -10177,7 +10177,7 @@ _080061F2:
 	bl sub_08001B18
 	b _0800622A
 	.align 2, 0
-_08006204: .4byte gScript
+_08006204: .4byte gGame
 _08006208: .4byte 0x000067AC
 _0800620C: .4byte gUnknown_02000000
 _08006210: .4byte gUnknown_02000004
@@ -10193,7 +10193,7 @@ _08006218:
 	str r0, [r1, #8]
 	ldr r0, [r1, #8]
 _0800622A:
-	ldr r5, _08006274 @ =gScript
+	ldr r5, _08006274 @ =gGame
 	ldr r2, _08006278 @ =0x000067AC
 	adds r0, r5, r2
 	ldrh r1, [r0]
@@ -10224,7 +10224,7 @@ _0800623E:
 _08006268: .4byte 0x040000D4
 _0800626C: .4byte gOAMObjBuffer
 _08006270: .4byte 0x84000100
-_08006274: .4byte gScript
+_08006274: .4byte gGame
 _08006278: .4byte 0x000067AC
 _0800627C: .4byte gUnknown_020281E0
 _08006280: .4byte 0xFFFEDE48
@@ -10303,7 +10303,7 @@ _08006316:
 	lsls r0, r0, #0x1d
 	cmp r0, #0
 	bge _08006338
-	ldr r1, _08006494 @ =gScript
+	ldr r1, _08006494 @ =gGame
 	ldr r0, _08006498 @ =0x00009D08
 	adds r2, r1, r0
 	ldr r0, _0800649C @ =0x06010000
@@ -10474,7 +10474,7 @@ _08006474:
 	lsls r0, r0, #0x1a
 	cmp r0, #0
 	bge _08006488
-	ldr r2, _08006494 @ =gScript
+	ldr r2, _08006494 @ =gGame
 	ldrb r1, [r2, #2]
 	movs r0, #9
 	rsbs r0, r0, #0
@@ -10488,7 +10488,7 @@ _0800648C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08006494: .4byte gScript
+_08006494: .4byte gGame
 _08006498: .4byte 0x00009D08
 _0800649C: .4byte 0x06010000
 _080064A0: .4byte 0x00009D0C
@@ -10508,7 +10508,7 @@ sub_080064A8: @ 0x080064A8
 	ldrh r0, [r0]
 	cmp r0, #0
 	beq _080064DA
-	ldr r0, _0800656C @ =gScript
+	ldr r0, _0800656C @ =gGame
 	ldr r1, _08006570 @ =0x000067AC
 	adds r0, r0, r1
 	ldrh r0, [r0]
@@ -10592,7 +10592,7 @@ _080064DA:
 	b _08006592
 	.align 2, 0
 _08006568: .4byte gUnknown_02000000
-_0800656C: .4byte gScript
+_0800656C: .4byte gGame
 _08006570: .4byte 0x000067AC
 _08006574: .4byte 0x06008020
 _08006578: .4byte 0x06006000
@@ -11011,7 +11011,7 @@ sub_080068B8: @ 0x080068B8
 	push {r4, r5, lr}
 	ldr r4, _080068D8 @ =gUnknown_0202A6F8
 	ldr r5, _080068DC @ =0x06008020
-	ldr r0, _080068E0 @ =gScript
+	ldr r0, _080068E0 @ =gGame
 	ldr r1, _080068E4 @ =0x0000598C
 	adds r0, r0, r1
 	ldrb r1, [r0]
@@ -11026,7 +11026,7 @@ sub_080068B8: @ 0x080068B8
 	.align 2, 0
 _080068D8: .4byte gUnknown_0202A6F8
 _080068DC: .4byte 0x06008020
-_080068E0: .4byte gScript
+_080068E0: .4byte gGame
 _080068E4: .4byte 0x0000598C
 _080068E8: .4byte gUnknown_080C2850
 _080068EC:
@@ -11039,7 +11039,7 @@ _080068F2:
 	movs r2, #0x20
 	bl sub_08001A14
 	adds r5, #0x20
-	ldr r0, _0800691C @ =gScript
+	ldr r0, _0800691C @ =gGame
 	ldr r1, _08006920 @ =0x0000598C
 	adds r0, r0, r1
 	ldrb r1, [r0]
@@ -11053,7 +11053,7 @@ _080068F2:
 	b _0800692E
 	.align 2, 0
 _08006918: .4byte gUnknown_080C2970
-_0800691C: .4byte gScript
+_0800691C: .4byte gGame
 _08006920: .4byte 0x0000598C
 _08006924: .4byte gUnknown_080C2850
 _08006928:
@@ -11999,7 +11999,7 @@ _08007070:
 	rsbs r0, r0, #0
 	ands r0, r1
 	strb r0, [r2]
-	ldr r0, _080070A8 @ =gScript
+	ldr r0, _080070A8 @ =gGame
 	ldrb r0, [r0]
 	cmp r0, #3
 	bne _080070B0
@@ -12012,7 +12012,7 @@ _08007070:
 	.align 2, 0
 _080070A0: .4byte gUnknown_02016028
 _080070A4: .4byte 0x00005548
-_080070A8: .4byte gScript
+_080070A8: .4byte gGame
 _080070AC: .4byte 0x000053B4
 _080070B0:
 	cmp r0, #3
@@ -12024,7 +12024,7 @@ _080070B0:
 	lsls r1, r1, #4
 	bl sub_080019DC
 _080070C2:
-	ldr r0, _080070D8 @ =gScript
+	ldr r0, _080070D8 @ =gGame
 	ldrb r0, [r0]
 	cmp r0, #5
 	bgt _080070E0
@@ -12035,7 +12035,7 @@ _080070C2:
 	b _080070E6
 	.align 2, 0
 _080070D4: .4byte 0x06006000
-_080070D8: .4byte gScript
+_080070D8: .4byte gGame
 _080070DC: .4byte 0x00003670
 _080070E0:
 	movs r0, #0xcc
@@ -12072,7 +12072,7 @@ _0800711A:
 	adds r0, r6, r1
 	movs r1, #0
 	strb r1, [r0]
-	ldr r0, _08007138 @ =gScript
+	ldr r0, _08007138 @ =gGame
 	ldrb r0, [r0]
 	cmp r0, #4
 	beq _08007174
@@ -12083,7 +12083,7 @@ _0800711A:
 	b _080071E0
 	.align 2, 0
 _08007134: .4byte 0x0000C513
-_08007138: .4byte gScript
+_08007138: .4byte gGame
 _0800713C:
 	cmp r0, #5
 	beq _080071B8
@@ -12172,7 +12172,7 @@ _080071E0:
 	adds r0, r6, #0
 	movs r1, #1
 	bl sub_08009E38
-	ldr r0, _08007234 @ =gScript
+	ldr r0, _08007234 @ =gGame
 	ldrb r0, [r0]
 	cmp r0, #5
 	bgt _08007210
@@ -12197,7 +12197,7 @@ _08007224: .4byte 0x0000C1E8
 _08007228: .4byte gUnknown_02016078
 _0800722C: .4byte 0x00005364
 _08007230: .4byte 0x0000C516
-_08007234: .4byte gScript
+_08007234: .4byte gGame
 _08007238: .4byte 0x0000C1DC
 _0800723C:
 	adds r0, r1, #0
@@ -12221,7 +12221,7 @@ sub_0800724C: @ 0x0800724C
 	ldrh r0, [r0]
 	cmp r0, #0
 	beq _0800728C
-	ldr r0, _08007274 @ =gScript
+	ldr r0, _08007274 @ =gGame
 	ldrb r0, [r0, #3]
 	lsls r0, r0, #0x1a
 	cmp r0, #0
@@ -12233,7 +12233,7 @@ sub_0800724C: @ 0x0800724C
 	bl sub_08001A94
 	b _0800728C
 	.align 2, 0
-_08007274: .4byte gScript
+_08007274: .4byte gGame
 _08007278: .4byte gUnknown_020281F8
 _0800727C: .4byte 0x0600F000
 _08007280:
@@ -12386,7 +12386,7 @@ sub_08007398: @ 0x08007398
 	mov r6, sb
 	mov r5, r8
 	push {r5, r6, r7}
-	ldr r7, _08007534 @ =gScript
+	ldr r7, _08007534 @ =gGame
 	ldr r0, _08007538 @ =0x00009D14
 	adds r3, r7, r0
 	ldrb r1, [r3]
@@ -12578,7 +12578,7 @@ _080074E4:
 	strh r1, [r0]
 	b _0800773C
 	.align 2, 0
-_08007534: .4byte gScript
+_08007534: .4byte gGame
 _08007538: .4byte 0x00009D14
 _0800753C: .4byte 0x00009D10
 _08007540: .4byte 0x00009D08
@@ -12599,7 +12599,7 @@ _08007578: .4byte 0x000082AC
 _0800757C: .4byte 0x0000FFFF
 _08007580: .4byte 0x000082B4
 _08007584:
-	ldr r6, _080076A0 @ =gScript
+	ldr r6, _080076A0 @ =gGame
 	ldr r2, _080076A4 @ =gSave
 	movs r1, #0x90
 	lsls r1, r1, #3
@@ -12692,7 +12692,7 @@ _0800762C:
 	blt _08007654
 	bl sub_0803D0A8
 _08007654:
-	ldr r1, _080076A0 @ =gScript
+	ldr r1, _080076A0 @ =gGame
 	ldrb r0, [r1, #1]
 	lsls r0, r0, #0x1c
 	cmp r0, #0
@@ -12729,7 +12729,7 @@ _08007682:
 	beq _08007708
 	b _08007720
 	.align 2, 0
-_080076A0: .4byte gScript
+_080076A0: .4byte gGame
 _080076A4: .4byte gSave
 _080076A8: .4byte 0x000067AC
 _080076AC: .4byte gUnknown_02005080
@@ -12774,7 +12774,7 @@ _08007708:
 	adds r1, r5, #0
 	bl memclear
 _08007720:
-	ldr r0, _08007754 @ =gScript
+	ldr r0, _08007754 @ =gGame
 	ldr r1, _08007758 @ =0x00008494
 	adds r0, r0, r1
 	ldrb r0, [r0]
@@ -12799,7 +12799,7 @@ _0800773C:
 	.align 2, 0
 _0800774C: .4byte gUnknown_03005314
 _08007750: .4byte gUnknown_0200F088
-_08007754: .4byte gScript
+_08007754: .4byte gGame
 _08007758: .4byte 0x00008494
 _0800775C: .4byte gUnknown_02005080
 
@@ -12814,7 +12814,7 @@ sub_08007760: @ 0x08007760
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	str r0, [sp]
-	ldr r6, _080078B8 @ =gScript
+	ldr r6, _080078B8 @ =gGame
 	ldr r1, _080078BC @ =0x00009D10
 	adds r0, r6, r1
 	movs r2, #0
@@ -12969,7 +12969,7 @@ _08007844:
 	bl sub_0803B5C4
 	b _08007916
 	.align 2, 0
-_080078B8: .4byte gScript
+_080078B8: .4byte gGame
 _080078BC: .4byte 0x00009D10
 _080078C0: .4byte 0x00009D08
 _080078C4: .4byte 0x06010000
@@ -12999,7 +12999,7 @@ _080078EC:
 	bl sub_08007D18
 	bl sub_0803B5C4
 _08007916:
-	ldr r6, _08007A3C @ =gScript
+	ldr r6, _08007A3C @ =gGame
 	ldr r0, _08007A40 @ =0x000067AC
 	adds r0, r0, r6
 	mov r8, r0
@@ -13073,7 +13073,7 @@ _0800798E:
 	ands r0, r1
 	strb r0, [r6, #0xf]
 _080079C0:
-	ldr r5, _08007A3C @ =gScript
+	ldr r5, _08007A3C @ =gGame
 	ldr r1, _08007A64 @ =0x00008494
 	adds r0, r5, r1
 	ldrb r0, [r0]
@@ -13132,7 +13132,7 @@ _080079C0:
 	b _08007A94
 	.align 2, 0
 _08007A38: .4byte 0x00002CA0
-_08007A3C: .4byte gScript
+_08007A3C: .4byte gGame
 _08007A40: .4byte 0x000067AC
 _08007A44: .4byte gUnknown_0201B7A0
 _08007A48: .4byte 0x0000C51C
@@ -13152,14 +13152,14 @@ _08007A7C: .4byte 0x00005676
 _08007A80: .4byte 0x000131D0
 _08007A84: .4byte gUnknown_030054D4
 _08007A88:
-	ldr r2, _08007AC8 @ =gScript
+	ldr r2, _08007AC8 @ =gGame
 	ldrb r1, [r2, #3]
 	movs r0, #0x21
 	rsbs r0, r0, #0
 	ands r0, r1
 	strb r0, [r2, #3]
 _08007A94:
-	ldr r4, _08007AC8 @ =gScript
+	ldr r4, _08007AC8 @ =gGame
 	ldr r1, _08007ACC @ =0x00008494
 	adds r0, r4, r1
 	ldrb r0, [r0]
@@ -13184,7 +13184,7 @@ _08007AB6:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08007AC8: .4byte gScript
+_08007AC8: .4byte gGame
 _08007ACC: .4byte 0x00008494
 _08007AD0: .4byte 0x000067AC
 
@@ -13195,7 +13195,7 @@ sub_08007AD4: @ 0x08007AD4
 	mov r6, sb
 	mov r5, r8
 	push {r5, r6, r7}
-	ldr r6, _08007C68 @ =gScript
+	ldr r6, _08007C68 @ =gGame
 	ldr r0, _08007C6C @ =0x00009D14
 	adds r2, r6, r0
 	ldrb r1, [r2]
@@ -13373,7 +13373,7 @@ _08007C58:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08007C68: .4byte gScript
+_08007C68: .4byte gGame
 _08007C6C: .4byte 0x00009D14
 _08007C70: .4byte 0x00009D08
 _08007C74: .4byte 0x06010000
@@ -13404,7 +13404,7 @@ sub_08007CC0: @ 0x08007CC0
 	strh r1, [r0, #8]
 	movs r1, #0
 	bl sub_08007CE8
-	ldr r0, _08007CE0 @ =gScript
+	ldr r0, _08007CE0 @ =gGame
 	ldr r1, _08007CE4 @ =0x0000595B
 	adds r0, r0, r1
 	ldrb r0, [r0]
@@ -13412,7 +13412,7 @@ sub_08007CC0: @ 0x08007CC0
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08007CE0: .4byte gScript
+_08007CE0: .4byte gGame
 _08007CE4: .4byte 0x0000595B
 
 	thumb_func_start sub_08007CE8
@@ -13447,7 +13447,7 @@ _08007D14: .4byte gUnknown_080C1B20
 sub_08007D18: @ 0x08007D18
 	push {r4, r5, lr}
 	adds r4, r0, #0
-	ldr r0, _08007D58 @ =gScript
+	ldr r0, _08007D58 @ =gGame
 	ldr r1, _08007D5C @ =0x0000595B
 	adds r0, r0, r1
 	ldrb r0, [r0]
@@ -13478,7 +13478,7 @@ sub_08007D18: @ 0x08007D18
 	strh r0, [r4]
 	b _08007D82
 	.align 2, 0
-_08007D58: .4byte gScript
+_08007D58: .4byte gGame
 _08007D5C: .4byte 0x0000595B
 _08007D60: .4byte 0x00002C4C
 _08007D64: .4byte 0x00002C4D
@@ -13945,7 +13945,7 @@ sub_08008110: @ 0x08008110
 _08008138:
 	movs r5, #0
 	movs r4, #0
-	ldr r0, _080081E8 @ =gScript
+	ldr r0, _080081E8 @ =gGame
 	ldr r1, _080081EC @ =0x00008299
 	adds r0, r0, r1
 	ldrb r1, [r0]
@@ -14024,7 +14024,7 @@ _080081D8: .4byte gUnknown_09AF3790
 _080081DC: .4byte 0x0600D800
 _080081E0: .4byte gUnknown_02016028
 _080081E4: .4byte 0x000035BA
-_080081E8: .4byte gScript
+_080081E8: .4byte gGame
 _080081EC: .4byte 0x00008299
 _080081F0: .4byte 0x000121B9
 _080081F4: .4byte gSave
@@ -14260,7 +14260,7 @@ sub_080083B8: @ 0x080083B8
 	lsls r0, r0, #0x18
 	lsrs r4, r0, #0x18
 	adds r5, r4, #0
-	ldr r7, _08008414 @ =gScript
+	ldr r7, _08008414 @ =gGame
 	ldr r1, _08008418 @ =0x0000829B
 	adds r0, r7, r1
 	ldrb r0, [r0]
@@ -14289,7 +14289,7 @@ _080083FA:
 	strh r5, [r0]
 	b _080086E8
 	.align 2, 0
-_08008414: .4byte gScript
+_08008414: .4byte gGame
 _08008418: .4byte 0x0000829B
 _0800841C: .4byte 0x000067AE
 _08008420:
@@ -14439,7 +14439,7 @@ _0800853E:
 	adds r0, r4, #0
 	bl sub_08003C88
 _08008560:
-	ldr r1, _0800857C @ =gScript
+	ldr r1, _0800857C @ =gGame
 	ldr r3, _08008580 @ =0x0000847A
 	adds r2, r1, r3
 	ldr r0, _08008584 @ =0x0000FFFF
@@ -14452,7 +14452,7 @@ _08008560:
 	b _080086E8
 	.align 2, 0
 _08008578: .4byte 0x000067B0
-_0800857C: .4byte gScript
+_0800857C: .4byte gGame
 _08008580: .4byte 0x0000847A
 _08008584: .4byte 0x0000FFFF
 _08008588: .4byte 0x0000847C
@@ -14611,7 +14611,7 @@ _080086A8:
 	adds r0, r4, #0
 	bl sub_08003C88
 _080086D0:
-	ldr r0, _080086F8 @ =gScript
+	ldr r0, _080086F8 @ =gGame
 	ldr r2, _080086FC @ =0x000067AE
 	adds r1, r0, r2
 	strh r5, [r1]
@@ -14632,7 +14632,7 @@ _080086E8:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080086F8: .4byte gScript
+_080086F8: .4byte gGame
 _080086FC: .4byte 0x000067AE
 _08008700: .4byte 0x000067B0
 
@@ -14652,7 +14652,7 @@ sub_08008704: @ 0x08008704
 	ldrb r0, [r0]
 	cmp r0, #1
 	bne _08008730
-	ldr r0, _08008780 @ =gScript
+	ldr r0, _08008780 @ =gGame
 	ldr r1, _08008784 @ =0x000067AC
 	adds r0, r0, r1
 	ldrh r0, [r0]
@@ -14666,7 +14666,7 @@ _08008730:
 	adds r4, r0, #0
 	lsls r4, r4, #0x18
 	lsrs r4, r4, #0x18
-	ldr r0, _08008780 @ =gScript
+	ldr r0, _08008780 @ =gGame
 	ldr r2, _08008788 @ =0x000067AE
 	adds r1, r0, r2
 	ldrh r5, [r1]
@@ -14696,7 +14696,7 @@ _08008730:
 	b _0800879E
 	.align 2, 0
 _0800877C: .4byte gUnknown_02005080
-_08008780: .4byte gScript
+_08008780: .4byte gGame
 _08008784: .4byte 0x000067AC
 _08008788: .4byte 0x000067AE
 _0800878C: .4byte 0x000067B0
@@ -14916,7 +14916,7 @@ draw_message: @ 0x08008920
 _0800893C: .4byte gUnknown_02016028
 _08008940: .4byte 0x0000566C
 _08008944:
-	ldr r0, _080089B8 @ =gScript
+	ldr r0, _080089B8 @ =gGame
 	ldrb r0, [r0]
 	cmp r0, #5
 	bgt _08008950
@@ -14975,7 +14975,7 @@ _080089A8:
 	bl sub_0800A07C
 	b _080089D8
 	.align 2, 0
-_080089B8: .4byte gScript
+_080089B8: .4byte gGame
 _080089BC: .4byte 0x00011C92
 _080089C0: .4byte 0x000121B6
 _080089C4: .4byte 0x00005778
@@ -16274,7 +16274,7 @@ sub_08009394: @ 0x08009394
 	thumb_func_start sub_080093F0
 sub_080093F0: @ 0x080093F0
 	push {r4, lr}
-	ldr r0, _08009404 @ =gScript
+	ldr r0, _08009404 @ =gGame
 	ldrb r0, [r0]
 	cmp r0, #4
 	beq _0800941C
@@ -16284,7 +16284,7 @@ sub_080093F0: @ 0x080093F0
 	beq _0800940E
 	b _0800942E
 	.align 2, 0
-_08009404: .4byte gScript
+_08009404: .4byte gGame
 _08009408:
 	cmp r0, #5
 	beq _08009428
@@ -16827,7 +16827,7 @@ sub_08009828: @ 0x08009828
 	add r0, r8
 	movs r1, #0
 	str r1, [r0]
-	ldr r0, _08009858 @ =gScript
+	ldr r0, _08009858 @ =gGame
 	ldrb r0, [r0]
 	cmp r0, #5
 	bgt _08009864
@@ -16840,7 +16840,7 @@ sub_08009828: @ 0x08009828
 	b _0800986C
 	.align 2, 0
 _08009854: .4byte 0x0000322C
-_08009858: .4byte gScript
+_08009858: .4byte gGame
 _0800985C: .4byte 0x00003230
 _08009860: .4byte 0x00003670
 _08009864:
@@ -17086,7 +17086,7 @@ sub_08009A48: @ 0x08009A48
 	adds r7, r0, #0
 	movs r5, #0xc0
 	lsls r5, r5, #8
-	ldr r0, _08009A64 @ =gScript
+	ldr r0, _08009A64 @ =gGame
 	ldrb r0, [r0]
 	cmp r0, #5
 	bgt _08009A6C
@@ -17096,7 +17096,7 @@ sub_08009A48: @ 0x08009A48
 	adds r4, r7, r0
 	b _08009A72
 	.align 2, 0
-_08009A64: .4byte gScript
+_08009A64: .4byte gGame
 _08009A68: .4byte 0x00003670
 _08009A6C:
 	movs r1, #0xcc
@@ -18117,7 +18117,7 @@ _0800A23C: .4byte 0x00011C94
 sub_0800A240: @ 0x0800A240
 	push {r4, r5, lr}
 	adds r5, r0, #0
-	ldr r1, _0800A2B0 @ =gScript
+	ldr r1, _0800A2B0 @ =gGame
 	ldrb r0, [r1, #2]
 	lsls r0, r0, #0x1b
 	cmp r0, #0
@@ -18170,7 +18170,7 @@ _0800A278:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0800A2B0: .4byte gScript
+_0800A2B0: .4byte gGame
 _0800A2B4: .4byte 0x0000595B
 _0800A2B8: .4byte 0x000067AC
 _0800A2BC: .4byte gUnknown_02016028
@@ -19424,7 +19424,7 @@ sub_0800ACA0: @ 0x0800ACA0
 	strh r0, [r1]
 	mov r0, sp
 	ldrh r0, [r0]
-	ldr r3, _0800ACF4 @ =gScript
+	ldr r3, _0800ACF4 @ =gGame
 	cmp r0, #0
 	beq _0800AD14
 	ldr r1, _0800ACF8 @ =0x00009484
@@ -19460,7 +19460,7 @@ sub_0800ACA0: @ 0x0800ACA0
 	strh r2, [r0]
 	b _0800AD4C
 	.align 2, 0
-_0800ACF4: .4byte gScript
+_0800ACF4: .4byte gGame
 _0800ACF8: .4byte 0x00009484
 _0800ACFC: .4byte 0x0003FF00
 _0800AD00: .4byte 0x00008496
@@ -19511,7 +19511,7 @@ _0800AD68: .4byte gUnknown_02016028
 
 	thumb_func_start sub_0800AD6C
 sub_0800AD6C: @ 0x0800AD6C
-	ldr r2, _0800ADA0 @ =gScript
+	ldr r2, _0800ADA0 @ =gGame
 	ldr r0, _0800ADA4 @ =0x00009486
 	adds r3, r2, r0
 	ldrb r0, [r3]
@@ -19538,7 +19538,7 @@ sub_0800AD6C: @ 0x0800AD6C
 	strh r3, [r0]
 	bx lr
 	.align 2, 0
-_0800ADA0: .4byte gScript
+_0800ADA0: .4byte gGame
 _0800ADA4: .4byte 0x00009486
 _0800ADA8: .4byte 0x00009484
 _0800ADAC: .4byte 0x00009485
@@ -19552,7 +19552,7 @@ sub_0800ADBC: @ 0x0800ADBC
 	sub sp, #4
 	mov r1, sp
 	strh r0, [r1]
-	ldr r2, _0800AE0C @ =gScript
+	ldr r2, _0800AE0C @ =gGame
 	ldr r0, _0800AE10 @ =0x00009486
 	adds r2, r2, r0
 	ldrb r1, [r2]
@@ -19589,7 +19589,7 @@ _0800AE06:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0800AE0C: .4byte gScript
+_0800AE0C: .4byte gGame
 _0800AE10: .4byte 0x00009486
 _0800AE14: .4byte gUnknown_03004B04
 _0800AE18: .4byte gUnknown_03004B06
@@ -19601,7 +19601,7 @@ _0800AE28: .4byte 0x000121BB
 	thumb_func_start sub_0800AE2C
 sub_0800AE2C: @ 0x0800AE2C
 	push {r4, r5, r6, lr}
-	ldr r4, _0800AE54 @ =gScript
+	ldr r4, _0800AE54 @ =gGame
 	ldr r1, _0800AE58 @ =0x00009486
 	adds r0, r4, r1
 	ldrb r1, [r0]
@@ -19620,7 +19620,7 @@ sub_0800AE2C: @ 0x0800AE2C
 	movs r0, #1
 	b _0800AF1A
 	.align 2, 0
-_0800AE54: .4byte gScript
+_0800AE54: .4byte gGame
 _0800AE58: .4byte 0x00009486
 _0800AE5C: .4byte gUnknown_03004B04
 _0800AE60: .4byte gUnknown_03004B06
@@ -19677,7 +19677,7 @@ _0800AECA:
 	bl sub_08002E60
 	strh r0, [r5]
 _0800AED2:
-	ldr r3, _0800AF2C @ =gScript
+	ldr r3, _0800AF2C @ =gGame
 	ldr r1, _0800AF24 @ =0x00009484
 	adds r0, r3, r1
 	ldrb r1, [r0]
@@ -19707,7 +19707,7 @@ _0800AED2:
 	orrs r0, r2
 	strb r0, [r1]
 _0800AF0E:
-	ldr r0, _0800AF2C @ =gScript
+	ldr r0, _0800AF2C @ =gGame
 	ldr r1, _0800AF30 @ =0x00009486
 	adds r0, r0, r1
 	ldrb r0, [r0]
@@ -19721,7 +19721,7 @@ _0800AF1A:
 _0800AF20: .4byte gUnknown_03004B04
 _0800AF24: .4byte 0x00009484
 _0800AF28: .4byte gUnknown_03004B06
-_0800AF2C: .4byte gScript
+_0800AF2C: .4byte gGame
 _0800AF30: .4byte 0x00009486
 _0800AF34: .4byte 0x00009485
 _0800AF38: .4byte gUnknown_080C1FF0
@@ -19794,7 +19794,7 @@ _0800AFBC: .4byte gUnknown_080C2008
 sub_0800AFC0: @ 0x0800AFC0
 	push {lr}
 	adds r3, r0, #0
-	ldr r0, _0800AFF8 @ =gScript
+	ldr r0, _0800AFF8 @ =gGame
 	ldr r1, _0800AFFC @ =0x00008494
 	adds r0, r0, r1
 	ldrb r0, [r0]
@@ -19821,7 +19821,7 @@ _0800AFF2:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0800AFF8: .4byte gScript
+_0800AFF8: .4byte gGame
 _0800AFFC: .4byte 0x00008494
 _0800B000: .4byte gUnknown_03004B04
 _0800B004: .4byte gUnknown_03004B06
@@ -19869,7 +19869,7 @@ sub_0800B00C: @ 0x0800B00C
 	ands r5, r2
 	mov r0, ip
 	strb r5, [r0]
-	ldr r3, _0800B1D4 @ =gScript
+	ldr r3, _0800B1D4 @ =gGame
 	ldr r0, _0800B1D8 @ =0x000082B7
 	adds r2, r3, r0
 	ldrb r0, [r2]
@@ -19955,7 +19955,7 @@ _0800B0FA:
 	lsls r0, r0, #0x10
 	cmp r0, #0
 	bne _0800B1BE
-	ldr r0, _0800B1D4 @ =gScript
+	ldr r0, _0800B1D4 @ =gGame
 	ldr r1, _0800B1E8 @ =0x000067AC
 	adds r0, r0, r1
 	ldrh r0, [r0]
@@ -20014,7 +20014,7 @@ _0800B156:
 	orrs r1, r0
 	strb r1, [r4]
 _0800B180:
-	ldr r5, _0800B1D4 @ =gScript
+	ldr r5, _0800B1D4 @ =gGame
 	ldr r2, _0800B1DC @ =0x0000848C
 	adds r1, r5, r2
 	ldrh r0, [r1]
@@ -20055,7 +20055,7 @@ _0800B1BE:
 	.align 2, 0
 _0800B1CC: .4byte gUnknown_02016028
 _0800B1D0: .4byte 0x0001ED10
-_0800B1D4: .4byte gScript
+_0800B1D4: .4byte gGame
 _0800B1D8: .4byte 0x000082B7
 _0800B1DC: .4byte 0x0000848C
 _0800B1E0: .4byte 0x00000201
@@ -20110,7 +20110,7 @@ _0800B24A:
 	bl sub_08004E64
 	b _0800B346
 _0800B264:
-	ldr r0, _0800B284 @ =gScript
+	ldr r0, _0800B284 @ =gGame
 	ldr r2, _0800B288 @ =0x000082A4
 	adds r1, r0, r2
 	ldrh r1, [r1]
@@ -20127,7 +20127,7 @@ _0800B27E:
 	movs r2, #0
 	b _0800B2A8
 	.align 2, 0
-_0800B284: .4byte gScript
+_0800B284: .4byte gGame
 _0800B288: .4byte 0x000082A4
 _0800B28C: .4byte 0x000082B7
 _0800B290:
@@ -20205,7 +20205,7 @@ _0800B30E:
 	movs r2, #1
 	movs r3, #1
 	bl sub_0800B7AC
-	ldr r0, _0800B350 @ =gScript
+	ldr r0, _0800B350 @ =gGame
 	ldr r7, _0800B354 @ =0x00008494
 	adds r0, r0, r7
 	ldrb r0, [r0]
@@ -20227,7 +20227,7 @@ _0800B346:
 	bx r0
 	.align 2, 0
 _0800B34C: .4byte 0x0000829E
-_0800B350: .4byte gScript
+_0800B350: .4byte gGame
 _0800B354: .4byte 0x00008494
 
 	thumb_func_start sub_0800B358
@@ -20238,7 +20238,7 @@ sub_0800B358: @ 0x0800B358
 	push {r6, r7}
 	mov sb, r0
 	ldr r1, _0800B3E4 @ =gUnknown_08D2D304
-	ldr r7, _0800B3E8 @ =gScript
+	ldr r7, _0800B3E8 @ =gGame
 	ldr r2, _0800B3EC @ =0x00008299
 	adds r0, r7, r2
 	ldrb r6, [r0]
@@ -20285,7 +20285,7 @@ _0800B3C0:
 	mov r0, r8
 	bl sub_08033484
 _0800B3C6:
-	ldr r2, _0800B3E8 @ =gScript
+	ldr r2, _0800B3E8 @ =gGame
 	ldr r0, _0800B3F4 @ =0x0000829E
 	adds r4, r2, r0
 	ldrh r3, [r4]
@@ -20302,7 +20302,7 @@ _0800B3C6:
 	b _0800B462
 	.align 2, 0
 _0800B3E4: .4byte gUnknown_08D2D304
-_0800B3E8: .4byte gScript
+_0800B3E8: .4byte gGame
 _0800B3EC: .4byte 0x00008299
 _0800B3F0: .4byte 0x000082B6
 _0800B3F4: .4byte 0x0000829E
@@ -20381,7 +20381,7 @@ sub_0800B474: @ 0x0800B474
 	ands r0, r2
 	cmp r0, #0
 	beq _0800B4A4
-	ldr r0, _0800B49C @ =gScript
+	ldr r0, _0800B49C @ =gGame
 	ldr r1, _0800B4A0 @ =0x0000829B
 	adds r0, r0, r1
 	movs r1, #0
@@ -20389,7 +20389,7 @@ sub_0800B474: @ 0x0800B474
 	bl sub_08033C44
 	b _0800B4FC
 	.align 2, 0
-_0800B49C: .4byte gScript
+_0800B49C: .4byte gGame
 _0800B4A0: .4byte 0x0000829B
 _0800B4A4:
 	movs r0, #2
@@ -20495,7 +20495,7 @@ _0800B568:
 	bl sub_0802706C
 	lsls r0, r0, #0x10
 	lsrs r1, r0, #0x10
-	ldr r0, _0800B5FC @ =gScript
+	ldr r0, _0800B5FC @ =gGame
 	ldr r2, _0800B600 @ =0x000082B6
 	adds r3, r0, r2
 	ldrh r2, [r3]
@@ -20511,7 +20511,7 @@ _0800B568:
 	orrs r0, r1
 	strh r0, [r3]
 _0800B59A:
-	ldr r5, _0800B5FC @ =gScript
+	ldr r5, _0800B5FC @ =gGame
 	ldr r1, _0800B600 @ =0x000082B6
 	adds r0, r5, r1
 	ldrh r4, [r0]
@@ -20549,7 +20549,7 @@ _0800B5D8:
 	movs r0, #0
 	bl sub_08033FEC
 _0800B5EA:
-	ldr r1, _0800B5FC @ =gScript
+	ldr r1, _0800B5FC @ =gGame
 	ldr r2, _0800B610 @ =0x000082A0
 	adds r1, r1, r2
 	ldrh r0, [r1]
@@ -20560,7 +20560,7 @@ _0800B5F6:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0800B5FC: .4byte gScript
+_0800B5FC: .4byte gGame
 _0800B600: .4byte 0x000082B6
 _0800B604: .4byte 0xFFFFFE1F
 _0800B608: .4byte 0x00009D14
@@ -20574,7 +20574,7 @@ sub_0800B614: @ 0x0800B614
 	lsls r0, r0, #0x10
 	cmp r0, #0
 	beq _0800B62E
-	ldr r0, _0800B634 @ =gScript
+	ldr r0, _0800B634 @ =gGame
 	ldr r1, _0800B638 @ =0x0000829B
 	adds r0, r0, r1
 	movs r1, #0
@@ -20584,7 +20584,7 @@ _0800B62E:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0800B634: .4byte gScript
+_0800B634: .4byte gGame
 _0800B638: .4byte 0x0000829B
 
 	thumb_func_start sub_0800B63C
@@ -20594,7 +20594,7 @@ sub_0800B63C: @ 0x0800B63C
 	lsls r0, r0, #0x10
 	cmp r0, #0
 	beq _0800B652
-	ldr r0, _0800B658 @ =gScript
+	ldr r0, _0800B658 @ =gGame
 	ldr r1, _0800B65C @ =0x0000829B
 	adds r0, r0, r1
 	movs r1, #0
@@ -20603,7 +20603,7 @@ _0800B652:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0800B658: .4byte gScript
+_0800B658: .4byte gGame
 _0800B65C: .4byte 0x0000829B
 
 	thumb_func_start sub_0800B660
@@ -20644,7 +20644,7 @@ _0800B6AA:
 	ands r0, r1
 	cmp r0, #0
 	beq _0800B6EE
-	ldr r0, _0800B6CC @ =gScript
+	ldr r0, _0800B6CC @ =gGame
 	ldr r1, _0800B6D0 @ =0x000082B6
 	adds r2, r0, r1
 	ldrh r1, [r2]
@@ -20657,7 +20657,7 @@ _0800B6AA:
 	strh r0, [r2]
 	b _0800B720
 	.align 2, 0
-_0800B6CC: .4byte gScript
+_0800B6CC: .4byte gGame
 _0800B6D0: .4byte 0x000082B6
 _0800B6D4: .4byte 0xFFFFFE1F
 _0800B6D8:
@@ -20680,7 +20680,7 @@ _0800B6EE:
 	bl sub_0802706C
 	lsls r0, r0, #0x10
 	lsrs r1, r0, #0x10
-	ldr r0, _0800B798 @ =gScript
+	ldr r0, _0800B798 @ =gGame
 	ldr r2, _0800B79C @ =0x000082B6
 	adds r3, r0, r2
 	ldrh r2, [r3]
@@ -20696,7 +20696,7 @@ _0800B6EE:
 	orrs r0, r1
 	strh r0, [r3]
 _0800B720:
-	ldr r6, _0800B798 @ =gScript
+	ldr r6, _0800B798 @ =gGame
 	ldr r0, _0800B79C @ =0x000082B6
 	adds r4, r6, r0
 	ldrh r1, [r4]
@@ -20743,7 +20743,7 @@ _0800B74C:
 	movs r1, #0
 	bl sub_080332AC
 _0800B77E:
-	ldr r0, _0800B798 @ =gScript
+	ldr r0, _0800B798 @ =gGame
 	ldr r1, _0800B7A8 @ =0x00008494
 	adds r0, r0, r1
 	ldrb r0, [r0]
@@ -20756,7 +20756,7 @@ _0800B790:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0800B798: .4byte gScript
+_0800B798: .4byte gGame
 _0800B79C: .4byte 0x000082B6
 _0800B7A0: .4byte 0xFFFFFE1F
 _0800B7A4: .4byte 0x000082AC
@@ -20806,7 +20806,7 @@ sub_0800B7AC: @ 0x0800B7AC
 	lsrs r0, r0, #0x10
 	bl sub_080270C8
 	adds r6, r0, #0
-	ldr r0, _0800B820 @ =gScript
+	ldr r0, _0800B820 @ =gGame
 	ldr r2, _0800B824 @ =0x0000829B
 	adds r1, r0, r2
 	ldrb r0, [r1]
@@ -20817,13 +20817,13 @@ sub_0800B7AC: @ 0x0800B7AC
 	bl sub_08033CA0
 	b _0800B82C
 	.align 2, 0
-_0800B820: .4byte gScript
+_0800B820: .4byte gGame
 _0800B824: .4byte 0x0000829B
 _0800B828:
 	mov r0, sp
 	strh r2, [r0]
 _0800B82C:
-	ldr r3, _0800B8CC @ =gScript
+	ldr r3, _0800B8CC @ =gGame
 	mov r0, sp
 	ldrh r0, [r0]
 	ldr r1, _0800B8D0 @ =0x000082B7
@@ -20905,7 +20905,7 @@ _0800B896:
 _0800B8CA:
 	b _0800BAE8
 	.align 2, 0
-_0800B8CC: .4byte gScript
+_0800B8CC: .4byte gGame
 _0800B8D0: .4byte 0x000082B7
 _0800B8D4: .4byte 0xFFFF0000
 _0800B8D8: .4byte 0x000082AA
@@ -20935,7 +20935,7 @@ _0800B8FE:
 	adds r2, #0xa
 	adds r1, r7, #0
 	bl sub_080270A0
-	ldr r6, _0800B964 @ =gScript
+	ldr r6, _0800B964 @ =gGame
 	ldr r3, _0800B968 @ =0x000082B7
 	adds r2, r6, r3
 	ldrb r0, [r2]
@@ -20979,7 +20979,7 @@ _0800B94A:
 _0800B960:
 	b _0800B9D2
 	.align 2, 0
-_0800B964: .4byte gScript
+_0800B964: .4byte gGame
 _0800B968: .4byte 0x000082B7
 _0800B96C: .4byte 0x0000829B
 _0800B970: .4byte gUnknown_02016028
@@ -21026,7 +21026,7 @@ _0800B97C:
 	movs r0, #1
 	bl sub_08033AEC
 _0800B9D2:
-	ldr r0, _0800B9EC @ =gScript
+	ldr r0, _0800B9EC @ =gGame
 	ldr r3, _0800B9F0 @ =0x0000829B
 	adds r0, r0, r3
 	ldrb r0, [r0]
@@ -21038,7 +21038,7 @@ _0800B9E0:
 	bl sub_080354CC
 	b _0800BB3C
 	.align 2, 0
-_0800B9EC: .4byte gScript
+_0800B9EC: .4byte gGame
 _0800B9F0: .4byte 0x0000829B
 _0800B9F4:
 	ldr r0, _0800BA2C @ =0x000082B7
@@ -21118,7 +21118,7 @@ _0800BA6C:
 	ands r1, r2
 	orrs r1, r0
 	strb r1, [r3]
-	ldr r4, _0800BAF4 @ =gScript
+	ldr r4, _0800BAF4 @ =gGame
 	ldr r2, _0800BAF8 @ =0x000082AA
 	adds r0, r4, r2
 	mov r3, sl
@@ -21167,7 +21167,7 @@ _0800BAE8:
 	strb r0, [r2]
 	b _0800BB3C
 	.align 2, 0
-_0800BAF4: .4byte gScript
+_0800BAF4: .4byte gGame
 _0800BAF8: .4byte 0x000082AA
 _0800BAFC: .4byte 0x00009D10
 _0800BB00: .4byte gUnknown_02016028
@@ -21186,7 +21186,7 @@ _0800BB08:
 	orrs r1, r2
 	strb r1, [r0]
 _0800BB20:
-	ldr r3, _0800BB50 @ =gScript
+	ldr r3, _0800BB50 @ =gGame
 	mov r0, sp
 	ldrh r0, [r0]
 	ldr r2, _0800BB4C @ =0x000082B7
@@ -21211,13 +21211,13 @@ _0800BB3C:
 	bx r0
 	.align 2, 0
 _0800BB4C: .4byte 0x000082B7
-_0800BB50: .4byte gScript
+_0800BB50: .4byte gGame
 
 	thumb_func_start sub_0800BB54
 sub_0800BB54: @ 0x0800BB54
 	push {r4, r5, lr}
 	adds r1, r0, #0
-	ldr r0, _0800BB6C @ =gScript
+	ldr r0, _0800BB6C @ =gGame
 	ldrb r0, [r0, #1]
 	lsls r0, r0, #0x1b
 	cmp r0, #0
@@ -21226,7 +21226,7 @@ sub_0800BB54: @ 0x0800BB54
 	bl sub_0800BBF4
 	b _0800BBEC
 	.align 2, 0
-_0800BB6C: .4byte gScript
+_0800BB6C: .4byte gGame
 _0800BB70:
 	ldr r0, _0800BBB4 @ =gUnknown_02016028
 	ldr r1, _0800BBB8 @ =0x0000566C
@@ -21305,7 +21305,7 @@ sub_0800BBF4: @ 0x0800BBF4
 	bl sub_0802610C
 	movs r0, #4
 	bl sub_080052E4
-	ldr r2, _0800BC34 @ =gScript
+	ldr r2, _0800BC34 @ =gGame
 	ldr r1, _0800BC38 @ =0x0000595C
 	adds r0, r2, r1
 	movs r1, #0x15
@@ -21327,7 +21327,7 @@ _0800BC30:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0800BC34: .4byte gScript
+_0800BC34: .4byte gGame
 _0800BC38: .4byte 0x0000595C
 _0800BC3C: .4byte 0x0000595B
 _0800BC40: .4byte 0x0000598C
@@ -21442,7 +21442,7 @@ _0800BD14:
 	lsls r0, r0, #0x10
 	cmp r0, #0
 	beq _0800BDF2
-	ldr r7, _0800BDA8 @ =gScript
+	ldr r7, _0800BDA8 @ =gGame
 	ldr r2, _0800BDAC @ =0x000067B8
 	adds r0, r7, r2
 	movs r1, #0
@@ -21508,7 +21508,7 @@ _0800BD5A:
 	ldrsh r0, [r6, r7]
 	b _0800BDCE
 	.align 2, 0
-_0800BDA8: .4byte gScript
+_0800BDA8: .4byte gGame
 _0800BDAC: .4byte 0x000067B8
 _0800BDB0: .4byte 0x000067A4
 _0800BDB4:
@@ -21682,7 +21682,7 @@ _0800BEF6:
 	str r0, [sp, #0x10]
 	add r1, sp, #0x10
 	strh r2, [r1, #2]
-	ldr r2, _0800BFA0 @ =gScript
+	ldr r2, _0800BFA0 @ =gGame
 	mov r8, r2
 	ldr r0, _0800BFA4 @ =0x000067B8
 	add r0, r8
@@ -21760,7 +21760,7 @@ _0800BF44:
 	b _0800BFE0
 	.align 2, 0
 _0800BF9C: .4byte 0xFFFF0000
-_0800BFA0: .4byte gScript
+_0800BFA0: .4byte gGame
 _0800BFA4: .4byte 0x000067B8
 _0800BFA8: .4byte 0x000067A4
 _0800BFAC:
@@ -21998,7 +21998,7 @@ sub_0800C10C: @ 0x0800C10C
 	mov r8, r4
 	cmp r0, #0
 	bge _0800C1CC
-	ldr r0, _0800C1C4 @ =gScript
+	ldr r0, _0800C1C4 @ =gGame
 	ldr r1, _0800C1C8 @ =0x0000829B
 	adds r0, r0, r1
 	ldrb r0, [r0]
@@ -22034,10 +22034,10 @@ _0800C198:
 	bl sub_08033AEC
 	b _0800C2D8
 	.align 2, 0
-_0800C1C4: .4byte gScript
+_0800C1C4: .4byte gGame
 _0800C1C8: .4byte 0x0000829B
 _0800C1CC:
-	ldr r0, _0800C208 @ =gScript
+	ldr r0, _0800C208 @ =gGame
 	ldr r3, _0800C20C @ =0x000082AA
 	adds r0, r0, r3
 	movs r3, #0
@@ -22067,7 +22067,7 @@ _0800C1CC:
 	movs r1, #8
 	b _0800C2A2
 	.align 2, 0
-_0800C208: .4byte gScript
+_0800C208: .4byte gGame
 _0800C20C: .4byte 0x000082AA
 _0800C210:
 	lsls r0, r1, #0x10
@@ -22156,7 +22156,7 @@ _0800C2A6:
 	adds r0, r7, #0
 	adds r0, #0x85
 	ldrb r0, [r0]
-	ldr r4, _0800C354 @ =gScript
+	ldr r4, _0800C354 @ =gGame
 	ldr r3, _0800C358 @ =0x000082AA
 	adds r5, r4, r3
 	ldrh r1, [r5]
@@ -22177,7 +22177,7 @@ _0800C2A6:
 	rsbs r0, r0, #0
 	bl sub_08033AEC
 _0800C2D8:
-	ldr r0, _0800C354 @ =gScript
+	ldr r0, _0800C354 @ =gGame
 	ldr r3, _0800C358 @ =0x000082AA
 	adds r2, r0, r3
 	ldr r1, _0800C35C @ =0x0000FFFF
@@ -22238,7 +22238,7 @@ _0800C2F0:
 	ldrh r0, [r1]
 	b _0800C372
 	.align 2, 0
-_0800C354: .4byte gScript
+_0800C354: .4byte gGame
 _0800C358: .4byte 0x000082AA
 _0800C35C: .4byte 0x0000FFFF
 _0800C360: .4byte 0x00008494
@@ -22289,7 +22289,7 @@ _0800C3A0:
 	lsrs r1, r1, #0x10
 	orrs r1, r0
 	str r1, [sp, #0x10]
-	ldr r1, _0800C3D4 @ =gScript
+	ldr r1, _0800C3D4 @ =gGame
 	ldr r2, _0800C3D8 @ =0x0000829B
 	adds r0, r1, r2
 	ldrb r0, [r0]
@@ -22301,7 +22301,7 @@ _0800C3A0:
 	strh r0, [r1]
 	b _0800C3F2
 	.align 2, 0
-_0800C3D4: .4byte gScript
+_0800C3D4: .4byte gGame
 _0800C3D8: .4byte 0x0000829B
 _0800C3DC:
 	mov r2, sp
@@ -22496,7 +22496,7 @@ _0800C52A:
 	lsrs r0, r0, #0x10
 	orrs r0, r1
 	str r0, [sp, #0x10]
-	ldr r5, _0800C59C @ =gScript
+	ldr r5, _0800C59C @ =gGame
 	ldrb r0, [r5]
 	cmp r0, #0
 	bne _0800C600
@@ -22540,7 +22540,7 @@ _0800C58A:
 	b _0800C5B8
 	.align 2, 0
 _0800C598: .4byte 0x0000FFFF
-_0800C59C: .4byte gScript
+_0800C59C: .4byte gGame
 _0800C5A0: .4byte 0x0000829B
 _0800C5A4: .4byte 0x000082B7
 _0800C5A8: .4byte 0x00008494
@@ -22603,7 +22603,7 @@ _0800C600:
 	lsls r0, r0, #0x10
 	cmp r0, #0
 	bne _0800C648
-	ldr r0, _0800C640 @ =gScript
+	ldr r0, _0800C640 @ =gGame
 	ldr r1, _0800C644 @ =0x000082B7
 	adds r0, r0, r1
 	ldrb r0, [r0]
@@ -22624,7 +22624,7 @@ _0800C632:
 	strb r1, [r0]
 	b _0800C680
 	.align 2, 0
-_0800C640: .4byte gScript
+_0800C640: .4byte gGame
 _0800C644: .4byte 0x000082B7
 _0800C648:
 	ldrh r0, [r5]
@@ -22721,7 +22721,7 @@ sub_0800C694: @ 0x0800C694
 	ldrh r1, [r0]
 	adds r0, #2
 	strh r1, [r0]
-	ldr r0, _0800C724 @ =gScript
+	ldr r0, _0800C724 @ =gGame
 	ldr r1, _0800C728 @ =0x00008494
 	adds r0, r0, r1
 	ldrb r0, [r0]
@@ -22739,7 +22739,7 @@ _0800C718:
 	bl sub_0800F580
 	b _0800CBCC
 	.align 2, 0
-_0800C724: .4byte gScript
+_0800C724: .4byte gGame
 _0800C728: .4byte 0x00008494
 _0800C72C:
 	ldrb r0, [r5]
@@ -22784,7 +22784,7 @@ _0800C780:
 	adds r0, #2
 	strh r2, [r0]
 _0800C786:
-	ldr r2, _0800C7FC @ =gScript
+	ldr r2, _0800C7FC @ =gGame
 	mov r1, sp
 	ldrh r0, [r1, #2]
 	ldr r1, _0800C800 @ =0x00008382
@@ -22843,7 +22843,7 @@ _0800C7AE:
 	movs r0, #0
 	b _0800CBCE
 	.align 2, 0
-_0800C7FC: .4byte gScript
+_0800C7FC: .4byte gGame
 _0800C800: .4byte 0x00008382
 _0800C804: .4byte 0xFFFF0000
 _0800C808:
@@ -22954,7 +22954,7 @@ _0800C8CC:
 	strb r0, [r2]
 	b _0800CA28
 _0800C8D2:
-	ldr r0, _0800C988 @ =gScript
+	ldr r0, _0800C988 @ =gGame
 	ldrb r1, [r0]
 	adds r3, r0, #0
 	cmp r1, #0
@@ -23048,7 +23048,7 @@ _0800C910:
 	ldrh r0, [r1]
 	b _0800C996
 	.align 2, 0
-_0800C988: .4byte gScript
+_0800C988: .4byte gGame
 _0800C98C:
 	bl sub_0801A5EC
 	subs r0, #1
@@ -23481,7 +23481,7 @@ sub_0800CCA8: @ 0x0800CCA8
 	lsrs r5, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r6, r2, #0x10
-	ldr r0, _0800CCEC @ =gScript
+	ldr r0, _0800CCEC @ =gGame
 	ldr r1, _0800CCF0 @ =0x000067B8
 	adds r0, r0, r1
 	movs r2, #0
@@ -23505,7 +23505,7 @@ sub_0800CCA8: @ 0x0800CCA8
 	bl sub_0800F99C
 	b _0800CD04
 	.align 2, 0
-_0800CCEC: .4byte gScript
+_0800CCEC: .4byte gGame
 _0800CCF0: .4byte 0x000067B8
 _0800CCF4:
 	movs r1, #0
@@ -23563,7 +23563,7 @@ _0800CD60:
 	beq _0800CDA0
 	b _0800CDC2
 _0800CD66:
-	ldr r0, _0800CD90 @ =gScript
+	ldr r0, _0800CD90 @ =gGame
 	ldr r1, _0800CD94 @ =0x0000829B
 	adds r0, r0, r1
 	ldrb r0, [r0]
@@ -23583,7 +23583,7 @@ _0800CD78:
 	strb r1, [r0]
 	b _0800CDC2
 	.align 2, 0
-_0800CD90: .4byte gScript
+_0800CD90: .4byte gGame
 _0800CD94: .4byte 0x0000829B
 _0800CD98: .4byte gUnknown_02016028
 _0800CD9C: .4byte 0x0001ED10
@@ -23671,7 +23671,7 @@ _0800CDF8:
 	lsls r0, r0, #0x1d
 	cmp r0, #0
 	bge _0800CE5E
-	ldr r1, _0800CEA0 @ =gScript
+	ldr r1, _0800CEA0 @ =gGame
 	ldr r2, _0800CEA4 @ =0x0000829B
 	adds r0, r1, r2
 	ldrb r0, [r0]
@@ -23719,7 +23719,7 @@ _0800CE7E:
 _0800CE94: .4byte 0xFFFF0000
 _0800CE98: .4byte gUnknown_02016028
 _0800CE9C: .4byte 0x0001ED10
-_0800CEA0: .4byte gScript
+_0800CEA0: .4byte gGame
 _0800CEA4: .4byte 0x0000829B
 _0800CEA8: .4byte 0x000082B6
 _0800CEAC:
@@ -23853,7 +23853,7 @@ _0800CF94:
 	ldrh r0, [r6]
 	strh r0, [r7]
 _0800CFA0:
-	ldr r1, _0800CFE0 @ =gScript
+	ldr r1, _0800CFE0 @ =gGame
 	ldrb r0, [r1]
 	cmp r0, #0
 	bne _0800D000
@@ -23885,7 +23885,7 @@ _0800CFA0:
 	adds r0, r1, #0
 	b _0800CFFC
 	.align 2, 0
-_0800CFE0: .4byte gScript
+_0800CFE0: .4byte gGame
 _0800CFE4: .4byte 0x00008382
 _0800CFE8:
 	lsls r0, r2, #0x10
@@ -24062,7 +24062,7 @@ sub_0800D0F0: @ 0x0800D0F0
 	ldr r1, [sp, #0x48]
 	bl sub_0800EBA0
 	adds r4, r0, #0
-	ldr r0, _0800D18C @ =gScript
+	ldr r0, _0800D18C @ =gGame
 	ldr r1, _0800D190 @ =0x0000848C
 	adds r0, r0, r1
 	ldrh r0, [r0]
@@ -24103,7 +24103,7 @@ _0800D16E:
 	str r0, [sp, #0x24]
 	b _0800D3BE
 	.align 2, 0
-_0800D18C: .4byte gScript
+_0800D18C: .4byte gGame
 _0800D190: .4byte 0x0000848C
 _0800D194:
 	adds r4, r6, #0
@@ -24983,7 +24983,7 @@ sub_0800D814: @ 0x0800D814
 	bl sub_0800E338
 	b _0800DA7E
 _0800D846:
-	ldr r2, _0800D85C @ =gScript
+	ldr r2, _0800D85C @ =gGame
 	ldrb r0, [r2, #2]
 	lsls r0, r0, #0x1a
 	cmp r0, #0
@@ -24995,7 +24995,7 @@ _0800D846:
 	lsls r0, r0, #0x1f
 	b _0800D86E
 	.align 2, 0
-_0800D85C: .4byte gScript
+_0800D85C: .4byte gGame
 _0800D860: .4byte 0x00008382
 _0800D864:
 	mov r1, sp
@@ -25661,7 +25661,7 @@ _0800DD7A:
 	subs r0, #0x10
 _0800DD80:
 	strh r0, [r6]
-	ldr r0, _0800DDF0 @ =gScript
+	ldr r0, _0800DDF0 @ =gGame
 	ldrb r0, [r0, #0x11]
 	lsls r0, r0, #0x1a
 	cmp r0, #0
@@ -25716,14 +25716,14 @@ _0800DDE6:
 	ldrh r0, [r2]
 	b _0800DDFA
 	.align 2, 0
-_0800DDF0: .4byte gScript
+_0800DDF0: .4byte gGame
 _0800DDF4:
 	mov r3, sl
 	ldrh r0, [r3]
 	adds r0, #0x10
 _0800DDFA:
 	strh r0, [r6]
-	ldr r0, _0800DE60 @ =gScript
+	ldr r0, _0800DE60 @ =gGame
 	ldrb r0, [r0, #0x11]
 	lsls r0, r0, #0x1a
 	cmp r0, #0
@@ -25772,7 +25772,7 @@ _0800DE4C:
 	bl sub_0800E550
 	b _0800E31A
 	.align 2, 0
-_0800DE60: .4byte gScript
+_0800DE60: .4byte gGame
 _0800DE64:
 	cmp r0, #0
 	bgt _0800DE6A
@@ -25817,7 +25817,7 @@ _0800DEAC:
 	subs r0, #0x10
 _0800DEB2:
 	strh r0, [r6]
-	ldr r0, _0800DF24 @ =gScript
+	ldr r0, _0800DF24 @ =gGame
 	ldrb r0, [r0, #0x11]
 	lsls r0, r0, #0x1a
 	cmp r0, #0
@@ -25872,14 +25872,14 @@ _0800DF18:
 	ldrh r0, [r1]
 	b _0800DF2E
 	.align 2, 0
-_0800DF24: .4byte gScript
+_0800DF24: .4byte gGame
 _0800DF28:
 	mov r2, sl
 	ldrh r0, [r2]
 	adds r0, #0x10
 _0800DF2E:
 	strh r0, [r6]
-	ldr r0, _0800DF94 @ =gScript
+	ldr r0, _0800DF94 @ =gGame
 	ldrb r0, [r0, #0x11]
 	lsls r0, r0, #0x1a
 	cmp r0, #0
@@ -25928,7 +25928,7 @@ _0800DF80:
 	bl sub_0800E550
 	b _0800E31A
 	.align 2, 0
-_0800DF94: .4byte gScript
+_0800DF94: .4byte gGame
 _0800DF98:
 	lsls r0, r1, #0x10
 	movs r3, #1
@@ -26918,7 +26918,7 @@ sub_0800E6FC: @ 0x0800E6FC
 	sub sp, #8
 	mov r8, r0
 	mov sl, r1
-	ldr r6, _0800E7F4 @ =gScript
+	ldr r6, _0800E7F4 @ =gGame
 	ldrb r1, [r6, #8]
 	movs r0, #1
 	ands r0, r1
@@ -27020,7 +27020,7 @@ _0800E7C4:
 	adds r0, r0, r2
 	cmp r1, r0
 	bge _0800E812
-	ldr r6, _0800E7F4 @ =gScript
+	ldr r6, _0800E7F4 @ =gGame
 	ldrb r0, [r6]
 	cmp r0, #0
 	bne _0800E848
@@ -27039,7 +27039,7 @@ _0800E7C4:
 	strh r0, [r1]
 	b _0800E848
 	.align 2, 0
-_0800E7F4: .4byte gScript
+_0800E7F4: .4byte gGame
 _0800E7F8: .4byte 0x00008370
 _0800E7FC: .4byte gUnknown_02016028
 _0800E800: .4byte 0x0001ED10
@@ -27054,7 +27054,7 @@ _0800E812:
 	lsrs r7, r0, #0x10
 	adds r5, #0xd0
 	adds r4, #0xd0
-	ldr r0, _0800E83C @ =gScript
+	ldr r0, _0800E83C @ =gGame
 	ldr r3, _0800E840 @ =0x00008370
 	adds r0, r0, r3
 	ldrb r0, [r0]
@@ -27062,7 +27062,7 @@ _0800E812:
 	blo _0800E762
 _0800E828:
 	bl sub_0800EED0
-	ldr r0, _0800E83C @ =gScript
+	ldr r0, _0800E83C @ =gGame
 	ldr r1, _0800E844 @ =0x0000844E
 	adds r0, r0, r1
 	ldrh r0, [r0]
@@ -27072,7 +27072,7 @@ _0800E838:
 	movs r0, #1
 	b _0800E84A
 	.align 2, 0
-_0800E83C: .4byte gScript
+_0800E83C: .4byte gGame
 _0800E840: .4byte 0x00008370
 _0800E844: .4byte 0x0000844E
 _0800E848:
@@ -27135,7 +27135,7 @@ sub_0800E860: @ 0x0800E860
 	bne _0800E992
 	b _0800EA1E
 _0800E8AE:
-	ldr r2, _0800E978 @ =gScript
+	ldr r2, _0800E978 @ =gGame
 	ldrb r1, [r2, #8]
 	movs r0, #1
 	ands r0, r1
@@ -27223,7 +27223,7 @@ _0800E950:
 	adds r0, r0, r2
 	cmp r1, r0
 	bge _0800E984
-	ldr r4, _0800E978 @ =gScript
+	ldr r4, _0800E978 @ =gGame
 	ldrb r0, [r4]
 	cmp r0, #0
 	bne _0800E974
@@ -27239,7 +27239,7 @@ _0800E974:
 	movs r0, #0
 	b _0800EA20
 	.align 2, 0
-_0800E978: .4byte gScript
+_0800E978: .4byte gGame
 _0800E97C: .4byte 0x0000829B
 _0800E980: .4byte 0x00008456
 _0800E984:
@@ -27255,7 +27255,7 @@ _0800E992:
 	bl get_obj_direct
 	adds r4, r0, #0
 	movs r7, #0
-	ldr r0, _0800EA30 @ =gScript
+	ldr r0, _0800EA30 @ =gGame
 	ldr r3, _0800EA34 @ =0x00008370
 	adds r0, r0, r3
 	ldrb r1, [r0]
@@ -27337,7 +27337,7 @@ _0800EA20:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0800EA30: .4byte gScript
+_0800EA30: .4byte gGame
 _0800EA34: .4byte 0x00008370
 
 	thumb_func_start sub_0800EA38
@@ -27345,7 +27345,7 @@ sub_0800EA38: @ 0x0800EA38
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r4, r1, #0
-	ldr r3, _0800EAB8 @ =gScript
+	ldr r3, _0800EAB8 @ =gGame
 	ldr r0, _0800EABC @ =0x000082B7
 	adds r2, r3, r0
 	ldrb r1, [r2]
@@ -27411,13 +27411,13 @@ _0800EAAC:
 	muls r0, r2, r0
 	b _0800EADE
 	.align 2, 0
-_0800EAB8: .4byte gScript
+_0800EAB8: .4byte gGame
 _0800EABC: .4byte 0x000082B7
 _0800EAC0: .4byte 0x000082B8
 _0800EAC4: .4byte 0x000001E9
 _0800EAC8: .4byte 0x0000FFFF
 _0800EACC:
-	ldr r0, _0800EB10 @ =gScript
+	ldr r0, _0800EB10 @ =gGame
 	ldr r2, _0800EB14 @ =0x00009D10
 	adds r0, r0, r2
 	ldr r0, [r0]
@@ -27457,11 +27457,11 @@ _0800EB04:
 	muls r0, r2, r0
 	b _0800EB2E
 	.align 2, 0
-_0800EB10: .4byte gScript
+_0800EB10: .4byte gGame
 _0800EB14: .4byte 0x00009D10
 _0800EB18: .4byte 0x0000FFFF
 _0800EB1C:
-	ldr r0, _0800EB90 @ =gScript
+	ldr r0, _0800EB90 @ =gGame
 	ldr r2, _0800EB94 @ =0x00009D10
 	adds r0, r0, r2
 	ldr r0, [r0]
@@ -27520,7 +27520,7 @@ _0800EB30:
 	movs r0, #1
 	b _0800EB9A
 	.align 2, 0
-_0800EB90: .4byte gScript
+_0800EB90: .4byte gGame
 _0800EB94: .4byte 0x00009D10
 _0800EB98:
 	movs r0, #0
@@ -27534,7 +27534,7 @@ sub_0800EBA0: @ 0x0800EBA0
 	push {lr}
 	adds r2, r0, #0
 	adds r3, r1, #0
-	ldr r0, _0800EBC8 @ =gScript
+	ldr r0, _0800EBC8 @ =gGame
 	ldr r1, _0800EBCC @ =0x00008494
 	adds r0, r0, r1
 	ldrb r0, [r0]
@@ -27551,7 +27551,7 @@ sub_0800EBA0: @ 0x0800EBA0
 	bl sub_0801AF00
 	b _0800EBD2
 	.align 2, 0
-_0800EBC8: .4byte gScript
+_0800EBC8: .4byte gGame
 _0800EBCC: .4byte 0x00008494
 _0800EBD0:
 	movs r0, #0
@@ -27583,7 +27583,7 @@ sub_0800EBF8: @ 0x0800EBF8
 	push {lr}
 	adds r2, r0, #0
 	adds r3, r1, #0
-	ldr r0, _0800EC20 @ =gScript
+	ldr r0, _0800EC20 @ =gGame
 	ldr r1, _0800EC24 @ =0x00008494
 	adds r0, r0, r1
 	ldrb r0, [r0]
@@ -27600,7 +27600,7 @@ sub_0800EBF8: @ 0x0800EBF8
 	bl sub_0801B040
 	b _0800EC2A
 	.align 2, 0
-_0800EC20: .4byte gScript
+_0800EC20: .4byte gGame
 _0800EC24: .4byte 0x00008494
 _0800EC28:
 	movs r0, #0
@@ -27761,7 +27761,7 @@ _0800ED34:
 	adds r1, r7, #0
 	bl sub_08025718
 _0800ED4E:
-	ldr r0, _0800ED68 @ =gScript
+	ldr r0, _0800ED68 @ =gGame
 	ldr r1, _0800ED6C @ =0x00008494
 	adds r0, r0, r1
 	ldrb r0, [r0]
@@ -27771,7 +27771,7 @@ _0800ED58: .4byte gUnknown_02034D38
 _0800ED5C: .4byte gUnknown_0200E094
 _0800ED60: .4byte gUnknown_02016028
 _0800ED64: .4byte 0x0001ED10
-_0800ED68: .4byte gScript
+_0800ED68: .4byte gGame
 _0800ED6C: .4byte 0x00008494
 _0800ED70:
 	ldr r0, _0800EDA8 @ =gUnknown_02016028
@@ -27781,7 +27781,7 @@ _0800ED70:
 	lsls r0, r0, #0x1d
 	cmp r0, #0
 	bge _0800EDBC
-	ldr r0, _0800EDB0 @ =gScript
+	ldr r0, _0800EDB0 @ =gGame
 	ldr r1, _0800EDB4 @ =0x00008494
 	adds r6, r0, r1
 	ldrb r0, [r6]
@@ -27804,7 +27804,7 @@ _0800EDA0:
 	.align 2, 0
 _0800EDA8: .4byte gUnknown_02016028
 _0800EDAC: .4byte 0x0001ED10
-_0800EDB0: .4byte gScript
+_0800EDB0: .4byte gGame
 _0800EDB4: .4byte 0x00008494
 _0800EDB8:
 	movs r0, #1
@@ -27896,7 +27896,7 @@ _0800EE4C: .4byte gUnknown_0200E094
 sub_0800EE50: @ 0x0800EE50
 	push {r4, r5, lr}
 	adds r2, r0, #0
-	ldr r5, _0800EE80 @ =gScript
+	ldr r5, _0800EE80 @ =gGame
 	ldr r1, _0800EE84 @ =0x00008494
 	adds r0, r5, r1
 	ldrb r0, [r0]
@@ -27919,7 +27919,7 @@ _0800EE7A:
 	movs r0, #0
 	b _0800EEBC
 	.align 2, 0
-_0800EE80: .4byte gScript
+_0800EE80: .4byte gGame
 _0800EE84: .4byte 0x00008494
 _0800EE88: .4byte 0x0000844E
 _0800EE8C:
@@ -27958,7 +27958,7 @@ _0800EECC: .4byte 0x00008424
 	thumb_func_start sub_0800EED0
 sub_0800EED0: @ 0x0800EED0
 	push {r4, r5, r6, r7, lr}
-	ldr r5, _0800EF78 @ =gScript
+	ldr r5, _0800EF78 @ =gGame
 	ldr r1, _0800EF7C @ =0x00008494
 	adds r0, r5, r1
 	ldrb r0, [r0]
@@ -28004,7 +28004,7 @@ _0800EF1C:
 _0800EF26:
 	cmp r4, #0
 	beq _0800EF94
-	ldr r0, _0800EF78 @ =gScript
+	ldr r0, _0800EF78 @ =gGame
 	ldr r1, _0800EF90 @ =0x0000829B
 	adds r0, r0, r1
 	ldrb r0, [r0]
@@ -28037,7 +28037,7 @@ _0800EF44:
 _0800EF64:
 	adds r0, r4, #0
 	bl object_interact
-	ldr r0, _0800EF78 @ =gScript
+	ldr r0, _0800EF78 @ =gGame
 	ldr r1, _0800EF7C @ =0x00008494
 	adds r0, r0, r1
 	ldrb r0, [r0]
@@ -28045,7 +28045,7 @@ _0800EF64:
 	lsrs r0, r0, #0x1f
 	b _0800EF96
 	.align 2, 0
-_0800EF78: .4byte gScript
+_0800EF78: .4byte gGame
 _0800EF7C: .4byte 0x00008494
 _0800EF80: .4byte 0x0000844C
 _0800EF84: .4byte 0x0000FFFF
@@ -28063,7 +28063,7 @@ _0800EF96:
 sub_0800EF9C: @ 0x0800EF9C
 	push {r4, lr}
 	mov ip, r0
-	ldr r0, _0800EFE4 @ =gScript
+	ldr r0, _0800EFE4 @ =gGame
 	ldr r1, _0800EFE8 @ =0x00008494
 	adds r4, r0, r1
 	ldrb r0, [r4]
@@ -28098,7 +28098,7 @@ _0800EFD6:
 	lsrs r0, r0, #0x1f
 	b _0800EFEE
 	.align 2, 0
-_0800EFE4: .4byte gScript
+_0800EFE4: .4byte gGame
 _0800EFE8: .4byte 0x00008494
 _0800EFEC:
 	movs r0, #0
@@ -28111,7 +28111,7 @@ _0800EFEE:
 sub_0800EFF4: @ 0x0800EFF4
 	push {r4, lr}
 	adds r3, r0, #0
-	ldr r0, _0800F018 @ =gScript
+	ldr r0, _0800F018 @ =gGame
 	ldr r1, _0800F01C @ =0x00008494
 	adds r4, r0, r1
 	ldrb r0, [r4]
@@ -28129,7 +28129,7 @@ _0800F014:
 	movs r0, #0
 	b _0800F038
 	.align 2, 0
-_0800F018: .4byte gScript
+_0800F018: .4byte gGame
 _0800F01C: .4byte 0x00008494
 _0800F020:
 	adds r0, r3, #0
@@ -28156,7 +28156,7 @@ sub_0800F040: @ 0x0800F040
 	movs r0, #0
 	bl get_obj_direct
 	adds r3, r0, #0
-	ldr r1, _0800F07C @ =gScript
+	ldr r1, _0800F07C @ =gGame
 	ldr r2, _0800F080 @ =0x00008494
 	adds r0, r1, r2
 	ldrb r0, [r0]
@@ -28182,7 +28182,7 @@ _0800F05C:
 	adds r5, #0xbe
 	b _0800F0BA
 	.align 2, 0
-_0800F07C: .4byte gScript
+_0800F07C: .4byte gGame
 _0800F080: .4byte 0x00008494
 _0800F084: .4byte 0x000067AC
 _0800F088:
@@ -28198,7 +28198,7 @@ _0800F088:
 	cmp r1, r0
 	bne _0800F0BA
 _0800F09E:
-	ldr r0, _0800F0D8 @ =gScript
+	ldr r0, _0800F0D8 @ =gGame
 	ldr r1, _0800F0DC @ =0x0000848C
 	adds r0, r0, r1
 	ldrh r0, [r0]
@@ -28224,14 +28224,14 @@ _0800F0C6:
 	beq _0800F0E0
 	cmp r0, #9
 	beq _0800F0F8
-	ldr r6, _0800F0D8 @ =gScript
+	ldr r6, _0800F0D8 @ =gGame
 	b _0800F1A0
 	.align 2, 0
 _0800F0D4: .4byte 0x00000363
-_0800F0D8: .4byte gScript
+_0800F0D8: .4byte gGame
 _0800F0DC: .4byte 0x0000848C
 _0800F0E0:
-	ldr r0, _0800F0F0 @ =gScript
+	ldr r0, _0800F0F0 @ =gGame
 	ldr r2, _0800F0F4 @ =0x0000829B
 	adds r1, r0, r2
 	ldrb r1, [r1]
@@ -28240,10 +28240,10 @@ _0800F0E0:
 	beq _0800F1A0
 	b _0800F30C
 	.align 2, 0
-_0800F0F0: .4byte gScript
+_0800F0F0: .4byte gGame
 _0800F0F4: .4byte 0x0000829B
 _0800F0F8:
-	ldr r1, _0800F160 @ =gScript
+	ldr r1, _0800F160 @ =gGame
 	ldr r2, _0800F164 @ =0x0000829B
 	adds r0, r1, r2
 	ldrb r2, [r0]
@@ -28298,7 +28298,7 @@ _0800F14E:
 	adds r0, r6, r1
 	b _0800F27E
 	.align 2, 0
-_0800F160: .4byte gScript
+_0800F160: .4byte gGame
 _0800F164: .4byte 0x0000829B
 _0800F168: .4byte 0x0000014D
 _0800F16C: .4byte 0x00008494
@@ -28412,7 +28412,7 @@ _0800F220:
 	cmp r0, #0
 	bge _0800F294
 _0800F246:
-	ldr r0, _0800F288 @ =gScript
+	ldr r0, _0800F288 @ =gGame
 	ldr r2, _0800F28C @ =0x0000829B
 	adds r0, r0, r2
 	ldrb r0, [r0]
@@ -28438,7 +28438,7 @@ _0800F26E:
 	movs r2, #0
 	bl object_interact
 _0800F278:
-	ldr r0, _0800F288 @ =gScript
+	ldr r0, _0800F288 @ =gGame
 	ldr r1, _0800F290 @ =0x00008494
 	adds r0, r0, r1
 _0800F27E:
@@ -28447,11 +28447,11 @@ _0800F27E:
 	lsrs r0, r0, #0x1f
 	b _0800F30E
 	.align 2, 0
-_0800F288: .4byte gScript
+_0800F288: .4byte gGame
 _0800F28C: .4byte 0x0000829B
 _0800F290: .4byte 0x00008494
 _0800F294:
-	ldr r0, _0800F2F4 @ =gScript
+	ldr r0, _0800F2F4 @ =gGame
 	ldr r2, _0800F2F8 @ =0x0000829B
 	adds r0, r0, r2
 	ldrb r0, [r0]
@@ -28498,7 +28498,7 @@ _0800F2B0:
 	movs r0, #1
 	b _0800F30E
 	.align 2, 0
-_0800F2F4: .4byte gScript
+_0800F2F4: .4byte gGame
 _0800F2F8: .4byte 0x0000829B
 _0800F2FC: .4byte 0x00000646
 _0800F300:
@@ -28520,7 +28520,7 @@ sub_0800F314: @ 0x0800F314
 	push {r4, r5, r6, lr}
 	adds r3, r0, #0
 	adds r6, r1, #0
-	ldr r1, _0800F350 @ =gScript
+	ldr r1, _0800F350 @ =gGame
 	ldr r4, _0800F354 @ =0x00008494
 	adds r0, r1, r4
 	ldrb r0, [r0]
@@ -28550,7 +28550,7 @@ _0800F338:
 	strh r5, [r2]
 	b _0800F364
 	.align 2, 0
-_0800F350: .4byte gScript
+_0800F350: .4byte gGame
 _0800F354: .4byte 0x00008494
 _0800F358:
 	movs r0, #1
@@ -28720,7 +28720,7 @@ _0800F472:
 	lsls r0, r0, #0x1e
 	cmp r0, #0
 	blt _0800F574
-	ldr r0, _0800F4C8 @ =gScript
+	ldr r0, _0800F4C8 @ =gGame
 	ldr r1, _0800F4CC @ =0x000082A6
 	adds r0, r0, r1
 	ldrh r0, [r0]
@@ -28755,7 +28755,7 @@ _0800F472:
 	ldrh r0, [r6]
 	b _0800F4DA
 	.align 2, 0
-_0800F4C8: .4byte gScript
+_0800F4C8: .4byte gGame
 _0800F4CC: .4byte 0x000082A6
 _0800F4D0:
 	bl sub_0801A5EC
@@ -28826,7 +28826,7 @@ _0800F506:
 	movs r0, #0
 	movs r1, #0
 	bl sub_0802AAEC
-	ldr r0, _0800F56C @ =gScript
+	ldr r0, _0800F56C @ =gGame
 	ldr r1, _0800F570 @ =0x000082A6
 	adds r0, r0, r1
 	movs r1, #0x1e
@@ -28834,7 +28834,7 @@ _0800F506:
 	movs r0, #0
 	b _0800F576
 	.align 2, 0
-_0800F56C: .4byte gScript
+_0800F56C: .4byte gGame
 _0800F570: .4byte 0x000082A6
 _0800F574:
 	movs r0, #1
@@ -28912,7 +28912,7 @@ sub_0800F5EC: @ 0x0800F5EC
 	lsrs r4, r0, #0x10
 	lsls r1, r1, #0x10
 	lsrs r6, r1, #0x10
-	ldr r0, _0800F67C @ =gScript
+	ldr r0, _0800F67C @ =gGame
 	ldr r1, _0800F680 @ =0x00008494
 	adds r0, r0, r1
 	ldrb r0, [r0]
@@ -28950,7 +28950,7 @@ _0800F62A:
 	mov sl, r4
 	cmp r1, #0
 	bge _0800F684
-	ldr r0, _0800F67C @ =gScript
+	ldr r0, _0800F67C @ =gGame
 	ldrb r0, [r0, #0x11]
 	lsls r0, r0, #0x1a
 	lsrs r4, r0, #0x1f
@@ -28975,7 +28975,7 @@ _0800F670:
 	str r0, [sp, #4]
 	b _0800F73E
 	.align 2, 0
-_0800F67C: .4byte gScript
+_0800F67C: .4byte gGame
 _0800F680: .4byte 0x00008494
 _0800F684:
 	mov r0, sl
@@ -28986,7 +28986,7 @@ _0800F684:
 	lsrs r0, r0, #0x10
 	cmp r4, r0
 	blt _0800F6C8
-	ldr r0, _0800F6C4 @ =gScript
+	ldr r0, _0800F6C4 @ =gGame
 	ldrb r0, [r0, #0x11]
 	lsls r0, r0, #0x1a
 	lsrs r4, r0, #0x1f
@@ -29011,7 +29011,7 @@ _0800F6BA:
 	str r0, [sp, #4]
 	b _0800F73E
 	.align 2, 0
-_0800F6C4: .4byte gScript
+_0800F6C4: .4byte gGame
 _0800F6C8:
 	mov r2, sl
 	movs r0, #2
@@ -29020,7 +29020,7 @@ _0800F6C8:
 	subs r0, #8
 	cmp r0, #0
 	bge _0800F708
-	ldr r0, _0800F704 @ =gScript
+	ldr r0, _0800F704 @ =gGame
 	ldrb r0, [r0, #0x11]
 	lsls r0, r0, #0x1b
 	lsrs r4, r0, #0x1f
@@ -29045,14 +29045,14 @@ _0800F6FA:
 	str r0, [sp, #4]
 	b _0800F73E
 	.align 2, 0
-_0800F704: .4byte gScript
+_0800F704: .4byte gGame
 _0800F708:
 	bl sub_0801A604
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r4, r0
 	blt _0800F758
-	ldr r0, _0800F754 @ =gScript
+	ldr r0, _0800F754 @ =gGame
 	ldrb r0, [r0, #0x11]
 	lsls r0, r0, #0x1b
 	lsrs r4, r0, #0x1f
@@ -29086,7 +29086,7 @@ _0800F73E:
 	movs r0, #0
 	b _0800F98A
 	.align 2, 0
-_0800F754: .4byte gScript
+_0800F754: .4byte gGame
 _0800F758:
 	movs r0, #0
 	bl sub_08036CE0
@@ -29352,7 +29352,7 @@ _0800F934:
 	movs r0, #1
 	mov r3, sb
 	bl sub_0801A434
-	ldr r0, _0800F97C @ =gScript
+	ldr r0, _0800F97C @ =gGame
 	add r1, sp, #0x18
 	ldrh r1, [r1]
 	ldr r2, _0800F980 @ =0x00005982
@@ -29361,7 +29361,7 @@ _0800F934:
 	movs r0, #0
 	b _0800F98A
 	.align 2, 0
-_0800F97C: .4byte gScript
+_0800F97C: .4byte gGame
 _0800F980: .4byte 0x00005982
 _0800F984:
 	movs r0, #1
@@ -29664,7 +29664,7 @@ _0800FB8C:
 	cmp r5, r0
 	bne _0800FB36
 _0800FBB6:
-	ldr r1, _0800FBFC @ =gScript
+	ldr r1, _0800FBFC @ =gGame
 	ldrb r0, [r1, #0x11]
 	lsls r0, r0, #0x1a
 	cmp r0, #0
@@ -29677,7 +29677,7 @@ _0800FBB6:
 	ldrh r0, [r0, #0x14]
 	strh r0, [r7]
 _0800FBCE:
-	ldr r1, _0800FBFC @ =gScript
+	ldr r1, _0800FBFC @ =gGame
 	ldrb r0, [r1, #0x11]
 	lsls r0, r0, #0x1b
 	cmp r0, #0
@@ -29701,7 +29701,7 @@ _0800FBE8:
 	bx r0
 	.align 2, 0
 _0800FBF8: .4byte 0x0000FFFF
-_0800FBFC: .4byte gScript
+_0800FBFC: .4byte gGame
 
 	thumb_func_start sub_0800FC00
 sub_0800FC00: @ 0x0800FC00
@@ -29754,7 +29754,7 @@ _0800FC20:
 	adds r0, r4, #0
 	bl sub_0801A218
 _0800FC68:
-	ldr r4, _0800FCD4 @ =gScript
+	ldr r4, _0800FCD4 @ =gGame
 	ldr r1, _0800FCD8 @ =0x000067AC
 	adds r0, r4, r1
 	ldrh r0, [r0]
@@ -29798,7 +29798,7 @@ _0800FCC4: .4byte gUnknown_02005C0C
 _0800FCC8: .4byte 0x00008488
 _0800FCCC: .4byte gSave
 _0800FCD0: .4byte 0x00000222
-_0800FCD4: .4byte gScript
+_0800FCD4: .4byte gGame
 _0800FCD8: .4byte 0x000067AC
 _0800FCDC: .4byte 0x0000595C
 _0800FCE0: .4byte 0x0000598C
@@ -29864,7 +29864,7 @@ _0800FD50:
 	bl sub_080012BC
 	cmp r4, #2
 	bls _0800FD50
-	ldr r0, _0800FDA0 @ =gScript
+	ldr r0, _0800FDA0 @ =gGame
 	ldr r1, _0800FDA4 @ =0x000067AC
 	adds r0, r0, r1
 	ldrh r0, [r0]
@@ -29884,7 +29884,7 @@ _0800FD50:
 _0800FD94: .4byte 0x00005970
 _0800FD98: .4byte 0x00005972
 _0800FD9C: .4byte gUnknown_02016078
-_0800FDA0: .4byte gScript
+_0800FDA0: .4byte gGame
 _0800FDA4: .4byte 0x000067AC
 
 	thumb_func_start sub_0800FDA8
@@ -29988,7 +29988,7 @@ sub_0800FDE8: @ 0x0800FDE8
 	ldr r2, _0800FF4C @ =0x000067B4
 	adds r0, r6, r2
 	strh r4, [r0]
-	ldr r0, _0800FF50 @ =gScript
+	ldr r0, _0800FF50 @ =gGame
 	adds r0, r0, r3
 	ldrh r0, [r0]
 	bl sub_0801B3B4
@@ -30051,7 +30051,7 @@ _0800FEAA:
 	adds r1, r4, #0
 	ands r0, r1
 	strb r0, [r2]
-	ldr r0, _0800FF50 @ =gScript
+	ldr r0, _0800FF50 @ =gGame
 	ldr r5, _0800FF64 @ =0x00008494
 	adds r0, r0, r5
 	ldrb r0, [r0]
@@ -30087,7 +30087,7 @@ _0800FF40: .4byte 0x000067B9
 _0800FF44: .4byte 0x000067AC
 _0800FF48: .4byte 0x000067BA
 _0800FF4C: .4byte 0x000067B4
-_0800FF50: .4byte gScript
+_0800FF50: .4byte gGame
 _0800FF54: .4byte 0x000058BC
 _0800FF58: .4byte 0x000058BE
 _0800FF5C: .4byte 0x000058D6
@@ -30310,7 +30310,7 @@ _0801009E:
 	adds r1, r6, r2
 	ldrh r2, [r1]
 	strh r0, [r1]
-	ldr r0, _080101C8 @ =gScript
+	ldr r0, _080101C8 @ =gGame
 	ldr r5, _080101CC @ =0x00008494
 	adds r0, r0, r5
 	ldrb r0, [r0]
@@ -30394,7 +30394,7 @@ _080101B8: .4byte 0x000121BB
 _080101BC: .4byte 0x00006790
 _080101C0: .4byte 0x00006792
 _080101C4: .4byte 0x00006794
-_080101C8: .4byte gScript
+_080101C8: .4byte gGame
 _080101CC: .4byte 0x00008494
 _080101D0: .4byte 0x000067B8
 _080101D4: .4byte 0x00005950
@@ -30441,7 +30441,7 @@ sub_080101F8: @ 0x080101F8
 	movs r1, #0xc
 	orrs r0, r1
 	strb r0, [r2]
-	ldr r0, _08010320 @ =gScript
+	ldr r0, _08010320 @ =gGame
 	ldr r2, _08010324 @ =0x000067AC
 	adds r0, r0, r2
 	ldrh r0, [r0]
@@ -30552,7 +30552,7 @@ _08010266:
 	.align 2, 0
 _08010318: .4byte 0x000067B9
 _0801031C: .4byte 0x000067BA
-_08010320: .4byte gScript
+_08010320: .4byte gGame
 _08010324: .4byte 0x000067AC
 _08010328: .4byte 0x000058BC
 _0801032C: .4byte 0x000058BE
@@ -30654,7 +30654,7 @@ _0801037E:
 	adds r1, r6, r2
 	ldrh r2, [r1]
 	strh r0, [r1]
-	ldr r0, _08010494 @ =gScript
+	ldr r0, _08010494 @ =gGame
 	ldr r1, _08010498 @ =0x00008494
 	adds r0, r0, r1
 	ldrb r0, [r0]
@@ -30728,7 +30728,7 @@ _08010484: .4byte 0x000121BB
 _08010488: .4byte 0x00006790
 _0801048C: .4byte 0x00006792
 _08010490: .4byte 0x00006794
-_08010494: .4byte gScript
+_08010494: .4byte gGame
 _08010498: .4byte 0x00008494
 _0801049C: .4byte 0x00005950
 _080104A0: .4byte 0x0000594F
@@ -30809,7 +30809,7 @@ sub_08010528: @ 0x08010528
 	subs r0, #0x78
 	b _0801055A
 _08010542:
-	ldr r0, _0801056C @ =gScript
+	ldr r0, _0801056C @ =gGame
 	ldrb r0, [r0, #0x11]
 	lsls r0, r0, #0x1a
 	lsrs r0, r0, #0x1f
@@ -30831,10 +30831,10 @@ _0801055A:
 	subs r0, #0x60
 	b _0801058C
 	.align 2, 0
-_0801056C: .4byte gScript
+_0801056C: .4byte gGame
 _08010570: .4byte 0x0000FF88
 _08010574:
-	ldr r0, _08010594 @ =gScript
+	ldr r0, _08010594 @ =gGame
 	ldrb r0, [r0, #0x11]
 	lsls r0, r0, #0x1b
 	lsrs r0, r0, #0x1f
@@ -30851,7 +30851,7 @@ _0801058C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08010594: .4byte gScript
+_08010594: .4byte gGame
 _08010598: .4byte 0x0000FFA0
 
 	thumb_func_start sub_0801059C
@@ -30864,7 +30864,7 @@ sub_0801059C: @ 0x0801059C
 	bl sub_0801A604
 	lsls r0, r0, #0x10
 	lsrs r1, r0, #0x10
-	ldr r0, _080105F0 @ =gScript
+	ldr r0, _080105F0 @ =gGame
 	ldrb r0, [r0, #0x11]
 	lsls r0, r0, #0x1a
 	cmp r0, #0
@@ -30879,7 +30879,7 @@ sub_0801059C: @ 0x0801059C
 	subs r0, #0xf0
 	strh r0, [r4]
 _080105CC:
-	ldr r0, _080105F0 @ =gScript
+	ldr r0, _080105F0 @ =gGame
 	ldrb r0, [r0, #0x11]
 	lsls r0, r0, #0x1b
 	cmp r0, #0
@@ -30898,7 +30898,7 @@ _080105E8:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080105F0: .4byte gScript
+_080105F0: .4byte gGame
 
 	thumb_func_start sub_080105F4
 sub_080105F4: @ 0x080105F4
@@ -31070,7 +31070,7 @@ _08010724:
 _08010738:
 	ldrh r0, [r6, #0x18]
 	bl sub_0801B414
-	ldr r4, _0801077C @ =gScript
+	ldr r4, _0801077C @ =gGame
 	str r0, [r4, #0x28]
 	movs r2, #0xc0
 	lsls r2, r2, #1
@@ -31084,7 +31084,7 @@ _08010738:
 	movs r5, #0
 	adds r4, #0x5c
 _0801075C:
-	ldr r2, _0801077C @ =gScript
+	ldr r2, _0801077C @ =gGame
 	cmp r5, #0
 	bne _08010780
 	ldrb r0, [r2, #0xf]
@@ -31097,7 +31097,7 @@ _0801075C:
 _08010770: .4byte gUnknown_02016028
 _08010774: .4byte 0x000121B8
 _08010778: .4byte 0x000121BC
-_0801077C: .4byte gScript
+_0801077C: .4byte gGame
 _08010780:
 	cmp r5, #1
 	bne _080107A8
@@ -31141,7 +31141,7 @@ _080107CE:
 	lsrs r5, r0, #0x10
 	cmp r5, #2
 	bls _0801075C
-	ldr r0, _080107FC @ =gScript
+	ldr r0, _080107FC @ =gGame
 	ldr r1, _08010800 @ =0x00004088
 	adds r4, r0, r1
 	ldr r3, _08010804 @ =0x0000408C
@@ -31158,7 +31158,7 @@ _080107CE:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080107FC: .4byte gScript
+_080107FC: .4byte gGame
 _08010800: .4byte 0x00004088
 _08010804: .4byte 0x0000408C
 
@@ -31211,7 +31211,7 @@ sub_0801084C: @ 0x0801084C
 	movs r7, #0
 	mov r8, sp
 _08010862:
-	ldr r3, _08010960 @ =gScript
+	ldr r3, _08010960 @ =gGame
 	cmp r4, #0
 	bne _08010870
 	ldrb r0, [r3, #0xf]
@@ -31263,7 +31263,7 @@ _0801087C:
 	adds r0, r3, r2
 	strh r4, [r0]
 _080108C4:
-	ldr r6, _08010960 @ =gScript
+	ldr r6, _08010960 @ =gGame
 	lsls r0, r4, #2
 	adds r1, r0, r6
 	ldrb r1, [r1, #0x1c]
@@ -31291,7 +31291,7 @@ _080108C4:
 	adds r0, r0, r1
 	strh r7, [r0]
 _080108FC:
-	ldr r6, _08010960 @ =gScript
+	ldr r6, _08010960 @ =gGame
 	adds r0, r5, r6
 	ldrb r0, [r0, #0x1d]
 	lsls r0, r0, #0x1e
@@ -31340,7 +31340,7 @@ _08010946:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08010960: .4byte gScript
+_08010960: .4byte gGame
 _08010964: .4byte 0x000067AC
 _08010968: .4byte 0x000067C4
 _0801096C: .4byte 0x000058B0
@@ -31364,7 +31364,7 @@ sub_0801097C: @ 0x0801097C
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
 	mov r8, r2
-	ldr r1, _080109C0 @ =gScript
+	ldr r1, _080109C0 @ =gGame
 	lsls r0, r5, #2
 	adds r0, r0, r1
 	ldrb r0, [r0, #0x1d]
@@ -31384,9 +31384,9 @@ sub_0801097C: @ 0x0801097C
 	movs r6, #0x10
 	b _080109EA
 	.align 2, 0
-_080109C0: .4byte gScript
+_080109C0: .4byte gGame
 _080109C4:
-	ldr r0, _080109DC @ =gScript
+	ldr r0, _080109DC @ =gGame
 	ldr r1, _080109E0 @ =0x000067C4
 	adds r0, r0, r1
 	ldrb r0, [r0]
@@ -31398,7 +31398,7 @@ _080109C4:
 	movs r6, #0x10
 	b _080109EA
 	.align 2, 0
-_080109DC: .4byte gScript
+_080109DC: .4byte gGame
 _080109E0: .4byte 0x000067C4
 _080109E4:
 	movs r0, #0x10
@@ -31464,7 +31464,7 @@ sub_08010A40: @ 0x08010A40
 	adds r1, r3, #0
 	cmp r5, #0
 	bne _08010A66
-	ldr r0, _08010A84 @ =gScript
+	ldr r0, _08010A84 @ =gGame
 	ldrb r0, [r0, #0xf]
 	lsls r0, r0, #0x1f
 	cmp r0, #0
@@ -31473,7 +31473,7 @@ sub_08010A40: @ 0x08010A40
 _08010A66:
 	cmp r5, #1
 	bne _08010A76
-	ldr r0, _08010A84 @ =gScript
+	ldr r0, _08010A84 @ =gGame
 	ldrb r0, [r0, #0x11]
 	lsls r0, r0, #0x1c
 	cmp r0, #0
@@ -31488,7 +31488,7 @@ _08010A76:
 	beq _08010AF4
 	b _08010C24
 	.align 2, 0
-_08010A84: .4byte gScript
+_08010A84: .4byte gGame
 _08010A88:
 	cmp r1, #5
 	beq _08010A94
@@ -31498,7 +31498,7 @@ _08010A88:
 _08010A92:
 	b _08010C24
 _08010A94:
-	ldr r4, _08010AC8 @ =gScript
+	ldr r4, _08010AC8 @ =gGame
 	lsls r0, r5, #2
 	adds r0, r0, r4
 	ldrb r0, [r0, #0x1d]
@@ -31523,7 +31523,7 @@ _08010A94:
 	movs r2, #0x40
 	b _08010BEA
 	.align 2, 0
-_08010AC8: .4byte gScript
+_08010AC8: .4byte gGame
 _08010ACC: .4byte 0x000058E5
 _08010AD0:
 	movs r0, #2
@@ -31544,7 +31544,7 @@ _08010AD0:
 	adds r2, r7, #0
 	b _08010B56
 _08010AF4:
-	ldr r4, _08010B28 @ =gScript
+	ldr r4, _08010B28 @ =gGame
 	lsls r0, r5, #2
 	adds r0, r0, r4
 	ldrb r0, [r0, #0x1d]
@@ -31569,7 +31569,7 @@ _08010AF4:
 	movs r2, #0x40
 	b _08010BEA
 	.align 2, 0
-_08010B28: .4byte gScript
+_08010B28: .4byte gGame
 _08010B2C: .4byte 0x000058E5
 _08010B30:
 	movs r0, #0
@@ -31595,7 +31595,7 @@ _08010B56:
 	bl sub_08010C48
 	b _08010C24
 _08010B5E:
-	ldr r4, _08010B8C @ =gScript
+	ldr r4, _08010B8C @ =gGame
 	lsls r0, r5, #2
 	adds r0, r0, r4
 	ldrb r0, [r0, #0x1c]
@@ -31617,7 +31617,7 @@ _08010B5E:
 	adds r0, r0, r1
 	b _08010BE6
 	.align 2, 0
-_08010B8C: .4byte gScript
+_08010B8C: .4byte gGame
 _08010B90: .4byte 0x000058E5
 _08010B94:
 	movs r4, #0
@@ -31639,7 +31639,7 @@ _08010B94:
 	bl sub_0801124C
 	b _08010C24
 _08010BBC:
-	ldr r4, _08010BF0 @ =gScript
+	ldr r4, _08010BF0 @ =gGame
 	lsls r0, r5, #2
 	adds r0, r0, r4
 	ldrb r0, [r0, #0x1c]
@@ -31667,7 +31667,7 @@ _08010BEA:
 	strb r1, [r0]
 	b _08010C36
 	.align 2, 0
-_08010BF0: .4byte gScript
+_08010BF0: .4byte gGame
 _08010BF4: .4byte 0x000058E5
 _08010BF8:
 	movs r4, #0
@@ -31739,7 +31739,7 @@ sub_08010C48: @ 0x08010C48
 	bl sub_0801A638
 	lsls r0, r0, #0x10
 	lsrs r1, r0, #0x14
-	ldr r2, _08010CC0 @ =gScript
+	ldr r2, _08010CC0 @ =gGame
 	ldrb r0, [r2, #0x11]
 	lsls r0, r0, #0x1b
 	cmp r0, #0
@@ -31769,14 +31769,14 @@ _08010CB2:
 	lsrs r6, r0, #0x10
 	b _08010CCE
 	.align 2, 0
-_08010CC0: .4byte gScript
+_08010CC0: .4byte gGame
 _08010CC4: .4byte 0x000058E5
 _08010CC8:
 	cmp r6, r1
 	blo _08010CCE
 	b _08010F48
 _08010CCE:
-	ldr r1, _08010D04 @ =gScript
+	ldr r1, _08010D04 @ =gGame
 	ldrb r0, [r1, #0x11]
 	lsls r0, r0, #0x1a
 	cmp r0, #0
@@ -31805,7 +31805,7 @@ _08010CFC:
 	strh r0, [r1]
 	b _08010D10
 	.align 2, 0
-_08010D04: .4byte gScript
+_08010D04: .4byte gGame
 _08010D08: .4byte 0x000058E5
 _08010D0C:
 	mov r0, sp
@@ -31881,7 +31881,7 @@ _08010D92:
 	bls _08010D9C
 	b _08010F1E
 _08010D9C:
-	ldr r0, _08010DC8 @ =gScript
+	ldr r0, _08010DC8 @ =gGame
 	ldr r4, _08010DCC @ =0x00004088
 	adds r0, r0, r4
 	ldr r4, [r0]
@@ -31903,7 +31903,7 @@ _08010D9C:
 	b _08010DF4
 	.align 2, 0
 _08010DC4: .4byte gUnknown_02016078
-_08010DC8: .4byte gScript
+_08010DC8: .4byte gGame
 _08010DCC: .4byte 0x00004088
 _08010DD0: .4byte gUnknown_08D2D310
 _08010DD4:
@@ -32147,7 +32147,7 @@ sub_08010F58: @ 0x08010F58
 	bl sub_0801A638
 	lsls r0, r0, #0x10
 	lsrs r1, r0, #0x14
-	ldr r2, _08010FC4 @ =gScript
+	ldr r2, _08010FC4 @ =gGame
 	ldrb r0, [r2, #0x11]
 	lsls r0, r0, #0x1b
 	cmp r0, #0
@@ -32167,13 +32167,13 @@ _08010FB6:
 	lsrs r6, r0, #0x10
 	b _08010FCE
 	.align 2, 0
-_08010FC4: .4byte gScript
+_08010FC4: .4byte gGame
 _08010FC8:
 	cmp r6, r1
 	blo _08010FCE
 	b _0801123A
 _08010FCE:
-	ldr r2, _08010FF0 @ =gScript
+	ldr r2, _08010FF0 @ =gGame
 	ldrb r0, [r2, #0x11]
 	lsls r0, r0, #0x1a
 	lsrs r1, r0, #0x1f
@@ -32192,7 +32192,7 @@ _08010FE8:
 	strh r0, [r1]
 	b _08010FF8
 	.align 2, 0
-_08010FF0: .4byte gScript
+_08010FF0: .4byte gGame
 _08010FF4:
 	mov r0, sp
 	strh r1, [r0]
@@ -32271,7 +32271,7 @@ _08011082:
 	bls _0801108C
 	b _0801120E
 _0801108C:
-	ldr r0, _080110B8 @ =gScript
+	ldr r0, _080110B8 @ =gGame
 	ldr r4, _080110BC @ =0x00004088
 	adds r0, r0, r4
 	ldr r4, [r0]
@@ -32293,7 +32293,7 @@ _0801108C:
 	b _080110E4
 	.align 2, 0
 _080110B4: .4byte gUnknown_02016078
-_080110B8: .4byte gScript
+_080110B8: .4byte gGame
 _080110BC: .4byte 0x00004088
 _080110C0: .4byte gUnknown_08D2D310
 _080110C4:
@@ -32536,7 +32536,7 @@ sub_0801124C: @ 0x0801124C
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x14
 	str r0, [sp, #0x18]
-	ldr r1, _080112C4 @ =gScript
+	ldr r1, _080112C4 @ =gGame
 	ldrb r0, [r1, #0x11]
 	lsls r0, r0, #0x1a
 	cmp r0, #0
@@ -32566,7 +32566,7 @@ _080112B6:
 	lsrs r6, r0, #0x10
 	b _080112D4
 	.align 2, 0
-_080112C4: .4byte gScript
+_080112C4: .4byte gGame
 _080112C8: .4byte 0x000058E5
 _080112CC:
 	ldr r4, [sp, #0x14]
@@ -32574,7 +32574,7 @@ _080112CC:
 	blo _080112D4
 	b _08011554
 _080112D4:
-	ldr r1, _0801130C @ =gScript
+	ldr r1, _0801130C @ =gGame
 	ldrb r0, [r1, #0x11]
 	lsls r0, r0, #0x1b
 	cmp r0, #0
@@ -32604,7 +32604,7 @@ _08011304:
 	strh r0, [r1]
 	b _08011318
 	.align 2, 0
-_0801130C: .4byte gScript
+_0801130C: .4byte gGame
 _08011310: .4byte 0x000058E5
 _08011314:
 	mov r0, sp
@@ -32680,7 +32680,7 @@ _0801139A:
 	bls _080113A4
 	b _08011526
 _080113A4:
-	ldr r0, _080113D0 @ =gScript
+	ldr r0, _080113D0 @ =gGame
 	ldr r4, _080113D4 @ =0x00004088
 	adds r0, r0, r4
 	ldr r4, [r0]
@@ -32702,7 +32702,7 @@ _080113A4:
 	b _080113FC
 	.align 2, 0
 _080113CC: .4byte gUnknown_02016078
-_080113D0: .4byte gScript
+_080113D0: .4byte gGame
 _080113D4: .4byte 0x00004088
 _080113D8: .4byte gUnknown_08D2D310
 _080113DC:
@@ -33384,7 +33384,7 @@ sub_080118D0: @ 0x080118D0
 	mov r8, r0
 	adds r0, #0x40
 	str r0, [sp, #0x10]
-	ldr r0, _08011974 @ =gScript
+	ldr r0, _08011974 @ =gGame
 	ldr r1, _08011978 @ =0x000067C5
 	adds r0, r0, r1
 	ldrb r0, [r0]
@@ -33453,7 +33453,7 @@ _08011928:
 	adds r1, r4, #0
 	b _08011984
 	.align 2, 0
-_08011974: .4byte gScript
+_08011974: .4byte gGame
 _08011978: .4byte 0x000067C5
 _0801197C:
 	lsls r1, r6, #1
@@ -33699,7 +33699,7 @@ sub_08011ABC: @ 0x08011ABC
 	mov r3, r8
 	bl sub_08001378
 	adds r3, r0, #0
-	ldr r0, _08011B68 @ =gScript
+	ldr r0, _08011B68 @ =gGame
 	ldrh r1, [r0, #2]
 	ldr r0, _08011B6C @ =0x00004008
 	ands r0, r1
@@ -33710,7 +33710,7 @@ sub_08011ABC: @ 0x08011ABC
 	.align 2, 0
 _08011B60: .4byte 0x0000FFFF
 _08011B64: .4byte gUnknown_02016078
-_08011B68: .4byte gScript
+_08011B68: .4byte gGame
 _08011B6C: .4byte 0x00004008
 _08011B70: .4byte 0x040000D4
 _08011B74:
@@ -33789,7 +33789,7 @@ sub_08011BA4: @ 0x08011BA4
 	mov r3, sb
 	bl sub_08001378
 	adds r3, r0, #0
-	ldr r0, _08011C20 @ =gScript
+	ldr r0, _08011C20 @ =gGame
 	ldrh r1, [r0, #2]
 	ldr r0, _08011C24 @ =0x00004008
 	ands r0, r1
@@ -33799,7 +33799,7 @@ sub_08011BA4: @ 0x08011BA4
 	b _08011C2E
 	.align 2, 0
 _08011C1C: .4byte gUnknown_02016078
-_08011C20: .4byte gScript
+_08011C20: .4byte gGame
 _08011C24: .4byte 0x00004008
 _08011C28: .4byte 0x040000D4
 _08011C2C:
@@ -33885,7 +33885,7 @@ sub_08011C58: @ 0x08011C58
 	mov r1, sl
 	adds r7, r1, r0
 	adds r5, r6, r0
-	ldr r0, _08011D24 @ =gScript
+	ldr r0, _08011D24 @ =gGame
 	ldrh r1, [r0, #2]
 	ldr r0, _08011D28 @ =0x00004008
 	ands r0, r1
@@ -33930,7 +33930,7 @@ _08011CF0:
 	b _08011D88
 	.align 2, 0
 _08011D20: .4byte gUnknown_02016078
-_08011D24: .4byte gScript
+_08011D24: .4byte gGame
 _08011D28: .4byte 0x00004008
 _08011D2C: .4byte 0x040000D4
 _08011D30: .4byte 0x84A00000
@@ -34048,7 +34048,7 @@ sub_08011DA4: @ 0x08011DA4
 	mov r1, sl
 	adds r6, r1, r0
 	adds r4, r7, r0
-	ldr r0, _08011E60 @ =gScript
+	ldr r0, _08011E60 @ =gGame
 	ldrh r1, [r0, #2]
 	ldr r0, _08011E64 @ =0x00004008
 	ands r0, r1
@@ -34087,7 +34087,7 @@ _08011E34:
 	b _08011EA8
 	.align 2, 0
 _08011E5C: .4byte gUnknown_02016078
-_08011E60: .4byte gScript
+_08011E60: .4byte gGame
 _08011E64: .4byte 0x00004008
 _08011E68: .4byte 0x040000D4
 _08011E6C:
@@ -34589,7 +34589,7 @@ sub_08012238: @ 0x08012238
 	sub sp, #4
 	mov r1, sp
 	strh r0, [r1]
-	ldr r4, _08012260 @ =gScript
+	ldr r4, _08012260 @ =gGame
 	ldr r1, _08012264 @ =0x000067AC
 	adds r0, r4, r1
 	ldrh r0, [r0]
@@ -34601,7 +34601,7 @@ sub_08012238: @ 0x08012238
 	ldrb r0, [r6]
 	b _080122F8
 	.align 2, 0
-_08012260: .4byte gScript
+_08012260: .4byte gGame
 _08012264: .4byte 0x000067AC
 _08012268: .4byte 0x00005BD0
 _0801226C:
@@ -34965,7 +34965,7 @@ sub_080124F8: @ 0x080124F8
 	sub sp, #4
 	mov r1, sp
 	strh r0, [r1]
-	ldr r4, _08012518 @ =gScript
+	ldr r4, _08012518 @ =gGame
 	ldr r1, _0801251C @ =0x000067AC
 	adds r0, r4, r1
 	ldrh r0, [r0]
@@ -34977,7 +34977,7 @@ sub_080124F8: @ 0x080124F8
 	ldrb r0, [r2, #3]
 	b _08012580
 	.align 2, 0
-_08012518: .4byte gScript
+_08012518: .4byte gGame
 _0801251C: .4byte 0x000067AC
 _08012520: .4byte 0x00006350
 _08012524:
@@ -35272,7 +35272,7 @@ _08012728:
 	adds r2, r0, #0
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x14
-	ldr r3, _0801278C @ =gScript
+	ldr r3, _0801278C @ =gGame
 	ldrb r1, [r4]
 	lsls r1, r1, #0x1d
 	lsrs r1, r1, #0x1e
@@ -35299,7 +35299,7 @@ _08012778:
 	bx r1
 	.align 2, 0
 _08012788: .4byte 0xFFFE0FFF
-_0801278C: .4byte gScript
+_0801278C: .4byte gGame
 
 	thumb_func_start sub_08012790
 sub_08012790: @ 0x08012790
@@ -35339,7 +35339,7 @@ sub_080127BC: @ 0x080127BC
 	rsbs r2, r2, #0
 	cmp r0, r2
 	bne _080127E8
-	ldr r0, _080127E0 @ =gScript
+	ldr r0, _080127E0 @ =gGame
 	ldr r1, _080127E4 @ =0x000067C4
 	adds r0, r0, r1
 	ldrb r1, [r0]
@@ -35348,7 +35348,7 @@ sub_080127BC: @ 0x080127BC
 	strb r1, [r0]
 	b _08012826
 	.align 2, 0
-_080127E0: .4byte gScript
+_080127E0: .4byte gGame
 _080127E4: .4byte 0x000067C4
 _080127E8:
 	ldr r1, _0801282C @ =gUnknown_0200B960
@@ -35543,7 +35543,7 @@ _08012910:
 	bl sub_0801A61C
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x14
-	ldr r2, _080129B8 @ =gScript
+	ldr r2, _080129B8 @ =gGame
 	ldrb r1, [r6]
 	lsls r1, r1, #0x1d
 	lsrs r1, r1, #0x1e
@@ -35590,7 +35590,7 @@ _080129A2:
 	bx r0
 	.align 2, 0
 _080129B4: .4byte 0xFFFE0FFF
-_080129B8: .4byte gScript
+_080129B8: .4byte gGame
 
 	thumb_func_start sub_080129BC
 sub_080129BC: @ 0x080129BC
@@ -36030,7 +36030,7 @@ sub_08012CEC: @ 0x08012CEC
 	rsbs r0, r0, #0
 	cmp r1, r0
 	bne _08012D14
-	ldr r0, _08012D0C @ =gScript
+	ldr r0, _08012D0C @ =gGame
 	ldr r1, _08012D10 @ =0x000067C4
 	adds r0, r0, r1
 	ldrb r1, [r0]
@@ -36039,7 +36039,7 @@ sub_08012CEC: @ 0x08012CEC
 	strb r1, [r0]
 	b _08012D44
 	.align 2, 0
-_08012D0C: .4byte gScript
+_08012D0C: .4byte gGame
 _08012D10: .4byte 0x000067C4
 _08012D14:
 	ldr r2, _08012D4C @ =gUnknown_0200C07C
@@ -36084,7 +36084,7 @@ sub_08012D50: @ 0x08012D50
 	rsbs r0, r0, #0
 	cmp r1, r0
 	bne _08012D78
-	ldr r0, _08012D70 @ =gScript
+	ldr r0, _08012D70 @ =gGame
 	ldr r1, _08012D74 @ =0x000067C4
 	adds r0, r0, r1
 	ldrb r1, [r0]
@@ -36093,7 +36093,7 @@ sub_08012D50: @ 0x08012D50
 	strb r1, [r0]
 	b _08012DA6
 	.align 2, 0
-_08012D70: .4byte gScript
+_08012D70: .4byte gGame
 _08012D74: .4byte 0x000067C4
 _08012D78:
 	ldr r2, _08012DAC @ =gUnknown_0200C07C
@@ -36257,7 +36257,7 @@ _08012EA4: .4byte gUnknown_0200BF50
 	thumb_func_start sub_08012EA8
 sub_08012EA8: @ 0x08012EA8
 	push {r4, r5, r6, lr}
-	ldr r1, _08012F20 @ =gScript
+	ldr r1, _08012F20 @ =gGame
 	ldr r2, _08012F24 @ =0x000067C4
 	adds r0, r1, r2
 	ldrb r0, [r0]
@@ -36315,14 +36315,14 @@ _08012F1A:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08012F20: .4byte gScript
+_08012F20: .4byte gGame
 _08012F24: .4byte 0x000067C4
 _08012F28: .4byte 0x00005D60
 
 	thumb_func_start sub_08012F2C
 sub_08012F2C: @ 0x08012F2C
 	push {r4, r5, r6, r7, lr}
-	ldr r1, _08012FB0 @ =gScript
+	ldr r1, _08012FB0 @ =gGame
 	ldr r2, _08012FB4 @ =0x000067C4
 	adds r0, r1, r2
 	ldrb r0, [r0]
@@ -36387,7 +36387,7 @@ _08012FA8:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08012FB0: .4byte gScript
+_08012FB0: .4byte gGame
 _08012FB4: .4byte 0x000067C4
 _08012FB8: .4byte 0x00006170
 
@@ -37167,7 +37167,7 @@ sub_08013578: @ 0x08013578
 sub_080135AC: @ 0x080135AC
 	push {r4, r5, r6, r7, lr}
 	sub sp, #4
-	ldr r1, _08013624 @ =gScript
+	ldr r1, _08013624 @ =gGame
 	ldr r2, _08013628 @ =0x000067C4
 	adds r0, r1, r2
 	ldrb r0, [r0]
@@ -37222,7 +37222,7 @@ _080135CA:
 	adds r0, r1, #0
 	b _08013644
 	.align 2, 0
-_08013624: .4byte gScript
+_08013624: .4byte gGame
 _08013628: .4byte 0x000067C4
 _0801362C: .4byte 0x0000647C
 _08013630:
@@ -37313,7 +37313,7 @@ sub_080136BC: @ 0x080136BC
 	push {r4, r5, r6, r7, lr}
 	lsls r0, r0, #0x10
 	lsrs r3, r0, #0x10
-	ldr r0, _080136D8 @ =gScript
+	ldr r0, _080136D8 @ =gGame
 	ldr r1, _080136DC @ =0x000067C5
 	adds r6, r0, r1
 	ldrb r2, [r6]
@@ -37324,7 +37324,7 @@ sub_080136BC: @ 0x080136BC
 	ldr r0, _080136E0 @ =gUnknown_020296B8
 	b _0801373E
 	.align 2, 0
-_080136D8: .4byte gScript
+_080136D8: .4byte gGame
 _080136DC: .4byte 0x000067C5
 _080136E0: .4byte gUnknown_020296B8
 _080136E4:
@@ -37787,7 +37787,7 @@ sub_08013A40: @ 0x08013A40
 	sub sp, #0x10
 	add r1, sp, #0xc
 	strh r0, [r1]
-	ldr r5, _08013AC4 @ =gScript
+	ldr r5, _08013AC4 @ =gGame
 	ldr r1, _08013AC8 @ =0x000067AC
 	adds r0, r5, r1
 	ldrh r0, [r0]
@@ -37847,7 +37847,7 @@ _08013AAE:
 	beq _08013ADA
 	b _08013B42
 	.align 2, 0
-_08013AC4: .4byte gScript
+_08013AC4: .4byte gGame
 _08013AC8: .4byte 0x000067AC
 _08013ACC: .4byte 0x000065BC
 _08013AD0: .4byte 0x000065DC
@@ -37934,7 +37934,7 @@ _08013B68: .4byte gUnknown_03005314
 sub_08013B6C: @ 0x08013B6C
 	push {r4, r5, r6, r7, lr}
 	sub sp, #4
-	ldr r2, _08013BD0 @ =gScript
+	ldr r2, _08013BD0 @ =gGame
 	ldr r1, _08013BD4 @ =0x000067C4
 	adds r0, r2, r1
 	ldrb r1, [r0]
@@ -37983,7 +37983,7 @@ _08013BBA:
 	beq _08013BE6
 	b _08013C28
 	.align 2, 0
-_08013BD0: .4byte gScript
+_08013BD0: .4byte gGame
 _08013BD4: .4byte 0x000067C4
 _08013BD8: .4byte 0x000065BC
 _08013BDC: .4byte 0x000065E0
@@ -38121,7 +38121,7 @@ sub_08013CC8: @ 0x08013CC8
 	rsbs r0, r0, #0
 	cmp r1, r0
 	bne _08013CFC
-	ldr r3, _08013CF4 @ =gScript
+	ldr r3, _08013CF4 @ =gGame
 	mov r0, sp
 	ldrh r0, [r0]
 	ldr r1, _08013CF8 @ =0x000067C4
@@ -38134,7 +38134,7 @@ sub_08013CC8: @ 0x08013CC8
 	rsbs r0, r0, #0
 	b _08013D26
 	.align 2, 0
-_08013CF4: .4byte gScript
+_08013CF4: .4byte gGame
 _08013CF8: .4byte 0x000067C4
 _08013CFC:
 	cmp r1, #0xb
@@ -38173,7 +38173,7 @@ _08013D34: .4byte gUnknown_0200C1BC
 sub_08013D38: @ 0x08013D38
 	push {r4, r5, r6, lr}
 	sub sp, #4
-	ldr r3, _08013E04 @ =gScript
+	ldr r3, _08013E04 @ =gGame
 	ldr r0, _08013E08 @ =0x0000598C
 	adds r2, r3, r0
 	ldrb r1, [r2]
@@ -38209,7 +38209,7 @@ _08013D60:
 	movs r0, #0x1e
 	strh r0, [r1]
 _08013D80:
-	ldr r6, _08013E04 @ =gScript
+	ldr r6, _08013E04 @ =gGame
 	ldr r0, _08013E20 @ =0x000067C4
 	adds r2, r6, r0
 	ldrb r1, [r2]
@@ -38276,7 +38276,7 @@ _08013DFC:
 	adds r4, r5, #7
 	b _08013E46
 	.align 2, 0
-_08013E04: .4byte gScript
+_08013E04: .4byte gGame
 _08013E08: .4byte 0x0000598C
 _08013E0C: .4byte 0x00005962
 _08013E10: .4byte 0x0000595B
@@ -38313,7 +38313,7 @@ _08013E46:
 	bl sub_08005C14
 _08013E68:
 	ldr r1, _08013EA4 @ =gUnknown_08D2D510
-	ldr r4, _08013EA8 @ =gScript
+	ldr r4, _08013EA8 @ =gGame
 	ldr r2, _08013EAC @ =0x0000595B
 	adds r0, r4, r2
 	ldrb r0, [r0]
@@ -38343,7 +38343,7 @@ _08013E9A:
 	bx r0
 	.align 2, 0
 _08013EA4: .4byte gUnknown_08D2D510
-_08013EA8: .4byte gScript
+_08013EA8: .4byte gGame
 _08013EAC: .4byte 0x0000595B
 _08013EB0: .4byte 0x000067C4
 _08013EB4: .4byte gUnknown_02000028
@@ -38355,7 +38355,7 @@ sub_08013EB8: @ 0x08013EB8
 	mov r6, r8
 	push {r6, r7}
 	sub sp, #4
-	ldr r6, _08013F80 @ =gScript
+	ldr r6, _08013F80 @ =gGame
 	ldr r0, _08013F84 @ =0x0000598C
 	adds r7, r6, r0
 	ldrb r0, [r7]
@@ -38451,7 +38451,7 @@ _08013F76:
 	adds r4, r5, #6
 	b _08013FB6
 	.align 2, 0
-_08013F80: .4byte gScript
+_08013F80: .4byte gGame
 _08013F84: .4byte 0x0000598C
 _08013F88: .4byte 0x00005962
 _08013F8C: .4byte 0x0000595C
@@ -38485,7 +38485,7 @@ _08013FB6:
 	bl sub_08005C14
 _08013FD8:
 	ldr r1, _08014018 @ =gUnknown_08D2D58C
-	ldr r4, _0801401C @ =gScript
+	ldr r4, _0801401C @ =gGame
 	ldr r2, _08014020 @ =0x0000595C
 	adds r0, r4, r2
 	ldrb r0, [r0]
@@ -38518,7 +38518,7 @@ _0801400A:
 	bx r0
 	.align 2, 0
 _08014018: .4byte gUnknown_08D2D58C
-_0801401C: .4byte gScript
+_0801401C: .4byte gGame
 _08014020: .4byte 0x0000595C
 _08014024: .4byte 0x000067C4
 _08014028: .4byte gUnknown_02000028
@@ -38530,7 +38530,7 @@ sub_0801402C: @ 0x0801402C
 	ldr r0, _08014060 @ =gUnknown_02000008
 	ldr r1, _08014064 @ =gUnknown_02000028
 	ldr r1, [r1]
-	ldr r4, _08014068 @ =gScript
+	ldr r4, _08014068 @ =gGame
 	ldr r3, _0801406C @ =0x00005960
 	adds r2, r4, r3
 	ldrh r3, [r2]
@@ -38553,7 +38553,7 @@ sub_0801402C: @ 0x0801402C
 	.align 2, 0
 _08014060: .4byte gUnknown_02000008
 _08014064: .4byte gUnknown_02000028
-_08014068: .4byte gScript
+_08014068: .4byte gGame
 _0801406C: .4byte 0x00005960
 _08014070: .4byte 0x000067C4
 
@@ -38570,7 +38570,7 @@ sub_08014074: @ 0x08014074
 	ldr r0, _080140BC @ =gUnknown_02000008
 	ldr r1, _080140C0 @ =gUnknown_02000028
 	ldr r1, [r1]
-	ldr r4, _080140C4 @ =gScript
+	ldr r4, _080140C4 @ =gGame
 	ldr r3, _080140C8 @ =0x00005960
 	adds r2, r4, r3
 	ldrh r3, [r2]
@@ -38595,7 +38595,7 @@ sub_08014074: @ 0x08014074
 _080140B8: .4byte gUnknown_03005314
 _080140BC: .4byte gUnknown_02000008
 _080140C0: .4byte gUnknown_02000028
-_080140C4: .4byte gScript
+_080140C4: .4byte gGame
 _080140C8: .4byte 0x00005960
 _080140CC: .4byte 0x000067C4
 
@@ -38621,7 +38621,7 @@ sub_080140D0: @ 0x080140D0
 	ldrh r0, [r6, #0x2a]
 	movs r0, #0xa0
 	strh r0, [r6, #0x2a]
-	ldr r7, _0801419C @ =gScript
+	ldr r7, _0801419C @ =gGame
 	ldr r2, _080141A0 @ =0x00005968
 	adds r0, r7, r2
 	strh r1, [r0]
@@ -38697,7 +38697,7 @@ _0801414C:
 	.align 2, 0
 _08014194: .4byte gUnknown_02016028
 _08014198: .4byte 0x0001ED10
-_0801419C: .4byte gScript
+_0801419C: .4byte gGame
 _080141A0: .4byte 0x00005968
 _080141A4: .4byte 0x0000598C
 _080141A8: .4byte 0x0000595D
@@ -38723,7 +38723,7 @@ sub_080141D0: @ 0x080141D0
 	ldr r0, _08014224 @ =gUnknown_02000008
 	ldr r1, _08014228 @ =gUnknown_02000028
 	ldr r1, [r1]
-	ldr r4, _0801422C @ =gScript
+	ldr r4, _0801422C @ =gGame
 	ldr r3, _08014230 @ =0x00005960
 	adds r2, r4, r3
 	ldrh r3, [r2]
@@ -38760,7 +38760,7 @@ sub_080141D0: @ 0x080141D0
 	.align 2, 0
 _08014224: .4byte gUnknown_02000008
 _08014228: .4byte gUnknown_02000028
-_0801422C: .4byte gScript
+_0801422C: .4byte gGame
 _08014230: .4byte 0x00005960
 _08014234: .4byte 0x00005968
 _08014238: .4byte 0x0000596A
@@ -38794,7 +38794,7 @@ sub_08014244: @ 0x08014244
 	ldrh r0, [r4, #0x2a]
 	movs r0, #0xa0
 	strh r0, [r4, #0x2a]
-	ldr r5, _080142D8 @ =gScript
+	ldr r5, _080142D8 @ =gGame
 	ldr r2, _080142DC @ =0x00005968
 	adds r0, r5, r2
 	strh r1, [r0]
@@ -38839,7 +38839,7 @@ sub_08014244: @ 0x08014244
 	.align 2, 0
 _080142D0: .4byte gUnknown_02016028
 _080142D4: .4byte 0x0001ED10
-_080142D8: .4byte gScript
+_080142D8: .4byte gGame
 _080142DC: .4byte 0x00005968
 _080142E0: .4byte gUnknown_030040F0
 _080142E4: .4byte 0x00013210
@@ -38873,7 +38873,7 @@ sub_080142F0: @ 0x080142F0
 	ldrh r0, [r4, #0x2a]
 	movs r0, #0xa0
 	strh r0, [r4, #0x2a]
-	ldr r5, _08014384 @ =gScript
+	ldr r5, _08014384 @ =gGame
 	ldr r2, _08014388 @ =0x00005968
 	adds r0, r5, r2
 	strh r1, [r0]
@@ -38918,7 +38918,7 @@ sub_080142F0: @ 0x080142F0
 	.align 2, 0
 _0801437C: .4byte gUnknown_02016028
 _08014380: .4byte 0x0001ED10
-_08014384: .4byte gScript
+_08014384: .4byte gGame
 _08014388: .4byte 0x00005968
 _0801438C: .4byte gUnknown_030040F0
 _08014390: .4byte 0x00013210
@@ -38946,7 +38946,7 @@ sub_0801439C: @ 0x0801439C
 	ldrh r0, [r7, #0x2a]
 	movs r0, #0xa0
 	strh r0, [r7, #0x2a]
-	ldr r6, _08014448 @ =gScript
+	ldr r6, _08014448 @ =gGame
 	ldr r2, _0801444C @ =0x00005968
 	adds r0, r6, r2
 	strh r1, [r0]
@@ -39006,7 +39006,7 @@ _08014416:
 	.align 2, 0
 _08014440: .4byte gUnknown_02016028
 _08014444: .4byte 0x0001ED10
-_08014448: .4byte gScript
+_08014448: .4byte gGame
 _0801444C: .4byte 0x00005968
 _08014450: .4byte 0x0000598C
 _08014454: .4byte 0x0000595D
@@ -39034,7 +39034,7 @@ sub_08014464: @ 0x08014464
 	ldrh r0, [r4, #0x2a]
 	movs r0, #0xa0
 	strh r0, [r4, #0x2a]
-	ldr r1, _080144D4 @ =gScript
+	ldr r1, _080144D4 @ =gGame
 	ldr r3, _080144D8 @ =0x0000596E
 	adds r0, r1, r3
 	strh r2, [r0]
@@ -39066,7 +39066,7 @@ sub_08014464: @ 0x08014464
 	.align 2, 0
 _080144CC: .4byte gUnknown_02016028
 _080144D0: .4byte 0x0001ED10
-_080144D4: .4byte gScript
+_080144D4: .4byte gGame
 _080144D8: .4byte 0x0000596E
 _080144DC: .4byte 0x00005964
 _080144E0: .4byte gUnknown_030040F0
@@ -39091,7 +39091,7 @@ sub_080144E8: @ 0x080144E8
 	ldrh r0, [r4, #0x2a]
 	movs r0, #0xa0
 	strh r0, [r4, #0x2a]
-	ldr r1, _08014568 @ =gScript
+	ldr r1, _08014568 @ =gGame
 	ldr r0, _0801456C @ =0x0000596E
 	adds r2, r1, r0
 	movs r0, #0x90
@@ -39130,7 +39130,7 @@ sub_080144E8: @ 0x080144E8
 	.align 2, 0
 _08014560: .4byte gUnknown_02016028
 _08014564: .4byte 0x0001ED10
-_08014568: .4byte gScript
+_08014568: .4byte gGame
 _0801456C: .4byte 0x0000596E
 _08014570: .4byte 0x00005970
 _08014574: .4byte 0x00005964
@@ -39141,7 +39141,7 @@ _08014580: .4byte 0x00013210
 	thumb_func_start sub_08014584
 sub_08014584: @ 0x08014584
 	push {r4, lr}
-	ldr r4, _080145A0 @ =gScript
+	ldr r4, _080145A0 @ =gGame
 	ldr r0, _080145A4 @ =0x0000595B
 	adds r4, r4, r0
 	movs r0, #3
@@ -39153,12 +39153,12 @@ sub_08014584: @ 0x08014584
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080145A0: .4byte gScript
+_080145A0: .4byte gGame
 _080145A4: .4byte 0x0000595B
 
 	thumb_func_start sub_080145A8
 sub_080145A8: @ 0x080145A8
-	ldr r2, _080145B8 @ =gScript
+	ldr r2, _080145B8 @ =gGame
 	ldrb r1, [r2, #2]
 	movs r0, #0x11
 	rsbs r0, r0, #0
@@ -39166,12 +39166,12 @@ sub_080145A8: @ 0x080145A8
 	strb r0, [r2, #2]
 	bx lr
 	.align 2, 0
-_080145B8: .4byte gScript
+_080145B8: .4byte gGame
 
 	thumb_func_start sub_080145BC
 sub_080145BC: @ 0x080145BC
 	push {lr}
-	ldr r2, _080145E8 @ =gScript
+	ldr r2, _080145E8 @ =gGame
 	ldrb r1, [r2, #2]
 	movs r0, #0x11
 	rsbs r0, r0, #0
@@ -39191,7 +39191,7 @@ sub_080145BC: @ 0x080145BC
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080145E8: .4byte gScript
+_080145E8: .4byte gGame
 _080145EC: .4byte gUnknown_02016028
 _080145F0: .4byte 0x000121BB
 
@@ -39202,7 +39202,7 @@ sub_080145F4: @ 0x080145F4
 	ldr r0, _0801462C @ =gUnknown_02000008
 	ldr r1, _08014630 @ =gUnknown_02000028
 	ldr r1, [r1]
-	ldr r4, _08014634 @ =gScript
+	ldr r4, _08014634 @ =gGame
 	ldr r3, _08014638 @ =0x00005960
 	adds r2, r4, r3
 	ldrh r3, [r2]
@@ -39226,7 +39226,7 @@ sub_080145F4: @ 0x080145F4
 	.align 2, 0
 _0801462C: .4byte gUnknown_02000008
 _08014630: .4byte gUnknown_02000028
-_08014634: .4byte gScript
+_08014634: .4byte gGame
 _08014638: .4byte 0x00005960
 _0801463C: .4byte 0x000067C4
 
@@ -39237,7 +39237,7 @@ sub_08014640: @ 0x08014640
 	ldr r0, _08014678 @ =gUnknown_02000008
 	ldr r1, _0801467C @ =gUnknown_02000028
 	ldr r1, [r1]
-	ldr r4, _08014680 @ =gScript
+	ldr r4, _08014680 @ =gGame
 	ldr r3, _08014684 @ =0x00005960
 	adds r2, r4, r3
 	ldrh r3, [r2]
@@ -39261,7 +39261,7 @@ sub_08014640: @ 0x08014640
 	.align 2, 0
 _08014678: .4byte gUnknown_02000008
 _0801467C: .4byte gUnknown_02000028
-_08014680: .4byte gScript
+_08014680: .4byte gGame
 _08014684: .4byte 0x00005960
 _08014688: .4byte 0x000067C4
 
@@ -39288,7 +39288,7 @@ sub_0801468C: @ 0x0801468C
 	ldrh r0, [r6, #0x2a]
 	movs r0, #0xa0
 	strh r0, [r6, #0x2a]
-	ldr r7, _0801475C @ =gScript
+	ldr r7, _0801475C @ =gGame
 	ldr r3, _08014760 @ =0x00005968
 	adds r0, r7, r3
 	strh r2, [r0]
@@ -39365,7 +39365,7 @@ _0801470A:
 	.align 2, 0
 _08014754: .4byte gUnknown_02016028
 _08014758: .4byte 0x0001ED10
-_0801475C: .4byte gScript
+_0801475C: .4byte gGame
 _08014760: .4byte 0x00005968
 _08014764: .4byte 0x0000596A
 _08014768: .4byte 0x0000598C
@@ -39393,7 +39393,7 @@ sub_08014798: @ 0x08014798
 	ldr r0, _080147EC @ =gUnknown_02000008
 	ldr r1, _080147F0 @ =gUnknown_02000028
 	ldr r1, [r1]
-	ldr r4, _080147F4 @ =gScript
+	ldr r4, _080147F4 @ =gGame
 	ldr r3, _080147F8 @ =0x00005960
 	adds r2, r4, r3
 	ldrh r3, [r2]
@@ -39430,7 +39430,7 @@ sub_08014798: @ 0x08014798
 	.align 2, 0
 _080147EC: .4byte gUnknown_02000008
 _080147F0: .4byte gUnknown_02000028
-_080147F4: .4byte gScript
+_080147F4: .4byte gGame
 _080147F8: .4byte 0x00005960
 _080147FC: .4byte 0x00005968
 _08014800: .4byte 0x0000596A
@@ -39441,7 +39441,7 @@ _08014808: .4byte 0x000067C4
 sub_0801480C: @ 0x0801480C
 	push {r4, r5, r6, lr}
 	sub sp, #0x10
-	ldr r6, _080148A0 @ =gScript
+	ldr r6, _080148A0 @ =gGame
 	ldr r0, _080148A4 @ =0x00009D14
 	adds r2, r6, r0
 	ldrb r0, [r2]
@@ -39510,7 +39510,7 @@ sub_0801480C: @ 0x0801480C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080148A0: .4byte gScript
+_080148A0: .4byte gGame
 _080148A4: .4byte 0x00009D14
 _080148A8: .4byte gUnknown_02016028
 _080148AC: .4byte 0x00011D9C
@@ -39621,7 +39621,7 @@ _08014988:
 	str r2, [sp, #0xc]
 	movs r3, #0xa
 	bl sub_080031F0
-	ldr r2, _080149CC @ =gScript
+	ldr r2, _080149CC @ =gGame
 	ldr r1, _080149D0 @ =0x000067C4
 	adds r2, r2, r1
 	ldrb r0, [r2]
@@ -39639,7 +39639,7 @@ _08014988:
 _080149C0: .4byte 0x000121C1
 _080149C4: .4byte gUnknown_02000008
 _080149C8: .4byte gUnknown_02000028
-_080149CC: .4byte gScript
+_080149CC: .4byte gGame
 _080149D0: .4byte 0x000067C4
 
 	thumb_func_start sub_080149D4
@@ -39662,7 +39662,7 @@ sub_080149D4: @ 0x080149D4
 	ldrh r0, [r4, #0x2a]
 	movs r0, #0xa0
 	strh r0, [r4, #0x2a]
-	ldr r0, _08014A30 @ =gScript
+	ldr r0, _08014A30 @ =gGame
 	ldr r2, _08014A34 @ =0x00005968
 	adds r0, r0, r2
 	strh r1, [r0]
@@ -39685,7 +39685,7 @@ sub_080149D4: @ 0x080149D4
 	.align 2, 0
 _08014A28: .4byte gUnknown_02016028
 _08014A2C: .4byte 0x0001ED10
-_08014A30: .4byte gScript
+_08014A30: .4byte gGame
 _08014A34: .4byte 0x00005968
 _08014A38: .4byte gUnknown_030040F0
 _08014A3C: .4byte 0x00013210
@@ -39717,7 +39717,7 @@ sub_08014A40: @ 0x08014A40
 	ldrh r0, [r4, #0x2a]
 	movs r0, #0xa0
 	strh r0, [r4, #0x2a]
-	ldr r5, _08014AD4 @ =gScript
+	ldr r5, _08014AD4 @ =gGame
 	ldr r2, _08014AD8 @ =0x00005968
 	adds r0, r5, r2
 	strh r1, [r0]
@@ -39762,7 +39762,7 @@ sub_08014A40: @ 0x08014A40
 	.align 2, 0
 _08014ACC: .4byte gUnknown_02016028
 _08014AD0: .4byte 0x0001ED10
-_08014AD4: .4byte gScript
+_08014AD4: .4byte gGame
 _08014AD8: .4byte 0x00005968
 _08014ADC: .4byte gUnknown_030040F0
 _08014AE0: .4byte 0x00013210
@@ -39796,7 +39796,7 @@ sub_08014AEC: @ 0x08014AEC
 	ldrh r0, [r4, #0x2a]
 	movs r0, #0xa0
 	strh r0, [r4, #0x2a]
-	ldr r5, _08014B80 @ =gScript
+	ldr r5, _08014B80 @ =gGame
 	ldr r2, _08014B84 @ =0x00005968
 	adds r0, r5, r2
 	strh r1, [r0]
@@ -39841,7 +39841,7 @@ sub_08014AEC: @ 0x08014AEC
 	.align 2, 0
 _08014B78: .4byte gUnknown_02016028
 _08014B7C: .4byte 0x0001ED10
-_08014B80: .4byte gScript
+_08014B80: .4byte gGame
 _08014B84: .4byte 0x00005968
 _08014B88: .4byte gUnknown_030040F0
 _08014B8C: .4byte 0x00013210
@@ -39869,7 +39869,7 @@ sub_08014B98: @ 0x08014B98
 	ldrh r0, [r7, #0x2a]
 	movs r0, #0xa0
 	strh r0, [r7, #0x2a]
-	ldr r6, _08014C60 @ =gScript
+	ldr r6, _08014C60 @ =gGame
 	ldr r0, _08014C64 @ =0x00005968
 	adds r1, r6, r0
 	movs r0, #0x80
@@ -39943,7 +39943,7 @@ _08014C14:
 	.align 2, 0
 _08014C58: .4byte gUnknown_02016028
 _08014C5C: .4byte 0x0001ED10
-_08014C60: .4byte gScript
+_08014C60: .4byte gGame
 _08014C64: .4byte 0x00005968
 _08014C68: .4byte 0x0000596A
 _08014C6C: .4byte 0x0000598C
@@ -39973,7 +39973,7 @@ sub_08014C84: @ 0x08014C84
 	ldrh r0, [r4, #0x2a]
 	movs r0, #0xa0
 	strh r0, [r4, #0x2a]
-	ldr r0, _08014CE8 @ =gScript
+	ldr r0, _08014CE8 @ =gGame
 	ldr r1, _08014CEC @ =0x0000595E
 	adds r2, r0, r1
 	movs r1, #3
@@ -40000,7 +40000,7 @@ sub_08014C84: @ 0x08014C84
 	.align 2, 0
 _08014CE0: .4byte gUnknown_02016028
 _08014CE4: .4byte 0x0001ED10
-_08014CE8: .4byte gScript
+_08014CE8: .4byte gGame
 _08014CEC: .4byte 0x0000595E
 _08014CF0: .4byte 0x00005968
 _08014CF4: .4byte gUnknown_030040F0
@@ -40026,7 +40026,7 @@ sub_08014CFC: @ 0x08014CFC
 	ldrh r0, [r4, #0x2a]
 	movs r0, #0xa0
 	strh r0, [r4, #0x2a]
-	ldr r0, _08014D60 @ =gScript
+	ldr r0, _08014D60 @ =gGame
 	ldr r1, _08014D64 @ =0x0000595E
 	adds r2, r0, r1
 	movs r1, #5
@@ -40053,7 +40053,7 @@ sub_08014CFC: @ 0x08014CFC
 	.align 2, 0
 _08014D58: .4byte gUnknown_02016028
 _08014D5C: .4byte 0x0001ED10
-_08014D60: .4byte gScript
+_08014D60: .4byte gGame
 _08014D64: .4byte 0x0000595E
 _08014D68: .4byte 0x00005968
 _08014D6C: .4byte gUnknown_030040F0
@@ -40079,7 +40079,7 @@ sub_08014D74: @ 0x08014D74
 	ldrh r0, [r4, #0x2a]
 	movs r0, #0xa0
 	strh r0, [r4, #0x2a]
-	ldr r0, _08014DD8 @ =gScript
+	ldr r0, _08014DD8 @ =gGame
 	ldr r1, _08014DDC @ =0x0000595E
 	adds r2, r0, r1
 	movs r1, #3
@@ -40106,7 +40106,7 @@ sub_08014D74: @ 0x08014D74
 	.align 2, 0
 _08014DD0: .4byte gUnknown_02016028
 _08014DD4: .4byte 0x0001ED10
-_08014DD8: .4byte gScript
+_08014DD8: .4byte gGame
 _08014DDC: .4byte 0x0000595E
 _08014DE0: .4byte 0x00005968
 _08014DE4: .4byte gUnknown_030040F0
@@ -40160,7 +40160,7 @@ sub_08014E1C: @ 0x08014E1C
 	ldrh r0, [r4, #0x2a]
 	movs r0, #0xa0
 	strh r0, [r4, #0x2a]
-	ldr r1, _08014E94 @ =gScript
+	ldr r1, _08014E94 @ =gGame
 	ldr r0, _08014E98 @ =0x00005968
 	adds r2, r1, r0
 	movs r0, #0xf0
@@ -40197,7 +40197,7 @@ sub_08014E1C: @ 0x08014E1C
 	.align 2, 0
 _08014E8C: .4byte gUnknown_02016028
 _08014E90: .4byte 0x0001ED10
-_08014E94: .4byte gScript
+_08014E94: .4byte gGame
 _08014E98: .4byte 0x00005968
 _08014E9C: .4byte 0x0000596A
 _08014EA0: .4byte 0x0000596C
@@ -40225,7 +40225,7 @@ sub_08014EB0: @ 0x08014EB0
 	ldrh r0, [r4, #0x2a]
 	movs r0, #0xa0
 	strh r0, [r4, #0x2a]
-	ldr r0, _08014F14 @ =gScript
+	ldr r0, _08014F14 @ =gGame
 	ldr r1, _08014F18 @ =0x0000595E
 	adds r2, r0, r1
 	movs r1, #5
@@ -40252,7 +40252,7 @@ sub_08014EB0: @ 0x08014EB0
 	.align 2, 0
 _08014F0C: .4byte gUnknown_02016028
 _08014F10: .4byte 0x0001ED10
-_08014F14: .4byte gScript
+_08014F14: .4byte gGame
 _08014F18: .4byte 0x0000595E
 _08014F1C: .4byte 0x00005968
 _08014F20: .4byte gUnknown_030040F0
@@ -40278,7 +40278,7 @@ sub_08014F28: @ 0x08014F28
 	ldrh r0, [r4, #0x2a]
 	movs r0, #0xa0
 	strh r0, [r4, #0x2a]
-	ldr r1, _08014F98 @ =gScript
+	ldr r1, _08014F98 @ =gGame
 	ldr r3, _08014F9C @ =0x0000595E
 	adds r0, r1, r3
 	strb r2, [r0]
@@ -40310,7 +40310,7 @@ sub_08014F28: @ 0x08014F28
 	.align 2, 0
 _08014F90: .4byte gUnknown_02016028
 _08014F94: .4byte 0x0001ED10
-_08014F98: .4byte gScript
+_08014F98: .4byte gGame
 _08014F9C: .4byte 0x0000595E
 _08014FA0: .4byte 0x00005968
 _08014FA4: .4byte gUnknown_030040F0
@@ -40320,7 +40320,7 @@ _08014FA8: .4byte 0x00013210
 sub_08014FAC: @ 0x08014FAC
 	push {lr}
 	bl sub_080030A4
-	ldr r1, _08014FD0 @ =gScript
+	ldr r1, _08014FD0 @ =gGame
 	movs r2, #7
 	ands r0, r2
 	ldr r2, _08014FD4 @ =0x0000595E
@@ -40336,7 +40336,7 @@ sub_08014FAC: @ 0x08014FAC
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08014FD0: .4byte gScript
+_08014FD0: .4byte gGame
 _08014FD4: .4byte 0x0000595E
 _08014FD8: .4byte gUnknown_02016028
 _08014FDC: .4byte 0x000121BA
@@ -40450,7 +40450,7 @@ sub_08015090: @ 0x08015090
 	ldrh r0, [r2, #0x2a]
 	movs r0, #0xa0
 	strh r0, [r2, #0x2a]
-	ldr r1, _080150E8 @ =gScript
+	ldr r1, _080150E8 @ =gGame
 	ldr r0, _080150EC @ =0x0000596E
 	adds r2, r1, r0
 	movs r0, #0x90
@@ -40473,7 +40473,7 @@ sub_08015090: @ 0x08015090
 	.align 2, 0
 _080150E0: .4byte gUnknown_02016028
 _080150E4: .4byte 0x0001ED10
-_080150E8: .4byte gScript
+_080150E8: .4byte gGame
 _080150EC: .4byte 0x0000596E
 _080150F0: .4byte 0x00005970
 _080150F4: .4byte 0x00005964
@@ -40497,7 +40497,7 @@ sub_080150F8: @ 0x080150F8
 	ldrh r1, [r0, #0x2a]
 	movs r1, #0xa0
 	strh r1, [r0, #0x2a]
-	ldr r2, _08015160 @ =gScript
+	ldr r2, _08015160 @ =gGame
 	ldr r1, _08015164 @ =0x0000596E
 	adds r3, r2, r1
 	movs r1, #0x90
@@ -40526,7 +40526,7 @@ sub_080150F8: @ 0x080150F8
 	.align 2, 0
 _08015158: .4byte gUnknown_02016028
 _0801515C: .4byte 0x0001ED10
-_08015160: .4byte gScript
+_08015160: .4byte gGame
 _08015164: .4byte 0x0000596E
 _08015168: .4byte 0x00005970
 _0801516C: .4byte 0x00005964
@@ -40556,7 +40556,7 @@ sub_08015174: @ 0x08015174
 	ldrh r0, [r7, #0x2a]
 	movs r0, #0xa0
 	strh r0, [r7, #0x2a]
-	ldr r6, _08015248 @ =gScript
+	ldr r6, _08015248 @ =gGame
 	ldr r0, _0801524C @ =0x00005968
 	adds r1, r6, r0
 	movs r0, #0x78
@@ -40632,7 +40632,7 @@ _080151F6:
 	.align 2, 0
 _08015240: .4byte gUnknown_02016028
 _08015244: .4byte 0x0001ED10
-_08015248: .4byte gScript
+_08015248: .4byte gGame
 _0801524C: .4byte 0x00005968
 _08015250: .4byte 0x0000596A
 _08015254: .4byte 0x0000598C
@@ -40786,7 +40786,7 @@ sub_08015360: @ 0x08015360
 	adds r4, r0, r1
 	ldrb r2, [r4]
 	lsls r1, r2, #0x1f
-	ldr r5, _0801542C @ =gScript
+	ldr r5, _0801542C @ =gGame
 	ldrb r0, [r5, #0xf]
 	lsls r0, r0, #0x1f
 	orrs r0, r1
@@ -40853,7 +40853,7 @@ _0801541C: .4byte gUnknown_03005314
 _08015420: .4byte gUnknown_02000008
 _08015424: .4byte gUnknown_02016028
 _08015428: .4byte 0x0001ED11
-_0801542C: .4byte gScript
+_0801542C: .4byte gGame
 _08015430: .4byte 0x00005968
 _08015434: .4byte 0x0000596A
 _08015438: .4byte 0x00005962
@@ -40871,7 +40871,7 @@ sub_08015440: @ 0x08015440
 	orrs r0, r1
 	strh r0, [r6, #8]
 	bl sub_08004FB4
-	ldr r4, _080154A4 @ =gScript
+	ldr r4, _080154A4 @ =gGame
 	ldr r0, _080154A8 @ =0x00005968
 	adds r5, r4, r0
 	ldrh r0, [r5]
@@ -40906,7 +40906,7 @@ sub_08015440: @ 0x08015440
 	b _080154BA
 	.align 2, 0
 _080154A0: .4byte gUnknown_02016028
-_080154A4: .4byte gScript
+_080154A4: .4byte gGame
 _080154A8: .4byte 0x00005968
 _080154AC: .4byte 0x00005962
 _080154B0: .4byte 0x00005960
@@ -40930,7 +40930,7 @@ sub_080154C0: @ 0x080154C0
 	orrs r0, r1
 	strh r0, [r6, #8]
 	bl sub_08004FB4
-	ldr r4, _08015524 @ =gScript
+	ldr r4, _08015524 @ =gGame
 	ldr r0, _08015528 @ =0x00005968
 	adds r5, r4, r0
 	ldrh r0, [r5]
@@ -40965,7 +40965,7 @@ sub_080154C0: @ 0x080154C0
 	b _0801553A
 	.align 2, 0
 _08015520: .4byte gUnknown_02016028
-_08015524: .4byte gScript
+_08015524: .4byte gGame
 _08015528: .4byte 0x00005968
 _0801552C: .4byte 0x00005962
 _08015530: .4byte 0x00005960
@@ -41520,7 +41520,7 @@ sub_08015988: @ 0x08015988
 	adds r3, r5, r0
 	ldrb r2, [r3]
 	lsls r0, r2, #0x1f
-	ldr r4, _080159DC @ =gScript
+	ldr r4, _080159DC @ =gGame
 	ldrb r1, [r4, #0xf]
 	lsls r1, r1, #0x1f
 	orrs r1, r0
@@ -41542,7 +41542,7 @@ sub_08015988: @ 0x08015988
 _080159D0: .4byte gUnknown_02000008
 _080159D4: .4byte gUnknown_02016028
 _080159D8: .4byte 0x0001ED11
-_080159DC: .4byte gScript
+_080159DC: .4byte gGame
 _080159E0:
 	adds r0, r3, #0
 _080159E2:
@@ -41564,7 +41564,7 @@ _080159E2:
 	ands r0, r2
 	orrs r0, r3
 	strb r0, [r1]
-	ldr r4, _08015A48 @ =gScript
+	ldr r4, _08015A48 @ =gGame
 	ldr r1, _08015A4C @ =0x00005968
 	adds r5, r4, r1
 	ldrh r0, [r5]
@@ -41594,7 +41594,7 @@ _080159E2:
 	.align 2, 0
 _08015A40: .4byte 0x0001ED11
 _08015A44: .4byte gUnknown_02016028
-_08015A48: .4byte gScript
+_08015A48: .4byte gGame
 _08015A4C: .4byte 0x00005968
 _08015A50: .4byte 0x0000596A
 _08015A54: .4byte 0x0000596C
@@ -41620,7 +41620,7 @@ sub_08015A64: @ 0x08015A64
 	ldr r1, _08015AAC @ =gUnknown_080C2A90
 	adds r0, r0, r1
 	mov r8, r0
-	ldr r0, _08015AB0 @ =gScript
+	ldr r0, _08015AB0 @ =gGame
 	ldr r2, _08015AB4 @ =0x00005962
 	adds r0, r0, r2
 	ldrh r0, [r0]
@@ -41637,7 +41637,7 @@ sub_08015A64: @ 0x08015A64
 _08015AA4: .4byte gUnknown_02016028
 _08015AA8: .4byte 0x00011D9C
 _08015AAC: .4byte gUnknown_080C2A90
-_08015AB0: .4byte gScript
+_08015AB0: .4byte gGame
 _08015AB4: .4byte 0x00005962
 _08015AB8:
 	ldrh r0, [r3, #8]
@@ -41648,7 +41648,7 @@ _08015AB8:
 	orrs r1, r0
 	strh r1, [r3, #8]
 _08015AC6:
-	ldr r4, _08015B50 @ =gScript
+	ldr r4, _08015B50 @ =gGame
 	ldrb r0, [r4]
 	cmp r0, #8
 	beq _08015AD0
@@ -41715,7 +41715,7 @@ _08015B40:
 	beq _08015B7A
 	b _08015B9C
 	.align 2, 0
-_08015B50: .4byte gScript
+_08015B50: .4byte gGame
 _08015B54: .4byte gUnknown_02000008
 _08015B58: .4byte 0x00005962
 _08015B5C: .4byte 0x00009D14
@@ -41749,7 +41749,7 @@ _08015B94:
 _08015B9A:
 	strb r0, [r1]
 _08015B9C:
-	ldr r0, _08015BC8 @ =gScript
+	ldr r0, _08015BC8 @ =gGame
 	ldrb r1, [r0, #8]
 	movs r0, #4
 	ands r0, r1
@@ -41768,7 +41768,7 @@ _08015BB2:
 	b _08015CA8
 	.align 2, 0
 _08015BC4: .4byte 0x000121C1
-_08015BC8: .4byte gScript
+_08015BC8: .4byte gGame
 _08015BCC: .4byte gEncounter
 _08015BD0:
 	ldr r7, _08015CB8 @ =0x00005962
@@ -41912,7 +41912,7 @@ sub_08015CEC: @ 0x08015CEC
 	ldr r1, _08015DD4 @ =gUnknown_080C2A90
 	adds r0, r0, r1
 	mov r8, r0
-	ldr r0, _08015DD8 @ =gScript
+	ldr r0, _08015DD8 @ =gGame
 	ldr r1, _08015DDC @ =0x00005962
 	adds r3, r0, r1
 	ldrh r0, [r3]
@@ -42013,7 +42013,7 @@ _08015D9C:
 _08015DCC: .4byte gUnknown_02016028
 _08015DD0: .4byte 0x00011D9C
 _08015DD4: .4byte gUnknown_080C2A90
-_08015DD8: .4byte gScript
+_08015DD8: .4byte gGame
 _08015DDC: .4byte 0x00005962
 _08015DE0: .4byte gUnknown_03005314
 _08015DE4: .4byte gUnknown_02000028
@@ -42035,7 +42035,7 @@ _08015E0C:
 _08015E18:
 	bl sub_08001960
 	bl sub_08005C4C
-	ldr r0, _08015E48 @ =gScript
+	ldr r0, _08015E48 @ =gGame
 	ldr r2, _08015E4C @ =0x00005962
 	adds r4, r0, r2
 	ldrh r0, [r4]
@@ -42057,7 +42057,7 @@ _08015E3A:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08015E48: .4byte gScript
+_08015E48: .4byte gGame
 _08015E4C: .4byte 0x00005962
 
 	thumb_func_start sub_08015E50
@@ -42072,7 +42072,7 @@ sub_08015E50: @ 0x08015E50
 	orrs r0, r1
 	strh r0, [r6, #8]
 	bl sub_08004FB4
-	ldr r4, _08015EB4 @ =gScript
+	ldr r4, _08015EB4 @ =gGame
 	ldr r0, _08015EB8 @ =0x00005968
 	adds r5, r4, r0
 	ldrh r0, [r5]
@@ -42106,7 +42106,7 @@ sub_08015E50: @ 0x08015E50
 	b _08015ECA
 	.align 2, 0
 _08015EB0: .4byte gUnknown_02016028
-_08015EB4: .4byte gScript
+_08015EB4: .4byte gGame
 _08015EB8: .4byte 0x00005968
 _08015EBC: .4byte 0x00005962
 _08015EC0: .4byte 0x00005960
@@ -42130,7 +42130,7 @@ sub_08015ED0: @ 0x08015ED0
 	orrs r0, r1
 	strh r0, [r7, #8]
 	bl sub_08004FB4
-	ldr r4, _08015F34 @ =gScript
+	ldr r4, _08015F34 @ =gGame
 	ldr r0, _08015F38 @ =0x00005968
 	adds r6, r4, r0
 	ldrh r0, [r6]
@@ -42165,7 +42165,7 @@ sub_08015ED0: @ 0x08015ED0
 	b _08015F4A
 	.align 2, 0
 _08015F30: .4byte gUnknown_02016028
-_08015F34: .4byte gScript
+_08015F34: .4byte gGame
 _08015F38: .4byte 0x00005968
 _08015F3C: .4byte 0x00005962
 _08015F40: .4byte 0x00005960
@@ -42189,7 +42189,7 @@ sub_08015F50: @ 0x08015F50
 	orrs r0, r1
 	strh r0, [r6, #8]
 	bl sub_08004FB4
-	ldr r4, _08015FB4 @ =gScript
+	ldr r4, _08015FB4 @ =gGame
 	ldr r0, _08015FB8 @ =0x00005968
 	adds r5, r4, r0
 	ldrh r0, [r5]
@@ -42224,7 +42224,7 @@ sub_08015F50: @ 0x08015F50
 	b _08015FCA
 	.align 2, 0
 _08015FB0: .4byte gUnknown_02016028
-_08015FB4: .4byte gScript
+_08015FB4: .4byte gGame
 _08015FB8: .4byte 0x00005968
 _08015FBC: .4byte 0x00005962
 _08015FC0: .4byte 0x00005960
@@ -42305,7 +42305,7 @@ sub_0801603C: @ 0x0801603C
 	orrs r0, r1
 	strh r0, [r5, #8]
 	bl sub_08004FB4
-	ldr r4, _080160C4 @ =gScript
+	ldr r4, _080160C4 @ =gGame
 	ldr r0, _080160C8 @ =0x00005968
 	adds r7, r4, r0
 	ldrh r0, [r7]
@@ -42352,7 +42352,7 @@ sub_0801603C: @ 0x0801603C
 	b _080160F6
 	.align 2, 0
 _080160C0: .4byte gUnknown_02016028
-_080160C4: .4byte gScript
+_080160C4: .4byte gGame
 _080160C8: .4byte 0x00005968
 _080160CC: .4byte 0x0000595E
 _080160D0: .4byte 0x00005962
@@ -42398,7 +42398,7 @@ sub_08016108: @ 0x08016108
 	orrs r0, r1
 	strh r0, [r7, #8]
 	bl sub_08004FB4
-	ldr r4, _08016178 @ =gScript
+	ldr r4, _08016178 @ =gGame
 	ldr r0, _0801617C @ =0x00005968
 	adds r6, r4, r0
 	ldrh r0, [r6]
@@ -42435,7 +42435,7 @@ sub_08016108: @ 0x08016108
 	b _080161C6
 	.align 2, 0
 _08016174: .4byte gUnknown_02016028
-_08016178: .4byte gScript
+_08016178: .4byte gGame
 _0801617C: .4byte 0x00005968
 _08016180: .4byte 0x0000595E
 _08016184: .4byte 0x00005962
@@ -42499,7 +42499,7 @@ sub_080161D4: @ 0x080161D4
 	orrs r0, r1
 	strh r0, [r5, #8]
 	bl sub_08004FB4
-	ldr r4, _08016260 @ =gScript
+	ldr r4, _08016260 @ =gGame
 	ldr r0, _08016264 @ =0x00005968
 	adds r0, r0, r4
 	mov r8, r0
@@ -42547,7 +42547,7 @@ sub_080161D4: @ 0x080161D4
 	b _0801629A
 	.align 2, 0
 _0801625C: .4byte gUnknown_02016028
-_08016260: .4byte gScript
+_08016260: .4byte gGame
 _08016264: .4byte 0x00005968
 _08016268: .4byte 0x0000595E
 _0801626C: .4byte 0x00005962
@@ -42593,7 +42593,7 @@ sub_080162A8: @ 0x080162A8
 	orrs r0, r1
 	strh r0, [r4, #8]
 	bl sub_08004FB4
-	ldr r0, _08016310 @ =gScript
+	ldr r0, _08016310 @ =gGame
 	ldr r1, _08016314 @ =0x00005962
 	adds r0, r0, r1
 	ldrh r1, [r0]
@@ -42631,7 +42631,7 @@ sub_080162A8: @ 0x080162A8
 	b _08016326
 	.align 2, 0
 _0801630C: .4byte gUnknown_02016028
-_08016310: .4byte gScript
+_08016310: .4byte gGame
 _08016314: .4byte 0x00005962
 _08016318: .4byte gUnknown_080C211A
 _0801631C: .4byte 0x0000C001
@@ -42655,7 +42655,7 @@ sub_0801632C: @ 0x0801632C
 	orrs r0, r1
 	strh r0, [r5, #8]
 	bl sub_08004FB4
-	ldr r0, _08016368 @ =gScript
+	ldr r0, _08016368 @ =gGame
 	ldr r1, _0801636C @ =0x00005962
 	adds r0, r0, r1
 	ldrh r1, [r0]
@@ -42674,7 +42674,7 @@ _0801635E:
 	b _080163D4
 	.align 2, 0
 _08016364: .4byte gUnknown_02016028
-_08016368: .4byte gScript
+_08016368: .4byte gGame
 _0801636C: .4byte 0x00005962
 _08016370: .4byte gUnknown_080C21B1
 _08016374: .4byte gUnknown_080C21FD
@@ -42806,7 +42806,7 @@ sub_0801645C: @ 0x0801645C
 	orrs r0, r1
 	strh r0, [r5, #8]
 	bl sub_08004FB4
-	ldr r4, _080164EC @ =gScript
+	ldr r4, _080164EC @ =gGame
 	ldr r0, _080164F0 @ =0x00005968
 	adds r7, r4, r0
 	ldrh r2, [r7]
@@ -42858,7 +42858,7 @@ _08016492:
 	b _08016516
 	.align 2, 0
 _080164E8: .4byte gUnknown_02016028
-_080164EC: .4byte gScript
+_080164EC: .4byte gGame
 _080164F0: .4byte 0x00005968
 _080164F4: .4byte 0x00005962
 _080164F8: .4byte 0x00005960
@@ -42900,7 +42900,7 @@ sub_08016528: @ 0x08016528
 	orrs r0, r1
 	strh r0, [r4, #8]
 	bl sub_08004FB4
-	ldr r2, _08016558 @ =gScript
+	ldr r2, _08016558 @ =gGame
 	ldr r3, _0801655C @ =0x0000595E
 	adds r0, r2, r3
 	ldrb r0, [r0]
@@ -42913,7 +42913,7 @@ sub_08016528: @ 0x08016528
 	b _080165CC
 	.align 2, 0
 _08016554: .4byte gUnknown_02016028
-_08016558: .4byte gScript
+_08016558: .4byte gGame
 _0801655C: .4byte 0x0000595E
 _08016560:
 	cmp r0, #2
@@ -42971,7 +42971,7 @@ _080165B0:
 _080165CC:
 	bl sub_08001960
 	bl sub_08005C4C
-	ldr r5, _080165F4 @ =gScript
+	ldr r5, _080165F4 @ =gGame
 	ldr r3, _080165F8 @ =0x0000595E
 	adds r6, r5, r3
 	ldrb r4, [r6]
@@ -42985,7 +42985,7 @@ _080165CC:
 	.align 2, 0
 _080165EC: .4byte 0x00005968
 _080165F0: .4byte 0x000132B0
-_080165F4: .4byte gScript
+_080165F4: .4byte gGame
 _080165F8: .4byte 0x0000595E
 _080165FC:
 	cmp r4, #2
@@ -43111,7 +43111,7 @@ sub_080166D8: @ 0x080166D8
 	ldr r3, _08016710 @ =0x0000C001
 	mov r0, sp
 	strh r4, [r0]
-	ldr r2, _08016714 @ =gScript
+	ldr r2, _08016714 @ =gGame
 	ldr r5, _08016718 @ =0x0000595E
 	adds r0, r2, r5
 	ldrb r1, [r0]
@@ -43123,7 +43123,7 @@ sub_080166D8: @ 0x080166D8
 	.align 2, 0
 _0801670C: .4byte gUnknown_02016028
 _08016710: .4byte 0x0000C001
-_08016714: .4byte gScript
+_08016714: .4byte gGame
 _08016718: .4byte 0x0000595E
 _0801671C:
 	ldrb r2, [r1]
@@ -43150,7 +43150,7 @@ _08016740:
 	lsrs r4, r0, #0x10
 	cmp r4, #0
 	bne _08016772
-	ldr r2, _08016798 @ =gScript
+	ldr r2, _08016798 @ =gGame
 	ldr r1, _0801679C @ =0x0000595E
 	adds r0, r2, r1
 	ldrb r1, [r0]
@@ -43188,7 +43188,7 @@ _08016772:
 	bx r1
 	.align 2, 0
 _08016794: .4byte gUnknown_02016078
-_08016798: .4byte gScript
+_08016798: .4byte gGame
 _0801679C: .4byte 0x0000595E
 _080167A0: .4byte 0x00005962
 _080167A4: .4byte gUnknown_080C2248
@@ -43211,7 +43211,7 @@ sub_080167B0: @ 0x080167B0
 	bl sub_08004FB4
 	ldr r0, _08016848 @ =0x00013210
 	adds r4, r4, r0
-	ldr r2, _0801684C @ =gScript
+	ldr r2, _0801684C @ =gGame
 	ldr r1, _08016850 @ =0x00005962
 	adds r0, r2, r1
 	ldrh r0, [r0]
@@ -43258,7 +43258,7 @@ _08016812:
 	bl sub_08001960
 	bl sub_08005C4C
 	movs r1, #0
-	ldr r0, _0801684C @ =gScript
+	ldr r0, _0801684C @ =gGame
 	ldr r2, _08016850 @ =0x00005962
 	adds r0, r0, r2
 	ldrh r0, [r0]
@@ -43274,7 +43274,7 @@ _08016838:
 	.align 2, 0
 _08016844: .4byte gUnknown_02016028
 _08016848: .4byte 0x00013210
-_0801684C: .4byte gScript
+_0801684C: .4byte gGame
 _08016850: .4byte 0x00005962
 _08016854: .4byte 0x00009D10
 _08016858: .4byte 0x000121BA
@@ -43583,7 +43583,7 @@ nullsub_66: @ 0x08016AA4
 	thumb_func_start sub_08016AA8
 sub_08016AA8: @ 0x08016AA8
 	push {lr}
-	ldr r0, _08016AC8 @ =gScript
+	ldr r0, _08016AC8 @ =gGame
 	ldrb r0, [r0, #3]
 	lsls r0, r0, #0x1a
 	cmp r0, #0
@@ -43598,7 +43598,7 @@ sub_08016AA8: @ 0x08016AA8
 	strh r0, [r1, #8]
 	b _08016ADC
 	.align 2, 0
-_08016AC8: .4byte gScript
+_08016AC8: .4byte gGame
 _08016ACC: .4byte gUnknown_02016028
 _08016AD0:
 	ldr r0, _08016AE0 @ =gUnknown_02016078
@@ -43614,14 +43614,14 @@ _08016AE0: .4byte gUnknown_02016078
 
 	thumb_func_start sub_08016AE4
 sub_08016AE4: @ 0x08016AE4
-	ldr r0, _08016AF0 @ =gScript
+	ldr r0, _08016AF0 @ =gGame
 	ldrb r1, [r0, #2]
 	movs r2, #0x10
 	orrs r1, r2
 	strb r1, [r0, #2]
 	bx lr
 	.align 2, 0
-_08016AF0: .4byte gScript
+_08016AF0: .4byte gGame
 
 	thumb_func_start sub_08016AF4
 sub_08016AF4: @ 0x08016AF4
@@ -43701,7 +43701,7 @@ sub_08016B6C: @ 0x08016B6C
 	movs r1, #4
 	orrs r0, r1
 	strb r0, [r2]
-	ldr r2, _08016BAC @ =gScript
+	ldr r2, _08016BAC @ =gGame
 	ldrb r1, [r2, #2]
 	lsls r0, r1, #0x19
 	cmp r0, #0
@@ -43721,7 +43721,7 @@ _08016BA0:
 	.align 2, 0
 _08016BA4: .4byte gUnknown_02016028
 _08016BA8: .4byte 0x000121BB
-_08016BAC: .4byte gScript
+_08016BAC: .4byte gGame
 _08016BB0: .4byte gUnknown_020051E4
 
 	thumb_func_start nullsub_67
@@ -43877,14 +43877,14 @@ sub_08016C94: @ 0x08016C94
 
 	thumb_func_start sub_08016CA0
 sub_08016CA0: @ 0x08016CA0
-	ldr r0, _08016CAC @ =gScript
+	ldr r0, _08016CAC @ =gGame
 	ldrb r1, [r0, #2]
 	movs r2, #0x10
 	orrs r1, r2
 	strb r1, [r0, #2]
 	bx lr
 	.align 2, 0
-_08016CAC: .4byte gScript
+_08016CAC: .4byte gGame
 
 	thumb_func_start sub_08016CB0
 sub_08016CB0: @ 0x08016CB0
@@ -43897,7 +43897,7 @@ sub_08016CB0: @ 0x08016CB0
 	thumb_func_start sub_08016CBC
 sub_08016CBC: @ 0x08016CBC
 	push {lr}
-	ldr r0, _08016CF0 @ =gScript
+	ldr r0, _08016CF0 @ =gGame
 	ldr r1, _08016CF4 @ =0x0000598C
 	adds r0, r0, r1
 	ldrb r1, [r0]
@@ -43924,7 +43924,7 @@ _08016CEC:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08016CF0: .4byte gScript
+_08016CF0: .4byte gGame
 _08016CF4: .4byte 0x0000598C
 _08016CF8: .4byte gUnknown_02016028
 _08016CFC: .4byte 0x00002C9C
@@ -43934,7 +43934,7 @@ _08016D04: .4byte 0x00002C9E
 	thumb_func_start sub_08016D08
 sub_08016D08: @ 0x08016D08
 	push {lr}
-	ldr r0, _08016D3C @ =gScript
+	ldr r0, _08016D3C @ =gGame
 	ldr r1, _08016D40 @ =0x0000598C
 	adds r0, r0, r1
 	ldrb r1, [r0]
@@ -43961,7 +43961,7 @@ _08016D38:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08016D3C: .4byte gScript
+_08016D3C: .4byte gGame
 _08016D40: .4byte 0x0000598C
 _08016D44: .4byte gUnknown_02016028
 _08016D48: .4byte 0x00002C9C
@@ -43971,7 +43971,7 @@ _08016D50: .4byte 0x00002C9E
 	thumb_func_start sub_08016D54
 sub_08016D54: @ 0x08016D54
 	push {r4, r5, r6, r7, lr}
-	ldr r1, _08016E20 @ =gScript
+	ldr r1, _08016E20 @ =gGame
 	ldrb r0, [r1, #3]
 	lsls r0, r0, #0x1a
 	ldr r2, _08016E24 @ =gUnknown_02016078
@@ -44076,7 +44076,7 @@ _08016E06:
 	ldr r1, _08016E2C @ =0x00002C92
 	b _08016E32
 	.align 2, 0
-_08016E20: .4byte gScript
+_08016E20: .4byte gGame
 _08016E24: .4byte gUnknown_02016078
 _08016E28: .4byte gUnknown_02016028
 _08016E2C: .4byte 0x00002C92
@@ -44118,7 +44118,7 @@ sub_08016E64: @ 0x08016E64
 	lsls r1, r1, #3
 	adds r0, r4, #0
 	bl memclear
-	ldr r0, _08016EB8 @ =gScript
+	ldr r0, _08016EB8 @ =gGame
 	ldrb r0, [r0, #3]
 	lsls r0, r0, #0x1a
 	lsrs r2, r0, #0x1f
@@ -44152,7 +44152,7 @@ sub_08016E64: @ 0x08016E64
 	b _08016ECA
 	.align 2, 0
 _08016EB4: .4byte gUnknown_03005314
-_08016EB8: .4byte gScript
+_08016EB8: .4byte gGame
 _08016EBC: .4byte gUnknown_02016028
 _08016EC0: .4byte 0x000131D0
 _08016EC4:
@@ -44202,7 +44202,7 @@ _08016F18: .4byte gUnknown_03005314
 	thumb_func_start sub_08016F1C
 sub_08016F1C: @ 0x08016F1C
 	push {lr}
-	ldr r0, _08016F40 @ =gScript
+	ldr r0, _08016F40 @ =gGame
 	ldr r1, _08016F44 @ =0x00009D14
 	adds r0, r0, r1
 	ldrb r0, [r0]
@@ -44221,7 +44221,7 @@ _08016F3C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08016F40: .4byte gScript
+_08016F40: .4byte gGame
 _08016F44: .4byte 0x00009D14
 _08016F48: .4byte gUnknown_020051E4
 
@@ -46424,7 +46424,7 @@ _08017FBE:
 	mov r0, sb
 	cmp r0, #0
 	bne _08017FE6
-	ldr r1, _08018078 @ =gScript
+	ldr r1, _08018078 @ =gGame
 	ldrb r0, [r1, #0xf]
 	lsls r0, r0, #0x1f
 	cmp r0, #0
@@ -46434,7 +46434,7 @@ _08017FE6:
 	mov r2, sb
 	cmp r2, #1
 	bne _08017FF8
-	ldr r3, _08018078 @ =gScript
+	ldr r3, _08018078 @ =gGame
 	ldrb r0, [r3, #0x11]
 	lsls r0, r0, #0x1c
 	cmp r0, #0
@@ -46500,7 +46500,7 @@ _08017FF8:
 _0801806C: .4byte gUnknown_02005C1C
 _08018070: .4byte 0x00005894
 _08018074: .4byte 0x000058C9
-_08018078: .4byte gScript
+_08018078: .4byte gGame
 _0801807C: .4byte 0xFFFF0000
 _08018080: .4byte gUnknown_0200C3A4
 _08018084:
@@ -47193,7 +47193,7 @@ _080185C2:
 	mov ip, r0
 	b _08018620
 _080185CC:
-	ldr r2, _08018610 @ =gScript
+	ldr r2, _08018610 @ =gGame
 	ldr r1, _08018614 @ =0x000067C4
 	adds r0, r2, r1
 	ldrb r0, [r0]
@@ -47227,7 +47227,7 @@ _080185DC:
 	lsls r0, r0, #0x10
 	b _08018624
 	.align 2, 0
-_08018610: .4byte gScript
+_08018610: .4byte gGame
 _08018614: .4byte 0x000067C4
 _08018618: .4byte 0xFFFFF83F
 _0801861C: .4byte gUnknown_08D2D608
@@ -47378,7 +47378,7 @@ sub_0801870C: @ 0x0801870C
 	movs r0, #0
 	bl get_obj_direct
 	adds r6, r0, #0
-	ldr r5, _080187A4 @ =gScript
+	ldr r5, _080187A4 @ =gGame
 	ldr r1, _080187A8 @ =0x00008494
 	adds r0, r5, r1
 	ldrb r0, [r0]
@@ -47448,7 +47448,7 @@ _0801879A:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080187A4: .4byte gScript
+_080187A4: .4byte gGame
 _080187A8: .4byte 0x00008494
 _080187AC: .4byte 0x000067B8
 _080187B0: .4byte 0x000067C5
@@ -47470,7 +47470,7 @@ sub_080187C4: @ 0x080187C4
 	lsls r2, r2, #0x10
 	lsrs r6, r2, #0x10
 	movs r4, #0
-	ldr r5, _08018814 @ =gScript
+	ldr r5, _08018814 @ =gGame
 _080187DC:
 	cmp r4, #0
 	bne _080187E8
@@ -47503,7 +47503,7 @@ _08018800:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08018814: .4byte gScript
+_08018814: .4byte gGame
 
 	thumb_func_start sub_08018818
 sub_08018818: @ 0x08018818
@@ -47516,7 +47516,7 @@ sub_08018818: @ 0x08018818
 	lsrs r4, r2, #0x10
 	lsls r3, r3, #0x10
 	lsrs r5, r3, #0x10
-	ldr r0, _08018844 @ =gScript
+	ldr r0, _08018844 @ =gGame
 	ldr r2, _08018848 @ =0x00009D10
 	adds r0, r0, r2
 	ldr r0, [r0]
@@ -47529,7 +47529,7 @@ sub_08018818: @ 0x08018818
 	adds r3, r5, #0
 	b _08018858
 	.align 2, 0
-_08018844: .4byte gScript
+_08018844: .4byte gGame
 _08018848: .4byte 0x00009D10
 _0801884C:
 	rsbs r0, r4, #0
@@ -47539,7 +47539,7 @@ _0801884C:
 	lsls r0, r0, #0x10
 	lsrs r3, r0, #0x10
 _08018858:
-	ldr r0, _08018874 @ =gScript
+	ldr r0, _08018874 @ =gGame
 	lsls r1, r6, #3
 	subs r1, r1, r6
 	lsls r1, r1, #3
@@ -47554,7 +47554,7 @@ _08018858:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08018874: .4byte gScript
+_08018874: .4byte gGame
 _08018878: .4byte 0x000058BC
 _0801887C: .4byte 0x000058BE
 
@@ -47589,7 +47589,7 @@ _080188B0:
 	bl sub_08002FD4
 	lsls r0, r0, #0x10
 	lsrs r7, r0, #0x10
-	ldr r0, _080188DC @ =gScript
+	ldr r0, _080188DC @ =gGame
 	ldr r1, _080188E0 @ =0x00009D10
 	adds r0, r0, r1
 	ldr r0, [r0]
@@ -47605,7 +47605,7 @@ _080188B0:
 	adds r3, r6, #0
 	b _080188EC
 	.align 2, 0
-_080188DC: .4byte gScript
+_080188DC: .4byte gGame
 _080188E0: .4byte 0x00009D10
 _080188E4:
 	mov r0, r8
@@ -47737,7 +47737,7 @@ _080189C4:
 	cmp r0, #3
 	beq _08018AA4
 _080189D8:
-	ldr r0, _08018ABC @ =gScript
+	ldr r0, _08018ABC @ =gGame
 	ldr r1, _08018AC0 @ =0x000067AC
 	adds r0, r0, r1
 	ldrh r1, [r0]
@@ -47768,7 +47768,7 @@ _08018A0A:
 	adds r0, r5, #0
 	mov r1, sp
 	bl sub_0801A548
-	ldr r2, _08018ABC @ =gScript
+	ldr r2, _08018ABC @ =gGame
 	mov sb, r2
 	ldrb r0, [r2, #0x11]
 	lsls r0, r0, #0x1a
@@ -47851,7 +47851,7 @@ _08018AA4:
 	.align 2, 0
 _08018AB4: .4byte gUnknown_02005C1C
 _08018AB8: .4byte 0x00005894
-_08018ABC: .4byte gScript
+_08018ABC: .4byte gGame
 _08018AC0: .4byte 0x000067AC
 
 	thumb_func_start sub_08018AC4
@@ -47921,7 +47921,7 @@ sub_08018B30: @ 0x08018B30
 	mov r6, sb
 	mov r5, r8
 	push {r5, r6, r7}
-	ldr r1, _08018B6C @ =gScript
+	ldr r1, _08018B6C @ =gGame
 	ldr r2, _08018B70 @ =0x000067AC
 	adds r0, r1, r2
 	ldrh r0, [r0]
@@ -47947,7 +47947,7 @@ _08018B64:
 	bl sub_08018ED0
 	b _08018E9E
 	.align 2, 0
-_08018B6C: .4byte gScript
+_08018B6C: .4byte gGame
 _08018B70: .4byte 0x000067AC
 _08018B74: .4byte 0x0000591D
 _08018B78:
@@ -48159,7 +48159,7 @@ _08018CE6:
 	cmp r4, #0x9f
 	bls _08018CE6
 _08018D2E:
-	ldr r2, _08018DF4 @ =gScript
+	ldr r2, _08018DF4 @ =gGame
 	ldr r1, _08018DF8 @ =0x000058E5
 	adds r0, r2, r1
 	ldrb r1, [r0]
@@ -48254,7 +48254,7 @@ _08018DE4: .4byte 0x000146D0
 _08018DE8: .4byte 0x00014810
 _08018DEC: .4byte gUnknown_0202A978
 _08018DF0: .4byte gUnknown_0200C3B6
-_08018DF4: .4byte gScript
+_08018DF4: .4byte gGame
 _08018DF8: .4byte 0x000058E5
 _08018DFC: .4byte 0x0000591D
 _08018E00: .4byte 0x00005955
@@ -48308,7 +48308,7 @@ _08018E2E:
 	cmp r4, #0x9f
 	bls _08018E2E
 _08018E76:
-	ldr r2, _08018EC0 @ =gScript
+	ldr r2, _08018EC0 @ =gGame
 	ldr r0, _08018EC4 @ =0x000067B2
 	adds r3, r2, r0
 	ldr r1, _08018EC8 @ =0x000067B6
@@ -48342,7 +48342,7 @@ _08018EB0: .4byte 0x00014A90
 _08018EB4: .4byte 0x00014BD0
 _08018EB8: .4byte gUnknown_0202AD38
 _08018EBC: .4byte gUnknown_0200C3B6
-_08018EC0: .4byte gScript
+_08018EC0: .4byte gGame
 _08018EC4: .4byte 0x000067B2
 _08018EC8: .4byte 0x000067B6
 _08018ECC: .4byte 0x000058E4
@@ -48369,7 +48369,7 @@ sub_08018ED0: @ 0x08018ED0
 	orrs r0, r1
 	strb r0, [r2]
 	ldr r1, _08018F70 @ =gUnknown_03004B0C
-	ldr r5, _08018F74 @ =gScript
+	ldr r5, _08018F74 @ =gGame
 	ldr r2, _08018F78 @ =0x000067B2
 	adds r2, r2, r5
 	mov sb, r2
@@ -48424,7 +48424,7 @@ _08018F64: .4byte gUnknown_03004E15
 _08018F68: .4byte gUnknown_02016028
 _08018F6C: .4byte 0x0001ED11
 _08018F70: .4byte gUnknown_03004B0C
-_08018F74: .4byte gScript
+_08018F74: .4byte gGame
 _08018F78: .4byte 0x000067B2
 _08018F7C: .4byte gUnknown_03004B0E
 _08018F80: .4byte 0x000067B4
@@ -48450,7 +48450,7 @@ sub_08018F9C: @ 0x08018F9C
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
 	str r1, [sp, #8]
-	ldr r0, _08019054 @ =gScript
+	ldr r0, _08019054 @ =gGame
 	ldr r2, _08019058 @ =0x000058B8
 	adds r1, r0, r2
 	ldrh r1, [r1]
@@ -48503,7 +48503,7 @@ _08018FD8:
 	lsrs r5, r0, #0x10
 	cmp r5, #0x9f
 	bls _08018FD8
-	ldr r2, _08019054 @ =gScript
+	ldr r2, _08019054 @ =gGame
 	ldrb r1, [r2, #0xe]
 	lsrs r1, r1, #6
 	lsls r0, r1, #3
@@ -48530,7 +48530,7 @@ _08018FD8:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08019054: .4byte gScript
+_08019054: .4byte gGame
 _08019058: .4byte 0x000058B8
 _0801905C: .4byte 0x000058F0
 _08019060: .4byte 0x00005928
@@ -50111,7 +50111,7 @@ sub_08019BF0: @ 0x08019BF0
 	push {r5, r6, r7}
 	lsls r1, r1, #0x10
 	lsrs r5, r1, #0x10
-	ldr r4, _08019C3C @ =gScript
+	ldr r4, _08019C3C @ =gGame
 	ldr r6, _08019C40 @ =0x000067B4
 	adds r1, r4, r6
 	strh r2, [r1]
@@ -50145,7 +50145,7 @@ _08019C2E:
 	beq _08019C52
 	b _08019C8C
 	.align 2, 0
-_08019C3C: .4byte gScript
+_08019C3C: .4byte gGame
 _08019C40: .4byte 0x000067B4
 _08019C44: .4byte 0x000067B6
 _08019C48: .4byte 0x000058E5
@@ -50251,7 +50251,7 @@ _08019CF6:
 	thumb_func_start sub_08019D04
 sub_08019D04: @ 0x08019D04
 	push {r4, r5, r6, r7, lr}
-	ldr r2, _08019D6C @ =gScript
+	ldr r2, _08019D6C @ =gGame
 	ldr r0, _08019D70 @ =0x000067B4
 	adds r1, r2, r0
 	movs r0, #4
@@ -50303,7 +50303,7 @@ _08019D3A:
 	strb r0, [r5, #3]
 	b _08019D8E
 	.align 2, 0
-_08019D6C: .4byte gScript
+_08019D6C: .4byte gGame
 _08019D70: .4byte 0x000067B4
 _08019D74: .4byte 0x000067B6
 _08019D78: .4byte 0x000067C5
@@ -50328,7 +50328,7 @@ _08019D98: .4byte 0x000121BB
 sub_08019D9C: @ 0x08019D9C
 	push {r4, r5, r6, r7, lr}
 	sub sp, #4
-	ldr r0, _08019DB8 @ =gScript
+	ldr r0, _08019DB8 @ =gGame
 	ldr r1, _08019DBC @ =0x000067B8
 	adds r2, r0, r1
 	movs r3, #0
@@ -50340,7 +50340,7 @@ sub_08019D9C: @ 0x08019D9C
 	movs r0, #0
 	b _08019DC2
 	.align 2, 0
-_08019DB8: .4byte gScript
+_08019DB8: .4byte gGame
 _08019DBC: .4byte 0x000067B8
 _08019DC0:
 	ldrh r0, [r2]
@@ -50408,7 +50408,7 @@ _08019E3C: .4byte gUnknown_02016028
 	thumb_func_start sub_08019E40
 sub_08019E40: @ 0x08019E40
 	push {r4, r5, r6, lr}
-	ldr r5, _08019EBC @ =gScript
+	ldr r5, _08019EBC @ =gGame
 	ldr r1, _08019EC0 @ =0x00009D14
 	adds r0, r5, r1
 	ldrb r0, [r0]
@@ -50469,7 +50469,7 @@ _08019EB4:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08019EBC: .4byte gScript
+_08019EBC: .4byte gGame
 _08019EC0: .4byte 0x00009D14
 _08019EC4: .4byte 0x000067C4
 _08019EC8: .4byte 0x000067BA
@@ -50565,7 +50565,7 @@ _08019F8C: .4byte gUnknown_02016078
 	thumb_func_start sub_08019F90
 sub_08019F90: @ 0x08019F90
 	push {r4, lr}
-	ldr r0, _08019FCC @ =gScript
+	ldr r0, _08019FCC @ =gGame
 	ldr r1, _08019FD0 @ =0x000067AC
 	adds r0, r0, r1
 	ldrh r1, [r0]
@@ -50595,7 +50595,7 @@ sub_08019F90: @ 0x08019F90
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08019FCC: .4byte gScript
+_08019FCC: .4byte gGame
 _08019FD0: .4byte 0x000067AC
 _08019FD4: .4byte gTownMapInfoTable
 _08019FD8: .4byte gUnknown_02016028
@@ -50607,7 +50607,7 @@ sub_08019FE4: @ 0x08019FE4
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
-	ldr r0, _0801A008 @ =gScript
+	ldr r0, _0801A008 @ =gGame
 	ldr r1, _0801A00C @ =0x000067AC
 	adds r0, r0, r1
 	ldrh r1, [r0]
@@ -50623,7 +50623,7 @@ sub_08019FE4: @ 0x08019FE4
 	movs r1, #0xf2
 	b _0801A040
 	.align 2, 0
-_0801A008: .4byte gScript
+_0801A008: .4byte gGame
 _0801A00C: .4byte 0x000067AC
 _0801A010: .4byte gTownMapInfoTable
 _0801A014:
@@ -50857,7 +50857,7 @@ sub_0801A1B8: @ 0x0801A1B8
 	lsrs r4, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r5, r2, #0x10
-	ldr r6, _0801A208 @ =gScript
+	ldr r6, _0801A208 @ =gGame
 	lsls r3, r0, #3
 	subs r3, r3, r0
 	lsls r3, r3, #3
@@ -50891,7 +50891,7 @@ sub_0801A1B8: @ 0x0801A1B8
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0801A208: .4byte gScript
+_0801A208: .4byte gGame
 _0801A20C: .4byte 0x000058B0
 _0801A210: .4byte 0x000058B2
 _0801A214: .4byte 0x000058B4
@@ -50929,7 +50929,7 @@ sub_0801A238: @ 0x0801A238
 	bl sub_0801A638
 	lsls r0, r0, #0x10
 	lsrs r7, r0, #0x10
-	ldr r1, _0801A26C @ =gScript
+	ldr r1, _0801A26C @ =gGame
 	lsls r0, r4, #2
 	adds r0, r0, r1
 	ldrb r0, [r0, #0x1c]
@@ -50942,7 +50942,7 @@ _0801A266:
 	movs r3, #0
 	b _0801A27C
 	.align 2, 0
-_0801A26C: .4byte gScript
+_0801A26C: .4byte gGame
 _0801A270:
 	movs r1, #0
 	ldrsh r0, [r5, r1]
@@ -50951,7 +50951,7 @@ _0801A270:
 	bgt _0801A27C
 	ldrh r3, [r5]
 _0801A27C:
-	ldr r0, _0801A294 @ =gScript
+	ldr r0, _0801A294 @ =gGame
 	lsls r1, r4, #2
 	adds r1, r1, r0
 	ldrb r0, [r1, #0x1d]
@@ -50965,7 +50965,7 @@ _0801A290:
 	movs r2, #0
 	b _0801A2A4
 	.align 2, 0
-_0801A294: .4byte gScript
+_0801A294: .4byte gGame
 _0801A298:
 	movs r1, #2
 	ldrsh r0, [r5, r1]
@@ -51018,7 +51018,7 @@ sub_0801A2DC: @ 0x0801A2DC
 	beq _0801A338
 	cmp r5, #0
 	bne _0801A318
-	ldr r1, _0801A310 @ =gScript
+	ldr r1, _0801A310 @ =gGame
 	ldrb r0, [r1, #0xf]
 	lsls r0, r0, #0x1f
 	adds r6, r1, #0
@@ -51034,10 +51034,10 @@ sub_0801A2DC: @ 0x0801A2DC
 	adds r4, r5, #0
 	b _0801A352
 	.align 2, 0
-_0801A310: .4byte gScript
+_0801A310: .4byte gGame
 _0801A314: .4byte 0x000058E5
 _0801A318:
-	ldr r3, _0801A330 @ =gScript
+	ldr r3, _0801A330 @ =gGame
 	lsls r4, r5, #3
 	subs r0, r4, r5
 	lsls r0, r0, #3
@@ -51050,10 +51050,10 @@ _0801A318:
 	strb r1, [r0]
 	b _0801A350
 	.align 2, 0
-_0801A330: .4byte gScript
+_0801A330: .4byte gGame
 _0801A334: .4byte 0x000058E5
 _0801A338:
-	ldr r3, _0801A38C @ =gScript
+	ldr r3, _0801A38C @ =gGame
 	lsls r4, r5, #3
 	subs r1, r4, r5
 	lsls r1, r1, #3
@@ -51098,7 +51098,7 @@ _0801A352:
 	strb r1, [r4]
 	b _0801A3A2
 	.align 2, 0
-_0801A38C: .4byte gScript
+_0801A38C: .4byte gGame
 _0801A390: .4byte 0x000058E5
 _0801A394:
 	movs r0, #3
@@ -51157,7 +51157,7 @@ sub_0801A3D8: @ 0x0801A3D8
 	beq _0801A410
 	b _0801A42A
 _0801A3F4:
-	ldr r0, _0801A40C @ =gScript
+	ldr r0, _0801A40C @ =gGame
 	lsls r1, r4, #2
 	adds r1, r1, r0
 	lsls r3, r5, #6
@@ -51169,9 +51169,9 @@ _0801A3F4:
 	strb r6, [r1, #0x1e]
 	b _0801A42A
 	.align 2, 0
-_0801A40C: .4byte gScript
+_0801A40C: .4byte gGame
 _0801A410:
-	ldr r0, _0801A430 @ =gScript
+	ldr r0, _0801A430 @ =gGame
 	lsls r2, r4, #2
 	adds r2, r2, r0
 	movs r0, #3
@@ -51189,7 +51189,7 @@ _0801A42A:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0801A430: .4byte gScript
+_0801A430: .4byte gGame
 
 	thumb_func_start sub_0801A434
 sub_0801A434: @ 0x0801A434
@@ -51214,7 +51214,7 @@ sub_0801A434: @ 0x0801A434
 	add r4, sp
 	mov r8, r4
 	strh r6, [r4]
-	ldr r5, _0801A504 @ =gScript
+	ldr r5, _0801A504 @ =gGame
 	ldr r6, _0801A508 @ =0x00005958
 	adds r4, r5, r6
 	strb r0, [r4]
@@ -51295,7 +51295,7 @@ sub_0801A434: @ 0x0801A434
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0801A504: .4byte gScript
+_0801A504: .4byte gGame
 _0801A508: .4byte 0x00005958
 _0801A50C: .4byte 0x00005978
 _0801A510: .4byte 0x0000595A
@@ -51311,20 +51311,20 @@ _0801A52C: .4byte 0x00005988
 sub_0801A530: @ 0x0801A530
 	push {lr}
 	adds r1, r0, #0
-	ldr r0, _0801A544 @ =gScript
+	ldr r0, _0801A544 @ =gGame
 	ldrb r0, [r0, #0xe]
 	lsrs r0, r0, #6
 	bl sub_0801A548
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0801A544: .4byte gScript
+_0801A544: .4byte gGame
 
 	thumb_func_start sub_0801A548
 sub_0801A548: @ 0x0801A548
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
-	ldr r3, _0801A570 @ =gScript
+	ldr r3, _0801A570 @ =gGame
 	lsls r2, r0, #3
 	subs r2, r2, r0
 	lsls r2, r2, #3
@@ -51343,7 +51343,7 @@ sub_0801A548: @ 0x0801A548
 	strh r0, [r1, #2]
 	bx lr
 	.align 2, 0
-_0801A570: .4byte gScript
+_0801A570: .4byte gGame
 _0801A574: .4byte 0x000058B4
 _0801A578: .4byte 0x000058B6
 
@@ -51351,20 +51351,20 @@ _0801A578: .4byte 0x000058B6
 sub_0801A57C: @ 0x0801A57C
 	push {lr}
 	adds r1, r0, #0
-	ldr r0, _0801A590 @ =gScript
+	ldr r0, _0801A590 @ =gGame
 	ldrb r0, [r0, #0xe]
 	lsrs r0, r0, #6
 	bl sub_0801A594
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0801A590: .4byte gScript
+_0801A590: .4byte gGame
 
 	thumb_func_start sub_0801A594
 sub_0801A594: @ 0x0801A594
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
-	ldr r3, _0801A5B4 @ =gScript
+	ldr r3, _0801A5B4 @ =gGame
 	lsls r2, r0, #3
 	subs r2, r2, r0
 	lsls r2, r2, #3
@@ -51379,13 +51379,13 @@ sub_0801A594: @ 0x0801A594
 	strh r0, [r1, #2]
 	bx lr
 	.align 2, 0
-_0801A5B4: .4byte gScript
+_0801A5B4: .4byte gGame
 _0801A5B8: .4byte 0x000058B0
 _0801A5BC: .4byte 0x000058B2
 
 	thumb_func_start sub_0801A5C0
 sub_0801A5C0: @ 0x0801A5C0
-	ldr r3, _0801A5E4 @ =gScript
+	ldr r3, _0801A5E4 @ =gGame
 	ldrb r1, [r3, #0xe]
 	lsrs r1, r1, #6
 	lsls r2, r1, #3
@@ -51404,13 +51404,13 @@ sub_0801A5C0: @ 0x0801A5C0
 	strh r1, [r0, #6]
 	bx lr
 	.align 2, 0
-_0801A5E4: .4byte gScript
+_0801A5E4: .4byte gGame
 _0801A5E8: .4byte 0x000058C0
 
 	thumb_func_start sub_0801A5EC
 sub_0801A5EC: @ 0x0801A5EC
 	push {lr}
-	ldr r0, _0801A600 @ =gScript
+	ldr r0, _0801A600 @ =gGame
 	ldrb r0, [r0, #0xe]
 	lsrs r0, r0, #6
 	bl sub_0801A61C
@@ -51419,12 +51419,12 @@ sub_0801A5EC: @ 0x0801A5EC
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0801A600: .4byte gScript
+_0801A600: .4byte gGame
 
 	thumb_func_start sub_0801A604
 sub_0801A604: @ 0x0801A604
 	push {lr}
-	ldr r0, _0801A618 @ =gScript
+	ldr r0, _0801A618 @ =gGame
 	ldrb r0, [r0, #0xe]
 	lsrs r0, r0, #6
 	bl sub_0801A638
@@ -51433,12 +51433,12 @@ sub_0801A604: @ 0x0801A604
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0801A618: .4byte gScript
+_0801A618: .4byte gGame
 
 	thumb_func_start sub_0801A61C
 sub_0801A61C: @ 0x0801A61C
 	lsls r0, r0, #0x10
-	ldr r1, _0801A634 @ =gScript
+	ldr r1, _0801A634 @ =gGame
 	lsrs r0, r0, #0xe
 	adds r0, r0, r1
 	ldrb r0, [r0, #0x1c]
@@ -51450,12 +51450,12 @@ sub_0801A61C: @ 0x0801A61C
 	lsrs r0, r0, #0x10
 	bx lr
 	.align 2, 0
-_0801A634: .4byte gScript
+_0801A634: .4byte gGame
 
 	thumb_func_start sub_0801A638
 sub_0801A638: @ 0x0801A638
 	lsls r0, r0, #0x10
-	ldr r1, _0801A64C @ =gScript
+	ldr r1, _0801A64C @ =gGame
 	lsrs r0, r0, #0xe
 	adds r0, r0, r1
 	ldrb r0, [r0, #0x1c]
@@ -51465,7 +51465,7 @@ sub_0801A638: @ 0x0801A638
 	lsls r0, r0, #8
 	bx lr
 	.align 2, 0
-_0801A64C: .4byte gScript
+_0801A64C: .4byte gGame
 
 	thumb_func_start sub_0801A650
 sub_0801A650: @ 0x0801A650
@@ -51491,7 +51491,7 @@ sub_0801A650: @ 0x0801A650
 	thumb_func_start sub_0801A678
 sub_0801A678: @ 0x0801A678
 	lsls r0, r0, #0x10
-	ldr r1, _0801A690 @ =gScript
+	ldr r1, _0801A690 @ =gGame
 	lsrs r0, r0, #0xe
 	adds r0, r0, r1
 	ldrb r0, [r0, #0x1c]
@@ -51503,12 +51503,12 @@ sub_0801A678: @ 0x0801A678
 	lsrs r0, r0, #0x10
 	bx lr
 	.align 2, 0
-_0801A690: .4byte gScript
+_0801A690: .4byte gGame
 
 	thumb_func_start sub_0801A694
 sub_0801A694: @ 0x0801A694
 	lsls r0, r0, #0x10
-	ldr r1, _0801A6A8 @ =gScript
+	ldr r1, _0801A6A8 @ =gGame
 	lsrs r0, r0, #0xe
 	adds r0, r0, r1
 	ldrb r0, [r0, #0x1c]
@@ -51517,12 +51517,12 @@ sub_0801A694: @ 0x0801A694
 	adds r0, #1
 	bx lr
 	.align 2, 0
-_0801A6A8: .4byte gScript
+_0801A6A8: .4byte gGame
 
 	thumb_func_start sub_0801A6AC
 sub_0801A6AC: @ 0x0801A6AC
 	ldr r1, _0801A6BC @ =gUnknown_08D2D634
-	ldr r0, _0801A6C0 @ =gScript
+	ldr r0, _0801A6C0 @ =gGame
 	ldrb r0, [r0, #0xe]
 	lsrs r0, r0, #6
 	lsls r0, r0, #1
@@ -51531,12 +51531,12 @@ sub_0801A6AC: @ 0x0801A6AC
 	bx lr
 	.align 2, 0
 _0801A6BC: .4byte gUnknown_08D2D634
-_0801A6C0: .4byte gScript
+_0801A6C0: .4byte gGame
 
 	thumb_func_start sub_0801A6C4
 sub_0801A6C4: @ 0x0801A6C4
 	lsls r0, r0, #0x10
-	ldr r1, _0801A6D4 @ =gScript
+	ldr r1, _0801A6D4 @ =gGame
 	lsrs r0, r0, #0xf
 	adds r1, #0x14
 	adds r0, r0, r1
@@ -51544,13 +51544,13 @@ sub_0801A6C4: @ 0x0801A6C4
 	ldrsh r0, [r0, r1]
 	bx lr
 	.align 2, 0
-_0801A6D4: .4byte gScript
+_0801A6D4: .4byte gGame
 
 	thumb_func_start sub_0801A6D8
 sub_0801A6D8: @ 0x0801A6D8
 	push {lr}
 	adds r2, r0, #0
-	ldr r0, _0801A704 @ =gScript
+	ldr r0, _0801A704 @ =gGame
 	ldr r1, _0801A708 @ =0x000067AC
 	adds r0, r0, r1
 	ldrh r1, [r0]
@@ -51570,7 +51570,7 @@ sub_0801A6D8: @ 0x0801A6D8
 	beq _0801A72E
 	b _0801A75C
 	.align 2, 0
-_0801A704: .4byte gScript
+_0801A704: .4byte gGame
 _0801A708: .4byte 0x000067AC
 _0801A70C: .4byte 0x0000032A
 _0801A710:
@@ -51727,7 +51727,7 @@ _0801A80A:
 	asrs r0, r0, #0x10
 	cmp r0, #0
 	bge _0801A834
-	ldr r0, _0801A828 @ =gScript
+	ldr r0, _0801A828 @ =gGame
 	ldrb r0, [r0, #0x11]
 	lsls r0, r0, #0x1a
 	cmp r0, #0
@@ -51738,7 +51738,7 @@ _0801A80A:
 	adds r0, r2, r4
 	b _0801A856
 	.align 2, 0
-_0801A828: .4byte gScript
+_0801A828: .4byte gGame
 _0801A82C: .4byte gUnknown_02000040
 _0801A830:
 	movs r4, #0
@@ -51746,7 +51746,7 @@ _0801A830:
 _0801A834:
 	cmp r0, r2
 	ble _0801A85A
-	ldr r0, _0801A84C @ =gScript
+	ldr r0, _0801A84C @ =gGame
 	ldrb r0, [r0, #0x11]
 	lsls r0, r0, #0x1a
 	cmp r0, #0
@@ -51757,7 +51757,7 @@ _0801A834:
 	subs r0, r4, r2
 	b _0801A856
 	.align 2, 0
-_0801A84C: .4byte gScript
+_0801A84C: .4byte gGame
 _0801A850: .4byte gUnknown_02000040
 _0801A854:
 	subs r0, r2, #1
@@ -51811,7 +51811,7 @@ _0801A8A6:
 	asrs r0, r0, #0x10
 	cmp r0, #0
 	bge _0801A8D0
-	ldr r0, _0801A8C4 @ =gScript
+	ldr r0, _0801A8C4 @ =gGame
 	ldrb r0, [r0, #0x11]
 	lsls r0, r0, #0x1b
 	cmp r0, #0
@@ -51822,7 +51822,7 @@ _0801A8A6:
 	adds r0, r2, r4
 	b _0801A8F2
 	.align 2, 0
-_0801A8C4: .4byte gScript
+_0801A8C4: .4byte gGame
 _0801A8C8: .4byte gUnknown_02000040
 _0801A8CC:
 	movs r4, #0
@@ -51830,7 +51830,7 @@ _0801A8CC:
 _0801A8D0:
 	cmp r0, r2
 	ble _0801A8F6
-	ldr r0, _0801A8E8 @ =gScript
+	ldr r0, _0801A8E8 @ =gGame
 	ldrb r0, [r0, #0x11]
 	lsls r0, r0, #0x1b
 	cmp r0, #0
@@ -51841,7 +51841,7 @@ _0801A8D0:
 	subs r0, r4, r2
 	b _0801A8F2
 	.align 2, 0
-_0801A8E8: .4byte gScript
+_0801A8E8: .4byte gGame
 _0801A8EC: .4byte gUnknown_02000040
 _0801A8F0:
 	subs r0, r2, #1
@@ -51896,7 +51896,7 @@ _0801A946:
 	.align 2, 0
 _0801A94C: .4byte gUnknown_08D2D63C
 _0801A950:
-	ldr r0, _0801A974 @ =gScript
+	ldr r0, _0801A974 @ =gGame
 	lsls r1, r5, #2
 	adds r0, #0x5c
 	adds r1, r1, r0
@@ -51915,7 +51915,7 @@ _0801A968:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0801A974: .4byte gScript
+_0801A974: .4byte gGame
 
 	thumb_func_start sub_0801A978
 sub_0801A978: @ 0x0801A978
@@ -51973,7 +51973,7 @@ sub_0801A9D8: @ 0x0801A9D8
 	adds r4, r1, #0
 	lsls r0, r0, #0x10
 	lsrs r3, r0, #0x10
-	ldr r0, _0801AA10 @ =gScript
+	ldr r0, _0801AA10 @ =gGame
 	ldrb r0, [r0, #8]
 	lsls r1, r0, #0x1f
 	lsrs r1, r1, #0x1f
@@ -51997,7 +51997,7 @@ sub_0801A9D8: @ 0x0801A9D8
 	movs r0, #1
 	b _0801AA16
 	.align 2, 0
-_0801AA10: .4byte gScript
+_0801AA10: .4byte gGame
 _0801AA14:
 	movs r0, #0
 _0801AA16:
@@ -52065,7 +52065,7 @@ sub_0801AA70: @ 0x0801AA70
 	adds r2, r1, #0
 	lsls r0, r0, #0x10
 	lsrs r3, r0, #0x10
-	ldr r0, _0801AA90 @ =gScript
+	ldr r0, _0801AA90 @ =gGame
 	ldrb r0, [r0, #8]
 	lsls r1, r0, #0x1f
 	lsrs r1, r1, #0x1f
@@ -52077,7 +52077,7 @@ sub_0801AA70: @ 0x0801AA70
 	movs r0, #0
 	b _0801AAAC
 	.align 2, 0
-_0801AA90: .4byte gScript
+_0801AA90: .4byte gGame
 _0801AA94:
 	ldrh r1, [r2]
 	lsls r1, r1, #0x10
@@ -52100,7 +52100,7 @@ sub_0801AAB0: @ 0x0801AAB0
 	adds r2, r1, #0
 	lsls r0, r0, #0x10
 	lsrs r3, r0, #0x10
-	ldr r0, _0801AAF4 @ =gScript
+	ldr r0, _0801AAF4 @ =gGame
 	ldrb r0, [r0, #8]
 	lsls r1, r0, #0x1f
 	lsrs r1, r1, #0x1f
@@ -52129,7 +52129,7 @@ sub_0801AAB0: @ 0x0801AAB0
 	lsls r0, r0, #1
 	b _0801AAFA
 	.align 2, 0
-_0801AAF4: .4byte gScript
+_0801AAF4: .4byte gGame
 _0801AAF8:
 	movs r0, #1
 _0801AAFA:
@@ -52143,7 +52143,7 @@ sub_0801AB00: @ 0x0801AB00
 	adds r2, r1, #0
 	lsls r0, r0, #0x10
 	lsrs r3, r0, #0x10
-	ldr r0, _0801AB18 @ =gScript
+	ldr r0, _0801AB18 @ =gGame
 	ldr r1, _0801AB1C @ =0x0000829B
 	adds r0, r0, r1
 	ldrb r0, [r0]
@@ -52152,7 +52152,7 @@ sub_0801AB00: @ 0x0801AB00
 	ldr r1, _0801AB20 @ =0x04000001
 	b _0801AB26
 	.align 2, 0
-_0801AB18: .4byte gScript
+_0801AB18: .4byte gGame
 _0801AB1C: .4byte 0x0000829B
 _0801AB20: .4byte 0x04000001
 _0801AB24:
@@ -52236,7 +52236,7 @@ _0801AB8A:
 	bl get_obj_direct
 	adds r3, r0, #0
 	movs r4, #0
-	ldr r0, _0801ACCC @ =gScript
+	ldr r0, _0801ACCC @ =gGame
 	ldr r1, _0801ACD0 @ =0x00008370
 	adds r0, r0, r1
 	ldrb r1, [r0]
@@ -52373,10 +52373,10 @@ _0801ACC4:
 	b _0801AD30
 	.align 2, 0
 _0801ACC8: .4byte 0x04000001
-_0801ACCC: .4byte gScript
+_0801ACCC: .4byte gGame
 _0801ACD0: .4byte 0x00008370
 _0801ACD4:
-	ldr r0, _0801AD40 @ =gScript
+	ldr r0, _0801AD40 @ =gGame
 	ldr r1, _0801AD44 @ =0x000067AC
 	adds r6, r0, r1
 	ldrh r0, [r6]
@@ -52430,7 +52430,7 @@ _0801AD30:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0801AD40: .4byte gScript
+_0801AD40: .4byte gGame
 _0801AD44: .4byte 0x000067AC
 _0801AD48: .4byte 0xFFFF0000
 
@@ -52451,7 +52451,7 @@ _0801AD5E:
 	.align 2, 0
 _0801AD64: .4byte gUnknown_02000038
 _0801AD68:
-	ldr r0, _0801AD7C @ =gScript
+	ldr r0, _0801AD7C @ =gGame
 	ldr r1, _0801AD80 @ =0x00004088
 	adds r0, r0, r1
 	ldr r0, [r0]
@@ -52463,13 +52463,13 @@ _0801AD78:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0801AD7C: .4byte gScript
+_0801AD7C: .4byte gGame
 _0801AD80: .4byte 0x00004088
 
 	thumb_func_start sub_0801AD84
 sub_0801AD84: @ 0x0801AD84
 	lsls r0, r0, #0x10
-	ldr r1, _0801AD98 @ =gScript
+	ldr r1, _0801AD98 @ =gGame
 	ldr r2, _0801AD9C @ =0x000058AC
 	adds r1, r1, r2
 	ldr r1, [r1]
@@ -52478,7 +52478,7 @@ sub_0801AD84: @ 0x0801AD84
 	adds r0, r1, #0
 	bx lr
 	.align 2, 0
-_0801AD98: .4byte gScript
+_0801AD98: .4byte gGame
 _0801AD9C: .4byte 0x000058AC
 
 	thumb_func_start sub_0801ADA0
@@ -52600,7 +52600,7 @@ sub_0801AE58: @ 0x0801AE58
 	lsrs r4, r4, #0x10
 	lsls r5, r5, #0x10
 	lsrs r5, r5, #0x10
-	ldr r0, _0801AED4 @ =gScript
+	ldr r0, _0801AED4 @ =gGame
 	ldr r1, _0801AED8 @ =0x000067AC
 	adds r0, r0, r1
 	ldrh r0, [r0]
@@ -52654,7 +52654,7 @@ _0801AED0:
 	adds r0, r6, #0
 	b _0801AEF6
 	.align 2, 0
-_0801AED4: .4byte gScript
+_0801AED4: .4byte gGame
 _0801AED8: .4byte 0x000067AC
 _0801AEDC: .4byte 0xFFFF0000
 _0801AEE0:
@@ -52687,7 +52687,7 @@ sub_0801AF00: @ 0x0801AF00
 	lsrs r4, r4, #0x10
 	lsls r5, r5, #0x10
 	lsrs r5, r5, #0x10
-	ldr r0, _0801AF78 @ =gScript
+	ldr r0, _0801AF78 @ =gGame
 	ldr r1, _0801AF7C @ =0x000067AC
 	adds r0, r0, r1
 	ldrh r0, [r0]
@@ -52739,7 +52739,7 @@ _0801AF3A:
 	adds r0, r6, #0
 	b _0801AF9A
 	.align 2, 0
-_0801AF78: .4byte gScript
+_0801AF78: .4byte gGame
 _0801AF7C: .4byte 0x000067AC
 _0801AF80: .4byte 0xFFFF0000
 _0801AF84:
@@ -53000,7 +53000,7 @@ sub_0801B144: @ 0x0801B144
 	lsrs r4, r4, #0x10
 	lsls r1, r1, #0x10
 	lsrs r6, r1, #0x10
-	ldr r0, _0801B18C @ =gScript
+	ldr r0, _0801B18C @ =gGame
 	ldr r1, _0801B190 @ =0x000067AC
 	adds r0, r0, r1
 	ldrh r0, [r0]
@@ -53028,7 +53028,7 @@ sub_0801B144: @ 0x0801B144
 	lsrs r0, r0, #0x14
 	b _0801B1B6
 	.align 2, 0
-_0801B18C: .4byte gScript
+_0801B18C: .4byte gGame
 _0801B190: .4byte 0x000067AC
 _0801B194:
 	ldrb r0, [r5]
@@ -53068,7 +53068,7 @@ sub_0801B1BC: @ 0x0801B1BC
 	lsrs r4, r4, #0x10
 	lsls r5, r5, #0x10
 	lsrs r5, r5, #0x10
-	ldr r6, _0801B1FC @ =gScript
+	ldr r6, _0801B1FC @ =gGame
 	ldr r1, _0801B200 @ =0x000067AC
 	adds r0, r6, r1
 	ldrh r0, [r0]
@@ -53087,7 +53087,7 @@ sub_0801B1BC: @ 0x0801B1BC
 	mov sl, r1
 	b _0801B2AA
 	.align 2, 0
-_0801B1FC: .4byte gScript
+_0801B1FC: .4byte gGame
 _0801B200: .4byte 0x000067AC
 _0801B204: .4byte 0xFFFF0000
 _0801B208: .4byte 0x00005FE0
@@ -53464,7 +53464,7 @@ sub_0801B498: @ 0x0801B498
 	ldr r3, _0801B4BC @ =gUnknown_09132B58
 	lsls r2, r0, #2
 	adds r2, r2, r0
-	ldr r0, _0801B4C0 @ =gScript
+	ldr r0, _0801B4C0 @ =gGame
 	ldrh r1, [r0, #2]
 	lsls r1, r1, #0x15
 	lsrs r1, r1, #0x1c
@@ -53477,7 +53477,7 @@ sub_0801B498: @ 0x0801B498
 	bx r1
 	.align 2, 0
 _0801B4BC: .4byte gUnknown_09132B58
-_0801B4C0: .4byte gScript
+_0801B4C0: .4byte gGame
 
 	thumb_func_start sub_0801B4C4
 sub_0801B4C4: @ 0x0801B4C4
@@ -53580,7 +53580,7 @@ _0801B570: .4byte gUnknown_0916CB08
 	thumb_func_start sub_0801B574
 sub_0801B574: @ 0x0801B574
 	push {r4, r5, lr}
-	ldr r3, _0801B5C8 @ =gScript
+	ldr r3, _0801B5C8 @ =gGame
 	ldr r4, _0801B5CC @ =0x000084BC
 	adds r2, r3, r4
 	movs r4, #0
@@ -53621,7 +53621,7 @@ sub_0801B574: @ 0x0801B574
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0801B5C8: .4byte gScript
+_0801B5C8: .4byte gGame
 _0801B5CC: .4byte 0x000084BC
 _0801B5D0: .4byte 0x000084B8
 _0801B5D4: .4byte 0x00009476
@@ -53645,7 +53645,7 @@ sub_0801B5E8: @ 0x0801B5E8
 	bls _0801B600
 	b _0801B776
 _0801B600:
-	ldr r7, _0801B790 @ =gScript
+	ldr r7, _0801B790 @ =gGame
 	ldr r1, _0801B794 @ =0x000067AC
 	adds r0, r7, r1
 	ldrh r0, [r0]
@@ -53717,7 +53717,7 @@ _0801B646:
 _0801B68A:
 	cmp r6, #2
 	bne _0801B6A2
-	ldr r0, _0801B790 @ =gScript
+	ldr r0, _0801B790 @ =gGame
 	ldr r5, _0801B7C0 @ =0x00008494
 	adds r0, r0, r5
 	ldrb r0, [r0]
@@ -53746,7 +53746,7 @@ _0801B6A2:
 	adds r0, r4, #0
 	bl sub_08001B18
 _0801B6C6:
-	ldr r7, _0801B790 @ =gScript
+	ldr r7, _0801B790 @ =gGame
 	ldr r1, _0801B7B8 @ =0x00009480
 	adds r3, r7, r1
 	movs r0, #7
@@ -53844,7 +53844,7 @@ _0801B776:
 	bx r0
 	.align 2, 0
 _0801B78C: .4byte 0xFFFFF030
-_0801B790: .4byte gScript
+_0801B790: .4byte gGame
 _0801B794: .4byte 0x000067AC
 _0801B798: .4byte 0x00008498
 _0801B79C: .4byte 0x00000FBC
@@ -53867,7 +53867,7 @@ _0801B7D4: .4byte 0x000084C4
 sub_0801B7D8: @ 0x0801B7D8
 	push {r4, r5, r6, lr}
 	sub sp, #4
-	ldr r2, _0801B7F0 @ =gScript
+	ldr r2, _0801B7F0 @ =gGame
 	ldr r0, _0801B7F4 @ =0x0000947A
 	adds r3, r2, r0
 	ldrh r0, [r3]
@@ -53878,7 +53878,7 @@ sub_0801B7D8: @ 0x0801B7D8
 	strh r0, [r3]
 	b _0801B972
 	.align 2, 0
-_0801B7F0: .4byte gScript
+_0801B7F0: .4byte gGame
 _0801B7F4: .4byte 0x0000947A
 _0801B7F8:
 	mov r0, sp
@@ -53921,7 +53921,7 @@ _0801B824: @ jump table
 	.4byte _0801B868 @ case 15
 	.4byte _0801B868 @ case 16
 _0801B868:
-	ldr r0, _0801B8F0 @ =gScript
+	ldr r0, _0801B8F0 @ =gGame
 	ldr r2, _0801B8F4 @ =0x00008484
 	adds r0, r0, r2
 	ldr r0, [r0]
@@ -53949,7 +53949,7 @@ _0801B87A:
 	adds r0, r4, #0
 	bl sub_08001B18
 _0801B89E:
-	ldr r6, _0801B8F0 @ =gScript
+	ldr r6, _0801B8F0 @ =gGame
 	ldr r1, _0801B908 @ =0x00009480
 	adds r2, r6, r1
 	ldrb r1, [r2]
@@ -53990,7 +53990,7 @@ _0801B89E:
 	beq _0801B92C
 	b _0801B94E
 	.align 2, 0
-_0801B8F0: .4byte gScript
+_0801B8F0: .4byte gGame
 _0801B8F4: .4byte 0x00008484
 _0801B8F8: .4byte gUnknown_0200F064
 _0801B8FC: .4byte gUnknown_02000048
@@ -54009,7 +54009,7 @@ _0801B924:
 	cmp r0, #0x15
 	blt _0801B94E
 _0801B92C:
-	ldr r0, _0801B940 @ =gScript
+	ldr r0, _0801B940 @ =gGame
 	ldr r1, _0801B944 @ =0x00008494
 	adds r0, r0, r1
 	ldrb r0, [r0]
@@ -54020,7 +54020,7 @@ _0801B92C:
 	movs r0, #1
 	b _0801B94C
 	.align 2, 0
-_0801B940: .4byte gScript
+_0801B940: .4byte gGame
 _0801B944: .4byte 0x00008494
 _0801B948:
 	mov r1, sp

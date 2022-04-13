@@ -53,7 +53,7 @@ void m4aSoundInit(void)
 {
     s32 i;
 
-#if DEBUG
+#if DISABLE_SOUND
     return;
 #endif
 
@@ -587,7 +587,7 @@ void MPlayStart(struct MusicPlayerInfo *mplayInfo, struct SongHeader *songHeader
     u8 unk_B;
     struct MusicPlayerTrack *track;
 
-#if DEBUG
+#if DISABLE_SOUND
     return;
 #endif
 

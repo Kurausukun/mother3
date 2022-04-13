@@ -1,6 +1,8 @@
 #### Tools ####
 include config.mk
 
+DISABLE_SOUND ?= 0
+
 ifeq ($(OS),Windows_NT)
 EXE := .exe
 else
@@ -23,12 +25,12 @@ MID := $(abspath tools/mid2agb/mid2agb)$(EXE)
 SCANINC := tools/scaninc/scaninc$(EXE)
 PREPROC := tools/preproc/preproc$(EXE)
 GBAFIX := tools/gbafix/gbafix$(EXE)
-SALSA := tools/salsa/salsa$(EXE)
+SALSA := tools/salsa/build/salsa$(EXE)
 
 CXXFLAGS := -fno-exceptions -fno-rtti -quiet
 CC1FLAGS := -mthumb-interwork -Wimplicit -Wparentheses -O2 -g3
-CPPFLAGS := -I tools/agbcc/include -iquote include -nostdinc -undef -D VERSION_$(GAME_VERSION) -D REVISION=$(GAME_REVISION) -D $(GAME_REGION) -D DEBUG=$(DEBUG)
-ASFLAGS  := -mcpu=arm7tdmi -mthumb-interwork -I asminclude -I include --defsym VERSION_$(GAME_VERSION)=1 --defsym REVISION=$(GAME_REVISION) --defsym $(GAME_REGION)=1 --defsym DEBUG=$(DEBUG)
+CPPFLAGS := -I tools/agbcc/include -iquote include -nostdinc -undef -D VERSION_$(GAME_VERSION) -D REVISION=$(GAME_REVISION) -D $(GAME_REGION) -D DEBUG=$(DEBUG) -D DISABLE_SOUND=$(DISABLE_SOUND)
+ASFLAGS  := -mcpu=arm7tdmi -mthumb-interwork -I asminclude -I include --defsym VERSION_$(GAME_VERSION)=1 --defsym REVISION=$(GAME_REVISION) --defsym $(GAME_REGION)=1 --defsym DEBUG=$(DEBUG) --defsym GAME_VERSION=$(GAME_VERSION) --defsym GAME_REVISION=$(GAME_REVISION) --defsym DISABLE_SOUND=$(DISABLE_SOUND)
 #### Files ####
 OBJ_DIR  := build/$(BUILD_NAME)
 ROM 	 := $(BUILD_NAME).gba
@@ -151,7 +153,6 @@ mostlyclean: tidy
 tidy:
 	$(RM) $(ROM) $(ELF) $(MAP) $(OBJS)
 	rm -r build
-    
 
 include graphics_file_rules.mk
 
@@ -208,11 +209,14 @@ setup:
 	make -C tools/aif2pcm
 	make -C tools/gbafix
 	make -C tools/preproc
-	make -C tools/salsa
 	make -C tools/scaninc
+
+	cmake -S tools/salsa -B tools/salsa/build
+	make -C tools/salsa/build
 
 	$(SALSA) --extract baserom.gba assets/mainscript.salsa
 	$(SALSA) --extract baserom.gba assets/misctext.salsa
+	$(SALSA) --extract baserom.gba assets/logic.salsa
 
 $(C_OBJS): $(C_SRCS)
 	$(CPP) $(CPPFLAGS) $< -o $(C_BUILDDIR)/$(<F).i

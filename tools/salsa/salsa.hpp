@@ -20,6 +20,13 @@ static long pad_to(long offset) {
     return offset + ((T - (offset & (T - 1))) & ~T);
 }
 
+template <class T>
+T sign_extend(T x, const int bits) {
+    T m = 1;
+    m <<= bits - 1;
+    return (x ^ m) - m;
+}
+
 struct ISalsaFile {
     ISalsaFile() = default;
     ISalsaFile(const char* path) {
