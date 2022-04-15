@@ -69,3 +69,4 @@ WIP
 * Better logging
 * Document remaining extended logic commands
 * unique_ptr in salsaLogic
+* Add marked up hex views of each asset type (for reference)
