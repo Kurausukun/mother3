@@ -12,6 +12,7 @@ extern const std::vector<u8> math_argmap;
 extern const std::vector<std::string> ext_cmd_names;
 extern const std::vector<std::string> math_cmd_names;
 
+// Retrieves messages from a file called eng_script.txt, based on text id.
 struct MsgCommentHelper {
     static bool loaded;
     static std::vector<std::string> comments;
@@ -38,9 +39,11 @@ struct MsgCommentHelper {
     static std::string find_glob_msg(const std::string& idx) { return find_msg("0", idx); }
 };
 
+// Base class for logic commands. Logic commands are 4 bytes long.
 struct Command {
     using iterator = std::vector<Command*>::iterator;
 
+    // Types of logic commands.
     enum {
         Frame2Stack = 0,
         PushImm = 1,
@@ -62,18 +65,33 @@ struct Command {
     Command(u32 raw) : raw(raw) {}
     virtual ~Command() {}
 
+    // Process the command from its raw value. `iterator` should point to its position in a vector containing all commands.
+    // This is used to collect the commands potential arguments.
     virtual void process(iterator it) = 0;
+    
+    // Get the string representation of this command
     virtual std::string toString() const = 0;
 
+    // Get the string representation of this command when it is used as the argument to another command.
     virtual std::string getValueAsArg() const { return toString(); }
+
+    // Get the number of arguments this command takes.
     virtual u32 getArgc() const { return 0; }
+
+    // Get the number of commands this command consists of, including all arguments and their own arguments.
     virtual u32 getCommandCount() const { return 1; }
 
+    // Disable inlining for this command and all its arguments.
     virtual void disableInlineAll() { disable_inline = true; }
 
+    // The raw value of the command.
     u32 raw = 0;
+
+    // The commands offset within the ROM.
     u32 rom_off = 0;
-    bool disable_inline = false; // whether "arguments" are inlined into the command
+
+    // Whether "arguments" are inlined into the command
+    bool disable_inline = false;
 };
 
 struct Frame2StackCommand : Command {
@@ -178,13 +196,14 @@ struct ExtendedCommand : Command {
         func = raw >> 16;
         assert(func <= 0xFF);
 
-        // argument count for the extended command
+        // Look up the argument count
         argc = logic_argmap[func];
         if (argc == 0)
             return;
 
         args.reserve(argc);
-        // lets assume everything is loaded right before the call
+
+        // Assume all arguments are loaded right before the call.
         it -= argc;
         for (int i = 0; i < argc; i++) {
             args.emplace_back(*it++);
@@ -211,6 +230,7 @@ struct ExtendedCommand : Command {
             ss << ")";
         }
 
+        // Write out the message being retrieved by text disp commands
         if (func == 0x32) {
             ss << " // local bank msg " << args[2]->getValueAsArg();
         } else if (func == 0x33) {
@@ -518,12 +538,12 @@ struct Script {
             commands.back()->rom_off = stream->tellg();
         }
 
-        // this is where we collect label references and figure out what commands are used as arguments
+        // Process all the commands
         for (Command::iterator it = commands.begin(); it != commands.end(); ++it) {
             (*it)->process(it);
             u32 argc = (*it)->getArgc();
 
-            // remove the commands that were provided as arguments
+            // Remove any commands that were determined to be arguments
             if (argc > 0)
                 it = commands.erase(it - argc, it);
         }
