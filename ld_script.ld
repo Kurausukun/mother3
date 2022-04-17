@@ -135,6 +135,8 @@ SECTIONS
         asm/rom4.o(.text);
 
         data/data1.o(.rodata);
+        src/data/playerSkillData.o(.rodata);
+        src/data/guestSkillData.o(.rodata);
         src/data/monsterData.o(.rodata);
         src/data/monsterSkillData.o(.rodata);
         data/data1b.o(.rodata);

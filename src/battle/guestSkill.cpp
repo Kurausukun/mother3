@@ -9,7 +9,7 @@ extern "C" Msg getName(u32 id) {
     return Msg();
 }
 
-GuestSkill::GuestSkill(u16 id, Unit* user) : Action(user), mInfo(&gGuestSkillData2[id]) {}
+GuestSkill::GuestSkill(u16 id, Unit* user) : Action(user), mInfo(&gGuestSkillData[id]) {}
 
 GuestSkill::~GuestSkill() {}
 

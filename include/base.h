@@ -11,11 +11,12 @@ struct Singleton;
 
 // wut
 template<typename T>
-class SafeVector : public Vector<T> {
+struct SafeVector : public Vector<T> {
 public:
     SafeVector() {}
     ~SafeVector() {
-        mSize = 0;
+        // clang cannot find "mSize" without `this->` ??
+        this->mSize = 0;
     }
 };
 

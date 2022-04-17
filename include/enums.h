@@ -177,6 +177,7 @@ struct BattleSeq {
         DimBG = 0xB5,
         ShakeLong = 0xB6,
         ShakeHoriz = 0xB7,
+        _B8 = 0xB8,
         HugeShakeHoriz = 0xB9,
         HugeShakeDiag = 0xBA,
         BreakGame = 0xBB,
