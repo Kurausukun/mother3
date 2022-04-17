@@ -600,15 +600,3 @@ gLevelExpTable:
     .global gUnitTargetData
 gUnitTargetData:
     .incbin "baserom.gba", 0x000CF228, 0x500
-
-    .global gGuestSkillData
-gGuestSkillData:
-    .incbin "baserom.gba", 0x000CF728, 0xB00
-
-    .global gGuestSkillData2
-gGuestSkillData2:
-    .incbin "baserom.gba", 0x000D0228, 0xB00
-
-//     .global gMonsterData
-// gMonsterData:
-//     .incbin "baserom.gba", 0x000D0D28, 0x9000

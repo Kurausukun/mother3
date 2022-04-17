@@ -7,7 +7,7 @@ struct GuestSkillInfo {
     u8 id;
     MoveInfo move;
 };
-extern GuestSkillInfo gGuestSkillData2[];
+extern const GuestSkillInfo gGuestSkillData[];
 
 class GuestSkill : public Action{
 public:
@@ -46,7 +46,7 @@ public:
     u32 action_298();
 
 private:
-    GuestSkillInfo* mInfo;
+    const GuestSkillInfo* mInfo;
 };
 
 SINGLETON(GuestSkill);

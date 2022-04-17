@@ -7823,7 +7823,7 @@ sub_080803F4: @ 0x080803F4
 	str r0, [r5, #0x1c]
 	movs r0, #0x2c
 	muls r0, r4, r0
-	ldr r1, _08080420 @ =gGuestSkillData
+	ldr r1, _08080420 @ =gPlayerSkillData
 	adds r0, r0, r1
 	str r0, [r5, #0x48]
 	adds r0, r5, #0
@@ -7832,7 +7832,7 @@ sub_080803F4: @ 0x080803F4
 	bx r1
 	.align 2, 0
 _0808041C: .4byte vt_09F82A28
-_08080420: .4byte gGuestSkillData
+_08080420: .4byte gPlayerSkillData
 
 	thumb_func_start sub_08080424
 sub_08080424: @ 0x08080424
