@@ -913,7 +913,7 @@ GOTO lbl_2558
 cmd_heal_pp(-2, LOAD_REG(1, 5))
 cmd_delay(32)
 cmd_3A()
-cmd_disp_msg_0(-3, -1, 87) // 0-87:@The magic butterfly made everyone in[BREAK]  [42 FF 00 00]'s party relax.[END]
+cmd_disp_msg_0(-3, -1, 87) /* 0-87:@The magic butterfly made everyone in[BREAK]  [42 FF 00 00]'s party relax.[END] */
 cmd_5A(LOAD_REG(1, -1), 1)
 cmd_set_flag(379, 1)
 RET(1,1)
@@ -1453,7 +1453,7 @@ SP_ALLOC(2)
 CALL(0,lbl_2597)
 RET_REG(1, 0)
 SP_ALLOC(2)
-cmd_disp_msg_0(-3, -1, 51) // 0-51:@No problem here.[END]
+cmd_disp_msg_0(-3, -1, 51) /* 0-51:@No problem here.[END] */
 RET_REG(1, 0)
 SP_ALLOC(2)
 cmd_37(1)
@@ -1472,19 +1472,19 @@ STORE_REG(cmd_E3(-1),1,2)
 cmd_load_name(0, LOAD_REG(1, 3))
 cmd_load_name(1, LOAD_REG(1, 2))
 cmd_play_sound(108, -1)
-cmd_disp_msg_0(-3, -1, 44) // 0-44:@[42 FF F1 FF] got [EF 91][ITEM F0 FF]![PAUSE 40 00][END]
+cmd_disp_msg_0(-3, -1, 44) /* 0-44:@[42 FF F1 FF] got [EF 91][ITEM F0 FF]![PAUSE 40 00][END] */
 cmd_5A(-1, 1)
 GOTO lbl_3631
 cmd_load_name(0, LOAD_REG(1, 3))
-cmd_disp_msg_0(-3, -1, 76) // 0-76:@You can't carry any more stuff.[END]
+cmd_disp_msg_0(-3, -1, 76) /* 0-76:@You can't carry any more stuff.[END] */
 RET_REG(1, 0)
 SP_ALLOC(3)
-cmd_disp_msg_0(-3, -1, 51) // 0-51:@No problem here.[END]
+cmd_disp_msg_0(-3, -1, 51) /* 0-51:@No problem here.[END] */
 RET_REG(1, 0)
 SP_ALLOC(2)
 cmd_37(1)
 cmd_38(-1, -1, 50, 0)
-cmd_disp_msg_0(-3, -1, 83) // 0-83:@There's a vending machine here.[WAIT]@Would you like to use it? [WAIT][MENU 02 00][MENUSPACEYES]Yes[MENUSPACENO]No[BREAK][ENDCHOICES][END]
+cmd_disp_msg_0(-3, -1, 83) /* 0-83:@There's a vending machine here.[WAIT]@Would you like to use it? [WAIT][MENU 02 00][MENUSPACEYES]Yes[MENUSPACENO]No[BREAK][ENDCHOICES][END] */
 eq(cmd_get_msg_choice(), 0)
 FALSE GOTO lbl_3665
 eq(cmd_push_flag(533), 0)
@@ -1495,32 +1495,32 @@ RET_REG(1, 1)
 SP_ALLOC(2)
 cmd_37(1)
 cmd_38(-1, -1, 50, 0)
-cmd_disp_msg(-1, -1, LOAD_REG(1, -3)) // local bank msg LOAD_REG(1, -3)
+cmd_disp_msg(-1, -1, LOAD_REG(1, -3)) /* local bank msg LOAD_REG(1, -3) */
 eq(cmd_get_msg_choice(), 0)
 FALSE GOTO lbl_3699
 cmd_open_shop(LOAD_REG(1, -4), 1)
 cmd_3A()
-cmd_disp_msg(-1, -1, LOAD_REG(1, -2)) // local bank msg LOAD_REG(1, -2)
+cmd_disp_msg(-1, -1, LOAD_REG(1, -2)) /* local bank msg LOAD_REG(1, -2) */
 eq(cmd_push_flag(533), 0)
 FALSE GOTO lbl_3698
 cmd_set_flag(533, 1)
 GOTO lbl_3703
-cmd_disp_msg(-1, -1, LOAD_REG(1, -1)) // local bank msg LOAD_REG(1, -1)
+cmd_disp_msg(-1, -1, LOAD_REG(1, -1)) /* local bank msg LOAD_REG(1, -1) */
 RET_REG(1, 4)
 SP_ALLOC(2)
 cmd_37(1)
 cmd_38(-1, -1, 50, 0)
-cmd_disp_msg(LOAD_REG(1, -5), -1, LOAD_REG(1, -3)) // local bank msg LOAD_REG(1, -3)
+cmd_disp_msg(LOAD_REG(1, -5), -1, LOAD_REG(1, -3)) /* local bank msg LOAD_REG(1, -3) */
 eq(cmd_get_msg_choice(), 0)
 FALSE GOTO lbl_3737
 cmd_open_shop(LOAD_REG(1, -4), 1)
 cmd_3A()
-cmd_disp_msg(LOAD_REG(1, -5), -1, LOAD_REG(1, -2)) // local bank msg LOAD_REG(1, -2)
+cmd_disp_msg(LOAD_REG(1, -5), -1, LOAD_REG(1, -2)) /* local bank msg LOAD_REG(1, -2) */
 eq(cmd_push_flag(533), 0)
 FALSE GOTO lbl_3736
 cmd_set_flag(533, 1)
 GOTO lbl_3741
-cmd_disp_msg(LOAD_REG(1, -5), -1, LOAD_REG(1, -1)) // local bank msg LOAD_REG(1, -1)
+cmd_disp_msg(LOAD_REG(1, -5), -1, LOAD_REG(1, -1)) /* local bank msg LOAD_REG(1, -1) */
 RET_REG(1, 5)
 SP_ALLOC(2)
 cmd_66(LOAD_REG(1, -1), 1)
@@ -1543,11 +1543,11 @@ STORE_REG(cmd_E3(-1),1,2)
 cmd_load_name(0, LOAD_REG(1, 3))
 cmd_load_name(1, LOAD_REG(1, 2))
 cmd_play_sound(108, -1)
-cmd_disp_msg_0(-3, -1, 44) // 0-44:@[42 FF F1 FF] got [EF 91][ITEM F0 FF]![PAUSE 40 00][END]
+cmd_disp_msg_0(-3, -1, 44) /* 0-44:@[42 FF F1 FF] got [EF 91][ITEM F0 FF]![PAUSE 40 00][END] */
 cmd_5A(-1, 1)
 GOTO lbl_3817
 cmd_load_name(0, LOAD_REG(1, 3))
-cmd_disp_msg_0(-3, -1, 76) // 0-76:@You can't carry any more stuff.[END]
+cmd_disp_msg_0(-3, -1, 76) /* 0-76:@You can't carry any more stuff.[END] */
 RET_REG(1, 0)
 SP_ALLOC(4)
 STORE_REG(93,1,3)
@@ -1558,11 +1558,11 @@ STORE_REG(cmd_E3(-1),1,2)
 cmd_load_name(0, LOAD_REG(1, 3))
 cmd_load_name(1, LOAD_REG(1, 2))
 cmd_play_sound(108, -1)
-cmd_disp_msg_0(-3, -1, 44) // 0-44:@[42 FF F1 FF] got [EF 91][ITEM F0 FF]![PAUSE 40 00][END]
+cmd_disp_msg_0(-3, -1, 44) /* 0-44:@[42 FF F1 FF] got [EF 91][ITEM F0 FF]![PAUSE 40 00][END] */
 cmd_5A(-1, 1)
 GOTO lbl_3857
 cmd_load_name(0, LOAD_REG(1, 3))
-cmd_disp_msg_0(-3, -1, 76) // 0-76:@You can't carry any more stuff.[END]
+cmd_disp_msg_0(-3, -1, 76) /* 0-76:@You can't carry any more stuff.[END] */
 RET_REG(1, 0)
 SP_ALLOC(5)
 cmd_party_heal(3)
@@ -1620,7 +1620,7 @@ RET_REG(1, 2)
 SP_ALLOC(3)
 cmd_37(1)
 cmd_38(-1, -1, 50, 0)
-cmd_disp_msg_0(-1, -1, LOAD_REG(1, -3)) // Unknown Message ???
+cmd_disp_msg_0(-1, -1, LOAD_REG(1, -3)) /* Unknown Message ??? */
 eq(cmd_get_msg_choice(), 0)
 FALSE GOTO lbl_4044
 cmd_play_fade(60)
@@ -1637,16 +1637,16 @@ cmd_fade_in(60)
 cmd_delay(30)
 eq(cmd_get_party_size(), 1)
 FALSE GOTO lbl_4039
-cmd_disp_msg_0(-1, -1, 93) // 0-93:@You're fully revitalized.[END]
+cmd_disp_msg_0(-1, -1, 93) /* 0-93:@You're fully revitalized.[END] */
 GOTO lbl_4043
-cmd_disp_msg_0(-1, -1, LOAD_REG(1, -2)) // Unknown Message ???
+cmd_disp_msg_0(-1, -1, LOAD_REG(1, -2)) /* Unknown Message ??? */
 GOTO lbl_4048
-cmd_disp_msg_0(-1, -1, LOAD_REG(1, -1)) // Unknown Message ???
+cmd_disp_msg_0(-1, -1, LOAD_REG(1, -1)) /* Unknown Message ??? */
 RET_REG(1, 3)
 SP_ALLOC(3)
 cmd_37(1)
 cmd_38(-1, -1, 50, 0)
-cmd_disp_msg(-1, -1, LOAD_REG(1, -3)) // local bank msg LOAD_REG(1, -3)
+cmd_disp_msg(-1, -1, LOAD_REG(1, -3)) /* local bank msg LOAD_REG(1, -3) */
 eq(cmd_get_msg_choice(), 0)
 FALSE GOTO lbl_4097
 cmd_play_fade(60)
@@ -1661,9 +1661,9 @@ cmd_F7(-2, 0)
 cmd_45(-1)
 cmd_fade_in(60)
 cmd_delay(30)
-cmd_disp_msg(-1, -1, LOAD_REG(1, -2)) // local bank msg LOAD_REG(1, -2)
+cmd_disp_msg(-1, -1, LOAD_REG(1, -2)) /* local bank msg LOAD_REG(1, -2) */
 GOTO lbl_4101
-cmd_disp_msg(-1, -1, LOAD_REG(1, -1)) // local bank msg LOAD_REG(1, -1)
+cmd_disp_msg(-1, -1, LOAD_REG(1, -1)) /* local bank msg LOAD_REG(1, -1) */
 RET_REG(1, 3)
 SP_ALLOC(4)
 eq(cmd_0E(4), 0)
@@ -1672,9 +1672,9 @@ cmd_37(1)
 cmd_38(-1, -1, 50, 0)
 eq(LOAD_REG(1, -2), -1)
 FALSE GOTO lbl_4124
-cmd_disp_msg_0(-1, -1, 166) // 0-166:@*hop*[BREAK]  Save your game?[WAIT][MENU 02 00][MENUSPACEYES]Yes[MENUSPACENO]No[ENDCHOICES][END]
+cmd_disp_msg_0(-1, -1, 166) /* 0-166:@*hop*[BREAK]  Save your game?[WAIT][MENU 02 00][MENUSPACEYES]Yes[MENUSPACENO]No[ENDCHOICES][END] */
 GOTO lbl_4128
-cmd_disp_msg(-1, -1, LOAD_REG(1, -2)) // local bank msg LOAD_REG(1, -2)
+cmd_disp_msg(-1, -1, LOAD_REG(1, -2)) /* local bank msg LOAD_REG(1, -2) */
 eq(cmd_get_msg_choice(), 0)
 FALSE GOTO lbl_4158
 CALL(0,lbl_2597)
@@ -1684,33 +1684,33 @@ cmd_set_fade(0, 0)
 cmd_set_member_sprite(-1, cmd_DE(90))
 cmd_fade_in(20)
 cmd_3A()
-cmd_disp_msg_0(-1, -1, 170) // 0-170:@Please be careful out there.[EVENT][END]
+cmd_disp_msg_0(-1, -1, 170) /* 0-170:@Please be careful out there.[EVENT][END] */
 cmd_delay(8)
-cmd_disp_msg_0(-1, -1, 171) // 0-171:@Give my regards to the next frog you meet.[END]
+cmd_disp_msg_0(-1, -1, 171) /* 0-171:@Give my regards to the next frog you meet.[END] */
 GOTO lbl_4177
 eq(LOAD_REG(1, -1), -1)
 FALSE GOTO lbl_4173
-cmd_disp_msg_0(-1, -1, 169) // 0-169:@Oh, I see...[BREAK]@Well, please be careful out there.[EVENT][END]
+cmd_disp_msg_0(-1, -1, 169) /* 0-169:@Oh, I see...[BREAK]@Well, please be careful out there.[EVENT][END] */
 cmd_delay(8)
-cmd_disp_msg_0(-1, -1, 171) // 0-171:@Give my regards to the next frog you meet.[END]
+cmd_disp_msg_0(-1, -1, 171) /* 0-171:@Give my regards to the next frog you meet.[END] */
 GOTO lbl_4177
-cmd_disp_msg(-1, -1, LOAD_REG(1, -1)) // local bank msg LOAD_REG(1, -1)
+cmd_disp_msg(-1, -1, LOAD_REG(1, -1)) /* local bank msg LOAD_REG(1, -1) */
 GOTO lbl_4262
 cmd_37(1)
 cmd_38(-1, -1, 50, 0)
 eq(LOAD_REG(1, -2), -1)
 FALSE GOTO lbl_4194
-cmd_disp_msg_0(-1, -1, 167) // 0-167:@*hop*[BREAK]  Do you need something?[WAIT][MENU 02 00][MENUSPACEYES]Yes[MENUSPACENO]No[ENDCHOICES][END]
+cmd_disp_msg_0(-1, -1, 167) /* 0-167:@*hop*[BREAK]  Do you need something?[WAIT][MENU 02 00][MENUSPACEYES]Yes[MENUSPACENO]No[ENDCHOICES][END] */
 GOTO lbl_4198
-cmd_disp_msg(-1, -1, LOAD_REG(1, -2)) // local bank msg LOAD_REG(1, -2)
+cmd_disp_msg(-1, -1, LOAD_REG(1, -2)) /* local bank msg LOAD_REG(1, -2) */
 cmd_delay(16)
 eq(cmd_get_msg_choice(), 1)
 FALSE GOTO lbl_4209
-cmd_disp_msg_0(-1, -1, 172) // 0-172:@Oh, I see.[WAIT]@Well, give my regards to the next frog you[BREAK]  meet.[END]
+cmd_disp_msg_0(-1, -1, 172) /* 0-172:@Oh, I see.[WAIT]@Well, give my regards to the next frog you[BREAK]  meet.[END] */
 GOTO lbl_4262
 cmd_37(1)
 cmd_38(-1, -1, 80, 0)
-cmd_disp_msg_0(-1, -1, 168) // 0-168:@Do you need to save your game?[BREAK]@Or perhaps transfer DP?[WAIT][MENU 02 00][MENUSPACEYES]Save[MENUSPACEYES]DP Stuff[ENDCHOICES][END]
+cmd_disp_msg_0(-1, -1, 168) /* 0-168:@Do you need to save your game?[BREAK]@Or perhaps transfer DP?[WAIT][MENU 02 00][MENUSPACEYES]Save[MENUSPACEYES]DP Stuff[ENDCHOICES][END] */
 eq(cmd_get_msg_choice(), 0)
 FALSE GOTO lbl_4239
 CALL(0,lbl_2597)
@@ -1725,11 +1725,11 @@ cmd_delay(0)
 cmd_3A()
 eq(LOAD_REG(1, -1), -1)
 FALSE GOTO lbl_4258
-cmd_disp_msg_0(-1, -1, 170) // 0-170:@Please be careful out there.[EVENT][END]
+cmd_disp_msg_0(-1, -1, 170) /* 0-170:@Please be careful out there.[EVENT][END] */
 cmd_delay(8)
-cmd_disp_msg_0(-1, -1, 171) // 0-171:@Give my regards to the next frog you meet.[END]
+cmd_disp_msg_0(-1, -1, 171) /* 0-171:@Give my regards to the next frog you meet.[END] */
 GOTO lbl_4262
-cmd_disp_msg(-1, -1, LOAD_REG(1, -1)) // local bank msg LOAD_REG(1, -1)
+cmd_disp_msg(-1, -1, LOAD_REG(1, -1)) /* local bank msg LOAD_REG(1, -1) */
 RET(1,2)
 SP_ALLOC(2)
 LOAD_REG(1, -2)
@@ -2062,13 +2062,13 @@ eq(LOAD_REG(1, -1), 0)
 FALSE GOTO lbl_4884
 cmd_play_sfx(3)
 cmd_delay(80)
-cmd_disp_msg(-3, -1, LOAD_REG(1, -2)) // local bank msg LOAD_REG(1, -2)
+cmd_disp_msg(-3, -1, LOAD_REG(1, -2)) /* local bank msg LOAD_REG(1, -2) */
 GOTO lbl_4896
 eq(LOAD_REG(1, -1), 1)
 FALSE GOTO lbl_4896
 cmd_play_sfx(2)
 cmd_delay(128)
-cmd_disp_msg(-3, -1, LOAD_REG(1, -2)) // local bank msg LOAD_REG(1, -2)
+cmd_disp_msg(-3, -1, LOAD_REG(1, -2)) /* local bank msg LOAD_REG(1, -2) */
 cmd_delay(24)
 cmd_D6(LOAD_REG(1, -4))
 cmd_5A(LOAD_REG(1, -4), 1)
@@ -2700,7 +2700,7 @@ GOTO lbl_6829
 cmd_53(LOAD_REG(1, -4), sub(sub(LOAD_REG(1, 4), 16), 16), sub(sub(LOAD_REG(1, 5), 16), 1), LOAD_REG(1, -1), 1)
 RET_REG(1, 4)
 SP_ALLOC(2)
-cmd_disp_msg_0(-3, -1, 124) // 0-124:@It's locked.[END]
+cmd_disp_msg_0(-3, -1, 124) /* 0-124:@It's locked.[END] */
 RET_REG(1, 0)
 SP_ALLOC(7)
 cmd_5C(LOAD_REG(1, -2), REG_ADDR(1, 2), REG_ADDR(1, 3))
@@ -2812,9 +2812,9 @@ RET_REG(1, 0)
 SP_ALLOC(2)
 eq(cmd_cmp_input_name(LOAD_REG(1, -3)), 0)
 FALSE GOTO lbl_7094
-cmd_disp_msg(LOAD_REG(1, -4), -1, LOAD_REG(1, -2)) // local bank msg LOAD_REG(1, -2)
+cmd_disp_msg(LOAD_REG(1, -4), -1, LOAD_REG(1, -2)) /* local bank msg LOAD_REG(1, -2) */
 GOTO lbl_7098
-cmd_disp_msg(LOAD_REG(1, -4), -1, LOAD_REG(1, -1)) // local bank msg LOAD_REG(1, -1)
+cmd_disp_msg(LOAD_REG(1, -4), -1, LOAD_REG(1, -1)) /* local bank msg LOAD_REG(1, -1) */
 RET_REG(1, 4)
 SP_ALLOC(2)
 LOAD_REG(1, -2)
@@ -3006,25 +3006,25 @@ cmd_load_name(2, LOAD_REG(1, 4))
 cmd_load_name(3, LOAD_REG(1, 5))
 cmd_load_name(4, LOAD_REG(1, 6))
 cmd_load_name(5, LOAD_REG(1, 7))
-cmd_disp_msg_0(-3, -1, add(142, LOAD_REG(1, 8))) // Unknown Message ???
+cmd_disp_msg_0(-3, -1, add(142, LOAD_REG(1, 8))) /* Unknown Message ??? */
 lt(LOAD_REG(1, 2), 0)
 FALSE GOTO lbl_7574
-cmd_disp_msg_0(-3, -1, 146) // 0-146:@HP went up by [80 FF F0 FF].[EVENT][END]
+cmd_disp_msg_0(-3, -1, 146) /* 0-146:@HP went up by [80 FF F0 FF].[EVENT][END] */
 lt(LOAD_REG(1, 3), 0)
 FALSE GOTO lbl_7582
-cmd_disp_msg_0(-3, -1, 147) // 0-147:@PP went up by [80 FF F1 FF].[EVENT][END]
+cmd_disp_msg_0(-3, -1, 147) /* 0-147:@PP went up by [80 FF F1 FF].[EVENT][END] */
 lt(LOAD_REG(1, 4), 0)
 FALSE GOTO lbl_7590
-cmd_disp_msg_0(-3, -1, 148) // 0-148:@Offense went up by [80 FF F2 FF].[EVENT][END]
+cmd_disp_msg_0(-3, -1, 148) /* 0-148:@Offense went up by [80 FF F2 FF].[EVENT][END] */
 lt(LOAD_REG(1, 5), 0)
 FALSE GOTO lbl_7598
-cmd_disp_msg_0(-3, -1, 149) // 0-149:@Defense went up by [80 FF F3 FF].[EVENT][END]
+cmd_disp_msg_0(-3, -1, 149) /* 0-149:@Defense went up by [80 FF F3 FF].[EVENT][END] */
 lt(LOAD_REG(1, 6), 0)
 FALSE GOTO lbl_7606
-cmd_disp_msg_0(-3, -1, 150) // 0-150:@IQ went up by [80 FF F4 FF].[EVENT][END]
+cmd_disp_msg_0(-3, -1, 150) /* 0-150:@IQ went up by [80 FF F4 FF].[EVENT][END] */
 lt(LOAD_REG(1, 7), 0)
 FALSE GOTO lbl_7614
-cmd_disp_msg_0(-3, -1, 151) // 0-151:@Speed went up by [80 FF F5 FF].[EVENT][END]
+cmd_disp_msg_0(-3, -1, 151) /* 0-151:@Speed went up by [80 FF F5 FF].[EVENT][END] */
 GOTO lbl_7493
 lt(LOAD_REG(1, 9), 0)
 FALSE GOTO lbl_7626
@@ -3206,76 +3206,76 @@ RET_REG(1, 1)
 SP_ALLOC(4)
 or(eq(cmd_get_talker_sprite(-1), 156), eq(cmd_get_talker_sprite(-1), 158))
 FALSE GOTO lbl_8028
-cmd_disp_msg_0(-1, -1, 224) // 0-224:@Mixed gender bathing?[END]
+cmd_disp_msg_0(-1, -1, 224) /* 0-224:@Mixed gender bathing?[END] */
 END
 GOTO lbl_8032
-cmd_disp_msg_0(-1, -1, 223) // 0-223:@Yes?[END]
+cmd_disp_msg_0(-1, -1, 223) /* 0-223:@Yes?[END] */
 RET_REG(1, 0)
 SP_ALLOC(2)
 eq(cmd_push_flag(353), 0)
 FALSE GOTO lbl_8044
-cmd_disp_msg_0(-1, -1, 196) // 0-196:@Hi, there! I'm the friendly item deposit guy![WAIT]@If you have anything you don't need or don't[BREAK]  want to carry around,[WAIT]  I'll gladly hold on to it for you for free![WAIT]@I'll take great care of any items you give me,[WAIT]  and I'll return them to you immediately[BREAK]  whenever you want them back![WAIT]@Can I hold on to something for you?[END]
+cmd_disp_msg_0(-1, -1, 196) /* 0-196:@Hi, there! I'm the friendly item deposit guy![WAIT]@If you have anything you don't need or don't[BREAK]  want to carry around,[WAIT]  I'll gladly hold on to it for you for free![WAIT]@I'll take great care of any items you give me,[WAIT]  and I'll return them to you immediately[BREAK]  whenever you want them back![WAIT]@Can I hold on to something for you?[END] */
 GOTO lbl_8048
-cmd_disp_msg_0(-1, -1, 198) // 0-198:@Hi, there! I'm the friendly item deposit guy![WAIT]@How can I help you?[END]
+cmd_disp_msg_0(-1, -1, 198) /* 0-198:@Hi, there! I'm the friendly item deposit guy![WAIT]@How can I help you?[END] */
 cmd_open_itemguy()
 cmd_3A()
 eq(cmd_push_flag(353), 0)
 FALSE GOTO lbl_8063
-cmd_disp_msg_0(-1, -1, 197) // 0-197:@I'm always traveling to one place or another,[WAIT]  so if you ever need anything, just let me know[BREAK]  anytime![END]
+cmd_disp_msg_0(-1, -1, 197) /* 0-197:@I'm always traveling to one place or another,[WAIT]  so if you ever need anything, just let me know[BREAK]  anytime![END] */
 cmd_set_flag(353, 1)
 GOTO lbl_8067
-cmd_disp_msg_0(-1, -1, 199) // 0-199:@The gods are watching over you guys.[WAIT]@You're incredible. You're amazing.[WAIT]@Seriously, you're a real inspiration.[WAIT]@We're right behind you, supporting you 100%,[BREAK]  from the sidelines.[END]
+cmd_disp_msg_0(-1, -1, 199) /* 0-199:@The gods are watching over you guys.[WAIT]@You're incredible. You're amazing.[WAIT]@Seriously, you're a real inspiration.[WAIT]@We're right behind you, supporting you 100%,[BREAK]  from the sidelines.[END] */
 END
 RET_REG(1, 0)
 SP_ALLOC(3)
-cmd_disp_msg_0(-3, -1, 181) // 0-181:@This is the knit cap man's car.[END]
+cmd_disp_msg_0(-3, -1, 181) /* 0-181:@This is the knit cap man's car.[END] */
 RET_REG(1, 0)
 SP_ALLOC(2)
 eq(cmd_push_flag(630), 0)
 FALSE GOTO lbl_8123
 cmd_37(1)
 cmd_38(-1, -1, 50, 0)
-cmd_disp_msg_0(-3, -1, 187) // 0-187:[END]
+cmd_disp_msg_0(-3, -1, 187) /* 0-187:[END] */
 eq(cmd_get_msg_choice(), 1)
 FALSE GOTO lbl_8097
 END
 cmd_delay(16)
 cmd_load_name(0, LOAD_REG(1, -2))
 cmd_load_name(1, LOAD_REG(1, -1))
-cmd_disp_msg_0(-3, -1, 188) // 0-188:[END]
+cmd_disp_msg_0(-3, -1, 188) /* 0-188:[END] */
 cmd_delay(32)
 cmd_37(1)
 cmd_38(-1, -1, 50, 0)
-cmd_disp_msg_0(-3, -1, 189) // 0-189:[END]
+cmd_disp_msg_0(-3, -1, 189) /* 0-189:[END] */
 GOTO lbl_8140
 cmd_load_name(0, LOAD_REG(1, -2))
 cmd_load_name(1, LOAD_REG(1, -1))
 cmd_37(1)
 cmd_38(-1, -1, 50, 0)
-cmd_disp_msg_0(-3, -1, 190) // 0-190:[END]
+cmd_disp_msg_0(-3, -1, 190) /* 0-190:[END] */
 cmd_delay(16)
 eq(cmd_get_msg_choice(), 1)
 FALSE GOTO lbl_8161
-cmd_disp_msg_0(-3, -1, 193) // 0-193:[END]
+cmd_disp_msg_0(-3, -1, 193) /* 0-193:[END] */
 cmd_delay(16)
-cmd_disp_msg_0(-3, -1, 195) // 0-195:[END]
+cmd_disp_msg_0(-3, -1, 195) /* 0-195:[END] */
 cmd_set_flag(630, 1)
 END
 GOTO lbl_8197
 gt(cmd_get_bank(), LOAD_REG(1, -2))
 FALSE GOTO lbl_8180
-cmd_disp_msg_0(-3, -1, 193) // 0-193:[END]
+cmd_disp_msg_0(-3, -1, 193) /* 0-193:[END] */
 cmd_delay(16)
-cmd_disp_msg_0(-3, -1, 194) // 0-194:[END]
+cmd_disp_msg_0(-3, -1, 194) /* 0-194:[END] */
 cmd_set_flag(630, 1)
 END
 GOTO lbl_8197
 cmd_3B()
 cmd_open_bank()
 cmd_3A()
-cmd_disp_msg_0(-3, -1, 193) // 0-193:[END]
+cmd_disp_msg_0(-3, -1, 193) /* 0-193:[END] */
 cmd_delay(16)
-cmd_disp_msg_0(-3, -1, 192) // 0-192:[END]
+cmd_disp_msg_0(-3, -1, 192) /* 0-192:[END] */
 cmd_set_flag(630, 1)
 END
 RET_REG(1, 2)
@@ -3287,18 +3287,18 @@ STORE_REG(cmd_E3(-1),1,2)
 cmd_load_name(0, LOAD_REG(1, -2))
 cmd_load_name(1, LOAD_REG(1, 2))
 cmd_play_sound(107, -1)
-cmd_disp_msg_0(-3, -1, 44) // 0-44:@[42 FF F1 FF] got [EF 91][ITEM F0 FF]![PAUSE 40 00][END]
+cmd_disp_msg_0(-3, -1, 44) /* 0-44:@[42 FF F1 FF] got [EF 91][ITEM F0 FF]![PAUSE 40 00][END] */
 GOTO lbl_8304
 cmd_play_sfx(4)
 cmd_delay(80)
 cmd_load_name(0, LOAD_REG(1, -2))
-cmd_disp_msg_0(-3, -1, 45) // 0-45:@Got [EF 91][ITEM F0 FF]![PAUSE 40 00][END]
+cmd_disp_msg_0(-3, -1, 45) /* 0-45:@Got [EF 91][ITEM F0 FF]![PAUSE 40 00][END] */
 cmd_set_key_item(LOAD_REG(1, -2), 1)
 GOTO lbl_8304
 cmd_play_sfx(9)
 cmd_delay(130)
 cmd_load_name(0, LOAD_REG(1, -2))
-cmd_disp_msg_0(-3, -1, 47) // 0-47:@Received [EF 91][ITEM F0 FF]![PAUSE 40 00][END]
+cmd_disp_msg_0(-3, -1, 47) /* 0-47:@Received [EF 91][ITEM F0 FF]![PAUSE 40 00][END] */
 cmd_cfg_member_item(-1, LOAD_REG(1, -2), 1)
 cmd_delay(64)
 cmd_play_sound_ext(-1, -1)
@@ -3308,7 +3308,7 @@ GOTO lbl_8304
 cmd_play_sfx(8)
 cmd_delay(80)
 cmd_load_name(0, LOAD_REG(1, -2))
-cmd_disp_msg_0(-3, -1, 46) // 0-46:@Got [EF 91][ITEM F0 FF]...[PAUSE 40 00][END]
+cmd_disp_msg_0(-3, -1, 46) /* 0-46:@Got [EF 91][ITEM F0 FF]...[PAUSE 40 00][END] */
 cmd_set_key_item(LOAD_REG(1, -2), 1)
 GOTO lbl_8304
 eq(copy, 0)
@@ -3333,9 +3333,9 @@ SP_ALLOC(3)
 STORE_REG(cmd_5F(0),1,2)
 or(eq(LOAD_REG(1, 2), 3), or(eq(LOAD_REG(1, 2), 4), eq(LOAD_REG(1, 2), 5)))
 FALSE GOTO lbl_8326
-cmd_disp_msg(-3, -1, LOAD_REG(1, -1)) // local bank msg LOAD_REG(1, -1)
+cmd_disp_msg(-3, -1, LOAD_REG(1, -1)) /* local bank msg LOAD_REG(1, -1) */
 GOTO lbl_8330
-cmd_disp_msg_0(-3, -1, 51) // 0-51:@No problem here.[END]
+cmd_disp_msg_0(-3, -1, 51) /* 0-51:@No problem here.[END] */
 RET_REG(1, 1)
 SP_ALLOC(2)
 LOAD_REG(1, -2)
@@ -3407,7 +3407,7 @@ FALSE GOTO lbl_8444
 popnoop
 GOTO lbl_8374
 popnoop
-cmd_disp_msg(-1, -1, LOAD_REG(1, -1)) // local bank msg LOAD_REG(1, -1)
+cmd_disp_msg(-1, -1, LOAD_REG(1, -1)) /* local bank msg LOAD_REG(1, -1) */
 and(eq(LOAD_REG(1, -2), 3), eq(cmd_push_flag(368), 0))
 FALSE GOTO lbl_8461
 cmd_set_flag(368, 1)
@@ -3483,7 +3483,7 @@ FALSE GOTO lbl_8578
 popnoop
 GOTO lbl_8508
 popnoop
-cmd_disp_msg(-1, -1, LOAD_REG(1, -1)) // local bank msg LOAD_REG(1, -1)
+cmd_disp_msg(-1, -1, LOAD_REG(1, -1)) /* local bank msg LOAD_REG(1, -1) */
 and(eq(LOAD_REG(1, 2), 167), eq(cmd_push_flag(368), 0))
 FALSE GOTO lbl_8595
 cmd_set_flag(368, 1)
@@ -3553,19 +3553,19 @@ FALSE GOTO lbl_8702
 popnoop
 GOTO lbl_8638
 popnoop
-cmd_disp_msg(LOAD_REG(1, -2), -1, LOAD_REG(1, -1)) // local bank msg LOAD_REG(1, -1)
+cmd_disp_msg(LOAD_REG(1, -2), -1, LOAD_REG(1, -1)) /* local bank msg LOAD_REG(1, -1) */
 RET_REG(1, 2)
 SP_ALLOC(3)
 STORE_REG(cmd_AE(3),1,2)
 gt(LOAD_REG(1, 2), 1)
 FALSE GOTO lbl_8721
-cmd_disp_msg_0(-3, -1, 135) // 0-135:@The Happy Box is giving off a wobbling sort of[BREAK]  sound.[END]
+cmd_disp_msg_0(-3, -1, 135) /* 0-135:@The Happy Box is giving off a wobbling sort of[BREAK]  sound.[END] */
 GOTO lbl_8734
 gt(LOAD_REG(1, 2), 2)
 FALSE GOTO lbl_8730
-cmd_disp_msg_0(-3, -1, 135) // 0-135:@The Happy Box is giving off a wobbling sort of[BREAK]  sound.[END]
+cmd_disp_msg_0(-3, -1, 135) /* 0-135:@The Happy Box is giving off a wobbling sort of[BREAK]  sound.[END] */
 GOTO lbl_8734
-cmd_disp_msg_0(-3, -1, 135) // 0-135:@The Happy Box is giving off a wobbling sort of[BREAK]  sound.[END]
+cmd_disp_msg_0(-3, -1, 135) /* 0-135:@The Happy Box is giving off a wobbling sort of[BREAK]  sound.[END] */
 RET_REG(1, 1)
 SP_ALLOC(2)
 LOAD_REG(1, -1)
@@ -3632,12 +3632,12 @@ RET_REG(1, 1)
 SP_ALLOC(4)
 eq(cmd_push_flag(969), 0)
 FALSE GOTO lbl_8908
-cmd_disp_msg_0(-3, -1, 182) // 0-182:@In only a few seconds, this Instant Revitalizing[BREAK]  Device fully revitalizes you.[END]
+cmd_disp_msg_0(-3, -1, 182) /* 0-182:@In only a few seconds, this Instant Revitalizing[BREAK]  Device fully revitalizes you.[END] */
 cmd_set_flag(969, 1)
 cmd_delay(16)
 cmd_37(1)
 cmd_38(-1, -1, 50, 0)
-cmd_disp_msg_0(-3, -1, 183) // 0-183:@Get into the Instant Revitalizing Device?[WAIT][MENU 02 00][MENUSPACEYES]Yes[MENUSPACENO]No[ENDCHOICES][END]
+cmd_disp_msg_0(-3, -1, 183) /* 0-183:@Get into the Instant Revitalizing Device?[WAIT][MENU 02 00][MENUSPACEYES]Yes[MENUSPACENO]No[ENDCHOICES][END] */
 eq(cmd_get_msg_choice(), 0)
 FALSE GOTO lbl_8993
 cmd_delay(32)
@@ -3665,19 +3665,19 @@ cmd_45(-1)
 cmd_delay(100)
 eq(cmd_get_party_size(), 1)
 FALSE GOTO lbl_8983
-cmd_disp_msg_0(-3, -1, 184) // 0-184:@You're fully revitalized.[END]
+cmd_disp_msg_0(-3, -1, 184) /* 0-184:@You're fully revitalized.[END] */
 GOTO lbl_8987
-cmd_disp_msg_0(-3, -1, 185) // 0-185:@You're fully revitalized.[END]
+cmd_disp_msg_0(-3, -1, 185) /* 0-185:@You're fully revitalized.[END] */
 cmd_set_member_sprite(-2, 0)
 cmd_F7(-2, 0)
 RET_REG(1, 0)
 SP_ALLOC(2)
 cmd_37(1)
 cmd_38(-1, -1, 50, 0)
-cmd_disp_msg(-1, -1, LOAD_REG(1, -4)) // local bank msg LOAD_REG(1, -4)
+cmd_disp_msg(-1, -1, LOAD_REG(1, -4)) /* local bank msg LOAD_REG(1, -4) */
 eq(cmd_get_msg_choice(), 1)
 FALSE GOTO lbl_9015
-cmd_disp_msg(-1, -1, LOAD_REG(1, -2)) // local bank msg LOAD_REG(1, -2)
+cmd_disp_msg(-1, -1, LOAD_REG(1, -2)) /* local bank msg LOAD_REG(1, -2) */
 GOTO lbl_9058
 cmd_84(1, 0, 4)
 cmd_46(-1)
@@ -3694,7 +3694,7 @@ cmd_delay(80)
 cmd_fade_in(100)
 cmd_45(-1)
 cmd_delay(80)
-cmd_disp_msg(-1, -1, LOAD_REG(1, -3)) // local bank msg LOAD_REG(1, -3)
+cmd_disp_msg(-1, -1, LOAD_REG(1, -3)) /* local bank msg LOAD_REG(1, -3) */
 RET_REG(1, 4)
 SP_ALLOC(2)
 cmd_84(1, 0, LOAD_REG(1, -2))
@@ -3711,7 +3711,7 @@ SP_ALLOC(2)
 RET_REG(1, 1)
 SP_ALLOC(2)
 cmd_load_name(0, LOAD_REG(1, -1))
-cmd_disp_msg_0(-3, -1, 226) // 0-226:@There is a slot for money here.[WAIT]@Insert [80 FF F0 FF] DP? [WAIT][MENU 02 00][MENUSPACEYES]Yes[MENUSPACENO]No[ENDCHOICES][END]
+cmd_disp_msg_0(-3, -1, 226) /* 0-226:@There is a slot for money here.[WAIT]@Insert [80 FF F0 FF] DP? [WAIT][MENU 02 00][MENUSPACEYES]Yes[MENUSPACENO]No[ENDCHOICES][END] */
 eq(cmd_get_msg_choice(), 0)
 FALSE GOTO lbl_9135
 eq(cmd_E3(111), 1)
@@ -3719,15 +3719,15 @@ FALSE GOTO lbl_9130
 lte(cmd_push_pocket(), LOAD_REG(1, -1))
 FALSE GOTO lbl_9124
 cmd_play_sound(107, -1)
-cmd_disp_msg_0(-3, -1, 227) // 0-227:@A [ITEM 6F 00] came out![END]
+cmd_disp_msg_0(-3, -1, 227) /* 0-227:@A [ITEM 6F 00] came out![END] */
 cmd_cfg_member_item(-1, 111, 1)
 cmd_add_pocket(neg(LOAD_REG(1, -1)))
 END
 GOTO lbl_9129
-cmd_disp_msg_0(-3, -1, 229) // 0-229:@You don't have enough money.[END]
+cmd_disp_msg_0(-3, -1, 229) /* 0-229:@You don't have enough money.[END] */
 END
 GOTO lbl_9135
-cmd_disp_msg_0(-3, -1, 228) // 0-228:@You can't carry any more stuff.[END]
+cmd_disp_msg_0(-3, -1, 228) /* 0-228:@You can't carry any more stuff.[END] */
 END
 RET_REG(1, 1)
 SP_ALLOC(3)
@@ -3763,10 +3763,10 @@ GOTO lbl_9208
 eq(LOAD_REG(1, -1), 6)
 FALSE GOTO lbl_9208
 cmd_load_name(1, 6)
-cmd_disp_msg_0(-3, -1, 152) // 0-152:@Something awoke inside [CHAR 23 F0 FF]![END]
+cmd_disp_msg_0(-3, -1, 152) /* 0-152:@Something awoke inside [CHAR 23 F0 FF]![END] */
 cmd_delay(32)
 cmd_play_sound(1946, -1)
-cmd_disp_msg_0(-3, -1, 153) // 0-153:@[CHAR 23 F0 FF] realized the power of[BREAK]  [25 FF F1 FF]![END]
+cmd_disp_msg_0(-3, -1, 153) /* 0-153:@[CHAR 23 F0 FF] realized the power of[BREAK]  [25 FF F1 FF]![END] */
 cmd_84(1, 0, 2)
 cmd_84(1, 1, 2)
 cmd_delay(32)
@@ -3789,14 +3789,14 @@ eq(cmd_get_giftbox_flag(LOAD_REG(1, -1)), 0)
 FALSE GOTO lbl_9370
 cmd_37(1)
 cmd_38(-1, -1, 50, 0)
-cmd_disp_msg_0(-3, -1, 84) // 0-84:@There's a trash can here.[WAIT]@Look inside it?[WAIT][MENU 02 00][MENUSPACEYES]Yes[MENUSPACENO]No[BREAK][ENDCHOICES][END]
+cmd_disp_msg_0(-3, -1, 84) /* 0-84:@There's a trash can here.[WAIT]@Look inside it?[WAIT][MENU 02 00][MENUSPACEYES]Yes[MENUSPACENO]No[BREAK][ENDCHOICES][END] */
 eq(cmd_get_msg_choice(), 0)
 FALSE GOTO lbl_9368
 cmd_delay(16)
 cmd_play_sound(1594, -1)
 cmd_play_anim(-1, 105, 0)
 cmd_load_name(0, LOAD_REG(1, -2))
-cmd_disp_msg_0(-3, -1, 243) // 0-243:@TAAAAAH-DAAAAAH![WAIT]@Inside the trash can, there was[BREAK]  [EF 91][ITEM F0 FF]![END]
+cmd_disp_msg_0(-3, -1, 243) /* 0-243:@TAAAAAH-DAAAAAH![WAIT]@Inside the trash can, there was[BREAK]  [EF 91][ITEM F0 FF]![END] */
 eq(cmd_E3(LOAD_REG(1, -2)), 1)
 FALSE GOTO lbl_9358
 cmd_delay(16)
@@ -3807,21 +3807,21 @@ and(neq(cmd_push_map_id(), 180), and(neq(cmd_push_map_id(), 179), neq(cmd_push_m
 FALSE GOTO lbl_9343
 cmd_load_name(0, LOAD_REG(1, -2))
 cmd_load_name(1, LOAD_REG(1, 2))
-cmd_disp_msg_0(-3, -1, 244) // 0-244:@[42 FF F1 FF] got [EF 93][ITEM F0 FF]![END]
+cmd_disp_msg_0(-3, -1, 244) /* 0-244:@[42 FF F1 FF] got [EF 93][ITEM F0 FF]![END] */
 GOTO lbl_9353
 cmd_load_name(0, LOAD_REG(1, -2))
 cmd_load_name(1, LOAD_REG(1, 2))
-cmd_disp_msg_0(-3, -1, 245) // 0-245:@[42 FF F1 FF] got [EF 93][ITEM F0 FF]![WAIT]@Maybe.[END]
+cmd_disp_msg_0(-3, -1, 245) /* 0-245:@[42 FF F1 FF] got [EF 93][ITEM F0 FF]![WAIT]@Maybe.[END] */
 cmd_set_giftbox_flag(LOAD_REG(1, -1), 1)
 END
 GOTO lbl_9367
 cmd_play_anim(-1, 1, 0)
-cmd_disp_msg_0(-3, -1, 247) // 0-247:@But you can't carry any more stuff.[END]
+cmd_disp_msg_0(-3, -1, 247) /* 0-247:@But you can't carry any more stuff.[END] */
 END
 GOTO lbl_9369
 END
 GOTO lbl_9374
-cmd_disp_msg_0(-3, -1, 62) // 0-62:@It's empty...[END]
+cmd_disp_msg_0(-3, -1, 62) /* 0-62:@It's empty...[END] */
 RET_REG(1, 2)
 SP_ALLOC(14)
 STORE_REG(cmd_5F(0),1,2)
@@ -4022,11 +4022,11 @@ RET_REG(1, 0)
 SP_ALLOC(2)
 cmd_6D(LOAD_REG(1, -4), 0, LOAD_REG(1, -2))
 cmd_6D(LOAD_REG(1, -4), 2, LOAD_REG(1, -3))
-cmd_disp_msg(LOAD_REG(1, -4), -1, LOAD_REG(1, -1)) // local bank msg LOAD_REG(1, -1)
+cmd_disp_msg(LOAD_REG(1, -4), -1, LOAD_REG(1, -1)) /* local bank msg LOAD_REG(1, -1) */
 cmd_play_anim(LOAD_REG(1, -4), LOAD_REG(1, -2), 0)
 RET_REG(1, 4)
 SP_ALLOC(2)
-cmd_disp_msg_0(-3, -1, 252) // 0-252:@Some sort of waste product.[END]
+cmd_disp_msg_0(-3, -1, 252) /* 0-252:@Some sort of waste product.[END] */
 RET_REG(1, 0)
 SP_ALLOC(3)
 eq(LOAD_REG(1, -1), 0)
@@ -4061,7 +4061,7 @@ eq(LOAD_REG(0, 0), 1)
 FALSE GOTO lbl_10095
 cmd_play_sound(242, -1)
 cmd_play_anim(-1, 1, 0)
-cmd_disp_msg_0(-3, -1, 53) // 0-53:@[42 FF 00 00] opened the present.[EVENT][END]
+cmd_disp_msg_0(-3, -1, 53) /* 0-53:@[42 FF 00 00] opened the present.[EVENT][END] */
 cmd_84(1, 0, 1)
 cmd_84(1, 1, 1)
 cmd_delay(32)
@@ -4091,9 +4091,9 @@ cmd_set_flag(1059, 1)
 cmd_delay(64)
 cmd_84(0, 0, 1)
 cmd_84(0, 1, 1)
-cmd_disp_msg_0(-3, -1, 205) // 0-205:@An indescribable smell lingers in the air.[END]
+cmd_disp_msg_0(-3, -1, 205) /* 0-205:@An indescribable smell lingers in the air.[END] */
 GOTO lbl_10099
-cmd_disp_msg_0(-3, -1, 62) // 0-62:@It's empty...[END]
+cmd_disp_msg_0(-3, -1, 62) /* 0-62:@It's empty...[END] */
 RET_REG(1, 1)
 SP_ALLOC(3)
 STORE_REG(0,0,0)
@@ -4105,7 +4105,7 @@ eq(LOAD_REG(0, 0), 1)
 FALSE GOTO lbl_10262
 cmd_play_sound(242, -1)
 cmd_play_anim(-1, 1, 0)
-cmd_disp_msg_0(-3, -1, 53) // 0-53:@[42 FF 00 00] opened the present.[EVENT][END]
+cmd_disp_msg_0(-3, -1, 53) /* 0-53:@[42 FF 00 00] opened the present.[EVENT][END] */
 cmd_84(1, 0, 1)
 cmd_84(1, 1, 1)
 cmd_delay(32)
@@ -4113,28 +4113,28 @@ eq(LOAD_REG(1, 2), 97)
 FALSE GOTO lbl_10185
 cmd_play_sound(1024, -1)
 cmd_delay(32)
-cmd_disp_msg_0(-3, -1, 206) // 0-206:@You heard a mambo rhythm.[PAUSE F0 00][EVENT][END]
+cmd_disp_msg_0(-3, -1, 206) /* 0-206:@You heard a mambo rhythm.[PAUSE F0 00][EVENT][END] */
 cmd_set_flag(1060, 1)
 GOTO lbl_10235
 eq(LOAD_REG(1, 2), 34)
 FALSE GOTO lbl_10202
 cmd_play_sound(1025, -1)
 cmd_delay(32)
-cmd_disp_msg_0(-3, -1, 207) // 0-207:@You heard a reggae rhythm.[PAUSE F0 00][EVENT][END]
+cmd_disp_msg_0(-3, -1, 207) /* 0-207:@You heard a reggae rhythm.[PAUSE F0 00][EVENT][END] */
 cmd_set_flag(1061, 1)
 GOTO lbl_10235
 eq(LOAD_REG(1, 2), 218)
 FALSE GOTO lbl_10219
 cmd_play_sound(1026, -1)
 cmd_delay(32)
-cmd_disp_msg_0(-3, -1, 208) // 0-208:@You heard a waltz rhythm.[PAUSE F0 00][EVENT][END]
+cmd_disp_msg_0(-3, -1, 208) /* 0-208:@You heard a waltz rhythm.[PAUSE F0 00][EVENT][END] */
 cmd_set_flag(1062, 1)
 GOTO lbl_10235
 eq(LOAD_REG(1, 2), 453)
 FALSE GOTO lbl_10235
 cmd_play_sound(1027, -1)
 cmd_delay(32)
-cmd_disp_msg_0(-3, -1, 209) // 0-209:@You heard a boogie-woogie rhythm.[PAUSE F0 00][EVENT][END]
+cmd_disp_msg_0(-3, -1, 209) /* 0-209:@You heard a boogie-woogie rhythm.[PAUSE F0 00][EVENT][END] */
 cmd_set_flag(1063, 1)
 cmd_delay(128)
 cmd_85(1, 9, 8)
@@ -4143,10 +4143,10 @@ cmd_play_sound_ext(-1, -1)
 cmd_84(0, 0, 4)
 cmd_84(0, 1, 4)
 cmd_delay(64)
-cmd_disp_msg_0(-3, -1, 210) // 0-210:  Ah.[END]
+cmd_disp_msg_0(-3, -1, 210) /* 0-210:  Ah.[END] */
 END
 GOTO lbl_10266
-cmd_disp_msg_0(-3, -1, 62) // 0-62:@It's empty...[END]
+cmd_disp_msg_0(-3, -1, 62) /* 0-62:@It's empty...[END] */
 RET_REG(1, 1)
 SP_ALLOC(4)
 STORE_REG(0,0,0)
@@ -4175,14 +4175,14 @@ FALSE GOTO lbl_10413
 eq(cmd_E3(LOAD_REG(1, 2)), 0)
 FALSE GOTO lbl_10356
 cmd_load_name(0, LOAD_REG(1, 2))
-cmd_disp_msg_0(-3, -1, 82) // 0-82:@Inside the present, there [EF 97][BREAK]  [EF 91][ITEM F0 FF].[WAIT]@But you can't carry any more stuff.[END]
+cmd_disp_msg_0(-3, -1, 82) /* 0-82:@Inside the present, there [EF 97][BREAK]  [EF 91][ITEM F0 FF].[WAIT]@But you can't carry any more stuff.[END] */
 END
 cmd_play_sound(242, -1)
 cmd_play_anim(-1, 1, 0)
-cmd_disp_msg_0(-3, -1, 53) // 0-53:@[42 FF 00 00] opened the present.[EVENT][END]
+cmd_disp_msg_0(-3, -1, 53) /* 0-53:@[42 FF 00 00] opened the present.[EVENT][END] */
 cmd_play_sound(245, -1)
 cmd_load_name(0, LOAD_REG(1, 2))
-cmd_disp_msg_0(-3, -1, 45) // 0-45:@Got [EF 91][ITEM F0 FF]![PAUSE 40 00][END]
+cmd_disp_msg_0(-3, -1, 45) /* 0-45:@Got [EF 91][ITEM F0 FF]![PAUSE 40 00][END] */
 cmd_cfg_member_item(-1, LOAD_REG(1, 2), 1)
 eq(LOAD_REG(1, 3), 161)
 FALSE GOTO lbl_10389
@@ -4200,7 +4200,7 @@ eq(LOAD_REG(1, 3), 258)
 FALSE GOTO lbl_10412
 cmd_set_flag(1085, 1)
 GOTO lbl_10417
-cmd_disp_msg_0(-3, -1, 62) // 0-62:@It's empty...[END]
+cmd_disp_msg_0(-3, -1, 62) /* 0-62:@It's empty...[END] */
 RET_REG(1, 1)
 SP_ALLOC(11)
 STORE_REG(0,0,0)
@@ -4220,7 +4220,7 @@ STORE_REG(20,1,2)
 STORE_REG(21,1,3)
 cmd_play_sound(242, -1)
 cmd_play_anim(-1, 1, 0)
-cmd_disp_msg_0(-3, -1, 53) // 0-53:@[42 FF 00 00] opened the present.[EVENT][END]
+cmd_disp_msg_0(-3, -1, 53) /* 0-53:@[42 FF 00 00] opened the present.[EVENT][END] */
 cmd_84(1, 0, 1)
 cmd_84(1, 1, 1)
 cmd_5C(LOAD_REG(1, 2), REG_ADDR(1, 7), REG_ADDR(1, 8))
@@ -4321,7 +4321,7 @@ cmd_play_sound_ext(139, -1)
 cmd_play_sound_ext(-1, -1)
 cmd_84(0, 0, 4)
 cmd_84(0, 1, 4)
-cmd_disp_msg_0(-3, -1, 211) // 0-211:@There were fireworks inside.[WAIT][PAUSE 40 00] ...Ah.[END]
+cmd_disp_msg_0(-3, -1, 211) /* 0-211:@There were fireworks inside.[WAIT][PAUSE 40 00] ...Ah.[END] */
 STORE_REG(0,1,4)
 STORE_REG(cmd_get_party_size(),1,9)
 STORE_REG(cmd_push_map_id(),1,10)
@@ -4333,7 +4333,7 @@ GOTO lbl_10739
 cmd_delay(64)
 END
 GOTO lbl_10758
-cmd_disp_msg_0(-3, -1, 62) // 0-62:@It's empty...[END]
+cmd_disp_msg_0(-3, -1, 62) /* 0-62:@It's empty...[END] */
 RET_REG(1, 1)
 SP_ALLOC(5)
 STORE_REG(0,0,0)
@@ -4345,7 +4345,7 @@ eq(LOAD_REG(0, 0), 1)
 FALSE GOTO lbl_10841
 cmd_play_sound(242, -1)
 cmd_play_anim(-1, 1, 0)
-cmd_disp_msg_0(-3, -1, 53) // 0-53:@[42 FF 00 00] opened the present.[EVENT][END]
+cmd_disp_msg_0(-3, -1, 53) /* 0-53:@[42 FF 00 00] opened the present.[EVENT][END] */
 cmd_delay(32)
 cmd_3B()
 cmd_5A(LOAD_REG(1, -1), 0)
@@ -4364,7 +4364,7 @@ FALSE GOTO lbl_10839
 cmd_set_flag(1076, 1)
 END
 GOTO lbl_10845
-cmd_disp_msg_0(-3, -1, 62) // 0-62:@It's empty...[END]
+cmd_disp_msg_0(-3, -1, 62) /* 0-62:@It's empty...[END] */
 RET_REG(1, 1)
 SP_ALLOC(3)
 STORE_REG(cmd_push_map_id(),1,2)
@@ -4423,9 +4423,9 @@ cmd_38(-1, -1, 50, 0)
 STORE_REG(cmd_push_map_id(),1,8)
 and(neq(LOAD_REG(1, 8), 641), neq(LOAD_REG(1, 8), 887))
 FALSE GOTO lbl_10991
-cmd_disp_msg_0(-3, -1, 63) // 0-63:@You can take a nap on this bed.[WAIT]  Take a quick rest?[WAIT][MENU 02 00][MENUSPACEYES]Yes[MENUSPACENO]No[ENDCHOICES][END]
+cmd_disp_msg_0(-3, -1, 63) /* 0-63:@You can take a nap on this bed.[WAIT]  Take a quick rest?[WAIT][MENU 02 00][MENUSPACEYES]Yes[MENUSPACENO]No[ENDCHOICES][END] */
 GOTO lbl_10995
-cmd_disp_msg_0(-3, -1, 64) // 0-64:@You can take a nap on this sofa.[WAIT]  Take a quick rest?[WAIT][MENU 02 00][MENUSPACEYES]Yes[MENUSPACENO]No[ENDCHOICES][END]
+cmd_disp_msg_0(-3, -1, 64) /* 0-64:@You can take a nap on this sofa.[WAIT]  Take a quick rest?[WAIT][MENU 02 00][MENUSPACEYES]Yes[MENUSPACENO]No[ENDCHOICES][END] */
 cmd_delay(16)
 eq(cmd_get_msg_choice(), 1)
 FALSE GOTO lbl_11002
@@ -4571,7 +4571,7 @@ cmd_5B(3, sub(sub(LOAD_REG(1, 2), 16), 32), sub(LOAD_REG(1, 3), 16))
 cmd_fade_in(60)
 cmd_45(-1)
 cmd_delay(100)
-cmd_disp_msg_0(-3, -1, 65) // 0-65:@You're fully revitalized.[END]
+cmd_disp_msg_0(-3, -1, 65) /* 0-65:@You're fully revitalized.[END] */
 eq(LOAD_REG(1, 8), 111)
 FALSE GOTO lbl_11587
 cmd_set_member_sprite(-2, 4)
@@ -4599,7 +4599,7 @@ cmd_play_sound(669, -1)
 cmd_delay(8)
 cmd_play_sound(669, -1)
 cmd_delay(32)
-cmd_disp_msg_0(-3, -1, 99) // 0-99:@No one seems to be home.[END]
+cmd_disp_msg_0(-3, -1, 99) /* 0-99:@No one seems to be home.[END] */
 RET_REG(1, 0)
 SP_ALLOC(8)
 cmd_5C(0, REG_ADDR(1, 4), REG_ADDR(1, 5))
@@ -4615,14 +4615,14 @@ cmd_8A(0, 65, 32)
 cmd_8A(1, 65, 32)
 cmd_play_sound(959, -1)
 cmd_3A()
-cmd_disp_msg(232, -1, LOAD_REG(1, -1)) // local bank msg LOAD_REG(1, -1)
+cmd_disp_msg(232, -1, LOAD_REG(1, -1)) /* local bank msg LOAD_REG(1, -1) */
 cmd_87(9)
 cmd_8A(0, -1, 64)
 cmd_8A(1, -1, 64)
 PUSH(0)
 RET_REG(1, 2)
 SP_ALLOC(2)
-cmd_disp_msg(add(LOAD_REG(1, -2), 100), -1, LOAD_REG(1, -1)) // local bank msg LOAD_REG(1, -1)
+cmd_disp_msg(add(LOAD_REG(1, -2), 100), -1, LOAD_REG(1, -1)) /* local bank msg LOAD_REG(1, -1) */
 RET_REG(1, 2)
 SP_ALLOC(4)
 STORE_REG(0,1,2)
@@ -4652,37 +4652,37 @@ FALSE GOTO lbl_11785
 STORE_REG(cmd_0E(1),1,3)
 or(eq(cmd_push_flag(33), 1), and(lte(LOAD_REG(1, 3), 27), gt(LOAD_REG(1, 3), 42)))
 FALSE GOTO lbl_11780
-cmd_disp_msg_0(-3, -1, 232) // 0-232:@You're looking pretty handsome, but this is no[BREAK]  time for that.[END]
+cmd_disp_msg_0(-3, -1, 232) /* 0-232:@You're looking pretty handsome, but this is no[BREAK]  time for that.[END] */
 GOTO lbl_11784
-cmd_disp_msg_0(-3, -1, 231) // 0-231:@Lookin' handsome.[END]
+cmd_disp_msg_0(-3, -1, 231) /* 0-231:@Lookin' handsome.[END] */
 GOTO lbl_11871
 or(eq(LOAD_REG(1, 2), 159), eq(LOAD_REG(1, 2), 179))
 FALSE GOTO lbl_11798
-cmd_disp_msg_0(-3, -1, 233) // 0-233:@Your face is pitch black.[END]
+cmd_disp_msg_0(-3, -1, 233) /* 0-233:@Your face is pitch black.[END] */
 GOTO lbl_11871
 or(eq(LOAD_REG(1, 2), 3), eq(LOAD_REG(1, 2), 4))
 FALSE GOTO lbl_11811
-cmd_disp_msg_0(-3, -1, 231) // 0-231:@Lookin' handsome.[END]
+cmd_disp_msg_0(-3, -1, 231) /* 0-231:@Lookin' handsome.[END] */
 GOTO lbl_11871
 or(eq(LOAD_REG(1, 2), 153), eq(LOAD_REG(1, 2), 60))
 FALSE GOTO lbl_11824
-cmd_disp_msg_0(-3, -1, 230) // 0-230:@The same bed-head as always.[END]
+cmd_disp_msg_0(-3, -1, 230) /* 0-230:@The same bed-head as always.[END] */
 GOTO lbl_11871
 or(eq(LOAD_REG(1, 2), 9), eq(LOAD_REG(1, 2), 10))
 FALSE GOTO lbl_11837
-cmd_disp_msg_0(-3, -1, 237) // 0-237:@For a second, you thought some cheeky jerk[BREAK]  was staring back at you.[END]
+cmd_disp_msg_0(-3, -1, 237) /* 0-237:@For a second, you thought some cheeky jerk[BREAK]  was staring back at you.[END] */
 GOTO lbl_11871
 or(eq(LOAD_REG(1, 2), 11), eq(LOAD_REG(1, 2), 12))
 FALSE GOTO lbl_11850
-cmd_disp_msg_0(-3, -1, 236) // 0-236:@Not bad.[END]
+cmd_disp_msg_0(-3, -1, 236) /* 0-236:@Not bad.[END] */
 GOTO lbl_11871
 eq(LOAD_REG(1, 2), 15)
 FALSE GOTO lbl_11859
-cmd_disp_msg_0(-3, -1, 234) // 0-234:@Your whiskers have really grown out.[END]
+cmd_disp_msg_0(-3, -1, 234) /* 0-234:@Your whiskers have really grown out.[END] */
 GOTO lbl_11871
 or(eq(LOAD_REG(1, 2), 18), eq(LOAD_REG(1, 2), 37))
 FALSE GOTO lbl_11871
-cmd_disp_msg_0(-3, -1, 235) // 0-235:@What does a smile look like again?[END]
+cmd_disp_msg_0(-3, -1, 235) /* 0-235:@What does a smile look like again?[END] */
 RET_REG(1, 0)
 SP_ALLOC(6)
 STORE_REG(cmd_push_map_id(),1,2)
@@ -4750,13 +4750,13 @@ cmd_delay(1)
 PUSH(0)
 RET_REG(1, 0)
 SP_ALLOC(2)
-cmd_disp_msg(-3, -1, LOAD_REG(1, -1)) // local bank msg LOAD_REG(1, -1)
+cmd_disp_msg(-3, -1, LOAD_REG(1, -1)) /* local bank msg LOAD_REG(1, -1) */
 RET_REG(1, 1)
 SP_ALLOC(2)
 cmd_play_sound(1074, -1)
-cmd_disp_msg(-1, -1, LOAD_REG(1, -2)) // local bank msg LOAD_REG(1, -2)
+cmd_disp_msg(-1, -1, LOAD_REG(1, -2)) /* local bank msg LOAD_REG(1, -2) */
 cmd_play_sound(1074, -1)
-cmd_disp_msg(-1, -1, LOAD_REG(1, -1)) // local bank msg LOAD_REG(1, -1)
+cmd_disp_msg(-1, -1, LOAD_REG(1, -1)) /* local bank msg LOAD_REG(1, -1) */
 cmd_set_flag(368, 1)
 RET_REG(1, 2)
 SP_ALLOC(1)
@@ -4802,23 +4802,23 @@ END
 END
 SP_ALLOC(1)
 PUSH_REG(1, 0)
-cmd_disp_msg_0(-3, -1, 53) // 0-53:@[42 FF 00 00] opened the present.[EVENT][END]
+cmd_disp_msg_0(-3, -1, 53) /* 0-53:@[42 FF 00 00] opened the present.[EVENT][END] */
 cmd_play_sound(245, -1)
-cmd_disp_msg_0(-3, -1, 48) // 0-48:@[42 FF F0 FF] got [EF 11][81 FF]![END]
+cmd_disp_msg_0(-3, -1, 48) /* 0-48:@[42 FF F0 FF] got [EF 11][81 FF]![END] */
 END
 END
 SP_ALLOC(1)
 PUSH_REG(1, 0)
-cmd_disp_msg_0(-3, -1, 53) // 0-53:@[42 FF 00 00] opened the present.[EVENT][END]
+cmd_disp_msg_0(-3, -1, 53) /* 0-53:@[42 FF 00 00] opened the present.[EVENT][END] */
 cmd_play_sound(245, -1)
-cmd_disp_msg_0(-3, -1, 49) // 0-49:@[42 FF F0 FF] got [83 FF] [81 FF]s![END]
+cmd_disp_msg_0(-3, -1, 49) /* 0-49:@[42 FF F0 FF] got [83 FF] [81 FF]s![END] */
 END
 END
 SP_ALLOC(1)
 PUSH_REG(1, 0)
-cmd_disp_msg_0(-3, -1, 53) // 0-53:@[42 FF 00 00] opened the present.[EVENT][END]
+cmd_disp_msg_0(-3, -1, 53) /* 0-53:@[42 FF 00 00] opened the present.[EVENT][END] */
 cmd_play_sound(231, -1)
-cmd_disp_msg_0(-3, -1, 50) // 0-50:@[42 FF 00 00] got [82 FF] DP![END]
+cmd_disp_msg_0(-3, -1, 50) /* 0-50:@[42 FF 00 00] got [82 FF] DP![END] */
 END
 END
 RESULTS OVER

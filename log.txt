@@ -1,0 +1,9708 @@
+Parsing logic
+block 0 script 0
+block 0 script 1
+block 0 script 2
+block 0 script 3
+block 0 script 4
+block 0 script 5
+block 0 script 6
+block 0 script 7
+block 0 script 8
+block 0 script 9
+block 0 script 10
+block 0 script 11
+block 0 script 12
+block 0 script 13
+block 0 script 14
+block 0 script 15
+block 0 script 16
+block 0 script 17
+block 0 script 18
+block 0 script 19
+block 2 script 0
+block 2 script 1
+block 2 script 2
+block 2 script 3
+block 2 script 4
+block 2 script 5
+block 2 script 6
+block 2 script 7
+block 2 script 8
+block 2 script 9
+block 2 script 10
+block 2 script 11
+block 2 script 12
+block 2 script 13
+block 2 script 14
+block 2 script 15
+block 2 script 16
+block 2 script 17
+block 2 script 18
+block 2 script 19
+block 2 script 20
+block 3 script 0
+block 3 script 1
+block 3 script 2
+block 3 script 3
+block 3 script 4
+block 3 script 5
+block 3 script 6
+block 3 script 7
+block 3 script 8
+block 3 script 9
+block 3 script 10
+block 3 script 11
+block 3 script 12
+block 3 script 13
+block 3 script 14
+block 3 script 15
+block 3 script 16
+block 3 script 17
+block 3 script 18
+block 3 script 19
+block 3 script 20
+block 3 script 21
+block 3 script 22
+block 3 script 23
+block 3 script 24
+block 3 script 25
+block 3 script 26
+block 3 script 27
+block 3 script 28
+block 3 script 29
+block 3 script 30
+block 3 script 31
+block 3 script 32
+block 3 script 33
+block 3 script 34
+block 3 script 35
+block 4 script 0
+block 4 script 1
+block 4 script 2
+block 4 script 3
+block 4 script 4
+block 4 script 5
+block 4 script 6
+block 4 script 7
+block 4 script 8
+block 4 script 9
+block 4 script 10
+block 4 script 11
+block 5 script 0
+block 5 script 1
+block 5 script 2
+block 5 script 3
+block 5 script 4
+block 5 script 5
+block 5 script 6
+block 5 script 7
+block 5 script 8
+block 5 script 9
+block 5 script 10
+block 5 script 11
+block 5 script 12
+block 5 script 13
+block 5 script 14
+block 6 script 0
+block 6 script 1
+block 6 script 2
+block 6 script 3
+block 6 script 4
+block 6 script 5
+block 7 script 0
+block 7 script 1
+block 7 script 2
+block 7 script 3
+block 7 script 4
+block 7 script 5
+block 7 script 6
+block 7 script 7
+block 7 script 8
+block 8 script 0
+block 8 script 1
+block 8 script 2
+block 8 script 3
+block 8 script 4
+block 8 script 5
+block 8 script 6
+block 8 script 7
+block 8 script 8
+block 8 script 9
+block 8 script 10
+block 8 script 11
+block 8 script 12
+block 8 script 13
+block 8 script 14
+block 8 script 15
+block 8 script 16
+block 8 script 17
+block 9 script 0
+block 9 script 1
+block 9 script 2
+block 9 script 3
+block 9 script 4
+block 9 script 5
+block 9 script 6
+block 9 script 7
+block 9 script 8
+block 9 script 9
+block 9 script 10
+block 9 script 11
+block 9 script 12
+block 9 script 13
+block 9 script 14
+block 9 script 15
+block 9 script 16
+block 9 script 17
+block 9 script 18
+block 9 script 19
+block 9 script 20
+block 9 script 21
+block 10 script 0
+block 10 script 1
+block 10 script 2
+block 10 script 3
+block 10 script 4
+block 10 script 5
+block 10 script 6
+block 10 script 7
+block 10 script 8
+block 10 script 9
+block 10 script 10
+block 10 script 11
+block 10 script 12
+block 10 script 13
+block 10 script 14
+block 10 script 15
+block 10 script 16
+block 10 script 17
+block 10 script 18
+block 10 script 19
+block 10 script 20
+block 10 script 21
+block 10 script 22
+block 10 script 23
+block 10 script 24
+block 10 script 25
+block 10 script 26
+block 10 script 27
+block 10 script 28
+block 10 script 29
+block 10 script 30
+block 10 script 31
+block 10 script 32
+block 10 script 33
+block 10 script 34
+block 10 script 35
+block 10 script 36
+block 10 script 37
+block 10 script 38
+block 10 script 39
+block 10 script 40
+block 11 script 0
+block 11 script 1
+block 11 script 2
+block 11 script 3
+block 11 script 4
+block 11 script 5
+block 11 script 6
+block 11 script 7
+block 11 script 8
+block 11 script 9
+block 11 script 10
+block 11 script 11
+block 11 script 12
+block 11 script 13
+block 11 script 14
+block 11 script 15
+block 11 script 16
+block 11 script 17
+block 11 script 18
+block 11 script 19
+block 11 script 20
+block 11 script 21
+block 11 script 22
+block 12 script 0
+block 12 script 1
+block 12 script 2
+block 12 script 3
+block 12 script 4
+block 12 script 5
+block 12 script 6
+block 12 script 7
+block 12 script 8
+block 12 script 9
+block 12 script 10
+block 12 script 11
+block 12 script 12
+block 12 script 13
+block 12 script 14
+block 12 script 15
+block 12 script 16
+block 12 script 17
+block 12 script 18
+block 13 script 0
+block 13 script 1
+block 13 script 2
+block 13 script 3
+block 13 script 4
+block 13 script 5
+block 13 script 6
+block 13 script 7
+block 13 script 8
+block 13 script 9
+block 13 script 10
+block 13 script 11
+block 13 script 12
+block 14 script 0
+block 14 script 1
+block 14 script 2
+block 14 script 3
+block 14 script 4
+block 14 script 5
+block 14 script 6
+block 14 script 7
+block 14 script 8
+block 14 script 9
+block 14 script 10
+block 15 script 0
+block 15 script 1
+block 15 script 2
+block 15 script 3
+block 15 script 4
+block 15 script 5
+block 15 script 6
+block 15 script 7
+block 15 script 8
+block 15 script 9
+block 15 script 10
+block 15 script 11
+block 15 script 12
+block 15 script 13
+block 15 script 14
+block 15 script 15
+block 16 script 0
+block 16 script 1
+block 16 script 2
+block 17 script 0
+block 17 script 1
+block 18 script 0
+block 18 script 1
+block 18 script 2
+block 18 script 3
+block 18 script 4
+block 18 script 5
+block 18 script 6
+block 18 script 7
+block 18 script 8
+block 18 script 9
+block 18 script 10
+block 18 script 11
+block 18 script 12
+block 18 script 13
+block 18 script 14
+block 18 script 15
+block 18 script 16
+block 18 script 17
+block 18 script 18
+block 18 script 19
+block 19 script 0
+block 19 script 1
+block 19 script 2
+block 19 script 3
+block 19 script 4
+block 19 script 5
+block 19 script 6
+block 19 script 7
+block 19 script 8
+block 19 script 9
+block 19 script 10
+block 19 script 11
+block 19 script 12
+block 19 script 13
+block 19 script 14
+block 19 script 15
+block 19 script 16
+block 19 script 17
+block 19 script 18
+block 19 script 19
+block 20 script 0
+block 20 script 1
+block 20 script 2
+block 20 script 3
+block 21 script 0
+block 21 script 1
+block 21 script 2
+block 21 script 3
+block 21 script 4
+block 21 script 5
+block 21 script 6
+block 21 script 7
+block 21 script 8
+block 21 script 9
+block 21 script 10
+block 21 script 11
+block 21 script 12
+block 21 script 13
+block 22 script 0
+block 22 script 1
+block 22 script 2
+block 22 script 3
+block 22 script 4
+block 22 script 5
+block 22 script 6
+block 22 script 7
+block 22 script 8
+block 22 script 9
+block 22 script 10
+block 22 script 11
+block 22 script 12
+block 22 script 13
+block 22 script 14
+block 22 script 15
+block 22 script 16
+block 22 script 17
+block 22 script 18
+block 22 script 19
+block 22 script 20
+block 22 script 21
+block 22 script 22
+block 23 script 0
+block 23 script 1
+block 23 script 2
+block 23 script 3
+block 23 script 4
+block 23 script 5
+block 23 script 6
+block 23 script 7
+block 23 script 8
+block 24 script 0
+block 24 script 1
+block 24 script 2
+block 24 script 3
+block 25 script 0
+block 25 script 1
+block 25 script 2
+block 25 script 3
+block 26 script 0
+block 26 script 1
+block 26 script 2
+block 26 script 3
+block 26 script 4
+block 26 script 5
+block 26 script 6
+block 26 script 7
+block 27 script 0
+block 27 script 1
+block 28 script 0
+block 28 script 1
+block 28 script 2
+block 28 script 3
+block 28 script 4
+block 28 script 5
+block 28 script 6
+block 28 script 7
+block 28 script 8
+block 28 script 9
+block 28 script 10
+block 29 script 0
+block 29 script 1
+block 29 script 2
+block 29 script 3
+block 29 script 4
+block 30 script 0
+block 30 script 1
+block 30 script 2
+block 30 script 3
+block 30 script 4
+block 30 script 5
+block 31 script 0
+block 31 script 1
+block 31 script 2
+block 31 script 3
+block 31 script 4
+block 31 script 5
+block 31 script 6
+block 31 script 7
+block 31 script 8
+block 31 script 9
+block 31 script 10
+block 31 script 11
+block 31 script 12
+block 31 script 13
+block 31 script 14
+block 31 script 15
+block 31 script 16
+block 31 script 17
+block 31 script 18
+block 31 script 19
+block 31 script 20
+block 31 script 21
+block 32 script 0
+block 32 script 1
+block 32 script 2
+block 32 script 3
+block 32 script 4
+block 32 script 5
+block 32 script 6
+block 32 script 7
+block 32 script 8
+block 32 script 9
+block 32 script 10
+block 32 script 11
+block 32 script 12
+block 32 script 13
+block 32 script 14
+block 32 script 15
+block 32 script 16
+block 32 script 17
+block 32 script 18
+block 32 script 19
+block 32 script 20
+block 32 script 21
+block 32 script 22
+block 32 script 23
+block 32 script 24
+block 32 script 25
+block 33 script 0
+block 33 script 1
+block 33 script 2
+block 33 script 3
+block 33 script 4
+block 33 script 5
+block 33 script 6
+block 33 script 7
+block 33 script 8
+block 33 script 9
+block 33 script 10
+block 33 script 11
+block 33 script 12
+block 33 script 13
+block 33 script 14
+block 33 script 15
+block 33 script 16
+block 33 script 17
+block 33 script 18
+block 34 script 0
+block 34 script 1
+block 34 script 2
+block 34 script 3
+block 34 script 4
+block 34 script 5
+block 34 script 6
+block 34 script 7
+block 34 script 8
+block 34 script 9
+block 34 script 10
+block 34 script 11
+block 34 script 12
+block 34 script 13
+block 34 script 14
+block 34 script 15
+block 35 script 0
+block 35 script 1
+block 35 script 2
+block 35 script 3
+block 35 script 4
+block 35 script 5
+block 35 script 6
+block 35 script 7
+block 35 script 8
+block 35 script 9
+block 35 script 10
+block 35 script 11
+block 36 script 0
+block 36 script 1
+block 36 script 2
+block 36 script 3
+block 36 script 4
+block 36 script 5
+block 36 script 6
+block 36 script 7
+block 36 script 8
+block 36 script 9
+block 36 script 10
+block 36 script 11
+block 36 script 12
+block 36 script 13
+block 36 script 14
+block 36 script 15
+block 36 script 16
+block 36 script 17
+block 36 script 18
+block 36 script 19
+block 36 script 20
+block 36 script 21
+block 36 script 22
+block 36 script 23
+block 36 script 24
+block 36 script 25
+block 36 script 26
+block 36 script 27
+block 37 script 0
+block 37 script 1
+block 37 script 2
+block 37 script 3
+block 37 script 4
+block 37 script 5
+block 37 script 6
+block 37 script 7
+block 37 script 8
+block 37 script 9
+block 37 script 10
+block 37 script 11
+block 37 script 12
+block 38 script 0
+block 38 script 1
+block 38 script 2
+block 38 script 3
+block 38 script 4
+block 38 script 5
+block 38 script 6
+block 38 script 7
+block 38 script 8
+block 38 script 9
+block 38 script 10
+block 38 script 11
+block 38 script 12
+block 38 script 13
+block 38 script 14
+block 38 script 15
+block 38 script 16
+block 38 script 17
+block 38 script 18
+block 38 script 19
+block 38 script 20
+block 38 script 21
+block 38 script 22
+block 38 script 23
+block 38 script 24
+block 38 script 25
+block 38 script 26
+block 38 script 27
+block 39 script 0
+block 39 script 1
+block 39 script 2
+block 39 script 3
+block 40 script 0
+block 40 script 1
+block 40 script 2
+block 40 script 3
+block 40 script 4
+block 41 script 0
+block 41 script 1
+block 41 script 2
+block 42 script 0
+block 42 script 1
+block 42 script 2
+block 42 script 3
+block 42 script 4
+block 42 script 5
+block 42 script 6
+block 42 script 7
+block 42 script 8
+block 42 script 9
+block 42 script 10
+block 42 script 11
+block 42 script 12
+block 42 script 13
+block 42 script 14
+block 42 script 15
+block 43 script 0
+block 43 script 1
+block 43 script 2
+block 43 script 3
+block 43 script 4
+block 43 script 5
+block 43 script 6
+block 43 script 7
+block 44 script 0
+block 44 script 1
+block 44 script 2
+block 45 script 0
+block 45 script 1
+block 45 script 2
+block 45 script 3
+block 45 script 4
+block 45 script 5
+block 45 script 6
+block 45 script 7
+block 45 script 8
+block 46 script 0
+block 46 script 1
+block 46 script 2
+block 46 script 3
+block 47 script 0
+block 47 script 1
+block 47 script 2
+block 47 script 3
+block 47 script 4
+block 47 script 5
+block 47 script 6
+block 47 script 7
+block 47 script 8
+block 48 script 0
+block 48 script 1
+block 48 script 2
+block 48 script 3
+block 48 script 4
+block 48 script 5
+block 48 script 6
+block 48 script 7
+block 48 script 8
+block 48 script 9
+block 48 script 10
+block 48 script 11
+block 48 script 12
+block 48 script 13
+block 48 script 14
+block 48 script 15
+block 49 script 0
+block 49 script 1
+block 49 script 2
+block 49 script 3
+block 49 script 4
+block 49 script 5
+block 49 script 6
+block 50 script 0
+block 50 script 1
+block 50 script 2
+block 50 script 3
+block 50 script 4
+block 50 script 5
+block 50 script 6
+block 50 script 7
+block 50 script 8
+block 50 script 9
+block 50 script 10
+block 50 script 11
+block 50 script 12
+block 50 script 13
+block 50 script 14
+block 50 script 15
+block 50 script 16
+block 50 script 17
+block 51 script 0
+block 51 script 1
+block 52 script 0
+block 52 script 1
+block 52 script 2
+block 52 script 3
+block 52 script 4
+block 52 script 5
+block 52 script 6
+block 52 script 7
+block 52 script 8
+block 52 script 9
+block 52 script 10
+block 52 script 11
+block 52 script 12
+block 52 script 13
+block 53 script 0
+block 53 script 1
+block 53 script 2
+block 53 script 3
+block 53 script 4
+block 53 script 5
+block 53 script 6
+block 53 script 7
+block 53 script 8
+block 53 script 9
+block 53 script 10
+block 54 script 0
+block 54 script 1
+block 54 script 2
+block 54 script 3
+block 54 script 4
+block 54 script 5
+block 54 script 6
+block 54 script 7
+block 55 script 0
+block 55 script 1
+block 55 script 2
+block 55 script 3
+block 55 script 4
+block 55 script 5
+block 55 script 6
+block 56 script 0
+block 56 script 1
+block 56 script 2
+block 57 script 0
+block 57 script 1
+block 57 script 2
+block 57 script 3
+block 57 script 4
+block 58 script 0
+block 58 script 1
+block 58 script 2
+block 58 script 3
+block 58 script 4
+block 58 script 5
+block 58 script 6
+block 58 script 7
+block 59 script 0
+block 59 script 1
+block 59 script 2
+block 59 script 3
+block 59 script 4
+block 59 script 5
+block 59 script 6
+block 59 script 7
+block 59 script 8
+block 59 script 9
+block 59 script 10
+block 59 script 11
+block 61 script 0
+block 61 script 1
+block 61 script 2
+block 61 script 3
+block 61 script 4
+block 61 script 5
+block 61 script 6
+block 61 script 7
+block 61 script 8
+block 61 script 9
+block 61 script 10
+block 61 script 11
+block 63 script 0
+block 63 script 1
+block 63 script 2
+block 66 script 0
+block 66 script 1
+block 66 script 2
+block 66 script 3
+block 67 script 0
+block 67 script 1
+block 67 script 2
+block 67 script 3
+block 67 script 4
+block 67 script 5
+block 67 script 6
+block 67 script 7
+block 67 script 8
+block 67 script 9
+block 67 script 10
+block 67 script 11
+block 67 script 12
+block 67 script 13
+block 67 script 14
+block 67 script 15
+block 67 script 16
+block 67 script 17
+block 67 script 18
+block 67 script 19
+block 67 script 20
+block 68 script 0
+block 68 script 1
+block 68 script 2
+block 69 script 0
+block 69 script 1
+block 69 script 2
+block 70 script 0
+block 70 script 1
+block 70 script 2
+block 70 script 3
+block 70 script 4
+block 70 script 5
+block 70 script 6
+block 70 script 7
+block 70 script 8
+block 71 script 0
+block 72 script 0
+block 72 script 1
+block 72 script 2
+block 72 script 3
+block 72 script 4
+block 72 script 5
+block 72 script 6
+block 72 script 7
+block 72 script 8
+block 72 script 9
+block 72 script 10
+block 72 script 11
+block 73 script 0
+block 73 script 1
+block 73 script 2
+block 73 script 3
+block 74 script 0
+block 74 script 1
+block 75 script 0
+block 75 script 1
+block 76 script 0
+block 76 script 1
+block 77 script 0
+block 77 script 1
+block 77 script 2
+block 77 script 3
+block 77 script 4
+block 77 script 5
+block 78 script 0
+block 78 script 1
+block 78 script 2
+block 78 script 3
+block 79 script 0
+block 79 script 1
+block 79 script 2
+block 79 script 3
+block 79 script 4
+block 79 script 5
+block 79 script 6
+block 79 script 7
+block 79 script 8
+block 80 script 0
+block 80 script 1
+block 80 script 2
+block 80 script 3
+block 80 script 4
+block 80 script 5
+block 80 script 6
+block 80 script 7
+block 80 script 8
+block 80 script 9
+block 80 script 10
+block 80 script 11
+block 80 script 12
+block 80 script 13
+block 80 script 14
+block 80 script 15
+block 80 script 16
+block 80 script 17
+block 80 script 18
+block 80 script 19
+block 81 script 0
+block 81 script 1
+block 81 script 2
+block 81 script 3
+block 81 script 4
+block 81 script 5
+block 81 script 6
+block 81 script 7
+block 81 script 8
+block 81 script 9
+block 81 script 10
+block 81 script 11
+block 81 script 12
+block 81 script 13
+block 81 script 14
+block 81 script 15
+block 81 script 16
+block 81 script 17
+block 82 script 0
+block 82 script 1
+block 82 script 2
+block 82 script 3
+block 82 script 4
+block 82 script 5
+block 82 script 6
+block 82 script 7
+block 82 script 8
+block 82 script 9
+block 82 script 10
+block 83 script 0
+block 83 script 1
+block 83 script 2
+block 83 script 3
+block 83 script 4
+block 83 script 5
+block 83 script 6
+block 84 script 0
+block 84 script 1
+block 84 script 2
+block 84 script 3
+block 85 script 0
+block 85 script 1
+block 85 script 2
+block 85 script 3
+block 86 script 0
+block 86 script 1
+block 86 script 2
+block 86 script 3
+block 86 script 4
+block 86 script 5
+block 86 script 6
+block 86 script 7
+block 86 script 8
+block 86 script 9
+block 86 script 10
+block 86 script 11
+block 86 script 12
+block 86 script 13
+block 86 script 14
+block 86 script 15
+block 87 script 0
+block 87 script 1
+block 87 script 2
+block 87 script 3
+block 87 script 4
+block 87 script 5
+block 87 script 6
+block 87 script 7
+block 87 script 8
+block 88 script 0
+block 88 script 1
+block 88 script 2
+block 88 script 3
+block 88 script 4
+block 88 script 5
+block 88 script 6
+block 88 script 7
+block 88 script 8
+block 88 script 9
+block 88 script 10
+block 89 script 0
+block 89 script 1
+block 89 script 2
+block 89 script 3
+block 89 script 4
+block 89 script 5
+block 89 script 6
+block 89 script 7
+block 89 script 8
+block 89 script 9
+block 89 script 10
+block 89 script 11
+block 89 script 12
+block 89 script 13
+block 89 script 14
+block 89 script 15
+block 90 script 0
+block 90 script 1
+block 90 script 2
+block 90 script 3
+block 90 script 4
+block 91 script 0
+block 91 script 1
+block 91 script 2
+block 91 script 3
+block 91 script 4
+block 91 script 5
+block 91 script 6
+block 91 script 7
+block 91 script 8
+block 91 script 9
+block 91 script 10
+block 91 script 11
+block 91 script 12
+block 91 script 13
+block 91 script 14
+block 91 script 15
+block 91 script 16
+block 91 script 17
+block 91 script 18
+block 91 script 19
+block 91 script 20
+block 91 script 21
+block 92 script 0
+block 92 script 1
+block 92 script 2
+block 93 script 0
+block 93 script 1
+block 93 script 2
+block 93 script 3
+block 94 script 0
+block 94 script 1
+block 94 script 2
+block 94 script 3
+block 94 script 4
+block 94 script 5
+block 94 script 6
+block 94 script 7
+block 94 script 8
+block 94 script 9
+block 94 script 10
+block 95 script 0
+block 95 script 1
+block 96 script 0
+block 96 script 1
+block 96 script 2
+block 96 script 3
+block 96 script 4
+block 96 script 5
+block 96 script 6
+block 97 script 0
+block 97 script 1
+block 98 script 0
+block 98 script 1
+block 98 script 2
+block 98 script 3
+block 98 script 4
+block 98 script 5
+block 98 script 6
+block 98 script 7
+block 99 script 0
+block 99 script 1
+block 99 script 2
+block 99 script 3
+block 99 script 4
+block 99 script 5
+block 99 script 6
+block 100 script 0
+block 100 script 1
+block 100 script 2
+block 100 script 3
+block 100 script 4
+block 100 script 5
+block 100 script 6
+block 101 script 0
+block 101 script 1
+block 101 script 2
+block 101 script 3
+block 102 script 0
+block 102 script 1
+block 102 script 2
+block 102 script 3
+block 102 script 4
+block 102 script 5
+block 102 script 6
+block 102 script 7
+block 102 script 8
+block 102 script 9
+block 102 script 10
+block 102 script 11
+block 102 script 12
+block 102 script 13
+block 102 script 14
+block 102 script 15
+block 102 script 16
+block 102 script 17
+block 103 script 0
+block 103 script 1
+block 104 script 0
+block 104 script 1
+block 104 script 2
+block 104 script 3
+block 104 script 4
+block 104 script 5
+block 104 script 6
+block 104 script 7
+block 104 script 8
+block 104 script 9
+block 104 script 10
+block 104 script 11
+block 105 script 0
+block 105 script 1
+block 105 script 2
+block 105 script 3
+block 105 script 4
+block 105 script 5
+block 107 script 0
+block 107 script 1
+block 107 script 2
+block 108 script 0
+block 108 script 1
+block 109 script 0
+block 109 script 1
+block 110 script 0
+block 110 script 1
+block 110 script 2
+block 110 script 3
+block 110 script 4
+block 111 script 0
+block 111 script 1
+block 111 script 2
+block 111 script 3
+block 111 script 4
+block 111 script 5
+block 111 script 6
+block 111 script 7
+block 111 script 8
+block 111 script 9
+block 111 script 10
+block 112 script 0
+block 112 script 1
+block 112 script 2
+block 112 script 3
+block 113 script 0
+block 113 script 1
+block 113 script 2
+block 113 script 3
+block 114 script 0
+block 114 script 1
+block 114 script 2
+block 115 script 0
+block 115 script 1
+block 115 script 2
+block 116 script 0
+block 116 script 1
+block 116 script 2
+block 116 script 3
+block 117 script 0
+block 117 script 1
+block 117 script 2
+block 117 script 3
+block 117 script 4
+block 117 script 5
+block 117 script 6
+block 117 script 7
+block 117 script 8
+block 118 script 0
+block 118 script 1
+block 118 script 2
+block 118 script 3
+block 119 script 0
+block 119 script 1
+block 120 script 0
+block 120 script 1
+block 120 script 2
+block 121 script 0
+block 121 script 1
+block 121 script 2
+block 121 script 3
+block 122 script 0
+block 122 script 1
+block 122 script 2
+block 122 script 3
+block 122 script 4
+block 122 script 5
+block 122 script 6
+block 122 script 7
+block 122 script 8
+block 122 script 9
+block 122 script 10
+block 122 script 11
+block 123 script 0
+block 123 script 1
+block 123 script 2
+block 123 script 3
+block 123 script 4
+block 123 script 5
+block 123 script 6
+block 123 script 7
+block 124 script 0
+block 124 script 1
+block 124 script 2
+block 124 script 3
+block 124 script 4
+block 124 script 5
+block 124 script 6
+block 124 script 7
+block 124 script 8
+block 124 script 9
+block 124 script 10
+block 124 script 11
+block 124 script 12
+block 125 script 0
+block 125 script 1
+block 126 script 0
+block 126 script 1
+block 126 script 2
+block 126 script 3
+block 126 script 4
+block 126 script 5
+block 127 script 0
+block 127 script 1
+block 127 script 2
+block 128 script 0
+block 128 script 1
+block 128 script 2
+block 128 script 3
+block 128 script 4
+block 128 script 5
+block 129 script 0
+block 129 script 1
+block 129 script 2
+block 129 script 3
+block 130 script 0
+block 130 script 1
+block 130 script 2
+block 130 script 3
+block 131 script 0
+block 131 script 1
+block 131 script 2
+block 131 script 3
+block 131 script 4
+block 131 script 5
+block 132 script 0
+block 133 script 0
+block 133 script 1
+block 133 script 2
+block 133 script 3
+block 133 script 4
+block 133 script 5
+block 133 script 6
+block 134 script 0
+block 135 script 0
+block 135 script 1
+block 135 script 2
+block 135 script 3
+block 135 script 4
+block 135 script 5
+block 135 script 6
+block 135 script 7
+block 135 script 8
+block 135 script 9
+block 135 script 10
+block 135 script 11
+block 135 script 12
+block 135 script 13
+block 135 script 14
+block 135 script 15
+block 135 script 16
+block 136 script 0
+block 136 script 1
+block 136 script 2
+block 136 script 3
+block 136 script 4
+block 136 script 5
+block 136 script 6
+block 136 script 7
+block 137 script 0
+block 137 script 1
+block 137 script 2
+block 137 script 3
+block 137 script 4
+block 137 script 5
+block 137 script 6
+block 137 script 7
+block 137 script 8
+block 137 script 9
+block 137 script 10
+block 137 script 11
+block 137 script 12
+block 137 script 13
+block 138 script 0
+block 138 script 1
+block 138 script 2
+block 138 script 3
+block 138 script 4
+block 138 script 5
+block 138 script 6
+block 139 script 0
+block 139 script 1
+block 139 script 2
+block 139 script 3
+block 139 script 4
+block 139 script 5
+block 139 script 6
+block 140 script 0
+block 140 script 1
+block 140 script 2
+block 140 script 3
+block 140 script 4
+block 140 script 5
+block 140 script 6
+block 141 script 0
+block 141 script 1
+block 141 script 2
+block 141 script 3
+block 141 script 4
+block 141 script 5
+block 142 script 0
+block 142 script 1
+block 142 script 2
+block 142 script 3
+block 142 script 4
+block 142 script 5
+block 142 script 6
+block 143 script 0
+block 143 script 1
+block 143 script 2
+block 143 script 3
+block 143 script 4
+block 144 script 0
+block 145 script 0
+block 145 script 1
+block 145 script 2
+block 146 script 0
+block 147 script 0
+block 148 script 0
+block 148 script 1
+block 149 script 0
+block 149 script 1
+block 149 script 2
+block 150 script 0
+block 150 script 1
+block 150 script 2
+block 150 script 3
+block 150 script 4
+block 150 script 5
+block 150 script 6
+block 151 script 0
+block 151 script 1
+block 152 script 0
+block 152 script 1
+block 152 script 2
+block 152 script 3
+block 153 script 0
+block 153 script 1
+block 153 script 2
+block 154 script 0
+block 154 script 1
+block 154 script 2
+block 154 script 3
+block 154 script 4
+block 155 script 0
+block 155 script 1
+block 155 script 2
+block 155 script 3
+block 155 script 4
+block 156 script 0
+block 156 script 1
+block 156 script 2
+block 156 script 3
+block 157 script 0
+block 157 script 1
+block 157 script 2
+block 157 script 3
+block 158 script 0
+block 158 script 1
+block 158 script 2
+block 159 script 0
+block 159 script 1
+block 159 script 2
+block 160 script 0
+block 160 script 1
+block 161 script 0
+block 161 script 1
+block 161 script 2
+block 161 script 3
+block 162 script 0
+block 162 script 1
+block 162 script 2
+block 162 script 3
+block 162 script 4
+block 162 script 5
+block 162 script 6
+block 162 script 7
+block 162 script 8
+block 162 script 9
+block 162 script 10
+block 162 script 11
+block 163 script 0
+block 163 script 1
+block 163 script 2
+block 164 script 0
+block 164 script 1
+block 164 script 2
+block 164 script 3
+block 165 script 0
+block 165 script 1
+block 165 script 2
+block 165 script 3
+block 166 script 0
+block 166 script 1
+block 166 script 2
+block 167 script 0
+block 167 script 1
+block 167 script 2
+block 167 script 3
+block 167 script 4
+block 167 script 5
+block 168 script 0
+block 168 script 1
+block 168 script 2
+block 168 script 3
+block 168 script 4
+block 169 script 0
+block 169 script 1
+block 169 script 2
+block 169 script 3
+block 169 script 4
+block 169 script 5
+block 170 script 0
+block 170 script 1
+block 170 script 2
+block 171 script 0
+block 171 script 1
+block 171 script 2
+block 171 script 3
+block 171 script 4
+block 171 script 5
+block 172 script 0
+block 172 script 1
+block 173 script 0
+block 173 script 1
+block 173 script 2
+block 173 script 3
+block 173 script 4
+block 173 script 5
+block 173 script 6
+block 173 script 7
+block 173 script 8
+block 173 script 9
+block 173 script 10
+block 173 script 11
+block 173 script 12
+block 173 script 13
+block 174 script 0
+block 174 script 1
+block 175 script 0
+block 175 script 1
+block 175 script 2
+block 175 script 3
+block 175 script 4
+block 175 script 5
+block 175 script 6
+block 175 script 7
+block 175 script 8
+block 175 script 9
+block 175 script 10
+block 176 script 0
+block 176 script 1
+block 177 script 0
+block 177 script 1
+block 178 script 0
+block 179 script 0
+block 180 script 0
+block 180 script 1
+block 180 script 2
+block 180 script 3
+block 180 script 4
+block 180 script 5
+block 180 script 6
+block 180 script 7
+block 180 script 8
+block 180 script 9
+block 180 script 10
+block 180 script 11
+block 180 script 12
+block 180 script 13
+block 180 script 14
+block 180 script 15
+block 180 script 16
+block 180 script 17
+block 180 script 18
+block 180 script 19
+block 180 script 20
+block 180 script 21
+block 180 script 22
+block 180 script 23
+block 180 script 24
+block 180 script 25
+block 180 script 26
+block 180 script 27
+block 180 script 28
+block 181 script 0
+block 181 script 1
+block 181 script 2
+block 181 script 3
+block 181 script 4
+block 181 script 5
+block 181 script 6
+block 182 script 0
+block 182 script 1
+block 182 script 2
+block 182 script 3
+block 182 script 4
+block 182 script 5
+block 182 script 6
+block 182 script 7
+block 182 script 8
+block 182 script 9
+block 182 script 10
+block 182 script 11
+block 182 script 12
+block 182 script 13
+block 183 script 0
+block 183 script 1
+block 183 script 2
+block 184 script 0
+block 184 script 1
+block 184 script 2
+block 186 script 0
+block 186 script 1
+block 186 script 2
+block 186 script 3
+block 187 script 0
+block 187 script 1
+block 187 script 2
+block 187 script 3
+block 188 script 0
+block 188 script 1
+block 188 script 2
+block 189 script 0
+block 189 script 1
+block 190 script 0
+block 190 script 1
+block 191 script 0
+block 192 script 0
+block 192 script 1
+block 192 script 2
+block 192 script 3
+block 192 script 4
+block 192 script 5
+block 192 script 6
+block 192 script 7
+block 192 script 8
+block 192 script 9
+block 192 script 10
+block 192 script 11
+block 192 script 12
+block 194 script 0
+block 194 script 1
+block 194 script 2
+block 194 script 3
+block 194 script 4
+block 194 script 5
+block 194 script 6
+block 194 script 7
+block 194 script 8
+block 194 script 9
+block 194 script 10
+block 194 script 11
+block 194 script 12
+block 194 script 13
+block 194 script 14
+block 194 script 15
+block 194 script 16
+block 194 script 17
+block 194 script 18
+block 194 script 19
+block 195 script 0
+block 195 script 1
+block 195 script 2
+block 195 script 3
+block 195 script 4
+block 195 script 5
+block 195 script 6
+block 195 script 7
+block 195 script 8
+block 196 script 0
+block 196 script 1
+block 196 script 2
+block 196 script 3
+block 196 script 4
+block 196 script 5
+block 196 script 6
+block 196 script 7
+block 197 script 0
+block 197 script 1
+block 197 script 2
+block 197 script 3
+block 198 script 0
+block 198 script 1
+block 198 script 2
+block 198 script 3
+block 198 script 4
+block 198 script 5
+block 199 script 0
+block 199 script 1
+block 199 script 2
+block 199 script 3
+block 199 script 4
+block 200 script 0
+block 200 script 1
+block 200 script 2
+block 202 script 0
+block 202 script 1
+block 202 script 2
+block 203 script 0
+block 203 script 1
+block 203 script 2
+block 203 script 3
+block 203 script 4
+block 203 script 5
+block 203 script 6
+block 203 script 7
+block 204 script 0
+block 204 script 1
+block 205 script 0
+block 205 script 1
+block 206 script 0
+block 206 script 1
+block 206 script 2
+block 206 script 3
+block 207 script 0
+block 207 script 1
+block 207 script 2
+block 207 script 3
+block 207 script 4
+block 207 script 5
+block 207 script 6
+block 207 script 7
+block 207 script 8
+block 207 script 9
+block 207 script 10
+block 207 script 11
+block 207 script 12
+block 207 script 13
+block 207 script 14
+block 208 script 0
+block 208 script 1
+block 209 script 0
+block 209 script 1
+block 209 script 2
+block 210 script 0
+block 210 script 1
+block 210 script 2
+block 210 script 3
+block 210 script 4
+block 210 script 5
+block 210 script 6
+block 210 script 7
+block 210 script 8
+block 210 script 9
+block 210 script 10
+block 210 script 11
+block 210 script 12
+block 210 script 13
+block 210 script 14
+block 210 script 15
+block 210 script 16
+block 211 script 0
+block 211 script 1
+block 211 script 2
+block 211 script 3
+block 211 script 4
+block 211 script 5
+block 211 script 6
+block 211 script 7
+block 211 script 8
+block 211 script 9
+block 211 script 10
+block 211 script 11
+block 211 script 12
+block 211 script 13
+block 211 script 14
+block 211 script 15
+block 211 script 16
+block 211 script 17
+block 211 script 18
+block 211 script 19
+block 211 script 20
+block 211 script 21
+block 211 script 22
+block 211 script 23
+block 211 script 24
+block 211 script 25
+block 211 script 26
+block 211 script 27
+block 211 script 28
+block 211 script 29
+block 211 script 30
+block 211 script 31
+block 212 script 0
+block 212 script 1
+block 212 script 2
+block 212 script 3
+block 212 script 4
+block 212 script 5
+block 212 script 6
+block 212 script 7
+block 212 script 8
+block 212 script 9
+block 212 script 10
+block 213 script 0
+block 213 script 1
+block 213 script 2
+block 213 script 3
+block 213 script 4
+block 213 script 5
+block 213 script 6
+block 213 script 7
+block 213 script 8
+block 213 script 9
+block 213 script 10
+block 214 script 0
+block 214 script 1
+block 215 script 0
+block 215 script 1
+block 215 script 2
+block 215 script 3
+block 216 script 0
+block 216 script 1
+block 217 script 0
+block 217 script 1
+block 218 script 0
+block 218 script 1
+block 218 script 2
+block 219 script 0
+block 219 script 1
+block 219 script 2
+block 219 script 3
+block 219 script 4
+block 219 script 5
+block 219 script 6
+block 219 script 7
+block 219 script 8
+block 219 script 9
+block 219 script 10
+block 219 script 11
+block 219 script 12
+block 219 script 13
+block 219 script 14
+block 219 script 15
+block 220 script 0
+block 220 script 1
+block 221 script 0
+block 222 script 0
+block 222 script 1
+block 222 script 2
+block 222 script 3
+block 222 script 4
+block 222 script 5
+block 222 script 6
+block 222 script 7
+block 222 script 8
+block 222 script 9
+block 222 script 10
+block 222 script 11
+block 222 script 12
+block 222 script 13
+block 222 script 14
+block 222 script 15
+block 222 script 16
+block 222 script 17
+block 222 script 18
+block 222 script 19
+block 222 script 20
+block 222 script 21
+block 222 script 22
+block 223 script 0
+block 223 script 1
+block 223 script 2
+block 223 script 3
+block 223 script 4
+block 223 script 5
+block 223 script 6
+block 223 script 7
+block 223 script 8
+block 224 script 0
+block 224 script 1
+block 224 script 2
+block 224 script 3
+block 224 script 4
+block 224 script 5
+block 224 script 6
+block 225 script 0
+block 225 script 1
+block 225 script 2
+block 225 script 3
+block 225 script 4
+block 225 script 5
+block 225 script 6
+block 225 script 7
+block 225 script 8
+block 225 script 9
+block 225 script 10
+block 225 script 11
+block 225 script 12
+block 225 script 13
+block 225 script 14
+block 225 script 15
+block 225 script 16
+block 226 script 0
+block 226 script 1
+block 226 script 2
+block 226 script 3
+block 226 script 4
+block 226 script 5
+block 226 script 6
+block 226 script 7
+block 226 script 8
+block 227 script 0
+block 227 script 1
+block 228 script 0
+block 228 script 1
+block 228 script 2
+block 228 script 3
+block 229 script 0
+block 229 script 1
+block 229 script 2
+block 229 script 3
+block 229 script 4
+block 229 script 5
+block 230 script 0
+block 230 script 1
+block 231 script 0
+block 231 script 1
+block 232 script 0
+block 232 script 1
+block 233 script 0
+block 233 script 1
+block 233 script 2
+block 234 script 0
+block 234 script 1
+block 235 script 0
+block 235 script 1
+block 236 script 0
+block 236 script 1
+block 237 script 0
+block 237 script 1
+block 238 script 0
+block 238 script 1
+block 239 script 0
+block 239 script 1
+block 240 script 0
+block 240 script 1
+block 241 script 0
+block 241 script 1
+block 242 script 0
+block 242 script 1
+block 243 script 0
+block 243 script 1
+block 244 script 0
+block 244 script 1
+block 244 script 2
+block 246 script 0
+block 246 script 1
+block 247 script 0
+block 247 script 1
+block 248 script 0
+block 248 script 1
+block 249 script 0
+block 249 script 1
+block 249 script 2
+block 249 script 3
+block 249 script 4
+block 249 script 5
+block 250 script 0
+block 250 script 1
+block 250 script 2
+block 250 script 3
+block 250 script 4
+block 250 script 5
+block 251 script 0
+block 251 script 1
+block 251 script 2
+block 251 script 3
+block 251 script 4
+block 251 script 5
+block 251 script 6
+block 252 script 0
+block 252 script 1
+block 252 script 2
+block 252 script 3
+block 252 script 4
+block 252 script 5
+block 253 script 0
+block 253 script 1
+block 253 script 2
+block 253 script 3
+block 253 script 4
+block 253 script 5
+block 254 script 0
+block 254 script 1
+block 254 script 2
+block 254 script 3
+block 254 script 4
+block 254 script 5
+block 254 script 6
+block 254 script 7
+block 254 script 8
+block 254 script 9
+block 254 script 10
+block 254 script 11
+block 254 script 12
+block 254 script 13
+block 254 script 14
+block 254 script 15
+block 254 script 16
+block 255 script 0
+block 255 script 1
+block 255 script 2
+block 255 script 3
+block 255 script 4
+block 255 script 5
+block 255 script 6
+block 255 script 7
+block 255 script 8
+block 255 script 9
+block 255 script 10
+block 255 script 11
+block 255 script 12
+block 255 script 13
+block 255 script 14
+block 256 script 0
+block 256 script 1
+block 256 script 2
+block 256 script 3
+block 256 script 4
+block 256 script 5
+block 256 script 6
+block 256 script 7
+block 256 script 8
+block 256 script 9
+block 256 script 10
+block 256 script 11
+block 256 script 12
+block 256 script 13
+block 256 script 14
+block 257 script 0
+block 257 script 1
+block 257 script 2
+block 257 script 3
+block 257 script 4
+block 257 script 5
+block 257 script 6
+block 257 script 7
+block 257 script 8
+block 257 script 9
+block 257 script 10
+block 257 script 11
+block 257 script 12
+block 258 script 0
+block 258 script 1
+block 258 script 2
+block 258 script 3
+block 258 script 4
+block 258 script 5
+block 258 script 6
+block 258 script 7
+block 258 script 8
+block 258 script 9
+block 258 script 10
+block 258 script 11
+block 258 script 12
+block 258 script 13
+block 258 script 14
+block 258 script 15
+block 258 script 16
+block 258 script 17
+block 258 script 18
+block 259 script 0
+block 259 script 1
+block 259 script 2
+block 259 script 3
+block 259 script 4
+block 259 script 5
+block 259 script 6
+block 259 script 7
+block 259 script 8
+block 259 script 9
+block 259 script 10
+block 260 script 0
+block 260 script 1
+block 260 script 2
+block 260 script 3
+block 260 script 4
+block 260 script 5
+block 260 script 6
+block 260 script 7
+block 260 script 8
+block 260 script 9
+block 260 script 10
+block 260 script 11
+block 260 script 12
+block 261 script 0
+block 261 script 1
+block 262 script 0
+block 262 script 1
+block 262 script 2
+block 262 script 3
+block 262 script 4
+block 262 script 5
+block 262 script 6
+block 262 script 7
+block 262 script 8
+block 262 script 9
+block 262 script 10
+block 263 script 0
+block 263 script 1
+block 263 script 2
+block 263 script 3
+block 263 script 4
+block 263 script 5
+block 263 script 6
+block 263 script 7
+block 263 script 8
+block 263 script 9
+block 263 script 10
+block 263 script 11
+block 263 script 12
+block 263 script 13
+block 263 script 14
+block 263 script 15
+block 263 script 16
+block 263 script 17
+block 263 script 18
+block 263 script 19
+block 263 script 20
+block 263 script 21
+block 263 script 22
+block 265 script 0
+block 265 script 1
+block 266 script 0
+block 266 script 1
+block 267 script 0
+block 267 script 1
+block 268 script 0
+block 268 script 1
+block 269 script 0
+block 269 script 1
+block 269 script 2
+block 272 script 0
+block 272 script 1
+block 291 script 0
+block 292 script 0
+block 293 script 0
+block 294 script 0
+block 301 script 0
+block 301 script 1
+block 301 script 2
+block 301 script 3
+block 301 script 4
+block 301 script 5
+block 302 script 0
+block 302 script 1
+block 302 script 2
+block 302 script 3
+block 302 script 4
+block 302 script 5
+block 302 script 6
+block 302 script 7
+block 302 script 8
+block 302 script 9
+block 302 script 10
+block 302 script 11
+block 302 script 12
+block 302 script 13
+block 302 script 14
+block 302 script 15
+block 302 script 16
+block 303 script 0
+block 303 script 1
+block 303 script 2
+block 304 script 0
+block 304 script 1
+block 305 script 0
+block 305 script 1
+block 305 script 2
+block 305 script 3
+block 305 script 4
+block 305 script 5
+block 305 script 6
+block 305 script 7
+block 305 script 8
+block 305 script 9
+block 305 script 10
+block 305 script 11
+block 305 script 12
+block 305 script 13
+block 305 script 14
+block 305 script 15
+block 305 script 16
+block 305 script 17
+block 305 script 18
+block 305 script 19
+block 306 script 0
+block 306 script 1
+block 308 script 0
+block 308 script 1
+block 308 script 2
+block 309 script 0
+block 309 script 1
+block 309 script 2
+block 309 script 3
+block 309 script 4
+block 309 script 5
+block 309 script 6
+block 309 script 7
+block 310 script 0
+block 310 script 1
+block 310 script 2
+block 313 script 0
+block 319 script 0
+block 319 script 1
+block 319 script 2
+block 319 script 3
+block 319 script 4
+block 319 script 5
+block 319 script 6
+block 320 script 0
+block 320 script 1
+block 321 script 0
+block 321 script 1
+block 321 script 2
+block 321 script 3
+block 321 script 4
+block 321 script 5
+block 321 script 6
+block 321 script 7
+block 321 script 8
+block 321 script 9
+block 321 script 10
+block 321 script 11
+block 321 script 12
+block 321 script 13
+block 322 script 0
+block 322 script 1
+block 322 script 2
+block 322 script 3
+block 322 script 4
+block 322 script 5
+block 322 script 6
+block 322 script 7
+block 322 script 8
+block 322 script 9
+block 322 script 10
+block 322 script 11
+block 323 script 0
+block 323 script 1
+block 324 script 0
+block 324 script 1
+block 327 script 0
+block 327 script 1
+block 327 script 2
+block 327 script 3
+block 327 script 4
+block 327 script 5
+block 327 script 6
+block 328 script 0
+block 328 script 1
+block 328 script 2
+block 328 script 3
+block 328 script 4
+block 328 script 5
+block 329 script 0
+block 329 script 1
+block 329 script 2
+block 329 script 3
+block 329 script 4
+block 330 script 0
+block 330 script 1
+block 330 script 2
+block 330 script 3
+block 331 script 0
+block 331 script 1
+block 331 script 2
+block 332 script 0
+block 332 script 1
+block 332 script 2
+block 332 script 3
+block 333 script 0
+block 333 script 1
+block 334 script 0
+block 334 script 1
+block 335 script 0
+block 336 script 0
+block 336 script 1
+block 336 script 2
+block 336 script 3
+block 336 script 4
+block 336 script 5
+block 336 script 6
+block 336 script 7
+block 336 script 8
+block 336 script 9
+block 337 script 0
+block 337 script 1
+block 337 script 2
+block 338 script 0
+block 339 script 0
+block 340 script 0
+block 340 script 1
+block 341 script 0
+block 341 script 1
+block 341 script 2
+block 341 script 3
+block 341 script 4
+block 342 script 0
+block 342 script 1
+block 342 script 2
+block 342 script 3
+block 342 script 4
+block 343 script 0
+block 343 script 1
+block 344 script 0
+block 344 script 1
+block 344 script 2
+block 344 script 3
+block 344 script 4
+block 344 script 5
+block 344 script 6
+block 344 script 7
+block 344 script 8
+block 344 script 9
+block 344 script 10
+block 344 script 11
+block 344 script 12
+block 344 script 13
+block 345 script 0
+block 345 script 1
+block 345 script 2
+block 346 script 0
+block 346 script 1
+block 346 script 2
+block 347 script 0
+block 347 script 1
+block 347 script 2
+block 347 script 3
+block 347 script 4
+block 348 script 0
+block 348 script 1
+block 349 script 0
+block 349 script 1
+block 349 script 2
+block 349 script 3
+block 349 script 4
+block 349 script 5
+block 349 script 6
+block 349 script 7
+block 349 script 8
+block 349 script 9
+block 349 script 10
+block 349 script 11
+block 350 script 0
+block 350 script 1
+block 350 script 2
+block 350 script 3
+block 350 script 4
+block 350 script 5
+block 350 script 6
+block 350 script 7
+block 350 script 8
+block 350 script 9
+block 350 script 10
+block 350 script 11
+block 351 script 0
+block 351 script 1
+block 351 script 2
+block 351 script 3
+block 351 script 4
+block 352 script 0
+block 352 script 1
+block 352 script 2
+block 352 script 3
+block 353 script 0
+block 353 script 1
+block 353 script 2
+block 353 script 3
+block 353 script 4
+block 353 script 5
+block 354 script 0
+block 354 script 1
+block 354 script 2
+block 354 script 3
+block 354 script 4
+block 354 script 5
+block 354 script 6
+block 354 script 7
+block 354 script 8
+block 354 script 9
+block 354 script 10
+block 355 script 0
+block 355 script 1
+block 355 script 2
+block 355 script 3
+block 355 script 4
+block 355 script 5
+block 356 script 0
+block 356 script 1
+block 356 script 2
+block 356 script 3
+block 356 script 4
+block 356 script 5
+block 356 script 6
+block 356 script 7
+block 356 script 8
+block 357 script 0
+block 357 script 1
+block 357 script 2
+block 357 script 3
+block 357 script 4
+block 357 script 5
+block 357 script 6
+block 357 script 7
+block 357 script 8
+block 357 script 9
+block 357 script 10
+block 357 script 11
+block 357 script 12
+block 357 script 13
+block 358 script 0
+block 358 script 1
+block 358 script 2
+block 358 script 3
+block 358 script 4
+block 358 script 5
+block 359 script 0
+block 359 script 1
+block 359 script 2
+block 360 script 0
+block 360 script 1
+block 360 script 2
+block 360 script 3
+block 360 script 4
+block 361 script 0
+block 361 script 1
+block 361 script 2
+block 362 script 0
+block 362 script 1
+block 362 script 2
+block 362 script 3
+block 363 script 0
+block 363 script 1
+block 363 script 2
+block 364 script 0
+block 364 script 1
+block 364 script 2
+block 364 script 3
+block 364 script 4
+block 364 script 5
+block 364 script 6
+block 365 script 0
+block 365 script 1
+block 365 script 2
+block 365 script 3
+block 365 script 4
+block 365 script 5
+block 365 script 6
+block 365 script 7
+block 365 script 8
+block 365 script 9
+block 365 script 10
+block 365 script 11
+block 365 script 12
+block 365 script 13
+block 365 script 14
+block 366 script 0
+block 366 script 1
+block 366 script 2
+block 366 script 3
+block 367 script 0
+block 367 script 1
+block 367 script 2
+block 367 script 3
+block 367 script 4
+block 367 script 5
+block 367 script 6
+block 367 script 7
+block 367 script 8
+block 367 script 9
+block 368 script 0
+block 368 script 1
+block 368 script 2
+block 368 script 3
+block 368 script 4
+block 369 script 0
+block 369 script 1
+block 370 script 0
+block 370 script 1
+block 370 script 2
+block 370 script 3
+block 370 script 4
+block 370 script 5
+block 370 script 6
+block 370 script 7
+block 371 script 0
+block 371 script 1
+block 371 script 2
+block 371 script 3
+block 371 script 4
+block 371 script 5
+block 371 script 6
+block 371 script 7
+block 371 script 8
+block 371 script 9
+block 372 script 0
+block 373 script 0
+block 373 script 1
+block 374 script 0
+block 374 script 1
+block 375 script 0
+block 375 script 1
+block 376 script 0
+block 376 script 1
+block 377 script 0
+block 377 script 1
+block 377 script 2
+block 378 script 0
+block 378 script 1
+block 378 script 2
+block 378 script 3
+block 379 script 0
+block 379 script 1
+block 379 script 2
+block 379 script 3
+block 380 script 0
+block 380 script 1
+block 380 script 2
+block 380 script 3
+block 380 script 4
+block 380 script 5
+block 380 script 6
+block 380 script 7
+block 380 script 8
+block 380 script 9
+block 380 script 10
+block 380 script 11
+block 380 script 12
+block 380 script 13
+block 380 script 14
+block 380 script 15
+block 380 script 16
+block 380 script 17
+block 381 script 0
+block 381 script 1
+block 381 script 2
+block 381 script 3
+block 381 script 4
+block 381 script 5
+block 381 script 6
+block 381 script 7
+block 381 script 8
+block 381 script 9
+block 381 script 10
+block 381 script 11
+block 382 script 0
+block 383 script 0
+block 384 script 0
+block 385 script 0
+block 386 script 0
+block 386 script 1
+block 386 script 2
+block 386 script 3
+block 386 script 4
+block 386 script 5
+block 386 script 6
+block 387 script 0
+block 388 script 0
+block 388 script 1
+block 388 script 2
+block 388 script 3
+block 388 script 4
+block 388 script 5
+block 388 script 6
+block 388 script 7
+block 388 script 8
+block 388 script 9
+block 388 script 10
+block 388 script 11
+block 388 script 12
+block 388 script 13
+block 388 script 14
+block 388 script 15
+block 389 script 0
+block 389 script 1
+block 389 script 2
+block 389 script 3
+block 389 script 4
+block 389 script 5
+block 389 script 6
+block 390 script 0
+block 390 script 1
+block 391 script 0
+block 391 script 1
+block 392 script 0
+block 392 script 1
+block 393 script 0
+block 393 script 1
+block 394 script 0
+block 394 script 1
+block 395 script 0
+block 395 script 1
+block 396 script 0
+block 396 script 1
+block 397 script 0
+block 398 script 0
+block 398 script 1
+block 399 script 0
+block 399 script 1
+block 399 script 2
+block 399 script 3
+block 399 script 4
+block 399 script 5
+block 399 script 6
+block 399 script 7
+block 399 script 8
+block 399 script 9
+block 399 script 10
+block 400 script 0
+block 400 script 1
+block 400 script 2
+block 400 script 3
+block 403 script 0
+block 404 script 0
+block 404 script 1
+block 404 script 2
+block 404 script 3
+block 404 script 4
+block 404 script 5
+block 404 script 6
+block 404 script 7
+block 404 script 8
+block 404 script 9
+block 404 script 10
+block 405 script 0
+block 406 script 0
+block 406 script 1
+block 406 script 2
+block 407 script 0
+block 407 script 1
+block 408 script 0
+block 408 script 1
+block 409 script 0
+block 409 script 1
+block 410 script 0
+block 411 script 0
+block 412 script 0
+block 413 script 0
+block 414 script 0
+block 415 script 0
+block 416 script 0
+block 417 script 0
+block 418 script 0
+block 419 script 0
+block 420 script 0
+block 421 script 0
+block 421 script 1
+block 421 script 2
+block 421 script 3
+block 421 script 4
+block 421 script 5
+block 422 script 0
+block 423 script 0
+block 424 script 0
+block 425 script 0
+block 426 script 0
+block 427 script 0
+block 428 script 0
+block 428 script 1
+block 428 script 2
+block 428 script 3
+block 428 script 4
+block 428 script 5
+block 429 script 0
+block 429 script 1
+block 429 script 2
+block 430 script 0
+block 430 script 1
+block 430 script 2
+block 430 script 3
+block 430 script 4
+block 430 script 5
+block 431 script 0
+block 431 script 1
+block 431 script 2
+block 431 script 3
+block 431 script 4
+block 431 script 5
+block 431 script 6
+block 431 script 7
+block 431 script 8
+block 431 script 9
+block 431 script 10
+block 432 script 0
+block 433 script 0
+block 434 script 0
+block 435 script 0
+block 435 script 1
+block 435 script 2
+block 435 script 3
+block 435 script 4
+block 435 script 5
+block 436 script 0
+block 437 script 0
+block 437 script 1
+block 437 script 2
+block 438 script 0
+block 438 script 1
+block 439 script 0
+block 439 script 1
+block 439 script 2
+block 439 script 3
+block 439 script 4
+block 439 script 5
+block 439 script 6
+block 439 script 7
+block 440 script 0
+block 440 script 1
+block 440 script 2
+block 441 script 0
+block 441 script 1
+block 441 script 2
+block 441 script 3
+block 441 script 4
+block 441 script 5
+block 441 script 6
+block 441 script 7
+block 441 script 8
+block 441 script 9
+block 441 script 10
+block 441 script 11
+block 442 script 0
+block 442 script 1
+block 442 script 2
+block 442 script 3
+block 443 script 0
+block 443 script 1
+block 443 script 2
+block 443 script 3
+block 443 script 4
+block 443 script 5
+block 443 script 6
+block 443 script 7
+block 443 script 8
+block 443 script 9
+block 443 script 10
+block 443 script 11
+block 443 script 12
+block 443 script 13
+block 443 script 14
+block 443 script 15
+block 443 script 16
+block 443 script 17
+block 443 script 18
+block 443 script 19
+block 443 script 20
+block 443 script 21
+block 443 script 22
+block 443 script 23
+block 443 script 24
+block 444 script 0
+block 444 script 1
+block 444 script 2
+block 444 script 3
+block 444 script 4
+block 445 script 0
+block 445 script 1
+block 445 script 2
+block 446 script 0
+block 446 script 1
+block 447 script 0
+block 447 script 1
+block 448 script 0
+block 448 script 1
+block 449 script 0
+block 453 script 0
+block 453 script 1
+block 453 script 2
+block 453 script 3
+block 453 script 4
+block 453 script 5
+block 453 script 6
+block 453 script 7
+block 453 script 8
+block 453 script 9
+block 454 script 0
+block 454 script 1
+block 454 script 2
+block 454 script 3
+block 454 script 4
+block 454 script 5
+block 454 script 6
+block 454 script 7
+block 454 script 8
+block 454 script 9
+block 454 script 10
+block 455 script 0
+block 455 script 1
+block 455 script 2
+block 455 script 3
+block 455 script 4
+block 455 script 5
+block 455 script 6
+block 455 script 7
+block 455 script 8
+block 455 script 9
+block 455 script 10
+block 455 script 11
+block 455 script 12
+block 455 script 13
+block 455 script 14
+block 456 script 0
+block 456 script 1
+block 456 script 2
+block 456 script 3
+block 456 script 4
+block 456 script 5
+block 456 script 6
+block 456 script 7
+block 456 script 8
+block 456 script 9
+block 456 script 10
+block 456 script 11
+block 456 script 12
+block 456 script 13
+block 457 script 0
+block 457 script 1
+block 457 script 2
+block 458 script 0
+block 458 script 1
+block 458 script 2
+block 458 script 3
+block 458 script 4
+block 458 script 5
+block 458 script 6
+block 458 script 7
+block 458 script 8
+block 458 script 9
+block 458 script 10
+block 458 script 11
+block 458 script 12
+block 458 script 13
+block 458 script 14
+block 458 script 15
+block 458 script 16
+block 458 script 17
+block 459 script 0
+block 459 script 1
+block 459 script 2
+block 459 script 3
+block 460 script 0
+block 460 script 1
+block 460 script 2
+block 461 script 0
+block 461 script 1
+block 461 script 2
+block 462 script 0
+block 462 script 1
+block 462 script 2
+block 462 script 3
+block 462 script 4
+block 462 script 5
+block 463 script 0
+block 463 script 1
+block 463 script 2
+block 463 script 3
+block 463 script 4
+block 463 script 5
+block 463 script 6
+block 463 script 7
+block 463 script 8
+block 464 script 0
+block 464 script 1
+block 464 script 2
+block 464 script 3
+block 464 script 4
+block 464 script 5
+block 464 script 6
+block 465 script 0
+block 465 script 1
+block 465 script 2
+block 465 script 3
+block 465 script 4
+block 465 script 5
+block 465 script 6
+block 465 script 7
+block 465 script 8
+block 465 script 9
+block 465 script 10
+block 465 script 11
+block 465 script 12
+block 465 script 13
+block 465 script 14
+block 465 script 15
+block 466 script 0
+block 466 script 1
+block 466 script 2
+block 466 script 3
+block 466 script 4
+block 466 script 5
+block 466 script 6
+block 466 script 7
+block 466 script 8
+block 466 script 9
+block 466 script 10
+block 466 script 11
+block 466 script 12
+block 467 script 0
+block 467 script 1
+block 467 script 2
+block 467 script 3
+block 467 script 4
+block 467 script 5
+block 467 script 6
+block 467 script 7
+block 468 script 0
+block 468 script 1
+block 468 script 2
+block 468 script 3
+block 468 script 4
+block 469 script 0
+block 469 script 1
+block 469 script 2
+block 469 script 3
+block 469 script 4
+block 470 script 0
+block 470 script 1
+block 471 script 0
+block 471 script 1
+block 471 script 2
+block 471 script 3
+block 471 script 4
+block 472 script 0
+block 472 script 1
+block 472 script 2
+block 472 script 3
+block 472 script 4
+block 472 script 5
+block 472 script 6
+block 473 script 0
+block 473 script 1
+block 474 script 0
+block 474 script 1
+block 474 script 2
+block 474 script 3
+block 474 script 4
+block 474 script 5
+block 474 script 6
+block 474 script 7
+block 474 script 8
+block 474 script 9
+block 474 script 10
+block 474 script 11
+block 474 script 12
+block 474 script 13
+block 474 script 14
+block 474 script 15
+block 474 script 16
+block 474 script 17
+block 474 script 18
+block 474 script 19
+block 474 script 20
+block 474 script 21
+block 474 script 22
+block 475 script 0
+block 475 script 1
+block 475 script 2
+block 475 script 3
+block 475 script 4
+block 475 script 5
+block 475 script 6
+block 475 script 7
+block 475 script 8
+block 475 script 9
+block 475 script 10
+block 475 script 11
+block 475 script 12
+block 475 script 13
+block 475 script 14
+block 475 script 15
+block 475 script 16
+block 475 script 17
+block 476 script 0
+block 476 script 1
+block 477 script 0
+block 477 script 1
+block 477 script 2
+block 477 script 3
+block 478 script 0
+block 478 script 1
+block 478 script 2
+block 478 script 3
+block 501 script 0
+block 501 script 1
+block 501 script 2
+block 501 script 3
+block 501 script 4
+block 502 script 0
+block 502 script 1
+block 502 script 2
+block 502 script 3
+block 502 script 4
+block 502 script 5
+block 506 script 0
+block 506 script 1
+block 506 script 2
+block 506 script 3
+block 506 script 4
+block 506 script 5
+block 507 script 0
+block 507 script 1
+block 507 script 2
+block 507 script 3
+block 507 script 4
+block 508 script 0
+block 509 script 0
+block 509 script 1
+block 509 script 2
+block 509 script 3
+block 509 script 4
+block 509 script 5
+block 509 script 6
+block 509 script 7
+block 509 script 8
+block 509 script 9
+block 509 script 10
+block 509 script 11
+block 551 script 0
+block 551 script 1
+block 551 script 2
+block 551 script 3
+block 551 script 4
+block 551 script 5
+block 551 script 6
+block 552 script 0
+block 552 script 1
+block 552 script 2
+block 552 script 3
+block 552 script 4
+block 552 script 5
+block 553 script 0
+block 553 script 1
+block 553 script 2
+block 553 script 3
+block 553 script 4
+block 553 script 5
+block 553 script 6
+block 553 script 7
+block 554 script 0
+block 554 script 1
+block 554 script 2
+block 554 script 3
+block 554 script 4
+block 554 script 5
+block 555 script 0
+block 555 script 1
+block 555 script 2
+block 555 script 3
+block 556 script 0
+block 556 script 1
+block 556 script 2
+block 556 script 3
+block 556 script 4
+block 556 script 5
+block 556 script 6
+block 556 script 7
+block 556 script 8
+block 556 script 9
+block 621 script 0
+block 621 script 1
+block 621 script 2
+block 621 script 3
+block 621 script 4
+block 621 script 5
+block 621 script 6
+block 621 script 7
+block 621 script 8
+block 621 script 9
+block 622 script 0
+block 622 script 1
+block 622 script 2
+block 623 script 0
+block 623 script 1
+block 623 script 2
+block 623 script 3
+block 623 script 4
+block 624 script 0
+block 624 script 1
+block 624 script 2
+block 624 script 3
+block 624 script 4
+block 624 script 5
+block 624 script 6
+block 624 script 7
+block 625 script 0
+block 625 script 1
+block 625 script 2
+block 626 script 0
+block 626 script 1
+block 626 script 2
+block 626 script 3
+block 626 script 4
+block 626 script 5
+block 626 script 6
+block 627 script 0
+block 627 script 1
+block 627 script 2
+block 627 script 3
+block 627 script 4
+block 627 script 5
+block 627 script 6
+block 628 script 0
+block 628 script 1
+block 628 script 2
+block 628 script 3
+block 628 script 4
+block 628 script 5
+block 629 script 0
+block 629 script 1
+block 630 script 0
+block 630 script 1
+block 630 script 2
+block 630 script 3
+block 631 script 0
+block 631 script 1
+block 631 script 2
+block 631 script 3
+block 631 script 4
+block 631 script 5
+block 631 script 6
+block 632 script 0
+block 632 script 1
+block 632 script 2
+block 632 script 3
+block 632 script 4
+block 633 script 0
+block 633 script 1
+block 633 script 2
+block 633 script 3
+block 633 script 4
+block 633 script 5
+block 633 script 6
+block 633 script 7
+block 633 script 8
+block 633 script 9
+block 633 script 10
+block 633 script 11
+block 633 script 12
+block 633 script 13
+block 633 script 14
+block 633 script 15
+block 633 script 16
+block 633 script 17
+block 633 script 18
+block 633 script 19
+block 633 script 20
+block 633 script 21
+block 633 script 22
+block 634 script 0
+block 634 script 1
+block 634 script 2
+block 634 script 3
+block 635 script 0
+block 635 script 1
+block 635 script 2
+block 635 script 3
+block 635 script 4
+block 635 script 5
+block 636 script 0
+block 636 script 1
+block 636 script 2
+block 637 script 0
+block 637 script 1
+block 637 script 2
+block 637 script 3
+block 637 script 4
+block 637 script 5
+block 637 script 6
+block 637 script 7
+block 637 script 8
+block 637 script 9
+block 638 script 0
+block 638 script 1
+block 638 script 2
+block 638 script 3
+block 638 script 4
+block 639 script 0
+block 640 script 0
+block 640 script 1
+block 641 script 0
+block 641 script 1
+block 641 script 2
+block 641 script 3
+block 642 script 0
+block 642 script 1
+block 642 script 2
+block 642 script 3
+block 642 script 4
+block 642 script 5
+block 642 script 6
+block 642 script 7
+block 642 script 8
+block 642 script 9
+block 642 script 10
+block 642 script 11
+block 643 script 0
+block 643 script 1
+block 643 script 2
+block 643 script 3
+block 643 script 4
+block 644 script 0
+block 644 script 1
+block 644 script 2
+block 645 script 0
+block 645 script 1
+block 645 script 2
+block 645 script 3
+block 645 script 4
+block 646 script 0
+block 646 script 1
+block 646 script 2
+block 647 script 0
+block 647 script 1
+block 648 script 0
+block 648 script 1
+block 648 script 2
+block 649 script 0
+block 649 script 1
+block 650 script 0
+block 650 script 1
+block 650 script 2
+block 651 script 0
+block 651 script 1
+block 652 script 0
+block 652 script 1
+block 652 script 2
+block 652 script 3
+block 652 script 4
+block 652 script 5
+block 653 script 0
+block 653 script 1
+block 654 script 0
+block 654 script 1
+block 655 script 0
+block 655 script 1
+block 656 script 0
+block 656 script 1
+block 656 script 2
+block 656 script 3
+block 656 script 4
+block 656 script 5
+block 657 script 0
+block 657 script 1
+block 658 script 0
+block 658 script 1
+block 660 script 0
+block 660 script 1
+block 660 script 2
+block 660 script 3
+block 660 script 4
+block 660 script 5
+block 660 script 6
+block 660 script 7
+block 660 script 8
+block 660 script 9
+block 661 script 0
+block 661 script 1
+block 662 script 0
+block 662 script 1
+block 662 script 2
+block 662 script 3
+block 663 script 0
+block 663 script 1
+block 663 script 2
+block 663 script 3
+block 664 script 0
+block 664 script 1
+block 664 script 2
+block 664 script 3
+block 664 script 4
+block 664 script 5
+block 664 script 6
+block 664 script 7
+block 664 script 8
+block 664 script 9
+block 664 script 10
+block 664 script 11
+block 664 script 12
+block 664 script 13
+block 664 script 14
+block 665 script 0
+block 665 script 1
+block 665 script 2
+block 665 script 3
+block 665 script 4
+block 665 script 5
+block 666 script 0
+block 683 script 0
+block 685 script 0
+block 687 script 0
+block 688 script 0
+block 688 script 1
+block 689 script 0
+block 690 script 0
+block 690 script 1
+block 690 script 2
+block 691 script 0
+block 693 script 0
+block 694 script 0
+block 694 script 1
+block 694 script 2
+block 695 script 0
+block 696 script 0
+block 696 script 1
+block 696 script 2
+block 697 script 0
+block 698 script 0
+block 699 script 0
+block 701 script 0
+block 701 script 1
+block 701 script 2
+block 701 script 3
+block 701 script 4
+block 701 script 5
+block 701 script 6
+block 701 script 7
+block 701 script 8
+block 701 script 9
+block 701 script 10
+block 701 script 11
+block 701 script 12
+block 701 script 13
+block 701 script 14
+block 702 script 0
+block 702 script 1
+block 702 script 2
+block 702 script 3
+block 702 script 4
+block 702 script 5
+block 702 script 6
+block 702 script 7
+block 702 script 8
+block 702 script 9
+block 702 script 10
+block 703 script 0
+block 703 script 1
+block 703 script 2
+block 703 script 3
+block 703 script 4
+block 703 script 5
+block 703 script 6
+block 703 script 7
+block 703 script 8
+block 703 script 9
+block 703 script 10
+block 704 script 0
+block 704 script 1
+block 705 script 0
+block 705 script 1
+block 706 script 0
+block 706 script 1
+block 707 script 0
+block 708 script 0
+block 709 script 0
+block 709 script 1
+block 709 script 2
+block 710 script 0
+block 711 script 0
+block 712 script 0
+block 712 script 1
+block 712 script 2
+block 713 script 0
+block 713 script 1
+block 714 script 0
+block 714 script 1
+block 715 script 0
+block 715 script 1
+block 716 script 0
+block 716 script 1
+block 717 script 0
+block 717 script 1
+block 718 script 0
+block 718 script 1
+block 719 script 0
+block 719 script 1
+block 720 script 0
+block 720 script 1
+block 720 script 2
+block 721 script 0
+block 721 script 1
+block 721 script 2
+block 721 script 3
+block 721 script 4
+block 721 script 5
+block 721 script 6
+block 722 script 0
+block 722 script 1
+block 722 script 2
+block 723 script 0
+block 723 script 1
+block 724 script 0
+block 724 script 1
+block 725 script 0
+block 725 script 1
+block 726 script 0
+block 726 script 1
+block 727 script 0
+block 727 script 1
+block 727 script 2
+block 727 script 3
+block 727 script 4
+block 727 script 5
+block 727 script 6
+block 727 script 7
+block 727 script 8
+block 727 script 9
+block 728 script 0
+block 728 script 1
+block 729 script 0
+block 729 script 1
+block 730 script 0
+block 730 script 1
+block 730 script 2
+block 731 script 0
+block 731 script 1
+block 731 script 2
+block 731 script 3
+block 731 script 4
+block 731 script 5
+block 731 script 6
+block 731 script 7
+block 732 script 0
+block 732 script 1
+block 732 script 2
+block 733 script 0
+block 733 script 1
+block 734 script 0
+block 734 script 1
+block 735 script 0
+block 735 script 1
+block 736 script 0
+block 736 script 1
+block 737 script 0
+block 737 script 1
+block 738 script 0
+block 738 script 1
+block 738 script 2
+block 738 script 3
+block 738 script 4
+block 738 script 5
+block 738 script 6
+block 739 script 0
+block 739 script 1
+block 740 script 0
+block 740 script 1
+block 740 script 2
+block 740 script 3
+block 740 script 4
+block 741 script 0
+block 741 script 1
+block 741 script 2
+block 741 script 3
+block 741 script 4
+block 741 script 5
+block 741 script 6
+block 741 script 7
+block 742 script 0
+block 742 script 1
+block 742 script 2
+block 743 script 0
+block 743 script 1
+block 744 script 0
+block 744 script 1
+block 745 script 0
+block 745 script 1
+block 746 script 0
+block 746 script 1
+block 747 script 0
+block 747 script 1
+block 748 script 0
+block 748 script 1
+block 748 script 2
+block 748 script 3
+block 748 script 4
+block 749 script 0
+block 749 script 1
+block 750 script 0
+block 750 script 1
+block 750 script 2
+block 751 script 0
+block 751 script 1
+block 751 script 2
+block 751 script 3
+block 751 script 4
+block 752 script 0
+block 752 script 1
+block 752 script 2
+block 753 script 0
+block 753 script 1
+block 754 script 0
+block 754 script 1
+block 755 script 0
+block 755 script 1
+block 756 script 0
+block 756 script 1
+block 757 script 0
+block 757 script 1
+block 758 script 0
+block 758 script 1
+block 759 script 0
+block 759 script 1
+block 760 script 0
+block 760 script 1
+block 760 script 2
+block 761 script 0
+block 761 script 1
+block 761 script 2
+block 761 script 3
+block 761 script 4
+block 761 script 5
+block 761 script 6
+block 762 script 0
+block 762 script 1
+block 762 script 2
+block 763 script 0
+block 763 script 1
+block 764 script 0
+block 764 script 1
+block 765 script 0
+block 765 script 1
+block 766 script 0
+block 766 script 1
+block 767 script 0
+block 767 script 1
+block 767 script 2
+block 767 script 3
+block 767 script 4
+block 767 script 5
+block 767 script 6
+block 767 script 7
+block 767 script 8
+block 767 script 9
+block 768 script 0
+block 768 script 1
+block 769 script 0
+block 769 script 1
+block 770 script 0
+block 770 script 1
+block 770 script 2
+block 771 script 0
+block 771 script 1
+block 771 script 2
+block 771 script 3
+block 771 script 4
+block 772 script 0
+block 772 script 1
+block 772 script 2
+block 773 script 0
+block 773 script 1
+block 774 script 0
+block 774 script 1
+block 775 script 0
+block 775 script 1
+block 776 script 0
+block 776 script 1
+block 777 script 0
+block 777 script 1
+block 778 script 0
+block 778 script 1
+block 779 script 0
+block 779 script 1
+block 780 script 0
+block 780 script 1
+block 780 script 2
+block 781 script 0
+block 781 script 1
+block 781 script 2
+block 781 script 3
+block 781 script 4
+block 782 script 0
+block 782 script 1
+block 782 script 2
+block 783 script 0
+block 783 script 1
+block 784 script 0
+block 784 script 1
+block 785 script 0
+block 785 script 1
+block 786 script 0
+block 786 script 1
+block 787 script 0
+block 787 script 1
+block 788 script 0
+block 788 script 1
+block 789 script 0
+block 789 script 1
+block 790 script 0
+block 790 script 1
+block 790 script 2
+block 791 script 0
+block 791 script 1
+block 791 script 2
+block 791 script 3
+block 792 script 0
+block 792 script 1
+block 792 script 2
+block 793 script 0
+block 793 script 1
+block 794 script 0
+block 794 script 1
+block 795 script 0
+block 795 script 1
+block 796 script 0
+block 796 script 1
+block 797 script 0
+block 797 script 1
+block 798 script 0
+block 798 script 1
+block 799 script 0
+block 799 script 1
+block 799 script 2
+block 800 script 0
+block 800 script 1
+block 801 script 0
+block 801 script 1
+block 801 script 2
+block 802 script 0
+block 802 script 1
+block 802 script 2
+block 802 script 3
+block 802 script 4
+block 803 script 0
+block 803 script 1
+block 803 script 2
+block 803 script 3
+block 804 script 0
+block 805 script 0
+block 805 script 1
+block 807 script 0
+block 807 script 1
+block 808 script 0
+block 808 script 1
+block 810 script 0
+block 810 script 1
+block 810 script 2
+block 810 script 3
+block 810 script 4
+block 811 script 0
+block 811 script 1
+block 811 script 2
+block 811 script 3
+block 811 script 4
+block 811 script 5
+block 811 script 6
+block 811 script 7
+block 812 script 0
+block 813 script 0
+block 814 script 0
+block 815 script 0
+block 815 script 1
+block 816 script 0
+block 816 script 1
+block 816 script 2
+block 816 script 3
+block 816 script 4
+block 817 script 0
+block 817 script 1
+block 817 script 2
+block 818 script 0
+block 818 script 1
+block 818 script 2
+block 818 script 3
+block 818 script 4
+block 818 script 5
+block 819 script 0
+block 819 script 1
+block 819 script 2
+block 820 script 0
+block 820 script 1
+block 820 script 2
+block 820 script 3
+block 820 script 4
+block 820 script 5
+block 820 script 6
+block 821 script 0
+block 822 script 0
+block 822 script 1
+block 822 script 2
+block 823 script 0
+block 823 script 1
+block 823 script 2
+block 823 script 3
+block 823 script 4
+block 823 script 5
+block 823 script 6
+block 823 script 7
+block 824 script 0
+block 824 script 1
+block 824 script 2
+block 824 script 3
+block 824 script 4
+block 824 script 5
+block 824 script 6
+block 824 script 7
+block 824 script 8
+block 825 script 0
+block 825 script 1
+block 825 script 2
+block 825 script 3
+block 825 script 4
+block 825 script 5
+block 825 script 6
+block 825 script 7
+block 826 script 0
+block 826 script 1
+block 827 script 0
+block 828 script 0
+block 829 script 0
+block 829 script 1
+block 829 script 2
+block 829 script 3
+block 830 script 0
+block 831 script 0
+block 831 script 1
+block 831 script 2
+block 831 script 3
+block 831 script 4
+block 831 script 5
+block 831 script 6
+block 831 script 7
+block 831 script 8
+block 832 script 0
+block 833 script 0
+block 834 script 0
+block 834 script 1
+block 834 script 2
+block 834 script 3
+block 834 script 4
+block 835 script 0
+block 835 script 1
+block 835 script 2
+block 835 script 3
+block 835 script 4
+block 835 script 5
+block 835 script 6
+block 835 script 7
+block 835 script 8
+block 836 script 0
+block 836 script 1
+block 836 script 2
+block 836 script 3
+block 837 script 0
+block 837 script 1
+block 837 script 2
+block 838 script 0
+block 839 script 0
+block 839 script 1
+block 839 script 2
+block 839 script 3
+block 839 script 4
+block 839 script 5
+block 839 script 6
+block 839 script 7
+block 839 script 8
+block 840 script 0
+block 840 script 1
+block 841 script 0
+block 843 script 0
+block 844 script 0
+block 845 script 0
+block 846 script 0
+block 847 script 0
+block 848 script 0
+block 849 script 0
+block 850 script 0
+block 851 script 0
+block 852 script 0
+block 852 script 1
+block 852 script 2
+block 852 script 3
+block 852 script 4
+block 855 script 0
+block 855 script 1
+block 856 script 0
+block 856 script 1
+block 856 script 2
+block 856 script 3
+block 856 script 4
+block 856 script 5
+block 856 script 6
+block 856 script 7
+block 856 script 8
+block 856 script 9
+block 856 script 10
+block 856 script 11
+block 856 script 12
+block 856 script 13
+block 856 script 14
+block 856 script 15
+block 856 script 16
+block 856 script 17
+block 856 script 18
+block 857 script 0
+block 857 script 1
+block 857 script 2
+block 857 script 3
+block 857 script 4
+block 857 script 5
+block 857 script 6
+block 857 script 7
+block 857 script 8
+block 857 script 9
+block 857 script 10
+block 857 script 11
+block 857 script 12
+block 857 script 13
+block 857 script 14
+block 857 script 15
+block 859 script 0
+block 859 script 1
+block 859 script 2
+block 859 script 3
+block 859 script 4
+block 860 script 0
+block 860 script 1
+block 860 script 2
+block 861 script 0
+block 861 script 1
+block 861 script 2
+block 861 script 3
+block 861 script 4
+block 862 script 0
+block 863 script 0
+block 863 script 1
+block 863 script 2
+block 863 script 3
+block 863 script 4
+block 863 script 5
+block 863 script 6
+block 863 script 7
+block 863 script 8
+block 863 script 9
+block 864 script 0
+block 864 script 1
+block 864 script 2
+block 864 script 3
+block 864 script 4
+block 864 script 5
+block 864 script 6
+block 864 script 7
+block 864 script 8
+block 865 script 0
+block 865 script 1
+block 865 script 2
+block 865 script 3
+block 865 script 4
+block 865 script 5
+block 865 script 6
+block 865 script 7
+block 865 script 8
+block 865 script 9
+block 865 script 10
+block 865 script 11
+block 866 script 0
+block 866 script 1
+block 866 script 2
+block 866 script 3
+block 866 script 4
+block 866 script 5
+block 866 script 6
+block 866 script 7
+block 866 script 8
+block 866 script 9
+block 867 script 0
+block 867 script 1
+block 867 script 2
+block 867 script 3
+block 867 script 4
+block 867 script 5
+block 868 script 0
+block 868 script 1
+block 868 script 2
+block 868 script 3
+block 868 script 4
+block 868 script 5
+block 868 script 6
+block 868 script 7
+block 868 script 8
+block 868 script 9
+block 869 script 0
+block 869 script 1
+block 869 script 2
+block 869 script 3
+block 869 script 4
+block 869 script 5
+block 869 script 6
+block 870 script 0
+block 870 script 1
+block 870 script 2
+block 870 script 3
+block 870 script 4
+block 870 script 5
+block 871 script 0
+block 871 script 1
+block 871 script 2
+block 871 script 3
+block 871 script 4
+block 871 script 5
+block 871 script 6
+block 871 script 7
+block 871 script 8
+block 872 script 0
+block 872 script 1
+block 872 script 2
+block 872 script 3
+block 872 script 4
+block 872 script 5
+block 872 script 6
+block 873 script 0
+block 874 script 0
+block 874 script 1
+block 874 script 2
+block 874 script 3
+block 874 script 4
+block 874 script 5
+block 874 script 6
+block 875 script 0
+block 875 script 1
+block 875 script 2
+block 875 script 3
+block 876 script 0
+block 876 script 1
+block 876 script 2
+block 877 script 0
+block 877 script 1
+block 877 script 2
+block 878 script 0
+block 878 script 1
+block 878 script 2
+block 878 script 3
+block 878 script 4
+block 878 script 5
+block 878 script 6
+block 878 script 7
+block 879 script 0
+block 879 script 1
+block 879 script 2
+block 880 script 0
+block 880 script 1
+block 880 script 2
+block 880 script 3
+block 880 script 4
+block 880 script 5
+block 880 script 6
+block 880 script 7
+block 880 script 8
+block 880 script 9
+block 880 script 10
+block 880 script 11
+block 880 script 12
+block 880 script 13
+block 880 script 14
+block 881 script 0
+block 881 script 1
+block 881 script 2
+block 881 script 3
+block 881 script 4
+block 881 script 5
+block 881 script 6
+block 881 script 7
+block 881 script 8
+block 882 script 0
+block 882 script 1
+block 882 script 2
+block 882 script 3
+block 882 script 4
+block 883 script 0
+block 883 script 1
+block 883 script 2
+block 883 script 3
+block 883 script 4
+block 883 script 5
+block 883 script 6
+block 884 script 0
+block 884 script 1
+block 884 script 2
+block 884 script 3
+block 884 script 4
+block 884 script 5
+block 884 script 6
+block 884 script 7
+block 884 script 8
+block 885 script 0
+block 885 script 1
+block 885 script 2
+block 885 script 3
+block 885 script 4
+block 885 script 5
+block 885 script 6
+block 885 script 7
+block 885 script 8
+block 886 script 0
+block 886 script 1
+block 886 script 2
+block 886 script 3
+block 886 script 4
+block 886 script 5
+block 886 script 6
+block 886 script 7
+block 886 script 8
+block 886 script 9
+block 886 script 10
+block 886 script 11
+block 886 script 12
+block 886 script 13
+block 886 script 14
+block 886 script 15
+block 886 script 16
+block 886 script 17
+block 886 script 18
+block 887 script 0
+block 887 script 1
+block 888 script 0
+block 888 script 1
+block 888 script 2
+block 889 script 0
+block 889 script 1
+block 890 script 0
+block 890 script 1
+block 891 script 0
+block 891 script 1
+block 892 script 0
+block 892 script 1
+block 892 script 2
+block 892 script 3
+block 892 script 4
+block 893 script 0
+block 894 script 0
+block 894 script 1
+block 894 script 2
+block 894 script 3
+block 894 script 4
+block 894 script 5
+block 894 script 6
+block 894 script 7
+block 894 script 8
+block 894 script 9
+block 894 script 10
+block 894 script 11
+block 894 script 12
+block 894 script 13
+block 894 script 14
+block 894 script 15
+block 894 script 16
+block 894 script 17
+block 894 script 18
+block 894 script 19
+block 895 script 0
+block 896 script 0
+block 896 script 1
+block 897 script 0
+block 898 script 0
+block 899 script 0
+block 899 script 1
+block 900 script 0
+block 900 script 1
+block 900 script 2
+block 900 script 3
+block 901 script 0
+block 902 script 0
+END
+SP_ALLOC(2)
+cmd_set_bgm(0, 138)
+cmd_set_bgm_other(0, 139)
+cmd_set_volume(0, -1)
+cmd_set_bgm(1, 10)
+cmd_set_bgm_other(1, 133)
+cmd_set_volume(1, 65)
+cmd_set_bgm(2, 10)
+cmd_set_bgm_other(2, 133)
+cmd_set_volume(2, -1)
+cmd_set_bgm(3, 76)
+cmd_set_bgm_other(3, 139)
+cmd_set_volume(3, 65)
+cmd_set_bgm(4, 41)
+cmd_set_bgm_other(4, 133)
+cmd_set_volume(4, 65)
+cmd_set_bgm(5, 76)
+cmd_set_bgm_other(5, 139)
+cmd_set_volume(5, -1)
+cmd_set_bgm(6, 74)
+cmd_set_bgm_other(6, 139)
+cmd_set_volume(6, -1)
+cmd_set_bgm(7, 37)
+cmd_set_bgm_other(7, 139)
+cmd_set_volume(7, -1)
+cmd_set_bgm(8, 62)
+cmd_set_bgm_other(8, 139)
+cmd_set_volume(8, -1)
+cmd_set_bgm(9, 66)
+cmd_set_bgm_other(9, 139)
+cmd_set_volume(9, -1)
+cmd_set_bgm(10, 35)
+cmd_set_bgm_other(10, 139)
+cmd_set_volume(10, -1)
+cmd_set_bgm(11, 36)
+cmd_set_bgm_other(11, 139)
+cmd_set_volume(11, -1)
+cmd_set_bgm(12, 72)
+cmd_set_bgm_other(12, 134)
+cmd_set_volume(12, 65)
+cmd_set_bgm(13, 72)
+cmd_set_bgm_other(13, 134)
+cmd_set_volume(13, -1)
+cmd_set_bgm(14, 75)
+cmd_set_bgm_other(14, 135)
+cmd_set_volume(14, -1)
+cmd_set_bgm(15, 136)
+cmd_set_bgm_other(15, 139)
+cmd_set_volume(15, -1)
+cmd_set_bgm(16, 67)
+cmd_set_bgm_other(16, 139)
+cmd_set_volume(16, -1)
+cmd_set_bgm(17, 6)
+cmd_set_bgm_other(17, 139)
+cmd_set_volume(17, -1)
+cmd_set_bgm(18, 138)
+cmd_set_bgm_other(18, 68)
+cmd_set_volume(18, -1)
+cmd_set_bgm(19, 69)
+cmd_set_bgm_other(19, 197)
+cmd_set_volume(19, -1)
+cmd_set_bgm(20, 170)
+cmd_set_bgm_other(20, 139)
+cmd_set_volume(20, -1)
+cmd_set_bgm(21, 127)
+cmd_set_bgm_other(21, 91)
+cmd_set_volume(21, -1)
+cmd_set_bgm(22, 126)
+cmd_set_bgm_other(22, 139)
+cmd_set_volume(22, -1)
+cmd_set_bgm(23, 138)
+cmd_set_bgm_other(23, 95)
+cmd_set_volume(23, -1)
+cmd_set_bgm(24, 138)
+cmd_set_bgm_other(24, 96)
+cmd_set_volume(24, -1)
+cmd_set_bgm(25, 49)
+cmd_set_bgm_other(25, 91)
+cmd_set_volume(25, -1)
+cmd_set_bgm(26, 49)
+cmd_set_bgm_other(26, 139)
+cmd_set_volume(26, -1)
+cmd_set_bgm(27, 138)
+cmd_set_bgm_other(27, 94)
+cmd_set_volume(27, -1)
+cmd_set_bgm(28, 166)
+cmd_set_bgm_other(28, 139)
+cmd_set_volume(28, -1)
+cmd_set_bgm(29, 158)
+cmd_set_bgm_other(29, 139)
+cmd_set_volume(29, -1)
+cmd_set_bgm(30, 124)
+cmd_set_bgm_other(30, 139)
+cmd_set_volume(30, -1)
+cmd_set_bgm(31, 137)
+cmd_set_bgm_other(31, 139)
+cmd_set_volume(31, -1)
+cmd_set_bgm(32, 128)
+cmd_set_bgm_other(32, 139)
+cmd_set_volume(32, -1)
+cmd_set_bgm(33, 125)
+cmd_set_bgm_other(33, 139)
+cmd_set_volume(33, -1)
+cmd_set_bgm(34, 57)
+cmd_set_bgm_other(34, 139)
+cmd_set_volume(34, -1)
+cmd_set_bgm(35, 138)
+cmd_set_bgm_other(35, 243)
+cmd_set_volume(35, -1)
+cmd_set_bgm(36, 138)
+cmd_set_bgm_other(36, 90)
+cmd_set_volume(36, -1)
+cmd_set_bgm(37, 130)
+cmd_set_bgm_other(37, 139)
+cmd_set_volume(37, -1)
+cmd_set_bgm(38, 29)
+cmd_set_bgm_other(38, 139)
+cmd_set_volume(38, -1)
+cmd_set_bgm(39, 138)
+cmd_set_bgm_other(39, 134)
+cmd_set_volume(39, -1)
+cmd_set_bgm(40, 106)
+cmd_set_bgm_other(40, 139)
+cmd_set_volume(40, -1)
+cmd_set_bgm(41, 138)
+cmd_set_bgm_other(41, 95)
+cmd_set_volume(41, 60)
+cmd_set_bgm(42, 28)
+cmd_set_bgm_other(42, 139)
+cmd_set_volume(42, -1)
+cmd_set_bgm(43, 116)
+cmd_set_bgm_other(43, 139)
+cmd_set_volume(43, -1)
+cmd_set_bgm(44, 117)
+cmd_set_bgm_other(44, 139)
+cmd_set_volume(44, -1)
+cmd_set_bgm(45, 27)
+cmd_set_bgm_other(45, 139)
+cmd_set_volume(45, -1)
+cmd_set_bgm(46, 129)
+cmd_set_bgm_other(46, 139)
+cmd_set_volume(46, -1)
+cmd_set_bgm(47, 63)
+cmd_set_bgm_other(47, 139)
+cmd_set_volume(47, -1)
+cmd_set_bgm(48, 60)
+cmd_set_bgm_other(48, 139)
+cmd_set_volume(48, -1)
+cmd_set_bgm(49, 115)
+cmd_set_bgm_other(49, 139)
+cmd_set_volume(49, -1)
+cmd_set_bgm(50, 26)
+cmd_set_bgm_other(50, 139)
+cmd_set_volume(50, -1)
+cmd_set_bgm(51, 59)
+cmd_set_bgm_other(51, 132)
+cmd_set_volume(51, -1)
+cmd_set_bgm(52, 47)
+cmd_set_bgm_other(52, 139)
+cmd_set_volume(52, -1)
+cmd_set_bgm(53, 21)
+cmd_set_bgm_other(53, 139)
+cmd_set_volume(53, -1)
+cmd_set_bgm(54, 19)
+cmd_set_bgm_other(54, 139)
+cmd_set_volume(54, -1)
+cmd_set_bgm(55, 23)
+cmd_set_bgm_other(55, 139)
+cmd_set_volume(55, -1)
+cmd_set_bgm(56, 24)
+cmd_set_bgm_other(56, 139)
+cmd_set_volume(56, -1)
+cmd_set_bgm(57, 39)
+cmd_set_bgm_other(57, 139)
+cmd_set_volume(57, -1)
+cmd_set_bgm(58, 22)
+cmd_set_bgm_other(58, 139)
+cmd_set_volume(58, -1)
+cmd_set_bgm(59, 18)
+cmd_set_bgm_other(59, 139)
+cmd_set_volume(59, -1)
+cmd_set_bgm(60, 17)
+cmd_set_bgm_other(60, 139)
+cmd_set_volume(60, -1)
+cmd_set_bgm(61, 17)
+cmd_set_bgm_other(61, 102)
+cmd_set_volume(61, -1)
+cmd_set_bgm(62, 17)
+cmd_set_bgm_other(62, 139)
+cmd_set_volume(62, -1)
+cmd_set_bgm(63, 138)
+cmd_set_bgm_other(63, 105)
+cmd_set_volume(63, -1)
+cmd_set_bgm(64, 253)
+cmd_set_bgm_other(64, 139)
+cmd_set_volume(64, -1)
+cmd_set_bgm(65, 138)
+cmd_set_bgm_other(65, 44)
+cmd_set_volume(65, -1)
+cmd_set_bgm(66, 46)
+cmd_set_bgm_other(66, 139)
+cmd_set_volume(66, -1)
+cmd_set_bgm(67, 85)
+cmd_set_bgm_other(67, 139)
+cmd_set_volume(67, -1)
+cmd_set_bgm(68, 52)
+cmd_set_bgm_other(68, 139)
+cmd_set_volume(68, -1)
+cmd_set_bgm(69, 66)
+cmd_set_bgm_other(69, 99)
+cmd_set_volume(69, -1)
+cmd_set_bgm(70, 106)
+cmd_set_bgm_other(70, 88)
+cmd_set_volume(70, -1)
+cmd_set_bgm(71, 53)
+cmd_set_bgm_other(71, 139)
+cmd_set_volume(71, -1)
+cmd_set_bgm(72, 47)
+cmd_set_bgm_other(72, 139)
+cmd_set_volume(72, -1)
+cmd_set_bgm(73, 35)
+cmd_set_bgm_other(73, 139)
+cmd_set_volume(73, -1)
+cmd_set_bgm(74, 35)
+cmd_set_bgm_other(74, 139)
+cmd_set_volume(74, -1)
+cmd_set_bgm(75, 35)
+cmd_set_bgm_other(75, 139)
+cmd_set_volume(75, -1)
+cmd_set_bgm(76, 35)
+cmd_set_bgm_other(76, 139)
+cmd_set_volume(76, -1)
+cmd_set_bgm(77, 85)
+cmd_set_bgm_other(77, 139)
+cmd_set_volume(77, -1)
+cmd_set_bgm(78, 55)
+cmd_set_bgm_other(78, 139)
+cmd_set_volume(78, -1)
+cmd_set_bgm(79, 140)
+cmd_set_bgm_other(79, 139)
+cmd_set_volume(79, -1)
+cmd_set_bgm(80, 56)
+cmd_set_bgm_other(80, 139)
+cmd_set_volume(80, -1)
+cmd_set_bgm(81, 66)
+cmd_set_bgm_other(81, 105)
+cmd_set_volume(81, -1)
+cmd_set_bgm(82, 67)
+cmd_set_bgm_other(82, 184)
+cmd_set_volume(82, -1)
+cmd_set_bgm(83, 129)
+cmd_set_bgm_other(83, 182)
+cmd_set_volume(83, -1)
+cmd_set_bgm(84, 21)
+cmd_set_bgm_other(84, 139)
+cmd_set_volume(84, -1)
+cmd_set_bgm(85, 144)
+cmd_set_bgm_other(85, 139)
+cmd_set_volume(85, -1)
+cmd_set_bgm(86, 143)
+cmd_set_bgm_other(86, 139)
+cmd_set_volume(86, -1)
+cmd_set_bgm(87, 54)
+cmd_set_bgm_other(87, 139)
+cmd_set_volume(87, -1)
+cmd_set_bgm(88, 21)
+cmd_set_bgm_other(88, 235)
+cmd_set_volume(88, -1)
+cmd_set_bgm(89, 145)
+cmd_set_bgm_other(89, 139)
+cmd_set_volume(89, -1)
+cmd_set_bgm(90, 115)
+cmd_set_bgm_other(90, 139)
+cmd_set_volume(90, -1)
+cmd_set_bgm(91, 118)
+cmd_set_bgm_other(91, 139)
+cmd_set_volume(91, -1)
+cmd_set_bgm(92, 39)
+cmd_set_bgm_other(92, 139)
+cmd_set_volume(92, -1)
+cmd_set_bgm(93, 150)
+cmd_set_bgm_other(93, 139)
+cmd_set_volume(93, -1)
+cmd_set_bgm(94, 146)
+cmd_set_bgm_other(94, 139)
+cmd_set_volume(94, -1)
+cmd_set_bgm(95, 147)
+cmd_set_bgm_other(95, 139)
+cmd_set_volume(95, -1)
+cmd_set_bgm(96, 138)
+cmd_set_bgm_other(96, 68)
+cmd_set_volume(96, -1)
+cmd_set_bgm(97, 7)
+cmd_set_bgm_other(97, 139)
+cmd_set_volume(97, -1)
+cmd_set_bgm(98, 151)
+cmd_set_bgm_other(98, 139)
+cmd_set_volume(98, -1)
+cmd_set_bgm(99, 152)
+cmd_set_bgm_other(99, 139)
+cmd_set_volume(99, -1)
+cmd_set_bgm(100, 154)
+cmd_set_bgm_other(100, 139)
+cmd_set_volume(100, -1)
+cmd_set_bgm(101, 149)
+cmd_set_bgm_other(101, 139)
+cmd_set_volume(101, -1)
+cmd_set_bgm(102, 153)
+cmd_set_bgm_other(102, 139)
+cmd_set_volume(102, -1)
+cmd_set_bgm(103, 129)
+cmd_set_bgm_other(103, 139)
+cmd_set_volume(103, -1)
+cmd_set_bgm(104, 154)
+cmd_set_bgm_other(104, 139)
+cmd_set_volume(104, -1)
+cmd_set_bgm(105, 60)
+cmd_set_bgm_other(105, 139)
+cmd_set_volume(105, -1)
+cmd_set_bgm(106, 60)
+cmd_set_bgm_other(106, 139)
+cmd_set_volume(106, -1)
+cmd_set_bgm(107, 60)
+cmd_set_bgm_other(107, 139)
+cmd_set_volume(107, -1)
+cmd_set_bgm(108, 154)
+cmd_set_bgm_other(108, 86)
+cmd_set_volume(108, -1)
+cmd_set_bgm(109, 148)
+cmd_set_bgm_other(109, 139)
+cmd_set_volume(109, -1)
+cmd_set_bgm(110, 254)
+cmd_set_bgm_other(110, 105)
+cmd_set_volume(110, -1)
+cmd_set_bgm(111, 161)
+cmd_set_bgm_other(111, 139)
+cmd_set_volume(111, -1)
+cmd_set_bgm(112, 87)
+cmd_set_bgm_other(112, 139)
+cmd_set_volume(112, -1)
+cmd_set_bgm(113, 161)
+cmd_set_bgm_other(113, 139)
+cmd_set_volume(113, -1)
+cmd_set_bgm(114, 166)
+cmd_set_bgm_other(114, 91)
+cmd_set_volume(114, -1)
+cmd_set_bgm(115, 26)
+cmd_set_bgm_other(115, 105)
+cmd_set_volume(115, -1)
+cmd_set_bgm(116, 10)
+cmd_set_bgm_other(116, 139)
+cmd_set_volume(116, -1)
+cmd_set_bgm(117, 49)
+cmd_set_bgm_other(117, 184)
+cmd_set_volume(117, -1)
+cmd_set_bgm(118, 185)
+cmd_set_bgm_other(118, 139)
+cmd_set_volume(118, -1)
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_set_bgm(8, 10)
+cmd_set_bgm_other(8, 139)
+cmd_set_volume(8, -1)
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_set_bgm(6, 34)
+cmd_set_bgm_other(6, 111)
+cmd_set_volume(6, 15)
+cmd_set_bgm(8, 72)
+cmd_set_bgm_other(8, 139)
+cmd_set_volume(8, -1)
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_set_bgm(1, 138)
+cmd_set_bgm_other(1, 135)
+cmd_set_volume(1, -1)
+cmd_set_bgm(2, 138)
+cmd_set_bgm_other(2, 135)
+cmd_set_volume(2, -1)
+cmd_set_bgm(3, 138)
+cmd_set_bgm_other(3, 111)
+cmd_set_volume(3, -1)
+cmd_set_bgm(4, 138)
+cmd_set_bgm_other(4, 111)
+cmd_set_volume(4, -1)
+cmd_set_bgm(6, 74)
+cmd_set_bgm_other(6, 111)
+cmd_set_volume(6, -1)
+cmd_set_bgm(8, 138)
+cmd_set_bgm_other(8, 135)
+cmd_set_volume(8, -1)
+cmd_set_bgm(11, 36)
+cmd_set_bgm_other(11, 111)
+cmd_set_volume(11, -1)
+cmd_set_bgm(116, 138)
+cmd_set_bgm_other(116, 135)
+cmd_set_volume(116, -1)
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_set_bgm(1, 75)
+cmd_set_bgm_other(1, 135)
+cmd_set_volume(1, -1)
+cmd_set_bgm(2, 75)
+cmd_set_bgm_other(2, 135)
+cmd_set_volume(2, -1)
+cmd_set_bgm(3, 75)
+cmd_set_bgm_other(3, 111)
+cmd_set_volume(3, -1)
+cmd_set_bgm(4, 123)
+cmd_set_bgm_other(4, 111)
+cmd_set_volume(4, -1)
+cmd_set_bgm(6, 74)
+cmd_set_bgm_other(6, 111)
+cmd_set_volume(6, -1)
+cmd_set_bgm(8, 75)
+cmd_set_bgm_other(8, 135)
+cmd_set_volume(8, -1)
+cmd_set_bgm(11, 36)
+cmd_set_bgm_other(11, 111)
+cmd_set_volume(11, -1)
+cmd_set_bgm(12, 75)
+cmd_set_bgm_other(12, 135)
+cmd_set_volume(12, -1)
+cmd_set_bgm(13, 75)
+cmd_set_bgm_other(13, 135)
+cmd_set_volume(13, -1)
+cmd_set_bgm(116, 75)
+cmd_set_bgm_other(116, 135)
+cmd_set_volume(116, -1)
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_set_bgm(3, 76)
+cmd_set_bgm_other(3, 139)
+cmd_set_volume(3, -1)
+cmd_set_bgm(14, 77)
+cmd_set_bgm_other(14, 97)
+cmd_set_volume(14, -1)
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_set_bgm(1, 78)
+cmd_set_bgm_other(1, 139)
+cmd_set_volume(1, -1)
+cmd_set_bgm(2, 78)
+cmd_set_bgm_other(2, 139)
+cmd_set_volume(2, -1)
+cmd_set_bgm(3, 138)
+cmd_set_bgm_other(3, 91)
+cmd_set_volume(3, 65)
+cmd_set_bgm(4, 41)
+cmd_set_bgm_other(4, 139)
+cmd_set_volume(4, -1)
+cmd_set_bgm(6, 74)
+cmd_set_bgm_other(6, 139)
+cmd_set_volume(6, -1)
+cmd_set_bgm(8, 78)
+cmd_set_bgm_other(8, 139)
+cmd_set_volume(8, -1)
+cmd_set_bgm(11, 36)
+cmd_set_bgm_other(11, 139)
+cmd_set_volume(11, -1)
+cmd_set_bgm(12, 167)
+cmd_set_bgm_other(12, 139)
+cmd_set_volume(12, -1)
+cmd_set_bgm(13, 167)
+cmd_set_bgm_other(13, 139)
+cmd_set_volume(13, -1)
+cmd_set_bgm(14, 167)
+cmd_set_bgm_other(14, 139)
+cmd_set_volume(14, -1)
+cmd_set_bgm(116, 78)
+cmd_set_bgm_other(116, 139)
+cmd_set_volume(116, -1)
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_set_bgm(1, 79)
+cmd_set_bgm_other(1, 139)
+cmd_set_volume(1, -1)
+cmd_set_bgm(2, 79)
+cmd_set_bgm_other(2, 139)
+cmd_set_volume(2, -1)
+cmd_set_bgm(8, 79)
+cmd_set_bgm_other(8, 139)
+cmd_set_volume(8, -1)
+cmd_set_bgm(116, 79)
+cmd_set_bgm_other(116, 139)
+cmd_set_volume(116, -1)
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_set_bgm(1, 252)
+cmd_set_bgm_other(1, 139)
+cmd_set_volume(1, -1)
+cmd_set_bgm(2, 252)
+cmd_set_bgm_other(2, 139)
+cmd_set_volume(2, -1)
+cmd_set_bgm(8, 252)
+cmd_set_bgm_other(8, 139)
+cmd_set_volume(8, -1)
+cmd_set_bgm(14, 252)
+cmd_set_bgm_other(14, 139)
+cmd_set_volume(14, -1)
+cmd_set_bgm(116, 252)
+cmd_set_bgm_other(116, 139)
+cmd_set_volume(116, -1)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_set_bgm(64, 76)
+cmd_set_bgm_other(64, 139)
+cmd_set_volume(64, 65)
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_set_bgm(1, 168)
+cmd_set_bgm_other(1, 97)
+cmd_set_volume(1, -1)
+cmd_set_bgm(2, 168)
+cmd_set_bgm_other(2, 97)
+cmd_set_volume(2, -1)
+cmd_set_bgm(5, 64)
+cmd_set_bgm_other(5, 139)
+cmd_set_volume(5, -1)
+cmd_set_bgm(8, 168)
+cmd_set_bgm_other(8, 97)
+cmd_set_volume(8, -1)
+cmd_set_bgm(72, 35)
+cmd_set_bgm_other(72, 139)
+cmd_set_volume(72, -1)
+cmd_set_bgm(116, 168)
+cmd_set_bgm_other(116, 97)
+cmd_set_volume(116, -1)
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_set_bgm(5, 64)
+cmd_set_bgm_other(5, 139)
+cmd_set_volume(5, -1)
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_set_bgm(1, 168)
+cmd_set_bgm_other(1, 139)
+cmd_set_volume(1, -1)
+cmd_set_bgm(2, 168)
+cmd_set_bgm_other(2, 139)
+cmd_set_volume(2, -1)
+cmd_set_bgm(5, 64)
+cmd_set_bgm_other(5, 139)
+cmd_set_volume(5, -1)
+cmd_set_bgm(8, 168)
+cmd_set_bgm_other(8, 139)
+cmd_set_volume(8, -1)
+cmd_set_bgm(18, 67)
+cmd_set_bgm_other(18, 139)
+cmd_set_volume(18, -1)
+cmd_set_bgm(116, 168)
+cmd_set_bgm_other(116, 139)
+cmd_set_volume(116, -1)
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_set_bgm(5, 64)
+cmd_set_bgm_other(5, 139)
+cmd_set_volume(5, -1)
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_set_bgm(1, 65)
+cmd_set_bgm_other(1, 139)
+cmd_set_volume(1, -1)
+cmd_set_bgm(2, 65)
+cmd_set_bgm_other(2, 139)
+cmd_set_volume(2, -1)
+cmd_set_bgm(5, 74)
+cmd_set_bgm_other(5, 139)
+cmd_set_volume(5, -1)
+cmd_set_bgm(8, 65)
+cmd_set_bgm_other(8, 139)
+cmd_set_volume(8, -1)
+cmd_set_bgm(17, 67)
+cmd_set_bgm_other(17, 139)
+cmd_set_volume(17, -1)
+cmd_set_bgm(116, 65)
+cmd_set_bgm_other(116, 139)
+cmd_set_volume(116, -1)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_set_bgm(5, 74)
+cmd_set_bgm_other(5, 139)
+cmd_set_volume(5, -1)
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_set_bgm(1, 170)
+cmd_set_bgm_other(1, 139)
+cmd_set_volume(1, -1)
+cmd_set_bgm(2, 170)
+cmd_set_bgm_other(2, 139)
+cmd_set_volume(2, -1)
+cmd_set_bgm(5, 76)
+cmd_set_bgm_other(5, 139)
+cmd_set_volume(5, -1)
+cmd_set_bgm(8, 170)
+cmd_set_bgm_other(8, 139)
+cmd_set_volume(8, -1)
+cmd_set_bgm(116, 170)
+cmd_set_bgm_other(116, 139)
+cmd_set_volume(116, -1)
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_set_bgm(2, 175)
+cmd_set_bgm_other(2, 139)
+cmd_set_volume(2, -1)
+cmd_set_bgm(116, 175)
+cmd_set_bgm_other(116, 139)
+cmd_set_volume(116, -1)
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_set_bgm(1, 173)
+cmd_set_bgm_other(1, 139)
+cmd_set_volume(1, -1)
+cmd_set_bgm(2, 173)
+cmd_set_bgm_other(2, 139)
+cmd_set_volume(2, -1)
+cmd_set_bgm(8, 173)
+cmd_set_bgm_other(8, 139)
+cmd_set_volume(8, -1)
+cmd_set_bgm(12, 167)
+cmd_set_bgm_other(12, 139)
+cmd_set_volume(12, -1)
+cmd_set_bgm(116, 173)
+cmd_set_bgm_other(116, 139)
+cmd_set_volume(116, -1)
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_set_bgm(13, 167)
+cmd_set_bgm_other(13, 101)
+cmd_set_volume(13, -1)
+cmd_set_bgm(116, 173)
+cmd_set_bgm_other(116, 101)
+cmd_set_volume(116, -1)
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_set_bgm(1, 121)
+cmd_set_bgm_other(1, 139)
+cmd_set_volume(1, -1)
+cmd_set_bgm(2, 121)
+cmd_set_bgm_other(2, 139)
+cmd_set_volume(2, -1)
+cmd_set_bgm(3, 179)
+cmd_set_bgm_other(3, 139)
+cmd_set_volume(3, -1)
+cmd_set_bgm(4, 181)
+cmd_set_bgm_other(4, 139)
+cmd_set_volume(4, -1)
+cmd_set_bgm(5, 76)
+cmd_set_bgm_other(5, 139)
+cmd_set_volume(5, -1)
+cmd_set_bgm(6, 178)
+cmd_set_bgm_other(6, 139)
+cmd_set_volume(6, -1)
+cmd_set_bgm(7, 180)
+cmd_set_bgm_other(7, 139)
+cmd_set_volume(7, -1)
+cmd_set_bgm(8, 121)
+cmd_set_bgm_other(8, 139)
+cmd_set_volume(8, -1)
+cmd_set_bgm(12, 82)
+cmd_set_bgm_other(12, 139)
+cmd_set_volume(12, -1)
+cmd_set_bgm(13, 82)
+cmd_set_bgm_other(13, 139)
+cmd_set_volume(13, -1)
+cmd_set_bgm(14, 82)
+cmd_set_bgm_other(14, 139)
+cmd_set_volume(14, -1)
+cmd_set_bgm(18, 138)
+cmd_set_bgm_other(18, 68)
+cmd_set_volume(18, -1)
+cmd_set_bgm(20, 49)
+cmd_set_bgm_other(20, 139)
+cmd_set_volume(20, -1)
+cmd_set_bgm(51, 121)
+cmd_set_bgm_other(51, 132)
+cmd_set_volume(51, -1)
+cmd_set_bgm(64, 76)
+cmd_set_bgm_other(64, 139)
+cmd_set_volume(64, 65)
+cmd_set_bgm(65, 138)
+cmd_set_bgm_other(65, 44)
+cmd_set_volume(65, -1)
+cmd_set_bgm(116, 121)
+cmd_set_bgm_other(116, 139)
+cmd_set_volume(116, -1)
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_set_bgm(1, 122)
+cmd_set_bgm_other(1, 139)
+cmd_set_volume(1, -1)
+cmd_set_bgm(2, 122)
+cmd_set_bgm_other(2, 139)
+cmd_set_volume(2, -1)
+cmd_set_bgm(8, 122)
+cmd_set_bgm_other(8, 139)
+cmd_set_volume(8, -1)
+cmd_set_bgm(51, 59)
+cmd_set_bgm_other(51, 132)
+cmd_set_volume(51, -1)
+cmd_set_bgm(116, 122)
+cmd_set_bgm_other(116, 139)
+cmd_set_volume(116, -1)
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_set_bgm(4, 80)
+cmd_set_bgm_other(4, 139)
+cmd_set_volume(4, -1)
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_set_bgm(4, 181)
+cmd_set_bgm_other(4, 139)
+cmd_set_volume(4, -1)
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_set_bgm(21, 127)
+cmd_set_bgm_other(21, 97)
+cmd_set_volume(21, -1)
+cmd_set_bgm(25, 49)
+cmd_set_bgm_other(25, 97)
+cmd_set_volume(25, -1)
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_set_bgm(21, 127)
+cmd_set_bgm_other(21, 91)
+cmd_set_volume(21, -1)
+cmd_set_bgm(25, 49)
+cmd_set_bgm_other(25, 91)
+cmd_set_volume(25, -1)
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_set_bgm(27, 165)
+cmd_set_bgm_other(27, 139)
+cmd_set_volume(27, -1)
+cmd_set_bgm(66, 138)
+cmd_set_bgm_other(66, 139)
+cmd_set_volume(66, -1)
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_set_bgm(40, 138)
+cmd_set_bgm_other(40, 200)
+cmd_set_volume(40, -1)
+cmd_set_bgm(41, 138)
+cmd_set_bgm_other(41, 95)
+cmd_set_volume(41, 70)
+cmd_set_bgm(69, 106)
+cmd_set_bgm_other(69, 95)
+cmd_set_volume(69, 70)
+cmd_set_bgm(70, 138)
+cmd_set_bgm_other(70, 200)
+cmd_set_volume(70, -1)
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_set_bgm(40, 106)
+cmd_set_bgm_other(40, 139)
+cmd_set_volume(40, -1)
+cmd_set_bgm(41, 138)
+cmd_set_bgm_other(41, 95)
+cmd_set_volume(41, 70)
+cmd_set_bgm(69, 138)
+cmd_set_bgm_other(69, 95)
+cmd_set_volume(69, 70)
+cmd_set_bgm(70, 106)
+cmd_set_bgm_other(70, 88)
+cmd_set_volume(70, -1)
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_set_bgm(1, 20)
+cmd_set_bgm_other(1, 139)
+cmd_set_volume(1, -1)
+cmd_set_bgm(2, 20)
+cmd_set_bgm_other(2, 139)
+cmd_set_volume(2, -1)
+cmd_set_bgm(3, 20)
+cmd_set_bgm_other(3, 139)
+cmd_set_volume(3, -1)
+cmd_set_bgm(4, 20)
+cmd_set_bgm_other(4, 139)
+cmd_set_volume(4, -1)
+cmd_set_bgm(5, 20)
+cmd_set_bgm_other(5, 139)
+cmd_set_volume(5, -1)
+cmd_set_bgm(6, 20)
+cmd_set_bgm_other(6, 139)
+cmd_set_volume(6, -1)
+cmd_set_bgm(7, 20)
+cmd_set_bgm_other(7, 139)
+cmd_set_volume(7, -1)
+cmd_set_bgm(8, 20)
+cmd_set_bgm_other(8, 139)
+cmd_set_volume(8, -1)
+cmd_set_bgm(12, 20)
+cmd_set_bgm_other(12, 139)
+cmd_set_volume(12, -1)
+cmd_set_bgm(14, 20)
+cmd_set_bgm_other(14, 139)
+cmd_set_volume(14, -1)
+cmd_set_bgm(51, 20)
+cmd_set_bgm_other(51, 132)
+cmd_set_volume(51, -1)
+cmd_set_bgm(65, 20)
+cmd_set_bgm_other(65, 139)
+cmd_set_volume(65, -1)
+cmd_set_bgm(116, 20)
+cmd_set_bgm_other(116, 139)
+cmd_set_volume(116, -1)
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_set_bgm(14, 13)
+cmd_set_bgm_other(14, 139)
+cmd_set_volume(14, -1)
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_set_bgm(14, 20)
+cmd_set_bgm_other(14, 139)
+cmd_set_volume(14, -1)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_set_bgm(44, 138)
+cmd_set_bgm_other(44, 139)
+cmd_set_volume(44, -1)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_set_bgm(47, 138)
+cmd_set_bgm_other(47, 139)
+cmd_set_volume(47, -1)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_set_bgm(50, 138)
+cmd_set_bgm_other(50, 139)
+cmd_set_volume(50, -1)
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_set_bgm(81, 155)
+cmd_set_bgm_other(81, 139)
+cmd_set_volume(81, -1)
+cmd_set_bgm(97, 155)
+cmd_set_bgm_other(97, 139)
+cmd_set_volume(97, -1)
+cmd_set_bgm(99, 155)
+cmd_set_bgm_other(99, 139)
+cmd_set_volume(99, -1)
+cmd_set_bgm(80, 155)
+cmd_set_bgm_other(80, 139)
+cmd_set_volume(80, -1)
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_set_bgm(81, 138)
+cmd_set_bgm_other(81, 105)
+cmd_set_volume(81, -1)
+cmd_set_bgm(97, 7)
+cmd_set_bgm_other(97, 139)
+cmd_set_volume(97, -1)
+cmd_set_bgm(99, 152)
+cmd_set_bgm_other(99, 139)
+cmd_set_volume(99, -1)
+cmd_set_bgm(80, 56)
+cmd_set_bgm_other(80, 139)
+cmd_set_volume(80, -1)
+RET_REG(1, 0)
+END
+SP_ALLOC(10)
+cmd_play_sound(1061, -1)
+cmd_75(18, 16, 8)
+cmd_set_palettes(0, 144, 0)
+cmd_63(LOAD_REG(1, -1), 1)
+cmd_50(LOAD_REG(1, -1), 3, -1, 1)
+cmd_5C(0, END, END)
+cmd_56(LOAD_REG(1, -1), END, END, 96)
+cmd_set_anim_speed(LOAD_REG(1, -1))
+END
+END
+cmd_play_anim(LOAD_REG(1, -1), 105, 0)
+END
+END
+cmd_play_anim(LOAD_REG(1, -1), 106, 0)
+END
+cmd_6C(LOAD_REG(1, -1), 1)
+cmd_6B(LOAD_REG(1, -1), 4, 0, 8)
+cmd_set_anim_speed(LOAD_REG(1, -1))
+cmd_6C(LOAD_REG(1, -1), 0)
+cmd_set_palettes(1, 32, 0)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_5A(LOAD_REG(1, -1), 4)
+cmd_delay(LOAD_REG(1, 9))
+cmd_5A(LOAD_REG(1, -1), 5)
+cmd_delay(LOAD_REG(1, 9))
+END
+END
+END
+cmd_75(24, 32, 24)
+cmd_set_palettes(0, 24, 0)
+cmd_play_sound(1062, -1)
+cmd_set_palettes(1, 24, 0)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_heal_pp(-2, END)
+cmd_delay(32)
+cmd_3A()
+cmd_disp_msg_0(-3, -1, 87) /* 0-87:@The magic butterfly made everyone in[BREAK]  [42 FF 00 00]'s party relax.[END] */
+cmd_5A(LOAD_REG(1, -1), 1)
+cmd_set_flag(379, 1)
+END
+END
+SP_ALLOC(7)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_5C(0, END, END)
+END
+END
+END
+END
+END
+cmd_AD(57, 600, 416, 4)
+END
+END
+cmd_AD(LOAD_REG(1, 2), END, END, 0)
+END
+PUSH(0)
+END
+END
+SP_ALLOC(2)
+END
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_disp_msg_0(-3, -1, 51) /* 0-51:@No problem here.[END] */
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_37(1)
+cmd_38(-1, -1, 50, 0)
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_37(1)
+cmd_38(-1, -1, 46, 0)
+RET_REG(1, 0)
+END
+SP_ALLOC(4)
+END
+END
+END
+cmd_cfg_member_item(-1, END, 1)
+END
+cmd_load_name(0, END)
+cmd_load_name(1, END)
+cmd_play_sound(108, -1)
+cmd_disp_msg_0(-3, -1, 44) /* 0-44:@[42 FF F1 FF] got [EF 91][ITEM F0 FF]![PAUSE 40 00][END] */
+cmd_5A(-1, 1)
+END
+END
+cmd_load_name(0, END)
+cmd_disp_msg_0(-3, -1, 76) /* 0-76:@You can't carry any more stuff.[END] */
+END
+RET_REG(1, 0)
+END
+SP_ALLOC(3)
+cmd_disp_msg_0(-3, -1, 51) /* 0-51:@No problem here.[END] */
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_37(1)
+cmd_38(-1, -1, 50, 0)
+cmd_disp_msg_0(-3, -1, 83) /* 0-83:@There's a vending machine here.[WAIT]@Would you like to use it? [WAIT][MENU 02 00][MENUSPACEYES]Yes[MENUSPACENO]No[BREAK][ENDCHOICES][END] */
+END
+END
+END
+END
+cmd_set_flag(533, 1)
+END
+cmd_open_shop(LOAD_REG(1, -1), 1)
+END
+RET_REG(1, 1)
+END
+SP_ALLOC(2)
+cmd_37(1)
+cmd_38(-1, -1, 50, 0)
+cmd_disp_msg(-1, -1, END) /* local bank msg END */
+END
+END
+cmd_open_shop(LOAD_REG(1, -4), 1)
+cmd_3A()
+cmd_disp_msg(-1, -1, END) /* local bank msg END */
+END
+END
+cmd_set_flag(533, 1)
+END
+END
+END
+cmd_disp_msg(-1, -1, END) /* local bank msg END */
+END
+RET_REG(1, 4)
+END
+SP_ALLOC(2)
+cmd_37(1)
+cmd_38(-1, -1, 50, 0)
+cmd_disp_msg(LOAD_REG(1, -5), -1, END) /* local bank msg END */
+END
+END
+cmd_open_shop(LOAD_REG(1, -4), 1)
+cmd_3A()
+cmd_disp_msg(LOAD_REG(1, -5), -1, END) /* local bank msg END */
+END
+END
+cmd_set_flag(533, 1)
+END
+END
+END
+cmd_disp_msg(LOAD_REG(1, -5), -1, END) /* local bank msg END */
+END
+RET_REG(1, 5)
+END
+SP_ALLOC(2)
+cmd_66(LOAD_REG(1, -1), 1)
+cmd_6B(LOAD_REG(1, -1), 2, 1, 1)
+cmd_set_anim_speed(LOAD_REG(1, -1))
+cmd_6B(LOAD_REG(1, -1), 6, 1, 2)
+cmd_set_anim_speed(LOAD_REG(1, -1))
+cmd_6B(LOAD_REG(1, -1), 2, 1, 2)
+cmd_set_anim_speed(LOAD_REG(1, -1))
+cmd_6B(LOAD_REG(1, -1), 6, 1, 1)
+cmd_set_anim_speed(LOAD_REG(1, -1))
+cmd_66(LOAD_REG(1, -1), 0)
+RET_REG(1, 1)
+END
+SP_ALLOC(4)
+END
+END
+END
+cmd_cfg_member_item(-1, END, 1)
+END
+cmd_load_name(0, END)
+cmd_load_name(1, END)
+cmd_play_sound(108, -1)
+cmd_disp_msg_0(-3, -1, 44) /* 0-44:@[42 FF F1 FF] got [EF 91][ITEM F0 FF]![PAUSE 40 00][END] */
+cmd_5A(-1, 1)
+END
+END
+cmd_load_name(0, END)
+cmd_disp_msg_0(-3, -1, 76) /* 0-76:@You can't carry any more stuff.[END] */
+END
+RET_REG(1, 0)
+END
+SP_ALLOC(4)
+END
+END
+END
+cmd_cfg_member_item(-1, END, 1)
+END
+cmd_load_name(0, END)
+cmd_load_name(1, END)
+cmd_play_sound(108, -1)
+cmd_disp_msg_0(-3, -1, 44) /* 0-44:@[42 FF F1 FF] got [EF 91][ITEM F0 FF]![PAUSE 40 00][END] */
+cmd_5A(-1, 1)
+END
+END
+cmd_load_name(0, END)
+cmd_disp_msg_0(-3, -1, 76) /* 0-76:@You can't carry any more stuff.[END] */
+END
+RET_REG(1, 0)
+END
+SP_ALLOC(5)
+cmd_party_heal(3)
+cmd_play_sound(186, -1)
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_play_anim(LOAD_REG(1, 3), 137, 0)
+END
+END
+END
+END
+cmd_play_anim(LOAD_REG(1, 3), 137, 0)
+END
+END
+END
+END
+cmd_play_anim(LOAD_REG(1, 3), 114, 0)
+END
+END
+END
+END
+cmd_play_anim(LOAD_REG(1, 3), 137, 0)
+END
+END
+END
+END
+cmd_play_anim(LOAD_REG(1, 3), 106, 0)
+END
+END
+END
+END
+cmd_play_anim(LOAD_REG(1, 3), 126, 0)
+END
+cmd_DA(LOAD_REG(1, 3), -1)
+cmd_delay(20)
+END
+END
+END
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_play_sound(242, -1)
+cmd_5A(LOAD_REG(1, -1), 0)
+cmd_63(LOAD_REG(1, -1), 1)
+cmd_play_anim(LOAD_REG(1, -1), 109, 0)
+cmd_play_anim(LOAD_REG(1, -2), 107, 0)
+cmd_delay(44)
+cmd_play_sound(616, -1)
+cmd_delay(54)
+cmd_play_sound(622, -1)
+cmd_delay(96)
+cmd_play_anim(LOAD_REG(1, -2), 108, 0)
+cmd_5A(LOAD_REG(1, -1), 1)
+cmd_play_anim(LOAD_REG(1, -1), 1, 0)
+cmd_set_ailment(-2, 6, 1)
+cmd_set_flag(634, 1)
+RET_REG(1, 2)
+END
+SP_ALLOC(3)
+cmd_37(1)
+cmd_38(-1, -1, 50, 0)
+cmd_disp_msg_0(-1, -1, END) /* Unknown Message ??? */
+END
+END
+cmd_play_fade(60)
+cmd_46(-1)
+cmd_play_sfx(5)
+cmd_delay(261)
+cmd_party_heal(0)
+cmd_set_ailment(-2, 7, 0)
+cmd_59()
+cmd_set_member_sprite(-2, 0)
+cmd_F7(-2, 0)
+cmd_45(-1)
+cmd_fade_in(60)
+cmd_delay(30)
+END
+END
+cmd_disp_msg_0(-1, -1, 93) /* 0-93:@You're fully revitalized.[END] */
+END
+END
+cmd_disp_msg_0(-1, -1, END) /* Unknown Message ??? */
+END
+END
+END
+cmd_disp_msg_0(-1, -1, END) /* Unknown Message ??? */
+END
+RET_REG(1, 3)
+END
+SP_ALLOC(3)
+cmd_37(1)
+cmd_38(-1, -1, 50, 0)
+cmd_disp_msg(-1, -1, END) /* local bank msg END */
+END
+END
+cmd_play_fade(60)
+cmd_46(-1)
+cmd_play_sfx(5)
+cmd_delay(261)
+cmd_party_heal(0)
+cmd_set_ailment(-2, 7, 0)
+cmd_59()
+cmd_set_member_sprite(-2, 0)
+cmd_F7(-2, 0)
+cmd_45(-1)
+cmd_fade_in(60)
+cmd_delay(30)
+cmd_disp_msg(-1, -1, END) /* local bank msg END */
+END
+END
+cmd_disp_msg(-1, -1, END) /* local bank msg END */
+END
+RET_REG(1, 3)
+END
+SP_ALLOC(4)
+END
+END
+cmd_37(1)
+cmd_38(-1, -1, 50, 0)
+END
+END
+cmd_disp_msg_0(-1, -1, 166) /* 0-166:@*hop*[BREAK]  Save your game?[WAIT][MENU 02 00][MENUSPACEYES]Yes[MENUSPACENO]No[ENDCHOICES][END] */
+END
+END
+cmd_disp_msg(-1, -1, END) /* local bank msg END */
+END
+END
+END
+END
+cmd_set_fade(1, 0)
+cmd_open_save()
+cmd_set_fade(0, 0)
+cmd_set_member_sprite(-1, END)
+cmd_fade_in(20)
+cmd_3A()
+cmd_disp_msg_0(-1, -1, 170) /* 0-170:@Please be careful out there.[EVENT][END] */
+cmd_delay(8)
+cmd_disp_msg_0(-1, -1, 171) /* 0-171:@Give my regards to the next frog you meet.[END] */
+END
+END
+END
+END
+cmd_disp_msg_0(-1, -1, 169) /* 0-169:@Oh, I see...[BREAK]@Well, please be careful out there.[EVENT][END] */
+cmd_delay(8)
+cmd_disp_msg_0(-1, -1, 171) /* 0-171:@Give my regards to the next frog you meet.[END] */
+END
+END
+cmd_disp_msg(-1, -1, END) /* local bank msg END */
+END
+END
+END
+cmd_37(1)
+cmd_38(-1, -1, 50, 0)
+END
+END
+cmd_disp_msg_0(-1, -1, 167) /* 0-167:@*hop*[BREAK]  Do you need something?[WAIT][MENU 02 00][MENUSPACEYES]Yes[MENUSPACENO]No[ENDCHOICES][END] */
+END
+END
+cmd_disp_msg(-1, -1, END) /* local bank msg END */
+END
+cmd_delay(16)
+END
+END
+cmd_disp_msg_0(-1, -1, 172) /* 0-172:@Oh, I see.[WAIT]@Well, give my regards to the next frog you[BREAK]  meet.[END] */
+END
+END
+cmd_37(1)
+cmd_38(-1, -1, 80, 0)
+cmd_disp_msg_0(-1, -1, 168) /* 0-168:@Do you need to save your game?[BREAK]@Or perhaps transfer DP?[WAIT][MENU 02 00][MENUSPACEYES]Save[MENUSPACEYES]DP Stuff[ENDCHOICES][END] */
+END
+END
+END
+cmd_set_fade(1, 0)
+cmd_open_save()
+cmd_set_fade(0, 0)
+cmd_set_member_sprite(-1, END)
+cmd_fade_in(20)
+END
+END
+cmd_open_bank()
+END
+cmd_delay(0)
+cmd_3A()
+END
+END
+cmd_disp_msg_0(-1, -1, 170) /* 0-170:@Please be careful out there.[EVENT][END] */
+cmd_delay(8)
+cmd_disp_msg_0(-1, -1, 171) /* 0-171:@Give my regards to the next frog you meet.[END] */
+END
+END
+cmd_disp_msg(-1, -1, END) /* local bank msg END */
+END
+END
+END
+SP_ALLOC(2)
+LOAD_REG(1, -2)
+LOAD_REG(1, -1)
+END
+RET_REG(1, 2)
+END
+SP_ALLOC(2)
+cmd_50(-1, 11, -1, 0)
+cmd_06(-1)
+cmd_50(-1, 0, -1, 0)
+LOAD_REG(1, -2)
+LOAD_REG(1, -1)
+END
+cmd_50(-1, 12, -1, 0)
+cmd_06(-1)
+cmd_play_anim(-1, 10, 1)
+cmd_delay(16)
+RET_REG(1, 2)
+END
+SP_ALLOC(3)
+END
+END
+END
+END
+END
+cmd_B9(272)
+cmd_46(0)
+cmd_45(1)
+END
+END
+END
+END
+cmd_B9(267)
+END
+END
+END
+END
+cmd_B9(256)
+cmd_46(0)
+cmd_46(1)
+cmd_45(2)
+cmd_45(3)
+cmd_46(4)
+cmd_45(5)
+END
+END
+END
+END
+cmd_B9(258)
+cmd_46(0)
+cmd_46(1)
+cmd_45(2)
+cmd_45(3)
+END
+END
+END
+END
+cmd_B9(269)
+cmd_46(0)
+cmd_46(1)
+cmd_46(2)
+cmd_45(3)
+cmd_45(4)
+cmd_45(5)
+END
+END
+END
+END
+cmd_B9(265)
+cmd_46(0)
+cmd_46(1)
+cmd_46(2)
+cmd_45(3)
+cmd_45(4)
+cmd_45(5)
+END
+END
+END
+END
+cmd_B9(247)
+cmd_45(1)
+cmd_45(3)
+END
+END
+END
+END
+cmd_B9(274)
+END
+END
+END
+END
+cmd_B9(160)
+END
+END
+END
+END
+cmd_B9(161)
+cmd_46(0)
+cmd_46(1)
+cmd_46(2)
+cmd_45(3)
+cmd_45(4)
+cmd_45(5)
+END
+END
+END
+END
+cmd_B9(296)
+END
+END
+END
+END
+cmd_B9(226)
+END
+END
+END
+END
+cmd_B9(61)
+END
+END
+END
+END
+cmd_B9(35)
+END
+END
+END
+END
+cmd_B9(180)
+cmd_45(2)
+cmd_45(3)
+END
+END
+END
+END
+cmd_B9(35)
+END
+END
+END
+END
+cmd_B9(180)
+END
+END
+END
+END
+cmd_B9(61)
+END
+END
+END
+END
+cmd_B9(35)
+END
+END
+END
+END
+cmd_B9(605)
+cmd_45(0)
+cmd_45(1)
+END
+END
+END
+END
+cmd_B9(603)
+cmd_45(0)
+END
+END
+END
+END
+cmd_B9(604)
+cmd_45(0)
+cmd_45(1)
+END
+END
+END
+END
+cmd_B9(223)
+cmd_45(0)
+cmd_45(1)
+cmd_45(2)
+END
+END
+END
+END
+cmd_B9(600)
+END
+END
+END
+END
+cmd_B9(606)
+END
+END
+END
+END
+cmd_B9(602)
+cmd_46(0)
+cmd_46(1)
+cmd_45(2)
+cmd_45(3)
+END
+END
+END
+END
+cmd_B9(601)
+cmd_46(0)
+cmd_46(1)
+cmd_46(2)
+cmd_46(3)
+cmd_45(4)
+cmd_45(5)
+cmd_45(6)
+cmd_45(7)
+END
+END
+END
+END
+cmd_B9(309)
+END
+END
+END
+END
+cmd_B9(209)
+END
+END
+END
+END
+cmd_B9(35)
+END
+END
+END
+END
+cmd_B9(303)
+END
+END
+END
+END
+cmd_B9(303)
+cmd_45(1)
+END
+END
+END
+END
+cmd_B9(303)
+END
+END
+END
+END
+cmd_B9(299)
+END
+END
+END
+END
+cmd_B9(35)
+END
+END
+END
+END
+cmd_B9(35)
+END
+END
+END
+END
+cmd_E0(0, 0)
+cmd_E0(1, 0)
+END
+END
+END
+END
+cmd_B9(457)
+END
+END
+END
+END
+cmd_B9(272)
+cmd_46(0)
+cmd_45(1)
+END
+END
+END
+END
+cmd_B9(624)
+END
+END
+END
+END
+cmd_B9(267)
+END
+END
+END
+END
+cmd_B9(161)
+cmd_46(0)
+cmd_46(1)
+cmd_45(2)
+cmd_45(3)
+END
+END
+END
+END
+cmd_B9(161)
+cmd_46(0)
+cmd_46(1)
+cmd_45(2)
+cmd_45(3)
+END
+END
+END
+END
+cmd_B9(624)
+END
+END
+END
+END
+cmd_B9(448)
+cmd_46(0)
+cmd_45(1)
+END
+END
+END
+END
+cmd_B9(630)
+cmd_46(0)
+cmd_45(1)
+END
+END
+END
+END
+cmd_B9(564)
+cmd_46(-1)
+END
+END
+END
+END
+cmd_B9(564)
+cmd_46(-1)
+END
+END
+END
+END
+cmd_B9(565)
+cmd_46(-1)
+END
+END
+END
+END
+END
+END
+END
+cmd_46(-1)
+cmd_45(6)
+cmd_45(7)
+cmd_45(8)
+cmd_B9(669)
+END
+END
+END
+END
+cmd_B9(670)
+END
+END
+END
+END
+cmd_B9(668)
+END
+END
+END
+END
+cmd_B9(661)
+END
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+END
+END
+cmd_4A(0, 1)
+END
+END
+cmd_CD(0)
+cmd_CD(1)
+cmd_CD(2)
+cmd_CD(3)
+cmd_CD(4)
+cmd_CD(5)
+cmd_CD(6)
+cmd_CD(7)
+END
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+END
+END
+cmd_play_sfx(3)
+cmd_delay(80)
+cmd_disp_msg(-3, -1, END) /* local bank msg END */
+END
+END
+END
+END
+cmd_play_sfx(2)
+cmd_delay(128)
+cmd_disp_msg(-3, -1, END) /* local bank msg END */
+END
+cmd_delay(24)
+cmd_D6(LOAD_REG(1, -4))
+cmd_5A(LOAD_REG(1, -4), 1)
+cmd_party_add(LOAD_REG(1, -3))
+cmd_delay(24)
+RET_REG(1, 4)
+END
+SP_ALLOC(2)
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+RET_REG(1, 0)
+END
+SP_ALLOC(4)
+cmd_delay(8)
+cmd_5A(LOAD_REG(1, -1), 0)
+cmd_5C(0, END, END)
+cmd_5B(LOAD_REG(1, -1), END, END)
+cmd_63(LOAD_REG(1, -1), 0)
+RET_REG(1, 1)
+END
+SP_ALLOC(4)
+END
+END
+cmd_F0(0)
+cmd_F0(1)
+cmd_F0(2)
+LOAD_REG(1, -2)
+END
+END
+cmd_play_anim(LOAD_REG(1, -3), 110, 0)
+cmd_delay(48)
+cmd_play_anim(0, 112, 1)
+END
+END
+cmd_play_anim(LOAD_REG(1, -3), 110, 0)
+cmd_delay(48)
+cmd_play_anim(0, 114, 1)
+END
+END
+cmd_play_anim(LOAD_REG(1, -3), 109, 0)
+cmd_delay(48)
+cmd_play_anim(0, 112, 1)
+END
+END
+cmd_play_anim(LOAD_REG(1, -3), 109, 0)
+cmd_delay(48)
+cmd_play_anim(0, 114, 1)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_76(2, 1, 2, 0)
+cmd_play_sound(190, -1)
+cmd_play_sound(191, -1)
+cmd_C7(12, 16)
+cmd_delay(LOAD_REG(1, -1))
+cmd_C8()
+cmd_87(4)
+cmd_stop_shake()
+cmd_06(LOAD_REG(1, -3))
+cmd_50(LOAD_REG(1, -3), 0, END, 0)
+cmd_06(0)
+LOAD_REG(1, -2)
+END
+END
+cmd_play_anim(0, 113, 0)
+cmd_06(0)
+cmd_play_anim(0, 117, 0)
+END
+END
+cmd_play_anim(0, 115, 0)
+cmd_06(0)
+cmd_play_anim(0, 119, 0)
+END
+END
+cmd_play_anim(0, 113, 0)
+cmd_06(0)
+cmd_play_anim(0, 117, 0)
+END
+END
+cmd_play_anim(0, 115, 0)
+cmd_06(0)
+cmd_play_anim(0, 119, 0)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_06(0)
+cmd_50(0, 0, 0, 0)
+cmd_F1(0)
+cmd_F1(1)
+cmd_F1(2)
+RET_REG(1, 3)
+END
+SP_ALLOC(3)
+END
+END
+END
+END
+cmd_58(LOAD_REG(1, -1), 3, 3)
+cmd_delay(2)
+END
+END
+END
+RET_REG(1, 1)
+END
+SP_ALLOC(7)
+cmd_5C(LOAD_REG(1, -1), END, END)
+cmd_5C(LOAD_REG(1, -2), END, END)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_set_member_sprite(LOAD_REG(1, -2), END)
+cmd_delay(3)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_set_member_sprite(LOAD_REG(1, -2), END)
+cmd_delay(3)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_set_member_sprite(LOAD_REG(1, -2), END)
+cmd_delay(3)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_set_member_sprite(LOAD_REG(1, -2), END)
+cmd_delay(3)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_set_member_sprite(LOAD_REG(1, -2), END)
+cmd_delay(3)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_set_member_sprite(LOAD_REG(1, -2), END)
+cmd_delay(3)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_set_member_sprite(LOAD_REG(1, -2), END)
+cmd_delay(3)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_set_member_sprite(LOAD_REG(1, -2), END)
+cmd_delay(3)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_set_member_sprite(LOAD_REG(1, -2), END)
+cmd_delay(3)
+END
+END
+RET_REG(1, 2)
+END
+SP_ALLOC(3)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_set_member_sprite(LOAD_REG(1, -1), END)
+cmd_delay(3)
+END
+END
+RET_REG(1, 1)
+END
+SP_ALLOC(3)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_set_member_sprite(LOAD_REG(1, -1), END)
+cmd_delay(3)
+END
+END
+RET_REG(1, 1)
+END
+SP_ALLOC(3)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_set_member_sprite(LOAD_REG(1, -1), END)
+cmd_delay(3)
+END
+END
+RET_REG(1, 1)
+END
+SP_ALLOC(3)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_set_member_sprite(LOAD_REG(1, -1), END)
+cmd_delay(3)
+END
+END
+RET_REG(1, 1)
+END
+SP_ALLOC(3)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_set_member_sprite(LOAD_REG(1, -1), END)
+cmd_delay(3)
+END
+END
+RET_REG(1, 1)
+END
+SP_ALLOC(3)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_set_member_sprite(LOAD_REG(1, -1), END)
+cmd_delay(3)
+END
+END
+RET_REG(1, 1)
+END
+SP_ALLOC(3)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_set_member_sprite(LOAD_REG(1, -1), END)
+cmd_delay(3)
+END
+END
+RET_REG(1, 1)
+END
+SP_ALLOC(3)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_set_member_sprite(LOAD_REG(1, -1), END)
+cmd_delay(3)
+END
+END
+RET_REG(1, 1)
+END
+SP_ALLOC(6)
+cmd_5C(LOAD_REG(1, -4), END, END)
+cmd_5C(LOAD_REG(1, -3), END, END)
+END
+END
+END
+END
+LOAD_REG(1, -2)
+END
+END
+cmd_6B(LOAD_REG(1, -4), 2, END, 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), END, END, END, 0)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_6B(LOAD_REG(1, -4), 0, END, 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), END, END, END, 1)
+END
+END
+cmd_6B(LOAD_REG(1, -4), 6, END, 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), END, END, END, 0)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_6B(LOAD_REG(1, -4), 0, END, 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), END, END, END, 1)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_53(LOAD_REG(1, -4), END, END, END, 0)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_6B(LOAD_REG(1, -4), 0, END, 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), END, END, END, 1)
+END
+END
+END
+END
+cmd_53(LOAD_REG(1, -4), END, END, END, 0)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_6B(LOAD_REG(1, -4), 0, END, 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), END, END, END, 1)
+END
+END
+END
+cmd_53(LOAD_REG(1, -4), END, END, END, 1)
+END
+RET_REG(1, 4)
+END
+SP_ALLOC(6)
+cmd_5C(LOAD_REG(1, -4), END, END)
+cmd_5C(LOAD_REG(1, -3), END, END)
+END
+END
+END
+END
+LOAD_REG(1, -2)
+END
+END
+cmd_6B(LOAD_REG(1, -4), 0, END, 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), END, END, END, 1)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_6B(LOAD_REG(1, -4), 6, END, 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), END, END, END, 0)
+END
+END
+cmd_6B(LOAD_REG(1, -4), 4, END, 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), END, END, END, 1)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_6B(LOAD_REG(1, -4), 6, END, 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), END, END, END, 0)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_53(LOAD_REG(1, -4), END, END, END, 1)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_6B(LOAD_REG(1, -4), 6, END, 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), END, END, END, 0)
+END
+END
+END
+END
+cmd_53(LOAD_REG(1, -4), END, END, END, 1)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_6B(LOAD_REG(1, -4), 6, END, 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), END, END, END, 0)
+END
+END
+END
+cmd_53(LOAD_REG(1, -4), END, END, END, 0)
+END
+RET_REG(1, 4)
+END
+SP_ALLOC(6)
+cmd_5C(LOAD_REG(1, -4), END, END)
+cmd_5C(LOAD_REG(1, -3), END, END)
+END
+END
+END
+END
+LOAD_REG(1, -2)
+END
+END
+cmd_6B(LOAD_REG(1, -4), 2, END, 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), END, END, END, 0)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_6B(LOAD_REG(1, -4), 4, END, 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), END, END, END, 1)
+END
+END
+cmd_6B(LOAD_REG(1, -4), 6, END, 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), END, END, END, 0)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_6B(LOAD_REG(1, -4), 4, END, 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), END, END, END, 1)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_53(LOAD_REG(1, -4), END, END, END, 0)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_6B(LOAD_REG(1, -4), 4, END, 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), END, END, END, 1)
+END
+END
+END
+END
+cmd_53(LOAD_REG(1, -4), END, END, END, 0)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_6B(LOAD_REG(1, -4), 4, END, 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), END, END, END, 1)
+END
+END
+END
+cmd_53(LOAD_REG(1, -4), END, END, END, 1)
+END
+RET_REG(1, 4)
+END
+SP_ALLOC(6)
+cmd_5C(LOAD_REG(1, -4), END, END)
+cmd_5C(LOAD_REG(1, -3), END, END)
+END
+END
+END
+END
+LOAD_REG(1, -2)
+END
+END
+cmd_6B(LOAD_REG(1, -4), 0, END, 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), END, END, END, 1)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_6B(LOAD_REG(1, -4), 2, END, 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), END, END, END, 0)
+END
+END
+cmd_6B(LOAD_REG(1, -4), 4, END, 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), END, END, END, 1)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_6B(LOAD_REG(1, -4), 2, END, 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), END, END, END, 0)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_53(LOAD_REG(1, -4), END, END, END, 1)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_6B(LOAD_REG(1, -4), 2, END, 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), END, END, END, 0)
+END
+END
+END
+END
+cmd_53(LOAD_REG(1, -4), END, END, END, 1)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_6B(LOAD_REG(1, -4), 2, END, 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), END, END, END, 0)
+END
+END
+END
+cmd_53(LOAD_REG(1, -4), END, END, END, 1)
+END
+RET_REG(1, 4)
+SP_ALLOC(2)
+cmd_disp_msg_0(-3, -1, 124) /* 0-124:@It's locked.[END] */
+RET_REG(1, 0)
+END
+SP_ALLOC(7)
+cmd_5C(LOAD_REG(1, -2), END, END)
+cmd_5C(LOAD_REG(1, -1), END, END)
+END
+LOAD_REG(1, 6)
+END
+END
+cmd_set_member_sprite(LOAD_REG(1, -1), 2)
+END
+END
+cmd_set_member_sprite(LOAD_REG(1, -1), 6)
+END
+END
+cmd_set_member_sprite(LOAD_REG(1, -1), 0)
+END
+END
+cmd_set_member_sprite(LOAD_REG(1, -1), 4)
+END
+END
+cmd_set_member_sprite(LOAD_REG(1, -1), 7)
+END
+END
+cmd_set_member_sprite(LOAD_REG(1, -1), 5)
+END
+END
+cmd_set_member_sprite(LOAD_REG(1, -1), 3)
+END
+END
+cmd_set_member_sprite(LOAD_REG(1, -1), 1)
+END
+END
+END
+END
+END
+END
+cmd_set_member_sprite(LOAD_REG(1, -1), 3)
+END
+END
+END
+END
+cmd_set_member_sprite(LOAD_REG(1, -1), 4)
+END
+END
+END
+END
+cmd_set_member_sprite(LOAD_REG(1, -1), 5)
+END
+END
+END
+END
+END
+END
+END
+cmd_set_member_sprite(LOAD_REG(1, -1), 2)
+END
+END
+END
+END
+cmd_set_member_sprite(LOAD_REG(1, -1), 4)
+END
+END
+END
+END
+cmd_set_member_sprite(LOAD_REG(1, -1), 6)
+END
+END
+END
+END
+END
+END
+END
+cmd_set_member_sprite(LOAD_REG(1, -1), 1)
+END
+END
+END
+END
+cmd_set_member_sprite(LOAD_REG(1, -1), 0)
+END
+END
+END
+END
+cmd_set_member_sprite(LOAD_REG(1, -1), 7)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+RET_REG(1, 2)
+END
+SP_ALLOC(2)
+cmd_75(18, 24, 23)
+cmd_72(0, 1, 0)
+cmd_delay(32)
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+END
+END
+cmd_disp_msg(LOAD_REG(1, -4), -1, END) /* local bank msg END */
+END
+END
+cmd_disp_msg(LOAD_REG(1, -4), -1, END) /* local bank msg END */
+END
+RET_REG(1, 4)
+END
+SP_ALLOC(2)
+LOAD_REG(1, -2)
+END
+END
+cmd_75(-8, -8, -16)
+cmd_set_palettes(0, 128, 0)
+cmd_delay(144)
+cmd_3B()
+cmd_delay(16)
+cmd_disp_text_special(0, END)
+cmd_delay(32)
+END
+END
+cmd_75(-8, -8, -16)
+cmd_set_palettes(0, 128, 0)
+cmd_delay(144)
+cmd_3B()
+cmd_delay(16)
+cmd_disp_text_special(0, END)
+cmd_set_palettes(1, 32, 0)
+cmd_delay(32)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+RET_REG(1, 2)
+END
+SP_ALLOC(2)
+cmd_58(LOAD_REG(1, -3), 16, 16)
+cmd_6C(LOAD_REG(1, -3), 1)
+cmd_6B(LOAD_REG(1, -3), END, 2, END)
+cmd_50(LOAD_REG(1, -3), 6, END, 0)
+cmd_delay(12)
+cmd_50(LOAD_REG(1, -3), 0, END, 0)
+cmd_delay(2)
+cmd_50(LOAD_REG(1, -3), 7, END, 0)
+cmd_delay(2)
+cmd_50(LOAD_REG(1, -3), 0, END, 0)
+cmd_set_anim_speed(LOAD_REG(1, -3))
+cmd_6C(LOAD_REG(1, -3), 0)
+RET_REG(1, 3)
+END
+SP_ALLOC(2)
+END
+END
+cmd_C7(12, 16)
+cmd_delay(4)
+cmd_C8()
+cmd_delay(8)
+END
+END
+END
+END
+cmd_C7(12, 16)
+cmd_delay(8)
+cmd_75(24, 12, 20)
+cmd_set_palettes(0, 4, 0)
+cmd_delay(4)
+cmd_set_palettes(1, 4, 0)
+cmd_delay(8)
+cmd_C8()
+cmd_delay(4)
+cmd_play_sound(652, 30)
+cmd_delay(16)
+END
+END
+END
+END
+cmd_C7(12, 16)
+cmd_delay(4)
+cmd_C8()
+cmd_delay(64)
+cmd_C7(12, 16)
+cmd_delay(8)
+cmd_play_sound(652, 80)
+cmd_75(24, 12, 20)
+cmd_set_palettes(0, 4, 0)
+cmd_delay(4)
+cmd_set_palettes(1, 4, 0)
+cmd_delay(8)
+cmd_C8()
+cmd_delay(4)
+cmd_C7(12, 16)
+cmd_75(24, 12, 20)
+cmd_set_palettes(0, 8, 0)
+cmd_delay(8)
+cmd_set_palettes(1, 4, 0)
+cmd_delay(8)
+cmd_C8()
+END
+END
+END
+END
+cmd_76(3, 2, 4, 0)
+cmd_play_sound(809, 80)
+cmd_75(24, 12, 20)
+cmd_set_palettes(0, 4, 0)
+cmd_delay(16)
+cmd_stop_shake()
+cmd_set_palettes(1, 64, 0)
+cmd_delay(64)
+END
+END
+RET_REG(1, 1)
+SP_ALLOC(2)
+END
+END
+cmd_C7(12, 16)
+cmd_delay(4)
+cmd_C8()
+cmd_delay(8)
+END
+END
+END
+END
+cmd_C7(12, 16)
+cmd_delay(8)
+cmd_75(12, 24, 20)
+cmd_set_palettes(0, 4, 0)
+cmd_delay(4)
+cmd_set_palettes(1, 4, 0)
+cmd_delay(8)
+cmd_C8()
+cmd_delay(4)
+cmd_play_sound(803, 30)
+cmd_delay(16)
+END
+END
+END
+END
+cmd_C7(12, 16)
+cmd_delay(4)
+cmd_C8()
+cmd_delay(64)
+cmd_C7(12, 16)
+cmd_delay(8)
+cmd_play_sound(803, 80)
+cmd_75(12, 24, 20)
+cmd_set_palettes(0, 4, 0)
+cmd_delay(4)
+cmd_set_palettes(1, 4, 0)
+cmd_delay(8)
+cmd_C8()
+cmd_delay(4)
+cmd_C7(12, 16)
+cmd_75(12, 24, 20)
+cmd_set_palettes(0, 8, 0)
+cmd_delay(8)
+cmd_set_palettes(1, 4, 0)
+cmd_delay(8)
+cmd_C8()
+END
+END
+END
+END
+cmd_76(3, 2, 4, 0)
+cmd_play_sound(809, 80)
+cmd_75(12, 24, 20)
+cmd_set_palettes(0, 4, 0)
+cmd_delay(16)
+cmd_stop_shake()
+cmd_set_palettes(1, 64, 0)
+cmd_delay(64)
+END
+END
+RET_REG(1, 1)
+END
+SP_ALLOC(11)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_84(1, 0, 4)
+cmd_delay(64)
+cmd_play_sound_ext(138, -1)
+cmd_play_sound_ext(1945, -1)
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_load_name(0, END)
+cmd_load_name(1, END)
+cmd_load_name(2, END)
+cmd_load_name(3, END)
+cmd_load_name(4, END)
+cmd_load_name(5, END)
+cmd_disp_msg_0(-3, -1, END) /* Unknown Message ??? */
+END
+END
+cmd_disp_msg_0(-3, -1, 146) /* 0-146:@HP went up by [80 FF F0 FF].[EVENT][END] */
+END
+END
+END
+cmd_disp_msg_0(-3, -1, 147) /* 0-147:@PP went up by [80 FF F1 FF].[EVENT][END] */
+END
+END
+END
+cmd_disp_msg_0(-3, -1, 148) /* 0-148:@Offense went up by [80 FF F2 FF].[EVENT][END] */
+END
+END
+END
+cmd_disp_msg_0(-3, -1, 149) /* 0-149:@Defense went up by [80 FF F3 FF].[EVENT][END] */
+END
+END
+END
+cmd_disp_msg_0(-3, -1, 150) /* 0-150:@IQ went up by [80 FF F4 FF].[EVENT][END] */
+END
+END
+END
+cmd_disp_msg_0(-3, -1, 151) /* 0-151:@Speed went up by [80 FF F5 FF].[EVENT][END] */
+END
+END
+END
+END
+END
+cmd_play_sound_ext(-1, -1)
+cmd_84(1, 1, 4)
+END
+RET_REG(1, 1)
+END
+SP_ALLOC(2)
+cmd_5A(LOAD_REG(1, -3), 0)
+cmd_63(LOAD_REG(1, -3), 1)
+cmd_5B(LOAD_REG(1, -3), END, END)
+cmd_6C(LOAD_REG(1, -3), 1)
+cmd_linemove(LOAD_REG(1, -3), 7, 3, 20)
+RET_REG(1, 3)
+SP_ALLOC(4)
+LOAD_REG(1, -3)
+END
+END
+cmd_63(LOAD_REG(1, -4), -1)
+cmd_6C(LOAD_REG(1, -4), 1)
+cmd_F3(LOAD_REG(1, -4), -1)
+cmd_5B(LOAD_REG(1, -4), END, END)
+cmd_5C(LOAD_REG(1, -4), END, END)
+cmd_56(LOAD_REG(1, -4), END, END, 456)
+END
+END
+cmd_63(LOAD_REG(1, -4), 2)
+cmd_6C(LOAD_REG(1, -4), 1)
+cmd_F3(LOAD_REG(1, -4), 512)
+cmd_5B(LOAD_REG(1, -4), END, END)
+cmd_5C(LOAD_REG(1, -4), END, END)
+cmd_56(LOAD_REG(1, -4), END, END, 320)
+END
+END
+cmd_63(LOAD_REG(1, -4), 1)
+cmd_6C(LOAD_REG(1, -4), 1)
+cmd_F3(LOAD_REG(1, -4), 384)
+cmd_5B(LOAD_REG(1, -4), END, END)
+cmd_5C(LOAD_REG(1, -4), END, END)
+cmd_56(LOAD_REG(1, -4), END, END, 168)
+END
+END
+cmd_63(LOAD_REG(1, -4), 1)
+cmd_6C(LOAD_REG(1, -4), 1)
+cmd_F3(LOAD_REG(1, -4), 512)
+cmd_5B(LOAD_REG(1, -4), END, END)
+cmd_5C(LOAD_REG(1, -4), END, END)
+cmd_56(LOAD_REG(1, -4), END, END, 88)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+RET_REG(1, 4)
+END
+SP_ALLOC(3)
+cmd_50(-1, 0, -1, 0)
+cmd_50(0, 7, -1, 0)
+END
+LOAD_REG(1, 2)
+END
+END
+cmd_play_anim(-1, 108, 1)
+END
+END
+cmd_play_anim(-1, 109, 1)
+END
+END
+cmd_play_anim(-1, 110, 1)
+END
+END
+cmd_play_anim(-1, 111, 1)
+END
+END
+cmd_play_anim(-1, 112, 1)
+END
+END
+cmd_play_anim(-1, 113, 1)
+END
+END
+cmd_play_anim(-1, 114, 1)
+END
+END
+cmd_play_anim(-1, 115, 1)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_play_sound(849, -1)
+cmd_delay(64)
+LOAD_REG(1, -1)
+END
+END
+cmd_50(-1, 0, END, 0)
+END
+END
+cmd_50(-1, 0, 0, 0)
+END
+END
+cmd_50(-1, 0, 1, 0)
+END
+END
+cmd_50(-1, 0, 2, 0)
+END
+END
+cmd_50(-1, 0, 3, 0)
+END
+END
+cmd_50(-1, 0, 4, 0)
+END
+END
+cmd_50(-1, 0, 5, 0)
+END
+END
+cmd_50(-1, 0, 6, 0)
+END
+END
+cmd_50(-1, 0, 7, 0)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_50(0, 0, -1, 0)
+RET_REG(1, 1)
+END
+SP_ALLOC(4)
+END
+END
+cmd_disp_msg_0(-1, -1, 224) /* 0-224:@Mixed gender bathing?[END] */
+END
+END
+END
+cmd_disp_msg_0(-1, -1, 223) /* 0-223:@Yes?[END] */
+END
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+END
+END
+cmd_disp_msg_0(-1, -1, 196) /* 0-196:@Hi, there! I'm the friendly item deposit guy![WAIT]@If you have anything you don't need or don't[BREAK]  want to carry around,[WAIT]  I'll gladly hold on to it for you for free![WAIT]@I'll take great care of any items you give me,[WAIT]  and I'll return them to you immediately[BREAK]  whenever you want them back![WAIT]@Can I hold on to something for you?[END] */
+END
+END
+cmd_disp_msg_0(-1, -1, 198) /* 0-198:@Hi, there! I'm the friendly item deposit guy![WAIT]@How can I help you?[END] */
+END
+cmd_open_itemguy()
+cmd_3A()
+END
+END
+cmd_disp_msg_0(-1, -1, 197) /* 0-197:@I'm always traveling to one place or another,[WAIT]  so if you ever need anything, just let me know[BREAK]  anytime![END] */
+cmd_set_flag(353, 1)
+END
+END
+cmd_disp_msg_0(-1, -1, 199) /* 0-199:@The gods are watching over you guys.[WAIT]@You're incredible. You're amazing.[WAIT]@Seriously, you're a real inspiration.[WAIT]@We're right behind you, supporting you 100%,[BREAK]  from the sidelines.[END] */
+END
+END
+RET_REG(1, 0)
+END
+SP_ALLOC(3)
+cmd_disp_msg_0(-3, -1, 181) /* 0-181:@This is the knit cap man's car.[END] */
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+END
+END
+cmd_37(1)
+cmd_38(-1, -1, 50, 0)
+cmd_disp_msg_0(-3, -1, 187) /* 0-187:[END] */
+END
+END
+END
+END
+cmd_delay(16)
+cmd_load_name(0, END)
+cmd_load_name(1, END)
+cmd_disp_msg_0(-3, -1, 188) /* 0-188:[END] */
+cmd_delay(32)
+cmd_37(1)
+cmd_38(-1, -1, 50, 0)
+cmd_disp_msg_0(-3, -1, 189) /* 0-189:[END] */
+END
+END
+cmd_load_name(0, END)
+cmd_load_name(1, END)
+cmd_37(1)
+cmd_38(-1, -1, 50, 0)
+cmd_disp_msg_0(-3, -1, 190) /* 0-190:[END] */
+END
+cmd_delay(16)
+END
+END
+cmd_disp_msg_0(-3, -1, 193) /* 0-193:[END] */
+cmd_delay(16)
+cmd_disp_msg_0(-3, -1, 195) /* 0-195:[END] */
+cmd_set_flag(630, 1)
+END
+END
+END
+END
+END
+cmd_disp_msg_0(-3, -1, 193) /* 0-193:[END] */
+cmd_delay(16)
+cmd_disp_msg_0(-3, -1, 194) /* 0-194:[END] */
+cmd_set_flag(630, 1)
+END
+END
+END
+cmd_3B()
+cmd_open_bank()
+cmd_3A()
+cmd_disp_msg_0(-3, -1, 193) /* 0-193:[END] */
+cmd_delay(16)
+cmd_disp_msg_0(-3, -1, 192) /* 0-192:[END] */
+cmd_set_flag(630, 1)
+END
+END
+RET_REG(1, 2)
+END
+SP_ALLOC(3)
+LOAD_REG(1, -3)
+END
+END
+cmd_cfg_member_item(-1, END, END)
+END
+cmd_load_name(0, END)
+cmd_load_name(1, END)
+cmd_play_sound(107, -1)
+cmd_disp_msg_0(-3, -1, 44) /* 0-44:@[42 FF F1 FF] got [EF 91][ITEM F0 FF]![PAUSE 40 00][END] */
+END
+END
+cmd_play_sfx(4)
+cmd_delay(80)
+cmd_load_name(0, END)
+cmd_disp_msg_0(-3, -1, 45) /* 0-45:@Got [EF 91][ITEM F0 FF]![PAUSE 40 00][END] */
+cmd_set_key_item(LOAD_REG(1, -2), 1)
+END
+END
+cmd_play_sfx(9)
+cmd_delay(130)
+cmd_load_name(0, END)
+cmd_disp_msg_0(-3, -1, 47) /* 0-47:@Received [EF 91][ITEM F0 FF]![PAUSE 40 00][END] */
+cmd_cfg_member_item(-1, END, 1)
+cmd_delay(64)
+cmd_play_sound_ext(-1, -1)
+cmd_84(0, 0, 2)
+cmd_delay(32)
+END
+END
+cmd_play_sfx(8)
+cmd_delay(80)
+cmd_load_name(0, END)
+cmd_disp_msg_0(-3, -1, 46) /* 0-46:@Got [EF 91][ITEM F0 FF]...[PAUSE 40 00][END] */
+cmd_set_key_item(LOAD_REG(1, -2), 1)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+RET_REG(1, 3)
+END
+SP_ALLOC(3)
+END
+END
+END
+cmd_disp_msg(-3, -1, END) /* local bank msg END */
+END
+END
+cmd_disp_msg_0(-3, -1, 51) /* 0-51:@No problem here.[END] */
+END
+RET_REG(1, 1)
+END
+SP_ALLOC(2)
+LOAD_REG(1, -2)
+END
+END
+cmd_play_sound(752, -1)
+END
+END
+cmd_play_sound(674, -1)
+END
+END
+cmd_play_sound(675, -1)
+END
+END
+cmd_play_sound(1074, -1)
+END
+END
+cmd_play_sound(761, -1)
+END
+END
+cmd_play_sound(762, -1)
+END
+END
+cmd_play_sound(763, -1)
+END
+END
+cmd_play_sound(764, -1)
+END
+END
+cmd_play_sound(765, -1)
+END
+END
+cmd_play_sound(1640, -1)
+END
+END
+cmd_play_sound(768, -1)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_disp_msg(-1, -1, END) /* local bank msg END */
+END
+END
+cmd_set_flag(368, 1)
+END
+RET_REG(1, 2)
+END
+SP_ALLOC(3)
+END
+LOAD_REG(1, 2)
+END
+END
+cmd_play_sound(752, -1)
+END
+END
+cmd_play_sound(1074, -1)
+END
+END
+cmd_play_sound(761, -1)
+END
+END
+cmd_play_sound(762, -1)
+END
+END
+cmd_play_sound(763, -1)
+END
+END
+cmd_play_sound(764, -1)
+END
+END
+cmd_play_sound(765, -1)
+END
+END
+cmd_play_sound(768, -1)
+END
+END
+cmd_play_sound(768, -1)
+END
+END
+cmd_play_sound(768, -1)
+END
+END
+cmd_play_sound(1640, -1)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_disp_msg(-1, -1, END) /* local bank msg END */
+END
+END
+cmd_set_flag(368, 1)
+END
+RET_REG(1, 1)
+SP_ALLOC(3)
+END
+LOAD_REG(1, 2)
+END
+END
+cmd_play_sound(752, -1)
+END
+END
+cmd_play_sound(1074, -1)
+END
+END
+cmd_play_sound(761, -1)
+END
+END
+cmd_play_sound(762, -1)
+END
+END
+cmd_play_sound(763, -1)
+END
+END
+cmd_play_sound(764, -1)
+END
+END
+cmd_play_sound(765, -1)
+END
+END
+cmd_play_sound(768, -1)
+END
+END
+cmd_play_sound(768, -1)
+END
+END
+cmd_play_sound(1640, -1)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_disp_msg(LOAD_REG(1, -2), -1, END) /* local bank msg END */
+RET_REG(1, 2)
+END
+SP_ALLOC(3)
+END
+END
+END
+cmd_disp_msg_0(-3, -1, 135) /* 0-135:@The Happy Box is giving off a wobbling sort of[BREAK]  sound.[END] */
+END
+END
+END
+END
+cmd_disp_msg_0(-3, -1, 135) /* 0-135:@The Happy Box is giving off a wobbling sort of[BREAK]  sound.[END] */
+END
+END
+cmd_disp_msg_0(-3, -1, 135) /* 0-135:@The Happy Box is giving off a wobbling sort of[BREAK]  sound.[END] */
+END
+RET_REG(1, 1)
+END
+SP_ALLOC(2)
+LOAD_REG(1, -1)
+END
+RET_REG(1, 1)
+END
+SP_ALLOC(4)
+END
+END
+END
+END
+END
+END
+END
+cmd_D2(END, 1)
+END
+END
+END
+END
+cmd_play_sound(191, -1)
+cmd_C7(12, 16)
+cmd_play_anim(LOAD_REG(1, 2), 107, 1)
+cmd_delay(32)
+cmd_C8()
+cmd_64(LOAD_REG(1, 2), 0, 0)
+cmd_87(4)
+cmd_play_anim(LOAD_REG(1, 2), 108, 0)
+cmd_06(LOAD_REG(1, 2))
+cmd_64(LOAD_REG(1, 2), 1, 0)
+cmd_play_anim(LOAD_REG(1, 2), 1, 0)
+cmd_set_member_sprite(LOAD_REG(1, 2), 0)
+END
+END
+END
+END
+END
+cmd_D2(END, 0)
+END
+END
+END
+END
+RET_REG(1, 0)
+END
+SP_ALLOC(5)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_5A(LOAD_REG(1, -1), 5)
+cmd_delay(LOAD_REG(1, 3))
+cmd_5A(LOAD_REG(1, -1), 4)
+cmd_delay(LOAD_REG(1, 4))
+END
+END
+END
+cmd_5A(LOAD_REG(1, -1), 1)
+RET_REG(1, 1)
+END
+SP_ALLOC(4)
+END
+END
+cmd_disp_msg_0(-3, -1, 182) /* 0-182:@In only a few seconds, this Instant Revitalizing[BREAK]  Device fully revitalizes you.[END] */
+cmd_set_flag(969, 1)
+END
+cmd_delay(16)
+cmd_37(1)
+cmd_38(-1, -1, 50, 0)
+cmd_disp_msg_0(-3, -1, 183) /* 0-183:@Get into the Instant Revitalizing Device?[WAIT][MENU 02 00][MENUSPACEYES]Yes[MENUSPACENO]No[ENDCHOICES][END] */
+END
+END
+cmd_delay(32)
+END
+END
+cmd_play_sound(1607, -1)
+END
+END
+cmd_play_sound(1396, -1)
+END
+cmd_play_fade(100)
+cmd_46(-1)
+END
+END
+END
+END
+END
+cmd_set_member_sprite(LOAD_REG(1, 2), 0)
+END
+END
+END
+cmd_play_sfx(5)
+cmd_delay(261)
+cmd_set_ailment(-2, 7, 0)
+cmd_party_heal(0)
+cmd_59()
+cmd_fade_in(60)
+cmd_45(-1)
+cmd_delay(100)
+END
+END
+cmd_disp_msg_0(-3, -1, 184) /* 0-184:@You're fully revitalized.[END] */
+END
+END
+cmd_disp_msg_0(-3, -1, 185) /* 0-185:@You're fully revitalized.[END] */
+END
+cmd_set_member_sprite(-2, 0)
+cmd_F7(-2, 0)
+END
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_37(1)
+cmd_38(-1, -1, 50, 0)
+cmd_disp_msg(-1, -1, END) /* local bank msg END */
+END
+END
+cmd_disp_msg(-1, -1, END) /* local bank msg END */
+END
+END
+cmd_84(1, 0, 4)
+cmd_46(-1)
+cmd_play_fade(64)
+cmd_delay(32)
+cmd_play_sound_ext(138, -1)
+cmd_set_bgm(LOAD_REG(1, -1), 80)
+cmd_set_bgm_other(LOAD_REG(1, -1), 139)
+cmd_set_volume(LOAD_REG(1, -1), -1)
+cmd_84(0, 0, 4)
+cmd_play_sound_ext(-1, -1)
+cmd_party_heal(0)
+cmd_delay(80)
+cmd_fade_in(100)
+cmd_45(-1)
+cmd_delay(80)
+cmd_disp_msg(-1, -1, END) /* local bank msg END */
+END
+RET_REG(1, 4)
+END
+SP_ALLOC(2)
+cmd_84(1, 0, END)
+cmd_46(-1)
+cmd_delay(END)
+cmd_play_sound_ext(138, -1)
+cmd_45(-1)
+cmd_play_sound_ext(LOAD_REG(1, -1), -1)
+cmd_84(0, 0, 1)
+RET_REG(1, 2)
+SP_ALLOC(2)
+END
+END
+SP_ALLOC(2)
+RET_REG(1, 1)
+END
+SP_ALLOC(2)
+cmd_load_name(0, END)
+cmd_disp_msg_0(-3, -1, 226) /* 0-226:@There is a slot for money here.[WAIT]@Insert [80 FF F0 FF] DP? [WAIT][MENU 02 00][MENUSPACEYES]Yes[MENUSPACENO]No[ENDCHOICES][END] */
+END
+END
+END
+END
+END
+END
+cmd_play_sound(107, -1)
+cmd_disp_msg_0(-3, -1, 227) /* 0-227:@A [ITEM 6F 00] came out![END] */
+cmd_cfg_member_item(-1, 111, 1)
+cmd_add_pocket(END)
+END
+END
+END
+cmd_disp_msg_0(-3, -1, 229) /* 0-229:@You don't have enough money.[END] */
+END
+END
+END
+END
+cmd_disp_msg_0(-3, -1, 228) /* 0-228:@You can't carry any more stuff.[END] */
+END
+END
+RET_REG(1, 1)
+END
+SP_ALLOC(3)
+cmd_84(1, 0, 4)
+cmd_84(1, 1, 4)
+cmd_delay(64)
+cmd_play_sound(1945, -1)
+END
+END
+cmd_load_name(0, 2)
+END
+END
+cmd_load_name(0, 4)
+END
+END
+END
+cmd_load_name(1, 1)
+END
+END
+END
+END
+cmd_load_name(1, 2)
+END
+END
+END
+END
+cmd_load_name(1, 3)
+END
+END
+END
+END
+cmd_load_name(1, 4)
+END
+END
+END
+END
+cmd_load_name(1, 5)
+END
+END
+END
+END
+cmd_load_name(1, 6)
+END
+cmd_disp_msg_0(-3, -1, 152) /* 0-152:@Something awoke inside [CHAR 23 F0 FF]![END] */
+cmd_delay(32)
+cmd_play_sound(1946, -1)
+cmd_disp_msg_0(-3, -1, 153) /* 0-153:@[CHAR 23 F0 FF] realized the power of[BREAK]  [25 FF F1 FF]![END] */
+cmd_84(1, 0, 2)
+cmd_84(1, 1, 2)
+cmd_delay(32)
+cmd_play_sound_ext(138, -1)
+cmd_play_sound_ext(139, -1)
+cmd_delay(16)
+cmd_play_sound_ext(-1, -1)
+cmd_84(0, 0, 2)
+cmd_84(0, 1, 2)
+cmd_delay(32)
+END
+END
+END
+END
+END
+END
+END
+cmd_set_psi(LOAD_REG(1, 2), END, 1)
+RET_REG(1, 2)
+END
+SP_ALLOC(3)
+END
+END
+cmd_37(1)
+cmd_38(-1, -1, 50, 0)
+cmd_disp_msg_0(-3, -1, 84) /* 0-84:@There's a trash can here.[WAIT]@Look inside it?[WAIT][MENU 02 00][MENUSPACEYES]Yes[MENUSPACENO]No[BREAK][ENDCHOICES][END] */
+END
+END
+cmd_delay(16)
+cmd_play_sound(1594, -1)
+cmd_play_anim(-1, 105, 0)
+cmd_load_name(0, END)
+cmd_disp_msg_0(-3, -1, 243) /* 0-243:@TAAAAAH-DAAAAAH![WAIT]@Inside the trash can, there was[BREAK]  [EF 91][ITEM F0 FF]![END] */
+END
+END
+cmd_delay(16)
+cmd_play_sound(107, -1)
+cmd_cfg_member_item(-1, END, 1)
+END
+END
+END
+cmd_load_name(0, END)
+cmd_load_name(1, END)
+cmd_disp_msg_0(-3, -1, 244) /* 0-244:@[42 FF F1 FF] got [EF 93][ITEM F0 FF]![END] */
+END
+END
+cmd_load_name(0, END)
+cmd_load_name(1, END)
+cmd_disp_msg_0(-3, -1, 245) /* 0-245:@[42 FF F1 FF] got [EF 93][ITEM F0 FF]![WAIT]@Maybe.[END] */
+END
+cmd_set_giftbox_flag(LOAD_REG(1, -1), 1)
+END
+END
+END
+cmd_play_anim(-1, 1, 0)
+cmd_disp_msg_0(-3, -1, 247) /* 0-247:@But you can't carry any more stuff.[END] */
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_disp_msg_0(-3, -1, 62) /* 0-62:@It's empty...[END] */
+END
+RET_REG(1, 2)
+END
+SP_ALLOC(14)
+END
+cmd_DD(61, END)
+END
+END
+END
+cmd_DD(62, END)
+END
+END
+END
+END
+cmd_DD(63, END)
+END
+END
+END
+END
+cmd_DD(64, END)
+END
+cmd_5C(0, END, END)
+cmd_0C(3, END)
+cmd_0C(4, END)
+END
+END
+cmd_5C(1, END, END)
+cmd_0C(5, END)
+cmd_0C(6, END)
+END
+END
+END
+cmd_5C(2, END, END)
+cmd_0C(7, END)
+cmd_0C(8, END)
+END
+END
+END
+cmd_5C(3, END, END)
+cmd_0C(9, END)
+cmd_0C(10, END)
+END
+PUSH(0)
+RET_REG(1, 0)
+END
+SP_ALLOC(14)
+END
+END
+END
+END
+cmd_set_member_sprite(0, END)
+END
+END
+cmd_set_member_sprite(1, END)
+END
+END
+END
+cmd_set_member_sprite(2, END)
+END
+END
+END
+cmd_set_member_sprite(3, END)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_5B(0, END, END)
+END
+END
+cmd_5B(1, END, END)
+END
+END
+END
+cmd_5B(2, END, END)
+END
+END
+END
+cmd_5B(3, END, END)
+END
+cmd_0C(3, 0)
+cmd_0C(4, 0)
+cmd_0C(5, 0)
+cmd_0C(6, 0)
+cmd_0C(7, 0)
+cmd_0C(8, 0)
+cmd_0C(9, 0)
+cmd_0C(10, 0)
+PUSH(0)
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_play_sound(669, -1)
+cmd_delay(8)
+cmd_play_sound(669, -1)
+cmd_delay(8)
+cmd_play_sound(669, -1)
+cmd_delay(32)
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_party_add(3)
+cmd_set_key_item(214, 1)
+cmd_set_key_item(215, 1)
+cmd_set_key_item(216, 1)
+cmd_set_key_item(217, 1)
+cmd_set_key_item(218, 1)
+cmd_set_key_item(219, 1)
+END
+END
+cmd_set_key_item(228, 1)
+END
+END
+END
+cmd_set_key_item(223, 1)
+END
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_party_remove(3)
+END
+END
+cmd_set_key_item(214, -1)
+END
+END
+END
+cmd_set_key_item(215, -1)
+END
+END
+END
+cmd_set_key_item(216, -1)
+END
+END
+END
+cmd_set_key_item(217, -1)
+END
+END
+END
+cmd_set_key_item(218, -1)
+END
+END
+END
+cmd_set_key_item(219, -1)
+END
+END
+END
+END
+END
+cmd_set_key_item(228, -1)
+END
+END
+END
+END
+END
+cmd_set_key_item(223, -1)
+END
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_party_add(4)
+END
+END
+cmd_set_psi(4, -1, 1)
+cmd_set_psi(4, -2, 1)
+END
+RET_REG(1, 1)
+END
+SP_ALLOC(2)
+cmd_party_remove(4)
+RET_REG(1, 0)
+END
+SP_ALLOC(4)
+cmd_party_heal(3)
+END
+END
+END
+END
+END
+cmd_50(LOAD_REG(1, 2), 0, -1, 0)
+cmd_79(LOAD_REG(1, 2))
+END
+END
+END
+RET_REG(1, 0)
+END
+SP_ALLOC(7)
+END
+END
+END
+END
+cmd_2E(END)
+END
+END
+END
+END
+END
+END
+END
+cmd_F7(LOAD_REG(1, 4), END)
+END
+END
+END
+cmd_B7()
+PUSH(0)
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_set_flag(789, END)
+RET_REG(1, 1)
+END
+SP_ALLOC(3)
+END
+cmd_play_sound(1597, -1)
+cmd_58(0, 8, 16)
+cmd_6C(0, 1)
+cmd_linemove(0, END, 2, 1)
+cmd_set_anim_speed(0)
+cmd_50(0, 8, END, 0)
+cmd_64(0, 0, 0)
+cmd_6B(0, END, 1, 8)
+cmd_set_anim_speed(0)
+cmd_6B(0, END, 0, 8)
+cmd_set_anim_speed(0)
+cmd_6C(0, 0)
+cmd_delay(128)
+cmd_64(0, 1, 0)
+cmd_50(0, 7, END, 0)
+cmd_delay(32)
+cmd_50(0, 0, END, 0)
+cmd_delay(32)
+cmd_B7()
+END
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_6D(LOAD_REG(1, -4), 0, END)
+cmd_6D(LOAD_REG(1, -4), 2, END)
+cmd_disp_msg(LOAD_REG(1, -4), -1, END) /* local bank msg END */
+cmd_play_anim(LOAD_REG(1, -4), END, 0)
+RET_REG(1, 4)
+END
+SP_ALLOC(2)
+cmd_disp_msg_0(-3, -1, 252) /* 0-252:@Some sort of waste product.[END] */
+RET_REG(1, 0)
+END
+SP_ALLOC(3)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_5A(LOAD_REG(1, 2), 1)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_5A(LOAD_REG(1, 2), 0)
+END
+END
+RET_REG(1, 1)
+END
+SP_ALLOC(3)
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_play_sound(242, -1)
+cmd_play_anim(-1, 1, 0)
+cmd_disp_msg_0(-3, -1, 53) /* 0-53:@[42 FF 00 00] opened the present.[EVENT][END] */
+cmd_84(1, 0, 1)
+cmd_84(1, 1, 1)
+cmd_delay(32)
+END
+END
+cmd_play_sound(1020, -1)
+cmd_delay(220)
+cmd_set_flag(1056, 1)
+END
+END
+END
+END
+cmd_play_sound(1021, -1)
+cmd_delay(175)
+cmd_set_flag(1057, 1)
+END
+END
+END
+END
+cmd_play_sound(1022, -1)
+cmd_delay(180)
+cmd_set_flag(1058, 1)
+END
+END
+END
+END
+cmd_play_sound(1023, -1)
+cmd_delay(60)
+cmd_set_flag(1059, 1)
+END
+cmd_delay(64)
+cmd_84(0, 0, 1)
+cmd_84(0, 1, 1)
+cmd_disp_msg_0(-3, -1, 205) /* 0-205:@An indescribable smell lingers in the air.[END] */
+END
+END
+cmd_disp_msg_0(-3, -1, 62) /* 0-62:@It's empty...[END] */
+END
+RET_REG(1, 1)
+END
+SP_ALLOC(3)
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_play_sound(242, -1)
+cmd_play_anim(-1, 1, 0)
+cmd_disp_msg_0(-3, -1, 53) /* 0-53:@[42 FF 00 00] opened the present.[EVENT][END] */
+cmd_84(1, 0, 1)
+cmd_84(1, 1, 1)
+cmd_delay(32)
+END
+END
+cmd_play_sound(1024, -1)
+cmd_delay(32)
+cmd_disp_msg_0(-3, -1, 206) /* 0-206:@You heard a mambo rhythm.[PAUSE F0 00][EVENT][END] */
+cmd_set_flag(1060, 1)
+END
+END
+END
+END
+cmd_play_sound(1025, -1)
+cmd_delay(32)
+cmd_disp_msg_0(-3, -1, 207) /* 0-207:@You heard a reggae rhythm.[PAUSE F0 00][EVENT][END] */
+cmd_set_flag(1061, 1)
+END
+END
+END
+END
+cmd_play_sound(1026, -1)
+cmd_delay(32)
+cmd_disp_msg_0(-3, -1, 208) /* 0-208:@You heard a waltz rhythm.[PAUSE F0 00][EVENT][END] */
+cmd_set_flag(1062, 1)
+END
+END
+END
+END
+cmd_play_sound(1027, -1)
+cmd_delay(32)
+cmd_disp_msg_0(-3, -1, 209) /* 0-209:@You heard a boogie-woogie rhythm.[PAUSE F0 00][EVENT][END] */
+cmd_set_flag(1063, 1)
+END
+cmd_delay(128)
+cmd_85(1, 9, 8)
+cmd_delay(64)
+cmd_play_sound_ext(-1, -1)
+cmd_84(0, 0, 4)
+cmd_84(0, 1, 4)
+cmd_delay(64)
+cmd_disp_msg_0(-3, -1, 210) /* 0-210:  Ah.[END] */
+END
+END
+END
+cmd_disp_msg_0(-3, -1, 62) /* 0-62:@It's empty...[END] */
+END
+RET_REG(1, 1)
+END
+SP_ALLOC(4)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_load_name(0, END)
+cmd_disp_msg_0(-3, -1, 82) /* 0-82:@Inside the present, there [EF 97][BREAK]  [EF 91][ITEM F0 FF].[WAIT]@But you can't carry any more stuff.[END] */
+END
+END
+cmd_play_sound(242, -1)
+cmd_play_anim(-1, 1, 0)
+cmd_disp_msg_0(-3, -1, 53) /* 0-53:@[42 FF 00 00] opened the present.[EVENT][END] */
+cmd_play_sound(245, -1)
+cmd_load_name(0, END)
+cmd_disp_msg_0(-3, -1, 45) /* 0-45:@Got [EF 91][ITEM F0 FF]![PAUSE 40 00][END] */
+cmd_cfg_member_item(-1, END, 1)
+END
+END
+cmd_set_flag(1082, 1)
+END
+END
+END
+END
+cmd_set_flag(1083, 1)
+END
+END
+END
+END
+cmd_set_flag(1084, 1)
+END
+END
+END
+END
+cmd_set_flag(1085, 1)
+END
+END
+END
+cmd_disp_msg_0(-3, -1, 62) /* 0-62:@It's empty...[END] */
+END
+RET_REG(1, 1)
+END
+SP_ALLOC(11)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_play_sound(242, -1)
+cmd_play_anim(-1, 1, 0)
+cmd_disp_msg_0(-3, -1, 53) /* 0-53:@[42 FF 00 00] opened the present.[EVENT][END] */
+cmd_84(1, 0, 1)
+cmd_84(1, 1, 1)
+cmd_5C(LOAD_REG(1, 2), END, END)
+END
+END
+END
+END
+END
+cmd_5C(LOAD_REG(1, 4), END, END)
+END
+END
+cmd_63(LOAD_REG(1, 4), 1)
+END
+END
+END
+END
+cmd_delay(32)
+END
+END
+cmd_play_sound(1019, -1)
+cmd_delay(32)
+cmd_5A(LOAD_REG(1, 2), 0)
+cmd_63(LOAD_REG(1, 2), 2)
+cmd_delay(388)
+cmd_5A(LOAD_REG(1, 2), 1)
+cmd_set_flag(1087, 1)
+END
+END
+END
+END
+cmd_play_sound(1018, -1)
+cmd_delay(32)
+cmd_set_flag(996, 1)
+cmd_pan_to_pos(END, END, 64)
+cmd_delay(96)
+cmd_5A(LOAD_REG(1, 2), 0)
+cmd_63(LOAD_REG(1, 2), 1)
+cmd_5A(LOAD_REG(1, 3), 0)
+cmd_63(LOAD_REG(1, 3), 1)
+END
+END
+END
+END
+END
+END
+cmd_6C(LOAD_REG(1, 2), 1)
+cmd_linemove(LOAD_REG(1, 2), 4, 4, 4)
+END
+END
+END
+END
+cmd_linemove(LOAD_REG(1, 2), 4, 3, 2)
+END
+END
+END
+END
+cmd_linemove(LOAD_REG(1, 2), 4, 2, 2)
+END
+END
+END
+END
+cmd_cam_follow_sprite(0)
+cmd_6B(LOAD_REG(1, 2), 4, 1, 8)
+END
+END
+END
+END
+cmd_6B(LOAD_REG(1, 2), 4, 0, 8)
+END
+END
+END
+END
+cmd_5A(LOAD_REG(1, 2), 5)
+cmd_6B(LOAD_REG(1, 2), 4, 0, 8)
+END
+END
+END
+END
+cmd_5A(LOAD_REG(1, 2), 4)
+cmd_play_anim(LOAD_REG(1, 2), 1, 0)
+END
+END
+END
+END
+cmd_5A(LOAD_REG(1, 2), 1)
+END
+END
+END
+cmd_cam_follow_sprite(LOAD_REG(1, 2))
+END
+END
+END
+cmd_5A(LOAD_REG(1, 3), 1)
+END
+cmd_delay(0)
+END
+END
+END
+cmd_delay(80)
+cmd_41(0, 128)
+END
+END
+END
+END
+END
+cmd_set_member_sprite(LOAD_REG(1, 4), 4)
+END
+END
+END
+cmd_delay(128)
+cmd_set_flag(996, 0)
+cmd_set_flag(1086, 1)
+END
+cmd_delay(64)
+cmd_play_sound_ext(138, -1)
+cmd_play_sound_ext(139, -1)
+cmd_play_sound_ext(-1, -1)
+cmd_84(0, 0, 4)
+cmd_84(0, 1, 4)
+cmd_disp_msg_0(-3, -1, 211) /* 0-211:@There were fireworks inside.[WAIT][PAUSE 40 00] ...Ah.[END] */
+END
+END
+END
+END
+END
+END
+cmd_63(LOAD_REG(1, 4), -1)
+END
+END
+END
+cmd_delay(64)
+END
+END
+END
+cmd_disp_msg_0(-3, -1, 62) /* 0-62:@It's empty...[END] */
+END
+RET_REG(1, 1)
+END
+SP_ALLOC(5)
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_play_sound(242, -1)
+cmd_play_anim(-1, 1, 0)
+cmd_disp_msg_0(-3, -1, 53) /* 0-53:@[42 FF 00 00] opened the present.[EVENT][END] */
+cmd_delay(32)
+cmd_3B()
+cmd_5A(LOAD_REG(1, -1), 0)
+LOAD_REG(1, -1)
+END
+END
+END
+cmd_set_flag(1074, 1)
+END
+END
+END
+END
+cmd_set_flag(1075, 1)
+END
+END
+END
+END
+cmd_set_flag(1076, 1)
+END
+END
+END
+END
+cmd_disp_msg_0(-3, -1, 62) /* 0-62:@It's empty...[END] */
+END
+RET_REG(1, 1)
+END
+SP_ALLOC(3)
+END
+cmd_5A(LOAD_REG(1, -1), 0)
+LOAD_REG(1, -1)
+END
+END
+END
+cmd_set_flag(1077, 1)
+END
+END
+END
+END
+cmd_set_flag(1078, 1)
+END
+END
+END
+END
+cmd_set_flag(1079, 1)
+END
+END
+END
+END
+cmd_set_flag(1080, 1)
+END
+END
+RET_REG(1, 1)
+END
+SP_ALLOC(3)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_50(LOAD_REG(1, -2), 2, -1, 0)
+END
+cmd_play_sound(LOAD_REG(1, 2), END)
+cmd_delay(24)
+cmd_play_sound(LOAD_REG(1, 2), END)
+cmd_delay(25)
+cmd_play_sound(LOAD_REG(1, 2), END)
+RET_REG(1, 2)
+END
+SP_ALLOC(2)
+cmd_AD(834, 184, 120, 0)
+END
+END
+cmd_cfg_member(2, -1, 4)
+cmd_68(0, 4)
+cmd_cfg_member(4, -1, 12)
+cmd_68(1, 12)
+cmd_cfg_member(3, -1, 15)
+cmd_68(2, 15)
+cmd_cfg_member(5, -1, 9)
+cmd_68(3, 9)
+cmd_set_flag(1143, 0)
+END
+RET_REG(1, 0)
+END
+SP_ALLOC(9)
+cmd_37(1)
+cmd_38(-1, -1, 50, 0)
+END
+END
+END
+cmd_disp_msg_0(-3, -1, 63) /* 0-63:@You can take a nap on this bed.[WAIT]  Take a quick rest?[WAIT][MENU 02 00][MENUSPACEYES]Yes[MENUSPACENO]No[ENDCHOICES][END] */
+END
+END
+cmd_disp_msg_0(-3, -1, 64) /* 0-64:@You can take a nap on this sofa.[WAIT]  Take a quick rest?[WAIT][MENU 02 00][MENUSPACEYES]Yes[MENUSPACENO]No[ENDCHOICES][END] */
+END
+cmd_delay(16)
+END
+END
+END
+END
+cmd_delay(32)
+cmd_46(-1)
+cmd_84(1, 0, 4)
+cmd_play_fade(64)
+cmd_delay(32)
+cmd_play_sfx(5)
+cmd_delay(261)
+cmd_set_ailment(-2, 7, 0)
+cmd_party_heal(0)
+END
+END
+END
+END
+END
+END
+END
+cmd_set_member_sprite(LOAD_REG(1, 4), 4)
+END
+END
+END
+END
+cmd_set_member_sprite(LOAD_REG(1, 4), 6)
+END
+END
+cmd_set_member_sprite(LOAD_REG(1, 4), 0)
+END
+END
+END
+END
+END
+END
+cmd_5B(0, 336, 144)
+cmd_5C(0, END, END)
+cmd_pan_to_map_pos(-1, END, END)
+END
+END
+cmd_5B(1, END, END)
+END
+END
+END
+cmd_5B(2, END, END)
+END
+END
+END
+cmd_5B(3, END, END)
+END
+END
+END
+END
+END
+cmd_5B(0, 320, 176)
+cmd_5C(0, END, END)
+cmd_pan_to_map_pos(-1, END, END)
+END
+END
+cmd_5B(1, END, END)
+END
+END
+END
+cmd_5B(2, END, END)
+END
+END
+END
+cmd_5B(3, END, END)
+END
+END
+END
+END
+END
+cmd_5B(0, 208, 128)
+cmd_5C(0, END, END)
+cmd_pan_to_map_pos(-1, END, END)
+END
+END
+cmd_5B(1, END, END)
+END
+END
+END
+cmd_5B(2, END, END)
+END
+END
+END
+cmd_5B(3, END, END)
+END
+END
+END
+END
+END
+cmd_5B(0, 176, 160)
+cmd_5C(0, END, END)
+cmd_pan_to_map_pos(-1, END, END)
+END
+END
+cmd_5B(1, END, END)
+END
+END
+END
+cmd_5B(2, END, END)
+END
+END
+END
+cmd_5B(3, END, END)
+END
+END
+END
+END
+END
+cmd_5B(0, 200, 160)
+cmd_5C(0, END, END)
+cmd_pan_to_map_pos(-1, END, END)
+END
+END
+cmd_5B(1, END, END)
+END
+END
+END
+cmd_5B(2, END, END)
+END
+END
+END
+cmd_5B(3, END, END)
+END
+END
+END
+END
+END
+cmd_5B(0, 200, 160)
+cmd_5C(0, END, END)
+cmd_pan_to_map_pos(-1, END, END)
+END
+END
+cmd_5B(1, END, END)
+END
+END
+END
+cmd_5B(2, END, END)
+END
+END
+END
+cmd_5B(3, END, END)
+END
+END
+END
+END
+END
+cmd_5B(0, 160, 256)
+cmd_5C(0, END, END)
+cmd_pan_to_map_pos(-1, END, END)
+END
+END
+cmd_5B(1, END, END)
+END
+END
+END
+cmd_5B(2, END, END)
+END
+END
+END
+cmd_5B(3, END, END)
+END
+END
+END
+END
+END
+cmd_5B(1, END, END)
+END
+END
+END
+cmd_5B(2, END, END)
+END
+END
+END
+cmd_5B(3, END, END)
+END
+cmd_fade_in(60)
+cmd_45(-1)
+cmd_delay(100)
+cmd_disp_msg_0(-3, -1, 65) /* 0-65:@You're fully revitalized.[END] */
+END
+END
+cmd_set_member_sprite(-2, 4)
+cmd_F7(-2, 4)
+END
+END
+END
+END
+cmd_set_member_sprite(-2, 6)
+cmd_F7(-2, 6)
+END
+END
+cmd_set_member_sprite(-2, 0)
+cmd_F7(-2, 0)
+END
+END
+END
+END
+END
+cmd_2E(END)
+END
+cmd_B7()
+END
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_play_sound(669, -1)
+cmd_delay(8)
+cmd_play_sound(669, -1)
+cmd_delay(8)
+cmd_play_sound(669, -1)
+cmd_delay(32)
+cmd_disp_msg_0(-3, -1, 99) /* 0-99:@No one seems to be home.[END] */
+RET_REG(1, 0)
+END
+SP_ALLOC(8)
+cmd_5C(0, END, END)
+END
+END
+cmd_AD(LOAD_REG(1, 6), END, END, END)
+PUSH(0)
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_play_sound(1650, -1)
+cmd_delay(150)
+cmd_8A(0, 65, 32)
+cmd_8A(1, 65, 32)
+cmd_play_sound(959, -1)
+cmd_3A()
+cmd_disp_msg(232, -1, END) /* local bank msg END */
+cmd_87(9)
+cmd_8A(0, -1, 64)
+cmd_8A(1, -1, 64)
+PUSH(0)
+RET_REG(1, 2)
+END
+SP_ALLOC(2)
+cmd_disp_msg(END, -1, END) /* local bank msg END */
+RET_REG(1, 2)
+END
+SP_ALLOC(4)
+END
+END
+END
+END
+END
+cmd_53(LOAD_REG(1, 2), END, END, 1, 0)
+cmd_delay(4)
+cmd_set_anim_speed(LOAD_REG(1, 2))
+cmd_5A(LOAD_REG(1, 2), 1)
+END
+END
+END
+RET_REG(1, 2)
+END
+SP_ALLOC(4)
+END
+END
+END
+END
+END
+cmd_5A(LOAD_REG(1, 2), 0)
+END
+END
+END
+RET_REG(1, 0)
+END
+SP_ALLOC(4)
+END
+END
+END
+END
+END
+END
+cmd_disp_msg_0(-3, -1, 232) /* 0-232:@You're looking pretty handsome, but this is no[BREAK]  time for that.[END] */
+END
+END
+cmd_disp_msg_0(-3, -1, 231) /* 0-231:@Lookin' handsome.[END] */
+END
+END
+END
+END
+END
+cmd_disp_msg_0(-3, -1, 233) /* 0-233:@Your face is pitch black.[END] */
+END
+END
+END
+END
+cmd_disp_msg_0(-3, -1, 231) /* 0-231:@Lookin' handsome.[END] */
+END
+END
+END
+END
+cmd_disp_msg_0(-3, -1, 230) /* 0-230:@The same bed-head as always.[END] */
+END
+END
+END
+END
+cmd_disp_msg_0(-3, -1, 237) /* 0-237:@For a second, you thought some cheeky jerk[BREAK]  was staring back at you.[END] */
+END
+END
+END
+END
+cmd_disp_msg_0(-3, -1, 236) /* 0-236:@Not bad.[END] */
+END
+END
+END
+END
+cmd_disp_msg_0(-3, -1, 234) /* 0-234:@Your whiskers have really grown out.[END] */
+END
+END
+END
+END
+cmd_disp_msg_0(-3, -1, 235) /* 0-235:@What does a smile look like again?[END] */
+END
+RET_REG(1, 0)
+END
+SP_ALLOC(6)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_E0(LOAD_REG(1, 5), 0)
+END
+END
+cmd_set_flag(995, 0)
+cmd_delay(1)
+PUSH(0)
+RET_REG(1, 0)
+END
+SP_ALLOC(6)
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_set_flag(995, 1)
+cmd_delay(0)
+END
+END
+END
+END
+END
+END
+END
+END
+END
+cmd_E0(LOAD_REG(1, 5), 0)
+END
+END
+cmd_set_flag(995, 1)
+cmd_delay(1)
+END
+PUSH(0)
+RET_REG(1, 0)
+END
+SP_ALLOC(2)
+cmd_disp_msg(-3, -1, END) /* local bank msg END */
+RET_REG(1, 1)
+END
+SP_ALLOC(2)
+cmd_play_sound(1074, -1)
+cmd_disp_msg(-1, -1, END) /* local bank msg END */
+cmd_play_sound(1074, -1)
+cmd_disp_msg(-1, -1, END) /* local bank msg END */
+cmd_set_flag(368, 1)
+RET_REG(1, 2)
+SP_ALLOC(1)
+PUSH_REG(1, 0)
+cmd_set_movement_property(1, 1, 1, 0)
+cmd_14(202)
+cmd_31(0, 1, 16, 16, 0)
+cmd_E6(0, 501, 240, 216, 2)
+cmd_cfg_member(1, -1, -1)
+cmd_cfg_member(3, -1, -1)
+cmd_cfg_member(4, -1, -1)
+cmd_set_flag(26, 1)
+cmd_set_flag(32, 0)
+cmd_set_flag(33, 1)
+cmd_set_flag(600, 0)
+cmd_set_flag(555, 1)
+cmd_set_flag(50, 1)
+cmd_0B(20, 2)
+cmd_0B(1, 1)
+cmd_set_flag(356, 1)
+cmd_set_flag(357, 1)
+cmd_set_flag(358, 1)
+cmd_set_flag(359, 1)
+END
+END
+END
+SP_ALLOC(1)
+PUSH_REG(1, 0)
+cmd_set_movement_property(1, 0, 1, 0)
+cmd_14(1)
+cmd_31(0, 1, 0, 0, 0)
+cmd_20(0)
+cmd_set_flag(27, 1)
+cmd_set_bgm(0, 2)
+cmd_set_bgm_other(0, 0)
+cmd_set_bgm(1, 2)
+cmd_set_bgm_other(1, 0)
+cmd_set_bgm(2, 2)
+cmd_set_bgm_other(2, 0)
+cmd_set_bgm(3, 2)
+cmd_set_bgm_other(3, 0)
+END
+END
+SP_ALLOC(1)
+PUSH_REG(1, 0)
+cmd_disp_msg_0(-3, -1, 53) /* 0-53:@[42 FF 00 00] opened the present.[EVENT][END] */
+cmd_play_sound(245, -1)
+cmd_disp_msg_0(-3, -1, 48) /* 0-48:@[42 FF F0 FF] got [EF 11][81 FF]![END] */
+END
+END
+SP_ALLOC(1)
+PUSH_REG(1, 0)
+cmd_disp_msg_0(-3, -1, 53) /* 0-53:@[42 FF 00 00] opened the present.[EVENT][END] */
+cmd_play_sound(245, -1)
+cmd_disp_msg_0(-3, -1, 49) /* 0-49:@[42 FF F0 FF] got [83 FF] [81 FF]s![END] */
+END
+END
+SP_ALLOC(1)
+PUSH_REG(1, 0)
+cmd_disp_msg_0(-3, -1, 53) /* 0-53:@[42 FF 00 00] opened the present.[EVENT][END] */
+cmd_play_sound(231, -1)
+cmd_disp_msg_0(-3, -1, 50) /* 0-50:@[42 FF 00 00] got [82 FF] DP![END] */
+END
+END
+Writing logic

@@ -86,7 +86,7 @@ struct Command {
     virtual void disableInlineAll() { disable_inline = true; }
 
     // Calculate the raw value of this command.
-    virtual u32 toBytes() { return 0; }
+    virtual u32 toBytes() const { return 0; }
 
     template <typename... Args>
     std::string toStringImpl(Args... args) const {
@@ -176,7 +176,7 @@ struct LogicBank {
     static std::unique_ptr<LogicBank> dump(SalsaStream* stream, uintptr_t offset);
 
     // Parse a file containing logic data.
-    static LogicBank parse(SalsaStream* stream);
+    static std::unique_ptr<LogicBank> parse(SalsaStream* stream);
 
     // Find the next non-nulled header.
     auto nextGoodHeader(int cur) {

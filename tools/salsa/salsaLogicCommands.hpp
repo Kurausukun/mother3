@@ -181,9 +181,9 @@ struct ExtendedCommand : Command {
 
         // Write out the message being retrieved by text disp commands
         if (func == 0x32) {
-            ss << " // local bank msg " << args[2]->getValueAsArg();
+            ss << " /* local bank msg " << args[2]->getValueAsArg() << " */";
         } else if (func == 0x33) {
-            ss << " // " << MsgCommentHelper::find_glob_msg(args[2]->getValueAsArg());
+            ss << " /* " << MsgCommentHelper::find_glob_msg(args[2]->getValueAsArg()) << " */";
         }
 
         return ss.str();
@@ -396,6 +396,11 @@ struct SpAllocCommand : Command {
     const char* getFormat() const final { return "(%d)"; }
     std::string toString() const final { return toStringImpl(value); }
     void fromString(const char* str) final { fromStringImpl(str, &value); }
+
+    u32 toBytes() const final {
+        // assert(0);
+        return SpAlloc | (value << 8);
+    }
 
     u32 value = 0;
 };

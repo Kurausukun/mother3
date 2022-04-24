@@ -118,5 +118,17 @@ void salsa_logic_write(SalsaPath& src, SalsaStream& dest) {
     std::cerr << "Parsing logic" << std::endl;
     auto bank = LogicBank::parse(&desc);
 
-    log_results(&bank, true);
+    std::cerr << "Writing logic" << std::endl;
+    dest << "FIX ME SOON" << std::endl;
+
+    /**
+     * first script test
+     */
+
+    SalsaStream out("myscript.bin");
+    for (auto& cmd : bank->blocks[0]->scripts[0]->commands) {
+        out.write<u32>(cmd->toBytes());
+    }
+
+    log_results(bank.get(), true);
 }
