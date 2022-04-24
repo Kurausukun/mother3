@@ -124,31 +124,6 @@ Command* parseCommand(std::string cmd) {
     return c;
 }
 
-std::string PolymorphicCommand::toString() const {
-    std::stringstream ss;
-
-    assert(type < 0x100);
-
-    if (disable_inline) {
-        for (int i = 0; i < getTypeArgc(); i++) {
-            ss << args[i]->toString() << "\n";
-        }
-        ss << getTypeName() << "()";
-    } else {
-        std::string x = getTypeName();
-        std::cerr << "x is " << x << std::endl;
-        ss << x;
-        ss << "(";
-        for (int i = 0; i < getTypeArgc(); i++) {
-            if (i != 0)
-                ss << ", ";
-            ss << args[i]->getValueAsArg();
-        }
-        ss << ")";
-    }
-    return ss.str();
-}
-
 bool MsgCommentHelper::loaded = false;
 std::vector<std::string> MsgCommentHelper::comments;
 

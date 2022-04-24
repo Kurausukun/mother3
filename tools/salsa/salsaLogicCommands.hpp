@@ -38,6 +38,40 @@ struct MsgCommentHelper {
     static std::string find_glob_msg(const std::string& idx) { return find_msg("0", idx); }
 };
 
+struct PolymorphicCommand : Command {
+    PolymorphicCommand() = default;
+    ~PolymorphicCommand() override = default;
+
+    virtual std::string getTypeName() const = 0;
+    virtual u32 getTypeArgc() const = 0;
+
+    std::string toString() const override {
+        std::stringstream ss;
+
+        if (disable_inline) {
+            int n = getTypeArgc();
+            for (int i = 0; i < n; i++) {
+                ss << args[i]->toString() << "\n";
+            }
+            ss << getTypeName() << "()";
+        } else {
+            ss << getTypeName();
+            ss << "(";
+            int n = getTypeArgc();
+            for (int i = 0; i < n; i++) {
+                if (i != 0)
+                    ss << ", ";
+                ss << args[i]->getValueAsArg();
+            }
+            ss << ")";
+        }
+        return ss.str();
+    }
+
+    u32 type = -1;
+    std::vector<Command*> args;
+};
+
 struct Frame2StackCommand : Command {
     Frame2StackCommand() = default;
     ~Frame2StackCommand() final = default;
@@ -70,9 +104,7 @@ struct PushImmCommand : Command {
     void fromStringInline(const char* str) final { sscanf(str, getFormatInline(), &value); }
     std::string getValueAsArg() const final { return mkstr("%d", value); }
 
-    std::vector<u32> toBytes() const final {
-        return {((u32)value << 8) | PushImm};
-    }
+    std::vector<u32> toBytes() const final { return {((u32)value << 8) | PushImm}; }
 
     s32 value = 0;
 };
@@ -115,7 +147,8 @@ struct Stack2FrameCommand : Command {
                 ss << arg->toString() << "\n";
                 ss << getName() << "(" << frame << "," << value << ")";
             } else {
-                ss << getName() << "(" << arg->getValueAsArg() << "," << frame << "," << value << ")";
+                ss << getName() << "(" << arg->getValueAsArg() << "," << frame << "," << value
+                   << ")";
             }
         } else {
             ss << getName() << "(" << frame << "," << value << ")";
@@ -141,19 +174,6 @@ struct Stack2FrameCommand : Command {
     u32 frame = 0;
     s16 value = 0;
     Command* arg = nullptr;
-};
-
-struct PolymorphicCommand : Command {
-    PolymorphicCommand() = default;
-    ~PolymorphicCommand() override = default;
-
-    virtual std::string getTypeName() const = 0;
-    virtual u32 getTypeArgc() const = 0;
-
-    std::string toString() const override;
-
-    u32 type = -1;
-    std::vector<Command*> args;
 };
 
 struct ExtendedCommand : PolymorphicCommand {
@@ -182,13 +202,12 @@ struct ExtendedCommand : PolymorphicCommand {
     }
 
     std::string getTypeName() const final {
-        assert(type < 0x100);
-        std::cerr << "type is " << type << std::endl;
+        assert(type <= 0xFF);
         return ext_cmd_names[type];
     }
 
     u32 getTypeArgc() const final {
-        assert(type < 0x100);
+        assert(type <= 0xFF);
         return logic_argmap[type];
     }
 
@@ -305,9 +324,7 @@ struct ExtendedCommand : PolymorphicCommand {
         return rv;
     }
 
-    // u32 func = -1;
     u32 argc = 0;
-    std::vector<Command*> args;
 };
 
 struct CallfCommand : Command {
@@ -390,12 +407,8 @@ struct RetCommand : Command {
 
     const char* getName() const final { return "RET"; }
     const char* getFormat() const final { return "(%d, %d)"; }
-    std::string toString() const final {
-        return toStringImpl(frame, func);
-    }
-    void fromString(const char* str) final {
-        fromStringImpl(str, &frame, &func);
-    }
+    std::string toString() const final { return toStringImpl(frame, func); }
+    void fromString(const char* str) final { fromStringImpl(str, &frame, &func); }
 
     u32 frame = 0;
     u32 func = 0;
@@ -441,7 +454,7 @@ struct SpAllocCommand : Command {
 
     std::vector<u32> toBytes() const final {
         // assert(0);
-        return { SpAlloc | (value << 8) };
+        return {SpAlloc | (value << 8)};
     }
 
     u32 value = 0;
@@ -460,9 +473,7 @@ struct JumpCommand : Command {
         return ss.str();
     }
 
-    void fromString(const char* str) final {
-        sscanf(str + strlen(getName()), " lbl_%d", &dest);
-    }
+    void fromString(const char* str) final { sscanf(str + strlen(getName()), " lbl_%d", &dest); }
 
     u32 dest = 0;
 };
@@ -481,25 +492,23 @@ struct JumpIfCommand : Command {
         return ss.str();
     }
 
-    void fromString(const char* str) final {
-        sscanf(str + strlen(getName()), " lbl_%d", &dest);
-    }
+    void fromString(const char* str) final { sscanf(str + strlen(getName()), " lbl_%d", &dest); }
 
     u32 dest = 0;
 };
 
-struct MathCommand : Command {
+struct MathCommand : PolymorphicCommand {
     MathCommand() = default;
     ~MathCommand() final = default;
 
     MathCommand(u32 raw) {
-        func = raw >> 8;
-        assert(func <= 0x13);
+        type = raw >> 8;
+        assert(type <= 0x13);
     }
 
     void process(Command::iterator it) final {
         // argument count for the math command
-        argc = math_argmap[func];
+        argc = math_argmap[type];
         if (argc == 0)
             return;
 
@@ -512,29 +521,9 @@ struct MathCommand : Command {
         assert(*it == this);
     }
 
-    std::string toString() const final {
-        std::stringstream ss;
+    std::string getTypeName() const final { return math_cmd_names[type]; }
 
-        if (disable_inline) {
-            for (int i = 0; i < argc; i++) {
-                ss << args[i]->toString() << "\n";
-            }
-            ss << math_cmd_names[func] << "()";
-        } else {
-            ss << math_cmd_names[func];
-            if (argc != 0) {
-                ss << "(";
-                for (int i = 0; i < argc; i++) {
-                    if (i != 0)
-                        ss << ", ";
-                    ss << args[i]->getValueAsArg();
-                }
-                ss << ")";
-            }
-        }
-
-        return ss.str();
-    }
+    u32 getTypeArgc() const final { return math_argmap[type]; }
 
     u32 getArgc() const final { return argc; }
     u32 getCommandCount() const final {
@@ -551,9 +540,7 @@ struct MathCommand : Command {
         }
     }
 
-    u32 func = 0;
     u32 argc = 0;
-    std::vector<Command*> args;
 };
 
 }  // namespace logic

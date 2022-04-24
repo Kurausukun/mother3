@@ -1,4 +1,5 @@
 #include <list>
+#include <sstream>
 #include "salsaLogic.hpp"
 
 using namespace logic;
