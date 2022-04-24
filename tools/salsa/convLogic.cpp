@@ -127,7 +127,10 @@ void salsa_logic_write(SalsaPath& src, SalsaStream& dest) {
 
     SalsaStream out("myscript.bin");
     for (auto& cmd : bank->blocks[0]->scripts[0]->commands) {
-        out.write<u32>(cmd->toBytes());
+        auto bytes = cmd->toBytes();
+        for (auto& b : bytes) {
+            out.write<u32>(b);
+        }
     }
 
     log_results(bank.get(), true);

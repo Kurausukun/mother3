@@ -43,6 +43,9 @@ std::unique_ptr<LogicBank> LogicBank::dump(SalsaStream* stream, uintptr_t offset
 std::unique_ptr<LogicBank> LogicBank::parse(SalsaStream* stream) {
     auto bank = std::make_unique<LogicBank>();
 
+    std::vector<std::string> local_labels;
+    std::vector<std::string> global_labels;
+
     std::string line;
     while (std::getline(*stream, line)) {
         if (line.find("@script") != std::string::npos) {
@@ -62,6 +65,13 @@ std::unique_ptr<LogicBank> LogicBank::parse(SalsaStream* stream) {
                 bank->blocks[block_idx]->scripts.emplace_back(std::make_unique<Script>());
                 bank->blocks[block_idx]->script_count++;
             }
+        } else if (line.find(":") != std::string::npos) {
+            std::string label = line.substr(0, line.find(":"));
+            if (label.find("func") != std::string::npos) {
+                global_labels.emplace_back(label);
+            } else {
+                local_labels.emplace_back(label);
+            }
         } else {
             if (bank->blocks.size() == 0) {
                 std::cerr << "Missing script directive!!" << std::endl;
@@ -71,7 +81,6 @@ std::unique_ptr<LogicBank> LogicBank::parse(SalsaStream* stream) {
             auto& cur_block = bank->blocks.back();
             auto& cur_script = cur_block->scripts.back();
 
-            line = trim_whitespace(line);
             cur_script->append(line);
         }
     }

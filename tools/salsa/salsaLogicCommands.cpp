@@ -81,8 +81,10 @@ Script::Script(SalsaStream* stream, s32 size) {
     // local_targets.unique();
 }
 
-Command* parseCommand(const std::string& cmd) {
+Command* parseCommand(std::string cmd) {
     Command* c = nullptr;
+    cmd = trim_whitespace(cmd);
+
     if (cmd.find("cmd") == 0) {
         c = new ExtendedCommand();
     } else if (cmd.find("LOAD_REG") == 0) {
@@ -95,11 +97,56 @@ Command* parseCommand(const std::string& cmd) {
         c = new RetfCommand();
     } else if (cmd.find("SP_ALLOC") == 0) {
         c = new SpAllocCommand();
-    } else {
+    } else if (cmd.find("LOAD_REG") == 0) {
+        c = new Frame2StackCommand();
+    } else if (cmd.find("PUSH_REG") == 0) {
+        c = new FramePushCommand();
+    } else if (cmd.find("REG_ADDR") == 0) {
+        c = new FrameAddrCommand();
+    } else if (cmd.find("CALL_REG") == 0) {
+        c = new CallfCommand();
+    } else if (cmd.find("FALSE GOTO") == 0) {
+        c = new JumpIfCommand();
+    } else if (cmd.find("RET") == 0) {
+        c = new RetCommand();
+    } else if (cmd.find("STORE_REG") == 0) {
+        c = new Stack2FrameCommand();
+    } else if (cmd.find("GOTO") == 0) {
+        c = new JumpCommand();
+    } else if (cmd.find("CALL") == 0) {
+        c = new CallCommand();
+    } else if (cmd.find("END") == 0) {
         c = new EndCommand();
+    } else {
+        c = new MathCommand();
     }
     c->fromString(cmd.c_str());
     return c;
+}
+
+std::string PolymorphicCommand::toString() const {
+    std::stringstream ss;
+
+    assert(type < 0x100);
+
+    if (disable_inline) {
+        for (int i = 0; i < getTypeArgc(); i++) {
+            ss << args[i]->toString() << "\n";
+        }
+        ss << getTypeName() << "()";
+    } else {
+        std::string x = getTypeName();
+        std::cerr << "x is " << x << std::endl;
+        ss << x;
+        ss << "(";
+        for (int i = 0; i < getTypeArgc(); i++) {
+            if (i != 0)
+                ss << ", ";
+            ss << args[i]->getValueAsArg();
+        }
+        ss << ")";
+    }
+    return ss.str();
 }
 
 bool MsgCommentHelper::loaded = false;

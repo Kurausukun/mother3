@@ -70,6 +70,10 @@ struct PushImmCommand : Command {
     void fromStringInline(const char* str) final { sscanf(str, getFormatInline(), &value); }
     std::string getValueAsArg() const final { return mkstr("%d", value); }
 
+    std::vector<u32> toBytes() const final {
+        return {((u32)value << 8) | PushImm};
+    }
+
     s32 value = 0;
 };
 
@@ -106,11 +110,15 @@ struct Stack2FrameCommand : Command {
 
     std::string toString() const final {
         std::stringstream ss;
-        if (disable_inline) {
-            ss << arg->toString() << "\n";
-            ss << getName() << "(" << frame << "," << value << ")";
+        if (arg != nullptr) {
+            if (disable_inline) {
+                ss << arg->toString() << "\n";
+                ss << getName() << "(" << frame << "," << value << ")";
+            } else {
+                ss << getName() << "(" << arg->getValueAsArg() << "," << frame << "," << value << ")";
+            }
         } else {
-            ss << getName() << "(" << arg->getValueAsArg() << "," << frame << "," << value << ")";
+            ss << getName() << "(" << frame << "," << value << ")";
         }
         return ss.str();
     }
@@ -135,18 +143,31 @@ struct Stack2FrameCommand : Command {
     Command* arg = nullptr;
 };
 
-struct ExtendedCommand : Command {
+struct PolymorphicCommand : Command {
+    PolymorphicCommand() = default;
+    ~PolymorphicCommand() override = default;
+
+    virtual std::string getTypeName() const = 0;
+    virtual u32 getTypeArgc() const = 0;
+
+    std::string toString() const override;
+
+    u32 type = -1;
+    std::vector<Command*> args;
+};
+
+struct ExtendedCommand : PolymorphicCommand {
     ExtendedCommand() = default;
     ~ExtendedCommand() final = default;
 
     ExtendedCommand(u32 raw) {
-        func = raw >> 16;
-        assert(func <= 0xFF);
+        type = raw >> 16;
+        assert(type <= 0xFF);
     }
 
     void process(Command::iterator it) final {
         // Look up the argument count
-        argc = logic_argmap[func];
+        argc = logic_argmap[type];
         if (argc == 0)
             return;
 
@@ -160,29 +181,25 @@ struct ExtendedCommand : Command {
         assert(*it == this);
     }
 
+    std::string getTypeName() const final {
+        assert(type < 0x100);
+        std::cerr << "type is " << type << std::endl;
+        return ext_cmd_names[type];
+    }
+
+    u32 getTypeArgc() const final {
+        assert(type < 0x100);
+        return logic_argmap[type];
+    }
+
     std::string toString() const final {
         std::stringstream ss;
-
-        if (disable_inline) {
-            for (int i = 0; i < argc; i++) {
-                ss << args[i]->toString() << "\n";
-            }
-            ss << ext_cmd_names[func] << "()";
-        } else {
-            ss << ext_cmd_names[func];
-            ss << "(";
-            for (int i = 0; i < argc; i++) {
-                if (i != 0)
-                    ss << ", ";
-                ss << args[i]->getValueAsArg();
-            }
-            ss << ")";
-        }
+        ss << PolymorphicCommand::toString();
 
         // Write out the message being retrieved by text disp commands
-        if (func == 0x32) {
+        if (type == 0x32) {
             ss << " /* local bank msg " << args[2]->getValueAsArg() << " */";
-        } else if (func == 0x33) {
+        } else if (type == 0x33) {
             ss << " /* " << MsgCommentHelper::find_glob_msg(args[2]->getValueAsArg()) << " */";
         }
 
@@ -196,15 +213,15 @@ struct ExtendedCommand : Command {
         auto func_name = s.substr(0, lparen_idx);
         auto args_str = s.substr(lparen_idx + 1, rparen_idx - lparen_idx - 1);
 
-        func =
+        type =
             std::distance(ext_cmd_names.begin(),
                           std::find(ext_cmd_names.begin(), ext_cmd_names.end(), func_name.c_str()));
-        if (func == ext_cmd_names.size()) {
+        if (type == ext_cmd_names.size()) {
             std::cerr << "Unknown extended command: " << str << "\n";
             exit(-1);
         }
 
-        argc = logic_argmap[func];
+        argc = logic_argmap[type];
 
         if (lparen_idx + 1 == rparen_idx) {
             // empty call, do nothing
@@ -278,7 +295,17 @@ struct ExtendedCommand : Command {
         }
     }
 
-    u32 func = 0;
+    std::vector<u32> toBytes() const final {
+        std::vector<u32> rv;
+        for (auto& arg : args) {
+            auto arg_bytes = arg->toBytes();
+            rv.insert(rv.end(), arg_bytes.begin(), arg_bytes.end());
+        }
+        rv.push_back(type << 16 | Extended);
+        return rv;
+    }
+
+    // u32 func = -1;
     u32 argc = 0;
     std::vector<Command*> args;
 };
@@ -292,10 +319,16 @@ struct CallfCommand : Command {
         func = (raw >> 16) & 0xFFFF;
     }
 
+    const char* getName() const final { return "CALL_REG"; }
+
     std::string toString() const final {
         std::stringstream ss;
-        ss << cmd_names[Callf] << "(" << frame << ", func_" << func << ")";
+        ss << getName() << "(" << frame << ", func_" << func << ")";
         return ss.str();
+    }
+
+    void fromString(const char* str) final {
+        sscanf(str + strlen(getName()), " (%d, func_%d)", &frame, &func);
     }
 
     u32 frame = 0;
@@ -329,11 +362,17 @@ struct CallCommand : Command {
         lbl = (raw >> 16) & 0xFFFF;
     }
 
+    const char* getName() const final { return "CALL"; }
+
     std::string toString() const final {
         std::stringstream ss;
-        ss << cmd_names[Call] << "(" << frame << ","
+        ss << getName() << "(" << frame << ","
            << "lbl_" << lbl << ")";
         return ss.str();
+    }
+
+    void fromString(const char* str) final {
+        sscanf(str + strlen(getName()), " (%d, lbl_%d)", &frame, &lbl);
     }
 
     u32 frame = 0;
@@ -349,10 +388,13 @@ struct RetCommand : Command {
         func = (raw >> 16) & 0xFFFF;
     }
 
+    const char* getName() const final { return "RET"; }
+    const char* getFormat() const final { return "(%d, %d)"; }
     std::string toString() const final {
-        std::stringstream ss;
-        ss << cmd_names[Ret] << "(" << frame << "," << func << ")";
-        return ss.str();
+        return toStringImpl(frame, func);
+    }
+    void fromString(const char* str) final {
+        fromStringImpl(str, &frame, &func);
     }
 
     u32 frame = 0;
@@ -397,9 +439,9 @@ struct SpAllocCommand : Command {
     std::string toString() const final { return toStringImpl(value); }
     void fromString(const char* str) final { fromStringImpl(str, &value); }
 
-    u32 toBytes() const final {
+    std::vector<u32> toBytes() const final {
         // assert(0);
-        return SpAlloc | (value << 8);
+        return { SpAlloc | (value << 8) };
     }
 
     u32 value = 0;
@@ -418,6 +460,10 @@ struct JumpCommand : Command {
         return ss.str();
     }
 
+    void fromString(const char* str) final {
+        sscanf(str + strlen(getName()), " lbl_%d", &dest);
+    }
+
     u32 dest = 0;
 };
 
@@ -427,10 +473,16 @@ struct JumpIfCommand : Command {
 
     JumpIfCommand(u32 raw) { dest = raw >> 16; }
 
+    const char* getName() const final { return "FALSE GOTO"; }
+
     std::string toString() const final {
         std::stringstream ss;
-        ss << cmd_names[JumpIf] << " lbl_" << dest;
+        ss << getName() << " lbl_" << dest;
         return ss.str();
+    }
+
+    void fromString(const char* str) final {
+        sscanf(str + strlen(getName()), " lbl_%d", &dest);
     }
 
     u32 dest = 0;

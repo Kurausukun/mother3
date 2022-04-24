@@ -23,7 +23,7 @@ extern const std::vector<std::string> math_cmd_names;
 struct Command;
 struct Script;
 
-Command* parseCommand(const std::string& cmd);
+Command* parseCommand(std::string cmd);
 
 // Base class for logic commands. Logic commands are 4 bytes long.
 struct Command {
@@ -86,7 +86,7 @@ struct Command {
     virtual void disableInlineAll() { disable_inline = true; }
 
     // Calculate the raw value of this command.
-    virtual u32 toBytes() const { return 0; }
+    virtual std::vector<u32> toBytes() const { return {}; }
 
     template <typename... Args>
     std::string toStringImpl(Args... args) const {
@@ -130,7 +130,7 @@ struct Script {
     }
 
     void append(const std::string& rep) {
-        Command* c = parseCommand(rep.c_str());
+        Command* c = parseCommand(rep);
         commands.emplace_back(c);
     }
 
