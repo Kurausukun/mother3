@@ -3,7 +3,7 @@
 
 namespace text {
 
-std::unique_ptr<TextBank> TextBank::dump(SalsaStream* stream, uintptr_t offset,
+std::unique_ptr<TextBank> TextBank::dump(SalsaStream* stream, intptr_t offset,
                                          const std::vector<TextBlockType>& blocktypes) {
     auto bank = std::make_unique<TextBank>();
 
@@ -25,7 +25,7 @@ std::unique_ptr<TextBank> TextBank::dump(SalsaStream* stream, uintptr_t offset,
     bank->total_size = stream->read<u32>();
 
     // dump blocks
-    for (int h = 0; h < bank->headers.size(); h++) {
+    for (size_t h = 0; h < bank->headers.size(); h++) {
         stream->seekg(pad_to<4>(stream->tellg()), std::ios::beg);
         auto& header = bank->headers[h];
 
@@ -56,7 +56,7 @@ void TextBank::calcHeader() {
     }
 
     // calculate offsets for all block headers
-    for (int i = 0; i < block_count; i++) {
+    for (size_t i = 0; i < block_count; i++) {
         auto& block = blocks[i];
         auto& header = headers[i];
         // hack for weird dup/empty edge case!!!!
@@ -86,8 +86,8 @@ TextBank TextBank::parse(SalsaStream* stream, const std::vector<TextBlockType>& 
     while (std::getline(*stream, line)) {
         auto trimmed = line.substr(0, line.find(":"));
         auto message = line.substr(line.find(":") + 1);
-        auto block_idx = std::stoi(trimmed.substr(0, trimmed.find("-")));
-        auto message_idx = std::stoi(trimmed.substr(trimmed.find("-") + 1));
+        size_t block_idx = std::stoi(trimmed.substr(0, trimmed.find("-")));
+        // auto message_idx = std::stoi(trimmed.substr(trimmed.find("-") + 1));
 
         assert(block_idx < blocktypes.size());
 
@@ -111,7 +111,7 @@ TextBank TextBank::parse(SalsaStream* stream, const std::vector<TextBlockType>& 
     }
 
     // fill in the rest of the blocks per spec
-    for (int i = bank.block_count; i < blocktypes.size(); i++) {
+    for (size_t i = bank.block_count; i < blocktypes.size(); i++) {
         switch (blocktypes[i]) {
         case TextBlockType::FixedMsg:
             bank.blocks.emplace_back(std::make_unique<FixedMessageBlock>(0));
@@ -167,7 +167,7 @@ Message Message::dump(SalsaStream* stream, s32 size) {
 
             auto cc = iter->second;
             result.text += "[" + cc.name;
-            for (int i = 0; i < cc.argcount; ++i) {
+            for (u32 i = 0; i < cc.argcount; ++i) {
                 result.text += " " + hex_string(stream->read<u16>());
             }
             result.text += "]";
@@ -198,7 +198,7 @@ void TextBank::parseSingleBlockFile(SalsaStream* stream, TextBlockType blocktype
 
     std::string line;
     while (std::getline(*stream, line)) {
-        auto message_idx = std::stoi(line.substr(0, line.find(':')));
+        // auto message_idx = std::stoi(line.substr(0, line.find(':')));
         auto message = line.substr(line.find(':') + 1);
         cur_block->append(message);
     }
@@ -234,7 +234,7 @@ void TextBank::write(SalsaPath* src, SalsaStream* dest,
         header->write(dest);
     }
     dest->write<s32>(bank.total_size);
-    for (int i = 0; i < bank.blocks.size(); ++i) {
+    for (size_t i = 0; i < bank.blocks.size(); ++i) {
         auto& block = bank.blocks[i];
         if (block->isNulled()) {
             continue;
@@ -266,7 +266,7 @@ std::vector<u16> Message::parse(const std::string& line) {
 
     result.reserve(line.size());
 
-    int i = 0;
+    size_t i = 0;
     while (i < line.size()) {
         unsigned char c = line[i];
         if (c == ' ') {
@@ -292,7 +292,7 @@ std::vector<u16> Message::parse(const std::string& line) {
                 rem.erase(0, cc_name.size() + 1);
                 i += cc_name.size() + 1;
                 result.emplace_back(iter->first);
-                for (int j = 0; j < iter->second.argcount; ++j) {
+                for (size_t j = 0; j < iter->second.argcount; ++j) {
                     std::string arg = rem.substr(0, std::min(rem.find(" "), rem.find("]")));
                     if (arg.empty()) {
                         std::cerr << "Invalid control code: " << line << std::endl;

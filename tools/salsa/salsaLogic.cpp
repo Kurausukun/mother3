@@ -141,7 +141,7 @@ Block::Block(SalsaStream* stream, s32 content_size) {
         scripts.emplace_back(std::make_unique<Script>(stream, headers[5].offset - ((long)stream->tellg() - start)));
     }
 
-    for (int i = 5; i < script_count; i++) {
+    for (size_t i = 5; i < script_count; i++) {
         auto& header = headers[i];
 
         // scripts are in order

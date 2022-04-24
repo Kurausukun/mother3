@@ -201,7 +201,7 @@ struct LogicBank {
     std::vector<std::unique_ptr<Block> > blocks;
 };
 
-static void log_results(LogicBank* bank, bool second = false) {
+[[maybe_unused]] static void log_results(LogicBank* bank, bool second = false) {
     auto f = std::fstream(second ? "first.txt" : "second.txt", std::ios::out | std::ios::trunc);
 
     f << "RESULTS:" << std::endl;

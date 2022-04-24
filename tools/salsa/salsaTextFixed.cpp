@@ -36,7 +36,7 @@ FixedMessageBlock::FixedMessageBlock(s32 message_len) : message_len(message_len)
 FixedMessageBlock::FixedMessageBlock(SalsaStream* stream) {
     message_len = stream->read<u16>();
     u32 num_message = stream->read<u16>();
-    for (int i = 0; i < num_message; i++) {
+    for (size_t i = 0; i < num_message; i++) {
         auto msg = Message::dump(stream, message_len * 2);
         // fixed messages are automatically padded
         while (msg.text.size() >= 5 && msg.text.substr(msg.text.size() - 5) == "[END]") {
@@ -57,7 +57,7 @@ void FixedMessageBlock::write(SalsaStream* stream) {
         for (auto& c : message.text) {
             stream->write<u8>(c);
         }
-        for (int i = 0; i < message_len * 2 - message.text.size(); i += 2) {
+        for (size_t i = 0; i < message_len * 2 - message.text.size(); i += 2) {
             stream->write<u16>(0xFFFF);
         }
     }

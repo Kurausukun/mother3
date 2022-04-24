@@ -33,7 +33,7 @@ void salsa_misctext_read(SalsaStream& src, SalsaPath& dest) {
     dest.replace_extension("");
     std::filesystem::create_directory(dest);
 
-    for (int i = 0; i < bank->block_count; i++) {
+    for (size_t i = 0; i < bank->block_count; i++) {
         auto t = s_block_map[i];
         std::string block_name = t.first;
         TextBlockType blocktype = t.second;
@@ -43,7 +43,7 @@ void salsa_misctext_read(SalsaStream& src, SalsaPath& dest) {
         if (block->isNulled()) {
             continue;
         }
-        for (int j = 0; j < block->messages.size(); ++j) {
+        for (size_t j = 0; j < block->messages.size(); ++j) {
             auto& message = block->messages[j];
 
             file << std::dec << j << ":";

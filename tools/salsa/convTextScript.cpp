@@ -20,12 +20,12 @@ void salsa_maintext_read(SalsaStream& src, SalsaPath& dest) {
     SalsaStream file(dest);
     auto bank = TextBank::dump(&src, cScriptOffset, s_script_spec);
 
-    for (int i = 0; i < bank->block_count; ++i) {
+    for (size_t i = 0; i < bank->block_count; ++i) {
         auto& block = bank->blocks[i];
         if (block->isNulled()) {
             continue;
         }
-        for (int j = 0; j < block->messages.size(); ++j) {
+        for (size_t j = 0; j < block->messages.size(); ++j) {
             auto& message = block->messages[j];
 
             file << std::dec << i << "-" << j << ":";

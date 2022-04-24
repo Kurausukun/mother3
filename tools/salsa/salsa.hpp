@@ -28,7 +28,7 @@ static T sign_extend(T x, const int bits) {
     return (x ^ m) - m;
 }
 
-static std::string trim_whitespace(const std::string& s) {
+[[maybe_unused]] static std::string trim_whitespace(const std::string& s) {
     auto start = s.begin();
     while (start != s.end() && std::isspace(*start)) {
         start++;

@@ -1,4 +1,5 @@
 #include "salsaLogicCommands.hpp"
+#include "salsaLogicPolyCommands.hpp"
 
 namespace logic {
 
