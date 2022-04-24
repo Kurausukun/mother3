@@ -17691,7 +17691,7 @@ sub_08027E0C: @ 0x08027E0C
 	mov r8, r2
 	lsls r0, r0, #0x10
 	lsrs r7, r0, #0x10
-	ldr r4, _08027E44 @ =gScriptLogic
+	ldr r4, _08027E44 @ =_binary_build_mother3_assets_logic_bin_start
 	adds r0, r4, #0
 	movs r1, #0
 	bl sub_0800289C
@@ -17711,7 +17711,7 @@ sub_08027E0C: @ 0x08027E0C
 	ands r0, r1
 	b _08027E50
 	.align 2, 0
-_08027E44: .4byte gScriptLogic
+_08027E44: .4byte _binary_build_mother3_assets_logic_bin_start
 _08027E48: .4byte 0x00003FFF
 _08027E4C:
 	movs r0, #0
@@ -17729,13 +17729,13 @@ _08027E50:
 	thumb_func_start sub_08027E60
 sub_08027E60: @ 0x08027E60
 	push {lr}
-	ldr r0, _08027E70 @ =gScriptLogic
+	ldr r0, _08027E70 @ =_binary_build_mother3_assets_logic_bin_start
 	movs r1, #1
 	bl sub_0800289C
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08027E70: .4byte gScriptLogic
+_08027E70: .4byte _binary_build_mother3_assets_logic_bin_start
 
 	thumb_func_start sub_08027E74
 sub_08027E74: @ 0x08027E74
@@ -17751,7 +17751,7 @@ sub_08027E74: @ 0x08027E74
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
 	mov sb, r1
-	ldr r6, _08027EDC @ =gScriptLogic
+	ldr r6, _08027EDC @ =_binary_build_mother3_assets_logic_bin_start
 	adds r4, #1
 	lsls r5, r4, #1
 	lsls r4, r4, #0x11
@@ -17790,7 +17790,7 @@ sub_08027E74: @ 0x08027E74
 	strh r0, [r2]
 	b _08027EEC
 	.align 2, 0
-_08027EDC: .4byte gScriptLogic
+_08027EDC: .4byte _binary_build_mother3_assets_logic_bin_start
 _08027EE0: .4byte 0x00003FFF
 _08027EE4:
 	movs r0, #0
@@ -17813,7 +17813,7 @@ sub_08027EF8: @ 0x08027EF8
 	lsrs r5, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r6, r2, #0x10
-	ldr r4, _08027F24 @ =gScriptLogic
+	ldr r4, _08027F24 @ =_binary_build_mother3_assets_logic_bin_start
 	lsls r3, r3, #0x11
 	movs r0, #0x80
 	lsls r0, r0, #0xa
@@ -17828,7 +17828,7 @@ sub_08027EF8: @ 0x08027EF8
 	movs r0, #0
 	b _08027F30
 	.align 2, 0
-_08027F24: .4byte gScriptLogic
+_08027F24: .4byte _binary_build_mother3_assets_logic_bin_start
 _08027F28:
 	lsls r0, r5, #1
 	adds r0, r0, r1

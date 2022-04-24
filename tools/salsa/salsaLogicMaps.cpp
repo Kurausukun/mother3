@@ -13,13 +13,10 @@ const std::vector<u8> logic_argmap = {
     2, 1, 1, 1, 2, 3, 5, 2, 1, 1, 5, 1, 1, 2, 2, 3, 1, 1, 5, 2, 3, 2, 0, 2, 0, 0, 0, 0, 0, 1, 2, 2,
 };
 
-/*
 const std::vector<std::string> cmd_names = {
-    "read_reg",      "push",   "push_reg",    "write_reg", "extended",
-    "call_script",   "ret",    "jump_script", "jret",      "end",
-    "write_reg_imm", "add_sp", "jump",        "jz",        "math",
+    "LOAD_REG", "PUSH", "REG_ADDR", "STORE_REG", "EXTENDED", "CALL_REG",   "RET_REG", "CALL",
+    "RET",      "END",  "PUSH_REG", "SP_ALLOC",  "GOTO",     "FALSE GOTO", "MATH",
 };
-*/
 
 const std::vector<std::string> ext_cmd_names = {
     "cmd_delay",
@@ -286,8 +283,5 @@ const std::vector<std::string> math_cmd_names = {
     "neg", "add", "sub", "mul", "div", "mod", "inc",  "dec",     "and",      "or",
     "eq",  "neq", "gt",  "lt",  "gte", "lte", "copy", "popnoop", "popnoop2", "noop",
 };
-
-bool MsgCommentHelper::loaded = false;
-std::vector<std::string> MsgCommentHelper::comments;
 
 }  // namespace logic

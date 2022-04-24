@@ -13,6 +13,8 @@ void salsa_logic_read(SalsaStream& src, SalsaPath& dest) {
     std::cerr << "Reading logic" << std::endl;
     auto bank = LogicBank::dump(&src, cLogicOffset);
 
+    log_results(bank.get());
+
     std::cerr << "Parsing logic" << std::endl;
 
     std::list<u32> combined_globals;
@@ -68,7 +70,7 @@ void salsa_logic_read(SalsaStream& src, SalsaPath& dest) {
         for (int j = 0; j < block->scripts.size(); ++j) {
             auto& script = block->scripts[j];
 
-            desc << "// Script " << i << "-" << j << std::endl;
+            desc << "@script " << i << ", " << j << std::endl;
 
             for (auto& cmd : script->commands) {
                 check_emit_label();
@@ -113,5 +115,8 @@ void salsa_logic_read(SalsaStream& src, SalsaPath& dest) {
 void salsa_logic_write(SalsaPath& src, SalsaStream& dest) {
     SalsaStream desc(src);
 
-    dest << "FIXME" << std::endl;
+    std::cerr << "Parsing logic" << std::endl;
+    auto bank = LogicBank::parse(&desc);
+
+    log_results(&bank, true);
 }

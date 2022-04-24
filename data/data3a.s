@@ -832,6 +832,6 @@ gUnknown_0916CB08::
 gUnknown_0918177C:
     .incbin "baserom.gba", 0x0118177C, 0x17494
 
-    .global gScriptLogic
-gScriptLogic:
-    .incbin "baserom.gba", 0x01198C10, 0x1d1ae4
+//     .global _binary_build_mother3_assets_logic_bin_start
+// _binary_build_mother3_assets_logic_bin_start:
+//     .incbin "baserom.gba", 0x01198C10, 0x1d1ae4

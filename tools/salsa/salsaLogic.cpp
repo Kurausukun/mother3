@@ -40,6 +40,46 @@ std::unique_ptr<LogicBank> LogicBank::dump(SalsaStream* stream, uintptr_t offset
     return bank;
 }
 
+LogicBank LogicBank::parse(SalsaStream* stream) {
+    LogicBank bank;
+
+    std::string line;
+    while (std::getline(*stream, line)) {
+        if (line.find("@script") != std::string::npos) {
+            int block_idx, script_idx;
+            std::sscanf(line.c_str(), "@script %d, %d", &block_idx, &script_idx);
+
+            // construct all blocks up to and including the current index
+            // ones we skipped over are assumed to be nulled
+            std::cerr << "block " << block_idx << " script " << script_idx << std::endl;
+            while (block_idx > bank.block_count - 1) {
+                bank.blocks.emplace_back(std::make_unique<Block>());
+                bank.headers.emplace_back(std::make_unique<BlockHeader>());
+                bank.block_count++;
+            }
+
+            while (script_idx > bank.blocks[block_idx]->script_count - 1) {
+                bank.blocks[block_idx]->scripts.emplace_back(std::make_unique<Script>());
+                bank.blocks[block_idx]->script_count++;
+            }
+        } else {
+            if (bank.blocks.size() == 0) {
+                std::cerr << "Missing script directive!!" << std::endl;
+                exit(-1);
+            }
+
+            auto& cur_block = bank.blocks.back();
+            auto& cur_script = cur_block->scripts.back();
+
+            // line = trim(line);
+            cur_script->append(line);
+        }
+    }
+
+    bank.calcHeader();
+    return bank;
+}
+
 BlockHeader::BlockHeader(SalsaStream* stream) {
     start_script_headers = stream->read<u32>();
     start_scripts = stream->read<u32>();

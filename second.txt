@@ -1,0 +1,4824 @@
+RESULTS:
+Block count = 1001
+Block 0 script count = 20Script 0 content = {
+SP_ALLOC(2)
+cmd_set_bgm(0, 138)
+cmd_set_bgm_other(0, 139)
+cmd_set_volume(0, -1)
+cmd_set_bgm(1, 10)
+cmd_set_bgm_other(1, 133)
+cmd_set_volume(1, 65)
+cmd_set_bgm(2, 10)
+cmd_set_bgm_other(2, 133)
+cmd_set_volume(2, -1)
+cmd_set_bgm(3, 76)
+cmd_set_bgm_other(3, 139)
+cmd_set_volume(3, 65)
+cmd_set_bgm(4, 41)
+cmd_set_bgm_other(4, 133)
+cmd_set_volume(4, 65)
+cmd_set_bgm(5, 76)
+cmd_set_bgm_other(5, 139)
+cmd_set_volume(5, -1)
+cmd_set_bgm(6, 74)
+cmd_set_bgm_other(6, 139)
+cmd_set_volume(6, -1)
+cmd_set_bgm(7, 37)
+cmd_set_bgm_other(7, 139)
+cmd_set_volume(7, -1)
+cmd_set_bgm(8, 62)
+cmd_set_bgm_other(8, 139)
+cmd_set_volume(8, -1)
+cmd_set_bgm(9, 66)
+cmd_set_bgm_other(9, 139)
+cmd_set_volume(9, -1)
+cmd_set_bgm(10, 35)
+cmd_set_bgm_other(10, 139)
+cmd_set_volume(10, -1)
+cmd_set_bgm(11, 36)
+cmd_set_bgm_other(11, 139)
+cmd_set_volume(11, -1)
+cmd_set_bgm(12, 72)
+cmd_set_bgm_other(12, 134)
+cmd_set_volume(12, 65)
+cmd_set_bgm(13, 72)
+cmd_set_bgm_other(13, 134)
+cmd_set_volume(13, -1)
+cmd_set_bgm(14, 75)
+cmd_set_bgm_other(14, 135)
+cmd_set_volume(14, -1)
+cmd_set_bgm(15, 136)
+cmd_set_bgm_other(15, 139)
+cmd_set_volume(15, -1)
+cmd_set_bgm(16, 67)
+cmd_set_bgm_other(16, 139)
+cmd_set_volume(16, -1)
+cmd_set_bgm(17, 6)
+cmd_set_bgm_other(17, 139)
+cmd_set_volume(17, -1)
+cmd_set_bgm(18, 138)
+cmd_set_bgm_other(18, 68)
+cmd_set_volume(18, -1)
+cmd_set_bgm(19, 69)
+cmd_set_bgm_other(19, 197)
+cmd_set_volume(19, -1)
+cmd_set_bgm(20, 170)
+cmd_set_bgm_other(20, 139)
+cmd_set_volume(20, -1)
+cmd_set_bgm(21, 127)
+cmd_set_bgm_other(21, 91)
+cmd_set_volume(21, -1)
+cmd_set_bgm(22, 126)
+cmd_set_bgm_other(22, 139)
+cmd_set_volume(22, -1)
+cmd_set_bgm(23, 138)
+cmd_set_bgm_other(23, 95)
+cmd_set_volume(23, -1)
+cmd_set_bgm(24, 138)
+cmd_set_bgm_other(24, 96)
+cmd_set_volume(24, -1)
+cmd_set_bgm(25, 49)
+cmd_set_bgm_other(25, 91)
+cmd_set_volume(25, -1)
+cmd_set_bgm(26, 49)
+cmd_set_bgm_other(26, 139)
+cmd_set_volume(26, -1)
+cmd_set_bgm(27, 138)
+cmd_set_bgm_other(27, 94)
+cmd_set_volume(27, -1)
+cmd_set_bgm(28, 166)
+cmd_set_bgm_other(28, 139)
+cmd_set_volume(28, -1)
+cmd_set_bgm(29, 158)
+cmd_set_bgm_other(29, 139)
+cmd_set_volume(29, -1)
+cmd_set_bgm(30, 124)
+cmd_set_bgm_other(30, 139)
+cmd_set_volume(30, -1)
+cmd_set_bgm(31, 137)
+cmd_set_bgm_other(31, 139)
+cmd_set_volume(31, -1)
+cmd_set_bgm(32, 128)
+cmd_set_bgm_other(32, 139)
+cmd_set_volume(32, -1)
+cmd_set_bgm(33, 125)
+cmd_set_bgm_other(33, 139)
+cmd_set_volume(33, -1)
+cmd_set_bgm(34, 57)
+cmd_set_bgm_other(34, 139)
+cmd_set_volume(34, -1)
+cmd_set_bgm(35, 138)
+cmd_set_bgm_other(35, 243)
+cmd_set_volume(35, -1)
+cmd_set_bgm(36, 138)
+cmd_set_bgm_other(36, 90)
+cmd_set_volume(36, -1)
+cmd_set_bgm(37, 130)
+cmd_set_bgm_other(37, 139)
+cmd_set_volume(37, -1)
+cmd_set_bgm(38, 29)
+cmd_set_bgm_other(38, 139)
+cmd_set_volume(38, -1)
+cmd_set_bgm(39, 138)
+cmd_set_bgm_other(39, 134)
+cmd_set_volume(39, -1)
+cmd_set_bgm(40, 106)
+cmd_set_bgm_other(40, 139)
+cmd_set_volume(40, -1)
+cmd_set_bgm(41, 138)
+cmd_set_bgm_other(41, 95)
+cmd_set_volume(41, 60)
+cmd_set_bgm(42, 28)
+cmd_set_bgm_other(42, 139)
+cmd_set_volume(42, -1)
+cmd_set_bgm(43, 116)
+cmd_set_bgm_other(43, 139)
+cmd_set_volume(43, -1)
+cmd_set_bgm(44, 117)
+cmd_set_bgm_other(44, 139)
+cmd_set_volume(44, -1)
+cmd_set_bgm(45, 27)
+cmd_set_bgm_other(45, 139)
+cmd_set_volume(45, -1)
+cmd_set_bgm(46, 129)
+cmd_set_bgm_other(46, 139)
+cmd_set_volume(46, -1)
+cmd_set_bgm(47, 63)
+cmd_set_bgm_other(47, 139)
+cmd_set_volume(47, -1)
+cmd_set_bgm(48, 60)
+cmd_set_bgm_other(48, 139)
+cmd_set_volume(48, -1)
+cmd_set_bgm(49, 115)
+cmd_set_bgm_other(49, 139)
+cmd_set_volume(49, -1)
+cmd_set_bgm(50, 26)
+cmd_set_bgm_other(50, 139)
+cmd_set_volume(50, -1)
+cmd_set_bgm(51, 59)
+cmd_set_bgm_other(51, 132)
+cmd_set_volume(51, -1)
+cmd_set_bgm(52, 47)
+cmd_set_bgm_other(52, 139)
+cmd_set_volume(52, -1)
+cmd_set_bgm(53, 21)
+cmd_set_bgm_other(53, 139)
+cmd_set_volume(53, -1)
+cmd_set_bgm(54, 19)
+cmd_set_bgm_other(54, 139)
+cmd_set_volume(54, -1)
+cmd_set_bgm(55, 23)
+cmd_set_bgm_other(55, 139)
+cmd_set_volume(55, -1)
+cmd_set_bgm(56, 24)
+cmd_set_bgm_other(56, 139)
+cmd_set_volume(56, -1)
+cmd_set_bgm(57, 39)
+cmd_set_bgm_other(57, 139)
+cmd_set_volume(57, -1)
+cmd_set_bgm(58, 22)
+cmd_set_bgm_other(58, 139)
+cmd_set_volume(58, -1)
+cmd_set_bgm(59, 18)
+cmd_set_bgm_other(59, 139)
+cmd_set_volume(59, -1)
+cmd_set_bgm(60, 17)
+cmd_set_bgm_other(60, 139)
+cmd_set_volume(60, -1)
+cmd_set_bgm(61, 17)
+cmd_set_bgm_other(61, 102)
+cmd_set_volume(61, -1)
+cmd_set_bgm(62, 17)
+cmd_set_bgm_other(62, 139)
+cmd_set_volume(62, -1)
+cmd_set_bgm(63, 138)
+cmd_set_bgm_other(63, 105)
+cmd_set_volume(63, -1)
+cmd_set_bgm(64, 253)
+cmd_set_bgm_other(64, 139)
+cmd_set_volume(64, -1)
+cmd_set_bgm(65, 138)
+cmd_set_bgm_other(65, 44)
+cmd_set_volume(65, -1)
+cmd_set_bgm(66, 46)
+cmd_set_bgm_other(66, 139)
+cmd_set_volume(66, -1)
+cmd_set_bgm(67, 85)
+cmd_set_bgm_other(67, 139)
+cmd_set_volume(67, -1)
+cmd_set_bgm(68, 52)
+cmd_set_bgm_other(68, 139)
+cmd_set_volume(68, -1)
+cmd_set_bgm(69, 66)
+cmd_set_bgm_other(69, 99)
+cmd_set_volume(69, -1)
+cmd_set_bgm(70, 106)
+cmd_set_bgm_other(70, 88)
+cmd_set_volume(70, -1)
+cmd_set_bgm(71, 53)
+cmd_set_bgm_other(71, 139)
+cmd_set_volume(71, -1)
+cmd_set_bgm(72, 47)
+cmd_set_bgm_other(72, 139)
+cmd_set_volume(72, -1)
+cmd_set_bgm(73, 35)
+cmd_set_bgm_other(73, 139)
+cmd_set_volume(73, -1)
+cmd_set_bgm(74, 35)
+cmd_set_bgm_other(74, 139)
+cmd_set_volume(74, -1)
+cmd_set_bgm(75, 35)
+cmd_set_bgm_other(75, 139)
+cmd_set_volume(75, -1)
+cmd_set_bgm(76, 35)
+cmd_set_bgm_other(76, 139)
+cmd_set_volume(76, -1)
+cmd_set_bgm(77, 85)
+cmd_set_bgm_other(77, 139)
+cmd_set_volume(77, -1)
+cmd_set_bgm(78, 55)
+cmd_set_bgm_other(78, 139)
+cmd_set_volume(78, -1)
+cmd_set_bgm(79, 140)
+cmd_set_bgm_other(79, 139)
+cmd_set_volume(79, -1)
+cmd_set_bgm(80, 56)
+cmd_set_bgm_other(80, 139)
+cmd_set_volume(80, -1)
+cmd_set_bgm(81, 66)
+cmd_set_bgm_other(81, 105)
+cmd_set_volume(81, -1)
+cmd_set_bgm(82, 67)
+cmd_set_bgm_other(82, 184)
+cmd_set_volume(82, -1)
+cmd_set_bgm(83, 129)
+cmd_set_bgm_other(83, 182)
+cmd_set_volume(83, -1)
+cmd_set_bgm(84, 21)
+cmd_set_bgm_other(84, 139)
+cmd_set_volume(84, -1)
+cmd_set_bgm(85, 144)
+cmd_set_bgm_other(85, 139)
+cmd_set_volume(85, -1)
+cmd_set_bgm(86, 143)
+cmd_set_bgm_other(86, 139)
+cmd_set_volume(86, -1)
+cmd_set_bgm(87, 54)
+cmd_set_bgm_other(87, 139)
+cmd_set_volume(87, -1)
+cmd_set_bgm(88, 21)
+cmd_set_bgm_other(88, 235)
+cmd_set_volume(88, -1)
+cmd_set_bgm(89, 145)
+cmd_set_bgm_other(89, 139)
+cmd_set_volume(89, -1)
+cmd_set_bgm(90, 115)
+cmd_set_bgm_other(90, 139)
+cmd_set_volume(90, -1)
+cmd_set_bgm(91, 118)
+cmd_set_bgm_other(91, 139)
+cmd_set_volume(91, -1)
+cmd_set_bgm(92, 39)
+cmd_set_bgm_other(92, 139)
+cmd_set_volume(92, -1)
+cmd_set_bgm(93, 150)
+cmd_set_bgm_other(93, 139)
+cmd_set_volume(93, -1)
+cmd_set_bgm(94, 146)
+cmd_set_bgm_other(94, 139)
+cmd_set_volume(94, -1)
+cmd_set_bgm(95, 147)
+cmd_set_bgm_other(95, 139)
+cmd_set_volume(95, -1)
+cmd_set_bgm(96, 138)
+cmd_set_bgm_other(96, 68)
+cmd_set_volume(96, -1)
+cmd_set_bgm(97, 7)
+cmd_set_bgm_other(97, 139)
+cmd_set_volume(97, -1)
+cmd_set_bgm(98, 151)
+cmd_set_bgm_other(98, 139)
+cmd_set_volume(98, -1)
+cmd_set_bgm(99, 152)
+cmd_set_bgm_other(99, 139)
+cmd_set_volume(99, -1)
+cmd_set_bgm(100, 154)
+cmd_set_bgm_other(100, 139)
+cmd_set_volume(100, -1)
+cmd_set_bgm(101, 149)
+cmd_set_bgm_other(101, 139)
+cmd_set_volume(101, -1)
+cmd_set_bgm(102, 153)
+cmd_set_bgm_other(102, 139)
+cmd_set_volume(102, -1)
+cmd_set_bgm(103, 129)
+cmd_set_bgm_other(103, 139)
+cmd_set_volume(103, -1)
+cmd_set_bgm(104, 154)
+cmd_set_bgm_other(104, 139)
+cmd_set_volume(104, -1)
+cmd_set_bgm(105, 60)
+cmd_set_bgm_other(105, 139)
+cmd_set_volume(105, -1)
+cmd_set_bgm(106, 60)
+cmd_set_bgm_other(106, 139)
+cmd_set_volume(106, -1)
+cmd_set_bgm(107, 60)
+cmd_set_bgm_other(107, 139)
+cmd_set_volume(107, -1)
+cmd_set_bgm(108, 154)
+cmd_set_bgm_other(108, 86)
+cmd_set_volume(108, -1)
+cmd_set_bgm(109, 148)
+cmd_set_bgm_other(109, 139)
+cmd_set_volume(109, -1)
+cmd_set_bgm(110, 254)
+cmd_set_bgm_other(110, 105)
+cmd_set_volume(110, -1)
+cmd_set_bgm(111, 161)
+cmd_set_bgm_other(111, 139)
+cmd_set_volume(111, -1)
+cmd_set_bgm(112, 87)
+cmd_set_bgm_other(112, 139)
+cmd_set_volume(112, -1)
+cmd_set_bgm(113, 161)
+cmd_set_bgm_other(113, 139)
+cmd_set_volume(113, -1)
+cmd_set_bgm(114, 166)
+cmd_set_bgm_other(114, 91)
+cmd_set_volume(114, -1)
+cmd_set_bgm(115, 26)
+cmd_set_bgm_other(115, 105)
+cmd_set_volume(115, -1)
+cmd_set_bgm(116, 10)
+cmd_set_bgm_other(116, 139)
+cmd_set_volume(116, -1)
+cmd_set_bgm(117, 49)
+cmd_set_bgm_other(117, 184)
+cmd_set_volume(117, -1)
+cmd_set_bgm(118, 185)
+cmd_set_bgm_other(118, 139)
+cmd_set_volume(118, -1)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_set_bgm(8, 10)
+cmd_set_bgm_other(8, 139)
+cmd_set_volume(8, -1)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_set_bgm(6, 34)
+cmd_set_bgm_other(6, 111)
+cmd_set_volume(6, 15)
+cmd_set_bgm(8, 72)
+cmd_set_bgm_other(8, 139)
+cmd_set_volume(8, -1)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_set_bgm(1, 138)
+cmd_set_bgm_other(1, 135)
+cmd_set_volume(1, -1)
+cmd_set_bgm(2, 138)
+cmd_set_bgm_other(2, 135)
+cmd_set_volume(2, -1)
+cmd_set_bgm(3, 138)
+cmd_set_bgm_other(3, 111)
+cmd_set_volume(3, -1)
+cmd_set_bgm(4, 138)
+cmd_set_bgm_other(4, 111)
+cmd_set_volume(4, -1)
+cmd_set_bgm(6, 74)
+cmd_set_bgm_other(6, 111)
+cmd_set_volume(6, -1)
+cmd_set_bgm(8, 138)
+cmd_set_bgm_other(8, 135)
+cmd_set_volume(8, -1)
+cmd_set_bgm(11, 36)
+cmd_set_bgm_other(11, 111)
+cmd_set_volume(11, -1)
+cmd_set_bgm(116, 138)
+cmd_set_bgm_other(116, 135)
+cmd_set_volume(116, -1)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_set_bgm(1, 75)
+cmd_set_bgm_other(1, 135)
+cmd_set_volume(1, -1)
+cmd_set_bgm(2, 75)
+cmd_set_bgm_other(2, 135)
+cmd_set_volume(2, -1)
+cmd_set_bgm(3, 75)
+cmd_set_bgm_other(3, 111)
+cmd_set_volume(3, -1)
+cmd_set_bgm(4, 123)
+cmd_set_bgm_other(4, 111)
+cmd_set_volume(4, -1)
+cmd_set_bgm(6, 74)
+cmd_set_bgm_other(6, 111)
+cmd_set_volume(6, -1)
+cmd_set_bgm(8, 75)
+cmd_set_bgm_other(8, 135)
+cmd_set_volume(8, -1)
+cmd_set_bgm(11, 36)
+cmd_set_bgm_other(11, 111)
+cmd_set_volume(11, -1)
+cmd_set_bgm(12, 75)
+cmd_set_bgm_other(12, 135)
+cmd_set_volume(12, -1)
+cmd_set_bgm(13, 75)
+cmd_set_bgm_other(13, 135)
+cmd_set_volume(13, -1)
+cmd_set_bgm(116, 75)
+cmd_set_bgm_other(116, 135)
+cmd_set_volume(116, -1)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_set_bgm(3, 76)
+cmd_set_bgm_other(3, 139)
+cmd_set_volume(3, -1)
+cmd_set_bgm(14, 77)
+cmd_set_bgm_other(14, 97)
+cmd_set_volume(14, -1)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_set_bgm(1, 78)
+cmd_set_bgm_other(1, 139)
+cmd_set_volume(1, -1)
+cmd_set_bgm(2, 78)
+cmd_set_bgm_other(2, 139)
+cmd_set_volume(2, -1)
+cmd_set_bgm(3, 138)
+cmd_set_bgm_other(3, 91)
+cmd_set_volume(3, 65)
+cmd_set_bgm(4, 41)
+cmd_set_bgm_other(4, 139)
+cmd_set_volume(4, -1)
+cmd_set_bgm(6, 74)
+cmd_set_bgm_other(6, 139)
+cmd_set_volume(6, -1)
+cmd_set_bgm(8, 78)
+cmd_set_bgm_other(8, 139)
+cmd_set_volume(8, -1)
+cmd_set_bgm(11, 36)
+cmd_set_bgm_other(11, 139)
+cmd_set_volume(11, -1)
+cmd_set_bgm(12, 167)
+cmd_set_bgm_other(12, 139)
+cmd_set_volume(12, -1)
+cmd_set_bgm(13, 167)
+cmd_set_bgm_other(13, 139)
+cmd_set_volume(13, -1)
+cmd_set_bgm(14, 167)
+cmd_set_bgm_other(14, 139)
+cmd_set_volume(14, -1)
+cmd_set_bgm(116, 78)
+cmd_set_bgm_other(116, 139)
+cmd_set_volume(116, -1)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_set_bgm(1, 79)
+cmd_set_bgm_other(1, 139)
+cmd_set_volume(1, -1)
+cmd_set_bgm(2, 79)
+cmd_set_bgm_other(2, 139)
+cmd_set_volume(2, -1)
+cmd_set_bgm(8, 79)
+cmd_set_bgm_other(8, 139)
+cmd_set_volume(8, -1)
+cmd_set_bgm(116, 79)
+cmd_set_bgm_other(116, 139)
+cmd_set_volume(116, -1)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_set_bgm(1, 252)
+cmd_set_bgm_other(1, 139)
+cmd_set_volume(1, -1)
+cmd_set_bgm(2, 252)
+cmd_set_bgm_other(2, 139)
+cmd_set_volume(2, -1)
+cmd_set_bgm(8, 252)
+cmd_set_bgm_other(8, 139)
+cmd_set_volume(8, -1)
+cmd_set_bgm(14, 252)
+cmd_set_bgm_other(14, 139)
+cmd_set_volume(14, -1)
+cmd_set_bgm(116, 252)
+cmd_set_bgm_other(116, 139)
+cmd_set_volume(116, -1)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_set_bgm(64, 76)
+cmd_set_bgm_other(64, 139)
+cmd_set_volume(64, 65)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_set_bgm(1, 168)
+cmd_set_bgm_other(1, 97)
+cmd_set_volume(1, -1)
+cmd_set_bgm(2, 168)
+cmd_set_bgm_other(2, 97)
+cmd_set_volume(2, -1)
+cmd_set_bgm(5, 64)
+cmd_set_bgm_other(5, 139)
+cmd_set_volume(5, -1)
+cmd_set_bgm(8, 168)
+cmd_set_bgm_other(8, 97)
+cmd_set_volume(8, -1)
+cmd_set_bgm(72, 35)
+cmd_set_bgm_other(72, 139)
+cmd_set_volume(72, -1)
+cmd_set_bgm(116, 168)
+cmd_set_bgm_other(116, 97)
+cmd_set_volume(116, -1)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_set_bgm(5, 64)
+cmd_set_bgm_other(5, 139)
+cmd_set_volume(5, -1)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_set_bgm(1, 168)
+cmd_set_bgm_other(1, 139)
+cmd_set_volume(1, -1)
+cmd_set_bgm(2, 168)
+cmd_set_bgm_other(2, 139)
+cmd_set_volume(2, -1)
+cmd_set_bgm(5, 64)
+cmd_set_bgm_other(5, 139)
+cmd_set_volume(5, -1)
+cmd_set_bgm(8, 168)
+cmd_set_bgm_other(8, 139)
+cmd_set_volume(8, -1)
+cmd_set_bgm(18, 67)
+cmd_set_bgm_other(18, 139)
+cmd_set_volume(18, -1)
+cmd_set_bgm(116, 168)
+cmd_set_bgm_other(116, 139)
+cmd_set_volume(116, -1)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_set_bgm(5, 64)
+cmd_set_bgm_other(5, 139)
+cmd_set_volume(5, -1)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_set_bgm(1, 65)
+cmd_set_bgm_other(1, 139)
+cmd_set_volume(1, -1)
+cmd_set_bgm(2, 65)
+cmd_set_bgm_other(2, 139)
+cmd_set_volume(2, -1)
+cmd_set_bgm(5, 74)
+cmd_set_bgm_other(5, 139)
+cmd_set_volume(5, -1)
+cmd_set_bgm(8, 65)
+cmd_set_bgm_other(8, 139)
+cmd_set_volume(8, -1)
+cmd_set_bgm(17, 67)
+cmd_set_bgm_other(17, 139)
+cmd_set_volume(17, -1)
+cmd_set_bgm(116, 65)
+cmd_set_bgm_other(116, 139)
+cmd_set_volume(116, -1)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_set_bgm(5, 74)
+cmd_set_bgm_other(5, 139)
+cmd_set_volume(5, -1)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_set_bgm(1, 170)
+cmd_set_bgm_other(1, 139)
+cmd_set_volume(1, -1)
+cmd_set_bgm(2, 170)
+cmd_set_bgm_other(2, 139)
+cmd_set_volume(2, -1)
+cmd_set_bgm(5, 76)
+cmd_set_bgm_other(5, 139)
+cmd_set_volume(5, -1)
+cmd_set_bgm(8, 170)
+cmd_set_bgm_other(8, 139)
+cmd_set_volume(8, -1)
+cmd_set_bgm(116, 170)
+cmd_set_bgm_other(116, 139)
+cmd_set_volume(116, -1)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_set_bgm(2, 175)
+cmd_set_bgm_other(2, 139)
+cmd_set_volume(2, -1)
+cmd_set_bgm(116, 175)
+cmd_set_bgm_other(116, 139)
+cmd_set_volume(116, -1)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_set_bgm(1, 173)
+cmd_set_bgm_other(1, 139)
+cmd_set_volume(1, -1)
+cmd_set_bgm(2, 173)
+cmd_set_bgm_other(2, 139)
+cmd_set_volume(2, -1)
+cmd_set_bgm(8, 173)
+cmd_set_bgm_other(8, 139)
+cmd_set_volume(8, -1)
+cmd_set_bgm(12, 167)
+cmd_set_bgm_other(12, 139)
+cmd_set_volume(12, -1)
+cmd_set_bgm(116, 173)
+cmd_set_bgm_other(116, 139)
+cmd_set_volume(116, -1)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_set_bgm(13, 167)
+cmd_set_bgm_other(13, 101)
+cmd_set_volume(13, -1)
+cmd_set_bgm(116, 173)
+cmd_set_bgm_other(116, 101)
+cmd_set_volume(116, -1)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_set_bgm(1, 121)
+cmd_set_bgm_other(1, 139)
+cmd_set_volume(1, -1)
+cmd_set_bgm(2, 121)
+cmd_set_bgm_other(2, 139)
+cmd_set_volume(2, -1)
+cmd_set_bgm(3, 179)
+cmd_set_bgm_other(3, 139)
+cmd_set_volume(3, -1)
+cmd_set_bgm(4, 181)
+cmd_set_bgm_other(4, 139)
+cmd_set_volume(4, -1)
+cmd_set_bgm(5, 76)
+cmd_set_bgm_other(5, 139)
+cmd_set_volume(5, -1)
+cmd_set_bgm(6, 178)
+cmd_set_bgm_other(6, 139)
+cmd_set_volume(6, -1)
+cmd_set_bgm(7, 180)
+cmd_set_bgm_other(7, 139)
+cmd_set_volume(7, -1)
+cmd_set_bgm(8, 121)
+cmd_set_bgm_other(8, 139)
+cmd_set_volume(8, -1)
+cmd_set_bgm(12, 82)
+cmd_set_bgm_other(12, 139)
+cmd_set_volume(12, -1)
+cmd_set_bgm(13, 82)
+cmd_set_bgm_other(13, 139)
+cmd_set_volume(13, -1)
+cmd_set_bgm(14, 82)
+cmd_set_bgm_other(14, 139)
+cmd_set_volume(14, -1)
+cmd_set_bgm(18, 138)
+cmd_set_bgm_other(18, 68)
+cmd_set_volume(18, -1)
+cmd_set_bgm(20, 49)
+cmd_set_bgm_other(20, 139)
+cmd_set_volume(20, -1)
+cmd_set_bgm(51, 121)
+cmd_set_bgm_other(51, 132)
+cmd_set_volume(51, -1)
+cmd_set_bgm(64, 76)
+cmd_set_bgm_other(64, 139)
+cmd_set_volume(64, 65)
+cmd_set_bgm(65, 138)
+cmd_set_bgm_other(65, 44)
+cmd_set_volume(65, -1)
+cmd_set_bgm(116, 121)
+cmd_set_bgm_other(116, 139)
+cmd_set_volume(116, -1)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_set_bgm(1, 122)
+cmd_set_bgm_other(1, 139)
+cmd_set_volume(1, -1)
+cmd_set_bgm(2, 122)
+cmd_set_bgm_other(2, 139)
+cmd_set_volume(2, -1)
+cmd_set_bgm(8, 122)
+cmd_set_bgm_other(8, 139)
+cmd_set_volume(8, -1)
+cmd_set_bgm(51, 59)
+cmd_set_bgm_other(51, 132)
+cmd_set_volume(51, -1)
+cmd_set_bgm(116, 122)
+cmd_set_bgm_other(116, 139)
+cmd_set_volume(116, -1)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_set_bgm(4, 80)
+cmd_set_bgm_other(4, 139)
+cmd_set_volume(4, -1)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_set_bgm(4, 181)
+cmd_set_bgm_other(4, 139)
+cmd_set_volume(4, -1)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_set_bgm(21, 127)
+cmd_set_bgm_other(21, 97)
+cmd_set_volume(21, -1)
+cmd_set_bgm(25, 49)
+cmd_set_bgm_other(25, 97)
+cmd_set_volume(25, -1)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_set_bgm(21, 127)
+cmd_set_bgm_other(21, 91)
+cmd_set_volume(21, -1)
+cmd_set_bgm(25, 49)
+cmd_set_bgm_other(25, 91)
+cmd_set_volume(25, -1)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_set_bgm(27, 165)
+cmd_set_bgm_other(27, 139)
+cmd_set_volume(27, -1)
+cmd_set_bgm(66, 138)
+cmd_set_bgm_other(66, 139)
+cmd_set_volume(66, -1)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_set_bgm(40, 138)
+cmd_set_bgm_other(40, 200)
+cmd_set_volume(40, -1)
+cmd_set_bgm(41, 138)
+cmd_set_bgm_other(41, 95)
+cmd_set_volume(41, 70)
+cmd_set_bgm(69, 106)
+cmd_set_bgm_other(69, 95)
+cmd_set_volume(69, 70)
+cmd_set_bgm(70, 138)
+cmd_set_bgm_other(70, 200)
+cmd_set_volume(70, -1)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_set_bgm(40, 106)
+cmd_set_bgm_other(40, 139)
+cmd_set_volume(40, -1)
+cmd_set_bgm(41, 138)
+cmd_set_bgm_other(41, 95)
+cmd_set_volume(41, 70)
+cmd_set_bgm(69, 138)
+cmd_set_bgm_other(69, 95)
+cmd_set_volume(69, 70)
+cmd_set_bgm(70, 106)
+cmd_set_bgm_other(70, 88)
+cmd_set_volume(70, -1)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_set_bgm(1, 20)
+cmd_set_bgm_other(1, 139)
+cmd_set_volume(1, -1)
+cmd_set_bgm(2, 20)
+cmd_set_bgm_other(2, 139)
+cmd_set_volume(2, -1)
+cmd_set_bgm(3, 20)
+cmd_set_bgm_other(3, 139)
+cmd_set_volume(3, -1)
+cmd_set_bgm(4, 20)
+cmd_set_bgm_other(4, 139)
+cmd_set_volume(4, -1)
+cmd_set_bgm(5, 20)
+cmd_set_bgm_other(5, 139)
+cmd_set_volume(5, -1)
+cmd_set_bgm(6, 20)
+cmd_set_bgm_other(6, 139)
+cmd_set_volume(6, -1)
+cmd_set_bgm(7, 20)
+cmd_set_bgm_other(7, 139)
+cmd_set_volume(7, -1)
+cmd_set_bgm(8, 20)
+cmd_set_bgm_other(8, 139)
+cmd_set_volume(8, -1)
+cmd_set_bgm(12, 20)
+cmd_set_bgm_other(12, 139)
+cmd_set_volume(12, -1)
+cmd_set_bgm(14, 20)
+cmd_set_bgm_other(14, 139)
+cmd_set_volume(14, -1)
+cmd_set_bgm(51, 20)
+cmd_set_bgm_other(51, 132)
+cmd_set_volume(51, -1)
+cmd_set_bgm(65, 20)
+cmd_set_bgm_other(65, 139)
+cmd_set_volume(65, -1)
+cmd_set_bgm(116, 20)
+cmd_set_bgm_other(116, 139)
+cmd_set_volume(116, -1)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_set_bgm(14, 13)
+cmd_set_bgm_other(14, 139)
+cmd_set_volume(14, -1)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_set_bgm(14, 20)
+cmd_set_bgm_other(14, 139)
+cmd_set_volume(14, -1)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_set_bgm(44, 138)
+cmd_set_bgm_other(44, 139)
+cmd_set_volume(44, -1)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_set_bgm(47, 138)
+cmd_set_bgm_other(47, 139)
+cmd_set_volume(47, -1)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_set_bgm(50, 138)
+cmd_set_bgm_other(50, 139)
+cmd_set_volume(50, -1)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_set_bgm(81, 155)
+cmd_set_bgm_other(81, 139)
+cmd_set_volume(81, -1)
+cmd_set_bgm(97, 155)
+cmd_set_bgm_other(97, 139)
+cmd_set_volume(97, -1)
+cmd_set_bgm(99, 155)
+cmd_set_bgm_other(99, 139)
+cmd_set_volume(99, -1)
+cmd_set_bgm(80, 155)
+cmd_set_bgm_other(80, 139)
+cmd_set_volume(80, -1)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_set_bgm(81, 138)
+cmd_set_bgm_other(81, 105)
+cmd_set_volume(81, -1)
+cmd_set_bgm(97, 7)
+cmd_set_bgm_other(97, 139)
+cmd_set_volume(97, -1)
+cmd_set_bgm(99, 152)
+cmd_set_bgm_other(99, 139)
+cmd_set_volume(99, -1)
+cmd_set_bgm(80, 56)
+cmd_set_bgm_other(80, 139)
+cmd_set_volume(80, -1)
+RET_REG(1, 0)
+SP_ALLOC(10)
+cmd_play_sound(1061, -1)
+cmd_75(18, 16, 8)
+cmd_set_palettes(0, 144, 0)
+cmd_63(LOAD_REG(1, -1), 1)
+cmd_50(LOAD_REG(1, -1), 3, -1, 1)
+cmd_5C(0, REG_ADDR(1, 2), REG_ADDR(1, 3))
+cmd_56(LOAD_REG(1, -1), sub(LOAD_REG(1, 2), 16), sub(sub(LOAD_REG(1, 3), 16), 16), 96)
+cmd_set_anim_speed(LOAD_REG(1, -1))
+gte(cmd_5F(LOAD_REG(1, -1)), 4)
+FALSE GOTO lbl_2479
+cmd_play_anim(LOAD_REG(1, -1), 105, 0)
+GOTO lbl_2483
+cmd_play_anim(LOAD_REG(1, -1), 106, 0)
+cmd_6C(LOAD_REG(1, -1), 1)
+cmd_6B(LOAD_REG(1, -1), 4, 0, 8)
+cmd_set_anim_speed(LOAD_REG(1, -1))
+cmd_6C(LOAD_REG(1, -1), 0)
+cmd_set_palettes(1, 32, 0)
+STORE_REG(0,1,8)
+STORE_REG(4,1,9)
+gt(LOAD_REG(1, 8), 20)
+FALSE GOTO lbl_2537
+or(eq(LOAD_REG(1, 8), 4), or(eq(LOAD_REG(1, 8), 8), eq(LOAD_REG(1, 8), 12)))
+FALSE GOTO lbl_2523
+STORE_REG(dec(LOAD_REG(1, 9)),1,9)
+cmd_5A(LOAD_REG(1, -1), 4)
+cmd_delay(LOAD_REG(1, 9))
+cmd_5A(LOAD_REG(1, -1), 5)
+cmd_delay(LOAD_REG(1, 9))
+STORE_REG(inc(LOAD_REG(1, 8)),1,8)
+GOTO lbl_2504
+cmd_75(24, 32, 24)
+cmd_set_palettes(0, 24, 0)
+cmd_play_sound(1062, -1)
+cmd_set_palettes(1, 24, 0)
+STORE_REG(0,1,5)
+STORE_REG(6,1,6)
+STORE_REG(40,1,7)
+gt(LOAD_REG(1, 5), LOAD_REG(1, 7))
+FALSE GOTO lbl_2580
+STORE_REG(cmd_AE(100),1,4)
+or(gt(LOAD_REG(1, 5), LOAD_REG(1, 6)), gt(LOAD_REG(1, 4), 90))
+FALSE GOTO lbl_2578
+STORE_REG(inc(LOAD_REG(1, 5)),1,5)
+GOTO lbl_2558
+GOTO lbl_2579
+GOTO lbl_2580
+GOTO lbl_2558
+cmd_heal_pp(-2, LOAD_REG(1, 5))
+cmd_delay(32)
+cmd_3A()
+cmd_disp_msg_0(-3, -1, 87) // 0-87:@The magic butterfly made everyone in[BREAK]  [42 FF 00 00]'s party relax.[END]
+cmd_5A(LOAD_REG(1, -1), 1)
+cmd_set_flag(379, 1)
+RET(1,1)
+SP_ALLOC(7)
+STORE_REG(cmd_push_map_id(),1,2)
+eq(LOAD_REG(1, 2), 1)
+FALSE GOTO lbl_2609
+STORE_REG(496,1,3)
+STORE_REG(512,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 2)
+FALSE GOTO lbl_2618
+STORE_REG(320,1,3)
+STORE_REG(96,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 7)
+FALSE GOTO lbl_2627
+STORE_REG(400,1,3)
+STORE_REG(1152,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 12)
+FALSE GOTO lbl_2636
+STORE_REG(208,1,3)
+STORE_REG(296,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 13)
+FALSE GOTO lbl_2645
+STORE_REG(128,1,3)
+STORE_REG(528,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 17)
+FALSE GOTO lbl_2654
+STORE_REG(368,1,3)
+STORE_REG(864,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 18)
+FALSE GOTO lbl_2663
+STORE_REG(176,1,3)
+STORE_REG(608,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 20)
+FALSE GOTO lbl_2672
+STORE_REG(176,1,3)
+STORE_REG(608,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 21)
+FALSE GOTO lbl_2681
+STORE_REG(624,1,3)
+STORE_REG(608,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 24)
+FALSE GOTO lbl_2690
+STORE_REG(256,1,3)
+STORE_REG(368,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 25)
+FALSE GOTO lbl_2699
+STORE_REG(800,1,3)
+STORE_REG(704,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 27)
+FALSE GOTO lbl_2708
+STORE_REG(592,1,3)
+STORE_REG(680,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 29)
+FALSE GOTO lbl_2717
+STORE_REG(176,1,3)
+STORE_REG(448,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 30)
+FALSE GOTO lbl_2726
+STORE_REG(496,1,3)
+STORE_REG(512,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 31)
+FALSE GOTO lbl_2735
+STORE_REG(480,1,3)
+STORE_REG(192,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 32)
+FALSE GOTO lbl_2744
+STORE_REG(304,1,3)
+STORE_REG(352,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 35)
+FALSE GOTO lbl_2753
+STORE_REG(784,1,3)
+STORE_REG(464,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 41)
+FALSE GOTO lbl_2762
+STORE_REG(528,1,3)
+STORE_REG(432,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 42)
+FALSE GOTO lbl_2771
+STORE_REG(448,1,3)
+STORE_REG(656,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 47)
+FALSE GOTO lbl_2780
+STORE_REG(352,1,3)
+STORE_REG(384,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 49)
+FALSE GOTO lbl_2789
+STORE_REG(368,1,3)
+STORE_REG(304,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 53)
+FALSE GOTO lbl_2798
+STORE_REG(64,1,3)
+STORE_REG(816,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 54)
+FALSE GOTO lbl_2807
+STORE_REG(320,1,3)
+STORE_REG(368,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 57)
+FALSE GOTO lbl_2816
+STORE_REG(608,1,3)
+STORE_REG(416,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 60)
+FALSE GOTO lbl_2825
+STORE_REG(240,1,3)
+STORE_REG(368,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 71)
+FALSE GOTO lbl_2834
+STORE_REG(208,1,3)
+STORE_REG(296,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 76)
+FALSE GOTO lbl_2843
+STORE_REG(208,1,3)
+STORE_REG(296,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 77)
+FALSE GOTO lbl_2852
+STORE_REG(176,1,3)
+STORE_REG(520,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 78)
+FALSE GOTO lbl_2861
+STORE_REG(352,1,3)
+STORE_REG(592,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 79)
+FALSE GOTO lbl_2870
+STORE_REG(96,1,3)
+STORE_REG(976,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 82)
+FALSE GOTO lbl_2879
+STORE_REG(160,1,3)
+STORE_REG(352,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 83)
+FALSE GOTO lbl_2888
+STORE_REG(160,1,3)
+STORE_REG(352,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 85)
+FALSE GOTO lbl_2897
+STORE_REG(208,1,3)
+STORE_REG(352,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 87)
+FALSE GOTO lbl_2906
+STORE_REG(352,1,3)
+STORE_REG(208,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 90)
+FALSE GOTO lbl_2915
+STORE_REG(368,1,3)
+STORE_REG(864,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 95)
+FALSE GOTO lbl_2924
+STORE_REG(512,1,3)
+STORE_REG(288,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 97)
+FALSE GOTO lbl_2933
+STORE_REG(144,1,3)
+STORE_REG(432,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 98)
+FALSE GOTO lbl_2942
+STORE_REG(464,1,3)
+STORE_REG(336,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 106)
+FALSE GOTO lbl_2951
+STORE_REG(240,1,3)
+STORE_REG(176,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 123)
+FALSE GOTO lbl_2960
+STORE_REG(176,1,3)
+STORE_REG(176,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 130)
+FALSE GOTO lbl_2969
+STORE_REG(240,1,3)
+STORE_REG(144,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 170)
+FALSE GOTO lbl_2978
+STORE_REG(240,1,3)
+STORE_REG(144,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 174)
+FALSE GOTO lbl_2987
+STORE_REG(352,1,3)
+STORE_REG(592,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 180)
+FALSE GOTO lbl_2996
+STORE_REG(160,1,3)
+STORE_REG(312,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 181)
+FALSE GOTO lbl_3005
+STORE_REG(512,1,3)
+STORE_REG(288,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 191)
+FALSE GOTO lbl_3014
+STORE_REG(160,1,3)
+STORE_REG(312,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 196)
+FALSE GOTO lbl_3023
+STORE_REG(144,1,3)
+STORE_REG(160,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 209)
+FALSE GOTO lbl_3032
+STORE_REG(496,1,3)
+STORE_REG(512,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 210)
+FALSE GOTO lbl_3041
+STORE_REG(320,1,3)
+STORE_REG(96,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 218)
+FALSE GOTO lbl_3050
+STORE_REG(192,1,3)
+STORE_REG(576,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 228)
+FALSE GOTO lbl_3059
+STORE_REG(256,1,3)
+STORE_REG(368,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 254)
+FALSE GOTO lbl_3068
+STORE_REG(176,1,3)
+STORE_REG(128,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 257)
+FALSE GOTO lbl_3077
+STORE_REG(272,1,3)
+STORE_REG(352,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 302)
+FALSE GOTO lbl_3086
+STORE_REG(208,1,3)
+STORE_REG(112,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 308)
+FALSE GOTO lbl_3095
+STORE_REG(208,1,3)
+STORE_REG(192,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 318)
+FALSE GOTO lbl_3104
+STORE_REG(240,1,3)
+STORE_REG(128,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 320)
+FALSE GOTO lbl_3113
+STORE_REG(320,1,3)
+STORE_REG(160,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 327)
+FALSE GOTO lbl_3122
+STORE_REG(128,1,3)
+STORE_REG(560,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 343)
+FALSE GOTO lbl_3131
+STORE_REG(176,1,3)
+STORE_REG(160,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 345)
+FALSE GOTO lbl_3140
+STORE_REG(160,1,3)
+STORE_REG(96,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 364)
+FALSE GOTO lbl_3149
+STORE_REG(224,1,3)
+STORE_REG(128,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 380)
+FALSE GOTO lbl_3158
+STORE_REG(640,1,3)
+STORE_REG(144,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 387)
+FALSE GOTO lbl_3167
+STORE_REG(624,1,3)
+STORE_REG(480,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 420)
+FALSE GOTO lbl_3176
+STORE_REG(432,1,3)
+STORE_REG(320,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 430)
+FALSE GOTO lbl_3185
+STORE_REG(480,1,3)
+STORE_REG(176,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 440)
+FALSE GOTO lbl_3194
+STORE_REG(272,1,3)
+STORE_REG(336,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 442)
+FALSE GOTO lbl_3203
+STORE_REG(416,1,3)
+STORE_REG(320,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 443)
+FALSE GOTO lbl_3212
+STORE_REG(576,1,3)
+STORE_REG(480,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 454)
+FALSE GOTO lbl_3221
+STORE_REG(288,1,3)
+STORE_REG(176,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 457)
+FALSE GOTO lbl_3230
+STORE_REG(256,1,3)
+STORE_REG(160,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 461)
+FALSE GOTO lbl_3239
+STORE_REG(208,1,3)
+STORE_REG(256,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 465)
+FALSE GOTO lbl_3248
+STORE_REG(160,1,3)
+STORE_REG(352,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 466)
+FALSE GOTO lbl_3257
+STORE_REG(192,1,3)
+STORE_REG(208,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 473)
+FALSE GOTO lbl_3266
+STORE_REG(232,1,3)
+STORE_REG(280,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 501)
+FALSE GOTO lbl_3275
+STORE_REG(288,1,3)
+STORE_REG(160,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 505)
+FALSE GOTO lbl_3284
+STORE_REG(128,1,3)
+STORE_REG(168,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 620)
+FALSE GOTO lbl_3293
+STORE_REG(432,1,3)
+STORE_REG(144,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 624)
+FALSE GOTO lbl_3302
+STORE_REG(304,1,3)
+STORE_REG(176,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 637)
+FALSE GOTO lbl_3311
+STORE_REG(208,1,3)
+STORE_REG(208,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 644)
+FALSE GOTO lbl_3320
+STORE_REG(208,1,3)
+STORE_REG(224,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 646)
+FALSE GOTO lbl_3329
+STORE_REG(160,1,3)
+STORE_REG(224,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 653)
+FALSE GOTO lbl_3338
+STORE_REG(272,1,3)
+STORE_REG(224,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 660)
+FALSE GOTO lbl_3347
+STORE_REG(208,1,3)
+STORE_REG(176,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 664)
+FALSE GOTO lbl_3356
+STORE_REG(432,1,3)
+STORE_REG(144,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 801)
+FALSE GOTO lbl_3365
+STORE_REG(192,1,3)
+STORE_REG(144,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 802)
+FALSE GOTO lbl_3374
+STORE_REG(480,1,3)
+STORE_REG(368,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 815)
+FALSE GOTO lbl_3383
+STORE_REG(192,1,3)
+STORE_REG(128,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 824)
+FALSE GOTO lbl_3392
+STORE_REG(144,1,3)
+STORE_REG(144,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 834)
+FALSE GOTO lbl_3401
+STORE_REG(240,1,3)
+STORE_REG(128,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 845)
+FALSE GOTO lbl_3410
+STORE_REG(16,1,3)
+STORE_REG(16,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 851)
+FALSE GOTO lbl_3419
+STORE_REG(240,1,3)
+STORE_REG(144,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 856)
+FALSE GOTO lbl_3428
+STORE_REG(240,1,3)
+STORE_REG(176,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 858)
+FALSE GOTO lbl_3437
+STORE_REG(240,1,3)
+STORE_REG(144,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 863)
+FALSE GOTO lbl_3446
+STORE_REG(208,1,3)
+STORE_REG(208,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 874)
+FALSE GOTO lbl_3455
+STORE_REG(208,1,3)
+STORE_REG(144,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 879)
+FALSE GOTO lbl_3464
+STORE_REG(832,1,3)
+STORE_REG(432,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 883)
+FALSE GOTO lbl_3473
+STORE_REG(272,1,3)
+STORE_REG(144,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 885)
+FALSE GOTO lbl_3482
+STORE_REG(144,1,3)
+STORE_REG(336,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 886)
+FALSE GOTO lbl_3491
+STORE_REG(128,1,3)
+STORE_REG(544,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 887)
+FALSE GOTO lbl_3500
+STORE_REG(128,1,3)
+STORE_REG(288,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 888)
+FALSE GOTO lbl_3509
+STORE_REG(128,1,3)
+STORE_REG(544,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 889)
+FALSE GOTO lbl_3518
+STORE_REG(128,1,3)
+STORE_REG(560,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 890)
+FALSE GOTO lbl_3527
+STORE_REG(128,1,3)
+STORE_REG(560,1,4)
+GOTO lbl_3540
+eq(LOAD_REG(1, 2), 899)
+FALSE GOTO lbl_3536
+STORE_REG(432,1,3)
+STORE_REG(944,1,4)
+GOTO lbl_3540
+cmd_5C(0, REG_ADDR(1, 3), REG_ADDR(1, 4))
+STORE_REG(add(LOAD_REG(1, 3), 8),1,5)
+STORE_REG(add(LOAD_REG(1, 4), 16),1,6)
+eq(LOAD_REG(1, 2), 72)
+FALSE GOTO lbl_3558
+cmd_AD(57, 600, 416, 4)
+GOTO lbl_3563
+cmd_AD(LOAD_REG(1, 2), LOAD_REG(1, 5), LOAD_REG(1, 6), 0)
+PUSH(0)
+RET(1,0)
+SP_ALLOC(2)
+CALL(0,lbl_2597)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_disp_msg_0(-3, -1, 51) // 0-51:@No problem here.[END]
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_37(1)
+cmd_38(-1, -1, 50, 0)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_37(1)
+cmd_38(-1, -1, 46, 0)
+RET_REG(1, 0)
+SP_ALLOC(4)
+STORE_REG(177,1,3)
+eq(cmd_E3(LOAD_REG(1, 3)), 1)
+FALSE GOTO lbl_3624
+cmd_cfg_member_item(-1, LOAD_REG(1, 3), 1)
+STORE_REG(cmd_E3(-1),1,2)
+cmd_load_name(0, LOAD_REG(1, 3))
+cmd_load_name(1, LOAD_REG(1, 2))
+cmd_play_sound(108, -1)
+cmd_disp_msg_0(-3, -1, 44) // 0-44:@[42 FF F1 FF] got [EF 91][ITEM F0 FF]![PAUSE 40 00][END]
+cmd_5A(-1, 1)
+GOTO lbl_3631
+cmd_load_name(0, LOAD_REG(1, 3))
+cmd_disp_msg_0(-3, -1, 76) // 0-76:@You can't carry any more stuff.[END]
+RET_REG(1, 0)
+SP_ALLOC(3)
+cmd_disp_msg_0(-3, -1, 51) // 0-51:@No problem here.[END]
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_37(1)
+cmd_38(-1, -1, 50, 0)
+cmd_disp_msg_0(-3, -1, 83) // 0-83:@There's a vending machine here.[WAIT]@Would you like to use it? [WAIT][MENU 02 00][MENUSPACEYES]Yes[MENUSPACENO]No[BREAK][ENDCHOICES][END]
+eq(cmd_get_msg_choice(), 0)
+FALSE GOTO lbl_3665
+eq(cmd_push_flag(533), 0)
+FALSE GOTO lbl_3662
+cmd_set_flag(533, 1)
+cmd_open_shop(LOAD_REG(1, -1), 1)
+RET_REG(1, 1)
+SP_ALLOC(2)
+cmd_37(1)
+cmd_38(-1, -1, 50, 0)
+cmd_disp_msg(-1, -1, LOAD_REG(1, -3)) // local bank msg LOAD_REG(1, -3)
+eq(cmd_get_msg_choice(), 0)
+FALSE GOTO lbl_3699
+cmd_open_shop(LOAD_REG(1, -4), 1)
+cmd_3A()
+cmd_disp_msg(-1, -1, LOAD_REG(1, -2)) // local bank msg LOAD_REG(1, -2)
+eq(cmd_push_flag(533), 0)
+FALSE GOTO lbl_3698
+cmd_set_flag(533, 1)
+GOTO lbl_3703
+cmd_disp_msg(-1, -1, LOAD_REG(1, -1)) // local bank msg LOAD_REG(1, -1)
+RET_REG(1, 4)
+SP_ALLOC(2)
+cmd_37(1)
+cmd_38(-1, -1, 50, 0)
+cmd_disp_msg(LOAD_REG(1, -5), -1, LOAD_REG(1, -3)) // local bank msg LOAD_REG(1, -3)
+eq(cmd_get_msg_choice(), 0)
+FALSE GOTO lbl_3737
+cmd_open_shop(LOAD_REG(1, -4), 1)
+cmd_3A()
+cmd_disp_msg(LOAD_REG(1, -5), -1, LOAD_REG(1, -2)) // local bank msg LOAD_REG(1, -2)
+eq(cmd_push_flag(533), 0)
+FALSE GOTO lbl_3736
+cmd_set_flag(533, 1)
+GOTO lbl_3741
+cmd_disp_msg(LOAD_REG(1, -5), -1, LOAD_REG(1, -1)) // local bank msg LOAD_REG(1, -1)
+RET_REG(1, 5)
+SP_ALLOC(2)
+cmd_66(LOAD_REG(1, -1), 1)
+cmd_6B(LOAD_REG(1, -1), 2, 1, 1)
+cmd_set_anim_speed(LOAD_REG(1, -1))
+cmd_6B(LOAD_REG(1, -1), 6, 1, 2)
+cmd_set_anim_speed(LOAD_REG(1, -1))
+cmd_6B(LOAD_REG(1, -1), 2, 1, 2)
+cmd_set_anim_speed(LOAD_REG(1, -1))
+cmd_6B(LOAD_REG(1, -1), 6, 1, 1)
+cmd_set_anim_speed(LOAD_REG(1, -1))
+cmd_66(LOAD_REG(1, -1), 0)
+RET_REG(1, 1)
+SP_ALLOC(4)
+STORE_REG(176,1,3)
+eq(cmd_E3(LOAD_REG(1, 3)), 1)
+FALSE GOTO lbl_3810
+cmd_cfg_member_item(-1, LOAD_REG(1, 3), 1)
+STORE_REG(cmd_E3(-1),1,2)
+cmd_load_name(0, LOAD_REG(1, 3))
+cmd_load_name(1, LOAD_REG(1, 2))
+cmd_play_sound(108, -1)
+cmd_disp_msg_0(-3, -1, 44) // 0-44:@[42 FF F1 FF] got [EF 91][ITEM F0 FF]![PAUSE 40 00][END]
+cmd_5A(-1, 1)
+GOTO lbl_3817
+cmd_load_name(0, LOAD_REG(1, 3))
+cmd_disp_msg_0(-3, -1, 76) // 0-76:@You can't carry any more stuff.[END]
+RET_REG(1, 0)
+SP_ALLOC(4)
+STORE_REG(93,1,3)
+eq(cmd_E3(LOAD_REG(1, 3)), 1)
+FALSE GOTO lbl_3850
+cmd_cfg_member_item(-1, LOAD_REG(1, 3), 1)
+STORE_REG(cmd_E3(-1),1,2)
+cmd_load_name(0, LOAD_REG(1, 3))
+cmd_load_name(1, LOAD_REG(1, 2))
+cmd_play_sound(108, -1)
+cmd_disp_msg_0(-3, -1, 44) // 0-44:@[42 FF F1 FF] got [EF 91][ITEM F0 FF]![PAUSE 40 00][END]
+cmd_5A(-1, 1)
+GOTO lbl_3857
+cmd_load_name(0, LOAD_REG(1, 3))
+cmd_disp_msg_0(-3, -1, 76) // 0-76:@You can't carry any more stuff.[END]
+RET_REG(1, 0)
+SP_ALLOC(5)
+cmd_party_heal(3)
+cmd_play_sound(186, -1)
+STORE_REG(0,1,3)
+STORE_REG(cmd_get_party_size(),1,4)
+neq(LOAD_REG(1, 3), LOAD_REG(1, 4))
+FALSE GOTO lbl_3937
+STORE_REG(cmd_get_talker_sprite(LOAD_REG(1, 3)),1,2)
+eq(LOAD_REG(1, 2), 4)
+FALSE GOTO lbl_3884
+cmd_play_anim(LOAD_REG(1, 3), 137, 0)
+GOTO lbl_3928
+eq(LOAD_REG(1, 2), 9)
+FALSE GOTO lbl_3893
+cmd_play_anim(LOAD_REG(1, 3), 137, 0)
+GOTO lbl_3928
+eq(LOAD_REG(1, 2), 11)
+FALSE GOTO lbl_3902
+cmd_play_anim(LOAD_REG(1, 3), 114, 0)
+GOTO lbl_3928
+eq(LOAD_REG(1, 2), 12)
+FALSE GOTO lbl_3911
+cmd_play_anim(LOAD_REG(1, 3), 137, 0)
+GOTO lbl_3928
+eq(LOAD_REG(1, 2), 14)
+FALSE GOTO lbl_3920
+cmd_play_anim(LOAD_REG(1, 3), 106, 0)
+GOTO lbl_3928
+eq(LOAD_REG(1, 2), 15)
+FALSE GOTO lbl_3928
+cmd_play_anim(LOAD_REG(1, 3), 126, 0)
+cmd_DA(LOAD_REG(1, 3), -1)
+cmd_delay(20)
+STORE_REG(inc(LOAD_REG(1, 3)),1,3)
+GOTO lbl_3868
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_play_sound(242, -1)
+cmd_5A(LOAD_REG(1, -1), 0)
+cmd_63(LOAD_REG(1, -1), 1)
+cmd_play_anim(LOAD_REG(1, -1), 109, 0)
+cmd_play_anim(LOAD_REG(1, -2), 107, 0)
+cmd_delay(44)
+cmd_play_sound(616, -1)
+cmd_delay(54)
+cmd_play_sound(622, -1)
+cmd_delay(96)
+cmd_play_anim(LOAD_REG(1, -2), 108, 0)
+cmd_5A(LOAD_REG(1, -1), 1)
+cmd_play_anim(LOAD_REG(1, -1), 1, 0)
+cmd_set_ailment(-2, 6, 1)
+cmd_set_flag(634, 1)
+RET_REG(1, 2)
+SP_ALLOC(3)
+cmd_37(1)
+cmd_38(-1, -1, 50, 0)
+cmd_disp_msg_0(-1, -1, LOAD_REG(1, -3)) // Unknown Message ???
+eq(cmd_get_msg_choice(), 0)
+FALSE GOTO lbl_4044
+cmd_play_fade(60)
+cmd_46(-1)
+cmd_play_sfx(5)
+cmd_delay(261)
+cmd_party_heal(0)
+cmd_set_ailment(-2, 7, 0)
+cmd_59()
+cmd_set_member_sprite(-2, 0)
+cmd_F7(-2, 0)
+cmd_45(-1)
+cmd_fade_in(60)
+cmd_delay(30)
+eq(cmd_get_party_size(), 1)
+FALSE GOTO lbl_4039
+cmd_disp_msg_0(-1, -1, 93) // 0-93:@You're fully revitalized.[END]
+GOTO lbl_4043
+cmd_disp_msg_0(-1, -1, LOAD_REG(1, -2)) // Unknown Message ???
+GOTO lbl_4048
+cmd_disp_msg_0(-1, -1, LOAD_REG(1, -1)) // Unknown Message ???
+RET_REG(1, 3)
+SP_ALLOC(3)
+cmd_37(1)
+cmd_38(-1, -1, 50, 0)
+cmd_disp_msg(-1, -1, LOAD_REG(1, -3)) // local bank msg LOAD_REG(1, -3)
+eq(cmd_get_msg_choice(), 0)
+FALSE GOTO lbl_4097
+cmd_play_fade(60)
+cmd_46(-1)
+cmd_play_sfx(5)
+cmd_delay(261)
+cmd_party_heal(0)
+cmd_set_ailment(-2, 7, 0)
+cmd_59()
+cmd_set_member_sprite(-2, 0)
+cmd_F7(-2, 0)
+cmd_45(-1)
+cmd_fade_in(60)
+cmd_delay(30)
+cmd_disp_msg(-1, -1, LOAD_REG(1, -2)) // local bank msg LOAD_REG(1, -2)
+GOTO lbl_4101
+cmd_disp_msg(-1, -1, LOAD_REG(1, -1)) // local bank msg LOAD_REG(1, -1)
+RET_REG(1, 3)
+SP_ALLOC(4)
+eq(cmd_0E(4), 0)
+FALSE GOTO lbl_4178
+cmd_37(1)
+cmd_38(-1, -1, 50, 0)
+eq(LOAD_REG(1, -2), -1)
+FALSE GOTO lbl_4124
+cmd_disp_msg_0(-1, -1, 166) // 0-166:@*hop*[BREAK]  Save your game?[WAIT][MENU 02 00][MENUSPACEYES]Yes[MENUSPACENO]No[ENDCHOICES][END]
+GOTO lbl_4128
+cmd_disp_msg(-1, -1, LOAD_REG(1, -2)) // local bank msg LOAD_REG(1, -2)
+eq(cmd_get_msg_choice(), 0)
+FALSE GOTO lbl_4158
+CALL(0,lbl_2597)
+cmd_set_fade(1, 0)
+cmd_open_save()
+cmd_set_fade(0, 0)
+cmd_set_member_sprite(-1, cmd_DE(90))
+cmd_fade_in(20)
+cmd_3A()
+cmd_disp_msg_0(-1, -1, 170) // 0-170:@Please be careful out there.[EVENT][END]
+cmd_delay(8)
+cmd_disp_msg_0(-1, -1, 171) // 0-171:@Give my regards to the next frog you meet.[END]
+GOTO lbl_4177
+eq(LOAD_REG(1, -1), -1)
+FALSE GOTO lbl_4173
+cmd_disp_msg_0(-1, -1, 169) // 0-169:@Oh, I see...[BREAK]@Well, please be careful out there.[EVENT][END]
+cmd_delay(8)
+cmd_disp_msg_0(-1, -1, 171) // 0-171:@Give my regards to the next frog you meet.[END]
+GOTO lbl_4177
+cmd_disp_msg(-1, -1, LOAD_REG(1, -1)) // local bank msg LOAD_REG(1, -1)
+GOTO lbl_4262
+cmd_37(1)
+cmd_38(-1, -1, 50, 0)
+eq(LOAD_REG(1, -2), -1)
+FALSE GOTO lbl_4194
+cmd_disp_msg_0(-1, -1, 167) // 0-167:@*hop*[BREAK]  Do you need something?[WAIT][MENU 02 00][MENUSPACEYES]Yes[MENUSPACENO]No[ENDCHOICES][END]
+GOTO lbl_4198
+cmd_disp_msg(-1, -1, LOAD_REG(1, -2)) // local bank msg LOAD_REG(1, -2)
+cmd_delay(16)
+eq(cmd_get_msg_choice(), 1)
+FALSE GOTO lbl_4209
+cmd_disp_msg_0(-1, -1, 172) // 0-172:@Oh, I see.[WAIT]@Well, give my regards to the next frog you[BREAK]  meet.[END]
+GOTO lbl_4262
+cmd_37(1)
+cmd_38(-1, -1, 80, 0)
+cmd_disp_msg_0(-1, -1, 168) // 0-168:@Do you need to save your game?[BREAK]@Or perhaps transfer DP?[WAIT][MENU 02 00][MENUSPACEYES]Save[MENUSPACEYES]DP Stuff[ENDCHOICES][END]
+eq(cmd_get_msg_choice(), 0)
+FALSE GOTO lbl_4239
+CALL(0,lbl_2597)
+cmd_set_fade(1, 0)
+cmd_open_save()
+cmd_set_fade(0, 0)
+cmd_set_member_sprite(-1, cmd_DE(90))
+cmd_fade_in(20)
+GOTO lbl_4240
+cmd_open_bank()
+cmd_delay(0)
+cmd_3A()
+eq(LOAD_REG(1, -1), -1)
+FALSE GOTO lbl_4258
+cmd_disp_msg_0(-1, -1, 170) // 0-170:@Please be careful out there.[EVENT][END]
+cmd_delay(8)
+cmd_disp_msg_0(-1, -1, 171) // 0-171:@Give my regards to the next frog you meet.[END]
+GOTO lbl_4262
+cmd_disp_msg(-1, -1, LOAD_REG(1, -1)) // local bank msg LOAD_REG(1, -1)
+RET(1,2)
+SP_ALLOC(2)
+LOAD_REG(1, -2)
+LOAD_REG(1, -1)
+CALL(0,lbl_4102)
+RET_REG(1, 2)
+SP_ALLOC(2)
+cmd_50(-1, 11, -1, 0)
+cmd_06(-1)
+cmd_50(-1, 0, -1, 0)
+LOAD_REG(1, -2)
+LOAD_REG(1, -1)
+CALL(0,lbl_4102)
+cmd_50(-1, 12, -1, 0)
+cmd_06(-1)
+cmd_play_anim(-1, 10, 1)
+cmd_delay(16)
+RET_REG(1, 2)
+SP_ALLOC(3)
+STORE_REG(cmd_push_map_id(),1,2)
+and(eq(cmd_push_flag(32), 1), neq(cmd_0E(20), 2))
+FALSE GOTO lbl_4802
+eq(LOAD_REG(1, 2), 1)
+FALSE GOTO lbl_4322
+cmd_B9(272)
+cmd_46(0)
+cmd_45(1)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 2)
+FALSE GOTO lbl_4329
+cmd_B9(267)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 3)
+FALSE GOTO lbl_4348
+cmd_B9(256)
+cmd_46(0)
+cmd_46(1)
+cmd_45(2)
+cmd_45(3)
+cmd_46(4)
+cmd_45(5)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 4)
+FALSE GOTO lbl_4363
+cmd_B9(258)
+cmd_46(0)
+cmd_46(1)
+cmd_45(2)
+cmd_45(3)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 5)
+FALSE GOTO lbl_4382
+cmd_B9(269)
+cmd_46(0)
+cmd_46(1)
+cmd_46(2)
+cmd_45(3)
+cmd_45(4)
+cmd_45(5)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 6)
+FALSE GOTO lbl_4401
+cmd_B9(265)
+cmd_46(0)
+cmd_46(1)
+cmd_46(2)
+cmd_45(3)
+cmd_45(4)
+cmd_45(5)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 7)
+FALSE GOTO lbl_4412
+cmd_B9(247)
+cmd_45(1)
+cmd_45(3)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 8)
+FALSE GOTO lbl_4419
+cmd_B9(274)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 9)
+FALSE GOTO lbl_4426
+cmd_B9(160)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 10)
+FALSE GOTO lbl_4445
+cmd_B9(161)
+cmd_46(0)
+cmd_46(1)
+cmd_46(2)
+cmd_45(3)
+cmd_45(4)
+cmd_45(5)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 11)
+FALSE GOTO lbl_4452
+cmd_B9(296)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 12)
+FALSE GOTO lbl_4459
+cmd_B9(226)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 14)
+FALSE GOTO lbl_4466
+cmd_B9(61)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 17)
+FALSE GOTO lbl_4473
+cmd_B9(35)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 18)
+FALSE GOTO lbl_4484
+cmd_B9(180)
+cmd_45(2)
+cmd_45(3)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 19)
+FALSE GOTO lbl_4491
+cmd_B9(35)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 20)
+FALSE GOTO lbl_4498
+cmd_B9(180)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 21)
+FALSE GOTO lbl_4505
+cmd_B9(61)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 22)
+FALSE GOTO lbl_4512
+cmd_B9(35)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 46)
+FALSE GOTO lbl_4523
+cmd_B9(605)
+cmd_45(0)
+cmd_45(1)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 47)
+FALSE GOTO lbl_4532
+cmd_B9(603)
+cmd_45(0)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 48)
+FALSE GOTO lbl_4543
+cmd_B9(604)
+cmd_45(0)
+cmd_45(1)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 49)
+FALSE GOTO lbl_4556
+cmd_B9(223)
+cmd_45(0)
+cmd_45(1)
+cmd_45(2)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 50)
+FALSE GOTO lbl_4563
+cmd_B9(600)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 51)
+FALSE GOTO lbl_4570
+cmd_B9(606)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 52)
+FALSE GOTO lbl_4585
+cmd_B9(602)
+cmd_46(0)
+cmd_46(1)
+cmd_45(2)
+cmd_45(3)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 53)
+FALSE GOTO lbl_4608
+cmd_B9(601)
+cmd_46(0)
+cmd_46(1)
+cmd_46(2)
+cmd_46(3)
+cmd_45(4)
+cmd_45(5)
+cmd_45(6)
+cmd_45(7)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 67)
+FALSE GOTO lbl_4615
+cmd_B9(309)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 71)
+FALSE GOTO lbl_4622
+cmd_B9(209)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 85)
+FALSE GOTO lbl_4629
+cmd_B9(35)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 86)
+FALSE GOTO lbl_4636
+cmd_B9(303)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 87)
+FALSE GOTO lbl_4645
+cmd_B9(303)
+cmd_45(1)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 88)
+FALSE GOTO lbl_4652
+cmd_B9(303)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 89)
+FALSE GOTO lbl_4659
+cmd_B9(299)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 90)
+FALSE GOTO lbl_4666
+cmd_B9(35)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 91)
+FALSE GOTO lbl_4673
+cmd_B9(35)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 103)
+FALSE GOTO lbl_4684
+cmd_E0(0, 0)
+cmd_E0(1, 0)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 193)
+FALSE GOTO lbl_4691
+cmd_B9(457)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 209)
+FALSE GOTO lbl_4702
+cmd_B9(272)
+cmd_46(0)
+cmd_45(1)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 208)
+FALSE GOTO lbl_4709
+cmd_B9(624)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 210)
+FALSE GOTO lbl_4716
+cmd_B9(267)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 211)
+FALSE GOTO lbl_4731
+cmd_B9(161)
+cmd_46(0)
+cmd_46(1)
+cmd_45(2)
+cmd_45(3)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 212)
+FALSE GOTO lbl_4746
+cmd_B9(161)
+cmd_46(0)
+cmd_46(1)
+cmd_45(2)
+cmd_45(3)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 236)
+FALSE GOTO lbl_4753
+cmd_B9(624)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 249)
+FALSE GOTO lbl_4764
+cmd_B9(448)
+cmd_46(0)
+cmd_45(1)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 251)
+FALSE GOTO lbl_4775
+cmd_B9(630)
+cmd_46(0)
+cmd_45(1)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 883)
+FALSE GOTO lbl_4784
+cmd_B9(564)
+cmd_46(-1)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 884)
+FALSE GOTO lbl_4793
+cmd_B9(564)
+cmd_46(-1)
+GOTO lbl_4801
+eq(LOAD_REG(1, 2), 885)
+FALSE GOTO lbl_4801
+cmd_B9(565)
+cmd_46(-1)
+GOTO lbl_4842
+eq(cmd_0E(20), 2)
+FALSE GOTO lbl_4842
+eq(LOAD_REG(1, 2), 6)
+FALSE GOTO lbl_4822
+cmd_46(-1)
+cmd_45(6)
+cmd_45(7)
+cmd_45(8)
+cmd_B9(669)
+GOTO lbl_4842
+eq(LOAD_REG(1, 2), 2)
+FALSE GOTO lbl_4829
+cmd_B9(670)
+GOTO lbl_4842
+eq(LOAD_REG(1, 2), 71)
+FALSE GOTO lbl_4836
+cmd_B9(668)
+GOTO lbl_4842
+eq(LOAD_REG(1, 2), 21)
+FALSE GOTO lbl_4842
+cmd_B9(661)
+RET_REG(1, 0)
+SP_ALLOC(2)
+eq(cmd_push_flag(30), 1)
+FALSE GOTO lbl_4853
+cmd_4A(0, 1)
+GOTO lbl_4869
+cmd_CD(0)
+cmd_CD(1)
+cmd_CD(2)
+cmd_CD(3)
+cmd_CD(4)
+cmd_CD(5)
+cmd_CD(6)
+cmd_CD(7)
+RET_REG(1, 0)
+SP_ALLOC(2)
+eq(LOAD_REG(1, -1), 0)
+FALSE GOTO lbl_4884
+cmd_play_sfx(3)
+cmd_delay(80)
+cmd_disp_msg(-3, -1, LOAD_REG(1, -2)) // local bank msg LOAD_REG(1, -2)
+GOTO lbl_4896
+eq(LOAD_REG(1, -1), 1)
+FALSE GOTO lbl_4896
+cmd_play_sfx(2)
+cmd_delay(128)
+cmd_disp_msg(-3, -1, LOAD_REG(1, -2)) // local bank msg LOAD_REG(1, -2)
+cmd_delay(24)
+cmd_D6(LOAD_REG(1, -4))
+cmd_5A(LOAD_REG(1, -4), 1)
+cmd_party_add(LOAD_REG(1, -3))
+cmd_delay(24)
+RET_REG(1, 4)
+SP_ALLOC(2)
+RET_REG(1, 0)
+SP_ALLOC(2)
+RET_REG(1, 0)
+SP_ALLOC(4)
+cmd_delay(8)
+cmd_5A(LOAD_REG(1, -1), 0)
+cmd_5C(0, REG_ADDR(1, 2), REG_ADDR(1, 3))
+cmd_5B(LOAD_REG(1, -1), sub(LOAD_REG(1, 2), 16), sub(LOAD_REG(1, 3), 16))
+cmd_63(LOAD_REG(1, -1), 0)
+RET_REG(1, 1)
+SP_ALLOC(4)
+STORE_REG(cmd_5F(0),1,2)
+STORE_REG(cmd_5F(LOAD_REG(1, -3)),1,3)
+cmd_F0(0)
+cmd_F0(1)
+cmd_F0(2)
+LOAD_REG(1, -2)
+GOTO lbl_4993
+cmd_play_anim(LOAD_REG(1, -3), 110, 0)
+cmd_delay(48)
+cmd_play_anim(0, 112, 1)
+GOTO lbl_5018
+cmd_play_anim(LOAD_REG(1, -3), 110, 0)
+cmd_delay(48)
+cmd_play_anim(0, 114, 1)
+GOTO lbl_5018
+cmd_play_anim(LOAD_REG(1, -3), 109, 0)
+cmd_delay(48)
+cmd_play_anim(0, 112, 1)
+GOTO lbl_5018
+cmd_play_anim(LOAD_REG(1, -3), 109, 0)
+cmd_delay(48)
+cmd_play_anim(0, 114, 1)
+GOTO lbl_5018
+eq(copy, 0)
+FALSE GOTO lbl_4999
+popnoop
+GOTO lbl_4949
+eq(copy, 1)
+FALSE GOTO lbl_5005
+popnoop
+GOTO lbl_4960
+eq(copy, 2)
+FALSE GOTO lbl_5011
+popnoop
+GOTO lbl_4971
+eq(copy, 3)
+FALSE GOTO lbl_5017
+popnoop
+GOTO lbl_4982
+popnoop
+cmd_76(2, 1, 2, 0)
+cmd_play_sound(190, -1)
+cmd_play_sound(191, -1)
+cmd_C7(12, 16)
+cmd_delay(LOAD_REG(1, -1))
+cmd_C8()
+cmd_87(4)
+cmd_stop_shake()
+cmd_06(LOAD_REG(1, -3))
+cmd_50(LOAD_REG(1, -3), 0, LOAD_REG(1, 3), 0)
+cmd_06(0)
+LOAD_REG(1, -2)
+GOTO lbl_5093
+cmd_play_anim(0, 113, 0)
+cmd_06(0)
+cmd_play_anim(0, 117, 0)
+GOTO lbl_5118
+cmd_play_anim(0, 115, 0)
+cmd_06(0)
+cmd_play_anim(0, 119, 0)
+GOTO lbl_5118
+cmd_play_anim(0, 113, 0)
+cmd_06(0)
+cmd_play_anim(0, 117, 0)
+GOTO lbl_5118
+cmd_play_anim(0, 115, 0)
+cmd_06(0)
+cmd_play_anim(0, 119, 0)
+GOTO lbl_5118
+eq(copy, 0)
+FALSE GOTO lbl_5099
+popnoop
+GOTO lbl_5049
+eq(copy, 1)
+FALSE GOTO lbl_5105
+popnoop
+GOTO lbl_5060
+eq(copy, 2)
+FALSE GOTO lbl_5111
+popnoop
+GOTO lbl_5071
+eq(copy, 3)
+FALSE GOTO lbl_5117
+popnoop
+GOTO lbl_5082
+popnoop
+cmd_06(0)
+cmd_50(0, 0, 0, 0)
+cmd_F1(0)
+cmd_F1(1)
+cmd_F1(2)
+RET_REG(1, 3)
+SP_ALLOC(3)
+STORE_REG(0,1,2)
+gt(LOAD_REG(1, 2), 20)
+FALSE GOTO lbl_5149
+cmd_58(LOAD_REG(1, -1), 3, 3)
+cmd_delay(2)
+STORE_REG(inc(LOAD_REG(1, 2)),1,2)
+GOTO lbl_5135
+RET_REG(1, 1)
+SP_ALLOC(7)
+cmd_5C(LOAD_REG(1, -1), REG_ADDR(1, 4), REG_ADDR(1, 5))
+cmd_5C(LOAD_REG(1, -2), REG_ADDR(1, 2), REG_ADDR(1, 3))
+STORE_REG(cmd_5F(LOAD_REG(1, -2)),1,6)
+gt(LOAD_REG(1, 3), sub(LOAD_REG(1, 5), 4))
+FALSE GOTO lbl_5324
+gt(LOAD_REG(1, 2), sub(LOAD_REG(1, 4), 4))
+FALSE GOTO lbl_5218
+neq(LOAD_REG(1, 6), 7)
+FALSE GOTO lbl_5217
+or(eq(LOAD_REG(1, 6), 3), or(eq(LOAD_REG(1, 6), 2), or(eq(LOAD_REG(1, 6), 1), eq(LOAD_REG(1, 6), 0))))
+FALSE GOTO lbl_5204
+eq(LOAD_REG(1, 6), 0)
+FALSE GOTO lbl_5200
+STORE_REG(8,1,6)
+STORE_REG(dec(LOAD_REG(1, 6)),1,6)
+GOTO lbl_5211
+STORE_REG(inc(LOAD_REG(1, 6)),1,6)
+STORE_REG(mod(LOAD_REG(1, 6), 8),1,6)
+cmd_set_member_sprite(LOAD_REG(1, -2), LOAD_REG(1, 6))
+cmd_delay(3)
+GOTO lbl_5174
+GOTO lbl_5323
+and(lte(LOAD_REG(1, 2), sub(LOAD_REG(1, 4), 4)), gte(LOAD_REG(1, 2), add(LOAD_REG(1, 4), 4)))
+FALSE GOTO lbl_5274
+neq(LOAD_REG(1, 6), 0)
+FALSE GOTO lbl_5273
+or(eq(LOAD_REG(1, 6), 4), or(eq(LOAD_REG(1, 6), 5), or(eq(LOAD_REG(1, 6), 6), eq(LOAD_REG(1, 6), 7))))
+FALSE GOTO lbl_5258
+STORE_REG(inc(LOAD_REG(1, 6)),1,6)
+STORE_REG(mod(LOAD_REG(1, 6), 8),1,6)
+GOTO lbl_5267
+eq(LOAD_REG(1, 6), 0)
+FALSE GOTO lbl_5264
+STORE_REG(8,1,6)
+STORE_REG(dec(LOAD_REG(1, 6)),1,6)
+cmd_set_member_sprite(LOAD_REG(1, -2), LOAD_REG(1, 6))
+cmd_delay(3)
+GOTO lbl_5230
+GOTO lbl_5323
+lt(LOAD_REG(1, 2), add(LOAD_REG(1, 4), 4))
+FALSE GOTO lbl_5323
+neq(LOAD_REG(1, 6), 1)
+FALSE GOTO lbl_5323
+or(eq(LOAD_REG(1, 6), 5), or(eq(LOAD_REG(1, 6), 6), or(eq(LOAD_REG(1, 6), 7), eq(LOAD_REG(1, 6), 0))))
+FALSE GOTO lbl_5308
+STORE_REG(inc(LOAD_REG(1, 6)),1,6)
+STORE_REG(mod(LOAD_REG(1, 6), 8),1,6)
+GOTO lbl_5317
+eq(LOAD_REG(1, 6), 0)
+FALSE GOTO lbl_5314
+STORE_REG(8,1,6)
+STORE_REG(dec(LOAD_REG(1, 6)),1,6)
+cmd_set_member_sprite(LOAD_REG(1, -2), LOAD_REG(1, 6))
+cmd_delay(3)
+GOTO lbl_5280
+GOTO lbl_5653
+and(lte(LOAD_REG(1, 3), sub(LOAD_REG(1, 5), 4)), gte(LOAD_REG(1, 3), add(LOAD_REG(1, 5), 4)))
+FALSE GOTO lbl_5492
+gt(LOAD_REG(1, 2), sub(LOAD_REG(1, 4), 4))
+FALSE GOTO lbl_5386
+neq(LOAD_REG(1, 6), 6)
+FALSE GOTO lbl_5385
+or(eq(LOAD_REG(1, 6), 2), or(eq(LOAD_REG(1, 6), 1), or(eq(LOAD_REG(1, 6), 0), eq(LOAD_REG(1, 6), 7))))
+FALSE GOTO lbl_5372
+eq(LOAD_REG(1, 6), 0)
+FALSE GOTO lbl_5368
+STORE_REG(8,1,6)
+STORE_REG(dec(LOAD_REG(1, 6)),1,6)
+GOTO lbl_5379
+STORE_REG(inc(LOAD_REG(1, 6)),1,6)
+STORE_REG(mod(LOAD_REG(1, 6), 8),1,6)
+cmd_set_member_sprite(LOAD_REG(1, -2), LOAD_REG(1, 6))
+cmd_delay(3)
+GOTO lbl_5342
+GOTO lbl_5491
+and(lte(LOAD_REG(1, 2), sub(LOAD_REG(1, 4), 4)), gte(LOAD_REG(1, 2), add(LOAD_REG(1, 4), 4)))
+FALSE GOTO lbl_5442
+neq(LOAD_REG(1, 6), 0)
+FALSE GOTO lbl_5441
+or(eq(LOAD_REG(1, 6), 4), or(eq(LOAD_REG(1, 6), 5), or(eq(LOAD_REG(1, 6), 6), eq(LOAD_REG(1, 6), 7))))
+FALSE GOTO lbl_5426
+STORE_REG(inc(LOAD_REG(1, 6)),1,6)
+STORE_REG(mod(LOAD_REG(1, 6), 8),1,6)
+GOTO lbl_5435
+eq(LOAD_REG(1, 6), 0)
+FALSE GOTO lbl_5432
+STORE_REG(8,1,6)
+STORE_REG(dec(LOAD_REG(1, 6)),1,6)
+cmd_set_member_sprite(LOAD_REG(1, -2), LOAD_REG(1, 6))
+cmd_delay(3)
+GOTO lbl_5398
+GOTO lbl_5491
+lt(LOAD_REG(1, 2), add(LOAD_REG(1, 4), 4))
+FALSE GOTO lbl_5491
+neq(LOAD_REG(1, 6), 2)
+FALSE GOTO lbl_5491
+or(eq(LOAD_REG(1, 6), 6), or(eq(LOAD_REG(1, 6), 7), or(eq(LOAD_REG(1, 6), 0), eq(LOAD_REG(1, 6), 1))))
+FALSE GOTO lbl_5476
+STORE_REG(inc(LOAD_REG(1, 6)),1,6)
+STORE_REG(mod(LOAD_REG(1, 6), 8),1,6)
+GOTO lbl_5485
+eq(LOAD_REG(1, 6), 0)
+FALSE GOTO lbl_5482
+STORE_REG(8,1,6)
+STORE_REG(dec(LOAD_REG(1, 6)),1,6)
+cmd_set_member_sprite(LOAD_REG(1, -2), LOAD_REG(1, 6))
+cmd_delay(3)
+GOTO lbl_5448
+GOTO lbl_5653
+lt(LOAD_REG(1, 3), add(LOAD_REG(1, 5), 4))
+FALSE GOTO lbl_5653
+gt(LOAD_REG(1, 2), sub(LOAD_REG(1, 4), 4))
+FALSE GOTO lbl_5548
+neq(LOAD_REG(1, 6), 5)
+FALSE GOTO lbl_5547
+or(eq(LOAD_REG(1, 6), 1), or(eq(LOAD_REG(1, 6), 0), or(eq(LOAD_REG(1, 6), 7), eq(LOAD_REG(1, 6), 6))))
+FALSE GOTO lbl_5534
+eq(LOAD_REG(1, 6), 0)
+FALSE GOTO lbl_5530
+STORE_REG(8,1,6)
+STORE_REG(dec(LOAD_REG(1, 6)),1,6)
+GOTO lbl_5541
+STORE_REG(inc(LOAD_REG(1, 6)),1,6)
+STORE_REG(mod(LOAD_REG(1, 6), 8),1,6)
+cmd_set_member_sprite(LOAD_REG(1, -2), LOAD_REG(1, 6))
+cmd_delay(3)
+GOTO lbl_5504
+GOTO lbl_5653
+and(lte(LOAD_REG(1, 2), sub(LOAD_REG(1, 4), 4)), gte(LOAD_REG(1, 2), add(LOAD_REG(1, 4), 4)))
+FALSE GOTO lbl_5604
+neq(LOAD_REG(1, 6), 4)
+FALSE GOTO lbl_5603
+or(eq(LOAD_REG(1, 6), 0), or(eq(LOAD_REG(1, 6), 1), or(eq(LOAD_REG(1, 6), 2), eq(LOAD_REG(1, 6), 3))))
+FALSE GOTO lbl_5588
+STORE_REG(inc(LOAD_REG(1, 6)),1,6)
+STORE_REG(mod(LOAD_REG(1, 6), 8),1,6)
+GOTO lbl_5597
+eq(LOAD_REG(1, 6), 0)
+FALSE GOTO lbl_5594
+STORE_REG(8,1,6)
+STORE_REG(dec(LOAD_REG(1, 6)),1,6)
+cmd_set_member_sprite(LOAD_REG(1, -2), LOAD_REG(1, 6))
+cmd_delay(3)
+GOTO lbl_5560
+GOTO lbl_5653
+lt(LOAD_REG(1, 2), add(LOAD_REG(1, 4), 4))
+FALSE GOTO lbl_5653
+neq(LOAD_REG(1, 6), 3)
+FALSE GOTO lbl_5653
+or(eq(LOAD_REG(1, 6), 7), or(eq(LOAD_REG(1, 6), 0), or(eq(LOAD_REG(1, 6), 1), eq(LOAD_REG(1, 6), 2))))
+FALSE GOTO lbl_5638
+STORE_REG(inc(LOAD_REG(1, 6)),1,6)
+STORE_REG(mod(LOAD_REG(1, 6), 8),1,6)
+GOTO lbl_5647
+eq(LOAD_REG(1, 6), 0)
+FALSE GOTO lbl_5644
+STORE_REG(8,1,6)
+STORE_REG(dec(LOAD_REG(1, 6)),1,6)
+cmd_set_member_sprite(LOAD_REG(1, -2), LOAD_REG(1, 6))
+cmd_delay(3)
+GOTO lbl_5610
+RET_REG(1, 2)
+SP_ALLOC(3)
+STORE_REG(cmd_5F(LOAD_REG(1, -1)),1,2)
+neq(LOAD_REG(1, 2), 0)
+FALSE GOTO lbl_5701
+or(eq(LOAD_REG(1, 2), 4), or(eq(LOAD_REG(1, 2), 5), or(eq(LOAD_REG(1, 2), 6), eq(LOAD_REG(1, 2), 7))))
+FALSE GOTO lbl_5686
+STORE_REG(inc(LOAD_REG(1, 2)),1,2)
+STORE_REG(mod(LOAD_REG(1, 2), 8),1,2)
+GOTO lbl_5695
+eq(LOAD_REG(1, 2), 0)
+FALSE GOTO lbl_5692
+STORE_REG(8,1,2)
+STORE_REG(dec(LOAD_REG(1, 2)),1,2)
+cmd_set_member_sprite(LOAD_REG(1, -1), LOAD_REG(1, 2))
+cmd_delay(3)
+GOTO lbl_5658
+RET_REG(1, 1)
+SP_ALLOC(3)
+STORE_REG(cmd_5F(LOAD_REG(1, -1)),1,2)
+neq(LOAD_REG(1, 2), 4)
+FALSE GOTO lbl_5749
+or(eq(LOAD_REG(1, 2), 0), or(eq(LOAD_REG(1, 2), 1), or(eq(LOAD_REG(1, 2), 2), eq(LOAD_REG(1, 2), 3))))
+FALSE GOTO lbl_5734
+STORE_REG(inc(LOAD_REG(1, 2)),1,2)
+STORE_REG(mod(LOAD_REG(1, 2), 8),1,2)
+GOTO lbl_5743
+eq(LOAD_REG(1, 2), 0)
+FALSE GOTO lbl_5740
+STORE_REG(8,1,2)
+STORE_REG(dec(LOAD_REG(1, 2)),1,2)
+cmd_set_member_sprite(LOAD_REG(1, -1), LOAD_REG(1, 2))
+cmd_delay(3)
+GOTO lbl_5706
+RET_REG(1, 1)
+SP_ALLOC(3)
+STORE_REG(cmd_5F(LOAD_REG(1, -1)),1,2)
+neq(LOAD_REG(1, 2), 6)
+FALSE GOTO lbl_5797
+or(eq(LOAD_REG(1, 2), 2), or(eq(LOAD_REG(1, 2), 1), or(eq(LOAD_REG(1, 2), 0), eq(LOAD_REG(1, 2), 7))))
+FALSE GOTO lbl_5784
+eq(LOAD_REG(1, 2), 0)
+FALSE GOTO lbl_5780
+STORE_REG(8,1,2)
+STORE_REG(dec(LOAD_REG(1, 2)),1,2)
+GOTO lbl_5791
+STORE_REG(inc(LOAD_REG(1, 2)),1,2)
+STORE_REG(mod(LOAD_REG(1, 2), 8),1,2)
+cmd_set_member_sprite(LOAD_REG(1, -1), LOAD_REG(1, 2))
+cmd_delay(3)
+GOTO lbl_5754
+RET_REG(1, 1)
+SP_ALLOC(3)
+STORE_REG(cmd_5F(LOAD_REG(1, -1)),1,2)
+neq(LOAD_REG(1, 2), 2)
+FALSE GOTO lbl_5845
+or(eq(LOAD_REG(1, 2), 6), or(eq(LOAD_REG(1, 2), 7), or(eq(LOAD_REG(1, 2), 0), eq(LOAD_REG(1, 2), 1))))
+FALSE GOTO lbl_5830
+STORE_REG(inc(LOAD_REG(1, 2)),1,2)
+STORE_REG(mod(LOAD_REG(1, 2), 8),1,2)
+GOTO lbl_5839
+eq(LOAD_REG(1, 2), 0)
+FALSE GOTO lbl_5836
+STORE_REG(8,1,2)
+STORE_REG(dec(LOAD_REG(1, 2)),1,2)
+cmd_set_member_sprite(LOAD_REG(1, -1), LOAD_REG(1, 2))
+cmd_delay(3)
+GOTO lbl_5802
+RET_REG(1, 1)
+SP_ALLOC(3)
+STORE_REG(cmd_5F(LOAD_REG(1, -1)),1,2)
+neq(LOAD_REG(1, 2), 1)
+FALSE GOTO lbl_5893
+or(eq(LOAD_REG(1, 2), 5), or(eq(LOAD_REG(1, 2), 6), or(eq(LOAD_REG(1, 2), 7), eq(LOAD_REG(1, 2), 0))))
+FALSE GOTO lbl_5878
+STORE_REG(inc(LOAD_REG(1, 2)),1,2)
+STORE_REG(mod(LOAD_REG(1, 2), 8),1,2)
+GOTO lbl_5887
+eq(LOAD_REG(1, 2), 0)
+FALSE GOTO lbl_5884
+STORE_REG(8,1,2)
+STORE_REG(dec(LOAD_REG(1, 2)),1,2)
+cmd_set_member_sprite(LOAD_REG(1, -1), LOAD_REG(1, 2))
+cmd_delay(3)
+GOTO lbl_5850
+RET_REG(1, 1)
+SP_ALLOC(3)
+STORE_REG(cmd_5F(LOAD_REG(1, -1)),1,2)
+neq(LOAD_REG(1, 2), 3)
+FALSE GOTO lbl_5941
+or(eq(LOAD_REG(1, 2), 7), or(eq(LOAD_REG(1, 2), 0), or(eq(LOAD_REG(1, 2), 1), eq(LOAD_REG(1, 2), 2))))
+FALSE GOTO lbl_5926
+STORE_REG(inc(LOAD_REG(1, 2)),1,2)
+STORE_REG(mod(LOAD_REG(1, 2), 8),1,2)
+GOTO lbl_5935
+eq(LOAD_REG(1, 2), 0)
+FALSE GOTO lbl_5932
+STORE_REG(8,1,2)
+STORE_REG(dec(LOAD_REG(1, 2)),1,2)
+cmd_set_member_sprite(LOAD_REG(1, -1), LOAD_REG(1, 2))
+cmd_delay(3)
+GOTO lbl_5898
+RET_REG(1, 1)
+SP_ALLOC(3)
+STORE_REG(cmd_5F(LOAD_REG(1, -1)),1,2)
+neq(LOAD_REG(1, 2), 5)
+FALSE GOTO lbl_5989
+or(eq(LOAD_REG(1, 2), 1), or(eq(LOAD_REG(1, 2), 0), or(eq(LOAD_REG(1, 2), 7), eq(LOAD_REG(1, 2), 6))))
+FALSE GOTO lbl_5976
+eq(LOAD_REG(1, 2), 0)
+FALSE GOTO lbl_5972
+STORE_REG(8,1,2)
+STORE_REG(dec(LOAD_REG(1, 2)),1,2)
+GOTO lbl_5983
+STORE_REG(inc(LOAD_REG(1, 2)),1,2)
+STORE_REG(mod(LOAD_REG(1, 2), 8),1,2)
+cmd_set_member_sprite(LOAD_REG(1, -1), LOAD_REG(1, 2))
+cmd_delay(3)
+GOTO lbl_5946
+RET_REG(1, 1)
+SP_ALLOC(3)
+STORE_REG(cmd_5F(LOAD_REG(1, -1)),1,2)
+neq(LOAD_REG(1, 2), 7)
+FALSE GOTO lbl_6037
+or(eq(LOAD_REG(1, 2), 3), or(eq(LOAD_REG(1, 2), 2), or(eq(LOAD_REG(1, 2), 1), eq(LOAD_REG(1, 2), 0))))
+FALSE GOTO lbl_6024
+eq(LOAD_REG(1, 2), 0)
+FALSE GOTO lbl_6020
+STORE_REG(8,1,2)
+STORE_REG(dec(LOAD_REG(1, 2)),1,2)
+GOTO lbl_6031
+STORE_REG(inc(LOAD_REG(1, 2)),1,2)
+STORE_REG(mod(LOAD_REG(1, 2), 8),1,2)
+cmd_set_member_sprite(LOAD_REG(1, -1), LOAD_REG(1, 2))
+cmd_delay(3)
+GOTO lbl_5994
+RET_REG(1, 1)
+SP_ALLOC(6)
+cmd_5C(LOAD_REG(1, -4), REG_ADDR(1, 2), REG_ADDR(1, 3))
+cmd_5C(LOAD_REG(1, -3), REG_ADDR(1, 4), REG_ADDR(1, 5))
+gte(LOAD_REG(1, 3), LOAD_REG(1, 5))
+FALSE GOTO lbl_6201
+eq(LOAD_REG(1, 2), LOAD_REG(1, 4))
+FALSE GOTO lbl_6139
+LOAD_REG(1, -2)
+GOTO lbl_6125
+cmd_6B(LOAD_REG(1, -4), 2, LOAD_REG(1, -1), 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), sub(LOAD_REG(1, 4), 32), sub(LOAD_REG(1, 5), 16), LOAD_REG(1, -1), 0)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_6B(LOAD_REG(1, -4), 0, LOAD_REG(1, -1), 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), sub(LOAD_REG(1, 4), 16), LOAD_REG(1, 5), LOAD_REG(1, -1), 1)
+GOTO lbl_6138
+cmd_6B(LOAD_REG(1, -4), 6, LOAD_REG(1, -1), 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), LOAD_REG(1, 4), sub(LOAD_REG(1, 5), 16), LOAD_REG(1, -1), 0)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_6B(LOAD_REG(1, -4), 0, LOAD_REG(1, -1), 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), sub(LOAD_REG(1, 4), 16), LOAD_REG(1, 5), LOAD_REG(1, -1), 1)
+GOTO lbl_6138
+eq(copy, 0)
+FALSE GOTO lbl_6131
+popnoop
+GOTO lbl_6057
+eq(copy, 1)
+FALSE GOTO lbl_6137
+popnoop
+GOTO lbl_6092
+popnoop
+GOTO lbl_6200
+gt(LOAD_REG(1, 2), LOAD_REG(1, 4))
+FALSE GOTO lbl_6171
+cmd_53(LOAD_REG(1, -4), sub(LOAD_REG(1, 4), 32), sub(LOAD_REG(1, 5), 16), LOAD_REG(1, -1), 0)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_6B(LOAD_REG(1, -4), 0, LOAD_REG(1, -1), 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), sub(LOAD_REG(1, 4), 16), LOAD_REG(1, 5), LOAD_REG(1, -1), 1)
+GOTO lbl_6200
+lt(LOAD_REG(1, 2), LOAD_REG(1, 4))
+FALSE GOTO lbl_6200
+cmd_53(LOAD_REG(1, -4), LOAD_REG(1, 4), sub(LOAD_REG(1, 5), 16), LOAD_REG(1, -1), 0)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_6B(LOAD_REG(1, -4), 0, LOAD_REG(1, -1), 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), sub(LOAD_REG(1, 4), 16), LOAD_REG(1, 5), LOAD_REG(1, -1), 1)
+GOTO lbl_6209
+cmd_53(LOAD_REG(1, -4), sub(LOAD_REG(1, 4), 16), LOAD_REG(1, 5), LOAD_REG(1, -1), 1)
+RET_REG(1, 4)
+SP_ALLOC(6)
+cmd_5C(LOAD_REG(1, -4), REG_ADDR(1, 2), REG_ADDR(1, 3))
+cmd_5C(LOAD_REG(1, -3), REG_ADDR(1, 4), REG_ADDR(1, 5))
+gte(LOAD_REG(1, 2), LOAD_REG(1, 4))
+FALSE GOTO lbl_6409
+eq(LOAD_REG(1, 3), LOAD_REG(1, 5))
+FALSE GOTO lbl_6329
+LOAD_REG(1, -2)
+GOTO lbl_6315
+cmd_6B(LOAD_REG(1, -4), 0, LOAD_REG(1, -1), 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), sub(LOAD_REG(1, 4), 16), add(sub(LOAD_REG(1, 5), 16), 16), LOAD_REG(1, -1), 1)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_6B(LOAD_REG(1, -4), 6, LOAD_REG(1, -1), 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), add(sub(LOAD_REG(1, 4), 16), 16), sub(sub(LOAD_REG(1, 5), 16), 1), LOAD_REG(1, -1), 0)
+GOTO lbl_6328
+cmd_6B(LOAD_REG(1, -4), 4, LOAD_REG(1, -1), 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), sub(LOAD_REG(1, 4), 16), sub(sub(LOAD_REG(1, 5), 16), 16), LOAD_REG(1, -1), 1)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_6B(LOAD_REG(1, -4), 6, LOAD_REG(1, -1), 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), add(sub(LOAD_REG(1, 4), 16), 16), sub(sub(LOAD_REG(1, 5), 16), 1), LOAD_REG(1, -1), 0)
+GOTO lbl_6328
+eq(copy, 0)
+FALSE GOTO lbl_6321
+popnoop
+GOTO lbl_6229
+eq(copy, 1)
+FALSE GOTO lbl_6327
+popnoop
+GOTO lbl_6272
+popnoop
+GOTO lbl_6408
+gt(LOAD_REG(1, 3), LOAD_REG(1, 5))
+FALSE GOTO lbl_6369
+cmd_53(LOAD_REG(1, -4), sub(LOAD_REG(1, 4), 16), sub(sub(LOAD_REG(1, 5), 16), 16), LOAD_REG(1, -1), 1)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_6B(LOAD_REG(1, -4), 6, LOAD_REG(1, -1), 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), add(sub(LOAD_REG(1, 4), 16), 16), sub(sub(LOAD_REG(1, 5), 16), 1), LOAD_REG(1, -1), 0)
+GOTO lbl_6408
+lt(LOAD_REG(1, 3), LOAD_REG(1, 5))
+FALSE GOTO lbl_6408
+cmd_53(LOAD_REG(1, -4), sub(LOAD_REG(1, 4), 16), add(sub(LOAD_REG(1, 5), 16), 16), LOAD_REG(1, -1), 1)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_6B(LOAD_REG(1, -4), 6, LOAD_REG(1, -1), 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), add(sub(LOAD_REG(1, 4), 16), 16), sub(sub(LOAD_REG(1, 5), 16), 1), LOAD_REG(1, -1), 0)
+GOTO lbl_6423
+cmd_53(LOAD_REG(1, -4), add(sub(LOAD_REG(1, 4), 16), 16), sub(sub(LOAD_REG(1, 5), 16), 1), LOAD_REG(1, -1), 0)
+RET_REG(1, 4)
+SP_ALLOC(6)
+cmd_5C(LOAD_REG(1, -4), REG_ADDR(1, 2), REG_ADDR(1, 3))
+cmd_5C(LOAD_REG(1, -3), REG_ADDR(1, 4), REG_ADDR(1, 5))
+lt(LOAD_REG(1, 3), LOAD_REG(1, 5))
+FALSE GOTO lbl_6603
+eq(LOAD_REG(1, 2), LOAD_REG(1, 4))
+FALSE GOTO lbl_6533
+LOAD_REG(1, -2)
+GOTO lbl_6519
+cmd_6B(LOAD_REG(1, -4), 2, LOAD_REG(1, -1), 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), sub(LOAD_REG(1, 4), 32), sub(LOAD_REG(1, 5), 16), LOAD_REG(1, -1), 0)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_6B(LOAD_REG(1, -4), 4, LOAD_REG(1, -1), 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), sub(LOAD_REG(1, 4), 16), sub(sub(LOAD_REG(1, 5), 16), 16), LOAD_REG(1, -1), 1)
+GOTO lbl_6532
+cmd_6B(LOAD_REG(1, -4), 6, LOAD_REG(1, -1), 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), LOAD_REG(1, 4), sub(LOAD_REG(1, 5), 16), LOAD_REG(1, -1), 0)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_6B(LOAD_REG(1, -4), 4, LOAD_REG(1, -1), 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), sub(LOAD_REG(1, 4), 16), sub(sub(LOAD_REG(1, 5), 16), 16), LOAD_REG(1, -1), 1)
+GOTO lbl_6532
+eq(copy, 0)
+FALSE GOTO lbl_6525
+popnoop
+GOTO lbl_6443
+eq(copy, 1)
+FALSE GOTO lbl_6531
+popnoop
+GOTO lbl_6482
+popnoop
+GOTO lbl_6602
+gt(LOAD_REG(1, 2), LOAD_REG(1, 4))
+FALSE GOTO lbl_6569
+cmd_53(LOAD_REG(1, -4), sub(LOAD_REG(1, 4), 32), sub(LOAD_REG(1, 5), 16), LOAD_REG(1, -1), 0)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_6B(LOAD_REG(1, -4), 4, LOAD_REG(1, -1), 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), sub(LOAD_REG(1, 4), 16), sub(sub(LOAD_REG(1, 5), 16), 16), LOAD_REG(1, -1), 1)
+GOTO lbl_6602
+lt(LOAD_REG(1, 2), LOAD_REG(1, 4))
+FALSE GOTO lbl_6602
+cmd_53(LOAD_REG(1, -4), LOAD_REG(1, 4), sub(LOAD_REG(1, 5), 16), LOAD_REG(1, -1), 0)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_6B(LOAD_REG(1, -4), 4, LOAD_REG(1, -1), 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), sub(LOAD_REG(1, 4), 16), sub(sub(LOAD_REG(1, 5), 16), 16), LOAD_REG(1, -1), 1)
+GOTO lbl_6615
+cmd_53(LOAD_REG(1, -4), sub(LOAD_REG(1, 4), 16), sub(sub(LOAD_REG(1, 5), 16), 16), LOAD_REG(1, -1), 1)
+RET_REG(1, 4)
+SP_ALLOC(6)
+cmd_5C(LOAD_REG(1, -4), REG_ADDR(1, 2), REG_ADDR(1, 3))
+cmd_5C(LOAD_REG(1, -3), REG_ADDR(1, 4), REG_ADDR(1, 5))
+lt(LOAD_REG(1, 2), LOAD_REG(1, 4))
+FALSE GOTO lbl_6815
+eq(LOAD_REG(1, 3), LOAD_REG(1, 5))
+FALSE GOTO lbl_6735
+LOAD_REG(1, -2)
+GOTO lbl_6721
+cmd_6B(LOAD_REG(1, -4), 0, LOAD_REG(1, -1), 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), sub(LOAD_REG(1, 4), 16), add(sub(LOAD_REG(1, 5), 16), 16), LOAD_REG(1, -1), 1)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_6B(LOAD_REG(1, -4), 2, LOAD_REG(1, -1), 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), sub(sub(LOAD_REG(1, 4), 16), 16), sub(sub(LOAD_REG(1, 5), 16), 1), LOAD_REG(1, -1), 0)
+GOTO lbl_6734
+cmd_6B(LOAD_REG(1, -4), 4, LOAD_REG(1, -1), 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), sub(LOAD_REG(1, 4), 16), sub(sub(LOAD_REG(1, 5), 16), 16), LOAD_REG(1, -1), 1)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_6B(LOAD_REG(1, -4), 2, LOAD_REG(1, -1), 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), sub(sub(LOAD_REG(1, 4), 16), 16), sub(sub(LOAD_REG(1, 5), 16), 1), LOAD_REG(1, -1), 0)
+GOTO lbl_6734
+eq(copy, 0)
+FALSE GOTO lbl_6727
+popnoop
+GOTO lbl_6635
+eq(copy, 1)
+FALSE GOTO lbl_6733
+popnoop
+GOTO lbl_6678
+popnoop
+GOTO lbl_6814
+gt(LOAD_REG(1, 3), LOAD_REG(1, 5))
+FALSE GOTO lbl_6775
+cmd_53(LOAD_REG(1, -4), sub(LOAD_REG(1, 4), 16), sub(sub(LOAD_REG(1, 5), 16), 16), LOAD_REG(1, -1), 1)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_6B(LOAD_REG(1, -4), 2, LOAD_REG(1, -1), 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), sub(sub(LOAD_REG(1, 4), 16), 16), sub(sub(LOAD_REG(1, 5), 16), 1), LOAD_REG(1, -1), 0)
+GOTO lbl_6814
+lt(LOAD_REG(1, 3), LOAD_REG(1, 5))
+FALSE GOTO lbl_6814
+cmd_53(LOAD_REG(1, -4), sub(LOAD_REG(1, 4), 16), add(sub(LOAD_REG(1, 5), 16), 16), LOAD_REG(1, -1), 1)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_6B(LOAD_REG(1, -4), 2, LOAD_REG(1, -1), 4)
+cmd_set_anim_speed(LOAD_REG(1, -4))
+cmd_53(LOAD_REG(1, -4), sub(sub(LOAD_REG(1, 4), 16), 16), sub(sub(LOAD_REG(1, 5), 16), 1), LOAD_REG(1, -1), 0)
+GOTO lbl_6829
+cmd_53(LOAD_REG(1, -4), sub(sub(LOAD_REG(1, 4), 16), 16), sub(sub(LOAD_REG(1, 5), 16), 1), LOAD_REG(1, -1), 1)
+RET_REG(1, 4)
+SP_ALLOC(2)
+cmd_disp_msg_0(-3, -1, 124) // 0-124:@It's locked.[END]
+RET_REG(1, 0)
+SP_ALLOC(7)
+cmd_5C(LOAD_REG(1, -2), REG_ADDR(1, 2), REG_ADDR(1, 3))
+cmd_5C(LOAD_REG(1, -1), REG_ADDR(1, 4), REG_ADDR(1, 5))
+STORE_REG(cmd_E4(240, 1),1,6)
+LOAD_REG(1, 6)
+GOTO lbl_7015
+cmd_set_member_sprite(LOAD_REG(1, -1), 2)
+GOTO lbl_7070
+cmd_set_member_sprite(LOAD_REG(1, -1), 6)
+GOTO lbl_7070
+cmd_set_member_sprite(LOAD_REG(1, -1), 0)
+GOTO lbl_7070
+cmd_set_member_sprite(LOAD_REG(1, -1), 4)
+GOTO lbl_7070
+cmd_set_member_sprite(LOAD_REG(1, -1), 7)
+GOTO lbl_7070
+cmd_set_member_sprite(LOAD_REG(1, -1), 5)
+GOTO lbl_7070
+cmd_set_member_sprite(LOAD_REG(1, -1), 3)
+GOTO lbl_7070
+cmd_set_member_sprite(LOAD_REG(1, -1), 1)
+GOTO lbl_7070
+gt(LOAD_REG(1, 3), sub(LOAD_REG(1, 5), 4))
+FALSE GOTO lbl_6925
+gt(LOAD_REG(1, 2), sub(LOAD_REG(1, 4), 4))
+FALSE GOTO lbl_6899
+cmd_set_member_sprite(LOAD_REG(1, -1), 3)
+GOTO lbl_6924
+and(lte(LOAD_REG(1, 2), sub(LOAD_REG(1, 4), 4)), gte(LOAD_REG(1, 2), add(LOAD_REG(1, 4), 4)))
+FALSE GOTO lbl_6915
+cmd_set_member_sprite(LOAD_REG(1, -1), 4)
+GOTO lbl_6924
+lt(LOAD_REG(1, 2), add(LOAD_REG(1, 4), 4))
+FALSE GOTO lbl_6924
+cmd_set_member_sprite(LOAD_REG(1, -1), 5)
+GOTO lbl_7014
+and(lte(LOAD_REG(1, 3), sub(LOAD_REG(1, 5), 4)), gte(LOAD_REG(1, 3), add(LOAD_REG(1, 5), 4)))
+FALSE GOTO lbl_6973
+gt(LOAD_REG(1, 2), sub(LOAD_REG(1, 4), 4))
+FALSE GOTO lbl_6947
+cmd_set_member_sprite(LOAD_REG(1, -1), 2)
+GOTO lbl_6972
+and(lte(LOAD_REG(1, 2), sub(LOAD_REG(1, 4), 4)), gte(LOAD_REG(1, 2), add(LOAD_REG(1, 4), 4)))
+FALSE GOTO lbl_6963
+cmd_set_member_sprite(LOAD_REG(1, -1), 4)
+GOTO lbl_6972
+lt(LOAD_REG(1, 2), add(LOAD_REG(1, 4), 4))
+FALSE GOTO lbl_6972
+cmd_set_member_sprite(LOAD_REG(1, -1), 6)
+GOTO lbl_7014
+lt(LOAD_REG(1, 3), add(LOAD_REG(1, 5), 4))
+FALSE GOTO lbl_7014
+gt(LOAD_REG(1, 2), sub(LOAD_REG(1, 4), 4))
+FALSE GOTO lbl_6989
+cmd_set_member_sprite(LOAD_REG(1, -1), 1)
+GOTO lbl_7014
+and(lte(LOAD_REG(1, 2), sub(LOAD_REG(1, 4), 4)), gte(LOAD_REG(1, 2), add(LOAD_REG(1, 4), 4)))
+FALSE GOTO lbl_7005
+cmd_set_member_sprite(LOAD_REG(1, -1), 0)
+GOTO lbl_7014
+lt(LOAD_REG(1, 2), add(LOAD_REG(1, 4), 4))
+FALSE GOTO lbl_7014
+cmd_set_member_sprite(LOAD_REG(1, -1), 7)
+GOTO lbl_7070
+eq(copy, 16)
+FALSE GOTO lbl_7021
+popnoop
+GOTO lbl_6851
+eq(copy, 32)
+FALSE GOTO lbl_7027
+popnoop
+GOTO lbl_6855
+eq(copy, 64)
+FALSE GOTO lbl_7033
+popnoop
+GOTO lbl_6859
+eq(copy, 128)
+FALSE GOTO lbl_7039
+popnoop
+GOTO lbl_6863
+eq(copy, 96)
+FALSE GOTO lbl_7045
+popnoop
+GOTO lbl_6867
+eq(copy, 160)
+FALSE GOTO lbl_7051
+popnoop
+GOTO lbl_6871
+eq(copy, 144)
+FALSE GOTO lbl_7057
+popnoop
+GOTO lbl_6875
+eq(copy, 80)
+FALSE GOTO lbl_7063
+popnoop
+GOTO lbl_6879
+eq(copy, 0)
+FALSE GOTO lbl_7069
+popnoop
+GOTO lbl_6883
+popnoop
+RET_REG(1, 2)
+SP_ALLOC(2)
+cmd_75(18, 24, 23)
+cmd_72(0, 1, 0)
+cmd_delay(32)
+RET_REG(1, 0)
+SP_ALLOC(2)
+eq(cmd_cmp_input_name(LOAD_REG(1, -3)), 0)
+FALSE GOTO lbl_7094
+cmd_disp_msg(LOAD_REG(1, -4), -1, LOAD_REG(1, -2)) // local bank msg LOAD_REG(1, -2)
+GOTO lbl_7098
+cmd_disp_msg(LOAD_REG(1, -4), -1, LOAD_REG(1, -1)) // local bank msg LOAD_REG(1, -1)
+RET_REG(1, 4)
+SP_ALLOC(2)
+LOAD_REG(1, -2)
+GOTO lbl_7144
+cmd_75(-8, -8, -16)
+cmd_set_palettes(0, 128, 0)
+cmd_delay(144)
+cmd_3B()
+cmd_delay(16)
+cmd_disp_text_special(0, LOAD_REG(1, -1))
+cmd_delay(32)
+GOTO lbl_7157
+cmd_75(-8, -8, -16)
+cmd_set_palettes(0, 128, 0)
+cmd_delay(144)
+cmd_3B()
+cmd_delay(16)
+cmd_disp_text_special(0, LOAD_REG(1, -1))
+cmd_set_palettes(1, 32, 0)
+cmd_delay(32)
+GOTO lbl_7157
+eq(copy, 0)
+FALSE GOTO lbl_7150
+popnoop
+GOTO lbl_7102
+eq(copy, 1)
+FALSE GOTO lbl_7156
+popnoop
+GOTO lbl_7121
+popnoop
+RET_REG(1, 2)
+SP_ALLOC(2)
+cmd_58(LOAD_REG(1, -3), 16, 16)
+cmd_6C(LOAD_REG(1, -3), 1)
+cmd_6B(LOAD_REG(1, -3), LOAD_REG(1, -2), 2, LOAD_REG(1, -1))
+cmd_50(LOAD_REG(1, -3), 6, LOAD_REG(1, -2), 0)
+cmd_delay(12)
+cmd_50(LOAD_REG(1, -3), 0, LOAD_REG(1, -2), 0)
+cmd_delay(2)
+cmd_50(LOAD_REG(1, -3), 7, LOAD_REG(1, -2), 0)
+cmd_delay(2)
+cmd_50(LOAD_REG(1, -3), 0, LOAD_REG(1, -2), 0)
+cmd_set_anim_speed(LOAD_REG(1, -3))
+cmd_6C(LOAD_REG(1, -3), 0)
+RET_REG(1, 3)
+SP_ALLOC(2)
+eq(LOAD_REG(1, -1), 0)
+FALSE GOTO lbl_7217
+cmd_C7(12, 16)
+cmd_delay(4)
+cmd_C8()
+cmd_delay(8)
+GOTO lbl_7341
+eq(LOAD_REG(1, -1), 1)
+FALSE GOTO lbl_7251
+cmd_C7(12, 16)
+cmd_delay(8)
+cmd_75(24, 12, 20)
+cmd_set_palettes(0, 4, 0)
+cmd_delay(4)
+cmd_set_palettes(1, 4, 0)
+cmd_delay(8)
+cmd_C8()
+cmd_delay(4)
+cmd_play_sound(652, 30)
+cmd_delay(16)
+GOTO lbl_7341
+eq(LOAD_REG(1, -1), 2)
+FALSE GOTO lbl_7311
+cmd_C7(12, 16)
+cmd_delay(4)
+cmd_C8()
+cmd_delay(64)
+cmd_C7(12, 16)
+cmd_delay(8)
+cmd_play_sound(652, 80)
+cmd_75(24, 12, 20)
+cmd_set_palettes(0, 4, 0)
+cmd_delay(4)
+cmd_set_palettes(1, 4, 0)
+cmd_delay(8)
+cmd_C8()
+cmd_delay(4)
+cmd_C7(12, 16)
+cmd_75(24, 12, 20)
+cmd_set_palettes(0, 8, 0)
+cmd_delay(8)
+cmd_set_palettes(1, 4, 0)
+cmd_delay(8)
+cmd_C8()
+GOTO lbl_7341
+eq(LOAD_REG(1, -1), 3)
+FALSE GOTO lbl_7341
+cmd_76(3, 2, 4, 0)
+cmd_play_sound(809, 80)
+cmd_75(24, 12, 20)
+cmd_set_palettes(0, 4, 0)
+cmd_delay(16)
+cmd_stop_shake()
+cmd_set_palettes(1, 64, 0)
+cmd_delay(64)
+GOTO lbl_7341
+RET_REG(1, 1)
+SP_ALLOC(2)
+eq(LOAD_REG(1, -1), 0)
+FALSE GOTO lbl_7356
+cmd_C7(12, 16)
+cmd_delay(4)
+cmd_C8()
+cmd_delay(8)
+GOTO lbl_7480
+eq(LOAD_REG(1, -1), 1)
+FALSE GOTO lbl_7390
+cmd_C7(12, 16)
+cmd_delay(8)
+cmd_75(12, 24, 20)
+cmd_set_palettes(0, 4, 0)
+cmd_delay(4)
+cmd_set_palettes(1, 4, 0)
+cmd_delay(8)
+cmd_C8()
+cmd_delay(4)
+cmd_play_sound(803, 30)
+cmd_delay(16)
+GOTO lbl_7480
+eq(LOAD_REG(1, -1), 2)
+FALSE GOTO lbl_7450
+cmd_C7(12, 16)
+cmd_delay(4)
+cmd_C8()
+cmd_delay(64)
+cmd_C7(12, 16)
+cmd_delay(8)
+cmd_play_sound(803, 80)
+cmd_75(12, 24, 20)
+cmd_set_palettes(0, 4, 0)
+cmd_delay(4)
+cmd_set_palettes(1, 4, 0)
+cmd_delay(8)
+cmd_C8()
+cmd_delay(4)
+cmd_C7(12, 16)
+cmd_75(12, 24, 20)
+cmd_set_palettes(0, 8, 0)
+cmd_delay(8)
+cmd_set_palettes(1, 4, 0)
+cmd_delay(8)
+cmd_C8()
+GOTO lbl_7480
+eq(LOAD_REG(1, -1), 3)
+FALSE GOTO lbl_7480
+cmd_76(3, 2, 4, 0)
+cmd_play_sound(809, 80)
+cmd_75(12, 24, 20)
+cmd_set_palettes(0, 4, 0)
+cmd_delay(16)
+cmd_stop_shake()
+cmd_set_palettes(1, 64, 0)
+cmd_delay(64)
+GOTO lbl_7480
+RET_REG(1, 1)
+SP_ALLOC(11)
+STORE_REG(cmd_get_party_size(),1,10)
+STORE_REG(0,1,9)
+STORE_REG(0,1,8)
+gt(LOAD_REG(1, 8), LOAD_REG(1, 10))
+FALSE GOTO lbl_7615
+GOTO lbl_7497
+STORE_REG(inc(LOAD_REG(1, 8)),1,8)
+GOTO lbl_7488
+lte(cmd_E7(add(0, LOAD_REG(1, 8)), LOAD_REG(1, -1)), 1)
+FALSE GOTO lbl_7614
+eq(LOAD_REG(1, 9), 0)
+FALSE GOTO lbl_7521
+cmd_84(1, 0, 4)
+cmd_delay(64)
+cmd_play_sound_ext(138, -1)
+cmd_play_sound_ext(1945, -1)
+STORE_REG(inc(LOAD_REG(1, 9)),1,9)
+STORE_REG(cmd_E8(0),1,2)
+STORE_REG(cmd_E8(1),1,3)
+STORE_REG(cmd_E8(2),1,4)
+STORE_REG(cmd_E8(3),1,5)
+STORE_REG(cmd_E8(4),1,6)
+STORE_REG(cmd_E8(6),1,7)
+cmd_load_name(0, LOAD_REG(1, 2))
+cmd_load_name(1, LOAD_REG(1, 3))
+cmd_load_name(2, LOAD_REG(1, 4))
+cmd_load_name(3, LOAD_REG(1, 5))
+cmd_load_name(4, LOAD_REG(1, 6))
+cmd_load_name(5, LOAD_REG(1, 7))
+cmd_disp_msg_0(-3, -1, add(142, LOAD_REG(1, 8))) // Unknown Message ???
+lt(LOAD_REG(1, 2), 0)
+FALSE GOTO lbl_7574
+cmd_disp_msg_0(-3, -1, 146) // 0-146:@HP went up by [80 FF F0 FF].[EVENT][END]
+lt(LOAD_REG(1, 3), 0)
+FALSE GOTO lbl_7582
+cmd_disp_msg_0(-3, -1, 147) // 0-147:@PP went up by [80 FF F1 FF].[EVENT][END]
+lt(LOAD_REG(1, 4), 0)
+FALSE GOTO lbl_7590
+cmd_disp_msg_0(-3, -1, 148) // 0-148:@Offense went up by [80 FF F2 FF].[EVENT][END]
+lt(LOAD_REG(1, 5), 0)
+FALSE GOTO lbl_7598
+cmd_disp_msg_0(-3, -1, 149) // 0-149:@Defense went up by [80 FF F3 FF].[EVENT][END]
+lt(LOAD_REG(1, 6), 0)
+FALSE GOTO lbl_7606
+cmd_disp_msg_0(-3, -1, 150) // 0-150:@IQ went up by [80 FF F4 FF].[EVENT][END]
+lt(LOAD_REG(1, 7), 0)
+FALSE GOTO lbl_7614
+cmd_disp_msg_0(-3, -1, 151) // 0-151:@Speed went up by [80 FF F5 FF].[EVENT][END]
+GOTO lbl_7493
+lt(LOAD_REG(1, 9), 0)
+FALSE GOTO lbl_7626
+cmd_play_sound_ext(-1, -1)
+cmd_84(1, 1, 4)
+RET_REG(1, 1)
+SP_ALLOC(2)
+cmd_5A(LOAD_REG(1, -3), 0)
+cmd_63(LOAD_REG(1, -3), 1)
+cmd_5B(LOAD_REG(1, -3), LOAD_REG(1, -2), LOAD_REG(1, -1))
+cmd_6C(LOAD_REG(1, -3), 1)
+cmd_linemove(LOAD_REG(1, -3), 7, 3, 20)
+RET_REG(1, 3)
+SP_ALLOC(4)
+LOAD_REG(1, -3)
+GOTO lbl_7758
+cmd_63(LOAD_REG(1, -4), -1)
+cmd_6C(LOAD_REG(1, -4), 1)
+cmd_F3(LOAD_REG(1, -4), -1)
+cmd_5B(LOAD_REG(1, -4), LOAD_REG(1, -2), LOAD_REG(1, -1))
+cmd_5C(LOAD_REG(1, -4), REG_ADDR(1, 2), REG_ADDR(1, 3))
+cmd_56(LOAD_REG(1, -4), add(LOAD_REG(1, 2), 288), sub(LOAD_REG(1, 3), 16), 456)
+GOTO lbl_7783
+cmd_63(LOAD_REG(1, -4), 2)
+cmd_6C(LOAD_REG(1, -4), 1)
+cmd_F3(LOAD_REG(1, -4), 512)
+cmd_5B(LOAD_REG(1, -4), LOAD_REG(1, -2), LOAD_REG(1, -1))
+cmd_5C(LOAD_REG(1, -4), REG_ADDR(1, 2), REG_ADDR(1, 3))
+cmd_56(LOAD_REG(1, -4), add(LOAD_REG(1, 2), 304), sub(LOAD_REG(1, 3), 16), 320)
+GOTO lbl_7783
+cmd_63(LOAD_REG(1, -4), 1)
+cmd_6C(LOAD_REG(1, -4), 1)
+cmd_F3(LOAD_REG(1, -4), 384)
+cmd_5B(LOAD_REG(1, -4), LOAD_REG(1, -2), LOAD_REG(1, -1))
+cmd_5C(LOAD_REG(1, -4), REG_ADDR(1, 2), REG_ADDR(1, 3))
+cmd_56(LOAD_REG(1, -4), add(LOAD_REG(1, 2), 320), sub(LOAD_REG(1, 3), 16), 168)
+GOTO lbl_7783
+cmd_63(LOAD_REG(1, -4), 1)
+cmd_6C(LOAD_REG(1, -4), 1)
+cmd_F3(LOAD_REG(1, -4), 512)
+cmd_5B(LOAD_REG(1, -4), LOAD_REG(1, -2), LOAD_REG(1, -1))
+cmd_5C(LOAD_REG(1, -4), REG_ADDR(1, 2), REG_ADDR(1, 3))
+cmd_56(LOAD_REG(1, -4), add(LOAD_REG(1, 2), 336), sub(LOAD_REG(1, 3), 16), 88)
+GOTO lbl_7783
+eq(copy, 1)
+FALSE GOTO lbl_7764
+popnoop
+GOTO lbl_7650
+eq(copy, 2)
+FALSE GOTO lbl_7770
+popnoop
+GOTO lbl_7677
+eq(copy, 3)
+FALSE GOTO lbl_7776
+popnoop
+GOTO lbl_7704
+eq(copy, 4)
+FALSE GOTO lbl_7782
+popnoop
+GOTO lbl_7731
+popnoop
+RET_REG(1, 4)
+SP_ALLOC(3)
+cmd_50(-1, 0, -1, 0)
+cmd_50(0, 7, -1, 0)
+STORE_REG(cmd_5F(-1),1,2)
+LOAD_REG(1, 2)
+GOTO lbl_7840
+cmd_play_anim(-1, 108, 1)
+GOTO lbl_7889
+cmd_play_anim(-1, 109, 1)
+GOTO lbl_7889
+cmd_play_anim(-1, 110, 1)
+GOTO lbl_7889
+cmd_play_anim(-1, 111, 1)
+GOTO lbl_7889
+cmd_play_anim(-1, 112, 1)
+GOTO lbl_7889
+cmd_play_anim(-1, 113, 1)
+GOTO lbl_7889
+cmd_play_anim(-1, 114, 1)
+GOTO lbl_7889
+cmd_play_anim(-1, 115, 1)
+GOTO lbl_7889
+eq(copy, 0)
+FALSE GOTO lbl_7846
+popnoop
+GOTO lbl_7800
+eq(copy, 1)
+FALSE GOTO lbl_7852
+popnoop
+GOTO lbl_7805
+eq(copy, 2)
+FALSE GOTO lbl_7858
+popnoop
+GOTO lbl_7810
+eq(copy, 3)
+FALSE GOTO lbl_7864
+popnoop
+GOTO lbl_7815
+eq(copy, 4)
+FALSE GOTO lbl_7870
+popnoop
+GOTO lbl_7820
+eq(copy, 5)
+FALSE GOTO lbl_7876
+popnoop
+GOTO lbl_7825
+eq(copy, 6)
+FALSE GOTO lbl_7882
+popnoop
+GOTO lbl_7830
+eq(copy, 7)
+FALSE GOTO lbl_7888
+popnoop
+GOTO lbl_7835
+popnoop
+cmd_play_sound(849, -1)
+cmd_delay(64)
+LOAD_REG(1, -1)
+GOTO lbl_7950
+cmd_50(-1, 0, LOAD_REG(1, 2), 0)
+GOTO lbl_8005
+cmd_50(-1, 0, 0, 0)
+GOTO lbl_8005
+cmd_50(-1, 0, 1, 0)
+GOTO lbl_8005
+cmd_50(-1, 0, 2, 0)
+GOTO lbl_8005
+cmd_50(-1, 0, 3, 0)
+GOTO lbl_8005
+cmd_50(-1, 0, 4, 0)
+GOTO lbl_8005
+cmd_50(-1, 0, 5, 0)
+GOTO lbl_8005
+cmd_50(-1, 0, 6, 0)
+GOTO lbl_8005
+cmd_50(-1, 0, 7, 0)
+GOTO lbl_8005
+eq(copy, -1)
+FALSE GOTO lbl_7956
+popnoop
+GOTO lbl_7896
+eq(copy, 0)
+FALSE GOTO lbl_7962
+popnoop
+GOTO lbl_7902
+eq(copy, 1)
+FALSE GOTO lbl_7968
+popnoop
+GOTO lbl_7908
+eq(copy, 2)
+FALSE GOTO lbl_7974
+popnoop
+GOTO lbl_7914
+eq(copy, 3)
+FALSE GOTO lbl_7980
+popnoop
+GOTO lbl_7920
+eq(copy, 4)
+FALSE GOTO lbl_7986
+popnoop
+GOTO lbl_7926
+eq(copy, 5)
+FALSE GOTO lbl_7992
+popnoop
+GOTO lbl_7932
+eq(copy, 6)
+FALSE GOTO lbl_7998
+popnoop
+GOTO lbl_7938
+eq(copy, 7)
+FALSE GOTO lbl_8004
+popnoop
+GOTO lbl_7944
+popnoop
+cmd_50(0, 0, -1, 0)
+RET_REG(1, 1)
+SP_ALLOC(4)
+or(eq(cmd_get_talker_sprite(-1), 156), eq(cmd_get_talker_sprite(-1), 158))
+FALSE GOTO lbl_8028
+cmd_disp_msg_0(-1, -1, 224) // 0-224:@Mixed gender bathing?[END]
+END
+GOTO lbl_8032
+cmd_disp_msg_0(-1, -1, 223) // 0-223:@Yes?[END]
+RET_REG(1, 0)
+SP_ALLOC(2)
+eq(cmd_push_flag(353), 0)
+FALSE GOTO lbl_8044
+cmd_disp_msg_0(-1, -1, 196) // 0-196:@Hi, there! I'm the friendly item deposit guy![WAIT]@If you have anything you don't need or don't[BREAK]  want to carry around,[WAIT]  I'll gladly hold on to it for you for free![WAIT]@I'll take great care of any items you give me,[WAIT]  and I'll return them to you immediately[BREAK]  whenever you want them back![WAIT]@Can I hold on to something for you?[END]
+GOTO lbl_8048
+cmd_disp_msg_0(-1, -1, 198) // 0-198:@Hi, there! I'm the friendly item deposit guy![WAIT]@How can I help you?[END]
+cmd_open_itemguy()
+cmd_3A()
+eq(cmd_push_flag(353), 0)
+FALSE GOTO lbl_8063
+cmd_disp_msg_0(-1, -1, 197) // 0-197:@I'm always traveling to one place or another,[WAIT]  so if you ever need anything, just let me know[BREAK]  anytime![END]
+cmd_set_flag(353, 1)
+GOTO lbl_8067
+cmd_disp_msg_0(-1, -1, 199) // 0-199:@The gods are watching over you guys.[WAIT]@You're incredible. You're amazing.[WAIT]@Seriously, you're a real inspiration.[WAIT]@We're right behind you, supporting you 100%,[BREAK]  from the sidelines.[END]
+END
+RET_REG(1, 0)
+SP_ALLOC(3)
+cmd_disp_msg_0(-3, -1, 181) // 0-181:@This is the knit cap man's car.[END]
+RET_REG(1, 0)
+SP_ALLOC(2)
+eq(cmd_push_flag(630), 0)
+FALSE GOTO lbl_8123
+cmd_37(1)
+cmd_38(-1, -1, 50, 0)
+cmd_disp_msg_0(-3, -1, 187) // 0-187:[END]
+eq(cmd_get_msg_choice(), 1)
+FALSE GOTO lbl_8097
+END
+cmd_delay(16)
+cmd_load_name(0, LOAD_REG(1, -2))
+cmd_load_name(1, LOAD_REG(1, -1))
+cmd_disp_msg_0(-3, -1, 188) // 0-188:[END]
+cmd_delay(32)
+cmd_37(1)
+cmd_38(-1, -1, 50, 0)
+cmd_disp_msg_0(-3, -1, 189) // 0-189:[END]
+GOTO lbl_8140
+cmd_load_name(0, LOAD_REG(1, -2))
+cmd_load_name(1, LOAD_REG(1, -1))
+cmd_37(1)
+cmd_38(-1, -1, 50, 0)
+cmd_disp_msg_0(-3, -1, 190) // 0-190:[END]
+cmd_delay(16)
+eq(cmd_get_msg_choice(), 1)
+FALSE GOTO lbl_8161
+cmd_disp_msg_0(-3, -1, 193) // 0-193:[END]
+cmd_delay(16)
+cmd_disp_msg_0(-3, -1, 195) // 0-195:[END]
+cmd_set_flag(630, 1)
+END
+GOTO lbl_8197
+gt(cmd_get_bank(), LOAD_REG(1, -2))
+FALSE GOTO lbl_8180
+cmd_disp_msg_0(-3, -1, 193) // 0-193:[END]
+cmd_delay(16)
+cmd_disp_msg_0(-3, -1, 194) // 0-194:[END]
+cmd_set_flag(630, 1)
+END
+GOTO lbl_8197
+cmd_3B()
+cmd_open_bank()
+cmd_3A()
+cmd_disp_msg_0(-3, -1, 193) // 0-193:[END]
+cmd_delay(16)
+cmd_disp_msg_0(-3, -1, 192) // 0-192:[END]
+cmd_set_flag(630, 1)
+END
+RET_REG(1, 2)
+SP_ALLOC(3)
+LOAD_REG(1, -3)
+GOTO lbl_8279
+cmd_cfg_member_item(-1, LOAD_REG(1, -2), LOAD_REG(1, -1))
+STORE_REG(cmd_E3(-1),1,2)
+cmd_load_name(0, LOAD_REG(1, -2))
+cmd_load_name(1, LOAD_REG(1, 2))
+cmd_play_sound(107, -1)
+cmd_disp_msg_0(-3, -1, 44) // 0-44:@[42 FF F1 FF] got [EF 91][ITEM F0 FF]![PAUSE 40 00][END]
+GOTO lbl_8304
+cmd_play_sfx(4)
+cmd_delay(80)
+cmd_load_name(0, LOAD_REG(1, -2))
+cmd_disp_msg_0(-3, -1, 45) // 0-45:@Got [EF 91][ITEM F0 FF]![PAUSE 40 00][END]
+cmd_set_key_item(LOAD_REG(1, -2), 1)
+GOTO lbl_8304
+cmd_play_sfx(9)
+cmd_delay(130)
+cmd_load_name(0, LOAD_REG(1, -2))
+cmd_disp_msg_0(-3, -1, 47) // 0-47:@Received [EF 91][ITEM F0 FF]![PAUSE 40 00][END]
+cmd_cfg_member_item(-1, LOAD_REG(1, -2), 1)
+cmd_delay(64)
+cmd_play_sound_ext(-1, -1)
+cmd_84(0, 0, 2)
+cmd_delay(32)
+GOTO lbl_8304
+cmd_play_sfx(8)
+cmd_delay(80)
+cmd_load_name(0, LOAD_REG(1, -2))
+cmd_disp_msg_0(-3, -1, 46) // 0-46:@Got [EF 91][ITEM F0 FF]...[PAUSE 40 00][END]
+cmd_set_key_item(LOAD_REG(1, -2), 1)
+GOTO lbl_8304
+eq(copy, 0)
+FALSE GOTO lbl_8285
+popnoop
+GOTO lbl_8201
+eq(copy, 1)
+FALSE GOTO lbl_8291
+popnoop
+GOTO lbl_8222
+eq(copy, 2)
+FALSE GOTO lbl_8297
+popnoop
+GOTO lbl_8237
+eq(copy, 3)
+FALSE GOTO lbl_8303
+popnoop
+GOTO lbl_8264
+popnoop
+RET_REG(1, 3)
+SP_ALLOC(3)
+STORE_REG(cmd_5F(0),1,2)
+or(eq(LOAD_REG(1, 2), 3), or(eq(LOAD_REG(1, 2), 4), eq(LOAD_REG(1, 2), 5)))
+FALSE GOTO lbl_8326
+cmd_disp_msg(-3, -1, LOAD_REG(1, -1)) // local bank msg LOAD_REG(1, -1)
+GOTO lbl_8330
+cmd_disp_msg_0(-3, -1, 51) // 0-51:@No problem here.[END]
+RET_REG(1, 1)
+SP_ALLOC(2)
+LOAD_REG(1, -2)
+GOTO lbl_8378
+cmd_play_sound(752, -1)
+GOTO lbl_8445
+cmd_play_sound(674, -1)
+GOTO lbl_8445
+cmd_play_sound(675, -1)
+GOTO lbl_8445
+cmd_play_sound(1074, -1)
+GOTO lbl_8445
+cmd_play_sound(761, -1)
+GOTO lbl_8445
+cmd_play_sound(762, -1)
+GOTO lbl_8445
+cmd_play_sound(763, -1)
+GOTO lbl_8445
+cmd_play_sound(764, -1)
+GOTO lbl_8445
+cmd_play_sound(765, -1)
+GOTO lbl_8445
+cmd_play_sound(1640, -1)
+GOTO lbl_8445
+cmd_play_sound(768, -1)
+GOTO lbl_8445
+eq(copy, 0)
+FALSE GOTO lbl_8384
+popnoop
+GOTO lbl_8334
+eq(copy, 1)
+FALSE GOTO lbl_8390
+popnoop
+GOTO lbl_8338
+eq(copy, 2)
+FALSE GOTO lbl_8396
+popnoop
+GOTO lbl_8342
+eq(copy, 3)
+FALSE GOTO lbl_8402
+popnoop
+GOTO lbl_8346
+eq(copy, 4)
+FALSE GOTO lbl_8408
+popnoop
+GOTO lbl_8350
+eq(copy, 5)
+FALSE GOTO lbl_8414
+popnoop
+GOTO lbl_8354
+eq(copy, 6)
+FALSE GOTO lbl_8420
+popnoop
+GOTO lbl_8358
+eq(copy, 7)
+FALSE GOTO lbl_8426
+popnoop
+GOTO lbl_8362
+eq(copy, 8)
+FALSE GOTO lbl_8432
+popnoop
+GOTO lbl_8366
+eq(copy, 9)
+FALSE GOTO lbl_8438
+popnoop
+GOTO lbl_8370
+eq(copy, 10)
+FALSE GOTO lbl_8444
+popnoop
+GOTO lbl_8374
+popnoop
+cmd_disp_msg(-1, -1, LOAD_REG(1, -1)) // local bank msg LOAD_REG(1, -1)
+and(eq(LOAD_REG(1, -2), 3), eq(cmd_push_flag(368), 0))
+FALSE GOTO lbl_8461
+cmd_set_flag(368, 1)
+RET_REG(1, 2)
+SP_ALLOC(3)
+STORE_REG(cmd_get_talker_sprite(-1),1,2)
+LOAD_REG(1, 2)
+GOTO lbl_8512
+cmd_play_sound(752, -1)
+GOTO lbl_8579
+cmd_play_sound(1074, -1)
+GOTO lbl_8579
+cmd_play_sound(761, -1)
+GOTO lbl_8579
+cmd_play_sound(762, -1)
+GOTO lbl_8579
+cmd_play_sound(763, -1)
+GOTO lbl_8579
+cmd_play_sound(764, -1)
+GOTO lbl_8579
+cmd_play_sound(765, -1)
+GOTO lbl_8579
+cmd_play_sound(768, -1)
+GOTO lbl_8579
+cmd_play_sound(768, -1)
+GOTO lbl_8579
+cmd_play_sound(768, -1)
+GOTO lbl_8579
+cmd_play_sound(1640, -1)
+GOTO lbl_8579
+eq(copy, 163)
+FALSE GOTO lbl_8518
+popnoop
+GOTO lbl_8468
+eq(copy, 167)
+FALSE GOTO lbl_8524
+popnoop
+GOTO lbl_8472
+eq(copy, 106)
+FALSE GOTO lbl_8530
+popnoop
+GOTO lbl_8476
+eq(copy, 107)
+FALSE GOTO lbl_8536
+popnoop
+GOTO lbl_8480
+eq(copy, 108)
+FALSE GOTO lbl_8542
+popnoop
+GOTO lbl_8484
+eq(copy, 109)
+FALSE GOTO lbl_8548
+popnoop
+GOTO lbl_8488
+eq(copy, 110)
+FALSE GOTO lbl_8554
+popnoop
+GOTO lbl_8492
+eq(copy, 508)
+FALSE GOTO lbl_8560
+popnoop
+GOTO lbl_8496
+eq(copy, 536)
+FALSE GOTO lbl_8566
+popnoop
+GOTO lbl_8500
+eq(copy, 290)
+FALSE GOTO lbl_8572
+popnoop
+GOTO lbl_8504
+eq(copy, 94)
+FALSE GOTO lbl_8578
+popnoop
+GOTO lbl_8508
+popnoop
+cmd_disp_msg(-1, -1, LOAD_REG(1, -1)) // local bank msg LOAD_REG(1, -1)
+and(eq(LOAD_REG(1, 2), 167), eq(cmd_push_flag(368), 0))
+FALSE GOTO lbl_8595
+cmd_set_flag(368, 1)
+RET_REG(1, 1)
+SP_ALLOC(3)
+STORE_REG(cmd_get_talker_sprite(LOAD_REG(1, -2)),1,2)
+LOAD_REG(1, 2)
+GOTO lbl_8642
+cmd_play_sound(752, -1)
+GOTO lbl_8703
+cmd_play_sound(1074, -1)
+GOTO lbl_8703
+cmd_play_sound(761, -1)
+GOTO lbl_8703
+cmd_play_sound(762, -1)
+GOTO lbl_8703
+cmd_play_sound(763, -1)
+GOTO lbl_8703
+cmd_play_sound(764, -1)
+GOTO lbl_8703
+cmd_play_sound(765, -1)
+GOTO lbl_8703
+cmd_play_sound(768, -1)
+GOTO lbl_8703
+cmd_play_sound(768, -1)
+GOTO lbl_8703
+cmd_play_sound(1640, -1)
+GOTO lbl_8703
+eq(copy, 163)
+FALSE GOTO lbl_8648
+popnoop
+GOTO lbl_8602
+eq(copy, 167)
+FALSE GOTO lbl_8654
+popnoop
+GOTO lbl_8606
+eq(copy, 106)
+FALSE GOTO lbl_8660
+popnoop
+GOTO lbl_8610
+eq(copy, 107)
+FALSE GOTO lbl_8666
+popnoop
+GOTO lbl_8614
+eq(copy, 108)
+FALSE GOTO lbl_8672
+popnoop
+GOTO lbl_8618
+eq(copy, 109)
+FALSE GOTO lbl_8678
+popnoop
+GOTO lbl_8622
+eq(copy, 110)
+FALSE GOTO lbl_8684
+popnoop
+GOTO lbl_8626
+eq(copy, 508)
+FALSE GOTO lbl_8690
+popnoop
+GOTO lbl_8630
+eq(copy, 536)
+FALSE GOTO lbl_8696
+popnoop
+GOTO lbl_8634
+eq(copy, 94)
+FALSE GOTO lbl_8702
+popnoop
+GOTO lbl_8638
+popnoop
+cmd_disp_msg(LOAD_REG(1, -2), -1, LOAD_REG(1, -1)) // local bank msg LOAD_REG(1, -1)
+RET_REG(1, 2)
+SP_ALLOC(3)
+STORE_REG(cmd_AE(3),1,2)
+gt(LOAD_REG(1, 2), 1)
+FALSE GOTO lbl_8721
+cmd_disp_msg_0(-3, -1, 135) // 0-135:@The Happy Box is giving off a wobbling sort of[BREAK]  sound.[END]
+GOTO lbl_8734
+gt(LOAD_REG(1, 2), 2)
+FALSE GOTO lbl_8730
+cmd_disp_msg_0(-3, -1, 135) // 0-135:@The Happy Box is giving off a wobbling sort of[BREAK]  sound.[END]
+GOTO lbl_8734
+cmd_disp_msg_0(-3, -1, 135) // 0-135:@The Happy Box is giving off a wobbling sort of[BREAK]  sound.[END]
+RET_REG(1, 1)
+SP_ALLOC(2)
+LOAD_REG(1, -1)
+CALL(0,lbl_2432)
+RET_REG(1, 1)
+SP_ALLOC(4)
+STORE_REG(cmd_has_party_member_2(2),1,2)
+STORE_REG(0,1,3)
+gt(LOAD_REG(1, 3), 20)
+FALSE GOTO lbl_8765
+eq(cmd_61(add(25, LOAD_REG(1, 3))), 1)
+FALSE GOTO lbl_8761
+cmd_D2(add(25, LOAD_REG(1, 3)), 1)
+STORE_REG(inc(LOAD_REG(1, 3)),1,3)
+GOTO lbl_8745
+cmd_play_sound(191, -1)
+cmd_C7(12, 16)
+cmd_play_anim(LOAD_REG(1, 2), 107, 1)
+cmd_delay(32)
+cmd_C8()
+cmd_64(LOAD_REG(1, 2), 0, 0)
+cmd_87(4)
+cmd_play_anim(LOAD_REG(1, 2), 108, 0)
+cmd_06(LOAD_REG(1, 2))
+cmd_64(LOAD_REG(1, 2), 1, 0)
+cmd_play_anim(LOAD_REG(1, 2), 1, 0)
+cmd_set_member_sprite(LOAD_REG(1, 2), 0)
+gt(LOAD_REG(1, 3), 20)
+FALSE GOTO lbl_8821
+eq(cmd_61(add(25, LOAD_REG(1, 3))), 1)
+FALSE GOTO lbl_8817
+cmd_D2(add(25, LOAD_REG(1, 3)), 0)
+STORE_REG(inc(LOAD_REG(1, 3)),1,3)
+GOTO lbl_8801
+RET_REG(1, 0)
+SP_ALLOC(5)
+STORE_REG(8,1,3)
+STORE_REG(8,1,4)
+STORE_REG(0,1,2)
+gt(LOAD_REG(1, 2), 24)
+FALSE GOTO lbl_8891
+STORE_REG(inc(LOAD_REG(1, 2)),1,2)
+or(eq(LOAD_REG(1, 2), 2), eq(LOAD_REG(1, 2), 4))
+FALSE GOTO lbl_8853
+STORE_REG(sub(LOAD_REG(1, 3), 2),1,3)
+STORE_REG(sub(LOAD_REG(1, 4), 2),1,4)
+GOTO lbl_8879
+or(eq(LOAD_REG(1, 2), 6), or(eq(LOAD_REG(1, 2), 8), eq(LOAD_REG(1, 2), 12)))
+FALSE GOTO lbl_8872
+STORE_REG(dec(LOAD_REG(1, 3)),1,3)
+STORE_REG(dec(LOAD_REG(1, 4)),1,4)
+GOTO lbl_8879
+eq(LOAD_REG(1, 2), 16)
+FALSE GOTO lbl_8879
+STORE_REG(inc(LOAD_REG(1, 3)),1,3)
+cmd_5A(LOAD_REG(1, -1), 5)
+cmd_delay(LOAD_REG(1, 3))
+cmd_5A(LOAD_REG(1, -1), 4)
+cmd_delay(LOAD_REG(1, 4))
+GOTO lbl_8829
+GOTO lbl_8829
+cmd_5A(LOAD_REG(1, -1), 1)
+RET_REG(1, 1)
+SP_ALLOC(4)
+eq(cmd_push_flag(969), 0)
+FALSE GOTO lbl_8908
+cmd_disp_msg_0(-3, -1, 182) // 0-182:@In only a few seconds, this Instant Revitalizing[BREAK]  Device fully revitalizes you.[END]
+cmd_set_flag(969, 1)
+cmd_delay(16)
+cmd_37(1)
+cmd_38(-1, -1, 50, 0)
+cmd_disp_msg_0(-3, -1, 183) // 0-183:@Get into the Instant Revitalizing Device?[WAIT][MENU 02 00][MENUSPACEYES]Yes[MENUSPACENO]No[ENDCHOICES][END]
+eq(cmd_get_msg_choice(), 0)
+FALSE GOTO lbl_8993
+cmd_delay(32)
+neq(cmd_push_map_id(), 430)
+FALSE GOTO lbl_8935
+cmd_play_sound(1607, -1)
+GOTO lbl_8938
+cmd_play_sound(1396, -1)
+cmd_play_fade(100)
+cmd_46(-1)
+STORE_REG(cmd_get_party_size(),1,3)
+STORE_REG(0,1,2)
+neq(LOAD_REG(1, 2), LOAD_REG(1, 3))
+FALSE GOTO lbl_8957
+cmd_set_member_sprite(LOAD_REG(1, 2), 0)
+STORE_REG(inc(LOAD_REG(1, 2)),1,2)
+GOTO lbl_8946
+cmd_play_sfx(5)
+cmd_delay(261)
+cmd_set_ailment(-2, 7, 0)
+cmd_party_heal(0)
+cmd_59()
+cmd_fade_in(60)
+cmd_45(-1)
+cmd_delay(100)
+eq(cmd_get_party_size(), 1)
+FALSE GOTO lbl_8983
+cmd_disp_msg_0(-3, -1, 184) // 0-184:@You're fully revitalized.[END]
+GOTO lbl_8987
+cmd_disp_msg_0(-3, -1, 185) // 0-185:@You're fully revitalized.[END]
+cmd_set_member_sprite(-2, 0)
+cmd_F7(-2, 0)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_37(1)
+cmd_38(-1, -1, 50, 0)
+cmd_disp_msg(-1, -1, LOAD_REG(1, -4)) // local bank msg LOAD_REG(1, -4)
+eq(cmd_get_msg_choice(), 1)
+FALSE GOTO lbl_9015
+cmd_disp_msg(-1, -1, LOAD_REG(1, -2)) // local bank msg LOAD_REG(1, -2)
+GOTO lbl_9058
+cmd_84(1, 0, 4)
+cmd_46(-1)
+cmd_play_fade(64)
+cmd_delay(32)
+cmd_play_sound_ext(138, -1)
+cmd_set_bgm(LOAD_REG(1, -1), 80)
+cmd_set_bgm_other(LOAD_REG(1, -1), 139)
+cmd_set_volume(LOAD_REG(1, -1), -1)
+cmd_84(0, 0, 4)
+cmd_play_sound_ext(-1, -1)
+cmd_party_heal(0)
+cmd_delay(80)
+cmd_fade_in(100)
+cmd_45(-1)
+cmd_delay(80)
+cmd_disp_msg(-1, -1, LOAD_REG(1, -3)) // local bank msg LOAD_REG(1, -3)
+RET_REG(1, 4)
+SP_ALLOC(2)
+cmd_84(1, 0, LOAD_REG(1, -2))
+cmd_46(-1)
+cmd_delay(mul(LOAD_REG(1, -2), 16))
+cmd_play_sound_ext(138, -1)
+cmd_45(-1)
+cmd_play_sound_ext(LOAD_REG(1, -1), -1)
+cmd_84(0, 0, 1)
+RET_REG(1, 2)
+SP_ALLOC(2)
+RET(1,0)
+SP_ALLOC(2)
+RET_REG(1, 1)
+SP_ALLOC(2)
+cmd_load_name(0, LOAD_REG(1, -1))
+cmd_disp_msg_0(-3, -1, 226) // 0-226:@There is a slot for money here.[WAIT]@Insert [80 FF F0 FF] DP? [WAIT][MENU 02 00][MENUSPACEYES]Yes[MENUSPACENO]No[ENDCHOICES][END]
+eq(cmd_get_msg_choice(), 0)
+FALSE GOTO lbl_9135
+eq(cmd_E3(111), 1)
+FALSE GOTO lbl_9130
+lte(cmd_push_pocket(), LOAD_REG(1, -1))
+FALSE GOTO lbl_9124
+cmd_play_sound(107, -1)
+cmd_disp_msg_0(-3, -1, 227) // 0-227:@A [ITEM 6F 00] came out![END]
+cmd_cfg_member_item(-1, 111, 1)
+cmd_add_pocket(neg(LOAD_REG(1, -1)))
+END
+GOTO lbl_9129
+cmd_disp_msg_0(-3, -1, 229) // 0-229:@You don't have enough money.[END]
+END
+GOTO lbl_9135
+cmd_disp_msg_0(-3, -1, 228) // 0-228:@You can't carry any more stuff.[END]
+END
+RET_REG(1, 1)
+SP_ALLOC(3)
+cmd_84(1, 0, 4)
+cmd_84(1, 1, 4)
+cmd_delay(64)
+cmd_play_sound(1945, -1)
+eq(LOAD_REG(1, -2), 0)
+FALSE GOTO lbl_9158
+cmd_load_name(0, 2)
+GOTO lbl_9161
+cmd_load_name(0, 4)
+eq(LOAD_REG(1, -1), 1)
+FALSE GOTO lbl_9169
+cmd_load_name(1, 1)
+GOTO lbl_9208
+eq(LOAD_REG(1, -1), 2)
+FALSE GOTO lbl_9177
+cmd_load_name(1, 2)
+GOTO lbl_9208
+eq(LOAD_REG(1, -1), 3)
+FALSE GOTO lbl_9185
+cmd_load_name(1, 3)
+GOTO lbl_9208
+eq(LOAD_REG(1, -1), 4)
+FALSE GOTO lbl_9193
+cmd_load_name(1, 4)
+GOTO lbl_9208
+eq(LOAD_REG(1, -1), 5)
+FALSE GOTO lbl_9201
+cmd_load_name(1, 5)
+GOTO lbl_9208
+eq(LOAD_REG(1, -1), 6)
+FALSE GOTO lbl_9208
+cmd_load_name(1, 6)
+cmd_disp_msg_0(-3, -1, 152) // 0-152:@Something awoke inside [CHAR 23 F0 FF]![END]
+cmd_delay(32)
+cmd_play_sound(1946, -1)
+cmd_disp_msg_0(-3, -1, 153) // 0-153:@[CHAR 23 F0 FF] realized the power of[BREAK]  [25 FF F1 FF]![END]
+cmd_84(1, 0, 2)
+cmd_84(1, 1, 2)
+cmd_delay(32)
+cmd_play_sound_ext(138, -1)
+cmd_play_sound_ext(139, -1)
+cmd_delay(16)
+cmd_play_sound_ext(-1, -1)
+cmd_84(0, 0, 2)
+cmd_84(0, 1, 2)
+cmd_delay(32)
+eq(LOAD_REG(1, -2), 0)
+FALSE GOTO lbl_9259
+STORE_REG(2,1,2)
+GOTO lbl_9261
+STORE_REG(4,1,2)
+cmd_set_psi(LOAD_REG(1, 2), LOAD_REG(1, -1), 1)
+RET_REG(1, 2)
+SP_ALLOC(3)
+eq(cmd_get_giftbox_flag(LOAD_REG(1, -1)), 0)
+FALSE GOTO lbl_9370
+cmd_37(1)
+cmd_38(-1, -1, 50, 0)
+cmd_disp_msg_0(-3, -1, 84) // 0-84:@There's a trash can here.[WAIT]@Look inside it?[WAIT][MENU 02 00][MENUSPACEYES]Yes[MENUSPACENO]No[BREAK][ENDCHOICES][END]
+eq(cmd_get_msg_choice(), 0)
+FALSE GOTO lbl_9368
+cmd_delay(16)
+cmd_play_sound(1594, -1)
+cmd_play_anim(-1, 105, 0)
+cmd_load_name(0, LOAD_REG(1, -2))
+cmd_disp_msg_0(-3, -1, 243) // 0-243:@TAAAAAH-DAAAAAH![WAIT]@Inside the trash can, there was[BREAK]  [EF 91][ITEM F0 FF]![END]
+eq(cmd_E3(LOAD_REG(1, -2)), 1)
+FALSE GOTO lbl_9358
+cmd_delay(16)
+cmd_play_sound(107, -1)
+cmd_cfg_member_item(-1, LOAD_REG(1, -2), 1)
+STORE_REG(cmd_E3(-1),1,2)
+and(neq(cmd_push_map_id(), 180), and(neq(cmd_push_map_id(), 179), neq(cmd_push_map_id(), 181)))
+FALSE GOTO lbl_9343
+cmd_load_name(0, LOAD_REG(1, -2))
+cmd_load_name(1, LOAD_REG(1, 2))
+cmd_disp_msg_0(-3, -1, 244) // 0-244:@[42 FF F1 FF] got [EF 93][ITEM F0 FF]![END]
+GOTO lbl_9353
+cmd_load_name(0, LOAD_REG(1, -2))
+cmd_load_name(1, LOAD_REG(1, 2))
+cmd_disp_msg_0(-3, -1, 245) // 0-245:@[42 FF F1 FF] got [EF 93][ITEM F0 FF]![WAIT]@Maybe.[END]
+cmd_set_giftbox_flag(LOAD_REG(1, -1), 1)
+END
+GOTO lbl_9367
+cmd_play_anim(-1, 1, 0)
+cmd_disp_msg_0(-3, -1, 247) // 0-247:@But you can't carry any more stuff.[END]
+END
+GOTO lbl_9369
+END
+GOTO lbl_9374
+cmd_disp_msg_0(-3, -1, 62) // 0-62:@It's empty...[END]
+RET_REG(1, 2)
+SP_ALLOC(14)
+STORE_REG(cmd_5F(0),1,2)
+cmd_DD(61, LOAD_REG(1, 2))
+lte(cmd_get_party_size(), 2)
+FALSE GOTO lbl_9392
+STORE_REG(cmd_5F(1),1,3)
+cmd_DD(62, LOAD_REG(1, 3))
+lte(cmd_get_party_size(), 3)
+FALSE GOTO lbl_9402
+STORE_REG(cmd_5F(2),1,4)
+cmd_DD(63, LOAD_REG(1, 4))
+lte(cmd_get_party_size(), 4)
+FALSE GOTO lbl_9412
+STORE_REG(cmd_5F(3),1,5)
+cmd_DD(64, LOAD_REG(1, 5))
+cmd_5C(0, REG_ADDR(1, 6), REG_ADDR(1, 7))
+cmd_0C(3, LOAD_REG(1, 6))
+cmd_0C(4, LOAD_REG(1, 7))
+lte(cmd_get_party_size(), 2)
+FALSE GOTO lbl_9436
+cmd_5C(1, REG_ADDR(1, 8), REG_ADDR(1, 9))
+cmd_0C(5, LOAD_REG(1, 8))
+cmd_0C(6, LOAD_REG(1, 9))
+lte(cmd_get_party_size(), 3)
+FALSE GOTO lbl_9450
+cmd_5C(2, REG_ADDR(1, 10), REG_ADDR(1, 11))
+cmd_0C(7, LOAD_REG(1, 10))
+cmd_0C(8, LOAD_REG(1, 11))
+lte(cmd_get_party_size(), 4)
+FALSE GOTO lbl_9464
+cmd_5C(3, REG_ADDR(1, 12), REG_ADDR(1, 13))
+cmd_0C(9, LOAD_REG(1, 12))
+cmd_0C(10, LOAD_REG(1, 13))
+PUSH(0)
+RET_REG(1, 0)
+SP_ALLOC(14)
+STORE_REG(cmd_DE(61),1,2)
+STORE_REG(cmd_DE(62),1,3)
+STORE_REG(cmd_DE(63),1,4)
+STORE_REG(cmd_DE(64),1,5)
+cmd_set_member_sprite(0, LOAD_REG(1, 2))
+lte(cmd_get_party_size(), 2)
+FALSE GOTO lbl_9489
+cmd_set_member_sprite(1, LOAD_REG(1, 3))
+lte(cmd_get_party_size(), 3)
+FALSE GOTO lbl_9496
+cmd_set_member_sprite(2, LOAD_REG(1, 4))
+lte(cmd_get_party_size(), 4)
+FALSE GOTO lbl_9503
+cmd_set_member_sprite(3, LOAD_REG(1, 5))
+STORE_REG(cmd_0F(3),1,6)
+STORE_REG(cmd_0F(4),1,7)
+STORE_REG(cmd_0F(5),1,8)
+STORE_REG(cmd_0F(6),1,9)
+STORE_REG(cmd_0F(7),1,10)
+STORE_REG(cmd_0F(8),1,11)
+STORE_REG(cmd_0F(9),1,12)
+STORE_REG(cmd_0F(10),1,13)
+cmd_5B(0, sub(LOAD_REG(1, 6), 16), sub(LOAD_REG(1, 7), 16))
+lte(cmd_get_party_size(), 2)
+FALSE GOTO lbl_9547
+cmd_5B(1, sub(LOAD_REG(1, 8), 16), sub(LOAD_REG(1, 9), 16))
+lte(cmd_get_party_size(), 3)
+FALSE GOTO lbl_9559
+cmd_5B(2, sub(LOAD_REG(1, 10), 16), sub(LOAD_REG(1, 11), 16))
+lte(cmd_get_party_size(), 4)
+FALSE GOTO lbl_9571
+cmd_5B(3, sub(LOAD_REG(1, 12), 16), sub(LOAD_REG(1, 13), 16))
+cmd_0C(3, 0)
+cmd_0C(4, 0)
+cmd_0C(5, 0)
+cmd_0C(6, 0)
+cmd_0C(7, 0)
+cmd_0C(8, 0)
+cmd_0C(9, 0)
+cmd_0C(10, 0)
+PUSH(0)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_play_sound(669, -1)
+cmd_delay(8)
+cmd_play_sound(669, -1)
+cmd_delay(8)
+cmd_play_sound(669, -1)
+cmd_delay(32)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_party_add(3)
+cmd_set_key_item(214, 1)
+cmd_set_key_item(215, 1)
+cmd_set_key_item(216, 1)
+cmd_set_key_item(217, 1)
+cmd_set_key_item(218, 1)
+cmd_set_key_item(219, 1)
+and(eq(cmd_push_flag(147), 1), gt(cmd_0E(21), 255))
+FALSE GOTO lbl_9648
+cmd_set_key_item(228, 1)
+lte(cmd_0E(21), 24)
+FALSE GOTO lbl_9656
+cmd_set_key_item(223, 1)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_party_remove(3)
+lt(cmd_get_item_count(214), 0)
+FALSE GOTO lbl_9668
+cmd_set_key_item(214, -1)
+lt(cmd_get_item_count(215), 0)
+FALSE GOTO lbl_9676
+cmd_set_key_item(215, -1)
+lt(cmd_get_item_count(216), 0)
+FALSE GOTO lbl_9684
+cmd_set_key_item(216, -1)
+lt(cmd_get_item_count(217), 0)
+FALSE GOTO lbl_9692
+cmd_set_key_item(217, -1)
+lt(cmd_get_item_count(218), 0)
+FALSE GOTO lbl_9700
+cmd_set_key_item(218, -1)
+lt(cmd_get_item_count(219), 0)
+FALSE GOTO lbl_9708
+cmd_set_key_item(219, -1)
+and(eq(cmd_push_flag(147), 1), gte(cmd_0E(21), 255))
+FALSE GOTO lbl_9726
+lt(cmd_get_item_count(228), 0)
+FALSE GOTO lbl_9726
+cmd_set_key_item(228, -1)
+lte(cmd_0E(21), 24)
+FALSE GOTO lbl_9739
+lt(cmd_get_item_count(223), 0)
+FALSE GOTO lbl_9739
+cmd_set_key_item(223, -1)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_party_add(4)
+eq(LOAD_REG(1, -1), 1)
+FALSE GOTO lbl_9755
+cmd_set_psi(4, -1, 1)
+cmd_set_psi(4, -2, 1)
+RET_REG(1, 1)
+SP_ALLOC(2)
+cmd_party_remove(4)
+RET_REG(1, 0)
+SP_ALLOC(4)
+cmd_party_heal(3)
+STORE_REG(0,1,2)
+STORE_REG(cmd_get_party_size(),1,3)
+neq(LOAD_REG(1, 2), LOAD_REG(1, 3))
+FALSE GOTO lbl_9782
+cmd_50(LOAD_REG(1, 2), 0, -1, 0)
+cmd_79(LOAD_REG(1, 2))
+STORE_REG(inc(LOAD_REG(1, 2)),1,2)
+GOTO lbl_9767
+RET_REG(1, 0)
+SP_ALLOC(7)
+STORE_REG(cmd_2F(),1,2)
+STORE_REG(3600,1,3)
+lte(LOAD_REG(1, 2), mul(90, LOAD_REG(1, 3)))
+FALSE GOTO lbl_9800
+cmd_2E(sub(LOAD_REG(1, 2), mul(5, LOAD_REG(1, 3))))
+STORE_REG(0,1,4)
+STORE_REG(cmd_get_party_size(),1,5)
+neq(LOAD_REG(1, 4), LOAD_REG(1, 5))
+FALSE GOTO lbl_9818
+STORE_REG(cmd_5F(LOAD_REG(1, 4)),1,6)
+cmd_F7(LOAD_REG(1, 4), LOAD_REG(1, 6))
+STORE_REG(inc(LOAD_REG(1, 4)),1,4)
+GOTO lbl_9804
+cmd_B7()
+PUSH(0)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_set_flag(789, LOAD_REG(1, -1))
+RET_REG(1, 1)
+SP_ALLOC(3)
+STORE_REG(cmd_5F(0),1,2)
+cmd_play_sound(1597, -1)
+cmd_58(0, 8, 16)
+cmd_6C(0, 1)
+cmd_linemove(0, LOAD_REG(1, 2), 2, 1)
+cmd_set_anim_speed(0)
+cmd_50(0, 8, LOAD_REG(1, 2), 0)
+cmd_64(0, 0, 0)
+cmd_6B(0, LOAD_REG(1, 2), 1, 8)
+cmd_set_anim_speed(0)
+cmd_6B(0, LOAD_REG(1, 2), 0, 8)
+cmd_set_anim_speed(0)
+cmd_6C(0, 0)
+cmd_delay(128)
+cmd_64(0, 1, 0)
+cmd_50(0, 7, LOAD_REG(1, 2), 0)
+cmd_delay(32)
+cmd_50(0, 0, LOAD_REG(1, 2), 0)
+cmd_delay(32)
+cmd_B7()
+END
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_6D(LOAD_REG(1, -4), 0, LOAD_REG(1, -2))
+cmd_6D(LOAD_REG(1, -4), 2, LOAD_REG(1, -3))
+cmd_disp_msg(LOAD_REG(1, -4), -1, LOAD_REG(1, -1)) // local bank msg LOAD_REG(1, -1)
+cmd_play_anim(LOAD_REG(1, -4), LOAD_REG(1, -2), 0)
+RET_REG(1, 4)
+SP_ALLOC(2)
+cmd_disp_msg_0(-3, -1, 252) // 0-252:@Some sort of waste product.[END]
+RET_REG(1, 0)
+SP_ALLOC(3)
+eq(LOAD_REG(1, -1), 0)
+FALSE GOTO lbl_9941
+STORE_REG(6,1,2)
+gt(LOAD_REG(1, 2), 25)
+FALSE GOTO lbl_9940
+GOTO lbl_9936
+STORE_REG(inc(LOAD_REG(1, 2)),1,2)
+GOTO lbl_9927
+cmd_5A(LOAD_REG(1, 2), 1)
+GOTO lbl_9932
+GOTO lbl_9960
+eq(LOAD_REG(1, -1), 1)
+FALSE GOTO lbl_9960
+STORE_REG(6,1,2)
+gt(LOAD_REG(1, 2), 25)
+FALSE GOTO lbl_9960
+GOTO lbl_9956
+STORE_REG(inc(LOAD_REG(1, 2)),1,2)
+GOTO lbl_9947
+cmd_5A(LOAD_REG(1, 2), 0)
+GOTO lbl_9952
+RET_REG(1, 1)
+SP_ALLOC(3)
+STORE_REG(0,0,0)
+STORE_REG(cmd_push_map_id(),1,2)
+or(and(eq(cmd_push_flag(1056), 0), eq(LOAD_REG(1, 2), 206)), or(and(eq(cmd_push_flag(1057), 0), eq(LOAD_REG(1, 2), 137)), or(and(eq(cmd_push_flag(1058), 0), eq(LOAD_REG(1, 2), 186)), and(eq(cmd_push_flag(1059), 0), eq(LOAD_REG(1, 2), 7)))))
+FALSE GOTO lbl_10004
+STORE_REG(1,0,0)
+eq(LOAD_REG(0, 0), 1)
+FALSE GOTO lbl_10095
+cmd_play_sound(242, -1)
+cmd_play_anim(-1, 1, 0)
+cmd_disp_msg_0(-3, -1, 53) // 0-53:@[42 FF 00 00] opened the present.[EVENT][END]
+cmd_84(1, 0, 1)
+cmd_84(1, 1, 1)
+cmd_delay(32)
+eq(LOAD_REG(1, 2), 206)
+FALSE GOTO lbl_10042
+cmd_play_sound(1020, -1)
+cmd_delay(220)
+cmd_set_flag(1056, 1)
+GOTO lbl_10080
+eq(LOAD_REG(1, 2), 137)
+FALSE GOTO lbl_10055
+cmd_play_sound(1021, -1)
+cmd_delay(175)
+cmd_set_flag(1057, 1)
+GOTO lbl_10080
+eq(LOAD_REG(1, 2), 186)
+FALSE GOTO lbl_10068
+cmd_play_sound(1022, -1)
+cmd_delay(180)
+cmd_set_flag(1058, 1)
+GOTO lbl_10080
+eq(LOAD_REG(1, 2), 7)
+FALSE GOTO lbl_10080
+cmd_play_sound(1023, -1)
+cmd_delay(60)
+cmd_set_flag(1059, 1)
+cmd_delay(64)
+cmd_84(0, 0, 1)
+cmd_84(0, 1, 1)
+cmd_disp_msg_0(-3, -1, 205) // 0-205:@An indescribable smell lingers in the air.[END]
+GOTO lbl_10099
+cmd_disp_msg_0(-3, -1, 62) // 0-62:@It's empty...[END]
+RET_REG(1, 1)
+SP_ALLOC(3)
+STORE_REG(0,0,0)
+STORE_REG(cmd_push_map_id(),1,2)
+or(and(eq(cmd_push_flag(1060), 0), eq(LOAD_REG(1, 2), 97)), or(and(eq(cmd_push_flag(1061), 0), eq(LOAD_REG(1, 2), 34)), or(and(eq(cmd_push_flag(1062), 0), eq(LOAD_REG(1, 2), 218)), and(eq(cmd_push_flag(1063), 0), eq(LOAD_REG(1, 2), 453)))))
+FALSE GOTO lbl_10143
+STORE_REG(1,0,0)
+eq(LOAD_REG(0, 0), 1)
+FALSE GOTO lbl_10262
+cmd_play_sound(242, -1)
+cmd_play_anim(-1, 1, 0)
+cmd_disp_msg_0(-3, -1, 53) // 0-53:@[42 FF 00 00] opened the present.[EVENT][END]
+cmd_84(1, 0, 1)
+cmd_84(1, 1, 1)
+cmd_delay(32)
+eq(LOAD_REG(1, 2), 97)
+FALSE GOTO lbl_10185
+cmd_play_sound(1024, -1)
+cmd_delay(32)
+cmd_disp_msg_0(-3, -1, 206) // 0-206:@You heard a mambo rhythm.[PAUSE F0 00][EVENT][END]
+cmd_set_flag(1060, 1)
+GOTO lbl_10235
+eq(LOAD_REG(1, 2), 34)
+FALSE GOTO lbl_10202
+cmd_play_sound(1025, -1)
+cmd_delay(32)
+cmd_disp_msg_0(-3, -1, 207) // 0-207:@You heard a reggae rhythm.[PAUSE F0 00][EVENT][END]
+cmd_set_flag(1061, 1)
+GOTO lbl_10235
+eq(LOAD_REG(1, 2), 218)
+FALSE GOTO lbl_10219
+cmd_play_sound(1026, -1)
+cmd_delay(32)
+cmd_disp_msg_0(-3, -1, 208) // 0-208:@You heard a waltz rhythm.[PAUSE F0 00][EVENT][END]
+cmd_set_flag(1062, 1)
+GOTO lbl_10235
+eq(LOAD_REG(1, 2), 453)
+FALSE GOTO lbl_10235
+cmd_play_sound(1027, -1)
+cmd_delay(32)
+cmd_disp_msg_0(-3, -1, 209) // 0-209:@You heard a boogie-woogie rhythm.[PAUSE F0 00][EVENT][END]
+cmd_set_flag(1063, 1)
+cmd_delay(128)
+cmd_85(1, 9, 8)
+cmd_delay(64)
+cmd_play_sound_ext(-1, -1)
+cmd_84(0, 0, 4)
+cmd_84(0, 1, 4)
+cmd_delay(64)
+cmd_disp_msg_0(-3, -1, 210) // 0-210:  Ah.[END]
+END
+GOTO lbl_10266
+cmd_disp_msg_0(-3, -1, 62) // 0-62:@It's empty...[END]
+RET_REG(1, 1)
+SP_ALLOC(4)
+STORE_REG(0,0,0)
+STORE_REG(cmd_push_map_id(),1,3)
+or(and(eq(cmd_push_flag(1082), 0), eq(LOAD_REG(1, 3), 161)), or(and(eq(cmd_push_flag(1083), 0), eq(LOAD_REG(1, 3), 441)), or(and(eq(cmd_push_flag(1084), 0), eq(LOAD_REG(1, 3), 378)), and(eq(cmd_push_flag(1085), 0), eq(LOAD_REG(1, 3), 258)))))
+FALSE GOTO lbl_10310
+STORE_REG(1,0,0)
+STORE_REG(0,1,2)
+eq(LOAD_REG(1, 3), 161)
+FALSE GOTO lbl_10319
+STORE_REG(210,1,2)
+GOTO lbl_10339
+eq(LOAD_REG(1, 3), 441)
+FALSE GOTO lbl_10326
+STORE_REG(211,1,2)
+GOTO lbl_10339
+eq(LOAD_REG(1, 3), 378)
+FALSE GOTO lbl_10333
+STORE_REG(212,1,2)
+GOTO lbl_10339
+eq(LOAD_REG(1, 3), 258)
+FALSE GOTO lbl_10339
+STORE_REG(213,1,2)
+eq(LOAD_REG(0, 0), 1)
+FALSE GOTO lbl_10413
+eq(cmd_E3(LOAD_REG(1, 2)), 0)
+FALSE GOTO lbl_10356
+cmd_load_name(0, LOAD_REG(1, 2))
+cmd_disp_msg_0(-3, -1, 82) // 0-82:@Inside the present, there [EF 97][BREAK]  [EF 91][ITEM F0 FF].[WAIT]@But you can't carry any more stuff.[END]
+END
+cmd_play_sound(242, -1)
+cmd_play_anim(-1, 1, 0)
+cmd_disp_msg_0(-3, -1, 53) // 0-53:@[42 FF 00 00] opened the present.[EVENT][END]
+cmd_play_sound(245, -1)
+cmd_load_name(0, LOAD_REG(1, 2))
+cmd_disp_msg_0(-3, -1, 45) // 0-45:@Got [EF 91][ITEM F0 FF]![PAUSE 40 00][END]
+cmd_cfg_member_item(-1, LOAD_REG(1, 2), 1)
+eq(LOAD_REG(1, 3), 161)
+FALSE GOTO lbl_10389
+cmd_set_flag(1082, 1)
+GOTO lbl_10412
+eq(LOAD_REG(1, 3), 441)
+FALSE GOTO lbl_10397
+cmd_set_flag(1083, 1)
+GOTO lbl_10412
+eq(LOAD_REG(1, 3), 378)
+FALSE GOTO lbl_10405
+cmd_set_flag(1084, 1)
+GOTO lbl_10412
+eq(LOAD_REG(1, 3), 258)
+FALSE GOTO lbl_10412
+cmd_set_flag(1085, 1)
+GOTO lbl_10417
+cmd_disp_msg_0(-3, -1, 62) // 0-62:@It's empty...[END]
+RET_REG(1, 1)
+SP_ALLOC(11)
+STORE_REG(0,0,0)
+STORE_REG(cmd_push_map_id(),1,10)
+or(and(eq(cmd_push_flag(1087), 0), eq(LOAD_REG(1, -1), 1)), and(eq(cmd_push_flag(1086), 0), eq(LOAD_REG(1, -1), 2)))
+FALSE GOTO lbl_10443
+STORE_REG(1,0,0)
+eq(LOAD_REG(0, 0), 1)
+FALSE GOTO lbl_10754
+eq(cmd_push_map_id(), 53)
+FALSE GOTO lbl_10454
+STORE_REG(14,1,2)
+GOTO lbl_10462
+eq(cmd_push_map_id(), 49)
+FALSE GOTO lbl_10462
+STORE_REG(20,1,2)
+STORE_REG(21,1,3)
+cmd_play_sound(242, -1)
+cmd_play_anim(-1, 1, 0)
+cmd_disp_msg_0(-3, -1, 53) // 0-53:@[42 FF 00 00] opened the present.[EVENT][END]
+cmd_84(1, 0, 1)
+cmd_84(1, 1, 1)
+cmd_5C(LOAD_REG(1, 2), REG_ADDR(1, 7), REG_ADDR(1, 8))
+STORE_REG(0,1,4)
+STORE_REG(cmd_get_party_size(),1,9)
+neq(LOAD_REG(1, 4), LOAD_REG(1, 9))
+FALSE GOTO lbl_10508
+cmd_5C(LOAD_REG(1, 4), REG_ADDR(1, 5), REG_ADDR(1, 6))
+lt(LOAD_REG(1, 6), LOAD_REG(1, 8))
+FALSE GOTO lbl_10504
+cmd_63(LOAD_REG(1, 4), 1)
+STORE_REG(inc(LOAD_REG(1, 4)),1,4)
+GOTO lbl_10489
+cmd_delay(32)
+eq(LOAD_REG(1, -1), 1)
+FALSE GOTO lbl_10534
+cmd_play_sound(1019, -1)
+cmd_delay(32)
+cmd_5A(LOAD_REG(1, 2), 0)
+cmd_63(LOAD_REG(1, 2), 2)
+cmd_delay(388)
+cmd_5A(LOAD_REG(1, 2), 1)
+cmd_set_flag(1087, 1)
+GOTO lbl_10710
+eq(LOAD_REG(1, -1), 2)
+FALSE GOTO lbl_10710
+cmd_play_sound(1018, -1)
+cmd_delay(32)
+cmd_set_flag(996, 1)
+cmd_pan_to_pos(sub(LOAD_REG(1, 7), 16), sub(sub(LOAD_REG(1, 8), 16), 32), 64)
+cmd_delay(96)
+cmd_5A(LOAD_REG(1, 2), 0)
+cmd_63(LOAD_REG(1, 2), 1)
+cmd_5A(LOAD_REG(1, 3), 0)
+cmd_63(LOAD_REG(1, 3), 1)
+STORE_REG(0,1,4)
+gt(LOAD_REG(1, 4), 272)
+FALSE GOTO lbl_10682
+eq(LOAD_REG(1, 4), 0)
+FALSE GOTO lbl_10589
+cmd_6C(LOAD_REG(1, 2), 1)
+cmd_linemove(LOAD_REG(1, 2), 4, 4, 4)
+GOTO lbl_10663
+eq(LOAD_REG(1, 4), 16)
+FALSE GOTO lbl_10599
+cmd_linemove(LOAD_REG(1, 2), 4, 3, 2)
+GOTO lbl_10663
+eq(LOAD_REG(1, 4), 32)
+FALSE GOTO lbl_10609
+cmd_linemove(LOAD_REG(1, 2), 4, 2, 2)
+GOTO lbl_10663
+eq(LOAD_REG(1, 4), 64)
+FALSE GOTO lbl_10621
+cmd_cam_follow_sprite(0)
+cmd_6B(LOAD_REG(1, 2), 4, 1, 8)
+GOTO lbl_10663
+eq(LOAD_REG(1, 4), 80)
+FALSE GOTO lbl_10631
+cmd_6B(LOAD_REG(1, 2), 4, 0, 8)
+GOTO lbl_10663
+eq(LOAD_REG(1, 4), 112)
+FALSE GOTO lbl_10644
+cmd_5A(LOAD_REG(1, 2), 5)
+cmd_6B(LOAD_REG(1, 2), 4, 0, 8)
+GOTO lbl_10663
+eq(LOAD_REG(1, 4), 224)
+FALSE GOTO lbl_10656
+cmd_5A(LOAD_REG(1, 2), 4)
+cmd_play_anim(LOAD_REG(1, 2), 1, 0)
+GOTO lbl_10663
+eq(LOAD_REG(1, 4), 256)
+FALSE GOTO lbl_10663
+cmd_5A(LOAD_REG(1, 2), 1)
+eq(LOAD_REG(1, 4), 8)
+FALSE GOTO lbl_10669
+cmd_cam_follow_sprite(LOAD_REG(1, 2))
+eq(LOAD_REG(1, 4), 38)
+FALSE GOTO lbl_10676
+cmd_5A(LOAD_REG(1, 3), 1)
+cmd_delay(0)
+STORE_REG(inc(LOAD_REG(1, 4)),1,4)
+GOTO lbl_10572
+cmd_delay(80)
+cmd_41(0, 128)
+STORE_REG(0,1,4)
+STORE_REG(cmd_get_party_size(),1,9)
+neq(LOAD_REG(1, 4), LOAD_REG(1, 9))
+FALSE GOTO lbl_10702
+cmd_set_member_sprite(LOAD_REG(1, 4), 4)
+STORE_REG(inc(LOAD_REG(1, 4)),1,4)
+GOTO lbl_10691
+cmd_delay(128)
+cmd_set_flag(996, 0)
+cmd_set_flag(1086, 1)
+cmd_delay(64)
+cmd_play_sound_ext(138, -1)
+cmd_play_sound_ext(139, -1)
+cmd_play_sound_ext(-1, -1)
+cmd_84(0, 0, 4)
+cmd_84(0, 1, 4)
+cmd_disp_msg_0(-3, -1, 211) // 0-211:@There were fireworks inside.[WAIT][PAUSE 40 00] ...Ah.[END]
+STORE_REG(0,1,4)
+STORE_REG(cmd_get_party_size(),1,9)
+STORE_REG(cmd_push_map_id(),1,10)
+neq(LOAD_REG(1, 4), LOAD_REG(1, 9))
+FALSE GOTO lbl_10750
+cmd_63(LOAD_REG(1, 4), -1)
+STORE_REG(inc(LOAD_REG(1, 4)),1,4)
+GOTO lbl_10739
+cmd_delay(64)
+END
+GOTO lbl_10758
+cmd_disp_msg_0(-3, -1, 62) // 0-62:@It's empty...[END]
+RET_REG(1, 1)
+SP_ALLOC(5)
+STORE_REG(0,0,0)
+STORE_REG(cmd_push_map_id(),1,4)
+or(and(eq(cmd_push_flag(1074), 0), eq(LOAD_REG(1, 4), 41)), or(and(eq(cmd_push_flag(1075), 0), eq(LOAD_REG(1, 4), 225)), and(eq(cmd_push_flag(1076), 0), eq(LOAD_REG(1, 4), 57))))
+FALSE GOTO lbl_10793
+STORE_REG(1,0,0)
+eq(LOAD_REG(0, 0), 1)
+FALSE GOTO lbl_10841
+cmd_play_sound(242, -1)
+cmd_play_anim(-1, 1, 0)
+cmd_disp_msg_0(-3, -1, 53) // 0-53:@[42 FF 00 00] opened the present.[EVENT][END]
+cmd_delay(32)
+cmd_3B()
+cmd_5A(LOAD_REG(1, -1), 0)
+LOAD_REG(1, -1)
+CALL(0,lbl_2432)
+eq(LOAD_REG(1, 4), 41)
+FALSE GOTO lbl_10824
+cmd_set_flag(1074, 1)
+GOTO lbl_10839
+eq(LOAD_REG(1, 4), 225)
+FALSE GOTO lbl_10832
+cmd_set_flag(1075, 1)
+GOTO lbl_10839
+eq(LOAD_REG(1, 4), 57)
+FALSE GOTO lbl_10839
+cmd_set_flag(1076, 1)
+END
+GOTO lbl_10845
+cmd_disp_msg_0(-3, -1, 62) // 0-62:@It's empty...[END]
+RET_REG(1, 1)
+SP_ALLOC(3)
+STORE_REG(cmd_push_map_id(),1,2)
+cmd_5A(LOAD_REG(1, -1), 0)
+LOAD_REG(1, -1)
+CALL(0,lbl_2432)
+eq(LOAD_REG(1, 2), 142)
+FALSE GOTO lbl_10862
+cmd_set_flag(1077, 1)
+GOTO lbl_10885
+eq(LOAD_REG(1, 2), 47)
+FALSE GOTO lbl_10870
+cmd_set_flag(1078, 1)
+GOTO lbl_10885
+eq(LOAD_REG(1, 2), 442)
+FALSE GOTO lbl_10878
+cmd_set_flag(1079, 1)
+GOTO lbl_10885
+eq(LOAD_REG(1, 2), 361)
+FALSE GOTO lbl_10885
+cmd_set_flag(1080, 1)
+END
+RET_REG(1, 1)
+SP_ALLOC(3)
+eq(cmd_0E(4), 0)
+FALSE GOTO lbl_10896
+STORE_REG(674,1,2)
+GOTO lbl_10898
+STORE_REG(753,1,2)
+neq(LOAD_REG(1, -2), -1)
+FALSE GOTO lbl_10907
+cmd_50(LOAD_REG(1, -2), 2, -1, 0)
+cmd_play_sound(LOAD_REG(1, 2), LOAD_REG(1, -1))
+cmd_delay(24)
+cmd_play_sound(LOAD_REG(1, 2), LOAD_REG(1, -1))
+cmd_delay(25)
+cmd_play_sound(LOAD_REG(1, 2), LOAD_REG(1, -1))
+RET_REG(1, 2)
+SP_ALLOC(2)
+cmd_AD(834, 184, 120, 0)
+and(eq(cmd_07(), 0), eq(cmd_push_flag(1143), 1))
+FALSE GOTO lbl_10967
+cmd_cfg_member(2, -1, 4)
+cmd_68(0, 4)
+cmd_cfg_member(4, -1, 12)
+cmd_68(1, 12)
+cmd_cfg_member(3, -1, 15)
+cmd_68(2, 15)
+cmd_cfg_member(5, -1, 9)
+cmd_68(3, 9)
+cmd_set_flag(1143, 0)
+RET_REG(1, 0)
+SP_ALLOC(9)
+cmd_37(1)
+cmd_38(-1, -1, 50, 0)
+STORE_REG(cmd_push_map_id(),1,8)
+and(neq(LOAD_REG(1, 8), 641), neq(LOAD_REG(1, 8), 887))
+FALSE GOTO lbl_10991
+cmd_disp_msg_0(-3, -1, 63) // 0-63:@You can take a nap on this bed.[WAIT]  Take a quick rest?[WAIT][MENU 02 00][MENUSPACEYES]Yes[MENUSPACENO]No[ENDCHOICES][END]
+GOTO lbl_10995
+cmd_disp_msg_0(-3, -1, 64) // 0-64:@You can take a nap on this sofa.[WAIT]  Take a quick rest?[WAIT][MENU 02 00][MENUSPACEYES]Yes[MENUSPACENO]No[ENDCHOICES][END]
+cmd_delay(16)
+eq(cmd_get_msg_choice(), 1)
+FALSE GOTO lbl_11002
+END
+cmd_delay(32)
+cmd_46(-1)
+cmd_84(1, 0, 4)
+cmd_play_fade(64)
+cmd_delay(32)
+cmd_play_sfx(5)
+cmd_delay(261)
+cmd_set_ailment(-2, 7, 0)
+cmd_party_heal(0)
+STORE_REG(cmd_get_party_size(),1,5)
+STORE_REG(0,1,4)
+neq(LOAD_REG(1, 4), LOAD_REG(1, 5))
+FALSE GOTO lbl_11055
+eq(LOAD_REG(1, 8), 111)
+FALSE GOTO lbl_11040
+cmd_set_member_sprite(LOAD_REG(1, 4), 4)
+GOTO lbl_11051
+eq(LOAD_REG(1, 8), 141)
+FALSE GOTO lbl_11048
+cmd_set_member_sprite(LOAD_REG(1, 4), 6)
+GOTO lbl_11051
+cmd_set_member_sprite(LOAD_REG(1, 4), 0)
+STORE_REG(inc(LOAD_REG(1, 4)),1,4)
+GOTO lbl_11028
+eq(LOAD_REG(1, 8), 101)
+FALSE GOTO lbl_11122
+cmd_5B(0, 336, 144)
+cmd_5C(0, REG_ADDR(1, 2), REG_ADDR(1, 3))
+cmd_pan_to_map_pos(-1, add(sub(LOAD_REG(1, 2), 16), 8), add(sub(LOAD_REG(1, 3), 16), 16))
+lte(cmd_get_party_size(), 2)
+FALSE GOTO lbl_11093
+cmd_5B(1, add(sub(LOAD_REG(1, 2), 16), 16), sub(LOAD_REG(1, 3), 16))
+lte(cmd_get_party_size(), 3)
+FALSE GOTO lbl_11107
+cmd_5B(2, add(sub(LOAD_REG(1, 2), 16), 32), sub(LOAD_REG(1, 3), 16))
+lte(cmd_get_party_size(), 4)
+FALSE GOTO lbl_11121
+cmd_5B(3, add(sub(LOAD_REG(1, 2), 16), 48), sub(LOAD_REG(1, 3), 16))
+GOTO lbl_11566
+eq(LOAD_REG(1, 8), 111)
+FALSE GOTO lbl_11189
+cmd_5B(0, 320, 176)
+cmd_5C(0, REG_ADDR(1, 2), REG_ADDR(1, 3))
+cmd_pan_to_map_pos(-1, add(sub(LOAD_REG(1, 2), 16), 8), add(sub(LOAD_REG(1, 3), 16), 16))
+lte(cmd_get_party_size(), 2)
+FALSE GOTO lbl_11160
+cmd_5B(1, add(sub(LOAD_REG(1, 2), 16), 16), sub(LOAD_REG(1, 3), 16))
+lte(cmd_get_party_size(), 3)
+FALSE GOTO lbl_11174
+cmd_5B(2, sub(sub(LOAD_REG(1, 2), 16), 16), sub(LOAD_REG(1, 3), 16))
+lte(cmd_get_party_size(), 4)
+FALSE GOTO lbl_11188
+cmd_5B(3, sub(sub(LOAD_REG(1, 2), 16), 32), sub(LOAD_REG(1, 3), 16))
+GOTO lbl_11566
+eq(LOAD_REG(1, 8), 141)
+FALSE GOTO lbl_11256
+cmd_5B(0, 208, 128)
+cmd_5C(0, REG_ADDR(1, 2), REG_ADDR(1, 3))
+cmd_pan_to_map_pos(-1, add(sub(LOAD_REG(1, 2), 16), 8), add(sub(LOAD_REG(1, 3), 16), 16))
+lte(cmd_get_party_size(), 2)
+FALSE GOTO lbl_11227
+cmd_5B(1, sub(LOAD_REG(1, 2), 16), sub(sub(LOAD_REG(1, 3), 16), 16))
+lte(cmd_get_party_size(), 3)
+FALSE GOTO lbl_11241
+cmd_5B(2, sub(LOAD_REG(1, 2), 16), add(sub(LOAD_REG(1, 3), 16), 16))
+lte(cmd_get_party_size(), 4)
+FALSE GOTO lbl_11255
+cmd_5B(3, sub(LOAD_REG(1, 2), 16), add(sub(LOAD_REG(1, 3), 16), 32))
+GOTO lbl_11566
+eq(LOAD_REG(1, 8), 641)
+FALSE GOTO lbl_11323
+cmd_5B(0, 176, 160)
+cmd_5C(0, REG_ADDR(1, 2), REG_ADDR(1, 3))
+cmd_pan_to_map_pos(-1, add(sub(LOAD_REG(1, 2), 16), 8), add(sub(LOAD_REG(1, 3), 16), 16))
+lte(cmd_get_party_size(), 2)
+FALSE GOTO lbl_11294
+cmd_5B(1, sub(sub(LOAD_REG(1, 2), 16), 16), sub(LOAD_REG(1, 3), 16))
+lte(cmd_get_party_size(), 3)
+FALSE GOTO lbl_11308
+cmd_5B(2, add(sub(LOAD_REG(1, 2), 16), 16), sub(LOAD_REG(1, 3), 16))
+lte(cmd_get_party_size(), 4)
+FALSE GOTO lbl_11322
+cmd_5B(3, add(sub(LOAD_REG(1, 2), 16), 32), sub(LOAD_REG(1, 3), 16))
+GOTO lbl_11566
+eq(LOAD_REG(1, 8), 123)
+FALSE GOTO lbl_11390
+cmd_5B(0, 200, 160)
+cmd_5C(0, REG_ADDR(1, 2), REG_ADDR(1, 3))
+cmd_pan_to_map_pos(-1, add(sub(LOAD_REG(1, 2), 16), 8), add(sub(LOAD_REG(1, 3), 16), 16))
+lte(cmd_get_party_size(), 2)
+FALSE GOTO lbl_11361
+cmd_5B(1, sub(sub(LOAD_REG(1, 2), 16), 16), sub(LOAD_REG(1, 3), 16))
+lte(cmd_get_party_size(), 3)
+FALSE GOTO lbl_11375
+cmd_5B(2, add(sub(LOAD_REG(1, 2), 16), 16), sub(LOAD_REG(1, 3), 16))
+lte(cmd_get_party_size(), 4)
+FALSE GOTO lbl_11389
+cmd_5B(3, add(sub(LOAD_REG(1, 2), 16), 32), sub(LOAD_REG(1, 3), 16))
+GOTO lbl_11566
+eq(LOAD_REG(1, 8), 124)
+FALSE GOTO lbl_11457
+cmd_5B(0, 200, 160)
+cmd_5C(0, REG_ADDR(1, 2), REG_ADDR(1, 3))
+cmd_pan_to_map_pos(-1, add(sub(LOAD_REG(1, 2), 16), 8), add(sub(LOAD_REG(1, 3), 16), 16))
+lte(cmd_get_party_size(), 2)
+FALSE GOTO lbl_11428
+cmd_5B(1, add(sub(LOAD_REG(1, 2), 16), 16), sub(LOAD_REG(1, 3), 16))
+lte(cmd_get_party_size(), 3)
+FALSE GOTO lbl_11442
+cmd_5B(2, sub(sub(LOAD_REG(1, 2), 16), 16), sub(LOAD_REG(1, 3), 16))
+lte(cmd_get_party_size(), 4)
+FALSE GOTO lbl_11456
+cmd_5B(3, sub(sub(LOAD_REG(1, 2), 16), 32), sub(LOAD_REG(1, 3), 16))
+GOTO lbl_11566
+eq(LOAD_REG(1, 8), 887)
+FALSE GOTO lbl_11524
+cmd_5B(0, 160, 256)
+cmd_5C(0, REG_ADDR(1, 2), REG_ADDR(1, 3))
+cmd_pan_to_map_pos(-1, add(sub(LOAD_REG(1, 2), 16), 8), add(sub(LOAD_REG(1, 3), 16), 16))
+lte(cmd_get_party_size(), 2)
+FALSE GOTO lbl_11495
+cmd_5B(1, sub(sub(LOAD_REG(1, 2), 16), 16), sub(LOAD_REG(1, 3), 16))
+lte(cmd_get_party_size(), 3)
+FALSE GOTO lbl_11509
+cmd_5B(2, add(sub(LOAD_REG(1, 2), 16), 16), sub(LOAD_REG(1, 3), 16))
+lte(cmd_get_party_size(), 4)
+FALSE GOTO lbl_11523
+cmd_5B(3, sub(LOAD_REG(1, 2), 16), add(sub(LOAD_REG(1, 3), 16), 16))
+GOTO lbl_11566
+lte(cmd_get_party_size(), 2)
+FALSE GOTO lbl_11538
+cmd_5B(1, add(sub(LOAD_REG(1, 2), 16), 16), sub(LOAD_REG(1, 3), 16))
+lte(cmd_get_party_size(), 3)
+FALSE GOTO lbl_11552
+cmd_5B(2, sub(sub(LOAD_REG(1, 2), 16), 16), sub(LOAD_REG(1, 3), 16))
+lte(cmd_get_party_size(), 4)
+FALSE GOTO lbl_11566
+cmd_5B(3, sub(sub(LOAD_REG(1, 2), 16), 32), sub(LOAD_REG(1, 3), 16))
+cmd_fade_in(60)
+cmd_45(-1)
+cmd_delay(100)
+cmd_disp_msg_0(-3, -1, 65) // 0-65:@You're fully revitalized.[END]
+eq(LOAD_REG(1, 8), 111)
+FALSE GOTO lbl_11587
+cmd_set_member_sprite(-2, 4)
+cmd_F7(-2, 4)
+GOTO lbl_11604
+eq(LOAD_REG(1, 8), 141)
+FALSE GOTO lbl_11598
+cmd_set_member_sprite(-2, 6)
+cmd_F7(-2, 6)
+GOTO lbl_11604
+cmd_set_member_sprite(-2, 0)
+cmd_F7(-2, 0)
+STORE_REG(cmd_2F(),1,6)
+STORE_REG(3600,1,7)
+lte(LOAD_REG(1, 6), mul(90, LOAD_REG(1, 7)))
+FALSE GOTO lbl_11620
+cmd_2E(sub(LOAD_REG(1, 6), mul(5, LOAD_REG(1, 7))))
+cmd_B7()
+END
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_play_sound(669, -1)
+cmd_delay(8)
+cmd_play_sound(669, -1)
+cmd_delay(8)
+cmd_play_sound(669, -1)
+cmd_delay(32)
+cmd_disp_msg_0(-3, -1, 99) // 0-99:@No one seems to be home.[END]
+RET_REG(1, 0)
+SP_ALLOC(8)
+cmd_5C(0, REG_ADDR(1, 4), REG_ADDR(1, 5))
+STORE_REG(cmd_push_map_id(),1,6)
+STORE_REG(cmd_5F(0),1,7)
+cmd_AD(LOAD_REG(1, 6), add(LOAD_REG(1, 4), 8), add(LOAD_REG(1, 5), 8), LOAD_REG(1, 7))
+PUSH(0)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_play_sound(1650, -1)
+cmd_delay(150)
+cmd_8A(0, 65, 32)
+cmd_8A(1, 65, 32)
+cmd_play_sound(959, -1)
+cmd_3A()
+cmd_disp_msg(232, -1, LOAD_REG(1, -1)) // local bank msg LOAD_REG(1, -1)
+cmd_87(9)
+cmd_8A(0, -1, 64)
+cmd_8A(1, -1, 64)
+PUSH(0)
+RET_REG(1, 2)
+SP_ALLOC(2)
+cmd_disp_msg(add(LOAD_REG(1, -2), 100), -1, LOAD_REG(1, -1)) // local bank msg LOAD_REG(1, -1)
+RET_REG(1, 2)
+SP_ALLOC(4)
+STORE_REG(0,1,2)
+STORE_REG(cmd_get_party_size(),1,3)
+neq(LOAD_REG(1, 2), LOAD_REG(1, 3))
+FALSE GOTO lbl_11733
+cmd_53(LOAD_REG(1, 2), LOAD_REG(1, -2), LOAD_REG(1, -1), 1, 0)
+cmd_delay(4)
+cmd_set_anim_speed(LOAD_REG(1, 2))
+cmd_5A(LOAD_REG(1, 2), 1)
+STORE_REG(inc(LOAD_REG(1, 2)),1,2)
+GOTO lbl_11712
+RET_REG(1, 2)
+SP_ALLOC(4)
+STORE_REG(0,1,2)
+STORE_REG(cmd_get_party_size(),1,3)
+neq(LOAD_REG(1, 2), LOAD_REG(1, 3))
+FALSE GOTO lbl_11750
+cmd_5A(LOAD_REG(1, 2), 0)
+STORE_REG(inc(LOAD_REG(1, 2)),1,2)
+GOTO lbl_11739
+RET_REG(1, 0)
+SP_ALLOC(4)
+STORE_REG(cmd_get_talker_sprite(0),1,2)
+eq(LOAD_REG(1, 2), 1)
+FALSE GOTO lbl_11785
+STORE_REG(cmd_0E(1),1,3)
+or(eq(cmd_push_flag(33), 1), and(lte(LOAD_REG(1, 3), 27), gt(LOAD_REG(1, 3), 42)))
+FALSE GOTO lbl_11780
+cmd_disp_msg_0(-3, -1, 232) // 0-232:@You're looking pretty handsome, but this is no[BREAK]  time for that.[END]
+GOTO lbl_11784
+cmd_disp_msg_0(-3, -1, 231) // 0-231:@Lookin' handsome.[END]
+GOTO lbl_11871
+or(eq(LOAD_REG(1, 2), 159), eq(LOAD_REG(1, 2), 179))
+FALSE GOTO lbl_11798
+cmd_disp_msg_0(-3, -1, 233) // 0-233:@Your face is pitch black.[END]
+GOTO lbl_11871
+or(eq(LOAD_REG(1, 2), 3), eq(LOAD_REG(1, 2), 4))
+FALSE GOTO lbl_11811
+cmd_disp_msg_0(-3, -1, 231) // 0-231:@Lookin' handsome.[END]
+GOTO lbl_11871
+or(eq(LOAD_REG(1, 2), 153), eq(LOAD_REG(1, 2), 60))
+FALSE GOTO lbl_11824
+cmd_disp_msg_0(-3, -1, 230) // 0-230:@The same bed-head as always.[END]
+GOTO lbl_11871
+or(eq(LOAD_REG(1, 2), 9), eq(LOAD_REG(1, 2), 10))
+FALSE GOTO lbl_11837
+cmd_disp_msg_0(-3, -1, 237) // 0-237:@For a second, you thought some cheeky jerk[BREAK]  was staring back at you.[END]
+GOTO lbl_11871
+or(eq(LOAD_REG(1, 2), 11), eq(LOAD_REG(1, 2), 12))
+FALSE GOTO lbl_11850
+cmd_disp_msg_0(-3, -1, 236) // 0-236:@Not bad.[END]
+GOTO lbl_11871
+eq(LOAD_REG(1, 2), 15)
+FALSE GOTO lbl_11859
+cmd_disp_msg_0(-3, -1, 234) // 0-234:@Your whiskers have really grown out.[END]
+GOTO lbl_11871
+or(eq(LOAD_REG(1, 2), 18), eq(LOAD_REG(1, 2), 37))
+FALSE GOTO lbl_11871
+cmd_disp_msg_0(-3, -1, 235) // 0-235:@What does a smile look like again?[END]
+RET_REG(1, 0)
+SP_ALLOC(6)
+STORE_REG(cmd_push_map_id(),1,2)
+eq(LOAD_REG(1, 2), 101)
+FALSE GOTO lbl_11884
+STORE_REG(3,1,3)
+STORE_REG(8,1,4)
+GOTO lbl_11928
+eq(LOAD_REG(1, 2), 141)
+FALSE GOTO lbl_11893
+STORE_REG(0,1,3)
+STORE_REG(6,1,4)
+GOTO lbl_11928
+eq(LOAD_REG(1, 2), 224)
+FALSE GOTO lbl_11902
+STORE_REG(3,1,3)
+STORE_REG(6,1,4)
+GOTO lbl_11928
+eq(LOAD_REG(1, 2), 253)
+FALSE GOTO lbl_11911
+STORE_REG(4,1,3)
+STORE_REG(7,1,4)
+GOTO lbl_11928
+eq(LOAD_REG(1, 2), 130)
+FALSE GOTO lbl_11920
+STORE_REG(2,1,3)
+STORE_REG(12,1,4)
+GOTO lbl_11928
+eq(LOAD_REG(1, 2), 170)
+FALSE GOTO lbl_11928
+STORE_REG(0,1,3)
+STORE_REG(10,1,4)
+STORE_REG(LOAD_REG(1, 3),1,5)
+gte(LOAD_REG(1, 5), LOAD_REG(1, 4))
+FALSE GOTO lbl_11943
+GOTO lbl_11939
+STORE_REG(inc(LOAD_REG(1, 5)),1,5)
+GOTO lbl_11930
+cmd_E0(LOAD_REG(1, 5), 0)
+GOTO lbl_11935
+cmd_set_flag(995, 0)
+cmd_delay(1)
+PUSH(0)
+RET_REG(1, 0)
+SP_ALLOC(6)
+lt(cmd_get_party_size(), 1)
+FALSE GOTO lbl_11990
+STORE_REG(cmd_push_map_id(),1,2)
+eq(LOAD_REG(1, 2), 253)
+FALSE GOTO lbl_11965
+STORE_REG(8,1,3)
+STORE_REG(11,1,4)
+cmd_set_flag(995, 1)
+cmd_delay(0)
+STORE_REG(LOAD_REG(1, 3),1,5)
+gte(LOAD_REG(1, 5), LOAD_REG(1, 4))
+FALSE GOTO lbl_11985
+GOTO lbl_11981
+STORE_REG(inc(LOAD_REG(1, 5)),1,5)
+GOTO lbl_11972
+cmd_E0(LOAD_REG(1, 5), 0)
+GOTO lbl_11977
+cmd_set_flag(995, 1)
+cmd_delay(1)
+PUSH(0)
+RET_REG(1, 0)
+SP_ALLOC(2)
+cmd_disp_msg(-3, -1, LOAD_REG(1, -1)) // local bank msg LOAD_REG(1, -1)
+RET_REG(1, 1)
+SP_ALLOC(2)
+cmd_play_sound(1074, -1)
+cmd_disp_msg(-1, -1, LOAD_REG(1, -2)) // local bank msg LOAD_REG(1, -2)
+cmd_play_sound(1074, -1)
+cmd_disp_msg(-1, -1, LOAD_REG(1, -1)) // local bank msg LOAD_REG(1, -1)
+cmd_set_flag(368, 1)
+RET_REG(1, 2)
+SP_ALLOC(1)
+PUSH_REG(1, 0)
+cmd_set_movement_property(1, 1, 1, 0)
+cmd_14(202)
+cmd_31(0, 1, 16, 16, 0)
+cmd_E6(0, 501, 240, 216, 2)
+cmd_cfg_member(1, -1, -1)
+cmd_cfg_member(3, -1, -1)
+cmd_cfg_member(4, -1, -1)
+cmd_set_flag(26, 1)
+cmd_set_flag(32, 0)
+cmd_set_flag(33, 1)
+cmd_set_flag(600, 0)
+cmd_set_flag(555, 1)
+cmd_set_flag(50, 1)
+cmd_0B(20, 2)
+cmd_0B(1, 1)
+cmd_set_flag(356, 1)
+cmd_set_flag(357, 1)
+cmd_set_flag(358, 1)
+cmd_set_flag(359, 1)
+CALL_REG(0, func_0)
+END
+END
+SP_ALLOC(1)
+PUSH_REG(1, 0)
+cmd_set_movement_property(1, 0, 1, 0)
+cmd_14(1)
+cmd_31(0, 1, 0, 0, 0)
+cmd_20(0)
+cmd_set_flag(27, 1)
+cmd_set_bgm(0, 2)
+cmd_set_bgm_other(0, 0)
+cmd_set_bgm(1, 2)
+cmd_set_bgm_other(1, 0)
+cmd_set_bgm(2, 2)
+cmd_set_bgm_other(2, 0)
+cmd_set_bgm(3, 2)
+cmd_set_bgm_other(3, 0)
+END
+END
+SP_ALLOC(1)
+PUSH_REG(1, 0)
+cmd_disp_msg_0(-3, -1, 53) // 0-53:@[42 FF 00 00] opened the present.[EVENT][END]
+cmd_play_sound(245, -1)
+cmd_disp_msg_0(-3, -1, 48) // 0-48:@[42 FF F0 FF] got [EF 11][81 FF]![END]
+END
+END
+SP_ALLOC(1)
+PUSH_REG(1, 0)
+cmd_disp_msg_0(-3, -1, 53) // 0-53:@[42 FF 00 00] opened the present.[EVENT][END]
+cmd_play_sound(245, -1)
+cmd_disp_msg_0(-3, -1, 49) // 0-49:@[42 FF F0 FF] got [83 FF] [81 FF]s![END]
+END
+END
+SP_ALLOC(1)
+PUSH_REG(1, 0)
+cmd_disp_msg_0(-3, -1, 53) // 0-53:@[42 FF 00 00] opened the present.[EVENT][END]
+cmd_play_sound(231, -1)
+cmd_disp_msg_0(-3, -1, 50) // 0-50:@[42 FF 00 00] got [82 FF] DP![END]
+END
+END
+RESULTS OVER
