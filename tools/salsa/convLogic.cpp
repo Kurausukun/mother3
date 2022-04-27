@@ -50,7 +50,7 @@ void salsa_logic_read(SalsaStream& src, SalsaPath& dest) {
             while (*local_it <= local_pc && local_it != combined_lbls.end()) {
                 // check if we passed any queued ones (oh shit)
                 if (*local_it != local_pc) {
-                    desc << "//! (local) iterator = " << *local_it << " but pc = " << local_pc << std::endl;
+                    desc << "/*! (local) iterator = " << *local_it << " but pc = " << local_pc << " */" << std::endl;
                 }
                 // write the label
                 desc << "lbl_" << *local_it << ":" << std::endl;
@@ -60,7 +60,7 @@ void salsa_logic_read(SalsaStream& src, SalsaPath& dest) {
             while (*globl_it <= globl_pc && globl_it != combined_globals.end()) {
                 // check if we passed any queued ones (oh shit)
                 if (*globl_it != globl_pc) {
-                    desc << "//! (global) iterator = " << *globl_it << " but pc = " << globl_pc << std::endl;
+                    desc << "/*! (global) iterator = " << *globl_it << " but pc = " << globl_pc << " */" << std::endl;
                 }
                 // write the global
                 desc << "func_" << *globl_it << ":" << std::endl;
@@ -114,25 +114,5 @@ void salsa_logic_read(SalsaStream& src, SalsaPath& dest) {
 }
 
 void salsa_logic_write(SalsaPath& src, SalsaStream& dest) {
-    SalsaStream desc(src);
-
-    std::cerr << "Parsing logic" << std::endl;
-    auto bank = LogicBank::parse(&desc);
-
-    std::cerr << "Writing logic" << std::endl;
-    dest << "FIX ME SOON" << std::endl;
-
-    /**
-     * first script test
-     */
-
-    SalsaStream out("myscript.bin");
-    for (auto& cmd : bank->blocks[0]->scripts[0]->commands) {
-        auto bytes = cmd->toBytes();
-        for (auto& b : bytes) {
-            out.write<u32>(b);
-        }
-    }
-
-    log_results(bank.get(), true);
+    LogicBank::write(&src, &dest);
 }

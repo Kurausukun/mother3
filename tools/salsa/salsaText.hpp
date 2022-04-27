@@ -148,7 +148,7 @@ some examples:
 */
 struct TextBank {
     // Dump a TextBank from ROM.
-    static std::unique_ptr<TextBank> dump(SalsaStream* stream, intptr_t offset,
+    static std::unique_ptr<TextBank> dump(SalsaStream* stream, uintptr_t offset,
                                           const std::vector<TextBlockType>& blocktypes);
 
     // Parse a file containing a single block.

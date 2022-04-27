@@ -56,6 +56,59 @@ struct Frame2StackCommand : Command {
     s16 value = 0;
 };
 
+struct Stack2FrameCommand : Command {
+    Stack2FrameCommand() = default;
+    ~Stack2FrameCommand() final = default;
+
+    Stack2FrameCommand(u32 raw) {
+        frame = (raw >> 8) & 0xFF;
+        value = (raw >> 16) & 0xFFFF;
+    }
+
+    // void process(Command::iterator it) final { arg = *--it; }
+
+    const char* getName() const final { return "STORE_REG"; }
+    const char* getFormat() const final { return "(%d, %hd)"; }
+
+    std::string toString() const final { return toStringImpl(frame, value); }
+    void fromString(const char* str) final { fromStringImpl(str, &frame, &value); }
+
+    // std::string toString() const final {
+    //     std::stringstream ss;
+    //     if (arg != nullptr) {
+    //         if (disable_inline) {
+    //             ss << arg->toString() << "\n";
+    //             ss << getName() << "(" << frame << "," << value << ")";
+    //         } else {
+    //             ss << getName() << "(" << arg->getValueAsArg() << "," << frame << "," << value
+    //                << ")";
+    //         }
+    //     } else {
+    //         ss << getName() << "(" << frame << "," << value << ")";
+    //     }
+    //     return ss.str();
+    // }
+
+    // u32 getArgc() const final { return arg != nullptr ? 1 : 0; }
+    // u32 getCommandCount() const final {
+    //     int count = 1;
+    //     if (arg != nullptr) {
+    //         count += arg->getCommandCount();
+    //     }
+    //     return count;
+    // }
+    // void disableInlineAll() final {
+    //     disable_inline = true;
+    //     if (arg != nullptr) {
+    //         arg->disableInlineAll();
+    //     }
+    // }
+
+    u32 frame = 0;
+    s16 value = 0;
+    // Command* arg = nullptr;
+};
+
 struct PushImmCommand : Command {
     PushImmCommand() = default;
     ~PushImmCommand() final = default;

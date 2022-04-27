@@ -3,7 +3,7 @@
 
 namespace text {
 
-std::unique_ptr<TextBank> TextBank::dump(SalsaStream* stream, intptr_t offset,
+std::unique_ptr<TextBank> TextBank::dump(SalsaStream* stream, uintptr_t offset,
                                          const std::vector<TextBlockType>& blocktypes) {
     auto bank = std::make_unique<TextBank>();
 
@@ -30,7 +30,7 @@ std::unique_ptr<TextBank> TextBank::dump(SalsaStream* stream, intptr_t offset,
         auto& header = bank->headers[h];
 
         if (!header->isNulled()) {
-            assert(stream->tellg() == offset + header->start());
+            assert(stream->tellg() == (intptr_t)offset + header->start());
         }
 
         if (h == 811) {
@@ -93,7 +93,7 @@ TextBank TextBank::parse(SalsaStream* stream, const std::vector<TextBlockType>& 
 
         // construct all blocks up to and including the current index
         // ones we skipped over are assumed to be nulled
-        while (block_idx > bank.block_count - 1) {
+        while (block_idx + 1 > bank.block_count) {
             switch (blocktypes[block_idx]) {
             case TextBlockType::FixedMsg:
                 bank.blocks.emplace_back(std::make_unique<FixedMessageBlock>(0));

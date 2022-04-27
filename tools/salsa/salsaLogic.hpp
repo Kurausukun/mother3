@@ -115,8 +115,7 @@ struct Command {
     bool disable_inline = false;
 };
 
-class LabelStore {
-};
+class LabelStore {};
 
 struct Script {
     Script() = default;
@@ -130,6 +129,9 @@ struct Script {
     }
 
     void append(const std::string& rep) {
+        if (rep.empty() || (rep[0] == ' ' && rep.length() == 1))
+            return;
+
         Command* c = parseCommand(rep);
         commands.emplace_back(c);
     }
@@ -148,24 +150,54 @@ struct ScriptHeader {
 struct Block {
     Block() = default;
     Block(SalsaStream* stream, s32 content_size);
+
+    void write(SalsaStream* stream) {
+        for (auto& header : headers) {
+            stream->write<u16>(header.offset);
+        }
+
+        // pad to 4 bytes
+        if (stream->tellp() % 4 != 0) {
+            stream->write<u16>(0x0000);
+        }
+
+        stream->write<u16>(0xFFFF);
+        stream->write<u16>(headers.size());
+        for (auto& script : scripts) {
+            for (auto& command : script->commands) {
+                auto bytes = command->toBytes();
+                for (auto& b : bytes) {
+                    stream->write<u32>(b);
+                }
+            }
+        }
+
+        // pad to 4 bytes
+        if (stream->tellp() % 4 != 0) {
+            stream->write<u16>(0x0000);
+        }
+    }
+
     s32 script_count = 0;
     std::vector<ScriptHeader> headers;
-    std::vector<std::unique_ptr<Script> > scripts;
+    std::vector<std::unique_ptr<Script>> scripts;
 };
 
 struct BlockHeader {
     BlockHeader() = default;
     BlockHeader(SalsaStream* stream);
 
-    bool isNulled() const { return start_script_headers == 0; }
-
-    bool isEmpty() const { return start_script_headers == start_scripts; }
-
+    u32 start() const { return start_script_headers; }
     u32 startContent() const { return start_scripts; }
+    bool isNulled() const { return start_script_headers == 0; }
+    bool isEmpty() const { return start_script_headers == start_scripts; }
 
     std::unique_ptr<Block> dumpBlock(SalsaStream* stream, s32 size) const;
 
-    u32 start() const { return start_script_headers; }
+    void write(SalsaStream* stream) const {
+        stream->write<u32>(start_script_headers);
+        stream->write<u32>(start_scripts);
+    }
 
     u32 start_script_headers = 0;
     u32 start_scripts = 0;
@@ -178,10 +210,23 @@ struct LogicBank {
     // Parse a file containing logic data.
     static std::unique_ptr<LogicBank> parse(SalsaStream* stream);
 
+    static void write(SalsaPath* src, SalsaStream* dest);
+
     // Find the next non-nulled header.
     auto nextGoodHeader(int cur) {
         return std::find_if(headers.begin() + cur + 1, headers.end(),
                             [](const auto& n) { return !n->isNulled(); });
+
+        // For some edge cases, the script offsets at the beginning of the
+        // block are not in order (see block #59).
+
+        // std::vector<BlockHeader*> headers_sorted;
+        // std::transform(headers.begin(), headers.end(),
+        //                            std::back_inserter(headers_sorted),
+        //                            [](const auto& n) { return n.get(); });
+        // std::sort(headers_sorted.begin(), headers_sorted.end(), [](const auto& a, const auto& b) { return a->start() < b->start(); });
+        // auto h = std::upper_bound(headers_sorted.begin(), headers_sorted.end(), headers[cur]->start(), [](const auto& value, const auto& header) { return value < header->start(); });
+        // return std::find_if(headers.begin(), headers.end(), [&](const auto& n) { return !n->isNulled() && (*h)->start_scripts == n->start_scripts; }); 
     }
 
     void calcHeader() {
@@ -192,13 +237,13 @@ struct LogicBank {
     s32 block_count = 0;
 
     // Block headers (should be same as blocks.size() + number of nulled blocks).
-    std::vector<std::unique_ptr<BlockHeader> > headers;
+    std::vector<std::unique_ptr<BlockHeader>> headers;
 
     // Total size of the bank.
     u32 total_size = 0;
 
     // Blocks contained by the bank.
-    std::vector<std::unique_ptr<Block> > blocks;
+    std::vector<std::unique_ptr<Block>> blocks;
 };
 
 [[maybe_unused]] static void log_results(LogicBank* bank, bool second = false) {
