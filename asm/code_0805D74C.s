@@ -4583,7 +4583,7 @@ _08068824:
 	ldrb r0, [r0]
 	muls r0, r4, r0
 	movs r1, #0x64
-	bl sub_08090F7C
+	bl Div
 	adds r4, r4, r0
 	ldr r0, [r5, #0x18]
 	adds r0, r0, r4

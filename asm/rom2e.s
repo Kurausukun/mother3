@@ -1662,7 +1662,7 @@ _080899CE:
 	cmp r4, #0
 	beq _080899E2
 	adds r1, r4, #0
-	bl sub_08090F7C
+	bl Div
 _080899E2:
 	adds r7, r0, #0
 	movs r2, #2
@@ -1670,7 +1670,7 @@ _080899E2:
 	cmp r4, #0
 	beq _080899F2
 	adds r1, r4, #0
-	bl sub_08090F7C
+	bl Div
 _080899F2:
 	adds r1, r0, #0
 	add r0, sp, #0x10
@@ -1684,7 +1684,7 @@ _080899F2:
 	cmp r1, #0
 	beq _08089A10
 	ldr r0, [sp, #0x14]
-	bl sub_08090F7C
+	bl Div
 	b _08089A12
 _08089A10:
 	ldr r0, [sp, #0x14]
@@ -2953,7 +2953,7 @@ _0808A416:
 	lsls r0, r3, #8
 	cmp r1, #0
 	beq _0808A420
-	bl sub_08090F7C
+	bl Div
 _0808A420:
 	ldr r1, _0808A480 @ =gUnknown_080EF880
 	lsls r0, r0, #0x16
@@ -3612,7 +3612,7 @@ _0808A93A:
 	lsls r0, r3, #8
 	cmp r1, #0
 	beq _0808A944
-	bl sub_08090F7C
+	bl Div
 _0808A944:
 	ldr r1, _0808AAA4 @ =gUnknown_080EF880
 	lsls r0, r0, #0x16
@@ -11563,7 +11563,7 @@ _0808E9DE:
 	strb r0, [r1]
 	adds r0, r4, #0
 	movs r1, #0xa
-	bl sub_08090F7C
+	bl Div
 	adds r4, r0, #0
 	subs r5, #1
 	cmp r5, #0

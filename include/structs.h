@@ -13,6 +13,7 @@ typedef struct CharStats {
     s16 curPP;
     u32 maxHP;
     s16 maxPP;
+    u8 _26[2];
     u8 offense;
     u8 defense;
     u8 iq;
@@ -20,11 +21,12 @@ typedef struct CharStats {
     u8 _2c;
     u8 _2d;
     u8 _2e;
+    u8 _2f;
     u8 ailments;
     u8 weapon;
     u8 body;
-    u8 head;
-    u8 other[4];
+    u16 _30;
+    u8 _32[2];
     u32 equip_lyt;
     u8 inventory[16];
     u16 item_timers[16];
@@ -158,7 +160,7 @@ typedef struct Save {
     u8 event_flags[0x100];
     u8 shop_flags[0x40];
     u8 _380[0x40];
-    u8 _3c0[0x40];
+    u8 mIQ0[0x40];
     u8 giftbox_flags[0x80];
     u8 _480;
     u8 _481;
@@ -215,6 +217,12 @@ struct Size {
     s16 h;
 };
 
+typedef struct ExpInfo {
+    u32 ch_no;
+    u32 deltas[99];
+} ExpInfo;
+extern ExpInfo gExpTable[];
+
 typedef struct Stats {
     u32 hp;
     u32 pp;
@@ -232,7 +240,7 @@ typedef struct PsiInfo {
 } PsiInfo;
 
 typedef struct LevelStats {
-    u16 ch_no;
+    u8 ch_no;
     u16 ch_start_level;
     u16 start_equipment[4];
     Stats start_stats;

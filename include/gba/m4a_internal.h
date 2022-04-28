@@ -295,7 +295,7 @@ struct MusicPlayerTrack
     struct ToneData tone;
     u8 gap[10];
     u16 unk_3A;
-    u32 unk_3C;
+    u32 unkmIQ;
     u8 *cmdPtr;
     u8 *patternStack[3];
 };

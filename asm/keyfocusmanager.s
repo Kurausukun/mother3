@@ -482,7 +482,7 @@ sub_080702C0: @ 0x080702C0
 	ldr r4, [r0]
 	lsls r0, r1, #8
 	movs r1, #0x64
-	bl sub_08090F7C
+	bl Div
 	adds r1, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
@@ -507,7 +507,7 @@ sub_080702EC: @ 0x080702EC
 	ldr r5, _0807031C @ =0x0000FFFF
 	lsls r0, r1, #8
 	movs r1, #0x64
-	bl sub_08090F7C
+	bl Div
 	adds r2, r0, #0
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
@@ -539,7 +539,7 @@ sub_08070320: @ 0x08070320
 	ldrsb r0, [r1, r0]
 	lsls r0, r0, #8
 	movs r1, #0x64
-	bl sub_08090F7C
+	bl Div
 	adds r2, r0, #0
 	lsls r2, r2, #0x18
 	asrs r2, r2, #0x18
@@ -993,7 +993,7 @@ sub_0807066C: @ 0x0807066C
 	push {lr}
 	cmp r1, #0
 	beq _08070676
-	bl sub_08090F7C
+	bl Div
 _08070676:
 	pop {r1}
 	bx r1
@@ -2902,7 +2902,7 @@ _08071412:
 	strb r0, [r1]
 	adds r0, r4, #0
 	movs r1, #0xa
-	bl sub_08090F7C
+	bl Div
 	adds r4, r0, #0
 	subs r5, #1
 	cmp r5, #0
