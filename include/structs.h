@@ -3,6 +3,34 @@
 
 #include "global.h"
 
+typedef struct CharStats {
+    u8 charNo;
+    u8 spriteNo;
+    u8 name[16];
+    u8 level;
+    u32 xp;
+    u32 curHP;
+    s16 curPP;
+    u32 maxHP;
+    s16 maxPP;
+    u8 offense;
+    u8 defense;
+    u8 iq;
+    u8 speed;
+    u8 _2c;
+    u8 _2d;
+    u8 _2e;
+    u8 ailments;
+    u8 weapon;
+    u8 body;
+    u8 head;
+    u8 other[4];
+    u32 equip_lyt;
+    u8 inventory[16];
+    u16 item_timers[16];
+} CharStats;
+extern CharStats gCharStats[];
+
 enum ItemType {
     Weapon,
     BodyArmor,
@@ -80,7 +108,7 @@ struct Object {
     u8 _ca;
 };
 
-struct struct_02016028 {
+typedef struct struct_02016028 {
     u8 filler[0x2ca2];
     u16 _2ca2;
     u8 _2ca3[0x4ad0 - 0x2ca4];
@@ -116,9 +144,9 @@ struct struct_02016028 {
             u8 b7;
         } _121c8_b;
     };
-};
+} struct_02016028;
 
-struct Save {
+typedef struct Save {
     u8 party[5];
     u32 dp_pocket;
     u32 dp_bank;
@@ -181,7 +209,7 @@ struct Save {
     u16 _78e[0x40];
     u8 _80e[0x10];
     u8 _81e;
-};
+} Save;
 
 // extern ItemData gGoodsInfo[];
 extern Save gSave;

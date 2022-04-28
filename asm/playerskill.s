@@ -534,7 +534,7 @@ sub_0807C8F8: @ 0x0807C8F8
 	b _0807C940
 _0807C920:
 	movs r0, #4
-	bl sub_080029BC
+	bl get_progression_flag
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, #1
@@ -543,7 +543,7 @@ _0807C920:
 	b _0807C95A
 _0807C932:
 	movs r0, #4
-	bl sub_080029BC
+	bl get_progression_flag
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, #1
@@ -596,7 +596,7 @@ sub_0807C96C: @ 0x0807C96C
 	b _0807C9B4
 _0807C994:
 	movs r0, #4
-	bl sub_080029BC
+	bl get_progression_flag
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, #1
@@ -605,7 +605,7 @@ _0807C994:
 	b _0807C9CE
 _0807C9A6:
 	movs r0, #4
-	bl sub_080029BC
+	bl get_progression_flag
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, #1

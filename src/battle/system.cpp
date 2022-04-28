@@ -11,7 +11,7 @@ extern "C" void sub_0806B07C();
 extern "C" void sub_0806A9B0();
 extern "C" void sub_0806FDBC();
 extern "C" void destroy__10IrcManager();
-extern "C" u16 sub_080029BC(u32);
+extern "C" u16 get_progression_flag(u32);
 extern "C" void sub_080026C0();
 extern "C" KeyPad* KeyPadInstance();
 extern "C" void DoReset();
@@ -124,23 +124,23 @@ u32 sub_0805D638() {
 }
 
 u32 System::sub_0805D64C() {
-    if (sub_080029BC(24) == 0xFF)
+    if (get_progression_flag(24) == 0xFF)
         return 9;
-    if (sub_080029BC(23) == 0xFF)
+    if (get_progression_flag(23) == 0xFF)
         return 8;
-    if (sub_080029BC(22) == 0xFF)
+    if (get_progression_flag(22) == 0xFF)
         return 7;
-    if (sub_080029BC(21) == 0xFF)
+    if (get_progression_flag(21) == 0xFF)
         return 6;
-    if (sub_080029BC(4) == 0xFF)
+    if (get_progression_flag(4) == 0xFF)
         return 5;
-    if (sub_080029BC(3) == 0xFF)
+    if (get_progression_flag(3) == 0xFF)
         return 4;
-    if (sub_080029BC(2) == 0xFF)
+    if (get_progression_flag(2) == 0xFF)
         return 3;
-    if (sub_080029BC(1) == 0xFF)
+    if (get_progression_flag(1) == 0xFF)
         return 2;
-    if (sub_080029BC(1) > 1)
+    if (get_progression_flag(1) > 1)
         return 1;
     return 0;
 }
