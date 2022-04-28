@@ -3,6 +3,34 @@
 
 #include "global.h"
 
+typedef struct CharStats {
+    u8 charNo;
+    u8 spriteNo;
+    u8 name[16];
+    u8 level;
+    u32 xp;
+    u32 curHP;
+    s16 curPP;
+    u32 maxHP;
+    s16 maxPP;
+    u8 offense;
+    u8 defense;
+    u8 iq;
+    u8 speed;
+    u8 _2c;
+    u8 _2d;
+    u8 _2e;
+    u8 ailments;
+    u8 weapon;
+    u8 body;
+    u8 head;
+    u8 other[4];
+    u32 equip_lyt;
+    u8 inventory[16];
+    u16 item_timers[16];
+} CharStats;
+extern CharStats gCharStats[];
+
 enum ItemType {
     Weapon,
     BodyArmor,
@@ -13,19 +41,10 @@ enum ItemType {
     Damage,
     SpecialEff,
     Key,
-    UnusedKey,
+    UnusedKey
 };
 
-enum EquipFlags {
-    _1,
-    Flint,
-    Lucas,
-    Duster,
-    Kumatora,
-    Boney,
-    Salsa,
-    _80,
-};
+enum EquipFlags { _1, Flint, Lucas, Duster, Kumatora, Boney, Salsa, _80 };
 
 // struct ItemData {
 //     u32 id;
@@ -80,7 +99,7 @@ struct Object {
     u8 _ca;
 };
 
-struct struct_02016028 {
+typedef struct struct_02016028 {
     u8 filler[0x2ca2];
     u16 _2ca2;
     u8 _2ca3[0x4ad0 - 0x2ca4];
@@ -103,6 +122,7 @@ struct struct_02016028 {
     u8 _121bb_8 : 1;
     u8 _121bb_10 : 1;
     u8 _121bc[0x121C8 - 0x121BC];
+#ifdef __cplusplus
     union {
         u64 _121c8;
         struct {
@@ -116,9 +136,12 @@ struct struct_02016028 {
             u8 b7;
         } _121c8_b;
     };
-};
+#else
+    u64 _121c8;
+#endif
+} struct_02016028;
 
-struct Save {
+typedef struct Save {
     u8 party[5];
     u32 dp_pocket;
     u32 dp_bank;
@@ -181,7 +204,7 @@ struct Save {
     u16 _78e[0x40];
     u8 _80e[0x10];
     u8 _81e;
-};
+} Save;
 
 // extern ItemData gGoodsInfo[];
 extern Save gSave;
@@ -191,5 +214,36 @@ struct Size {
     u16 w;
     s16 h;
 };
+
+typedef struct Stats {
+    u32 hp;
+    u32 pp;
+    u8 offense;
+    u8 defense;
+    u8 iq;
+    u8 speed;
+    u32 kindness;
+} Stats;
+static_assert(sizeof(Stats) == 0x10);
+
+typedef struct PsiInfo {
+    u16 psi_no;
+    u8 level;
+} PsiInfo;
+
+typedef struct LevelStats {
+    u16 ch_no;
+    u16 ch_start_level;
+    u16 start_equipment[4];
+    Stats start_stats;
+    Stats level_status[10];
+    u8 overworld_playable;
+    u8 battle_playable;
+    u16 animal_value;
+    PsiInfo psi_table[32];
+    u32 attack_sounds;
+} LevelStats;
+extern LevelStats gLevelStatTable[];
+static_assert(sizeof(LevelStats) == 0x144);
 
 #endif  // STRUCTS_H

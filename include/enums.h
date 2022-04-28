@@ -197,7 +197,7 @@ struct BattleSeq {
         LightHit =  0xCA,
         ParalysisHit = 0xCB,
         ParalysisReflect = 0xCC,
-        BrokenYellowEffect = 0xCD,
+        BrokenYellowEffect = 0xCD
     };
 };
 
@@ -454,7 +454,7 @@ enum Item {
     ItemChimeraLabMap,
     ItemCricketHoleMap,
     ItemHighwayMap,
-    ItemFactorySketch,
+    ItemFactorySketch
 };
 
 enum Sound {
@@ -1242,7 +1242,7 @@ enum Sound {
     SFX_DUSTER_STAPLE_PREP = 0x30C,
     SFX_MACHINE_READY = 0x30D,
     SFX_PIGMASK_SALUTE3 = 0x30E,
-    SFX_PIGMASK_SALUTE4 = 0x30F,
+    SFX_PIGMASK_SALUTE4 = 0x30F
 };
 
 #endif // ENUMS_H

@@ -90,7 +90,7 @@ public:
         Endure,
         OffUpMid,
         DefUpMid,
-        NoBackSprite,
+        NoBackSprite
     };
 };
 

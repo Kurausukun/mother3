@@ -3174,8 +3174,8 @@ sub_08002998: @ 0x08002998
 	.align 2, 0
 _080029B8: .4byte gSave
 
-	thumb_func_start sub_080029BC
-sub_080029BC: @ 0x080029BC
+	thumb_func_start get_progression_flag
+get_progression_flag: @ 0x080029BC
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	ldr r1, _080029D0 @ =gSave
@@ -50632,7 +50632,7 @@ _0801A014:
 	cmp r0, #0xee
 	bne _0801A032
 	movs r0, #3
-	bl sub_080029BC
+	bl get_progression_flag
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	movs r3, #0

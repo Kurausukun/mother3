@@ -29,6 +29,8 @@ SECTIONS
         asm/rom.o(.text);
         src/overworld/script.o(.text);
         asm/code_0801BEE0.o(.text);
+        src/common.o(.text);
+        asm/code_0805C1DC.o(.text);
         src/battle/system.o(.text);
         asm/battle.o(.text);
         asm/guest.o(.text);

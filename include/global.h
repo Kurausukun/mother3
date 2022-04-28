@@ -6,6 +6,7 @@
 #include <string.h>
 #include "gba/types.h"
 
+#define static_assert(cond) extern char assertion[(cond) ? 1 : -1]
 #define asm_unified(x) asm(".syntax unified\n" x "\n.syntax divided")
 #define NAKED __attribute__((naked))
 
