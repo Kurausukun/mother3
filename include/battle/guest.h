@@ -1,8 +1,8 @@
 #ifndef BATTLE_GUEST_H
 #define BATTLE_GUEST_H
 
-#include "battle/unit.h"
 #include "battle/guestSkill.h"
+#include "battle/unit.h"
 #include "structs.h"
 
 struct CharStats;
@@ -22,7 +22,7 @@ struct GuestID {
         Fuel,
         Alec,
         Fassad,
-        Claus,
+        Claus
     };
 };
 
@@ -83,11 +83,6 @@ public:
     CharStats* mStats;
     void* mLevelInfo;
 };
-
-struct LevelInfo {
-    u8 filler[324];
-};
-extern LevelInfo gLevelStatTable[];
 
 extern "C" {
 CharStats* get_char_stats(u32 idx);

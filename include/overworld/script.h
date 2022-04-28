@@ -14,7 +14,7 @@ enum Mode {
     MODE_PAUSE_MENU = 0xA,
     MODE_MAP_VIEW = 0xD,
     MODE_DROPDOWN = 0xE,
-    MODE_DEBUG_MENU = 0xF,
+    MODE_DEBUG_MENU = 0xF
 };
 
 struct Game {

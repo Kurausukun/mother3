@@ -41,19 +41,10 @@ enum ItemType {
     Damage,
     SpecialEff,
     Key,
-    UnusedKey,
+    UnusedKey
 };
 
-enum EquipFlags {
-    _1,
-    Flint,
-    Lucas,
-    Duster,
-    Kumatora,
-    Boney,
-    Salsa,
-    _80,
-};
+enum EquipFlags { _1, Flint, Lucas, Duster, Kumatora, Boney, Salsa, _80 };
 
 // struct ItemData {
 //     u32 id;
@@ -131,6 +122,7 @@ typedef struct struct_02016028 {
     u8 _121bb_8 : 1;
     u8 _121bb_10 : 1;
     u8 _121bc[0x121C8 - 0x121BC];
+#ifdef __cplusplus
     union {
         u64 _121c8;
         struct {
@@ -144,6 +136,9 @@ typedef struct struct_02016028 {
             u8 b7;
         } _121c8_b;
     };
+#else
+    u64 _121c8;
+#endif
 } struct_02016028;
 
 typedef struct Save {
@@ -219,5 +214,36 @@ struct Size {
     u16 w;
     s16 h;
 };
+
+typedef struct Stats {
+    u32 hp;
+    u32 pp;
+    u8 offense;
+    u8 defense;
+    u8 iq;
+    u8 speed;
+    u32 kindness;
+} Stats;
+static_assert(sizeof(Stats) == 0x10);
+
+typedef struct PsiInfo {
+    u16 psi_no;
+    u8 level;
+} PsiInfo;
+
+typedef struct LevelStats {
+    u16 ch_no;
+    u16 ch_start_level;
+    u16 start_equipment[4];
+    Stats start_stats;
+    Stats level_status[10];
+    u8 overworld_playable;
+    u8 battle_playable;
+    u16 animal_value;
+    PsiInfo psi_table[32];
+    u32 attack_sounds;
+} LevelStats;
+extern LevelStats gLevelStatTable[];
+static_assert(sizeof(LevelStats) == 0x144);
 
 #endif  // STRUCTS_H

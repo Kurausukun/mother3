@@ -270,7 +270,7 @@ struct ElementType {
         Fire,
         Ice,
         Thunder,
-        Explosion,
+        Explosion
     };
 };
 
@@ -303,7 +303,7 @@ struct TargetType {
         FirstAlly,
         SecondAlly,
         ThirdAlly,
-        FourthAlly,
+        FourthAlly
     };
 };
 
