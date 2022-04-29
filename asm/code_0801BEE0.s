@@ -32489,7 +32489,7 @@ _0802EF16:
 	movs r3, #2
 	ldrsh r0, [r7, r3]
 	movs r1, #3
-	bl Div
+	bl Divide
 	lsls r0, r0, #0x10
 	lsrs r2, r0, #0x10
 	mov r0, sp
@@ -32670,7 +32670,7 @@ _0802F074:
 	movs r2, #2
 	ldrsh r0, [r1, r2]
 	movs r1, #3
-	bl Div
+	bl Divide
 	lsls r0, r0, #0x10
 	lsrs r1, r0, #0x10
 	movs r6, #1
@@ -47531,7 +47531,7 @@ sub_08036238: @ 0x08036238
 	ldrh r1, [r1, #8]
 	muls r0, r1, r0
 	movs r1, #0x64
-	bl Div
+	bl Divide
 	lsls r0, r0, #0x10
 	lsrs r7, r0, #0x10
 _08036280:
@@ -53073,7 +53073,7 @@ _08038CF8:
 	adds r4, r4, r0
 	ldrh r0, [r4]
 	movs r1, #0x3c
-	bl Div
+	bl Divide
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	str r0, [sp, #8]
@@ -53120,7 +53120,7 @@ _08038D88: .4byte 0xFFFFFE38
 _08038D8C:
 	ldr r0, [sp, #8]
 	movs r1, #4
-	bl Div
+	bl Divide
 	lsls r0, r0, #0x10
 	lsrs r4, r0, #0x10
 	movs r5, #0
@@ -53265,7 +53265,7 @@ sub_08038E80: @ 0x08038E80
 	adds r5, r4, r0
 	ldr r0, [r5]
 	movs r1, #0x3c
-	bl Div
+	bl Divide
 	movs r1, #8
 	bl sub_08002FD4
 	lsls r0, r0, #0x10
@@ -53423,7 +53423,7 @@ sub_08038F90: @ 0x08038F90
 	adds r0, r0, r2
 	ldr r0, [r0]
 	movs r1, #0x1e
-	bl Div
+	bl Divide
 	movs r1, #1
 	ands r1, r0
 	cmp r1, #0
@@ -57574,7 +57574,7 @@ sub_0803B008: @ 0x0803B008
 	ldr r5, _0803B154 @ =0x00034BC0
 	adds r0, r7, #0
 	adds r1, r5, #0
-	bl Div
+	bl Divide
 	mov sb, r0
 	adds r0, r7, #0
 	adds r1, r5, #0
@@ -57606,7 +57606,7 @@ sub_0803B008: @ 0x0803B008
 	lsls r5, r5, #4
 	adds r0, r7, #0
 	adds r1, r5, #0
-	bl Div
+	bl Divide
 	mov sb, r0
 	adds r0, r7, #0
 	adds r1, r5, #0
@@ -57634,7 +57634,7 @@ sub_0803B008: @ 0x0803B008
 	bl sub_0803D678
 	adds r0, r7, #0
 	movs r1, #0x3c
-	bl Div
+	bl Divide
 	adds r5, r0, #0
 	adds r0, r7, #0
 	movs r1, #0x3c
@@ -75259,7 +75259,7 @@ sub_080441BC: @ 0x080441BC
 	ldr r6, _0804422C @ =gUnknown_02001044
 	ldr r0, [r6]
 	movs r1, #0x1e
-	bl Div
+	bl Divide
 	movs r1, #8
 	bl sub_08002FD4
 	lsls r0, r0, #0x10
@@ -75838,7 +75838,7 @@ _08044676:
 	adds r0, r0, r1
 	ldr r0, [r0]
 	movs r1, #0x1e
-	bl Div
+	bl Divide
 	movs r3, #1
 	bics r3, r0
 	ldr r0, _080446A8 @ =gSave
@@ -75862,7 +75862,7 @@ _080446AC:
 	adds r0, r0, r1
 	ldr r0, [r0]
 	movs r1, #0x1e
-	bl Div
+	bl Divide
 	movs r3, #1
 	bics r3, r0
 	ldr r0, _080446E4 @ =gSave
@@ -76746,7 +76746,7 @@ sub_08044DA8: @ 0x08044DA8
 	bhi _08044E00
 	ldrh r0, [r1]
 	movs r1, #0x1e
-	bl Div
+	bl Divide
 	lsls r0, r0, #0x10
 	lsrs r5, r0, #0x10
 	adds r0, r5, #0
@@ -77649,7 +77649,7 @@ sub_080454F0: @ 0x080454F0
 	bls _0804554C
 	adds r0, r1, #0
 	movs r1, #0x1e
-	bl Div
+	bl Divide
 	ldr r2, _08045544 @ =0x000044EC
 	adds r4, r6, r2
 	strh r0, [r4]
@@ -77714,7 +77714,7 @@ sub_0804557C: @ 0x0804557C
 	ldr r5, _080455E8 @ =0x00034BC0
 	mov r0, sl
 	adds r1, r5, #0
-	bl Div
+	bl Divide
 	mov sb, r0
 	mov r0, sl
 	adds r1, r5, #0
@@ -77892,7 +77892,7 @@ _0804571A:
 	lsls r4, r4, #4
 	mov r0, sl
 	adds r1, r4, #0
-	bl Div
+	bl Divide
 	adds r7, r0, #0
 	mov r0, sl
 	adds r1, r4, #0
@@ -85403,7 +85403,7 @@ sub_08049280: @ 0x08049280
 	subs r5, r4, r0
 	adds r0, r5, #0
 	movs r1, #4
-	bl Div
+	bl Divide
 	adds r5, r0, #0
 	movs r1, #0x22
 	bl sub_08002FD4
@@ -85413,7 +85413,7 @@ sub_08049280: @ 0x08049280
 	strh r1, [r6]
 	adds r0, r5, #0
 	movs r1, #0x22
-	bl Div
+	bl Divide
 	ldr r1, _080492C8 @ =gUnknown_02016028
 	ldr r2, _080492CC @ =0x0000C5A1
 	adds r1, r1, r2
@@ -106245,7 +106245,7 @@ sub_08053968: @ 0x08053968
 	str r1, [sp, #8]
 	ldrh r0, [r5]
 	adds r1, r6, #0
-	bl Div
+	bl Divide
 	lsls r0, r0, #0x10
 	lsrs r7, r0, #0x10
 	str r7, [sp, #0xc]
@@ -106419,7 +106419,7 @@ sub_08053AC8: @ 0x08053AC8
 	mov sl, sb
 	ldrh r0, [r5]
 	adds r1, r4, #0
-	bl Div
+	bl Divide
 	lsls r0, r0, #0x10
 	lsrs r7, r0, #0x10
 	str r7, [sp, #0xc]
@@ -123870,7 +123870,7 @@ _0805C09C: .4byte gLevelStatTable
 sub_0805C0A0: @ 0x0805C0A0
 	push {lr}
 	movs r1, #0xa
-	bl sub_08090F7C
+	bl Div
 	adds r1, r0, #0
 	lsls r0, r1, #2
 	adds r0, r0, r1
@@ -123882,7 +123882,7 @@ sub_0805C0A0: @ 0x0805C0A0
 sub_0805C0B4: @ 0x0805C0B4
 	push {lr}
 	movs r1, #0xa
-	bl sub_08090F7C
+	bl Div
 	adds r1, r0, #0
 	adds r1, #1
 	lsls r0, r1, #2
@@ -123899,7 +123899,7 @@ sub_0805C0CC: @ 0x0805C0CC
 	adds r4, r2, #0
 	adds r0, r3, #0
 	movs r1, #0xa
-	bl sub_08090F7C
+	bl Div
 	lsls r0, r0, #4
 	adds r0, r0, r4
 	ldr r1, [r0, #0x10]
@@ -123919,7 +123919,7 @@ sub_0805C0F0: @ 0x0805C0F0
 	adds r4, r2, #0
 	adds r0, r3, #0
 	movs r1, #0xa
-	bl sub_08090F7C
+	bl Div
 	lsls r0, r0, #4
 	adds r0, r0, r4
 	ldr r1, [r0, #0x18]
@@ -123931,114 +123931,3 @@ sub_0805C0F0: @ 0x0805C0F0
 	pop {r2}
 	bx r2
 	.align 2, 0
-
-	thumb_func_start sub_0805C114
-sub_0805C114: @ 0x0805C114
-	push {r4, r5, r6, r7, lr}
-	adds r5, r0, #0
-	adds r6, r1, #0
-	adds r4, r3, #0
-	ldr r7, [sp, #0x14]
-	cmp r6, r4
-	bne _0805C126
-	adds r0, r4, #0
-	b _0805C160
-_0805C126:
-	subs r0, r2, r7
-	lsls r0, r0, #0x10
-	subs r1, r2, r5
-	cmp r1, #0
-	beq _0805C134
-	bl sub_08090F7C
-_0805C134:
-	adds r1, r0, #0
-	movs r0, #0x80
-	lsls r0, r0, #9
-	subs r0, r0, r1
-	muls r1, r6, r1
-	muls r0, r4, r0
-	adds r1, r1, r0
-	asrs r4, r1, #0x10
-	adds r0, r7, #0
-	bl sub_0805C168
-	adds r1, r0, #0
-	adds r1, r4, r1
-	adds r0, r4, #0
-	bl sub_0805D234
-	adds r4, r0, #0
-	ldr r0, [sp, #0x18]
-	cmp r0, r4
-	ble _0805C15E
-	adds r0, r4, #0
-_0805C15E:
-	adds r4, r0, #0
-_0805C160:
-	pop {r4, r5, r6, r7}
-	pop {r1}
-	bx r1
-	.align 2, 0
-
-	thumb_func_start sub_0805C168
-sub_0805C168: @ 0x0805C168
-	push {lr}
-	adds r0, #1
-	movs r1, #0x14
-	bl sub_08090F7C
-	pop {r1}
-	bx r1
-	.align 2, 0
-
-	thumb_func_start sub_0805C178
-sub_0805C178: @ 0x0805C178
-	push {lr}
-	adds r2, r1, #0
-	movs r1, #0x6c
-	adds r3, r0, #0
-	muls r3, r1, r3
-	ldr r1, _0805C1A0 @ =gCharStats
-	adds r3, r3, r1
-	lsls r1, r0, #2
-	adds r1, r1, r0
-	lsls r1, r1, #4
-	adds r1, r1, r0
-	lsls r1, r1, #2
-	ldr r0, _0805C1A4 @ =gLevelStatTable
-	adds r1, r1, r0
-	adds r0, r3, #0
-	bl sub_0805C1A8
-	pop {r1}
-	bx r1
-	.align 2, 0
-_0805C1A0: .4byte gCharStats
-_0805C1A4: .4byte gLevelStatTable
-
-	thumb_func_start sub_0805C1A8
-sub_0805C1A8: @ 0x0805C1A8
-	push {r4, lr}
-	adds r4, r2, #0
-	movs r3, #0
-	cmp r3, r4
-	bge _0805C1D0
-	ldr r2, _0805C1D8 @ =gLevelExpTable
-	ldrb r1, [r1]
-	lsls r0, r1, #1
-	adds r0, r0, r1
-	lsls r0, r0, #3
-	adds r0, r0, r1
-	lsls r0, r0, #4
-	adds r2, #4
-	adds r1, r0, r2
-	adds r2, r4, #0
-_0805C1C6:
-	ldm r1!, {r0}
-	adds r3, r3, r0
-	subs r2, #1
-	cmp r2, #0
-	bne _0805C1C6
-_0805C1D0:
-	adds r0, r3, #0
-	pop {r4}
-	pop {r1}
-	bx r1
-	.align 2, 0
-_0805C1D8: .4byte gLevelExpTable

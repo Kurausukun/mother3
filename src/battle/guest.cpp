@@ -32,11 +32,11 @@ void Guest::setupStats() {
     setHP(mStats->curHP);
     setMaxPP(mStats->maxPP);
     setPP(mStats->curPP);
+    setOffense(mStats->offense);
+    setDefense(mStats->defense);
     setIQ(mStats->iq);
     setSpeed(mStats->speed);
-    unit_148(mStats->_2c);
-    setClumsiness(mStats->_2d);
-    unit_158(mStats->_2e);
+    unit_158(mStats->_2c);
 }
 
 Guest::~Guest() {}

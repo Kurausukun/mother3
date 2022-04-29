@@ -1103,7 +1103,7 @@ _0806F644:
 	ldrsh r1, [r3, r2]
 	cmp r1, #0
 	beq _0806F652
-	bl sub_08090F7C
+	bl Div
 _0806F652:
 	adds r2, r0, #0
 	lsls r1, r4, #1
@@ -1131,7 +1131,7 @@ _0806F67A:
 	ldrsh r1, [r3, r2]
 	cmp r1, #0
 	beq _0806F688
-	bl sub_08090F7C
+	bl Div
 _0806F688:
 	adds r2, r0, #0
 	lsls r0, r4, #1
@@ -1682,7 +1682,7 @@ sub_0806FA14: @ 0x0806FA14
 	ldrh r1, [r7, #0x34]
 	cmp r1, #0
 	beq _0806FAF0
-	bl sub_08090F7C
+	bl Div
 _0806FAF0:
 	strh r0, [r7, #0x30]
 	lsls r1, r4, #0x10
@@ -1694,7 +1694,7 @@ _0806FAF0:
 	ldrh r1, [r7, #0x34]
 	cmp r1, #0
 	beq _0806FB08
-	bl sub_08090F7C
+	bl Div
 _0806FB08:
 	strh r0, [r7, #0x32]
 _0806FB0A:

@@ -8,7 +8,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::Misc,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::Self,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -31,7 +31,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::Attack,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::ChooseOneEnemy,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x32,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -54,7 +54,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::Misc,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::Self,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -77,7 +77,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::Misc,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::Self,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -100,7 +100,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::Attack,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::ChooseOneEnemy,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x9,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -123,7 +123,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::Attack,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::RandomAny,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x32,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -146,7 +146,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::Misc,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::Self,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -169,7 +169,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::Attack,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::ChooseOneEnemy,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x32,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -192,7 +192,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::Attack,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::ChooseOneEnemy,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x32,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -215,7 +215,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::Misc,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::Self,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -238,7 +238,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::Misc,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::Self,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -261,7 +261,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::Misc,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::Self,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -284,7 +284,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::Damage,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::ChooseOneEnemy,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x0,
         /* HEAL LO */ 0xc4,
         /* HEAL HI */ 0xcc,
@@ -307,7 +307,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::Misc,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::Self,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -330,7 +330,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::Damage,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::ChooseOneEnemy,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x0,
         /* HEAL LO */ 0xba,
         /* HEAL HI */ 0xc0,
@@ -353,7 +353,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::Misc,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::Self,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -376,7 +376,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::Damage,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::ChooseOneEnemy,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x0,
         /* HEAL LO */ 0xe0,
         /* HEAL HI */ 0xec,
@@ -399,7 +399,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::Misc,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::Self,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -422,7 +422,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::Damage,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::ChooseOneEnemy,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x106,
         /* HEAL HI */ 0x112,
@@ -445,7 +445,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::Misc,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::Self,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -468,7 +468,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::Damage,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::ChooseOneEnemy,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x270,
         /* HEAL HI */ 0x278,
@@ -491,7 +491,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::Misc,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::Self,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -514,7 +514,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ ElementType::None,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::ChooseOneEnemy,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x102,
         /* HEAL HI */ 0x109,
@@ -537,7 +537,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::Misc,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::Self,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -560,7 +560,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::Damage,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::ChooseOneEnemy,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x361,
         /* HEAL HI */ 0x36a,
@@ -583,7 +583,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::Misc,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::Self,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -606,7 +606,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::Misc,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::Self,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -629,7 +629,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::Attack,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::ChooseOneEnemy,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x32,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -652,7 +652,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::Misc,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::Self,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -675,7 +675,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::Misc,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::Self,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -698,7 +698,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::Misc,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::Self,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -721,7 +721,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::Misc,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::Self,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -744,7 +744,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::Attack,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::AllEnemies,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x2d,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -767,7 +767,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::Attack,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::RandomEnemy,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0xfa,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -790,7 +790,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::StatusChange,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::Self,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -813,7 +813,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::StatusChange,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::Self,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -836,7 +836,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::Misc,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::Self,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -859,7 +859,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::StatusChange,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::ChooseOneEnemy,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -882,7 +882,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::Misc,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::ChooseOneEnemy,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -905,7 +905,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::StatusChange,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::ChooseOneEnemy,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -928,7 +928,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::StatusChange,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::ChooseOneEnemy,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -951,7 +951,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::StatusChange,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::ChooseOneEnemy,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -974,7 +974,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::StatusChange,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::ChooseOneEnemy,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -997,7 +997,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::Misc,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::Self,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -1020,7 +1020,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::Misc,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::ChooseOneEnemy,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -1043,7 +1043,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::Misc,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::Self,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -1066,7 +1066,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::StatusChange,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::ChooseOneEnemy,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -1089,7 +1089,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::StatusChange,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::ChooseOneEnemy,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -1112,7 +1112,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::StatusChange,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::RandomAny,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -1135,7 +1135,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
         /*  EFFECT */ EffectType::Misc,
         /* ELEMENT */ ElementType::None,
         /*  TARGET */ TargetType::Self,
-        /*    UNK1 */ 0x0,
+
         /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,
         /* HEAL HI */ 0x0,
@@ -1155,7 +1155,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
     },
     {
         /*      ID */ 0x0, /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0, /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0, /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x0, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -1163,7 +1163,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
     },
     {
         /*      ID */ 0x0, /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0, /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0, /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x0, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -1171,7 +1171,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
     },
     {
         /*      ID */ 0x0, /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0, /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0, /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x0, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -1179,7 +1179,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
     },
     {
         /*      ID */ 0x0, /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0, /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0, /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x0, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -1187,7 +1187,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
     },
     {
         /*      ID */ 0x0, /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0, /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0, /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x0, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -1195,7 +1195,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
     },
     {
         /*      ID */ 0x0, /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0, /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0, /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x0, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -1203,7 +1203,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
     },
     {
         /*      ID */ 0x0, /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0, /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0, /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x0, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -1211,7 +1211,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
     },
     {
         /*      ID */ 0x0, /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0, /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0, /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x0, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -1219,7 +1219,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
     },
     {
         /*      ID */ 0x0, /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0, /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0, /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x0, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -1227,7 +1227,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
     },
     {
         /*      ID */ 0x0, /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0, /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0, /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x0, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -1235,7 +1235,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
     },
     {
         /*      ID */ 0x0, /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0, /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0, /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x0, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -1243,7 +1243,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
     },
     {
         /*      ID */ 0x0, /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0, /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0, /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x0, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -1251,7 +1251,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
     },
     {
         /*      ID */ 0x0, /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0, /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0, /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x0, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -1259,7 +1259,7 @@ extern "C" const GuestSkillInfo gPlayerSkillData[] = {
     },
     {
         /*      ID */ 0x0, /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0, /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0, /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x0, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,

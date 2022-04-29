@@ -2746,16 +2746,16 @@ vt_09F469A8::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -3224,16 +3224,16 @@ vt_09F46E98::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -3705,16 +3705,16 @@ vt_09F47390::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -4186,16 +4186,16 @@ vt_09F47888::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -4667,16 +4667,16 @@ vt_09F47D80::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -5148,16 +5148,16 @@ vt_09F48278::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -5632,16 +5632,16 @@ vt_09F48778::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -6113,16 +6113,16 @@ vt_09F48C70::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -10555,16 +10555,16 @@ _vt.5Guest::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -10894,16 +10894,16 @@ vt_09F4BDC8::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -11234,16 +11234,16 @@ vt_09F4C148::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -11583,16 +11583,16 @@ vt_09F4C4E0::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -11926,16 +11926,16 @@ vt_09F4C868::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -12272,16 +12272,16 @@ vt_09F4CBF8::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -12612,16 +12612,16 @@ vt_09F4CF78::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -12952,16 +12952,16 @@ vt_09F4D2F8::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -14704,16 +14704,16 @@ vt_09F4E508::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -15158,16 +15158,16 @@ vt_09F4E9B8::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -15638,16 +15638,16 @@ vt_09F4EEA8::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -16092,16 +16092,16 @@ vt_09F4F358::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -16594,16 +16594,16 @@ vt_09F4F888::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -17057,16 +17057,16 @@ vt_09F4FD50::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -17520,16 +17520,16 @@ vt_09F50218::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -17998,16 +17998,16 @@ vt_09F50708::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -18452,16 +18452,16 @@ vt_09F50BB8::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -18909,16 +18909,16 @@ vt_09F51070::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -19363,16 +19363,16 @@ vt_09F51520::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -19817,16 +19817,16 @@ vt_09F519D0::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -20283,16 +20283,16 @@ vt_09F51EA0::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -20740,16 +20740,16 @@ vt_09F52358::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -21212,16 +21212,16 @@ vt_09F52838::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -21666,16 +21666,16 @@ vt_09F52CE8::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -22141,16 +22141,16 @@ vt_09F531D0::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -22595,16 +22595,16 @@ vt_09F53680::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -23049,16 +23049,16 @@ vt_09F53B30::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -23503,16 +23503,16 @@ vt_09F53FE0::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -23957,16 +23957,16 @@ vt_09F54490::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -24411,16 +24411,16 @@ vt_09F54940::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -24865,16 +24865,16 @@ vt_09F54DF0::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -25319,16 +25319,16 @@ vt_09F552A0::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -25773,16 +25773,16 @@ vt_09F55750::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -26227,16 +26227,16 @@ vt_09F55C00::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -26681,16 +26681,16 @@ vt_09F560B0::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -27135,16 +27135,16 @@ vt_09F56560::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -27604,16 +27604,16 @@ vt_09F56A38::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -28058,16 +28058,16 @@ vt_09F56EE8::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -28512,16 +28512,16 @@ vt_09F57398::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -28966,16 +28966,16 @@ vt_09F57848::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -29429,16 +29429,16 @@ vt_09F57D10::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -29883,16 +29883,16 @@ vt_09F581C0::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -30337,16 +30337,16 @@ vt_09F58670::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -30791,16 +30791,16 @@ vt_09F58B20::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -31248,16 +31248,16 @@ vt_09F58FD8::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -31702,16 +31702,16 @@ vt_09F59488::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -32168,16 +32168,16 @@ vt_09F59958::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -32631,16 +32631,16 @@ vt_09F59E20::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -33085,16 +33085,16 @@ vt_09F5A2D0::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -33539,16 +33539,16 @@ vt_09F5A780::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -34002,16 +34002,16 @@ vt_09F5AC48::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -34459,16 +34459,16 @@ vt_09F5B100::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -34913,16 +34913,16 @@ vt_09F5B5B0::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -35367,16 +35367,16 @@ vt_09F5BA60::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -35833,16 +35833,16 @@ vt_09F5BF30::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -36287,16 +36287,16 @@ vt_09F5C3E0::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -36741,16 +36741,16 @@ vt_09F5C890::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -37195,16 +37195,16 @@ vt_09F5CD40::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -37658,16 +37658,16 @@ vt_09F5D208::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -38112,16 +38112,16 @@ vt_09F5D6B8::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -38566,16 +38566,16 @@ vt_09F5DB68::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -39020,16 +39020,16 @@ vt_09F5E018::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -39474,16 +39474,16 @@ vt_09F5E4C8::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -39928,16 +39928,16 @@ vt_09F5E978::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -40391,16 +40391,16 @@ vt_09F5EE40::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -40845,16 +40845,16 @@ vt_09F5F2F0::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -41308,16 +41308,16 @@ vt_09F5F7B8::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -41762,16 +41762,16 @@ vt_09F5FC68::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -42216,16 +42216,16 @@ vt_09F60118::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -42670,16 +42670,16 @@ vt_09F605C8::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -43124,16 +43124,16 @@ vt_09F60A78::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -43578,16 +43578,16 @@ vt_09F60F28::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -44044,16 +44044,16 @@ vt_09F613F8::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -44510,16 +44510,16 @@ vt_09F618C8::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -44973,16 +44973,16 @@ vt_09F61D90::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -45427,16 +45427,16 @@ vt_09F62240::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -45881,16 +45881,16 @@ vt_09F626F0::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -46335,16 +46335,16 @@ vt_09F62BA0::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -46789,16 +46789,16 @@ vt_09F63050::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -47243,16 +47243,16 @@ vt_09F63500::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -47697,16 +47697,16 @@ vt_09F639B0::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -48154,16 +48154,16 @@ vt_09F63E68::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -48608,16 +48608,16 @@ vt_09F64318::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -93899,16 +93899,16 @@ _vt.4Unit::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -95122,16 +95122,16 @@ vt_09F820E8::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti
@@ -96603,16 +96603,16 @@ vt_09F83010::
 	.4byte setMaxPP__4Uniti
 	.2byte 0
 	.2byte 0
+	.4byte setOffense__4Uniti
+	.2byte 0
+	.2byte 0
+	.4byte setDefense__4Uniti
+	.2byte 0
+	.2byte 0
 	.4byte setIQ__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte setSpeed__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte unit_148__4Uniti
-	.2byte 0
-	.2byte 0
-	.4byte setClumsiness__4Uniti
 	.2byte 0
 	.2byte 0
 	.4byte unit_158__4Uniti

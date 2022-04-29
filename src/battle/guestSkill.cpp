@@ -43,7 +43,7 @@ u32 GuestSkill::element() const {
 }
 
 u32 GuestSkill::target() const {
-    return mInfo->move.target;
+    return *(u16*)&mInfo->move.target;
 }
 
 u32 GuestSkill::attackMult() const {

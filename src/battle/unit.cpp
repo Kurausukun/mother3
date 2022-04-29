@@ -17,10 +17,10 @@ Unit::Unit() : mWeaknessCount(0), _54(0) {
     mMaxHP = 1;
     mPP = 0;
     mMaxPP = 0;
+    mOffense = 0;
+    mDefense = 0;
     mIQ = 0;
     mSpeed = 0;
-    _3c = 0;
-    mClumsiness = 0;
     _40 = 0;
     _d8 = 0;
     _f4.dead = 0;
@@ -155,20 +155,20 @@ void Unit::setMaxPP(s32 value) {
     mMaxPP = clampS32(value, 0, 99999999);
 }
 
+void Unit::setOffense(s32 value) {
+    mOffense = clampS32(value, 0, 255);
+}
+
+void Unit::setDefense(s32 value) {
+    mDefense = clampS32(value, 0, 255);
+}
+
 void Unit::setIQ(s32 value) {
     mIQ = clampS32(value, 0, 255);
 }
 
 void Unit::setSpeed(s32 value) {
     mSpeed = clampS32(value, 0, 255);
-}
-
-void Unit::unit_148(s32 value) {
-    _3c = clampS32(value, 0, 255);
-}
-
-void Unit::setClumsiness(s32 value) {
-    mClumsiness = clampS32(value, 0, 255);
 }
 
 void Unit::unit_158(s32 value) {
@@ -216,19 +216,19 @@ s32 Unit::maxPP() const {
 }
 
 s32 Unit::iq() const {
-    return mIQ;
+    return mOffense;
 }
 
 s32 Unit::speed() const {
-    return mSpeed;
+    return mDefense;
 }
 
 s32 Unit::unit_1d8() const {
-    return _3c;
+    return mIQ;
 }
 
 s32 Unit::clumsiness() const {
-    return mClumsiness;
+    return mSpeed;
 }
 
 s32 Unit::unit_1e8() const {

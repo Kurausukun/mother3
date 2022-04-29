@@ -1,0 +1,3 @@
+    .syntax unified
+
+    .syntax divided

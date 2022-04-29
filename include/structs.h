@@ -3,16 +3,39 @@
 
 #include "global.h"
 
+typedef struct MoveInfo {
+    u32 effect;
+    u32 element;
+    u32 target;
+    u8 atk_mult;
+    u16 heal_lo;
+    u16 heal_hi;
+    u8 ailment;
+    u8 ailment_chance;
+    u8 action;
+    u32 priority;
+    u16 msg_no;
+    u8 has_dim;
+    u8 anim_no;
+    u8 anim_success;
+    u16 sfx_no;
+    u8 miss_chance;
+    u8 smash_chance;
+    u8 redirectable;
+    u8 redirectable2;
+} MoveInfo;
+
 typedef struct CharStats {
     u8 charNo;
     u8 spriteNo;
     u8 name[16];
     u8 level;
     u32 xp;
-    u32 curHP;
+    s32 curHP;
     s16 curPP;
-    u32 maxHP;
+    s32 maxHP;
     s16 maxPP;
+    u8 _26[2];
     u8 offense;
     u8 defense;
     u8 iq;
@@ -20,16 +43,19 @@ typedef struct CharStats {
     u8 _2c;
     u8 _2d;
     u8 _2e;
-    u8 ailments;
+    u8 _2f;
+    u16 ailments;
+    u16 _32;
     u8 weapon;
     u8 body;
     u8 head;
-    u8 other[4];
+    u8 other;
     u32 equip_lyt;
     u8 inventory[16];
     u16 item_timers[16];
 } CharStats;
 extern CharStats gCharStats[];
+static_assert(sizeof(CharStats) == 0x6c);
 
 enum ItemType {
     Weapon,
@@ -158,7 +184,7 @@ typedef struct Save {
     u8 event_flags[0x100];
     u8 shop_flags[0x40];
     u8 _380[0x40];
-    u8 _3c0[0x40];
+    u8 mIQ0[0x40];
     u8 giftbox_flags[0x80];
     u8 _480;
     u8 _481;
@@ -215,6 +241,12 @@ struct Size {
     s16 h;
 };
 
+typedef struct ExpInfo {
+    u32 ch_no;
+    u32 deltas[99];
+} ExpInfo;
+extern ExpInfo gExpTable[];
+
 typedef struct Stats {
     u32 hp;
     u32 pp;
@@ -232,7 +264,7 @@ typedef struct PsiInfo {
 } PsiInfo;
 
 typedef struct LevelStats {
-    u16 ch_no;
+    u8 ch_no;
     u16 ch_start_level;
     u16 start_equipment[4];
     Stats start_stats;
@@ -245,5 +277,28 @@ typedef struct LevelStats {
 } LevelStats;
 extern LevelStats gLevelStatTable[];
 static_assert(sizeof(LevelStats) == 0x144);
+
+typedef struct GoodsInfo {
+    u8 item_id;
+    u32 item_type;
+    u8 key_item;
+    u16 sell_price;
+    u32 equip_flags;
+    s32 hp_mod;
+    s32 pp_mod;
+    s8 off_mod;
+    s8 def_mod;
+    s8 iq_mod;
+    s8 spd_mod;
+    s32 kindness_mod;
+    s16 ailment_resist[11];
+    s8 element_resist[5];
+    u8 attack_type[5];
+    MoveInfo action;
+    u8 _68;
+    u8 _69;
+    u8 consumable;
+} GoodsInfo;
+extern GoodsInfo gGoodsInfo[];
 
 #endif  // STRUCTS_H
