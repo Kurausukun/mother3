@@ -3,7 +3,7 @@
 extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x0, /* PP COST */ 0x0, /* RECOLOR */ 0x0, /* HAS SFX */ 0x0,
-        /*  EFFECT */ 0x1, /* ELEMENT */ 0x0, /*  TARGET */ 0x0, /*    UNK1 */ 0x0,
+        /*  EFFECT */ 0x1, /* ELEMENT */ 0x0, /*  TARGET */ 0x0, 
         /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0, /*  STATUS */ 0x0,
         /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0, /*  MSG NO */ 0x2df,
         /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0, /*   SOUND */ 0x0,
@@ -11,7 +11,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     },
     {
         /*      ID */ 0x1, /* PP COST */ 0x0, /* RECOLOR */ 0x0, /* HAS SFX */ 0x0,
-        /*  EFFECT */ 0x8, /* ELEMENT */ 0x0, /*  TARGET */ 0x0, /*    UNK1 */ 0x0,
+        /*  EFFECT */ 0x8, /* ELEMENT */ 0x0, /*  TARGET */ 0x0, 
         /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0, /*  STATUS */ 0x0,
         /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x2, /*  MSG NO */ 0x3fa,
         /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0, /*   SOUND */ 0x26b,
@@ -20,7 +20,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x2,    /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0xf,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0xf,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e0,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -30,7 +30,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x3,    /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0xa,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0xa,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e1,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -40,7 +40,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x4,    /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x14,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x14,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e2,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -50,7 +50,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x5,    /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x19,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x19,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e3,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -60,7 +60,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x6,    /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x19,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x19,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e4,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -70,7 +70,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x7,    /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x28,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x28,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e5,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -80,7 +80,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x8,    /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x1e,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x1e,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e6,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -90,7 +90,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x9,    /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x14,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x14,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e7,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -100,7 +100,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xa,    /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x19,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x19,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e8,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -110,7 +110,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xb,    /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x19,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x19,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e9,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -120,7 +120,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xc,    /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x19,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x19,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2ea,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -130,7 +130,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xd,    /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x19,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x19,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2eb,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -140,7 +140,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xe,    /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x19,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x19,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2ec,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -150,7 +150,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xf,    /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x28,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x28,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2ed,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -160,7 +160,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x10,   /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x14,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x14,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2ee,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -170,7 +170,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x11,   /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x1e,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x1e,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2ef,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -180,7 +180,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x12,   /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x1e,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x1e,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2f0,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -190,7 +190,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x13,   /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0xf,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0xf,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2f1,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -200,7 +200,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x14,   /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0xf,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0xf,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2f2,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -210,7 +210,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x15,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4ca, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -220,7 +220,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x16,   /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x28,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x28,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4b1,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -230,7 +230,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x17,   /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x14,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x14,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2f5,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -240,7 +240,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x18,   /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x14,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x14,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2f6,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -250,7 +250,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x19,   /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x1e,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x1e,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2f7,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -260,7 +260,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1a,   /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x1e,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x1e,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2f8,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -270,7 +270,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1b,   /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x23,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x23,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2f9,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -280,7 +280,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1c,   /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x14,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x14,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2fa,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -290,7 +290,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1d,   /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x28,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x28,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2fb,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -300,7 +300,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1e,   /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x28,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x28,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2fc,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -310,7 +310,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1f,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x10,  /* HEAL HI */ 0x12,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2fd, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x68,
@@ -320,7 +320,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x20,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x43,  /* HEAL HI */ 0x48,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2fe, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x68,
@@ -330,7 +330,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x21,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x4,
-        /*  TARGET */ 0x7,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x7,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x3a,  /* HEAL HI */ 0x44,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2ff, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x93,
@@ -340,7 +340,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x22,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x450, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -350,7 +350,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x23,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x44,  /* HEAL HI */ 0x50,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2fd, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x68,
@@ -360,7 +360,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x24,   /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0xf,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0xf,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x1,
         /* STATUS% */ 0x46,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x302,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -370,7 +370,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x25,   /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x1,
         /* STATUS% */ 0x64,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x303,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -380,7 +380,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x26,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x1,
         /* STATUS% */ 0x3c,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x304, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x6e,
@@ -390,7 +390,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x27,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x2,
         /* STATUS% */ 0x28,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x305, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x76,
@@ -400,7 +400,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x28,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x5,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x5,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x2,
         /* STATUS% */ 0x28,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x306, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -410,7 +410,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x29,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x7,
         /* STATUS% */ 0x3c,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x307, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -420,7 +420,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x2a,  /* PP COST */ 0x8,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x2,
         /* STATUS% */ 0x28,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x308, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x5c,
@@ -430,7 +430,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x2b,  /* PP COST */ 0x6,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x3,
         /* STATUS% */ 0x46,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x30d, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x5b,
@@ -440,7 +440,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x2c,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x3,
         /* STATUS% */ 0x32,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x30a, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x69,
@@ -450,7 +450,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x2d,  /* PP COST */ 0x0,   /* RECOLOR */ 0x0,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x1,
-        /*  TARGET */ 0x7,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x7,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0xb0,  /* HEAL HI */ 0xb6,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x354, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x7a,
@@ -460,7 +460,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x2e,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x3,
         /* STATUS% */ 0x32,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x30c, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x70,
@@ -470,7 +470,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x2f,  /* PP COST */ 0x6,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x3,
         /* STATUS% */ 0x46,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x30d, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x5b,
@@ -480,7 +480,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x30,  /* PP COST */ 0x12,  /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x3,
         /* STATUS% */ 0x32,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x30e, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x5b,
@@ -490,7 +490,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x31,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x4,
         /* STATUS% */ 0x32,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x30f, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x72,
@@ -500,7 +500,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x32,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x4,
         /* STATUS% */ 0x4b,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x310, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x69,
@@ -510,7 +510,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x33,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x4,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x30f, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x72,
@@ -520,7 +520,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x34,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x5,
         /* STATUS% */ 0x46,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x312, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x71,
@@ -530,7 +530,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x35,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x5,
         /* STATUS% */ 0x46,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x313, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x72,
@@ -540,7 +540,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x36,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x5,
         /* STATUS% */ 0x28,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x314, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x72,
@@ -550,7 +550,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x37,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x5,
         /* STATUS% */ 0x46,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x315, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x73,
@@ -560,7 +560,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x38,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x5,
         /* STATUS% */ 0x32,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x316, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x6f,
@@ -570,7 +570,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x39,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x6,
         /* STATUS% */ 0x32,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x317, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x7e,
@@ -580,7 +580,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x3a,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x6,
         /* STATUS% */ 0x32,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x318, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x7e,
@@ -590,7 +590,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x3b,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0xf,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x19,
+        /*  TARGET */ 0xf,      /* ATK MUL */ 0x19,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x473, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -600,7 +600,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x3c,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x6,
         /* STATUS% */ 0x32,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x31a, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x76,
@@ -610,7 +610,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x3d,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x5,
         /* STATUS% */ 0x50,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x31b, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x75,
@@ -620,7 +620,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x3e,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x7,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2df, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x75,
@@ -630,7 +630,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x3f,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x7,
         /* STATUS% */ 0x32,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x31d, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x94,
@@ -640,7 +640,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x40,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x7,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x31e, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x94,
@@ -650,7 +650,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x41,   /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x8,
         /* STATUS% */ 0x41,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x31f,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -660,7 +660,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x42,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x8,
         /* STATUS% */ 0x28,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x31f, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -669,7 +669,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     },
     {
         /*      ID */ 0x43, /* PP COST */ 0x0, /* RECOLOR */ 0x0, /* HAS SFX */ 0x0,
-        /*  EFFECT */ 0x8,  /* ELEMENT */ 0x0, /*  TARGET */ 0x0, /*    UNK1 */ 0x0,
+        /*  EFFECT */ 0x8,  /* ELEMENT */ 0x0, /*  TARGET */ 0x0, 
         /* ATK MUL */ 0x0,  /* HEAL LO */ 0x0, /* HEAL HI */ 0x0, /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,  /*  ACTION */ 0x0, /*    PRIO */ 0x2, /*  MSG NO */ 0x42a,
         /* DIMMING */ 0x0,  /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0, /*   SOUND */ 0x0,
@@ -678,7 +678,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x44,   /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x1d,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x1d,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x320,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -688,7 +688,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x45,   /* PP COST */ 0x0, /* RECOLOR */ 0x0,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x8, /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,    /*    UNK1 */ 0x0, /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,     /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0, /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0, /*    PRIO */ 0x2,
         /*  MSG NO */ 0x397,  /* DIMMING */ 0x0, /*  SEQ NO */ 0x0,
@@ -698,7 +698,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x46,   /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x7,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x28,
+        /*  TARGET */ 0x7,       /* ATK MUL */ 0x28,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x324,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -708,7 +708,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x47,   /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x7,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x28,
+        /*  TARGET */ 0x7,       /* ATK MUL */ 0x28,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x325,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -717,7 +717,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     },
     {
         /*      ID */ 0x48, /* PP COST */ 0x0, /* RECOLOR */ 0x0, /* HAS SFX */ 0x0,
-        /*  EFFECT */ 0x8,  /* ELEMENT */ 0x0, /*  TARGET */ 0x0, /*    UNK1 */ 0x0,
+        /*  EFFECT */ 0x8,  /* ELEMENT */ 0x0, /*  TARGET */ 0x0, 
         /* ATK MUL */ 0x0,  /* HEAL LO */ 0x0, /* HEAL HI */ 0x0, /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,  /*  ACTION */ 0x0, /*    PRIO */ 0x2, /*  MSG NO */ 0x4ab,
         /* DIMMING */ 0x0,  /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0, /*   SOUND */ 0x26b,
@@ -726,7 +726,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x49,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x4,
-        /*  TARGET */ 0x6,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x6,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x3f,  /* HEAL HI */ 0x4a,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x327, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x6b,
@@ -736,7 +736,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x4a,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x4,
-        /*  TARGET */ 0x7,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x7,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x66,  /* HEAL HI */ 0x74,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x328, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x6b,
@@ -746,7 +746,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x4b,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x4,
-        /*  TARGET */ 0xb,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0xb,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x26,  /* HEAL HI */ 0x30,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x329, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x6d,
@@ -756,7 +756,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x4c,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0xc,   /* HEAL HI */ 0xf,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2fd, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x68,
@@ -766,7 +766,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x4d,   /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x7,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x1e,
+        /*  TARGET */ 0x7,       /* ATK MUL */ 0x1e,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x325,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -776,7 +776,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x4e,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x4,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x28,  /* HEAL HI */ 0x2d,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x32c, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x6c,
@@ -786,7 +786,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x4f,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x4,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x6c,  /* HEAL HI */ 0x80,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x32d, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x6c,
@@ -796,7 +796,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x50,   /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x23,
         /* STATUS% */ 0x64,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x32e,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -806,7 +806,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x51,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x484, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -816,7 +816,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x52,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x12,  /* HEAL HI */ 0x18,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x330, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x74,
@@ -826,7 +826,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x53,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x16,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x16,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x331, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x8a,
@@ -836,7 +836,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x54,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x7,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x7,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x3e,  /* HEAL HI */ 0x43,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x332, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x78,
@@ -846,7 +846,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x55,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x7,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x7,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x20,  /* HEAL HI */ 0x2a,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x333, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x77,
@@ -856,7 +856,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x56,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x1,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x14,  /* HEAL HI */ 0x1a,  /*  STATUS */ 0x9,
         /* STATUS% */ 0xa,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x334, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x4f,
@@ -866,7 +866,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x57,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x1,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x32,  /* HEAL HI */ 0x36,  /*  STATUS */ 0x9,
         /* STATUS% */ 0xa,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x335, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x88,
@@ -876,7 +876,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x58,  /* PP COST */ 0x6,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x2,   /* ELEMENT */ 0x1,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x19,  /* HEAL HI */ 0x23,  /*  STATUS */ 0x9,
         /* STATUS% */ 0xa,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x336, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x4f,
@@ -886,7 +886,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x59,  /* PP COST */ 0xc,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x2,   /* ELEMENT */ 0x1,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x48,  /* HEAL HI */ 0x58,  /*  STATUS */ 0x9,
         /* STATUS% */ 0xa,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x337, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x4f,
@@ -896,7 +896,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x5a,  /* PP COST */ 0x14,  /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x2,   /* ELEMENT */ 0x1,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x66,  /* HEAL HI */ 0x70,  /*  STATUS */ 0x9,
         /* STATUS% */ 0xa,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x338, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x4f,
@@ -906,7 +906,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x5b,  /* PP COST */ 0x26,  /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x2,   /* ELEMENT */ 0x1,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0xa4,  /* HEAL HI */ 0xb6,  /*  STATUS */ 0x9,
         /* STATUS% */ 0xa,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x339, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x4f,
@@ -916,7 +916,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x5c,  /* PP COST */ 0x5,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x2,   /* ELEMENT */ 0x2,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x2a,  /* HEAL HI */ 0x34,  /*  STATUS */ 0xa,
         /* STATUS% */ 0x8,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x33a, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x50,
@@ -926,7 +926,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x5d,  /* PP COST */ 0xa,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x2,   /* ELEMENT */ 0x2,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x64,  /* HEAL HI */ 0x78,  /*  STATUS */ 0xa,
         /* STATUS% */ 0x8,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x33b, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x50,
@@ -936,7 +936,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x5e,  /* PP COST */ 0x12,  /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x2,   /* ELEMENT */ 0x2,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0xb4,  /* HEAL HI */ 0xc8,  /*  STATUS */ 0xa,
         /* STATUS% */ 0x8,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x33c, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x50,
@@ -946,7 +946,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x5f,  /* PP COST */ 0x1c,  /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x2,   /* ELEMENT */ 0x2,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x140, /* HEAL HI */ 0x15e, /*  STATUS */ 0xa,
         /* STATUS% */ 0x8,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x33d, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x50,
@@ -956,7 +956,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x60,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x3,
-        /*  TARGET */ 0x7,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x7,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x1c,  /* HEAL HI */ 0x23,  /*  STATUS */ 0x2,
         /* STATUS% */ 0x3,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x33e, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x52,
@@ -966,7 +966,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x61,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x3,
-        /*  TARGET */ 0x7,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x7,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x25,  /* HEAL HI */ 0x2f,  /*  STATUS */ 0x2,
         /* STATUS% */ 0xa,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x33f, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x52,
@@ -976,7 +976,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x62,  /* PP COST */ 0x4,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x2,   /* ELEMENT */ 0x3,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x64,  /* HEAL HI */ 0x78,  /*  STATUS */ 0x2,
         /* STATUS% */ 0x3,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x340, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x52,
@@ -986,7 +986,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x63,  /* PP COST */ 0x8,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x2,   /* ELEMENT */ 0x3,
-        /*  TARGET */ 0x27,  /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x27,     /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x64,  /* HEAL HI */ 0x78,  /*  STATUS */ 0x2,
         /* STATUS% */ 0x3,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x341, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x52,
@@ -996,7 +996,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x64,  /* PP COST */ 0x10,  /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x2,   /* ELEMENT */ 0x3,
-        /*  TARGET */ 0x28,  /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x28,     /* ATK MUL */ 0x0,
         /* HEAL LO */ 0xa0,  /* HEAL HI */ 0xb4,  /*  STATUS */ 0x2,
         /* STATUS% */ 0x3,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x342, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x52,
@@ -1006,7 +1006,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x65,  /* PP COST */ 0x14,  /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x2,   /* ELEMENT */ 0x3,
-        /*  TARGET */ 0x29,  /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x29,     /* ATK MUL */ 0x0,
         /* HEAL LO */ 0xa0,  /* HEAL HI */ 0xb4,  /*  STATUS */ 0x2,
         /* STATUS% */ 0x3,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x343, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x52,
@@ -1016,7 +1016,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x66,  /* PP COST */ 0x1c,  /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x344, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x53,
@@ -1026,7 +1026,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x67,   /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0xa,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0xa,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e2,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -1036,7 +1036,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x68,   /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x5,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x5,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e0,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -1046,7 +1046,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x69,   /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x27,
         /* STATUS% */ 0x46,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x487,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -1056,7 +1056,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x6a,  /* PP COST */ 0x28,  /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x2,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x118, /* HEAL HI */ 0x152, /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x348, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x54,
@@ -1066,7 +1066,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x6b,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x3,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0xa,   /* HEAL HI */ 0xc,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x377, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -1076,7 +1076,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x6c,   /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x1e,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x1e,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x34a,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -1086,7 +1086,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x6d,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x3e,  /* HEAL HI */ 0x48,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2fd, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x68,
@@ -1096,7 +1096,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x6e,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x34c, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x55,
@@ -1106,7 +1106,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x6f,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x3a,  /* HEAL HI */ 0x40,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x34d, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x55,
@@ -1116,7 +1116,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x70,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0xa,
         /* STATUS% */ 0x1e,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x35e, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -1126,7 +1126,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x71,   /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0xc,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0xa,
+        /*  TARGET */ 0xc,       /* ATK MUL */ 0xa,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e0,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -1136,7 +1136,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x72,   /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x23,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x23,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e6,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -1146,7 +1146,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x73,   /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x19,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x19,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2f5,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -1156,7 +1156,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x74,   /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0xf,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0xf,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x351,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -1166,7 +1166,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x75,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x96,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x96,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x353, /* DIMMING */ 0x0,   /*  SEQ NO */ 0xb6,
@@ -1176,7 +1176,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x76,  /* PP COST */ 0x0,   /* RECOLOR */ 0x0,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x1,
-        /*  TARGET */ 0x7,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x7,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x11c, /* HEAL HI */ 0x12a, /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x354, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x88,
@@ -1186,7 +1186,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x77,  /* PP COST */ 0x0,   /* RECOLOR */ 0x0,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x4,
-        /*  TARGET */ 0x7,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x7,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0xca,  /* HEAL HI */ 0xe0,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x345, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x7b,
@@ -1196,7 +1196,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x78,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0xa,   /* HEAL HI */ 0xc,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x356, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -1206,7 +1206,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x79,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x1c,  /* HEAL HI */ 0x20,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x357, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x0,
@@ -1216,7 +1216,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x7a,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0xa,   /* HEAL HI */ 0xf,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x358, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x7c,
@@ -1226,7 +1226,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x7b,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0xa,   /* HEAL HI */ 0xf,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x359, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x0,
@@ -1236,7 +1236,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x7c,  /* PP COST */ 0x0,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x2,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x8,   /* HEAL HI */ 0xc,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x35a, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x5d,
@@ -1246,7 +1246,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x7d,  /* PP COST */ 0x0,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x2,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x8,   /* HEAL HI */ 0xc,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x35b, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x5d,
@@ -1256,7 +1256,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x7e,   /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0xa,
         /* STATUS% */ 0x14,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x35c,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -1266,7 +1266,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x7f,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0xa,
         /* STATUS% */ 0x14,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x35d, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -1276,7 +1276,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x80,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0xa,
         /* STATUS% */ 0x14,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x35e, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -1286,7 +1286,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x81,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0xa,
         /* STATUS% */ 0xa,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x35f, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -1296,7 +1296,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x82,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0xa,
         /* STATUS% */ 0x1e,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x360, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x74,
@@ -1306,7 +1306,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x83,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0xa,
         /* STATUS% */ 0x1e,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x361, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x74,
@@ -1316,7 +1316,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x84,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x12,
         /* STATUS% */ 0x32,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x362, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x5e,
@@ -1326,7 +1326,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x85,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x12,
         /* STATUS% */ 0x4b,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x363, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x79,
@@ -1336,7 +1336,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x86,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x46,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x364, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x6f,
@@ -1346,7 +1346,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x87,  /* PP COST */ 0x7,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x12,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x365, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x5e,
@@ -1356,7 +1356,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x88,  /* PP COST */ 0x12,  /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x12,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x366, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x5e,
@@ -1366,7 +1366,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x89,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x14,
         /* STATUS% */ 0x32,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x367, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x5f,
@@ -1376,7 +1376,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x8a,  /* PP COST */ 0x6,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x14,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x368, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x5f,
@@ -1386,7 +1386,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x8b,  /* PP COST */ 0x12,  /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x14,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x369, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x5f,
@@ -1396,7 +1396,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x8c,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x36a, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x7c,
@@ -1406,7 +1406,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x8d,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x12,
         /* STATUS% */ 0x46,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x36b, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x79,
@@ -1416,7 +1416,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x8e,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x12,
         /* STATUS% */ 0x55,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3d5, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x5e,
@@ -1426,7 +1426,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x8f,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x36d, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x79,
@@ -1436,7 +1436,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x90,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x36e, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x7d,
@@ -1446,7 +1446,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x91,  /* PP COST */ 0x6,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x2,   /* ELEMENT */ 0x1,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x19,  /* HEAL HI */ 0x23,  /*  STATUS */ 0x9,
         /* STATUS% */ 0xa,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x36f, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x4f,
@@ -1456,7 +1456,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x92,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x16,  /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x16,     /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x370, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x7e,
@@ -1466,7 +1466,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x93,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x10,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x371, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x7e,
@@ -1476,7 +1476,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x94,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2df, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -1486,7 +1486,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x95,  /* PP COST */ 0x6,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x3,
         /* STATUS% */ 0x1e,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x30d, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x5b,
@@ -1496,7 +1496,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x96,  /* PP COST */ 0x0,   /* RECOLOR */ 0x0,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x110, /* HEAL HI */ 0x11e, /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x353, /* DIMMING */ 0x0,   /*  SEQ NO */ 0xb6,
@@ -1506,7 +1506,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x97,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x3,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x1e,  /* HEAL HI */ 0x28,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x377, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -1516,7 +1516,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x98,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x3,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x9d,  /* HEAL HI */ 0xb2,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x378, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -1526,7 +1526,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x99,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x3,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x28,  /* HEAL HI */ 0x2d,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x379, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -1536,7 +1536,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x9a,  /* PP COST */ 0x5,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x2,   /* ELEMENT */ 0x2,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x23,  /* HEAL HI */ 0x2a,  /*  STATUS */ 0xa,
         /* STATUS% */ 0x8,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x33a, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x50,
@@ -1546,7 +1546,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x9b,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x23,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x23,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x37b, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -1556,7 +1556,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x9c,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x3,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0xd,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0xd,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x37c, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -1566,7 +1566,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x9d,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x3,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0xd,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0xd,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x96,  /* HEAL HI */ 0xa0,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x37d, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -1576,7 +1576,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x9e,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x3,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0xd,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0xd,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x1e,  /* HEAL HI */ 0x32,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x37e, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -1586,7 +1586,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x9f,  /* PP COST */ 0x5,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x4,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x14,  /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x14,     /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x32,  /* HEAL HI */ 0x46,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x37f, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x57,
@@ -1596,7 +1596,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xa0,  /* PP COST */ 0x8,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x4,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x14,  /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x14,     /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x78,  /* HEAL HI */ 0x8c,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x380, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x57,
@@ -1606,7 +1606,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xa1,  /* PP COST */ 0xd,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x4,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x14,  /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x14,     /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x381, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x57,
@@ -1616,7 +1616,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xa2,  /* PP COST */ 0x18,  /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x4,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0xe,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0xe,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x382, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x57,
@@ -1626,7 +1626,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xa3,  /* PP COST */ 0x4,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0xf,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0xf,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x383, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x58,
@@ -1636,7 +1636,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xa4,  /* PP COST */ 0xc,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0xf,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0xf,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x384, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x58,
@@ -1646,7 +1646,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xa5,  /* PP COST */ 0x12,  /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0xf,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0xf,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x385, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x58,
@@ -1656,7 +1656,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xa6,  /* PP COST */ 0x1c,  /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0xe,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0xe,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x386, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x65,
@@ -1666,7 +1666,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xa7,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x1b,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x387, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x65,
@@ -1676,7 +1676,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xa8,  /* PP COST */ 0x6,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0xf,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0xf,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x1b,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x388, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x65,
@@ -1686,7 +1686,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xa9,  /* PP COST */ 0x12,  /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0xe,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0xe,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x1b,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x389, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x66,
@@ -1696,7 +1696,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xaa,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0xf,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0xf,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x1d,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x38a, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x66,
@@ -1706,7 +1706,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xab,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0xe,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0xe,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x1e,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x38b, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x66,
@@ -1716,7 +1716,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xac,  /* PP COST */ 0x6,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0xf,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0xf,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x1d,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x38c, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x66,
@@ -1726,7 +1726,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xad,  /* PP COST */ 0x12,  /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0xe,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0xe,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x1d,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x38d, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x66,
@@ -1736,7 +1736,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xae,  /* PP COST */ 0x6,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0xf,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0xf,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x16,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x38e, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x61,
@@ -1746,7 +1746,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xaf,  /* PP COST */ 0x12,  /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0xe,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0xe,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x16,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x38f, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x61,
@@ -1755,7 +1755,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     },
     {
         /*      ID */ 0xb0, /* PP COST */ 0x0, /* RECOLOR */ 0x0, /* HAS SFX */ 0x0,
-        /*  EFFECT */ 0x1,  /* ELEMENT */ 0x3, /*  TARGET */ 0x1, /*    UNK1 */ 0x0,
+        /*  EFFECT */ 0x1,  /* ELEMENT */ 0x3, /*  TARGET */ 0x1, 
         /* ATK MUL */ 0x0,  /* HEAL LO */ 0x0, /* HEAL HI */ 0x0, /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,  /*  ACTION */ 0x0, /*    PRIO */ 0x2, /*  MSG NO */ 0x390,
         /* DIMMING */ 0x0,  /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0, /*   SOUND */ 0x26b,
@@ -1764,7 +1764,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xb1,  /* PP COST */ 0x6,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x2,   /* ELEMENT */ 0x1,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0xe,   /* HEAL HI */ 0x12,  /*  STATUS */ 0x9,
         /* STATUS% */ 0xa,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x336, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x4f,
@@ -1774,7 +1774,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xb2,  /* PP COST */ 0x6,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x2,   /* ELEMENT */ 0x1,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x3e,  /* HEAL HI */ 0x4e,  /*  STATUS */ 0x9,
         /* STATUS% */ 0xa,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x337, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x4f,
@@ -1784,7 +1784,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xb3,   /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x19,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x19,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x424,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -1794,7 +1794,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xb4,   /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x19,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x19,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x424,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -1804,7 +1804,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xb5,  /* PP COST */ 0x8,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0xf,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0xf,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x19,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x395, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x63,
@@ -1814,7 +1814,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xb6,  /* PP COST */ 0x14,  /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0xe,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0xe,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x19,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x396, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x63,
@@ -1823,7 +1823,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     },
     {
         /*      ID */ 0xb7, /* PP COST */ 0x0, /* RECOLOR */ 0x0, /* HAS SFX */ 0x0,
-        /*  EFFECT */ 0x8,  /* ELEMENT */ 0x0, /*  TARGET */ 0x0, /*    UNK1 */ 0x0,
+        /*  EFFECT */ 0x8,  /* ELEMENT */ 0x0, /*  TARGET */ 0x0, 
         /* ATK MUL */ 0x0,  /* HEAL LO */ 0x0, /* HEAL HI */ 0x0, /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,  /*  ACTION */ 0x0, /*    PRIO */ 0x2, /*  MSG NO */ 0x397,
         /* DIMMING */ 0x0,  /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0, /*   SOUND */ 0x0,
@@ -1832,7 +1832,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xb8,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x1e,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x1e,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x398, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -1842,7 +1842,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xb9,  /* PP COST */ 0x12,  /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0xf,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0xf,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x1a,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x399, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x64,
@@ -1852,7 +1852,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xba,  /* PP COST */ 0x22,  /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0xe,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0xe,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x1a,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x39a, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x64,
@@ -1862,7 +1862,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xbb,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x39b, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -1872,7 +1872,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xbc,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x4,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x39c, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -1882,7 +1882,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xbd,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x39d, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -1892,7 +1892,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xbe,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x39e, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -1902,7 +1902,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xbf,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x39f, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -1912,7 +1912,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xc0,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3a0, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -1922,7 +1922,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xc1,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3a1, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -1932,7 +1932,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xc2,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3a2, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -1942,7 +1942,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xc3,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3a3, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -1952,7 +1952,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xc4,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3a6, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -1962,7 +1962,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xc5,  /* PP COST */ 0x0,   /* RECOLOR */ 0x0,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x1,
-        /*  TARGET */ 0x7,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x7,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0xb4,  /* HEAL HI */ 0xd2,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x354, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x7a,
@@ -1972,7 +1972,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xc6,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3ac, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -1982,7 +1982,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xc7,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3ad, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -1992,7 +1992,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xc8,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3ae, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2002,7 +2002,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xc9,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3af, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2012,7 +2012,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xca,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3b0, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2022,7 +2022,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xcb,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3b1, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2032,7 +2032,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xcc,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3b2, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2042,7 +2042,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xcd,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3b3, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2052,7 +2052,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xce,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3b4, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2062,7 +2062,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xcf,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3b5, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2072,7 +2072,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xd0,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3b6, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2082,7 +2082,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xd1,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3b7, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2092,7 +2092,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xd2,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3b8, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2102,7 +2102,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xd3,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3b9, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2112,7 +2112,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xd4,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3ba, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2122,7 +2122,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xd5,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x5,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x41c, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x7e,
@@ -2132,7 +2132,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xd6,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x34f, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2142,7 +2142,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xd7,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3bd, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2152,7 +2152,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xd8,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3be, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2162,7 +2162,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xd9,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3bf, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2172,7 +2172,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xda,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3c0, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2182,7 +2182,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xdb,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3c1, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2192,7 +2192,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xdc,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3c2, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2202,7 +2202,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xdd,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3c3, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2212,7 +2212,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xde,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3c4, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2222,7 +2222,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xdf,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x1a,  /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x1a,     /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x30b, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2232,7 +2232,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xe0,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3c4, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2242,7 +2242,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xe1,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3c7, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2252,7 +2252,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xe2,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3c8, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2262,7 +2262,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xe3,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3c9, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2272,7 +2272,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xe4,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3ca, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2282,7 +2282,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xe5,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3cb, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2292,7 +2292,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xe6,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3cc, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2302,7 +2302,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xe7,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0xa,
         /* STATUS% */ 0x28,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x360, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x74,
@@ -2312,7 +2312,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xe8,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3ce, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2322,7 +2322,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xe9,   /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x1e,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x1e,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x424,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2332,7 +2332,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xea,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3d0, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2342,7 +2342,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xeb,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3d1, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2352,7 +2352,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xec,   /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x19,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x19,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x486,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2362,7 +2362,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xed,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x20,
         /* STATUS% */ 0x28,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3d3, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2372,7 +2372,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xee,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3d4, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2382,7 +2382,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xef,   /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x14,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x14,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x486,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2392,7 +2392,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xf0,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3a3, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2402,7 +2402,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xf1,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2df, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2412,7 +2412,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xf2,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3d8, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2422,7 +2422,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xf3,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x14,  /* HEAL HI */ 0x1e,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3d9, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2432,7 +2432,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xf4,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3da, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2442,7 +2442,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xf5,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3db, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x53,
@@ -2452,7 +2452,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xf6,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3dc, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2462,7 +2462,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xf7,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3dd, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2472,7 +2472,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xf8,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3de, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2482,7 +2482,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xf9,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3df, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x53,
@@ -2492,7 +2492,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xfa,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3e0, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2502,7 +2502,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xfb,  /* PP COST */ 0x0, /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8, /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0, /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,    /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0, /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0, /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3e1, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0,
@@ -2512,7 +2512,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xfc,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3e2, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2522,7 +2522,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xfd,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3e3, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2532,7 +2532,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xfe,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x4,
-        /*  TARGET */ 0x7,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x7,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x2a,  /* HEAL HI */ 0x30,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x428, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x6c,
@@ -2542,7 +2542,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0xff,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x2f,  /* HEAL HI */ 0x35,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2fd, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x68,
@@ -2552,7 +2552,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x100, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3e6, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2562,7 +2562,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x101, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x3,   /* HEAL HI */ 0x5,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x326, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x0,
@@ -2572,7 +2572,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x102, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x1c,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x458, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x65,
@@ -2582,7 +2582,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x103, /* PP COST */ 0x0,   /* RECOLOR */ 0x0,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3e9, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2592,7 +2592,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x104,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x28,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x28,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2fc,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2602,7 +2602,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x105,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0xf,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0xf,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3eb,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2612,7 +2612,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x106, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3ec, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2622,7 +2622,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x107, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3ed, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2632,7 +2632,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x108, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3ee, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2642,7 +2642,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x109,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x6,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x1e,
+        /*  TARGET */ 0x6,       /* ATK MUL */ 0x1e,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x456,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2652,7 +2652,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x10a, /* PP COST */ 0x0,   /* RECOLOR */ 0x0,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x447, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2662,7 +2662,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x10b, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x4,
         /* STATUS% */ 0x19,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x30f, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x72,
@@ -2672,7 +2672,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x10c, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x3,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x9c,  /* HEAL HI */ 0xb4,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x379, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2682,7 +2682,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x10d, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x42c, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2692,7 +2692,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x10e,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x14,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x14,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e2,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2702,7 +2702,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x10f,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0xf,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0xf,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x455,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2712,7 +2712,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x110, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0xa,
         /* STATUS% */ 0x14,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3f6, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2722,7 +2722,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x111, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x1d,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3f7, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2732,7 +2732,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x112, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3f8, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2742,7 +2742,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x113,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x19,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x19,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e0,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2752,7 +2752,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x114, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x4,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x4e,  /* HEAL HI */ 0x54,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x44e, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2762,7 +2762,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x115, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x3,
         /* STATUS% */ 0x50,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x30a, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x69,
@@ -2772,7 +2772,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x116, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x426, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2782,7 +2782,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x117, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x14,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x14,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e0, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2792,7 +2792,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x118,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x28,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x28,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2df,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2802,7 +2802,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x119, /* PP COST */ 0x0,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x400, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2812,7 +2812,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x11a, /* PP COST */ 0x0,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x401, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2822,7 +2822,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x11b, /* PP COST */ 0x0,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x402, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2832,7 +2832,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x11c, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x4,
-        /*  TARGET */ 0x7,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x7,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x8a,  /* HEAL HI */ 0x9d,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x41a, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x93,
@@ -2842,7 +2842,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x11d, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x404, /* DIMMING */ 0x0,   /*  SEQ NO */ 0xb4,
@@ -2852,7 +2852,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x11e, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x405, /* DIMMING */ 0x0,   /*  SEQ NO */ 0xb4,
@@ -2862,7 +2862,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x11f, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x419, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2872,7 +2872,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x120, /* PP COST */ 0xa,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x4,
         /* STATUS% */ 0x50,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x41b, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x5a,
@@ -2882,7 +2882,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x121,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x1e,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x1e,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x418,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2892,7 +2892,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x122,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x3,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0xd,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0xd,       /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x1,
         /*  MSG NO */ 0x408,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x1c,
@@ -2902,7 +2902,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x123,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x1,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x1,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x407,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2912,7 +2912,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x124,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x14,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x14,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x409,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2922,7 +2922,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x125,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x14,
+        /*  TARGET */ 0x3,       /* ATK MUL */ 0x14,
         /* HEAL LO */ 0x1,    /* HEAL HI */ 0x1,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x40a,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2932,7 +2932,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x126,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x14,
+        /*  TARGET */ 0x3,       /* ATK MUL */ 0x14,
         /* HEAL LO */ 0x1,    /* HEAL HI */ 0x1,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x40b,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2942,7 +2942,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x127,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x14,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x14,
         /* HEAL LO */ 0x1,    /* HEAL HI */ 0x1,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x413,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2952,7 +2952,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x128,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x28,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x28,
         /* HEAL LO */ 0x1,    /* HEAL HI */ 0x1,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x415,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2962,7 +2962,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x129, /* PP COST */ 0x0,   /* RECOLOR */ 0x0,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x4,
-        /*  TARGET */ 0x7,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x7,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x128, /* HEAL HI */ 0x15a, /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x355, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x7b,
@@ -2972,7 +2972,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x12a, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3a3, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2982,7 +2982,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x12b, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3a3, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -2992,7 +2992,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x12c,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x19,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x19,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e6,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3002,7 +3002,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x12d,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x7,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x23,
+        /*  TARGET */ 0x7,       /* ATK MUL */ 0x23,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x324,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3012,7 +3012,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x12e, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x39f, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3022,7 +3022,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x12f, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3a1, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3032,7 +3032,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x130,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0xf,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0xf,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e2,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3042,7 +3042,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x131,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x19,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x19,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2f9,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3052,7 +3052,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x132, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x1,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x26,  /* HEAL HI */ 0x2a,  /*  STATUS */ 0x9,
         /* STATUS% */ 0xa,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x335, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x88,
@@ -3062,7 +3062,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x133, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x12,
         /* STATUS% */ 0x55,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x36b, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x79,
@@ -3072,7 +3072,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x134, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x1,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x3,   /* HEAL HI */ 0x5,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x334, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x4f,
@@ -3082,7 +3082,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x135,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x1e,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x1e,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3f5,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3092,7 +3092,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x136, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3e6, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3102,7 +3102,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x137, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3f3, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3112,7 +3112,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x138, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3f4, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3122,7 +3122,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x139,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0xf,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0xf,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x457,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3132,7 +3132,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x13a, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x1b,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3d2, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3142,7 +3142,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x13b,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x1e,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x1e,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x300,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3152,7 +3152,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x13c,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0xa,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0xa,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x323,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3162,7 +3162,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x13d, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3f1, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3172,7 +3172,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x13e,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x1e,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x1e,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x452,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3182,7 +3182,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x13f, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x300, /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x1,   /* HEAL HI */ 0x2,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x453, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3192,7 +3192,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x140,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0xf,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0xf,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e2,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3202,7 +3202,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x141, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x32,  /* HEAL HI */ 0x38,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x331, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x8a,
@@ -3212,7 +3212,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x142,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0xa,
         /* STATUS% */ 0x1e,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x35c,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3222,7 +3222,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x143, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3bb, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3232,7 +3232,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x144, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3cf, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3242,7 +3242,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x145,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x14,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x14,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2f5,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3252,7 +3252,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x146,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x1e,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x1e,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2fc,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3262,7 +3262,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x147,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x32,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x32,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x322,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3272,7 +3272,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x148, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3ba, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3282,7 +3282,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x149, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3ef, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3292,7 +3292,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x14a, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3f0, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3302,7 +3302,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x14b,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0xf,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0xf,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e0,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3312,7 +3312,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x14c, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0xa,   /* HEAL HI */ 0xf,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x330, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x74,
@@ -3322,7 +3322,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x14d, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3a9, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3332,7 +3332,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x14e,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x19,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x19,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e0,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3342,7 +3342,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x14f, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x3,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x94,  /* HEAL HI */ 0x9e,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x40c, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3352,7 +3352,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x150, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x20,
         /* STATUS% */ 0x46,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3d3, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3362,7 +3362,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x151, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x23,  /* HEAL HI */ 0x2d,  /*  STATUS */ 0x1,
         /* STATUS% */ 0x1e,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3fc, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x73,
@@ -3372,7 +3372,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x152,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x14,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x14,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2fb,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3382,7 +3382,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x153, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x4,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x28,  /* HEAL HI */ 0x2d,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x301, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x8b,
@@ -3392,7 +3392,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x154, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x5,
         /* STATUS% */ 0x46,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x316, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x6f,
@@ -3402,7 +3402,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x155,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x7,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x19,
+        /*  TARGET */ 0x7,       /* ATK MUL */ 0x19,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x325,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3412,7 +3412,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x156, /* PP COST */ 0x0,   /* RECOLOR */ 0x0,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2df, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3422,7 +3422,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x157, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3f2, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3432,7 +3432,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x158, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x34e, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3442,7 +3442,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x159, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x34b, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3452,7 +3452,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x15a, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x11,  /* HEAL HI */ 0x15,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3fd, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x6b,
@@ -3462,7 +3462,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x15b,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x1e,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x1e,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e0,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3472,7 +3472,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x15c, /* PP COST */ 0x6,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x3,
         /* STATUS% */ 0x46,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x30d, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x5b,
@@ -3482,7 +3482,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x15d,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x24,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x23,
+        /*  TARGET */ 0x24,      /* ATK MUL */ 0x23,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x406,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3492,7 +3492,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x15e,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x25,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x1e,
+        /*  TARGET */ 0x25,      /* ATK MUL */ 0x1e,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x406,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3502,7 +3502,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x15f,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x6,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x14,
+        /*  TARGET */ 0x6,       /* ATK MUL */ 0x14,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x407,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3512,7 +3512,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x160, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x48,  /* HEAL HI */ 0x4e,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2fd, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x68,
@@ -3522,7 +3522,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x161, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x4c,  /* HEAL HI */ 0x54,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x330, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x74,
@@ -3532,7 +3532,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x162,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x19,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x19,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e1,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3542,7 +3542,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x163, /* PP COST */ 0x1e,  /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x4,
         /* STATUS% */ 0x28,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x466, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x5a,
@@ -3552,7 +3552,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x164, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x485, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3562,7 +3562,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x165, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x7,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x28,
+        /*  TARGET */ 0x7,      /* ATK MUL */ 0x28,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x46e, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3572,7 +3572,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x166, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x46f, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3582,7 +3582,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x167,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x19,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x19,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x40e,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3592,7 +3592,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x168,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x19,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x19,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x40f,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3602,7 +3602,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x169, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x410, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3612,7 +3612,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x16a, /* PP COST */ 0x0,   /* RECOLOR */ 0x0,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x411, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3622,7 +3622,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x16b, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x3c,  /* HEAL HI */ 0x3e,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3c5, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3632,7 +3632,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x16c,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x1e,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x1e,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2ea,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3642,7 +3642,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x16d,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x1e,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x1e,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e3,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3652,7 +3652,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x16e, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x7,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x28,
+        /*  TARGET */ 0x7,      /* ATK MUL */ 0x28,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x325, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3662,7 +3662,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x16f,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x28,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x28,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x415,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3672,7 +3672,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x170, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x3,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x84,  /* HEAL HI */ 0x89,  /*  STATUS */ 0x2,
         /* STATUS% */ 0x3,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x403, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x8e,
@@ -3682,7 +3682,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x171, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x3,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x64,  /* HEAL HI */ 0x64,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3e4, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x8c,
@@ -3692,7 +3692,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x172, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3e5, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x8d,
@@ -3702,7 +3702,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x173,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x6,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x1e,
+        /*  TARGET */ 0x6,       /* ATK MUL */ 0x1e,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x420,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3712,7 +3712,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x174,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x19,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x19,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x421,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3722,7 +3722,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x175,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x6,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0xa,
+        /*  TARGET */ 0x6,       /* ATK MUL */ 0xa,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3e7,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3732,7 +3732,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x176,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x28,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x28,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x41d,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3742,7 +3742,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x177, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x7,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0xf,
+        /*  TARGET */ 0x7,      /* ATK MUL */ 0xf,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x48e, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3752,7 +3752,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x178, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x7,
         /* STATUS% */ 0x55,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x41e, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x6e,
@@ -3762,7 +3762,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x179, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x1b,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x41f, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x46,
@@ -3772,7 +3772,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x17a, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x1d,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x41f, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x46,
@@ -3782,7 +3782,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x17b, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x3,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x12c, /* HEAL HI */ 0x140, /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x41f, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x46,
@@ -3792,7 +3792,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x17c,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x23,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x23,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e2,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3802,7 +3802,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x17d, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x1,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x2a,  /* HEAL HI */ 0x2f,  /*  STATUS */ 0x9,
         /* STATUS% */ 0x7,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x334, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x4f,
@@ -3812,7 +3812,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x17e,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x1e,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x1e,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2ef,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3822,7 +3822,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x17f,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x1e,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x1e,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x463,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3832,7 +3832,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x180,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,       /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x462,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3842,7 +3842,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x181,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,       /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x49d,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3852,7 +3852,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x182,  /* PP COST */ 0x0,   /* RECOLOR */ 0x0,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,       /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x49e,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3862,7 +3862,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x183, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x7,
         /* STATUS% */ 0x50,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x364, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x6f,
@@ -3872,7 +3872,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x184,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,       /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x459,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3882,7 +3882,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x185,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,       /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x45a,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3892,7 +3892,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x186,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x1e,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x1e,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x2,
         /* STATUS% */ 0x3,    /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x427,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3902,7 +3902,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x187, /* PP COST */ 0x0,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x2,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0xf2,  /* HEAL HI */ 0x100, /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x348, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x54,
@@ -3912,7 +3912,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x188, /* PP COST */ 0x0, /* RECOLOR */ 0x0,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8, /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0, /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,    /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0, /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0, /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4e2, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0,
@@ -3922,7 +3922,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x189, /* PP COST */ 0x0, /* RECOLOR */ 0x0,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8, /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0, /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,    /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0, /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0, /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4e6, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0,
@@ -3932,7 +3932,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x18a,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x1,    /* HEAL HI */ 0x2,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e0,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3942,7 +3942,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x18b, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4e7, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3952,7 +3952,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x18c, /* PP COST */ 0x0,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4e9, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x0,
@@ -3962,7 +3962,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x18d, /* PP COST */ 0x0,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x2,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0xf2,  /* HEAL HI */ 0x100, /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x348, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x54,
@@ -3972,7 +3972,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x18e, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x44d, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x6f,
@@ -3982,7 +3982,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x18f, /* PP COST */ 0x0,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x17,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x391, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -3992,7 +3992,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x190, /* PP COST */ 0x0,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0xe,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0xe,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x17,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x392, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4002,7 +4002,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x191, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x474, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4012,7 +4012,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x192,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x1e,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x1e,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2eb,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4022,7 +4022,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x193, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x50,  /* HEAL HI */ 0x57,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2fd, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x67,
@@ -4032,7 +4032,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x194, /* PP COST */ 0x50,  /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x2,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x154, /* HEAL HI */ 0x168, /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x496, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x54,
@@ -4042,7 +4042,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x195, /* PP COST */ 0x28,  /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x2,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0xb2,  /* HEAL HI */ 0xba,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4f1, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x54,
@@ -4052,7 +4052,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x196, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x3,
-        /*  TARGET */ 0x7,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x7,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x62,  /* HEAL HI */ 0x67,  /*  STATUS */ 0x2,
         /* STATUS% */ 0x3,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x442, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x52,
@@ -4062,7 +4062,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x197, /* PP COST */ 0xa,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x2,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x55,  /* HEAL HI */ 0x58,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4ef, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x54,
@@ -4072,7 +4072,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x198, /* PP COST */ 0x14,  /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x2,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x6d,  /* HEAL HI */ 0x79,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4f0, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x54,
@@ -4082,7 +4082,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x199, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x3,
-        /*  TARGET */ 0x7,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x7,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x10,  /* HEAL HI */ 0x16,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x442, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x52,
@@ -4092,7 +4092,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x19a, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2df, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4102,7 +4102,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x19b, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x4,
-        /*  TARGET */ 0x7,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x7,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x112, /* HEAL HI */ 0x11f, /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x346, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x7b,
@@ -4112,7 +4112,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x19c, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x4,
-        /*  TARGET */ 0x7,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x7,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x140, /* HEAL HI */ 0x154, /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x347, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x7b,
@@ -4122,7 +4122,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x19d, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x3,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0xd,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0xd,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0xc8,  /* HEAL HI */ 0xfa,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x37d, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4132,7 +4132,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x19e, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x475, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4142,7 +4142,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x19f,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x28,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x28,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x6,
         /* STATUS% */ 0x1e,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x443,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4152,7 +4152,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1a0, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x3c,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x3c,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e5, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4162,7 +4162,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1a1, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x4,
-        /*  TARGET */ 0x7,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x7,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x70,  /* HEAL HI */ 0x7c,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x41a, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x93,
@@ -4172,7 +4172,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1a2, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x3,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x49,  /* HEAL HI */ 0x56,  /*  STATUS */ 0x2,
         /* STATUS% */ 0x3,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x442, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x52,
@@ -4182,7 +4182,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1a3, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x1,
         /* STATUS% */ 0x3c,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x304, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x6e,
@@ -4192,7 +4192,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1a4,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,       /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x64,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x422,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x65,
@@ -4202,7 +4202,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1a5,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,       /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x17,
         /* STATUS% */ 0x64,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3cd,  /* DIMMING */ 0x1,   /*  SEQ NO */ 0x34,
@@ -4212,7 +4212,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1a6, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0xa7,  /* HEAL HI */ 0xb6,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x444, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x8f,
@@ -4222,7 +4222,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1a7, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x446, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4232,7 +4232,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1a8, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x3,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x237, /* HEAL HI */ 0x248, /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x445, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x57,
@@ -4242,7 +4242,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1a9, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x1a,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x48f, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x3a,
@@ -4252,7 +4252,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1aa,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x32,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x32,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4ee,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4262,7 +4262,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1ab, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x44d, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x6f,
@@ -4272,7 +4272,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1ac, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x5,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x36d, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x79,
@@ -4282,7 +4282,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1ad, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x448, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4292,7 +4292,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1ae, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x449, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4302,7 +4302,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1af, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x44a, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4312,7 +4312,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1b0, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x44b, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4322,7 +4322,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1b1, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x44c, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4332,7 +4332,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1b2, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0xc,   /* HEAL HI */ 0x10,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x356, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4342,7 +4342,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1b3,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x4,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x14,
+        /*  TARGET */ 0x4,       /* ATK MUL */ 0x14,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x454,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4352,7 +4352,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1b4,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x4,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x14,
+        /*  TARGET */ 0x4,       /* ATK MUL */ 0x14,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x454,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4362,7 +4362,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1b5,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x14,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x14,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2df,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4372,7 +4372,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1b6,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x15,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0xc,
+        /*  TARGET */ 0x15,      /* ATK MUL */ 0xc,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e0,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4382,7 +4382,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1b7,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x15,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x1c,
+        /*  TARGET */ 0x15,      /* ATK MUL */ 0x1c,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e0,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4392,7 +4392,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1b8,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x15,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x20,
+        /*  TARGET */ 0x15,      /* ATK MUL */ 0x20,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e0,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4402,7 +4402,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1b9,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x28,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x28,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4ed,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4412,7 +4412,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1ba, /* PP COST */ 0x0,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x2,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x8c,  /* HEAL HI */ 0x96,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4ef, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x91,
@@ -4422,7 +4422,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1bb, /* PP COST */ 0x0,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x2,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0xdc,  /* HEAL HI */ 0xf0,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4f0, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x91,
@@ -4432,7 +4432,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1bc, /* PP COST */ 0x0,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x2,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x12c, /* HEAL HI */ 0x140, /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4f1, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x91,
@@ -4442,7 +4442,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1bd, /* PP COST */ 0x0,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x2,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x280, /* HEAL HI */ 0x28a, /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4f2, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x91,
@@ -4452,7 +4452,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1be,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x19,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x19,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4a5,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4462,7 +4462,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1bf,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x28,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x28,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4a5,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4472,7 +4472,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1c0,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x28,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x28,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4a6,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4482,7 +4482,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1c1,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x8,
         /* STATUS% */ 0x32,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4a7,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4492,7 +4492,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1c2, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x4,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x8a,  /* HEAL HI */ 0x9d,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4a5, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x93,
@@ -4502,7 +4502,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1c3, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x4,
-        /*  TARGET */ 0x7,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x7,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x8a,  /* HEAL HI */ 0x9d,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4a5, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x93,
@@ -4512,7 +4512,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1c4,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x19,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x19,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4a5,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4522,7 +4522,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1c5, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x1,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x2e,  /* HEAL HI */ 0x32,  /*  STATUS */ 0x9,
         /* STATUS% */ 0xa,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4a8, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x4f,
@@ -4532,7 +4532,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1c6, /* PP COST */ 0x12,  /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x3,
         /* STATUS% */ 0x3c,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4a7, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x5b,
@@ -4542,7 +4542,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1c7, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x23,  /* HEAL HI */ 0x2d,  /*  STATUS */ 0x1,
         /* STATUS% */ 0x1e,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4a8, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x73,
@@ -4552,7 +4552,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1c8,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,       /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x1,
         /* STATUS% */ 0x64,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4f0,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4562,7 +4562,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1c9,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,       /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x2,
         /* STATUS% */ 0x64,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4f1,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4572,7 +4572,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1ca,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,       /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x3,
         /* STATUS% */ 0x64,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4f2,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4582,7 +4582,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1cb,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,       /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x5,
         /* STATUS% */ 0x64,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4f3,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4592,7 +4592,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1cc,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,       /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x4,
         /* STATUS% */ 0x64,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4f4,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4602,7 +4602,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1cd,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x14,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x14,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x1,
         /* STATUS% */ 0x32,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x491,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4612,7 +4612,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1ce, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x460, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4622,7 +4622,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1cf, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x461, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4632,7 +4632,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1d0, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3b3, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4642,7 +4642,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1d1,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x1e,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x1e,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e2,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4652,7 +4652,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1d2, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x464, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4662,7 +4662,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1d3, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x48b, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4672,7 +4672,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1d4, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x6,
         /* STATUS% */ 0x1e,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x48c, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x6f,
@@ -4682,7 +4682,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1d5,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x19,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x19,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x490,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4692,7 +4692,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1d6, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x1,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x52,  /* HEAL HI */ 0x69,  /*  STATUS */ 0x9,
         /* STATUS% */ 0x8,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x349, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x89,
@@ -4702,7 +4702,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1d7, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x3,
-        /*  TARGET */ 0x6,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x6,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0xfa,  /* HEAL HI */ 0x10e, /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x442, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x52,
@@ -4712,7 +4712,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1d8,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x19,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x19,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x6,
         /* STATUS% */ 0xf,    /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x443,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4722,7 +4722,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1d9, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x1,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x1d,  /* HEAL HI */ 0x21,  /*  STATUS */ 0x9,
         /* STATUS% */ 0x8,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x334, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x4f,
@@ -4732,7 +4732,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1da,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x28,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x28,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3f5,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4742,7 +4742,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1db,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x1e,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x1e,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x6,
         /* STATUS% */ 0x1e,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x443,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4752,7 +4752,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1dc,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x28,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x28,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2fc,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4762,7 +4762,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1dd, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x5,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x5,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x375, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4772,7 +4772,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1de, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x12,
         /* STATUS% */ 0x46,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x363, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x79,
@@ -4782,7 +4782,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1df,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x376,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4792,7 +4792,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1e0, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x31,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x489, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4802,7 +4802,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1e1, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x6,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x23,
+        /*  TARGET */ 0x6,      /* ATK MUL */ 0x23,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x425, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4812,7 +4812,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1e2, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x3,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x98,  /* HEAL HI */ 0xa3,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x48a, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4822,7 +4822,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1e3,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x1e,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x1e,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x6,
         /* STATUS% */ 0x1e,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x443,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4832,7 +4832,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1e4,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x28,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x28,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2fc,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4842,7 +4842,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1e5, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x5,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x5,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x375, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4852,7 +4852,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1e6, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x12,
         /* STATUS% */ 0x46,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x363, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x79,
@@ -4862,7 +4862,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1e7, /* PP COST */ 0x0,   /* RECOLOR */ 0x0,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x423, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x7f,
@@ -4872,7 +4872,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1e8,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x7,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x28,
+        /*  TARGET */ 0x7,       /* ATK MUL */ 0x28,
         /* HEAL LO */ 0x1,    /* HEAL HI */ 0x1,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x48d,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4882,7 +4882,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1e9,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x6,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x28,
+        /*  TARGET */ 0x6,       /* ATK MUL */ 0x28,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2ed,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4892,7 +4892,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1ea,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x1e,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x1e,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2f8,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4902,7 +4902,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1eb, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x32,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x32,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x324, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4912,7 +4912,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1ec, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x12,
         /* STATUS% */ 0x50,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x36b, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x79,
@@ -4922,7 +4922,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1ed,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x2d,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x2d,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2fb,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4932,7 +4932,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1ee, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x1e,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x1e,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0xa,
         /* STATUS% */ 0xa,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x465, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4942,7 +4942,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1ef, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x4,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x78,  /* HEAL HI */ 0x84,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x461, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x93,
@@ -4952,7 +4952,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1f0, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x6,
         /* STATUS% */ 0x5a,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x48c, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x6f,
@@ -4962,7 +4962,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1f1, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x4,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x8,
         /* STATUS% */ 0x5a,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x467, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -4972,7 +4972,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1f2, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x7,
         /* STATUS% */ 0x50,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x364, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x6f,
@@ -4982,7 +4982,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1f3, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x5,
         /* STATUS% */ 0x32,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x471, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x7e,
@@ -4992,7 +4992,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1f4, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x470, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5002,7 +5002,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1f5, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x3,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x238, /* HEAL HI */ 0x246, /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x46c, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5012,7 +5012,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1f6, /* PP COST */ 0x14,  /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x2,   /* ELEMENT */ 0x1,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0xa2,  /* HEAL HI */ 0xac,  /*  STATUS */ 0x9,
         /* STATUS% */ 0xa,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x338, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x4f,
@@ -5022,7 +5022,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1f7, /* PP COST */ 0x12,  /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x2,   /* ELEMENT */ 0x2,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0xa8,  /* HEAL HI */ 0xb7,  /*  STATUS */ 0xa,
         /* STATUS% */ 0x8,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x33c, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x50,
@@ -5032,7 +5032,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1f8, /* PP COST */ 0xc,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x2,   /* ELEMENT */ 0x1,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x49,  /* HEAL HI */ 0x54,  /*  STATUS */ 0x9,
         /* STATUS% */ 0xa,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x337, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x4f,
@@ -5042,7 +5042,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1f9, /* PP COST */ 0x5,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x2,   /* ELEMENT */ 0x2,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x7c,  /* HEAL HI */ 0x84,  /*  STATUS */ 0xa,
         /* STATUS% */ 0x8,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x33b, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x50,
@@ -5052,7 +5052,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1fa, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x429, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5062,7 +5062,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1fb, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4e3, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5072,7 +5072,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1fc, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4e4, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5082,7 +5082,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1fd, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4e5, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5092,7 +5092,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1fe, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x18,  /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x18,     /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3db, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5102,7 +5102,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x1ff, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x1a,  /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x1a,     /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3db, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5112,7 +5112,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x200, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x19,  /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x19,     /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3db, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5122,7 +5122,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x201, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x1b,  /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x1b,     /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3db, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5132,7 +5132,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x202, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x4,
-        /*  TARGET */ 0x18,  /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x18,     /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x104, /* HEAL HI */ 0x118, /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x346, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x7b,
@@ -5142,7 +5142,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x203, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x4,
-        /*  TARGET */ 0x1a,  /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x1a,     /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x104, /* HEAL HI */ 0x118, /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x346, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x7b,
@@ -5152,7 +5152,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x204, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x4,
-        /*  TARGET */ 0x19,  /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x19,     /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x104, /* HEAL HI */ 0x118, /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x346, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x7b,
@@ -5162,7 +5162,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x205, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x4,
-        /*  TARGET */ 0x1b,  /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x1b,     /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x104, /* HEAL HI */ 0x118, /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x346, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x7b,
@@ -5172,7 +5172,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x206, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x44a, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5182,7 +5182,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x207, /* PP COST */ 0x5,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x4,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0xc,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0xc,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x32,  /* HEAL HI */ 0x46,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x37f, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x57,
@@ -5192,7 +5192,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x208, /* PP COST */ 0x4,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0xf,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0xf,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x383, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x58,
@@ -5202,7 +5202,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x209, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x319, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5212,7 +5212,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x20a, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x4,
         /* STATUS% */ 0x32,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x30f, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x72,
@@ -5222,7 +5222,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x20b, /* PP COST */ 0x0,   /* RECOLOR */ 0x0,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x397, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5232,7 +5232,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x20c, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3c4, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5242,7 +5242,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x20d, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x492, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5252,7 +5252,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x20e,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,       /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3a3,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5262,7 +5262,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x20f,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x7,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x1e,
+        /*  TARGET */ 0x7,       /* ATK MUL */ 0x1e,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3fb,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5272,7 +5272,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x210, /* PP COST */ 0x0,   /* RECOLOR */ 0x0,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x4,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x4e,  /* HEAL HI */ 0x56,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x448, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x7b,
@@ -5282,7 +5282,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x211,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x19,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x19,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x417,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5292,7 +5292,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x212, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x7,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x7,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x4c,  /* HEAL HI */ 0x54,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3fb, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x6a,
@@ -5302,7 +5302,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x213,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x1e,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x1e,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e0,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5312,7 +5312,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x214, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x54,  /* HEAL HI */ 0x59,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x332, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x78,
@@ -5322,7 +5322,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x215, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x4,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x285, /* HEAL HI */ 0x2b1, /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x49b, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x78,
@@ -5332,7 +5332,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x216,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0xa,
         /* STATUS% */ 0x28,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x35c,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5342,7 +5342,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x217, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x3,
         /* STATUS% */ 0x1e,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x49c, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x5b,
@@ -5352,7 +5352,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x218, /* PP COST */ 0x5,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x2,   /* ELEMENT */ 0x2,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x1a,  /* HEAL HI */ 0x23,  /*  STATUS */ 0xa,
         /* STATUS% */ 0x8,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x33a, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x50,
@@ -5362,7 +5362,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x219,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x19,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x19,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x45c,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5372,7 +5372,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x21a,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x1e,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x1e,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x45d,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5382,7 +5382,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x21b, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4a0, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5392,7 +5392,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x21c, /* PP COST */ 0x0, /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8, /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0, /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,    /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0, /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0, /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4a1, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0,
@@ -5402,7 +5402,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x21d, /* PP COST */ 0x0, /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8, /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0, /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,    /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0, /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0, /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4a2, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0,
@@ -5412,7 +5412,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x21e, /* PP COST */ 0x0, /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8, /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0, /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,    /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0, /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0, /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4a3, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0,
@@ -5422,7 +5422,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x21f, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4a4, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5432,7 +5432,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x220, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x3,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x121, /* HEAL HI */ 0x144, /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x40c, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x57,
@@ -5442,7 +5442,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x221,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x7,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x28,
+        /*  TARGET */ 0x7,       /* ATK MUL */ 0x28,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x45e,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5452,7 +5452,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x222,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x14,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x14,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x1,
         /*  MSG NO */ 0x2e2,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5462,7 +5462,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x223, /* PP COST */ 0x28,  /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x2,   /* ELEMENT */ 0x1,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x106, /* HEAL HI */ 0x118, /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x348, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x54,
@@ -5472,7 +5472,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x224, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x7,
         /* STATUS% */ 0x3c,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x31d, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x94,
@@ -5482,7 +5482,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x225, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x23,  /* HEAL HI */ 0x2a,  /*  STATUS */ 0x1,
         /* STATUS% */ 0xf,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x476, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x73,
@@ -5492,7 +5492,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x226,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,       /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x6,
         /* STATUS% */ 0x32,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4f5,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5502,7 +5502,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x227,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,       /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x7,
         /* STATUS% */ 0x64,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4f6,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5512,7 +5512,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x228,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,       /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x8,
         /* STATUS% */ 0x64,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4f7,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5522,7 +5522,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x229,  /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x5,
         /* STATUS% */ 0x4b,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4aa,  /* DIMMING */ 0x1,   /*  SEQ NO */ 0x73,
@@ -5532,7 +5532,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x22a, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x4,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x4e,  /* HEAL HI */ 0x5c,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4b7, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x6c,
@@ -5542,7 +5542,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x22b,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x7,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x32,
+        /*  TARGET */ 0x7,       /* ATK MUL */ 0x32,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x477,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5552,7 +5552,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x22c, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x48,  /* HEAL HI */ 0x52,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x422, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5562,7 +5562,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x22d, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x5,
         /* STATUS% */ 0x50,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4ac, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5572,7 +5572,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x22e, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x12,
         /* STATUS% */ 0x5a,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4ad, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5582,7 +5582,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x22f, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x3,
-        /*  TARGET */ 0x7,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x7,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x25,  /* HEAL HI */ 0x2f,  /*  STATUS */ 0x2,
         /* STATUS% */ 0x5,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x33f, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x52,
@@ -5592,7 +5592,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x230, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x42b, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5602,7 +5602,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x231, /* PP COST */ 0x12,  /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0xe,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0xe,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x1d,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x38d, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x66,
@@ -5612,7 +5612,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x232, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x2,
         /* STATUS% */ 0x28,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x472, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5622,7 +5622,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x233, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x5,
         /* STATUS% */ 0x50,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x45f, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5632,7 +5632,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x234, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x3,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x64,  /* HEAL HI */ 0x64,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4ef, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x52,
@@ -5642,7 +5642,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x235, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0xe,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0xe,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x16,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x470, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x61,
@@ -5652,7 +5652,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x236, /* PP COST */ 0x0,   /* RECOLOR */ 0x0,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4b3, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5662,7 +5662,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x237, /* PP COST */ 0x0,   /* RECOLOR */ 0x0,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2df, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5672,7 +5672,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x238, /* PP COST */ 0x1c,  /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x2,   /* ELEMENT */ 0x2,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x140, /* HEAL HI */ 0x15e, /*  STATUS */ 0xa,
         /* STATUS% */ 0x8,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x33d, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x50,
@@ -5682,7 +5682,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x239, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x2a,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4ae, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x0,
@@ -5692,7 +5692,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x23a, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3c4, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5702,7 +5702,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x23b, /* PP COST */ 0x0, /* RECOLOR */ 0x0,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8, /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0, /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,    /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0, /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0, /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4b0, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0,
@@ -5712,7 +5712,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x23c, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4af, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5722,7 +5722,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x23d, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x118, /* HEAL HI */ 0x12c, /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4b3, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x55,
@@ -5732,7 +5732,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x23e,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x6,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x64,
+        /*  TARGET */ 0x6,       /* ATK MUL */ 0x64,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4b4,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5742,7 +5742,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x23f,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x1,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x64,
+        /*  TARGET */ 0x1,       /* ATK MUL */ 0x64,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4b5,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5752,7 +5752,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x240,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x1,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x64,
+        /*  TARGET */ 0x1,       /* ATK MUL */ 0x64,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4b5,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5762,7 +5762,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x241, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0xe,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0xe,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x19,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4b8, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x63,
@@ -5772,7 +5772,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x242, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x7,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x23,
+        /*  TARGET */ 0x7,      /* ATK MUL */ 0x23,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4bf, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x0,
@@ -5782,7 +5782,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x243, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4c0, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x7e,
@@ -5792,7 +5792,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x244, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x19,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x19,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e0, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5802,7 +5802,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x245, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x1e,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x1e,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e0, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5812,7 +5812,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x246, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x1,   /* ELEMENT */ 0x4,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x28,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x28,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e0, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x0,
@@ -5822,7 +5822,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x247, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x32,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x32,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e0, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x0,
@@ -5832,7 +5832,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x248,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0xf,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0xf,
+        /*  TARGET */ 0xf,       /* ATK MUL */ 0xf,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x409,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5842,7 +5842,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x249,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0xf,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x1e,
+        /*  TARGET */ 0xf,       /* ATK MUL */ 0x1e,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x418,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5852,7 +5852,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x24a,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x18,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x22,
+        /*  TARGET */ 0x18,      /* ATK MUL */ 0x22,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e2,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5862,7 +5862,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x24b,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x6,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x28,
+        /*  TARGET */ 0x6,       /* ATK MUL */ 0x28,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x47f,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5872,7 +5872,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x24c, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4c2, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5882,7 +5882,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x24d, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4c3, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5892,7 +5892,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x24e, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4c4, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5902,7 +5902,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x24f, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4c5, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5912,7 +5912,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x250, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4c6, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5922,7 +5922,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x251, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4c7, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5932,7 +5932,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x252, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x5,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4c8, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5942,7 +5942,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x253, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x4,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4c9, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5952,7 +5952,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x254, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4ca, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5962,7 +5962,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x255, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x7,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4cb, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5972,7 +5972,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x256, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x3,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4cc, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5982,7 +5982,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x257, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4cd, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -5992,7 +5992,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x258, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4ce, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -6002,7 +6002,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x259, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4cf, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -6012,7 +6012,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x25a, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4d0, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -6022,7 +6022,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x25b, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4d1, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -6032,7 +6032,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x25c, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4d2, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -6042,7 +6042,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x25d, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4d3, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -6052,7 +6052,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x25e, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4d4, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -6062,7 +6062,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x25f, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4d5, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -6072,7 +6072,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x260, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4d6, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -6082,7 +6082,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x261, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4d7, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -6092,7 +6092,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x262, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4d8, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -6102,7 +6102,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x263, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x4,
-        /*  TARGET */ 0x7,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x7,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x21,  /* HEAL HI */ 0x2a,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x41a, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x93,
@@ -6112,7 +6112,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x264, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x4,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x3c,  /* HEAL HI */ 0x46,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x301, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x8b,
@@ -6122,7 +6122,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x265,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x7,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x28,
+        /*  TARGET */ 0x7,       /* ATK MUL */ 0x28,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4d9,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -6132,7 +6132,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x266, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x5,
         /* STATUS% */ 0x3c,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4db, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x7e,
@@ -6142,7 +6142,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x267, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x4,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x91,  /* HEAL HI */ 0xa2,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4d9, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x6c,
@@ -6152,7 +6152,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x268, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x4,
-        /*  TARGET */ 0x7,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x7,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x91,  /* HEAL HI */ 0xa2,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4d9, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x93,
@@ -6162,7 +6162,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x269, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x4,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x91,  /* HEAL HI */ 0xa2,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4d9, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x6d,
@@ -6172,7 +6172,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x26a, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x2,
         /* STATUS% */ 0x28,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4da, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x76,
@@ -6182,7 +6182,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x26b, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x78,  /* HEAL HI */ 0x80,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4dc, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x0,
@@ -6192,7 +6192,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x26c, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3a3, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -6202,7 +6202,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x26d, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x3a3, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -6212,7 +6212,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x26e, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x64,  /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4ec, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x6f,
@@ -6222,7 +6222,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x26f, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4dd, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -6232,7 +6232,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x270, /* PP COST */ 0x0,   /* RECOLOR */ 0x48,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4de, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -6242,7 +6242,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x271,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x1e,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x1e,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x300,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -6252,7 +6252,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x272,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x6,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x14,
+        /*  TARGET */ 0x6,       /* ATK MUL */ 0x14,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x323,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -6262,7 +6262,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x273,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x28,
+        /*  TARGET */ 0x3,       /* ATK MUL */ 0x28,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x457,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -6272,7 +6272,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x274,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x1e,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x1e,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x452,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -6282,7 +6282,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x275, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0xa,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0xa,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x494, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -6292,7 +6292,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x276, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x1e,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x1e,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e0, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -6302,7 +6302,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x277, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x55,  /* HEAL HI */ 0x64,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e0, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x67,
@@ -6312,7 +6312,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x278, /* PP COST */ 0x0,   /* RECOLOR */ 0x47,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x6,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x344, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x53,
@@ -6322,7 +6322,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x279, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x1,   /* ELEMENT */ 0x3,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4df, /* DIMMING */ 0x0,   /*  SEQ NO */ 0xbe,
@@ -6332,7 +6332,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x27a, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x1,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x1,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4e0, /* DIMMING */ 0x0,   /*  SEQ NO */ 0xbe,
@@ -6342,7 +6342,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x27b, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x1e,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x1e,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2df, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -6352,7 +6352,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x27c, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x55,  /* HEAL HI */ 0x64,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2df, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x67,
@@ -6362,7 +6362,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x27d, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x55,  /* HEAL HI */ 0x64,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2df, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x67,
@@ -6372,7 +6372,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x27e, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x5,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x5,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e0, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -6382,7 +6382,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x27f, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x5,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0xc,   /* HEAL HI */ 0x12,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e0, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x67,
@@ -6392,7 +6392,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x280, /* PP COST */ 0x0, /* RECOLOR */ 0x0,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x8, /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x0,   /*    UNK1 */ 0x0, /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x0,    /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0, /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x2df, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0,
@@ -6402,7 +6402,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x281,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0xf,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0xf,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x2e0,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -6412,7 +6412,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x282,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x19,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x19,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x47c,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -6422,7 +6422,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x283, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x3,
-        /*  TARGET */ 0x7,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x7,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x30,  /* HEAL HI */ 0x36,  /*  STATUS */ 0x2,
         /* STATUS% */ 0x3,   /*  ACTION */ 0x1,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4bc, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x52,
@@ -6432,7 +6432,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x284, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x7,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x14,
+        /*  TARGET */ 0x7,      /* ATK MUL */ 0x14,
         /* HEAL LO */ 0x0,   /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4bb, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -6442,7 +6442,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x285,  /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0xffff, /*  EFFECT */ 0x1,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x5,    /*    UNK1 */ 0x0,   /* ATK MUL */ 0x23,
+        /*  TARGET */ 0x5,       /* ATK MUL */ 0x23,
         /* HEAL LO */ 0x0,    /* HEAL HI */ 0x0,   /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,    /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4b9,  /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -6452,7 +6452,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x286, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x70,  /* HEAL HI */ 0x7c,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x4ba, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x55,
@@ -6462,7 +6462,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     {
         /*      ID */ 0x287, /* PP COST */ 0x0,   /* RECOLOR */ 0x46,
         /* HAS SFX */ 0x0,   /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x3,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x3,      /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x11d, /* HEAL HI */ 0x131, /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x2,
         /*  MSG NO */ 0x444, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x0,
@@ -6471,7 +6471,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     },
     {
         /*      ID */ 0x0, /* PP COST */ 0x0, /* RECOLOR */ 0x0, /* HAS SFX */ 0x0,
-        /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x0, /*    UNK1 */ 0x0,
+        /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x0, 
         /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0, /*  STATUS */ 0x0,
         /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0, /*  MSG NO */ 0x0,
         /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0, /*   SOUND */ 0x0,
@@ -6479,7 +6479,7 @@ extern "C" const MonsterSkillData gMonsterSkillData[] = {
     },
     {
         /*      ID */ 0x0, /* PP COST */ 0x0, /* RECOLOR */ 0x0, /* HAS SFX */ 0x0,
-        /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x0, /*    UNK1 */ 0x0,
+        /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x0, 
         /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0, /*  STATUS */ 0x0,
         /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0, /*  MSG NO */ 0x0,
         /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0, /*   SOUND */ 0x0,

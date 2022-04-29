@@ -3,7 +3,7 @@
 const GuestSkillInfo gGuestSkillData[] = {
     {
         /*      ID */ 0x0,   /*  EFFECT */ 0x1, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0,   /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0,   /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x295, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0,   /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -11,7 +11,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x1,   /*  EFFECT */ 0x8, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0,   /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0,   /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x296, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x269, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -19,7 +19,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x2,   /*  EFFECT */ 0x8, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0,   /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0,   /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x297, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x269, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -27,7 +27,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x3,   /*  EFFECT */ 0x8, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0,   /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0,   /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x298, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x269, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -35,7 +35,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x4,   /*  EFFECT */ 0x8, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0,   /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0,   /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x299, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x269, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -43,7 +43,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x5,   /*  EFFECT */ 0x8, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0,   /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0,   /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x295, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0,   /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -51,7 +51,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x6,   /*  EFFECT */ 0x8, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0,   /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0,   /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x295, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0,   /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -59,7 +59,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x7,   /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0xf,
-        /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0, /* HEAL LO */ 0x2, /* HEAL HI */ 0x3,
+        /* ATK MUL */ 0x0,   /* HEAL LO */ 0x2, /* HEAL HI */ 0x3,
         /*  STATUS */ 0x0,   /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x29c, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x1,
         /*   SOUND */ 0x269, /*  MISS % */ 0x1, /* SMASH % */ 0x0, /* REDIR 1 */ 0x1,
@@ -67,7 +67,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x8,   /*  EFFECT */ 0x8, /* ELEMENT */ 0x0, /*  TARGET */ 0x17,
-        /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0,   /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0,   /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x29d, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x269, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -75,7 +75,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x9,   /*  EFFECT */ 0x3, /* ELEMENT */ 0x0, /*  TARGET */ 0x17,
-        /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0, /* HEAL LO */ 0x5, /* HEAL HI */ 0xa,
+        /* ATK MUL */ 0x0,   /* HEAL LO */ 0x5, /* HEAL HI */ 0xa,
         /*  STATUS */ 0x0,   /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x1,
         /*  MSG NO */ 0x29e, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x1a,
         /*   SOUND */ 0x269, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -83,7 +83,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0xa,   /*  EFFECT */ 0x8, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0,   /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0,   /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x295, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0,   /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -91,7 +91,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0xb,   /*  EFFECT */ 0x8, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0,   /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0,   /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x295, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0,   /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -99,23 +99,23 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0xc,   /*  EFFECT */ 0x8, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0,   /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0,   /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x295, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0,   /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
         /* REDIR 2 */ 0x0,
     },
     {
-        /*      ID */ 0xd,   /*  EFFECT */ 0x1,  /* ELEMENT */ 0x0, /*  TARGET */ 0xf,
-        /*    UNK1 */ 0x0,   /* ATK MUL */ 0x32, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
-        /*  STATUS */ 0x0,   /* STATUS% */ 0x0,  /*  ACTION */ 0x0, /*    PRIO */ 0x0,
-        /*  MSG NO */ 0x2a2, /* DIMMING */ 0x0,  /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x1,
-        /*   SOUND */ 0x269, /*  MISS % */ 0x1,  /* SMASH % */ 0x0, /* REDIR 1 */ 0x1,
+        /*      ID */ 0xd,   /*  EFFECT */ 0x1, /* ELEMENT */ 0x0, /*  TARGET */ 0xf,
+        /* ATK MUL */ 0x32,  /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /*  STATUS */ 0x0,   /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
+        /*  MSG NO */ 0x2a2, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x1,
+        /*   SOUND */ 0x269, /*  MISS % */ 0x1, /* SMASH % */ 0x0, /* REDIR 1 */ 0x1,
         /* REDIR 2 */ 0x0,
     },
     {
         /*      ID */ 0xe,   /*  EFFECT */ 0x8, /* ELEMENT */ 0x0, /*  TARGET */ 0x17,
-        /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0,   /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0,   /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x2a3, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x269, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -123,7 +123,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0xf,   /*  EFFECT */ 0x8, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0,   /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0,   /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x2a5, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x269, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -131,7 +131,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x10,  /*  EFFECT */ 0x3,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0x17,  /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0x17,  /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x14,  /* HEAL HI */ 0x1e,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x0,
         /*  MSG NO */ 0x2a4, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -140,7 +140,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x11,  /*  EFFECT */ 0x8, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0,   /* ATK MUL */ 0x8, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x8,   /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0,   /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x2a6, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x269, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -148,7 +148,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x12,  /*  EFFECT */ 0x8, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0,   /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0,   /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x2a7, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x269, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -156,23 +156,23 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x13,  /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x17,
-        /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0, /* HEAL LO */ 0x1, /* HEAL HI */ 0x1,
+        /* ATK MUL */ 0x0,   /* HEAL LO */ 0x1, /* HEAL HI */ 0x1,
         /*  STATUS */ 0x0,   /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x1,
         /*  MSG NO */ 0x2a8, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x1,
         /*   SOUND */ 0x269, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
         /* REDIR 2 */ 0x0,
     },
     {
-        /*      ID */ 0x14,  /*  EFFECT */ 0x1,  /* ELEMENT */ 0x0, /*  TARGET */ 0xf,
-        /*    UNK1 */ 0x0,   /* ATK MUL */ 0x32, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
-        /*  STATUS */ 0x0,   /* STATUS% */ 0x0,  /*  ACTION */ 0x0, /*    PRIO */ 0x0,
-        /*  MSG NO */ 0x2a9, /* DIMMING */ 0x0,  /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x1,
-        /*   SOUND */ 0x269, /*  MISS % */ 0x1,  /* SMASH % */ 0x0, /* REDIR 1 */ 0x1,
+        /*      ID */ 0x14,  /*  EFFECT */ 0x1, /* ELEMENT */ 0x0, /*  TARGET */ 0xf,
+        /* ATK MUL */ 0x32,  /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /*  STATUS */ 0x0,   /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
+        /*  MSG NO */ 0x2a9, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x1,
+        /*   SOUND */ 0x269, /*  MISS % */ 0x1, /* SMASH % */ 0x0, /* REDIR 1 */ 0x1,
         /* REDIR 2 */ 0x0,
     },
     {
         /*      ID */ 0x15,  /*  EFFECT */ 0x0,   /* ELEMENT */ 0x3,
-        /*  TARGET */ 0xe,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0xe,   /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x55,  /* HEAL HI */ 0x5f,  /*  STATUS */ 0x2,
         /* STATUS% */ 0x1e,  /*  ACTION */ 0x1,   /*    PRIO */ 0x0,
         /*  MSG NO */ 0x2aa, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x96,
@@ -181,7 +181,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x16,  /*  EFFECT */ 0x6,  /* ELEMENT */ 0x0, /*  TARGET */ 0xf,
-        /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,  /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0,   /* HEAL LO */ 0x0,  /* HEAL HI */ 0x0,
         /*  STATUS */ 0xa,   /* STATUS% */ 0x1e, /*  ACTION */ 0x1, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x2ab, /* DIMMING */ 0x0,  /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x269, /*  MISS % */ 0x0,  /* SMASH % */ 0x0, /* REDIR 1 */ 0x1,
@@ -189,7 +189,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x17,  /*  EFFECT */ 0x8, /* ELEMENT */ 0x0, /*  TARGET */ 0x19,
-        /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0,   /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0,   /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x3,
         /*  MSG NO */ 0x2ac, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x269, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -197,7 +197,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x18,  /*  EFFECT */ 0x8, /* ELEMENT */ 0x0, /*  TARGET */ 0x1a,
-        /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0,   /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0,   /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x3,
         /*  MSG NO */ 0x2ad, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x269, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -205,7 +205,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x19,  /*  EFFECT */ 0x0,   /* ELEMENT */ 0x0,
-        /*  TARGET */ 0xf,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0xf,   /* ATK MUL */ 0x0,
         /* HEAL LO */ 0x69,  /* HEAL HI */ 0x7d,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x0,
         /*  MSG NO */ 0x2ae, /* DIMMING */ 0x0,   /*  SEQ NO */ 0x0,
@@ -214,7 +214,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x1a,  /*  EFFECT */ 0x3, /* ELEMENT */ 0x0, /*  TARGET */ 0x5,
-        /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0, /* HEAL LO */ 0x5, /* HEAL HI */ 0xa,
+        /* ATK MUL */ 0x0,   /* HEAL LO */ 0x5, /* HEAL HI */ 0xa,
         /*  STATUS */ 0x0,   /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x2d2, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x1a,
         /*   SOUND */ 0x269, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -222,7 +222,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x1b,  /*  EFFECT */ 0x8, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0,   /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0,   /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x2d3, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0,   /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -230,31 +230,31 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x1c,  /*  EFFECT */ 0x8, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0,   /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0,   /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x2d4, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0,   /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
         /* REDIR 2 */ 0x0,
     },
     {
-        /*      ID */ 0x1d,  /*  EFFECT */ 0x1,  /* ELEMENT */ 0x0, /*  TARGET */ 0xf,
-        /*    UNK1 */ 0x0,   /* ATK MUL */ 0x28, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
-        /*  STATUS */ 0x0,   /* STATUS% */ 0x0,  /*  ACTION */ 0x0, /*    PRIO */ 0x3,
-        /*  MSG NO */ 0x2b1, /* DIMMING */ 0x0,  /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x1,
-        /*   SOUND */ 0x269, /*  MISS % */ 0x1,  /* SMASH % */ 0x0, /* REDIR 1 */ 0x1,
+        /*      ID */ 0x1d,  /*  EFFECT */ 0x1, /* ELEMENT */ 0x0, /*  TARGET */ 0xf,
+        /* ATK MUL */ 0x28,  /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /*  STATUS */ 0x0,   /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x3,
+        /*  MSG NO */ 0x2b1, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x1,
+        /*   SOUND */ 0x269, /*  MISS % */ 0x1, /* SMASH % */ 0x0, /* REDIR 1 */ 0x1,
         /* REDIR 2 */ 0x0,
     },
     {
-        /*      ID */ 0x1e,  /*  EFFECT */ 0x1,  /* ELEMENT */ 0x0, /*  TARGET */ 0xf,
-        /*    UNK1 */ 0x0,   /* ATK MUL */ 0x3c, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
-        /*  STATUS */ 0x0,   /* STATUS% */ 0x0,  /*  ACTION */ 0x0, /*    PRIO */ 0x3,
-        /*  MSG NO */ 0x2b2, /* DIMMING */ 0x0,  /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x1,
-        /*   SOUND */ 0x269, /*  MISS % */ 0x1,  /* SMASH % */ 0x0, /* REDIR 1 */ 0x1,
+        /*      ID */ 0x1e,  /*  EFFECT */ 0x1, /* ELEMENT */ 0x0, /*  TARGET */ 0xf,
+        /* ATK MUL */ 0x3c,  /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /*  STATUS */ 0x0,   /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x3,
+        /*  MSG NO */ 0x2b2, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x1,
+        /*   SOUND */ 0x269, /*  MISS % */ 0x1, /* SMASH % */ 0x0, /* REDIR 1 */ 0x1,
         /* REDIR 2 */ 0x0,
     },
     {
         /*      ID */ 0x1f,  /*  EFFECT */ 0x0,   /* ELEMENT */ 0x4,
-        /*  TARGET */ 0xe,   /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0,
+        /*  TARGET */ 0xe,   /* ATK MUL */ 0x0,
         /* HEAL LO */ 0xba,  /* HEAL HI */ 0xd6,  /*  STATUS */ 0x0,
         /* STATUS% */ 0x0,   /*  ACTION */ 0x0,   /*    PRIO */ 0x3,
         /*  MSG NO */ 0x2b3, /* DIMMING */ 0x1,   /*  SEQ NO */ 0x9a,
@@ -263,7 +263,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x20,  /*  EFFECT */ 0x8, /* ELEMENT */ 0x0, /*  TARGET */ 0x1c,
-        /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0,   /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0,   /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x3,
         /*  MSG NO */ 0x2b4, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x269, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -271,7 +271,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x21,  /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x1c,
-        /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0, /* HEAL LO */ 0x1, /* HEAL HI */ 0x1,
+        /* ATK MUL */ 0x0,   /* HEAL LO */ 0x1, /* HEAL HI */ 0x1,
         /*  STATUS */ 0x0,   /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x1,
         /*  MSG NO */ 0x2b5, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x269, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -279,7 +279,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x22,  /*  EFFECT */ 0x8, /* ELEMENT */ 0x0, /*  TARGET */ 0x1c,
-        /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0,   /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0,   /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x1,
         /*  MSG NO */ 0x2b6, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x269, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -287,7 +287,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x23,  /*  EFFECT */ 0x8, /* ELEMENT */ 0x0, /*  TARGET */ 0x1c,
-        /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0,   /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0,   /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x1,
         /*  MSG NO */ 0x2b7, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x269, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -295,7 +295,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x24,  /*  EFFECT */ 0x8, /* ELEMENT */ 0x0, /*  TARGET */ 0x1c,
-        /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0,   /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0,   /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x3,
         /*  MSG NO */ 0x295, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x269, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -303,7 +303,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x25,  /*  EFFECT */ 0x8, /* ELEMENT */ 0x0, /*  TARGET */ 0x1c,
-        /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0,   /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0,   /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x3,
         /*  MSG NO */ 0x2ce, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x269, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -311,7 +311,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x26,  /*  EFFECT */ 0x8, /* ELEMENT */ 0x0, /*  TARGET */ 0x1c,
-        /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0,   /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0,   /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x3,
         /*  MSG NO */ 0x2cf, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x269, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -319,7 +319,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x27,  /*  EFFECT */ 0x8, /* ELEMENT */ 0x0, /*  TARGET */ 0x1c,
-        /*    UNK1 */ 0x0,   /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0,   /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0,   /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x3,
         /*  MSG NO */ 0x2d0, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x269, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -327,7 +327,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x0, /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0, /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0, /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x0, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -335,7 +335,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x0, /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0, /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0, /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x0, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -343,7 +343,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x0, /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0, /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0, /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x0, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -351,7 +351,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x0, /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0, /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0, /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x0, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -359,7 +359,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x0, /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0, /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0, /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x0, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -367,7 +367,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x0, /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0, /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0, /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x0, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -375,7 +375,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x0, /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0, /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0, /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x0, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -383,7 +383,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x0, /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0, /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0, /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x0, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -391,7 +391,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x0, /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0, /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0, /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x0, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -399,7 +399,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x0, /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0, /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0, /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x0, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -407,7 +407,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x0, /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0, /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0, /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x0, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -415,7 +415,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x0, /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0, /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0, /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x0, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -423,7 +423,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x0, /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0, /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0, /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x0, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -431,7 +431,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x0, /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0, /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0, /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x0, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -439,7 +439,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x0, /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0, /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0, /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x0, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -447,7 +447,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x0, /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0, /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0, /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x0, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -455,7 +455,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x0, /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0, /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0, /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x0, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -463,7 +463,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x0, /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0, /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0, /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x0, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -471,7 +471,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x0, /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0, /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0, /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x0, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -479,7 +479,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x0, /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0, /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0, /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x0, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -487,7 +487,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x0, /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0, /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0, /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x0, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -495,7 +495,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x0, /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0, /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0, /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x0, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -503,7 +503,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x0, /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0, /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0, /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x0, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,
@@ -511,7 +511,7 @@ const GuestSkillInfo gGuestSkillData[] = {
     },
     {
         /*      ID */ 0x0, /*  EFFECT */ 0x0, /* ELEMENT */ 0x0, /*  TARGET */ 0x0,
-        /*    UNK1 */ 0x0, /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
+        /* ATK MUL */ 0x0, /* HEAL LO */ 0x0, /* HEAL HI */ 0x0,
         /*  STATUS */ 0x0, /* STATUS% */ 0x0, /*  ACTION */ 0x0, /*    PRIO */ 0x0,
         /*  MSG NO */ 0x0, /* DIMMING */ 0x0, /*  SEQ NO */ 0x0, /* SEQ NO2 */ 0x0,
         /*   SOUND */ 0x0, /*  MISS % */ 0x0, /* SMASH % */ 0x0, /* REDIR 1 */ 0x0,

@@ -10,7 +10,8 @@ void sub_0805C548(u8*, s32, bool8);
 
 u32 sub_0805C1A8(CharStats* ch, LevelStats* ls, s32 level);
 
-NONMATCH("asm/non_matching/common/sub_0805C114.inc", s32 sub_0805C114(s32 r0, s32 r1, s32 r2, s32 r3, s32 r4, s32 r5)) {
+NONMATCH("asm/non_matching/common/sub_0805C114.inc",
+         s32 sub_0805C114(s32 r0, s32 r1, s32 r2, s32 r3, s32 r4, s32 r5)) {
     u16 tmp;
     s32 tmp2;
 
@@ -172,8 +173,42 @@ bool8 sub_0805C58C(u8* ptr, s32 idx) {
     return false;
 }
 
-ASM_FUNC("asm/non_matching/common/sub_0805C5B8.inc", u8* sub_0805C5B8(u8* r0, CharStats* ch, u16 r2, u32 r3));
+ASM_FUNC("asm/non_matching/common/sub_0805C5B8.inc",
+         u8* sub_0805C5B8(u8* r0, CharStats* ch, u16 r2, u32 r3));
 
 void sub_0805C7F0(CharStats* ch, void* psi_data, CharStats* ch2) {
     ch2->curHP = ch2->maxHP;
+}
+
+void sub_0805C7F8(CharStats* ch, void* psi_data, CharStats* ch2) {
+    u16 i;
+    for (i = 1; i < 9; i++) {
+        u16 bit = (1 << (i - 1));
+        if (ch2->ailments & bit) {
+            ch2->ailments &= ~bit;
+            break;
+        }
+    }
+}
+
+void sub_0805C82C(CharStats* ch, void* psi_data, CharStats* ch2) {
+    u16 i;
+    for (i = 1; i < 9; i++) {
+        ch2->ailments &= ~(1 << (i - 1));
+    }
+}
+
+void sub_0805C850(CharStats* ch, void* psi_data, CharStats* ch2) {
+    if (ch2->curHP < 1) {
+        ch2->curHP = ch2->maxHP;
+    } else {
+        u16 i;
+        for (i = 1; i < 9; i++) {
+            ch2->ailments &= ~(1 << (i - 1));
+        }
+    }
+}
+
+void sub_0805C888(CharStats* ch, void* psi_data, CharStats* ch2) {
+    sub_0805C850(ch, psi_data, ch2);
 }
