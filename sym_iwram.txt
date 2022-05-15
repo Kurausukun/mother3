@@ -1,6 +1,4 @@
 . = 0x00000000; SoundMainRAM_Buffer = .;
-. = 0x00000000; gUnknown_03000000 = .;
-. = 0x00000001; gUnknown_03000001 = .;
 . = 0x00000008; gUnknown_03000008 = .;
 . = 0x00001B20; gSoundInfo = .;
 . = 0x00002AD0; gMPlayJumpTable = .;
