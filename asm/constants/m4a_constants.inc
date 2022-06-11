@@ -126,7 +126,7 @@
 	struct_field o_MusicPlayerTrack_ToneData_release, 1
 	struct_field o_MusicPlayerTrack_gap, 10
 	struct_field o_MusicPlayerTrack_unk_3A, 2
-	struct_field o_MusicPlayerTrack_unk_3C, 4
+	struct_field o_MusicPlayerTrack_unkmIQ, 4
 	struct_field o_MusicPlayerTrack_cmdPtr, 4
 	struct_field o_MusicPlayerTrack_patternStack, 12
 	struct_field MusicPlayerTrack_size, 0

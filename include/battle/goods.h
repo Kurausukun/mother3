@@ -66,27 +66,4 @@ public:
     u16 _4c;
 };
 
-struct GoodsInfo {
-    u8 item_id;
-    u32 item_type;
-    u8 key_item;
-    u16 sell_price;
-    u32 equip_flags;
-    s32 hp_mod;
-    s32 pp_mod;
-    s8 off_mod;
-    s8 def_mod;
-    s8 iq_mod;
-    s8 spd_mod;
-    s32 kindness_mod;
-    s16 ailment_resist[11];
-    s8 element_resist[5];
-    u8 attack_type[5];
-    MoveInfo action;
-    u8 _68;
-    u8 _69;
-    u8 consumable;
-};
-extern GoodsInfo gGoodsInfo[];
-
 #endif  // BATTLE_GOODS_H

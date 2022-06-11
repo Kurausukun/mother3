@@ -1,5 +1,6 @@
 #include "battle/goods.h"
 #include "battle/player.h"
+#include "structs.h"
 
 extern "C" void* get_misctext_msg(u32, u32);
 extern "C" u16 get_misctext_len(u32);

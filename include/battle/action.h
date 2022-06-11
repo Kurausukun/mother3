@@ -4,6 +4,7 @@
 #include "base.h"
 #include "battle/archive.h"
 #include "battle/unit.h"
+#include "structs.h"
 
 class Action : public Base {
 public:
@@ -94,29 +95,6 @@ public:
     Vector<Unit*> mNextTargets;
     u32 _40;
     u8 _44;
-};
-
-struct MoveInfo {
-    u32 effect;
-    u32 element;
-    u16 target;
-    u16 unk1;
-    u8 atk_mult;
-    u16 heal_lo;
-    u16 heal_hi;
-    u8 ailment;
-    u8 ailment_chance;
-    u8 action;
-    u32 priority;
-    u16 msg_no;
-    u8 has_dim;
-    u8 anim_no;
-    u8 anim_success;
-    u16 sfx_no;
-    u8 miss_chance;
-    u8 smash_chance;
-    u8 redirectable;
-    u8 redirectable2;
 };
 
 struct MonsterSkillData {

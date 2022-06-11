@@ -39,7 +39,7 @@ struct struct_020047E0 {
     u8 _5[5];
     u16 _a;
     u8 filler[0x30];
-    u8 _3c;
+    u8 mIQ;
 };
 extern struct_020047E0 gEncounter;
 
@@ -238,7 +238,7 @@ void sub_080003D8(void) {
 
 void sub_080004D8() {
     if (gEncounter._0 == 3) {
-        gEncounter._3c = 1;
+        gEncounter.mIQ = 1;
         sub_080037F0(0);
         sub_08026C28();
         gUnknown_02004848._0 = 5;
@@ -256,7 +256,7 @@ void sub_080004D8() {
         return;
     }
 
-    switch (gEncounter._3c) {
+    switch (gEncounter.mIQ) {
     case 1:
         sub_08026C28();
         break;
@@ -473,7 +473,7 @@ void init_save() {
     for (i = 0; i < 0x40; ++i) {
         gSave.shop_flags[i] = 0;
         gSave._380[i] = 0;
-        gSave._3c0[i] = 0;
+        gSave.mIQ0[i] = 0;
     }
     for (i = 0; i < 0x80; ++i) {
         gSave.giftbox_flags[i] = 0;

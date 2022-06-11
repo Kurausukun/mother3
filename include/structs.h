@@ -3,6 +3,60 @@
 
 #include "global.h"
 
+typedef struct MoveInfo {
+    u32 effect;
+    u32 element;
+    u32 target;
+    u8 atk_mult;
+    u16 heal_lo;
+    u16 heal_hi;
+    u8 ailment;
+    u8 ailment_chance;
+    u8 action;
+    u32 priority;
+    u16 msg_no;
+    u8 has_dim;
+    u8 anim_no;
+    u8 anim_success;
+    u16 sfx_no;
+    u8 miss_chance;
+    u8 smash_chance;
+    u8 redirectable;
+    u8 redirectable2;
+} MoveInfo;
+
+typedef struct CharStats {
+    u8 charNo;
+    u8 spriteNo;
+    u8 name[16];
+    u8 level;
+    u32 xp;
+    s32 curHP;
+    s16 curPP;
+    s32 maxHP;
+    s16 maxPP;
+    u8 _26[2];
+    u8 offense;
+    u8 defense;
+    u8 iq;
+    u8 speed;
+    u8 _2c;
+    u8 _2d;
+    u8 _2e;
+    u8 _2f;
+    u16 ailments;
+    u16 _32;
+    u8 weapon;
+    u8 body;
+    u8 head;
+    u8 other;
+    u32 equip_lyt;
+    u8 inventory[16];
+    u16 item_timers[16];
+} CharStats;
+extern CharStats gCharStats[];
+static_assert(sizeof(CharStats) == 0x6c);
+
 enum ItemType {
     Weapon,
     BodyArmor,
@@ -13,19 +67,10 @@ enum ItemType {
     Damage,
     SpecialEff,
     Key,
-    UnusedKey,
+    UnusedKey
 };
 
-enum EquipFlags {
-    _1,
-    Flint,
-    Lucas,
-    Duster,
-    Kumatora,
-    Boney,
-    Salsa,
-    _80,
-};
+enum EquipFlags { _1, Flint, Lucas, Duster, Kumatora, Boney, Salsa, _80 };
 
 // struct ItemData {
 //     u32 id;
@@ -80,7 +125,7 @@ struct Object {
     u8 _ca;
 };
 
-struct struct_02016028 {
+typedef struct struct_02016028 {
     u8 filler[0x2ca2];
     u16 _2ca2;
     u8 _2ca3[0x4ad0 - 0x2ca4];
@@ -103,6 +148,7 @@ struct struct_02016028 {
     u8 _121bb_8 : 1;
     u8 _121bb_10 : 1;
     u8 _121bc[0x121C8 - 0x121BC];
+#ifdef __cplusplus
     union {
         u64 _121c8;
         struct {
@@ -116,9 +162,12 @@ struct struct_02016028 {
             u8 b7;
         } _121c8_b;
     };
-};
+#else
+    u64 _121c8;
+#endif
+} struct_02016028;
 
-struct Save {
+typedef struct Save {
     u8 party[5];
     u32 dp_pocket;
     u32 dp_bank;
@@ -135,7 +184,7 @@ struct Save {
     u8 event_flags[0x100];
     u8 shop_flags[0x40];
     u8 _380[0x40];
-    u8 _3c0[0x40];
+    u8 mIQ0[0x40];
     u8 giftbox_flags[0x80];
     u8 _480;
     u8 _481;
@@ -181,7 +230,7 @@ struct Save {
     u16 _78e[0x40];
     u8 _80e[0x10];
     u8 _81e;
-};
+} Save;
 
 // extern ItemData gGoodsInfo[];
 extern Save gSave;
@@ -191,5 +240,65 @@ struct Size {
     u16 w;
     s16 h;
 };
+
+typedef struct ExpInfo {
+    u32 ch_no;
+    u32 deltas[99];
+} ExpInfo;
+extern ExpInfo gExpTable[];
+
+typedef struct Stats {
+    u32 hp;
+    u32 pp;
+    u8 offense;
+    u8 defense;
+    u8 iq;
+    u8 speed;
+    u32 kindness;
+} Stats;
+static_assert(sizeof(Stats) == 0x10);
+
+typedef struct PsiInfo {
+    u16 psi_no;
+    u8 level;
+} PsiInfo;
+
+typedef struct LevelStats {
+    u8 ch_no;
+    u16 ch_start_level;
+    u16 start_equipment[4];
+    Stats start_stats;
+    Stats level_status[10];
+    u8 overworld_playable;
+    u8 battle_playable;
+    u16 animal_value;
+    PsiInfo psi_table[32];
+    u32 attack_sounds;
+} LevelStats;
+extern LevelStats gLevelStatTable[];
+static_assert(sizeof(LevelStats) == 0x144);
+
+typedef struct GoodsInfo {
+    u8 item_id;
+    u32 item_type;
+    u8 key_item;
+    u16 sell_price;
+    u32 equip_flags;
+    s32 hp_mod;
+    s32 pp_mod;
+    s8 off_mod;
+    s8 def_mod;
+    s8 iq_mod;
+    s8 spd_mod;
+    s32 kindness_mod;
+    s16 ailment_resist[11];
+    s8 element_resist[5];
+    u8 attack_type[5];
+    MoveInfo action;
+    u8 _68;
+    u8 _69;
+    u8 consumable;
+} GoodsInfo;
+extern GoodsInfo gGoodsInfo[];
 
 #endif  // STRUCTS_H

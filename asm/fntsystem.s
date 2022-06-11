@@ -2042,7 +2042,7 @@ _0806E1D4:
 	strb r0, [r1]
 	adds r0, r4, #0
 	movs r1, #0xa
-	bl sub_08090F7C
+	bl Div
 	adds r4, r0, #0
 	cmp r4, #0
 	bgt _0806E1D4

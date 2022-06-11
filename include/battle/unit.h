@@ -78,10 +78,10 @@ public:
     virtual void setMaxHP(s32 value);
     virtual void setPP(s32 value);
     virtual void setMaxPP(s32 value);
+    virtual void setOffense(s32 value);
+    virtual void setDefense(s32 value);
     virtual void setIQ(s32 value);
     virtual void setSpeed(s32 value);
-    virtual void unit_148(s32 value);
-    virtual void setClumsiness(s32 value);
     virtual void unit_158(s32 value);
     virtual void setElementDefense(s32 idx, s32 value);
     virtual void unit_168(u16 idx, s32 value);
@@ -152,10 +152,10 @@ private:
     /* 0x30 */ u32 mMaxHP;
     /* 0x34 */ s16 mPP;
     /* 0x36 */ s16 mMaxPP;
-    /* 0x38 */ s16 mIQ;
-    /* 0x3a */ s16 mSpeed;
-    /* 0x3c */ s16 _3c;
-    /* 0x3e */ s16 mClumsiness;
+    /* 0x38 */ s16 mOffense;
+    /* 0x3a */ s16 mDefense;
+    /* 0x3c */ s16 mIQ;
+    /* 0x3e */ s16 mSpeed;
     /* 0x40 */ s16 _40;
     /* 0x44 */ s32 mWeaknessCount;
     /* 0x48 */ s16 mWeaknesses[6];
@@ -270,7 +270,7 @@ struct ElementType {
         Fire,
         Ice,
         Thunder,
-        Explosion,
+        Explosion
     };
 };
 
@@ -303,7 +303,7 @@ struct TargetType {
         FirstAlly,
         SecondAlly,
         ThirdAlly,
-        FourthAlly,
+        FourthAlly
     };
 };
 

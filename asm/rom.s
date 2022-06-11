@@ -2675,7 +2675,7 @@ sub_08002634: @ 0x08002634
 _08002656:
 	ldr r1, [r4]
 	adds r0, r6, #0
-	bl Div
+	bl Divide
 	lsls r1, r5, #1
 	add r1, sb
 	add r0, r8
@@ -3174,8 +3174,8 @@ sub_08002998: @ 0x08002998
 	.align 2, 0
 _080029B8: .4byte gSave
 
-	thumb_func_start sub_080029BC
-sub_080029BC: @ 0x080029BC
+	thumb_func_start get_progression_flag
+get_progression_flag: @ 0x080029BC
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	ldr r1, _080029D0 @ =gSave
@@ -3734,7 +3734,7 @@ sub_08002D98: @ 0x08002D98
 	asrs r0, r0, #8
 	lsls r1, r1, #0x10
 	asrs r1, r1, #0x10
-	bl Div
+	bl Divide
 	lsls r0, r0, #0x10
 	asrs r0, r0, #0x10
 	pop {r1}
@@ -3749,7 +3749,7 @@ sub_08002DB0: @ 0x08002DB0
 	lsls r0, r0, #9
 	lsls r1, r1, #0x10
 	asrs r1, r1, #0x10
-	bl Div
+	bl Divide
 	lsls r0, r0, #0x10
 	asrs r0, r0, #0x10
 	pop {r1}
@@ -3837,7 +3837,7 @@ sub_08002E34: @ 0x08002E34
 	muls r1, r5, r1
 	adds r0, r0, r1
 	adds r1, r3, #0
-	bl Div
+	bl Divide
 	b _08002E58
 _08002E56:
 	adds r0, r4, #0
@@ -3863,7 +3863,7 @@ sub_08002E60: @ 0x08002E60
 	muls r1, r5, r1
 	adds r0, r0, r1
 	adds r1, r3, #0
-	bl Div
+	bl Divide
 	b _08002E84
 _08002E82:
 	adds r0, r4, #0
@@ -4034,12 +4034,12 @@ sub_08002FA4: @ 0x08002FA4
 	.align 2, 0
 _08002FBC: .4byte gSineTable
 
-	thumb_func_start Div
-Div: @ 0x08002FC0
+	thumb_func_start Divide
+Divide: @ 0x08002FC0
 	push {lr}
 	cmp r1, #0
 	beq _08002FCC
-	bl sub_08090F7C
+	bl Div
 	b _08002FCE
 _08002FCC:
 	movs r0, #0
@@ -15633,7 +15633,7 @@ sub_08008ECC: @ 0x08008ECC
 	subs r5, r1, r0
 	adds r0, r5, #0
 	movs r1, #4
-	bl Div
+	bl Divide
 	adds r5, r0, #0
 	movs r1, #0x22
 	bl sub_08002FD4
@@ -15643,7 +15643,7 @@ sub_08008ECC: @ 0x08008ECC
 	strh r1, [r4]
 	adds r0, r5, #0
 	movs r1, #0x22
-	bl Div
+	bl Divide
 	ldr r1, _08008F04 @ =gSomeBlend
 	ldr r2, _08008F08 @ =0x00011C89
 	adds r1, r1, r2
@@ -47520,7 +47520,7 @@ sub_08018818: @ 0x08018818
 	ldr r2, _08018848 @ =0x00009D10
 	adds r0, r0, r2
 	ldr r0, [r0]
-	bl Div
+	bl Divide
 	movs r1, #1
 	ands r1, r0
 	cmp r1, #0
@@ -47594,7 +47594,7 @@ _080188B0:
 	adds r0, r0, r1
 	ldr r0, [r0]
 	adds r1, r6, #0
-	bl Div
+	bl Divide
 	movs r1, #1
 	ands r1, r0
 	cmp r1, #0
@@ -47783,7 +47783,7 @@ _08018A0A:
 	movs r1, #0
 	ldrsh r0, [r0, r1]
 	adds r1, r4, #0
-	bl Div
+	bl Divide
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	muls r0, r4, r0
@@ -47805,7 +47805,7 @@ _08018A44:
 	movs r1, #2
 	ldrsh r0, [r2, r1]
 	adds r1, r4, #0
-	bl Div
+	bl Divide
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	muls r0, r4, r0
@@ -50090,7 +50090,7 @@ _08019BC2:
 	movs r2, #2
 	ldrsh r1, [r4, r2]
 	subs r1, r1, r3
-	bl sub_08090F7C
+	bl Div
 	adds r1, r0, #0
 	ldrh r0, [r5]
 	subs r0, r0, r1
@@ -50632,7 +50632,7 @@ _0801A014:
 	cmp r0, #0xee
 	bne _0801A032
 	movs r0, #3
-	bl sub_080029BC
+	bl get_progression_flag
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	movs r3, #0

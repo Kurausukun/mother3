@@ -40,8 +40,8 @@ public:
     virtual void player_3a8();
     virtual void player_3b0();
     virtual void player_3b8();
-    virtual void player_3c0();
-    virtual void player_3c8();
+    virtual void playermIQ0();
+    virtual void playermIQ8();
     virtual void player_3d0();
     virtual void player_3d8();
     virtual void player_3e0();

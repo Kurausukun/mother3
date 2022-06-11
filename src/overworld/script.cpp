@@ -650,7 +650,7 @@ u16 cmd_0E(s32* sp) {
 
     idx = scriptstack_peek(sp, 0);
     if (idx < 0x40) {
-        val = sub_080029BC(idx);
+        val = get_progression_flag(idx);
         scriptstack_push(val);
     }
     return 0;
@@ -689,7 +689,7 @@ u16 cmd_11(s32* sp) {
 
     idx = scriptstack_peek(sp, 1);
     if (idx < 0x40) {
-        val = sub_080029BC(idx);
+        val = get_progression_flag(idx);
         test = scriptstack_peek(sp, 0);
         sub_080218B0(val, test);
     }

@@ -18,8 +18,8 @@ CpuSet: @ 0x08090F78
 	svc #0xb
 	bx lr
 
-	thumb_func_start sub_08090F7C
-sub_08090F7C: @ 0x08090F7C
+	thumb_func_start Div
+Div: @ 0x08090F7C
 	svc #6
 	bx lr
 

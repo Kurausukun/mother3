@@ -218,12 +218,19 @@ setup:
 	$(SALSA) --extract baserom.gba assets/misctext.salsa
 	$(SALSA) --extract baserom.gba assets/logic.salsa
 
-$(C_OBJS): $(C_SRCS)
-	$(CPP) $(CPPFLAGS) $< -o $(C_BUILDDIR)/$(<F).i
-	$(PREPROC) $(C_BUILDDIR)/$(<F).i charmap.txt > $(C_BUILDDIR)/$(<F).p.i
-	$(PREPROC) $(C_BUILDDIR)/$(<F).i charmap.txt | $(CC1) $(CC1FLAGS) -o $(C_BUILDDIR)/$(<F).s
-	@echo -e ".text\n\t.align\t2, 0\n" >> $(C_BUILDDIR)/$(<F).s
-	$(AS) $(ASFLAGS) -o $@ $(C_BUILDDIR)/$(<F).s
+# $(C_OBJS): $(C_SRCS)
+# 	$(CPP) $(CPPFLAGS) $< -o $(C_BUILDDIR)/$(<F).i
+# 	$(PREPROC) $(C_BUILDDIR)/$(<F).i charmap.txt > $(C_BUILDDIR)/$(<F).p.i
+# 	$(PREPROC) $(C_BUILDDIR)/$(<F).i charmap.txt | $(CC1) $(CC1FLAGS) -o $(C_BUILDDIR)/$(<F).s
+# 	@echo -e ".text\n\t.align\t2, 0\n" >> $(C_BUILDDIR)/$(<F).s
+# 	$(AS) $(ASFLAGS) -o $@ $(C_BUILDDIR)/$(<F).s
+
+$(C_BUILDDIR)/%.o : $(C_SUBDIR)/%.c $$(c_dep)
+	$(CPP) $(CPPFLAGS) $< -o $(C_BUILDDIR)/$*.i
+	$(PREPROC) $(C_BUILDDIR)/$*.i charmap.txt > $(C_BUILDDIR)/$*.p.i
+	$(PREPROC) $(C_BUILDDIR)/$*.i charmap.txt | $(CC1) $(CC1FLAGS) -o $(C_BUILDDIR)/$*.s
+	@echo -e ".text\n\t.align\t2, 0\n" >> $(C_BUILDDIR)/$*.s
+	$(AS) $(ASFLAGS) -o $@ $(C_BUILDDIR)/$*.s
 
 $(C_BUILDDIR)/%.o : $(C_SUBDIR)/%.cpp $$(c_dep)
 	$(CPP) $(CPPFLAGS) $< -o $(C_BUILDDIR)/$*.i
@@ -231,6 +238,13 @@ $(C_BUILDDIR)/%.o : $(C_SUBDIR)/%.cpp $$(c_dep)
 	$(PREPROC) $(C_BUILDDIR)/$*.i charmap.txt | $(CXX) $(CXXFLAGS) $(CC1FLAGS) -o $(C_BUILDDIR)/$*.s
 	@echo -e ".text\n\t.align\t2, 0\n" >> $(C_BUILDDIR)/$*.s
 	$(AS) $(ASFLAGS) -o $@ $(C_BUILDDIR)/$*.s
+
+# $(C_BUILDDIR)/%.o : $(C_SUBDIR)/%.cpp $$(c_dep)
+# 	$(CPP) $(CPPFLAGS) $< -o $(C_BUILDDIR)/$*.i
+# 	$(PREPROC) $(C_BUILDDIR)/$*.i charmap.txt > $(C_BUILDDIR)/$*.p.i
+# 	$(PREPROC) $(C_BUILDDIR)/$*.i charmap.txt | $(CXX) $(CXXFLAGS) $(CC1FLAGS) -o $(C_BUILDDIR)/$*.s
+# 	@echo -e ".text\n\t.align\t2, 0\n" >> $(C_BUILDDIR)/$*.s
+# 	$(AS) $(ASFLAGS) -o $@ $(C_BUILDDIR)/$*.s
 
 $(SRC_ASM_BUILDDIR)/%.o: $(C_SUBDIR)/%.s
 	$(PREPROC) $< charmap.txt | $(AS) $(ASFLAGS) -o $@
