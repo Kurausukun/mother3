@@ -300,11 +300,11 @@ u16 cmd_05(s32* sp) {
         return 0;
 
     temp = scriptstack_peek(sp, 0);
-    if ((gUnknown_02016028._2ca2 & temp) == 0) {
+    if ((gSomeBlend._2ca2 & temp) == 0) {
         scriptstack_pop();
         return 1;
     } else {
-        scriptstack_push(gUnknown_02016028._2ca2 & temp);
+        scriptstack_push(gSomeBlend._2ca2 & temp);
         return 0;
     }
 }
@@ -362,7 +362,7 @@ u16 cmd_reload_room() {
     gGame.state_80 = 0;
     gGame.state_20 = 1;
     if (gGame._8484 != 0) {
-        gUnknown_02016028._121bb_10 = 1;
+        gSomeBlend._121bb_10 = 1;
         sub_0800AD6C();
         sub_08001B18(&gGame._9488, &gUnknown_03005314, 0x400);
         gGame.mode = 6;
@@ -484,7 +484,7 @@ _0801C384:\n\
 	ldrh r0, [r0]\n\
 	cmp r0, #0\n\
 	beq _0801C3DC\n\
-	ldr r0, _0801C3AC @ =gUnknown_02016028\n\
+	ldr r0, _0801C3AC @ =gSomeBlend\n\
 	ldr r1, _0801C3B0 @ =0x00002CA0\n\
 	adds r0, r0, r1\n\
 	ldrh r0, [r0]\n\
@@ -500,7 +500,7 @@ _0801C384:\n\
 	bl scriptstack_push\n\
 	b _0801C432\n\
 	.align 2, 0\n\
-_0801C3AC: .4byte gUnknown_02016028\n\
+_0801C3AC: .4byte gSomeBlend\n\
 _0801C3B0: .4byte 0x00002CA0\n\
 _0801C3B4: .4byte 0x0000947E\n\
 _0801C3B8:\n\
@@ -521,7 +521,7 @@ _0801C3B8:\n\
 _0801C3D4: .4byte 0x0000947E\n\
 _0801C3D8: .4byte 0x0000FFFF\n\
 _0801C3DC:\n\
-	ldr r0, _0801C3F8 @ =gUnknown_02016028\n\
+	ldr r0, _0801C3F8 @ =gSomeBlend\n\
 	ldr r1, _0801C3FC @ =0x00002CA2\n\
 	adds r0, r0, r1\n\
 	ldrh r0, [r0]\n\
@@ -534,7 +534,7 @@ _0801C3DC:\n\
 	bl scriptstack_push\n\
 	b _0801C432\n\
 	.align 2, 0\n\
-_0801C3F8: .4byte gUnknown_02016028\n\
+_0801C3F8: .4byte gSomeBlend\n\
 _0801C3FC: .4byte 0x00002CA2\n\
 _0801C400:\n\
 	ldr r0, _0801C41C @ =0x00009480\n\
@@ -1664,10 +1664,10 @@ u16 cmd_E7(s32* sp) {
             c = sub_08001D2C(cd->charNo);
             if (c != 0) {
                 sub_0805BC8C(&t, cd->charNo, b);
-                gUnknown_02016028._121c8 = t;
-                scriptstack_push(gUnknown_02016028._121c8_b.b0 & 0xff);
-                if (gUnknown_02016028._121c8_b.b1 != 0) {
-                    heal_hp(spr->character, gUnknown_02016028._121c8_b.b1);
+                gSomeBlend._121c8 = t;
+                scriptstack_push(gSomeBlend._121c8_b.b0 & 0xff);
+                if (gSomeBlend._121c8_b.b1 != 0) {
+                    heal_hp(spr->character, gSomeBlend._121c8_b.b1);
                     sub_0802B4D8();
                 }
             }
@@ -1684,25 +1684,25 @@ u16 cmd_E8(s32* sp) {
 
     switch (idx) {
     case 0:
-        scriptstack_push(gUnknown_02016028._121c8_b.b1);
+        scriptstack_push(gSomeBlend._121c8_b.b1);
         break;
     case 1:
-        scriptstack_push(gUnknown_02016028._121c8_b.b2);
+        scriptstack_push(gSomeBlend._121c8_b.b2);
         break;
     case 2:
-        scriptstack_push(gUnknown_02016028._121c8_b.b3);
+        scriptstack_push(gSomeBlend._121c8_b.b3);
         break;
     case 3:
-        scriptstack_push(gUnknown_02016028._121c8_b.b4);
+        scriptstack_push(gSomeBlend._121c8_b.b4);
         break;
     case 4:
-        scriptstack_push(gUnknown_02016028._121c8_b.b5);
+        scriptstack_push(gSomeBlend._121c8_b.b5);
         break;
     case 5:
-        scriptstack_push(gUnknown_02016028._121c8_b.b7);
+        scriptstack_push(gSomeBlend._121c8_b.b7);
         break;
     case 6:
-        scriptstack_push(gUnknown_02016028._121c8_b.b6);
+        scriptstack_push(gSomeBlend._121c8_b.b6);
         break;
     }
     return 0;
@@ -2114,7 +2114,7 @@ _0801D784:\n\
 	cmp r4, #0\n\
 	beq _0801D858\n\
 	bl sub_0802630C\n\
-	ldr r5, _0801D80C @ =gUnknown_02016028\n\
+	ldr r5, _0801D80C @ =gSomeBlend\n\
 	ldr r0, _0801D810 @ =0x0001ED10\n\
 	adds r2, r5, r0\n\
 	ldrb r1, [r2]\n\
@@ -2159,7 +2159,7 @@ _0801D784:\n\
 	.align 2, 0\n\
 _0801D804: .4byte gGame\n\
 _0801D808: .4byte 0x000067AC\n\
-_0801D80C: .4byte gUnknown_02016028\n\
+_0801D80C: .4byte gSomeBlend\n\
 _0801D810: .4byte 0x0001ED10\n\
 _0801D814: .4byte 0x00008452\n\
 _0801D818: .4byte 0x00004AF2\n\
@@ -2283,7 +2283,7 @@ _0801D8EC:\n\
 	cmp r4, #0\n\
 	beq _0801D9B8\n\
 	bl sub_0802630C\n\
-	ldr r6, _0801D960 @ =gUnknown_02016028\n\
+	ldr r6, _0801D960 @ =gSomeBlend\n\
 	ldr r3, _0801D964 @ =0x0001ED10\n\
 	adds r2, r6, r3\n\
 	ldrb r1, [r2]\n\
@@ -2327,7 +2327,7 @@ _0801D8EC:\n\
 	strh r0, [r4]\n\
 	b _0801D9AE\n\
 	.align 2, 0\n\
-_0801D960: .4byte gUnknown_02016028\n\
+_0801D960: .4byte gSomeBlend\n\
 _0801D964: .4byte 0x0001ED10\n\
 _0801D968: .4byte gGame\n\
 _0801D96C: .4byte 0x00008452\n\
@@ -2380,7 +2380,7 @@ _0801D9BA:\n\
 }
 
 u16 cmd_34(s32* sp) {
-    if (gUnknown_02016028.msg_type == 2 && gUnknown_02016028.msg_choice == 0)
+    if (gSomeBlend.msg_type == 2 && gSomeBlend.msg_choice == 0)
         scriptstack_push(1);
     else
         scriptstack_push(0);
@@ -2388,7 +2388,7 @@ u16 cmd_34(s32* sp) {
 }
 
 u16 cmd_35(s32* sp) {
-    if (gUnknown_02016028.msg_type == 2 && gUnknown_02016028.msg_choice == 1)
+    if (gSomeBlend.msg_type == 2 && gSomeBlend.msg_choice == 1)
         scriptstack_push(1);
     else
         scriptstack_push(0);
@@ -2396,7 +2396,7 @@ u16 cmd_35(s32* sp) {
 }
 
 u16 cmd_get_msg_choice(s32* sp) {
-    scriptstack_push(gUnknown_02016028.msg_choice);
+    scriptstack_push(gSomeBlend.msg_choice);
     return 0;
 }
 
@@ -2405,7 +2405,7 @@ u16 cmd_37(s32* sp) {
 
     v1 = scriptstack_peek(sp, 0);
     if (v1 <= 2)
-        gUnknown_02016028._4b19 = v1;
+        gSomeBlend._4b19 = v1;
     return 0;
 }
 
@@ -2420,13 +2420,13 @@ u16 cmd_38(s32* sp) {
     v4 = scriptstack_peek(sp, 1);
     v5 = scriptstack_peek(sp, 0);
     if (v2 != -1)
-        gUnknown_02016028._4b10 = v2;
+        gSomeBlend._4b10 = v2;
     if (v3 != -1)
-        gUnknown_02016028._4b12 = v3;
+        gSomeBlend._4b12 = v3;
     if (v4 != -1)
-        gUnknown_02016028._4b14 = v4;
+        gSomeBlend._4b14 = v4;
     if (v5 != -1)
-        gUnknown_02016028._4b16 = v5;
+        gSomeBlend._4b16 = v5;
     return 0;
 }
 
@@ -2435,7 +2435,7 @@ u16 cmd_load_name(s32* sp) {
 
     v2 = scriptstack_peek(sp, 1);
     if (v2 <= 7)
-        gUnknown_02016028.char_names[v2] = scriptstack_peek(sp, 0);
+        gSomeBlend.char_names[v2] = scriptstack_peek(sp, 0);
     return 0;
 }
 
@@ -2443,11 +2443,11 @@ u16 cmd_3A(s32* sp) {
     gGame._9486 = 0;
     gGame._9486_2 = 0;
     sub_0800A240(gUnknown_080C1FF0);
-    sub_08009E38(&gUnknown_02016028._5778[0], 0);
+    sub_08009E38(&gSomeBlend._5778[0], 0);
     sub_0800ACA0(0);
-    gUnknown_02016028._121bb_8 = 1;
-    gUnknown_02016028._121bb_10 = 0;
-    gUnknown_02016028._121bc[8] = 80;
+    gSomeBlend._121bb_8 = 1;
+    gSomeBlend._121bb_10 = 0;
+    gSomeBlend._121bc[8] = 80;
     return 1;
 }
 
@@ -2544,7 +2544,7 @@ _0801DC34:\n\
 	strb r0, [r2]\n\
 	movs r0, #0\n\
 	bl sub_08004660\n\
-	ldr r1, _0801DCA8 @ =gUnknown_02016028\n\
+	ldr r1, _0801DCA8 @ =gSomeBlend\n\
 	ldr r2, _0801DCAC @ =0x0001ED10\n\
 	adds r1, r1, r2\n\
 	ldrb r0, [r1]\n\
@@ -2565,7 +2565,7 @@ _0801DC98: .4byte gGame\n\
 _0801DC9C: .4byte 0x0000595B\n\
 _0801DCA0: .4byte 0x00009480\n\
 _0801DCA4: .4byte 0x00008494\n\
-_0801DCA8: .4byte gUnknown_02016028\n\
+_0801DCA8: .4byte gSomeBlend\n\
 _0801DCAC: .4byte 0x0001ED10\n\
 _0801DCB0:\n\
 	movs r0, #0\n\
@@ -2670,7 +2670,7 @@ _0801DD42:\n\
 	strb r0, [r2]\n\
 	movs r0, #0\n\
 	bl sub_08004660\n\
-	ldr r1, _0801DDA0 @ =gUnknown_02016028\n\
+	ldr r1, _0801DDA0 @ =gSomeBlend\n\
 	ldr r2, _0801DDA4 @ =0x0001ED10\n\
 	adds r1, r1, r2\n\
 	ldrb r0, [r1]\n\
@@ -2688,7 +2688,7 @@ _0801DD90: .4byte gGame\n\
 _0801DD94: .4byte 0x00005982\n\
 _0801DD98: .4byte 0x00009480\n\
 _0801DD9C: .4byte 0x00008494\n\
-_0801DDA0: .4byte gUnknown_02016028\n\
+_0801DDA0: .4byte gSomeBlend\n\
 _0801DDA4: .4byte 0x0001ED10\n\
 _0801DDA8:\n\
 	movs r0, #0\n\
@@ -3198,7 +3198,7 @@ _0801E3A0:\n\
 	bl sub_08005900\n\
 	b _0801E3BC\n\
 _0801E3AE:\n\
-	ldr r0, _0801E3C8 @ =gUnknown_02016028\n\
+	ldr r0, _0801E3C8 @ =gSomeBlend\n\
 	ldr r1, _0801E3CC @ =0x000121BB\n\
 	adds r0, r0, r1\n\
 	ldrb r1, [r0]\n\
@@ -3212,7 +3212,7 @@ _0801E3BC:\n\
 	pop {r1}\n\
 	bx r1\n\
 	.align 2, 0\n\
-_0801E3C8: .4byte gUnknown_02016028\n\
+_0801E3C8: .4byte gSomeBlend\n\
 _0801E3CC: .4byte 0x000121BB\n\
     ");
 }
@@ -3853,15 +3853,15 @@ u16 cmd_55(s32* sp) {
     sub_08036BEC(obj2, &sz);
 
     if (b == 0) {
-        if (obj->_0 > obj2->_0) {
+        if (obj->xpos > obj2->xpos) {
             sz.w += obj->_a6 + obj2->_a6;
-        } else if (obj->_0 < obj2->_0) {
+        } else if (obj->xpos < obj2->xpos) {
             sz.w -= obj->_a6 + obj2->_a6;
         }
     } else {
-        if (obj->_2 > obj2->_2) {
+        if (obj->ypos > obj2->ypos) {
             sz.h += obj->_a8 + obj2->_a8;
-        } else if (obj->_2 < obj2->_2) {
+        } else if (obj->ypos < obj2->ypos) {
             sz.h -= obj->_a8 + obj2->_a8;
         }
     }
