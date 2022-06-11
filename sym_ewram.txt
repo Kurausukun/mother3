@@ -322,7 +322,7 @@
 . = 0x00015F70; eh_context_s_top_elt = .;
 . = 0x00015F78; gUnknown_02015F78 = .;
 *libc.a:syscalls.o(.bss);
-. = 0x00016028; gUnknown_02016028 = .;
+. = 0x00016028; gSomeBlend = .;
 . = 0x00016078; gUnknown_02016078 = .;
 . = 0x00016878; gUnknown_02016878 = .;
 . = 0x00017878; gUnknown_02017878 = .;

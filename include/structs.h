@@ -48,8 +48,8 @@ enum EquipFlags {
 // };
 
 struct Object {
-    s16 _0;
-    s16 _2;
+    s16 xpos;
+    s16 ypos;
     u8 filler[0x1c];
     u16 _20;
     u16 _22;
@@ -185,7 +185,7 @@ struct Save {
 
 // extern ItemData gGoodsInfo[];
 extern Save gSave;
-extern struct_02016028 gUnknown_02016028;
+extern struct_02016028 gSomeBlend;
 
 struct Size {
     u16 w;
