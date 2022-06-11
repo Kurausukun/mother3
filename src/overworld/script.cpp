@@ -3853,15 +3853,15 @@ u16 cmd_55(s32* sp) {
     sub_08036BEC(obj2, &sz);
 
     if (b == 0) {
-        if (obj->_0 > obj2->_0) {
+        if (obj->xpos > obj2->xpos) {
             sz.w += obj->_a6 + obj2->_a6;
-        } else if (obj->_0 < obj2->_0) {
+        } else if (obj->xpos < obj2->xpos) {
             sz.w -= obj->_a6 + obj2->_a6;
         }
     } else {
-        if (obj->_2 > obj2->_2) {
+        if (obj->ypos > obj2->ypos) {
             sz.h += obj->_a8 + obj2->_a8;
-        } else if (obj->_2 < obj2->_2) {
+        } else if (obj->ypos < obj2->ypos) {
             sz.h -= obj->_a8 + obj2->_a8;
         }
     }
