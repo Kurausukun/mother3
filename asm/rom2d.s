@@ -4339,7 +4339,7 @@ _0808525C:
 	adds r5, #0xc
 	adds r1, r6, #0
 	adds r6, #0xc
-	bl sub_0806E2E8
+	bl sub_0806E2E8__3MsgRC3Msg
 	subs r4, #1
 	cmp r4, #0
 	bne _0808525C
@@ -4386,7 +4386,7 @@ _080852AC:
 	adds r1, #1
 	str r1, [r7, #4]
 	add r1, sp, #0xc
-	bl sub_0806E2E8
+	bl sub_0806E2E8__3MsgRC3Msg
 	add r0, sp, #0xc
 	bl sub_0806E344
 _080852C8:
@@ -4453,7 +4453,7 @@ _0808533A:
 	adds r5, #0xc
 	adds r1, r6, #0
 	adds r6, #0xc
-	bl sub_0806E2E8
+	bl sub_0806E2E8__3MsgRC3Msg
 	subs r4, #1
 	cmp r4, #0
 	bne _0808533A
@@ -4500,7 +4500,7 @@ _0808538A:
 	adds r1, #1
 	str r1, [r7, #4]
 	add r1, sp, #0xc
-	bl sub_0806E2E8
+	bl sub_0806E2E8__3MsgRC3Msg
 _080853A0:
 	movs r5, #0
 	ldr r0, [sp, #4]

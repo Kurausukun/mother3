@@ -1001,7 +1001,7 @@ _080820C6:
 	bl _call_via_r3
 	mov r0, sp
 	adds r1, r4, #0
-	bl sub_0806E374
+	bl sub_0806E374__3MsgRC3Msg
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg

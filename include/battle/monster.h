@@ -8,7 +8,7 @@ struct MonsterData {
     u32 id;
     u32 smell;
     u16 overworld_sfx;
-    u16 battle_bg;
+    u8 battle_bg;
     u16 encounter_bgm;
     u16 battle_bgm;
     u16 win_bgm;
@@ -66,11 +66,11 @@ public:
     virtual void monster_2f8();
     virtual void monster_300(bool);
     virtual void monster_308();
-    virtual void monster_310();
-    virtual void monster_318();
+    virtual u8 monster_310();
+    virtual s32 monster_318();
     virtual void monster_320();
     virtual void monster_328();
-    virtual void monster_330();
+    virtual Msg monster_330();
     virtual void monster_338();
     virtual void monster_340();
     virtual u32 monster_348();

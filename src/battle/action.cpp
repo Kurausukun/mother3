@@ -32,9 +32,9 @@ extern "C" Base* sub_080728D8();
 extern "C" Base* sub_080728F8();
 
 extern "C" void fieldSet__6Actionib(Action*, u32, u32);
-extern "C" void sub_08073018(u32, u32);
-extern "C" void sub_08072B70();
-extern "C" void sub_08072D0C();
+void sub_08073018(s32, s32);
+void sub_08072B70();
+void sub_08072D0C();
 extern "C" void playSound(u16);
 
 extern "C" u8 unitIsPlayer(Unit*, u32);
@@ -628,12 +628,12 @@ bool Action::fieldSet(s32 value, bool force) {
     return true;
 }
 
-extern "C" Msg sub_08073460(u32, const Msg&, const Msg&, const Msg&);
+// Msg sub_08073460(u32, const Msg&, const Msg&, const Msg&);
 
 Msg Action::createMsg(u16 idx) const {
-    return sub_08073460(idx, name(), getUser()->name(), mNextTargets.size() > 0 ? mNextTargets[0]->name() : Msg());
+    return Msg::sub_08073460(idx, name(), getUser()->name(), mNextTargets.size() > 0 ? mNextTargets[0]->name() : Msg());
 }
 
 Msg Action::action_160(u16 idx, const Msg& m) const {
-    return sub_08073460(idx, m, getUser()->name(), mNextTargets.size() > 0 ? mNextTargets[0]->name() : Msg());
+    return Msg::sub_08073460(idx, m, getUser()->name(), mNextTargets.size() > 0 ? mNextTargets[0]->name() : Msg());
 }

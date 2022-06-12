@@ -91,6 +91,9 @@ struct Msg {
     void print(const PrintSettings&, bool);
     s32 len();
     u16* sub_0806E334(s32 idx);
+    void sub_0806E2E8(const Msg&);
+    void sub_0806E374(const Msg&);
+    static Msg sub_08073460(s32, const Msg&, const Msg&, const Msg&);
 
     u16* ptr;
     u16 _4;

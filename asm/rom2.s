@@ -43,9 +43,9 @@ _08076B7A:
 	bl setsleep
 	movs r0, #1
 	movs r1, #0
-	bl sub_08073018
-	bl sub_08072B70
-	bl sub_08072D0C
+	bl sub_08073018__Fii
+	bl sub_08072B70__Fv
+	bl sub_08072D0C__Fv
 	ldr r0, [r4, #0x60]
 	cmp r0, #1
 	beq _08076B7A
@@ -2477,7 +2477,7 @@ sub_08077DBC: @ 0x08077DBC
 	adds r1, r4, #0
 	add r2, sp, #4
 	adds r3, r6, #0
-	bl sub_08073460
+	bl sub_08073460__3MsgiRC3MsgN22
 	adds r0, r5, #0
 	movs r1, #2
 	bl _._3Msg

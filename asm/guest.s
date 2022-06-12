@@ -31,7 +31,7 @@ sub_0805EEA4: @ 0x0805EEA4
 	adds r4, r0, #0
 	adds r5, r1, #0
 	bl __4Base
-	ldr r0, _0805EEBC @ =vt_09F45430
+	ldr r0, _0805EEBC @ =_vt.11UnitTurnEnd
 	str r0, [r4, #0x1c]
 	str r5, [r4, #0x20]
 	adds r0, r4, #0
@@ -39,21 +39,21 @@ sub_0805EEA4: @ 0x0805EEA4
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0805EEBC: .4byte vt_09F45430
+_0805EEBC: .4byte _vt.11UnitTurnEnd
 
 	thumb_func_start sub_0805EEC0
 sub_0805EEC0: @ 0x0805EEC0
 	push {r4, lr}
 	adds r4, r0, #0
 	bl __4Base
-	ldr r0, _0805EED4 @ =vt_09F45430
+	ldr r0, _0805EED4 @ =_vt.11UnitTurnEnd
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
 	pop {r4}
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0805EED4: .4byte vt_09F45430
+_0805EED4: .4byte _vt.11UnitTurnEnd
 
 	thumb_func_start sub_0805EED8
 sub_0805EED8: @ 0x0805EED8
@@ -66,7 +66,7 @@ sub_0805EEDC: @ 0x0805EEDC
 	adds r4, r0, #0
 	adds r5, r1, #0
 	bl __4Base
-	ldr r0, _0805EEF4 @ =vt_09F454B0
+	ldr r0, _0805EEF4 @ =_vt.13UnitTurnBegin
 	str r0, [r4, #0x1c]
 	str r5, [r4, #0x20]
 	adds r0, r4, #0
@@ -74,21 +74,21 @@ sub_0805EEDC: @ 0x0805EEDC
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0805EEF4: .4byte vt_09F454B0
+_0805EEF4: .4byte _vt.13UnitTurnBegin
 
 	thumb_func_start sub_0805EEF8
 sub_0805EEF8: @ 0x0805EEF8
 	push {r4, lr}
 	adds r4, r0, #0
 	bl __4Base
-	ldr r0, _0805EF0C @ =vt_09F454B0
+	ldr r0, _0805EF0C @ =_vt.13UnitTurnBegin
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
 	pop {r4}
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0805EF0C: .4byte vt_09F454B0
+_0805EF0C: .4byte _vt.13UnitTurnBegin
 
 	thumb_func_start sub_0805EF10
 sub_0805EF10: @ 0x0805EF10
@@ -3234,7 +3234,7 @@ _080606CC:
 	add r0, sp, #4
 	mov r2, r8
 	adds r3, r5, #0
-	bl sub_08073460
+	bl sub_08073460__3MsgiRC3MsgN22
 	add r1, sp, #0x3c
 	movs r6, #0
 	strb r6, [r1]
@@ -3308,7 +3308,7 @@ _080606CC:
 	add r0, sp, #4
 	mov r2, r8
 	adds r3, r5, #0
-	bl sub_08073460
+	bl sub_08073460__3MsgiRC3MsgN22
 	add r1, sp, #0x40
 	strb r6, [r1]
 	strb r6, [r1, #1]
@@ -3839,10 +3839,10 @@ _08060B84:
 	movs r1, #0x7d
 	mov r2, r8
 	adds r3, r6, #0
-	bl sub_08073460
+	bl sub_08073460__3MsgiRC3MsgN22
 	add r0, sp, #4
 	adds r1, r4, #0
-	bl sub_0806E2E8
+	bl sub_0806E2E8__3MsgRC3Msg
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -3890,10 +3890,10 @@ _08060C16:
 	movs r1, #0x7e
 	mov r2, r8
 	adds r3, r6, #0
-	bl sub_08073460
+	bl sub_08073460__3MsgiRC3MsgN22
 	add r0, sp, #4
 	adds r1, r4, #0
-	bl sub_0806E2E8
+	bl sub_0806E2E8__3MsgRC3Msg
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -3987,7 +3987,7 @@ metalMonkeyCheck: @ 0x08060CF8
 	movs r1, #0x87
 	adds r2, r6, #0
 	adds r3, r5, #0
-	bl sub_08073460
+	bl sub_08073460__3MsgiRC3MsgN22
 	add r1, sp, #0x34
 	movs r0, #0
 	strb r0, [r1]
@@ -4446,7 +4446,7 @@ tellPresent: @ 0x0806105C
 	movs r1, #0x88
 	adds r2, r6, #0
 	mov r3, r8
-	bl sub_08073460
+	bl sub_08073460__3MsgiRC3MsgN22
 	add r1, sp, #0x40
 	movs r0, #0
 	mov sl, r0
@@ -4486,10 +4486,10 @@ tellPresent: @ 0x0806105C
 	movs r1, #0x89
 	mov r2, r8
 	adds r3, r7, #0
-	bl sub_08073460
+	bl sub_08073460__3MsgiRC3MsgN22
 	add r0, sp, #4
 	adds r1, r6, #0
-	bl sub_0806E2E8
+	bl sub_0806E2E8__3MsgRC3Msg
 	adds r0, r6, #0
 	movs r1, #2
 	bl _._3Msg
@@ -4508,7 +4508,7 @@ tellPresent: @ 0x0806105C
 	bl druggedPresentCheck
 	add r0, sp, #4
 	adds r1, r6, #0
-	bl sub_0806E2E8
+	bl sub_0806E2E8__3MsgRC3Msg
 	adds r0, r6, #0
 	movs r1, #2
 	bl _._3Msg
@@ -4556,7 +4556,7 @@ tellPresent: @ 0x0806105C
 	movs r1, #0x8b
 	mov r2, r8
 	adds r3, r7, #0
-	bl sub_08073460
+	bl sub_08073460__3MsgiRC3MsgN22
 	add r1, sp, #0x48
 	mov r0, sl
 	strb r0, [r1]
@@ -4697,7 +4697,7 @@ _080612AA:
 	movs r1, #0x8a
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460
+	bl sub_08073460__3MsgiRC3MsgN22
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -4787,7 +4787,7 @@ tellPlayerInventoryFull: @ 0x08061338
 	movs r1, #0x8c
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460
+	bl sub_08073460__3MsgiRC3MsgN22
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -4824,7 +4824,7 @@ _080613A0:
 	movs r1, #0x8d
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460
+	bl sub_08073460__3MsgiRC3MsgN22
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -4901,7 +4901,7 @@ _0806141E:
 	movs r1, #0x92
 	mov r2, r8
 	adds r3, r6, #0
-	bl sub_08073460
+	bl sub_08073460__3MsgiRC3MsgN22
 	add r1, sp, #0x88
 	movs r0, #0
 	strb r0, [r1]
@@ -4945,7 +4945,7 @@ _080614C4:
 	movs r1, #0x8e
 	adds r2, r6, #0
 	adds r3, r5, #0
-	bl sub_08073460
+	bl sub_08073460__3MsgiRC3MsgN22
 	add r1, sp, #0x8c
 	movs r0, #0
 	strb r0, [r1]
@@ -5086,7 +5086,7 @@ _0806159C:
 	movs r1, #0x91
 	ldr r2, [sp, #0x94]
 	ldr r3, [sp, #0x98]
-	bl sub_08073460
+	bl sub_08073460__3MsgiRC3MsgN22
 	movs r0, #0
 	add r1, sp, #0x90
 	strb r0, [r1]
@@ -5267,7 +5267,7 @@ checkGiveUpItem: @ 0x0806176C
 	movs r1, #0x8f
 	adds r2, r6, #0
 	adds r3, r5, #0
-	bl sub_08073460
+	bl sub_08073460__3MsgiRC3MsgN22
 	add r1, sp, #0x64
 	movs r7, #0
 	strb r7, [r1]
@@ -5325,7 +5325,7 @@ _08061804:
 	movs r1, #0x90
 	mov r2, r8
 	adds r3, r6, #0
-	bl sub_08073460
+	bl sub_08073460__3MsgiRC3MsgN22
 	add r1, sp, #0x6c
 	strb r7, [r1]
 	strb r7, [r1, #1]
@@ -5405,7 +5405,7 @@ tellGaveUpItem: @ 0x0806188C
 	movs r1, #0x93
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460
+	bl sub_08073460__3MsgiRC3MsgN22
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -5442,7 +5442,7 @@ _080618F4:
 	movs r1, #0x94
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460
+	bl sub_08073460__3MsgiRC3MsgN22
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg

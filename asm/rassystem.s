@@ -181,7 +181,7 @@ sub_0806E978: @ 0x0806E978
 	push {r4, lr}
 	adds r4, r0, #0
 	adds r0, #0x2c
-	bl sub_0806E2E8
+	bl sub_0806E2E8__3MsgRC3Msg
 	adds r4, #0x49
 	ldrb r1, [r4]
 	movs r0, #2

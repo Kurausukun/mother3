@@ -480,10 +480,10 @@ sub_08080D48: @ 0x08080D48
 	add r0, sp, #4
 	mov r2, r8
 	adds r3, r6, #0
-	bl sub_08073460
+	bl sub_08073460__3MsgiRC3MsgN22
 	mov r0, sb
 	add r1, sp, #4
-	bl sub_0806E2E8
+	bl sub_0806E2E8__3MsgRC3Msg
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -1401,7 +1401,7 @@ sub_080814C0: @ 0x080814C0
 	movs r2, #0x84
 	lsls r2, r2, #1
 	adds r0, r0, r2
-	bl sub_0806E2E8
+	bl sub_0806E2E8__3MsgRC3Msg
 	pop {r0}
 	bx r0
 
@@ -1490,7 +1490,7 @@ sub_08081518: @ 0x08081518
 	mov r0, r8
 	add r2, sp, #4
 	adds r3, r6, #0
-	bl sub_08073460
+	bl sub_08073460__3MsgiRC3MsgN22
 	adds r0, r5, #0
 	movs r1, #2
 	bl _._3Msg

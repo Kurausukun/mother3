@@ -129,7 +129,7 @@ sub_080C0940: @ 0x080C0940
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
-	ldr r0, _080C0A0C @ =vt_09F454B0
+	ldr r0, _080C0A0C @ =_vt.13UnitTurnBegin
 	str r0, [sp, #0x20]
 	ldr r0, _080C0A10 @ =gUnknown_080FB710
 	ldr r3, [r0]
@@ -148,7 +148,7 @@ sub_080C0940: @ 0x080C0940
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
-	ldr r0, _080C0A14 @ =vt_09F45430
+	ldr r0, _080C0A14 @ =_vt.11UnitTurnEnd
 	str r0, [sp, #0x20]
 	ldr r0, _080C0A18 @ =gUnknown_080FB718
 	ldr r3, [r0]
@@ -177,9 +177,9 @@ _080C09FC: .4byte vt_09F7DD98
 _080C0A00: .4byte _vt.3Unk
 _080C0A04: .4byte _vt.10RoundBegin
 _080C0A08: .4byte gUnknown_080FB708
-_080C0A0C: .4byte vt_09F454B0
+_080C0A0C: .4byte _vt.13UnitTurnBegin
 _080C0A10: .4byte gUnknown_080FB710
-_080C0A14: .4byte vt_09F45430
+_080C0A14: .4byte _vt.11UnitTurnEnd
 _080C0A18: .4byte gUnknown_080FB718
 _080C0A1C: .4byte vt_09F7DC80
 
@@ -223,7 +223,7 @@ sub_080C0A20: @ 0x080C0A20
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
-	ldr r0, _080C0AE8 @ =vt_09F454B0
+	ldr r0, _080C0AE8 @ =_vt.13UnitTurnBegin
 	str r0, [sp, #0x20]
 	ldr r0, _080C0AEC @ =gUnknown_080FB710
 	ldr r3, [r0]
@@ -242,7 +242,7 @@ sub_080C0A20: @ 0x080C0A20
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
-	ldr r0, _080C0AF0 @ =vt_09F45430
+	ldr r0, _080C0AF0 @ =_vt.11UnitTurnEnd
 	str r0, [sp, #0x20]
 	ldr r0, _080C0AF4 @ =gUnknown_080FB718
 	ldr r3, [r0]
@@ -269,9 +269,9 @@ _080C0AD8: .4byte vt_09F7DD98
 _080C0ADC: .4byte _vt.3Unk
 _080C0AE0: .4byte _vt.10RoundBegin
 _080C0AE4: .4byte gUnknown_080FB708
-_080C0AE8: .4byte vt_09F454B0
+_080C0AE8: .4byte _vt.13UnitTurnBegin
 _080C0AEC: .4byte gUnknown_080FB710
-_080C0AF0: .4byte vt_09F45430
+_080C0AF0: .4byte _vt.11UnitTurnEnd
 _080C0AF4: .4byte gUnknown_080FB718
 
 	thumb_func_start sub_080C0AF8

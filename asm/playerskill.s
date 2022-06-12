@@ -3213,9 +3213,9 @@ _0807DEDE:
 	bl setsleep
 	movs r0, #1
 	movs r1, #0
-	bl sub_08073018
-	bl sub_08072B70
-	bl sub_08072D0C
+	bl sub_08073018__Fii
+	bl sub_08072B70__Fv
+	bl sub_08072D0C__Fv
 _0807DEF4:
 	ldr r0, [r4, #0x40]
 	cmp r0, #1
@@ -4248,7 +4248,7 @@ _0807E694:
 	bl name__C5Goods
 	mov r0, r8
 	adds r1, r7, #0
-	bl sub_0806E374
+	bl sub_0806E374__3MsgRC3Msg
 	adds r0, r7, #0
 	movs r1, #2
 	bl _._3Msg
@@ -4264,7 +4264,7 @@ _0807E6F4:
 	bl name__C5Goods
 	mov r0, r8
 	adds r1, r7, #0
-	bl sub_0806E374
+	bl sub_0806E374__3MsgRC3Msg
 	adds r0, r7, #0
 	movs r1, #2
 	bl _._3Msg
@@ -5544,7 +5544,7 @@ _0807F1CC:
 	b _0807F21C
 _0807F1FA:
 	adds r0, r5, #0
-	bl sub_08072AA4
+	bl sub_08072AA4__Fi
 	ldr r2, [r0, #0x1c]
 	movs r1, #0xca
 	lsls r1, r1, #2
@@ -5560,11 +5560,11 @@ _0807F1FA:
 _0807F21A:
 	adds r5, #1
 _0807F21C:
-	bl sub_08072A88
+	bl sub_08072A88__Fv
 	cmp r5, r0
 	bge _0807F240
 	adds r0, r5, #0
-	bl sub_08072AA4
+	bl sub_08072AA4__Fi
 	adds r4, r0, #0
 	ldr r1, [r7, #0x1c]
 	adds r1, #0x88
@@ -5647,7 +5647,7 @@ _0807F2AA:
 	bl _call_via_r1
 	adds r4, r0, #0
 	movs r0, #0
-	bl sub_08072AA4
+	bl sub_08072AA4__Fi
 	cmp r4, r0
 	bne _0807F394
 	movs r0, #0xd
@@ -5844,9 +5844,9 @@ _0807F42E:
 	bl setsleep
 	movs r0, #1
 	movs r1, #0
-	bl sub_08073018
-	bl sub_08072B70
-	bl sub_08072D0C
+	bl sub_08073018__Fii
+	bl sub_08072B70__Fv
+	bl sub_08072D0C__Fv
 	ldr r0, [r4, #0x40]
 	cmp r0, #0
 	beq _0807F42E
@@ -6164,7 +6164,7 @@ sub_0807F648: @ 0x0807F648
 	movs r1, #0x79
 	mov r2, r8
 	adds r3, r6, #0
-	bl sub_08073460
+	bl sub_08073460__3MsgiRC3MsgN22
 	mov r0, sl
 	mov r1, sb
 	adds r2, r4, #0
@@ -6351,7 +6351,7 @@ sub_0807F7DC: @ 0x0807F7DC
 	movs r1, #0x7a
 	mov r2, r8
 	adds r3, r6, #0
-	bl sub_08073460
+	bl sub_08073460__3MsgiRC3MsgN22
 	mov r0, sl
 	mov r1, sb
 	adds r2, r4, #0
@@ -6538,7 +6538,7 @@ sub_0807F964: @ 0x0807F964
 	movs r1, #0x79
 	mov r2, r8
 	adds r3, r6, #0
-	bl sub_08073460
+	bl sub_08073460__3MsgiRC3MsgN22
 	mov r0, sl
 	mov r1, sb
 	adds r2, r4, #0
@@ -6726,7 +6726,7 @@ sub_0807FAF4: @ 0x0807FAF4
 	movs r1, #0x79
 	mov r2, r8
 	adds r3, r6, #0
-	bl sub_08073460
+	bl sub_08073460__3MsgiRC3MsgN22
 	mov r0, sl
 	mov r1, sb
 	adds r2, r4, #0
@@ -6914,7 +6914,7 @@ sub_0807FC84: @ 0x0807FC84
 	movs r1, #0x79
 	mov r2, r8
 	adds r3, r6, #0
-	bl sub_08073460
+	bl sub_08073460__3MsgiRC3MsgN22
 	mov r0, sl
 	mov r1, sb
 	adds r2, r4, #0
@@ -7096,7 +7096,7 @@ sub_0807FE08: @ 0x0807FE08
 	movs r1, #0x79
 	mov r2, r8
 	adds r3, r6, #0
-	bl sub_08073460
+	bl sub_08073460__3MsgiRC3MsgN22
 	mov r0, sl
 	mov r1, sb
 	adds r2, r4, #0

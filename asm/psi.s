@@ -52,7 +52,7 @@ tellStatus: @ 0x080824B0
 	adds r1, r4, #0
 	add r2, sp, #4
 	adds r3, r6, #0
-	bl sub_08073460
+	bl sub_08073460__3MsgiRC3MsgN22
 	adds r0, r5, #0
 	movs r1, #2
 	bl _._3Msg
@@ -128,7 +128,7 @@ sub_08082510: @ 0x08082510
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
-	ldr r0, _08082634 @ =vt_09F454B0
+	ldr r0, _08082634 @ =_vt.13UnitTurnBegin
 	str r0, [sp, #0x20]
 	ldr r0, _08082638 @ =gUnknown_0810C610
 	ldr r3, [r0]
@@ -147,7 +147,7 @@ sub_08082510: @ 0x08082510
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
-	ldr r0, _0808263C @ =vt_09F45430
+	ldr r0, _0808263C @ =_vt.11UnitTurnEnd
 	str r0, [sp, #0x20]
 	ldr r0, _08082640 @ =gUnknown_0810C618
 	ldr r3, [r0]
@@ -198,9 +198,9 @@ _08082624: .4byte gUnknown_080E1708
 _08082628: .4byte _vt.3Unk
 _0808262C: .4byte _vt.10RoundBegin
 _08082630: .4byte gUnknown_0810C608
-_08082634: .4byte vt_09F454B0
+_08082634: .4byte _vt.13UnitTurnBegin
 _08082638: .4byte gUnknown_0810C610
-_0808263C: .4byte vt_09F45430
+_0808263C: .4byte _vt.11UnitTurnEnd
 _08082640: .4byte gUnknown_0810C618
 _08082644: .4byte _vt.8RoundEnd
 _08082648: .4byte gUnknown_0810C620
@@ -635,7 +635,7 @@ sub_080828DC: @ 0x080828DC
 	adds r1, r6, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460
+	bl sub_08073460__3MsgiRC3MsgN22
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -915,7 +915,7 @@ tellTurnAction: @ 0x08082B1C
 	adds r1, r4, #0
 	add r2, sp, #4
 	adds r3, r6, #0
-	bl sub_08073460
+	bl sub_08073460__3MsgiRC3MsgN22
 	adds r0, r5, #0
 	movs r1, #2
 	bl _._3Msg
