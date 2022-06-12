@@ -1597,7 +1597,7 @@ sub_0807B528: @ 0x0807B528
 	movs r1, #0x74
 	adds r2, r6, #0
 	adds r3, r5, #0
-	bl sub_08073460
+	bl sub_08073460__3MsgiRC3MsgN22
 	add r1, sp, #0x34
 	movs r0, #0
 	strb r0, [r1]
@@ -1685,7 +1685,7 @@ sub_0807B5D4: @ 0x0807B5D4
 	movs r1, #0x75
 	adds r2, r6, #0
 	adds r3, r5, #0
-	bl sub_08073460
+	bl sub_08073460__3MsgiRC3MsgN22
 	add r1, sp, #0x34
 	movs r0, #0
 	strb r0, [r1]
@@ -1993,7 +1993,7 @@ _0807B8AC:
 	movs r1, #0x10
 	movs r2, #0
 	movs r3, #0
-	bl sub_0807459C
+	bl sub_0807459C__FUsiii
 _0807B8DE:
 	add r0, sp, #4
 	bl __3Msg
@@ -2030,10 +2030,10 @@ _0807B8DE:
 	movs r1, #0x7f
 	mov r2, r8
 	adds r3, r6, #0
-	bl sub_08073460
+	bl sub_08073460__3MsgiRC3MsgN22
 	add r0, sp, #4
 	adds r1, r4, #0
-	bl sub_0806E2E8
+	bl sub_0806E2E8__3MsgRC3Msg
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -2176,10 +2176,10 @@ tellStatUpgrade: @ 0x0807BA3C
 	mov r1, sb
 	adds r2, r6, #0
 	adds r3, r5, #0
-	bl sub_08073460
+	bl sub_08073460__3MsgiRC3MsgN22
 	mov r0, r8
 	add r1, sp, #4
-	bl sub_0806E374
+	bl sub_0806E374__3MsgRC3Msg
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg

@@ -32,6 +32,8 @@ SECTIONS
         src/common.o(.text);
         asm/code_0805C1DC.o(.text);
         src/battle/system.o(.text);
+        asm/battle_misc.o(.text);
+        src/battle.o(.text);
         asm/battle.o(.text);
         asm/guest.o(.text);
         src/battle/guest.o(.text);

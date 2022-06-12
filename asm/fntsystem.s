@@ -2171,8 +2171,8 @@ sub_0806E2B8: @ 0x0806E2B8
 	.align 2, 0
 _0806E2E4: .4byte _vt.3Msg
 
-	thumb_func_start sub_0806E2E8
-sub_0806E2E8: @ 0x0806E2E8
+	thumb_func_start sub_0806E2E8__3MsgRC3Msg
+sub_0806E2E8__3MsgRC3Msg: @ 0x0806E2E8
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -2256,8 +2256,8 @@ sub_0806E34C: @ 0x0806E34C
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_0806E374
-sub_0806E374: @ 0x0806E374
+	thumb_func_start sub_0806E374__3MsgRC3Msg
+sub_0806E374__3MsgRC3Msg: @ 0x0806E374
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0

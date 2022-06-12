@@ -1447,7 +1447,7 @@ sub_08062DB0: @ 0x08062DB0
 	b _08062E68
 _08062DDC:
 	adds r0, r7, #0
-	bl sub_08072AA4
+	bl sub_08072AA4__Fi
 	adds r6, r0, #0
 	ldr r1, [r6, #0x1c]
 	movs r0, #0xd0
@@ -1511,7 +1511,7 @@ _08062DDC:
 _08062E66:
 	adds r7, #1
 _08062E68:
-	bl sub_08072A88
+	bl sub_08072A88__Fv
 	cmp r7, r0
 	blt _08062DDC
 	movs r0, #1

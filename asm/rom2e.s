@@ -6387,9 +6387,9 @@ _0808C002:
 	bl setsleep
 	movs r0, #1
 	movs r1, #0
-	bl sub_08073018
-	bl sub_08072B70
-	bl sub_08072D0C
+	bl sub_08073018__Fii
+	bl sub_08072B70__Fv
+	bl sub_08072D0C__Fv
 _0808C018:
 	ldr r0, [r4, #0x58]
 	cmp r0, #1
@@ -6492,9 +6492,9 @@ _0808C0B6:
 	bl setsleep
 	movs r0, #1
 	movs r1, #0
-	bl sub_08073018
-	bl sub_08072B70
-	bl sub_08072D0C
+	bl sub_08073018__Fii
+	bl sub_08072B70__Fv
+	bl sub_08072D0C__Fv
 _0808C0CC:
 	ldr r0, [r4, #0x58]
 	cmp r0, #2
@@ -9056,9 +9056,9 @@ _0808D5F2:
 	bl setsleep
 	movs r0, #1
 	movs r1, #0
-	bl sub_08073018
-	bl sub_08072B70
-	bl sub_08072D0C
+	bl sub_08073018__Fii
+	bl sub_08072B70__Fv
+	bl sub_08072D0C__Fv
 _0808D608:
 	ldr r0, [r4, #0x34]
 	cmp r0, #1
@@ -10590,9 +10590,9 @@ _0808E24C:
 	bl setsleep
 	movs r0, #1
 	movs r1, #0
-	bl sub_08073018
-	bl sub_08072B70
-	bl sub_08072D0C
+	bl sub_08073018__Fii
+	bl sub_08072B70__Fv
+	bl sub_08072D0C__Fv
 	ldr r0, [r4, #0x2c]
 	cmp r0, #0
 	beq _0808E24C
