@@ -28,7 +28,7 @@ GBAFIX := tools/gbafix/gbafix$(EXE)
 SALSA := tools/salsa/build/salsa$(EXE)
 
 CXXFLAGS := -fno-exceptions -fno-rtti -quiet
-CC1FLAGS := -mthumb-interwork -Wimplicit -Wparentheses -O2 -g3
+CC1FLAGS := -mthumb-interwork -Wimplicit -Wparentheses -O2 -g3 -fdwarf-bugfix
 CPPFLAGS := -I tools/agbcc/include -iquote include -nostdinc -undef -D VERSION_$(GAME_VERSION) -D REVISION=$(GAME_REVISION) -D $(GAME_REGION) -D DEBUG=$(DEBUG) -D DISABLE_SOUND=$(DISABLE_SOUND)
 ASFLAGS  := -mcpu=arm7tdmi -mthumb-interwork -I asminclude -I include --defsym VERSION_$(GAME_VERSION)=1 --defsym REVISION=$(GAME_REVISION) --defsym $(GAME_REGION)=1 --defsym DEBUG=$(DEBUG) --defsym GAME_VERSION=$(GAME_VERSION) --defsym GAME_REVISION=$(GAME_REVISION) --defsym DISABLE_SOUND=$(DISABLE_SOUND)
 #### Files ####
