@@ -3936,8 +3936,8 @@ _08074404:
 	pop {r0}
 	bx r0
 
-	thumb_func_start sub_08074414
-sub_08074414: @ 0x08074414
+	thumb_func_start sub_08074414__FiiibN23
+sub_08074414__FiiibN23: @ 0x08074414
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb

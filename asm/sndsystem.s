@@ -34,8 +34,8 @@ _0806FD9C:
 _0806FDA8: .4byte gUnknown_02001F20
 _0806FDAC: .4byte gUnknown_02001F24
 
-	thumb_func_start sub_0806FDB0
-sub_0806FDB0: @ 0x0806FDB0
+	thumb_func_start sub_0806FDB0__Fv
+sub_0806FDB0__Fv: @ 0x0806FDB0
 	ldr r0, _0806FDB8 @ =gUnknown_02001F24
 	ldr r0, [r0]
 	bx lr

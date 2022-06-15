@@ -23,7 +23,7 @@
 	bl init__3IrcP8IrqTable
 	bl makeInstance__12ClockManager
 	bl sub_0806FD80
-	bl sub_0806FDB0
+	bl sub_0806FDB0__Fv
 	ldr r1, [r0, #0x1c]
 	adds r1, #0x78
 	movs r3, #0
