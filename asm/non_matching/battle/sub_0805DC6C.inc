@@ -56,7 +56,7 @@
 	adds r0, r4, #0
 	movs r1, #1
 	movs r2, #0
-	bl sub_0805E670__6BattleiUc
+	bl sub_0805E670__6Battleib
 _0805DD02:
 	ldr r1, [r4, #0x1c]
 	adds r1, #0x98

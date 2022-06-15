@@ -320,13 +320,13 @@ _0805D9C6:
 	bl sub_0806B070
 	adds r4, r0, #0
 	adds r0, r7, #0
-	bl sub_0805EA88
+	bl battle_150__6Battle
 	adds r2, r0, #0
 	adds r0, r4, #0
 	movs r1, #0
 	bl sub_0806BA38
 	adds r0, r7, #0
-	bl sub_0805EA88
+	bl battle_150__6Battle
 	adds r2, r0, #0
 	adds r0, r4, #0
 	movs r1, #1
@@ -354,19 +354,19 @@ _0805D9C6:
 	movs r2, #0
 	bl sub_0806BACC
 	adds r0, r7, #0
-	bl sub_0805EA80
+	bl battle_140__6Battle
 	adds r2, r0, #0
 	adds r0, r4, #0
 	movs r1, #2
 	bl sub_0806BA38
 	adds r0, r7, #0
-	bl sub_0805EA80
+	bl battle_140__6Battle
 	adds r2, r0, #0
 	adds r0, r4, #0
 	movs r1, #3
 	bl sub_0806BA38
 	adds r0, r7, #0
-	bl sub_0805EA80
+	bl battle_140__6Battle
 	adds r1, r0, #0
 	adds r0, r4, #0
 	bl sub_0806BA68
@@ -421,7 +421,7 @@ _0805D9C6:
 	bl __builtin_new
 	bl sub_080703A4
 	str r0, [r7, #0x34]
-	bl sub_0806FDB0
+	bl sub_0806FDB0__Fv
 	ldr r1, [r0, #0x1c]
 	adds r1, #0x68
 	movs r3, #0

@@ -18,7 +18,26 @@ public:
     virtual void class2_78();
     virtual s32 class2_80();
     virtual Unit* class2_88(s32);
+    virtual void class2_a0();
+    virtual void class2_a8();
+    virtual void class2_b0();
+    virtual s32 class2_b8();
 };
+
+struct Struct160 {
+    u8 _0[0xe];
+    u16 _e;
+    u16 _10;
+    u8 _12[0x7e];
+};
+extern Struct160 gUnknown_080C7D28[];
+
+struct BattleGroup {
+    u8 _0[0xc];
+    u16 _c;
+    u16 _e;
+};
+extern BattleGroup gBattleGroupTable[];
 
 class Battle : public Base {
 public:
@@ -37,10 +56,10 @@ public:
     virtual void battle_b0();
     virtual bool battle_b8(Unit*);
     virtual bool battle_c0();
-    virtual u8 battle_c8(s32);
-    virtual void battle_d0();
-    virtual void battle_d8();
-    virtual void battle_e0();
+    virtual u8 battle_c8(u8);
+    virtual bool battle_d0();
+    virtual bool battle_d8();
+    virtual bool battle_e0();
     virtual void battle_e8();
     virtual void battle_f0();
     virtual void battle_f8();
@@ -51,45 +70,48 @@ public:
     virtual void battle_120();
     virtual void battle_128();
     virtual void battle_130();
-    virtual void battle_138();
-    virtual void battle_140();
-    virtual void battle_148();
-    virtual void battle_150();
-    virtual void battle_158();
-    virtual void battle_160();
-    virtual void battle_168();
-    virtual void battle_170();
-    virtual void battle_178();
-    virtual void battle_180();
-    virtual void battle_188();
-    virtual void battle_190();
-    virtual void battle_198();
-    virtual u8 battle_1a0();
-    virtual void battle_1a8();
-    virtual void battle_1b0();
-    virtual void battle_1b8();
-    virtual void battle_1c0();
-    virtual void battle_1c8();
-    virtual void battle_1d0();
-    virtual void battle_1d8();
-    virtual void battle_1e0();
+    virtual u16 battle_138();
+    virtual s32 battle_140();
+    virtual s32 battle_148();
+    virtual s32 battle_150();
+    virtual s32 battle_158();
+    virtual bool battle_160();
+    virtual Struct160* battle_168();
+    virtual bool battle_170();
+    virtual BattleGroup* battle_178();
+    virtual bool battle_180();
+    virtual Struct160* battle_188();
+    virtual bool battle_190();
+    virtual bool battle_198();
+    virtual bool battle_1a0();
+    virtual bool battle_1a8();
+    virtual bool battle_1b0();
+    virtual s32 battle_1b8();
+    virtual bool battle_1c0();
+    virtual bool battle_1c8();
+    virtual bool battle_1d0();
+    virtual bool battle_1d8();
+    virtual bool battle_1e0();
     virtual u16 battle_1e8();
-    virtual void battle_1f0();
-    virtual void battle_1f8();
-    virtual void battle_200();
-    virtual void battle_208();
-    virtual void battle_210();
-    virtual void battle_218();
-    virtual void battle_220();
-    virtual void battle_228();
+    virtual u16 battle_1f0();
+    virtual u16 battle_1f8();
+    virtual u8* battle_200();
+    virtual s32 battle_208();
+    virtual BgClass* battle_210();
+    virtual s32 battle_218();
+    virtual s32 battle_220();
+    virtual s32 battle_228();
     virtual Class2* battle_230();
+    virtual s32 battle_238();
 
-    void sub_0805E670(s32, u8);
+    bool sub_0805E670(s32, bool);
     void sub_0805DC1C();
     void sub_0805DC6C();
     void sub_0805DDE4();
     Monster* sub_0805E390(Unit*);
     Monster* sub_0805E338(Unit*);
+    void sub_0805E808();
+    bool sub_0805E9BC();
 
     s32 _20;
     s32 _24;
@@ -102,6 +124,11 @@ public:
     s32 _40;
     s32 _44;
     BgClass* _48;
+    s32 _4c;
+    s32 _50;
+    s32 _54;
+    Class2* _58;
+    s32 _5c;
 };
 
 class RoundBegin : public Unk {
@@ -136,6 +163,21 @@ struct UnitTurnEnd : public Unk {
     virtual ~UnitTurnEnd() {}
 
     Unit* u;
+};
+
+struct ShowDownAsWin : public Unk {
+    ShowDownAsWin() {}
+    virtual ~ShowDownAsWin() {}
+};
+
+struct ShowDownAsLose : public Unk {
+    ShowDownAsLose() {}
+    virtual ~ShowDownAsLose() {}
+};
+
+struct ShowDownAsEscape : public Unk {
+    ShowDownAsEscape() {}
+    virtual ~ShowDownAsEscape() {}
 };
 
 SINGLETON(Battle);

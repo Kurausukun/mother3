@@ -26,14 +26,14 @@ sub_080977CC: @ 0x080977CC
 	bl __builtin_new
 	adds r4, r0, #0
 	bl __4Base
-	ldr r0, _080977E8 @ =vt_09F452B0
+	ldr r0, _080977E8 @ =_vt.14ShowDownAsLose
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
 	pop {r4}
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080977E8: .4byte vt_09F452B0
+_080977E8: .4byte _vt.14ShowDownAsLose
 
 	thumb_func_start sub_080977EC
 sub_080977EC: @ 0x080977EC
@@ -60,14 +60,14 @@ sub_08097808: @ 0x08097808
 	bl __builtin_new
 	adds r4, r0, #0
 	bl __4Base
-	ldr r0, _08097824 @ =vt_09F45330
+	ldr r0, _08097824 @ =_vt.16ShowDownAsEscape
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
 	pop {r4}
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08097824: .4byte vt_09F45330
+_08097824: .4byte _vt.16ShowDownAsEscape
 
 	thumb_func_start sub_08097828
 sub_08097828: @ 0x08097828
@@ -94,14 +94,14 @@ sub_08097844: @ 0x08097844
 	bl __builtin_new
 	adds r4, r0, #0
 	bl __4Base
-	ldr r0, _08097860 @ =vt_09F453B0
+	ldr r0, _08097860 @ =_vt.13ShowDownAsWin
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
 	pop {r4}
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08097860: .4byte vt_09F453B0
+_08097860: .4byte _vt.13ShowDownAsWin
 
 	thumb_func_start sub_08097864
 sub_08097864: @ 0x08097864
@@ -779,7 +779,7 @@ sub_08097D70: @ 0x08097D70
 	cmp r0, #1
 	bne _08097D9A
 	adds r0, r4, #0
-	bl sub_0805EA38
+	bl battle_110__6Battle
 	b _08097DD6
 _08097D9A:
 	bl sub_08074614
@@ -2192,7 +2192,7 @@ sub_08098944: @ 0x08098944
 	cmp r0, #1
 	bne _08098974
 	adds r0, r4, #0
-	bl sub_0805EA38
+	bl battle_110__6Battle
 	b _080989C4
 _08098974:
 	ldr r3, _080989D4 @ =0x00000F98
@@ -2335,7 +2335,7 @@ _08098A80:
 	movs r0, #0x80
 	adds r2, r6, #0
 	movs r3, #1
-	bl sub_08074414
+	bl sub_08074414__FiiibN23
 	add sp, #8
 	pop {r4, r5, r6}
 	pop {r0}
@@ -4803,7 +4803,7 @@ sub_08099F18: @ 0x08099F18
 	cmp r0, #1
 	bne _08099F42
 	adds r0, r4, #0
-	bl sub_0805EA38
+	bl battle_110__6Battle
 	b _08099F6C
 _08099F42:
 	movs r4, #0xc8
@@ -6180,7 +6180,7 @@ sub_0809AA98: @ 0x0809AA98
 	mov r1, sl
 	movs r2, #0x5a
 	movs r3, #1
-	bl sub_08074414
+	bl sub_08074414__FiiibN23
 	ldr r2, [r6, #0x1c]
 	movs r0, #0xb2
 	lsls r0, r0, #2
@@ -7306,7 +7306,7 @@ sub_0809B488: @ 0x0809B488
 	cmp r0, #1
 	bne _0809B4B2
 	adds r0, r4, #0
-	bl sub_0805EA38
+	bl battle_110__6Battle
 	b _0809B4CC
 _0809B4B2:
 	movs r1, #0x80
@@ -8237,7 +8237,7 @@ sub_0809BBE4: @ 0x0809BBE4
 	movs r1, #0
 	ldrsh r5, [r4, r1]
 	adds r5, r0, r5
-	bl sub_0805EDAC
+	bl battle_1f8__6Battle
 	adds r1, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10

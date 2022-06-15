@@ -252,7 +252,7 @@ sub_0805F018: @ 0x0805F018
 	bl __4Base
 	ldr r0, _0805F0B0 @ =_vt.3Unk
 	mov sb, r0
-	ldr r0, _0805F0B4 @ =vt_09F453B0
+	ldr r0, _0805F0B4 @ =_vt.13ShowDownAsWin
 	str r0, [sp, #0x20]
 	ldr r0, _0805F0B8 @ =gUnknown_080F3870
 	ldr r3, [r0]
@@ -298,7 +298,7 @@ sub_0805F018: @ 0x0805F018
 	.align 2, 0
 _0805F0AC: .4byte vt_09F466F0
 _0805F0B0: .4byte _vt.3Unk
-_0805F0B4: .4byte vt_09F453B0
+_0805F0B4: .4byte _vt.13ShowDownAsWin
 _0805F0B8: .4byte gUnknown_080F3870
 _0805F0BC: .4byte _vt.8AppClock
 _0805F0C0: .4byte gUnknown_080F3878

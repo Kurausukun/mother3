@@ -198,7 +198,7 @@ sub_0807A904: @ 0x0807A904
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
-	ldr r0, _0807AADC @ =vt_09F453B0
+	ldr r0, _0807AADC @ =_vt.13ShowDownAsWin
 	str r0, [sp, #0x20]
 	ldr r0, _0807AAE0 @ =gUnknown_08108450
 	ldr r3, [r0]
@@ -217,7 +217,7 @@ sub_0807A904: @ 0x0807A904
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
-	ldr r0, _0807AAE4 @ =vt_09F45330
+	ldr r0, _0807AAE4 @ =_vt.16ShowDownAsEscape
 	str r0, [sp, #0x20]
 	ldr r0, _0807AAE8 @ =gUnknown_08108458
 	ldr r3, [r0]
@@ -251,9 +251,9 @@ _0807AACC: .4byte _vt.10RoundBegin
 _0807AAD0: .4byte gUnknown_08108440
 _0807AAD4: .4byte _vt.8RoundEnd
 _0807AAD8: .4byte gUnknown_08108448
-_0807AADC: .4byte vt_09F453B0
+_0807AADC: .4byte _vt.13ShowDownAsWin
 _0807AAE0: .4byte gUnknown_08108450
-_0807AAE4: .4byte vt_09F45330
+_0807AAE4: .4byte _vt.16ShowDownAsEscape
 _0807AAE8: .4byte gUnknown_08108458
 
 	thumb_func_start sub_0807AAEC

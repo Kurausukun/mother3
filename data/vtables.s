@@ -218,40 +218,40 @@ vt_09F45058::
 	.4byte battle_c0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E59C
+	.4byte battle_c8__6BattleUc
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E664
+	.4byte battle_d0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E668
+	.4byte battle_d8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E66C
+	.4byte battle_e0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E690
+	.4byte battle_e8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E700
+	.4byte battle_f0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E8A4
+	.4byte battle_f8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte onBattleLost
+	.4byte battle_100__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E9EC
+	.4byte battle_108__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA38
+	.4byte battle_110__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA5C
+	.4byte battle_118__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_51
+	.4byte battle_120__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte sub_0805DC6C__6Battle
@@ -260,103 +260,103 @@ vt_09F45058::
 	.4byte sub_0805DDE4__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA7C
+	.4byte battle_138__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA80
+	.4byte battle_140__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA84
+	.4byte battle_148__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA88
+	.4byte battle_150__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA8C
+	.4byte battle_158__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA90
+	.4byte battle_160__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EAA8
+	.4byte battle_168__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EAC4
+	.4byte battle_170__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EADC
+	.4byte battle_178__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EAF0
+	.4byte battle_180__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EB08
+	.4byte battle_188__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EB24
+	.4byte battle_190__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EB38
+	.4byte battle_198__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EB4C
+	.4byte battle_1a0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EB60
+	.4byte battle_1a8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC00
+	.4byte battle_1b0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC14
+	.4byte battle_1b8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC18
+	.4byte battle_1c0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC2C
+	.4byte battle_1c8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC40
+	.4byte battle_1d0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC54
+	.4byte battle_1d8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC68
+	.4byte battle_1e0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC7C
+	.4byte battle_1e8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805ED14
+	.4byte battle_1f0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDAC
+	.4byte battle_1f8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDB0
+	.4byte battle_200__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDB8
+	.4byte battle_208__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDBC
+	.4byte battle_210__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDC0
+	.4byte battle_218__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDC4
+	.4byte battle_220__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDC8
+	.4byte battle_228__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDCC
+	.4byte battle_230__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDD0
+	.4byte battle_238__6Battle
 
 vt_09F45298::
 	.2byte 0
@@ -369,7 +369,7 @@ vt_09F45298::
 	.2byte 0
 	.4byte sub_080977B4
 
-vt_09F452B0::
+_vt.14ShowDownAsLose::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -421,7 +421,7 @@ vt_09F45318::
 	.2byte 0
 	.4byte sub_080977CC
 
-vt_09F45330::
+_vt.16ShowDownAsEscape::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -473,7 +473,7 @@ vt_09F45398::
 	.2byte 0
 	.4byte sub_08097808
 
-vt_09F453B0::
+_vt.13ShowDownAsWin::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -811,40 +811,40 @@ vt_09F45630::
 	.4byte battle_c0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E59C
+	.4byte battle_c8__6BattleUc
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E664
+	.4byte battle_d0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E668
+	.4byte battle_d8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E66C
+	.4byte battle_e0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E690
+	.4byte battle_e8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E700
+	.4byte battle_f0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E8A4
+	.4byte battle_f8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte onBattleLost
+	.4byte battle_100__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E9EC
+	.4byte battle_108__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte sub_08097D70
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA5C
+	.4byte battle_118__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_51
+	.4byte battle_120__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte sub_0805DC6C__6Battle
@@ -853,103 +853,103 @@ vt_09F45630::
 	.4byte sub_0805DDE4__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA7C
+	.4byte battle_138__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA80
+	.4byte battle_140__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA84
+	.4byte battle_148__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA88
+	.4byte battle_150__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA8C
+	.4byte battle_158__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA90
+	.4byte battle_160__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EAA8
+	.4byte battle_168__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EAC4
+	.4byte battle_170__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EADC
+	.4byte battle_178__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EAF0
+	.4byte battle_180__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EB08
+	.4byte battle_188__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EB24
+	.4byte battle_190__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EB38
+	.4byte battle_198__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EB4C
+	.4byte battle_1a0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EB60
+	.4byte battle_1a8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC00
+	.4byte battle_1b0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC14
+	.4byte battle_1b8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC18
+	.4byte battle_1c0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC2C
+	.4byte battle_1c8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC40
+	.4byte battle_1d0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC54
+	.4byte battle_1d8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC68
+	.4byte battle_1e0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC7C
+	.4byte battle_1e8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805ED14
+	.4byte battle_1f0__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809BBE4
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDB0
+	.4byte battle_200__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDB8
+	.4byte battle_208__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDBC
+	.4byte battle_210__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDC0
+	.4byte battle_218__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDC4
+	.4byte battle_220__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDC8
+	.4byte battle_228__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDCC
+	.4byte battle_230__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDD0
+	.4byte battle_238__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte sub_08097CB4
@@ -1074,40 +1074,40 @@ vt_09F458E8::
 	.4byte battle_c0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E59C
+	.4byte battle_c8__6BattleUc
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E664
+	.4byte battle_d0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E668
+	.4byte battle_d8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E66C
+	.4byte battle_e0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E690
+	.4byte battle_e8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E700
+	.4byte battle_f0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E8A4
+	.4byte battle_f8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte onBattleLost
+	.4byte battle_100__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E9EC
+	.4byte battle_108__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte sub_08098944
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA5C
+	.4byte battle_118__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_51
+	.4byte battle_120__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte sub_0805DC6C__6Battle
@@ -1116,103 +1116,103 @@ vt_09F458E8::
 	.4byte sub_0805DDE4__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA7C
+	.4byte battle_138__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA80
+	.4byte battle_140__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA84
+	.4byte battle_148__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA88
+	.4byte battle_150__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA8C
+	.4byte battle_158__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA90
+	.4byte battle_160__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EAA8
+	.4byte battle_168__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EAC4
+	.4byte battle_170__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EADC
+	.4byte battle_178__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EAF0
+	.4byte battle_180__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EB08
+	.4byte battle_188__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EB24
+	.4byte battle_190__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EB38
+	.4byte battle_198__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EB4C
+	.4byte battle_1a0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EB60
+	.4byte battle_1a8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC00
+	.4byte battle_1b0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC14
+	.4byte battle_1b8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC18
+	.4byte battle_1c0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC2C
+	.4byte battle_1c8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC40
+	.4byte battle_1d0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC54
+	.4byte battle_1d8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC68
+	.4byte battle_1e0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC7C
+	.4byte battle_1e8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805ED14
+	.4byte battle_1f0__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809BBE4
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDB0
+	.4byte battle_200__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDB8
+	.4byte battle_208__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDBC
+	.4byte battle_210__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDC0
+	.4byte battle_218__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDC4
+	.4byte battle_220__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDC8
+	.4byte battle_228__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDCC
+	.4byte battle_230__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDD0
+	.4byte battle_238__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte sub_08097CB4
@@ -1370,40 +1370,40 @@ vt_09F45BF8::
 	.4byte battle_c0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E59C
+	.4byte battle_c8__6BattleUc
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E664
+	.4byte battle_d0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E668
+	.4byte battle_d8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E66C
+	.4byte battle_e0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E690
+	.4byte battle_e8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E700
+	.4byte battle_f0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E8A4
+	.4byte battle_f8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte onBattleLost
+	.4byte battle_100__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E9EC
+	.4byte battle_108__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte sub_08099F18
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA5C
+	.4byte battle_118__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_51
+	.4byte battle_120__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte sub_0805DC6C__6Battle
@@ -1412,103 +1412,103 @@ vt_09F45BF8::
 	.4byte sub_0805DDE4__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA7C
+	.4byte battle_138__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA80
+	.4byte battle_140__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA84
+	.4byte battle_148__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA88
+	.4byte battle_150__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA8C
+	.4byte battle_158__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA90
+	.4byte battle_160__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EAA8
+	.4byte battle_168__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EAC4
+	.4byte battle_170__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EADC
+	.4byte battle_178__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EAF0
+	.4byte battle_180__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EB08
+	.4byte battle_188__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EB24
+	.4byte battle_190__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EB38
+	.4byte battle_198__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EB4C
+	.4byte battle_1a0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EB60
+	.4byte battle_1a8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC00
+	.4byte battle_1b0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC14
+	.4byte battle_1b8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC18
+	.4byte battle_1c0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC2C
+	.4byte battle_1c8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC40
+	.4byte battle_1d0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC54
+	.4byte battle_1d8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC68
+	.4byte battle_1e0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC7C
+	.4byte battle_1e8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805ED14
+	.4byte battle_1f0__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809BBE4
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDB0
+	.4byte battle_200__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDB8
+	.4byte battle_208__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDBC
+	.4byte battle_210__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDC0
+	.4byte battle_218__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDC4
+	.4byte battle_220__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDC8
+	.4byte battle_228__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDCC
+	.4byte battle_230__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDD0
+	.4byte battle_238__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte sub_08097CB4
@@ -1645,40 +1645,40 @@ vt_09F45ED0::
 	.4byte battle_c0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E59C
+	.4byte battle_c8__6BattleUc
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809B398
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E668
+	.4byte battle_d8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E66C
+	.4byte battle_e0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E690
+	.4byte battle_e8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E700
+	.4byte battle_f0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E8A4
+	.4byte battle_f8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte onBattleLost
+	.4byte battle_100__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E9EC
+	.4byte battle_108__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA38
+	.4byte battle_110__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA5C
+	.4byte battle_118__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_51
+	.4byte battle_120__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte sub_0805DC6C__6Battle
@@ -1687,103 +1687,103 @@ vt_09F45ED0::
 	.4byte sub_0805DDE4__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA7C
+	.4byte battle_138__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA80
+	.4byte battle_140__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA84
+	.4byte battle_148__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA88
+	.4byte battle_150__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA8C
+	.4byte battle_158__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA90
+	.4byte battle_160__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EAA8
+	.4byte battle_168__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EAC4
+	.4byte battle_170__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EADC
+	.4byte battle_178__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EAF0
+	.4byte battle_180__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EB08
+	.4byte battle_188__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EB24
+	.4byte battle_190__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EB38
+	.4byte battle_198__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EB4C
+	.4byte battle_1a0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EB60
+	.4byte battle_1a8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC00
+	.4byte battle_1b0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC14
+	.4byte battle_1b8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC18
+	.4byte battle_1c0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC2C
+	.4byte battle_1c8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC40
+	.4byte battle_1d0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC54
+	.4byte battle_1d8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC68
+	.4byte battle_1e0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC7C
+	.4byte battle_1e8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805ED14
+	.4byte battle_1f0__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809BBE4
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDB0
+	.4byte battle_200__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDB8
+	.4byte battle_208__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDBC
+	.4byte battle_210__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDC0
+	.4byte battle_218__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDC4
+	.4byte battle_220__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDC8
+	.4byte battle_228__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDCC
+	.4byte battle_230__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDD0
+	.4byte battle_238__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte sub_08097CB4
@@ -1923,42 +1923,42 @@ vt_09F461B0::
 	.4byte battle_c0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E59C
+	.4byte battle_c8__6BattleUc
 
 vt_09F46280::
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E664
+	.4byte battle_d0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E668
+	.4byte battle_d8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E66C
+	.4byte battle_e0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E690
+	.4byte battle_e8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E700
+	.4byte battle_f0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E8A4
+	.4byte battle_f8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte onBattleLost
+	.4byte battle_100__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E9EC
+	.4byte battle_108__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809B488
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA5C
+	.4byte battle_118__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_51
+	.4byte battle_120__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte sub_0805DC6C__6Battle
@@ -1967,103 +1967,103 @@ vt_09F46280::
 	.4byte sub_0805DDE4__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA7C
+	.4byte battle_138__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA80
+	.4byte battle_140__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA84
+	.4byte battle_148__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA88
+	.4byte battle_150__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA8C
+	.4byte battle_158__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA90
+	.4byte battle_160__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EAA8
+	.4byte battle_168__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EAC4
+	.4byte battle_170__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EADC
+	.4byte battle_178__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EAF0
+	.4byte battle_180__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EB08
+	.4byte battle_188__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EB24
+	.4byte battle_190__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EB38
+	.4byte battle_198__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EB4C
+	.4byte battle_1a0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EB60
+	.4byte battle_1a8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC00
+	.4byte battle_1b0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC14
+	.4byte battle_1b8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC18
+	.4byte battle_1c0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC2C
+	.4byte battle_1c8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC40
+	.4byte battle_1d0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC54
+	.4byte battle_1d8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC68
+	.4byte battle_1e0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC7C
+	.4byte battle_1e8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805ED14
+	.4byte battle_1f0__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809BBE4
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDB0
+	.4byte battle_200__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDB8
+	.4byte battle_208__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDBC
+	.4byte battle_210__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDC0
+	.4byte battle_218__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDC4
+	.4byte battle_220__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDC8
+	.4byte battle_228__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDCC
+	.4byte battle_230__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDD0
+	.4byte battle_238__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte sub_08097CB4
@@ -2179,40 +2179,40 @@ vt_09F46450::
 	.4byte battle_c0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E59C
+	.4byte battle_c8__6BattleUc
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E664
+	.4byte battle_d0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E668
+	.4byte battle_d8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E66C
+	.4byte battle_e0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E690
+	.4byte battle_e8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E700
+	.4byte battle_f0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E8A4
+	.4byte battle_f8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte onBattleLost
+	.4byte battle_100__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805E9EC
+	.4byte battle_108__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA38
+	.4byte battle_110__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA5C
+	.4byte battle_118__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_51
+	.4byte battle_120__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte sub_0805DC6C__6Battle
@@ -2221,103 +2221,103 @@ vt_09F46450::
 	.4byte sub_0805DDE4__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA7C
+	.4byte battle_138__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA80
+	.4byte battle_140__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA84
+	.4byte battle_148__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA88
+	.4byte battle_150__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA8C
+	.4byte battle_158__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EA90
+	.4byte battle_160__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EAA8
+	.4byte battle_168__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EAC4
+	.4byte battle_170__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EADC
+	.4byte battle_178__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EAF0
+	.4byte battle_180__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EB08
+	.4byte battle_188__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EB24
+	.4byte battle_190__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EB38
+	.4byte battle_198__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EB4C
+	.4byte battle_1a0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EB60
+	.4byte battle_1a8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC00
+	.4byte battle_1b0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC14
+	.4byte battle_1b8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC18
+	.4byte battle_1c0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC2C
+	.4byte battle_1c8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC40
+	.4byte battle_1d0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC54
+	.4byte battle_1d8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC68
+	.4byte battle_1e0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EC7C
+	.4byte battle_1e8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805ED14
+	.4byte battle_1f0__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809BBE4
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDB0
+	.4byte battle_200__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDB8
+	.4byte battle_208__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDBC
+	.4byte battle_210__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDC0
+	.4byte battle_218__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDC4
+	.4byte battle_220__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDC8
+	.4byte battle_228__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDCC
+	.4byte battle_230__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805EDD0
+	.4byte battle_238__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte sub_08097CB4
