@@ -49,7 +49,7 @@ public:
     Base();
     virtual ~Base();
 
-    virtual void* getInstance();
+    virtual void* getRTTI();
     virtual void base_1c();
     virtual s32 base_24();
     virtual void base_2c();

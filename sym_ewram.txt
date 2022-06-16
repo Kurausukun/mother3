@@ -154,7 +154,7 @@
 . = 0x00002210; gUnknown_02002210 = .;
 . = 0x00002214; gUnknown_02002214 = .;
 . = 0x00002218; gUnknown_02002218 = .;
-. = 0x00002318; sGuestSingleton = .;
+. = 0x00002318; sGuestRTTI = .;
 . = 0x00002328; sGuestSpawners = .;
 . = 0x00002368; sGuestSkillSingleton = .;
 . = 0x00002378; gUnknown_02002378 = .;

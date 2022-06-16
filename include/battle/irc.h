@@ -38,7 +38,7 @@ public:
     Irc();
     virtual ~Irc();
 
-    virtual void* getInstance();
+    virtual void* getRTTI();
 
     void init(IrqTable* tbl);
     void disableAll();

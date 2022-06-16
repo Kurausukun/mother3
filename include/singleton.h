@@ -24,10 +24,31 @@ struct Singleton {
     // todo: make pure virtual once children are finished
     virtual const char* getName();  // = 0;
 
-    Singleton* prev; // debug related?
+    Singleton* prev;  // debug related?
     Singleton* next;
 };
 
+#define RTTI(CLASS)                                                                                \
+    struct CLASS##RTTI : Singleton {                                                               \
+        virtual const char* getName();                                                             \
+                                                                                                   \
+        static void* init(u16 id);                                                                 \
+        static void* get();                                                                        \
+    };
+
+#define RTTI_IMPL(CLASS)                                                                           \
+    CLASS##RTTI s##CLASS##RTTI;                                                                    \
+                                                                                                   \
+    void* CLASS##RTTI::get() {                                                                     \
+        return &s##CLASS##RTTI;                                                                    \
+    }                                                                                              \
+                                                                                                   \
+    /* this is implementing a CLASS member function!!! */                                          \
+    void* CLASS::getRTTI() {                                                                       \
+        return CLASS##RTTI::get();                                                                 \
+    }
+
+// TODO :::::::: this is actually RTTI
 #define SINGLETON(CLASS)                                                                           \
     struct CLASS##Singleton : Singleton {                                                          \
         virtual const char* getName();                                                             \
@@ -39,11 +60,16 @@ struct Singleton {
 #define SINGLETON_IMPL(CLASS)                                                                      \
     CLASS##Singleton s##CLASS##Singleton;                                                          \
                                                                                                    \
-    void* CLASS##Singleton::get() { return &s##CLASS##Singleton; }                     \
+    void* CLASS##Singleton::get() {                                                                \
+        return &s##CLASS##Singleton;                                                               \
+    }                                                                                              \
                                                                                                    \
     /* this is implementing a CLASS member function!!! */                                          \
-    void* CLASS::getInstance() { return CLASS##Singleton::get(); }
+    void* CLASS::getRTTI() {                                                                   \
+        return CLASS##Singleton::get();                                                            \
+    }
 
+/// TODO ::::::: This is actually singleton
 #define SINGLETON_MGR(CLASS)                                                                       \
     struct CLASS##Manager : Singleton {                                                            \
     public:                                                                                        \
@@ -62,7 +88,9 @@ struct Singleton {
 #define SINGLETON_MGR_IMPL(CLASS)                                                                  \
     CLASS##Manager s##CLASS##Manager;                                                              \
                                                                                                    \
-    CLASS##Manager* CLASS##Manager::manager() { return &s##CLASS##Manager; }                       \
+    CLASS##Manager* CLASS##Manager::manager() {                                                    \
+        return &s##CLASS##Manager;                                                                 \
+    }                                                                                              \
                                                                                                    \
     CLASS* CLASS##Manager::makeInstance() {                                                        \
         if (++mSingletonGuard == 1)                                                                \
@@ -70,7 +98,9 @@ struct Singleton {
         return mSingleton;                                                                         \
     }                                                                                              \
                                                                                                    \
-    CLASS* CLASS##Manager::get() { return mSingleton; }                                            \
+    CLASS* CLASS##Manager::get() {                                                                 \
+        return mSingleton;                                                                         \
+    }                                                                                              \
                                                                                                    \
     void CLASS##Manager::destroy() {                                                               \
         if (mSingletonGuard <= 0 || --mSingletonGuard != 0)                                        \
@@ -81,19 +111,29 @@ struct Singleton {
         mSingleton = 0;                                                                            \
     }                                                                                              \
                                                                                                    \
-    void* CLASS::getInstance() { return CLASS##Manager::manager(); }
+    void* CLASS::getRTTI() {                                                                   \
+        return CLASS##Manager::manager();                                                          \
+    }
 
 #define SINGLETON_DEBUG(CLASS, STR)                                                                \
     /*const char* class##Singleton::getName() { return #CLASS; }*/                                 \
     extern const char STR[];                                                                       \
-    void* CLASS##Singleton::init(u16 id) { return new CLASS; }                                     \
-    const char* CLASS##Singleton::getName() { return STR; }                                        \
+    void* CLASS##Singleton::init(u16 id) {                                                         \
+        return new CLASS;                                                                          \
+    }                                                                                              \
+    const char* CLASS##Singleton::getName() {                                                      \
+        return STR;                                                                                \
+    }                                                                                              \
     /* CLASS::~CLASS() {} TODO: class destructor is inlined here, how do we generate this? */
 
 #define SINGLETON_DEBUG_MGR(CLASS, STR)                                                            \
     /*const char* class##Manager::getName() { return #CLASS; }*/                                   \
     extern const char STR[];                                                                       \
-    void* CLASS##Manager::init() { return new CLASS; }                                             \
-    const char* CLASS##Manager::getName() { return STR; }
+    void* CLASS##Manager::init() {                                                                 \
+        return new CLASS;                                                                          \
+    }                                                                                              \
+    const char* CLASS##Manager::getName() {                                                        \
+        return STR;                                                                                \
+    }
 
 #endif  // SINGLETON_H

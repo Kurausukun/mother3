@@ -14,7 +14,7 @@ public:
     GuestSkill(u16 id, Unit* user);
     virtual ~GuestSkill();
 
-    void* getInstance();
+    void* getRTTI();
 
     Action* action_1c0();
     u16 id() const;

@@ -18,7 +18,7 @@ void Base::base_5c() {
     }
 }
 
-void* Base::getInstance() {
+void* Base::getRTTI() {
     return NULL;
 }
 

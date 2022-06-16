@@ -14,7 +14,7 @@ void battle_end_callback(Guest* g) {
     g->clearNullOutgoing();
 }
 
-SINGLETON_IMPL(Guest);
+RTTI_IMPL(Guest);
 
 Msg getName(u32 idx) {
     return Msg::genMisctextMsg(get_misctext_msg(6, idx), get_misctext_len(6));

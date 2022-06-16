@@ -35,7 +35,7 @@ _vt.6System::
 	.4byte _._6System
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__6System
+	.4byte getRTTI__6System
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -108,7 +108,7 @@ _vt.3Unk::
 	.4byte temp_080977A0
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -2364,7 +2364,7 @@ vt_09F466F0::
 	.4byte sub_0805F0C8
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -2411,7 +2411,7 @@ vt_09F46768::
 	.4byte sub_0805F448
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -2467,7 +2467,7 @@ vt_09F467F8::
 	.4byte sub_0805FA8C
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -6433,7 +6433,7 @@ vt_09F490E8::
 	.4byte sub_08061048
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -10341,7 +10341,7 @@ vt_09F4B948::
 	.4byte sub_08061B30
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -10444,7 +10444,7 @@ _vt.5Guest::
 	.4byte _._5Guest
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__5Guest
+	.4byte getRTTI__5Guest
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -10716,7 +10716,7 @@ _vt.5Guest::
 	.2byte 0
 	.4byte object_38__5Guest
 
-_vt.14GuestSingleton::
+_vt.9GuestRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -10783,7 +10783,7 @@ vt_09F4BDC8::
 	.4byte sub_080A02E4
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__5Guest
+	.4byte getRTTI__5Guest
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -11123,7 +11123,7 @@ vt_09F4C148::
 	.4byte sub_080A04B0
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__5Guest
+	.4byte getRTTI__5Guest
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -11472,7 +11472,7 @@ vt_09F4C4E0::
 	.4byte sub_080A073C
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__5Guest
+	.4byte getRTTI__5Guest
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -11815,7 +11815,7 @@ vt_09F4C868::
 	.4byte sub_080A0918
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__5Guest
+	.4byte getRTTI__5Guest
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -12161,7 +12161,7 @@ vt_09F4CBF8::
 	.4byte sub_080A095C
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__5Guest
+	.4byte getRTTI__5Guest
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -12501,7 +12501,7 @@ vt_09F4CF78::
 	.4byte sub_080A09A8
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__5Guest
+	.4byte getRTTI__5Guest
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -12841,7 +12841,7 @@ vt_09F4D2F8::
 	.4byte sub_080A0A0C
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__5Guest
+	.4byte getRTTI__5Guest
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -13134,7 +13134,7 @@ vt_09F4D600::
 	.4byte sub_080A0B90
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__10GuestSkill
+	.4byte getRTTI__10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -13388,7 +13388,7 @@ vt_09F4D8A0::
 	.4byte sub_080A0BCC
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__10GuestSkill
+	.4byte getRTTI__10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -13642,7 +13642,7 @@ vt_09F4DB40::
 	.4byte sub_080A0C18
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__10GuestSkill
+	.4byte getRTTI__10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -13896,7 +13896,7 @@ vt_09F4DDE0::
 	.4byte sub_080A0D34
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__10GuestSkill
+	.4byte getRTTI__10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -14150,7 +14150,7 @@ vt_09F4E080::
 	.4byte sub_080A0DD0
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__10GuestSkill
+	.4byte getRTTI__10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -14404,7 +14404,7 @@ vt_09F4E320::
 	.4byte sub_080625A4
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -70236,7 +70236,7 @@ vt_09F723D0::
 	.4byte sub_080B6CC4
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -70361,7 +70361,7 @@ vt_09F72518::
 	.4byte sub_080B6D3C
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -70486,7 +70486,7 @@ vt_09F72660::
 	.4byte sub_080B6DB0
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -70611,7 +70611,7 @@ vt_09F727A8::
 	.4byte sub_080B6EF4
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -70787,7 +70787,7 @@ vt_09F72978::
 	.4byte sub_080B7038
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -70963,7 +70963,7 @@ vt_09F72B48::
 	.4byte sub_080B7428
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -71139,7 +71139,7 @@ vt_09F72D18::
 	.4byte sub_080B76D0
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -71315,7 +71315,7 @@ vt_09F72EE8::
 	.4byte sub_080B780C
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -71491,7 +71491,7 @@ vt_09F730B8::
 	.4byte sub_080B7948
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -71667,7 +71667,7 @@ vt_09F73288::
 	.4byte sub_080B7D30
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -71843,7 +71843,7 @@ vt_09F73458::
 	.4byte sub_080B7FD4
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -72019,7 +72019,7 @@ vt_09F73628::
 	.4byte sub_080B8484
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -72195,7 +72195,7 @@ vt_09F737F8::
 	.4byte sub_080B891C
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -72371,7 +72371,7 @@ vt_09F739C8::
 	.4byte sub_080B8BC4
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -72547,7 +72547,7 @@ vt_09F73B98::
 	.4byte sub_080B8E5C
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -72723,7 +72723,7 @@ vt_09F73D68::
 	.4byte sub_080B9104
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -72899,7 +72899,7 @@ vt_09F73F38::
 	.4byte sub_080B93AC
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -73075,7 +73075,7 @@ vt_09F74108::
 	.4byte sub_080B9644
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -73251,7 +73251,7 @@ vt_09F742D8::
 	.4byte sub_080B98EC
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -73427,7 +73427,7 @@ vt_09F744A8::
 	.4byte sub_080B9B98
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -73603,7 +73603,7 @@ vt_09F74678::
 	.4byte sub_080B9E34
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -73779,7 +73779,7 @@ vt_09F74848::
 	.4byte sub_080BA0E0
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -73955,7 +73955,7 @@ vt_09F74A18::
 	.4byte sub_080BA38C
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -74131,7 +74131,7 @@ vt_09F74BE8::
 	.4byte sub_080BA638
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -74307,7 +74307,7 @@ vt_09F74DB8::
 	.4byte sub_080BA8F4
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -74483,7 +74483,7 @@ vt_09F74F88::
 	.4byte sub_080BAA40
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -74659,7 +74659,7 @@ vt_09F75158::
 	.4byte sub_080BAAB8
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -74835,7 +74835,7 @@ vt_09F75328::
 	.4byte sub_080BAB30
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -75011,7 +75011,7 @@ vt_09F754F8::
 	.4byte sub_080BB100
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -75187,7 +75187,7 @@ vt_09F756C8::
 	.4byte sub_080BB178
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -75312,7 +75312,7 @@ vt_09F75810::
 	.4byte sub_080BB1F0
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -75437,7 +75437,7 @@ vt_09F75958::
 	.4byte sub_080BB268
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -75562,7 +75562,7 @@ vt_09F75AA0::
 	.4byte sub_080BB2E0
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -75687,7 +75687,7 @@ vt_09F75BE8::
 	.4byte sub_080BB358
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -75812,7 +75812,7 @@ vt_09F75D30::
 	.4byte sub_080BB3D0
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -75937,7 +75937,7 @@ vt_09F75E78::
 	.4byte sub_080BB448
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -76062,7 +76062,7 @@ vt_09F75FC0::
 	.4byte sub_080BB4C0
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -76187,7 +76187,7 @@ vt_09F76108::
 	.4byte sub_080BB538
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -76312,7 +76312,7 @@ vt_09F76250::
 	.4byte sub_080BB5B0
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -76437,7 +76437,7 @@ vt_09F76398::
 	.4byte sub_080BB6C4
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -76562,7 +76562,7 @@ vt_09F764E0::
 	.4byte sub_080BB73C
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -76687,7 +76687,7 @@ vt_09F76628::
 	.4byte sub_080BB850
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -76812,7 +76812,7 @@ vt_09F76770::
 	.4byte sub_080BB8C8
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -76937,7 +76937,7 @@ vt_09F768B8::
 	.4byte sub_080BB9EC
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -77062,7 +77062,7 @@ vt_09F76A00::
 	.4byte sub_080BBB24
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -77187,7 +77187,7 @@ vt_09F76B48::
 	.4byte sub_080BBC5C
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -77312,7 +77312,7 @@ vt_09F76C90::
 	.4byte sub_080BBCD4
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -77437,7 +77437,7 @@ vt_09F76DD8::
 	.4byte sub_080BBE0C
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -77562,7 +77562,7 @@ vt_09F76F20::
 	.4byte sub_080BBF44
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -77687,7 +77687,7 @@ vt_09F77068::
 	.4byte sub_080BC050
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -77812,7 +77812,7 @@ vt_09F771B0::
 	.4byte sub_080BC15C
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -77937,7 +77937,7 @@ vt_09F772F8::
 	.4byte sub_080BC170
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -88146,7 +88146,7 @@ vt_09F7DC80::
 	.4byte sub_080C0B44
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -88253,7 +88253,7 @@ vt_09F7DD98::
 	.4byte sub_080C0B64
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -88360,7 +88360,7 @@ vt_09F7DEB0::
 	.4byte sub_080652A8
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -88428,7 +88428,7 @@ vt_09F7DF60::
 	.4byte sub_08065738
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -88568,7 +88568,7 @@ vt_09F7E0D0::
 	.4byte sub_0806598C
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -88801,7 +88801,7 @@ vt_09F7E328::
 	.4byte sub_080662B0
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -88875,7 +88875,7 @@ vt_09F7E3E8::
 	.4byte sub_080666F4
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -88919,7 +88919,7 @@ vt_09F7E458::
 	.4byte sub_080C0B90
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -89005,7 +89005,7 @@ vt_09F7E538::
 	.4byte sub_08066E6C
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -89118,7 +89118,7 @@ vt_09F7E660::
 	.4byte sub_080C0BA4
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -89213,7 +89213,7 @@ vt_09F7E758::
 	.4byte sub_08067D8C
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -89332,7 +89332,7 @@ vt_09F7E890::
 	.4byte sub_080C0BB8
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -89427,7 +89427,7 @@ vt_09F7E988::
 	.4byte sub_080C0BCC
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -89541,7 +89541,7 @@ _vt.4Base::
 	.4byte _._4Base + 1
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -89590,7 +89590,7 @@ _vt.3Irc::
 	.4byte _._3Irc
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__3Irc
+	.4byte getRTTI__3Irc
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -89642,7 +89642,7 @@ _vt.5Clock::
 	.4byte _._5Clock
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__5Clock
+	.4byte getRTTI__5Clock
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -89694,7 +89694,7 @@ _vt.12PostSysClock::
 	.4byte _._12PostSysClock
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__12PostSysClock
+	.4byte getRTTI__12PostSysClock
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -89746,7 +89746,7 @@ _vt.12PostAppClock::
 	.4byte _._12PostAppClock
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__12PostAppClock
+	.4byte getRTTI__12PostAppClock
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -89798,7 +89798,7 @@ _vt.8AppClock::
 	.4byte _._8AppClock
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__8AppClock
+	.4byte getRTTI__8AppClock
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -89850,7 +89850,7 @@ _vt.11PreAppClock::
 	.4byte _._11PreAppClock
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__11PreAppClock
+	.4byte getRTTI__11PreAppClock
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -89902,7 +89902,7 @@ _vt.8SysClock::
 	.4byte _._8SysClock
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__8SysClock
+	.4byte getRTTI__8SysClock
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -89954,7 +89954,7 @@ _vt.11PreSysClock::
 	.4byte _._11PreSysClock
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__11PreSysClock
+	.4byte getRTTI__11PreSysClock
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -91382,7 +91382,7 @@ vt_09F7FC50::
 	.4byte sub_0806D6E0
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -91459,7 +91459,7 @@ vt_09F7FD18::
 	.4byte sub_0806D9A4
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -91554,7 +91554,7 @@ vt_09F7FE10::
 	.4byte sub_0806DD48
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -91736,7 +91736,7 @@ vt_09F7FFE0::
 	.4byte sub_0806E8BC
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -91889,7 +91889,7 @@ vt_09F80168::
 	.4byte sub_0806EE90
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -91969,7 +91969,7 @@ vt_09F80238::
 	.4byte sub_0806F26C
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -92070,7 +92070,7 @@ vt_09F80340::
 	.4byte sub_0806F5EC
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -92129,7 +92129,7 @@ vt_09F803D8::
 	.4byte sub_0806F89C
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -92188,7 +92188,7 @@ vt_09F80470::
 	.4byte sub_0806FA00
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -92396,7 +92396,7 @@ vt_09F80680::
 	.4byte sub_0806FFA8
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -92488,7 +92488,7 @@ vt_09F80770::
 	.4byte sub_08070414
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -92538,7 +92538,7 @@ vt_09F807F0::
 	.4byte sub_080708A8
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -92678,7 +92678,7 @@ vt_09F80960::
 	.4byte sub_0807105C
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -92818,7 +92818,7 @@ vt_09F80AD0::
 	.4byte sub_0807113C
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -92904,7 +92904,7 @@ vt_09F80BB0::
 	.4byte sub_08071334
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -92987,7 +92987,7 @@ vt_09F80C88::
 	.4byte sub_080717F8
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -93043,7 +93043,7 @@ vt_09F80D18::
 	.4byte sub_08071B7C
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -93138,7 +93138,7 @@ vt_09F80E10::
 	.4byte sub_08071CB0
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -93233,7 +93233,7 @@ vt_09F80F08::
 	.4byte sub_08071DE4
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -93328,7 +93328,7 @@ vt_09F81000::
 	.4byte sub_08071F14
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -93423,7 +93423,7 @@ vt_09F810F8::
 	.4byte _._10KeyFocuser
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -93788,7 +93788,7 @@ _vt.4Unit::
 	.4byte _._4Unit + 1
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -94054,7 +94054,7 @@ _vt.7UnitDie::
 	.4byte _._7UnitDie
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__7UnitDie
+	.4byte getRTTI__7UnitDie
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -94106,7 +94106,7 @@ _vt.10UnitEscape::
 	.4byte _._10UnitEscape
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__10UnitEscape
+	.4byte getRTTI__10UnitEscape
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -94158,7 +94158,7 @@ _vt.10UnitRevive::
 	.4byte _._10UnitRevive
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__10UnitRevive
+	.4byte getRTTI__10UnitRevive
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -94210,7 +94210,7 @@ _vt.8UnitJoin::
 	.4byte _._8UnitJoin
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__8UnitJoin
+	.4byte getRTTI__8UnitJoin
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -94262,7 +94262,7 @@ _vt.6Resume::
 	.4byte _._6Resume
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__6Resume
+	.4byte getRTTI__6Resume
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -94314,7 +94314,7 @@ _vt.7Suspend::
 	.4byte _._7Suspend
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__7Suspend
+	.4byte getRTTI__7Suspend
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -94413,7 +94413,7 @@ _vt.10UnitTarget::
 	.4byte _._10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -94526,7 +94526,7 @@ _vt.16UnitTargetChoice::
 	.4byte _._16UnitTargetChoice
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -94710,7 +94710,7 @@ _vt.6Action::
 	.4byte _._6Action
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -95441,7 +95441,7 @@ vt_09F82558::
 	.4byte sub_0807C9EC
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -95533,7 +95533,7 @@ vt_09F82648::
 	.4byte sub_0807D208
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -95583,7 +95583,7 @@ vt_09F826C8::
 	.4byte sub_080C1688
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -95669,7 +95669,7 @@ vt_09F827A8::
 	.4byte sub_0807DCE8
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -95761,7 +95761,7 @@ vt_09F82898::
 	.4byte sub_080C169C
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -95856,7 +95856,7 @@ vt_09F82990::
 	.4byte sub_0807F3A4
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -96180,7 +96180,7 @@ _vt.10GuestSkill::
 	.4byte _._10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__10GuestSkill
+	.4byte getRTTI__10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -96883,7 +96883,7 @@ vt_09F83418::
 	.4byte sub_08081D48
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -97270,7 +97270,7 @@ vt_09F83810::
 	.4byte sub_0808264C
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -97669,7 +97669,7 @@ vt_09F83C28::
 	.4byte sub_08083144
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -97767,7 +97767,7 @@ vt_09F83D28::
 	.4byte _._12TextAccessor
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -97820,7 +97820,7 @@ vt_09F83DB0::
 	.4byte sub_08083FE0
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -97876,7 +97876,7 @@ vt_09F83E40::
 	.4byte sub_080C172C
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -97962,7 +97962,7 @@ vt_09F83F20::
 	.4byte sub_0808470C
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -98051,7 +98051,7 @@ vt_09F84008::
 	.4byte sub_080850E0
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -98101,7 +98101,7 @@ vt_09F84088::
 	.4byte sub_08085988
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -98151,7 +98151,7 @@ vt_09F84108::
 	.4byte sub_08085D5C
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -98291,7 +98291,7 @@ vt_09F84278::
 	.4byte sub_08085EE8
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -98431,7 +98431,7 @@ vt_09F843E8::
 	.4byte sub_0808605C
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -98571,7 +98571,7 @@ vt_09F84558::
 	.4byte sub_08086210
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -98711,7 +98711,7 @@ vt_09F846C8::
 	.4byte sub_080863E0
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -98851,7 +98851,7 @@ vt_09F84838::
 	.4byte sub_08086608
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -98955,7 +98955,7 @@ vt_09F84948::
 	.4byte sub_080867C0
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -99020,7 +99020,7 @@ vt_09F849F0::
 	.4byte sub_08086A9C
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -99115,7 +99115,7 @@ vt_09F84AE8::
 	.4byte sub_08086D6C
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -99248,7 +99248,7 @@ vt_09F84C40::
 	.4byte sub_08086E84
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -99359,7 +99359,7 @@ vt_09F84D58::
 	.4byte sub_08087060
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -99400,7 +99400,7 @@ vt_09F84DC0::
 	.4byte sub_0808724C
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -99522,7 +99522,7 @@ vt_09F84F00::
 	.4byte sub_08087348
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -99701,7 +99701,7 @@ vt_09F850A8::
 	.4byte sub_080894DC
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -99760,7 +99760,7 @@ vt_09F85140::
 	.4byte sub_080895C0
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -99819,7 +99819,7 @@ vt_09F851D8::
 	.4byte sub_08089714
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -99920,7 +99920,7 @@ vt_09F852E0::
 	.4byte sub_08089F64
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -99979,7 +99979,7 @@ vt_09F85378::
 	.4byte sub_080C176C
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -100038,7 +100038,7 @@ vt_09F85410::
 	.4byte sub_0808A200
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -100097,7 +100097,7 @@ vt_09F854A8::
 	.4byte sub_0808A3B4
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -100156,7 +100156,7 @@ vt_09F85540::
 	.4byte sub_0808A5B8
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -100215,7 +100215,7 @@ vt_09F855D8::
 	.4byte sub_0808A8DC
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -100274,7 +100274,7 @@ vt_09F85670::
 	.4byte sub_0808AB38
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -100333,7 +100333,7 @@ vt_09F85708::
 	.4byte sub_0808ADC0
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -100392,7 +100392,7 @@ vt_09F857A0::
 	.4byte sub_0808AE24
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -100478,7 +100478,7 @@ vt_09F85880::
 	.4byte sub_0808AEF4
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -100549,7 +100549,7 @@ vt_09F85938::
 	.4byte sub_0808B060
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -100644,7 +100644,7 @@ vt_09F85A30::
 	.4byte sub_0808B194
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -100739,7 +100739,7 @@ vt_09F85B28::
 	.4byte sub_0808BD2C
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -100840,7 +100840,7 @@ vt_09F85C30::
 	.4byte sub_0808D3B4
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -100932,7 +100932,7 @@ vt_09F85D20::
 	.4byte sub_0808E200
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -100985,7 +100985,7 @@ vt_09F85DA8::
 	.4byte sub_0808E5FC
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -101099,7 +101099,7 @@ vt_09F85EC8::
 	.4byte sub_0808E900
 	.2byte 0
 	.2byte 0
-	.4byte getInstance__4Base
+	.4byte getRTTI__4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base

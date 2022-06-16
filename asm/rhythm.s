@@ -852,7 +852,7 @@ sub_08072BBC: @ 0x08072BBC
 	ldr r1, [r1, #0x14]
 	bl _call_via_r1
 	adds r4, r0, #0
-	bl get__14GuestSingleton
+	bl get__9GuestRTTI
 	cmp r4, r0
 	bne _08072BE0
 	movs r5, #1
@@ -878,7 +878,7 @@ sub_08072BE8: @ 0x08072BE8
 	ldr r1, [r1, #0x14]
 	bl _call_via_r1
 	adds r4, r0, #0
-	bl get__14GuestSingleton
+	bl get__9GuestRTTI
 	cmp r4, r0
 	bne _08072C2C
 	ldr r1, [r5, #0x1c]
@@ -914,7 +914,7 @@ sub_08072C34: @ 0x08072C34
 	ldr r1, [r1, #0x14]
 	bl _call_via_r1
 	adds r4, r0, #0
-	bl get__14GuestSingleton
+	bl get__9GuestRTTI
 	adds r1, r5, #0
 	cmp r4, r0
 	beq _08072C58
