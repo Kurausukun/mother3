@@ -7315,7 +7315,7 @@ _08080038:
 	thumb_func_start sub_08080040
 sub_08080040: @ 0x08080040
 	push {lr}
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	ldr r1, [r0, #0x1c]
 	movs r2, #0x98
 	lsls r2, r2, #1

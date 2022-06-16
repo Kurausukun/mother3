@@ -180,7 +180,7 @@ struct ShowDownAsEscape : public Unk {
     virtual ~ShowDownAsEscape() {}
 };
 
-SINGLETON(Battle);
+SINGLETON_MGR(Battle);
 
 extern "C" void setsleep(u32);
 

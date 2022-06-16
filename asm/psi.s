@@ -100,7 +100,7 @@ sub_08082510: @ 0x08082510
 	strh r0, [r5, #0x30]
 	mov r0, r8
 	strh r0, [r5, #0x32]
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r6, r0, #0
 	add r4, sp, #4
 	adds r0, r4, #0
@@ -124,7 +124,7 @@ sub_08082510: @ 0x08082510
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -143,7 +143,7 @@ sub_08082510: @ 0x08082510
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -162,7 +162,7 @@ sub_08082510: @ 0x08082510
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r6, r0, #0
 	add r4, sp, #4
 	adds r0, r4, #0

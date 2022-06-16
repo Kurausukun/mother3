@@ -246,7 +246,7 @@ sub_0805F018: @ 0x0805F018
 	str r0, [r5, #0x28]
 	adds r0, r5, #0
 	bl nullsub_26
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base

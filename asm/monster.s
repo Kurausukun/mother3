@@ -141,7 +141,7 @@ sub_08080A24: @ 0x08080A24
 	adds r1, r7, #0
 	bl sub_08081C48
 	str r0, [r4]
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r5, r0, #0
 	add r4, sp, #4
 	adds r0, r4, #0
@@ -164,7 +164,7 @@ sub_08080A24: @ 0x08080A24
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r5, r0, #0
 	add r4, sp, #4
 	adds r0, r4, #0

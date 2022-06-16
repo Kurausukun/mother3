@@ -3,27 +3,10 @@
 .syntax unified
 .section .text
 
-	thumb_func_start sub_08072568
-sub_08072568: @ 0x08072568
-	push {lr}
-	bl get__15BattleSingleton
-	ldr r1, [r0, #0x1c]
-	movs r2, #0xa0
-	lsls r2, r2, #1
-	adds r1, r1, r2
-	movs r3, #0
-	ldrsh r2, [r1, r3]
-	adds r0, r0, r2
-	ldr r1, [r1, #4]
-	bl _call_via_r1
-	pop {r1}
-	bx r1
-	.align 2, 0
-
 	thumb_func_start sub_08072588
 sub_08072588: @ 0x08072588
 	push {lr}
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	ldr r1, [r0, #0x1c]
 	movs r2, #0xa4
 	lsls r2, r2, #1
@@ -40,7 +23,7 @@ sub_08072588: @ 0x08072588
 	thumb_func_start sub_080725A8
 sub_080725A8: @ 0x080725A8
 	push {lr}
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	ldr r1, [r0, #0x1c]
 	movs r2, #0xa8
 	lsls r2, r2, #1
@@ -57,7 +40,7 @@ sub_080725A8: @ 0x080725A8
 	thumb_func_start sub_080725C8
 sub_080725C8: @ 0x080725C8
 	push {lr}
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	ldr r1, [r0, #0x1c]
 	movs r2, #0xac
 	lsls r2, r2, #1
@@ -74,7 +57,7 @@ sub_080725C8: @ 0x080725C8
 	thumb_func_start sub_080725E8
 sub_080725E8: @ 0x080725E8
 	push {lr}
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	ldr r1, [r0, #0x1c]
 	movs r2, #0xb0
 	lsls r2, r2, #1
@@ -91,7 +74,7 @@ sub_080725E8: @ 0x080725E8
 	thumb_func_start sub_08072608
 sub_08072608: @ 0x08072608
 	push {lr}
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	ldr r1, [r0, #0x1c]
 	movs r2, #0xb4
 	lsls r2, r2, #1
@@ -108,7 +91,7 @@ sub_08072608: @ 0x08072608
 	thumb_func_start sub_08072628
 sub_08072628: @ 0x08072628
 	push {lr}
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	ldr r1, [r0, #0x1c]
 	movs r2, #0xb8
 	lsls r2, r2, #1
@@ -128,7 +111,7 @@ sub_08072648: @ 0x08072648
 	lsls r0, r0, #0x10
 	lsrs r4, r0, #0x10
 	movs r5, #0
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	ldr r1, [r0, #0x1c]
 	movs r2, #0xb8
 	lsls r2, r2, #1
@@ -141,7 +124,7 @@ sub_08072648: @ 0x08072648
 	lsls r0, r0, #0x18
 	cmp r0, #0
 	beq _08072690
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	ldr r1, [r0, #0x1c]
 	movs r2, #0x9c
 	lsls r2, r2, #1
@@ -165,7 +148,7 @@ _08072690:
 	thumb_func_start sub_08072698
 sub_08072698: @ 0x08072698
 	push {lr}
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	ldr r1, [r0, #0x1c]
 	movs r2, #0xbc
 	lsls r2, r2, #1
@@ -182,7 +165,7 @@ sub_08072698: @ 0x08072698
 	thumb_func_start sub_080726B8
 sub_080726B8: @ 0x080726B8
 	push {lr}
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	ldr r1, [r0, #0x1c]
 	movs r2, #0xc0
 	lsls r2, r2, #1
@@ -199,7 +182,7 @@ sub_080726B8: @ 0x080726B8
 	thumb_func_start sub_080726D8
 sub_080726D8: @ 0x080726D8
 	push {lr}
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	ldr r1, [r0, #0x1c]
 	movs r2, #0xc4
 	lsls r2, r2, #1
@@ -216,7 +199,7 @@ sub_080726D8: @ 0x080726D8
 	thumb_func_start sub_080726F8
 sub_080726F8: @ 0x080726F8
 	push {lr}
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	ldr r1, [r0, #0x1c]
 	movs r2, #0xc8
 	lsls r2, r2, #1
@@ -233,7 +216,7 @@ sub_080726F8: @ 0x080726F8
 	thumb_func_start sub_08072718
 sub_08072718: @ 0x08072718
 	push {lr}
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	ldr r1, [r0, #0x1c]
 	movs r2, #0xcc
 	lsls r2, r2, #1
@@ -250,7 +233,7 @@ sub_08072718: @ 0x08072718
 	thumb_func_start sub_08072738
 sub_08072738: @ 0x08072738
 	push {lr}
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	ldr r1, [r0, #0x1c]
 	movs r2, #0xd0
 	lsls r2, r2, #1
@@ -267,7 +250,7 @@ sub_08072738: @ 0x08072738
 	thumb_func_start sub_08072758
 sub_08072758: @ 0x08072758
 	push {lr}
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	ldr r1, [r0, #0x1c]
 	movs r2, #0xd4
 	lsls r2, r2, #1
@@ -284,7 +267,7 @@ sub_08072758: @ 0x08072758
 	thumb_func_start sub_08072778
 sub_08072778: @ 0x08072778
 	push {lr}
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	ldr r1, [r0, #0x1c]
 	movs r2, #0xd8
 	lsls r2, r2, #1
@@ -301,7 +284,7 @@ sub_08072778: @ 0x08072778
 	thumb_func_start sub_08072798
 sub_08072798: @ 0x08072798
 	push {lr}
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	ldr r1, [r0, #0x1c]
 	movs r2, #0xdc
 	lsls r2, r2, #1
@@ -318,7 +301,7 @@ sub_08072798: @ 0x08072798
 	thumb_func_start sub_080727B8
 sub_080727B8: @ 0x080727B8
 	push {lr}
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	ldr r1, [r0, #0x1c]
 	movs r2, #0xe0
 	lsls r2, r2, #1
@@ -335,7 +318,7 @@ sub_080727B8: @ 0x080727B8
 	thumb_func_start sub_080727D8
 sub_080727D8: @ 0x080727D8
 	push {lr}
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	ldr r1, [r0, #0x1c]
 	movs r2, #0xe4
 	lsls r2, r2, #1
@@ -352,7 +335,7 @@ sub_080727D8: @ 0x080727D8
 	thumb_func_start sub_080727F8
 sub_080727F8: @ 0x080727F8
 	push {lr}
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	ldr r1, [r0, #0x1c]
 	movs r2, #0xe8
 	lsls r2, r2, #1
@@ -369,7 +352,7 @@ sub_080727F8: @ 0x080727F8
 	thumb_func_start sub_08072818
 sub_08072818: @ 0x08072818
 	push {lr}
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	ldr r1, [r0, #0x1c]
 	movs r2, #0xec
 	lsls r2, r2, #1
@@ -386,7 +369,7 @@ sub_08072818: @ 0x08072818
 	thumb_func_start sub_08072838
 sub_08072838: @ 0x08072838
 	push {lr}
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	ldr r1, [r0, #0x1c]
 	movs r2, #0xf0
 	lsls r2, r2, #1
@@ -403,7 +386,7 @@ sub_08072838: @ 0x08072838
 	thumb_func_start sub_08072858
 sub_08072858: @ 0x08072858
 	push {lr}
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	ldr r1, [r0, #0x1c]
 	movs r2, #0x80
 	lsls r2, r2, #2
@@ -420,7 +403,7 @@ sub_08072858: @ 0x08072858
 	thumb_func_start sub_08072878
 sub_08072878: @ 0x08072878
 	push {lr}
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	ldr r1, [r0, #0x1c]
 	movs r2, #0x82
 	lsls r2, r2, #2
@@ -437,7 +420,7 @@ sub_08072878: @ 0x08072878
 	thumb_func_start sub_08072898
 sub_08072898: @ 0x08072898
 	push {lr}
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	ldr r1, [r0, #0x1c]
 	movs r2, #0x84
 	lsls r2, r2, #2
@@ -454,7 +437,7 @@ sub_08072898: @ 0x08072898
 	thumb_func_start sub_080728B8
 sub_080728B8: @ 0x080728B8
 	push {lr}
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	ldr r1, [r0, #0x1c]
 	movs r2, #0x86
 	lsls r2, r2, #2
@@ -471,7 +454,7 @@ sub_080728B8: @ 0x080728B8
 	thumb_func_start sub_080728D8
 sub_080728D8: @ 0x080728D8
 	push {lr}
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	ldr r1, [r0, #0x1c]
 	movs r2, #0x88
 	lsls r2, r2, #2
@@ -488,7 +471,7 @@ sub_080728D8: @ 0x080728D8
 	thumb_func_start sub_080728F8
 sub_080728F8: @ 0x080728F8
 	push {lr}
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	ldr r1, [r0, #0x1c]
 	movs r2, #0x8a
 	lsls r2, r2, #2
@@ -505,7 +488,7 @@ sub_080728F8: @ 0x080728F8
 	thumb_func_start sub_08072918
 sub_08072918: @ 0x08072918
 	push {lr}
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	ldr r1, [r0, #0x1c]
 	movs r2, #0x8c
 	lsls r2, r2, #2
@@ -1566,7 +1549,7 @@ playSeq: @ 0x080730FC
 	movs r5, #1
 _08073114:
 	str r2, [sp, #4]
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	ldr r1, [r0, #0x1c]
 	movs r2, #0x8e
 	lsls r2, r2, #2
@@ -1605,7 +1588,7 @@ sub_08073150: @ 0x08073150
 	lsrs r5, r0, #0x10
 	cmp r5, #0
 	beq _08073190
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	ldr r1, [r0, #0x1c]
 	movs r2, #0x8e
 	lsls r2, r2, #2
@@ -1650,7 +1633,7 @@ _080731AC:
 	movs r5, #1
 _080731B4:
 	str r2, [sp, #4]
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	ldr r1, [r0, #0x1c]
 	movs r2, #0x8e
 	lsls r2, r2, #2
@@ -1689,7 +1672,7 @@ sub_080731F0: @ 0x080731F0
 	lsrs r5, r0, #0x10
 	cmp r5, #0
 	beq _08073232
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	ldr r1, [r0, #0x1c]
 	movs r2, #0x8e
 	lsls r2, r2, #2
@@ -1722,7 +1705,7 @@ _08073234:
 sub_0807323C: @ 0x0807323C
 	push {r4, lr}
 	adds r4, r0, #0
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	ldr r1, [r0, #0x1c]
 	movs r2, #0x8e
 	lsls r2, r2, #2
@@ -1747,7 +1730,7 @@ sub_0807323C: @ 0x0807323C
 	thumb_func_start sub_08073270
 sub_08073270: @ 0x08073270
 	push {r4, r5, r6, lr}
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	ldr r1, [r0, #0x1c]
 	movs r2, #0x8e
 	lsls r2, r2, #2
@@ -1794,7 +1777,7 @@ _080732B2:
 sub_080732CC: @ 0x080732CC
 	push {r4, lr}
 	adds r4, r0, #0
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	ldr r1, [r0, #0x1c]
 	movs r2, #0x8e
 	lsls r2, r2, #2
@@ -1819,7 +1802,7 @@ sub_080732CC: @ 0x080732CC
 	thumb_func_start sub_08073300
 sub_08073300: @ 0x08073300
 	push {r4, r5, r6, lr}
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	ldr r1, [r0, #0x1c]
 	movs r2, #0x8e
 	lsls r2, r2, #2
@@ -2112,7 +2095,7 @@ _08073558:
 	adds r0, r7, #0
 	movs r1, #2
 _0807356C:
-	bl createPlayerName
+	bl createPlayerName__FUs
 	mov r0, sp
 	adds r1, r7, #0
 	bl sub_0806E374__3MsgRC3Msg

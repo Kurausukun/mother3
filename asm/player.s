@@ -3,51 +3,6 @@
 .syntax unified
 .section .text
 
-	thumb_func_start sub_0807A8B8
-sub_0807A8B8: @ 0x0807A8B8
-	ldr r0, _0807A8BC @ =gUnknown_020021AC
-	bx lr
-	.align 2, 0
-_0807A8BC: .4byte gUnknown_020021AC
-
-	thumb_func_start sub_0807A8C0
-sub_0807A8C0: @ 0x0807A8C0
-	push {lr}
-	bl sub_0807A8B8
-	pop {r1}
-	bx r1
-	.align 2, 0
-
-	thumb_func_start createPlayerName
-createPlayerName: @ 0x0807A8CC
-	push {r4, lr}
-	adds r4, r0, #0
-	lsls r1, r1, #0x10
-	lsrs r1, r1, #0x10
-	cmp r1, #0xe
-	bne _0807A8E8
-	ldr r1, _0807A8E4 @ =gUnknown_02004EE2
-	movs r2, #9
-	bl genMisctextMsg__3MsgPvUi
-	b _0807A8F8
-	.align 2, 0
-_0807A8E4: .4byte gUnknown_02004EE2
-_0807A8E8:
-	movs r0, #0x6c
-	muls r1, r0, r1
-	ldr r0, _0807A900 @ =gUnknown_02004112
-	adds r1, r1, r0
-	adds r0, r4, #0
-	movs r2, #8
-	bl genMisctextMsg__3MsgPvUi
-_0807A8F8:
-	adds r0, r4, #0
-	pop {r4}
-	pop {r1}
-	bx r1
-	.align 2, 0
-_0807A900: .4byte gUnknown_02004112
-
 	thumb_func_start sub_0807A904
 sub_0807A904: @ 0x0807A904
 	push {r4, r5, r6, lr}
@@ -150,7 +105,7 @@ sub_0807A904: @ 0x0807A904
 	adds r0, r0, r2
 	ldr r1, [r1, #4]
 	bl _call_via_r1
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	mov r8, r0
 	add r4, sp, #4
 	adds r0, r4, #0
@@ -173,7 +128,7 @@ sub_0807A904: @ 0x0807A904
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	mov r8, r0
 	add r4, sp, #4
 	adds r0, r4, #0
@@ -194,7 +149,7 @@ sub_0807A904: @ 0x0807A904
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -213,7 +168,7 @@ sub_0807A904: @ 0x0807A904
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -2464,7 +2419,7 @@ sub_0807BC80: @ 0x0807BC80
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
 	adds r0, r4, #0
-	bl createPlayerName
+	bl createPlayerName__FUs
 	adds r0, r4, #0
 	pop {r4}
 	pop {r1}

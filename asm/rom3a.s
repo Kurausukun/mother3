@@ -8663,7 +8663,7 @@ sub_0809BF18: @ 0x0809BF18
 	str r0, [r5, #0x20]
 	ldr r0, _0809BFC8 @ =vt_09F48C70
 	str r0, [r5, #0x1c]
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -8684,7 +8684,7 @@ sub_0809BF18: @ 0x0809BF18
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -8748,7 +8748,7 @@ sub_0809BFE8: @ 0x0809BFE8
 	str r0, [r7, #0x20]
 	ldr r0, _0809C0BC @ =vt_09F48C70
 	str r0, [r7, #0x1c]
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r5, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -8767,7 +8767,7 @@ sub_0809BFE8: @ 0x0809BFE8
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r5, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -8849,7 +8849,7 @@ sub_0809C0DC: @ 0x0809C0DC
 	str r0, [r7, #0x20]
 	ldr r0, _0809C198 @ =vt_09F48C70
 	str r0, [r7, #0x1c]
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r5, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -8868,7 +8868,7 @@ sub_0809C0DC: @ 0x0809C0DC
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r5, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -8939,7 +8939,7 @@ sub_0809C1B8: @ 0x0809C1B8
 	str r0, [r7, #0x20]
 	ldr r0, _0809C274 @ =vt_09F48C70
 	str r0, [r7, #0x1c]
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r5, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -8958,7 +8958,7 @@ sub_0809C1B8: @ 0x0809C1B8
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r5, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -9029,7 +9029,7 @@ sub_0809C294: @ 0x0809C294
 	str r0, [r7, #0x20]
 	ldr r0, _0809C35C @ =vt_09F48C70
 	str r0, [r7, #0x1c]
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r5, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -9048,7 +9048,7 @@ sub_0809C294: @ 0x0809C294
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r5, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -9125,7 +9125,7 @@ sub_0809C37C: @ 0x0809C37C
 	str r0, [r7, #0x20]
 	ldr r0, _0809C444 @ =vt_09F48C70
 	str r0, [r7, #0x1c]
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r5, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -9144,7 +9144,7 @@ sub_0809C37C: @ 0x0809C37C
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r5, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -9221,7 +9221,7 @@ sub_0809C464: @ 0x0809C464
 	str r0, [r7, #0x20]
 	ldr r0, _0809C520 @ =vt_09F48C70
 	str r0, [r7, #0x1c]
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r5, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -9240,7 +9240,7 @@ sub_0809C464: @ 0x0809C464
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r5, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -9313,7 +9313,7 @@ sub_0809C540: @ 0x0809C540
 	str r0, [r5, #0x20]
 	ldr r0, _0809C5D0 @ =vt_09F48C70
 	str r0, [r5, #0x1c]
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -9334,7 +9334,7 @@ sub_0809C540: @ 0x0809C540
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -16408,7 +16408,7 @@ sub_0809FD44: @ 0x0809FD44
 	adds r1, r5, r0
 	movs r0, #0
 	str r0, [r1]
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -16429,7 +16429,7 @@ sub_0809FD44: @ 0x0809FD44
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -16491,7 +16491,7 @@ sub_0809FE04: @ 0x0809FE04
 	movs r2, #0
 	mov sb, r2
 	str r2, [r0]
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -16512,7 +16512,7 @@ sub_0809FE04: @ 0x0809FE04
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -16587,7 +16587,7 @@ sub_0809FEE4: @ 0x0809FEE4
 	movs r1, #0
 	mov sb, r1
 	str r1, [r0]
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -16608,7 +16608,7 @@ sub_0809FEE4: @ 0x0809FEE4
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -16676,7 +16676,7 @@ sub_0809FFB4: @ 0x0809FFB4
 	movs r1, #0
 	mov r8, r1
 	str r1, [r0]
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -16697,7 +16697,7 @@ sub_0809FFB4: @ 0x0809FFB4
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -16768,7 +16768,7 @@ sub_080A008C: @ 0x080A008C
 	adds r1, r5, r0
 	movs r0, #0
 	str r0, [r1]
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -16789,7 +16789,7 @@ sub_080A008C: @ 0x080A008C
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -16849,7 +16849,7 @@ sub_080A014C: @ 0x080A014C
 	adds r1, r5, r0
 	movs r0, #0
 	str r0, [r1]
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -16870,7 +16870,7 @@ sub_080A014C: @ 0x080A014C
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base

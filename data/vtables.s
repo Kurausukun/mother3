@@ -99676,21 +99676,21 @@ _vt.9BXTHandle::
 	.2byte 0
 	.4byte _._9BXTHandle
 
-vt_09F85088::
+_vt.15Struct_09F85088::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08088E2C
+	.4byte _._15Struct_09F85088
 
-vt_09F85098::
+_vt.1V::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08088EE0
+	.4byte _._1V
 
 vt_09F850A8::
 	.2byte 0
