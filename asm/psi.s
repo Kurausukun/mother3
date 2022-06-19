@@ -71,8 +71,8 @@ tellStatus: @ 0x080824B0
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_08082510
-sub_08082510: @ 0x08082510
+	thumb_func_start BattleSequenceMaybe
+BattleSequenceMaybe: @ 0x08082510
 	push {r4, r5, r6, lr}
 	mov r6, sb
 	mov r5, r8

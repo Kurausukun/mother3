@@ -211,7 +211,7 @@ setup:
 	make -C tools/preproc
 	make -C tools/scaninc
 
-	cmake -S tools/salsa -B tools/salsa/build
+	cmake -S tools/salsa -B tools/salsa/build -DCMAKE_CXX_COMPILER=g++-10
 	make -C tools/salsa/build
 
 	$(SALSA) --extract baserom.gba assets/mainscript.salsa
@@ -270,6 +270,11 @@ $(SEQ_ASM_BUILDDIR)/%.o: $(SEQ_ASM_SUBDIR)/%.s
     
 $(WAVE_ASM_BUILDDIR)/%.o: $(WAVE_ASM_SUBDIR)/%.s
 	$(AS) $(ASFLAGS) -o $@ $<
+
+$(ASSETS_BUILDDIR)/logic.o: $(ASSETS_SUBDIR)/logic.salsa
+	$(CPP) -E -P $(CPPFLAGS) $(ASSETS_SUBDIR)/logic.salsa -o $(ASSETS_BUILDDIR)/logic.salsa
+	$(SALSA) --build $(ASSETS_BUILDDIR)/logic.salsa $(ASSETS_BUILDDIR)/logic.bin
+	$(OBJCOPY) -I binary -B armv4t -O elf32-littlearm $(ASSETS_BUILDDIR)/logic.bin $(ASSETS_BUILDDIR)/logic.o
 
 $(ASSETS_BUILDDIR)/%.o: $(ASSETS_SUBDIR)/%.salsa
 	$(SALSA) --build $(ASSETS_SUBDIR)/$*.salsa $(ASSETS_BUILDDIR)/$*.bin

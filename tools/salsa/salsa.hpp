@@ -4,6 +4,7 @@
 #include <fstream>
 #include <iostream>
 #include <memory>
+#include <string>
 
 typedef unsigned char u8;
 typedef unsigned short u16;
@@ -21,11 +22,23 @@ static long pad_to(long offset) {
 }
 
 template <class T>
-T sign_extend(T x, const int bits) {
+static T sign_extend(T x, const int bits) {
     T m = 1;
     m <<= bits - 1;
     return (x ^ m) - m;
 }
+
+[[maybe_unused]] static std::string trim_whitespace(const std::string& s) {
+    auto start = s.begin();
+    while (start != s.end() && std::isspace(*start)) {
+        start++;
+    }
+    auto end = s.end();
+    do {
+        end--;
+    } while (std::distance(start, end) > 0 && std::isspace(*end));
+    return std::string(start, end + 1);
+};
 
 struct ISalsaFile {
     ISalsaFile() = default;

@@ -174,7 +174,7 @@ struct TextBank {
     }
 
     // Total block count (should be same as blocks.size())
-    s32 block_count = 0;
+    size_t block_count = 0;
 
     // Block headers (should be same as blocks.size() + number of nulled blocks).
     std::vector<std::unique_ptr<BlockHeader> > headers;
@@ -297,7 +297,7 @@ extern const std::vector<const char*> jp_charmap;
 std::pair<u32, u32> readU8Char(const std::string& s);
 
 // Create a hex string from integer.
-static std::string hex_string(u32 value) {
+[[maybe_unused]] static std::string hex_string(u32 value) {
     std::stringstream ss;
     ss << std::hex << value;
     return ss.str();

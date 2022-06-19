@@ -42936,7 +42936,7 @@ sub_080B56C0: @ 0x080B56C0
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B56D8 @ =vt_09F723D0
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -42952,7 +42952,7 @@ sub_080B56DC: @ 0x080B56DC
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B56F4 @ =vt_09F72518
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -42968,7 +42968,7 @@ sub_080B56F8: @ 0x080B56F8
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B5710 @ =vt_09F72660
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -42984,7 +42984,7 @@ sub_080B5714: @ 0x080B5714
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B57C8 @ =vt_09F754F8
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -43069,7 +43069,7 @@ sub_080B57D0: @ 0x080B57D0
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B5884 @ =vt_09F754F8
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -43154,7 +43154,7 @@ sub_080B588C: @ 0x080B588C
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B5940 @ =vt_09F754F8
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -43239,7 +43239,7 @@ sub_080B5948: @ 0x080B5948
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B59FC @ =vt_09F754F8
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -43324,7 +43324,7 @@ sub_080B5A04: @ 0x080B5A04
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B5AB8 @ =vt_09F754F8
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -43409,7 +43409,7 @@ sub_080B5AC0: @ 0x080B5AC0
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B5B74 @ =vt_09F754F8
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -43494,7 +43494,7 @@ sub_080B5B7C: @ 0x080B5B7C
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B5C30 @ =vt_09F754F8
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -43579,7 +43579,7 @@ sub_080B5C38: @ 0x080B5C38
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B5CEC @ =vt_09F754F8
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -43664,7 +43664,7 @@ sub_080B5CF4: @ 0x080B5CF4
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B5DA8 @ =vt_09F754F8
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -43749,7 +43749,7 @@ sub_080B5DB0: @ 0x080B5DB0
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B5E64 @ =vt_09F754F8
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -43834,7 +43834,7 @@ sub_080B5E6C: @ 0x080B5E6C
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B5F20 @ =vt_09F754F8
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -43919,7 +43919,7 @@ sub_080B5F28: @ 0x080B5F28
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B5FDC @ =vt_09F754F8
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -44004,7 +44004,7 @@ sub_080B5FE4: @ 0x080B5FE4
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B6098 @ =vt_09F754F8
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -44089,7 +44089,7 @@ sub_080B60A0: @ 0x080B60A0
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B6154 @ =vt_09F754F8
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -44174,7 +44174,7 @@ sub_080B615C: @ 0x080B615C
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B6210 @ =vt_09F754F8
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -44259,7 +44259,7 @@ sub_080B6218: @ 0x080B6218
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B62CC @ =vt_09F754F8
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -44344,7 +44344,7 @@ sub_080B62D4: @ 0x080B62D4
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B6388 @ =vt_09F754F8
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -44429,7 +44429,7 @@ sub_080B6390: @ 0x080B6390
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B6444 @ =vt_09F754F8
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -44514,7 +44514,7 @@ sub_080B644C: @ 0x080B644C
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B6500 @ =vt_09F754F8
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -44599,7 +44599,7 @@ sub_080B6508: @ 0x080B6508
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B65BC @ =vt_09F754F8
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -44684,7 +44684,7 @@ sub_080B65C4: @ 0x080B65C4
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B6678 @ =vt_09F754F8
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -44769,7 +44769,7 @@ sub_080B6680: @ 0x080B6680
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B6734 @ =vt_09F754F8
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -44854,7 +44854,7 @@ sub_080B673C: @ 0x080B673C
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B67F8 @ =vt_09F754F8
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -44942,7 +44942,7 @@ sub_080B6800: @ 0x080B6800
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B68B4 @ =vt_09F754F8
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -45027,7 +45027,7 @@ sub_080B68BC: @ 0x080B68BC
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B6970 @ =vt_09F754F8
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -45112,7 +45112,7 @@ sub_080B6978: @ 0x080B6978
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B6998 @ =vt_09F756C8
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -45131,7 +45131,7 @@ sub_080B699C: @ 0x080B699C
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B69B4 @ =vt_09F75810
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -45147,7 +45147,7 @@ sub_080B69B8: @ 0x080B69B8
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B69E0 @ =vt_09F75958
 	str r0, [r4, #0x1c]
 	movs r0, #1
@@ -45169,7 +45169,7 @@ sub_080B69E4: @ 0x080B69E4
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B6A0C @ =vt_09F75AA0
 	str r0, [r4, #0x1c]
 	movs r0, #2
@@ -45191,7 +45191,7 @@ sub_080B6A10: @ 0x080B6A10
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B6A28 @ =vt_09F75BE8
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -45207,7 +45207,7 @@ sub_080B6A2C: @ 0x080B6A2C
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B6A44 @ =vt_09F75D30
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -45223,7 +45223,7 @@ sub_080B6A48: @ 0x080B6A48
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B6A60 @ =vt_09F75E78
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -45239,7 +45239,7 @@ sub_080B6A64: @ 0x080B6A64
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B6A7C @ =vt_09F75FC0
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -45255,7 +45255,7 @@ sub_080B6A80: @ 0x080B6A80
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B6A98 @ =vt_09F76108
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -45271,7 +45271,7 @@ sub_080B6A9C: @ 0x080B6A9C
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B6ABC @ =vt_09F76250
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -45290,7 +45290,7 @@ sub_080B6AC0: @ 0x080B6AC0
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B6AE8 @ =vt_09F76398
 	str r0, [r4, #0x1c]
 	movs r0, #2
@@ -45312,7 +45312,7 @@ sub_080B6AEC: @ 0x080B6AEC
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B6B0C @ =vt_09F764E0
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -45331,7 +45331,7 @@ sub_080B6B10: @ 0x080B6B10
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B6B28 @ =vt_09F76628
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -45347,7 +45347,7 @@ sub_080B6B2C: @ 0x080B6B2C
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B6B44 @ =vt_09F76770
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -45363,7 +45363,7 @@ sub_080B6B48: @ 0x080B6B48
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B6B6C @ =vt_09F768B8
 	str r0, [r4, #0x1c]
 	movs r0, #2
@@ -45383,7 +45383,7 @@ sub_080B6B70: @ 0x080B6B70
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B6B88 @ =vt_09F76A00
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -45399,7 +45399,7 @@ sub_080B6B8C: @ 0x080B6B8C
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B6BA4 @ =vt_09F76B48
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -45415,7 +45415,7 @@ sub_080B6BA8: @ 0x080B6BA8
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B6BC0 @ =vt_09F76C90
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -45431,7 +45431,7 @@ sub_080B6BC4: @ 0x080B6BC4
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B6BDC @ =vt_09F76DD8
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -45447,7 +45447,7 @@ sub_080B6BE0: @ 0x080B6BE0
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B6BF8 @ =vt_09F76F20
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -45463,7 +45463,7 @@ sub_080B6BFC: @ 0x080B6BFC
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B6C24 @ =vt_09F77068
 	str r0, [r4, #0x1c]
 	movs r0, #1
@@ -45485,7 +45485,7 @@ sub_080B6C28: @ 0x080B6C28
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B6C40 @ =vt_09F771B0
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -45501,7 +45501,7 @@ sub_080B6C44: @ 0x080B6C44
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl BattleSequenceMaybe
 	ldr r0, _080B6C5C @ =vt_09F772F8
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0

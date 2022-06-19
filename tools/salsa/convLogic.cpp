@@ -1,4 +1,5 @@
 #include <list>
+#include <sstream>
 #include "salsaLogic.hpp"
 
 using namespace logic;
@@ -13,6 +14,8 @@ void salsa_logic_read(SalsaStream& src, SalsaPath& dest) {
     std::cerr << "Reading logic" << std::endl;
     auto bank = LogicBank::dump(&src, cLogicOffset);
 
+    log_results(bank.get());
+
     std::cerr << "Parsing logic" << std::endl;
 
     std::list<u32> combined_globals;
@@ -26,9 +29,9 @@ void salsa_logic_read(SalsaStream& src, SalsaPath& dest) {
     combined_globals.sort();
     combined_globals.unique();
     auto globl_it = combined_globals.begin();
-    int globl_pc = 0;
+    u32 globl_pc = 0;
 
-    for (int i = 0; i < bank->blocks.size(); ++i) {
+    for (size_t i = 0; i < bank->blocks.size(); ++i) {
         auto& block = bank->blocks[i];
 
         // combine all local references from scripts in this block
@@ -40,14 +43,14 @@ void salsa_logic_read(SalsaStream& src, SalsaPath& dest) {
         combined_lbls.sort();
         combined_lbls.unique();
         auto local_it = combined_lbls.begin();
-        int local_pc = 0;
+        u32 local_pc = 0;
 
         auto check_emit_label = [&]() {
             // check label references
             while (*local_it <= local_pc && local_it != combined_lbls.end()) {
                 // check if we passed any queued ones (oh shit)
                 if (*local_it != local_pc) {
-                    desc << "//! (local) iterator = " << *local_it << " but pc = " << local_pc << std::endl;
+                    desc << "/*! (local) iterator = " << *local_it << " but pc = " << local_pc << " */" << std::endl;
                 }
                 // write the label
                 desc << "lbl_" << *local_it << ":" << std::endl;
@@ -57,7 +60,7 @@ void salsa_logic_read(SalsaStream& src, SalsaPath& dest) {
             while (*globl_it <= globl_pc && globl_it != combined_globals.end()) {
                 // check if we passed any queued ones (oh shit)
                 if (*globl_it != globl_pc) {
-                    desc << "//! (global) iterator = " << *globl_it << " but pc = " << globl_pc << std::endl;
+                    desc << "/*! (global) iterator = " << *globl_it << " but pc = " << globl_pc << " */" << std::endl;
                 }
                 // write the global
                 desc << "func_" << *globl_it << ":" << std::endl;
@@ -65,10 +68,10 @@ void salsa_logic_read(SalsaStream& src, SalsaPath& dest) {
             }
         };
 
-        for (int j = 0; j < block->scripts.size(); ++j) {
+        for (size_t j = 0; j < block->scripts.size(); ++j) {
             auto& script = block->scripts[j];
 
-            desc << "// Script " << i << "-" << j << std::endl;
+            desc << "@script " << i << ", " << j << std::endl;
 
             for (auto& cmd : script->commands) {
                 check_emit_label();
@@ -86,7 +89,7 @@ void salsa_logic_read(SalsaStream& src, SalsaPath& dest) {
                     // this is a pretty hacky way to split it and check every line for a potential label
                     std::stringstream ss(cmd->toString());
                     std::string line;
-                    for (int k = 0; k < cmd->getArgc() + 1; ++k) {
+                    for (size_t k = 0; k < cmd->getArgc() + 1; ++k) {
                         check_emit_label();
                         if (std::getline(ss, line)) {
                             desc << line << std::endl;
@@ -111,7 +114,5 @@ void salsa_logic_read(SalsaStream& src, SalsaPath& dest) {
 }
 
 void salsa_logic_write(SalsaPath& src, SalsaStream& dest) {
-    SalsaStream desc(src);
-
-    dest << "FIXME" << std::endl;
+    LogicBank::write(&src, &dest);
 }

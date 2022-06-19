@@ -1,6 +1,7 @@
 #include "battle/action.h"
 #include "battle/archive.h"
 #include "battle/unitTarget.h"
+#include "enums.h"
 
 struct Messager : public Base {
     Messager();
@@ -222,14 +223,14 @@ void Action::action_a0(Unit* target) {
     // franklin badge check
     if (element() == ElementType::Thunder && unitIsPlayer(target, 2) == 1 &&
         sub_080728B8()->messager_f8(0xc1) == 1) {
-        playSeq(0xc3, target, target);
+        playSeq(BattleSeq::FranklinBadge, target, target);
         createMsg(0x188).print(PrintSettings(0, 0, 0), 1);
         if (sub_08072D84(getUser(), 0xbd) == 1 || sub_08072D84(getUser(), 0xbe) == 1) {
             hitPlayer(getUser(), randS32(164, 186), 1);
         } else {
             hitPlayer(getUser(), max(0, action_e8(getUser(), target)), 1);
         }
-        playSeq(3, getUser(), getUser());
+        playSeq(BattleSeq::QuickWhiteFlash, getUser(), getUser());
         return;
     }
 
@@ -332,7 +333,7 @@ NONMATCH("asm/non_matching/skill/skill_08078D4C.inc", void Action::calcHit(Unit*
         } else if (target->hasStatus(Status::Shield) == 1) {
             Status* s = target->findStatus(Status::Shield);
             s->status_128().print(PrintSettings(0, 0, 0), 1);
-            playSeq(0x33, target, target);
+            playSeq(BattleSeq::ShieldHit, target, target);
             t /= 2;
         }
     }
@@ -347,7 +348,7 @@ NONMATCH("asm/non_matching/skill/skill_08078D4C.inc", void Action::calcHit(Unit*
     if (target->hasStatus(Status::Counter) == 1) {
         Status* s = target->findStatus(Status::Counter);
         s->status_128().print(PrintSettings(0, 0, 0), 1);
-        playSeq(0x36, target, target);
+        playSeq(BattleSeq::CounterHit, target, target);
         hitPlayer(getUser(), max(1, t), 1);
         playSeq(successAnimNo(), target, getUser());
         sub_08073EE8(target, Status::Counter, 1);
@@ -378,7 +379,7 @@ NONMATCH("asm/non_matching/skill/sub_08079018.inc", void Action::action_d0(Unit*
     } else if (target->hasStatus(Status::Shield) == 1) {
         Status* s = target->findStatus(Status::Shield);
         s->status_128().print(PrintSettings(0, 0, 0), 1);
-        playSeq(0x33, target, target);
+        playSeq(BattleSeq::ShieldHit, target, target);
         t /= 2;
     }
 
@@ -389,7 +390,7 @@ NONMATCH("asm/non_matching/skill/sub_08079018.inc", void Action::action_d0(Unit*
     if (target->hasStatus(Status::Counter) == 1) {
         Status* s = target->findStatus(Status::Counter);
         s->status_128().print(PrintSettings(0, 0, 0), 1);
-        playSeq(0x36, target, target);
+        playSeq(BattleSeq::CounterHit, target, target);
         hitPlayer(getUser(), max(1, t), 1);
         playSeq(successAnimNo(), target, getUser());
         sub_08073EE8(target, Status::Counter, 1);
@@ -434,7 +435,7 @@ NONMATCH("asm/non_matching/skill/sub_080793B8.inc", void Action::action_e0(Unit*
         } else if (target->hasStatus(Status::PsiShield) == 1) {
             Status* s = target->findStatus(Status::PsiShield);
             s->status_128().print(PrintSettings(0, 0, 0), 1);
-            playSeq(0x39, target, target);
+            playSeq(BattleSeq::PsiShieldHit, target, target);
             t /= 2;
         }
     }
@@ -449,7 +450,7 @@ NONMATCH("asm/non_matching/skill/sub_080793B8.inc", void Action::action_e0(Unit*
         if (target->hasStatus(Status::PsiCounter) == 1) {
             Status* s = target->findStatus(Status::PsiCounter);
             s->status_128().print(PrintSettings(0, 0, 0), 1);
-            playSeq(0x3c, target, target);
+            playSeq(BattleSeq::PsiCounterHit, target, target);
             hitPlayer(getUser(), max(1, t), 1);
             playSeq(successAnimNo(), target, getUser());
             sub_08073EE8(target, Status::PsiCounter, 1);

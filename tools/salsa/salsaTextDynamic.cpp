@@ -77,7 +77,7 @@ DynamicMessageBlock::DynamicMessageBlock(SalsaStream* stream, s32 messages_top, 
     num_msg = message_headers.size();
 
     // first message should be right after the offsets
-    for (int i = 0; i < message_headers.size(); ++i) {
+    for (size_t i = 0; i < message_headers.size(); ++i) {
         auto& message_off = message_headers[i];
         // if the message is duplicate, we want to reference the parent message
         if (message_off.is_duplicate) {
