@@ -64,4 +64,6 @@ public:
     };
 };
 
+extern "C" void* sub_0807A8B8();
+
 #endif // BATTLE_PLAYER_H
