@@ -57,7 +57,7 @@ public:
     virtual void listen(void* target, const Base& trigger, ClockData callback);
     virtual void base_44();
     virtual void base_4c(u32 mask, Base& base, u32 mask2);
-    virtual void base_54(const Base& clock);
+    virtual void emit(const Base& clock);
     virtual void base_5c();
     virtual void clearNullOutgoing();
 
@@ -93,11 +93,12 @@ struct Msg {
     u16* sub_0806E334(s32 idx);
     void sub_0806E2E8(const Msg&);
     void sub_0806E374(const Msg&);
-    static Msg sub_08073460(s32, const Msg&, const Msg&, const Msg&);
 
     u16* ptr;
     u16 _4;
     u16 _6;
 };
+
+Msg sub_08073460(s32, const Msg&, const Msg&, const Msg&);
 
 #endif  // BASE_H

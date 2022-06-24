@@ -948,7 +948,7 @@ _08097F00: .4byte 0x00000F94
 _08097F04: .4byte 0x0000065F
 _08097F08:
 	adds r0, r4, #0
-	bl sub_080729F8
+	bl getPlayer
 	adds r1, r0, #0
 	adds r1, #0x20
 	ldr r2, [r0, #0x20]
@@ -1917,7 +1917,7 @@ sub_08098728: @ 0x08098728
 	b _080987E0
 _08098734:
 	adds r0, r7, #0
-	bl sub_080729F8
+	bl getPlayer
 	adds r4, r0, #0
 	ldr r1, [r4, #0x1c]
 	adds r1, r1, r5
@@ -2081,7 +2081,7 @@ sub_0809886C: @ 0x0809886C
 	b _080988AA
 _0809888E:
 	adds r0, r4, #0
-	bl sub_080729F8
+	bl getPlayer
 	ldr r2, [r0, #0x1c]
 	movs r3, #0xa0
 	lsls r3, r3, #2
@@ -3403,7 +3403,7 @@ _0809930C:
 	ldr r1, _080995D8 @ =0x00000667
 	mov r2, sl
 	mov r3, sb
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	add r1, sp, #0x34
 	movs r5, #0
 	strb r5, [r1]
@@ -3577,7 +3577,7 @@ _080993C4:
 	ldr r1, _080995D8 @ =0x00000667
 	mov r2, sl
 	mov r3, sb
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	add r1, sp, #0x48
 	strb r5, [r1]
 	strb r5, [r1, #1]
@@ -4454,7 +4454,7 @@ sub_08099C50: @ 0x08099C50
 	b _08099D08
 _08099C5C:
 	adds r0, r7, #0
-	bl sub_080729F8
+	bl getPlayer
 	adds r4, r0, #0
 	ldr r1, [r4, #0x1c]
 	adds r1, r1, r5
@@ -4698,7 +4698,7 @@ sub_08099E3C: @ 0x08099E3C
 	b _08099E7A
 _08099E5E:
 	adds r0, r4, #0
-	bl sub_080729F8
+	bl getPlayer
 	ldr r2, [r0, #0x1c]
 	movs r3, #0xa0
 	lsls r3, r3, #2
@@ -6773,7 +6773,7 @@ sub_0809AFA8: @ 0x0809AFA8
 	add r0, sp, #4
 	mov r2, r8
 	adds r3, r5, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	add r1, sp, #0x3c
 	mov r2, sb
 	strb r2, [r1]
@@ -6862,7 +6862,7 @@ _0809B090:
 	add r0, sp, #4
 	add r2, sp, #0x10
 	add r3, sp, #0x1c
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	add r1, sp, #0x48
 	strb r4, [r1]
 	strb r4, [r1, #1]
@@ -7103,7 +7103,7 @@ _0809B13E:
 	add r0, sp, #4
 	add r2, sp, #0x10
 	add r3, sp, #0x1c
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	add r1, sp, #0x7c
 	movs r3, #0
 	strb r3, [r1]
@@ -8272,7 +8272,7 @@ sub_0809BC10: @ 0x0809BC10
 	adds r1, r5, #0
 	add r2, sp, #4
 	adds r3, r6, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -9751,7 +9751,7 @@ sub_0809C8EC: @ 0x0809C8EC
 	lsrs r0, r0, #0x18
 	cmp r0, #1
 	beq _0809C96E
-	bl sub_08072798
+	bl roundNumber
 	cmp r0, #0
 	bgt _0809C96E
 	ldr r1, [r4, #0x1c]
@@ -9810,7 +9810,7 @@ _0809C96E:
 sub_0809C974: @ 0x0809C974
 	push {r4, lr}
 	adds r4, r0, #0
-	bl sub_080728B8
+	bl getPartyInfo
 	ldr r1, [r0, #0x1c]
 	adds r1, #0xf8
 	movs r3, #0
@@ -9834,7 +9834,7 @@ sub_0809C974: @ 0x0809C974
 	movs r1, #0x25
 	bl _call_via_r2
 _0809C9AC:
-	bl sub_080728B8
+	bl getPartyInfo
 	ldr r1, [r0, #0x1c]
 	adds r1, #0xf8
 	movs r3, #0
@@ -9858,7 +9858,7 @@ _0809C9AC:
 	movs r1, #0x26
 	bl _call_via_r2
 _0809C9E0:
-	bl sub_080728B8
+	bl getPartyInfo
 	ldr r1, [r0, #0x1c]
 	adds r1, #0xf8
 	movs r3, #0
@@ -9882,7 +9882,7 @@ _0809C9E0:
 	movs r1, #0x27
 	bl _call_via_r2
 _0809CA14:
-	bl sub_080728B8
+	bl getPartyInfo
 	ldr r1, [r0, #0x1c]
 	adds r1, #0xf8
 	movs r3, #0
@@ -9906,7 +9906,7 @@ _0809CA14:
 	movs r1, #0x28
 	bl _call_via_r2
 _0809CA48:
-	bl sub_080728B8
+	bl getPartyInfo
 	ldr r1, [r0, #0x1c]
 	adds r1, #0xf8
 	movs r3, #0
@@ -9930,7 +9930,7 @@ _0809CA48:
 	movs r1, #0x29
 	bl _call_via_r2
 _0809CA7C:
-	bl sub_080728B8
+	bl getPartyInfo
 	ldr r1, [r0, #0x1c]
 	adds r1, #0xf8
 	movs r3, #0
@@ -12658,7 +12658,7 @@ sub_0809DF80: @ 0x0809DF80
 	b _0809DFB2
 _0809DF8A:
 	adds r0, r5, #0
-	bl sub_080729F8
+	bl getPlayer
 	adds r1, r0, #0
 	ldr r3, [r6, #0x1c]
 	movs r0, #0x94
@@ -12892,7 +12892,7 @@ sub_0809E134: @ 0x0809E134
 _0809E170: .4byte 0x00000281
 _0809E174:
 	adds r0, r5, #0
-	bl sub_080729F8
+	bl getPlayer
 	adds r1, r0, #0
 	ldr r3, [r6, #0x1c]
 	movs r0, #0x8c
@@ -12972,7 +12972,7 @@ sub_0809E1E0: @ 0x0809E1E0
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
-	bl sub_080728B8
+	bl getPartyInfo
 	adds r5, r0, #0
 	ldr r4, [r5, #0x1c]
 	adds r4, #0x70
@@ -12998,7 +12998,7 @@ sub_0809E244: @ 0x0809E244
 	b _0809E26A
 _0809E24C:
 	adds r0, r4, #0
-	bl sub_080729F8
+	bl getPlayer
 	ldr r2, [r0, #0x1c]
 	movs r1, #0xc8
 	lsls r1, r1, #1

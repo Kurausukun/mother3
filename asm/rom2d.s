@@ -6662,7 +6662,7 @@ sub_080864AC: @ 0x080864AC
 	adds r0, r6, #0
 	adds r1, r4, #0
 	bl sub_08089780
-	bl sub_080728B8
+	bl getPartyInfo
 	mov r8, r0
 	movs r7, #0
 	add r0, sp, #4
@@ -6721,7 +6721,7 @@ sub_080864AC: @ 0x080864AC
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728B8
+	bl getPartyInfo
 	mov r8, r0
 	add r0, sp, #4
 	bl __4Base

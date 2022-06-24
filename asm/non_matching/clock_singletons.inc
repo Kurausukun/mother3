@@ -833,7 +833,7 @@ _vt.5Clock:
 	.word	base_4c__4BaseUiR4BaseUi
 	.short	0
 	.short	0
-	.word	base_54__4BaseR4Base
+	.word	emit__4BaseR4Base
 	.short	0
 	.short	0
 	.word	base_5c__4Base

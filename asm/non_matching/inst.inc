@@ -596,7 +596,7 @@ _vt.12PostSysClock:
 	.word	base_4c__4BaseUiR4BaseUi
 	.short	0
 	.short	0
-	.word	base_54__4BaseR4Base
+	.word	emit__4BaseR4Base
 	.short	0
 	.short	0
 	.word	base_5c__4Base
@@ -641,7 +641,7 @@ _vt.12PostAppClock:
 	.word	base_4c__4BaseUiR4BaseUi
 	.short	0
 	.short	0
-	.word	base_54__4BaseR4Base
+	.word	emit__4BaseR4Base
 	.short	0
 	.short	0
 	.word	base_5c__4Base
@@ -686,7 +686,7 @@ _vt.8AppClock:
 	.word	base_4c__4BaseUiR4BaseUi
 	.short	0
 	.short	0
-	.word	base_54__4BaseR4Base
+	.word	emit__4BaseR4Base
 	.short	0
 	.short	0
 	.word	base_5c__4Base
@@ -731,7 +731,7 @@ _vt.11PreAppClock:
 	.word	base_4c__4BaseUiR4BaseUi
 	.short	0
 	.short	0
-	.word	base_54__4BaseR4Base
+	.word	emit__4BaseR4Base
 	.short	0
 	.short	0
 	.word	base_5c__4Base
@@ -776,7 +776,7 @@ _vt.8SysClock:
 	.word	base_4c__4BaseUiR4BaseUi
 	.short	0
 	.short	0
-	.word	base_54__4BaseR4Base
+	.word	emit__4BaseR4Base
 	.short	0
 	.short	0
 	.word	base_5c__4Base
@@ -821,7 +821,7 @@ _vt.11PreSysClock:
 	.word	base_4c__4BaseUiR4BaseUi
 	.short	0
 	.short	0
-	.word	base_54__4BaseR4Base
+	.word	emit__4BaseR4Base
 	.short	0
 	.short	0
 	.word	base_5c__4Base
@@ -866,7 +866,7 @@ _vt.3Unk:
 	.word	base_4c__4BaseUiR4BaseUi
 	.short	0
 	.short	0
-	.word	base_54__4BaseR4Base
+	.word	emit__4BaseR4Base
 	.short	0
 	.short	0
 	.word	base_5c__4Base

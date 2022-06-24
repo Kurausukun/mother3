@@ -27,8 +27,8 @@ sub_080809B8: @ 0x080809B8
 	.align 2, 0
 _080809E0: .4byte _vt.10GuestSkill
 
-	thumb_func_start sub_080809E4
-sub_080809E4: @ 0x080809E4
+	thumb_func_start get__11MonsterRTTI
+get__11MonsterRTTI: @ 0x080809E4
 	ldr r0, _080809E8 @ =gUnknown_02002520
 	bx lr
 	.align 2, 0
@@ -37,7 +37,7 @@ _080809E8: .4byte gUnknown_02002520
 	thumb_func_start sub_080809EC
 sub_080809EC: @ 0x080809EC
 	push {lr}
-	bl sub_080809E4
+	bl get__11MonsterRTTI
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -480,7 +480,7 @@ sub_08080D48: @ 0x08080D48
 	add r0, sp, #4
 	mov r2, r8
 	adds r3, r6, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	mov r0, sb
 	add r1, sp, #4
 	bl sub_0806E2E8__3MsgRC3Msg
@@ -1490,7 +1490,7 @@ sub_08081518: @ 0x08081518
 	mov r0, r8
 	add r2, sp, #4
 	adds r3, r6, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	adds r0, r5, #0
 	movs r1, #2
 	bl _._3Msg

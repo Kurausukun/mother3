@@ -12940,7 +12940,7 @@ _080A6D64:
 	lsls r1, r1, #2
 	add r2, sp, #0x10
 	add r3, sp, #0x1c
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	add r1, sp, #0x38
 	strb r5, [r1]
 	strb r5, [r1, #1]
@@ -13288,7 +13288,7 @@ sub_080A7114: @ 0x080A7114
 	b _080A71C8
 _080A711C:
 	adds r0, r6, #0
-	bl sub_080729F8
+	bl getPlayer
 	adds r4, r0, #0
 	ldr r1, [r4, #0x1c]
 	movs r5, #0xa8
@@ -13385,7 +13385,7 @@ sub_080A71D8: @ 0x080A71D8
 	b _080A7228
 _080A71E0:
 	adds r0, r5, #0
-	bl sub_080729F8
+	bl getPlayer
 	adds r4, r0, #0
 	ldr r1, [r4, #0x1c]
 	movs r0, #0xa8
@@ -13436,7 +13436,7 @@ sub_080A7238: @ 0x080A7238
 	b _080A7288
 _080A7240:
 	adds r0, r5, #0
-	bl sub_080729F8
+	bl getPlayer
 	adds r4, r0, #0
 	ldr r1, [r4, #0x1c]
 	movs r0, #0xa8
@@ -15043,7 +15043,7 @@ _080A7E30:
 	add r0, sp, #4
 	adds r2, r6, #0
 	adds r3, r5, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	add r1, sp, #0x34
 	movs r0, #0
 	strb r0, [r1]
@@ -16008,7 +16008,7 @@ sub_080A8660: @ 0x080A8660
 	b _080A86E0
 _080A8668:
 	adds r0, r6, #0
-	bl sub_080729F8
+	bl getPlayer
 	adds r4, r0, #0
 	ldr r1, [r4, #0x1c]
 	movs r5, #0xa8
@@ -17414,7 +17414,7 @@ _080A906C:
 	lsls r1, r1, #2
 	add r2, sp, #0x10
 	add r3, sp, #0x1c
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	add r1, sp, #0x38
 	strb r5, [r1]
 	strb r5, [r1, #1]
@@ -17615,7 +17615,7 @@ _080A92BC:
 	add r0, sp, #4
 	adds r2, r6, #0
 	adds r3, r5, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	add r1, sp, #0x34
 	movs r0, #0
 	strb r0, [r1]
@@ -20212,7 +20212,7 @@ _080AA678:
 	lsls r1, r1, #2
 	add r2, sp, #0x10
 	add r3, sp, #0x1c
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	add r1, sp, #0x38
 	strb r5, [r1]
 	strb r5, [r1, #1]
@@ -22069,7 +22069,7 @@ _080AB4D8:
 	lsls r1, r1, #2
 	add r2, sp, #0x10
 	add r3, sp, #0x1c
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	add r1, sp, #0x38
 	strb r5, [r1]
 	strb r5, [r1, #1]
@@ -28924,7 +28924,7 @@ _080AE95C:
 	lsls r1, r1, #2
 	add r2, sp, #0x10
 	add r3, sp, #0x1c
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	add r1, sp, #0x38
 	strb r5, [r1]
 	strb r5, [r1, #1]
@@ -29604,7 +29604,7 @@ _080AEEBC:
 	add r0, sp, #4
 	adds r2, r6, #0
 	adds r3, r5, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	add r1, sp, #0x38
 	mov r2, r8
 	strb r2, [r1]
@@ -34194,7 +34194,7 @@ _080B117E:
 	mov r0, sb
 	bl dynaCastMonster
 	bl sub_08072FE0
-	bl sub_080728B8
+	bl getPartyInfo
 	adds r5, r0, #0
 	ldr r4, [r5, #0x1c]
 	adds r4, #0xe8
@@ -45746,7 +45746,7 @@ _080B6DEC:
 	adds r1, r7, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -45905,7 +45905,7 @@ _080B6F30:
 	adds r1, r7, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -46064,7 +46064,7 @@ _080B7074:
 	adds r1, r7, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -46556,7 +46556,7 @@ _080B7464:
 	adds r1, r7, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -46889,7 +46889,7 @@ _080B770C:
 	adds r1, r7, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -47044,7 +47044,7 @@ _080B7848:
 	adds r1, r7, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -47199,7 +47199,7 @@ _080B7984:
 	adds r1, r7, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -47688,7 +47688,7 @@ _080B7D6C:
 	adds r1, r7, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -49215,7 +49215,7 @@ _080B8958:
 	adds r1, r7, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -49553,7 +49553,7 @@ _080B8C00:
 	adds r1, r7, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -49879,7 +49879,7 @@ _080B8E98:
 	adds r1, r7, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -50212,7 +50212,7 @@ _080B9140:
 	adds r1, r7, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -50549,7 +50549,7 @@ _080B93E8:
 	adds r1, r7, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -50875,7 +50875,7 @@ _080B9680:
 	adds r1, r7, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -51208,7 +51208,7 @@ _080B9928:
 	adds r1, r7, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -51547,7 +51547,7 @@ _080B9BD4:
 	adds r1, r7, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -51875,7 +51875,7 @@ _080B9E70:
 	adds r1, r7, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -52210,7 +52210,7 @@ _080BA11C:
 	adds r1, r7, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -52549,7 +52549,7 @@ _080BA3C8:
 	adds r1, r7, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -52884,7 +52884,7 @@ _080BA674:
 	adds r1, r7, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg

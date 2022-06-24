@@ -34,7 +34,7 @@ public:
 
     void setupStats();
 
-    virtual void object_8() {}
+    virtual void object_8(s32 r0) {}
     virtual void object_10() {}
     virtual void object_18() {}
     virtual void object_20() {}

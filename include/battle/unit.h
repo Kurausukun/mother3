@@ -15,7 +15,7 @@ inline s32 clampS32(s32 value, s32 min, s32 max) {
 struct UnitObject {
     virtual ~UnitObject() {}
 
-    virtual void object_8() {}
+    virtual void object_8(s32 r0) {}
     virtual void object_10() = 0;
     virtual void object_18() = 0;
     virtual void object_20() = 0;

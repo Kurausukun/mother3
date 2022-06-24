@@ -609,7 +609,7 @@ _08068E8E:\n\
 }
 
 NAKED
-void Base::base_54(const Base& base) {
+void Base::emit(const Base& base) {
     asm_unified("\n\
 	push {r4, r5, r6, r7, lr}\n\
 	mov r7, sl\n\

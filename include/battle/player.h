@@ -18,11 +18,11 @@ public:
     virtual void player_2f8();
     virtual void player_300();
     virtual void player_308();
-    virtual void player_310();
-    virtual void player_318();
+    virtual bool player_310();
+    virtual s32 player_318();
     virtual void player_320();
     virtual void player_328();
-    virtual void player_330();
+    virtual Msg player_330();
     virtual void player_338();
     virtual void player_340();
     virtual void player_348();
@@ -64,6 +64,6 @@ public:
     };
 };
 
-extern "C" void* sub_0807A8B8();
+extern "C" void* getPlayerRTTI();
 
 #endif // BATTLE_PLAYER_H

@@ -465,7 +465,7 @@ sub_0805F1C0: @ 0x0805F1C0
 	str r6, [r1, #0x30]
 	str r6, [r0, #4]
 	str r6, [r0, #8]
-	bl sub_080728B8
+	bl getPartyInfo
 	mov sb, r0
 	add r0, sp, #4
 	bl __4Base
@@ -524,7 +524,7 @@ sub_0805F1C0: @ 0x0805F1C0
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728B8
+	bl getPartyInfo
 	mov sb, r0
 	add r0, sp, #4
 	bl __4Base
@@ -579,7 +579,7 @@ sub_0805F1C0: @ 0x0805F1C0
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728B8
+	bl getPartyInfo
 	mov sb, r0
 	add r0, sp, #4
 	bl __4Base
@@ -638,7 +638,7 @@ sub_0805F1C0: @ 0x0805F1C0
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728B8
+	bl getPartyInfo
 	mov sb, r0
 	add r0, sp, #4
 	bl __4Base
@@ -3234,7 +3234,7 @@ _080606CC:
 	add r0, sp, #4
 	mov r2, r8
 	adds r3, r5, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	add r1, sp, #0x3c
 	movs r6, #0
 	strb r6, [r1]
@@ -3308,7 +3308,7 @@ _080606CC:
 	add r0, sp, #4
 	mov r2, r8
 	adds r3, r5, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	add r1, sp, #0x40
 	strb r6, [r1]
 	strb r6, [r1, #1]
@@ -3839,7 +3839,7 @@ _08060B84:
 	movs r1, #0x7d
 	mov r2, r8
 	adds r3, r6, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	add r0, sp, #4
 	adds r1, r4, #0
 	bl sub_0806E2E8__3MsgRC3Msg
@@ -3890,7 +3890,7 @@ _08060C16:
 	movs r1, #0x7e
 	mov r2, r8
 	adds r3, r6, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	add r0, sp, #4
 	adds r1, r4, #0
 	bl sub_0806E2E8__3MsgRC3Msg
@@ -3987,7 +3987,7 @@ metalMonkeyCheck: @ 0x08060CF8
 	movs r1, #0x87
 	adds r2, r6, #0
 	adds r3, r5, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	add r1, sp, #0x34
 	movs r0, #0
 	strb r0, [r1]
@@ -4446,7 +4446,7 @@ tellPresent: @ 0x0806105C
 	movs r1, #0x88
 	adds r2, r6, #0
 	mov r3, r8
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	add r1, sp, #0x40
 	movs r0, #0
 	mov sl, r0
@@ -4486,7 +4486,7 @@ tellPresent: @ 0x0806105C
 	movs r1, #0x89
 	mov r2, r8
 	adds r3, r7, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	add r0, sp, #4
 	adds r1, r6, #0
 	bl sub_0806E2E8__3MsgRC3Msg
@@ -4556,7 +4556,7 @@ tellPresent: @ 0x0806105C
 	movs r1, #0x8b
 	mov r2, r8
 	adds r3, r7, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	add r1, sp, #0x48
 	mov r0, sl
 	strb r0, [r1]
@@ -4697,7 +4697,7 @@ _080612AA:
 	movs r1, #0x8a
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -4726,7 +4726,7 @@ reqInventorySlot: @ 0x080612FC
 	b _08061328
 _08061302:
 	adds r0, r5, #0
-	bl sub_080729F8
+	bl getPlayer
 	adds r4, r0, #0
 	ldr r1, [r4, #0x1c]
 	movs r0, #0x83
@@ -4763,7 +4763,7 @@ tellPlayerInventoryFull: @ 0x08061338
 	cmp r0, #1
 	bgt _080613A0
 	movs r0, #0
-	bl sub_080729F8
+	bl getPlayer
 	adds r1, r0, #0
 	ldr r2, [r1, #0x1c]
 	movs r0, #0xc4
@@ -4787,7 +4787,7 @@ tellPlayerInventoryFull: @ 0x08061338
 	movs r1, #0x8c
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -4800,7 +4800,7 @@ tellPlayerInventoryFull: @ 0x08061338
 	b _080613F6
 _080613A0:
 	movs r0, #0
-	bl sub_080729F8
+	bl getPlayer
 	adds r1, r0, #0
 	ldr r2, [r1, #0x1c]
 	movs r0, #0xc4
@@ -4824,7 +4824,7 @@ _080613A0:
 	movs r1, #0x8d
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -4901,7 +4901,7 @@ _0806141E:
 	movs r1, #0x92
 	mov r2, r8
 	adds r3, r6, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	add r1, sp, #0x88
 	movs r0, #0
 	strb r0, [r1]
@@ -4945,7 +4945,7 @@ _080614C4:
 	movs r1, #0x8e
 	adds r2, r6, #0
 	adds r3, r5, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	add r1, sp, #0x8c
 	movs r0, #0
 	strb r0, [r1]
@@ -5086,7 +5086,7 @@ _0806159C:
 	movs r1, #0x91
 	ldr r2, [sp, #0x94]
 	ldr r3, [sp, #0x98]
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	movs r0, #0
 	add r1, sp, #0x90
 	strb r0, [r1]
@@ -5134,7 +5134,7 @@ sub_08061678: @ 0x08061678
 	push {r4, lr}
 	sub sp, #0x180
 	movs r0, #0
-	bl sub_080729F8
+	bl getPlayer
 	adds r2, r0, #0
 	mov r0, sp
 	movs r1, #2
@@ -5267,7 +5267,7 @@ checkGiveUpItem: @ 0x0806176C
 	movs r1, #0x8f
 	adds r2, r6, #0
 	adds r3, r5, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	add r1, sp, #0x64
 	movs r7, #0
 	strb r7, [r1]
@@ -5325,7 +5325,7 @@ _08061804:
 	movs r1, #0x90
 	mov r2, r8
 	adds r3, r6, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	add r1, sp, #0x6c
 	strb r7, [r1]
 	strb r7, [r1, #1]
@@ -5381,7 +5381,7 @@ tellGaveUpItem: @ 0x0806188C
 	cmp r0, #1
 	bgt _080618F4
 	movs r0, #0
-	bl sub_080729F8
+	bl getPlayer
 	adds r1, r0, #0
 	ldr r2, [r1, #0x1c]
 	movs r0, #0xc4
@@ -5405,7 +5405,7 @@ tellGaveUpItem: @ 0x0806188C
 	movs r1, #0x93
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -5418,7 +5418,7 @@ tellGaveUpItem: @ 0x0806188C
 	b _0806194A
 _080618F4:
 	movs r0, #0
-	bl sub_080729F8
+	bl getPlayer
 	adds r1, r0, #0
 	ldr r2, [r1, #0x1c]
 	movs r0, #0xc4
@@ -5442,7 +5442,7 @@ _080618F4:
 	movs r1, #0x94
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg

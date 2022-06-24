@@ -1270,7 +1270,7 @@ sub_080822C4: @ 0x080822C4
 	ldr r0, [r1, #0x48]
 	ldrh r1, [r0, #0x24]
 	adds r0, r4, #0
-	bl sub_08073444__5GoodsUs
+	bl sub_08073444__FUs
 	adds r0, r4, #0
 	pop {r4}
 	pop {r1}

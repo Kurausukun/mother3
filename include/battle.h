@@ -3,8 +3,10 @@
 
 #include "base.h"
 
-class Monster;
 class Unit;
+class Player;
+class Monster;
+class Guest;
 
 class BgClass : public Base {
 public:
@@ -33,11 +35,95 @@ struct Struct160 {
 extern Struct160 gUnknown_080C7D28[];
 
 struct BattleGroup {
-    u8 _0[0xc];
+    u8 _0[0x8];
+    u8 _8;
+    u8 _9[3];
     u16 _c;
     u16 _e;
 };
 extern BattleGroup gBattleGroupTable[];
+
+struct PartyInfo : public Base {
+    PartyInfo();
+    virtual ~PartyInfo();
+
+    virtual void party_info_68();
+    virtual void party_info_70();
+    virtual void party_info_78();
+    virtual void party_info_80();
+    virtual bool party_info_88();
+    virtual void party_info_90();
+    virtual s32 numPlayers() const;
+    virtual Player* getPlayer(s32 idx) const;
+    virtual s32 party_info_a8() const;
+    virtual Player* party_info_b0(s32 idx) const;
+    virtual void party_info_b8() const;
+    virtual s32 party_info_c0() const;
+    virtual Player* party_info_c8(s32 idx) const;
+};
+
+struct GuestInfo : public Base {
+    GuestInfo();
+    virtual ~GuestInfo();
+
+    virtual void guest_info_68();
+    virtual bool guest_info_70();
+    virtual void guest_info_78();
+    virtual s32 guest_info_80() const;
+    virtual Guest* guest_info_88(s32 idx) const;
+};
+
+struct TX {
+    TX(u16 x, u16 y) : x(x), y(y) {}
+    u16 x, y;
+};
+
+struct MonsterInfo : public Base {
+    MonsterInfo();
+    virtual ~MonsterInfo();
+
+    virtual void monster_info_68();
+    virtual void monster_info_70();
+    virtual void monster_info_78();
+    virtual void monster_info_80();
+    virtual void monster_info_88();
+    virtual void monster_info_90();
+    virtual void monster_info_98();
+    virtual void monster_info_a0();
+    virtual bool monster_info_a8(s32, TX, TX, s32);
+    virtual void monster_info_b0();
+    virtual void monster_info_b8();
+    virtual void monster_info_c0(Monster*);
+    virtual bool monster_info_c8();
+    virtual void monster_info_d0(u8, u8);
+    virtual s32 monster_info_d8() const;
+    virtual Monster* monster_info_e0(s32 idx) const;
+    virtual s32 monster_info_e8() const;
+    virtual Monster* monster_info_f0(s32 idx) const;
+};
+
+struct XX {
+    XX(Unit* u) : u(u) {}
+
+    Unit* u;
+};
+
+struct Sequencer {
+    Sequencer();
+    virtual ~Sequencer();
+
+    virtual void sequencer_10(s32, Unit*, s32, Unit**);
+    virtual bool sequencer_18(s32, Unit*, s32, Unit**);
+    virtual s32 sequencer_20();
+    virtual s32 sequencer_28(s32);
+    virtual void sequencer_30(s32);
+    virtual void sequencer_38(s32);
+
+    s32 _0;
+    s32 _4;
+    s32 _8;
+    s32 _c;
+};
 
 class Battle : public Base {
 public:
@@ -86,7 +172,7 @@ public:
     virtual bool battle_1a0();
     virtual bool battle_1a8();
     virtual bool battle_1b0();
-    virtual s32 battle_1b8();
+    virtual s32 roundNo();
     virtual bool battle_1c0();
     virtual bool battle_1c8();
     virtual bool battle_1d0();
@@ -98,18 +184,18 @@ public:
     virtual u8* battle_200();
     virtual s32 battle_208();
     virtual BgClass* battle_210();
-    virtual s32 battle_218();
-    virtual s32 battle_220();
-    virtual s32 battle_228();
+    virtual PartyInfo* battle_218();
+    virtual GuestInfo* battle_220();
+    virtual MonsterInfo* battle_228();
     virtual Class2* battle_230();
-    virtual s32 battle_238();
+    virtual Sequencer* battle_238();
 
     bool sub_0805E670(s32, bool);
     void sub_0805DC1C();
     void sub_0805DC6C();
     void sub_0805DDE4();
-    Monster* sub_0805E390(Unit*);
-    Monster* sub_0805E338(Unit*);
+    Player* sub_0805E390(Unit*);
+    Player* sub_0805E338(Unit*);
     void sub_0805E808();
     bool sub_0805E9BC();
 
@@ -124,11 +210,11 @@ public:
     s32 _40;
     s32 _44;
     BgClass* _48;
-    s32 _4c;
-    s32 _50;
-    s32 _54;
+    PartyInfo* _4c;
+    GuestInfo* _50;
+    MonsterInfo* _54;
     Class2* _58;
-    s32 _5c;
+    Sequencer* _5c;
 };
 
 class RoundBegin : public Unk {

@@ -5401,7 +5401,7 @@ _0808B688:
 	mov r0, sl
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728B8
+	bl getPartyInfo
 	adds r5, r0, #0
 	mov r0, sl
 	bl __4Base
@@ -5420,7 +5420,7 @@ _0808B688:
 	mov r0, sl
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728B8
+	bl getPartyInfo
 	adds r6, r0, #0
 	mov r0, sl
 	bl __4Base
@@ -5442,7 +5442,7 @@ _0808B688:
 	mov r0, sl
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728B8
+	bl getPartyInfo
 	adds r6, r0, #0
 	mov r0, sl
 	bl __4Base
@@ -5461,7 +5461,7 @@ _0808B688:
 	mov r0, sl
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728B8
+	bl getPartyInfo
 	adds r5, r0, #0
 	mov r0, sl
 	bl __4Base
@@ -6217,7 +6217,7 @@ _0808C002:
 	bl setsleep
 	movs r0, #1
 	movs r1, #0
-	bl sub_08073018__Fii
+	bl sub_08073018__FbT0
 	bl sub_08072B70__Fv
 	bl sub_08072D0C__Fv
 _0808C018:
@@ -6322,7 +6322,7 @@ _0808C0B6:
 	bl setsleep
 	movs r0, #1
 	movs r1, #0
-	bl sub_08073018__Fii
+	bl sub_08073018__FbT0
 	bl sub_08072B70__Fv
 	bl sub_08072D0C__Fv
 _0808C0CC:
@@ -8339,7 +8339,7 @@ _0808CFF0:
 	mov r0, sl
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728B8
+	bl getPartyInfo
 	adds r5, r0, #0
 	mov r0, sl
 	bl __4Base
@@ -8357,7 +8357,7 @@ _0808CFF0:
 	mov r0, sl
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728B8
+	bl getPartyInfo
 	mov r8, r0
 	mov r0, sl
 	bl __4Base
@@ -8379,7 +8379,7 @@ _0808CFF0:
 	mov r0, sl
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728B8
+	bl getPartyInfo
 	mov r8, r0
 	mov r0, sl
 	bl __4Base
@@ -8397,7 +8397,7 @@ _0808CFF0:
 	mov r0, sl
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728B8
+	bl getPartyInfo
 	adds r5, r0, #0
 	mov r0, sl
 	bl __4Base
@@ -8886,7 +8886,7 @@ _0808D5F2:
 	bl setsleep
 	movs r0, #1
 	movs r1, #0
-	bl sub_08073018__Fii
+	bl sub_08073018__FbT0
 	bl sub_08072B70__Fv
 	bl sub_08072D0C__Fv
 _0808D608:
@@ -10277,7 +10277,7 @@ sub_0808DFD4: @ 0x0808DFD4
 	adds r0, r6, #0
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728B8
+	bl getPartyInfo
 	adds r5, r0, #0
 	adds r0, r6, #0
 	bl __4Base
@@ -10295,7 +10295,7 @@ sub_0808DFD4: @ 0x0808DFD4
 	adds r0, r6, #0
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728B8
+	bl getPartyInfo
 	mov sb, r0
 	adds r0, r6, #0
 	bl __4Base
@@ -10316,7 +10316,7 @@ sub_0808DFD4: @ 0x0808DFD4
 	adds r0, r6, #0
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728B8
+	bl getPartyInfo
 	mov sb, r0
 	adds r0, r6, #0
 	bl __4Base
@@ -10334,7 +10334,7 @@ sub_0808DFD4: @ 0x0808DFD4
 	adds r0, r6, #0
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728B8
+	bl getPartyInfo
 	adds r5, r0, #0
 	adds r0, r6, #0
 	bl __4Base
@@ -10420,7 +10420,7 @@ _0808E24C:
 	bl setsleep
 	movs r0, #1
 	movs r1, #0
-	bl sub_08073018__Fii
+	bl sub_08073018__FbT0
 	bl sub_08072B70__Fv
 	bl sub_08072D0C__Fv
 	ldr r0, [r4, #0x2c]

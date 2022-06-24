@@ -79,64 +79,64 @@ END_NONMATCH
 
 void sub_0806CE0C(KeyPad* kp) {
     if (kp->new_keys & DPAD_UP) {
-        kp->base_54(UpKeyPress());
+        kp->emit(UpKeyPress());
     }
     if (kp->new_keys & DPAD_DOWN) {
-        kp->base_54(DownKeyPress());
+        kp->emit(DownKeyPress());
     }
     if (kp->new_keys & DPAD_LEFT) {
-        kp->base_54(LeftKeyPress());
+        kp->emit(LeftKeyPress());
     }
     if (kp->new_keys & DPAD_RIGHT) {
-        kp->base_54(RightKeyPress());
+        kp->emit(RightKeyPress());
     }
     if (kp->new_keys & A_BUTTON) {
-        kp->base_54(AKeyPress());
+        kp->emit(AKeyPress());
     }
     if (kp->new_keys & B_BUTTON) {
-        kp->base_54(BKeyPress());
+        kp->emit(BKeyPress());
     }
     if (kp->new_keys & R_BUTTON) {
-        kp->base_54(RKeyPress());
+        kp->emit(RKeyPress());
     }
     if (kp->new_keys & L_BUTTON) {
-        kp->base_54(LKeyPress());
+        kp->emit(LKeyPress());
     }
     if (kp->new_keys & START_BUTTON) {
-        kp->base_54(StartKeyPress());
+        kp->emit(StartKeyPress());
     }
     if (kp->new_keys & SELECT_BUTTON) {
-        kp->base_54(SelectKeyPress());
+        kp->emit(SelectKeyPress());
     }
 
     if (kp->long_keys & DPAD_UP) {
-        kp->base_54(UpKeyLongPress());
+        kp->emit(UpKeyLongPress());
     }
     if (kp->long_keys & DPAD_DOWN) {
-        kp->base_54(DownKeyLongPress());
+        kp->emit(DownKeyLongPress());
     }
     if (kp->long_keys & DPAD_LEFT) {
-        kp->base_54(LeftKeyLongPress());
+        kp->emit(LeftKeyLongPress());
     }
     if (kp->long_keys & DPAD_RIGHT) {
-        kp->base_54(RightKeyLongPress());
+        kp->emit(RightKeyLongPress());
     }
     if (kp->long_keys & A_BUTTON) {
-        kp->base_54(AKeyLongPress());
+        kp->emit(AKeyLongPress());
     }
     if (kp->long_keys & B_BUTTON) {
-        kp->base_54(BKeyLongPress());
+        kp->emit(BKeyLongPress());
     }
     if (kp->long_keys & L_BUTTON) {
-        kp->base_54(LKeyLongPress());
+        kp->emit(LKeyLongPress());
     }
     if (kp->long_keys & R_BUTTON) {
-        kp->base_54(RKeyLongPress());
+        kp->emit(RKeyLongPress());
     }
     if (kp->long_keys & START_BUTTON) {
-        kp->base_54(StartKeyLongPress());
+        kp->emit(StartKeyLongPress());
     }
     if (kp->long_keys & SELECT_BUTTON) {
-        kp->base_54(SelectKeyLongPress());
+        kp->emit(SelectKeyLongPress());
     }
 }

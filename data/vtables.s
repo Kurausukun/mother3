@@ -59,7 +59,7 @@ _vt.6System::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -132,7 +132,7 @@ _vt.3Unk::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -173,7 +173,7 @@ vt_09F45058::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -308,7 +308,7 @@ vt_09F45058::
 	.4byte battle_1b0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_1b8__6Battle
+	.4byte roundNo__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_1c0__6Battle
@@ -402,7 +402,7 @@ _vt.14ShowDownAsLose::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -454,7 +454,7 @@ _vt.16ShowDownAsEscape::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -506,7 +506,7 @@ _vt.13ShowDownAsWin::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -558,7 +558,7 @@ _vt.11UnitTurnEnd::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -610,7 +610,7 @@ _vt.13UnitTurnBegin::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -662,7 +662,7 @@ _vt.8RoundEnd::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -714,7 +714,7 @@ _vt.10RoundBegin::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -766,7 +766,7 @@ vt_09F45630::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -901,7 +901,7 @@ vt_09F45630::
 	.4byte battle_1b0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_1b8__6Battle
+	.4byte roundNo__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_1c0__6Battle
@@ -1029,7 +1029,7 @@ vt_09F458E8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -1164,7 +1164,7 @@ vt_09F458E8::
 	.4byte battle_1b0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_1b8__6Battle
+	.4byte roundNo__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_1c0__6Battle
@@ -1325,7 +1325,7 @@ vt_09F45BF8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -1460,7 +1460,7 @@ vt_09F45BF8::
 	.4byte battle_1b0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_1b8__6Battle
+	.4byte roundNo__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_1c0__6Battle
@@ -1600,7 +1600,7 @@ vt_09F45ED0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -1735,7 +1735,7 @@ vt_09F45ED0::
 	.4byte battle_1b0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_1b8__6Battle
+	.4byte roundNo__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_1c0__6Battle
@@ -1878,7 +1878,7 @@ vt_09F461B0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -2015,7 +2015,7 @@ vt_09F46280::
 	.4byte battle_1b0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_1b8__6Battle
+	.4byte roundNo__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_1c0__6Battle
@@ -2134,7 +2134,7 @@ vt_09F46450::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -2269,7 +2269,7 @@ vt_09F46450::
 	.4byte battle_1b0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_1b8__6Battle
+	.4byte roundNo__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_1c0__6Battle
@@ -2388,7 +2388,7 @@ vt_09F466F0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -2435,7 +2435,7 @@ vt_09F46768::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -2491,7 +2491,7 @@ vt_09F467F8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -2659,7 +2659,7 @@ vt_09F469A8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -3137,7 +3137,7 @@ vt_09F46E98::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -3618,7 +3618,7 @@ vt_09F47390::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -4099,7 +4099,7 @@ vt_09F47888::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -4580,7 +4580,7 @@ vt_09F47D80::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -5061,7 +5061,7 @@ vt_09F48278::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -5545,7 +5545,7 @@ vt_09F48778::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -6026,7 +6026,7 @@ vt_09F48C70::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -6457,7 +6457,7 @@ vt_09F490E8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -6501,7 +6501,7 @@ vt_09F49158::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -6755,7 +6755,7 @@ vt_09F493F8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -7012,7 +7012,7 @@ vt_09F496A0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -7269,7 +7269,7 @@ vt_09F49948::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -7523,7 +7523,7 @@ vt_09F49BE8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -7777,7 +7777,7 @@ vt_09F49E88::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -8031,7 +8031,7 @@ vt_09F4A128::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -8285,7 +8285,7 @@ vt_09F4A3C8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -8539,7 +8539,7 @@ vt_09F4A668::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -8796,7 +8796,7 @@ vt_09F4A910::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -9053,7 +9053,7 @@ vt_09F4ABB8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -9310,7 +9310,7 @@ vt_09F4AE60::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -9567,7 +9567,7 @@ vt_09F4B108::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -9824,7 +9824,7 @@ vt_09F4B3B0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -10111,7 +10111,7 @@ vt_09F4B6A8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -10365,7 +10365,7 @@ vt_09F4B948::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -10397,7 +10397,7 @@ _vt.5Guest.10UnitObject::
 	.4byte _._5Guest
 	.2byte -32
 	.2byte 0
-	.4byte object_8__5Guest
+	.4byte object_8__5Guesti
 	.2byte -32
 	.2byte 0
 	.4byte object_10__5Guest
@@ -10468,7 +10468,7 @@ _vt.5Guest::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -10736,7 +10736,7 @@ vt_09F4BD50::
 	.4byte sub_080A02E4
 	.2byte -32
 	.2byte 0
-	.4byte object_8__5Guest
+	.4byte object_8__5Guesti
 	.2byte -32
 	.2byte 0
 	.4byte object_10__5Guest
@@ -10807,7 +10807,7 @@ vt_09F4BDC8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -11076,7 +11076,7 @@ vt_09F4C0D0::
 	.4byte sub_080A04B0
 	.2byte -32
 	.2byte 0
-	.4byte object_8__5Guest
+	.4byte object_8__5Guesti
 	.2byte -32
 	.2byte 0
 	.4byte object_10__5Guest
@@ -11147,7 +11147,7 @@ vt_09F4C148::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -11425,7 +11425,7 @@ vt_09F4C468::
 	.4byte sub_080A073C
 	.2byte -32
 	.2byte 0
-	.4byte object_8__5Guest
+	.4byte object_8__5Guesti
 	.2byte -32
 	.2byte 0
 	.4byte object_10__5Guest
@@ -11496,7 +11496,7 @@ vt_09F4C4E0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -11768,7 +11768,7 @@ vt_09F4C7F0::
 	.4byte sub_080A0918
 	.2byte -32
 	.2byte 0
-	.4byte object_8__5Guest
+	.4byte object_8__5Guesti
 	.2byte -32
 	.2byte 0
 	.4byte object_10__5Guest
@@ -11839,7 +11839,7 @@ vt_09F4C868::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -12114,7 +12114,7 @@ vt_09F4CB80::
 	.4byte sub_080A095C
 	.2byte -32
 	.2byte 0
-	.4byte object_8__5Guest
+	.4byte object_8__5Guesti
 	.2byte -32
 	.2byte 0
 	.4byte object_10__5Guest
@@ -12185,7 +12185,7 @@ vt_09F4CBF8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -12454,7 +12454,7 @@ vt_09F4CF00::
 	.4byte sub_080A09A8
 	.2byte -32
 	.2byte 0
-	.4byte object_8__5Guest
+	.4byte object_8__5Guesti
 	.2byte -32
 	.2byte 0
 	.4byte object_10__5Guest
@@ -12525,7 +12525,7 @@ vt_09F4CF78::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -12794,7 +12794,7 @@ vt_09F4D280::
 	.4byte sub_080A0A0C
 	.2byte -32
 	.2byte 0
-	.4byte object_8__5Guest
+	.4byte object_8__5Guesti
 	.2byte -32
 	.2byte 0
 	.4byte object_10__5Guest
@@ -12865,7 +12865,7 @@ vt_09F4D2F8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -13158,7 +13158,7 @@ vt_09F4D600::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -13412,7 +13412,7 @@ vt_09F4D8A0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -13666,7 +13666,7 @@ vt_09F4DB40::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -13920,7 +13920,7 @@ vt_09F4DDE0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -14174,7 +14174,7 @@ vt_09F4E080::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -14428,7 +14428,7 @@ vt_09F4E320::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -14617,7 +14617,7 @@ vt_09F4E508::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -15071,7 +15071,7 @@ vt_09F4E9B8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -15551,7 +15551,7 @@ vt_09F4EEA8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -16005,7 +16005,7 @@ vt_09F4F358::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -16507,7 +16507,7 @@ vt_09F4F888::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -16970,7 +16970,7 @@ vt_09F4FD50::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -17433,7 +17433,7 @@ vt_09F50218::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -17911,7 +17911,7 @@ vt_09F50708::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -18365,7 +18365,7 @@ vt_09F50BB8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -18822,7 +18822,7 @@ vt_09F51070::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -19276,7 +19276,7 @@ vt_09F51520::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -19730,7 +19730,7 @@ vt_09F519D0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -20196,7 +20196,7 @@ vt_09F51EA0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -20653,7 +20653,7 @@ vt_09F52358::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -21125,7 +21125,7 @@ vt_09F52838::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -21579,7 +21579,7 @@ vt_09F52CE8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -22054,7 +22054,7 @@ vt_09F531D0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -22508,7 +22508,7 @@ vt_09F53680::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -22962,7 +22962,7 @@ vt_09F53B30::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -23416,7 +23416,7 @@ vt_09F53FE0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -23870,7 +23870,7 @@ vt_09F54490::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -24324,7 +24324,7 @@ vt_09F54940::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -24778,7 +24778,7 @@ vt_09F54DF0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -25232,7 +25232,7 @@ vt_09F552A0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -25686,7 +25686,7 @@ vt_09F55750::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -26140,7 +26140,7 @@ vt_09F55C00::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -26594,7 +26594,7 @@ vt_09F560B0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -27048,7 +27048,7 @@ vt_09F56560::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -27517,7 +27517,7 @@ vt_09F56A38::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -27971,7 +27971,7 @@ vt_09F56EE8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -28425,7 +28425,7 @@ vt_09F57398::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -28879,7 +28879,7 @@ vt_09F57848::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -29342,7 +29342,7 @@ vt_09F57D10::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -29796,7 +29796,7 @@ vt_09F581C0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -30250,7 +30250,7 @@ vt_09F58670::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -30704,7 +30704,7 @@ vt_09F58B20::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -31161,7 +31161,7 @@ vt_09F58FD8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -31615,7 +31615,7 @@ vt_09F59488::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -32081,7 +32081,7 @@ vt_09F59958::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -32544,7 +32544,7 @@ vt_09F59E20::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -32998,7 +32998,7 @@ vt_09F5A2D0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -33452,7 +33452,7 @@ vt_09F5A780::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -33915,7 +33915,7 @@ vt_09F5AC48::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -34372,7 +34372,7 @@ vt_09F5B100::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -34826,7 +34826,7 @@ vt_09F5B5B0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -35280,7 +35280,7 @@ vt_09F5BA60::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -35746,7 +35746,7 @@ vt_09F5BF30::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -36200,7 +36200,7 @@ vt_09F5C3E0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -36654,7 +36654,7 @@ vt_09F5C890::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -37108,7 +37108,7 @@ vt_09F5CD40::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -37571,7 +37571,7 @@ vt_09F5D208::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -38025,7 +38025,7 @@ vt_09F5D6B8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -38479,7 +38479,7 @@ vt_09F5DB68::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -38933,7 +38933,7 @@ vt_09F5E018::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -39387,7 +39387,7 @@ vt_09F5E4C8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -39841,7 +39841,7 @@ vt_09F5E978::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -40304,7 +40304,7 @@ vt_09F5EE40::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -40758,7 +40758,7 @@ vt_09F5F2F0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -41221,7 +41221,7 @@ vt_09F5F7B8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -41675,7 +41675,7 @@ vt_09F5FC68::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -42129,7 +42129,7 @@ vt_09F60118::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -42583,7 +42583,7 @@ vt_09F605C8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -43037,7 +43037,7 @@ vt_09F60A78::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -43491,7 +43491,7 @@ vt_09F60F28::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -43957,7 +43957,7 @@ vt_09F613F8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -44423,7 +44423,7 @@ vt_09F618C8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -44886,7 +44886,7 @@ vt_09F61D90::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -45340,7 +45340,7 @@ vt_09F62240::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -45794,7 +45794,7 @@ vt_09F626F0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -46248,7 +46248,7 @@ vt_09F62BA0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -46702,7 +46702,7 @@ vt_09F63050::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -47156,7 +47156,7 @@ vt_09F63500::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -47610,7 +47610,7 @@ vt_09F639B0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -48067,7 +48067,7 @@ vt_09F63E68::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -48521,7 +48521,7 @@ vt_09F64318::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -48928,7 +48928,7 @@ vt_09F64750::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -49188,7 +49188,7 @@ vt_09F64A00::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -49448,7 +49448,7 @@ vt_09F64CB0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -49708,7 +49708,7 @@ vt_09F64F60::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -49968,7 +49968,7 @@ vt_09F65210::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -50228,7 +50228,7 @@ vt_09F654C0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -50488,7 +50488,7 @@ vt_09F65770::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -50748,7 +50748,7 @@ vt_09F65A20::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -51008,7 +51008,7 @@ vt_09F65CD0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -51268,7 +51268,7 @@ vt_09F65F80::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -51528,7 +51528,7 @@ vt_09F66230::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -51788,7 +51788,7 @@ vt_09F664E0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -52048,7 +52048,7 @@ vt_09F66790::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -52308,7 +52308,7 @@ vt_09F66A40::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -52568,7 +52568,7 @@ vt_09F66CF0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -52828,7 +52828,7 @@ vt_09F66FA0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -53088,7 +53088,7 @@ vt_09F67250::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -53348,7 +53348,7 @@ vt_09F67500::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -53608,7 +53608,7 @@ vt_09F677B0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -53868,7 +53868,7 @@ vt_09F67A60::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -54128,7 +54128,7 @@ vt_09F67D10::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -54388,7 +54388,7 @@ vt_09F67FC0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -54648,7 +54648,7 @@ vt_09F68270::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -54908,7 +54908,7 @@ vt_09F68520::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -55168,7 +55168,7 @@ vt_09F687D0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -55428,7 +55428,7 @@ vt_09F68A80::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -55688,7 +55688,7 @@ vt_09F68D30::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -55948,7 +55948,7 @@ vt_09F68FE0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -56208,7 +56208,7 @@ vt_09F69290::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -56471,7 +56471,7 @@ vt_09F69548::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -56731,7 +56731,7 @@ vt_09F697F8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -56991,7 +56991,7 @@ vt_09F69AA8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -57251,7 +57251,7 @@ vt_09F69D58::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -57511,7 +57511,7 @@ vt_09F6A008::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -57771,7 +57771,7 @@ vt_09F6A2B8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -58031,7 +58031,7 @@ vt_09F6A568::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -58291,7 +58291,7 @@ vt_09F6A818::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -58551,7 +58551,7 @@ vt_09F6AAC8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -58811,7 +58811,7 @@ vt_09F6AD78::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -59071,7 +59071,7 @@ vt_09F6B028::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -59331,7 +59331,7 @@ vt_09F6B2D8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -59591,7 +59591,7 @@ vt_09F6B588::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -59857,7 +59857,7 @@ vt_09F6B848::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -60117,7 +60117,7 @@ vt_09F6BAF8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -60377,7 +60377,7 @@ vt_09F6BDA8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -60637,7 +60637,7 @@ vt_09F6C058::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -60897,7 +60897,7 @@ vt_09F6C308::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -61157,7 +61157,7 @@ vt_09F6C5B8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -61417,7 +61417,7 @@ vt_09F6C868::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -61677,7 +61677,7 @@ vt_09F6CB18::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -61937,7 +61937,7 @@ vt_09F6CDC8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -62197,7 +62197,7 @@ vt_09F6D078::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -62457,7 +62457,7 @@ vt_09F6D328::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -62717,7 +62717,7 @@ vt_09F6D5D8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -62977,7 +62977,7 @@ vt_09F6D888::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -63237,7 +63237,7 @@ vt_09F6DB38::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -63497,7 +63497,7 @@ vt_09F6DDE8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -63757,7 +63757,7 @@ vt_09F6E098::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -64017,7 +64017,7 @@ vt_09F6E348::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -64277,7 +64277,7 @@ vt_09F6E5F8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -64537,7 +64537,7 @@ vt_09F6E8A8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -64797,7 +64797,7 @@ vt_09F6EB58::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -65057,7 +65057,7 @@ vt_09F6EE08::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -65317,7 +65317,7 @@ vt_09F6F0B8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -65577,7 +65577,7 @@ vt_09F6F368::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -65837,7 +65837,7 @@ vt_09F6F618::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -66097,7 +66097,7 @@ vt_09F6F8C8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -66357,7 +66357,7 @@ vt_09F6FB78::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -66617,7 +66617,7 @@ vt_09F6FE28::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -66877,7 +66877,7 @@ vt_09F700D8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -67137,7 +67137,7 @@ vt_09F70388::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -67397,7 +67397,7 @@ vt_09F70638::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -67657,7 +67657,7 @@ vt_09F708E8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -67917,7 +67917,7 @@ vt_09F70B98::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -68177,7 +68177,7 @@ vt_09F70E48::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -68437,7 +68437,7 @@ vt_09F710F8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -68697,7 +68697,7 @@ vt_09F713A8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -68960,7 +68960,7 @@ vt_09F71660::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -69220,7 +69220,7 @@ vt_09F71910::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -69480,7 +69480,7 @@ vt_09F71BC0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -69740,7 +69740,7 @@ vt_09F71E70::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -70000,7 +70000,7 @@ vt_09F72120::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -70260,7 +70260,7 @@ vt_09F723D0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -70385,7 +70385,7 @@ vt_09F72518::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -70510,7 +70510,7 @@ vt_09F72660::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -70635,7 +70635,7 @@ vt_09F727A8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -70811,7 +70811,7 @@ vt_09F72978::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -70987,7 +70987,7 @@ vt_09F72B48::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -71163,7 +71163,7 @@ vt_09F72D18::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -71339,7 +71339,7 @@ vt_09F72EE8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -71515,7 +71515,7 @@ vt_09F730B8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -71691,7 +71691,7 @@ vt_09F73288::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -71867,7 +71867,7 @@ vt_09F73458::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -72043,7 +72043,7 @@ vt_09F73628::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -72219,7 +72219,7 @@ vt_09F737F8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -72395,7 +72395,7 @@ vt_09F739C8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -72571,7 +72571,7 @@ vt_09F73B98::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -72747,7 +72747,7 @@ vt_09F73D68::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -72923,7 +72923,7 @@ vt_09F73F38::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -73099,7 +73099,7 @@ vt_09F74108::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -73275,7 +73275,7 @@ vt_09F742D8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -73451,7 +73451,7 @@ vt_09F744A8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -73627,7 +73627,7 @@ vt_09F74678::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -73803,7 +73803,7 @@ vt_09F74848::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -73979,7 +73979,7 @@ vt_09F74A18::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -74155,7 +74155,7 @@ vt_09F74BE8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -74331,7 +74331,7 @@ vt_09F74DB8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -74507,7 +74507,7 @@ vt_09F74F88::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -74683,7 +74683,7 @@ vt_09F75158::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -74859,7 +74859,7 @@ vt_09F75328::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -75035,7 +75035,7 @@ vt_09F754F8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -75211,7 +75211,7 @@ vt_09F756C8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -75336,7 +75336,7 @@ vt_09F75810::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -75461,7 +75461,7 @@ vt_09F75958::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -75586,7 +75586,7 @@ vt_09F75AA0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -75711,7 +75711,7 @@ vt_09F75BE8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -75836,7 +75836,7 @@ vt_09F75D30::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -75961,7 +75961,7 @@ vt_09F75E78::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -76086,7 +76086,7 @@ vt_09F75FC0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -76211,7 +76211,7 @@ vt_09F76108::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -76336,7 +76336,7 @@ vt_09F76250::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -76461,7 +76461,7 @@ vt_09F76398::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -76586,7 +76586,7 @@ vt_09F764E0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -76711,7 +76711,7 @@ vt_09F76628::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -76836,7 +76836,7 @@ vt_09F76770::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -76961,7 +76961,7 @@ vt_09F768B8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -77086,7 +77086,7 @@ vt_09F76A00::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -77211,7 +77211,7 @@ vt_09F76B48::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -77336,7 +77336,7 @@ vt_09F76C90::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -77461,7 +77461,7 @@ vt_09F76DD8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -77586,7 +77586,7 @@ vt_09F76F20::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -77711,7 +77711,7 @@ vt_09F77068::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -77836,7 +77836,7 @@ vt_09F771B0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -77961,7 +77961,7 @@ vt_09F772F8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -78086,7 +78086,7 @@ vt_09F77440::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -78349,7 +78349,7 @@ vt_09F776F8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -78612,7 +78612,7 @@ vt_09F779B0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -78875,7 +78875,7 @@ vt_09F77C68::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -79138,7 +79138,7 @@ vt_09F77F20::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -79401,7 +79401,7 @@ vt_09F781D8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -79664,7 +79664,7 @@ vt_09F78490::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -79927,7 +79927,7 @@ vt_09F78748::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -80193,7 +80193,7 @@ vt_09F78A08::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -80456,7 +80456,7 @@ vt_09F78CC0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -80719,7 +80719,7 @@ vt_09F78F78::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -80982,7 +80982,7 @@ vt_09F79230::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -81245,7 +81245,7 @@ vt_09F794E8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -81508,7 +81508,7 @@ __vt_5Goods::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -81771,7 +81771,7 @@ _vt.5Goods::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -82051,7 +82051,7 @@ _vt.11TriviaCard4::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -82329,7 +82329,7 @@ _vt.11TriviaCard3::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -82607,7 +82607,7 @@ _vt.11TriviaCard2::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -82885,7 +82885,7 @@ _vt.11TriviaCard1::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -83163,7 +83163,7 @@ _vt.9DragoFang::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -83441,7 +83441,7 @@ _vt.14ShieldSnatcher::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -83719,7 +83719,7 @@ _vt.16CupOfLifenoodles::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -83997,7 +83997,7 @@ _vt.10SecretHerb::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -84275,7 +84275,7 @@ _vt.8PaperFan::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -84553,7 +84553,7 @@ _vt.11MadeYouLook::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -84831,7 +84831,7 @@ _vt.15AttackAttractor::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -85109,7 +85109,7 @@ _vt.15EnemyWimperizer::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -85387,7 +85387,7 @@ _vt.15EnemyBufferizer::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -85665,7 +85665,7 @@ _vt.9LottoMeal::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -85943,7 +85943,7 @@ _vt.9DoggyFood::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -86221,7 +86221,7 @@ _vt.14PeculiarCheese::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -86499,7 +86499,7 @@ _vt.8BugSpray::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -86777,7 +86777,7 @@ _vt.13AncientBanana::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -87055,7 +87055,7 @@ _vt.11HoneyShower::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -87333,7 +87333,7 @@ _vt.12SaltwaterGun::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -87611,7 +87611,7 @@ _vt.15NewYearsEveBomb::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -87892,7 +87892,7 @@ _vt.12DefaultGoods::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -88170,7 +88170,7 @@ vt_09F7DC80::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -88277,7 +88277,7 @@ vt_09F7DD98::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -88384,7 +88384,7 @@ vt_09F7DEB0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -88452,7 +88452,7 @@ vt_09F7DF60::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -88592,7 +88592,7 @@ vt_09F7E0D0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -88758,7 +88758,7 @@ vt_09F7E280::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -88825,7 +88825,7 @@ vt_09F7E328::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -88899,7 +88899,7 @@ vt_09F7E3E8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -88943,7 +88943,7 @@ vt_09F7E458::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -89029,7 +89029,7 @@ vt_09F7E538::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -89142,7 +89142,7 @@ vt_09F7E660::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -89237,7 +89237,7 @@ vt_09F7E758::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -89356,7 +89356,7 @@ vt_09F7E890::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -89451,7 +89451,7 @@ vt_09F7E988::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -89565,7 +89565,7 @@ _vt.4Base::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -89614,7 +89614,7 @@ _vt.3Irc::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -89666,7 +89666,7 @@ _vt.5Clock::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -89718,7 +89718,7 @@ _vt.12PostSysClock::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -89770,7 +89770,7 @@ _vt.12PostAppClock::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -89822,7 +89822,7 @@ _vt.8AppClock::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -89874,7 +89874,7 @@ _vt.11PreAppClock::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -89926,7 +89926,7 @@ _vt.8SysClock::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -89978,7 +89978,7 @@ _vt.11PreSysClock::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -90038,7 +90038,7 @@ vt_09F7EF30::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -90090,7 +90090,7 @@ vt_09F7EFB0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -90142,7 +90142,7 @@ vt_09F7F030::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -90194,7 +90194,7 @@ vt_09F7F0B0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -90246,7 +90246,7 @@ vt_09F7F130::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -90298,7 +90298,7 @@ _vt.18SelectKeyLongPress::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -90350,7 +90350,7 @@ _vt.14SelectKeyPress::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -90402,7 +90402,7 @@ _vt.17StartKeyLongPress::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -90454,7 +90454,7 @@ _vt.13StartKeyPress::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -90506,7 +90506,7 @@ _vt.13RKeyLongPress::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -90558,7 +90558,7 @@ _vt.9RKeyPress::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -90610,7 +90610,7 @@ _vt.13LKeyLongPress::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -90662,7 +90662,7 @@ _vt.9LKeyPress::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -90714,7 +90714,7 @@ _vt.13BKeyLongPress::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -90766,7 +90766,7 @@ _vt.9BKeyPress::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -90818,7 +90818,7 @@ _vt.13AKeyLongPress::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -90870,7 +90870,7 @@ _vt.9AKeyPress::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -90922,7 +90922,7 @@ _vt.17RightKeyLongPress::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -90974,7 +90974,7 @@ _vt.13RightKeyPress::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -91026,7 +91026,7 @@ _vt.16LeftKeyLongPress::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -91078,7 +91078,7 @@ _vt.12LeftKeyPress::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -91130,7 +91130,7 @@ _vt.16DownKeyLongPress::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -91182,7 +91182,7 @@ _vt.12DownKeyPress::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -91234,7 +91234,7 @@ _vt.14UpKeyLongPress::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -91286,7 +91286,7 @@ _vt.10UpKeyPress::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -91338,7 +91338,7 @@ _vt.6KeyPad::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -91406,7 +91406,7 @@ vt_09F7FC50::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -91483,7 +91483,7 @@ vt_09F7FD18::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -91578,7 +91578,7 @@ vt_09F7FE10::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -91702,7 +91702,7 @@ vt_09F7FF50::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -91760,7 +91760,7 @@ vt_09F7FFE0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -91840,7 +91840,7 @@ vt_09F800B0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -91913,7 +91913,7 @@ vt_09F80168::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -91993,7 +91993,7 @@ vt_09F80238::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -92094,7 +92094,7 @@ vt_09F80340::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -92153,7 +92153,7 @@ vt_09F803D8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -92212,7 +92212,7 @@ vt_09F80470::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -92271,7 +92271,7 @@ vt_09F80508::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -92350,7 +92350,7 @@ vt_09F805D0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -92420,7 +92420,7 @@ vt_09F80680::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -92512,7 +92512,7 @@ vt_09F80770::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -92562,7 +92562,7 @@ vt_09F807F0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -92702,7 +92702,7 @@ vt_09F80960::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -92842,7 +92842,7 @@ vt_09F80AD0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -92928,7 +92928,7 @@ vt_09F80BB0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -93011,7 +93011,7 @@ vt_09F80C88::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -93067,7 +93067,7 @@ vt_09F80D18::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -93162,7 +93162,7 @@ vt_09F80E10::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -93257,7 +93257,7 @@ vt_09F80F08::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -93352,7 +93352,7 @@ vt_09F81000::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -93447,7 +93447,7 @@ vt_09F810F8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -93488,7 +93488,7 @@ vt_09F81160::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -93549,7 +93549,7 @@ vt_09F811F8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -93601,7 +93601,7 @@ vt_09F81278::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -93653,7 +93653,7 @@ vt_09F812F8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -93812,7 +93812,7 @@ _vt.4Unit::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -94078,7 +94078,7 @@ _vt.7UnitDie::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -94130,7 +94130,7 @@ _vt.10UnitEscape::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -94182,7 +94182,7 @@ _vt.10UnitRevive::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -94234,7 +94234,7 @@ _vt.8UnitJoin::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -94286,7 +94286,7 @@ _vt.6Resume::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -94338,7 +94338,7 @@ _vt.7Suspend::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -94437,7 +94437,7 @@ _vt.10UnitTarget::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -94550,7 +94550,7 @@ _vt.16UnitTargetChoice::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -94734,7 +94734,7 @@ _vt.6Action::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -95035,7 +95035,7 @@ vt_09F820E8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -95465,7 +95465,7 @@ vt_09F82558::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -95557,7 +95557,7 @@ vt_09F82648::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -95607,7 +95607,7 @@ vt_09F826C8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -95693,7 +95693,7 @@ vt_09F827A8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -95785,7 +95785,7 @@ vt_09F82898::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -95880,7 +95880,7 @@ vt_09F82990::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -95939,7 +95939,7 @@ vt_09F82A28::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -96204,7 +96204,7 @@ _vt.10GuestSkill::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -96516,7 +96516,7 @@ vt_09F83010::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -96907,7 +96907,7 @@ vt_09F83418::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -97023,7 +97023,7 @@ vt_09F83548::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -97294,7 +97294,7 @@ vt_09F83810::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -97419,7 +97419,7 @@ vt_09F83958::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -97693,7 +97693,7 @@ vt_09F83C28::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -97791,7 +97791,7 @@ vt_09F83D28::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -97844,7 +97844,7 @@ vt_09F83DB0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -97900,7 +97900,7 @@ vt_09F83E40::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -97986,7 +97986,7 @@ vt_09F83F20::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -98075,7 +98075,7 @@ vt_09F84008::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -98125,7 +98125,7 @@ vt_09F84088::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -98175,7 +98175,7 @@ vt_09F84108::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -98315,7 +98315,7 @@ vt_09F84278::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -98455,7 +98455,7 @@ vt_09F843E8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -98595,7 +98595,7 @@ vt_09F84558::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -98735,7 +98735,7 @@ vt_09F846C8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -98875,7 +98875,7 @@ vt_09F84838::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -98979,7 +98979,7 @@ vt_09F84948::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -99044,7 +99044,7 @@ vt_09F849F0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -99139,7 +99139,7 @@ vt_09F84AE8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -99272,7 +99272,7 @@ vt_09F84C40::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -99383,7 +99383,7 @@ vt_09F84D58::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -99424,7 +99424,7 @@ vt_09F84DC0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -99546,7 +99546,7 @@ vt_09F84F00::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -99725,7 +99725,7 @@ vt_09F850A8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -99784,7 +99784,7 @@ vt_09F85140::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -99843,7 +99843,7 @@ vt_09F851D8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -99944,7 +99944,7 @@ vt_09F852E0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -100003,7 +100003,7 @@ vt_09F85378::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -100062,7 +100062,7 @@ vt_09F85410::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -100121,7 +100121,7 @@ vt_09F854A8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -100180,7 +100180,7 @@ vt_09F85540::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -100239,7 +100239,7 @@ vt_09F855D8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -100298,7 +100298,7 @@ vt_09F85670::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -100357,7 +100357,7 @@ vt_09F85708::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -100416,7 +100416,7 @@ vt_09F857A0::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -100502,7 +100502,7 @@ vt_09F85880::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -100573,7 +100573,7 @@ vt_09F85938::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -100668,7 +100668,7 @@ vt_09F85A30::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -100763,7 +100763,7 @@ vt_09F85B28::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -100864,7 +100864,7 @@ vt_09F85C30::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -100956,7 +100956,7 @@ vt_09F85D20::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -101009,7 +101009,7 @@ vt_09F85DA8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base
@@ -101123,7 +101123,7 @@ vt_09F85EC8::
 	.4byte base_4c__4BaseUiR4BaseUi
 	.2byte 0
 	.2byte 0
-	.4byte base_54__4BaseRC4Base
+	.4byte emit__4BaseRC4Base
 	.2byte 0
 	.2byte 0
 	.4byte base_5c__4Base

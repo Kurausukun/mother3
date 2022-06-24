@@ -4,12 +4,12 @@
 u32 gUnknown_020021AC;
 void* gUnknown_02004EE2;
 
-extern "C" void* sub_0807A8B8() {
+extern "C" void* getPlayerRTTI() {
     return &gUnknown_020021AC;
 }
 
 extern "C" void* sub_0807A8C0() {
-    return sub_0807A8B8();
+    return getPlayerRTTI();
 }
 
 Msg createPlayerName(u16 pl) {
