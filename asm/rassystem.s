@@ -13,7 +13,7 @@ sub_0806E820: @ 0x0806E820
 	str r0, [r7, #0x1c]
 	adds r0, r7, #0
 	adds r0, #0x20
-	bl sub_08088E18
+	bl __15Struct_09F85088
 	adds r0, r7, #0
 	adds r0, #0x2c
 	bl __3Msg
@@ -27,7 +27,7 @@ sub_0806E820: @ 0x0806E820
 	strh r0, [r1, #2]
 	adds r0, r7, #0
 	adds r0, #0x4c
-	bl sub_08088ED4
+	bl __1V
 	add r0, sp, #0x28
 	strb r4, [r0]
 	strb r4, [r0, #1]
@@ -92,7 +92,7 @@ _0806E8DA:
 	adds r0, r4, #0
 	adds r0, #0x4c
 	movs r1, #2
-	bl sub_08088EE0
+	bl _._1V
 	adds r0, r4, #0
 	adds r0, #0x2c
 	movs r1, #2
@@ -100,7 +100,7 @@ _0806E8DA:
 	adds r0, r4, #0
 	adds r0, #0x20
 	movs r1, #2
-	bl sub_08088E2C
+	bl _._15Struct_09F85088
 	adds r0, r4, #0
 	adds r1, r5, #0
 	bl _._4Base
@@ -120,7 +120,7 @@ sub_0806E90C: @ 0x0806E90C
 	ands r3, r4
 	strb r3, [r5]
 	adds r0, #0x20
-	bl sub_08088E4C
+	bl sub_08088E4C__15Struct_09F85088PPUcP7Setting
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -302,7 +302,7 @@ sub_0806EA34: @ 0x0806EA34
 	adds r1, #0x20
 	mov r5, sp
 	mov r0, sp
-	bl sub_08088E58
+	bl __7SettingRC7Setting
 	adds r0, r6, #0
 	adds r0, #0x2c
 	bl len__3Msg
@@ -398,10 +398,10 @@ _0806EAE4:
 	adds r0, #0x4c
 	adds r1, r6, #0
 	mov r2, sp
-	bl sub_08088F00
+	bl sub_08088F00__1VG7SettingPs
 	add r0, sp, #4
 	adds r1, r6, #0
-	bl sub_08088E58
+	bl __7SettingRC7Setting
 	ldr r1, [sp, #4]
 	adds r0, r4, #0
 	adds r0, #0x40
@@ -477,7 +477,7 @@ _0806EB6E:
 	bl sub_08089178
 	add r0, sp, #8
 	adds r1, r7, #0
-	bl sub_08088E58
+	bl __7SettingRC7Setting
 	ldr r1, [sp, #8]
 	adds r0, r4, #0
 	adds r0, #0x40

@@ -62,11 +62,13 @@ SECTIONS
         asm/efcsystem.o(.text);
         asm/sndsystem.o(.text);
         asm/keyfocusmanager.o(.text);
+        src/battle/battleData.o(.text);
         asm/rhythm.o(.text);
         src/battle/unit.o(.text);
         src/battle/unitTarget.o(.text);
         asm/rom2.o(.text);
         src/battle/action.o(.text);
+        src/battle/player.o(.text);
         asm/player.o(.text);
         asm/playerskill.o(.text);
         src/battle/guestSkill.o(.text);

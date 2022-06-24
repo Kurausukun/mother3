@@ -101,7 +101,7 @@ sub_080C0940: @ 0x080C0940
 	bl sub_080830F0
 	ldr r0, _080C09FC @ =vt_09F7DD98
 	str r0, [r5, #0x1c]
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r6, r0, #0
 	add r4, sp, #4
 	adds r0, r4, #0
@@ -125,7 +125,7 @@ sub_080C0940: @ 0x080C0940
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -144,7 +144,7 @@ sub_080C0940: @ 0x080C0940
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -195,7 +195,7 @@ sub_080C0A20: @ 0x080C0A20
 	bl sub_080830F0
 	ldr r0, _080C0AD8 @ =vt_09F7DD98
 	str r0, [r5, #0x1c]
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r6, r0, #0
 	add r4, sp, #4
 	adds r0, r4, #0
@@ -219,7 +219,7 @@ sub_080C0A20: @ 0x080C0A20
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -238,7 +238,7 @@ sub_080C0A20: @ 0x080C0A20
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base

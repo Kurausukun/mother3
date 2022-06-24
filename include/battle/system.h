@@ -13,7 +13,7 @@ public:
     System();
     virtual ~System();
 
-    virtual void* getInstance();
+    virtual void* getRTTI();
 
     virtual SARHandle* getHandle();
     virtual u32 sub_0805D5C0();

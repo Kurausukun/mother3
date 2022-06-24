@@ -572,7 +572,7 @@ _vt.12PostSysClock:
 	.word	_._12PostSysClock
 	.short	0
 	.short	0
-	.word	getInstance__12PostSysClock
+	.word	getRTTI__12PostSysClock
 	.short	0
 	.short	0
 	.word	base_1c__4Base
@@ -596,7 +596,7 @@ _vt.12PostSysClock:
 	.word	base_4c__4BaseUiR4BaseUi
 	.short	0
 	.short	0
-	.word	base_54__4BaseR4Base
+	.word	emit__4BaseR4Base
 	.short	0
 	.short	0
 	.word	base_5c__4Base
@@ -617,7 +617,7 @@ _vt.12PostAppClock:
 	.word	_._12PostAppClock
 	.short	0
 	.short	0
-	.word	getInstance__12PostAppClock
+	.word	getRTTI__12PostAppClock
 	.short	0
 	.short	0
 	.word	base_1c__4Base
@@ -641,7 +641,7 @@ _vt.12PostAppClock:
 	.word	base_4c__4BaseUiR4BaseUi
 	.short	0
 	.short	0
-	.word	base_54__4BaseR4Base
+	.word	emit__4BaseR4Base
 	.short	0
 	.short	0
 	.word	base_5c__4Base
@@ -662,7 +662,7 @@ _vt.8AppClock:
 	.word	_._8AppClock
 	.short	0
 	.short	0
-	.word	getInstance__8AppClock
+	.word	getRTTI__8AppClock
 	.short	0
 	.short	0
 	.word	base_1c__4Base
@@ -686,7 +686,7 @@ _vt.8AppClock:
 	.word	base_4c__4BaseUiR4BaseUi
 	.short	0
 	.short	0
-	.word	base_54__4BaseR4Base
+	.word	emit__4BaseR4Base
 	.short	0
 	.short	0
 	.word	base_5c__4Base
@@ -707,7 +707,7 @@ _vt.11PreAppClock:
 	.word	_._11PreAppClock
 	.short	0
 	.short	0
-	.word	getInstance__11PreAppClock
+	.word	getRTTI__11PreAppClock
 	.short	0
 	.short	0
 	.word	base_1c__4Base
@@ -731,7 +731,7 @@ _vt.11PreAppClock:
 	.word	base_4c__4BaseUiR4BaseUi
 	.short	0
 	.short	0
-	.word	base_54__4BaseR4Base
+	.word	emit__4BaseR4Base
 	.short	0
 	.short	0
 	.word	base_5c__4Base
@@ -752,7 +752,7 @@ _vt.8SysClock:
 	.word	_._8SysClock
 	.short	0
 	.short	0
-	.word	getInstance__8SysClock
+	.word	getRTTI__8SysClock
 	.short	0
 	.short	0
 	.word	base_1c__4Base
@@ -776,7 +776,7 @@ _vt.8SysClock:
 	.word	base_4c__4BaseUiR4BaseUi
 	.short	0
 	.short	0
-	.word	base_54__4BaseR4Base
+	.word	emit__4BaseR4Base
 	.short	0
 	.short	0
 	.word	base_5c__4Base
@@ -797,7 +797,7 @@ _vt.11PreSysClock:
 	.word	_._11PreSysClock
 	.short	0
 	.short	0
-	.word	getInstance__11PreSysClock
+	.word	getRTTI__11PreSysClock
 	.short	0
 	.short	0
 	.word	base_1c__4Base
@@ -821,7 +821,7 @@ _vt.11PreSysClock:
 	.word	base_4c__4BaseUiR4BaseUi
 	.short	0
 	.short	0
-	.word	base_54__4BaseR4Base
+	.word	emit__4BaseR4Base
 	.short	0
 	.short	0
 	.word	base_5c__4Base
@@ -842,7 +842,7 @@ _vt.3Unk:
 	.word	_._3Unk
 	.short	0
 	.short	0
-	.word	getInstance__4Base
+	.word	getRTTI__4Base
 	.short	0
 	.short	0
 	.word	base_1c__4Base
@@ -866,7 +866,7 @@ _vt.3Unk:
 	.word	base_4c__4BaseUiR4BaseUi
 	.short	0
 	.short	0
-	.word	base_54__4BaseR4Base
+	.word	emit__4BaseR4Base
 	.short	0
 	.short	0
 	.word	base_5c__4Base

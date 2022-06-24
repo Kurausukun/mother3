@@ -2592,7 +2592,7 @@ _0807D804:
 	mov r0, sb
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728B8
+	bl getPartyInfo
 	adds r5, r0, #0
 	mov r0, sb
 	bl __4Base
@@ -2610,7 +2610,7 @@ _0807D804:
 	mov r0, sb
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728B8
+	bl getPartyInfo
 	mov r8, r0
 	mov r0, sb
 	bl __4Base
@@ -2632,7 +2632,7 @@ _0807D804:
 	mov r0, sb
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728B8
+	bl getPartyInfo
 	mov r8, r0
 	mov r0, sb
 	bl __4Base
@@ -2650,7 +2650,7 @@ _0807D804:
 	mov r0, sb
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728B8
+	bl getPartyInfo
 	adds r5, r0, #0
 	mov r0, sb
 	bl __4Base
@@ -3213,7 +3213,7 @@ _0807DEDE:
 	bl setsleep
 	movs r0, #1
 	movs r1, #0
-	bl sub_08073018__Fii
+	bl sub_08073018__FbT0
 	bl sub_08072B70__Fv
 	bl sub_08072D0C__Fv
 _0807DEF4:
@@ -5167,7 +5167,7 @@ _0807ED1E:
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728B8
+	bl getPartyInfo
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -5219,7 +5219,7 @@ _0807ED1E:
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728B8
+	bl getPartyInfo
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -5306,7 +5306,7 @@ _0807EFD0:
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728B8
+	bl getPartyInfo
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -5364,7 +5364,7 @@ _0807EFD0:
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728B8
+	bl getPartyInfo
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -5844,7 +5844,7 @@ _0807F42E:
 	bl setsleep
 	movs r0, #1
 	movs r1, #0
-	bl sub_08073018__Fii
+	bl sub_08073018__FbT0
 	bl sub_08072B70__Fv
 	bl sub_08072D0C__Fv
 	ldr r0, [r4, #0x40]
@@ -6164,7 +6164,7 @@ sub_0807F648: @ 0x0807F648
 	movs r1, #0x79
 	mov r2, r8
 	adds r3, r6, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	mov r0, sl
 	mov r1, sb
 	adds r2, r4, #0
@@ -6351,7 +6351,7 @@ sub_0807F7DC: @ 0x0807F7DC
 	movs r1, #0x7a
 	mov r2, r8
 	adds r3, r6, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	mov r0, sl
 	mov r1, sb
 	adds r2, r4, #0
@@ -6538,7 +6538,7 @@ sub_0807F964: @ 0x0807F964
 	movs r1, #0x79
 	mov r2, r8
 	adds r3, r6, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	mov r0, sl
 	mov r1, sb
 	adds r2, r4, #0
@@ -6726,7 +6726,7 @@ sub_0807FAF4: @ 0x0807FAF4
 	movs r1, #0x79
 	mov r2, r8
 	adds r3, r6, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	mov r0, sl
 	mov r1, sb
 	adds r2, r4, #0
@@ -6914,7 +6914,7 @@ sub_0807FC84: @ 0x0807FC84
 	movs r1, #0x79
 	mov r2, r8
 	adds r3, r6, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	mov r0, sl
 	mov r1, sb
 	adds r2, r4, #0
@@ -7096,7 +7096,7 @@ sub_0807FE08: @ 0x0807FE08
 	movs r1, #0x79
 	mov r2, r8
 	adds r3, r6, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	mov r0, sl
 	mov r1, sb
 	adds r2, r4, #0
@@ -7315,7 +7315,7 @@ _08080038:
 	thumb_func_start sub_08080040
 sub_08080040: @ 0x08080040
 	push {lr}
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	ldr r1, [r0, #0x1c]
 	movs r2, #0x98
 	lsls r2, r2, #1
@@ -8109,7 +8109,7 @@ sub_080805F4: @ 0x080805F4
 	ldr r0, [r1, #0x48]
 	ldrh r1, [r0, #0x20]
 	adds r0, r4, #0
-	bl sub_08073444__5GoodsUs
+	bl sub_08073444__FUs
 	adds r0, r4, #0
 	pop {r4}
 	pop {r1}

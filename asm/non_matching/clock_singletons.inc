@@ -22,10 +22,10 @@ PreSysClockSingleton_get__Fv:
 .Lfe1:
 	.size	 PreSysClockSingleton_get__Fv,.Lfe1-PreSysClockSingleton_get__Fv
 	.align	2, 0
-	.globl	getInstance__11PreSysClock
-	.type	 getInstance__11PreSysClock,function
+	.globl	getRTTI__11PreSysClock
+	.type	 getRTTI__11PreSysClock,function
 	.thumb_func
-getInstance__11PreSysClock:
+getRTTI__11PreSysClock:
 .LFB2:
 .LM2:
 
@@ -37,7 +37,7 @@ getInstance__11PreSysClock:
 	bx	r1
 .LFE2:
 .Lfe2:
-	.size	 getInstance__11PreSysClock,.Lfe2-getInstance__11PreSysClock
+	.size	 getRTTI__11PreSysClock,.Lfe2-getRTTI__11PreSysClock
 	.align	2, 0
 	.globl	SysClockSingleton_get__Fv
 	.type	 SysClockSingleton_get__Fv,function
@@ -58,10 +58,10 @@ SysClockSingleton_get__Fv:
 .Lfe3:
 	.size	 SysClockSingleton_get__Fv,.Lfe3-SysClockSingleton_get__Fv
 	.align	2, 0
-	.globl	getInstance__8SysClock
-	.type	 getInstance__8SysClock,function
+	.globl	getRTTI__8SysClock
+	.type	 getRTTI__8SysClock,function
 	.thumb_func
-getInstance__8SysClock:
+getRTTI__8SysClock:
 .LFB4:
 .LM4:
 
@@ -73,7 +73,7 @@ getInstance__8SysClock:
 	bx	r1
 .LFE4:
 .Lfe4:
-	.size	 getInstance__8SysClock,.Lfe4-getInstance__8SysClock
+	.size	 getRTTI__8SysClock,.Lfe4-getRTTI__8SysClock
 	.align	2, 0
 	.globl	PreAppClockSingleton_get__Fv
 	.type	 PreAppClockSingleton_get__Fv,function
@@ -94,10 +94,10 @@ PreAppClockSingleton_get__Fv:
 .Lfe5:
 	.size	 PreAppClockSingleton_get__Fv,.Lfe5-PreAppClockSingleton_get__Fv
 	.align	2, 0
-	.globl	getInstance__11PreAppClock
-	.type	 getInstance__11PreAppClock,function
+	.globl	getRTTI__11PreAppClock
+	.type	 getRTTI__11PreAppClock,function
 	.thumb_func
-getInstance__11PreAppClock:
+getRTTI__11PreAppClock:
 .LFB6:
 .LM6:
 
@@ -109,7 +109,7 @@ getInstance__11PreAppClock:
 	bx	r1
 .LFE6:
 .Lfe6:
-	.size	 getInstance__11PreAppClock,.Lfe6-getInstance__11PreAppClock
+	.size	 getRTTI__11PreAppClock,.Lfe6-getRTTI__11PreAppClock
 	.align	2, 0
 	.globl	AppClockSingleton_get__Fv
 	.type	 AppClockSingleton_get__Fv,function
@@ -130,10 +130,10 @@ AppClockSingleton_get__Fv:
 .Lfe7:
 	.size	 AppClockSingleton_get__Fv,.Lfe7-AppClockSingleton_get__Fv
 	.align	2, 0
-	.globl	getInstance__8AppClock
-	.type	 getInstance__8AppClock,function
+	.globl	getRTTI__8AppClock
+	.type	 getRTTI__8AppClock,function
 	.thumb_func
-getInstance__8AppClock:
+getRTTI__8AppClock:
 .LFB8:
 .LM8:
 
@@ -145,7 +145,7 @@ getInstance__8AppClock:
 	bx	r1
 .LFE8:
 .Lfe8:
-	.size	 getInstance__8AppClock,.Lfe8-getInstance__8AppClock
+	.size	 getRTTI__8AppClock,.Lfe8-getRTTI__8AppClock
 	.align	2, 0
 	.globl	PostAppClockSingleton_get__Fv
 	.type	 PostAppClockSingleton_get__Fv,function
@@ -166,10 +166,10 @@ PostAppClockSingleton_get__Fv:
 .Lfe9:
 	.size	 PostAppClockSingleton_get__Fv,.Lfe9-PostAppClockSingleton_get__Fv
 	.align	2, 0
-	.globl	getInstance__12PostAppClock
-	.type	 getInstance__12PostAppClock,function
+	.globl	getRTTI__12PostAppClock
+	.type	 getRTTI__12PostAppClock,function
 	.thumb_func
-getInstance__12PostAppClock:
+getRTTI__12PostAppClock:
 .LFB10:
 .LM10:
 
@@ -181,7 +181,7 @@ getInstance__12PostAppClock:
 	bx	r1
 .LFE10:
 .Lfe10:
-	.size	 getInstance__12PostAppClock,.Lfe10-getInstance__12PostAppClock
+	.size	 getRTTI__12PostAppClock,.Lfe10-getRTTI__12PostAppClock
 	.align	2, 0
 	.globl	PostSysClockSingleton_get__Fv
 	.type	 PostSysClockSingleton_get__Fv,function
@@ -202,10 +202,10 @@ PostSysClockSingleton_get__Fv:
 .Lfe11:
 	.size	 PostSysClockSingleton_get__Fv,.Lfe11-PostSysClockSingleton_get__Fv
 	.align	2, 0
-	.globl	getInstance__12PostSysClock
-	.type	 getInstance__12PostSysClock,function
+	.globl	getRTTI__12PostSysClock
+	.type	 getRTTI__12PostSysClock,function
 	.thumb_func
-getInstance__12PostSysClock:
+getRTTI__12PostSysClock:
 .LFB12:
 .LM12:
 
@@ -217,7 +217,7 @@ getInstance__12PostSysClock:
 	bx	r1
 .LFE12:
 .Lfe12:
-	.size	 getInstance__12PostSysClock,.Lfe12-getInstance__12PostSysClock
+	.size	 getRTTI__12PostSysClock,.Lfe12-getRTTI__12PostSysClock
 	.align	2, 0
 	.globl	manager__12ClockManager
 	.type	 manager__12ClockManager,function
@@ -338,10 +338,10 @@ destroy__12ClockManager:
 .Lfe16:
 	.size	 destroy__12ClockManager,.Lfe16-destroy__12ClockManager
 	.align	2, 0
-	.globl	getInstance__5Clock
-	.type	 getInstance__5Clock,function
+	.globl	getRTTI__5Clock
+	.type	 getRTTI__5Clock,function
 	.thumb_func
-getInstance__5Clock:
+getRTTI__5Clock:
 .LFB17:
 .LM17:
 
@@ -353,7 +353,7 @@ getInstance__5Clock:
 	bx	r1
 .LFE17:
 .Lfe17:
-	.size	 getInstance__5Clock,.Lfe17-getInstance__5Clock
+	.size	 getRTTI__5Clock,.Lfe17-getRTTI__5Clock
 	.align	2, 0
 	.globl	__5Clock
 	.type	 __5Clock,function
@@ -809,7 +809,7 @@ _vt.5Clock:
 	.word	_._5Clock
 	.short	0
 	.short	0
-	.word	getInstance__5Clock
+	.word	getRTTI__5Clock
 	.short	0
 	.short	0
 	.word	base_1c__4Base
@@ -833,7 +833,7 @@ _vt.5Clock:
 	.word	base_4c__4BaseUiR4BaseUi
 	.short	0
 	.short	0
-	.word	base_54__4BaseR4Base
+	.word	emit__4BaseR4Base
 	.short	0
 	.short	0
 	.word	base_5c__4Base

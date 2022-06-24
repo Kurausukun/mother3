@@ -32,13 +32,13 @@ extern "C" Base* sub_080728D8();
 extern "C" Base* sub_080728F8();
 
 extern "C" void fieldSet__6Actionib(Action*, u32, u32);
-void sub_08073018(s32, s32);
+void sub_08073018(bool, bool);
 void sub_08072B70();
 void sub_08072D0C();
 extern "C" void playSound(u16);
 
 extern "C" u8 unitIsPlayer(Unit*, u32);
-extern "C" Messager* sub_080728B8();
+extern "C" Messager* getPartyInfo();
 extern "C" void playSeq(u32, Unit*, Unit*);
 extern "C" u8 sub_08072D84(Unit*, u32);
 extern "C" void hitPlayer(Unit*, u32, u32);
@@ -63,16 +63,16 @@ extern "C" NONMATCH("asm/non_matching/skill/__5SkillUi.inc",
     thisx->_40 = 0;
     thisx->_44 = 0;
 
-    thisx->listen(sub_080728B8(), UnitJoin(), gUnknown_08107DB0);
+    thisx->listen(getPartyInfo(), UnitJoin(), gUnknown_08107DB0);
     thisx->listen(sub_080728D8(), UnitJoin(), gUnknown_08107DB0);
     thisx->listen(sub_080728F8(), UnitJoin(), gUnknown_08107DB0);
-    thisx->listen(sub_080728B8(), UnitRevive(), gUnknown_08107DB0);
+    thisx->listen(getPartyInfo(), UnitRevive(), gUnknown_08107DB0);
     thisx->listen(sub_080728D8(), UnitRevive(), gUnknown_08107DB0);
     thisx->listen(sub_080728F8(), UnitRevive(), gUnknown_08107DB0);
-    thisx->listen(sub_080728B8(), UnitEscape(), gUnknown_08107DB8);
+    thisx->listen(getPartyInfo(), UnitEscape(), gUnknown_08107DB8);
     thisx->listen(sub_080728D8(), UnitEscape(), gUnknown_08107DB8);
     thisx->listen(sub_080728F8(), UnitEscape(), gUnknown_08107DB8);
-    thisx->listen(sub_080728B8(), UnitDie(), gUnknown_08107DB8);
+    thisx->listen(getPartyInfo(), UnitDie(), gUnknown_08107DB8);
     thisx->listen(sub_080728D8(), UnitDie(), gUnknown_08107DB8);
     thisx->listen(sub_080728F8(), UnitDie(), gUnknown_08107DB8);
 }
@@ -221,7 +221,7 @@ void Action::action_a0(Unit* target) {
 
     // franklin badge check
     if (element() == ElementType::Thunder && unitIsPlayer(target, 2) == 1 &&
-        sub_080728B8()->messager_f8(0xc1) == 1) {
+        getPartyInfo()->messager_f8(0xc1) == 1) {
         playSeq(0xc3, target, target);
         createMsg(0x188).print(PrintSettings(0, 0, 0), 1);
         if (sub_08072D84(getUser(), 0xbd) == 1 || sub_08072D84(getUser(), 0xbe) == 1) {
@@ -631,9 +631,9 @@ bool Action::fieldSet(s32 value, bool force) {
 // Msg sub_08073460(u32, const Msg&, const Msg&, const Msg&);
 
 Msg Action::createMsg(u16 idx) const {
-    return Msg::sub_08073460(idx, name(), getUser()->name(), mNextTargets.size() > 0 ? mNextTargets[0]->name() : Msg());
+    return sub_08073460(idx, name(), getUser()->name(), mNextTargets.size() > 0 ? mNextTargets[0]->name() : Msg());
 }
 
 Msg Action::action_160(u16 idx, const Msg& m) const {
-    return Msg::sub_08073460(idx, m, getUser()->name(), mNextTargets.size() > 0 ? mNextTargets[0]->name() : Msg());
+    return sub_08073460(idx, m, getUser()->name(), mNextTargets.size() > 0 ? mNextTargets[0]->name() : Msg());
 }

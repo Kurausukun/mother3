@@ -1,5 +1,6 @@
 #include "battle.h"
 #include "battle/monster.h"
+#include "battle/player.h"
 #include "battle/unit.h"
 #include "battle/sndSystem.h"
 #include "structs.h"
@@ -7,18 +8,18 @@
 s32 sub_08072DFC();
 void sub_08072B70();
 void sub_08072D0C();
-void sub_08073018(s32, s32);
-Monster* sub_08072E18(s32);
+void sub_08073018(bool, bool);
+Player* sub_08072E18(s32);
 void sub_0807459C(u16, s32, s32, s32);
 extern "C" void sub_08074394(s32, s32, s32, bool, bool, bool);
 extern "C" s32 getPartyCount();
-extern "C" Monster* sub_080729F8(s32);
+extern "C" Player* getPlayer(s32);
 extern "C" s32 sub_08072C60();
 extern "C" Unit* sub_08072C7C(s32);
-extern "C" Monster* sub_080729F8(s32);
+extern "C" Player* getPlayer(s32);
 extern "C" u8 sub_08072648(s32);
 s32 sub_08072A88();
-Monster* sub_08072AA4(s32);
+Player* sub_08072AA4(s32);
 void sub_0807459C(u16, s32, s32, s32);
 void sub_08074414(s32, s32, s32, bool, bool, bool);
 
@@ -90,20 +91,20 @@ void Battle::battle_90() {
     Msg m;
 
     if (sub_08072DFC() < 2) {
-        m.sub_0806E2E8(Msg::sub_08073460(0xb2, sub_08072E18(0)->name(), Msg(), Msg()));
+        m.sub_0806E2E8(sub_08073460(0xb2, sub_08072E18(0)->name(), Msg(), Msg()));
     } else {
-        m.sub_0806E2E8(Msg::sub_08073460(0xb3, sub_08072E18(0)->name(), Msg(), Msg()));
+        m.sub_0806E2E8(sub_08073460(0xb3, sub_08072E18(0)->name(), Msg(), Msg()));
     }
 
     switch (_38) {
     case 0:
-        m.sub_0806E374(sub_08072E18(0)->monster_330());
+        m.sub_0806E374(sub_08072E18(0)->player_330());
         break;
     case 1:
-        m.sub_0806E374(Msg::sub_08073460(0xb4, Msg(), Msg(), Msg()));
+        m.sub_0806E374(sub_08073460(0xb4, Msg(), Msg(), Msg()));
         break;
     case 2:
-        m.sub_0806E374(Msg::sub_08073460(0xb5, Msg(), Msg(), Msg()));
+        m.sub_0806E374(sub_08073460(0xb5, Msg(), Msg(), Msg()));
         break;
     }
 
@@ -124,12 +125,12 @@ bool Battle::battle_98() {
 }
 
 u8 Battle::battle_a0() {
-    base_54(RoundBegin(mRoundNo));
+    emit(RoundBegin(mRoundNo));
 
     if (mRoundNo < 1) {
         if (battle_1a0() == 1) {
             for (int i = 0; i < getPartyCount(); i++) {
-                sub_080729F8(i)->unit_268(0x33);
+                getPlayer(i)->unit_268(0x33);
             }
             for (int i = 0; i < sub_08072C60(); i++) {
                 sub_08072C7C(i)->unit_268(0x33);
@@ -149,9 +150,9 @@ u8 Battle::battle_a8() {
         return false;
     }
 
-    for (Monster* i = sub_08072AA4(0); i != 0;) {
-        Monster* j = NULL;
-        switch (i->monster_318()) {
+    for (Player* i = sub_08072AA4(0); i != 0;) {
+        Player* j = NULL;
+        switch (i->player_318()) {
         case 0:
         case 2:
             j = sub_0805E338(i);
@@ -171,12 +172,12 @@ u8 Battle::battle_a8() {
     return true;
 }
 
-Monster* Battle::sub_0805E338(Unit* u) {
+Player* Battle::sub_0805E338(Unit* u) {
     for (int i = 0; i < getPartyCount(); i++) {
-        if (sub_080729F8(i) == u) {
+        if (getPlayer(i) == u) {
             for (int j = i + 1; j < getPartyCount(); j++) {
-                if (sub_080729F8(j)->isAlive() == true) {
-                    return sub_080729F8(j);
+                if (getPlayer(j)->isAlive() == true) {
+                    return getPlayer(j);
                 }
             }
             break;
@@ -185,13 +186,13 @@ Monster* Battle::sub_0805E338(Unit* u) {
     return NULL;
 }
 
-Monster* Battle::sub_0805E390(Unit* u) {
+Player* Battle::sub_0805E390(Unit* u) {
     for (int i = getPartyCount() - 1; i >= 0; i--) {
-        if (sub_080729F8(i) == u) {
+        if (getPlayer(i) == u) {
             for (int j = i - 1; j >= 0; j--) {
-                if (sub_080729F8(j)->isAlive() == true && sub_080729F8(j)->monster_310() == true) {
-                    sub_080729F8(j)->unit_108();
-                    return sub_080729F8(j);
+                if (getPlayer(j)->isAlive() == true && getPlayer(j)->player_310() == true) {
+                    getPlayer(j)->unit_108();
+                    return getPlayer(j);
                 }
             }
             break;
@@ -206,9 +207,9 @@ void Battle::battle_b0() {
 
 bool Battle::battle_b8(Unit* u) {
     if (u != 0) {
-        base_54(UnitTurnBegin(u));
+        emit(UnitTurnBegin(u));
         u->unit_d0();
-        base_54(UnitTurnEnd(u));
+        emit(UnitTurnEnd(u));
     }
     if (battle_c8(1) == true) {
         return false;
@@ -219,7 +220,7 @@ bool Battle::battle_b8(Unit* u) {
 }
 
 bool Battle::battle_c0() {
-    base_54(RoundEnd(mRoundNo));
+    emit(RoundEnd(mRoundNo));
     mRoundNo++;
 
     if (battle_c8(1) == true) {
@@ -275,15 +276,15 @@ ASM_FUNC("asm/non_matching/battle/sub_0805E700.inc", void Battle::battle_f0());
 ASM_FUNC("asm/non_matching/battle/sub_0805E808.inc", void Battle::sub_0805E808());
 
 void Battle::battle_f8() {
-    base_54(ShowDownAsEscape());
+    emit(ShowDownAsEscape());
     sub_0807459C(0, 0x20, 0, 0);
 }
 
 void Battle::battle_100() {
-    base_54(ShowDownAsLose());
+    emit(ShowDownAsLose());
 
     sub_0807459C(battle_1f8(), 0x20, 0x20, 0);
-    Msg::sub_08073460(0x78, Msg(), Msg(), Msg()).print(PrintSettings(0, 0, 0), true);
+    sub_08073460(0x78, Msg(), Msg(), Msg()).print(PrintSettings(0, 0, 0), true);
     sub_0805E9BC();
 }
 
@@ -297,12 +298,12 @@ bool Battle::sub_0805E9BC() {
 }
 
 void Battle::battle_108() {
-    base_54(ShowDownAsWin());
+    emit(ShowDownAsWin());
     sub_0807459C(0, 0x20, 0, 0);
 }
 
 void Battle::battle_110() {
-    sub_08074414(0, 0x100, 0x20, 1, 1, 0);
+    sub_08074414(0, 0x100, 0x20, true, true, false);
 }
 
 void Battle::battle_118() {
@@ -371,7 +372,7 @@ bool Battle::battle_1a8() {
     if (battle_160() == true) {
         return gEncounter._4 == false;
     } else if (battle_170() == true) {
-        return gEncounter._4 == false || *((char*)battle_178() + 8) == true; // fixme
+        return gEncounter._4 == false || battle_178()->_8 == true;
     } else if (battle_180() == true) {
         return true;
     }
@@ -382,7 +383,7 @@ bool Battle::battle_1b0() {
     return _40 == true;
 }
 
-s32 Battle::battle_1b8() {
+s32 Battle::roundNo() {
     return mRoundNo;
 }
 
@@ -444,15 +445,15 @@ BgClass* Battle::battle_210() {
     return _48;
 }
 
-s32 Battle::battle_218() {
+PartyInfo* Battle::battle_218() {
     return _4c;
 }
 
-s32 Battle::battle_220() {
+GuestInfo* Battle::battle_220() {
     return _50;
 }
 
-s32 Battle::battle_228() {
+MonsterInfo* Battle::battle_228() {
     return _54;
 }
 
@@ -460,7 +461,7 @@ Class2* Battle::battle_230() {
     return _58;
 }
 
-s32 Battle::battle_238() {
+Sequencer* Battle::battle_238() {
     return _5c;
 }
 

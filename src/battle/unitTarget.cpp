@@ -7,14 +7,14 @@ extern "C" bool typeIsMonster(Unit* u);
 s32 sub_08072A88();
 Monster* sub_08072AA4(s32);
 extern "C" s32 getPartyCount();
-extern "C" Monster* sub_080729F8(s32);
+extern "C" Monster* getPlayer(s32);
 extern "C" s32 sub_08072EA8();
 extern "C" Unit* sub_08072EC4(s32);
 extern "C" Unit* sub_08072A18(u16);
 extern "C" s32 sub_0807067C(s32, s32);
 extern "C" s32 randrange(s32, s32);
 extern "C" s32 randrange2(s32, s32);
-extern "C" Base* sub_080728B8();
+extern "C" Base* getPartyInfo();
 
 extern ClockData gUnknown_08107070;
 extern ClockData gUnknown_08107078;
@@ -159,7 +159,7 @@ bool UnitTarget::attackdata_68() {
         break;
     case 3:
         for (int i = 0; i < getPartyCount(); i++) {
-            addTarget(sub_080729F8(i));
+            addTarget(getPlayer(i));
         }
         break;
     case 4:
@@ -331,12 +331,12 @@ extern "C" NONMATCH("asm/non_matching/unitTargetChoice/__16UnitTargetChoiceUsP4U
     thisx->listen(&thisx->mKeyFocuser, LKeyPress(), gUnknown_08107080);
     thisx->listen(&thisx->mKeyFocuser, LKeyLongPress(), gUnknown_08107080);
     thisx->listen(&thisx->mKeyFocuser, BKeyPress(), gUnknown_08107088);
-    thisx->listen(sub_080728B8(), Suspend(), gUnknown_08107090);
-    thisx->listen(sub_080728B8(), UnitJoin(), gUnknown_08107098);
-    thisx->listen(sub_080728B8(), UnitRevive(), gUnknown_08107098);
-    thisx->listen(sub_080728B8(), UnitEscape(), gUnknown_081070A0);
-    thisx->listen(sub_080728B8(), UnitDie(), gUnknown_081070A0);
-    thisx->listen(sub_080728B8(), Resume(), gUnknown_081070A8);
+    thisx->listen(getPartyInfo(), Suspend(), gUnknown_08107090);
+    thisx->listen(getPartyInfo(), UnitJoin(), gUnknown_08107098);
+    thisx->listen(getPartyInfo(), UnitRevive(), gUnknown_08107098);
+    thisx->listen(getPartyInfo(), UnitEscape(), gUnknown_081070A0);
+    thisx->listen(getPartyInfo(), UnitDie(), gUnknown_081070A0);
+    thisx->listen(getPartyInfo(), Resume(), gUnknown_081070A8);
 }
 END_NONMATCH
 

@@ -13,7 +13,7 @@ _0805E5AE:
 	bne _0805E5C2
 	movs r0, #1
 	movs r1, #1
-	bl sub_08073018__Fii
+	bl sub_08073018__FbT0
 	bl sub_08072B70__Fv
 	bl sub_08072D0C__Fv
 _0805E5C2:

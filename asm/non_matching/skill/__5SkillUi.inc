@@ -26,7 +26,7 @@
 	adds r0, #0x10
 	mov r1, r8
 	strb r1, [r0]
-	bl sub_080728B8
+	bl getPartyInfo
 	mov sb, r0
 	add r0, sp, #4
 	bl __4Base
@@ -88,7 +88,7 @@
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728B8
+	bl getPartyInfo
 	mov sb, r0
 	add r0, sp, #4
 	bl __4Base
@@ -146,7 +146,7 @@
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728B8
+	bl getPartyInfo
 	mov sb, r0
 	add r0, sp, #4
 	bl __4Base
@@ -208,7 +208,7 @@
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728B8
+	bl getPartyInfo
 	mov sb, r0
 	add r0, sp, #4
 	bl __4Base

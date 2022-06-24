@@ -141,7 +141,7 @@ _08078506:
 	beq _0807854E
 	movs r0, #1
 	movs r1, #0
-	bl sub_08073018__Fii
+	bl sub_08073018__FbT0
 	bl sub_08072B70__Fv
 	bl sub_08072D0C__Fv
 	ldr r1, [r6, #0x1c]

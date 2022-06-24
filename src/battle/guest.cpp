@@ -14,7 +14,7 @@ void battle_end_callback(Guest* g) {
     g->clearNullOutgoing();
 }
 
-SINGLETON_IMPL(Guest);
+RTTI_IMPL(Guest);
 
 Msg getName(u32 idx) {
     return Msg::genMisctextMsg(get_misctext_msg(6, idx), get_misctext_len(6));
@@ -23,8 +23,8 @@ Msg getName(u32 idx) {
 Guest::Guest(u16 id) : mID(id), mStats(&gCharStats[id]), mLevelInfo(&gLevelStatTable[id]) {
     setupStats();
 
-    listen(BattleSingleton::get(), RoundBegin(), gUnknown_080F6D8C);
-    listen(BattleSingleton::get(), RoundEnd(), gUnknown_080F6D94);
+    listen(BattleManager::get(), RoundBegin(), gUnknown_080F6D8C);
+    listen(BattleManager::get(), RoundEnd(), gUnknown_080F6D94);
 }
 
 void Guest::setupStats() {

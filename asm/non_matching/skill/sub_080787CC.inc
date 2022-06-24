@@ -67,7 +67,7 @@ _08078842:
 	beq _08078854
 	b _08078998
 _08078854:
-	bl sub_080728B8
+	bl getPartyInfo
 	ldr r1, [r0, #0x1c]
 	adds r1, #0xf8
 	movs r3, #0

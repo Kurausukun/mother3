@@ -146,8 +146,8 @@ _0805D868: .4byte gUnknown_02002010
 _0805D86C: .4byte sBattleInstance
 _0805D870: .4byte vt_09F45058
 
-	thumb_func_start get__15BattleSingleton
-get__15BattleSingleton: @ 0x0805D874
+	thumb_func_start get__13BattleManager
+get__13BattleManager: @ 0x0805D874
 	ldr r0, _0805D87C @ =sBattleInstance
 	ldr r0, [r0]
 	bx lr

@@ -15,7 +15,7 @@ inline s32 clampS32(s32 value, s32 min, s32 max) {
 struct UnitObject {
     virtual ~UnitObject() {}
 
-    virtual void object_8() {}
+    virtual void object_8(s32 r0) {}
     virtual void object_10() = 0;
     virtual void object_18() = 0;
     virtual void object_20() = 0;
@@ -171,14 +171,14 @@ struct Suspend : Unk {
     Suspend() {}
     inline virtual ~Suspend();
 
-    virtual void* getInstance();
+    virtual void* getRTTI();
 };
 
 struct Resume : Unk {
     Resume() {}
     inline virtual ~Resume();
 
-    virtual void* getInstance();
+    virtual void* getRTTI();
 };
 
 struct UnitMove : Unk {
@@ -194,7 +194,7 @@ struct UnitJoin : UnitMove {
     UnitJoin(u32 t) : UnitMove(t) {}
     inline virtual ~UnitJoin();
 
-    virtual void* getInstance();
+    virtual void* getRTTI();
 
     u32 t;
 };
@@ -204,7 +204,7 @@ struct UnitRevive : UnitMove {
     UnitRevive(u32 t) : UnitMove(t) {}
     inline virtual ~UnitRevive();
 
-    virtual void* getInstance();
+    virtual void* getRTTI();
 
     u32 t;
 };
@@ -214,7 +214,7 @@ struct UnitEscape : UnitMove {
     UnitEscape(u32 t) : UnitMove(t) {}
     inline virtual ~UnitEscape();
 
-    virtual void* getInstance();
+    virtual void* getRTTI();
 
     u32 t;
 };
@@ -224,7 +224,7 @@ struct UnitDie : UnitMove {
     UnitDie(u32 t) : UnitMove(t) {}
     inline virtual ~UnitDie();
 
-    virtual void* getInstance();
+    virtual void* getRTTI();
 
     u32 t;
 };

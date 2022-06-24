@@ -56,6 +56,8 @@ public:
     Monster();
     virtual ~Monster();
 
+    virtual void* getRTTI();
+
     virtual void monster_2c0();
     virtual void monster_2c8();
     virtual void monster_2d0();
@@ -82,5 +84,7 @@ public:
     virtual void monster_378();
     virtual bool monster_380();
 };
+
+RTTI(Monster);
 
 #endif // BATTLE_MONSTER_H

@@ -52,7 +52,7 @@ tellStatus: @ 0x080824B0
 	adds r1, r4, #0
 	add r2, sp, #4
 	adds r3, r6, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	adds r0, r5, #0
 	movs r1, #2
 	bl _._3Msg
@@ -100,7 +100,7 @@ sub_08082510: @ 0x08082510
 	strh r0, [r5, #0x30]
 	mov r0, r8
 	strh r0, [r5, #0x32]
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r6, r0, #0
 	add r4, sp, #4
 	adds r0, r4, #0
@@ -124,7 +124,7 @@ sub_08082510: @ 0x08082510
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -143,7 +143,7 @@ sub_08082510: @ 0x08082510
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -162,7 +162,7 @@ sub_08082510: @ 0x08082510
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl get__15BattleSingleton
+	bl get__13BattleManager
 	adds r6, r0, #0
 	add r4, sp, #4
 	adds r0, r4, #0
@@ -635,7 +635,7 @@ sub_080828DC: @ 0x080828DC
 	adds r1, r6, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -915,7 +915,7 @@ tellTurnAction: @ 0x08082B1C
 	adds r1, r4, #0
 	add r2, sp, #4
 	adds r3, r6, #0
-	bl sub_08073460__3MsgiRC3MsgN22
+	bl sub_08073460__FiRC3MsgN21
 	adds r0, r5, #0
 	movs r1, #2
 	bl _._3Msg
@@ -1483,7 +1483,7 @@ sub_08082F90: @ 0x08082F90
 	ldr r0, [r1, #0x48]
 	ldrh r1, [r0, #0x2c]
 	adds r0, r4, #0
-	bl sub_08073444__5GoodsUs
+	bl sub_08073444__FUs
 	adds r0, r4, #0
 	pop {r4}
 	pop {r1}

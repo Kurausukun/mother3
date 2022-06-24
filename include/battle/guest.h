@@ -34,7 +34,7 @@ public:
 
     void setupStats();
 
-    virtual void object_8() {}
+    virtual void object_8(s32 r0) {}
     virtual void object_10() {}
     virtual void object_18() {}
     virtual void object_20() {}
@@ -61,7 +61,7 @@ public:
     virtual void object_68() {}
     virtual void object_70() {}
 
-    virtual void* getInstance();
+    virtual void* getRTTI();
     virtual u8 unit_d0();
     virtual bool unit_178();
     virtual u16 id() const;
@@ -93,6 +93,6 @@ void sub_0802A74C(CharStats*, s16*);
 void sub_0802A670(CharStats*, s16*);
 }
 
-SINGLETON(Guest);
+RTTI(Guest);
 
 #endif  // BATTLE_GUEST_H

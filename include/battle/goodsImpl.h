@@ -25,7 +25,7 @@ extern "C" bool sub_08072D84(Unit*, u32);
 extern "C" void sub_0807392C(Unit*, u32, u32);
 extern "C" void sub_08073198(u32, Unit*, Unit*);
 extern "C" void sub_08073270();
-extern "C" Msg createPlayerName(u32);
+Msg createPlayerName(u16);
 extern "C" u8 sub_08072648(u32);
 
 extern Status::Type gUnknown_080FB078[];

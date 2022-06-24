@@ -60,10 +60,11 @@ public:
     static Player* tryCastPlayer(Unit*);
     static Msg getName(u16);
     u16 calcMessage(u16 idx) const;
-    static Msg sub_08073444(u16 idx);
 
     GoodsInfo* mInfo;
     u16 _4c;
 };
+
+Msg sub_08073444(u16 idx);
 
 #endif  // BATTLE_GOODS_H

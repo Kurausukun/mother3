@@ -9,7 +9,7 @@ public:
     Clock(u32 time);
     virtual ~Clock();
 
-    virtual void* getInstance();
+    virtual void* getRTTI();
 
     u32 getTime();
 
@@ -22,7 +22,7 @@ public:
     inline PreSysClock(u32 time) : mTime(time)  {}
     inline virtual ~PreSysClock() {}
 
-    virtual void* getInstance();
+    virtual void* getRTTI();
 
     u32 getTime();
 
@@ -36,7 +36,7 @@ public:
     inline SysClock(u32 time) : mTime(time) {}
     inline virtual ~SysClock() {}
 
-    virtual void* getInstance();
+    virtual void* getRTTI();
 
     u32 getTime();
 
@@ -50,7 +50,7 @@ public:
     inline PreAppClock(u32 time) : mTime(time)  {}
     inline virtual ~PreAppClock() {}
 
-    virtual void* getInstance();
+    virtual void* getRTTI();
 
     u32 getTime();
 
@@ -64,7 +64,7 @@ public:
     inline AppClock(u32 time) : mTime(time) {}
     inline virtual ~AppClock() {}
 
-    virtual void* getInstance();
+    virtual void* getRTTI();
 
     u32 getTime();
 
@@ -78,7 +78,7 @@ public:
     inline PostAppClock(u32 time)  : mTime(time) { }
     inline virtual ~PostAppClock() {}
 
-    virtual void* getInstance();
+    virtual void* getRTTI();
 
     u32 getTime();
 
@@ -92,7 +92,7 @@ public:
     inline PostSysClock(u32 time) : mTime(time) {}
     inline virtual ~PostSysClock() {}
 
-    virtual void* getInstance();
+    virtual void* getRTTI();
 
     u32 getTime();
 
