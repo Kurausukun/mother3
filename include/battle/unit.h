@@ -99,10 +99,10 @@ public:
     virtual s32 pp() const;
     virtual s32 maxPP() const;
 
+    virtual s32 offense() const;
+    virtual s32 defense() const;
     virtual s32 iq() const;
     virtual s32 speed() const;
-    virtual s32 unit_1d8() const;
-    virtual s32 clumsiness() const;
     virtual s32 unit_1e8() const;
 
     virtual s32 getElementWeakness(u32 idx) const;

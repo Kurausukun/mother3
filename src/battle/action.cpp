@@ -1,6 +1,7 @@
 #include "battle/action.h"
 #include "battle/archive.h"
 #include "battle/unitTarget.h"
+#include "enums.h"
 
 struct Messager : public Base {
     Messager();
@@ -304,8 +305,8 @@ u8 Action::calcMissed(Unit* target) {
         return true;
 
     s32 chance = hitChance();
-    s32 x = getUser()->clumsiness();
-    s32 y = target->clumsiness();
+    s32 x = getUser()->speed();
+    s32 y = target->speed();
     s32 difference = max(0, x - y);
     chance -= (difference / 4);
     return randS32(0, 99) < chance;
@@ -409,9 +410,9 @@ s32 Action::action_d8(Unit* user, Unit* target) {
     s32 b = var2 * mult2 + 36608;
 
     s32 lvl = user->level();
-    s32 user_iq = user->iq();
-    s32 target_speed = target->speed();
-    s32 z = (a * lvl + (user_iq - target_speed) * b) >> 16;
+    s32 usr_offense = user->offense();
+    s32 tgt_defense = target->defense();
+    s32 z = (a * lvl + (usr_offense - tgt_defense) * b) >> 16;
     return sub_0807066C(attackMult() * z, 15);
 }
 
@@ -466,7 +467,7 @@ NONMATCH("asm/non_matching/skill/sub_08079780.inc",
     s32 hi = healHi();
     s32 add = (hi + lo) / 2;
     s32 sub = (hi - lo) / 2;
-    s32 v2 = (user->unit_1d8() - target->unit_1d8());
+    s32 v2 = (user->iq() - target->iq());
     s32 v3;
     if (v2 < 0) {
         v3 = lo + -v2 * sub / 16;
@@ -501,7 +502,7 @@ void Action::action_108(Unit* target) {
 void Action::onSuccess(Unit* target) {}
 
 void Action::action_118(Unit* target) {
-    if (ailment() != 0 && target->hp() > 0) {
+    if (ailment() != Status::None && target->hp() > 0) {
         calcStatusInflict(target, ailment(), ailmentChance(), 1);
     }
 }
@@ -511,7 +512,7 @@ ASM_FUNC("asm/non_matching/skill/sub_08079A4C.inc",
 
 void Action::onFail(Unit* target) {
     if (ailment() != 0 && target->hp() > 0) {
-        action_130(target, ailment(), ailmentChance(), 1);
+        action_130(target, ailment(), ailmentChance(), true);
     }
 }
 
@@ -533,8 +534,8 @@ NONMATCH("asm/non_matching/skill/sub_08079EE4.inc",
 END_NONMATCH
 
 void Action::action_138(Unit* target, bool crit) {
-    if ((effect() != 0 && effect() != 1 && effect() != 2) || target->hpReal() > 0 ||
-        target->isAlive() != 1 || sub_08072938(target) != 1) {
+    if ((effect() != EffectType::Damage && effect() != EffectType::Attack && effect() != EffectType::PsiDamage) || target->hpReal() > 0 ||
+        target->isAlive() != true || sub_08072938(target) != true) {
         if (crit == true) {
             playSeq(nextAnim(), getUser(), target);
         } else {
@@ -554,15 +555,15 @@ void Action::action_140() {
 }
 
 void Action::action_148() {
-    if (hasDim() == 1) {
-        sub_08073150(0xb4, getUser(), 0, NULL);
+    if (hasDim() == true) {
+        sub_08073150(BattleSeq::RestoreBG, getUser(), 0, NULL);
     }
 }
 
 void Action::action_150() {}
 
 void Action::action_1a8() {
-    fieldSet__6Actionib(this, 5, 0);
+    fieldSet(5, false);
 }
 
 u8 Action::action_1b0() {

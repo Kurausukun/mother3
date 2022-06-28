@@ -2800,16 +2800,16 @@ vt_09F469A8::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -3278,16 +3278,16 @@ vt_09F46E98::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -3759,16 +3759,16 @@ vt_09F47390::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -4240,16 +4240,16 @@ vt_09F47888::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -4721,16 +4721,16 @@ vt_09F47D80::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -5202,16 +5202,16 @@ vt_09F48278::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -5686,16 +5686,16 @@ vt_09F48778::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -6167,16 +6167,16 @@ vt_09F48C70::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -10609,16 +10609,16 @@ _vt.5Guest::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -10948,16 +10948,16 @@ vt_09F4BDC8::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -11288,16 +11288,16 @@ vt_09F4C148::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -11637,16 +11637,16 @@ vt_09F4C4E0::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -11980,16 +11980,16 @@ vt_09F4C868::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -12326,16 +12326,16 @@ vt_09F4CBF8::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -12666,16 +12666,16 @@ vt_09F4CF78::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -13006,16 +13006,16 @@ vt_09F4D2F8::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -14758,16 +14758,16 @@ vt_09F4E508::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -15212,16 +15212,16 @@ vt_09F4E9B8::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -15692,16 +15692,16 @@ vt_09F4EEA8::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -16146,16 +16146,16 @@ vt_09F4F358::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -16648,16 +16648,16 @@ vt_09F4F888::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -17111,16 +17111,16 @@ vt_09F4FD50::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -17574,16 +17574,16 @@ vt_09F50218::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -18052,16 +18052,16 @@ vt_09F50708::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -18506,16 +18506,16 @@ vt_09F50BB8::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -18963,16 +18963,16 @@ vt_09F51070::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -19417,16 +19417,16 @@ vt_09F51520::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -19871,16 +19871,16 @@ vt_09F519D0::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -20337,16 +20337,16 @@ vt_09F51EA0::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -20794,16 +20794,16 @@ vt_09F52358::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -21266,16 +21266,16 @@ vt_09F52838::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -21720,16 +21720,16 @@ vt_09F52CE8::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -22195,16 +22195,16 @@ vt_09F531D0::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -22649,16 +22649,16 @@ vt_09F53680::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -23103,16 +23103,16 @@ vt_09F53B30::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -23557,16 +23557,16 @@ vt_09F53FE0::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -24011,16 +24011,16 @@ vt_09F54490::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -24465,16 +24465,16 @@ vt_09F54940::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -24919,16 +24919,16 @@ vt_09F54DF0::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -25373,16 +25373,16 @@ vt_09F552A0::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -25827,16 +25827,16 @@ vt_09F55750::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -26281,16 +26281,16 @@ vt_09F55C00::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -26735,16 +26735,16 @@ vt_09F560B0::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -27189,16 +27189,16 @@ vt_09F56560::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -27658,16 +27658,16 @@ vt_09F56A38::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -28112,16 +28112,16 @@ vt_09F56EE8::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -28566,16 +28566,16 @@ vt_09F57398::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -29020,16 +29020,16 @@ vt_09F57848::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -29483,16 +29483,16 @@ vt_09F57D10::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -29937,16 +29937,16 @@ vt_09F581C0::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -30391,16 +30391,16 @@ vt_09F58670::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -30845,16 +30845,16 @@ vt_09F58B20::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -31302,16 +31302,16 @@ vt_09F58FD8::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -31756,16 +31756,16 @@ vt_09F59488::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -32222,16 +32222,16 @@ vt_09F59958::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -32685,16 +32685,16 @@ vt_09F59E20::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -33139,16 +33139,16 @@ vt_09F5A2D0::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -33593,16 +33593,16 @@ vt_09F5A780::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -34056,16 +34056,16 @@ vt_09F5AC48::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -34513,16 +34513,16 @@ vt_09F5B100::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -34967,16 +34967,16 @@ vt_09F5B5B0::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -35421,16 +35421,16 @@ vt_09F5BA60::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -35887,16 +35887,16 @@ vt_09F5BF30::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -36341,16 +36341,16 @@ vt_09F5C3E0::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -36795,16 +36795,16 @@ vt_09F5C890::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -37249,16 +37249,16 @@ vt_09F5CD40::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -37712,16 +37712,16 @@ vt_09F5D208::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -38166,16 +38166,16 @@ vt_09F5D6B8::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -38620,16 +38620,16 @@ vt_09F5DB68::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -39074,16 +39074,16 @@ vt_09F5E018::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -39528,16 +39528,16 @@ vt_09F5E4C8::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -39982,16 +39982,16 @@ vt_09F5E978::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -40445,16 +40445,16 @@ vt_09F5EE40::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -40899,16 +40899,16 @@ vt_09F5F2F0::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -41362,16 +41362,16 @@ vt_09F5F7B8::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -41816,16 +41816,16 @@ vt_09F5FC68::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -42270,16 +42270,16 @@ vt_09F60118::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -42724,16 +42724,16 @@ vt_09F605C8::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -43178,16 +43178,16 @@ vt_09F60A78::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -43632,16 +43632,16 @@ vt_09F60F28::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -44098,16 +44098,16 @@ vt_09F613F8::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -44564,16 +44564,16 @@ vt_09F618C8::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -45027,16 +45027,16 @@ vt_09F61D90::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -45481,16 +45481,16 @@ vt_09F62240::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -45935,16 +45935,16 @@ vt_09F626F0::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -46389,16 +46389,16 @@ vt_09F62BA0::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -46843,16 +46843,16 @@ vt_09F63050::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -47297,16 +47297,16 @@ vt_09F63500::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -47751,16 +47751,16 @@ vt_09F639B0::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -48208,16 +48208,16 @@ vt_09F63E68::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -48662,16 +48662,16 @@ vt_09F64318::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -93953,16 +93953,16 @@ _vt.4Unit::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -95176,16 +95176,16 @@ vt_09F820E8::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit
@@ -96657,16 +96657,16 @@ vt_09F83010::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_1e8__C4Unit

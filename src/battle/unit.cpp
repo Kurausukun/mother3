@@ -215,19 +215,19 @@ s32 Unit::maxPP() const {
     return mMaxPP;
 }
 
-s32 Unit::iq() const {
+s32 Unit::offense() const {
     return mOffense;
 }
 
-s32 Unit::speed() const {
+s32 Unit::defense() const {
     return mDefense;
 }
 
-s32 Unit::unit_1d8() const {
+s32 Unit::iq() const {
     return mIQ;
 }
 
-s32 Unit::clumsiness() const {
+s32 Unit::speed() const {
     return mSpeed;
 }
 
