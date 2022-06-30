@@ -139,12 +139,12 @@
 . = 0x0000211C; gUnknown_0200211C = .;
 . = 0x00002128; gUnknown_02002128 = .;
 . = 0x00002134; gUnknown_02002134 = .;
-. = 0x00002140; sUnitDieSingleton = .;
-. = 0x0000214C; sUnitEscapeSingleton = .;
-. = 0x00002158; sUnitReviveSingleton = .;
-. = 0x00002164; sUnitJoinSingleton = .;
-. = 0x00002170; sResumeSingleton = .;
-. = 0x0000217C; sSuspendSingleton = .;
+. = 0x00002140; sUnitDieRTTI = .;
+. = 0x0000214C; sUnitEscapeRTTI = .;
+. = 0x00002158; sUnitReviveRTTI = .;
+. = 0x00002164; sUnitJoinRTTI = .;
+. = 0x00002170; sResumeRTTI = .;
+. = 0x0000217C; sSuspendRTTI = .;
 . = 0x00002188; gUnknown_02002188 = .;
 . = 0x000021A8; gUnknown_020021A8 = .;
 . = 0x000021AC; gUnknown_020021AC = .;
@@ -156,7 +156,7 @@
 . = 0x00002218; gUnknown_02002218 = .;
 . = 0x00002318; sGuestRTTI = .;
 . = 0x00002328; sGuestSpawners = .;
-. = 0x00002368; sGuestSkillSingleton = .;
+. = 0x00002368; sGuestSkillRTTI = .;
 . = 0x00002378; gUnknown_02002378 = .;
 . = 0x00002508; gUnknown_02002508 = .;
 . = 0x0000251C; gUnknown_0200251C = .;

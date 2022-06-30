@@ -2,13 +2,13 @@
 
 #ifdef NONMATCHING
 
-SINGLETON_IMPL(PreSysClock)
-SINGLETON_IMPL(SysClock)
-SINGLETON_IMPL(PreAppClock)
-SINGLETON_IMPL(AppClock)
-SINGLETON_IMPL(PostAppClock)
-SINGLETON_IMPL(PostSysClock)
-SINGLETON_MGR_IMPL(Clock)
+RTTI_IMPL(PreSysClock)
+RTTI_IMPL(SysClock)
+RTTI_IMPL(PreAppClock)
+RTTI_IMPL(AppClock)
+RTTI_IMPL(PostAppClock)
+RTTI_IMPL(PostSysClock)
+RTTI_IMPL(Clock)
 
 Clock::Clock() : mTime(0) {}
 

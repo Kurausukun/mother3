@@ -307,11 +307,11 @@ struct TargetType {
     };
 };
 
-SINGLETON(Suspend);
-SINGLETON(Resume);
-SINGLETON(UnitJoin);
-SINGLETON(UnitRevive);
-SINGLETON(UnitEscape);
-SINGLETON(UnitDie);
+RTTI(Suspend);
+RTTI(Resume);
+RTTI(UnitJoin);
+RTTI(UnitRevive);
+RTTI(UnitEscape);
+RTTI(UnitDie);
 
 #endif  // BATTLE_UNIT_H

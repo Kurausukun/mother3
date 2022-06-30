@@ -16248,8 +16248,8 @@ sub_0809FC38: @ 0x0809FC38
 	.align 2, 0
 _0809FC3C: .4byte gUnknown_080F6D2C
 
-	thumb_func_start init__14IoniaSingletonUs
-init__14IoniaSingletonUs: @ 0x0809FC40
+	thumb_func_start create__12IoniaFactoryUs
+create__12IoniaFactoryUs: @ 0x0809FC40
 	push {r4, lr}
 	adds r4, r0, #0
 	lsls r4, r4, #0x10
@@ -16263,8 +16263,8 @@ init__14IoniaSingletonUs: @ 0x0809FC40
 	pop {r1}
 	bx r1
 
-	thumb_func_start init__15FassadSingletonUs
-init__15FassadSingletonUs: @ 0x0809FC5C
+	thumb_func_start create__13FassadFactoryUs
+create__13FassadFactoryUs: @ 0x0809FC5C
 	push {r4, lr}
 	adds r4, r0, #0
 	lsls r4, r4, #0x10
@@ -16278,8 +16278,8 @@ init__15FassadSingletonUs: @ 0x0809FC5C
 	pop {r1}
 	bx r1
 
-	thumb_func_start init__13WessSingletonUs
-init__13WessSingletonUs: @ 0x0809FC78
+	thumb_func_start create__11WessFactoryUs
+create__11WessFactoryUs: @ 0x0809FC78
 	push {r4, lr}
 	adds r4, r0, #0
 	lsls r4, r4, #0x10
@@ -16293,8 +16293,8 @@ init__13WessSingletonUs: @ 0x0809FC78
 	pop {r1}
 	bx r1
 
-	thumb_func_start init__13AlecSingletonUs
-init__13AlecSingletonUs: @ 0x0809FC94
+	thumb_func_start create__11AlecFactoryUs
+create__11AlecFactoryUs: @ 0x0809FC94
 	push {r4, lr}
 	adds r4, r0, #0
 	lsls r4, r4, #0x10
@@ -16308,8 +16308,8 @@ init__13AlecSingletonUs: @ 0x0809FC94
 	pop {r1}
 	bx r1
 
-	thumb_func_start init__13FuelSingletonUs
-init__13FuelSingletonUs: @ 0x0809FCB0
+	thumb_func_start create__11FuelFactoryUs
+create__11FuelFactoryUs: @ 0x0809FCB0
 	push {r4, lr}
 	adds r4, r0, #0
 	lsls r4, r4, #0x10
@@ -16323,8 +16323,8 @@ init__13FuelSingletonUs: @ 0x0809FCB0
 	pop {r1}
 	bx r1
 
-	thumb_func_start init__15ThomasSingletonUs
-init__15ThomasSingletonUs: @ 0x0809FCCC
+	thumb_func_start create__13ThomasFactoryUs
+create__13ThomasFactoryUs: @ 0x0809FCCC
 	push {r4, lr}
 	adds r4, r0, #0
 	lsls r4, r4, #0x10
@@ -16374,8 +16374,8 @@ sub_0809FD08: @ 0x0809FD08
 	bx r0
 	.align 2, 0
 
-	thumb_func_start init__21DefaultGuestSingletonUs
-init__21DefaultGuestSingletonUs: @ 0x0809FD28
+	thumb_func_start create__19DefaultGuestFactoryUs
+create__19DefaultGuestFactoryUs: @ 0x0809FD28
 	push {r4, lr}
 	adds r4, r0, #0
 	lsls r4, r4, #0x10

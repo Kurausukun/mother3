@@ -2,6 +2,7 @@
 #define BATTLE_IRC_H
 
 #include "base.h"
+#include "singleton.h"
 
 struct IrqTable {
     typedef void (*Func)();
@@ -67,7 +68,7 @@ public:
     Interrupt mIntrs[13];
 };
 
-SINGLETON_MGR(Irc)
-SINGLETON(Irc)
+SINGLETON_DECL(Irc)
+RTTI(Irc)
 
 #endif  // BATTLE_IRC_H

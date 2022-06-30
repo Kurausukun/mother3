@@ -2,6 +2,7 @@
 #define BATTLE_H
 
 #include "base.h"
+#include "singleton.h"
 
 class Unit;
 class Player;
@@ -273,7 +274,7 @@ struct ShowDownAsEscape : public Unk {
     virtual ~ShowDownAsEscape() {}
 };
 
-SINGLETON_MGR(Battle);
+SINGLETON_DECL(Battle);
 
 extern "C" void playSeqForEach(u16, Unit*, s32, Unit**);
 extern "C" void setsleep(u32);

@@ -4,14 +4,14 @@ extern void* (*sGuestSpawners[])(u16 id);
 
 void GuestFactory::init() {
     for (u32 i = 0; i < 16; i++) {
-        put(i, DefaultGuestSingleton::init);
+        put(i, DefaultGuestFactory::create);
     }
-    put(GuestID::Thomas, ThomasSingleton::init);
-    put(GuestID::Fuel, FuelSingleton::init);
-    put(GuestID::Alec, AlecSingleton::init);
-    put(GuestID::Wess, WessSingleton::init);
-    put(GuestID::Fassad, FassadSingleton::init);
-    put(GuestID::Ionia, IoniaSingleton::init);
+    put(GuestID::Thomas, ThomasFactory::create);
+    put(GuestID::Fuel, FuelFactory::create);
+    put(GuestID::Alec, AlecFactory::create);
+    put(GuestID::Wess, WessFactory::create);
+    put(GuestID::Fassad, FassadFactory::create);
+    put(GuestID::Ionia, IoniaFactory::create);
 }
 
 void GuestFactory::put(u16 id, void* (*spawn)(u16 id)) {

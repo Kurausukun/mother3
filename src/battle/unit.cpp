@@ -4,12 +4,12 @@
 UnitCmd* sub_080651A4(u16, Unit*);
 extern u16 gUnknown_08106360[];
 
-SINGLETON_IMPL(Suspend);
-SINGLETON_IMPL(Resume);
-SINGLETON_IMPL(UnitJoin);
-SINGLETON_IMPL(UnitRevive);
-SINGLETON_IMPL(UnitEscape);
-SINGLETON_IMPL(UnitDie);
+RTTI_IMPL(Suspend);
+RTTI_IMPL(Resume);
+RTTI_IMPL(UnitJoin);
+RTTI_IMPL(UnitRevive);
+RTTI_IMPL(UnitEscape);
+RTTI_IMPL(UnitDie);
 
 Unit::Unit() : mWeaknessCount(0), _54(0) {
     mLevel = 1;

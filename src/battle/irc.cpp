@@ -18,7 +18,7 @@ void irq_key();
 void sub_08069E2C(Irc*, u32, u32, Intr2, u32);
 }
 
-SINGLETON_MGR_IMPL(Irc)
+SINGLETON_IMPL(Irc)
 
 Irc::Irc() : mDisabled(false), _24(0) {
     for (int i = 0; i < 13; ++i) {

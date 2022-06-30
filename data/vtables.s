@@ -94086,7 +94086,7 @@ _vt.7UnitDie::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-_vt.16UnitDieSingleton::
+_vt.11UnitDieRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -94138,7 +94138,7 @@ _vt.10UnitEscape::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-_vt.19UnitEscapeSingleton::
+_vt.14UnitEscapeRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -94190,7 +94190,7 @@ _vt.10UnitRevive::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-_vt.19UnitReviveSingleton::
+_vt.14UnitReviveRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -94242,7 +94242,7 @@ _vt.8UnitJoin::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-_vt.17UnitJoinSingleton::
+_vt.12UnitJoinRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -94294,7 +94294,7 @@ _vt.6Resume::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-_vt.15ResumeSingleton::
+_vt.10ResumeRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -94346,7 +94346,7 @@ _vt.7Suspend::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-_vt.16SuspendSingleton::
+_vt.11SuspendRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -96425,7 +96425,7 @@ _vt.10GuestSkill::
 	.2byte 0
 	.4byte action_298__10GuestSkill
 
-_vt.19GuestSkillSingleton::
+_vt.14GuestSkillRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0

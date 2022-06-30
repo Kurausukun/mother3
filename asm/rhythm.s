@@ -1280,7 +1280,7 @@ sub_08074134: @ 0x08074134
 	ldr r1, [r1, #0x14]
 	bl _call_via_r1
 	adds r4, r0, #0
-	bl get__19GuestSkillSingleton
+	bl get__14GuestSkillRTTI
 	cmp r4, r0
 	bne _08074158
 	movs r5, #1
@@ -1306,7 +1306,7 @@ sub_08074160: @ 0x08074160
 	ldr r1, [r1, #0x14]
 	bl _call_via_r1
 	adds r4, r0, #0
-	bl get__19GuestSkillSingleton
+	bl get__14GuestSkillRTTI
 	cmp r4, r0
 	bne _080741A4
 	ldr r1, [r5, #0x1c]

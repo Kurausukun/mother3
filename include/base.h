@@ -2,7 +2,7 @@
 #define BASE_H
 
 #include "allocator.h"
-#include "singleton.h"
+#include "rtti.h"
 #include "vector.h"
 
 class Clock;
@@ -78,7 +78,7 @@ struct Unk : public Base {
 struct Color {
     Color(u32 r, u32 g, u32 b) : r(r), g(g), b(b) {}
 
-    u8 r,g,b;
+    u8 r, g, b;
 };
 
 struct Msg {
