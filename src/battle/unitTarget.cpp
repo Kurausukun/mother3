@@ -32,7 +32,7 @@ UnitTarget::UnitTarget(u16 target, Unit* unit) {
 
 UnitTarget::~UnitTarget() {}
 
-u32 UnitTarget::getType() const {
+u32 UnitTarget::type() const {
     return mInfo->type;
 }
 

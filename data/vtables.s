@@ -6543,7 +6543,7 @@ vt_09F49158::
 	.4byte sub_0809DC9C
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -6797,7 +6797,7 @@ vt_09F493F8::
 	.4byte sub_0809DF04
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -7042,7 +7042,7 @@ vt_09F496A0::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -7054,7 +7054,7 @@ vt_09F496A0::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -7299,7 +7299,7 @@ vt_09F49948::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -7311,7 +7311,7 @@ vt_09F49948::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -7565,7 +7565,7 @@ vt_09F49BE8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -7807,7 +7807,7 @@ vt_09F49E88::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -7819,7 +7819,7 @@ vt_09F49E88::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -8073,7 +8073,7 @@ vt_09F4A128::
 	.4byte sub_0809E630
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -8327,7 +8327,7 @@ vt_09F4A3C8::
 	.4byte sub_0809E77C
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -8569,7 +8569,7 @@ vt_09F4A668::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -8581,7 +8581,7 @@ vt_09F4A668::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -8826,7 +8826,7 @@ vt_09F4A910::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -8838,7 +8838,7 @@ vt_09F4A910::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -9083,7 +9083,7 @@ vt_09F4ABB8::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -9095,7 +9095,7 @@ vt_09F4ABB8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -9340,7 +9340,7 @@ vt_09F4AE60::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -9352,7 +9352,7 @@ vt_09F4AE60::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -9597,7 +9597,7 @@ vt_09F4B108::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -9609,7 +9609,7 @@ vt_09F4B108::
 	.4byte sub_0809E898
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -9866,7 +9866,7 @@ vt_09F4B3B0::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F098
@@ -10141,7 +10141,7 @@ vt_09F4B6A8::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -10153,7 +10153,7 @@ vt_09F4B6A8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -13188,7 +13188,7 @@ vt_09F4D600::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -13200,7 +13200,7 @@ vt_09F4D600::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -13442,7 +13442,7 @@ vt_09F4D8A0::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -13454,7 +13454,7 @@ vt_09F4D8A0::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -13696,7 +13696,7 @@ vt_09F4DB40::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -13950,7 +13950,7 @@ vt_09F4DDE0::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -14204,7 +14204,7 @@ vt_09F4E080::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -14216,7 +14216,7 @@ vt_09F4E080::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -48958,7 +48958,7 @@ vt_09F64750::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -48970,7 +48970,7 @@ vt_09F64750::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -49218,7 +49218,7 @@ vt_09F64A00::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -49230,7 +49230,7 @@ vt_09F64A00::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -49490,7 +49490,7 @@ vt_09F64CB0::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -49738,7 +49738,7 @@ vt_09F64F60::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B09AC
@@ -49750,7 +49750,7 @@ vt_09F64F60::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -49998,7 +49998,7 @@ vt_09F65210::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -50010,7 +50010,7 @@ vt_09F65210::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -50270,7 +50270,7 @@ vt_09F654C0::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -50530,7 +50530,7 @@ vt_09F65770::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -50778,7 +50778,7 @@ vt_09F65A20::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -50790,7 +50790,7 @@ vt_09F65A20::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -51038,7 +51038,7 @@ vt_09F65CD0::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -51050,7 +51050,7 @@ vt_09F65CD0::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -51298,7 +51298,7 @@ vt_09F65F80::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -51310,7 +51310,7 @@ vt_09F65F80::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -51558,7 +51558,7 @@ vt_09F66230::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -51570,7 +51570,7 @@ vt_09F66230::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -51818,7 +51818,7 @@ vt_09F664E0::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -51830,7 +51830,7 @@ vt_09F664E0::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -52078,7 +52078,7 @@ vt_09F66790::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -52090,7 +52090,7 @@ vt_09F66790::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -52350,7 +52350,7 @@ vt_09F66A40::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -52598,7 +52598,7 @@ vt_09F66CF0::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -52610,7 +52610,7 @@ vt_09F66CF0::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -52858,7 +52858,7 @@ vt_09F66FA0::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -52870,7 +52870,7 @@ vt_09F66FA0::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -53118,7 +53118,7 @@ vt_09F67250::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -53130,7 +53130,7 @@ vt_09F67250::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -53390,7 +53390,7 @@ vt_09F67500::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -53650,7 +53650,7 @@ vt_09F677B0::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -53898,7 +53898,7 @@ vt_09F67A60::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -53910,7 +53910,7 @@ vt_09F67A60::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -54158,7 +54158,7 @@ vt_09F67D10::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -54170,7 +54170,7 @@ vt_09F67D10::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -54430,7 +54430,7 @@ vt_09F67FC0::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -54678,7 +54678,7 @@ vt_09F68270::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -54690,7 +54690,7 @@ vt_09F68270::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -54938,7 +54938,7 @@ vt_09F68520::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -54950,7 +54950,7 @@ vt_09F68520::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -55210,7 +55210,7 @@ vt_09F687D0::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -55470,7 +55470,7 @@ vt_09F68A80::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -55730,7 +55730,7 @@ vt_09F68D30::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -55978,7 +55978,7 @@ vt_09F68FE0::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -55990,7 +55990,7 @@ vt_09F68FE0::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -56250,7 +56250,7 @@ vt_09F69290::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -56501,7 +56501,7 @@ vt_09F69548::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -56513,7 +56513,7 @@ vt_09F69548::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -56761,7 +56761,7 @@ vt_09F697F8::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -56773,7 +56773,7 @@ vt_09F697F8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -57033,7 +57033,7 @@ vt_09F69AA8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -57281,7 +57281,7 @@ vt_09F69D58::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -57293,7 +57293,7 @@ vt_09F69D58::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -57541,7 +57541,7 @@ vt_09F6A008::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -57553,7 +57553,7 @@ vt_09F6A008::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -57813,7 +57813,7 @@ vt_09F6A2B8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -58073,7 +58073,7 @@ vt_09F6A568::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -58321,7 +58321,7 @@ vt_09F6A818::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -58333,7 +58333,7 @@ vt_09F6A818::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -58593,7 +58593,7 @@ vt_09F6AAC8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -58841,7 +58841,7 @@ vt_09F6AD78::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -58853,7 +58853,7 @@ vt_09F6AD78::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -59101,7 +59101,7 @@ vt_09F6B028::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -59113,7 +59113,7 @@ vt_09F6B028::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -59361,7 +59361,7 @@ vt_09F6B2D8::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -59373,7 +59373,7 @@ vt_09F6B2D8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -59621,7 +59621,7 @@ vt_09F6B588::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -59633,7 +59633,7 @@ vt_09F6B588::
 	.4byte sub_080B3090
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -59887,7 +59887,7 @@ vt_09F6B848::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -59899,7 +59899,7 @@ vt_09F6B848::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -60159,7 +60159,7 @@ vt_09F6BAF8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -60407,7 +60407,7 @@ vt_09F6BDA8::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -60419,7 +60419,7 @@ vt_09F6BDA8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -60667,7 +60667,7 @@ vt_09F6C058::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -60679,7 +60679,7 @@ vt_09F6C058::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -60927,7 +60927,7 @@ vt_09F6C308::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -60939,7 +60939,7 @@ vt_09F6C308::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -61187,7 +61187,7 @@ vt_09F6C5B8::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -61199,7 +61199,7 @@ vt_09F6C5B8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -61447,7 +61447,7 @@ vt_09F6C868::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -61459,7 +61459,7 @@ vt_09F6C868::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -61707,7 +61707,7 @@ vt_09F6CB18::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -61719,7 +61719,7 @@ vt_09F6CB18::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -61967,7 +61967,7 @@ vt_09F6CDC8::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -61979,7 +61979,7 @@ vt_09F6CDC8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -62227,7 +62227,7 @@ vt_09F6D078::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -62239,7 +62239,7 @@ vt_09F6D078::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -62487,7 +62487,7 @@ vt_09F6D328::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B387C
@@ -62499,7 +62499,7 @@ vt_09F6D328::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -62747,7 +62747,7 @@ vt_09F6D5D8::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -62759,7 +62759,7 @@ vt_09F6D5D8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -63007,7 +63007,7 @@ vt_09F6D888::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -63019,7 +63019,7 @@ vt_09F6D888::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -63267,7 +63267,7 @@ vt_09F6DB38::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -63279,7 +63279,7 @@ vt_09F6DB38::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -63539,7 +63539,7 @@ vt_09F6DDE8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -63799,7 +63799,7 @@ vt_09F6E098::
 	.4byte sub_080B3CC0
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -64047,7 +64047,7 @@ vt_09F6E348::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -64059,7 +64059,7 @@ vt_09F6E348::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -64307,7 +64307,7 @@ vt_09F6E5F8::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -64319,7 +64319,7 @@ vt_09F6E5F8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B3D6C
@@ -64567,7 +64567,7 @@ vt_09F6E8A8::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -64579,7 +64579,7 @@ vt_09F6E8A8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B3E00
@@ -64827,7 +64827,7 @@ vt_09F6EB58::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -64839,7 +64839,7 @@ vt_09F6EB58::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -65087,7 +65087,7 @@ vt_09F6EE08::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -65099,7 +65099,7 @@ vt_09F6EE08::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4310
@@ -65347,7 +65347,7 @@ vt_09F6F0B8::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -65359,7 +65359,7 @@ vt_09F6F0B8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4414
@@ -65607,7 +65607,7 @@ vt_09F6F368::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -65619,7 +65619,7 @@ vt_09F6F368::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B44A0
@@ -65867,7 +65867,7 @@ vt_09F6F618::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -65879,7 +65879,7 @@ vt_09F6F618::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4540
@@ -66127,7 +66127,7 @@ vt_09F6F8C8::
 	.4byte sub_080B4598
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -66139,7 +66139,7 @@ vt_09F6F8C8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -66387,7 +66387,7 @@ vt_09F6FB78::
 	.4byte sub_080B45C8
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -66399,7 +66399,7 @@ vt_09F6FB78::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -66647,7 +66647,7 @@ vt_09F6FE28::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -66659,7 +66659,7 @@ vt_09F6FE28::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -66907,7 +66907,7 @@ vt_09F700D8::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -66919,7 +66919,7 @@ vt_09F700D8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -67167,7 +67167,7 @@ vt_09F70388::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -67179,7 +67179,7 @@ vt_09F70388::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -67427,7 +67427,7 @@ vt_09F70638::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -67687,7 +67687,7 @@ vt_09F708E8::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -67947,7 +67947,7 @@ vt_09F70B98::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -67959,7 +67959,7 @@ vt_09F70B98::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -68467,7 +68467,7 @@ vt_09F710F8::
 	.4byte sub_080B4B14
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -68479,7 +68479,7 @@ vt_09F710F8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -68727,7 +68727,7 @@ vt_09F713A8::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -68739,7 +68739,7 @@ vt_09F713A8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -68990,7 +68990,7 @@ vt_09F71660::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -69002,7 +69002,7 @@ vt_09F71660::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -69510,7 +69510,7 @@ vt_09F71BC0::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -69770,7 +69770,7 @@ vt_09F71E70::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -69782,7 +69782,7 @@ vt_09F71E70::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -70030,7 +70030,7 @@ vt_09F72120::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -70042,7 +70042,7 @@ vt_09F72120::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -78116,7 +78116,7 @@ vt_09F77440::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -78128,7 +78128,7 @@ vt_09F77440::
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -78379,7 +78379,7 @@ vt_09F776F8::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -78391,7 +78391,7 @@ vt_09F776F8::
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -78642,7 +78642,7 @@ vt_09F779B0::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -78654,7 +78654,7 @@ vt_09F779B0::
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -78905,7 +78905,7 @@ vt_09F77C68::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -78917,7 +78917,7 @@ vt_09F77C68::
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -79168,7 +79168,7 @@ vt_09F77F20::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -79180,7 +79180,7 @@ vt_09F77F20::
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -79431,7 +79431,7 @@ vt_09F781D8::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -79443,7 +79443,7 @@ vt_09F781D8::
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -79694,7 +79694,7 @@ vt_09F78490::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -79706,7 +79706,7 @@ vt_09F78490::
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -79957,7 +79957,7 @@ vt_09F78748::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -79969,7 +79969,7 @@ vt_09F78748::
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -80223,7 +80223,7 @@ vt_09F78A08::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -80235,7 +80235,7 @@ vt_09F78A08::
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -80498,7 +80498,7 @@ vt_09F78CC0::
 	.4byte sub_080BD150
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -80761,7 +80761,7 @@ vt_09F78F78::
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -81024,7 +81024,7 @@ vt_09F79230::
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -81287,7 +81287,7 @@ vt_09F794E8::
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -81538,7 +81538,7 @@ __vt_5Goods::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -81550,7 +81550,7 @@ __vt_5Goods::
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -81801,7 +81801,7 @@ _vt.5Goods::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -81813,7 +81813,7 @@ _vt.5Goods::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -81999,7 +81999,7 @@ _vt.5Goods::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C5GoodsP4Unit
@@ -82081,7 +82081,7 @@ _vt.11TriviaCard4::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -82093,7 +82093,7 @@ _vt.11TriviaCard4::
 	.4byte tellResisted__11TriviaCard4P4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -82279,7 +82279,7 @@ _vt.11TriviaCard4::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -82359,7 +82359,7 @@ _vt.11TriviaCard3::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -82371,7 +82371,7 @@ _vt.11TriviaCard3::
 	.4byte tellResisted__11TriviaCard3P4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -82557,7 +82557,7 @@ _vt.11TriviaCard3::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -82637,7 +82637,7 @@ _vt.11TriviaCard2::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -82649,7 +82649,7 @@ _vt.11TriviaCard2::
 	.4byte tellResisted__11TriviaCard2P4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -82835,7 +82835,7 @@ _vt.11TriviaCard2::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -82915,7 +82915,7 @@ _vt.11TriviaCard1::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -82927,7 +82927,7 @@ _vt.11TriviaCard1::
 	.4byte tellResisted__11TriviaCard1P4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -83113,7 +83113,7 @@ _vt.11TriviaCard1::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -83193,7 +83193,7 @@ _vt.9DragoFang::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__9DragoFangP4Unit
+	.4byte calcDidHit__9DragoFangP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__9DragoFangP4Unit
@@ -83205,7 +83205,7 @@ _vt.9DragoFang::
 	.4byte tellResisted__9DragoFangP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -83391,7 +83391,7 @@ _vt.9DragoFang::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -83471,7 +83471,7 @@ _vt.14ShieldSnatcher::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -83483,7 +83483,7 @@ _vt.14ShieldSnatcher::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -83669,7 +83669,7 @@ _vt.14ShieldSnatcher::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -83749,7 +83749,7 @@ _vt.16CupOfLifenoodles::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -83761,7 +83761,7 @@ _vt.16CupOfLifenoodles::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -83947,7 +83947,7 @@ _vt.16CupOfLifenoodles::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -84027,7 +84027,7 @@ _vt.10SecretHerb::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -84039,7 +84039,7 @@ _vt.10SecretHerb::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -84225,7 +84225,7 @@ _vt.10SecretHerb::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -84305,7 +84305,7 @@ _vt.8PaperFan::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -84317,7 +84317,7 @@ _vt.8PaperFan::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -84503,7 +84503,7 @@ _vt.8PaperFan::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -84583,7 +84583,7 @@ _vt.11MadeYouLook::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -84595,7 +84595,7 @@ _vt.11MadeYouLook::
 	.4byte tellResisted__11MadeYouLookP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -84781,7 +84781,7 @@ _vt.11MadeYouLook::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -84861,7 +84861,7 @@ _vt.15AttackAttractor::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -84873,7 +84873,7 @@ _vt.15AttackAttractor::
 	.4byte tellResisted__15AttackAttractorP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -85059,7 +85059,7 @@ _vt.15AttackAttractor::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -85139,7 +85139,7 @@ _vt.15EnemyWimperizer::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -85151,7 +85151,7 @@ _vt.15EnemyWimperizer::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -85337,7 +85337,7 @@ _vt.15EnemyWimperizer::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -85417,7 +85417,7 @@ _vt.15EnemyBufferizer::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -85429,7 +85429,7 @@ _vt.15EnemyBufferizer::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -85615,7 +85615,7 @@ _vt.15EnemyBufferizer::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -85695,7 +85695,7 @@ _vt.9LottoMeal::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -85707,7 +85707,7 @@ _vt.9LottoMeal::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -85893,7 +85893,7 @@ _vt.9LottoMeal::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -85973,7 +85973,7 @@ _vt.9DoggyFood::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -85985,7 +85985,7 @@ _vt.9DoggyFood::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -86171,7 +86171,7 @@ _vt.9DoggyFood::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -86251,7 +86251,7 @@ _vt.14PeculiarCheese::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -86263,7 +86263,7 @@ _vt.14PeculiarCheese::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -86449,7 +86449,7 @@ _vt.14PeculiarCheese::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -86529,7 +86529,7 @@ _vt.8BugSpray::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -86541,7 +86541,7 @@ _vt.8BugSpray::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__8BugSprayP4Unit
+	.4byte doHit__8BugSprayP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -86727,7 +86727,7 @@ _vt.8BugSpray::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -86807,7 +86807,7 @@ _vt.13AncientBanana::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -86819,7 +86819,7 @@ _vt.13AncientBanana::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -87005,7 +87005,7 @@ _vt.13AncientBanana::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -87085,7 +87085,7 @@ _vt.11HoneyShower::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -87097,7 +87097,7 @@ _vt.11HoneyShower::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__11HoneyShowerP4Unit
+	.4byte doHit__11HoneyShowerP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -87283,7 +87283,7 @@ _vt.11HoneyShower::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -87363,7 +87363,7 @@ _vt.12SaltwaterGun::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -87375,7 +87375,7 @@ _vt.12SaltwaterGun::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__12SaltwaterGunP4Unit
+	.4byte doHit__12SaltwaterGunP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -87561,7 +87561,7 @@ _vt.12SaltwaterGun::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -87641,7 +87641,7 @@ _vt.15NewYearsEveBomb::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -87653,7 +87653,7 @@ _vt.15NewYearsEveBomb::
 	.4byte tellResisted__15NewYearsEveBombP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__15NewYearsEveBombP4Unit
+	.4byte doHit__15NewYearsEveBombP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -87839,7 +87839,7 @@ _vt.15NewYearsEveBomb::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -87922,7 +87922,7 @@ _vt.12DefaultGoods::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -87934,7 +87934,7 @@ _vt.12DefaultGoods::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -88120,7 +88120,7 @@ _vt.12DefaultGoods::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -94452,7 +94452,7 @@ _vt.10UnitTarget::
 	.4byte attackdata_70__10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte getType__C10UnitTarget
+	.4byte type__C10UnitTarget
 	.2byte 0
 	.2byte 0
 	.4byte getUnit__C10UnitTarget
@@ -94565,7 +94565,7 @@ _vt.16UnitTargetChoice::
 	.4byte attackdata_70__10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte getType__C10UnitTarget
+	.4byte type__C10UnitTarget
 	.2byte 0
 	.2byte 0
 	.4byte getUnit__C10UnitTarget
@@ -94764,7 +94764,7 @@ _vt.6Action::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -94776,7 +94776,7 @@ _vt.6Action::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -95969,7 +95969,7 @@ vt_09F82A28::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -95981,7 +95981,7 @@ vt_09F82A28::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -96234,7 +96234,7 @@ _vt.10GuestSkill::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -96246,7 +96246,7 @@ _vt.10GuestSkill::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -97053,7 +97053,7 @@ vt_09F83548::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -97065,7 +97065,7 @@ vt_09F83548::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -97449,7 +97449,7 @@ vt_09F83958::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -97461,7 +97461,7 @@ vt_09F83958::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit

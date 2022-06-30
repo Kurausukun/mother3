@@ -75,10 +75,10 @@ struct Unk : public Base {
     ~Unk() {}
 };
 
-struct PrintSettings {
-    PrintSettings(u32 x, u32 y, u32 z) : x(x), y(y), z(z) {}
+struct Color {
+    Color(u32 r, u32 g, u32 b) : r(r), g(g), b(b) {}
 
-    u8 x,y,z;
+    u8 r,g,b;
 };
 
 struct Msg {
@@ -88,7 +88,7 @@ struct Msg {
 
     static Msg genMisctextMsg(void*, u32 idx);
 
-    void print(const PrintSettings&, bool);
+    void print(const Color&, bool);
     s32 len();
     u16* sub_0806E334(s32 idx);
     void sub_0806E2E8(const Msg&);

@@ -5187,7 +5187,7 @@ _0807ED1E:
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728D8
+	bl getGuestInfo
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -5203,7 +5203,7 @@ _0807ED1E:
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728F8
+	bl getMonsterInfo
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -5243,7 +5243,7 @@ _0807ED1E:
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728D8
+	bl getGuestInfo
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -5262,7 +5262,7 @@ _0807ED1E:
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728F8
+	bl getMonsterInfo
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -5326,7 +5326,7 @@ _0807EFD0:
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728D8
+	bl getGuestInfo
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -5345,7 +5345,7 @@ _0807EFD0:
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728F8
+	bl getMonsterInfo
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -5384,7 +5384,7 @@ _0807EFD0:
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728D8
+	bl getGuestInfo
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base
@@ -5400,7 +5400,7 @@ _0807EFD0:
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728F8
+	bl getMonsterInfo
 	adds r6, r0, #0
 	add r0, sp, #4
 	bl __4Base

@@ -749,7 +749,7 @@ _08080F86:
 	strb r1, [r3, #2]
 	mov r1, sp
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 _08080FC0:
 	adds r0, r4, #0
 	bl kill__4Unit

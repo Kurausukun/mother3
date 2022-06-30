@@ -23,7 +23,7 @@ BXTHandle::BXTHandle(const BXTRef& ref) {
 BXTHandle::~BXTHandle() {}
 
 bool BXTHandle::init(const BXTRef& ref) {
-    mType = getType(ref);
+    mType = type(ref);
 
     switch (mType) {
     case 1:
@@ -33,7 +33,7 @@ bool BXTHandle::init(const BXTRef& ref) {
     return true;
 }
 
-u32 BXTHandle::getType(const BXTRef& ref) const {
+u32 BXTHandle::type(const BXTRef& ref) const {
     if (ref()->magic != ' txb') {
         return 0;
     }

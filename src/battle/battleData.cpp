@@ -110,11 +110,11 @@ extern "C" PartyInfo* getPartyInfo() {
     return BattleManager::get()->battle_218();
 }
 
-extern "C" GuestInfo* sub_080728D8() {
+extern "C" GuestInfo* getGuestInfo() {
     return BattleManager::get()->battle_220();
 }
 
-extern "C" MonsterInfo* sub_080728F8() {
+extern "C" MonsterInfo* getMonsterInfo() {
     return BattleManager::get()->battle_228();
 }
 
@@ -198,15 +198,15 @@ extern "C" Guest* sub_08072C34(Unit* u) {
 }
 
 extern "C" s32 sub_08072C60() {
-    return sub_080728D8()->guest_info_80();
+    return getGuestInfo()->guest_info_80();
 }
 
 extern "C" Guest* sub_08072C7C(s32 idx) {
-    return sub_080728D8()->guest_info_88(idx);
+    return getGuestInfo()->guest_info_88(idx);
 }
 
 extern "C" Guest* sub_08072C9C(u16 idx) {
-    GuestInfo* info = sub_080728D8();
+    GuestInfo* info = getGuestInfo();
     for (int i = 0; i < info->guest_info_80(); i++) {
         if (info->guest_info_88(i)->id() == idx) {
             return info->guest_info_88(i);
@@ -216,17 +216,17 @@ extern "C" Guest* sub_08072C9C(u16 idx) {
 }
 
 void sub_08072D0C() {
-    sub_080728D8()->guest_info_70();
+    getGuestInfo()->guest_info_70();
     do {
-        sub_080728D8()->guest_info_78();
-    } while (sub_080728D8()->guest_info_70() == true);
+        getGuestInfo()->guest_info_78();
+    } while (getGuestInfo()->guest_info_70() == true);
 }
 
 extern "C" bool typeIsMonster(Unit* u) {
     return u && u->getRTTI() == MonsterRTTI::get();
 }
 
-extern "C" bool sub_08072D84(Unit* u, u16 idx) {
+extern "C" bool isMonsterVariant(Unit* u, u16 idx) {
     return u && u->getRTTI() == MonsterRTTI::get() && u->id() == idx;
 }
 
@@ -235,15 +235,15 @@ extern "C" Monster* dynaCastMonster(Unit* u) {
 }
 
 s32 sub_08072DFC() {
-    return sub_080728F8()->monster_info_d8();
+    return getMonsterInfo()->monster_info_d8();
 }
 
 Monster* sub_08072E18(s32 idx) {
-    return sub_080728F8()->monster_info_e0(idx);
+    return getMonsterInfo()->monster_info_e0(idx);
 }
 
 extern "C" Monster* sub_08072E38(u16 idx) {
-    MonsterInfo* info = sub_080728F8();
+    MonsterInfo* info = getMonsterInfo();
     for (int i = 0; i < info->monster_info_d8(); i++) {
         if (info->monster_info_e0(i)->id() == idx) {
             return info->monster_info_e0(i);
@@ -253,15 +253,15 @@ extern "C" Monster* sub_08072E38(u16 idx) {
 }
 
 extern "C" s32 sub_08072EA8() {
-    return sub_080728F8()->monster_info_e8();
+    return getMonsterInfo()->monster_info_e8();
 }
 
 extern "C" Monster* sub_08072EC4(s32 idx) {
-    return sub_080728F8()->monster_info_f0(idx);
+    return getMonsterInfo()->monster_info_f0(idx);
 }
 
 extern "C" Monster* sub_08072EE4(u16 idx) {
-    MonsterInfo* info = sub_080728F8();
+    MonsterInfo* info = getMonsterInfo();
     for (int i = 0; i < info->monster_info_e8(); i++) {
         if (info->monster_info_f0(i)->id() == idx) {
             return info->monster_info_f0(i);
@@ -271,25 +271,25 @@ extern "C" Monster* sub_08072EE4(u16 idx) {
 }
 
 extern "C" bool sub_08072F54(u16 id) {
-    return sub_080728F8()->monster_info_a8(id, TX(0x110, 0x20), TX(0x100, 0x100), 0x1e);
+    return getMonsterInfo()->monster_info_a8(id, TX(0x110, 0x20), TX(0x100, 0x100), 0x1e);
 }
 
 extern "C" bool sub_08072F9C(u16 id, TX& a, TX& b, s32 c) {
-    return sub_080728F8()->monster_info_a8(id, a, b, c);
+    return getMonsterInfo()->monster_info_a8(id, a, b, c);
 }
 
 extern "C" void sub_08072FE0(Monster* m) {
     if (m != NULL) {
         m->object_8(0);
-        sub_080728F8()->monster_info_c0(m);
+        getMonsterInfo()->monster_info_c0(m);
     }
 }
 
 void sub_08073018(bool r0, bool r1) {
-    sub_080728F8()->monster_info_c8();
+    getMonsterInfo()->monster_info_c8();
     do {
-        sub_080728F8()->monster_info_d0(r0, r1);
-    } while (sub_080728F8()->monster_info_c8() == true);
+        getMonsterInfo()->monster_info_d0(r0, r1);
+    } while (getMonsterInfo()->monster_info_c8() == true);
 }
 
 extern "C" ASM_FUNC("asm/non_matching/battleData/sub_08073070.inc", void sub_08073070());
@@ -302,7 +302,7 @@ extern "C" void playSeq(u16 type, Unit* sender, Unit* target) {
     }
 }
 
-extern "C" void sub_08073150(u16 type, Unit* sender, s32 num_receivers, Unit** receivers) {
+extern "C" void playSeqForEach(u16 type, Unit* sender, s32 num_receivers, Unit** receivers) {
     if (type != 0) {
         BattleManager::get()->battle_238()->sequencer_10(type, sender, num_receivers, receivers);
     }
@@ -360,10 +360,10 @@ Msg sub_08073460(s32 r0, const Msg& r1, const Msg& r2, const Msg& r3) {
 
 extern "C" ASM_FUNC("asm/non_matching/battleData/sub_080734A0.inc", Msg sub_080734A0(const Msg&, const Msg&, const Msg&, const Msg&));
 
-ASM_FUNC("asm/non_matching/battleData/print__3MsgRC13PrintSettingsb.inc", void Msg::print(const PrintSettings&, bool));
+ASM_FUNC("asm/non_matching/battleData/print__3MsgRC13PrintSettingsb.inc", void Msg::print(const Color&, bool));
 
-extern "C" ASM_FUNC("asm/non_matching/battleData/sub_0807362C.inc", void sub_0807362C(const PrintSettings&, bool));
+extern "C" ASM_FUNC("asm/non_matching/battleData/sub_0807362C.inc", void sub_0807362C(const Color&, bool));
 
-extern "C" ASM_FUNC("asm/non_matching/battleData/sub_0807367C.inc", void sub_0807367C(const PrintSettings&, bool));
+extern "C" ASM_FUNC("asm/non_matching/battleData/sub_0807367C.inc", void sub_0807367C(const Color&, bool));
 
-extern "C" ASM_FUNC("asm/non_matching/battleData/sub_080736B4.inc", void sub_080736B4(const PrintSettings&, bool));
+extern "C" ASM_FUNC("asm/non_matching/battleData/sub_080736B4.inc", void sub_080736B4(const Color&, bool));

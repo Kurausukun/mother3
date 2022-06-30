@@ -60,6 +60,13 @@ struct PartyInfo : public Base {
     virtual void party_info_b8() const;
     virtual s32 party_info_c0() const;
     virtual Player* party_info_c8(s32 idx) const;
+    virtual void party_info_d0();
+    virtual void party_info_d8();
+    virtual void party_info_e0();
+    virtual void party_info_e8();
+    virtual void party_info_f0();
+    virtual u8 party_info_f8(u32);
+    virtual void party_info_100();
 };
 
 struct GuestInfo : public Base {
@@ -268,6 +275,10 @@ struct ShowDownAsEscape : public Unk {
 
 SINGLETON_MGR(Battle);
 
+extern "C" void playSeqForEach(u16, Unit*, s32, Unit**);
 extern "C" void setsleep(u32);
+extern "C" PartyInfo* getPartyInfo();
+extern "C" GuestInfo* getGuestInfo();
+extern "C" MonsterInfo* getMonsterInfo();
 
 #endif // BATTLE_H

@@ -53,14 +53,14 @@ public:
     virtual u8 player_410(u32);
 
     enum {
-        None,
-        Flint,
-        Lucas,
-        Duster,
-        Kumatora,
-        Boney,
-        Salsa,
-        NUM_PLAYERS
+        None = 0x0,
+        Flint = 0x1,
+        Lucas = 0x2,
+        Duster = 0x3,
+        Kumatora = 0x4,
+        Boney = 0x5,
+        Salsa = 0x6,
+        NUM_PLAYERS = 0x7,
     };
 };
 

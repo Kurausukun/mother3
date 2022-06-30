@@ -108,7 +108,7 @@ void Battle::battle_90() {
         break;
     }
 
-    m.print(PrintSettings(0, 0, 0), true);
+    m.print(Color(0, 0, 0), true);
 }
 
 bool Battle::battle_98() {
@@ -284,7 +284,7 @@ void Battle::battle_100() {
     emit(ShowDownAsLose());
 
     sub_0807459C(battle_1f8(), 0x20, 0x20, 0);
-    sub_08073460(0x78, Msg(), Msg(), Msg()).print(PrintSettings(0, 0, 0), true);
+    sub_08073460(0x78, Msg(), Msg(), Msg()).print(Color(0, 0, 0), true);
     sub_0805E9BC();
 }
 

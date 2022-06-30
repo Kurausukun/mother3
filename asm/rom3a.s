@@ -868,7 +868,7 @@ sub_08097DE0: @ 0x08097DE0
 	strb r4, [r1, #2]
 	adds r0, r5, #0
 	movs r2, #0
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	adds r0, r5, #0
 	movs r1, #2
 	bl _._3Msg
@@ -900,7 +900,7 @@ sub_08097DE0: @ 0x08097DE0
 	strb r4, [r1, #2]
 	adds r0, r5, #0
 	movs r2, #0
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	adds r0, r5, #0
 	movs r1, #2
 	bl _._3Msg
@@ -1008,7 +1008,7 @@ _08097F50:
 	adds r0, r5, #0
 	adds r1, r6, #0
 	movs r2, #0
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	adds r0, r5, #0
 	movs r1, #2
 	bl _._3Msg
@@ -1033,7 +1033,7 @@ _08097F50:
 	adds r0, r5, #0
 	mov r1, sb
 	movs r2, #0
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	adds r0, r5, #0
 	movs r1, #2
 	bl _._3Msg
@@ -1058,7 +1058,7 @@ _08097F50:
 	adds r0, r5, #0
 	mov r1, sl
 	movs r2, #0
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	adds r0, r5, #0
 	movs r1, #2
 	bl _._3Msg
@@ -1212,7 +1212,7 @@ sub_08098034: @ 0x08098034
 	strb r6, [r1, #2]
 	add r0, sp, #8
 	movs r2, #0
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	add r0, sp, #8
 	movs r1, #2
 	bl _._3Msg
@@ -1263,7 +1263,7 @@ sub_08098034: @ 0x08098034
 	strb r6, [r1, #2]
 	add r0, sp, #8
 	movs r2, #0
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	add r0, sp, #8
 	movs r1, #2
 	bl _._3Msg
@@ -1379,7 +1379,7 @@ _0809828E:
 	strb r7, [r1, #2]
 	mov r0, sp
 	movs r2, #0
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -1468,7 +1468,7 @@ _0809836A:
 	strb r7, [r1, #2]
 	mov r0, sp
 	movs r2, #0
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -1635,7 +1635,7 @@ _080984B4:
 _080984EE:
 	mov r0, sp
 	movs r2, #0
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -1713,7 +1713,7 @@ sub_08098580: @ 0x08098580
 	strb r7, [r1, #2]
 	mov r0, sp
 	movs r2, #0
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -1834,7 +1834,7 @@ _0809868C:
 	strb r7, [r1, #2]
 	mov r0, sp
 	movs r2, #0
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -1859,7 +1859,7 @@ _080986A8:
 	strb r7, [r1, #2]
 	mov r0, sp
 	movs r2, #0
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -2874,7 +2874,7 @@ sub_08098E48: @ 0x08098E48
 	strb r6, [r1, #2]
 	mov r0, sp
 	movs r2, #0
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -3411,7 +3411,7 @@ _0809930C:
 	strb r5, [r1, #2]
 	add r0, sp, #4
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -3490,7 +3490,7 @@ _080993C4:
 	strb r5, [r1, #2]
 	add r0, sp, #4
 	movs r2, #0
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -3498,7 +3498,7 @@ _080993C4:
 	movs r0, #0x44
 	movs r2, #0
 	movs r3, #0
-	bl sub_08073150
+	bl playSeqForEach
 	ldr r3, [r6, #0x1c]
 	movs r0, #0x98
 	lsls r0, r0, #2
@@ -3517,7 +3517,7 @@ _080993C4:
 	strb r5, [r1, #2]
 	add r0, sp, #4
 	movs r2, #0
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -3584,7 +3584,7 @@ _080993C4:
 	strb r5, [r1, #2]
 	add r0, sp, #4
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -3620,7 +3620,7 @@ _0809955A:
 	movs r0, #0x45
 	movs r2, #0
 	movs r3, #0
-	bl sub_08073150
+	bl playSeqForEach
 	ldr r3, [r6, #0x1c]
 	movs r0, #0x98
 	lsls r0, r0, #2
@@ -3638,7 +3638,7 @@ _0809955A:
 	strb r5, [r1, #2]
 	add r0, sp, #4
 	movs r2, #0
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -3876,7 +3876,7 @@ _08099692:
 	strb r2, [r1, #2]
 	mov r0, sp
 	movs r2, #0
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -4076,7 +4076,7 @@ _08099892:
 	strb r5, [r1, #2]
 	mov r0, sp
 	movs r2, #0
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -4201,7 +4201,7 @@ sub_08099994: @ 0x08099994
 	strb r6, [r1, #2]
 	mov r0, sp
 	movs r2, #0
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -4431,7 +4431,7 @@ sub_08099BE4: @ 0x08099BE4
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -4866,7 +4866,7 @@ sub_08099F74: @ 0x08099F74
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #0
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -5348,7 +5348,7 @@ _0809A142:
 	strb r3, [r1, #2]
 	add r0, sp, #8
 	movs r2, #0
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	add r0, sp, #8
 	movs r1, #2
 	bl _._3Msg
@@ -6217,7 +6217,7 @@ sub_0809AA98: @ 0x0809AA98
 	strb r3, [r1, #1]
 	strb r3, [r1, #2]
 	add r0, sp, #8
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	add r0, sp, #8
 	movs r1, #2
 	bl _._3Msg
@@ -6264,7 +6264,7 @@ sub_0809AA98: @ 0x0809AA98
 	strb r2, [r1, #2]
 	add r0, sp, #8
 	movs r2, #0
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	add r0, sp, #8
 	movs r1, #2
 	bl _._3Msg
@@ -6292,7 +6292,7 @@ sub_0809AA98: @ 0x0809AA98
 	strb r2, [r1, #2]
 	add r0, sp, #8
 	movs r2, #0
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	add r0, sp, #8
 	movs r1, #2
 	bl _._3Msg
@@ -6338,7 +6338,7 @@ sub_0809AA98: @ 0x0809AA98
 	strb r2, [r1, #2]
 	add r0, sp, #8
 	movs r2, #0
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	add r0, sp, #8
 	movs r1, #2
 	bl _._3Msg
@@ -6422,7 +6422,7 @@ sub_0809AA98: @ 0x0809AA98
 	strb r2, [r1, #2]
 	add r0, sp, #8
 	movs r2, #0
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	add r0, sp, #8
 	movs r1, #2
 	bl _._3Msg
@@ -6503,7 +6503,7 @@ sub_0809AA98: @ 0x0809AA98
 	strb r2, [r1, #2]
 	add r0, sp, #8
 	movs r2, #0
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	add r0, sp, #8
 	movs r1, #2
 	bl _._3Msg
@@ -6781,7 +6781,7 @@ sub_0809AFA8: @ 0x0809AFA8
 	strb r2, [r1, #2]
 	add r0, sp, #4
 	movs r2, #0
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -6869,7 +6869,7 @@ _0809B090:
 	strb r4, [r1, #2]
 	add r0, sp, #4
 	movs r2, #0
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -7111,7 +7111,7 @@ _0809B13E:
 	strb r3, [r1, #2]
 	add r0, sp, #4
 	movs r2, #0
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -9552,7 +9552,7 @@ _0809C69C:
 	strb r0, [r1, #2]
 	add r0, sp, #4
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -11012,7 +11012,7 @@ _0809D2D4:
 	strb r4, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -11043,7 +11043,7 @@ _0809D32C:
 	movs r3, #0
 	bl __5GoodsUsP4UnitUs
 	mov r0, r8
-	bl getType__C5Goods
+	bl type__C5Goods
 	adds r6, r0, #0
 	mov r0, r8
 	movs r1, #2
@@ -12033,7 +12033,7 @@ sub_0809DA84: @ 0x0809DA84
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -12193,7 +12193,7 @@ _0809DBE4:
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -12265,7 +12265,7 @@ _0809DC8A:
 _0809DC8E:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl calcMissed__6ActionP4Unit
+	bl calcDidHit__6ActionP4Unit
 _0809DC96:
 	pop {r4, r5}
 	pop {r1}
@@ -12297,7 +12297,7 @@ sub_0809DC9C: @ 0x0809DC9C
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -12430,7 +12430,7 @@ sub_0809DD9C: @ 0x0809DD9C
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -12499,7 +12499,7 @@ sub_0809DDE0: @ 0x0809DDE0
 	strb r0, [r1, #2]
 	add r0, sp, #4
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -12525,7 +12525,7 @@ _0809DE70:
 	strb r0, [r1, #2]
 	add r0, sp, #4
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -12882,7 +12882,7 @@ sub_0809E134: @ 0x0809E134
 	strb r0, [r1, #2]
 	add r0, sp, #4
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -12968,7 +12968,7 @@ sub_0809E1E0: @ 0x0809E1E0
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -13136,7 +13136,7 @@ sub_0809E338: @ 0x0809E338
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -13381,7 +13381,7 @@ _0809E4DA:
 	strb r0, [r1, #2]
 	add r0, sp, #4
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -13405,7 +13405,7 @@ _0809E564:
 	strb r0, [r1, #2]
 	add r0, sp, #4
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -13450,7 +13450,7 @@ sub_0809E5B4: @ 0x0809E5B4
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -13514,7 +13514,7 @@ sub_0809E630: @ 0x0809E630
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -13572,7 +13572,7 @@ sub_0809E694: @ 0x0809E694
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -13618,7 +13618,7 @@ sub_0809E700: @ 0x0809E700
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -13682,7 +13682,7 @@ sub_0809E77C: @ 0x0809E77C
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -13741,7 +13741,7 @@ sub_0809E7E0: @ 0x0809E7E0
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -13833,7 +13833,7 @@ sub_0809E898: @ 0x0809E898
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -14181,7 +14181,7 @@ sub_0809EAF0: @ 0x0809EAF0
 	beq _0809EB8C
 	adds r0, r4, #0
 	movs r1, #0xbe
-	bl sub_08072D84
+	bl isMonsterVariant
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -14665,7 +14665,7 @@ sub_0809EEAC: @ 0x0809EEAC
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -14740,7 +14740,7 @@ _0809EF60:
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -15518,7 +15518,7 @@ sub_0809F670: @ 0x0809F670
 	adds r5, r1, #0
 	adds r0, r5, #0
 	movs r1, #0xbe
-	bl sub_08072D84
+	bl isMonsterVariant
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -15547,7 +15547,7 @@ sub_0809F670: @ 0x0809F670
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #0
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -15556,7 +15556,7 @@ sub_0809F670: @ 0x0809F670
 _0809F6CC:
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl calcMissed__6ActionP4Unit
+	bl calcDidHit__6ActionP4Unit
 _0809F6D4:
 	add sp, #0x10
 	pop {r4, r5}
@@ -15722,7 +15722,7 @@ _0809F814:
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -15869,7 +15869,7 @@ _0809F944:
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -16136,7 +16136,7 @@ _0809FB5C:
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg

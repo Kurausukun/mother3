@@ -21,7 +21,7 @@ extern "C" void sub_08073C4C(Unit*, u32, u32);
 extern "C" void sub_08073D98(Unit*, u32, u32);
 extern "C" u8 unitIsPlayer(Unit*, u32);
 extern "C" void hitPlayer(Unit*, u32, u32);
-extern "C" bool sub_08072D84(Unit*, u32);
+extern "C" bool isMonsterVariant(Unit*, u32);
 extern "C" void sub_0807392C(Unit*, u32, u32);
 extern "C" void sub_08073198(u32, Unit*, Unit*);
 extern "C" void sub_08073270();
@@ -72,7 +72,7 @@ public:
     virtual ~DefaultGoods() {}
 
     virtual void tellUseMessage() {
-        if ((u8)getType() != 1) {
+        if ((u8)type() != 1) {
             Action::tellUseMessage();
         }
     }
@@ -86,7 +86,7 @@ public:
                     // his food now
                     clearTargets();
                     addTarget(getUser());
-                    createMsg(0x17e).print(PrintSettings(0, 0, 0), 1);
+                    createMsg(0x17e).print(Color(0, 0, 0), 1);
                     return true;
                 }
             }
@@ -110,7 +110,7 @@ public:
     virtual bool dg_2(Unit* target) {
         Status* s = target->findStatus(Status::Nauseous);
         if (goods_2b0() == 4 && s != NULL) {
-            s->status_128().print(PrintSettings(0, 0, 0), 1);
+            s->status_128().print(Color(0, 0, 0), 1);
             return true;
         }
         return false;
@@ -209,12 +209,12 @@ public:
     }
 
     void tellUseMessage() {
-        if ((u8)getType() != 1) {
+        if ((u8)type() != 1) {
             Action::tellUseMessage();
         }
 
         if (_50 == true) {
-            createMsg(0x178).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x178).print(Color(0, 0, 0), 1);
         }
     }
 
@@ -222,7 +222,7 @@ public:
 
     void tellResisted(Unit* target) {}
 
-    void calcHit(Unit* target) {
+    void doHit(Unit* target) {
         if (target->getElementWeakness(4) < 1) {
             hitPlayer(target, 1, 1);
         } else {
@@ -263,22 +263,24 @@ public:
         if (m == NULL)
             return true;
 
-        return m->monster_348() != 4 && m->monster_348() != 3 && sub_08072D84(m, 0x3a) != true &&
-               sub_08072D84(m, 0x12) != true;
+        return m->type() != MonsterType::Mechanical &&
+               m->type() != MonsterType::MechanicalChimera &&
+               isMonsterVariant(m, Monster::StickySlug) != true &&
+               isMonsterVariant(m, Monster::SlimySlug) != true;
     }
 
-    void calcHit(Unit* target) {
+    void doHit(Unit* target) {
         Monster* m = dynaCastMonster(target);
         if (m == NULL)
             return;
 
-        if (m->monster_348() == 4 || sub_08072D84(m, 0x3a) == true ||
-            sub_08072D84(m, 0x12) == true) {
+        if (m->type() == 4 || isMonsterVariant(m, Monster::StickySlug) == true ||
+            isMonsterVariant(m, Monster::SlimySlug) == true) {
             _50 = 0x100;
-        } else if (m->monster_348() == 3) {
+        } else if (m->type() == 3) {
             _50 = 0x80;
         }
-        Action::calcHit(target);
+        Action::doHit(target);
     }
     s32 healLo() const { return Goods::healLo() * _50 >> 8; }
     s32 healHi() const { return Goods::healHi() * _50 >> 8; }
@@ -293,9 +295,9 @@ public:
     HoneyShower(u16 id, Unit* user, u16 a3);
     virtual ~HoneyShower() {}
 
-    void calcHit(Unit* target) {
+    void doHit(Unit* target) {
         if (randS32(0, 99) < 90) {
-            createMsg(0x166).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x166).print(Color(0, 0, 0), 1);
             playSound(0x452);
 
             int total_dmg = 0;
@@ -307,11 +309,12 @@ public:
                 total_dmg += dmg;
             }
             sub_08073270();
-            AutoCombo* ac = new AutoCombo(8, ComboRhythm(120, 40));
-            AutoComboResult* acr = new AutoComboResult(total_dmg, ComboRhythm(120, 52));
+            (void)new AutoCombo(8, ComboRhythm(120, 40));
+            (void)new AutoComboResult(total_dmg, ComboRhythm(120, 52));
             setsleep(25);
         } else {
-            createMsg(0x167).print(PrintSettings(0, 0, 0), 1);
+            // bear appeared
+            createMsg(0x167).print(Color(0, 0, 0), true);
             sub_080707E4(0x453);
             hitPlayer(target, randS32(800, 860), 1);
             playSeq(BattleSeq::HardHit, getUser(), target);
@@ -331,7 +334,7 @@ public:
         playSound(0x55e);
 
         playSeq(BattleSeq::NoEffect, getUser(), getTarget(0));
-        createMsg(0x190).print(PrintSettings(0, 0, 0), 1);
+        createMsg(0x190).print(Color(0, 0, 0), true);
     }
 
     INLINE_VT_END
@@ -342,13 +345,13 @@ public:
     BugSpray(u16 id, Unit* user, u16 a3);
     virtual ~BugSpray() {}
 
-    void calcHit(Unit* target) {
+    void doHit(Unit* target) {
         Monster* m = dynaCastMonster(target);
         if (m != NULL) {
-            if (m->monster_348() == 1) {
-                Action::calcHit(m);
+            if (m->type() == MonsterType::Bug) {
+                Action::doHit(m);
             } else {
-                createMsg(0x154).print(PrintSettings(0, 0, 0), 1);
+                createMsg(0x154).print(Color(0, 0, 0), true);
             }
         }
     }
@@ -366,6 +369,7 @@ public:
         if (unitIsPlayer(target, Player::Flint) == true) {
             hp = 60;
         } else if (unitIsPlayer(target, Player::Lucas) == true) {
+            // lucas likes cheese if name length is odd
             hp = (createPlayerName(Player::Lucas).len() & 1) == 0 ? 20 : 60;
         } else if (unitIsPlayer(target, Player::Duster) == true) {
             hp = 60;
@@ -379,7 +383,7 @@ public:
             hp = 20;
         }
 
-        createMsg(hp >= 60 ? 0x186 : 0x187).print(PrintSettings(0, 0, 0), 1);
+        createMsg(hp >= 60 ? 0x186 : 0x187).print(Color(0, 0, 0), true);
         sub_08073C4C(target, hp, 1);
     }
 
@@ -392,7 +396,7 @@ public:
     virtual ~DoggyFood() {}
 
     void action_f8(Unit* target) {
-        if (unitIsPlayer(target, 5) == true) {
+        if (unitIsPlayer(target, Player::Boney) == true) {
             Action::action_f8(target);
         } else {
             sub_08073C4C(target, 6, 1);
@@ -412,51 +416,51 @@ public:
         case 0:
             playSeq(BattleSeq::LifeUpG, target, target);
             sub_08073C4C(target, randS32(80, 140), 1);
-            createMsg(0x1cb).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x1cb).print(Color(0, 0, 0), true);
             break;
         case 1:
             playSeq(BattleSeq::PsiMagnetGainA, target, target);
             sub_08073D98(target, randS32(20, 50), 1);
-            createMsg(0x1cc).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x1cc).print(Color(0, 0, 0), true);
             break;
         case 2:
-            if (calcStatusInflict(target, Status::OffUpStrong, 100, 1) == true) {
-                createMsg(0x1cd).print(PrintSettings(0, 0, 0), 1);
+            if (calcStatusInflict(target, Status::OffUpStrong, 100, true) == true) {
+                createMsg(0x1cd).print(Color(0, 0, 0), true);
             }
             break;
         case 3:
-            if (calcStatusInflict(target, Status::OffDownStrong, 100, 1) == true) {
-                createMsg(0x1ce).print(PrintSettings(0, 0, 0), 1);
+            if (calcStatusInflict(target, Status::OffDownStrong, 100, true) == true) {
+                createMsg(0x1ce).print(Color(0, 0, 0), true);
             }
             break;
         case 4:
-            if (calcStatusInflict(target, Status::DefUpStrong, 100, 1) == true) {
-                createMsg(0x1cf).print(PrintSettings(0, 0, 0), 1);
+            if (calcStatusInflict(target, Status::DefUpStrong, 100, true) == true) {
+                createMsg(0x1cf).print(Color(0, 0, 0), true);
             }
             break;
         case 5:
-            if (calcStatusInflict(target, Status::DefDownStrong, 100, 1) == true) {
-                createMsg(0x1d0).print(PrintSettings(0, 0, 0), 1);
+            if (calcStatusInflict(target, Status::DefDownStrong, 100, true) == true) {
+                createMsg(0x1d0).print(Color(0, 0, 0), true);
             }
             break;
         case 6:
-            if (calcStatusInflict(target, Status::MonkeyDanceSP, 100, 1) == true) {
-                createMsg(0x1d1).print(PrintSettings(0, 0, 0), 1);
+            if (calcStatusInflict(target, Status::MonkeyDanceSP, 100, true) == true) {
+                createMsg(0x1d1).print(Color(0, 0, 0), true);
             }
             break;
         case 7:
-            if (calcStatusInflict(target, Status::MonkeyDanceSP2, 100, 1) == true) {
-                createMsg(0x1d2).print(PrintSettings(0, 0, 0), 1);
+            if (calcStatusInflict(target, Status::MonkeyDanceSP2, 100, true) == true) {
+                createMsg(0x1d2).print(Color(0, 0, 0), true);
             }
             break;
         case 8:
-            if (calcStatusInflict(target, Status::Crying, 100, 1) == true) {
-                createMsg(0x1d3).print(PrintSettings(0, 0, 0), 1);
+            if (calcStatusInflict(target, Status::Crying, 100, true) == true) {
+                createMsg(0x1d3).print(Color(0, 0, 0), true);
             }
             break;
         case 9:
-            if (calcStatusInflict(target, Status::Strange, 100, 1) == true) {
-                createMsg(0x1d4).print(PrintSettings(0, 0, 0), 1);
+            if (calcStatusInflict(target, Status::Strange, 100, true) == true) {
+                createMsg(0x1d4).print(Color(0, 0, 0), true);
             }
             break;
         }
@@ -505,13 +509,13 @@ public:
             if (effect() == EffectType::PPHeal && target->maxPP() <= 0) {
                 return true;
             }
-            return this->Action::isResisted(target);
+            return Action::isResisted(target);
         }
 
         return target->unit_1f8(0xb) < 1;
     }
 
-    void tellResisted(Unit* target) { createMsg(0x154).print(PrintSettings(0, 0, 0), 1); }
+    void tellResisted(Unit* target) { createMsg(0x154).print(Color(0, 0, 0), true); }
 
     void action_118(Unit* target) {
         if (randS32(0, 99) < 50) {
@@ -519,7 +523,7 @@ public:
             return;
         }
 
-        createMsg(0x159).print(PrintSettings(0, 0, 0), 1);
+        createMsg(0x159).print(Color(0, 0, 0), true);
     }
 
     INLINE_VT_END
@@ -553,12 +557,12 @@ public:
             return true;
         }
 
-        return this->Action::isResisted(target);
+        return Action::isResisted(target);
     }
 
     void tellResisted(Unit* target) {
         sub_080707E4(0x451);
-        createMsg(0x154).print(PrintSettings(0, 0, 0), 1);
+        createMsg(0x154).print(Color(0, 0, 0), true);
     }
 
     void onSuccess(Unit* target) {
@@ -568,7 +572,7 @@ public:
         Monster* m = dynaCastMonster(target);
         m->monster_300(true);
         sub_08073E3C(target, 0x33, 0);
-        createMsg(0x176).print(PrintSettings(0, 0, 0), 1);
+        createMsg(0x176).print(Color(0, 0, 0), true);
     }
 
     INLINE_VT_END
@@ -583,10 +587,10 @@ public:
         s32 count = target->getStatusTypeCount(Status::Strange);
         if (count > 0) {
             for (int i = 0; i < count; i++) {
-                sub_08073EE8(target, 4, i + 1 >= count);
+                sub_08073EE8(target, Status::Strange, i + 1 >= count);
             }
         } else {
-            createMsg(0x154).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x154).print(Color(0, 0, 0), true);
         }
     }
 
@@ -612,7 +616,7 @@ public:
                 num++;
             }
         }
-        createMsg(num > 0 ? 0x156 : 0x154).print(PrintSettings(0, 0, 0), 1);
+        createMsg(num > 0 ? 0x156 : 0x154).print(Color(0, 0, 0), 1);
     }
     END_NONMATCH
 
@@ -639,7 +643,7 @@ public:
                 num++;
             }
         }
-        createMsg(num > 0 ? 0x156 : 0x154).print(PrintSettings(0, 0, 0), 1);
+        createMsg(num > 0 ? 0x156 : 0x154).print(Color(0, 0, 0), true);
     }
     END_NONMATCH
 
@@ -663,9 +667,9 @@ public:
             target->removeStatus(Status::PsiCounter);
             playSound(0x62b);
             playSeq(BattleSeq::KO, target, target);
-            createMsg(0x17a).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x17a).print(Color(0, 0, 0), true);
         } else {
-            createMsg(0x154).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x154).print(Color(0, 0, 0), true);
         }
     }
 
@@ -679,9 +683,9 @@ public:
 
     bool isResisted(Unit* target) { return sub_08072648(4) ^ 1; }
 
-    void tellResisted(Unit* target) { createMsg(0x184).print(PrintSettings(0, 0, 0), 1); }
+    void tellResisted(Unit* target) { createMsg(0x184).print(Color(0, 0, 0), true); }
 
-    u8 calcMissed(Unit* target) {
+    u8 calcDidHit(Unit* target) {
         Unit* u = sub_08072EE4(5);
         if (u == NULL) {
             return false;
@@ -691,13 +695,13 @@ public:
 
     void onSuccess(Unit* target) {
         Action::onSuccess(target);
-        createMsg(0x182).print(PrintSettings(0, 0, 0), 1);
+        createMsg(0x182).print(Color(0, 0, 0), true);
         sub_080707E4(0x554);
         playSeq(BattleSeq::ShakeLong, target, target);
-        createMsg(0x183).print(PrintSettings(0, 0, 0), 1);
+        createMsg(0x183).print(Color(0, 0, 0), true);
     }
 
-    void tellMissed(Unit* target) { createMsg(0x18a).print(PrintSettings(0, 0, 0), 1); }
+    void tellMissed(Unit* target) { createMsg(0x18a).print(Color(0, 0, 0), true); }
 
     INLINE_VT_END
 };
@@ -709,63 +713,64 @@ public:
 
     bool isResisted(Unit* target) {
         if (typeIsMonster(target) != true) {
-            if (effect() != 5 || target->maxPP() > 0) {
+            if (effect() != EffectType::PPHeal || target->maxPP() > 0) {
                 return Action::isResisted(target);
             }
             return true;
         }
 
         Monster* m = dynaCastMonster(target);
-        if (m->monster_348() == 7) {
+        if (m->type() == MonsterType::Person) {
             return false;
         }
+
         return true;
     }
 
-    void tellResisted(Unit* target) { createMsg(0x1ca).print(PrintSettings(0, 0, 0), 1); }
+    void tellResisted(Unit* target) { createMsg(0x1ca).print(Color(0, 0, 0), true); }
 
     void onSuccess(Unit* target) {
         if (typeIsMonster(target) != true)
             return;
 
         switch (target->id()) {
-        case 0x1d:
-        case 0xaa:
-        case 0xab:
+        case Monster::PorkColonel:
+        case Monster::PorkLieutenant:
+        case Monster::PorkColonel2nd:
             setsleep(60);
-            createMsg(0x19a).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x19a).print(Color(0, 0, 0), true);
             setsleep(30);
             sub_080707E4(0x61d);
-            createMsg(0x198).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x198).print(Color(0, 0, 0), true);
             break;
-        case 0xe:
-        case 0xf:
+        case Monster::WomanizingPigMask1st:
+        case Monster::WomanizingPigMask2nd:
             setsleep(60);
-            createMsg(0x19e).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x19e).print(Color(0, 0, 0), true);
             setsleep(30);
             sub_080707E4(0x61e);
-            createMsg(0x199).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x199).print(Color(0, 0, 0), true);
             break;
-        case 0x95:
+        case Monster::PorkSoldier:
             setsleep(60);
-            createMsg(0x1a2).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x1a2).print(Color(0, 0, 0), true);
             setsleep(30);
             sub_080707E4(0x61e);
-            createMsg(0x199).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x199).print(Color(0, 0, 0), true);
             break;
-        case 0xac:
+        case Monster::PorkCommander:
             setsleep(60);
-            createMsg(0x1a6).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x1a6).print(Color(0, 0, 0), true);
             setsleep(30);
             sub_080707E4(0x61e);
-            createMsg(0x199).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x199).print(Color(0, 0, 0), true);
             break;
-        case 0xad:
+        case Monster::NavySqueal:
             setsleep(60);
-            createMsg(0x1ae).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x1ae).print(Color(0, 0, 0), true);
             setsleep(30);
             sub_080707E4(0x61e);
-            createMsg(0x199).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x199).print(Color(0, 0, 0), true);
             break;
         }
     }
@@ -780,57 +785,57 @@ public:
 
     bool isResisted(Unit* target) {
         if (typeIsMonster(target) != true) {
-            if (effect() != 5 || target->maxPP() > 0) {
+            if (effect() != EffectType::PPHeal || target->maxPP() > 0) {
                 return Action::isResisted(target);
             }
             return true;
         }
 
         Monster* m = dynaCastMonster(target);
-        if (m->monster_348() == 7) {
+        if (m->type() == MonsterType::Person) {
             return false;
         }
         return true;
     }
 
-    void tellResisted(Unit* target) { createMsg(0x1ca).print(PrintSettings(0, 0, 0), 1); }
+    void tellResisted(Unit* target) { createMsg(0x1ca).print(Color(0, 0, 0), 1); }
 
     void onSuccess(Unit* target) {
         if (typeIsMonster(target) != true)
             return;
 
         switch (target->id()) {
-        case 0x95:
+        case Monster::PorkSoldier:
         case 0xab:
         case 0xad:
             setsleep(60);
-            createMsg(0x19b).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x19b).print(Color(0, 0, 0), 1);
             setsleep(30);
             sub_080707E4(0x61d);
-            createMsg(0x198).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x198).print(Color(0, 0, 0), 1);
             break;
         case 0xe:
         case 0xf:
             setsleep(60);
-            createMsg(0x19f).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x19f).print(Color(0, 0, 0), 1);
             setsleep(30);
             sub_080707E4(0x61e);
-            createMsg(0x199).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x199).print(Color(0, 0, 0), 1);
             break;
         case 0xac:
             setsleep(60);
-            createMsg(0x1a7).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x1a7).print(Color(0, 0, 0), 1);
             setsleep(30);
             sub_080707E4(0x61e);
-            createMsg(0x199).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x199).print(Color(0, 0, 0), 1);
             break;
         case 0x1d:
         case 0xaa:
             setsleep(60);
-            createMsg(0x1ab).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x1ab).print(Color(0, 0, 0), 1);
             setsleep(30);
             sub_080707E4(0x61e);
-            createMsg(0x199).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x199).print(Color(0, 0, 0), 1);
             break;
         }
     }
@@ -852,50 +857,50 @@ public:
         }
 
         Monster* m = dynaCastMonster(target);
-        if (m->monster_348() == 7) {
+        if (m->type() == 7) {
             return false;
         }
         return true;
     }
 
-    void tellResisted(Unit* target) { createMsg(0x1ca).print(PrintSettings(0, 0, 0), 1); }
+    void tellResisted(Unit* target) { createMsg(0x1ca).print(Color(0, 0, 0), 1); }
 
     void onSuccess(Unit* target) {
         if (typeIsMonster(target) != true)
             return;
 
         switch (target->id()) {
-        case 0x95:
+        case Monster::PorkSoldier:
         case 0xab:
         case 0xac:
             setsleep(60);
-            createMsg(0x19c).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x19c).print(Color(0, 0, 0), 1);
             setsleep(30);
             sub_080707E4(0x61d);
-            createMsg(0x198).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x198).print(Color(0, 0, 0), 1);
             break;
         case 0xe:
         case 0xf:
             setsleep(60);
-            createMsg(0x1a0).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x1a0).print(Color(0, 0, 0), 1);
             setsleep(30);
             sub_080707E4(0x61e);
-            createMsg(0x199).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x199).print(Color(0, 0, 0), 1);
             break;
         case 0xad:
             setsleep(60);
-            createMsg(0x1b0).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x1b0).print(Color(0, 0, 0), 1);
             setsleep(30);
             sub_080707E4(0x61e);
-            createMsg(0x199).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x199).print(Color(0, 0, 0), 1);
             break;
         case 0x1d:
         case 0xaa:
             setsleep(60);
-            createMsg(0x1ac).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x1ac).print(Color(0, 0, 0), 1);
             setsleep(30);
             sub_080707E4(0x61e);
-            createMsg(0x199).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x199).print(Color(0, 0, 0), 1);
             break;
         }
     }
@@ -917,13 +922,13 @@ public:
         }
 
         Monster* m = dynaCastMonster(target);
-        if (m->monster_348() == 7) {
+        if (m->type() == 7) {
             return false;
         }
         return true;
     }
 
-    void tellResisted(Unit* target) { createMsg(0x1ca).print(PrintSettings(0, 0, 0), 1); }
+    void tellResisted(Unit* target) { createMsg(0x1ca).print(Color(0, 0, 0), 1); }
 
     void onSuccess(Unit* target) {
         if (typeIsMonster(target) != true)
@@ -933,46 +938,46 @@ public:
         case 0x1d:
         case 0xaa:
             setsleep(60);
-            createMsg(0x19d).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x19d).print(Color(0, 0, 0), 1);
             setsleep(30);
             sub_080707E4(0x61d);
-            createMsg(0x198).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x198).print(Color(0, 0, 0), 1);
             break;
         case 0xe:
         case 0xf:
             setsleep(60);
-            createMsg(0x1a1).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x1a1).print(Color(0, 0, 0), 1);
             setsleep(30);
             sub_080707E4(0x61e);
-            createMsg(0x199).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x199).print(Color(0, 0, 0), 1);
             break;
-        case 0x95:
+        case Monster::PorkSoldier:
             setsleep(60);
-            createMsg(0x1a5).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x1a5).print(Color(0, 0, 0), 1);
             setsleep(30);
             sub_080707E4(0x61e);
-            createMsg(0x199).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x199).print(Color(0, 0, 0), 1);
             break;
         case 0xac:
             setsleep(60);
-            createMsg(0x1a9).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x1a9).print(Color(0, 0, 0), 1);
             setsleep(30);
             sub_080707E4(0x61e);
-            createMsg(0x199).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x199).print(Color(0, 0, 0), 1);
             break;
         case 0xad:
             setsleep(60);
-            createMsg(0x1b1).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x1b1).print(Color(0, 0, 0), 1);
             setsleep(30);
             sub_080707E4(0x61e);
-            createMsg(0x199).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x199).print(Color(0, 0, 0), 1);
             break;
         case 0xab:
             setsleep(60);
-            createMsg(0x1ad).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x1ad).print(Color(0, 0, 0), 1);
             setsleep(30);
             sub_080707E4(0x61e);
-            createMsg(0x199).print(PrintSettings(0, 0, 0), 1);
+            createMsg(0x199).print(Color(0, 0, 0), 1);
             break;
         }
     }
