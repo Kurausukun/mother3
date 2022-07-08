@@ -1496,7 +1496,7 @@ sub_0807B4D8: @ 0x0807B4D8
 sub_0807B4F8: @ 0x0807B4F8
 	push {r4, lr}
 	adds r4, r0, #0
-	bl unit_108__4Unit
+	bl onDeath__4Unit
 	movs r0, #0x83
 	lsls r0, r0, #2
 	adds r4, r4, r0

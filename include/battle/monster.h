@@ -4,6 +4,22 @@
 #include "global.h"
 #include "battle/unit.h"
 
+struct Monster;
+
+struct MonsterDrop {
+    u8 id;
+    u8 chance;
+    u16 unk;
+};
+
+struct MonsterStats {
+    u8 offense;
+    u8 defense;
+    u8 iq;
+    u8 speed;
+    u8 kindness;
+};
+
 struct MonsterData {
     u32 id;
     u32 smell;
@@ -12,20 +28,12 @@ struct MonsterData {
     u16 encounter_bgm;
     u16 battle_bgm;
     u16 win_bgm;
-    u16 level;
+    u8 level;
     u32 hp;
-    u32 pp;
-    u8 offense;
-    u8 defense;
-    u8 iq;
-    u8 speed;
-    u32 kindness;
-    u8 offense_surprise;
-    u8 defense_surprise;
-    u8 iq_surprise;
-    u8 speed_surprise;
-    u32 kindness_surprise;
-    u16 weaknesses[20];
+    s16 pp;
+    MonsterStats stats[2];
+    u16 weaknesses[15];
+    u16 elem_weaknesses[5];
     u16 skills[8];
     u16 attack_sfx;
     u8 encounter_msg;
@@ -37,15 +45,7 @@ struct MonsterData {
     u8 memory_back_sprite;
     u8 battle_back_sprite;
     u16 death_anim_last;
-    u8 item1_no;
-    u8 item1_chance;
-    u16 item1_unk;
-    u8 item2_no;
-    u8 item2_chance;
-    u16 item2_unk;
-    u8 item3_no;
-    u8 item3_chance;
-    u16 item3_unk;
+    MonsterDrop drops[3];
     u32 experience;
     u32 money;
     u16 smell_weaknesses[2];
@@ -58,10 +58,17 @@ struct struct_08063998 {
     u32 a;
 };
 
+struct BattleSprite : public Base {
+    BattleSprite(Monster*);
+    virtual ~BattleSprite();
+
+    u8 filler[0xa8];
+};
+
 class Monster : public Unit {
 public:
     Monster();
-    Monster(u16 a, u16 b);
+    Monster(u16 idx, u16 id);
     virtual ~Monster();
 
     virtual void* getRTTI();
@@ -91,27 +98,33 @@ public:
     virtual void monster_370();
     virtual void monster_378();
     virtual bool monster_380();
+    virtual void monster_388();
+    virtual void monster_390();
+    virtual void monster_398();
+    virtual void addDrop(u32 a, u32 b);
 
-    void sub_08080B60();
-    void sub_08080CE4();
+    static s32 maxDrops() { return 3; }
+
+    void resetStats();
+    void resetRewards();
     void sub_08080D48();
 
-    u16 _f8;
+    u16 mIdx;
     u16 mID;
     MonsterData* mData;
-    u32 _100;
-    u32 _104;
+    u32 mUseAltStats;
+    u32 mHPCopy;
     Msg _108;
-    u16 _114;
-    u32 _118;
+    u16 mDeathAnim;
+    u32 mExperience;
     u32 _11c;
     u32 _120;
     u32 _124;
     u32 _128;
-    u32 _12c;
+    u32 mMoney;
     u16 _130;
     struct_08063998 _134;
-    void* _13c;
+    BattleSprite* mSprite;
 
     enum {
         None = 0x0,

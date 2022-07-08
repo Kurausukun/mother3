@@ -457,13 +457,13 @@ bool Action::calcCrit(Unit* target) {
 
 void Action::action_f8(Unit* target) {
     s32 val = randS32(healLo(), healHi());
-    s32 val2 = sub_0807066C(val * getUser()->unit_1e8(), 100);
+    s32 val2 = sub_0807066C(val * getUser()->kindness(), 100);
     sub_08073C4C(target, val + val2, 1);
 }
 
 void Action::onNoEffect(Unit* target) {
     s32 val = randS32(healLo(), healHi());
-    s32 val2 = sub_0807066C(val * getUser()->unit_1e8(), 100);
+    s32 val2 = sub_0807066C(val * getUser()->kindness(), 100);
     sub_08073C4C(target, val + val2, 1);
 }
 

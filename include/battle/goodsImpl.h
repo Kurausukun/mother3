@@ -512,7 +512,7 @@ public:
             return Action::isResisted(target);
         }
 
-        return target->unit_1f8(0xb) < 1;
+        return target->getStatusWeakness(0xb) < 1;
     }
 
     void tellResisted(Unit* target) { createMsg(0x154).print(Color(0, 0, 0), true); }

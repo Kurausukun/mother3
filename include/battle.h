@@ -202,7 +202,7 @@ public:
     void sub_0805DC1C();
     void sub_0805DC6C();
     void sub_0805DDE4();
-    Player* sub_0805E390(Unit*);
+    Player* tryKillPlayer(Unit*);
     Player* sub_0805E338(Unit*);
     void sub_0805E808();
     bool sub_0805E9BC();

@@ -36,7 +36,7 @@ void Guest::setupStats() {
     setDefense(mStats->defense);
     setIQ(mStats->iq);
     setSpeed(mStats->speed);
-    unit_158(mStats->_2c);
+    setKindness(mStats->_2c);
 }
 
 Guest::~Guest() {}

@@ -383,8 +383,8 @@ sub_08081C08: @ 0x08081C08
 _08081C40: .4byte _vt.7Monster.10UnitObject
 _08081C44: .4byte _vt.7Monster
 
-	thumb_func_start __12BattleSpritePv
-__12BattleSpritePv: @ 0x08081C48
+	thumb_func_start __12BattleSpriteP7Monster
+__12BattleSpriteP7Monster: @ 0x08081C48
 	push {r4, r5, r6, lr}
 	mov r6, sb
 	mov r5, r8

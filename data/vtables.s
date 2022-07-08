@@ -2758,13 +2758,13 @@ vt_09F469A8::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -2812,13 +2812,13 @@ vt_09F469A8::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -3236,13 +3236,13 @@ vt_09F46E98::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -3290,13 +3290,13 @@ vt_09F46E98::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -3717,13 +3717,13 @@ vt_09F47390::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -3771,13 +3771,13 @@ vt_09F47390::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -4198,13 +4198,13 @@ vt_09F47888::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -4252,13 +4252,13 @@ vt_09F47888::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -4679,13 +4679,13 @@ vt_09F47D80::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -4733,13 +4733,13 @@ vt_09F47D80::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -5160,13 +5160,13 @@ vt_09F48278::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -5214,13 +5214,13 @@ vt_09F48278::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -5644,13 +5644,13 @@ vt_09F48778::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -5698,13 +5698,13 @@ vt_09F48778::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -6125,13 +6125,13 @@ vt_09F48C70::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -6179,13 +6179,13 @@ vt_09F48C70::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -10537,7 +10537,7 @@ _vt.5Guest::
 	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -10567,13 +10567,13 @@ _vt.5Guest::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -10621,13 +10621,13 @@ _vt.5Guest::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -10876,7 +10876,7 @@ vt_09F4BDC8::
 	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -10906,13 +10906,13 @@ vt_09F4BDC8::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -10960,13 +10960,13 @@ vt_09F4BDC8::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -11216,7 +11216,7 @@ vt_09F4C148::
 	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -11246,13 +11246,13 @@ vt_09F4C148::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -11300,13 +11300,13 @@ vt_09F4C148::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -11565,7 +11565,7 @@ vt_09F4C4E0::
 	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -11595,13 +11595,13 @@ vt_09F4C4E0::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -11649,13 +11649,13 @@ vt_09F4C4E0::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -11908,7 +11908,7 @@ vt_09F4C868::
 	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -11938,13 +11938,13 @@ vt_09F4C868::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -11992,13 +11992,13 @@ vt_09F4C868::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -12254,7 +12254,7 @@ vt_09F4CBF8::
 	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -12284,13 +12284,13 @@ vt_09F4CBF8::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -12338,13 +12338,13 @@ vt_09F4CBF8::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -12594,7 +12594,7 @@ vt_09F4CF78::
 	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -12624,13 +12624,13 @@ vt_09F4CF78::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -12678,13 +12678,13 @@ vt_09F4CF78::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -12934,7 +12934,7 @@ vt_09F4D2F8::
 	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -12964,13 +12964,13 @@ vt_09F4D2F8::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -13018,13 +13018,13 @@ vt_09F4D2F8::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -14686,7 +14686,7 @@ vt_09F4E508::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -14716,13 +14716,13 @@ vt_09F4E508::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -14770,13 +14770,13 @@ vt_09F4E508::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -15140,7 +15140,7 @@ vt_09F4E9B8::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -15170,13 +15170,13 @@ vt_09F4E9B8::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -15224,13 +15224,13 @@ vt_09F4E9B8::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -15620,7 +15620,7 @@ vt_09F4EEA8::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -15650,13 +15650,13 @@ vt_09F4EEA8::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -15704,13 +15704,13 @@ vt_09F4EEA8::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -16074,7 +16074,7 @@ vt_09F4F358::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -16104,13 +16104,13 @@ vt_09F4F358::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -16158,13 +16158,13 @@ vt_09F4F358::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -16576,7 +16576,7 @@ vt_09F4F888::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -16606,13 +16606,13 @@ vt_09F4F888::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -16660,13 +16660,13 @@ vt_09F4F888::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -17039,7 +17039,7 @@ vt_09F4FD50::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -17069,13 +17069,13 @@ vt_09F4FD50::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -17123,13 +17123,13 @@ vt_09F4FD50::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -17502,7 +17502,7 @@ vt_09F50218::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -17532,13 +17532,13 @@ vt_09F50218::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -17586,13 +17586,13 @@ vt_09F50218::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -17980,7 +17980,7 @@ vt_09F50708::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -18010,13 +18010,13 @@ vt_09F50708::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -18064,13 +18064,13 @@ vt_09F50708::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -18434,7 +18434,7 @@ vt_09F50BB8::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -18464,13 +18464,13 @@ vt_09F50BB8::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -18518,13 +18518,13 @@ vt_09F50BB8::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -18891,7 +18891,7 @@ vt_09F51070::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -18921,13 +18921,13 @@ vt_09F51070::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -18975,13 +18975,13 @@ vt_09F51070::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -19345,7 +19345,7 @@ vt_09F51520::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -19375,13 +19375,13 @@ vt_09F51520::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -19429,13 +19429,13 @@ vt_09F51520::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -19799,7 +19799,7 @@ vt_09F519D0::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -19829,13 +19829,13 @@ vt_09F519D0::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -19883,13 +19883,13 @@ vt_09F519D0::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -20265,7 +20265,7 @@ vt_09F51EA0::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -20295,13 +20295,13 @@ vt_09F51EA0::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -20349,13 +20349,13 @@ vt_09F51EA0::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -20722,7 +20722,7 @@ vt_09F52358::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -20752,13 +20752,13 @@ vt_09F52358::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -20806,13 +20806,13 @@ vt_09F52358::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -21194,7 +21194,7 @@ vt_09F52838::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -21224,13 +21224,13 @@ vt_09F52838::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -21278,13 +21278,13 @@ vt_09F52838::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -21648,7 +21648,7 @@ vt_09F52CE8::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -21678,13 +21678,13 @@ vt_09F52CE8::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -21732,13 +21732,13 @@ vt_09F52CE8::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -22123,7 +22123,7 @@ vt_09F531D0::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -22153,13 +22153,13 @@ vt_09F531D0::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -22207,13 +22207,13 @@ vt_09F531D0::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -22577,7 +22577,7 @@ vt_09F53680::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -22607,13 +22607,13 @@ vt_09F53680::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -22661,13 +22661,13 @@ vt_09F53680::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -23031,7 +23031,7 @@ vt_09F53B30::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -23061,13 +23061,13 @@ vt_09F53B30::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -23115,13 +23115,13 @@ vt_09F53B30::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -23485,7 +23485,7 @@ vt_09F53FE0::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -23515,13 +23515,13 @@ vt_09F53FE0::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -23569,13 +23569,13 @@ vt_09F53FE0::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -23939,7 +23939,7 @@ vt_09F54490::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -23969,13 +23969,13 @@ vt_09F54490::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -24023,13 +24023,13 @@ vt_09F54490::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -24393,7 +24393,7 @@ vt_09F54940::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -24423,13 +24423,13 @@ vt_09F54940::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -24477,13 +24477,13 @@ vt_09F54940::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -24847,7 +24847,7 @@ vt_09F54DF0::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -24877,13 +24877,13 @@ vt_09F54DF0::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -24931,13 +24931,13 @@ vt_09F54DF0::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -25301,7 +25301,7 @@ vt_09F552A0::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -25331,13 +25331,13 @@ vt_09F552A0::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -25385,13 +25385,13 @@ vt_09F552A0::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -25755,7 +25755,7 @@ vt_09F55750::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -25785,13 +25785,13 @@ vt_09F55750::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -25839,13 +25839,13 @@ vt_09F55750::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -26209,7 +26209,7 @@ vt_09F55C00::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -26239,13 +26239,13 @@ vt_09F55C00::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -26293,13 +26293,13 @@ vt_09F55C00::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -26663,7 +26663,7 @@ vt_09F560B0::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -26693,13 +26693,13 @@ vt_09F560B0::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -26747,13 +26747,13 @@ vt_09F560B0::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -27117,7 +27117,7 @@ vt_09F56560::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -27147,13 +27147,13 @@ vt_09F56560::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -27201,13 +27201,13 @@ vt_09F56560::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -27586,7 +27586,7 @@ vt_09F56A38::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -27616,13 +27616,13 @@ vt_09F56A38::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -27670,13 +27670,13 @@ vt_09F56A38::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -28040,7 +28040,7 @@ vt_09F56EE8::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -28070,13 +28070,13 @@ vt_09F56EE8::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -28124,13 +28124,13 @@ vt_09F56EE8::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -28494,7 +28494,7 @@ vt_09F57398::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -28524,13 +28524,13 @@ vt_09F57398::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -28578,13 +28578,13 @@ vt_09F57398::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -28948,7 +28948,7 @@ vt_09F57848::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -28978,13 +28978,13 @@ vt_09F57848::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -29032,13 +29032,13 @@ vt_09F57848::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -29411,7 +29411,7 @@ vt_09F57D10::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -29441,13 +29441,13 @@ vt_09F57D10::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -29495,13 +29495,13 @@ vt_09F57D10::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -29865,7 +29865,7 @@ vt_09F581C0::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -29895,13 +29895,13 @@ vt_09F581C0::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -29949,13 +29949,13 @@ vt_09F581C0::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -30319,7 +30319,7 @@ vt_09F58670::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -30349,13 +30349,13 @@ vt_09F58670::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -30403,13 +30403,13 @@ vt_09F58670::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -30773,7 +30773,7 @@ vt_09F58B20::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -30803,13 +30803,13 @@ vt_09F58B20::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -30857,13 +30857,13 @@ vt_09F58B20::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -31230,7 +31230,7 @@ vt_09F58FD8::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -31260,13 +31260,13 @@ vt_09F58FD8::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -31314,13 +31314,13 @@ vt_09F58FD8::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -31684,7 +31684,7 @@ vt_09F59488::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -31714,13 +31714,13 @@ vt_09F59488::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -31768,13 +31768,13 @@ vt_09F59488::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -32150,7 +32150,7 @@ vt_09F59958::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -32180,13 +32180,13 @@ vt_09F59958::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -32234,13 +32234,13 @@ vt_09F59958::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -32613,7 +32613,7 @@ vt_09F59E20::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -32643,13 +32643,13 @@ vt_09F59E20::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -32697,13 +32697,13 @@ vt_09F59E20::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -33067,7 +33067,7 @@ vt_09F5A2D0::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -33097,13 +33097,13 @@ vt_09F5A2D0::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -33151,13 +33151,13 @@ vt_09F5A2D0::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -33521,7 +33521,7 @@ vt_09F5A780::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -33551,13 +33551,13 @@ vt_09F5A780::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -33605,13 +33605,13 @@ vt_09F5A780::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -33984,7 +33984,7 @@ vt_09F5AC48::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -34014,13 +34014,13 @@ vt_09F5AC48::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -34068,13 +34068,13 @@ vt_09F5AC48::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -34441,7 +34441,7 @@ vt_09F5B100::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -34471,13 +34471,13 @@ vt_09F5B100::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -34525,13 +34525,13 @@ vt_09F5B100::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -34895,7 +34895,7 @@ vt_09F5B5B0::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -34925,13 +34925,13 @@ vt_09F5B5B0::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -34979,13 +34979,13 @@ vt_09F5B5B0::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -35349,7 +35349,7 @@ vt_09F5BA60::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -35379,13 +35379,13 @@ vt_09F5BA60::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -35433,13 +35433,13 @@ vt_09F5BA60::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -35815,7 +35815,7 @@ vt_09F5BF30::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -35845,13 +35845,13 @@ vt_09F5BF30::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -35899,13 +35899,13 @@ vt_09F5BF30::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -36269,7 +36269,7 @@ vt_09F5C3E0::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -36299,13 +36299,13 @@ vt_09F5C3E0::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -36353,13 +36353,13 @@ vt_09F5C3E0::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -36723,7 +36723,7 @@ vt_09F5C890::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -36753,13 +36753,13 @@ vt_09F5C890::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -36807,13 +36807,13 @@ vt_09F5C890::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AC22C
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -37177,7 +37177,7 @@ vt_09F5CD40::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -37207,13 +37207,13 @@ vt_09F5CD40::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -37261,13 +37261,13 @@ vt_09F5CD40::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -37640,7 +37640,7 @@ vt_09F5D208::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -37670,13 +37670,13 @@ vt_09F5D208::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -37724,13 +37724,13 @@ vt_09F5D208::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -38094,7 +38094,7 @@ vt_09F5D6B8::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -38124,13 +38124,13 @@ vt_09F5D6B8::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -38178,13 +38178,13 @@ vt_09F5D6B8::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -38548,7 +38548,7 @@ vt_09F5DB68::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -38578,13 +38578,13 @@ vt_09F5DB68::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -38632,13 +38632,13 @@ vt_09F5DB68::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -39002,7 +39002,7 @@ vt_09F5E018::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -39032,13 +39032,13 @@ vt_09F5E018::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -39086,13 +39086,13 @@ vt_09F5E018::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -39456,7 +39456,7 @@ vt_09F5E4C8::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -39486,13 +39486,13 @@ vt_09F5E4C8::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -39540,13 +39540,13 @@ vt_09F5E4C8::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -39910,7 +39910,7 @@ vt_09F5E978::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -39940,13 +39940,13 @@ vt_09F5E978::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -39994,13 +39994,13 @@ vt_09F5E978::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -40373,7 +40373,7 @@ vt_09F5EE40::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -40403,13 +40403,13 @@ vt_09F5EE40::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -40457,13 +40457,13 @@ vt_09F5EE40::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -40827,7 +40827,7 @@ vt_09F5F2F0::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -40857,13 +40857,13 @@ vt_09F5F2F0::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -40911,13 +40911,13 @@ vt_09F5F2F0::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -41290,7 +41290,7 @@ vt_09F5F7B8::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -41320,13 +41320,13 @@ vt_09F5F7B8::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -41374,13 +41374,13 @@ vt_09F5F7B8::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -41744,7 +41744,7 @@ vt_09F5FC68::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -41774,13 +41774,13 @@ vt_09F5FC68::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -41828,13 +41828,13 @@ vt_09F5FC68::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -42198,7 +42198,7 @@ vt_09F60118::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -42228,13 +42228,13 @@ vt_09F60118::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -42282,13 +42282,13 @@ vt_09F60118::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -42652,7 +42652,7 @@ vt_09F605C8::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -42682,13 +42682,13 @@ vt_09F605C8::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -42736,13 +42736,13 @@ vt_09F605C8::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -43106,7 +43106,7 @@ vt_09F60A78::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -43136,13 +43136,13 @@ vt_09F60A78::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -43190,13 +43190,13 @@ vt_09F60A78::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -43560,7 +43560,7 @@ vt_09F60F28::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -43590,13 +43590,13 @@ vt_09F60F28::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -43644,13 +43644,13 @@ vt_09F60F28::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AD380
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -44026,7 +44026,7 @@ vt_09F613F8::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -44056,13 +44056,13 @@ vt_09F613F8::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -44110,13 +44110,13 @@ vt_09F613F8::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -44492,7 +44492,7 @@ vt_09F618C8::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -44522,13 +44522,13 @@ vt_09F618C8::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -44576,13 +44576,13 @@ vt_09F618C8::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -44955,7 +44955,7 @@ vt_09F61D90::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -44985,13 +44985,13 @@ vt_09F61D90::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -45039,13 +45039,13 @@ vt_09F61D90::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -45409,7 +45409,7 @@ vt_09F62240::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -45439,13 +45439,13 @@ vt_09F62240::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -45493,13 +45493,13 @@ vt_09F62240::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -45863,7 +45863,7 @@ vt_09F626F0::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -45893,13 +45893,13 @@ vt_09F626F0::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -45947,13 +45947,13 @@ vt_09F626F0::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -46317,7 +46317,7 @@ vt_09F62BA0::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -46347,13 +46347,13 @@ vt_09F62BA0::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -46401,13 +46401,13 @@ vt_09F62BA0::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -46771,7 +46771,7 @@ vt_09F63050::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -46801,13 +46801,13 @@ vt_09F63050::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -46855,13 +46855,13 @@ vt_09F63050::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -47225,7 +47225,7 @@ vt_09F63500::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -47255,13 +47255,13 @@ vt_09F63500::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -47309,13 +47309,13 @@ vt_09F63500::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -47679,7 +47679,7 @@ vt_09F639B0::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -47709,13 +47709,13 @@ vt_09F639B0::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -47763,13 +47763,13 @@ vt_09F639B0::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AE89C
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -48136,7 +48136,7 @@ vt_09F63E68::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -48166,13 +48166,13 @@ vt_09F63E68::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -48220,13 +48220,13 @@ vt_09F63E68::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -48590,7 +48590,7 @@ vt_09F64318::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -48620,13 +48620,13 @@ vt_09F64318::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -48674,13 +48674,13 @@ vt_09F64318::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -93881,7 +93881,7 @@ _vt.4Unit::
 	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -93911,13 +93911,13 @@ _vt.4Unit::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -93965,13 +93965,13 @@ _vt.4Unit::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -95134,13 +95134,13 @@ vt_09F820E8::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -95188,13 +95188,13 @@ vt_09F820E8::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -96585,7 +96585,7 @@ _vt.7Monster::
 	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -96615,13 +96615,13 @@ _vt.7Monster::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -96669,13 +96669,13 @@ _vt.7Monster::
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit

@@ -158,7 +158,7 @@ u8 Battle::battle_a8() {
             j = sub_0805E338(i);
             break;
         case 1:
-            j = sub_0805E390(i);
+            j = tryKillPlayer(i);
             if (j == NULL) {
                 j = i;
             }
@@ -186,12 +186,12 @@ Player* Battle::sub_0805E338(Unit* u) {
     return NULL;
 }
 
-Player* Battle::sub_0805E390(Unit* u) {
+Player* Battle::tryKillPlayer(Unit* u) {
     for (int i = getPartyCount() - 1; i >= 0; i--) {
         if (getPlayer(i) == u) {
             for (int j = i - 1; j >= 0; j--) {
                 if (getPlayer(j)->isAlive() == true && getPlayer(j)->player_310() == true) {
-                    getPlayer(j)->unit_108();
+                    getPlayer(j)->onDeath();
                     return getPlayer(j);
                 }
             }
