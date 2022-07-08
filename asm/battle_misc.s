@@ -253,7 +253,7 @@ sub_0805D8FC: @ 0x0805D8FC
 	str r0, [r7, #0x5c]
 	movs r0, #0xd4
 	bl __builtin_new
-	bl __15struct_0806A57C
+	bl __11BattleFader
 	adds r4, r0, #0
 	str r4, [r7, #0x28]
 	bl sub_08000D54
@@ -266,18 +266,18 @@ sub_0805D8FC: @ 0x0805D8FC
 	movs r1, #0xe6
 _0805D95A:
 	adds r0, r4, #0
-	bl set__15struct_0806A57CUi
+	bl set__11BattleFaderUi
 	ldr r0, [r7, #0x28]
 	movs r5, #0x80
 	lsls r5, r5, #1
 	adds r1, r5, #0
-	bl set2__15struct_0806A57CUi
+	bl set2__11BattleFaderUi
 	ldr r0, [r7, #0x28]
 	adds r1, r5, #0
-	bl set4__15struct_0806A57CUi
+	bl set4__11BattleFaderUi
 	movs r0, #0xd4
 	bl __builtin_new
-	bl __15struct_0806A57C
+	bl __11BattleFader
 	adds r4, r0, #0
 	str r4, [r7, #0x2c]
 	bl sub_08000D54
@@ -289,16 +289,16 @@ _0805D95A:
 	movs r1, #0xe6
 _0805D992:
 	adds r0, r4, #0
-	bl set__15struct_0806A57CUi
+	bl set__11BattleFaderUi
 	ldr r0, [r7, #0x2c]
 	adds r1, r5, #0
-	bl set2__15struct_0806A57CUi
+	bl set2__11BattleFaderUi
 	ldr r0, [r7, #0x2c]
 	adds r1, r5, #0
-	bl set4__15struct_0806A57CUi
+	bl set4__11BattleFaderUi
 	movs r0, #0xd4
 	bl __builtin_new
-	bl __15struct_0806A57C
+	bl __11BattleFader
 	adds r4, r0, #0
 	str r4, [r7, #0x30]
 	bl sub_08000D54
@@ -310,13 +310,13 @@ _0805D992:
 	movs r1, #0xe6
 _0805D9C6:
 	adds r0, r4, #0
-	bl set__15struct_0806A57CUi
+	bl set__11BattleFaderUi
 	ldr r0, [r7, #0x30]
 	adds r1, r5, #0
-	bl set2__15struct_0806A57CUi
+	bl set2__11BattleFaderUi
 	ldr r0, [r7, #0x30]
 	adds r1, r5, #0
-	bl set4__15struct_0806A57CUi
+	bl set4__11BattleFaderUi
 	bl sub_0806B070
 	adds r4, r0, #0
 	adds r0, r7, #0

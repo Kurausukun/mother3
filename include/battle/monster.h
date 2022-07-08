@@ -30,7 +30,7 @@ struct MonsterData {
     u16 attack_sfx;
     u8 encounter_msg;
     u8 death_msg;
-    u32 death_anim;
+    u8 death_anim;
     u32 battle_pos;
     u8 memory_height[2];
     u8 battle_height[2];
@@ -51,9 +51,17 @@ struct MonsterData {
     u16 smell_weaknesses[2];
 };
 
+struct struct_08063998 {
+    struct_08063998();
+    virtual ~struct_08063998();
+
+    u32 a;
+};
+
 class Monster : public Unit {
 public:
     Monster();
+    Monster(u16 a, u16 b);
     virtual ~Monster();
 
     virtual void* getRTTI();
@@ -83,6 +91,27 @@ public:
     virtual void monster_370();
     virtual void monster_378();
     virtual bool monster_380();
+
+    void sub_08080B60();
+    void sub_08080CE4();
+    void sub_08080D48();
+
+    u16 _f8;
+    u16 mID;
+    MonsterData* mData;
+    u32 _100;
+    u32 _104;
+    Msg _108;
+    u16 _114;
+    u32 _118;
+    u32 _11c;
+    u32 _120;
+    u32 _124;
+    u32 _128;
+    u32 _12c;
+    u16 _130;
+    struct_08063998 _134;
+    void* _13c;
 
     enum {
         None = 0x0,

@@ -14678,7 +14678,7 @@ _0809EF4A:
 	movs r1, #0x16
 _0809EF58:
 	movs r2, #1
-	bl sub_08073EE8
+	bl tellStatusWoreOff
 	b _0809F08A
 _0809EF60:
 	ldr r1, [r7, #0x1c]
@@ -15392,7 +15392,7 @@ _0809F534:
 	ldr r0, [sp, #0x80]
 	movs r1, #3
 	movs r2, #1
-	bl sub_08073EE8
+	bl tellStatusWoreOff
 _0809F584:
 	bl sub_08073270
 	mov r3, sl

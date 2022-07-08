@@ -119,7 +119,7 @@ void Irc::sub_08069BEC(u32 a1, Intr2 a2) {
 
 // // single instruction regswap
 // Irc::sub_08069C24(u32 idx, u32 unused, Intr2 x, u16 irq_set)
-extern "C" NONMATCH("asm/non_matching/struct_0806A57C/sub_08069C24.inc",
+extern "C" NONMATCH("asm/non_matching/BattleFader/sub_08069C24.inc",
                     void sub_08069C24__3IrcUiUiG5Intr2Us(Irc* thisx, u32 idx, u32 unused, Intr2& x,
                                                          u16 irq_set)) {
     Interrupt* i = &thisx->mIntrs[idx];
@@ -175,7 +175,7 @@ void Irc::sub_08069DF4(u32 a1, Intr2 a2) {
     enableAll();
 }
 
-extern "C" ASM_FUNC("asm/non_matching/struct_0806A57C/sub_08069E2C.inc", void sub_08069E2C())
+extern "C" ASM_FUNC("asm/non_matching/BattleFader/sub_08069E2C.inc", void sub_08069E2C())
 
     u32 Irc::sub_08069F1C() {
     return _24;

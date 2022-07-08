@@ -29,7 +29,7 @@ Msg createPlayerName(u16);
 extern "C" u8 sub_08072648(u32);
 
 extern Status::Type gUnknown_080FB078[];
-extern "C" void sub_08073EE8(Unit*, Status::Type, bool);
+extern "C" void tellStatusWoreOff(Unit*, Status::Type, bool);
 
 struct ComboRhythm {
     ComboRhythm(u16 a, u16 b) : a(a), b(b) {}
@@ -587,7 +587,7 @@ public:
         s32 count = target->getStatusTypeCount(Status::Strange);
         if (count > 0) {
             for (int i = 0; i < count; i++) {
-                sub_08073EE8(target, Status::Strange, i + 1 >= count);
+                tellStatusWoreOff(target, Status::Strange, i + 1 >= count);
             }
         } else {
             createMsg(0x154).print(Color(0, 0, 0), true);
@@ -612,7 +612,7 @@ public:
         for (int i = 0; i < 8; i++) {
             Status::Type t = gUnknown_080FB078[i];
             while (target->getStatusTypeCount(gUnknown_080FB078[i]) > 0) {
-                sub_08073EE8(target, gUnknown_080FB078[i], false);
+                tellStatusWoreOff(target, gUnknown_080FB078[i], false);
                 num++;
             }
         }
@@ -639,7 +639,7 @@ public:
         for (int i = 0; i < 8; i++) {
             Status::Type t = gUnknown_080FB078[i];
             while (target->getStatusTypeCount(gUnknown_080FB078[i]) > 0) {
-                sub_08073EE8(target, gUnknown_080FB078[i], false);
+                tellStatusWoreOff(target, gUnknown_080FB078[i], false);
                 num++;
             }
         }

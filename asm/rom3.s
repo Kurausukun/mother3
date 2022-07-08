@@ -3078,7 +3078,7 @@ sub_080A18D0: @ 0x080A18D0
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A1978 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A197C @ =vt_09F64318
@@ -3166,7 +3166,7 @@ sub_080A199C: @ 0x080A199C
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A1AA0 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A1AA4 @ =vt_09F64318
@@ -3292,7 +3292,7 @@ sub_080A1AC4: @ 0x080A1AC4
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A1B74 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A1B78 @ =vt_09F64318
@@ -3384,7 +3384,7 @@ sub_080A1B98: @ 0x080A1B98
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A1C70 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A1C74 @ =vt_09F64318
@@ -3494,7 +3494,7 @@ sub_080A1C94: @ 0x080A1C94
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A1D90 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A1D94 @ =vt_09F64318
@@ -3619,7 +3619,7 @@ sub_080A1DB4: @ 0x080A1DB4
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A1EB0 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A1EB4 @ =vt_09F64318
@@ -3742,7 +3742,7 @@ sub_080A1ED4: @ 0x080A1ED4
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A1F9C @ =vt_09F642A0
 	str r0, [r7, #0x20]
 	ldr r0, _080A1FA0 @ =vt_09F64318
@@ -3848,7 +3848,7 @@ sub_080A1FC0: @ 0x080A1FC0
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A2094 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A2098 @ =vt_09F64318
@@ -3953,7 +3953,7 @@ sub_080A20B8: @ 0x080A20B8
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A2168 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A216C @ =vt_09F64318
@@ -4046,7 +4046,7 @@ sub_080A218C: @ 0x080A218C
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A2248 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A224C @ =vt_09F64318
@@ -4143,7 +4143,7 @@ sub_080A226C: @ 0x080A226C
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A2328 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A232C @ =vt_09F64318
@@ -4240,7 +4240,7 @@ sub_080A234C: @ 0x080A234C
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A243C @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A2440 @ =vt_09F64318
@@ -4361,7 +4361,7 @@ sub_080A2460: @ 0x080A2460
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A2544 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A2548 @ =vt_09F64318
@@ -4476,7 +4476,7 @@ sub_080A2568: @ 0x080A2568
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A2624 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A2628 @ =vt_09F64318
@@ -4572,7 +4572,7 @@ sub_080A2648: @ 0x080A2648
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A26F0 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A26F4 @ =vt_09F64318
@@ -4660,7 +4660,7 @@ sub_080A2714: @ 0x080A2714
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A2824 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A2828 @ =vt_09F64318
@@ -4792,7 +4792,7 @@ sub_080A2848: @ 0x080A2848
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A28F0 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A28F4 @ =vt_09F64318
@@ -4879,7 +4879,7 @@ sub_080A2914: @ 0x080A2914
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A29BC @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A29C0 @ =vt_09F64318
@@ -4966,7 +4966,7 @@ sub_080A29E0: @ 0x080A29E0
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A2A88 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A2A8C @ =vt_09F64318
@@ -5053,7 +5053,7 @@ sub_080A2AAC: @ 0x080A2AAC
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A2B54 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A2B58 @ =vt_09F64318
@@ -5140,7 +5140,7 @@ sub_080A2B78: @ 0x080A2B78
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A2C20 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A2C24 @ =vt_09F64318
@@ -5227,7 +5227,7 @@ sub_080A2C44: @ 0x080A2C44
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A2CEC @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A2CF0 @ =vt_09F64318
@@ -5314,7 +5314,7 @@ sub_080A2D10: @ 0x080A2D10
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A2DB8 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A2DBC @ =vt_09F64318
@@ -5401,7 +5401,7 @@ sub_080A2DDC: @ 0x080A2DDC
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A2E84 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A2E88 @ =vt_09F64318
@@ -5488,7 +5488,7 @@ sub_080A2EA8: @ 0x080A2EA8
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A2F50 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A2F54 @ =vt_09F64318
@@ -5575,7 +5575,7 @@ sub_080A2F74: @ 0x080A2F74
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A301C @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A3020 @ =vt_09F64318
@@ -5662,7 +5662,7 @@ sub_080A3040: @ 0x080A3040
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A30E8 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A30EC @ =vt_09F64318
@@ -5750,7 +5750,7 @@ sub_080A310C: @ 0x080A310C
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A31F0 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A31F4 @ =vt_09F64318
@@ -5864,7 +5864,7 @@ sub_080A3214: @ 0x080A3214
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A32BC @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A32C0 @ =vt_09F64318
@@ -5951,7 +5951,7 @@ sub_080A32E0: @ 0x080A32E0
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A3388 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A338C @ =vt_09F64318
@@ -6038,7 +6038,7 @@ sub_080A33AC: @ 0x080A33AC
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A3454 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A3458 @ =vt_09F64318
@@ -6126,7 +6126,7 @@ sub_080A3478: @ 0x080A3478
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A3530 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A3534 @ =vt_09F64318
@@ -6220,7 +6220,7 @@ sub_080A3554: @ 0x080A3554
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A35FC @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A3600 @ =vt_09F64318
@@ -6307,7 +6307,7 @@ sub_080A3620: @ 0x080A3620
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A36C8 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A36CC @ =vt_09F64318
@@ -6394,7 +6394,7 @@ sub_080A36EC: @ 0x080A36EC
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A3794 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A3798 @ =vt_09F64318
@@ -6481,7 +6481,7 @@ sub_080A37B8: @ 0x080A37B8
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A3860 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A3864 @ =vt_09F64318
@@ -6568,7 +6568,7 @@ sub_080A3884: @ 0x080A3884
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A392C @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A3930 @ =vt_09F64318
@@ -6656,7 +6656,7 @@ sub_080A3950: @ 0x080A3950
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A3A14 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A3A18 @ =vt_09F64318
@@ -6756,7 +6756,7 @@ sub_080A3A38: @ 0x080A3A38
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A3AF4 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A3AF8 @ =vt_09F64318
@@ -6852,7 +6852,7 @@ sub_080A3B18: @ 0x080A3B18
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A3BC0 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A3BC4 @ =vt_09F64318
@@ -6939,7 +6939,7 @@ sub_080A3BE4: @ 0x080A3BE4
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A3C8C @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A3C90 @ =vt_09F64318
@@ -7027,7 +7027,7 @@ sub_080A3CB0: @ 0x080A3CB0
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A3D6C @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A3D70 @ =vt_09F64318
@@ -7123,7 +7123,7 @@ sub_080A3D90: @ 0x080A3D90
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A3E68 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A3E6C @ =vt_09F64318
@@ -7232,7 +7232,7 @@ sub_080A3E8C: @ 0x080A3E8C
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A3F3C @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A3F40 @ =vt_09F64318
@@ -7324,7 +7324,7 @@ sub_080A3F60: @ 0x080A3F60
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A4008 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A400C @ =vt_09F64318
@@ -7412,7 +7412,7 @@ sub_080A402C: @ 0x080A402C
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A40E8 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A40EC @ =vt_09F64318
@@ -7508,7 +7508,7 @@ sub_080A410C: @ 0x080A410C
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A41D4 @ =vt_09F642A0
 	str r0, [r7, #0x20]
 	ldr r0, _080A41D8 @ =vt_09F64318
@@ -7612,7 +7612,7 @@ sub_080A41F8: @ 0x080A41F8
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A42A0 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A42A4 @ =vt_09F64318
@@ -7699,7 +7699,7 @@ sub_080A42C4: @ 0x080A42C4
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A436C @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A4370 @ =vt_09F64318
@@ -7787,7 +7787,7 @@ sub_080A4390: @ 0x080A4390
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A444C @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A4450 @ =vt_09F64318
@@ -7884,7 +7884,7 @@ sub_080A4470: @ 0x080A4470
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A4528 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A452C @ =vt_09F64318
@@ -7978,7 +7978,7 @@ sub_080A454C: @ 0x080A454C
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A45F4 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A45F8 @ =vt_09F64318
@@ -8065,7 +8065,7 @@ sub_080A4618: @ 0x080A4618
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A46C0 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A46C4 @ =vt_09F64318
@@ -8152,7 +8152,7 @@ sub_080A46E4: @ 0x080A46E4
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A478C @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A4790 @ =vt_09F64318
@@ -8239,7 +8239,7 @@ sub_080A47B0: @ 0x080A47B0
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A4858 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A485C @ =vt_09F64318
@@ -8327,7 +8327,7 @@ sub_080A487C: @ 0x080A487C
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A4938 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A493C @ =vt_09F64318
@@ -8423,7 +8423,7 @@ sub_080A495C: @ 0x080A495C
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A4A04 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A4A08 @ =vt_09F64318
@@ -8511,7 +8511,7 @@ sub_080A4A28: @ 0x080A4A28
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A4AE4 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A4AE8 @ =vt_09F64318
@@ -8608,7 +8608,7 @@ sub_080A4B08: @ 0x080A4B08
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A4BC0 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A4BC4 @ =vt_09F64318
@@ -8703,7 +8703,7 @@ sub_080A4BE4: @ 0x080A4BE4
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A4CA0 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A4CA4 @ =vt_09F64318
@@ -8799,7 +8799,7 @@ sub_080A4CC4: @ 0x080A4CC4
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A4D6C @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A4D70 @ =vt_09F64318
@@ -8887,7 +8887,7 @@ sub_080A4D90: @ 0x080A4D90
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A4E4C @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A4E50 @ =vt_09F64318
@@ -8983,7 +8983,7 @@ sub_080A4E70: @ 0x080A4E70
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A4F18 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A4F1C @ =vt_09F64318
@@ -9071,7 +9071,7 @@ sub_080A4F3C: @ 0x080A4F3C
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A4FF8 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A4FFC @ =vt_09F64318
@@ -9168,7 +9168,7 @@ sub_080A501C: @ 0x080A501C
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A50D8 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A50DC @ =vt_09F64318
@@ -9265,7 +9265,7 @@ sub_080A50FC: @ 0x080A50FC
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A51B8 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A51BC @ =vt_09F64318
@@ -9363,7 +9363,7 @@ sub_080A51DC: @ 0x080A51DC
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A5298 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A529C @ =vt_09F64318
@@ -9461,7 +9461,7 @@ sub_080A52BC: @ 0x080A52BC
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A5378 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A537C @ =vt_09F64318
@@ -9557,7 +9557,7 @@ sub_080A539C: @ 0x080A539C
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A5444 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A5448 @ =vt_09F64318
@@ -9644,7 +9644,7 @@ sub_080A5468: @ 0x080A5468
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A5510 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A5514 @ =vt_09F64318
@@ -9731,7 +9731,7 @@ sub_080A5534: @ 0x080A5534
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A55DC @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A55E0 @ =vt_09F64318
@@ -9819,7 +9819,7 @@ sub_080A5600: @ 0x080A5600
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A56BC @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A56C0 @ =vt_09F64318
@@ -9917,7 +9917,7 @@ sub_080A56E0: @ 0x080A56E0
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A57B4 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A57B8 @ =vt_09F64318
@@ -10026,7 +10026,7 @@ sub_080A57DC: @ 0x080A57DC
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A5884 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A5888 @ =vt_09F64318
@@ -10113,7 +10113,7 @@ sub_080A58A8: @ 0x080A58A8
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_08080A24
+	bl __7MonsterUsUs
 	ldr r0, _080A5948 @ =vt_09F642A0
 	str r0, [r5, #0x20]
 	ldr r0, _080A594C @ =vt_09F64318
@@ -38146,7 +38146,7 @@ _080B3178:
 _080B3196:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08073EE8
+	bl tellStatusWoreOff
 	movs r0, #1
 	add r8, r0
 _080B31A2:
@@ -45515,7 +45515,7 @@ _080B6C5C: .4byte vt_09F772F8
 sub_080B6C60: @ 0x080B6C60
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -45577,7 +45577,7 @@ _080B6CD4: .4byte vt_09F772F8
 sub_080B6CD8: @ 0x080B6CD8
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -45639,7 +45639,7 @@ _080B6D4C: .4byte vt_09F772F8
 sub_080B6D50: @ 0x080B6D50
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -45796,7 +45796,7 @@ sub_080B6E54: @ 0x080B6E54
 sub_080B6E90: @ 0x080B6E90
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -45955,7 +45955,7 @@ sub_080B6F98: @ 0x080B6F98
 sub_080B6FD4: @ 0x080B6FD4
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -46114,7 +46114,7 @@ sub_080B70DC: @ 0x080B70DC
 sub_080B7118: @ 0x080B7118
 	push {r4, r5, lr}
 	adds r4, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -46606,7 +46606,7 @@ sub_080B74CC: @ 0x080B74CC
 sub_080B7508: @ 0x080B7508
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -46935,7 +46935,7 @@ sub_080B7774: @ 0x080B7774
 sub_080B77A8: @ 0x080B77A8
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -47090,7 +47090,7 @@ sub_080B78B0: @ 0x080B78B0
 sub_080B78E4: @ 0x080B78E4
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -47247,7 +47247,7 @@ sub_080B79EC: @ 0x080B79EC
 sub_080B7A24: @ 0x080B7A24
 	push {r4, r5, lr}
 	adds r4, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -47736,7 +47736,7 @@ sub_080B7DD4: @ 0x080B7DD4
 sub_080B7E0C: @ 0x080B7E0C
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -48092,7 +48092,7 @@ sub_080B809C: @ 0x080B809C
 sub_080B80D8: @ 0x080B80D8
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -48684,7 +48684,7 @@ sub_080B853C: @ 0x080B853C
 sub_080B8570: @ 0x080B8570
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -49263,7 +49263,7 @@ sub_080B89C0: @ 0x080B89C0
 sub_080B89F8: @ 0x080B89F8
 	push {r4, r5, lr}
 	adds r4, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -49459,7 +49459,7 @@ sub_080B8B60: @ 0x080B8B60
 	adds r4, r0, #0
 	movs r1, #0x29
 	movs r2, #0
-	bl sub_08073EE8
+	bl tellStatusWoreOff
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -49467,7 +49467,7 @@ sub_080B8B60: @ 0x080B8B60
 	adds r0, r4, #0
 	movs r1, #0x1d
 	movs r2, #0
-	bl sub_08073EE8
+	bl tellStatusWoreOff
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -49475,7 +49475,7 @@ sub_080B8B60: @ 0x080B8B60
 	adds r0, r4, #0
 	movs r1, #0x32
 	movs r2, #0
-	bl sub_08073EE8
+	bl tellStatusWoreOff
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -49601,7 +49601,7 @@ sub_080B8C68: @ 0x080B8C68
 sub_080B8CA0: @ 0x080B8CA0
 	push {r4, r5, lr}
 	adds r4, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -49927,7 +49927,7 @@ sub_080B8F00: @ 0x080B8F00
 sub_080B8F38: @ 0x080B8F38
 	push {r4, r5, lr}
 	adds r4, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -50260,7 +50260,7 @@ sub_080B91A8: @ 0x080B91A8
 sub_080B91E0: @ 0x080B91E0
 	push {r4, r5, lr}
 	adds r4, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -50456,7 +50456,7 @@ sub_080B9348: @ 0x080B9348
 	adds r4, r0, #0
 	movs r1, #0x28
 	movs r2, #0
-	bl sub_08073EE8
+	bl tellStatusWoreOff
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -50464,7 +50464,7 @@ sub_080B9348: @ 0x080B9348
 	adds r0, r4, #0
 	movs r1, #0x1b
 	movs r2, #0
-	bl sub_08073EE8
+	bl tellStatusWoreOff
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -50472,7 +50472,7 @@ sub_080B9348: @ 0x080B9348
 	adds r0, r4, #0
 	movs r1, #0x31
 	movs r2, #0
-	bl sub_08073EE8
+	bl tellStatusWoreOff
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -50597,7 +50597,7 @@ sub_080B9450: @ 0x080B9450
 sub_080B9488: @ 0x080B9488
 	push {r4, r5, lr}
 	adds r4, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -50923,7 +50923,7 @@ sub_080B96E8: @ 0x080B96E8
 sub_080B9720: @ 0x080B9720
 	push {r4, r5, lr}
 	adds r4, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -51258,7 +51258,7 @@ sub_080B9990: @ 0x080B9990
 sub_080B99CC: @ 0x080B99CC
 	push {r4, r5, lr}
 	adds r4, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -51454,7 +51454,7 @@ sub_080B9B34: @ 0x080B9B34
 	adds r4, r0, #0
 	movs r1, #0x2d
 	movs r2, #0
-	bl sub_08073EE8
+	bl tellStatusWoreOff
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -51462,7 +51462,7 @@ sub_080B9B34: @ 0x080B9B34
 	adds r0, r4, #0
 	movs r1, #0x14
 	movs r2, #0
-	bl sub_08073EE8
+	bl tellStatusWoreOff
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -51470,7 +51470,7 @@ sub_080B9B34: @ 0x080B9B34
 	adds r0, r4, #0
 	movs r1, #0x22
 	movs r2, #0
-	bl sub_08073EE8
+	bl tellStatusWoreOff
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -51597,7 +51597,7 @@ sub_080B9C3C: @ 0x080B9C3C
 sub_080B9C78: @ 0x080B9C78
 	push {r4, r5, lr}
 	adds r4, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -51925,7 +51925,7 @@ sub_080B9ED8: @ 0x080B9ED8
 sub_080B9F14: @ 0x080B9F14
 	push {r4, r5, lr}
 	adds r4, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -52260,7 +52260,7 @@ sub_080BA184: @ 0x080BA184
 sub_080BA1C0: @ 0x080BA1C0
 	push {r4, r5, lr}
 	adds r4, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -52456,7 +52456,7 @@ sub_080BA328: @ 0x080BA328
 	adds r4, r0, #0
 	movs r1, #0x28
 	movs r2, #0
-	bl sub_08073EE8
+	bl tellStatusWoreOff
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -52464,7 +52464,7 @@ sub_080BA328: @ 0x080BA328
 	adds r0, r4, #0
 	movs r1, #0x12
 	movs r2, #0
-	bl sub_08073EE8
+	bl tellStatusWoreOff
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -52472,7 +52472,7 @@ sub_080BA328: @ 0x080BA328
 	adds r0, r4, #0
 	movs r1, #0x21
 	movs r2, #0
-	bl sub_08073EE8
+	bl tellStatusWoreOff
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -52599,7 +52599,7 @@ sub_080BA430: @ 0x080BA430
 sub_080BA46C: @ 0x080BA46C
 	push {r4, r5, lr}
 	adds r4, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -52934,7 +52934,7 @@ sub_080BA6DC: @ 0x080BA6DC
 sub_080BA718: @ 0x080BA718
 	push {r4, r5, lr}
 	adds r4, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -53282,7 +53282,7 @@ _080BA9D6:
 sub_080BA9DC: @ 0x080BA9DC
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -53344,7 +53344,7 @@ _080BAA50: .4byte vt_09F772F8
 sub_080BAA54: @ 0x080BAA54
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -53406,7 +53406,7 @@ _080BAAC8: .4byte vt_09F772F8
 sub_080BAACC: @ 0x080BAACC
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -53481,7 +53481,7 @@ sub_080BAB44: @ 0x080BAB44
 	adds r6, r0, #0
 	adds r1, r4, #0
 	movs r2, #0
-	bl sub_08073EE8
+	bl tellStatusWoreOff
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -53552,7 +53552,7 @@ sub_080BABD0: @ 0x080BABD0
 	adds r5, r0, #0
 	adds r1, r4, #0
 	movs r2, #0
-	bl sub_08073EE8
+	bl tellStatusWoreOff
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -54217,7 +54217,7 @@ _080BB110: .4byte vt_09F772F8
 sub_080BB114: @ 0x080BB114
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -54279,7 +54279,7 @@ _080BB188: .4byte vt_09F772F8
 sub_080BB18C: @ 0x080BB18C
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -54341,7 +54341,7 @@ _080BB200: .4byte vt_09F772F8
 sub_080BB204: @ 0x080BB204
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -54403,7 +54403,7 @@ _080BB278: .4byte vt_09F772F8
 sub_080BB27C: @ 0x080BB27C
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -54465,7 +54465,7 @@ _080BB2F0: .4byte vt_09F772F8
 sub_080BB2F4: @ 0x080BB2F4
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -54527,7 +54527,7 @@ _080BB368: .4byte vt_09F772F8
 sub_080BB36C: @ 0x080BB36C
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -54589,7 +54589,7 @@ _080BB3E0: .4byte vt_09F772F8
 sub_080BB3E4: @ 0x080BB3E4
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -54651,7 +54651,7 @@ _080BB458: .4byte vt_09F772F8
 sub_080BB45C: @ 0x080BB45C
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -54713,7 +54713,7 @@ _080BB4D0: .4byte vt_09F772F8
 sub_080BB4D4: @ 0x080BB4D4
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -54775,7 +54775,7 @@ _080BB548: .4byte vt_09F772F8
 sub_080BB54C: @ 0x080BB54C
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -54913,7 +54913,7 @@ _080BB65A:
 sub_080BB660: @ 0x080BB660
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -54975,7 +54975,7 @@ _080BB6D4: .4byte vt_09F772F8
 sub_080BB6D8: @ 0x080BB6D8
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -55113,7 +55113,7 @@ _080BB7E2:
 sub_080BB7EC: @ 0x080BB7EC
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -55175,7 +55175,7 @@ _080BB860: .4byte vt_09F772F8
 sub_080BB864: @ 0x080BB864
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -55305,7 +55305,7 @@ sub_080BB8DC: @ 0x080BB8DC
 	lsrs r1, r1, #0x10
 	adds r0, r5, #0
 	movs r2, #0
-	bl sub_08073EE8
+	bl tellStatusWoreOff
 _080BB980:
 	add sp, #0x10
 	pop {r4, r5}
@@ -55316,7 +55316,7 @@ _080BB980:
 sub_080BB988: @ 0x080BB988
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -55378,7 +55378,7 @@ _080BB9FC: .4byte vt_09F772F8
 sub_080BBA00: @ 0x080BBA00
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -55539,7 +55539,7 @@ _080BBB34: .4byte vt_09F772F8
 sub_080BBB38: @ 0x080BBB38
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -55700,7 +55700,7 @@ _080BBC6C: .4byte vt_09F772F8
 sub_080BBC70: @ 0x080BBC70
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -55762,7 +55762,7 @@ _080BBCE4: .4byte vt_09F772F8
 sub_080BBCE8: @ 0x080BBCE8
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -55923,7 +55923,7 @@ _080BBE1C: .4byte vt_09F772F8
 sub_080BBE20: @ 0x080BBE20
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -56155,7 +56155,7 @@ _080BBFE4:
 sub_080BBFEC: @ 0x080BBFEC
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -56288,7 +56288,7 @@ _080BC0F0:
 sub_080BC0F8: @ 0x080BC0F8
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
-	bl sub_0808266C
+	bl disableAllStatuses
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -56879,7 +56879,7 @@ _080BC53C:
 	adds r0, r6, #0
 	adds r1, r4, #0
 	movs r2, #0
-	bl sub_08073EE8
+	bl tellStatusWoreOff
 	movs r3, #1
 	add r8, r3
 _080BC54A:
@@ -56980,7 +56980,7 @@ _080BC600:
 	adds r0, r5, #0
 	adds r1, r4, #0
 	movs r2, #0
-	bl sub_08073EE8
+	bl tellStatusWoreOff
 	movs r3, #1
 	add r8, r3
 _080BC60E:
@@ -57087,7 +57087,7 @@ _080BC6B4:
 _080BC6D2:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08073EE8
+	bl tellStatusWoreOff
 	movs r0, #1
 	add r8, r0
 _080BC6DE:

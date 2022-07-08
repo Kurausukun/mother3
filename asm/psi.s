@@ -231,8 +231,8 @@ sub_08082668: @ 0x08082668
 	movs r0, #0
 	bx lr
 
-	thumb_func_start sub_0808266C
-sub_0808266C: @ 0x0808266C
+	thumb_func_start disableAllStatuses
+disableAllStatuses: @ 0x0808266C
 	movs r0, #0
 	bx lr
 
@@ -715,7 +715,7 @@ sub_08082980: @ 0x08082980
 	lsrs r1, r1, #0x10
 	adds r0, r4, #0
 	movs r2, #1
-	bl sub_08073EE8
+	bl tellStatusWoreOff
 	movs r0, #0
 	b _080829EC
 _080829EA:
@@ -800,7 +800,7 @@ sub_08082A10: @ 0x08082A10
 	lsrs r1, r1, #0x10
 	adds r0, r4, #0
 	movs r2, #1
-	bl sub_08073EE8
+	bl tellStatusWoreOff
 	movs r0, #0
 	b _08082A9A
 _08082A92:

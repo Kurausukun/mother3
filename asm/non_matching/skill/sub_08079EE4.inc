@@ -62,7 +62,7 @@ _08079F56:
 	adds r0, r5, #0
 	adds r1, r7, #0
 	adds r2, r6, #0
-	bl sub_08073EE8
+	bl tellStatusWoreOff
 	b _08079FC0
 _08079F6E:
 	ldr r1, [r4, #0x1c]

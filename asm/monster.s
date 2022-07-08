@@ -3,207 +3,8 @@
 .syntax unified
 .section .text
 
-	thumb_func_start sub_080809B8
-sub_080809B8: @ 0x080809B8
-	push {r4, lr}
-	adds r4, r0, #0
-	bl __4Base
-	adds r1, r4, #0
-	adds r1, #0x28
-	movs r0, #0
-	str r0, [r4, #0x28]
-	str r0, [r1, #4]
-	str r0, [r1, #8]
-	adds r1, #0xc
-	str r0, [r4, #0x34]
-	str r0, [r1, #4]
-	str r0, [r1, #8]
-	ldr r0, _080809E0 @ =_vt.10GuestSkill
-	str r0, [r4, #0x1c]
-	adds r0, r4, #0
-	pop {r4}
-	pop {r1}
-	bx r1
-	.align 2, 0
-_080809E0: .4byte _vt.10GuestSkill
-
-	thumb_func_start get__11MonsterRTTI
-get__11MonsterRTTI: @ 0x080809E4
-	ldr r0, _080809E8 @ =gUnknown_02002520
-	bx lr
-	.align 2, 0
-_080809E8: .4byte gUnknown_02002520
-
-	thumb_func_start sub_080809EC
-sub_080809EC: @ 0x080809EC
-	push {lr}
-	bl get__11MonsterRTTI
-	pop {r1}
-	bx r1
-	.align 2, 0
-
-	thumb_func_start sub_080809F8
-sub_080809F8: @ 0x080809F8
-	push {r4, r5, lr}
-	adds r5, r0, #0
-	lsls r1, r1, #0x10
-	lsrs r1, r1, #0x10
-	movs r0, #7
-	bl get_misctext_msg
-	adds r4, r0, #0
-	movs r0, #7
-	bl get_misctext_len
-	adds r2, r0, #0
-	lsls r2, r2, #0x10
-	lsrs r2, r2, #0x10
-	adds r0, r5, #0
-	adds r1, r4, #0
-	bl genMisctextMsg__3MsgPvUi
-	adds r0, r5, #0
-	pop {r4, r5}
-	pop {r1}
-	bx r1
-
-	thumb_func_start sub_08080A24
-sub_08080A24: @ 0x08080A24
-	push {r4, r5, r6, r7, lr}
-	mov r7, r8
-	push {r7}
-	sub sp, #0x28
-	adds r7, r0, #0
-	adds r5, r1, #0
-	adds r4, r2, #0
-	lsls r5, r5, #0x10
-	lsrs r5, r5, #0x10
-	lsls r4, r4, #0x10
-	lsrs r4, r4, #0x10
-	bl __4Unit
-	ldr r0, _08080B40 @ =vt_09F82F98
-	str r0, [r7, #0x20]
-	ldr r0, _08080B44 @ =vt_09F83010
-	str r0, [r7, #0x1c]
-	movs r1, #0x84
-	lsls r1, r1, #1
-	adds r0, r7, r1
-	bl __3Msg
-	movs r3, #0x8e
-	lsls r3, r3, #1
-	adds r0, r7, r3
-	movs r6, #0
-	str r6, [r0]
-	movs r1, #0x9a
-	lsls r1, r1, #1
-	adds r0, r7, r1
-	bl sub_08063998
-	adds r0, r7, #0
-	adds r0, #0xf8
-	strh r5, [r0]
-	adds r0, #2
-	strh r4, [r0]
-	adds r2, r7, #0
-	adds r2, #0xfc
-	lsls r0, r4, #3
-	adds r0, r0, r4
-	lsls r0, r0, #4
-	ldr r1, _08080B48 @ =gMonsterData
-	adds r0, r0, r1
-	str r0, [r2]
-	adds r0, #0x68
-	ldrb r1, [r0]
-	movs r3, #0x8a
-	lsls r3, r3, #1
-	adds r0, r7, r3
-	strh r1, [r0]
-	movs r1, #0x80
-	lsls r1, r1, #1
-	adds r0, r7, r1
-	str r6, [r0]
-	subs r3, #0x10
-	adds r1, r7, r3
-	ldr r0, [r2]
-	ldr r0, [r0, #0x14]
-	str r0, [r1]
-	movs r1, #0x98
-	lsls r1, r1, #1
-	adds r0, r7, r1
-	strh r6, [r0]
-	adds r0, r7, #0
-	bl sub_08080B60
-	adds r0, r7, #0
-	bl sub_08080CE4
-	adds r0, r7, #0
-	bl sub_08080D48
-	movs r3, #0x9e
-	lsls r3, r3, #1
-	adds r4, r7, r3
-	movs r0, #0xc8
-	bl __builtin_new
-	adds r1, r7, #0
-	bl sub_08081C48
-	str r0, [r4]
-	bl get__13BattleManager
-	adds r5, r0, #0
-	add r4, sp, #4
-	adds r0, r4, #0
-	bl __4Base
-	ldr r0, _08080B4C @ =_vt.3Unk
-	mov r8, r0
-	ldr r0, _08080B50 @ =_vt.10RoundBegin
-	str r0, [sp, #0x20]
-	strh r6, [r4, #0x20]
-	ldr r0, _08080B54 @ =gUnknown_0810B278
-	ldr r3, [r0]
-	ldr r4, [r0, #4]
-	str r4, [sp]
-	adds r0, r7, #0
-	adds r1, r5, #0
-	add r2, sp, #4
-	bl listen__4BasePvRC4BaseG9ClockData
-	mov r1, r8
-	str r1, [sp, #0x20]
-	add r0, sp, #4
-	movs r1, #2
-	bl _._4Base
-	bl get__13BattleManager
-	adds r5, r0, #0
-	add r4, sp, #4
-	adds r0, r4, #0
-	bl __4Base
-	ldr r0, _08080B58 @ =_vt.8RoundEnd
-	str r0, [sp, #0x20]
-	strh r6, [r4, #0x20]
-	ldr r0, _08080B5C @ =gUnknown_0810B280
-	ldr r3, [r0]
-	ldr r4, [r0, #4]
-	str r4, [sp]
-	adds r0, r7, #0
-	adds r1, r5, #0
-	add r2, sp, #4
-	bl listen__4BasePvRC4BaseG9ClockData
-	mov r3, r8
-	str r3, [sp, #0x20]
-	add r0, sp, #4
-	movs r1, #2
-	bl _._4Base
-	adds r0, r7, #0
-	add sp, #0x28
-	pop {r3}
-	mov r8, r3
-	pop {r4, r5, r6, r7}
-	pop {r1}
-	bx r1
-	.align 2, 0
-_08080B40: .4byte vt_09F82F98
-_08080B44: .4byte vt_09F83010
-_08080B48: .4byte gMonsterData
-_08080B4C: .4byte _vt.3Unk
-_08080B50: .4byte _vt.10RoundBegin
-_08080B54: .4byte gUnknown_0810B278
-_08080B58: .4byte _vt.8RoundEnd
-_08080B5C: .4byte gUnknown_0810B280
-
-	thumb_func_start sub_08080B60
-sub_08080B60: @ 0x08080B60
+	thumb_func_start sub_08080B60__7Monster
+sub_08080B60__7Monster: @ 0x08080B60
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	ldr r2, [r6, #0x1c]
@@ -389,8 +190,8 @@ _08080CB2:
 	bx r0
 	.align 2, 0
 
-	thumb_func_start sub_08080CE4
-sub_08080CE4: @ 0x08080CE4
+	thumb_func_start sub_08080CE4__7Monster
+sub_08080CE4__7Monster: @ 0x08080CE4
 	push {r4, r5, r6, r7, lr}
 	adds r4, r0, #0
 	movs r0, #0x8c
@@ -443,8 +244,8 @@ _08080D2C:
 	bx r0
 	.align 2, 0
 
-	thumb_func_start sub_08080D48
-sub_08080D48: @ 0x08080D48
+	thumb_func_start sub_08080D48__7Monster
+sub_08080D48__7Monster: @ 0x08080D48
 	push {r4, r5, r6, lr}
 	mov r6, sb
 	mov r5, r8
@@ -510,9 +311,9 @@ sub_08080DD0: @ 0x08080DD0
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
-	ldr r0, _08080E20 @ =vt_09F82F98
+	ldr r0, _08080E20 @ =_vt.7Monster.10UnitObject
 	str r0, [r4, #0x20]
-	ldr r0, _08080E24 @ =vt_09F83010
+	ldr r0, _08080E24 @ =_vt.7Monster
 	str r0, [r4, #0x1c]
 	movs r1, #0x9e
 	lsls r1, r1, #1
@@ -545,8 +346,8 @@ _08080DFA:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08080E20: .4byte vt_09F82F98
-_08080E24: .4byte vt_09F83010
+_08080E20: .4byte _vt.7Monster.10UnitObject
+_08080E24: .4byte _vt.7Monster
 
 	thumb_func_start sub_08080E28
 sub_08080E28: @ 0x08080E28
@@ -2065,7 +1866,7 @@ _08081936:
 	movs r0, #0xc8
 	bl __builtin_new
 	adds r1, r6, #0
-	bl sub_08081C48
+	bl __12BattleSpritePv
 	str r0, [r4]
 	ldr r1, [r0, #0x1c]
 	adds r1, #0x88

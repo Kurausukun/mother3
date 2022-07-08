@@ -11,6 +11,7 @@ extern const GuestSkillInfo gGuestSkillData[];
 
 class GuestSkill : public Action{
 public:
+    GuestSkill() {}
     GuestSkill(u16 id, Unit* user);
     virtual ~GuestSkill();
 

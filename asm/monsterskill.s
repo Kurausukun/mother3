@@ -358,9 +358,9 @@ sub_08081C08: @ 0x08081C08
 	push {r4, lr}
 	adds r4, r0, #0
 	bl __4Unit
-	ldr r0, _08081C40 @ =vt_09F82F98
+	ldr r0, _08081C40 @ =_vt.7Monster.10UnitObject
 	str r0, [r4, #0x20]
-	ldr r0, _08081C44 @ =vt_09F83010
+	ldr r0, _08081C44 @ =_vt.7Monster
 	str r0, [r4, #0x1c]
 	movs r1, #0x84
 	lsls r1, r1, #1
@@ -374,17 +374,17 @@ sub_08081C08: @ 0x08081C08
 	movs r1, #0x9a
 	lsls r1, r1, #1
 	adds r0, r4, r1
-	bl sub_08063998
+	bl __15struct_08063998
 	adds r0, r4, #0
 	pop {r4}
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08081C40: .4byte vt_09F82F98
-_08081C44: .4byte vt_09F83010
+_08081C40: .4byte _vt.7Monster.10UnitObject
+_08081C44: .4byte _vt.7Monster
 
-	thumb_func_start sub_08081C48
-sub_08081C48: @ 0x08081C48
+	thumb_func_start __12BattleSpritePv
+__12BattleSpritePv: @ 0x08081C48
 	push {r4, r5, r6, lr}
 	mov r6, sb
 	mov r5, r8

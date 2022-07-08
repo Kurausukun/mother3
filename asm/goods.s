@@ -2966,7 +2966,7 @@ sub_08063960: @ 0x08063960
 _08063984: .4byte gUnknown_080F87B4
 _08063988:
 	adds r0, r4, #0
-	bl sub_08063998
+	bl __15struct_08063998
 _0806398E:
 	adds r0, r4, #0
 	pop {r4}
@@ -2974,8 +2974,8 @@ _0806398E:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_08063998
-sub_08063998: @ 0x08063998
+	thumb_func_start __15struct_08063998
+__15struct_08063998: @ 0x08063998
 	ldr r1, _080639A4 @ =vt_09F4E460
 	str r1, [r0, #4]
 	movs r1, #5

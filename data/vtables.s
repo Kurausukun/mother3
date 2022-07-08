@@ -75068,7 +75068,7 @@ vt_09F754F8::
 	.4byte sub_08082668
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808266C
+	.4byte disableAllStatuses
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BAEE0
@@ -77994,7 +77994,7 @@ vt_09F772F8::
 	.4byte sub_08082668
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808266C
+	.4byte disableAllStatuses
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082670
@@ -89997,13 +89997,13 @@ _vt.20PreSysClockSingleton::
 	.2byte 0
 	.4byte init__20PreSysClockSingleton
 
-_vt.Q215struct_0806A57C1A::
+_vt.Q211BattleFader1A::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte _._15struct_0806A57C
+	.4byte _._11BattleFader
 
 vt_09F7EF30::
 	.2byte 0
@@ -96436,7 +96436,7 @@ _vt.14GuestSkillRTTI::
 	.2byte 0
 	.4byte sub_080C16C8
 
-vt_09F82F98::
+_vt.7Monster.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -96483,7 +96483,7 @@ vt_09F82F98::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F83010::
+_vt.7Monster::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -97327,7 +97327,7 @@ vt_09F83810::
 	.4byte sub_08082668
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808266C
+	.4byte disableAllStatuses
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082670

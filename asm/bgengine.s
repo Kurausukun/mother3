@@ -1615,7 +1615,7 @@ _0806BB8E:
 	ldr r1, [r4, #0x1c]
 	lsls r1, r1, #4
 	ldr r2, [r4, #0x20]
-	bl sub_0806A67C__15struct_0806A57CiPUsT2
+	bl sub_0806A67C__11BattleFaderiPUsT2
 	b _0806BBDA
 	.align 2, 0
 _0806BBB4: .4byte 0x040000D4
@@ -1665,7 +1665,7 @@ _0806BBE4:
 	adds r0, r4, #0
 	movs r1, #1
 	mov r2, sp
-	bl sub_0806A67C__15struct_0806A57CiPUsT2
+	bl sub_0806A67C__11BattleFaderiPUsT2
 	b _0806BC34
 _0806BC16:
 	adds r2, r6, #0

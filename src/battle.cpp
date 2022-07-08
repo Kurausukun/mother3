@@ -108,7 +108,7 @@ void Battle::battle_90() {
         break;
     }
 
-    m.print(Color(0, 0, 0), true);
+    m.print(Color::Black(), true);
 }
 
 bool Battle::battle_98() {

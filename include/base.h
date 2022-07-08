@@ -76,7 +76,10 @@ struct Unk : public Base {
 };
 
 struct Color {
+    Color() : r(0), g(0), b(0) {}
     Color(u32 r, u32 g, u32 b) : r(r), g(g), b(b) {}
+
+    static Color Black() { return Color(0, 0, 0); }
 
     u8 r, g, b;
 };
