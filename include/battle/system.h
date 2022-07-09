@@ -2,6 +2,7 @@
 #define BATTLE_SYSTEM_H
 
 #include "base.h"
+#include "singleton.h"
 
 class System : Base {
 public:
@@ -27,6 +28,6 @@ public:
 
     SARHandle* mHandle;
 };
-SINGLETON_MGR(System)
+SINGLETON_DECL(System)
 
 #endif  // BATTLE_SYSTEM_H

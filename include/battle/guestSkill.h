@@ -9,8 +9,9 @@ struct GuestSkillInfo {
 };
 extern const GuestSkillInfo gGuestSkillData[];
 
-class GuestSkill : public Action{
+class GuestSkill : public Action {
 public:
+    GuestSkill() {}
     GuestSkill(u16 id, Unit* user);
     virtual ~GuestSkill();
 
@@ -49,6 +50,6 @@ private:
     const GuestSkillInfo* mInfo;
 };
 
-SINGLETON(GuestSkill);
+RTTI(GuestSkill);
 
 #endif  // BATTLE_GUEST_SKILL_H

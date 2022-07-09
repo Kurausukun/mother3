@@ -14,7 +14,7 @@ public:
 
     virtual bool attackdata_68();
     virtual bool attackdata_70();
-    virtual u32 getType() const;
+    virtual u32 type() const;
     virtual Unit* getUnit() const;
     virtual u32 getSelection() const;
     virtual bool targettingAlly();

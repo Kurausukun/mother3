@@ -46,10 +46,10 @@ public:
     void setClamped(s16* dest, s32 value) { *dest = clampS32(value, 0, 999); }
 
     s16 get48(u32 idx) const { return *(mWeaknesses + idx); }
-    s16 get58(u32 idx) const { return *(_58 + idx); }
+    s16 get58(u32 idx) const { return *(mStatusWeaknesses + idx); }
 
     virtual u8 unit_68();
-    virtual s32 unit_70(Unit* u) const;
+    virtual bool unit_70(Action* a);
 
     virtual void unit_78(Action* a1);
     virtual void unit_80(Action* a1);
@@ -71,7 +71,7 @@ public:
     virtual void unit_f0(Action* a1);
     virtual void unit_f8(Action* a1);
     virtual void unit_100(Action* a1);
-    virtual void unit_108();
+    virtual void onDeath();
 
     virtual void setLevel(s32 value);
     virtual void setHP(s32 value);
@@ -82,12 +82,12 @@ public:
     virtual void setDefense(s32 value);
     virtual void setIQ(s32 value);
     virtual void setSpeed(s32 value);
-    virtual void unit_158(s32 value);
-    virtual void setElementDefense(s32 idx, s32 value);
-    virtual void unit_168(u16 idx, s32 value);
+    virtual void setKindness(s32 value);
+    virtual void setElementWeakness(s32 idx, s32 value);
+    virtual void setStatusWeakness(u16 idx, s32 value);
     virtual void unit_170(u32 value);
 
-    virtual bool unit_178() = 0;
+    virtual u16 unit_178() = 0;
     virtual u16 id() const = 0;
     virtual Msg name() const = 0;
 
@@ -99,19 +99,19 @@ public:
     virtual s32 pp() const;
     virtual s32 maxPP() const;
 
+    virtual s32 offense() const;
+    virtual s32 defense() const;
     virtual s32 iq() const;
     virtual s32 speed() const;
-    virtual s32 unit_1d8() const;
-    virtual s32 clumsiness() const;
-    virtual s32 unit_1e8() const;
+    virtual s32 kindness() const;
 
     virtual s32 getElementWeakness(u32 idx) const;
-    virtual s32 unit_1f8(u16 idx) const;
+    virtual s32 getStatusWeakness(u16 idx) const;
     virtual s32 unit_200() const;
 
-    virtual bool unit_208() = 0;
-    virtual bool unit_210() = 0;
-    virtual bool unit_218() = 0;
+    virtual u16 attackSfx() = 0;
+    virtual u16 critSfx() = 0;
+    virtual u16 missSfx() = 0;
 
     virtual UnitCmd* unit_220(u32 a1);
     virtual bool unit_228(u32 a1);
@@ -156,11 +156,11 @@ private:
     /* 0x3a */ s16 mDefense;
     /* 0x3c */ s16 mIQ;
     /* 0x3e */ s16 mSpeed;
-    /* 0x40 */ s16 _40;
+    /* 0x40 */ s16 mKindness;
     /* 0x44 */ s32 mWeaknessCount;
     /* 0x48 */ s16 mWeaknesses[6];
     /* 0x54 */ s32 _54;
-    /* 0x58 */ s16 _58[64];
+    /* 0x58 */ s16 mStatusWeaknesses[64];
     /* 0xd8 */ u32 _d8;
     /* 0xdc */ Vector<UnitCmd*> _dc;
     /* 0xe8 */ Vector<Status*> mStatuses;
@@ -307,11 +307,11 @@ struct TargetType {
     };
 };
 
-SINGLETON(Suspend);
-SINGLETON(Resume);
-SINGLETON(UnitJoin);
-SINGLETON(UnitRevive);
-SINGLETON(UnitEscape);
-SINGLETON(UnitDie);
+RTTI(Suspend);
+RTTI(Resume);
+RTTI(UnitJoin);
+RTTI(UnitRevive);
+RTTI(UnitEscape);
+RTTI(UnitDie);
 
 #endif  // BATTLE_UNIT_H

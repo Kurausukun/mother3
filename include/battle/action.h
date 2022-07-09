@@ -19,11 +19,11 @@ public:
     virtual void playDim();
     virtual void playAnim();
     virtual void action_a0(Unit* target);
-    virtual u8 calcMissed(Unit* target);
+    virtual u8 calcDidHit(Unit* target);
     virtual void tellMissed(Unit* target);
     virtual bool isResisted(Unit* target);
     virtual void tellResisted(Unit* target);
-    virtual void calcHit(Unit* target);
+    virtual void doHit(Unit* target);
     virtual void action_d0(Unit* target);
     virtual s32 action_d8(Unit* user, Unit* target);
     virtual void action_e0(Unit* target);
@@ -49,11 +49,11 @@ public:
     virtual void clearTargets();
     virtual s32 numTargets() const;
     virtual Unit* getTarget(s32) const;
-    virtual s32 getTargetIdx(Unit* target) const;
-    virtual u32 action_1a0();
+    virtual s32 getTargetIdx(Unit* target);
+    virtual bool action_1a0();
     virtual void action_1a8();
-    virtual u8 action_1b0();
-    virtual u8 action_1b8();
+    virtual bool action_1b0();
+    virtual bool action_1b8();
 
     virtual Action* action_1c0() = 0;
     virtual u16 id() const = 0;
@@ -107,15 +107,15 @@ struct MonsterSkillData {
 
 struct EffectType {
     enum {
-        Damage,
-        Attack,
-        PsiDamage,
-        HealHP,
-        HealHP2,
-        PPHeal,
-        StatusChange,
-        None,
-        Misc,
+        Damage = 0x0,
+        Attack = 0x1,
+        PsiDamage = 0x2,
+        HealHP = 0x3,
+        HealHP2 = 0x4,
+        PPHeal = 0x5,
+        StatusChange = 0x6,
+        None = 0x7,
+        Misc = 0x8,
     };
 };
 

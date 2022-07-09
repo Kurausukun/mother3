@@ -85,7 +85,7 @@ _08064C08:
 	add r1, sp, #4
 	adds r2, r6, #0
 	adds r3, r5, #0
-	bl sub_080734A0
+	bl StrFmt
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg

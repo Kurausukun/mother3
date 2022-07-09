@@ -2066,7 +2066,7 @@ _0806E204:
 _0806E21C:
 	adds r0, r7, #0
 	adds r1, r6, #0
-	bl sub_0806E2B8
+	bl __3MsgRC3Msg
 	adds r0, r6, #0
 	movs r1, #2
 	bl _._3Msg
@@ -2147,8 +2147,8 @@ __3MsgPCvUi: @ 0x0806E288
 	.align 2, 0
 _0806E2B4: .4byte _vt.3Msg
 
-	thumb_func_start sub_0806E2B8
-sub_0806E2B8: @ 0x0806E2B8
+	thumb_func_start __3MsgRC3Msg
+__3MsgRC3Msg: @ 0x0806E2B8
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
@@ -2171,8 +2171,8 @@ sub_0806E2B8: @ 0x0806E2B8
 	.align 2, 0
 _0806E2E4: .4byte _vt.3Msg
 
-	thumb_func_start sub_0806E2E8__3MsgRC3Msg
-sub_0806E2E8__3MsgRC3Msg: @ 0x0806E2E8
+	thumb_func_start replace__3MsgRC3Msg
+replace__3MsgRC3Msg: @ 0x0806E2E8
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0

@@ -46,7 +46,7 @@
 	strb r4, [r1, #2]
 	adds r0, r5, #0
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	adds r0, r5, #0
 	movs r1, #2
 	bl _._3Msg

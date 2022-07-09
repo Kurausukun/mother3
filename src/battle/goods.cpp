@@ -17,10 +17,10 @@ Goods::Goods(u16 id, Unit* user, u16 a2) : Action(user) {
 
 Goods::~Goods() {}
 
-u32 Goods::action_1a0() {
-    if (action_1b8() == 1) {
+bool Goods::action_1a0() {
+    if (action_1b8() == true) {
         playSfx();
-        return 1;
+        return true;
     }
     return Action::action_1a0();
 }
@@ -218,7 +218,7 @@ bool Goods::goods_2c0() {
     }
 }
 
-u32 Goods::getType() const {
+u32 Goods::type() const {
     return mInfo->item_type;
 }
 

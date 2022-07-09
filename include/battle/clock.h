@@ -2,6 +2,7 @@
 #define BATTLE_CLOCK_H
 
 #include "base.h"
+#include "singleton.h"
 
 class Clock : public Base {
 public:
@@ -100,12 +101,12 @@ private:
     u32 mTime;
 };
 
-SINGLETON(PreSysClock)
-SINGLETON(SysClock)
-SINGLETON(PreAppClock)
-SINGLETON(AppClock)
-SINGLETON(PostAppClock)
-SINGLETON(PostSysClock)
-SINGLETON_MGR(Clock)
+RTTI(PreSysClock)
+RTTI(SysClock)
+RTTI(PreAppClock)
+RTTI(AppClock)
+RTTI(PostAppClock)
+RTTI(PostSysClock)
+SINGLETON_DECL(Clock)
 
 #endif  // BATTLE_CLOCK_H

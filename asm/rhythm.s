@@ -174,7 +174,7 @@ _0807376A:
 	movs r1, #0x7b
 	adds r2, r6, #0
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	add r1, sp, #0x38
 	movs r0, #0
 	strb r0, [r1]
@@ -182,7 +182,7 @@ _0807376A:
 	strb r0, [r1, #2]
 	add r0, sp, #4
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -242,7 +242,7 @@ _0807389A:
 	adds r0, r7, #0
 	movs r1, #3
 	mov r2, sl
-	bl sub_08073EE8
+	bl tellStatusWoreOff
 _08073902:
 	ldr r1, [r7, #0x1c]
 	movs r0, #0xcc
@@ -405,7 +405,7 @@ _08073962:
 	movs r1, #0x7b
 	adds r2, r6, #0
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	add r1, sp, #0x38
 	movs r0, #0
 	strb r0, [r1]
@@ -413,7 +413,7 @@ _08073962:
 	strb r0, [r1, #2]
 	add r0, sp, #4
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -588,7 +588,7 @@ _08073AF2:
 	movs r1, #0x7b
 	adds r2, r6, #0
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	add r1, sp, #0x38
 	movs r0, #0
 	strb r0, [r1]
@@ -596,7 +596,7 @@ _08073AF2:
 	strb r0, [r1, #2]
 	add r0, sp, #4
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -940,7 +940,7 @@ sub_08073E3C: @ 0x08073E3C
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -955,8 +955,8 @@ _08073EE0:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_08073EE8
-sub_08073EE8: @ 0x08073EE8
+	thumb_func_start tellStatusWoreOff
+tellStatusWoreOff: @ 0x08073EE8
 	push {r4, r5, r6, lr}
 	sub sp, #0x10
 	adds r4, r0, #0
@@ -1010,7 +1010,7 @@ sub_08073EE8: @ 0x08073EE8
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -1280,7 +1280,7 @@ sub_08074134: @ 0x08074134
 	ldr r1, [r1, #0x14]
 	bl _call_via_r1
 	adds r4, r0, #0
-	bl get__19GuestSkillSingleton
+	bl get__14GuestSkillRTTI
 	cmp r4, r0
 	bne _08074158
 	movs r5, #1
@@ -1306,7 +1306,7 @@ sub_08074160: @ 0x08074160
 	ldr r1, [r1, #0x14]
 	bl _call_via_r1
 	adds r4, r0, #0
-	bl get__19GuestSkillSingleton
+	bl get__14GuestSkillRTTI
 	cmp r4, r0
 	bne _080741A4
 	ldr r1, [r5, #0x1c]
@@ -1613,20 +1613,20 @@ _080743BC:
 	bne _080743DA
 	bl sub_08072568
 	adds r1, r4, #0
-	bl setBAll__15struct_0806A57CUi
+	bl setBAll__11BattleFaderUi
 _080743DA:
 	mov r0, r8
 	cmp r0, #1
 	bne _080743EA
 	bl sub_08072588
 	adds r1, r4, #0
-	bl setBAll__15struct_0806A57CUi
+	bl setBAll__11BattleFaderUi
 _080743EA:
 	cmp r7, #1
 	bne _080743F8
 	bl sub_080725A8
 	adds r1, r4, #0
-	bl setBAll__15struct_0806A57CUi
+	bl setBAll__11BattleFaderUi
 _080743F8:
 	movs r0, #1
 	bl setsleep
@@ -1677,20 +1677,20 @@ _0807443C:
 	bne _0807445A
 	bl sub_08072568
 	adds r1, r4, #0
-	bl setBAll__15struct_0806A57CUi
+	bl setBAll__11BattleFaderUi
 _0807445A:
 	mov r0, r8
 	cmp r0, #1
 	bne _0807446A
 	bl sub_08072588
 	adds r1, r4, #0
-	bl setBAll__15struct_0806A57CUi
+	bl setBAll__11BattleFaderUi
 _0807446A:
 	cmp r7, #1
 	bne _08074478
 	bl sub_080725A8
 	adds r1, r4, #0
-	bl setBAll__15struct_0806A57CUi
+	bl setBAll__11BattleFaderUi
 _08074478:
 	movs r0, #1
 	bl setsleep
@@ -1743,20 +1743,20 @@ _080744BC:
 	bne _080744DE
 	bl sub_08072568
 	adds r1, r4, #0
-	bl setBAll__15struct_0806A57CUi
+	bl setBAll__11BattleFaderUi
 _080744DE:
 	mov r1, r8
 	cmp r1, #1
 	bne _080744EE
 	bl sub_08072588
 	adds r1, r4, #0
-	bl setBAll__15struct_0806A57CUi
+	bl setBAll__11BattleFaderUi
 _080744EE:
 	cmp r7, #1
 	bne _080744FC
 	bl sub_080725A8
 	adds r1, r4, #0
-	bl setBAll__15struct_0806A57CUi
+	bl setBAll__11BattleFaderUi
 _080744FC:
 	movs r0, #1
 	bl setsleep
@@ -1809,20 +1809,20 @@ _08074540:
 	bne _08074562
 	bl sub_08072568
 	adds r1, r4, #0
-	bl setBAll__15struct_0806A57CUi
+	bl setBAll__11BattleFaderUi
 _08074562:
 	mov r1, r8
 	cmp r1, #1
 	bne _08074572
 	bl sub_08072588
 	adds r1, r4, #0
-	bl setBAll__15struct_0806A57CUi
+	bl setBAll__11BattleFaderUi
 _08074572:
 	cmp r7, #1
 	bne _08074580
 	bl sub_080725A8
 	adds r1, r4, #0
-	bl setBAll__15struct_0806A57CUi
+	bl setBAll__11BattleFaderUi
 _08074580:
 	movs r0, #1
 	bl setsleep

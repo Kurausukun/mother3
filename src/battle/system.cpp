@@ -68,7 +68,7 @@ void operator delete[](void* ptr) {
     SystemAllocator::instance()->free(ptr);
 }
 
-SINGLETON_MGR_IMPL(System)
+SINGLETON_IMPL(System)
 
 extern "C" ASM_FUNC("asm/non_matching/system/sub_0805D494.inc", System* __6System());
 

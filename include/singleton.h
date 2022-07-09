@@ -3,74 +3,9 @@
 
 #include "base.h"
 #include "global.h"
+#include "rtti.h"
 
-struct Singleton {
-    struct Allocator {
-        static Allocator* get();
-
-        s32 count;
-        Singleton* start;
-        Singleton* end;
-
-        static Allocator instance;
-        static s32 guard;
-    };
-
-    Singleton();
-
-    Singleton* sub_08068978();
-    u32 debugStub(const char*);
-
-    // todo: make pure virtual once children are finished
-    virtual const char* getName();  // = 0;
-
-    Singleton* prev;  // debug related?
-    Singleton* next;
-};
-
-#define RTTI(CLASS)                                                                                \
-    struct CLASS##RTTI : Singleton {                                                               \
-        virtual const char* getName();                                                             \
-                                                                                                   \
-        static void* init(u16 id);                                                                 \
-        static void* get();                                                                        \
-    };
-
-#define RTTI_IMPL(CLASS)                                                                           \
-    CLASS##RTTI s##CLASS##RTTI;                                                                    \
-                                                                                                   \
-    void* CLASS##RTTI::get() {                                                                     \
-        return &s##CLASS##RTTI;                                                                    \
-    }                                                                                              \
-                                                                                                   \
-    /* this is implementing a CLASS member function!!! */                                          \
-    void* CLASS::getRTTI() {                                                                       \
-        return CLASS##RTTI::get();                                                                 \
-    }
-
-// TODO :::::::: this is actually RTTI
-#define SINGLETON(CLASS)                                                                           \
-    struct CLASS##Singleton : Singleton {                                                          \
-        virtual const char* getName();                                                             \
-                                                                                                   \
-        static void* init(u16 id);                                                                 \
-        static void* get();                                                                        \
-    };
-
-#define SINGLETON_IMPL(CLASS)                                                                      \
-    CLASS##Singleton s##CLASS##Singleton;                                                          \
-                                                                                                   \
-    void* CLASS##Singleton::get() {                                                                \
-        return &s##CLASS##Singleton;                                                               \
-    }                                                                                              \
-                                                                                                   \
-    /* this is implementing a CLASS member function!!! */                                          \
-    void* CLASS::getRTTI() {                                                                   \
-        return CLASS##Singleton::get();                                                            \
-    }
-
-/// TODO ::::::: This is actually singleton
-#define SINGLETON_MGR(CLASS)                                                                       \
+#define SINGLETON_DECL(CLASS)                                                                       \
     struct CLASS##Manager : Singleton {                                                            \
     public:                                                                                        \
         static CLASS##Manager* manager();                                                          \
@@ -85,7 +20,7 @@ struct Singleton {
         static CLASS* mSingleton;                                                                  \
     };
 
-#define SINGLETON_MGR_IMPL(CLASS)                                                                  \
+#define SINGLETON_IMPL(CLASS)                                                                  \
     CLASS##Manager s##CLASS##Manager;                                                              \
                                                                                                    \
     CLASS##Manager* CLASS##Manager::manager() {                                                    \

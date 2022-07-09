@@ -305,7 +305,7 @@ vt_09F45058::
 	.4byte battle_1a8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_1b0__6Battle
+	.4byte isBattleWon__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte roundNo__6Battle
@@ -320,7 +320,7 @@ vt_09F45058::
 	.4byte battle_1d0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_1d8__6Battle
+	.4byte isBattleLost__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_1e0__6Battle
@@ -898,7 +898,7 @@ vt_09F45630::
 	.4byte battle_1a8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_1b0__6Battle
+	.4byte isBattleWon__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte roundNo__6Battle
@@ -913,7 +913,7 @@ vt_09F45630::
 	.4byte battle_1d0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_1d8__6Battle
+	.4byte isBattleLost__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_1e0__6Battle
@@ -1161,7 +1161,7 @@ vt_09F458E8::
 	.4byte battle_1a8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_1b0__6Battle
+	.4byte isBattleWon__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte roundNo__6Battle
@@ -1176,7 +1176,7 @@ vt_09F458E8::
 	.4byte battle_1d0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_1d8__6Battle
+	.4byte isBattleLost__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_1e0__6Battle
@@ -1457,7 +1457,7 @@ vt_09F45BF8::
 	.4byte battle_1a8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_1b0__6Battle
+	.4byte isBattleWon__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte roundNo__6Battle
@@ -1472,7 +1472,7 @@ vt_09F45BF8::
 	.4byte battle_1d0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_1d8__6Battle
+	.4byte isBattleLost__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_1e0__6Battle
@@ -1732,7 +1732,7 @@ vt_09F45ED0::
 	.4byte battle_1a8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_1b0__6Battle
+	.4byte isBattleWon__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte roundNo__6Battle
@@ -1747,7 +1747,7 @@ vt_09F45ED0::
 	.4byte battle_1d0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_1d8__6Battle
+	.4byte isBattleLost__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_1e0__6Battle
@@ -2012,7 +2012,7 @@ vt_09F46280::
 	.4byte battle_1a8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_1b0__6Battle
+	.4byte isBattleWon__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte roundNo__6Battle
@@ -2027,7 +2027,7 @@ vt_09F46280::
 	.4byte battle_1d0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_1d8__6Battle
+	.4byte isBattleLost__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_1e0__6Battle
@@ -2266,7 +2266,7 @@ vt_09F46450::
 	.4byte battle_1a8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_1b0__6Battle
+	.4byte isBattleWon__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte roundNo__6Battle
@@ -2281,7 +2281,7 @@ vt_09F46450::
 	.4byte battle_1d0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_1d8__6Battle
+	.4byte isBattleLost__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_1e0__6Battle
@@ -2758,13 +2758,13 @@ vt_09F469A8::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -2800,25 +2800,25 @@ vt_09F469A8::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -3236,13 +3236,13 @@ vt_09F46E98::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -3278,25 +3278,25 @@ vt_09F46E98::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -3717,13 +3717,13 @@ vt_09F47390::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -3759,25 +3759,25 @@ vt_09F47390::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -4198,13 +4198,13 @@ vt_09F47888::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -4240,25 +4240,25 @@ vt_09F47888::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -4679,13 +4679,13 @@ vt_09F47D80::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -4721,25 +4721,25 @@ vt_09F47D80::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -5160,13 +5160,13 @@ vt_09F48278::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -5202,25 +5202,25 @@ vt_09F48278::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -5644,13 +5644,13 @@ vt_09F48778::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -5686,25 +5686,25 @@ vt_09F48778::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -6125,13 +6125,13 @@ vt_09F48C70::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -6167,25 +6167,25 @@ vt_09F48C70::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -6543,7 +6543,7 @@ vt_09F49158::
 	.4byte sub_0809DC9C
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -6621,7 +6621,7 @@ vt_09F49158::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F854
@@ -6797,7 +6797,7 @@ vt_09F493F8::
 	.4byte sub_0809DF04
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -6875,7 +6875,7 @@ vt_09F493F8::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809FA6C
@@ -7042,7 +7042,7 @@ vt_09F496A0::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -7054,7 +7054,7 @@ vt_09F496A0::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -7132,7 +7132,7 @@ vt_09F496A0::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809FA6C
@@ -7299,7 +7299,7 @@ vt_09F49948::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -7311,7 +7311,7 @@ vt_09F49948::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -7389,7 +7389,7 @@ vt_09F49948::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_1a0__6Action
@@ -7565,7 +7565,7 @@ vt_09F49BE8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -7643,7 +7643,7 @@ vt_09F49BE8::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_1a0__6Action
@@ -7807,7 +7807,7 @@ vt_09F49E88::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -7819,7 +7819,7 @@ vt_09F49E88::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -7897,7 +7897,7 @@ vt_09F49E88::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F724
@@ -8073,7 +8073,7 @@ vt_09F4A128::
 	.4byte sub_0809E630
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -8151,7 +8151,7 @@ vt_09F4A128::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F724
@@ -8327,7 +8327,7 @@ vt_09F4A3C8::
 	.4byte sub_0809E77C
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -8405,7 +8405,7 @@ vt_09F4A3C8::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F724
@@ -8569,7 +8569,7 @@ vt_09F4A668::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -8581,7 +8581,7 @@ vt_09F4A668::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -8659,7 +8659,7 @@ vt_09F4A668::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809FA6C
@@ -8826,7 +8826,7 @@ vt_09F4A910::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -8838,7 +8838,7 @@ vt_09F4A910::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -8916,7 +8916,7 @@ vt_09F4A910::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809FA6C
@@ -9083,7 +9083,7 @@ vt_09F4ABB8::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -9095,7 +9095,7 @@ vt_09F4ABB8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -9173,7 +9173,7 @@ vt_09F4ABB8::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809FA6C
@@ -9340,7 +9340,7 @@ vt_09F4AE60::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -9352,7 +9352,7 @@ vt_09F4AE60::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -9430,7 +9430,7 @@ vt_09F4AE60::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809FA6C
@@ -9597,7 +9597,7 @@ vt_09F4B108::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -9609,7 +9609,7 @@ vt_09F4B108::
 	.4byte sub_0809E898
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -9687,7 +9687,7 @@ vt_09F4B108::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809FA6C
@@ -9866,7 +9866,7 @@ vt_09F4B3B0::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F098
@@ -9944,7 +9944,7 @@ vt_09F4B3B0::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_1a0__6Action
@@ -10141,7 +10141,7 @@ vt_09F4B6A8::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -10153,7 +10153,7 @@ vt_09F4B6A8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -10231,7 +10231,7 @@ vt_09F4B6A8::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_1a0__6Action
@@ -10480,7 +10480,7 @@ _vt.5Guest::
 	.4byte unit_68__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__C4UnitP4Unit
+	.4byte unit_70__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -10537,7 +10537,7 @@ _vt.5Guest::
 	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -10567,13 +10567,13 @@ _vt.5Guest::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -10609,37 +10609,37 @@ _vt.5Guest::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_208__5Guest
+	.4byte attackSfx__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_210__5Guest
+	.4byte critSfx__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_218__5Guest
+	.4byte missSfx__5Guest
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -10876,7 +10876,7 @@ vt_09F4BDC8::
 	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -10906,13 +10906,13 @@ vt_09F4BDC8::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -10948,37 +10948,37 @@ vt_09F4BDC8::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_208__5Guest
+	.4byte attackSfx__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_210__5Guest
+	.4byte critSfx__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_218__5Guest
+	.4byte missSfx__5Guest
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -11216,7 +11216,7 @@ vt_09F4C148::
 	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -11246,13 +11246,13 @@ vt_09F4C148::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -11288,37 +11288,37 @@ vt_09F4C148::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_208__5Guest
+	.4byte attackSfx__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_210__5Guest
+	.4byte critSfx__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_218__5Guest
+	.4byte missSfx__5Guest
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -11565,7 +11565,7 @@ vt_09F4C4E0::
 	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -11595,13 +11595,13 @@ vt_09F4C4E0::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -11637,37 +11637,37 @@ vt_09F4C4E0::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_208__5Guest
+	.4byte attackSfx__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_210__5Guest
+	.4byte critSfx__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_218__5Guest
+	.4byte missSfx__5Guest
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -11908,7 +11908,7 @@ vt_09F4C868::
 	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -11938,13 +11938,13 @@ vt_09F4C868::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -11980,37 +11980,37 @@ vt_09F4C868::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_208__5Guest
+	.4byte attackSfx__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_210__5Guest
+	.4byte critSfx__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_218__5Guest
+	.4byte missSfx__5Guest
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -12254,7 +12254,7 @@ vt_09F4CBF8::
 	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -12284,13 +12284,13 @@ vt_09F4CBF8::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -12326,37 +12326,37 @@ vt_09F4CBF8::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_208__5Guest
+	.4byte attackSfx__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_210__5Guest
+	.4byte critSfx__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_218__5Guest
+	.4byte missSfx__5Guest
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -12594,7 +12594,7 @@ vt_09F4CF78::
 	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -12624,13 +12624,13 @@ vt_09F4CF78::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -12666,37 +12666,37 @@ vt_09F4CF78::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_208__5Guest
+	.4byte attackSfx__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_210__5Guest
+	.4byte critSfx__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_218__5Guest
+	.4byte missSfx__5Guest
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -12934,7 +12934,7 @@ vt_09F4D2F8::
 	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -12964,13 +12964,13 @@ vt_09F4D2F8::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -13006,37 +13006,37 @@ vt_09F4D2F8::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_208__5Guest
+	.4byte attackSfx__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_210__5Guest
+	.4byte critSfx__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_218__5Guest
+	.4byte missSfx__5Guest
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -13188,7 +13188,7 @@ vt_09F4D600::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -13200,7 +13200,7 @@ vt_09F4D600::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -13278,7 +13278,7 @@ vt_09F4D600::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_1a0__6Action
@@ -13442,7 +13442,7 @@ vt_09F4D8A0::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -13454,7 +13454,7 @@ vt_09F4D8A0::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -13532,7 +13532,7 @@ vt_09F4D8A0::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_1a0__6Action
@@ -13696,7 +13696,7 @@ vt_09F4DB40::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -13786,7 +13786,7 @@ vt_09F4DB40::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_1a0__6Action
@@ -13950,7 +13950,7 @@ vt_09F4DDE0::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -14040,7 +14040,7 @@ vt_09F4DDE0::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_1a0__6Action
@@ -14204,7 +14204,7 @@ vt_09F4E080::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -14216,7 +14216,7 @@ vt_09F4E080::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -14294,7 +14294,7 @@ vt_09F4E080::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_1a0__6Action
@@ -14517,13 +14517,13 @@ vt_09F4E320::
 	.2byte 0
 	.4byte sub_0806393C
 
-vt_09F4E460::
+_vt.15struct_08063998::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080639B4
+	.4byte _._15struct_08063998
 	.2byte 0
 	.2byte 0
 	.4byte sub_080639D4
@@ -14593,7 +14593,7 @@ vt_09F4E508::
 	.4byte sub_080A59A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -14653,7 +14653,7 @@ vt_09F4E508::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -14665,7 +14665,7 @@ vt_09F4E508::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -14686,7 +14686,7 @@ vt_09F4E508::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -14716,25 +14716,25 @@ vt_09F4E508::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -14758,37 +14758,37 @@ vt_09F4E508::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -14854,100 +14854,100 @@ vt_09F4E508::
 	.4byte sub_080A5978
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -15047,7 +15047,7 @@ vt_09F4E9B8::
 	.4byte sub_080A6010
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -15107,7 +15107,7 @@ vt_09F4E9B8::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -15119,7 +15119,7 @@ vt_09F4E9B8::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -15140,7 +15140,7 @@ vt_09F4E9B8::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -15170,25 +15170,25 @@ vt_09F4E9B8::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -15212,37 +15212,37 @@ vt_09F4E9B8::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -15308,100 +15308,100 @@ vt_09F4E9B8::
 	.4byte sub_080A5F8C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -15527,7 +15527,7 @@ vt_09F4EEA8::
 	.4byte sub_080A6074
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -15587,7 +15587,7 @@ vt_09F4EEA8::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -15599,7 +15599,7 @@ vt_09F4EEA8::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -15620,7 +15620,7 @@ vt_09F4EEA8::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -15650,25 +15650,25 @@ vt_09F4EEA8::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -15692,37 +15692,37 @@ vt_09F4EEA8::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -15788,100 +15788,100 @@ vt_09F4EEA8::
 	.4byte sub_080A6040
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -15981,7 +15981,7 @@ vt_09F4F358::
 	.4byte sub_080A697C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -16041,7 +16041,7 @@ vt_09F4F358::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -16053,7 +16053,7 @@ vt_09F4F358::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -16074,7 +16074,7 @@ vt_09F4F358::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -16104,25 +16104,25 @@ vt_09F4F358::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -16146,37 +16146,37 @@ vt_09F4F358::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -16242,100 +16242,100 @@ vt_09F4F358::
 	.4byte sub_080A6908
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -16483,7 +16483,7 @@ vt_09F4F888::
 	.4byte sub_080A6B50
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -16555,7 +16555,7 @@ vt_09F4F888::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -16576,13 +16576,13 @@ vt_09F4F888::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -16606,25 +16606,25 @@ vt_09F4F888::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -16648,37 +16648,37 @@ vt_09F4F888::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -16744,100 +16744,100 @@ vt_09F4F888::
 	.4byte sub_080A6A2C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -16946,7 +16946,7 @@ vt_09F4FD50::
 	.4byte sub_080A6CE8
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -17018,7 +17018,7 @@ vt_09F4FD50::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -17039,13 +17039,13 @@ vt_09F4FD50::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -17069,25 +17069,25 @@ vt_09F4FD50::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -17111,37 +17111,37 @@ vt_09F4FD50::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -17207,100 +17207,100 @@ vt_09F4FD50::
 	.4byte sub_080A6BC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -17409,7 +17409,7 @@ vt_09F50218::
 	.4byte sub_080A769C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -17469,7 +17469,7 @@ vt_09F50218::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -17481,7 +17481,7 @@ vt_09F50218::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -17502,13 +17502,13 @@ vt_09F50218::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -17532,25 +17532,25 @@ vt_09F50218::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -17574,37 +17574,37 @@ vt_09F50218::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -17670,100 +17670,100 @@ vt_09F50218::
 	.4byte sub_080A751C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -17887,7 +17887,7 @@ vt_09F50708::
 	.4byte sub_080A7814
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -17947,7 +17947,7 @@ vt_09F50708::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -17959,7 +17959,7 @@ vt_09F50708::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -17980,13 +17980,13 @@ vt_09F50708::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -18010,25 +18010,25 @@ vt_09F50708::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -18052,37 +18052,37 @@ vt_09F50708::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -18148,100 +18148,100 @@ vt_09F50708::
 	.4byte sub_080A777C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -18341,7 +18341,7 @@ vt_09F50BB8::
 	.4byte sub_080A79E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -18413,7 +18413,7 @@ vt_09F50BB8::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -18434,13 +18434,13 @@ vt_09F50BB8::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -18464,25 +18464,25 @@ vt_09F50BB8::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -18506,37 +18506,37 @@ vt_09F50BB8::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -18605,97 +18605,97 @@ vt_09F50BB8::
 	.4byte sub_080A792C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -18798,7 +18798,7 @@ vt_09F51070::
 	.4byte sub_080A7B14
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -18858,7 +18858,7 @@ vt_09F51070::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -18870,7 +18870,7 @@ vt_09F51070::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -18891,13 +18891,13 @@ vt_09F51070::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -18921,25 +18921,25 @@ vt_09F51070::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -18963,37 +18963,37 @@ vt_09F51070::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -19059,100 +19059,100 @@ vt_09F51070::
 	.4byte sub_080A7AC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -19252,7 +19252,7 @@ vt_09F51520::
 	.4byte sub_080A7CF8
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -19312,7 +19312,7 @@ vt_09F51520::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -19324,7 +19324,7 @@ vt_09F51520::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -19345,13 +19345,13 @@ vt_09F51520::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -19375,25 +19375,25 @@ vt_09F51520::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -19417,37 +19417,37 @@ vt_09F51520::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -19513,100 +19513,100 @@ vt_09F51520::
 	.4byte sub_080A7BF4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -19706,7 +19706,7 @@ vt_09F519D0::
 	.4byte sub_080A84AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -19766,7 +19766,7 @@ vt_09F519D0::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -19778,7 +19778,7 @@ vt_09F519D0::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -19799,13 +19799,13 @@ vt_09F519D0::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -19829,25 +19829,25 @@ vt_09F519D0::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -19871,37 +19871,37 @@ vt_09F519D0::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -19967,100 +19967,100 @@ vt_09F519D0::
 	.4byte sub_080A83E8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -20172,7 +20172,7 @@ vt_09F51EA0::
 	.4byte sub_080A87F8
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -20232,7 +20232,7 @@ vt_09F51EA0::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -20244,7 +20244,7 @@ vt_09F51EA0::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -20265,13 +20265,13 @@ vt_09F51EA0::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -20295,25 +20295,25 @@ vt_09F51EA0::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -20337,37 +20337,37 @@ vt_09F51EA0::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -20433,100 +20433,100 @@ vt_09F51EA0::
 	.4byte sub_080A86F0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -20629,7 +20629,7 @@ vt_09F52358::
 	.4byte sub_080A8CF8
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -20689,7 +20689,7 @@ vt_09F52358::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -20701,7 +20701,7 @@ vt_09F52358::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -20722,13 +20722,13 @@ vt_09F52358::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -20752,25 +20752,25 @@ vt_09F52358::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -20794,37 +20794,37 @@ vt_09F52358::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -20890,100 +20890,100 @@ vt_09F52358::
 	.4byte sub_080A8BF4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -21101,7 +21101,7 @@ vt_09F52838::
 	.4byte sub_080A8D94
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -21173,7 +21173,7 @@ vt_09F52838::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -21194,13 +21194,13 @@ vt_09F52838::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -21224,25 +21224,25 @@ vt_09F52838::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -21266,37 +21266,37 @@ vt_09F52838::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -21362,100 +21362,100 @@ vt_09F52838::
 	.4byte sub_080A8D14
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -21555,7 +21555,7 @@ vt_09F52CE8::
 	.4byte sub_080A96BC
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -21615,7 +21615,7 @@ vt_09F52CE8::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -21627,7 +21627,7 @@ vt_09F52CE8::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -21648,7 +21648,7 @@ vt_09F52CE8::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -21678,25 +21678,25 @@ vt_09F52CE8::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -21720,37 +21720,37 @@ vt_09F52CE8::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -21816,100 +21816,100 @@ vt_09F52CE8::
 	.4byte sub_080A9544
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A8DB0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -22030,7 +22030,7 @@ vt_09F531D0::
 	.4byte sub_080A972C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -22090,7 +22090,7 @@ vt_09F531D0::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -22102,7 +22102,7 @@ vt_09F531D0::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -22123,13 +22123,13 @@ vt_09F531D0::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -22153,25 +22153,25 @@ vt_09F531D0::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -22195,37 +22195,37 @@ vt_09F531D0::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -22291,100 +22291,100 @@ vt_09F531D0::
 	.4byte sub_080A96D8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -22484,7 +22484,7 @@ vt_09F53680::
 	.4byte sub_080A9834
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -22544,7 +22544,7 @@ vt_09F53680::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -22556,7 +22556,7 @@ vt_09F53680::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -22577,13 +22577,13 @@ vt_09F53680::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -22607,25 +22607,25 @@ vt_09F53680::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -22649,37 +22649,37 @@ vt_09F53680::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -22745,100 +22745,100 @@ vt_09F53680::
 	.4byte sub_080A9748
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -22938,7 +22938,7 @@ vt_09F53B30::
 	.4byte sub_080A9874
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -22998,7 +22998,7 @@ vt_09F53B30::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -23010,7 +23010,7 @@ vt_09F53B30::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -23031,13 +23031,13 @@ vt_09F53B30::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -23061,25 +23061,25 @@ vt_09F53B30::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -23103,37 +23103,37 @@ vt_09F53B30::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -23199,100 +23199,100 @@ vt_09F53B30::
 	.4byte sub_080A9850
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -23392,7 +23392,7 @@ vt_09F53FE0::
 	.4byte sub_080A9948
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -23452,7 +23452,7 @@ vt_09F53FE0::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -23464,7 +23464,7 @@ vt_09F53FE0::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -23485,13 +23485,13 @@ vt_09F53FE0::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -23515,25 +23515,25 @@ vt_09F53FE0::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -23557,37 +23557,37 @@ vt_09F53FE0::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -23653,100 +23653,100 @@ vt_09F53FE0::
 	.4byte sub_080A9890
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -23846,7 +23846,7 @@ vt_09F54490::
 	.4byte sub_080A9990
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -23906,7 +23906,7 @@ vt_09F54490::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -23918,7 +23918,7 @@ vt_09F54490::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -23939,13 +23939,13 @@ vt_09F54490::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -23969,25 +23969,25 @@ vt_09F54490::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -24011,37 +24011,37 @@ vt_09F54490::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -24107,100 +24107,100 @@ vt_09F54490::
 	.4byte sub_080A9964
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -24300,7 +24300,7 @@ vt_09F54940::
 	.4byte sub_080A9A74
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -24360,7 +24360,7 @@ vt_09F54940::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -24372,7 +24372,7 @@ vt_09F54940::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -24393,13 +24393,13 @@ vt_09F54940::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -24423,25 +24423,25 @@ vt_09F54940::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -24465,37 +24465,37 @@ vt_09F54940::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -24561,100 +24561,100 @@ vt_09F54940::
 	.4byte sub_080A99AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -24754,7 +24754,7 @@ vt_09F54DF0::
 	.4byte sub_080A9B7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -24814,7 +24814,7 @@ vt_09F54DF0::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -24826,7 +24826,7 @@ vt_09F54DF0::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -24847,13 +24847,13 @@ vt_09F54DF0::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -24877,25 +24877,25 @@ vt_09F54DF0::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -24919,37 +24919,37 @@ vt_09F54DF0::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -25015,100 +25015,100 @@ vt_09F54DF0::
 	.4byte sub_080A9A90
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -25208,7 +25208,7 @@ vt_09F552A0::
 	.4byte sub_080A9C34
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -25268,7 +25268,7 @@ vt_09F552A0::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -25280,7 +25280,7 @@ vt_09F552A0::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -25301,13 +25301,13 @@ vt_09F552A0::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -25331,25 +25331,25 @@ vt_09F552A0::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -25373,37 +25373,37 @@ vt_09F552A0::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -25469,100 +25469,100 @@ vt_09F552A0::
 	.4byte sub_080A9B98
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -25662,7 +25662,7 @@ vt_09F55750::
 	.4byte sub_080A9DD0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -25734,7 +25734,7 @@ vt_09F55750::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -25755,13 +25755,13 @@ vt_09F55750::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -25785,25 +25785,25 @@ vt_09F55750::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -25827,37 +25827,37 @@ vt_09F55750::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -25923,100 +25923,100 @@ vt_09F55750::
 	.4byte sub_080A9D64
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -26116,7 +26116,7 @@ vt_09F55C00::
 	.4byte sub_080A9E38
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -26188,7 +26188,7 @@ vt_09F55C00::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -26209,13 +26209,13 @@ vt_09F55C00::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -26239,25 +26239,25 @@ vt_09F55C00::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -26281,37 +26281,37 @@ vt_09F55C00::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -26377,100 +26377,100 @@ vt_09F55C00::
 	.4byte sub_080A9DEC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -26570,7 +26570,7 @@ vt_09F560B0::
 	.4byte sub_080A9ECC
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -26630,7 +26630,7 @@ vt_09F560B0::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -26642,7 +26642,7 @@ vt_09F560B0::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -26663,13 +26663,13 @@ vt_09F560B0::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -26693,25 +26693,25 @@ vt_09F560B0::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -26735,37 +26735,37 @@ vt_09F560B0::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -26831,100 +26831,100 @@ vt_09F560B0::
 	.4byte sub_080A9E54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -27024,7 +27024,7 @@ vt_09F56560::
 	.4byte sub_080AA418
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -27084,7 +27084,7 @@ vt_09F56560::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -27096,7 +27096,7 @@ vt_09F56560::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -27117,13 +27117,13 @@ vt_09F56560::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -27147,25 +27147,25 @@ vt_09F56560::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -27189,37 +27189,37 @@ vt_09F56560::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -27285,100 +27285,100 @@ vt_09F56560::
 	.4byte sub_080AA1F8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -27493,7 +27493,7 @@ vt_09F56A38::
 	.4byte sub_080AA488
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -27553,7 +27553,7 @@ vt_09F56A38::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -27565,7 +27565,7 @@ vt_09F56A38::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -27586,13 +27586,13 @@ vt_09F56A38::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -27616,25 +27616,25 @@ vt_09F56A38::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -27658,37 +27658,37 @@ vt_09F56A38::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -27754,100 +27754,100 @@ vt_09F56A38::
 	.4byte sub_080AA434
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -27947,7 +27947,7 @@ vt_09F56EE8::
 	.4byte sub_080AA4F0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -28007,7 +28007,7 @@ vt_09F56EE8::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -28019,7 +28019,7 @@ vt_09F56EE8::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -28040,13 +28040,13 @@ vt_09F56EE8::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -28070,25 +28070,25 @@ vt_09F56EE8::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -28112,37 +28112,37 @@ vt_09F56EE8::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -28208,100 +28208,100 @@ vt_09F56EE8::
 	.4byte sub_080AA4A4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -28401,7 +28401,7 @@ vt_09F57398::
 	.4byte sub_080AA5BC
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -28461,7 +28461,7 @@ vt_09F57398::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -28473,7 +28473,7 @@ vt_09F57398::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -28494,13 +28494,13 @@ vt_09F57398::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -28524,25 +28524,25 @@ vt_09F57398::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -28566,37 +28566,37 @@ vt_09F57398::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -28662,100 +28662,100 @@ vt_09F57398::
 	.4byte sub_080AA50C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -28855,7 +28855,7 @@ vt_09F57848::
 	.4byte sub_080AA974
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -28915,7 +28915,7 @@ vt_09F57848::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -28927,7 +28927,7 @@ vt_09F57848::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -28948,13 +28948,13 @@ vt_09F57848::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -28978,25 +28978,25 @@ vt_09F57848::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -29020,37 +29020,37 @@ vt_09F57848::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -29116,100 +29116,100 @@ vt_09F57848::
 	.4byte sub_080AA8D4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -29318,7 +29318,7 @@ vt_09F57D10::
 	.4byte sub_080AA9E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -29378,7 +29378,7 @@ vt_09F57D10::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -29390,7 +29390,7 @@ vt_09F57D10::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -29411,13 +29411,13 @@ vt_09F57D10::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -29441,25 +29441,25 @@ vt_09F57D10::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -29483,37 +29483,37 @@ vt_09F57D10::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -29579,100 +29579,100 @@ vt_09F57D10::
 	.4byte sub_080AA990
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -29772,7 +29772,7 @@ vt_09F581C0::
 	.4byte sub_080AAA40
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -29832,7 +29832,7 @@ vt_09F581C0::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -29844,7 +29844,7 @@ vt_09F581C0::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -29865,13 +29865,13 @@ vt_09F581C0::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -29895,25 +29895,25 @@ vt_09F581C0::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -29937,37 +29937,37 @@ vt_09F581C0::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -30033,100 +30033,100 @@ vt_09F581C0::
 	.4byte sub_080AA9FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -30226,7 +30226,7 @@ vt_09F58670::
 	.4byte sub_080AAAD8
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -30286,7 +30286,7 @@ vt_09F58670::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -30298,7 +30298,7 @@ vt_09F58670::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -30319,13 +30319,13 @@ vt_09F58670::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -30349,25 +30349,25 @@ vt_09F58670::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -30391,37 +30391,37 @@ vt_09F58670::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -30487,100 +30487,100 @@ vt_09F58670::
 	.4byte sub_080AAA5C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -30680,7 +30680,7 @@ vt_09F58B20::
 	.4byte sub_080AAC80
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -30740,7 +30740,7 @@ vt_09F58B20::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -30752,7 +30752,7 @@ vt_09F58B20::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -30773,13 +30773,13 @@ vt_09F58B20::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -30803,25 +30803,25 @@ vt_09F58B20::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -30845,37 +30845,37 @@ vt_09F58B20::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -30944,97 +30944,97 @@ vt_09F58B20::
 	.4byte sub_080AAB38
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -31137,7 +31137,7 @@ vt_09F58FD8::
 	.4byte sub_080AAD94
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -31197,7 +31197,7 @@ vt_09F58FD8::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -31209,7 +31209,7 @@ vt_09F58FD8::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -31230,13 +31230,13 @@ vt_09F58FD8::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -31260,25 +31260,25 @@ vt_09F58FD8::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -31302,37 +31302,37 @@ vt_09F58FD8::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -31398,100 +31398,100 @@ vt_09F58FD8::
 	.4byte sub_080AAD64
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -31591,7 +31591,7 @@ vt_09F59488::
 	.4byte sub_080AB168
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -31651,7 +31651,7 @@ vt_09F59488::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -31663,7 +31663,7 @@ vt_09F59488::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -31684,7 +31684,7 @@ vt_09F59488::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -31714,25 +31714,25 @@ vt_09F59488::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -31756,37 +31756,37 @@ vt_09F59488::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -31852,100 +31852,100 @@ vt_09F59488::
 	.4byte sub_080AB03C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AADD4
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -32057,7 +32057,7 @@ vt_09F59958::
 	.4byte sub_080AB32C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -32117,7 +32117,7 @@ vt_09F59958::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -32129,7 +32129,7 @@ vt_09F59958::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -32150,13 +32150,13 @@ vt_09F59958::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -32180,25 +32180,25 @@ vt_09F59958::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -32222,37 +32222,37 @@ vt_09F59958::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -32318,100 +32318,100 @@ vt_09F59958::
 	.4byte sub_080AB1E4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -32520,7 +32520,7 @@ vt_09F59E20::
 	.4byte sub_080AB3A8
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -32580,7 +32580,7 @@ vt_09F59E20::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -32592,7 +32592,7 @@ vt_09F59E20::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -32613,13 +32613,13 @@ vt_09F59E20::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -32643,25 +32643,25 @@ vt_09F59E20::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -32685,37 +32685,37 @@ vt_09F59E20::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -32781,100 +32781,100 @@ vt_09F59E20::
 	.4byte sub_080AB348
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -32974,7 +32974,7 @@ vt_09F5A2D0::
 	.4byte sub_080AB41C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -33034,7 +33034,7 @@ vt_09F5A2D0::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -33046,7 +33046,7 @@ vt_09F5A2D0::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -33067,13 +33067,13 @@ vt_09F5A2D0::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -33097,25 +33097,25 @@ vt_09F5A2D0::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -33139,37 +33139,37 @@ vt_09F5A2D0::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -33235,100 +33235,100 @@ vt_09F5A2D0::
 	.4byte sub_080AB3C4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -33428,7 +33428,7 @@ vt_09F5A780::
 	.4byte sub_080AB7A8
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -33488,7 +33488,7 @@ vt_09F5A780::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -33500,7 +33500,7 @@ vt_09F5A780::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -33521,13 +33521,13 @@ vt_09F5A780::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -33551,25 +33551,25 @@ vt_09F5A780::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -33593,37 +33593,37 @@ vt_09F5A780::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -33689,100 +33689,100 @@ vt_09F5A780::
 	.4byte sub_080AB6B8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -33891,7 +33891,7 @@ vt_09F5AC48::
 	.4byte sub_080ABA1C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -33951,7 +33951,7 @@ vt_09F5AC48::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -33963,7 +33963,7 @@ vt_09F5AC48::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -33984,13 +33984,13 @@ vt_09F5AC48::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -34014,25 +34014,25 @@ vt_09F5AC48::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -34056,37 +34056,37 @@ vt_09F5AC48::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -34152,100 +34152,100 @@ vt_09F5AC48::
 	.4byte sub_080AB98C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -34348,7 +34348,7 @@ vt_09F5B100::
 	.4byte sub_080ABB24
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -34420,7 +34420,7 @@ vt_09F5B100::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -34441,13 +34441,13 @@ vt_09F5B100::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -34471,25 +34471,25 @@ vt_09F5B100::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -34513,37 +34513,37 @@ vt_09F5B100::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -34609,100 +34609,100 @@ vt_09F5B100::
 	.4byte sub_080ABAD8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -34802,7 +34802,7 @@ vt_09F5B5B0::
 	.4byte sub_080ABBA4
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -34862,7 +34862,7 @@ vt_09F5B5B0::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -34874,7 +34874,7 @@ vt_09F5B5B0::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -34895,13 +34895,13 @@ vt_09F5B5B0::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -34925,25 +34925,25 @@ vt_09F5B5B0::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -34967,37 +34967,37 @@ vt_09F5B5B0::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -35063,100 +35063,100 @@ vt_09F5B5B0::
 	.4byte sub_080ABB40
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -35256,7 +35256,7 @@ vt_09F5BA60::
 	.4byte sub_080ABE6C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -35316,7 +35316,7 @@ vt_09F5BA60::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -35328,7 +35328,7 @@ vt_09F5BA60::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -35349,13 +35349,13 @@ vt_09F5BA60::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -35379,25 +35379,25 @@ vt_09F5BA60::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -35421,37 +35421,37 @@ vt_09F5BA60::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -35517,100 +35517,100 @@ vt_09F5BA60::
 	.4byte sub_080ABDBC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -35722,7 +35722,7 @@ vt_09F5BF30::
 	.4byte sub_080AC1B4
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -35782,7 +35782,7 @@ vt_09F5BF30::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -35794,7 +35794,7 @@ vt_09F5BF30::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -35815,7 +35815,7 @@ vt_09F5BF30::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -35845,25 +35845,25 @@ vt_09F5BF30::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -35887,37 +35887,37 @@ vt_09F5BF30::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -35983,100 +35983,100 @@ vt_09F5BF30::
 	.4byte sub_080AC044
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -36176,7 +36176,7 @@ vt_09F5C3E0::
 	.4byte sub_080AC210
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -36236,7 +36236,7 @@ vt_09F5C3E0::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -36248,7 +36248,7 @@ vt_09F5C3E0::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -36269,13 +36269,13 @@ vt_09F5C3E0::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -36299,25 +36299,25 @@ vt_09F5C3E0::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -36341,37 +36341,37 @@ vt_09F5C3E0::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -36437,100 +36437,100 @@ vt_09F5C3E0::
 	.4byte sub_080AC1D0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -36630,7 +36630,7 @@ vt_09F5C890::
 	.4byte sub_080AC360
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -36690,7 +36690,7 @@ vt_09F5C890::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -36702,7 +36702,7 @@ vt_09F5C890::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -36723,13 +36723,13 @@ vt_09F5C890::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -36753,25 +36753,25 @@ vt_09F5C890::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -36795,37 +36795,37 @@ vt_09F5C890::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AC22C
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -36891,13 +36891,13 @@ vt_09F5C890::
 	.4byte sub_080AC2A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
@@ -36906,85 +36906,85 @@ vt_09F5C890::
 	.4byte sub_080AC260
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -37084,7 +37084,7 @@ vt_09F5CD40::
 	.4byte sub_080AC574
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -37144,7 +37144,7 @@ vt_09F5CD40::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -37156,7 +37156,7 @@ vt_09F5CD40::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -37177,13 +37177,13 @@ vt_09F5CD40::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -37207,25 +37207,25 @@ vt_09F5CD40::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -37249,37 +37249,37 @@ vt_09F5CD40::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -37345,100 +37345,100 @@ vt_09F5CD40::
 	.4byte sub_080AC4A8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -37547,7 +37547,7 @@ vt_09F5D208::
 	.4byte sub_080AC6E8
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -37607,7 +37607,7 @@ vt_09F5D208::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -37619,7 +37619,7 @@ vt_09F5D208::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -37640,13 +37640,13 @@ vt_09F5D208::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -37670,25 +37670,25 @@ vt_09F5D208::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -37712,37 +37712,37 @@ vt_09F5D208::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -37808,100 +37808,100 @@ vt_09F5D208::
 	.4byte sub_080AC678
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -38001,7 +38001,7 @@ vt_09F5D6B8::
 	.4byte sub_080AC734
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -38061,7 +38061,7 @@ vt_09F5D6B8::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -38073,7 +38073,7 @@ vt_09F5D6B8::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -38094,13 +38094,13 @@ vt_09F5D6B8::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -38124,25 +38124,25 @@ vt_09F5D6B8::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -38166,37 +38166,37 @@ vt_09F5D6B8::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -38262,100 +38262,100 @@ vt_09F5D6B8::
 	.4byte sub_080AC704
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -38455,7 +38455,7 @@ vt_09F5DB68::
 	.4byte sub_080AC7C8
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -38515,7 +38515,7 @@ vt_09F5DB68::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -38527,7 +38527,7 @@ vt_09F5DB68::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -38548,13 +38548,13 @@ vt_09F5DB68::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -38578,25 +38578,25 @@ vt_09F5DB68::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -38620,37 +38620,37 @@ vt_09F5DB68::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -38716,10 +38716,10 @@ vt_09F5DB68::
 	.4byte sub_080AC7A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AC750
@@ -38728,88 +38728,88 @@ vt_09F5DB68::
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -38909,7 +38909,7 @@ vt_09F5E018::
 	.4byte sub_080AC834
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -38969,7 +38969,7 @@ vt_09F5E018::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -38981,7 +38981,7 @@ vt_09F5E018::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -39002,13 +39002,13 @@ vt_09F5E018::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -39032,25 +39032,25 @@ vt_09F5E018::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -39074,37 +39074,37 @@ vt_09F5E018::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -39170,100 +39170,100 @@ vt_09F5E018::
 	.4byte sub_080AC7E4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -39363,7 +39363,7 @@ vt_09F5E4C8::
 	.4byte sub_080AC8CC
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -39423,7 +39423,7 @@ vt_09F5E4C8::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -39435,7 +39435,7 @@ vt_09F5E4C8::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -39456,13 +39456,13 @@ vt_09F5E4C8::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -39486,25 +39486,25 @@ vt_09F5E4C8::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -39528,37 +39528,37 @@ vt_09F5E4C8::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -39624,100 +39624,100 @@ vt_09F5E4C8::
 	.4byte sub_080AC850
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -39817,7 +39817,7 @@ vt_09F5E978::
 	.4byte sub_080ACA74
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -39877,7 +39877,7 @@ vt_09F5E978::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -39889,7 +39889,7 @@ vt_09F5E978::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -39910,13 +39910,13 @@ vt_09F5E978::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -39940,25 +39940,25 @@ vt_09F5E978::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -39982,37 +39982,37 @@ vt_09F5E978::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -40078,100 +40078,100 @@ vt_09F5E978::
 	.4byte sub_080AC9D4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -40280,7 +40280,7 @@ vt_09F5EE40::
 	.4byte sub_080ACAD0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -40340,7 +40340,7 @@ vt_09F5EE40::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -40352,7 +40352,7 @@ vt_09F5EE40::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -40373,13 +40373,13 @@ vt_09F5EE40::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -40403,25 +40403,25 @@ vt_09F5EE40::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -40445,37 +40445,37 @@ vt_09F5EE40::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -40541,100 +40541,100 @@ vt_09F5EE40::
 	.4byte sub_080ACA90
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -40734,7 +40734,7 @@ vt_09F5F2F0::
 	.4byte sub_080ACCE4
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -40794,7 +40794,7 @@ vt_09F5F2F0::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -40806,7 +40806,7 @@ vt_09F5F2F0::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -40827,13 +40827,13 @@ vt_09F5F2F0::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -40857,25 +40857,25 @@ vt_09F5F2F0::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -40899,37 +40899,37 @@ vt_09F5F2F0::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -40995,100 +40995,100 @@ vt_09F5F2F0::
 	.4byte sub_080ACC04
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -41197,7 +41197,7 @@ vt_09F5F7B8::
 	.4byte sub_080ACF20
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -41257,7 +41257,7 @@ vt_09F5F7B8::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -41269,7 +41269,7 @@ vt_09F5F7B8::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -41290,13 +41290,13 @@ vt_09F5F7B8::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -41320,25 +41320,25 @@ vt_09F5F7B8::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -41362,37 +41362,37 @@ vt_09F5F7B8::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -41458,100 +41458,100 @@ vt_09F5F7B8::
 	.4byte sub_080ACE64
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -41651,7 +41651,7 @@ vt_09F5FC68::
 	.4byte sub_080AD074
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -41711,7 +41711,7 @@ vt_09F5FC68::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -41723,7 +41723,7 @@ vt_09F5FC68::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -41744,13 +41744,13 @@ vt_09F5FC68::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -41774,25 +41774,25 @@ vt_09F5FC68::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -41816,37 +41816,37 @@ vt_09F5FC68::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -41912,100 +41912,100 @@ vt_09F5FC68::
 	.4byte sub_080AD004
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -42105,7 +42105,7 @@ vt_09F60118::
 	.4byte sub_080AD198
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -42165,7 +42165,7 @@ vt_09F60118::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -42177,7 +42177,7 @@ vt_09F60118::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -42198,13 +42198,13 @@ vt_09F60118::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -42228,25 +42228,25 @@ vt_09F60118::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -42270,37 +42270,37 @@ vt_09F60118::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -42369,97 +42369,97 @@ vt_09F60118::
 	.4byte sub_080AD090
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -42559,7 +42559,7 @@ vt_09F605C8::
 	.4byte sub_080AD304
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -42619,7 +42619,7 @@ vt_09F605C8::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -42631,7 +42631,7 @@ vt_09F605C8::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -42652,13 +42652,13 @@ vt_09F605C8::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -42682,25 +42682,25 @@ vt_09F605C8::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -42724,37 +42724,37 @@ vt_09F605C8::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -42820,10 +42820,10 @@ vt_09F605C8::
 	.4byte sub_080AD2C8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AD1B4
@@ -42832,88 +42832,88 @@ vt_09F605C8::
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -43013,7 +43013,7 @@ vt_09F60A78::
 	.4byte sub_080AD364
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -43073,7 +43073,7 @@ vt_09F60A78::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -43085,7 +43085,7 @@ vt_09F60A78::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -43106,13 +43106,13 @@ vt_09F60A78::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -43136,25 +43136,25 @@ vt_09F60A78::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -43178,37 +43178,37 @@ vt_09F60A78::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -43274,100 +43274,100 @@ vt_09F60A78::
 	.4byte sub_080AD320
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -43467,7 +43467,7 @@ vt_09F60F28::
 	.4byte sub_080AD694
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -43527,7 +43527,7 @@ vt_09F60F28::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -43539,7 +43539,7 @@ vt_09F60F28::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -43560,13 +43560,13 @@ vt_09F60F28::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -43590,25 +43590,25 @@ vt_09F60F28::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -43632,37 +43632,37 @@ vt_09F60F28::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AD380
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -43728,100 +43728,100 @@ vt_09F60F28::
 	.4byte sub_080AD5D0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -43933,7 +43933,7 @@ vt_09F613F8::
 	.4byte sub_080AD998
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -43993,7 +43993,7 @@ vt_09F613F8::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -44005,7 +44005,7 @@ vt_09F613F8::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -44026,13 +44026,13 @@ vt_09F613F8::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -44056,25 +44056,25 @@ vt_09F613F8::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -44098,37 +44098,37 @@ vt_09F613F8::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -44194,100 +44194,100 @@ vt_09F613F8::
 	.4byte sub_080AD874
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -44399,7 +44399,7 @@ vt_09F618C8::
 	.4byte sub_080ADD1C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -44459,7 +44459,7 @@ vt_09F618C8::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -44471,7 +44471,7 @@ vt_09F618C8::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -44492,13 +44492,13 @@ vt_09F618C8::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -44522,25 +44522,25 @@ vt_09F618C8::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -44564,37 +44564,37 @@ vt_09F618C8::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -44660,100 +44660,100 @@ vt_09F618C8::
 	.4byte sub_080ADBE8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -44862,7 +44862,7 @@ vt_09F61D90::
 	.4byte sub_080AE038
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -44934,7 +44934,7 @@ vt_09F61D90::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -44955,13 +44955,13 @@ vt_09F61D90::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -44985,25 +44985,25 @@ vt_09F61D90::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -45027,37 +45027,37 @@ vt_09F61D90::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -45123,100 +45123,100 @@ vt_09F61D90::
 	.4byte sub_080ADE38
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -45316,7 +45316,7 @@ vt_09F62240::
 	.4byte sub_080AE1D4
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -45376,7 +45376,7 @@ vt_09F62240::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -45388,7 +45388,7 @@ vt_09F62240::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -45409,13 +45409,13 @@ vt_09F62240::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -45439,25 +45439,25 @@ vt_09F62240::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -45481,37 +45481,37 @@ vt_09F62240::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -45577,100 +45577,100 @@ vt_09F62240::
 	.4byte sub_080AE118
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -45770,7 +45770,7 @@ vt_09F626F0::
 	.4byte sub_080AE614
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -45830,7 +45830,7 @@ vt_09F626F0::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -45842,7 +45842,7 @@ vt_09F626F0::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -45863,13 +45863,13 @@ vt_09F626F0::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -45893,25 +45893,25 @@ vt_09F626F0::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -45935,37 +45935,37 @@ vt_09F626F0::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -46034,97 +46034,97 @@ vt_09F626F0::
 	.4byte sub_080AE2EC
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -46224,7 +46224,7 @@ vt_09F62BA0::
 	.4byte sub_080AE6C8
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -46284,7 +46284,7 @@ vt_09F62BA0::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -46296,7 +46296,7 @@ vt_09F62BA0::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -46317,13 +46317,13 @@ vt_09F62BA0::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -46347,25 +46347,25 @@ vt_09F62BA0::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -46389,37 +46389,37 @@ vt_09F62BA0::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -46485,100 +46485,100 @@ vt_09F62BA0::
 	.4byte sub_080AE630
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -46678,7 +46678,7 @@ vt_09F63050::
 	.4byte sub_080AE738
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -46738,7 +46738,7 @@ vt_09F63050::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -46750,7 +46750,7 @@ vt_09F63050::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -46771,13 +46771,13 @@ vt_09F63050::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -46801,25 +46801,25 @@ vt_09F63050::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -46843,37 +46843,37 @@ vt_09F63050::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -46939,100 +46939,100 @@ vt_09F63050::
 	.4byte sub_080AE6E4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -47132,7 +47132,7 @@ vt_09F63500::
 	.4byte sub_080AE880
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -47192,7 +47192,7 @@ vt_09F63500::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -47204,7 +47204,7 @@ vt_09F63500::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -47225,13 +47225,13 @@ vt_09F63500::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -47255,25 +47255,25 @@ vt_09F63500::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -47297,37 +47297,37 @@ vt_09F63500::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -47393,100 +47393,100 @@ vt_09F63500::
 	.4byte sub_080AE818
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -47586,7 +47586,7 @@ vt_09F639B0::
 	.4byte sub_080AECA8
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -47658,7 +47658,7 @@ vt_09F639B0::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -47679,13 +47679,13 @@ vt_09F639B0::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -47709,25 +47709,25 @@ vt_09F639B0::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -47751,37 +47751,37 @@ vt_09F639B0::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AE89C
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -47847,100 +47847,100 @@ vt_09F639B0::
 	.4byte sub_080AEBB8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -48043,7 +48043,7 @@ vt_09F63E68::
 	.4byte sub_080AED14
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -48103,7 +48103,7 @@ vt_09F63E68::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -48115,7 +48115,7 @@ vt_09F63E68::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -48136,13 +48136,13 @@ vt_09F63E68::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -48166,25 +48166,25 @@ vt_09F63E68::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -48208,37 +48208,37 @@ vt_09F63E68::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -48304,100 +48304,100 @@ vt_09F63E68::
 	.4byte sub_080AECC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -48497,7 +48497,7 @@ vt_09F64318::
 	.4byte sub_080AF2C8
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -48557,7 +48557,7 @@ vt_09F64318::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -48569,7 +48569,7 @@ vt_09F64318::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -48590,13 +48590,13 @@ vt_09F64318::
 	.4byte sub_080AEE38
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -48620,25 +48620,25 @@ vt_09F64318::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -48662,37 +48662,37 @@ vt_09F64318::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -48758,100 +48758,100 @@ vt_09F64318::
 	.4byte sub_080AF25C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AEDC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AED7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -48958,7 +48958,7 @@ vt_09F64750::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -48970,7 +48970,7 @@ vt_09F64750::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -49048,7 +49048,7 @@ vt_09F64750::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -49218,7 +49218,7 @@ vt_09F64A00::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -49230,7 +49230,7 @@ vt_09F64A00::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -49308,7 +49308,7 @@ vt_09F64A00::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -49490,7 +49490,7 @@ vt_09F64CB0::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -49568,7 +49568,7 @@ vt_09F64CB0::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -49738,7 +49738,7 @@ vt_09F64F60::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B09AC
@@ -49750,7 +49750,7 @@ vt_09F64F60::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -49828,7 +49828,7 @@ vt_09F64F60::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -49998,7 +49998,7 @@ vt_09F65210::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -50010,7 +50010,7 @@ vt_09F65210::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -50088,7 +50088,7 @@ vt_09F65210::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -50270,7 +50270,7 @@ vt_09F654C0::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -50348,7 +50348,7 @@ vt_09F654C0::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -50530,7 +50530,7 @@ vt_09F65770::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -50608,7 +50608,7 @@ vt_09F65770::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -50778,7 +50778,7 @@ vt_09F65A20::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -50790,7 +50790,7 @@ vt_09F65A20::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -50868,7 +50868,7 @@ vt_09F65A20::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -51038,7 +51038,7 @@ vt_09F65CD0::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -51050,7 +51050,7 @@ vt_09F65CD0::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -51128,7 +51128,7 @@ vt_09F65CD0::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -51298,7 +51298,7 @@ vt_09F65F80::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -51310,7 +51310,7 @@ vt_09F65F80::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -51388,7 +51388,7 @@ vt_09F65F80::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -51558,7 +51558,7 @@ vt_09F66230::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -51570,7 +51570,7 @@ vt_09F66230::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -51648,7 +51648,7 @@ vt_09F66230::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -51818,7 +51818,7 @@ vt_09F664E0::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -51830,7 +51830,7 @@ vt_09F664E0::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -51908,7 +51908,7 @@ vt_09F664E0::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -52078,7 +52078,7 @@ vt_09F66790::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -52090,7 +52090,7 @@ vt_09F66790::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -52168,7 +52168,7 @@ vt_09F66790::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -52350,7 +52350,7 @@ vt_09F66A40::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -52428,7 +52428,7 @@ vt_09F66A40::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -52598,7 +52598,7 @@ vt_09F66CF0::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -52610,7 +52610,7 @@ vt_09F66CF0::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -52688,7 +52688,7 @@ vt_09F66CF0::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -52858,7 +52858,7 @@ vt_09F66FA0::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -52870,7 +52870,7 @@ vt_09F66FA0::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -52948,7 +52948,7 @@ vt_09F66FA0::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -53118,7 +53118,7 @@ vt_09F67250::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -53130,7 +53130,7 @@ vt_09F67250::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -53208,7 +53208,7 @@ vt_09F67250::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -53390,7 +53390,7 @@ vt_09F67500::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -53468,7 +53468,7 @@ vt_09F67500::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -53650,7 +53650,7 @@ vt_09F677B0::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -53728,7 +53728,7 @@ vt_09F677B0::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -53898,7 +53898,7 @@ vt_09F67A60::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -53910,7 +53910,7 @@ vt_09F67A60::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -53988,7 +53988,7 @@ vt_09F67A60::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -54158,7 +54158,7 @@ vt_09F67D10::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -54170,7 +54170,7 @@ vt_09F67D10::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -54248,7 +54248,7 @@ vt_09F67D10::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -54430,7 +54430,7 @@ vt_09F67FC0::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -54508,7 +54508,7 @@ vt_09F67FC0::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -54678,7 +54678,7 @@ vt_09F68270::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -54690,7 +54690,7 @@ vt_09F68270::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -54768,7 +54768,7 @@ vt_09F68270::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -54938,7 +54938,7 @@ vt_09F68520::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -54950,7 +54950,7 @@ vt_09F68520::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -55028,7 +55028,7 @@ vt_09F68520::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -55210,7 +55210,7 @@ vt_09F687D0::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -55288,7 +55288,7 @@ vt_09F687D0::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -55470,7 +55470,7 @@ vt_09F68A80::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -55548,7 +55548,7 @@ vt_09F68A80::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -55730,7 +55730,7 @@ vt_09F68D30::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -55808,7 +55808,7 @@ vt_09F68D30::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -55978,7 +55978,7 @@ vt_09F68FE0::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -55990,7 +55990,7 @@ vt_09F68FE0::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -56068,7 +56068,7 @@ vt_09F68FE0::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -56250,7 +56250,7 @@ vt_09F69290::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -56328,7 +56328,7 @@ vt_09F69290::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -56501,7 +56501,7 @@ vt_09F69548::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -56513,7 +56513,7 @@ vt_09F69548::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -56591,7 +56591,7 @@ vt_09F69548::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -56761,7 +56761,7 @@ vt_09F697F8::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -56773,7 +56773,7 @@ vt_09F697F8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -56851,7 +56851,7 @@ vt_09F697F8::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -57033,7 +57033,7 @@ vt_09F69AA8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -57111,7 +57111,7 @@ vt_09F69AA8::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -57281,7 +57281,7 @@ vt_09F69D58::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -57293,7 +57293,7 @@ vt_09F69D58::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -57371,7 +57371,7 @@ vt_09F69D58::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -57541,7 +57541,7 @@ vt_09F6A008::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -57553,7 +57553,7 @@ vt_09F6A008::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -57631,7 +57631,7 @@ vt_09F6A008::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -57813,7 +57813,7 @@ vt_09F6A2B8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -57891,7 +57891,7 @@ vt_09F6A2B8::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -58073,7 +58073,7 @@ vt_09F6A568::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -58151,7 +58151,7 @@ vt_09F6A568::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -58321,7 +58321,7 @@ vt_09F6A818::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -58333,7 +58333,7 @@ vt_09F6A818::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -58411,7 +58411,7 @@ vt_09F6A818::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -58593,7 +58593,7 @@ vt_09F6AAC8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -58671,7 +58671,7 @@ vt_09F6AAC8::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -58841,7 +58841,7 @@ vt_09F6AD78::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -58853,7 +58853,7 @@ vt_09F6AD78::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -58931,7 +58931,7 @@ vt_09F6AD78::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -59101,7 +59101,7 @@ vt_09F6B028::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -59113,7 +59113,7 @@ vt_09F6B028::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -59191,7 +59191,7 @@ vt_09F6B028::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -59361,7 +59361,7 @@ vt_09F6B2D8::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -59373,7 +59373,7 @@ vt_09F6B2D8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -59451,7 +59451,7 @@ vt_09F6B2D8::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -59621,7 +59621,7 @@ vt_09F6B588::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -59633,7 +59633,7 @@ vt_09F6B588::
 	.4byte sub_080B3090
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -59711,7 +59711,7 @@ vt_09F6B588::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -59887,7 +59887,7 @@ vt_09F6B848::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -59899,7 +59899,7 @@ vt_09F6B848::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -59977,7 +59977,7 @@ vt_09F6B848::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -60159,7 +60159,7 @@ vt_09F6BAF8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -60237,7 +60237,7 @@ vt_09F6BAF8::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -60407,7 +60407,7 @@ vt_09F6BDA8::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -60419,7 +60419,7 @@ vt_09F6BDA8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -60497,7 +60497,7 @@ vt_09F6BDA8::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -60667,7 +60667,7 @@ vt_09F6C058::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -60679,7 +60679,7 @@ vt_09F6C058::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -60757,7 +60757,7 @@ vt_09F6C058::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -60927,7 +60927,7 @@ vt_09F6C308::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -60939,7 +60939,7 @@ vt_09F6C308::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -61017,7 +61017,7 @@ vt_09F6C308::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -61187,7 +61187,7 @@ vt_09F6C5B8::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -61199,7 +61199,7 @@ vt_09F6C5B8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -61277,7 +61277,7 @@ vt_09F6C5B8::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -61447,7 +61447,7 @@ vt_09F6C868::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -61459,7 +61459,7 @@ vt_09F6C868::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -61537,7 +61537,7 @@ vt_09F6C868::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -61707,7 +61707,7 @@ vt_09F6CB18::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -61719,7 +61719,7 @@ vt_09F6CB18::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -61797,7 +61797,7 @@ vt_09F6CB18::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -61967,7 +61967,7 @@ vt_09F6CDC8::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -61979,7 +61979,7 @@ vt_09F6CDC8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -62057,7 +62057,7 @@ vt_09F6CDC8::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -62227,7 +62227,7 @@ vt_09F6D078::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -62239,7 +62239,7 @@ vt_09F6D078::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -62317,7 +62317,7 @@ vt_09F6D078::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -62487,7 +62487,7 @@ vt_09F6D328::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B387C
@@ -62499,7 +62499,7 @@ vt_09F6D328::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -62577,7 +62577,7 @@ vt_09F6D328::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -62747,7 +62747,7 @@ vt_09F6D5D8::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -62759,7 +62759,7 @@ vt_09F6D5D8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -62837,7 +62837,7 @@ vt_09F6D5D8::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -63007,7 +63007,7 @@ vt_09F6D888::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -63019,7 +63019,7 @@ vt_09F6D888::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -63097,7 +63097,7 @@ vt_09F6D888::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -63267,7 +63267,7 @@ vt_09F6DB38::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -63279,7 +63279,7 @@ vt_09F6DB38::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -63357,7 +63357,7 @@ vt_09F6DB38::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -63539,7 +63539,7 @@ vt_09F6DDE8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -63617,7 +63617,7 @@ vt_09F6DDE8::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -63799,7 +63799,7 @@ vt_09F6E098::
 	.4byte sub_080B3CC0
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -63877,7 +63877,7 @@ vt_09F6E098::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -64047,7 +64047,7 @@ vt_09F6E348::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -64059,7 +64059,7 @@ vt_09F6E348::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -64137,7 +64137,7 @@ vt_09F6E348::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -64307,7 +64307,7 @@ vt_09F6E5F8::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -64319,7 +64319,7 @@ vt_09F6E5F8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B3D6C
@@ -64397,7 +64397,7 @@ vt_09F6E5F8::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -64567,7 +64567,7 @@ vt_09F6E8A8::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -64579,7 +64579,7 @@ vt_09F6E8A8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B3E00
@@ -64657,7 +64657,7 @@ vt_09F6E8A8::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -64827,7 +64827,7 @@ vt_09F6EB58::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -64839,7 +64839,7 @@ vt_09F6EB58::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -64917,7 +64917,7 @@ vt_09F6EB58::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4124
@@ -65087,7 +65087,7 @@ vt_09F6EE08::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -65099,7 +65099,7 @@ vt_09F6EE08::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4310
@@ -65177,7 +65177,7 @@ vt_09F6EE08::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -65347,7 +65347,7 @@ vt_09F6F0B8::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -65359,7 +65359,7 @@ vt_09F6F0B8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4414
@@ -65437,7 +65437,7 @@ vt_09F6F0B8::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -65607,7 +65607,7 @@ vt_09F6F368::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -65619,7 +65619,7 @@ vt_09F6F368::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B44A0
@@ -65697,7 +65697,7 @@ vt_09F6F368::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -65867,7 +65867,7 @@ vt_09F6F618::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -65879,7 +65879,7 @@ vt_09F6F618::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4540
@@ -65957,7 +65957,7 @@ vt_09F6F618::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -66127,7 +66127,7 @@ vt_09F6F8C8::
 	.4byte sub_080B4598
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -66139,7 +66139,7 @@ vt_09F6F8C8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -66217,7 +66217,7 @@ vt_09F6F8C8::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -66387,7 +66387,7 @@ vt_09F6FB78::
 	.4byte sub_080B45C8
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -66399,7 +66399,7 @@ vt_09F6FB78::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -66477,7 +66477,7 @@ vt_09F6FB78::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -66647,7 +66647,7 @@ vt_09F6FE28::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -66659,7 +66659,7 @@ vt_09F6FE28::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -66737,7 +66737,7 @@ vt_09F6FE28::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -66907,7 +66907,7 @@ vt_09F700D8::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -66919,7 +66919,7 @@ vt_09F700D8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -66997,7 +66997,7 @@ vt_09F700D8::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -67167,7 +67167,7 @@ vt_09F70388::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -67179,7 +67179,7 @@ vt_09F70388::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -67257,7 +67257,7 @@ vt_09F70388::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -67427,7 +67427,7 @@ vt_09F70638::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -67517,7 +67517,7 @@ vt_09F70638::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -67687,7 +67687,7 @@ vt_09F708E8::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -67777,7 +67777,7 @@ vt_09F708E8::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -67947,7 +67947,7 @@ vt_09F70B98::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -67959,7 +67959,7 @@ vt_09F70B98::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -68037,7 +68037,7 @@ vt_09F70B98::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -68297,7 +68297,7 @@ vt_09F70E48::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -68467,7 +68467,7 @@ vt_09F710F8::
 	.4byte sub_080B4B14
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -68479,7 +68479,7 @@ vt_09F710F8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -68557,7 +68557,7 @@ vt_09F710F8::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -68727,7 +68727,7 @@ vt_09F713A8::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -68739,7 +68739,7 @@ vt_09F713A8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -68817,7 +68817,7 @@ vt_09F713A8::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -68990,7 +68990,7 @@ vt_09F71660::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -69002,7 +69002,7 @@ vt_09F71660::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -69080,7 +69080,7 @@ vt_09F71660::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -69340,7 +69340,7 @@ vt_09F71910::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -69510,7 +69510,7 @@ vt_09F71BC0::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -69600,7 +69600,7 @@ vt_09F71BC0::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -69770,7 +69770,7 @@ vt_09F71E70::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -69782,7 +69782,7 @@ vt_09F71E70::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -69860,7 +69860,7 @@ vt_09F71E70::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -70030,7 +70030,7 @@ vt_09F72120::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -70042,7 +70042,7 @@ vt_09F72120::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -70120,7 +70120,7 @@ vt_09F72120::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -75068,7 +75068,7 @@ vt_09F754F8::
 	.4byte sub_08082668
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808266C
+	.4byte disableAllStatuses
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BAEE0
@@ -77994,7 +77994,7 @@ vt_09F772F8::
 	.4byte sub_08082668
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808266C
+	.4byte disableAllStatuses
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082670
@@ -78116,7 +78116,7 @@ vt_09F77440::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -78128,7 +78128,7 @@ vt_09F77440::
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -78206,7 +78206,7 @@ vt_09F77440::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
@@ -78379,7 +78379,7 @@ vt_09F776F8::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -78391,7 +78391,7 @@ vt_09F776F8::
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -78469,7 +78469,7 @@ vt_09F776F8::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
@@ -78642,7 +78642,7 @@ vt_09F779B0::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -78654,7 +78654,7 @@ vt_09F779B0::
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -78732,7 +78732,7 @@ vt_09F779B0::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
@@ -78905,7 +78905,7 @@ vt_09F77C68::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -78917,7 +78917,7 @@ vt_09F77C68::
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -78995,7 +78995,7 @@ vt_09F77C68::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
@@ -79168,7 +79168,7 @@ vt_09F77F20::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -79180,7 +79180,7 @@ vt_09F77F20::
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -79258,7 +79258,7 @@ vt_09F77F20::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
@@ -79431,7 +79431,7 @@ vt_09F781D8::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -79443,7 +79443,7 @@ vt_09F781D8::
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -79521,7 +79521,7 @@ vt_09F781D8::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
@@ -79694,7 +79694,7 @@ vt_09F78490::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -79706,7 +79706,7 @@ vt_09F78490::
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -79784,7 +79784,7 @@ vt_09F78490::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
@@ -79957,7 +79957,7 @@ vt_09F78748::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -79969,7 +79969,7 @@ vt_09F78748::
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -80047,7 +80047,7 @@ vt_09F78748::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
@@ -80223,7 +80223,7 @@ vt_09F78A08::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -80235,7 +80235,7 @@ vt_09F78A08::
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -80313,7 +80313,7 @@ vt_09F78A08::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
@@ -80498,7 +80498,7 @@ vt_09F78CC0::
 	.4byte sub_080BD150
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -80576,7 +80576,7 @@ vt_09F78CC0::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
@@ -80761,7 +80761,7 @@ vt_09F78F78::
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -80839,7 +80839,7 @@ vt_09F78F78::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
@@ -81024,7 +81024,7 @@ vt_09F79230::
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -81102,7 +81102,7 @@ vt_09F79230::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
@@ -81287,7 +81287,7 @@ vt_09F794E8::
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -81365,7 +81365,7 @@ vt_09F794E8::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
@@ -81538,7 +81538,7 @@ __vt_5Goods::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -81550,7 +81550,7 @@ __vt_5Goods::
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -81628,7 +81628,7 @@ __vt_5Goods::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC
@@ -81801,7 +81801,7 @@ _vt.5Goods::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -81813,7 +81813,7 @@ _vt.5Goods::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -81891,7 +81891,7 @@ _vt.5Goods::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_1a0__5Goods
@@ -81999,7 +81999,7 @@ _vt.5Goods::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C5GoodsP4Unit
@@ -82081,7 +82081,7 @@ _vt.11TriviaCard4::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -82093,7 +82093,7 @@ _vt.11TriviaCard4::
 	.4byte tellResisted__11TriviaCard4P4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -82171,7 +82171,7 @@ _vt.11TriviaCard4::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_1a0__5Goods
@@ -82279,7 +82279,7 @@ _vt.11TriviaCard4::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -82359,7 +82359,7 @@ _vt.11TriviaCard3::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -82371,7 +82371,7 @@ _vt.11TriviaCard3::
 	.4byte tellResisted__11TriviaCard3P4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -82449,7 +82449,7 @@ _vt.11TriviaCard3::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_1a0__5Goods
@@ -82557,7 +82557,7 @@ _vt.11TriviaCard3::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -82637,7 +82637,7 @@ _vt.11TriviaCard2::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -82649,7 +82649,7 @@ _vt.11TriviaCard2::
 	.4byte tellResisted__11TriviaCard2P4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -82727,7 +82727,7 @@ _vt.11TriviaCard2::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_1a0__5Goods
@@ -82835,7 +82835,7 @@ _vt.11TriviaCard2::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -82915,7 +82915,7 @@ _vt.11TriviaCard1::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -82927,7 +82927,7 @@ _vt.11TriviaCard1::
 	.4byte tellResisted__11TriviaCard1P4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -83005,7 +83005,7 @@ _vt.11TriviaCard1::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_1a0__5Goods
@@ -83113,7 +83113,7 @@ _vt.11TriviaCard1::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -83193,7 +83193,7 @@ _vt.9DragoFang::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__9DragoFangP4Unit
+	.4byte calcDidHit__9DragoFangP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__9DragoFangP4Unit
@@ -83205,7 +83205,7 @@ _vt.9DragoFang::
 	.4byte tellResisted__9DragoFangP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -83283,7 +83283,7 @@ _vt.9DragoFang::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_1a0__5Goods
@@ -83391,7 +83391,7 @@ _vt.9DragoFang::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -83471,7 +83471,7 @@ _vt.14ShieldSnatcher::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -83483,7 +83483,7 @@ _vt.14ShieldSnatcher::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -83561,7 +83561,7 @@ _vt.14ShieldSnatcher::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_1a0__5Goods
@@ -83669,7 +83669,7 @@ _vt.14ShieldSnatcher::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -83749,7 +83749,7 @@ _vt.16CupOfLifenoodles::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -83761,7 +83761,7 @@ _vt.16CupOfLifenoodles::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -83839,7 +83839,7 @@ _vt.16CupOfLifenoodles::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_1a0__5Goods
@@ -83947,7 +83947,7 @@ _vt.16CupOfLifenoodles::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -84027,7 +84027,7 @@ _vt.10SecretHerb::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -84039,7 +84039,7 @@ _vt.10SecretHerb::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -84117,7 +84117,7 @@ _vt.10SecretHerb::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_1a0__5Goods
@@ -84225,7 +84225,7 @@ _vt.10SecretHerb::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -84305,7 +84305,7 @@ _vt.8PaperFan::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -84317,7 +84317,7 @@ _vt.8PaperFan::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -84395,7 +84395,7 @@ _vt.8PaperFan::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_1a0__5Goods
@@ -84503,7 +84503,7 @@ _vt.8PaperFan::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -84583,7 +84583,7 @@ _vt.11MadeYouLook::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -84595,7 +84595,7 @@ _vt.11MadeYouLook::
 	.4byte tellResisted__11MadeYouLookP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -84673,7 +84673,7 @@ _vt.11MadeYouLook::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_1a0__5Goods
@@ -84781,7 +84781,7 @@ _vt.11MadeYouLook::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -84861,7 +84861,7 @@ _vt.15AttackAttractor::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -84873,7 +84873,7 @@ _vt.15AttackAttractor::
 	.4byte tellResisted__15AttackAttractorP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -84951,7 +84951,7 @@ _vt.15AttackAttractor::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_1a0__5Goods
@@ -85059,7 +85059,7 @@ _vt.15AttackAttractor::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -85139,7 +85139,7 @@ _vt.15EnemyWimperizer::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -85151,7 +85151,7 @@ _vt.15EnemyWimperizer::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -85229,7 +85229,7 @@ _vt.15EnemyWimperizer::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_1a0__5Goods
@@ -85337,7 +85337,7 @@ _vt.15EnemyWimperizer::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -85417,7 +85417,7 @@ _vt.15EnemyBufferizer::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -85429,7 +85429,7 @@ _vt.15EnemyBufferizer::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -85507,7 +85507,7 @@ _vt.15EnemyBufferizer::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_1a0__5Goods
@@ -85615,7 +85615,7 @@ _vt.15EnemyBufferizer::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -85695,7 +85695,7 @@ _vt.9LottoMeal::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -85707,7 +85707,7 @@ _vt.9LottoMeal::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -85785,7 +85785,7 @@ _vt.9LottoMeal::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_1a0__5Goods
@@ -85893,7 +85893,7 @@ _vt.9LottoMeal::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -85973,7 +85973,7 @@ _vt.9DoggyFood::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -85985,7 +85985,7 @@ _vt.9DoggyFood::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -86063,7 +86063,7 @@ _vt.9DoggyFood::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_1a0__5Goods
@@ -86171,7 +86171,7 @@ _vt.9DoggyFood::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -86251,7 +86251,7 @@ _vt.14PeculiarCheese::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -86263,7 +86263,7 @@ _vt.14PeculiarCheese::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -86341,7 +86341,7 @@ _vt.14PeculiarCheese::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_1a0__5Goods
@@ -86449,7 +86449,7 @@ _vt.14PeculiarCheese::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -86529,7 +86529,7 @@ _vt.8BugSpray::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -86541,7 +86541,7 @@ _vt.8BugSpray::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__8BugSprayP4Unit
+	.4byte doHit__8BugSprayP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -86619,7 +86619,7 @@ _vt.8BugSpray::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_1a0__5Goods
@@ -86727,7 +86727,7 @@ _vt.8BugSpray::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -86807,7 +86807,7 @@ _vt.13AncientBanana::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -86819,7 +86819,7 @@ _vt.13AncientBanana::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -86897,7 +86897,7 @@ _vt.13AncientBanana::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_1a0__5Goods
@@ -87005,7 +87005,7 @@ _vt.13AncientBanana::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -87085,7 +87085,7 @@ _vt.11HoneyShower::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -87097,7 +87097,7 @@ _vt.11HoneyShower::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__11HoneyShowerP4Unit
+	.4byte doHit__11HoneyShowerP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -87175,7 +87175,7 @@ _vt.11HoneyShower::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_1a0__5Goods
@@ -87283,7 +87283,7 @@ _vt.11HoneyShower::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -87363,7 +87363,7 @@ _vt.12SaltwaterGun::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -87375,7 +87375,7 @@ _vt.12SaltwaterGun::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__12SaltwaterGunP4Unit
+	.4byte doHit__12SaltwaterGunP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -87453,7 +87453,7 @@ _vt.12SaltwaterGun::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_1a0__5Goods
@@ -87561,7 +87561,7 @@ _vt.12SaltwaterGun::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -87641,7 +87641,7 @@ _vt.15NewYearsEveBomb::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -87653,7 +87653,7 @@ _vt.15NewYearsEveBomb::
 	.4byte tellResisted__15NewYearsEveBombP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__15NewYearsEveBombP4Unit
+	.4byte doHit__15NewYearsEveBombP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -87731,7 +87731,7 @@ _vt.15NewYearsEveBomb::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_1a0__5Goods
@@ -87839,7 +87839,7 @@ _vt.15NewYearsEveBomb::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -87922,7 +87922,7 @@ _vt.12DefaultGoods::
 	.4byte action_a0__12DefaultGoodsP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -87934,7 +87934,7 @@ _vt.12DefaultGoods::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -88012,7 +88012,7 @@ _vt.12DefaultGoods::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_1a0__5Goods
@@ -88120,7 +88120,7 @@ _vt.12DefaultGoods::
 	.4byte goods_2c0__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte getType__C5Goods
+	.4byte type__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte isConsumable__C12DefaultGoodsP4Unit
@@ -89997,13 +89997,13 @@ _vt.20PreSysClockSingleton::
 	.2byte 0
 	.4byte init__20PreSysClockSingleton
 
-_vt.Q215struct_0806A57C1A::
+_vt.Q211BattleFader1A::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte _._15struct_0806A57C
+	.4byte _._11BattleFader
 
 vt_09F7EF30::
 	.2byte 0
@@ -93824,7 +93824,7 @@ _vt.4Unit::
 	.4byte unit_68__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__C4UnitP4Unit
+	.4byte unit_70__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -93881,7 +93881,7 @@ _vt.4Unit::
 	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -93911,13 +93911,13 @@ _vt.4Unit::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -93953,25 +93953,25 @@ _vt.4Unit::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -94086,7 +94086,7 @@ _vt.7UnitDie::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-_vt.16UnitDieSingleton::
+_vt.11UnitDieRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -94138,7 +94138,7 @@ _vt.10UnitEscape::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-_vt.19UnitEscapeSingleton::
+_vt.14UnitEscapeRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -94190,7 +94190,7 @@ _vt.10UnitRevive::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-_vt.19UnitReviveSingleton::
+_vt.14UnitReviveRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -94242,7 +94242,7 @@ _vt.8UnitJoin::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-_vt.17UnitJoinSingleton::
+_vt.12UnitJoinRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -94294,7 +94294,7 @@ _vt.6Resume::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-_vt.15ResumeSingleton::
+_vt.10ResumeRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -94346,7 +94346,7 @@ _vt.7Suspend::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-_vt.16SuspendSingleton::
+_vt.11SuspendRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -94452,7 +94452,7 @@ _vt.10UnitTarget::
 	.4byte attackdata_70__10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte getType__C10UnitTarget
+	.4byte type__C10UnitTarget
 	.2byte 0
 	.2byte 0
 	.4byte getUnit__C10UnitTarget
@@ -94565,7 +94565,7 @@ _vt.16UnitTargetChoice::
 	.4byte attackdata_70__10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte getType__C10UnitTarget
+	.4byte type__C10UnitTarget
 	.2byte 0
 	.2byte 0
 	.4byte getUnit__C10UnitTarget
@@ -94764,7 +94764,7 @@ _vt.6Action::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -94776,7 +94776,7 @@ _vt.6Action::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -94854,7 +94854,7 @@ _vt.6Action::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_1a0__6Action
@@ -95047,7 +95047,7 @@ vt_09F820E8::
 	.4byte unit_68__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__C4UnitP4Unit
+	.4byte unit_70__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807B4B8
@@ -95134,13 +95134,13 @@ vt_09F820E8::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
@@ -95176,25 +95176,25 @@ vt_09F820E8::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
@@ -95969,7 +95969,7 @@ vt_09F82A28::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -95981,7 +95981,7 @@ vt_09F82A28::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -96059,7 +96059,7 @@ vt_09F82A28::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_1a0__6Action
@@ -96234,7 +96234,7 @@ _vt.10GuestSkill::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -96246,7 +96246,7 @@ _vt.10GuestSkill::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -96324,7 +96324,7 @@ _vt.10GuestSkill::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_1a0__6Action
@@ -96425,7 +96425,7 @@ _vt.10GuestSkill::
 	.2byte 0
 	.4byte action_298__10GuestSkill
 
-_vt.19GuestSkillSingleton::
+_vt.14GuestSkillRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -96436,13 +96436,13 @@ _vt.19GuestSkillSingleton::
 	.2byte 0
 	.4byte sub_080C16C8
 
-vt_09F82F98::
+_vt.7Monster.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
 	.2byte -32
 	.2byte 0
-	.4byte sub_08080DD0
+	.4byte _._7Monster
 	.2byte -32
 	.2byte 0
 	.4byte sub_08081BE4
@@ -96483,16 +96483,16 @@ vt_09F82F98::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F83010::
+_vt.7Monster::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080DD0
+	.4byte _._7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080809EC
+	.4byte getRTTI__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -96528,7 +96528,7 @@ vt_09F83010::
 	.4byte unit_68__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__C4UnitP4Unit
+	.4byte unit_70__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -96552,7 +96552,7 @@ vt_09F83010::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080F54
+	.4byte sub_08080F54__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -96564,7 +96564,7 @@ vt_09F83010::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080E28
+	.4byte unit_d0__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -96585,13 +96585,13 @@ vt_09F83010::
 	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_108__4Unit
+	.4byte onDeath__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081494
+	.4byte setHP__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -96615,25 +96615,25 @@ vt_09F83010::
 	.4byte setSpeed__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_158__4Uniti
+	.4byte setKindness__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte setElementDefense__4Unitii
+	.4byte setElementWeakness__4Unitii
 	.2byte 0
 	.2byte 0
-	.4byte unit_168__4UnitUsi
+	.4byte setStatusWeakness__4UnitUsi
 	.2byte 0
 	.2byte 0
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814F4
+	.4byte unit_178__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814FC
+	.4byte id__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081504
+	.4byte name__C7Monster
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -96657,37 +96657,37 @@ vt_09F83010::
 	.4byte maxPP__C4Unit
 	.2byte 0
 	.2byte 0
+	.4byte offense__C4Unit
+	.2byte 0
+	.2byte 0
+	.4byte defense__C4Unit
+	.2byte 0
+	.2byte 0
 	.4byte iq__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte speed__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_1d8__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clumsiness__C4Unit
-	.2byte 0
-	.2byte 0
-	.4byte unit_1e8__C4Unit
+	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
 	.4byte getElementWeakness__C4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_1f8__C4UnitUs
+	.4byte getStatusWeakness__C4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081618
+	.4byte attackSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081624
+	.4byte critSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081634
+	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -96750,103 +96750,103 @@ vt_09F83010::
 	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB4
+	.4byte monster_2c0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080EB8
+	.4byte monster_2c8__7MonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080817AC
+	.4byte onRoundBegin__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_36
+	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FD0
+	.4byte monster_2e0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080FEC
+	.4byte monster_2e8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081068
+	.4byte monster_2f0__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081084
+	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808110C
+	.4byte monster_300__7Monsterb
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814C0
+	.4byte monster_308__7MonsterRC3Msg
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814D0
+	.4byte setDeathAnim__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814DC
+	.4byte setExperience__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080814E8
+	.4byte setMoney__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815B0
+	.4byte monster_328__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081518
+	.4byte fmtEncounterMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081584
+	.4byte deathMsg__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808159C
+	.4byte deathSeq__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815A8
+	.4byte type__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815C4
+	.4byte surprised__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080815D0
+	.4byte numSkills__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081608
+	.4byte getSkill__7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081644
+	.4byte numWeaknesses__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081648
+	.4byte getWeakness__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081658
+	.4byte battlePos__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081660
+	.4byte hasBackSprite__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808168C
+	.4byte isFadeOnDeath__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816B8
+	.4byte experience__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816C4
+	.4byte money__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816D0
+	.4byte addDrop__7MonsterUsUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080816FC
+	.4byte monster_3a8__7MonsterUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081764
+	.4byte numDrops__C7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081770
+	.4byte getDropID__C7Monsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081780
+	.4byte getDropChance__C7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_08081B64
@@ -96863,7 +96863,7 @@ vt_09F83010::
 	.2byte 0
 	.4byte sub_08081A08
 
-vt_09F83400::
+_vt.11MonsterRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -97053,7 +97053,7 @@ vt_09F83548::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -97065,7 +97065,7 @@ vt_09F83548::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -97143,7 +97143,7 @@ vt_09F83548::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082088
@@ -97327,7 +97327,7 @@ vt_09F83810::
 	.4byte sub_08082668
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808266C
+	.4byte disableAllStatuses
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082670
@@ -97449,7 +97449,7 @@ vt_09F83958::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcMissed__6ActionP4Unit
+	.4byte calcDidHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
@@ -97461,7 +97461,7 @@ vt_09F83958::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte calcHit__6ActionP4Unit
+	.4byte doHit__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d0__6ActionP4Unit
@@ -97539,7 +97539,7 @@ vt_09F83958::
 	.4byte getTarget__C6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte getTargetIdx__C6ActionP4Unit
+	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_08082BBC

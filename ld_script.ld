@@ -49,7 +49,7 @@ SECTIONS
         src/allocator.o(.text);
         src/battle/irc.o(.text);
         src/battle/clock.o(.text);
-        src/battle/clock_2.o(.text);
+        src/battle/fader.o(.text);
         asm/gengine.o(.text);
         asm/bgengine.o(.text);
         asm/objengine.o(.text);
@@ -72,6 +72,8 @@ SECTIONS
         asm/player.o(.text);
         asm/playerskill.o(.text);
         src/battle/guestSkill.o(.text);
+        /* asm/monster_rtti.o(.text); */
+        src/battle/monster.o(.text);
         asm/monster.o(.text);
         asm/monsterskill.o(.text);
         asm/psi.o(.text);

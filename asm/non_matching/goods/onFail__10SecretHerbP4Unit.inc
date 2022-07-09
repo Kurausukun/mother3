@@ -66,7 +66,7 @@ _080BF2D4:
 	adds r0, r5, #0
 	adds r1, r4, #0
 	movs r2, #0
-	bl sub_08073EE8
+	bl tellStatusWoreOff
 	movs r3, #1
 	add r8, r3
 _080BF2E2:
@@ -115,7 +115,7 @@ _080BF326:
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg

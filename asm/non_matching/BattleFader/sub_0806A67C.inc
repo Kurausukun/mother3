@@ -15,7 +15,7 @@
 	cmp r0, #0
 	beq _0806A6A8
 	adds r0, r5, #0
-	bl sub_0806A760__15struct_0806A57C
+	bl sub_0806A760__11BattleFader
 	ldrb r1, [r4]
 	movs r0, #0xfe
 	ands r0, r1
@@ -27,7 +27,7 @@ _0806A6A8:
 	cmp r0, #0
 	beq _0806A6C0
 	adds r0, r5, #0
-	bl sub_0806A80C__15struct_0806A57C
+	bl sub_0806A80C__11BattleFader
 	ldrb r1, [r4]
 	movs r0, #0xfd
 	ands r0, r1
@@ -39,7 +39,7 @@ _0806A6C0:
 	cmp r0, #0
 	beq _0806A6D8
 	adds r0, r5, #0
-	bl sub_0806A8BC__15struct_0806A57C
+	bl sub_0806A8BC__11BattleFader
 	ldrb r1, [r4]
 	movs r0, #0xfb
 	ands r0, r1

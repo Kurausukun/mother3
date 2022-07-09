@@ -1,15 +1,16 @@
 #include "battle/unit.h"
+#include "battle/action.h"
 #include "functions.h"
 
 UnitCmd* sub_080651A4(u16, Unit*);
 extern u16 gUnknown_08106360[];
 
-SINGLETON_IMPL(Suspend);
-SINGLETON_IMPL(Resume);
-SINGLETON_IMPL(UnitJoin);
-SINGLETON_IMPL(UnitRevive);
-SINGLETON_IMPL(UnitEscape);
-SINGLETON_IMPL(UnitDie);
+RTTI_IMPL(Suspend);
+RTTI_IMPL(Resume);
+RTTI_IMPL(UnitJoin);
+RTTI_IMPL(UnitRevive);
+RTTI_IMPL(UnitEscape);
+RTTI_IMPL(UnitDie);
 
 Unit::Unit() : mWeaknessCount(0), _54(0) {
     mLevel = 1;
@@ -21,7 +22,7 @@ Unit::Unit() : mWeaknessCount(0), _54(0) {
     mDefense = 0;
     mIQ = 0;
     mSpeed = 0;
-    _40 = 0;
+    mKindness = 0;
     _d8 = 0;
     _f4.dead = 0;
 
@@ -35,7 +36,7 @@ Unit::Unit() : mWeaknessCount(0), _54(0) {
     u32 value2 = 100;
     for (int i = 0; i < 64; ++i) {
         if (_54 + 1 <= 64) {
-            _58[_54++] = value2;
+            mStatusWeaknesses[_54++] = value2;
         }
     }
 }
@@ -51,7 +52,7 @@ END_NONMATCH
 void Unit::nullsub_106() {}
 
 void Unit::kill() {
-    unit_108();
+    onDeath();
     setDead(1, 0);
     for (int i = 0; i < statusCount(); ++i) {
         Status* c = getStatus(i);
@@ -84,7 +85,7 @@ bool Unit::isDead() {
 
 u8 Unit::unit_d0() {
     if (unit_68() != 1) {
-        unit_108();
+        onDeath();
         return false;
     }
     return true;
@@ -92,8 +93,8 @@ u8 Unit::unit_d0() {
 
 ASM_FUNC("asm/non_matching/unit/unit_68__4Unit.inc", u8 Unit::unit_68());
 
-s32 Unit::unit_70(Unit* u) const {
-    return u->hpReal();
+bool Unit::unit_70(Action* a) {
+    return a->action_1a0();
 }
 
 void Unit::unit_d8(Action* a1) {
@@ -133,7 +134,7 @@ void Unit::unit_100(Action* a1) {
 
 void Unit::unit_a0(Action* a1) {}
 
-void Unit::unit_108() {}
+void Unit::onDeath() {}
 
 void Unit::setLevel(s32 value) {
     mLevel = clampS32(value, 0, 99);
@@ -171,16 +172,16 @@ void Unit::setSpeed(s32 value) {
     mSpeed = clampS32(value, 0, 255);
 }
 
-void Unit::unit_158(s32 value) {
-    _40 = clampS32(value, 0, 255);
+void Unit::setKindness(s32 value) {
+    mKindness = clampS32(value, 0, 255);
 }
 
-void Unit::setElementDefense(s32 idx, s32 value) {
+void Unit::setElementWeakness(s32 idx, s32 value) {
     setClamped(&mWeaknesses[idx], value);
 }
 
-void Unit::unit_168(u16 idx, s32 value) {
-    setClamped(&_58[idx], value);
+void Unit::setStatusWeakness(u16 idx, s32 value) {
+    setClamped(&mStatusWeaknesses[idx], value);
 }
 
 void Unit::unit_170(u32 value) {
@@ -215,31 +216,31 @@ s32 Unit::maxPP() const {
     return mMaxPP;
 }
 
-s32 Unit::iq() const {
+s32 Unit::offense() const {
     return mOffense;
 }
 
-s32 Unit::speed() const {
+s32 Unit::defense() const {
     return mDefense;
 }
 
-s32 Unit::unit_1d8() const {
+s32 Unit::iq() const {
     return mIQ;
 }
 
-s32 Unit::clumsiness() const {
+s32 Unit::speed() const {
     return mSpeed;
 }
 
-s32 Unit::unit_1e8() const {
-    return _40;
+s32 Unit::kindness() const {
+    return mKindness;
 }
 
 s32 Unit::getElementWeakness(u32 idx) const {
     return get48(idx);
 }
 
-s32 Unit::unit_1f8(u16 idx) const {
+s32 Unit::getStatusWeakness(u16 idx) const {
     return get58(idx);
 }
 

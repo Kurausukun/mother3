@@ -82926,7 +82926,7 @@ _08047F4A:
 	lsls r4, r7, #1
 	adds r4, r4, r7
 	lsls r5, r4, #4
-	ldr r0, _08047FD0 @ =gUnknown_0201A374
+	ldr r0, _08047FD0 @ =gMenuState
 	adds r5, r5, r0
 	adds r0, r5, #0
 	movs r1, #0x30
@@ -82964,7 +82964,7 @@ _08047FBC:
 	bx r0
 	.align 2, 0
 _08047FCC: .4byte 0x0000FFFF
-_08047FD0: .4byte gUnknown_0201A374
+_08047FD0: .4byte gMenuState
 
 	thumb_func_start sub_08047FD4
 sub_08047FD4: @ 0x08047FD4
@@ -83008,7 +83008,7 @@ _08047FF2:
 	lsls r4, r6, #1
 	adds r4, r4, r6
 	lsls r4, r4, #4
-	ldr r0, _08048070 @ =gUnknown_0201A374
+	ldr r0, _08048070 @ =gMenuState
 	adds r4, r4, r0
 	adds r0, r4, #0
 	movs r1, #0x30
@@ -83042,7 +83042,7 @@ _0804805E:
 	bx r0
 	.align 2, 0
 _0804806C: .4byte 0x0000FFFF
-_08048070: .4byte gUnknown_0201A374
+_08048070: .4byte gMenuState
 
 	thumb_func_start sub_08048074
 sub_08048074: @ 0x08048074

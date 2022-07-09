@@ -319,7 +319,7 @@ _08079CC4:
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -343,7 +343,7 @@ _08079CDE:
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -471,7 +471,7 @@ _08079DFA:
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -496,7 +496,7 @@ _08079E2E:
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg

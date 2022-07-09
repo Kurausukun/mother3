@@ -9,7 +9,7 @@
 	ldr r0, _08074B98 @ =_vt.4Unit
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
-	bl unit_108__4Unit
+	bl onDeath__4Unit
 	adds r0, r4, #0
 	bl clearAllStatuses__4Unit
 	adds r0, r4, #0

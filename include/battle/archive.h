@@ -26,7 +26,7 @@ class BXTHandle {
     virtual ~BXTHandle();
     
     Msg getMessage(u32 index);
-    u32 getType(const BXTRef& ref) const;
+    u32 type(const BXTRef& ref) const;
     u32 count() const;
 
     friend class BattleMessage;

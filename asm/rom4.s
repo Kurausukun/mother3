@@ -1438,7 +1438,7 @@ sub_080C16C8: @ 0x080C16C8
 	push {lr}
 	movs r0, #0x4c
 	bl __builtin_new
-	bl sub_080809B8
+	bl __10GuestSkill
 	pop {r1}
 	bx r1
 

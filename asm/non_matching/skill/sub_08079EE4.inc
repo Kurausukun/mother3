@@ -62,7 +62,7 @@ _08079F56:
 	adds r0, r5, #0
 	adds r1, r7, #0
 	adds r2, r6, #0
-	bl sub_08073EE8
+	bl tellStatusWoreOff
 	b _08079FC0
 _08079F6E:
 	ldr r1, [r4, #0x1c]
@@ -98,7 +98,7 @@ _08079FA6:
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg

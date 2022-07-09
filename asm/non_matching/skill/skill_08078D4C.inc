@@ -147,7 +147,7 @@ _08078DF6:
 	strb r4, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -255,7 +255,7 @@ _08078ED8:
 	strb r4, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -305,7 +305,7 @@ _08078F9C:
 	adds r0, r7, #0
 	movs r1, #0x17
 	movs r2, #1
-	bl sub_08073EE8
+	bl tellStatusWoreOff
 	b _0807900A
 _08078FE2:
 	ldr r1, [r7, #0x1c]
@@ -325,7 +325,7 @@ _08078FE2:
 	adds r0, r7, #0
 	movs r1, #0x16
 	movs r2, #1
-	bl sub_08073EE8
+	bl tellStatusWoreOff
 _0807900A:
 	add sp, #0x14
 	pop {r3}

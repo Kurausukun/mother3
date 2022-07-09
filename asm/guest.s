@@ -488,7 +488,7 @@ sub_0805F1C0: @ 0x0805F1C0
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728D8
+	bl getGuestInfo
 	mov sb, r0
 	add r0, sp, #4
 	bl __4Base
@@ -506,7 +506,7 @@ sub_0805F1C0: @ 0x0805F1C0
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728F8
+	bl getMonsterInfo
 	mov sb, r0
 	add r0, sp, #4
 	bl __4Base
@@ -543,7 +543,7 @@ sub_0805F1C0: @ 0x0805F1C0
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728D8
+	bl getGuestInfo
 	mov sb, r0
 	add r0, sp, #4
 	bl __4Base
@@ -561,7 +561,7 @@ sub_0805F1C0: @ 0x0805F1C0
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728F8
+	bl getMonsterInfo
 	mov sb, r0
 	add r0, sp, #4
 	bl __4Base
@@ -602,7 +602,7 @@ sub_0805F1C0: @ 0x0805F1C0
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728D8
+	bl getGuestInfo
 	mov sb, r0
 	add r0, sp, #4
 	bl __4Base
@@ -620,7 +620,7 @@ sub_0805F1C0: @ 0x0805F1C0
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728F8
+	bl getMonsterInfo
 	mov sb, r0
 	add r0, sp, #4
 	bl __4Base
@@ -657,7 +657,7 @@ sub_0805F1C0: @ 0x0805F1C0
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728D8
+	bl getGuestInfo
 	mov sb, r0
 	add r0, sp, #4
 	bl __4Base
@@ -675,7 +675,7 @@ sub_0805F1C0: @ 0x0805F1C0
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl sub_080728F8
+	bl getMonsterInfo
 	mov sb, r0
 	add r0, sp, #4
 	bl __4Base
@@ -3142,7 +3142,7 @@ sub_08060664: @ 0x08060664
 	sub sp, #0x44
 	mov sb, r0
 	adds r7, r1, #0
-	bl sub_08072778
+	bl battleWon
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -3234,7 +3234,7 @@ _080606CC:
 	add r0, sp, #4
 	mov r2, r8
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	add r1, sp, #0x3c
 	movs r6, #0
 	strb r6, [r1]
@@ -3242,7 +3242,7 @@ _080606CC:
 	strb r6, [r1, #2]
 	add r0, sp, #4
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -3308,14 +3308,14 @@ _080606CC:
 	add r0, sp, #4
 	mov r2, r8
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	add r1, sp, #0x40
 	strb r6, [r1]
 	strb r6, [r1, #1]
 	strb r6, [r1, #2]
 	add r0, sp, #4
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -3839,10 +3839,10 @@ _08060B84:
 	movs r1, #0x7d
 	mov r2, r8
 	adds r3, r6, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	add r0, sp, #4
 	adds r1, r4, #0
-	bl sub_0806E2E8__3MsgRC3Msg
+	bl replace__3MsgRC3Msg
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -3890,10 +3890,10 @@ _08060C16:
 	movs r1, #0x7e
 	mov r2, r8
 	adds r3, r6, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	add r0, sp, #4
 	adds r1, r4, #0
-	bl sub_0806E2E8__3MsgRC3Msg
+	bl replace__3MsgRC3Msg
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -3914,7 +3914,7 @@ _08060C8C:
 	strb r0, [r1, #2]
 	add r0, sp, #4
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	movs r4, #0
 	b _08060CCC
 _08060CA2:
@@ -3987,7 +3987,7 @@ metalMonkeyCheck: @ 0x08060CF8
 	movs r1, #0x87
 	adds r2, r6, #0
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	add r1, sp, #0x34
 	movs r0, #0
 	strb r0, [r1]
@@ -3995,7 +3995,7 @@ metalMonkeyCheck: @ 0x08060CF8
 	strb r0, [r1, #2]
 	add r0, sp, #4
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -4446,7 +4446,7 @@ tellPresent: @ 0x0806105C
 	movs r1, #0x88
 	adds r2, r6, #0
 	mov r3, r8
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	add r1, sp, #0x40
 	movs r0, #0
 	mov sl, r0
@@ -4456,7 +4456,7 @@ tellPresent: @ 0x0806105C
 	strb r0, [r1, #2]
 	add r0, sp, #4
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg
@@ -4486,10 +4486,10 @@ tellPresent: @ 0x0806105C
 	movs r1, #0x89
 	mov r2, r8
 	adds r3, r7, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	add r0, sp, #4
 	adds r1, r6, #0
-	bl sub_0806E2E8__3MsgRC3Msg
+	bl replace__3MsgRC3Msg
 	adds r0, r6, #0
 	movs r1, #2
 	bl _._3Msg
@@ -4508,7 +4508,7 @@ tellPresent: @ 0x0806105C
 	bl druggedPresentCheck
 	add r0, sp, #4
 	adds r1, r6, #0
-	bl sub_0806E2E8__3MsgRC3Msg
+	bl replace__3MsgRC3Msg
 	adds r0, r6, #0
 	movs r1, #2
 	bl _._3Msg
@@ -4519,7 +4519,7 @@ tellPresent: @ 0x0806105C
 	strb r0, [r1, #2]
 	add r0, sp, #4
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	adds r0, r5, #0
 	bl reqInventorySlot
 	adds r4, r0, #0
@@ -4556,7 +4556,7 @@ tellPresent: @ 0x0806105C
 	movs r1, #0x8b
 	mov r2, r8
 	adds r3, r7, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	add r1, sp, #0x48
 	mov r0, sl
 	strb r0, [r1]
@@ -4564,7 +4564,7 @@ tellPresent: @ 0x0806105C
 	strb r0, [r1, #2]
 	adds r0, r6, #0
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	adds r0, r6, #0
 	movs r1, #2
 	bl _._3Msg
@@ -4697,7 +4697,7 @@ _080612AA:
 	movs r1, #0x8a
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -4711,7 +4711,7 @@ _080612AA:
 _080612EA:
 	adds r0, r6, #0
 	adds r1, r5, #0
-	bl sub_0806E2B8
+	bl __3MsgRC3Msg
 _080612F2:
 	adds r0, r6, #0
 	add sp, #0x28
@@ -4787,7 +4787,7 @@ tellPlayerInventoryFull: @ 0x08061338
 	movs r1, #0x8c
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -4824,7 +4824,7 @@ _080613A0:
 	movs r1, #0x8d
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -4901,7 +4901,7 @@ _0806141E:
 	movs r1, #0x92
 	mov r2, r8
 	adds r3, r6, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	add r1, sp, #0x88
 	movs r0, #0
 	strb r0, [r1]
@@ -4909,7 +4909,7 @@ _0806141E:
 	strb r0, [r1, #2]
 	adds r0, r4, #0
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -4945,7 +4945,7 @@ _080614C4:
 	movs r1, #0x8e
 	adds r2, r6, #0
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	add r1, sp, #0x8c
 	movs r0, #0
 	strb r0, [r1]
@@ -5086,7 +5086,7 @@ _0806159C:
 	movs r1, #0x91
 	ldr r2, [sp, #0x94]
 	ldr r3, [sp, #0x98]
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	movs r0, #0
 	add r1, sp, #0x90
 	strb r0, [r1]
@@ -5095,7 +5095,7 @@ _0806159C:
 	adds r0, r6, #0
 	adds r1, r5, #0
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	adds r0, r6, #0
 	movs r1, #2
 	bl _._3Msg
@@ -5267,7 +5267,7 @@ checkGiveUpItem: @ 0x0806176C
 	movs r1, #0x8f
 	adds r2, r6, #0
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	add r1, sp, #0x64
 	movs r7, #0
 	strb r7, [r1]
@@ -5302,7 +5302,7 @@ checkGiveUpItem: @ 0x0806176C
 	strb r7, [r1, #2]
 	adds r0, r4, #0
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -5325,7 +5325,7 @@ _08061804:
 	movs r1, #0x90
 	mov r2, r8
 	adds r3, r6, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	add r1, sp, #0x6c
 	strb r7, [r1]
 	strb r7, [r1, #1]
@@ -5405,7 +5405,7 @@ tellGaveUpItem: @ 0x0806188C
 	movs r1, #0x93
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -5442,7 +5442,7 @@ _080618F4:
 	movs r1, #0x94
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg

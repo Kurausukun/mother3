@@ -15,7 +15,7 @@ public:
 
     virtual void action_150();
     virtual Action* action_1c0();
-    virtual u32 action_1a0();
+    virtual bool action_1a0();
     virtual u16 id() const;
     virtual Msg name() const;
     virtual Msg action_1d8() const;
@@ -52,7 +52,7 @@ public:
 
 
     virtual bool goods_2c0();
-    virtual u32 getType() const;
+    virtual u32 type() const;
     virtual bool isConsumable(Unit* target) const;
     virtual bool isKeyItem() const;
 

@@ -52,7 +52,7 @@ tellStatus: @ 0x080824B0
 	adds r1, r4, #0
 	add r2, sp, #4
 	adds r3, r6, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	adds r0, r5, #0
 	movs r1, #2
 	bl _._3Msg
@@ -231,8 +231,8 @@ sub_08082668: @ 0x08082668
 	movs r0, #0
 	bx lr
 
-	thumb_func_start sub_0808266C
-sub_0808266C: @ 0x0808266C
+	thumb_func_start disableAllStatuses
+disableAllStatuses: @ 0x0808266C
 	movs r0, #0
 	bx lr
 
@@ -635,7 +635,7 @@ sub_080828DC: @ 0x080828DC
 	adds r1, r6, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -715,7 +715,7 @@ sub_08082980: @ 0x08082980
 	lsrs r1, r1, #0x10
 	adds r0, r4, #0
 	movs r2, #1
-	bl sub_08073EE8
+	bl tellStatusWoreOff
 	movs r0, #0
 	b _080829EC
 _080829EA:
@@ -800,7 +800,7 @@ sub_08082A10: @ 0x08082A10
 	lsrs r1, r1, #0x10
 	adds r0, r4, #0
 	movs r2, #1
-	bl sub_08073EE8
+	bl tellStatusWoreOff
 	movs r0, #0
 	b _08082A9A
 _08082A92:
@@ -915,7 +915,7 @@ tellTurnAction: @ 0x08082B1C
 	adds r1, r4, #0
 	add r2, sp, #4
 	adds r3, r6, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	adds r0, r5, #0
 	movs r1, #2
 	bl _._3Msg
@@ -1013,7 +1013,7 @@ sub_08082BBC: @ 0x08082BBC
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -1157,7 +1157,7 @@ _08082D44:
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -1350,7 +1350,7 @@ _08082EC0:
 	add r1, sp, #4
 	adds r2, r6, #0
 	adds r3, r5, #0
-	bl sub_080734A0
+	bl StrFmt
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg

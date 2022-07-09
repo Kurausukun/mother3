@@ -3,7 +3,7 @@
 // extern "C" Action* getName(Action*, u32);
 extern "C" Msg* __3Msg();
 
-SINGLETON_IMPL(GuestSkill);
+RTTI_IMPL(GuestSkill);
 
 extern "C" Msg getName(u32 id) {
     return Msg();

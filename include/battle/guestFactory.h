@@ -2,12 +2,14 @@
 #define BATTLE_GUEST_FACTORY_H
 
 #include "guest.h"
+#include "factory.h"
 
 class DefaultGuest : public Guest {
 public:
     DefaultGuest();
     virtual ~DefaultGuest();
 };
+
 class Wess : public Guest {
 public:
     Wess(u16 id);
@@ -46,12 +48,12 @@ public:
     static void* create(u16 id);
 };
 
-SINGLETON(DefaultGuest);
-SINGLETON(Wess);
-SINGLETON(Thomas);
-SINGLETON(Ionia);
-SINGLETON(Fuel);
-SINGLETON(Alec);
-SINGLETON(Fassad);
+FACTORY(DefaultGuest, u16);
+FACTORY(Wess, u16);
+FACTORY(Thomas, u16);
+FACTORY(Ionia, u16);
+FACTORY(Fuel, u16);
+FACTORY(Alec, u16);
+FACTORY(Fassad, u16);
 
 #endif // BATTLE_GUEST_FACTORY_H

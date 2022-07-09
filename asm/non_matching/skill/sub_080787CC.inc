@@ -105,7 +105,7 @@ _08078874:
 	strb r0, [r1, #2]
 	mov r0, sp
 	movs r2, #1
-	bl print__3MsgRC13PrintSettingsb
+	bl print__3MsgRC5Colorb
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg
@@ -120,7 +120,7 @@ _08078874:
 	ldr r1, [r1, #4]
 	bl _call_via_r1
 	movs r1, #0xbd
-	bl sub_08072D84
+	bl isMonsterVariant
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -135,7 +135,7 @@ _08078874:
 	ldr r1, [r1, #4]
 	bl _call_via_r1
 	movs r1, #0xbe
-	bl sub_08072D84
+	bl isMonsterVariant
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1

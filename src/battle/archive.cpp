@@ -23,7 +23,7 @@ BXTHandle::BXTHandle(const BXTRef& ref) {
 BXTHandle::~BXTHandle() {}
 
 bool BXTHandle::init(const BXTRef& ref) {
-    mType = getType(ref);
+    mType = type(ref);
 
     switch (mType) {
     case 1:
@@ -33,7 +33,7 @@ bool BXTHandle::init(const BXTRef& ref) {
     return true;
 }
 
-u32 BXTHandle::getType(const BXTRef& ref) const {
+u32 BXTHandle::type(const BXTRef& ref) const {
     if (ref()->magic != ' txb') {
         return 0;
     }
@@ -140,3 +140,13 @@ void V::sub_08088F00(Setting s, s16* b) {
         sub_0808904C(&s, b);
     }
 }
+
+extern "C" ASM_FUNC("asm/non_matching/archive/sub_08088F40__1VP7SettingPs.inc", void sub_08088F40__1VP7SettingPs());
+
+extern "C" ASM_FUNC("asm/non_matching/archive/sub_0808904C__1VP7SettingPs.inc", void sub_0808904C__1VP7SettingPs());
+
+extern "C" ASM_FUNC("asm/non_matching/archive/sub_08089178.inc", void sub_08089178());
+
+extern "C" ASM_FUNC("asm/non_matching/archive/sub_080891F0.inc", void sub_080891F0());
+
+extern "C" ASM_FUNC("asm/non_matching/archive/sub_0808933C.inc", void sub_0808933C());

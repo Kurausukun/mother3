@@ -819,7 +819,7 @@ sub_0806C3DC: @ 0x0806C3DC
 	adds r2, #4
 	adds r3, r3, r2
 	adds r2, r3, #0
-	bl sub_0806A67C__15struct_0806A57CiPUsT2
+	bl sub_0806A67C__11BattleFaderiPUsT2
 	pop {r0}
 	bx r0
 	.align 2, 0

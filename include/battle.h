@@ -2,6 +2,7 @@
 #define BATTLE_H
 
 #include "base.h"
+#include "singleton.h"
 
 class Unit;
 class Player;
@@ -60,6 +61,13 @@ struct PartyInfo : public Base {
     virtual void party_info_b8() const;
     virtual s32 party_info_c0() const;
     virtual Player* party_info_c8(s32 idx) const;
+    virtual void party_info_d0();
+    virtual void party_info_d8();
+    virtual void party_info_e0();
+    virtual void party_info_e8();
+    virtual void party_info_f0();
+    virtual u8 party_info_f8(u32);
+    virtual void party_info_100();
 };
 
 struct GuestInfo : public Base {
@@ -171,12 +179,12 @@ public:
     virtual bool battle_198();
     virtual bool battle_1a0();
     virtual bool battle_1a8();
-    virtual bool battle_1b0();
+    virtual bool isBattleWon();
     virtual s32 roundNo();
     virtual bool battle_1c0();
     virtual bool battle_1c8();
     virtual bool battle_1d0();
-    virtual bool battle_1d8();
+    virtual bool isBattleLost();
     virtual bool battle_1e0();
     virtual u16 battle_1e8();
     virtual u16 battle_1f0();
@@ -190,11 +198,11 @@ public:
     virtual Class2* battle_230();
     virtual Sequencer* battle_238();
 
-    bool sub_0805E670(s32, bool);
+    bool setBattleResult(s32, bool);
     void sub_0805DC1C();
     void sub_0805DC6C();
     void sub_0805DDE4();
-    Player* sub_0805E390(Unit*);
+    Player* tryKillPlayer(Unit*);
     Player* sub_0805E338(Unit*);
     void sub_0805E808();
     bool sub_0805E9BC();
@@ -207,7 +215,7 @@ public:
     s32 _34;
     s32 _38;
     s32 mRoundNo;
-    s32 _40;
+    s32 mBattleResult;
     s32 _44;
     BgClass* _48;
     PartyInfo* _4c;
@@ -266,8 +274,17 @@ struct ShowDownAsEscape : public Unk {
     virtual ~ShowDownAsEscape() {}
 };
 
-SINGLETON_MGR(Battle);
+SINGLETON_DECL(Battle);
 
+extern "C" bool IsBossBattle();
+extern "C" s32 randS32(s32, s32);
+extern "C" void playSeq(u16, Unit*, Unit*);
+extern "C" void playSeqForEach(u16, Unit*, s32, Unit**);
 extern "C" void setsleep(u32);
+extern "C" PartyInfo* getPartyInfo();
+extern "C" GuestInfo* getGuestInfo();
+extern "C" MonsterInfo* getMonsterInfo();
+extern "C" bool battleWon();
+extern "C" bool sub_080726B8();
 
 #endif // BATTLE_H
