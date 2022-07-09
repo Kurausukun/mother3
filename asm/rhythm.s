@@ -174,7 +174,7 @@ _0807376A:
 	movs r1, #0x7b
 	adds r2, r6, #0
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	add r1, sp, #0x38
 	movs r0, #0
 	strb r0, [r1]
@@ -405,7 +405,7 @@ _08073962:
 	movs r1, #0x7b
 	adds r2, r6, #0
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	add r1, sp, #0x38
 	movs r0, #0
 	strb r0, [r1]
@@ -588,7 +588,7 @@ _08073AF2:
 	movs r1, #0x7b
 	adds r2, r6, #0
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	add r1, sp, #0x38
 	movs r0, #0
 	strb r0, [r1]

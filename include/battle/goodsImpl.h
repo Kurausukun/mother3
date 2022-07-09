@@ -1,12 +1,12 @@
 #ifndef BATTLE_GOODS_IMPL_H
 #define BATTLE_GOODS_IMPL_H
 
+#include "battle.h"
 #include "battle/goods.h"
 #include "battle/monster.h"
 #include "battle/player.h"
 #include "enums.h"
 
-extern "C" void playSeq(u32, Unit*, Unit*);
 extern "C" bool typeIsMonster(Unit*);
 extern "C" Monster* dynaCastMonster(Unit*);
 extern "C" void setsleep(u32);
@@ -16,7 +16,7 @@ extern "C" void playSound(u16);
 extern "C" s32 sub_0807066C(s32, s32);
 extern "C" void sub_08073E3C(Unit*, u32, u32);
 extern "C" s32 randS32(s32, s32);
-extern "C" bool sub_08072628();
+extern "C" bool IsBossBattle();
 extern "C" void sub_08073C4C(Unit*, u32, u32);
 extern "C" void sub_08073D98(Unit*, u32, u32);
 extern "C" u8 unitIsPlayer(Unit*, u32);
@@ -478,7 +478,7 @@ public:
         if (isResistedD(this, target) == true) {
             return true;
         }
-        return sub_08072628();
+        return IsBossBattle();
     }
 
     INLINE_VT_END
@@ -493,7 +493,7 @@ public:
         if (isResistedD(this, target) == true) {
             return true;
         }
-        return sub_08072628();
+        return IsBossBattle();
     }
 
     INLINE_VT_END
@@ -541,14 +541,14 @@ public:
 
         if (typeIsMonster(target) == true) {
             Monster* m = dynaCastMonster(target);
-            if (m->monster_380() != true) {
+            if (m->hasBackSprite() != true) {
                 return true;
             }
         }
 
         if (typeIsMonster(target) == true) {
             Monster* m = dynaCastMonster(target);
-            if (m->monster_350() == true) {
+            if (m->surprised() == true) {
                 return true;
             }
         }

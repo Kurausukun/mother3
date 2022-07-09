@@ -46,7 +46,7 @@ u8 Guest::unit_d0() {
         return false;
     }
 
-    Unit* tmp = guest_2c0();
+    Action* tmp = guest_2c0();
     if (tmp == 0) {
         return false;
     }
@@ -56,12 +56,12 @@ u8 Guest::unit_d0() {
         return false;
     }
 
-    u8 result = unit_70(tmp);
+    bool result = unit_70(tmp);
     delete tmp;
     return result;
 }
 
-Unit* Guest::guest_2c0() {
+Action* Guest::guest_2c0() {
     return NULL;
 }
 
@@ -74,8 +74,8 @@ bool Guest::guest_2e8(Action* action) {
     return unk == 0;
 }
 
-bool Guest::unit_178() {
-    return false;
+u16 Guest::unit_178() {
+    return 0;
 }
 
 u16 Guest::id() const {
@@ -90,16 +90,16 @@ s32 Guest::level() const {
     return mStats->level;
 }
 
-bool Guest::unit_208() {
-    return false;
+u16 Guest::attackSfx() {
+    return 0;
 }
 
-bool Guest::unit_210() {
-    return false;
+u16 Guest::critSfx() {
+    return 0;
 }
 
-bool Guest::unit_218() {
-    return false;
+u16 Guest::missSfx() {
+    return 0;
 }
 
 void guest_callback1(Guest* p) {

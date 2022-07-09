@@ -63,16 +63,16 @@ public:
 
     virtual void* getRTTI();
     virtual u8 unit_d0();
-    virtual bool unit_178();
+    virtual u16 unit_178();
     virtual u16 id() const;
     virtual Msg name() const;
     virtual s32 level() const;
-    virtual bool unit_208();
-    virtual bool unit_210();
-    virtual bool unit_218();
+    virtual u16 attackSfx();
+    virtual u16 critSfx();
+    virtual u16 missSfx();
 
-    virtual Unit* guest_2c0();
-    virtual bool guest_2c8(Base*);
+    virtual Action* guest_2c0();
+    virtual bool guest_2c8(Action*);
     virtual void onRoundBegin();
     virtual void onRoundEnd();
     virtual void guest_2e0();

@@ -1,4 +1,5 @@
 #include "battle/unit.h"
+#include "battle/action.h"
 #include "functions.h"
 
 UnitCmd* sub_080651A4(u16, Unit*);
@@ -92,8 +93,8 @@ u8 Unit::unit_d0() {
 
 ASM_FUNC("asm/non_matching/unit/unit_68__4Unit.inc", u8 Unit::unit_68());
 
-s32 Unit::unit_70(Unit* u) const {
-    return u->hpReal();
+bool Unit::unit_70(Action* a) {
+    return a->action_1a0();
 }
 
 void Unit::unit_d8(Action* a1) {

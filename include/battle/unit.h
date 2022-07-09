@@ -49,7 +49,7 @@ public:
     s16 get58(u32 idx) const { return *(mStatusWeaknesses + idx); }
 
     virtual u8 unit_68();
-    virtual s32 unit_70(Unit* u) const;
+    virtual bool unit_70(Action* a);
 
     virtual void unit_78(Action* a1);
     virtual void unit_80(Action* a1);
@@ -87,7 +87,7 @@ public:
     virtual void setStatusWeakness(u16 idx, s32 value);
     virtual void unit_170(u32 value);
 
-    virtual bool unit_178() = 0;
+    virtual u16 unit_178() = 0;
     virtual u16 id() const = 0;
     virtual Msg name() const = 0;
 
@@ -109,9 +109,9 @@ public:
     virtual s32 getStatusWeakness(u16 idx) const;
     virtual s32 unit_200() const;
 
-    virtual bool unit_208() = 0;
-    virtual bool unit_210() = 0;
-    virtual bool unit_218() = 0;
+    virtual u16 attackSfx() = 0;
+    virtual u16 critSfx() = 0;
+    virtual u16 missSfx() = 0;
 
     virtual UnitCmd* unit_220(u32 a1);
     virtual bool unit_228(u32 a1);

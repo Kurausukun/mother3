@@ -52,7 +52,7 @@ tellStatus: @ 0x080824B0
 	adds r1, r4, #0
 	add r2, sp, #4
 	adds r3, r6, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	adds r0, r5, #0
 	movs r1, #2
 	bl _._3Msg
@@ -635,7 +635,7 @@ sub_080828DC: @ 0x080828DC
 	adds r1, r6, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -915,7 +915,7 @@ tellTurnAction: @ 0x08082B1C
 	adds r1, r4, #0
 	add r2, sp, #4
 	adds r3, r6, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	adds r0, r5, #0
 	movs r1, #2
 	bl _._3Msg
@@ -1350,7 +1350,7 @@ _08082EC0:
 	add r1, sp, #4
 	adds r2, r6, #0
 	adds r3, r5, #0
-	bl sub_080734A0
+	bl StrFmt
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg

@@ -86,7 +86,7 @@ _0805E62E:
 	movs r1, #2
 _0805E652:
 	movs r2, #0
-	bl sub_0805E670__6Battleib
+	bl setBattleResult__6Battleib
 	movs r0, #1
 	b _0805E65E
 _0805E65C:

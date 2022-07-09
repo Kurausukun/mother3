@@ -49,7 +49,7 @@ public:
     virtual void clearTargets();
     virtual s32 numTargets() const;
     virtual Unit* getTarget(s32) const;
-    virtual s32 getTargetIdx(Unit* target) const;
+    virtual s32 getTargetIdx(Unit* target);
     virtual bool action_1a0();
     virtual void action_1a8();
     virtual bool action_1b0();

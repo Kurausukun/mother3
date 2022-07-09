@@ -87,6 +87,7 @@ struct Color {
 struct Msg {
     Msg();
     Msg(const void* ptr, u32 size);
+    Msg(const Msg&);
     virtual ~Msg();
 
     static Msg genMisctextMsg(void*, u32 idx);
@@ -94,7 +95,7 @@ struct Msg {
     void print(const Color&, bool);
     s32 len();
     u16* sub_0806E334(s32 idx);
-    void sub_0806E2E8(const Msg&);
+    void replace(const Msg&);
     void sub_0806E374(const Msg&);
 
     u16* ptr;
@@ -102,6 +103,6 @@ struct Msg {
     u16 _6;
 };
 
-Msg sub_08073460(s32, const Msg&, const Msg&, const Msg&);
+Msg ROMStrFmt(s32, const Msg&, const Msg&, const Msg&);
 
 #endif  // BASE_H

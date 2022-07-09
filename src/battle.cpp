@@ -38,7 +38,7 @@ struct Encounter {
 extern Encounter gEncounter;
 
 void Battle::sub_0805DC1C() {
-    switch (_40) {
+    switch (mBattleResult) {
     case 2:
         gEncounter.result = 1;
         break;
@@ -58,7 +58,7 @@ void Battle::sub_0805DC1C() {
 ASM_FUNC("asm/non_matching/battle/sub_0805DC6C.inc", void Battle::sub_0805DC6C());
 
 void Battle::sub_0805DDE4() {
-    sub_0805E670(5, 0);
+    setBattleResult(5, 0);
 }
 
 void Battle::battle_68() {
@@ -91,9 +91,9 @@ void Battle::battle_90() {
     Msg m;
 
     if (sub_08072DFC() < 2) {
-        m.sub_0806E2E8(sub_08073460(0xb2, sub_08072E18(0)->name(), Msg(), Msg()));
+        m.replace(ROMStrFmt(0xb2, sub_08072E18(0)->name(), Msg(), Msg()));
     } else {
-        m.sub_0806E2E8(sub_08073460(0xb3, sub_08072E18(0)->name(), Msg(), Msg()));
+        m.replace(ROMStrFmt(0xb3, sub_08072E18(0)->name(), Msg(), Msg()));
     }
 
     switch (_38) {
@@ -101,10 +101,10 @@ void Battle::battle_90() {
         m.sub_0806E374(sub_08072E18(0)->player_330());
         break;
     case 1:
-        m.sub_0806E374(sub_08073460(0xb4, Msg(), Msg(), Msg()));
+        m.sub_0806E374(ROMStrFmt(0xb4, Msg(), Msg(), Msg()));
         break;
     case 2:
-        m.sub_0806E374(sub_08073460(0xb5, Msg(), Msg(), Msg()));
+        m.sub_0806E374(ROMStrFmt(0xb5, Msg(), Msg(), Msg()));
         break;
     }
 
@@ -244,9 +244,9 @@ bool Battle::battle_e0() {
     return true;
 }
 
-bool Battle::sub_0805E670(s32 a1, bool a2) {
-    if (_40 != a1 || a2 == true) {
-        _40 = a1;
+bool Battle::setBattleResult(s32 a1, bool a2) {
+    if (mBattleResult != a1 || a2 == true) {
+        mBattleResult = a1;
         return true;
     } else {
         return false;
@@ -254,7 +254,7 @@ bool Battle::sub_0805E670(s32 a1, bool a2) {
 }
 
 void Battle::battle_e8() {
-    switch (_40) {
+    switch (mBattleResult) {
     case 2:
         battle_f0();
         break;
@@ -284,7 +284,7 @@ void Battle::battle_100() {
     emit(ShowDownAsLose());
 
     sub_0807459C(battle_1f8(), 0x20, 0x20, 0);
-    sub_08073460(0x78, Msg(), Msg(), Msg()).print(Color(0, 0, 0), true);
+    ROMStrFmt(0x78, Msg(), Msg(), Msg()).print(Color(0, 0, 0), true);
     sub_0805E9BC();
 }
 
@@ -379,8 +379,8 @@ bool Battle::battle_1a8() {
     return true;
 }
 
-bool Battle::battle_1b0() {
-    return _40 == true;
+bool Battle::isBattleWon() {
+    return mBattleResult == 1;
 }
 
 s32 Battle::roundNo() {
@@ -388,23 +388,23 @@ s32 Battle::roundNo() {
 }
 
 bool Battle::battle_1c0() {
-    return _40 == 5 || _40 == 4 || _40 == 3 || _40 == 2;
+    return mBattleResult == 5 || mBattleResult == 4 || mBattleResult == 3 || mBattleResult == 2;
 }
 
 bool Battle::battle_1c8() {
-    return _40 == 2;
+    return mBattleResult == 2;
 }
 
 bool Battle::battle_1d0() {
-    return _40 == 3;
+    return mBattleResult == 3;
 }
 
-bool Battle::battle_1d8() {
-    return _40 == 4;
+bool Battle::isBattleLost() {
+    return mBattleResult == 4;
 }
 
 bool Battle::battle_1e0() {
-    return _40 == 5;
+    return mBattleResult == 5;
 }
 
 u16 Battle::battle_1e8() {

@@ -1523,7 +1523,7 @@ sub_0807B528: @ 0x0807B528
 	push {r4, r5, r6, r7, lr}
 	sub sp, #0x38
 	adds r7, r0, #0
-	bl sub_08072778
+	bl battleWon
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -1552,7 +1552,7 @@ sub_0807B528: @ 0x0807B528
 	movs r1, #0x74
 	adds r2, r6, #0
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	add r1, sp, #0x34
 	movs r0, #0
 	strb r0, [r1]
@@ -1611,7 +1611,7 @@ sub_0807B5D4: @ 0x0807B5D4
 	adds r0, r0, r2
 	ldr r1, [r1, #4]
 	bl _call_via_r1
-	bl sub_08072778
+	bl battleWon
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -1640,7 +1640,7 @@ sub_0807B5D4: @ 0x0807B5D4
 	movs r1, #0x75
 	adds r2, r6, #0
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	add r1, sp, #0x34
 	movs r0, #0
 	strb r0, [r1]
@@ -1985,10 +1985,10 @@ _0807B8DE:
 	movs r1, #0x7f
 	mov r2, r8
 	adds r3, r6, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	add r0, sp, #4
 	adds r1, r4, #0
-	bl sub_0806E2E8__3MsgRC3Msg
+	bl replace__3MsgRC3Msg
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -2131,7 +2131,7 @@ tellStatUpgrade: @ 0x0807BA3C
 	mov r1, sb
 	adds r2, r6, #0
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	mov r0, r8
 	add r1, sp, #4
 	bl sub_0806E374__3MsgRC3Msg

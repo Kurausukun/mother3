@@ -4,7 +4,7 @@
 #include "battle/monster.h"
 
 extern "C" Msg sub_080706D0(u16, u16);
-extern "C" Msg sub_080734A0(const Msg&, const Msg&, const Msg&, const Msg&);
+extern "C" Msg StrFmt(const Msg&, const Msg&, const Msg&, const Msg&);
 
 extern "C" s32 sub_08072568() {
     return BattleManager::get()->battle_140();
@@ -30,7 +30,7 @@ extern "C" Struct160* sub_08072608() {
     return BattleManager::get()->battle_168();
 }
 
-extern "C" bool sub_08072628() {
+extern "C" bool IsBossBattle() {
     return BattleManager::get()->battle_170();
 }
 
@@ -66,8 +66,8 @@ extern "C" bool sub_08072758() {
     return BattleManager::get()->battle_1a8();
 }
 
-extern "C" bool sub_08072778() {
-    return BattleManager::get()->battle_1b0();
+extern "C" bool battleWon() {
+    return BattleManager::get()->isBattleWon();
 }
 
 extern "C" s32 roundNumber() {
@@ -87,7 +87,7 @@ extern "C" bool sub_080727F8() {
 }
 
 extern "C" bool sub_08072818() {
-    return BattleManager::get()->battle_1d8();
+    return BattleManager::get()->isBattleLost();
 }
 
 extern "C" bool sub_08072838() {
@@ -354,11 +354,11 @@ Msg sub_08073444(u16 idx) {
     return sub_080706D0(0x3a6, idx);
 }
 
-Msg sub_08073460(s32 r0, const Msg& r1, const Msg& r2, const Msg& r3) {
-    return sub_080734A0(sub_08073444(r0), r1, r2, r3);
+Msg ROMStrFmt(s32 r0, const Msg& r1, const Msg& r2, const Msg& r3) {
+    return StrFmt(sub_08073444(r0), r1, r2, r3);
 }
 
-extern "C" ASM_FUNC("asm/non_matching/battleData/sub_080734A0.inc", Msg sub_080734A0(const Msg&, const Msg&, const Msg&, const Msg&));
+extern "C" ASM_FUNC("asm/non_matching/battleData/sub_080734A0.inc", Msg StrFmt(const Msg&, const Msg&, const Msg&, const Msg&));
 
 ASM_FUNC("asm/non_matching/battleData/print__3MsgRC13PrintSettingsb.inc", void Msg::print(const Color&, bool));
 

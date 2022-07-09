@@ -221,7 +221,7 @@ _0806247A:
 _080624C0: .4byte gEncounter
 _080624C4: .4byte 0xFFFFFF00
 _080624C8:
-	bl sub_08072628
+	bl IsBossBattle
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -1346,7 +1346,7 @@ _08062CD8:
 	bl _call_via_r2
 	add r0, sp, #4
 	movs r1, #2
-	bl sub_080639B4
+	bl _._15struct_08063998
 	adds r6, #1
 _08062D28:
 	ldr r1, [r7, #0x1c]
@@ -1642,7 +1642,7 @@ _08062EE8:
 	str r0, [r5, #0x24]
 	adds r0, r6, #0
 	movs r1, #2
-	bl sub_080639B4
+	bl _._15struct_08063998
 	adds r5, #4
 	movs r1, #1
 	add r8, r1
@@ -2976,28 +2976,28 @@ _0806398E:
 
 	thumb_func_start __15struct_08063998
 __15struct_08063998: @ 0x08063998
-	ldr r1, _080639A4 @ =vt_09F4E460
+	ldr r1, _080639A4 @ =_vt.15struct_08063998
 	str r1, [r0, #4]
 	movs r1, #5
 	strh r1, [r0]
 	bx lr
 	.align 2, 0
-_080639A4: .4byte vt_09F4E460
+_080639A4: .4byte _vt.15struct_08063998
 
 	thumb_func_start sub_080639A8
 sub_080639A8: @ 0x080639A8
-	ldr r2, _080639B0 @ =vt_09F4E460
+	ldr r2, _080639B0 @ =_vt.15struct_08063998
 	str r2, [r0, #4]
 	strh r1, [r0]
 	bx lr
 	.align 2, 0
-_080639B0: .4byte vt_09F4E460
+_080639B0: .4byte _vt.15struct_08063998
 
-	thumb_func_start sub_080639B4
-sub_080639B4: @ 0x080639B4
+	thumb_func_start _._15struct_08063998
+_._15struct_08063998: @ 0x080639B4
 	push {lr}
 	adds r2, r0, #0
-	ldr r0, _080639D0 @ =vt_09F4E460
+	ldr r0, _080639D0 @ =_vt.15struct_08063998
 	str r0, [r2, #4]
 	movs r0, #1
 	ands r0, r1
@@ -3009,7 +3009,7 @@ _080639CA:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080639D0: .4byte vt_09F4E460
+_080639D0: .4byte _vt.15struct_08063998
 
 	thumb_func_start sub_080639D4
 sub_080639D4: @ 0x080639D4

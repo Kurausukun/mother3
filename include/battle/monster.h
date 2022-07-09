@@ -4,7 +4,8 @@
 #include "global.h"
 #include "battle/unit.h"
 
-struct Monster;
+class Monster;
+class MonsterSkill;
 
 struct MonsterDrop {
     u8 id;
@@ -35,7 +36,7 @@ struct MonsterData {
     u16 weaknesses[15];
     u16 elem_weaknesses[5];
     u16 skills[8];
-    u16 attack_sfx;
+    u16 sfx_base;
     u8 encounter_msg;
     u8 death_msg;
     u8 death_anim;
@@ -44,7 +45,7 @@ struct MonsterData {
     u8 battle_height[2];
     u8 memory_back_sprite;
     u8 battle_back_sprite;
-    u16 death_anim_last;
+    u8 death_anim_last;
     MonsterDrop drops[3];
     u32 experience;
     u32 money;
@@ -53,74 +54,108 @@ struct MonsterData {
 
 struct struct_08063998 {
     struct_08063998();
+    struct_08063998(const struct_08063998& o) : a(o.a) {}
     virtual ~struct_08063998();
 
-    u32 a;
+    u16 a;
 };
 
 struct BattleSprite : public Base {
+    struct X {
+        u16 a, b;
+    };
+
     BattleSprite(Monster*);
     virtual ~BattleSprite();
+
+    virtual void battlesprite_68();
+    virtual void battlesprite_70();
+    virtual void battlesprite_78();
+    virtual void battlesprite_80();
+    virtual void battlesprite_88(const X&);
+    virtual void battlesprite_90(u32);
+    virtual void battlesprite_98();
+    virtual void battlesprite_a0();
+    virtual void battlesprite_a8();
+    virtual void battlesprite_b0();
+    virtual void battlesprite_b8();
+    virtual X battlesprite_c0();
+    virtual u32 battlesprite_c8();
 
     u8 filler[0xa8];
 };
 
 class Monster : public Unit {
 public:
+    struct Drop {
+        u16 id;
+        u16 chance;
+    };
+
     Monster();
     Monster(u16 idx, u16 id);
     virtual ~Monster();
 
     virtual void* getRTTI();
+    virtual u8 unit_d0();
+    virtual u16 unit_178();
+    virtual u16 id() const;
+    virtual Msg name() const;
+    virtual void setHP(s32 value);
+    virtual u16 attackSfx();
+    virtual u16 critSfx();
+    virtual u16 missSfx();
 
-    virtual void monster_2c0();
-    virtual void monster_2c8();
-    virtual void monster_2d0();
-    virtual void monster_2d8();
-    virtual void monster_2e0();
-    virtual void monster_2e8();
-    virtual void monster_2f0();
+    virtual Action* monster_2c0();
+    virtual bool monster_2c8(Action*);
+    virtual void onRoundBegin();
+    virtual void onRoundEnd();
+    virtual u32 monster_2e0();
+    virtual u32 monster_2e8();
+    virtual u32 monster_2f0();
     virtual void monster_2f8();
     virtual void monster_300(bool);
-    virtual void monster_308();
-    virtual u8 monster_310();
-    virtual s32 monster_318();
-    virtual void monster_320();
-    virtual void monster_328();
-    virtual Msg monster_330();
-    virtual void monster_338();
-    virtual void monster_340();
+    virtual void monster_308(const Msg&);
+    virtual void setDeathAnim(s32);
+    virtual void setExperience(s32);
+    virtual void setMoney(s32);
+    virtual struct_08063998 monster_328();
+    virtual Msg fmtEncounterMsg();
+    virtual Msg deathMsg();
+    virtual u32 deathSeq();
     virtual u32 type();
-    virtual u32 monster_350();
-    virtual void monster_358();
-    virtual void monster_360();
-    virtual void monster_368();
-    virtual void monster_370();
-    virtual void monster_378();
-    virtual bool monster_380();
-    virtual void monster_388();
-    virtual void monster_390();
-    virtual void monster_398();
-    virtual void addDrop(u32 a, u32 b);
-
-    static s32 maxDrops() { return 3; }
+    virtual u32 surprised();
+    virtual u32 numSkills();
+    virtual u32 getSkill(s32);
+    virtual u16 numWeaknesses() const;
+    virtual u16 getWeakness(s32) const;
+    virtual s32 battlePos() const;
+    virtual bool hasBackSprite() const;
+    virtual bool isFadeOnDeath() const;
+    virtual u32 experience() const;
+    virtual u32 money() const;
+    virtual bool addDrop(u16 id, u32 chance);
+    virtual bool monster_3a8(u16);
+    virtual s32 numDrops() const;
+    virtual u16 getDropID(s32) const;
+    virtual s32 getDropChance(s32) const;
 
     void resetStats();
     void resetRewards();
-    void sub_08080D48();
+    void genDeathMsg();
+    void sub_08080F54();
+    void sub_080817D0(u16 id);
 
     u16 mIdx;
     u16 mID;
     MonsterData* mData;
-    u32 mUseAltStats;
+    u32 mSurpriseState;
     u32 mHPCopy;
-    Msg _108;
+    Msg mDeathMsg;
     u16 mDeathAnim;
     u32 mExperience;
-    u32 _11c;
-    u32 _120;
-    u32 _124;
-    u32 _128;
+    s32 mNumDrops;
+    Drop mDrops[3];
     u32 mMoney;
     u16 _130;
     struct_08063998 _134;

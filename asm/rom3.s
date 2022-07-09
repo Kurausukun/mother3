@@ -362,7 +362,7 @@ sub_080A04CC: @ 0x080A04CC
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
-	bl unit_70__C4UnitP4Unit
+	bl unit_70__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -593,7 +593,7 @@ _080A0672:
 sub_080A0680: @ 0x080A0680
 	push {r4, lr}
 	adds r4, r0, #0
-	bl sub_08072628
+	bl IsBossBattle
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -704,7 +704,7 @@ sub_080A0758: @ 0x080A0758
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
-	bl unit_70__C4UnitP4Unit
+	bl unit_70__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -1050,7 +1050,7 @@ sub_080A09D0: @ 0x080A09D0
 sub_080A09DC: @ 0x080A09DC
 	push {r4, lr}
 	adds r4, r0, #0
-	bl unit_70__C4UnitP4Unit
+	bl unit_70__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -10192,7 +10192,7 @@ sub_080A5964: @ 0x080A5964
 	adds r2, r1, #0
 _080A596E:
 	adds r1, r2, #0
-	bl sub_08081494
+	bl setHP__7Monsteri
 	pop {r0}
 	bx r0
 
@@ -10224,7 +10224,7 @@ sub_080A59A0: @ 0x080A59A0
 	str r2, [r0, #0x20]
 	ldr r2, _080A59B8 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -10240,7 +10240,7 @@ sub_080A59BC: @ 0x080A59BC
 	adds r2, r1, #0
 _080A59C6:
 	adds r1, r2, #0
-	bl sub_08081494
+	bl setHP__7Monsteri
 	pop {r0}
 	bx r0
 
@@ -10265,7 +10265,7 @@ _080A59F0:
 	adds r4, r0, #0
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08081494
+	bl setHP__7Monsteri
 	pop {r4, r5}
 	pop {r0}
 	bx r0
@@ -10465,7 +10465,7 @@ sub_080A5B10: @ 0x080A5B10
 	beq _080A5BA6
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__C4UnitP4Unit
+	bl unit_70__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -10660,7 +10660,7 @@ _080A5CAA:
 	beq _080A5D40
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__C4UnitP4Unit
+	bl unit_70__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -11071,7 +11071,7 @@ sub_080A6010: @ 0x080A6010
 	str r2, [r0, #0x20]
 	ldr r2, _080A6028 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -11087,7 +11087,7 @@ sub_080A602C: @ 0x080A602C
 	adds r2, r1, #0
 _080A6036:
 	adds r1, r2, #0
-	bl sub_08081494
+	bl setHP__7Monsteri
 	pop {r0}
 	bx r0
 
@@ -11127,7 +11127,7 @@ sub_080A6074: @ 0x080A6074
 	str r2, [r0, #0x20]
 	ldr r2, _080A608C @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -11143,7 +11143,7 @@ sub_080A6090: @ 0x080A6090
 	adds r2, r1, #0
 _080A609A:
 	adds r1, r2, #0
-	bl sub_08081494
+	bl setHP__7Monsteri
 	pop {r0}
 	bx r0
 
@@ -11697,7 +11697,7 @@ sub_080A647C: @ 0x080A647C
 	beq _080A6512
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__C4UnitP4Unit
+	bl unit_70__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -12303,7 +12303,7 @@ sub_080A697C: @ 0x080A697C
 	str r2, [r0, #0x20]
 	ldr r2, _080A6994 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -12544,7 +12544,7 @@ sub_080A6B18: @ 0x080A6B18
 	bl sub_08074234
 _080A6B42:
 	adds r0, r4, #0
-	bl sub_08080F54
+	bl sub_08080F54__7Monster
 	pop {r4}
 	pop {r0}
 	bx r0
@@ -12557,7 +12557,7 @@ sub_080A6B50: @ 0x080A6B50
 	str r2, [r0, #0x20]
 	ldr r2, _080A6B68 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -12765,7 +12765,7 @@ sub_080A6CB0: @ 0x080A6CB0
 	bl sub_08074234
 _080A6CDA:
 	adds r0, r4, #0
-	bl sub_08080F54
+	bl sub_08080F54__7Monster
 	pop {r4}
 	pop {r0}
 	bx r0
@@ -12778,7 +12778,7 @@ sub_080A6CE8: @ 0x080A6CE8
 	str r2, [r0, #0x20]
 	ldr r2, _080A6D00 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -12940,7 +12940,7 @@ _080A6D64:
 	lsls r1, r1, #2
 	add r2, sp, #0x10
 	add r3, sp, #0x1c
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	add r1, sp, #0x38
 	strb r5, [r1]
 	strb r5, [r1, #1]
@@ -13101,7 +13101,7 @@ sub_080A6F4C: @ 0x080A6F4C
 	beq _080A6FE2
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__C4UnitP4Unit
+	bl unit_70__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -14001,7 +14001,7 @@ sub_080A769C: @ 0x080A769C
 	str r2, [r0, #0x20]
 	ldr r2, _080A76B4 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -14054,7 +14054,7 @@ sub_080A76B8: @ 0x080A76B8
 	beq _080A774E
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__C4UnitP4Unit
+	bl unit_70__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -14194,7 +14194,7 @@ sub_080A7814: @ 0x080A7814
 	str r2, [r0, #0x20]
 	ldr r2, _080A782C @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -14370,7 +14370,7 @@ _080A7978: .4byte 0x0000019D
 _080A797C:
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_08080EB8
+	bl monster_2c8__7MonsterP6Action
 _080A7984:
 	pop {r4, r5}
 	pop {r1}
@@ -14414,7 +14414,7 @@ sub_080A79B4: @ 0x080A79B4
 	bl sub_08074234
 _080A79D0:
 	adds r0, r4, #0
-	bl sub_08080F54
+	bl sub_08080F54__7Monster
 	pop {r4}
 	pop {r0}
 	bx r0
@@ -14428,7 +14428,7 @@ sub_080A79E0: @ 0x080A79E0
 	str r2, [r0, #0x20]
 	ldr r2, _080A79F8 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -14481,7 +14481,7 @@ sub_080A79FC: @ 0x080A79FC
 	beq _080A7A92
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__C4UnitP4Unit
+	bl unit_70__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -14587,7 +14587,7 @@ sub_080A7B14: @ 0x080A7B14
 	str r2, [r0, #0x20]
 	ldr r2, _080A7B2C @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -14640,7 +14640,7 @@ sub_080A7B30: @ 0x080A7B30
 	beq _080A7BC6
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__C4UnitP4Unit
+	bl unit_70__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -14831,7 +14831,7 @@ sub_080A7CF8: @ 0x080A7CF8
 	str r2, [r0, #0x20]
 	ldr r2, _080A7D10 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -15043,7 +15043,7 @@ _080A7E30:
 	add r0, sp, #4
 	adds r2, r6, #0
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	add r1, sp, #0x34
 	movs r0, #0
 	strb r0, [r1]
@@ -15119,7 +15119,7 @@ sub_080A7EFC: @ 0x080A7EFC
 	beq _080A7F92
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__C4UnitP4Unit
+	bl unit_70__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -15792,7 +15792,7 @@ sub_080A84AC: @ 0x080A84AC
 	str r2, [r0, #0x20]
 	ldr r2, _080A84C4 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -15845,7 +15845,7 @@ sub_080A84C8: @ 0x080A84C8
 	beq _080A855E
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__C4UnitP4Unit
+	bl unit_70__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -16211,7 +16211,7 @@ sub_080A87F8: @ 0x080A87F8
 	str r2, [r0, #0x20]
 	ldr r2, _080A8810 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -16301,7 +16301,7 @@ sub_080A8854: @ 0x080A8854
 	beq _080A88EA
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__C4UnitP4Unit
+	bl unit_70__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -16863,7 +16863,7 @@ sub_080A8CF8: @ 0x080A8CF8
 	str r2, [r0, #0x20]
 	ldr r2, _080A8D10 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -16927,7 +16927,7 @@ sub_080A8D78: @ 0x080A8D78
 	bl sub_080741AC
 	bl sub_08074234
 	adds r0, r4, #0
-	bl sub_08080F54
+	bl sub_08080F54__7Monster
 	pop {r4}
 	pop {r0}
 	bx r0
@@ -16939,7 +16939,7 @@ sub_080A8D94: @ 0x080A8D94
 	str r2, [r0, #0x20]
 	ldr r2, _080A8DAC @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -17000,7 +17000,7 @@ sub_080A8E04: @ 0x080A8E04
 	adds r2, r1, #0
 _080A8E0E:
 	adds r1, r2, #0
-	bl sub_08081494
+	bl setHP__7Monsteri
 	pop {r0}
 	bx r0
 
@@ -17414,7 +17414,7 @@ _080A906C:
 	lsls r1, r1, #2
 	add r2, sp, #0x10
 	add r3, sp, #0x1c
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	add r1, sp, #0x38
 	strb r5, [r1]
 	strb r5, [r1, #1]
@@ -17615,7 +17615,7 @@ _080A92BC:
 	add r0, sp, #4
 	adds r2, r6, #0
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	add r1, sp, #0x34
 	movs r0, #0
 	strb r0, [r1]
@@ -17638,7 +17638,7 @@ _080A92BC:
 	bl _._3Msg
 	adds r0, r7, #0
 	movs r1, #0
-	bl sub_08081494
+	bl setHP__7Monsteri
 _080A9350:
 	add sp, #0x38
 	pop {r4, r5, r6, r7}
@@ -18085,7 +18085,7 @@ sub_080A96BC: @ 0x080A96BC
 	str r2, [r0, #0x20]
 	ldr r2, _080A96D4 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -18140,7 +18140,7 @@ sub_080A972C: @ 0x080A972C
 	str r2, [r0, #0x20]
 	ldr r2, _080A9744 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -18269,7 +18269,7 @@ sub_080A9834: @ 0x080A9834
 	str r2, [r0, #0x20]
 	ldr r2, _080A984C @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -18303,7 +18303,7 @@ sub_080A9874: @ 0x080A9874
 	str r2, [r0, #0x20]
 	ldr r2, _080A988C @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -18410,7 +18410,7 @@ sub_080A9948: @ 0x080A9948
 	str r2, [r0, #0x20]
 	ldr r2, _080A9960 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -18448,7 +18448,7 @@ sub_080A9990: @ 0x080A9990
 	str r2, [r0, #0x20]
 	ldr r2, _080A99A8 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -18563,7 +18563,7 @@ sub_080A9A74: @ 0x080A9A74
 	str r2, [r0, #0x20]
 	ldr r2, _080A9A8C @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -18697,7 +18697,7 @@ sub_080A9B7C: @ 0x080A9B7C
 	str r2, [r0, #0x20]
 	ldr r2, _080A9B94 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -18790,7 +18790,7 @@ sub_080A9C34: @ 0x080A9C34
 	str r2, [r0, #0x20]
 	ldr r2, _080A9C4C @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -18843,7 +18843,7 @@ sub_080A9C50: @ 0x080A9C50
 	beq _080A9CE6
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__C4UnitP4Unit
+	bl unit_70__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -18967,7 +18967,7 @@ sub_080A9D98: @ 0x080A9D98
 	bl sub_080741AC
 	bl sub_08074234
 	adds r0, r4, #0
-	bl sub_08080F54
+	bl sub_08080F54__7Monster
 	bl get__13BattleManager
 	ldr r1, [r0, #0x1c]
 	movs r2, #0x98
@@ -18991,7 +18991,7 @@ sub_080A9DD0: @ 0x080A9DD0
 	str r2, [r0, #0x20]
 	ldr r2, _080A9DE8 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -19032,7 +19032,7 @@ sub_080A9E18: @ 0x080A9E18
 	bl sub_080741AC
 	bl sub_08074234
 	adds r0, r4, #0
-	bl sub_08080F54
+	bl sub_08080F54__7Monster
 	pop {r4}
 	pop {r0}
 	bx r0
@@ -19045,7 +19045,7 @@ sub_080A9E38: @ 0x080A9E38
 	str r2, [r0, #0x20]
 	ldr r2, _080A9E50 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -19118,7 +19118,7 @@ sub_080A9ECC: @ 0x080A9ECC
 	str r2, [r0, #0x20]
 	ldr r2, _080A9EE4 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -19214,7 +19214,7 @@ sub_080A9F3C: @ 0x080A9F3C
 	beq _080A9FD2
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__C4UnitP4Unit
+	bl unit_70__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -19802,7 +19802,7 @@ sub_080AA418: @ 0x080AA418
 	str r2, [r0, #0x20]
 	ldr r2, _080AA430 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -19859,7 +19859,7 @@ sub_080AA488: @ 0x080AA488
 	str r2, [r0, #0x20]
 	ldr r2, _080AA4A0 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -19913,7 +19913,7 @@ sub_080AA4F0: @ 0x080AA4F0
 	str r2, [r0, #0x20]
 	ldr r2, _080AA508 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -20013,7 +20013,7 @@ sub_080AA5BC: @ 0x080AA5BC
 	str r2, [r0, #0x20]
 	ldr r2, _080AA5D4 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -20212,7 +20212,7 @@ _080AA678:
 	lsls r1, r1, #2
 	add r2, sp, #0x10
 	add r3, sp, #0x1c
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	add r1, sp, #0x38
 	strb r5, [r1]
 	strb r5, [r1, #1]
@@ -20472,7 +20472,7 @@ sub_080AA974: @ 0x080AA974
 	str r2, [r0, #0x20]
 	ldr r2, _080AA98C @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -20527,7 +20527,7 @@ sub_080AA9E0: @ 0x080AA9E0
 	str r2, [r0, #0x20]
 	ldr r2, _080AA9F8 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -20577,7 +20577,7 @@ sub_080AAA40: @ 0x080AAA40
 	str r2, [r0, #0x20]
 	ldr r2, _080AAA58 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -20654,7 +20654,7 @@ sub_080AAAD8: @ 0x080AAAD8
 	str r2, [r0, #0x20]
 	ldr r2, _080AAAF0 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -20739,7 +20739,7 @@ _080AAB84: .4byte 0x000001CD
 _080AAB88:
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_08080EB8
+	bl monster_2c8__7MonsterP6Action
 _080AAB90:
 	pop {r4, r5}
 	pop {r1}
@@ -20868,7 +20868,7 @@ sub_080AAC80: @ 0x080AAC80
 	str r2, [r0, #0x20]
 	ldr r2, _080AAC98 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -20921,7 +20921,7 @@ sub_080AAC9C: @ 0x080AAC9C
 	beq _080AAD32
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__C4UnitP4Unit
+	bl unit_70__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -21008,7 +21008,7 @@ sub_080AAD94: @ 0x080AAD94
 	str r2, [r0, #0x20]
 	ldr r2, _080AADAC @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -21033,7 +21033,7 @@ _080AADC8:
 	adds r1, r0, #0
 _080AADCA:
 	adds r0, r2, #0
-	bl sub_08081494
+	bl setHP__7Monsteri
 	pop {r0}
 	bx r0
 
@@ -21042,7 +21042,7 @@ sub_080AADD4: @ 0x080AADD4
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
-	bl sub_0808110C
+	bl monster_300__7Monsterb
 	ldr r1, [r6, #0x1c]
 	movs r0, #0xc0
 	lsls r0, r0, #1
@@ -21183,7 +21183,7 @@ sub_080AAE94: @ 0x080AAE94
 	beq _080AAF2A
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__C4UnitP4Unit
+	bl unit_70__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -21515,7 +21515,7 @@ sub_080AB168: @ 0x080AB168
 	str r2, [r0, #0x20]
 	ldr r2, _080AB180 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -21748,7 +21748,7 @@ sub_080AB32C: @ 0x080AB32C
 	str r2, [r0, #0x20]
 	ldr r2, _080AB344 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -21812,7 +21812,7 @@ sub_080AB3A8: @ 0x080AB3A8
 	str r2, [r0, #0x20]
 	ldr r2, _080AB3C0 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -21870,7 +21870,7 @@ sub_080AB41C: @ 0x080AB41C
 	str r2, [r0, #0x20]
 	ldr r2, _080AB434 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -22069,7 +22069,7 @@ _080AB4D8:
 	lsls r1, r1, #2
 	add r2, sp, #0x10
 	add r3, sp, #0x1c
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	add r1, sp, #0x38
 	strb r5, [r1]
 	strb r5, [r1, #1]
@@ -22311,7 +22311,7 @@ sub_080AB7A8: @ 0x080AB7A8
 	str r2, [r0, #0x20]
 	ldr r2, _080AB7C0 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -22415,7 +22415,7 @@ sub_080AB824: @ 0x080AB824
 	beq _080AB8BA
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__C4UnitP4Unit
+	bl unit_70__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -22628,7 +22628,7 @@ sub_080ABA1C: @ 0x080ABA1C
 	str r2, [r0, #0x20]
 	ldr r2, _080ABA34 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -22751,7 +22751,7 @@ sub_080ABAFC: @ 0x080ABAFC
 	bl sub_08074234
 _080ABB18:
 	adds r0, r4, #0
-	bl sub_08080F54
+	bl sub_08080F54__7Monster
 	pop {r4}
 	pop {r0}
 	bx r0
@@ -22763,7 +22763,7 @@ sub_080ABB24: @ 0x080ABB24
 	str r2, [r0, #0x20]
 	ldr r2, _080ABB3C @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -22828,7 +22828,7 @@ sub_080ABBA4: @ 0x080ABBA4
 	str r2, [r0, #0x20]
 	ldr r2, _080ABBBC @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -22918,7 +22918,7 @@ sub_080ABC00: @ 0x080ABC00
 	beq _080ABC96
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__C4UnitP4Unit
+	bl unit_70__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -23202,7 +23202,7 @@ sub_080ABE6C: @ 0x080ABE6C
 	str r2, [r0, #0x20]
 	ldr r2, _080ABE84 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -23226,7 +23226,7 @@ sub_080ABE88: @ 0x080ABE88
 	adds r6, r0, #0
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_08081494
+	bl setHP__7Monsteri
 	ldr r1, [r5, #0x1c]
 	movs r0, #0x86
 	lsls r0, r0, #3
@@ -23373,7 +23373,7 @@ sub_080ABF7C: @ 0x080ABF7C
 	beq _080AC012
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__C4UnitP4Unit
+	bl unit_70__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -23619,7 +23619,7 @@ sub_080AC1B4: @ 0x080AC1B4
 	str r2, [r0, #0x20]
 	ldr r2, _080AC1CC @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -23668,7 +23668,7 @@ sub_080AC210: @ 0x080AC210
 	str r2, [r0, #0x20]
 	ldr r2, _080AC228 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -23731,7 +23731,7 @@ _080AC28C:
 	b _080AC29A
 _080AC290:
 	adds r0, r4, #0
-	bl sub_08080FEC
+	bl monster_2e8__7Monster
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 _080AC29A:
@@ -23842,7 +23842,7 @@ sub_080AC360: @ 0x080AC360
 	str r2, [r0, #0x20]
 	ldr r2, _080AC378 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -24114,7 +24114,7 @@ sub_080AC574: @ 0x080AC574
 	str r2, [r0, #0x20]
 	ldr r2, _080AC58C @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -24167,7 +24167,7 @@ sub_080AC590: @ 0x080AC590
 	beq _080AC626
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__C4UnitP4Unit
+	bl unit_70__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -24306,7 +24306,7 @@ sub_080AC6E8: @ 0x080AC6E8
 	str r2, [r0, #0x20]
 	ldr r2, _080AC700 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -24347,7 +24347,7 @@ sub_080AC734: @ 0x080AC734
 	str r2, [r0, #0x20]
 	ldr r2, _080AC74C @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -24358,7 +24358,7 @@ _080AC74C: .4byte vt_09F64318
 sub_080AC750: @ 0x080AC750
 	push {r4, lr}
 	adds r4, r0, #0
-	bl nullsub_36
+	bl onRoundEnd__7Monster
 	bl sub_08072DFC__Fv
 	cmp r0, #1
 	bgt _080AC77A
@@ -24419,7 +24419,7 @@ sub_080AC7C8: @ 0x080AC7C8
 	str r2, [r0, #0x20]
 	ldr r2, _080AC7E0 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -24475,7 +24475,7 @@ sub_080AC834: @ 0x080AC834
 	str r2, [r0, #0x20]
 	ldr r2, _080AC84C @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -24552,7 +24552,7 @@ sub_080AC8CC: @ 0x080AC8CC
 	str r2, [r0, #0x20]
 	ldr r2, _080AC8E4 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -24775,7 +24775,7 @@ sub_080ACA74: @ 0x080ACA74
 	str r2, [r0, #0x20]
 	ldr r2, _080ACA8C @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -24822,7 +24822,7 @@ sub_080ACAD0: @ 0x080ACAD0
 	str r2, [r0, #0x20]
 	ldr r2, _080ACAE8 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -25097,7 +25097,7 @@ sub_080ACCE4: @ 0x080ACCE4
 	str r2, [r0, #0x20]
 	ldr r2, _080ACCFC @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -25212,7 +25212,7 @@ sub_080ACD84: @ 0x080ACD84
 	beq _080ACE1A
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__C4UnitP4Unit
+	bl unit_70__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -25382,7 +25382,7 @@ sub_080ACF20: @ 0x080ACF20
 	str r2, [r0, #0x20]
 	ldr r2, _080ACF38 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -25435,7 +25435,7 @@ sub_080ACF3C: @ 0x080ACF3C
 	beq _080ACFD2
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__C4UnitP4Unit
+	bl unit_70__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -25556,7 +25556,7 @@ sub_080AD074: @ 0x080AD074
 	str r2, [r0, #0x20]
 	ldr r2, _080AD08C @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -25620,7 +25620,7 @@ _080AD0F8:
 _080AD0FC:
 	adds r0, r4, #0
 	adds r1, r7, #0
-	bl sub_08080EB8
+	bl monster_2c8__7MonsterP6Action
 _080AD104:
 	pop {r4, r5, r6, r7}
 	pop {r1}
@@ -25705,7 +25705,7 @@ sub_080AD198: @ 0x080AD198
 	str r2, [r0, #0x20]
 	ldr r2, _080AD1B0 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -25716,7 +25716,7 @@ _080AD1B0: .4byte vt_09F64318
 sub_080AD1B4: @ 0x080AD1B4
 	push {r4, lr}
 	adds r4, r0, #0
-	bl nullsub_36
+	bl onRoundEnd__7Monster
 	bl sub_08072DFC__Fv
 	cmp r0, #1
 	bgt _080AD1DE
@@ -25794,7 +25794,7 @@ sub_080AD204: @ 0x080AD204
 	beq _080AD29A
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__C4UnitP4Unit
+	bl unit_70__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -25888,7 +25888,7 @@ sub_080AD304: @ 0x080AD304
 	str r2, [r0, #0x20]
 	ldr r2, _080AD31C @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -25939,7 +25939,7 @@ sub_080AD364: @ 0x080AD364
 	str r2, [r0, #0x20]
 	ldr r2, _080AD37C @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -26051,7 +26051,7 @@ sub_080AD3E4: @ 0x080AD3E4
 	beq _080AD47A
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__C4UnitP4Unit
+	bl unit_70__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -26360,7 +26360,7 @@ sub_080AD694: @ 0x080AD694
 	str r2, [r0, #0x20]
 	ldr r2, _080AD6AC @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -26450,7 +26450,7 @@ sub_080AD6F0: @ 0x080AD6F0
 	beq _080AD786
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__C4UnitP4Unit
+	bl unit_70__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -26761,7 +26761,7 @@ sub_080AD998: @ 0x080AD998
 	str r2, [r0, #0x20]
 	ldr r2, _080AD9B0 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -26814,7 +26814,7 @@ sub_080AD9B4: @ 0x080AD9B4
 	beq _080ADA4A
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__C4UnitP4Unit
+	bl unit_70__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -27230,7 +27230,7 @@ sub_080ADD1C: @ 0x080ADD1C
 	str r2, [r0, #0x20]
 	ldr r2, _080ADD34 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -27283,7 +27283,7 @@ sub_080ADD38: @ 0x080ADD38
 	beq _080ADDCE
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__C4UnitP4Unit
+	bl unit_70__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -27631,7 +27631,7 @@ sub_080AE01C: @ 0x080AE01C
 	bl sub_080741AC
 	bl sub_08074234
 	adds r0, r4, #0
-	bl sub_08080F54
+	bl sub_08080F54__7Monster
 	pop {r4}
 	pop {r0}
 	bx r0
@@ -27643,7 +27643,7 @@ sub_080AE038: @ 0x080AE038
 	str r2, [r0, #0x20]
 	ldr r2, _080AE050 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -27696,7 +27696,7 @@ sub_080AE054: @ 0x080AE054
 	beq _080AE0EA
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__C4UnitP4Unit
+	bl unit_70__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -27852,7 +27852,7 @@ sub_080AE1D4: @ 0x080AE1D4
 	str r2, [r0, #0x20]
 	ldr r2, _080AE1EC @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -27905,7 +27905,7 @@ sub_080AE1F0: @ 0x080AE1F0
 	beq _080AE286
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__C4UnitP4Unit
+	bl unit_70__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -28182,7 +28182,7 @@ _080AE474:
 _080AE47C:
 	mov r0, r8
 	adds r1, r7, #0
-	bl sub_08080EB8
+	bl monster_2c8__7MonsterP6Action
 _080AE484:
 	pop {r3}
 	mov r8, r3
@@ -28387,7 +28387,7 @@ sub_080AE614: @ 0x080AE614
 	str r2, [r0, #0x20]
 	ldr r2, _080AE62C @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -28478,7 +28478,7 @@ sub_080AE6C8: @ 0x080AE6C8
 	str r2, [r0, #0x20]
 	ldr r2, _080AE6E0 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -28536,7 +28536,7 @@ sub_080AE738: @ 0x080AE738
 	str r2, [r0, #0x20]
 	ldr r2, _080AE750 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -28589,7 +28589,7 @@ sub_080AE754: @ 0x080AE754
 	beq _080AE7EA
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__C4UnitP4Unit
+	bl unit_70__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -28705,7 +28705,7 @@ sub_080AE880: @ 0x080AE880
 	str r2, [r0, #0x20]
 	ldr r2, _080AE898 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -28924,7 +28924,7 @@ _080AE95C:
 	lsls r1, r1, #2
 	add r2, sp, #0x10
 	add r3, sp, #0x1c
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	add r1, sp, #0x38
 	strb r5, [r1]
 	strb r5, [r1, #1]
@@ -29028,7 +29028,7 @@ sub_080AEAD0: @ 0x080AEAD0
 	beq _080AEB66
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__C4UnitP4Unit
+	bl unit_70__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -29214,7 +29214,7 @@ sub_080AEC8C: @ 0x080AEC8C
 	bl sub_080741AC
 	bl sub_08074234
 	adds r0, r4, #0
-	bl sub_08080F54
+	bl sub_08080F54__7Monster
 	pop {r4}
 	pop {r0}
 	bx r0
@@ -29226,7 +29226,7 @@ sub_080AECA8: @ 0x080AECA8
 	str r2, [r0, #0x20]
 	ldr r2, _080AECC0 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -29281,7 +29281,7 @@ sub_080AED14: @ 0x080AED14
 	str r2, [r0, #0x20]
 	ldr r2, _080AED2C @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -29340,7 +29340,7 @@ sub_080AED70: @ 0x080AED70
 sub_080AED7C: @ 0x080AED7C
 	push {r4, r5, lr}
 	adds r4, r0, #0
-	bl sub_0808110C
+	bl monster_300__7Monsterb
 	ldr r1, [r4, #0x1c]
 	movs r0, #0xc0
 	lsls r0, r0, #1
@@ -29377,7 +29377,7 @@ sub_080AED7C: @ 0x080AED7C
 sub_080AEDC8: @ 0x080AEDC8
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
-	bl sub_08080FD0
+	bl monster_2e0__7Monster
 	adds r5, r0, #0
 	ldr r1, [r4, #0x1c]
 	movs r6, #0xa8
@@ -29604,7 +29604,7 @@ _080AEEBC:
 	add r0, sp, #4
 	adds r2, r6, #0
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	add r1, sp, #0x38
 	mov r2, r8
 	strb r2, [r1]
@@ -29912,7 +29912,7 @@ sub_080AF1BC: @ 0x080AF1BC
 	beq _080AF226
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__C4UnitP4Unit
+	bl unit_70__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -30014,7 +30014,7 @@ sub_080AF2C8: @ 0x080AF2C8
 	str r2, [r0, #0x20]
 	ldr r2, _080AF2E0 @ =vt_09F64318
 	str r2, [r0, #0x1c]
-	bl sub_08080DD0
+	bl _._7Monster
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -33418,7 +33418,7 @@ sub_080B0B88: @ 0x080B0B88
 	bl sub_080639FC
 	mov r0, sp
 	movs r1, #2
-	bl sub_080639B4
+	bl _._15struct_08063998
 	ldr r0, _080B0C74 @ =0x00000563
 	bl playSound
 	ldr r1, [r6, #0x1c]
@@ -35552,7 +35552,7 @@ sub_080B1C9C: @ 0x080B1C9C
 	strh r0, [r5]
 	mov r0, sp
 	movs r1, #2
-	bl sub_080639B4
+	bl _._15struct_08063998
 	ldr r0, _080B1DA4 @ =0x0000FFE0
 	strh r0, [r5, #2]
 	mov r2, r8
@@ -35723,7 +35723,7 @@ sub_080B1E14: @ 0x080B1E14
 	bl sub_080639FC
 	mov r0, sp
 	movs r1, #2
-	bl sub_080639B4
+	bl _._15struct_08063998
 	ldr r0, _080B1F00 @ =0x000002FB
 	bl playSound
 	ldr r1, [r6, #0x1c]
@@ -36498,7 +36498,7 @@ sub_080B242C: @ 0x080B242C
 	bl sub_080639FC
 	mov r0, sp
 	movs r1, #2
-	bl sub_080639B4
+	bl _._15struct_08063998
 	ldr r0, _080B2554 @ =0x00000634
 	bl playSound
 	ldr r1, [r7, #0x1c]
@@ -36992,7 +36992,7 @@ sub_080B2848: @ 0x080B2848
 	strh r0, [r5]
 	mov r0, sp
 	movs r1, #2
-	bl sub_080639B4
+	bl _._15struct_08063998
 	ldr r0, _080B294C @ =0x0000FFE0
 	strh r0, [r5, #2]
 	ldr r1, [r7, #0x1c]
@@ -45746,7 +45746,7 @@ _080B6DEC:
 	adds r1, r7, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -45905,7 +45905,7 @@ _080B6F30:
 	adds r1, r7, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -46064,7 +46064,7 @@ _080B7074:
 	adds r1, r7, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -46556,7 +46556,7 @@ _080B7464:
 	adds r1, r7, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -46889,7 +46889,7 @@ _080B770C:
 	adds r1, r7, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -47044,7 +47044,7 @@ _080B7848:
 	adds r1, r7, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -47199,7 +47199,7 @@ _080B7984:
 	adds r1, r7, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -47688,7 +47688,7 @@ _080B7D6C:
 	adds r1, r7, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -49215,7 +49215,7 @@ _080B8958:
 	adds r1, r7, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -49553,7 +49553,7 @@ _080B8C00:
 	adds r1, r7, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -49879,7 +49879,7 @@ _080B8E98:
 	adds r1, r7, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -50212,7 +50212,7 @@ _080B9140:
 	adds r1, r7, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -50549,7 +50549,7 @@ _080B93E8:
 	adds r1, r7, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -50875,7 +50875,7 @@ _080B9680:
 	adds r1, r7, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -51208,7 +51208,7 @@ _080B9928:
 	adds r1, r7, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -51547,7 +51547,7 @@ _080B9BD4:
 	adds r1, r7, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -51875,7 +51875,7 @@ _080B9E70:
 	adds r1, r7, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -52210,7 +52210,7 @@ _080BA11C:
 	adds r1, r7, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -52549,7 +52549,7 @@ _080BA3C8:
 	adds r1, r7, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -52884,7 +52884,7 @@ _080BA674:
 	adds r1, r7, #0
 	add r2, sp, #4
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg

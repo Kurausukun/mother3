@@ -12,7 +12,6 @@ void sub_08072D0C();
 extern "C" void playSound(u16);
 
 extern "C" u8 unitIsPlayer(Unit*, u32);
-extern "C" void playSeq(u32, Unit*, Unit*);
 extern "C" u8 isMonsterVariant(Unit*, u32);
 extern "C" void hitPlayer(Unit*, u32, bool);
 extern "C" s32 randS32(s32, s32);
@@ -87,7 +86,7 @@ Unit* Action::getTarget(s32 idx) const {
     return NULL;
 }
 
-s32 Action::getTargetIdx(Unit* target) const {
+s32 Action::getTargetIdx(Unit* target) {
     s32 idx = mPrevTargets.indexOf(target);
     if (idx < mPrevTargets.size())
         return idx;
@@ -604,14 +603,14 @@ bool Action::fieldSet(s32 value, bool force = false) {
     return true;
 }
 
-// Msg sub_08073460(u32, const Msg&, const Msg&, const Msg&);
+// Msg ROMStrFmt(u32, const Msg&, const Msg&, const Msg&);
 
 Msg Action::createMsg(u16 idx) const {
-    return sub_08073460(idx, name(), getUser()->name(),
+    return ROMStrFmt(idx, name(), getUser()->name(),
                         mNextTargets.size() > 0 ? mNextTargets[0]->name() : Msg());
 }
 
 Msg Action::action_160(u16 idx, const Msg& m) const {
-    return sub_08073460(idx, m, getUser()->name(),
+    return ROMStrFmt(idx, m, getUser()->name(),
                         mNextTargets.size() > 0 ? mNextTargets[0]->name() : Msg());
 }

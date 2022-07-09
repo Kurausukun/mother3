@@ -2477,7 +2477,7 @@ sub_08077DBC: @ 0x08077DBC
 	adds r1, r4, #0
 	add r2, sp, #4
 	adds r3, r6, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	adds r0, r5, #0
 	movs r1, #2
 	bl _._3Msg

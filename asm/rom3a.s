@@ -3403,7 +3403,7 @@ _0809930C:
 	ldr r1, _080995D8 @ =0x00000667
 	mov r2, sl
 	mov r3, sb
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	add r1, sp, #0x34
 	movs r5, #0
 	strb r5, [r1]
@@ -3577,7 +3577,7 @@ _080993C4:
 	ldr r1, _080995D8 @ =0x00000667
 	mov r2, sl
 	mov r3, sb
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	add r1, sp, #0x48
 	strb r5, [r1]
 	strb r5, [r1, #1]
@@ -6773,7 +6773,7 @@ sub_0809AFA8: @ 0x0809AFA8
 	add r0, sp, #4
 	mov r2, r8
 	adds r3, r5, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	add r1, sp, #0x3c
 	mov r2, sb
 	strb r2, [r1]
@@ -6862,7 +6862,7 @@ _0809B090:
 	add r0, sp, #4
 	add r2, sp, #0x10
 	add r3, sp, #0x1c
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	add r1, sp, #0x48
 	strb r4, [r1]
 	strb r4, [r1, #1]
@@ -7103,7 +7103,7 @@ _0809B13E:
 	add r0, sp, #4
 	add r2, sp, #0x10
 	add r3, sp, #0x1c
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	add r1, sp, #0x7c
 	movs r3, #0
 	strb r3, [r1]
@@ -8272,7 +8272,7 @@ sub_0809BC10: @ 0x0809BC10
 	adds r1, r5, #0
 	add r2, sp, #4
 	adds r3, r6, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -9544,7 +9544,7 @@ _0809C69C:
 	mov r1, r8
 	mov r2, sl
 	adds r3, r5, #0
-	bl sub_080734A0
+	bl StrFmt
 	add r1, sp, #0x40
 	movs r0, #0
 	strb r0, [r1]
@@ -9746,7 +9746,7 @@ _0809C8E8: .4byte vt_09F48C70
 sub_0809C8EC: @ 0x0809C8EC
 	push {r4, lr}
 	adds r4, r0, #0
-	bl sub_08072628
+	bl IsBossBattle
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -11239,7 +11239,7 @@ sub_0809D4B8: @ 0x0809D4B8
 	beq _0809D4EE
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__C4UnitP4Unit
+	bl unit_70__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1

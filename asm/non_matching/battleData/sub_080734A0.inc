@@ -132,7 +132,7 @@ _080735B2:
 _080735BE:
 	mov r0, sl
 	mov r1, sp
-	bl sub_0806E2B8
+	bl __3MsgRC3Msg
 	mov r0, sp
 	movs r1, #2
 	bl _._3Msg

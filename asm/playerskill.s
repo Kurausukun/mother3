@@ -6164,7 +6164,7 @@ sub_0807F648: @ 0x0807F648
 	movs r1, #0x79
 	mov r2, r8
 	adds r3, r6, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	mov r0, sl
 	mov r1, sb
 	adds r2, r4, #0
@@ -6351,7 +6351,7 @@ sub_0807F7DC: @ 0x0807F7DC
 	movs r1, #0x7a
 	mov r2, r8
 	adds r3, r6, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	mov r0, sl
 	mov r1, sb
 	adds r2, r4, #0
@@ -6538,7 +6538,7 @@ sub_0807F964: @ 0x0807F964
 	movs r1, #0x79
 	mov r2, r8
 	adds r3, r6, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	mov r0, sl
 	mov r1, sb
 	adds r2, r4, #0
@@ -6726,7 +6726,7 @@ sub_0807FAF4: @ 0x0807FAF4
 	movs r1, #0x79
 	mov r2, r8
 	adds r3, r6, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	mov r0, sl
 	mov r1, sb
 	adds r2, r4, #0
@@ -6914,7 +6914,7 @@ sub_0807FC84: @ 0x0807FC84
 	movs r1, #0x79
 	mov r2, r8
 	adds r3, r6, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	mov r0, sl
 	mov r1, sb
 	adds r2, r4, #0
@@ -7096,7 +7096,7 @@ sub_0807FE08: @ 0x0807FE08
 	movs r1, #0x79
 	mov r2, r8
 	adds r3, r6, #0
-	bl sub_08073460__FiRC3MsgN21
+	bl ROMStrFmt__FiRC3MsgN21
 	mov r0, sl
 	mov r1, sb
 	adds r2, r4, #0
@@ -7975,7 +7975,7 @@ _08080528:
 	add r1, sp, #4
 	adds r2, r6, #0
 	adds r3, r5, #0
-	bl sub_080734A0
+	bl StrFmt
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
