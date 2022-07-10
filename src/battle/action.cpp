@@ -302,7 +302,7 @@ NONMATCH("asm/non_matching/skill/skill_08078D4C.inc", void Action::doHit(Unit* t
             t /= 2;
         } else if (target->hasStatus(Status::Shield) == 1) {
             Status* s = target->findStatus(Status::Shield);
-            s->status_128().print(Color(0, 0, 0), 1);
+            s->activeMsg().print(Color(0, 0, 0), 1);
             playSeq(0x33, target, target);
             t /= 2;
         }
@@ -317,7 +317,7 @@ NONMATCH("asm/non_matching/skill/skill_08078D4C.inc", void Action::doHit(Unit* t
 
     if (target->hasStatus(Status::Counter) == 1) {
         Status* s = target->findStatus(Status::Counter);
-        s->status_128().print(Color(0, 0, 0), 1);
+        s->activeMsg().print(Color(0, 0, 0), 1);
         playSeq(0x36, target, target);
         hitPlayer(getUser(), max(1, t), 1);
         playSeq(successAnimNo(), target, getUser());
@@ -348,7 +348,7 @@ NONMATCH("asm/non_matching/skill/sub_08079018.inc", void Action::action_d0(Unit*
         t /= 2;
     } else if (target->hasStatus(Status::Shield) == 1) {
         Status* s = target->findStatus(Status::Shield);
-        s->status_128().print(Color(0, 0, 0), 1);
+        s->activeMsg().print(Color(0, 0, 0), 1);
         playSeq(0x33, target, target);
         t /= 2;
     }
@@ -359,7 +359,7 @@ NONMATCH("asm/non_matching/skill/sub_08079018.inc", void Action::action_d0(Unit*
 
     if (target->hasStatus(Status::Counter) == 1) {
         Status* s = target->findStatus(Status::Counter);
-        s->status_128().print(Color(0, 0, 0), 1);
+        s->activeMsg().print(Color(0, 0, 0), 1);
         playSeq(0x36, target, target);
         hitPlayer(getUser(), max(1, t), 1);
         playSeq(successAnimNo(), target, getUser());
@@ -404,7 +404,7 @@ NONMATCH("asm/non_matching/skill/sub_080793B8.inc", void Action::action_e0(Unit*
             t /= 2;
         } else if (target->hasStatus(Status::PsiShield) == 1) {
             Status* s = target->findStatus(Status::PsiShield);
-            s->status_128().print(Color(0, 0, 0), 1);
+            s->activeMsg().print(Color(0, 0, 0), 1);
             playSeq(0x39, target, target);
             t /= 2;
         }
@@ -419,7 +419,7 @@ NONMATCH("asm/non_matching/skill/sub_080793B8.inc", void Action::action_e0(Unit*
         sub_080741E8(this, 100) != 1 && sub_080741E8(this, 101) != 1) {
         if (target->hasStatus(Status::PsiCounter) == 1) {
             Status* s = target->findStatus(Status::PsiCounter);
-            s->status_128().print(Color(0, 0, 0), 1);
+            s->activeMsg().print(Color(0, 0, 0), 1);
             playSeq(0x3c, target, target);
             hitPlayer(getUser(), max(1, t), 1);
             playSeq(successAnimNo(), target, getUser());

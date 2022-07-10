@@ -13,38 +13,38 @@ class GuestSkill : public Action {
 public:
     GuestSkill() {}
     GuestSkill(u16 id, Unit* user);
-    virtual ~GuestSkill();
+    virtual ~GuestSkill() override;
 
-    void* getRTTI();
+    void* getRTTI() override;
 
-    Action* action_1c0();
-    u16 id() const;
-    Msg name() const;
-    Msg action_1d8() const;
-    u32 action_1e0();
-    u32 effect() const;
-    u32 element() const;
-    u32 target() const;
-    u32 attackMult() const;
-    s32 healLo() const;
-    s32 healHi() const;
-    u16 ailment() const;
-    u32 ailmentChance() const;
-    u8 hasAction() const;
-    u32 priority() const;
-    Msg getUseMessage() const;
-    Msg getForceUseMessage() const;
-    bool hasDim() const;
-    u16 animNo() const;
-    u16 successAnimNo() const;
-    u16 nextAnim() const;
-    u32 sfxNo() const;
-    s32 hitChance() const;
-    s32 critChance() const;
-    bool redirectable() const;
-    u32 action_288();
-    u32 action_290();
-    u32 action_298();
+    Action* action_1c0() override;
+    u16 id() const override;
+    Msg name() const override;
+    Msg action_1d8() const override;
+    u32 action_1e0() override;
+    u32 effect() const override;
+    u32 element() const override;
+    u32 target() const override;
+    u32 attackMult() const override;
+    s32 healLo() const override;
+    s32 healHi() const override;
+    u16 ailment() const override;
+    u32 ailmentChance() const override;
+    u8 hasAction() const override;
+    u32 priority() const override;
+    Msg getUseMessage() const override;
+    Msg getForceUseMessage() const override;
+    bool hasDim() const override;
+    u16 animNo() const override;
+    u16 successAnimNo() const override;
+    u16 nextAnim() const override;
+    u32 sfxNo() const override;
+    s32 hitChance() const override;
+    s32 critChance() const override;
+    bool redirectable() const override;
+    u32 action_288() override;
+    u32 action_290() override;
+    u32 action_298() override;
 
 private:
     const GuestSkillInfo* mInfo;

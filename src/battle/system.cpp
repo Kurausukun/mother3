@@ -123,7 +123,7 @@ u32 sub_0805D638() {
     return gSave._81e;
 }
 
-u32 System::sub_0805D64C() {
+u32 System::getGameProgression() {
     if (get_progression_flag(24) == 0xFF)
         return 9;
     if (get_progression_flag(23) == 0xFF)

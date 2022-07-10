@@ -58,7 +58,7 @@ void Battle::sub_0805DC1C() {
 ASM_FUNC("asm/non_matching/battle/sub_0805DC6C.inc", void Battle::sub_0805DC6C());
 
 void Battle::sub_0805DDE4() {
-    setBattleResult(5, 0);
+    setBattleResult(5, false);
 }
 
 void Battle::battle_68() {
@@ -244,8 +244,8 @@ bool Battle::battle_e0() {
     return true;
 }
 
-bool Battle::setBattleResult(s32 a1, bool a2) {
-    if (mBattleResult != a1 || a2 == true) {
+bool Battle::setBattleResult(s32 a1, bool force) {
+    if (mBattleResult != a1 || force == true) {
         mBattleResult = a1;
         return true;
     } else {
@@ -446,11 +446,11 @@ BgClass* Battle::battle_210() {
 }
 
 PartyInfo* Battle::battle_218() {
-    return _4c;
+    return mPartyInfo;
 }
 
 GuestInfo* Battle::battle_220() {
-    return _50;
+    return mGuestInfo;
 }
 
 MonsterInfo* Battle::battle_228() {

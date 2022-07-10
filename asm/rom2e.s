@@ -1971,7 +1971,7 @@ _0808A38C:
 _0808A392:
 	movs r0, #0
 	movs r1, #7
-	bl randU32
+	bl randS32_
 	adds r2, r0, #0
 	adds r0, r4, #0
 	adds r1, r5, #0
@@ -2632,7 +2632,7 @@ _0808A8B4:
 _0808A8BA:
 	movs r0, #0
 	movs r1, #7
-	bl randU32
+	bl randS32_
 	adds r2, r0, #0
 	adds r0, r4, #0
 	adds r1, r5, #0

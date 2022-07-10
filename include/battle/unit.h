@@ -41,14 +41,14 @@ struct UnitCmd;
 class Unit : public Base, public UnitObject {
 public:
     Unit();
-    virtual ~Unit();
+    virtual ~Unit() override;
 
     void setClamped(s16* dest, s32 value) { *dest = clampS32(value, 0, 999); }
 
     s16 get48(u32 idx) const { return *(mWeaknesses + idx); }
     s16 get58(u32 idx) const { return *(mStatusWeaknesses + idx); }
 
-    virtual u8 unit_68();
+    virtual u8 dispStatusMsg();
     virtual bool unit_70(Action* a);
 
     virtual void unit_78(Action* a1);
@@ -59,8 +59,8 @@ public:
     virtual void unit_a0(Action* a1);
 
     virtual void unit_a8();
-    virtual void unit_b0();
-    virtual void unit_b8();
+    virtual void onKill();
+    virtual void onRevive();
     virtual bool isAlive();
     virtual bool isDead();
     virtual u8 unit_d0();

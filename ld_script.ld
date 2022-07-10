@@ -124,6 +124,11 @@ SECTIONS
         src/rom3.o(.text);
         asm/rom3a.o(.text);
         asm/rom3.o(.text);
+        asm/monsterImplTmp.o(.text);
+        src/battle/monsterImpl.o(.text);
+        asm/rom3aa.o(.text);
+        src/battle/monsterImpl2.o(.text);
+        asm/rom3ab.o(.text);
         src/battle/goods2.o(.text);
         src/battle/goodsImpl.o(.text);
         src/battle/goods2.o(.gnu.linkonce.t.dg_3__12DefaultGoods);
