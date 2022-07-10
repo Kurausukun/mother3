@@ -983,7 +983,7 @@ sub_08070654: @ 0x08070654
 	thumb_func_start randS32
 randS32: @ 0x08070660
 	push {lr}
-	bl randU32
+	bl randS32_
 	pop {r1}
 	bx r1
 	.align 2, 0

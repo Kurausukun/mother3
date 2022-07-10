@@ -71,6 +71,7 @@ struct BattleSeq {
         SmallShake = 0x44,
         BigShake = 0x45,
         WhiteFlash = 0x46,
+        YellowFlash = 0x47,
         BlackFlash = 0x48,
         NoEffect = 0x49,
         Smash = 0x4A,

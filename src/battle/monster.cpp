@@ -120,7 +120,7 @@ void Monster::sub_08080F54() {
     Unit::kill();
 }
 
-u32 Monster::monster_2e0() {
+u32 Monster::scaledExperience() {
     return experience();
 }
 
@@ -143,7 +143,7 @@ u32 Monster::monster_2f0() {
 
 ASM_FUNC("asm/non_matching/monster/sub_08081084.inc", void Monster::monster_2f8());
 
-ASM_FUNC("asm/non_matching/monster/sub_0808110C.inc", void Monster::monster_300(bool a));
+ASM_FUNC("asm/non_matching/monster/sub_0808110C.inc", void Monster::monster_300(s32 a));
 
 void Monster::setHP(s32 value) {
     if (sub_080726B8() == true) {
@@ -204,7 +204,7 @@ u32 Monster::surprised() {
     return mSurpriseState;
 }
 
-u32 Monster::numSkills() {
+s32 Monster::numSkills() {
     u32 ret;
     int i;
     for (ret = 0, i = 0; i < 8; i++) {
@@ -216,7 +216,7 @@ u32 Monster::numSkills() {
     return ret;
 }
 
-u32 Monster::getSkill(s32 idx) {
+u16 Monster::getSkill(s32 idx) {
     return mData->skills[idx];
 }
 

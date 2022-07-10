@@ -83,7 +83,7 @@ _vt.6System::
 	.4byte sub_0805D638__Fv
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805D64C__6System
+	.4byte getGameProgression__6System
 	.2byte 0
 	.2byte 0
 	.4byte sub_0805D6F8__6System
@@ -2668,7 +2668,7 @@ vt_09F469A8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809D4B8
@@ -3146,7 +3146,7 @@ vt_09F46E98::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809D4B8
@@ -3627,7 +3627,7 @@ vt_09F47390::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809D4B8
@@ -4108,7 +4108,7 @@ vt_09F47888::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809D4B8
@@ -4589,7 +4589,7 @@ vt_09F47D80::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809D4B8
@@ -5070,7 +5070,7 @@ vt_09F48278::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809D4B8
@@ -5554,7 +5554,7 @@ vt_09F48778::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809D4B8
@@ -6035,7 +6035,7 @@ vt_09F48C70::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809D4B8
@@ -10477,7 +10477,7 @@ _vt.5Guest::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_70__4UnitP6Action
@@ -10816,7 +10816,7 @@ vt_09F4BDC8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A09DC
@@ -11156,7 +11156,7 @@ vt_09F4C148::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A09DC
@@ -11505,7 +11505,7 @@ vt_09F4C4E0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A04CC
@@ -11848,7 +11848,7 @@ vt_09F4C868::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A0758
@@ -12194,7 +12194,7 @@ vt_09F4CBF8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A09DC
@@ -12534,7 +12534,7 @@ vt_09F4CF78::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A09DC
@@ -12874,7 +12874,7 @@ vt_09F4D2F8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A09DC
@@ -14543,7 +14543,7 @@ vt_09F4E490::
 	.4byte 0
 	.2byte -32
 	.2byte 0
-	.4byte sub_080A59A0
+	.4byte _._12MaskedMan3rd
 	.2byte -32
 	.2byte 0
 	.4byte sub_08081BE4
@@ -14590,7 +14590,7 @@ vt_09F4E508::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A59A0
+	.4byte _._12MaskedMan3rd
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__7Monster
@@ -14626,10 +14626,10 @@ vt_09F4E508::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -14644,7 +14644,7 @@ vt_09F4E508::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -14677,13 +14677,13 @@ vt_09F4E508::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -14692,7 +14692,7 @@ vt_09F4E508::
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A5964
+	.4byte setHP__12MaskedMan3rdi
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
@@ -14851,7 +14851,7 @@ vt_09F4E508::
 	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A5978
+	.4byte monster_2c0__12MaskedMan3rd
 	.2byte 0
 	.2byte 0
 	.4byte monster_2c8__7MonsterP6Action
@@ -14863,7 +14863,7 @@ vt_09F4E508::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -14875,7 +14875,7 @@ vt_09F4E508::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -14965,31 +14965,31 @@ vt_09F4E508::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F4E940::
 	.2byte -32
@@ -15080,7 +15080,7 @@ vt_09F4E9B8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A5DD4
@@ -15098,7 +15098,7 @@ vt_09F4E9B8::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -15131,13 +15131,13 @@ vt_09F4E9B8::
 	.4byte sub_080A5AD4
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -15317,7 +15317,7 @@ vt_09F4E9B8::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -15329,7 +15329,7 @@ vt_09F4E9B8::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -15427,25 +15427,25 @@ vt_09F4EDB0::
 	.4byte sub_080A5A4C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A5F3C
@@ -15560,10 +15560,10 @@ vt_09F4EEA8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -15578,7 +15578,7 @@ vt_09F4EEA8::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -15611,13 +15611,13 @@ vt_09F4EEA8::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -15797,7 +15797,7 @@ vt_09F4EEA8::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -15809,7 +15809,7 @@ vt_09F4EEA8::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -15899,31 +15899,31 @@ vt_09F4EEA8::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F4F2E0::
 	.2byte -32
@@ -16014,7 +16014,7 @@ vt_09F4F358::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A647C
@@ -16032,7 +16032,7 @@ vt_09F4F358::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A6238
@@ -16065,13 +16065,13 @@ vt_09F4F358::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -16251,7 +16251,7 @@ vt_09F4F358::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -16263,7 +16263,7 @@ vt_09F4F358::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -16353,31 +16353,31 @@ vt_09F4F358::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A6890
@@ -16516,10 +16516,10 @@ vt_09F4F888::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -16534,7 +16534,7 @@ vt_09F4F888::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -16567,13 +16567,13 @@ vt_09F4F888::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -16753,7 +16753,7 @@ vt_09F4F888::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -16765,7 +16765,7 @@ vt_09F4F888::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -16858,28 +16858,28 @@ vt_09F4F888::
 	.4byte sub_080A6AA8
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A6A68
@@ -16979,10 +16979,10 @@ vt_09F4FD50::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -16997,7 +16997,7 @@ vt_09F4FD50::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -17030,13 +17030,13 @@ vt_09F4FD50::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -17216,7 +17216,7 @@ vt_09F4FD50::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -17228,7 +17228,7 @@ vt_09F4FD50::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -17321,28 +17321,28 @@ vt_09F4FD50::
 	.4byte sub_080A6C40
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A6C00
@@ -17442,7 +17442,7 @@ vt_09F50218::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A6F4C
@@ -17493,13 +17493,13 @@ vt_09F50218::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -17679,7 +17679,7 @@ vt_09F50218::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -17691,7 +17691,7 @@ vt_09F50218::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -17784,28 +17784,28 @@ vt_09F50218::
 	.4byte sub_080A7648
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A7608
@@ -17920,7 +17920,7 @@ vt_09F50708::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A76B8
@@ -17938,7 +17938,7 @@ vt_09F50708::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -17971,13 +17971,13 @@ vt_09F50708::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -18157,7 +18157,7 @@ vt_09F50708::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -18169,7 +18169,7 @@ vt_09F50708::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -18259,31 +18259,31 @@ vt_09F50708::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F50B40::
 	.2byte -32
@@ -18374,10 +18374,10 @@ vt_09F50BB8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -18392,7 +18392,7 @@ vt_09F50BB8::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A7830
@@ -18425,13 +18425,13 @@ vt_09F50BB8::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -18611,7 +18611,7 @@ vt_09F50BB8::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -18623,7 +18623,7 @@ vt_09F50BB8::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -18713,31 +18713,31 @@ vt_09F50BB8::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A78D0
@@ -18831,7 +18831,7 @@ vt_09F51070::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A79FC
@@ -18849,7 +18849,7 @@ vt_09F51070::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -18882,13 +18882,13 @@ vt_09F51070::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -19068,7 +19068,7 @@ vt_09F51070::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -19080,7 +19080,7 @@ vt_09F51070::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -19170,31 +19170,31 @@ vt_09F51070::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F514A8::
 	.2byte -32
@@ -19285,7 +19285,7 @@ vt_09F51520::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A7B30
@@ -19303,7 +19303,7 @@ vt_09F51520::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -19336,13 +19336,13 @@ vt_09F51520::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -19522,7 +19522,7 @@ vt_09F51520::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -19534,7 +19534,7 @@ vt_09F51520::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -19624,31 +19624,31 @@ vt_09F51520::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F51958::
 	.2byte -32
@@ -19739,7 +19739,7 @@ vt_09F519D0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A7EFC
@@ -19757,7 +19757,7 @@ vt_09F519D0::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -19790,13 +19790,13 @@ vt_09F519D0::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -19976,7 +19976,7 @@ vt_09F519D0::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -19988,7 +19988,7 @@ vt_09F519D0::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -20078,31 +20078,31 @@ vt_09F519D0::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A7DE0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A8318
@@ -20205,7 +20205,7 @@ vt_09F51EA0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A84C8
@@ -20223,7 +20223,7 @@ vt_09F51EA0::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -20256,13 +20256,13 @@ vt_09F51EA0::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -20442,7 +20442,7 @@ vt_09F51EA0::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -20454,7 +20454,7 @@ vt_09F51EA0::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -20544,31 +20544,31 @@ vt_09F51EA0::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A8660
@@ -20662,7 +20662,7 @@ vt_09F52358::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A8854
@@ -20680,7 +20680,7 @@ vt_09F52358::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -20713,13 +20713,13 @@ vt_09F52358::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -20899,7 +20899,7 @@ vt_09F52358::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -20911,7 +20911,7 @@ vt_09F52358::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -21001,31 +21001,31 @@ vt_09F52358::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A8BB4
@@ -21134,10 +21134,10 @@ vt_09F52838::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -21152,7 +21152,7 @@ vt_09F52838::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -21185,13 +21185,13 @@ vt_09F52838::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -21371,7 +21371,7 @@ vt_09F52838::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -21383,7 +21383,7 @@ vt_09F52838::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -21473,31 +21473,31 @@ vt_09F52838::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F52C70::
 	.2byte -32
@@ -21588,10 +21588,10 @@ vt_09F52CE8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -21639,13 +21639,13 @@ vt_09F52CE8::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -21825,7 +21825,7 @@ vt_09F52CE8::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -21837,7 +21837,7 @@ vt_09F52CE8::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -21930,28 +21930,28 @@ vt_09F52CE8::
 	.4byte sub_080A9648
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A9518
@@ -22063,10 +22063,10 @@ vt_09F531D0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -22081,7 +22081,7 @@ vt_09F531D0::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -22114,13 +22114,13 @@ vt_09F531D0::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -22300,7 +22300,7 @@ vt_09F531D0::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -22312,7 +22312,7 @@ vt_09F531D0::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -22402,31 +22402,31 @@ vt_09F531D0::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F53608::
 	.2byte -32
@@ -22517,10 +22517,10 @@ vt_09F53680::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -22535,7 +22535,7 @@ vt_09F53680::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -22568,13 +22568,13 @@ vt_09F53680::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -22754,7 +22754,7 @@ vt_09F53680::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -22766,7 +22766,7 @@ vt_09F53680::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -22859,28 +22859,28 @@ vt_09F53680::
 	.4byte sub_080A97CC
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F53AB8::
 	.2byte -32
@@ -22971,10 +22971,10 @@ vt_09F53B30::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -22989,7 +22989,7 @@ vt_09F53B30::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -23022,13 +23022,13 @@ vt_09F53B30::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -23208,7 +23208,7 @@ vt_09F53B30::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -23220,7 +23220,7 @@ vt_09F53B30::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -23310,31 +23310,31 @@ vt_09F53B30::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F53F68::
 	.2byte -32
@@ -23425,10 +23425,10 @@ vt_09F53FE0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -23443,7 +23443,7 @@ vt_09F53FE0::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -23476,13 +23476,13 @@ vt_09F53FE0::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -23662,7 +23662,7 @@ vt_09F53FE0::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -23674,7 +23674,7 @@ vt_09F53FE0::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -23767,28 +23767,28 @@ vt_09F53FE0::
 	.4byte sub_080A98E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F54418::
 	.2byte -32
@@ -23879,10 +23879,10 @@ vt_09F54490::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -23897,7 +23897,7 @@ vt_09F54490::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -23930,13 +23930,13 @@ vt_09F54490::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -24116,7 +24116,7 @@ vt_09F54490::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -24128,7 +24128,7 @@ vt_09F54490::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -24218,31 +24218,31 @@ vt_09F54490::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F548C8::
 	.2byte -32
@@ -24333,10 +24333,10 @@ vt_09F54940::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -24351,7 +24351,7 @@ vt_09F54940::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -24384,13 +24384,13 @@ vt_09F54940::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -24570,7 +24570,7 @@ vt_09F54940::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -24582,7 +24582,7 @@ vt_09F54940::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -24675,28 +24675,28 @@ vt_09F54940::
 	.4byte sub_080A9A0C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F54D78::
 	.2byte -32
@@ -24787,10 +24787,10 @@ vt_09F54DF0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -24805,7 +24805,7 @@ vt_09F54DF0::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -24838,13 +24838,13 @@ vt_09F54DF0::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -25024,7 +25024,7 @@ vt_09F54DF0::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -25036,7 +25036,7 @@ vt_09F54DF0::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -25129,28 +25129,28 @@ vt_09F54DF0::
 	.4byte sub_080A9B14
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F55228::
 	.2byte -32
@@ -25241,10 +25241,10 @@ vt_09F552A0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -25259,7 +25259,7 @@ vt_09F552A0::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -25292,13 +25292,13 @@ vt_09F552A0::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -25478,7 +25478,7 @@ vt_09F552A0::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -25490,7 +25490,7 @@ vt_09F552A0::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -25580,31 +25580,31 @@ vt_09F552A0::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F556D8::
 	.2byte -32
@@ -25695,7 +25695,7 @@ vt_09F55750::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A9C50
@@ -25713,7 +25713,7 @@ vt_09F55750::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -25746,13 +25746,13 @@ vt_09F55750::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -25932,7 +25932,7 @@ vt_09F55750::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -25944,7 +25944,7 @@ vt_09F55750::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -26034,31 +26034,31 @@ vt_09F55750::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F55B88::
 	.2byte -32
@@ -26149,10 +26149,10 @@ vt_09F55C00::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -26167,7 +26167,7 @@ vt_09F55C00::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -26200,13 +26200,13 @@ vt_09F55C00::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -26386,7 +26386,7 @@ vt_09F55C00::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -26398,7 +26398,7 @@ vt_09F55C00::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -26488,31 +26488,31 @@ vt_09F55C00::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F56038::
 	.2byte -32
@@ -26603,10 +26603,10 @@ vt_09F560B0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -26621,7 +26621,7 @@ vt_09F560B0::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -26654,13 +26654,13 @@ vt_09F560B0::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -26840,7 +26840,7 @@ vt_09F560B0::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -26852,7 +26852,7 @@ vt_09F560B0::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -26942,31 +26942,31 @@ vt_09F560B0::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F564E8::
 	.2byte -32
@@ -27057,7 +27057,7 @@ vt_09F56560::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A9F3C
@@ -27075,7 +27075,7 @@ vt_09F56560::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -27108,13 +27108,13 @@ vt_09F56560::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -27294,7 +27294,7 @@ vt_09F56560::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -27306,7 +27306,7 @@ vt_09F56560::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -27399,28 +27399,28 @@ vt_09F56560::
 	.4byte sub_080AA314
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AA2D4
@@ -27526,10 +27526,10 @@ vt_09F56A38::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -27544,7 +27544,7 @@ vt_09F56A38::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -27577,13 +27577,13 @@ vt_09F56A38::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -27763,7 +27763,7 @@ vt_09F56A38::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -27775,7 +27775,7 @@ vt_09F56A38::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -27865,31 +27865,31 @@ vt_09F56A38::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F56E70::
 	.2byte -32
@@ -27980,10 +27980,10 @@ vt_09F56EE8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -27998,7 +27998,7 @@ vt_09F56EE8::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -28031,13 +28031,13 @@ vt_09F56EE8::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -28217,7 +28217,7 @@ vt_09F56EE8::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -28229,7 +28229,7 @@ vt_09F56EE8::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -28319,31 +28319,31 @@ vt_09F56EE8::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F57320::
 	.2byte -32
@@ -28434,10 +28434,10 @@ vt_09F57398::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -28452,7 +28452,7 @@ vt_09F57398::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -28485,13 +28485,13 @@ vt_09F57398::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -28671,7 +28671,7 @@ vt_09F57398::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -28683,7 +28683,7 @@ vt_09F57398::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -28773,31 +28773,31 @@ vt_09F57398::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F577D0::
 	.2byte -32
@@ -28888,10 +28888,10 @@ vt_09F57848::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -28939,13 +28939,13 @@ vt_09F57848::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -29125,7 +29125,7 @@ vt_09F57848::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -29137,7 +29137,7 @@ vt_09F57848::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -29227,31 +29227,31 @@ vt_09F57848::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AA82C
@@ -29351,10 +29351,10 @@ vt_09F57D10::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -29369,7 +29369,7 @@ vt_09F57D10::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -29402,13 +29402,13 @@ vt_09F57D10::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -29588,7 +29588,7 @@ vt_09F57D10::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -29600,7 +29600,7 @@ vt_09F57D10::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -29690,31 +29690,31 @@ vt_09F57D10::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F58148::
 	.2byte -32
@@ -29805,10 +29805,10 @@ vt_09F581C0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -29823,7 +29823,7 @@ vt_09F581C0::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -29856,13 +29856,13 @@ vt_09F581C0::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -30042,7 +30042,7 @@ vt_09F581C0::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -30054,7 +30054,7 @@ vt_09F581C0::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -30144,31 +30144,31 @@ vt_09F581C0::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F585F8::
 	.2byte -32
@@ -30259,10 +30259,10 @@ vt_09F58670::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -30277,7 +30277,7 @@ vt_09F58670::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -30310,13 +30310,13 @@ vt_09F58670::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -30496,7 +30496,7 @@ vt_09F58670::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -30508,7 +30508,7 @@ vt_09F58670::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -30598,31 +30598,31 @@ vt_09F58670::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F58AA8::
 	.2byte -32
@@ -30713,10 +30713,10 @@ vt_09F58B20::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -30731,7 +30731,7 @@ vt_09F58B20::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -30764,13 +30764,13 @@ vt_09F58B20::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -30950,7 +30950,7 @@ vt_09F58B20::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -30962,7 +30962,7 @@ vt_09F58B20::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -31052,31 +31052,31 @@ vt_09F58B20::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AAAF4
@@ -31170,7 +31170,7 @@ vt_09F58FD8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AAC9C
@@ -31188,7 +31188,7 @@ vt_09F58FD8::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -31221,13 +31221,13 @@ vt_09F58FD8::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -31407,7 +31407,7 @@ vt_09F58FD8::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -31419,7 +31419,7 @@ vt_09F58FD8::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -31509,31 +31509,31 @@ vt_09F58FD8::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F59410::
 	.2byte -32
@@ -31624,7 +31624,7 @@ vt_09F59488::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AAE94
@@ -31642,7 +31642,7 @@ vt_09F59488::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -31675,13 +31675,13 @@ vt_09F59488::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -31861,7 +31861,7 @@ vt_09F59488::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -31966,28 +31966,28 @@ vt_09F59488::
 	.4byte sub_080AB100
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AAFD8
@@ -32090,10 +32090,10 @@ vt_09F59958::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -32108,7 +32108,7 @@ vt_09F59958::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -32141,13 +32141,13 @@ vt_09F59958::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -32327,7 +32327,7 @@ vt_09F59958::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -32339,7 +32339,7 @@ vt_09F59958::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -32432,28 +32432,28 @@ vt_09F59958::
 	.4byte sub_080AB2C4
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AB284
@@ -32553,10 +32553,10 @@ vt_09F59E20::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -32571,7 +32571,7 @@ vt_09F59E20::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -32604,13 +32604,13 @@ vt_09F59E20::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -32790,7 +32790,7 @@ vt_09F59E20::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -32802,7 +32802,7 @@ vt_09F59E20::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -32892,31 +32892,31 @@ vt_09F59E20::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F5A258::
 	.2byte -32
@@ -33007,10 +33007,10 @@ vt_09F5A2D0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -33025,7 +33025,7 @@ vt_09F5A2D0::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -33058,13 +33058,13 @@ vt_09F5A2D0::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -33244,7 +33244,7 @@ vt_09F5A2D0::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -33256,7 +33256,7 @@ vt_09F5A2D0::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -33346,31 +33346,31 @@ vt_09F5A2D0::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F5A708::
 	.2byte -32
@@ -33461,10 +33461,10 @@ vt_09F5A780::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -33512,13 +33512,13 @@ vt_09F5A780::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -33698,7 +33698,7 @@ vt_09F5A780::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -33710,7 +33710,7 @@ vt_09F5A780::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -33803,28 +33803,28 @@ vt_09F5A780::
 	.4byte sub_080AB758
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AB660
@@ -33924,7 +33924,7 @@ vt_09F5AC48::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AB824
@@ -33942,7 +33942,7 @@ vt_09F5AC48::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -33975,13 +33975,13 @@ vt_09F5AC48::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -34161,7 +34161,7 @@ vt_09F5AC48::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -34173,7 +34173,7 @@ vt_09F5AC48::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -34263,31 +34263,31 @@ vt_09F5AC48::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AB924
@@ -34381,10 +34381,10 @@ vt_09F5B100::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -34399,7 +34399,7 @@ vt_09F5B100::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080ABA38
@@ -34432,13 +34432,13 @@ vt_09F5B100::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -34618,7 +34618,7 @@ vt_09F5B100::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -34630,7 +34630,7 @@ vt_09F5B100::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -34720,31 +34720,31 @@ vt_09F5B100::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F5B538::
 	.2byte -32
@@ -34835,10 +34835,10 @@ vt_09F5B5B0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -34853,7 +34853,7 @@ vt_09F5B5B0::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -34886,13 +34886,13 @@ vt_09F5B5B0::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -35072,7 +35072,7 @@ vt_09F5B5B0::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -35084,7 +35084,7 @@ vt_09F5B5B0::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -35174,31 +35174,31 @@ vt_09F5B5B0::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F5B9E8::
 	.2byte -32
@@ -35289,7 +35289,7 @@ vt_09F5BA60::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080ABC00
@@ -35307,7 +35307,7 @@ vt_09F5BA60::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -35340,13 +35340,13 @@ vt_09F5BA60::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -35526,7 +35526,7 @@ vt_09F5BA60::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -35538,7 +35538,7 @@ vt_09F5BA60::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -35631,28 +35631,28 @@ vt_09F5BA60::
 	.4byte sub_080ABE0C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080ABD3C
@@ -35755,7 +35755,7 @@ vt_09F5BF30::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080ABF7C
@@ -35773,7 +35773,7 @@ vt_09F5BF30::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -35806,13 +35806,13 @@ vt_09F5BF30::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -35992,7 +35992,7 @@ vt_09F5BF30::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -36004,7 +36004,7 @@ vt_09F5BF30::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -36094,31 +36094,31 @@ vt_09F5BF30::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F5C368::
 	.2byte -32
@@ -36209,10 +36209,10 @@ vt_09F5C3E0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -36227,7 +36227,7 @@ vt_09F5C3E0::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -36260,13 +36260,13 @@ vt_09F5C3E0::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -36446,7 +36446,7 @@ vt_09F5C3E0::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -36458,7 +36458,7 @@ vt_09F5C3E0::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -36548,31 +36548,31 @@ vt_09F5C3E0::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F5C818::
 	.2byte -32
@@ -36663,10 +36663,10 @@ vt_09F5C890::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -36681,7 +36681,7 @@ vt_09F5C890::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -36714,13 +36714,13 @@ vt_09F5C890::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -36900,7 +36900,7 @@ vt_09F5C890::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AC260
@@ -36912,7 +36912,7 @@ vt_09F5C890::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -37005,28 +37005,28 @@ vt_09F5C890::
 	.4byte sub_080AC2FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F5CCC8::
 	.2byte -32
@@ -37117,10 +37117,10 @@ vt_09F5CD40::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -37135,7 +37135,7 @@ vt_09F5CD40::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -37168,13 +37168,13 @@ vt_09F5CD40::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -37354,7 +37354,7 @@ vt_09F5CD40::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -37366,7 +37366,7 @@ vt_09F5CD40::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -37459,28 +37459,28 @@ vt_09F5CD40::
 	.4byte sub_080AC548
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AC408
@@ -37580,7 +37580,7 @@ vt_09F5D208::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AC590
@@ -37598,7 +37598,7 @@ vt_09F5D208::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -37631,13 +37631,13 @@ vt_09F5D208::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -37817,7 +37817,7 @@ vt_09F5D208::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -37829,7 +37829,7 @@ vt_09F5D208::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -37919,31 +37919,31 @@ vt_09F5D208::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F5D640::
 	.2byte -32
@@ -38034,10 +38034,10 @@ vt_09F5D6B8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -38052,7 +38052,7 @@ vt_09F5D6B8::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -38085,13 +38085,13 @@ vt_09F5D6B8::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -38271,7 +38271,7 @@ vt_09F5D6B8::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -38283,7 +38283,7 @@ vt_09F5D6B8::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -38373,31 +38373,31 @@ vt_09F5D6B8::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F5DAF0::
 	.2byte -32
@@ -38488,10 +38488,10 @@ vt_09F5DB68::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -38506,7 +38506,7 @@ vt_09F5DB68::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -38539,13 +38539,13 @@ vt_09F5DB68::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -38725,7 +38725,7 @@ vt_09F5DB68::
 	.4byte sub_080AC750
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -38737,7 +38737,7 @@ vt_09F5DB68::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -38827,31 +38827,31 @@ vt_09F5DB68::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F5DFA0::
 	.2byte -32
@@ -38942,10 +38942,10 @@ vt_09F5E018::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -38960,7 +38960,7 @@ vt_09F5E018::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -38993,13 +38993,13 @@ vt_09F5E018::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -39179,7 +39179,7 @@ vt_09F5E018::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -39191,7 +39191,7 @@ vt_09F5E018::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -39281,31 +39281,31 @@ vt_09F5E018::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F5E450::
 	.2byte -32
@@ -39396,10 +39396,10 @@ vt_09F5E4C8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -39414,7 +39414,7 @@ vt_09F5E4C8::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -39447,13 +39447,13 @@ vt_09F5E4C8::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -39633,7 +39633,7 @@ vt_09F5E4C8::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -39645,7 +39645,7 @@ vt_09F5E4C8::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -39735,31 +39735,31 @@ vt_09F5E4C8::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F5E900::
 	.2byte -32
@@ -39850,10 +39850,10 @@ vt_09F5E978::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -39868,7 +39868,7 @@ vt_09F5E978::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -39901,13 +39901,13 @@ vt_09F5E978::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -40087,7 +40087,7 @@ vt_09F5E978::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -40099,7 +40099,7 @@ vt_09F5E978::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -40189,31 +40189,31 @@ vt_09F5E978::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AC928
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AC9A8
@@ -40313,10 +40313,10 @@ vt_09F5EE40::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -40331,7 +40331,7 @@ vt_09F5EE40::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -40364,13 +40364,13 @@ vt_09F5EE40::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -40550,7 +40550,7 @@ vt_09F5EE40::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -40562,7 +40562,7 @@ vt_09F5EE40::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -40652,31 +40652,31 @@ vt_09F5EE40::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F5F278::
 	.2byte -32
@@ -40767,10 +40767,10 @@ vt_09F5F2F0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -40785,7 +40785,7 @@ vt_09F5F2F0::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -40818,13 +40818,13 @@ vt_09F5F2F0::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -41004,7 +41004,7 @@ vt_09F5F2F0::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -41016,7 +41016,7 @@ vt_09F5F2F0::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -41106,31 +41106,31 @@ vt_09F5F2F0::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte sub_080ACAEC
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080ACCA4
@@ -41230,7 +41230,7 @@ vt_09F5F7B8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080ACD84
@@ -41248,7 +41248,7 @@ vt_09F5F7B8::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080ACD00
@@ -41281,13 +41281,13 @@ vt_09F5F7B8::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -41467,7 +41467,7 @@ vt_09F5F7B8::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -41479,7 +41479,7 @@ vt_09F5F7B8::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -41569,31 +41569,31 @@ vt_09F5F7B8::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F5FBF0::
 	.2byte -32
@@ -41684,7 +41684,7 @@ vt_09F5FC68::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080ACF3C
@@ -41702,7 +41702,7 @@ vt_09F5FC68::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -41735,13 +41735,13 @@ vt_09F5FC68::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -41921,7 +41921,7 @@ vt_09F5FC68::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -41933,7 +41933,7 @@ vt_09F5FC68::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -42023,31 +42023,31 @@ vt_09F5FC68::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F600A0::
 	.2byte -32
@@ -42138,10 +42138,10 @@ vt_09F60118::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -42156,7 +42156,7 @@ vt_09F60118::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -42189,13 +42189,13 @@ vt_09F60118::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -42375,7 +42375,7 @@ vt_09F60118::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -42387,7 +42387,7 @@ vt_09F60118::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -42477,31 +42477,31 @@ vt_09F60118::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F60550::
 	.2byte -32
@@ -42592,7 +42592,7 @@ vt_09F605C8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AD204
@@ -42610,7 +42610,7 @@ vt_09F605C8::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -42643,13 +42643,13 @@ vt_09F605C8::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -42829,7 +42829,7 @@ vt_09F605C8::
 	.4byte sub_080AD1B4
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -42841,7 +42841,7 @@ vt_09F605C8::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -42931,31 +42931,31 @@ vt_09F605C8::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F60A00::
 	.2byte -32
@@ -43046,10 +43046,10 @@ vt_09F60A78::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -43064,7 +43064,7 @@ vt_09F60A78::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -43097,13 +43097,13 @@ vt_09F60A78::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -43283,7 +43283,7 @@ vt_09F60A78::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -43295,7 +43295,7 @@ vt_09F60A78::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -43385,31 +43385,31 @@ vt_09F60A78::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F60EB0::
 	.2byte -32
@@ -43500,7 +43500,7 @@ vt_09F60F28::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AD3E4
@@ -43518,7 +43518,7 @@ vt_09F60F28::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -43551,13 +43551,13 @@ vt_09F60F28::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -43737,7 +43737,7 @@ vt_09F60F28::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -43749,7 +43749,7 @@ vt_09F60F28::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -43839,31 +43839,31 @@ vt_09F60F28::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AD568
@@ -43966,7 +43966,7 @@ vt_09F613F8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AD6F0
@@ -43984,7 +43984,7 @@ vt_09F613F8::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -44017,13 +44017,13 @@ vt_09F613F8::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -44203,7 +44203,7 @@ vt_09F613F8::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -44215,7 +44215,7 @@ vt_09F613F8::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -44308,28 +44308,28 @@ vt_09F613F8::
 	.4byte sub_080AD938
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AD848
@@ -44432,7 +44432,7 @@ vt_09F618C8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AD9B4
@@ -44450,7 +44450,7 @@ vt_09F618C8::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -44483,13 +44483,13 @@ vt_09F618C8::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -44669,7 +44669,7 @@ vt_09F618C8::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -44681,7 +44681,7 @@ vt_09F618C8::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -44774,28 +44774,28 @@ vt_09F618C8::
 	.4byte sub_080ADCC8
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080ADC88
@@ -44895,7 +44895,7 @@ vt_09F61D90::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080ADD38
@@ -44913,7 +44913,7 @@ vt_09F61D90::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -44946,13 +44946,13 @@ vt_09F61D90::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -45132,7 +45132,7 @@ vt_09F61D90::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -45144,7 +45144,7 @@ vt_09F61D90::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -45234,31 +45234,31 @@ vt_09F61D90::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F621C8::
 	.2byte -32
@@ -45349,7 +45349,7 @@ vt_09F62240::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AE054
@@ -45367,7 +45367,7 @@ vt_09F62240::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -45400,13 +45400,13 @@ vt_09F62240::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -45586,7 +45586,7 @@ vt_09F62240::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -45598,7 +45598,7 @@ vt_09F62240::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -45688,31 +45688,31 @@ vt_09F62240::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F62678::
 	.2byte -32
@@ -45803,7 +45803,7 @@ vt_09F626F0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AE1F0
@@ -45821,7 +45821,7 @@ vt_09F626F0::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -45854,13 +45854,13 @@ vt_09F626F0::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -46040,7 +46040,7 @@ vt_09F626F0::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -46052,7 +46052,7 @@ vt_09F626F0::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -46142,31 +46142,31 @@ vt_09F626F0::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F62B28::
 	.2byte -32
@@ -46257,10 +46257,10 @@ vt_09F62BA0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -46275,7 +46275,7 @@ vt_09F62BA0::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -46308,13 +46308,13 @@ vt_09F62BA0::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -46494,7 +46494,7 @@ vt_09F62BA0::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -46506,7 +46506,7 @@ vt_09F62BA0::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -46596,31 +46596,31 @@ vt_09F62BA0::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F62FD8::
 	.2byte -32
@@ -46628,7 +46628,7 @@ vt_09F62FD8::
 	.4byte 0
 	.2byte -32
 	.2byte 0
-	.4byte sub_080AE738
+	.4byte _._12SootDumpling
 	.2byte -32
 	.2byte 0
 	.4byte sub_08081BE4
@@ -46675,7 +46675,7 @@ vt_09F63050::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AE738
+	.4byte _._12SootDumpling
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__7Monster
@@ -46711,10 +46711,10 @@ vt_09F63050::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -46729,7 +46729,7 @@ vt_09F63050::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -46762,13 +46762,13 @@ vt_09F63050::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -46936,7 +46936,7 @@ vt_09F63050::
 	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AE6E4
+	.4byte monster_2c0__12SootDumpling
 	.2byte 0
 	.2byte 0
 	.4byte monster_2c8__7MonsterP6Action
@@ -46948,7 +46948,7 @@ vt_09F63050::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -46960,7 +46960,7 @@ vt_09F63050::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -47050,31 +47050,31 @@ vt_09F63050::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F63488::
 	.2byte -32
@@ -47082,7 +47082,7 @@ vt_09F63488::
 	.4byte 0
 	.2byte -32
 	.2byte 0
-	.4byte sub_080AE880
+	.4byte _._17BakedYammomonster
 	.2byte -32
 	.2byte 0
 	.4byte sub_08081BE4
@@ -47129,7 +47129,7 @@ vt_09F63500::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AE880
+	.4byte _._17BakedYammomonster
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__7Monster
@@ -47165,10 +47165,10 @@ vt_09F63500::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AE754
+	.4byte unit_70__17BakedYammomonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -47183,7 +47183,7 @@ vt_09F63500::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -47216,13 +47216,13 @@ vt_09F63500::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -47390,7 +47390,7 @@ vt_09F63500::
 	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AE818
+	.4byte monster_2c0__17BakedYammomonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2c8__7MonsterP6Action
@@ -47402,7 +47402,7 @@ vt_09F63500::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -47414,7 +47414,7 @@ vt_09F63500::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -47504,39 +47504,39 @@ vt_09F63500::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
-vt_09F63938::
+_vt.10MechaDrago.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
 	.2byte -32
 	.2byte 0
-	.4byte sub_080AECA8
+	.4byte _._10MechaDrago
 	.2byte -32
 	.2byte 0
 	.4byte sub_08081BE4
@@ -47577,13 +47577,13 @@ vt_09F63938::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F639B0::
+_vt.10MechaDrago::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AECA8
+	.4byte _._10MechaDrago
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__7Monster
@@ -47619,10 +47619,10 @@ vt_09F639B0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEAD0
+	.4byte unit_70__10MechaDragoP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -47637,7 +47637,7 @@ vt_09F639B0::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AE8FC
+	.4byte unit_98__10MechaDragoP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -47646,7 +47646,7 @@ vt_09F639B0::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEC8C
+	.4byte onKill__10MechaDrago
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -47670,13 +47670,13 @@ vt_09F639B0::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -47766,7 +47766,7 @@ vt_09F639B0::
 	.4byte kindness__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AE89C
+	.4byte getElementWeakness__C10MechaDragoUi
 	.2byte 0
 	.2byte 0
 	.4byte getStatusWeakness__C4UnitUs
@@ -47844,7 +47844,7 @@ vt_09F639B0::
 	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEBB8
+	.4byte monster_2c0__10MechaDrago
 	.2byte 0
 	.2byte 0
 	.4byte monster_2c8__7MonsterP6Action
@@ -47856,7 +47856,7 @@ vt_09F639B0::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -47868,7 +47868,7 @@ vt_09F639B0::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -47958,42 +47958,42 @@ vt_09F639B0::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AE8BC
+	.4byte m_438__10MechaDragoUib
 
-vt_09F63DF0::
+_vt.20ReconstructedCaribou.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
 	.2byte -32
 	.2byte 0
-	.4byte sub_080AED14
+	.4byte _._20ReconstructedCaribou
 	.2byte -32
 	.2byte 0
 	.4byte sub_08081BE4
@@ -48034,13 +48034,13 @@ vt_09F63DF0::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F63E68::
+_vt.20ReconstructedCaribou::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED14
+	.4byte _._20ReconstructedCaribou
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__7Monster
@@ -48076,10 +48076,10 @@ vt_09F63E68::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -48094,7 +48094,7 @@ vt_09F63E68::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -48127,13 +48127,13 @@ vt_09F63E68::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -48301,7 +48301,7 @@ vt_09F63E68::
 	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AECC4
+	.4byte monster_2c0__20ReconstructedCaribou
 	.2byte 0
 	.2byte 0
 	.4byte monster_2c8__7MonsterP6Action
@@ -48313,7 +48313,7 @@ vt_09F63E68::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -48325,7 +48325,7 @@ vt_09F63E68::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -48415,39 +48415,39 @@ vt_09F63E68::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
-vt_09F642A0::
+_vt.14DefaultMonster.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
 	.2byte -32
 	.2byte 0
-	.4byte sub_080AF2C8
+	.4byte _._14DefaultMonster
 	.2byte -32
 	.2byte 0
 	.4byte sub_08081BE4
@@ -48488,13 +48488,13 @@ vt_09F642A0::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F64318::
+_vt.14DefaultMonster::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C8
+	.4byte _._14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__7Monster
@@ -48530,10 +48530,10 @@ vt_09F64318::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF1BC
+	.4byte unit_70__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -48548,7 +48548,7 @@ vt_09F64318::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE58
+	.4byte unit_98__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -48581,13 +48581,13 @@ vt_09F64318::
 	.4byte unit_e8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF014
+	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEFF4
+	.4byte unit_f8__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEE38
+	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onDeath__4Unit
@@ -48755,7 +48755,7 @@ vt_09F64318::
 	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF25C
+	.4byte monster_2c0__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2c8__7MonsterP6Action
@@ -48767,7 +48767,7 @@ vt_09F64318::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AEDC8
+	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -48779,7 +48779,7 @@ vt_09F64318::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED7C
+	.4byte monster_300__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg
@@ -48869,31 +48869,31 @@ vt_09F64318::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C4
+	.4byte monster_3f0__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF2C0
+	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF16C
+	.4byte monster_400__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF118
+	.4byte monster_408__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AF034
+	.4byte monster_410__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED70
+	.4byte monster_418__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED64
+	.4byte monster_420__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED58
+	.4byte monster_428__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AED30
+	.4byte monster_430__14DefaultMonsteri
 
 vt_09F64750::
 	.2byte 0
@@ -93821,7 +93821,7 @@ _vt.4Unit::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_70__4UnitP6Action
@@ -95044,7 +95044,7 @@ vt_09F820E8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_70__4UnitP6Action
@@ -96525,7 +96525,7 @@ _vt.7Monster::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte unit_68__4Unit
+	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_70__4UnitP6Action
@@ -96762,7 +96762,7 @@ _vt.7Monster::
 	.4byte onRoundEnd__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e0__7Monster
+	.4byte scaledExperience__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2e8__7Monster
@@ -96774,7 +96774,7 @@ _vt.7Monster::
 	.4byte monster_2f8__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_300__7Monsterb
+	.4byte monster_300__7Monsteri
 	.2byte 0
 	.2byte 0
 	.4byte monster_308__7MonsterRC3Msg

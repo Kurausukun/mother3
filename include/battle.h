@@ -72,7 +72,7 @@ struct PartyInfo : public Base {
 
 struct GuestInfo : public Base {
     GuestInfo();
-    virtual ~GuestInfo();
+    virtual ~GuestInfo() override;
 
     virtual void guest_info_68();
     virtual bool guest_info_70();
@@ -88,7 +88,7 @@ struct TX {
 
 struct MonsterInfo : public Base {
     MonsterInfo();
-    virtual ~MonsterInfo();
+    virtual ~MonsterInfo() override;
 
     virtual void monster_info_68();
     virtual void monster_info_70();
@@ -118,7 +118,7 @@ struct XX {
 
 struct Sequencer {
     Sequencer();
-    virtual ~Sequencer();
+    virtual ~Sequencer() override;
 
     virtual void sequencer_10(s32, Unit*, s32, Unit**);
     virtual bool sequencer_18(s32, Unit*, s32, Unit**);
@@ -136,7 +136,7 @@ struct Sequencer {
 class Battle : public Base {
 public:
     Battle();
-    virtual ~Battle();
+    virtual ~Battle() override;
 
     virtual void battle_68();
     virtual void battle_70();
@@ -198,7 +198,7 @@ public:
     virtual Class2* battle_230();
     virtual Sequencer* battle_238();
 
-    bool setBattleResult(s32, bool);
+    bool setBattleResult(s32, bool force);
     void sub_0805DC1C();
     void sub_0805DC6C();
     void sub_0805DDE4();
@@ -218,8 +218,8 @@ public:
     s32 mBattleResult;
     s32 _44;
     BgClass* _48;
-    PartyInfo* _4c;
-    GuestInfo* _50;
+    PartyInfo* mPartyInfo;
+    GuestInfo* mGuestInfo;
     MonsterInfo* _54;
     Class2* _58;
     Sequencer* _5c;
@@ -277,6 +277,7 @@ struct ShowDownAsEscape : public Unk {
 SINGLETON_DECL(Battle);
 
 extern "C" bool IsBossBattle();
+extern "C" s32 randS32_(u32, u32);
 extern "C" s32 randS32(s32, s32);
 extern "C" void playSeq(u16, Unit*, Unit*);
 extern "C" void playSeqForEach(u16, Unit*, s32, Unit**);

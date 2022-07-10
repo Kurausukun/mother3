@@ -21,7 +21,7 @@ public:
     virtual u32 sub_0805D5D0();
     virtual u32 sub_0805D604();
     virtual void sub_0805D638();
-    virtual u32 sub_0805D64C();
+    virtual u32 getGameProgression();
     virtual void sub_0805D6F8();
     
     void checkResetKeys();

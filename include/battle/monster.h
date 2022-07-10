@@ -94,27 +94,27 @@ public:
 
     Monster();
     Monster(u16 idx, u16 id);
-    virtual ~Monster();
+    virtual ~Monster() override;
 
-    virtual void* getRTTI();
-    virtual u8 unit_d0();
-    virtual u16 unit_178();
-    virtual u16 id() const;
-    virtual Msg name() const;
-    virtual void setHP(s32 value);
-    virtual u16 attackSfx();
-    virtual u16 critSfx();
-    virtual u16 missSfx();
+    void* getRTTI() override;
+    u8 unit_d0() override;
+    u16 unit_178() override;
+    u16 id() const override;
+    Msg name() const override;
+    void setHP(s32 value) override;
+    u16 attackSfx() override;
+    u16 critSfx() override;
+    u16 missSfx() override;
 
     virtual Action* monster_2c0();
     virtual bool monster_2c8(Action*);
     virtual void onRoundBegin();
     virtual void onRoundEnd();
-    virtual u32 monster_2e0();
+    virtual u32 scaledExperience();
     virtual u32 monster_2e8();
     virtual u32 monster_2f0();
     virtual void monster_2f8();
-    virtual void monster_300(bool);
+    virtual void monster_300(s32);
     virtual void monster_308(const Msg&);
     virtual void setDeathAnim(s32);
     virtual void setExperience(s32);
@@ -125,8 +125,8 @@ public:
     virtual u32 deathSeq();
     virtual u32 type();
     virtual u32 surprised();
-    virtual u32 numSkills();
-    virtual u32 getSkill(s32);
+    virtual s32 numSkills();
+    virtual u16 getSkill(s32);
     virtual u16 numWeaknesses() const;
     virtual u16 getWeakness(s32) const;
     virtual s32 battlePos() const;

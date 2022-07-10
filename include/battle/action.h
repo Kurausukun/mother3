@@ -10,7 +10,7 @@ class Action : public Base {
 public:
     Action() {}
     Action(Unit* user);
-    virtual ~Action();
+    virtual ~Action() override;
 
     virtual void action_68();
     virtual void action_70();

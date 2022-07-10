@@ -30,46 +30,46 @@ class Guest : public Unit {
 public:
     Guest() {}
     Guest(u16 id);
-    virtual ~Guest();
+    virtual ~Guest() override;
 
     void setupStats();
 
-    virtual void object_8(s32 r0) {}
-    virtual void object_10() {}
-    virtual void object_18() {}
-    virtual void object_20() {}
-    virtual void object_28() {}
-    virtual u32 object_30() { return 0; }
-    virtual void object_38() {
+    void object_8(s32 r0) override {}
+    void object_10() override {}
+    void object_18() override {}
+    void object_20() override {}
+    void object_28() override {}
+    u32 object_30() override { return 0; }
+    void object_38() override {
         num_active_listeners = 0;
         lifetime = 0;
     }
-    virtual void object_40() {
+    void object_40() override {
         num_active_listeners = 0;
         lifetime = 0;
     }
-    virtual void object_48() {
+    void object_48() override {
         num_active_listeners = 0;
         lifetime = 0;
     }
-    virtual u32 object_50() { return 0; }
-    virtual void object_58() {
+    u32 object_50() override { return 0; }
+    void object_58() override {
         num_active_listeners = 0;
         lifetime = 0;
     }
-    virtual u32 object_60() { return 0; }
-    virtual void object_68() {}
-    virtual void object_70() {}
+    u32 object_60() override { return 0; }
+    void object_68() override {}
+    void object_70() override {}
 
-    virtual void* getRTTI();
-    virtual u8 unit_d0();
-    virtual u16 unit_178();
-    virtual u16 id() const;
-    virtual Msg name() const;
-    virtual s32 level() const;
-    virtual u16 attackSfx();
-    virtual u16 critSfx();
-    virtual u16 missSfx();
+    void* getRTTI() override;
+    u8 unit_d0() override;
+    u16 unit_178() override;
+    u16 id() const override;
+    Msg name() const override;
+    s32 level() const override;
+    u16 attackSfx() override;
+    u16 critSfx() override;
+    u16 missSfx() override;
 
     virtual Action* guest_2c0();
     virtual bool guest_2c8(Action*);

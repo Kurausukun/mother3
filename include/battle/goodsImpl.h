@@ -110,7 +110,7 @@ public:
     virtual bool dg_2(Unit* target) {
         Status* s = target->findStatus(Status::Nauseous);
         if (goods_2b0() == 4 && s != NULL) {
-            s->status_128().print(Color(0, 0, 0), 1);
+            s->activeMsg().print(Color(0, 0, 0), 1);
             return true;
         }
         return false;

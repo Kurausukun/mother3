@@ -1,4 +1,5 @@
 #include "battle/unit.h"
+#include "battle.h"
 #include "battle/action.h"
 #include "functions.h"
 
@@ -84,14 +85,58 @@ bool Unit::isDead() {
 }
 
 u8 Unit::unit_d0() {
-    if (unit_68() != 1) {
+    if (dispStatusMsg() != true) {
         onDeath();
         return false;
     }
     return true;
 }
 
-ASM_FUNC("asm/non_matching/unit/unit_68__4Unit.inc", u8 Unit::unit_68());
+u8 Unit::dispStatusMsg() {
+    if (hasStatus(Status::NoBackSprite) == true) {
+        return false;
+    }
+    if (hasStatus(Status::Frozen) == true) {
+        findStatus(Status::Frozen)->activeMsg().print(Color::Black(), true);
+        return false;
+    }
+    if (hasStatus(Status::Sleep) == true) {
+        findStatus(Status::Sleep)->activeMsg().print(Color::Black(), true);
+        return false;
+    }
+    if (hasStatus(Status::Numb) == true && randS32(0, 99) < 50) {
+        findStatus(Status::Numb)->activeMsg().print(Color::Black(), true);
+        return false;
+    }
+    if (hasStatus(Status::Apologetic) == true) {
+        findStatus(Status::Apologetic)->activeMsg().print(Color::Black(), true);
+        return false;
+    }
+    if (hasStatus(Status::Laughing) == true) {
+        findStatus(Status::Laughing)->activeMsg().print(Color::Black(), true);
+        return false;
+    }
+    if (hasStatus(Status::Dance) == true) {
+        findStatus(Status::Dance)->activeMsg().print(Color::Black(), true);
+        return false;
+    }
+    if (hasStatus(Status::DCMC) == true) {
+        findStatus(Status::DCMC)->activeMsg().print(Color::Black(), true);
+        return false;
+    }
+    if (hasStatus(Status::Fell) == true) {
+        findStatus(Status::Fell)->activeMsg().print(Color::Black(), true);
+        return false;
+    }
+    if (hasStatus(Status::Stapled) == true) {
+        findStatus(Status::Stapled)->activeMsg().print(Color::Black(), true);
+        return false;
+    }
+    if (hasStatus(Status::NoBackSprite) == true) {
+        return false;
+    }
+    return true;
+}
 
 bool Unit::unit_70(Action* a) {
     return a->action_1a0();
