@@ -1,8 +1,8 @@
 #include "battle.h"
 #include "battle/monster.h"
 #include "battle/player.h"
-#include "battle/unit.h"
 #include "battle/sndSystem.h"
+#include "battle/unit.h"
 #include "structs.h"
 
 s32 sub_08072DFC();
@@ -13,10 +13,10 @@ Player* sub_08072E18(s32);
 void sub_0807459C(u16, s32, s32, s32);
 extern "C" void sub_08074394(s32, s32, s32, bool, bool, bool);
 extern "C" s32 getPartyCount();
-extern "C" Player* getPlayer(s32);
+extern "C" Player* GetPlayer(s32);
 extern "C" s32 sub_08072C60();
 extern "C" Unit* sub_08072C7C(s32);
-extern "C" Player* getPlayer(s32);
+extern "C" Player* GetPlayer(s32);
 extern "C" u8 sub_08072648(s32);
 s32 sub_08072A88();
 Player* sub_08072AA4(s32);
@@ -29,7 +29,8 @@ struct Encounter {
     u8 _0;
     u8 _1[3];
     u8 _4;
-    u8 _5[5];
+    u8 monster_count;
+    u8 _6[4];
     u16 _a;
     s16 _c;
     u8 filler[0x2e];
@@ -130,7 +131,7 @@ u8 Battle::battle_a0() {
     if (mRoundNo < 1) {
         if (battle_1a0() == 1) {
             for (int i = 0; i < getPartyCount(); i++) {
-                getPlayer(i)->unit_268(0x33);
+                GetPlayer(i)->unit_268(0x33);
             }
             for (int i = 0; i < sub_08072C60(); i++) {
                 sub_08072C7C(i)->unit_268(0x33);
@@ -155,7 +156,7 @@ u8 Battle::battle_a8() {
         switch (i->player_318()) {
         case 0:
         case 2:
-            j = sub_0805E338(i);
+            j = getNextPlayer(i);
             break;
         case 1:
             j = tryKillPlayer(i);
@@ -172,12 +173,12 @@ u8 Battle::battle_a8() {
     return true;
 }
 
-Player* Battle::sub_0805E338(Unit* u) {
+Player* Battle::getNextPlayer(Unit* u) {
     for (int i = 0; i < getPartyCount(); i++) {
-        if (getPlayer(i) == u) {
+        if (GetPlayer(i) == u) {
             for (int j = i + 1; j < getPartyCount(); j++) {
-                if (getPlayer(j)->isAlive() == true) {
-                    return getPlayer(j);
+                if (GetPlayer(j)->isAlive() == true) {
+                    return GetPlayer(j);
                 }
             }
             break;
@@ -188,11 +189,11 @@ Player* Battle::sub_0805E338(Unit* u) {
 
 Player* Battle::tryKillPlayer(Unit* u) {
     for (int i = getPartyCount() - 1; i >= 0; i--) {
-        if (getPlayer(i) == u) {
+        if (GetPlayer(i) == u) {
             for (int j = i - 1; j >= 0; j--) {
-                if (getPlayer(j)->isAlive() == true && getPlayer(j)->player_310() == true) {
-                    getPlayer(j)->onDeath();
-                    return getPlayer(j);
+                if (GetPlayer(j)->isAlive() == true && GetPlayer(j)->player_310() == true) {
+                    GetPlayer(j)->onNoStatus();
+                    return GetPlayer(j);
                 }
             }
             break;
@@ -206,9 +207,9 @@ void Battle::battle_b0() {
 }
 
 bool Battle::battle_b8(Unit* u) {
-    if (u != 0) {
+    if (u != NULL) {
         emit(UnitTurnBegin(u));
-        u->unit_d0();
+        u->onTurn();
         emit(UnitTurnEnd(u));
     }
     if (battle_c8(1) == true) {
@@ -256,13 +257,13 @@ bool Battle::setBattleResult(s32 a1, bool force) {
 void Battle::battle_e8() {
     switch (mBattleResult) {
     case 2:
-        battle_f0();
+        onWin();
         break;
     case 3:
-        battle_f8();
+        onEscape();
         break;
     case 4:
-        battle_100();
+        onLose();
         break;
     case 5:
         battle_108();
@@ -271,19 +272,20 @@ void Battle::battle_e8() {
     battle_110();
 }
 
-ASM_FUNC("asm/non_matching/battle/sub_0805E700.inc", void Battle::battle_f0());
+ASM_FUNC("asm/non_matching/battle/sub_0805E700.inc", void Battle::onWin());
 
 ASM_FUNC("asm/non_matching/battle/sub_0805E808.inc", void Battle::sub_0805E808());
 
-void Battle::battle_f8() {
+void Battle::onEscape() {
     emit(ShowDownAsEscape());
     sub_0807459C(0, 0x20, 0, 0);
 }
 
-void Battle::battle_100() {
+void Battle::onLose() {
     emit(ShowDownAsLose());
 
     sub_0807459C(battle_1f8(), 0x20, 0x20, 0);
+    // The battle was lost...
     ROMStrFmt(0x78, Msg(), Msg(), Msg()).print(Color(0, 0, 0), true);
     sub_0805E9BC();
 }
@@ -340,7 +342,7 @@ Struct160* Battle::battle_168() {
     return &gUnknown_080C7D28[gEncounter._c];
 }
 
-bool Battle::battle_170() {
+bool Battle::isFightBoss() {
     return gEncounter._0 == 1;
 }
 
@@ -371,7 +373,7 @@ bool Battle::battle_1a0() {
 bool Battle::battle_1a8() {
     if (battle_160() == true) {
         return gEncounter._4 == false;
-    } else if (battle_170() == true) {
+    } else if (isFightBoss() == true) {
         return gEncounter._4 == false || battle_178()->_8 == true;
     } else if (battle_180() == true) {
         return true;
@@ -410,7 +412,7 @@ bool Battle::battle_1e0() {
 u16 Battle::battle_1e8() {
     if (battle_160() == true) {
         return battle_168()->_e;
-    } else if (battle_170() == true) {
+    } else if (isFightBoss() == true) {
         return battle_178()->_c;
     } else if (battle_180() == true) {
         return battle_188()->_e;
@@ -421,7 +423,7 @@ u16 Battle::battle_1e8() {
 u16 Battle::battle_1f0() {
     if (battle_160() == true) {
         return battle_168()->_10;
-    } else if (battle_170() == true) {
+    } else if (isFightBoss() == true) {
         return battle_178()->_e;
     } else if (battle_180() == true) {
         return battle_188()->_10;
@@ -445,16 +447,16 @@ BgClass* Battle::battle_210() {
     return _48;
 }
 
-PartyInfo* Battle::battle_218() {
+PartyInfo* Battle::partyInfo() {
     return mPartyInfo;
 }
 
-GuestInfo* Battle::battle_220() {
+GuestInfo* Battle::guestInfo() {
     return mGuestInfo;
 }
 
-MonsterInfo* Battle::battle_228() {
-    return _54;
+MonsterInfo* Battle::monsterInfo() {
+    return mMonsterInfo;
 }
 
 Class2* Battle::battle_230() {

@@ -62,7 +62,7 @@ public:
     void object_70() override {}
 
     void* getRTTI() override;
-    u8 unit_d0() override;
+    u8 onTurn() override;
     u16 unit_178() override;
     u16 id() const override;
     Msg name() const override;

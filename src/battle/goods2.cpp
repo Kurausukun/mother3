@@ -124,7 +124,6 @@ void* sub_080BDDF8(u16 id, Unit* user, u16 r2) {
 void* MakeInstance__H1Z12DefaultGoods_UsP4UnitUs_PX01(u16 id, Unit* user, u16 r2) {
     return new DefaultGoods(id, (void*)user, r2);
 }
-
 }
 
 TriviaCard4::TriviaCard4(u16 id, Unit* user, u16 a3) : DefaultGoods(id, user, a3) {}

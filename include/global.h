@@ -56,9 +56,9 @@
 #endif
 
 #define INLINE_VT_END                                                                              \
-    virtual void VT_HACK(); /*necessary for inline classes using baserom                           \
+    virtual void* VT_HACK(...); /*necessary for inline classes using baserom                           \
                                vtables*/
 #define DUMP_INLINE(CLASS)                                                                         \
-    NAKED void CLASS::VT_HACK() {} /* establish a reference to the class, but create no code */
+    NAKED void* CLASS::VT_HACK(...) {} /* establish a reference to the class, but create no code */
 
 #endif  // GUARD_GLOBAL_H

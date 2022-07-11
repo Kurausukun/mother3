@@ -1407,7 +1407,7 @@ sub_0807B444: @ 0x0807B444
 sub_0807B450: @ 0x0807B450
 	push {r4, r5, lr}
 	adds r4, r0, #0
-	bl unit_d0__4Unit
+	bl onTurn__4Unit
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -1496,7 +1496,7 @@ sub_0807B4D8: @ 0x0807B4D8
 sub_0807B4F8: @ 0x0807B4F8
 	push {r4, lr}
 	adds r4, r0, #0
-	bl onDeath__4Unit
+	bl onNoStatus__4Unit
 	movs r0, #0x83
 	lsls r0, r0, #2
 	adds r4, r4, r0

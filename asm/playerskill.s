@@ -1919,8 +1919,8 @@ _0807D3E8:
 	.align 2, 0
 _0807D3F0: .4byte 0x0000FFFF
 
-	thumb_func_start sub_0807D3F4
-sub_0807D3F4: @ 0x0807D3F4
+	thumb_func_start GoodsMenu_ct
+GoodsMenu_ct: @ 0x0807D3F4
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -6405,7 +6405,7 @@ _0807F8B2:
 	bl _call_via_r1
 	adds r1, r0, #0
 	adds r0, r4, #0
-	bl sub_0807D3F4
+	bl GoodsMenu_ct
 	str r0, [sp, #4]
 	ldr r1, [r0, #0x1c]
 	adds r1, #0xc8

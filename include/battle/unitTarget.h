@@ -1,9 +1,9 @@
 #ifndef BATTLE_UNIT_TARGET_H
 #define BATTLE_UNIT_TARGET_H
 
-#include "battle/unit.h"
 #include "battle/keyFocusManager.h"
 #include "battle/textAccessor.h"
+#include "battle/unit.h"
 
 struct UnitTargetInfo;
 
@@ -18,7 +18,7 @@ public:
     virtual Unit* getUnit() const;
     virtual u32 getSelection() const;
     virtual bool targettingAlly();
-    virtual bool attackdata_98();
+    virtual bool targettingMonster();
     virtual s32 attackdata_a0() const;
     virtual bool attackdata_a8() const;
     virtual bool attackdata_b0() const;
@@ -52,7 +52,7 @@ public:
 
     void sub_08077CF0(Unit*, u32);
 
-//private:
+    // private:
     Vector<void*> _44;
     Vector<void*> _50;
     u8 _5c;

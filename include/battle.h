@@ -155,9 +155,9 @@ public:
     virtual bool battle_d8();
     virtual bool battle_e0();
     virtual void battle_e8();
-    virtual void battle_f0();
-    virtual void battle_f8();
-    virtual void battle_100();
+    virtual void onWin();
+    virtual void onEscape();
+    virtual void onLose();
     virtual void battle_108();
     virtual void battle_110();
     virtual void battle_118();
@@ -171,7 +171,7 @@ public:
     virtual s32 battle_158();
     virtual bool battle_160();
     virtual Struct160* battle_168();
-    virtual bool battle_170();
+    virtual bool isFightBoss();
     virtual BattleGroup* battle_178();
     virtual bool battle_180();
     virtual Struct160* battle_188();
@@ -192,9 +192,9 @@ public:
     virtual u8* battle_200();
     virtual s32 battle_208();
     virtual BgClass* battle_210();
-    virtual PartyInfo* battle_218();
-    virtual GuestInfo* battle_220();
-    virtual MonsterInfo* battle_228();
+    virtual PartyInfo* partyInfo();
+    virtual GuestInfo* guestInfo();
+    virtual MonsterInfo* monsterInfo();
     virtual Class2* battle_230();
     virtual Sequencer* battle_238();
 
@@ -203,7 +203,7 @@ public:
     void sub_0805DC6C();
     void sub_0805DDE4();
     Player* tryKillPlayer(Unit*);
-    Player* sub_0805E338(Unit*);
+    Player* getNextPlayer(Unit*);
     void sub_0805E808();
     bool sub_0805E9BC();
 
@@ -220,7 +220,7 @@ public:
     BgClass* _48;
     PartyInfo* mPartyInfo;
     GuestInfo* mGuestInfo;
-    MonsterInfo* _54;
+    MonsterInfo* mMonsterInfo;
     Class2* _58;
     Sequencer* _5c;
 };
@@ -279,8 +279,8 @@ SINGLETON_DECL(Battle);
 extern "C" bool IsBossBattle();
 extern "C" s32 randS32_(u32, u32);
 extern "C" s32 randS32(s32, s32);
-extern "C" void playSeq(u16, Unit*, Unit*);
-extern "C" void playSeqForEach(u16, Unit*, s32, Unit**);
+extern "C" void PlayAnimation(u16, Unit*, Unit*);
+extern "C" void PlayAnimationForEach(u16, Unit*, s32, Unit**);
 extern "C" void setsleep(u32);
 extern "C" PartyInfo* getPartyInfo();
 extern "C" GuestInfo* getGuestInfo();

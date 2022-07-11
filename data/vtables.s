@@ -233,13 +233,13 @@ vt_09F45058::
 	.4byte battle_e8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_f0__6Battle
+	.4byte onWin__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_f8__6Battle
+	.4byte onEscape__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_100__6Battle
+	.4byte onLose__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_108__6Battle
@@ -281,7 +281,7 @@ vt_09F45058::
 	.4byte battle_168__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_170__6Battle
+	.4byte isFightBoss__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_178__6Battle
@@ -344,13 +344,13 @@ vt_09F45058::
 	.4byte battle_210__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_218__6Battle
+	.4byte partyInfo__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_220__6Battle
+	.4byte guestInfo__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_228__6Battle
+	.4byte monsterInfo__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_230__6Battle
@@ -826,13 +826,13 @@ vt_09F45630::
 	.4byte battle_e8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_f0__6Battle
+	.4byte onWin__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_f8__6Battle
+	.4byte onEscape__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_100__6Battle
+	.4byte onLose__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_108__6Battle
@@ -874,7 +874,7 @@ vt_09F45630::
 	.4byte battle_168__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_170__6Battle
+	.4byte isFightBoss__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_178__6Battle
@@ -937,13 +937,13 @@ vt_09F45630::
 	.4byte battle_210__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_218__6Battle
+	.4byte partyInfo__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_220__6Battle
+	.4byte guestInfo__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_228__6Battle
+	.4byte monsterInfo__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_230__6Battle
@@ -1089,13 +1089,13 @@ vt_09F458E8::
 	.4byte battle_e8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_f0__6Battle
+	.4byte onWin__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_f8__6Battle
+	.4byte onEscape__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_100__6Battle
+	.4byte onLose__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_108__6Battle
@@ -1137,7 +1137,7 @@ vt_09F458E8::
 	.4byte battle_168__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_170__6Battle
+	.4byte isFightBoss__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_178__6Battle
@@ -1200,13 +1200,13 @@ vt_09F458E8::
 	.4byte battle_210__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_218__6Battle
+	.4byte partyInfo__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_220__6Battle
+	.4byte guestInfo__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_228__6Battle
+	.4byte monsterInfo__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_230__6Battle
@@ -1385,13 +1385,13 @@ vt_09F45BF8::
 	.4byte battle_e8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_f0__6Battle
+	.4byte onWin__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_f8__6Battle
+	.4byte onEscape__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_100__6Battle
+	.4byte onLose__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_108__6Battle
@@ -1433,7 +1433,7 @@ vt_09F45BF8::
 	.4byte battle_168__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_170__6Battle
+	.4byte isFightBoss__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_178__6Battle
@@ -1496,13 +1496,13 @@ vt_09F45BF8::
 	.4byte battle_210__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_218__6Battle
+	.4byte partyInfo__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_220__6Battle
+	.4byte guestInfo__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_228__6Battle
+	.4byte monsterInfo__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_230__6Battle
@@ -1660,13 +1660,13 @@ vt_09F45ED0::
 	.4byte battle_e8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_f0__6Battle
+	.4byte onWin__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_f8__6Battle
+	.4byte onEscape__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_100__6Battle
+	.4byte onLose__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_108__6Battle
@@ -1708,7 +1708,7 @@ vt_09F45ED0::
 	.4byte battle_168__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_170__6Battle
+	.4byte isFightBoss__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_178__6Battle
@@ -1771,13 +1771,13 @@ vt_09F45ED0::
 	.4byte battle_210__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_218__6Battle
+	.4byte partyInfo__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_220__6Battle
+	.4byte guestInfo__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_228__6Battle
+	.4byte monsterInfo__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_230__6Battle
@@ -1940,13 +1940,13 @@ vt_09F46280::
 	.4byte battle_e8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_f0__6Battle
+	.4byte onWin__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_f8__6Battle
+	.4byte onEscape__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_100__6Battle
+	.4byte onLose__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_108__6Battle
@@ -1988,7 +1988,7 @@ vt_09F46280::
 	.4byte battle_168__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_170__6Battle
+	.4byte isFightBoss__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_178__6Battle
@@ -2051,13 +2051,13 @@ vt_09F46280::
 	.4byte battle_210__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_218__6Battle
+	.4byte partyInfo__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_220__6Battle
+	.4byte guestInfo__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_228__6Battle
+	.4byte monsterInfo__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_230__6Battle
@@ -2194,13 +2194,13 @@ vt_09F46450::
 	.4byte battle_e8__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_f0__6Battle
+	.4byte onWin__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_f8__6Battle
+	.4byte onEscape__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_100__6Battle
+	.4byte onLose__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_108__6Battle
@@ -2242,7 +2242,7 @@ vt_09F46450::
 	.4byte battle_168__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_170__6Battle
+	.4byte isFightBoss__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_178__6Battle
@@ -2305,13 +2305,13 @@ vt_09F46450::
 	.4byte battle_210__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_218__6Battle
+	.4byte partyInfo__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_220__6Battle
+	.4byte guestInfo__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_228__6Battle
+	.4byte monsterInfo__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_230__6Battle
@@ -2677,7 +2677,7 @@ vt_09F469A8::
 	.4byte sub_0807B4B8
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807B4D8
@@ -2686,7 +2686,7 @@ vt_09F469A8::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__4UnitP6Action
+	.4byte onActionReceive__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -2713,7 +2713,7 @@ vt_09F469A8::
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -2722,7 +2722,7 @@ vt_09F469A8::
 	.4byte unit_f0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__4UnitP6Action
+	.4byte alertActionReceive__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__4UnitP6Action
@@ -3155,7 +3155,7 @@ vt_09F46E98::
 	.4byte sub_0809C818
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807B4D8
@@ -3164,7 +3164,7 @@ vt_09F46E98::
 	.4byte sub_0809C7EC
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__4UnitP6Action
+	.4byte onActionReceive__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809C61C
@@ -3191,7 +3191,7 @@ vt_09F46E98::
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -3200,7 +3200,7 @@ vt_09F46E98::
 	.4byte unit_f0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__4UnitP6Action
+	.4byte alertActionReceive__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__4UnitP6Action
@@ -3636,7 +3636,7 @@ vt_09F47390::
 	.4byte sub_0807B4B8
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807B4D8
@@ -3645,7 +3645,7 @@ vt_09F47390::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__4UnitP6Action
+	.4byte onActionReceive__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -3672,7 +3672,7 @@ vt_09F47390::
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -3681,7 +3681,7 @@ vt_09F47390::
 	.4byte unit_f0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__4UnitP6Action
+	.4byte alertActionReceive__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__4UnitP6Action
@@ -4117,7 +4117,7 @@ vt_09F47888::
 	.4byte sub_0807B4B8
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807B4D8
@@ -4126,7 +4126,7 @@ vt_09F47888::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__4UnitP6Action
+	.4byte onActionReceive__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -4153,7 +4153,7 @@ vt_09F47888::
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -4162,7 +4162,7 @@ vt_09F47888::
 	.4byte unit_f0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__4UnitP6Action
+	.4byte alertActionReceive__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__4UnitP6Action
@@ -4598,7 +4598,7 @@ vt_09F47D80::
 	.4byte sub_0807B4B8
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807B4D8
@@ -4607,7 +4607,7 @@ vt_09F47D80::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__4UnitP6Action
+	.4byte onActionReceive__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -4634,7 +4634,7 @@ vt_09F47D80::
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -4643,7 +4643,7 @@ vt_09F47D80::
 	.4byte unit_f0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__4UnitP6Action
+	.4byte alertActionReceive__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__4UnitP6Action
@@ -5079,7 +5079,7 @@ vt_09F48278::
 	.4byte sub_0807B4B8
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807B4D8
@@ -5088,7 +5088,7 @@ vt_09F48278::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__4UnitP6Action
+	.4byte onActionReceive__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -5115,7 +5115,7 @@ vt_09F48278::
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -5124,7 +5124,7 @@ vt_09F48278::
 	.4byte unit_f0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__4UnitP6Action
+	.4byte alertActionReceive__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__4UnitP6Action
@@ -5563,7 +5563,7 @@ vt_09F48778::
 	.4byte sub_0807B4B8
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807B4D8
@@ -5572,7 +5572,7 @@ vt_09F48778::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__4UnitP6Action
+	.4byte onActionReceive__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -5599,7 +5599,7 @@ vt_09F48778::
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -5608,7 +5608,7 @@ vt_09F48778::
 	.4byte unit_f0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__4UnitP6Action
+	.4byte alertActionReceive__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__4UnitP6Action
@@ -6044,7 +6044,7 @@ vt_09F48C70::
 	.4byte sub_0807B4B8
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807B4D8
@@ -6053,7 +6053,7 @@ vt_09F48C70::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__4UnitP6Action
+	.4byte onActionReceive__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -6080,7 +6080,7 @@ vt_09F48C70::
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -6089,7 +6089,7 @@ vt_09F48C70::
 	.4byte unit_f0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__4UnitP6Action
+	.4byte alertActionReceive__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__4UnitP6Action
@@ -6543,16 +6543,16 @@ vt_09F49158::
 	.4byte sub_0809DC9C
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -6567,13 +6567,13 @@ vt_09F49158::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809DAD4
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -6585,7 +6585,7 @@ vt_09F49158::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -6597,7 +6597,7 @@ vt_09F49158::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -6797,16 +6797,16 @@ vt_09F493F8::
 	.4byte sub_0809DF04
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -6821,13 +6821,13 @@ vt_09F493F8::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809DDE0
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -6839,7 +6839,7 @@ vt_09F493F8::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -6851,7 +6851,7 @@ vt_09F493F8::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -7054,16 +7054,16 @@ vt_09F496A0::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -7078,13 +7078,13 @@ vt_09F496A0::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -7096,7 +7096,7 @@ vt_09F496A0::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -7108,7 +7108,7 @@ vt_09F496A0::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -7311,16 +7311,16 @@ vt_09F49948::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -7335,13 +7335,13 @@ vt_09F49948::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -7353,7 +7353,7 @@ vt_09F49948::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -7365,7 +7365,7 @@ vt_09F49948::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -7392,7 +7392,7 @@ vt_09F49948::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_1a0__6Action
+	.4byte fire__6Action
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -7565,16 +7565,16 @@ vt_09F49BE8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -7589,13 +7589,13 @@ vt_09F49BE8::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809E1E0
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -7607,7 +7607,7 @@ vt_09F49BE8::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -7619,7 +7619,7 @@ vt_09F49BE8::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -7646,7 +7646,7 @@ vt_09F49BE8::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_1a0__6Action
+	.4byte fire__6Action
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -7819,16 +7819,16 @@ vt_09F49E88::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -7843,7 +7843,7 @@ vt_09F49E88::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
@@ -7861,7 +7861,7 @@ vt_09F49E88::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -7873,7 +7873,7 @@ vt_09F49E88::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -8073,16 +8073,16 @@ vt_09F4A128::
 	.4byte sub_0809E630
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -8097,13 +8097,13 @@ vt_09F4A128::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -8115,7 +8115,7 @@ vt_09F4A128::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -8127,7 +8127,7 @@ vt_09F4A128::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -8327,16 +8327,16 @@ vt_09F4A3C8::
 	.4byte sub_0809E77C
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -8351,13 +8351,13 @@ vt_09F4A3C8::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -8369,7 +8369,7 @@ vt_09F4A3C8::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -8381,7 +8381,7 @@ vt_09F4A3C8::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -8581,16 +8581,16 @@ vt_09F4A668::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -8605,13 +8605,13 @@ vt_09F4A668::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -8623,7 +8623,7 @@ vt_09F4A668::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -8635,7 +8635,7 @@ vt_09F4A668::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -8838,16 +8838,16 @@ vt_09F4A910::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -8862,13 +8862,13 @@ vt_09F4A910::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -8880,7 +8880,7 @@ vt_09F4A910::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -8892,7 +8892,7 @@ vt_09F4A910::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -9095,16 +9095,16 @@ vt_09F4ABB8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -9119,13 +9119,13 @@ vt_09F4ABB8::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -9137,7 +9137,7 @@ vt_09F4ABB8::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -9149,7 +9149,7 @@ vt_09F4ABB8::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -9352,16 +9352,16 @@ vt_09F4AE60::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -9376,13 +9376,13 @@ vt_09F4AE60::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -9394,7 +9394,7 @@ vt_09F4AE60::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -9406,7 +9406,7 @@ vt_09F4AE60::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -9609,16 +9609,16 @@ vt_09F4B108::
 	.4byte sub_0809E898
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -9633,13 +9633,13 @@ vt_09F4B108::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -9651,7 +9651,7 @@ vt_09F4B108::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -9663,7 +9663,7 @@ vt_09F4B108::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -9866,7 +9866,7 @@ vt_09F4B3B0::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F098
@@ -9875,7 +9875,7 @@ vt_09F4B3B0::
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -9890,13 +9890,13 @@ vt_09F4B3B0::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -9908,7 +9908,7 @@ vt_09F4B3B0::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -9920,7 +9920,7 @@ vt_09F4B3B0::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -9947,7 +9947,7 @@ vt_09F4B3B0::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_1a0__6Action
+	.4byte fire__6Action
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -10153,16 +10153,16 @@ vt_09F4B6A8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -10177,13 +10177,13 @@ vt_09F4B6A8::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -10195,7 +10195,7 @@ vt_09F4B6A8::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -10207,7 +10207,7 @@ vt_09F4B6A8::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -10234,7 +10234,7 @@ vt_09F4B6A8::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_1a0__6Action
+	.4byte fire__6Action
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -10480,13 +10480,13 @@ _vt.5Guest::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__4UnitP6Action
+	.4byte onAction__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -10495,7 +10495,7 @@ _vt.5Guest::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__4UnitP6Action
+	.4byte onActionReceive__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -10516,13 +10516,13 @@ _vt.5Guest::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__5Guest
+	.4byte onTurn__5Guest
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -10531,13 +10531,13 @@ _vt.5Guest::
 	.4byte unit_f0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__4UnitP6Action
+	.4byte alertActionReceive__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -10825,7 +10825,7 @@ vt_09F4BDC8::
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -10834,7 +10834,7 @@ vt_09F4BDC8::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__4UnitP6Action
+	.4byte onActionReceive__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -10855,13 +10855,13 @@ vt_09F4BDC8::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__5Guest
+	.4byte onTurn__5Guest
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -10870,13 +10870,13 @@ vt_09F4BDC8::
 	.4byte unit_f0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__4UnitP6Action
+	.4byte alertActionReceive__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -11165,7 +11165,7 @@ vt_09F4C148::
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -11174,7 +11174,7 @@ vt_09F4C148::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__4UnitP6Action
+	.4byte onActionReceive__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -11195,13 +11195,13 @@ vt_09F4C148::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__5Guest
+	.4byte onTurn__5Guest
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -11210,13 +11210,13 @@ vt_09F4C148::
 	.4byte unit_f0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__4UnitP6Action
+	.4byte alertActionReceive__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -11514,7 +11514,7 @@ vt_09F4C4E0::
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -11523,7 +11523,7 @@ vt_09F4C4E0::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__4UnitP6Action
+	.4byte onActionReceive__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -11544,13 +11544,13 @@ vt_09F4C4E0::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__5Guest
+	.4byte onTurn__5Guest
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -11559,13 +11559,13 @@ vt_09F4C4E0::
 	.4byte unit_f0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__4UnitP6Action
+	.4byte alertActionReceive__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -11857,7 +11857,7 @@ vt_09F4C868::
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -11866,7 +11866,7 @@ vt_09F4C868::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__4UnitP6Action
+	.4byte onActionReceive__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -11887,13 +11887,13 @@ vt_09F4C868::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__5Guest
+	.4byte onTurn__5Guest
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -11902,13 +11902,13 @@ vt_09F4C868::
 	.4byte unit_f0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__4UnitP6Action
+	.4byte alertActionReceive__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -12203,7 +12203,7 @@ vt_09F4CBF8::
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -12212,7 +12212,7 @@ vt_09F4CBF8::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__4UnitP6Action
+	.4byte onActionReceive__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -12233,13 +12233,13 @@ vt_09F4CBF8::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__5Guest
+	.4byte onTurn__5Guest
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -12248,13 +12248,13 @@ vt_09F4CBF8::
 	.4byte unit_f0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__4UnitP6Action
+	.4byte alertActionReceive__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -12543,7 +12543,7 @@ vt_09F4CF78::
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -12552,7 +12552,7 @@ vt_09F4CF78::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__4UnitP6Action
+	.4byte onActionReceive__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -12573,13 +12573,13 @@ vt_09F4CF78::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__5Guest
+	.4byte onTurn__5Guest
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -12588,13 +12588,13 @@ vt_09F4CF78::
 	.4byte unit_f0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__4UnitP6Action
+	.4byte alertActionReceive__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -12883,7 +12883,7 @@ vt_09F4D2F8::
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -12892,7 +12892,7 @@ vt_09F4D2F8::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__4UnitP6Action
+	.4byte onActionReceive__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -12913,13 +12913,13 @@ vt_09F4D2F8::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__5Guest
+	.4byte onTurn__5Guest
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -12928,13 +12928,13 @@ vt_09F4D2F8::
 	.4byte unit_f0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__4UnitP6Action
+	.4byte alertActionReceive__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -13200,16 +13200,16 @@ vt_09F4D600::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -13224,13 +13224,13 @@ vt_09F4D600::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -13242,7 +13242,7 @@ vt_09F4D600::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -13254,7 +13254,7 @@ vt_09F4D600::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -13281,7 +13281,7 @@ vt_09F4D600::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_1a0__6Action
+	.4byte fire__6Action
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -13356,7 +13356,7 @@ vt_09F4D600::
 	.4byte successAnimNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte nextAnim__C10GuestSkill
+	.4byte critAnimNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte sfxNo__C10GuestSkill
@@ -13454,16 +13454,16 @@ vt_09F4D8A0::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -13478,13 +13478,13 @@ vt_09F4D8A0::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -13496,7 +13496,7 @@ vt_09F4D8A0::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -13508,7 +13508,7 @@ vt_09F4D8A0::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -13535,7 +13535,7 @@ vt_09F4D8A0::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_1a0__6Action
+	.4byte fire__6Action
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -13610,7 +13610,7 @@ vt_09F4D8A0::
 	.4byte successAnimNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte nextAnim__C10GuestSkill
+	.4byte critAnimNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte sfxNo__C10GuestSkill
@@ -13711,13 +13711,13 @@ vt_09F4DB40::
 	.4byte sub_080A0BE0
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -13732,13 +13732,13 @@ vt_09F4DB40::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -13750,7 +13750,7 @@ vt_09F4DB40::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -13762,7 +13762,7 @@ vt_09F4DB40::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -13789,7 +13789,7 @@ vt_09F4DB40::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_1a0__6Action
+	.4byte fire__6Action
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -13864,7 +13864,7 @@ vt_09F4DB40::
 	.4byte successAnimNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte nextAnim__C10GuestSkill
+	.4byte critAnimNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte sfxNo__C10GuestSkill
@@ -13965,13 +13965,13 @@ vt_09F4DDE0::
 	.4byte sub_080A0C2C
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -13986,13 +13986,13 @@ vt_09F4DDE0::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -14004,7 +14004,7 @@ vt_09F4DDE0::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -14016,7 +14016,7 @@ vt_09F4DDE0::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -14043,7 +14043,7 @@ vt_09F4DDE0::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_1a0__6Action
+	.4byte fire__6Action
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -14118,7 +14118,7 @@ vt_09F4DDE0::
 	.4byte successAnimNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte nextAnim__C10GuestSkill
+	.4byte critAnimNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte sfxNo__C10GuestSkill
@@ -14216,16 +14216,16 @@ vt_09F4E080::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -14240,13 +14240,13 @@ vt_09F4E080::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -14258,7 +14258,7 @@ vt_09F4E080::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -14270,7 +14270,7 @@ vt_09F4E080::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -14297,7 +14297,7 @@ vt_09F4E080::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_1a0__6Action
+	.4byte fire__6Action
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -14372,7 +14372,7 @@ vt_09F4E080::
 	.4byte successAnimNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte nextAnim__C10GuestSkill
+	.4byte critAnimNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte sfxNo__C10GuestSkill
@@ -14629,13 +14629,13 @@ vt_09F4E508::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -14644,7 +14644,7 @@ vt_09F4E508::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -14665,13 +14665,13 @@ vt_09F4E508::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -14680,13 +14680,13 @@ vt_09F4E508::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -14851,7 +14851,7 @@ vt_09F4E508::
 	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte monster_2c0__12MaskedMan3rd
+	.4byte calcAction__12MaskedMan3rd
 	.2byte 0
 	.2byte 0
 	.4byte monster_2c8__7MonsterP6Action
@@ -14866,10 +14866,10 @@ vt_09F4E508::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -14971,25 +14971,25 @@ vt_09F4E508::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F4E940::
 	.2byte -32
@@ -15089,7 +15089,7 @@ vt_09F4E9B8::
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -15098,7 +15098,7 @@ vt_09F4E9B8::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -15119,13 +15119,13 @@ vt_09F4E9B8::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A5AD4
@@ -15134,13 +15134,13 @@ vt_09F4E9B8::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -15320,10 +15320,10 @@ vt_09F4E9B8::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -15427,25 +15427,25 @@ vt_09F4EDB0::
 	.4byte sub_080A5A4C
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A5F3C
@@ -15563,13 +15563,13 @@ vt_09F4EEA8::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -15578,7 +15578,7 @@ vt_09F4EEA8::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -15599,13 +15599,13 @@ vt_09F4EEA8::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -15614,13 +15614,13 @@ vt_09F4EEA8::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -15800,10 +15800,10 @@ vt_09F4EEA8::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -15905,25 +15905,25 @@ vt_09F4EEA8::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F4F2E0::
 	.2byte -32
@@ -16023,7 +16023,7 @@ vt_09F4F358::
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -16032,7 +16032,7 @@ vt_09F4F358::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A6238
@@ -16053,13 +16053,13 @@ vt_09F4F358::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -16068,13 +16068,13 @@ vt_09F4F358::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -16254,10 +16254,10 @@ vt_09F4F358::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -16359,25 +16359,25 @@ vt_09F4F358::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A6890
@@ -16519,13 +16519,13 @@ vt_09F4F888::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -16534,7 +16534,7 @@ vt_09F4F888::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -16555,13 +16555,13 @@ vt_09F4F888::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -16570,13 +16570,13 @@ vt_09F4F888::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -16756,10 +16756,10 @@ vt_09F4F888::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -16861,25 +16861,25 @@ vt_09F4F888::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A6A68
@@ -16982,13 +16982,13 @@ vt_09F4FD50::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -16997,7 +16997,7 @@ vt_09F4FD50::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -17018,13 +17018,13 @@ vt_09F4FD50::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -17033,13 +17033,13 @@ vt_09F4FD50::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -17219,10 +17219,10 @@ vt_09F4FD50::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -17324,25 +17324,25 @@ vt_09F4FD50::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A6C00
@@ -17451,7 +17451,7 @@ vt_09F50218::
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -17481,13 +17481,13 @@ vt_09F50218::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -17496,13 +17496,13 @@ vt_09F50218::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -17682,10 +17682,10 @@ vt_09F50218::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -17787,25 +17787,25 @@ vt_09F50218::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A7608
@@ -17929,7 +17929,7 @@ vt_09F50708::
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -17938,7 +17938,7 @@ vt_09F50708::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -17959,13 +17959,13 @@ vt_09F50708::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -17974,13 +17974,13 @@ vt_09F50708::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -18160,10 +18160,10 @@ vt_09F50708::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -18265,25 +18265,25 @@ vt_09F50708::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F50B40::
 	.2byte -32
@@ -18377,13 +18377,13 @@ vt_09F50BB8::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A78A4
@@ -18392,7 +18392,7 @@ vt_09F50BB8::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A7830
@@ -18413,13 +18413,13 @@ vt_09F50BB8::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -18428,13 +18428,13 @@ vt_09F50BB8::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -18614,10 +18614,10 @@ vt_09F50BB8::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -18719,25 +18719,25 @@ vt_09F50BB8::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A78D0
@@ -18840,7 +18840,7 @@ vt_09F51070::
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -18849,7 +18849,7 @@ vt_09F51070::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -18870,13 +18870,13 @@ vt_09F51070::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -18885,13 +18885,13 @@ vt_09F51070::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -19071,10 +19071,10 @@ vt_09F51070::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -19176,25 +19176,25 @@ vt_09F51070::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F514A8::
 	.2byte -32
@@ -19294,7 +19294,7 @@ vt_09F51520::
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -19303,7 +19303,7 @@ vt_09F51520::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -19324,13 +19324,13 @@ vt_09F51520::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -19339,13 +19339,13 @@ vt_09F51520::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -19525,10 +19525,10 @@ vt_09F51520::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -19630,25 +19630,25 @@ vt_09F51520::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F51958::
 	.2byte -32
@@ -19748,7 +19748,7 @@ vt_09F519D0::
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -19757,7 +19757,7 @@ vt_09F519D0::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -19778,13 +19778,13 @@ vt_09F519D0::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -19793,13 +19793,13 @@ vt_09F519D0::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -19979,10 +19979,10 @@ vt_09F519D0::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -20084,25 +20084,25 @@ vt_09F519D0::
 	.4byte sub_080A7DE0
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A8318
@@ -20214,7 +20214,7 @@ vt_09F51EA0::
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -20223,7 +20223,7 @@ vt_09F51EA0::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -20244,13 +20244,13 @@ vt_09F51EA0::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -20259,13 +20259,13 @@ vt_09F51EA0::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -20445,10 +20445,10 @@ vt_09F51EA0::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -20550,25 +20550,25 @@ vt_09F51EA0::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A8660
@@ -20671,7 +20671,7 @@ vt_09F52358::
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -20680,7 +20680,7 @@ vt_09F52358::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -20701,13 +20701,13 @@ vt_09F52358::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -20716,13 +20716,13 @@ vt_09F52358::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -20902,10 +20902,10 @@ vt_09F52358::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -21007,25 +21007,25 @@ vt_09F52358::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A8BB4
@@ -21137,13 +21137,13 @@ vt_09F52838::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -21152,7 +21152,7 @@ vt_09F52838::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -21173,13 +21173,13 @@ vt_09F52838::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -21188,13 +21188,13 @@ vt_09F52838::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -21374,10 +21374,10 @@ vt_09F52838::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -21479,25 +21479,25 @@ vt_09F52838::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F52C70::
 	.2byte -32
@@ -21591,13 +21591,13 @@ vt_09F52CE8::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A9234
@@ -21627,13 +21627,13 @@ vt_09F52CE8::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -21642,13 +21642,13 @@ vt_09F52CE8::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -21828,10 +21828,10 @@ vt_09F52CE8::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -21933,25 +21933,25 @@ vt_09F52CE8::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A9518
@@ -22066,13 +22066,13 @@ vt_09F531D0::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -22081,7 +22081,7 @@ vt_09F531D0::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -22102,13 +22102,13 @@ vt_09F531D0::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -22117,13 +22117,13 @@ vt_09F531D0::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -22303,10 +22303,10 @@ vt_09F531D0::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -22408,25 +22408,25 @@ vt_09F531D0::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F53608::
 	.2byte -32
@@ -22520,13 +22520,13 @@ vt_09F53680::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -22535,7 +22535,7 @@ vt_09F53680::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -22556,13 +22556,13 @@ vt_09F53680::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -22571,13 +22571,13 @@ vt_09F53680::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -22757,10 +22757,10 @@ vt_09F53680::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -22862,25 +22862,25 @@ vt_09F53680::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F53AB8::
 	.2byte -32
@@ -22974,13 +22974,13 @@ vt_09F53B30::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -22989,7 +22989,7 @@ vt_09F53B30::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -23010,13 +23010,13 @@ vt_09F53B30::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -23025,13 +23025,13 @@ vt_09F53B30::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -23211,10 +23211,10 @@ vt_09F53B30::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -23316,25 +23316,25 @@ vt_09F53B30::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F53F68::
 	.2byte -32
@@ -23428,13 +23428,13 @@ vt_09F53FE0::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -23443,7 +23443,7 @@ vt_09F53FE0::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -23464,13 +23464,13 @@ vt_09F53FE0::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -23479,13 +23479,13 @@ vt_09F53FE0::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -23665,10 +23665,10 @@ vt_09F53FE0::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -23770,25 +23770,25 @@ vt_09F53FE0::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F54418::
 	.2byte -32
@@ -23882,13 +23882,13 @@ vt_09F54490::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -23897,7 +23897,7 @@ vt_09F54490::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -23918,13 +23918,13 @@ vt_09F54490::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -23933,13 +23933,13 @@ vt_09F54490::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -24119,10 +24119,10 @@ vt_09F54490::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -24224,25 +24224,25 @@ vt_09F54490::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F548C8::
 	.2byte -32
@@ -24336,13 +24336,13 @@ vt_09F54940::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -24351,7 +24351,7 @@ vt_09F54940::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -24372,13 +24372,13 @@ vt_09F54940::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -24387,13 +24387,13 @@ vt_09F54940::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -24573,10 +24573,10 @@ vt_09F54940::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -24678,25 +24678,25 @@ vt_09F54940::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F54D78::
 	.2byte -32
@@ -24790,13 +24790,13 @@ vt_09F54DF0::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -24805,7 +24805,7 @@ vt_09F54DF0::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -24826,13 +24826,13 @@ vt_09F54DF0::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -24841,13 +24841,13 @@ vt_09F54DF0::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -25027,10 +25027,10 @@ vt_09F54DF0::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -25132,25 +25132,25 @@ vt_09F54DF0::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F55228::
 	.2byte -32
@@ -25244,13 +25244,13 @@ vt_09F552A0::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -25259,7 +25259,7 @@ vt_09F552A0::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -25280,13 +25280,13 @@ vt_09F552A0::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -25295,13 +25295,13 @@ vt_09F552A0::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -25481,10 +25481,10 @@ vt_09F552A0::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -25586,25 +25586,25 @@ vt_09F552A0::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F556D8::
 	.2byte -32
@@ -25704,7 +25704,7 @@ vt_09F55750::
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -25713,7 +25713,7 @@ vt_09F55750::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -25734,13 +25734,13 @@ vt_09F55750::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -25749,13 +25749,13 @@ vt_09F55750::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -25935,10 +25935,10 @@ vt_09F55750::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -26040,25 +26040,25 @@ vt_09F55750::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F55B88::
 	.2byte -32
@@ -26152,13 +26152,13 @@ vt_09F55C00::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -26167,7 +26167,7 @@ vt_09F55C00::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -26188,13 +26188,13 @@ vt_09F55C00::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -26203,13 +26203,13 @@ vt_09F55C00::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -26389,10 +26389,10 @@ vt_09F55C00::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -26494,25 +26494,25 @@ vt_09F55C00::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F56038::
 	.2byte -32
@@ -26606,13 +26606,13 @@ vt_09F560B0::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -26621,7 +26621,7 @@ vt_09F560B0::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -26642,13 +26642,13 @@ vt_09F560B0::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -26657,13 +26657,13 @@ vt_09F560B0::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -26843,10 +26843,10 @@ vt_09F560B0::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -26948,25 +26948,25 @@ vt_09F560B0::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F564E8::
 	.2byte -32
@@ -27066,7 +27066,7 @@ vt_09F56560::
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -27075,7 +27075,7 @@ vt_09F56560::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -27096,13 +27096,13 @@ vt_09F56560::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -27111,13 +27111,13 @@ vt_09F56560::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -27297,10 +27297,10 @@ vt_09F56560::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -27402,25 +27402,25 @@ vt_09F56560::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AA2D4
@@ -27529,13 +27529,13 @@ vt_09F56A38::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -27544,7 +27544,7 @@ vt_09F56A38::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -27565,13 +27565,13 @@ vt_09F56A38::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -27580,13 +27580,13 @@ vt_09F56A38::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -27766,10 +27766,10 @@ vt_09F56A38::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -27871,25 +27871,25 @@ vt_09F56A38::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F56E70::
 	.2byte -32
@@ -27983,13 +27983,13 @@ vt_09F56EE8::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -27998,7 +27998,7 @@ vt_09F56EE8::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -28019,13 +28019,13 @@ vt_09F56EE8::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -28034,13 +28034,13 @@ vt_09F56EE8::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -28220,10 +28220,10 @@ vt_09F56EE8::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -28325,25 +28325,25 @@ vt_09F56EE8::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F57320::
 	.2byte -32
@@ -28437,13 +28437,13 @@ vt_09F57398::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -28452,7 +28452,7 @@ vt_09F57398::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -28473,13 +28473,13 @@ vt_09F57398::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -28488,13 +28488,13 @@ vt_09F57398::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -28674,10 +28674,10 @@ vt_09F57398::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -28779,25 +28779,25 @@ vt_09F57398::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F577D0::
 	.2byte -32
@@ -28891,13 +28891,13 @@ vt_09F57848::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -28927,13 +28927,13 @@ vt_09F57848::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -28942,13 +28942,13 @@ vt_09F57848::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -29128,10 +29128,10 @@ vt_09F57848::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -29233,25 +29233,25 @@ vt_09F57848::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AA82C
@@ -29354,13 +29354,13 @@ vt_09F57D10::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -29369,7 +29369,7 @@ vt_09F57D10::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -29390,13 +29390,13 @@ vt_09F57D10::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -29405,13 +29405,13 @@ vt_09F57D10::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -29591,10 +29591,10 @@ vt_09F57D10::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -29696,25 +29696,25 @@ vt_09F57D10::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F58148::
 	.2byte -32
@@ -29808,13 +29808,13 @@ vt_09F581C0::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -29823,7 +29823,7 @@ vt_09F581C0::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -29844,13 +29844,13 @@ vt_09F581C0::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -29859,13 +29859,13 @@ vt_09F581C0::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -30045,10 +30045,10 @@ vt_09F581C0::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -30150,25 +30150,25 @@ vt_09F581C0::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F585F8::
 	.2byte -32
@@ -30262,13 +30262,13 @@ vt_09F58670::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -30277,7 +30277,7 @@ vt_09F58670::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -30298,13 +30298,13 @@ vt_09F58670::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -30313,13 +30313,13 @@ vt_09F58670::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -30499,10 +30499,10 @@ vt_09F58670::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -30604,25 +30604,25 @@ vt_09F58670::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F58AA8::
 	.2byte -32
@@ -30716,13 +30716,13 @@ vt_09F58B20::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -30731,7 +30731,7 @@ vt_09F58B20::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -30752,13 +30752,13 @@ vt_09F58B20::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -30767,13 +30767,13 @@ vt_09F58B20::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -30953,10 +30953,10 @@ vt_09F58B20::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -31058,25 +31058,25 @@ vt_09F58B20::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AAAF4
@@ -31179,7 +31179,7 @@ vt_09F58FD8::
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -31188,7 +31188,7 @@ vt_09F58FD8::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -31209,13 +31209,13 @@ vt_09F58FD8::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -31224,13 +31224,13 @@ vt_09F58FD8::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -31410,10 +31410,10 @@ vt_09F58FD8::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -31515,25 +31515,25 @@ vt_09F58FD8::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F59410::
 	.2byte -32
@@ -31633,7 +31633,7 @@ vt_09F59488::
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -31642,7 +31642,7 @@ vt_09F59488::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -31663,13 +31663,13 @@ vt_09F59488::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -31678,13 +31678,13 @@ vt_09F59488::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -31864,10 +31864,10 @@ vt_09F59488::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -31969,25 +31969,25 @@ vt_09F59488::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AAFD8
@@ -32093,13 +32093,13 @@ vt_09F59958::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -32108,7 +32108,7 @@ vt_09F59958::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -32129,13 +32129,13 @@ vt_09F59958::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -32144,13 +32144,13 @@ vt_09F59958::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -32330,10 +32330,10 @@ vt_09F59958::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -32435,25 +32435,25 @@ vt_09F59958::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AB284
@@ -32556,13 +32556,13 @@ vt_09F59E20::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -32571,7 +32571,7 @@ vt_09F59E20::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -32592,13 +32592,13 @@ vt_09F59E20::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -32607,13 +32607,13 @@ vt_09F59E20::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -32793,10 +32793,10 @@ vt_09F59E20::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -32898,25 +32898,25 @@ vt_09F59E20::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F5A258::
 	.2byte -32
@@ -33010,13 +33010,13 @@ vt_09F5A2D0::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -33025,7 +33025,7 @@ vt_09F5A2D0::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -33046,13 +33046,13 @@ vt_09F5A2D0::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -33061,13 +33061,13 @@ vt_09F5A2D0::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -33247,10 +33247,10 @@ vt_09F5A2D0::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -33352,25 +33352,25 @@ vt_09F5A2D0::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F5A708::
 	.2byte -32
@@ -33464,13 +33464,13 @@ vt_09F5A780::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -33500,13 +33500,13 @@ vt_09F5A780::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -33515,13 +33515,13 @@ vt_09F5A780::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -33701,10 +33701,10 @@ vt_09F5A780::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -33806,25 +33806,25 @@ vt_09F5A780::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AB660
@@ -33933,7 +33933,7 @@ vt_09F5AC48::
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -33942,7 +33942,7 @@ vt_09F5AC48::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -33963,13 +33963,13 @@ vt_09F5AC48::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -33978,13 +33978,13 @@ vt_09F5AC48::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -34164,10 +34164,10 @@ vt_09F5AC48::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -34269,25 +34269,25 @@ vt_09F5AC48::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AB924
@@ -34384,13 +34384,13 @@ vt_09F5B100::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080ABAAC
@@ -34399,7 +34399,7 @@ vt_09F5B100::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080ABA38
@@ -34420,13 +34420,13 @@ vt_09F5B100::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -34435,13 +34435,13 @@ vt_09F5B100::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -34621,10 +34621,10 @@ vt_09F5B100::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -34726,25 +34726,25 @@ vt_09F5B100::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F5B538::
 	.2byte -32
@@ -34838,13 +34838,13 @@ vt_09F5B5B0::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -34853,7 +34853,7 @@ vt_09F5B5B0::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -34874,13 +34874,13 @@ vt_09F5B5B0::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -34889,13 +34889,13 @@ vt_09F5B5B0::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -35075,10 +35075,10 @@ vt_09F5B5B0::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -35180,25 +35180,25 @@ vt_09F5B5B0::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F5B9E8::
 	.2byte -32
@@ -35298,7 +35298,7 @@ vt_09F5BA60::
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -35307,7 +35307,7 @@ vt_09F5BA60::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -35328,13 +35328,13 @@ vt_09F5BA60::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -35343,13 +35343,13 @@ vt_09F5BA60::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -35529,10 +35529,10 @@ vt_09F5BA60::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -35634,25 +35634,25 @@ vt_09F5BA60::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080ABD3C
@@ -35764,7 +35764,7 @@ vt_09F5BF30::
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -35773,7 +35773,7 @@ vt_09F5BF30::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -35794,13 +35794,13 @@ vt_09F5BF30::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -35809,13 +35809,13 @@ vt_09F5BF30::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -35995,10 +35995,10 @@ vt_09F5BF30::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -36100,25 +36100,25 @@ vt_09F5BF30::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F5C368::
 	.2byte -32
@@ -36212,13 +36212,13 @@ vt_09F5C3E0::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -36227,7 +36227,7 @@ vt_09F5C3E0::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -36248,13 +36248,13 @@ vt_09F5C3E0::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -36263,13 +36263,13 @@ vt_09F5C3E0::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -36449,10 +36449,10 @@ vt_09F5C3E0::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -36554,25 +36554,25 @@ vt_09F5C3E0::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F5C818::
 	.2byte -32
@@ -36666,13 +36666,13 @@ vt_09F5C890::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -36681,7 +36681,7 @@ vt_09F5C890::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -36702,13 +36702,13 @@ vt_09F5C890::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -36717,13 +36717,13 @@ vt_09F5C890::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -36906,7 +36906,7 @@ vt_09F5C890::
 	.4byte sub_080AC260
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -37008,25 +37008,25 @@ vt_09F5C890::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F5CCC8::
 	.2byte -32
@@ -37120,13 +37120,13 @@ vt_09F5CD40::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -37135,7 +37135,7 @@ vt_09F5CD40::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -37156,13 +37156,13 @@ vt_09F5CD40::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -37171,13 +37171,13 @@ vt_09F5CD40::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -37357,10 +37357,10 @@ vt_09F5CD40::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -37462,25 +37462,25 @@ vt_09F5CD40::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AC408
@@ -37589,7 +37589,7 @@ vt_09F5D208::
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -37598,7 +37598,7 @@ vt_09F5D208::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -37619,13 +37619,13 @@ vt_09F5D208::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -37634,13 +37634,13 @@ vt_09F5D208::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -37820,10 +37820,10 @@ vt_09F5D208::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -37925,25 +37925,25 @@ vt_09F5D208::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F5D640::
 	.2byte -32
@@ -38037,13 +38037,13 @@ vt_09F5D6B8::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -38052,7 +38052,7 @@ vt_09F5D6B8::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -38073,13 +38073,13 @@ vt_09F5D6B8::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -38088,13 +38088,13 @@ vt_09F5D6B8::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -38274,10 +38274,10 @@ vt_09F5D6B8::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -38379,25 +38379,25 @@ vt_09F5D6B8::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F5DAF0::
 	.2byte -32
@@ -38491,13 +38491,13 @@ vt_09F5DB68::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -38506,7 +38506,7 @@ vt_09F5DB68::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -38527,13 +38527,13 @@ vt_09F5DB68::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -38542,13 +38542,13 @@ vt_09F5DB68::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -38728,10 +38728,10 @@ vt_09F5DB68::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -38833,25 +38833,25 @@ vt_09F5DB68::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F5DFA0::
 	.2byte -32
@@ -38945,13 +38945,13 @@ vt_09F5E018::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -38960,7 +38960,7 @@ vt_09F5E018::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -38981,13 +38981,13 @@ vt_09F5E018::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -38996,13 +38996,13 @@ vt_09F5E018::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -39182,10 +39182,10 @@ vt_09F5E018::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -39287,25 +39287,25 @@ vt_09F5E018::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F5E450::
 	.2byte -32
@@ -39399,13 +39399,13 @@ vt_09F5E4C8::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -39414,7 +39414,7 @@ vt_09F5E4C8::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -39435,13 +39435,13 @@ vt_09F5E4C8::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -39450,13 +39450,13 @@ vt_09F5E4C8::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -39636,10 +39636,10 @@ vt_09F5E4C8::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -39741,25 +39741,25 @@ vt_09F5E4C8::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F5E900::
 	.2byte -32
@@ -39853,13 +39853,13 @@ vt_09F5E978::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -39868,7 +39868,7 @@ vt_09F5E978::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -39889,13 +39889,13 @@ vt_09F5E978::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -39904,13 +39904,13 @@ vt_09F5E978::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -40090,10 +40090,10 @@ vt_09F5E978::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -40195,25 +40195,25 @@ vt_09F5E978::
 	.4byte sub_080AC928
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AC9A8
@@ -40316,13 +40316,13 @@ vt_09F5EE40::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -40331,7 +40331,7 @@ vt_09F5EE40::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -40352,13 +40352,13 @@ vt_09F5EE40::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -40367,13 +40367,13 @@ vt_09F5EE40::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -40553,10 +40553,10 @@ vt_09F5EE40::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -40658,25 +40658,25 @@ vt_09F5EE40::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F5F278::
 	.2byte -32
@@ -40770,13 +40770,13 @@ vt_09F5F2F0::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -40785,7 +40785,7 @@ vt_09F5F2F0::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -40806,13 +40806,13 @@ vt_09F5F2F0::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -40821,13 +40821,13 @@ vt_09F5F2F0::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -41007,10 +41007,10 @@ vt_09F5F2F0::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -41112,25 +41112,25 @@ vt_09F5F2F0::
 	.4byte sub_080ACAEC
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080ACCA4
@@ -41239,7 +41239,7 @@ vt_09F5F7B8::
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -41248,7 +41248,7 @@ vt_09F5F7B8::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_080ACD00
@@ -41269,13 +41269,13 @@ vt_09F5F7B8::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -41284,13 +41284,13 @@ vt_09F5F7B8::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -41470,10 +41470,10 @@ vt_09F5F7B8::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -41575,25 +41575,25 @@ vt_09F5F7B8::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F5FBF0::
 	.2byte -32
@@ -41693,7 +41693,7 @@ vt_09F5FC68::
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -41702,7 +41702,7 @@ vt_09F5FC68::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -41723,13 +41723,13 @@ vt_09F5FC68::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -41738,13 +41738,13 @@ vt_09F5FC68::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -41924,10 +41924,10 @@ vt_09F5FC68::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -42029,25 +42029,25 @@ vt_09F5FC68::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F600A0::
 	.2byte -32
@@ -42141,13 +42141,13 @@ vt_09F60118::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -42156,7 +42156,7 @@ vt_09F60118::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -42177,13 +42177,13 @@ vt_09F60118::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -42192,13 +42192,13 @@ vt_09F60118::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -42378,10 +42378,10 @@ vt_09F60118::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -42483,25 +42483,25 @@ vt_09F60118::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F60550::
 	.2byte -32
@@ -42601,7 +42601,7 @@ vt_09F605C8::
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -42610,7 +42610,7 @@ vt_09F605C8::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -42631,13 +42631,13 @@ vt_09F605C8::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -42646,13 +42646,13 @@ vt_09F605C8::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -42832,10 +42832,10 @@ vt_09F605C8::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -42937,25 +42937,25 @@ vt_09F605C8::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F60A00::
 	.2byte -32
@@ -43049,13 +43049,13 @@ vt_09F60A78::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -43064,7 +43064,7 @@ vt_09F60A78::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -43085,13 +43085,13 @@ vt_09F60A78::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -43100,13 +43100,13 @@ vt_09F60A78::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -43286,10 +43286,10 @@ vt_09F60A78::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -43391,25 +43391,25 @@ vt_09F60A78::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F60EB0::
 	.2byte -32
@@ -43509,7 +43509,7 @@ vt_09F60F28::
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -43518,7 +43518,7 @@ vt_09F60F28::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -43539,13 +43539,13 @@ vt_09F60F28::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -43554,13 +43554,13 @@ vt_09F60F28::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -43740,10 +43740,10 @@ vt_09F60F28::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -43845,25 +43845,25 @@ vt_09F60F28::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AD568
@@ -43975,7 +43975,7 @@ vt_09F613F8::
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -43984,7 +43984,7 @@ vt_09F613F8::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -44005,13 +44005,13 @@ vt_09F613F8::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -44020,13 +44020,13 @@ vt_09F613F8::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -44206,10 +44206,10 @@ vt_09F613F8::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -44311,25 +44311,25 @@ vt_09F613F8::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AD848
@@ -44441,7 +44441,7 @@ vt_09F618C8::
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -44450,7 +44450,7 @@ vt_09F618C8::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -44471,13 +44471,13 @@ vt_09F618C8::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -44486,13 +44486,13 @@ vt_09F618C8::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -44672,10 +44672,10 @@ vt_09F618C8::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -44777,25 +44777,25 @@ vt_09F618C8::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
 	.4byte sub_080ADC88
@@ -44904,7 +44904,7 @@ vt_09F61D90::
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -44913,7 +44913,7 @@ vt_09F61D90::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -44934,13 +44934,13 @@ vt_09F61D90::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -44949,13 +44949,13 @@ vt_09F61D90::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -45135,10 +45135,10 @@ vt_09F61D90::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -45240,25 +45240,25 @@ vt_09F61D90::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F621C8::
 	.2byte -32
@@ -45358,7 +45358,7 @@ vt_09F62240::
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -45367,7 +45367,7 @@ vt_09F62240::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -45388,13 +45388,13 @@ vt_09F62240::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -45403,13 +45403,13 @@ vt_09F62240::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -45589,10 +45589,10 @@ vt_09F62240::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -45694,25 +45694,25 @@ vt_09F62240::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F62678::
 	.2byte -32
@@ -45812,7 +45812,7 @@ vt_09F626F0::
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -45821,7 +45821,7 @@ vt_09F626F0::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -45842,13 +45842,13 @@ vt_09F626F0::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -45857,13 +45857,13 @@ vt_09F626F0::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -46043,10 +46043,10 @@ vt_09F626F0::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -46148,25 +46148,25 @@ vt_09F626F0::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F62B28::
 	.2byte -32
@@ -46174,7 +46174,7 @@ vt_09F62B28::
 	.4byte 0
 	.2byte -32
 	.2byte 0
-	.4byte sub_080AE6C8
+	.4byte _._9PotatoBug
 	.2byte -32
 	.2byte 0
 	.4byte sub_08081BE4
@@ -46221,7 +46221,7 @@ vt_09F62BA0::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AE6C8
+	.4byte _._9PotatoBug
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__7Monster
@@ -46260,13 +46260,13 @@ vt_09F62BA0::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -46275,7 +46275,7 @@ vt_09F62BA0::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -46296,13 +46296,13 @@ vt_09F62BA0::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -46311,13 +46311,13 @@ vt_09F62BA0::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -46482,7 +46482,7 @@ vt_09F62BA0::
 	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AE630
+	.4byte calcAction__9PotatoBug
 	.2byte 0
 	.2byte 0
 	.4byte monster_2c8__7MonsterP6Action
@@ -46497,10 +46497,10 @@ vt_09F62BA0::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -46602,25 +46602,25 @@ vt_09F62BA0::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F62FD8::
 	.2byte -32
@@ -46714,13 +46714,13 @@ vt_09F63050::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -46729,7 +46729,7 @@ vt_09F63050::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -46750,13 +46750,13 @@ vt_09F63050::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -46765,13 +46765,13 @@ vt_09F63050::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -46936,7 +46936,7 @@ vt_09F63050::
 	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte monster_2c0__12SootDumpling
+	.4byte calcAction__12SootDumpling
 	.2byte 0
 	.2byte 0
 	.4byte monster_2c8__7MonsterP6Action
@@ -46951,10 +46951,10 @@ vt_09F63050::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -47056,25 +47056,25 @@ vt_09F63050::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F63488::
 	.2byte -32
@@ -47168,13 +47168,13 @@ vt_09F63500::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__17BakedYammomonsterP6Action
+	.4byte onAction__17BakedYammomonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -47183,7 +47183,7 @@ vt_09F63500::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -47204,13 +47204,13 @@ vt_09F63500::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -47219,13 +47219,13 @@ vt_09F63500::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -47390,7 +47390,7 @@ vt_09F63500::
 	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte monster_2c0__17BakedYammomonster
+	.4byte calcAction__17BakedYammomonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2c8__7MonsterP6Action
@@ -47405,10 +47405,10 @@ vt_09F63500::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -47510,25 +47510,25 @@ vt_09F63500::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 _vt.10MechaDrago.10UnitObject::
 	.2byte -32
@@ -47622,13 +47622,13 @@ _vt.10MechaDrago::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__10MechaDragoP6Action
+	.4byte onAction__10MechaDragoP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -47637,7 +47637,7 @@ _vt.10MechaDrago::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__10MechaDragoP6Action
+	.4byte onActionReceive__10MechaDragoP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -47658,13 +47658,13 @@ _vt.10MechaDrago::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -47673,13 +47673,13 @@ _vt.10MechaDrago::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -47844,7 +47844,7 @@ _vt.10MechaDrago::
 	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte monster_2c0__10MechaDrago
+	.4byte calcAction__10MechaDrago
 	.2byte 0
 	.2byte 0
 	.4byte monster_2c8__7MonsterP6Action
@@ -47859,10 +47859,10 @@ _vt.10MechaDrago::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -47964,28 +47964,28 @@ _vt.10MechaDrago::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
-	.4byte m_438__10MechaDragoUib
+	.4byte onUseFang__10MechaDragoUib
 
 _vt.20ReconstructedCaribou.10UnitObject::
 	.2byte -32
@@ -48079,13 +48079,13 @@ _vt.20ReconstructedCaribou::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -48094,7 +48094,7 @@ _vt.20ReconstructedCaribou::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -48115,13 +48115,13 @@ _vt.20ReconstructedCaribou::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -48130,13 +48130,13 @@ _vt.20ReconstructedCaribou::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -48301,7 +48301,7 @@ _vt.20ReconstructedCaribou::
 	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte monster_2c0__20ReconstructedCaribou
+	.4byte calcAction__20ReconstructedCaribou
 	.2byte 0
 	.2byte 0
 	.4byte monster_2c8__7MonsterP6Action
@@ -48316,10 +48316,10 @@ _vt.20ReconstructedCaribou::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -48421,25 +48421,25 @@ _vt.20ReconstructedCaribou::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 _vt.14DefaultMonster.10UnitObject::
 	.2byte -32
@@ -48533,13 +48533,13 @@ _vt.14DefaultMonster::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__14DefaultMonsterP6Action
+	.4byte onAction__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -48548,7 +48548,7 @@ _vt.14DefaultMonster::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__14DefaultMonsterP6Action
+	.4byte onActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -48569,13 +48569,13 @@ _vt.14DefaultMonster::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -48584,13 +48584,13 @@ _vt.14DefaultMonster::
 	.4byte unit_f0__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__14DefaultMonsterP6Action
+	.4byte alertActionReceive__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__14DefaultMonsterP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -48755,7 +48755,7 @@ _vt.14DefaultMonster::
 	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte monster_2c0__14DefaultMonster
+	.4byte calcAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2c8__7MonsterP6Action
@@ -48770,10 +48770,10 @@ _vt.14DefaultMonster::
 	.4byte scaledExperience__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -48875,25 +48875,25 @@ _vt.14DefaultMonster::
 	.4byte monster_3f8__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_400__14DefaultMonster
+	.4byte isBackTurned__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_408__14DefaultMonster
+	.4byte isFriendlyFire__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_410__14DefaultMonster
+	.4byte isStrangeStatus__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_418__14DefaultMonsterUi
+	.4byte setActionCount__14DefaultMonsterUi
 	.2byte 0
 	.2byte 0
-	.4byte monster_420__14DefaultMonster
+	.4byte numActionsDone__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_428__14DefaultMonster
+	.4byte lastAction__14DefaultMonster
 	.2byte 0
 	.2byte 0
-	.4byte monster_430__14DefaultMonsteri
+	.4byte getHealthPercent__14DefaultMonsteri
 
 vt_09F64750::
 	.2byte 0
@@ -48970,16 +48970,16 @@ vt_09F64750::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -48994,13 +48994,13 @@ vt_09F64750::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B065C
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -49012,7 +49012,7 @@ vt_09F64750::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -49024,7 +49024,7 @@ vt_09F64750::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -49230,16 +49230,16 @@ vt_09F64A00::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -49254,13 +49254,13 @@ vt_09F64A00::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B0788
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -49272,7 +49272,7 @@ vt_09F64A00::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -49284,7 +49284,7 @@ vt_09F64A00::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -49490,16 +49490,16 @@ vt_09F64CB0::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -49514,13 +49514,13 @@ vt_09F64CB0::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B0894
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -49532,7 +49532,7 @@ vt_09F64CB0::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -49544,7 +49544,7 @@ vt_09F64CB0::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -49750,16 +49750,16 @@ vt_09F64F60::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -49774,13 +49774,13 @@ vt_09F64F60::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B09F4
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -49792,7 +49792,7 @@ vt_09F64F60::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -49804,7 +49804,7 @@ vt_09F64F60::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -50010,16 +50010,16 @@ vt_09F65210::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -50034,13 +50034,13 @@ vt_09F65210::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B0A8C
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -50052,7 +50052,7 @@ vt_09F65210::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -50064,7 +50064,7 @@ vt_09F65210::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -50270,16 +50270,16 @@ vt_09F654C0::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -50294,13 +50294,13 @@ vt_09F654C0::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B0B88
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -50312,7 +50312,7 @@ vt_09F654C0::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -50324,7 +50324,7 @@ vt_09F654C0::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -50530,16 +50530,16 @@ vt_09F65770::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -50554,13 +50554,13 @@ vt_09F65770::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B0CFC
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -50572,7 +50572,7 @@ vt_09F65770::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -50584,7 +50584,7 @@ vt_09F65770::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -50790,16 +50790,16 @@ vt_09F65A20::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -50814,13 +50814,13 @@ vt_09F65A20::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B0DFC
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -50832,7 +50832,7 @@ vt_09F65A20::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -50844,7 +50844,7 @@ vt_09F65A20::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -51050,16 +51050,16 @@ vt_09F65CD0::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -51074,13 +51074,13 @@ vt_09F65CD0::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -51092,7 +51092,7 @@ vt_09F65CD0::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -51104,7 +51104,7 @@ vt_09F65CD0::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -51310,16 +51310,16 @@ vt_09F65F80::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -51334,13 +51334,13 @@ vt_09F65F80::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -51352,7 +51352,7 @@ vt_09F65F80::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -51364,7 +51364,7 @@ vt_09F65F80::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -51570,16 +51570,16 @@ vt_09F66230::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -51594,13 +51594,13 @@ vt_09F66230::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B0F38
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -51612,7 +51612,7 @@ vt_09F66230::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -51624,7 +51624,7 @@ vt_09F66230::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -51830,16 +51830,16 @@ vt_09F664E0::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -51854,13 +51854,13 @@ vt_09F664E0::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B1158
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -51872,7 +51872,7 @@ vt_09F664E0::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -51884,7 +51884,7 @@ vt_09F664E0::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -52090,16 +52090,16 @@ vt_09F66790::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -52114,13 +52114,13 @@ vt_09F66790::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -52132,7 +52132,7 @@ vt_09F66790::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -52144,7 +52144,7 @@ vt_09F66790::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -52350,16 +52350,16 @@ vt_09F66A40::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -52374,13 +52374,13 @@ vt_09F66A40::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B13C4
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -52392,7 +52392,7 @@ vt_09F66A40::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -52404,7 +52404,7 @@ vt_09F66A40::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -52610,16 +52610,16 @@ vt_09F66CF0::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -52634,13 +52634,13 @@ vt_09F66CF0::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -52652,7 +52652,7 @@ vt_09F66CF0::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -52664,7 +52664,7 @@ vt_09F66CF0::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -52870,16 +52870,16 @@ vt_09F66FA0::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -52894,13 +52894,13 @@ vt_09F66FA0::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B147C
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -52912,7 +52912,7 @@ vt_09F66FA0::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -52924,7 +52924,7 @@ vt_09F66FA0::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -53130,16 +53130,16 @@ vt_09F67250::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -53154,13 +53154,13 @@ vt_09F67250::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B15C0
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -53172,7 +53172,7 @@ vt_09F67250::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -53184,7 +53184,7 @@ vt_09F67250::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -53390,16 +53390,16 @@ vt_09F67500::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -53414,13 +53414,13 @@ vt_09F67500::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B1694
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -53432,7 +53432,7 @@ vt_09F67500::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -53444,7 +53444,7 @@ vt_09F67500::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -53650,16 +53650,16 @@ vt_09F677B0::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -53674,13 +53674,13 @@ vt_09F677B0::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B17B8
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -53692,7 +53692,7 @@ vt_09F677B0::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -53704,7 +53704,7 @@ vt_09F677B0::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -53910,16 +53910,16 @@ vt_09F67A60::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -53934,13 +53934,13 @@ vt_09F67A60::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B1898
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -53952,7 +53952,7 @@ vt_09F67A60::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -53964,7 +53964,7 @@ vt_09F67A60::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -54170,16 +54170,16 @@ vt_09F67D10::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -54194,13 +54194,13 @@ vt_09F67D10::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B1904
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -54212,7 +54212,7 @@ vt_09F67D10::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -54224,7 +54224,7 @@ vt_09F67D10::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -54430,16 +54430,16 @@ vt_09F67FC0::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -54454,13 +54454,13 @@ vt_09F67FC0::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B19B4
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -54472,7 +54472,7 @@ vt_09F67FC0::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -54484,7 +54484,7 @@ vt_09F67FC0::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -54690,16 +54690,16 @@ vt_09F68270::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -54714,13 +54714,13 @@ vt_09F68270::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B1C48
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -54732,7 +54732,7 @@ vt_09F68270::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -54744,7 +54744,7 @@ vt_09F68270::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -54950,16 +54950,16 @@ vt_09F68520::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -54974,13 +54974,13 @@ vt_09F68520::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B1C9C
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -54992,7 +54992,7 @@ vt_09F68520::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -55004,7 +55004,7 @@ vt_09F68520::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -55210,16 +55210,16 @@ vt_09F687D0::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -55234,13 +55234,13 @@ vt_09F687D0::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B1E14
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -55252,7 +55252,7 @@ vt_09F687D0::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -55264,7 +55264,7 @@ vt_09F687D0::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -55470,16 +55470,16 @@ vt_09F68A80::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -55494,13 +55494,13 @@ vt_09F68A80::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B1FA8
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -55512,7 +55512,7 @@ vt_09F68A80::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -55524,7 +55524,7 @@ vt_09F68A80::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -55730,16 +55730,16 @@ vt_09F68D30::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -55754,13 +55754,13 @@ vt_09F68D30::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B20F4
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -55772,7 +55772,7 @@ vt_09F68D30::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -55784,7 +55784,7 @@ vt_09F68D30::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -55990,16 +55990,16 @@ vt_09F68FE0::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -56014,13 +56014,13 @@ vt_09F68FE0::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B21FC
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -56032,7 +56032,7 @@ vt_09F68FE0::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -56044,7 +56044,7 @@ vt_09F68FE0::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -56250,16 +56250,16 @@ vt_09F69290::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -56274,13 +56274,13 @@ vt_09F69290::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B242C
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -56292,7 +56292,7 @@ vt_09F69290::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -56304,7 +56304,7 @@ vt_09F69290::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -56513,16 +56513,16 @@ vt_09F69548::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -56537,13 +56537,13 @@ vt_09F69548::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B259C
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -56555,7 +56555,7 @@ vt_09F69548::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -56567,7 +56567,7 @@ vt_09F69548::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -56773,16 +56773,16 @@ vt_09F697F8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -56797,13 +56797,13 @@ vt_09F697F8::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -56815,7 +56815,7 @@ vt_09F697F8::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -56827,7 +56827,7 @@ vt_09F697F8::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -57033,16 +57033,16 @@ vt_09F69AA8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -57057,13 +57057,13 @@ vt_09F69AA8::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B26BC
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -57075,7 +57075,7 @@ vt_09F69AA8::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -57087,7 +57087,7 @@ vt_09F69AA8::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -57293,16 +57293,16 @@ vt_09F69D58::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -57317,13 +57317,13 @@ vt_09F69D58::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B2794
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -57335,7 +57335,7 @@ vt_09F69D58::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -57347,7 +57347,7 @@ vt_09F69D58::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -57553,16 +57553,16 @@ vt_09F6A008::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -57577,13 +57577,13 @@ vt_09F6A008::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B27E8
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -57595,7 +57595,7 @@ vt_09F6A008::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -57607,7 +57607,7 @@ vt_09F6A008::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -57813,16 +57813,16 @@ vt_09F6A2B8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -57837,13 +57837,13 @@ vt_09F6A2B8::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B2848
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -57855,7 +57855,7 @@ vt_09F6A2B8::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -57867,7 +57867,7 @@ vt_09F6A2B8::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -58073,16 +58073,16 @@ vt_09F6A568::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -58097,13 +58097,13 @@ vt_09F6A568::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B29C8
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -58115,7 +58115,7 @@ vt_09F6A568::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -58127,7 +58127,7 @@ vt_09F6A568::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -58333,16 +58333,16 @@ vt_09F6A818::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -58357,13 +58357,13 @@ vt_09F6A818::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B2AB0
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -58375,7 +58375,7 @@ vt_09F6A818::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -58387,7 +58387,7 @@ vt_09F6A818::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -58593,16 +58593,16 @@ vt_09F6AAC8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -58617,13 +58617,13 @@ vt_09F6AAC8::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B2BE4
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -58635,7 +58635,7 @@ vt_09F6AAC8::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -58647,7 +58647,7 @@ vt_09F6AAC8::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -58853,16 +58853,16 @@ vt_09F6AD78::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -58877,13 +58877,13 @@ vt_09F6AD78::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B2D18
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -58895,7 +58895,7 @@ vt_09F6AD78::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -58907,7 +58907,7 @@ vt_09F6AD78::
 	.4byte sub_080B2CEC
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -59113,16 +59113,16 @@ vt_09F6B028::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -59137,13 +59137,13 @@ vt_09F6B028::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B2D9C
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -59155,7 +59155,7 @@ vt_09F6B028::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -59167,7 +59167,7 @@ vt_09F6B028::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -59373,16 +59373,16 @@ vt_09F6B2D8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -59397,13 +59397,13 @@ vt_09F6B2D8::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -59415,7 +59415,7 @@ vt_09F6B2D8::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -59427,7 +59427,7 @@ vt_09F6B2D8::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -59633,16 +59633,16 @@ vt_09F6B588::
 	.4byte sub_080B3090
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -59657,13 +59657,13 @@ vt_09F6B588::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -59675,7 +59675,7 @@ vt_09F6B588::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -59687,7 +59687,7 @@ vt_09F6B588::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -59899,16 +59899,16 @@ vt_09F6B848::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -59923,13 +59923,13 @@ vt_09F6B848::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -59941,7 +59941,7 @@ vt_09F6B848::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -59953,7 +59953,7 @@ vt_09F6B848::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -60159,16 +60159,16 @@ vt_09F6BAF8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -60183,13 +60183,13 @@ vt_09F6BAF8::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -60201,7 +60201,7 @@ vt_09F6BAF8::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -60213,7 +60213,7 @@ vt_09F6BAF8::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -60419,16 +60419,16 @@ vt_09F6BDA8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -60443,7 +60443,7 @@ vt_09F6BDA8::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
@@ -60461,7 +60461,7 @@ vt_09F6BDA8::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -60473,7 +60473,7 @@ vt_09F6BDA8::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -60679,16 +60679,16 @@ vt_09F6C058::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -60703,7 +60703,7 @@ vt_09F6C058::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
@@ -60721,7 +60721,7 @@ vt_09F6C058::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -60733,7 +60733,7 @@ vt_09F6C058::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -60939,16 +60939,16 @@ vt_09F6C308::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -60963,7 +60963,7 @@ vt_09F6C308::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
@@ -60981,7 +60981,7 @@ vt_09F6C308::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -60993,7 +60993,7 @@ vt_09F6C308::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -61199,16 +61199,16 @@ vt_09F6C5B8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -61223,7 +61223,7 @@ vt_09F6C5B8::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
@@ -61241,7 +61241,7 @@ vt_09F6C5B8::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -61253,7 +61253,7 @@ vt_09F6C5B8::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -61459,16 +61459,16 @@ vt_09F6C868::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -61483,7 +61483,7 @@ vt_09F6C868::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
@@ -61501,7 +61501,7 @@ vt_09F6C868::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -61513,7 +61513,7 @@ vt_09F6C868::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -61719,16 +61719,16 @@ vt_09F6CB18::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -61743,7 +61743,7 @@ vt_09F6CB18::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
@@ -61761,7 +61761,7 @@ vt_09F6CB18::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -61773,7 +61773,7 @@ vt_09F6CB18::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -61979,16 +61979,16 @@ vt_09F6CDC8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -62003,7 +62003,7 @@ vt_09F6CDC8::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
@@ -62021,7 +62021,7 @@ vt_09F6CDC8::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -62033,7 +62033,7 @@ vt_09F6CDC8::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -62239,16 +62239,16 @@ vt_09F6D078::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -62263,7 +62263,7 @@ vt_09F6D078::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
@@ -62281,7 +62281,7 @@ vt_09F6D078::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -62293,7 +62293,7 @@ vt_09F6D078::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -62499,16 +62499,16 @@ vt_09F6D328::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -62523,7 +62523,7 @@ vt_09F6D328::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
@@ -62541,7 +62541,7 @@ vt_09F6D328::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -62553,7 +62553,7 @@ vt_09F6D328::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -62759,16 +62759,16 @@ vt_09F6D5D8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -62783,13 +62783,13 @@ vt_09F6D5D8::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -62801,7 +62801,7 @@ vt_09F6D5D8::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -62813,7 +62813,7 @@ vt_09F6D5D8::
 	.4byte sub_080B3940
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -63019,16 +63019,16 @@ vt_09F6D888::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -63043,13 +63043,13 @@ vt_09F6D888::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -63061,7 +63061,7 @@ vt_09F6D888::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -63073,7 +63073,7 @@ vt_09F6D888::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -63279,16 +63279,16 @@ vt_09F6DB38::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -63303,13 +63303,13 @@ vt_09F6DB38::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -63321,7 +63321,7 @@ vt_09F6DB38::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -63333,7 +63333,7 @@ vt_09F6DB38::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -63539,16 +63539,16 @@ vt_09F6DDE8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -63563,13 +63563,13 @@ vt_09F6DDE8::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -63581,7 +63581,7 @@ vt_09F6DDE8::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -63593,7 +63593,7 @@ vt_09F6DDE8::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -63799,10 +63799,10 @@ vt_09F6E098::
 	.4byte sub_080B3CC0
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
@@ -63823,13 +63823,13 @@ vt_09F6E098::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -63853,7 +63853,7 @@ vt_09F6E098::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -64059,16 +64059,16 @@ vt_09F6E348::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -64083,13 +64083,13 @@ vt_09F6E348::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -64101,7 +64101,7 @@ vt_09F6E348::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -64113,7 +64113,7 @@ vt_09F6E348::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -64319,7 +64319,7 @@ vt_09F6E5F8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B3D6C
@@ -64328,7 +64328,7 @@ vt_09F6E5F8::
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -64343,13 +64343,13 @@ vt_09F6E5F8::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -64361,7 +64361,7 @@ vt_09F6E5F8::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -64373,7 +64373,7 @@ vt_09F6E5F8::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -64579,7 +64579,7 @@ vt_09F6E8A8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B3E00
@@ -64588,7 +64588,7 @@ vt_09F6E8A8::
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -64603,13 +64603,13 @@ vt_09F6E8A8::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -64621,7 +64621,7 @@ vt_09F6E8A8::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -64633,7 +64633,7 @@ vt_09F6E8A8::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -64839,16 +64839,16 @@ vt_09F6EB58::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -64863,13 +64863,13 @@ vt_09F6EB58::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -64881,7 +64881,7 @@ vt_09F6EB58::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -64893,7 +64893,7 @@ vt_09F6EB58::
 	.4byte sub_080B4054
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -65099,7 +65099,7 @@ vt_09F6EE08::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4310
@@ -65108,7 +65108,7 @@ vt_09F6EE08::
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -65123,13 +65123,13 @@ vt_09F6EE08::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -65153,7 +65153,7 @@ vt_09F6EE08::
 	.4byte sub_080B4274
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -65359,7 +65359,7 @@ vt_09F6F0B8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4414
@@ -65368,7 +65368,7 @@ vt_09F6F0B8::
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -65383,13 +65383,13 @@ vt_09F6F0B8::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -65401,7 +65401,7 @@ vt_09F6F0B8::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -65413,7 +65413,7 @@ vt_09F6F0B8::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -65619,7 +65619,7 @@ vt_09F6F368::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B44A0
@@ -65628,7 +65628,7 @@ vt_09F6F368::
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -65643,13 +65643,13 @@ vt_09F6F368::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -65661,7 +65661,7 @@ vt_09F6F368::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -65673,7 +65673,7 @@ vt_09F6F368::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -65879,7 +65879,7 @@ vt_09F6F618::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4540
@@ -65888,7 +65888,7 @@ vt_09F6F618::
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -65903,13 +65903,13 @@ vt_09F6F618::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -65921,7 +65921,7 @@ vt_09F6F618::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -65933,7 +65933,7 @@ vt_09F6F618::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -66139,16 +66139,16 @@ vt_09F6F8C8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -66163,13 +66163,13 @@ vt_09F6F8C8::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -66181,7 +66181,7 @@ vt_09F6F8C8::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -66193,7 +66193,7 @@ vt_09F6F8C8::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -66399,16 +66399,16 @@ vt_09F6FB78::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -66423,13 +66423,13 @@ vt_09F6FB78::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -66441,7 +66441,7 @@ vt_09F6FB78::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -66453,7 +66453,7 @@ vt_09F6FB78::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -66659,16 +66659,16 @@ vt_09F6FE28::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -66683,13 +66683,13 @@ vt_09F6FE28::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -66701,7 +66701,7 @@ vt_09F6FE28::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -66713,7 +66713,7 @@ vt_09F6FE28::
 	.4byte sub_080B45F4
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -66919,16 +66919,16 @@ vt_09F700D8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -66943,13 +66943,13 @@ vt_09F700D8::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -66961,7 +66961,7 @@ vt_09F700D8::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -66973,7 +66973,7 @@ vt_09F700D8::
 	.4byte sub_080B4730
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -67179,16 +67179,16 @@ vt_09F70388::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -67203,13 +67203,13 @@ vt_09F70388::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -67221,7 +67221,7 @@ vt_09F70388::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -67233,7 +67233,7 @@ vt_09F70388::
 	.4byte sub_080B47E0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -67442,13 +67442,13 @@ vt_09F70638::
 	.4byte sub_080B4820
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -67463,13 +67463,13 @@ vt_09F70638::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -67481,7 +67481,7 @@ vt_09F70638::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -67493,7 +67493,7 @@ vt_09F70638::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -67702,13 +67702,13 @@ vt_09F708E8::
 	.4byte sub_080B48A8
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -67723,13 +67723,13 @@ vt_09F708E8::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -67741,7 +67741,7 @@ vt_09F708E8::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -67753,7 +67753,7 @@ vt_09F708E8::
 	.4byte sub_080B487C
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -67959,16 +67959,16 @@ vt_09F70B98::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -67983,13 +67983,13 @@ vt_09F70B98::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -68001,7 +68001,7 @@ vt_09F70B98::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -68013,7 +68013,7 @@ vt_09F70B98::
 	.4byte sub_080B493C
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -68222,13 +68222,13 @@ vt_09F70E48::
 	.4byte sub_080B4A4C
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -68243,13 +68243,13 @@ vt_09F70E48::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -68273,7 +68273,7 @@ vt_09F70E48::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -68479,16 +68479,16 @@ vt_09F710F8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -68503,13 +68503,13 @@ vt_09F710F8::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -68521,7 +68521,7 @@ vt_09F710F8::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -68533,7 +68533,7 @@ vt_09F710F8::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -68739,16 +68739,16 @@ vt_09F713A8::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -68763,13 +68763,13 @@ vt_09F713A8::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -68781,7 +68781,7 @@ vt_09F713A8::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -68793,7 +68793,7 @@ vt_09F713A8::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -69002,16 +69002,16 @@ vt_09F71660::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -69026,13 +69026,13 @@ vt_09F71660::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -69044,7 +69044,7 @@ vt_09F71660::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -69056,7 +69056,7 @@ vt_09F71660::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -69265,13 +69265,13 @@ vt_09F71910::
 	.4byte sub_080B4D74
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -69286,13 +69286,13 @@ vt_09F71910::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -69316,7 +69316,7 @@ vt_09F71910::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -69525,13 +69525,13 @@ vt_09F71BC0::
 	.4byte sub_080B4F28
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -69546,13 +69546,13 @@ vt_09F71BC0::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -69576,7 +69576,7 @@ vt_09F71BC0::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -69782,16 +69782,16 @@ vt_09F71E70::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -69806,13 +69806,13 @@ vt_09F71E70::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -69824,7 +69824,7 @@ vt_09F71E70::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -69836,7 +69836,7 @@ vt_09F71E70::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -70042,16 +70042,16 @@ vt_09F72120::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -70066,13 +70066,13 @@ vt_09F72120::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -70084,7 +70084,7 @@ vt_09F72120::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -70096,7 +70096,7 @@ vt_09F72120::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -78128,16 +78128,16 @@ vt_09F77440::
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -78152,13 +78152,13 @@ vt_09F77440::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -78170,7 +78170,7 @@ vt_09F77440::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -78182,7 +78182,7 @@ vt_09F77440::
 	.4byte sub_08082D70
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -78391,16 +78391,16 @@ vt_09F776F8::
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -78415,13 +78415,13 @@ vt_09F776F8::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -78433,7 +78433,7 @@ vt_09F776F8::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -78445,7 +78445,7 @@ vt_09F776F8::
 	.4byte sub_08082D70
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -78654,16 +78654,16 @@ vt_09F779B0::
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -78678,13 +78678,13 @@ vt_09F779B0::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -78696,7 +78696,7 @@ vt_09F779B0::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -78708,7 +78708,7 @@ vt_09F779B0::
 	.4byte sub_08082D70
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -78917,16 +78917,16 @@ vt_09F77C68::
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -78941,7 +78941,7 @@ vt_09F77C68::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
@@ -78959,7 +78959,7 @@ vt_09F77C68::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -78971,7 +78971,7 @@ vt_09F77C68::
 	.4byte sub_08082D70
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -79180,16 +79180,16 @@ vt_09F77F20::
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -79204,7 +79204,7 @@ vt_09F77F20::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
@@ -79222,7 +79222,7 @@ vt_09F77F20::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -79234,7 +79234,7 @@ vt_09F77F20::
 	.4byte sub_08082D70
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -79443,16 +79443,16 @@ vt_09F781D8::
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -79467,7 +79467,7 @@ vt_09F781D8::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
@@ -79485,7 +79485,7 @@ vt_09F781D8::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -79497,7 +79497,7 @@ vt_09F781D8::
 	.4byte sub_08082D70
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -79706,16 +79706,16 @@ vt_09F78490::
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -79730,7 +79730,7 @@ vt_09F78490::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
@@ -79748,7 +79748,7 @@ vt_09F78490::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -79760,7 +79760,7 @@ vt_09F78490::
 	.4byte sub_08082D70
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -79969,16 +79969,16 @@ vt_09F78748::
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -79993,7 +79993,7 @@ vt_09F78748::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
@@ -80011,7 +80011,7 @@ vt_09F78748::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -80023,7 +80023,7 @@ vt_09F78748::
 	.4byte sub_08082D70
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -80235,16 +80235,16 @@ vt_09F78A08::
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -80259,13 +80259,13 @@ vt_09F78A08::
 	.4byte sub_080BCFAC
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -80277,7 +80277,7 @@ vt_09F78A08::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -80289,7 +80289,7 @@ vt_09F78A08::
 	.4byte sub_08082D70
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -80498,10 +80498,10 @@ vt_09F78CC0::
 	.4byte sub_080BD150
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
@@ -80522,13 +80522,13 @@ vt_09F78CC0::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -80552,7 +80552,7 @@ vt_09F78CC0::
 	.4byte sub_080BD000
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -80761,10 +80761,10 @@ vt_09F78F78::
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
@@ -80785,13 +80785,13 @@ vt_09F78F78::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -80803,7 +80803,7 @@ vt_09F78F78::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -80815,7 +80815,7 @@ vt_09F78F78::
 	.4byte sub_08082D70
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -81024,16 +81024,16 @@ vt_09F79230::
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -81048,13 +81048,13 @@ vt_09F79230::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -81078,7 +81078,7 @@ vt_09F79230::
 	.4byte sub_08082D70
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -81287,16 +81287,16 @@ vt_09F794E8::
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -81311,13 +81311,13 @@ vt_09F794E8::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -81341,7 +81341,7 @@ vt_09F794E8::
 	.4byte sub_08082D70
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -81550,16 +81550,16 @@ __vt_5Goods::
 	.4byte sub_080BD9DC
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -81574,13 +81574,13 @@ __vt_5Goods::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -81592,7 +81592,7 @@ __vt_5Goods::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -81604,7 +81604,7 @@ __vt_5Goods::
 	.4byte sub_08082D70
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -81813,16 +81813,16 @@ _vt.5Goods::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -81837,13 +81837,13 @@ _vt.5Goods::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -81855,7 +81855,7 @@ _vt.5Goods::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -81867,7 +81867,7 @@ _vt.5Goods::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -81894,7 +81894,7 @@ _vt.5Goods::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_1a0__5Goods
+	.4byte fire__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -81969,7 +81969,7 @@ _vt.5Goods::
 	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte nextAnim__C5Goods
+	.4byte critAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sfxNo__C5Goods
@@ -82093,16 +82093,16 @@ _vt.11TriviaCard4::
 	.4byte tellResisted__11TriviaCard4P4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -82117,13 +82117,13 @@ _vt.11TriviaCard4::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__11TriviaCard4P4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -82135,7 +82135,7 @@ _vt.11TriviaCard4::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -82147,7 +82147,7 @@ _vt.11TriviaCard4::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -82174,7 +82174,7 @@ _vt.11TriviaCard4::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_1a0__5Goods
+	.4byte fire__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -82249,7 +82249,7 @@ _vt.11TriviaCard4::
 	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte nextAnim__C5Goods
+	.4byte critAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sfxNo__C5Goods
@@ -82371,16 +82371,16 @@ _vt.11TriviaCard3::
 	.4byte tellResisted__11TriviaCard3P4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -82395,13 +82395,13 @@ _vt.11TriviaCard3::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__11TriviaCard3P4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -82413,7 +82413,7 @@ _vt.11TriviaCard3::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -82425,7 +82425,7 @@ _vt.11TriviaCard3::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -82452,7 +82452,7 @@ _vt.11TriviaCard3::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_1a0__5Goods
+	.4byte fire__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -82527,7 +82527,7 @@ _vt.11TriviaCard3::
 	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte nextAnim__C5Goods
+	.4byte critAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sfxNo__C5Goods
@@ -82649,16 +82649,16 @@ _vt.11TriviaCard2::
 	.4byte tellResisted__11TriviaCard2P4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -82673,13 +82673,13 @@ _vt.11TriviaCard2::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__11TriviaCard2P4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -82691,7 +82691,7 @@ _vt.11TriviaCard2::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -82703,7 +82703,7 @@ _vt.11TriviaCard2::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -82730,7 +82730,7 @@ _vt.11TriviaCard2::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_1a0__5Goods
+	.4byte fire__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -82805,7 +82805,7 @@ _vt.11TriviaCard2::
 	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte nextAnim__C5Goods
+	.4byte critAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sfxNo__C5Goods
@@ -82927,16 +82927,16 @@ _vt.11TriviaCard1::
 	.4byte tellResisted__11TriviaCard1P4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -82951,13 +82951,13 @@ _vt.11TriviaCard1::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__11TriviaCard1P4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -82969,7 +82969,7 @@ _vt.11TriviaCard1::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -82981,7 +82981,7 @@ _vt.11TriviaCard1::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -83008,7 +83008,7 @@ _vt.11TriviaCard1::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_1a0__5Goods
+	.4byte fire__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -83083,7 +83083,7 @@ _vt.11TriviaCard1::
 	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte nextAnim__C5Goods
+	.4byte critAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sfxNo__C5Goods
@@ -83205,16 +83205,16 @@ _vt.9DragoFang::
 	.4byte tellResisted__9DragoFangP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -83229,13 +83229,13 @@ _vt.9DragoFang::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__9DragoFangP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -83247,7 +83247,7 @@ _vt.9DragoFang::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -83259,7 +83259,7 @@ _vt.9DragoFang::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -83286,7 +83286,7 @@ _vt.9DragoFang::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_1a0__5Goods
+	.4byte fire__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -83361,7 +83361,7 @@ _vt.9DragoFang::
 	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte nextAnim__C5Goods
+	.4byte critAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sfxNo__C5Goods
@@ -83483,16 +83483,16 @@ _vt.14ShieldSnatcher::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -83507,13 +83507,13 @@ _vt.14ShieldSnatcher::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -83525,7 +83525,7 @@ _vt.14ShieldSnatcher::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -83537,7 +83537,7 @@ _vt.14ShieldSnatcher::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -83564,7 +83564,7 @@ _vt.14ShieldSnatcher::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_1a0__5Goods
+	.4byte fire__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -83639,7 +83639,7 @@ _vt.14ShieldSnatcher::
 	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte nextAnim__C5Goods
+	.4byte critAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sfxNo__C5Goods
@@ -83761,16 +83761,16 @@ _vt.16CupOfLifenoodles::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -83785,13 +83785,13 @@ _vt.16CupOfLifenoodles::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -83803,7 +83803,7 @@ _vt.16CupOfLifenoodles::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -83815,7 +83815,7 @@ _vt.16CupOfLifenoodles::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -83842,7 +83842,7 @@ _vt.16CupOfLifenoodles::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_1a0__5Goods
+	.4byte fire__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -83917,7 +83917,7 @@ _vt.16CupOfLifenoodles::
 	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte nextAnim__C5Goods
+	.4byte critAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sfxNo__C5Goods
@@ -84039,16 +84039,16 @@ _vt.10SecretHerb::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -84063,13 +84063,13 @@ _vt.10SecretHerb::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -84081,7 +84081,7 @@ _vt.10SecretHerb::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -84093,7 +84093,7 @@ _vt.10SecretHerb::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -84120,7 +84120,7 @@ _vt.10SecretHerb::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_1a0__5Goods
+	.4byte fire__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -84195,7 +84195,7 @@ _vt.10SecretHerb::
 	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte nextAnim__C5Goods
+	.4byte critAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sfxNo__C5Goods
@@ -84317,16 +84317,16 @@ _vt.8PaperFan::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -84341,13 +84341,13 @@ _vt.8PaperFan::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -84359,7 +84359,7 @@ _vt.8PaperFan::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -84371,7 +84371,7 @@ _vt.8PaperFan::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -84398,7 +84398,7 @@ _vt.8PaperFan::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_1a0__5Goods
+	.4byte fire__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -84473,7 +84473,7 @@ _vt.8PaperFan::
 	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte nextAnim__C5Goods
+	.4byte critAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sfxNo__C5Goods
@@ -84595,16 +84595,16 @@ _vt.11MadeYouLook::
 	.4byte tellResisted__11MadeYouLookP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -84619,13 +84619,13 @@ _vt.11MadeYouLook::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__11MadeYouLookP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -84637,7 +84637,7 @@ _vt.11MadeYouLook::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -84649,7 +84649,7 @@ _vt.11MadeYouLook::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -84676,7 +84676,7 @@ _vt.11MadeYouLook::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_1a0__5Goods
+	.4byte fire__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -84751,7 +84751,7 @@ _vt.11MadeYouLook::
 	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte nextAnim__C5Goods
+	.4byte critAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sfxNo__C5Goods
@@ -84873,16 +84873,16 @@ _vt.15AttackAttractor::
 	.4byte tellResisted__15AttackAttractorP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -84897,13 +84897,13 @@ _vt.15AttackAttractor::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__15AttackAttractorP4Unit
+	.4byte onInflictStatus__15AttackAttractorP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -84915,7 +84915,7 @@ _vt.15AttackAttractor::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -84927,7 +84927,7 @@ _vt.15AttackAttractor::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -84954,7 +84954,7 @@ _vt.15AttackAttractor::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_1a0__5Goods
+	.4byte fire__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -85029,7 +85029,7 @@ _vt.15AttackAttractor::
 	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte nextAnim__C5Goods
+	.4byte critAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sfxNo__C5Goods
@@ -85151,16 +85151,16 @@ _vt.15EnemyWimperizer::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -85175,13 +85175,13 @@ _vt.15EnemyWimperizer::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -85193,7 +85193,7 @@ _vt.15EnemyWimperizer::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -85205,7 +85205,7 @@ _vt.15EnemyWimperizer::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -85232,7 +85232,7 @@ _vt.15EnemyWimperizer::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_1a0__5Goods
+	.4byte fire__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -85307,7 +85307,7 @@ _vt.15EnemyWimperizer::
 	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte nextAnim__C5Goods
+	.4byte critAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sfxNo__C5Goods
@@ -85429,16 +85429,16 @@ _vt.15EnemyBufferizer::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -85453,13 +85453,13 @@ _vt.15EnemyBufferizer::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -85471,7 +85471,7 @@ _vt.15EnemyBufferizer::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -85483,7 +85483,7 @@ _vt.15EnemyBufferizer::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -85510,7 +85510,7 @@ _vt.15EnemyBufferizer::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_1a0__5Goods
+	.4byte fire__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -85585,7 +85585,7 @@ _vt.15EnemyBufferizer::
 	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte nextAnim__C5Goods
+	.4byte critAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sfxNo__C5Goods
@@ -85707,16 +85707,16 @@ _vt.9LottoMeal::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -85731,13 +85731,13 @@ _vt.9LottoMeal::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__9LottoMealP4Unit
+	.4byte onInflictStatus__9LottoMealP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -85749,7 +85749,7 @@ _vt.9LottoMeal::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -85761,7 +85761,7 @@ _vt.9LottoMeal::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -85788,7 +85788,7 @@ _vt.9LottoMeal::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_1a0__5Goods
+	.4byte fire__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -85863,7 +85863,7 @@ _vt.9LottoMeal::
 	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte nextAnim__C5Goods
+	.4byte critAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sfxNo__C5Goods
@@ -85985,16 +85985,16 @@ _vt.9DoggyFood::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -86009,13 +86009,13 @@ _vt.9DoggyFood::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -86027,7 +86027,7 @@ _vt.9DoggyFood::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -86039,7 +86039,7 @@ _vt.9DoggyFood::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -86066,7 +86066,7 @@ _vt.9DoggyFood::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_1a0__5Goods
+	.4byte fire__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -86141,7 +86141,7 @@ _vt.9DoggyFood::
 	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte nextAnim__C5Goods
+	.4byte critAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sfxNo__C5Goods
@@ -86263,16 +86263,16 @@ _vt.14PeculiarCheese::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -86287,13 +86287,13 @@ _vt.14PeculiarCheese::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -86305,7 +86305,7 @@ _vt.14PeculiarCheese::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -86317,7 +86317,7 @@ _vt.14PeculiarCheese::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -86344,7 +86344,7 @@ _vt.14PeculiarCheese::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_1a0__5Goods
+	.4byte fire__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -86419,7 +86419,7 @@ _vt.14PeculiarCheese::
 	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte nextAnim__C5Goods
+	.4byte critAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sfxNo__C5Goods
@@ -86541,16 +86541,16 @@ _vt.8BugSpray::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__8BugSprayP4Unit
+	.4byte onDamage__8BugSprayP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -86565,13 +86565,13 @@ _vt.8BugSpray::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -86583,7 +86583,7 @@ _vt.8BugSpray::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -86595,7 +86595,7 @@ _vt.8BugSpray::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -86622,7 +86622,7 @@ _vt.8BugSpray::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_1a0__5Goods
+	.4byte fire__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -86697,7 +86697,7 @@ _vt.8BugSpray::
 	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte nextAnim__C5Goods
+	.4byte critAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sfxNo__C5Goods
@@ -86819,16 +86819,16 @@ _vt.13AncientBanana::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -86843,13 +86843,13 @@ _vt.13AncientBanana::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -86861,7 +86861,7 @@ _vt.13AncientBanana::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -86873,7 +86873,7 @@ _vt.13AncientBanana::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -86900,7 +86900,7 @@ _vt.13AncientBanana::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_1a0__5Goods
+	.4byte fire__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -86975,7 +86975,7 @@ _vt.13AncientBanana::
 	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte nextAnim__C5Goods
+	.4byte critAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sfxNo__C5Goods
@@ -87097,16 +87097,16 @@ _vt.11HoneyShower::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__11HoneyShowerP4Unit
+	.4byte onDamage__11HoneyShowerP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -87121,13 +87121,13 @@ _vt.11HoneyShower::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -87139,7 +87139,7 @@ _vt.11HoneyShower::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -87151,7 +87151,7 @@ _vt.11HoneyShower::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -87178,7 +87178,7 @@ _vt.11HoneyShower::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_1a0__5Goods
+	.4byte fire__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -87253,7 +87253,7 @@ _vt.11HoneyShower::
 	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte nextAnim__C5Goods
+	.4byte critAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sfxNo__C5Goods
@@ -87375,16 +87375,16 @@ _vt.12SaltwaterGun::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__12SaltwaterGunP4Unit
+	.4byte onDamage__12SaltwaterGunP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -87399,13 +87399,13 @@ _vt.12SaltwaterGun::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -87417,7 +87417,7 @@ _vt.12SaltwaterGun::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -87429,7 +87429,7 @@ _vt.12SaltwaterGun::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -87456,7 +87456,7 @@ _vt.12SaltwaterGun::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_1a0__5Goods
+	.4byte fire__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -87531,7 +87531,7 @@ _vt.12SaltwaterGun::
 	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte nextAnim__C5Goods
+	.4byte critAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sfxNo__C5Goods
@@ -87653,16 +87653,16 @@ _vt.15NewYearsEveBomb::
 	.4byte tellResisted__15NewYearsEveBombP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__15NewYearsEveBombP4Unit
+	.4byte onDamage__15NewYearsEveBombP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -87677,13 +87677,13 @@ _vt.15NewYearsEveBomb::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -87695,7 +87695,7 @@ _vt.15NewYearsEveBomb::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -87707,7 +87707,7 @@ _vt.15NewYearsEveBomb::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -87734,7 +87734,7 @@ _vt.15NewYearsEveBomb::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_1a0__5Goods
+	.4byte fire__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -87809,7 +87809,7 @@ _vt.15NewYearsEveBomb::
 	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte nextAnim__C5Goods
+	.4byte critAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sfxNo__C5Goods
@@ -87934,16 +87934,16 @@ _vt.12DefaultGoods::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -87958,13 +87958,13 @@ _vt.12DefaultGoods::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -87976,7 +87976,7 @@ _vt.12DefaultGoods::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -87988,7 +87988,7 @@ _vt.12DefaultGoods::
 	.4byte action_150__5Goods
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -88015,7 +88015,7 @@ _vt.12DefaultGoods::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_1a0__5Goods
+	.4byte fire__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -88090,7 +88090,7 @@ _vt.12DefaultGoods::
 	.4byte successAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
-	.4byte nextAnim__C5Goods
+	.4byte critAnimNo__C5Goods
 	.2byte 0
 	.2byte 0
 	.4byte sfxNo__C5Goods
@@ -93824,13 +93824,13 @@ _vt.4Unit::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__4UnitP6Action
+	.4byte onAction__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -93839,7 +93839,7 @@ _vt.4Unit::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__4UnitP6Action
+	.4byte onActionReceive__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -93860,13 +93860,13 @@ _vt.4Unit::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__4Unit
+	.4byte onTurn__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -93875,13 +93875,13 @@ _vt.4Unit::
 	.4byte unit_f0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__4UnitP6Action
+	.4byte alertActionReceive__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -94464,7 +94464,7 @@ _vt.10UnitTarget::
 	.4byte targettingAlly__10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte attackdata_98__10UnitTarget
+	.4byte targettingMonster__10UnitTarget
 	.2byte 0
 	.2byte 0
 	.4byte attackdata_a0__C10UnitTarget
@@ -94577,7 +94577,7 @@ _vt.16UnitTargetChoice::
 	.4byte targettingAlly__10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte attackdata_98__10UnitTarget
+	.4byte targettingMonster__10UnitTarget
 	.2byte 0
 	.2byte 0
 	.4byte attackdata_a0__C10UnitTarget
@@ -94776,16 +94776,16 @@ _vt.6Action::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -94800,13 +94800,13 @@ _vt.6Action::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -94818,7 +94818,7 @@ _vt.6Action::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -94830,7 +94830,7 @@ _vt.6Action::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -94857,7 +94857,7 @@ _vt.6Action::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_1a0__6Action
+	.4byte fire__6Action
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -95047,13 +95047,13 @@ vt_09F820E8::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__4UnitP6Action
+	.4byte onAction__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807B4B8
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807B4D8
@@ -95062,7 +95062,7 @@ vt_09F820E8::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__4UnitP6Action
+	.4byte onActionReceive__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -95089,7 +95089,7 @@ vt_09F820E8::
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -95098,7 +95098,7 @@ vt_09F820E8::
 	.4byte unit_f0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__4UnitP6Action
+	.4byte alertActionReceive__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__4UnitP6Action
@@ -95981,16 +95981,16 @@ vt_09F82A28::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -96005,13 +96005,13 @@ vt_09F82A28::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -96023,7 +96023,7 @@ vt_09F82A28::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -96035,7 +96035,7 @@ vt_09F82A28::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -96062,7 +96062,7 @@ vt_09F82A28::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_1a0__6Action
+	.4byte fire__6Action
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -96246,16 +96246,16 @@ _vt.10GuestSkill::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -96270,13 +96270,13 @@ _vt.10GuestSkill::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -96288,7 +96288,7 @@ _vt.10GuestSkill::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -96300,7 +96300,7 @@ _vt.10GuestSkill::
 	.4byte action_150__6Action
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -96327,7 +96327,7 @@ _vt.10GuestSkill::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_1a0__6Action
+	.4byte fire__6Action
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -96402,7 +96402,7 @@ _vt.10GuestSkill::
 	.4byte successAnimNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte nextAnim__C10GuestSkill
+	.4byte critAnimNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte sfxNo__C10GuestSkill
@@ -96528,13 +96528,13 @@ _vt.7Monster::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_70__4UnitP6Action
+	.4byte onAction__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_80__4UnitP6Action
+	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_88__4UnitP6Action
@@ -96543,7 +96543,7 @@ _vt.7Monster::
 	.4byte unit_90__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_98__4UnitP6Action
+	.4byte onActionReceive__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_a0__4UnitP6Action
@@ -96564,13 +96564,13 @@ _vt.7Monster::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_d0__7Monster
+	.4byte onTurn__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_e0__4UnitP6Action
+	.4byte alertActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_e8__4UnitP6Action
@@ -96579,13 +96579,13 @@ _vt.7Monster::
 	.4byte unit_f0__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte unit_f8__4UnitP6Action
+	.4byte alertActionReceive__4UnitP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte onDeath__4Unit
+	.4byte onNoStatus__4Unit
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
@@ -96750,7 +96750,7 @@ _vt.7Monster::
 	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte monster_2c0__7Monster
+	.4byte calcAction__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2c8__7MonsterP6Action
@@ -96765,10 +96765,10 @@ _vt.7Monster::
 	.4byte scaledExperience__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2e8__7Monster
+	.4byte calcItemDrop__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte monster_2f0__7Monster
+	.4byte scaledMoney__7Monster
 	.2byte 0
 	.2byte 0
 	.4byte monster_2f8__7Monster
@@ -97065,16 +97065,16 @@ vt_09F83548::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -97089,13 +97089,13 @@ vt_09F83548::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -97107,7 +97107,7 @@ vt_09F83548::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -97119,7 +97119,7 @@ vt_09F83548::
 	.4byte sub_080821A0
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg
@@ -97461,16 +97461,16 @@ vt_09F83958::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte doHit__6ActionP4Unit
+	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_d0__6ActionP4Unit
+	.4byte onAttack__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte action_e0__6ActionP4Unit
+	.4byte onPsiDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -97485,13 +97485,13 @@ vt_09F83958::
 	.4byte onNoEffect__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_108__6ActionP4Unit
+	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte action_118__6ActionP4Unit
+	.4byte onInflictStatus__6ActionP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -97503,7 +97503,7 @@ vt_09F83958::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte action_138__6ActionP4Unitb
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -97515,7 +97515,7 @@ vt_09F83958::
 	.4byte sub_08082D70
 	.2byte 0
 	.2byte 0
-	.4byte createMsg__C6ActionUs
+	.4byte ROMStr__C6ActionUs
 	.2byte 0
 	.2byte 0
 	.4byte action_160__C6ActionUsRC3Msg

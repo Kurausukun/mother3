@@ -1,8 +1,8 @@
 #ifndef BATTLE_GUEST_FACTORY_H
 #define BATTLE_GUEST_FACTORY_H
 
-#include "guest.h"
 #include "factory.h"
+#include "guest.h"
 
 class DefaultGuest : public Guest {
 public:
@@ -56,4 +56,4 @@ FACTORY(Fuel, u16);
 FACTORY(Alec, u16);
 FACTORY(Fassad, u16);
 
-#endif // BATTLE_GUEST_FACTORY_H
+#endif  // BATTLE_GUEST_FACTORY_H

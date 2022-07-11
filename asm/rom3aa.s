@@ -96,7 +96,7 @@ _080A5A56:
 	adds r0, r4, #0
 	bl sub_08072AA4__Fi
 	movs r1, #2
-	bl unitIsPlayer
+	bl IsPlayerAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -112,8 +112,8 @@ _080A5A6E:
 	bne _080A5A8C
 	ldr r0, _080A5A88 @ =0x00000279
 	adds r1, r6, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 	b _080A5A50
 	.align 2, 0
 _080A5A88: .4byte 0x00000279
@@ -169,7 +169,7 @@ sub_080A5AD4: @ 0x080A5AD4
 	movs r1, #0xa0
 	lsls r1, r1, #2
 	adds r0, r4, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -237,7 +237,7 @@ sub_080A5B10: @ 0x080A5B10
 	beq _080A5BA6
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__4UnitP6Action
+	bl onAction__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -273,7 +273,7 @@ _080A5BA8:
 _080A5BB0:
 	adds r0, r5, #0
 	movs r1, #0x90
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -293,14 +293,14 @@ _080A5BD4: .4byte 0x00000277
 _080A5BD8:
 	ldr r1, _080A5C1C @ =0x00000276
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
 	beq _080A5BF8
 	ldr r1, _080A5C20 @ =0x00000277
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -319,8 +319,8 @@ _080A5BF8:
 	subs r0, #1
 _080A5C10:
 	adds r1, r4, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 	b _080A5C7A
 	.align 2, 0
 _080A5C1C: .4byte 0x00000276
@@ -330,14 +330,14 @@ _080A5C28:
 	movs r1, #0xdd
 	lsls r1, r1, #1
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
 	beq _080A5C5C
 	ldr r1, _080A5C84 @ =0x000001BB
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -345,7 +345,7 @@ _080A5C28:
 	movs r1, #0xde
 	lsls r1, r1, #1
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -381,15 +381,15 @@ sub_080A5C88: @ 0x080A5C88
 	adds r5, r1, #0
 	ldr r1, _080A5D3C @ =0x000001BD
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
 	bne _080A5CAA
 	movs r0, #0x90
 	adds r1, r4, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 _080A5CAA:
 	ldr r1, [r4, #0x1c]
 	movs r0, #0x80
@@ -432,7 +432,7 @@ _080A5CAA:
 	beq _080A5D40
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__4UnitP6Action
+	bl onAction__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -470,7 +470,7 @@ _080A5D42:
 _080A5D4A:
 	adds r0, r5, #0
 	movs r1, #0x90
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -485,22 +485,22 @@ _080A5D4A:
 _080A5D6A:
 	adds r0, r1, #0
 	adds r1, r4, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 	b _080A5DBE
 	.align 2, 0
 _080A5D78: .4byte 0x00000277
 _080A5D7C:
 	ldr r1, _080A5DC8 @ =0x00000276
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
 	beq _080A5D9C
 	ldr r1, _080A5DCC @ =0x00000277
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -519,8 +519,8 @@ _080A5D9C:
 	subs r0, #1
 _080A5DB4:
 	adds r1, r4, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 _080A5DBE:
 	movs r0, #1
 _080A5DC0:
@@ -713,7 +713,7 @@ _080A5F2A:
 	adds r0, r1, #0
 _080A5F2C:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -754,7 +754,7 @@ _080A5F78:
 	adds r0, r1, #0
 _080A5F7A:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -809,7 +809,7 @@ _080A5FD2:
 	adds r0, r4, #0
 	bl sub_08072AA4__Fi
 	movs r1, #2
-	bl unitIsPlayer
+	bl IsPlayerAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -825,8 +825,8 @@ _080A5FEA:
 	bne _080A6008
 	ldr r0, _080A6004 @ =0x00000279
 	adds r1, r6, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 	b _080A5FCC
 	.align 2, 0
 _080A6004: .4byte 0x00000279
@@ -885,7 +885,7 @@ _080A6062:
 	ldr r0, _080A6070 @ =0x0000026F
 _080A6064:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -1263,8 +1263,8 @@ sub_080A62FC: @ 0x080A62FC
 _080A633A:
 	adds r0, r1, #0
 	adds r1, r4, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 _080A6346:
 	movs r0, #1
 	pop {r4}
@@ -1311,8 +1311,8 @@ sub_080A6358: @ 0x080A6358
 _080A639C:
 	adds r0, r1, #0
 	adds r1, r4, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 _080A63A8:
 	movs r0, #1
 	pop {r4}
@@ -1359,8 +1359,8 @@ sub_080A63B8: @ 0x080A63B8
 _080A63FC:
 	adds r0, r1, #0
 	adds r1, r4, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 _080A6408:
 	movs r0, #1
 	pop {r4}
@@ -1407,8 +1407,8 @@ sub_080A6418: @ 0x080A6418
 _080A645C:
 	adds r0, r1, #0
 	adds r1, r4, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 _080A6468:
 	movs r0, #1
 	pop {r4}
@@ -1469,7 +1469,7 @@ sub_080A647C: @ 0x080A647C
 	beq _080A6512
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__4UnitP6Action
+	bl onAction__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -1629,7 +1629,7 @@ _080A660C:
 	adds r0, r1, #0
 _080A660E:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4, r5}
 	pop {r1}
 	bx r1
@@ -1708,7 +1708,7 @@ _080A66AA:
 	adds r0, r1, #0
 _080A66AC:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4, r5}
 	pop {r1}
 	bx r1
@@ -1819,7 +1819,7 @@ _080A678A:
 	adds r0, r1, #0
 _080A678C:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4, r5, r6}
 	pop {r1}
 	bx r1
@@ -1937,7 +1937,7 @@ _080A687E:
 	adds r0, r1, #0
 _080A6880:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4, r5, r6, r7}
 	pop {r1}
 	bx r1
@@ -1997,7 +1997,7 @@ _080A68E0:
 	adds r0, r6, #0
 _080A68F8:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4, r5, r6}
 	pop {r1}
 	bx r1
@@ -2119,7 +2119,7 @@ _080A69D8:
 	adds r0, r1, #0
 _080A69DA:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -2155,7 +2155,7 @@ _080A6A1A:
 	adds r0, r1, #0
 _080A6A1C:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -2312,8 +2312,8 @@ sub_080A6B18: @ 0x080A6B18
 	movs r0, #0x84
 	lsls r0, r0, #2
 	adds r1, r4, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 _080A6B42:
 	adds r0, r4, #0
 	bl sub_08080F54__7Monster
@@ -2357,7 +2357,7 @@ sub_080A6B6C: @ 0x080A6B6C
 _080A6B8E:
 	adds r0, r1, #0
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -2376,7 +2376,7 @@ sub_080A6B9C: @ 0x080A6B9C
 _080A6BB0:
 	adds r0, r1, #0
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -2533,8 +2533,8 @@ sub_080A6CB0: @ 0x080A6CB0
 	movs r0, #0x84
 	lsls r0, r0, #2
 	adds r1, r4, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 _080A6CDA:
 	adds r0, r4, #0
 	bl sub_08080F54__7Monster
@@ -2563,7 +2563,7 @@ sub_080A6D04: @ 0x080A6D04
 	sub sp, #0x3c
 	adds r7, r0, #0
 	adds r6, r1, #0
-	bl unit_98__4UnitP6Action
+	bl onActionReceive__4UnitP6Action
 	ldr r1, [r7, #0x1c]
 	movs r0, #0xcc
 	lsls r0, r0, #1
@@ -2645,7 +2645,7 @@ _080A6D64:
 	movs r0, #0x47
 	adds r1, r7, #0
 	adds r2, r7, #0
-	bl playSeq
+	bl PlayAnimation
 	ldr r1, [r6, #0x1c]
 	movs r2, #0xb0
 	lsls r2, r2, #1
@@ -2680,7 +2680,7 @@ _080A6D64:
 	adds r2, r0, #0
 	movs r0, #0x49
 	adds r1, r4, #0
-	bl playSeq
+	bl PlayAnimation
 	ldr r1, [r6, #0x1c]
 	movs r0, #0xb0
 	lsls r0, r0, #1
@@ -2873,7 +2873,7 @@ sub_080A6F4C: @ 0x080A6F4C
 	beq _080A6FE2
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__4UnitP6Action
+	bl onAction__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -2910,7 +2910,7 @@ _080A6FEC:
 	ldr r6, _080A7024 @ =0x0000019F
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -2928,8 +2928,8 @@ _080A6FEC:
 	subs r0, #1
 _080A7016:
 	adds r1, r4, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 	b _080A705A
 	.align 2, 0
 _080A7024: .4byte 0x0000019F
@@ -2938,7 +2938,7 @@ _080A702C:
 	movs r1, #0xd3
 	lsls r1, r1, #1
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -3060,7 +3060,7 @@ sub_080A7114: @ 0x080A7114
 	b _080A71C8
 _080A711C:
 	adds r0, r6, #0
-	bl getPlayer
+	bl GetPlayer
 	adds r4, r0, #0
 	ldr r1, [r4, #0x1c]
 	movs r5, #0xa8
@@ -3157,7 +3157,7 @@ sub_080A71D8: @ 0x080A71D8
 	b _080A7228
 _080A71E0:
 	adds r0, r5, #0
-	bl getPlayer
+	bl GetPlayer
 	adds r4, r0, #0
 	ldr r1, [r4, #0x1c]
 	movs r0, #0xa8
@@ -3208,7 +3208,7 @@ sub_080A7238: @ 0x080A7238
 	b _080A7288
 _080A7240:
 	adds r0, r5, #0
-	bl getPlayer
+	bl GetPlayer
 	adds r4, r0, #0
 	ldr r1, [r4, #0x1c]
 	movs r0, #0xa8
@@ -3376,7 +3376,7 @@ _080A7374: @ jump table
 _080A7390:
 	ldr r0, _080A739C @ =0x000001A5
 	adds r1, r6, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	b _080A7442
 	.align 2, 0
 _080A739C: .4byte 0x000001A5
@@ -3384,36 +3384,36 @@ _080A73A0:
 	movs r0, #0xd4
 	lsls r0, r0, #1
 	adds r1, r6, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	b _080A7442
 _080A73AC:
 	ldr r0, _080A73B8 @ =0x000001A9
 	adds r1, r6, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	b _080A7442
 	.align 2, 0
 _080A73B8: .4byte 0x000001A9
 _080A73BC:
 	movs r0, #0x90
 	adds r1, r6, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	b _080A7442
 _080A73C6:
 	movs r0, #0x90
 	adds r1, r6, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	b _080A7442
 _080A73D0:
 	movs r0, #0xc7
 	lsls r0, r0, #1
 	adds r1, r6, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	b _080A7442
 _080A73DC:
 	movs r0, #0xd2
 	lsls r0, r0, #1
 	adds r1, r6, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	b _080A7442
 _080A73E8:
 	ldr r1, [r6, #0x1c]
@@ -3453,7 +3453,7 @@ _080A73E8:
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	adds r1, r6, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	b _080A7442
 _080A7440:
 	movs r0, #0
@@ -3534,7 +3534,7 @@ _080A74D2:
 	adds r0, r1, #0
 _080A74D4:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -3564,7 +3564,7 @@ sub_080A74E4: @ 0x080A74E4
 _080A750A:
 	adds r0, r1, #0
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -3655,7 +3655,7 @@ _080A756C:
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	adds r1, r6, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	b _080A7602
 _080A75D4:
 	ldr r1, [r6, #0x1c]
@@ -3826,7 +3826,7 @@ sub_080A76B8: @ 0x080A76B8
 	beq _080A774E
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__4UnitP6Action
+	bl onAction__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -3862,7 +3862,7 @@ _080A7750:
 _080A7758:
 	adds r0, r5, #0
 	movs r1, #0xaa
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -3954,7 +3954,7 @@ _080A77EE:
 	movs r0, #0x6d
 _080A7808:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -4021,8 +4021,8 @@ sub_080A7830: @ 0x080A7830
 	movs r0, #0x87
 	lsls r0, r0, #2
 	adds r1, r4, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 _080A789C:
 	pop {r4, r5}
 	pop {r0}
@@ -4038,7 +4038,7 @@ sub_080A78A4: @ 0x080A78A4
 	movs r1, #0x87
 	lsls r1, r1, #2
 	adds r0, r4, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -4060,7 +4060,7 @@ sub_080A78D0: @ 0x080A78D0
 	b _080A791C
 _080A78D6:
 	adds r0, r4, #0
-	bl sub_08072EC4
+	bl GetMonster
 	ldr r2, [r0, #0x1c]
 	movs r1, #0xd2
 	lsls r1, r1, #2
@@ -4073,7 +4073,7 @@ _080A78D6:
 	cmp r0, #4
 	beq _080A7912
 	adds r0, r4, #0
-	bl sub_08072EC4
+	bl GetMonster
 	ldr r2, [r0, #0x1c]
 	movs r1, #0xd2
 	lsls r1, r1, #2
@@ -4087,12 +4087,12 @@ _080A78D6:
 	bne _080A791A
 _080A7912:
 	adds r0, r4, #0
-	bl sub_08072EC4
+	bl GetMonster
 	b _080A7926
 _080A791A:
 	adds r4, #1
 _080A791C:
-	bl sub_08072EA8
+	bl GetMonsterCount
 	cmp r4, r0
 	blt _080A78D6
 	movs r0, #0
@@ -4108,7 +4108,7 @@ sub_080A792C: @ 0x080A792C
 	adds r5, r1, #0
 	ldr r1, _080A7978 @ =0x0000019D
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -4163,7 +4163,7 @@ sub_080A798C: @ 0x080A798C
 _080A79A0:
 	adds r0, r1, #0
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -4182,8 +4182,8 @@ sub_080A79B4: @ 0x080A79B4
 	bne _080A79D0
 	ldr r0, _080A79DC @ =0x00000129
 	adds r1, r4, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 _080A79D0:
 	adds r0, r4, #0
 	bl sub_08080F54__7Monster
@@ -4253,7 +4253,7 @@ sub_080A79FC: @ 0x080A79FC
 	beq _080A7A92
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__4UnitP6Action
+	bl onAction__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -4289,7 +4289,7 @@ _080A7A94:
 _080A7A9C:
 	ldr r1, _080A7AC0 @ =0x00000243
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -4347,7 +4347,7 @@ _080A7B06:
 	adds r0, r1, #0
 _080A7B08:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -4412,7 +4412,7 @@ sub_080A7B30: @ 0x080A7B30
 	beq _080A7BC6
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__4UnitP6Action
+	bl onAction__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -4448,7 +4448,7 @@ _080A7BC8:
 _080A7BD0:
 	adds r0, r5, #0
 	movs r1, #0x50
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -4590,7 +4590,7 @@ _080A7CE8:
 	adds r0, r1, #0
 _080A7CEA:
 	adds r1, r5, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4, r5}
 	pop {r1}
 	bx r1
@@ -4797,8 +4797,8 @@ _080A7E30:
 	bne _080A7EEA
 	ldr r0, _080A7EF4 @ =0x00000237
 	adds r1, r5, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 	movs r0, #0x78
 	bl setsleep
 	add r6, sp, #0x10
@@ -4891,7 +4891,7 @@ sub_080A7EFC: @ 0x080A7EFC
 	beq _080A7F92
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__4UnitP6Action
+	bl onAction__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -4928,7 +4928,7 @@ _080A7F9C:
 	ldr r6, _080A7FD0 @ =0x00000243
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -4954,7 +4954,7 @@ _080A7FD4:
 	movs r1, #0xfa
 	lsls r1, r1, #1
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -5001,8 +5001,8 @@ _080A8020:
 	ldr r0, _080A8048 @ =0x00000242
 _080A8038:
 	adds r1, r4, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 	b _080A80A0
 	.align 2, 0
 _080A8044: .4byte 0x000001ED
@@ -5010,14 +5010,14 @@ _080A8048: .4byte 0x00000242
 _080A804C:
 	ldr r1, _080A80A8 @ =0x000001ED
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
 	beq _080A806C
 	ldr r1, _080A80AC @ =0x00000242
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -5044,8 +5044,8 @@ _080A806C:
 _080A8094:
 	adds r0, r1, #0
 	adds r1, r4, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 _080A80A0:
 	movs r0, #1
 _080A80A2:
@@ -5214,7 +5214,7 @@ _080A81F8:
 	ldr r0, _080A8208 @ =0x000001F5
 _080A81FA:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4, r5}
 	pop {r1}
 	bx r1
@@ -5348,7 +5348,7 @@ _080A82F0:
 	movs r0, #0xac
 _080A830A:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4, r5, r6}
 	pop {r1}
 	bx r1
@@ -5450,7 +5450,7 @@ _080A83D4:
 	adds r0, r1, #0
 _080A83D6:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4, r5}
 	pop {r1}
 	bx r1
@@ -5547,7 +5547,7 @@ _080A844A:
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	adds r1, r6, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	b _080A84A4
 _080A84A2:
 	movs r0, #0
@@ -5617,7 +5617,7 @@ sub_080A84C8: @ 0x080A84C8
 	beq _080A855E
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__4UnitP6Action
+	bl onAction__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -5655,7 +5655,7 @@ _080A8568:
 	lsls r6, r6, #1
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -5663,7 +5663,7 @@ _080A8568:
 	ldr r7, _080A85A8 @ =0x00000193
 	adds r0, r5, #0
 	adds r1, r7, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -5686,7 +5686,7 @@ _080A85A8: .4byte 0x00000193
 _080A85AC:
 	adds r0, r5, #0
 	movs r1, #0x90
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -5719,15 +5719,15 @@ _080A85EC:
 	ldr r0, _080A85FC @ =0x00000193
 _080A85EE:
 	adds r1, r4, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 	b _080A8650
 	.align 2, 0
 _080A85FC: .4byte 0x00000193
 _080A8600:
 	ldr r1, _080A8658 @ =0x00000197
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -5735,14 +5735,14 @@ _080A8600:
 	movs r1, #0xcc
 	lsls r1, r1, #1
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
 	beq _080A8632
 	ldr r1, _080A865C @ =0x00000195
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -5780,7 +5780,7 @@ sub_080A8660: @ 0x080A8660
 	b _080A86E0
 _080A8668:
 	adds r0, r6, #0
-	bl getPlayer
+	bl GetPlayer
 	adds r4, r0, #0
 	ldr r1, [r4, #0x1c]
 	movs r5, #0xa8
@@ -5970,7 +5970,7 @@ _080A87E8:
 	adds r0, r1, #0
 _080A87EA:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -6073,7 +6073,7 @@ sub_080A8854: @ 0x080A8854
 	beq _080A88EA
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__4UnitP6Action
+	bl onAction__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -6110,7 +6110,7 @@ _080A88F4:
 	movs r1, #0xff
 	lsls r1, r1, #1
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -6128,7 +6128,7 @@ _080A88F4:
 _080A891A:
 	ldr r1, _080A8940 @ =0x000001FF
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -6149,7 +6149,7 @@ _080A8944:
 	movs r1, #0x80
 	lsls r1, r1, #2
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -6167,7 +6167,7 @@ _080A8944:
 _080A896A:
 	ldr r1, _080A8994 @ =0x00000201
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -6191,7 +6191,7 @@ _080A8998:
 	movs r1, #0x85
 	lsls r1, r1, #1
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -6270,7 +6270,7 @@ _080A8A30:
 	ldr r0, _080A8A40 @ =0x00000205
 _080A8A32:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -6335,7 +6335,7 @@ _080A8AAC:
 	lsls r0, r0, #2
 _080A8AB0:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -6397,7 +6397,7 @@ _080A8B24:
 	ldr r0, _080A8B34 @ =0x00000203
 _080A8B26:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -6461,7 +6461,7 @@ _080A8BA0:
 	ldr r0, _080A8BB0 @ =0x00000202
 _080A8BA2:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -6495,7 +6495,7 @@ sub_080A8BB4: @ 0x080A8BB4
 _080A8BE2:
 	adds r0, r1, #0
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -6618,7 +6618,7 @@ _080A8C96:
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	adds r1, r6, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	b _080A8CF0
 _080A8CEE:
 	movs r0, #0
@@ -6682,7 +6682,7 @@ _080A8D44:
 _080A8D60:
 	adds r0, r1, #0
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -6696,8 +6696,8 @@ sub_080A8D78: @ 0x080A8D78
 	adds r4, r0, #0
 	movs r0, #0x76
 	adds r1, r4, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 	adds r0, r4, #0
 	bl sub_08080F54__7Monster
 	pop {r4}
@@ -7037,7 +7037,7 @@ sub_080A900C: @ 0x080A900C
 	sub sp, #0x3c
 	adds r6, r0, #0
 	adds r7, r1, #0
-	bl unit_98__4UnitP6Action
+	bl onActionReceive__4UnitP6Action
 	ldr r1, [r6, #0x1c]
 	movs r0, #0xcc
 	lsls r0, r0, #1
@@ -7119,7 +7119,7 @@ _080A906C:
 	movs r0, #0x47
 	adds r1, r6, #0
 	adds r2, r6, #0
-	bl playSeq
+	bl PlayAnimation
 	ldr r1, [r7, #0x1c]
 	movs r2, #0xb0
 	lsls r2, r2, #1
@@ -7154,7 +7154,7 @@ _080A906C:
 	adds r2, r0, #0
 	movs r0, #0x49
 	adds r1, r4, #0
-	bl playSeq
+	bl PlayAnimation
 	ldr r1, [r7, #0x1c]
 	movs r0, #0xb0
 	lsls r0, r0, #1
@@ -7272,8 +7272,8 @@ _080A9194:
 	movs r0, #0xc4
 	lsls r0, r0, #1
 	adds r1, r6, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 _080A9226:
 	add sp, #0x3c
 	pop {r4, r5, r6, r7}
@@ -7291,7 +7291,7 @@ sub_080A9234: @ 0x080A9234
 	bl unit_88__4UnitP6Action
 	ldr r1, _080A9264 @ =0x000001FB
 	adds r0, r4, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -7312,7 +7312,7 @@ _080A9268:
 	movs r1, #0xfe
 	lsls r1, r1, #1
 	adds r0, r4, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -7330,7 +7330,7 @@ _080A9268:
 _080A928E:
 	ldr r1, _080A92B8 @ =0x000001FD
 	adds r0, r4, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -7353,7 +7353,7 @@ _080A92B8: .4byte 0x000001FD
 _080A92BC:
 	ldr r1, _080A9358 @ =0x0000018B
 	adds r0, r4, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -7486,7 +7486,7 @@ _080A93DC:
 	lsls r0, r0, #1
 _080A93E0:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4, r5}
 	pop {r1}
 	bx r1
@@ -7635,7 +7635,7 @@ _080A94EC:
 	ldr r0, _080A9514 @ =0x000001F9
 _080A9506:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -7659,7 +7659,7 @@ sub_080A9518: @ 0x080A9518
 	subs r0, #1
 _080A9534:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -7782,7 +7782,7 @@ _080A95E6:
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	adds r1, r6, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	b _080A9640
 _080A963E:
 	movs r0, #0
@@ -7829,8 +7829,8 @@ sub_080A9648: @ 0x080A9648
 	bl _call_via_r3
 	ldr r0, _080A96B8 @ =0x00000189
 	adds r1, r4, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 _080A969A:
 	ldr r1, [r4, #0x1c]
 	movs r0, #0x8d
@@ -7898,7 +7898,7 @@ _080A9718:
 	adds r0, r1, #0
 _080A971A:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -7975,7 +7975,7 @@ _080A97B8:
 	adds r0, r1, #0
 _080A97BA:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -8062,7 +8062,7 @@ sub_080A9850: @ 0x080A9850
 _080A9864:
 	adds r0, r1, #0
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -8117,7 +8117,7 @@ _080A98C0:
 _080A98D0:
 	adds r0, r1, #0
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -8207,7 +8207,7 @@ sub_080A9964: @ 0x080A9964
 	movs r0, #0x1e
 _080A9982:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -8270,7 +8270,7 @@ _080A99E4:
 	movs r0, #0x1e
 _080A99FE:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -8405,7 +8405,7 @@ _080A9B06:
 	adds r0, r1, #0
 _080A9B08:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -8550,7 +8550,7 @@ _080A9C26:
 	adds r0, r1, #0
 _080A9C28:
 	adds r1, r5, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4, r5}
 	pop {r1}
 	bx r1
@@ -8615,7 +8615,7 @@ sub_080A9C50: @ 0x080A9C50
 	beq _080A9CE6
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__4UnitP6Action
+	bl onAction__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -8652,29 +8652,29 @@ _080A9CF0:
 	ldr r6, _080A9D10 @ =0x00000213
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
 	bne _080A9D14
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 	b _080A9D52
 	.align 2, 0
 _080A9D10: .4byte 0x00000213
 _080A9D14:
 	ldr r1, _080A9D5C @ =0x00000216
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
 	beq _080A9D34
 	ldr r1, _080A9D60 @ =0x00000217
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -8691,8 +8691,8 @@ _080A9D34:
 _080A9D46:
 	adds r0, r1, #0
 	adds r1, r4, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 _080A9D52:
 	movs r0, #1
 _080A9D54:
@@ -8723,7 +8723,7 @@ sub_080A9D64: @ 0x080A9D64
 _080A9D84:
 	adds r0, r1, #0
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -8736,8 +8736,8 @@ sub_080A9D98: @ 0x080A9D98
 	adds r4, r0, #0
 	ldr r0, _080A9DCC @ =0x00000215
 	adds r1, r4, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 	adds r0, r4, #0
 	bl sub_08080F54__7Monster
 	bl get__13BattleManager
@@ -8787,7 +8787,7 @@ sub_080A9DEC: @ 0x080A9DEC
 	subs r0, #7
 _080A9E08:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -8801,8 +8801,8 @@ sub_080A9E18: @ 0x080A9E18
 	movs r0, #0x8a
 	lsls r0, r0, #1
 	adds r1, r4, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 	adds r0, r4, #0
 	bl sub_08080F54__7Monster
 	pop {r4}
@@ -8878,7 +8878,7 @@ _080A9EA8:
 	movs r0, #0x89
 _080A9EC0:
 	adds r1, r5, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4, r5}
 	pop {r1}
 	bx r1
@@ -8986,7 +8986,7 @@ sub_080A9F3C: @ 0x080A9F3C
 	beq _080A9FD2
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__4UnitP6Action
+	bl onAction__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -9023,7 +9023,7 @@ _080A9FDC:
 	movs r1, #0xfa
 	lsls r1, r1, #1
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -9041,15 +9041,15 @@ _080A9FDC:
 	adds r0, #0x24
 _080AA006:
 	adds r1, r4, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 	b _080AA06E
 	.align 2, 0
 _080AA014: .4byte 0x000001ED
 _080AA018:
 	ldr r1, _080AA078 @ =0x000001ED
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -9057,7 +9057,7 @@ _080AA018:
 	movs r1, #0xf7
 	lsls r1, r1, #1
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -9084,8 +9084,8 @@ _080AA03A:
 _080AA062:
 	adds r0, r1, #0
 	adds r1, r4, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 _080AA06E:
 	movs r0, #1
 _080AA070:
@@ -9170,7 +9170,7 @@ _080AA10A:
 	adds r0, r1, #0
 _080AA10C:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4, r5}
 	pop {r1}
 	bx r1
@@ -9235,7 +9235,7 @@ _080AA18A:
 	adds r0, r1, #0
 _080AA18C:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4, r5}
 	pop {r1}
 	bx r1
@@ -9282,7 +9282,7 @@ _080AA1CE:
 	adds r0, #0x24
 _080AA1E6:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4, r5}
 	pop {r1}
 	bx r1
@@ -9392,7 +9392,7 @@ _080AA274:
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	adds r1, r6, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	b _080AA2CE
 _080AA2CC:
 	movs r0, #0
@@ -9616,7 +9616,7 @@ _080AA472:
 	ldr r0, _080AA484 @ =0x00000165
 _080AA474:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -9673,7 +9673,7 @@ _080AA4E2:
 	adds r0, r1, #0
 _080AA4E4:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -9771,7 +9771,7 @@ _080AA5AA:
 	adds r0, r1, #0
 _080AA5AC:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -9835,7 +9835,7 @@ sub_080AA618: @ 0x080AA618
 	sub sp, #0x3c
 	adds r6, r0, #0
 	adds r7, r1, #0
-	bl unit_98__4UnitP6Action
+	bl onActionReceive__4UnitP6Action
 	ldr r1, [r6, #0x1c]
 	movs r0, #0xcc
 	lsls r0, r0, #1
@@ -9917,7 +9917,7 @@ _080AA678:
 	movs r0, #0x47
 	adds r1, r6, #0
 	adds r2, r6, #0
-	bl playSeq
+	bl PlayAnimation
 	ldr r1, [r7, #0x1c]
 	movs r2, #0xb0
 	lsls r2, r2, #1
@@ -9952,7 +9952,7 @@ _080AA678:
 	adds r2, r0, #0
 	movs r0, #0x49
 	adds r1, r4, #0
-	bl playSeq
+	bl PlayAnimation
 	ldr r1, [r7, #0x1c]
 	movs r0, #0xb0
 	lsls r0, r0, #1
@@ -10052,8 +10052,8 @@ _080AA7A0:
 	bne _080AA80C
 	movs r0, #0x43
 	adds r1, r6, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 _080AA80C:
 	add sp, #0x3c
 	pop {r4, r5, r6, r7}
@@ -10067,7 +10067,7 @@ sub_080AA818: @ 0x080AA818
 	push {lr}
 	adds r1, r0, #0
 	ldr r0, _080AA828 @ =0x000001EB
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -10152,7 +10152,7 @@ _080AA8C6:
 	adds r0, r1, #0
 _080AA8C8:
 	adds r1, r5, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4, r5}
 	pop {r1}
 	bx r1
@@ -10206,7 +10206,7 @@ sub_080AA8D4: @ 0x080AA8D4
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	adds r1, r6, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	b _080AA96E
 _080AA940:
 	ldr r1, [r6, #0x1c]
@@ -10285,7 +10285,7 @@ _080AA9B8:
 	ldr r0, _080AA9DC @ =0x000001D5
 _080AA9D0:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -10337,7 +10337,7 @@ _080AAA32:
 	adds r0, r1, #0
 _080AAA34:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -10414,7 +10414,7 @@ _080AAAC8:
 _080AAACA:
 	adds r0, r1, #0
 	adds r1, r5, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4, r5}
 	pop {r1}
 	bx r1
@@ -10477,7 +10477,7 @@ sub_080AAB38: @ 0x080AAB38
 	adds r5, r1, #0
 	ldr r1, _080AAB84 @ =0x000001CD
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -10626,7 +10626,7 @@ _080AAC6C:
 	adds r0, r1, #0
 _080AAC6E:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -10693,7 +10693,7 @@ sub_080AAC9C: @ 0x080AAC9C
 	beq _080AAD32
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__4UnitP6Action
+	bl onAction__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -10729,7 +10729,7 @@ _080AAD34:
 _080AAD3C:
 	adds r0, r5, #0
 	movs r1, #0x91
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -10740,8 +10740,8 @@ _080AAD50:
 	movs r0, #0x8c
 	lsls r0, r0, #1
 	adds r1, r4, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 _080AAD5E:
 	pop {r4, r5}
 	pop {r1}
@@ -10767,7 +10767,7 @@ sub_080AAD64: @ 0x080AAD64
 _080AAD84:
 	adds r0, r1, #0
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -10955,7 +10955,7 @@ sub_080AAE94: @ 0x080AAE94
 	beq _080AAF2A
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__4UnitP6Action
+	bl onAction__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -10992,7 +10992,7 @@ _080AAF34:
 	movs r1, #0xb8
 	lsls r1, r1, #1
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -11013,7 +11013,7 @@ _080AAF60:
 	movs r1, #0xb9
 	lsls r1, r1, #1
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -11042,7 +11042,7 @@ sub_080AAF94: @ 0x080AAF94
 	push {lr}
 	adds r1, r0, #0
 	movs r0, #0xfc
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -11069,7 +11069,7 @@ _080AAFC6:
 	ldr r0, _080AAFD4 @ =0x00000171
 _080AAFC8:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -11122,7 +11122,7 @@ _080AB02A:
 	ldr r0, _080AB038 @ =0x0000021F
 _080AB02C:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -11219,7 +11219,7 @@ _080AB09E:
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	adds r1, r6, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	b _080AB0F8
 _080AB0F6:
 	movs r0, #0
@@ -11261,8 +11261,8 @@ sub_080AB100: @ 0x080AB100
 	bne _080AB15E
 	ldr r0, _080AB164 @ =0x0000021E
 	adds r1, r4, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 	ldr r1, [r4, #0x1c]
 	movs r0, #0xc0
 	lsls r0, r0, #2
@@ -11312,7 +11312,7 @@ sub_080AB184: @ 0x080AB184
 	subs r0, #1
 _080AB1A2:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -11338,7 +11338,7 @@ sub_080AB1B0: @ 0x080AB1B0
 _080AB1D0:
 	adds r0, r1, #0
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -11394,7 +11394,7 @@ sub_080AB1E4: @ 0x080AB1E4
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	adds r1, r6, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	b _080AB27E
 _080AB250:
 	ldr r1, [r6, #0x1c]
@@ -11506,8 +11506,8 @@ sub_080AB2C4: @ 0x080AB2C4
 	movs r0, #0xb5
 	lsls r0, r0, #1
 	adds r1, r5, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 _080AB326:
 	pop {r4, r5}
 	pop {r0}
@@ -11572,7 +11572,7 @@ _080AB39A:
 	movs r0, #0x59
 _080AB39C:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -11628,7 +11628,7 @@ _080AB3F2:
 	movs r0, #0xca
 _080AB40A:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -11692,7 +11692,7 @@ sub_080AB478: @ 0x080AB478
 	sub sp, #0x3c
 	adds r7, r0, #0
 	adds r6, r1, #0
-	bl unit_98__4UnitP6Action
+	bl onActionReceive__4UnitP6Action
 	ldr r1, [r7, #0x1c]
 	movs r0, #0xcc
 	lsls r0, r0, #1
@@ -11774,7 +11774,7 @@ _080AB4D8:
 	movs r0, #0x47
 	adds r1, r7, #0
 	adds r2, r7, #0
-	bl playSeq
+	bl PlayAnimation
 	ldr r1, [r6, #0x1c]
 	movs r2, #0xb0
 	lsls r2, r2, #1
@@ -11809,7 +11809,7 @@ _080AB4D8:
 	adds r2, r0, #0
 	movs r0, #0x49
 	adds r1, r4, #0
-	bl playSeq
+	bl PlayAnimation
 	ldr r1, [r6, #0x1c]
 	movs r0, #0xb0
 	lsls r0, r0, #1
@@ -11876,7 +11876,7 @@ _080AB600:
 	movs r1, #0x91
 	lsls r1, r1, #1
 	adds r0, r6, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -11905,7 +11905,7 @@ sub_080AB650: @ 0x080AB650
 	push {lr}
 	adds r1, r0, #0
 	movs r0, #0xfc
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -11951,7 +11951,7 @@ _080AB694:
 	movs r0, #0x2c
 _080AB6AC:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -12005,7 +12005,7 @@ sub_080AB6B8: @ 0x080AB6B8
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	adds r1, r6, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	b _080AB752
 _080AB724:
 	ldr r1, [r6, #0x1c]
@@ -12068,8 +12068,8 @@ sub_080AB758: @ 0x080AB758
 	bne _080AB7A0
 	movs r0, #0xfb
 	adds r1, r4, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 _080AB7A0:
 	pop {r4}
 	pop {r0}
@@ -12187,7 +12187,7 @@ sub_080AB824: @ 0x080AB824
 	beq _080AB8BA
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__4UnitP6Action
+	bl onAction__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -12224,7 +12224,7 @@ _080AB8C4:
 	movs r1, #0xbc
 	lsls r1, r1, #1
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -12246,7 +12246,7 @@ _080AB8C4:
 _080AB8F4:
 	adds r0, r5, #0
 	movs r1, #0xae
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -12260,7 +12260,7 @@ _080AB8F4:
 	adds r0, r4, r0
 	ldr r1, [r1, #4]
 	bl _call_via_r1
-	bl sub_08074234
+	bl triggerMonsterSkill
 _080AB91C:
 	movs r0, #1
 _080AB91E:
@@ -12315,7 +12315,7 @@ _080AB964:
 	subs r0, #1
 _080AB97E:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -12343,7 +12343,7 @@ sub_080AB98C: @ 0x080AB98C
 	bne _080AB9BC
 	movs r0, #0xae
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	b _080ABA14
 _080AB9BC:
 	ldr r1, [r4, #0x1c]
@@ -12373,7 +12373,7 @@ _080AB9BC:
 	subs r0, #1
 _080AB9F4:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	b _080ABA14
 	.align 2, 0
 _080AB9FC: .4byte 0x00000179
@@ -12455,8 +12455,8 @@ sub_080ABA38: @ 0x080ABA38
 	movs r0, #0x87
 	lsls r0, r0, #2
 	adds r1, r4, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 _080ABAA4:
 	pop {r4, r5}
 	pop {r0}
@@ -12472,7 +12472,7 @@ sub_080ABAAC: @ 0x080ABAAC
 	movs r1, #0x87
 	lsls r1, r1, #2
 	adds r0, r4, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -12501,7 +12501,7 @@ sub_080ABAD8: @ 0x080ABAD8
 _080ABAEC:
 	adds r0, r1, #0
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -12519,8 +12519,8 @@ sub_080ABAFC: @ 0x080ABAFC
 	bne _080ABB18
 	movs r0, #0x77
 	adds r1, r4, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 _080ABB18:
 	adds r0, r4, #0
 	bl sub_08080F54__7Monster
@@ -12586,7 +12586,7 @@ _080ABB78:
 	movs r0, #0x2b
 _080ABB92:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -12690,7 +12690,7 @@ sub_080ABC00: @ 0x080ABC00
 	beq _080ABC96
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__4UnitP6Action
+	bl onAction__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -12726,7 +12726,7 @@ _080ABC98:
 _080ABCA0:
 	ldr r1, _080ABCD0 @ =0x000001E7
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -12788,7 +12788,7 @@ _080ABCFE:
 	ldr r0, _080ABD24 @ =0x000001E5
 _080ABD18:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4, r5}
 	pop {r1}
 	bx r1
@@ -12800,7 +12800,7 @@ sub_080ABD28: @ 0x080ABD28
 	push {lr}
 	adds r1, r0, #0
 	ldr r0, _080ABD38 @ =0x000001E7
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -12861,7 +12861,7 @@ _080ABD84:
 _080ABDA6:
 	adds r0, r1, #0
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4, r5}
 	pop {r1}
 	bx r1
@@ -13145,7 +13145,7 @@ sub_080ABF7C: @ 0x080ABF7C
 	beq _080AC012
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__4UnitP6Action
+	bl onAction__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -13181,7 +13181,7 @@ _080AC014:
 _080AC01C:
 	ldr r1, _080AC040 @ =0x000001DF
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -13377,7 +13377,7 @@ _080AC1A2:
 	adds r0, r1, #0
 _080AC1A4:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4, r5}
 	pop {r1}
 	bx r1
@@ -13427,7 +13427,7 @@ _080AC200:
 	movs r0, #0xc0
 _080AC202:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -13503,7 +13503,7 @@ _080AC28C:
 	b _080AC29A
 _080AC290:
 	adds r0, r4, #0
-	bl monster_2e8__7Monster
+	bl calcItemDrop__7Monster
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 _080AC29A:
@@ -13551,7 +13551,7 @@ _080AC2D0:
 	subs r0, #1
 _080AC2EA:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -13599,8 +13599,8 @@ sub_080AC2FC: @ 0x080AC2FC
 	bge _080AC358
 	movs r0, #1
 	adds r1, r5, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 _080AC358:
 	pop {r4, r5}
 	pop {r0}
@@ -13690,7 +13690,7 @@ _080AC3DE:
 	adds r0, #3
 _080AC3F6:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -13716,7 +13716,7 @@ _080AC424:
 	ble _080AC438
 	ldr r0, _080AC434 @ =0x0000015D
 	adds r1, r6, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	b _080AC4A2
 	.align 2, 0
 _080AC434: .4byte 0x0000015D
@@ -13726,7 +13726,7 @@ _080AC438:
 	movs r0, #0xaf
 	lsls r0, r0, #1
 	adds r1, r6, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	b _080AC4A2
 _080AC448:
 	ldr r1, [r6, #0x1c]
@@ -13766,7 +13766,7 @@ _080AC448:
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	adds r1, r6, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	b _080AC4A2
 _080AC4A0:
 	movs r0, #0
@@ -13824,7 +13824,7 @@ sub_080AC4A8: @ 0x080AC4A8
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	adds r1, r6, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	b _080AC542
 _080AC514:
 	ldr r1, [r6, #0x1c]
@@ -13939,7 +13939,7 @@ sub_080AC590: @ 0x080AC590
 	beq _080AC626
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__4UnitP6Action
+	bl onAction__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -13975,7 +13975,7 @@ _080AC628:
 _080AC630:
 	ldr r1, _080AC674 @ =0x0000011D
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -13990,7 +13990,7 @@ _080AC64C:
 	movs r1, #0x8f
 	lsls r1, r1, #1
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -14063,7 +14063,7 @@ _080AC6D6:
 	adds r0, r1, #0
 _080AC6D8:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 _080AC6DE:
 	pop {r4}
 	pop {r1}
@@ -14106,7 +14106,7 @@ _080AC716:
 _080AC726:
 	adds r0, r1, #0
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 _080AC72E:
 	pop {r4}
 	pop {r1}
@@ -14141,8 +14141,8 @@ sub_080AC750: @ 0x080AC750
 	bgt _080AC79A
 	movs r0, #0xb7
 	adds r1, r4, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 	b _080AC79A
 _080AC77A:
 	bl sub_08072DFC__Fv
@@ -14155,8 +14155,8 @@ _080AC77A:
 	bgt _080AC79A
 	movs r0, #0xb7
 	adds r1, r4, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 _080AC79A:
 	pop {r4}
 	pop {r0}
@@ -14179,7 +14179,7 @@ sub_080AC7A0: @ 0x080AC7A0
 	movs r0, #0x8c
 _080AC7BC:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -14202,7 +14202,7 @@ _080AC7E0: .4byte _vt.14DefaultMonster
 sub_080AC7E4: @ 0x080AC7E4
 	push {r4, lr}
 	adds r4, r0, #0
-	bl sub_08072EA8
+	bl GetMonsterCount
 	cmp r0, #2
 	bgt _080AC810
 	movs r0, #0
@@ -14235,7 +14235,7 @@ _080AC810:
 	movs r0, #0x35
 _080AC828:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -14311,7 +14311,7 @@ _080AC8BA:
 _080AC8BC:
 	adds r0, r1, #0
 	adds r1, r5, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4, r5}
 	pop {r1}
 	bx r1
@@ -14372,7 +14372,7 @@ _080AC920:
 sub_080AC928: @ 0x080AC928
 	push {r4, lr}
 	adds r4, r0, #0
-	bl sub_08072EA8
+	bl GetMonsterCount
 	cmp r0, #1
 	bgt _080AC94C
 	ldr r1, [r4, #0x1c]
@@ -14429,7 +14429,7 @@ _080AC994:
 	adds r0, r1, #0
 _080AC996:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -14453,7 +14453,7 @@ sub_080AC9A8: @ 0x080AC9A8
 	adds r0, #0x8e
 _080AC9C4:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -14509,7 +14509,7 @@ sub_080AC9D4: @ 0x080AC9D4
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	adds r1, r6, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	b _080ACA6E
 _080ACA40:
 	ldr r1, [r6, #0x1c]
@@ -14581,7 +14581,7 @@ _080ACAB0:
 _080ACAC0:
 	adds r0, r1, #0
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -14645,8 +14645,8 @@ sub_080ACAEC: @ 0x080ACAEC
 	movs r0, #0xab
 	lsls r0, r0, #1
 	adds r1, r4, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 _080ACB4E:
 	pop {r4}
 	pop {r0}
@@ -14713,7 +14713,7 @@ _080ACBC4:
 	adds r0, r1, #0
 _080ACBC6:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -14740,7 +14740,7 @@ sub_080ACBD4: @ 0x080ACBD4
 _080ACBF6:
 	adds r0, r1, #0
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -14794,7 +14794,7 @@ sub_080ACC04: @ 0x080ACC04
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	adds r1, r6, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	b _080ACC9E
 _080ACC70:
 	ldr r1, [r6, #0x1c]
@@ -14908,7 +14908,7 @@ sub_080ACD00: @ 0x080ACD00
 	adds r0, r4, r0
 	ldr r1, [r1, #4]
 	bl _call_via_r1
-	bl sub_08072938
+	bl IsPlayer
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -14931,8 +14931,8 @@ sub_080ACD00: @ 0x080ACD00
 	bgt _080ACD7E
 	movs r0, #0xa7
 	adds r1, r5, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 _080ACD7E:
 	pop {r4, r5}
 	pop {r0}
@@ -14984,7 +14984,7 @@ sub_080ACD84: @ 0x080ACD84
 	beq _080ACE1A
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__4UnitP6Action
+	bl onAction__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -15020,7 +15020,7 @@ _080ACE1C:
 _080ACE24:
 	adds r0, r5, #0
 	movs r1, #0x85
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -15034,7 +15034,7 @@ _080ACE24:
 _080ACE40:
 	adds r0, r5, #0
 	movs r1, #0xa7
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -15142,7 +15142,7 @@ _080ACF12:
 	adds r0, r1, #0
 _080ACF14:
 	adds r1, r5, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4, r5}
 	pop {r1}
 	bx r1
@@ -15207,7 +15207,7 @@ sub_080ACF3C: @ 0x080ACF3C
 	beq _080ACFD2
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__4UnitP6Action
+	bl onAction__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -15243,7 +15243,7 @@ _080ACFD4:
 _080ACFDC:
 	ldr r1, _080AD000 @ =0x00000103
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -15316,7 +15316,7 @@ _080AD050:
 	movs r0, #0x3f
 _080AD068:
 	adds r1, r5, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4, r5}
 	pop {r1}
 	bx r1
@@ -15342,7 +15342,7 @@ sub_080AD090: @ 0x080AD090
 	adds r7, r1, #0
 	adds r0, r7, #0
 	movs r1, #0x3b
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -15463,7 +15463,7 @@ _080AD170:
 	movs r0, #0x1d
 _080AD188:
 	adds r1, r6, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r3}
 	mov r8, r3
 	pop {r4, r5, r6, r7}
@@ -15499,8 +15499,8 @@ sub_080AD1B4: @ 0x080AD1B4
 	bgt _080AD1DE
 	movs r0, #0x45
 	adds r1, r4, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 	b _080AD1FE
 _080AD1DE:
 	bl sub_08072DFC__Fv
@@ -15513,8 +15513,8 @@ _080AD1DE:
 	bgt _080AD1FE
 	movs r0, #0x45
 	adds r1, r4, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 _080AD1FE:
 	pop {r4}
 	pop {r0}
@@ -15566,7 +15566,7 @@ sub_080AD204: @ 0x080AD204
 	beq _080AD29A
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__4UnitP6Action
+	bl onAction__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -15602,7 +15602,7 @@ _080AD29C:
 _080AD2A4:
 	adds r0, r5, #0
 	movs r1, #0x81
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -15647,7 +15647,7 @@ _080AD2F4:
 	movs r0, #0x67
 _080AD2F6:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -15698,7 +15698,7 @@ _080AD354:
 	movs r0, #0xbe
 _080AD356:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -15823,7 +15823,7 @@ sub_080AD3E4: @ 0x080AD3E4
 	beq _080AD47A
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__4UnitP6Action
+	bl onAction__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -15859,7 +15859,7 @@ _080AD47C:
 _080AD484:
 	ldr r1, _080AD4B0 @ =0x00000141
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -15882,7 +15882,7 @@ _080AD4B4:
 	movs r1, #0xa2
 	lsls r1, r1, #1
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -15926,7 +15926,7 @@ sub_080AD4E8: @ 0x080AD4E8
 _080AD508:
 	adds r0, r1, #0
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -15969,7 +15969,7 @@ _080AD55A:
 	adds r0, r1, #0
 _080AD55C:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4, r5}
 	pop {r1}
 	bx r1
@@ -16018,7 +16018,7 @@ _080AD5BC:
 	ldr r0, _080AD5CC @ =0x00000141
 _080AD5BE:
 	adds r1, r5, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4, r5}
 	pop {r1}
 	bx r1
@@ -16115,7 +16115,7 @@ _080AD632:
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	adds r1, r6, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	b _080AD68C
 _080AD68A:
 	movs r0, #0
@@ -16222,7 +16222,7 @@ sub_080AD6F0: @ 0x080AD6F0
 	beq _080AD786
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__4UnitP6Action
+	bl onAction__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -16258,7 +16258,7 @@ _080AD788:
 _080AD790:
 	ldr r1, _080AD7C0 @ =0x00000147
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -16335,7 +16335,7 @@ _080AD822:
 	adds r0, r1, #0
 _080AD824:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -16347,7 +16347,7 @@ sub_080AD834: @ 0x080AD834
 	push {lr}
 	adds r1, r0, #0
 	ldr r0, _080AD844 @ =0x00000147
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -16370,7 +16370,7 @@ sub_080AD848: @ 0x080AD848
 	subs r0, #2
 _080AD864:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4}
 	pop {r1}
 	bx r1
@@ -16467,7 +16467,7 @@ _080AD8D6:
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	adds r1, r6, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	b _080AD930
 _080AD92E:
 	movs r0, #0
@@ -16586,7 +16586,7 @@ sub_080AD9B4: @ 0x080AD9B4
 	beq _080ADA4A
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__4UnitP6Action
+	bl onAction__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -16622,7 +16622,7 @@ _080ADA4C:
 _080ADA54:
 	ldr r1, _080ADA94 @ =0x0000013D
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -16636,7 +16636,7 @@ _080ADA54:
 _080ADA70:
 	ldr r1, _080ADA98 @ =0x0000013F
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -16745,7 +16745,7 @@ _080ADB3A:
 	ldrh r0, [r1]
 _080ADB3E:
 	adds r1, r4, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	add sp, #0xc
 	pop {r3, r4}
 	mov r8, r3
@@ -16826,7 +16826,7 @@ _080ADBD2:
 	ldrh r0, [r7]
 _080ADBD4:
 	mov r1, r8
-	bl sub_080741AC
+	bl getMonsterSkill
 	add sp, #0xc
 	pop {r3, r4}
 	mov r8, r3
@@ -16884,7 +16884,7 @@ sub_080ADBE8: @ 0x080ADBE8
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	adds r1, r6, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	b _080ADC82
 _080ADC54:
 	ldr r1, [r6, #0x1c]
@@ -17055,7 +17055,7 @@ sub_080ADD38: @ 0x080ADD38
 	beq _080ADDCE
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__4UnitP6Action
+	bl onAction__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -17091,7 +17091,7 @@ _080ADDD0:
 _080ADDD8:
 	adds r0, r5, #0
 	movs r1, #0x8c
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -17105,7 +17105,7 @@ _080ADDD8:
 _080ADDF4:
 	ldr r1, _080ADE34 @ =0x00000107
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -17119,7 +17119,7 @@ _080ADDF4:
 _080ADE10:
 	adds r0, r5, #0
 	movs r1, #0xf0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -17377,7 +17377,7 @@ _080ADFE4:
 	adds r1, r1, r0
 	ldrh r0, [r1]
 	adds r1, r7, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	adds r4, r0, #0
 	ldr r0, [sp, #8]
 	cmp r0, #0
@@ -17400,8 +17400,8 @@ sub_080AE01C: @ 0x080AE01C
 	adds r4, r0, #0
 	movs r0, #0x2d
 	adds r1, r4, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 	adds r0, r4, #0
 	bl sub_08080F54__7Monster
 	pop {r4}
@@ -17468,7 +17468,7 @@ sub_080AE054: @ 0x080AE054
 	beq _080AE0EA
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__4UnitP6Action
+	bl onAction__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -17504,7 +17504,7 @@ _080AE0EC:
 _080AE0F4:
 	adds r0, r5, #0
 	movs r1, #0xe3
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -17612,7 +17612,7 @@ _080AE1C6:
 	adds r0, r1, #0
 _080AE1C8:
 	adds r1, r5, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4, r5}
 	pop {r1}
 	bx r1
@@ -17677,7 +17677,7 @@ sub_080AE1F0: @ 0x080AE1F0
 	beq _080AE286
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__4UnitP6Action
+	bl onAction__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -17714,7 +17714,7 @@ _080AE290:
 	movs r1, #0x82
 	lsls r1, r1, #2
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -17732,7 +17732,7 @@ _080AE290:
 _080AE2B8:
 	ldr r1, _080AE2E8 @ =0x00000207
 	adds r0, r5, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -17766,7 +17766,7 @@ sub_080AE2EC: @ 0x080AE2EC
 	movs r1, #0x82
 	lsls r1, r1, #2
 	adds r0, r7, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -17912,7 +17912,7 @@ _080AE41C:
 _080AE424:
 	ldr r1, _080AE438 @ =0x00000207
 	adds r0, r7, #0
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -18146,7 +18146,7 @@ _080AE604:
 	movs r0, #0xe1
 _080AE606:
 	adds r1, r7, #0
-	bl sub_080741AC
+	bl getMonsterSkill
 	pop {r4, r5, r6, r7}
 	pop {r1}
 	bx r1
@@ -18165,94 +18165,3 @@ sub_080AE614: @ 0x080AE614
 	.align 2, 0
 _080AE628: .4byte _vt.14DefaultMonster.10UnitObject
 _080AE62C: .4byte _vt.14DefaultMonster
-
-	thumb_func_start sub_080AE630
-sub_080AE630: @ 0x080AE630
-	push {r4, r5, r6, lr}
-	adds r6, r0, #0
-	movs r5, #0
-	b _080AE686
-_080AE638:
-	adds r0, r5, #0
-	bl sub_08072EC4
-	ldr r2, [r0, #0x1c]
-	movs r1, #0xcc
-	lsls r1, r1, #1
-	adds r2, r2, r1
-	movs r3, #0
-	ldrsh r1, [r2, r3]
-	adds r0, r0, r1
-	ldr r1, [r2, #4]
-	bl _call_via_r1
-	adds r4, r0, #0
-	adds r0, r5, #0
-	bl sub_08072EC4
-	ldr r2, [r0, #0x1c]
-	movs r1, #0xd4
-	lsls r1, r1, #1
-	adds r2, r2, r1
-	movs r3, #0
-	ldrsh r1, [r2, r3]
-	adds r0, r0, r1
-	ldr r1, [r2, #4]
-	bl _call_via_r1
-	lsrs r1, r0, #0x1f
-	adds r0, r0, r1
-	asrs r0, r0, #1
-	cmp r4, r0
-	bge _080AE684
-	movs r0, #0
-	movs r1, #0x63
-	bl randS32
-	cmp r0, #0x1d
-	ble _080AE6B4
-_080AE684:
-	adds r5, #1
-_080AE686:
-	bl sub_08072EA8
-	cmp r5, r0
-	blt _080AE638
-	bl sub_08072EA8
-	cmp r0, #2
-	bgt _080AE6A2
-	movs r0, #0
-	movs r1, #0x63
-	bl randS32_
-	cmp r0, #0x46
-	bge _080AE6A6
-_080AE6A2:
-	movs r0, #2
-	b _080AE6BA
-_080AE6A6:
-	cmp r0, #0x55
-	bge _080AE6B8
-	ldr r0, _080AE6B0 @ =0x0000020E
-	b _080AE6BA
-	.align 2, 0
-_080AE6B0: .4byte 0x0000020E
-_080AE6B4:
-	movs r0, #0x9f
-	b _080AE6BA
-_080AE6B8:
-	movs r0, #0x22
-_080AE6BA:
-	adds r1, r6, #0
-	bl sub_080741AC
-	pop {r4, r5, r6}
-	pop {r1}
-	bx r1
-	.align 2, 0
-
-	thumb_func_start sub_080AE6C8
-sub_080AE6C8: @ 0x080AE6C8
-	push {lr}
-	ldr r2, _080AE6DC @ =_vt.14DefaultMonster.10UnitObject
-	str r2, [r0, #0x20]
-	ldr r2, _080AE6E0 @ =_vt.14DefaultMonster
-	str r2, [r0, #0x1c]
-	bl _._7Monster
-	pop {r0}
-	bx r0
-	.align 2, 0
-_080AE6DC: .4byte _vt.14DefaultMonster.10UnitObject
-_080AE6E0: .4byte _vt.14DefaultMonster

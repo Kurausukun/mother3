@@ -68,7 +68,7 @@ _0805E608:
 	movs r1, #4
 	b _0805E652
 _0805E62E:
-	bl sub_08072EA8
+	bl GetMonsterCount
 	cmp r0, #0
 	bgt _0805E65C
 	ldr r1, [r4, #0x1c]

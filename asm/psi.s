@@ -1165,7 +1165,7 @@ _08082D44:
 	b _08082D66
 _08082D60:
 	adds r0, r5, #0
-	bl action_1a0__6Action
+	bl fire__6Action
 _08082D66:
 	add sp, #0x18
 	pop {r4, r5, r6}

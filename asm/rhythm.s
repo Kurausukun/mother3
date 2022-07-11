@@ -134,7 +134,7 @@ _0807376A:
 	adds r2, r4, #0
 	bl sub_08085FB0
 	adds r0, r7, #0
-	bl sub_08072938
+	bl IsPlayer
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -151,7 +151,7 @@ _0807376A:
 	movs r0, #0x4d
 	adds r1, r7, #0
 	adds r2, r7, #0
-	bl playSeq
+	bl PlayAnimation
 	ldr r2, [r7, #0x1c]
 	movs r0, #0xc4
 	lsls r0, r0, #1
@@ -365,7 +365,7 @@ _08073962:
 	adds r2, r4, #0
 	bl sub_080862D8
 	adds r0, r7, #0
-	bl sub_08072938
+	bl IsPlayer
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -382,7 +382,7 @@ _08073962:
 	movs r0, #0x4d
 	adds r1, r7, #0
 	adds r2, r7, #0
-	bl playSeq
+	bl PlayAnimation
 	ldr r2, [r7, #0x1c]
 	movs r0, #0xc4
 	lsls r0, r0, #1
@@ -548,7 +548,7 @@ _08073AF2:
 	adds r2, r4, #0
 	bl sub_08085FB0
 	adds r0, r7, #0
-	bl sub_08072938
+	bl IsPlayer
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -565,7 +565,7 @@ _08073AF2:
 	movs r0, #0x4d
 	adds r1, r7, #0
 	adds r2, r7, #0
-	bl playSeq
+	bl PlayAnimation
 	ldr r2, [r7, #0x1c]
 	movs r0, #0xc4
 	lsls r0, r0, #1
@@ -631,8 +631,8 @@ _08073C22:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_08073C4C
-sub_08073C4C: @ 0x08073C4C
+	thumb_func_start InitHeal
+InitHeal: @ 0x08073C4C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -922,7 +922,7 @@ sub_08073E3C: @ 0x08073E3C
 	lsrs r0, r0, #0x10
 	adds r1, r5, #0
 	adds r2, r5, #0
-	bl playSeq
+	bl PlayAnimation
 	ldr r2, [r4, #0x1c]
 	movs r0, #0x90
 	lsls r0, r0, #1
@@ -1217,8 +1217,8 @@ _080740D0:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080740D8
-sub_080740D8: @ 0x080740D8
+	thumb_func_start IsGoodsAndType
+IsGoodsAndType: @ 0x080740D8
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	lsls r1, r1, #0x10
@@ -1329,8 +1329,8 @@ _080741A4:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080741AC
-sub_080741AC: @ 0x080741AC
+	thumb_func_start getMonsterSkill
+getMonsterSkill: @ 0x080741AC
 	push {lr}
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
@@ -1363,8 +1363,8 @@ _080741E0:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080741E8
-sub_080741E8: @ 0x080741E8
+	thumb_func_start IsMonsterSkillAndType
+IsMonsterSkillAndType: @ 0x080741E8
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	lsls r1, r1, #0x10
@@ -1402,8 +1402,8 @@ _0807422C:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_08074234
-sub_08074234: @ 0x08074234
+	thumb_func_start triggerMonsterSkill
+triggerMonsterSkill: @ 0x08074234
 	push {r4, r5, r6, r7, lr}
 	sub sp, #0x44
 	adds r7, r0, #0

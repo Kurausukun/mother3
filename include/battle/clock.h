@@ -20,7 +20,7 @@ public:
 class PreSysClock : public Unk {
 public:
     inline PreSysClock() {}
-    inline PreSysClock(u32 time) : mTime(time)  {}
+    inline PreSysClock(u32 time) : mTime(time) {}
     inline virtual ~PreSysClock() {}
 
     virtual void* getRTTI();
@@ -48,7 +48,7 @@ private:
 class PreAppClock : public Unk {
 public:
     inline PreAppClock() {}
-    inline PreAppClock(u32 time) : mTime(time)  {}
+    inline PreAppClock(u32 time) : mTime(time) {}
     inline virtual ~PreAppClock() {}
 
     virtual void* getRTTI();
@@ -76,7 +76,7 @@ private:
 class PostAppClock : public Unk {
 public:
     inline PostAppClock() {}
-    inline PostAppClock(u32 time)  : mTime(time) { }
+    inline PostAppClock(u32 time) : mTime(time) {}
     inline virtual ~PostAppClock() {}
 
     virtual void* getRTTI();

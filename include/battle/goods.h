@@ -15,7 +15,7 @@ public:
 
     void action_150() override;
     Action* action_1c0() override;
-    bool action_1a0() override;
+    bool fire() override;
     u16 id() const override;
     Msg name() const override;
     Msg action_1d8() const override;
@@ -35,7 +35,7 @@ public:
     bool hasDim() const override;
     u16 animNo() const override;
     u16 successAnimNo() const override;
-    u16 nextAnim() const override;
+    u16 critAnimNo() const override;
     u32 sfxNo() const override;
     s32 hitChance() const override;
     s32 critChance() const override;
@@ -49,7 +49,6 @@ public:
     virtual u16 goods_2a8();
     virtual u32 goods_2b0() const;
     virtual bool goods_2b8() const;
-
 
     virtual bool goods_2c0();
     virtual u32 type() const;

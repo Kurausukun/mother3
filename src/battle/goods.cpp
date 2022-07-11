@@ -17,12 +17,12 @@ Goods::Goods(u16 id, Unit* user, u16 a2) : Action(user) {
 
 Goods::~Goods() {}
 
-bool Goods::action_1a0() {
+bool Goods::fire() {
     if (action_1b8() == true) {
         playSfx();
         return true;
     }
-    return Action::action_1a0();
+    return Action::fire();
 }
 
 void Goods::action_150() {
@@ -109,9 +109,9 @@ u32 Goods::priority() const {
 
 Msg Goods::getUseMessage() const {
     if (numTargets() == 1 && getTarget(0) == getUser()) {
-        return createMsg(calcMessage(mInfo->action.msg_no));
+        return ROMStr(calcMessage(mInfo->action.msg_no));
     } else {
-        return createMsg(calcMessage(mInfo->action.msg_no + 1));
+        return ROMStr(calcMessage(mInfo->action.msg_no + 1));
     }
 }
 
@@ -163,7 +163,7 @@ u16 Goods::successAnimNo() const {
     return mInfo->action.anim_success;
 }
 
-u16 Goods::nextAnim() const {
+u16 Goods::critAnimNo() const {
     if (!successAnimNo()) {
         return 0;
     }

@@ -971,7 +971,7 @@ sub_08082088: @ 0x08082088
 	cmp r0, r1
 	blt _080820C6
 	adds r0, r5, #0
-	bl action_1a0__6Action
+	bl fire__6Action
 	b _0808212A
 _080820C6:
 	ldr r2, [r5, #0x1c]
@@ -1066,7 +1066,7 @@ sub_0808213C: @ 0x0808213C
 	adds r2, r0, #0
 	adds r0, r5, #0
 	mov r1, r8
-	bl playSeq
+	bl PlayAnimation
 	pop {r3}
 	mov r8, r3
 	pop {r4, r5, r6}

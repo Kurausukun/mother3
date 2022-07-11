@@ -833,7 +833,7 @@ sub_08097DE0: @ 0x08097DE0
 	adds r1, r1, r7
 	mov sb, r1
 	ldr r1, [r1]
-	bl sub_080741AC
+	bl getMonsterSkill
 	add r1, sp, #8
 	bl sub_080742EC
 	movs r0, #0x78
@@ -844,7 +844,7 @@ sub_08097DE0: @ 0x08097DE0
 	ldr r2, [r0]
 	movs r0, #0xc3
 	adds r1, r2, #0
-	bl playSeq
+	bl PlayAnimation
 	movs r0, #0x3c
 	bl setsleep
 	ldr r3, [r7, #0x1c]
@@ -878,7 +878,7 @@ sub_08097DE0: @ 0x08097DE0
 	ldr r2, [r3]
 	movs r0, #0xc0
 	adds r1, r2, #0
-	bl playSeq
+	bl PlayAnimation
 	movs r0, #0x96
 	lsls r0, r0, #1
 	mov sb, r0
@@ -948,7 +948,7 @@ _08097F00: .4byte 0x00000F94
 _08097F04: .4byte 0x0000065F
 _08097F08:
 	adds r0, r4, #0
-	bl getPlayer
+	bl GetPlayer
 	adds r1, r0, #0
 	adds r1, #0x20
 	ldr r2, [r0, #0x20]
@@ -1223,7 +1223,7 @@ sub_08098034: @ 0x08098034
 	ldr r2, [r4]
 	movs r0, #0x42
 	adds r1, r2, #0
-	bl playSeq
+	bl PlayAnimation
 	movs r0, #0x78
 	bl setsleep
 	movs r0, #0xf0
@@ -1245,7 +1245,7 @@ sub_08098034: @ 0x08098034
 	ldr r2, [r4]
 	movs r0, #0x43
 	adds r1, r2, #0
-	bl playSeq
+	bl PlayAnimation
 	movs r0, #0xb4
 	bl setsleep
 	ldr r3, [r5, #0x1c]
@@ -1917,7 +1917,7 @@ sub_08098728: @ 0x08098728
 	b _080987E0
 _08098734:
 	adds r0, r7, #0
-	bl getPlayer
+	bl GetPlayer
 	adds r4, r0, #0
 	ldr r1, [r4, #0x1c]
 	adds r1, r1, r5
@@ -2081,7 +2081,7 @@ sub_0809886C: @ 0x0809886C
 	b _080988AA
 _0809888E:
 	adds r0, r4, #0
-	bl getPlayer
+	bl GetPlayer
 	ldr r2, [r0, #0x1c]
 	movs r3, #0xa0
 	lsls r3, r3, #2
@@ -2912,8 +2912,8 @@ sub_08098F38: @ 0x08098F38
 	ldr r2, _08098F84 @ =0x00000F94
 	adds r1, r6, r2
 	ldr r1, [r1]
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 	movs r3, #0
 	str r3, [sp, #0x10]
 	movs r1, #0xf9
@@ -3369,7 +3369,7 @@ _0809930C:
 	adds r7, r6, r2
 	ldr r1, [r7]
 	ldr r0, _080995D4 @ =0x000001BD
-	bl sub_080741AC
+	bl getMonsterSkill
 	adds r4, r0, #0
 	movs r0, #0x9b
 	lsls r0, r0, #2
@@ -3377,7 +3377,7 @@ _0809930C:
 	ldr r2, [r7]
 	movs r0, #0x47
 	adds r1, r2, #0
-	bl playSeq
+	bl PlayAnimation
 	ldr r2, [r4, #0x1c]
 	movs r3, #0xe4
 	lsls r3, r3, #1
@@ -3427,12 +3427,12 @@ _0809930C:
 	ldr r2, [r7]
 	movs r0, #0x90
 	adds r1, r2, #0
-	bl playSeq
+	bl PlayAnimation
 	ldr r1, [r7]
 	ldr r3, [sp, #0x50]
 	ldr r2, [r3]
 	movs r0, #0x91
-	bl playSeq
+	bl PlayAnimation
 	cmp r4, #0
 	beq _080993C4
 	ldr r1, [r4, #0x1c]
@@ -3498,7 +3498,7 @@ _080993C4:
 	movs r0, #0x44
 	movs r2, #0
 	movs r3, #0
-	bl playSeqForEach
+	bl PlayAnimationForEach
 	ldr r3, [r6, #0x1c]
 	movs r0, #0x98
 	lsls r0, r0, #2
@@ -3548,7 +3548,7 @@ _080993C4:
 	bl setsleep
 	ldr r1, [r7]
 	ldr r0, _080995D4 @ =0x000001BD
-	bl sub_080741AC
+	bl getMonsterSkill
 	adds r4, r0, #0
 	movs r0, #0x9b
 	lsls r0, r0, #2
@@ -3556,7 +3556,7 @@ _080993C4:
 	ldr r2, [r7]
 	movs r0, #0x47
 	adds r1, r2, #0
-	bl playSeq
+	bl PlayAnimation
 	ldr r2, [r4, #0x1c]
 	movs r3, #0xe4
 	lsls r3, r3, #1
@@ -3600,12 +3600,12 @@ _080993C4:
 	ldr r2, [r7]
 	movs r0, #0x90
 	adds r1, r2, #0
-	bl playSeq
+	bl PlayAnimation
 	ldr r1, [r7]
 	ldr r3, [sp, #0x50]
 	ldr r2, [r3]
 	movs r0, #0x91
-	bl playSeq
+	bl PlayAnimation
 	cmp r4, #0
 	beq _0809955A
 	ldr r1, [r4, #0x1c]
@@ -3620,7 +3620,7 @@ _0809955A:
 	movs r0, #0x45
 	movs r2, #0
 	movs r3, #0
-	bl playSeqForEach
+	bl PlayAnimationForEach
 	ldr r3, [r6, #0x1c]
 	movs r0, #0x98
 	lsls r0, r0, #2
@@ -4338,12 +4338,12 @@ _08099B40:
 	adds r4, r6, r0
 	ldr r1, [r4]
 	movs r0, #0x90
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 	ldr r0, _08099BA8 @ =0x000001BD
 	ldr r1, [r4]
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 	ldr r1, [r6, #0x1c]
 	adds r1, #0xc0
 _08099B88:
@@ -4404,7 +4404,7 @@ sub_08099BE4: @ 0x08099BE4
 	ldr r2, [r4]
 	movs r0, #3
 	adds r1, r2, #0
-	bl playSeq
+	bl PlayAnimation
 	ldr r4, [r4]
 	movs r0, #0xa4
 	movs r1, #0xba
@@ -4454,7 +4454,7 @@ sub_08099C50: @ 0x08099C50
 	b _08099D08
 _08099C5C:
 	adds r0, r7, #0
-	bl getPlayer
+	bl GetPlayer
 	adds r4, r0, #0
 	ldr r1, [r4, #0x1c]
 	adds r1, r1, r5
@@ -4698,7 +4698,7 @@ sub_08099E3C: @ 0x08099E3C
 	b _08099E7A
 _08099E5E:
 	adds r0, r4, #0
-	bl getPlayer
+	bl GetPlayer
 	ldr r2, [r0, #0x1c]
 	movs r3, #0xa0
 	lsls r3, r3, #2
@@ -4918,7 +4918,7 @@ sub_08099FD8: @ 0x08099FD8
 	ldr r2, [r1]
 	movs r0, #0x85
 	adds r1, r2, #0
-	bl playSeq
+	bl PlayAnimation
 	bl sub_08073270
 	ldr r0, _0809A418 @ =0x00000615
 	bl playSound
@@ -6321,7 +6321,7 @@ sub_0809AA98: @ 0x0809AA98
 	movs r0, #0xc
 	adds r1, r7, #0
 	bl sub_08073F88
-	bl sub_08074234
+	bl triggerMonsterSkill
 	ldr r3, [r6, #0x1c]
 	add r3, sb
 	movs r0, #0
@@ -6367,7 +6367,7 @@ sub_0809AA98: @ 0x0809AA98
 	movs r0, #0xe
 	adds r1, r7, #0
 	bl sub_08073F88
-	bl sub_08074234
+	bl triggerMonsterSkill
 	ldr r1, [r6, #0x1c]
 	movs r3, #0x8a
 	lsls r3, r3, #2
@@ -6451,7 +6451,7 @@ sub_0809AA98: @ 0x0809AA98
 	movs r0, #0x10
 	adds r1, r7, #0
 	bl sub_08073F88
-	bl sub_08074234
+	bl triggerMonsterSkill
 	ldr r1, [r6, #0x1c]
 	add r1, sl
 	movs r3, #0
@@ -6532,7 +6532,7 @@ sub_0809AA98: @ 0x0809AA98
 	movs r0, #0x12
 	adds r1, r7, #0
 	bl sub_08073F88
-	bl sub_08074234
+	bl triggerMonsterSkill
 	ldr r1, [r6, #0x1c]
 	add r1, sl
 	movs r3, #0
@@ -6796,8 +6796,8 @@ sub_0809AFA8: @ 0x0809AFA8
 	bl _._3Msg
 	ldr r0, _0809B08C @ =0x0000026D
 	adds r1, r7, #0
-	bl sub_080741AC
-	bl sub_08074234
+	bl getMonsterSkill
+	bl triggerMonsterSkill
 	ldr r1, [r6, #0x1c]
 	movs r3, #0xac
 	lsls r3, r3, #2
@@ -9597,7 +9597,7 @@ _0809C69C:
 	adds r2, r0, #0
 	movs r0, #1
 	adds r1, r6, #0
-	bl playSeq
+	bl PlayAnimation
 _0809C7D6:
 	add sp, #0x48
 	pop {r3, r4, r5}
@@ -9792,7 +9792,7 @@ _0809C938:
 _0809C952:
 	adds r1, r4, #0
 	bl sub_08073F88
-	bl sub_08074234
+	bl triggerMonsterSkill
 	b _0809C96E
 _0809C95E:
 	cmp r0, #0x1d
@@ -9800,7 +9800,7 @@ _0809C95E:
 	movs r0, #7
 	adds r1, r4, #0
 	bl sub_08073F88
-	bl sub_08074234
+	bl triggerMonsterSkill
 _0809C96E:
 	pop {r4}
 	pop {r0}
@@ -11196,7 +11196,7 @@ _0809D488:
 _0809D48A:
 	adds r1, r7, #0
 	bl sub_08073F88
-	bl sub_08074234
+	bl triggerMonsterSkill
 _0809D494:
 	adds r4, r0, #0
 	ldr r0, [sp, #8]
@@ -11239,7 +11239,7 @@ sub_0809D4B8: @ 0x0809D4B8
 	beq _0809D4EE
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl unit_70__4UnitP6Action
+	bl onAction__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -12014,7 +12014,7 @@ sub_0809DA84: @ 0x0809DA84
 	sub sp, #0x10
 	adds r4, r0, #0
 	ldr r0, _0809DACC @ =0x000002A2
-	bl sub_080707E4
+	bl PlaySoundBlocking
 	ldr r3, [r4, #0x1c]
 	movs r0, #0xa8
 	lsls r0, r0, #1
@@ -12277,7 +12277,7 @@ sub_0809DC9C: @ 0x0809DC9C
 	sub sp, #0x10
 	adds r4, r0, #0
 	ldr r0, _0809DCE4 @ =0x0000055B
-	bl sub_080707E4
+	bl PlaySoundBlocking
 	ldr r3, [r4, #0x1c]
 	movs r0, #0xa8
 	lsls r0, r0, #1
@@ -12389,7 +12389,7 @@ sub_0809DD74: @ 0x0809DD74
 	push {lr}
 	bl tellUseMessage__6Action
 	ldr r0, _0809DD84 @ =0x000002EE
-	bl sub_080707E4
+	bl PlaySoundBlocking
 	pop {r0}
 	bx r0
 	.align 2, 0
@@ -12658,7 +12658,7 @@ sub_0809DF80: @ 0x0809DF80
 	b _0809DFB2
 _0809DF8A:
 	adds r0, r5, #0
-	bl getPlayer
+	bl GetPlayer
 	adds r1, r0, #0
 	ldr r3, [r6, #0x1c]
 	movs r0, #0x94
@@ -12892,7 +12892,7 @@ sub_0809E134: @ 0x0809E134
 _0809E170: .4byte 0x00000281
 _0809E174:
 	adds r0, r5, #0
-	bl getPlayer
+	bl GetPlayer
 	adds r1, r0, #0
 	ldr r3, [r6, #0x1c]
 	movs r0, #0x8c
@@ -12998,7 +12998,7 @@ sub_0809E244: @ 0x0809E244
 	b _0809E26A
 _0809E24C:
 	adds r0, r4, #0
-	bl getPlayer
+	bl GetPlayer
 	ldr r2, [r0, #0x1c]
 	movs r1, #0xc8
 	lsls r1, r1, #1
@@ -13171,7 +13171,7 @@ sub_0809E3A4: @ 0x0809E3A4
 	adds r4, r0, #0
 	adds r6, r1, #0
 	adds r0, r6, #0
-	bl sub_08072938
+	bl IsPlayer
 	lsls r0, r0, #0x18
 	lsrs r5, r0, #0x18
 	cmp r5, #1
@@ -14673,7 +14673,7 @@ _0809EF4A:
 	movs r0, #0x33
 	adds r1, r7, #0
 	adds r2, r7, #0
-	bl playSeq
+	bl PlayAnimation
 	adds r0, r7, #0
 	movs r1, #0x16
 _0809EF58:
@@ -14748,7 +14748,7 @@ _0809EFEC:
 	movs r0, #0x36
 	adds r1, r7, #0
 	adds r2, r7, #0
-	bl playSeq
+	bl PlayAnimation
 	ldr r1, [r6, #0x1c]
 	movs r5, #0xb0
 	lsls r5, r5, #1
@@ -14787,7 +14787,7 @@ _0809F012:
 	adds r2, r0, #0
 	adds r0, r4, #0
 	adds r1, r7, #0
-	bl playSeq
+	bl PlayAnimation
 	adds r0, r7, #0
 	movs r1, #0x17
 	b _0809EF58
@@ -15730,7 +15730,7 @@ _0809F814:
 	b _0809F836
 _0809F830:
 	adds r0, r4, #0
-	bl action_1a0__6Action
+	bl fire__6Action
 _0809F836:
 	add sp, #0x14
 	pop {r4, r5, r6}
@@ -15877,7 +15877,7 @@ _0809F944:
 	b _0809F966
 _0809F960:
 	adds r0, r4, #0
-	bl action_1a0__6Action
+	bl fire__6Action
 _0809F966:
 	add sp, #0x14
 	pop {r4, r5, r6}
@@ -16144,7 +16144,7 @@ _0809FB5C:
 	b _0809FB7E
 _0809FB78:
 	adds r0, r4, #0
-	bl action_1a0__6Action
+	bl fire__6Action
 _0809FB7E:
 	add sp, #0x14
 	pop {r4, r5, r6}

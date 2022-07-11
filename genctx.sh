@@ -33,6 +33,6 @@ cd include
 recurse_dir ./
 cd ..
 
-echo "#include \"gba/types.h\"\n$headers" | cc -E -nostdinc -Iinclude -Itools/agbcc/include - > ctx.c
+echo "#include \"gba/types.h\"\n$headers" | cc -D"__cplusplus" -E -nostdinc -Iinclude -Itools/agbcc/include - > ctx.c
 echo "$headers"
 echo "$num headers, written to ctx.c"

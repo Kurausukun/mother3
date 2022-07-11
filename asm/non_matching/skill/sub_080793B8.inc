@@ -123,28 +123,28 @@ _08079488:
 	beq _08079592
 	adds r0, r6, #0
 	movs r1, #0x62
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
 	beq _08079592
 	adds r0, r6, #0
 	movs r1, #0x63
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
 	beq _08079592
 	adds r0, r6, #0
 	movs r1, #0x64
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
 	beq _08079592
 	adds r0, r6, #0
 	movs r1, #0x65
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -215,7 +215,7 @@ _08079488:
 	movs r0, #0x39
 	mov r1, r8
 	mov r2, r8
-	bl playSeq
+	bl PlayAnimation
 _0807958C:
 	lsrs r0, r7, #0x1f
 	adds r0, r7, r0
@@ -299,7 +299,7 @@ _0807961A:
 _0807962C:
 	adds r0, r6, #0
 	movs r1, #0x62
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -308,7 +308,7 @@ _0807962C:
 _0807963E:
 	adds r0, r6, #0
 	movs r1, #0x63
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -317,7 +317,7 @@ _0807963E:
 _08079650:
 	adds r0, r6, #0
 	movs r1, #0x64
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -326,7 +326,7 @@ _08079650:
 _08079662:
 	adds r0, r6, #0
 	movs r1, #0x65
-	bl sub_080741E8
+	bl IsMonsterSkillAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -384,7 +384,7 @@ _08079674:
 	movs r0, #0x3c
 	mov r1, r8
 	mov r2, r8
-	bl playSeq
+	bl PlayAnimation
 	ldr r1, [r6, #0x1c]
 	movs r5, #0xb0
 	lsls r5, r5, #1
@@ -423,7 +423,7 @@ _08079704:
 	adds r2, r0, #0
 	adds r0, r4, #0
 	mov r1, r8
-	bl playSeq
+	bl PlayAnimation
 	mov r0, r8
 	movs r1, #0x1a
 	movs r2, #1

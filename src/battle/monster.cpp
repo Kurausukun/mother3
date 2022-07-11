@@ -1,6 +1,6 @@
 #include "battle/monster.h"
-#include "battle/monsterSkill.h"
 #include "battle.h"
+#include "battle/monsterSkill.h"
 #include "battle/unitTarget.h"
 
 RTTI_IMPL(Monster);
@@ -13,7 +13,9 @@ extern MonsterData gMonsterData[];
 extern ClockData gUnknown_0810B278;
 extern ClockData gUnknown_0810B280;
 
-static inline s32 maxdrops() { return 3; }
+static inline s32 maxdrops() {
+    return 3;
+}
 
 extern "C" Msg get_monster_name(u16 idx) {
     return Msg::genMisctextMsg(get_misctext_msg(7, idx), get_misctext_len(7));
@@ -76,12 +78,12 @@ Monster::~Monster() {
     delete mSprite;
 }
 
-u8 Monster::unit_d0() {
-    if (Unit::unit_d0() != 1) {
+u8 Monster::onTurn() {
+    if (Unit::onTurn() != 1) {
         return false;
     }
 
-    Action* tmp = monster_2c0();
+    Action* tmp = calcAction();
     if (tmp == 0) {
         return false;
     }
@@ -91,12 +93,12 @@ u8 Monster::unit_d0() {
         return false;
     }
 
-    bool result = unit_70(tmp);
+    bool result = onAction(tmp);
     delete tmp;
     return result;
 }
 
-Action* Monster::monster_2c0() {
+Action* Monster::calcAction() {
     return NULL;
 }
 
@@ -111,7 +113,7 @@ bool Monster::monster_2c8(Action* action) {
 
 void Monster::sub_08080F54() {
     if (battleWon() == true) {
-        playSeq(deathSeq(), this, this);
+        PlayAnimation(deathSeq(), this, this);
     }
     object_8(0);
     if (battleWon() == true) {
@@ -124,7 +126,7 @@ u32 Monster::scaledExperience() {
     return experience();
 }
 
-u32 Monster::monster_2e8() {
+u32 Monster::calcItemDrop() {
     int a = 100;
     int ret = 0;
     for (int i = 0; i < numDrops(); i++) {
@@ -137,7 +139,7 @@ u32 Monster::monster_2e8() {
     return ret;
 }
 
-u32 Monster::monster_2f0() {
+u32 Monster::scaledMoney() {
     return money();
 }
 
@@ -185,7 +187,7 @@ Msg Monster::fmtEncounterMsg() {
 }
 
 Msg Monster::deathMsg() {
-    return mDeathMsg; // note: copy constructor called
+    return mDeathMsg;  // note: copy constructor called
 }
 
 u32 Monster::deathSeq() {

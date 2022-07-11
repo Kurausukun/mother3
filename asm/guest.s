@@ -3155,7 +3155,7 @@ _08060682:
 	lsrs r0, r0, #0x18
 	cmp r0, #1
 	bne _0806069A
-	bl sub_08072EA8
+	bl GetMonsterCount
 	cmp r0, #0
 	bgt _0806069A
 	b _080608A4
@@ -3176,7 +3176,7 @@ _0806069A:
 _080606B8:
 	adds r0, r7, #0
 	movs r1, #2
-	bl unitIsPlayer
+	bl IsPlayerAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -3258,7 +3258,7 @@ _080606CC:
 	movs r0, #0x20
 	adds r1, r7, #0
 	adds r2, r7, #0
-	bl playSeq
+	bl PlayAnimation
 	ldr r0, [r7, #0x1c]
 	movs r1, #0x8c
 	lsls r1, r1, #1
@@ -4726,7 +4726,7 @@ reqInventorySlot: @ 0x080612FC
 	b _08061328
 _08061302:
 	adds r0, r5, #0
-	bl getPlayer
+	bl GetPlayer
 	adds r4, r0, #0
 	ldr r1, [r4, #0x1c]
 	movs r0, #0x83
@@ -4763,7 +4763,7 @@ tellPlayerInventoryFull: @ 0x08061338
 	cmp r0, #1
 	bgt _080613A0
 	movs r0, #0
-	bl getPlayer
+	bl GetPlayer
 	adds r1, r0, #0
 	ldr r2, [r1, #0x1c]
 	movs r0, #0xc4
@@ -4800,7 +4800,7 @@ tellPlayerInventoryFull: @ 0x08061338
 	b _080613F6
 _080613A0:
 	movs r0, #0
-	bl getPlayer
+	bl GetPlayer
 	adds r1, r0, #0
 	ldr r2, [r1, #0x1c]
 	movs r0, #0xc4
@@ -5134,7 +5134,7 @@ sub_08061678: @ 0x08061678
 	push {r4, lr}
 	sub sp, #0x180
 	movs r0, #0
-	bl getPlayer
+	bl GetPlayer
 	adds r2, r0, #0
 	mov r0, sp
 	movs r1, #2
@@ -5173,7 +5173,7 @@ sub_080616C4: @ 0x080616C4
 	adds r5, r0, #0
 	adds r1, r2, #0
 	mov r0, sp
-	bl sub_0807D3F4
+	bl GoodsMenu_ct
 	mov r0, sp
 	movs r1, #0
 	bl sub_0807DE28
@@ -5381,7 +5381,7 @@ tellGaveUpItem: @ 0x0806188C
 	cmp r0, #1
 	bgt _080618F4
 	movs r0, #0
-	bl getPlayer
+	bl GetPlayer
 	adds r1, r0, #0
 	ldr r2, [r1, #0x1c]
 	movs r0, #0xc4
@@ -5418,7 +5418,7 @@ tellGaveUpItem: @ 0x0806188C
 	b _0806194A
 _080618F4:
 	movs r0, #0
-	bl getPlayer
+	bl GetPlayer
 	adds r1, r0, #0
 	ldr r2, [r1, #0x1c]
 	movs r0, #0xc4

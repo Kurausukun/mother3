@@ -29,7 +29,7 @@
 	str r0, [r4, #0x50]
 	movs r0, #0xa4
 	bl __builtin_new
-	bl sub_08062384
+	bl MonsterInfo_ct
 	str r0, [r4, #0x54]
 	movs r0, #0x3c
 	bl __builtin_new

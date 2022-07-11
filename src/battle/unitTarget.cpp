@@ -2,14 +2,14 @@
 #include "battle/keypad.h"
 #include "battle/monster.h"
 
-extern "C" bool sub_08072938(Unit* u);
+extern "C" bool IsPlayer(Unit* u);
 extern "C" bool typeIsMonster(Unit* u);
 s32 sub_08072A88();
 Monster* sub_08072AA4(s32);
 extern "C" s32 getPartyCount();
-extern "C" Monster* getPlayer(s32);
-extern "C" s32 sub_08072EA8();
-extern "C" Unit* sub_08072EC4(s32);
+extern "C" Monster* GetPlayer(s32);
+extern "C" s32 GetMonsterCount();
+extern "C" Unit* GetMonster(s32);
 extern "C" Unit* sub_08072A18(u16);
 extern "C" s32 sub_0807067C(s32, s32);
 extern "C" s32 randrange(s32, s32);
@@ -47,7 +47,7 @@ u32 UnitTarget::getSelection() const {
 bool UnitTarget::targettingAlly() {
     switch (getSelection()) {
     case 0:
-        return sub_08072938(getUnit());
+        return IsPlayer(getUnit());
     case 1:
     case 2:
     case 3:
@@ -75,7 +75,7 @@ bool UnitTarget::targettingAlly() {
     }
 }
 
-bool UnitTarget::attackdata_98() {
+bool UnitTarget::targettingMonster() {
     switch (getSelection()) {
     case 0:
         return typeIsMonster(getUnit());
@@ -159,27 +159,27 @@ bool UnitTarget::attackdata_68() {
         break;
     case 3:
         for (int i = 0; i < getPartyCount(); i++) {
-            addTarget(getPlayer(i));
+            addTarget(GetPlayer(i));
         }
         break;
     case 4:
-        for (int i = 0; i < sub_08072EA8(); i++) {
-            if (sub_08072EC4(i) != getUnit()) {
-                addTarget(sub_08072EC4(i));
+        for (int i = 0; i < GetMonsterCount(); i++) {
+            if (GetMonster(i) != getUnit()) {
+                addTarget(GetMonster(i));
             }
         }
         break;
     case 5:
-        for (int i = 0; i < sub_08072EA8(); i++) {
-            addTarget(sub_08072EC4(i));
+        for (int i = 0; i < GetMonsterCount(); i++) {
+            addTarget(GetMonster(i));
         }
         break;
     case 6:
         for (int i = 0; i < sub_08072A88(); i++) {
             addTarget(sub_08072AA4(i));
         }
-        for (int i = 0; i < sub_08072EA8(); i++) {
-            addTarget(sub_08072EC4(i));
+        for (int i = 0; i < GetMonsterCount(); i++) {
+            addTarget(GetMonster(i));
         }
         break;
     case 7:
