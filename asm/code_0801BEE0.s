@@ -30105,7 +30105,7 @@ sub_0802DDA0: @ 0x0802DDA0
 	adds r4, #0xc4
 	b _0802DDB2
 _0802DDAA:
-	ldr r0, _0802DE50 @ =gUnknown_02000FFC
+	ldr r0, _0802DE50 @ =gObjectContinue
 	ldrh r0, [r0]
 	cmp r0, #0
 	beq _0802DE4A
@@ -30125,7 +30125,7 @@ _0802DDB2:
 	lsrs r1, r1, #0x1a
 	bl sub_08027DE4
 	adds r3, r0, #0
-	ldr r1, _0802DE50 @ =gUnknown_02000FFC
+	ldr r1, _0802DE50 @ =gObjectContinue
 	movs r0, #0
 	strh r0, [r1]
 	ldrb r0, [r5]
@@ -30189,7 +30189,7 @@ _0802DE4A:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0802DE50: .4byte gUnknown_02000FFC
+_0802DE50: .4byte gObjectContinue
 _0802DE54: .4byte gUnknown_08D2DF64
 _0802DE58: .4byte 0xFFE07FFF
 
@@ -31148,7 +31148,7 @@ _0802E514:
 	ldrb r0, [r0]
 	bl sub_08036A1C
 _0802E51E:
-	ldr r1, _0802E52C @ =gUnknown_02000FFC
+	ldr r1, _0802E52C @ =gObjectContinue
 	movs r0, #1
 	strh r0, [r1]
 	movs r0, #1
@@ -31156,7 +31156,7 @@ _0802E51E:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0802E52C: .4byte gUnknown_02000FFC
+_0802E52C: .4byte gObjectContinue
 
 	thumb_func_start sub_0802E530
 sub_0802E530: @ 0x0802E530
@@ -31286,7 +31286,7 @@ sub_0802E5F4: @ 0x0802E5F4
 	ldrb r0, [r5]
 	bl sub_08033484
 _0802E61C:
-	ldr r1, _0802E62C @ =gUnknown_02000FFC
+	ldr r1, _0802E62C @ =gObjectContinue
 	movs r0, #1
 	strh r0, [r1]
 	movs r0, #1
@@ -31294,7 +31294,7 @@ _0802E61C:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0802E62C: .4byte gUnknown_02000FFC
+_0802E62C: .4byte gObjectContinue
 
 	thumb_func_start sub_0802E630
 sub_0802E630: @ 0x0802E630
@@ -31351,14 +31351,14 @@ sub_0802E684: @ 0x0802E684
 	ldrb r0, [r0]
 	ldrh r1, [r1, #2]
 	bl sub_080334D0
-	ldr r1, _0802E69C @ =gUnknown_02000FFC
+	ldr r1, _0802E69C @ =gObjectContinue
 	movs r0, #1
 	strh r0, [r1]
 	movs r0, #1
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0802E69C: .4byte gUnknown_02000FFC
+_0802E69C: .4byte gObjectContinue
 
 	thumb_func_start sub_0802E6A0
 sub_0802E6A0: @ 0x0802E6A0
@@ -31366,14 +31366,14 @@ sub_0802E6A0: @ 0x0802E6A0
 	adds r0, #0x85
 	ldrb r0, [r0]
 	bl sub_08033548
-	ldr r1, _0802E6B8 @ =gUnknown_02000FFC
+	ldr r1, _0802E6B8 @ =gObjectContinue
 	movs r0, #1
 	strh r0, [r1]
 	movs r0, #1
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0802E6B8: .4byte gUnknown_02000FFC
+_0802E6B8: .4byte gObjectContinue
 
 	thumb_func_start sub_0802E6BC
 sub_0802E6BC: @ 0x0802E6BC
@@ -31791,14 +31791,14 @@ sub_0802E9C8: @ 0x0802E9C8
 	lsrs r0, r0, #0x10
 	movs r1, #0
 	bl sub_08036450
-	ldr r1, _0802E9E4 @ =gUnknown_02000FFC
+	ldr r1, _0802E9E4 @ =gObjectContinue
 	movs r0, #1
 	strh r0, [r1]
 	movs r0, #1
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0802E9E4: .4byte gUnknown_02000FFC
+_0802E9E4: .4byte gObjectContinue
 
 	thumb_func_start sub_0802E9E8
 sub_0802E9E8: @ 0x0802E9E8
@@ -31807,14 +31807,14 @@ sub_0802E9E8: @ 0x0802E9E8
 	ldrb r0, [r0]
 	ldrh r1, [r1, #2]
 	bl sub_08036480
-	ldr r1, _0802EA00 @ =gUnknown_02000FFC
+	ldr r1, _0802EA00 @ =gObjectContinue
 	movs r0, #1
 	strh r0, [r1]
 	movs r0, #1
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0802EA00: .4byte gUnknown_02000FFC
+_0802EA00: .4byte gObjectContinue
 
 	thumb_func_start sub_0802EA04
 sub_0802EA04: @ 0x0802EA04
@@ -32017,14 +32017,14 @@ _0802EB94:
 	ldrh r0, [r2, #2]
 	bl play_sound
 _0802EB9A:
-	ldr r1, _0802EBA8 @ =gUnknown_02000FFC
+	ldr r1, _0802EBA8 @ =gObjectContinue
 	movs r0, #1
 	strh r0, [r1]
 	movs r0, #1
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0802EBA8: .4byte gUnknown_02000FFC
+_0802EBA8: .4byte gObjectContinue
 
 	thumb_func_start sub_0802EBAC
 sub_0802EBAC: @ 0x0802EBAC
@@ -32040,13 +32040,13 @@ sub_0802EBAC: @ 0x0802EBAC
 	ands r1, r3
 	orrs r1, r2
 	strb r1, [r0]
-	ldr r1, _0802EBD0 @ =gUnknown_02000FFC
+	ldr r1, _0802EBD0 @ =gObjectContinue
 	movs r0, #1
 	strh r0, [r1]
 	movs r0, #1
 	bx lr
 	.align 2, 0
-_0802EBD0: .4byte gUnknown_02000FFC
+_0802EBD0: .4byte gObjectContinue
 
 	thumb_func_start sub_0802EBD4
 sub_0802EBD4: @ 0x0802EBD4
@@ -32170,7 +32170,7 @@ _0802ECB2:
 	movs r1, #0xe
 	bl sub_08033620
 _0802ECBA:
-	ldr r1, _0802ECC8 @ =gUnknown_02000FFC
+	ldr r1, _0802ECC8 @ =gObjectContinue
 	movs r0, #1
 	strh r0, [r1]
 	movs r0, #1
@@ -32178,7 +32178,7 @@ _0802ECBA:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0802ECC8: .4byte gUnknown_02000FFC
+_0802ECC8: .4byte gObjectContinue
 
 	thumb_func_start sub_0802ECCC
 sub_0802ECCC: @ 0x0802ECCC
@@ -32194,13 +32194,13 @@ sub_0802ECCC: @ 0x0802ECCC
 	ands r1, r3
 	orrs r1, r2
 	strb r1, [r0]
-	ldr r1, _0802ECF0 @ =gUnknown_02000FFC
+	ldr r1, _0802ECF0 @ =gObjectContinue
 	movs r0, #1
 	strh r0, [r1]
 	movs r0, #1
 	bx lr
 	.align 2, 0
-_0802ECF0: .4byte gUnknown_02000FFC
+_0802ECF0: .4byte gObjectContinue
 
 	thumb_func_start sub_0802ECF4
 sub_0802ECF4: @ 0x0802ECF4
@@ -32221,7 +32221,7 @@ sub_0802ECF4: @ 0x0802ECF4
 	ldrb r0, [r5]
 	bl sub_08033484
 _0802ED18:
-	ldr r1, _0802ED28 @ =gUnknown_02000FFC
+	ldr r1, _0802ED28 @ =gObjectContinue
 	movs r0, #1
 	strh r0, [r1]
 	movs r0, #1
@@ -32229,7 +32229,7 @@ _0802ED18:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0802ED28: .4byte gUnknown_02000FFC
+_0802ED28: .4byte gObjectContinue
 
 	thumb_func_start sub_0802ED2C
 sub_0802ED2C: @ 0x0802ED2C
@@ -32244,7 +32244,7 @@ sub_0802ED2C: @ 0x0802ED2C
 	orrs r1, r2
 	strh r1, [r4]
 	bl sub_0802DE5C
-	ldr r1, _0802ED58 @ =gUnknown_02000FFC
+	ldr r1, _0802ED58 @ =gObjectContinue
 	movs r0, #1
 	strh r0, [r1]
 	movs r0, #1
@@ -32253,7 +32253,7 @@ sub_0802ED2C: @ 0x0802ED2C
 	bx r1
 	.align 2, 0
 _0802ED54: .4byte 0xFFFFFC03
-_0802ED58: .4byte gUnknown_02000FFC
+_0802ED58: .4byte gObjectContinue
 
 	thumb_func_start sub_0802ED5C
 sub_0802ED5C: @ 0x0802ED5C
@@ -32274,7 +32274,7 @@ _0802ED6C:
 	ands r0, r1
 	orrs r0, r3
 	strb r0, [r2]
-	ldr r1, _0802ED8C @ =gUnknown_02000FFC
+	ldr r1, _0802ED8C @ =gObjectContinue
 	movs r0, #1
 	strh r0, [r1]
 	movs r0, #1
@@ -32282,7 +32282,7 @@ _0802ED6C:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0802ED8C: .4byte gUnknown_02000FFC
+_0802ED8C: .4byte gObjectContinue
 
 	thumb_func_start sub_0802ED90
 sub_0802ED90: @ 0x0802ED90
@@ -32302,14 +32302,14 @@ _0802EDA4:
 	movs r0, #3
 _0802EDAA:
 	strb r0, [r1]
-	ldr r1, _0802EDB8 @ =gUnknown_02000FFC
+	ldr r1, _0802EDB8 @ =gObjectContinue
 	movs r0, #1
 	strh r0, [r1]
 	movs r0, #1
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0802EDB8: .4byte gUnknown_02000FFC
+_0802EDB8: .4byte gObjectContinue
 
 	thumb_func_start sub_0802EDBC
 sub_0802EDBC: @ 0x0802EDBC
@@ -32876,7 +32876,7 @@ _0802F210:
 	ands r0, r1
 	orrs r0, r3
 	strb r0, [r2]
-	ldr r1, _0802F230 @ =gUnknown_02000FFC
+	ldr r1, _0802F230 @ =gObjectContinue
 	movs r0, #1
 	strh r0, [r1]
 	movs r0, #1
@@ -32884,7 +32884,7 @@ _0802F210:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0802F230: .4byte gUnknown_02000FFC
+_0802F230: .4byte gObjectContinue
 
 	thumb_func_start sub_0802F234
 sub_0802F234: @ 0x0802F234
@@ -32952,14 +32952,14 @@ _0802F296:
 _0802F2A2:
 	strb r0, [r2]
 _0802F2A4:
-	ldr r1, _0802F2B0 @ =gUnknown_02000FFC
+	ldr r1, _0802F2B0 @ =gObjectContinue
 	movs r0, #1
 	strh r0, [r1]
 	movs r0, #1
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0802F2B0: .4byte gUnknown_02000FFC
+_0802F2B0: .4byte gObjectContinue
 
 	thumb_func_start sub_0802F2B4
 sub_0802F2B4: @ 0x0802F2B4
@@ -32968,13 +32968,13 @@ sub_0802F2B4: @ 0x0802F2B4
 	ldrh r2, [r0]
 	adds r1, r1, r2
 	strh r1, [r0]
-	ldr r1, _0802F2C8 @ =gUnknown_02000FFC
+	ldr r1, _0802F2C8 @ =gObjectContinue
 	movs r0, #1
 	strh r0, [r1]
 	movs r0, #1
 	bx lr
 	.align 2, 0
-_0802F2C8: .4byte gUnknown_02000FFC
+_0802F2C8: .4byte gObjectContinue
 
 	thumb_func_start sub_0802F2CC
 sub_0802F2CC: @ 0x0802F2CC
@@ -32998,13 +32998,13 @@ sub_0802F2CC: @ 0x0802F2CC
 	strb r0, [r1]
 	subs r1, #1
 	strb r0, [r1]
-	ldr r1, _0802F300 @ =gUnknown_02000FFC
+	ldr r1, _0802F300 @ =gObjectContinue
 	movs r0, #1
 	strh r0, [r1]
 	movs r0, #1
 	bx lr
 	.align 2, 0
-_0802F300: .4byte gUnknown_02000FFC
+_0802F300: .4byte gObjectContinue
 
 	thumb_func_start sub_0802F304
 sub_0802F304: @ 0x0802F304
@@ -33032,7 +33032,7 @@ _0802F320:
 	orrs r0, r1
 _0802F330:
 	strh r0, [r2]
-	ldr r1, _0802F344 @ =gUnknown_02000FFC
+	ldr r1, _0802F344 @ =gObjectContinue
 	movs r0, #1
 	strh r0, [r1]
 	movs r0, #1
@@ -33040,7 +33040,7 @@ _0802F330:
 	bx r1
 	.align 2, 0
 _0802F340: .4byte 0xFFFFF87F
-_0802F344: .4byte gUnknown_02000FFC
+_0802F344: .4byte gObjectContinue
 
 	thumb_func_start sub_0802F348
 sub_0802F348: @ 0x0802F348
@@ -33099,13 +33099,13 @@ sub_0802F390: @ 0x0802F390
 	asrs r1, r3, #0x10
 	lsls r1, r1, #4
 	strh r1, [r0, #2]
-	ldr r1, _0802F3B4 @ =gUnknown_02000FFC
+	ldr r1, _0802F3B4 @ =gObjectContinue
 	movs r0, #1
 	strh r0, [r1]
 	movs r0, #1
 	bx lr
 	.align 2, 0
-_0802F3B4: .4byte gUnknown_02000FFC
+_0802F3B4: .4byte gObjectContinue
 
 	thumb_func_start sub_0802F3B8
 sub_0802F3B8: @ 0x0802F3B8

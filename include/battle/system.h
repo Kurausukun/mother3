@@ -23,7 +23,7 @@ public:
     virtual void sub_0805D638();
     virtual u32 getGameProgression();
     virtual void sub_0805D6F8();
-    
+
     void checkResetKeys();
 
     SARHandle* mHandle;

@@ -53,7 +53,7 @@ END_NONMATCH
 void Unit::nullsub_106() {}
 
 void Unit::kill() {
-    onDeath();
+    onNoStatus();
     setDead(1, 0);
     for (int i = 0; i < statusCount(); ++i) {
         Status* c = getStatus(i);
@@ -68,8 +68,8 @@ void Unit::revive() {
     setDead(0, 0);
 }
 
-bool Unit::setDead(u32 value, u8 force) {
-    if (_f4.dead != value || force == 1) {
+bool Unit::setDead(u32 value, bool force) {
+    if (_f4.dead != value || force == true) {
         _f4.dead = value;
         return true;
     }
@@ -84,9 +84,9 @@ bool Unit::isDead() {
     return _f4.dead == 1;
 }
 
-u8 Unit::unit_d0() {
+u8 Unit::onTurn() {
     if (dispStatusMsg() != true) {
-        onDeath();
+        onNoStatus();
         return false;
     }
     return true;
@@ -138,8 +138,8 @@ u8 Unit::dispStatusMsg() {
     return true;
 }
 
-bool Unit::unit_70(Action* a) {
-    return a->action_1a0();
+bool Unit::onAction(Action* a) {
+    return a->fire();
 }
 
 void Unit::unit_d8(Action* a1) {
@@ -148,12 +148,11 @@ void Unit::unit_d8(Action* a1) {
 
 void Unit::unit_78(Action* a1) {}
 
-void Unit::unit_e0(Action* a1) {
-    unit_80(a1);
+void Unit::alertActionFinish(Action* a1) {
+    onActionFinish(a1);
 }
 
-void Unit::unit_80(Action* a1) {
-}
+void Unit::onActionFinish(Action* a1) {}
 
 void Unit::unit_e8(Action* a1) {
     unit_88(a1);
@@ -167,11 +166,11 @@ void Unit::unit_f0(Action* a1) {
 
 void Unit::unit_90(Action* a1) {}
 
-void Unit::unit_f8(Action* a1) {
-    unit_98(a1);
+void Unit::alertActionReceive(Action* a1) {
+    onActionReceive(a1);
 }
 
-void Unit::unit_98(Action* a1) {}
+void Unit::onActionReceive(Action* a1) {}
 
 void Unit::unit_100(Action* a1) {
     unit_a0(a1);
@@ -179,7 +178,7 @@ void Unit::unit_100(Action* a1) {
 
 void Unit::unit_a0(Action* a1) {}
 
-void Unit::onDeath() {}
+void Unit::onNoStatus() {}
 
 void Unit::setLevel(s32 value) {
     mLevel = clampS32(value, 0, 99);
@@ -393,7 +392,8 @@ s32 Unit::getStatusIdx(Status::Type type) {
     return statusCount();
 }
 
-ASM_FUNC("asm/non_matching/unit/unit_2b0__4UnitUs.inc", Status* Unit::findStatus(Status::Type type));
+ASM_FUNC("asm/non_matching/unit/unit_2b0__4UnitUs.inc",
+         Status* Unit::findStatus(Status::Type type));
 
 s32 Unit::getStatusTypeCount(Status::Type type) {
     s32 num = 0;

@@ -141,9 +141,11 @@ void V::sub_08088F00(Setting s, s16* b) {
     }
 }
 
-extern "C" ASM_FUNC("asm/non_matching/archive/sub_08088F40__1VP7SettingPs.inc", void sub_08088F40__1VP7SettingPs());
+extern "C" ASM_FUNC("asm/non_matching/archive/sub_08088F40__1VP7SettingPs.inc",
+                    void sub_08088F40__1VP7SettingPs());
 
-extern "C" ASM_FUNC("asm/non_matching/archive/sub_0808904C__1VP7SettingPs.inc", void sub_0808904C__1VP7SettingPs());
+extern "C" ASM_FUNC("asm/non_matching/archive/sub_0808904C__1VP7SettingPs.inc",
+                    void sub_0808904C__1VP7SettingPs());
 
 extern "C" ASM_FUNC("asm/non_matching/archive/sub_08089178.inc", void sub_08089178());
 

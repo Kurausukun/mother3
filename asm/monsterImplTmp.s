@@ -148,13 +148,13 @@ _vt.10MechaDrago:
 	.word	dispStatusMsg__4Unit
 	.short	0
 	.short	0
-	.word	unit_70__4UnitP6Action
+	.word	onAction__4UnitP6Action
 	.short	0
 	.short	0
 	.word	unit_78__4UnitP6Action
 	.short	0
 	.short	0
-	.word	unit_80__4UnitP6Action
+	.word	onActionFinish__4UnitP6Action
 	.short	0
 	.short	0
 	.word	unit_88__4UnitP6Action
@@ -163,7 +163,7 @@ _vt.10MechaDrago:
 	.word	unit_90__4UnitP6Action
 	.short	0
 	.short	0
-	.word	unit_98__4UnitP6Action
+	.word	onActionReceive__4UnitP6Action
 	.short	0
 	.short	0
 	.word	unit_a0__4UnitP6Action
@@ -184,13 +184,13 @@ _vt.10MechaDrago:
 	.word	isDead__4Unit
 	.short	0
 	.short	0
-	.word	unit_d0__7Monster
+	.word	onTurn__7Monster
 	.short	0
 	.short	0
 	.word	unit_d8__4UnitP6Action
 	.short	0
 	.short	0
-	.word	unit_e0__4UnitP6Action
+	.word	alertActionFinish__4UnitP6Action
 	.short	0
 	.short	0
 	.word	unit_e8__4UnitP6Action
@@ -199,13 +199,13 @@ _vt.10MechaDrago:
 	.word	unit_f0__4UnitP6Action
 	.short	0
 	.short	0
-	.word	unit_f8__4UnitP6Action
+	.word	alertActionReceive__4UnitP6Action
 	.short	0
 	.short	0
 	.word	unit_100__4UnitP6Action
 	.short	0
 	.short	0
-	.word	onDeath__4Unit
+	.word	onNoStatus__4Unit
 	.short	0
 	.short	0
 	.word	setLevel__4Uniti
@@ -370,7 +370,7 @@ _vt.10MechaDrago:
 	.word	getStatusTypeCount__4UnitUs
 	.short	0
 	.short	0
-	.word	monster_2c0__12MaskedMan3rd
+	.word	calcAction__12MaskedMan3rd
 	.short	0
 	.short	0
 	.word	monster_2c8__7MonsterP6Action
@@ -385,10 +385,10 @@ _vt.10MechaDrago:
 	.word	scaledExperience__7Monster
 	.short	0
 	.short	0
-	.word	monster_2e8__7Monster
+	.word	calcItemDrop__7Monster
 	.short	0
 	.short	0
-	.word	monster_2f0__7Monster
+	.word	scaledMoney__7Monster
 	.short	0
 	.short	0
 	.word	monster_2f8__7Monster
@@ -574,13 +574,13 @@ _vt.20ReconstructedCaribou:
 	.word	dispStatusMsg__4Unit
 	.short	0
 	.short	0
-	.word	unit_70__4UnitP6Action
+	.word	onAction__4UnitP6Action
 	.short	0
 	.short	0
 	.word	unit_78__4UnitP6Action
 	.short	0
 	.short	0
-	.word	unit_80__4UnitP6Action
+	.word	onActionFinish__4UnitP6Action
 	.short	0
 	.short	0
 	.word	unit_88__4UnitP6Action
@@ -589,7 +589,7 @@ _vt.20ReconstructedCaribou:
 	.word	unit_90__4UnitP6Action
 	.short	0
 	.short	0
-	.word	unit_98__4UnitP6Action
+	.word	onActionReceive__4UnitP6Action
 	.short	0
 	.short	0
 	.word	unit_a0__4UnitP6Action
@@ -610,13 +610,13 @@ _vt.20ReconstructedCaribou:
 	.word	isDead__4Unit
 	.short	0
 	.short	0
-	.word	unit_d0__7Monster
+	.word	onTurn__7Monster
 	.short	0
 	.short	0
 	.word	unit_d8__4UnitP6Action
 	.short	0
 	.short	0
-	.word	unit_e0__4UnitP6Action
+	.word	alertActionFinish__4UnitP6Action
 	.short	0
 	.short	0
 	.word	unit_e8__4UnitP6Action
@@ -625,13 +625,13 @@ _vt.20ReconstructedCaribou:
 	.word	unit_f0__4UnitP6Action
 	.short	0
 	.short	0
-	.word	unit_f8__4UnitP6Action
+	.word	alertActionReceive__4UnitP6Action
 	.short	0
 	.short	0
 	.word	unit_100__4UnitP6Action
 	.short	0
 	.short	0
-	.word	onDeath__4Unit
+	.word	onNoStatus__4Unit
 	.short	0
 	.short	0
 	.word	setLevel__4Uniti
@@ -796,7 +796,7 @@ _vt.20ReconstructedCaribou:
 	.word	getStatusTypeCount__4UnitUs
 	.short	0
 	.short	0
-	.word	monster_2c0__12MaskedMan3rd
+	.word	calcAction__12MaskedMan3rd
 	.short	0
 	.short	0
 	.word	monster_2c8__7MonsterP6Action
@@ -811,10 +811,10 @@ _vt.20ReconstructedCaribou:
 	.word	scaledExperience__7Monster
 	.short	0
 	.short	0
-	.word	monster_2e8__7Monster
+	.word	calcItemDrop__7Monster
 	.short	0
 	.short	0
-	.word	monster_2f0__7Monster
+	.word	scaledMoney__7Monster
 	.short	0
 	.short	0
 	.word	monster_2f8__7Monster
@@ -1000,13 +1000,13 @@ _vt.14DefaultMonster:
 	.word	dispStatusMsg__4Unit
 	.short	0
 	.short	0
-	.word	unit_70__4UnitP6Action
+	.word	onAction__4UnitP6Action
 	.short	0
 	.short	0
 	.word	unit_78__4UnitP6Action
 	.short	0
 	.short	0
-	.word	unit_80__4UnitP6Action
+	.word	onActionFinish__4UnitP6Action
 	.short	0
 	.short	0
 	.word	unit_88__4UnitP6Action
@@ -1015,7 +1015,7 @@ _vt.14DefaultMonster:
 	.word	unit_90__4UnitP6Action
 	.short	0
 	.short	0
-	.word	unit_98__4UnitP6Action
+	.word	onActionReceive__4UnitP6Action
 	.short	0
 	.short	0
 	.word	unit_a0__4UnitP6Action
@@ -1036,13 +1036,13 @@ _vt.14DefaultMonster:
 	.word	isDead__4Unit
 	.short	0
 	.short	0
-	.word	unit_d0__7Monster
+	.word	onTurn__7Monster
 	.short	0
 	.short	0
 	.word	unit_d8__4UnitP6Action
 	.short	0
 	.short	0
-	.word	unit_e0__4UnitP6Action
+	.word	alertActionFinish__4UnitP6Action
 	.short	0
 	.short	0
 	.word	unit_e8__4UnitP6Action
@@ -1051,13 +1051,13 @@ _vt.14DefaultMonster:
 	.word	unit_f0__4UnitP6Action
 	.short	0
 	.short	0
-	.word	unit_f8__4UnitP6Action
+	.word	alertActionReceive__4UnitP6Action
 	.short	0
 	.short	0
 	.word	unit_100__4UnitP6Action
 	.short	0
 	.short	0
-	.word	onDeath__4Unit
+	.word	onNoStatus__4Unit
 	.short	0
 	.short	0
 	.word	setLevel__4Uniti
@@ -1222,7 +1222,7 @@ _vt.14DefaultMonster:
 	.word	getStatusTypeCount__4UnitUs
 	.short	0
 	.short	0
-	.word	monster_2c0__12MaskedMan3rd
+	.word	calcAction__12MaskedMan3rd
 	.short	0
 	.short	0
 	.word	monster_2c8__7MonsterP6Action
@@ -1237,10 +1237,10 @@ _vt.14DefaultMonster:
 	.word	scaledExperience__7Monster
 	.short	0
 	.short	0
-	.word	monster_2e8__7Monster
+	.word	calcItemDrop__7Monster
 	.short	0
 	.short	0
-	.word	monster_2f0__7Monster
+	.word	scaledMoney__7Monster
 	.short	0
 	.short	0
 	.word	monster_2f8__7Monster
@@ -2001,10 +2001,10 @@ setHP__12MaskedMan3rdi:
 	.size	 setHP__12MaskedMan3rdi,.Lfe9-setHP__12MaskedMan3rdi
 	.align	2, 0
 	.align	2, 0
-	.globl	monster_2c0__12MaskedMan3rd
-	.type	 monster_2c0__12MaskedMan3rd,function
+	.globl	calcAction__12MaskedMan3rd
+	.type	 calcAction__12MaskedMan3rd,function
 	.thumb_func
-monster_2c0__12MaskedMan3rd:
+calcAction__12MaskedMan3rd:
 .LFB10:
 .LM84:
 
@@ -2025,7 +2025,7 @@ monster_2c0__12MaskedMan3rd:
 .L227:
 	add	r0, r1, #0
 	add	r1, r4, #0
-	bl	sub_080741AC
+	bl	getMonsterSkill
 .LBE69:
 .LM87:
 
@@ -2038,7 +2038,7 @@ monster_2c0__12MaskedMan3rd:
 	.word	639
 .LFE10:
 .Lfe10:
-	.size	 monster_2c0__12MaskedMan3rd,.Lfe10-monster_2c0__12MaskedMan3rd
+	.size	 calcAction__12MaskedMan3rd,.Lfe10-calcAction__12MaskedMan3rd
 	.align	2, 0
 	.align	2, 0
 	.globl	_._12MaskedMan3rd
@@ -7104,11 +7104,11 @@ _._3Unk:
 	.byte	0x1b
 	.4byte	0x1e1b
 	.byte	0x1
-	.ascii	"unit_70\000"
+	.ascii	"onAction\000"
 
 	.byte	0x6
 	.byte	0x34
-	.ascii	"unit_70__4UnitP6Action\000"
+	.ascii	"onAction__4UnitP6Action\000"
 
 	.4byte	0x2dc
 	.byte	0x1
@@ -7147,11 +7147,11 @@ _._3Unk:
 	.byte	0x1a
 	.4byte	0x1e93
 	.byte	0x1
-	.ascii	"unit_80\000"
+	.ascii	"onActionFinish\000"
 
 	.byte	0x6
 	.byte	0x37
-	.ascii	"unit_80__4UnitP6Action\000"
+	.ascii	"onActionFinish__4UnitP6Action\000"
 
 	.byte	0x1
 	.byte	0x2
@@ -7210,11 +7210,11 @@ _._3Unk:
 	.byte	0x1a
 	.4byte	0x1f47
 	.byte	0x1
-	.ascii	"unit_98\000"
+	.ascii	"onActionReceive\000"
 
 	.byte	0x6
 	.byte	0x3a
-	.ascii	"unit_98__4UnitP6Action\000"
+	.ascii	"onActionReceive__4UnitP6Action\000"
 
 	.byte	0x1
 	.byte	0x2
@@ -7349,11 +7349,11 @@ _._3Unk:
 	.byte	0x1b
 	.4byte	0x20a7
 	.byte	0x1
-	.ascii	"unit_d0\000"
+	.ascii	"onTurn\000"
 
 	.byte	0x6
 	.byte	0x42
-	.ascii	"unit_d0__4Unit\000"
+	.ascii	"onTurn__4Unit\000"
 
 	.4byte	0x18cf
 	.byte	0x1
@@ -7390,11 +7390,11 @@ _._3Unk:
 	.byte	0x1a
 	.4byte	0x211f
 	.byte	0x1
-	.ascii	"unit_e0\000"
+	.ascii	"alertActionFinish\000"
 
 	.byte	0x6
 	.byte	0x45
-	.ascii	"unit_e0__4UnitP6Action\000"
+	.ascii	"alertActionFinish__4UnitP6Action\000"
 
 	.byte	0x1
 	.byte	0x2
@@ -7453,11 +7453,11 @@ _._3Unk:
 	.byte	0x1a
 	.4byte	0x21d3
 	.byte	0x1
-	.ascii	"unit_f8\000"
+	.ascii	"alertActionReceive\000"
 
 	.byte	0x6
 	.byte	0x48
-	.ascii	"unit_f8__4UnitP6Action\000"
+	.ascii	"alertActionReceive__4UnitP6Action\000"
 
 	.byte	0x1
 	.byte	0x2
@@ -7495,11 +7495,11 @@ _._3Unk:
 	.byte	0x1a
 	.4byte	0x2240
 	.byte	0x1
-	.ascii	"onDeath\000"
+	.ascii	"onNoStatus\000"
 
 	.byte	0x6
 	.byte	0x4a
-	.ascii	"onDeath__4Unit\000"
+	.ascii	"onNoStatus__4Unit\000"
 
 	.byte	0x1
 	.byte	0x2
@@ -13651,11 +13651,11 @@ _._3Unk:
 	.byte	0x2f
 	.4byte	0x6691
 	.byte	0x1
-	.ascii	"monster_2c0\000"
+	.ascii	"calcAction\000"
 
 	.byte	0x9
 	.byte	0x10
-	.ascii	"monster_2c0__12MaskedMan3rd\000"
+	.ascii	"calcAction__12MaskedMan3rd\000"
 
 	.4byte	0x4905
 	.byte	0x1
@@ -14096,11 +14096,11 @@ _._3Unk:
 	.byte	0x1b
 	.4byte	0x6aee
 	.byte	0x1
-	.ascii	"unit_d0\000"
+	.ascii	"onTurn\000"
 
 	.byte	0x8
 	.byte	0x64
-	.ascii	"unit_d0__7Monster\000"
+	.ascii	"onTurn__7Monster\000"
 
 	.4byte	0x18cf
 	.byte	0x1
@@ -14257,11 +14257,11 @@ _._3Unk:
 	.byte	0x1b
 	.4byte	0x6c9c
 	.byte	0x1
-	.ascii	"monster_2c0\000"
+	.ascii	"calcAction\000"
 
 	.byte	0x8
 	.byte	0x6d
-	.ascii	"monster_2c0__7Monster\000"
+	.ascii	"calcAction__7Monster\000"
 
 	.4byte	0x4905
 	.byte	0x1
@@ -14357,11 +14357,11 @@ _._3Unk:
 	.byte	0x1b
 	.4byte	0x6dd7
 	.byte	0x1
-	.ascii	"monster_2e8\000"
+	.ascii	"calcItemDrop\000"
 
 	.byte	0x8
 	.byte	0x72
-	.ascii	"monster_2e8__7Monster\000"
+	.ascii	"calcItemDrop__7Monster\000"
 
 	.4byte	0x2f9
 	.byte	0x1
@@ -14377,11 +14377,11 @@ _._3Unk:
 	.byte	0x1b
 	.4byte	0x6e15
 	.byte	0x1
-	.ascii	"monster_2f0\000"
+	.ascii	"scaledMoney\000"
 
 	.byte	0x8
 	.byte	0x73
-	.ascii	"monster_2f0__7Monster\000"
+	.ascii	"scaledMoney__7Monster\000"
 
 	.4byte	0x2f9
 	.byte	0x1
@@ -22496,7 +22496,7 @@ _._3Unk:
 	.byte	0x1b
 	.4byte	0xc19f
 	.byte	0x1
-	.ascii	"getPlayer\000"
+	.ascii	"GetPlayer\000"
 
 	.byte	0x5
 	.byte	0x3a
@@ -24292,11 +24292,11 @@ _._3Unk:
 	.byte	0x1a
 	.4byte	0xd706
 	.byte	0x1
-	.ascii	"battle_f0\000"
+	.ascii	"onWin\000"
 
 	.byte	0x5
 	.byte	0x9e
-	.ascii	"battle_f0__6Battle\000"
+	.ascii	"onWin__6Battle\000"
 
 	.byte	0x1
 	.byte	0x2
@@ -24311,11 +24311,11 @@ _._3Unk:
 	.byte	0x1a
 	.4byte	0xd73b
 	.byte	0x1
-	.ascii	"battle_f8\000"
+	.ascii	"onEscape\000"
 
 	.byte	0x5
 	.byte	0x9f
-	.ascii	"battle_f8__6Battle\000"
+	.ascii	"onEscape__6Battle\000"
 
 	.byte	0x1
 	.byte	0x2
@@ -24330,11 +24330,11 @@ _._3Unk:
 	.byte	0x1a
 	.4byte	0xd772
 	.byte	0x1
-	.ascii	"battle_100\000"
+	.ascii	"onLose\000"
 
 	.byte	0x5
 	.byte	0xa0
-	.ascii	"battle_100__6Battle\000"
+	.ascii	"onLose__6Battle\000"
 
 	.byte	0x1
 	.byte	0x2
@@ -24603,11 +24603,11 @@ _._3Unk:
 	.byte	0x1b
 	.4byte	0xda94
 	.byte	0x1
-	.ascii	"battle_170\000"
+	.ascii	"isFightBoss\000"
 
 	.byte	0x5
 	.byte	0xae
-	.ascii	"battle_170__6Battle\000"
+	.ascii	"isFightBoss__6Battle\000"
 
 	.4byte	0x2dc
 	.byte	0x1
@@ -25023,11 +25023,11 @@ _._3Unk:
 	.byte	0x1b
 	.4byte	0xdf6b
 	.byte	0x1
-	.ascii	"battle_218\000"
+	.ascii	"partyInfo\000"
 
 	.byte	0x5
 	.byte	0xc3
-	.ascii	"battle_218__6Battle\000"
+	.ascii	"partyInfo__6Battle\000"
 
 	.4byte	0xc4d4
 	.byte	0x1
@@ -25043,11 +25043,11 @@ _._3Unk:
 	.byte	0x1b
 	.4byte	0xdfa6
 	.byte	0x1
-	.ascii	"battle_220\000"
+	.ascii	"guestInfo\000"
 
 	.byte	0x5
 	.byte	0xc4
-	.ascii	"battle_220__6Battle\000"
+	.ascii	"guestInfo__6Battle\000"
 
 	.4byte	0xc74b
 	.byte	0x1
@@ -25063,11 +25063,11 @@ _._3Unk:
 	.byte	0x1b
 	.4byte	0xdfe1
 	.byte	0x1
-	.ascii	"battle_228\000"
+	.ascii	"monsterInfo\000"
 
 	.byte	0x5
 	.byte	0xc5
-	.ascii	"battle_228__6Battle\000"
+	.ascii	"monsterInfo__6Battle\000"
 
 	.4byte	0xcde6
 	.byte	0x1
@@ -25201,11 +25201,11 @@ _._3Unk:
 	.byte	0x19
 	.4byte	0xe1bf
 	.byte	0x1
-	.ascii	"sub_0805E338\000"
+	.ascii	"getNextPlayer\000"
 
 	.byte	0x5
 	.byte	0xce
-	.ascii	"sub_0805E338__6BattleP4Unit\000"
+	.ascii	"getNextPlayer__6BattleP4Unit\000"
 
 	.4byte	0xc4eb
 	.byte	0x1
@@ -26582,7 +26582,7 @@ _._3Unk:
 	.ascii	"DefaultMonster::setHP\000"
 
 	.4byte	0x8a24
-	.ascii	"DefaultMonster::monster_2c0\000"
+	.ascii	"DefaultMonster::calcAction\000"
 
 	.4byte	0x8a4b
 	.ascii	"DefaultMonster::~DefaultMonster\000"

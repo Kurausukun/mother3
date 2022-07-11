@@ -1,8 +1,8 @@
 #ifndef BATTLE_MONSTER_H
 #define BATTLE_MONSTER_H
 
-#include "global.h"
 #include "battle/unit.h"
+#include "global.h"
 
 class Monster;
 class MonsterSkill;
@@ -97,7 +97,7 @@ public:
     virtual ~Monster() override;
 
     void* getRTTI() override;
-    u8 unit_d0() override;
+    u8 onTurn() override;
     u16 unit_178() override;
     u16 id() const override;
     Msg name() const override;
@@ -106,13 +106,13 @@ public:
     u16 critSfx() override;
     u16 missSfx() override;
 
-    virtual Action* monster_2c0();
+    virtual Action* calcAction();
     virtual bool monster_2c8(Action*);
     virtual void onRoundBegin();
     virtual void onRoundEnd();
     virtual u32 scaledExperience();
-    virtual u32 monster_2e8();
-    virtual u32 monster_2f0();
+    virtual u32 calcItemDrop();
+    virtual u32 scaledMoney();
     virtual void monster_2f8();
     virtual void monster_300(s32);
     virtual void monster_308(const Msg&);
@@ -373,4 +373,4 @@ struct MonsterType {
 
 RTTI(Monster);
 
-#endif // BATTLE_MONSTER_H
+#endif  // BATTLE_MONSTER_H

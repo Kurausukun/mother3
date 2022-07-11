@@ -60,7 +60,7 @@ _08078828:
 _08078842:
 	adds r0, r7, #0
 	movs r1, #2
-	bl unitIsPlayer
+	bl IsPlayerAndType
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -85,7 +85,7 @@ _08078874:
 	movs r0, #0xc3
 	adds r1, r7, #0
 	adds r2, r7, #0
-	bl playSeq
+	bl PlayAnimation
 	ldr r3, [r6, #0x1c]
 	movs r0, #0xa8
 	lsls r0, r0, #1
@@ -212,7 +212,7 @@ _08078966:
 	adds r2, r0, #0
 	movs r0, #3
 	adds r1, r5, #0
-	bl playSeq
+	bl PlayAnimation
 	b _08078BA2
 _08078998:
 	ldr r1, [r6, #0x1c]

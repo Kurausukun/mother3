@@ -1,7 +1,7 @@
 #include "battle.h"
-#include "battle/player.h"
 #include "battle/guest.h"
 #include "battle/monster.h"
+#include "battle/player.h"
 
 extern "C" Msg sub_080706D0(u16, u16);
 extern "C" Msg StrFmt(const Msg&, const Msg&, const Msg&, const Msg&);
@@ -31,11 +31,11 @@ extern "C" Struct160* sub_08072608() {
 }
 
 extern "C" bool IsBossBattle() {
-    return BattleManager::get()->battle_170();
+    return BattleManager::get()->isFightBoss();
 }
 
 extern "C" bool sub_08072648(u16 value) {
-    return BattleManager::get()->battle_170() && BattleManager::get()->battle_138() == value;
+    return BattleManager::get()->isFightBoss() && BattleManager::get()->battle_138() == value;
 }
 
 extern "C" BattleGroup* sub_08072698() {
@@ -86,7 +86,7 @@ extern "C" bool sub_080727F8() {
     return BattleManager::get()->battle_1d0();
 }
 
-extern "C" bool sub_08072818() {
+extern "C" bool IsBattleLost() {
     return BattleManager::get()->isBattleLost();
 }
 
@@ -107,26 +107,26 @@ extern "C" BgClass* sub_08072898() {
 }
 
 extern "C" PartyInfo* getPartyInfo() {
-    return BattleManager::get()->battle_218();
+    return BattleManager::get()->partyInfo();
 }
 
 extern "C" GuestInfo* getGuestInfo() {
-    return BattleManager::get()->battle_220();
+    return BattleManager::get()->guestInfo();
 }
 
 extern "C" MonsterInfo* getMonsterInfo() {
-    return BattleManager::get()->battle_228();
+    return BattleManager::get()->monsterInfo();
 }
 
 extern "C" Class2* sub_08072918() {
     return BattleManager::get()->battle_230();
 }
 
-extern "C" bool sub_08072938(Unit* u) {
+extern "C" bool IsPlayer(Unit* u) {
     return u && u->getRTTI() == getPlayerRTTI();
 }
 
-extern "C" bool unitIsPlayer(Unit* u, u16 id) {
+extern "C" bool IsPlayerAndType(Unit* u, u16 id) {
     return u && u->getRTTI() == getPlayerRTTI() && u->id() == id;
 }
 
@@ -138,7 +138,7 @@ extern "C" s32 getPartyCount() {
     return getPartyInfo()->numPlayers();
 }
 
-extern "C" Player* getPlayer(s32 idx) {
+extern "C" Player* GetPlayer(s32 idx) {
     return getPartyInfo()->getPlayer(idx);
 }
 
@@ -252,11 +252,11 @@ extern "C" Monster* sub_08072E38(u16 idx) {
     return NULL;
 }
 
-extern "C" s32 sub_08072EA8() {
+extern "C" s32 GetMonsterCount() {
     return getMonsterInfo()->monster_info_e8();
 }
 
-extern "C" Monster* sub_08072EC4(s32 idx) {
+extern "C" Monster* GetMonster(s32 idx) {
     return getMonsterInfo()->monster_info_f0(idx);
 }
 
@@ -294,7 +294,7 @@ void sub_08073018(bool r0, bool r1) {
 
 extern "C" ASM_FUNC("asm/non_matching/battleData/sub_08073070.inc", void sub_08073070());
 
-extern "C" void playSeq(u16 type, Unit* sender, Unit* target) {
+extern "C" void PlayAnimation(u16 type, Unit* sender, Unit* target) {
     if (type != 0) {
         s32 num = target ? 1 : 0;
         Unit* temp = target;
@@ -302,7 +302,7 @@ extern "C" void playSeq(u16 type, Unit* sender, Unit* target) {
     }
 }
 
-extern "C" void playSeqForEach(u16 type, Unit* sender, s32 num_receivers, Unit** receivers) {
+extern "C" void PlayAnimationForEach(u16 type, Unit* sender, s32 num_receivers, Unit** receivers) {
     if (type != 0) {
         BattleManager::get()->battle_238()->sequencer_10(type, sender, num_receivers, receivers);
     }
@@ -358,12 +358,17 @@ Msg ROMStrFmt(s32 r0, const Msg& r1, const Msg& r2, const Msg& r3) {
     return StrFmt(sub_08073444(r0), r1, r2, r3);
 }
 
-extern "C" ASM_FUNC("asm/non_matching/battleData/sub_080734A0.inc", Msg StrFmt(const Msg&, const Msg&, const Msg&, const Msg&));
+extern "C" ASM_FUNC("asm/non_matching/battleData/sub_080734A0.inc",
+                    Msg StrFmt(const Msg&, const Msg&, const Msg&, const Msg&));
 
-ASM_FUNC("asm/non_matching/battleData/print__3MsgRC13PrintSettingsb.inc", void Msg::print(const Color&, bool));
+ASM_FUNC("asm/non_matching/battleData/print__3MsgRC13PrintSettingsb.inc",
+         void Msg::print(const Color&, bool));
 
-extern "C" ASM_FUNC("asm/non_matching/battleData/sub_0807362C.inc", void sub_0807362C(const Color&, bool));
+extern "C" ASM_FUNC("asm/non_matching/battleData/sub_0807362C.inc",
+                    void sub_0807362C(const Color&, bool));
 
-extern "C" ASM_FUNC("asm/non_matching/battleData/sub_0807367C.inc", void sub_0807367C(const Color&, bool));
+extern "C" ASM_FUNC("asm/non_matching/battleData/sub_0807367C.inc",
+                    void sub_0807367C(const Color&, bool));
 
-extern "C" ASM_FUNC("asm/non_matching/battleData/sub_080736B4.inc", void sub_080736B4(const Color&, bool));
+extern "C" ASM_FUNC("asm/non_matching/battleData/sub_080736B4.inc",
+                    void sub_080736B4(const Color&, bool));

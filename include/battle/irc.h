@@ -31,7 +31,6 @@ struct Interrupt {
     u8 enabled;
     u32 states[4];
     Intr2 _18[4];
-
 };
 
 class Irc : public Base {

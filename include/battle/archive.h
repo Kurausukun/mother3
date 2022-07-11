@@ -1,9 +1,9 @@
 #ifndef BATTLE_ARCHIVE_H
 #define BATTLE_ARCHIVE_H
 
+#include "base.h"
 #include "global.h"
 #include "vector.h"
-#include "base.h"
 
 struct BXT {
     u32 magic;
@@ -24,7 +24,7 @@ class BXTHandle {
     BXTHandle();
     BXTHandle(const BXTRef& ref);
     virtual ~BXTHandle();
-    
+
     Msg getMessage(u32 index);
     u32 type(const BXTRef& ref) const;
     u32 count() const;
@@ -45,4 +45,4 @@ struct BattleMessage : Msg {
     BattleMessage(BXTHandle* handle, u32 index);
 };
 
-#endif // BATTLE_ARCHIVE_H
+#endif  // BATTLE_ARCHIVE_H

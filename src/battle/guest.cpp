@@ -41,8 +41,8 @@ void Guest::setupStats() {
 
 Guest::~Guest() {}
 
-u8 Guest::unit_d0() {
-    if (Unit::unit_d0() != 1) {
+u8 Guest::onTurn() {
+    if (Unit::onTurn() != 1) {
         return false;
     }
 
@@ -56,7 +56,7 @@ u8 Guest::unit_d0() {
         return false;
     }
 
-    bool result = unit_70(tmp);
+    bool result = onAction(tmp);
     delete tmp;
     return result;
 }

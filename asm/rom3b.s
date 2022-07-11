@@ -302,7 +302,7 @@ sub_080C0AF8: @ 0x080C0AF8
 	adds r1, r0, #0
 	adds r0, r4, #0
 	movs r2, #1
-	bl sub_08073C4C
+	bl InitHeal
 	movs r0, #0x28
 	bl setsleep
 _080C0B3C:

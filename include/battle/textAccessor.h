@@ -12,4 +12,4 @@ public:
     u32 _ac;
 };
 
-#endif // BATTLE_TEXT_ACCESSOR_H
+#endif  // BATTLE_TEXT_ACCESSOR_H

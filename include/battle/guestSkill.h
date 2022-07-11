@@ -37,7 +37,7 @@ public:
     bool hasDim() const override;
     u16 animNo() const override;
     u16 successAnimNo() const override;
-    u16 nextAnim() const override;
+    u16 critAnimNo() const override;
     u32 sfxNo() const override;
     s32 hitChance() const override;
     s32 critChance() const override;

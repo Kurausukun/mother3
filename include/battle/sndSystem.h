@@ -15,4 +15,4 @@ public:
 };
 SndSystem* sub_0806FDB0();
 
-#endif // BATTLE_SND_SYSTEM
+#endif  // BATTLE_SND_SYSTEM

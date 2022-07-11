@@ -49,13 +49,13 @@ public:
     s16 get58(u32 idx) const { return *(mStatusWeaknesses + idx); }
 
     virtual u8 dispStatusMsg();
-    virtual bool unit_70(Action* a);
+    virtual bool onAction(Action* a);
 
     virtual void unit_78(Action* a1);
-    virtual void unit_80(Action* a1);
+    virtual void onActionFinish(Action* a1);
     virtual void unit_88(Action* a1);
     virtual void unit_90(Action* a1);
-    virtual void unit_98(Action* a1);
+    virtual void onActionReceive(Action* a1);
     virtual void unit_a0(Action* a1);
 
     virtual void unit_a8();
@@ -63,15 +63,15 @@ public:
     virtual void onRevive();
     virtual bool isAlive();
     virtual bool isDead();
-    virtual u8 unit_d0();
+    virtual u8 onTurn();
 
     virtual void unit_d8(Action* a1);
-    virtual void unit_e0(Action* a1);
+    virtual void alertActionFinish(Action* a1);
     virtual void unit_e8(Action* a1);
     virtual void unit_f0(Action* a1);
-    virtual void unit_f8(Action* a1);
+    virtual void alertActionReceive(Action* a1);
     virtual void unit_100(Action* a1);
-    virtual void onDeath();
+    virtual void onNoStatus();
 
     virtual void setLevel(s32 value);
     virtual void setHP(s32 value);
@@ -137,7 +137,7 @@ public:
     void kill();
     void revive();
 
-    bool setDead(u32 value, u8 force);
+    bool setDead(u32 value, bool force);
     void nullsub_106();
     void nullsub_27();
     void sub_08075840();
@@ -265,13 +265,7 @@ struct UnitCmd : Base {
 };
 
 struct ElementType {
-    enum {
-        None,
-        Fire,
-        Ice,
-        Thunder,
-        Explosion
-    };
+    enum { None, Fire, Ice, Thunder, Explosion };
 };
 
 struct TargetType {

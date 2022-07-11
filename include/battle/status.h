@@ -94,4 +94,4 @@ public:
     };
 };
 
-#endif // BATTLE_STATUS_H
+#endif  // BATTLE_STATUS_H

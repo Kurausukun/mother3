@@ -66,4 +66,4 @@ public:
 
 extern "C" void* getPlayerRTTI();
 
-#endif // BATTLE_PLAYER_H
+#endif  // BATTLE_PLAYER_H

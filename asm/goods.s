@@ -63,8 +63,8 @@ sub_08062368: @ 0x08062368
 	.align 2, 0
 _08062380: .4byte gUnknown_02002378
 
-	thumb_func_start sub_08062384
-sub_08062384: @ 0x08062384
+	thumb_func_start MonsterInfo_ct
+MonsterInfo_ct: @ 0x08062384
 	push {r4, r5, r6, r7, lr}
 	sub sp, #0x28
 	adds r7, r0, #0

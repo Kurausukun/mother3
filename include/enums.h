@@ -3,7 +3,7 @@
 
 #include "global.h"
 
-struct BattleSeq {
+struct Animation {
     enum {
         None = 0,
         Hit = 0x1,
@@ -241,6 +241,8 @@ enum Item {
     ItemFakeFryingPan,
     ItemRealBat,
     ItemMiniMiniCharm,
+    ItemFleaCharm,
+    ItemMosquitoCharm,
     ItemFlyCharm,
     ItemBantamCharm,
     ItemFeatherCharm,
@@ -296,6 +298,7 @@ enum Item {
     ItemFavoriteFood,
     ItemNut,
     ItemNutBread,
+    ItemNutCookie,
     ItemFreshMilk,
     ItemRottenMilk,
     ItemYogurt,

@@ -1185,8 +1185,8 @@ sub_080707C4: @ 0x080707C4
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080707E4
-sub_080707E4: @ 0x080707E4
+	thumb_func_start PlaySoundBlocking
+PlaySoundBlocking: @ 0x080707E4
 	push {lr}
 	sub sp, #0x38
 	lsls r0, r0, #0x10

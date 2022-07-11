@@ -163,7 +163,7 @@ _080790F2:
 	movs r0, #0x33
 	adds r1, r7, #0
 	adds r2, r7, #0
-	bl playSeq
+	bl PlayAnimation
 _08079178:
 	lsrs r0, r6, #0x1f
 	adds r0, r6, r0
@@ -261,7 +261,7 @@ _080791B4:
 	movs r0, #0x36
 	adds r1, r7, #0
 	adds r2, r7, #0
-	bl playSeq
+	bl PlayAnimation
 	mov r2, r8
 	ldr r1, [r2, #0x1c]
 	movs r5, #0xb0
@@ -303,7 +303,7 @@ _08079264:
 	adds r2, r0, #0
 	adds r0, r4, #0
 	adds r1, r7, #0
-	bl playSeq
+	bl PlayAnimation
 	adds r0, r7, #0
 	movs r1, #0x17
 	movs r2, #1

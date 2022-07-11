@@ -76,11 +76,11 @@ u32 GuestSkill::priority() const {
 }
 
 Msg GuestSkill::getUseMessage() const {
-    return createMsg(mInfo->move.msg_no);
+    return ROMStr(mInfo->move.msg_no);
 }
 
 Msg GuestSkill::getForceUseMessage() const {
-    return createMsg(mInfo->move.msg_no);
+    return ROMStr(mInfo->move.msg_no);
 }
 
 bool GuestSkill::hasDim() const {
@@ -95,7 +95,7 @@ u16 GuestSkill::successAnimNo() const {
     return mInfo->move.anim_success;
 }
 
-u16 GuestSkill::nextAnim() const {
+u16 GuestSkill::critAnimNo() const {
     if (!successAnimNo()) {
         return 0;
     }

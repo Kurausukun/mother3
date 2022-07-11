@@ -14,7 +14,7 @@
 . = 0x00000048; gUnknown_02000048 = .;
 . = 0x00000058; gUnknown_02000058 = .;
 . = 0x00000FF8; gUnknown_02000FF8 = .;
-. = 0x00000FFC; gUnknown_02000FFC = .;
+. = 0x00000FFC; gObjectContinue = .;
 . = 0x00001000; gUnknown_02001000 = .;
 . = 0x00001002; gUnknown_02001002 = .;
 . = 0x00001004; gUnknown_02001004 = .;

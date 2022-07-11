@@ -362,7 +362,7 @@ sub_080A04CC: @ 0x080A04CC
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
-	bl unit_70__4UnitP6Action
+	bl onAction__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -599,7 +599,7 @@ sub_080A0680: @ 0x080A0680
 	cmp r0, #1
 	bne _080A06C4
 	movs r0, #0
-	bl sub_08072EC4
+	bl GetMonster
 	ldr r1, [r0, #0x1c]
 	movs r2, #0xcc
 	lsls r2, r2, #1
@@ -704,7 +704,7 @@ sub_080A0758: @ 0x080A0758
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
-	bl unit_70__4UnitP6Action
+	bl onAction__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -1050,7 +1050,7 @@ sub_080A09D0: @ 0x080A09D0
 sub_080A09DC: @ 0x080A09DC
 	push {r4, lr}
 	adds r4, r0, #0
-	bl unit_70__4UnitP6Action
+	bl onAction__4UnitP6Action
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -1340,7 +1340,7 @@ sub_080A0BE0: @ 0x080A0BE0
 	sub sp, #4
 	adds r4, r0, #0
 	adds r6, r1, #0
-	bl doHit__6ActionP4Unit
+	bl onDamage__6ActionP4Unit
 	ldr r1, [r4, #0x1c]
 	movs r0, #0x94
 	lsls r0, r0, #1
@@ -1397,7 +1397,7 @@ sub_080A0C2C: @ 0x080A0C2C
 	bl sub_0807014C
 	adds r0, r6, #0
 	adds r1, r5, #0
-	bl doHit__6ActionP4Unit
+	bl onDamage__6ActionP4Unit
 	bl sub_08073270
 	b _080A0C88
 _080A0C6A:
