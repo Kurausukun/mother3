@@ -28,7 +28,7 @@ GBAFIX := tools/gbafix/gbafix$(EXE)
 SALSA := tools/salsa/build/salsa$(EXE)
 
 CXXFLAGS := -fno-exceptions -fno-rtti -quiet
-CC1FLAGS := -mthumb-interwork -Wimplicit -Wparentheses -O2 -g3 -fdwarf-bugfix
+CC1FLAGS := -mthumb-interwork -Wimplicit -Wparentheses -O2 -g3
 CPPFLAGS := -I tools/agbcc/include -iquote include -nostdinc -undef -D VERSION_$(GAME_VERSION) -D REVISION=$(GAME_REVISION) -D $(GAME_REGION) -D DEBUG=$(DEBUG) -D DISABLE_SOUND=$(DISABLE_SOUND)
 ASFLAGS  := -mcpu=arm7tdmi -mthumb-interwork -I asminclude -I include --defsym VERSION_$(GAME_VERSION)=1 --defsym REVISION=$(GAME_REVISION) --defsym $(GAME_REGION)=1 --defsym DEBUG=$(DEBUG) --defsym GAME_VERSION=$(GAME_VERSION) --defsym GAME_REVISION=$(GAME_REVISION) --defsym DISABLE_SOUND=$(DISABLE_SOUND)
 #### Files ####
@@ -37,7 +37,7 @@ ROM 	 := $(BUILD_NAME).gba
 MAP      := $(ROM:%.gba=%.map)
 ELF      := $(ROM:%.gba=%.elf)
 LDSCRIPT := ld_script.ld
-LDFLAGS = --no-check-section -Map ../../$(MAP)
+LDFLAGS = --no-check-section -Map $(MAP)
 
 # Build tools when building the rom
 # Disable dependency scanning for clean/tidy/tools
@@ -70,6 +70,7 @@ BANK_ASM_BUILDDIR = $(OBJ_DIR)/$(BANK_ASM_SUBDIR)
 SEQ_ASM_BUILDDIR = $(OBJ_DIR)/$(SEQ_ASM_SUBDIR)
 WAVE_ASM_BUILDDIR = $(OBJ_DIR)/$(WAVE_ASM_SUBDIR)
 ASSETS_BUILDDIR = $(OBJ_DIR)/$(ASSETS_SUBDIR)
+BUILD_DIRS = $(C_BUILDDIR) $(C_DATA_BUILDDIR) $(SRC_ASM_BUILDDIR) $(ASM_BUILDDIR) $(DATA_ASM_BUILDDIR) $(RODATA_ASM_BUILDDIR) $(SOUND_ASM_BUILDDIR) $(BANK_ASM_BUILDDIR) $(SEQ_ASM_BUILDDIR) $(WAVE_ASM_BUILDDIR)
 
 #$(shell mkdir -p $(C_BUILDDIR) $(C_DATA_BUILDDIR) $(SRC_ASM_BUILDDIR) $(ASM_BUILDDIR) $(DATA_ASM_BUILDDIR) $(RODATA_ASM_BUILDDIR) $(SOUND_ASM_BUILDDIR) $(BANK_ASM_BUILDDIR) $(SEQ_ASM_BUILDDIR) $(WAVE_ASM_BUILDDIR))
 
@@ -197,7 +198,7 @@ endif
 #### Recipes ####
    
 $(OBJ_DIR)/ld_script.ld: $(LDSCRIPT) $(OBJ_DIR)/sym_ewram.txt $(OBJ_DIR)/sym_iwram.txt
-	cd $(OBJ_DIR) && sed "s#tools/#../../tools/#g" ../../$(LDSCRIPT) > $(LDSCRIPT)
+	cp $(LDSCRIPT) $(OBJ_DIR)
     
 $(OBJ_DIR)/sym_ewram.txt: sym_ewram.txt
 	$(CPP) -P $(CPPFLAGS) $< | sed -e "s#tools/#../../tools/#g" > $@
@@ -276,7 +277,7 @@ $(ASSETS_BUILDDIR)/%.o: $(ASSETS_SUBDIR)/%.salsa
 	$(OBJCOPY) -I binary -B armv4t -O elf32-littlearm $(ASSETS_BUILDDIR)/$*.bin $(ASSETS_BUILDDIR)/$*.o
 
 $(ELF): $(OBJ_DIR)/ld_script.ld $(OBJS) $(C_OBJS)
-	cd $(OBJ_DIR) && $(LD) $(LDFLAGS) -T $(LDSCRIPT) $(OBJS_REL) ../../tools/agbcc/lib/libgcc.a ../../tools/agbcc/lib/libc.a -o ../../$@
+	$(LD) $(LDFLAGS) -T $(LDSCRIPT) $(OBJS) tools/agbcc/lib/libgcc.a tools/agbcc/lib/libc.a -o $@
 
 $(ROM): %.gba: %.elf
 	$(OBJCOPY) -O binary --gap-fill=0xFF --pad-to 0xA000000 $< $@

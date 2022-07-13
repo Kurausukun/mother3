@@ -43,6 +43,11 @@ int main(int argc, char** argv) {
         printusage();
     }
 
+    if(!std::filesystem::exists(src_path)) {
+        std::cerr << "Failed to find " << src_path << "!\nPlease make sure it exists.\n";
+        exit(1);
+    }
+
     // file content type is determined by name
     // this makes it a lot easier for the build process
     if (extract) {
