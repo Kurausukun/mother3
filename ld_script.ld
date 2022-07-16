@@ -152,6 +152,8 @@ SECTIONS
         src/data/monsterSkillData.o(.rodata);
         data/data1b.o(.rodata);
         data/data2.o(.rodata);
+		data/sound_data.o(.rodata);
+		data/temp.o(.rodata);
 
         *libc.a:impure.o(.rodata);
         *libc.a:syscalls.o(.rodata);
