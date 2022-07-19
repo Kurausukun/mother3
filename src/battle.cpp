@@ -18,8 +18,6 @@ extern "C" s32 sub_08072C60();
 extern "C" Unit* sub_08072C7C(s32);
 extern "C" Player* GetPlayer(s32);
 extern "C" u8 sub_08072648(s32);
-s32 sub_08072A88();
-Player* sub_08072AA4(s32);
 void sub_0807459C(u16, s32, s32, s32);
 void sub_08074414(s32, s32, s32, bool, bool, bool);
 
