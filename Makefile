@@ -37,15 +37,9 @@ ROM 	 := $(BUILD_NAME).gba
 MAP      := $(ROM:%.gba=%.map)
 ELF      := $(ROM:%.gba=%.elf)
 LDSCRIPT := ld_script.ld
-LDFLAGS = --no-check-section -Map ../../$(MAP)
+LDFLAGS = --no-check-section -Map $(MAP)
 
-# Build tools when building the rom
-# Disable dependency scanning for clean/tidy/tools
-#ifeq (,$(filter-out all compare,$(MAKECMDGOALS)))
-#$(call infoshell, $(MAKE) tools)
-#else
 NODEP := 0
-#endif
 
 C_SUBDIR = src
 C_DATA_SUBDIR = src/data
@@ -67,8 +61,7 @@ BANK_ASM_BUILDDIR = $(OBJ_DIR)/$(BANK_ASM_SUBDIR)
 SEQ_ASM_BUILDDIR = $(OBJ_DIR)/$(SEQ_ASM_SUBDIR)
 WAVE_ASM_BUILDDIR = $(OBJ_DIR)/$(WAVE_ASM_SUBDIR)
 ASSETS_BUILDDIR = $(OBJ_DIR)/$(ASSETS_SUBDIR)
-
-#$(shell mkdir -p $(C_BUILDDIR) $(C_DATA_BUILDDIR) $(SRC_ASM_BUILDDIR) $(ASM_BUILDDIR) $(DATA_ASM_BUILDDIR) $(RODATA_ASM_BUILDDIR) $(SOUND_ASM_BUILDDIR) $(BANK_ASM_BUILDDIR) $(SEQ_ASM_BUILDDIR) $(WAVE_ASM_BUILDDIR))
+BUILD_DIRS = $(C_BUILDDIR) $(C_DATA_BUILDDIR) $(SRC_ASM_BUILDDIR) $(ASM_BUILDDIR) $(DATA_ASM_BUILDDIR) $(RODATA_ASM_BUILDDIR) $(SOUND_ASM_BUILDDIR) $(BANK_ASM_BUILDDIR) $(SEQ_ASM_BUILDDIR) $(WAVE_ASM_BUILDDIR)
 
 C_SRCS_IN := $(wildcard $(C_SUBDIR)/*.c $(C_SUBDIR)/*/*.c $(C_SUBDIR)/*/*/*.c $(C_SUBDIR)/*/*/*/*.c)
 C_SRCS := $(foreach src,$(C_SRCS_IN),$(if $(findstring .inc.c,$(src)),,$(src)))
@@ -105,7 +98,6 @@ ASSETS_SRCS := $(wildcard $(ASSETS_SUBDIR)/*.salsa)
 ASSETS_OBJS := $(patsubst $(ASSETS_SUBDIR)/%.salsa,$(ASSETS_BUILDDIR)/%.o,$(ASSETS_SRCS))
 
 OBJS := $(CPP_OBJS) $(C_DATA_OBJS) $(SRC_ASM_OBJS) $(ASM_OBJS) $(SOUND_ASM_OBJS) $(BANK_ASM_OBJS) $(SEQ_ASM_OBJS) $(WAVE_ASM_OBJS) $(DATA_ASM_OBJS) $(RODATA_ASM_OBJS) $(ASSETS_OBJS)
-OBJS_REL := $(patsubst $(OBJ_DIR)/%,%,$(OBJS))
 
 SUBDIRS  := $(sort $(dir $(OBJS)))
 $(shell mkdir -p $(SUBDIRS))
@@ -196,14 +188,8 @@ endif
 
 #### Recipes ####
    
-$(OBJ_DIR)/ld_script.ld: $(LDSCRIPT) $(OBJ_DIR)/sym_ewram.txt $(OBJ_DIR)/sym_iwram.txt
-	cd $(OBJ_DIR) && sed "s#tools/#../../tools/#g" ../../$(LDSCRIPT) > $(LDSCRIPT)
-    
-$(OBJ_DIR)/sym_ewram.txt: sym_ewram.txt
-	$(CPP) -P $(CPPFLAGS) $< | sed -e "s#tools/#../../tools/#g" > $@
-    
-$(OBJ_DIR)/sym_iwram.txt: sym_iwram.txt
-	$(CPP) -P $(CPPFLAGS) $< | sed -e "s#tools/#../../tools/#g" > $@
+$(OBJ_DIR)/ld_script.ld: $(LDSCRIPT)
+	cp $(LDSCRIPT) $(OBJ_DIR)
 
 setup:
 	make -C tools/aif2pcm
@@ -217,13 +203,6 @@ setup:
 	$(SALSA) --extract baserom.gba assets/mainscript.salsa
 	$(SALSA) --extract baserom.gba assets/misctext.salsa
 	$(SALSA) --extract baserom.gba assets/logic.salsa
-
-# $(C_OBJS): $(C_SRCS)
-# 	$(CPP) $(CPPFLAGS) $< -o $(C_BUILDDIR)/$(<F).i
-# 	$(PREPROC) $(C_BUILDDIR)/$(<F).i charmap.txt > $(C_BUILDDIR)/$(<F).p.i
-# 	$(PREPROC) $(C_BUILDDIR)/$(<F).i charmap.txt | $(CC1) $(CC1FLAGS) -o $(C_BUILDDIR)/$(<F).s
-# 	@echo -e ".text\n\t.align\t2, 0\n" >> $(C_BUILDDIR)/$(<F).s
-# 	$(AS) $(ASFLAGS) -o $@ $(C_BUILDDIR)/$(<F).s
 
 $(C_BUILDDIR)/%.o : $(C_SUBDIR)/%.c $$(c_dep)
 	$(CPP) $(CPPFLAGS) $< -o $(C_BUILDDIR)/$*.i
@@ -239,35 +218,28 @@ $(C_BUILDDIR)/%.o : $(C_SUBDIR)/%.cpp $$(c_dep)
 	@echo -e ".text\n\t.align\t2, 0\n" >> $(C_BUILDDIR)/$*.s
 	$(AS) $(ASFLAGS) -o $@ $(C_BUILDDIR)/$*.s
 
-# $(C_BUILDDIR)/%.o : $(C_SUBDIR)/%.cpp $$(c_dep)
-# 	$(CPP) $(CPPFLAGS) $< -o $(C_BUILDDIR)/$*.i
-# 	$(PREPROC) $(C_BUILDDIR)/$*.i charmap.txt > $(C_BUILDDIR)/$*.p.i
-# 	$(PREPROC) $(C_BUILDDIR)/$*.i charmap.txt | $(CXX) $(CXXFLAGS) $(CC1FLAGS) -o $(C_BUILDDIR)/$*.s
-# 	@echo -e ".text\n\t.align\t2, 0\n" >> $(C_BUILDDIR)/$*.s
-# 	$(AS) $(ASFLAGS) -o $@ $(C_BUILDDIR)/$*.s
-
 $(SRC_ASM_BUILDDIR)/%.o: $(C_SUBDIR)/%.s
 	$(PREPROC) $< charmap.txt | $(AS) $(ASFLAGS) -o $@
 
 $(ASM_BUILDDIR)/%.o: $(ASM_SUBDIR)/%.s $$(asm_dep)
 	$(PREPROC) $< charmap.txt | $(AS) $(ASFLAGS) -o $@
-    
+
 $(DATA_ASM_BUILDDIR)/%.o: $(DATA_ASM_SUBDIR)/%.s $$(data_dep)
 	$(PREPROC) $< charmap.txt > $(DATA_ASM_BUILDDIR)/$*.p.i
 	$(PREPROC) $< charmap.txt | $(AS) $(ASFLAGS) -o $@
 
 $(RODATA_ASM_BUILDDIR)/%.o: $(RODATA_ASM_SUBDIR)/%.s $$(rodata_dep)
 	$(PREPROC) $< charmap.txt | $(AS) $(ASFLAGS) -o $@
-    
+
 $(SOUND_ASM_BUILDDIR)/%.o: $(SOUND_ASM_SUBDIR)/%.s
 	$(AS) $(ASFLAGS) -o $@ $<
 
 $(BANK_ASM_BUILDDIR)/%.o: $(BANK_ASM_SUBDIR)/%.s
 	$(AS) $(ASFLAGS) -o $@ $<
-    
+
 $(SEQ_ASM_BUILDDIR)/%.o: $(SEQ_ASM_SUBDIR)/%.s
 	$(AS) $(ASFLAGS) -o $@ $<
-    
+
 $(WAVE_ASM_BUILDDIR)/%.o: $(WAVE_ASM_SUBDIR)/%.s
 	$(AS) $(ASFLAGS) -o $@ $<
 
@@ -276,7 +248,8 @@ $(ASSETS_BUILDDIR)/%.o: $(ASSETS_SUBDIR)/%.salsa
 	$(OBJCOPY) -I binary -B armv4t -O elf32-littlearm $(ASSETS_BUILDDIR)/$*.bin $(ASSETS_BUILDDIR)/$*.o
 
 $(ELF): $(OBJ_DIR)/ld_script.ld $(OBJS) $(C_OBJS)
-	cd $(OBJ_DIR) && $(LD) $(LDFLAGS) -T $(LDSCRIPT) $(OBJS_REL) ../../tools/agbcc/lib/libgcc.a ../../tools/agbcc/lib/libc.a -o ../../$@
+	@echo linking $(ELF)...
+	@$(LD) $(LDFLAGS) -T $(LDSCRIPT) $(OBJS) tools/agbcc/lib/libgcc.a tools/agbcc/lib/libc.a -o $@
 
 $(ROM): %.gba: %.elf
 	$(OBJCOPY) -O binary --gap-fill=0xFF --pad-to 0xA000000 $< $@

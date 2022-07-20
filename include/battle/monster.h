@@ -213,7 +213,7 @@ public:
         ChompSnake = 0x30,
         SootDumpling = 0x31,
         BakedYammomonster = 0x32,
-        WalkingBushy = 0x33,
+        WalkingBushie = 0x33,
         CFJellyfish = 0x34,
         MetalMonkey = 0x35,
         CragLizard = 0x36,

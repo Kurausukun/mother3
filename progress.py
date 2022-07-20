@@ -47,7 +47,7 @@ def parse_map(non_matching_funcs):
                 section = arr[0]
                 size = int(arr[2], 16)
                 filepath = arr[3]
-                dir = filepath.split('/')[0]
+                dir = filepath.split('/')[2]
 
                 if section == '.text':
                     if dir == 'src':
