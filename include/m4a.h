@@ -22,4 +22,15 @@ void m4aMPlayVolumeControl(struct MusicPlayerInfo* mplayInfo, u16 trackBits, u16
 void m4aMPlayPitchControl(struct MusicPlayerInfo* mplayInfo, u16 trackBits, s16 pitch);
 void m4aMPlayPanpotControl(struct MusicPlayerInfo* mplayInfo, u16 trackBits, s8 pan);
 
+extern struct MusicPlayerInfo gMPlayInfo_Player1;
+extern struct MusicPlayerInfo gMPlayInfo_Player2;
+extern struct MusicPlayerInfo gMPlayInfo_Player3;
+extern struct MusicPlayerInfo gMPlayInfo_Player4;
+extern struct MusicPlayerInfo gMPlayInfo_Player5;
+extern struct MusicPlayerInfo gMPlayInfo_Player6;
+extern struct MusicPlayerInfo gMPlayInfo_Player7;
+extern struct MusicPlayerInfo gMPlayInfo_Player8;
+extern struct MusicPlayerInfo gMPlayInfo_Player9;
+extern struct MusicPlayerInfo gMPlayInfo_Player10;
+
 #endif  // GUARD_M4A_H

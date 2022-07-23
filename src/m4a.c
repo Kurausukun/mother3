@@ -7,6 +7,17 @@ extern ALIGNED(4) char SoundMainRAM_Buffer[0x400];
 
 extern struct SoundInfo gSoundInfo;
 
+struct MusicPlayerInfo gMPlayInfo_Player1;
+struct MusicPlayerInfo gMPlayInfo_Player2;
+struct MusicPlayerInfo gMPlayInfo_Player3;
+struct MusicPlayerInfo gMPlayInfo_Player4;
+struct MusicPlayerInfo gMPlayInfo_Player5;
+struct MusicPlayerInfo gMPlayInfo_Player6;
+struct MusicPlayerInfo gMPlayInfo_Player7;
+struct MusicPlayerInfo gMPlayInfo_Player8;
+struct MusicPlayerInfo gMPlayInfo_Player9;
+struct MusicPlayerInfo gMPlayInfo_Player10;
+
 u32 MidiKeyToFreq(struct WaveData *wav, u8 key, u8 fineAdjust)
 {
     u32 val1;
