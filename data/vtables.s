@@ -44349,7 +44349,7 @@ vt_09F61850::
 	.4byte 0
 	.2byte -32
 	.2byte 0
-	.4byte sub_080ADD1C
+	.4byte _._9MrPassion
 	.2byte -32
 	.2byte 0
 	.4byte sub_08081BE4
@@ -44396,7 +44396,7 @@ vt_09F618C8::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080ADD1C
+	.4byte _._9MrPassion
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__7Monster
@@ -44435,7 +44435,7 @@ vt_09F618C8::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AD9B4
+	.4byte onAction__9MrPassionP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -44657,7 +44657,7 @@ vt_09F618C8::
 	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_080ADBE8
+	.4byte calcAction__9MrPassion
 	.2byte 0
 	.2byte 0
 	.4byte monster_2c8__7MonsterP6Action
@@ -44771,7 +44771,7 @@ vt_09F618C8::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080ADCC8
+	.4byte monster_3f0__9MrPassion
 	.2byte 0
 	.2byte 0
 	.4byte monster_3f8__14DefaultMonster
@@ -44798,13 +44798,13 @@ vt_09F618C8::
 	.4byte getHealthPercent__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080ADC88
+	.4byte setPhase__9MrPassionib
 	.2byte 0
 	.2byte 0
-	.4byte sub_080ADB54
+	.4byte calcActionPhaseOne__9MrPassion
 	.2byte 0
 	.2byte 0
-	.4byte sub_080ADA9C
+	.4byte calcActionPhaseTwo__9MrPassion
 
 vt_09F61D18::
 	.2byte -32
@@ -44812,7 +44812,7 @@ vt_09F61D18::
 	.4byte 0
 	.2byte -32
 	.2byte 0
-	.4byte sub_080AE038
+	.4byte _._4Tree
 	.2byte -32
 	.2byte 0
 	.4byte sub_08081BE4
@@ -44859,7 +44859,7 @@ vt_09F61D90::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AE038
+	.4byte _._4Tree
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__7Monster
@@ -44898,7 +44898,7 @@ vt_09F61D90::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080ADD38
+	.4byte onAction__4TreeP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -44922,7 +44922,7 @@ vt_09F61D90::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AE01C
+	.4byte onKill__4Tree
 	.2byte 0
 	.2byte 0
 	.4byte revive__4Unit
@@ -45120,7 +45120,7 @@ vt_09F61D90::
 	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_080ADE38
+	.4byte calcAction__4Tree
 	.2byte 0
 	.2byte 0
 	.4byte monster_2c8__7MonsterP6Action
@@ -45266,7 +45266,7 @@ vt_09F621C8::
 	.4byte 0
 	.2byte -32
 	.2byte 0
-	.4byte sub_080AE1D4
+	.4byte _._12BaldingEagle
 	.2byte -32
 	.2byte 0
 	.4byte sub_08081BE4
@@ -45313,7 +45313,7 @@ vt_09F62240::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AE1D4
+	.4byte _._12BaldingEagle
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__7Monster
@@ -45352,7 +45352,7 @@ vt_09F62240::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AE054
+	.4byte onAction__12BaldingEagleP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -45574,7 +45574,7 @@ vt_09F62240::
 	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AE118
+	.4byte calcAction__12BaldingEagle
 	.2byte 0
 	.2byte 0
 	.4byte monster_2c8__7MonsterP6Action
@@ -45720,7 +45720,7 @@ vt_09F62678::
 	.4byte 0
 	.2byte -32
 	.2byte 0
-	.4byte sub_080AE614
+	.4byte _._13WalkingBushie
 	.2byte -32
 	.2byte 0
 	.4byte sub_08081BE4
@@ -45767,7 +45767,7 @@ vt_09F626F0::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AE614
+	.4byte _._13WalkingBushie
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__7Monster
@@ -45806,7 +45806,7 @@ vt_09F626F0::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AE1F0
+	.4byte onAction__13WalkingBushieP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -46028,10 +46028,10 @@ vt_09F626F0::
 	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AE490
+	.4byte calcAction__13WalkingBushie
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AE2EC
+	.4byte monster_2c8__13WalkingBushieP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onRoundBegin__7Monster

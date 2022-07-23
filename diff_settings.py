@@ -2,7 +2,7 @@ def apply(config, args):
     config["baseimg"] = "baserom.gba"
     config["myimg"] = "mother3.gba"
     config["mapfile"] = "mother3.map"
-    config["source_directories"] = ["."]
+    config["source_directories"] = ["src"]
     # config["show_line_numbers_default"] = True
     config["arch"] = "thumb"
     config["map_format"] = "agbcc"

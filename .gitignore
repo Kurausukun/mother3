@@ -40,7 +40,7 @@ porymap.project.cfg
 *.nam
 *.til
 mother3.elf.id2
-__pycache__/diff_settings.cpython-39.pyc
+__pycache__/*
 ctx.c
 salsa/salsa
 salsa/salsa.exe

@@ -4,6 +4,7 @@
 #include "battle.h"
 #include "battle/action.h"
 #include "battle/monster.h"
+#include "battle/player.h"
 #include "enums.h"
 
 extern ClockData gUnknown_080F8E5C;
@@ -376,6 +377,289 @@ public:
     }
 
     INLINE_VT_END
+};
+
+class WalkingBushie : public DefaultMonster {
+public:
+    WalkingBushie(u16 idx, u16 id);
+    virtual ~WalkingBushie() override {}
+
+    Action* calcAction() override {
+        s32 prob1 = 40;
+
+        for (int i = 0; i < sub_08072A88(); i++) {
+            Unit* m = sub_08072AA4(i);
+            if (m->hasStatus(Status::Poison) == true || m->hasStatus(Status::Numb) == true || m->hasStatus(Status::Sleep) == true || m->hasStatus(Status::Strange) == true || m->hasStatus(Status::Crying) == true || m->hasStatus(Status::Forgetful) == true || m->hasStatus(Status::Nauseous) == true || m->hasStatus(Status::Fleas) == true) {
+                return getMonsterSkill(0x208, this);
+            }
+        }
+        for (int i = 0; i < sub_08072A88(); i++) {
+            Unit* m = sub_08072AA4(i);
+            if (m->hpReal() < m->maxHP()) {
+                return getMonsterSkill(0x207, this);
+            }
+        }
+        if (numActionsDone() > 1) {
+            return getMonsterSkill(0x209, this);
+        }
+        s32 chance = randS32_(0, 99);
+        if (chance >= prob1) {
+            return getMonsterSkill(0xe1, this);
+        }
+        return getMonsterSkill(0x7f, this);
+    }
+
+    bool monster_2c8(Action* a) override {
+        if (IsMonsterSkillAndType(a, 0x208) == true) {
+            for (int i = 0; i < sub_08072A88(); i++) {
+                Unit* m = sub_08072AA4(i);
+                if (m->hasStatus(Status::Poison) == true || m->hasStatus(Status::Numb) == true || m->hasStatus(Status::Sleep) == true || m->hasStatus(Status::Strange) == true || m->hasStatus(Status::Crying) == true || m->hasStatus(Status::Forgetful) == true || m->hasStatus(Status::Nauseous) == true || m->hasStatus(Status::Fleas) == true) {
+                    a->addTarget(m);
+                    return true;
+                }
+            }
+        } else if (IsMonsterSkillAndType(a, 0x207) == true) {
+            for (int i = 0; i < sub_08072A88(); i++) {
+                Unit* m = sub_08072AA4(i);
+                if (m->hpReal() < m->maxHP()) {
+                    a->addTarget(m);
+                    return true;
+                }
+            }
+        }
+        return Monster::monster_2c8(a);
+    }
+
+    bool onAction(Action* a) override {
+        if (DefaultMonster::onAction(a) != true) {
+            return false;
+        }
+        if (IsMonsterSkillAndType(a, 0x208) == true) {
+            setActionCount(0);
+        }
+        if (IsMonsterSkillAndType(a, 0x207) == true) {
+            setActionCount(0);
+        }
+        return true;
+    }
+
+    INLINE_VT_END
+};
+
+class BaldingEagle : public DefaultMonster {
+public:
+    BaldingEagle(u16 idx, u16 id);
+    virtual ~BaldingEagle() override {}
+
+    NONMATCH("asm/non_matching/monster/sub_080AE118.inc", Action* calcAction() override) {
+        s32 prob1 = 35;
+        s32 prob2 = 55;
+        s32 prob3 = 85;
+        s32 prob4 = 20;
+        s32 prob5 = 60;
+
+        s32 val;
+
+        if (hpReal() < getHealthPercent(50)) {
+            if (mActionCount > 0) {
+                s32 chance = randS32_(0, 99);
+                val = 9;
+                if (chance >= prob4) {
+                    val = 153;
+                    if (chance < prob2) {
+                        val = 17;
+                    }
+                }
+                return getMonsterSkill(val, this);
+            }
+            s32 chance = randS32_(0, 99);
+            val = 9;
+            if (chance >= prob4) {
+                val = 17;
+                if (chance >= prob2) {
+                    val = 153;
+                    if (chance < prob5) {
+                        val = 227;
+                    }
+                }
+            }
+            return getMonsterSkill(val, this);
+        }
+
+        if (mActionCount > 0) {
+            s32 chance = randS32_(0, 99);
+            val = 16;
+            if (chance < prob1) {
+                val = 9;
+            }
+            return getMonsterSkill(val, this);
+        }
+
+        s32 chance = randS32_(0, 99);;
+        val = 9;
+        if (chance >= prob1) {
+            val = 227;
+            if (chance < prob3) {
+                val = 17;
+            }
+        }
+        return getMonsterSkill(val, this);
+    }
+    END_NONMATCH
+
+    bool onAction(Action* a) override {
+        if (DefaultMonster::onAction(a) != true) {
+            return false;
+        }
+        if (IsMonsterSkillAndType(a, 0xe3) == true) {
+            _148++;
+        }
+        return true;
+    }
+
+    u32 _148;
+
+    INLINE_VT_END
+};
+
+class Tree : public DefaultMonster {
+public:
+    Tree(u16 idx, u16 id);
+    virtual ~Tree() override {}
+
+    void onKill() override {
+        triggerMonsterSkill(getMonsterSkill(0x2d, this));
+        sub_08080F54();
+    }
+
+    Action* calcAction() override {
+        Vector<u16> skills;
+        skills.append(2);
+
+        if (mVacuumAttackCount < 2) {
+            skills.append(0x8c);
+        }
+        if (mSpreadRootsCount < 1) {
+            skills.append(0x107);
+        }
+        if (mCalledForHelpCount < 1) {
+            skills.append(0xf0);
+        }
+        return getMonsterSkill(skills[randS32(0, skills.size() - 1)], this);
+    }
+
+    bool onAction(Action* a) override {
+        if (DefaultMonster::onAction(a) != true) {
+            return false;
+        }
+        if (IsMonsterSkillAndType(a, 0x8c) == true) {
+            mVacuumAttackCount++;
+        }
+        if (IsMonsterSkillAndType(a, 0x107) == true) {
+            mSpreadRootsCount++;
+        }
+        if (IsMonsterSkillAndType(a, 0xf0) == true) {
+            mCalledForHelpCount++;
+        }
+        return true;
+    }
+
+    INLINE_VT_END
+
+    s32 mVacuumAttackCount;
+    s32 mSpreadRootsCount;
+    s32 mCalledForHelpCount;
+};
+
+class MrPassion : public DefaultMonster {
+public:
+    MrPassion(u16 idx, u16 id);
+    virtual ~MrPassion() override {}
+
+#ifndef NONMATCHING
+#define getHealthPercent (s32) VT_HACK
+#endif
+    void monster_3f0() override {
+        if (hpReal() < getHealthPercent(50)) {
+            setPhase(1, false);
+        }
+    }
+#undef  getHealthPercent
+
+    virtual bool setPhase(s32 val, bool force) {
+        if (mPhase != val || force == true) {
+            mPhase = val;
+            setActionCount(0);
+            return true;
+        }
+        return false;
+    }
+
+    NONMATCH("asm/non_matching/monster/sub_080ADBE8.inc", Action* calcAction() override) {
+        if (mPhase == 0) {
+            return calcActionPhaseOne();
+        }
+        if (mPhase == 1) {
+            return calcActionPhaseTwo();
+        }
+        if (numSkills() > 0) {
+            return getMonsterSkill(getSkill(randS32(0, numSkills() - 1)), this);
+        }
+        return NULL;
+    }
+    END_NONMATCH
+
+    NONMATCH("asm/non_matching/monster/sub_080ADB54.inc", virtual Action* calcActionPhaseOne()) {
+        u16 skills[5]; // = { 0x13B, 0x13C, 0x13E, 0x13F, 0x13D };
+        s32 prob1 = 30;
+        s32 prob2 = 55;
+        s32 prob3 = 85;
+        s32 prob4 = 90;
+
+        if (mLostInMusicCount > 2) {
+            skills[4] = 0x13C;
+        }
+        if (mMouseSentFlyingCount > 0) {
+            skills[3] = 0x13E;
+        }
+        s32 rand = randS32_(0, 99);
+        if (rand < prob1) {
+            return getMonsterSkill(skills[0], this);
+        }
+        if (rand < prob2) {
+            return getMonsterSkill(skills[1], this);
+        }
+        if (rand < prob3) {
+            return getMonsterSkill(skills[2], this);
+        }
+        if (rand < prob4) {
+            return getMonsterSkill(skills[3], this);
+        }
+        return getMonsterSkill(skills[4], this);
+    }
+    END_NONMATCH
+
+    ASM_FUNC("asm/non_matching/monster/sub_080ADA9C.inc", virtual Action* calcActionPhaseTwo());
+
+    bool onAction(Action* a) override {
+        if (DefaultMonster::onAction(a) != true) {
+            return false;
+        }
+        if (IsMonsterSkillAndType(a, 0x13d) == true) {
+            mLostInMusicCount++;
+        }
+        if (IsMonsterSkillAndType(a, 0x13f) == true) {
+            mMouseSentFlyingCount++;
+        }
+        return true;
+    }
+
+    INLINE_VT_END
+
+    s32 mLostInMusicCount;
+    s32 mMouseSentFlyingCount;
+    s32 mPhase;
+
 };
 
 #endif  // BATTLE_MONSTER_IMPL_H
