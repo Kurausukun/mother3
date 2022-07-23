@@ -48,9 +48,7 @@ ASM_SUBDIR = asm
 DATA_ASM_SUBDIR = data
 RODATA_ASM_SUBDIR = rodata
 SOUND_ASM_SUBDIR = sound
-BANK_ASM_SUBDIR = sound/bank
-SEQ_ASM_SUBDIR = sound/seq
-WAVE_ASM_SUBDIR = sound/wave
+SAMPLE_SUBDIR = sound/direct_sound_samples
 ASSETS_SUBDIR = assets
 
 C_BUILDDIR = $(OBJ_DIR)/$(C_SUBDIR)
@@ -140,6 +138,7 @@ clean: mostlyclean
 	rm -rf $(ASSETS_SRCS) $(basename $(ASSETS_SRCS))
 
 mostlyclean: tidy
+	rm -f $(SAMPLE_SUBDIR)/*.bin
 	find . \( -iname '*.1bpp' -o -iname '*.4bpp' -o -iname '*.8bpp' -o -iname '*.gbapal' -o -iname '*.lz' -o -iname '*.latfont' -o -iname '*.hwjpnfont' -o -iname '*.fwjpnfont' -o -iname '*.bcg' \) -exec rm {} +
 
 tidy:
@@ -160,6 +159,8 @@ include graphics_file_rules.mk
 %.gbapal: %.png ; $(GFX) $< $@
 %.lz: % ; $(GFX) $< $@
 %.rl: % ; $(GFX) $< $@
+sound/%.bin: sound/%.aif ; $(AIF) $< $@
+
 
 #### Dependencies ####
 ifeq ($(NODEP),1)
