@@ -49,6 +49,7 @@ DATA_ASM_SUBDIR = data
 RODATA_ASM_SUBDIR = rodata
 SOUND_ASM_SUBDIR = sound
 SAMPLE_SUBDIR = sound/direct_sound_samples
+ASSETS_SUBDIR = assets
 
 C_BUILDDIR = $(OBJ_DIR)/$(C_SUBDIR)
 C_DATA_BUILDDIR = $(OBJ_DIR)/$(C_DATA_SUBDIR)
