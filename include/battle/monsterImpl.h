@@ -184,6 +184,10 @@ public:
     u32 mActionCount;
 };
 
+#ifndef NONMATCHING
+#define getHealthPercent (s32) VT_HACK
+#endif
+
 class ReconstructedCaribou : public DefaultMonster {
 public:
     ReconstructedCaribou(u16 idx, u16 id);
@@ -216,16 +220,12 @@ public:
         s32 prob3 = 66;
         s32 val;
 
-#ifndef NONMATCHING
-#define getHealthPercent (s32) VT_HACK
-#endif
         if (hpReal() < getHealthPercent(70) && mFlameShotCount == 0) {
             return getMonsterSkill(0x132, this);
         }
         if (hpReal() < getHealthPercent(30) && mFlameShotCount < 2) {
             return getMonsterSkill(0x132, this);
         }
-#undef getHealthPercent
 
         if (mWarCryCount != 0) {
             s32 chance = randS32_(0, 99);
@@ -576,15 +576,11 @@ public:
     MrPassion(u16 idx, u16 id);
     virtual ~MrPassion() override {}
 
-#ifndef NONMATCHING
-#define getHealthPercent (s32) VT_HACK
-#endif
     void monster_3f0() override {
         if (hpReal() < getHealthPercent(50)) {
             setPhase(1, false);
         }
     }
-#undef  getHealthPercent
 
     virtual bool setPhase(s32 val, bool force) {
         if (mPhase != val || force == true) {
@@ -659,7 +655,98 @@ public:
     s32 mLostInMusicCount;
     s32 mMouseSentFlyingCount;
     s32 mPhase;
-
 };
+
+class Clayman : public DefaultMonster {
+    Clayman(u16 idx, u16 id);
+    virtual ~Clayman() override {}
+
+    void monster_3f0() override {
+        if (hpReal() < getHealthPercent(40) && mPhase == 0) {
+            m_450(1, false);
+        }
+    }
+
+    Action* calcAction() override {
+        switch (mPhase) {
+        case 0:
+            return m_438();
+        case 1:
+            return m_440();
+        case 2:
+            return m_448();
+        default:
+            return DefaultMonster::calcAction();
+        }
+    }
+
+    virtual Action* m_438() {
+        s32 prob1 = 45;
+        s32 prob2 = 80;
+        s32 val;
+
+        s32 chance = randS32_(0, 99);
+        val = 0x145;
+        if (chance >= prob1) {
+            val = 0x148;
+            if (chance < prob2) {
+                val = 0x146;
+            }
+        }
+        return getMonsterSkill(val, this);
+    }
+
+    virtual Action* m_440() {
+        return getMonsterSkill(0x147, this);
+    }
+
+    virtual Action* m_448() {
+        s32 prob1 = 35;
+        s32 prob2 = 65;
+        s32 prob3 = 80;
+        s32 val;
+
+        if (numActionsDone() < 1) {
+            return getMonsterSkill(0x149, this);
+        } else if (numActionsDone() < 2) {
+            return getMonsterSkill(0x14a, this);
+        }
+
+        s32 chance = randS32_(0, 99);
+        val = 0x145;
+        if (chance >= prob1) {
+            val = 0x146;
+            if (chance >= prob2) {
+                val = chance < prob3 ? 0x148 : 0x147;
+            }
+        }
+        return getMonsterSkill(val, this);
+    }
+
+    bool onAction(Action* a) override {
+        if (DefaultMonster::onAction(a) != true) {
+            return false;
+        }
+        if (IsMonsterSkillAndType(a, 0x147) == true) {
+            m_450(2, true);
+        }
+        return true;
+    }
+
+    virtual bool m_450(s32 val, bool force) {
+        if (force == true || mPhase != val) {
+            mPhase = val;
+            setActionCount(0);
+            return true;
+        }
+        return false;
+    }
+
+    INLINE_VT_END
+
+    s32 mPhase;
+};
+
+#undef getHealthPercent
 
 #endif  // BATTLE_MONSTER_IMPL_H

@@ -43883,7 +43883,7 @@ vt_09F61380::
 	.4byte 0
 	.2byte -32
 	.2byte 0
-	.4byte sub_080AD998
+	.4byte _._7Clayman
 	.2byte -32
 	.2byte 0
 	.4byte sub_08081BE4
@@ -43930,7 +43930,7 @@ vt_09F613F8::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AD998
+	.4byte _._7Clayman
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__7Monster
@@ -43969,7 +43969,7 @@ vt_09F613F8::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AD6F0
+	.4byte onAction__7ClaymanP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -44191,7 +44191,7 @@ vt_09F613F8::
 	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AD874
+	.4byte calcAction__7Clayman
 	.2byte 0
 	.2byte 0
 	.4byte monster_2c8__7MonsterP6Action
@@ -44305,7 +44305,7 @@ vt_09F613F8::
 	.4byte sub_08081A08
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AD938
+	.4byte monster_3f0__7Clayman
 	.2byte 0
 	.2byte 0
 	.4byte monster_3f8__14DefaultMonster
@@ -44332,16 +44332,16 @@ vt_09F613F8::
 	.4byte getHealthPercent__14DefaultMonsteri
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AD848
+	.4byte m_438__7Clayman
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AD834
+	.4byte m_440__7Clayman
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AD7C4
+	.4byte m_448__7Clayman
 	.2byte 0
 	.2byte 0
-	.4byte sub_080AD6B0
+	.4byte m_450__7Claymanib
 
 vt_09F61850::
 	.2byte -32
