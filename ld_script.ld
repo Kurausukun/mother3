@@ -28,7 +28,8 @@ SECTIONS
         build/mother3/src/main.o(.text);
         build/mother3/asm/rom.o(.text);
         build/mother3/src/overworld/script.o(.text);
-        build/mother3/asm/code_0801BEE0.o(.text);
+		build/mother3/asm/script.o(.text);
+        build/mother3/asm/code_08021920.o(.text);
         build/mother3/src/common.o(.text);
         build/mother3/asm/code_0805C1DC.o(.text);
         build/mother3/src/battle/system.o(.text);

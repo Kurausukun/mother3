@@ -19,7 +19,13 @@ enum Mode {
 
 struct Game {
     u8 mode;
-    u8 _1[0xe];
+    u8 filler_1;
+    u32 _2_1 : 7;
+    u32 _2_2 : 4;
+    u32 _2_3 : 5;
+    u32 _2_4 : 16;
+    u16 _6[4];
+    u8 _e;
     u8 _f;
     u8 _10;
     u8 _11;
@@ -65,12 +71,15 @@ struct Game {
     u8 _829a;
     u8 _829b;
     u8 _829c;
-    u8 _829d[0x82ad - 0x829c];
+    u8 _829d[0x82ad - 0x829e];
+    u16 _82ac;
     s8 _82ae;
     u8 _82af[0x82b4 - 0x82af];
     u16 _82b4;
-    u8 _82b6 : 1;
-    u8 _82b7;
+    s16 _82b6_1 : 1;
+    s16 _82b6_3 : 4;
+    s16 _82b6_2 : 4;
+    s16 _82b6_4 : 7;
     u8 _82b8_1 : 5;
     u8 _82b8_20 : 1;
     u8 _82b9[0x8450 - 0x82b9];
@@ -82,6 +91,7 @@ struct Game {
     u8 disable_collision : 1;
     u8 _8494_2 : 1;
     u8 _8494_4 : 1;
+    u8 _8494_5 : 1;
     u8 _8495;
     u8 _8496[0x26];
     u8* script_pc;
@@ -111,9 +121,19 @@ struct Game {
     u8 _9486_2 : 1;
     u8 _9487;
     u32 _9488;
-    u16 _948c[1092];
+    u16 _948c[1086];
+    u32 _9d08;
+    u16 _9d0c;
+    u16 _9d0e;
+    u32 _9d10;
     u8 battle_mode;
 };
 Game gGame;
+
+struct C2Struct {
+    u32 _0_0 : 3;
+    u32 _0_1 : 5;
+    u32 filler;
+};
 
 #endif  // OVERWORLD_SCRIPT_H
