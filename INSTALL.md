@@ -4,7 +4,7 @@ To setup up the repository:
 
 ```
 git clone https://github.com/Kurausukun/mother3
-git clone https://github.com/agbcc/notyourav
+git clone https://github.com/notyourav/agbcc
 
 cd ./agbcc
 git checkout cp
