@@ -2,7 +2,6 @@
 
 import argparse
 import json
-import git
 import os
 import re
 
@@ -123,6 +122,8 @@ def main():
 
 
     if args.format == 'csv':
+        import git
+
         version = 2
         git_object = git.Repo().head.object
         timestamp = str(git_object.committed_date)
