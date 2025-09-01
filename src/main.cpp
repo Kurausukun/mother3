@@ -26,12 +26,6 @@ struct struct_02004848 {
 };
 extern struct_02004848 gUnknown_02004848;
 
-struct struct_020050C0 {
-    u8 filler[284];
-    u8 _284;
-} gUnknown_020050C0;
-extern struct_020050C0 gUnknown_020050C0;
-
 struct struct_020047E0 {
     u8 _0;
     u8 _1[3];

@@ -7,6 +7,7 @@
 class System : Base {
 public:
     struct SARHandle {
+        SARHandle();
         virtual ~SARHandle();
         u8* ptr;
     };
@@ -20,9 +21,9 @@ public:
     virtual u32 sub_0805D5C0();
     virtual u32 sub_0805D5D0();
     virtual u32 sub_0805D604();
-    virtual void sub_0805D638();
+    virtual u32 sub_0805D638();
     virtual u32 getGameProgression();
-    virtual void sub_0805D6F8();
+    virtual int sub_0805D6F8(int);
 
     void checkResetKeys();
 
