@@ -3,4 +3,4 @@ docker run --platform=linux/amd64 --rm -it \
   -e DEVKITPRO=/opt/devkitpro \
   -e DEVKITARM=/opt/devkitpro/devkitARM \
   devkitpro/devkitarm:latest \
-  bash -lc 'make'
+  bash -lc "make $@"

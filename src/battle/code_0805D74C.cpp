@@ -61,7 +61,7 @@ extern "C" ASM_FUNC("asm/non_matching/code_0805D74C/sub_08068674.inc", void sub_
 extern "C" ASM_FUNC("asm/non_matching/code_0805D74C/sub_08068718.inc", void sub_08068718());
 extern "C" ASM_FUNC("asm/non_matching/code_0805D74C/sub_0806871C.inc", void sub_0806871C());
 extern "C" ASM_FUNC("asm/non_matching/code_0805D74C/sub_08068734.inc", void sub_08068734());
-extern "C" ASM_FUNC("asm/non_matching/code_0805D74C/sub_08068770.inc", void sub_08068770());
+extern "C" ASM_FUNC("asm/non_matching/code_0805D74C/__Q26System9SARHandle.inc", void __Q26System9SARHandle());
 extern "C" ASM_FUNC("asm/non_matching/code_0805D74C/sub_080687AC.inc", void sub_080687AC());
 extern "C" ASM_FUNC("asm/non_matching/code_0805D74C/sub_080687C0.inc", void sub_080687C0());
 extern "C" ASM_FUNC("asm/non_matching/code_0805D74C/sub_080687DC.inc", void sub_080687DC());

@@ -333,4 +333,18 @@ typedef struct GoodsInfo {
 } GoodsInfo;
 extern GoodsInfo gGoodsInfo[];
 
+typedef struct SystemEntry {
+    u8 data[0x2A];           
+    u8 _2A[8];
+    u8 _32;          
+    u8 padding[100 - 0x33];  
+} SystemEntry;
+
+typedef struct struct_020050C0 {
+    SystemEntry entries[2];
+    u8 filler[84];
+    u8 _284;
+} struct_020050C0;
+extern struct_020050C0 gUnknown_020050C0;
+
 #endif  // STRUCTS_H

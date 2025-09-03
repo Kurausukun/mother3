@@ -10,7 +10,7 @@
     public:                                                                                        \
         static CLASS##Manager* manager();                                                          \
         static CLASS* get();                                                                       \
-        CLASS* makeInstance();                                                                     \
+        static CLASS* makeInstance();                                                                     \
         static void destroy();                                                                     \
         virtual void* init();                                                                      \
         virtual const char* getName();                                                             \

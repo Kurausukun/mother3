@@ -794,108 +794,33 @@ u16 cmd_set_key_item(s32* sp) {
     return 0;
 }
 
-#ifdef NONMATCHING
 u16 cmd_get_item_count(s32* sp) {
-    u16 temp;
-    u16 cnt;
-    u8* item;
     u16 idx;
+    u16 cnt;
+    CharStats* item;
+    u16 temp;
+    
     idx = scriptstack_peek(sp, 0);
-    if (gGoodsInfo[idx].type == Key) {
-        cnt = gSave._10[idx];
-    } else {
-        cnt = 0;
-        for (u16 i = 0; i < gGame.party_count; ++i) {
-            item = (u8*)get_char_stats(i);
-            if (*item != 0) {
-                temp = sub_08001D2C(*item);
-                if (temp != 0) {
-                    cnt += sub_0802A3D0(item, idx);
-                }
+    
+    if (gGoodsInfo[idx].item_type == Key) {
+        scriptstack_push(gSave.key_items[idx]);
+        return 0;
+    }
+    
+    cnt = 0;
+    for (u16 i = 0; i < gGame.party_count; ++i) {
+        item = get_char_stats(i);
+        if (item->charNo != 0) {
+            temp = sub_08001D2C(item->charNo);
+            if (temp != 0) {
+                cnt += sub_0802A3D0(item, idx);
             }
         }
     }
+    
     scriptstack_push(cnt);
     return 0;
 }
-#else
-NAKED
-u16 cmd_get_item_count(s32* sp) {
-    asm_unified("\n\
-	push {r4, r5, r6, r7, lr}\n\
-	mov r7, r8\n\
-	push {r7}\n\
-	movs r1, #0\n\
-	bl scriptstack_peek\n\
-	lsls r0, r0, #0x10\n\
-	lsrs r6, r0, #0x10\n\
-	ldr r1, _0801C7C8 @ =gGoodsInfo\n\
-	movs r0, #0x6c\n\
-	muls r0, r6, r0\n\
-	adds r1, #4\n\
-	adds r0, r0, r1\n\
-	ldr r0, [r0]\n\
-	cmp r0, #8\n\
-	bne _0801C7D0\n\
-	ldr r0, _0801C7CC @ =gSave\n\
-	adds r0, #0x10\n\
-	adds r0, r6, r0\n\
-	ldrb r0, [r0]\n\
-	b _0801C818\n\
-	.align 2, 0\n\
-_0801C7C8: .4byte gGoodsInfo\n\
-_0801C7CC: .4byte gSave\n\
-_0801C7D0:\n\
-	movs r7, #0\n\
-	movs r5, #0\n\
-	ldr r0, _0801C828 @ =gGame\n\
-	ldr r1, _0801C82C @ =0x00008299\n\
-	adds r0, r0, r1\n\
-	ldrb r1, [r0]\n\
-	cmp r7, r1\n\
-	bhs _0801C816\n\
-	mov r8, r0\n\
-_0801C7E2:\n\
-	adds r0, r5, #0\n\
-	bl get_char_stats\n\
-	adds r4, r0, #0\n\
-	ldrb r0, [r4]\n\
-	cmp r0, #0\n\
-	beq _0801C808\n\
-	bl sub_08001D2C\n\
-	lsls r0, r0, #0x10\n\
-	cmp r0, #0\n\
-	beq _0801C808\n\
-	adds r0, r4, #0\n\
-	adds r1, r6, #0\n\
-	bl sub_0802A3D0\n\
-	adds r0, r7, r0\n\
-	lsls r0, r0, #0x10\n\
-	lsrs r7, r0, #0x10\n\
-_0801C808:\n\
-	adds r0, r5, #1\n\
-	lsls r0, r0, #0x10\n\
-	lsrs r5, r0, #0x10\n\
-	mov r0, r8\n\
-	ldrb r0, [r0]\n\
-	cmp r5, r0\n\
-	blo _0801C7E2\n\
-_0801C816:\n\
-	adds r0, r7, #0\n\
-_0801C818:\n\
-	bl scriptstack_push\n\
-	movs r0, #0\n\
-	pop {r3}\n\
-	mov r8, r3\n\
-	pop {r4, r5, r6, r7}\n\
-	pop {r1}\n\
-	bx r1\n\
-	.align 2, 0\n\
-_0801C828: .4byte gGame\n\
-_0801C82C: .4byte 0x00008299\n\
-    ");
-}
-#endif
 
 u16 cmd_get_party_size(s32* sp) {
     scriptstack_push(gGame.party_count);
@@ -968,14 +893,14 @@ u16 cmd_has_party_member_2(s32* sp) {
     }
     return 0;
 }
+void sub_080296E4(int);
 
-#ifdef NONMATCHING
 u16 cmd_party_add(s32* sp) {
     s16 status;
     u16 idx;
 
     idx = scriptstack_peek(sp, 0);
-    if (idx * 0x10000 - 0x10000 >> 0x10 < 0xf) {
+    if ((u16)(idx - 1) < 0xf) {
         status = sub_0802B8C4(idx);
         if (status == -1) {
             sub_080296E4(idx);
@@ -986,53 +911,6 @@ u16 cmd_party_add(s32* sp) {
     }
     return 0;
 }
-#else
-NAKED
-u16 cmd_party_add(s32* sp) {
-    asm_unified("\n\
-	push {r4, lr}\n\
-	movs r1, #0\n\
-	bl scriptstack_peek\n\
-	lsls r0, r0, #0x10\n\
-	lsrs r4, r0, #0x10\n\
-	ldr r1, _0801C914 @ =0xFFFF0000\n\
-	adds r0, r0, r1\n\
-	lsrs r0, r0, #0x10\n\
-	cmp r0, #0xe\n\
-	bhi _0801C8F6\n\
-	adds r0, r4, #0\n\
-	bl sub_0802B8C4\n\
-	lsls r0, r0, #0x10\n\
-	asrs r0, r0, #0x10\n\
-	movs r1, #1\n\
-	rsbs r1, r1, #0\n\
-	cmp r0, r1\n\
-	bne _0801C8F6\n\
-	adds r0, r4, #0\n\
-	bl sub_080296E4\n\
-_0801C8F6:\n\
-	ldr r0, _0801C918 @ =gGame\n\
-	ldr r1, _0801C91C @ =0x00008299\n\
-	adds r0, r0, r1\n\
-	ldrb r0, [r0]\n\
-	cmp r0, #1\n\
-	bls _0801C90A\n\
-	ldr r0, _0801C920 @ =0x000003E3\n\
-	movs r1, #1\n\
-	bl set_event_flag\n\
-_0801C90A:\n\
-	movs r0, #0\n\
-	pop {r4}\n\
-	pop {r1}\n\
-	bx r1\n\
-	.align 2, 0\n\
-_0801C914: .4byte 0xFFFF0000\n\
-_0801C918: .4byte gGame\n\
-_0801C91C: .4byte 0x00008299\n\
-_0801C920: .4byte 0x000003E3\n\
-    ");
-}
-#endif
 
 u16 cmd_party_heal(s32* sp) {
     u16 mode;
@@ -1211,13 +1089,13 @@ u16 cmd_28(s32* sp) {
     return 0;
 }
 
-#ifdef NONMATCHING
+// EXACTLY the same as cmd_party_add
 u16 cmd_29(s32* sp) {
     s16 status;
     u16 idx;
 
     idx = scriptstack_peek(sp, 0);
-    if ((u32)(idx * 0x10000 - 0x10000) >> 0x10 < 0xf) {
+    if ((u16)(idx - 1) < 0xf) {
         status = sub_0802B8C4(idx);
         if (status == -1) {
             sub_080296E4(idx);
@@ -1228,53 +1106,6 @@ u16 cmd_29(s32* sp) {
     }
     return 0;
 }
-#else
-NAKED
-u16 cmd_29(s32* sp) {
-    asm_unified("\n\
-	push {r4, lr}\n\
-	movs r1, #0\n\
-	bl scriptstack_peek\n\
-	lsls r0, r0, #0x10\n\
-	lsrs r4, r0, #0x10\n\
-	ldr r1, _0801CB94 @ =0xFFFF0000\n\
-	adds r0, r0, r1\n\
-	lsrs r0, r0, #0x10\n\
-	cmp r0, #0xe\n\
-	bhi _0801CB76\n\
-	adds r0, r4, #0\n\
-	bl sub_0802B8C4\n\
-	lsls r0, r0, #0x10\n\
-	asrs r0, r0, #0x10\n\
-	movs r1, #1\n\
-	rsbs r1, r1, #0\n\
-	cmp r0, r1\n\
-	bne _0801CB76\n\
-	adds r0, r4, #0\n\
-	bl sub_080296E4\n\
-_0801CB76:\n\
-	ldr r0, _0801CB98 @ =gGame\n\
-	ldr r1, _0801CB9C @ =0x00008299\n\
-	adds r0, r0, r1\n\
-	ldrb r0, [r0]\n\
-	cmp r0, #1\n\
-	bls _0801CB8A\n\
-	ldr r0, _0801CBA0 @ =0x000003E3\n\
-	movs r1, #1\n\
-	bl set_event_flag\n\
-_0801CB8A:\n\
-	movs r0, #0\n\
-	pop {r4}\n\
-	pop {r1}\n\
-	bx r1\n\
-	.align 2, 0\n\
-_0801CB94: .4byte 0xFFFF0000\n\
-_0801CB98: .4byte gGame\n\
-_0801CB9C: .4byte 0x00008299\n\
-_0801CBA0: .4byte 0x000003E3\n\
-    ");
-}
-#endif
 
 void sub_08029684(u32, u32, u32, Size*);
 void sub_08029FC8(u32, u32, u32, Size*);

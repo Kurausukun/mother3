@@ -10,7 +10,7 @@ public:
 
     virtual void sndsystem_68();
     virtual void sndsystem_70();
-    virtual void sndsystem_78();
+    virtual void sndsystem_78(int);
     virtual void sndsystem_80(s32);
 };
 SndSystem* sub_0806FDB0();

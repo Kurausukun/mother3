@@ -80,13 +80,13 @@ _vt.6System::
 	.4byte sub_0805D604__6System
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805D638__Fv
+	.4byte sub_0805D638__6System
 	.2byte 0
 	.2byte 0
 	.4byte getGameProgression__6System
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805D6F8__6System
+	.4byte sub_0805D6F8__6Systemi
 
 _vt.13SystemManager::
 	.2byte 0
