@@ -1,4 +1,5 @@
 	.syntax unified
+cmd_set_palettes:
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	movs r1, #2

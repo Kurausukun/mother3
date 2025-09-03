@@ -1,4 +1,5 @@
 	.syntax unified
+cmd_A6:
 	push {lr}
 	movs r0, #1
 	bl sub_080517AC

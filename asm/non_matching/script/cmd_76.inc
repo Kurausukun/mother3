@@ -1,4 +1,5 @@
 	.syntax unified
+cmd_76:
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	ldr r4, _08020388

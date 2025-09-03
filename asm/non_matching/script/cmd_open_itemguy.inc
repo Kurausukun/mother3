@@ -1,4 +1,5 @@
 	.syntax unified
+cmd_open_itemguy:
 	push {lr}
 	ldr r3, _080216BC
 	ldr r0, _080216C0

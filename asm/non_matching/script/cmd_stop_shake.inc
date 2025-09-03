@@ -1,4 +1,5 @@
 	.syntax unified
+cmd_stop_shake:
 	ldr r0, _080203B0
 	ldr r1, _080203B4
 	adds r0, r0, r1

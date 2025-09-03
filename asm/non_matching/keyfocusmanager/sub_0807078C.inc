@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0807078C:
 	push {lr}
 	bl get__13SystemManager
 	ldr r1, [r0, #0x1c]

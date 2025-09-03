@@ -1,4 +1,5 @@
 	.syntax unified
+sub_08086F30:
 	ldrh r1, [r0, #0x2a]
 	movs r0, #1
 	ands r0, r1

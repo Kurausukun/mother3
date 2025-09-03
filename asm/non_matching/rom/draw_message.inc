@@ -1,4 +1,5 @@
 	.syntax unified
+draw_message:
 	push {r4, r5, r6, lr}
 	sub sp, #4
 	ldr r4, _0800893C

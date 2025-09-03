@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0806625C:
 	push {lr}
 	bl KeyPadInstance
 	bl getNewKeys__6KeyPad

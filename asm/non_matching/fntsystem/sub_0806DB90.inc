@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0806DB90:
 	adds r0, #0x34
 	ldrb r0, [r0]
 	lsrs r0, r0, #1

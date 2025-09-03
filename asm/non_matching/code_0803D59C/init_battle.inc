@@ -1,4 +1,5 @@
 	.syntax unified
+init_battle:
 	push {lr}
 	bl sub_0805B9F4
 	ldr r0, _0805B9EC

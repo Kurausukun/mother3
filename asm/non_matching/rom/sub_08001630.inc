@@ -1,4 +1,5 @@
 	.syntax unified
+sub_08001630:
 	ldrb r3, [r0, #0xe]
 	movs r2, #2
 	rsbs r2, r2, #0

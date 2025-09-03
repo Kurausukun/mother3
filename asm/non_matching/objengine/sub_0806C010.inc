@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0806C010:
 	adds r3, r0, #0
 	asrs r1, r1, #1
 	lsls r0, r1, #7

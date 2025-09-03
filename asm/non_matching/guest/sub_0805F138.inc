@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0805F138:
 	movs r1, #1
 	str r1, [r0, #0x28]
 	bx lr

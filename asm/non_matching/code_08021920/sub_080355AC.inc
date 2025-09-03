@@ -1,4 +1,5 @@
 	.syntax unified
+sub_080355AC:
 	push {lr}
 	bl sub_080031E0
 	movs r1, #0x1f

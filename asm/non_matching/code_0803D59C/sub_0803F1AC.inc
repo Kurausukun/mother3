@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0803F1AC:
 	push {r4, r5, r6, lr}
 	mov ip, r0
 	adds r3, r1, #0

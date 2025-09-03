@@ -1,4 +1,5 @@
 	.syntax unified
+sub_08050FCC:
 	adds r0, #0x6f
 	ldrb r1, [r0]
 	movs r2, #0x20

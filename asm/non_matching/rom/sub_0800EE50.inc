@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0800EE50:
 	push {r4, r5, lr}
 	adds r2, r0, #0
 	ldr r5, _0800EE80

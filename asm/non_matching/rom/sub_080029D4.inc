@@ -1,4 +1,5 @@
 	.syntax unified
+sub_080029D4:
 	lsls r0, r0, #0x10
 	ldr r2, _080029F4
 	lsrs r0, r0, #0xf

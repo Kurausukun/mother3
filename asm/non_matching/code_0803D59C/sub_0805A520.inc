@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0805A520:
 	push {r4, lr}
 	ldr r2, _0805A55C
 	ldrb r1, [r2, #0xc]

@@ -1,4 +1,5 @@
 	.syntax unified
+sub_080053D0:
 	push {lr}
 	bl snd_vsync
 	bl sub_080058D8

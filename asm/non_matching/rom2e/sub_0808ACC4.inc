@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0808ACC4:
 	adds r4, r0, #0
 	cmp r4, #0
 	beq _0808AD0C

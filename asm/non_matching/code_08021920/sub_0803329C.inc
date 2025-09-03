@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0803329C:
 	push {lr}
 	ldr r2, _080332A8
 	bl _call_via_r2

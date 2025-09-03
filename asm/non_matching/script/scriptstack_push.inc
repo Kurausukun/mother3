@@ -1,4 +1,5 @@
 	.syntax unified
+scriptstack_push:
 	push {r4, lr}
 	ldr r2, _08021908
 	ldr r1, _0802190C

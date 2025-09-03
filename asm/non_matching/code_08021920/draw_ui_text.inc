@@ -1,4 +1,5 @@
 	.syntax unified
+draw_ui_text:
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	ldr r0, [sp, #0x14]

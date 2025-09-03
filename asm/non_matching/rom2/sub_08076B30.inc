@@ -1,4 +1,5 @@
 	.syntax unified
+sub_08076B30:
 	push {r4, lr}
 	adds r4, r0, #0
 	bl attackdata_c8__10UnitTarget

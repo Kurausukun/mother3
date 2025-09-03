@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0806C090:
 	ldr r2, _0806C09C
 	adds r0, r0, r2
 	lsls r1, r1, #3

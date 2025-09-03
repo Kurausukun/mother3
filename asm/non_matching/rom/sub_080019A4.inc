@@ -1,4 +1,5 @@
 	.syntax unified
+sub_080019A4:
 	push {lr}
 	ldr r1, _080019D4
 	movs r2, #0x9c

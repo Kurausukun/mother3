@@ -1,4 +1,5 @@
 	.syntax unified
+sub_08081A78:
 	push {lr}
 	movs r1, #0x9e
 	lsls r1, r1, #1

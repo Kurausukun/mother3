@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0805D804:
 	ldr r0, _0805D808
 	bx lr
 	.align 2, 0

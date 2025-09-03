@@ -1,4 +1,5 @@
 	.syntax unified
+cmd_play_fade:
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	ldr r5, _08020198

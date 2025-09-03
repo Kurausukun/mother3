@@ -1,4 +1,5 @@
 	.syntax unified
+sub_08081EF4:
 	asrs r1, r0, #0x10
 	lsrs r0, r0, #0x1f
 	adds r1, r1, r0

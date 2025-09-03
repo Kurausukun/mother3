@@ -1,4 +1,5 @@
 	.syntax unified
+sub_08002C54:
 	ldrh r1, [r0, #4]
 	adds r0, r0, r1
 	bx lr

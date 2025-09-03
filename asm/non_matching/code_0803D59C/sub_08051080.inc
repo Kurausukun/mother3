@@ -1,4 +1,5 @@
 	.syntax unified
+sub_08051080:
 	lsls r1, r1, #4
 	strh r1, [r0]
 	lsls r2, r2, #4

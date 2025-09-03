@@ -1,4 +1,5 @@
 	.syntax unified
+sub_08070654:
 	push {lr}
 	bl randomMT
 	pop {r1}

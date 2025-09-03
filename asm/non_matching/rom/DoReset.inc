@@ -1,4 +1,5 @@
 	.syntax unified
+DoReset:
 	push {lr}
 	bl m4aMPlayAllStop
 	bl m4aSoundMain

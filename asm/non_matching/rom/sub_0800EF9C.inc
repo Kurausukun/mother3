@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0800EF9C:
 	push {r4, lr}
 	mov ip, r0
 	ldr r0, _0800EFE4

@@ -1,4 +1,5 @@
 	.syntax unified
+sub_08052F74:
 	movs r2, #0x2c
 	strb r2, [r0]
 	ldrh r0, [r1]

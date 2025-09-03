@@ -1,4 +1,5 @@
 	.syntax unified
+sub_08039B88:
 	push {lr}
 	mov ip, r0
 	mov r2, ip

@@ -1,4 +1,5 @@
 	.syntax unified
+sub_080510A4:
 	mov ip, r0
 	adds r0, #0x68
 	movs r3, #0

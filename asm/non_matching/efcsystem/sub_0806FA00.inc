@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0806FA00:
 	push {lr}
 	ldr r2, _0806FA10
 	str r2, [r0, #0x1c]

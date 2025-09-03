@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0801AE18:
 	push {lr}
 	ldrb r1, [r0, #1]
 	movs r0, #0xc0

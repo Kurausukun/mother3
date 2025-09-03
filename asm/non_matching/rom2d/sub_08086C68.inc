@@ -1,4 +1,5 @@
 	.syntax unified
+sub_08086C68:
 	lsls r0, r1, #0x10
 	movs r1, #0x80
 	lsls r1, r1, #0xd

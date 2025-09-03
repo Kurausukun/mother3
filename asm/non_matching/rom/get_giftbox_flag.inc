@@ -1,4 +1,5 @@
 	.syntax unified
+get_giftbox_flag:
 	adds r2, r0, #0
 	lsls r2, r2, #0x10
 	ldr r0, _08002A54

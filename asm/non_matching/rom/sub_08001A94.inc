@@ -1,4 +1,5 @@
 	.syntax unified
+sub_08001A94:
 	ldr r3, _08001AA8
 	str r0, [r3]
 	str r1, [r3, #4]

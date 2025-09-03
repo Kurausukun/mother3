@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0806EDA8:
 	lsls r2, r1, #3
 	adds r2, r2, r1
 	lsls r2, r2, #4

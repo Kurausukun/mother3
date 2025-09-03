@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0807B444:
 	movs r1, #0x83
 	lsls r1, r1, #2
 	adds r0, r0, r1

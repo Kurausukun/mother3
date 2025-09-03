@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0808AF10:
 	ldr r2, [r0, #0x20]
 	str r2, [r0, #0x24]
 	lsls r1, r1, #0x10

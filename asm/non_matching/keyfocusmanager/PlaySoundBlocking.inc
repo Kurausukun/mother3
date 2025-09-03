@@ -1,4 +1,5 @@
 	.syntax unified
+PlaySoundBlocking:
 	push {lr}
 	sub sp, #0x38
 	lsls r0, r0, #0x10

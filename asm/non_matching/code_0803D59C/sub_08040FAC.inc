@@ -1,4 +1,5 @@
 	.syntax unified
+sub_08040FAC:
 	push {lr}
 	sub sp, #8
 	ldr r1, _08040FDC

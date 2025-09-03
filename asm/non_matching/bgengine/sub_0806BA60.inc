@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0806BA60:
 	ldr r1, [r1]
 	str r1, [r0, #0x20]
 	bx lr

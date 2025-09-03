@@ -1,4 +1,5 @@
 	.syntax unified
+sub_080512B8:
 	ldrh r2, [r0]
 	lsls r2, r2, #0x10
 	asrs r2, r2, #0x14

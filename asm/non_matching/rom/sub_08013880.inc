@@ -1,4 +1,5 @@
 	.syntax unified
+sub_08013880:
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}

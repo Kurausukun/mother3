@@ -1,4 +1,5 @@
 	.syntax unified
+sub_08060B20:
 	push {r4, lr}
 	sub sp, #4
 	str r1, [sp]

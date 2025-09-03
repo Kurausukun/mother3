@@ -1,4 +1,5 @@
 	.syntax unified
+sub_08080560:
 	adds r0, r7, #0
 	add sp, #0x34
 	pop {r3}

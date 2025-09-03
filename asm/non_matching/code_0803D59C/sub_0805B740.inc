@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0805B740:
 	ldrb r2, [r0]
 	ldrb r3, [r1]
 	subs r2, r2, r3

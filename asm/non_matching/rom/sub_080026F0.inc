@@ -1,4 +1,5 @@
 	.syntax unified
+sub_080026F0:
 	push {lr}
 	ldr r0, _08002710
 	bl get_flag

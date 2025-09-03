@@ -1,4 +1,5 @@
 .syntax unified
+sub_0806E308:
 .include "asm/macros.inc"
 thumb_func_start _._3Msg
 _._3Msg: @ 0x0806E308

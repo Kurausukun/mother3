@@ -1,4 +1,5 @@
     .syntax unified
+sub_0805D6F8:
 	push {r4, lr}
 	adds r4, r1, #0
 	ldr r1, _0805D714 @ =gUnknown_020050C0

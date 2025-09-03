@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0802F2B4:
 	adds r0, #0x96
 	ldrh r1, [r1, #2]
 	ldrh r2, [r0]

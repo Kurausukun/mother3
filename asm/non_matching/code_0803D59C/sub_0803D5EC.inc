@@ -1,4 +1,5 @@
     .syntax unified
+sub_0803D5EC:
 	cmp r0, #0
 	bge _0803D5F2
 	rsbs r0, r0, #0

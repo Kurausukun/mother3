@@ -1,4 +1,5 @@
     .syntax unified
+sub_08078410__5Goods:
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8

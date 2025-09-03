@@ -1,4 +1,5 @@
 	.syntax unified
+cmd_D1:
 	push {lr}
 	movs r1, #0
 	bl scriptstack_peek

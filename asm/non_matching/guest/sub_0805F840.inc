@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0805F840:
 	push {lr}
 	cmp r1, #0
 	blt _0805F85A

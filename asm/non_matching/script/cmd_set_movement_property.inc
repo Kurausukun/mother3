@@ -1,4 +1,5 @@
 	.syntax unified
+cmd_set_movement_property:
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	movs r1, #3

@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0802E07C:
 	movs r1, #0xcb
 	adds r1, r1, r0
 	mov ip, r1

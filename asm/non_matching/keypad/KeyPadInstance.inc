@@ -1,4 +1,5 @@
 	.syntax unified
+KeyPadInstance:
 	ldr r0, _0806CC18
 	ldr r0, [r0]
 	bx lr

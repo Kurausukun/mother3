@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0805B65C:
 	ldr r2, [r0]
 	ldr r3, [r1]
 	subs r2, r2, r3

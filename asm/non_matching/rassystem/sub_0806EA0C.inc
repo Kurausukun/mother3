@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0806EA0C:
 	adds r0, #0x49
 	ldrb r0, [r0]
 	lsrs r0, r0, #1

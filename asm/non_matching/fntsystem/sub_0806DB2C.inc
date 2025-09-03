@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0806DB2C:
 	adds r0, #0x34
 	ldrb r1, [r0]
 	movs r0, #1

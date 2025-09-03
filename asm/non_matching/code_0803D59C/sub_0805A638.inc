@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0805A638:
 	push {r4, r5, r6, r7, lr}
 	sub sp, #0x34
 	add r4, sp, #0x30

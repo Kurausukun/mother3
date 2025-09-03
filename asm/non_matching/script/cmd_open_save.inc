@@ -1,4 +1,5 @@
 	.syntax unified
+cmd_open_save:
 	push {lr}
 	movs r0, #1
 	rsbs r0, r0, #0

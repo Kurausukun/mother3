@@ -1,4 +1,5 @@
 	.syntax unified
+cmd_AE:
 	push {r4, lr}
 	movs r1, #0
 	bl scriptstack_peek

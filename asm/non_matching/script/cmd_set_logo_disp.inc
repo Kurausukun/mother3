@@ -1,4 +1,5 @@
 	.syntax unified
+cmd_set_logo_disp:
 	push {lr}
 	movs r0, #0
 	bl sub_0803C4DC

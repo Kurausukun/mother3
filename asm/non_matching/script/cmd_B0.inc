@@ -1,4 +1,5 @@
 	.syntax unified
+cmd_B0:
 	push {lr}
 	ldr r1, _08021854
 	ldr r2, _08021858

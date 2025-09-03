@@ -1,4 +1,5 @@
 	.syntax unified
+sub_080702A8:
 	push {lr}
 	cmp r1, #0
 	bge _080702B0

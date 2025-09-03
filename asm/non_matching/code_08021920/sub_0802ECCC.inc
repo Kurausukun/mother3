@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0802ECCC:
 	movs r3, #2
 	ldrsh r2, [r1, r3]
 	adds r0, #0xbc

@@ -1,4 +1,5 @@
 	.syntax unified
+sub_08001A70:
 	sub sp, #4
 	movs r2, #0
 	str r2, [sp]

@@ -1,4 +1,5 @@
 	.syntax unified
+sub_08080040:
 	push {lr}
 	bl get__13BattleManager
 	ldr r1, [r0, #0x1c]

@@ -1,4 +1,5 @@
 	.syntax unified
+sub_08050C08:
 	push {r4, r5, lr}
 	mov ip, r0
 	lsls r1, r1, #0x10

@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0805D7A8:
 	push {lr}
 	bl sub_0805D7A0
 	pop {r1}

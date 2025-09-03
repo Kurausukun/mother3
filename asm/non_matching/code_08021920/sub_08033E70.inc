@@ -1,4 +1,5 @@
 	.syntax unified
+sub_08033E70:
 	push {r4, r5, r6, lr}
 	movs r0, #0
 	bl get_obj_direct

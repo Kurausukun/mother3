@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0800AD6C:
 	ldr r2, _0800ADA0
 	ldr r0, _0800ADA4
 	adds r3, r2, r0

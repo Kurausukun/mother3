@@ -1,4 +1,5 @@
 	.syntax unified
+cmd_C8:
 	ldr r2, _08020AEC
 	ldr r0, _08020AF0
 	adds r2, r2, r0

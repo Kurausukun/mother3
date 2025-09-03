@@ -1,4 +1,5 @@
 	.syntax unified
+memclear:
 	push {lr}
 	sub sp, #8
 	adds r3, r0, #0

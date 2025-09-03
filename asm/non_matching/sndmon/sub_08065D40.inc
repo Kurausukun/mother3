@@ -1,4 +1,5 @@
 	.syntax unified
+sub_08065D40:
 	push {lr}
 	adds r2, r1, #0
 	cmp r2, #0

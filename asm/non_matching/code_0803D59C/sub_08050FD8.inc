@@ -1,4 +1,5 @@
 	.syntax unified
+sub_08050FD8:
 	movs r2, #0x6f
 	adds r2, r2, r0
 	mov ip, r2

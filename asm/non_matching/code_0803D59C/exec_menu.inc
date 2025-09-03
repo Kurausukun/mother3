@@ -1,4 +1,5 @@
 	.syntax unified
+exec_menu:
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	bl sub_080506A4

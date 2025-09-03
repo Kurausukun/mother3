@@ -1,4 +1,5 @@
 	.syntax unified
+triggerMonsterSkill:
 	push {r4, r5, r6, r7, lr}
 	sub sp, #0x44
 	adds r7, r0, #0

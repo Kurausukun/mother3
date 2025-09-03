@@ -1,4 +1,5 @@
 	.syntax unified
+sub_08005BB4:
 	push {lr}
 	sub sp, #4
 	mov r1, sp

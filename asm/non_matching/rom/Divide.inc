@@ -1,4 +1,5 @@
 	.syntax unified
+Divide:
 	push {lr}
 	cmp r1, #0
 	beq _08002FCC

@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0805850C:
 	push {lr}
 	bl sub_08058644
 	bl clear_gfx

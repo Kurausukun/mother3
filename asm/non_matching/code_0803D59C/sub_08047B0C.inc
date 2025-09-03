@@ -1,4 +1,5 @@
 	.syntax unified
+sub_08047B0C:
 	push {lr}
 	sub sp, #4
 	ldrb r0, [r0]

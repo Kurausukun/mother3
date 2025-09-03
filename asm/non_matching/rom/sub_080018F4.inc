@@ -1,4 +1,5 @@
 	.syntax unified
+sub_080018F4:
 	movs r1, #0x80
 	lsls r1, r1, #0x13
 	movs r0, #0x80

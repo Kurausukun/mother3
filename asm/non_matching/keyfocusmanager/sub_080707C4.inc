@@ -1,4 +1,5 @@
 	.syntax unified
+sub_080707C4:
 	push {r4, lr}
 	adds r4, r0, #0
 	bl get__13SystemManager

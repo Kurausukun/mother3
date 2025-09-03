@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0802F2CC:
 	adds r3, r0, #0
 	movs r0, #0xc7
 	adds r0, r0, r3

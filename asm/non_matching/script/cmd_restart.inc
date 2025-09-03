@@ -1,4 +1,5 @@
 	.syntax unified
+cmd_restart:
 	push {lr}
 	bl DoReset
 	movs r0, #1

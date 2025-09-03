@@ -1,4 +1,5 @@
 	.syntax unified
+sub_08005354:
 	push {lr}
 	bl nullsub_17
 	bl nullsub_18

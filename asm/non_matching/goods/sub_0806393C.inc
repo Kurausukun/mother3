@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0806393C:
 	adds r0, #0x9c
 	ldr r0, [r0]
 	bx lr

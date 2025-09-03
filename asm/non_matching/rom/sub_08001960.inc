@@ -1,4 +1,5 @@
 	.syntax unified
+sub_08001960:
 	push {lr}
 	bl VBlankIntrWait
 	pop {r0}

@@ -1,4 +1,5 @@
 	.syntax unified
+sub_080145A8:
 	ldr r2, _080145B8
 	ldrb r1, [r2, #2]
 	movs r0, #0x11

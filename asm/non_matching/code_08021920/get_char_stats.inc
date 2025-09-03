@@ -1,4 +1,5 @@
 	.syntax unified
+get_char_stats:
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	ldr r1, _0802B86C

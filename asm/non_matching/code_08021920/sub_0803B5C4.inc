@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0803B5C4:
 	push {r4, r5, r6, lr}
 	movs r3, #0
 	ldr r4, _0803B60C

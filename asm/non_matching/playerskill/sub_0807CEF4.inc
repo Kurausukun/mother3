@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0807CEF4:
 	movs r1, #0x3c
 	movs r2, #0x20
 	strh r1, [r0]

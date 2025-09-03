@@ -1,4 +1,5 @@
 	.syntax unified
+get_progression_flag:
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	ldr r1, _080029D0

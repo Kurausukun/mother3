@@ -1,4 +1,5 @@
 	.syntax unified
+sub_08065D68:
 	push {r4, lr}
 	ldr r1, _08065D90
 	ldr r0, [r1]

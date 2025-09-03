@@ -1,4 +1,5 @@
 	.syntax unified
+draw_sprites:
 	push {r4, r5, lr}
 	ldr r0, _0803073C
 	ldr r1, _08030740

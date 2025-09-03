@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0807066C:
 	push {lr}
 	cmp r1, #0
 	beq _08070676

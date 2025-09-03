@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0805AFCC:
 	push {r4, r5, r6, r7, lr}
 	sub sp, #0x34
 	ldr r1, _0805B018

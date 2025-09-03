@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0805EFEC:
 	lsls r0, r0, #0x10
 	ldr r2, _0805EFF8
 	lsrs r0, r0, #0xe

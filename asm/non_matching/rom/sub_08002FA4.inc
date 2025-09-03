@@ -1,4 +1,5 @@
 	.syntax unified
+sub_08002FA4:
 	lsls r0, r0, #0x10
 	ldr r2, _08002FBC
 	movs r1, #0xff

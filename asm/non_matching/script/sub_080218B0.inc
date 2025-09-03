@@ -1,4 +1,5 @@
 	.syntax unified
+sub_080218B0:
 	push {lr}
 	cmp r0, r1
 	bne _080218BE

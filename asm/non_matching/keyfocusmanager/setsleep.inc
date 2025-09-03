@@ -1,4 +1,5 @@
 	.syntax unified
+setsleep:
 	push {r4, lr}
 	adds r4, r0, #0
 	bl get__12ClockManager

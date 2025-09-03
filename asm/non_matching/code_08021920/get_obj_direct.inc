@@ -1,4 +1,5 @@
 	.syntax unified
+get_obj_direct:
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	movs r1, #0xd0

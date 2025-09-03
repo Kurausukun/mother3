@@ -1,4 +1,5 @@
 	.syntax unified
+update_oam:
 	push {r4, r5, r6, r7, lr}
 	ldr r2, _08032FF4
 	ldr r1, _08032FF8

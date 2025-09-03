@@ -1,4 +1,5 @@
 	.syntax unified
+metalMonkeyCheck:
 	push {r4, r5, r6, lr}
 	sub sp, #0x38
 	bl sub_080725E8

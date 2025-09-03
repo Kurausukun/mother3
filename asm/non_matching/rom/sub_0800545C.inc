@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0800545C:
 	push {lr}
 	bl snd_vsync
 	movs r1, #0x80

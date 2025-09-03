@@ -1,5 +1,6 @@
 .include "asm/macros.inc"
 	.syntax unified
+sub_08071F8C:
 	push {r4, lr}
 	adds r4, r0, #0
 	bl __4Base

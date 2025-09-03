@@ -1,4 +1,5 @@
 	.syntax unified
+tellGaveUpItem:
 	push {r4, r5, r6, lr}
 	sub sp, #0x28
 	adds r6, r0, #0

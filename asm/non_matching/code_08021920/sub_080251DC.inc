@@ -1,4 +1,5 @@
 	.syntax unified
+sub_080251DC:
 	ldrb r2, [r0, #8]
 	movs r1, #2
 	rsbs r1, r1, #0

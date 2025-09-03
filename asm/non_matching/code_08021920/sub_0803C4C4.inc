@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0803C4C4:
 	push {lr}
 	adds r1, r0, #0
 	ldr r0, _0803C4D8

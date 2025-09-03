@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0802B57C:
 	push {lr}
 	ldr r0, _0802B5B4
 	bl get_flag

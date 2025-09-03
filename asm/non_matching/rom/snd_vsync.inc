@@ -1,4 +1,5 @@
 	.syntax unified
+snd_vsync:
 	push {lr}
 	bl m4aSoundVSync
 	ldr r1, _080037B8

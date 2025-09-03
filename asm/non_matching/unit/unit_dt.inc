@@ -1,4 +1,5 @@
     .syntax unified
+unit_dt:
     .global _._4Unit
     _._4Unit:
 	push {r4, r5, lr}

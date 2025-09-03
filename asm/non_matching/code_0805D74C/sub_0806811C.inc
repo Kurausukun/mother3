@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0806811C:
 	push {lr}
 	bl sub_08087944
 	lsls r0, r0, #0x18

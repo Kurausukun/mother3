@@ -1,4 +1,5 @@
 	.syntax unified
+get_misctext_len:
 	push {lr}
 	adds r1, r0, #0
 	lsls r1, r1, #0x10

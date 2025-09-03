@@ -1,4 +1,5 @@
 	.syntax unified
+sub_080052D0:
 	push {lr}
 	bl draw_sprites
 	bl draw_message

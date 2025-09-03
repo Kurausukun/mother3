@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0806D52C:
 	ldr r1, [r1]
 	ldrh r2, [r1, #8]
 	strh r2, [r0, #2]

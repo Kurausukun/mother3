@@ -1,4 +1,5 @@
 	.syntax unified
+sub_080842C0:
 	push {lr}
 	ldr r0, [r0, #0x30]
 	cmp r0, #0

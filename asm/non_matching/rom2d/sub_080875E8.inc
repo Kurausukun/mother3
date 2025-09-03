@@ -1,4 +1,5 @@
 	.syntax unified
+sub_080875E8:
 	lsls r1, r1, #2
 	adds r0, #0x28
 	adds r1, r0, r1

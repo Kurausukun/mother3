@@ -1,4 +1,5 @@
 	.syntax unified
+sub_080229F0:
 	push {r4, lr}
 	lsls r1, r1, #0x10
 	lsrs r3, r1, #0x10

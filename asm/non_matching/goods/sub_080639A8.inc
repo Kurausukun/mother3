@@ -1,5 +1,6 @@
 	.include "asm/macros.inc"
 	.syntax unified
+sub_080639A8:
 	ldr r2, _080639B0
 	str r2, [r0, #4]
 	strh r1, [r0]

@@ -1,4 +1,5 @@
 	.syntax unified
+sub_08060B0C:
 	adds r0, #0x80
 	ldr r0, [r0, #4]
 	bx lr

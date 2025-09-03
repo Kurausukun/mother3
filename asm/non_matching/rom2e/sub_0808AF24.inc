@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0808AF24:
 	movs r1, #0x22
 	ldrsh r0, [r0, r1]
 	bx lr

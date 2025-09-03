@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0807B450:
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	bl onTurn__4Unit

@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0807E014:
 	push {r4, lr}
 	mov ip, r0
 	adds r0, #0x34

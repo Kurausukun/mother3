@@ -1,4 +1,5 @@
 	.syntax unified
+init_audio:
 	push {r4, r5, r6, r7, lr}
 	movs r3, #0
 	ldr r0, _08003768

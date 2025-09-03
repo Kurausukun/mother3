@@ -1,4 +1,5 @@
 	.syntax unified
+reqInventorySlot:
 	push {r4, r5, lr}
 	movs r5, #0
 	b _08061328

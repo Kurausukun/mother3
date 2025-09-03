@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0803D59C:
 	push {r4, r5, r6, r7}
 	movs r6, r0
 	ldr r0, _0803D5E8 @ =gSceneObjBuffer

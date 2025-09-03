@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0806FF04:
 	push {lr}
 	bl m4aSoundMain
 	pop {r0}

@@ -1,4 +1,5 @@
 	.syntax unified
+cmd_set_gameover:
 	push {lr}
 	movs r0, #3
 	bl sub_080038A4

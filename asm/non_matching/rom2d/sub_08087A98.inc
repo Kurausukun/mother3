@@ -1,4 +1,5 @@
 	.syntax unified
+sub_08087A98:
 	push {lr}
 	mov ip, r4
 	ldr r4, _08087AC4

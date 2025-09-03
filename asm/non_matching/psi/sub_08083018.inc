@@ -1,4 +1,5 @@
 	.syntax unified
+sub_08083018:
 	ldr r0, [r0, #0x48]
 	adds r0, #0x34
 	ldrb r1, [r0]

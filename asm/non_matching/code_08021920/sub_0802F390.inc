@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0802F390:
 	ldrh r2, [r1, #2]
 	adds r2, #8
 	lsls r2, r2, #0x10

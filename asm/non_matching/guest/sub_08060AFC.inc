@@ -1,4 +1,5 @@
 	.syntax unified
+sub_08060AFC:
 	lsls r1, r1, #2
 	ldr r0, [r0, #0x70]
 	adds r0, r0, r1

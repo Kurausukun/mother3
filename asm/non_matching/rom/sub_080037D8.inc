@@ -1,4 +1,5 @@
 	.syntax unified
+sub_080037D8:
 	push {lr}
 	bl m4aSoundVSyncOn
 	pop {r0}

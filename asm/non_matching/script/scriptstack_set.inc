@@ -1,4 +1,5 @@
 	.syntax unified
+scriptstack_set:
 	lsls r1, r1, #0x10
 	ldr r3, _080218E0
 	lsrs r1, r1, #0xe

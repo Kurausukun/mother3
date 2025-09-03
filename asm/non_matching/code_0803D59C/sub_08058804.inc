@@ -1,4 +1,5 @@
 	.syntax unified
+sub_08058804:
 	sub sp, #4
 	mov r1, sp
 	strh r0, [r1]

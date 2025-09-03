@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0805504C:
 	ldr r2, _08055064
 	ldrb r1, [r0]
 	lsls r0, r1, #2

@@ -1,4 +1,5 @@
 	.syntax unified
+sub_08065A80:
 	ldr r1, _08065A90
 	str r1, [r0, #0x10]
 	adds r2, r0, #4

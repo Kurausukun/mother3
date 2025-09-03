@@ -1,4 +1,5 @@
     .syntax unified
+skill_08078D4C:
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}

@@ -1,4 +1,5 @@
 	.syntax unified
+sub_0806AF58:
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
 	adds r0, #0x50

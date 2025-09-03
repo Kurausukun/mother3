@@ -1,4 +1,5 @@
 	.syntax unified
+cmd_init_battle:
 	push {r4, lr}
 	movs r1, #0
 	bl scriptstack_peek

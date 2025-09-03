@@ -1,4 +1,5 @@
 	.syntax unified
+sub_08001AAC:
 	sub sp, #4
 	str r2, [sp]
 	ldr r2, _08001AC8

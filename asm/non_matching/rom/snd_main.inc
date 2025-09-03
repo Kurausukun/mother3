@@ -1,4 +1,5 @@
 	.syntax unified
+snd_main:
 	push {r4, lr}
 	ldr r4, _080037D4
 	ldrh r0, [r4]

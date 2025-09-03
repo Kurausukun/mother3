@@ -1,4 +1,5 @@
 	.syntax unified
+sub_08088018:
 	ldr r1, _08088020
 	str r1, [r0]
 	bx lr
