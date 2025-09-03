@@ -1,0 +1,26 @@
+	.syntax unified
+sub_0805111C:
+	push {lr}
+	lsls r1, r1, #0x10
+	lsrs r1, r1, #0x10
+	movs r2, #0
+	adds r3, r0, #0
+	adds r3, #0x54
+_08051128:
+	adds r0, r3, r2
+	ldrb r0, [r0]
+	cmp r1, r0
+	bhs _08051134
+	adds r0, r2, #0
+	b _08051140
+_08051134:
+	adds r0, r2, #1
+	lsls r0, r0, #0x10
+	lsrs r2, r0, #0x10
+	cmp r2, #3
+	bls _08051128
+	movs r0, #0
+_08051140:
+	pop {r1}
+	bx r1
+	.syntax divided

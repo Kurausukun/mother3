@@ -1,0 +1,40 @@
+// Auto-generated source file
+#include "global.h"
+
+extern "C" ASM_FUNC("asm/non_matching/rom2/sub_08076B30.inc", void sub_08076B30());
+extern "C" ASM_FUNC("asm/non_matching/rom2/sub_08076BBC.inc", void sub_08076BBC());
+extern "C" ASM_FUNC("asm/non_matching/rom2/sub_08076D18.inc", void sub_08076D18());
+extern "C" ASM_FUNC("asm/non_matching/rom2/sub_08076E80.inc", void sub_08076E80());
+extern "C" ASM_FUNC("asm/non_matching/rom2/sub_08076F34.inc", void sub_08076F34());
+extern "C" ASM_FUNC("asm/non_matching/rom2/sub_08076FE8.inc", void sub_08076FE8());
+extern "C" ASM_FUNC("asm/non_matching/rom2/sub_08076FF8.inc", void sub_08076FF8());
+extern "C" ASM_FUNC("asm/non_matching/rom2/sub_08077008.inc", void sub_08077008());
+extern "C" ASM_FUNC("asm/non_matching/rom2/sub_0807705C.inc", void sub_0807705C());
+extern "C" ASM_FUNC("asm/non_matching/rom2/sub_080770B8.inc", void sub_080770B8());
+extern "C" ASM_FUNC("asm/non_matching/rom2/sub_080770C8.inc", void sub_080770C8());
+extern "C" ASM_FUNC("asm/non_matching/rom2/sub_080770E8.inc", void sub_080770E8());
+extern "C" ASM_FUNC("asm/non_matching/rom2/sub_0807713C.inc", void sub_0807713C());
+extern "C" ASM_FUNC("asm/non_matching/rom2/sub_08077200.inc", void sub_08077200());
+extern "C" ASM_FUNC("asm/non_matching/rom2/sub_08077238.inc", void sub_08077238());
+extern "C" ASM_FUNC("asm/non_matching/rom2/sub_080772F4.inc", void sub_080772F4());
+extern "C" ASM_FUNC("asm/non_matching/rom2/sub_08077340.inc", void sub_08077340());
+extern "C" ASM_FUNC("asm/non_matching/rom2/sub_0807739C.inc", void sub_0807739C());
+extern "C" ASM_FUNC("asm/non_matching/rom2/sub_0807747C.inc", void sub_0807747C());
+extern "C" ASM_FUNC("asm/non_matching/rom2/sub_080774BC.inc", void sub_080774BC());
+extern "C" ASM_FUNC("asm/non_matching/rom2/sub_08077590.inc", void sub_08077590());
+extern "C" ASM_FUNC("asm/non_matching/rom2/sub_080775E8.inc", void sub_080775E8());
+extern "C" ASM_FUNC("asm/non_matching/rom2/sub_0807762C.inc", void sub_0807762C());
+extern "C" ASM_FUNC("asm/non_matching/rom2/sub_08077670.inc", void sub_08077670());
+extern "C" ASM_FUNC("asm/non_matching/rom2/sub_080776AC.inc", void sub_080776AC());
+extern "C" ASM_FUNC("asm/non_matching/rom2/sub_080776E8.inc", void sub_080776E8());
+extern "C" ASM_FUNC("asm/non_matching/rom2/sub_08077704.inc", void sub_08077704());
+extern "C" ASM_FUNC("asm/non_matching/rom2/sub_08077898.inc", void sub_08077898());
+extern "C" ASM_FUNC("asm/non_matching/rom2/sub_08077A48.inc", void sub_08077A48());
+extern "C" ASM_FUNC("asm/non_matching/rom2/sub_08077A64.inc", void sub_08077A64());
+extern "C" ASM_FUNC("asm/non_matching/rom2/sub_08077CF0__16UnitTargetChoiceP4UnitUi.inc", void sub_08077CF0__16UnitTargetChoiceP4UnitUi());
+extern "C" ASM_FUNC("asm/non_matching/rom2/sub_08077D8C.inc", void sub_08077D8C());
+extern "C" ASM_FUNC("asm/non_matching/rom2/sub_08077D98.inc", void sub_08077D98());
+extern "C" ASM_FUNC("asm/non_matching/rom2/sub_08077DB8.inc", void sub_08077DB8());
+extern "C" ASM_FUNC("asm/non_matching/rom2/sub_08077DBC.inc", void sub_08077DBC());
+extern "C" ASM_FUNC("asm/non_matching/rom2/sub_08077E28.inc", void sub_08077E28());
+extern "C" ASM_FUNC("asm/non_matching/rom2/sub_08077EB0.inc", void sub_08077EB0());

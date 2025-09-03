@@ -1,0 +1,7 @@
+	.syntax unified
+sub_08082F2C:
+	ldr r0, [r0, #0x48]
+	ldrh r0, [r0, #0x1e]
+	bx lr
+	.align 2, 0
+	.syntax divided

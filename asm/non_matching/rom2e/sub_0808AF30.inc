@@ -1,0 +1,7 @@
+	.syntax unified
+sub_0808AF30:
+	movs r1, #0x2a
+	ldrsh r0, [r0, r1]
+	bx lr
+	.align 2, 0
+	.syntax divided

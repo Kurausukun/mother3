@@ -1,0 +1,11 @@
+	.syntax unified
+sub_0808724C:
+	push {lr}
+	ldr r2, _0808725C
+	str r2, [r0, #0x1c]
+	bl sub_0806DD48
+	pop {r0}
+	bx r0
+	.align 2, 0
+_0808725C: .4byte vt_09F84DC0
+	.syntax divided

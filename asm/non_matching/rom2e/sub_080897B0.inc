@@ -1,0 +1,8 @@
+	.syntax unified
+sub_080897B0:
+	push {lr}
+	movs r1, #1
+	bl sub_08089D7C
+	pop {r1}
+	bx r1
+	.syntax divided

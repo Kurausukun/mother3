@@ -1,0 +1,7 @@
+	.syntax unified
+sub_08070B30:
+	strh r1, [r0, #0x30]
+	strh r2, [r0, #0x32]
+	bx lr
+	.align 2, 0
+	.syntax divided

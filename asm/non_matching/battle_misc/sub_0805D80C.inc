@@ -1,0 +1,8 @@
+	.syntax unified
+sub_0805D80C:
+	push {lr}
+	bl sub_0805D804
+	pop {r1}
+	bx r1
+	.align 2, 0
+	.syntax divided
