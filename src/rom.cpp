@@ -1,5 +1,15 @@
 // Auto-generated source file
 #include "global.h"
+#include "gba/gba.h"
+#include "battle/irc.h"
+
+extern const IrqTable gUnknown_080C1A58;
+extern IrqTable gIntrHandlers;
+extern u8 gUnknown_03004B14;
+extern u16 gUnknown_03004B0A;
+
+extern "C" void sub_0803D474();
+extern "C" void sub_08005C38();
 
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080012BC.inc", void sub_080012BC());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001378.inc", void sub_08001378());
@@ -25,7 +35,7 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001960.inc", void sub_08001960()
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0800196C.inc", void sub_0800196C());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080019A4.inc", void sub_080019A4());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080019DC.inc", void sub_080019DC());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001A14.inc", void sub_08001A14());
+extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001A14.inc", void sub_08001A14(void*, void*, int));
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001A38.inc", void sub_08001A38());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001A70.inc", void sub_08001A70());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001A94.inc", void sub_08001A94());
@@ -180,7 +190,18 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_080052D0.inc", void sub_080052D0()
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080052E4.inc", void sub_080052E4());
 extern "C" ASM_FUNC("asm/non_matching/rom/nullsub_3.inc", void nullsub_3());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08005354.inc", void sub_08005354());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08005364.inc", void sub_08005364());
+
+extern "C" void sub_08005364() {
+    REG_IME = 0;
+    REG_IE &= ~3;
+    REG_DISPSTAT &= ~0x18;
+    memcpy(&gIntrHandlers, &gUnknown_080C1A58, sizeof(gUnknown_080C1A58));
+    sub_08001A14(&sub_0803D474, &gUnknown_03004B14, 0x100);
+    sub_08005C38();
+    gUnknown_03004B0A = 0;
+    REG_IME = 1;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080053D0.inc", void sub_080053D0());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0800545C.inc", void sub_0800545C());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080054A0.inc", void sub_080054A0());
@@ -193,12 +214,50 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_08005890.inc", void sub_08005890()
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080058D8.inc", void sub_080058D8());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08005900.inc", void sub_08005900());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08005A3C.inc", void sub_08005A3C());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08005A70.inc", void sub_08005A70());
+
+extern "C" void sub_08005A70(void) {
+    if (gUnknown_03004B0A != 0) {
+        gUnknown_03004B0A = 0;
+        gIntrHandlers.hblank = (IrqTable::Func)&gUnknown_03004B14;
+    }
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08005A94.inc", void sub_08005A94());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08005AD8.inc", void sub_08005AD8());
+
+extern "C" void sub_08005AD8(u16 bit) {
+    REG_IME = 0;
+    REG_IE |= INTR_FLAG_VCOUNT;
+    REG_DISPSTAT |= DISPSTAT_VCOUNT_INTR;
+    REG_DISPSTAT &= 0xFF;
+    REG_DISPSTAT |= bit << 8;
+    gIntrHandlers.vblank =sub_0800545C;
+    gIntrHandlers.vcount = sub_080056E4;
+    REG_IME = 1;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08005B34.inc", void sub_08005B34());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08005B68.inc", void sub_08005B68());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08005BB4.inc", void sub_08005BB4());
+
+extern "C" void sub_08005B68(void) {
+    REG_IME = 0;
+    REG_IE &= ~INTR_FLAG_VCOUNT;
+    REG_DISPSTAT &= ~DISPSTAT_VCOUNT_INTR;
+    gIntrHandlers.vblank = &sub_080053D0;
+    gIntrHandlers.vcount = &sub_080055E4;
+    REG_IME = 1;
+}
+
+// TODO: does this volatile even make sense?
+extern "C" void sub_08005BB4(volatile u16 arg0) {
+    if (arg0) { 
+        REG_IME = 0;
+        gIntrHandlers.vcount = sub_08005730;
+        REG_IME = 1;
+    } else {
+        REG_IME = 0;
+        gIntrHandlers.vcount = sub_080055E4;
+        REG_IME = 1; 
+    }
+}
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08005BFC.inc", void sub_08005BFC());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08005C14.inc", void sub_08005C14());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08005C38.inc", void sub_08005C38());

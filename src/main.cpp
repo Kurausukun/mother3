@@ -1,4 +1,5 @@
 #include "battle/guest.h"
+#include "battle/irc.h"
 #include "gba/gba.h"
 #include "structs.h"
 
@@ -140,8 +141,8 @@ extern u8 gUnknown_020047D0;
 extern u8 gUnknown_020051E4;
 extern u16 gUnknown_02004854;
 extern u8 gUnknown_020051E0;
-extern u8 gUnknown_080C17A0;
-extern u8 gIntrHandlers;
+extern const IrqTable gUnknown_080C17A0;
+extern IrqTable gIntrHandlers;
 extern u8 gIntrVector;
 extern const char gUnknown_08CDB8A8[];
 extern u8 gUnknown_03000008;
@@ -437,7 +438,7 @@ void setup_vectors() {
     REG_IME = 0;
     REG_IE &= ~7;
     REG_DISPSTAT &= ~0x38;
-    memcpy(&gIntrHandlers, &gUnknown_080C17A0, 56);
+    memcpy((void*)&gIntrHandlers, (void*)&gUnknown_080C17A0, sizeof(gUnknown_080C17A0));
     DmaCopy32(3, IntrMain, &gIntrVector, 0x800);
     INTR_VECTOR = &gIntrVector;
     REG_IME = 1;
