@@ -1,0 +1,47 @@
+// Auto-generated source file
+#include "global.h"
+
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CA48.inc", void sub_0806CA48());
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CA50.inc", void sub_0806CA50());
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CA5C.inc", void sub_0806CA5C());
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CA64.inc", void sub_0806CA64());
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CA70.inc", void sub_0806CA70());
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CA78.inc", void sub_0806CA78());
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CA84.inc", void sub_0806CA84());
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CA8C.inc", void sub_0806CA8C());
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CA98.inc", void sub_0806CA98());
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CAA0.inc", void sub_0806CAA0());
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CAAC.inc", void sub_0806CAAC());
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CAB4.inc", void sub_0806CAB4());
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CAC0.inc", void sub_0806CAC0());
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CAC8.inc", void sub_0806CAC8());
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CAD4.inc", void sub_0806CAD4());
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CADC.inc", void sub_0806CADC());
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CAE8.inc", void sub_0806CAE8());
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CAF0.inc", void sub_0806CAF0());
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CAFC.inc", void sub_0806CAFC());
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CB04.inc", void sub_0806CB04());
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CB10.inc", void sub_0806CB10());
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CB18.inc", void sub_0806CB18());
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CB24.inc", void sub_0806CB24());
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CB2C.inc", void sub_0806CB2C());
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CB38.inc", void sub_0806CB38());
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CB40.inc", void sub_0806CB40());
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CB4C.inc", void sub_0806CB4C());
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CB54.inc", void sub_0806CB54());
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CB60.inc", void sub_0806CB60());
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CB68.inc", void sub_0806CB68());
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CB74.inc", void sub_0806CB74());
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CB7C.inc", void sub_0806CB7C());
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CB88.inc", void sub_0806CB88());
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CB90.inc", void sub_0806CB90());
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CB9C.inc", void sub_0806CB9C());
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CBA4.inc", void sub_0806CBA4());
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CBB0.inc", void sub_0806CBB0());
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CBB8.inc", void sub_0806CBB8());
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CBC4.inc", void sub_0806CBC4());
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CBCC.inc", void sub_0806CBCC());
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CBD8__Fv.inc", void sub_0806CBD8__Fv());
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CBE0.inc", void sub_0806CBE0());
+extern "C" ASM_FUNC("asm/non_matching/keypad/KeyPadInstance.inc", void KeyPadInstance());
+extern "C" ASM_FUNC("asm/non_matching/keypad/sub_0806CC1C.inc", void sub_0806CC1C());

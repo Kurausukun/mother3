@@ -1,5 +1,6 @@
 .syntax unified
-.global _._3Msg
+.include "asm/macros.inc"
+thumb_func_start _._3Msg
 _._3Msg: @ 0x0806E308
 	push {r4, r5, lr}
 	adds r4, r0, #0
