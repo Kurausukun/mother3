@@ -9,3 +9,4 @@ def apply(config, args):
     # config["mw_build_dir"] = "build/" # only needed for mw map format
     # config["makeflags"] = []
     config["objdump_executable"] = "arm-none-eabi-objdump"
+    config["make_command"] = ["sh", "build.sh"]
