@@ -1,7 +1,8 @@
 // Auto-generated source file
-#include "global.h"
-#include "gba/gba.h"
 #include "battle/irc.h"
+#include "gba/gba.h"
+#include "gba/macro.h"
+#include "global.h"
 
 extern const IrqTable gUnknown_080C1A58;
 extern IrqTable gIntrHandlers;
@@ -35,7 +36,23 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001960.inc", void sub_08001960()
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0800196C.inc", void sub_0800196C());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080019A4.inc", void sub_080019A4());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080019DC.inc", void sub_080019DC());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001A14.inc", void sub_08001A14(void*, void*, int));
+
+extern "C" void sub_08001A14(void* src, void* dest, u32 size) {
+    vu32* dmaRegs = (vu32*)REG_ADDR_DMA3;
+    dmaRegs[0] = (uintptr_t)src;
+    dmaRegs[1] = (uintptr_t)dest;
+
+    size /= 2;
+    u32 flags = (DMA_ENABLE | DMA_START_NOW | DMA_16BIT | DMA_SRC_INC | DMA_DEST_INC) << 16;
+    dmaRegs[2] = flags | size;
+
+    dmaRegs[2];
+
+    // Wait for DMA to complete
+    while (dmaRegs[2] & flags) {
+    }
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001A38.inc", void sub_08001A38());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001A70.inc", void sub_08001A70());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001A94.inc", void sub_08001A94());
@@ -230,7 +247,7 @@ extern "C" void sub_08005AD8(u16 bit) {
     REG_DISPSTAT |= DISPSTAT_VCOUNT_INTR;
     REG_DISPSTAT &= 0xFF;
     REG_DISPSTAT |= bit << 8;
-    gIntrHandlers.vblank =sub_0800545C;
+    gIntrHandlers.vblank = sub_0800545C;
     gIntrHandlers.vcount = sub_080056E4;
     REG_IME = 1;
 }
@@ -248,14 +265,14 @@ extern "C" void sub_08005B68(void) {
 
 // TODO: does this volatile even make sense?
 extern "C" void sub_08005BB4(volatile u16 arg0) {
-    if (arg0) { 
+    if (arg0) {
         REG_IME = 0;
         gIntrHandlers.vcount = sub_08005730;
         REG_IME = 1;
     } else {
         REG_IME = 0;
         gIntrHandlers.vcount = sub_080055E4;
-        REG_IME = 1; 
+        REG_IME = 1;
     }
 }
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08005BFC.inc", void sub_08005BFC());
