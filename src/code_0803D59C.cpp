@@ -1,5 +1,16 @@
 // Auto-generated source file
 #include "global.h"
+#include "gba/gba.h"
+#include "battle/irc.h"
+
+extern IrqTable gIntrHandlers;
+extern const IrqTable gUnknown_080C7668;
+extern const IrqTable gUnknown_080C7628;
+extern const IrqTable gUnknown_080C7DB0;
+extern const IrqTable gUnknown_080C5FA0;
+extern u16 gUnknown_03004B00;
+
+extern "C" void sub_0803E3D8();
 
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0803D59C.inc", void sub_0803D59C());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0803D5EC.inc", void sub_0803D5EC());
@@ -28,7 +39,16 @@ extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0803E2B0.inc", void sub_
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0803E2E4.inc", void sub_0803E2E4());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/nullsub_75.inc", void nullsub_75());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/nullsub_7.inc", void nullsub_7());
-extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0803E304.inc", void sub_0803E304());
+
+extern "C" void sub_0803E304(void) {
+    REG_IME = 0;
+    REG_IE &= ~(INTR_FLAG_VBLANK | INTR_FLAG_HBLANK);
+    REG_DISPSTAT &= ~(DISPSTAT_VBLANK_INTR | DISPSTAT_HBLANK_INTR);
+    memcpy(&gIntrHandlers, &gUnknown_080C5FA0, sizeof(gUnknown_080C5FA0));
+    gUnknown_03004B00 = 0;
+    REG_IME = 1;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0803E358.inc", void sub_0803E358());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0803E3B4.inc", void sub_0803E3B4());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0803E3C0.inc", void sub_0803E3C0());
@@ -40,7 +60,17 @@ extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0803E408.inc", void sub_
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0803E46C.inc", void sub_0803E46C());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/nullsub_78.inc", void nullsub_78());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/nullsub_79.inc", void nullsub_79());
-extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0803E4B8.inc", void sub_0803E4B8());
+
+extern "C" void sub_0803E4B8(void) {
+    REG_IME = 0;
+    REG_IE |= INTR_FLAG_VCOUNT;
+    REG_DISPSTAT |= DISPSTAT_VCOUNT_INTR;
+    REG_DISPSTAT &= 0xFF;
+    REG_DISPSTAT |= 0xA000;
+    gIntrHandlers.vcount = sub_0803E3D8;
+    REG_IME = 1;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0803E50C.inc", void sub_0803E50C());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0803E578.inc", void sub_0803E578());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0803E6EC.inc", void sub_0803E6EC());
@@ -644,7 +674,16 @@ extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805689C.inc", void sub_
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_080568D0.inc", void sub_080568D0());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_080568E0.inc", void sub_080568E0());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/nullsub_08.inc", void nullsub_08());
-extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_080568F4.inc", void sub_080568F4());
+
+extern "C" void sub_080568F4(void) {
+    REG_IME = 0;
+    REG_IE &= ~(INTR_FLAG_VBLANK | INTR_FLAG_HBLANK);
+    REG_DISPSTAT &= ~(DISPSTAT_VBLANK_INTR | DISPSTAT_HBLANK_INTR);
+    memcpy(&gIntrHandlers, &gUnknown_080C7628, sizeof(gUnknown_080C7628));
+    gUnknown_03004B00 = 0;
+    REG_IME = 1;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08056948.inc", void sub_08056948());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_080569A8.inc", void sub_080569A8());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/nullsub_086.inc", void nullsub_086());
@@ -733,7 +772,16 @@ extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_080585F8.inc", void sub_
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08058614.inc", void sub_08058614());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08058630.inc", void sub_08058630());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/nullsub_11.inc", void nullsub_11());
-extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08058644.inc", void sub_08058644());
+
+extern "C" void sub_08058644(void) {
+    REG_IME = 0;
+    REG_IE &= ~(INTR_FLAG_VBLANK | INTR_FLAG_HBLANK);
+    REG_DISPSTAT &= ~(DISPSTAT_VBLANK_INTR | DISPSTAT_HBLANK_INTR);
+    memcpy(&gIntrHandlers, &gUnknown_080C7668, sizeof(gUnknown_080C7668));
+    gUnknown_03004B00 = 0;
+    REG_IME = 1;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08058698.inc", void sub_08058698());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_080586C8.inc", void sub_080586C8());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/nullsub_91.inc", void nullsub_91());
@@ -806,7 +854,15 @@ extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805A2F4.inc", void sub_
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805A310.inc", void sub_0805A310());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805A378.inc", void sub_0805A378());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805A408.inc", void sub_0805A408());
-extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805A418.inc", void sub_0805A418());
+
+extern "C" void sub_0805A418(void) {
+    REG_IME = 0;
+    REG_IE &= ~(INTR_FLAG_VBLANK | INTR_FLAG_HBLANK);
+    REG_DISPSTAT &= ~(DISPSTAT_VBLANK_INTR | DISPSTAT_HBLANK_INTR);
+    memcpy(&gIntrHandlers, &gUnknown_080C7DB0, sizeof(gUnknown_080C7DB0));
+    REG_IME = 1;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805A464.inc", void sub_0805A464());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/nullsub_93.inc", void nullsub_93());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805A488.inc", void sub_0805A488());
