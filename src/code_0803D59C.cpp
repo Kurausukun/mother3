@@ -1,7 +1,7 @@
 // Auto-generated source file
-#include "global.h"
-#include "gba/gba.h"
 #include "battle/irc.h"
+#include "gba/gba.h"
+#include "global.h"
 
 extern IrqTable gIntrHandlers;
 extern const IrqTable gUnknown_080C7668;
@@ -882,48 +882,45 @@ extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805AA90.inc", void sub_
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805AB48.inc", void sub_0805AB48());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805AC30.inc", void sub_0805AC30());
 
-
 typedef struct Struct_02015E00 {
-    u8 _0; /* 0x00 */
-    u8 _1; /* 0x01 */
-    s16 _2; /* 0x02 */
-    s16 _4; /* 0x04 */
-    u8 _6[0x8-0x6]; /* 0x06 */
-    u32 _8; /* 0x08 */
-    u8 _c_0 : 1; /* 0x0c */
+    u8 _0;            /* 0x00 */
+    u8 _1;            /* 0x01 */
+    s16 _2;           /* 0x02 */
+    s16 _4;           /* 0x04 */
+    u8 _6[0x8 - 0x6]; /* 0x06 */
+    u32 _8;           /* 0x08 */
+    u8 _c_0 : 1;      /* 0x0c */
     u8 _c_1 : 1;
 } Struct_02015E00;
 
 extern Struct_02015E00 gUnknown_02015E00;
 
-
 typedef struct Unknown_02016078 {
-    u8 _pad_0[0x2700]; /* 0x0000 */
-    u8 _2700[0x400]; /* 0x2700 first palette? */
-    u8 pad_2B00[0x2C00-0x2B00]; /* 0x2B00 */
-    u8 _pad_2C00[0x2C50-0x2C00]; /* 0x2C00 */
-    u8 _2C50[0x10]; /* 0x2C50 */
-    u8 _2C60[0x400]; /* 0x2C60 second palette? */
+    u8 _pad_0[0x2700];             /* 0x0000 */
+    u8 _2700[0x400];               /* 0x2700 first palette? */
+    u8 pad_2B00[0x2C00 - 0x2B00];  /* 0x2B00 */
+    u8 _pad_2C00[0x2C50 - 0x2C00]; /* 0x2C00 */
+    u8 _2C50[0x10];                /* 0x2C50 */
+    u8 _2C60[0x400];               /* 0x2C60 second palette? */
 } Unknown_02016078;
 
 typedef struct Unk_02016028 {
-    vu16 bldcnt; /* 0x00 */
-    vu16 bldalpha; /* 0x02 */
-    vu16 bldy; /* 0x04 */
-    u8 pad_6[0x8-0x6]; /* 0x06 */
-    vu16 dispcnt; /* 0x08 */
-    vu16 bg0cnt; /* 0x0A */
-    vu16 bg1cnt; /* 0x0C */
-    vu16 bg2cnt; /* 0x0E */
-    vu16 bg3cnt; /* 0x10 */
-    u8 pad_12[0x12-0x12]; /* 0x12 */
+    vu16 bldcnt;            /* 0x00 */
+    vu16 bldalpha;          /* 0x02 */
+    vu16 bldy;              /* 0x04 */
+    u8 pad_6[0x8 - 0x6];    /* 0x06 */
+    vu16 dispcnt;           /* 0x08 */
+    vu16 bg0cnt;            /* 0x0A */
+    vu16 bg1cnt;            /* 0x0C */
+    vu16 bg2cnt;            /* 0x0E */
+    vu16 bg3cnt;            /* 0x10 */
+    u8 pad_12[0x12 - 0x12]; /* 0x12 */
 } Unk_02016028;
 
-
 typedef struct SomeBlend {
-    Unk_02016028 _0; /* 0x00 */
-    u8 pad_14[0x50-0x14]; /* 0x14 */
-    Unknown_02016078 _50; /* 0x50 */
+    Unk_02016028 _0;        /* 0x00 */
+    u8 pad_14[0x50 - 0x14]; /* 0x14 */
+    Unknown_02016078 _50;   /* 0x50 */
 } SomeBlend;
 
 extern SomeBlend gSomeBlend;
@@ -933,13 +930,12 @@ extern const u8 gGBPlayerLogoLayout[0x500];
 extern u8 gUnknown_020050B0;
 extern s8 gUnknown_020051E0;
 
-
 extern "C" void sub_0805AEEC();
 extern "C" void setup_vectors();
 extern "C" void sub_0805ADBC();
 extern "C" void sub_0805AD24();
 extern "C" void sub_0805AD48();
-extern "C" void sub_0805AF34(); 
+extern "C" void sub_0805AF34();
 extern "C" void sub_0805AD54();
 extern "C" void sub_08001960();
 extern "C" void sub_0805AE64();
@@ -947,19 +943,18 @@ extern "C" void sub_08001778(void* arg1, u16 arg2, u16 arg3, u16 arg4);
 extern "C" void sub_08001A14(void* src, void* dest, u32 size);
 extern "C" void sub_0800160C(Unknown_02016078* dest, void* src, int index, u32 size);
 extern "C" void sub_08001A38(void* dest, u32 size, int value);
-extern "C" void sub_080013D0(void* );
-extern "C" void sub_08001454(void* );
-extern "C" void sub_08001630(void* , int);
+extern "C" void sub_080013D0(void*);
+extern "C" void sub_08001454(void*);
+extern "C" void sub_08001630(void*, int);
 extern "C" void sub_080019A4(void*);
 
 extern "C" void sub_0805AE94(SomeBlend*, void*);
-    extern "C" void sub_0805AEE0(void* arg1, void* arg2);
-
+extern "C" void sub_0805AEE0(void* arg1, Unknown_02016078* arg2);
 
 // calls  sub_0805AD24. maybe gbplayer entry?
 extern "C" void sub_0805ACF4(void) {
     sub_0805AEEC();
-    switch (gUnknown_020050B0) {           
+    switch (gUnknown_020050B0) {
     case 0:
         setup_vectors();
         sub_0805ADBC();
@@ -970,7 +965,6 @@ extern "C" void sub_0805ACF4(void) {
         return;
     }
 }
-
 
 // call gb player init
 extern "C" void sub_0805AD24() {
@@ -989,9 +983,9 @@ extern "C" void sub_0805AD54(void) {
     REG_IE |= INTR_FLAG_VBLANK;
     REG_DISPSTAT |= DISPSTAT_VBLANK_INTR;
     REG_IME = 1;
-    
+
     sub_0805AFCC();
-    
+
     REG_IME = 0;
     REG_IE &= ~(INTR_FLAG_VBLANK | INTR_FLAG_HBLANK);
     REG_DISPSTAT &= ~(DISPSTAT_VBLANK_INTR | DISPSTAT_HBLANK_INTR);
@@ -1004,15 +998,15 @@ extern "C" void sub_0805ADBC(void) {
     REG_IE |= INTR_FLAG_VBLANK;
     REG_DISPSTAT |= DISPSTAT_VBLANK_INTR;
     REG_IME = 1;
-    
+
     gUnknown_02015E00._2 = 0x3F;
-    
-    for(gUnknown_02015E00._4 = 0x1E; gUnknown_02015E00._4 != -1; gUnknown_02015E00._4--) {
+
+    for (gUnknown_02015E00._4 = 0x1E; gUnknown_02015E00._4 != -1; gUnknown_02015E00._4--) {
         sub_08001960();
         sub_0805AE64();
         sub_08001778(&gSomeBlend, gUnknown_02015E00._4, 0x1E, gUnknown_02015E00._2);
     }
-    
+
     REG_IME = 0;
     REG_IE &= ~(INTR_FLAG_VBLANK | INTR_FLAG_HBLANK);
     REG_DISPSTAT &= ~(DISPSTAT_VBLANK_INTR | DISPSTAT_HBLANK_INTR);
@@ -1044,9 +1038,10 @@ extern "C" void sub_0805AE94(SomeBlend* arg0, void*) {
     REG_BLDY = arg0->_0.bldy;
 }
 
-extern "C" void sub_0805AEE0(void* arg1, void* arg2) {
+extern "C" void sub_0805AEE0(void* arg1, Unknown_02016078* arg2) {
     sub_080019A4(arg2);
 }
+
 extern "C" void sub_0805AEEC(void) {
     gUnknown_02015E00._c_0 = 0;
     gUnknown_02015E00._c_1 = 0;
@@ -1060,22 +1055,21 @@ extern "C" void sub_0805AEEC(void) {
 extern "C" void sub_0805AF34(void) {
     Unk_02016028* temp_r4;
 
-    sub_08001A14((void *)gGBPlayerLogoGfx, (void *)0x06008000, 0x4000);
-    sub_08001A14((void *)gGBPlayerLogoLayout, (void *)0x06000000, 0x500);
-    sub_0800160C(&gSomeBlend._50, (void *)gGBPlayerLogoPalette, 0, 0x200);
+    sub_08001A14((void*)gGBPlayerLogoGfx, BG_CHAR_ADDR(2), 0x4000);
+    sub_08001A14((void*)gGBPlayerLogoLayout, BG_SCREEN_ADDR(0), 0x500);
+    sub_0800160C(&gSomeBlend._50, (void*)gGBPlayerLogoPalette, 0, 0x200);
     sub_08001A14(gSomeBlend._50._2700, gSomeBlend._50._2C60, 0x400);
     sub_08001A38(gSomeBlend._50._2700, 0x400, -1);
 
     gSomeBlend._0.dispcnt = DISPCNT_BG0_ON;
-    gSomeBlend._0.bg0cnt = BGCNT_256COLOR | BGCNT_CHARBASE(2);
-    gSomeBlend._0.bg1cnt = 0; 
+    gSomeBlend._0.bg0cnt = BGCNT_256COLOR | BGCNT_CHARBASE(2) | BGCNT_SCREENBASE(0);
+    gSomeBlend._0.bg1cnt = 0;
     gSomeBlend._0.bg2cnt = 0;
     gSomeBlend._0.bg3cnt = 0;
     gSomeBlend._0.bldcnt = 0;
     gSomeBlend._0.bldalpha = 0;
     gSomeBlend._0.bldy = 0;
 }
-
 
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805AFCC.inc", void sub_0805AFCC());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805B0DC.inc", void sub_0805B0DC());
@@ -1084,7 +1078,6 @@ extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805B1F0.inc", void sub_
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805B2C4.inc", void sub_0805B2C4());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805B37C.inc", void sub_0805B37C());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805B464.inc", void sub_0805B464());
-
 
 // ----- end GB player -----
 

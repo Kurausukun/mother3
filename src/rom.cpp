@@ -4,6 +4,61 @@
 #include "gba/macro.h"
 #include "global.h"
 
+typedef struct Unknown_02016078 {
+    u8 _pad_0[0x2700];             /* 0x0000 */
+    u8 _2700[0x20][0x20];          // TODO: determine size
+    u8 pad_2B00[0x2C00 - 0x2B00];  /* 0x2B00 */
+    u8 _pad_2C00[0x2C50 - 0x2C00]; /* 0x2C00 */
+    u8 _2C50[0x10];                /* 0x2C50 */
+    u8 _2C60[0x400];               /* 0x2C60 second palette? */
+} Unknown_02016078;
+
+typedef struct Unk_02016028 {
+    vu16 bldcnt;         /* 0x00 */
+    vu16 bldalpha;       /* 0x02 */
+    vu16 bldy;           /* 0x04 */
+    u8 pad_6[0x8 - 0x6]; /* 0x06 */
+    vu16 dispcnt;        /* 0x08 */
+    vu16 bgcnt[4];       /* 0x0A */
+    vu16 _12[4];         /* 0x12 */
+    vu16 _1A[4];         /* 0x1A */
+    vu16 _22;            /* 0x22 */
+} Unk_02016028;
+
+typedef struct SomeBlend {
+    Unk_02016028 _0;      /* 0x00 */
+    vu16 _24;             /* 0x24 */
+    vu16 _26;             /* 0x26 */
+    vu16 _28;             /* 0x28 */
+    vu16 _2A;             /* 0x2A */
+    vu16 _2C;             /* 0x2C */
+    vu16 _2E;             /* 0x2E */
+    vu16 _30;             /* 0x30 */
+    vu16 _32;             /* 0x32 */
+    vu16 _34;             /* 0x34 */
+    vu16 _36;             /* 0x36 */
+    vu16 _38;             /* 0x38 */
+    vu16 _3A;             /* 0x3A */
+    vu16 _3C;             /* 0x3C */
+    vu16 _3E;             /* 0x3E */
+    vu32 _40;             /* 0x40 */
+    vu32 _44;             /* 0x44 */
+    vu32 _48;             /* 0x48 */
+    vu32 _4C;             /* 0x4C */
+    Unknown_02016078 _50; /* 0x50 */
+} SomeBlend;
+
+typedef struct UnkStruct {
+    u16 _0;
+    s16 _2;
+    s16 _4;
+    u16 _6;
+    u16 _8;
+    u16 _A;
+    u16 _C;
+    u8 _E_0 : 1;
+} UnkStruct;
+
 extern const IrqTable gUnknown_080C1A58;
 extern IrqTable gIntrHandlers;
 extern u8 gUnknown_03004B14;
@@ -14,11 +69,56 @@ extern "C" void sub_08005C38();
 
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080012BC.inc", void sub_080012BC());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001378.inc", void sub_08001378());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_080013D0.inc", void sub_080013D0());
+
+extern "C" void sub_080013D0(SomeBlend* arg0) {
+    arg0->_0.dispcnt = 0;
+    arg0->_0._22 = 0;
+    arg0->_24 = 0;
+    arg0->_26 = 0;
+    arg0->_28 = 0;
+    arg0->_2A = 0;
+    arg0->_2C = 0;
+    arg0->_2E = 0;
+    arg0->_30 = 0x100;
+    arg0->_38 = 0x100;
+    arg0->_32 = 0;
+    arg0->_3A = 0;
+    arg0->_34 = 0;
+    arg0->_3C = 0;
+    arg0->_36 = 0x100;
+    arg0->_3E = 0x100;
+    arg0->_40 = 0;
+    arg0->_44 = 0;
+    arg0->_48 = 0;
+    arg0->_4C = 0;
+
+    for (u16 i = 0; i < 4; i++) {
+        arg0->_0.bgcnt[i] = 0;
+        arg0->_0._12[i] = 0;
+        arg0->_0._1A[i] = 0;
+    }
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001454.inc", void sub_08001454());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001530.inc", void sub_08001530());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0800160C.inc", void sub_0800160C());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001630.inc", void sub_08001630());
+
+extern "C" void sub_08090F74(const void* src, void* dest, u32 control);
+
+extern "C" void sub_0800160C(Unknown_02016078* dest, void* src, u16 index, u16 size) {
+    sub_08090F74(src, dest->_2700[index], size / 4);
+}
+
+extern "C" void sub_08001630(UnkStruct* arg0, s16 arg1) {
+    arg0->_E_0 = 0;
+    arg0->_0 = 0;
+    arg0->_2 = 0;
+    arg0->_4 = 0;
+    arg0->_6 = arg1;
+    arg0->_8 = 0;
+    arg0->_A = 0;
+    arg0->_C = 0;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0800164C.inc", void sub_0800164C());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080016E4.inc", void sub_080016E4());
 extern "C" ASM_FUNC("asm/non_matching/rom/DoReset.inc", void DoReset());
@@ -32,9 +132,29 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_080018E4.inc", void sub_080018E4()
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080018F4.inc", void sub_080018F4());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0800190C.inc", void sub_0800190C());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001930.inc", void sub_08001930());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001960.inc", void sub_08001960());
+
+extern "C" void sub_08001960(void) {
+    VBlankIntrWait();
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0800196C.inc", void sub_0800196C());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_080019A4.inc", void sub_080019A4());
+
+extern "C" void sub_080019A4(Unknown_02016078* arg0) {
+    vu32* dmaRegs = (vu32*)REG_ADDR_DMA3;
+    dmaRegs[0] = (uintptr_t)&arg0->_2700;
+    dmaRegs[1] = (uintptr_t)PLTT;
+
+    u32 size = PLTT_SIZE / 2;
+    u32 flags = (DMA_ENABLE | DMA_START_NOW | DMA_16BIT | DMA_SRC_INC | DMA_DEST_INC) << 16;
+    dmaRegs[2] = flags | size;
+
+    dmaRegs[2];
+
+    // Wait for DMA to complete
+    while (dmaRegs[2] & (DMA_ENABLE << 16)) {
+    }
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080019DC.inc", void sub_080019DC());
 
 extern "C" void sub_08001A14(void* src, void* dest, u32 size) {
@@ -49,11 +169,28 @@ extern "C" void sub_08001A14(void* src, void* dest, u32 size) {
     dmaRegs[2];
 
     // Wait for DMA to complete
-    while (dmaRegs[2] & flags) {
+    while (dmaRegs[2] & (DMA_ENABLE << 16)) {
     }
 }
 
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001A38.inc", void sub_08001A38());
+extern "C" void sub_08001A38(void* dest, u32 size, int value) {
+    s16 temp = value;
+
+    vu32* dmaRegs = (vu32*)REG_ADDR_DMA3;
+    dmaRegs[0] = (uintptr_t)&temp;
+    dmaRegs[1] = (uintptr_t)dest;
+
+    size /= 2;
+    u32 flags = (DMA_ENABLE | DMA_START_NOW | DMA_16BIT | DMA_SRC_FIXED | DMA_DEST_INC) << 16;
+    dmaRegs[2] = flags | size;
+
+    dmaRegs[2];
+
+    // Wait for DMA to complete
+    while (dmaRegs[2] & (DMA_ENABLE << 16)) {
+    }
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001A70.inc", void sub_08001A70());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001A94.inc", void sub_08001A94());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001AAC.inc", void sub_08001AAC());

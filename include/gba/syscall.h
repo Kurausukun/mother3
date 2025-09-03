@@ -1,5 +1,8 @@
 #ifndef GUARD_GBA_SYSCALL_H
 #define GUARD_GBA_SYSCALL_H
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 #define RESET_EWRAM      0x01
 #define RESET_IWRAM      0x02
@@ -44,5 +47,9 @@ void RLUnCompWram(const void *src, void *dest);
 void RLUnCompVram(const void *src, void *dest);
 
 int MultiBoot(struct MultiBootParam *mp);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif // GUARD_GBA_SYSCALL_H
