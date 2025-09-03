@@ -7,7 +7,7 @@ tools/agbcc/lib/libc.a(malloc.o)
 tools/agbcc/lib/libc.a(libcfunc.o)
                               build/mother3/asm/libc.o (abort)
 tools/agbcc/lib/libc.a(vsprintf.o)
-                              build/mother3/asm/rom2d.o (vsprintf)
+                              build/mother3/src/battle/rom2d.o (vsprintf)
 tools/agbcc/lib/libc.a(strcmp.o)
                               build/mother3/asm/libc.o (strcmp)
 tools/agbcc/lib/libc.a(memset.o)
@@ -83,22 +83,26 @@ Discarded input sections
  .bss           0x00000000      0x120 build/mother3/src/main.o
  .ARM.attributes
                 0x00000000       0x20 build/mother3/src/main.o
- .data          0x00000000        0x0 build/mother3/asm/rom.o
- .bss           0x00000000        0x0 build/mother3/asm/rom.o
+ .data          0x00000000        0x0 build/mother3/src/rom.o
+ .bss           0x00000000        0x0 build/mother3/src/rom.o
  .ARM.attributes
-                0x00000000       0x20 build/mother3/asm/rom.o
+                0x00000000       0x20 build/mother3/src/rom.o
  .data          0x00000000        0x0 build/mother3/src/overworld/script.o
  .bss           0x00000000     0x9d18 build/mother3/src/overworld/script.o
  .ARM.attributes
                 0x00000000       0x20 build/mother3/src/overworld/script.o
- .data          0x00000000        0x0 build/mother3/asm/script.o
- .bss           0x00000000        0x0 build/mother3/asm/script.o
+ .data          0x00000000        0x0 build/mother3/src/code_08021920.o
+ .bss           0x00000000        0x0 build/mother3/src/code_08021920.o
  .ARM.attributes
-                0x00000000       0x20 build/mother3/asm/script.o
- .data          0x00000000        0x0 build/mother3/asm/code_08021920.o
- .bss           0x00000000        0x0 build/mother3/asm/code_08021920.o
+                0x00000000       0x20 build/mother3/src/code_08021920.o
+ .data          0x00000000        0x0 build/mother3/asm/code_0803D0E4.o
+ .bss           0x00000000        0x0 build/mother3/asm/code_0803D0E4.o
  .ARM.attributes
-                0x00000000       0x20 build/mother3/asm/code_08021920.o
+                0x00000000       0x20 build/mother3/asm/code_0803D0E4.o
+ .data          0x00000000        0x0 build/mother3/src/code_0803D59C.o
+ .bss           0x00000000        0x0 build/mother3/src/code_0803D59C.o
+ .ARM.attributes
+                0x00000000       0x20 build/mother3/src/code_0803D59C.o
  .data          0x00000000        0x0 build/mother3/src/common.o
  .bss           0x00000000        0x0 build/mother3/src/common.o
  .ARM.attributes
@@ -112,54 +116,46 @@ Discarded input sections
                 0x00000000       0xa0 build/mother3/src/battle/system.o
  .ARM.attributes
                 0x00000000       0x20 build/mother3/src/battle/system.o
- .data          0x00000000        0x0 build/mother3/src/battle_misc.o
- .bss           0x00000000        0x0 build/mother3/src/battle_misc.o
+ .data          0x00000000        0x0 build/mother3/src/battle/battle_misc.o
+ .bss           0x00000000        0x0 build/mother3/src/battle/battle_misc.o
  .ARM.attributes
-                0x00000000       0x20 build/mother3/src/battle_misc.o
- .data          0x00000000        0x0 build/mother3/src/battle.o
- .bss           0x00000000        0x0 build/mother3/src/battle.o
+                0x00000000       0x20 build/mother3/src/battle/battle_misc.o
+ .data          0x00000000        0x0 build/mother3/src/battle/battle.o
+ .bss           0x00000000        0x0 build/mother3/src/battle/battle.o
  .gnu.linkonce.d._vt.16ShowDownAsEscape
-                0x00000000       0x68 build/mother3/src/battle.o
+                0x00000000       0x68 build/mother3/src/battle/battle.o
  .gnu.linkonce.d._vt.14ShowDownAsLose
-                0x00000000       0x68 build/mother3/src/battle.o
+                0x00000000       0x68 build/mother3/src/battle/battle.o
  .gnu.linkonce.d._vt.13ShowDownAsWin
-                0x00000000       0x68 build/mother3/src/battle.o
+                0x00000000       0x68 build/mother3/src/battle/battle.o
  .gnu.linkonce.d._vt.11UnitTurnEnd
-                0x00000000       0x68 build/mother3/src/battle.o
+                0x00000000       0x68 build/mother3/src/battle/battle.o
  .gnu.linkonce.d._vt.13UnitTurnBegin
-                0x00000000       0x68 build/mother3/src/battle.o
+                0x00000000       0x68 build/mother3/src/battle/battle.o
  .gnu.linkonce.d._vt.8RoundEnd
-                0x00000000       0x68 build/mother3/src/battle.o
+                0x00000000       0x68 build/mother3/src/battle/battle.o
  .gnu.linkonce.d._vt.10RoundBegin
-                0x00000000       0x68 build/mother3/src/battle.o
+                0x00000000       0x68 build/mother3/src/battle/battle.o
  .gnu.linkonce.d._vt.3Unk
-                0x00000000       0x68 build/mother3/src/battle.o
+                0x00000000       0x68 build/mother3/src/battle/battle.o
  .gnu.linkonce.t._._16ShowDownAsEscape
-                0x00000000       0x14 build/mother3/src/battle.o
+                0x00000000       0x14 build/mother3/src/battle/battle.o
  .gnu.linkonce.t._._14ShowDownAsLose
-                0x00000000       0x14 build/mother3/src/battle.o
+                0x00000000       0x14 build/mother3/src/battle/battle.o
  .gnu.linkonce.t._._13ShowDownAsWin
-                0x00000000       0x14 build/mother3/src/battle.o
+                0x00000000       0x14 build/mother3/src/battle/battle.o
  .gnu.linkonce.t._._11UnitTurnEnd
-                0x00000000       0x14 build/mother3/src/battle.o
+                0x00000000       0x14 build/mother3/src/battle/battle.o
  .gnu.linkonce.t._._13UnitTurnBegin
-                0x00000000       0x14 build/mother3/src/battle.o
+                0x00000000       0x14 build/mother3/src/battle/battle.o
  .gnu.linkonce.t._._8RoundEnd
-                0x00000000       0x14 build/mother3/src/battle.o
+                0x00000000       0x14 build/mother3/src/battle/battle.o
  .gnu.linkonce.t._._10RoundBegin
-                0x00000000       0x14 build/mother3/src/battle.o
+                0x00000000       0x14 build/mother3/src/battle/battle.o
  .gnu.linkonce.t._._3Unk
-                0x00000000       0x14 build/mother3/src/battle.o
+                0x00000000       0x14 build/mother3/src/battle/battle.o
  .ARM.attributes
-                0x00000000       0x20 build/mother3/src/battle.o
- .data          0x00000000        0x0 build/mother3/asm/battle.o
- .bss           0x00000000        0x0 build/mother3/asm/battle.o
- .ARM.attributes
-                0x00000000       0x20 build/mother3/asm/battle.o
- .data          0x00000000        0x0 build/mother3/asm/guest.o
- .bss           0x00000000        0x0 build/mother3/asm/guest.o
- .ARM.attributes
-                0x00000000       0x20 build/mother3/asm/guest.o
+                0x00000000       0x20 build/mother3/src/battle/battle.o
  .data          0x00000000        0x0 build/mother3/src/battle/guest.o
  .bss           0x00000000        0xc build/mother3/src/battle/guest.o
  .ctors         0x00000000        0x4 build/mother3/src/battle/guest.o
@@ -185,24 +181,20 @@ Discarded input sections
  .bss           0x00000000        0x0 build/mother3/src/battle/guestFactory.o
  .ARM.attributes
                 0x00000000       0x20 build/mother3/src/battle/guestFactory.o
- .data          0x00000000        0x0 build/mother3/asm/goods.o
- .bss           0x00000000        0x0 build/mother3/asm/goods.o
- .ARM.attributes
-                0x00000000       0x20 build/mother3/asm/goods.o
  .data          0x00000000        0x0 build/mother3/src/battle/goods.o
  .bss           0x00000000        0x0 build/mother3/src/battle/goods.o
  .gnu.linkonce.d._vt.5Goods
                 0x00000000      0x2e0 build/mother3/src/battle/goods.o
  .ARM.attributes
                 0x00000000       0x20 build/mother3/src/battle/goods.o
- .data          0x00000000        0x0 build/mother3/asm/sndmon.o
- .bss           0x00000000        0x0 build/mother3/asm/sndmon.o
+ .data          0x00000000        0x0 build/mother3/src/battle/sndmon.o
+ .bss           0x00000000        0x0 build/mother3/src/battle/sndmon.o
  .ARM.attributes
-                0x00000000       0x20 build/mother3/asm/sndmon.o
- .data          0x00000000        0x0 build/mother3/asm/code_0805D74C.o
- .bss           0x00000000        0x0 build/mother3/asm/code_0805D74C.o
+                0x00000000       0x20 build/mother3/src/battle/sndmon.o
+ .data          0x00000000        0x0 build/mother3/src/battle/code_0805D74C.o
+ .bss           0x00000000        0x0 build/mother3/src/battle/code_0805D74C.o
  .ARM.attributes
-                0x00000000       0x20 build/mother3/asm/code_0805D74C.o
+                0x00000000       0x20 build/mother3/src/battle/code_0805D74C.o
  .data          0x00000000        0x0 build/mother3/src/singleton.o
  .bss           0x00000000        0x0 build/mother3/src/singleton.o
  .ARM.attributes
@@ -249,30 +241,26 @@ Discarded input sections
                 0x00000000       0x20 build/mother3/src/battle/fader.o
  .ARM.attributes
                 0x00000000       0x20 build/mother3/src/battle/fader.o
- .data          0x00000000        0x0 build/mother3/src/gengine.o
- .bss           0x00000000        0x0 build/mother3/src/gengine.o
+ .data          0x00000000        0x0 build/mother3/src/battle/gengine.o
+ .bss           0x00000000        0x0 build/mother3/src/battle/gengine.o
  .ARM.attributes
-                0x00000000       0x20 build/mother3/src/gengine.o
- .data          0x00000000        0x0 build/mother3/asm/bgengine.o
- .bss           0x00000000        0x0 build/mother3/asm/bgengine.o
+                0x00000000       0x20 build/mother3/src/battle/gengine.o
+ .data          0x00000000        0x0 build/mother3/src/battle/bgengine.o
+ .bss           0x00000000        0x0 build/mother3/src/battle/bgengine.o
  .ARM.attributes
-                0x00000000       0x20 build/mother3/asm/bgengine.o
- .data          0x00000000        0x0 build/mother3/asm/objengine.o
- .bss           0x00000000        0x0 build/mother3/asm/objengine.o
+                0x00000000       0x20 build/mother3/src/battle/bgengine.o
+ .data          0x00000000        0x0 build/mother3/src/battle/objengine.o
+ .bss           0x00000000        0x0 build/mother3/src/battle/objengine.o
  .ARM.attributes
-                0x00000000       0x20 build/mother3/asm/objengine.o
- .data          0x00000000        0x0 build/mother3/asm/objchrpool.o
- .bss           0x00000000        0x0 build/mother3/asm/objchrpool.o
+                0x00000000       0x20 build/mother3/src/battle/objengine.o
+ .data          0x00000000        0x0 build/mother3/src/battle/objchrpool.o
+ .bss           0x00000000        0x0 build/mother3/src/battle/objchrpool.o
  .ARM.attributes
-                0x00000000       0x20 build/mother3/asm/objchrpool.o
- .data          0x00000000        0x0 build/mother3/asm/objpltpool.o
- .bss           0x00000000        0x0 build/mother3/asm/objpltpool.o
+                0x00000000       0x20 build/mother3/src/battle/objchrpool.o
+ .data          0x00000000        0x0 build/mother3/src/battle/objpltpool.o
+ .bss           0x00000000        0x0 build/mother3/src/battle/objpltpool.o
  .ARM.attributes
-                0x00000000       0x20 build/mother3/asm/objpltpool.o
- .data          0x00000000        0x0 build/mother3/asm/keypad.o
- .bss           0x00000000        0x0 build/mother3/asm/keypad.o
- .ARM.attributes
-                0x00000000       0x20 build/mother3/asm/keypad.o
+                0x00000000       0x20 build/mother3/src/battle/objpltpool.o
  .data          0x00000000        0x0 build/mother3/src/battle/keypad.o
  .bss           0x00000000        0x0 build/mother3/src/battle/keypad.o
  .gnu.linkonce.d._vt.18SelectKeyLongPress
@@ -363,34 +351,34 @@ Discarded input sections
                 0x00000000       0x14 build/mother3/src/battle/keypad.o
  .ARM.attributes
                 0x00000000       0x20 build/mother3/src/battle/keypad.o
- .data          0x00000000        0x0 build/mother3/src/fntsystem.o
- .bss           0x00000000        0x0 build/mother3/src/fntsystem.o
+ .data          0x00000000        0x0 build/mother3/src/battle/fntsystem.o
+ .bss           0x00000000        0x0 build/mother3/src/battle/fntsystem.o
  .ARM.attributes
-                0x00000000       0x20 build/mother3/src/fntsystem.o
- .data          0x00000000        0x0 build/mother3/src/rassystem.o
- .bss           0x00000000        0x0 build/mother3/src/rassystem.o
+                0x00000000       0x20 build/mother3/src/battle/fntsystem.o
+ .data          0x00000000        0x0 build/mother3/src/battle/rassystem.o
+ .bss           0x00000000        0x0 build/mother3/src/battle/rassystem.o
  .ARM.attributes
-                0x00000000       0x20 build/mother3/src/rassystem.o
- .data          0x00000000        0x0 build/mother3/src/efcsystem.o
- .bss           0x00000000        0x0 build/mother3/src/efcsystem.o
+                0x00000000       0x20 build/mother3/src/battle/rassystem.o
+ .data          0x00000000        0x0 build/mother3/src/battle/efcsystem.o
+ .bss           0x00000000        0x0 build/mother3/src/battle/efcsystem.o
  .ARM.attributes
-                0x00000000       0x20 build/mother3/src/efcsystem.o
- .data          0x00000000        0x0 build/mother3/src/sndsystem.o
- .bss           0x00000000        0x0 build/mother3/src/sndsystem.o
+                0x00000000       0x20 build/mother3/src/battle/efcsystem.o
+ .data          0x00000000        0x0 build/mother3/src/battle/sndsystem.o
+ .bss           0x00000000        0x0 build/mother3/src/battle/sndsystem.o
  .ARM.attributes
-                0x00000000       0x20 build/mother3/src/sndsystem.o
- .data          0x00000000        0x0 build/mother3/asm/keyfocusmanager.o
- .bss           0x00000000        0x0 build/mother3/asm/keyfocusmanager.o
+                0x00000000       0x20 build/mother3/src/battle/sndsystem.o
+ .data          0x00000000        0x0 build/mother3/src/battle/keyfocusmanager.o
+ .bss           0x00000000        0x0 build/mother3/src/battle/keyfocusmanager.o
  .ARM.attributes
-                0x00000000       0x20 build/mother3/asm/keyfocusmanager.o
+                0x00000000       0x20 build/mother3/src/battle/keyfocusmanager.o
  .data          0x00000000        0x0 build/mother3/src/battle/battleData.o
  .bss           0x00000000        0x0 build/mother3/src/battle/battleData.o
  .ARM.attributes
                 0x00000000       0x20 build/mother3/src/battle/battleData.o
- .data          0x00000000        0x0 build/mother3/src/rhythm.o
- .bss           0x00000000        0x0 build/mother3/src/rhythm.o
+ .data          0x00000000        0x0 build/mother3/src/battle/rhythm.o
+ .bss           0x00000000        0x0 build/mother3/src/battle/rhythm.o
  .ARM.attributes
-                0x00000000       0x20 build/mother3/src/rhythm.o
+                0x00000000       0x20 build/mother3/src/battle/rhythm.o
  .data          0x00000000        0x0 build/mother3/src/battle/unit.o
  .bss           0x00000000       0x48 build/mother3/src/battle/unit.o
  .ctors         0x00000000        0x4 build/mother3/src/battle/unit.o
@@ -416,10 +404,10 @@ Discarded input sections
                 0x00000000      0x128 build/mother3/src/battle/unitTarget.o
  .ARM.attributes
                 0x00000000       0x20 build/mother3/src/battle/unitTarget.o
- .data          0x00000000        0x0 build/mother3/asm/rom2.o
- .bss           0x00000000        0x0 build/mother3/asm/rom2.o
+ .data          0x00000000        0x0 build/mother3/src/battle/rom2.o
+ .bss           0x00000000        0x0 build/mother3/src/battle/rom2.o
  .ARM.attributes
-                0x00000000       0x20 build/mother3/asm/rom2.o
+                0x00000000       0x20 build/mother3/src/battle/rom2.o
  .data          0x00000000        0x0 build/mother3/src/battle/action.o
  .bss           0x00000000        0x0 build/mother3/src/battle/action.o
  .gnu.linkonce.d._vt.6Action
@@ -430,14 +418,10 @@ Discarded input sections
  .bss           0x00000000        0x8 build/mother3/src/battle/player.o
  .ARM.attributes
                 0x00000000       0x20 build/mother3/src/battle/player.o
- .data          0x00000000        0x0 build/mother3/asm/player.o
- .bss           0x00000000        0x0 build/mother3/asm/player.o
+ .data          0x00000000        0x0 build/mother3/src/battle/playerskill.o
+ .bss           0x00000000        0x0 build/mother3/src/battle/playerskill.o
  .ARM.attributes
-                0x00000000       0x20 build/mother3/asm/player.o
- .data          0x00000000        0x0 build/mother3/asm/playerskill.o
- .bss           0x00000000        0x0 build/mother3/asm/playerskill.o
- .ARM.attributes
-                0x00000000       0x20 build/mother3/asm/playerskill.o
+                0x00000000       0x20 build/mother3/src/battle/playerskill.o
  .data          0x00000000        0x0 build/mother3/src/battle/guestSkill.o
  .bss           0x00000000        0xc build/mother3/src/battle/guestSkill.o
  .ctors         0x00000000        0x4 build/mother3/src/battle/guestSkill.o
@@ -468,18 +452,18 @@ Discarded input sections
                 0x00000000       0x14 build/mother3/src/battle/monster.o
  .ARM.attributes
                 0x00000000       0x20 build/mother3/src/battle/monster.o
- .data          0x00000000        0x0 build/mother3/asm/monsterskill.o
- .bss           0x00000000        0x0 build/mother3/asm/monsterskill.o
+ .data          0x00000000        0x0 build/mother3/src/battle/monsterskill.o
+ .bss           0x00000000        0x0 build/mother3/src/battle/monsterskill.o
  .ARM.attributes
-                0x00000000       0x20 build/mother3/asm/monsterskill.o
- .data          0x00000000        0x0 build/mother3/src/psi.o
- .bss           0x00000000        0x0 build/mother3/src/psi.o
+                0x00000000       0x20 build/mother3/src/battle/monsterskill.o
+ .data          0x00000000        0x0 build/mother3/src/battle/psi.o
+ .bss           0x00000000        0x0 build/mother3/src/battle/psi.o
  .ARM.attributes
-                0x00000000       0x20 build/mother3/src/psi.o
- .data          0x00000000        0x0 build/mother3/asm/rom2d.o
- .bss           0x00000000        0x0 build/mother3/asm/rom2d.o
+                0x00000000       0x20 build/mother3/src/battle/psi.o
+ .data          0x00000000        0x0 build/mother3/src/battle/rom2d.o
+ .bss           0x00000000        0x0 build/mother3/src/battle/rom2d.o
  .ARM.attributes
-                0x00000000       0x20 build/mother3/asm/rom2d.o
+                0x00000000       0x20 build/mother3/src/battle/rom2d.o
  .data          0x00000000        0x0 build/mother3/src/battle/archive.o
  .bss           0x00000000        0x0 build/mother3/src/battle/archive.o
  .gnu.linkonce.d._vt.1V
@@ -490,10 +474,10 @@ Discarded input sections
                 0x00000000       0x10 build/mother3/src/battle/archive.o
  .ARM.attributes
                 0x00000000       0x20 build/mother3/src/battle/archive.o
- .data          0x00000000        0x0 build/mother3/asm/rom2e.o
- .bss           0x00000000        0x0 build/mother3/asm/rom2e.o
+ .data          0x00000000        0x0 build/mother3/src/battle/rom2e.o
+ .bss           0x00000000        0x0 build/mother3/src/battle/rom2e.o
  .ARM.attributes
-                0x00000000       0x20 build/mother3/asm/rom2e.o
+                0x00000000       0x20 build/mother3/src/battle/rom2e.o
  .data          0x00000000        0x0 build/mother3/asm/m4a_1.o
  .bss           0x00000000        0x0 build/mother3/asm/m4a_1.o
  .ARM.attributes
@@ -794,6 +778,11 @@ Discarded input sections
  .bss           0x00000000        0x0 build/mother3/data/vtables.o
  .ARM.attributes
                 0x00000000       0x20 build/mother3/data/vtables.o
+ .text          0x00000000        0x0 build/mother3/src/unknown_asm.o
+ .data          0x00000000        0x0 build/mother3/src/unknown_asm.o
+ .bss           0x00000000        0x0 build/mother3/src/unknown_asm.o
+ .ARM.attributes
+                0x00000000       0x20 build/mother3/src/unknown_asm.o
  .text          0x00000000        0x0 build/mother3/sound/MPlayDef.o
  .data          0x00000000        0x0 build/mother3/sound/MPlayDef.o
  .bss           0x00000000        0x0 build/mother3/sound/MPlayDef.o
@@ -2530,8 +2519,8 @@ rom             0x08000000  0x2000000
                 0x0800100c                sub_0800100C__FPvUi
                 0x08001138                sub_08001138__FPvUs
                 0x08001158                sub_08001158__FUsUs
- build/mother3/asm/rom.o(.text)
- .text          0x080012bc    0x1a6d0 build/mother3/asm/rom.o
+ build/mother3/src/rom.o(.text)
+ .text          0x080012bc    0x1a6d0 build/mother3/src/rom.o
                 0x080012bc                sub_080012BC
                 0x08001378                sub_08001378
                 0x080013d0                sub_080013D0
@@ -3212,7 +3201,7 @@ rom             0x08000000  0x2000000
                 0x0801b5e8                sub_0801B5E8
                 0x0801b7d8                sub_0801B7D8
  build/mother3/src/overworld/script.o(.text)
- .text          0x0801b98c     0x4410 build/mother3/src/overworld/script.o
+ .text          0x0801b98c     0x5f94 build/mother3/src/overworld/script.o
                 0x0801b98c                exec_cmd
                 0x0801bee0                exec_extended
                 0x0801bf18                sub_0801BF18
@@ -3370,8 +3359,6 @@ rom             0x08000000  0x2000000
                 0x0801fcac                cmd_D3
                 0x0801fcf8                cmd_D5
                 0x0801fd80                cmd_D6
- build/mother3/asm/script.o(.text)
- .text          0x0801fd9c     0x1b84 build/mother3/asm/script.o
                 0x0801fd9c                cmd_D7
                 0x0801fe28                cmd_D9
                 0x0801fec0                cmd_DA
@@ -3460,8 +3447,8 @@ rom             0x08000000  0x2000000
                 0x080218c8                scriptstack_set
                 0x080218e8                scriptstack_push
                 0x08021914                scriptstack_peek
- build/mother3/asm/code_08021920.o(.text)
- .text          0x08021920    0x3a780 build/mother3/asm/code_08021920.o
+ build/mother3/src/code_08021920.o(.text)
+ .text          0x08021920    0x1b7c4 build/mother3/src/code_08021920.o
                 0x08021920                sub_08021920
                 0x08021930                sub_08021930
                 0x08021afc                sub_08021AFC
@@ -4110,6 +4097,8 @@ rom             0x08000000  0x2000000
                 0x0803d06c                sub_0803D06C
                 0x0803d0a8                sub_0803D0A8
                 0x0803d0e0                nullsub_18
+ build/mother3/asm/code_0803D0E4.o(.text)
+ .text          0x0803d0e4      0x4b8 build/mother3/asm/code_0803D0E4.o
                 0x0803d0e4                sub_0803D0E4
                 0x0803d13c                sub_0803D13C
                 0x0803d1b4                sub_0803D1B4
@@ -4118,12 +4107,11 @@ rom             0x08000000  0x2000000
                 0x0803d374                sub_0803D374
                 0x0803d3fc                sub_0803D3FC
                 0x0803d474                sub_0803D474
-                0x0803d59c                sub_0803D59C_start
+ build/mother3/src/code_0803D59C.o(.text)
+ .text          0x0803d59c    0x1eb04 build/mother3/src/code_0803D59C.o
                 0x0803d59c                sub_0803D59C
                 0x0803d5ec                sub_0803D5EC
-                0x0803d5ec                sub_0803D5EC_start
                 0x0803d61c                sub_0803D61C
-                0x0803d61c                sub_0803D61C_start
                 0x0803d678                sub_0803D678
                 0x0803d6c8                sub_0803D6C8
                 0x0803d718                sub_0803D718
@@ -4758,7 +4746,6 @@ rom             0x08000000  0x2000000
                 0x08056584                sub_08056584
                 0x08056620                sub_08056620
                 0x080566c8                sub_080566C8
-                0x080566c8                sub_080566C8_start
                 0x08056740                sub_08056740
                 0x080567e0                sub_080567E0
                 0x0805685c                sub_0805685C
@@ -5074,8 +5061,8 @@ rom             0x08000000  0x2000000
                 0x0805d74c                system_callback__FP6System
                 0x0805d768                checkResetKeys__6System
                 0x0805d784                _GLOBAL_.I.init__15SystemAllocatorP3FitUi
- build/mother3/src/battle_misc.o(.text)
- .text          0x0805d7a0      0x47c build/mother3/src/battle_misc.o
+ build/mother3/src/battle/battle_misc.o(.text)
+ .text          0x0805d7a0      0x47c build/mother3/src/battle/battle_misc.o
                 0x0805d7a0                sub_0805D7A0
                 0x0805d7a8                sub_0805D7A8
                 0x0805d7b4                sub_0805D7B4
@@ -5098,8 +5085,8 @@ rom             0x08000000  0x2000000
                 0x0805d8c8                sub_0805D8C8
                 0x0805d8fc                sub_0805D8FC
                 0x0805db84                sub_0805DB84
- build/mother3/src/battle.o(.text)
- .text          0x0805dc1c     0x11bc build/mother3/src/battle.o
+ build/mother3/src/battle/battle.o(.text)
+ .text          0x0805dc1c     0x41d8 build/mother3/src/battle/battle.o
                 0x0805dc1c                sub_0805DC1C__6Battle
                 0x0805dc6c                sub_0805DC6C__6Battle
                 0x0805dde4                sub_0805DDE4__6Battle
@@ -5166,11 +5153,7 @@ rom             0x08000000  0x2000000
                 0x0805edcc                battle_230__6Battle
                 0x0805edd0                battle_238__6Battle
                 0x0805edd4                nullsub_95
- build/mother3/asm/battle.o(.text)
- .text          0x0805edd8       0xa8 build/mother3/asm/battle.o
                 0x0805edd8                sub_0805EDD8
- build/mother3/asm/guest.o(.text)
- .text          0x0805ee80     0x2f74 build/mother3/asm/guest.o
                 0x0805ee80                sub_0805EE80
                 0x0805eea0                sub_0805EEA0
                 0x0805eea4                sub_0805EEA4
@@ -5316,8 +5299,8 @@ rom             0x08000000  0x2000000
                 0x08062274                init__12GuestFactory
                 0x080622dc                put__12GuestFactoryUsPFUs_Pv
                 0x080622ec                create__12GuestFactoryUs
- build/mother3/asm/goods.o(.text)
- .text          0x08062308     0x2678 build/mother3/asm/goods.o
+ build/mother3/src/battle/goods.o(.text)
+ .text          0x08062308     0x2cc4 build/mother3/src/battle/goods.o
                 0x08062308                sub_08062308
                 0x08062358                sub_08062358
                 0x08062368                sub_08062368
@@ -5376,8 +5359,6 @@ rom             0x08000000  0x2000000
                 0x08064950                sub_08064950
                 0x0806496c                sub_0806496C
                 0x08064974                sub_08064974
- build/mother3/src/battle/goods.o(.text)
- .text          0x08064980      0x64c build/mother3/src/battle/goods.o
                 0x08064980                getName__5GoodsUs
                 0x080649ac                __5GoodsUsP4UnitUs
                 0x080649e8                _._5Goods
@@ -5417,8 +5398,8 @@ rom             0x08000000  0x2000000
                 0x08064f98                type__C5Goods
                 0x08064fa0                isConsumable__C5GoodsP4Unit
                 0x08064fb8                isKeyItem__C5Goods
- build/mother3/asm/sndmon.o(.text)
- .text          0x08064fcc     0x12c8 build/mother3/asm/sndmon.o
+ build/mother3/src/battle/sndmon.o(.text)
+ .text          0x08064fcc     0x12c8 build/mother3/src/battle/sndmon.o
                 0x08064fcc                sub_08064FCC
                 0x08064fe8                __5Goods
                 0x08065014                sub_08065014
@@ -5480,8 +5461,8 @@ rom             0x08000000  0x2000000
                 0x08066258                sub_08066258
                 0x0806625c                sub_0806625C
                 0x08066278                sub_08066278
- build/mother3/asm/code_0805D74C.o(.text)
- .text          0x08066294     0x2680 build/mother3/asm/code_0805D74C.o
+ build/mother3/src/battle/code_0805D74C.o(.text)
+ .text          0x08066294     0x2680 build/mother3/src/battle/code_0805D74C.o
                 0x08066294                sub_08066294
                 0x080662b0                sub_080662B0
                 0x080662c4                sub_080662C4
@@ -5720,8 +5701,8 @@ rom             0x08000000  0x2000000
                 0x0806a760                sub_0806A760__11BattleFader
                 0x0806a80c                sub_0806A80C__11BattleFader
                 0x0806a8bc                sub_0806A8BC__11BattleFader
- build/mother3/src/gengine.o(.text)
- .text          0x0806a96c      0x6cc build/mother3/src/gengine.o
+ build/mother3/src/battle/gengine.o(.text)
+ .text          0x0806a96c      0x6cc build/mother3/src/battle/gengine.o
                 0x0806a96c                sub_0806A96C
                 0x0806a974                sub_0806A974
                 0x0806a9a4                sub_0806A9A4
@@ -5775,8 +5756,8 @@ rom             0x08000000  0x2000000
                 0x0806b004                sub_0806B004
                 0x0806b010                sub_0806B010
                 0x0806b01c                sub_0806B01C
- build/mother3/asm/bgengine.o(.text)
- .text          0x0806b038      0xda4 build/mother3/asm/bgengine.o
+ build/mother3/src/battle/bgengine.o(.text)
+ .text          0x0806b038      0xda4 build/mother3/src/battle/bgengine.o
                 0x0806b038                sub_0806B038
                 0x0806b040                sub_0806B040
                 0x0806b070                sub_0806B070
@@ -5823,8 +5804,8 @@ rom             0x08000000  0x2000000
                 0x0806bb48                bgengine_updateScrollHorizontal
                 0x0806bc3c                sub_0806BC3C
                 0x0806bdc0                sub_0806BDC0
- build/mother3/asm/objengine.o(.text)
- .text          0x0806bddc      0x644 build/mother3/asm/objengine.o
+ build/mother3/src/battle/objengine.o(.text)
+ .text          0x0806bddc      0x644 build/mother3/src/battle/objengine.o
                 0x0806bddc                sub_0806BDDC
                 0x0806bde4                sub_0806BDE4
                 0x0806be14                sub_0806BE14
@@ -5851,8 +5832,8 @@ rom             0x08000000  0x2000000
                 0x0806c1d8                sub_0806C1D8
                 0x0806c3dc                sub_0806C3DC
                 0x0806c404                sub_0806C404
- build/mother3/asm/objchrpool.o(.text)
- .text          0x0806c420      0x34c build/mother3/asm/objchrpool.o
+ build/mother3/src/battle/objchrpool.o(.text)
+ .text          0x0806c420      0x34c build/mother3/src/battle/objchrpool.o
                 0x0806c420                sub_0806C420
                 0x0806c428                sub_0806C428
                 0x0806c458                sub_0806C458
@@ -5866,8 +5847,8 @@ rom             0x08000000  0x2000000
                 0x0806c6c4                sub_0806C6C4
                 0x0806c738                sub_0806C738
                 0x0806c750                sub_0806C750
- build/mother3/asm/objpltpool.o(.text)
- .text          0x0806c76c      0x2dc build/mother3/asm/objpltpool.o
+ build/mother3/src/battle/objpltpool.o(.text)
+ .text          0x0806c76c      0x2dc build/mother3/src/battle/objpltpool.o
                 0x0806c76c                sub_0806C76C
                 0x0806c774                sub_0806C774
                 0x0806c77c                sub_0806C77C
@@ -5882,8 +5863,8 @@ rom             0x08000000  0x2000000
                 0x0806c9d4                sub_0806C9D4
                 0x0806ca24                sub_0806CA24
                 0x0806ca2c                sub_0806CA2C
- build/mother3/asm/keypad.o(.text)
- .text          0x0806ca48      0x210 build/mother3/asm/keypad.o
+ build/mother3/src/battle/keypad.o(.text)
+ .text          0x0806ca48      0x884 build/mother3/src/battle/keypad.o
                 0x0806ca48                sub_0806CA48
                 0x0806ca50                sub_0806CA50
                 0x0806ca5c                sub_0806CA5C
@@ -5928,8 +5909,6 @@ rom             0x08000000  0x2000000
                 0x0806cbe0                sub_0806CBE0
                 0x0806cc10                KeyPadInstance
                 0x0806cc1c                sub_0806CC1C
- build/mother3/src/battle/keypad.o(.text)
- .text          0x0806cc58      0x674 build/mother3/src/battle/keypad.o
                 0x0806cc58                sub_0806CC58__Fv
                 0x0806cc64                __6KeyPad
                 0x0806cd2c                _._6KeyPad
@@ -5941,8 +5920,8 @@ rom             0x08000000  0x2000000
                 0x0806cd54                getNewKeys__6KeyPad
                 0x0806cd5c                sub_0806CD5C
                 0x0806ce0c                sub_0806CE0C__FP6KeyPad
- build/mother3/src/fntsystem.o(.text)
- .text          0x0806d2cc     0x1554 build/mother3/src/fntsystem.o
+ build/mother3/src/battle/fntsystem.o(.text)
+ .text          0x0806d2cc     0x1554 build/mother3/src/battle/fntsystem.o
                 0x0806d2cc                sub_0806D2CC
                 0x0806d478                sub_0806D478
                 0x0806d48c                sub_0806D48C
@@ -6060,8 +6039,8 @@ rom             0x08000000  0x2000000
                 0x0806e74c                sub_0806E74C
                 0x0806e7b4                sub_0806E7B4
                 0x0806e804                sub_0806E804
- build/mother3/src/rassystem.o(.text)
- .text          0x0806e820      0x5d0 build/mother3/src/rassystem.o
+ build/mother3/src/battle/rassystem.o(.text)
+ .text          0x0806e820      0x5d0 build/mother3/src/battle/rassystem.o
                 0x0806e820                sub_0806E820
                 0x0806e8bc                sub_0806E8BC
                 0x0806e90c                sub_0806E90C
@@ -6095,8 +6074,8 @@ rom             0x08000000  0x2000000
                 0x0806edb4                sub_0806EDB4
                 0x0806edc0                sub_0806EDC0
                 0x0806edd4                sub_0806EDD4
- build/mother3/src/efcsystem.o(.text)
- .text          0x0806edf0      0xf88 build/mother3/src/efcsystem.o
+ build/mother3/src/battle/efcsystem.o(.text)
+ .text          0x0806edf0      0xf88 build/mother3/src/battle/efcsystem.o
                 0x0806edf0                sub_0806EDF0
                 0x0806ee90                sub_0806EE90
                 0x0806ef18                sub_0806EF18
@@ -6159,8 +6138,8 @@ rom             0x08000000  0x2000000
                 0x0806fd1c                sub_0806FD1C
                 0x0806fd20                sub_0806FD20
                 0x0806fd5c                sub_0806FD5C
- build/mother3/src/sndsystem.o(.text)
- .text          0x0806fd78      0x1c0 build/mother3/src/sndsystem.o
+ build/mother3/src/battle/sndsystem.o(.text)
+ .text          0x0806fd78      0x1c0 build/mother3/src/battle/sndsystem.o
                 0x0806fd78                sub_0806FD78
                 0x0806fd80                sub_0806FD80
                 0x0806fdb0                sub_0806FDB0__Fv
@@ -6177,8 +6156,8 @@ rom             0x08000000  0x2000000
                 0x0806ff04                sub_0806FF04
                 0x0806ff10                sub_0806FF10
                 0x0806ff1c                sub_0806FF1C
- build/mother3/asm/keyfocusmanager.o(.text)
- .text          0x0806ff38     0x2630 build/mother3/asm/keyfocusmanager.o
+ build/mother3/src/battle/keyfocusmanager.o(.text)
+ .text          0x0806ff38     0x2630 build/mother3/src/battle/keyfocusmanager.o
                 0x0806ff38                sub_0806FF38
                 0x0806ff6c                sub_0806FF6C
                 0x0806ffa8                sub_0806FFA8
@@ -6418,8 +6397,8 @@ rom             0x08000000  0x2000000
                 0x0807362c                sub_0807362C
                 0x0807367c                sub_0807367C
                 0x080736b4                sub_080736B4
- build/mother3/src/rhythm.o(.text)
- .text          0x080736f8     0x133c build/mother3/src/rhythm.o
+ build/mother3/src/battle/rhythm.o(.text)
+ .text          0x080736f8     0x133c build/mother3/src/battle/rhythm.o
                 0x080736f8                sub_080736F8
                 0x08073734                hitPlayer
                 0x0807392c                sub_0807392C
@@ -6601,8 +6580,8 @@ rom             0x08000000  0x2000000
                 0x080766c4                attackdata_120__C10UnitTargetP4Unit
                 0x080766f8                __16UnitTargetChoiceUsP4Unit
                 0x08076a68                _._16UnitTargetChoice
- build/mother3/asm/rom2.o(.text)
- .text          0x08076b30     0x1404 build/mother3/asm/rom2.o
+ build/mother3/src/battle/rom2.o(.text)
+ .text          0x08076b30     0x1404 build/mother3/src/battle/rom2.o
                 0x08076b30                sub_08076B30
                 0x08076bbc                sub_08076BBC
                 0x08076d18                sub_08076D18
@@ -6692,12 +6671,10 @@ rom             0x08000000  0x2000000
                 0x0807a7fc                action_160__C6ActionUsRC3Msg
                 0x0807a88c                __6Action
  build/mother3/src/battle/player.o(.text)
- .text          0x0807a8b8       0x4c build/mother3/src/battle/player.o
+ .text          0x0807a8b8     0x1c38 build/mother3/src/battle/player.o
                 0x0807a8b8                getPlayerRTTI
                 0x0807a8c0                sub_0807A8C0
                 0x0807a8cc                createPlayerName__FUs
- build/mother3/asm/player.o(.text)
- .text          0x0807a904     0x1bec build/mother3/asm/player.o
                 0x0807a904                sub_0807A904
                 0x0807aaec                sub_0807AAEC
                 0x0807ac28                sub_0807AC28
@@ -6772,8 +6749,8 @@ rom             0x08000000  0x2000000
                 0x0807c324                sub_0807C324
                 0x0807c378                sub_0807C378
                 0x0807c4d4                sub_0807C4D4
- build/mother3/asm/playerskill.o(.text)
- .text          0x0807c4f0     0x4298 build/mother3/asm/playerskill.o
+ build/mother3/src/battle/playerskill.o(.text)
+ .text          0x0807c4f0     0x4298 build/mother3/src/battle/playerskill.o
                 0x0807c4f0                sub_0807C4F0
                 0x0807c518                sub_0807C518
                 0x0807c540                sub_0807C540
@@ -7016,8 +6993,8 @@ rom             0x08000000  0x2000000
                 0x080817cc                onRoundEnd__7Monster
                 0x080817d0                sub_080817D0__7MonsterUs
                 0x08081978                _GLOBAL_.I.get__11MonsterRTTI
- build/mother3/asm/monsterskill.o(.text)
- .text          0x08081994      0xaf0 build/mother3/asm/monsterskill.o
+ build/mother3/src/battle/monsterskill.o(.text)
+ .text          0x08081994      0xaf0 build/mother3/src/battle/monsterskill.o
                 0x08081994                sub_08081994
                 0x080819bc                sub_080819BC
                 0x080819e4                sub_080819E4
@@ -7090,8 +7067,8 @@ rom             0x08000000  0x2000000
                 0x08082458                sub_08082458
                 0x08082460                sub_08082460
                 0x08082468                sub_08082468
- build/mother3/src/psi.o(.text)
- .text          0x08082484      0xc14 build/mother3/src/psi.o
+ build/mother3/src/battle/psi.o(.text)
+ .text          0x08082484      0xc14 build/mother3/src/battle/psi.o
                 0x08082484                sub_08082484
                 0x080824b0                tellStatus
                 0x08082510                sub_08082510
@@ -7168,8 +7145,8 @@ rom             0x08000000  0x2000000
                 0x0808306c                sub_0808306C
                 0x08083074                sub_08083074
                 0x0808307c                sub_0808307C
- build/mother3/asm/rom2d.o(.text)
- .text          0x08083098     0x5cac build/mother3/asm/rom2d.o
+ build/mother3/src/battle/rom2d.o(.text)
+ .text          0x08083098     0x5cac build/mother3/src/battle/rom2d.o
                 0x08083098                sub_08083098
                 0x080830c4                sub_080830C4
                 0x080830f0                sub_080830F0
@@ -7474,8 +7451,8 @@ rom             0x08000000  0x2000000
                 0x08089178                sub_08089178
                 0x080891f0                sub_080891F0
                 0x0808933c                sub_0808933C
- build/mother3/asm/rom2e.o(.text)
- .text          0x080894bc     0x5830 build/mother3/asm/rom2e.o
+ build/mother3/src/battle/rom2e.o(.text)
+ .text          0x080894bc     0x5830 build/mother3/src/battle/rom2e.o
                 0x080894bc                sub_080894BC
                 0x080894dc                sub_080894DC
                 0x08089520                sub_08089520
@@ -18441,302 +18418,410 @@ rom             0x08000000  0x2000000
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0x670
+.debug_aranges  0x00000000      0x850
  *(.debug_aranges)
  .debug_aranges
                 0x00000000       0x20 build/mother3/src/main.o
  .debug_aranges
-                0x00000020       0x20 build/mother3/src/overworld/script.o
+                0x00000020       0x20 build/mother3/src/rom.o
  .debug_aranges
-                0x00000040       0x20 build/mother3/src/common.o
+                0x00000040       0x20 build/mother3/src/overworld/script.o
  .debug_aranges
-                0x00000060       0x20 build/mother3/src/battle/system.o
+                0x00000060       0x20 build/mother3/src/code_08021920.o
  .debug_aranges
-                0x00000080       0x20 build/mother3/src/battle_misc.o
+                0x00000080       0x20 build/mother3/src/code_0803D59C.o
  .debug_aranges
-                0x000000a0       0x60 build/mother3/src/battle.o
+                0x000000a0       0x20 build/mother3/src/common.o
  .debug_aranges
-                0x00000100       0x38 build/mother3/src/battle/guest.o
+                0x000000c0       0x20 build/mother3/src/battle/system.o
  .debug_aranges
-                0x00000138       0x20 build/mother3/src/battle/guestFactory.o
+                0x000000e0       0x20 build/mother3/src/battle/battle_misc.o
  .debug_aranges
-                0x00000158       0x20 build/mother3/src/battle/goods.o
+                0x00000100       0x60 build/mother3/src/battle/battle.o
  .debug_aranges
-                0x00000178       0x20 build/mother3/src/singleton.o
+                0x00000160       0x38 build/mother3/src/battle/guest.o
  .debug_aranges
-                0x00000198       0x20 build/mother3/src/base.o
+                0x00000198       0x20 build/mother3/src/battle/guestFactory.o
  .debug_aranges
-                0x000001b8       0x20 build/mother3/src/allocator.o
+                0x000001b8       0x20 build/mother3/src/battle/goods.o
  .debug_aranges
-                0x000001d8       0x20 build/mother3/src/battle/irc.o
+                0x000001d8       0x20 build/mother3/src/battle/sndmon.o
  .debug_aranges
-                0x000001f8       0x28 build/mother3/src/battle/fader.o
+                0x000001f8       0x20 build/mother3/src/battle/code_0805D74C.o
  .debug_aranges
-                0x00000220       0x20 build/mother3/src/gengine.o
+                0x00000218       0x20 build/mother3/src/singleton.o
  .debug_aranges
-                0x00000240       0xc8 build/mother3/src/battle/keypad.o
+                0x00000238       0x20 build/mother3/src/base.o
  .debug_aranges
-                0x00000308       0x20 build/mother3/src/fntsystem.o
+                0x00000258       0x20 build/mother3/src/allocator.o
  .debug_aranges
-                0x00000328       0x20 build/mother3/src/rassystem.o
+                0x00000278       0x20 build/mother3/src/battle/irc.o
  .debug_aranges
-                0x00000348       0x20 build/mother3/src/efcsystem.o
+                0x00000298       0x28 build/mother3/src/battle/fader.o
  .debug_aranges
-                0x00000368       0x20 build/mother3/src/sndsystem.o
+                0x000002c0       0x20 build/mother3/src/battle/gengine.o
  .debug_aranges
-                0x00000388       0x20 build/mother3/src/battle/battleData.o
+                0x000002e0       0x20 build/mother3/src/battle/bgengine.o
  .debug_aranges
-                0x000003a8       0x20 build/mother3/src/rhythm.o
+                0x00000300       0x20 build/mother3/src/battle/objengine.o
  .debug_aranges
-                0x000003c8       0x20 build/mother3/src/battle/unit.o
+                0x00000320       0x20 build/mother3/src/battle/objchrpool.o
  .debug_aranges
-                0x000003e8       0x20 build/mother3/src/battle/unitTarget.o
+                0x00000340       0x20 build/mother3/src/battle/objpltpool.o
  .debug_aranges
-                0x00000408       0x20 build/mother3/src/battle/action.o
+                0x00000360       0xc8 build/mother3/src/battle/keypad.o
  .debug_aranges
-                0x00000428       0x20 build/mother3/src/battle/player.o
+                0x00000428       0x20 build/mother3/src/battle/fntsystem.o
  .debug_aranges
-                0x00000448       0x20 build/mother3/src/battle/guestSkill.o
+                0x00000448       0x20 build/mother3/src/battle/rassystem.o
  .debug_aranges
-                0x00000468       0x40 build/mother3/src/battle/monster.o
+                0x00000468       0x20 build/mother3/src/battle/efcsystem.o
  .debug_aranges
-                0x000004a8       0x20 build/mother3/src/psi.o
+                0x00000488       0x20 build/mother3/src/battle/sndsystem.o
  .debug_aranges
-                0x000004c8       0x20 build/mother3/src/battle/archive.o
+                0x000004a8       0x20 build/mother3/src/battle/keyfocusmanager.o
  .debug_aranges
-                0x000004e8       0x20 build/mother3/src/m4a.o
+                0x000004c8       0x20 build/mother3/src/battle/battleData.o
  .debug_aranges
-                0x00000508       0x20 build/mother3/src/rom3.o
+                0x000004e8       0x20 build/mother3/src/battle/rhythm.o
  .debug_aranges
-                0x00000528       0x50 build/mother3/asm/monsterImplTmp.o
+                0x00000508       0x20 build/mother3/src/battle/unit.o
  .debug_aranges
-                0x00000578       0x28 build/mother3/src/battle/monsterImpl2.o
+                0x00000528       0x20 build/mother3/src/battle/unitTarget.o
  .debug_aranges
-                0x000005a0       0x68 build/mother3/src/battle/goods2.o
+                0x00000548       0x20 build/mother3/src/battle/rom2.o
  .debug_aranges
-                0x00000608       0x68 build/mother3/src/battle/goodsImpl.o
+                0x00000568       0x20 build/mother3/src/battle/action.o
+ .debug_aranges
+                0x00000588       0x20 build/mother3/src/battle/player.o
+ .debug_aranges
+                0x000005a8       0x20 build/mother3/src/battle/playerskill.o
+ .debug_aranges
+                0x000005c8       0x20 build/mother3/src/battle/guestSkill.o
+ .debug_aranges
+                0x000005e8       0x40 build/mother3/src/battle/monster.o
+ .debug_aranges
+                0x00000628       0x20 build/mother3/src/battle/monsterskill.o
+ .debug_aranges
+                0x00000648       0x20 build/mother3/src/battle/psi.o
+ .debug_aranges
+                0x00000668       0x20 build/mother3/src/battle/rom2d.o
+ .debug_aranges
+                0x00000688       0x20 build/mother3/src/battle/archive.o
+ .debug_aranges
+                0x000006a8       0x20 build/mother3/src/battle/rom2e.o
+ .debug_aranges
+                0x000006c8       0x20 build/mother3/src/m4a.o
+ .debug_aranges
+                0x000006e8       0x20 build/mother3/src/rom3.o
+ .debug_aranges
+                0x00000708       0x50 build/mother3/asm/monsterImplTmp.o
+ .debug_aranges
+                0x00000758       0x28 build/mother3/src/battle/monsterImpl2.o
+ .debug_aranges
+                0x00000780       0x68 build/mother3/src/battle/goods2.o
+ .debug_aranges
+                0x000007e8       0x68 build/mother3/src/battle/goodsImpl.o
 
 .debug_pubnames
-                0x00000000     0x8a37
+                0x00000000    0x17f25
  *(.debug_pubnames)
  .debug_pubnames
                 0x00000000      0x226 build/mother3/src/main.o
  .debug_pubnames
-                0x00000226      0x899 build/mother3/src/overworld/script.o
+                0x00000226     0x2d02 build/mother3/src/rom.o
  .debug_pubnames
-                0x00000abf      0x3a7 build/mother3/src/common.o
+                0x00002f28      0xd72 build/mother3/src/overworld/script.o
  .debug_pubnames
-                0x00000e66      0x2e5 build/mother3/src/battle/system.o
+                0x00003c9a     0x2afb build/mother3/src/code_08021920.o
  .debug_pubnames
-                0x0000114b      0x190 build/mother3/src/battle_misc.o
+                0x00006795     0x394e build/mother3/src/code_0803D59C.o
  .debug_pubnames
-                0x000012db      0x6e1 build/mother3/src/battle.o
+                0x0000a0e3      0x3a7 build/mother3/src/common.o
  .debug_pubnames
-                0x000019bc      0x359 build/mother3/src/battle/guest.o
+                0x0000a48a      0x2e5 build/mother3/src/battle/system.o
  .debug_pubnames
-                0x00001d15       0x58 build/mother3/src/battle/guestFactory.o
+                0x0000a76f      0x190 build/mother3/src/battle/battle_misc.o
  .debug_pubnames
-                0x00001d6d      0x332 build/mother3/src/battle/goods.o
+                0x0000a8ff      0xdc6 build/mother3/src/battle/battle.o
  .debug_pubnames
-                0x0000209f       0x65 build/mother3/src/singleton.o
+                0x0000b6c5      0x359 build/mother3/src/battle/guest.o
  .debug_pubnames
-                0x00002104      0x146 build/mother3/src/base.o
+                0x0000ba1e       0x58 build/mother3/src/battle/guestFactory.o
  .debug_pubnames
-                0x0000224a       0xf1 build/mother3/src/allocator.o
+                0x0000ba76      0x704 build/mother3/src/battle/goods.o
  .debug_pubnames
-                0x0000233b      0x369 build/mother3/src/battle/irc.o
+                0x0000c17a      0x44f build/mother3/src/battle/sndmon.o
  .debug_pubnames
-                0x000026a4      0x217 build/mother3/src/battle/fader.o
+                0x0000c5c9      0x461 build/mother3/src/battle/code_0805D74C.o
  .debug_pubnames
-                0x000028bb      0x397 build/mother3/src/gengine.o
+                0x0000ca2a       0x65 build/mother3/src/singleton.o
  .debug_pubnames
-                0x00002c52      0x399 build/mother3/src/battle/keypad.o
+                0x0000ca8f      0x146 build/mother3/src/base.o
  .debug_pubnames
-                0x00002feb      0x7c1 build/mother3/src/fntsystem.o
+                0x0000cbd5       0xf1 build/mother3/src/allocator.o
  .debug_pubnames
-                0x000037ac      0x243 build/mother3/src/rassystem.o
+                0x0000ccc6      0x369 build/mother3/src/battle/irc.o
  .debug_pubnames
-                0x000039ef      0x430 build/mother3/src/efcsystem.o
+                0x0000d02f      0x217 build/mother3/src/battle/fader.o
  .debug_pubnames
-                0x00003e1f      0x126 build/mother3/src/sndsystem.o
+                0x0000d246      0x397 build/mother3/src/battle/gengine.o
  .debug_pubnames
-                0x00003f45      0x551 build/mother3/src/battle/battleData.o
+                0x0000d5dd      0x333 build/mother3/src/battle/bgengine.o
  .debug_pubnames
-                0x00004496      0x3ab build/mother3/src/rhythm.o
+                0x0000d910      0x1cc build/mother3/src/battle/objengine.o
  .debug_pubnames
-                0x00004841      0x839 build/mother3/src/battle/unit.o
+                0x0000dadc       0xef build/mother3/src/battle/objchrpool.o
  .debug_pubnames
-                0x0000507a      0x354 build/mother3/src/battle/unitTarget.o
+                0x0000dbcb      0x100 build/mother3/src/battle/objpltpool.o
  .debug_pubnames
-                0x000053ce      0x45f build/mother3/src/battle/action.o
+                0x0000dccb      0x68b build/mother3/src/battle/keypad.o
  .debug_pubnames
-                0x0000582d       0x76 build/mother3/src/battle/player.o
+                0x0000e356      0x7c1 build/mother3/src/battle/fntsystem.o
  .debug_pubnames
-                0x000058a3      0x3ab build/mother3/src/battle/guestSkill.o
+                0x0000eb17      0x243 build/mother3/src/battle/rassystem.o
  .debug_pubnames
-                0x00005c4e      0x56f build/mother3/src/battle/monster.o
+                0x0000ed5a      0x430 build/mother3/src/battle/efcsystem.o
  .debug_pubnames
-                0x000061bd      0x520 build/mother3/src/psi.o
+                0x0000f18a      0x126 build/mother3/src/battle/sndsystem.o
  .debug_pubnames
-                0x000066dd      0x229 build/mother3/src/battle/archive.o
+                0x0000f2b0      0xa88 build/mother3/src/battle/keyfocusmanager.o
  .debug_pubnames
-                0x00006906      0x52d build/mother3/src/m4a.o
+                0x0000fd38      0x551 build/mother3/src/battle/battleData.o
  .debug_pubnames
-                0x00006e33       0x61 build/mother3/src/rom3.o
+                0x00010289      0x3ab build/mother3/src/battle/rhythm.o
  .debug_pubnames
-                0x00006e94      0x1e5 build/mother3/asm/monsterImplTmp.o
+                0x00010634      0x839 build/mother3/src/battle/unit.o
  .debug_pubnames
-                0x00007079      0x8bd build/mother3/src/battle/monsterImpl2.o
+                0x00010e6d      0x354 build/mother3/src/battle/unitTarget.o
  .debug_pubnames
-                0x00007936      0x56b build/mother3/src/battle/goods2.o
+                0x000111c1      0x2a3 build/mother3/src/battle/rom2.o
  .debug_pubnames
-                0x00007ea1      0xafe build/mother3/src/battle/goodsImpl.o
+                0x00011464      0x45f build/mother3/src/battle/action.o
  .debug_pubnames
-                0x0000899f       0x27 build/mother3/src/data/playerSkillData.o
+                0x000118c3      0x55c build/mother3/src/battle/player.o
  .debug_pubnames
-                0x000089c6       0x26 build/mother3/src/data/guestSkillData.o
+                0x00011e1f      0x9f5 build/mother3/src/battle/playerskill.o
  .debug_pubnames
-                0x000089ec       0x23 build/mother3/src/data/monsterData.o
+                0x00012814      0x3ab build/mother3/src/battle/guestSkill.o
  .debug_pubnames
-                0x00008a0f       0x28 build/mother3/src/data/monsterSkillData.o
+                0x00012bbf      0x56f build/mother3/src/battle/monster.o
+ .debug_pubnames
+                0x0001312e      0x4e7 build/mother3/src/battle/monsterskill.o
+ .debug_pubnames
+                0x00013615      0x520 build/mother3/src/battle/psi.o
+ .debug_pubnames
+                0x00013b35     0x12a3 build/mother3/src/battle/rom2d.o
+ .debug_pubnames
+                0x00014dd8      0x229 build/mother3/src/battle/archive.o
+ .debug_pubnames
+                0x00015001      0xdf3 build/mother3/src/battle/rom2e.o
+ .debug_pubnames
+                0x00015df4      0x52d build/mother3/src/m4a.o
+ .debug_pubnames
+                0x00016321       0x61 build/mother3/src/rom3.o
+ .debug_pubnames
+                0x00016382      0x1e5 build/mother3/asm/monsterImplTmp.o
+ .debug_pubnames
+                0x00016567      0x8bd build/mother3/src/battle/monsterImpl2.o
+ .debug_pubnames
+                0x00016e24      0x56b build/mother3/src/battle/goods2.o
+ .debug_pubnames
+                0x0001738f      0xafe build/mother3/src/battle/goodsImpl.o
+ .debug_pubnames
+                0x00017e8d       0x27 build/mother3/src/data/playerSkillData.o
+ .debug_pubnames
+                0x00017eb4       0x26 build/mother3/src/data/guestSkillData.o
+ .debug_pubnames
+                0x00017eda       0x23 build/mother3/src/data/monsterData.o
+ .debug_pubnames
+                0x00017efd       0x28 build/mother3/src/data/monsterSkillData.o
 
-.debug_info     0x00000000   0x2017aa
+.debug_info     0x00000000   0x2411e1
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000     0xf583 build/mother3/src/main.o
- .debug_info    0x0000f583    0x12e00 build/mother3/src/overworld/script.o
- .debug_info    0x00022383     0x37df build/mother3/src/common.o
- .debug_info    0x00025b62     0xade8 build/mother3/src/battle/system.o
- .debug_info    0x0003094a     0x2945 build/mother3/src/battle_misc.o
- .debug_info    0x0003328f    0x123dc build/mother3/src/battle.o
- .debug_info    0x0004566b    0x1382e build/mother3/src/battle/guest.o
- .debug_info    0x00058e99     0xf47b build/mother3/src/battle/guestFactory.o
- .debug_info    0x00068314     0xe8b1 build/mother3/src/battle/goods.o
- .debug_info    0x00076bc5     0x4912 build/mother3/src/singleton.o
- .debug_info    0x0007b4d7     0x4c51 build/mother3/src/base.o
- .debug_info    0x00080128     0x30dc build/mother3/src/allocator.o
- .debug_info    0x00083204     0x60d2 build/mother3/src/battle/irc.o
- .debug_info    0x000892d6     0x6267 build/mother3/src/battle/clock.o
- .debug_info    0x0008f53d     0x7016 build/mother3/src/battle/fader.o
- .debug_info    0x00096553     0x2c7e build/mother3/src/gengine.o
- .debug_info    0x000991d1     0x949e build/mother3/src/battle/keypad.o
- .debug_info    0x000a266f     0x330c build/mother3/src/fntsystem.o
- .debug_info    0x000a597b     0x2a64 build/mother3/src/rassystem.o
- .debug_info    0x000a83df     0x2d73 build/mother3/src/efcsystem.o
- .debug_info    0x000ab152     0x289d build/mother3/src/sndsystem.o
- .debug_info    0x000ad9ef    0x15468 build/mother3/src/battle/battleData.o
- .debug_info    0x000c2e57     0x2c87 build/mother3/src/rhythm.o
- .debug_info    0x000c5ade    0x1226a build/mother3/src/battle/unit.o
- .debug_info    0x000d7d48     0xf97f build/mother3/src/battle/unitTarget.o
- .debug_info    0x000e76c7    0x1aa27 build/mother3/src/battle/action.o
- .debug_info    0x001020ee     0xb8cf build/mother3/src/battle/player.o
- .debug_info    0x0010d9bd     0xdecf build/mother3/src/battle/guestSkill.o
- .debug_info    0x0011b88c    0x14897 build/mother3/src/battle/monster.o
- .debug_info    0x00130123     0x2ee9 build/mother3/src/psi.o
- .debug_info    0x0013300c     0x591d build/mother3/src/battle/archive.o
- .debug_info    0x00138929     0x455d build/mother3/src/m4a.o
- .debug_info    0x0013ce86     0x541c build/mother3/src/rom3.o
- .debug_info    0x001422a2     0xf347 build/mother3/asm/monsterImplTmp.o
- .debug_info    0x001515e9    0x1a793 build/mother3/src/battle/monsterImpl.o
- .debug_info    0x0016bd7c    0x1b9ec build/mother3/src/battle/monsterImpl2.o
- .debug_info    0x00187768    0x1d523 build/mother3/src/battle/goods2.o
- .debug_info    0x001a4c8b    0x1e1c0 build/mother3/src/battle/goodsImpl.o
- .debug_info    0x001c2e4b     0x702e build/mother3/src/inst.o
- .debug_info    0x001c9e79    0x1249e build/mother3/src/data/playerSkillData.o
- .debug_info    0x001dc317     0xd8f9 build/mother3/src/data/guestSkillData.o
- .debug_info    0x001e9c10     0xadf8 build/mother3/src/data/monsterData.o
- .debug_info    0x001f4a08     0xcda2 build/mother3/src/data/monsterSkillData.o
+ .debug_info    0x0000f583     0x7004 build/mother3/src/rom.o
+ .debug_info    0x00016587    0x13757 build/mother3/src/overworld/script.o
+ .debug_info    0x00029cde     0x6cb2 build/mother3/src/code_08021920.o
+ .debug_info    0x00030990     0x8463 build/mother3/src/code_0803D59C.o
+ .debug_info    0x00038df3     0x37df build/mother3/src/common.o
+ .debug_info    0x0003c5d2     0xade8 build/mother3/src/battle/system.o
+ .debug_info    0x000473ba     0x294c build/mother3/src/battle/battle_misc.o
+ .debug_info    0x00049d06    0x12f2a build/mother3/src/battle/battle.o
+ .debug_info    0x0005cc30    0x1382e build/mother3/src/battle/guest.o
+ .debug_info    0x0007045e     0xf47b build/mother3/src/battle/guestFactory.o
+ .debug_info    0x0007f8d9     0xeec7 build/mother3/src/battle/goods.o
+ .debug_info    0x0008e7a0     0x2d8c build/mother3/src/battle/sndmon.o
+ .debug_info    0x0009152c     0x2dcd build/mother3/src/battle/code_0805D74C.o
+ .debug_info    0x000942f9     0x4912 build/mother3/src/singleton.o
+ .debug_info    0x00098c0b     0x4c51 build/mother3/src/base.o
+ .debug_info    0x0009d85c     0x30dc build/mother3/src/allocator.o
+ .debug_info    0x000a0938     0x60d2 build/mother3/src/battle/irc.o
+ .debug_info    0x000a6a0a     0x6267 build/mother3/src/battle/clock.o
+ .debug_info    0x000acc71     0x7016 build/mother3/src/battle/fader.o
+ .debug_info    0x000b3c87     0x2c85 build/mother3/src/battle/gengine.o
+ .debug_info    0x000b690c     0x2bdc build/mother3/src/battle/bgengine.o
+ .debug_info    0x000b94e8     0x29ae build/mother3/src/battle/objengine.o
+ .debug_info    0x000bbe96     0x2850 build/mother3/src/battle/objchrpool.o
+ .debug_info    0x000be6e6     0x286b build/mother3/src/battle/objpltpool.o
+ .debug_info    0x000c0f51     0x9948 build/mother3/src/battle/keypad.o
+ .debug_info    0x000ca899     0x3313 build/mother3/src/battle/fntsystem.o
+ .debug_info    0x000cdbac     0x2a6b build/mother3/src/battle/rassystem.o
+ .debug_info    0x000d0617     0x2d7a build/mother3/src/battle/efcsystem.o
+ .debug_info    0x000d3391     0x28a4 build/mother3/src/battle/sndsystem.o
+ .debug_info    0x000d5c35     0x3798 build/mother3/src/battle/keyfocusmanager.o
+ .debug_info    0x000d93cd    0x15468 build/mother3/src/battle/battleData.o
+ .debug_info    0x000ee835     0x2c8e build/mother3/src/battle/rhythm.o
+ .debug_info    0x000f14c3    0x1226a build/mother3/src/battle/unit.o
+ .debug_info    0x0010372d     0xf97f build/mother3/src/battle/unitTarget.o
+ .debug_info    0x001130ac     0x2aee build/mother3/src/battle/rom2.o
+ .debug_info    0x00115b9a    0x1aa27 build/mother3/src/battle/action.o
+ .debug_info    0x001305c1     0xc099 build/mother3/src/battle/player.o
+ .debug_info    0x0013c65a     0x36a7 build/mother3/src/battle/playerskill.o
+ .debug_info    0x0013fd01     0xdecf build/mother3/src/battle/guestSkill.o
+ .debug_info    0x0014dbd0    0x14897 build/mother3/src/battle/monster.o
+ .debug_info    0x00162467     0x2e98 build/mother3/src/battle/monsterskill.o
+ .debug_info    0x001652ff     0x2ef0 build/mother3/src/battle/psi.o
+ .debug_info    0x001681ef     0x447e build/mother3/src/battle/rom2d.o
+ .debug_info    0x0016c66d     0x591d build/mother3/src/battle/archive.o
+ .debug_info    0x00171f8a     0x3cf7 build/mother3/src/battle/rom2e.o
+ .debug_info    0x00175c81     0x455d build/mother3/src/m4a.o
+ .debug_info    0x0017a1de     0x541c build/mother3/src/rom3.o
+ .debug_info    0x0017f5fa     0xf347 build/mother3/asm/monsterImplTmp.o
+ .debug_info    0x0018e941    0x1a793 build/mother3/src/battle/monsterImpl.o
+ .debug_info    0x001a90d4    0x1b9ec build/mother3/src/battle/monsterImpl2.o
+ .debug_info    0x001c4ac0    0x1d523 build/mother3/src/battle/goods2.o
+ .debug_info    0x001e1fe3    0x1e1c0 build/mother3/src/battle/goodsImpl.o
+ .debug_info    0x002001a3     0x702e build/mother3/src/inst.o
+ .debug_info    0x002071d1    0x1249e build/mother3/src/data/playerSkillData.o
+ .debug_info    0x0021966f     0xd8f9 build/mother3/src/data/guestSkillData.o
+ .debug_info    0x00226f68     0xadf8 build/mother3/src/data/monsterData.o
+ .debug_info    0x00231d60     0xcda2 build/mother3/src/data/monsterSkillData.o
+ .debug_info    0x0023eb02     0x26df build/mother3/src/unknown_asm.o
 
-.debug_abbrev   0x00000000     0x9ed0
+.debug_abbrev   0x00000000     0xb2b3
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x52a build/mother3/src/main.o
- .debug_abbrev  0x0000052a      0x545 build/mother3/src/overworld/script.o
- .debug_abbrev  0x00000a6f      0x215 build/mother3/src/common.o
- .debug_abbrev  0x00000c84      0x499 build/mother3/src/battle/system.o
- .debug_abbrev  0x0000111d      0x132 build/mother3/src/battle_misc.o
- .debug_abbrev  0x0000124f      0x501 build/mother3/src/battle.o
- .debug_abbrev  0x00001750      0x5ae build/mother3/src/battle/guest.o
- .debug_abbrev  0x00001cfe      0x482 build/mother3/src/battle/guestFactory.o
- .debug_abbrev  0x00002180      0x465 build/mother3/src/battle/goods.o
- .debug_abbrev  0x000025e5      0x2d8 build/mother3/src/singleton.o
- .debug_abbrev  0x000028bd      0x325 build/mother3/src/base.o
- .debug_abbrev  0x00002be2      0x2bb build/mother3/src/allocator.o
- .debug_abbrev  0x00002e9d      0x398 build/mother3/src/battle/irc.o
- .debug_abbrev  0x00003235      0x29d build/mother3/src/battle/clock.o
- .debug_abbrev  0x000034d2      0x321 build/mother3/src/battle/fader.o
- .debug_abbrev  0x000037f3      0x132 build/mother3/src/gengine.o
- .debug_abbrev  0x00003925      0x386 build/mother3/src/battle/keypad.o
- .debug_abbrev  0x00003cab      0x132 build/mother3/src/fntsystem.o
- .debug_abbrev  0x00003ddd      0x132 build/mother3/src/rassystem.o
- .debug_abbrev  0x00003f0f      0x132 build/mother3/src/efcsystem.o
- .debug_abbrev  0x00004041      0x132 build/mother3/src/sndsystem.o
- .debug_abbrev  0x00004173      0x622 build/mother3/src/battle/battleData.o
- .debug_abbrev  0x00004795      0x132 build/mother3/src/rhythm.o
- .debug_abbrev  0x000048c7      0x5d9 build/mother3/src/battle/unit.o
- .debug_abbrev  0x00004ea0      0x47b build/mother3/src/battle/unitTarget.o
- .debug_abbrev  0x0000531b      0x5a5 build/mother3/src/battle/action.o
- .debug_abbrev  0x000058c0      0x3da build/mother3/src/battle/player.o
- .debug_abbrev  0x00005c9a      0x4cc build/mother3/src/battle/guestSkill.o
- .debug_abbrev  0x00006166      0x5f2 build/mother3/src/battle/monster.o
- .debug_abbrev  0x00006758      0x132 build/mother3/src/psi.o
- .debug_abbrev  0x0000688a      0x3a4 build/mother3/src/battle/archive.o
- .debug_abbrev  0x00006c2e      0x28b build/mother3/src/m4a.o
- .debug_abbrev  0x00006eb9      0x31e build/mother3/src/rom3.o
- .debug_abbrev  0x000071d7      0x4bf build/mother3/asm/monsterImplTmp.o
- .debug_abbrev  0x00007696      0x56b build/mother3/src/battle/monsterImpl.o
- .debug_abbrev  0x00007c01      0x5ea build/mother3/src/battle/monsterImpl2.o
- .debug_abbrev  0x000081eb      0x59d build/mother3/src/battle/goods2.o
- .debug_abbrev  0x00008788      0x574 build/mother3/src/battle/goodsImpl.o
- .debug_abbrev  0x00008cfc      0x2ae build/mother3/src/inst.o
- .debug_abbrev  0x00008faa      0x405 build/mother3/src/data/playerSkillData.o
- .debug_abbrev  0x000093af      0x3ed build/mother3/src/data/guestSkillData.o
- .debug_abbrev  0x0000979c      0x347 build/mother3/src/data/monsterData.o
- .debug_abbrev  0x00009ae3      0x3ed build/mother3/src/data/monsterSkillData.o
+ .debug_abbrev  0x0000052a      0x145 build/mother3/src/rom.o
+ .debug_abbrev  0x0000066f      0x57a build/mother3/src/overworld/script.o
+ .debug_abbrev  0x00000be9      0x145 build/mother3/src/code_08021920.o
+ .debug_abbrev  0x00000d2e      0x145 build/mother3/src/code_0803D59C.o
+ .debug_abbrev  0x00000e73      0x215 build/mother3/src/common.o
+ .debug_abbrev  0x00001088      0x499 build/mother3/src/battle/system.o
+ .debug_abbrev  0x00001521      0x132 build/mother3/src/battle/battle_misc.o
+ .debug_abbrev  0x00001653      0x501 build/mother3/src/battle/battle.o
+ .debug_abbrev  0x00001b54      0x5ae build/mother3/src/battle/guest.o
+ .debug_abbrev  0x00002102      0x482 build/mother3/src/battle/guestFactory.o
+ .debug_abbrev  0x00002584      0x49a build/mother3/src/battle/goods.o
+ .debug_abbrev  0x00002a1e      0x132 build/mother3/src/battle/sndmon.o
+ .debug_abbrev  0x00002b50      0x132 build/mother3/src/battle/code_0805D74C.o
+ .debug_abbrev  0x00002c82      0x2d8 build/mother3/src/singleton.o
+ .debug_abbrev  0x00002f5a      0x325 build/mother3/src/base.o
+ .debug_abbrev  0x0000327f      0x2bb build/mother3/src/allocator.o
+ .debug_abbrev  0x0000353a      0x398 build/mother3/src/battle/irc.o
+ .debug_abbrev  0x000038d2      0x29d build/mother3/src/battle/clock.o
+ .debug_abbrev  0x00003b6f      0x321 build/mother3/src/battle/fader.o
+ .debug_abbrev  0x00003e90      0x132 build/mother3/src/battle/gengine.o
+ .debug_abbrev  0x00003fc2      0x132 build/mother3/src/battle/bgengine.o
+ .debug_abbrev  0x000040f4      0x132 build/mother3/src/battle/objengine.o
+ .debug_abbrev  0x00004226      0x132 build/mother3/src/battle/objchrpool.o
+ .debug_abbrev  0x00004358      0x132 build/mother3/src/battle/objpltpool.o
+ .debug_abbrev  0x0000448a      0x399 build/mother3/src/battle/keypad.o
+ .debug_abbrev  0x00004823      0x132 build/mother3/src/battle/fntsystem.o
+ .debug_abbrev  0x00004955      0x132 build/mother3/src/battle/rassystem.o
+ .debug_abbrev  0x00004a87      0x132 build/mother3/src/battle/efcsystem.o
+ .debug_abbrev  0x00004bb9      0x132 build/mother3/src/battle/sndsystem.o
+ .debug_abbrev  0x00004ceb      0x132 build/mother3/src/battle/keyfocusmanager.o
+ .debug_abbrev  0x00004e1d      0x622 build/mother3/src/battle/battleData.o
+ .debug_abbrev  0x0000543f      0x132 build/mother3/src/battle/rhythm.o
+ .debug_abbrev  0x00005571      0x5d9 build/mother3/src/battle/unit.o
+ .debug_abbrev  0x00005b4a      0x47b build/mother3/src/battle/unitTarget.o
+ .debug_abbrev  0x00005fc5      0x132 build/mother3/src/battle/rom2.o
+ .debug_abbrev  0x000060f7      0x5a5 build/mother3/src/battle/action.o
+ .debug_abbrev  0x0000669c      0x3ed build/mother3/src/battle/player.o
+ .debug_abbrev  0x00006a89      0x132 build/mother3/src/battle/playerskill.o
+ .debug_abbrev  0x00006bbb      0x4cc build/mother3/src/battle/guestSkill.o
+ .debug_abbrev  0x00007087      0x5f2 build/mother3/src/battle/monster.o
+ .debug_abbrev  0x00007679      0x132 build/mother3/src/battle/monsterskill.o
+ .debug_abbrev  0x000077ab      0x132 build/mother3/src/battle/psi.o
+ .debug_abbrev  0x000078dd      0x145 build/mother3/src/battle/rom2d.o
+ .debug_abbrev  0x00007a22      0x3a4 build/mother3/src/battle/archive.o
+ .debug_abbrev  0x00007dc6      0x132 build/mother3/src/battle/rom2e.o
+ .debug_abbrev  0x00007ef8      0x28b build/mother3/src/m4a.o
+ .debug_abbrev  0x00008183      0x31e build/mother3/src/rom3.o
+ .debug_abbrev  0x000084a1      0x4bf build/mother3/asm/monsterImplTmp.o
+ .debug_abbrev  0x00008960      0x56b build/mother3/src/battle/monsterImpl.o
+ .debug_abbrev  0x00008ecb      0x5ea build/mother3/src/battle/monsterImpl2.o
+ .debug_abbrev  0x000094b5      0x59d build/mother3/src/battle/goods2.o
+ .debug_abbrev  0x00009a52      0x574 build/mother3/src/battle/goodsImpl.o
+ .debug_abbrev  0x00009fc6      0x2ae build/mother3/src/inst.o
+ .debug_abbrev  0x0000a274      0x405 build/mother3/src/data/playerSkillData.o
+ .debug_abbrev  0x0000a679      0x3ed build/mother3/src/data/guestSkillData.o
+ .debug_abbrev  0x0000aa66      0x347 build/mother3/src/data/monsterData.o
+ .debug_abbrev  0x0000adad      0x3ed build/mother3/src/data/monsterSkillData.o
+ .debug_abbrev  0x0000b19a      0x119 build/mother3/src/unknown_asm.o
 
-.debug_line     0x00000000    0x16b0a
+.debug_line     0x00000000    0x1f18d
  *(.debug_line)
  .debug_line    0x00000000      0xee9 build/mother3/src/main.o
- .debug_line    0x00000ee9     0x2e8a build/mother3/src/overworld/script.o
- .debug_line    0x00003d73      0x912 build/mother3/src/common.o
- .debug_line    0x00004685      0x54c build/mother3/src/battle/system.o
- .debug_line    0x00004bd1      0x1ed build/mother3/src/battle_misc.o
- .debug_line    0x00004dbe      0xf95 build/mother3/src/battle.o
- .debug_line    0x00005d53      0x74f build/mother3/src/battle/guest.o
- .debug_line    0x000064a2      0x306 build/mother3/src/battle/guestFactory.o
- .debug_line    0x000067a8      0x6ca build/mother3/src/battle/goods.o
- .debug_line    0x00006e72      0x282 build/mother3/src/singleton.o
- .debug_line    0x000070f4      0x3be build/mother3/src/base.o
- .debug_line    0x000074b2      0x43e build/mother3/src/allocator.o
- .debug_line    0x000078f0      0x73f build/mother3/src/battle/irc.o
- .debug_line    0x0000802f       0x1d build/mother3/src/battle/clock.o
- .debug_line    0x0000804c      0x46a build/mother3/src/battle/fader.o
- .debug_line    0x000084b6      0x2e1 build/mother3/src/gengine.o
- .debug_line    0x00008797      0xf28 build/mother3/src/battle/keypad.o
- .debug_line    0x000096bf      0x4cb build/mother3/src/fntsystem.o
- .debug_line    0x00009b8a      0x243 build/mother3/src/rassystem.o
- .debug_line    0x00009dcd      0x32b build/mother3/src/efcsystem.o
- .debug_line    0x0000a0f8      0x1bb build/mother3/src/sndsystem.o
- .debug_line    0x0000a2b3      0xb1d build/mother3/src/battle/battleData.o
- .debug_line    0x0000add0      0x2d8 build/mother3/src/rhythm.o
- .debug_line    0x0000b0a8     0x150d build/mother3/src/battle/unit.o
- .debug_line    0x0000c5b5     0x1004 build/mother3/src/battle/unitTarget.o
- .debug_line    0x0000d5b9     0x163e build/mother3/src/battle/action.o
- .debug_line    0x0000ebf7      0x25a build/mother3/src/battle/player.o
- .debug_line    0x0000ee51      0x5cc build/mother3/src/battle/guestSkill.o
- .debug_line    0x0000f41d      0xc1a build/mother3/src/battle/monster.o
- .debug_line    0x00010037      0x395 build/mother3/src/psi.o
- .debug_line    0x000103cc      0x46f build/mother3/src/battle/archive.o
- .debug_line    0x0001083b     0x1d34 build/mother3/src/m4a.o
- .debug_line    0x0001256f      0x1e0 build/mother3/src/rom3.o
- .debug_line    0x0001274f      0x673 build/mother3/asm/monsterImplTmp.o
- .debug_line    0x00012dc2       0x1d build/mother3/src/battle/monsterImpl.o
- .debug_line    0x00012ddf     0x1595 build/mother3/src/battle/monsterImpl2.o
- .debug_line    0x00014374      0x9bf build/mother3/src/battle/goods2.o
- .debug_line    0x00014d33     0x1d46 build/mother3/src/battle/goodsImpl.o
- .debug_line    0x00016a79       0x1d build/mother3/src/inst.o
- .debug_line    0x00016a96       0x1d build/mother3/src/data/playerSkillData.o
- .debug_line    0x00016ab3       0x1d build/mother3/src/data/guestSkillData.o
- .debug_line    0x00016ad0       0x1d build/mother3/src/data/monsterData.o
- .debug_line    0x00016aed       0x1d build/mother3/src/data/monsterSkillData.o
+ .debug_line    0x00000ee9     0x166d build/mother3/src/rom.o
+ .debug_line    0x00002556     0x314a build/mother3/src/overworld/script.o
+ .debug_line    0x000056a0     0x157f build/mother3/src/code_08021920.o
+ .debug_line    0x00006c1f     0x1c4f build/mother3/src/code_0803D59C.o
+ .debug_line    0x0000886e      0x912 build/mother3/src/common.o
+ .debug_line    0x00009180      0x54c build/mother3/src/battle/system.o
+ .debug_line    0x000096cc      0x1f4 build/mother3/src/battle/battle_misc.o
+ .debug_line    0x000098c0     0x12cc build/mother3/src/battle/battle.o
+ .debug_line    0x0000ab8c      0x74f build/mother3/src/battle/guest.o
+ .debug_line    0x0000b2db      0x306 build/mother3/src/battle/guestFactory.o
+ .debug_line    0x0000b5e1      0x892 build/mother3/src/battle/goods.o
+ .debug_line    0x0000be73      0x327 build/mother3/src/battle/sndmon.o
+ .debug_line    0x0000c19a      0x34e build/mother3/src/battle/code_0805D74C.o
+ .debug_line    0x0000c4e8      0x282 build/mother3/src/singleton.o
+ .debug_line    0x0000c76a      0x3be build/mother3/src/base.o
+ .debug_line    0x0000cb28      0x43e build/mother3/src/allocator.o
+ .debug_line    0x0000cf66      0x73f build/mother3/src/battle/irc.o
+ .debug_line    0x0000d6a5       0x1d build/mother3/src/battle/clock.o
+ .debug_line    0x0000d6c2      0x46a build/mother3/src/battle/fader.o
+ .debug_line    0x0000db2c      0x2e8 build/mother3/src/battle/gengine.o
+ .debug_line    0x0000de14      0x2b1 build/mother3/src/battle/bgengine.o
+ .debug_line    0x0000e0c5      0x212 build/mother3/src/battle/objengine.o
+ .debug_line    0x0000e2d7      0x1ab build/mother3/src/battle/objchrpool.o
+ .debug_line    0x0000e482      0x1b3 build/mother3/src/battle/objpltpool.o
+ .debug_line    0x0000e635     0x10ac build/mother3/src/battle/keypad.o
+ .debug_line    0x0000f6e1      0x4d2 build/mother3/src/battle/fntsystem.o
+ .debug_line    0x0000fbb3      0x24a build/mother3/src/battle/rassystem.o
+ .debug_line    0x0000fdfd      0x332 build/mother3/src/battle/efcsystem.o
+ .debug_line    0x0001012f      0x1c2 build/mother3/src/battle/sndsystem.o
+ .debug_line    0x000102f1      0x638 build/mother3/src/battle/keyfocusmanager.o
+ .debug_line    0x00010929      0xb1d build/mother3/src/battle/battleData.o
+ .debug_line    0x00011446      0x2df build/mother3/src/battle/rhythm.o
+ .debug_line    0x00011725     0x150d build/mother3/src/battle/unit.o
+ .debug_line    0x00012c32     0x1004 build/mother3/src/battle/unitTarget.o
+ .debug_line    0x00013c36      0x265 build/mother3/src/battle/rom2.o
+ .debug_line    0x00013e9b     0x163e build/mother3/src/battle/action.o
+ .debug_line    0x000154d9      0x4aa build/mother3/src/battle/player.o
+ .debug_line    0x00015983      0x5ec build/mother3/src/battle/playerskill.o
+ .debug_line    0x00015f6f      0x5cc build/mother3/src/battle/guestSkill.o
+ .debug_line    0x0001653b      0xc1a build/mother3/src/battle/monster.o
+ .debug_line    0x00017155      0x385 build/mother3/src/battle/monsterskill.o
+ .debug_line    0x000174da      0x39c build/mother3/src/battle/psi.o
+ .debug_line    0x00017876      0x9f6 build/mother3/src/battle/rom2d.o
+ .debug_line    0x0001826c      0x46f build/mother3/src/battle/archive.o
+ .debug_line    0x000186db      0x7c6 build/mother3/src/battle/rom2e.o
+ .debug_line    0x00018ea1     0x1d34 build/mother3/src/m4a.o
+ .debug_line    0x0001abd5      0x1e0 build/mother3/src/rom3.o
+ .debug_line    0x0001adb5      0x673 build/mother3/asm/monsterImplTmp.o
+ .debug_line    0x0001b428       0x1d build/mother3/src/battle/monsterImpl.o
+ .debug_line    0x0001b445     0x1595 build/mother3/src/battle/monsterImpl2.o
+ .debug_line    0x0001c9da      0x9bf build/mother3/src/battle/goods2.o
+ .debug_line    0x0001d399     0x1d46 build/mother3/src/battle/goodsImpl.o
+ .debug_line    0x0001f0df       0x1d build/mother3/src/inst.o
+ .debug_line    0x0001f0fc       0x1d build/mother3/src/data/playerSkillData.o
+ .debug_line    0x0001f119       0x1d build/mother3/src/data/guestSkillData.o
+ .debug_line    0x0001f136       0x1d build/mother3/src/data/monsterData.o
+ .debug_line    0x0001f153       0x1d build/mother3/src/data/monsterSkillData.o
+ .debug_line    0x0001f170       0x1d build/mother3/src/unknown_asm.o
 
 .debug_frame
  *(.debug_frame)
@@ -18754,24 +18839,26 @@ rom             0x08000000  0x2000000
  *(*)
 LOAD build/mother3/src/allocator.o
 LOAD build/mother3/src/base.o
-LOAD build/mother3/src/battle.o
-LOAD build/mother3/src/battle_misc.o
-LOAD build/mother3/src/efcsystem.o
-LOAD build/mother3/src/fntsystem.o
-LOAD build/mother3/src/gengine.o
+LOAD build/mother3/src/code_08021920.o
+LOAD build/mother3/src/code_0803D59C.o
 LOAD build/mother3/src/inst.o
 LOAD build/mother3/src/main.o
-LOAD build/mother3/src/psi.o
-LOAD build/mother3/src/rassystem.o
-LOAD build/mother3/src/rhythm.o
 LOAD build/mother3/src/rom3.o
+LOAD build/mother3/src/rom.o
 LOAD build/mother3/src/singleton.o
-LOAD build/mother3/src/sndsystem.o
+LOAD build/mother3/src/unknown_asm.o
 LOAD build/mother3/src/battle/action.o
 LOAD build/mother3/src/battle/archive.o
+LOAD build/mother3/src/battle/battle.o
 LOAD build/mother3/src/battle/battleData.o
+LOAD build/mother3/src/battle/battle_misc.o
+LOAD build/mother3/src/battle/bgengine.o
 LOAD build/mother3/src/battle/clock.o
+LOAD build/mother3/src/battle/code_0805D74C.o
+LOAD build/mother3/src/battle/efcsystem.o
 LOAD build/mother3/src/battle/fader.o
+LOAD build/mother3/src/battle/fntsystem.o
+LOAD build/mother3/src/battle/gengine.o
 LOAD build/mother3/src/battle/goods2.o
 LOAD build/mother3/src/battle/goods.o
 LOAD build/mother3/src/battle/goodsImpl.o
@@ -18779,11 +18866,25 @@ LOAD build/mother3/src/battle/guest.o
 LOAD build/mother3/src/battle/guestFactory.o
 LOAD build/mother3/src/battle/guestSkill.o
 LOAD build/mother3/src/battle/irc.o
+LOAD build/mother3/src/battle/keyfocusmanager.o
 LOAD build/mother3/src/battle/keypad.o
 LOAD build/mother3/src/battle/monster.o
 LOAD build/mother3/src/battle/monsterImpl2.o
 LOAD build/mother3/src/battle/monsterImpl.o
+LOAD build/mother3/src/battle/monsterskill.o
+LOAD build/mother3/src/battle/objchrpool.o
+LOAD build/mother3/src/battle/objengine.o
+LOAD build/mother3/src/battle/objpltpool.o
 LOAD build/mother3/src/battle/player.o
+LOAD build/mother3/src/battle/playerskill.o
+LOAD build/mother3/src/battle/psi.o
+LOAD build/mother3/src/battle/rassystem.o
+LOAD build/mother3/src/battle/rhythm.o
+LOAD build/mother3/src/battle/rom2.o
+LOAD build/mother3/src/battle/rom2d.o
+LOAD build/mother3/src/battle/rom2e.o
+LOAD build/mother3/src/battle/sndmon.o
+LOAD build/mother3/src/battle/sndsystem.o
 LOAD build/mother3/src/battle/system.o
 LOAD build/mother3/src/battle/unit.o
 LOAD build/mother3/src/battle/unitTarget.o
@@ -18792,38 +18893,19 @@ LOAD build/mother3/src/data/monsterData.o
 LOAD build/mother3/src/data/monsterSkillData.o
 LOAD build/mother3/src/data/playerSkillData.o
 LOAD build/mother3/src/overworld/script.o
-LOAD build/mother3/asm/battle.o
-LOAD build/mother3/asm/bgengine.o
-LOAD build/mother3/asm/code_08021920.o
-LOAD build/mother3/asm/code_0805D74C.o
+LOAD build/mother3/asm/code_0803D0E4.o
 LOAD build/mother3/asm/crt0.o
 LOAD build/mother3/asm/gcc_fcvt2.o
 LOAD build/mother3/asm/gcc_fcvt.o
-LOAD build/mother3/asm/goods.o
-LOAD build/mother3/asm/guest.o
-LOAD build/mother3/asm/keyfocusmanager.o
-LOAD build/mother3/asm/keypad.o
 LOAD build/mother3/asm/libc.o
 LOAD build/mother3/asm/m4a_1.o
 LOAD build/mother3/asm/monsterImplTmp.o
-LOAD build/mother3/asm/monsterskill.o
-LOAD build/mother3/asm/objchrpool.o
-LOAD build/mother3/asm/objengine.o
-LOAD build/mother3/asm/objpltpool.o
-LOAD build/mother3/asm/player.o
-LOAD build/mother3/asm/playerskill.o
-LOAD build/mother3/asm/rom2d.o
-LOAD build/mother3/asm/rom2e.o
-LOAD build/mother3/asm/rom2.o
 LOAD build/mother3/asm/rom3aa.o
 LOAD build/mother3/asm/rom3ab.o
 LOAD build/mother3/asm/rom3a.o
 LOAD build/mother3/asm/rom3b.o
 LOAD build/mother3/asm/rom3.o
 LOAD build/mother3/asm/rom4.o
-LOAD build/mother3/asm/rom.o
-LOAD build/mother3/asm/script.o
-LOAD build/mother3/asm/sndmon.o
 LOAD build/mother3/sound/MPlayDef.o
 LOAD build/mother3/data/data1b.o
 LOAD build/mother3/data/data1.o

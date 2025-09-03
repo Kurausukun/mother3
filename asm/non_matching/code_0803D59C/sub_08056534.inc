@@ -1,0 +1,23 @@
+	.syntax unified
+	push {r4, lr}
+	adds r3, r0, #0
+	movs r2, #0
+	ldr r4, _08056558
+_0805653C:
+	lsls r1, r2, #1
+	adds r1, r1, r4
+	adds r0, r3, r2
+	ldrb r0, [r0]
+	lsls r0, r0, #5
+	strh r0, [r1]
+	adds r0, r2, #1
+	lsls r0, r0, #0x10
+	lsrs r2, r0, #0x10
+	cmp r2, #0x1f
+	bls _0805653C
+	pop {r4}
+	pop {r0}
+	bx r0
+	.align 2, 0
+_08056558: .4byte gUnknown_020292AC
+	.syntax divided
