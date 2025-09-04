@@ -5,12 +5,25 @@
 #include "global.h"
 
 typedef struct Unknown_02016078 {
-    u8 _pad_0[0x2700];             /* 0x0000 */
-    u8 _2700[0x20][0x20];          // TODO: determine size
-    u8 pad_2B00[0x2C00 - 0x2B00];  /* 0x2B00 */
-    u8 _pad_2C00[0x2C50 - 0x2C00]; /* 0x2C00 */
-    u8 _2C50[0x10];                /* 0x2C50 */
-    u8 _2C60[0x400];               /* 0x2C60 second palette? */
+    u8 _0[0x800];                 /* 0x0000 */
+    u8 _800[0x800];               /* 0x0800 */
+    u8 _1000[0x800];              /* 0x1000 */
+    u8 _1800[0x800];              /* 0x1800 */
+    u8 pad_2000[0x2700 - 0x2000]; /* 0x2000 */
+    vu16 _2700[0x20][0x10];       // TODO: determine size
+    u8 pad_2C00[0x2C40 - 0x2B00]; /* 0x2C00 */
+    vu16 _2C40;                   /* 0x2C40 */
+    vu16 _2C42;                   /* 0x2C42 */
+    vu16 _2C44;                   /* 0x2C44 */
+    vu16 _2C46;                   /* 0x2C46 */
+    vu16 _2C48;                   /* 0x2C48 */
+    vu16 _2C4A;                   /* 0x2C4A */
+    vu8 r;                        /* 0x2C4C */
+    vu8 g;                        /* 0x2C4D */
+    vu8 b;                        /* 0x2C4E */
+    u8 pad_2C4F[0x2C50 - 0x2C4F]; /* 0x2C4F */
+    u8 _2C50[0x10];               /* 0x2C50 */
+    u8 _2C60[0x400];              /* 0x2C60 second palette? */
 } Unknown_02016078;
 
 typedef struct Unk_02016028 {
@@ -66,6 +79,8 @@ extern u16 gUnknown_03004B0A;
 
 extern "C" void sub_0803D474();
 extern "C" void sub_08005C38();
+extern "C" void sub_080019DC(void* dest, u32 size);
+extern "C" void sub_08090F74(const void* src, void* dest, u32 control);
 
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080012BC.inc", void sub_080012BC());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001378.inc", void sub_08001378());
@@ -99,13 +114,28 @@ extern "C" void sub_080013D0(SomeBlend* arg0) {
     }
 }
 
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001454.inc", void sub_08001454());
+extern "C" void sub_08001454(Unknown_02016078* arg0) {
+    arg0->_2C40 = arg0->_2C42 = arg0->_2C44 = arg0->_2C46 = 0;
+
+    sub_080019DC((void*)arg0->_0, 0x800);
+    sub_080019DC((void*)arg0->_800, 0x800);
+    sub_080019DC((void*)arg0->_1000, 0x800);
+    sub_080019DC((void*)arg0->_1800, 0x800);
+    sub_080019DC((void*)arg0->_2700, 0x400);
+
+    arg0->_2C48 = 0;
+    arg0->_2C4A = 0;
+    arg0->r = 0;
+    arg0->g = 0;
+    arg0->b = 0;
+
+    arg0->_2700[0][0] = RGB(arg0->r, arg0->g, arg0->b);
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001530.inc", void sub_08001530());
 
-extern "C" void sub_08090F74(const void* src, void* dest, u32 control);
-
 extern "C" void sub_0800160C(Unknown_02016078* dest, void* src, u16 index, u16 size) {
-    sub_08090F74(src, dest->_2700[index], size / 4);
+    sub_08090F74(src, (void*)dest->_2700[index], size / 4);
 }
 
 extern "C" void sub_08001630(UnkStruct* arg0, s16 arg1) {
