@@ -210,7 +210,19 @@ extern "C" void sub_080019A4(Unknown_02016078* arg0) {
     }
 }
 
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_080019DC.inc", void sub_080019DC());
+extern "C" void sub_080019DC(void* dest, u32 size) {
+    s32 tmp = 0;
+    vu32* dmaRegs = (vu32*)REG_ADDR_DMA3;
+    dmaRegs[0] = (uintptr_t)&tmp;
+    dmaRegs[1] = (uintptr_t)dest;
+
+    size /= 4;
+    dmaRegs[2] = (size | ((DMA_ENABLE | DMA_START_NOW | DMA_32BIT | DMA_SRC_FIXED | DMA_DEST_INC) << 16));
+    dmaRegs[2];
+    // Wait for DMA to complete
+    while (dmaRegs[2] & (DMA_ENABLE << 16)) {
+    }
+}
 
 extern "C" void sub_08001A14(void* src, void* dest, u32 size) {
     vu32* dmaRegs = (vu32*)REG_ADDR_DMA3;
