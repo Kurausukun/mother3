@@ -27,7 +27,7 @@ extern "C" void sub_0806CBE0();
 extern "C" void sub_0806E488();                      
 extern "C" void sub_0806FD80();            
 
-extern u8 gIntrHandlers;
+extern IrqTable gIntrHandlers;
 
 extern ClockData gUnknown_080F24D8;
 
@@ -92,7 +92,7 @@ System::System() {
     sub_0805D210();
 
     IrcManager::makeInstance();
-    IrcManager::get()->init((IrqTable*)&gIntrHandlers);
+    IrcManager::get()->init(&gIntrHandlers);
 
     ClockManager::makeInstance();
 

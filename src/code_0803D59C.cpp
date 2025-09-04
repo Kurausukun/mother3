@@ -1,5 +1,35 @@
 // Auto-generated source file
+#include "battle/irc.h"
+#include "gba/gba.h"
 #include "global.h"
+#include "structs.h"
+
+typedef struct Struct_02015E00 {
+    u8 _0;            /* 0x00 */
+    u8 _1;            /* 0x01 */
+    s16 _2;           /* 0x02 */
+    s16 _4;           /* 0x04 */
+    u8 _6[0x8 - 0x6]; /* 0x06 */
+    u32 _8;           /* 0x08 */
+    u8 _c_0 : 1;      /* 0x0c */
+    u8 _c_1 : 1;
+} Struct_02015E00;
+
+extern Struct_02015E00 gUnknown_02015E00;
+
+extern IrqTable gIntrHandlers;
+extern const IrqTable gUnknown_080C7668;
+extern const IrqTable gUnknown_080C7628;
+extern const IrqTable gUnknown_080C7DB0;
+extern const IrqTable gUnknown_080C5FA0;
+extern u16 gUnknown_03004B00;
+
+extern "C" void sub_0803E3D8();
+extern "C" void sub_0805AFCC();
+extern "C" void sub_080018F4();
+extern "C" void sub_0800160C(Unknown_02016078* dest, void* src, int index, u32 size);
+extern "C" void sub_08001A14(void* src, void* dest, u32 size);
+extern "C" void sub_08001A38(void* dest, u32 size, int value);
 
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0803D59C.inc", void sub_0803D59C());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0803D5EC.inc", void sub_0803D5EC());
@@ -28,7 +58,16 @@ extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0803E2B0.inc", void sub_
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0803E2E4.inc", void sub_0803E2E4());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/nullsub_75.inc", void nullsub_75());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/nullsub_7.inc", void nullsub_7());
-extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0803E304.inc", void sub_0803E304());
+
+extern "C" void sub_0803E304(void) {
+    REG_IME = 0;
+    REG_IE &= ~(INTR_FLAG_VBLANK | INTR_FLAG_HBLANK);
+    REG_DISPSTAT &= ~(DISPSTAT_VBLANK_INTR | DISPSTAT_HBLANK_INTR);
+    memcpy(&gIntrHandlers, &gUnknown_080C5FA0, sizeof(gUnknown_080C5FA0));
+    gUnknown_03004B00 = 0;
+    REG_IME = 1;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0803E358.inc", void sub_0803E358());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0803E3B4.inc", void sub_0803E3B4());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0803E3C0.inc", void sub_0803E3C0());
@@ -40,7 +79,17 @@ extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0803E408.inc", void sub_
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0803E46C.inc", void sub_0803E46C());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/nullsub_78.inc", void nullsub_78());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/nullsub_79.inc", void nullsub_79());
-extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0803E4B8.inc", void sub_0803E4B8());
+
+extern "C" void sub_0803E4B8(void) {
+    REG_IME = 0;
+    REG_IE |= INTR_FLAG_VCOUNT;
+    REG_DISPSTAT |= DISPSTAT_VCOUNT_INTR;
+    REG_DISPSTAT &= 0xFF;
+    REG_DISPSTAT |= 0xA000;
+    gIntrHandlers.vcount = sub_0803E3D8;
+    REG_IME = 1;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0803E50C.inc", void sub_0803E50C());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0803E578.inc", void sub_0803E578());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0803E6EC.inc", void sub_0803E6EC());
@@ -450,7 +499,22 @@ extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08050DE0.inc", void sub_
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08050E20.inc", void sub_08050E20());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08050E64.inc", void sub_08050E64());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08050E94.inc", void sub_08050E94());
-extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08050EEC.inc", void sub_08050EEC());
+
+extern "C" void sub_08050EEC() {
+    vu32* dmaRegs = (vu32*)REG_ADDR_DMA3;
+    dmaRegs[0] = (uintptr_t)gSomeBlend._C620;
+    dmaRegs[1] = (uintptr_t)OAM;
+
+    u32 size = OAM_SIZE / 2;
+    u32 flags = (DMA_ENABLE | DMA_START_NOW | DMA_16BIT | DMA_SRC_INC | DMA_DEST_INC) << 16;
+    dmaRegs[2] = flags | size;
+
+    dmaRegs[2];
+
+    // Wait for DMA to complete
+    while (dmaRegs[2] & (DMA_ENABLE << 16)) {
+    }
+}
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08050F2C.inc", void sub_08050F2C());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08050F88.inc", void sub_08050F88());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08050FCC.inc", void sub_08050FCC());
@@ -644,7 +708,16 @@ extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805689C.inc", void sub_
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_080568D0.inc", void sub_080568D0());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_080568E0.inc", void sub_080568E0());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/nullsub_08.inc", void nullsub_08());
-extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_080568F4.inc", void sub_080568F4());
+
+extern "C" void sub_080568F4(void) {
+    REG_IME = 0;
+    REG_IE &= ~(INTR_FLAG_VBLANK | INTR_FLAG_HBLANK);
+    REG_DISPSTAT &= ~(DISPSTAT_VBLANK_INTR | DISPSTAT_HBLANK_INTR);
+    memcpy(&gIntrHandlers, &gUnknown_080C7628, sizeof(gUnknown_080C7628));
+    gUnknown_03004B00 = 0;
+    REG_IME = 1;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08056948.inc", void sub_08056948());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_080569A8.inc", void sub_080569A8());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/nullsub_086.inc", void nullsub_086());
@@ -733,7 +806,16 @@ extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_080585F8.inc", void sub_
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08058614.inc", void sub_08058614());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08058630.inc", void sub_08058630());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/nullsub_11.inc", void nullsub_11());
-extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08058644.inc", void sub_08058644());
+
+extern "C" void sub_08058644(void) {
+    REG_IME = 0;
+    REG_IE &= ~(INTR_FLAG_VBLANK | INTR_FLAG_HBLANK);
+    REG_DISPSTAT &= ~(DISPSTAT_VBLANK_INTR | DISPSTAT_HBLANK_INTR);
+    memcpy(&gIntrHandlers, &gUnknown_080C7668, sizeof(gUnknown_080C7668));
+    gUnknown_03004B00 = 0;
+    REG_IME = 1;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08058698.inc", void sub_08058698());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_080586C8.inc", void sub_080586C8());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/nullsub_91.inc", void nullsub_91());
@@ -806,14 +888,49 @@ extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805A2F4.inc", void sub_
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805A310.inc", void sub_0805A310());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805A378.inc", void sub_0805A378());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805A408.inc", void sub_0805A408());
-extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805A418.inc", void sub_0805A418());
+
+extern "C" void sub_0805A418(void) {
+    REG_IME = 0;
+    REG_IE &= ~(INTR_FLAG_VBLANK | INTR_FLAG_HBLANK);
+    REG_DISPSTAT &= ~(DISPSTAT_VBLANK_INTR | DISPSTAT_HBLANK_INTR);
+    memcpy(&gIntrHandlers, &gUnknown_080C7DB0, sizeof(gUnknown_080C7DB0));
+    REG_IME = 1;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805A464.inc", void sub_0805A464());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/nullsub_93.inc", void nullsub_93());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805A488.inc", void sub_0805A488());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805A4BC.inc", void sub_0805A4BC());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805A508.inc", void sub_0805A508());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805A520.inc", void sub_0805A520());
-extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805A568.inc", void sub_0805A568());
+
+// Some sort of "archive" with sprites, palettes, etc.
+extern const u8 gUnknown_09C8DE98;
+
+extern "C" void* sub_0800289C(const void* src, int index);
+extern "C" void sub_08090F88(void* src, void* dest);  // lz-decompress
+
+extern "C" void sub_0805A568(void) {
+    sub_08090F88(sub_0800289C(&gUnknown_09C8DE98, 0), (void*)0x06008000);
+    sub_08090F88(sub_0800289C(&gUnknown_09C8DE98, 2), (void*)0x06000000);
+    sub_08090F88(sub_0800289C(&gUnknown_09C8DE98, 3), (void*)0x06010000);
+    gSomeBlend._2CB0 = sub_0800289C(&gUnknown_09C8DE98, 4);
+
+    void* temp_r0_2 = sub_0800289C(&gUnknown_09C8DE98, 1);
+    sub_0800160C(&gSomeBlend._50, temp_r0_2, 0, 0x20);
+    sub_0800160C(&gSomeBlend._50, temp_r0_2, 0x10, 0x20);
+    sub_08001A14((void*)&gSomeBlend._50._2700, &gSomeBlend._2CB4, 0x400);
+    sub_08001A38((void*)&gSomeBlend._50._2700, 0x400, -1);
+    gSomeBlend.dispcnt = 0x140U;
+    gSomeBlend.bgcnt[0] = 8;
+    gSomeBlend.bgcnt[1] = 0;
+    gSomeBlend.bgcnt[2] = 0;
+    gSomeBlend.bgcnt[3] = 0;
+    gSomeBlend.bldcnt = 0;
+    gSomeBlend.bldalpha = 0;
+    gSomeBlend.bldy = 0;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805A638.inc", void sub_0805A638());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805A778.inc", void sub_0805A778());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805A800.inc", void sub_0805A800());
@@ -823,17 +940,149 @@ extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805A9BC.inc", void sub_
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805AA90.inc", void sub_0805AA90());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805AB48.inc", void sub_0805AB48());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805AC30.inc", void sub_0805AC30());
-extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805ACF4.inc", void sub_0805ACF4());
-extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805AD24.inc", void sub_0805AD24());
-extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805AD48.inc", void sub_0805AD48());
-extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805AD54.inc", void sub_0805AD54());
-extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805ADBC.inc", void sub_0805ADBC());
-extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805AE4C.inc", void sub_0805AE4C());
-extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805AE64.inc", void sub_0805AE64());
-extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805AE94.inc", void sub_0805AE94());
-extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805AEE0.inc", void sub_0805AEE0());
-extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805AEEC.inc", void sub_0805AEEC());
-extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805AF34.inc", void sub_0805AF34());
+
+extern const u8 gGBPlayerLogoPalette[0x200];
+extern const u8 gGBPlayerLogoGfx[0x4000];
+extern const u8 gGBPlayerLogoLayout[0x500];
+extern u8 gUnknown_020050B0;
+extern s8 gUnknown_020051E0;
+
+extern "C" void sub_0805AEEC();
+extern "C" void setup_vectors();
+extern "C" void sub_0805ADBC();
+extern "C" void sub_0805AD24();
+extern "C" void sub_0805AD48();
+extern "C" void sub_0805AF34();
+extern "C" void sub_0805AD54();
+extern "C" void sub_08001960();
+extern "C" void sub_0805AE64();
+extern "C" void sub_08001778(void* arg1, u16 arg2, u16 arg3, u16 arg4);
+extern "C" void sub_080013D0(void*);
+extern "C" void sub_08001454(void*);
+extern "C" void sub_08001630(Unknown_02018CC8*, s16);
+extern "C" void sub_080019A4(void*);
+
+extern "C" void sub_0805AE94(struct_02016028*, void*);
+extern "C" void sub_0805AEE0(void* arg1, Unknown_02016078* arg2);
+
+// gb player check entry?
+extern "C" void sub_0805ACF4(void) {
+    sub_0805AEEC();
+    switch (gUnknown_020050B0) {
+    case 0:
+        setup_vectors();
+        sub_0805ADBC();
+        sub_0805AD24();
+        return;
+    case 1:
+        sub_0805AD48();
+        return;
+    }
+}
+
+// call gb player init
+extern "C" void sub_0805AD24() {
+    gUnknown_02015E00._0 = 0;
+    sub_0805AF34();
+    gUnknown_02015E00._c_1 = 1;
+    sub_0805AD54();
+}
+
+extern "C" void sub_0805AD48(void) {
+    gUnknown_02015E00._0 = 1;
+}
+
+extern "C" void sub_0805AD54(void) {
+    REG_IME = 0;
+    REG_IE |= INTR_FLAG_VBLANK;
+    REG_DISPSTAT |= DISPSTAT_VBLANK_INTR;
+    REG_IME = 1;
+
+    sub_0805AFCC();
+
+    REG_IME = 0;
+    REG_IE &= ~(INTR_FLAG_VBLANK | INTR_FLAG_HBLANK);
+    REG_DISPSTAT &= ~(DISPSTAT_VBLANK_INTR | DISPSTAT_HBLANK_INTR);
+    REG_IME = 1;
+    sub_080018F4();
+}
+
+extern "C" void sub_0805ADBC(void) {
+    REG_IME = 0;
+    REG_IE |= INTR_FLAG_VBLANK;
+    REG_DISPSTAT |= DISPSTAT_VBLANK_INTR;
+    REG_IME = 1;
+
+    gUnknown_02015E00._2 = 0x3F;
+
+    for (gUnknown_02015E00._4 = 0x1E; gUnknown_02015E00._4 != -1; gUnknown_02015E00._4--) {
+        sub_08001960();
+        sub_0805AE64();
+        sub_08001778(&gSomeBlend, gUnknown_02015E00._4, 0x1E, gUnknown_02015E00._2);
+    }
+
+    REG_IME = 0;
+    REG_IE &= ~(INTR_FLAG_VBLANK | INTR_FLAG_HBLANK);
+    REG_DISPSTAT &= ~(DISPSTAT_VBLANK_INTR | DISPSTAT_HBLANK_INTR);
+    REG_IME = 1;
+}
+
+extern "C" void sub_0805AE4C(s8 arg0) {
+    gUnknown_02015E00._c_0 = 1;
+    gUnknown_020051E0 = arg0;
+}
+
+extern "C" void sub_0805AE64(void) {
+    gUnknown_02015E00._8++;
+    sub_0805AE94(&gSomeBlend, &gSomeBlend._50);
+    sub_0805AEE0(&gSomeBlend, &gSomeBlend._50);
+}
+
+extern "C" void sub_0805AE94(struct_02016028* arg0, void*) {
+    if (gUnknown_02015E00._c_1 & 1) {
+        REG_DISPCNT = arg0->dispcnt;
+        REG_BG0CNT = arg0->bgcnt[0];
+        REG_BG1CNT = arg0->bgcnt[1];
+        REG_BG2CNT = arg0->bgcnt[2];
+        REG_BG3CNT = arg0->bgcnt[3];
+    }
+
+    REG_BLDCNT = arg0->bldcnt;
+    REG_BLDALPHA = arg0->bldalpha;
+    REG_BLDY = arg0->bldy;
+}
+
+extern "C" void sub_0805AEE0(void* arg1, Unknown_02016078* arg2) {
+    sub_080019A4(arg2);
+}
+
+extern "C" void sub_0805AEEC(void) {
+    gUnknown_02015E00._c_0 = 0;
+    gUnknown_02015E00._c_1 = 0;
+    gUnknown_02015E00._8 = 0;
+    sub_080013D0(&gSomeBlend);
+    sub_08001454(&gSomeBlend._50);
+    sub_08001630(&gSomeBlend._2CA0, 2);
+}
+
+// GB player logo init
+extern "C" void sub_0805AF34(void) {
+    sub_08001A14((void*)gGBPlayerLogoGfx, BG_CHAR_ADDR(2), 0x4000);
+    sub_08001A14((void*)gGBPlayerLogoLayout, BG_SCREEN_ADDR(0), 0x500);
+    sub_0800160C(&gSomeBlend._50, (void*)gGBPlayerLogoPalette, 0, 0x200);
+    sub_08001A14((void*)gSomeBlend._50._2700, (void*)&gSomeBlend._2CB0, 0x400);
+    sub_08001A38((void*)gSomeBlend._50._2700, 0x400, -1);
+
+    gSomeBlend.dispcnt = DISPCNT_BG0_ON;
+    gSomeBlend.bgcnt[0] = BGCNT_256COLOR | BGCNT_CHARBASE(2) | BGCNT_SCREENBASE(0);
+    gSomeBlend.bgcnt[1] = 0;
+    gSomeBlend.bgcnt[2] = 0;
+    gSomeBlend.bgcnt[3] = 0;
+    gSomeBlend.bldcnt = 0;
+    gSomeBlend.bldalpha = 0;
+    gSomeBlend.bldy = 0;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805AFCC.inc", void sub_0805AFCC());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805B0DC.inc", void sub_0805B0DC());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805B138.inc", void sub_0805B138());
@@ -841,6 +1090,9 @@ extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805B1F0.inc", void sub_
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805B2C4.inc", void sub_0805B2C4());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805B37C.inc", void sub_0805B37C());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805B464.inc", void sub_0805B464());
+
+// ----- end GB player -----
+
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805B528.inc", void sub_0805B528());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805B5F4.inc", void sub_0805B5F4());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805B640.inc", void sub_0805B640());

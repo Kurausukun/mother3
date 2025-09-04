@@ -1,13 +1,88 @@
 // Auto-generated source file
+#include "battle/irc.h"
+#include "gba/gba.h"
+#include "gba/macro.h"
 #include "global.h"
+#include "overworld/script.h"
+#include "structs.h"
+
+extern const IrqTable gUnknown_080C1A58;
+extern IrqTable gIntrHandlers;
+extern u8 gUnknown_03004B14;
+extern u16 gUnknown_03004B0A;
+
+extern "C" void sub_0803D474();
+extern "C" void sub_08005C38();
+extern "C" void sub_080019DC(void* dest, u32 size);
+extern "C" void sub_08090F74(const void* src, void* dest, u32 control);
 
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080012BC.inc", void sub_080012BC());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001378.inc", void sub_08001378());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_080013D0.inc", void sub_080013D0());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001454.inc", void sub_08001454());
+
+extern "C" void sub_080013D0(struct_02016028* arg0) {
+    arg0->dispcnt = 0;
+    arg0->_22 = 0;
+    arg0->_24 = 0;
+    arg0->_26 = 0;
+    arg0->_28 = 0;
+    arg0->_2A = 0;
+    arg0->_2C = 0;
+    arg0->_2E = 0;
+    arg0->_30 = 0x100;
+    arg0->_38 = 0x100;
+    arg0->_32 = 0;
+    arg0->_3A = 0;
+    arg0->_34 = 0;
+    arg0->_3C = 0;
+    arg0->_36 = 0x100;
+    arg0->_3E = 0x100;
+    arg0->_40 = 0;
+    arg0->_44 = 0;
+    arg0->_48 = 0;
+    arg0->_4C = 0;
+
+    for (u16 i = 0; i < 4; i++) {
+        arg0->bgcnt[i] = 0;
+        arg0->_12[i] = 0;
+        arg0->_1A[i] = 0;
+    }
+}
+
+extern "C" void sub_08001454(Unknown_02016078* arg0) {
+    arg0->_2C40 = arg0->_2C42 = arg0->_2C44 = arg0->_2C46 = 0;
+
+    sub_080019DC((void*)arg0->_0, 0x800);
+    sub_080019DC((void*)arg0->_800, 0x800);
+    sub_080019DC((void*)arg0->_1000, 0x800);
+    sub_080019DC((void*)arg0->_1800, 0x800);
+    sub_080019DC((void*)arg0->_2700, 0x400);
+
+    arg0->oam_counter = 0;
+    arg0->_2C4A = 0;
+    arg0->r = 0;
+    arg0->g = 0;
+    arg0->b = 0;
+
+    arg0->_2700[0][0] = RGB(arg0->r, arg0->g, arg0->b);
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001530.inc", void sub_08001530());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0800160C.inc", void sub_0800160C());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001630.inc", void sub_08001630());
+
+extern "C" void sub_0800160C(Unknown_02016078* dest, void* src, u16 index, u16 size) {
+    sub_08090F74(src, (void*)dest->_2700[index], size / 4);
+}
+
+extern "C" void sub_08001630(Unknown_02018CC8* arg0, s16 arg1) {
+    arg0->_E_0 = 0;
+    arg0->_0 = 0;
+    arg0->_2 = 0;
+    arg0->_4 = 0;
+    arg0->_6 = arg1;
+    arg0->_8 = 0;
+    arg0->_A = 0;
+    arg0->_C = 0;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0800164C.inc", void sub_0800164C());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080016E4.inc", void sub_080016E4());
 extern "C" ASM_FUNC("asm/non_matching/rom/DoReset.inc", void DoReset());
@@ -17,16 +92,106 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_080017AC.inc", void sub_080017AC()
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080017E0.inc", void sub_080017E0());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001814.inc", void sub_08001814());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0800186C.inc", void sub_0800186C());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_080018E4.inc", void sub_080018E4());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_080018F4.inc", void sub_080018F4());
+
+extern "C" void sub_080018E4(void) {
+    REG_DISPCNT = 0;
+    *(vu16*)PLTT = 0;
+}
+
+extern "C" void sub_080018F4(void) {
+    REG_DISPCNT = DISPCNT_FORCED_BLANK;
+    *(vu16*)PLTT = RGB_WHITE;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0800190C.inc", void sub_0800190C());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001930.inc", void sub_08001930());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001960.inc", void sub_08001960());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0800196C.inc", void sub_0800196C());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_080019A4.inc", void sub_080019A4());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_080019DC.inc", void sub_080019DC());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001A14.inc", void sub_08001A14());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001A38.inc", void sub_08001A38());
+
+extern "C" void sub_08001960(void) {
+    VBlankIntrWait();
+}
+
+// TODO: probably Unknown_02016078
+extern "C" void sub_0800196C(u8* src) {
+    vu32* dmaRegs = (vu32*)REG_ADDR_DMA3;
+    dmaRegs[0] = (uintptr_t)&src[0x2000];
+    dmaRegs[1] = (uintptr_t)OAM;
+
+    u32 size = OAM_SIZE / 2;
+    u32 flags = (DMA_ENABLE | DMA_START_NOW | DMA_16BIT | DMA_SRC_INC | DMA_DEST_INC) << 16;
+    dmaRegs[2] = flags | size;
+
+    dmaRegs[2];
+
+    // Wait for DMA to complete
+    while (dmaRegs[2] & (DMA_ENABLE << 16)) {
+    }
+}
+
+extern "C" void sub_080019A4(Unknown_02016078* arg0) {
+    vu32* dmaRegs = (vu32*)REG_ADDR_DMA3;
+    dmaRegs[0] = (uintptr_t)&arg0->_2700;
+    dmaRegs[1] = (uintptr_t)PLTT;
+
+    u32 size = PLTT_SIZE / 2;
+    u32 flags = (DMA_ENABLE | DMA_START_NOW | DMA_16BIT | DMA_SRC_INC | DMA_DEST_INC) << 16;
+    dmaRegs[2] = flags | size;
+
+    dmaRegs[2];
+
+    // Wait for DMA to complete
+    while (dmaRegs[2] & (DMA_ENABLE << 16)) {
+    }
+}
+
+extern "C" void sub_080019DC(void* dest, u32 size) {
+    s32 tmp = 0;
+    vu32* dmaRegs = (vu32*)REG_ADDR_DMA3;
+    dmaRegs[0] = (uintptr_t)&tmp;
+    dmaRegs[1] = (uintptr_t)dest;
+
+    size /= 4;
+    dmaRegs[2] =
+        (size | ((DMA_ENABLE | DMA_START_NOW | DMA_32BIT | DMA_SRC_FIXED | DMA_DEST_INC) << 16));
+    dmaRegs[2];
+    // Wait for DMA to complete
+    while (dmaRegs[2] & (DMA_ENABLE << 16)) {
+    }
+}
+
+extern "C" void sub_08001A14(void* src, void* dest, u32 size) {
+    vu32* dmaRegs = (vu32*)REG_ADDR_DMA3;
+    dmaRegs[0] = (uintptr_t)src;
+    dmaRegs[1] = (uintptr_t)dest;
+
+    size /= 2;
+    u32 flags = (DMA_ENABLE | DMA_START_NOW | DMA_16BIT | DMA_SRC_INC | DMA_DEST_INC) << 16;
+    dmaRegs[2] = flags | size;
+
+    dmaRegs[2];
+
+    // Wait for DMA to complete
+    while (dmaRegs[2] & (DMA_ENABLE << 16)) {
+    }
+}
+
+extern "C" void sub_08001A38(void* dest, u32 size, int value) {
+    s16 temp = value;
+
+    vu32* dmaRegs = (vu32*)REG_ADDR_DMA3;
+    dmaRegs[0] = (uintptr_t)&temp;
+    dmaRegs[1] = (uintptr_t)dest;
+
+    size /= 2;
+    u32 flags = (DMA_ENABLE | DMA_START_NOW | DMA_16BIT | DMA_SRC_FIXED | DMA_DEST_INC) << 16;
+    dmaRegs[2] = flags | size;
+
+    dmaRegs[2];
+
+    // Wait for DMA to complete
+    while (dmaRegs[2] & (DMA_ENABLE << 16)) {
+    }
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001A70.inc", void sub_08001A70());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001A94.inc", void sub_08001A94());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001AAC.inc", void sub_08001AAC());
@@ -180,7 +345,18 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_080052D0.inc", void sub_080052D0()
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080052E4.inc", void sub_080052E4());
 extern "C" ASM_FUNC("asm/non_matching/rom/nullsub_3.inc", void nullsub_3());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08005354.inc", void sub_08005354());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08005364.inc", void sub_08005364());
+
+extern "C" void sub_08005364() {
+    REG_IME = 0;
+    REG_IE &= ~3;
+    REG_DISPSTAT &= ~0x18;
+    memcpy(&gIntrHandlers, &gUnknown_080C1A58, sizeof(gUnknown_080C1A58));
+    sub_08001A14(&sub_0803D474, &gUnknown_03004B14, 0x100);
+    sub_08005C38();
+    gUnknown_03004B0A = 0;
+    REG_IME = 1;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080053D0.inc", void sub_080053D0());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0800545C.inc", void sub_0800545C());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080054A0.inc", void sub_080054A0());
@@ -193,12 +369,50 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_08005890.inc", void sub_08005890()
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080058D8.inc", void sub_080058D8());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08005900.inc", void sub_08005900());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08005A3C.inc", void sub_08005A3C());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08005A70.inc", void sub_08005A70());
+
+extern "C" void sub_08005A70(void) {
+    if (gUnknown_03004B0A != 0) {
+        gUnknown_03004B0A = 0;
+        gIntrHandlers.hblank = (IrqTable::Func)&gUnknown_03004B14;
+    }
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08005A94.inc", void sub_08005A94());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08005AD8.inc", void sub_08005AD8());
+
+extern "C" void sub_08005AD8(u16 bit) {
+    REG_IME = 0;
+    REG_IE |= INTR_FLAG_VCOUNT;
+    REG_DISPSTAT |= DISPSTAT_VCOUNT_INTR;
+    REG_DISPSTAT &= 0xFF;
+    REG_DISPSTAT |= bit << 8;
+    gIntrHandlers.vblank = sub_0800545C;
+    gIntrHandlers.vcount = sub_080056E4;
+    REG_IME = 1;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08005B34.inc", void sub_08005B34());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08005B68.inc", void sub_08005B68());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08005BB4.inc", void sub_08005BB4());
+
+extern "C" void sub_08005B68(void) {
+    REG_IME = 0;
+    REG_IE &= ~INTR_FLAG_VCOUNT;
+    REG_DISPSTAT &= ~DISPSTAT_VCOUNT_INTR;
+    gIntrHandlers.vblank = &sub_080053D0;
+    gIntrHandlers.vcount = &sub_080055E4;
+    REG_IME = 1;
+}
+
+// TODO: does this volatile even make sense?
+extern "C" void sub_08005BB4(volatile u16 arg0) {
+    if (arg0) {
+        REG_IME = 0;
+        gIntrHandlers.vcount = sub_08005730;
+        REG_IME = 1;
+    } else {
+        REG_IME = 0;
+        gIntrHandlers.vcount = sub_080055E4;
+        REG_IME = 1;
+    }
+}
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08005BFC.inc", void sub_08005BFC());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08005C14.inc", void sub_08005C14());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08005C38.inc", void sub_08005C38());
@@ -231,7 +445,20 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_08007760.inc", void sub_08007760()
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08007AD4.inc", void sub_08007AD4());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08007CC0.inc", void sub_08007CC0());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08007CE8.inc", void sub_08007CE8());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08007D18.inc", void sub_08007D18());
+
+extern "C" void sub_08007D18(Unknown_02016078* arg0) {
+    if (gGame._595b[0] == 2) {
+        arg0->r = 31;
+        arg0->g = 31;
+        arg0->b = 31;
+        *(vu16*)PLTT = RGB(arg0->r, arg0->g, arg0->b);
+    } else {
+        arg0->r = 0;
+        arg0->g = 0;
+        arg0->b = 0;
+    }
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08007D94.inc", void sub_08007D94());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08007DEC.inc", void sub_08007DEC());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08007E2C.inc", void sub_08007E2C());

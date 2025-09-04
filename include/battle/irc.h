@@ -20,6 +20,7 @@ struct IrqTable {
     Func dma2;
     Func dma3;
     Func key;
+    Func gamepak;
 };
 
 struct Intr2 {
