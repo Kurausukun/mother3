@@ -2,6 +2,7 @@
 #include "battle/irc.h"
 #include "gba/gba.h"
 #include "global.h"
+#include "structs.h"
 
 typedef struct Struct_02015E00 {
     u8 _0;            /* 0x00 */
@@ -15,70 +16,6 @@ typedef struct Struct_02015E00 {
 } Struct_02015E00;
 
 extern Struct_02015E00 gUnknown_02015E00;
-
-typedef struct Unknown_02016078 {
-    u8 _0[0x800];                 /* 0x0000 */
-    u8 _800[0x800];               /* 0x0800 */
-    u8 _1000[0x800];              /* 0x1000 */
-    u8 _1800[0x800];              /* 0x1800 */
-    u8 pad_2000[0x2700 - 0x2000]; /* 0x2000 */
-    vu16 _2700[0x20][0x10];       // TODO: determine size
-    u8 pad_2C00[0x2C40 - 0x2B00]; /* 0x2C00 */
-    vu16 _2C40;                   /* 0x2C40 */
-    vu16 _2C42;                   /* 0x2C42 */
-    vu16 _2C44;                   /* 0x2C44 */
-    vu16 _2C46;                   /* 0x2C46 */
-    vu16 _2C48;                   /* 0x2C48 */
-    vu16 _2C4A;                   /* 0x2C4A */
-    vu8 r;                        /* 0x2C4C */
-    vu8 g;                        /* 0x2C4D */
-    vu8 b;                        /* 0x2C4E */
-    u8 pad_2C4F[0x2C50 - 0x2C4F]; /* 0x2C4F */
-    u8 _2C50[0x10];               /* 0x2C50 */
-
-    // TODO: figure out if this is a pointer or an array
-    void* _2C60;      /* 0x2C60 palette ptr? */
-    u16 _2C64[0x200]; /* 0x2C64 */
-} Unknown_02016078;
-
-typedef struct Unk_02016028 {
-    vu16 bldcnt;         /* 0x00 */
-    vu16 bldalpha;       /* 0x02 */
-    vu16 bldy;           /* 0x04 */
-    u8 pad_6[0x8 - 0x6]; /* 0x06 */
-    vu16 dispcnt;        /* 0x08 */
-    vu16 bgcnt[4];       /* 0x0A */
-    vu16 _12[4];         /* 0x12 */
-    vu16 _1A[4];         /* 0x1A */
-    vu16 _22;            /* 0x22 */
-} Unk_02016028;
-
-typedef struct SomeBlend {
-    Unk_02016028 _0;              /* 0x00 */
-    vu16 _24;                     /* 0x24 */
-    vu16 _26;                     /* 0x26 */
-    vu16 _28;                     /* 0x28 */
-    vu16 _2A;                     /* 0x2A */
-    vu16 _2C;                     /* 0x2C */
-    vu16 _2E;                     /* 0x2E */
-    vu16 _30;                     /* 0x30 */
-    vu16 _32;                     /* 0x32 */
-    vu16 _34;                     /* 0x34 */
-    vu16 _36;                     /* 0x36 */
-    vu16 _38;                     /* 0x38 */
-    vu16 _3A;                     /* 0x3A */
-    vu16 _3C;                     /* 0x3C */
-    vu16 _3E;                     /* 0x3E */
-    vu32 _40;                     /* 0x40 */
-    vu32 _44;                     /* 0x44 */
-    vu32 _48;                     /* 0x48 */
-    vu32 _4C;                     /* 0x4C */
-    Unknown_02016078 _50;         /* 0x50 */
-    u8 pad_30B4[0xC620 - 0x30B4]; /* 0x2E64 */
-    void* _C620;                  /* 0xC620 - pointer to OAM data */
-} SomeBlend;
-
-extern SomeBlend gSomeBlend;
 
 extern IrqTable gIntrHandlers;
 extern const IrqTable gUnknown_080C7668;
@@ -977,21 +914,21 @@ extern "C" void sub_0805A568(void) {
     sub_08090F88(sub_0800289C(&gUnknown_09C8DE98, 0), (void*)0x06008000);
     sub_08090F88(sub_0800289C(&gUnknown_09C8DE98, 2), (void*)0x06000000);
     sub_08090F88(sub_0800289C(&gUnknown_09C8DE98, 3), (void*)0x06010000);
-    gSomeBlend._50._2C60 = sub_0800289C(&gUnknown_09C8DE98, 4);
+    gSomeBlend._2CB0 = sub_0800289C(&gUnknown_09C8DE98, 4);
 
     void* temp_r0_2 = sub_0800289C(&gUnknown_09C8DE98, 1);
     sub_0800160C(&gSomeBlend._50, temp_r0_2, 0, 0x20);
     sub_0800160C(&gSomeBlend._50, temp_r0_2, 0x10, 0x20);
-    sub_08001A14((void*)&gSomeBlend._50._2700, &gSomeBlend._50._2C64, 0x400);
+    sub_08001A14((void*)&gSomeBlend._50._2700, &gSomeBlend._2CB4, 0x400);
     sub_08001A38((void*)&gSomeBlend._50._2700, 0x400, -1);
-    gSomeBlend._0.dispcnt = 0x140U;
-    gSomeBlend._0.bgcnt[0] = 8;
-    gSomeBlend._0.bgcnt[1] = 0;
-    gSomeBlend._0.bgcnt[2] = 0;
-    gSomeBlend._0.bgcnt[3] = 0;
-    gSomeBlend._0.bldcnt = 0;
-    gSomeBlend._0.bldalpha = 0;
-    gSomeBlend._0.bldy = 0;
+    gSomeBlend.dispcnt = 0x140U;
+    gSomeBlend.bgcnt[0] = 8;
+    gSomeBlend.bgcnt[1] = 0;
+    gSomeBlend.bgcnt[2] = 0;
+    gSomeBlend.bgcnt[3] = 0;
+    gSomeBlend.bldcnt = 0;
+    gSomeBlend.bldalpha = 0;
+    gSomeBlend.bldy = 0;
 }
 
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805A638.inc", void sub_0805A638());
@@ -1022,10 +959,10 @@ extern "C" void sub_0805AE64();
 extern "C" void sub_08001778(void* arg1, u16 arg2, u16 arg3, u16 arg4);
 extern "C" void sub_080013D0(void*);
 extern "C" void sub_08001454(void*);
-extern "C" void sub_08001630(void*, int);
+extern "C" void sub_08001630(Unknown_02018CC8*, s16);
 extern "C" void sub_080019A4(void*);
 
-extern "C" void sub_0805AE94(SomeBlend*, void*);
+extern "C" void sub_0805AE94(struct_02016028*, void*);
 extern "C" void sub_0805AEE0(void* arg1, Unknown_02016078* arg2);
 
 // gb player check entry?
@@ -1101,18 +1038,18 @@ extern "C" void sub_0805AE64(void) {
     sub_0805AEE0(&gSomeBlend, &gSomeBlend._50);
 }
 
-extern "C" void sub_0805AE94(SomeBlend* arg0, void*) {
+extern "C" void sub_0805AE94(struct_02016028* arg0, void*) {
     if (gUnknown_02015E00._c_1 & 1) {
-        REG_DISPCNT = arg0->_0.dispcnt;
-        REG_BG0CNT = arg0->_0.bgcnt[0];
-        REG_BG1CNT = arg0->_0.bgcnt[1];
-        REG_BG2CNT = arg0->_0.bgcnt[2];
-        REG_BG3CNT = arg0->_0.bgcnt[3];
+        REG_DISPCNT = arg0->dispcnt;
+        REG_BG0CNT = arg0->bgcnt[0];
+        REG_BG1CNT = arg0->bgcnt[1];
+        REG_BG2CNT = arg0->bgcnt[2];
+        REG_BG3CNT = arg0->bgcnt[3];
     }
 
-    REG_BLDCNT = arg0->_0.bldcnt;
-    REG_BLDALPHA = arg0->_0.bldalpha;
-    REG_BLDY = arg0->_0.bldy;
+    REG_BLDCNT = arg0->bldcnt;
+    REG_BLDALPHA = arg0->bldalpha;
+    REG_BLDY = arg0->bldy;
 }
 
 extern "C" void sub_0805AEE0(void* arg1, Unknown_02016078* arg2) {
@@ -1125,27 +1062,25 @@ extern "C" void sub_0805AEEC(void) {
     gUnknown_02015E00._8 = 0;
     sub_080013D0(&gSomeBlend);
     sub_08001454(&gSomeBlend._50);
-    sub_08001630(&gSomeBlend._50._2C50, 2);
+    sub_08001630(&gSomeBlend._2CA0, 2);
 }
 
 // GB player logo init
 extern "C" void sub_0805AF34(void) {
-    Unk_02016028* temp_r4;
-
     sub_08001A14((void*)gGBPlayerLogoGfx, BG_CHAR_ADDR(2), 0x4000);
     sub_08001A14((void*)gGBPlayerLogoLayout, BG_SCREEN_ADDR(0), 0x500);
     sub_0800160C(&gSomeBlend._50, (void*)gGBPlayerLogoPalette, 0, 0x200);
-    sub_08001A14((void*)gSomeBlend._50._2700, (void*)&gSomeBlend._50._2C60, 0x400);
+    sub_08001A14((void*)gSomeBlend._50._2700, (void*)&gSomeBlend._2CB0, 0x400);
     sub_08001A38((void*)gSomeBlend._50._2700, 0x400, -1);
 
-    gSomeBlend._0.dispcnt = DISPCNT_BG0_ON;
-    gSomeBlend._0.bgcnt[0] = BGCNT_256COLOR | BGCNT_CHARBASE(2) | BGCNT_SCREENBASE(0);
-    gSomeBlend._0.bgcnt[1] = 0;
-    gSomeBlend._0.bgcnt[2] = 0;
-    gSomeBlend._0.bgcnt[3] = 0;
-    gSomeBlend._0.bldcnt = 0;
-    gSomeBlend._0.bldalpha = 0;
-    gSomeBlend._0.bldy = 0;
+    gSomeBlend.dispcnt = DISPCNT_BG0_ON;
+    gSomeBlend.bgcnt[0] = BGCNT_256COLOR | BGCNT_CHARBASE(2) | BGCNT_SCREENBASE(0);
+    gSomeBlend.bgcnt[1] = 0;
+    gSomeBlend.bgcnt[2] = 0;
+    gSomeBlend.bgcnt[3] = 0;
+    gSomeBlend.bldcnt = 0;
+    gSomeBlend.bldalpha = 0;
+    gSomeBlend.bldy = 0;
 }
 
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805AFCC.inc", void sub_0805AFCC());

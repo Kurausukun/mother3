@@ -152,10 +152,113 @@ struct Object {
     u8 _cb_2 : 4;
 };
 
+/* size: 8 bytes */
+typedef struct OAMEntry {
+    // Attribute 0 (0x00-0x01)
+    u16 y_coord : 8;     // 0x00 - Y coordinate (0-255)
+    u16 rot_scale : 2;   // 0x01 bit 8 - Rotation/Scaling flag
+    u16 obj_mode : 2;    // 0x01 bits 10-11 - OBJ mode
+    u16 mosaic : 1;      // 0x01 bit 12 - Mosaic
+    u16 color_mode : 1;  // 0x01 bit 13 - 16/256 colors
+    u16 obj_shape : 2;   // 0x01 bits 14-15 - Square/Horizontal/Vertical
+
+    // Attribute 1 (0x02-0x03)
+    u16 x_coord : 9;   // bits 0-8 - X coordinate
+    u16 unused1 : 3;   // bits 9-11 - Not used
+    u16 h_flip : 1;    // bit 12 - Horizontal flip
+    u16 v_flip : 1;    // bit 13 - Vertical flip
+    u16 obj_size : 2;  // bits 14-15 - Size
+
+    // Attribute 2 (0x04-0x05)
+    u16 tile_num : 10;    // 0x04 bits 0-9 - Tile/character number
+    u16 priority : 2;     // 0x04 bits 10-11 - Priority vs BG
+    u16 palette_num : 4;  // 0x04 bits 12-15 - Palette number
+
+    u16 unused;  // 0x06-0x07 - Rotation/scaling data
+} OAMEntry;
+static_assert(sizeof(OAMEntry) == 0x8);
+
+typedef struct Entry8Byte_Alt {
+    volatile u16 field0;  // 0x00
+    volatile u16 field2;  // 0x02
+    volatile u16 field4;  // 0x04
+    volatile u16 field6;  // 0x06
+} Entry8Byte_Alt;
+static_assert(sizeof(OAMEntry) == 0x8);
+
+typedef struct Unknown_02016078 {
+    /* 0x0000 / 0x0050 */ u8 _0[0x800];
+    /* 0x0800 / 0x0850 */ u8 _800[0x800];
+    /* 0x1000 / 0x1050 */ u8 _1000[0x800];
+    /* 0x1800 / 0x1850 */ u8 _1800[0x800];
+    /* 0x2000 / 0x2050 */ OAMEntry oam[128];
+    /* 0x2400 / 0x2450 */ u8 pad_2400[0x2500 - 0x2400];
+    /* 0x2500 / 0x2550 */ Entry8Byte_Alt entries_2500[32];
+    /* 0x2600 / 0x2650 */ u8 pad_2600[0x2700 - 0x2600];
+    /* 0x2700 / 0x2750 */ vu16 _2700[0x20][0x10];
+    /* 0x2C00 / 0x2C50 */ u8 pad_2C00[0x2C40 - 0x2B00];
+    /* 0x2C40 / 0x2C90 */ vu16 _2C40;
+    /* 0x2C42 / 0x2C92 */ vu16 _2C42;
+    /* 0x2C44 / 0x2C94 */ vu16 _2C44;
+    /* 0x2C46 / 0x2C96 */ vu16 _2C46;
+    /* 0x2C48 / 0x2C98 */ vu16 oam_counter;
+    /* 0x2C4A / 0x2C9A */ vu16 _2C4A;
+    /* 0x2C4C / 0x2C9C */ vu8 r;
+    /* 0x2C4D / 0x2C9D */ vu8 g;
+    /* 0x2C4E / 0x2C9E */ vu8 b;
+    /* 0x2C4F / 0x2C9F */ u8 pad_2C4F[0x2C50 - 0x2C4F];
+} Unknown_02016078;
+
+typedef struct Unknown_02018CC8 {
+    u16 _0;
+    u16 _2;
+    s16 _4;
+    u16 _6;
+    u16 _8;
+    u16 _A;
+    u16 _C;
+    u8 _E_0 : 1;
+    u8 pad_F[0x10 - 0xF];
+} Unknown_02018CC8;
+static_assert(sizeof(Unknown_02018CC8) == 0x10);
+
 typedef struct struct_02016028 {
-    u8 filler[0x2ca2];
-    u16 _2ca2;
-    u8 _2ca3[0x4ad0 - 0x2ca4];
+    /* 0x00 */ vu16 bldcnt;
+    /* 0x02 */ vu16 bldalpha;
+    /* 0x04 */ vu16 bldy;
+    /* 0x06 */ u8 pad_6[0x8 - 0x6];
+    /* 0x08 */ vu16 dispcnt;
+    /* 0x0A */ vu16 bgcnt[4];
+    /* 0x12 */ vu16 _12[4];
+    /* 0x1A */ vu16 _1A[4];
+    /* 0x22 */ vu16 _22;
+    /* 0x24 */ vu16 _24;
+    /* 0x26 */ vu16 _26;
+    /* 0x28 */ vu16 _28;
+    /* 0x2A */ vu16 _2A;
+    /* 0x2C */ vu16 _2C;
+    /* 0x2E */ vu16 _2E;
+    /* 0x30 */ vu16 _30;
+    /* 0x32 */ vu16 _32;
+    /* 0x34 */ vu16 _34;
+    /* 0x36 */ vu16 _36;
+    /* 0x38 */ vu16 _38;
+    /* 0x3A */ vu16 _3A;
+    /* 0x3C */ vu16 _3C;
+    /* 0x3E */ vu16 _3E;
+    /* 0x40 */ vu32 _40;
+    /* 0x44 */ vu32 _44;
+    /* 0x48 */ vu32 _48;
+    /* 0x4C */ vu32 _4C;
+    /* 0x50 */ Unknown_02016078 _50;
+
+    /* 0x2CA0 */ Unknown_02018CC8 _2CA0;
+
+    // TODO: figure out if this is a pointer or an array
+    /* 0x2CB0 */ void* _2CB0;  // palette ptr?
+    /* 0x2CB4 */ u16 _2CB4[0x200];
+
+    u8 _2ca3[0x4ad0 - 0x30B4];
     u32 char_names[0xd];
     u16 msg_type;
     u16 _4b06;
@@ -170,7 +273,9 @@ typedef struct struct_02016028 {
     u8 _4b18;
     u8 _4b19 : 2;
     u8 _4b1a[0x5778 - 0x4b1a];
-    u8 _5778[0x121b8 - 0x5778];
+    u8 _5778[0xC620 - 0x5778];
+    /* 0xC620 */ void* _C620;  // pointer to OAM data
+    u8 pad_C624[0x121b8 - 0xC624];
     u8 _121b8_0 : 3;
     u8 _121b8_3 : 1;
     u8 _121b8_4 : 4;

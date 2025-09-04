@@ -302,11 +302,11 @@ u16 cmd_05(s32* sp) {
         return 0;
 
     temp = scriptstack_peek(sp, 0);
-    if ((gSomeBlend._2ca2 & temp) == 0) {
+    if ((gSomeBlend._2CA0._2 & temp) == 0) {
         scriptstack_pop();
         return 1;
     } else {
-        scriptstack_push(gSomeBlend._2ca2 & temp);
+        scriptstack_push(gSomeBlend._2CA0._2 & temp);
         return 0;
     }
 }

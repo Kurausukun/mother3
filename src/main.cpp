@@ -38,47 +38,6 @@ struct struct_020047E0 {
 };
 extern struct_020047E0 gEncounter;
 
-typedef struct OAMEntry {
-    // Attribute 0 (0x00-0x01)
-    u16 y_coord:8;                   // 0x00 - Y coordinate (0-255)
-    u16 rot_scale : 2;             // 0x01 bit 8 - Rotation/Scaling flag
-    u16 obj_mode : 2;              // 0x01 bits 10-11 - OBJ mode
-    u16 mosaic : 1;                // 0x01 bit 12 - Mosaic
-    u16 color_mode : 1;            // 0x01 bit 13 - 16/256 colors
-    u16 obj_shape : 2;             // 0x01 bits 14-15 - Square/Horizontal/Vertical
-    
-    // Attribute 1 (0x02-0x03)
-    u16 x_coord : 9;              // bits 0-8 - X coordinate
-    u16 unused1 : 3;              // bits 9-11 - Not used
-    u16 h_flip : 1;               // bit 12 - Horizontal flip
-    u16 v_flip : 1;               // bit 13 - Vertical flip
-    u16 obj_size : 2;             // bits 14-15 - Size
-    
-    // Attribute 2 (0x04-0x05)
-    u16 tile_num : 10;            // 0x04 bits 0-9 - Tile/character number
-    u16 priority : 2;             // 0x04 bits 10-11 - Priority vs BG
-    u16 palette_num : 4;          // 0x04 bits 12-15 - Palette number
-    
-    u16 unused;                   // 0x06-0x07 - Rotation/scaling data
-} OAMEntry;
-
-typedef struct Entry8Byte_Alt {
-    volatile u16 field0;   // 0x00
-    volatile u16 field2;   // 0x02
-    volatile u16 field4;   // 0x04
-    volatile u16 field6;   // 0x06
-} Entry8Byte_Alt;
-
-typedef struct Unknown_02016078 {
-    u8 padding1[0x2000];                   // 0x0000
-    OAMEntry oam[128];          // 0x2000 (8 bytes each)
-    u8 _2400[0x2500-0x2400];
-    Entry8Byte_Alt entries_2500[32];       // 0x2500 (8 bytes each)  
-    u8 _2600[0x2C48-0x2600];
-    volatile u16 oam_counter;                        // 0x2C48
-    volatile u16 field_2C4A;                        // 0x2C4A
-} Unknown_02016078;
-
 extern "C" void clear_ram();
 extern "C" void clear_gfx();
 extern "C" void copy_ram_magic();
@@ -656,60 +615,59 @@ void clear_gfx() {
 
 extern "C" void sub_08000E5C(Unknown_02016078* arg0) {
     // Entry8Byte* ptr1 = &arg0->entries_2000[0];
-    
+
     OAMEntry* oam_ptr = arg0->oam;
     u16 i;
-    
+
     // Initialize OAM entries
-    for ( i = 0; i < 128; i++,oam_ptr++) {
-        oam_ptr->x_coord = 240;           
-        oam_ptr->y_coord = 160;        
+    for (i = 0; i < 128; i++, oam_ptr++) {
+        oam_ptr->x_coord = 240;
+        oam_ptr->y_coord = 160;
         oam_ptr->obj_shape = 0;
         oam_ptr->obj_size = 0;
-        
-        oam_ptr->rot_scale = 2;      
+
+        oam_ptr->rot_scale = 2;
     }
-    
+
     Entry8Byte_Alt* ptr2 = &arg0->entries_2500[0];
-    
+
     // Clear second array (32 entries)
-    for ( i = 0; i < 32; i++,  ptr2++) {
+    for (i = 0; i < 32; i++, ptr2++) {
         ptr2->field0 = 0;
         ptr2->field2 = 0;
         ptr2->field4 = 0;
         ptr2->field6 = 0;
-       
     }
-    
+
     // Clear additional fields
     arg0->oam_counter = 0;
-    arg0->field_2C4A = 0;
+    arg0->_2C4A = 0;
 }
 
 extern "C" OAMEntry* sub_08000F04(Unknown_02016078* graphics, u16 count) {
     OAMEntry* first_entry = &graphics->oam[graphics->oam_counter];  // Starting OAM entry
     OAMEntry* current_entry = first_entry;
-    
+
     // Process count number of OAM entries
     for (u16 i = 0; i < count; i++, current_entry++, graphics->oam_counter++) {
-        current_entry->h_flip = 0;         // Clear horizontal flip
-        current_entry->v_flip = 0;         // Clear vertical flip
-        current_entry->color_mode = 0;     // Set to 16 colors/16 palettes
-        current_entry->obj_mode = 0;       // Set to normal mode
-        current_entry->mosaic = 0;         // Disable mosaic
-        current_entry->priority = 1;       // Set priority to 1
-        current_entry->rot_scale = 0;      // Disable rotation/scaling
-        current_entry->unused1 = 0;        // Clear unused bits
-        current_entry->unused = 0;         // Clear unused field
+        current_entry->h_flip = 0;      // Clear horizontal flip
+        current_entry->v_flip = 0;      // Clear vertical flip
+        current_entry->color_mode = 0;  // Set to 16 colors/16 palettes
+        current_entry->obj_mode = 0;    // Set to normal mode
+        current_entry->mosaic = 0;      // Disable mosaic
+        current_entry->priority = 1;    // Set priority to 1
+        current_entry->rot_scale = 0;   // Disable rotation/scaling
+        current_entry->unused1 = 0;     // Clear unused bits
+        current_entry->unused = 0;      // Clear unused field
     }
-    
+
     return first_entry;
 }
 
 static void sub_08000FA0(Unknown_02016078* graphics, u16 count, u16 priority) {
     // Start from the last allocated OAM entry and work backwards
     OAMEntry* current_entry = sub_08000F04(graphics, 0) - 1;
-    
+
     // Update priority for 'count' entries working backwards
     for (u16 i = 0; i < count; i++, current_entry--) {
         current_entry->priority = priority;
@@ -717,8 +675,8 @@ static void sub_08000FA0(Unknown_02016078* graphics, u16 count, u16 priority) {
 }
 
 static Entry8Byte_Alt* sub_08000FE4(Unknown_02016078* graphics, u16 count) {
-    Entry8Byte_Alt* first_entry = &graphics->entries_2500[graphics->field_2C4A];
-    graphics->field_2C4A += count;
+    Entry8Byte_Alt* first_entry = &graphics->entries_2500[graphics->_2C4A];
+    graphics->_2C4A += count;
     return first_entry;
 }
 

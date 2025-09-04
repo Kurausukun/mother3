@@ -4,74 +4,7 @@
 #include "gba/macro.h"
 #include "global.h"
 #include "overworld/script.h"
-
-typedef struct Unknown_02016078 {
-    u8 _0[0x800];                 /* 0x0000 */
-    u8 _800[0x800];               /* 0x0800 */
-    u8 _1000[0x800];              /* 0x1000 */
-    u8 _1800[0x800];              /* 0x1800 */
-    u8 pad_2000[0x2700 - 0x2000]; /* 0x2000 */
-    vu16 _2700[0x20][0x10];       // TODO: determine size
-    u8 pad_2C00[0x2C40 - 0x2B00]; /* 0x2C00 */
-    vu16 _2C40;                   /* 0x2C40 */
-    vu16 _2C42;                   /* 0x2C42 */
-    vu16 _2C44;                   /* 0x2C44 */
-    vu16 _2C46;                   /* 0x2C46 */
-    vu16 _2C48;                   /* 0x2C48 */
-    vu16 _2C4A;                   /* 0x2C4A */
-    vu8 r;                        /* 0x2C4C */
-    vu8 g;                        /* 0x2C4D */
-    vu8 b;                        /* 0x2C4E */
-    u8 pad_2C4F[0x2C50 - 0x2C4F]; /* 0x2C4F */
-    u8 _2C50[0x10];               /* 0x2C50 */
-    u8 _2C60[0x400];              /* 0x2C60 second palette? */
-} Unknown_02016078;
-
-typedef struct Unk_02016028 {
-    vu16 bldcnt;         /* 0x00 */
-    vu16 bldalpha;       /* 0x02 */
-    vu16 bldy;           /* 0x04 */
-    u8 pad_6[0x8 - 0x6]; /* 0x06 */
-    vu16 dispcnt;        /* 0x08 */
-    vu16 bgcnt[4];       /* 0x0A */
-    vu16 _12[4];         /* 0x12 */
-    vu16 _1A[4];         /* 0x1A */
-    vu16 _22;            /* 0x22 */
-} Unk_02016028;
-
-typedef struct SomeBlend {
-    Unk_02016028 _0;      /* 0x00 */
-    vu16 _24;             /* 0x24 */
-    vu16 _26;             /* 0x26 */
-    vu16 _28;             /* 0x28 */
-    vu16 _2A;             /* 0x2A */
-    vu16 _2C;             /* 0x2C */
-    vu16 _2E;             /* 0x2E */
-    vu16 _30;             /* 0x30 */
-    vu16 _32;             /* 0x32 */
-    vu16 _34;             /* 0x34 */
-    vu16 _36;             /* 0x36 */
-    vu16 _38;             /* 0x38 */
-    vu16 _3A;             /* 0x3A */
-    vu16 _3C;             /* 0x3C */
-    vu16 _3E;             /* 0x3E */
-    vu32 _40;             /* 0x40 */
-    vu32 _44;             /* 0x44 */
-    vu32 _48;             /* 0x48 */
-    vu32 _4C;             /* 0x4C */
-    Unknown_02016078 _50; /* 0x50 */
-} SomeBlend;
-
-typedef struct UnkStruct {
-    u16 _0;
-    s16 _2;
-    s16 _4;
-    u16 _6;
-    u16 _8;
-    u16 _A;
-    u16 _C;
-    u8 _E_0 : 1;
-} UnkStruct;
+#include "structs.h"
 
 extern const IrqTable gUnknown_080C1A58;
 extern IrqTable gIntrHandlers;
@@ -86,9 +19,9 @@ extern "C" void sub_08090F74(const void* src, void* dest, u32 control);
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080012BC.inc", void sub_080012BC());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001378.inc", void sub_08001378());
 
-extern "C" void sub_080013D0(SomeBlend* arg0) {
-    arg0->_0.dispcnt = 0;
-    arg0->_0._22 = 0;
+extern "C" void sub_080013D0(struct_02016028* arg0) {
+    arg0->dispcnt = 0;
+    arg0->_22 = 0;
     arg0->_24 = 0;
     arg0->_26 = 0;
     arg0->_28 = 0;
@@ -109,9 +42,9 @@ extern "C" void sub_080013D0(SomeBlend* arg0) {
     arg0->_4C = 0;
 
     for (u16 i = 0; i < 4; i++) {
-        arg0->_0.bgcnt[i] = 0;
-        arg0->_0._12[i] = 0;
-        arg0->_0._1A[i] = 0;
+        arg0->bgcnt[i] = 0;
+        arg0->_12[i] = 0;
+        arg0->_1A[i] = 0;
     }
 }
 
@@ -124,7 +57,7 @@ extern "C" void sub_08001454(Unknown_02016078* arg0) {
     sub_080019DC((void*)arg0->_1800, 0x800);
     sub_080019DC((void*)arg0->_2700, 0x400);
 
-    arg0->_2C48 = 0;
+    arg0->oam_counter = 0;
     arg0->_2C4A = 0;
     arg0->r = 0;
     arg0->g = 0;
@@ -139,7 +72,7 @@ extern "C" void sub_0800160C(Unknown_02016078* dest, void* src, u16 index, u16 s
     sub_08090F74(src, (void*)dest->_2700[index], size / 4);
 }
 
-extern "C" void sub_08001630(UnkStruct* arg0, s16 arg1) {
+extern "C" void sub_08001630(Unknown_02018CC8* arg0, s16 arg1) {
     arg0->_E_0 = 0;
     arg0->_0 = 0;
     arg0->_2 = 0;
@@ -217,7 +150,8 @@ extern "C" void sub_080019DC(void* dest, u32 size) {
     dmaRegs[1] = (uintptr_t)dest;
 
     size /= 4;
-    dmaRegs[2] = (size | ((DMA_ENABLE | DMA_START_NOW | DMA_32BIT | DMA_SRC_FIXED | DMA_DEST_INC) << 16));
+    dmaRegs[2] =
+        (size | ((DMA_ENABLE | DMA_START_NOW | DMA_32BIT | DMA_SRC_FIXED | DMA_DEST_INC) << 16));
     dmaRegs[2];
     // Wait for DMA to complete
     while (dmaRegs[2] & (DMA_ENABLE << 16)) {
