@@ -128,7 +128,8 @@ struct Game {
     u32 _9d10;
     u8 battle_mode;
 };
-Game gGame;
+
+extern struct Game gGame;
 
 struct C2Struct {
     u32 _0_0 : 3;

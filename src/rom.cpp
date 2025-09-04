@@ -3,6 +3,7 @@
 #include "gba/gba.h"
 #include "gba/macro.h"
 #include "global.h"
+#include "overworld/script.h"
 
 typedef struct Unknown_02016078 {
     u8 _0[0x800];                 /* 0x0000 */
@@ -158,8 +159,17 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_080017AC.inc", void sub_080017AC()
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080017E0.inc", void sub_080017E0());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001814.inc", void sub_08001814());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0800186C.inc", void sub_0800186C());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_080018E4.inc", void sub_080018E4());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_080018F4.inc", void sub_080018F4());
+
+extern "C" void sub_080018E4(void) {
+    REG_DISPCNT = 0;
+    *(vu16*)PLTT = 0;
+}
+
+extern "C" void sub_080018F4(void) {
+    REG_DISPCNT = DISPCNT_FORCED_BLANK;
+    *(vu16*)PLTT = RGB_WHITE;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0800190C.inc", void sub_0800190C());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001930.inc", void sub_08001930());
 
@@ -167,7 +177,22 @@ extern "C" void sub_08001960(void) {
     VBlankIntrWait();
 }
 
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0800196C.inc", void sub_0800196C());
+// TODO: probably Unknown_02016078
+extern "C" void sub_0800196C(u8* src) {
+    vu32* dmaRegs = (vu32*)REG_ADDR_DMA3;
+    dmaRegs[0] = (uintptr_t)&src[0x2000];
+    dmaRegs[1] = (uintptr_t)OAM;
+
+    u32 size = OAM_SIZE / 2;
+    u32 flags = (DMA_ENABLE | DMA_START_NOW | DMA_16BIT | DMA_SRC_INC | DMA_DEST_INC) << 16;
+    dmaRegs[2] = flags | size;
+
+    dmaRegs[2];
+
+    // Wait for DMA to complete
+    while (dmaRegs[2] & (DMA_ENABLE << 16)) {
+    }
+}
 
 extern "C" void sub_080019A4(Unknown_02016078* arg0) {
     vu32* dmaRegs = (vu32*)REG_ADDR_DMA3;
@@ -474,7 +499,20 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_08007760.inc", void sub_08007760()
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08007AD4.inc", void sub_08007AD4());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08007CC0.inc", void sub_08007CC0());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08007CE8.inc", void sub_08007CE8());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08007D18.inc", void sub_08007D18());
+
+extern "C" void sub_08007D18(Unknown_02016078* arg0) {
+    if (gGame._595b[0] == 2) {
+        arg0->r = 31;
+        arg0->g = 31;
+        arg0->b = 31;
+        *(vu16*)PLTT = RGB(arg0->r, arg0->g, arg0->b);
+    } else {
+        arg0->r = 0;
+        arg0->g = 0;
+        arg0->b = 0;
+    }
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08007D94.inc", void sub_08007D94());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08007DEC.inc", void sub_08007DEC());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08007E2C.inc", void sub_08007E2C());

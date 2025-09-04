@@ -37,8 +37,8 @@ typedef struct Unknown_02016078 {
     u8 _2C50[0x10];               /* 0x2C50 */
 
     // TODO: figure out if this is a pointer or an array
-    void* _2C60;                  /* 0x2C60 palette ptr? */
-    u16 _2C64[0x200];             /* 0x2C64 */
+    void* _2C60;      /* 0x2C60 palette ptr? */
+    u16 _2C64[0x200]; /* 0x2C64 */
 } Unknown_02016078;
 
 typedef struct Unk_02016028 {
@@ -54,26 +54,28 @@ typedef struct Unk_02016028 {
 } Unk_02016028;
 
 typedef struct SomeBlend {
-    Unk_02016028 _0;      /* 0x00 */
-    vu16 _24;             /* 0x24 */
-    vu16 _26;             /* 0x26 */
-    vu16 _28;             /* 0x28 */
-    vu16 _2A;             /* 0x2A */
-    vu16 _2C;             /* 0x2C */
-    vu16 _2E;             /* 0x2E */
-    vu16 _30;             /* 0x30 */
-    vu16 _32;             /* 0x32 */
-    vu16 _34;             /* 0x34 */
-    vu16 _36;             /* 0x36 */
-    vu16 _38;             /* 0x38 */
-    vu16 _3A;             /* 0x3A */
-    vu16 _3C;             /* 0x3C */
-    vu16 _3E;             /* 0x3E */
-    vu32 _40;             /* 0x40 */
-    vu32 _44;             /* 0x44 */
-    vu32 _48;             /* 0x48 */
-    vu32 _4C;             /* 0x4C */
-    Unknown_02016078 _50; /* 0x50 */
+    Unk_02016028 _0;              /* 0x00 */
+    vu16 _24;                     /* 0x24 */
+    vu16 _26;                     /* 0x26 */
+    vu16 _28;                     /* 0x28 */
+    vu16 _2A;                     /* 0x2A */
+    vu16 _2C;                     /* 0x2C */
+    vu16 _2E;                     /* 0x2E */
+    vu16 _30;                     /* 0x30 */
+    vu16 _32;                     /* 0x32 */
+    vu16 _34;                     /* 0x34 */
+    vu16 _36;                     /* 0x36 */
+    vu16 _38;                     /* 0x38 */
+    vu16 _3A;                     /* 0x3A */
+    vu16 _3C;                     /* 0x3C */
+    vu16 _3E;                     /* 0x3E */
+    vu32 _40;                     /* 0x40 */
+    vu32 _44;                     /* 0x44 */
+    vu32 _48;                     /* 0x48 */
+    vu32 _4C;                     /* 0x4C */
+    Unknown_02016078 _50;         /* 0x50 */
+    u8 pad_30B4[0xC620 - 0x30B4]; /* 0x2E64 */
+    void* _C620;                  /* 0xC620 - pointer to OAM data */
 } SomeBlend;
 
 extern SomeBlend gSomeBlend;
@@ -560,7 +562,22 @@ extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08050DE0.inc", void sub_
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08050E20.inc", void sub_08050E20());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08050E64.inc", void sub_08050E64());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08050E94.inc", void sub_08050E94());
-extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08050EEC.inc", void sub_08050EEC());
+
+extern "C" void sub_08050EEC() {
+    vu32* dmaRegs = (vu32*)REG_ADDR_DMA3;
+    dmaRegs[0] = (uintptr_t)gSomeBlend._C620;
+    dmaRegs[1] = (uintptr_t)OAM;
+
+    u32 size = OAM_SIZE / 2;
+    u32 flags = (DMA_ENABLE | DMA_START_NOW | DMA_16BIT | DMA_SRC_INC | DMA_DEST_INC) << 16;
+    dmaRegs[2] = flags | size;
+
+    dmaRegs[2];
+
+    // Wait for DMA to complete
+    while (dmaRegs[2] & (DMA_ENABLE << 16)) {
+    }
+}
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08050F2C.inc", void sub_08050F2C());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08050F88.inc", void sub_08050F88());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08050FCC.inc", void sub_08050FCC());
