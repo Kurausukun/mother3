@@ -1028,7 +1028,7 @@ extern "C" void sub_080019A4(void*);
 extern "C" void sub_0805AE94(SomeBlend*, void*);
 extern "C" void sub_0805AEE0(void* arg1, Unknown_02016078* arg2);
 
-// calls  sub_0805AD24. maybe gbplayer entry?
+// gb player check entry?
 extern "C" void sub_0805ACF4(void) {
     sub_0805AEEC();
     switch (gUnknown_020050B0) {
