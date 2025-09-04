@@ -896,12 +896,25 @@ typedef struct Struct_02015E00 {
 extern Struct_02015E00 gUnknown_02015E00;
 
 typedef struct Unknown_02016078 {
-    u8 _pad_0[0x2700];             /* 0x0000 */
-    u8 _2700[0x400];               /* 0x2700 first palette? */
-    u8 pad_2B00[0x2C00 - 0x2B00];  /* 0x2B00 */
-    u8 _pad_2C00[0x2C50 - 0x2C00]; /* 0x2C00 */
-    u8 _2C50[0x10];                /* 0x2C50 */
-    u8 _2C60[0x400];               /* 0x2C60 second palette? */
+    u8 _0[0x800];                 /* 0x0000 */
+    u8 _800[0x800];               /* 0x0800 */
+    u8 _1000[0x800];              /* 0x1000 */
+    u8 _1800[0x800];              /* 0x1800 */
+    u8 pad_2000[0x2700 - 0x2000]; /* 0x2000 */
+    vu16 _2700[0x20][0x10];       // TODO: determine size
+    u8 pad_2C00[0x2C40 - 0x2B00]; /* 0x2C00 */
+    vu16 _2C40;                   /* 0x2C40 */
+    vu16 _2C42;                   /* 0x2C42 */
+    vu16 _2C44;                   /* 0x2C44 */
+    vu16 _2C46;                   /* 0x2C46 */
+    vu16 _2C48;                   /* 0x2C48 */
+    vu16 _2C4A;                   /* 0x2C4A */
+    vu8 r;                        /* 0x2C4C */
+    vu8 g;                        /* 0x2C4D */
+    vu8 b;                        /* 0x2C4E */
+    u8 pad_2C4F[0x2C50 - 0x2C4F]; /* 0x2C4F */
+    u8 _2C50[0x10];               /* 0x2C50 */
+    u8 _2C60[0x400];              /* 0x2C60 second palette? */
 } Unknown_02016078;
 
 typedef struct Unk_02016028 {
@@ -1058,8 +1071,8 @@ extern "C" void sub_0805AF34(void) {
     sub_08001A14((void*)gGBPlayerLogoGfx, BG_CHAR_ADDR(2), 0x4000);
     sub_08001A14((void*)gGBPlayerLogoLayout, BG_SCREEN_ADDR(0), 0x500);
     sub_0800160C(&gSomeBlend._50, (void*)gGBPlayerLogoPalette, 0, 0x200);
-    sub_08001A14(gSomeBlend._50._2700, gSomeBlend._50._2C60, 0x400);
-    sub_08001A38(gSomeBlend._50._2700, 0x400, -1);
+    sub_08001A14((void*)gSomeBlend._50._2700, (void*)gSomeBlend._50._2C60, 0x400);
+    sub_08001A38((void*)gSomeBlend._50._2700, 0x400, -1);
 
     gSomeBlend._0.dispcnt = DISPCNT_BG0_ON;
     gSomeBlend._0.bg0cnt = BGCNT_256COLOR | BGCNT_CHARBASE(2) | BGCNT_SCREENBASE(0);
