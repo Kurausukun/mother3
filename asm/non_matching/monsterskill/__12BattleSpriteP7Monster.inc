@@ -19,7 +19,7 @@ __12BattleSpriteP7Monster:
 	adds r5, r6, #0
 	adds r5, #0x9c
 	adds r0, r5, #0
-	bl sub_0806D478
+	bl __11Unk0806D478
 	adds r0, r6, #0
 	adds r0, #0x94
 	str r4, [r0]
@@ -42,7 +42,7 @@ __12BattleSpriteP7Monster:
 	bl sub_080706A0
 	adds r0, r5, #0
 	mov r1, sp
-	bl sub_0806D4D0
+	bl sub_0806D4D0__11Unk0806D478P4Unk2
 	ldr r1, _08081D3C
 	mov r8, r1
 	str r1, [sp, #8]

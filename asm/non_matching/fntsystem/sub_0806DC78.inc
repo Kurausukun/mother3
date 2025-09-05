@@ -22,7 +22,7 @@ sub_0806DC78:
 	bl sub_0806D548
 	adds r0, r7, #0
 	adds r0, #0x6c
-	bl sub_0806D478
+	bl __11Unk0806D478
 	adds r0, r7, #0
 	adds r0, #0x78
 	bl sub_080886E0

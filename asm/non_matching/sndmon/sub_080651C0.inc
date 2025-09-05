@@ -38,7 +38,7 @@ _080651EC:
 	lsls r0, r0, #1
 	adds r6, r7, r0
 	adds r0, r6, #0
-	bl sub_0806D478
+	bl __11Unk0806D478
 	str r4, [r7, #0x28]
 	strh r4, [r7, #0x2c]
 	ldr r1, _08065294
@@ -64,7 +64,7 @@ _080651EC:
 	bl sub_080706A0
 	adds r0, r6, #0
 	add r1, sp, #4
-	bl sub_0806D4D0
+	bl sub_0806D4D0__11Unk0806D478P4Unk2
 	str r4, [sp, #0xc]
 	bl get__12ClockManager
 	adds r5, r0, #0

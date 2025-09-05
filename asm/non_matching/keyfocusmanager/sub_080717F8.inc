@@ -8,7 +8,7 @@ sub_080717F8:
 	adds r0, r4, #0
 	adds r0, #0x58
 	movs r1, #2
-	bl sub_0806D4B0
+	bl _._11Unk0806D478
 	adds r0, r4, #0
 	adds r0, #0x44
 	movs r1, #2

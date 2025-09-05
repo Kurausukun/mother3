@@ -12,7 +12,7 @@ sub_0807D208:
 	adds r0, r4, #0
 	adds r0, #0x90
 	movs r1, #2
-	bl sub_0806D4B0
+	bl _._11Unk0806D478
 	adds r0, r4, #0
 	adds r0, #0x34
 	ldr r1, _0807D248

@@ -12,7 +12,7 @@ sub_08081FF4:
 	strh r0, [r1, #2]
 	adds r0, r4, #0
 	adds r0, #0x9c
-	bl sub_0806D478
+	bl __11Unk0806D478
 	adds r0, r4, #0
 	pop {r4}
 	pop {r1}

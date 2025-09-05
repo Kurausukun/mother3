@@ -20,7 +20,7 @@ sub_0806DD48:
 	adds r0, r5, #0
 	adds r0, #0x6c
 	movs r1, #2
-	bl sub_0806D4B0
+	bl _._11Unk0806D478
 	adds r0, r5, #0
 	adds r0, #0x58
 	movs r1, #2

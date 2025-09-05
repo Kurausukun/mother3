@@ -19,7 +19,7 @@ sub_08071268:
 	movs r0, #0x5c
 	adds r0, r0, r7
 	mov r8, r0
-	bl sub_0806D478
+	bl __11Unk0806D478
 	str r4, [r7, #0x24]
 	adds r0, r7, #0
 	adds r0, #0x28
@@ -47,7 +47,7 @@ sub_08071268:
 	bl sub_080706A0
 	mov r0, r8
 	add r1, sp, #4
-	bl sub_0806D4D0
+	bl sub_0806D4D0__11Unk0806D478P4Unk2
 	str r4, [sp, #0xc]
 	bl get__12ClockManager
 	adds r6, r0, #0

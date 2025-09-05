@@ -40,7 +40,7 @@ sub_0806DDA0:
 	ldr r0, [r7, #0x74]
 	str r0, [sp]
 	adds r0, r4, #0
-	bl sub_0806D478
+	bl __11Unk0806D478
 	adds r1, r7, #0
 	adds r1, #0x6c
 	adds r0, r4, #0
@@ -50,7 +50,7 @@ sub_0806DDA0:
 	str r0, [r7, #0x74]
 	adds r0, r4, #0
 	movs r1, #2
-	bl sub_0806D4B0
+	bl _._11Unk0806D478
 	ldr r0, [r7, #0x7c]
 	str r0, [sp]
 	adds r0, r4, #0
@@ -105,7 +105,7 @@ sub_0806DDA0:
 	adds r0, r7, #0
 	adds r0, #0x6c
 	ldr r1, [sp, #0x20]
-	bl sub_0806D4D0
+	bl sub_0806D4D0__11Unk0806D478P4Unk2
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1

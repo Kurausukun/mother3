@@ -22,7 +22,7 @@ sub_0806D744:
 	adds r0, r4, #0
 	adds r0, #0x58
 	ldr r1, [sp, #0xc]
-	bl sub_0806D4D0
+	bl sub_0806D4D0__11Unk0806D478P4Unk2
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1

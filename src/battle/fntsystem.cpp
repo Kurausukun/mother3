@@ -2,13 +2,84 @@
 #include "global.h"
 
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D2CC.inc", void sub_0806D2CC());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D478.inc", void sub_0806D478());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D48C.inc", void sub_0806D48C());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D4B0.inc", void sub_0806D4B0());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D4D0.inc", void sub_0806D4D0());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D504.inc", void sub_0806D504());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D520.inc", void sub_0806D520());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D52C.inc", void sub_0806D52C());
+
+struct Unk {
+    u32 _0;
+    u16 _4;
+    u8 pad_6[2];
+    u16 _8;
+    u8 pad_A[2];
+    u8 _C;  // TODO: determine size
+};
+
+struct Unk2 {
+    Unk* _0;
+    u32 _4;
+};
+
+class Unk0806D478 {
+public:
+    u16 _u0;
+    u16 _u2;
+    void* _u4;
+
+    Unk0806D478();
+    Unk0806D478(Unk2*);
+    virtual ~Unk0806D478();
+    int sub_0806D4D0(Unk2*);
+    int sub_0806D504(Unk2*);
+    void sub_0806D520(Unk2*);
+    void sub_0806D52C(Unk2*);
+};
+
+Unk0806D478::Unk0806D478() {  // __11Unk0806D478
+    _u0 = 0;
+    _u2 = 0;
+    _u4 = NULL;
+}
+
+Unk0806D478::Unk0806D478(Unk2* arg0) {
+    _u0 = 0;
+    _u2 = 0;
+    _u4 = NULL;
+    sub_0806D4D0(arg0);
+}
+
+Unk0806D478::~Unk0806D478() {}
+
+int Unk0806D478::sub_0806D4D0(Unk2* arg0) {
+    this->_u0 = this->sub_0806D504(arg0);
+
+    switch (this->_u0) {
+    case 1:
+        this->sub_0806D520(arg0);
+        break;
+    case 2:
+        this->sub_0806D52C(arg0);
+        break;
+    }
+
+    return 1;
+}
+
+int Unk0806D478::sub_0806D504(Unk2* arg0) {
+    if (arg0->_0->_0 != 0x206C6363) {
+        return 1;
+    } else {
+        return arg0->_0->_4;
+    }
+}
+
+void Unk0806D478::sub_0806D520(Unk2* arg0) {
+    this->_u2 = arg0->_4 >> 5;
+    this->_u4 = (void*)arg0->_0;
+}
+
+void Unk0806D478::sub_0806D52C(Unk2* arg0) {
+    this->_u2 = arg0->_0->_8;
+    this->_u4 = (void*)&arg0->_0->_C;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D538.inc", void sub_0806D538());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D53C.inc", void sub_0806D53C());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D540.inc", void sub_0806D540());
@@ -98,7 +169,7 @@ extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E334__3Msgi.inc", void s
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E33C.inc", void sub_0806E33C());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E344.inc", void sub_0806E344());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E34C.inc", void sub_0806E34C());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E374__3MsgRC3Msg.inc", void sub_0806E374__3MsgRC3Msg());
+extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E374__3MsgRC3Msg.inc",void sub_0806E374__3MsgRC3Msg());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E3B4.inc", void sub_0806E3B4());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/len__3Msg.inc", void len__3Msg());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E418.inc", void sub_0806E418());

@@ -91357,13 +91357,13 @@ vt_09F7FC18::
 	.2byte 0
 	.4byte sub_080C1424
 
-vt_09F7FC30::
+_vt.11Unk0806D478::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806D4B0
+	.4byte _._11Unk0806D478
 
 vt_09F7FC40::
 	.2byte 0
