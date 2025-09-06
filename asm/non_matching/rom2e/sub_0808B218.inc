@@ -130,7 +130,7 @@ _0808B316:
 	adds r4, r7, #0
 	adds r4, #0x60
 	adds r0, r4, #0
-	bl sub_0806D64C
+	bl __11Unk0806D64C
 	adds r5, r7, #0
 	adds r5, #0xcc
 	movs r3, #2
@@ -234,7 +234,7 @@ _0808B3AA:
 	bl sub_08071E5C
 	ldr r3, _0808B678
 	adds r0, r7, r3
-	bl sub_0806D64C
+	bl __11Unk0806D64C
 	movs r0, #0xe1
 	lsls r0, r0, #3
 	adds r0, r0, r7
@@ -331,7 +331,7 @@ _0808B3AA:
 	movs r1, #1
 	mov r2, sl
 	ldr r3, [sp, #0xd4]
-	bl sub_0806D744
+	bl sub_0806D744__11Unk0806D64C
 	str r5, [sp, #0x54]
 	str r5, [sp, #0x48]
 	str r5, [sp, #0x3c]
@@ -342,7 +342,7 @@ _0808B3AA:
 	strh r1, [r3, #2]
 	ldr r0, [sp, #0x108]
 	ldr r1, [sp, #0xf8]
-	bl sub_0806D814
+	bl sub_0806D814__11Unk0806D64C
 	movs r1, #0xf0
 	movs r2, #0x30
 	add r0, sp, #0x6c
@@ -351,7 +351,7 @@ _0808B3AA:
 	strh r2, [r0, #2]
 	ldr r0, [sp, #0x108]
 	ldr r1, [sp, #0xfc]
-	bl sub_0806D828
+	bl sub_0806D828__11Unk0806D64C
 	add r0, sp, #0x70
 	mov r1, sb
 	strh r1, [r0]
@@ -359,7 +359,7 @@ _0808B3AA:
 	strh r1, [r3, #2]
 	ldr r0, [sp, #0x108]
 	ldr r1, [sp, #0x104]
-	bl sub_0806D83C
+	bl sub_0806D83C__11Unk0806D64C
 	movs r0, #0
 	mov sb, r0
 	mov r1, sl
@@ -575,7 +575,7 @@ _0808B688:
 	movs r1, #1
 	mov r2, sl
 	ldr r3, [sp, #0xd4]
-	bl sub_0806D744
+	bl sub_0806D744__11Unk0806D64C
 	ldr r0, _0808BA1C
 	str r0, [sp, #0x54]
 	str r0, [sp, #0x48]
@@ -587,7 +587,7 @@ _0808B688:
 	strh r5, [r3, #2]
 	adds r0, r4, #0
 	ldr r1, [sp, #0x130]
-	bl sub_0806D814
+	bl sub_0806D814__11Unk0806D64C
 	movs r1, #0xf0
 	movs r2, #0x20
 	add r0, sp, #0x9c
@@ -596,14 +596,14 @@ _0808B688:
 	strh r2, [r0, #2]
 	adds r0, r4, #0
 	ldr r1, [sp, #0x134]
-	bl sub_0806D828
+	bl sub_0806D828__11Unk0806D64C
 	add r0, sp, #0xa0
 	strh r6, [r0]
 	ldr r1, [sp, #0x138]
 	strh r5, [r1, #2]
 	adds r0, r4, #0
 	ldr r1, [sp, #0x138]
-	bl sub_0806D83C
+	bl sub_0806D83C__11Unk0806D64C
 	movs r3, #0xe1
 	lsls r3, r3, #3
 	adds r4, r7, r3

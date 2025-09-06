@@ -38,7 +38,7 @@ sub_0806D9F4:
 	ldr r0, [r6, #0x70]
 	str r0, [sp]
 	adds r0, r4, #0
-	bl sub_0806D478
+	bl __11Unk0806D478
 	adds r1, r6, #0
 	adds r1, #0x68
 	adds r0, r4, #0
@@ -48,7 +48,7 @@ sub_0806D9F4:
 	str r0, [r6, #0x70]
 	adds r0, r4, #0
 	movs r1, #2
-	bl sub_0806D4B0
+	bl _._11Unk0806D478
 	ldr r0, [r6, #0x78]
 	str r0, [sp]
 	adds r0, r4, #0
@@ -74,7 +74,7 @@ sub_0806D9F4:
 	adds r0, r6, #0
 	adds r0, #0x54
 	mov r1, r8
-	bl sub_0806D5AC
+	bl sub_0806D5AC__11Unk0806D548P4Unk2
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -82,7 +82,7 @@ sub_0806D9F4:
 	adds r0, r6, #0
 	adds r0, #0x68
 	mov r1, sb
-	bl sub_0806D4D0
+	bl sub_0806D4D0__11Unk0806D478P4Unk2
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1

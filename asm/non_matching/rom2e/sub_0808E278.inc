@@ -11,7 +11,7 @@ sub_0808E278:
 	bne _0808E29C
 	adds r0, #0xc
 	movs r1, #0
-	bl sub_0806D7DC
+	bl sub_0806D7DC__11Unk0806D64C
 	adds r0, r4, #0
 	adds r0, #0xa0
 	movs r1, #0

@@ -254,7 +254,7 @@ _0808C960:
 	bl _call_via_r1
 	adds r1, r0, #0
 	adds r0, r4, #0
-	bl sub_0806D7DC
+	bl sub_0806D7DC__11Unk0806D64C
 	movs r3, #0xe1
 	lsls r3, r3, #3
 	adds r6, r5, r3

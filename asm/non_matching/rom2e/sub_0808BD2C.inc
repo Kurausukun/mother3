@@ -36,7 +36,7 @@ sub_0808BD2C:
 	ldr r1, _0808BE44
 	adds r0, r5, r1
 	movs r1, #2
-	bl sub_0806D6E0
+	bl _._11Unk0806D64C
 	movs r2, #0xc0
 	lsls r2, r2, #3
 	adds r0, r5, r2
@@ -106,7 +106,7 @@ _0808BDF8:
 _0808BE0E:
 	mov r0, r8
 	movs r1, #2
-	bl sub_0806D6E0
+	bl _._11Unk0806D64C
 	cmp r7, #0
 	beq _0808BE4C
 	adds r4, r5, #0

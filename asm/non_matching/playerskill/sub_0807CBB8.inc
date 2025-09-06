@@ -14,7 +14,7 @@ sub_0807CBB8:
 	bl sub_080706A0
 	mov r0, sp
 	adds r1, r4, #0
-	bl sub_0806D48C
+	bl __11Unk0806D478P4Unk2
 	ldr r0, _0807CC74
 	str r0, [sp, #0x14]
 	mov r0, sp
@@ -83,7 +83,7 @@ _0807CBF4:
 	bls _0807CBF4
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806D4B0
+	bl _._11Unk0806D478
 	add sp, #0x1c
 	pop {r3}
 	mov r8, r3

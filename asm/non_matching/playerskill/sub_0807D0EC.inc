@@ -40,7 +40,7 @@ sub_0807D0EC:
 	adds r7, r5, #0
 	adds r7, #0x90
 	adds r0, r7, #0
-	bl sub_0806D478
+	bl __11Unk0806D478
 	ldr r1, _0807D1F4
 	ldrh r2, [r1]
 	adds r0, r2, #1
@@ -78,7 +78,7 @@ sub_0807D0EC:
 	bl sub_080706A0
 	adds r0, r7, #0
 	adds r1, r4, #0
-	bl sub_0806D4D0
+	bl sub_0806D4D0__11Unk0806D478P4Unk2
 	mov r0, sl
 	str r0, [sp, #0x18]
 	bl get__12ClockManager

@@ -155,7 +155,7 @@ _08067ED2:
 	lsls r3, r3, #3
 	adds r0, r6, r3
 	movs r1, #2
-	bl sub_0806D6E0
+	bl _._11Unk0806D64C
 	adds r0, r6, #0
 	mov r1, sb
 	bl sub_08087348

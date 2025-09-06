@@ -285,7 +285,7 @@ _0807E7DE:
 	bl _call_via_r1
 	adds r1, r0, #0
 	adds r0, r4, #0
-	bl sub_0806D7DC
+	bl sub_0806D7DC__11Unk0806D64C
 	ldr r3, [sp, #0x84]
 	movs r1, #0
 	ldrsb r1, [r3, r1]

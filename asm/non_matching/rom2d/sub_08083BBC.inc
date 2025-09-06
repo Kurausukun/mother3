@@ -15,7 +15,7 @@ sub_08083BBC:
 	mov r6, sl
 	adds r6, #0x24
 	adds r0, r6, #0
-	bl sub_0806D64C
+	bl __11Unk0806D64C
 	mov r7, sl
 	adds r7, #0x90
 	ldr r0, _08083CB0
@@ -60,7 +60,7 @@ sub_08083BBC:
 	movs r1, #1
 	mov r2, sb
 	mov r3, r8
-	bl sub_0806D744
+	bl sub_0806D744__11Unk0806D64C
 	str r5, [sp, #0x30]
 	str r5, [sp, #0x24]
 	str r5, [sp, #0x18]
@@ -70,20 +70,20 @@ sub_08083BBC:
 	movs r0, #0
 	strh r0, [r1, #2]
 	adds r0, r6, #0
-	bl sub_0806D814
+	bl sub_0806D814__11Unk0806D64C
 	add r1, sp, #0x3c
 	movs r0, #0x90
 	movs r2, #0x18
 	strh r0, [r1]
 	strh r2, [r1, #2]
 	adds r0, r6, #0
-	bl sub_0806D828
+	bl sub_0806D828__11Unk0806D64C
 	add r1, sp, #0x40
 	strh r4, [r1]
 	movs r0, #0
 	strh r0, [r1, #2]
 	adds r0, r6, #0
-	bl sub_0806D83C
+	bl sub_0806D83C__11Unk0806D64C
 	add r1, sp, #0x44
 	movs r0, #0
 	strb r0, [r1]
@@ -128,7 +128,7 @@ _._12TextAccessor:
 	adds r0, r4, #0
 	adds r0, #0x24
 	movs r1, #2
-	bl sub_0806D6E0
+	bl _._11Unk0806D64C
 	adds r0, r4, #0
 	adds r1, r5, #0
 	bl _._4Base
