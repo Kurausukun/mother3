@@ -470,7 +470,7 @@ _08097AFC:
 	movs r0, #0x38
 	bl __builtin_new
 	movs r1, #0xa3
-	bl sub_0806FF6C
+	bl __5SoundUs
 	str r0, [r4]
 	ldr r1, [r0, #0x1c]
 	adds r1, #0x70
@@ -14252,7 +14252,7 @@ sub_0809EBBC: @ 0x0809EBBC
 	bl sub_0806FFBC
 	adds r0, r5, #0
 	movs r1, #0
-	bl sub_08070048
+	bl play__5Soundb
 	pop {r4, r5}
 	pop {r0}
 	bx r0
@@ -15578,7 +15578,7 @@ sub_0809F6E0: @ 0x0809F6E0
 	adds r0, r4, #0
 	adds r0, #0x60
 	movs r1, #2
-	bl sub_0806FFA8
+	bl _._5Sound
 	ldr r0, _0809F70C @ =vt_09F4B6A8
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0

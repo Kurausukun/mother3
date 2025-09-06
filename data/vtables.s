@@ -1,13 +1,13 @@
     .section .data
 
-.global _vt.1D
-_vt.1D:
+.global _vt.6ResPtr
+_vt.6ResPtr:
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte _._1D
+	.4byte _._6ResPtr
 
 vt_09F44F18::
 	.2byte 0
@@ -92387,13 +92387,13 @@ vt_09F80668::
 	.2byte 0
 	.4byte sub_080C1484
 
-vt_09F80680::
+_vt.5Sound::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806FFA8
+	.4byte _._5Sound
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -92432,7 +92432,7 @@ vt_09F80680::
 	.4byte sub_0806FFBC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08070048
+	.4byte play__5Soundb
 	.2byte 0
 	.2byte 0
 	.4byte sub_080700E4
@@ -92444,7 +92444,7 @@ vt_09F80680::
 	.4byte sub_0807014C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080701AC
+	.4byte isPlaying__5Sound
 	.2byte 0
 	.2byte 0
 	.4byte sub_080701F8
@@ -93665,7 +93665,7 @@ vt_09F812F8::
 	.4byte sub_0806FFBC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08070048
+	.4byte play__5Soundb
 	.2byte 0
 	.2byte 0
 	.4byte sub_080700E4
@@ -93677,7 +93677,7 @@ vt_09F812F8::
 	.4byte sub_0807014C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080701AC
+	.4byte isPlaying__5Sound
 	.2byte 0
 	.2byte 0
 	.4byte sub_080701F8
@@ -99151,7 +99151,7 @@ vt_09F84AE8::
 	.4byte sub_0806FFBC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08070048
+	.4byte play__5Soundb
 	.2byte 0
 	.2byte 0
 	.4byte sub_080700E4
@@ -99163,7 +99163,7 @@ vt_09F84AE8::
 	.4byte sub_0807014C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080701AC
+	.4byte isPlaying__5Sound
 	.2byte 0
 	.2byte 0
 	.4byte sub_080701F8

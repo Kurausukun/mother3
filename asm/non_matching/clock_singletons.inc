@@ -406,10 +406,10 @@ _._5Clock:
 .Lfe19:
 	.size	 _._5Clock,.Lfe19-_._5Clock
 	.align	2, 0
-	.globl	sub_0806A1F8
-	.type	 sub_0806A1F8,function
+	.globl	sleep__5Clocki
+	.type	 sleep__5Clocki,function
 	.thumb_func
-sub_0806A1F8:
+sleep__5Clocki:
 .LFB20:
 .LM20:
 
@@ -604,7 +604,7 @@ _0806A390: .4byte _vt.8SysClock
 
 .LFE20:
 .Lfe20:
-	.size	 sub_0806A1F8,.Lfe20-sub_0806A1F8
+	.size	 sleep__5Clocki,.Lfe20-sleep__5Clocki
 	.align	2, 0
 	.globl	getTime__5Clock
 	.type	 getTime__5Clock,function

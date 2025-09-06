@@ -249,7 +249,7 @@ _0805D9C6:
 	.align 2, 0
 _0805DB64: .4byte vt_09F45058
 _0805DB68: .4byte 0x000003A9
-_0805DB6C: .4byte _vt.1D
+_0805DB6C: .4byte _vt.6ResPtr
 _0805DB70: .4byte 0x000003AA
 _0805DB74: .4byte 0x000003AB
 _0805DB78: .4byte _vt.3Unk

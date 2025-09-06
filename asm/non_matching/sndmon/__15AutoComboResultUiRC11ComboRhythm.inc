@@ -123,7 +123,7 @@ __15AutoComboResultUiRC11ComboRhythm:
 	.align 2, 0
 _08065974: .4byte vt_09F7E0D0
 _08065978: .4byte 0x0000027B
-_0806597C: .4byte _vt.1D
+_0806597C: .4byte _vt.6ResPtr
 _08065980: .4byte _vt.3Unk
 _08065984: .4byte _vt.12PostAppClock
 _08065988: .4byte gUnknown_080FCAB0

@@ -15,7 +15,7 @@ sub_080706A0:
 	adds r1, r0, #0
 	adds r0, r5, #0
 	adds r2, r4, #0
-	bl sub_0805D2F0
+	bl LoadRes
 	adds r0, r5, #0
 	pop {r4, r5}
 	pop {r1}

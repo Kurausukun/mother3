@@ -4,12 +4,17 @@
 #include "base.h"
 #include "singleton.h"
 
+struct SAREntry {
+    u32 offset;
+    u32 size;
+};
+
 class System : Base {
 public:
     struct SARHandle {
         SARHandle();
         virtual ~SARHandle();
-        u8* ptr;
+        char* ptr;
     };
 
     System();

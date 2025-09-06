@@ -3,6 +3,7 @@
 #include "battle/player.h"
 #include "battle/sndSystem.h"
 #include "battle/unit.h"
+#include "battle/fader.h"
 #include "structs.h"
 
 s32 sub_08072DFC();
@@ -316,15 +317,15 @@ u16 Battle::battle_138() {
     return _24;
 }
 
-s32 Battle::battle_140() {
+BattleFader* Battle::battle_140() {
     return _28;
 }
 
-s32 Battle::battle_148() {
+BattleFader* Battle::battle_148() {
     return _2c;
 }
 
-s32 Battle::battle_150() {
+BattleFader* Battle::battle_150() {
     return _30;
 }
 

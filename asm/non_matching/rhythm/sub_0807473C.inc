@@ -13,7 +13,7 @@ sub_0807473C:
 	bl sub_08069C84__3IrcUiG5Intr2
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_0806FFA8
+	bl _._5Sound
 	pop {r4, r5}
 	pop {r0}
 	bx r0

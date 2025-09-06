@@ -470,7 +470,7 @@ _0807D658:
 	b _0807D804
 	.align 2, 0
 _0807D7E0: .4byte vt_09F827A8
-_0807D7E4: .4byte _vt.1D
+_0807D7E4: .4byte _vt.6ResPtr
 _0807D7E8: .4byte gUnknown_08CE39F8
 _0807D7EC: .4byte vt_09F7E458
 _0807D7F0: .4byte 0x00000414

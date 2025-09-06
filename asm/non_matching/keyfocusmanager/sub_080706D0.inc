@@ -23,10 +23,10 @@ sub_080706D0:
 	add r5, sp, #0x10
 	adds r0, r5, #0
 	adds r2, r4, #0
-	bl sub_0805D2F0
+	bl LoadRes
 	mov r0, sp
 	adds r1, r5, #0
-	bl __9BXTHandleRC6BXTRef
+	bl __9BXTHandleRC6ResPtr
 	mov r0, r8
 	mov r1, sp
 	adds r2, r6, #0
@@ -44,5 +44,5 @@ sub_080706D0:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08070734: .4byte _vt.1D
+_08070734: .4byte _vt.6ResPtr
 	.syntax divided

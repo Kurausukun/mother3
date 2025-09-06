@@ -38,7 +38,7 @@ sub_0808B218:
 _0808B268: .4byte vt_09F82898
 _0808B26C: .4byte 0x00000291
 _0808B270: .4byte 0x00000283
-_0808B274: .4byte _vt.1D
+_0808B274: .4byte _vt.6ResPtr
 .global __9DebugMenu
 __9DebugMenu:
 	push {r4, r5, r6, r7, lr}
@@ -516,7 +516,7 @@ _0808B5EC:
 	b _0808B688
 	.align 2, 0
 _0808B664: .4byte vt_09F85B28
-_0808B668: .4byte _vt.1D
+_0808B668: .4byte _vt.6ResPtr
 _0808B66C: .4byte gUnknown_08CE39F8
 _0808B670: .4byte vt_09F7E458
 _0808B674: .4byte 0x00000564
@@ -918,7 +918,7 @@ _0808B688:
 _0808BA10: .4byte 0x00000564
 _0808BA14: .4byte 0x0000028A
 _0808BA18: .4byte 0x0000069C
-_0808BA1C: .4byte _vt.1D
+_0808BA1C: .4byte _vt.6ResPtr
 _0808BA20: .4byte 0x00000764
 _0808BA24: .4byte _vt.3Unk
 _0808BA28: .4byte _vt.10UpKeyPress

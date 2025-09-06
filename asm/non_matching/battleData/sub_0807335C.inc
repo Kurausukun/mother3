@@ -24,13 +24,13 @@ sub_0807335C:
 _0807338C:
 	mov r0, sp
 	adds r1, r6, #0
-	bl sub_0806FF6C
+	bl __5SoundUs
 	mov r0, sp
 	movs r1, #0
-	bl sub_08070048
+	bl play__5Soundb
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806FFA8
+	bl _._5Sound
 	b _0807343C
 _080733A6:
 	bl sub_08074614
@@ -82,10 +82,10 @@ _080733D6:
 _08073408:
 	mov r0, sp
 	adds r1, r6, #0
-	bl sub_0806FF6C
+	bl __5SoundUs
 	mov r0, sp
 	movs r1, #0
-	bl sub_08070048
+	bl play__5Soundb
 	bl sub_08074614
 	ldr r1, [r0, #0x1c]
 	adds r1, #0xc8
@@ -99,7 +99,7 @@ _08073408:
 	bl sub_080702C0
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806FFA8
+	bl _._5Sound
 _0807343C:
 	add sp, #0x38
 	pop {r4, r5, r6}

@@ -80,7 +80,7 @@ sub_08071268:
 	bx r1
 	.align 2, 0
 _0807131C: .4byte vt_09F80BB0
-_08071320: .4byte _vt.1D
+_08071320: .4byte _vt.6ResPtr
 _08071324: .4byte 0x0000027B
 _08071328: .4byte _vt.3Unk
 _0807132C: .4byte _vt.8AppClock

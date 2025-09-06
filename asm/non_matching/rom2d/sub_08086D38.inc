@@ -11,7 +11,7 @@ sub_08086D38:
 	adds r4, r4, r0
 	ldrh r1, [r4, #2]
 	adds r0, r6, #0
-	bl sub_0806FF6C
+	bl __5SoundUs
 	ldr r0, _08086D68
 	str r0, [r6, #0x1c]
 	strh r5, [r6, #0x3c]

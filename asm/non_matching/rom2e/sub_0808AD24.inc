@@ -24,13 +24,13 @@ sub_0808AD24:
 	str r6, [r5, #0x2c]
 	ldrh r1, [r6, #8]
 	add r0, sp, #4
-	bl sub_0806FF6C
+	bl __5SoundUs
 	add r0, sp, #4
 	movs r1, #0
-	bl sub_08070048
+	bl play__5Soundb
 	add r0, sp, #4
 	movs r1, #2
-	bl sub_0806FFA8
+	bl _._5Sound
 	bl get__12ClockManager
 	adds r6, r0, #0
 	add r0, sp, #4

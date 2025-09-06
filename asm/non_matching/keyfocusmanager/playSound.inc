@@ -7,13 +7,13 @@ playSound:
 	cmp r1, #0
 	beq _08070846
 	mov r0, sp
-	bl sub_0806FF6C
+	bl __5SoundUs
 	mov r0, sp
 	movs r1, #0
-	bl sub_08070048
+	bl play__5Soundb
 	mov r0, sp
 	movs r1, #2
-	bl sub_0806FFA8
+	bl _._5Sound
 _08070846:
 	add sp, #0x38
 	pop {r0}

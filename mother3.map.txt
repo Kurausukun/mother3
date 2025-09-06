@@ -493,7 +493,7 @@ Discarded input sections
                 0x00000000       0x20 build/mother3/asm/libc.o
  .data          0x00000000        0x0 build/mother3/src/rom3.o
  .bss           0x00000000        0x0 build/mother3/src/rom3.o
- .gnu.linkonce.d._vt.1D
+ .gnu.linkonce.d._vt.6ResPtr
                 0x00000000       0x10 build/mother3/src/rom3.o
  .gnu.linkonce.d._vt.13SystemManager
                 0x00000000       0x18 build/mother3/src/rom3.o
@@ -5031,7 +5031,7 @@ rom             0x08000000  0x2000000
                 0x0805d2b4                sub_0805D2B4
                 0x0805d2d4                sub_0805D2D4
                 0x0805d2dc                sub_0805D2DC
-                0x0805d2f0                sub_0805D2F0
+                0x0805d2f0                LoadRes
  build/mother3/src/battle/system.o(.text)
  .text          0x0805d328      0x478 build/mother3/src/battle/system.o
                 0x0805d328                init__15SystemAllocatorP3FitUi
@@ -5658,7 +5658,7 @@ rom             0x08000000  0x2000000
                 0x0806a1bc                getRTTI__5Clock
                 0x0806a1c8                __5Clock
                 0x0806a1e4                _._5Clock
-                0x0806a1f8                sub_0806A1F8
+                0x0806a1f8                sleep__5Clocki
                 0x0806a394                getTime__5Clock
                 0x0806a398                _GLOBAL_.I.PreSysClockSingleton_get__Fv
                 0x0806a42c                getTime__12PostSysClock
@@ -6159,14 +6159,14 @@ rom             0x08000000  0x2000000
  build/mother3/src/battle/keyfocusmanager.o(.text)
  .text          0x0806ff38     0x2630 build/mother3/src/battle/keyfocusmanager.o
                 0x0806ff38                sub_0806FF38
-                0x0806ff6c                sub_0806FF6C
-                0x0806ffa8                sub_0806FFA8
+                0x0806ff6c                __5SoundUs
+                0x0806ffa8                _._5Sound
                 0x0806ffbc                sub_0806FFBC
-                0x08070048                sub_08070048
+                0x08070048                play__5Soundb
                 0x080700e4                sub_080700E4
                 0x08070118                sub_08070118
                 0x0807014c                sub_0807014C
-                0x080701ac                sub_080701AC
+                0x080701ac                isPlaying__5Sound
                 0x080701f8                sub_080701F8
                 0x08070250                sub_08070250
                 0x080702a8                sub_080702A8
@@ -7028,7 +7028,7 @@ rom             0x08000000  0x2000000
                 0x08081f8c                sub_08081F8C
                 0x08081fc8                sub_08081FC8
                 0x08081ff4                sub_08081FF4
-                0x08082020                sub_08082020
+                0x08082020                get__16MonsterSkillRTTI
                 0x08082028                sub_08082028
                 0x08082034                sub_08082034
                 0x08082044                sub_08082044
@@ -7430,11 +7430,11 @@ rom             0x08000000  0x2000000
  build/mother3/src/battle/archive.o(.text)
  .text          0x08088d44      0x778 build/mother3/src/battle/archive.o
                 0x08088d44                __9BXTHandle
-                0x08088d58                __9BXTHandleRC6BXTRef
+                0x08088d58                __9BXTHandleRC6ResPtr
                 0x08088d7c                _._9BXTHandle
-                0x08088d9c                init__9BXTHandleRC6BXTRef
+                0x08088d9c                init__9BXTHandleRC6ResPtr
                 0x08088dc0                type__C9BXTHandleRC6BXTRef
-                0x08088ddc                read__9BXTHandleRC6BXTRef
+                0x08088ddc                read__9BXTHandleRC6ResPtr
                 0x08088dec                count__C9BXTHandle
                 0x08088df0                getMessage__9BXTHandleUi
                 0x08088e18                __15Struct_09F85088
@@ -8034,7 +8034,7 @@ rom             0x08000000  0x2000000
  .text          0x08097768        0x0 tools/agbcc/lib/libc.a(impure.o)
  build/mother3/src/rom3.o(.text)
  .text          0x08097768       0x4c build/mother3/src/rom3.o
-                0x08097768                _._1D
+                0x08097768                _._6ResPtr
                 0x08097788                init__13SystemManager
                 0x08097798                getName__13SystemManager
                 0x080977a0                temp_080977A0
@@ -17765,7 +17765,7 @@ rom             0x08000000  0x2000000
                 0x09f44ef4                __mb_cur_max
  build/mother3/data/vtables.o(.data)
  .data          0x09f44f08    0xbb0f8 build/mother3/data/vtables.o
-                0x09f44f08                _vt.1D
+                0x09f44f08                _vt.6ResPtr
                 0x09f44f18                vt_09F44F18
                 0x09f44f28                _vt.15SystemAllocator
                 0x09f44f38                _vt.6System
@@ -18287,7 +18287,7 @@ rom             0x08000000  0x2000000
                 0x09f805b8                vt_09F805B8
                 0x09f805d0                vt_09F805D0
                 0x09f80668                vt_09F80668
-                0x09f80680                vt_09F80680
+                0x09f80680                _vt.5Sound
                 0x09f80770                vt_09F80770
                 0x09f807f0                vt_09F807F0
                 0x09f80960                vt_09F80960

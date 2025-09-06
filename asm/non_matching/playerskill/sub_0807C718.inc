@@ -197,7 +197,7 @@ sub_0807C718:
 	bx r1
 	.align 2, 0
 _0807C8DC: .4byte vt_09F82558
-_0807C8E0: .4byte _vt.1D
+_0807C8E0: .4byte _vt.6ResPtr
 _0807C8E4: .4byte 0x040000D4
 _0807C8E8: .4byte 0x80000010
 _0807C8EC: .4byte _vt.3Unk
