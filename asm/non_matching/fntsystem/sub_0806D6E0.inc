@@ -31,7 +31,7 @@ _0806D70A:
 	adds r0, r4, #0
 	adds r0, #0x44
 	movs r1, #2
-	bl sub_0806D580
+	bl _._11Unk0806D548
 	adds r0, r4, #0
 	adds r0, #0x30
 	movs r1, #2

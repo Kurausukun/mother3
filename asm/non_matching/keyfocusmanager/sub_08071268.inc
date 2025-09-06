@@ -15,7 +15,7 @@ sub_08071268:
 	adds r6, r7, #0
 	adds r6, #0x48
 	adds r0, r6, #0
-	bl sub_0806D548
+	bl __11Unk0806D548
 	movs r0, #0x5c
 	adds r0, r0, r7
 	mov r8, r0
@@ -39,7 +39,7 @@ sub_08071268:
 	bl sub_080706A0
 	adds r0, r6, #0
 	add r1, sp, #4
-	bl sub_0806D5AC
+	bl sub_0806D5AC__11Unk0806D548P4Unk2
 	ldr r4, _08071320
 	str r4, [sp, #0xc]
 	ldr r1, _08071324

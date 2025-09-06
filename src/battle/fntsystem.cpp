@@ -1,6 +1,8 @@
 // Auto-generated source file
 #include "global.h"
 
+extern "C" void sub_08090F8C(void*, void*);
+
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D2CC.inc", void sub_0806D2CC());
 
 struct Unk {
@@ -83,15 +85,87 @@ void Unk0806D478::sub_0806D52C(Unk2* arg0) {
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D538.inc", void sub_0806D538());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D53C.inc", void sub_0806D53C());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D540.inc", void sub_0806D540());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D548.inc", void sub_0806D548());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D55C.inc", void sub_0806D55C());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D580.inc", void sub_0806D580());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D5AC.inc", void sub_0806D5AC());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D5F0.inc", void sub_0806D5F0());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D60C.inc", void sub_0806D60C());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D618.inc", void sub_0806D618());
+
+class Unk0806D548 {
+public:
+    u16 _0;
+    u8* _4;
+    u16 _8;
+    u32 _C;
+
+    Unk0806D548();
+    Unk0806D548(Unk2*);
+    virtual ~Unk0806D548();
+    int sub_0806D5AC(Unk2*);
+    int sub_0806D5F0(Unk2*);
+    void sub_0806D60C(Unk2*);
+    void sub_0806D618(Unk2*);
+};
+
+Unk0806D548::Unk0806D548() {
+    _0 = 0;
+    _4 = NULL;
+    _8 = 0;
+    _C = 0;
+}
+
+Unk0806D548::Unk0806D548(Unk2* arg0) {
+    _0 = 0;
+    _4 = NULL;
+    _8 = 0;
+    _C = 0;
+    sub_0806D5AC(arg0);
+}
+
+Unk0806D548::~Unk0806D548() {
+    delete[] _4;
+}
+
+int Unk0806D548::sub_0806D5AC(Unk2* arg0) {
+    delete[] _4;
+    _4 = NULL;
+
+    _0 = sub_0806D5F0(arg0);
+
+    switch (_0) {
+    case 1:
+        sub_0806D60C(arg0);
+        break;
+    case 2:
+        sub_0806D618(arg0);
+        break;
+    }
+
+    return 1;
+}
+
+int Unk0806D548::sub_0806D5F0(Unk2* arg0) {
+    if (arg0->_0->_0 != 0x20676363) {  // " gcc"
+        return 1;
+    } else {
+        return arg0->_0->_4;
+    }
+}
+
+void Unk0806D548::sub_0806D60C(Unk2* arg0) {
+    this->_8 = arg0->_4 >> 5;
+    this->_C = (u32)arg0->_0;
+}
+
+void Unk0806D548::sub_0806D618(Unk2* arg0) {
+    Unk* arg1 = arg0->_0;
+
+    this->_8 = arg1->_8;
+
+    // get the size of the compressed data
+    this->_4 = new u8[((*(u32*)&arg1->_C) >> 8) + 0x20];
+    sub_08090F8C(&arg1->_C, this->_4);  // LZ77UnCompReadNormalWrite8bit
+    this->_C = (u32)this->_4;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D644.inc", void sub_0806D644());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D648.inc", void sub_0806D648());
+
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D64C.inc", void sub_0806D64C());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D6E0.inc", void sub_0806D6E0());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D744.inc", void sub_0806D744());

@@ -20,7 +20,7 @@ sub_0806D64C:
 	bl sub_08087ED8
 	adds r0, r7, #0
 	adds r0, #0x44
-	bl sub_0806D548
+	bl __11Unk0806D548
 	adds r0, r7, #0
 	adds r0, #0x58
 	bl __11Unk0806D478

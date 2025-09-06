@@ -14,7 +14,7 @@ sub_0806D744:
 	adds r0, r4, #0
 	adds r0, #0x44
 	adds r1, r5, #0
-	bl sub_0806D5AC
+	bl sub_0806D5AC__11Unk0806D548P4Unk2
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1

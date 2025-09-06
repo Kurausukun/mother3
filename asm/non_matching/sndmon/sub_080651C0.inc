@@ -33,7 +33,7 @@ _080651EC:
 	adds r5, r7, #0
 	adds r5, #0xfc
 	adds r0, r5, #0
-	bl sub_0806D548
+	bl __11Unk0806D548
 	movs r0, #0x88
 	lsls r0, r0, #1
 	adds r6, r7, r0
@@ -55,7 +55,7 @@ _080651EC:
 	bl sub_080706A0
 	adds r0, r5, #0
 	add r1, sp, #4
-	bl sub_0806D5AC
+	bl sub_0806D5AC__11Unk0806D548P4Unk2
 	ldr r4, _08065298
 	str r4, [sp, #0xc]
 	movs r1, #0xa1

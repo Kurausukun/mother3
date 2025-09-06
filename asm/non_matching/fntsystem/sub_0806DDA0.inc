@@ -97,7 +97,7 @@ sub_0806DDA0:
 	adds r0, r7, #0
 	adds r0, #0x58
 	mov r1, sb
-	bl sub_0806D5AC
+	bl sub_0806D5AC__11Unk0806D548P4Unk2
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1

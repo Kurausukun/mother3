@@ -13,7 +13,7 @@ sub_080652A8:
 	adds r0, r4, #0
 	adds r0, #0xfc
 	movs r1, #2
-	bl sub_0806D580
+	bl _._11Unk0806D548
 	adds r0, r4, #0
 	adds r1, r5, #0
 	bl _._4Base

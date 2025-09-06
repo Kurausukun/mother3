@@ -91365,13 +91365,13 @@ _vt.11Unk0806D478::
 	.2byte 0
 	.4byte _._11Unk0806D478
 
-vt_09F7FC40::
+_vt.11Unk0806D548::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806D580
+	.4byte _._11Unk0806D548
 
 vt_09F7FC50::
 	.2byte 0
