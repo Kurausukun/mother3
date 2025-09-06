@@ -65,7 +65,7 @@ int Unk0806D478::sub_0806D4D0(Unk2* arg0) {
 }
 
 int Unk0806D478::sub_0806D504(Unk2* arg0) {
-    if (arg0->_0->_0 != 0x206C6363) {
+    if (arg0->_0->_0 != 0x206C6363) {  // " lcc"
         return 1;
     } else {
         return arg0->_0->_4;
