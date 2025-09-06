@@ -127,7 +127,7 @@ _0808DC88:
 	bl _call_via_r1
 	adds r1, r0, #0
 	adds r0, r4, #0
-	bl sub_0806D7DC
+	bl sub_0806D7DC__11Unk0806D64C
 	ldr r0, [sp, #0x28]
 	ldrb r1, [r0]
 	ldr r0, [sp, #0x2c]

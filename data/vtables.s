@@ -91357,29 +91357,29 @@ vt_09F7FC18::
 	.2byte 0
 	.4byte sub_080C1424
 
-vt_09F7FC30::
+_vt.11Unk0806D478::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806D4B0
+	.4byte _._11Unk0806D478
 
-vt_09F7FC40::
+_vt.11Unk0806D548::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806D580
+	.4byte _._11Unk0806D548
 
-vt_09F7FC50::
+_vt.11Unk0806D64C::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806D6E0
+	.4byte _._11Unk0806D64C
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -91415,40 +91415,40 @@ vt_09F7FC50::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806D744
+	.4byte sub_0806D744__11Unk0806D64C
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806D79C
+	.4byte sub_0806D79C__11Unk0806D64C
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806D7D0
+	.4byte sub_0806D7D0__11Unk0806D64C
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806D7DC
+	.4byte sub_0806D7DC__11Unk0806D64C
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806D814
+	.4byte sub_0806D814__11Unk0806D64C
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806D828
+	.4byte sub_0806D828__11Unk0806D64C
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806D83C
+	.4byte sub_0806D83C__11Unk0806D64C
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806D850
+	.4byte sub_0806D850__11Unk0806D64C
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806D854
+	.4byte sub_0806D854__11Unk0806D64C
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806D860
+	.4byte sub_0806D860__11Unk0806D64C
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806D868
+	.4byte sub_0806D868__11Unk0806D64C
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806D870
+	.4byte sub_0806D870__11Unk0806D64C
 
 vt_09F7FD18::
 	.2byte 0
@@ -99620,21 +99620,21 @@ vt_09F84F00::
 	.2byte 0
 	.4byte sub_08087AD4
 
-vt_09F85018::
+_vt.11Unk08087ED8::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08087F10
+	.4byte _._11Unk08087ED8
 
-vt_09F85028::
+_vt.11Unk08088018::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08088024
+	.4byte _._11Unk08088018
 
 vt_09F85038::
 	.2byte 0

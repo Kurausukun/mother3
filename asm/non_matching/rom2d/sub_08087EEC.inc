@@ -16,5 +16,5 @@ sub_08087EEC:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08087F0C: .4byte vt_09F85018
+_08087F0C: .4byte _vt.11Unk08087ED8
 	.syntax divided

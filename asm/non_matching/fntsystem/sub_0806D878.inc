@@ -17,7 +17,7 @@ sub_0806D878:
 	adds r2, #0x24
 	adds r3, r5, #0
 	adds r3, #0x28
-	bl sub_08088044
+	bl sub_08088044__11Unk08088018UsPvT2
 	ldrh r1, [r6]
 	ldr r0, _0806D8E4
 	ands r0, r1

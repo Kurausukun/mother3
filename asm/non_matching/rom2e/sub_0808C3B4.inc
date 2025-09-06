@@ -11,7 +11,7 @@ sub_0808C3B4:
 	bne _0808C476
 	adds r0, #0xc
 	movs r1, #0
-	bl sub_0806D7DC
+	bl sub_0806D7DC__11Unk0806D64C
 	movs r4, #0
 _0808C3D0:
 	movs r0, #0x5c
@@ -72,7 +72,7 @@ _0808C402:
 	ldr r3, _0808C480
 	adds r0, r6, r3
 	movs r1, #0
-	bl sub_0806D7DC
+	bl sub_0806D7DC__11Unk0806D64C
 	movs r1, #0xe1
 	lsls r1, r1, #3
 	adds r0, r6, r1
