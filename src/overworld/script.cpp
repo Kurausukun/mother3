@@ -314,15 +314,16 @@ u16 cmd_05(s32* sp) {
 u16 cmd_06(s32* sp) {
     s32 idx;
     Object* sprite;
+    int tmp;
 
     if (gGame.state_1 != 5)
         return 0;
 
     idx = scriptstack_peek(sp, 0);
     sprite = get_obj(idx);
-    if (sprite == 0 || (sprite->_ca << 28 < 0))
+    if (sprite == 0 || (tmp = sprite->_ca_8)) {
         return 0;
-
+    }
     scriptstack_pop();
     return 1;
 }
@@ -4114,9 +4115,9 @@ u16 cmd_65(s32 * sp) {
     if (obj) {
         do {
             if (b > -5 && b < 9) {
-                obj->_8c[2] = b;
+                obj->_8e[0] = b;
                 if (b > 4)
-                    obj->_8e[2] = sub_08036960(obj, obj->_8b) - 1;
+                    obj->_90[1] = sub_08036960(obj, obj->_8b) - 1;
             }
         } while (0);
     }
@@ -4461,7 +4462,7 @@ u16 cmd_C5(s32 * sp) {
             obj2 = get_obj_direct(gGame._82b9[0xb7] + 4);
             sub_08033374(obj2->character, 16);
             sub_08033484(obj2->character);
-            obj2->_8e[2] = 0x3c;
+            obj2->_90[1] = 0x3c;
             break;
         }
         gSomeBlend._121b8_3 = 1;

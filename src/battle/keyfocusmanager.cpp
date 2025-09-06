@@ -1,15 +1,37 @@
 // Auto-generated source file
 #include "global.h"
+#include "battle/system.h"
+#include "battle/clock.h"
+#include "battle/archive.h"
+#include "gba/m4a_internal.h"
+
+
+struct Sound : Base {
+    Sound(u16 idx);
+    virtual ~Sound();
+
+    void play(bool fade_in);
+    bool isPlaying();
+
+    u16 idx;
+    MusicPlayer* player;
+    u32 _28;
+    u32 _2c;
+    u8 _30;
+    u32 _34;
+};
 
 extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_0806FF38.inc", void sub_0806FF38());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_0806FF6C.inc", void sub_0806FF6C());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_0806FFA8.inc", void sub_0806FFA8());
+extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_0806FF6C.inc", void __5SoundUs());
+
+Sound::~Sound() {}
+
 extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_0806FFBC.inc", void sub_0806FFBC());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070048.inc", void sub_08070048());
+extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070048.inc", void play__5Soundb());
 extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_080700E4.inc", void sub_080700E4());
 extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070118.inc", void sub_08070118());
 extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_0807014C.inc", void sub_0807014C());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_080701AC.inc", void sub_080701AC());
+extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_080701AC.inc", void isPlaying__5Sound());
 extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_080701F8.inc", void sub_080701F8());
 extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070250.inc", void sub_08070250());
 extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_080702A8.inc", void sub_080702A8());
@@ -32,17 +54,62 @@ extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070654.inc", void su
 extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/randS32.inc", void randS32());
 extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_0807066C.inc", void sub_0807066C());
 extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_0807067C.inc", void sub_0807067C());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/setsleep.inc", void setsleep());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_080706A0.inc", void sub_080706A0());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_080706D0.inc", void sub_080706D0());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070738.inc", void sub_08070738());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070754.inc", void sub_08070754());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070770.inc", void sub_08070770());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_0807078C.inc", void sub_0807078C());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_080707A8.inc", void sub_080707A8());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_080707C4.inc", void sub_080707C4());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/PlaySoundBlocking.inc", void PlaySoundBlocking());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/playSound.inc", void playSound());
+
+extern "C" void setsleep(s32 duration) {
+    ClockManager::get()->sleep(duration);
+}
+
+extern "C" ResPtr sub_080706A0(u16 id) {
+    System::SARHandle* archive = SystemManager::get()->getHandle();
+    return LoadRes(archive, id);
+}
+
+extern "C" Msg sub_080706D0(u16 id, u16 idx) {
+    System::SARHandle* archive = SystemManager::get()->getHandle();
+    return BXTHandle(LoadRes(archive, id)).getMessage(idx);
+}
+
+extern "C" u32 sub_08070738() {
+    return SystemManager::get()->sub_0805D5C0();
+}
+
+extern "C" u32 sub_08070754() {
+    return SystemManager::get()->sub_0805D5D0();
+}
+
+extern "C" u32 sub_08070770() {
+    return SystemManager::get()->sub_0805D604();
+}
+
+extern "C" u32 sub_0807078C() {
+    return SystemManager::get()->sub_0805D638();
+}
+
+extern "C" u32 sub_080707A8() {
+    return SystemManager::get()->getGameProgression();
+}
+
+extern "C" int sub_080707C4(int r0) {
+    return SystemManager::get()->sub_0805D6F8(r0);
+}
+
+extern "C" void PlaySoundBlocking(u16 idx) {
+    if (idx) {
+        Sound snd(idx);
+        snd.play(0);
+        while (snd.isPlaying() == 1) {
+            setsleep(1);
+        }
+    }
+}
+
+extern "C" void playSound(u16 idx) {
+    if (idx) {
+        Sound snd(idx);
+        snd.play(0);
+    }
+}
+
 extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_0807084C.inc", void sub_0807084C());
 extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_080708A8.inc", void sub_080708A8());
 extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_080708E0.inc", void sub_080708E0());

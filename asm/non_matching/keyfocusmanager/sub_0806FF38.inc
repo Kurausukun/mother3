@@ -23,5 +23,5 @@ sub_0806FF38:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0806FF68: .4byte vt_09F80680
+_0806FF68: .4byte _vt.5Sound
 	.syntax divided

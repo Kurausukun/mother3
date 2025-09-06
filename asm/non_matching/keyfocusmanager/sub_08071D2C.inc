@@ -72,7 +72,7 @@ sub_08071D2C:
 _08071DC8: .4byte vt_09F80F08
 _08071DCC: .4byte 0x00000291
 _08071DD0: .4byte 0x00000283
-_08071DD4: .4byte _vt.1D
+_08071DD4: .4byte _vt.6ResPtr
 _08071DD8: .4byte _vt.3Unk
 _08071DDC: .4byte _vt.11PreAppClock
 _08071DE0: .4byte gUnknown_08104370

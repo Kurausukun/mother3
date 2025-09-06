@@ -110,7 +110,7 @@ sub_08083BBC:
 	.align 2, 0
 _08083CAC: .4byte vt_09F83D28
 _08083CB0: .4byte gUnknown_08CE39F8
-_08083CB4: .4byte _vt.1D
+_08083CB4: .4byte _vt.6ResPtr
 _08083CB8: .4byte vt_09F7E458
 thumb_func_start _._12TextAccessor
 _._12TextAccessor:

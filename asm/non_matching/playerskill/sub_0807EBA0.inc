@@ -440,7 +440,7 @@ _0807ED1E:
 _0807EF78: .4byte vt_09F82990
 _0807EF7C: .4byte 0x00000291
 _0807EF80: .4byte 0x00000283
-_0807EF84: .4byte _vt.1D
+_0807EF84: .4byte _vt.6ResPtr
 _0807EF88: .4byte _vt.3Unk
 _0807EF8C: .4byte _vt.12LeftKeyPress
 _0807EF90: .4byte gUnknown_08109EC0

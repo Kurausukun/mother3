@@ -56,5 +56,5 @@ _0808704C: .4byte vt_09F84D00
 _08087050: .4byte vt_09F84D58
 _08087054: .4byte 0x000003A5
 _08087058: .4byte 0x00000287
-_0808705C: .4byte _vt.1D
+_0808705C: .4byte _vt.6ResPtr
 	.syntax divided

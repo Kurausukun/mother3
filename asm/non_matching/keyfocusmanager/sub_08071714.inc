@@ -93,7 +93,7 @@ _0807175C:
 	bx r1
 	.align 2, 0
 _080717DC: .4byte vt_09F80C88
-_080717E0: .4byte _vt.1D
+_080717E0: .4byte _vt.6ResPtr
 _080717E4: .4byte 0x040000D4
 _080717E8: .4byte 0x81000040
 _080717EC: .4byte _vt.3Unk

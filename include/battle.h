@@ -8,6 +8,7 @@ class Unit;
 class Player;
 class Monster;
 class Guest;
+class BattleFader;
 
 class BgClass : public Base {
 public:
@@ -165,9 +166,9 @@ public:
     virtual void battle_128();
     virtual void battle_130();
     virtual u16 battle_138();
-    virtual s32 battle_140();
-    virtual s32 battle_148();
-    virtual s32 battle_150();
+    virtual BattleFader* battle_140();
+    virtual BattleFader* battle_148();
+    virtual BattleFader* battle_150();
     virtual s32 battle_158();
     virtual bool battle_160();
     virtual Struct160* battle_168();
@@ -209,9 +210,9 @@ public:
 
     s32 _20;
     s32 _24;
-    s32 _28;
-    s32 _2c;
-    s32 _30;
+    BattleFader* _28;
+    BattleFader* _2c;
+    BattleFader* _30;
     s32 _34;
     s32 _38;
     s32 mRoundNo;

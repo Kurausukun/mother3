@@ -152,7 +152,7 @@ _0806F14A:
 	b _0806F1A2
 	.align 2, 0
 _0806F178: .4byte vt_09F80238
-_0806F17C: .4byte _vt.1D
+_0806F17C: .4byte _vt.6ResPtr
 _0806F180:
 	movs r0, #0x38
 	bl __builtin_new

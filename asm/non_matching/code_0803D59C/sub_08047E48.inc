@@ -41,5 +41,5 @@ sub_08047E48:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08047EA0: .4byte gUnknown_0201A31C
+_08047EA0: .4byte gItemMenuTextBuffer
 	.syntax divided

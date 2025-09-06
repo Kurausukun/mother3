@@ -12,7 +12,7 @@ sub_080741BC:
 	ldr r1, [r1, #0x14]
 	bl _call_via_r1
 	adds r4, r0, #0
-	bl sub_08082020
+	bl get__16MonsterSkillRTTI
 	cmp r4, r0
 	bne _080741E0
 	movs r5, #1

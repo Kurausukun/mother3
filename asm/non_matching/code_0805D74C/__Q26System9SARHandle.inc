@@ -25,5 +25,5 @@ __Q26System9SARHandle:
 	.align 2, 0
 _080687A0: .4byte vt_09F7EA80
 _080687A4: .4byte gUnknown_09C90960
-_080687A8: .4byte _vt.1D
+_080687A8: .4byte _vt.6ResPtr
 	.syntax divided

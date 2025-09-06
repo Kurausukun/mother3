@@ -400,7 +400,7 @@ _080844EA:
 	bx r1
 	.align 2, 0
 _080846BC: .4byte vt_09F83F20
-_080846C0: .4byte _vt.1D
+_080846C0: .4byte _vt.6ResPtr
 _080846C4: .4byte gUnknown_08CE39F8
 _080846C8: .4byte vt_09F83E40
 _080846CC: .4byte 0x0000106C

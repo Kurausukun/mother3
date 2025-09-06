@@ -130,7 +130,7 @@ __9AutoComboUiRC11ComboRhythm:
 	.align 2, 0
 _08065720: .4byte vt_09F7DF60
 _08065724: .4byte 0x0000027B
-_08065728: .4byte _vt.1D
+_08065728: .4byte _vt.6ResPtr
 _0806572C: .4byte _vt.3Unk
 _08065730: .4byte _vt.12PostAppClock
 _08065734: .4byte gUnknown_080FC428

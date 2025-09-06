@@ -1,5 +1,15 @@
 // Auto-generated source file
 #include "global.h"
+#include "battle.h"
+#include "battle/monster.h"
+#include "battle/monsterSkill.h"
+#include "battle/unitTarget.h"
+#include "battle/fader.h"
+
+extern "C" s32 sub_08069558(s32 min, s32 max, s32 step, s32 duration);
+extern "C" BattleFader* sub_08072568();
+extern "C" BattleFader* sub_08072588();
+extern "C" BattleFader* sub_080725A8();
 
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_080736F8.inc", void sub_080736F8());
 extern "C" ASM_FUNC("asm/non_matching/rhythm/hitPlayer.inc", void hitPlayer());
@@ -24,14 +34,104 @@ extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08074134.inc", void sub_0807413
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08074160.inc", void sub_08074160());
 extern "C" ASM_FUNC("asm/non_matching/rhythm/getMonsterSkill.inc", void getMonsterSkill());
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_080741BC.inc", void sub_080741BC());
-extern "C" ASM_FUNC("asm/non_matching/rhythm/IsMonsterSkillAndType.inc", void IsMonsterSkillAndType());
-extern "C" ASM_FUNC("asm/non_matching/rhythm/triggerMonsterSkill.inc", void triggerMonsterSkill());
-extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_080742EC.inc", void sub_080742EC());
-extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08074338.inc", void sub_08074338());
-extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08074394.inc", void sub_08074394());
-extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08074414__FiiibN23.inc", void sub_08074414__FiiibN23());
-extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08074494.inc", void sub_08074494());
-extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08074518.inc", void sub_08074518());
+
+extern "C" u8 IsMonsterSkillAndType(Action* action, u16 id) {
+    return action && action->getRTTI() == MonsterSkillRTTI::get() && action->id() == id;
+}
+
+extern "C" bool triggerMonsterSkill(Action* action) {
+    UnitTarget ut(action->target(), action->getUser());
+    bool result = 0;
+    if (ut.attackdata_c8() == 0) {
+        for (int i = 0; i < ut.attackdata_110(); i++) {
+            action->addTarget(ut.attackdata_118(i));
+        }
+        result = action->fire();
+    }
+    delete action;
+    return result;
+}
+
+extern "C" bool sub_080742EC(Action* action, Monster* monster) {
+    action->addTarget(monster);
+    bool result = action->fire();
+    delete action;
+    return result;
+}
+
+extern "C" bool sub_08074338(Action* action, s32 count, Monster** monsters) {
+    for (int i = 0; i < count; i++) {
+        action->addTarget(monsters[i]);
+    }
+    bool result = action->fire();
+    delete action;
+    return result;
+}
+
+extern "C" void sub_08074394(s32 min, s32 max, s32 duration, bool r3, bool r4, bool r5) {
+    for (int i = 0; i <= duration; i++) {
+        s32 value = sub_08069558(min, max, i, duration);
+        if (r3 == 1) {
+            sub_08072568()->setBAll(value);
+        }
+        if (r4 == 1) {
+            sub_08072588()->setBAll(value);
+        }
+        if (r5 == 1) {
+            sub_080725A8()->setBAll(value);
+        }
+        setsleep(1);
+    }
+}
+
+extern "C" void sub_08074414__FiiibN23(s32 min, s32 max, s32 duration, bool r3, bool r4, bool r5) {
+    for (int i = 0; i <= duration; i++) {
+        s32 value = sub_08069558(min, max, duration - i, duration);
+        if (r3 == 1) {
+            sub_08072568()->setBAll(value);
+        }
+        if (r4 == 1) {
+            sub_08072588()->setBAll(value);
+        }
+        if (r5 == 1) {
+            sub_080725A8()->setBAll(value);
+        }
+        setsleep(1);
+    }
+}
+
+extern "C" void sub_08074494(s32 min, s32 max, s32 duration, bool r3, bool r4, bool r5) {
+    for (int i = 0; i <= duration; i++) {
+        s32 value = sub_08069558(min, max, duration - i, duration) + 0x100;
+        if (r3 == 1) {
+            sub_08072568()->setBAll(value);
+        }
+        if (r4 == 1) {
+            sub_08072588()->setBAll(value);
+        }
+        if (r5 == 1) {
+            sub_080725A8()->setBAll(value);
+        }
+        setsleep(1);
+    }
+}
+
+extern "C" void sub_08074518(s32 min, s32 max, s32 duration, bool r3, bool r4, bool r5) {
+    for (int i = 0; i <= duration; i++) {
+        s32 value = sub_08069558(min, max, i, duration) + 0x100;
+        if (r3 == 1) {
+            sub_08072568()->setBAll(value);
+        }
+        if (r4 == 1) {
+            sub_08072588()->setBAll(value);
+        }
+        if (r5 == 1) {
+            sub_080725A8()->setBAll(value);
+        }
+        setsleep(1);
+    }
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_0807459C__FUsiii.inc", void sub_0807459C__FUsiii());
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08074614.inc", void sub_08074614());
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08074630.inc", void sub_08074630());

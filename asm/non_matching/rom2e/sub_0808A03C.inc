@@ -196,7 +196,7 @@ _0808A194:
 	.align 2, 0
 _0808A1E8: .4byte vt_09F85378
 _0808A1EC: .4byte vt_09F85410
-_0808A1F0: .4byte _vt.1D
+_0808A1F0: .4byte _vt.6ResPtr
 _0808A1F4: .4byte _vt.3Unk
 _0808A1F8: .4byte _vt.8AppClock
 _0808A1FC: .4byte gUnknown_0811616C

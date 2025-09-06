@@ -12,6 +12,7 @@ public:
 
     virtual void* getRTTI();
 
+    void sleep(s32 duration);
     u32 getTime();
 
     u32 mTime;

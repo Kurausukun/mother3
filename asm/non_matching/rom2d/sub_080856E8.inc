@@ -293,7 +293,7 @@ _08085842:
 	bx r1
 	.align 2, 0
 _0808595C: .4byte vt_09F84088
-_08085960: .4byte _vt.1D
+_08085960: .4byte _vt.6ResPtr
 _08085964: .4byte gUnknown_08CE39F8
 _08085968: .4byte vt_09F83E40
 _0808596C: .4byte 0x0000174C

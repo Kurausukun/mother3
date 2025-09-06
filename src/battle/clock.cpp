@@ -14,7 +14,7 @@ Clock::Clock() : mTime(0) {}
 
 Clock::~Clock() {}
 
-extern "C" NAKED void sub_0806A1F8(Clock* dest, u32 count) {
+extern "C" NAKED void sleep__5Clocki(Clock* dest, u32 count) {
     asm_unified("\n\
 	push {r4, r5, r6, r7, lr}\n\
 	mov r7, sb\n\

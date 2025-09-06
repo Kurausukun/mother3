@@ -1382,10 +1382,10 @@ sub_080A0C2C: @ 0x080A0C2C
 	adds r5, r1, #0
 	add r0, sp, #4
 	movs r1, #0xbf
-	bl sub_0806FF6C
+	bl __5SoundUs
 	add r0, sp, #4
 	movs r1, #0
-	bl sub_08070048
+	bl play__5Soundb
 	movs r0, #0xb8
 	adds r1, r5, #0
 	adds r2, r5, #0
@@ -1494,7 +1494,7 @@ _080A0D04:
 	beq _080A0CE6
 	add r0, sp, #4
 	movs r1, #2
-	bl sub_0806FFA8
+	bl _._5Sound
 	add sp, #0x3c
 	pop {r4, r5, r6}
 	pop {r0}

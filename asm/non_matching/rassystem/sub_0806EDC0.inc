@@ -3,7 +3,7 @@ sub_0806EDC0:
 	push {r4, lr}
 	adds r4, r0, #0
 	adds r1, #0x30
-	bl sub_0805D2F0
+	bl LoadRes
 	adds r0, r4, #0
 	pop {r4}
 	pop {r1}

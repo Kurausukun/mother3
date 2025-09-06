@@ -91,5 +91,5 @@ _0807CBF4:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0807CC74: .4byte _vt.1D
+_0807CC74: .4byte _vt.6ResPtr
 	.syntax divided

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0806FF6C:
+__5SoundUs:
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	lsls r5, r1, #0x10
@@ -26,5 +26,5 @@ sub_0806FF6C:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0806FFA4: .4byte vt_09F80680
+_0806FFA4: .4byte _vt.5Sound
 	.syntax divided

@@ -204,7 +204,7 @@ _08084FCC:
 	bx r1
 	.align 2, 0
 _080850B4: .4byte vt_09F84008
-_080850B8: .4byte _vt.1D
+_080850B8: .4byte _vt.6ResPtr
 _080850BC: .4byte gUnknown_08CE39F8
 _080850C0: .4byte vt_09F83E40
 _080850C4: .4byte 0x000014D0

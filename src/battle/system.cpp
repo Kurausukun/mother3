@@ -5,6 +5,7 @@
 #include "structs.h"
 #include "battle/irc.h"
 #include "battle/sndSystem.h"
+#include "battle/archive.h"
 
 extern "C" void sub_0806E4C4();
 extern "C" void sub_0806CC1C();
@@ -44,6 +45,15 @@ struct SystemAllocator : FitAllocator {
 SystemAllocator* gSystemAllocator;
 
 extern u8 sSystemAllocator[sizeof(SystemAllocator)];
+
+extern "C" ResPtr LoadRes(System::SARHandle* archive, u32 idx) {
+    char* arc = archive->ptr;
+    if (!arc) {
+        return ResPtr(0, 0);
+    };
+    SAREntry* table = reinterpret_cast<SAREntry*>(arc + 8);
+    return ResPtr(arc + table[idx].offset, table[idx].size);
+}
 
 SystemAllocator* SystemAllocator::init(Fit* fit, u32 size) {
     gSystemAllocator = new (sSystemAllocator) SystemAllocator(fit, size);

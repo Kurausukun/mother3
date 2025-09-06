@@ -216,7 +216,7 @@ sub_0808DFD4:
 	.align 2, 0
 _0808E1C4: .4byte vt_09F85D20
 _0808E1C8: .4byte gUnknown_08CE39F8
-_0808E1CC: .4byte _vt.1D
+_0808E1CC: .4byte _vt.6ResPtr
 _0808E1D0: .4byte vt_09F7E458
 _0808E1D4: .4byte 0x0000028A
 _0808E1D8: .4byte _vt.3Unk

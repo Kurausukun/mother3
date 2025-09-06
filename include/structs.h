@@ -103,15 +103,16 @@ struct Object {
     u8 _24[0x10];
     u32 speed;
     u8 _38[0x3c];
-    u8 _74[0x11]; // size is a guess
+    s8 _74[0x11]; // size is a guess
     u8 character;
     u8 _86;
     u8 _87;
     u16 _88;
     u8 _8a;
     u8 _8b;
-    u8 _8c[2];
-    u16 _8e[12];
+    u16 _8c;
+    u8 _8e[2];
+    u16 _90[11];
     u16 _a6;
     u16 _a8;
     u16 _aa[2];
@@ -146,10 +147,25 @@ struct Object {
     u8 _c9_0 : 1;
     u8 _c9_1 : 2;
     u8 _c9_2 : 5;
-    u8 _ca;
+    u8 _ca_1 : 1;
+    u8 _ca_2 : 1;
+    u8 _ca_4 : 1;
+    u8 _ca_8 : 1;
+    u8 _ca_10 : 1;
+    u8 _ca_20 : 1;
+    u8 _ca_40 : 1;
+    u8 _ca_80 : 1;
     u8 _cb_0 : 3;
     u8 _cb_1 : 1;
     u8 _cb_2 : 4;
+    u8 _cc_1 : 1;
+    u8 _cc_2 : 1;
+    u8 _cc_4 : 1;
+    u8 _cc_8 : 1;
+    u8 _cc_10 : 1;
+    u8 _cc_20 : 1;
+    u8 _cc_40 : 1;
+    u8 _cc_80 : 1;
 };
 
 /* size: 8 bytes */

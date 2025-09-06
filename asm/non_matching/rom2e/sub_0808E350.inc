@@ -275,7 +275,7 @@ _0808E3AC:
 _0808E5BC: .4byte vt_09F85DA8
 _0808E5C0: .4byte 0x000003A5
 _0808E5C4: .4byte 0x00000287
-_0808E5C8: .4byte _vt.1D
+_0808E5C8: .4byte _vt.6ResPtr
 _0808E5CC: .4byte _vt.3Unk
 _0808E5D0: .4byte _vt.10UpKeyPress
 _0808E5D4: .4byte gUnknown_0811953C

@@ -465,7 +465,7 @@ _0808CE02:
 	b _0808CFF0
 	.align 2, 0
 _0808CFC4: .4byte vt_09F85C30
-_0808CFC8: .4byte _vt.1D
+_0808CFC8: .4byte _vt.6ResPtr
 _0808CFCC: .4byte gUnknown_08CE39F8
 _0808CFD0: .4byte vt_09F7E458
 _0808CFD4: .4byte 0x00000464

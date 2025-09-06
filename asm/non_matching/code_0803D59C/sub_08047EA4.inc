@@ -59,5 +59,5 @@ _08047EEE:
 	bx r0
 	.align 2, 0
 _08047F20: .4byte 0x0000FFFF
-_08047F24: .4byte gUnknown_0201A31C
+_08047F24: .4byte gItemMenuTextBuffer
 	.syntax divided

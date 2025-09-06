@@ -2,19 +2,20 @@
 #include "battle/guest.h"
 #include "battle/monster.h"
 #include "battle/player.h"
+#include "battle/fader.h"
 
 extern "C" Msg sub_080706D0(u16, u16);
 extern "C" Msg StrFmt(const Msg&, const Msg&, const Msg&, const Msg&);
 
-extern "C" s32 sub_08072568() {
+extern "C" BattleFader* sub_08072568() {
     return BattleManager::get()->battle_140();
 }
 
-extern "C" s32 sub_08072588() {
+extern "C" BattleFader* sub_08072588() {
     return BattleManager::get()->battle_148();
 }
 
-extern "C" s32 sub_080725A8() {
+extern "C" BattleFader* sub_080725A8() {
     return BattleManager::get()->battle_150();
 }
 

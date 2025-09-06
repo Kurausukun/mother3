@@ -31,7 +31,7 @@ _08086CC0:
 	add r4, sp, #0xc
 	adds r0, r4, #0
 	mov r1, sp
-	bl __9BXTHandleRC6BXTRef
+	bl __9BXTHandleRC6ResPtr
 	adds r0, r7, #0
 	adds r1, r4, #0
 	adds r2, r6, #0
@@ -44,7 +44,7 @@ _08086CC0:
 	.align 2, 0
 _08086CF0: .4byte gSoundPlayerTable
 _08086CF4: .4byte gUnknown_09C8F390
-_08086CF8: .4byte _vt.1D
+_08086CF8: .4byte _vt.6ResPtr
 _08086CFC:
 	ldr r1, _08086D10
 	adds r0, r7, #0

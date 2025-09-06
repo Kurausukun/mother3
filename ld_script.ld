@@ -117,6 +117,7 @@ SECTIONS
 
         *libc.a:*(.text);
 
+        *.o(.gnu.linkonce.t._._6ResPtr);
         build/mother3/src/rom3.o(.text);
         build/mother3/asm/rom3a.o(.text);
         build/mother3/asm/rom3.o(.text);
@@ -127,15 +128,7 @@ SECTIONS
         build/mother3/asm/rom3ab.o(.text);
         build/mother3/src/battle/goods2.o(.text);
         build/mother3/src/battle/goodsImpl.o(.text);
-        build/mother3/src/battle/goods2.o(.gnu.linkonce.t.dg_3__12DefaultGoods);
-        build/mother3/src/battle/goods2.o(.gnu.linkonce.t.isConsumable__C12DefaultGoodsP4Unit);
-        build/mother3/src/battle/goods2.o(.gnu.linkonce.t.hitChance__C12DefaultGoods);
-        build/mother3/src/battle/goods2.o(.gnu.linkonce.t.dg_2__12DefaultGoodsP4Unit);
-        build/mother3/src/battle/goods2.o(.gnu.linkonce.t.action_a0__12DefaultGoodsP4Unit);
-        build/mother3/src/battle/goods2.o(.gnu.linkonce.t.isResisted__12DefaultGoodsP4Unit);
-        build/mother3/src/battle/goods2.o(.gnu.linkonce.t.dogTax__12DefaultGoods);
-        build/mother3/src/battle/goods2.o(.gnu.linkonce.t.tellUseMessage__12DefaultGoods);
-        build/mother3/src/battle/goods2.o(.gnu.linkonce.t._._12DefaultGoods);
+        build/mother3/src/battle/goods2.o(.gnu.linkonce.t.*);
 
         build/mother3/asm/rom3b.o(.text);
         build/mother3/src/inst.o(.text);

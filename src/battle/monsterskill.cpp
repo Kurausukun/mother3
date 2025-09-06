@@ -34,7 +34,7 @@ extern "C" ASM_FUNC("asm/non_matching/monsterskill/sub_08081F88.inc", void sub_0
 extern "C" ASM_FUNC("asm/non_matching/monsterskill/sub_08081F8C.inc", void sub_08081F8C());
 extern "C" ASM_FUNC("asm/non_matching/monsterskill/sub_08081FC8.inc", void sub_08081FC8());
 extern "C" ASM_FUNC("asm/non_matching/monsterskill/sub_08081FF4.inc", void sub_08081FF4());
-extern "C" ASM_FUNC("asm/non_matching/monsterskill/sub_08082020.inc", void sub_08082020());
+extern "C" ASM_FUNC("asm/non_matching/monsterskill/sub_08082020.inc", void get__16MonsterSkillRTTI());
 extern "C" ASM_FUNC("asm/non_matching/monsterskill/sub_08082028.inc", void sub_08082028());
 extern "C" ASM_FUNC("asm/non_matching/monsterskill/sub_08082034.inc", void sub_08082034());
 extern "C" ASM_FUNC("asm/non_matching/monsterskill/sub_08082044.inc", void sub_08082044());
@@ -72,4 +72,6 @@ extern "C" ASM_FUNC("asm/non_matching/monsterskill/sub_080823C0.inc", void sub_0
 extern "C" ASM_FUNC("asm/non_matching/monsterskill/sub_0808240C.inc", void sub_0808240C());
 extern "C" ASM_FUNC("asm/non_matching/monsterskill/sub_08082458.inc", void sub_08082458());
 extern "C" ASM_FUNC("asm/non_matching/monsterskill/sub_08082460.inc", void sub_08082460());
+
+// MonsterSkillRTTI
 extern "C" ASM_FUNC("asm/non_matching/monsterskill/sub_08082468.inc", void sub_08082468());

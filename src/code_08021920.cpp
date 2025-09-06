@@ -1,5 +1,8 @@
 // Auto-generated source file
 #include "global.h"
+#include "structs.h"
+
+extern "C" Object* get_obj_direct(s32 idx);
 
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08021920.inc", void sub_08021920());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08021930.inc", void sub_08021930());
@@ -378,7 +381,51 @@ extern "C" ASM_FUNC("asm/non_matching/code_08021920/update_oam.inc", void update
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_080330F0.inc", void sub_080330F0());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0803327C.inc", void sub_0803327C());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0803329C.inc", void sub_0803329C());
-extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_080332AC.inc", void sub_080332AC());
+
+extern "C" void sub_080332AC(u16 id, u16 param2, u16 param3) {
+    if (param2 >= 13 || param3 >= 8)
+        return;
+
+    Object* o = get_obj_direct(id);
+
+    u16 sel;
+
+    int flag = o->_cc_10;
+    if (flag) {
+        switch (param2) {
+        case 0:
+        case 9:
+            sel = o->_bc_2 + 0x50;
+            break;
+        default:
+            sel = o->_bc_2 + 0x58;
+            break;
+        }
+    } else {
+        s8 m = o->_74[param2];
+        int tmp;
+        if (m != -1) {
+            if (m >= 13) {
+                tmp = m;
+            } else {
+                tmp = param3 + o->_74[param2] * 8;
+            }
+        } else {
+            tmp = param3 + param2 * 8;
+        }
+        sel = tmp;
+    }
+
+    if (o->_8b != sel) {
+        o->_8b = sel;
+        o->_8c = 0xFFFF;
+        o->_90[1] = 0;
+        o->_bf_3 = 0;
+        o->_ca_8 = 0;
+        o->_cc_8 = 0;
+    }
+}
+
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08033374.inc", void sub_08033374());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08033414.inc", void sub_08033414());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08033460.inc", void sub_08033460());
@@ -490,7 +537,7 @@ extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08036A90.inc", void sub_
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08036B34.inc", void sub_08036B34());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08036B6C.inc", void sub_08036B6C());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08036BA4.inc", void sub_08036BA4());
-extern "C" ASM_FUNC("asm/non_matching/code_08021920/get_obj_direct.inc", void get_obj_direct());
+extern "C" ASM_FUNC("asm/non_matching/code_08021920/get_obj_direct.inc", Object* get_obj_direct(s32 id));
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08036BEC.inc", void sub_08036BEC());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08036C00.inc", void sub_08036C00());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08036C24.inc", void sub_08036C24());

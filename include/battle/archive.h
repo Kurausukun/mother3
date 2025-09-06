@@ -4,6 +4,7 @@
 #include "base.h"
 #include "global.h"
 #include "vector.h"
+#include "battle/system.h"
 
 struct BXT {
     u32 magic;
@@ -14,27 +15,33 @@ struct BXT {
     u16 offsets[0];
 };
 
-struct BXTRef {
-    inline const BXT* operator()() const { return data; }
+struct ResPtr {
+    inline ResPtr(char* address, u32 size) : address(address), size(size) {}
+    virtual ~ResPtr() {}
 
-    const BXT* data;
+    // INLINE_VT_END
+
+    // inline void init(void* address, u32 size) { address = address; size = size; }
+    // inline const BXT* operator()() const { return static_cast<BXT*>(address); }
+
+    char* address;
+    u32 size;
 };
 
 class BXTHandle {
+public:
     BXTHandle();
-    BXTHandle(const BXTRef& ref);
+    BXTHandle(const ResPtr& ptr);
     virtual ~BXTHandle();
 
     Msg getMessage(u32 index);
-    u32 type(const BXTRef& ref) const;
+    u32 type(const ResPtr& ptr) const;
     u32 count() const;
 
-    friend class BattleMessage;
+    bool init(const ResPtr& ref);
+    void read(const ResPtr& ref);
 
 private:
-    bool init(const BXTRef& ref);
-    void read(const BXTRef& ref);
-
     u16 mType;
     u16 mCount;
     const u8* mBlock;
@@ -44,5 +51,7 @@ private:
 struct BattleMessage : Msg {
     BattleMessage(BXTHandle* handle, u32 index);
 };
+
+extern "C" ResPtr LoadRes(System::SARHandle* archive, u32 idx);
 
 #endif  // BATTLE_ARCHIVE_H

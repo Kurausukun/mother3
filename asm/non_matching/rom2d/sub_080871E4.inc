@@ -41,5 +41,5 @@ sub_080871E4:
 _0808723C: .4byte vt_09F84DC0
 _08087240: .4byte 0x000003A5
 _08087244: .4byte 0x00000287
-_08087248: .4byte _vt.1D
+_08087248: .4byte _vt.6ResPtr
 	.syntax divided
