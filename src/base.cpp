@@ -979,14 +979,6 @@ _0806910E:\n\
     ");
 }
 
-/*
-void Base::clearNullOutgoing() {
-    for (int i = 0; i < mFit1.size(); i++) {
-        mFit1[i]._8.removeAll(0);
-    }
-}
-*/
-
 NAKED
 void Base::clearNullOutgoing() {
     asm_unified("\n\

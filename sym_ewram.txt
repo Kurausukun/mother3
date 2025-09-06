@@ -370,7 +370,7 @@
 . = 0x0001A234; gUnknown_0201A234 = .;
 . = 0x0001A25C; gUnknown_0201A25C = .;
 . = 0x0001A2AC; gUnknown_0201A2AC = .;
-. = 0x0001A31C; gUnknown_0201A31C = .;
+. = 0x0001A31C; gItemMenuTextBuffer = .;
 . = 0x0001A374; gMenuState = .;
 . = 0x0001A3D4; gUnknown_0201A3D4 = .;
 . = 0x0001A520; gUnknown_0201A520 = .;
