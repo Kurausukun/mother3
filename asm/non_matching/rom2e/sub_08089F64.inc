@@ -8,7 +8,7 @@ sub_08089F64:
 	adds r0, r4, #0
 	adds r0, #0x34
 	movs r1, #2
-	bl sub_0806D6E0
+	bl _._11Unk0806D64C
 	ldr r0, _08089F90
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0

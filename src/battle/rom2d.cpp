@@ -231,9 +231,30 @@ extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08087D78.inc", void sub_08087D78
 extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08087DCC.inc", void sub_08087DCC());
 extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08087E20.inc", void sub_08087E20());
 extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08087E74.inc", void sub_08087E74());
-extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08087ED8.inc", void sub_08087ED8());
+
+class Unk08087ED8 {
+public:
+    u16 _0;
+    void* _4;
+    u16 _8;
+    u32 _C;
+    Unk08087ED8();           // __11Unk08087ED8
+    virtual ~Unk08087ED8();  // _._11Unk08087ED8
+};
+
+Unk08087ED8::Unk08087ED8() {
+    _0 = 0;
+    _4 = NULL;
+    _8 = 0;
+    _C = 0;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08087EEC.inc", void sub_08087EEC());
-extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08087F10.inc", void sub_08087F10());
+
+Unk08087ED8::~Unk08087ED8() {
+    delete[] _4;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08087F3C.inc", void sub_08087F3C());
 extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08087F80.inc", void sub_08087F80());
 extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08087F9C.inc", void sub_08087F9C());
@@ -242,9 +263,19 @@ extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08087FD4.inc", void sub_08087FD4
 extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08087FE0.inc", void sub_08087FE0());
 extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08087FE4.inc", void sub_08087FE4());
 extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08087FE8.inc", void sub_08087FE8());
-extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08088018.inc", void sub_08088018());
-extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08088024.inc", void sub_08088024());
-extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08088044.inc", void sub_08088044());
+
+class Unk08088018 {
+public:
+    Unk08088018();           // sub_08088018
+    virtual ~Unk08088018();  // _._11Unk08088018
+    void sub_08088044(u16, void*, void*);
+};
+
+Unk08088018::Unk08088018() {}
+
+Unk08088018::~Unk08088018() {}
+
+extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08088044.inc", void sub_08088044__11Unk08088018UsPvT2());
 extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_080881AC.inc", void sub_080881AC());
 extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_0808836C.inc", void sub_0808836C());
 extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_080884B4.inc", void sub_080884B4());

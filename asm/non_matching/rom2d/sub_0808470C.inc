@@ -37,7 +37,7 @@ _08084752:
 	adds r0, r5, #0
 	adds r0, #0x44
 	movs r1, #2
-	bl sub_0806D6E0
+	bl _._11Unk0806D64C
 	ldr r0, [r5, #0x34]
 	cmp r0, #0
 	beq _08084766

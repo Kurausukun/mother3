@@ -1,11 +1,16 @@
-// Auto-generated source file
+// Auto-generated source file#include "battle/keypad.h"
+#include "base.h"
+#include "battle/clock.h"
 #include "global.h"
 
+extern ClockData gUnknown_080FFD3C;
+
+extern "C" void __11Unk08088018(void*);
 extern "C" void sub_08090F8C(void*, void*);
 
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D2CC.inc", void sub_0806D2CC());
 
-struct Unk {
+struct Unk1 {
     u32 _0;
     u16 _4;
     u8 pad_6[2];
@@ -15,7 +20,7 @@ struct Unk {
 };
 
 struct Unk2 {
-    Unk* _0;
+    Unk1* _0;
     u32 _4;
 };
 
@@ -153,7 +158,7 @@ void Unk0806D548::sub_0806D60C(Unk2* arg0) {
 }
 
 void Unk0806D548::sub_0806D618(Unk2* arg0) {
-    Unk* arg1 = arg0->_0;
+    Unk1* arg1 = arg0->_0;
 
     this->_8 = arg1->_8;
 
@@ -166,20 +171,91 @@ void Unk0806D548::sub_0806D618(Unk2* arg0) {
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D644.inc", void sub_0806D644());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D648.inc", void sub_0806D648());
 
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D64C.inc", void sub_0806D64C());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D6E0.inc", void sub_0806D6E0());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D744.inc", void sub_0806D744());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D79C.inc", void sub_0806D79C());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D7D0.inc", void sub_0806D7D0());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D7DC.inc", void sub_0806D7DC());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D814.inc", void sub_0806D814());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D828.inc", void sub_0806D828());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D83C.inc", void sub_0806D83C());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D850.inc", void sub_0806D850());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D854.inc", void sub_0806D854());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D860.inc", void sub_0806D860());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D868.inc", void sub_0806D868());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D870.inc", void sub_0806D870());
+// TODO: actually define this
+class Unk08087ED8 {
+public:
+    u8 pad_0[0x10];
+    Unk08087ED8();           // __11Unk08087ED8
+    virtual ~Unk08087ED8();  // _._11Unk08087ED8
+};
+
+class Tuple16 {
+public:
+    u16 _0;
+    u16 _2;
+    Tuple16(u16 arg0, u16 arg2) {
+        _0 = arg0;
+        _2 = arg2;
+    }
+};
+
+// TODO: actually define this
+class Unk08088018 {
+public:
+    Unk08088018();           // sub_08088018
+    virtual ~Unk08088018();  // _._11Unk08088018
+    void sub_08088044(u16, void*, void*);
+};
+
+class Unk0806D64C : Base {
+public:
+    u16 _20;
+    u8 pad_22[2];
+    u16 _24;  // TODO: is this also a tuple?
+    u16 _26;
+    Tuple16 _28;
+    Tuple16 _2C;
+    Unk08087ED8 _30;
+    Unk0806D548 _44;
+    Unk0806D478 _58;
+    Unk08088018 _64;
+    u16 _68;
+
+    Unk0806D64C();           // sub_0806D64C
+    virtual ~Unk0806D64C();  // sub_0806D6E0
+
+    virtual void sub_0806D744();
+    virtual void sub_0806D79C();
+    virtual u8 sub_0806D7D0();
+    virtual void sub_0806D7DC();
+    virtual void sub_0806D814();
+    virtual void sub_0806D828();
+    virtual void sub_0806D83C();
+    virtual u16 sub_0806D850();
+    virtual void sub_0806D854();
+    virtual void sub_0806D860();
+    virtual void sub_0806D868();
+    virtual void sub_0806D870();
+};
+
+Unk0806D64C::Unk0806D64C() : _24(0), _26(0), _28(0, 0), _2C(0, 0) {
+    _20 = 0;
+    _68 = 2;
+    listen(ClockManager::get(), AppClock(), gUnknown_080FFD3C);
+}
+
+Unk0806D64C::~Unk0806D64C() {
+    if (sub_0806D7D0() == 1) {
+        _64.sub_08088044(_20, &_24, &_28);
+    }
+}
+
+extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D744.inc", void sub_0806D744__11Unk0806D64C());
+extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D79C.inc", void sub_0806D79C__11Unk0806D64C());
+extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D7D0.inc", void sub_0806D7D0__11Unk0806D64C());
+extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D7DC.inc", void sub_0806D7DC__11Unk0806D64C());
+extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D814.inc", void sub_0806D814__11Unk0806D64C());
+extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D828.inc", void sub_0806D828__11Unk0806D64C());
+extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D83C.inc", void sub_0806D83C__11Unk0806D64C());
+
+u16 Unk0806D64C::sub_0806D850() {
+    return this->_20;
+}
+
+extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D854.inc", void sub_0806D854__11Unk0806D64C());
+extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D860.inc", void sub_0806D860__11Unk0806D64C());
+extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D868.inc", void sub_0806D868__11Unk0806D64C());
+extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D870.inc", void sub_0806D870__11Unk0806D64C());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D878.inc", void sub_0806D878());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D8EC.inc", void sub_0806D8EC());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D9A4.inc", void sub_0806D9A4());
@@ -243,7 +319,7 @@ extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E334__3Msgi.inc", void s
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E33C.inc", void sub_0806E33C());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E344.inc", void sub_0806E344());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E34C.inc", void sub_0806E34C());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E374__3MsgRC3Msg.inc",void sub_0806E374__3MsgRC3Msg());
+extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E374__3MsgRC3Msg.inc", void sub_0806E374__3MsgRC3Msg());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E3B4.inc", void sub_0806E3B4());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/len__3Msg.inc", void len__3Msg());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E418.inc", void sub_0806E418());

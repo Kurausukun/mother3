@@ -21,7 +21,7 @@ GoodsMenu_ct:
 	mov r4, sl
 	adds r4, #0x48
 	adds r0, r4, #0
-	bl sub_0806D64C
+	bl __11Unk0806D64C
 	mov r0, sl
 	adds r0, #0xb4
 	movs r1, #2
@@ -140,7 +140,7 @@ _0807D4BC:
 	movs r0, #0x96
 	lsls r0, r0, #3
 	add r0, sl
-	bl sub_0806D64C
+	bl __11Unk0806D64C
 	ldr r0, _0807D7F4
 	add r0, sl
 	bl sub_08086750
@@ -240,7 +240,7 @@ _0807D4BC:
 	movs r1, #1
 	mov r2, sb
 	ldr r3, [sp, #0xa8]
-	bl sub_0806D744
+	bl sub_0806D744__11Unk0806D64C
 	str r5, [sp, #0x48]
 	str r5, [sp, #0x3c]
 	str r5, [sp, #0x30]
@@ -250,7 +250,7 @@ _0807D4BC:
 	strh r7, [r1, #2]
 	ldr r0, [sp, #0xd4]
 	ldr r1, [sp, #0xd0]
-	bl sub_0806D814
+	bl sub_0806D814__11Unk0806D64C
 	movs r1, #0xf0
 	movs r2, #0x30
 	add r0, sp, #0x5c
@@ -259,14 +259,14 @@ _0807D4BC:
 	strh r2, [r4, #2]
 	ldr r0, [sp, #0xd4]
 	ldr r1, [sp, #0xd8]
-	bl sub_0806D828
+	bl sub_0806D828__11Unk0806D64C
 	add r0, sp, #0x60
 	strh r7, [r0]
 	ldr r0, [sp, #0xdc]
 	strh r7, [r0, #2]
 	ldr r0, [sp, #0xd4]
 	ldr r1, [sp, #0xdc]
-	bl sub_0806D83C
+	bl sub_0806D83C__11Unk0806D64C
 	movs r2, #0
 	ldr r7, [sp, #0xe0]
 	ldr r1, [sp, #0xe4]
@@ -381,7 +381,7 @@ _0807D658:
 	movs r1, #1
 	mov r2, sb
 	ldr r3, [sp, #0xa8]
-	bl sub_0806D744
+	bl sub_0806D744__11Unk0806D64C
 	ldr r0, _0807D7E4
 	str r0, [sp, #0x48]
 	str r0, [sp, #0x3c]
@@ -393,7 +393,7 @@ _0807D658:
 	strh r5, [r2, #2]
 	adds r0, r4, #0
 	ldr r1, [sp, #0xf0]
-	bl sub_0806D814
+	bl sub_0806D814__11Unk0806D64C
 	movs r1, #0xf0
 	movs r2, #0x20
 	add r0, sp, #0x78
@@ -402,14 +402,14 @@ _0807D658:
 	strh r2, [r0, #2]
 	adds r0, r4, #0
 	ldr r1, [sp, #0xf4]
-	bl sub_0806D828
+	bl sub_0806D828__11Unk0806D64C
 	add r0, sp, #0x7c
 	strh r6, [r0]
 	ldr r1, [sp, #0xf8]
 	strh r5, [r1, #2]
 	adds r0, r4, #0
 	ldr r1, [sp, #0xf8]
-	bl sub_0806D83C
+	bl sub_0806D83C__11Unk0806D64C
 	ldr r0, _0807D7F4
 	add r0, sl
 	movs r2, #0xa

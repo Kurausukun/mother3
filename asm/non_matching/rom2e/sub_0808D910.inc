@@ -16,7 +16,7 @@ sub_0808D910:
 	adds r0, r6, #0
 	adds r0, #0x3c
 	movs r1, #1
-	bl sub_0806D7DC
+	bl sub_0806D7DC__11Unk0806D64C
 	movs r1, #0xb4
 	lsls r1, r1, #2
 	adds r0, r6, r1
@@ -59,7 +59,7 @@ _0808D956:
 	lsls r1, r1, #2
 	adds r0, r6, r1
 	movs r1, #1
-	bl sub_0806D7DC
+	bl sub_0806D7DC__11Unk0806D64C
 	movs r3, #0xf6
 	lsls r3, r3, #2
 	adds r0, r6, r3
