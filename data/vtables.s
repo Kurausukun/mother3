@@ -90213,16 +90213,16 @@ vt_09F7F118::
 	.2byte 0
 	.4byte sub_080C0F44
 
-vt_09F7F130::
+_vt.10ObjPltPool::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806C870
+	.4byte _._10ObjPltPool
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806C7F4
+	.4byte getRTTI__10ObjPltPool
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -90254,7 +90254,7 @@ vt_09F7F130::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-vt_09F7F198::
+_vt.17ObjPltPoolManager::
 	.2byte 0
 	.2byte 0
 	.4byte 0

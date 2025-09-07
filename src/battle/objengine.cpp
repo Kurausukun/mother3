@@ -49,9 +49,9 @@ extern "C" void sub_0806AF58(void*, int);
 
 // objchrpool
 extern "C" void sub_0806C428();
-extern "C" void sub_0806C77C();
+extern "C" void makeInstance__17ObjPltPoolManager();
 
-extern "C" void sub_0806C7B8();
+extern "C" void destroy__17ObjPltPoolManager();
 extern "C" void sub_0806C464();
 extern "C" void* sub_0806A9A4();
 extern "C" void sub_0806A9B0();
@@ -113,14 +113,14 @@ void* ObjEngine::sub_0806BE5C() {
 //   listen(ClockManager::get(), PostSysClock(), gUnknown_080FF404);
 
 //   sub_0806C428();
-//   sub_0806C77C();
+//   makeInstance__17ObjPltPoolManager();
 // }
 #else
 extern "C" ASM_FUNC("asm/non_matching/objengine/sub_0806BE68.inc", void __9ObjEngine());
 #endif
 
 ObjEngine::~ObjEngine() {
-    sub_0806C7B8();
+    destroy__17ObjPltPoolManager();
     sub_0806C464();
     sub_0806AFA4(sub_0806A9A4(), 0xEF9F);
     sub_0806A9B0();

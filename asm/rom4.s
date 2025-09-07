@@ -326,7 +326,7 @@ sub_080C0F5C: @ 0x080C0F5C
 	push {lr}
 	movs r0, #0x2c
 	bl __builtin_new
-	bl sub_0806C800
+	bl __10ObjPltPool
 	pop {r1}
 	bx r1
 

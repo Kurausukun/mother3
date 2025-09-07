@@ -3,7 +3,7 @@ sub_08088C08:
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
-	bl sub_0806C7AC
+	bl get__17ObjPltPoolManager
 	adds r6, r0, #0
 	ldrb r0, [r4, #5]
 	lsrs r0, r0, #4
@@ -12,7 +12,7 @@ sub_08088C08:
 	adds r5, r1, r0
 	adds r0, r6, #0
 	adds r1, r5, #0
-	bl sub_0806C9A0
+	bl sub_0806C9A0__10ObjPltPooli
 	adds r4, r0, #0
 	ldr r0, _08088C50
 	cmp r4, r0

@@ -75,9 +75,9 @@
 . = 0x00001D08; gUnknown_02001D08 = .;
 . = 0x00001D14; gUnknown_02001D14 = .;
 . = 0x00001D18; gUnknown_02001D18 = .;
-. = 0x00001D1C; gUnknown_02001D1C = .;
-. = 0x00001D28; gUnknown_02001D28 = .;
-. = 0x00001D2C; gUnknown_02001D2C = .;
+. = 0x00001D1C; sObjPltPoolManager = .;
+. = 0x00001D28; _17ObjPltPoolManager.mSingletonGuard = .;
+. = 0x00001D2C; _17ObjPltPoolManager.mSingleton = .;
 . = 0x00001D30; gUnknown_02001D30 = .;
 . = 0x00001D3C; gUnknown_02001D3C = .;
 . = 0x00001D48; gUnknown_02001D48 = .;
