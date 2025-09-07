@@ -80,7 +80,27 @@ u16 ObjPltPool::sub_0806C9A0(int arg0) {
     return 0xFFFF;
 }
 
-extern "C" ASM_FUNC("asm/non_matching/objpltpool/sub_0806C9D4.inc", void sub_0806C9D4__10ObjPltPooli());
+s32 ObjPltPool::sub_0806C9D4(int searchValue) {
+    s32 count = _20.size();
+    if (count <= 0) {
+        return count;
+    }
+
+    s32 left = 0;
+    s32 right = _20.size() - 1;
+
+    while (left < right) {
+        s32 mid = (left + right) / 2;
+
+        if (_20[mid]._4 < searchValue) {
+            left = mid + 1;
+        } else {
+            right = mid;
+        }
+    }
+
+    return _20[left]._4 == searchValue ? left : count;
+}
 
 // TODO: should ths be a function that takes ObjPltPool as an argument?
 void ObjPltPool::sub_0806CA24() {
