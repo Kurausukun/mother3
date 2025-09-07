@@ -90109,16 +90109,16 @@ vt_09F7F018::
 	.2byte 0
 	.4byte sub_080C0D34
 
-vt_09F7F030::
+_vt.9ObjEngine::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806BF68
+	.4byte _._9ObjEngine
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806BE5C
+	.4byte sub_0806BE5C__9ObjEngine
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base

@@ -293,7 +293,7 @@ sub_080C0F28: @ 0x080C0F28
 	movs r0, #0xb5
 	lsls r0, r0, #4
 	bl __builtin_new
-	bl sub_0806BE68
+	bl __9ObjEngine
 	pop {r1}
 	bx r1
 	.align 2, 0
