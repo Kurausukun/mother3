@@ -7,6 +7,9 @@ bool8 ch_is_lucas(CharStats* ch);
 bool8 ch_is_kumatora(CharStats* ch);
 bool8 sub_0805C58C(u8* data, s32);
 void sub_0805C548(u8*, s32, bool8);
+u32 sub_0805C168(s32 num);
+int sub_0805D234(int, int);
+int Div(int, int);
 
 u32 sub_0805C1A8(CharStats* ch, LevelStats* ls, s32 level);
 
@@ -1518,7 +1521,7 @@ bx lr\n\
 _0805D230: .4byte gUnknown_02001C58\n\
 ");
 }
-NAKED void sub_0805D234() {
+NAKED int sub_0805D234(int arg0, int arg1) {
     asm_unified("\n\
 push {r4, lr}\n\
 ldr r4, _0805D25C @ =gUnknown_02001C58\n\
