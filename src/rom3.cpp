@@ -1,5 +1,5 @@
-#include "singleton.h"
 #include "battle/system.h"
+#include "singleton.h"
 
 SINGLETON_DEBUG_MGR(System, gUnknown_080F24D0)
 

@@ -45,9 +45,7 @@ struct Vector {
         }
     }
 
-    void clear() {
-        mSize = 0;
-    }
+    void clear() { mSize = 0; }
 
     bool remove(const T& value) {
         for (int i = 0; i < mSize; i++) {
@@ -99,4 +97,4 @@ protected:
     T* mStorage;
 };
 
-#endif // VECTOR_H
+#endif  // VECTOR_H

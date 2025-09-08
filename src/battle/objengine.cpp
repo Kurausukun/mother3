@@ -89,31 +89,31 @@ void* ObjEngine::sub_0806BE5C() {
 
 #ifdef NON_MATCHING
 ObjEngine::ObjEngine() {
-    UnkObjEngine*ptr = _20;
-    for(int i =3; i !=-1; i--) {
+    UnkObjEngine* ptr = _20;
+    for (int i = 3; i != -1; i--) {
         ptr->_0 = 0;
         ptr++;
     }
 
-  _830 = 0;
-  _832 = 0;
-  _834 = 0;
-  _938 = 0;
-  _93c = 0;
-  _940 = 0;
-  _948 = 0;
-  _944 = 0;
-  _b4c = 0;
+    _830 = 0;
+    _832 = 0;
+    _834 = 0;
+    _938 = 0;
+    _93c = 0;
+    _940 = 0;
+    _948 = 0;
+    _944 = 0;
+    _b4c = 0;
 
-  void* temp_r0_3 = sub_0806A974();
-  sub_0806AFA4(temp_r0_3, 0xEF9F);
-  sub_0806AF58(temp_r0_3, 0x1040);
+    void* temp_r0_3 = sub_0806A974();
+    sub_0806AFA4(temp_r0_3, 0xEF9F);
+    sub_0806AF58(temp_r0_3, 0x1040);
 
-  listen(ClockManager::get(), SysClock(), gUnknown_080FF3FC);
-  listen(ClockManager::get(), PostSysClock(), gUnknown_080FF404);
+    listen(ClockManager::get(), SysClock(), gUnknown_080FF3FC);
+    listen(ClockManager::get(), PostSysClock(), gUnknown_080FF404);
 
-  sub_0806C428();
-  makeInstance__17ObjPltPoolManager();
+    sub_0806C428();
+    makeInstance__17ObjPltPoolManager();
 }
 #else
 extern "C" ASM_FUNC("asm/non_matching/objengine/sub_0806BE68.inc", void __9ObjEngine());

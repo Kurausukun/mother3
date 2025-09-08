@@ -103,7 +103,7 @@ struct Object {
     u8 _24[0x10];
     u32 speed;
     u8 _38[0x3c];
-    s8 _74[0x11]; // size is a guess
+    s8 _74[0x11];  // size is a guess
     u8 character;
     u8 _86;
     u8 _87;
@@ -275,7 +275,7 @@ typedef struct struct_02016028 {
     /* 0x2CB4 */ u16 _2CB4[0x200];
 
     /* 0x30B4 */ u8 pad_30B4[0x4294 - 0x30B4];
-    /* 0x4294 */ u8 _4294; // TODO: determine size
+    /* 0x4294 */ u8 _4294;  // TODO: determine size
     /* 0x4295 */ u8 pad_4295[0x4ad0 - 0x4295];
     /* 0x4AD0 */ u32 char_names[0xd];
     /* 0x4B04 */ u16 msg_type;
@@ -457,10 +457,10 @@ typedef struct GoodsInfo {
 extern GoodsInfo gGoodsInfo[];
 
 typedef struct SystemEntry {
-    u8 data[0x2A];           
+    u8 data[0x2A];
     u8 _2A[8];
-    u8 _32;          
-    u8 padding[100 - 0x33];  
+    u8 _32;
+    u8 padding[100 - 0x33];
 } SystemEntry;
 
 typedef struct struct_020050C0 {

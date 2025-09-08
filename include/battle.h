@@ -292,4 +292,4 @@ extern "C" bool sub_080726B8();
 s32 sub_08072A88();
 Player* sub_08072AA4(s32);
 
-#endif // BATTLE_H
+#endif  // BATTLE_H

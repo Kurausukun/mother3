@@ -29,7 +29,7 @@ struct Singleton {
 
 // TODO: rewrite this to work inside class definition
 #define RTTI(CLASS)                                                                                \
-    struct CLASS##RTTI : Singleton {                                                                           \
+    struct CLASS##RTTI : Singleton {                                                               \
         virtual const char* getName();                                                             \
                                                                                                    \
         static void* init(u16 id);                                                                 \
@@ -48,4 +48,4 @@ struct Singleton {
         return CLASS##RTTI::get();                                                                 \
     }
 
-#endif // RTTI_H
+#endif  // RTTI_H

@@ -105,7 +105,7 @@ struct Animation {
         EnemyThrow = 0x6B,
         EnemyThrow2 = 0x6C,
         EnemyThrow3 = 0x6D,
-        MonsterEfcA = 0x6E, // placeholder
+        MonsterEfcA = 0x6E,  // placeholder
         MonsterEfcB = 0x6F,
         MonsterEfcC = 0x70,
         MonsterEfcD = 0x71,
@@ -195,7 +195,7 @@ struct Animation {
         PsiThunderHit = 0xC7,
         PsiThunder = 0xC8,
         PsiThunder2 = 0xC9,
-        LightHit =  0xCA,
+        LightHit = 0xCA,
         ParalysisHit = 0xCB,
         ParalysisReflect = 0xCC,
         BrokenYellowEffect = 0xCD
@@ -1098,7 +1098,7 @@ enum Sound {
     SFX_RUMBLE = 0x279,
     SFX_SPARKLE = 0x27A,
     SFX_THUMP = 0x27B,
-    SFX_TRAP =  0x27C,
+    SFX_TRAP = 0x27C,
     SFX_NONE_27D = 0x27D,
     SFX_USE_MAGIC = 0x27E,
     SFX_DOOR_CLOSE = 0x27F,
@@ -1249,4 +1249,4 @@ enum Sound {
     SFX_PIGMASK_SALUTE4 = 0x30F
 };
 
-#endif // ENUMS_H
+#endif  // ENUMS_H

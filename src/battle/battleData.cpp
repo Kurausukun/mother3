@@ -1,8 +1,8 @@
 #include "battle.h"
+#include "battle/fader.h"
 #include "battle/guest.h"
 #include "battle/monster.h"
 #include "battle/player.h"
-#include "battle/fader.h"
 
 extern "C" Msg sub_080706D0(u16, u16);
 extern "C" Msg StrFmt(const Msg&, const Msg&, const Msg&, const Msg&);

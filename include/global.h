@@ -15,7 +15,9 @@
 #define ASM_FUNC(path, decl)
 #else
 #define ASM_FUNC(path, decl)                                                                       \
-    NAKED decl { asm(".include " #path); }
+    NAKED decl {                                                                                   \
+        asm(".include " #path);                                                                    \
+    }
 #endif
 
 #if NON_MATCHING
@@ -37,14 +39,16 @@
 
 #if DEBUG
 #define DBPRINT(...)                                                                               \
-    { u16 hax[46];                                                                                   \
-    hax[0] = 0x46E4; /* mov r12, r12 */                                                            \
-    hax[1] = 0xE02A; /* b pc + 88 */                                                               \
-    hax[2] = 0x6464;                                                                               \
-    hax[3] = 0;                                                                                    \
-    hax[45] = 0x4770;                                                                              \
-    sprintf((char*)&hax[4], __VA_ARGS__);                                                          \
-    ((void (*)())((u8*)(&hax) + 1))(); }
+    {                                                                                              \
+        u16 hax[46];                                                                               \
+        hax[0] = 0x46E4; /* mov r12, r12 */                                                        \
+        hax[1] = 0xE02A; /* b pc + 88 */                                                           \
+        hax[2] = 0x6464;                                                                           \
+        hax[3] = 0;                                                                                \
+        hax[45] = 0x4770;                                                                          \
+        sprintf((char*)&hax[4], __VA_ARGS__);                                                      \
+        ((void (*)())((u8*)(&hax) + 1))();                                                         \
+    }
 #else
 #define DBPRINT(...)
 #endif
@@ -56,9 +60,10 @@
 #endif
 
 #define INLINE_VT_END                                                                              \
-    virtual void* VT_HACK(...); /*necessary for inline classes using baserom                           \
+    virtual void* VT_HACK(...); /*necessary for inline classes using baserom                       \
                                vtables*/
 #define DUMP_INLINE(CLASS)                                                                         \
-    NAKED void* CLASS::VT_HACK(...) {} /* establish a reference to the class, but create no code */
+    NAKED void* CLASS::VT_HACK(...) {} /* establish a reference to the class, but create no code   \
+                                        */
 
 #endif  // GUARD_GLOBAL_H

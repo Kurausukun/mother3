@@ -26,7 +26,7 @@ public:
     void sub_0806CA24();
 };
 
-extern ClockData gUnknown_080FF664; // refers to sub_0806CA24
+extern ClockData gUnknown_080FF664;  // refers to sub_0806CA24
 
 extern "C" ASM_FUNC("asm/non_matching/objpltpool/sub_0806C76C.inc", void sub_0806C76C());
 

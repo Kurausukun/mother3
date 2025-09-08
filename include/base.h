@@ -10,7 +10,7 @@ class Base;
 struct Singleton;
 
 // wut
-template<typename T>
+template <typename T>
 struct SafeVector : public Vector<T> {
 public:
     SafeVector() {}
