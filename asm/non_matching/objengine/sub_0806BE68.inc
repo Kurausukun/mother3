@@ -89,14 +89,14 @@ _0806BE86:
 	movs r1, #2
 	bl _._4Base
 	bl sub_0806C428
-	bl sub_0806C77C
+	bl makeInstance__17ObjPltPoolManager
 	adds r0, r7, #0
 	add sp, #0x28
 	pop {r4, r5, r6, r7}
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0806BF40: .4byte vt_09F7F030
+_0806BF40: .4byte _vt.9ObjEngine
 _0806BF44: .4byte 0x00000834
 _0806BF48: .4byte 0x00000938
 _0806BF4C: .4byte 0x00000B4C

@@ -120,7 +120,7 @@ gUnknown_080FF658:
     .global gUnknown_080FF664
 gUnknown_080FF664:
     .4byte 0xFFFF0000
-    .4byte sub_0806CA24+1
+    .4byte sub_0806CA24__10ObjPltPool+1
     .incbin "baserom.gba", 0x000FF66C, 0xC0
 
     .global gUnknown_080FF72C

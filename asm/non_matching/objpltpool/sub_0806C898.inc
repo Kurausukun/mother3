@@ -18,7 +18,7 @@ sub_0806C898:
 	str r2, [sp, #4]
 	adds r0, r4, #0
 	adds r1, r2, #0
-	bl sub_0806C964
+	bl sub_0806C964__10ObjPltPooli
 	adds r6, r4, #0
 	adds r6, #0x20
 	mov r8, r0
