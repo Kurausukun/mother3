@@ -1,6 +1,16 @@
 // Auto-generated source file
 #include "global.h"
 
+// class MenuItem : public Base {
+// public:
+//     MenuItem();
+//     virtual ~MenuItem();
+// };
+
+// MenuItem::MenuItem() {
+    
+// }
+
 extern "C" ASM_FUNC("asm/non_matching/rassystem/sub_0806E820.inc", void sub_0806E820());
 extern "C" ASM_FUNC("asm/non_matching/rassystem/sub_0806E8BC.inc", void sub_0806E8BC());
 extern "C" ASM_FUNC("asm/non_matching/rassystem/sub_0806E90C.inc", void sub_0806E90C());
