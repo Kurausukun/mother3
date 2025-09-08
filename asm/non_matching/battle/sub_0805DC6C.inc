@@ -14,7 +14,7 @@ sub_0805DC6C:
 	movs r1, #0
 	movs r2, #0
 	movs r3, #0xf0
-	bl sub_08070FE8
+	bl __9ComboRootUiUiUiUi
 	str r0, [r4, #0x44]
 	movs r0, #0x2c
 	bl __builtin_new

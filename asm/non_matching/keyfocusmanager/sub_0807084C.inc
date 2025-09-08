@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0807084C:
+__5ComboP5ComboUiUiUiUi:
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
 	adds r6, r1, #0
@@ -37,12 +37,12 @@ sub_0807084C:
 	beq _0807089C
 	adds r0, r6, #0
 	adds r1, r7, #0
-	bl sub_080708E0
+	bl append__5ComboP5Combo
 _0807089C:
 	adds r0, r7, #0
 	pop {r4, r5, r6, r7}
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080708A4: .4byte vt_09F807F0
+_080708A4: .4byte _vt.5Combo
 	.syntax divided

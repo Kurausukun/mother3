@@ -5,6 +5,7 @@
 #include "battle/goods.h"
 #include "battle/monster.h"
 #include "battle/player.h"
+#include "battle/rhythm.h"
 #include "enums.h"
 
 extern "C" bool typeIsMonster(Unit*);
@@ -30,31 +31,6 @@ extern "C" u8 sub_08072648(u32);
 
 extern Status::Type gUnknown_080FB078[];
 extern "C" void tellStatusWoreOff(Unit*, Status::Type, bool);
-
-struct ComboRhythm {
-    ComboRhythm(u16 a, u16 b) : a(a), b(b) {}
-
-    u16 a;
-    u16 b;
-};
-
-class AutoCombo : public Base {
-public:
-    AutoCombo(u32, const ComboRhythm&);
-    virtual ~AutoCombo();
-
-private:
-    u8 filler[0x11a];
-};
-
-class AutoComboResult : public Base {
-public:
-    AutoComboResult(u32, const ComboRhythm&);
-    virtual ~AutoComboResult();
-
-private:
-    u8 filler[0x11a];
-};
 
 // TODO: move to DefaultGoods::isResisted
 // we are unable to inline DefaultGoods stuff at the moment

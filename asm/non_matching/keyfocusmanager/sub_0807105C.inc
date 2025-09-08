@@ -1,12 +1,12 @@
 	.syntax unified
-sub_0807105C:
+_._9ComboRoot:
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	adds r7, r1, #0
 	ldr r0, _080710AC
 	str r0, [r6, #0x1c]
 	adds r0, r6, #0
-	bl sub_080709B0
+	bl head__5Combo
 	adds r4, r0, #0
 	cmp r4, #0
 	beq _0807109E
@@ -35,10 +35,10 @@ _08071098:
 _0807109E:
 	adds r0, r6, #0
 	adds r1, r7, #0
-	bl sub_080708A8
+	bl _._5Combo
 	pop {r4, r5, r6, r7}
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080710AC: .4byte vt_09F80960
+_080710AC: .4byte _vt.9ComboRoot
 	.syntax divided

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08070974:
+combo_70__5Combo:
 	push {r4, lr}
 	b _08070988
 _08070978:

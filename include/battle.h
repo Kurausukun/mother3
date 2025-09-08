@@ -9,6 +9,7 @@ class Player;
 class Monster;
 class Guest;
 class BattleFader;
+class Combo;
 
 class BgClass : public Base {
 public:
@@ -191,7 +192,7 @@ public:
     virtual u16 battle_1f0();
     virtual u16 battle_1f8();
     virtual u8* battle_200();
-    virtual s32 battle_208();
+    virtual Combo* battle_208();
     virtual BgClass* battle_210();
     virtual PartyInfo* partyInfo();
     virtual GuestInfo* guestInfo();
@@ -217,7 +218,7 @@ public:
     s32 _38;
     s32 mRoundNo;
     s32 mBattleResult;
-    s32 _44;
+    Combo* _44;
     BgClass* _48;
     PartyInfo* mPartyInfo;
     GuestInfo* mGuestInfo;

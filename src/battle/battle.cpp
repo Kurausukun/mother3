@@ -438,7 +438,7 @@ u8* Battle::battle_200() {
     return gSave._80e;
 }
 
-s32 Battle::battle_208() {
+Combo* Battle::battle_208() {
     return _44;
 }
 

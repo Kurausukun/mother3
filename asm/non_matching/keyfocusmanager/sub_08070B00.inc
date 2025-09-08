@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08070B00:
+combo_c0__5CombobT1:
 	push {lr}
 	lsls r1, r1, #0x18
 	lsrs r1, r1, #0x18

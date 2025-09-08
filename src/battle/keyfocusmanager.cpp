@@ -1,10 +1,10 @@
 // Auto-generated source file
 #include "global.h"
+#include "gba/m4a_internal.h"
 #include "battle/system.h"
 #include "battle/clock.h"
 #include "battle/archive.h"
-#include "gba/m4a_internal.h"
-
+#include "battle/rhythm.h"
 
 struct Sound : Base {
     Sound(u16 idx);
@@ -110,47 +110,316 @@ extern "C" void playSound(u16 idx) {
     }
 }
 
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_0807084C.inc", void sub_0807084C());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_080708A8.inc", void sub_080708A8());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_080708E0.inc", void sub_080708E0());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070904.inc", void sub_08070904());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070940.inc", void sub_08070940());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070974.inc", void sub_08070974());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_080709A8.inc", void sub_080709A8());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_080709AC.inc", void sub_080709AC());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_080709B0.inc", void sub_080709B0());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_080709B4.inc", void sub_080709B4());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070A08.inc", void sub_08070A08());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070A5C.inc", void sub_08070A5C());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070AB0.inc", void sub_08070AB0());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070AD8.inc", void sub_08070AD8());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070B00.inc", void sub_08070B00());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070B28.inc", void sub_08070B28());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070B30.inc", void sub_08070B30());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070B38.inc", void sub_08070B38());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070B40.inc", void sub_08070B40());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070B48.inc", void sub_08070B48());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070B50.inc", void sub_08070B50());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070B5C.inc", void sub_08070B5C());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070B68.inc", void sub_08070B68());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070B74.inc", void sub_08070B74());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070B80.inc", void sub_08070B80());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070B8C.inc", void sub_08070B8C());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070B98.inc", void sub_08070B98());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070BA0.inc", void sub_08070BA0());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070BA8.inc", void sub_08070BA8());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070BB4.inc", void sub_08070BB4());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070C38.inc", void sub_08070C38());
+class Combo : public Base {
+public:
+    Combo(Combo* root, u32 flag1, u32 flag2, u32 flag3, u32 flag4);
+    virtual ~Combo();
+
+    virtual Combo* combo_60();
+    virtual Combo* back();
+    virtual Combo* combo_70();
+    virtual Combo* prev();
+    virtual Combo* next();
+    virtual Combo* head();
+    virtual void combo_98(bool set, bool recurse);
+    virtual void combo_a0(bool set, bool recurse);
+    virtual void combo_a8(bool set, bool recurse);
+    virtual void combo_b0(bool set, bool recurse);
+    virtual void combo_b8(bool set, bool recurse);
+    virtual void combo_c0(bool set, bool recurse);
+    virtual void setRhythm(ComboRhythm& rhythm);
+    virtual void setRhythm(u32 a, u32 b);
+    virtual void setRhythm2(ComboRhythm& rhythm);
+    virtual void setRhythm2(u32 a, u32 b);
+    virtual void combo_e8(u32 r0);
+    virtual bool combo_f0();
+    virtual bool combo_f8();
+    virtual bool combo_100();
+    virtual bool combo_108();
+    virtual bool combo_110();
+    virtual bool combo_118();
+    virtual ComboRhythm getRhythm();
+    virtual ComboRhythm getRhythm2();
+    virtual s8 combo_130();
+    virtual bool beatInRange(ComboRhythm& rhythm);
+    virtual Combo* sub_08070C38(ComboRhythm& rhythm);
+
+    Combo* append(Combo* other);
+    Combo* remove(Combo* other);
+
+private:
+    u32 _20;
+    Combo* mPrev;
+    Combo* mNext;
+    Combo* mHead;
+    ComboRhythm mRhythm;
+    ComboRhythm mRhythm2;
+    s8 _38;
+    u8 _39;
+};
+
+Combo::Combo(Combo* root, u32 flag1, u32 flag2, u32 flag3, u32 flag4) : mRhythm(0, 0), mRhythm2(0, 0) {
+    mPrev = NULL;
+    mNext = NULL;
+    mHead = NULL;
+    mRhythm.a = flag1;
+    mRhythm.b = flag2;
+    mRhythm2.a = flag3;
+    mRhythm2.b = flag4;
+    _38 = 1;
+    _39 = 7;
+    if (root) {
+        root->append(this);
+    }
+}
+
+Combo::~Combo() {
+    if (mPrev) {
+        mPrev->remove(this);
+    }
+    for (Combo* i = mHead; i != 0; i = i->mNext) {
+        i->mPrev = 0;
+    }
+}
+
+Combo* Combo::append(Combo* other) {
+    if (!mHead) {
+        mHead = other;
+    } else {
+        Combo* cur = mHead;
+        while (cur->mNext) {
+            cur = cur->mNext;
+        }
+        cur->mNext = other;
+    }
+    other->mPrev = this;
+    return other;
+}
+
+Combo* Combo::remove(Combo* other) {
+    if (mHead == other) {
+        mHead = other->mNext;
+        other->mPrev = 0;
+        return other;
+    }
+
+    Combo* prev = mHead;
+    while (prev->mNext) {
+        if (prev->mNext == other) {
+            prev->mNext = other->mNext;
+            other->mPrev = 0;
+            return other;
+        }
+        prev = prev->mNext;
+    }
+    return 0;
+}
+
+Combo* Combo::back() {
+    Combo* combo = this;
+    while (combo->prev()) {
+        combo = combo->prev();
+    }
+    return combo;
+}
+
+Combo* Combo::combo_70() {
+    Combo* combo = this;
+    while (combo->prev()) {
+        combo = combo->prev();
+    }
+    return combo;
+}
+
+Combo* Combo::prev() {
+    return mPrev;
+}
+
+Combo* Combo::next() {
+    return mNext;
+}
+
+Combo* Combo::head() {
+    return mHead;
+}
+
+void Combo::combo_98(bool set, bool recurse) {
+    if (set == 1) {
+        _39 |= 1;
+    } else {
+        _39 &= ~1;
+    }
+    if (recurse == 1) {
+        for (Combo* i = mHead; i != 0; i = i->mNext) {
+            i->combo_98(set, recurse);
+        }
+    }
+}
+
+void Combo::combo_a0(bool set, bool recurse) {
+    if (set == 1) {
+        _39 |= 2;
+    } else {
+        _39 &= ~2;
+    }
+    if (recurse == 1) {
+        for (Combo* i = mHead; i != 0; i = i->mNext) {
+            i->combo_a0(set, recurse);
+        }
+    }
+}
+
+void Combo::combo_a8(bool set, bool recurse) {
+    if (set == 1) {
+        _39 |= 4;
+    } else {
+        _39 &= ~4;
+    }
+    if (recurse == 1) {
+        for (Combo* i = mHead; i != 0; i = i->mNext) {
+            i->combo_a8(set, recurse);
+        }
+    }
+}
+
+void Combo::combo_b0(bool set, bool recurse) {
+    if (set == 1) {
+        _39 |= 8;
+    } else {
+        _39 &= ~8;
+    }
+}
+
+void Combo::combo_b8(bool set, bool recurse) {
+    if (set == 1) {
+        _39 |= 0x10;
+    } else {
+        _39 &= ~0x10;
+    }
+}
+
+void Combo::combo_c0(bool set, bool recurse) {
+    if (set == 1) {
+        _39 |= 0x20;
+    } else {
+        _39 &= ~0x20;
+    }
+}
+
+void Combo::setRhythm(ComboRhythm& rhythm) {
+    mRhythm = rhythm;
+}
+
+void Combo::setRhythm(u32 a, u32 b) {
+    mRhythm.a = a;
+    mRhythm.b = b;
+}
+
+void Combo::setRhythm2(ComboRhythm& rhythm) {
+    mRhythm2 = rhythm;
+}
+
+void Combo::setRhythm2(u32 a, u32 b) {
+    mRhythm2.a = a;
+    mRhythm2.b = b;
+}
+
+void Combo::combo_e8(u32 r0) {
+    _38 = r0;
+}
+
+bool Combo::combo_f0() {
+    return _39 & 1;
+}
+
+bool Combo::combo_f8() {
+    return (_39 >> 1) & 1;
+}
+
+bool Combo::combo_100() {
+    return (_39 >> 2) & 1;
+}
+
+bool Combo::combo_108() {
+    return (_39 >> 3) & 1;
+}
+
+bool Combo::combo_110() {
+    return (_39 >> 4) & 1;
+}
+
+bool Combo::combo_118() {
+    return (_39 >> 5) & 1;
+}
+
+ComboRhythm Combo::getRhythm() {
+    return mRhythm;
+}
+
+ComboRhythm Combo::getRhythm2() {
+    return mRhythm2;
+}
+
+s8 Combo::combo_130() {
+    return _38;
+}
+
+bool Combo::beatInRange(ComboRhythm& rhythm) {
+    ComboRhythm lower = getRhythm();
+    ComboRhythm upper = getRhythm2();
+    if (rhythm.a >= lower.a
+        && rhythm.a < lower.a + upper.a
+        && rhythm.b >= lower.b
+        && rhythm.b < lower.b + upper.b) {
+        return true;
+    }
+    return false;
+}
+
+Combo* Combo::sub_08070C38(ComboRhythm& rhythm) {
+    for (Combo* i = mHead; i; i = i->mNext) {
+        if (i->combo_f0() == 1 && i->combo_f8() == 1 && i->beatInRange(rhythm) == 1) {
+            return i;
+        }
+    }
+    return 0;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070CA4.inc", void sub_08070CA4());
 extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070D40.inc", void sub_08070D40());
 extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070E20.inc", void sub_08070E20());
 extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070F00.inc", void sub_08070F00());
 extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070F74.inc", void sub_08070F74());
 extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/nullsub_105.inc", void nullsub_105());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070FE8.inc", void sub_08070FE8());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_0807105C.inc", void sub_0807105C());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_080710B0.inc", void sub_080710B0());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_080710BC.inc", void sub_080710BC());
+
+class ComboRoot : public Combo {
+public:
+    ComboRoot(u32 flag1, u32 flag2, u32 flag3, u32 flag4);
+    virtual ~ComboRoot();
+
+    void sub_080710BC(ComboRoot* other);
+};
+
+extern ClockData gUnknown_08102A9C;
+
+ComboRoot::ComboRoot(u32 flag1, u32 flag2, u32 flag3, u32 flag4) : Combo(0, flag1, flag2, flag3, flag4) {
+    listen(ClockManager::get(), PreAppClock(), gUnknown_08102A9C);
+}
+
+ComboRoot::~ComboRoot() {
+    for (Combo* cur = head(); cur; ) {
+        Combo* nxt = cur->next();
+        delete cur;
+        cur = nxt;
+    }
+}
+
+extern "C" void sub_080710B0(Base* b, Clock* c) {
+    ComboRoot* r = static_cast<ComboRoot*>(b);
+    r->sub_080710BC(r);
+}
+
+extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_080710BC.inc", void sub_080710BC__9ComboRootP9ComboRoot());
 extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08071108.inc", void sub_08071108());
 extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_0807113C.inc", void sub_0807113C());
 extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08071150.inc", void sub_08071150());

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08070B40:
+setRhythm2__5ComboR11ComboRhythm:
 	strh r1, [r0, #0x34]
 	strh r2, [r0, #0x36]
 	bx lr

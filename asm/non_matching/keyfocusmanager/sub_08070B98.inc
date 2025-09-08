@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08070B98:
+getRhythm__5Combo:
 	ldr r1, [r1, #0x30]
 	str r1, [r0]
 	bx lr
