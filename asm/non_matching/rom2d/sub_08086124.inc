@@ -15,7 +15,7 @@ sub_08086124:
 	adds r0, r5, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0807084C
+	bl __5ComboP5ComboUiUiUiUi
 	ldr r0, _080861F8
 	str r0, [r5, #0x1c]
 	movs r0, #0x44
@@ -39,7 +39,7 @@ sub_08086124:
 	strh r0, [r1]
 	strh r2, [r1, #2]
 	adds r0, r5, #0
-	bl sub_08070B28
+	bl setRhythm__5ComboR11ComboRhythm
 	movs r1, #0xa4
 	lsls r1, r1, #2
 	add r0, sp, #8

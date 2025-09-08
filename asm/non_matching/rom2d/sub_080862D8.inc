@@ -18,7 +18,7 @@ sub_080862D8:
 	adds r0, r6, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0807084C
+	bl __5ComboP5ComboUiUiUiUi
 	ldr r0, _080863C4
 	str r0, [r6, #0x1c]
 	movs r0, #0x50

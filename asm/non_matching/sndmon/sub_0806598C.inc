@@ -15,7 +15,7 @@ sub_0806598C:
 	bl sub_08071334
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_080708A8
+	bl _._5Combo
 	pop {r4, r5}
 	pop {r0}
 	bx r0

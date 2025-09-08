@@ -99,7 +99,7 @@ extern "C" u8* sub_08072858() {
     return BattleManager::get()->battle_200();
 }
 
-extern "C" s32 sub_08072878() {
+extern "C" Combo* sub_08072878() {
     return BattleManager::get()->battle_208();
 }
 

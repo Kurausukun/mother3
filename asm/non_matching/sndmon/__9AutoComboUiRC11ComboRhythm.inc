@@ -19,7 +19,7 @@ __9AutoComboUiRC11ComboRhythm:
 	adds r0, r6, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_0807084C
+	bl __5ComboP5ComboUiUiUiUi
 	ldr r0, _08065720
 	str r0, [r6, #0x1c]
 	movs r0, #0x44
@@ -62,7 +62,7 @@ __9AutoComboUiRC11ComboRhythm:
 	strh r0, [r5, #2]
 	adds r0, r6, #0
 	adds r1, r5, #0
-	bl sub_08070B28
+	bl setRhythm__5ComboR11ComboRhythm
 	mov r0, r8
 	movs r1, #1
 	bl sub_080714B0

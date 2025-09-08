@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08070FE8:
+__9ComboRootUiUiUiUi:
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -14,7 +14,7 @@ sub_08070FE8:
 	movs r1, #0
 	adds r2, r4, #0
 	adds r3, r6, #0
-	bl sub_0807084C
+	bl __5ComboP5ComboUiUiUiUi
 	ldr r0, _0807104C
 	str r0, [r5, #0x1c]
 	bl get__12ClockManager
@@ -46,7 +46,7 @@ sub_08070FE8:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0807104C: .4byte vt_09F80960
+_0807104C: .4byte _vt.9ComboRoot
 _08071050: .4byte _vt.3Unk
 _08071054: .4byte _vt.11PreAppClock
 _08071058: .4byte gUnknown_08102A9C

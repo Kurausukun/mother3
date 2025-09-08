@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080708E0:
+append__5ComboP5Combo:
 	push {lr}
 	adds r3, r0, #0
 	ldr r0, [r3, #0x2c]

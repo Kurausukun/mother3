@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08070C38:
+sub_08070C38__5ComboR11ComboRhythm:
 	push {r4, r5, lr}
 	adds r5, r1, #0
 	ldr r4, [r0, #0x2c]
