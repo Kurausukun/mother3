@@ -2,9 +2,9 @@
 #define BATTLE_ARCHIVE_H
 
 #include "base.h"
+#include "battle/system.h"
 #include "global.h"
 #include "vector.h"
-#include "battle/system.h"
 
 struct BXT {
     u32 magic;

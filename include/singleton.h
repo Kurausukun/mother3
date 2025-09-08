@@ -5,12 +5,12 @@
 #include "global.h"
 #include "rtti.h"
 
-#define SINGLETON_DECL(CLASS)                                                                       \
+#define SINGLETON_DECL(CLASS)                                                                      \
     struct CLASS##Manager : Singleton {                                                            \
     public:                                                                                        \
         static CLASS##Manager* manager();                                                          \
         static CLASS* get();                                                                       \
-        static CLASS* makeInstance();                                                                     \
+        static CLASS* makeInstance();                                                              \
         static void destroy();                                                                     \
         virtual void* init();                                                                      \
         virtual const char* getName();                                                             \
@@ -20,7 +20,7 @@
         static CLASS* mSingleton;                                                                  \
     };
 
-#define SINGLETON_IMPL(CLASS)                                                                  \
+#define SINGLETON_IMPL(CLASS)                                                                      \
     CLASS##Manager s##CLASS##Manager;                                                              \
                                                                                                    \
     CLASS##Manager* CLASS##Manager::manager() {                                                    \
@@ -46,7 +46,7 @@
         mSingleton = 0;                                                                            \
     }                                                                                              \
                                                                                                    \
-    void* CLASS::getRTTI() {                                                                   \
+    void* CLASS::getRTTI() {                                                                       \
         return CLASS##Manager::manager();                                                          \
     }
 

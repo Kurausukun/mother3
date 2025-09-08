@@ -1,6 +1,6 @@
+#include "battle/fader.h"
 #include "battle/clock.h"
 #include "gba/gba.h"
-#include "battle/fader.h"
 
 BattleFader::BattleFader() {
     _0 = 0x100;

@@ -18,7 +18,7 @@ void sub_08024744();
 void sub_08005BFC();
 void sub_0801B5E8(u32);
 void sub_08005C14();
-void sub_08001B18(u32 *, u16 *, u32);
+void sub_08001B18(u32*, u16*, u32);
 void sub_08013D38();
 void sub_0802610C(u32);
 void set_event_flag(u32, u32);
@@ -105,12 +105,12 @@ u16 exec_extended(u16, s32*);
 void sub_080338D8(u8, s32);
 void sub_08033868(u8, u8, s32);
 void sub_08036A90(u8, s32, s32, s32);
-u32 sub_08036960(Object *, u8);
-void sub_08030550(Object *, u16, u32);
-void sub_08035D40(Object *, u16, u16, u16);
-void sub_0802D294(u32 *);
-struct C2Struct * sub_08036D3C(u16);
-void sub_080261D0(Object *, s16, s32, s32, s32);
+u32 sub_08036960(Object*, u8);
+void sub_08030550(Object*, u16, u32);
+void sub_08035D40(Object*, u16, u16, u16);
+void sub_0802D294(u32*);
+struct C2Struct* sub_08036D3C(u16);
+void sub_080261D0(Object*, s16, s32, s32, s32);
 void sub_0802C8A8(u8*, u32);
 void sub_08030180(void);
 void sub_08034FFC(void);
@@ -118,8 +118,8 @@ void sub_08033FEC(u32);
 void sub_080337F0(u8, u8, s16);
 void sub_08033B58(u16);
 void sub_080337A8(u8, u16);
-Object * sub_08035138(u8);
-void sub_08035298(Object *);
+Object* sub_08035138(u8);
+void sub_08035298(Object*);
 }
 
 #endif  // FUNCTIONS_H

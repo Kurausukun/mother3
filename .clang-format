@@ -22,7 +22,7 @@ BreakBeforeBinaryOperators: None
 BreakBeforeBraces: Attach
 BreakBeforeTernaryOperators: false
 BreakConstructorInitializersBeforeComma: false
-ColumnLimit:     100
+ColumnLimit: 100
 CommentPragmas:  '^ (IWYU pragma:|NOLINT)'
 ConstructorInitializerAllOnOneLineOrOnePerLine: false
 ConstructorInitializerIndentWidth: 4
@@ -71,4 +71,4 @@ SpacesInSquareBrackets: false
 Standard: c++17
 TabWidth:        4
 UseTab:          Never
-...
+WhitespaceSensitiveMacros: ['ASM_FUNC']

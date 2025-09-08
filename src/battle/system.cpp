@@ -1,11 +1,11 @@
 #include "battle/system.h"
 #include <stddef.h>
-#include "battle/clock.h"
-#include "battle/keypad.h"
-#include "structs.h"
-#include "battle/irc.h"
-#include "battle/sndSystem.h"
 #include "battle/archive.h"
+#include "battle/clock.h"
+#include "battle/irc.h"
+#include "battle/keypad.h"
+#include "battle/sndSystem.h"
+#include "structs.h"
 
 extern "C" void sub_0806E4C4();
 extern "C" void sub_0806CC1C();
@@ -18,15 +18,15 @@ extern "C" u16 get_progression_flag(u32);
 extern "C" void sub_080026C0();
 extern "C" KeyPad* KeyPadInstance();
 extern "C" void DoReset();
-extern "C" void randomMT();                                
-extern "C" void seedMT(s32);                           
-extern "C" void sub_0805D210();                                   
-extern "C" void sub_0806A974();                         
-extern "C" void sub_0806B040();                        
-extern "C" void sub_0806BDE4();                        
-extern "C" void sub_0806CBE0();                         
-extern "C" void sub_0806E488();                      
-extern "C" void sub_0806FD80();            
+extern "C" void randomMT();
+extern "C" void seedMT(s32);
+extern "C" void sub_0805D210();
+extern "C" void sub_0806A974();
+extern "C" void sub_0806B040();
+extern "C" void sub_0806BDE4();
+extern "C" void sub_0806CBE0();
+extern "C" void sub_0806E488();
+extern "C" void sub_0806FD80();
 
 extern IrqTable gIntrHandlers;
 
@@ -98,7 +98,7 @@ SINGLETON_IMPL(System)
 System::System() {
     seedMT(gSave.playtime + 0x1111);
     randomMT();
-    
+
     sub_0805D210();
 
     IrcManager::makeInstance();
@@ -109,8 +109,7 @@ System::System() {
     sub_0806FD80();
 
     sub_0806FDB0()->sndsystem_78(0x82);
-    
-    
+
     sub_0806A974();
     sub_0806B040();
     sub_0806BDE4();
@@ -118,10 +117,9 @@ System::System() {
     sub_0806E488();
 
     this->mHandle = new SARHandle();
-    
+
     this->listen(ClockManager::get(), AppClock(), gUnknown_080F24D8);
 }
-
 
 System::~System() {
     delete mHandle;
@@ -196,22 +194,21 @@ u32 System::getGameProgression() {
     return 0;
 }
 
-int System::sub_0805D6F8(int arg1) {    
+int System::sub_0805D6F8(int arg1) {
     if (gUnknown_020050C0.entries[arg1]._32 == 1) {
         return 0xA;
     }
-    
-    
-    for(s32 i=7; i>=0;i--) {
+
+    for (s32 i = 7; i >= 0; i--) {
         if (gUnknown_020050C0.entries[arg1]._2A[i] == 0xFF) {
             return i + 2;
         }
     };
-    
+
     if (gUnknown_020050C0.entries[arg1]._2A[0] > 1) {
         return 1;
     }
-    
+
     return 0;
 }
 

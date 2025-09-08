@@ -1,10 +1,10 @@
 // Auto-generated source file
-#include "global.h"
 #include "battle.h"
+#include "battle/fader.h"
 #include "battle/monster.h"
 #include "battle/monsterSkill.h"
 #include "battle/unitTarget.h"
-#include "battle/fader.h"
+#include "global.h"
 
 extern "C" s32 sub_08069558(s32 min, s32 max, s32 step, s32 duration);
 extern "C" BattleFader* sub_08072568();

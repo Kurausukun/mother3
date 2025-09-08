@@ -389,7 +389,10 @@ public:
 
         for (int i = 0; i < sub_08072A88(); i++) {
             Unit* m = sub_08072AA4(i);
-            if (m->hasStatus(Status::Poison) == true || m->hasStatus(Status::Numb) == true || m->hasStatus(Status::Sleep) == true || m->hasStatus(Status::Strange) == true || m->hasStatus(Status::Crying) == true || m->hasStatus(Status::Forgetful) == true || m->hasStatus(Status::Nauseous) == true || m->hasStatus(Status::Fleas) == true) {
+            if (m->hasStatus(Status::Poison) == true || m->hasStatus(Status::Numb) == true ||
+                m->hasStatus(Status::Sleep) == true || m->hasStatus(Status::Strange) == true ||
+                m->hasStatus(Status::Crying) == true || m->hasStatus(Status::Forgetful) == true ||
+                m->hasStatus(Status::Nauseous) == true || m->hasStatus(Status::Fleas) == true) {
                 return getMonsterSkill(0x208, this);
             }
         }
@@ -413,7 +416,11 @@ public:
         if (IsMonsterSkillAndType(a, 0x208) == true) {
             for (int i = 0; i < sub_08072A88(); i++) {
                 Unit* m = sub_08072AA4(i);
-                if (m->hasStatus(Status::Poison) == true || m->hasStatus(Status::Numb) == true || m->hasStatus(Status::Sleep) == true || m->hasStatus(Status::Strange) == true || m->hasStatus(Status::Crying) == true || m->hasStatus(Status::Forgetful) == true || m->hasStatus(Status::Nauseous) == true || m->hasStatus(Status::Fleas) == true) {
+                if (m->hasStatus(Status::Poison) == true || m->hasStatus(Status::Numb) == true ||
+                    m->hasStatus(Status::Sleep) == true || m->hasStatus(Status::Strange) == true ||
+                    m->hasStatus(Status::Crying) == true ||
+                    m->hasStatus(Status::Forgetful) == true ||
+                    m->hasStatus(Status::Nauseous) == true || m->hasStatus(Status::Fleas) == true) {
                     a->addTarget(m);
                     return true;
                 }
@@ -495,7 +502,8 @@ public:
             return getMonsterSkill(val, this);
         }
 
-        s32 chance = randS32_(0, 99);;
+        s32 chance = randS32_(0, 99);
+        ;
         val = 9;
         if (chance >= prob1) {
             val = 227;
@@ -606,7 +614,7 @@ public:
     END_NONMATCH
 
     NONMATCH("asm/non_matching/monster/sub_080ADB54.inc", virtual Action* calcActionPhaseOne()) {
-        u16 skills[5]; // = { 0x13B, 0x13C, 0x13E, 0x13F, 0x13D };
+        u16 skills[5];  // = { 0x13B, 0x13C, 0x13E, 0x13F, 0x13D };
         s32 prob1 = 30;
         s32 prob2 = 55;
         s32 prob3 = 85;
@@ -696,9 +704,7 @@ class Clayman : public DefaultMonster {
         return getMonsterSkill(val, this);
     }
 
-    virtual Action* m_440() {
-        return getMonsterSkill(0x147, this);
-    }
+    virtual Action* m_440() { return getMonsterSkill(0x147, this); }
 
     virtual Action* m_448() {
         s32 prob1 = 35;

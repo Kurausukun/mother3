@@ -25,10 +25,9 @@ extern const IrqTable gUnknown_080C5FA0;
 extern u16 gUnknown_03004B00;
 extern u8 gUnknown_09C5FD2C;
 extern u8 gUnknown_02015DC0;
-extern const u8 gUnknown_09C8DE98; // Some sort of "archive" with sprites, palettes, etc.
+extern const u8 gUnknown_09C8DE98;  // Some sort of "archive" with sprites, palettes, etc.
 extern u8 gMenuTextPalette;
 extern const u8 gUnknown_09BCDD8C;
-
 
 extern "C" void* sub_0800289C(const void* src, int index);
 extern "C" void sub_08090F88(void* src, void* dest);  // lz-decompress
@@ -43,7 +42,7 @@ extern "C" void sub_0800160C(Unknown_02016078* dest, void* src, int index, u32 s
 extern "C" void sub_08001A14(void* src, void* dest, u32 size);
 extern "C" void sub_08001A38(void* dest, u32 size, int value);
 extern "C" void sub_08001B18(void*, void*, int);
-extern "C" void sub_08000E5C(  void*);
+extern "C" void sub_08000E5C(void*);
 
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0803D59C.inc", void sub_0803D59C());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0803D5EC.inc", void sub_0803D5EC());
@@ -826,7 +825,6 @@ extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/nullsub_9.inc", void nullsub
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/nullsub_10.inc", void nullsub_10());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_080585F8.inc", void sub_080585F8());
 
-
 extern "C" void sub_08058614(void) {
     if (gUnknown_02015DC0 != 0) {
         sub_08000E5C(&gSomeBlend._50);
@@ -873,7 +871,7 @@ extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08058FE4.inc", void sub_
 
 extern "C" void sub_08059094(void) {
     sub_08090F88(sub_0800289C(&gUnknown_09C5FD2C, 0x4C), (void*)0x06008000);
-    void*ptr = sub_0800289C(&gUnknown_09C5FD2C, 0x4D);
+    void* ptr = sub_0800289C(&gUnknown_09C5FD2C, 0x4D);
     sub_0800160C(&gSomeBlend._50, ptr, 0xE, 0x40);
     sub_08001B18(ptr, &gSomeBlend._4294, 0x40);
 }

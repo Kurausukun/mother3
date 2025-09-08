@@ -1,10 +1,10 @@
 // Auto-generated source file
-#include "global.h"
-#include "gba/m4a_internal.h"
-#include "battle/system.h"
-#include "battle/clock.h"
 #include "battle/archive.h"
+#include "battle/clock.h"
 #include "battle/rhythm.h"
+#include "battle/system.h"
+#include "gba/m4a_internal.h"
+#include "global.h"
 
 struct Sound : Base {
     Sound(u16 idx);
@@ -158,7 +158,8 @@ private:
     u8 _39;
 };
 
-Combo::Combo(Combo* root, u32 flag1, u32 flag2, u32 flag3, u32 flag4) : mRhythm(0, 0), mRhythm2(0, 0) {
+Combo::Combo(Combo* root, u32 flag1, u32 flag2, u32 flag3, u32 flag4)
+    : mRhythm(0, 0), mRhythm2(0, 0) {
     mPrev = NULL;
     mNext = NULL;
     mHead = NULL;
@@ -367,10 +368,8 @@ s8 Combo::combo_130() {
 bool Combo::beatInRange(ComboRhythm& rhythm) {
     ComboRhythm lower = getRhythm();
     ComboRhythm upper = getRhythm2();
-    if (rhythm.a >= lower.a
-        && rhythm.a < lower.a + upper.a
-        && rhythm.b >= lower.b
-        && rhythm.b < lower.b + upper.b) {
+    if (rhythm.a >= lower.a && rhythm.a < lower.a + upper.a && rhythm.b >= lower.b &&
+        rhythm.b < lower.b + upper.b) {
         return true;
     }
     return false;
@@ -402,12 +401,13 @@ public:
 
 extern ClockData gUnknown_08102A9C;
 
-ComboRoot::ComboRoot(u32 flag1, u32 flag2, u32 flag3, u32 flag4) : Combo(0, flag1, flag2, flag3, flag4) {
+ComboRoot::ComboRoot(u32 flag1, u32 flag2, u32 flag3, u32 flag4)
+    : Combo(0, flag1, flag2, flag3, flag4) {
     listen(ClockManager::get(), PreAppClock(), gUnknown_08102A9C);
 }
 
 ComboRoot::~ComboRoot() {
-    for (Combo* cur = head(); cur; ) {
+    for (Combo* cur = head(); cur;) {
         Combo* nxt = cur->next();
         delete cur;
         cur = nxt;
