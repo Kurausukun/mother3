@@ -119,18 +119,18 @@ SECTIONS
 
         *.o(.gnu.linkonce.t._._6ResPtr);
         build/mother3/src/rom3.o(.text);
-        build/mother3/asm/rom3a.o(.text);
-        build/mother3/asm/rom3.o(.text);
+        build/mother3/src/rom3a0.o(.text);
+        build/mother3/src/rom3a1.o(.text);
         build/mother3/asm/monsterImplTmp.o(.text);
         build/mother3/src/battle/monsterImpl.o(.text);
-        build/mother3/asm/rom3aa.o(.text);
+        build/mother3/src/rom3aa.o(.text);
         build/mother3/src/battle/monsterImpl2.o(.text);
-        build/mother3/asm/rom3ab.o(.text);
+        build/mother3/src/rom3ab.o(.text);
         build/mother3/src/battle/goods2.o(.text);
         build/mother3/src/battle/goodsImpl.o(.text);
         build/mother3/src/battle/goods2.o(.gnu.linkonce.t.*);
 
-        build/mother3/asm/rom3b.o(.text);
+        build/mother3/src/rom3b.o(.text);
         build/mother3/src/inst.o(.text);
         build/mother3/asm/rom4.o(.text);
 

@@ -14,21 +14,19 @@ def extract_functions(asm_file):
     current_content = []
     
     for line in content.split('\n'):
-        # Check for function start (global symbol with address)
-        match = re.match(r'\s*(\w+):\s*@\s*0x(\w+)', line)
+        # Check for thumb_func_start or arm_func_start directive to identify function start
+        if line.strip().startswith(('thumb_func_start', 'arm_func_start')):
+            # Extract function name from thumb_func_start or arm_func_start directive
+            match = re.match(r'\s*(?:thumb_func_start|arm_func_start)\s+(\S+)', line)
+            if match:
+                # Save previous function if it exists
+                if current_function:
+                    functions.append((current_function, '\n'.join(current_content)))
+                current_function = match.group(1)
+                current_content = []
         
-        # Check if this is a local label (starts with _) or data label
-        is_local_or_data = re.match(r'\s*_\w+:', line) or re.match(r'\s*\w+_\w+:', line)
-        
-        if match and not line.strip().startswith('_'):  # Only treat as new function if not a local label
-            if current_function:
-                functions.append((current_function, '\n'.join(current_content)))
-            current_function = match.group(1)
-            current_content = [line]
-        elif is_local_or_data and current_function:
-            # Keep local and data labels with their parent function
-            current_content.append(line)
-        elif current_function:
+        # Add all lines to current function if we have one
+        if current_function:
             current_content.append(line)
     
     # Add the last function
@@ -55,8 +53,8 @@ def create_asm_include(func_name, content, output_dir):
         if not stripped:
             continue
             
-        # Skip comments and thumb_func_start
-        if stripped.startswith(('@', '//', 'thumb_func_start')):
+        # Skip comments, thumb_func_start, and arm_func_start
+        if stripped.startswith(('@', '//', 'thumb_func_start', 'arm_func_start')):
             continue
             
         # Clean up the line (remove comments and trailing whitespace)
@@ -64,8 +62,9 @@ def create_asm_include(func_name, content, output_dir):
         if not clean_line:
             continue
             
-        # Skip only the main function label line (starts with function name and ends with :)
+        # Include the main function label line and mark that we're in the function
         if clean_line.startswith(func_name) and clean_line.endswith(':'):
+            asm_content += f"{clean_line}\n"
             in_function = True
             continue
             
