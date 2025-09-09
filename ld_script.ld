@@ -130,7 +130,7 @@ SECTIONS
         build/mother3/src/battle/goodsImpl.o(.text);
         build/mother3/src/battle/goods2.o(.gnu.linkonce.t.*);
 
-        build/mother3/asm/rom3b.o(.text);
+        build/mother3/src/rom3b.o(.text);
         build/mother3/src/inst.o(.text);
         build/mother3/asm/rom4.o(.text);
 
