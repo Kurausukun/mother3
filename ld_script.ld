@@ -119,7 +119,7 @@ SECTIONS
 
         *.o(.gnu.linkonce.t._._6ResPtr);
         build/mother3/src/rom3.o(.text);
-        build/mother3/asm/rom3a.o(.text);
+        build/mother3/src/rom3a0.o(.text);
         build/mother3/src/rom3a1.o(.text);
         build/mother3/asm/monsterImplTmp.o(.text);
         build/mother3/src/battle/monsterImpl.o(.text);
