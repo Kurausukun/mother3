@@ -14,10 +14,10 @@ def extract_functions(asm_file):
     current_content = []
     
     for line in content.split('\n'):
-        # Check for thumb_func_start directive to identify function start
-        if line.strip().startswith('thumb_func_start'):
-            # Extract function name from thumb_func_start directive
-            match = re.match(r'\s*thumb_func_start\s+(\S+)', line)
+        # Check for thumb_func_start or arm_func_start directive to identify function start
+        if line.strip().startswith(('thumb_func_start', 'arm_func_start')):
+            # Extract function name from thumb_func_start or arm_func_start directive
+            match = re.match(r'\s*(?:thumb_func_start|arm_func_start)\s+(\S+)', line)
             if match:
                 # Save previous function if it exists
                 if current_function:
@@ -53,8 +53,8 @@ def create_asm_include(func_name, content, output_dir):
         if not stripped:
             continue
             
-        # Skip comments and thumb_func_start
-        if stripped.startswith(('@', '//', 'thumb_func_start')):
+        # Skip comments, thumb_func_start, and arm_func_start
+        if stripped.startswith(('@', '//', 'thumb_func_start', 'arm_func_start')):
             continue
             
         # Clean up the line (remove comments and trailing whitespace)
