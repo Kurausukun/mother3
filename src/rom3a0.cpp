@@ -1,29 +1,37 @@
 // Auto-generated source file
 #include "global.h"
 
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_080977B4.inc", void sub_080977B4());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_080977C4.inc", void sub_080977C4());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_080977CC.inc", void sub_080977CC());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_080977EC.inc", void sub_080977EC());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_080977F4.inc", void sub_080977F4());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_08097808.inc", void sub_08097808());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_08097828.inc", void sub_08097828());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_08097830.inc", void sub_08097830());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_08097844.inc", void sub_08097844());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_08097864.inc", void sub_08097864());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_0809786C.inc", void sub_0809786C());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_08097880.inc", void sub_08097880());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_08097890.inc", void sub_08097890());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_08097898.inc", void sub_08097898());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_080978AC.inc", void sub_080978AC());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_080978BC.inc", void sub_080978BC());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_080978C4.inc", void sub_080978C4());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_080978D8.inc", void sub_080978D8());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_080978E8.inc", void sub_080978E8());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_080978F0.inc", void sub_080978F0());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_08097904.inc", void sub_08097904());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_08097914.inc", void sub_08097914());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_0809791C.inc", void sub_0809791C());
+// extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_080977B4.inc", void sub_080977B4());  //
+// gen-battle get extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_080977C4.inc", void
+// sub_080977C4());  // gen-battle name extern "C"
+// ASM_FUNC("asm/non_matching/rom3a0/sub_080977CC.inc", void sub_080977CC());  // gen-lose get
+// extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_080977EC.inc", void sub_080977EC());  //
+// gen-lose name extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_080977F4.inc", void
+// sub_080977F4());  // ----lose dtor extern "C"
+// ASM_FUNC("asm/non_matching/rom3a0/sub_08097808.inc", void sub_08097808());  // gen-escape get
+// extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_08097828.inc", void sub_08097828());  //
+// gen-escape name extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_08097830.inc", void
+// sub_08097830());  // ----escape dtor extern "C"
+// ASM_FUNC("asm/non_matching/rom3a0/sub_08097844.inc", void sub_08097844());  // gen-win get extern
+// "C" ASM_FUNC("asm/non_matching/rom3a0/sub_08097864.inc", void sub_08097864());  // gen-win name
+// extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_0809786C.inc", void sub_0809786C());  // ----win
+// dtor
+// extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_08097880.inc", void sub_08097880());  // gen-end
+// get extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_08097890.inc", void sub_08097890());  //
+// gen-end name extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_08097898.inc", void
+// sub_08097898());  // ----end dtor extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_080978AC.inc",
+// void sub_080978AC());  // gen-unitturnbegin get extern "C"
+// ASM_FUNC("asm/non_matching/rom3a0/sub_080978BC.inc", void sub_080978BC());  // gen-unitturnbegin
+// name extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_080978C4.inc", void sub_080978C4());  //
+// unitturnbegin-dtor extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_080978D8.inc", void
+// sub_080978D8());  // gen-roundend get extern "C"
+// ASM_FUNC("asm/non_matching/rom3a0/sub_080978E8.inc", void sub_080978E8());  // gen-roundend name
+// extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_080978F0.inc", void sub_080978F0());  //
+// roundend-dtor extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_08097904.inc", void
+// sub_08097904());  // gen-roundbegin get extern "C"
+// ASM_FUNC("asm/non_matching/rom3a0/sub_08097914.inc", void sub_08097914());  // gen-roundbegin
+// name extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_0809791C.inc", void sub_0809791C());  //
+// roundbegin-dtor
 extern "C" ASM_FUNC("asm/non_matching/rom3a0/MaskedManBattleB_ctor.inc", void MaskedManBattleB_ctor());
 extern "C" ASM_FUNC("asm/non_matching/rom3a0/MaskedManBattleA_ctor.inc", void MaskedManBattleA_ctor());
 extern "C" ASM_FUNC("asm/non_matching/rom3a0/PorkyBattle_ctor.inc", void PorkyBattle_ctor());

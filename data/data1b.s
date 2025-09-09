@@ -90,11 +90,11 @@ gUnknown_080F24D8:
     .4byte system_callback__FP6System+1
     .incbin "baserom.gba", 0x000F24E0, 0x454
 
-    .global gUnknown_080F2934
+    .global gUnknown_080F2934 // gUnknown_02002004
 gUnknown_080F2934:
     .incbin "baserom.gba", 0x000F2934, 0x18
 
-    .global gUnknown_080F294C
+    .global gUnknown_080F294C // gUnknown_02001FF8
 gUnknown_080F294C:
     .incbin "baserom.gba", 0x000F294C, 0x1C
 
@@ -112,15 +112,15 @@ gUnknown_080F29A0:
 
     .global gUnknown_080F29C4
 gUnknown_080F29C4:
-    .incbin "baserom.gba", 0x000F29C4, 0x24
+    .incbin "baserom.gba", 0x000F29C4, 0x24 // ShowDownAsEscape
 
     .global gUnknown_080F29E8
 gUnknown_080F29E8:
-    .incbin "baserom.gba", 0x000F29E8, 0x170
+    .incbin "baserom.gba", 0x000F29E8, 0x170 // ShowDownAsLose
 
     .global gUnknown_080F2B58
 gUnknown_080F2B58:
-    .incbin "baserom.gba", 0x000F2B58, 0x8
+    .incbin "baserom.gba", 0x000F2B58, 0x8 // Battle
 
     .global gUnknown_080F2B60
 gUnknown_080F2B60:

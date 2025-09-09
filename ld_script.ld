@@ -35,6 +35,7 @@ SECTIONS
         build/mother3/src/battle/system.o(.text);
         build/mother3/src/battle/battle_misc.o(.text);
         build/mother3/src/battle/battle.o(.text);
+        build/mother3/src/battle/battle2.o(.text);
         build/mother3/src/battle/guest.o(.text);
         build/mother3/src/battle/guestFactory.o(.text);
         build/mother3/src/battle/goods.o(.text);
@@ -119,6 +120,7 @@ SECTIONS
 
         *.o(.gnu.linkonce.t._._6ResPtr);
         build/mother3/src/rom3.o(.text);
+        build/mother3/src/battle/battle.o(.gnu.linkonce.t.*);
         build/mother3/src/rom3a0.o(.text);
         build/mother3/src/rom3a1.o(.text);
         build/mother3/asm/monsterImplTmp.o(.text);
