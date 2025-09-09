@@ -125,7 +125,7 @@ SECTIONS
         build/mother3/src/battle/monsterImpl.o(.text);
         build/mother3/asm/rom3aa.o(.text);
         build/mother3/src/battle/monsterImpl2.o(.text);
-        build/mother3/asm/rom3ab.o(.text);
+        build/mother3/src/rom3ab.o(.text);
         build/mother3/src/battle/goods2.o(.text);
         build/mother3/src/battle/goodsImpl.o(.text);
         build/mother3/src/battle/goods2.o(.gnu.linkonce.t.*);
