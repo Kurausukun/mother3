@@ -236,6 +236,46 @@ public:
     u16 t;
 };
 
+class RoundEnd : public Unk {
+public:
+    RoundEnd() : t(0) {}
+    RoundEnd(u16 t) : t(t) {}
+    virtual ~RoundEnd() {}
+
+    u16 t;
+};
+
+struct UnitTurnBegin : public Unk {
+    UnitTurnBegin() {}
+    UnitTurnBegin(Unit* u) : u(u) {}
+    virtual ~UnitTurnBegin() {}
+
+    Unit* u;
+};
+
+struct UnitTurnEnd : public Unk {
+    UnitTurnEnd() {}
+    UnitTurnEnd(Unit* u) : u(u) {}
+    virtual ~UnitTurnEnd() {}
+
+    Unit* u;
+};
+
+struct ShowDownAsWin : public Unk {
+    ShowDownAsWin() {}
+    virtual ~ShowDownAsWin() {}
+};
+
+struct ShowDownAsLose : public Unk {
+    ShowDownAsLose() {}
+    virtual ~ShowDownAsLose() {}
+};
+
+struct ShowDownAsEscape : public Unk {
+    ShowDownAsEscape() {}
+    virtual ~ShowDownAsEscape() {}
+};
+
 class RoundBegin2 : public Unk {
 public:
     RoundBegin2();
@@ -246,15 +286,6 @@ class UnkRoundBegin : public Singleton {
 public:
     virtual const char* getName() { return "RoundBegin"; }
     virtual void* get() { return new RoundBegin2(); }
-};
-
-class RoundEnd : public Unk {
-public:
-    RoundEnd() : t(0) {}
-    RoundEnd(u16 t) : t(t) {}
-    virtual ~RoundEnd() {}
-
-    u16 t;
 };
 
 class RoundEnd2 {
@@ -269,25 +300,10 @@ public:
     virtual void* get() { return new RoundEnd2(); }
 };
 
-struct UnitTurnBegin : public Unk {
-    UnitTurnBegin();
-    UnitTurnBegin(Unit* u) : u(u) {}
-    virtual ~UnitTurnBegin() {}
-
-    Unit* u;
-};
 class UnkUnitTurnBegin : public Singleton {
 public:
     virtual const char* getName() { return "UnitTurnBegin"; }
     virtual void* get() { return new UnitTurnBegin(); }
-};
-
-struct UnitTurnEnd : public Unk {
-    UnitTurnEnd();
-    UnitTurnEnd(Unit* u) : u(u) {}
-    virtual ~UnitTurnEnd() {}
-
-    Unit* u;
 };
 class UnkUnitTurnEnd : public Singleton {
 public:
@@ -296,35 +312,18 @@ public:
     virtual void* get() { return new UnitTurnEnd(); }
 };
 
-struct ShowDownAsWin : public Unk {
-    ShowDownAsWin() {}
-    virtual ~ShowDownAsWin() {}
-};
-
 class UnkShowDownAsWin : public Singleton {
 public:
     UnkShowDownAsWin() {}
     virtual const char* getName() { return "ShowDownAsWin"; }
     virtual void* get() { return new ShowDownAsWin(); }
 };
-
-struct ShowDownAsEscape : public Unk {
-    ShowDownAsEscape() {}
-    virtual ~ShowDownAsEscape() {}
-};
-
 class UnkShowDownAsEscape : public Singleton {
 public:
     UnkShowDownAsEscape() {}
     virtual const char* getName() { return "ShowDownAsEscape"; }
     virtual void* get() { return new ShowDownAsEscape(); }
 };
-
-struct ShowDownAsLose : public Unk {
-    ShowDownAsLose() {}
-    virtual ~ShowDownAsLose() {}
-};
-
 class UnkShowDownAsLose : public Singleton {
 public:
     UnkShowDownAsLose() {}
