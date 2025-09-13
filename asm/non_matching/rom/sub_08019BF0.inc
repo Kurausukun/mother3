@@ -1,3 +1,6 @@
+.extern sub_0803D61C_start
+.global sub_0803D61C_start
+
 	.syntax unified
 sub_08019BF0:
 	push {r4, r5, r6, r7, lr}
@@ -110,7 +113,7 @@ _08019CAC:
 	b _08019CF6
 	.align 2, 0
 _08019CC0: .4byte 0x000067AC
-_08019CC4: .4byte 0x0803D61C
+_08019CC4: .4byte sub_0803D61C_start
 _08019CC8: .4byte gUnknown_03004E14
 _08019CCC:
 	cmp r5, #1
