@@ -360,3 +360,133 @@ _0803D58C: .4byte gUnknown_03004AFA
 _0803D590: .4byte gUnknown_030040F0
 _0803D594: .4byte gUnknown_03004370
 _0803D598: .4byte gUnknown_03004730
+
+.global sub_0803D59C_start
+sub_0803D59C_start:
+thumb_func_start sub_0803D59C
+sub_0803D59C:
+	push {r4, r5, r6, r7}
+	movs r6, r0
+	ldr r0, _0803D5E8 @ =gSceneObjBuffer
+	mov ip, r0
+	movs r0, #1
+	cmp r0, r6
+	bhs _0803D5E2
+	movs r7, #0
+_0803D5AC:
+	adds r3, r0, #0
+	adds r5, r3, #1
+	cmp r3, #0
+	beq _0803D5DC
+_0803D5B4:
+	lsls r0, r3, #2
+	mov r1, ip
+	adds r2, r0, r1
+	subs r4, r2, #4
+	ldrb r1, [r4, #2]
+	ldrb r0, [r2, #2]
+	cmp r1, r0
+	bhi _0803D5CE
+	bne _0803D5DC
+	ldrsh r1, [r4, r7]
+	ldrsh r0, [r2, r7]
+	cmp r1, r0
+	bge _0803D5DC
+_0803D5CE:
+	ldr r1, [r2]
+	ldr r0, [r4]
+	str r0, [r2]
+	str r1, [r4]
+	subs r3, #1
+	cmp r3, #0
+	bne _0803D5B4
+_0803D5DC:
+	movs r0, r5
+	cmp r0, r6
+	blo _0803D5AC
+_0803D5E2:
+	pop {r4, r5, r6, r7}
+	bx lr
+	.align 2, 0
+_0803D5E8: .4byte gSceneObjBuffer
+
+.global sub_0803D5EC_start
+sub_0803D5EC_start:
+thumb_func_start sub_0803D5EC
+sub_0803D5EC:
+	cmp r0, #0
+	bge _0803D5F2
+	rsbs r0, r0, #0
+_0803D5F2:
+	cmp r1, #0
+	bge _0803D5F8
+	rsbs r1, r1, #0
+_0803D5F8:
+	cmp r0, r1
+	blt _0803D602
+	adds r3, r0, #0
+	adds r0, r1, #0
+	b _0803D604
+_0803D602:
+	adds r3, r1, #0
+_0803D604:
+	lsrs r2, r0, #1
+	adds r2, r0, r2
+	lsrs r0, r3, #5
+	subs r0, r3, r0
+	lsrs r1, r3, #7
+	subs r0, r0, r1
+	lsrs r1, r2, #2
+	adds r0, r0, r1
+	lsrs r2, r2, #6
+	adds r0, r0, r2
+	bx lr
+	.align 2, 0
+
+.global sub_0803D61C_start
+sub_0803D61C_start:
+thumb_func_start sub_0803D61C
+sub_0803D61C:
+	push {r4, r5, r6, r7}
+	mov r7, r8
+	push {r7}
+	adds r4, r0, #0
+	adds r3, r1, #0
+	ldr r0, _0803D668 @ =gUnknown_03004B0C
+	ldrh r2, [r0]
+	ldr r0, _0803D66C @ =gUnknown_03004B0E
+	ldrh r7, [r0]
+	ldr r0, _0803D670 @ =gUnknown_03004B10
+	ldrh r6, [r0]
+	movs r5, #0x9f
+	ldr r0, _0803D674 @ =gSineTable
+	mov r8, r0
+	movs r1, #0xff
+	mov ip, r1
+_0803D63C:
+	adds r0, r2, #0
+	mov r1, ip
+	ands r0, r1
+	lsls r0, r0, #1
+	add r0, r8
+	movs r1, #0
+	ldrsh r1, [r0, r1]
+	lsrs r1, r1, #3
+	rsbs r0, r1, #0
+	strh r0, [r4]
+	adds r4, #2
+	strh r1, [r3]
+	adds r3, #2
+	adds r2, r2, r6
+	subs r5, #1
+	cmp r5, #0
+	bne _0803D63C
+	pop {r7}
+	mov r8, r7
+	pop {r4, r5, r6, r7}
+	bx lr
+	.align 2, 0
+_0803D668: .4byte gUnknown_03004B0C
+_0803D66C: .4byte gUnknown_03004B0E
+_0803D670: .4byte gUnknown_03004B10
+_0803D674: .4byte gSineTable
