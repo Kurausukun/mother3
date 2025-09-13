@@ -45,9 +45,6 @@ extern "C" void sub_08001A38(void* dest, u32 size, int value);
 extern "C" void sub_08001B18(void*, void*, int);
 extern "C" void sub_08000E5C(  void*);
 
-extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0803D59C.inc", void sub_0803D59C());
-extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0803D5EC.inc", void sub_0803D5EC());
-extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0803D61C.inc", void sub_0803D61C());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0803D678.inc", void sub_0803D678());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0803D6C8.inc", void sub_0803D6C8());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0803D718.inc", void sub_0803D718());

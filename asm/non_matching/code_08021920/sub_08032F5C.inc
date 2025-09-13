@@ -1,3 +1,8 @@
+.extern sub_0803D59C_start
+.global sub_0803D59C_start
+.extern sub_0803D5EC_start
+.global sub_0803D5EC_start
+
 	.syntax unified
 sub_08032F5C:
 	push {r4, lr}
@@ -15,8 +20,8 @@ sub_08032F5C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08032F7C: .4byte 0x0803D59C
+_08032F7C: .4byte sub_0803D59C_start
 _08032F80: .4byte gUnknown_03004C14
-_08032F84: .4byte 0x0803D5EC
+_08032F84: .4byte sub_0803D5EC_start
 _08032F88: .4byte gUnknown_03004D14
 	.syntax divided
