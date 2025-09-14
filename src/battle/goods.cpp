@@ -64,8 +64,7 @@ extern "C" ASM_FUNC("asm/non_matching/goods/sub_08064950.inc", void sub_08064950
 
 extern s32 gUnknown_020038B0;
 
-// sub_0806496C
-extern "C" void* GetGoodsRTTI(void) {
+extern "C" void* getGoodsRTTI(void) {
     return &gUnknown_020038B0;
 }
 
