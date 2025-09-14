@@ -14,7 +14,7 @@ IsGoodsAndType:
 	ldr r1, [r1, #0x14]
 	bl _call_via_r1
 	adds r4, r0, #0
-	bl sub_0806496C
+	bl GetGoodsRTTI
 	cmp r4, r0
 	bne _0807411C
 	ldr r1, [r5, #0x1c]
