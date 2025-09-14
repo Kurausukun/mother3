@@ -12,7 +12,7 @@ sub_080740AC:
 	ldr r1, [r1, #0x14]
 	bl _call_via_r1
 	adds r4, r0, #0
-	bl sub_0806496C
+	bl getGoodsRTTI
 	cmp r4, r0
 	bne _080740D0
 	movs r5, #1

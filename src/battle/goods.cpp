@@ -61,7 +61,13 @@ extern "C" ASM_FUNC("asm/non_matching/goods/sub_08064818.inc", void sub_08064818
 extern "C" ASM_FUNC("asm/non_matching/goods/sub_08064834.inc", void sub_08064834());
 extern "C" ASM_FUNC("asm/non_matching/goods/sub_08064940.inc", void sub_08064940());
 extern "C" ASM_FUNC("asm/non_matching/goods/sub_08064950.inc", void sub_08064950());
-extern "C" ASM_FUNC("asm/non_matching/goods/sub_0806496C.inc", void sub_0806496C());
+
+extern s32 gUnknown_020038B0;
+
+extern "C" void* getGoodsRTTI(void) {
+    return &gUnknown_020038B0;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/goods/sub_08064974.inc", void sub_08064974());
 
 Msg Goods::getName(u16 idx) {
