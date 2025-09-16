@@ -3,6 +3,7 @@
 #include "gba/gba.h"
 #include "gba/macro.h"
 #include "global.h"
+#include "m4a.h"
 #include "overworld/script.h"
 #include "structs.h"
 
@@ -85,7 +86,19 @@ extern "C" void sub_08001630(Unknown_02018CC8* arg0, s16 arg1) {
 
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0800164C.inc", void sub_0800164C());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080016E4.inc", void sub_080016E4());
-extern "C" ASM_FUNC("asm/non_matching/rom/DoReset.inc", void DoReset());
+
+extern "C" void sub_08000D88();
+extern "C" void sub_08090F90(s32);
+
+extern "C" void DoReset(void) {
+    m4aMPlayAllStop();
+    m4aSoundMain();
+    sub_08000D88();
+    REG_SOUNDCNT_X = 0;
+    REG_IME = 0;
+    sub_08090F90(0xFD);
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001744.inc", void sub_08001744());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001778.inc", void sub_08001778());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080017AC.inc", void sub_080017AC());
