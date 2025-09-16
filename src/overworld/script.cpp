@@ -4640,7 +4640,13 @@ extern "C" ASM_FUNC("asm/non_matching/script/cmd_cmp_input_name.inc", void cmd_c
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_open_itemguy.inc", void cmd_open_itemguy());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_open_bank.inc", void cmd_open_bank());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_A6.inc", void cmd_A6());
-extern "C" ASM_FUNC("asm/non_matching/script/cmd_restart.inc", void cmd_restart());
+
+extern "C" void DoReset();
+extern "C" s32 cmd_restart() {
+    DoReset();
+    return 1;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_set_movement_property.inc", void cmd_set_movement_property());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_AC.inc", void cmd_AC());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_AD.inc", void cmd_AD());
