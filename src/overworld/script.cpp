@@ -4656,6 +4656,16 @@ extern "C" ASM_FUNC("asm/non_matching/script/cmd_B0.inc", void cmd_B0());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_B1.inc", void cmd_B1());
 extern "C" ASM_FUNC("asm/non_matching/script/sub_08021878.inc", u8* sub_08021878(void* r0, s32* r1, u16* r2));
 extern "C" ASM_FUNC("asm/non_matching/script/sub_080218B0.inc", void sub_080218B0(u32 r0, u32 r1));
-extern "C" ASM_FUNC("asm/non_matching/script/scriptstack_set.inc", void scriptstack_set(s32* sp, s32 offset, s32 value));
-extern "C" ASM_FUNC("asm/non_matching/script/scriptstack_push.inc", void scriptstack_push(u32 r0));
-extern "C" ASM_FUNC("asm/non_matching/script/scriptstack_peek.inc", s32 scriptstack_peek(s32* sp, u16 idx));
+
+extern "C" void scriptstack_set(s32 *sp, u16 offset, s32 value) {
+    gGame.stack[*(sp - offset)] = value;
+}
+
+extern "C" void scriptstack_push(s32 value) {
+    gGame.stack[gGame.sp] = value;
+    gGame.sp++;
+}
+
+extern "C" s32 scriptstack_peek(s32* sp, u16 idx) {
+    return *(sp - idx);
+}
