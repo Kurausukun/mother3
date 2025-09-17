@@ -358,16 +358,16 @@ vt_09F45058::
 	.2byte 0
 	.4byte battle_238__6Battle
 
-vt_09F45298::
+_vt.9UnkBattle::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080977C4
+	.4byte getName__9UnkBattle
 	.2byte 0
 	.2byte 0
-	.4byte sub_080977B4
+	.4byte get__9UnkBattle
 
 _vt.14ShowDownAsLose::
 	.2byte 0
@@ -375,7 +375,7 @@ _vt.14ShowDownAsLose::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080977F4
+	.4byte _._14ShowDownAsLose
 	.2byte 0
 	.2byte 0
 	.4byte sub_0805D820
@@ -410,16 +410,16 @@ _vt.14ShowDownAsLose::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-vt_09F45318::
+_vt.17UnkShowDownAsLose::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080977EC
+	.4byte getName__17UnkShowDownAsLose
 	.2byte 0
 	.2byte 0
-	.4byte sub_080977CC
+	.4byte get__17UnkShowDownAsLose
 
 _vt.16ShowDownAsEscape::
 	.2byte 0
@@ -427,7 +427,7 @@ _vt.16ShowDownAsEscape::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08097830
+	.4byte _._16ShowDownAsEscape
 	.2byte 0
 	.2byte 0
 	.4byte sub_0805D80C
@@ -462,16 +462,16 @@ _vt.16ShowDownAsEscape::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-vt_09F45398::
+_vt.19UnkShowDownAsEscape::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08097828
+	.4byte getName__19UnkShowDownAsEscape
 	.2byte 0
 	.2byte 0
-	.4byte sub_08097808
+	.4byte get__19UnkShowDownAsEscape
 
 _vt.13ShowDownAsWin::
 	.2byte 0
@@ -479,7 +479,7 @@ _vt.13ShowDownAsWin::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809786C
+	.4byte _._13ShowDownAsWin
 	.2byte 0
 	.2byte 0
 	.4byte sub_0805D7F8
@@ -514,16 +514,16 @@ _vt.13ShowDownAsWin::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-vt_09F45418::
+_vt.16UnkShowDownAsWin::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08097864
+	.4byte getName__16UnkShowDownAsWin
 	.2byte 0
 	.2byte 0
-	.4byte sub_08097844
+	.4byte get__16UnkShowDownAsWin
 
 _vt.11UnitTurnEnd::
 	.2byte 0
@@ -531,7 +531,7 @@ _vt.11UnitTurnEnd::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08097898
+	.4byte _._11UnitTurnEnd
 	.2byte 0
 	.2byte 0
 	.4byte sub_0805D7E4
@@ -566,16 +566,16 @@ _vt.11UnitTurnEnd::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-vt_09F45498::
+_vt.14UnkUnitTurnEnd::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08097890
+	.4byte getName__14UnkUnitTurnEnd
 	.2byte 0
 	.2byte 0
-	.4byte sub_08097880
+	.4byte get__14UnkUnitTurnEnd
 
 _vt.13UnitTurnBegin::
 	.2byte 0
@@ -583,7 +583,7 @@ _vt.13UnitTurnBegin::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080978C4
+	.4byte _._13UnitTurnBegin
 	.2byte 0
 	.2byte 0
 	.4byte sub_0805D7D0
@@ -618,16 +618,16 @@ _vt.13UnitTurnBegin::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-vt_09F45518::
+_vt.16UnkUnitTurnBegin::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080978BC
+	.4byte getName__16UnkUnitTurnBegin
 	.2byte 0
 	.2byte 0
-	.4byte sub_080978AC
+	.4byte get__16UnkUnitTurnBegin
 
 _vt.8RoundEnd::
 	.2byte 0
@@ -635,7 +635,7 @@ _vt.8RoundEnd::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080978F0
+	.4byte _._8RoundEnd
 	.2byte 0
 	.2byte 0
 	.4byte sub_0805D7BC
@@ -670,16 +670,16 @@ _vt.8RoundEnd::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-vt_09F45598::
+_vt.11UnkRoundEnd::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080978E8
+	.4byte getName__11UnkRoundEnd
 	.2byte 0
 	.2byte 0
-	.4byte sub_080978D8
+	.4byte get__11UnkRoundEnd
 
 _vt.10RoundBegin::
 	.2byte 0
@@ -687,7 +687,7 @@ _vt.10RoundBegin::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809791C
+	.4byte _._10RoundBegin
 	.2byte 0
 	.2byte 0
 	.4byte sub_0805D7A8
@@ -722,16 +722,16 @@ _vt.10RoundBegin::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-vt_09F45618::
+_vt.13UnkRoundBegin::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08097914
+	.4byte getName__13UnkRoundBegin
 	.2byte 0
 	.2byte 0
-	.4byte sub_08097904
+	.4byte get__13UnkRoundBegin
 
 vt_09F45630::
 	.2byte 0
