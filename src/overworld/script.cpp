@@ -4,11 +4,15 @@
 #include "functions.h"
 
 extern "C" {
+    
 extern u16 gUnknown_03005314;
 extern u32 gUnknown_030055F4[];
 extern u32 gUnknown_0200DEBC[];
 extern u8 gUnknown_02005080;
 extern u8 gUnknown_080C1FF0[];
+
+extern void DoReset();
+
 
 // not functionally equivalent
 NONMATCH("asm/non_matching/script/exec_cmd.inc", void exec_cmd(void* script, u16* unk)) {
@@ -4641,7 +4645,6 @@ extern "C" ASM_FUNC("asm/non_matching/script/cmd_open_itemguy.inc", void cmd_ope
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_open_bank.inc", void cmd_open_bank());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_A6.inc", void cmd_A6());
 
-extern "C" void DoReset();
 extern "C" s32 cmd_restart() {
     DoReset();
     return 1;
