@@ -16,6 +16,8 @@ extern "C" void sub_0803D474();
 extern "C" void sub_08005C38();
 extern "C" void sub_080019DC(void* dest, u32 size);
 extern "C" void sub_08090F74(const void* src, void* dest, u32 control);
+extern "C" void sub_08000D88();
+extern "C" void sub_08090F90(s32);
 
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080012BC.inc", void sub_080012BC());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001378.inc", void sub_08001378());
@@ -86,9 +88,6 @@ extern "C" void sub_08001630(Unknown_02018CC8* arg0, s16 arg1) {
 
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0800164C.inc", void sub_0800164C());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080016E4.inc", void sub_080016E4());
-
-extern "C" void sub_08000D88();
-extern "C" void sub_08090F90(s32);
 
 extern "C" void DoReset(void) {
     m4aMPlayAllStop();
