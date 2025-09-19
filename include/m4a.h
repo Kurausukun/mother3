@@ -1,6 +1,10 @@
 #ifndef GUARD_M4A_H
 #define GUARD_M4A_H
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include "gba/m4a_internal.h"
 
 void m4aSoundVSync(void);
@@ -32,5 +36,9 @@ extern struct MusicPlayerInfo gMPlayInfo_Player7;
 extern struct MusicPlayerInfo gMPlayInfo_Player8;
 extern struct MusicPlayerInfo gMPlayInfo_Player9;
 extern struct MusicPlayerInfo gMPlayInfo_Player10;
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif  // GUARD_M4A_H

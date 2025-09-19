@@ -5,9 +5,9 @@
 
 extern "C" {
 
-void scriptstack_push(u32);
+void scriptstack_push(s32);
 s32 scriptstack_peek(s32* sp, u16 idx);
-void scriptstack_set(s32* sp, s32 offset, s32 value);
+void scriptstack_set(s32* sp, u16 offset, s32 value);
 Object* get_obj(s32);
 void sub_0800AD6C();
 void sub_08023EF8();
