@@ -4693,7 +4693,23 @@ extern "C" s32 cmd_set_gameover(void) {
 
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_93.inc", void cmd_93());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_open_shop.inc", void cmd_open_shop());
-extern "C" ASM_FUNC("asm/non_matching/script/cmd_open_save.inc", void cmd_open_save());
+
+extern "C" s32 cmd_open_save(void) {
+    
+    Object *obj = get_obj(-1);
+    
+    if (obj != NULL) 
+        obj->_bf_2 = 0;
+
+    sub_080028F4(0x5A, obj->_bc_2);
+    sub_0803C4DC(1);
+    
+    gUnknown_02004100[0] = 7;
+    gGame.mode = 0xA;
+    
+    sub_080052E4(2);
+    return 1;
+}
 
 extern "C" s32 cmd_open_naming(s32 *sp) {
     sub_0803C4DC(1);
