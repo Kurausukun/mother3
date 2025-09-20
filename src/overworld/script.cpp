@@ -15,12 +15,13 @@ extern s16 gUnknown_02004850;
 
 extern void sub_080517AC(s32);
 extern void sub_08037A7C();
-void sub_080052E4(s32);
-void sub_080052E4(s32);
-void sub_0803C4DC(s32);
-void sub_0803C4DC(s32);
-void sub_080038A4(s32);
-void sub_080052E4(s32);
+extern void sub_080052E4(s32);
+extern void sub_080052E4(s32);
+extern void sub_0803C4DC(s32);
+extern void sub_0803C4DC(s32);
+extern void sub_080038A4(s32);
+extern void sub_080052E4(s32);
+extern u8 sub_0801B3A4(u16);
 extern void DoReset();
 
 
@@ -4655,7 +4656,24 @@ extern "C" ASM_FUNC("asm/non_matching/script/cmd_set_bgm_other.inc", void cmd_se
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_8A.inc", void cmd_8A());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_CB.inc", void cmd_CB());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_D0.inc", void cmd_D0());
-extern "C" ASM_FUNC("asm/non_matching/script/cmd_set_volume.inc", void cmd_set_volume());
+
+extern "C" s32 cmd_set_volume(s32 *sp) {
+
+    s16 var_r5 = scriptstack_peek(sp, 1);
+    s16 volume = scriptstack_peek(sp, 0);
+    
+    if (var_r5 == -1) 
+        var_r5 = sub_0801B3A4(gGame.cur_room);
+    
+    if (volume == -1)
+        volume = 0x64;
+    
+    if (var_r5 < 0x80)
+        gSave._582[var_r5] = volume;
+
+    return 0;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_DB.inc", void cmd_DB());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_DC.inc", void cmd_DC());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_E1.inc", void cmd_E1());
