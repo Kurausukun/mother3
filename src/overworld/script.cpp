@@ -4772,7 +4772,14 @@ extern "C" s32 cmd_B1() {
 }
 
 extern "C" ASM_FUNC("asm/non_matching/script/sub_08021878.inc", u8* sub_08021878(void* r0, s32* r1, u16* r2));
-extern "C" ASM_FUNC("asm/non_matching/script/sub_080218B0.inc", void sub_080218B0(u32 r0, u32 r1));
+
+extern "C" void sub_080218B0(u32 r0, u32 r1) {
+    if (r0 == r1) {
+        scriptstack_push(1);
+        return;
+    }
+    scriptstack_push(0);
+}
 
 extern "C" void scriptstack_set(s32* sp, u16 offset, s32 value) {
     gGame.stack[*(sp - offset)] = value;
