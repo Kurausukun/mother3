@@ -16,6 +16,7 @@ extern s16 gUnknown_02004850;
 
 extern void sub_080517AC(s32);
 extern void sub_08037A7C();
+extern void sub_08003C20(u16);
 extern void sub_080052E4(s32);
 extern void sub_0803C4DC(s32);
 extern void sub_080038A4(s32);
@@ -4659,23 +4660,33 @@ extern "C" ASM_FUNC("asm/non_matching/script/cmd_CB.inc", void cmd_CB());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_D0.inc", void cmd_D0());
 
 extern "C" s32 cmd_set_volume(s32* sp) {
-    s16 a = scriptstack_peek(sp, 1);
+    s16 unk = scriptstack_peek(sp, 1);
     s16 volume = scriptstack_peek(sp, 0);
 
-    if (a == -1)
-        a = sub_0801B3A4(gGame.cur_room);
+    if (unk == -1)
+        unk = sub_0801B3A4(gGame.cur_room);
 
     if (volume == -1)
         volume = 0x64;
 
-    if (a < 0x80)
-        gSave._582[a] = volume;
+    if (unk < 0x80)
+        gSave._582[unk] = volume;
 
     return 0;
 }
 
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_DB.inc", void cmd_DB());
-extern "C" ASM_FUNC("asm/non_matching/script/cmd_DC.inc", void cmd_DC());
+
+extern "C" s32 cmd_DC(s32* sp) {
+    s16 unk = scriptstack_peek(sp, 0);
+    if (unk == -1) {
+        sub_08003C20(0);
+        sub_08003C20(1);
+    } else {
+        sub_08003C20(unk);
+    }
+    return 0;
+}
 
 extern "C" s32 cmd_E1(s32* sp) {
     scriptstack_push(sub_08003D14(scriptstack_peek(sp, 0)));
