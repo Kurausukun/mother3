@@ -8,12 +8,15 @@ extern "C" {
 extern u16 gUnknown_03005314;
 extern u32 gUnknown_030055F4[];
 extern u32 gUnknown_0200DEBC[];
+extern u8 gUnknown_02004100[0x10];
 extern u8 gUnknown_02005080;
 extern u8 gUnknown_080C1FF0[];
 
 extern void sub_080517AC(s32);
 extern void sub_08037A7C();
 void sub_080052E4(s32);
+void sub_080052E4(s32);
+void sub_0803C4DC(s32);
 void sub_0803C4DC(s32);
 void sub_080038A4(s32);
 void sub_080052E4(s32);
@@ -4664,7 +4667,16 @@ extern "C" s32 cmd_set_gameover(void) {
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_93.inc", void cmd_93());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_open_shop.inc", void cmd_open_shop());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_open_save.inc", void cmd_open_save());
-extern "C" ASM_FUNC("asm/non_matching/script/cmd_open_naming.inc", void cmd_open_naming());
+
+extern "C" s32 cmd_open_naming(s32 *sp) {
+    sub_0803C4DC(1);
+    gUnknown_02004100[0] = 0xC;
+    gUnknown_02004100[1] = scriptstack_peek(sp, 0);
+    gGame.mode = 0xA;
+    sub_080052E4(2);
+    return 1;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_cmp_input_name.inc", void cmd_cmp_input_name());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_open_itemguy.inc", void cmd_open_itemguy());
 
