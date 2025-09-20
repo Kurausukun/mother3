@@ -4,7 +4,7 @@
 #include "functions.h"
 
 extern "C" {
-    
+
 extern u16 gUnknown_03005314;
 extern u32 gUnknown_030055F4[];
 extern u32 gUnknown_0200DEBC[];
@@ -22,7 +22,6 @@ extern u8 sub_0801B3A4(u16);
 extern u16 sub_08002FD4(u16, s32);
 extern u16 sub_080031E0();
 extern void DoReset();
-
 
 // not functionally equivalent
 NONMATCH("asm/non_matching/script/exec_cmd.inc", void exec_cmd(void* script, u16* unk)) {
@@ -4656,19 +4655,18 @@ extern "C" ASM_FUNC("asm/non_matching/script/cmd_8A.inc", void cmd_8A());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_CB.inc", void cmd_CB());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_D0.inc", void cmd_D0());
 
-extern "C" s32 cmd_set_volume(s32 *sp) {
-
-    s16 var_r5 = scriptstack_peek(sp, 1);
+extern "C" s32 cmd_set_volume(s32* sp) {
+    s16 a = scriptstack_peek(sp, 1);
     s16 volume = scriptstack_peek(sp, 0);
-    
-    if (var_r5 == -1) 
-        var_r5 = sub_0801B3A4(gGame.cur_room);
-    
+
+    if (a == -1)
+        a = sub_0801B3A4(gGame.cur_room);
+
     if (volume == -1)
         volume = 0x64;
-    
-    if (var_r5 < 0x80)
-        gSave._582[var_r5] = volume;
+
+    if (a < 0x80)
+        gSave._582[a] = volume;
 
     return 0;
 }
@@ -4694,23 +4692,22 @@ extern "C" ASM_FUNC("asm/non_matching/script/cmd_93.inc", void cmd_93());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_open_shop.inc", void cmd_open_shop());
 
 extern "C" s32 cmd_open_save(void) {
-    
-    Object *obj = get_obj(-1);
-    
-    if (obj) 
+    Object* obj = get_obj(-1);
+
+    if (obj)
         obj->_bf_2 = 0;
 
     sub_080028F4(0x5A, obj->_bc_2);
     sub_0803C4DC(1);
-    
+
     gUnknown_02004100[0] = 7;
     gGame.mode = MODE_PAUSE_MENU;
-    
+
     sub_080052E4(2);
     return 1;
 }
 
-extern "C" s32 cmd_open_naming(s32 *sp) {
+extern "C" s32 cmd_open_naming(s32* sp) {
     sub_0803C4DC(1);
     gUnknown_02004100[0] = 0xC;
     gUnknown_02004100[1] = scriptstack_peek(sp, 0);
@@ -4739,14 +4736,14 @@ extern "C" s32 cmd_restart() {
 
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_set_movement_property.inc", void cmd_set_movement_property());
 
-extern "C" s32 cmd_AC(s32 *sp) {
+extern "C" s32 cmd_AC(s32* sp) {
     scriptstack_peek(sp, 0);
     u8 temp = gGame.filler_1;
     gGame.filler_1 = temp | 1;
     return 0;
 }
 
-extern "C" s32 cmd_AD(s32 *sp) {
+extern "C" s32 cmd_AD(s32* sp) {
     gSave._708 = scriptstack_peek(sp, 3);
     gSave._70a = scriptstack_peek(sp, 2);
     gSave._70c = scriptstack_peek(sp, 1);
@@ -4754,7 +4751,7 @@ extern "C" s32 cmd_AD(s32 *sp) {
     return 0;
 }
 
-extern "C" s32 cmd_AE(s32 *sp) {
+extern "C" s32 cmd_AE(s32* sp) {
     s32 a = scriptstack_peek(sp, 0);
     scriptstack_push(sub_08002FD4(sub_080031E0(), a));
     return 0;
@@ -4766,7 +4763,7 @@ extern "C" ASM_FUNC("asm/non_matching/script/cmd_B1.inc", void cmd_B1());
 extern "C" ASM_FUNC("asm/non_matching/script/sub_08021878.inc", u8* sub_08021878(void* r0, s32* r1, u16* r2));
 extern "C" ASM_FUNC("asm/non_matching/script/sub_080218B0.inc", void sub_080218B0(u32 r0, u32 r1));
 
-extern "C" void scriptstack_set(s32 *sp, u16 offset, s32 value) {
+extern "C" void scriptstack_set(s32* sp, u16 offset, s32 value) {
     gGame.stack[*(sp - offset)] = value;
 }
 
