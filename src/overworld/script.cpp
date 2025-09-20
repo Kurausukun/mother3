@@ -16,11 +16,8 @@ extern s16 gUnknown_02004850;
 extern void sub_080517AC(s32);
 extern void sub_08037A7C();
 extern void sub_080052E4(s32);
-extern void sub_080052E4(s32);
-extern void sub_0803C4DC(s32);
 extern void sub_0803C4DC(s32);
 extern void sub_080038A4(s32);
-extern void sub_080052E4(s32);
 extern u8 sub_0801B3A4(u16);
 extern void DoReset();
 
@@ -383,7 +380,7 @@ u16 cmd_reload_room() {
         gSomeBlend._121bb_10 = 1;
         sub_0800AD6C();
         sub_08001B18(&gGame._9488, &gUnknown_03005314, 0x400);
-        gGame.mode = 6;
+        gGame.mode = MODE_FADE_IN;
         sub_08013D38();
         sub_0802610C(0);
     } else {
@@ -4629,7 +4626,7 @@ extern "C" ASM_FUNC("asm/non_matching/script/cmd_D1.inc", void cmd_D1());
 
 extern "C" s32 cmd_set_logo_disp(void) {
     sub_0803C4DC(0);
-    gGame.mode = 0xB;
+    gGame.mode = MODE_LOGO_DISPLAY;
     sub_080052E4(5);
     return 1;
 }
@@ -4639,7 +4636,7 @@ extern "C" ASM_FUNC("asm/non_matching/script/cmd_F4.inc", void cmd_F4());
 extern "C" s32 cmd_disp_staffroll(void) {
     sub_0803C4DC(0);
     gUnknown_02004850 = 0;
-    gGame.mode = 0xC;
+    gGame.mode = MODE_STAFFROLL_DISPLAY;
     sub_080052E4(6);
     return 0;
 }
@@ -4698,14 +4695,14 @@ extern "C" s32 cmd_open_save(void) {
     
     Object *obj = get_obj(-1);
     
-    if (obj != NULL) 
+    if (obj) 
         obj->_bf_2 = 0;
 
     sub_080028F4(0x5A, obj->_bc_2);
     sub_0803C4DC(1);
     
     gUnknown_02004100[0] = 7;
-    gGame.mode = 0xA;
+    gGame.mode = MODE_PAUSE_MENU;
     
     sub_080052E4(2);
     return 1;
@@ -4715,7 +4712,7 @@ extern "C" s32 cmd_open_naming(s32 *sp) {
     sub_0803C4DC(1);
     gUnknown_02004100[0] = 0xC;
     gUnknown_02004100[1] = scriptstack_peek(sp, 0);
-    gGame.mode = 0xA;
+    gGame.mode = MODE_PAUSE_MENU;
     sub_080052E4(2);
     return 1;
 }
