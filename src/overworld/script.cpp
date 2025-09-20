@@ -4757,7 +4757,10 @@ extern "C" s32 cmd_AE(s32* sp) {
     return 0;
 }
 
-extern "C" ASM_FUNC("asm/non_matching/script/cmd_AF.inc", void cmd_AF());
+extern "C" s32 cmd_AF() {
+    return 0;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_B0.inc", void cmd_B0());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_B1.inc", void cmd_B1());
 extern "C" ASM_FUNC("asm/non_matching/script/sub_08021878.inc", u8* sub_08021878(void* r0, s32* r1, u16* r2));
