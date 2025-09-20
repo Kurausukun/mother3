@@ -19,6 +19,8 @@ extern void sub_080052E4(s32);
 extern void sub_0803C4DC(s32);
 extern void sub_080038A4(s32);
 extern u8 sub_0801B3A4(u16);
+extern u16 sub_08002FD4(u16, s32);
+extern u16 sub_080031E0();
 extern void DoReset();
 
 
@@ -4752,7 +4754,12 @@ extern "C" s32 cmd_AD(s32 *sp) {
     return 0;
 }
 
-extern "C" ASM_FUNC("asm/non_matching/script/cmd_AE.inc", void cmd_AE());
+extern "C" s32 cmd_AE(s32 *sp) {
+    s32 a = scriptstack_peek(sp, 0);
+    scriptstack_push(sub_08002FD4(sub_080031E0(), a));
+    return 0;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_AF.inc", void cmd_AF());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_B0.inc", void cmd_B0());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_B1.inc", void cmd_B1());
