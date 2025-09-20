@@ -4680,7 +4680,15 @@ extern "C" ASM_FUNC("asm/non_matching/script/cmd_play_sfx.inc", void cmd_play_sf
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_init_battle.inc", void cmd_init_battle());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_8D.inc", void cmd_8D());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_8E.inc", void cmd_8E());
-extern "C" ASM_FUNC("asm/non_matching/script/cmd_8F.inc", void cmd_8F());
+
+extern "C" s32 cmd_8F() {
+    if (gGame._8490 == 2) {
+        scriptstack_push(1);
+    } else {
+        scriptstack_push(0);
+    }
+    return 0;
+}
 
 extern "C" s32 cmd_90(s32* sp) {
     
