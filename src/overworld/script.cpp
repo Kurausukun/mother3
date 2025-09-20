@@ -11,6 +11,7 @@ extern u32 gUnknown_0200DEBC[];
 extern u8 gUnknown_02005080;
 extern u8 gUnknown_080C1FF0[];
 
+extern void sub_080517AC(s32);  
 extern void DoReset();
 
 
@@ -4643,7 +4644,11 @@ extern "C" ASM_FUNC("asm/non_matching/script/cmd_open_naming.inc", void cmd_open
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_cmp_input_name.inc", void cmd_cmp_input_name());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_open_itemguy.inc", void cmd_open_itemguy());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_open_bank.inc", void cmd_open_bank());
-extern "C" ASM_FUNC("asm/non_matching/script/cmd_A6.inc", void cmd_A6());
+
+extern "C" s32 cmd_A6(void) {
+    sub_080517AC(1);
+    return 0;
+}
 
 extern "C" s32 cmd_restart() {
     DoReset();
