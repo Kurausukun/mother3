@@ -4681,7 +4681,10 @@ extern "C" ASM_FUNC("asm/non_matching/script/cmd_8D.inc", void cmd_8D());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_8E.inc", void cmd_8E());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_8F.inc", void cmd_8F());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_90.inc", void cmd_90());
-extern "C" ASM_FUNC("asm/non_matching/script/cmd_91.inc", void cmd_91());
+
+extern "C" s32 cmd_91() {
+    return 0;
+}
 
 extern "C" s32 cmd_set_gameover(void) {
     sub_080038A4(3);
