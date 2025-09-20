@@ -23,6 +23,7 @@ extern void sub_080038A4(s32);
 extern void sub_08026610(u8);
 extern void sub_08003BF8(u16);
 extern s16 sub_08003D14(u16);
+extern u16 sub_08003D48(u16);
 extern u8 sub_0801B3A4(u16);
 extern u16 sub_08002FD4(u16, s32);
 extern u16 sub_080031E0();
@@ -4658,7 +4659,11 @@ extern "C" ASM_FUNC("asm/non_matching/script/cmd_set_bgm.inc", void cmd_set_bgm(
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_set_bgm_other.inc", void cmd_set_bgm_other());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_8A.inc", void cmd_8A());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_CB.inc", void cmd_CB());
-extern "C" ASM_FUNC("asm/non_matching/script/cmd_D0.inc", void cmd_D0());
+
+extern "C" s32 cmd_D0(s32* sp) {
+    scriptstack_push(sub_08003D48(scriptstack_peek(sp, 0)));
+    return 0;
+}
 
 extern "C" s32 cmd_set_volume(s32* sp) {
     s16 unk = scriptstack_peek(sp, 1);
