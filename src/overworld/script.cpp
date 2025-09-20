@@ -11,8 +11,10 @@ extern u32 gUnknown_0200DEBC[];
 extern u8 gUnknown_02005080;
 extern u8 gUnknown_080C1FF0[];
 
-extern void sub_080517AC(s32);  
-extern void sub_08037A7C(); 
+extern void sub_080517AC(s32);
+extern void sub_08037A7C();
+void sub_080052E4(s32);
+void sub_0803C4DC(s32);
 extern void DoReset();
 
 
@@ -4617,7 +4619,14 @@ extern "C" ASM_FUNC("asm/non_matching/script/cmd_C8.inc", void cmd_C8());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_CE.inc", void cmd_CE());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_CF.inc", void cmd_CF());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_D1.inc", void cmd_D1());
-extern "C" ASM_FUNC("asm/non_matching/script/cmd_set_logo_disp.inc", void cmd_set_logo_disp());
+
+extern "C" s32 cmd_set_logo_disp(void) {
+    sub_0803C4DC(0);
+    gGame.mode = 0xB;
+    sub_080052E4(5);
+    return 1;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_F4.inc", void cmd_F4());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_disp_staffroll.inc", void cmd_disp_staffroll());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_play_sound_ext.inc", void cmd_play_sound_ext());
