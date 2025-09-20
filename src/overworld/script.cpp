@@ -4736,7 +4736,14 @@ extern "C" s32 cmd_restart() {
 }
 
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_set_movement_property.inc", void cmd_set_movement_property());
-extern "C" ASM_FUNC("asm/non_matching/script/cmd_AC.inc", void cmd_AC());
+
+extern "C" s32 cmd_AC(s32 *sp) {
+    scriptstack_peek(sp, 0);
+    u8 temp = gGame.filler_1;
+    gGame.filler_1 = temp | 1;
+    return 0;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_AD.inc", void cmd_AD());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_AE.inc", void cmd_AE());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_AF.inc", void cmd_AF());
