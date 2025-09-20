@@ -18,6 +18,7 @@ extern void sub_08037A7C();
 extern void sub_080052E4(s32);
 extern void sub_0803C4DC(s32);
 extern void sub_080038A4(s32);
+extern void sub_08026610(u8);
 extern u8 sub_0801B3A4(u16);
 extern u16 sub_08002FD4(u16, s32);
 extern u16 sub_080031E0();
@@ -4688,7 +4689,15 @@ extern "C" s32 cmd_set_gameover(void) {
     return 0;
 }
 
-extern "C" ASM_FUNC("asm/non_matching/script/cmd_93.inc", void cmd_93());
+extern "C" s32 cmd_93(s32* sp) {
+    Object* obj = get_obj(scriptstack_peek(sp, 0));
+    
+    if (obj)         
+        sub_08026610(obj->character);
+    
+    return 0;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_open_shop.inc", void cmd_open_shop());
 
 extern "C" s32 cmd_open_save(void) {
