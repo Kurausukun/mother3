@@ -4580,7 +4580,13 @@ extern "C" ASM_FUNC("asm/non_matching/script/cmd_F7.inc", void cmd_F7());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_FD.inc", void cmd_FD());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_FE.inc", void cmd_FE());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_96.inc", void cmd_96());
-extern "C" ASM_FUNC("asm/non_matching/script/cmd_set_fade.inc", void cmd_set_fade());
+
+extern "C" s32 cmd_set_fade(s32* sp) {
+    gGame._595b[0] = scriptstack_peek(sp, 1);
+    gGame._595b[1] = scriptstack_peek(sp, 0);
+    return 0;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_fade_in.inc", void cmd_fade_in());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_play_fade.inc", void cmd_play_fade());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_71.inc", void cmd_71());
