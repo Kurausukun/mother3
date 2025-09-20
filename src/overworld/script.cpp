@@ -1,4 +1,5 @@
 #include "overworld/script.h"
+#include "battle.h"
 #include "battle/goods.h"
 #include "battle/guest.h"
 #include "functions.h"
@@ -4680,7 +4681,19 @@ extern "C" ASM_FUNC("asm/non_matching/script/cmd_init_battle.inc", void cmd_init
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_8D.inc", void cmd_8D());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_8E.inc", void cmd_8E());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_8F.inc", void cmd_8F());
-extern "C" ASM_FUNC("asm/non_matching/script/cmd_90.inc", void cmd_90());
+
+extern "C" s32 cmd_90(s32* sp) {
+    
+    s32 unk = scriptstack_peek(sp, 0);
+
+    if (unk == 0) {
+        gEncounter._4 = unk;
+    } else {
+        gEncounter._4 = 1;
+    }
+    
+    return 0;
+}
 
 extern "C" s32 cmd_91() {
     return 0;
