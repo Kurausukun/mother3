@@ -15,6 +15,8 @@ extern void sub_080517AC(s32);
 extern void sub_08037A7C();
 void sub_080052E4(s32);
 void sub_0803C4DC(s32);
+void sub_080038A4(s32);
+void sub_080052E4(s32);
 extern void DoReset();
 
 
@@ -4652,7 +4654,13 @@ extern "C" ASM_FUNC("asm/non_matching/script/cmd_8E.inc", void cmd_8E());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_8F.inc", void cmd_8F());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_90.inc", void cmd_90());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_91.inc", void cmd_91());
-extern "C" ASM_FUNC("asm/non_matching/script/cmd_set_gameover.inc", void cmd_set_gameover());
+
+extern "C" s32 cmd_set_gameover(void) {
+    sub_080038A4(3);
+    sub_080052E4(3);
+    return 0;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_93.inc", void cmd_93());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_open_shop.inc", void cmd_open_shop());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_open_save.inc", void cmd_open_save());
