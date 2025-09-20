@@ -4744,7 +4744,14 @@ extern "C" s32 cmd_AC(s32 *sp) {
     return 0;
 }
 
-extern "C" ASM_FUNC("asm/non_matching/script/cmd_AD.inc", void cmd_AD());
+extern "C" s32 cmd_AD(s32 *sp) {
+    gSave._708 = scriptstack_peek(sp, 3);
+    gSave._70a = scriptstack_peek(sp, 2);
+    gSave._70c = scriptstack_peek(sp, 1);
+    gSave._70e = scriptstack_peek(sp, 0);
+    return 0;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_AE.inc", void cmd_AE());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_AF.inc", void cmd_AF());
 extern "C" ASM_FUNC("asm/non_matching/script/cmd_B0.inc", void cmd_B0());
