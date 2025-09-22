@@ -1339,7 +1339,7 @@ void ply_xcmd(struct MusicPlayerInfo* mplayInfo, struct MusicPlayerTrack* track)
     u32 n = *track->cmdPtr;
     track->cmdPtr++;
 
-    gUnknown_08119C24[n](mplayInfo, track);
+    gXcmdTable[n](mplayInfo, track);
 }
 
 void ply_xxx(struct MusicPlayerInfo* mplayInfo, struct MusicPlayerTrack* track) {
