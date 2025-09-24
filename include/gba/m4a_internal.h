@@ -362,7 +362,7 @@ extern char SoundMainRAM[];
 extern MPlayFunc gMPlayJumpTable[];
 
 typedef void (*XcmdFunc)(struct MusicPlayerInfo *, struct MusicPlayerTrack *);
-extern const XcmdFunc gUnknown_08119C24[];
+extern const XcmdFunc gXcmdTable[];
 
 extern struct CgbChannel gCgbChans[];
 
