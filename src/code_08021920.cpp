@@ -127,7 +127,7 @@ extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08027164.inc", void sub_
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/get_obj.inc", void get_obj());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0802724C.inc", void sub_0802724C());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_080272F4.inc", void sub_080272F4());
-extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_080274AC.inc", void sub_080274AC());
+extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_080274AC.inc", void sub_080274AC(s32, u16));
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08027680.inc", void sub_08027680());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0802773C.inc", void sub_0802773C());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0802781C.inc", void sub_0802781C());
