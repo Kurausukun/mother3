@@ -112,6 +112,19 @@ struct MonsterInfo : public Base {
     virtual Monster* monster_info_f0(s32 idx) const;
 };
 
+struct Encounter {
+    u8 _0;
+    u8 _1[3];
+    u8 _4;
+    u8 monster_count;
+    u8 _6[4];
+    u16 _a;
+    s16 _c;
+    u8 filler[0x2e];
+    u8 result;
+};
+extern Encounter gEncounter;
+
 struct XX {
     XX(Unit* u) : u(u) {}
 

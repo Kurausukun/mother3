@@ -12,6 +12,8 @@ enum Mode {
     MODE_FADE_IN = 0x6,
     MODE_LOAD_ROOM = 0x7,
     MODE_PAUSE_MENU = 0xA,
+    MODE_LOGO_DISPLAY = 0xB,
+    MODE_STAFFROLL_DISPLAY = 0xC,
     MODE_MAP_VIEW = 0xD,
     MODE_DROPDOWN = 0xE,
     MODE_DEBUG_MENU = 0xF
@@ -87,7 +89,8 @@ struct Game {
     u8 _8452[0x846f - 0x8452];
     u8 _846f[0x8484 - 0x846f];
     u32 _8484;
-    u8 _8488[0xc];
+    u8 _8488[8];
+    u32 _8490;
     u8 disable_collision : 1;
     u8 _8494_2 : 1;
     u8 _8494_4 : 1;

@@ -24,19 +24,6 @@ void sub_08074414(s32, s32, s32, bool, bool, bool);
 
 extern MonsterData gMonsterData[];
 
-struct Encounter {
-    u8 _0;
-    u8 _1[3];
-    u8 _4;
-    u8 monster_count;
-    u8 _6[4];
-    u16 _a;
-    s16 _c;
-    u8 filler[0x2e];
-    u8 result;
-};
-extern Encounter gEncounter;
-
 void Battle::sub_0805DC1C() {
     switch (mBattleResult) {
     case 2:
