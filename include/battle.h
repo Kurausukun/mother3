@@ -289,6 +289,76 @@ struct ShowDownAsEscape : public Unk {
     virtual ~ShowDownAsEscape() {}
 };
 
+class RoundBegin2 : public Unk {
+public:
+    RoundBegin2();
+    virtual ~RoundBegin2() {}
+};
+
+class UnkRoundBegin : public Singleton {
+public:
+    virtual const char* getName() { return "RoundBegin"; }
+    virtual void* get() { return new RoundBegin2(); }
+};
+
+class RoundEnd2 {
+public:
+    RoundEnd2();
+    virtual ~RoundEnd2() {}
+};
+
+class UnkRoundEnd : public Singleton {
+public:
+    virtual const char* getName() { return "RoundEnd"; }
+    virtual void* get() { return new RoundEnd2(); }
+};
+
+class UnkUnitTurnBegin : public Singleton {
+public:
+    virtual const char* getName() { return "UnitTurnBegin"; }
+    virtual void* get() { return new UnitTurnBegin(); }
+};
+class UnkUnitTurnEnd : public Singleton {
+public:
+    UnkUnitTurnEnd() {}
+    virtual const char* getName() { return "UnitTurnEnd"; }
+    virtual void* get() { return new UnitTurnEnd(); }
+};
+
+class UnkShowDownAsWin : public Singleton {
+public:
+    UnkShowDownAsWin() {}
+    virtual const char* getName() { return "ShowDownAsWin"; }
+    virtual void* get() { return new ShowDownAsWin(); }
+};
+class UnkShowDownAsEscape : public Singleton {
+public:
+    UnkShowDownAsEscape() {}
+    virtual const char* getName() { return "ShowDownAsEscape"; }
+    virtual void* get() { return new ShowDownAsEscape(); }
+};
+class UnkShowDownAsLose : public Singleton {
+public:
+    UnkShowDownAsLose() {}
+    virtual const char* getName() { return "ShowDownAsLose"; }
+    virtual void* get() { return new ShowDownAsLose(); }
+};
+
+// TODO: fix this
+class Battle2 : public Unk {
+public:
+    u8 pad_20[0x60];
+    Battle2();  // sub_0805EE80
+    virtual ~Battle2() {};
+};
+
+class UnkBattle : public Singleton {
+public:
+    UnkBattle() {}
+    virtual const char* getName() { return "Battle"; }
+    virtual void* get() { return new Battle2(); }
+};
+
 SINGLETON_DECL(Battle);
 
 extern "C" bool IsBossBattle();
