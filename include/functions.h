@@ -3,6 +3,7 @@
 
 #include "structs.h"
 
+typedef void (*DebugInitFunc)(TransactionState*);
 typedef void (*DebugModeFunc)(InputState*, TransactionState*);
 typedef void (*MenuHandlerFunc)(InputState*, MenuState*);
 typedef void (*Unk09B8FE24Func)();

@@ -18,6 +18,7 @@ extern const u16 gSectorToDirectionExt[];
 extern const DebugModeFunc gDebugFuncTable[6];
 extern u8 gUnknown_080C1FF8[];
 extern u8 gUnknown_080C1FE8[];
+extern DebugInitFunc gDebugMenuInitTable[];
 
 extern "C" void sub_080012BC(void*, s32, s32, s32);
 extern "C" Object* get_obj_direct(u16 idx);
@@ -1298,7 +1299,14 @@ extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08039B5C.inc", void sub_
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08039B88.inc", void sub_08039B88());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08039C04.inc", void sub_08039C04());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08039CDC.inc", void sub_08039CDC());
-extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08039E88.inc", void sub_08039E88());
+
+extern "C" void initCurrentDebugPage() {
+    if (gSomeBlend.currentDebugPage < 6) {
+        gDebugMenuInitTable[gSomeBlend.currentDebugPage](
+            &gSomeBlend._35bc[gSomeBlend.currentDebugPage]);
+    }
+}
+
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08039EC8.inc", void sub_08039EC8());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08039F00.inc", void sub_08039F00());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08039F40.inc", void sub_08039F40());

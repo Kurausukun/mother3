@@ -48,8 +48,8 @@ gUnknown_08D2E168:
         .4byte nullsub_74+1
 
 
-    .global gUnknown_08D2E178
-gUnknown_08D2E178:
+    .global gDebugMenuInitTable
+gDebugMenuInitTable:
         .4byte sub_08039EC8+1
         .4byte sub_08039F00+1
         .4byte sub_08039F40+1

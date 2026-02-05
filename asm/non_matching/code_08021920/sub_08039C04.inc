@@ -72,7 +72,7 @@ sub_08039C04:
 	adds r0, r4, #0
 	movs r1, #0
 	bl sub_08009E38
-	bl sub_08039E88
+	bl initCurrentDebugPage
 	bl sub_08037958
 	pop {r4, r5, r6}
 	pop {r0}

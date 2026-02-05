@@ -114,7 +114,7 @@ _0803AA28:
 	adds r0, r4, r1
 	movs r1, #0
 	bl sub_08009E38
-	bl sub_08039E88
+	bl initCurrentDebugPage
 	b _0803AA90
 	.align 2, 0
 _0803AA6C: .4byte gUnknown_0201963A
