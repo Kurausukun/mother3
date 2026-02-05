@@ -54,6 +54,7 @@ extern "C" void navigateWrapping2DMenu(u16*, InputState*, u16, u16, u16, u16);
 extern "C" void sub_0800A1C4(void*);
 extern "C" void handleDebugPage1(InputState*, TransactionState*);
 extern "C" void debugChangeCurrentRoom(InputState*, TransactionState*);
+extern "C" void sub_0803A458(InputState*, TransactionState*);
 
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08021920.inc", u32 sub_08021920(u32));
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08021930.inc", void sub_08021930());
@@ -1388,8 +1389,26 @@ extern "C" void debugChangeCurrentRoom(InputState* input, TransactionState* stat
 }
 
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/debugMenuPage2.inc", void debugMenuPage2());
-extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0803A3C8.inc", void sub_0803A3C8());
-extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0803A458.inc", void sub_0803A458());
+
+extern "C" void handleDebugPage2(InputState* input, TransactionState* state) {
+    switch (state->tabIndex) {
+    case 0:
+        sub_0803A458(input, state);
+        break;
+    case 1:
+        play_sound(SFX_MENU_SELECT);
+        gSomeBlend._3668_10 = 1;
+        gGame.obstacleEvasaionEnabled ^= 1;
+        break;
+    case 2:
+        play_sound(SFX_MENU_SELECT);
+        gSomeBlend._3668_10 = 1;
+        gGame.displayProcessLoadEnabled ^= 1;
+        break;
+    }
+}
+
+extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0803A458.inc", void sub_0803A458(InputState*, TransactionState*));
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/debugMenuPage3.inc", void debugMenuPage3());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0803A59C.inc", void sub_0803A59C());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0803A644.inc", void sub_0803A644());
