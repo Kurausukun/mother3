@@ -14,7 +14,7 @@ _0803A1AA:
 	beq _0803A1E8
 	b _0803A214
 _0803A1B0:
-	bl sub_0803A224
+	bl debugChangeCurrentRoom
 	b _0803A214
 _0803A1B6:
 	movs r0, #0xd2

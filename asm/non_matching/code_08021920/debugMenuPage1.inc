@@ -17,7 +17,7 @@ _0803A100:
 	beq _0803A114
 	adds r0, r3, #0
 	adds r1, r4, #0
-	bl sub_0803A224
+	bl debugChangeCurrentRoom
 	b _0803A190
 _0803A114:
 	movs r1, #0xc

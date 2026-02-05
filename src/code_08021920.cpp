@@ -17,6 +17,7 @@ extern const u16 gSectorToDirection[];
 extern const u16 gSectorToDirectionExt[];
 extern const DebugModeFunc gDebugFuncTable[6];
 extern u8 gUnknown_080C1FF8[];
+extern u8 gUnknown_080C1FE8[];
 
 extern "C" void sub_080012BC(void*, s32, s32, s32);
 extern "C" Object* get_obj_direct(u16 idx);
@@ -50,6 +51,9 @@ extern "C" void sub_0803B278();
 extern "C" void sub_080381B0(MenuState*);
 extern "C" void sub_0800A480(void*);
 extern "C" void navigateWrapping2DMenu(u16*, InputState*, u16, u16, u16, u16);
+extern "C" void sub_0800A1C4(void*);
+extern "C" void sub_0803A198(InputState*, TransactionState*);
+extern "C" void debugChangeCurrentRoom(InputState*, TransactionState*);
 
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08021920.inc", u32 sub_08021920(u32));
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08021930.inc", void sub_08021930());
@@ -1283,7 +1287,7 @@ extern "C" u16 navigate1DMenu(u16* cursor, InputState* input, u16 cursorMin, u16
 
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0803960C.inc", void sub_0803960C());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08039694.inc", void sub_08039694());
-extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08039738.inc", void sub_08039738());
+extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08039738.inc", u16 sub_08039738(u16*, InputState*, u16, u16, u16));
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/navigateWrapping2DMenu.inc", void navigateWrapping2DMenu(u16*, InputState*, u16, u16, u16, u16));
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08039934.inc", void sub_08039934());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08039A18.inc", void sub_08039A18());
@@ -1308,8 +1312,9 @@ extern "C" void mode_debug_menu(InputState* input) {
         gSomeBlend._3668_2 = input->gotInput;
     }
 
-    if (gSomeBlend._3668_2 && gSomeBlend._3612 < 6) {
-        gDebugFuncTable[gSomeBlend._3612](input, &gSomeBlend._35bc[gSomeBlend._3612]);
+    if (gSomeBlend._3668_2 && gSomeBlend.currentDebugPage < 6) {
+        gDebugFuncTable[gSomeBlend.currentDebugPage](
+            input, &gSomeBlend._35bc[gSomeBlend.currentDebugPage]);
     }
 
     if (gSomeBlend._3668_8 == 1) {
@@ -1325,7 +1330,46 @@ extern "C" void mode_debug_menu(InputState* input) {
 
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/debugMenuPage1.inc", void debugMenuPage1());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0803A198.inc", void sub_0803A198());
-extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0803A224.inc", void sub_0803A224());
+
+extern "C" void debugChangeCurrentRoom(InputState* input, TransactionState* state) {
+    u16 changeAmt;
+
+    if (state->tabIndex != 0) {
+        return;
+    }
+
+    gSomeBlend._3668_10 = 1;
+
+    if (input->pressed & L_BUTTON) {
+        changeAmt = 10;
+    } else if (input->pressed & R_BUTTON) {
+        changeAmt = 100;
+    } else {
+        changeAmt = 1;
+    }
+
+    if (input->pressed & A_BUTTON) {
+        play_sound(SFX_MENU_SELECT);
+        gSomeBlend.currentRoomID += changeAmt;
+        if (gSomeBlend.currentRoomID > 999) {
+            gSomeBlend.currentRoomID = 1;
+        }
+        return;
+    }
+
+    if (input->pressed & B_BUTTON) {
+        play_sound(SFX_MENU_SELECT);
+        if (gSomeBlend.currentRoomID >= changeAmt) {
+            gSomeBlend.currentRoomID -= changeAmt;
+            if (gSomeBlend.currentRoomID == 0) {
+                gSomeBlend.currentRoomID = 999;
+            }
+        } else {
+            gSomeBlend.currentRoomID = 999;
+        }
+    }
+}
+
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/debugMenuPage2.inc", void debugMenuPage2());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0803A3C8.inc", void sub_0803A3C8());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0803A458.inc", void sub_0803A458());
