@@ -4,7 +4,7 @@ sub_0801B0C4:
 	lsls r0, r0, #0x10
 	lsrs r4, r0, #0x10
 	movs r0, #0
-	bl sub_0801B4E4
+	bl getDoorDestinationInfo
 	adds r1, r0, #0
 	movs r2, #0
 	ldr r3, _0801B0E0

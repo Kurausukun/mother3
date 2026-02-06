@@ -20,6 +20,7 @@ extern u32 gUnknown_08CDB95C[];
 extern u16 gUnknown_02015EC0[];
 extern u16 gUnknown_02015ED8[];
 extern u16 gUnknown_02015EF0[];
+extern const DoorDestinationInfo gDoorDestinationTable[];
 
 extern "C" s32 Div(s32, s32);
 extern "C" s32 Divide(s32 a, s32 b);
@@ -1327,7 +1328,11 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B45C.inc", void sub_0801B45C()
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B480.inc", void sub_0801B480());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B498.inc", void sub_0801B498());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B4C4.inc", void sub_0801B4C4());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B4E4.inc", void sub_0801B4E4());
+
+extern "C" DoorDestinationInfo* getDoorDestinationInfo(u16 index) {
+    return &((DoorDestinationInfo*)Blob_GetEntry(&gDoorDestinationTable, 0))[index];
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B504.inc", void sub_0801B504());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B520.inc", void sub_0801B520());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B53C.inc", void sub_0801B53C());

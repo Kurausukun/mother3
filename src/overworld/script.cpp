@@ -2453,7 +2453,7 @@ u16 cmd_3D(s32* sp) {
 	lsls r0, r0, #0x10\n\
 	lsrs r6, r0, #0x10\n\
 	adds r0, r6, #0\n\
-	bl sub_0801B4E4\n\
+	bl getDoorDestinationInfo\n\
 	adds r4, r0, #0\n\
 	cmp r4, #0\n\
 	beq _0801DDA8\n\

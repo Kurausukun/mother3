@@ -755,4 +755,13 @@ typedef struct MapGraphicsInfo {
     s16 paletteIndex;
 } MapGraphicsInfo;
 
+typedef struct DoorDestinationInfo {
+    u8 _0;
+    u8 collsionEnabled;
+    u16 _2;
+    u16 mapID;
+    u8 xPos;
+    u8 yPos;
+} DoorDestinationInfo;
+
 #endif  // STRUCTS_H
