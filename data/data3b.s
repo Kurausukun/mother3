@@ -50,12 +50,12 @@ gUnknown_08D2E168:
 
     .global gDebugMenuInitTable
 gDebugMenuInitTable:
-        .4byte sub_08039EC8+1
-        .4byte sub_08039F00+1
-        .4byte sub_08039F40+1
-        .4byte sub_08039F80+1
-        .4byte sub_08039FBC+1
-        .4byte sub_08039FFC+1
+        .4byte initDebugMenuPage1+1
+        .4byte initDebugMenuPage2+1
+        .4byte initDebugMenuPage3+1
+        .4byte initDebugMenuPage4+1
+        .4byte initDebugMenuPage5+1
+        .4byte initDebugMenuPage6+1
 
 
     .global gDebugFuncTable

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08039FFC:
+initDebugMenuPage6:
 	push {r4, lr}
 	ldr r3, _0803A030
 	ldr r1, _0803A034

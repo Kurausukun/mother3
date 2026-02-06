@@ -1307,12 +1307,12 @@ extern "C" void initCurrentDebugPage() {
     }
 }
 
-extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08039EC8.inc", void sub_08039EC8());
-extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08039F00.inc", void sub_08039F00());
-extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08039F40.inc", void sub_08039F40());
-extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08039F80.inc", void sub_08039F80());
-extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08039FBC.inc", void sub_08039FBC());
-extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08039FFC.inc", void sub_08039FFC());
+extern "C" ASM_FUNC("asm/non_matching/code_08021920/initDebugMenuPage1.inc", void initDebugMenuPage1());
+extern "C" ASM_FUNC("asm/non_matching/code_08021920/initDebugMenuPage2.inc", void initDebugMenuPage2());
+extern "C" ASM_FUNC("asm/non_matching/code_08021920/initDebugMenuPage3.inc", void initDebugMenuPage3());
+extern "C" ASM_FUNC("asm/non_matching/code_08021920/initDebugMenuPage4.inc", void initDebugMenuPage4());
+extern "C" ASM_FUNC("asm/non_matching/code_08021920/initDebugMenuPage5.inc", void initDebugMenuPage5());
+extern "C" ASM_FUNC("asm/non_matching/code_08021920/initDebugMenuPage6.inc", void initDebugMenuPage6());
 
 extern "C" void mode_debug_menu(InputState* input) {
     if (gSomeBlend._3668_4 == 1) {
