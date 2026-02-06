@@ -47,6 +47,7 @@ extern "C" void sub_08036BA4(Object*);
 extern "C" void sub_0800BE04(Object*);
 extern "C" void sub_080052E4(s32);
 extern "C" void sub_0802610C(s32);
+extern "C" MapGraphicsInfo* getMapGraphicsInfo(u16);
 
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080012BC.inc", void sub_080012BC());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001378.inc", void sub_08001378());
@@ -1292,7 +1293,23 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B0C4.inc", void sub_0801B0C4()
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B0F8.inc", void sub_0801B0F8());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B144.inc", void sub_0801B144());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B1BC.inc", void sub_0801B1BC());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B2D4.inc", void sub_0801B2D4());
+
+extern "C" u16 isMapGraphicsValid(u16 mapID) {
+    MapGraphicsInfo* graphicsInfo = getMapGraphicsInfo(mapID);
+
+    for (u16 i = 0; i < 12; i++) {
+        if (graphicsInfo->tileSetIndices[i] == -1) {
+            return 0;
+        }
+    }
+
+    if (graphicsInfo->paletteIndex == -1) {
+        return 0;
+    }
+
+    return 1;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B314.inc", void sub_0801B314());
 
 extern "C" u8 getMusicIDForRoom(u16 roomIndex) {
@@ -1300,7 +1317,7 @@ extern "C" u8 getMusicIDForRoom(u16 roomIndex) {
 }
 
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B3B4.inc", void sub_0801B3B4());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B3D8.inc", void sub_0801B3D8());
+extern "C" ASM_FUNC("asm/non_matching/rom/getMapGraphicsInfo.inc", MapGraphicsInfo* getMapGraphicsInfo(u16));
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B3F8.inc", void sub_0801B3F8());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B3FC.inc", void sub_0801B3FC());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B414.inc", void sub_0801B414());

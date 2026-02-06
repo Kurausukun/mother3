@@ -84,7 +84,7 @@ _08039D7C:
 	ldr r0, _08039E20
 	adds r5, r4, r0
 	ldrh r0, [r5]
-	bl sub_0801B2D4
+	bl isMapGraphicsValid
 	lsls r0, r0, #0x10
 	cmp r0, #0
 	beq _08039E6E

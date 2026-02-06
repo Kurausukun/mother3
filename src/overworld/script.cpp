@@ -4494,11 +4494,11 @@ u16 cmd_C5(s32* sp) {
             obj2->_92[0] = 0x3c;
             break;
         }
-        gSomeBlend._121b8_3 = 1;
+        gSomeBlend._121b8_8 = 1;
         gGame._9d08 = 0x6010000;
         gGame._9d0c = 0;
         sub_08030180();
-        gSomeBlend._121b8_3 = 0;
+        gSomeBlend._121b8_8 = 0;
         switch (d) {
         case 1:
         case 2:

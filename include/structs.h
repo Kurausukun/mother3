@@ -399,7 +399,8 @@ typedef struct struct_02016028 {
     u8 _3668_8 : 1;
     u8 _3668_10 : 1;
     u8 _3668_20 : 1;
-    u8 _3668_40 : 2;
+    u8 _3668_40 : 1;
+    u8 _3668_80 : 1;
     u8 pad_3669[0x3800 - 0x3669];
     s32 _3800[0xFF];
     s32 _3bfc[0x170];
@@ -499,9 +500,10 @@ typedef struct struct_02016028 {
     u8 _121b6_2 : 1;
     u8 _121b6_4 : 6;
     u8 _121b7;
-    u8 _121b8_0 : 3;
-    u8 _121b8_3 : 1;
-    u8 _121b8_4 : 4;
+    u8 _121b8_1 : 3;
+    u8 _121b8_8 : 1;
+    u8 _121b8_10 : 1;
+    u8 _121b8_20 : 3;
     u8 _121b9;
     u8 _121ba;
     u8 _121bb_1 : 3;
@@ -747,5 +749,10 @@ typedef struct RhythmInfo {  // TODO: This should probably be part of a class?
     u8 okayWindow;           // Number of frames allowed for an "okay" hit
 } RhythmInfo;  // note that in the final game, "great" and "okay" hits do the same thing, so
                // effectively only the "okay" window matters
+
+typedef struct MapGraphicsInfo {
+    s16 tileSetIndices[12];
+    s16 paletteIndex;
+} MapGraphicsInfo;
 
 #endif  // STRUCTS_H
