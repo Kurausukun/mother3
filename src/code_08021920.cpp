@@ -1316,7 +1316,15 @@ extern "C" void initDebugMenuPage1(TransactionState* state) {
     gSomeBlend._360e_2 = 1;
 }
 
-extern "C" ASM_FUNC("asm/non_matching/code_08021920/initDebugMenuPage2.inc", void initDebugMenuPage2());
+extern "C" void initDebugMenuPage2(TransactionState* state) {
+    gSomeBlend.currentDebugPage = 1;
+    state->tabIndex = 0;
+    state->transactionType = 0;
+    state->numTabs = 3;
+    gSomeBlend._360e_1 = 1;
+    gSomeBlend._360e_2 = 1;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/initDebugMenuPage3.inc", void initDebugMenuPage3());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/initDebugMenuPage4.inc", void initDebugMenuPage4());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/initDebugMenuPage5.inc", void initDebugMenuPage5());
