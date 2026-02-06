@@ -197,7 +197,7 @@ _0801ACD4:
 	ldr r1, _0801AD44
 	adds r6, r0, r1
 	ldrh r0, [r6]
-	bl sub_0801B0C4
+	bl getFirstDoorOnMap
 	adds r4, r0, #0
 	cmp r4, #0
 	beq _0801AD2E

@@ -89,7 +89,7 @@ _08039D7C:
 	cmp r0, #0
 	beq _08039E6E
 	ldrh r0, [r5]
-	bl sub_0801B0C4
+	bl getFirstDoorOnMap
 	adds r4, r0, #0
 	cmp r4, #0
 	beq _08039E28

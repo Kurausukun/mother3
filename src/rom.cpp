@@ -49,6 +49,7 @@ extern "C" void sub_0800BE04(Object*);
 extern "C" void sub_080052E4(s32);
 extern "C" void sub_0802610C(s32);
 extern "C" MapGraphicsInfo* getMapGraphicsInfo(u16);
+extern "C" DoorDestinationInfo* getDoorDestinationInfo(u16);
 
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080012BC.inc", void sub_080012BC());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001378.inc", void sub_08001378());
@@ -1290,7 +1291,19 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801AE58.inc", void sub_0801AE58()
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801AF00.inc", void sub_0801AF00());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801AFA4.inc", void sub_0801AFA4());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B040.inc", void sub_0801B040());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B0C4.inc", void sub_0801B0C4());
+
+extern "C" DoorDestinationInfo* getFirstDoorOnMap(u16 mapID) {
+    DoorDestinationInfo* info = getDoorDestinationInfo(0);
+
+    for (u16 i = 0; i < 1500; i++, info++) {
+        if (info->mapID == mapID) {
+            return info;
+        }
+    }
+
+    return NULL;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B0F8.inc", void sub_0801B0F8());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B144.inc", void sub_0801B144());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B1BC.inc", void sub_0801B1BC());
