@@ -3,7 +3,7 @@ sub_08010808:
 	push {r4, r5, r6, r7, lr}
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
-	bl sub_0801B3D8
+	bl getMapGraphicsInfo
 	adds r6, r0, #0
 	movs r5, #0xc0
 	lsls r5, r5, #0x13

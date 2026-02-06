@@ -1406,7 +1406,7 @@ extern "C" void handleDebugPage2(InputState* input, TransactionState* state) {
     case 1:
         play_sound(SFX_MENU_SELECT);
         gSomeBlend._3668_10 = 1;
-        gGame.obstacleEvasaionEnabled ^= 1;
+        gGame.obstacleEvasionEnabled ^= 1;
         break;
     case 2:
         play_sound(SFX_MENU_SELECT);

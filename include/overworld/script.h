@@ -50,7 +50,7 @@ struct Game {
     u8 collisionEnabled : 1;
     u8 _8_2 : 1;
     u8 encountersEnabled : 1;
-    u8 obstacleEvasaionEnabled : 1;
+    u8 obstacleEvasionEnabled : 1;
     u8 displayProcessLoadEnabled : 1;
     u8 _8_20 : 1;
     u8 _8_40 : 1;

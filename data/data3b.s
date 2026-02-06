@@ -92,8 +92,8 @@ gUnknown_08D2E1C0:
 gMapInfoTable:
     .incbin "baserom.gba", 0x00D2E1D8, 0x6D6C
 
-    .global gUnknown_08D34F44
-gUnknown_08D34F44:
+    .global gMapGraphicsTable
+gMapGraphicsTable:
     .incbin "baserom.gba", 0x00D34F44, 0x659C
 
     .global gUnknown_08D3B4E0

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0801B3D8:
+getMapGraphicsInfo:
 	push {r4, lr}
 	adds r4, r0, #0
 	lsls r4, r4, #0x10
@@ -14,5 +14,5 @@ sub_0801B3D8:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0801B3F4: .4byte gUnknown_08D34F44
+_0801B3F4: .4byte gMapGraphicsTable
 	.syntax divided
