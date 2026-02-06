@@ -387,7 +387,12 @@ typedef struct struct_02016028 {
     u8 pad_35bb;
     TransactionState _35bc[6];
     u8 _3604[0x360E - 0x3604];
-    u8 _360e;
+    u8 _360e_1 : 1;
+    u8 _360e_2 : 3;
+    u8 _360e_10 : 1;
+    u8 _360e_20 : 1;
+    u8 _360e_40 : 1;
+    u8 _360e_80 : 1;
     u8 _360f[0x3612 - 0x360F];
     u16 currentDebugPage;
     u16 currentRoomID;
