@@ -1352,7 +1352,14 @@ extern "C" void initDebugMenuPage5(TransactionState* state) {
     gSomeBlend._360e_2 = 1;
 }
 
-extern "C" ASM_FUNC("asm/non_matching/code_08021920/initDebugMenuPage6.inc", void initDebugMenuPage6());
+extern "C" void initDebugMenuPage6(TransactionState* state) {
+    gSomeBlend.currentDebugPage = 5;
+    state->tabIndex = 0;
+    state->transactionType = 0;
+    state->numTabs = 2;
+    gSomeBlend._360e_1 = 1;
+    gSomeBlend._360e_2 = 1;
+}
 
 extern "C" void mode_debug_menu(InputState* input) {
     if (gSomeBlend._3668_4 == 1) {
