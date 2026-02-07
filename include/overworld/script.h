@@ -43,7 +43,7 @@ struct Game {
     u8 _1_80 : 1;
     u32 _2_1 : 7;
     u32 _2_40 : 4;
-    u32 _3_8 : 1;
+    u32 gbPlayerModeEnabled : 1;
     u32 _3_10 : 1;
     u32 _3_20 : 3;
     u32 _2_4 : 16;
@@ -53,7 +53,7 @@ struct Game {
     u8 encountersEnabled : 1;
     u8 obstacleEvasionEnabled : 1;
     u8 displayProcessLoadEnabled : 1;
-    u8 _8_20 : 1;
+    u8 gammaCorrectionEnabled : 1;
     u8 _8_40 : 1;
     u8 _8_80 : 1;
     u8 _9;
