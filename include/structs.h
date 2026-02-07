@@ -406,7 +406,9 @@ typedef struct struct_02016028 {
     u16 currentDebugPage;
     u16 currentRoomID;
     u16 _3616;
-    u8 pad_3618[0x3668 - 0x3618];
+    u16 _3618;
+    u16 _361a;
+    u8 pad_361c[0x3668 - 0x361C];
     u8 _3668_1 : 1;
     u8 _3668_2 : 1;
     u8 _3668_4 : 1;
