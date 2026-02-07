@@ -73,7 +73,7 @@ _0803A62C: .4byte gSomeBlend
 _0803A630: .4byte 0x00003668
 _0803A634: .4byte gGame
 _0803A638:
-	bl sub_0803A644
+	bl debugChangeWorldMapValues
 _0803A63C:
 	pop {r4}
 	pop {r0}

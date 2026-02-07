@@ -1466,7 +1466,57 @@ extern "C" void handleDebugPage2(InputState* input, TransactionState* state) {
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0803A458.inc", void sub_0803A458(InputState*, TransactionState*));
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/debugMenuPage3.inc", void debugMenuPage3());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0803A59C.inc", void sub_0803A59C());
-extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0803A644.inc", void sub_0803A644());
+
+extern "C" void debugChangeWorldMapValues(InputState* input, TransactionState* state) {
+    u16 changeAmt;
+
+    if (state->tabIndex != 2) {
+        return;
+    }
+
+    if (input->pressed & L_BUTTON) {
+        changeAmt = 10;
+    } else if (input->pressed & R_BUTTON) {
+        changeAmt = 100;
+    } else {
+        changeAmt = 1;
+    }
+
+    if (input->pressed & A_BUTTON) {
+        play_sound(SFX_MENU_SELECT);
+        switch (state->transactionType) {
+        case 0:
+            gSomeBlend._3678 += changeAmt;
+            break;
+        case 1:
+            gSomeBlend._367a += changeAmt;
+            break;
+        case 2:
+            gSomeBlend._367c += changeAmt;
+            break;
+        case 3:
+            gSomeBlend._367e += changeAmt;
+            break;
+        }
+    } else if (input->pressed & B_BUTTON) {
+        play_sound(SFX_MENU_SELECT);
+        switch (state->transactionType) {
+        case 0:
+            gSomeBlend._3678 -= changeAmt;
+            break;
+        case 1:
+            gSomeBlend._367a -= changeAmt;
+            break;
+        case 2:
+            gSomeBlend._367c -= changeAmt;
+            break;
+        case 3:
+            gSomeBlend._367e -= changeAmt;
+            break;
+        }
+    }
+}
+
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/debugMenuPage4.inc", void debugMenuPage4());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0803A830.inc", void sub_0803A830());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0803A844.inc", void sub_0803A844());

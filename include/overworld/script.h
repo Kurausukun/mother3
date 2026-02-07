@@ -2,6 +2,7 @@
 #define OVERWORLD_SCRIPT_H
 
 #include "global.h"
+#include "structs.h"
 
 #define _22_5_DEGREES 0x1000
 #define _45_DEGREES 0x2000
@@ -74,8 +75,7 @@ struct Game {
     u16 _597e;
     u16 last_room;
     s16 _5982;
-    s16 _5984;
-    s16 _5986;
+    MovementVector _5984;
     u8 _5988[0x598C - 0x5988];
     u8 _598c_1 : 1;
     u8 _598c_2 : 1;

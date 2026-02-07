@@ -3082,8 +3082,8 @@ _0801E3CC: .4byte 0x000121BB\n\
 u16 cmd_4B(s32* sp) {
     scriptstack_set(sp, 3, gGame.last_room);
     scriptstack_set(sp, 2, gGame._5982);
-    scriptstack_set(sp, 1, gGame._5984);
-    scriptstack_set(sp, 0, gGame._5986);
+    scriptstack_set(sp, 1, gGame._5984.x);
+    scriptstack_set(sp, 0, gGame._5984.y);
     return 0;
 }
 
