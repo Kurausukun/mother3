@@ -53,9 +53,9 @@ extern "C" void sub_080381B0(MenuState*);
 extern "C" void sub_0800A480(void*);
 extern "C" void navigateWrapping2DMenu(u16*, InputState*, u16, u16, u16, u16);
 extern "C" void sub_0800A1C4(void*);
-extern "C" void handleDebugPage1(InputState*, TransactionState*);
-extern "C" void debugChangeCurrentRoom(InputState*, TransactionState*);
-extern "C" void sub_0803A458(InputState*, TransactionState*);
+extern "C" void handleDebugPage1(InputState*, DebugMenuState*);
+extern "C" void debugChangeCurrentRoom(InputState*, DebugMenuState*);
+extern "C" void sub_0803A458(InputState*, DebugMenuState*);
 
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08021920.inc", u32 sub_08021920(u32));
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08021930.inc", void sub_08021930());
@@ -1303,60 +1303,60 @@ extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08039CDC.inc", void sub_
 extern "C" void initCurrentDebugPage() {
     if (gSomeBlend.currentDebugPage < 6) {
         gDebugMenuInitTable[gSomeBlend.currentDebugPage](
-            &gSomeBlend._35bc[gSomeBlend.currentDebugPage]);
+            &gSomeBlend.debugMenuPages[gSomeBlend.currentDebugPage]);
     }
 }
 
-extern "C" void initDebugMenuPage1(TransactionState* state) {
+extern "C" void initDebugMenuPage1(DebugMenuState* state) {
     gSomeBlend.currentDebugPage = 0;
-    state->tabIndex = 0;
-    state->transactionType = 0;
-    state->numTabs = 3;
+    state->itemIndex = 0;
+    state->subItemIndex = 0;
+    state->numItems = 3;
     gSomeBlend._360e_1 = 1;
     gSomeBlend._360e_2 = 1;
 }
 
-extern "C" void initDebugMenuPage2(TransactionState* state) {
+extern "C" void initDebugMenuPage2(DebugMenuState* state) {
     gSomeBlend.currentDebugPage = 1;
-    state->tabIndex = 0;
-    state->transactionType = 0;
-    state->numTabs = 3;
+    state->itemIndex = 0;
+    state->subItemIndex = 0;
+    state->numItems = 3;
     gSomeBlend._360e_1 = 1;
     gSomeBlend._360e_2 = 1;
 }
 
-extern "C" void initDebugMenuPage3(TransactionState* state) {
+extern "C" void initDebugMenuPage3(DebugMenuState* state) {
     gSomeBlend.currentDebugPage = 2;
-    state->tabIndex = 0;
-    state->transactionType = 0;
-    state->numTabs = 3;
+    state->itemIndex = 0;
+    state->subItemIndex = 0;
+    state->numItems = 3;
     gSomeBlend._360e_1 = 1;
     gSomeBlend._360e_2 = 1;
 }
 
-extern "C" void initDebugMenuPage4(TransactionState* state) {
+extern "C" void initDebugMenuPage4(DebugMenuState* state) {
     gSomeBlend.currentDebugPage = 3;
-    state->tabIndex = 0;
-    state->transactionType = 0;
-    state->numTabs = 3;
+    state->itemIndex = 0;
+    state->subItemIndex = 0;
+    state->numItems = 3;
     gSomeBlend._360e_1 = 1;
     gSomeBlend._360e_2 = 1;
 }
 
-extern "C" void initDebugMenuPage5(TransactionState* state) {
+extern "C" void initDebugMenuPage5(DebugMenuState* state) {
     gSomeBlend.currentDebugPage = 4;
-    state->tabIndex = 0;
-    state->transactionType = 0;
-    state->numTabs = 3;
+    state->itemIndex = 0;
+    state->subItemIndex = 0;
+    state->numItems = 3;
     gSomeBlend._360e_1 = 1;
     gSomeBlend._360e_2 = 1;
 }
 
-extern "C" void initDebugMenuPage6(TransactionState* state) {
+extern "C" void initDebugMenuPage6(DebugMenuState* state) {
     gSomeBlend.currentDebugPage = 5;
-    state->tabIndex = 0;
-    state->transactionType = 0;
-    state->numTabs = 2;
+    state->itemIndex = 0;
+    state->subItemIndex = 0;
+    state->numItems = 2;
     gSomeBlend._360e_1 = 1;
     gSomeBlend._360e_2 = 1;
 }
@@ -1370,7 +1370,7 @@ extern "C" void mode_debug_menu(InputState* input) {
 
     if (gSomeBlend._3668_2 && gSomeBlend.currentDebugPage < 6) {
         gDebugFuncTable[gSomeBlend.currentDebugPage](
-            input, &gSomeBlend._35bc[gSomeBlend.currentDebugPage]);
+            input, &gSomeBlend.debugMenuPages[gSomeBlend.currentDebugPage]);
     }
 
     if (gSomeBlend._3668_8 == 1) {
@@ -1386,8 +1386,8 @@ extern "C" void mode_debug_menu(InputState* input) {
 
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/debugMenuPage1.inc", void debugMenuPage1());
 
-extern "C" void handleDebugPage1(InputState* input, TransactionState* state) {
-    switch (state->tabIndex) {
+extern "C" void handleDebugPage1(InputState* input, DebugMenuState* state) {
+    switch (state->itemIndex) {
     case 0:
         debugChangeCurrentRoom(input, state);
         break;
@@ -1404,10 +1404,10 @@ extern "C" void handleDebugPage1(InputState* input, TransactionState* state) {
     }
 }
 
-extern "C" void debugChangeCurrentRoom(InputState* input, TransactionState* state) {
+extern "C" void debugChangeCurrentRoom(InputState* input, DebugMenuState* state) {
     u16 changeAmt;
 
-    if (state->tabIndex != 0) {
+    if (state->itemIndex != 0) {
         return;
     }
 
@@ -1445,8 +1445,8 @@ extern "C" void debugChangeCurrentRoom(InputState* input, TransactionState* stat
 
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/debugMenuPage2.inc", void debugMenuPage2());
 
-extern "C" void handleDebugPage2(InputState* input, TransactionState* state) {
-    switch (state->tabIndex) {
+extern "C" void handleDebugPage2(InputState* input, DebugMenuState* state) {
+    switch (state->itemIndex) {
     case 0:
         sub_0803A458(input, state);
         break;
@@ -1463,14 +1463,14 @@ extern "C" void handleDebugPage2(InputState* input, TransactionState* state) {
     }
 }
 
-extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0803A458.inc", void sub_0803A458(InputState*, TransactionState*));
+extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0803A458.inc", void sub_0803A458(InputState*, DebugMenuState*));
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/debugMenuPage3.inc", void debugMenuPage3());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0803A59C.inc", void sub_0803A59C());
 
-extern "C" void debugChangeWorldMapValues(InputState* input, TransactionState* state) {
+extern "C" void debugChangeWorldMapValues(InputState* input, DebugMenuState* state) {
     u16 changeAmt;
 
-    if (state->tabIndex != 2) {
+    if (state->itemIndex != 2) {
         return;
     }
 
@@ -1484,7 +1484,7 @@ extern "C" void debugChangeWorldMapValues(InputState* input, TransactionState* s
 
     if (input->pressed & A_BUTTON) {
         play_sound(SFX_MENU_SELECT);
-        switch (state->transactionType) {
+        switch (state->subItemIndex) {
         case 0:
             gSomeBlend._3678 += changeAmt;
             break;
@@ -1500,7 +1500,7 @@ extern "C" void debugChangeWorldMapValues(InputState* input, TransactionState* s
         }
     } else if (input->pressed & B_BUTTON) {
         play_sound(SFX_MENU_SELECT);
-        switch (state->transactionType) {
+        switch (state->subItemIndex) {
         case 0:
             gSomeBlend._3678 -= changeAmt;
             break;

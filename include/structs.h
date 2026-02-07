@@ -293,6 +293,15 @@ typedef struct TransactionState {
 } TransactionState;
 static_assert(sizeof(TransactionState) == 0xC);
 
+typedef struct DebugMenuState {
+    u16 _0;
+    u16 numItems;
+    u16 itemIndex;
+    u16 _6[2];
+    u16 subItemIndex;
+} DebugMenuState;
+static_assert(sizeof(DebugMenuState) == 0xC);
+
 typedef struct struct_2018D00 {
     s32 _0;
     s32 hpMod;
@@ -385,7 +394,7 @@ typedef struct struct_02016028 {
     u8 _35ba_2 : 2;
     u8 _35ba_8 : 1;
     u8 pad_35bb;
-    TransactionState _35bc[6];
+    DebugMenuState debugMenuPages[6];
     u8 _3604[0x360E - 0x3604];
     u8 _360e_1 : 1;
     u8 _360e_2 : 3;
