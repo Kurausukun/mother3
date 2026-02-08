@@ -616,7 +616,7 @@ typedef struct Save {
     u8 _735;
     u16 _736;
     u8 _738[12];
-    u32 _744;
+    u32 sessionPlayTime;
     u16 _748;
     u8 enemy_seen_front[0x20];
     u8 enemy_seen_back[0x20];

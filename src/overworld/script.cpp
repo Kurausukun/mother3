@@ -1424,13 +1424,13 @@ u16 cmd_get_hp_pp(s32* sp) {
     return 0;
 }
 
-u16 cmd_2E(s32* sp) {
-    gSave._744 = scriptstack_peek(sp, 0);
+u16 cmd_pop_session_playtime(s32* sp) {
+    gSave.sessionPlayTime = scriptstack_peek(sp, 0);
     return 0;
 }
 
-u16 cmd_2F(s32* sp) {
-    scriptstack_push(gSave._744);
+u16 cmd_push_session_playtime(s32* sp) {
+    scriptstack_push(gSave.sessionPlayTime);
     return 0;
 }
 
