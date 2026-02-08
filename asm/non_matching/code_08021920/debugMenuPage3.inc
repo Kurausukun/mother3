@@ -17,7 +17,7 @@ _0803A4E4:
 	beq _0803A4F8
 	adds r0, r2, #0
 	adds r1, r4, #0
-	bl debugChangeWorldMapValues
+	bl debugChangeMapCoords
 	b _0803A594
 _0803A4F8:
 	movs r1, #0xc

@@ -57,7 +57,7 @@ extern "C" void handleDebugPage1(InputState*, DebugMenuState*);
 extern "C" void debugChangeCurrentRoom(InputState*, DebugMenuState*);
 extern "C" void sub_0803A458(InputState*, DebugMenuState*);
 extern "C" void sub_08000D64(u16);
-extern "C" void debugChangeWorldMapValues(InputState*, DebugMenuState*);
+extern "C" void debugChangeMapCoords(InputState*, DebugMenuState*);
 extern "C" void sub_0803B5C4();
 extern "C" void sub_0803A844(InputState*, DebugMenuState*);
 
@@ -1485,12 +1485,12 @@ extern "C" void handleDebugPage3(InputState* input, DebugMenuState* state) {
         sub_0803B5C4();
         break;
     case 2:
-        debugChangeWorldMapValues(input, state);
+        debugChangeMapCoords(input, state);
         break;
     }
 }
 
-extern "C" void debugChangeWorldMapValues(InputState* input, DebugMenuState* state) {
+extern "C" void debugChangeMapCoords(InputState* input, DebugMenuState* state) {
     u16 changeAmt;
 
     if (state->itemIndex != 2) {
@@ -1509,32 +1509,32 @@ extern "C" void debugChangeWorldMapValues(InputState* input, DebugMenuState* sta
         play_sound(SFX_MENU_SELECT);
         switch (state->subItemIndex) {
         case 0:
-            gSomeBlend._3678 += changeAmt;
+            gSomeBlend.townMapCoords.topLeftX += changeAmt;
             break;
         case 1:
-            gSomeBlend._367a += changeAmt;
+            gSomeBlend.townMapCoords.topLeftY += changeAmt;
             break;
         case 2:
-            gSomeBlend._367c += changeAmt;
+            gSomeBlend.townMapCoords.bottomRightX += changeAmt;
             break;
         case 3:
-            gSomeBlend._367e += changeAmt;
+            gSomeBlend.townMapCoords.bottomRightY += changeAmt;
             break;
         }
     } else if (input->pressed & B_BUTTON) {
         play_sound(SFX_MENU_SELECT);
         switch (state->subItemIndex) {
         case 0:
-            gSomeBlend._3678 -= changeAmt;
+            gSomeBlend.townMapCoords.topLeftX -= changeAmt;
             break;
         case 1:
-            gSomeBlend._367a -= changeAmt;
+            gSomeBlend.townMapCoords.topLeftY -= changeAmt;
             break;
         case 2:
-            gSomeBlend._367c -= changeAmt;
+            gSomeBlend.townMapCoords.bottomRightX -= changeAmt;
             break;
         case 3:
-            gSomeBlend._367e -= changeAmt;
+            gSomeBlend.townMapCoords.bottomRightY -= changeAmt;
             break;
         }
     }

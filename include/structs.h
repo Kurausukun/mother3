@@ -336,6 +336,19 @@ typedef struct MenuGoodsEntry {
     u16 _2_40 : 1;
 } MenuGoodsEntry;
 
+typedef struct TownMapCoords {
+    u16 topLeftX;
+    u16 topLeftY;
+    u16 bottomRightX;
+    u16 bottomRightY;
+} TownMapCoords;
+
+typedef struct TownMapInfo {
+    u16 townMapID;
+    TownMapCoords coords;
+    u16 _a;
+} TownMapInfo;
+
 typedef struct struct_02016028 {
     vu16 bldcnt;
     vu16 bldalpha;
@@ -418,10 +431,7 @@ typedef struct struct_02016028 {
     u8 _3668_40 : 1;
     u8 _3668_80 : 1;
     u8 pad_3669[0x3678 - 0x3669];
-    u16 _3678;
-    u16 _367a;
-    u16 _367c;
-    u16 _367e;
+    TownMapCoords townMapCoords;
     u8 pad_3680[0x3800 - 0x3680];
     s32 _3800[0xFF];
     s32 _3bfc[0x170];
@@ -753,15 +763,6 @@ typedef struct struct_200D818 {
     s16 kindness;
     u16 _2e;
 } struct_200D818;
-
-typedef struct TownMapInfo {
-    u16 townMapID;
-    u16 topLeftX;
-    u16 topLeftY;
-    u16 bottomRightX;
-    u16 bottomRightY;
-    u16 _a;
-} TownMapInfo;
 
 typedef struct RhythmInfo {  // TODO: This should probably be part of a class?
     u16 id;                  // Entry ID (is there any point to this?)
