@@ -1425,12 +1425,12 @@ u16 cmd_get_hp_pp(s32* sp) {
 }
 
 u16 cmd_pop_session_playtime(s32* sp) {
-    gSave.sessionPlayTime = scriptstack_peek(sp, 0);
+    gSave.sessionFrameCount = scriptstack_peek(sp, 0);
     return 0;
 }
 
 u16 cmd_push_session_playtime(s32* sp) {
-    scriptstack_push(gSave.sessionPlayTime);
+    scriptstack_push(gSave.sessionFrameCount);
     return 0;
 }
 

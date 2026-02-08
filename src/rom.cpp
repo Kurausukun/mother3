@@ -50,6 +50,9 @@ extern "C" void sub_080052E4(s32);
 extern "C" void sub_0802610C(s32);
 extern "C" MapGraphicsInfo* getMapGraphicsInfo(u16);
 extern "C" DoorDestinationInfo* getDoorDestinationInfo(u16);
+extern "C" void sub_0805CD30(u16, u16, u8);
+extern "C" u32 sub_0805CDD8(u16, u8);
+extern "C" u16 get_flag(u16);
 
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080012BC.inc", void sub_080012BC());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001378.inc", void sub_08001378());
@@ -367,7 +370,19 @@ extern "C" void breakIntoDigits(u16* digitBuffer, u32 value, u16 modifier, u16 n
 
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0800268C.inc", void sub_0800268C());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080026C0.inc", void sub_080026C0());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_080026F0.inc", void sub_080026F0());
+
+extern "C" void incrementSessionFrameCount() {
+    if (get_flag(0x315)) {
+        return;
+    }
+
+    if (gSave.sessionFrameCount < _3_HOURS_FRAMES) {
+        gSave.sessionFrameCount++;
+    } else {
+        gSave.sessionFrameCount = _3_HOURS_FRAMES;
+    }
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0800272C.inc", void sub_0800272C());
 
 extern "C" u32 sub_08002760(u16 r0, u16 r1) {
@@ -482,7 +497,7 @@ extern "C" void sub_08002950(u16 idx, u16 value) {
     gSave.mIQ0[idx * 2 + 1] = (value >> 8) & 0xFF;
 }
 
-extern "C" u32 get_flag(u16 idx) {
+extern "C" u16 get_flag(u16 idx) {
     return (gSave.event_flags[idx / 8] >> (idx % 8)) & 1;
 }
 
@@ -507,9 +522,6 @@ extern "C" u32 get_giftbox_flag(u16 idx) {
     return (gSave.giftbox_flags[idx / 8] >> (idx % 8)) & 1;
 }
 
-extern "C" void sub_0805CD30(u16, u16, u8);
-extern "C" u32 sub_0805CDD8(u16, u8);
-
 extern "C" void sub_08002A58(u16 r0, u16 r1, vu16 r2) {
     if (r2) {
         sub_0805CD30(r0, 1, r1);
@@ -526,7 +538,6 @@ extern "C" u8 sub_08002A90(u16 r0, vu16 r1) {
     }
 }
 
-// extern "C" ASM_FUNC("asm/non_matching/rom/sub_08002A90.inc", void sub_08002A90());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08002ABC.inc", void sub_08002ABC());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08002AF4.inc", void sub_08002AF4());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08002B1C.inc", void sub_08002B1C());

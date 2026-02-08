@@ -7,6 +7,8 @@
 #define _22_5_DEGREES 0x1000
 #define _45_DEGREES 0x2000
 
+#define _3_HOURS_FRAMES 0x9E340
+
 extern u16 (*gScriptCmdTable[])(s32* sp);
 
 enum Mode {

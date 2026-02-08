@@ -18,7 +18,7 @@ _080026E0:
 	ldr r0, _080026EC
 _080026E2:
 	str r0, [r2]
-	bl sub_080026F0
+	bl incrementSessionFrameCount
 	pop {r0}
 	bx r0
 	.align 2, 0
