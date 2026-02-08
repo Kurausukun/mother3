@@ -53,6 +53,7 @@ extern "C" DoorDestinationInfo* getDoorDestinationInfo(u16);
 extern "C" void sub_0805CD30(u16, u16, u8);
 extern "C" u32 sub_0805CDD8(u16, u8);
 extern "C" u16 get_flag(u16);
+extern "C" void incrementSessionPlaytime();
 
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080012BC.inc", void sub_080012BC());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001378.inc", void sub_08001378());
@@ -369,17 +370,25 @@ extern "C" void breakIntoDigits(u16* digitBuffer, u32 value, u16 modifier, u16 n
 }
 
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0800268C.inc", void sub_0800268C());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_080026C0.inc", void sub_080026C0());
 
-extern "C" void incrementSessionFrameCount() {
+extern "C" void incrementSavePlaytime() {
+    if (gSave.playtime < SECONDS_TO_FRAMES(359999)) {
+        gSave.playtime++;
+    } else {
+        gSave.playtime = SECONDS_TO_FRAMES(359998);
+    }
+    incrementSessionPlaytime();
+}
+
+extern "C" void incrementSessionPlaytime() {
     if (get_flag(0x315)) {
         return;
     }
 
-    if (gSave.sessionFrameCount < _3_HOURS_FRAMES) {
-        gSave.sessionFrameCount++;
+    if (gSave.sessionPlaytime < LEDERS_BELL_THRESHOLD) {
+        gSave.sessionPlaytime++;
     } else {
-        gSave.sessionFrameCount = _3_HOURS_FRAMES;
+        gSave.sessionPlaytime = LEDERS_BELL_THRESHOLD;
     }
 }
 

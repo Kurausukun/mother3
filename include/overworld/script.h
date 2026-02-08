@@ -7,7 +7,14 @@
 #define _22_5_DEGREES 0x1000
 #define _45_DEGREES 0x2000
 
-#define _3_HOURS_FRAMES 0x9E340
+#define FRAMES_PER_SECOND 60
+#define FRAMES_PER_MINUTE (FRAMES_PER_SECOND * 60)
+#define FRAMES_PER_HOUR (FRAMES_PER_MINUTE * 60)
+
+#define SECONDS_TO_FRAMES(seconds) (seconds * FRAMES_PER_SECOND)
+#define HOURS_TO_FRAMES(hours) (hours * FRAMES_PER_HOUR)
+
+#define LEDERS_BELL_THRESHOLD (HOURS_TO_FRAMES(3))
 
 extern u16 (*gScriptCmdTable[])(s32* sp);
 

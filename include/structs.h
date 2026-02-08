@@ -336,16 +336,12 @@ typedef struct MenuGoodsEntry {
     u16 _2_40 : 1;
 } MenuGoodsEntry;
 
-typedef struct TownMapCoords {
+typedef struct TownMapInfo {
+    u16 townMapID;
     u16 topLeftX;
     u16 topLeftY;
     u16 bottomRightX;
     u16 bottomRightY;
-} TownMapCoords;
-
-typedef struct TownMapInfo {
-    u16 townMapID;
-    TownMapCoords coords;
     u16 _a;
 } TownMapInfo;
 
@@ -431,7 +427,10 @@ typedef struct struct_02016028 {
     u8 _3668_40 : 1;
     u8 _3668_80 : 1;
     u8 pad_3669[0x3678 - 0x3669];
-    TownMapCoords townMapCoords;
+    u16 mapTopLeftX;
+    u16 mapTopLeftY;
+    u16 mapBottomRightX;
+    u16 mapBottomRightY;
     u8 pad_3680[0x3800 - 0x3680];
     s32 _3800[0xFF];
     s32 _3bfc[0x170];
@@ -616,7 +615,7 @@ typedef struct Save {
     u8 _735;
     u16 _736;
     u8 _738[12];
-    u32 sessionFrameCount;
+    u32 sessionPlaytime;
     u16 _748;
     u8 enemy_seen_front[0x20];
     u8 enemy_seen_back[0x20];

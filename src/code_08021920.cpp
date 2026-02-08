@@ -1509,32 +1509,32 @@ extern "C" void debugChangeMapCoords(InputState* input, DebugMenuState* state) {
         play_sound(SFX_MENU_SELECT);
         switch (state->subItemIndex) {
         case 0:
-            gSomeBlend.townMapCoords.topLeftX += changeAmt;
+            gSomeBlend.mapTopLeftX += changeAmt;
             break;
         case 1:
-            gSomeBlend.townMapCoords.topLeftY += changeAmt;
+            gSomeBlend.mapTopLeftY += changeAmt;
             break;
         case 2:
-            gSomeBlend.townMapCoords.bottomRightX += changeAmt;
+            gSomeBlend.mapBottomRightX += changeAmt;
             break;
         case 3:
-            gSomeBlend.townMapCoords.bottomRightY += changeAmt;
+            gSomeBlend.mapBottomRightY += changeAmt;
             break;
         }
     } else if (input->pressed & B_BUTTON) {
         play_sound(SFX_MENU_SELECT);
         switch (state->subItemIndex) {
         case 0:
-            gSomeBlend.townMapCoords.topLeftX -= changeAmt;
+            gSomeBlend.mapTopLeftX -= changeAmt;
             break;
         case 1:
-            gSomeBlend.townMapCoords.topLeftY -= changeAmt;
+            gSomeBlend.mapTopLeftY -= changeAmt;
             break;
         case 2:
-            gSomeBlend.townMapCoords.bottomRightX -= changeAmt;
+            gSomeBlend.mapBottomRightX -= changeAmt;
             break;
         case 3:
-            gSomeBlend.townMapCoords.bottomRightY -= changeAmt;
+            gSomeBlend.mapBottomRightY -= changeAmt;
             break;
         }
     }

@@ -18,7 +18,7 @@ sub_0803E50C:
 	ldr r0, [r1]
 	adds r0, #1
 	str r0, [r1]
-	bl sub_080026C0
+	bl incrementSavePlaytime
 	adds r5, r4, #0
 	adds r5, #0x50
 	adds r0, r4, #0
