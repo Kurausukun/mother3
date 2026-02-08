@@ -7,7 +7,7 @@ debugMenuPage5:
 	ldrh r2, [r3]
 	cmp r2, #1
 	bne _0803A988
-	bl sub_0803AA98
+	bl handleDebugPage5
 	b _0803AA90
 _0803A988:
 	ldrh r1, [r3, #2]

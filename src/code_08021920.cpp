@@ -60,6 +60,7 @@ extern "C" void sub_08000D64(u16);
 extern "C" void debugChangeMapCoords(InputState*, DebugMenuState*);
 extern "C" void sub_0803B5C4();
 extern "C" void sub_0803A844(InputState*, DebugMenuState*);
+extern "C" void sub_0803AAAC(InputState*, TransactionState*);
 
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08021920.inc", u32 sub_08021920(u32));
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08021930.inc", void sub_08021930());
@@ -1554,8 +1555,17 @@ extern "C" void handleDebugPage4(InputState* input, DebugMenuState* state) {
 
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0803A844.inc", void sub_0803A844(InputState*, DebugMenuState*));
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/debugMenuPage5.inc", void debugMenuPage5());
-extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0803AA98.inc", void sub_0803AA98());
-extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0803AAAC.inc", void sub_0803AAAC());
+
+extern "C" void handleDebugPage5(InputState* input, TransactionState* state) {
+    switch (state->tabIndex) {
+    case 0:
+    case 1:
+    case 2:
+        sub_0803AAAC(input, state);
+    }
+}
+
+extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0803AAAC.inc", void sub_0803AAAC(InputState*, TransactionState*));
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/debugMenuPage6.inc", void debugMenuPage6());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/nullsub_19.inc", void nullsub_19());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/nullsub_20.inc", void nullsub_20());
