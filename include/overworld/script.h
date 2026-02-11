@@ -80,8 +80,7 @@ struct Game {
     u8 _5962[0x5978 - 0x5962];
     u16 next_room;
     u16 _597a;
-    u16 _597c;
-    u16 _597e;
+    Position room_entered_from;
     u16 last_room;
     s16 _5982;
     MovementVector _5984;

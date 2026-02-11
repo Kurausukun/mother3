@@ -1424,7 +1424,7 @@ u16 cmd_get_hp_pp(s32* sp) {
     return 0;
 }
 
-u16 cmd_pop_session_playtime(s32* sp) {
+u16 cmd_peek_session_playtime(s32* sp) {
     gSave.sessionPlaytime = scriptstack_peek(sp, 0);
     return 0;
 }

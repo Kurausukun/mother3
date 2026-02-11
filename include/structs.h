@@ -89,6 +89,11 @@ enum EquipFlags { _1, Flint, Lucas, Duster, Kumatora, Boney, Salsa, _80 };
 //     u32 battle_info;
 // };
 
+typedef struct Position {
+    u16 x;
+    u16 y;
+} Position;
+
 typedef struct Size {
     u16 w;
     s16 h;
@@ -413,11 +418,14 @@ typedef struct struct_02016028 {
     u8 _360e_80 : 1;
     u8 _360f[0x3612 - 0x360F];
     u16 currentDebugPage;
-    u16 currentRoomID;
-    u16 _3616;
-    u16 _3618;
-    u16 _361a;
-    u8 pad_361c[0x3668 - 0x361C];
+    u16 debugRoomID;
+    u16 debugObjectTable;
+    u16 debugBgm;
+    u16 debugEncounterBgm;
+    u32 debugDpPocket;
+    u32 debugDpBank;
+    u32 debugSessionPlaytime;
+    u8 pad_3628[0x3668 - 0x3628];
     u8 _3668_1 : 1;
     u8 _3668_2 : 1;
     u8 _3668_4 : 1;

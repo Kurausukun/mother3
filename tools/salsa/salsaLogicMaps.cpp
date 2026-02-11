@@ -68,7 +68,7 @@ const std::vector<std::string> ext_cmd_names = {
     "cmd_cfg_member",
     "cmd_cfg_member_item",
     "cmd_get_hp_pp",
-    "cmd_pop_session_playtime",
+    "cmd_peek_session_playtime",
     "cmd_push_session_playtime",
     "cmd_set_ailment",
     "cmd_31",

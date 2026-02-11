@@ -1428,22 +1428,22 @@ extern "C" void debugChangeCurrentRoom(InputState* input, DebugMenuState* state)
 
     if (input->pressed & A_BUTTON) {
         play_sound(SFX_MENU_SELECT);
-        gSomeBlend.currentRoomID += changeAmt;
-        if (gSomeBlend.currentRoomID > 999) {
-            gSomeBlend.currentRoomID = 1;
+        gSomeBlend.debugRoomID += changeAmt;
+        if (gSomeBlend.debugRoomID > 999) {
+            gSomeBlend.debugRoomID = 1;
         }
         return;
     }
 
     if (input->pressed & B_BUTTON) {
         play_sound(SFX_MENU_SELECT);
-        if (gSomeBlend.currentRoomID >= changeAmt) {
-            gSomeBlend.currentRoomID -= changeAmt;
-            if (gSomeBlend.currentRoomID == 0) {
-                gSomeBlend.currentRoomID = 999;
+        if (gSomeBlend.debugRoomID >= changeAmt) {
+            gSomeBlend.debugRoomID -= changeAmt;
+            if (gSomeBlend.debugRoomID == 0) {
+                gSomeBlend.debugRoomID = 999;
             }
         } else {
-            gSomeBlend.currentRoomID = 999;
+            gSomeBlend.debugRoomID = 999;
         }
     }
 }
