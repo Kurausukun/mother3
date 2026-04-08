@@ -46,7 +46,7 @@ void set_giftbox_flag(u32, u32);
 u32 get_giftbox_flag(u32);
 void sub_0802AF24(u32);
 void add_dp_to_bank(u32);
-u32 sub_0802B954(u32);
+s16 getPartyMemberByHeldItem(u16);
 void sub_0802AD88(u32, u32);
 void set_ailment(u32, u32, u32);
 u16 sub_0802A124(u16);

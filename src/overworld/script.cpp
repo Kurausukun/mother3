@@ -1095,7 +1095,7 @@ u16 cmd_27(s32* sp) {
     u16 idx;
 
     idx = scriptstack_peek(sp, 0);
-    val = sub_0802B954(idx);
+    val = getPartyMemberByHeldItem(idx);
     scriptstack_push(val);
     return 0;
 }

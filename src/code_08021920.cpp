@@ -580,7 +580,23 @@ extern "C" StatMeter* getStatMeter(u16 playerID, u16 statMeterType) {
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0802B8C4.inc", u32 sub_0802B8C4(u32));
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0802B8F4.inc", void sub_0802B8F4());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0802B924.inc", void sub_0802B924());
-extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0802B954.inc", u32 sub_0802B954(u32));
+
+extern "C" s16 getPartyMemberByHeldItem(u16 itemID) {
+    for (u16 partyMemberIdx = 0; partyMemberIdx < gGame.party_count; partyMemberIdx++) {
+        CharStats* stats;
+        stats = get_char_stats(partyMemberIdx);
+
+        if (stats->charNo != 0 && isCharIdOverworldPlayable(stats->charNo)) {
+            for (u16 equipmentIdx = 0; equipmentIdx < 4; equipmentIdx++) {
+                if (stats->equipment[equipmentIdx] == itemID) {
+                    return partyMemberIdx;
+                }
+            }
+        }
+    }
+
+    return -1;
+}
 
 extern "C" bool is_equippable(u16 idx) {
     u32 type = gGoodsInfo[idx].item_type;
