@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0802A454:
+giveItemByQuantity:
 	push {r4, r5, r6, r7, lr}
 	lsls r1, r1, #0x10
 	lsrs r7, r1, #0x10

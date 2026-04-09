@@ -56,7 +56,7 @@ _0802A7A8:
 	adds r0, r6, #0
 	adds r1, r5, #0
 	movs r2, #1
-	bl sub_0802A454
+	bl giveItemByQuantity
 	adds r0, r6, #0
 	adds r1, r5, #0
 	bl heldItemIndex

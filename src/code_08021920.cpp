@@ -390,7 +390,19 @@ extern "C" s16 heldItemIndex(CharStats* stats, u16 item) {
 }
 
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0802A42C.inc", void sub_0802A42C());
-extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0802A454.inc", void sub_0802A454());
+
+extern "C" void giveItemByQuantity(CharStats* stats, u16 item, u16 qty) {
+    for (u16 i = 0; i < qty; i++) {
+        for (u16 j = 0; j < 0x10; j++) {
+            if (stats->inventory[j] == 0) {
+                stats->inventory[j] = item;
+                stats->item_timers[j] = 0;
+                break;
+            }
+        }
+    }
+}
+
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0802A49C.inc", void sub_0802A49C());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0802A574.inc", void sub_0802A574());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0802A60C.inc", void sub_0802A60C());
