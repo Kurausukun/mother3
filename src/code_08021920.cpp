@@ -61,6 +61,7 @@ extern "C" void debugChangeMapCoords(InputState*, DebugMenuState*);
 extern "C" void sub_0803B5C4();
 extern "C" void sub_0803A844(InputState*, DebugMenuState*);
 extern "C" void sub_0803AAAC(InputState*, TransactionState*);
+extern "C" u16 isEquipLytSet2(CharStats* stats, u16 index);
 
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08021920.inc", u32 sub_08021920(u32));
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08021930.inc", void sub_08021930());
@@ -619,7 +620,16 @@ extern "C" bool is_equippable(u16 idx) {
 }
 
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0802B9E8.inc", void sub_0802B9E8());
-extern "C" ASM_FUNC("asm/non_matching/code_08021920/getEquippedItemIndex2.inc", void getEquippedItemIndex2());
+
+extern "C" s16 getEquippedItemIndex2(CharStats* stats, u16 item) {
+    for (u16 i = 0; i < 0x10; i++) {
+        if (stats->inventory[i] == item && isEquipLytSet2(stats, i)) {
+            return i;
+        }
+    }
+
+    return -1;
+}
 
 // exact duplicate of isEquipLytSet
 extern "C" u16 isEquipLytSet2(CharStats* stats, u16 index) {
