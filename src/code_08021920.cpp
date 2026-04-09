@@ -621,7 +621,13 @@ extern "C" bool is_equippable(u16 idx) {
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0802B9E8.inc", void sub_0802B9E8());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0802BA28.inc", void sub_0802BA28());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0802BA68.inc", void sub_0802BA68());
-extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0802BA78.inc", void sub_0802BA78());
+
+// exact duplicate of setEquipLyt
+extern "C" void setEquipLyt2(CharStats* stats, u16 index, u16 val) {
+    u32 mask = stats->equip_lyt & ~(1 << index);
+    stats->equip_lyt = mask | (val << index);
+}
+
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0802BA98.inc", void sub_0802BA98());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0802BB04.inc", void sub_0802BB04());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0802BB64.inc", void sub_0802BB64());

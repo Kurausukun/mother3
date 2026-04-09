@@ -67,7 +67,7 @@ _0802A7A8:
 	beq _0802A7DC
 	adds r0, r6, #0
 	movs r2, #1
-	bl sub_0802BA78
+	bl setEquipLyt2
 	strb r5, [r7]
 _0802A7DC:
 	mov r0, r8
