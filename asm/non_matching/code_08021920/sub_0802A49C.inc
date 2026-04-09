@@ -73,7 +73,7 @@ _0802A4F0:
 	adds r0, r5, #0
 	adds r1, r2, #0
 	str r3, [sp, #0x14]
-	bl sub_0802BA68
+	bl isEquipLytSet2
 	lsls r0, r0, #0x10
 	ldr r3, [sp, #0x14]
 	cmp r0, #0

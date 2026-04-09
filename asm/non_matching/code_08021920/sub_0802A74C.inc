@@ -32,7 +32,7 @@ _0802A764:
 	beq _0802A7A8
 	adds r1, r0, #0
 	adds r0, r6, #0
-	bl sub_0802BA28
+	bl getEquippedItemIndex2
 	lsls r0, r0, #0x10
 	lsrs r1, r0, #0x10
 	asrs r0, r0, #0x10

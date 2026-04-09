@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0802BA28:
+getEquippedItemIndex2:
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	lsls r1, r1, #0x10
@@ -14,7 +14,7 @@ _0802BA32:
 	bne _0802BA52
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0802BA68
+	bl isEquipLytSet2
 	lsls r0, r0, #0x10
 	cmp r0, #0
 	beq _0802BA52
