@@ -1383,7 +1383,7 @@ _0801CDA6:\n\
 	lsrs r2, r6, #0x10\n\
 	adds r0, r4, #0\n\
 	adds r1, r5, #0\n\
-	bl giveItemByQuantity\n\
+	bl giveItemQuantity\n\
 _0801CDD0:\n\
 	movs r0, #1\n\
 	bl scriptstack_push\n\

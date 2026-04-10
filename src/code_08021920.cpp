@@ -392,7 +392,7 @@ extern "C" s16 heldItemIndex(CharStats* stats, u16 item) {
 
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0802A42C.inc", void sub_0802A42C());
 
-extern "C" void giveItemByQuantity(CharStats* stats, u16 item, u16 qty) {
+extern "C" void giveItemQuantity(CharStats* stats, u16 item, u16 qty) {
     for (u16 i = 0; i < qty; i++) {
         for (u16 j = 0; j < 0x10; j++) {
             if (stats->inventory[j] == 0) {
@@ -619,7 +619,20 @@ extern "C" bool is_equippable(u16 idx) {
     return false;
 }
 
-extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0802B9E8.inc", void sub_0802B9E8());
+extern "C" u16 getItemEquipSlot(u16 item) {
+    switch (gGoodsInfo[item].item_type) {
+    case Weapon:
+        return WEAPON;
+    case BodyArmor:
+        return HEAD;
+    case Headgear:
+        return BODY;
+    case Armgear:
+        return OTHER;
+    default:
+        return 4;  // TODO: See where this is used
+    }
+}
 
 extern "C" s16 getEquippedItemIndex2(CharStats* stats, u16 item) {
     for (u16 i = 0; i < 0x10; i++) {
