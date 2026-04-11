@@ -20,6 +20,7 @@ extern u32 gUnknown_08CDB95C[];
 extern u16 gUnknown_02015EC0[];
 extern u16 gUnknown_02015ED8[];
 extern u16 gUnknown_02015EF0[];
+extern const u8 gMapTileDataTable[0xD04E8];
 
 extern "C" s32 Div(s32, s32);
 extern "C" s32 Divide(s32 a, s32 b);
@@ -1305,7 +1306,11 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B3F8.inc", void sub_0801B3F8()
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B3FC.inc", void sub_0801B3FC());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B414.inc", void sub_0801B414());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B42C.inc", void sub_0801B42C());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B444.inc", void sub_0801B444());
+
+extern "C" const void* getCompressedMapTileData(u16 index) {
+    return Blob_GetEntry(gMapTileDataTable, index);
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B45C.inc", void sub_0801B45C());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B480.inc", void sub_0801B480());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B498.inc", void sub_0801B498());

@@ -22,7 +22,7 @@ sub_0802724C:
 	bl sub_0803B800
 	mov r8, r0
 	adds r0, r5, #0
-	bl sub_0801B444
+	bl getCompressedMapTileData
 	mov r1, r8
 	bl LZ77UnCompWram
 	lsls r4, r4, #9

@@ -2495,9 +2495,9 @@ extern "C" void sub_0805A568(void) {
     LZ77UnCompVram(Blob_GetEntry(&gUnknown_09C8DE98, 3), (void*)0x06010000);
     gSomeBlend._2CB0 = Blob_GetEntry(&gUnknown_09C8DE98, 4);
 
-    void* temp_r0_2 = Blob_GetEntry(&gUnknown_09C8DE98, 1);
-    sub_0800160C(&gSomeBlend._50, temp_r0_2, 0, 0x20);
-    sub_0800160C(&gSomeBlend._50, temp_r0_2, 0x10, 0x20);
+    void* unk = Blob_GetEntry(&gUnknown_09C8DE98, 1);
+    sub_0800160C(&gSomeBlend._50, unk, 0, 0x20);
+    sub_0800160C(&gSomeBlend._50, unk, 0x10, 0x20);
     sub_08001A14((void*)&gSomeBlend._50._2700, &gSomeBlend._2cb4, 0x400);
     sub_08001A38((void*)&gSomeBlend._50._2700, 0x400, -1);
     gSomeBlend.dispcnt = 0x140U;

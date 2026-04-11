@@ -108,7 +108,7 @@ gUnknown_08F3C344:
 gUnknown_08F9003C:
     .incbin "baserom.gba", 0x00F9003C, 0xbd990
 
-gUnknown_0904D9CC::
+gMapTileDataTable::
     .incbin "baserom.gba", 0x0104D9CC, 0xd04e8
 
 gDoorHotSpotTable::

@@ -133,7 +133,7 @@ _080107CE:
 	adds r0, r0, r3
 	str r0, [r4]
 	adds r0, r7, #0
-	bl sub_0801B444
+	bl getCompressedMapTileData
 	ldr r1, [r4]
 	bl LZ77UnCompWram
 	add sp, #4
