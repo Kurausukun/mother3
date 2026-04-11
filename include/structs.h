@@ -744,6 +744,14 @@ typedef struct RhythmInfo {  // TODO: This should probably be part of a class?
 } RhythmInfo;  // note that in the final game, "great" and "okay" hits do the same thing, so
                // effectively only the "okay" window matters
 
+typedef struct MapTileDataHeader {
+    u32 _0;
+    u8 _4;
+    u8 _5;
+    struct MapTileDataHeader* _8;
+    struct MapTileDataHeader* _c;
+} MapTileDataHeader;
+
 typedef struct MapGraphicsInfo {
     s16 tileSetIndices[12];
     s16 paletteIndex;

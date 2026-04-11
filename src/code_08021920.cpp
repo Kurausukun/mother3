@@ -1363,7 +1363,35 @@ extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0803B688.inc", void sub_
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0803B724.inc", void sub_0803B724());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0803B7CC.inc", void sub_0803B7CC());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0803B800.inc", void sub_0803B800());
-extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0803B860.inc", void sub_0803B860());
+
+extern "C" void sub_0803B860(MapTileData* tileData) {
+    MapTileDataHeader* temp_r1;
+    MapTileDataHeader* temp_r1_2;
+    MapTileDataHeader* temp_r2;
+    MapTileDataHeader* temp_r2_2;
+
+    MapTileDataHeader* header = (MapTileDataHeader*)((long)tileData - sizeof(MapTileDataHeader));
+    temp_r1 = header->_c;
+
+    if (temp_r1->_5 == 0) {
+        header->_8->_c = temp_r1;
+        header->_c->_8 = header->_8;
+        temp_r2 = header->_c;
+        temp_r2->_0 += header->_0;
+        header = temp_r2;
+    }
+
+    temp_r1_2 = header->_8;
+
+    if (temp_r1_2->_5 == 0) {
+        temp_r1_2->_8->_c = header;
+        temp_r2_2 = header->_8;
+        header->_0 += temp_r2_2->_0;
+        header->_8 = temp_r2_2->_8;
+    }
+    header->_5 = 0;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0803B8A8.inc", void sub_0803B8A8());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0803B918.inc", void sub_0803B918());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_0803BD88.inc", void sub_0803BD88());
