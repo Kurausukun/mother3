@@ -360,16 +360,16 @@ extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08040164.inc", void sub_
 extern "C" void sub_080401BC() {
     if (gUnknown_0200F920[0] == 6)
         return;
-    
+
     if (gUnknown_02004100[2] != 0) {
         gUnknown_02004100[2] = 0;
     } else {
         storeMusicPlayerVolumes();
     }
-    
+
     gUnknown_03004B00 = 0;
     snd_vsync_on();
-    
+
     switch (gUnknown_0200F920[0]) {
     case 0:
     case 1:

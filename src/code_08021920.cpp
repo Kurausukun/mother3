@@ -258,13 +258,13 @@ extern "C" void sub_08027A28() {
     u16 vol_pct_0 = getMusicPlayerVolumePercent(0);
     u16 vol_pct_1 = getMusicPlayerVolumePercent(1);
     u16 vol_pct_5 = getMusicPlayerVolumePercent(5);
-    
+
     sub_08027B84(0, vol_pct_0, ((vol_pct_0 * 0x46) / 100), 2);
     sub_08027B84(1, vol_pct_1, ((vol_pct_1 * 0x46) / 100), 2);
     if (gGame._829b == 6) {
         sub_08027B84(5, vol_pct_5, ((vol_pct_5 * 0x46) / 100), 2);
     }
-    
+
     gGame._847e = vol_pct_0;
     gGame._8480 = vol_pct_1;
     gGame._8482 = vol_pct_5;
@@ -275,7 +275,7 @@ extern "C" void sub_08027AE0() {
     u16 vol_pct_8480 = percentToMPlayVolume(gGame._8480);
     sub_08027B84(0, getMusicPlayerVolumePercent(0), vol_pct_847e, 2);
     sub_08027B84(1, getMusicPlayerVolumePercent(1), vol_pct_8480, 2);
-    
+
     if (gGame._829b == 6) {
         u16 vol_pct_8482 = percentToMPlayVolume(gGame._8482);
         musicPlayerInitAndUpdateVolume(5, vol_pct_8482);
@@ -284,15 +284,15 @@ extern "C" void sub_08027AE0() {
 }
 
 extern "C" void sub_08027B84(u16 arg0, u16 arg1, u16 arg2, u16 arg3) {
-    if (arg0 > 9) 
+    if (arg0 > 9)
         return;
     if (arg3 <= 1) {
         musicPlayerInitAndUpdateVolume(arg0, arg2);
         return;
     }
-    
-    SoundUnkInfo* unk = &gSomeBlend._567c[arg0]; // gSoundUnkInfos
-    
+
+    SoundUnkInfo* unk = &gSomeBlend._567c[arg0];  // gSoundUnkInfos
+
     unk->_8_1 = 1;
     unk->_4 = arg1;
     unk->_6 = arg2;
@@ -301,15 +301,17 @@ extern "C" void sub_08027B84(u16 arg0, u16 arg1, u16 arg2, u16 arg3) {
 }
 
 extern "C" void sub_08027BD0(u16 arg0, s16 arg1, s16 arg2, u16 arg3) {
-    if (arg0 > 9) { return; }
-    
+    if (arg0 > 9) {
+        return;
+    }
+
     if (arg3 <= 1) {
         setMPlayPanpotClamped(arg0, arg2);
         return;
     }
-    
+
     SoundUnkInfo* unk = &gSomeBlend._567c[10 + arg0];
-    
+
     unk->_8_1 = 1;
     unk->_4 = arg1;
     unk->_6 = arg2;
@@ -330,33 +332,33 @@ extern "C" void sub_08027C20(u16 arg0, u16 arg1, u16 arg2) {
 extern "C" void sub_08027C40(SoundUnkInfo* unk_array) {
     SoundUnkInfo* temp2;
     u8 tmp;
-    
-    for (u16 i = 0; i <= 9; i++){
+
+    for (u16 i = 0; i <= 9; i++) {
         temp2 = &unk_array[i];
         tmp = temp2->_8_1;
-        
-        if (tmp != 0){
+
+        if (tmp != 0) {
             sub_08027C98(temp2);
         }
-        
+
         // if (unk_array[i + 10]._8_1 != 0) {
-        if (*(u8*)((u8*)temp2 + 0x80) << 0x1f != 0){ // FAKEMATCH
+        if (*(u8*)((u8*)temp2 + 0x80) << 0x1f != 0) {  // FAKEMATCH
             sub_08027CD8(&unk_array[i + 10]);
         }
     }
 
     // if (unk_array[20]._8_1 != 0) {
-    if (*(u8*)((u8*)&unk_array[0] + 0xf8) & 1) { // FAKEMATCH
+    if (*(u8*)((u8*)&unk_array[0] + 0xf8) & 1) {  // FAKEMATCH
         sub_08027D1C(&unk_array[20]);
     }
 }
 
 extern "C" void sub_08027C98(SoundUnkInfo* unk) {
     u16 result = lerp(unk->_4, unk->_6, unk->_2, unk->_0);
-    
+
     musicPlayerUpdateVolume(unk->_8_2, result);
     unk->_2++;
-    
+
     if (unk->_2 > unk->_0) {
         unk->_8_1 = 0;
     }
@@ -364,10 +366,10 @@ extern "C" void sub_08027C98(SoundUnkInfo* unk) {
 
 extern "C" void sub_08027CD8(SoundUnkInfo* unk) {
     u16 result = lerp2((s16)unk->_4, (s16)unk->_6, unk->_2, unk->_0);
-    
+
     setMPlayPanpotClamped(unk->_8_2, result);
     unk->_2++;
-    
+
     if (unk->_2 > unk->_0) {
         unk->_8_1 = 0;
     }
@@ -375,9 +377,9 @@ extern "C" void sub_08027CD8(SoundUnkInfo* unk) {
 
 void sub_08027D1C(SoundUnkInfo* unk) {
     s16 track_room, track_mplay1;
-    
+
     unk->_6++;
-    
+
     if (unk->_2 == unk->_6) {
         play_sound(unk->_0);
     }
@@ -385,14 +387,14 @@ void sub_08027D1C(SoundUnkInfo* unk) {
         unk->_8_1 = 0;
         track_room = getMusicIDForRoom(gGame.cur_room);
         track_mplay1 = getCurrentTrack(1);
-        
+
         startSong(SONG_NONE_8B);
-        
+
         if (track_mplay1 != -1) {
             startSong(track_mplay1);
             musicPlayerInitAndUpdateVolume(1, 0);
         }
-        
+
         musicPlayerFadeIn_bgm(0, 1);
         sub_08027B84(1, 0, percentToMPlayVolume(gSave._582[track_room]), 4);
     }
