@@ -20,6 +20,7 @@ extern u32 gUnknown_08CDB95C[];
 extern u16 gUnknown_02015EC0[];
 extern u16 gUnknown_02015ED8[];
 extern u16 gUnknown_02015EF0[];
+extern const DoorDestinationInfo gDoorDestinationTable[];
 
 extern "C" s32 Div(s32, s32);
 extern "C" s32 Divide(s32 a, s32 b);
@@ -47,6 +48,12 @@ extern "C" void sub_08036BA4(Object*);
 extern "C" void sub_0800BE04(Object*);
 extern "C" void sub_080052E4(s32);
 extern "C" void sub_0802610C(s32);
+extern "C" MapGraphicsInfo* getMapGraphicsInfo(u16);
+extern "C" DoorDestinationInfo* getDoorDestinationInfo(u16);
+extern "C" void sub_0805CD30(u16, u16, u8);
+extern "C" u32 sub_0805CDD8(u16, u8);
+extern "C" u16 get_flag(u16);
+extern "C" void incrementSessionPlaytime();
 
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080012BC.inc", void sub_080012BC());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001378.inc", void sub_08001378());
@@ -363,8 +370,28 @@ extern "C" void breakIntoDigits(u16* digitBuffer, u32 value, u16 modifier, u16 n
 }
 
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0800268C.inc", void sub_0800268C());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_080026C0.inc", void sub_080026C0());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_080026F0.inc", void sub_080026F0());
+
+extern "C" void incrementSavePlaytime() {
+    if (gSave.playtime < SECONDS_TO_FRAMES(359999)) {
+        gSave.playtime++;
+    } else {
+        gSave.playtime = SECONDS_TO_FRAMES(359998);
+    }
+    incrementSessionPlaytime();
+}
+
+extern "C" void incrementSessionPlaytime() {
+    if (get_flag(0x315)) {
+        return;
+    }
+
+    if (gSave.sessionPlaytime < LEDERS_BELL_THRESHOLD) {
+        gSave.sessionPlaytime++;
+    } else {
+        gSave.sessionPlaytime = LEDERS_BELL_THRESHOLD;
+    }
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0800272C.inc", void sub_0800272C());
 
 extern "C" u32 sub_08002760(u16 r0, u16 r1) {
@@ -479,7 +506,7 @@ extern "C" void sub_08002950(u16 idx, u16 value) {
     gSave.mIQ0[idx * 2 + 1] = (value >> 8) & 0xFF;
 }
 
-extern "C" u32 get_flag(u16 idx) {
+extern "C" u16 get_flag(u16 idx) {
     return (gSave.event_flags[idx / 8] >> (idx % 8)) & 1;
 }
 
@@ -504,9 +531,6 @@ extern "C" u32 get_giftbox_flag(u16 idx) {
     return (gSave.giftbox_flags[idx / 8] >> (idx % 8)) & 1;
 }
 
-extern "C" void sub_0805CD30(u16, u16, u8);
-extern "C" u32 sub_0805CDD8(u16, u8);
-
 extern "C" void sub_08002A58(u16 r0, u16 r1, vu16 r2) {
     if (r2) {
         sub_0805CD30(r0, 1, r1);
@@ -523,7 +547,6 @@ extern "C" u8 sub_08002A90(u16 r0, vu16 r1) {
     }
 }
 
-// extern "C" ASM_FUNC("asm/non_matching/rom/sub_08002A90.inc", void sub_08002A90());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08002ABC.inc", void sub_08002ABC());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08002AF4.inc", void sub_08002AF4());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08002B1C.inc", void sub_08002B1C());
@@ -1288,11 +1311,39 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801AE58.inc", void sub_0801AE58()
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801AF00.inc", void sub_0801AF00());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801AFA4.inc", void sub_0801AFA4());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B040.inc", void sub_0801B040());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B0C4.inc", void sub_0801B0C4());
+
+extern "C" DoorDestinationInfo* getFirstDoorOnMap(u16 mapID) {
+    DoorDestinationInfo* info = getDoorDestinationInfo(0);
+
+    for (u16 i = 0; i < 1500; i++, info++) {
+        if (info->mapID == mapID) {
+            return info;
+        }
+    }
+
+    return NULL;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B0F8.inc", void sub_0801B0F8());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B144.inc", void sub_0801B144());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B1BC.inc", void sub_0801B1BC());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B2D4.inc", void sub_0801B2D4());
+
+extern "C" u16 isMapGraphicsValid(u16 mapID) {
+    MapGraphicsInfo* graphicsInfo = getMapGraphicsInfo(mapID);
+
+    for (u16 i = 0; i < 12; i++) {
+        if (graphicsInfo->tileSetIndices[i] == -1) {
+            return 0;
+        }
+    }
+
+    if (graphicsInfo->paletteIndex == -1) {
+        return 0;
+    }
+
+    return 1;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B314.inc", void sub_0801B314());
 
 extern "C" u8 getMusicIDForRoom(u16 roomIndex) {
@@ -1300,7 +1351,7 @@ extern "C" u8 getMusicIDForRoom(u16 roomIndex) {
 }
 
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B3B4.inc", void sub_0801B3B4());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B3D8.inc", void sub_0801B3D8());
+extern "C" ASM_FUNC("asm/non_matching/rom/getMapGraphicsInfo.inc", MapGraphicsInfo* getMapGraphicsInfo(u16));
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B3F8.inc", void sub_0801B3F8());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B3FC.inc", void sub_0801B3FC());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B414.inc", void sub_0801B414());
@@ -1310,7 +1361,11 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B45C.inc", void sub_0801B45C()
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B480.inc", void sub_0801B480());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B498.inc", void sub_0801B498());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B4C4.inc", void sub_0801B4C4());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B4E4.inc", void sub_0801B4E4());
+
+extern "C" DoorDestinationInfo* getDoorDestinationInfo(u16 index) {
+    return &((DoorDestinationInfo*)Blob_GetEntry(&gDoorDestinationTable, 0))[index];
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B504.inc", void sub_0801B504());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B520.inc", void sub_0801B520());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B53C.inc", void sub_0801B53C());

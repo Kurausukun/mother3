@@ -353,8 +353,8 @@ gScriptCmdTable:
            .4byte cmd_cfg_member+1
            .4byte cmd_cfg_member_item+1
            .4byte cmd_get_hp_pp+1
-           .4byte cmd_2E+1
-           .4byte cmd_2F+1
+           .4byte cmd_peek_session_playtime+1
+           .4byte cmd_push_session_playtime+1
            .4byte cmd_set_ailment+1
            .4byte cmd_31+1
            .4byte cmd_disp_msg+1

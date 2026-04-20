@@ -274,7 +274,7 @@ _0800F7EC:
 	lsrs r1, r0, #0x10
 _0800F802:
 	adds r0, r1, #0
-	bl sub_0801B4E4
+	bl getDoorDestinationInfo
 	adds r6, r0, #0
 	adds r0, r5, #0
 	bl sub_08012590

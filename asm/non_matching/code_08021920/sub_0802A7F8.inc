@@ -50,7 +50,7 @@ _0802A844:
 	beq _0802A888
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0802BA68
+	bl isEquipLytSet2
 	lsls r0, r0, #0x10
 	cmp r0, #0
 	beq _0802A888

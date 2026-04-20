@@ -1095,7 +1095,7 @@ u16 cmd_27(s32* sp) {
     u16 idx;
 
     idx = scriptstack_peek(sp, 0);
-    val = sub_0802B954(idx);
+    val = getPartyMemberByHeldItem(idx);
     scriptstack_push(val);
     return 0;
 }
@@ -1383,7 +1383,7 @@ _0801CDA6:\n\
 	lsrs r2, r6, #0x10\n\
 	adds r0, r4, #0\n\
 	adds r1, r5, #0\n\
-	bl sub_0802A454\n\
+	bl giveItemQuantity\n\
 _0801CDD0:\n\
 	movs r0, #1\n\
 	bl scriptstack_push\n\
@@ -1424,13 +1424,13 @@ u16 cmd_get_hp_pp(s32* sp) {
     return 0;
 }
 
-u16 cmd_2E(s32* sp) {
-    gSave._744 = scriptstack_peek(sp, 0);
+u16 cmd_peek_session_playtime(s32* sp) {
+    gSave.sessionPlaytime = scriptstack_peek(sp, 0);
     return 0;
 }
 
-u16 cmd_2F(s32* sp) {
-    scriptstack_push(gSave._744);
+u16 cmd_push_session_playtime(s32* sp) {
+    scriptstack_push(gSave.sessionPlaytime);
     return 0;
 }
 
@@ -2453,7 +2453,7 @@ u16 cmd_3D(s32* sp) {
 	lsls r0, r0, #0x10\n\
 	lsrs r6, r0, #0x10\n\
 	adds r0, r6, #0\n\
-	bl sub_0801B4E4\n\
+	bl getDoorDestinationInfo\n\
 	adds r4, r0, #0\n\
 	cmp r4, #0\n\
 	beq _0801DDA8\n\
@@ -3082,8 +3082,8 @@ _0801E3CC: .4byte 0x000121BB\n\
 u16 cmd_4B(s32* sp) {
     scriptstack_set(sp, 3, gGame.last_room);
     scriptstack_set(sp, 2, gGame._5982);
-    scriptstack_set(sp, 1, gGame._5984);
-    scriptstack_set(sp, 0, gGame._5986);
+    scriptstack_set(sp, 1, gGame._5984.x);
+    scriptstack_set(sp, 0, gGame._5984.y);
     return 0;
 }
 
@@ -4494,11 +4494,11 @@ u16 cmd_C5(s32* sp) {
             obj2->_92[0] = 0x3c;
             break;
         }
-        gSomeBlend._121b8_3 = 1;
+        gSomeBlend._121b8_8 = 1;
         gGame._9d08 = 0x6010000;
         gGame._9d0c = 0;
         sub_08030180();
-        gSomeBlend._121b8_3 = 0;
+        gSomeBlend._121b8_8 = 0;
         switch (d) {
         case 1:
         case 2:
