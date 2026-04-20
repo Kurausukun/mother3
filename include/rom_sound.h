@@ -28,7 +28,7 @@ void musicPlayerPause_bgm(u16);
 void musicPlayerContinue_bgm(u16);
 void musicPlayerUpdateVolume(u16, u16);
 void musicPlayerInitAndUpdateVolume(u16, u16);
-void setMPlayPanpotClamped(u16, s16);
+void musicPlayerSetPanpotClamped(u16, s16);
 s16 getCurrentTrack(u16);
 s16 getPrevTrack(u16);
 u16 getMusicPlayerVolumePercent(u16);

@@ -862,7 +862,7 @@ extern "C" void musicPlayerInitAndUpdateVolume(u16 uidx, u16 vol) {
     gMPlayVolumeTable[mpIndex] = vol;
 }
 
-extern "C" void setMPlayPanpotClamped(u16 mpIndex, s16 pan) {
+extern "C" void musicPlayerSetPanpotClamped(u16 mpIndex, s16 pan) {
     MusicPlayerInfo* mpInfo = getMusicPlayer_sfx(mpIndex);
     if (!mpInfo)
         return;

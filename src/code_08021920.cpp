@@ -306,7 +306,7 @@ extern "C" void sub_08027BD0(u16 arg0, s16 arg1, s16 arg2, u16 arg3) {
     }
 
     if (arg3 <= 1) {
-        setMPlayPanpotClamped(arg0, arg2);
+        musicPlayerSetPanpotClamped(arg0, arg2);
         return;
     }
 
@@ -367,7 +367,7 @@ extern "C" void sub_08027C98(SoundUnkInfo* unk) {
 extern "C" void sub_08027CD8(SoundUnkInfo* unk) {
     u16 result = lerp2((s16)unk->_4, (s16)unk->_6, unk->_2, unk->_0);
 
-    setMPlayPanpotClamped(unk->_8_2, result);
+    musicPlayerSetPanpotClamped(unk->_8_2, result);
     unk->_2++;
 
     if (unk->_2 > unk->_0) {
