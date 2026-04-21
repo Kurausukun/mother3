@@ -7,6 +7,7 @@
 #include "global.h"
 #include "m4a.h"
 #include "overworld/script.h"
+#include "rom_sound.h"
 #include "structs.h"
 
 extern const char _binary_build_mother3_assets_misctext_bin_start;
@@ -54,11 +55,6 @@ extern "C" void sub_08036BA4(Object*);
 extern "C" void sub_0800BE04(Object*);
 extern "C" void sub_080052E4(s32);
 extern "C" void sub_0802610C(s32);
-extern "C" s16 getMusicPlayerIndex(u16);
-extern "C" MusicPlayerInfo* getMusicPlayer_bgm(u16);
-extern "C" u16 MPlayVolumeToPercent(u16);
-extern "C" u8 getMusicIDForRoom(u16);
-extern "C" void sub_08027B84(u16, u16, u16, u16);
 
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080012BC.inc", void sub_080012BC());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001378.inc", void sub_08001378());
