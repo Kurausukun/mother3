@@ -1,11 +1,11 @@
 // Auto-generated source file
+#include "audio.h"
 #include "enums.h"
 #include "functions.h"
 #include "gba/io_reg.h"
 #include "gba/syscall.h"
 #include "global.h"
 #include "overworld/script.h"
-#include "rom_sound.h"
 #include "structs.h"
 
 extern StatMeter gHPStatMeters[5];

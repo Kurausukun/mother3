@@ -7,7 +7,7 @@
 #include "global.h"
 #include "m4a.h"
 #include "overworld/script.h"
-#include "rom_sound.h"
+#include "audio.h"
 #include "structs.h"
 
 extern const char _binary_build_mother3_assets_misctext_bin_start;

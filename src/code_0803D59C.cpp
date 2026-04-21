@@ -1,4 +1,5 @@
 // Auto-generated source file
+#include "audio.h"
 #include "battle.h"
 #include "battle/guest.h"
 #include "battle/irc.h"
@@ -7,7 +8,6 @@
 #include "functions.h"
 #include "gba/gba.h"
 #include "global.h"
-#include "rom_sound.h"
 #include "structs.h"
 
 typedef struct Struct_02015E00 {

@@ -1,5 +1,5 @@
-#ifndef ROM_SOUND_H
-#define ROM_SOUND_H
+#ifndef AUDIO_H
+#define AUDIO_H
 
 #include "gba/m4a_internal.h"
 #include "global.h"

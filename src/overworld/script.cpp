@@ -1,10 +1,10 @@
 #include "overworld/script.h"
+#include "audio.h"
 #include "battle.h"
 #include "battle/goods.h"
 #include "battle/guest.h"
 #include "enums.h"
 #include "functions.h"
-#include "rom_sound.h"
 
 extern "C" {
 
@@ -4768,26 +4768,26 @@ extern "C" s32 cmd_play_sound_ext(s32* sp) {
     s16 sound = scriptstack_peek(sp, 1);
     s16 vol = scriptstack_peek(sp, 0);
     s16 state1 = gGame.state_1;
-    
+
     if (state1 <= 3) {
-        s32 cmp = 2; // FAKEMATCH
+        s32 cmp = 2;  // FAKEMATCH
         if (state1 >= cmp) {
             gGame._847a = sound;
             gGame._847c = vol;
-    
+
             if (get_flag(0x410) != 0) {
                 startSong(sound);
             }
             return 0;
         }
-    } 
-    
+    }
+
     if (sound == -1) {
         setup_overworld_music(gGame.cur_room, vol);
     } else {
         if ((mpIndex = getMusicPlayerIndex(sound)) != -1) {
             startSong(sound);
-            
+
             if (vol != -1) {
                 musicPlayerInitAndUpdateVolume(mpIndex, percentToMPlayVolume(vol));
             }
@@ -4801,7 +4801,7 @@ extern "C" s32 cmd_play_sound_ext(s32* sp) {
             }
         }
     }
-    
+
     return 0;
 }
 
@@ -4809,13 +4809,13 @@ extern "C" s32 cmd_play_sound(s32* sp) {
     s16 mpIndex;
     u16 sound = scriptstack_peek(sp, 1);
     s16 vol_percent = scriptstack_peek(sp, 0);
-    
+
     play_sound(sound);
 
     if (vol_percent == -1)
         return 0;
 
-    if ((mpIndex = getMusicPlayerIndex(sound)) != -1){
+    if ((mpIndex = getMusicPlayerIndex(sound)) != -1) {
         musicPlayerInitAndUpdateVolume(mpIndex, percentToMPlayVolume(vol_percent));
     }
 
@@ -4826,13 +4826,13 @@ extern "C" s32 cmd_fade_bgm(s32* sp) {
     u16 fade_type = scriptstack_peek(sp, 2);
     u16 mpIndex = scriptstack_peek(sp, 1);
     u16 speed = scriptstack_peek(sp, 0);
-    
+
     if (fade_type == 0) {
         musicPlayerFadeInIfPaused_bgm(mpIndex, speed);
     } else {
         musicPlayerFadeOutTemp_bgm(mpIndex, speed);
     }
-    
+
     return 0;
 }
 
@@ -4840,32 +4840,32 @@ extern "C" s32 cmd_fade_sfx(s32* sp) {
     u16 fade_type = scriptstack_peek(sp, 2);
     u16 mpIndex = scriptstack_peek(sp, 1);
     u16 speed = scriptstack_peek(sp, 0);
-    
+
     if (fade_type == 0) {
         musicPlayerFadeIn_sfx(mpIndex, speed);
     } else {
         musicPlayerFadeOut_sfx(mpIndex, speed);
     }
-    
+
     return 0;
 }
 
 extern "C" s32 cmd_stop_bgm(s32* sp) {
     s16 mpIndex = scriptstack_peek(sp, 0);
-    
+
     if (mpIndex == -1) {
         musicPlayerStop_bgm(0);
         musicPlayerStop_bgm(1);
     } else {
         musicPlayerStop_bgm(mpIndex);
     }
-    
+
     return 0;
 }
 
 extern "C" s32 cmd_stop_sfx(s32* sp) {
     s16 mpIndex = scriptstack_peek(sp, 0);
-    
+
     if (mpIndex == -1) {
         musicPlayerStop_sfx(3);
         musicPlayerStop_sfx(4);
@@ -4873,7 +4873,7 @@ extern "C" s32 cmd_stop_sfx(s32* sp) {
     } else {
         musicPlayerStop_sfx(mpIndex);
     }
-    
+
     return 0;
 }
 
@@ -4882,7 +4882,7 @@ extern "C" s32 cmd_88(s32* arg0) {
     u16 b = scriptstack_peek(arg0, 2);
     u16 c = scriptstack_peek(arg0, 1);
     u16 d = scriptstack_peek(arg0, 0);
-    
+
     sub_08027BD0(a, b, c, d);
     return 0;
 }
@@ -4965,7 +4965,7 @@ extern "C" s32 cmd_E1(s32* sp) {
 extern "C" s32 cmd_play_sfx(s32* sp) {
     u16 unk;
 
-    u16 sfx = scriptstack_peek(sp, 0); //r0 
+    u16 sfx = scriptstack_peek(sp, 0);  // r0
     switch (sfx) {
     case 0:
         sfx = 0x6D;
@@ -5018,7 +5018,7 @@ extern "C" s32 cmd_play_sfx(s32* sp) {
     sub_08027C20(sfx, 0x50, unk + 0x50);
     sub_08027B84(0, getMusicPlayerVolumePercent(0), 0, 0x20);
     sub_08027B84(1, getMusicPlayerVolumePercent(1), 0, 0x20);
-    
+
     return 0;
 }
 
