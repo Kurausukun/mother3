@@ -14,7 +14,7 @@ extern "C" void sub_0806B07C();
 extern "C" void sub_0806A9B0();
 extern "C" void destroy__10IrcManager();
 extern "C" u16 get_progression_flag(u32);
-extern "C" void sub_080026C0();
+extern "C" void incrementSavePlaytime();
 extern "C" KeyPad* KeyPadInstance();
 extern "C" void DoReset();
 extern "C" void randomMT();
@@ -211,7 +211,7 @@ int System::sub_0805D6F8(int arg1) {
 
 void system_callback(System* system) {
     SystemAllocator::instance()->defragment();
-    sub_080026C0();
+    incrementSavePlaytime();
     system->checkResetKeys();
 }
 

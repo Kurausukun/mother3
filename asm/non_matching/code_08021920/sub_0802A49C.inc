@@ -24,7 +24,7 @@ sub_0802A49C:
 	cmp r0, #0
 	beq _0802A4D8
 	adds r0, r6, #0
-	bl sub_0802B9E8
+	bl getItemEquipSlot
 	lsls r0, r0, #0x10
 	lsrs r3, r0, #0x10
 	b _0802A4DA
@@ -73,7 +73,7 @@ _0802A4F0:
 	adds r0, r5, #0
 	adds r1, r2, #0
 	str r3, [sp, #0x14]
-	bl sub_0802BA68
+	bl isEquipLytSet2
 	lsls r0, r0, #0x10
 	ldr r3, [sp, #0x14]
 	cmp r0, #0

@@ -49,7 +49,7 @@ _0802A6AC:
 	adds r0, r4, #0
 	movs r1, #0
 	movs r2, #1
-	bl sub_0802BA78
+	bl setEquipLyt2
 	movs r5, #1
 _0802A6D4:
 	ldrh r2, [r6, #2]
@@ -66,7 +66,7 @@ _0802A6D4:
 	adds r0, r4, #0
 	adds r1, r5, #0
 	movs r2, #1
-	bl sub_0802BA78
+	bl setEquipLyt2
 	adds r0, r5, #1
 	lsls r0, r0, #0x10
 	lsrs r5, r0, #0x10
@@ -85,7 +85,7 @@ _0802A6FA:
 	adds r0, r4, #0
 	adds r1, r5, #0
 	movs r2, #1
-	bl sub_0802BA78
+	bl setEquipLyt2
 	adds r0, r5, #1
 	lsls r0, r0, #0x10
 	lsrs r5, r0, #0x10
@@ -104,7 +104,7 @@ _0802A720:
 	adds r0, r4, #0
 	adds r1, r5, #0
 	movs r2, #1
-	bl sub_0802BA78
+	bl setEquipLyt2
 _0802A740:
 	pop {r3}
 	mov r8, r3

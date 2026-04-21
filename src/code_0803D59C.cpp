@@ -1722,16 +1722,16 @@ extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_080524EC.inc", void sub_
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805255C.inc", void sub_0805255C());
 
 extern "C" void condenseInventory(CharStats* stats) {
-    u8 tempInv[0x10];
-    u16 tempTimers[0x10];
+    u8 tempInv[16];
+    u16 tempTimers[16];
     u16 i;
 
-    for (i = 0; i < 0x10; i++) {
+    for (i = 0; i < 16; i++) {
         tempInv[i] = 0;
     }
 
     u16 numItems = 0;
-    for (i = 0; i < 0x10; i++) {
+    for (i = 0; i < 16; i++) {
         if (stats->inventory[i] == ItemEmpty) {
             continue;
         }
@@ -1741,7 +1741,7 @@ extern "C" void condenseInventory(CharStats* stats) {
         numItems++;
     }
 
-    for (i = 0; i < 0x10; i++) {
+    for (i = 0; i < 16; i++) {
         stats->inventory[i] = tempInv[i];
         stats->item_timers[i] = tempTimers[i];
     }

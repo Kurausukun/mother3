@@ -2,9 +2,19 @@
 #define OVERWORLD_SCRIPT_H
 
 #include "global.h"
+#include "structs.h"
 
 #define _22_5_DEGREES 0x1000
 #define _45_DEGREES 0x2000
+
+#define FRAMES_PER_SECOND 60
+#define FRAMES_PER_MINUTE (FRAMES_PER_SECOND * 60)
+#define FRAMES_PER_HOUR (FRAMES_PER_MINUTE * 60)
+
+#define SECONDS_TO_FRAMES(seconds) (seconds * FRAMES_PER_SECOND)
+#define HOURS_TO_FRAMES(hours) (hours * FRAMES_PER_HOUR)
+
+#define LEDERS_BELL_THRESHOLD (HOURS_TO_FRAMES(3))
 
 extern u16 (*gScriptCmdTable[])(s32* sp);
 
@@ -42,11 +52,21 @@ struct Game {
     u8 _1_80 : 1;
     u32 _2_1 : 7;
     u32 _2_40 : 4;
-    u32 _3_8 : 1;
+    u32 gbPlayerModeEnabled : 1;
     u32 _3_10 : 1;
     u32 _3_20 : 3;
     u32 _2_4 : 16;
-    u16 _6[4];
+    u16 _6;
+    u8 collisionEnabled : 1;
+    u8 _8_2 : 1;
+    u8 encountersEnabled : 1;
+    u8 obstacleEvasionEnabled : 1;
+    u8 displayProcessLoadEnabled : 1;
+    u8 gammaCorrectionEnabled : 1;
+    u8 _8_40 : 1;
+    u8 _8_80 : 1;
+    u8 _9;
+    u16 _a[2];
     u8 _e;
     u8 _f;
     u8 _10;
@@ -60,12 +80,10 @@ struct Game {
     u8 _5962[0x5978 - 0x5962];
     u16 next_room;
     u16 _597a;
-    u16 _597c;
-    u16 _597e;
+    Position room_entered_from;
     u16 last_room;
     s16 _5982;
-    s16 _5984;
-    s16 _5986;
+    MovementVector _5984;
     u8 _5988[0x598C - 0x5988];
     u8 _598c_1 : 1;
     u8 _598c_2 : 1;

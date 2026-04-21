@@ -61,7 +61,7 @@ _08005C8E:
 	ldrh r0, [r2, #8]
 	strh r1, [r2, #8]
 _08005CC0:
-	bl sub_080026C0
+	bl incrementSavePlaytime
 	bl sub_08003024
 	bl sub_08019E40
 	bl sub_08005D54
