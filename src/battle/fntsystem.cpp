@@ -8,8 +8,6 @@ extern ClockData gUnknown_080FFD3C;
 extern "C" void __11Unk08088018(void*);
 extern "C" void LZ77UnCompWram(void*, void*);
 
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D2CC.inc", void sub_0806D2CC());
-
 struct Unk1 {
     u32 _0;
     u16 _4;
@@ -328,8 +326,8 @@ extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E480.inc", void sub_0806
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E488.inc", void sub_0806E488());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E4B8.inc", void sub_0806E4B8());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E4C4.inc", void sub_0806E4C4());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E500.inc", void sub_0806E500());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E50C.inc", void sub_0806E50C());
+extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E500.inc", void getRTTI_9FntSystem());
+extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E50C.inc", void __9FntSystem());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E618.inc", void sub_0806E618());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E640.inc", void sub_0806E640());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E6D8.inc", void sub_0806E6D8());

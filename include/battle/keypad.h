@@ -2,12 +2,13 @@
 #define BATTLE_KEYPAD_H
 
 #include "base.h"
+#include "singleton.h"
 
 struct KeyPad : Base {
     KeyPad();
     virtual ~KeyPad();
 
-    virtual void* manager();
+    virtual void* getRTTI();
 
     void set_20(u32 val);
     void set_22(u32 val);
@@ -23,87 +24,129 @@ struct KeyPad : Base {
     u16 new_keys;
     u16 long_keys;
 };
+SINGLETON_DECL(KeyPad);
 
 struct UpKeyPress : Unk {
     inline UpKeyPress() {}
-    inline virtual ~UpKeyPress() {}
+    virtual ~UpKeyPress();
+    virtual void* getRTTI();
 };
 struct DownKeyPress : Unk {
     inline DownKeyPress() {}
-    inline virtual ~DownKeyPress() {}
+    virtual ~DownKeyPress();
+    virtual void* getRTTI();
 };
 struct LeftKeyPress : Unk {
     inline LeftKeyPress() {}
-    inline virtual ~LeftKeyPress() {}
+    virtual ~LeftKeyPress();
+    virtual void* getRTTI();
 };
 struct RightKeyPress : Unk {
     inline RightKeyPress() {}
-    inline virtual ~RightKeyPress() {}
+    virtual ~RightKeyPress();
+    virtual void* getRTTI();
 };
 struct AKeyPress : Unk {
     inline AKeyPress() {}
-    inline virtual ~AKeyPress() {}
+    virtual ~AKeyPress();
+    virtual void* getRTTI();
 };
 struct BKeyPress : Unk {
     inline BKeyPress() {}
-    inline virtual ~BKeyPress() {}
+    virtual ~BKeyPress();
+    virtual void* getRTTI();
 };
 struct RKeyPress : Unk {
     inline RKeyPress() {}
-    inline virtual ~RKeyPress() {}
+    virtual ~RKeyPress();
+    virtual void* getRTTI();
 };
 struct LKeyPress : Unk {
     inline LKeyPress() {}
-    inline virtual ~LKeyPress() {}
+    virtual ~LKeyPress();
+    virtual void* getRTTI();
 };
 struct StartKeyPress : Unk {
     inline StartKeyPress() {}
-    inline virtual ~StartKeyPress() {}
+    virtual ~StartKeyPress();
+    virtual void* getRTTI();
 };
 struct SelectKeyPress : Unk {
     inline SelectKeyPress() {}
-    inline virtual ~SelectKeyPress() {}
+    virtual ~SelectKeyPress();
+    virtual void* getRTTI();
 };
 
 struct UpKeyLongPress : Unk {
     inline UpKeyLongPress() {}
-    inline virtual ~UpKeyLongPress() {}
+    virtual ~UpKeyLongPress();
+    virtual void* getRTTI();
 };
 struct DownKeyLongPress : Unk {
     inline DownKeyLongPress() {}
-    inline virtual ~DownKeyLongPress() {}
+    virtual ~DownKeyLongPress();
+    virtual void* getRTTI();
 };
 struct LeftKeyLongPress : Unk {
     inline LeftKeyLongPress() {}
-    inline virtual ~LeftKeyLongPress() {}
+    virtual ~LeftKeyLongPress();
+    virtual void* getRTTI();
 };
 struct RightKeyLongPress : Unk {
     inline RightKeyLongPress() {}
-    inline virtual ~RightKeyLongPress() {}
+    virtual ~RightKeyLongPress();
+    virtual void* getRTTI();
 };
 struct AKeyLongPress : Unk {
     inline AKeyLongPress() {}
-    inline virtual ~AKeyLongPress() {}
+    virtual ~AKeyLongPress();
+    virtual void* getRTTI();
 };
 struct BKeyLongPress : Unk {
     inline BKeyLongPress() {}
-    inline virtual ~BKeyLongPress() {}
+    virtual ~BKeyLongPress();
+    virtual void* getRTTI();
 };
 struct RKeyLongPress : Unk {
     inline RKeyLongPress() {}
-    inline virtual ~RKeyLongPress() {}
+    virtual ~RKeyLongPress();
+    virtual void* getRTTI();
 };
 struct LKeyLongPress : Unk {
     inline LKeyLongPress() {}
-    inline virtual ~LKeyLongPress() {}
+    virtual ~LKeyLongPress();
+    virtual void* getRTTI();
 };
 struct StartKeyLongPress : Unk {
     inline StartKeyLongPress() {}
-    inline virtual ~StartKeyLongPress() {}
+    virtual ~StartKeyLongPress();
+    virtual void* getRTTI();
 };
 struct SelectKeyLongPress : Unk {
     inline SelectKeyLongPress() {}
-    inline virtual ~SelectKeyLongPress() {}
+    virtual ~SelectKeyLongPress();
+    virtual void* getRTTI();
 };
+
+RTTI(UpKeyPress);
+RTTI(DownKeyPress);
+RTTI(LeftKeyPress);
+RTTI(RightKeyPress);
+RTTI(AKeyPress);
+RTTI(BKeyPress);
+RTTI(RKeyPress);
+RTTI(LKeyPress);
+RTTI(StartKeyPress);
+RTTI(SelectKeyPress);
+RTTI(UpKeyLongPress);
+RTTI(DownKeyLongPress);
+RTTI(LeftKeyLongPress);
+RTTI(RightKeyLongPress);
+RTTI(AKeyLongPress);
+RTTI(BKeyLongPress);
+RTTI(RKeyLongPress);
+RTTI(LKeyLongPress);
+RTTI(StartKeyLongPress);
+RTTI(SelectKeyLongPress);
 
 #endif  // BATTLE_KEYPAD_H
