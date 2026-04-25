@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0806E500:
+getRTTI_9FntSystem:
 	push {lr}
 	bl sub_0806E480
 	pop {r1}

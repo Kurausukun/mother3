@@ -1,7 +1,7 @@
 	.syntax unified
 sub_0806625C:
 	push {lr}
-	bl KeyPadInstance
+	bl get__13KeyPadManager
 	bl getNewKeys__6KeyPad
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10

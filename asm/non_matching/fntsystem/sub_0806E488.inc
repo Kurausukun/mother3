@@ -10,7 +10,7 @@ sub_0806E488:
 	ldr r4, _0806E4B4
 	movs r0, #0xa4
 	bl __builtin_new
-	bl sub_0806E50C
+	bl __9FntSystem
 	str r0, [r4]
 _0806E4A4:
 	ldr r0, _0806E4B4

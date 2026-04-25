@@ -50,8 +50,8 @@ extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FB70.inc", void sub_0806
 extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FB78.inc", void sub_0806FB78());
 extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FBA8.inc", void sub_0806FBA8());
 extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FBB4.inc", void sub_0806FBB4());
-extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FBF0.inc", void sub_0806FBF0());
-extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FBFC.inc", void sub_0806FBFC());
+extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FBF0.inc", void getRTTI_9EfcSystem());
+extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FBFC.inc", void __9EfcSystem());
 extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FC28.inc", void sub_0806FC28());
 extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FC54.inc", void sub_0806FC54());
 extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FCC8.inc", void sub_0806FCC8());

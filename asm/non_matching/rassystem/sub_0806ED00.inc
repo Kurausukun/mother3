@@ -17,5 +17,5 @@ sub_0806ED00:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0806ED28: .4byte vt_09F800B0
+_0806ED28: .4byte _vt.9RasSystem
 	.syntax divided

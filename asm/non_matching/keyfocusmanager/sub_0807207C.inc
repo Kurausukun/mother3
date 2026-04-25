@@ -16,7 +16,7 @@ sub_0807207C:
 	str r0, [r6, #0x20]
 	str r0, [r1, #4]
 	str r0, [r1, #8]
-	bl KeyPadInstance
+	bl get__13KeyPadManager
 	mov r8, r0
 	movs r1, #0x1e
 	bl set_20__6KeyPadUi

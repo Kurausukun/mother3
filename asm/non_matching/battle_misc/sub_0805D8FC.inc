@@ -217,7 +217,7 @@ _0805D9C6:
 	bl sub_08062308
 	bl sub_08063AD0
 	bl sub_08063EE4
-	bl KeyPadInstance
+	bl get__13KeyPadManager
 	adds r6, r0, #0
 	add r0, sp, #0x1c
 	bl __4Base

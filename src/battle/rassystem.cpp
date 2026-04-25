@@ -23,8 +23,8 @@ extern "C" ASM_FUNC("asm/non_matching/rassystem/sub_0806EBD0.inc", void sub_0806
 extern "C" ASM_FUNC("asm/non_matching/rassystem/sub_0806EBD8.inc", void sub_0806EBD8());
 extern "C" ASM_FUNC("asm/non_matching/rassystem/sub_0806EC08.inc", void sub_0806EC08());
 extern "C" ASM_FUNC("asm/non_matching/rassystem/sub_0806EC14.inc", void sub_0806EC14());
-extern "C" ASM_FUNC("asm/non_matching/rassystem/sub_0806EC50.inc", void sub_0806EC50());
-extern "C" ASM_FUNC("asm/non_matching/rassystem/sub_0806EC5C.inc", void sub_0806EC5C());
+extern "C" ASM_FUNC("asm/non_matching/rassystem/sub_0806EC50.inc", void getRTTI_9RasSystem());
+extern "C" ASM_FUNC("asm/non_matching/rassystem/sub_0806EC5C.inc", void __9RasSystem());
 extern "C" ASM_FUNC("asm/non_matching/rassystem/sub_0806ED00.inc", void sub_0806ED00());
 extern "C" ASM_FUNC("asm/non_matching/rassystem/sub_0806ED2C.inc", void sub_0806ED2C());
 extern "C" ASM_FUNC("asm/non_matching/rassystem/sub_0806ED94.inc", void sub_0806ED94());
