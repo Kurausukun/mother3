@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08087F3C:
+init__8BGHandle:
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0

@@ -6,6 +6,25 @@
 #include "global.h"
 #include "vector.h"
 
+#define HEADER_BG  0x20206762
+#define HEADER_BXT 0x20747862
+#define HEADER_CCL 0x206C6363
+#define HEADER_CCG 0x20676363
+
+struct Resource {
+    u32 _0;
+    u16 _4;
+    u8 pad_6[2];
+    u16 _8;
+    u8 pad_A[2];
+    u8 _C;  // TODO: determine size
+};
+
+struct ResPtr2 {
+    Resource* address;
+    u32 size;
+};
+
 struct BXT {
     u32 magic;
     u16 type;

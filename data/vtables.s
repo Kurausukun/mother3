@@ -91357,21 +91357,21 @@ _vt.13KeyPadManager::
 	.2byte 0
 	.4byte init__13KeyPadManager
 
-_vt.11Unk0806D478::
+_vt.9CCLHandle::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte _._11Unk0806D478
+	.4byte _._9CCLHandle
 
-_vt.11Unk0806D548::
+_vt.9CCGHandle::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte _._11Unk0806D548
+	.4byte _._9CCGHandle
 
 _vt.11Unk0806D64C::
 	.2byte 0
@@ -99620,13 +99620,13 @@ vt_09F84F00::
 	.2byte 0
 	.4byte sub_08087AD4
 
-_vt.11Unk08087ED8::
+_vt.8BGHandle::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte _._11Unk08087ED8
+	.4byte _._8BGHandle
 
 _vt.11Unk08088018::
 	.2byte 0

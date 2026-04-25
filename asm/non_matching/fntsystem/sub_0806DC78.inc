@@ -19,10 +19,10 @@ sub_0806DC78:
 	bl sub_080887B0
 	adds r0, r7, #0
 	adds r0, #0x58
-	bl __11Unk0806D548
+	bl __9CCGHandle
 	adds r0, r7, #0
 	adds r0, #0x6c
-	bl __11Unk0806D478
+	bl __9CCLHandle
 	adds r0, r7, #0
 	adds r0, #0x78
 	bl sub_080886E0

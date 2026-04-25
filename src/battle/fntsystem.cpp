@@ -1,6 +1,7 @@
 // Auto-generated source file#include "battle/keypad.h"
 #include "base.h"
 #include "battle/clock.h"
+#include "battle/archive.h"
 #include "global.h"
 
 extern ClockData gUnknown_080FFD3C;
@@ -8,157 +9,159 @@ extern ClockData gUnknown_080FFD3C;
 extern "C" void __11Unk08088018(void*);
 extern "C" void LZ77UnCompWram(void*, void*);
 
-struct Unk1 {
-    u32 _0;
-    u16 _4;
-    u8 pad_6[2];
-    u16 _8;
-    u8 pad_A[2];
-    u8 _C;  // TODO: determine size
-};
-
-struct Unk2 {
-    Unk1* _0;
-    u32 _4;
-};
-
-class Unk0806D478 {
+class CCLHandle {
 public:
-    u16 _u0;
-    u16 _u2;
-    void* _u4;
+    CCLHandle();
+    CCLHandle(ResPtr2*);
+    virtual ~CCLHandle();
+    int init(ResPtr2*);
+    int type(ResPtr2*);
+    void read1(ResPtr2*);
+    void read2(ResPtr2*);
+    u16 getCount();
+    void* getBlock();
+    void* getPalette(u32 idx);
 
-    Unk0806D478();
-    Unk0806D478(Unk2*);
-    virtual ~Unk0806D478();
-    int sub_0806D4D0(Unk2*);
-    int sub_0806D504(Unk2*);
-    void sub_0806D520(Unk2*);
-    void sub_0806D52C(Unk2*);
+private:
+    u16 mType;
+    u16 mCount;
+    void* mBlock;
 };
 
-Unk0806D478::Unk0806D478() {  // __11Unk0806D478
-    _u0 = 0;
-    _u2 = 0;
-    _u4 = NULL;
+CCLHandle::CCLHandle() {  // __9CCLHandle
+    mType = 0;
+    mCount = 0;
+    mBlock = NULL;
 }
 
-Unk0806D478::Unk0806D478(Unk2* arg0) {
-    _u0 = 0;
-    _u2 = 0;
-    _u4 = NULL;
-    sub_0806D4D0(arg0);
+CCLHandle::CCLHandle(ResPtr2* arg0) {
+    mType = 0;
+    mCount = 0;
+    mBlock = NULL;
+    init(arg0);
 }
 
-Unk0806D478::~Unk0806D478() {}
+CCLHandle::~CCLHandle() {}
 
-int Unk0806D478::sub_0806D4D0(Unk2* arg0) {
-    this->_u0 = this->sub_0806D504(arg0);
+int CCLHandle::init(ResPtr2* arg0) {
+    mType = type(arg0);
 
-    switch (this->_u0) {
+    switch (mType) {
     case 1:
-        this->sub_0806D520(arg0);
+        read1(arg0);
         break;
     case 2:
-        this->sub_0806D52C(arg0);
+        read2(arg0);
         break;
     }
 
     return 1;
 }
 
-int Unk0806D478::sub_0806D504(Unk2* arg0) {
-    if (arg0->_0->_0 != 0x206C6363) {  // " lcc"
+int CCLHandle::type(ResPtr2* arg0) {
+    if (arg0->address->_0 != HEADER_CCL) {  // " lcc"
         return 1;
     } else {
-        return arg0->_0->_4;
+        return arg0->address->_4;
     }
 }
 
-void Unk0806D478::sub_0806D520(Unk2* arg0) {
-    this->_u2 = arg0->_4 >> 5;
-    this->_u4 = (void*)arg0->_0;
+void CCLHandle::read1(ResPtr2* arg0) {
+    this->mCount = arg0->size >> 5;
+    this->mBlock = (void*)arg0->address;
 }
 
-void Unk0806D478::sub_0806D52C(Unk2* arg0) {
-    this->_u2 = arg0->_0->_8;
-    this->_u4 = (void*)&arg0->_0->_C;
+void CCLHandle::read2(ResPtr2* arg0) {
+    this->mCount = arg0->address->_8;
+    this->mBlock = (void*)&arg0->address->_C;
 }
 
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D538.inc", void sub_0806D538());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D53C.inc", void sub_0806D53C());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D540.inc", void sub_0806D540());
+u16 CCLHandle::getCount() {
+    return mCount;
+}
 
-class Unk0806D548 {
+void* CCLHandle::getBlock() {
+    return mBlock;
+}
+
+void* CCLHandle::getPalette(u32 idx) {
+    return (void*)((u32)mBlock + (idx << 5));
+}
+
+class CCGHandle {
 public:
-    u16 _0;
+    CCGHandle();
+    CCGHandle(ResPtr2*);
+    virtual ~CCGHandle();
+
+    int init(ResPtr2*);
+    int type(ResPtr2*);
+    void read1(ResPtr2*);
+    void read2(ResPtr2*);
+    u16 get_count();
+    u32 get_C();
+
+private:
+    u16 mType;
     u8* _4;
-    u16 _8;
+    u16 mCount;
     u32 _C;
-
-    Unk0806D548();
-    Unk0806D548(Unk2*);
-    virtual ~Unk0806D548();
-    int sub_0806D5AC(Unk2*);
-    int sub_0806D5F0(Unk2*);
-    void sub_0806D60C(Unk2*);
-    void sub_0806D618(Unk2*);
 };
 
-Unk0806D548::Unk0806D548() {
-    _0 = 0;
+CCGHandle::CCGHandle() {
+    mType = 0;
     _4 = NULL;
-    _8 = 0;
+    mCount = 0;
     _C = 0;
 }
 
-Unk0806D548::Unk0806D548(Unk2* arg0) {
-    _0 = 0;
+CCGHandle::CCGHandle(ResPtr2* arg0) {
+    mType = 0;
     _4 = NULL;
-    _8 = 0;
+    mCount = 0;
     _C = 0;
-    sub_0806D5AC(arg0);
+    init(arg0);
 }
 
-Unk0806D548::~Unk0806D548() {
+CCGHandle::~CCGHandle() {
     delete[] _4;
 }
 
-int Unk0806D548::sub_0806D5AC(Unk2* arg0) {
+int CCGHandle::init(ResPtr2* arg0) {
     delete[] _4;
     _4 = NULL;
 
-    _0 = sub_0806D5F0(arg0);
+    mType = type(arg0);
 
-    switch (_0) {
+    switch (mType) {
     case 1:
-        sub_0806D60C(arg0);
+        read1(arg0);
         break;
     case 2:
-        sub_0806D618(arg0);
+        read2(arg0);
         break;
     }
 
     return 1;
 }
 
-int Unk0806D548::sub_0806D5F0(Unk2* arg0) {
-    if (arg0->_0->_0 != 0x20676363) {  // " gcc"
+int CCGHandle::type(ResPtr2* arg0) {
+    if (arg0->address->_0 != HEADER_CCG) {  // " gcc"
         return 1;
     } else {
-        return arg0->_0->_4;
+        return arg0->address->_4;
     }
 }
 
-void Unk0806D548::sub_0806D60C(Unk2* arg0) {
-    this->_8 = arg0->_4 >> 5;
-    this->_C = (u32)arg0->_0;
+void CCGHandle::read1(ResPtr2* arg0) {
+    mCount = arg0->size >> 5;
+    this->_C = (u32)arg0->address;
 }
 
-void Unk0806D548::sub_0806D618(Unk2* arg0) {
-    Unk1* arg1 = arg0->_0;
+void CCGHandle::read2(ResPtr2* arg0) {
+    Resource* arg1 = arg0->address;
 
-    this->_8 = arg1->_8;
+    mCount = arg1->_8;
 
     // get the size of the compressed data
     this->_4 = new u8[((*(u32*)&arg1->_C) >> 8) + 0x20];
@@ -166,15 +169,20 @@ void Unk0806D548::sub_0806D618(Unk2* arg0) {
     this->_C = (u32)this->_4;
 }
 
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D644.inc", void sub_0806D644());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D648.inc", void sub_0806D648());
+u16 CCGHandle::get_count() {
+    return mCount;
+}
+
+u32 CCGHandle::get_C() {
+    return _C;
+}
 
 // TODO: actually define this
-class Unk08087ED8 {
+class BGHandle {
 public:
     u8 pad_0[0x10];
-    Unk08087ED8();           // __11Unk08087ED8
-    virtual ~Unk08087ED8();  // _._11Unk08087ED8
+    BGHandle();           // __8BGHandle
+    virtual ~BGHandle();  // _._8BGHandle
 };
 
 class Tuple16 {
@@ -203,9 +211,9 @@ public:
     u16 _26;
     Tuple16 _28;
     Tuple16 _2C;
-    Unk08087ED8 _30;
-    Unk0806D548 _44;
-    Unk0806D478 _58;
+    BGHandle _30;
+    CCGHandle _44;
+    CCLHandle _58;
     Unk08088018 _64;
     u16 _68;
 

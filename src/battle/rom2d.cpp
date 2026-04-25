@@ -232,17 +232,19 @@ extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08087DCC.inc", void sub_08087DCC
 extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08087E20.inc", void sub_08087E20());
 extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08087E74.inc", void sub_08087E74());
 
-class Unk08087ED8 {
+#define HEADER_BG 0x20206762
+
+class BGHandle {
 public:
     u16 _0;
     void* _4;
     u16 _8;
     u32 _C;
-    Unk08087ED8();           // __11Unk08087ED8
-    virtual ~Unk08087ED8();  // _._11Unk08087ED8
+    BGHandle();           // __8BGHandle
+    virtual ~BGHandle();  // _._8BGHandle
 };
 
-Unk08087ED8::Unk08087ED8() {
+BGHandle::BGHandle() {
     _0 = 0;
     _4 = NULL;
     _8 = 0;
@@ -251,11 +253,11 @@ Unk08087ED8::Unk08087ED8() {
 
 extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08087EEC.inc", void sub_08087EEC());
 
-Unk08087ED8::~Unk08087ED8() {
+BGHandle::~BGHandle() {
     delete[] _4;
 }
 
-extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08087F3C.inc", void sub_08087F3C());
+extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08087F3C.inc", void init__8BGHandle());
 extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08087F80.inc", void sub_08087F80());
 extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08087F9C.inc", void sub_08087F9C());
 extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08087FA8.inc", void sub_08087FA8());

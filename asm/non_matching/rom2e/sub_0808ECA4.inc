@@ -6,7 +6,7 @@ sub_0808ECA4:
 	adds r6, r0, #0
 	adds r4, #0x5c
 	adds r0, r4, #0
-	bl sub_0806D53C
+	bl getBlock__9CCLHandle
 	adds r5, r0, #0
 	adds r0, r6, #0
 	adds r1, r5, #0

@@ -6,7 +6,7 @@ sub_080655B0:
 	adds r5, r0, #0
 	adds r4, #0xfc
 	adds r0, r4, #0
-	bl sub_0806D648
+	bl get_C__9CCGHandle
 	adds r2, r0, #0
 	adds r0, r5, #0
 	movs r1, #4

@@ -36,7 +36,7 @@ bool BXTHandle::init(const ResPtr& ref) {
 }
 
 u32 BXTHandle::type(const ResPtr& ref) const {
-    if (BXT(ref)->magic != ' txb') {
+    if (BXT(ref)->magic != HEADER_BXT) {
         return 0;
     }
     return BXT(ref)->type;
