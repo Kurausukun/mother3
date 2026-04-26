@@ -11,7 +11,7 @@ sub_08088900:
 	ldm r1!, {r6, r7}
 	stm r2!, {r6, r7}
 	str r3, [r4, #4]
-	bl get_C__9CCGHandle
+	bl getBlock__9CCGHandle
 	str r0, [r4, #8]
 	adds r0, r5, #0
 	bl getBlock__9CCLHandle

@@ -39,7 +39,7 @@ sub_08071268:
 	bl sub_080706A0
 	adds r0, r6, #0
 	add r1, sp, #4
-	bl init__9CCGHandleP7ResPtr2
+	bl init__9CCGHandleRC6ResPtr
 	ldr r4, _08071320
 	str r4, [sp, #0xc]
 	ldr r1, _08071324
@@ -47,7 +47,7 @@ sub_08071268:
 	bl sub_080706A0
 	mov r0, r8
 	add r1, sp, #4
-	bl init__9CCLHandleP7ResPtr2
+	bl init__9CCLHandleRC6ResPtr
 	str r4, [sp, #0xc]
 	bl get__12ClockManager
 	adds r6, r0, #0

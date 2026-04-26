@@ -6,7 +6,7 @@ sub_0807165C:
 	adds r7, r0, #0
 	adds r0, r5, #0
 	adds r0, #0x48
-	bl get_C__9CCGHandle
+	bl getBlock__9CCGHandle
 	ldr r2, _080716C8
 	ldr r1, [r5, #0x40]
 	lsls r1, r1, #1

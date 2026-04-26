@@ -74,7 +74,7 @@ sub_0806D9F4:
 	adds r0, r6, #0
 	adds r0, #0x54
 	mov r1, r8
-	bl init__9CCGHandleP7ResPtr2
+	bl init__9CCGHandleRC6ResPtr
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -82,7 +82,7 @@ sub_0806D9F4:
 	adds r0, r6, #0
 	adds r0, #0x68
 	mov r1, sb
-	bl init__9CCLHandleP7ResPtr2
+	bl init__9CCLHandleRC6ResPtr
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1

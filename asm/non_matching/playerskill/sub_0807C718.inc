@@ -24,7 +24,7 @@ sub_0807C718:
 	bl sub_080706A0
 	add r0, sp, #4
 	mov r1, r8
-	bl __9CCLHandleP7ResPtr2
+	bl __9CCLHandleRC6ResPtr
 	ldr r3, _0807C8E0
 	mov sl, r3
 	str r3, [sp, #0x18]

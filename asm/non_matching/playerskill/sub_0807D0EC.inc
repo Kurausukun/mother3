@@ -78,7 +78,7 @@ sub_0807D0EC:
 	bl sub_080706A0
 	adds r0, r7, #0
 	adds r1, r4, #0
-	bl init__9CCLHandleP7ResPtr2
+	bl init__9CCLHandleRC6ResPtr
 	mov r0, sl
 	str r0, [sp, #0x18]
 	bl get__12ClockManager

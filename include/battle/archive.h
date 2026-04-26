@@ -12,26 +12,12 @@
 #define HEADER_CCG 0x20676363
 
 struct Resource {
-    u32 _0;
-    u16 _4;
-    u8 pad_6[2];
-    u16 _8;
-    u8 pad_A[2];
-    u8 _C;  // TODO: determine size
-};
-
-struct ResPtr2 {
-    Resource* address;
-    u32 size;
-};
-
-struct BXT {
-    u32 magic;
-    u16 type;
-    u16 _6;
-    u16 count;
-    u16 _a;
-    u16 offsets[0];
+    u32 header;     //0
+    u16 type;       //4
+    u16 _6;         //6
+    u16 count;      //8
+    u16 _a;         //A
+    u8 block[0];    //C
 };
 
 struct ResPtr {
@@ -46,6 +32,8 @@ struct ResPtr {
     char* address;
     u32 size;
 };
+
+#define RESOURCE(ref) (reinterpret_cast<Resource*>(ref.address))
 
 class BXTHandle {
 public:

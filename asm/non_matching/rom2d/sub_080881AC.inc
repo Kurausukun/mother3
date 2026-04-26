@@ -80,10 +80,10 @@ sub_080881AC:
 	bl sub_0806B070
 	mov r8, r0
 	mov r0, sb
-	bl get_count__9CCGHandle
+	bl getCount__9CCGHandle
 	adds r4, r0, #0
 	mov r0, sb
-	bl get_C__9CCGHandle
+	bl getBlock__9CCGHandle
 	str r0, [sp]
 	mov r0, r8
 	mov r1, sl

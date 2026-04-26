@@ -47,13 +47,13 @@ _0807175C:
 	bl sub_080706A0
 	adds r0, r4, #0
 	add r1, sp, #4
-	bl init__9CCGHandleP7ResPtr2
+	bl init__9CCGHandleRC6ResPtr
 	ldr r0, _080717E0
 	str r0, [sp, #0xc]
 	adds r0, r7, #0
 	adds r0, #0x58
 	adds r1, r6, #0
-	bl init__9CCLHandleP7ResPtr2
+	bl init__9CCLHandleRC6ResPtr
 	adds r1, r7, #0
 	adds r1, #0x64
 	add r0, sp, #4

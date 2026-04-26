@@ -12,20 +12,21 @@ extern "C" void LZ77UnCompWram(void*, void*);
 class CCLHandle {
 public:
     CCLHandle();
-    CCLHandle(ResPtr2*);
+    CCLHandle(const ResPtr&);
     virtual ~CCLHandle();
-    int init(ResPtr2*);
-    int type(ResPtr2*);
-    void read1(ResPtr2*);
-    void read2(ResPtr2*);
+
+    int init(const ResPtr&);
+    int type(const ResPtr&);
+    void read1(const ResPtr&);
+    void read2(const ResPtr&);
     u16 getCount();
-    void* getBlock();
-    void* getPalette(u32 idx);
+    const void* getBlock();
+    const void* getPalette(u32 idx);
 
 private:
     u16 mType;
     u16 mCount;
-    void* mBlock;
+    const void* mBlock;
 };
 
 CCLHandle::CCLHandle() {  // __9CCLHandle
@@ -34,147 +35,147 @@ CCLHandle::CCLHandle() {  // __9CCLHandle
     mBlock = NULL;
 }
 
-CCLHandle::CCLHandle(ResPtr2* arg0) {
+CCLHandle::CCLHandle(const ResPtr& ref) {
     mType = 0;
     mCount = 0;
     mBlock = NULL;
-    init(arg0);
+    init(ref);
 }
 
 CCLHandle::~CCLHandle() {}
 
-int CCLHandle::init(ResPtr2* arg0) {
-    mType = type(arg0);
+int CCLHandle::init(const ResPtr& ref) {
+    mType = type(ref);
 
     switch (mType) {
     case 1:
-        read1(arg0);
+        read1(ref);
         break;
     case 2:
-        read2(arg0);
+        read2(ref);
         break;
     }
 
     return 1;
 }
 
-int CCLHandle::type(ResPtr2* arg0) {
-    if (arg0->address->_0 != HEADER_CCL) {  // " lcc"
+int CCLHandle::type(const ResPtr& ref) {
+    if (RESOURCE(ref)->header != HEADER_CCL) {  // " lcc"
         return 1;
     } else {
-        return arg0->address->_4;
+        return RESOURCE(ref)->type;
     }
 }
 
-void CCLHandle::read1(ResPtr2* arg0) {
-    this->mCount = arg0->size >> 5;
-    this->mBlock = (void*)arg0->address;
+void CCLHandle::read1(const ResPtr& ref) {
+    mCount = ref.size >> 5;
+    mBlock = ref.address;
 }
 
-void CCLHandle::read2(ResPtr2* arg0) {
-    this->mCount = arg0->address->_8;
-    this->mBlock = (void*)&arg0->address->_C;
+void CCLHandle::read2(const ResPtr& ref) {
+    mCount = RESOURCE(ref)->count;
+    mBlock = (void*)&RESOURCE(ref)->block;
 }
 
 u16 CCLHandle::getCount() {
     return mCount;
 }
 
-void* CCLHandle::getBlock() {
+const void* CCLHandle::getBlock() {
     return mBlock;
 }
 
-void* CCLHandle::getPalette(u32 idx) {
-    return (void*)((u32)mBlock + (idx << 5));
+const void* CCLHandle::getPalette(u32 idx) {
+    return (const void*)((u32)mBlock + (idx << 5));
 }
 
 class CCGHandle {
 public:
     CCGHandle();
-    CCGHandle(ResPtr2*);
+    CCGHandle(const ResPtr&);
     virtual ~CCGHandle();
 
-    int init(ResPtr2*);
-    int type(ResPtr2*);
-    void read1(ResPtr2*);
-    void read2(ResPtr2*);
-    u16 get_count();
-    u32 get_C();
+    int init(const ResPtr&);
+    int type(const ResPtr&);
+    void read1(const ResPtr&);
+    void read2(const ResPtr&);
+    u16 getCount();
+    const void* getBlock();
 
 private:
     u16 mType;
-    u8* _4;
+    const void* mReserve;
     u16 mCount;
-    u32 _C;
+    const void* mBlock;
 };
 
 CCGHandle::CCGHandle() {
     mType = 0;
-    _4 = NULL;
+    mReserve = NULL;
     mCount = 0;
-    _C = 0;
+    mBlock = NULL;
 }
 
-CCGHandle::CCGHandle(ResPtr2* arg0) {
+CCGHandle::CCGHandle(const ResPtr& ref) {
     mType = 0;
-    _4 = NULL;
+    mReserve = NULL;
     mCount = 0;
-    _C = 0;
-    init(arg0);
+    mBlock = NULL;
+    init(ref);
 }
 
 CCGHandle::~CCGHandle() {
-    delete[] _4;
+    delete[] mReserve;
 }
 
-int CCGHandle::init(ResPtr2* arg0) {
-    delete[] _4;
-    _4 = NULL;
+int CCGHandle::init(const ResPtr& ref) {
+    delete[] mReserve;
+    mReserve = NULL;
 
-    mType = type(arg0);
+    mType = type(ref);
 
     switch (mType) {
     case 1:
-        read1(arg0);
+        read1(ref);
         break;
     case 2:
-        read2(arg0);
+        read2(ref);
         break;
     }
 
     return 1;
 }
 
-int CCGHandle::type(ResPtr2* arg0) {
-    if (arg0->address->_0 != HEADER_CCG) {  // " gcc"
+int CCGHandle::type(const ResPtr& ref) {
+    if (RESOURCE(ref)->header != HEADER_CCG) {  // " gcc"
         return 1;
     } else {
-        return arg0->address->_4;
+        return RESOURCE(ref)->type;
     }
 }
 
-void CCGHandle::read1(ResPtr2* arg0) {
-    mCount = arg0->size >> 5;
-    this->_C = (u32)arg0->address;
+void CCGHandle::read1(const ResPtr& ref) {
+    mCount = ref.size >> 5;
+    mBlock = ref.address;
 }
 
-void CCGHandle::read2(ResPtr2* arg0) {
-    Resource* arg1 = arg0->address;
+void CCGHandle::read2(const ResPtr& ref) {
+    Resource* ccg = RESOURCE(ref);
 
-    mCount = arg1->_8;
+    mCount = ccg->count;
 
-    // get the size of the compressed data
-    this->_4 = new u8[((*(u32*)&arg1->_C) >> 8) + 0x20];
-    LZ77UnCompWram(&arg1->_C, this->_4);
-    this->_C = (u32)this->_4;
+    // allocate memory for uncompressed data
+    mReserve = new u8[((*(u32*)&ccg->block) >> 8) + 0x20];
+    LZ77UnCompWram(&ccg->block, (void*)mReserve);
+    mBlock = mReserve;
 }
 
-u16 CCGHandle::get_count() {
+u16 CCGHandle::getCount() {
     return mCount;
 }
 
-u32 CCGHandle::get_C() {
-    return _C;
+const void* CCGHandle::getBlock() {
+    return mBlock;
 }
 
 // TODO: actually define this

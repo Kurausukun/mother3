@@ -42,7 +42,7 @@ __12BattleSpriteP7Monster:
 	bl sub_080706A0
 	adds r0, r5, #0
 	mov r1, sp
-	bl init__9CCLHandleP7ResPtr2
+	bl init__9CCLHandleRC6ResPtr
 	ldr r1, _08081D3C
 	mov r8, r1
 	str r1, [sp, #8]

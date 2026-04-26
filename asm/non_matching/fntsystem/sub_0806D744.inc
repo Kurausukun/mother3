@@ -14,7 +14,7 @@ sub_0806D744:
 	adds r0, r4, #0
 	adds r0, #0x44
 	adds r1, r5, #0
-	bl init__9CCGHandleP7ResPtr2
+	bl init__9CCGHandleRC6ResPtr
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -22,7 +22,7 @@ sub_0806D744:
 	adds r0, r4, #0
 	adds r0, #0x58
 	ldr r1, [sp, #0xc]
-	bl init__9CCLHandleP7ResPtr2
+	bl init__9CCLHandleRC6ResPtr
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
