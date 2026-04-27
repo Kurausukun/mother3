@@ -8,8 +8,10 @@
 
 #define HEADER_BG  0x20206762
 #define HEADER_BXT 0x20747862
-#define HEADER_CCL 0x206C6363
 #define HEADER_CCG 0x20676363
+#define HEADER_CCL 0x206C6363
+
+#define RESOURCE(ref) (reinterpret_cast<Resource*>(ref.address))
 
 struct Resource {
     u32 header;     //0
@@ -33,7 +35,27 @@ struct ResPtr {
     u32 size;
 };
 
-#define RESOURCE(ref) (reinterpret_cast<Resource*>(ref.address))
+class BGHandle {
+public:
+    BGHandle();
+    BGHandle(const ResPtr& ref);
+    virtual ~BGHandle();
+
+    int init(const ResPtr& ref);
+    int type(const ResPtr& ref);
+    void read1(const ResPtr& ref);
+    void read2(const ResPtr& ref);
+    void _fd4(const ResPtr& ref);
+    u16 count() const;
+    const void* block() const;
+
+private:
+    u16 mType;
+    u16 _2;
+    const void* mReserve;
+    u16 mCount;
+    const void* mBlock;
+};
 
 class BXTHandle {
 public:
@@ -53,6 +75,46 @@ private:
     u16 mCount;
     const u8* mBlock;
     const u16* mOffsets;
+};
+
+class CCGHandle {
+public:
+    CCGHandle();
+    CCGHandle(const ResPtr&);
+    virtual ~CCGHandle();
+
+    int init(const ResPtr&);
+    int type(const ResPtr&);
+    void read1(const ResPtr&);
+    void read2(const ResPtr&);
+    u16 count();
+    const void* block();
+
+private:
+    u16 mType;
+    const void* mReserve;
+    u16 mCount;
+    const void* mBlock;
+};
+
+class CCLHandle {
+public:
+    CCLHandle();
+    CCLHandle(const ResPtr&);
+    virtual ~CCLHandle();
+
+    int init(const ResPtr&);
+    int type(const ResPtr&);
+    void read1(const ResPtr&);
+    void read2(const ResPtr&);
+    u16 count();
+    const void* block();
+    const void* getPalette(u32 idx);
+
+private:
+    u16 mType;
+    u16 mCount;
+    const void* mBlock;
 };
 
 struct BattleMessage : Msg {

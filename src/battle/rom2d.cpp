@@ -235,28 +235,6 @@ extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08087DCC.inc", void sub_08087DCC
 extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08087E20.inc", void sub_08087E20());
 extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08087E74.inc", void sub_08087E74());
 
-class BGHandle {
-public:
-    BGHandle();
-    BGHandle(const ResPtr& ref);
-    virtual ~BGHandle();
-
-    int init(const ResPtr& ref);
-    int type(const ResPtr& ref);
-    void read1(const ResPtr& ref);
-    void read2(const ResPtr& ref);
-    void _fd4(const ResPtr& ref);
-    u16 count() const;
-    const void* block() const;
-
-private:
-    u16 mType;
-    u16 _2;
-    const void* mReserve;
-    u16 mCount;
-    const void* mBlock;
-};
-
 BGHandle::BGHandle() {
     mType = 0;
     mReserve = NULL;

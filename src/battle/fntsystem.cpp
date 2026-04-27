@@ -9,26 +9,6 @@ extern ClockData gUnknown_080FFD3C;
 extern "C" void __11Unk08088018(void*);
 extern "C" void LZ77UnCompWram(void*, void*);
 
-class CCLHandle {
-public:
-    CCLHandle();
-    CCLHandle(const ResPtr&);
-    virtual ~CCLHandle();
-
-    int init(const ResPtr&);
-    int type(const ResPtr&);
-    void read1(const ResPtr&);
-    void read2(const ResPtr&);
-    u16 count();
-    const void* block();
-    const void* getPalette(u32 idx);
-
-private:
-    u16 mType;
-    u16 mCount;
-    const void* mBlock;
-};
-
 CCLHandle::CCLHandle() {  // __9CCLHandle
     mType = 0;
     mCount = 0;
@@ -88,26 +68,6 @@ const void* CCLHandle::block() {
 const void* CCLHandle::getPalette(u32 idx) {
     return (const void*)((u32)mBlock + (idx << 5));
 }
-
-class CCGHandle {
-public:
-    CCGHandle();
-    CCGHandle(const ResPtr&);
-    virtual ~CCGHandle();
-
-    int init(const ResPtr&);
-    int type(const ResPtr&);
-    void read1(const ResPtr&);
-    void read2(const ResPtr&);
-    u16 count();
-    const void* block();
-
-private:
-    u16 mType;
-    const void* mReserve;
-    u16 mCount;
-    const void* mBlock;
-};
 
 CCGHandle::CCGHandle() {
     mType = 0;
@@ -177,14 +137,6 @@ u16 CCGHandle::count() {
 const void* CCGHandle::block() {
     return mBlock;
 }
-
-// TODO: actually define this
-class BGHandle {
-public:
-    u8 pad_0[0x10];
-    BGHandle();           // __8BGHandle
-    virtual ~BGHandle();  // _._8BGHandle
-};
 
 class Tuple16 {
 public:
