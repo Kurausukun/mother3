@@ -19,8 +19,8 @@ public:
     int type(const ResPtr&);
     void read1(const ResPtr&);
     void read2(const ResPtr&);
-    u16 getCount();
-    const void* getBlock();
+    u16 count();
+    const void* block();
     const void* getPalette(u32 idx);
 
 private:
@@ -77,11 +77,11 @@ void CCLHandle::read2(const ResPtr& ref) {
     mBlock = (void*)&RESOURCE(ref)->block;
 }
 
-u16 CCLHandle::getCount() {
+u16 CCLHandle::count() {
     return mCount;
 }
 
-const void* CCLHandle::getBlock() {
+const void* CCLHandle::block() {
     return mBlock;
 }
 
@@ -99,8 +99,8 @@ public:
     int type(const ResPtr&);
     void read1(const ResPtr&);
     void read2(const ResPtr&);
-    u16 getCount();
-    const void* getBlock();
+    u16 count();
+    const void* block();
 
 private:
     u16 mType;
@@ -170,11 +170,11 @@ void CCGHandle::read2(const ResPtr& ref) {
     mBlock = mReserve;
 }
 
-u16 CCGHandle::getCount() {
+u16 CCGHandle::count() {
     return mCount;
 }
 
-const void* CCGHandle::getBlock() {
+const void* CCGHandle::block() {
     return mBlock;
 }
 

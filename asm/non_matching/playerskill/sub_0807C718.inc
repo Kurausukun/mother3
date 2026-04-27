@@ -29,7 +29,7 @@ sub_0807C718:
 	mov sl, r3
 	str r3, [sp, #0x18]
 	add r0, sp, #4
-	bl getBlock__9CCLHandle
+	bl block__9CCLHandle
 	adds r1, r6, #0
 	adds r1, #0x28
 	ldr r4, _0807C8E4
@@ -39,7 +39,7 @@ sub_0807C718:
 	str r5, [r4, #8]
 	ldr r0, [r4, #8]
 	add r0, sp, #4
-	bl getBlock__9CCLHandle
+	bl block__9CCLHandle
 	adds r7, r6, #0
 	adds r7, #0x48
 	str r0, [r4]

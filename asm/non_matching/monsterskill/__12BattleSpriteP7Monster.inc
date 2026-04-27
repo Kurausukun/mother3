@@ -47,7 +47,7 @@ __12BattleSpriteP7Monster:
 	mov r8, r1
 	str r1, [sp, #8]
 	adds r0, r5, #0
-	bl getBlock__9CCLHandle
+	bl block__9CCLHandle
 	adds r5, #0xc
 	ldr r1, _08081D40
 	str r0, [r1]

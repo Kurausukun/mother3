@@ -16,7 +16,7 @@ sub_0807CB60:
 	ldr r0, _0807CBB4
 	str r0, [sp, #0x14]
 	mov r0, sp
-	bl getBlock__9CCLHandle
+	bl block__9CCLHandle
 	movs r2, #0
 	adds r1, r0, #0
 	adds r5, #0x28

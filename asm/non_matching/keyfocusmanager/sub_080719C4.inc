@@ -17,7 +17,7 @@ _080719DC:
 _080719DE:
 	adds r0, r5, #0
 	adds r0, #0x44
-	bl getBlock__9CCGHandle
+	bl block__9CCGHandle
 	adds r6, r0, #0
 	movs r2, #0
 	cmp r2, r4

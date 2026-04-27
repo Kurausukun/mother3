@@ -8,7 +8,7 @@ sub_080655D4:
 	lsls r0, r0, #1
 	adds r4, r4, r0
 	adds r0, r4, #0
-	bl getBlock__9CCLHandle
+	bl block__9CCLHandle
 	adds r2, r0, #0
 	adds r0, r5, #0
 	movs r1, #1
