@@ -107,7 +107,7 @@ sub_080881AC:
 	str r0, [sp, #0x30]
 	add r0, sp, #0x24
 	ldr r1, [sp, #0x2c]
-	bl sub_08087FD4
+	bl _fd4__8BGHandleRC6ResPtr
 	ldr r0, [sp, #0x24]
 	lsls r0, r0, #0x10
 	asrs r0, r0, #0x10

@@ -5,7 +5,7 @@ sub_0806D79C:
 	strh r1, [r4, #0x20]
 	adds r0, #0x30
 	adds r1, r2, #0
-	bl init__8BGHandle
+	bl init__8BGHandleRC6ResPtr
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
