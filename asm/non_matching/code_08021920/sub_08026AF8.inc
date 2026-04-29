@@ -8,14 +8,14 @@ sub_08026AF8:
 	orrs r0, r1
 	strb r0, [r2, #2]
 	movs r0, #0
-	bl sub_080037F0
+	bl startSong_battle
 	movs r0, #0
-	bl sub_08003B58
+	bl musicPlayerStop_bgm
 	movs r0, #1
-	bl sub_08003B58
+	bl musicPlayerStop_bgm
 	movs r0, #8
 	movs r1, #4
-	bl sub_08003B30
+	bl musicPlayerFadeOut_sfx
 	ldr r4, _08026B3C
 	ldrb r0, [r4]
 	cmp r0, #1

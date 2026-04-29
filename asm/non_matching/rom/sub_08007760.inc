@@ -368,7 +368,7 @@ _08007A94:
 	ldrh r0, [r0]
 	movs r1, #1
 	rsbs r1, r1, #0
-	bl sub_080083B8
+	bl setup_overworld_music
 _08007AB6:
 	add sp, #4
 	pop {r3, r4, r5}

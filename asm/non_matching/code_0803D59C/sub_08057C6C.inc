@@ -23,10 +23,10 @@ sub_08057C6C:
 	bl sub_080031F0
 	movs r0, #0
 	movs r1, #2
-	bl sub_08003AB8
+	bl musicPlayerFadeOutTemp_bgm
 	movs r0, #1
 	movs r1, #2
-	bl sub_08003AB8
+	bl musicPlayerFadeOutTemp_bgm
 	add sp, #0x10
 	pop {r0}
 	bx r0

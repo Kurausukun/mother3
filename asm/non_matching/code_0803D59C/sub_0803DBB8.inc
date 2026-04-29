@@ -20,7 +20,7 @@ sub_0803DBB8:
 	orrs r0, r1
 	strh r0, [r2]
 	strh r4, [r3]
-	bl sub_080037D8
+	bl snd_vsync_on
 	bl snd_vsync
 	bl snd_main
 	ldr r0, _0803DC1C

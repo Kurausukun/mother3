@@ -123,9 +123,11 @@ gUnknown_080FF664:
     .4byte sub_0806CA24__10ObjPltPool+1
     .incbin "baserom.gba", 0x000FF66C, 0xC0
 
-    .global gUnknown_080FF72C
-gUnknown_080FF72C:
-    .incbin "baserom.gba", 0x000FF72C, 0x14
+    .global const_classname_KeyPad
+const_classname_KeyPad:
+    .ascii "KeyPad"
+    .byte 0,0
+    .incbin "baserom.gba", 0x000FF734, 0xC
 
     .global gUnknown_080FF740
 gUnknown_080FF740:
@@ -215,7 +217,7 @@ gUnknown_080FF9B4:
     .global gUnknown_080FF9BC
 gUnknown_080FF9BC:
     .4byte 0xFFFF0000
-    .4byte sub_0806CE0C__FP6KeyPad+1
+    .4byte emitNewKeys+1
     .incbin "baserom.gba", 0x000FF9C4, 0x378
 
     .global gUnknown_080FFD3C
@@ -236,9 +238,10 @@ gUnknown_080FFF9C:
     .4byte sub_0806DFF0+1
     .incbin "baserom.gba", 0x000FFFA4, 0x1EC
 
-    .global gUnknown_08100190
-gUnknown_08100190:
-    .incbin "baserom.gba", 0x00100190, 0xC
+    .global const_classname_FntSystem
+const_classname_FntSystem:
+    .ascii "FntSystem"
+    .byte 0, 0, 0
 
     .global gUnknown_0810019C
 gUnknown_0810019C:
@@ -252,9 +255,11 @@ gUnknown_081002E4:
     .4byte sub_0806EA88+1
     .incbin "baserom.gba", 0x001002EC, 0x134
 
-    .global gUnknown_08100420
-gUnknown_08100420:
-    .incbin "baserom.gba", 0x00100420, 0x14C
+    .global const_classname_RasSystem
+const_classname_RasSystem:
+    .ascii "RasSystem"
+    .byte 0, 0, 0
+    .incbin "baserom.gba", 0x0010042C, 0x140
 
     .global gUnknown_0810056C
 gUnknown_0810056C:
@@ -289,23 +294,26 @@ gUnknown_08101A8C:
     .4byte sub_0806FA14+1
     .incbin "baserom.gba", 0x00101A94, 0x14C
 
-    .global gUnknown_08101BE0
-gUnknown_08101BE0:
-    .incbin "baserom.gba", 0x00101BE0, 0xD0
+    .global const_classname_EfcSystem
+const_classname_EfcSystem:
+    .ascii "EfcSystem"
+    .byte 0, 0, 0
+    .incbin "baserom.gba", 0x00101BEC, 0xC4
 
-    .global gUnknown_08101CB0
-gUnknown_08101CB0:
-    .incbin "baserom.gba", 0x00101CB0, 0xC
+    .global const_classname_SndSystem
+const_classname_SndSystem:
+    .ascii "SndSystem"
+    .byte 0, 0, 0
 
     .global gUnknown_08101CBC
 gUnknown_08101CBC:
     .4byte 0xFFFF0000
-    .4byte sub_0806FF04+1
+    .4byte sndsystem_main+1
 
     .global gUnknown_08101CC4
 gUnknown_08101CC4:
     .4byte 0xFFFF0000
-    .4byte sub_0806FF10+1
+    .4byte sndsystem_vsync+1
     .incbin "baserom.gba", 0x00101CCC, 0x1A0
 
     .global gUnknown_08101E6C

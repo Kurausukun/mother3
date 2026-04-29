@@ -58,7 +58,7 @@ sub_0800C10C:
 	cmp r0, #3
 	beq _0800C18A
 	movs r0, #5
-	bl sub_08003BA8
+	bl musicPlayerStop_sfx
 _0800C18A:
 	adds r0, r7, #0
 	adds r0, #0xbc

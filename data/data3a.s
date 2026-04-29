@@ -439,10 +439,10 @@ gScriptCmdTable:
            .4byte cmd_81+1
            .4byte cmd_play_sound_ext+1
            .4byte cmd_play_sound+1
-           .4byte cmd_84+1
-           .4byte cmd_85+1
-           .4byte cmd_86+1
-           .4byte cmd_87+1
+           .4byte cmd_fade_bgm+1
+           .4byte cmd_fade_sfx+1
+           .4byte cmd_stop_bgm+1
+           .4byte cmd_stop_sfx+1
            .4byte cmd_88+1
            .4byte cmd_set_bgm+1
            .4byte cmd_8A+1
@@ -515,7 +515,7 @@ gScriptCmdTable:
            .4byte cmd_CD+1
            .4byte cmd_CE+1
            .4byte cmd_CF+1
-           .4byte cmd_D0+1
+           .4byte cmd_push_current_track+1
            .4byte cmd_D1+1
            .4byte cmd_D2+1
            .4byte cmd_D3+1

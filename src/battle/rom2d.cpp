@@ -1,5 +1,8 @@
 // Auto-generated source file
 #include "global.h"
+#include "battle/archive.h"
+
+extern "C" void LZ77UnCompWram(void*, void*);
 
 extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08083098.inc", void sub_08083098());
 extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_080830C4.inc", void sub_080830C4());
@@ -232,36 +235,80 @@ extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08087DCC.inc", void sub_08087DCC
 extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08087E20.inc", void sub_08087E20());
 extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08087E74.inc", void sub_08087E74());
 
-class Unk08087ED8 {
-public:
-    u16 _0;
-    void* _4;
-    u16 _8;
-    u32 _C;
-    Unk08087ED8();           // __11Unk08087ED8
-    virtual ~Unk08087ED8();  // _._11Unk08087ED8
-};
-
-Unk08087ED8::Unk08087ED8() {
-    _0 = 0;
-    _4 = NULL;
-    _8 = 0;
-    _C = 0;
+BGHandle::BGHandle() {
+    mType = 0;
+    mReserve = NULL;
+    mCount = 0;
+    mBlock = NULL;
 }
 
-extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08087EEC.inc", void sub_08087EEC());
-
-Unk08087ED8::~Unk08087ED8() {
-    delete[] _4;
+BGHandle::BGHandle(const ResPtr& ref) {
+    mType = 0;
+    mReserve = NULL;
+    mCount = 0;
+    mBlock = NULL;
+    init(ref);
 }
 
-extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08087F3C.inc", void sub_08087F3C());
-extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08087F80.inc", void sub_08087F80());
-extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08087F9C.inc", void sub_08087F9C());
-extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08087FA8.inc", void sub_08087FA8());
-extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08087FD4.inc", void sub_08087FD4());
-extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08087FE0.inc", void sub_08087FE0());
-extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08087FE4.inc", void sub_08087FE4());
+BGHandle::~BGHandle() {
+    delete[] mReserve;
+}
+
+int BGHandle::init(const ResPtr& ref) {
+    delete[] mReserve;
+    mReserve = NULL;
+
+    mType = type(ref);
+
+    switch (mType) {
+    case 1:
+        read1(ref);
+        break;
+    case 2:
+        read2(ref);
+        break;
+    }
+
+    return 1;
+}
+
+int BGHandle::type(const ResPtr& ref) {
+    if (RESOURCE(ref)->header != HEADER_BG) {
+        return 1;
+    } else {
+        return RESOURCE(ref)->type;
+    }
+}
+
+void BGHandle::read1(const ResPtr& ref) {
+    mCount = ref.size >> 1;
+    mBlock = ref.address;
+}
+
+void BGHandle::read2(const ResPtr& ref) {
+    Resource* bg = RESOURCE(ref);
+
+    mCount = bg->count;
+
+    // allocate memory for uncompressed data
+    mReserve = new u8[((*(u32*)&bg->block) >> 8) + 0x20];
+    LZ77UnCompWram(&bg->block, (void*)mReserve);
+    mBlock = mReserve;
+}
+
+void BGHandle::_fd4(const ResPtr& ref) {
+    mType = 256;
+    _2 = 256;
+}
+
+u16 BGHandle::count() const {
+    return mCount;
+}
+
+const void* BGHandle::block() const {
+    return mBlock;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08087FE8.inc", void sub_08087FE8());
 
 class Unk08088018 {

@@ -97,7 +97,7 @@ _0800CD66:
 	cmp r0, #3
 	bne _0800CD78
 	movs r0, #5
-	bl sub_08003BA8
+	bl musicPlayerStop_sfx
 _0800CD78:
 	movs r0, #1
 	bl sub_08004660

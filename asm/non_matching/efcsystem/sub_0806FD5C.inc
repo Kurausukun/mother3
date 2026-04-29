@@ -11,5 +11,5 @@ sub_0806FD5C:
 	bx r0
 	.align 2, 0
 _0806FD70: .4byte gUnknown_02001F00
-_0806FD74: .4byte vt_09F805B8
+_0806FD74: .4byte _vt.16EfcSystemManager
 	.syntax divided

@@ -14,7 +14,7 @@ sub_0800451C:
 	bl sub_08001960
 	bl snd_vsync
 	bl snd_main
-	bl sub_080037E4
+	bl snd_vsync_off
 	mov r4, sp
 	adds r4, #2
 	ldr r0, _0800462C
@@ -85,7 +85,7 @@ _080045BA:
 	mov r2, r8
 	ldrh r0, [r2]
 	strh r0, [r1]
-	bl sub_080037D8
+	bl snd_vsync_on
 	ldr r4, _08004654
 	ldr r0, _08004658
 	adds r5, r4, r0

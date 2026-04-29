@@ -62,13 +62,13 @@ _0803DE98:
 _0803DEBC: .4byte 0x04000208
 _0803DEC0: .4byte gUnknown_0200F920
 _0803DEC4:
-	bl sub_0800377C
+	bl snd_restart
 	b _0803DED0
 _0803DECA:
 	movs r0, #0
 	bl startSong
 _0803DED0:
-	bl sub_080037E4
+	bl snd_vsync_off
 	ldr r4, _0803DF2C
 	movs r0, #0
 	strh r0, [r4]

@@ -27,7 +27,7 @@ sub_0808AD24:
 	bl __5SoundUs
 	add r0, sp, #4
 	movs r1, #0
-	bl play__5Soundb
+	bl play__5Soundi
 	add r0, sp, #4
 	movs r1, #2
 	bl _._5Sound

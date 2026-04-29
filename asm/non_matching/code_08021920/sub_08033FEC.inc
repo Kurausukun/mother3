@@ -18,7 +18,7 @@ sub_08033FEC:
 	cmp r0, #0
 	bne _08034028
 	movs r0, #5
-	bl sub_08003BA8
+	bl musicPlayerStop_sfx
 	movs r0, #0xec
 	bl play_sound
 	b _0803404E
@@ -27,7 +27,7 @@ _08034020: .4byte gGame
 _08034024: .4byte 0x0000829B
 _08034028:
 	movs r0, #5
-	bl sub_08003BA8
+	bl musicPlayerStop_sfx
 	ldr r0, [r4, #0x18]
 	ldr r0, [r0]
 	lsls r0, r0, #0x18

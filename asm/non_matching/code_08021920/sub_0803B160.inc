@@ -78,12 +78,12 @@ sub_0803B160:
 	movs r3, #1
 	bl sub_0803D878
 	movs r0, #0
-	bl sub_08003D14
+	bl getCurrentTrack
 	adds r5, r0, #0
 	lsls r5, r5, #0x10
 	lsrs r5, r5, #0x10
 	movs r0, #1
-	bl sub_08003D14
+	bl getCurrentTrack
 	adds r6, r0, #0
 	lsls r6, r6, #0x10
 	lsrs r6, r6, #0x10

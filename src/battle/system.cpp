@@ -8,15 +8,12 @@
 #include "structs.h"
 
 extern "C" void sub_0806E4C4();
-extern "C" void sub_0806CC1C();
 extern "C" void sub_0806BE20();
 extern "C" void sub_0806B07C();
 extern "C" void sub_0806A9B0();
-extern "C" void sub_0806FDBC();
 extern "C" void destroy__10IrcManager();
 extern "C" u16 get_progression_flag(u32);
 extern "C" void incrementSavePlaytime();
-extern "C" KeyPad* KeyPadInstance();
 extern "C" void DoReset();
 extern "C" void randomMT();
 extern "C" void seedMT(s32);
@@ -26,7 +23,6 @@ extern "C" void sub_0806B040();
 extern "C" void sub_0806BDE4();
 extern "C" void sub_0806CBE0();
 extern "C" void sub_0806E488();
-extern "C" void sub_0806FD80();
 
 extern IrqTable gIntrHandlers;
 
@@ -106,14 +102,13 @@ System::System() {
 
     ClockManager::makeInstance();
 
-    sub_0806FD80();
-
-    sub_0806FDB0()->sndsystem_78(0x82);
+    SndSystemManager::makeInstance();
+    SndSystemManager::get()->setUnk20(0x82);
 
     sub_0806A974();
     sub_0806B040();
     sub_0806BDE4();
-    sub_0806CBE0();
+    KeyPadManager::makeInstance();
     sub_0806E488();
 
     this->mHandle = new SARHandle();
@@ -125,11 +120,11 @@ System::~System() {
     delete mHandle;
 
     sub_0806E4C4();
-    sub_0806CC1C();
+    KeyPadManager::destroy();
     sub_0806BE20();
     sub_0806B07C();
     sub_0806A9B0();
-    sub_0806FDBC();
+    SndSystemManager::destroy();
     ClockManager::destroy();
     destroy__10IrcManager();
 }
@@ -219,7 +214,7 @@ void system_callback(System* system) {
 }
 
 void System::checkResetKeys() {
-    u16 keys = KeyPadInstance()->getKeys();
+    u16 keys = KeyPadManager::get()->getKeys();
     if (keys == 0xF)
         DoReset();
 }

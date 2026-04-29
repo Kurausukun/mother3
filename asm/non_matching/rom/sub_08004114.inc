@@ -15,7 +15,7 @@ sub_08004114:
 	orrs r0, r1
 	strh r0, [r2]
 	strh r3, [r4]
-	bl sub_080037D8
+	bl snd_vsync_on
 	ldr r5, _0800415C
 	ldrb r0, [r5]
 	cmp r0, #1
@@ -42,7 +42,7 @@ _08004168:
 	ldrh r0, [r0]
 	movs r1, #1
 	rsbs r1, r1, #0
-	bl sub_080083B8
+	bl setup_overworld_music
 	ldr r0, _080041E8
 	adds r4, r4, r0
 	ldrb r0, [r4]
@@ -52,7 +52,7 @@ _08004168:
 	ldrb r0, [r5]
 	cmp r0, #4
 	bne _0800418E
-	bl sub_08003ECC
+	bl retrieveMusicPlayerVolumes
 _0800418E:
 	ldr r4, _080041EC
 	ldr r5, _080041E0
@@ -336,7 +336,7 @@ _080043EC:
 	beq _0800442C
 	cmp r0, #5
 	beq _0800442C
-	bl sub_080037E4
+	bl snd_vsync_off
 	ldr r3, _08004438
 	movs r0, #0
 	strh r0, [r3]

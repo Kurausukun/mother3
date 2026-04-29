@@ -1,25 +1,32 @@
 // Auto-generated source file
 #include "battle/guest.h"
 #include "battle/irc.h"
+#include "enums.h"
 #include "gba/gba.h"
 #include "gba/macro.h"
 #include "global.h"
 #include "m4a.h"
 #include "overworld/script.h"
+#include "audio.h"
 #include "structs.h"
 
 extern const char _binary_build_mother3_assets_misctext_bin_start;
 extern const IrqTable gUnknown_080C1A58;
 extern const u8 gMapMusicTable[0x3E8];
 extern IrqTable gIntrHandlers;
+extern u8 gUnknown_02004100[0x10];
+extern u8 gUnknown_02005080;
+extern u8 gUnknown_020051E4;
 extern u8 gUnknown_03004B14;
 extern u16 gUnknown_03004B00;
 extern u16 gUnknown_03004B02;
 extern u16 gUnknown_03004B0A;
+extern u16 gAudioSynced;
 extern u32 gUnknown_08CDB95C[];
-extern u16 gUnknown_02015EC0[];
-extern u16 gUnknown_02015ED8[];
-extern u16 gUnknown_02015EF0[];
+extern s16 gMPlayTrackTable[];
+extern s16 gMPlayPrevTrackTable[];
+extern s16 gMPlayVolumeTable[];
+extern s16 gMPlayVolumeStorageTable[];
 extern const DoorDestinationInfo gDoorDestinationTable[];
 
 extern "C" s32 Div(s32, s32);
@@ -33,6 +40,7 @@ extern "C" void sub_08090F90(s32);
 extern "C" s32 sub_08002FD4(s32, s32);
 extern "C" const void* Blob_GetEntry(const void*, u16);
 extern "C" u16 sub_0801A638(u16);
+extern "C" MusicPlayerInfo* getMusicPlayer_sfx(u16);
 extern "C" void sub_0801A238(s32, MovementVector*);
 extern "C" void sub_080016E4();
 extern "C" void mode_debug_menu(InputState*);
@@ -564,7 +572,13 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_08002D98.inc", void sub_08002D98()
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08002DB0.inc", void sub_08002DB0());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08002DC8.inc", void sub_08002DC8());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08002E00.inc", void sub_08002E00());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08002E34.inc", void sub_08002E34());
+
+extern "C" s32 lerp2(s32 start, s32 end, u16 currentStep, u16 numSteps) {
+    if (numSteps == 0)
+        return start;
+
+    return Divide((start * (numSteps - currentStep)) + (end * currentStep), numSteps);
+}
 
 extern "C" s32 lerp(s32 start, s32 end, u16 currentStep, u16 numSteps) {
     if (numSteps == 0)
@@ -608,64 +622,369 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_080034C8.inc", void sub_080034C8()
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08003554.inc", void sub_08003554());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080035C4.inc", void sub_080035C4());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080036E8.inc", void sub_080036E8());
-extern "C" ASM_FUNC("asm/non_matching/rom/init_audio.inc", void init_audio());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0800377C.inc", void sub_0800377C());
-extern "C" ASM_FUNC("asm/non_matching/rom/snd_vsync.inc", void snd_vsync());
-extern "C" ASM_FUNC("asm/non_matching/rom/snd_main.inc", void snd_main());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_080037D8.inc", void sub_080037D8());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_080037E4.inc", void sub_080037E4());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_080037F0.inc", void sub_080037F0());
-extern "C" ASM_FUNC("asm/non_matching/rom/startSong.inc", void startSong());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08003928.inc", void sub_08003928());
-extern "C" ASM_FUNC("asm/non_matching/rom/play_sound.inc", void play_sound());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08003A00.inc", void sub_08003A00());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08003A60.inc", void sub_08003A60());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08003AB8.inc", void sub_08003AB8());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08003AE0.inc", void sub_08003AE0());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08003B30.inc", void sub_08003B30());
 
-extern "C" void sub_08003B58(u16 index) {
-    s32 signedIndex = (s32)index;
+extern "C" void init_audio() {
+    for (u16 i = 0; i < 10; i++) {
+        gMPlayTrackTable[i] = -1;
+        gMPlayPrevTrackTable[i] = -1;
+        gMPlayVolumeTable[i] = 0x100;
+    }
 
-    if (signedIndex > 1)
-        return;
-    if (signedIndex < 0)
-        return;
-
-    MPlayStop(gMPlayTable[index].info);
-    gUnknown_02015ED8[index] = gUnknown_02015EC0[index];
-    gUnknown_02015EC0[index] = 0;
-    gUnknown_02015EF0[index] = 0x100;
+    m4aSoundInit();
+    gAudioSynced = 0;
 }
 
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08003BA8.inc", void sub_08003BA8());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08003BF8.inc", void sub_08003BF8());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08003C20.inc", void sub_08003C20());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08003C48.inc", void sub_08003C48());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08003C88.inc", void sub_08003C88());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08003CD0.inc", void sub_08003CD0());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08003D14.inc", void sub_08003D14());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08003D34.inc", void sub_08003D34());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08003D48.inc", void sub_08003D48());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08003D64.inc", void sub_08003D64());
+extern "C" void snd_restart(void) {
+    REG_IME = 1;
+    m4aMPlayAllStop();
+    m4aSoundMain();
+    REG_SOUNDCNT_X = 0;
+    init_audio();
+    REG_IME = 0;
+}
+
+extern "C" void snd_vsync(void) {
+    m4aSoundVSync();
+    gAudioSynced = 0;
+}
+
+extern "C" void snd_main(void) {
+    if (gAudioSynced == 0) {
+        m4aSoundMain();
+        gAudioSynced = 1;
+    }
+}
+
+extern "C" void snd_vsync_on(void) {
+    m4aSoundVSyncOn();
+}
+
+extern "C" void snd_vsync_off(void) {
+    m4aSoundVSyncOff();
+}
+
+extern "C" void startSong_battle(u16 song) {
+    if (song == SFX_NULL) {
+        gMPlayPrevTrackTable[0] = gMPlayTrackTable[0];
+        gMPlayPrevTrackTable[1] = gMPlayTrackTable[1];
+        gMPlayTrackTable[0] = SFX_NULL;
+        gMPlayTrackTable[1] = SFX_NULL;
+        gMPlayVolumeTable[0] = 0x100;
+        gMPlayVolumeTable[1] = 0x100;
+        MPlayStop(gMPlayTable[0].info);
+        MPlayStop(gMPlayTable[1].info);
+        return;
+    }
+
+    s16 mpIndex;
+    if ((mpIndex = getMusicPlayerIndex(song)) == -1)
+        return;
+
+    gMPlayPrevTrackTable[mpIndex] = gMPlayTrackTable[mpIndex];
+    gMPlayTrackTable[mpIndex] = song;
+    gMPlayVolumeTable[mpIndex] = 0x100;
+    m4aSongNumStartOrContinue(song);
+    m4aMPlayImmInit(gMPlayTable[mpIndex].info);
+    m4aMPlayVolumeControl(gMPlayTable[mpIndex].info, TRACKS_ALL, gMPlayVolumeTable[mpIndex]);
+}
+
+extern "C" void startSong(u16 song) {
+    if (song == SFX_NULL) {
+        gMPlayPrevTrackTable[0] = gMPlayTrackTable[0];
+        gMPlayPrevTrackTable[1] = gMPlayTrackTable[1];
+        gMPlayTrackTable[0] = SFX_NULL;
+        gMPlayTrackTable[1] = SFX_NULL;
+        gMPlayVolumeTable[0] = 0x100;
+        gMPlayVolumeTable[1] = 0x100;
+        m4aSongNumStart(SFX_NULL);
+        return;
+    }
+
+    s16 mpIndex;
+    if ((mpIndex = getMusicPlayerIndex(song)) == -1)
+        return;
+
+    gMPlayPrevTrackTable[mpIndex] = gMPlayTrackTable[mpIndex];
+    gMPlayTrackTable[mpIndex] = song;
+    gMPlayVolumeTable[mpIndex] = 0x100;
+    m4aSongNumStart(song);
+}
+
+extern "C" void startSong_alt(u16 trackID) {
+    s16 mpIndex;
+    if ((mpIndex = getMusicPlayerIndex(trackID)) == -1)
+        return;
+
+    gMPlayPrevTrackTable[mpIndex] = gMPlayTrackTable[mpIndex];
+    gMPlayTrackTable[mpIndex] = trackID;
+    gMPlayVolumeTable[mpIndex] = 0x100;
+    m4aSongNumStartOrContinue(trackID);
+    m4aMPlayImmInit(gMPlayTable[mpIndex].info);
+    m4aMPlayVolumeControl(gMPlayTable[mpIndex].info, TRACKS_ALL, gMPlayVolumeTable[mpIndex]);
+}
+
+extern "C" void play_sound(u16 sound) {
+    if (sound == SFX_NULL)
+        return;
+
+    s16 mpIndex;
+    if ((mpIndex = getMusicPlayerIndex(sound)) == -1)
+        return;
+
+    if (sound == SFX_VO_OK) {
+        m4aSongNumStart(0x3DA);
+    }
+
+    gMPlayPrevTrackTable[mpIndex] = gMPlayTrackTable[mpIndex];
+    gMPlayTrackTable[mpIndex] = sound;
+    gMPlayVolumeTable[mpIndex] = 0x100;
+    m4aSongNumStart(sound);
+}
+
+extern "C" void musicPlayerFadeInIfPaused_bgm(u16 mpIndex, u16 speed) {
+    MusicPlayerInfo* mpInfo = getMusicPlayer_bgm(mpIndex);
+    if (!mpInfo)
+        return;
+
+    u16 currentTrack = gMPlayTrackTable[mpIndex];
+    if ((s32)mpInfo->status < 0) {
+        m4aMPlayImmInit(mpInfo);
+        m4aMPlayVolumeControl(mpInfo, TRACKS_ALL, 0);
+        m4aSongNumStop(currentTrack);
+        m4aMPlayFadeIn(mpInfo, speed);
+        gMPlayVolumeTable[mpIndex] = 0x100;
+    }
+}
+
+extern "C" void musicPlayerFadeIn_bgm(u16 mpIndex, u16 speed) {
+    MusicPlayerInfo* mpInfo = getMusicPlayer_bgm(mpIndex);
+    if (!mpInfo)
+        return;
+
+    u16 song = gMPlayTrackTable[mpIndex];
+    m4aMPlayImmInit(mpInfo);
+    m4aMPlayVolumeControl(mpInfo, TRACKS_ALL, 0);
+    m4aSongNumStop(song);
+    m4aMPlayFadeIn(mpInfo, speed);
+    gMPlayVolumeTable[mpIndex] = 0x100;
+}
+
+extern "C" void musicPlayerFadeOutTemp_bgm(u16 mpIndex, u16 speed) {
+    MusicPlayerInfo* mpInfo = getMusicPlayer_bgm(mpIndex);
+    if (!mpInfo)
+        return;
+
+    if ((s32)mpInfo->status >= 0) {
+        m4aMPlayFadeOutTemporarily(mpInfo, speed);
+    }
+}
+
+extern "C" void musicPlayerFadeIn_sfx(u16 mpIndex, u16 speed) {
+    MusicPlayerInfo* mpInfo = getMusicPlayer_sfx(mpIndex);
+    if (!mpInfo)
+        return;
+
+    u16 song = gMPlayTrackTable[mpIndex];
+    if ((s32)mpInfo->status >= 0) {
+        m4aMPlayImmInit(mpInfo);
+        m4aMPlayVolumeControl(mpInfo, TRACKS_ALL, 0);
+        m4aSongNumStop(song);
+        m4aMPlayFadeIn(mpInfo, speed);
+    }
+}
+
+extern "C" void musicPlayerFadeOut_sfx(u16 idx, u16 speed) {
+    struct MusicPlayerInfo* mpInfo = getMusicPlayer_sfx(idx);
+    if (!mpInfo)
+        return;
+
+    if ((s32)mpInfo->status >= 0) {
+        m4aMPlayFadeOut(mpInfo, speed);
+    }
+}
+
+extern "C" void musicPlayerStop_bgm(u16 uidx) {
+    s32 mpIndex = uidx;
+
+    if (mpIndex > 1)
+        return;
+    if (mpIndex < 0)
+        return;
+
+    MPlayStop(gMPlayTable[mpIndex].info);
+    gMPlayPrevTrackTable[mpIndex] = gMPlayTrackTable[mpIndex];
+    gMPlayTrackTable[mpIndex] = 0;
+    gMPlayVolumeTable[mpIndex] = 0x100;
+}
+
+extern "C" void musicPlayerStop_sfx(u16 uidx) {
+    s32 mpIndex = uidx;
+
+    if (mpIndex > 9)
+        return;
+    s32 two = 2;  // FAKEMATCH
+    if (mpIndex < two)
+        return;
+
+    MPlayStop(gMPlayTable[mpIndex].info);
+    gMPlayPrevTrackTable[mpIndex] = gMPlayTrackTable[mpIndex];
+    gMPlayTrackTable[mpIndex] = 0;
+    gMPlayVolumeTable[mpIndex] = 0x100;
+}
+
+extern "C" void musicPlayerPause_bgm(u16 uidx) {
+    s32 mpIndex = uidx;
+
+    if (mpIndex > 1)
+        return;
+    if (mpIndex < 0)
+        return;
+
+    MPlayStop(gMPlayTable[mpIndex].info);
+}
+
+extern "C" void musicPlayerContinue_bgm(u16 uidx) {
+    s32 mpIndex = uidx;
+
+    if (mpIndex > 1)
+        return;
+    if (mpIndex < 0)
+        return;
+
+    m4aMPlayContinue(gMPlayTable[mpIndex].info);
+}
+
+extern "C" void musicPlayerUpdateVolume(u16 uidx, u16 vol) {
+    s32 mpIndex = uidx;
+
+    if (mpIndex > 9)
+        return;
+    if (mpIndex < 0)
+        return;
+
+    MusicPlayerInfo* mpInfo = gMPlayTable[mpIndex].info;
+    m4aMPlayVolumeControl(mpInfo, TRACKS_ALL, vol);
+    gMPlayVolumeTable[mpIndex] = vol;
+}
+
+extern "C" void musicPlayerInitAndUpdateVolume(u16 uidx, u16 vol) {
+    s32 mpIndex = uidx;
+
+    if (mpIndex > 9)
+        return;
+    if (mpIndex < 0)
+        return;
+
+    MusicPlayerInfo* mpInfo = gMPlayTable[mpIndex].info;
+    m4aMPlayImmInit(mpInfo);
+    m4aMPlayVolumeControl(mpInfo, TRACKS_ALL, vol);
+    gMPlayVolumeTable[mpIndex] = vol;
+}
+
+extern "C" void musicPlayerSetPanpotClamped(u16 mpIndex, s16 pan) {
+    MusicPlayerInfo* mpInfo = getMusicPlayer_sfx(mpIndex);
+    if (!mpInfo)
+        return;
+
+    if (pan > 127) {
+        pan = 127;
+    } else if (pan < -128) {
+        pan = -128;
+    }
+
+    m4aMPlayPanpotControl(mpInfo, TRACKS_ALL, pan);
+}
+
+extern "C" s16 getCurrentTrack(u16 mpIndex) {
+    if (!gMPlayTrackTable[mpIndex])
+        return -1;
+
+    return gMPlayTrackTable[mpIndex];
+}
+
+extern "C" s16 getPrevTrack(u16 mpIndex) {
+    return gMPlayPrevTrackTable[mpIndex];
+}
+
+extern "C" u16 getMusicPlayerVolumePercent(u16 mpIndex) {
+    return MPlayVolumeToPercent(gMPlayVolumeTable[mpIndex]);
+}
+
+extern "C" s32 isMusicPlayerPlaying_bgm(u16 mpIndex) {
+    MusicPlayerInfo* mPlayerInfo = getMusicPlayer_bgm(mpIndex);
+    if (!mPlayerInfo)
+        return 0;
+
+    return ((u32)mPlayerInfo->status >> 0x1F) ^ 1;
+}
 
 extern "C" s16 getMusicPlayerIndex(u16 songID) {
     MusicPlayerInfo* mpInfo = gMPlayTable[gSongTable[songID].ms].info;
 
     for (u16 i = 0; i < 10; i++) {
-        if (mpInfo == gMPlayTable[i].info) {
+        if (mpInfo == gMPlayTable[i].info)
             return i;
-        }
     }
     return -1;
 }
 
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08003DD0.inc", void sub_08003DD0());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08003DF8.inc", void sub_08003DF8());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08003E20.inc", void sub_08003E20());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08003E5C.inc", void sub_08003E5C());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08003EA0.inc", void sub_08003EA0());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08003ECC.inc", void sub_08003ECC());
+extern "C" MusicPlayerInfo* getMusicPlayer_bgm(u16 uidx) {
+    s32 mpIndex = uidx;
+
+    if (mpIndex > 1)
+        return 0;
+    if (mpIndex < 0)
+        return 0;
+
+    return gMPlayTable[mpIndex].info;
+}
+
+extern "C" MusicPlayerInfo* getMusicPlayer_sfx(u16 uidx) {
+    s32 mpIndex = uidx;
+
+    if (mpIndex > 9)
+        return 0;
+    s32 two = 2;  // FAKEMATCH
+    if (mpIndex < two)
+        return 0;
+
+    return gMPlayTable[mpIndex].info;
+}
+
+extern "C" u16 percentToMPlayVolume(u16 percent) {
+    if (percent == 0)
+        return 4;
+    if (percent == 100)
+        return 256;
+    if (percent == 400)
+        return 1020;
+
+    return lerp(4, 1020, percent, 400);
+}
+
+extern "C" u16 MPlayVolumeToPercent(u16 volume) {
+    if (volume < 5)
+        return 0;
+    if (volume == 256)
+        return 100;
+    if (volume >= 1020)
+        return 400;
+
+    return lerp(0, 400, volume, 1020);
+}
+
+extern "C" void storeMusicPlayerVolumes() {
+    for (u16 i = 0; i <= 9; i++) {
+        gMPlayVolumeStorageTable[i] = gMPlayVolumeTable[i];
+    }
+}
+
+extern "C" void retrieveMusicPlayerVolumes() {
+    for (u16 i = 0; i <= 9; i++) {
+        gMPlayVolumeTable[i] = gMPlayVolumeStorageTable[i];
+    }
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08003EF8.inc", void sub_08003EF8());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08004044.inc", void sub_08004044());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0800408C.inc", void sub_0800408C());
@@ -853,9 +1172,227 @@ extern "C" ASM_FUNC("asm/non_matching/rom/nullsub_4.inc", void nullsub_4());
 extern "C" ASM_FUNC("asm/non_matching/rom/nullsub_5.inc", void nullsub_5());
 extern "C" ASM_FUNC("asm/non_matching/rom/nullsub_61.inc", void nullsub_61());
 extern "C" ASM_FUNC("asm/non_matching/rom/nullsub_62.inc", void nullsub_62());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_080083B8.inc", void sub_080083B8());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008704.inc", void sub_08008704());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0800882C.inc", void sub_0800882C());
+
+extern "C" void setup_overworld_music(u16 room, s16 vol) {
+    s16 mpIndex, mpIndex_alt;
+    u16 track, track_alt, track_room;
+    s16 track_mplay0, track_mplay1;
+    s16 vol_alt;
+
+    track_room = getMusicIDForRoom(room);
+
+    if (gGame._829b == 6) {
+        track = SONG_PORK_BEAN;
+
+        if ((mpIndex = getMusicPlayerIndex(track)) != -1) {
+            startSong_alt(track);
+
+            switch (mpIndex) {
+            case 0:
+                musicPlayerStop_bgm(1);
+                gGame.cur_track = track;
+                break;
+            default:
+                musicPlayerStop_bgm(0);
+                gGame.cur_track_alt = track;
+                break;
+            }
+        }
+
+        return;
+    }
+
+    if (gGame._847a != -1) {
+        if ((gGame.cur_room == 0x12D) || (gGame.cur_room == 0x13E)) {
+            track_mplay0 = getCurrentTrack(0);
+            track = gSave._482[track_room] & 0xFF;
+
+            if (track_mplay0 != track) {
+                startSong_alt(track);
+            }
+            if (vol == -1) {
+                vol = 100;
+            }
+
+            musicPlayerInitAndUpdateVolume(0, percentToMPlayVolume(vol));
+            gGame.cur_track = track;
+            track = gGame._847a;
+            vol = gGame._847c;
+            startSong_alt(track);
+
+            if (vol != -1) {
+                musicPlayerInitAndUpdateVolume(1, percentToMPlayVolume(vol));
+            }
+
+            gGame._847a = -1;
+            gGame._847c = -1;
+            return;
+        }
+
+        track = gGame._847a;
+        vol = gGame._847c;
+
+        if ((mpIndex = getMusicPlayerIndex(track)) != -1) {
+            startSong_alt(track);
+
+            switch (mpIndex) {
+            case 0:
+                musicPlayerStop_bgm(1);
+                gGame.cur_track = track;
+                break;
+            default:
+                musicPlayerStop_bgm(0);
+                gGame.cur_track_alt = track;
+                break;
+            }
+
+            if (vol != -1) {
+                musicPlayerInitAndUpdateVolume(mpIndex, percentToMPlayVolume(vol));
+            }
+        }
+
+        gGame._847a = -1;
+        gGame._847c = -1;
+        return;
+    }
+
+    track_mplay0 = getCurrentTrack(0);  // sl
+    track_mplay1 = getCurrentTrack(1);  // sp+4
+    track = gSave._482[track_room] & 0xFF;
+    track_alt = gSave._482[track_room] >> 8;
+    vol_alt = gSave._582[track_room];
+    mpIndex = getMusicPlayerIndex(track);
+    mpIndex_alt = getMusicPlayerIndex(track_alt);
+
+    u16 flags[2];
+    u16* flagB;
+
+    u16 disable_collision = gGame.disable_collision;
+    if (disable_collision != 0) {
+        u16* flagA = &flags[0];  // FAKEMATCH
+        *flagA++ = gGame._8496_1;
+        *flagA = gGame._8496_2;
+        flagB = flagA;
+    } else {
+        u16* flagA = &flags[0];  // FAKEMATCH
+        *flagA++ = 0;
+        *flagA = 0;
+        flagB = flagA;
+    }
+
+    if (flags[0] == 0) {
+        if (track == 0) {
+            musicPlayerStop_bgm(0);
+        } else if (track_mplay0 != track) {
+            startSong_alt(track);
+        }
+    }
+    if (*flagB == 0) {
+        if (track_alt == 0) {
+            musicPlayerStop_bgm(1);
+        } else if (track_mplay1 != track_alt) {
+            startSong(track_alt);
+        } else {
+            u16 isPlaying = isMusicPlayerPlaying_bgm(mpIndex_alt);
+            if (isPlaying == 0) {
+                startSong(track_alt);
+            }
+        }
+    }
+
+    if (vol == -1) {
+        vol = 100;
+    }
+
+    if ((flags[0] == 0) && (mpIndex != -1)) {
+        musicPlayerInitAndUpdateVolume(mpIndex, percentToMPlayVolume(vol));
+    }
+    if ((*flagB == 0) && (mpIndex_alt != -1)) {
+        musicPlayerInitAndUpdateVolume(mpIndex_alt, percentToMPlayVolume(vol_alt));
+    }
+
+    gGame.cur_track = track;
+    gGame.cur_track_alt = track_alt;
+    startSong(0x3DC);
+}
+
+extern "C" void sub_08008704(u16 room, s16 vol) {
+    s16 mpIndex, mpIndex_alt;
+    u16 track, track_alt, track_room;
+    u16 vol_alt;
+
+    if ((gUnknown_02005080 != 1) || ((gGame.cur_room != 5) && (gGame.cur_room != 0x37))) {
+        track_room = getMusicIDForRoom(room);
+        track = gGame.cur_track;
+        track_alt = gGame.cur_track_alt;
+        mpIndex = getMusicPlayerIndex(track);
+        mpIndex_alt = getMusicPlayerIndex(track_alt);
+        vol_alt = gSave._582[track_room];
+
+        if (track == 0) {
+            musicPlayerStop_bgm(0);
+        } else {
+            startSong(track);
+        }
+
+        if (track_alt == 0) {
+            switch (mpIndex) {
+            case 0:
+                musicPlayerStop_bgm(1);
+                break;
+            case 1:
+                musicPlayerStop_bgm(0);
+                break;
+            }
+        } else {
+            startSong(track_alt);
+        }
+
+        if (vol == -1) {
+            vol = 100;
+        }
+
+        if (mpIndex != -1) {
+            musicPlayerInitAndUpdateVolume(mpIndex, percentToMPlayVolume(vol));
+        }
+        if (mpIndex_alt != -1) {
+            musicPlayerInitAndUpdateVolume(mpIndex_alt, percentToMPlayVolume(vol_alt));
+        }
+
+        startSong(0x3DC);
+    }
+}
+
+extern "C" void sub_0800882C() {
+    u16 speed;
+    u16 vol_mplay0 = getMusicPlayerVolumePercent(0);
+    u16 vol_mplay1 = getMusicPlayerVolumePercent(1);
+
+    if (gUnknown_020051E4 == 2) {
+        speed = 1;
+        if ((vol_mplay0 != 100) || (vol_mplay1 != 100)) {
+            gUnknown_02004100[2] = speed;
+            storeMusicPlayerVolumes();
+        }
+    } else {
+        speed = 2;
+    }
+
+    if (vol_mplay0 == 100) {
+        musicPlayerFadeOutTemp_bgm(0, speed);
+    } else {
+        sub_08027B84(0, vol_mplay0, 0, speed);
+    }
+
+    if (vol_mplay1 == 100) {
+        musicPlayerFadeOutTemp_bgm(1, speed);
+    } else {
+        sub_08027B84(1, vol_mplay1, 0, speed);
+    }
+
+    musicPlayerFadeOut_sfx(8, 4);
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080088AC.inc", void sub_080088AC());
 extern "C" ASM_FUNC("asm/non_matching/rom/draw_message.inc", void draw_message());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080089E0.inc", void sub_080089E0());

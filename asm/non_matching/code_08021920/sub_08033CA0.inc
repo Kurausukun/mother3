@@ -2,7 +2,7 @@
 sub_08033CA0:
 	push {r4, r5, lr}
 	movs r0, #5
-	bl sub_08003BA8
+	bl musicPlayerStop_sfx
 	ldr r0, _08033CF4
 	ldr r1, _08033CF8
 	adds r0, r0, r1

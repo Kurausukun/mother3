@@ -1,7 +1,5 @@
 #include "battle/archive.h"
 
-#define BXT(ref) (reinterpret_cast<BXT*>(ref.address))
-
 extern "C" s32 sub_08088E98();
 
 extern u8 gUnknown_081158D2[];
@@ -36,17 +34,17 @@ bool BXTHandle::init(const ResPtr& ref) {
 }
 
 u32 BXTHandle::type(const ResPtr& ref) const {
-    if (BXT(ref)->magic != ' txb') {
+    if (RESOURCE(ref)->header != HEADER_BXT) {
         return 0;
     }
-    return BXT(ref)->type;
+    return RESOURCE(ref)->type;
 }
 
 void BXTHandle::read(const ResPtr& ref) {
-    const BXT* bxt = BXT(ref);
+    const Resource* bxt = RESOURCE(ref);
     mCount = bxt->count;
     mBlock = (const u8*)bxt;
-    mOffsets = bxt->offsets;
+    mOffsets = (u16*)bxt->block;
 }
 
 u32 BXTHandle::count() const {

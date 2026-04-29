@@ -115,7 +115,7 @@ _080513A0:
 	lsls r0, r0, #0x1f
 	lsrs r0, r0, #0x1f
 	strh r0, [r5]
-	bl sub_080037E4
+	bl snd_vsync_off
 	ldrh r0, [r4]
 	cmp r0, #0
 	beq _080513DE
@@ -146,7 +146,7 @@ _080513DE:
 	ands r1, r2
 	strb r1, [r0]
 _080513FE:
-	bl sub_080037D8
+	bl snd_vsync_on
 	ldr r2, _08051444
 	adds r0, r2, #0
 	adds r0, #0x68

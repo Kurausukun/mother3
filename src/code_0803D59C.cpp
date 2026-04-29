@@ -1,6 +1,9 @@
 // Auto-generated source file
+#include "audio.h"
+#include "battle.h"
 #include "battle/guest.h"
 #include "battle/irc.h"
+#include "battle/monster.h"
 #include "enums.h"
 #include "functions.h"
 #include "gba/gba.h"
@@ -32,6 +35,7 @@ extern const u8 gUnknown_09C8DE98;  // Some sort of "archive" with sprites, pale
 extern u8 gMenuTextPalette;
 extern const u8 gUnknown_09BCDD8C;
 extern InputState gInputState;
+extern MonsterData gMonsterData[];
 extern MenuHandlerFunc gMenuFuncTable[0x13];
 extern u8 gMenuData[];
 extern u8 gUnknown_0200F920[];
@@ -352,7 +356,47 @@ extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08040024.inc", void sub_
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08040090.inc", void sub_08040090());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_080400D4.inc", void sub_080400D4());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08040164.inc", void sub_08040164());
-extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_080401BC.inc", void sub_080401BC());
+
+extern "C" void sub_080401BC() {
+    if (gUnknown_0200F920[0] == 6)
+        return;
+
+    if (gUnknown_02004100[2] != 0) {
+        gUnknown_02004100[2] = 0;
+    } else {
+        storeMusicPlayerVolumes();
+    }
+
+    gUnknown_03004B00 = 0;
+    snd_vsync_on();
+
+    switch (gUnknown_0200F920[0]) {
+    case 0:
+    case 1:
+    case 2:
+        musicPlayerStop_bgm(0);
+        musicPlayerStop_bgm(1);
+        startSong(0x3D6);
+        startSong(0x3D7);
+        startSong(0x3D8);
+        startSong(0x3D9);
+        startSong(0x3DA);
+        startSong(0x3DB);
+        startSong(0x3DC);
+        startSong(0x3DD);
+        startSong(SONG_AS_YOU_WISH);
+        return;
+    case 3:
+        snd_restart();
+        startSong(SONG_SAVE);
+        return;
+    case 4:
+    case 5:
+        startSong(SONG_FUN_NAMING);
+        break;
+    }
+}
+
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08040298.inc", void sub_08040298());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0804037C.inc", void sub_0804037C());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_080407AC.inc", void sub_080407AC());
@@ -2241,7 +2285,15 @@ extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08055D3C.inc", void sub_
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08055DA4.inc", void sub_08055DA4());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08055E00.inc", void sub_08055E00());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08055F44.inc", void sub_08055F44());
-extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08055FD4.inc", void sub_08055FD4());
+
+extern "C" void setup_battle_music() {
+    gUnknown_03004B00 = 1;
+    startSong_battle(0);
+    musicPlayerStop_bgm(0);
+    musicPlayerStop_bgm(1);
+    startSong(gMonsterData[(gEncounter._c + 0xFFFFFF00)].encounter_bgm);
+}
+
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805601C.inc", void sub_0805601C());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_080560AC.inc", void sub_080560AC());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_080560F8.inc", void sub_080560F8());

@@ -109,7 +109,9 @@ typedef struct Object {
     s16 ypos;
     u8 _4_0 : 5;
     u8 _4_1 : 3;
-    u8 filler[0x1b];
+    u8 _5[0x13];
+    s32 _18;
+    u32 _1c;
     u16 _20;
     u16 _22;
     u8 _24[0x10];
@@ -297,6 +299,16 @@ typedef struct TransactionState {
     u16 transactionType;
 } TransactionState;
 static_assert(sizeof(TransactionState) == 0xC);
+
+typedef struct SoundUnkInfo {
+    u16 _0;
+    u16 _2;
+    u16 _4;
+    u16 _6;
+    u8 _8_1 : 1;
+    u8 _8_2 : 3;
+} SoundUnkInfo;
+static_assert(sizeof(SoundUnkInfo) == 0xC);
 
 typedef struct DebugMenuState {
     u16 _0;
@@ -520,7 +532,8 @@ typedef struct struct_02016028 {
     u8 _4ecf_10 : 1;
     u8 _4ed0[0x566C - 0x4ED0];
     u8 _566c_1 : 1;
-    u8 _566d[0x5778 - 0x566D];
+    u8 _566d[0x567c - 0x566D];
+    SoundUnkInfo _567c[21];
     u8 _5778[0xC5AD - 0x5778];
     u8 _c5ad_1 : 1;
     u8 _c5ae[0xC5B5 - 0xC5AE];

@@ -83,7 +83,7 @@ _080246C8:
 	strb r0, [r1]
 	b _08024726
 	.align 2, 0
-_080246D4: .4byte gUnknown_0201B6A4
+_080246D4: .4byte gSoundUnkInfos
 _080246D8: .4byte 0xFFFFE00C
 _080246DC: .4byte gGame
 _080246E0: .4byte 0x00008495

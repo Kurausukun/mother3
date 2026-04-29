@@ -1,15 +1,15 @@
 	.syntax unified
 sub_080592A8:
 	push {lr}
-	bl sub_080037D8
+	bl snd_vsync_on
 	ldr r0, _08059300
 	ldrb r0, [r0]
 	cmp r0, #0
 	bne _080592FC
 	movs r0, #0
-	bl sub_08003B58
+	bl musicPlayerStop_bgm
 	movs r0, #1
-	bl sub_08003B58
+	bl musicPlayerStop_bgm
 	ldr r0, _08059304
 	bl startSong
 	ldr r0, _08059308

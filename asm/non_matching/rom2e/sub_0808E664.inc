@@ -10,7 +10,7 @@ sub_0808E664:
 	ldr r1, [r1, #0x14]
 	bl _call_via_r1
 	adds r4, r0, #0
-	bl sub_0806CA48
+	bl get__14UpKeyPressRTTI
 	cmp r4, r0
 	bne _0808E68C
 	adds r0, r6, #0
@@ -25,7 +25,7 @@ _0808E68C:
 	ldr r1, [r1, #0x14]
 	bl _call_via_r1
 	adds r4, r0, #0
-	bl sub_0806CA70
+	bl get__16DownKeyPressRTTI
 	cmp r4, r0
 	bne _0808E6AE
 	adds r0, r6, #0
@@ -40,7 +40,7 @@ _0808E6AE:
 	ldr r1, [r1, #0x14]
 	bl _call_via_r1
 	adds r4, r0, #0
-	bl sub_0806CA98
+	bl get__16LeftKeyPressRTTI
 	cmp r4, r0
 	bne _0808E6D0
 	adds r0, r6, #0
@@ -55,7 +55,7 @@ _0808E6D0:
 	ldr r1, [r1, #0x14]
 	bl _call_via_r1
 	adds r4, r0, #0
-	bl sub_0806CAC0
+	bl get__17RightKeyPressRTTI
 	cmp r4, r0
 	bne _0808E6F2
 	adds r0, r6, #0

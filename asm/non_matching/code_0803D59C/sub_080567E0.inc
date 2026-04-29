@@ -22,11 +22,11 @@ sub_080567E0:
 	strh r0, [r4]
 	mov r0, r8
 	strh r0, [r6]
-	bl sub_080037D8
+	bl snd_vsync_on
 	bl sub_0805685C
 	movs r0, #0x8b
 	bl startSong
-	bl sub_080037E4
+	bl snd_vsync_off
 	mov r1, sb
 	strh r1, [r6]
 	ldrh r1, [r5]

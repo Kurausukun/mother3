@@ -9,7 +9,7 @@ sub_080A0C2C:
 	bl __5SoundUs
 	add r0, sp, #4
 	movs r1, #0
-	bl play__5Soundb
+	bl play__5Soundi
 	movs r0, #0xb8
 	adds r1, r5, #0
 	adds r2, r5, #0
@@ -18,7 +18,7 @@ sub_080A0C2C:
 	bl setsleep
 	add r0, sp, #4
 	movs r1, #0
-	bl sub_0807014C
+	bl clear__5Soundi
 	adds r0, r6, #0
 	adds r1, r5, #0
 	bl onDamage__6ActionP4Unit

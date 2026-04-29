@@ -84,7 +84,7 @@ _08017FF8:
 	ldrsh r1, [r6, r2]
 	ldrh r2, [r6, #0x30]
 	ldrh r3, [r6, #0x18]
-	bl sub_08002E34
+	bl lerp2
 	strh r0, [r6, #6]
 	ldr r3, [sp, #0xc]
 	ldr r0, [r3]

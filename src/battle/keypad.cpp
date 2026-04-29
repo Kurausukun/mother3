@@ -2,224 +2,31 @@
 #include "battle/clock.h"
 #include "gba/gba.h"
 
-extern int gUnknown_02001D30;
-extern int gUnknown_02001D3C;
-extern int gUnknown_02001D48;
-extern int gUnknown_02001D54;
-extern int gUnknown_02001D60;
-extern int gUnknown_02001D6C;
-extern int gUnknown_02001D78;
-extern int gUnknown_02001D84;
-extern int gUnknown_02001D90;
-extern int gUnknown_02001D9C;
-extern int gUnknown_02001DA8;
-extern int gUnknown_02001DB4;
-extern int gUnknown_02001DC0;
-extern int gUnknown_02001DCC;
-extern int gUnknown_02001DD8;
-extern int gUnknown_02001DE4;
-extern int gUnknown_02001DF0;
-extern int gUnknown_02001DFC;
-extern int gUnknown_02001E08;
-extern int gUnknown_02001E14;
-extern int gUnknown_02001E20;
-extern s32 gUnknown_02001E2C;
-extern KeyPad* gUnknown_02001E30;
-
 extern ClockData gUnknown_080FF9B4;
 extern ClockData gUnknown_080FF9BC;
 
-extern "C" void* sub_0806CBD8();
+RTTI_IMPL(UpKeyPress);
+RTTI_IMPL(UpKeyLongPress);
+RTTI_IMPL(DownKeyPress);
+RTTI_IMPL(DownKeyLongPress);
+RTTI_IMPL(LeftKeyPress);
+RTTI_IMPL(LeftKeyLongPress);
+RTTI_IMPL(RightKeyPress);
+RTTI_IMPL(RightKeyLongPress);
+RTTI_IMPL(AKeyPress);
+RTTI_IMPL(AKeyLongPress);
+RTTI_IMPL(BKeyPress);
+RTTI_IMPL(BKeyLongPress);
+RTTI_IMPL(LKeyPress);
+RTTI_IMPL(LKeyLongPress);
+RTTI_IMPL(RKeyPress);
+RTTI_IMPL(RKeyLongPress);
+RTTI_IMPL(StartKeyPress);
+RTTI_IMPL(StartKeyLongPress);
+RTTI_IMPL(SelectKeyPress);
+RTTI_IMPL(SelectKeyLongPress);
 
-extern "C" void* sub_0806CA48(void) {
-    return &gUnknown_02001E20;
-}
-
-extern "C" void* sub_0806CA50(void) {
-    return sub_0806CA48();
-}
-
-extern "C" void* sub_0806CA5C(void) {
-    return &gUnknown_02001E14;
-}
-
-extern "C" void* sub_0806CA64(void) {
-    return sub_0806CA5C();
-}
-
-extern "C" void* sub_0806CA70(void) {
-    return &gUnknown_02001E08;
-}
-
-extern "C" void* sub_0806CA78(void) {
-    return sub_0806CA70();
-}
-
-extern "C" void* sub_0806CA84(void) {
-    return &gUnknown_02001DFC;
-}
-
-extern "C" void* sub_0806CA8C(void) {
-    return sub_0806CA84();
-}
-
-extern "C" void* sub_0806CA98(void) {
-    return &gUnknown_02001DF0;
-}
-
-extern "C" void* sub_0806CAA0(void) {
-    return sub_0806CA98();
-}
-
-extern "C" void* sub_0806CAAC(void) {
-    return &gUnknown_02001DE4;
-}
-
-extern "C" void* sub_0806CAB4(void) {
-    return sub_0806CAAC();
-}
-
-extern "C" void* sub_0806CAC0(void) {
-    return &gUnknown_02001DD8;
-}
-
-extern "C" void* sub_0806CAC8() {
-    return sub_0806CAC0();
-}
-
-extern "C" void* sub_0806CAD4(void) {
-    return &gUnknown_02001DCC;
-}
-
-extern "C" void* sub_0806CADC(void) {
-    return sub_0806CAD4();
-}
-
-extern "C" void* sub_0806CAE8(void) {
-    return &gUnknown_02001DC0;
-}
-
-extern "C" void* sub_0806CAF0(void) {
-    return sub_0806CAE8();
-}
-
-extern "C" void* sub_0806CAFC(void) {
-    return &gUnknown_02001DB4;
-}
-
-extern "C" void* sub_0806CB04(void) {
-    return sub_0806CAFC();
-}
-
-extern "C" void* sub_0806CB10(void) {
-    return &gUnknown_02001DA8;
-}
-
-extern "C" void* sub_0806CB18(void) {
-    return sub_0806CB10();
-}
-
-extern "C" void* sub_0806CB24(void) {
-    return &gUnknown_02001D9C;
-}
-
-extern "C" void* sub_0806CB2C(void) {
-    return sub_0806CB24();
-}
-
-extern "C" void* sub_0806CB38(void) {
-    return &gUnknown_02001D90;
-}
-
-extern "C" void* sub_0806CB40(void) {
-    return sub_0806CB38();
-}
-
-extern "C" void* sub_0806CB4C(void) {
-    return &gUnknown_02001D84;
-}
-
-extern "C" void* sub_0806CB54(void) {
-    return sub_0806CB4C();
-}
-
-extern "C" void* sub_0806CB60(void) {
-    return &gUnknown_02001D78;
-}
-
-extern "C" void* sub_0806CB68(void) {
-    return sub_0806CB60();
-}
-
-extern "C" void* sub_0806CB74(void) {
-    return &gUnknown_02001D6C;
-}
-
-extern "C" void* sub_0806CB7C(void) {
-    return sub_0806CB74();
-}
-
-extern "C" void* sub_0806CB88(void) {
-    return &gUnknown_02001D60;
-}
-
-extern "C" void* sub_0806CB90(void) {
-    return sub_0806CB88();
-}
-
-extern "C" void* sub_0806CB9C(void) {
-    return &gUnknown_02001D54;
-}
-
-extern "C" void* sub_0806CBA4(void) {
-    return sub_0806CB9C();
-}
-
-extern "C" void* sub_0806CBB0(void) {
-    return &gUnknown_02001D48;
-}
-
-extern "C" void* sub_0806CBB8(void) {
-    return sub_0806CBB0();
-}
-
-extern "C" void* sub_0806CBC4(void) {
-    return &gUnknown_02001D3C;
-}
-
-extern "C" void* sub_0806CBCC(void) {
-    return sub_0806CBC4();
-}
-
-extern "C" void* sub_0806CBD8(void) {
-    return &gUnknown_02001D30;
-}
-
-extern "C" void* sub_0806CBE0(void) {
-    // Only allocate on first call
-    if (gUnknown_02001E2C++ == 0) {
-        gUnknown_02001E30 = new KeyPad();
-    }
-
-    return gUnknown_02001E30;
-}
-
-extern "C" KeyPad* KeyPadInstance(void) {
-    return gUnknown_02001E30;
-}
-
-extern "C" void sub_0806CC1C() {
-    if (gUnknown_02001E2C > 0) {
-        if (--gUnknown_02001E2C == 0) {
-            delete gUnknown_02001E30;
-            gUnknown_02001E30 = NULL;
-        }
-    }
-}
-
-void* sub_0806CC58() {
-    return sub_0806CBD8();
-}
+SINGLETON_IMPL(KeyPad)
 
 KeyPad::KeyPad() : keys(0), new_keys(0), long_keys(0) {
     _20 = 0x2d;
@@ -284,7 +91,9 @@ extern "C" NONMATCH("asm/non_matching/keypad/sub_0806CD5C.inc",
 }
 END_NONMATCH
 
-void sub_0806CE0C(KeyPad* kp) {
+// Regression due to the singleton impls on keys/keypad, come back to this later!
+extern "C" NONMATCH("asm/non_matching/keypad/emitNewKeys.inc",
+                    void emitNewKeys(KeyPad* kp)) {
     if (kp->new_keys & DPAD_UP) {
         kp->emit(UpKeyPress());
     }
@@ -347,3 +156,4 @@ void sub_0806CE0C(KeyPad* kp) {
         kp->emit(SelectKeyLongPress());
     }
 }
+END_NONMATCH

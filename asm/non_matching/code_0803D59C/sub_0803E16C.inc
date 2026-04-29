@@ -56,17 +56,17 @@ _0803E1C0:
 _0803E1DC:
 	movs r0, #1
 	movs r1, #2
-	bl sub_08003AB8
+	bl musicPlayerFadeOutTemp_bgm
 	b _0803E1F8
 _0803E1E6:
 	movs r0, #0
 	movs r1, #7
-	bl sub_08003AB8
+	bl musicPlayerFadeOutTemp_bgm
 	b _0803E1F8
 _0803E1F0:
 	movs r0, #0
 	movs r1, #7
-	bl sub_08003AB8
+	bl musicPlayerFadeOutTemp_bgm
 _0803E1F8:
 	ldr r4, _0803E254
 	ldr r0, _0803E258

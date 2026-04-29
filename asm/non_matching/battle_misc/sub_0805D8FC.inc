@@ -199,7 +199,7 @@ _0805D9C6:
 	bl __builtin_new
 	bl sub_080703A4
 	str r0, [r7, #0x34]
-	bl sub_0806FDB0__Fv
+	bl get__16SndSystemManager
 	ldr r1, [r0, #0x1c]
 	adds r1, #0x68
 	movs r3, #0
@@ -217,7 +217,7 @@ _0805D9C6:
 	bl sub_08062308
 	bl sub_08063AD0
 	bl sub_08063EE4
-	bl KeyPadInstance
+	bl get__13KeyPadManager
 	adds r6, r0, #0
 	add r0, sp, #0x1c
 	bl __4Base

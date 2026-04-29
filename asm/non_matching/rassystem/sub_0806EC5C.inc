@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0806EC5C:
+__9RasSystem:
 	push {r4, r5, r6, lr}
 	sub sp, #8
 	adds r6, r0, #0
@@ -68,5 +68,5 @@ sub_0806EC5C:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0806ECFC: .4byte vt_09F800B0
+_0806ECFC: .4byte _vt.9RasSystem
 	.syntax divided

@@ -95,7 +95,7 @@ _08031CDE:
 	ldrsh r1, [r3, r2]
 	ldrh r2, [r3, #0xe]
 	ldrh r3, [r3, #0xc]
-	bl sub_08002E34
+	bl lerp2
 	lsls r0, r0, #0x10
 	lsrs r4, r0, #0x10
 	ldr r0, [sp, #4]
@@ -106,7 +106,7 @@ _08031CDE:
 	ldrsh r1, [r3, r2]
 	ldrh r2, [r3, #0xe]
 	ldrh r3, [r3, #0xc]
-	bl sub_08002E34
+	bl lerp2
 	lsls r0, r0, #0x10
 	lsrs r3, r0, #0x10
 _08031D0A:

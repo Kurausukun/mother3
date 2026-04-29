@@ -116,7 +116,7 @@ _08055EE6:
 	bne _08055EF2
 	movs r0, #0
 	movs r1, #2
-	bl sub_08003AB8
+	bl musicPlayerFadeOutTemp_bgm
 _08055EF2:
 	adds r0, r7, #1
 	lsls r0, r0, #0x10

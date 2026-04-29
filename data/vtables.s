@@ -90260,10 +90260,10 @@ _vt.17ObjPltPoolManager::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0F6C
+	.4byte getName__17ObjPltPoolManager
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0F5C
+	.4byte init__17ObjPltPoolManager
 
 _vt.18SelectKeyLongPress::
 	.2byte 0
@@ -90271,10 +90271,10 @@ _vt.18SelectKeyLongPress::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0F9C
+	.4byte _._18SelectKeyLongPress
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806CBCC
+	.4byte getRTTI__18SelectKeyLongPress
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -90306,16 +90306,16 @@ _vt.18SelectKeyLongPress::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-vt_09F7F218::
+_vt.22SelectKeyLongPressRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0F94
+	.4byte getName__22SelectKeyLongPressRTTI
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0F74
+	.4byte init__22SelectKeyLongPressRTTI
 
 _vt.14SelectKeyPress::
 	.2byte 0
@@ -90323,10 +90323,10 @@ _vt.14SelectKeyPress::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0FD8
+	.4byte _._14SelectKeyPress
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806CBB8
+	.4byte getRTTI__14SelectKeyPress
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -90358,16 +90358,16 @@ _vt.14SelectKeyPress::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-vt_09F7F298::
+_vt.18SelectKeyPressRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0FD0
+	.4byte getName__18SelectKeyPressRTTI
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0FB0
+	.4byte init__18SelectKeyPressRTTI
 
 _vt.17StartKeyLongPress::
 	.2byte 0
@@ -90375,10 +90375,10 @@ _vt.17StartKeyLongPress::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1014
+	.4byte _._17StartKeyLongPress
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806CBA4
+	.4byte getRTTI__17StartKeyLongPress
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -90410,16 +90410,16 @@ _vt.17StartKeyLongPress::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-vt_09F7F318::
+_vt.21StartKeyLongPressRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C100C
+	.4byte getName__21StartKeyLongPressRTTI
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0FEC
+	.4byte init__21StartKeyLongPressRTTI
 
 _vt.13StartKeyPress::
 	.2byte 0
@@ -90427,10 +90427,10 @@ _vt.13StartKeyPress::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1050
+	.4byte _._13StartKeyPress
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806CB90
+	.4byte getRTTI__13StartKeyPress
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -90462,16 +90462,16 @@ _vt.13StartKeyPress::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-vt_09F7F398::
+_vt.17StartKeyPressRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1048
+	.4byte getName__17StartKeyPressRTTI
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1028
+	.4byte init__17StartKeyPressRTTI
 
 _vt.13RKeyLongPress::
 	.2byte 0
@@ -90479,10 +90479,10 @@ _vt.13RKeyLongPress::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C108C
+	.4byte _._13RKeyLongPress
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806CB7C
+	.4byte getRTTI__13RKeyLongPress
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -90514,16 +90514,16 @@ _vt.13RKeyLongPress::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-vt_09F7F418::
+_vt.17RKeyLongPressRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1084
+	.4byte getName__17RKeyLongPressRTTI
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1064
+	.4byte init__17RKeyLongPressRTTI
 
 _vt.9RKeyPress::
 	.2byte 0
@@ -90531,10 +90531,10 @@ _vt.9RKeyPress::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C10C8
+	.4byte _._9RKeyPress
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806CB68
+	.4byte getRTTI__9RKeyPress
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -90566,16 +90566,16 @@ _vt.9RKeyPress::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-vt_09F7F498::
+_vt.13RKeyPressRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C10C0
+	.4byte getName__13RKeyPressRTTI
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C10A0
+	.4byte init__13RKeyPressRTTI
 
 _vt.13LKeyLongPress::
 	.2byte 0
@@ -90583,10 +90583,10 @@ _vt.13LKeyLongPress::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1104
+	.4byte _._13LKeyLongPress
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806CB54
+	.4byte getRTTI__13LKeyLongPress
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -90618,16 +90618,16 @@ _vt.13LKeyLongPress::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-vt_09F7F518::
+_vt.17LKeyLongPressRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C10FC
+	.4byte getName__17LKeyLongPressRTTI
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C10DC
+	.4byte init__17LKeyLongPressRTTI
 
 _vt.9LKeyPress::
 	.2byte 0
@@ -90635,10 +90635,10 @@ _vt.9LKeyPress::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1140
+	.4byte _._9LKeyPress
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806CB40
+	.4byte getRTTI__9LKeyPress
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -90670,16 +90670,16 @@ _vt.9LKeyPress::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-vt_09F7F598::
+_vt.13LKeyPressRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1138
+	.4byte getName__13LKeyPressRTTI
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1118
+	.4byte init__13LKeyPressRTTI
 
 _vt.13BKeyLongPress::
 	.2byte 0
@@ -90687,10 +90687,10 @@ _vt.13BKeyLongPress::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C117C
+	.4byte _._13BKeyLongPress
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806CB2C
+	.4byte getRTTI__13BKeyLongPress
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -90722,16 +90722,16 @@ _vt.13BKeyLongPress::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-vt_09F7F618::
+_vt.17BKeyLongPressRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1174
+	.4byte getName__17BKeyLongPressRTTI
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1154
+	.4byte init__17BKeyLongPressRTTI
 
 _vt.9BKeyPress::
 	.2byte 0
@@ -90739,10 +90739,10 @@ _vt.9BKeyPress::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C11B8
+	.4byte _._9BKeyPress
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806CB18
+	.4byte getRTTI__9BKeyPress
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -90774,16 +90774,16 @@ _vt.9BKeyPress::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-vt_09F7F698::
+_vt.13BKeyPressRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C11B0
+	.4byte getName__13BKeyPressRTTI
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1190
+	.4byte init__13BKeyPressRTTI
 
 _vt.13AKeyLongPress::
 	.2byte 0
@@ -90791,10 +90791,10 @@ _vt.13AKeyLongPress::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C11F4
+	.4byte _._13AKeyLongPress
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806CB04
+	.4byte getRTTI__13AKeyLongPress
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -90826,16 +90826,16 @@ _vt.13AKeyLongPress::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-vt_09F7F718::
+_vt.17AKeyLongPressRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C11EC
+	.4byte getName__17AKeyLongPressRTTI
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C11CC
+	.4byte init__17AKeyLongPressRTTI
 
 _vt.9AKeyPress::
 	.2byte 0
@@ -90843,10 +90843,10 @@ _vt.9AKeyPress::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1230
+	.4byte _._9AKeyPress
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806CAF0
+	.4byte getRTTI__9AKeyPress
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -90878,16 +90878,16 @@ _vt.9AKeyPress::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-vt_09F7F798::
+_vt.13AKeyPressRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1228
+	.4byte getName__13AKeyPressRTTI
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1208
+	.4byte init__13AKeyPressRTTI
 
 _vt.17RightKeyLongPress::
 	.2byte 0
@@ -90895,10 +90895,10 @@ _vt.17RightKeyLongPress::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C126C
+	.4byte _._17RightKeyLongPress
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806CADC
+	.4byte getRTTI__17RightKeyLongPress
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -90930,16 +90930,16 @@ _vt.17RightKeyLongPress::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-vt_09F7F818::
+_vt.21RightKeyLongPressRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1264
+	.4byte getName__21RightKeyLongPressRTTI
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1244
+	.4byte init__21RightKeyLongPressRTTI
 
 _vt.13RightKeyPress::
 	.2byte 0
@@ -90947,10 +90947,10 @@ _vt.13RightKeyPress::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C12A8
+	.4byte _._13RightKeyPress
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806CAC8
+	.4byte getRTTI__13RightKeyPress
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -90982,16 +90982,16 @@ _vt.13RightKeyPress::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-vt_09F7F898::
+_vt.17RightKeyPressRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C12A0
+	.4byte getName__17RightKeyPressRTTI
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1280
+	.4byte init__17RightKeyPressRTTI
 
 _vt.16LeftKeyLongPress::
 	.2byte 0
@@ -90999,10 +90999,10 @@ _vt.16LeftKeyLongPress::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C12E4
+	.4byte _._16LeftKeyLongPress
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806CAB4
+	.4byte getRTTI__16LeftKeyLongPress
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -91034,16 +91034,16 @@ _vt.16LeftKeyLongPress::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-vt_09F7F918::
+_vt.20LeftKeyLongPressRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C12DC
+	.4byte getName__20LeftKeyLongPressRTTI
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C12BC
+	.4byte init__20LeftKeyLongPressRTTI
 
 _vt.12LeftKeyPress::
 	.2byte 0
@@ -91051,10 +91051,10 @@ _vt.12LeftKeyPress::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1320
+	.4byte _._12LeftKeyPress
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806CAA0
+	.4byte getRTTI__12LeftKeyPress
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -91086,16 +91086,16 @@ _vt.12LeftKeyPress::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-vt_09F7F998::
+_vt.16LeftKeyPressRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1318
+	.4byte getName__16LeftKeyPressRTTI
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C12F8
+	.4byte init__16LeftKeyPressRTTI
 
 _vt.16DownKeyLongPress::
 	.2byte 0
@@ -91103,10 +91103,10 @@ _vt.16DownKeyLongPress::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C135C
+	.4byte _._16DownKeyLongPress
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806CA8C
+	.4byte getRTTI__16DownKeyLongPress
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -91138,16 +91138,16 @@ _vt.16DownKeyLongPress::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-vt_09F7FA18::
+_vt.20DownKeyLongPressRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1354
+	.4byte getName__20DownKeyLongPressRTTI
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1334
+	.4byte init__20DownKeyLongPressRTTI
 
 _vt.12DownKeyPress::
 	.2byte 0
@@ -91155,10 +91155,10 @@ _vt.12DownKeyPress::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1398
+	.4byte _._12DownKeyPress
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806CA78
+	.4byte getRTTI__12DownKeyPress
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -91190,16 +91190,16 @@ _vt.12DownKeyPress::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-vt_09F7FA98::
+_vt.16DownKeyPressRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1390
+	.4byte getName__16DownKeyPressRTTI
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1370
+	.4byte init__16DownKeyPressRTTI
 
 _vt.14UpKeyLongPress::
 	.2byte 0
@@ -91207,10 +91207,10 @@ _vt.14UpKeyLongPress::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C13D4
+	.4byte _._14UpKeyLongPress
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806CA64
+	.4byte getRTTI__14UpKeyLongPress
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -91242,16 +91242,16 @@ _vt.14UpKeyLongPress::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-vt_09F7FB18::
+_vt.18UpKeyLongPressRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C13CC
+	.4byte getName__18UpKeyLongPressRTTI
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C13AC
+	.4byte init__18UpKeyLongPressRTTI
 
 _vt.10UpKeyPress::
 	.2byte 0
@@ -91259,10 +91259,10 @@ _vt.10UpKeyPress::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1410
+	.4byte _._10UpKeyPress
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806CA50
+	.4byte getRTTI__10UpKeyPress
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -91294,16 +91294,16 @@ _vt.10UpKeyPress::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-vt_09F7FB98::
+_vt.14UpKeyPressRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1408
+	.4byte getName__14UpKeyPressRTTI
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C13E8
+	.4byte init__14UpKeyPressRTTI
 
 _vt.6KeyPad::
 	.2byte 0
@@ -91314,7 +91314,7 @@ _vt.6KeyPad::
 	.4byte _._6KeyPad
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806CC58__Fv
+	.4byte getRTTI__6KeyPad
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -91346,32 +91346,32 @@ _vt.6KeyPad::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-vt_09F7FC18::
+_vt.13KeyPadManager::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1434
+	.4byte getName__13KeyPadManager
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1424
+	.4byte init__13KeyPadManager
 
-_vt.11Unk0806D478::
+_vt.9CCLHandle::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte _._11Unk0806D478
+	.4byte _._9CCLHandle
 
-_vt.11Unk0806D548::
+_vt.9CCGHandle::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte _._11Unk0806D548
+	.4byte _._9CCGHandle
 
 _vt.11Unk0806D64C::
 	.2byte 0
@@ -91669,7 +91669,7 @@ _vt.3Msg::
 	.2byte 0
 	.4byte _._3Msg
 
-vt_09F7FF50::
+_vt.9FntSystem::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -91678,7 +91678,7 @@ vt_09F7FF50::
 	.4byte sub_0806E618
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806E500
+	.4byte getRTTI_9FntSystem
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -91716,16 +91716,16 @@ vt_09F7FF50::
 	.2byte 0
 	.4byte sub_0806E74C
 
-vt_09F7FFC8::
+_vt.16FntSystemManager::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C144C
+	.4byte getName__16FntSystemManager
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C143C
+	.4byte init__16FntSystemManager
 
 vt_09F7FFE0::
 	.2byte 0
@@ -91807,7 +91807,7 @@ vt_09F7FFE0::
 	.2byte 0
 	.4byte sub_0806EA7C
 
-vt_09F800B0::
+_vt.9RasSystem::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -91816,7 +91816,7 @@ vt_09F800B0::
 	.4byte sub_0806ED00
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806EC50
+	.4byte getRTTI_9RasSystem
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -91869,16 +91869,16 @@ vt_09F800B0::
 	.2byte 0
 	.4byte sub_0806EDC0
 
-vt_09F80150::
+_vt.16RasSystemManager::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1464
+	.4byte getName__16RasSystemManager
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1454
+	.4byte init__16RasSystemManager
 
 vt_09F80168::
 	.2byte 0
@@ -92238,7 +92238,7 @@ vt_09F80470::
 	.2byte 0
 	.4byte sub_0808959C
 
-vt_09F80508::
+_vt.9EfcSystem::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -92247,7 +92247,7 @@ vt_09F80508::
 	.4byte sub_0806FC28
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806FBF0
+	.4byte getRTTI_9EfcSystem
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -92306,27 +92306,27 @@ vt_09F80508::
 	.2byte 0
 	.4byte sub_0806FD20
 
-vt_09F805B8::
+_vt.16EfcSystemManager::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C147C
+	.4byte getName__16EfcSystemManager
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C146C
+	.4byte init__16EfcSystemManager
 
-vt_09F805D0::
+_vt.9SndSystem::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806FE64
+	.4byte _._9SndSystem
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806FDF8
+	.4byte getRTTI__9SndSystem
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -92359,33 +92359,33 @@ vt_09F805D0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806FEBC
+	.4byte vsyncOn__9SndSystem
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806FEC8
+	.4byte vsyncOff__9SndSystem
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806FED4
+	.4byte setUnk20__9SndSystemUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806FEF0
+	.4byte setUnk22__9SndSystemUc
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806FEF8
+	.4byte getUnk20__9SndSystem
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806FEFC
+	.4byte getUnk22__9SndSystem
 
-vt_09F80668::
+_vt.16SndSystemManager::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1494
+	.4byte getName__16SndSystemManager
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1484
+	.4byte init__16SndSystemManager
 
 _vt.5Sound::
 	.2byte 0
@@ -92429,55 +92429,55 @@ _vt.5Sound::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806FFBC
+	.4byte setup__5SoundUs
 	.2byte 0
 	.2byte 0
-	.4byte play__5Soundb
+	.4byte play__5Soundi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080700E4
+	.4byte stop__5Soundi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08070118
+	.4byte continue_play__5Soundi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807014C
+	.4byte clear__5Soundi
 	.2byte 0
 	.2byte 0
 	.4byte isPlaying__5Sound
 	.2byte 0
 	.2byte 0
-	.4byte sub_080701F8
+	.4byte sound_1f8__5Sound
 	.2byte 0
 	.2byte 0
-	.4byte sub_08070250
+	.4byte sound_250__5Sound
 	.2byte 0
 	.2byte 0
-	.4byte sub_080702C0
+	.4byte setTempo__5Soundi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080702EC
+	.4byte setVolume__5Soundi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08070320
+	.4byte setPan__5Soundi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807035C
+	.4byte getIndex__5Sound
 	.2byte 0
 	.2byte 0
-	.4byte sub_08070360
+	.4byte getTempo__5Sound
 	.2byte 0
 	.2byte 0
-	.4byte sub_08070364
+	.4byte getVolume__5Sound
 	.2byte 0
 	.2byte 0
-	.4byte sub_08070368
+	.4byte getPan__5Sound
 	.2byte 0
 	.2byte 0
-	.4byte sub_08070374
+	.4byte getTimestamp__5Sound
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807038C
+	.4byte getPlayerClock__5Sound
 
 vt_09F80770::
 	.2byte 0
@@ -93662,55 +93662,55 @@ _vt.10RhythmGame::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806FFBC
+	.4byte setup__5SoundUs
 	.2byte 0
 	.2byte 0
-	.4byte play__5Soundb
+	.4byte play__5Soundi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080700E4
+	.4byte stop__5Soundi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08070118
+	.4byte continue_play__5Soundi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807014C
+	.4byte clear__5Soundi
 	.2byte 0
 	.2byte 0
 	.4byte isPlaying__5Sound
 	.2byte 0
 	.2byte 0
-	.4byte sub_080701F8
+	.4byte sound_1f8__5Sound
 	.2byte 0
 	.2byte 0
-	.4byte sub_08070250
+	.4byte sound_250__5Sound
 	.2byte 0
 	.2byte 0
-	.4byte sub_080702C0
+	.4byte setTempo__5Soundi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080702EC
+	.4byte setVolume__5Soundi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08070320
+	.4byte setPan__5Soundi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807035C
+	.4byte getIndex__5Sound
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807487C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08070364
+	.4byte getVolume__5Sound
 	.2byte 0
 	.2byte 0
-	.4byte sub_08070368
+	.4byte getPan__5Sound
 	.2byte 0
 	.2byte 0
-	.4byte sub_08070374
+	.4byte getTimestamp__5Sound
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807038C
+	.4byte getPlayerClock__5Sound
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807476C
@@ -99148,55 +99148,55 @@ vt_09F84AE8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806FFBC
+	.4byte setup__5SoundUs
 	.2byte 0
 	.2byte 0
-	.4byte play__5Soundb
+	.4byte play__5Soundi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080700E4
+	.4byte stop__5Soundi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08070118
+	.4byte continue_play__5Soundi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807014C
+	.4byte clear__5Soundi
 	.2byte 0
 	.2byte 0
 	.4byte isPlaying__5Sound
 	.2byte 0
 	.2byte 0
-	.4byte sub_080701F8
+	.4byte sound_1f8__5Sound
 	.2byte 0
 	.2byte 0
-	.4byte sub_08070250
+	.4byte sound_250__5Sound
 	.2byte 0
 	.2byte 0
-	.4byte sub_080702C0
+	.4byte setTempo__5Soundi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080702EC
+	.4byte setVolume__5Soundi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08070320
+	.4byte setPan__5Soundi
 	.2byte 0
 	.2byte 0
 	.4byte sub_08086D80
 	.2byte 0
 	.2byte 0
-	.4byte sub_08070360
+	.4byte getTempo__5Sound
 	.2byte 0
 	.2byte 0
-	.4byte sub_08070364
+	.4byte getVolume__5Sound
 	.2byte 0
 	.2byte 0
-	.4byte sub_08070368
+	.4byte getPan__5Sound
 	.2byte 0
 	.2byte 0
-	.4byte sub_08070374
+	.4byte getTimestamp__5Sound
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807038C
+	.4byte getPlayerClock__5Sound
 	.2byte 0
 	.2byte 0
 	.4byte sub_08086D84
@@ -99620,13 +99620,13 @@ vt_09F84F00::
 	.2byte 0
 	.4byte sub_08087AD4
 
-_vt.11Unk08087ED8::
+_vt.8BGHandle::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte _._11Unk08087ED8
+	.4byte _._8BGHandle
 
 _vt.11Unk08088018::
 	.2byte 0

@@ -9,7 +9,7 @@ sub_0809DA34:
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
 	adds r0, #0x60
-	bl sub_0806FF38
+	bl __5Sound
 	movs r0, #0x64
 	str r0, [r4, #0x4c]
 	movs r0, #0

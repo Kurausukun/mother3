@@ -23,7 +23,7 @@ sub_08056740:
 	orrs r0, r1
 	strh r0, [r2]
 	strh r3, [r4]
-	bl sub_080037D8
+	bl snd_vsync_on
 	b _0805679A
 	.align 2, 0
 _08056778: .4byte gUnknown_020047D0

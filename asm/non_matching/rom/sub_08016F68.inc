@@ -88,7 +88,7 @@ _08016FEC:
 	movs r0, #0
 	adds r2, r4, #0
 	movs r3, #0x1f
-	bl sub_08002E34
+	bl lerp2
 	strh r0, [r5]
 	ldr r5, _08017048
 	lsls r1, r6, #0x10
@@ -96,7 +96,7 @@ _08016FEC:
 	movs r0, #0
 	adds r2, r4, #0
 	movs r3, #0x1f
-	bl sub_08002E34
+	bl lerp2
 	strh r0, [r5]
 	ldr r5, _0801704C
 	mov r0, r8
@@ -105,7 +105,7 @@ _08016FEC:
 	movs r0, #0
 	adds r2, r4, #0
 	movs r3, #0x1f
-	bl sub_08002E34
+	bl lerp2
 	b _08017118
 	.align 2, 0
 _08017040: .4byte 0x000002DE
@@ -122,7 +122,7 @@ _08017050:
 	movs r1, #0
 	adds r2, r4, #0
 	movs r3, #0x1f
-	bl sub_08002E34
+	bl lerp2
 	strh r0, [r5]
 	ldr r5, _08017094
 	lsls r0, r6, #0x10
@@ -130,7 +130,7 @@ _08017050:
 	movs r1, #0
 	adds r2, r4, #0
 	movs r3, #0x1f
-	bl sub_08002E34
+	bl lerp2
 	strh r0, [r5]
 	ldr r5, _08017098
 	mov r3, r8
@@ -139,7 +139,7 @@ _08017050:
 	movs r1, #0
 	adds r2, r4, #0
 	movs r3, #0x1f
-	bl sub_08002E34
+	bl lerp2
 	b _08017118
 	.align 2, 0
 _08017090: .4byte gUnknown_0200002C

@@ -49,7 +49,7 @@ _08025FF0:
 	b _08026000
 _08025FFA:
 	movs r0, #5
-	bl sub_08003BA8
+	bl musicPlayerStop_sfx
 _08026000:
 	ldr r4, _080260A0
 	ldr r1, _080260A4
@@ -58,11 +58,11 @@ _08026000:
 	cmp r0, #0xe8
 	bne _08026012
 	movs r0, #9
-	bl sub_08003BA8
+	bl musicPlayerStop_sfx
 _08026012:
 	movs r0, #8
 	movs r1, #4
-	bl sub_08003B30
+	bl musicPlayerFadeOut_sfx
 	adds r2, r5, #0
 	adds r2, #0xca
 	ldrb r1, [r2]

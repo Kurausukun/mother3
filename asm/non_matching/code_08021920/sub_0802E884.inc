@@ -60,7 +60,7 @@ _0802E8E0:
 	adds r7, #0x9a
 	ldrh r2, [r7]
 	ldrh r3, [r3]
-	bl sub_08002E34
+	bl lerp2
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	ldr r3, _0802E9AC

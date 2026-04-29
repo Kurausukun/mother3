@@ -6,7 +6,7 @@ sub_08081F8C:
 	adds r4, r2, #0
 	adds r0, #0x9c
 	movs r1, #0
-	bl sub_0806D540
+	bl getPalette__9CCLHandleUi
 	lsls r4, r4, #1
 	adds r0, r0, r4
 	ldrh r0, [r0]

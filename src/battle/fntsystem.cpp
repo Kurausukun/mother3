@@ -1,6 +1,7 @@
 // Auto-generated source file#include "battle/keypad.h"
 #include "base.h"
 #include "battle/clock.h"
+#include "battle/archive.h"
 #include "global.h"
 
 extern ClockData gUnknown_080FFD3C;
@@ -8,176 +9,134 @@ extern ClockData gUnknown_080FFD3C;
 extern "C" void __11Unk08088018(void*);
 extern "C" void LZ77UnCompWram(void*, void*);
 
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D2CC.inc", void sub_0806D2CC());
-
-struct Unk1 {
-    u32 _0;
-    u16 _4;
-    u8 pad_6[2];
-    u16 _8;
-    u8 pad_A[2];
-    u8 _C;  // TODO: determine size
-};
-
-struct Unk2 {
-    Unk1* _0;
-    u32 _4;
-};
-
-class Unk0806D478 {
-public:
-    u16 _u0;
-    u16 _u2;
-    void* _u4;
-
-    Unk0806D478();
-    Unk0806D478(Unk2*);
-    virtual ~Unk0806D478();
-    int sub_0806D4D0(Unk2*);
-    int sub_0806D504(Unk2*);
-    void sub_0806D520(Unk2*);
-    void sub_0806D52C(Unk2*);
-};
-
-Unk0806D478::Unk0806D478() {  // __11Unk0806D478
-    _u0 = 0;
-    _u2 = 0;
-    _u4 = NULL;
+CCLHandle::CCLHandle() {  // __9CCLHandle
+    mType = 0;
+    mCount = 0;
+    mBlock = NULL;
 }
 
-Unk0806D478::Unk0806D478(Unk2* arg0) {
-    _u0 = 0;
-    _u2 = 0;
-    _u4 = NULL;
-    sub_0806D4D0(arg0);
+CCLHandle::CCLHandle(const ResPtr& ref) {
+    mType = 0;
+    mCount = 0;
+    mBlock = NULL;
+    init(ref);
 }
 
-Unk0806D478::~Unk0806D478() {}
+CCLHandle::~CCLHandle() {}
 
-int Unk0806D478::sub_0806D4D0(Unk2* arg0) {
-    this->_u0 = this->sub_0806D504(arg0);
+int CCLHandle::init(const ResPtr& ref) {
+    mType = type(ref);
 
-    switch (this->_u0) {
+    switch (mType) {
     case 1:
-        this->sub_0806D520(arg0);
+        read1(ref);
         break;
     case 2:
-        this->sub_0806D52C(arg0);
+        read2(ref);
         break;
     }
 
     return 1;
 }
 
-int Unk0806D478::sub_0806D504(Unk2* arg0) {
-    if (arg0->_0->_0 != 0x206C6363) {  // " lcc"
+int CCLHandle::type(const ResPtr& ref) {
+    if (RESOURCE(ref)->header != HEADER_CCL) {  // " lcc"
         return 1;
     } else {
-        return arg0->_0->_4;
+        return RESOURCE(ref)->type;
     }
 }
 
-void Unk0806D478::sub_0806D520(Unk2* arg0) {
-    this->_u2 = arg0->_4 >> 5;
-    this->_u4 = (void*)arg0->_0;
+void CCLHandle::read1(const ResPtr& ref) {
+    mCount = ref.size >> 5;
+    mBlock = ref.address;
 }
 
-void Unk0806D478::sub_0806D52C(Unk2* arg0) {
-    this->_u2 = arg0->_0->_8;
-    this->_u4 = (void*)&arg0->_0->_C;
+void CCLHandle::read2(const ResPtr& ref) {
+    mCount = RESOURCE(ref)->count;
+    mBlock = (void*)&RESOURCE(ref)->block;
 }
 
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D538.inc", void sub_0806D538());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D53C.inc", void sub_0806D53C());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D540.inc", void sub_0806D540());
-
-class Unk0806D548 {
-public:
-    u16 _0;
-    u8* _4;
-    u16 _8;
-    u32 _C;
-
-    Unk0806D548();
-    Unk0806D548(Unk2*);
-    virtual ~Unk0806D548();
-    int sub_0806D5AC(Unk2*);
-    int sub_0806D5F0(Unk2*);
-    void sub_0806D60C(Unk2*);
-    void sub_0806D618(Unk2*);
-};
-
-Unk0806D548::Unk0806D548() {
-    _0 = 0;
-    _4 = NULL;
-    _8 = 0;
-    _C = 0;
+u16 CCLHandle::count() {
+    return mCount;
 }
 
-Unk0806D548::Unk0806D548(Unk2* arg0) {
-    _0 = 0;
-    _4 = NULL;
-    _8 = 0;
-    _C = 0;
-    sub_0806D5AC(arg0);
+const void* CCLHandle::block() {
+    return mBlock;
 }
 
-Unk0806D548::~Unk0806D548() {
-    delete[] _4;
+const void* CCLHandle::getPalette(u32 idx) {
+    return (const void*)((u32)mBlock + (idx << 5));
 }
 
-int Unk0806D548::sub_0806D5AC(Unk2* arg0) {
-    delete[] _4;
-    _4 = NULL;
+CCGHandle::CCGHandle() {
+    mType = 0;
+    mReserve = NULL;
+    mCount = 0;
+    mBlock = NULL;
+}
 
-    _0 = sub_0806D5F0(arg0);
+CCGHandle::CCGHandle(const ResPtr& ref) {
+    mType = 0;
+    mReserve = NULL;
+    mCount = 0;
+    mBlock = NULL;
+    init(ref);
+}
 
-    switch (_0) {
+CCGHandle::~CCGHandle() {
+    delete[] mReserve;
+}
+
+int CCGHandle::init(const ResPtr& ref) {
+    delete[] mReserve;
+    mReserve = NULL;
+
+    mType = type(ref);
+
+    switch (mType) {
     case 1:
-        sub_0806D60C(arg0);
+        read1(ref);
         break;
     case 2:
-        sub_0806D618(arg0);
+        read2(ref);
         break;
     }
 
     return 1;
 }
 
-int Unk0806D548::sub_0806D5F0(Unk2* arg0) {
-    if (arg0->_0->_0 != 0x20676363) {  // " gcc"
+int CCGHandle::type(const ResPtr& ref) {
+    if (RESOURCE(ref)->header != HEADER_CCG) {  // " gcc"
         return 1;
     } else {
-        return arg0->_0->_4;
+        return RESOURCE(ref)->type;
     }
 }
 
-void Unk0806D548::sub_0806D60C(Unk2* arg0) {
-    this->_8 = arg0->_4 >> 5;
-    this->_C = (u32)arg0->_0;
+void CCGHandle::read1(const ResPtr& ref) {
+    mCount = ref.size >> 5;
+    mBlock = ref.address;
 }
 
-void Unk0806D548::sub_0806D618(Unk2* arg0) {
-    Unk1* arg1 = arg0->_0;
+void CCGHandle::read2(const ResPtr& ref) {
+    Resource* ccg = RESOURCE(ref);
 
-    this->_8 = arg1->_8;
+    mCount = ccg->count;
 
-    // get the size of the compressed data
-    this->_4 = new u8[((*(u32*)&arg1->_C) >> 8) + 0x20];
-    LZ77UnCompWram(&arg1->_C, this->_4);
-    this->_C = (u32)this->_4;
+    // allocate memory for uncompressed data
+    mReserve = new u8[((*(u32*)&ccg->block) >> 8) + 0x20];
+    LZ77UnCompWram(&ccg->block, (void*)mReserve);
+    mBlock = mReserve;
 }
 
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D644.inc", void sub_0806D644());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806D648.inc", void sub_0806D648());
+u16 CCGHandle::count() {
+    return mCount;
+}
 
-// TODO: actually define this
-class Unk08087ED8 {
-public:
-    u8 pad_0[0x10];
-    Unk08087ED8();           // __11Unk08087ED8
-    virtual ~Unk08087ED8();  // _._11Unk08087ED8
-};
+const void* CCGHandle::block() {
+    return mBlock;
+}
 
 class Tuple16 {
 public:
@@ -205,9 +164,9 @@ public:
     u16 _26;
     Tuple16 _28;
     Tuple16 _2C;
-    Unk08087ED8 _30;
-    Unk0806D548 _44;
-    Unk0806D478 _58;
+    BGHandle _30;
+    CCGHandle _44;
+    CCLHandle _58;
     Unk08088018 _64;
     u16 _68;
 
@@ -328,8 +287,8 @@ extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E480.inc", void sub_0806
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E488.inc", void sub_0806E488());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E4B8.inc", void sub_0806E4B8());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E4C4.inc", void sub_0806E4C4());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E500.inc", void sub_0806E500());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E50C.inc", void sub_0806E50C());
+extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E500.inc", void getRTTI_9FntSystem());
+extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E50C.inc", void __9FntSystem());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E618.inc", void sub_0806E618());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E640.inc", void sub_0806E640());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E6D8.inc", void sub_0806E6D8());

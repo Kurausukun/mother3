@@ -55,7 +55,7 @@ _08004E74:
 	cmp r0, #6
 	beq _08004ED6
 	movs r0, #5
-	bl sub_08003BA8
+	bl musicPlayerStop_sfx
 _08004ED6:
 	bl sub_08027A28
 	bl sub_08001960
