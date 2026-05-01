@@ -13,6 +13,7 @@ public:
     Goods(u16 id, Unit* user, u16 a2);
     virtual ~Goods() override;
 
+    virtual void* getRTTI();
     void action_150() override;
     Action* action_1c0() override;
     bool fire() override;
@@ -66,7 +67,7 @@ public:
 
 Msg sub_08073444(u16 idx);
 
-extern "C" void* getGoodsRTTI();
+//extern "C" void* getGoodsRTTI();
 
 RTTI(Goods);
 

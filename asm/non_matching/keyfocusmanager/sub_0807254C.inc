@@ -11,5 +11,5 @@ sub_0807254C:
 	bx r0
 	.align 2, 0
 _08072560: .4byte gUnknown_02001F9C
-_08072564: .4byte vt_09F811E0
+_08072564: .4byte _vt.22KeyFocusManagerManager
 	.syntax divided

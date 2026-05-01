@@ -10,6 +10,6 @@ sub_0808307C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08083090: .4byte gUnknown_020034A0
-_08083094: .4byte vt_09F83C10
+_08083090: .4byte sPsiRTTI
+_08083094: .4byte _vt.7PsiRTTI
 	.syntax divided

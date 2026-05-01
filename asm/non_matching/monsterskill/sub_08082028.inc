@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08082028:
+getRTTI__12MonsterSkill:
 	push {lr}
 	bl get__16MonsterSkillRTTI
 	pop {r1}

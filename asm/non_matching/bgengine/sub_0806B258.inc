@@ -52,6 +52,6 @@ _0806B2B2:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0806B2C4: .4byte vt_09F7EFB0
+_0806B2C4: .4byte _vt.8BGEngine
 _0806B2C8: .4byte 0x0000FFF8
 	.syntax divided

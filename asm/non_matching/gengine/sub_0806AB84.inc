@@ -7,5 +7,5 @@ sub_0806AB84:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0806AB94: .4byte vt_09F7EF30
+_0806AB94: .4byte _vt.7GEngine
 	.syntax divided

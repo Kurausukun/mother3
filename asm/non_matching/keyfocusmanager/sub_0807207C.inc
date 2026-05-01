@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0807207C:
+__15KeyFocusManager:
 	push {r4, r5, r6, lr}
 	mov r6, sl
 	mov r5, sb
@@ -338,7 +338,7 @@ sub_0807207C:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080723A0: .4byte vt_09F81160
+_080723A0: .4byte _vt.15KeyFocusManager
 _080723A4: .4byte _vt.3Unk
 _080723A8: .4byte _vt.10UpKeyPress
 _080723AC: .4byte gUnknown_08104FC8

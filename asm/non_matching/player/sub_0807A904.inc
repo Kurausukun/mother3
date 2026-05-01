@@ -192,7 +192,7 @@ sub_0807A904:
 	bx r1
 	.align 2, 0
 _0807AAB4: .4byte vt_09F82070
-_0807AAB8: .4byte vt_09F820E8
+_0807AAB8: .4byte _vt.6Player
 _0807AABC: .4byte gCharStats
 _0807AAC0: .4byte gLevelStatTable
 _0807AAC4: .4byte 0x0000020A

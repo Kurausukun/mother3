@@ -17,5 +17,5 @@ _08072410:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08072420: .4byte vt_09F81160
+_08072420: .4byte _vt.15KeyFocusManager
 	.syntax divided

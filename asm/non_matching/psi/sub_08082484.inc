@@ -20,5 +20,5 @@ sub_08082484:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080824AC: .4byte vt_09F83548
+_080824AC: .4byte _vt.12MonsterSkill
 	.syntax divided

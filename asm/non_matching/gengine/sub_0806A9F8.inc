@@ -191,7 +191,7 @@ _0806AB10:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0806AB74: .4byte vt_09F7EF30
+_0806AB74: .4byte _vt.7GEngine
 _0806AB78: .4byte _vt.3Unk
 _0806AB7C: .4byte _vt.8SysClock
 _0806AB80: .4byte gUnknown_080FF19C

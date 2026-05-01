@@ -106,7 +106,7 @@ _08074958:
 	b _080749C8
 	.align 2, 0
 _08074990: .4byte _vt.3Unk
-_08074994: .4byte vt_09F81278
+_08074994: .4byte _vt.8RhythmIn
 _08074998:
 	ldr r0, [r2, #0x58]
 	cmp r0, #2
@@ -136,5 +136,5 @@ _080749C8:
 	bx r0
 	.align 2, 0
 _080749D0: .4byte _vt.3Unk
-_080749D4: .4byte vt_09F811F8
+_080749D4: .4byte _vt.9RhythmOut
 	.syntax divided

@@ -185,7 +185,7 @@ _0806B1E0:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0806B244: .4byte vt_09F7EFB0
+_0806B244: .4byte _vt.8BGEngine
 _0806B248: .4byte 0xFFF80000
 _0806B24C: .4byte _vt.3Unk
 _0806B250: .4byte _vt.8SysClock

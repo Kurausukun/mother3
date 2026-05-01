@@ -10,9 +10,9 @@
 #include "battle/unitTarget.h"
 #include "global.h"
 
-extern u32 gUnknown_02002134;  // TODO: confirm type
-extern u32 gUnknown_02002128;  // TODO: confirm type
-extern u32 gUnknown_0200211C;  // TODO: confirm type
+extern u32 sRhythmInRTTI;  // TODO: confirm type
+extern u32 sRhythmOutRTTI;  // TODO: confirm type
+extern u32 sRhythmBgmRTTI;  // TODO: confirm type
 extern Intr2 gUnknown_08105CD0;
 extern ClockData gUnknown_08105CD8;
 
@@ -57,7 +57,7 @@ extern "C" void* sub_08074098(u16 arg0, u32 arg1, u16 arg2) {
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_080740AC.inc", void sub_080740AC());
 
 extern "C" bool IsGoodsAndType(Action* action, u16 id) {
-    return action && action->getRTTI() == getGoodsRTTI() && action->id() == id;
+    return action && action->getRTTI() == GoodsRTTI::get() && action->id() == id;
 }
 
 extern "C" void* sub_08074124(u16 arg0) {
@@ -174,30 +174,30 @@ extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_0807459C__FUsiii.inc", void sub
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08074614.inc", void sub_08074614());
 
 extern "C" u32* sub_08074630() {
-    return &gUnknown_02002134;
+    return &sRhythmInRTTI;
 }
 
-extern "C" u32* sub_08074638() {
+extern "C" u32* getRTTI__RhythmIn() {
     return sub_08074630();
 }
 
 extern "C" u32* sub_08074644() {
-    return &gUnknown_02002128;
+    return &sRhythmOutRTTI;
 }
 
-extern "C" u32* sub_0807464C() {
+extern "C" u32* getRTTI__9RhythmOut() {
     return sub_08074644();
 }
 
 extern "C" u32* sub_08074658() {
-    return &gUnknown_0200211C;
+    return &sRhythmBgmRTTI;
 }
 
-extern "C" u32* sub_08074660() {
+extern "C" u32* getRTTI__9RhythmBgm() {
     return sub_08074658();
 }
 
-RhythmGame::RhythmGame(u16 songNum) : Sound(songNum) {
+RhythmBgm::RhythmBgm(u16 songNum) : Sound(songNum) {
     rhythmData = GetRhythmDataBySongNum(this, songNum);
     field_40 = 0;
     field_44 = 0;
@@ -212,7 +212,7 @@ RhythmGame::RhythmGame(u16 songNum) : Sound(songNum) {
     listen(ClockManager::get(), AppClock(), gUnknown_08105CD8);
 }
 
-extern "C" const RhythmInfo* GetRhythmDataBySongNum(RhythmGame* game, u16 songNum) {
+extern "C" const RhythmInfo* GetRhythmDataBySongNum(RhythmBgm* game, u16 songNum) {
     int i;
 
     for (i = 0; i < 119; i++) {

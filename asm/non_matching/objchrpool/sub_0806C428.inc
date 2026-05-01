@@ -10,7 +10,7 @@ sub_0806C428:
 	ldr r4, _0806C454
 	movs r0, #0x50
 	bl __builtin_new
-	bl sub_0806C4AC
+	bl __10ObjChrPool
 	str r0, [r4]
 _0806C444:
 	ldr r0, _0806C454

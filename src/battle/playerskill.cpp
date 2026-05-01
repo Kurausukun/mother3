@@ -115,10 +115,10 @@ extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0808025C.inc", void sub_08
 extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0808028C.inc", void sub_0808028C());
 extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_080802A4.inc", void sub_080802A4());
 extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_080803B4.inc", void sub_080803B4());
-extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_080803BC.inc", void sub_080803BC());
+extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_080803BC.inc", void getRTTI__11PlayerSkill());
 extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_080803C8.inc", void sub_080803C8());
 extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_080803F4.inc", void sub_080803F4());
-extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_08080424.inc", void sub_08080424());
+extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_08080424.inc", void sub_08080424()); // _._11PlayerSkill
 extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_08080438.inc", void sub_08080438());
 extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0808044C.inc", void sub_0808044C());
 extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_08080454.inc", void sub_08080454());

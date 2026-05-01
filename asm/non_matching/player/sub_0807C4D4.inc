@@ -10,6 +10,6 @@ sub_0807C4D4:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0807C4E8: .4byte gUnknown_020021AC
-_0807C4EC: .4byte vt_09F82540
+_0807C4E8: .4byte sPlayerRTTI
+_0807C4EC: .4byte _vt.10PlayerRTTI
 	.syntax divided

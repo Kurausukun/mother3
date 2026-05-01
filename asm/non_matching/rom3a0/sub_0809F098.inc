@@ -516,9 +516,9 @@ _0809F4B2:
 	b _0809F584
 	.align 2, 0
 _0809F508: .4byte _vt.3Unk
-_0809F50C: .4byte vt_09F81278
+_0809F50C: .4byte _vt.8RhythmIn
 _0809F510: .4byte gUnknown_080F5FE4
-_0809F514: .4byte vt_09F811F8
+_0809F514: .4byte _vt.9RhythmOut
 _0809F518: .4byte gUnknown_080F5FEC
 _0809F51C: .4byte _vt.9AKeyPress
 _0809F520: .4byte gUnknown_080F5FF4

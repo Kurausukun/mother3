@@ -27,13 +27,13 @@ void* __12SaltwaterGunUsP4UnitUs(void*, u16, Unit*, u32);
 void* __15NewYearsEveBombUsP4UnitUs(void*, u16, Unit*, u32);
 void* __12DefaultGoodsUsP4UnitUs(void*, u16, Unit*, u32);
 
-void* sub_080BDAC0() {
+void* init__9GoodsRTTI() {
     __builtin_new(0x50);
     return __5Goods();
 }
 
 extern const char gUnknown_080FA950[];  // "Goods"
-const char* sub_080BDAD0() {
+const char* getName__9GoodsRTTI() {
     return gUnknown_080FA950;
 }
 

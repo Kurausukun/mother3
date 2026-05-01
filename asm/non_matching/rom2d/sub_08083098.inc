@@ -20,5 +20,5 @@ sub_08083098:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080830C0: .4byte vt_09F83958
+_080830C0: .4byte _vt.3Psi
 	.syntax divided

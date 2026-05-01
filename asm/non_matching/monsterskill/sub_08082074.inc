@@ -7,5 +7,5 @@ sub_08082074:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08082084: .4byte vt_09F83548
+_08082084: .4byte _vt.12MonsterSkill
 	.syntax divided

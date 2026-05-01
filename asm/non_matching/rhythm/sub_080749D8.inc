@@ -20,10 +20,10 @@ sub_080749D8:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08074A04: .4byte gUnknown_02002134
-_08074A08: .4byte vt_09F812E0
-_08074A0C: .4byte gUnknown_02002128
-_08074A10: .4byte vt_09F81260
-_08074A14: .4byte gUnknown_0200211C
-_08074A18: .4byte vt_09F81400
+_08074A04: .4byte sRhythmInRTTI
+_08074A08: .4byte _vt.12RhythmInRTTI
+_08074A0C: .4byte sRhythmOutRTTI
+_08074A10: .4byte _vt.13RhythmOutRTTI
+_08074A14: .4byte sRhythmBgmRTTI
+_08074A18: .4byte _vt.13RhythmBgmRTTI
 	.syntax divided

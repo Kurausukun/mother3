@@ -10,7 +10,7 @@ sub_08071FF8:
 	ldr r4, _08072024
 	movs r0, #0x2c
 	bl __builtin_new
-	bl sub_0807207C
+	bl __15KeyFocusManager
 	str r0, [r4]
 _08072014:
 	ldr r0, _08072024

@@ -2635,7 +2635,7 @@ vt_09F469A8::
 	.4byte sub_0809C5E8
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A8C0
+	.4byte getRTTI__6Player
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -3113,7 +3113,7 @@ vt_09F46E98::
 	.4byte sub_0809C898
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A8C0
+	.4byte getRTTI__6Player
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -3594,7 +3594,7 @@ vt_09F47390::
 	.4byte sub_0809C8D0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A8C0
+	.4byte getRTTI__6Player
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -4075,7 +4075,7 @@ vt_09F47888::
 	.4byte sub_0809CAB8
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A8C0
+	.4byte getRTTI__6Player
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -4556,7 +4556,7 @@ vt_09F47D80::
 	.4byte sub_0809CCB8
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A8C0
+	.4byte getRTTI__6Player
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -5037,7 +5037,7 @@ vt_09F48278::
 	.4byte sub_0809CF50
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A8C0
+	.4byte getRTTI__6Player
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -5521,7 +5521,7 @@ vt_09F48778::
 	.4byte sub_0809D05C
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A8C0
+	.4byte getRTTI__6Player
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -6002,7 +6002,7 @@ vt_09F48C70::
 	.4byte sub_0809D4FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A8C0
+	.4byte getRTTI__6Player
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -6477,7 +6477,7 @@ vt_09F49158::
 	.4byte sub_0809DD88
 	.2byte 0
 	.2byte 0
-	.4byte sub_080803BC
+	.4byte getRTTI__11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -6731,7 +6731,7 @@ vt_09F493F8::
 	.4byte sub_0809DF6C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080803BC
+	.4byte getRTTI__11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -6988,7 +6988,7 @@ vt_09F496A0::
 	.4byte sub_0809E04C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080803BC
+	.4byte getRTTI__11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -7245,7 +7245,7 @@ vt_09F49948::
 	.4byte sub_0809E120
 	.2byte 0
 	.2byte 0
-	.4byte sub_080803BC
+	.4byte getRTTI__11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -7499,7 +7499,7 @@ vt_09F49BE8::
 	.4byte sub_0809E390
 	.2byte 0
 	.2byte 0
-	.4byte sub_080803BC
+	.4byte getRTTI__11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -7753,7 +7753,7 @@ vt_09F49E88::
 	.4byte sub_0809E5A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080803BC
+	.4byte getRTTI__11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -8007,7 +8007,7 @@ vt_09F4A128::
 	.4byte sub_0809E6EC
 	.2byte 0
 	.2byte 0
-	.4byte sub_080803BC
+	.4byte getRTTI__11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -8261,7 +8261,7 @@ vt_09F4A3C8::
 	.4byte sub_0809E834
 	.2byte 0
 	.2byte 0
-	.4byte sub_080803BC
+	.4byte getRTTI__11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -8515,7 +8515,7 @@ vt_09F4A668::
 	.4byte sub_0809E848
 	.2byte 0
 	.2byte 0
-	.4byte sub_080803BC
+	.4byte getRTTI__11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -8772,7 +8772,7 @@ vt_09F4A910::
 	.4byte sub_0809E85C
 	.2byte 0
 	.2byte 0
-	.4byte sub_080803BC
+	.4byte getRTTI__11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -9029,7 +9029,7 @@ vt_09F4ABB8::
 	.4byte sub_0809E870
 	.2byte 0
 	.2byte 0
-	.4byte sub_080803BC
+	.4byte getRTTI__11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -9286,7 +9286,7 @@ vt_09F4AE60::
 	.4byte sub_0809E884
 	.2byte 0
 	.2byte 0
-	.4byte sub_080803BC
+	.4byte getRTTI__11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -9543,7 +9543,7 @@ vt_09F4B108::
 	.4byte sub_0809E8DC
 	.2byte 0
 	.2byte 0
-	.4byte sub_080803BC
+	.4byte getRTTI__11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -9800,7 +9800,7 @@ vt_09F4B3B0::
 	.4byte sub_0809F6E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080803BC
+	.4byte getRTTI__11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -10087,7 +10087,7 @@ vt_09F4B6A8::
 	.4byte sub_0809FC10
 	.2byte 0
 	.2byte 0
-	.4byte sub_080803BC
+	.4byte getRTTI__11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -48904,7 +48904,7 @@ vt_09F64750::
 	.4byte sub_080B0774
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -49164,7 +49164,7 @@ vt_09F64A00::
 	.4byte sub_080B083C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -49424,7 +49424,7 @@ vt_09F64CB0::
 	.4byte sub_080B0998
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -49684,7 +49684,7 @@ vt_09F64F60::
 	.4byte sub_080B0A78
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -49944,7 +49944,7 @@ vt_09F65210::
 	.4byte sub_080B0B30
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -50204,7 +50204,7 @@ vt_09F654C0::
 	.4byte sub_080B0CA4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -50464,7 +50464,7 @@ vt_09F65770::
 	.4byte sub_080B0DE8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -50724,7 +50724,7 @@ vt_09F65A20::
 	.4byte sub_080B0E50
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -50984,7 +50984,7 @@ vt_09F65CD0::
 	.4byte sub_080B0EA8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -51244,7 +51244,7 @@ vt_09F65F80::
 	.4byte sub_080B0F24
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -51504,7 +51504,7 @@ vt_09F66230::
 	.4byte sub_080B1144
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -51764,7 +51764,7 @@ vt_09F664E0::
 	.4byte sub_080B1224
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -52024,7 +52024,7 @@ vt_09F66790::
 	.4byte sub_080B136C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -52284,7 +52284,7 @@ vt_09F66A40::
 	.4byte sub_080B1414
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -52544,7 +52544,7 @@ vt_09F66CF0::
 	.4byte sub_080B1468
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -52804,7 +52804,7 @@ vt_09F66FA0::
 	.4byte sub_080B15AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -53064,7 +53064,7 @@ vt_09F67250::
 	.4byte sub_080B163C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -53324,7 +53324,7 @@ vt_09F67500::
 	.4byte sub_080B1760
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -53584,7 +53584,7 @@ vt_09F677B0::
 	.4byte sub_080B1884
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -53844,7 +53844,7 @@ vt_09F67A60::
 	.4byte sub_080B18F0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -54104,7 +54104,7 @@ vt_09F67D10::
 	.4byte sub_080B195C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -54364,7 +54364,7 @@ vt_09F67FC0::
 	.4byte sub_080B1C34
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -54624,7 +54624,7 @@ vt_09F68270::
 	.4byte sub_080B1C88
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -54884,7 +54884,7 @@ vt_09F68520::
 	.4byte sub_080B1DBC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -55144,7 +55144,7 @@ vt_09F687D0::
 	.4byte sub_080B1F50
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -55404,7 +55404,7 @@ vt_09F68A80::
 	.4byte sub_080B209C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -55664,7 +55664,7 @@ vt_09F68D30::
 	.4byte sub_080B21E8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -55924,7 +55924,7 @@ vt_09F68FE0::
 	.4byte sub_080B2308
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -56184,7 +56184,7 @@ vt_09F69290::
 	.4byte sub_080B2588
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -56447,7 +56447,7 @@ vt_09F69548::
 	.4byte sub_080B25C4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -56707,7 +56707,7 @@ vt_09F697F8::
 	.4byte sub_080B2620
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -56967,7 +56967,7 @@ vt_09F69AA8::
 	.4byte sub_080B2780
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -57227,7 +57227,7 @@ vt_09F69D58::
 	.4byte sub_080B27D4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -57487,7 +57487,7 @@ vt_09F6A008::
 	.4byte sub_080B2830
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -57747,7 +57747,7 @@ vt_09F6A2B8::
 	.4byte sub_080B2970
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -58007,7 +58007,7 @@ vt_09F6A568::
 	.4byte sub_080B2A9C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -58267,7 +58267,7 @@ vt_09F6A818::
 	.4byte sub_080B2B8C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -58527,7 +58527,7 @@ vt_09F6AAC8::
 	.4byte sub_080B2CD8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -58787,7 +58787,7 @@ vt_09F6AD78::
 	.4byte sub_080B2D88
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -59047,7 +59047,7 @@ vt_09F6B028::
 	.4byte sub_080B2E0C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -59307,7 +59307,7 @@ vt_09F6B2D8::
 	.4byte sub_080B2F70
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -59567,7 +59567,7 @@ vt_09F6B588::
 	.4byte sub_080B314C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -59833,7 +59833,7 @@ vt_09F6B848::
 	.4byte sub_080B3218
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -60093,7 +60093,7 @@ vt_09F6BAF8::
 	.4byte sub_080B32A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -60353,7 +60353,7 @@ vt_09F6BDA8::
 	.4byte sub_080B32D4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -60613,7 +60613,7 @@ vt_09F6C058::
 	.4byte sub_080B3308
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -60873,7 +60873,7 @@ vt_09F6C308::
 	.4byte sub_080B33D0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -61133,7 +61133,7 @@ vt_09F6C5B8::
 	.4byte sub_080B3498
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -61393,7 +61393,7 @@ vt_09F6C868::
 	.4byte sub_080B3560
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -61653,7 +61653,7 @@ vt_09F6CB18::
 	.4byte sub_080B3628
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -61913,7 +61913,7 @@ vt_09F6CDC8::
 	.4byte sub_080B37A0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -62173,7 +62173,7 @@ vt_09F6D078::
 	.4byte sub_080B3868
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -62433,7 +62433,7 @@ vt_09F6D328::
 	.4byte sub_080B392C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -62693,7 +62693,7 @@ vt_09F6D5D8::
 	.4byte sub_080B3A70
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -62953,7 +62953,7 @@ vt_09F6D888::
 	.4byte sub_080B3AC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -63213,7 +63213,7 @@ vt_09F6DB38::
 	.4byte sub_080B3AF0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -63473,7 +63473,7 @@ vt_09F6DDE8::
 	.4byte sub_080B3B7C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -63733,7 +63733,7 @@ vt_09F6E098::
 	.4byte sub_080B3D2C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -63993,7 +63993,7 @@ vt_09F6E348::
 	.4byte sub_080B3D58
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -64253,7 +64253,7 @@ vt_09F6E5F8::
 	.4byte sub_080B3DEC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -64513,7 +64513,7 @@ vt_09F6E8A8::
 	.4byte sub_080B4040
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -64773,7 +64773,7 @@ vt_09F6EB58::
 	.4byte sub_080B4260
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -65033,7 +65033,7 @@ vt_09F6EE08::
 	.4byte sub_080B4400
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -65293,7 +65293,7 @@ vt_09F6F0B8::
 	.4byte sub_080B4484
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -65553,7 +65553,7 @@ vt_09F6F368::
 	.4byte sub_080B452C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -65813,7 +65813,7 @@ vt_09F6F618::
 	.4byte sub_080B4584
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -66073,7 +66073,7 @@ vt_09F6F8C8::
 	.4byte sub_080B45B4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -66333,7 +66333,7 @@ vt_09F6FB78::
 	.4byte sub_080B45E0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -66593,7 +66593,7 @@ vt_09F6FE28::
 	.4byte sub_080B471C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -66853,7 +66853,7 @@ vt_09F700D8::
 	.4byte sub_080B47CC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -67113,7 +67113,7 @@ vt_09F70388::
 	.4byte sub_080B480C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -67373,7 +67373,7 @@ vt_09F70638::
 	.4byte sub_080B4868
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -67633,7 +67633,7 @@ vt_09F708E8::
 	.4byte sub_080B4928
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -67893,7 +67893,7 @@ vt_09F70B98::
 	.4byte sub_080B49C0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -68153,7 +68153,7 @@ vt_09F70E48::
 	.4byte sub_080B4B00
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -68413,7 +68413,7 @@ vt_09F710F8::
 	.4byte sub_080B4B30
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -68673,7 +68673,7 @@ vt_09F713A8::
 	.4byte sub_080B4C30
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -68936,7 +68936,7 @@ vt_09F71660::
 	.4byte sub_080B4C84
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -69196,7 +69196,7 @@ vt_09F71910::
 	.4byte sub_080B4E5C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -69456,7 +69456,7 @@ vt_09F71BC0::
 	.4byte sub_080B4F54
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -69716,7 +69716,7 @@ vt_09F71E70::
 	.4byte sub_080B4FB0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -69976,7 +69976,7 @@ vt_09F72120::
 	.4byte sub_080B504C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -78062,7 +78062,7 @@ vt_09F77440::
 	.4byte sub_080BC5C4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AE4
+	.4byte getRTTI__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -78325,7 +78325,7 @@ vt_09F776F8::
 	.4byte sub_080BC688
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AE4
+	.4byte getRTTI__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -78588,7 +78588,7 @@ vt_09F779B0::
 	.4byte sub_080BC754
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AE4
+	.4byte getRTTI__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -78851,7 +78851,7 @@ vt_09F77C68::
 	.4byte sub_080BC81C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AE4
+	.4byte getRTTI__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -79114,7 +79114,7 @@ vt_09F77F20::
 	.4byte sub_080BC8E4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AE4
+	.4byte getRTTI__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -79377,7 +79377,7 @@ vt_09F781D8::
 	.4byte sub_080BC9AC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AE4
+	.4byte getRTTI__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -79640,7 +79640,7 @@ vt_09F78490::
 	.4byte sub_080BCA74
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AE4
+	.4byte getRTTI__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -79903,7 +79903,7 @@ vt_09F78748::
 	.4byte sub_080BCF98
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AE4
+	.4byte getRTTI__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -80169,7 +80169,7 @@ vt_09F78A08::
 	.4byte sub_080BCFEC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AE4
+	.4byte getRTTI__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -80432,7 +80432,7 @@ vt_09F78CC0::
 	.4byte sub_080BD1BC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AE4
+	.4byte getRTTI__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -80695,7 +80695,7 @@ vt_09F78F78::
 	.4byte sub_080BD6F8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AE4
+	.4byte getRTTI__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -80958,7 +80958,7 @@ vt_09F79230::
 	.4byte sub_080BD81C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AE4
+	.4byte getRTTI__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -81221,7 +81221,7 @@ vt_09F794E8::
 	.4byte sub_080BD940
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AE4
+	.4byte getRTTI__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -81484,7 +81484,7 @@ __vt_5Goods::
 	.4byte sub_080BDAAC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AE4
+	.4byte getRTTI__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -81747,7 +81747,7 @@ _vt.5Goods::
 	.4byte _._5Goods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064974
+	.4byte getRTTI__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -82007,16 +82007,16 @@ _vt.5Goods::
 	.2byte 0
 	.4byte isKeyItem__C5Goods
 
-vt_09F79D20::
+_vt.9GoodsRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BDAD0
+	.4byte getName__9GoodsRTTI
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BDAC0
+	.4byte init__9GoodsRTTI
 
 _vt.11TriviaCard4::
 	.2byte 0
@@ -82027,7 +82027,7 @@ _vt.11TriviaCard4::
 	.4byte _._11TriviaCard4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064974
+	.4byte getRTTI__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -82305,7 +82305,7 @@ _vt.11TriviaCard3::
 	.4byte _._11TriviaCard3
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064974
+	.4byte getRTTI__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -82583,7 +82583,7 @@ _vt.11TriviaCard2::
 	.4byte _._11TriviaCard2
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064974
+	.4byte getRTTI__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -82861,7 +82861,7 @@ _vt.11TriviaCard1::
 	.4byte _._11TriviaCard1
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064974
+	.4byte getRTTI__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -83139,7 +83139,7 @@ _vt.9DragoFang::
 	.4byte _._9DragoFang
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064974
+	.4byte getRTTI__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -83417,7 +83417,7 @@ _vt.14ShieldSnatcher::
 	.4byte _._14ShieldSnatcher
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064974
+	.4byte getRTTI__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -83695,7 +83695,7 @@ _vt.16CupOfLifenoodles::
 	.4byte _._16CupOfLifenoodles
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064974
+	.4byte getRTTI__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -83973,7 +83973,7 @@ _vt.10SecretHerb::
 	.4byte _._10SecretHerb
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064974
+	.4byte getRTTI__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -84251,7 +84251,7 @@ _vt.8PaperFan::
 	.4byte _._8PaperFan
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064974
+	.4byte getRTTI__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -84529,7 +84529,7 @@ _vt.11MadeYouLook::
 	.4byte _._11MadeYouLook
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064974
+	.4byte getRTTI__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -84807,7 +84807,7 @@ _vt.15AttackAttractor::
 	.4byte _._15AttackAttractor
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064974
+	.4byte getRTTI__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -85085,7 +85085,7 @@ _vt.15EnemyWimperizer::
 	.4byte _._15EnemyWimperizer
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064974
+	.4byte getRTTI__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -85363,7 +85363,7 @@ _vt.15EnemyBufferizer::
 	.4byte _._15EnemyBufferizer
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064974
+	.4byte getRTTI__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -85641,7 +85641,7 @@ _vt.9LottoMeal::
 	.4byte _._9LottoMeal
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064974
+	.4byte getRTTI__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -85919,7 +85919,7 @@ _vt.9DoggyFood::
 	.4byte _._9DoggyFood
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064974
+	.4byte getRTTI__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -86197,7 +86197,7 @@ _vt.14PeculiarCheese::
 	.4byte _._14PeculiarCheese
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064974
+	.4byte getRTTI__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -86475,7 +86475,7 @@ _vt.8BugSpray::
 	.4byte _._8BugSpray
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064974
+	.4byte getRTTI__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -86753,7 +86753,7 @@ _vt.13AncientBanana::
 	.4byte _._13AncientBanana
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064974
+	.4byte getRTTI__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -87031,7 +87031,7 @@ _vt.11HoneyShower::
 	.4byte _._11HoneyShower
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064974
+	.4byte getRTTI__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -87309,7 +87309,7 @@ _vt.12SaltwaterGun::
 	.4byte _._12SaltwaterGun
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064974
+	.4byte getRTTI__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -87587,7 +87587,7 @@ _vt.15NewYearsEveBomb::
 	.4byte _._15NewYearsEveBomb
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064974
+	.4byte getRTTI__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -87868,7 +87868,7 @@ _vt.12DefaultGoods::
 	.4byte _._12DefaultGoods
 	.2byte 0
 	.2byte 0
-	.4byte sub_08064974
+	.4byte getRTTI__5Goods
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -90005,7 +90005,7 @@ _vt.Q211BattleFader1A::
 	.2byte 0
 	.4byte _._11BattleFader
 
-vt_09F7EF30::
+_vt.7GEngine::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -90046,18 +90046,18 @@ vt_09F7EF30::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-vt_09F7EF98::
+_vt.14GEngineManager::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0D2C
+	.4byte getName__14GEngineManager
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0D1C
+	.4byte init__14GEngineManager
 
-vt_09F7EFB0::
+_vt.8BGEngine::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -90098,16 +90098,16 @@ vt_09F7EFB0::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-vt_09F7F018::
+_vt.15BGEngineManager::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0D48
+	.4byte getName__15BGEngineManager
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0D34
+	.4byte init__15BGEngineManager
 
 _vt.9ObjEngine::
 	.2byte 0
@@ -90150,18 +90150,18 @@ _vt.9ObjEngine::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-vt_09F7F098::
+_vt.16ObjEngineManager::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0F3C
+	.4byte getName__16ObjEngineManager
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0F28
+	.4byte init__16ObjEngineManager
 
-vt_09F7F0B0::
+_vt.10ObjChrPool::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -90170,7 +90170,7 @@ vt_09F7F0B0::
 	.4byte sub_0806C51C
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806C4A0
+	.4byte getRTTI__10ObjChrPool
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -90202,16 +90202,16 @@ vt_09F7F0B0::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-vt_09F7F118::
+_vt.17ObjChrPoolManager::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0F54
+	.4byte getName__17ObjChrPoolManager
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0F44
+	.4byte init__17ObjChrPoolManager
 
 _vt.10ObjPltPool::
 	.2byte 0
@@ -93455,7 +93455,7 @@ vt_09F810F8::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-vt_09F81160::
+_vt.15KeyFocusManager::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -93464,7 +93464,7 @@ vt_09F81160::
 	.4byte sub_080723FC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08072070
+	.4byte getRTTI__15KeyFocusManager
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -93505,27 +93505,27 @@ vt_09F81160::
 	.2byte 0
 	.4byte sub_080724F8
 
-vt_09F811E0::
+_vt.22KeyFocusManagerManager::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C14AC
+	.4byte getName__22KeyFocusManagerManager
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C149C
+	.4byte init__22KeyFocusManagerManager
 
-vt_09F811F8::
+_vt.9RhythmOut::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C14DC
+	.4byte _._9RhythmOut
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807464C
+	.4byte getRTTI__9RhythmOut
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -93557,27 +93557,27 @@ vt_09F811F8::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-vt_09F81260::
+_vt.13RhythmOutRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C14D4
+	.4byte getName__13RhythmOutRTTI
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C14B4
+	.4byte init__13RhythmOutRTTI
 
-vt_09F81278::
+_vt.8RhythmIn::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1518
+	.4byte _._8RhythmIn
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074638
+	.4byte getRTTI__RhythmIn
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -93609,18 +93609,18 @@ vt_09F81278::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-vt_09F812E0::
+_vt.12RhythmInRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1510
+	.4byte getName__12RhythmInRTTI
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C14F0
+	.4byte init__12RhythmInRTTI
 
-_vt.10RhythmGame::
+_vt.9RhythmBgm::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -93629,7 +93629,7 @@ _vt.10RhythmGame::
 	.4byte sub_0807473C
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074660
+	.4byte getRTTI__9RhythmBgm
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -93721,16 +93721,16 @@ _vt.10RhythmGame::
 	.2byte 0
 	.4byte sub_08074898
 
-vt_09F81400::
+_vt.13RhythmBgmRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C153C
+	.4byte getName__13RhythmBgmRTTI
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C152C
+	.4byte init__13RhythmBgmRTTI
 
 _vt.4Unit.10UnitObject::
 	.2byte -32
@@ -94092,10 +94092,10 @@ _vt.11UnitDieRTTI::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1554
+	.4byte getName__11UnitDieRTTI
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1544
+	.4byte init__11UnitDieRTTI
 
 _vt.10UnitEscape::
 	.2byte 0
@@ -94144,10 +94144,10 @@ _vt.14UnitEscapeRTTI::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1580
+	.4byte getName__14UnitEscapeRTTI
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1570
+	.4byte init__14UnitEscapeRTTI
 
 _vt.10UnitRevive::
 	.2byte 0
@@ -94196,10 +94196,10 @@ _vt.14UnitReviveRTTI::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C15AC
+	.4byte getName__14UnitReviveRTTI
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C159C
+	.4byte init__14UnitReviveRTTI
 
 _vt.8UnitJoin::
 	.2byte 0
@@ -94248,10 +94248,10 @@ _vt.12UnitJoinRTTI::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C15D8
+	.4byte getName__12UnitJoinRTTI
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C15C8
+	.4byte init__12UnitJoinRTTI
 
 _vt.6Resume::
 	.2byte 0
@@ -94300,10 +94300,10 @@ _vt.10ResumeRTTI::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1604
+	.4byte getName__10ResumeRTTI
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C15F4
+	.4byte init__10ResumeRTTI
 
 _vt.7Suspend::
 	.2byte 0
@@ -94352,10 +94352,10 @@ _vt.11SuspendRTTI::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1630
+	.4byte getName__11SuspendRTTI
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1620
+	.4byte init__11SuspendRTTI
 
 _vt.6Object::
 	.2byte 0
@@ -94363,7 +94363,7 @@ _vt.6Object::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C164C
+	.4byte _._6Object
 	.2byte 0
 	.2byte 0
 	.4byte __pure_virtual
@@ -95002,7 +95002,7 @@ vt_09F82070::
 	.2byte 0
 	.4byte sub_0807C4F0
 
-vt_09F820E8::
+_vt.6Player::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -95011,7 +95011,7 @@ vt_09F820E8::
 	.4byte sub_0807ACF0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807A8C0
+	.4byte getRTTI__6Player
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -95421,16 +95421,16 @@ vt_09F820E8::
 	.2byte 0
 	.4byte sub_0807C378
 
-vt_09F82540::
+_vt.10PlayerRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1680
+	.4byte getName__10PlayerRTTI
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C166C
+	.4byte init__10PlayerRTTI
 
 vt_09F82558::
 	.2byte 0
@@ -95906,7 +95906,7 @@ vt_09F82990::
 	.2byte 0
 	.4byte sub_08080148
 
-vt_09F82A28::
+_vt.11PlayerSkill::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -95915,7 +95915,7 @@ vt_09F82A28::
 	.4byte sub_08080424
 	.2byte 0
 	.2byte 0
-	.4byte sub_080803BC
+	.4byte getRTTI__11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -96160,16 +96160,16 @@ vt_09F82A28::
 	.2byte 0
 	.4byte sub_0808070C
 
-vt_09F82CC8::
+_vt.15PlayerSkillRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C16C0
+	.4byte getName__15PlayerSkillRTTI
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C16B0
+	.4byte init__15PlayerSkillRTTI
 
 _vt.10GuestSkill::
 	.2byte 0
@@ -96431,10 +96431,10 @@ _vt.14GuestSkillRTTI::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C16D8
+	.4byte getName__14GuestSkillRTTI
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C16C8
+	.4byte init__14GuestSkillRTTI
 
 _vt.7Monster.10UnitObject::
 	.2byte -32
@@ -96869,10 +96869,10 @@ _vt.11MonsterRTTI::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C16F4
+	.4byte getName__11MonsterRTTI
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C16E0
+	.4byte init__11MonsterRTTI
 
 vt_09F83418::
 	.2byte 0
@@ -96990,7 +96990,7 @@ vt_09F83418::
 	.2byte 0
 	.4byte sub_08081FC8
 
-vt_09F83548::
+_vt.12MonsterSkill::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -96999,7 +96999,7 @@ vt_09F83548::
 	.4byte sub_08082074
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082028
+	.4byte getRTTI__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -97250,16 +97250,16 @@ vt_09F83548::
 	.2byte 0
 	.4byte sub_08082460
 
-vt_09F837F8::
+_vt.16MonsterSkillRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C170C
+	.4byte getName__16MonsterSkillRTTI
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C16FC
+	.4byte init__16MonsterSkillRTTI
 
 vt_09F83810::
 	.2byte 0
@@ -97386,7 +97386,7 @@ vt_09F83810::
 	.2byte 0
 	.4byte sub_080828C8
 
-vt_09F83958::
+_vt.3Psi::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -97395,7 +97395,7 @@ vt_09F83958::
 	.4byte sub_08082BA8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AE4
+	.4byte getRTTI__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -97649,16 +97649,16 @@ vt_09F83958::
 	.2byte 0
 	.4byte sub_08083074
 
-vt_09F83C10::
+_vt.7PsiRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1724
+	.4byte getName__7PsiRTTI
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C1714
+	.4byte init__7PsiRTTI
 
 vt_09F83C28::
 	.2byte 0

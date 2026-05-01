@@ -39,7 +39,7 @@ extern "C" ASM_FUNC("asm/non_matching/psi/nullsub_40.inc", void nullsub_40());
 extern "C" ASM_FUNC("asm/non_matching/psi/sub_08082AC0.inc", void sub_08082AC0());
 extern "C" ASM_FUNC("asm/non_matching/psi/sub_08082AD8.inc", void sub_08082AD8());
 extern "C" ASM_FUNC("asm/non_matching/psi/sub_08082ADC.inc", void sub_08082ADC());
-extern "C" ASM_FUNC("asm/non_matching/psi/sub_08082AE4.inc", void sub_08082AE4());
+extern "C" ASM_FUNC("asm/non_matching/psi/sub_08082AE4.inc", void getRTTI__3Psi());
 extern "C" ASM_FUNC("asm/non_matching/psi/sub_08082AF0.inc", void sub_08082AF0());
 
 extern "C" Msg tellTurnAction(s32 unk) {
@@ -47,7 +47,7 @@ extern "C" Msg tellTurnAction(s32 unk) {
 }
 
 extern "C" ASM_FUNC("asm/non_matching/psi/sub_08082B78.inc", void sub_08082B78());
-extern "C" ASM_FUNC("asm/non_matching/psi/sub_08082BA8.inc", void sub_08082BA8());
+extern "C" ASM_FUNC("asm/non_matching/psi/sub_08082BA8.inc", void sub_08082BA8()); // _._3Psi
 extern "C" ASM_FUNC("asm/non_matching/psi/sub_08082BBC.inc", void sub_08082BBC());
 extern "C" ASM_FUNC("asm/non_matching/psi/sub_08082D70.inc", void sub_08082D70());
 extern "C" ASM_FUNC("asm/non_matching/psi/sub_08082DD0.inc", void sub_08082DD0());

@@ -20,6 +20,6 @@ sub_08082B78:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08082BA0: .4byte vt_09F83958
+_08082BA0: .4byte _vt.3Psi
 _08082BA4: .4byte gPsiData
 	.syntax divided

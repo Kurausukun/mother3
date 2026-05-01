@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0806C4AC:
+__10ObjChrPool:
 	push {r4, r5, r6, r7, lr}
 	sub sp, #0x28
 	adds r7, r0, #0
@@ -45,7 +45,7 @@ _0806C4C6:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0806C50C: .4byte vt_09F7F0B0
+_0806C50C: .4byte _vt.10ObjChrPool
 _0806C510: .4byte _vt.3Unk
 _0806C514: .4byte _vt.8SysClock
 _0806C518: .4byte gUnknown_080FF534

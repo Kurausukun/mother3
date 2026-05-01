@@ -1,7 +1,6 @@
 // Auto-generated source file
 #include "global.h"
 
-extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08064FCC.inc", void sub_08064FCC());
 extern "C" ASM_FUNC("asm/non_matching/sndmon/__5Goods.inc", void __5Goods());
 extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08065014.inc", void sub_08065014());
 extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08065138.inc", void sub_08065138());

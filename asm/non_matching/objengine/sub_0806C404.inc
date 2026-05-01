@@ -11,5 +11,5 @@ sub_0806C404:
 	bx r0
 	.align 2, 0
 _0806C418: .4byte gUnknown_02001CF4
-_0806C41C: .4byte vt_09F7F098
+_0806C41C: .4byte _vt.16ObjEngineManager
 	.syntax divided

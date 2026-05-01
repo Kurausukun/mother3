@@ -1,14 +1,14 @@
 #include "battle/player.h"
 #include "structs.h"
 
-u32 gUnknown_020021AC;
+u32 sPlayerRTTI;
 void* gUnknown_02004EE2;
 
 extern "C" void* getPlayerRTTI() {
-    return &gUnknown_020021AC;
+    return &sPlayerRTTI;
 }
 
-extern "C" void* sub_0807A8C0() {
+extern "C" void* getRTTI__6Player() {
     return getPlayerRTTI();
 }
 

@@ -10,5 +10,5 @@ sub_08074A1C:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08074A30: .4byte _vt.10RhythmGame
+_08074A30: .4byte _vt.9RhythmBgm
 	.syntax divided

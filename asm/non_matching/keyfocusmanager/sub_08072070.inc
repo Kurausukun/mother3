@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08072070:
+getRTTI__15KeyFocusManager:
 	push {lr}
 	bl sub_08071FF0
 	pop {r1}

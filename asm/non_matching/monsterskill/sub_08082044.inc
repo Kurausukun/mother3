@@ -20,6 +20,6 @@ sub_08082044:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0808206C: .4byte vt_09F83548
+_0808206C: .4byte _vt.12MonsterSkill
 _08082070: .4byte gMonsterSkillData
 	.syntax divided

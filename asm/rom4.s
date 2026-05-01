@@ -3,8 +3,8 @@
 .syntax unified
 .section .text
 
-	thumb_func_start sub_080C0D1C
-sub_080C0D1C: @ 0x080C0D1C
+	thumb_func_start init__14GEngineManager
+init__14GEngineManager: @ 0x080C0D1C
 	push {lr}
 	movs r0, #0x7c
 	bl __builtin_new
@@ -12,15 +12,15 @@ sub_080C0D1C: @ 0x080C0D1C
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080C0D2C
-sub_080C0D2C: @ 0x080C0D2C
+	thumb_func_start getName__14GEngineManager
+getName__14GEngineManager: @ 0x080C0D2C
 	ldr r0, _080C0D30 @ =gUnknown_080FF134
 	bx lr
 	.align 2, 0
 _080C0D30: .4byte gUnknown_080FF134
 
-	thumb_func_start sub_080C0D34
-sub_080C0D34: @ 0x080C0D34
+	thumb_func_start init__15BGEngineManager
+init__15BGEngineManager: @ 0x080C0D34
 	push {lr}
 	movs r0, #0x88
 	lsls r0, r0, #1
@@ -30,8 +30,8 @@ sub_080C0D34: @ 0x080C0D34
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080C0D48
-sub_080C0D48: @ 0x080C0D48
+	thumb_func_start getName__15BGEngineManager
+getName__15BGEngineManager: @ 0x080C0D48
 	ldr r0, _080C0D4C @ =gUnknown_080FF278
 	bx lr
 	.align 2, 0
@@ -287,8 +287,8 @@ _080C0F08:
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080C0F28
-sub_080C0F28: @ 0x080C0F28
+	thumb_func_start init__16ObjEngineManager
+init__16ObjEngineManager: @ 0x080C0F28
 	push {lr}
 	movs r0, #0xb5
 	lsls r0, r0, #4
@@ -298,24 +298,24 @@ sub_080C0F28: @ 0x080C0F28
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080C0F3C
-sub_080C0F3C: @ 0x080C0F3C
+	thumb_func_start getName__16ObjEngineManager
+getName__16ObjEngineManager: @ 0x080C0F3C
 	ldr r0, _080C0F40 @ =gUnknown_080FF3C0
 	bx lr
 	.align 2, 0
 _080C0F40: .4byte gUnknown_080FF3C0
 
-	thumb_func_start sub_080C0F44
-sub_080C0F44: @ 0x080C0F44
+	thumb_func_start init__17ObjChrPoolManager
+init__17ObjChrPoolManager: @ 0x080C0F44
 	push {lr}
 	movs r0, #0x50
 	bl __builtin_new
-	bl sub_0806C4AC
+	bl __10ObjChrPool
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080C0F54
-sub_080C0F54: @ 0x080C0F54
+	thumb_func_start getName__17ObjChrPoolManager
+getName__17ObjChrPoolManager: @ 0x080C0F54
 	ldr r0, _080C0F58 @ =gUnknown_080FF510
 	bx lr
 	.align 2, 0
@@ -1097,47 +1097,47 @@ getName__16SndSystemManager: @ 0x080C1494
 	.align 2, 0
 _080C1498: .4byte const_classname_SndSystem
 
-	thumb_func_start sub_080C149C
-sub_080C149C: @ 0x080C149C
+	thumb_func_start init__22KeyFocusManagerManager
+init__22KeyFocusManagerManager: @ 0x080C149C
 	push {lr}
 	movs r0, #0x2c
 	bl __builtin_new
-	bl sub_0807207C
+	bl __15KeyFocusManager
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080C14AC
-sub_080C14AC: @ 0x080C14AC
+	thumb_func_start getName__22KeyFocusManagerManager
+getName__22KeyFocusManagerManager: @ 0x080C14AC
 	ldr r0, _080C14B0 @ =gUnknown_08104FB8
 	bx lr
 	.align 2, 0
 _080C14B0: .4byte gUnknown_08104FB8
 
-	thumb_func_start sub_080C14B4
-sub_080C14B4: @ 0x080C14B4
+	thumb_func_start init__13RhythmOutRTTI
+init__13RhythmOutRTTI: @ 0x080C14B4
 	push {r4, lr}
 	movs r0, #0x20
 	bl __builtin_new
 	adds r4, r0, #0
 	bl __4Base
-	ldr r0, _080C14D0 @ =vt_09F811F8
+	ldr r0, _080C14D0 @ =_vt.9RhythmOut
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
 	pop {r4}
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080C14D0: .4byte vt_09F811F8
+_080C14D0: .4byte _vt.9RhythmOut
 
-	thumb_func_start sub_080C14D4
-sub_080C14D4: @ 0x080C14D4
+	thumb_func_start getName__13RhythmOutRTTI
+getName__13RhythmOutRTTI: @ 0x080C14D4
 	ldr r0, _080C14D8 @ =gUnknown_08105BA4
 	bx lr
 	.align 2, 0
 _080C14D8: .4byte gUnknown_08105BA4
 
-	thumb_func_start sub_080C14DC
-sub_080C14DC: @ 0x080C14DC
+	thumb_func_start _._9RhythmOut
+_._9RhythmOut: @ 0x080C14DC
 	push {lr}
 	ldr r2, _080C14EC @ =_vt.3Unk
 	str r2, [r0, #0x1c]
@@ -1147,31 +1147,31 @@ sub_080C14DC: @ 0x080C14DC
 	.align 2, 0
 _080C14EC: .4byte _vt.3Unk
 
-	thumb_func_start sub_080C14F0
-sub_080C14F0: @ 0x080C14F0
+	thumb_func_start init__12RhythmInRTTI
+init__12RhythmInRTTI: @ 0x080C14F0
 	push {r4, lr}
 	movs r0, #0x20
 	bl __builtin_new
 	adds r4, r0, #0
 	bl __4Base
-	ldr r0, _080C150C @ =vt_09F81278
+	ldr r0, _080C150C @ =_vt.8RhythmIn
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
 	pop {r4}
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080C150C: .4byte vt_09F81278
+_080C150C: .4byte _vt.8RhythmIn
 
-	thumb_func_start sub_080C1510
-sub_080C1510: @ 0x080C1510
+	thumb_func_start getName__12RhythmInRTTI
+getName__12RhythmInRTTI: @ 0x080C1510
 	ldr r0, _080C1514 @ =gUnknown_08105B8C
 	bx lr
 	.align 2, 0
 _080C1514: .4byte gUnknown_08105B8C
 
-	thumb_func_start sub_080C1518
-sub_080C1518: @ 0x080C1518
+	thumb_func_start _._8RhythmIn
+_._8RhythmIn: @ 0x080C1518
 	push {lr}
 	ldr r2, _080C1528 @ =_vt.3Unk
 	str r2, [r0, #0x1c]
@@ -1181,8 +1181,8 @@ sub_080C1518: @ 0x080C1518
 	.align 2, 0
 _080C1528: .4byte _vt.3Unk
 
-	thumb_func_start sub_080C152C
-sub_080C152C: @ 0x080C152C
+	thumb_func_start init__13RhythmBgmRTTI
+init__13RhythmBgmRTTI: @ 0x080C152C
 	push {lr}
 	movs r0, #0x60
 	bl __builtin_new
@@ -1190,15 +1190,15 @@ sub_080C152C: @ 0x080C152C
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080C153C
-sub_080C153C: @ 0x080C153C
+	thumb_func_start getName__13RhythmBgmRTTI
+getName__13RhythmBgmRTTI: @ 0x080C153C
 	ldr r0, _080C1540 @ =gUnknown_08105B74
 	bx lr
 	.align 2, 0
 _080C1540: .4byte gUnknown_08105B74
 
-	thumb_func_start sub_080C1544
-sub_080C1544: @ 0x080C1544
+	thumb_func_start init__11UnitDieRTTI
+init__11UnitDieRTTI: @ 0x080C1544
 	push {lr}
 	movs r0, #0x24
 	bl __builtin_new
@@ -1206,8 +1206,8 @@ sub_080C1544: @ 0x080C1544
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080C1554
-sub_080C1554: @ 0x080C1554
+	thumb_func_start getName__11UnitDieRTTI
+getName__11UnitDieRTTI: @ 0x080C1554
 	ldr r0, _080C1558 @ =gUnknown_081062B0
 	bx lr
 	.align 2, 0
@@ -1224,8 +1224,8 @@ _._7UnitDie: @ 0x080C155C
 	.align 2, 0
 _080C156C: .4byte _vt.3Unk
 
-	thumb_func_start sub_080C1570
-sub_080C1570: @ 0x080C1570
+	thumb_func_start init__14UnitEscapeRTTI
+init__14UnitEscapeRTTI: @ 0x080C1570
 	push {lr}
 	movs r0, #0x24
 	bl __builtin_new
@@ -1233,8 +1233,8 @@ sub_080C1570: @ 0x080C1570
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080C1580
-sub_080C1580: @ 0x080C1580
+	thumb_func_start getName__14UnitEscapeRTTI
+getName__14UnitEscapeRTTI: @ 0x080C1580
 	ldr r0, _080C1584 @ =gUnknown_0810629C
 	bx lr
 	.align 2, 0
@@ -1251,8 +1251,8 @@ _._10UnitEscape: @ 0x080C1588
 	.align 2, 0
 _080C1598: .4byte _vt.3Unk
 
-	thumb_func_start sub_080C159C
-sub_080C159C: @ 0x080C159C
+	thumb_func_start init__14UnitReviveRTTI
+init__14UnitReviveRTTI: @ 0x080C159C
 	push {lr}
 	movs r0, #0x24
 	bl __builtin_new
@@ -1260,8 +1260,8 @@ sub_080C159C: @ 0x080C159C
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080C15AC
-sub_080C15AC: @ 0x080C15AC
+	thumb_func_start getName__14UnitReviveRTTI
+getName__14UnitReviveRTTI: @ 0x080C15AC
 	ldr r0, _080C15B0 @ =gUnknown_08106284
 	bx lr
 	.align 2, 0
@@ -1278,8 +1278,8 @@ _._10UnitRevive: @ 0x080C15B4
 	.align 2, 0
 _080C15C4: .4byte _vt.3Unk
 
-	thumb_func_start sub_080C15C8
-sub_080C15C8: @ 0x080C15C8
+	thumb_func_start init__12UnitJoinRTTI
+init__12UnitJoinRTTI: @ 0x080C15C8
 	push {lr}
 	movs r0, #0x24
 	bl __builtin_new
@@ -1287,8 +1287,8 @@ sub_080C15C8: @ 0x080C15C8
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080C15D8
-sub_080C15D8: @ 0x080C15D8
+	thumb_func_start getName__12UnitJoinRTTI
+getName__12UnitJoinRTTI: @ 0x080C15D8
 	ldr r0, _080C15DC @ =gUnknown_0810626C
 	bx lr
 	.align 2, 0
@@ -1305,8 +1305,8 @@ _._8UnitJoin: @ 0x080C15E0
 	.align 2, 0
 _080C15F0: .4byte _vt.3Unk
 
-	thumb_func_start sub_080C15F4
-sub_080C15F4: @ 0x080C15F4
+	thumb_func_start init__10ResumeRTTI
+init__10ResumeRTTI: @ 0x080C15F4
 	push {lr}
 	movs r0, #0x20
 	bl __builtin_new
@@ -1314,8 +1314,8 @@ sub_080C15F4: @ 0x080C15F4
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080C1604
-sub_080C1604: @ 0x080C1604
+	thumb_func_start getName__10ResumeRTTI
+getName__10ResumeRTTI: @ 0x080C1604
 	ldr r0, _080C1608 @ =gUnknown_08106258
 	bx lr
 	.align 2, 0
@@ -1332,8 +1332,8 @@ _._6Resume: @ 0x080C160C
 	.align 2, 0
 _080C161C: .4byte _vt.3Unk
 
-	thumb_func_start sub_080C1620
-sub_080C1620: @ 0x080C1620
+	thumb_func_start init__11SuspendRTTI
+init__11SuspendRTTI: @ 0x080C1620
 	push {lr}
 	movs r0, #0x20
 	bl __builtin_new
@@ -1341,8 +1341,8 @@ sub_080C1620: @ 0x080C1620
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080C1630
-sub_080C1630: @ 0x080C1630
+	thumb_func_start getName__11SuspendRTTI
+getName__11SuspendRTTI: @ 0x080C1630
 	ldr r0, _080C1634 @ =gUnknown_08106248
 	bx lr
 	.align 2, 0
@@ -1359,8 +1359,8 @@ _._7Suspend: @ 0x080C1638
 	.align 2, 0
 _080C1648: .4byte _vt.3Unk
 
-	thumb_func_start sub_080C164C
-sub_080C164C: @ 0x080C164C
+	thumb_func_start _._6Object
+_._6Object: @ 0x080C164C
 	push {lr}
 	adds r2, r0, #0
 	ldr r0, _080C1668 @ =_vt.6Object
@@ -1377,8 +1377,8 @@ _080C1662:
 	.align 2, 0
 _080C1668: .4byte _vt.6Object
 
-	thumb_func_start sub_080C166C
-sub_080C166C: @ 0x080C166C
+	thumb_func_start init__10PlayerRTTI
+init__10PlayerRTTI: @ 0x080C166C
 	push {lr}
 	movs r0, #0x87
 	lsls r0, r0, #2
@@ -1388,8 +1388,8 @@ sub_080C166C: @ 0x080C166C
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080C1680
-sub_080C1680: @ 0x080C1680
+	thumb_func_start getName__10PlayerRTTI
+getName__10PlayerRTTI: @ 0x080C1680
 	ldr r0, _080C1684 @ =gUnknown_081083B8
 	bx lr
 	.align 2, 0
@@ -1417,8 +1417,8 @@ sub_080C169C: @ 0x080C169C
 	.align 2, 0
 _080C16AC: .4byte vt_09F82898
 
-	thumb_func_start sub_080C16B0
-sub_080C16B0: @ 0x080C16B0
+	thumb_func_start init__15PlayerSkillRTTI
+init__15PlayerSkillRTTI: @ 0x080C16B0
 	push {lr}
 	movs r0, #0x4c
 	bl __builtin_new
@@ -1426,15 +1426,15 @@ sub_080C16B0: @ 0x080C16B0
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080C16C0
-sub_080C16C0: @ 0x080C16C0
+	thumb_func_start getName__15PlayerSkillRTTI
+getName__15PlayerSkillRTTI: @ 0x080C16C0
 	ldr r0, _080C16C4 @ =gUnknown_0810A504
 	bx lr
 	.align 2, 0
 _080C16C4: .4byte gUnknown_0810A504
 
-	thumb_func_start sub_080C16C8
-sub_080C16C8: @ 0x080C16C8
+	thumb_func_start init__14GuestSkillRTTI
+init__14GuestSkillRTTI: @ 0x080C16C8
 	push {lr}
 	movs r0, #0x4c
 	bl __builtin_new
@@ -1442,15 +1442,15 @@ sub_080C16C8: @ 0x080C16C8
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080C16D8
-sub_080C16D8: @ 0x080C16D8
+	thumb_func_start getName__14GuestSkillRTTI
+getName__14GuestSkillRTTI: @ 0x080C16D8
 	ldr r0, _080C16DC @ =gUnknown_0810ABAC
 	bx lr
 	.align 2, 0
 _080C16DC: .4byte gUnknown_0810ABAC
 
-	thumb_func_start sub_080C16E0
-sub_080C16E0: @ 0x080C16E0
+	thumb_func_start init__11MonsterRTTI
+init__11MonsterRTTI: @ 0x080C16E0
 	push {lr}
 	movs r0, #0xa0
 	lsls r0, r0, #1
@@ -1460,15 +1460,15 @@ sub_080C16E0: @ 0x080C16E0
 	bx r1
 	.align 2, 0
 
-	thumb_func_start sub_080C16F4
-sub_080C16F4: @ 0x080C16F4
+	thumb_func_start getName__11MonsterRTTI
+getName__11MonsterRTTI: @ 0x080C16F4
 	ldr r0, _080C16F8 @ =gUnknown_0810B240
 	bx lr
 	.align 2, 0
 _080C16F8: .4byte gUnknown_0810B240
 
-	thumb_func_start sub_080C16FC
-sub_080C16FC: @ 0x080C16FC
+	thumb_func_start init__16MonsterSkillRTTI
+init__16MonsterSkillRTTI: @ 0x080C16FC
 	push {lr}
 	movs r0, #0x4c
 	bl __builtin_new
@@ -1476,15 +1476,15 @@ sub_080C16FC: @ 0x080C16FC
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080C170C
-sub_080C170C: @ 0x080C170C
+	thumb_func_start getName__16MonsterSkillRTTI
+getName__16MonsterSkillRTTI: @ 0x080C170C
 	ldr r0, _080C1710 @ =gUnknown_0810BF68
 	bx lr
 	.align 2, 0
 _080C1710: .4byte gUnknown_0810BF68
 
-	thumb_func_start sub_080C1714
-sub_080C1714: @ 0x080C1714
+	thumb_func_start init__7PsiRTTI
+init__7PsiRTTI: @ 0x080C1714
 	push {lr}
 	movs r0, #0x4c
 	bl __builtin_new
@@ -1492,9 +1492,9 @@ sub_080C1714: @ 0x080C1714
 	pop {r1}
 	bx r1
 
-	thumb_func_start sub_080C1724
-sub_080C1724: @ 0x080C1724
-	ldr r0, _080C1728 @ =gUnknown_0810CC04
+	thumb_func_start getName__7PsiRTTI
+getName__7PsiRTTI: @ 0x080C1724
+	ldr r0, _080C1728 @ =gUnknown_0810CC04 @ "Psi"
 	bx lr
 	.align 2, 0
 _080C1728: .4byte gUnknown_0810CC04

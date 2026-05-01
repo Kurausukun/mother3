@@ -65,7 +65,7 @@ sub_0807466C:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080746FC: .4byte _vt.10RhythmGame
+_080746FC: .4byte _vt.9RhythmBgm
 _08074700: .4byte gUnknown_08105CD0
 _08074704: .4byte _vt.3Unk
 _08074708: .4byte _vt.8AppClock

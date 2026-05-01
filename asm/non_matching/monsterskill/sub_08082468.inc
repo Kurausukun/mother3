@@ -10,6 +10,6 @@ sub_08082468:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0808247C: .4byte gUnknown_02002940
-_08082480: .4byte vt_09F837F8
+_0808247C: .4byte sMonsterSkillRTTI
+_08082480: .4byte _vt.16MonsterSkillRTTI
 	.syntax divided

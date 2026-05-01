@@ -41,5 +41,5 @@ sub_0807C6B8:
 	bx r1
 	.align 2, 0
 _0807C710: .4byte vt_09F82070
-_0807C714: .4byte vt_09F820E8
+_0807C714: .4byte _vt.6Player
 	.syntax divided

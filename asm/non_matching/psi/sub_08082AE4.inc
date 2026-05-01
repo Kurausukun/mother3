@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08082AE4:
+getRTTI__3Psi:
 	push {lr}
 	bl sub_08082ADC
 	pop {r1}

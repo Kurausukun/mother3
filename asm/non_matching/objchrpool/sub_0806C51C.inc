@@ -31,5 +31,5 @@ _0806C548:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0806C558: .4byte vt_09F7F0B0
+_0806C558: .4byte _vt.10ObjChrPool
 	.syntax divided
