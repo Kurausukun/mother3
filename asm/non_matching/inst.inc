@@ -35,7 +35,7 @@ getName__12ClockManager:
 .L18:
 	.align	2, 0
 .L17:
-	.word	gUnknown_080FEF44
+	.word	const_classname_Clock
 .LFE2:
 .Lfe2:
 	.size	 getName__12ClockManager,.Lfe2-getName__12ClockManager
@@ -73,7 +73,7 @@ getName__21PostSysClockSingleton:
 .L22:
 	.align	2, 0
 .L21:
-	.word	gUnknown_080FEF2C
+	.word	const_classname_PostSysClock
 .LFE4:
 .Lfe4:
 	.size	 getName__21PostSysClockSingleton,.Lfe4-getName__21PostSysClockSingleton
@@ -142,7 +142,7 @@ getName__21PostAppClockSingleton:
 .L32:
 	.align	2, 0
 .L31:
-	.word	gUnknown_080FEF0C
+	.word	const_classname_PostAppClock
 .LFE7:
 .Lfe7:
 	.size	 getName__21PostAppClockSingleton,.Lfe7-getName__21PostAppClockSingleton
@@ -211,7 +211,7 @@ getName__17AppClockSingleton:
 .L42:
 	.align	2, 0
 .L41:
-	.word	gUnknown_080FEEF0
+	.word	const_classname_AppClock
 .LFE10:
 .Lfe10:
 	.size	 getName__17AppClockSingleton,.Lfe10-getName__17AppClockSingleton
@@ -280,7 +280,7 @@ getName__20PreAppClockSingleton:
 .L52:
 	.align	2, 0
 .L51:
-	.word	gUnknown_080FEED8
+	.word	const_classname_PreAppClock
 .LFE13:
 .Lfe13:
 	.size	 getName__20PreAppClockSingleton,.Lfe13-getName__20PreAppClockSingleton
@@ -349,7 +349,7 @@ getName__17SysClockSingleton:
 .L62:
 	.align	2, 0
 .L61:
-	.word	gUnknown_080FEEC0
+	.word	const_classname_SysClock
 .LFE16:
 .Lfe16:
 	.size	 getName__17SysClockSingleton,.Lfe16-getName__17SysClockSingleton
@@ -418,7 +418,7 @@ getName__20PreSysClockSingleton:
 .L72:
 	.align	2, 0
 .L71:
-	.word	gUnknown_080FEEA8
+	.word	const_classname_PreSysClock
 .LFE19:
 .Lfe19:
 	.size	 getName__20PreSysClockSingleton,.Lfe19-getName__20PreSysClockSingleton

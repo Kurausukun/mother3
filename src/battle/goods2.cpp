@@ -32,9 +32,9 @@ void* init__9GoodsRTTI() {
     return __5Goods();
 }
 
-extern const char gUnknown_080FA950[];  // "Goods"
+extern const char const_classname_Goods[];  // "Goods"
 const char* getName__9GoodsRTTI() {
-    return gUnknown_080FA950;
+    return const_classname_Goods;
 }
 
 void* sub_080BDAD8(u16 id, Unit* user, u16 r2) {

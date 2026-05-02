@@ -40,36 +40,36 @@ gUnknown_080FEDC4:
 gUnknown_080FEDE0:
     .incbin "baserom.gba", 0x000FEDE0, 0xC8
 
-    .global gUnknown_080FEEA8
-gUnknown_080FEEA8:
+    .global const_classname_PreSysClock
+const_classname_PreSysClock:
     .incbin "baserom.gba", 0x000FEEA8, 0x18
 
-    .global gUnknown_080FEEC0
-gUnknown_080FEEC0:
+    .global const_classname_SysClock
+const_classname_SysClock:
     .incbin "baserom.gba", 0x000FEEC0, 0x18
 
-    .global gUnknown_080FEED8
-gUnknown_080FEED8:
+    .global const_classname_PreAppClock
+const_classname_PreAppClock:
     .incbin "baserom.gba", 0x000FEED8, 0x18
 
-    .global gUnknown_080FEEF0
-gUnknown_080FEEF0:
+    .global const_classname_AppClock
+const_classname_AppClock:
     .incbin "baserom.gba", 0x000FEEF0, 0x1C
 
-    .global gUnknown_080FEF0C
-gUnknown_080FEF0C:
+    .global const_classname_PostAppClock
+const_classname_PostAppClock:
     .incbin "baserom.gba", 0x000FEF0C, 0x20
 
-    .global gUnknown_080FEF2C
-gUnknown_080FEF2C:
+    .global const_classname_PostSysClock
+const_classname_PostSysClock:
     .incbin "baserom.gba", 0x000FEF2C, 0x18
 
-    .global gUnknown_080FEF44
-gUnknown_080FEF44:
+    .global const_classname_Clock
+const_classname_Clock:
     .incbin "baserom.gba", 0x000FEF44, 0x1F0
 
-    .global gUnknown_080FF134
-gUnknown_080FF134:
+    .global const_classname_GEngine
+const_classname_GEngine:
     .incbin "baserom.gba", 0x000FF134, 0x68
 
     .global callback_sub_0806AC48
@@ -78,8 +78,8 @@ callback_sub_0806AC48:
     .4byte sub_0806AC48+1
     .incbin "baserom.gba", 0x000FF1A4, 0xD4
 
-    .global gUnknown_080FF278
-gUnknown_080FF278:
+    .global const_classname_BGEngine
+const_classname_BGEngine:
     .incbin "baserom.gba", 0x000FF278, 0x54
 
     .global callback_bgengine_updateScrollHorizontal
@@ -88,8 +88,8 @@ callback_bgengine_updateScrollHorizontal:
     .4byte bgengine_updateScrollHorizontal+1
     .incbin "baserom.gba", 0x000FF2D4, 0xEC
 
-    .global gUnknown_080FF3C0
-gUnknown_080FF3C0:
+    .global const_classname_ObjEngine
+const_classname_ObjEngine:
     .incbin "baserom.gba", 0x000FF3C0, 0x3C
 
     .global callback_sub_0806C1D8
@@ -103,8 +103,8 @@ callback_sub_0806C3DC:
     .4byte sub_0806C3DC+1
     .incbin "baserom.gba", 0x000FF40C, 0x104
 
-    .global gUnknown_080FF510
-gUnknown_080FF510:
+    .global const_classname_ObjChrPool
+const_classname_ObjChrPool:
     .incbin "baserom.gba", 0x000FF510, 0x24
 
     .global callback_sub_0806C738
@@ -113,8 +113,8 @@ callback_sub_0806C738:
     .4byte sub_0806C738+1
     .incbin "baserom.gba", 0x000FF53C, 0x11C
 
-    .global gUnknown_080FF658
-gUnknown_080FF658:
+    .global const_classname_ObjPltPool
+const_classname_ObjPltPool:
     .incbin "baserom.gba", 0x000FF658, 0xC
 
     .global callback_clear__10ObjPltPool
@@ -129,84 +129,84 @@ const_classname_KeyPad:
     .byte 0,0
     .incbin "baserom.gba", 0x000FF734, 0xC
 
-    .global gUnknown_080FF740
-gUnknown_080FF740:
+    .global const_classname_UpKeyPress
+const_classname_UpKeyPress:
     .incbin "baserom.gba", 0x000FF740, 0x1C
 
-    .global gUnknown_080FF75C
-gUnknown_080FF75C:
+    .global const_classname_UpKeyLongPress
+const_classname_UpKeyLongPress:
     .incbin "baserom.gba", 0x000FF75C, 0x20
 
-    .global gUnknown_080FF77C
-gUnknown_080FF77C:
+    .global const_classname_DownKeyPress
+const_classname_DownKeyPress:
     .incbin "baserom.gba", 0x000FF77C, 0x24
 
-    .global gUnknown_080FF7A0
-gUnknown_080FF7A0:
+    .global const_classname_DownKeyLongPress
+const_classname_DownKeyLongPress:
     .incbin "baserom.gba", 0x000FF7A0, 0x24
 
-    .global gUnknown_080FF7C4
-gUnknown_080FF7C4:
+    .global const_classname_LeftKeyPress
+const_classname_LeftKeyPress:
     .incbin "baserom.gba", 0x000FF7C4, 0x24
 
-    .global gUnknown_080FF7E8
-gUnknown_080FF7E8:
+    .global const_classname_LeftKeyLongPress
+const_classname_LeftKeyLongPress:
     .incbin "baserom.gba", 0x000FF7E8, 0x24
 
-    .global gUnknown_080FF80C
-gUnknown_080FF80C:
+    .global const_classname_RightKeyPress
+const_classname_RightKeyPress:
     .incbin "baserom.gba", 0x000FF80C, 0x24
 
-    .global gUnknown_080FF830
-gUnknown_080FF830:
+    .global const_classname_RightKeyLongPress
+const_classname_RightKeyLongPress:
     .incbin "baserom.gba", 0x000FF830, 0x20
 
-    .global gUnknown_080FF850
-gUnknown_080FF850:
+    .global const_classname_AKeyPress
+const_classname_AKeyPress:
     .incbin "baserom.gba", 0x000FF850, 0x1C
 
-    .global gUnknown_080FF86C
-gUnknown_080FF86C:
+    .global const_classname_AKeyLongPress
+const_classname_AKeyLongPress:
     .incbin "baserom.gba", 0x000FF86C, 0x1C
 
-    .global gUnknown_080FF888
-gUnknown_080FF888:
+    .global const_classname_BKeyPress
+const_classname_BKeyPress:
     .incbin "baserom.gba", 0x000FF888, 0x1C
 
-    .global gUnknown_080FF8A4
-gUnknown_080FF8A4:
+    .global const_classname_BKeyLongPress
+const_classname_BKeyLongPress:
     .incbin "baserom.gba", 0x000FF8A4, 0x1C
 
-    .global gUnknown_080FF8C0
-gUnknown_080FF8C0:
+    .global const_classname_LKeyPress
+const_classname_LKeyPress:
     .incbin "baserom.gba", 0x000FF8C0, 0x1C
 
-    .global gUnknown_080FF8DC
-gUnknown_080FF8DC:
+    .global const_classname_LKeyLongPress
+const_classname_LKeyLongPress:
     .incbin "baserom.gba", 0x000FF8DC, 0x1C
 
-    .global gUnknown_080FF8F8
-gUnknown_080FF8F8:
+    .global const_classname_RKeyPress
+const_classname_RKeyPress:
     .incbin "baserom.gba", 0x000FF8F8, 0x1C
 
-    .global gUnknown_080FF914
-gUnknown_080FF914:
+    .global const_classname_RKeyLongPress
+const_classname_RKeyLongPress:
     .incbin "baserom.gba", 0x000FF914, 0x20
 
-    .global gUnknown_080FF934
-gUnknown_080FF934:
+    .global const_classname_StartKeyPress
+const_classname_StartKeyPress:
     .incbin "baserom.gba", 0x000FF934, 0x24
 
-    .global gUnknown_080FF958
-gUnknown_080FF958:
+    .global const_classname_StartKeyLongPress
+const_classname_StartKeyLongPress:
     .incbin "baserom.gba", 0x000FF958, 0x24
 
-    .global gUnknown_080FF97C
-gUnknown_080FF97C:
+    .global const_classname_SelectKeyPress
+const_classname_SelectKeyPress:
     .incbin "baserom.gba", 0x000FF97C, 0x24
 
-    .global gUnknown_080FF9A0
-gUnknown_080FF9A0:
+    .global const_classname_SelectKeyLongPress
+const_classname_SelectKeyLongPress:
     .incbin "baserom.gba", 0x000FF9A0, 0x14
 
     .global callback_update__6KeyPadP5Clock
@@ -375,8 +375,8 @@ callback_sub_08071F38:
     .4byte sub_08071F38+1
     .incbin "baserom.gba", 0x00104798, 0x820
 
-    .global gUnknown_08104FB8
-gUnknown_08104FB8:
+    .global const_classname_KeyFocusManager
+const_classname_KeyFocusManager:
     .incbin "baserom.gba", 0x00104FB8, 0x10
 
     .global callback_sub_08072518
@@ -385,16 +385,16 @@ callback_sub_08072518:
     .4byte sub_08072518+1
     .incbin "baserom.gba", 0x00104FD0, 0xBA4
 
-    .global gUnknown_08105B74
-gUnknown_08105B74:
+    .global const_classname_RhythmBgm
+const_classname_RhythmBgm:
     .incbin "baserom.gba", 0x00105B74, 0x18
 
-    .global gUnknown_08105B8C
-gUnknown_08105B8C:
+    .global const_classname_RhythmIn
+const_classname_RhythmIn:
     .incbin "baserom.gba", 0x00105B8C, 0x18
 
-    .global gUnknown_08105BA4
-gUnknown_08105BA4:
+    .global const_classname_RhythmOut
+const_classname_RhythmOut:
     .incbin "baserom.gba", 0x00105BA4, 0x12C
 
     .global callback_sub_0807489C
@@ -408,28 +408,28 @@ callback_sub_080748C8:
     .4byte sub_080748C8+1
     .incbin "baserom.gba", 0x00105CE0, 0x568
 
-    .global gUnknown_08106248
-gUnknown_08106248:
+    .global const_classname_Suspend
+const_classname_Suspend:
     .incbin "baserom.gba", 0x00106248, 0x10
 
-    .global gUnknown_08106258
-gUnknown_08106258:
+    .global const_classname_Resume
+const_classname_Resume:
     .incbin "baserom.gba", 0x00106258, 0x14
 
-    .global gUnknown_0810626C
-gUnknown_0810626C:
+    .global const_classname_UnitJoin
+const_classname_UnitJoin:
     .incbin "baserom.gba", 0x0010626C, 0x18
 
-    .global gUnknown_08106284
-gUnknown_08106284:
+    .global const_classname_UnitRevive
+const_classname_UnitRevive:
     .incbin "baserom.gba", 0x00106284, 0x18
 
-    .global gUnknown_0810629C
-gUnknown_0810629C:
+    .global const_classname_UnitEscape
+const_classname_UnitEscape:
     .incbin "baserom.gba", 0x0010629C, 0x14
 
-    .global gUnknown_081062B0
-gUnknown_081062B0:
+    .global const_classname_UnitDie
+const_classname_UnitDie:
     .incbin "baserom.gba", 0x001062B0, 0xB0
 
     .global gUnknown_08106360
@@ -488,8 +488,8 @@ callback_unit_leave_callback:
     .4byte unit_leave_callback+1
     .incbin "baserom.gba", 0x00107DC0, 0x5F8
 
-    .global gUnknown_081083B8
-gUnknown_081083B8:
+    .global const_classname_Player
+const_classname_Player:
     .incbin "baserom.gba", 0x001083B8, 0x88
 
     .global callback_sub_0807C1C8
@@ -612,16 +612,16 @@ callback_sub_0808028C:
     .4byte sub_0808028C+1
     .incbin "baserom.gba", 0x00109EF8, 0x60C
 
-    .global gUnknown_0810A504
-gUnknown_0810A504:
+    .global const_classname_PlayerSkill
+const_classname_PlayerSkill:
     .incbin "baserom.gba", 0x0010A504, 0x6A8
 
-    .global gUnknown_0810ABAC
-gUnknown_0810ABAC:
+    .global const_classname_GuestSkill
+const_classname_GuestSkill:
     .incbin "baserom.gba", 0x0010ABAC, 0x694
 
-    .global gUnknown_0810B240
-gUnknown_0810B240:
+    .global const_classname_Monster
+const_classname_Monster:
     .incbin "baserom.gba", 0x0010B240, 0x38
 
     .global callback_sub_08081790
@@ -635,8 +635,8 @@ callback_sub_080817B0:
         .4byte sub_080817B0+1
     .incbin "baserom.gba", 0x0010B288, 0xCE0
 
-    .global gUnknown_0810BF68
-gUnknown_0810BF68:
+    .global const_classname_MonsterSkill
+const_classname_MonsterSkill:
     .incbin "baserom.gba", 0x0010BF68, 0x6A0
 
     .global callback_sub_08082968
@@ -660,8 +660,8 @@ callback_sub_08082AC0:
     .4byte sub_08082AC0+1
     .incbin "baserom.gba", 0x0010C628, 0x5DC
 
-    .global gUnknown_0810CC04
-gUnknown_0810CC04:
+    .global const_classname_Psi
+const_classname_Psi:
     .incbin "baserom.gba", 0x0010CC04, 0x1424
 
     .global callback_sub_0808431C

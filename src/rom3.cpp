@@ -1,7 +1,7 @@
 #include "battle/system.h"
 #include "singleton.h"
 
-SINGLETON_DEBUG_MGR(System, gUnknown_080F24D0)
+SINGLETON_DEBUG_MGR(System, const_classname_System)
 
 // todo: figure out how to generate this here naturally
 extern "C" NAKED void temp_080977A0() {

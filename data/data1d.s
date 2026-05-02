@@ -40,8 +40,8 @@ gUnknown_080EF880:
 gUnknown_080F0C80:
     .incbin "baserom.gba", 0x000F0C80, 0x1850
 
-    .global gUnknown_080F24D0
-gUnknown_080F24D0:
+    .global const_classname_System
+const_classname_System:
     .incbin "baserom.gba", 0x000F24D0, 0x8
 
     .global gUnknown_080F24D8
@@ -50,36 +50,36 @@ gUnknown_080F24D8:
     .4byte system_callback__FP6System+1
     .incbin "baserom.gba", 0x000F24E0, 0x454
 
-    .global gUnknown_080F2934
-gUnknown_080F2934:
+    .global const_classname_RoundBegin
+const_classname_RoundBegin:
     .incbin "baserom.gba", 0x000F2934, 0x18
 
-    .global gUnknown_080F294C
-gUnknown_080F294C:
+    .global const_classname_RoundEnd
+const_classname_RoundEnd:
     .incbin "baserom.gba", 0x000F294C, 0x1C
 
-    .global gUnknown_080F2968
-gUnknown_080F2968:
+    .global const_classname_UnitTurnBegin
+const_classname_UnitTurnBegin:
     .incbin "baserom.gba", 0x000F2968, 0x1C
 
-    .global gUnknown_080F2984
-gUnknown_080F2984:
+    .global const_classname_UnitTurnEnd
+const_classname_UnitTurnEnd:
     .incbin "baserom.gba", 0x000F2984, 0x1C
 
-    .global gUnknown_080F29A0
-gUnknown_080F29A0:
+    .global const_classname_ShowDownAsWin
+const_classname_ShowDownAsWin:
     .incbin "baserom.gba", 0x000F29A0, 0x24
 
-    .global gUnknown_080F29C4
-gUnknown_080F29C4:
+    .global const_classname_ShowDownAsEscape
+const_classname_ShowDownAsEscape:
     .incbin "baserom.gba", 0x000F29C4, 0x24
 
-    .global gUnknown_080F29E8
-gUnknown_080F29E8:
+    .global const_classname_ShowDownAsLose
+const_classname_ShowDownAsLose:
     .incbin "baserom.gba", 0x000F29E8, 0x170
 
-    .global gUnknown_080F2B58
-gUnknown_080F2B58:
+    .global const_classname_Battle
+const_classname_Battle:
     .incbin "baserom.gba", 0x000F2B58, 0x8
 
     .global gUnknown_080F2B60
@@ -315,8 +315,8 @@ gUnknown_080FA348:
 gUnknown_080FA358:
     .incbin "baserom.gba", 0x000FA358, 0x5F8
 
-    .global gUnknown_080FA950
-gUnknown_080FA950:
+    .global const_classname_Goods
+const_classname_Goods:
     .incbin "baserom.gba", 0x000FA950, 0x718
 
     .global gUnknown_080FB068

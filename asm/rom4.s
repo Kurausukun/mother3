@@ -14,10 +14,10 @@ init__14GEngineManager: @ 0x080C0D1C
 
 	thumb_func_start getName__14GEngineManager
 getName__14GEngineManager: @ 0x080C0D2C
-	ldr r0, _080C0D30 @ =gUnknown_080FF134
+	ldr r0, _080C0D30 @ =const_classname_GEngine
 	bx lr
 	.align 2, 0
-_080C0D30: .4byte gUnknown_080FF134
+_080C0D30: .4byte const_classname_GEngine
 
 	thumb_func_start init__15BGEngineManager
 init__15BGEngineManager: @ 0x080C0D34
@@ -32,10 +32,10 @@ init__15BGEngineManager: @ 0x080C0D34
 
 	thumb_func_start getName__15BGEngineManager
 getName__15BGEngineManager: @ 0x080C0D48
-	ldr r0, _080C0D4C @ =gUnknown_080FF278
+	ldr r0, _080C0D4C @ =const_classname_BGEngine
 	bx lr
 	.align 2, 0
-_080C0D4C: .4byte gUnknown_080FF278
+_080C0D4C: .4byte const_classname_BGEngine
 
 	thumb_func_start sub_080C0D50
 sub_080C0D50: @ 0x080C0D50
@@ -300,10 +300,10 @@ init__16ObjEngineManager: @ 0x080C0F28
 
 	thumb_func_start getName__16ObjEngineManager
 getName__16ObjEngineManager: @ 0x080C0F3C
-	ldr r0, _080C0F40 @ =gUnknown_080FF3C0
+	ldr r0, _080C0F40 @ =const_classname_ObjEngine
 	bx lr
 	.align 2, 0
-_080C0F40: .4byte gUnknown_080FF3C0
+_080C0F40: .4byte const_classname_ObjEngine
 
 	thumb_func_start init__17ObjChrPoolManager
 init__17ObjChrPoolManager: @ 0x080C0F44
@@ -316,10 +316,10 @@ init__17ObjChrPoolManager: @ 0x080C0F44
 
 	thumb_func_start getName__17ObjChrPoolManager
 getName__17ObjChrPoolManager: @ 0x080C0F54
-	ldr r0, _080C0F58 @ =gUnknown_080FF510
+	ldr r0, _080C0F58 @ =const_classname_ObjChrPool
 	bx lr
 	.align 2, 0
-_080C0F58: .4byte gUnknown_080FF510
+_080C0F58: .4byte const_classname_ObjChrPool
 
 	thumb_func_start init__17ObjPltPoolManager
 init__17ObjPltPoolManager: @ 0x080C0F5C
@@ -332,10 +332,10 @@ init__17ObjPltPoolManager: @ 0x080C0F5C
 
 	thumb_func_start getName__17ObjPltPoolManager
 getName__17ObjPltPoolManager: @ 0x080C0F6C
-	ldr r0, _080C0F70 @ =gUnknown_080FF658
+	ldr r0, _080C0F70 @ =const_classname_ObjPltPool
 	bx lr
 	.align 2, 0
-_080C0F70: .4byte gUnknown_080FF658
+_080C0F70: .4byte const_classname_ObjPltPool
 
 	thumb_func_start init__22SelectKeyLongPressRTTI
 init__22SelectKeyLongPressRTTI: @ 0x080C0F74
@@ -355,10 +355,10 @@ _080C0F90: .4byte _vt.18SelectKeyLongPress
 
 	thumb_func_start getName__22SelectKeyLongPressRTTI
 getName__22SelectKeyLongPressRTTI: @ 0x080C0F94
-	ldr r0, _080C0F98 @ =gUnknown_080FF9A0
+	ldr r0, _080C0F98 @ =const_classname_SelectKeyLongPress
 	bx lr
 	.align 2, 0
-_080C0F98: .4byte gUnknown_080FF9A0
+_080C0F98: .4byte const_classname_SelectKeyLongPress
 
 	thumb_func_start _._18SelectKeyLongPress
 _._18SelectKeyLongPress: @ 0x080C0F9C
@@ -389,10 +389,10 @@ _080C0FCC: .4byte _vt.14SelectKeyPress
 
 	thumb_func_start getName__18SelectKeyPressRTTI
 getName__18SelectKeyPressRTTI: @ 0x080C0FD0
-	ldr r0, _080C0FD4 @ =gUnknown_080FF97C
+	ldr r0, _080C0FD4 @ =const_classname_SelectKeyPress
 	bx lr
 	.align 2, 0
-_080C0FD4: .4byte gUnknown_080FF97C
+_080C0FD4: .4byte const_classname_SelectKeyPress
 
 	thumb_func_start _._14SelectKeyPress
 _._14SelectKeyPress: @ 0x080C0FD8
@@ -423,10 +423,10 @@ _080C1008: .4byte _vt.17StartKeyLongPress
 
 	thumb_func_start getName__21StartKeyLongPressRTTI
 getName__21StartKeyLongPressRTTI: @ 0x080C100C
-	ldr r0, _080C1010 @ =gUnknown_080FF958
+	ldr r0, _080C1010 @ =const_classname_StartKeyLongPress
 	bx lr
 	.align 2, 0
-_080C1010: .4byte gUnknown_080FF958
+_080C1010: .4byte const_classname_StartKeyLongPress
 
 	thumb_func_start _._17StartKeyLongPress
 _._17StartKeyLongPress: @ 0x080C1014
@@ -457,10 +457,10 @@ _080C1044: .4byte _vt.13StartKeyPress
 
 	thumb_func_start getName__17StartKeyPressRTTI
 getName__17StartKeyPressRTTI: @ 0x080C1048
-	ldr r0, _080C104C @ =gUnknown_080FF934
+	ldr r0, _080C104C @ =const_classname_StartKeyPress
 	bx lr
 	.align 2, 0
-_080C104C: .4byte gUnknown_080FF934
+_080C104C: .4byte const_classname_StartKeyPress
 
 	thumb_func_start _._13StartKeyPress
 _._13StartKeyPress: @ 0x080C1050
@@ -491,10 +491,10 @@ _080C1080: .4byte _vt.13RKeyLongPress
 
 	thumb_func_start getName__17RKeyLongPressRTTI
 getName__17RKeyLongPressRTTI: @ 0x080C1084
-	ldr r0, _080C1088 @ =gUnknown_080FF914
+	ldr r0, _080C1088 @ =const_classname_RKeyLongPress
 	bx lr
 	.align 2, 0
-_080C1088: .4byte gUnknown_080FF914
+_080C1088: .4byte const_classname_RKeyLongPress
 
 	thumb_func_start _._13RKeyLongPress
 _._13RKeyLongPress: @ 0x080C108C
@@ -525,10 +525,10 @@ _080C10BC: .4byte _vt.9RKeyPress
 
 	thumb_func_start getName__13RKeyPressRTTI
 getName__13RKeyPressRTTI: @ 0x080C10C0
-	ldr r0, _080C10C4 @ =gUnknown_080FF8F8
+	ldr r0, _080C10C4 @ =const_classname_RKeyPress
 	bx lr
 	.align 2, 0
-_080C10C4: .4byte gUnknown_080FF8F8
+_080C10C4: .4byte const_classname_RKeyPress
 
 	thumb_func_start _._9RKeyPress
 _._9RKeyPress: @ 0x080C10C8
@@ -559,10 +559,10 @@ _080C10F8: .4byte _vt.13LKeyLongPress
 
 	thumb_func_start getName__17LKeyLongPressRTTI
 getName__17LKeyLongPressRTTI: @ 0x080C10FC
-	ldr r0, _080C1100 @ =gUnknown_080FF8DC
+	ldr r0, _080C1100 @ =const_classname_LKeyLongPress
 	bx lr
 	.align 2, 0
-_080C1100: .4byte gUnknown_080FF8DC
+_080C1100: .4byte const_classname_LKeyLongPress
 
 	thumb_func_start _._13LKeyLongPress
 _._13LKeyLongPress: @ 0x080C1104
@@ -593,10 +593,10 @@ _080C1134: .4byte _vt.9LKeyPress
 
 	thumb_func_start getName__13LKeyPressRTTI
 getName__13LKeyPressRTTI: @ 0x080C1138
-	ldr r0, _080C113C @ =gUnknown_080FF8C0
+	ldr r0, _080C113C @ =const_classname_LKeyPress
 	bx lr
 	.align 2, 0
-_080C113C: .4byte gUnknown_080FF8C0
+_080C113C: .4byte const_classname_LKeyPress
 
 	thumb_func_start _._9LKeyPress
 _._9LKeyPress: @ 0x080C1140
@@ -627,10 +627,10 @@ _080C1170: .4byte _vt.13BKeyLongPress
 
 	thumb_func_start getName__17BKeyLongPressRTTI
 getName__17BKeyLongPressRTTI: @ 0x080C1174
-	ldr r0, _080C1178 @ =gUnknown_080FF8A4
+	ldr r0, _080C1178 @ =const_classname_BKeyLongPress
 	bx lr
 	.align 2, 0
-_080C1178: .4byte gUnknown_080FF8A4
+_080C1178: .4byte const_classname_BKeyLongPress
 
 	thumb_func_start _._13BKeyLongPress
 _._13BKeyLongPress: @ 0x080C117C
@@ -661,10 +661,10 @@ _080C11AC: .4byte _vt.9BKeyPress
 
 	thumb_func_start getName__13BKeyPressRTTI
 getName__13BKeyPressRTTI: @ 0x080C11B0
-	ldr r0, _080C11B4 @ =gUnknown_080FF888
+	ldr r0, _080C11B4 @ =const_classname_BKeyPress
 	bx lr
 	.align 2, 0
-_080C11B4: .4byte gUnknown_080FF888
+_080C11B4: .4byte const_classname_BKeyPress
 
 	thumb_func_start _._9BKeyPress
 _._9BKeyPress: @ 0x080C11B8
@@ -695,10 +695,10 @@ _080C11E8: .4byte _vt.13AKeyLongPress
 
    	thumb_func_start getName__17AKeyLongPressRTTI
 getName__17AKeyLongPressRTTI: @ 0x080C11EC
-	ldr r0, _080C11F0 @ =gUnknown_080FF86C
+	ldr r0, _080C11F0 @ =const_classname_AKeyLongPress
 	bx lr
 	.align 2, 0
-_080C11F0: .4byte gUnknown_080FF86C
+_080C11F0: .4byte const_classname_AKeyLongPress
 
 	thumb_func_start _._13AKeyLongPress
 _._13AKeyLongPress: @ 0x080C11F4
@@ -729,10 +729,10 @@ _080C1224: .4byte _vt.9AKeyPress
 
 	thumb_func_start getName__13AKeyPressRTTI
 getName__13AKeyPressRTTI: @ 0x080C1228
-	ldr r0, _080C122C @ =gUnknown_080FF850
+	ldr r0, _080C122C @ =const_classname_AKeyPress
 	bx lr
 	.align 2, 0
-_080C122C: .4byte gUnknown_080FF850
+_080C122C: .4byte const_classname_AKeyPress
 
 	thumb_func_start _._9AKeyPress
 _._9AKeyPress: @ 0x080C1230
@@ -763,10 +763,10 @@ _080C1260: .4byte _vt.17RightKeyLongPress
 
 	thumb_func_start getName__21RightKeyLongPressRTTI
 getName__21RightKeyLongPressRTTI: @ 0x080C1264
-	ldr r0, _080C1268 @ =gUnknown_080FF830
+	ldr r0, _080C1268 @ =const_classname_RightKeyLongPress
 	bx lr
 	.align 2, 0
-_080C1268: .4byte gUnknown_080FF830
+_080C1268: .4byte const_classname_RightKeyLongPress
 
 	thumb_func_start _._17RightKeyLongPress
 _._17RightKeyLongPress: @ 0x080C126C
@@ -797,10 +797,10 @@ _080C129C: .4byte _vt.13RightKeyPress
 
 	thumb_func_start getName__17RightKeyPressRTTI
 getName__17RightKeyPressRTTI: @ 0x080C12A0
-	ldr r0, _080C12A4 @ =gUnknown_080FF80C
+	ldr r0, _080C12A4 @ =const_classname_RightKeyPress
 	bx lr
 	.align 2, 0
-_080C12A4: .4byte gUnknown_080FF80C
+_080C12A4: .4byte const_classname_RightKeyPress
 
 	thumb_func_start _._13RightKeyPress
 _._13RightKeyPress: @ 0x080C12A8
@@ -831,10 +831,10 @@ _080C12D8: .4byte _vt.16LeftKeyLongPress
 
 	thumb_func_start getName__20LeftKeyLongPressRTTI
 getName__20LeftKeyLongPressRTTI: @ 0x080C12DC
-	ldr r0, _080C12E0 @ =gUnknown_080FF7E8
+	ldr r0, _080C12E0 @ =const_classname_LeftKeyLongPress
 	bx lr
 	.align 2, 0
-_080C12E0: .4byte gUnknown_080FF7E8
+_080C12E0: .4byte const_classname_LeftKeyLongPress
 
 	thumb_func_start _._16LeftKeyLongPress
 _._16LeftKeyLongPress: @ 0x080C12E4
@@ -865,10 +865,10 @@ _080C1314: .4byte _vt.12LeftKeyPress
 
 	thumb_func_start getName__16LeftKeyPressRTTI
 getName__16LeftKeyPressRTTI: @ 0x080C1318
-	ldr r0, _080C131C @ =gUnknown_080FF7C4
+	ldr r0, _080C131C @ =const_classname_LeftKeyPress
 	bx lr
 	.align 2, 0
-_080C131C: .4byte gUnknown_080FF7C4
+_080C131C: .4byte const_classname_LeftKeyPress
 
 	thumb_func_start _._12LeftKeyPress
 _._12LeftKeyPress: @ 0x080C1320
@@ -899,10 +899,10 @@ _080C1350: .4byte _vt.16DownKeyLongPress
 
 	thumb_func_start getName__20DownKeyLongPressRTTI
 getName__20DownKeyLongPressRTTI: @ 0x080C1354
-	ldr r0, _080C1358 @ =gUnknown_080FF7A0
+	ldr r0, _080C1358 @ =const_classname_DownKeyLongPress
 	bx lr
 	.align 2, 0
-_080C1358: .4byte gUnknown_080FF7A0
+_080C1358: .4byte const_classname_DownKeyLongPress
 
 	thumb_func_start _._16DownKeyLongPress
 _._16DownKeyLongPress: @ 0x080C135C
@@ -933,10 +933,10 @@ _080C138C: .4byte _vt.12DownKeyPress
 
 	thumb_func_start getName__16DownKeyPressRTTI
 getName__16DownKeyPressRTTI: @ 0x080C1390
-	ldr r0, _080C1394 @ =gUnknown_080FF77C
+	ldr r0, _080C1394 @ =const_classname_DownKeyPress
 	bx lr
 	.align 2, 0
-_080C1394: .4byte gUnknown_080FF77C
+_080C1394: .4byte const_classname_DownKeyPress
 
 	thumb_func_start _._12DownKeyPress
 _._12DownKeyPress: @ 0x080C1398
@@ -967,10 +967,10 @@ _080C13C8: .4byte _vt.14UpKeyLongPress
 
 	thumb_func_start getName__18UpKeyLongPressRTTI
 getName__18UpKeyLongPressRTTI: @ 0x080C13CC
-	ldr r0, _080C13D0 @ =gUnknown_080FF75C
+	ldr r0, _080C13D0 @ =const_classname_UpKeyLongPress
 	bx lr
 	.align 2, 0
-_080C13D0: .4byte gUnknown_080FF75C
+_080C13D0: .4byte const_classname_UpKeyLongPress
 
 	thumb_func_start _._14UpKeyLongPress
 _._14UpKeyLongPress: @ 0x080C13D4
@@ -1001,10 +1001,10 @@ _080C1404: .4byte _vt.10UpKeyPress
 
 	thumb_func_start getName__14UpKeyPressRTTI
 getName__14UpKeyPressRTTI: @ 0x080C1408
-	ldr r0, _080C140C @ =gUnknown_080FF740
+	ldr r0, _080C140C @ =const_classname_UpKeyPress
 	bx lr
 	.align 2, 0
-_080C140C: .4byte gUnknown_080FF740
+_080C140C: .4byte const_classname_UpKeyPress
 
 	thumb_func_start _._10UpKeyPress
 _._10UpKeyPress: @ 0x080C1410
@@ -1108,10 +1108,10 @@ init__22KeyFocusManagerManager: @ 0x080C149C
 
 	thumb_func_start getName__22KeyFocusManagerManager
 getName__22KeyFocusManagerManager: @ 0x080C14AC
-	ldr r0, _080C14B0 @ =gUnknown_08104FB8
+	ldr r0, _080C14B0 @ =const_classname_KeyFocusManager
 	bx lr
 	.align 2, 0
-_080C14B0: .4byte gUnknown_08104FB8
+_080C14B0: .4byte const_classname_KeyFocusManager
 
 	thumb_func_start init__13RhythmOutRTTI
 init__13RhythmOutRTTI: @ 0x080C14B4
@@ -1131,10 +1131,10 @@ _080C14D0: .4byte _vt.9RhythmOut
 
 	thumb_func_start getName__13RhythmOutRTTI
 getName__13RhythmOutRTTI: @ 0x080C14D4
-	ldr r0, _080C14D8 @ =gUnknown_08105BA4
+	ldr r0, _080C14D8 @ =const_classname_RhythmOut
 	bx lr
 	.align 2, 0
-_080C14D8: .4byte gUnknown_08105BA4
+_080C14D8: .4byte const_classname_RhythmOut
 
 	thumb_func_start _._9RhythmOut
 _._9RhythmOut: @ 0x080C14DC
@@ -1165,10 +1165,10 @@ _080C150C: .4byte _vt.8RhythmIn
 
 	thumb_func_start getName__12RhythmInRTTI
 getName__12RhythmInRTTI: @ 0x080C1510
-	ldr r0, _080C1514 @ =gUnknown_08105B8C
+	ldr r0, _080C1514 @ =const_classname_RhythmIn
 	bx lr
 	.align 2, 0
-_080C1514: .4byte gUnknown_08105B8C
+_080C1514: .4byte const_classname_RhythmIn
 
 	thumb_func_start _._8RhythmIn
 _._8RhythmIn: @ 0x080C1518
@@ -1192,10 +1192,10 @@ init__13RhythmBgmRTTI: @ 0x080C152C
 
 	thumb_func_start getName__13RhythmBgmRTTI
 getName__13RhythmBgmRTTI: @ 0x080C153C
-	ldr r0, _080C1540 @ =gUnknown_08105B74
+	ldr r0, _080C1540 @ =const_classname_RhythmBgm
 	bx lr
 	.align 2, 0
-_080C1540: .4byte gUnknown_08105B74
+_080C1540: .4byte const_classname_RhythmBgm
 
 	thumb_func_start init__11UnitDieRTTI
 init__11UnitDieRTTI: @ 0x080C1544
@@ -1208,10 +1208,10 @@ init__11UnitDieRTTI: @ 0x080C1544
 
 	thumb_func_start getName__11UnitDieRTTI
 getName__11UnitDieRTTI: @ 0x080C1554
-	ldr r0, _080C1558 @ =gUnknown_081062B0
+	ldr r0, _080C1558 @ =const_classname_UnitDie
 	bx lr
 	.align 2, 0
-_080C1558: .4byte gUnknown_081062B0
+_080C1558: .4byte const_classname_UnitDie
 
 	thumb_func_start _._7UnitDie
 _._7UnitDie: @ 0x080C155C
@@ -1235,10 +1235,10 @@ init__14UnitEscapeRTTI: @ 0x080C1570
 
 	thumb_func_start getName__14UnitEscapeRTTI
 getName__14UnitEscapeRTTI: @ 0x080C1580
-	ldr r0, _080C1584 @ =gUnknown_0810629C
+	ldr r0, _080C1584 @ =const_classname_UnitEscape
 	bx lr
 	.align 2, 0
-_080C1584: .4byte gUnknown_0810629C
+_080C1584: .4byte const_classname_UnitEscape
 
 	thumb_func_start _._10UnitEscape
 _._10UnitEscape: @ 0x080C1588
@@ -1262,10 +1262,10 @@ init__14UnitReviveRTTI: @ 0x080C159C
 
 	thumb_func_start getName__14UnitReviveRTTI
 getName__14UnitReviveRTTI: @ 0x080C15AC
-	ldr r0, _080C15B0 @ =gUnknown_08106284
+	ldr r0, _080C15B0 @ =const_classname_UnitRevive
 	bx lr
 	.align 2, 0
-_080C15B0: .4byte gUnknown_08106284
+_080C15B0: .4byte const_classname_UnitRevive
 
 	thumb_func_start _._10UnitRevive
 _._10UnitRevive: @ 0x080C15B4
@@ -1289,10 +1289,10 @@ init__12UnitJoinRTTI: @ 0x080C15C8
 
 	thumb_func_start getName__12UnitJoinRTTI
 getName__12UnitJoinRTTI: @ 0x080C15D8
-	ldr r0, _080C15DC @ =gUnknown_0810626C
+	ldr r0, _080C15DC @ =const_classname_UnitJoin
 	bx lr
 	.align 2, 0
-_080C15DC: .4byte gUnknown_0810626C
+_080C15DC: .4byte const_classname_UnitJoin
 
 	thumb_func_start _._8UnitJoin
 _._8UnitJoin: @ 0x080C15E0
@@ -1316,10 +1316,10 @@ init__10ResumeRTTI: @ 0x080C15F4
 
 	thumb_func_start getName__10ResumeRTTI
 getName__10ResumeRTTI: @ 0x080C1604
-	ldr r0, _080C1608 @ =gUnknown_08106258
+	ldr r0, _080C1608 @ =const_classname_Resume
 	bx lr
 	.align 2, 0
-_080C1608: .4byte gUnknown_08106258
+_080C1608: .4byte const_classname_Resume
 
 	thumb_func_start _._6Resume
 _._6Resume: @ 0x080C160C
@@ -1343,10 +1343,10 @@ init__11SuspendRTTI: @ 0x080C1620
 
 	thumb_func_start getName__11SuspendRTTI
 getName__11SuspendRTTI: @ 0x080C1630
-	ldr r0, _080C1634 @ =gUnknown_08106248
+	ldr r0, _080C1634 @ =const_classname_Suspend
 	bx lr
 	.align 2, 0
-_080C1634: .4byte gUnknown_08106248
+_080C1634: .4byte const_classname_Suspend
 
 	thumb_func_start _._7Suspend
 _._7Suspend: @ 0x080C1638
@@ -1390,10 +1390,10 @@ init__10PlayerRTTI: @ 0x080C166C
 
 	thumb_func_start getName__10PlayerRTTI
 getName__10PlayerRTTI: @ 0x080C1680
-	ldr r0, _080C1684 @ =gUnknown_081083B8
+	ldr r0, _080C1684 @ =const_classname_Player
 	bx lr
 	.align 2, 0
-_080C1684: .4byte gUnknown_081083B8
+_080C1684: .4byte const_classname_Player
 
 	thumb_func_start sub_080C1688
 sub_080C1688: @ 0x080C1688
@@ -1428,10 +1428,10 @@ init__15PlayerSkillRTTI: @ 0x080C16B0
 
 	thumb_func_start getName__15PlayerSkillRTTI
 getName__15PlayerSkillRTTI: @ 0x080C16C0
-	ldr r0, _080C16C4 @ =gUnknown_0810A504
+	ldr r0, _080C16C4 @ =const_classname_PlayerSkill
 	bx lr
 	.align 2, 0
-_080C16C4: .4byte gUnknown_0810A504
+_080C16C4: .4byte const_classname_PlayerSkill
 
 	thumb_func_start init__14GuestSkillRTTI
 init__14GuestSkillRTTI: @ 0x080C16C8
@@ -1444,10 +1444,10 @@ init__14GuestSkillRTTI: @ 0x080C16C8
 
 	thumb_func_start getName__14GuestSkillRTTI
 getName__14GuestSkillRTTI: @ 0x080C16D8
-	ldr r0, _080C16DC @ =gUnknown_0810ABAC
+	ldr r0, _080C16DC @ =const_classname_GuestSkill
 	bx lr
 	.align 2, 0
-_080C16DC: .4byte gUnknown_0810ABAC
+_080C16DC: .4byte const_classname_GuestSkill
 
 	thumb_func_start init__11MonsterRTTI
 init__11MonsterRTTI: @ 0x080C16E0
@@ -1462,10 +1462,10 @@ init__11MonsterRTTI: @ 0x080C16E0
 
 	thumb_func_start getName__11MonsterRTTI
 getName__11MonsterRTTI: @ 0x080C16F4
-	ldr r0, _080C16F8 @ =gUnknown_0810B240
+	ldr r0, _080C16F8 @ =const_classname_Monster
 	bx lr
 	.align 2, 0
-_080C16F8: .4byte gUnknown_0810B240
+_080C16F8: .4byte const_classname_Monster
 
 	thumb_func_start init__16MonsterSkillRTTI
 init__16MonsterSkillRTTI: @ 0x080C16FC
@@ -1478,10 +1478,10 @@ init__16MonsterSkillRTTI: @ 0x080C16FC
 
 	thumb_func_start getName__16MonsterSkillRTTI
 getName__16MonsterSkillRTTI: @ 0x080C170C
-	ldr r0, _080C1710 @ =gUnknown_0810BF68
+	ldr r0, _080C1710 @ =const_classname_MonsterSkill
 	bx lr
 	.align 2, 0
-_080C1710: .4byte gUnknown_0810BF68
+_080C1710: .4byte const_classname_MonsterSkill
 
 	thumb_func_start init__7PsiRTTI
 init__7PsiRTTI: @ 0x080C1714
@@ -1494,10 +1494,10 @@ init__7PsiRTTI: @ 0x080C1714
 
 	thumb_func_start getName__7PsiRTTI
 getName__7PsiRTTI: @ 0x080C1724
-	ldr r0, _080C1728 @ =gUnknown_0810CC04 @ "Psi"
+	ldr r0, _080C1728 @ =const_classname_Psi
 	bx lr
 	.align 2, 0
-_080C1728: .4byte gUnknown_0810CC04
+_080C1728: .4byte const_classname_Psi
 
 	thumb_func_start sub_080C172C
 sub_080C172C: @ 0x080C172C
