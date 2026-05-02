@@ -171,6 +171,6 @@ _0808AC6A:
 	adds r0, r4, #0
 	bl setB4__11BattleFaderUi
 _0808ACBC:
-	bl sub_0806BE14
+	bl get__16ObjEngineManager
 	bl sub_0806C1CC
 	.syntax divided

@@ -10,7 +10,7 @@ sub_0808661C:
 	strh r4, [r1]
 	strh r4, [r2, #2]
 	bl sub_0806BA6C
-	bl sub_0806BE14
+	bl get__16ObjEngineManager
 	add r1, sp, #4
 	strh r4, [r1]
 	strh r4, [r1, #2]

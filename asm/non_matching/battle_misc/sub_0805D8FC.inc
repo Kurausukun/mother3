@@ -148,7 +148,7 @@ _0805D9C6:
 	adds r1, r0, #0
 	adds r0, r4, #0
 	bl sub_0806BA68
-	bl sub_0806BE14
+	bl get__16ObjEngineManager
 	ldr r1, [r7, #0x2c]
 	bl sub_0806C1C0
 	bl sub_0806EBD8

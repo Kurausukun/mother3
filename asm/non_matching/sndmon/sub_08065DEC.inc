@@ -131,7 +131,7 @@ _08065E8A:
 	movs r1, #2
 	movs r2, #6
 	bl sub_0806BACC
-	bl sub_0806BE14
+	bl get__16ObjEngineManager
 	ldr r1, [r7, #0x28]
 	bl sub_0806C1C0
 	bl get__16SndSystemManager

@@ -69,9 +69,9 @@
 . = 0x00001CE0; gUnknown_02001CE0 = .;
 . = 0x00001CEC; gUnknown_02001CEC = .;
 . = 0x00001CF0; gUnknown_02001CF0 = .;
-. = 0x00001CF4; gUnknown_02001CF4 = .;
-. = 0x00001D00; gUnknown_02001D00 = .;
-. = 0x00001D04; gUnknown_02001D04 = .;
+. = 0x00001CF4; sObjEngineManager = .;
+. = 0x00001D00; _16ObjEngineManager.mSingletonGuard = .;
+. = 0x00001D04; _16ObjEngineManager.mSingleton = .;
 . = 0x00001D08; gUnknown_02001D08 = .;
 . = 0x00001D14; gUnknown_02001D14 = .;
 . = 0x00001D18; gUnknown_02001D18 = .;

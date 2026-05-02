@@ -90118,7 +90118,7 @@ _vt.9ObjEngine::
 	.4byte _._9ObjEngine
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806BE5C__9ObjEngine
+	.4byte getRTTI__9ObjEngine
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base

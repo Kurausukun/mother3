@@ -17,7 +17,7 @@ sub_08088BA8:
 	ldr r0, _08088C00
 	cmp r4, r0
 	bne _08088BF6
-	bl sub_0806BE14
+	bl get__16ObjEngineManager
 	ldr r3, _08088C04
 	ldrb r2, [r5, #3]
 	lsrs r2, r2, #6

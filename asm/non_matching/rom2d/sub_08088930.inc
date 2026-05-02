@@ -9,7 +9,7 @@ sub_08088930:
 	mov sb, r0
 	adds r6, r1, #0
 	adds r4, r2, #0
-	bl sub_0806BE14
+	bl get__16ObjEngineManager
 	adds r5, r0, #0
 	mov r0, sb
 	bl sub_08088660

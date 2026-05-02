@@ -16,7 +16,7 @@ sub_0807D3A8:
 	ldr r0, _0807D3F0
 	cmp r4, r0
 	bne _0807D3E8
-	bl sub_0806BE14
+	bl get__16ObjEngineManager
 	movs r1, #1
 	adds r2, r5, #0
 	bl sub_0806C174

@@ -120,7 +120,7 @@ _0808A95C:
 	bl sub_0806B070
 	adds r1, r5, #0
 	bl sub_0806BA6C
-	bl sub_0806BE14
+	bl get__16ObjEngineManager
 	adds r1, r0, #0
 	add r0, sp, #0x14
 	bl sub_0806C034
@@ -157,7 +157,7 @@ _0808A95C:
 	strh r1, [r0, #2]
 	ldr r0, [sp, #0x1c]
 	str r0, [sp, #4]
-	bl sub_0806BE14
+	bl get__16ObjEngineManager
 	adds r1, r5, #0
 	bl sub_0806C028
 	bl sub_0806A9A4

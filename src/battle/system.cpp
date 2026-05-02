@@ -4,11 +4,11 @@
 #include "battle/clock.h"
 #include "battle/irc.h"
 #include "battle/keypad.h"
+#include "battle/objengine.h"
 #include "battle/sndSystem.h"
 #include "structs.h"
 
 extern "C" void sub_0806E4C4();
-extern "C" void sub_0806BE20();
 extern "C" void sub_0806B07C();
 extern "C" void sub_0806A9B0();
 extern "C" void destroy__10IrcManager();
@@ -20,9 +20,8 @@ extern "C" void seedMT(s32);
 extern "C" void sub_0805D210();
 extern "C" void sub_0806A974();
 extern "C" void sub_0806B040();
-extern "C" void sub_0806BDE4();
 extern "C" void sub_0806CBE0();
-extern "C" void sub_0806E488();
+extern "C" void makeInstance__16FntSystemManager();
 
 extern IrqTable gIntrHandlers;
 
@@ -107,9 +106,9 @@ System::System() {
 
     sub_0806A974();
     sub_0806B040();
-    sub_0806BDE4();
+    ObjEngineManager::makeInstance();
     KeyPadManager::makeInstance();
-    sub_0806E488();
+    makeInstance__16FntSystemManager();
 
     this->mHandle = new SARHandle();
 
@@ -121,7 +120,7 @@ System::~System() {
 
     sub_0806E4C4();
     KeyPadManager::destroy();
-    sub_0806BE20();
+    ObjEngineManager::destroy();
     sub_0806B07C();
     sub_0806A9B0();
     SndSystemManager::destroy();

@@ -12,7 +12,7 @@ sub_0808EACC:
 	mov r0, sp
 	strh r1, [r0]
 	strh r1, [r2, #2]
-	bl sub_0806BE14
+	bl get__16ObjEngineManager
 	adds r4, r0, #0
 	ldr r5, [r6, #0x3c]
 	movs r0, #0x29

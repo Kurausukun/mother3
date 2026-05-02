@@ -94,7 +94,7 @@ sub_08088C54:
 	ands r1, r2
 	orrs r1, r0
 	str r1, [sp, #4]
-	bl sub_0806BE14
+	bl get__16ObjEngineManager
 	movs r1, #1
 	mov r2, sp
 	bl sub_0806C054

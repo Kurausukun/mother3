@@ -1,91 +1,25 @@
-#include "base.h"
 #include "battle/clock.h"
+#include "battle/objengine.h"
 #include "global.h"
-
-typedef struct UnkObjEngine {
-    u32 _0;
-    u8 pad_4[0x200];
-} UnkObjEngine;
-static_assert(sizeof(UnkObjEngine) == 0x204);
-
-typedef struct UnkBar {
-    u32 _938;
-    u32 _93c;
-    void* _940;
-} UnkFoo;
-
-class ObjEngine : public Base {
-public:
-    UnkObjEngine _20[4];
-
-    u16 _830;
-    u16 _832;
-    u32 _834;
-    u8 pad_838[0x938 - 0x838];
-    UnkBar _938;
-    u16 _944;
-    u8 pad_946[0x948 - 0x946];
-    u32 _948;
-    u8 pad_94c[0xb4c - 0x94c];
-    u32 _b4c;
-
-    virtual void* sub_0806BE5C();
-    ObjEngine();  // sub_0806BE68
-    virtual ~ObjEngine();
-};
 
 extern ClockData callback_sub_0806C1D8;
 extern ClockData callback_sub_0806C3DC;
 
-extern int gUnknown_02001CF4;
-extern s32 gUnknown_02001D00;
-extern ObjEngine* gUnknown_02001D04;
-
 // genengine
 extern "C" void* sub_0806A974();
 extern "C" void sub_0806AFA4(void*, int);
-;
 extern "C" void sub_0806AF58(void*, int);
 
 // objchrpool
 extern "C" void sub_0806C428();
 extern "C" void makeInstance__17ObjPltPoolManager();
-
 extern "C" void destroy__17ObjPltPoolManager();
 extern "C" void sub_0806C464();
 extern "C" void* sub_0806A9A4();
 extern "C" void sub_0806A9B0();
 extern "C" void sub_0806AFA4(void*, int);
 
-extern "C" void* sub_0806BDDC(void) {
-    return &gUnknown_02001CF4;
-}
-
-extern "C" ObjEngine* sub_0806BDE4(void) {
-    // Only allocate on first call
-    if (gUnknown_02001D00++ == 0) {
-        gUnknown_02001D04 = new ObjEngine();
-    }
-
-    return gUnknown_02001D04;
-}
-
-extern "C" ObjEngine* sub_0806BE14(void) {
-    return gUnknown_02001D04;
-}
-
-extern "C" void sub_0806BE20() {
-    if (gUnknown_02001D00 > 0) {
-        if (--gUnknown_02001D00 == 0) {
-            delete gUnknown_02001D04;
-            gUnknown_02001D04 = NULL;
-        }
-    }
-}
-
-void* ObjEngine::sub_0806BE5C() {
-    return sub_0806BDDC();
-}
+SINGLETON_IMPL(ObjEngine);
 
 #ifdef NON_MATCHING
 ObjEngine::ObjEngine() {
@@ -147,4 +81,3 @@ extern "C" ASM_FUNC("asm/non_matching/objengine/sub_0806C1C0.inc", void sub_0806
 extern "C" ASM_FUNC("asm/non_matching/objengine/sub_0806C1CC.inc", void sub_0806C1CC());
 extern "C" ASM_FUNC("asm/non_matching/objengine/sub_0806C1D8.inc", void sub_0806C1D8());
 extern "C" ASM_FUNC("asm/non_matching/objengine/sub_0806C3DC.inc", void sub_0806C3DC());
-extern "C" ASM_FUNC("asm/non_matching/objengine/sub_0806C404.inc", void sub_0806C404());
