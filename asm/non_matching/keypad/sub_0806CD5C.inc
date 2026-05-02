@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0806CD5C:
+update__6KeyPadP5Clock:
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}

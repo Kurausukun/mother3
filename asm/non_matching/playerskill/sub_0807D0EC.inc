@@ -121,5 +121,5 @@ _0807D1F4: .4byte gUnknown_020021B8
 _0807D1F8: .4byte 0x00000109
 _0807D1FC: .4byte _vt.3Unk
 _0807D200: .4byte _vt.8AppClock
-_0807D204: .4byte gUnknown_08109168
+_0807D204: .4byte callback_sub_0807D280
 	.syntax divided

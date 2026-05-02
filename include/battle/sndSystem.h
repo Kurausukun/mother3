@@ -17,6 +17,9 @@ public:
     virtual u16 getUnk20();
     virtual u8 getUnk22();
 
+    void main();
+    void vsync();
+
     u16 _20;
     u8 _22;
 };

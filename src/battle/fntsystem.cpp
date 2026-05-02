@@ -4,7 +4,7 @@
 #include "battle/archive.h"
 #include "global.h"
 
-extern ClockData gUnknown_080FFD3C;
+extern ClockData callback_sub_0806D878;
 
 extern "C" void __11Unk08088018(void*);
 extern "C" void LZ77UnCompWram(void*, void*);
@@ -190,7 +190,7 @@ public:
 Unk0806D64C::Unk0806D64C() : _24(0), _26(0), _28(0, 0), _2C(0, 0) {
     _20 = 0;
     _68 = 2;
-    listen(ClockManager::get(), AppClock(), gUnknown_080FFD3C);
+    listen(ClockManager::get(), AppClock(), callback_sub_0806D878);
 }
 
 Unk0806D64C::~Unk0806D64C() {

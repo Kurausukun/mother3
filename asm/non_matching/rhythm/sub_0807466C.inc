@@ -66,8 +66,8 @@ sub_0807466C:
 	bx r1
 	.align 2, 0
 _080746FC: .4byte _vt.9RhythmBgm
-_08074700: .4byte gUnknown_08105CD0
+_08074700: .4byte callback_sub_0807489C
 _08074704: .4byte _vt.3Unk
 _08074708: .4byte _vt.8AppClock
-_0807470C: .4byte gUnknown_08105CD8
+_0807470C: .4byte callback_sub_080748C8
 	.syntax divided

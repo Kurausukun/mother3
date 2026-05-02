@@ -26,8 +26,8 @@ extern "C" void InitHeal(Unit*, u32, u32);
 extern "C" void sub_08073D98(Unit*, u32, u32);
 extern "C" bool IsPlayer(Unit*);
 
-extern ClockData gUnknown_08107DB0;
-extern ClockData gUnknown_08107DB8;
+extern ClockData callback_unit_join_callback;
+extern ClockData callback_unit_leave_callback;
 
 extern "C" NONMATCH("asm/non_matching/skill/__5SkillUi.inc",
                     void __6ActionP4Unit(Action* thisx, Unit* user)) {
@@ -35,18 +35,18 @@ extern "C" NONMATCH("asm/non_matching/skill/__5SkillUi.inc",
     thisx->_40 = 0;
     thisx->_44 = 0;
 
-    thisx->listen(getPartyInfo(), UnitJoin(), gUnknown_08107DB0);
-    thisx->listen(getGuestInfo(), UnitJoin(), gUnknown_08107DB0);
-    thisx->listen(getMonsterInfo(), UnitJoin(), gUnknown_08107DB0);
-    thisx->listen(getPartyInfo(), UnitRevive(), gUnknown_08107DB0);
-    thisx->listen(getGuestInfo(), UnitRevive(), gUnknown_08107DB0);
-    thisx->listen(getMonsterInfo(), UnitRevive(), gUnknown_08107DB0);
-    thisx->listen(getPartyInfo(), UnitEscape(), gUnknown_08107DB8);
-    thisx->listen(getGuestInfo(), UnitEscape(), gUnknown_08107DB8);
-    thisx->listen(getMonsterInfo(), UnitEscape(), gUnknown_08107DB8);
-    thisx->listen(getPartyInfo(), UnitDie(), gUnknown_08107DB8);
-    thisx->listen(getGuestInfo(), UnitDie(), gUnknown_08107DB8);
-    thisx->listen(getMonsterInfo(), UnitDie(), gUnknown_08107DB8);
+    thisx->listen(getPartyInfo(), UnitJoin(), callback_unit_join_callback);
+    thisx->listen(getGuestInfo(), UnitJoin(), callback_unit_join_callback);
+    thisx->listen(getMonsterInfo(), UnitJoin(), callback_unit_join_callback);
+    thisx->listen(getPartyInfo(), UnitRevive(), callback_unit_join_callback);
+    thisx->listen(getGuestInfo(), UnitRevive(), callback_unit_join_callback);
+    thisx->listen(getMonsterInfo(), UnitRevive(), callback_unit_join_callback);
+    thisx->listen(getPartyInfo(), UnitEscape(), callback_unit_leave_callback);
+    thisx->listen(getGuestInfo(), UnitEscape(), callback_unit_leave_callback);
+    thisx->listen(getMonsterInfo(), UnitEscape(), callback_unit_leave_callback);
+    thisx->listen(getPartyInfo(), UnitDie(), callback_unit_leave_callback);
+    thisx->listen(getGuestInfo(), UnitDie(), callback_unit_leave_callback);
+    thisx->listen(getMonsterInfo(), UnitDie(), callback_unit_leave_callback);
 }
 END_NONMATCH
 

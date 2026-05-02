@@ -72,5 +72,5 @@ _0808A2FC: .4byte vt_09F85378
 _0808A300: .4byte vt_09F854A8
 _0808A304: .4byte _vt.3Unk
 _0808A308: .4byte _vt.8AppClock
-_0808A30C: .4byte gUnknown_081162CC
+_0808A30C: .4byte callback_sub_0808A3C8
 	.syntax divided

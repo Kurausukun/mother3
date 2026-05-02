@@ -82,5 +82,5 @@ sub_08085C98:
 _08085D4C: .4byte vt_09F84108
 _08085D50: .4byte _vt.3Unk
 _08085D54: .4byte _vt.12PostAppClock
-_08085D58: .4byte gUnknown_0810FA58
+_08085D58: .4byte callback_sub_08085DF4
 	.syntax divided

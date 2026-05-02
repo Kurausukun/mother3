@@ -98,5 +98,5 @@ _080717E4: .4byte 0x040000D4
 _080717E8: .4byte 0x81000040
 _080717EC: .4byte _vt.3Unk
 _080717F0: .4byte _vt.8AppClock
-_080717F4: .4byte gUnknown_08103710
+_080717F4: .4byte callback_sub_08071920
 	.syntax divided

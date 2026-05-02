@@ -299,7 +299,7 @@ _08083FC0: .4byte vt_09F83E40
 _08083FC4: .4byte 0x00000289
 _08083FC8: .4byte _vt.3Unk
 _08083FCC: .4byte _vt.9AKeyPress
-_08083FD0: .4byte gUnknown_0810E028
+_08083FD0: .4byte callback_sub_0808431C
 _08083FD4: .4byte _vt.13AKeyLongPress
 _08083FD8: .4byte _vt.9LKeyPress
 _08083FDC: .4byte _vt.13LKeyLongPress

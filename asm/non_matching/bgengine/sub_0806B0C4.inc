@@ -189,5 +189,5 @@ _0806B244: .4byte _vt.8BGEngine
 _0806B248: .4byte 0xFFF80000
 _0806B24C: .4byte _vt.3Unk
 _0806B250: .4byte _vt.8SysClock
-_0806B254: .4byte gUnknown_080FF2CC
+_0806B254: .4byte callback_bgengine_updateScrollHorizontal
 	.syntax divided

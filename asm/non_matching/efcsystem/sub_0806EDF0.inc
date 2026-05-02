@@ -72,5 +72,5 @@ _0806EE62:
 _0806EE80: .4byte vt_09F80168
 _0806EE84: .4byte 0x00000141
 _0806EE88: .4byte 0x000004AC
-_0806EE8C: .4byte gUnknown_0810056C
+_0806EE8C: .4byte callback_sub_0806EF34
 	.syntax divided

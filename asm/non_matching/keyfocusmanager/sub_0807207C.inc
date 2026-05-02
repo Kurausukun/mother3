@@ -341,7 +341,7 @@ __15KeyFocusManager:
 _080723A0: .4byte _vt.15KeyFocusManager
 _080723A4: .4byte _vt.3Unk
 _080723A8: .4byte _vt.10UpKeyPress
-_080723AC: .4byte gUnknown_08104FC8
+_080723AC: .4byte callback_sub_08072518
 _080723B0: .4byte _vt.14UpKeyLongPress
 _080723B4: .4byte _vt.12DownKeyPress
 _080723B8: .4byte _vt.16DownKeyLongPress

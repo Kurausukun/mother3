@@ -473,7 +473,7 @@ _0808CFD8: .4byte 0x00000554
 _0808CFDC: .4byte 0x0000028A
 _0808CFE0: .4byte _vt.3Unk
 _0808CFE4: .4byte _vt.10UpKeyPress
-_0808CFE8: .4byte gUnknown_08118A24
+_0808CFE8: .4byte callback_sub_0808DA04
 _0808CFEC: .4byte _vt.14UpKeyLongPress
 _0808CFF0:
 	ldr r0, _0808D224
@@ -715,26 +715,26 @@ _0808CFF0:
 	bx r1
 	.align 2, 0
 _0808D224: .4byte _vt.12DownKeyPress
-_0808D228: .4byte gUnknown_08118A2C
+_0808D228: .4byte callback_sub_0808DA44
 _0808D22C: .4byte _vt.16DownKeyLongPress
 _0808D230: .4byte _vt.12LeftKeyPress
-_0808D234: .4byte gUnknown_08118A34
+_0808D234: .4byte callback_sub_0808DA84
 _0808D238: .4byte _vt.13RightKeyPress
-_0808D23C: .4byte gUnknown_08118A3C
+_0808D23C: .4byte callback_sub_0808DAC4
 _0808D240: .4byte _vt.14SelectKeyPress
-_0808D244: .4byte gUnknown_08118A44
+_0808D244: .4byte callback_sub_0808DB04
 _0808D248: .4byte _vt.9AKeyPress
-_0808D24C: .4byte gUnknown_08118A4C
+_0808D24C: .4byte callback_sub_0808DB44
 _0808D250: .4byte _vt.13AKeyLongPress
 _0808D254: .4byte _vt.9LKeyPress
 _0808D258: .4byte _vt.13LKeyLongPress
 _0808D25C: .4byte _vt.9BKeyPress
-_0808D260: .4byte gUnknown_08118A54
+_0808D260: .4byte callback_sub_0808DB94
 _0808D264: .4byte _vt.7Suspend
-_0808D268: .4byte gUnknown_08118A5C
+_0808D268: .4byte callback_sub_0808DF84
 _0808D26C: .4byte _vt.10UnitEscape
-_0808D270: .4byte gUnknown_08118A64
+_0808D270: .4byte callback_sub_0808DF9C
 _0808D274: .4byte _vt.7UnitDie
 _0808D278: .4byte _vt.6Resume
-_0808D27C: .4byte gUnknown_08118A6C
+_0808D27C: .4byte callback_sub_0808DFBC
 	.syntax divided

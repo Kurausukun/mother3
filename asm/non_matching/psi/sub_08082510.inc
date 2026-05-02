@@ -124,11 +124,11 @@ _08082620: .4byte vt_09F83810
 _08082624: .4byte gUnknown_080E1708
 _08082628: .4byte _vt.3Unk
 _0808262C: .4byte _vt.10RoundBegin
-_08082630: .4byte gUnknown_0810C608
+_08082630: .4byte callback_sub_08082968
 _08082634: .4byte _vt.13UnitTurnBegin
-_08082638: .4byte gUnknown_0810C610
+_08082638: .4byte callback_sub_080829F4
 _0808263C: .4byte _vt.11UnitTurnEnd
-_08082640: .4byte gUnknown_0810C618
+_08082640: .4byte callback_sub_08082AA0
 _08082644: .4byte _vt.8RoundEnd
-_08082648: .4byte gUnknown_0810C620
+_08082648: .4byte callback_sub_08082AC0
 	.syntax divided

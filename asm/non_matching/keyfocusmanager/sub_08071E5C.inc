@@ -75,5 +75,5 @@ _08071F00: .4byte 0x00000283
 _08071F04: .4byte _vt.6ResPtr
 _08071F08: .4byte _vt.3Unk
 _08071F0C: .4byte _vt.11PreAppClock
-_08071F10: .4byte gUnknown_08104790
+_08071F10: .4byte callback_sub_08071F38
 	.syntax divided

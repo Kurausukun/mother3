@@ -198,11 +198,11 @@ _0807AAC0: .4byte gLevelStatTable
 _0807AAC4: .4byte 0x0000020A
 _0807AAC8: .4byte _vt.3Unk
 _0807AACC: .4byte _vt.10RoundBegin
-_0807AAD0: .4byte gUnknown_08108440
+_0807AAD0: .4byte callback_sub_0807C1C8
 _0807AAD4: .4byte _vt.8RoundEnd
-_0807AAD8: .4byte gUnknown_08108448
+_0807AAD8: .4byte callback_sub_0807C244
 _0807AADC: .4byte _vt.13ShowDownAsWin
-_0807AAE0: .4byte gUnknown_08108450
+_0807AAE0: .4byte callback_sub_0807C264
 _0807AAE4: .4byte _vt.16ShowDownAsEscape
-_0807AAE8: .4byte gUnknown_08108458
+_0807AAE8: .4byte callback_sub_0807C324
 	.syntax divided

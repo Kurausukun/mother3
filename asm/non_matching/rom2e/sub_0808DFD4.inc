@@ -221,12 +221,12 @@ _0808E1D0: .4byte vt_09F7E458
 _0808E1D4: .4byte 0x0000028A
 _0808E1D8: .4byte _vt.3Unk
 _0808E1DC: .4byte _vt.9BKeyPress
-_0808E1E0: .4byte gUnknown_081190F4
+_0808E1E0: .4byte callback_sub_0808E2DC
 _0808E1E4: .4byte _vt.7Suspend
-_0808E1E8: .4byte gUnknown_081190FC
+_0808E1E8: .4byte callback_sub_0808E300
 _0808E1EC: .4byte _vt.10UnitEscape
-_0808E1F0: .4byte gUnknown_08119104
+_0808E1F0: .4byte callback_sub_0808E318
 _0808E1F4: .4byte _vt.7UnitDie
 _0808E1F8: .4byte _vt.6Resume
-_0808E1FC: .4byte gUnknown_0811910C
+_0808E1FC: .4byte callback_sub_0808E338
 	.syntax divided

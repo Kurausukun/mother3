@@ -17,6 +17,9 @@ struct KeyPad : Base {
     u32 getKeys();
     u32 getNewKeys();
 
+    void update(Clock* clock);
+    void emitNewKeys();
+
     u16 _20;
     u16 _22;
     u16 keys;  // copy of keypad state

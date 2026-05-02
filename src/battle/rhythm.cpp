@@ -13,8 +13,8 @@
 extern u32 sRhythmInRTTI;  // TODO: confirm type
 extern u32 sRhythmOutRTTI;  // TODO: confirm type
 extern u32 sRhythmBgmRTTI;  // TODO: confirm type
-extern Intr2 gUnknown_08105CD0;
-extern ClockData gUnknown_08105CD8;
+extern Intr2 callback_sub_0807489C;
+extern ClockData callback_sub_080748C8;
 
 extern "C" s32 sub_08069558(s32 min, s32 max, s32 step, s32 duration);
 extern "C" BattleFader* sub_08072568();
@@ -207,9 +207,9 @@ RhythmBgm::RhythmBgm(u16 songNum) : Sound(songNum) {
     field_58 = 2;
     field_5C = 0;
 
-    IrcManager::get()->sub_08069A50((u32)this, gUnknown_08105CD0);
+    IrcManager::get()->sub_08069A50((u32)this, callback_sub_0807489C);
 
-    listen(ClockManager::get(), AppClock(), gUnknown_08105CD8);
+    listen(ClockManager::get(), AppClock(), callback_sub_080748C8);
 }
 
 extern "C" const RhythmInfo* GetRhythmDataBySongNum(RhythmBgm* game, u16 songNum) {

@@ -98,5 +98,5 @@ _080861FC: .4byte 0x0000027B
 _08086200: .4byte _vt.6ResPtr
 _08086204: .4byte _vt.3Unk
 _08086208: .4byte _vt.12PostAppClock
-_0808620C: .4byte gUnknown_08110DF0
+_0808620C: .4byte callback_sub_080862A8
 	.syntax divided

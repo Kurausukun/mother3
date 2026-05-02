@@ -202,5 +202,5 @@ _08089F50: .4byte vt_09F852E0
 _08089F54: .4byte _vt.6ResPtr
 _08089F58: .4byte _vt.3Unk
 _08089F5C: .4byte _vt.8AppClock
-_08089F60: .4byte gUnknown_0811600C
+_08089F60: .4byte callback_sub_08089F94
 	.syntax divided

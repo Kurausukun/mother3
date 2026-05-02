@@ -58,7 +58,7 @@ __16UnitTargetChoiceUsP4Unit:
 	mov sl, r2
 	ldr r0, _08076A0C @ =_vt.12LeftKeyPress
 	str r0, [sp, #0x20]
-	ldr r0, _08076A10 @ =gUnknown_08107070
+	ldr r0, _08076A10 @ =callback_sub_080775E8
 	ldr r4, [r0]
 	ldr r5, [r0, #4]
 	adds r7, r5, #0
@@ -92,7 +92,7 @@ __16UnitTargetChoiceUsP4Unit:
 	bl __4Base
 	ldr r0, _08076A18 @ =_vt.13RightKeyPress
 	str r0, [sp, #0x20]
-	ldr r0, _08076A1C @ =gUnknown_08107078
+	ldr r0, _08076A1C @ =callback_sub_0807762C
 	ldr r4, [r0]
 	ldr r5, [r0, #4]
 	adds r7, r5, #0
@@ -126,7 +126,7 @@ __16UnitTargetChoiceUsP4Unit:
 	bl __4Base
 	ldr r0, _08076A24 @ =_vt.9AKeyPress
 	str r0, [sp, #0x20]
-	ldr r0, _08076A28 @ =gUnknown_08107080
+	ldr r0, _08076A28 @ =callback_sub_08077670
 	ldr r4, [r0]
 	ldr r5, [r0, #4]
 	adds r7, r5, #0
@@ -190,7 +190,7 @@ __16UnitTargetChoiceUsP4Unit:
 	bl __4Base
 	ldr r0, _08076A38 @ =_vt.9BKeyPress
 	str r0, [sp, #0x20]
-	ldr r0, _08076A3C @ =gUnknown_08107088
+	ldr r0, _08076A3C @ =callback_sub_080776AC
 	ldr r3, [r0]
 	ldr r4, [r0, #4]
 	str r4, [sp]
@@ -209,7 +209,7 @@ __16UnitTargetChoiceUsP4Unit:
 	bl __4Base
 	ldr r0, _08076A40 @ =_vt.7Suspend
 	str r0, [sp, #0x20]
-	ldr r0, _08076A44 @ =gUnknown_08107090
+	ldr r0, _08076A44 @ =callback_sub_080776E8
 	ldr r3, [r0]
 	ldr r4, [r0, #4]
 	str r4, [sp]
@@ -232,7 +232,7 @@ __16UnitTargetChoiceUsP4Unit:
 	str r0, [sp, #0x40]
 	add r2, sp, #0x24
 	mov r8, r2
-	ldr r0, _08076A4C @ =gUnknown_08107098
+	ldr r0, _08076A4C @ =callback_sub_08077704
 	ldr r4, [r0]
 	ldr r5, [r0, #4]
 	adds r7, r5, #0
@@ -273,7 +273,7 @@ __16UnitTargetChoiceUsP4Unit:
 	str r0, [sp, #0x24]
 	ldr r0, _08076A54 @ =_vt.10UnitEscape
 	str r0, [sp, #0x20]
-	ldr r0, _08076A58 @ =gUnknown_081070A0
+	ldr r0, _08076A58 @ =callback_sub_08077898
 	ldr r4, [r0]
 	ldr r5, [r0, #4]
 	adds r7, r5, #0
@@ -313,7 +313,7 @@ __16UnitTargetChoiceUsP4Unit:
 	bl __4Base
 	ldr r0, _08076A60 @ =_vt.6Resume
 	str r0, [sp, #0x20]
-	ldr r0, _08076A64 @ =gUnknown_081070A8
+	ldr r0, _08076A64 @ =callback_sub_08077A48
 	ldr r3, [r0]
 	ldr r4, [r0, #4]
 	str r4, [sp]
@@ -339,26 +339,26 @@ __16UnitTargetChoiceUsP4Unit:
 _08076A04: .4byte _vt.16UnitTargetChoice
 _08076A08: .4byte _vt.3Unk
 _08076A0C: .4byte _vt.12LeftKeyPress
-_08076A10: .4byte gUnknown_08107070
+_08076A10: .4byte callback_sub_080775E8
 _08076A14: .4byte _vt.16LeftKeyLongPress
 _08076A18: .4byte _vt.13RightKeyPress
-_08076A1C: .4byte gUnknown_08107078
+_08076A1C: .4byte callback_sub_0807762C
 _08076A20: .4byte _vt.17RightKeyLongPress
 _08076A24: .4byte _vt.9AKeyPress
-_08076A28: .4byte gUnknown_08107080
+_08076A28: .4byte callback_sub_08077670
 _08076A2C: .4byte _vt.13AKeyLongPress
 _08076A30: .4byte _vt.9LKeyPress
 _08076A34: .4byte _vt.13LKeyLongPress
 _08076A38: .4byte _vt.9BKeyPress
-_08076A3C: .4byte gUnknown_08107088
+_08076A3C: .4byte callback_sub_080776AC
 _08076A40: .4byte _vt.7Suspend
-_08076A44: .4byte gUnknown_08107090
+_08076A44: .4byte callback_sub_080776E8
 _08076A48: .4byte _vt.8UnitJoin
-_08076A4C: .4byte gUnknown_08107098
+_08076A4C: .4byte callback_sub_08077704
 _08076A50: .4byte _vt.10UnitRevive
 _08076A54: .4byte _vt.10UnitEscape
-_08076A58: .4byte gUnknown_081070A0
+_08076A58: .4byte callback_sub_08077898
 _08076A5C: .4byte _vt.7UnitDie
 _08076A60: .4byte _vt.6Resume
-_08076A64: .4byte gUnknown_081070A8
+_08076A64: .4byte callback_sub_08077A48
 	.syntax divided

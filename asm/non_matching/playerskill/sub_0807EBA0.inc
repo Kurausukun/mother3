@@ -443,22 +443,22 @@ _0807EF80: .4byte 0x00000283
 _0807EF84: .4byte _vt.6ResPtr
 _0807EF88: .4byte _vt.3Unk
 _0807EF8C: .4byte _vt.12LeftKeyPress
-_0807EF90: .4byte gUnknown_08109EC0
+_0807EF90: .4byte callback_sub_0808014C
 _0807EF94: .4byte _vt.16LeftKeyLongPress
 _0807EF98: .4byte _vt.13RightKeyPress
-_0807EF9C: .4byte gUnknown_08109EC8
+_0807EF9C: .4byte callback_sub_080801A4
 _0807EFA0: .4byte _vt.17RightKeyLongPress
 _0807EFA4: .4byte _vt.9AKeyPress
-_0807EFA8: .4byte gUnknown_08109ED0
+_0807EFA8: .4byte callback_sub_080801FC
 _0807EFAC: .4byte _vt.13AKeyLongPress
 _0807EFB0: .4byte _vt.9LKeyPress
 _0807EFB4: .4byte _vt.13LKeyLongPress
 _0807EFB8: .4byte _vt.9BKeyPress
-_0807EFBC: .4byte gUnknown_08109ED8
+_0807EFBC: .4byte callback_sub_08080220
 _0807EFC0: .4byte _vt.7Suspend
-_0807EFC4: .4byte gUnknown_08109EE0
+_0807EFC4: .4byte callback_sub_08080244
 _0807EFC8: .4byte _vt.10UnitEscape
-_0807EFCC: .4byte gUnknown_08109EE8
+_0807EFCC: .4byte callback_sub_0808025C
 _0807EFD0:
 	movs r1, #0
 	str r1, [sp, #0x24]
@@ -603,5 +603,5 @@ _0807EFD0:
 	.align 2, 0
 _0807F120: .4byte _vt.7UnitDie
 _0807F124: .4byte _vt.6Resume
-_0807F128: .4byte gUnknown_08109EF0
+_0807F128: .4byte callback_sub_0808028C
 	.syntax divided

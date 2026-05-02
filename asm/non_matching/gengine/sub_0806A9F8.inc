@@ -194,5 +194,5 @@ _0806AB10:
 _0806AB74: .4byte _vt.7GEngine
 _0806AB78: .4byte _vt.3Unk
 _0806AB7C: .4byte _vt.8SysClock
-_0806AB80: .4byte gUnknown_080FF19C
+_0806AB80: .4byte callback_sub_0806AC48
 	.syntax divided

@@ -5,8 +5,8 @@
 #include "global.h"
 #include "m4a.h"
 
-extern Intr2 gUnknown_08101CBC;
-extern Intr2 gUnknown_08101CC4;
+extern Intr2 callback_main__9SndSystem;
+extern Intr2 callback_vsync__9SndSystem;
 
 SINGLETON_IMPL(SndSystem)
 
@@ -16,9 +16,9 @@ SndSystem::SndSystem() {
     _20 = 80;
     _22 = 1;
 
-    IrcManager::get()->sub_08069AC0((u32)this, gUnknown_08101CBC);
+    IrcManager::get()->sub_08069AC0((u32)this, callback_main__9SndSystem);
     IrcManager::get()->sub_08069AF8(0xA0 - _20);
-    IrcManager::get()->sub_08069A50((u32)this, gUnknown_08101CC4);
+    IrcManager::get()->sub_08069A50((u32)this, callback_vsync__9SndSystem);
 }
 
 SndSystem::~SndSystem() {
@@ -27,8 +27,8 @@ SndSystem::~SndSystem() {
         vsyncOff();
     }
 
-    IrcManager::get()->sub_08069CF4((u32)this, gUnknown_08101CBC);
-    IrcManager::get()->sub_08069C84((u32)this, gUnknown_08101CC4);
+    IrcManager::get()->sub_08069CF4((u32)this, callback_main__9SndSystem);
+    IrcManager::get()->sub_08069C84((u32)this, callback_vsync__9SndSystem);
 }
 
 void SndSystem::vsyncOn() {
@@ -56,10 +56,10 @@ u8 SndSystem::getUnk22() {
     return _22;
 }
 
-extern "C" void sndsystem_main() {
+void SndSystem::main() {
     m4aSoundMain();
 }
 
-extern "C" void sndsystem_vsync() {
+void SndSystem::vsync() {
     m4aSoundVSync();
 }

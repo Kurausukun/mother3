@@ -202,5 +202,5 @@ _0807C8E4: .4byte 0x040000D4
 _0807C8E8: .4byte 0x80000010
 _0807C8EC: .4byte _vt.3Unk
 _0807C8F0: .4byte _vt.11PreAppClock
-_0807C8F4: .4byte gUnknown_08108AE0
+_0807C8F4: .4byte callback_sub_0807CF5C
 	.syntax divided

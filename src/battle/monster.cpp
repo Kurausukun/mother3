@@ -10,8 +10,8 @@ extern "C" u16 get_misctext_len(u32);
 
 extern MonsterData gMonsterData[];
 
-extern ClockData gUnknown_0810B278;
-extern ClockData gUnknown_0810B280;
+extern ClockData callback_sub_08081790;
+extern ClockData callback_sub_080817B0;
 
 static inline s32 maxdrops() {
     return 3;
@@ -35,8 +35,8 @@ Monster::Monster(u16 idx, u16 id) : mNumDrops(0) {
     genDeathMsg();
     mSprite = new BattleSprite(this);
 
-    listen(BattleManager::get(), RoundBegin(), gUnknown_0810B278);
-    listen(BattleManager::get(), RoundEnd(), gUnknown_0810B280);
+    listen(BattleManager::get(), RoundBegin(), callback_sub_08081790);
+    listen(BattleManager::get(), RoundEnd(), callback_sub_080817B0);
 }
 
 void Monster::resetStats() {

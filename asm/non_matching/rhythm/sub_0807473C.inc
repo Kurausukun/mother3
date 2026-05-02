@@ -19,5 +19,5 @@ sub_0807473C:
 	bx r0
 	.align 2, 0
 _08074764: .4byte _vt.9RhythmBgm
-_08074768: .4byte gUnknown_08105CD0
+_08074768: .4byte callback_sub_0807489C
 	.syntax divided

@@ -112,5 +112,5 @@ _080863CC: .4byte 0xFFFE0C00
 _080863D0: .4byte 0xFFFE7000
 _080863D4: .4byte _vt.3Unk
 _080863D8: .4byte _vt.12PostAppClock
-_080863DC: .4byte gUnknown_08111478
+_080863DC: .4byte callback_sub_08086460
 	.syntax divided

@@ -83,5 +83,5 @@ _08086E70: .4byte 0x00000287
 _08086E74: .4byte _vt.6ResPtr
 _08086E78: .4byte _vt.3Unk
 _08086E7C: .4byte _vt.8AppClock
-_08086E80: .4byte gUnknown_08114304
+_08086E80: .4byte callback_sub_08086F80
 	.syntax divided

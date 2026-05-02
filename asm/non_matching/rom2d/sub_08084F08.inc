@@ -210,7 +210,7 @@ _080850C0: .4byte vt_09F83E40
 _080850C4: .4byte 0x000014D0
 _080850C8: .4byte _vt.3Unk
 _080850CC: .4byte _vt.9AKeyPress
-_080850D0: .4byte gUnknown_0810ED48
+_080850D0: .4byte callback_sub_080856D4
 _080850D4: .4byte _vt.13AKeyLongPress
 _080850D8: .4byte _vt.9LKeyPress
 _080850DC: .4byte _vt.13LKeyLongPress

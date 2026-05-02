@@ -121,5 +121,5 @@ _0806E576:
 _0806E608: .4byte _vt.9FntSystem
 _0806E60C: .4byte _vt.3Unk
 _0806E610: .4byte _vt.12PostAppClock
-_0806E614: .4byte gUnknown_0810019C
+_0806E614: .4byte callback_sub_0806E7B4
 	.syntax divided

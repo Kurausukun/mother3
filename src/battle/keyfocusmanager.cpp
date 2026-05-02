@@ -369,11 +369,11 @@ public:
     void sub_080710BC(ComboRoot* other);
 };
 
-extern ClockData gUnknown_08102A9C;
+extern ClockData callback_sub_080710B0;
 
 ComboRoot::ComboRoot(u32 flag1, u32 flag2, u32 flag3, u32 flag4)
     : Combo(0, flag1, flag2, flag3, flag4) {
-    listen(ClockManager::get(), PreAppClock(), gUnknown_08102A9C);
+    listen(ClockManager::get(), PreAppClock(), callback_sub_080710B0);
 }
 
 ComboRoot::~ComboRoot() {

@@ -48,5 +48,5 @@ _0806C4C6:
 _0806C50C: .4byte _vt.10ObjChrPool
 _0806C510: .4byte _vt.3Unk
 _0806C514: .4byte _vt.8SysClock
-_0806C518: .4byte gUnknown_080FF534
+_0806C518: .4byte callback_sub_0806C738
 	.syntax divided

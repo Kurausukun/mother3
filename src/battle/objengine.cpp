@@ -34,8 +34,8 @@ public:
     virtual ~ObjEngine();
 };
 
-extern ClockData gUnknown_080FF3FC;
-extern ClockData gUnknown_080FF404;
+extern ClockData callback_sub_0806C1D8;
+extern ClockData callback_sub_0806C3DC;
 
 extern int gUnknown_02001CF4;
 extern s32 gUnknown_02001D00;
@@ -109,8 +109,8 @@ ObjEngine::ObjEngine() {
     sub_0806AFA4(temp_r0_3, 0xEF9F);
     sub_0806AF58(temp_r0_3, 0x1040);
 
-    listen(ClockManager::get(), SysClock(), gUnknown_080FF3FC);
-    listen(ClockManager::get(), PostSysClock(), gUnknown_080FF404);
+    listen(ClockManager::get(), SysClock(), callback_sub_0806C1D8);
+    listen(ClockManager::get(), PostSysClock(), callback_sub_0806C3DC);
 
     sub_0806C428();
     makeInstance__17ObjPltPoolManager();
