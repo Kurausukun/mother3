@@ -177,8 +177,8 @@ gUnknown_080F6704:
     .4byte battle_end_callback__FP5Guest+1
     .incbin "baserom.gba", 0x000F670C, 0x620
 
-    .global gUnknown_080F6D2C
-gUnknown_080F6D2C:
+    .global const_classname_Guest
+const_classname_Guest:
     .incbin "baserom.gba", 0x000F6D2C, 0x60
 
     .global gUnknown_080F6D8C
