@@ -36,8 +36,8 @@ gUnknown_080FEDB4:
 gUnknown_080FEDC4:
     .incbin "baserom.gba", 0x000FEDC4, 0x1C
 
-    .global gUnknown_080FEDE0
-gUnknown_080FEDE0:
+    .global const_classname_Irc
+const_classname_Irc:
     .incbin "baserom.gba", 0x000FEDE0, 0xC8
 
     .global const_classname_PreSysClock

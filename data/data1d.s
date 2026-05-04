@@ -361,8 +361,8 @@ gUnknown_080FCAB0:
     .4byte sub_08065A50+1
     .incbin "baserom.gba", 0x000FCAB8, 0xAA0
 
-    .global gUnknown_080FD558
-gUnknown_080FD558:
+    .global const_classname_SndMon
+const_classname_SndMon:
     .incbin "baserom.gba", 0x000FD558, 0x8
 
     .global gUnknown_080FD560
