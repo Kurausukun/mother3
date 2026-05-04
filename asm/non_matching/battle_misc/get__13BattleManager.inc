@@ -4,5 +4,5 @@ get__13BattleManager:
 	ldr r0, [r0]
 	bx lr
 	.align 2, 0
-_0805D87C: .4byte sBattleInstance
+_0805D87C: .4byte _13BattleManager.mSingleton
 	.syntax divided

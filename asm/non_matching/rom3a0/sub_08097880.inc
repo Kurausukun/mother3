@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08097880:
+init__15UnitTurnEndRTTI:
 	push {lr}
 	movs r0, #0x24
 	bl __builtin_new

@@ -458,8 +458,8 @@ Sequencer* Battle::battle_238() {
 
 extern "C" void nullsub_95() {}
 
-extern "C" ASM_FUNC("asm/non_matching/battle/sub_0805EDD8.inc", void sub_0805EDD8());
-extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EE80.inc", void sub_0805EE80());
+extern "C" ASM_FUNC("asm/non_matching/battle/sub_0805EDD8.inc", void BattleManager_global_init()); // BattleManager_global_init
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EE80.inc", void __6Battle()); // __6Battle
 extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EEA0.inc", void sub_0805EEA0());
 extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EEA4.inc", void sub_0805EEA4());
 extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EEC0.inc", void sub_0805EEC0());
@@ -471,7 +471,7 @@ extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EF14.inc", void sub_0805EF14
 extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EF34.inc", void sub_0805EF34());
 extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EF50.inc", void sub_0805EF50());
 extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EF54.inc", void sub_0805EF54());
-extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EF74.inc", void sub_0805EF74());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EF74.inc", void sub_0805EF74()); // RoundBegin::RoundBegin() : t(0) {}
 extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EF90.inc", void sub_0805EF90());
 extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EFEC.inc", void sub_0805EFEC());
 extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EFFC.inc", void sub_0805EFFC());

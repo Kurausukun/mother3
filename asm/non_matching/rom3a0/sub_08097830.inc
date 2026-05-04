@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08097830:
+dt__16ShowDownAsEscape:
 	push {lr}
 	ldr r2, _08097840
 	str r2, [r0, #0x1c]

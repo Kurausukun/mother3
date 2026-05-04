@@ -1,7 +1,7 @@
 	.syntax unified
-sub_0805D7A8:
+getRTTI__10RoundBegin:
 	push {lr}
-	bl sub_0805D7A0
+	bl get__14RoundBeginRTTI
 	pop {r1}
 	bx r1
 	.align 2, 0

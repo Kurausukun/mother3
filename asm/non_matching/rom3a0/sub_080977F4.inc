@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080977F4:
+dt__14ShowDownAsLose:
 	push {lr}
 	ldr r2, _08097804
 	str r2, [r0, #0x1c]

@@ -48,4 +48,16 @@ struct Singleton {
         return CLASS##RTTI::get();                                                                 \
     }
 
+#define RTTI_DEBUG(CLASS, STR)                                                                \
+    /*const char* class##Singleton::getName() { return #CLASS; }*/                                 \
+    extern const char STR[];                                                                       \
+    void* CLASS##RTTI::init(u16 id) {                                                         \
+        return new CLASS;                                                                          \
+    }                                                                                              \
+    const char* CLASS##RTTI::getName() {                                                      \
+        return STR;                                                                                \
+    }                                                                                              \
+    /* CLASS::~CLASS() {} TODO: class destructor is inlined here, how do we generate this? */
+
+
 #endif  // RTTI_H

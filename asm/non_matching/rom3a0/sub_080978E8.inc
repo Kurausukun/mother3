@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080978E8:
+getName__12RoundEndRTTI:
 	ldr r0, _080978EC
 	bx lr
 	.align 2, 0

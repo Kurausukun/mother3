@@ -1,7 +1,7 @@
 	.syntax unified
-sub_0805D820:
+getRTTI__14ShowDownAsLose:
 	push {lr}
-	bl sub_0805D818
+	bl get__18ShowDownAsLoseRTTI
 	pop {r1}
 	bx r1
 	.align 2, 0

@@ -1,29 +1,29 @@
 // Auto-generated source file
 #include "global.h"
+#include "rtti.h"
+#include "battle.h"
+#include "singleton.h"
 
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_080977B4.inc", void sub_080977B4());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_080977C4.inc", void sub_080977C4());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_080977CC.inc", void sub_080977CC());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_080977EC.inc", void sub_080977EC());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_080977F4.inc", void sub_080977F4());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_08097808.inc", void sub_08097808());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_08097828.inc", void sub_08097828());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_08097830.inc", void sub_08097830());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_08097844.inc", void sub_08097844());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_08097864.inc", void sub_08097864());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_0809786C.inc", void sub_0809786C());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_08097880.inc", void sub_08097880());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_08097890.inc", void sub_08097890());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_08097898.inc", void sub_08097898());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_080978AC.inc", void sub_080978AC());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_080978BC.inc", void sub_080978BC());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_080978C4.inc", void sub_080978C4());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_080978D8.inc", void sub_080978D8());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_080978E8.inc", void sub_080978E8());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_080978F0.inc", void sub_080978F0());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_08097904.inc", void sub_08097904());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_08097914.inc", void sub_08097914());
-extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_0809791C.inc", void sub_0809791C());
+extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_080977B4.inc", void init__13BattleManager());
+extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_080977C4.inc", void getName__13BattleManager());
+RTTI_DEBUG(ShowDownAsLose, const_classname_ShowDownAsLose);
+extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_080977F4.inc", void dt__14ShowDownAsLose()); // _._14ShowDownAsLose
+RTTI_DEBUG(ShowDownAsEscape, const_classname_ShowDownAsEscape);
+extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_08097830.inc", void dt__16ShowDownAsEscape()); // _._16ShowDownAsEscape
+RTTI_DEBUG(ShowDownAsWin, const_classname_ShowDownAsWin);
+extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_0809786C.inc", void dt__13ShowDownAsWin()); // _._13ShowDownAsWin
+extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_08097880.inc", void init__15UnitTurnEndRTTI());
+extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_08097890.inc", void getName__15UnitTurnEndRTTI());
+extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_08097898.inc", void dt__11UnitTurnEnd()); // _._11UnitTurnEnd
+extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_080978AC.inc", void init__17UnitTurnBeginRTTI());
+extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_080978BC.inc", void getName__17UnitTurnBeginRTTI());
+extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_080978C4.inc", void dt__13UnitTurnBegin()); // _._13UnitTurnBegin
+extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_080978D8.inc", void init__12RoundEndRTTI());
+extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_080978E8.inc", void getName__12RoundEndRTTI());
+extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_080978F0.inc", void dt__8RoundEnd()); // _._8RoundEnd
+extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_08097904.inc", void init__14RoundBeginRTTI());
+extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_08097914.inc", void getName__14RoundBeginRTTI());
+extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_0809791C.inc", void dt__10RoundBegin()); // _._10RoundBegin
 extern "C" ASM_FUNC("asm/non_matching/rom3a0/MaskedManBattleB_ctor.inc", void MaskedManBattleB_ctor());
 extern "C" ASM_FUNC("asm/non_matching/rom3a0/MaskedManBattleA_ctor.inc", void MaskedManBattleA_ctor());
 extern "C" ASM_FUNC("asm/non_matching/rom3a0/PorkyBattle_ctor.inc", void PorkyBattle_ctor());

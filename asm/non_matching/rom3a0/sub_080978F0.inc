@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080978F0:
+dt__8RoundEnd:
 	push {lr}
 	ldr r2, _08097900
 	str r2, [r0, #0x1c]

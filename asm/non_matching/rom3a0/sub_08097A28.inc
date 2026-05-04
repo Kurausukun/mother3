@@ -4,7 +4,7 @@ sub_08097A28:
 	adds r5, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_0805D8FC
+	bl __6BattleUs
 	ldr r0, _08097A8C
 	str r0, [r5, #0x1c]
 	movs r1, #0xf6

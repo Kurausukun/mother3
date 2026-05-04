@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080977C4:
+getName__13BattleManager:
 	ldr r0, _080977C8
 	bx lr
 	.align 2, 0

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809791C:
+dt__10RoundBegin:
 	push {lr}
 	ldr r2, _0809792C
 	str r2, [r0, #0x1c]

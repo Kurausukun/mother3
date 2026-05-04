@@ -38,7 +38,7 @@ _0809B50E:
 _0809B51E:
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_0805DB84
+	bl dt__6Battle
 	pop {r4, r5}
 	pop {r0}
 	bx r0

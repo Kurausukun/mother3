@@ -152,7 +152,9 @@ struct Sequencer {
 class Battle : public Base {
 public:
     Battle();
+    Battle(u16 id);
     virtual ~Battle() override;
+    virtual void* getRTTI();
 
     virtual void battle_68();
     virtual void battle_70();
@@ -246,6 +248,7 @@ public:
     RoundBegin() : t(0) {}
     RoundBegin(u16 t) : t(t) {}
     virtual ~RoundBegin() {}
+    virtual void* getRTTI();
 
     u16 t;
 };
@@ -255,6 +258,7 @@ public:
     RoundEnd() : t(0) {}
     RoundEnd(u16 t) : t(t) {}
     virtual ~RoundEnd() {}
+    virtual void* getRTTI();
 
     u16 t;
 };
@@ -263,6 +267,7 @@ struct UnitTurnBegin : public Unk {
     UnitTurnBegin() {}
     UnitTurnBegin(Unit* u) : u(u) {}
     virtual ~UnitTurnBegin() {}
+    virtual void* getRTTI();
 
     Unit* u;
 };
@@ -271,6 +276,7 @@ struct UnitTurnEnd : public Unk {
     UnitTurnEnd() {}
     UnitTurnEnd(Unit* u) : u(u) {}
     virtual ~UnitTurnEnd() {}
+    virtual void* getRTTI();
 
     Unit* u;
 };
@@ -278,17 +284,28 @@ struct UnitTurnEnd : public Unk {
 struct ShowDownAsWin : public Unk {
     ShowDownAsWin() {}
     virtual ~ShowDownAsWin() {}
+    virtual void* getRTTI();
 };
 
 struct ShowDownAsLose : public Unk {
     ShowDownAsLose() {}
     virtual ~ShowDownAsLose() {}
+    virtual void* getRTTI();
 };
 
 struct ShowDownAsEscape : public Unk {
     ShowDownAsEscape() {}
     virtual ~ShowDownAsEscape() {}
+    virtual void* getRTTI();
 };
+
+RTTI(RoundBegin);
+RTTI(RoundEnd);
+RTTI(UnitTurnBegin);
+RTTI(UnitTurnEnd);
+RTTI(ShowDownAsWin);
+RTTI(ShowDownAsLose);
+RTTI(ShowDownAsEscape);
 
 SINGLETON_DECL(Battle);
 

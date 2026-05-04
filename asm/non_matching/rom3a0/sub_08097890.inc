@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08097890:
+getName__15UnitTurnEndRTTI:
 	ldr r0, _08097894
 	bx lr
 	.align 2, 0

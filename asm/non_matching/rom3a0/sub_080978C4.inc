@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080978C4:
+dt__13UnitTurnBegin:
 	push {lr}
 	ldr r2, _080978D4
 	str r2, [r0, #0x1c]

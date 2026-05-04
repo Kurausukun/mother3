@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08097914:
+getName__14RoundBeginRTTI:
 	ldr r0, _08097918
 	bx lr
 	.align 2, 0

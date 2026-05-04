@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0805EE80:
+__6Battle:
 	push {r4, lr}
 	adds r4, r0, #0
 	bl __4Base
@@ -13,5 +13,5 @@ sub_0805EE80:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0805EE9C: .4byte vt_09F45058
+_0805EE9C: .4byte _vt.6Battle
 	.syntax divided

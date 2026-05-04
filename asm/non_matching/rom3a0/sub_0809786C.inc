@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809786C:
+dt__13ShowDownAsWin:
 	push {lr}
 	ldr r2, _0809787C
 	str r2, [r0, #0x1c]

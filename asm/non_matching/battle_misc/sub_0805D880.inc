@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0805D880:
+destroy__13BattleManager:
 	push {r4, r5, lr}
 	ldr r1, _0805D8B4
 	ldr r0, [r1]
@@ -27,6 +27,6 @@ _0805D8AC:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0805D8B4: .4byte gUnknown_02002010
-_0805D8B8: .4byte sBattleInstance
+_0805D8B4: .4byte _13BattleManager.mSingletonGuard
+_0805D8B8: .4byte _13BattleManager.mSingleton
 	.syntax divided
