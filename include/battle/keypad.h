@@ -27,7 +27,7 @@ struct KeyPad : Base {
     u16 new_keys;
     u16 long_keys;
 };
-SINGLETON_DECL(KeyPad);
+MANAGER_DECL(KeyPad);
 
 struct UpKeyPress : Unk {
     inline UpKeyPress() {}
@@ -131,25 +131,25 @@ struct SelectKeyLongPress : Unk {
     virtual void* getRTTI();
 };
 
-RTTI(UpKeyPress);
-RTTI(DownKeyPress);
-RTTI(LeftKeyPress);
-RTTI(RightKeyPress);
-RTTI(AKeyPress);
-RTTI(BKeyPress);
-RTTI(RKeyPress);
-RTTI(LKeyPress);
-RTTI(StartKeyPress);
-RTTI(SelectKeyPress);
-RTTI(UpKeyLongPress);
-RTTI(DownKeyLongPress);
-RTTI(LeftKeyLongPress);
-RTTI(RightKeyLongPress);
-RTTI(AKeyLongPress);
-RTTI(BKeyLongPress);
-RTTI(RKeyLongPress);
-RTTI(LKeyLongPress);
-RTTI(StartKeyLongPress);
-RTTI(SelectKeyLongPress);
+RTTI_DECL(UpKeyPress);
+RTTI_DECL(DownKeyPress);
+RTTI_DECL(LeftKeyPress);
+RTTI_DECL(RightKeyPress);
+RTTI_DECL(AKeyPress);
+RTTI_DECL(BKeyPress);
+RTTI_DECL(RKeyPress);
+RTTI_DECL(LKeyPress);
+RTTI_DECL(StartKeyPress);
+RTTI_DECL(SelectKeyPress);
+RTTI_DECL(UpKeyLongPress);
+RTTI_DECL(DownKeyLongPress);
+RTTI_DECL(LeftKeyLongPress);
+RTTI_DECL(RightKeyLongPress);
+RTTI_DECL(AKeyLongPress);
+RTTI_DECL(BKeyLongPress);
+RTTI_DECL(RKeyLongPress);
+RTTI_DECL(LKeyLongPress);
+RTTI_DECL(StartKeyLongPress);
+RTTI_DECL(SelectKeyLongPress);
 
 #endif  // BATTLE_KEYPAD_H

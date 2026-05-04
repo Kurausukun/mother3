@@ -8,7 +8,7 @@
 extern Intr2 callback_main__9SndSystem;
 extern Intr2 callback_vsync__9SndSystem;
 
-SINGLETON_IMPL(SndSystem)
+MANAGER_IMPL(SndSystem)
 
 SndSystem::SndSystem() {
     m4aMPlayAllStop();

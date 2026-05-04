@@ -3,13 +3,13 @@
 
 #ifdef NONMATCHING
 
-SINGLETON_DEBUG_MGR(Clock, const_classname_Clock)
-SINGLETON_DEBUG(PostSysClock, const_classname_PostSysClock)
-SINGLETON_DEBUG(PostAppClock, const_classname_PostAppClock)
-SINGLETON_DEBUG(AppClock, const_classname_AppClock)
-SINGLETON_DEBUG(PreAppClock, const_classname_PreAppClock)
-SINGLETON_DEBUG(SysClock, const_classname_SysClock)
-SINGLETON_DEBUG(PreSysClock, const_classname_PreSysClock)
+MANAGER_DEBUG_IMPL(Clock, const_classname_Clock)
+RTTI_DEBUG_IMPL(PostSysClock, const_classname_PostSysClock)
+RTTI_DEBUG_IMPL(PostAppClock, const_classname_PostAppClock)
+RTTI_DEBUG_IMPL(AppClock, const_classname_AppClock)
+RTTI_DEBUG_IMPL(PreAppClock, const_classname_PreAppClock)
+RTTI_DEBUG_IMPL(SysClock, const_classname_SysClock)
+RTTI_DEBUG_IMPL(PreSysClock, const_classname_PreSysClock)
 
 #else
 asm(".include \"asm/non_matching/inst.inc\"");

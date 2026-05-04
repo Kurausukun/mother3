@@ -301,11 +301,11 @@ struct TargetType {
     };
 };
 
-RTTI(Suspend);
-RTTI(Resume);
-RTTI(UnitJoin);
-RTTI(UnitRevive);
-RTTI(UnitEscape);
-RTTI(UnitDie);
+RTTI_DECL(Suspend);
+RTTI_DECL(Resume);
+RTTI_DECL(UnitJoin);
+RTTI_DECL(UnitRevive);
+RTTI_DECL(UnitEscape);
+RTTI_DECL(UnitDie);
 
 #endif  // BATTLE_UNIT_H

@@ -23,6 +23,6 @@ public:
     u16 _20;
     u8 _22;
 };
-SINGLETON_DECL(SndSystem);
+MANAGER_DECL(SndSystem);
 
 #endif  // BATTLE_SND_SYSTEM

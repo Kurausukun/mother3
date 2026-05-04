@@ -30,10 +30,10 @@ extern ClockData callback_clear__10ObjPltPool;
 
 extern "C" ASM_FUNC("asm/non_matching/objpltpool/sub_0806C76C.inc", void sub_0806C76C());
 
-SINGLETON_DECL(ObjPltPool)
-RTTI(ObjPltPool)
+MANAGER_DECL(ObjPltPool)
+RTTI_DECL(ObjPltPool)
 
-SINGLETON_IMPL(ObjPltPool)
+MANAGER_IMPL(ObjPltPool)
 
 ObjPltPool::ObjPltPool() {
     listen(ClockManager::get(), SysClock(), callback_clear__10ObjPltPool);

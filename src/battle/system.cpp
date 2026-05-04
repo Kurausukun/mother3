@@ -88,7 +88,7 @@ void operator delete[](void* ptr) {
     SystemAllocator::instance()->free(ptr);
 }
 
-SINGLETON_IMPL(System)
+MANAGER_IMPL(System)
 
 System::System() {
     seedMT(gSave.playtime + 0x1111);

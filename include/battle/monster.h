@@ -371,6 +371,6 @@ struct MonsterType {
     };
 };
 
-RTTI(Monster);
+RTTI_DECL(Monster);
 
 #endif  // BATTLE_MONSTER_H

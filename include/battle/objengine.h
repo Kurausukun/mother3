@@ -36,6 +36,6 @@ private:
     u8 pad_94c[0xb4c - 0x94c];
     u32 _b4c;
 };
-SINGLETON_DECL(ObjEngine);
+MANAGER_DECL(ObjEngine);
 
 #endif  // BATTLE_OBJ_ENGINE

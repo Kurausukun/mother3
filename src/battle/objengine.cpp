@@ -19,7 +19,7 @@ extern "C" void* sub_0806A9A4();
 extern "C" void sub_0806A9B0();
 extern "C" void sub_0806AFA4(void*, int);
 
-SINGLETON_IMPL(ObjEngine);
+MANAGER_IMPL(ObjEngine);
 
 #ifdef NON_MATCHING
 ObjEngine::ObjEngine() {

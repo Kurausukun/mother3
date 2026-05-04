@@ -9,6 +9,6 @@ public:
     virtual ~MonsterSkill();
 };
 
-RTTI(MonsterSkill);
+RTTI_DECL(MonsterSkill);
 
 #endif  // BATTLE_MONSTERSKILL_H

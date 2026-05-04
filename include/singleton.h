@@ -3,9 +3,32 @@
 
 #include "base.h"
 #include "global.h"
-#include "rtti.h"
 
-#define SINGLETON_DECL(CLASS)                                                                      \
+struct Singleton {
+    struct Allocator {
+        static Allocator* get();
+
+        s32 count;
+        Singleton* start;
+        Singleton* end;
+
+        static Allocator instance;
+        static s32 guard;
+    };
+
+    Singleton();
+
+    Singleton* sub_08068978();
+    u32 debugStub(const char*);
+
+    // todo: make pure virtual once children are finished
+    virtual const char* getName();  // = 0;
+
+    Singleton* prev;  // debug related?
+    Singleton* next;
+};
+
+#define MANAGER_DECL(CLASS)                                                                      \
     struct CLASS##Manager : Singleton {                                                            \
     public:                                                                                        \
         static CLASS##Manager* manager();                                                          \
@@ -20,7 +43,7 @@
         static CLASS* mSingleton;                                                                  \
     };
 
-#define SINGLETON_IMPL(CLASS)                                                                      \
+#define MANAGER_IMPL(CLASS)                                                                      \
     CLASS##Manager s##CLASS##Manager;                                                              \
                                                                                                    \
     CLASS##Manager* CLASS##Manager::manager() {                                                    \
@@ -45,23 +68,12 @@
             delete mSingleton;                                                                     \
         mSingleton = 0;                                                                            \
     }                                                                                              \
-                                                                                                   \
+                                                                                                \
     void* CLASS::getRTTI() {                                                                       \
         return CLASS##Manager::manager();                                                          \
     }
 
-#define SINGLETON_DEBUG(CLASS, STR)                                                                \
-    /*const char* class##Singleton::getName() { return #CLASS; }*/                                 \
-    extern const char STR[];                                                                       \
-    void* CLASS##Singleton::init(u16 id) {                                                         \
-        return new CLASS;                                                                          \
-    }                                                                                              \
-    const char* CLASS##Singleton::getName() {                                                      \
-        return STR;                                                                                \
-    }                                                                                              \
-    /* CLASS::~CLASS() {} TODO: class destructor is inlined here, how do we generate this? */
-
-#define SINGLETON_DEBUG_MGR(CLASS, STR)                                                            \
+#define MANAGER_DEBUG_IMPL(CLASS, STR)                                                            \
     /*const char* class##Manager::getName() { return #CLASS; }*/                                   \
     extern const char STR[];                                                                       \
     void* CLASS##Manager::init() {                                                                 \
@@ -70,5 +82,40 @@
     const char* CLASS##Manager::getName() {                                                        \
         return STR;                                                                                \
     }
+
+// TODO: "[CLASS]RTTI" classes might be more appropriately named "[CLASS]Singleton"?
+
+// TODO: rewrite this to work inside class definition
+#define RTTI_DECL(CLASS)                                                                            \
+    struct CLASS##RTTI : Singleton {                                                                \
+        virtual const char* getName();                                                              \
+                                                                                                    \
+        static void* init(u16 id);                                                                  \
+        static void* get();                                                                         \
+    };
+
+#define RTTI_IMPL(CLASS)                                                                            \
+    CLASS##RTTI s##CLASS##RTTI;                                                                     \
+                                                                                                    \
+    void* CLASS##RTTI::get() {                                                                      \
+        return &s##CLASS##RTTI;                                                                     \
+    }                                                                                               \
+                                                                                                    \
+    /* this is implementing a CLASS member function!!! */                                           \
+    void* CLASS::getRTTI() {                                                                        \
+        return CLASS##RTTI::get();                                                                  \
+    }
+
+#define RTTI_DEBUG_IMPL(CLASS, STR)                                                                 \
+    /*const char* class##Singleton::getName() { return #CLASS; }*/                                  \
+    extern const char STR[];                                                                        \
+    void* CLASS##RTTI::init(u16 id) {                                                               \
+        return new CLASS;                                                                           \
+    }                                                                                               \
+    const char* CLASS##RTTI::getName() {                                                            \
+        return STR;                                                                                 \
+    }                                                                                               \
+    /* CLASS::~CLASS() {} TODO: class destructor is inlined here, how do we generate this? */
+
 
 #endif  // SINGLETON_H

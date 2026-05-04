@@ -102,12 +102,12 @@ private:
     u32 mTime;
 };
 
-RTTI(PreSysClock)
-RTTI(SysClock)
-RTTI(PreAppClock)
-RTTI(AppClock)
-RTTI(PostAppClock)
-RTTI(PostSysClock)
-SINGLETON_DECL(Clock)
+RTTI_DECL(PreSysClock)
+RTTI_DECL(SysClock)
+RTTI_DECL(PreAppClock)
+RTTI_DECL(AppClock)
+RTTI_DECL(PostAppClock)
+RTTI_DECL(PostSysClock)
+MANAGER_DECL(Clock)
 
 #endif  // BATTLE_CLOCK_H

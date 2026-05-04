@@ -299,15 +299,15 @@ struct ShowDownAsEscape : public Unk {
     virtual void* getRTTI();
 };
 
-RTTI(RoundBegin);
-RTTI(RoundEnd);
-RTTI(UnitTurnBegin);
-RTTI(UnitTurnEnd);
-RTTI(ShowDownAsWin);
-RTTI(ShowDownAsLose);
-RTTI(ShowDownAsEscape);
+RTTI_DECL(RoundBegin);
+RTTI_DECL(RoundEnd);
+RTTI_DECL(UnitTurnBegin);
+RTTI_DECL(UnitTurnEnd);
+RTTI_DECL(ShowDownAsWin);
+RTTI_DECL(ShowDownAsLose);
+RTTI_DECL(ShowDownAsEscape);
 
-SINGLETON_DECL(Battle);
+MANAGER_DECL(Battle);
 
 extern "C" bool IsBossBattle();
 extern "C" s32 randS32_(u32, u32);

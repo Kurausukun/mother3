@@ -26,7 +26,7 @@ RTTI_IMPL(StartKeyLongPress);
 RTTI_IMPL(SelectKeyPress);
 RTTI_IMPL(SelectKeyLongPress);
 
-SINGLETON_IMPL(KeyPad)
+MANAGER_IMPL(KeyPad)
 
 KeyPad::KeyPad() : keys(0), new_keys(0), long_keys(0) {
     _20 = 0x2d;

@@ -2,7 +2,7 @@
 #define BASE_H
 
 #include "allocator.h"
-#include "rtti.h"
+#include "singleton.h"
 #include "vector.h"
 
 class Clock;

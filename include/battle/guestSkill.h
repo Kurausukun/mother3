@@ -50,6 +50,6 @@ private:
     const GuestSkillInfo* mInfo;
 };
 
-RTTI(GuestSkill);
+RTTI_DECL(GuestSkill);
 
 #endif  // BATTLE_GUEST_SKILL_H
