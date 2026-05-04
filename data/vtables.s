@@ -89628,10 +89628,10 @@ _vt.10IrcManager::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0BF4
+	.4byte getName__10IrcManager
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0BE0
+	.4byte init__10IrcManager
 
 _vt.5Clock::
 	.2byte 0

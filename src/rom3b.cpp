@@ -1,5 +1,6 @@
 // Auto-generated source file
 #include "global.h"
+#include "battle/irc.h"
 
 extern "C" ASM_FUNC("asm/non_matching/rom3b/sub_080C08A4.inc", void sub_080C08A4());
 extern "C" ASM_FUNC("asm/non_matching/rom3b/sub_080C08C4.inc", void sub_080C08C4());
@@ -20,5 +21,4 @@ extern "C" ASM_FUNC("asm/non_matching/rom3b/sub_080C0B90.inc", void sub_080C0B90
 extern "C" ASM_FUNC("asm/non_matching/rom3b/sub_080C0BA4.inc", void sub_080C0BA4());
 extern "C" ASM_FUNC("asm/non_matching/rom3b/sub_080C0BB8.inc", void sub_080C0BB8());
 extern "C" ASM_FUNC("asm/non_matching/rom3b/sub_080C0BCC.inc", void sub_080C0BCC());
-extern "C" ASM_FUNC("asm/non_matching/rom3b/sub_080C0BE0.inc", void sub_080C0BE0());
-extern "C" ASM_FUNC("asm/non_matching/rom3b/sub_080C0BF4.inc", void sub_080C0BF4());
+MANAGER_DEBUG_IMPL(Irc, const_classname_Irc);
