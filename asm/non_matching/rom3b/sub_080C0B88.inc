@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080C0B88:
+getName__13SndMonManager:
 	ldr r0, _080C0B8C
 	bx lr
 	.align 2, 0

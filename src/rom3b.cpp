@@ -15,8 +15,8 @@ extern "C" ASM_FUNC("asm/non_matching/rom3b/nullsub_147.inc", void nullsub_147()
 extern "C" ASM_FUNC("asm/non_matching/rom3b/nullsub_148.inc", void nullsub_148());
 extern "C" ASM_FUNC("asm/non_matching/rom3b/nullsub_149.inc", void nullsub_149());
 extern "C" ASM_FUNC("asm/non_matching/rom3b/sub_080C0B64.inc", void sub_080C0B64());
-extern "C" ASM_FUNC("asm/non_matching/rom3b/sub_080C0B78.inc", void sub_080C0B78());
-extern "C" ASM_FUNC("asm/non_matching/rom3b/sub_080C0B88.inc", void sub_080C0B88());
+extern "C" ASM_FUNC("asm/non_matching/rom3b/sub_080C0B78.inc", void init__13SndMonManager());
+extern "C" ASM_FUNC("asm/non_matching/rom3b/sub_080C0B88.inc", void getName__13SndMonManager());
 extern "C" ASM_FUNC("asm/non_matching/rom3b/sub_080C0B90.inc", void sub_080C0B90());
 extern "C" ASM_FUNC("asm/non_matching/rom3b/sub_080C0BA4.inc", void sub_080C0BA4());
 extern "C" ASM_FUNC("asm/non_matching/rom3b/sub_080C0BB8.inc", void sub_080C0BB8());

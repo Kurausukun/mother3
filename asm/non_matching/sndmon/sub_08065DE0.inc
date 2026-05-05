@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08065DE0:
+getRTTI__6SndMon:
 	push {lr}
 	bl sub_08065D60
 	pop {r1}

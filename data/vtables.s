@@ -88725,7 +88725,7 @@ vt_09F7E240::
 	.2byte 0
 	.4byte sub_08065CCC
 
-vt_09F7E280::
+_vt.6SndMon::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -88734,7 +88734,7 @@ vt_09F7E280::
 	.4byte sub_08065F98
 	.2byte 0
 	.2byte 0
-	.4byte sub_08065DE0
+	.4byte getRTTI__6SndMon
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -88781,16 +88781,16 @@ vt_09F7E280::
 	.2byte 0
 	.4byte sub_08066258
 
-vt_09F7E310::
+_vt.13SndMonManager::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0B88
+	.4byte getName__13SndMonManager
 	.2byte 0
 	.2byte 0
-	.4byte sub_080C0B78
+	.4byte init__13SndMonManager
 
 vt_09F7E328::
 	.2byte 0

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08066278:
+_GLOBAL_I_SndMonManager:
 	push {r4, lr}
 	ldr r4, _0806628C
 	adds r0, r4, #0
@@ -11,5 +11,5 @@ sub_08066278:
 	bx r0
 	.align 2, 0
 _0806628C: .4byte gUnknown_020040E0
-_08066290: .4byte vt_09F7E310
+_08066290: .4byte _vt.13SndMonManager
 	.syntax divided

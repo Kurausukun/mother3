@@ -51,5 +51,5 @@ _08065FF0:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08066000: .4byte vt_09F7E280
+_08066000: .4byte _vt.6SndMon
 	.syntax divided
