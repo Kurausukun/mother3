@@ -10,6 +10,6 @@ sub_0807254C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08072560: .4byte gUnknown_02001F9C
+_08072560: .4byte sKeyFocusManagerManager
 _08072564: .4byte _vt.22KeyFocusManagerManager
 	.syntax divided

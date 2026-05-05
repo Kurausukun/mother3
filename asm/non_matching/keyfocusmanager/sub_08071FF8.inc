@@ -19,6 +19,6 @@ _08072014:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08072020: .4byte gUnknown_02001FA8
-_08072024: .4byte gUnknown_02001FAC
+_08072020: .4byte _22KeyFocusManagerManager.mSingletonGuard
+_08072024: .4byte _22KeyFocusManagerManager.mSingleton
 	.syntax divided

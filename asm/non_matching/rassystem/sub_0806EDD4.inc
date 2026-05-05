@@ -10,6 +10,6 @@ sub_0806EDD4:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0806EDE8: .4byte gUnknown_02001E6C
+_0806EDE8: .4byte sRasSystemManager
 _0806EDEC: .4byte _vt.16RasSystemManager
 	.syntax divided

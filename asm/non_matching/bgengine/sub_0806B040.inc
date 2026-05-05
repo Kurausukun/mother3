@@ -20,6 +20,6 @@ _0806B05E:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0806B068: .4byte gUnknown_02001CEC
-_0806B06C: .4byte gUnknown_02001CF0
+_0806B068: .4byte _15BGEngineManager.mSingletonGuard
+_0806B06C: .4byte _15BGEngineManager.mSingleton
 	.syntax divided

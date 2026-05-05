@@ -10,6 +10,6 @@ sub_0806C750:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0806C764: .4byte gUnknown_02001D08
+_0806C764: .4byte sObjChrPoolManager
 _0806C768: .4byte _vt.17ObjChrPoolManager
 	.syntax divided

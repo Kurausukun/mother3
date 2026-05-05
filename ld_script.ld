@@ -33,8 +33,9 @@ SECTIONS
         build/mother3/src/code_0803D59C.o(.text);
         build/mother3/src/common.o(.text);
         build/mother3/src/battle/system.o(.text);
-        build/mother3/src/battle/battle_misc.o(.text);
         build/mother3/src/battle/battle.o(.text);
+        build/mother3/src/battle/battle_misc.o(.text);
+        build/mother3/src/battle/guest_misc.o(.text);
         build/mother3/src/battle/guest.o(.text);
         build/mother3/src/battle/guestFactory.o(.text);
         build/mother3/src/battle/goods.o(.text);

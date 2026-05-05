@@ -27,6 +27,6 @@ _0806EC40:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0806EC48: .4byte gUnknown_02001E78
-_0806EC4C: .4byte gUnknown_02001E7C
+_0806EC48: .4byte _16RasSystemManager.mSingletonGuard
+_0806EC4C: .4byte _16RasSystemManager.mSingleton
 	.syntax divided

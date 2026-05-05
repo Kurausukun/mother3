@@ -19,6 +19,6 @@ _0806A990:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0806A99C: .4byte gUnknown_02001CD8
-_0806A9A0: .4byte gUnknown_02001CDC
+_0806A99C: .4byte _14GEngineManager.mSingletonGuard
+_0806A9A0: .4byte _14GEngineManager.mSingleton
 	.syntax divided

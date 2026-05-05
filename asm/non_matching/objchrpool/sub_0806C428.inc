@@ -19,6 +19,6 @@ _0806C444:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0806C450: .4byte gUnknown_02001D14
-_0806C454: .4byte gUnknown_02001D18
+_0806C450: .4byte _17ObjChrPoolManager.mSingletonGuard
+_0806C454: .4byte _17ObjChrPoolManager.mSingleton
 	.syntax divided

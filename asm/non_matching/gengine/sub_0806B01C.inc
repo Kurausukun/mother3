@@ -10,6 +10,6 @@ sub_0806B01C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0806B030: .4byte gUnknown_02001CCC
+_0806B030: .4byte sGEngineManager
 _0806B034: .4byte _vt.14GEngineManager
 	.syntax divided

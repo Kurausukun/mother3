@@ -27,6 +27,6 @@ _08072060:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08072068: .4byte gUnknown_02001FA8
-_0807206C: .4byte gUnknown_02001FAC
+_08072068: .4byte _22KeyFocusManagerManager.mSingletonGuard
+_0807206C: .4byte _22KeyFocusManagerManager.mSingleton
 	.syntax divided
