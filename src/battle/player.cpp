@@ -92,4 +92,4 @@ extern "C" ASM_FUNC("asm/non_matching/player/nullsub_31.inc", void nullsub_31())
 extern "C" ASM_FUNC("asm/non_matching/player/sub_0807C264.inc", void sub_0807C264());
 extern "C" ASM_FUNC("asm/non_matching/player/sub_0807C324.inc", void sub_0807C324());
 extern "C" ASM_FUNC("asm/non_matching/player/sub_0807C378.inc", void sub_0807C378());
-extern "C" ASM_FUNC("asm/non_matching/player/sub_0807C4D4.inc", void sub_0807C4D4());
+extern "C" ASM_FUNC("asm/non_matching/player/sub_0807C4D4.inc", void _GLOBAL_I_PlayerRTTI());

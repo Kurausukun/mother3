@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0808307C:
+_GLOBAL_I_PsiRTTI:
 	push {r4, lr}
 	ldr r4, _08083090
 	adds r0, r4, #0

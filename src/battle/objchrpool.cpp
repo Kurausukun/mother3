@@ -13,4 +13,4 @@ extern "C" ASM_FUNC("asm/non_matching/objchrpool/sub_0806C634.inc", void sub_080
 extern "C" ASM_FUNC("asm/non_matching/objchrpool/sub_0806C680.inc", void sub_0806C680());
 extern "C" ASM_FUNC("asm/non_matching/objchrpool/sub_0806C6C4.inc", void sub_0806C6C4());
 extern "C" ASM_FUNC("asm/non_matching/objchrpool/sub_0806C738.inc", void sub_0806C738());
-extern "C" ASM_FUNC("asm/non_matching/objchrpool/sub_0806C750.inc", void sub_0806C750());
+extern "C" ASM_FUNC("asm/non_matching/objchrpool/sub_0806C750.inc", void _GLOBAL_I_ObjChrPoolManager());

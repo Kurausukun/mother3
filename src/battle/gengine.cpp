@@ -53,4 +53,4 @@ extern "C" ASM_FUNC("asm/non_matching/gengine/sub_0806AFF0.inc", void sub_0806AF
 extern "C" ASM_FUNC("asm/non_matching/gengine/sub_0806AFF8.inc", void sub_0806AFF8());
 extern "C" ASM_FUNC("asm/non_matching/gengine/sub_0806B004.inc", void sub_0806B004());
 extern "C" ASM_FUNC("asm/non_matching/gengine/sub_0806B010.inc", void sub_0806B010());
-extern "C" ASM_FUNC("asm/non_matching/gengine/sub_0806B01C.inc", void sub_0806B01C());
+extern "C" ASM_FUNC("asm/non_matching/gengine/sub_0806B01C.inc", void _GLOBAL_I_GEngine());

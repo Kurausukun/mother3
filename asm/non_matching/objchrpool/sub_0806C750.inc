@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0806C750:
+_GLOBAL_I_ObjChrPoolManager:
 	push {r4, lr}
 	ldr r4, _0806C764
 	adds r0, r4, #0

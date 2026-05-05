@@ -46,4 +46,4 @@ extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806BB20.inc", void sub_0806B
 extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806BB34.inc", void sub_0806BB34());
 extern "C" ASM_FUNC("asm/non_matching/bgengine/bgengine_updateScrollHorizontal.inc", void bgengine_updateScrollHorizontal());
 extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806BC3C.inc", void sub_0806BC3C());
-extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806BDC0.inc", void sub_0806BDC0());
+extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806BDC0.inc", void _GLOBAL_I_BGEngineManager());

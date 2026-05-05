@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0807C4D4:
+_GLOBAL_I_PlayerRTTI:
 	push {r4, lr}
 	ldr r4, _0807C4E8
 	adds r0, r4, #0

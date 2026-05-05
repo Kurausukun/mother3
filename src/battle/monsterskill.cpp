@@ -74,4 +74,4 @@ extern "C" ASM_FUNC("asm/non_matching/monsterskill/sub_08082458.inc", void sub_0
 extern "C" ASM_FUNC("asm/non_matching/monsterskill/sub_08082460.inc", void sub_08082460());
 
 // MonsterSkillRTTI
-extern "C" ASM_FUNC("asm/non_matching/monsterskill/sub_08082468.inc", void sub_08082468());
+extern "C" ASM_FUNC("asm/non_matching/monsterskill/sub_08082468.inc", void _GLOBAL_I_MonsterSkillRTTI());

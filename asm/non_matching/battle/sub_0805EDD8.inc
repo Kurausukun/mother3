@@ -1,5 +1,5 @@
 	.syntax unified
-BattleManager_global_init:
+_GLOBAL_I_BattleManager:
 	push {r4, lr}
 	ldr r4, _0805EE40
 	adds r0, r4, #0

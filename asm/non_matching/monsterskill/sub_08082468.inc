@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08082468:
+_GLOBAL_I_MonsterSkillRTTI:
 	push {r4, lr}
 	ldr r4, _0808247C
 	adds r0, r4, #0

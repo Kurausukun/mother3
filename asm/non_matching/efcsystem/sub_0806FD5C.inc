@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0806FD5C:
+_GLOBAL_I_EfcSystemManager:
 	push {r4, lr}
 	ldr r4, _0806FD70
 	adds r0, r4, #0

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0807254C:
+_GLOBAL_I_KeyFocusManagerManager:
 	push {r4, lr}
 	ldr r4, _08072560
 	adds r0, r4, #0

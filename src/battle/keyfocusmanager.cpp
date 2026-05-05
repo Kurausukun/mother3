@@ -464,4 +464,4 @@ extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08072424.inc", void su
 extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_0807248C.inc", void sub_0807248C());
 extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_080724F8.inc", void sub_080724F8());
 extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08072518.inc", void sub_08072518());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_0807254C.inc", void sub_0807254C());
+extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_0807254C.inc", void _GLOBAL_I_KeyFocusManagerManager());

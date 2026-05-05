@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0806E804:
+_GLOBAL_I_FntSystemManager:
 	push {r4, lr}
 	ldr r4, _0806E818
 	adds r0, r4, #0

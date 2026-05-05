@@ -33,4 +33,4 @@ extern "C" ASM_FUNC("asm/non_matching/rassystem/sub_0806EDA4.inc", void sub_0806
 extern "C" ASM_FUNC("asm/non_matching/rassystem/sub_0806EDA8.inc", void sub_0806EDA8());
 extern "C" ASM_FUNC("asm/non_matching/rassystem/sub_0806EDB4.inc", void sub_0806EDB4());
 extern "C" ASM_FUNC("asm/non_matching/rassystem/sub_0806EDC0.inc", void sub_0806EDC0());
-extern "C" ASM_FUNC("asm/non_matching/rassystem/sub_0806EDD4.inc", void sub_0806EDD4());
+extern "C" ASM_FUNC("asm/non_matching/rassystem/sub_0806EDD4.inc", void _GLOBAL_I_RasSystemManager());

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0806BDC0:
+_GLOBAL_I_BGEngineManager:
 	push {r4, lr}
 	ldr r4, _0806BDD4
 	adds r0, r4, #0
