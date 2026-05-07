@@ -245,40 +245,44 @@ public:
 
 class RoundBegin : public Unk {
 public:
-    RoundBegin() : t(0) {}
-    RoundBegin(u16 t) : t(t) {}
+    RoundBegin() : mRoundNo(0) {}
+    RoundBegin(u16 r) : mRoundNo(r) {}
     virtual ~RoundBegin() {}
     virtual void* getRTTI();
+    u16 round() { return mRoundNo; }
 
-    u16 t;
+    u16 mRoundNo;
 };
 
 class RoundEnd : public Unk {
 public:
-    RoundEnd() : t(0) {}
-    RoundEnd(u16 t) : t(t) {}
+    RoundEnd() : mRoundNo(0) {}
+    RoundEnd(u16 r) : mRoundNo(r) {}
     virtual ~RoundEnd() {}
     virtual void* getRTTI();
+    u16 round() { return mRoundNo; }
 
-    u16 t;
+    u16 mRoundNo;
 };
 
 struct UnitTurnBegin : public Unk {
     UnitTurnBegin() {}
-    UnitTurnBegin(Unit* u) : u(u) {}
+    UnitTurnBegin(Unit* u) : mUnit(u) {}
     virtual ~UnitTurnBegin() {}
     virtual void* getRTTI();
+    Unit* unit() { return mUnit; }
 
-    Unit* u;
+    Unit* mUnit;
 };
 
 struct UnitTurnEnd : public Unk {
     UnitTurnEnd() {}
-    UnitTurnEnd(Unit* u) : u(u) {}
+    UnitTurnEnd(Unit* u) : mUnit(u) {}
     virtual ~UnitTurnEnd() {}
     virtual void* getRTTI();
+    Unit* unit() { return mUnit; }
 
-    Unit* u;
+    Unit* mUnit;
 };
 
 struct ShowDownAsWin : public Unk {
