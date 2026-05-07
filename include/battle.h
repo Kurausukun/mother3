@@ -282,19 +282,16 @@ struct UnitTurnEnd : public Unk {
 };
 
 struct ShowDownAsWin : public Unk {
-    ShowDownAsWin() {}
     virtual ~ShowDownAsWin() {}
     virtual void* getRTTI();
 };
 
 struct ShowDownAsLose : public Unk {
-    ShowDownAsLose() {}
     virtual ~ShowDownAsLose() {}
     virtual void* getRTTI();
 };
 
 struct ShowDownAsEscape : public Unk {
-    ShowDownAsEscape() {}
     virtual ~ShowDownAsEscape() {}
     virtual void* getRTTI();
 };
