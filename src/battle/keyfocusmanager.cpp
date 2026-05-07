@@ -453,10 +453,10 @@ extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08071F28.inc", void su
 extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08071F30.inc", void sub_08071F30());
 extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08071F38.inc", void sub_08071F38());
 extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08071F8C.inc", void sub_08071F8C());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08071FF0.inc", void sub_08071FF0());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08071FF8.inc", void sub_08071FF8());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08072028.inc", void sub_08072028());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08072034.inc", void sub_08072034());
+extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08071FF0.inc", void manager__22KeyFocusManagerManagerd());
+extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08071FF8.inc", void makeInstance__22KeyFocusManagerManager());
+extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08072028.inc", void get__22KeyFocusManagerManager());
+extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08072034.inc", void destroy__22KeyFocusManagerManager());
 extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08072070.inc", void getRTTI__15KeyFocusManager()); // KeyFocusManager::getRTTI()
 extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_0807207C.inc", void __15KeyFocusManager()); // KeyFocusManager::KeyFocusManager()
 extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_080723FC.inc", void sub_080723FC()); // _._15KeyFocusManager aka KeyFocusManager::~KeyFocusManager()

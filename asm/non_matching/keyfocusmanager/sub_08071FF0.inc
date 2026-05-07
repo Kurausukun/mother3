@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08071FF0:
+manager__22KeyFocusManagerManager:
 	ldr r0, _08071FF4
 	bx lr
 	.align 2, 0

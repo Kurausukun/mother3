@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08071FF8:
+makeInstance__22KeyFocusManagerManager:
 	push {r4, lr}
 	ldr r1, _08072020
 	ldr r0, [r1]

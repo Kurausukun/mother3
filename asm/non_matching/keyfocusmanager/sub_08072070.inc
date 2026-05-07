@@ -1,7 +1,7 @@
 	.syntax unified
 getRTTI__15KeyFocusManager:
 	push {lr}
-	bl sub_08071FF0
+	bl manager__22KeyFocusManagerManager
 	pop {r1}
 	bx r1
 	.align 2, 0

@@ -6,7 +6,7 @@ sub_08071F8C:
 	bl __4Base
 	ldr r0, _08071FB8
 	str r0, [r4, #0x1c]
-	bl sub_08071FF8
+	bl makeInstance__22KeyFocusManagerManager
 	ldr r1, [r0, #0x1c]
 	adds r1, #0x68
 	movs r3, #0
@@ -20,7 +20,7 @@ sub_08071F8C:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08071FB8: .4byte vt_09F810F8
+_08071FB8: .4byte _vt.10KeyFocuser
 thumb_func_start _._10KeyFocuser
 _._10KeyFocuser:
 	push {r4, r5, lr}
@@ -28,7 +28,7 @@ _._10KeyFocuser:
 	adds r5, r1, #0
 	ldr r0, _08071FEC
 	str r0, [r4, #0x1c]
-	bl sub_08072028
+	bl get__22KeyFocusManagerManager
 	ldr r1, [r0, #0x1c]
 	adds r1, #0x70
 	movs r3, #0
@@ -36,7 +36,7 @@ _._10KeyFocuser:
 	adds r0, r0, r2
 	ldr r1, [r1, #4]
 	bl _call_via_r1
-	bl sub_08072034
+	bl destroy__22KeyFocusManagerManager
 	adds r0, r4, #0
 	adds r1, r5, #0
 	bl _._4Base
@@ -44,5 +44,5 @@ _._10KeyFocuser:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08071FEC: .4byte vt_09F810F8
+_08071FEC: .4byte _vt.10KeyFocuser
 	.syntax divided

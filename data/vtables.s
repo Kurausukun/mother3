@@ -93414,7 +93414,7 @@ vt_09F81000::
 	.2byte 0
 	.4byte sub_0806DBE4
 
-vt_09F810F8::
+_vt.10KeyFocuser::
 	.2byte 0
 	.2byte 0
 	.4byte 0
