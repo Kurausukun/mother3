@@ -5,11 +5,11 @@
 
 extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_080977B4.inc", void init__13BattleManager());
 extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_080977C4.inc", void getName__13BattleManager());
-RTTI_DEBUG_IMPL(ShowDownAsLose, const_classname_ShowDownAsLose);
+RTTI_DEBUG_IMPL(ShowDownAsLose);
 extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_080977F4.inc", void dt__14ShowDownAsLose()); // _._14ShowDownAsLose
-RTTI_DEBUG_IMPL(ShowDownAsEscape, const_classname_ShowDownAsEscape);
+RTTI_DEBUG_IMPL(ShowDownAsEscape);
 extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_08097830.inc", void dt__16ShowDownAsEscape()); // _._16ShowDownAsEscape
-RTTI_DEBUG_IMPL(ShowDownAsWin, const_classname_ShowDownAsWin);
+RTTI_DEBUG_IMPL(ShowDownAsWin);
 extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_0809786C.inc", void dt__13ShowDownAsWin()); // _._13ShowDownAsWin
 extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_08097880.inc", void init__15UnitTurnEndRTTI());
 extern "C" ASM_FUNC("asm/non_matching/rom3a0/sub_08097890.inc", void getName__15UnitTurnEndRTTI());

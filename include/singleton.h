@@ -73,14 +73,14 @@ struct Singleton {
         return CLASS##Manager::manager();                                                          \
     }
 
-#define MANAGER_DEBUG_IMPL(CLASS, STR)                                                            \
+#define MANAGER_DEBUG_IMPL(CLASS)                                                            \
     /*const char* class##Manager::getName() { return #CLASS; }*/                                   \
-    extern const char STR[];                                                                       \
+    extern const char const_classname_##CLASS[];                                                   \
     void* CLASS##Manager::init() {                                                                 \
         return new CLASS;                                                                          \
     }                                                                                              \
     const char* CLASS##Manager::getName() {                                                        \
-        return STR;                                                                                \
+        return const_classname_##CLASS;                                                            \
     }
 
 // TODO: "[CLASS]RTTI" classes might be more appropriately named "[CLASS]Singleton"?
@@ -106,14 +106,14 @@ struct Singleton {
         return CLASS##RTTI::get();                                                                  \
     }
 
-#define RTTI_DEBUG_IMPL(CLASS, STR)                                                                 \
+#define RTTI_DEBUG_IMPL(CLASS)                                                                 \
     /*const char* class##Singleton::getName() { return #CLASS; }*/                                  \
-    extern const char STR[];                                                                        \
+    extern const char const_classname_##CLASS[];                                                    \
     void* CLASS##RTTI::init(u16 id) {                                                               \
         return new CLASS;                                                                           \
     }                                                                                               \
     const char* CLASS##RTTI::getName() {                                                            \
-        return STR;                                                                                 \
+        return const_classname_##CLASS;                                                             \
     }                                                                                               \
     /* CLASS::~CLASS() {} TODO: class destructor is inlined here, how do we generate this? */
 

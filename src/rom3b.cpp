@@ -21,4 +21,4 @@ extern "C" ASM_FUNC("asm/non_matching/rom3b/sub_080C0B90.inc", void sub_080C0B90
 extern "C" ASM_FUNC("asm/non_matching/rom3b/sub_080C0BA4.inc", void sub_080C0BA4());
 extern "C" ASM_FUNC("asm/non_matching/rom3b/sub_080C0BB8.inc", void sub_080C0BB8());
 extern "C" ASM_FUNC("asm/non_matching/rom3b/sub_080C0BCC.inc", void sub_080C0BCC());
-MANAGER_DEBUG_IMPL(Irc, const_classname_Irc);
+MANAGER_DEBUG_IMPL(Irc);
