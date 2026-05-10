@@ -3,8 +3,17 @@
 
 #include "base.h"
 #include "m4a.h"
+#include "vector.h"
 
-class KeyFocusManager : public Base {};
+class KeyFocusManager : public Base {
+public:
+    KeyFocusManager();
+    virtual ~KeyFocusManager();
+    virtual void* getRTTI();
+
+private:
+    Vector<u32> mUnk;
+};
 
 class KeyFocuser : public Base {
 public:
