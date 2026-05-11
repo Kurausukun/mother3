@@ -190,7 +190,7 @@ _08060120:
 	bl _._4Base
 	b _08060320
 	.align 2, 0
-_080601BC: .4byte _vt.3Unk
+_080601BC: .4byte _vt.5Event
 _080601C0: .4byte _vt.7Suspend
 _080601C4: .4byte _vt.8UnitJoin
 _080601C8: .4byte _vt.6Resume
@@ -371,7 +371,7 @@ _08060320:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08060330: .4byte _vt.3Unk
+_08060330: .4byte _vt.5Event
 _08060334: .4byte _vt.7Suspend
 _08060338: .4byte _vt.7UnitDie
 _0806033C: .4byte _vt.6Resume

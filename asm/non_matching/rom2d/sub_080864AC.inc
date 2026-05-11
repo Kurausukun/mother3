@@ -142,6 +142,6 @@ sub_080864AC:
 _080865F4: .4byte vt_09F84838
 _080865F8: .4byte _vt.10UnitEscape
 _080865FC: .4byte callback_sub_08086694
-_08086600: .4byte _vt.3Unk
+_08086600: .4byte _vt.5Event
 _08086604: .4byte _vt.7UnitDie
 	.syntax divided

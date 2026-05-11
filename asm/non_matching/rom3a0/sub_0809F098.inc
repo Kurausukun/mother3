@@ -515,7 +515,7 @@ _0809F4B2:
 	bl _call_via_r2
 	b _0809F584
 	.align 2, 0
-_0809F508: .4byte _vt.3Unk
+_0809F508: .4byte _vt.5Event
 _0809F50C: .4byte _vt.8RhythmIn
 _0809F510: .4byte gUnknown_080F5FE4
 _0809F514: .4byte _vt.9RhythmOut

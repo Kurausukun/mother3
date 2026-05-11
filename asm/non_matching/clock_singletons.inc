@@ -429,7 +429,7 @@ sleep__5Clocki:
 	bgt _0806A20C
 	b _0806A36A
 _0806A20C:
-	ldr r0, _0806A378 @ =_vt.3Unk
+	ldr r0, _0806A378 @ =_vt.5Event
 	mov sb, r0
 _0806A210:
 	adds r0, r7, #0
@@ -589,14 +589,14 @@ _0806A36A:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0806A378: .4byte _vt.3Unk
+_0806A378: .4byte _vt.5Event
 _0806A37C: .4byte _vt.11PreAppClock
 _0806A380: .4byte _vt.8AppClock
 _0806A384: .4byte _vt.12PostAppClock
 _0806A388: .4byte _vt.12PostSysClock
 _0806A38C: .4byte _vt.11PreSysClock
 _0806A390: .4byte _vt.8SysClock
-    
+
 .syntax divided
 	.code	16
 .LBE21:

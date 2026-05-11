@@ -80,7 +80,7 @@ _0809C25C:
 	.align 2, 0
 _0809C270: .4byte vt_09F48BF8
 _0809C274: .4byte vt_09F48C70
-_0809C278: .4byte _vt.3Unk
+_0809C278: .4byte _vt.5Event
 _0809C27C: .4byte _vt.13UnitTurnBegin
 _0809C280: .4byte gUnknown_080F52C8
 _0809C284: .4byte _vt.11UnitTurnEnd

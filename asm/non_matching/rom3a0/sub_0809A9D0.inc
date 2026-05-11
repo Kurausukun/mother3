@@ -46,7 +46,7 @@ sub_0809A9D0:
 	bx r0
 	.align 2, 0
 _0809AA34: .4byte 0x00000F94
-_0809AA38: .4byte _vt.3Unk
+_0809AA38: .4byte _vt.5Event
 _0809AA3C: .4byte _vt.8AppClock
 _0809AA40: .4byte gUnknown_080F31E8
 	.syntax divided

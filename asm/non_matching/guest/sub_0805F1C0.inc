@@ -262,7 +262,7 @@ sub_0805F1C0:
 _0805F428: .4byte vt_09F46768
 _0805F42C: .4byte _vt.8UnitJoin
 _0805F430: .4byte gUnknown_080F3F00
-_0805F434: .4byte _vt.3Unk
+_0805F434: .4byte _vt.5Event
 _0805F438: .4byte _vt.10UnitRevive
 _0805F43C: .4byte _vt.10UnitEscape
 _0805F440: .4byte gUnknown_080F3F08

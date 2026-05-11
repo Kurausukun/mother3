@@ -99,7 +99,7 @@ _vt.13SystemManager::
 	.2byte 0
 	.4byte init__13SystemManager
 
-_vt.3Unk::
+_vt.5Event::
 	.2byte 0
 	.2byte 0
 	.4byte 0

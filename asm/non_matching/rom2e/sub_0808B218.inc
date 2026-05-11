@@ -920,7 +920,7 @@ _0808BA14: .4byte 0x0000028A
 _0808BA18: .4byte 0x0000069C
 _0808BA1C: .4byte _vt.6ResPtr
 _0808BA20: .4byte 0x00000764
-_0808BA24: .4byte _vt.3Unk
+_0808BA24: .4byte _vt.5Event
 _0808BA28: .4byte _vt.10UpKeyPress
 _0808BA2C: .4byte 0x00000854
 _0808BA30: .4byte callback_sub_0808C59C

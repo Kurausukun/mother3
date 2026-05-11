@@ -168,7 +168,7 @@ _08065E8A:
 	bx r1
 	.align 2, 0
 _08065F88: .4byte _vt.6SndMon
-_08065F8C: .4byte _vt.3Unk
+_08065F8C: .4byte _vt.5Event
 _08065F90: .4byte _vt.8AppClock
 _08065F94: .4byte gUnknown_080FD560
 	.syntax divided

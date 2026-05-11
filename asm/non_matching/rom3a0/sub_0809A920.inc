@@ -39,7 +39,7 @@ sub_0809A920:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0809A974: .4byte _vt.3Unk
+_0809A974: .4byte _vt.5Event
 _0809A978: .4byte _vt.8AppClock
 _0809A97C: .4byte gUnknown_080F31E8
 	.syntax divided

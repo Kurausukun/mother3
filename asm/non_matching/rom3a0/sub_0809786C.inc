@@ -7,5 +7,5 @@ dt__13ShowDownAsWin:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0809787C: .4byte _vt.3Unk
+_0809787C: .4byte _vt.5Event
 	.syntax divided

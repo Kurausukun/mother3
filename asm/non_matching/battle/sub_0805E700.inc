@@ -12,7 +12,7 @@ sub_0805E700:
 	adds r5, r6, r5
 	mov r0, sp
 	bl __4Base
-	ldr r1, _0805E800 @ =_vt.3Unk
+	ldr r1, _0805E800 @ =_vt.5Event
 	mov r8, r1
 	ldr r0, _0805E804 @ =_vt.13ShowDownAsWin
 	str r0, [sp, #0x1c]
@@ -116,6 +116,6 @@ sub_0805E700:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0805E800: .4byte _vt.3Unk
+_0805E800: .4byte _vt.5Event
 _0805E804: .4byte _vt.13ShowDownAsWin
     .syntax divided

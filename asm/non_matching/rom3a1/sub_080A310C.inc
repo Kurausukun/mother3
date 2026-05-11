@@ -105,7 +105,7 @@ sub_080A310C:
 	.align 2, 0
 _080A31F0: .4byte _vt.14DefaultMonster.10UnitObject
 _080A31F4: .4byte _vt.14DefaultMonster
-_080A31F8: .4byte _vt.3Unk
+_080A31F8: .4byte _vt.5Event
 _080A31FC: .4byte _vt.13UnitTurnBegin
 _080A3200: .4byte gUnknown_080F8E5C
 _080A3204: .4byte _vt.11UnitTurnEnd

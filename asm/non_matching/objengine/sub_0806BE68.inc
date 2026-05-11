@@ -101,7 +101,7 @@ _0806BF44: .4byte 0x00000834
 _0806BF48: .4byte 0x00000938
 _0806BF4C: .4byte 0x00000B4C
 _0806BF50: .4byte 0x0000EF9F
-_0806BF54: .4byte _vt.3Unk
+_0806BF54: .4byte _vt.5Event
 _0806BF58: .4byte _vt.8SysClock
 _0806BF5C: .4byte callback_sub_0806C1D8
 _0806BF60: .4byte _vt.12PostSysClock

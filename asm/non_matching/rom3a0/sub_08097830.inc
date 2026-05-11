@@ -7,5 +7,5 @@ dt__16ShowDownAsEscape:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08097840: .4byte _vt.3Unk
+_08097840: .4byte _vt.5Event
 	.syntax divided

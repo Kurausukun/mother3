@@ -86,7 +86,7 @@ sub_0806DC78:
 	.align 2, 0
 _0806DD34: .4byte vt_09F7FE10
 _0806DD38: .4byte 0xFFFF0000
-_0806DD3C: .4byte _vt.3Unk
+_0806DD3C: .4byte _vt.5Event
 _0806DD40: .4byte _vt.8AppClock
 _0806DD44: .4byte callback_sub_0806DFF0
 	.syntax divided

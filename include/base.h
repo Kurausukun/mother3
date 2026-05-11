@@ -70,9 +70,9 @@ public:
     Vector<Listener*> incoming;
 };
 
-struct Unk : public Base {
-    Unk() {}
-    ~Unk() {}
+struct Event : public Base {
+    Event() {}
+    ~Event() {}
 };
 
 struct Color {

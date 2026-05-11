@@ -29,84 +29,84 @@ struct KeyPad : Base {
 };
 MANAGER_DECL(KeyPad);
 
-struct UpKeyPress : Unk {
+struct UpKeyPress : Event {
     virtual ~UpKeyPress();
     virtual void* getRTTI();
 };
-struct DownKeyPress : Unk {
+struct DownKeyPress : Event {
     virtual ~DownKeyPress();
     virtual void* getRTTI();
 };
-struct LeftKeyPress : Unk {
+struct LeftKeyPress : Event {
     virtual ~LeftKeyPress();
     virtual void* getRTTI();
 };
-struct RightKeyPress : Unk {
+struct RightKeyPress : Event {
     virtual ~RightKeyPress();
     virtual void* getRTTI();
 };
-struct AKeyPress : Unk {
+struct AKeyPress : Event {
     virtual ~AKeyPress();
     virtual void* getRTTI();
 };
-struct BKeyPress : Unk {
+struct BKeyPress : Event {
     virtual ~BKeyPress();
     virtual void* getRTTI();
 };
-struct RKeyPress : Unk {
+struct RKeyPress : Event {
     virtual ~RKeyPress();
     virtual void* getRTTI();
 };
-struct LKeyPress : Unk {
+struct LKeyPress : Event {
     virtual ~LKeyPress();
     virtual void* getRTTI();
 };
-struct StartKeyPress : Unk {
+struct StartKeyPress : Event {
     virtual ~StartKeyPress();
     virtual void* getRTTI();
 };
-struct SelectKeyPress : Unk {
+struct SelectKeyPress : Event {
     virtual ~SelectKeyPress();
     virtual void* getRTTI();
 };
 
-struct UpKeyLongPress : Unk {
+struct UpKeyLongPress : Event {
     virtual ~UpKeyLongPress();
     virtual void* getRTTI();
 };
-struct DownKeyLongPress : Unk {
+struct DownKeyLongPress : Event {
     virtual ~DownKeyLongPress();
     virtual void* getRTTI();
 };
-struct LeftKeyLongPress : Unk {
+struct LeftKeyLongPress : Event {
     virtual ~LeftKeyLongPress();
     virtual void* getRTTI();
 };
-struct RightKeyLongPress : Unk {
+struct RightKeyLongPress : Event {
     virtual ~RightKeyLongPress();
     virtual void* getRTTI();
 };
-struct AKeyLongPress : Unk {
+struct AKeyLongPress : Event {
     virtual ~AKeyLongPress();
     virtual void* getRTTI();
 };
-struct BKeyLongPress : Unk {
+struct BKeyLongPress : Event {
     virtual ~BKeyLongPress();
     virtual void* getRTTI();
 };
-struct RKeyLongPress : Unk {
+struct RKeyLongPress : Event {
     virtual ~RKeyLongPress();
     virtual void* getRTTI();
 };
-struct LKeyLongPress : Unk {
+struct LKeyLongPress : Event {
     virtual ~LKeyLongPress();
     virtual void* getRTTI();
 };
-struct StartKeyLongPress : Unk {
+struct StartKeyLongPress : Event {
     virtual ~StartKeyLongPress();
     virtual void* getRTTI();
 };
-struct SelectKeyLongPress : Unk {
+struct SelectKeyLongPress : Event {
     virtual ~SelectKeyLongPress();
     virtual void* getRTTI();
 };

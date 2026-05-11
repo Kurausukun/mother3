@@ -53,7 +53,7 @@ sub_080872C8:
 	bx r1
 	.align 2, 0
 _08087338: .4byte vt_09F84F00
-_0808733C: .4byte _vt.3Unk
+_0808733C: .4byte _vt.5Event
 _08087340: .4byte _vt.8AppClock
 _08087344: .4byte callback_sub_08087AE0
 	.syntax divided

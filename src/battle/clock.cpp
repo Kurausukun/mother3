@@ -27,7 +27,7 @@ extern "C" NAKED void sleep__5Clocki(Clock* dest, u32 count) {
 	bgt _0806A20C\n\
 	b _0806A36A\n\
 _0806A20C:\n\
-	ldr r0, _0806A378 @ =_vt.3Unk\n\
+	ldr r0, _0806A378 @ =_vt.5Event\n\
 	mov sb, r0\n\
 _0806A210:\n\
 	adds r0, r7, #0\n\
@@ -187,7 +187,7 @@ _0806A36A:\n\
 	pop {r0}\n\
 	bx r0\n\
 	.align 2, 0\n\
-_0806A378: .4byte _vt.3Unk\n\
+_0806A378: .4byte _vt.5Event\n\
 _0806A37C: .4byte _vt.11PreAppClock\n\
 _0806A380: .4byte _vt.8AppClock\n\
 _0806A384: .4byte _vt.12PostAppClock\n\

@@ -79,7 +79,7 @@ sub_0809FEE4:
 	.align 2, 0
 _0809FF90: .4byte vt_09F4D280
 _0809FF94: .4byte vt_09F4D2F8
-_0809FF98: .4byte _vt.3Unk
+_0809FF98: .4byte _vt.5Event
 _0809FF9C: .4byte _vt.13UnitTurnBegin
 _0809FFA0: .4byte gUnknown_080F741C
 _0809FFA4: .4byte _vt.11UnitTurnEnd

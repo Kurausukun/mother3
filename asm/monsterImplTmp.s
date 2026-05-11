@@ -1524,7 +1524,7 @@ __10MechaDragoUsUs:
 .L295:
 	.word	_vt.14DefaultMonster.10UnitObject
 	.word	_vt.14DefaultMonster
-	.word	_vt.3Unk
+	.word	_vt.5Event
 	.word	_vt.13UnitTurnBegin
 	.word	gUnknown_080F8E5C
 	.word	_vt.11UnitTurnEnd
@@ -1740,7 +1740,7 @@ __20ReconstructedCaribouUsUs:
 .L303:
 	.word	_vt.14DefaultMonster.10UnitObject
 	.word	_vt.14DefaultMonster
-	.word	_vt.3Unk
+	.word	_vt.5Event
 	.word	_vt.13UnitTurnBegin
 	.word	gUnknown_080F8E5C
 	.word	_vt.11UnitTurnEnd
@@ -1943,7 +1943,7 @@ __14DefaultMonsterUsUs:
 .L311:
 	.word	_vt.14DefaultMonster.10UnitObject
 	.word	_vt.14DefaultMonster
-	.word	_vt.3Unk
+	.word	_vt.5Event
 	.word	_vt.13UnitTurnBegin
 	.word	gUnknown_080F8E5C
 	.word	_vt.11UnitTurnEnd
@@ -2172,18 +2172,18 @@ _vt.13UnitTurnBegin:
 	.short	0
 	.short	0
 	.word	clearNullOutgoing__4Base
-	.weak	_vt.3Unk
-	.section .gnu.linkonce.d._vt.3Unk,"aw"
+	.weak	_vt.5Event
+	.section .gnu.linkonce.d._vt.5Event,"aw"
 	.align	2, 0
-	.type	 _vt.3Unk,object
-	.size	 _vt.3Unk,104
-_vt.3Unk:
+	.type	 _vt.5Event,object
+	.size	 _vt.5Event,104
+_vt.5Event:
 	.short	0
 	.short	0
 	.word	0
 	.short	0
 	.short	0
-	.word	_._3Unk
+	.word	_._5Event
 	.short	0
 	.short	0
 	.word	getRTTI__4Base
@@ -2246,7 +2246,7 @@ _._11UnitTurnEnd:
 .L318:
 	.align	2, 0
 .L317:
-	.word	_vt.3Unk
+	.word	_vt.5Event
 .LFE13:
 .Lfe13:
 	.size	 _._11UnitTurnEnd,.Lfe13-_._11UnitTurnEnd
@@ -2279,17 +2279,17 @@ _._13UnitTurnBegin:
 .L320:
 	.align	2, 0
 .L319:
-	.word	_vt.3Unk
+	.word	_vt.5Event
 .LFE14:
 .Lfe14:
 	.size	 _._13UnitTurnBegin,.Lfe14-_._13UnitTurnBegin
 	.align	2, 0
-	.section .gnu.linkonce.t._._3Unk,"ax",%progbits
+	.section .gnu.linkonce.t._._5Event,"ax",%progbits
 	.align	2, 0
-	.weak	_._3Unk
-	.type	 _._3Unk,function
+	.weak	_._5Event
+	.type	 _._5Event,function
 	.thumb_func
-_._3Unk:
+_._5Event:
 .LFB15:
 .LSM13:
 
@@ -2304,10 +2304,10 @@ _._3Unk:
 .L322:
 	.align	2, 0
 .L321:
-	.word	_vt.3Unk
+	.word	_vt.5Event
 .LFE15:
 .Lfe15:
-	.size	 _._3Unk,.Lfe15-_._3Unk
+	.size	 _._5Event,.Lfe15-_._5Event
 
 	.section	.text
 .Letext0:
@@ -5675,7 +5675,7 @@ _._3Unk:
 
 	.byte	0x3
 	.byte	0x4c
-	.ascii	"__as__3UnkRC3Unk\000"
+	.ascii	"__as__5EventRC5Event\000"
 
 	.4byte	0xf82
 	.byte	0x1
@@ -5693,7 +5693,7 @@ _._3Unk:
 
 	.byte	0x3
 	.byte	0x4c
-	.ascii	"__3UnkRC3Unk\000"
+	.ascii	"__5EventRC5Event\000"
 
 	.4byte	0xf88
 	.byte	0x1
@@ -5711,7 +5711,7 @@ _._3Unk:
 
 	.byte	0x3
 	.byte	0x4a
-	.ascii	"__3Unk\000"
+	.ascii	"__5Event\000"
 
 	.4byte	0xf88
 	.byte	0x3
@@ -5730,7 +5730,7 @@ _._3Unk:
 
 	.byte	0x3
 	.byte	0x4b
-	.ascii	"_._3Unk\000"
+	.ascii	"_._5Event\000"
 
 	.byte	0x1
 	.byte	0x2
@@ -26626,4 +26626,3 @@ _._3Unk:
 	.4byte	0x0
 .text
 	.align	2, 0
-

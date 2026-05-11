@@ -104,7 +104,7 @@ _._12PostSysClock:
 .L28:
 	.align	2, 0
 .L27:
-	.word	_vt.3Unk
+	.word	_vt.5Event
 .LFE5:
 .Lfe5:
 	.size	 _._12PostSysClock,.Lfe5-_._12PostSysClock
@@ -173,7 +173,7 @@ _._12PostAppClock:
 .L38:
 	.align	2, 0
 .L37:
-	.word	_vt.3Unk
+	.word	_vt.5Event
 .LFE8:
 .Lfe8:
 	.size	 _._12PostAppClock,.Lfe8-_._12PostAppClock
@@ -242,7 +242,7 @@ _._8AppClock:
 .L48:
 	.align	2, 0
 .L47:
-	.word	_vt.3Unk
+	.word	_vt.5Event
 .LFE11:
 .Lfe11:
 	.size	 _._8AppClock,.Lfe11-_._8AppClock
@@ -311,7 +311,7 @@ _._11PreAppClock:
 .L58:
 	.align	2, 0
 .L57:
-	.word	_vt.3Unk
+	.word	_vt.5Event
 .LFE14:
 .Lfe14:
 	.size	 _._11PreAppClock,.Lfe14-_._11PreAppClock
@@ -380,7 +380,7 @@ _._8SysClock:
 .L68:
 	.align	2, 0
 .L67:
-	.word	_vt.3Unk
+	.word	_vt.5Event
 .LFE17:
 .Lfe17:
 	.size	 _._8SysClock,.Lfe17-_._8SysClock
@@ -449,7 +449,7 @@ _._11PreSysClock:
 .L78:
 	.align	2, 0
 .L77:
-	.word	_vt.3Unk
+	.word	_vt.5Event
 .LFE20:
 .Lfe20:
 	.size	 _._11PreSysClock,.Lfe20-_._11PreSysClock
@@ -828,18 +828,18 @@ _vt.11PreSysClock:
 	.short	0
 	.short	0
 	.word	clearNullOutgoing__4Base
-	.weak	_vt.3Unk
-	.section .gnu.linkonce.d._vt.3Unk,"aw"
+	.weak	_vt.5Event
+	.section .gnu.linkonce.d._vt.5Event,"aw"
 	.align	2, 0
-	.type	 _vt.3Unk,object
-	.size	 _vt.3Unk,104
-_vt.3Unk:
+	.type	 _vt.5Event,object
+	.size	 _vt.5Event,104
+_vt.5Event:
 	.short	0
 	.short	0
 	.word	0
 	.short	0
 	.short	0
-	.word	_._3Unk
+	.word	_._5Event
 	.short	0
 	.short	0
 	.word	getRTTI__4Base
@@ -873,12 +873,12 @@ _vt.3Unk:
 	.short	0
 	.short	0
 	.word	clearNullOutgoing__4Base
-	.section .gnu.linkonce.t._._3Unk,"ax",%progbits
+	.section .gnu.linkonce.t._._5Event,"ax",%progbits
 	.align	2, 0
-	.weak	_._3Unk
-	.type	 _._3Unk,function
+	.weak	_._5Event
+	.type	 _._5Event,function
 	.thumb_func
-_._3Unk:
+_._5Event:
 .LFB21:
 .LSM0:
 
@@ -893,7 +893,7 @@ _._3Unk:
 .L80:
 	.align	2, 0
 .L79:
-	.word	_vt.3Unk
+	.word	_vt.5Event
 .LFE21:
 .Lfe21:
-	.size	 _._3Unk,.Lfe21-_._3Unk
+	.size	 _._5Event,.Lfe21-_._5Event

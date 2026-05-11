@@ -7,5 +7,5 @@ dt__8RoundEnd:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08097900: .4byte _vt.3Unk
+_08097900: .4byte _vt.5Event
 	.syntax divided

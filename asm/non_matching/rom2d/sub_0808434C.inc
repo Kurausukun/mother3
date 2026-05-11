@@ -405,7 +405,7 @@ _080846C4: .4byte gUnknown_08CE39F8
 _080846C8: .4byte vt_09F83E40
 _080846CC: .4byte 0x0000106C
 _080846D0: .4byte 0x00000289
-_080846D4: .4byte _vt.3Unk
+_080846D4: .4byte _vt.5Event
 _080846D8: .4byte _vt.12LeftKeyPress
 _080846DC: .4byte callback_sub_08084D8C
 _080846E0: .4byte _vt.16LeftKeyLongPress

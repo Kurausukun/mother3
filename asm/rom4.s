@@ -363,13 +363,13 @@ _080C0F98: .4byte const_classname_SelectKeyLongPress
 	thumb_func_start _._18SelectKeyLongPress
 _._18SelectKeyLongPress: @ 0x080C0F9C
 	push {lr}
-	ldr r2, _080C0FAC @ =_vt.3Unk
+	ldr r2, _080C0FAC @ =_vt.5Event
 	str r2, [r0, #0x1c]
 	bl _._4Base
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C0FAC: .4byte _vt.3Unk
+_080C0FAC: .4byte _vt.5Event
 
 	thumb_func_start init__18SelectKeyPressRTTI
 init__18SelectKeyPressRTTI: @ 0x080C0FB0
@@ -397,13 +397,13 @@ _080C0FD4: .4byte const_classname_SelectKeyPress
 	thumb_func_start _._14SelectKeyPress
 _._14SelectKeyPress: @ 0x080C0FD8
 	push {lr}
-	ldr r2, _080C0FE8 @ =_vt.3Unk
+	ldr r2, _080C0FE8 @ =_vt.5Event
 	str r2, [r0, #0x1c]
 	bl _._4Base
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C0FE8: .4byte _vt.3Unk
+_080C0FE8: .4byte _vt.5Event
 
 	thumb_func_start init__21StartKeyLongPressRTTI
 init__21StartKeyLongPressRTTI: @ 0x080C0FEC
@@ -431,13 +431,13 @@ _080C1010: .4byte const_classname_StartKeyLongPress
 	thumb_func_start _._17StartKeyLongPress
 _._17StartKeyLongPress: @ 0x080C1014
 	push {lr}
-	ldr r2, _080C1024 @ =_vt.3Unk
+	ldr r2, _080C1024 @ =_vt.5Event
 	str r2, [r0, #0x1c]
 	bl _._4Base
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C1024: .4byte _vt.3Unk
+_080C1024: .4byte _vt.5Event
 
 	thumb_func_start init__17StartKeyPressRTTI
 init__17StartKeyPressRTTI: @ 0x080C1028
@@ -465,13 +465,13 @@ _080C104C: .4byte const_classname_StartKeyPress
 	thumb_func_start _._13StartKeyPress
 _._13StartKeyPress: @ 0x080C1050
 	push {lr}
-	ldr r2, _080C1060 @ =_vt.3Unk
+	ldr r2, _080C1060 @ =_vt.5Event
 	str r2, [r0, #0x1c]
 	bl _._4Base
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C1060: .4byte _vt.3Unk
+_080C1060: .4byte _vt.5Event
 
 	thumb_func_start init__17RKeyLongPressRTTI
 init__17RKeyLongPressRTTI: @ 0x080C1064
@@ -499,13 +499,13 @@ _080C1088: .4byte const_classname_RKeyLongPress
 	thumb_func_start _._13RKeyLongPress
 _._13RKeyLongPress: @ 0x080C108C
 	push {lr}
-	ldr r2, _080C109C @ =_vt.3Unk
+	ldr r2, _080C109C @ =_vt.5Event
 	str r2, [r0, #0x1c]
 	bl _._4Base
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C109C: .4byte _vt.3Unk
+_080C109C: .4byte _vt.5Event
 
 	thumb_func_start init__13RKeyPressRTTI
 init__13RKeyPressRTTI: @ 0x080C10A0
@@ -533,13 +533,13 @@ _080C10C4: .4byte const_classname_RKeyPress
 	thumb_func_start _._9RKeyPress
 _._9RKeyPress: @ 0x080C10C8
 	push {lr}
-	ldr r2, _080C10D8 @ =_vt.3Unk
+	ldr r2, _080C10D8 @ =_vt.5Event
 	str r2, [r0, #0x1c]
 	bl _._4Base
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C10D8: .4byte _vt.3Unk
+_080C10D8: .4byte _vt.5Event
 
 	thumb_func_start init__17LKeyLongPressRTTI
 init__17LKeyLongPressRTTI: @ 0x080C10DC
@@ -567,13 +567,13 @@ _080C1100: .4byte const_classname_LKeyLongPress
 	thumb_func_start _._13LKeyLongPress
 _._13LKeyLongPress: @ 0x080C1104
 	push {lr}
-	ldr r2, _080C1114 @ =_vt.3Unk
+	ldr r2, _080C1114 @ =_vt.5Event
 	str r2, [r0, #0x1c]
 	bl _._4Base
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C1114: .4byte _vt.3Unk
+_080C1114: .4byte _vt.5Event
 
 	thumb_func_start init__13LKeyPressRTTI
 init__13LKeyPressRTTI: @ 0x080C1118
@@ -601,13 +601,13 @@ _080C113C: .4byte const_classname_LKeyPress
 	thumb_func_start _._9LKeyPress
 _._9LKeyPress: @ 0x080C1140
 	push {lr}
-	ldr r2, _080C1150 @ =_vt.3Unk
+	ldr r2, _080C1150 @ =_vt.5Event
 	str r2, [r0, #0x1c]
 	bl _._4Base
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C1150: .4byte _vt.3Unk
+_080C1150: .4byte _vt.5Event
 
 	thumb_func_start init__17BKeyLongPressRTTI
 init__17BKeyLongPressRTTI: @ 0x080C1154
@@ -635,13 +635,13 @@ _080C1178: .4byte const_classname_BKeyLongPress
 	thumb_func_start _._13BKeyLongPress
 _._13BKeyLongPress: @ 0x080C117C
 	push {lr}
-	ldr r2, _080C118C @ =_vt.3Unk
+	ldr r2, _080C118C @ =_vt.5Event
 	str r2, [r0, #0x1c]
 	bl _._4Base
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C118C: .4byte _vt.3Unk
+_080C118C: .4byte _vt.5Event
 
 	thumb_func_start init__13BKeyPressRTTI
 init__13BKeyPressRTTI: @ 0x080C1190
@@ -669,13 +669,13 @@ _080C11B4: .4byte const_classname_BKeyPress
 	thumb_func_start _._9BKeyPress
 _._9BKeyPress: @ 0x080C11B8
 	push {lr}
-	ldr r2, _080C11C8 @ =_vt.3Unk
+	ldr r2, _080C11C8 @ =_vt.5Event
 	str r2, [r0, #0x1c]
 	bl _._4Base
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C11C8: .4byte _vt.3Unk
+_080C11C8: .4byte _vt.5Event
 
 	thumb_func_start init__17AKeyLongPressRTTI
 init__17AKeyLongPressRTTI: @ 0x080C11CC
@@ -703,13 +703,13 @@ _080C11F0: .4byte const_classname_AKeyLongPress
 	thumb_func_start _._13AKeyLongPress
 _._13AKeyLongPress: @ 0x080C11F4
 	push {lr}
-	ldr r2, _080C1204 @ =_vt.3Unk
+	ldr r2, _080C1204 @ =_vt.5Event
 	str r2, [r0, #0x1c]
 	bl _._4Base
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C1204: .4byte _vt.3Unk
+_080C1204: .4byte _vt.5Event
 
 	thumb_func_start init__13AKeyPressRTTI
 init__13AKeyPressRTTI: @ 0x080C1208
@@ -737,13 +737,13 @@ _080C122C: .4byte const_classname_AKeyPress
 	thumb_func_start _._9AKeyPress
 _._9AKeyPress: @ 0x080C1230
 	push {lr}
-	ldr r2, _080C1240 @ =_vt.3Unk
+	ldr r2, _080C1240 @ =_vt.5Event
 	str r2, [r0, #0x1c]
 	bl _._4Base
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C1240: .4byte _vt.3Unk
+_080C1240: .4byte _vt.5Event
 
 	thumb_func_start init__21RightKeyLongPressRTTI
 init__21RightKeyLongPressRTTI: @ 0x080C1244
@@ -771,13 +771,13 @@ _080C1268: .4byte const_classname_RightKeyLongPress
 	thumb_func_start _._17RightKeyLongPress
 _._17RightKeyLongPress: @ 0x080C126C
 	push {lr}
-	ldr r2, _080C127C @ =_vt.3Unk
+	ldr r2, _080C127C @ =_vt.5Event
 	str r2, [r0, #0x1c]
 	bl _._4Base
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C127C: .4byte _vt.3Unk
+_080C127C: .4byte _vt.5Event
 
 	thumb_func_start init__17RightKeyPressRTTI
 init__17RightKeyPressRTTI: @ 0x080C1280
@@ -805,13 +805,13 @@ _080C12A4: .4byte const_classname_RightKeyPress
 	thumb_func_start _._13RightKeyPress
 _._13RightKeyPress: @ 0x080C12A8
 	push {lr}
-	ldr r2, _080C12B8 @ =_vt.3Unk
+	ldr r2, _080C12B8 @ =_vt.5Event
 	str r2, [r0, #0x1c]
 	bl _._4Base
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C12B8: .4byte _vt.3Unk
+_080C12B8: .4byte _vt.5Event
 
 	thumb_func_start init__20LeftKeyLongPressRTTI
 init__20LeftKeyLongPressRTTI: @ 0x080C12BC
@@ -839,13 +839,13 @@ _080C12E0: .4byte const_classname_LeftKeyLongPress
 	thumb_func_start _._16LeftKeyLongPress
 _._16LeftKeyLongPress: @ 0x080C12E4
 	push {lr}
-	ldr r2, _080C12F4 @ =_vt.3Unk
+	ldr r2, _080C12F4 @ =_vt.5Event
 	str r2, [r0, #0x1c]
 	bl _._4Base
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C12F4: .4byte _vt.3Unk
+_080C12F4: .4byte _vt.5Event
 
 	thumb_func_start init__16LeftKeyPressRTTI
 init__16LeftKeyPressRTTI: @ 0x080C12F8
@@ -873,13 +873,13 @@ _080C131C: .4byte const_classname_LeftKeyPress
 	thumb_func_start _._12LeftKeyPress
 _._12LeftKeyPress: @ 0x080C1320
 	push {lr}
-	ldr r2, _080C1330 @ =_vt.3Unk
+	ldr r2, _080C1330 @ =_vt.5Event
 	str r2, [r0, #0x1c]
 	bl _._4Base
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C1330: .4byte _vt.3Unk
+_080C1330: .4byte _vt.5Event
 
 	thumb_func_start init__20DownKeyLongPressRTTI
 init__20DownKeyLongPressRTTI: @ 0x080C1334
@@ -907,13 +907,13 @@ _080C1358: .4byte const_classname_DownKeyLongPress
 	thumb_func_start _._16DownKeyLongPress
 _._16DownKeyLongPress: @ 0x080C135C
 	push {lr}
-	ldr r2, _080C136C @ =_vt.3Unk
+	ldr r2, _080C136C @ =_vt.5Event
 	str r2, [r0, #0x1c]
 	bl _._4Base
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C136C: .4byte _vt.3Unk
+_080C136C: .4byte _vt.5Event
 
 	thumb_func_start init__16DownKeyPressRTTI
 init__16DownKeyPressRTTI: @ 0x080C1370
@@ -941,13 +941,13 @@ _080C1394: .4byte const_classname_DownKeyPress
 	thumb_func_start _._12DownKeyPress
 _._12DownKeyPress: @ 0x080C1398
 	push {lr}
-	ldr r2, _080C13A8 @ =_vt.3Unk
+	ldr r2, _080C13A8 @ =_vt.5Event
 	str r2, [r0, #0x1c]
 	bl _._4Base
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C13A8: .4byte _vt.3Unk
+_080C13A8: .4byte _vt.5Event
 
 	thumb_func_start init__18UpKeyLongPressRTTI
 init__18UpKeyLongPressRTTI: @ 0x080C13AC
@@ -975,13 +975,13 @@ _080C13D0: .4byte const_classname_UpKeyLongPress
 	thumb_func_start _._14UpKeyLongPress
 _._14UpKeyLongPress: @ 0x080C13D4
 	push {lr}
-	ldr r2, _080C13E4 @ =_vt.3Unk
+	ldr r2, _080C13E4 @ =_vt.5Event
 	str r2, [r0, #0x1c]
 	bl _._4Base
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C13E4: .4byte _vt.3Unk
+_080C13E4: .4byte _vt.5Event
 
 	thumb_func_start init__14UpKeyPressRTTI
 init__14UpKeyPressRTTI: @ 0x080C13E8
@@ -1009,13 +1009,13 @@ _080C140C: .4byte const_classname_UpKeyPress
 	thumb_func_start _._10UpKeyPress
 _._10UpKeyPress: @ 0x080C1410
 	push {lr}
-	ldr r2, _080C1420 @ =_vt.3Unk
+	ldr r2, _080C1420 @ =_vt.5Event
 	str r2, [r0, #0x1c]
 	bl _._4Base
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C1420: .4byte _vt.3Unk
+_080C1420: .4byte _vt.5Event
 
 	thumb_func_start init__13KeyPadManager
 init__13KeyPadManager: @ 0x080C1424
@@ -1139,13 +1139,13 @@ _080C14D8: .4byte const_classname_RhythmOut
 	thumb_func_start _._9RhythmOut
 _._9RhythmOut: @ 0x080C14DC
 	push {lr}
-	ldr r2, _080C14EC @ =_vt.3Unk
+	ldr r2, _080C14EC @ =_vt.5Event
 	str r2, [r0, #0x1c]
 	bl _._4Base
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C14EC: .4byte _vt.3Unk
+_080C14EC: .4byte _vt.5Event
 
 	thumb_func_start init__12RhythmInRTTI
 init__12RhythmInRTTI: @ 0x080C14F0
@@ -1173,13 +1173,13 @@ _080C1514: .4byte const_classname_RhythmIn
 	thumb_func_start _._8RhythmIn
 _._8RhythmIn: @ 0x080C1518
 	push {lr}
-	ldr r2, _080C1528 @ =_vt.3Unk
+	ldr r2, _080C1528 @ =_vt.5Event
 	str r2, [r0, #0x1c]
 	bl _._4Base
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C1528: .4byte _vt.3Unk
+_080C1528: .4byte _vt.5Event
 
 	thumb_func_start init__13RhythmBgmRTTI
 init__13RhythmBgmRTTI: @ 0x080C152C
@@ -1216,13 +1216,13 @@ _080C1558: .4byte const_classname_UnitDie
 	thumb_func_start _._7UnitDie
 _._7UnitDie: @ 0x080C155C
 	push {lr}
-	ldr r2, _080C156C @ =_vt.3Unk
+	ldr r2, _080C156C @ =_vt.5Event
 	str r2, [r0, #0x1c]
 	bl _._4Base
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C156C: .4byte _vt.3Unk
+_080C156C: .4byte _vt.5Event
 
 	thumb_func_start init__14UnitEscapeRTTI
 init__14UnitEscapeRTTI: @ 0x080C1570
@@ -1243,13 +1243,13 @@ _080C1584: .4byte const_classname_UnitEscape
 	thumb_func_start _._10UnitEscape
 _._10UnitEscape: @ 0x080C1588
 	push {lr}
-	ldr r2, _080C1598 @ =_vt.3Unk
+	ldr r2, _080C1598 @ =_vt.5Event
 	str r2, [r0, #0x1c]
 	bl _._4Base
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C1598: .4byte _vt.3Unk
+_080C1598: .4byte _vt.5Event
 
 	thumb_func_start init__14UnitReviveRTTI
 init__14UnitReviveRTTI: @ 0x080C159C
@@ -1270,13 +1270,13 @@ _080C15B0: .4byte const_classname_UnitRevive
 	thumb_func_start _._10UnitRevive
 _._10UnitRevive: @ 0x080C15B4
 	push {lr}
-	ldr r2, _080C15C4 @ =_vt.3Unk
+	ldr r2, _080C15C4 @ =_vt.5Event
 	str r2, [r0, #0x1c]
 	bl _._4Base
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C15C4: .4byte _vt.3Unk
+_080C15C4: .4byte _vt.5Event
 
 	thumb_func_start init__12UnitJoinRTTI
 init__12UnitJoinRTTI: @ 0x080C15C8
@@ -1297,13 +1297,13 @@ _080C15DC: .4byte const_classname_UnitJoin
 	thumb_func_start _._8UnitJoin
 _._8UnitJoin: @ 0x080C15E0
 	push {lr}
-	ldr r2, _080C15F0 @ =_vt.3Unk
+	ldr r2, _080C15F0 @ =_vt.5Event
 	str r2, [r0, #0x1c]
 	bl _._4Base
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C15F0: .4byte _vt.3Unk
+_080C15F0: .4byte _vt.5Event
 
 	thumb_func_start init__10ResumeRTTI
 init__10ResumeRTTI: @ 0x080C15F4
@@ -1324,13 +1324,13 @@ _080C1608: .4byte const_classname_Resume
 	thumb_func_start _._6Resume
 _._6Resume: @ 0x080C160C
 	push {lr}
-	ldr r2, _080C161C @ =_vt.3Unk
+	ldr r2, _080C161C @ =_vt.5Event
 	str r2, [r0, #0x1c]
 	bl _._4Base
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C161C: .4byte _vt.3Unk
+_080C161C: .4byte _vt.5Event
 
 	thumb_func_start init__11SuspendRTTI
 init__11SuspendRTTI: @ 0x080C1620
@@ -1351,13 +1351,13 @@ _080C1634: .4byte const_classname_Suspend
 	thumb_func_start _._7Suspend
 _._7Suspend: @ 0x080C1638
 	push {lr}
-	ldr r2, _080C1648 @ =_vt.3Unk
+	ldr r2, _080C1648 @ =_vt.5Event
 	str r2, [r0, #0x1c]
 	bl _._4Base
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C1648: .4byte _vt.3Unk
+_080C1648: .4byte _vt.5Event
 
 	thumb_func_start _._6Object
 _._6Object: @ 0x080C164C

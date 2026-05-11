@@ -7,5 +7,5 @@ dt__13UnitTurnBegin:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080978D4: .4byte _vt.3Unk
+_080978D4: .4byte _vt.5Event
 	.syntax divided

@@ -7,5 +7,5 @@ dt__10RoundBegin:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0809792C: .4byte _vt.3Unk
+_0809792C: .4byte _vt.5Event
 	.syntax divided

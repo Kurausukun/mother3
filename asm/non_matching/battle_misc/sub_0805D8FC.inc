@@ -252,7 +252,7 @@ _0805DB68: .4byte 0x000003A9
 _0805DB6C: .4byte _vt.6ResPtr
 _0805DB70: .4byte 0x000003AA
 _0805DB74: .4byte 0x000003AB
-_0805DB78: .4byte _vt.3Unk
+_0805DB78: .4byte _vt.5Event
 _0805DB7C: .4byte _vt.13StartKeyPress
 _0805DB80: .4byte gUnknown_080F2B60
 	.syntax divided

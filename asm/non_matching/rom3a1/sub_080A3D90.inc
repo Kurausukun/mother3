@@ -99,7 +99,7 @@ sub_080A3D90:
 	.align 2, 0
 _080A3E68: .4byte _vt.14DefaultMonster.10UnitObject
 _080A3E6C: .4byte _vt.14DefaultMonster
-_080A3E70: .4byte _vt.3Unk
+_080A3E70: .4byte _vt.5Event
 _080A3E74: .4byte _vt.13UnitTurnBegin
 _080A3E78: .4byte gUnknown_080F8E5C
 _080A3E7C: .4byte _vt.11UnitTurnEnd

@@ -18,7 +18,7 @@ public:
     u32 mTime;
 };
 
-class PreSysClock : public Unk {
+class PreSysClock : public Event {
 public:
     inline PreSysClock() {}
     inline PreSysClock(u32 time) : mTime(time) {}
@@ -32,7 +32,7 @@ private:
     u32 mTime;
 };
 
-class SysClock : public Unk {
+class SysClock : public Event {
 public:
     inline SysClock() {}
     inline SysClock(u32 time) : mTime(time) {}
@@ -46,7 +46,7 @@ private:
     u32 mTime;
 };
 
-class PreAppClock : public Unk {
+class PreAppClock : public Event {
 public:
     inline PreAppClock() {}
     inline PreAppClock(u32 time) : mTime(time) {}
@@ -60,7 +60,7 @@ private:
     u32 mTime;
 };
 
-class AppClock : public Unk {
+class AppClock : public Event {
 public:
     inline AppClock() {}
     inline AppClock(u32 time) : mTime(time) {}
@@ -74,7 +74,7 @@ private:
     u32 mTime;
 };
 
-class PostAppClock : public Unk {
+class PostAppClock : public Event {
 public:
     inline PostAppClock() {}
     inline PostAppClock(u32 time) : mTime(time) {}
@@ -88,7 +88,7 @@ private:
     u32 mTime;
 };
 
-class PostSysClock : public Unk {
+class PostSysClock : public Event {
 public:
     inline PostSysClock() {}
     inline PostSysClock(u32 time) : mTime(time) {}

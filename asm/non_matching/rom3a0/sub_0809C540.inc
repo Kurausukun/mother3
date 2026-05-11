@@ -64,7 +64,7 @@ sub_0809C540:
 	.align 2, 0
 _0809C5CC: .4byte vt_09F48BF8
 _0809C5D0: .4byte vt_09F48C70
-_0809C5D4: .4byte _vt.3Unk
+_0809C5D4: .4byte _vt.5Event
 _0809C5D8: .4byte _vt.13UnitTurnBegin
 _0809C5DC: .4byte gUnknown_080F52C8
 _0809C5E0: .4byte _vt.11UnitTurnEnd

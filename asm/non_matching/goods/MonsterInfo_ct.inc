@@ -86,7 +86,7 @@ MonsterInfo_ct:
 	bx r1
 	.align 2, 0
 _08062438: .4byte vt_09F4E320
-_0806243C: .4byte _vt.3Unk
+_0806243C: .4byte _vt.5Event
 _08062440: .4byte _vt.8AppClock
 _08062444: .4byte gUnknown_080F812C
 	.syntax divided

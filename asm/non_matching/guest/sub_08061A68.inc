@@ -52,7 +52,7 @@ sub_08061A68:
 	bx r1
 	.align 2, 0
 _08061AD8: .4byte vt_09F4B948
-_08061ADC: .4byte _vt.3Unk
+_08061ADC: .4byte _vt.5Event
 _08061AE0: .4byte _vt.8AppClock
 _08061AE4: .4byte gUnknown_080F6704
 	.syntax divided

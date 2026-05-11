@@ -167,21 +167,21 @@ private:
     /* 0xf4 */ ID _f4;
 };
 
-struct Suspend : Unk {
+struct Suspend : Event {
     Suspend() {}
     inline virtual ~Suspend();
 
     virtual void* getRTTI();
 };
 
-struct Resume : Unk {
+struct Resume : Event {
     Resume() {}
     inline virtual ~Resume();
 
     virtual void* getRTTI();
 };
 
-struct UnitMove : Unk {
+struct UnitMove : Event {
     UnitMove() {}
     UnitMove(u32 t) : t(t) {}
     virtual ~UnitMove() {}

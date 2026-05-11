@@ -196,7 +196,7 @@ _0807AAB8: .4byte _vt.6Player
 _0807AABC: .4byte gCharStats
 _0807AAC0: .4byte gLevelStatTable
 _0807AAC4: .4byte 0x0000020A
-_0807AAC8: .4byte _vt.3Unk
+_0807AAC8: .4byte _vt.5Event
 _0807AACC: .4byte _vt.10RoundBegin
 _0807AAD0: .4byte callback_sub_0807C1C8
 _0807AAD4: .4byte _vt.8RoundEnd

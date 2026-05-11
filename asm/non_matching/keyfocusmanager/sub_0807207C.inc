@@ -339,7 +339,7 @@ __15KeyFocusManager:
 	bx r1
 	.align 2, 0
 _080723A0: .4byte _vt.15KeyFocusManager
-_080723A4: .4byte _vt.3Unk
+_080723A4: .4byte _vt.5Event
 _080723A8: .4byte _vt.10UpKeyPress
 _080723AC: .4byte callback_sub_08072518
 _080723B0: .4byte _vt.14UpKeyLongPress

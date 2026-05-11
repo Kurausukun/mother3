@@ -766,7 +766,7 @@ _08066B5C:
 _08066E10: .4byte 0x000004D4
 _08066E14: .4byte 0x000003A5
 _08066E18: .4byte 0x00000287
-_08066E1C: .4byte _vt.3Unk
+_08066E1C: .4byte _vt.5Event
 _08066E20: .4byte _vt.10UpKeyPress
 _08066E24: .4byte gUnknown_080FE1E0
 _08066E28: .4byte _vt.14UpKeyLongPress

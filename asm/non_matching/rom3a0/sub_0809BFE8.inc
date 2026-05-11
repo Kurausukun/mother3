@@ -91,7 +91,7 @@ _0809C0A4:
 	.align 2, 0
 _0809C0B8: .4byte vt_09F48BF8
 _0809C0BC: .4byte vt_09F48C70
-_0809C0C0: .4byte _vt.3Unk
+_0809C0C0: .4byte _vt.5Event
 _0809C0C4: .4byte _vt.13UnitTurnBegin
 _0809C0C8: .4byte gUnknown_080F52C8
 _0809C0CC: .4byte _vt.11UnitTurnEnd

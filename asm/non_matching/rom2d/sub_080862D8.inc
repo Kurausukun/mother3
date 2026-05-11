@@ -110,7 +110,7 @@ _080863C4: .4byte vt_09F846C8
 _080863C8: .4byte gUnknown_080EF880
 _080863CC: .4byte 0xFFFE0C00
 _080863D0: .4byte 0xFFFE7000
-_080863D4: .4byte _vt.3Unk
+_080863D4: .4byte _vt.5Event
 _080863D8: .4byte _vt.12PostAppClock
 _080863DC: .4byte callback_sub_08086460
 	.syntax divided

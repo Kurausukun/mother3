@@ -243,7 +243,7 @@ public:
     Sequencer* _5c;
 };
 
-class RoundBegin : public Unk {
+class RoundBegin : public Event {
 public:
     RoundBegin() : mRoundNo(0) {}
     RoundBegin(u16 r) : mRoundNo(r) {}
@@ -254,7 +254,7 @@ public:
     u16 mRoundNo;
 };
 
-class RoundEnd : public Unk {
+class RoundEnd : public Event {
 public:
     RoundEnd() : mRoundNo(0) {}
     RoundEnd(u16 r) : mRoundNo(r) {}
@@ -265,7 +265,7 @@ public:
     u16 mRoundNo;
 };
 
-struct UnitTurnBegin : public Unk {
+struct UnitTurnBegin : public Event {
     UnitTurnBegin() {}
     UnitTurnBegin(Unit* u) : mUnit(u) {}
     virtual ~UnitTurnBegin() {}
@@ -275,7 +275,7 @@ struct UnitTurnBegin : public Unk {
     Unit* mUnit;
 };
 
-struct UnitTurnEnd : public Unk {
+struct UnitTurnEnd : public Event {
     UnitTurnEnd() {}
     UnitTurnEnd(Unit* u) : mUnit(u) {}
     virtual ~UnitTurnEnd() {}
@@ -285,17 +285,17 @@ struct UnitTurnEnd : public Unk {
     Unit* mUnit;
 };
 
-struct ShowDownAsWin : public Unk {
+struct ShowDownAsWin : public Event {
     virtual ~ShowDownAsWin() {}
     virtual void* getRTTI();
 };
 
-struct ShowDownAsLose : public Unk {
+struct ShowDownAsLose : public Event {
     virtual ~ShowDownAsLose() {}
     virtual void* getRTTI();
 };
 
-struct ShowDownAsEscape : public Unk {
+struct ShowDownAsEscape : public Event {
     virtual ~ShowDownAsEscape() {}
     virtual void* getRTTI();
 };

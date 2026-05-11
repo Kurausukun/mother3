@@ -70,7 +70,7 @@ sub_08085FB0:
 	bx r1
 	.align 2, 0
 _0808604C: .4byte vt_09F843E8
-_08086050: .4byte _vt.3Unk
+_08086050: .4byte _vt.5Event
 _08086054: .4byte _vt.12PostAppClock
 _08086058: .4byte callback_sub_080860F4
 	.syntax divided

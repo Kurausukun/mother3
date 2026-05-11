@@ -471,7 +471,7 @@ _0808CFD0: .4byte vt_09F7E458
 _0808CFD4: .4byte 0x00000464
 _0808CFD8: .4byte 0x00000554
 _0808CFDC: .4byte 0x0000028A
-_0808CFE0: .4byte _vt.3Unk
+_0808CFE0: .4byte _vt.5Event
 _0808CFE4: .4byte _vt.10UpKeyPress
 _0808CFE8: .4byte callback_sub_0808DA04
 _0808CFEC: .4byte _vt.14UpKeyLongPress

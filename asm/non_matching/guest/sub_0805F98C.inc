@@ -81,7 +81,7 @@ sub_0805F98C:
 	.align 2, 0
 _0805FA34: .4byte vt_09F467F8
 _0805FA38: .4byte gSave
-_0805FA3C: .4byte _vt.3Unk
+_0805FA3C: .4byte _vt.5Event
 _0805FA40: .4byte _vt.8AppClock
 _0805FA44: .4byte gUnknown_080F4590
 	.syntax divided

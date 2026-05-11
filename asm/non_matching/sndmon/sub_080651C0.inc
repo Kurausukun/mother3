@@ -96,7 +96,7 @@ _080651EC:
 _08065290: .4byte vt_09F7DEB0
 _08065294: .4byte 0x000003FF
 _08065298: .4byte _vt.6ResPtr
-_0806529C: .4byte _vt.3Unk
+_0806529C: .4byte _vt.5Event
 _080652A0: .4byte _vt.8AppClock
 _080652A4: .4byte gUnknown_080FBDA0
 	.syntax divided

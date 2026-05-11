@@ -77,7 +77,7 @@ sub_080A495C:
 	.align 2, 0
 _080A4A04: .4byte _vt.14DefaultMonster.10UnitObject
 _080A4A08: .4byte _vt.14DefaultMonster
-_080A4A0C: .4byte _vt.3Unk
+_080A4A0C: .4byte _vt.5Event
 _080A4A10: .4byte _vt.13UnitTurnBegin
 _080A4A14: .4byte gUnknown_080F8E5C
 _080A4A18: .4byte _vt.11UnitTurnEnd

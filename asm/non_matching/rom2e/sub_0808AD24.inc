@@ -62,7 +62,7 @@ sub_0808AD24:
 	.align 2, 0
 _0808ADAC: .4byte vt_09F85378
 _0808ADB0: .4byte vt_09F85708
-_0808ADB4: .4byte _vt.3Unk
+_0808ADB4: .4byte _vt.5Event
 _0808ADB8: .4byte _vt.8AppClock
 _0808ADBC: .4byte callback_sub_0808ADD4
 	.syntax divided

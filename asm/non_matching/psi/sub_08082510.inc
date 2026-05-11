@@ -122,7 +122,7 @@ sub_08082510:
 	.align 2, 0
 _08082620: .4byte vt_09F83810
 _08082624: .4byte gUnknown_080E1708
-_08082628: .4byte _vt.3Unk
+_08082628: .4byte _vt.5Event
 _0808262C: .4byte _vt.10RoundBegin
 _08082630: .4byte callback_sub_08082968
 _08082634: .4byte _vt.13UnitTurnBegin

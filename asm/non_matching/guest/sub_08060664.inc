@@ -227,7 +227,7 @@ _080606CC:
 	b _080608A6
 	.align 2, 0
 _08060864: .4byte _vt.7Suspend
-_08060868: .4byte _vt.3Unk
+_08060868: .4byte _vt.5Event
 _0806086C: .4byte 0x000001D5
 _08060870: .4byte _vt.6Resume
 _08060874:

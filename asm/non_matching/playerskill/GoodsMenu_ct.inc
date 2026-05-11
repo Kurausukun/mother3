@@ -757,7 +757,7 @@ _0807D804:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0807DA9C: .4byte _vt.3Unk
+_0807DA9C: .4byte _vt.5Event
 _0807DAA0: .4byte _vt.10UpKeyPress
 _0807DAA4: .4byte callback_sub_0807E44C
 _0807DAA8: .4byte _vt.14UpKeyLongPress

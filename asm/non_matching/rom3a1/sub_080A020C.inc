@@ -67,7 +67,7 @@ sub_080A020C:
 	.align 2, 0
 _080A02A0: .4byte vt_09F4D280
 _080A02A4: .4byte vt_09F4D2F8
-_080A02A8: .4byte _vt.3Unk
+_080A02A8: .4byte _vt.5Event
 _080A02AC: .4byte _vt.13UnitTurnBegin
 _080A02B0: .4byte gUnknown_080F741C
 _080A02B4: .4byte _vt.11UnitTurnEnd

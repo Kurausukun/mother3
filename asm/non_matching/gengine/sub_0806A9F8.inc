@@ -192,7 +192,7 @@ _0806AB10:
 	bx r1
 	.align 2, 0
 _0806AB74: .4byte _vt.7GEngine
-_0806AB78: .4byte _vt.3Unk
+_0806AB78: .4byte _vt.5Event
 _0806AB7C: .4byte _vt.8SysClock
 _0806AB80: .4byte callback_sub_0806AC48
 	.syntax divided

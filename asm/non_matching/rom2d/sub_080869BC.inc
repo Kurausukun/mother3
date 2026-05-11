@@ -89,7 +89,7 @@ _08086A80: .4byte vt_09F849F0
 _08086A84: .4byte 0x00000291
 _08086A88: .4byte 0x00000283
 _08086A8C: .4byte _vt.6ResPtr
-_08086A90: .4byte _vt.3Unk
+_08086A90: .4byte _vt.5Event
 _08086A94: .4byte _vt.11PreAppClock
 _08086A98: .4byte callback_sub_08086AB0
 	.syntax divided

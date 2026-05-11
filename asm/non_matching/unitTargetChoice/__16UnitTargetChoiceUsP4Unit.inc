@@ -54,7 +54,7 @@ __16UnitTargetChoiceUsP4Unit:
 	strh r1, [r0]
 	add r0, sp, #4
 	bl __4Base
-	ldr r2, _08076A08 @ =_vt.3Unk
+	ldr r2, _08076A08 @ =_vt.5Event
 	mov sl, r2
 	ldr r0, _08076A0C @ =_vt.12LeftKeyPress
 	str r0, [sp, #0x20]
@@ -337,7 +337,7 @@ __16UnitTargetChoiceUsP4Unit:
 	bx r1
 	.align 2, 0
 _08076A04: .4byte _vt.16UnitTargetChoice
-_08076A08: .4byte _vt.3Unk
+_08076A08: .4byte _vt.5Event
 _08076A0C: .4byte _vt.12LeftKeyPress
 _08076A10: .4byte callback_sub_080775E8
 _08076A14: .4byte _vt.16LeftKeyLongPress
