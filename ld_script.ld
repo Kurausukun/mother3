@@ -133,7 +133,6 @@ SECTIONS
 
         build/mother3/src/rom3b.o(.text);
         build/mother3/src/inst.o(.text);
-        build/mother3/asm/rom4.o(.text);
 
         build/mother3/data/data1.o(.rodata);
         build/mother3/src/data/directionData.o(.rodata);
