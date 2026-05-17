@@ -105,6 +105,11 @@ struct MonsterSkillData {
     MoveInfo move;
 };
 
+struct GuestSkillInfo {
+    u8 id;
+    MoveInfo move;
+};
+
 struct EffectType {
     enum {
         Damage = 0x0,
@@ -120,5 +125,10 @@ struct EffectType {
 };
 
 extern "C" void sub_08077D8C(Action*, u32);
+
+extern const GuestSkillInfo gPlayerSkillData[];
+extern const GuestSkillInfo gGuestSkillData[];
+extern const MonsterSkillData gMonsterSkillData[];
+
 
 #endif  // BATTLE_action_H

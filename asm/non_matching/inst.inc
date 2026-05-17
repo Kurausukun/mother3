@@ -1600,7 +1600,7 @@ init__15PlayerSkillRTTI: @ 0x080C16B0
 	push {lr}
 	movs r0, #0x4c
 	bl __builtin_new
-	bl sub_0808075C
+	bl __11PlayerSkill
 	pop {r1}
 	bx r1
 

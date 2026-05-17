@@ -1,5 +1,9 @@
 // Auto-generated source file
-#include "global.h"
+#include "battle/playerskill.h"
+
+extern "C" void* get_misctext_msg(u32, u32);
+extern "C" u16 get_misctext_len(u32);
+Msg sub_08073444(u16);
 
 extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0807C4F0.inc", void sub_0807C4F0());
 extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0807C518.inc", void sub_0807C518());
@@ -114,39 +118,129 @@ extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_08080244.inc", void sub_08
 extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0808025C.inc", void sub_0808025C());
 extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0808028C.inc", void sub_0808028C());
 extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_080802A4.inc", void sub_080802A4());
-extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_080803B4.inc", void sub_080803B4());
-extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_080803BC.inc", void getRTTI__11PlayerSkill());
-extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_080803C8.inc", void sub_080803C8());
-extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_080803F4.inc", void sub_080803F4());
-extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_08080424.inc", void sub_08080424()); // _._11PlayerSkill
-extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_08080438.inc", void sub_08080438());
-extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0808044C.inc", void sub_0808044C());
-extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_08080454.inc", void sub_08080454());
+
+RTTI_IMPL(PlayerSkill);
+
+Msg PlayerSkill::getName(u16 idx) {
+    return Msg::genMisctextMsg(get_misctext_msg(13, idx), get_misctext_len(13));
+}
+
+PlayerSkill::PlayerSkill(u16 id, Unit* user) : Action(user), mInfo(&gPlayerSkillData[id]) {}
+
+PlayerSkill::~PlayerSkill() {}
+
+Action* PlayerSkill::action_1c0() {
+    sub_08077D8C(this, 0);
+    return this;
+}
+
+u16 PlayerSkill::id() const {
+    return mInfo->id;
+}
+
+Msg PlayerSkill::name() const {
+    return getName(id());
+}
+
 extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_08080484.inc", void sub_08080484());
-extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_08080560.inc", void sub_08080560());
-extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_08080570.inc", void sub_08080570());
-extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_08080574.inc", void sub_08080574());
-extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0808057C.inc", void sub_0808057C());
-extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_08080584.inc", void sub_08080584());
-extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0808058C.inc", void sub_0808058C());
-extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_08080594.inc", void sub_08080594());
-extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0808059C.inc", void sub_0808059C());
-extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_080805A4.inc", void sub_080805A4());
-extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_080805AC.inc", void sub_080805AC());
-extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_080805B4.inc", void sub_080805B4());
-extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_080805C4.inc", void sub_080805C4());
-extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_080805CC.inc", void sub_080805CC());
-extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_080805F4.inc", void sub_080805F4());
-extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0808060C.inc", void sub_0808060C());
-extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_08080620.inc", void sub_08080620());
-extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_08080628.inc", void sub_08080628());
-extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_08080630.inc", void sub_08080630());
-extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_08080674.inc", void sub_08080674());
-extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0808067C.inc", void sub_0808067C());
-extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_08080688.inc", void sub_08080688());
-extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_08080690.inc", void sub_08080690());
-extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_080806A4.inc", void sub_080806A4());
-extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_080806D8.inc", void sub_080806D8());
-extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0808070C.inc", void sub_0808070C());
-extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_08080740.inc", void _GLOBAL_I_PlayerSkillRTTI());
-extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0808075C.inc", void sub_0808075C());
+extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_08080560.inc", void sub_08080560()); // unused?
+
+u32 PlayerSkill::action_1e0() {
+    return 0;
+}
+
+u32 PlayerSkill::effect() const {
+    return mInfo->move.effect;
+}
+
+u32 PlayerSkill::element() const {
+    return mInfo->move.element;
+}
+
+u32 PlayerSkill::target() const {
+    return *(u16*)&mInfo->move.target;
+}
+
+u32 PlayerSkill::attackMult() const {
+    return mInfo->move.atk_mult;
+}
+
+s32 PlayerSkill::healLo() const {
+    return mInfo->move.heal_lo;
+}
+
+s32 PlayerSkill::healHi() const {
+    return mInfo->move.heal_hi;
+}
+
+u16 PlayerSkill::ailment() const {
+    return mInfo->move.ailment;
+}
+
+u32 PlayerSkill::ailmentChance() const {
+    return mInfo->move.ailment_chance;
+}
+
+u8 PlayerSkill::hasAction() const {
+    u32 action = mInfo->move.action;
+    return action ? 1 : 0;
+}
+
+u32 PlayerSkill::priority() const {
+    return mInfo->move.priority;
+}
+
+Msg PlayerSkill::getUseMessage() const {
+    return ROMStr(mInfo->move.msg_no);
+}
+
+Msg PlayerSkill::getForceUseMessage() const {
+    return sub_08073444(mInfo->move.msg_no);
+}
+
+bool PlayerSkill::hasDim() const {
+    return mInfo->move.has_dim;
+}
+
+u16 PlayerSkill::animNo() const {
+    return mInfo->move.anim_no;
+}
+
+u16 PlayerSkill::successAnimNo() const {
+    return mInfo->move.anim_success;
+}
+
+u16 PlayerSkill::critAnimNo() const {
+    if (!successAnimNo()) {
+        return 0;
+    }
+    return successAnimNo() + 1;
+}
+
+u32 PlayerSkill::sfxNo() const {
+    return mInfo->move.sfx_no;
+}
+
+s32 PlayerSkill::hitChance() const {
+    return 100 - mInfo->move.miss_chance;
+}
+
+s32 PlayerSkill::critChance() const {
+    return mInfo->move.smash_chance;
+}
+
+bool PlayerSkill::redirectable() const {
+    return mInfo->move.redirectable != 0;
+}
+
+u16 PlayerSkill::userAttackSfx() const {
+    return getUser()->attackSfx();
+}
+
+u16 PlayerSkill::userCritSfx() const {
+    return getUser()->critSfx();
+}
+
+u16 PlayerSkill::userMissSfx() const {
+    return getUser()->missSfx();
+}

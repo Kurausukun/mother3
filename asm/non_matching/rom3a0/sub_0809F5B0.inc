@@ -29,7 +29,7 @@ sub_0809F5B0:
 	b _0809F668
 _0809F5EA:
 	adds r0, r4, #0
-	bl sub_0808067C
+	bl hitChance__C11PlayerSkill
 	adds r5, r0, #0
 	cmp r5, #0x63
 	bgt _0809F666

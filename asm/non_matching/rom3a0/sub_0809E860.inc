@@ -1,7 +1,7 @@
 	.syntax unified
 sub_0809E860:
 	str r2, [r0, #0x1c]
-	bl sub_08080424
+	bl _._11PlayerSkill
 	pop {r0}
 	bx r0
 	.align 2, 0

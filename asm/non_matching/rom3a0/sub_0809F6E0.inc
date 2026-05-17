@@ -13,7 +13,7 @@ sub_0809F6E0:
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_08080424
+	bl _._11PlayerSkill
 	pop {r4, r5}
 	pop {r0}
 	bx r0

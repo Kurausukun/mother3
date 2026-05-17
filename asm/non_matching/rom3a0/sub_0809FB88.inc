@@ -2,7 +2,7 @@
 sub_0809FB88:
 	push {r4, r5, lr}
 	adds r4, r0, #0
-	bl sub_0808067C
+	bl hitChance__C11PlayerSkill
 	adds r5, r0, #0
 	cmp r5, #0x63
 	bgt _0809FC06

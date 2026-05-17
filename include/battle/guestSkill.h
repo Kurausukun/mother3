@@ -3,12 +3,6 @@
 
 #include "battle/action.h"
 
-struct GuestSkillInfo {
-    u8 id;
-    MoveInfo move;
-};
-extern const GuestSkillInfo gGuestSkillData[];
-
 class GuestSkill : public Action {
 public:
     GuestSkill() {}

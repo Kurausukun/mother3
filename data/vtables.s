@@ -6639,10 +6639,10 @@ vt_09F49158::
 	.4byte sub_0809F840
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808044C
+	.4byte id__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080454
+	.4byte name__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080484
@@ -6651,76 +6651,76 @@ vt_09F49158::
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080570
+	.4byte action_1e0__11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080574
+	.4byte effect__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808057C
+	.4byte element__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080584
+	.4byte target__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808058C
+	.4byte attackMult__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080594
+	.4byte healLo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808059C
+	.4byte healHi__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805A4
+	.4byte ailment__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805AC
+	.4byte ailmentChance__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805B4
+	.4byte hasAction__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805C4
+	.4byte priority__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805CC
+	.4byte getUseMessage__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805F4
+	.4byte getForceUseMessage__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808060C
+	.4byte hasDim__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080620
+	.4byte animNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080628
+	.4byte successAnimNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080630
+	.4byte critAnimNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080674
+	.4byte sfxNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809FB88
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080688
+	.4byte critChance__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080690
+	.4byte redirectable__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080806A4
+	.4byte userAttackSfx__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080806D8
+	.4byte userCritSfx__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808070C
+	.4byte userMissSfx__C11PlayerSkill
 
 vt_09F493F8::
 	.2byte 0
@@ -6893,10 +6893,10 @@ vt_09F493F8::
 	.4byte sub_0809FA58
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808044C
+	.4byte id__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080454
+	.4byte name__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F990
@@ -6908,73 +6908,73 @@ vt_09F493F8::
 	.4byte sub_0809F970
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080574
+	.4byte effect__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808057C
+	.4byte element__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080584
+	.4byte target__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808058C
+	.4byte attackMult__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080594
+	.4byte healLo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808059C
+	.4byte healHi__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805A4
+	.4byte ailment__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805AC
+	.4byte ailmentChance__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805B4
+	.4byte hasAction__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805C4
+	.4byte priority__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805CC
+	.4byte getUseMessage__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805F4
+	.4byte getForceUseMessage__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808060C
+	.4byte hasDim__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080620
+	.4byte animNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080628
+	.4byte successAnimNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080630
+	.4byte critAnimNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080674
+	.4byte sfxNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809FB88
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080688
+	.4byte critChance__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080690
+	.4byte redirectable__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080806A4
+	.4byte userAttackSfx__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080806D8
+	.4byte userCritSfx__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808070C
+	.4byte userMissSfx__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F9F0
@@ -7150,10 +7150,10 @@ vt_09F496A0::
 	.4byte sub_0809FA58
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808044C
+	.4byte id__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080454
+	.4byte name__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F990
@@ -7165,73 +7165,73 @@ vt_09F496A0::
 	.4byte sub_0809F970
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080574
+	.4byte effect__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808057C
+	.4byte element__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080584
+	.4byte target__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808058C
+	.4byte attackMult__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080594
+	.4byte healLo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808059C
+	.4byte healHi__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805A4
+	.4byte ailment__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805AC
+	.4byte ailmentChance__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805B4
+	.4byte hasAction__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805C4
+	.4byte priority__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805CC
+	.4byte getUseMessage__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805F4
+	.4byte getForceUseMessage__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808060C
+	.4byte hasDim__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080620
+	.4byte animNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080628
+	.4byte successAnimNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080630
+	.4byte critAnimNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080674
+	.4byte sfxNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809FB88
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080688
+	.4byte critChance__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080690
+	.4byte redirectable__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080806A4
+	.4byte userAttackSfx__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080806D8
+	.4byte userCritSfx__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808070C
+	.4byte userMissSfx__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F9F0
@@ -7404,13 +7404,13 @@ vt_09F49948::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080438
+	.4byte action_1c0__11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808044C
+	.4byte id__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080454
+	.4byte name__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080484
@@ -7419,76 +7419,76 @@ vt_09F49948::
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080570
+	.4byte action_1e0__11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080574
+	.4byte effect__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808057C
+	.4byte element__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080584
+	.4byte target__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808058C
+	.4byte attackMult__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080594
+	.4byte healLo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808059C
+	.4byte healHi__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805A4
+	.4byte ailment__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805AC
+	.4byte ailmentChance__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805B4
+	.4byte hasAction__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805C4
+	.4byte priority__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805CC
+	.4byte getUseMessage__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805F4
+	.4byte getForceUseMessage__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808060C
+	.4byte hasDim__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080620
+	.4byte animNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080628
+	.4byte successAnimNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080630
+	.4byte critAnimNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080674
+	.4byte sfxNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809FB88
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080688
+	.4byte critChance__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080690
+	.4byte redirectable__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080806A4
+	.4byte userAttackSfx__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080806D8
+	.4byte userCritSfx__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808070C
+	.4byte userMissSfx__C11PlayerSkill
 
 vt_09F49BE8::
 	.2byte 0
@@ -7658,13 +7658,13 @@ vt_09F49BE8::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080438
+	.4byte action_1c0__11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808044C
+	.4byte id__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080454
+	.4byte name__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080484
@@ -7673,76 +7673,76 @@ vt_09F49BE8::
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080570
+	.4byte action_1e0__11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080574
+	.4byte effect__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808057C
+	.4byte element__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080584
+	.4byte target__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808058C
+	.4byte attackMult__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080594
+	.4byte healLo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808059C
+	.4byte healHi__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805A4
+	.4byte ailment__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805AC
+	.4byte ailmentChance__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805B4
+	.4byte hasAction__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805C4
+	.4byte priority__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805CC
+	.4byte getUseMessage__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805F4
+	.4byte getForceUseMessage__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808060C
+	.4byte hasDim__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080620
+	.4byte animNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080628
+	.4byte successAnimNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080630
+	.4byte critAnimNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080674
+	.4byte sfxNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809FB88
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080688
+	.4byte critChance__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080690
+	.4byte redirectable__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080806A4
+	.4byte userAttackSfx__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080806D8
+	.4byte userCritSfx__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808070C
+	.4byte userMissSfx__C11PlayerSkill
 
 vt_09F49E88::
 	.2byte 0
@@ -7915,10 +7915,10 @@ vt_09F49E88::
 	.4byte sub_0809F710
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808044C
+	.4byte id__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080454
+	.4byte name__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080484
@@ -7927,76 +7927,76 @@ vt_09F49E88::
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080570
+	.4byte action_1e0__11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080574
+	.4byte effect__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808057C
+	.4byte element__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080584
+	.4byte target__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808058C
+	.4byte attackMult__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080594
+	.4byte healLo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808059C
+	.4byte healHi__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805A4
+	.4byte ailment__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805AC
+	.4byte ailmentChance__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805B4
+	.4byte hasAction__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805C4
+	.4byte priority__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805CC
+	.4byte getUseMessage__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805F4
+	.4byte getForceUseMessage__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808060C
+	.4byte hasDim__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080620
+	.4byte animNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080628
+	.4byte successAnimNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080630
+	.4byte critAnimNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080674
+	.4byte sfxNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809FB88
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080688
+	.4byte critChance__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080690
+	.4byte redirectable__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080806A4
+	.4byte userAttackSfx__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080806D8
+	.4byte userCritSfx__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808070C
+	.4byte userMissSfx__C11PlayerSkill
 
 vt_09F4A128::
 	.2byte 0
@@ -8169,10 +8169,10 @@ vt_09F4A128::
 	.4byte sub_0809F710
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808044C
+	.4byte id__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080454
+	.4byte name__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080484
@@ -8181,76 +8181,76 @@ vt_09F4A128::
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080570
+	.4byte action_1e0__11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080574
+	.4byte effect__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808057C
+	.4byte element__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080584
+	.4byte target__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808058C
+	.4byte attackMult__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080594
+	.4byte healLo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808059C
+	.4byte healHi__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805A4
+	.4byte ailment__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805AC
+	.4byte ailmentChance__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805B4
+	.4byte hasAction__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805C4
+	.4byte priority__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805CC
+	.4byte getUseMessage__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805F4
+	.4byte getForceUseMessage__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808060C
+	.4byte hasDim__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080620
+	.4byte animNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080628
+	.4byte successAnimNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080630
+	.4byte critAnimNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080674
+	.4byte sfxNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809FB88
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080688
+	.4byte critChance__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080690
+	.4byte redirectable__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080806A4
+	.4byte userAttackSfx__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080806D8
+	.4byte userCritSfx__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808070C
+	.4byte userMissSfx__C11PlayerSkill
 
 vt_09F4A3C8::
 	.2byte 0
@@ -8423,10 +8423,10 @@ vt_09F4A3C8::
 	.4byte sub_0809F710
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808044C
+	.4byte id__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080454
+	.4byte name__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080484
@@ -8435,76 +8435,76 @@ vt_09F4A3C8::
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080570
+	.4byte action_1e0__11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080574
+	.4byte effect__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808057C
+	.4byte element__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080584
+	.4byte target__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808058C
+	.4byte attackMult__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080594
+	.4byte healLo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808059C
+	.4byte healHi__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805A4
+	.4byte ailment__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805AC
+	.4byte ailmentChance__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805B4
+	.4byte hasAction__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805C4
+	.4byte priority__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805CC
+	.4byte getUseMessage__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805F4
+	.4byte getForceUseMessage__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808060C
+	.4byte hasDim__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080620
+	.4byte animNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080628
+	.4byte successAnimNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080630
+	.4byte critAnimNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080674
+	.4byte sfxNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809FB88
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080688
+	.4byte critChance__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080690
+	.4byte redirectable__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080806A4
+	.4byte userAttackSfx__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080806D8
+	.4byte userCritSfx__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808070C
+	.4byte userMissSfx__C11PlayerSkill
 
 vt_09F4A668::
 	.2byte 0
@@ -8677,10 +8677,10 @@ vt_09F4A668::
 	.4byte sub_0809FA58
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808044C
+	.4byte id__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080454
+	.4byte name__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F990
@@ -8692,73 +8692,73 @@ vt_09F4A668::
 	.4byte sub_0809F970
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080574
+	.4byte effect__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808057C
+	.4byte element__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080584
+	.4byte target__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808058C
+	.4byte attackMult__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080594
+	.4byte healLo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808059C
+	.4byte healHi__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805A4
+	.4byte ailment__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805AC
+	.4byte ailmentChance__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805B4
+	.4byte hasAction__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805C4
+	.4byte priority__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805CC
+	.4byte getUseMessage__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805F4
+	.4byte getForceUseMessage__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808060C
+	.4byte hasDim__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080620
+	.4byte animNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080628
+	.4byte successAnimNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080630
+	.4byte critAnimNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080674
+	.4byte sfxNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809FB88
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080688
+	.4byte critChance__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080690
+	.4byte redirectable__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080806A4
+	.4byte userAttackSfx__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080806D8
+	.4byte userCritSfx__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808070C
+	.4byte userMissSfx__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F9F0
@@ -8934,10 +8934,10 @@ vt_09F4A910::
 	.4byte sub_0809FA58
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808044C
+	.4byte id__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080454
+	.4byte name__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F990
@@ -8949,73 +8949,73 @@ vt_09F4A910::
 	.4byte sub_0809F970
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080574
+	.4byte effect__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808057C
+	.4byte element__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080584
+	.4byte target__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808058C
+	.4byte attackMult__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080594
+	.4byte healLo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808059C
+	.4byte healHi__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805A4
+	.4byte ailment__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805AC
+	.4byte ailmentChance__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805B4
+	.4byte hasAction__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805C4
+	.4byte priority__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805CC
+	.4byte getUseMessage__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805F4
+	.4byte getForceUseMessage__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808060C
+	.4byte hasDim__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080620
+	.4byte animNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080628
+	.4byte successAnimNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080630
+	.4byte critAnimNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080674
+	.4byte sfxNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809FB88
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080688
+	.4byte critChance__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080690
+	.4byte redirectable__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080806A4
+	.4byte userAttackSfx__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080806D8
+	.4byte userCritSfx__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808070C
+	.4byte userMissSfx__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F9F0
@@ -9191,10 +9191,10 @@ vt_09F4ABB8::
 	.4byte sub_0809FA58
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808044C
+	.4byte id__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080454
+	.4byte name__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F990
@@ -9206,73 +9206,73 @@ vt_09F4ABB8::
 	.4byte sub_0809F970
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080574
+	.4byte effect__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808057C
+	.4byte element__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080584
+	.4byte target__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808058C
+	.4byte attackMult__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080594
+	.4byte healLo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808059C
+	.4byte healHi__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805A4
+	.4byte ailment__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805AC
+	.4byte ailmentChance__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805B4
+	.4byte hasAction__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805C4
+	.4byte priority__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805CC
+	.4byte getUseMessage__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805F4
+	.4byte getForceUseMessage__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808060C
+	.4byte hasDim__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080620
+	.4byte animNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080628
+	.4byte successAnimNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080630
+	.4byte critAnimNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080674
+	.4byte sfxNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809FB88
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080688
+	.4byte critChance__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080690
+	.4byte redirectable__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080806A4
+	.4byte userAttackSfx__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080806D8
+	.4byte userCritSfx__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808070C
+	.4byte userMissSfx__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F9F0
@@ -9448,10 +9448,10 @@ vt_09F4AE60::
 	.4byte sub_0809FA58
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808044C
+	.4byte id__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080454
+	.4byte name__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F990
@@ -9463,73 +9463,73 @@ vt_09F4AE60::
 	.4byte sub_0809F970
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080574
+	.4byte effect__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808057C
+	.4byte element__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080584
+	.4byte target__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808058C
+	.4byte attackMult__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080594
+	.4byte healLo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808059C
+	.4byte healHi__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805A4
+	.4byte ailment__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805AC
+	.4byte ailmentChance__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805B4
+	.4byte hasAction__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805C4
+	.4byte priority__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805CC
+	.4byte getUseMessage__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805F4
+	.4byte getForceUseMessage__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808060C
+	.4byte hasDim__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080620
+	.4byte animNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080628
+	.4byte successAnimNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080630
+	.4byte critAnimNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080674
+	.4byte sfxNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809FB88
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080688
+	.4byte critChance__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080690
+	.4byte redirectable__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080806A4
+	.4byte userAttackSfx__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080806D8
+	.4byte userCritSfx__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808070C
+	.4byte userMissSfx__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F9F0
@@ -9705,10 +9705,10 @@ vt_09F4B108::
 	.4byte sub_0809FA58
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808044C
+	.4byte id__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080454
+	.4byte name__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F990
@@ -9720,73 +9720,73 @@ vt_09F4B108::
 	.4byte sub_0809F970
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080574
+	.4byte effect__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808057C
+	.4byte element__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080584
+	.4byte target__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808058C
+	.4byte attackMult__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080594
+	.4byte healLo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808059C
+	.4byte healHi__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805A4
+	.4byte ailment__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805AC
+	.4byte ailmentChance__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805B4
+	.4byte hasAction__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805C4
+	.4byte priority__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805CC
+	.4byte getUseMessage__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805F4
+	.4byte getForceUseMessage__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808060C
+	.4byte hasDim__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080620
+	.4byte animNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080628
+	.4byte successAnimNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080630
+	.4byte critAnimNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080674
+	.4byte sfxNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809FB88
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080688
+	.4byte critChance__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080690
+	.4byte redirectable__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080806A4
+	.4byte userAttackSfx__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080806D8
+	.4byte userCritSfx__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808070C
+	.4byte userMissSfx__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F9F0
@@ -9959,13 +9959,13 @@ vt_09F4B3B0::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080438
+	.4byte action_1c0__11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808044C
+	.4byte id__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080454
+	.4byte name__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080484
@@ -9974,76 +9974,76 @@ vt_09F4B3B0::
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080570
+	.4byte action_1e0__11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080574
+	.4byte effect__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808057C
+	.4byte element__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080584
+	.4byte target__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808058C
+	.4byte attackMult__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080594
+	.4byte healLo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808059C
+	.4byte healHi__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805A4
+	.4byte ailment__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805AC
+	.4byte ailmentChance__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805B4
+	.4byte hasAction__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805C4
+	.4byte priority__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805CC
+	.4byte getUseMessage__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805F4
+	.4byte getForceUseMessage__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808060C
+	.4byte hasDim__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080620
+	.4byte animNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080628
+	.4byte successAnimNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080630
+	.4byte critAnimNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080674
+	.4byte sfxNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809F5B0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080688
+	.4byte critChance__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080690
+	.4byte redirectable__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080806A4
+	.4byte userAttackSfx__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080806D8
+	.4byte userCritSfx__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808070C
+	.4byte userMissSfx__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809ED04
@@ -10246,13 +10246,13 @@ vt_09F4B6A8::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080438
+	.4byte action_1c0__11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808044C
+	.4byte id__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080454
+	.4byte name__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080484
@@ -10261,76 +10261,76 @@ vt_09F4B6A8::
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080570
+	.4byte action_1e0__11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080574
+	.4byte effect__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808057C
+	.4byte element__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080584
+	.4byte target__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808058C
+	.4byte attackMult__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080594
+	.4byte healLo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808059C
+	.4byte healHi__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805A4
+	.4byte ailment__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805AC
+	.4byte ailmentChance__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805B4
+	.4byte hasAction__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805C4
+	.4byte priority__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805CC
+	.4byte getUseMessage__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805F4
+	.4byte getForceUseMessage__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808060C
+	.4byte hasDim__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080620
+	.4byte animNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080628
+	.4byte successAnimNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080630
+	.4byte critAnimNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080674
+	.4byte sfxNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809FB88
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080688
+	.4byte critChance__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080690
+	.4byte redirectable__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080806A4
+	.4byte userAttackSfx__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080806D8
+	.4byte userCritSfx__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808070C
+	.4byte userMissSfx__C11PlayerSkill
 
 vt_09F4B948::
 	.2byte 0
@@ -95912,7 +95912,7 @@ _vt.11PlayerSkill::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080424
+	.4byte _._11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__11PlayerSkill
@@ -96074,13 +96074,13 @@ _vt.11PlayerSkill::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080438
+	.4byte action_1c0__11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808044C
+	.4byte id__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080454
+	.4byte name__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_08080484
@@ -96089,76 +96089,76 @@ _vt.11PlayerSkill::
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080570
+	.4byte action_1e0__11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080574
+	.4byte effect__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808057C
+	.4byte element__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080584
+	.4byte target__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808058C
+	.4byte attackMult__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080594
+	.4byte healLo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808059C
+	.4byte healHi__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805A4
+	.4byte ailment__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805AC
+	.4byte ailmentChance__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805B4
+	.4byte hasAction__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805C4
+	.4byte priority__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805CC
+	.4byte getUseMessage__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080805F4
+	.4byte getForceUseMessage__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808060C
+	.4byte hasDim__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080620
+	.4byte animNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080628
+	.4byte successAnimNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080630
+	.4byte critAnimNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080674
+	.4byte sfxNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808067C
+	.4byte hitChance__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080688
+	.4byte critChance__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080690
+	.4byte redirectable__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080806A4
+	.4byte userAttackSfx__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080806D8
+	.4byte userCritSfx__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808070C
+	.4byte userMissSfx__C11PlayerSkill
 
 _vt.15PlayerSkillRTTI::
 	.2byte 0

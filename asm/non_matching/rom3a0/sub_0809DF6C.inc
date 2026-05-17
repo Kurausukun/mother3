@@ -3,7 +3,7 @@ sub_0809DF6C:
 	push {lr}
 	ldr r2, _0809DF7C
 	str r2, [r0, #0x1c]
-	bl sub_08080424
+	bl _._11PlayerSkill
 	pop {r0}
 	bx r0
 	.align 2, 0
