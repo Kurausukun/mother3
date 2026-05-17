@@ -41,7 +41,7 @@ public:
     virtual u16 userMissSfx() const;
 
 private:
-    const GuestSkillInfo* mInfo;
+    const PlayerSkillInfo* mInfo;
 };
 
 RTTI_DECL(PlayerSkill);

@@ -41,7 +41,7 @@ public:
     u32 action_298() override;
 
 private:
-    const GuestSkillInfo* mInfo;
+    const PlayerSkillInfo* mInfo;
 };
 
 RTTI_DECL(GuestSkill);

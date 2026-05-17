@@ -97,7 +97,7 @@ public:
     u8 _44;
 };
 
-struct MonsterSkillData {
+struct MonsterSkillInfo {
     u16 id;
     u16 pp_cost;
     u16 recolor_value;
@@ -105,7 +105,7 @@ struct MonsterSkillData {
     MoveInfo move;
 };
 
-struct GuestSkillInfo {
+struct PlayerSkillInfo {
     u8 id;
     MoveInfo move;
 };
@@ -126,9 +126,9 @@ struct EffectType {
 
 extern "C" void sub_08077D8C(Action*, u32);
 
-extern const GuestSkillInfo gPlayerSkillData[];
-extern const GuestSkillInfo gGuestSkillData[];
-extern const MonsterSkillData gMonsterSkillData[];
+extern const PlayerSkillInfo gPlayerSkillData[];
+extern const PlayerSkillInfo gGuestSkillData[];
+extern const MonsterSkillInfo gMonsterSkillData[];
 
 
 #endif  // BATTLE_action_H

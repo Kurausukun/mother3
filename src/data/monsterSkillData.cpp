@@ -1,7 +1,7 @@
 #include "battle/action.h"
 #include "enums.h"
 
-extern "C" const MonsterSkillData gMonsterSkillData[] = {
+extern "C" const MonsterSkillInfo gMonsterSkillData[] = {
 	{
 		/*       ID       */                0x0, /*    PP_COST     */                0x0, /* RECOLOR_VALUE  */                0x0,
 		/*   HAS_SOUND    */                0x0, /*     EFFECT     */ EffectType::Attack, /*    ELEMENT     */  ElementType::None,
