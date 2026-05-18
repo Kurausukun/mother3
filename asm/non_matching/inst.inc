@@ -203,7 +203,7 @@ init__15BGEngineManager: @ 0x080C0D34
 	movs r0, #0x88
 	lsls r0, r0, #1
 	bl __builtin_new
-	bl sub_0806B0C4
+	bl __8BGEngine
 	pop {r1}
 	bx r1
 	.align 2, 0
@@ -1364,7 +1364,7 @@ init__13RhythmBgmRTTI: @ 0x080C152C
 	push {lr}
 	movs r0, #0x60
 	bl __builtin_new
-	bl sub_08074A1C
+	bl __9RhythmBgm
 	pop {r1}
 	bx r1
 
@@ -1650,7 +1650,7 @@ init__16MonsterSkillRTTI: @ 0x080C16FC
 	push {lr}
 	movs r0, #0x4c
 	bl __builtin_new
-	bl sub_08082484
+	bl __12MonsterSkill
 	pop {r1}
 	bx r1
 

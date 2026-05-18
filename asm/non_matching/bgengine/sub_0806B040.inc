@@ -11,7 +11,7 @@ sub_0806B040:
 	movs r0, #0x88
 	lsls r0, r0, #1
 	bl __builtin_new
-	bl sub_0806B0C4
+	bl __8BGEngine
 	str r0, [r4]
 _0806B05E:
 	ldr r0, _0806B06C

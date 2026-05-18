@@ -6,7 +6,7 @@ extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806B040.inc", void sub_0806B
 extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806B070.inc", void sub_0806B070());
 extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806B07C.inc", void sub_0806B07C());
 extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806B0B8.inc", void sub_0806B0B8());
-extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806B0C4.inc", void sub_0806B0C4());
+extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806B0C4.inc", void __8BGEngine());
 extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806B258.inc", void sub_0806B258());
 extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806B2CC.inc", void sub_0806B2CC());
 extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806B3E0.inc", void sub_0806B3E0());

@@ -233,4 +233,4 @@ extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08074898.inc", void sub_0807489
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_0807489C.inc", void sub_0807489C());
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_080748C8.inc", void sub_080748C8());
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_080749D8.inc", void _GLOBAL_I_RhythmBgmRTTI());
-extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08074A1C.inc", void sub_08074A1C());
+extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08074A1C.inc", void __9RhythmBgm());
