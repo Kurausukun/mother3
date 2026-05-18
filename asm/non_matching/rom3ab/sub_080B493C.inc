@@ -48,7 +48,7 @@ sub_080B493C:
 	movs r1, #2
 	bl _._3Msg
 	adds r0, r4, #0
-	bl sub_080821A0
+	bl action_150__12MonsterSkill
 	add sp, #0x10
 	pop {r4}
 	pop {r0}

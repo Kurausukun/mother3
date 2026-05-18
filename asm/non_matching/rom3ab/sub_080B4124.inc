@@ -8,7 +8,7 @@ sub_080B4124:
 	adds r6, r0, #0
 	movs r4, #0
 	str r4, [r6, #0x4c]
-	bl sub_08082088
+	bl fire__12MonsterSkill
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -146,7 +146,7 @@ _080B4230:
 	adds r0, #1
 	str r0, [r6, #0x4c]
 	adds r0, r6, #0
-	bl sub_08082088
+	bl fire__12MonsterSkill
 	adds r4, r0, #0
 	ldr r0, [sp, #8]
 	cmp r0, #0

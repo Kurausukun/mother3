@@ -3,7 +3,7 @@ sub_080B163C:
 	push {lr}
 	ldr r2, _080B164C
 	str r2, [r0, #0x1c]
-	bl sub_08082074
+	bl _._12MonsterSkill
 	pop {r0}
 	bx r0
 	.align 2, 0

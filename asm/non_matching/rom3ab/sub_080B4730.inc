@@ -65,7 +65,7 @@ _080B4796:
 	adds r0, r4, #0
 	bl sub_08072FE0
 	adds r0, r7, #0
-	bl sub_080821A0
+	bl action_150__12MonsterSkill
 _080B47BE:
 	add sp, #0xc
 	pop {r4, r5, r6, r7}

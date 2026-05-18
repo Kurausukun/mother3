@@ -14,7 +14,7 @@ sub_080B2CEC:
 	bl dynaCastMonster
 	bl sub_08072FE0
 	adds r0, r4, #0
-	bl sub_080821A0
+	bl action_150__12MonsterSkill
 	pop {r4}
 	pop {r0}
 	bx r0

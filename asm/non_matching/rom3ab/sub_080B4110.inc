@@ -6,7 +6,7 @@ sub_080B4110:
 	cmp r0, #0
 	bgt _080B4120
 	adds r0, r1, #0
-	bl sub_0808213C
+	bl playSfx__12MonsterSkill
 _080B4120:
 	pop {r0}
 	bx r0

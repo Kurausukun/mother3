@@ -1,7 +1,0 @@
-	.syntax unified
-get__16MonsterSkillRTTI:
-	ldr r0, _08082024
-	bx lr
-	.align 2, 0
-_08082024: .4byte sMonsterSkillRTTI
-	.syntax divided

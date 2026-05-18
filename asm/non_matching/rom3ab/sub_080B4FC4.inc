@@ -2,7 +2,7 @@
 sub_080B4FC4:
 	push {r4, r5, lr}
 	adds r4, r0, #0
-	bl sub_0808234C
+	bl hitChance__C12MonsterSkill
 	adds r5, r0, #0
 	cmp r5, #0x63
 	bgt _080B5042

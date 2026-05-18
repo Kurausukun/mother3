@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0808213C:
+playSfx__12MonsterSkill:
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}

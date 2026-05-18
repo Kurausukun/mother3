@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08082088:
+fire__12MonsterSkill:
 	push {r4, r5, lr}
 	sub sp, #0x1c
 	adds r5, r0, #0

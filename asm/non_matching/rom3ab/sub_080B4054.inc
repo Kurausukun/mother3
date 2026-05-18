@@ -25,7 +25,7 @@ sub_080B4054:
 	bl _call_via_r2
 _080B4086:
 	adds r0, r4, #0
-	bl sub_080821A0
+	bl action_150__12MonsterSkill
 	pop {r4}
 	pop {r0}
 	bx r0

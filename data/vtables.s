@@ -48943,7 +48943,7 @@ vt_09F64750::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B0758
@@ -49021,7 +49021,7 @@ vt_09F64750::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -49051,7 +49051,7 @@ vt_09F64750::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -49063,97 +49063,97 @@ vt_09F64750::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F64A00::
 	.2byte 0
@@ -49203,7 +49203,7 @@ vt_09F64A00::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B0820
@@ -49281,7 +49281,7 @@ vt_09F64A00::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -49311,7 +49311,7 @@ vt_09F64A00::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -49323,97 +49323,97 @@ vt_09F64A00::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F64CB0::
 	.2byte 0
@@ -49463,7 +49463,7 @@ vt_09F64CB0::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B097C
@@ -49541,7 +49541,7 @@ vt_09F64CB0::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -49571,7 +49571,7 @@ vt_09F64CB0::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -49583,97 +49583,97 @@ vt_09F64CB0::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F64F60::
 	.2byte 0
@@ -49723,7 +49723,7 @@ vt_09F64F60::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -49801,7 +49801,7 @@ vt_09F64F60::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -49831,7 +49831,7 @@ vt_09F64F60::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -49843,97 +49843,97 @@ vt_09F64F60::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F65210::
 	.2byte 0
@@ -49983,7 +49983,7 @@ vt_09F65210::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -50061,7 +50061,7 @@ vt_09F65210::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -50091,7 +50091,7 @@ vt_09F65210::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -50103,97 +50103,97 @@ vt_09F65210::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F654C0::
 	.2byte 0
@@ -50243,7 +50243,7 @@ vt_09F654C0::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -50321,7 +50321,7 @@ vt_09F654C0::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -50351,7 +50351,7 @@ vt_09F654C0::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -50363,97 +50363,97 @@ vt_09F654C0::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F65770::
 	.2byte 0
@@ -50503,7 +50503,7 @@ vt_09F65770::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B0DCC
@@ -50581,7 +50581,7 @@ vt_09F65770::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -50611,7 +50611,7 @@ vt_09F65770::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -50623,97 +50623,97 @@ vt_09F65770::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F65A20::
 	.2byte 0
@@ -50763,7 +50763,7 @@ vt_09F65A20::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -50841,7 +50841,7 @@ vt_09F65A20::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -50871,7 +50871,7 @@ vt_09F65A20::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -50883,97 +50883,97 @@ vt_09F65A20::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F65CD0::
 	.2byte 0
@@ -51023,7 +51023,7 @@ vt_09F65CD0::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B0E64
@@ -51101,7 +51101,7 @@ vt_09F65CD0::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -51131,7 +51131,7 @@ vt_09F65CD0::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -51143,97 +51143,97 @@ vt_09F65CD0::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F65F80::
 	.2byte 0
@@ -51283,7 +51283,7 @@ vt_09F65F80::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B0EBC
@@ -51361,7 +51361,7 @@ vt_09F65F80::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -51391,7 +51391,7 @@ vt_09F65F80::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -51403,97 +51403,97 @@ vt_09F65F80::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F66230::
 	.2byte 0
@@ -51543,7 +51543,7 @@ vt_09F66230::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -51621,7 +51621,7 @@ vt_09F66230::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -51651,7 +51651,7 @@ vt_09F66230::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -51663,97 +51663,97 @@ vt_09F66230::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F664E0::
 	.2byte 0
@@ -51803,7 +51803,7 @@ vt_09F664E0::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -51881,7 +51881,7 @@ vt_09F664E0::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -51911,7 +51911,7 @@ vt_09F664E0::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -51923,97 +51923,97 @@ vt_09F664E0::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F66790::
 	.2byte 0
@@ -52063,7 +52063,7 @@ vt_09F66790::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -52141,7 +52141,7 @@ vt_09F66790::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -52171,7 +52171,7 @@ vt_09F66790::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -52183,97 +52183,97 @@ vt_09F66790::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F66A40::
 	.2byte 0
@@ -52323,7 +52323,7 @@ vt_09F66A40::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B13F8
@@ -52401,7 +52401,7 @@ vt_09F66A40::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -52431,7 +52431,7 @@ vt_09F66A40::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -52443,97 +52443,97 @@ vt_09F66A40::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F66CF0::
 	.2byte 0
@@ -52583,7 +52583,7 @@ vt_09F66CF0::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -52661,7 +52661,7 @@ vt_09F66CF0::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -52691,7 +52691,7 @@ vt_09F66CF0::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -52703,97 +52703,97 @@ vt_09F66CF0::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F66FA0::
 	.2byte 0
@@ -52843,7 +52843,7 @@ vt_09F66FA0::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -52921,7 +52921,7 @@ vt_09F66FA0::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -52951,7 +52951,7 @@ vt_09F66FA0::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -52963,97 +52963,97 @@ vt_09F66FA0::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F67250::
 	.2byte 0
@@ -53103,7 +53103,7 @@ vt_09F67250::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -53181,7 +53181,7 @@ vt_09F67250::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -53211,7 +53211,7 @@ vt_09F67250::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -53223,97 +53223,97 @@ vt_09F67250::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F67500::
 	.2byte 0
@@ -53363,7 +53363,7 @@ vt_09F67500::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B1744
@@ -53441,7 +53441,7 @@ vt_09F67500::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -53471,7 +53471,7 @@ vt_09F67500::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -53483,97 +53483,97 @@ vt_09F67500::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F677B0::
 	.2byte 0
@@ -53623,7 +53623,7 @@ vt_09F677B0::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B1868
@@ -53701,7 +53701,7 @@ vt_09F677B0::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -53731,7 +53731,7 @@ vt_09F677B0::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -53743,97 +53743,97 @@ vt_09F677B0::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F67A60::
 	.2byte 0
@@ -53883,7 +53883,7 @@ vt_09F67A60::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -53961,7 +53961,7 @@ vt_09F67A60::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -53991,7 +53991,7 @@ vt_09F67A60::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -54003,97 +54003,97 @@ vt_09F67A60::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F67D10::
 	.2byte 0
@@ -54143,7 +54143,7 @@ vt_09F67D10::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -54221,7 +54221,7 @@ vt_09F67D10::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -54251,7 +54251,7 @@ vt_09F67D10::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -54263,97 +54263,97 @@ vt_09F67D10::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F67FC0::
 	.2byte 0
@@ -54403,7 +54403,7 @@ vt_09F67FC0::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -54481,7 +54481,7 @@ vt_09F67FC0::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -54511,7 +54511,7 @@ vt_09F67FC0::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -54523,97 +54523,97 @@ vt_09F67FC0::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F68270::
 	.2byte 0
@@ -54663,7 +54663,7 @@ vt_09F68270::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -54741,7 +54741,7 @@ vt_09F68270::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -54771,7 +54771,7 @@ vt_09F68270::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -54783,97 +54783,97 @@ vt_09F68270::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F68520::
 	.2byte 0
@@ -54923,7 +54923,7 @@ vt_09F68520::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -55001,7 +55001,7 @@ vt_09F68520::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -55031,7 +55031,7 @@ vt_09F68520::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -55043,97 +55043,97 @@ vt_09F68520::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F687D0::
 	.2byte 0
@@ -55183,7 +55183,7 @@ vt_09F687D0::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B1F34
@@ -55261,7 +55261,7 @@ vt_09F687D0::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -55291,7 +55291,7 @@ vt_09F687D0::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -55303,97 +55303,97 @@ vt_09F687D0::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F68A80::
 	.2byte 0
@@ -55443,7 +55443,7 @@ vt_09F68A80::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B2080
@@ -55521,7 +55521,7 @@ vt_09F68A80::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -55551,7 +55551,7 @@ vt_09F68A80::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -55563,97 +55563,97 @@ vt_09F68A80::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F68D30::
 	.2byte 0
@@ -55703,7 +55703,7 @@ vt_09F68D30::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B21D0
@@ -55781,7 +55781,7 @@ vt_09F68D30::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -55811,7 +55811,7 @@ vt_09F68D30::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -55823,97 +55823,97 @@ vt_09F68D30::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F68FE0::
 	.2byte 0
@@ -55963,7 +55963,7 @@ vt_09F68FE0::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -56041,7 +56041,7 @@ vt_09F68FE0::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -56071,7 +56071,7 @@ vt_09F68FE0::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -56083,97 +56083,97 @@ vt_09F68FE0::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F69290::
 	.2byte 0
@@ -56223,7 +56223,7 @@ vt_09F69290::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -56301,7 +56301,7 @@ vt_09F69290::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -56331,7 +56331,7 @@ vt_09F69290::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -56343,97 +56343,97 @@ vt_09F69290::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B231C
@@ -56486,7 +56486,7 @@ vt_09F69548::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -56564,7 +56564,7 @@ vt_09F69548::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -56594,7 +56594,7 @@ vt_09F69548::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -56606,97 +56606,97 @@ vt_09F69548::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F697F8::
 	.2byte 0
@@ -56746,7 +56746,7 @@ vt_09F697F8::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B25D8
@@ -56824,7 +56824,7 @@ vt_09F697F8::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -56854,7 +56854,7 @@ vt_09F697F8::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -56866,97 +56866,97 @@ vt_09F697F8::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F69AA8::
 	.2byte 0
@@ -57006,7 +57006,7 @@ vt_09F69AA8::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B2764
@@ -57084,7 +57084,7 @@ vt_09F69AA8::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -57114,7 +57114,7 @@ vt_09F69AA8::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -57126,97 +57126,97 @@ vt_09F69AA8::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F69D58::
 	.2byte 0
@@ -57266,7 +57266,7 @@ vt_09F69D58::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -57344,7 +57344,7 @@ vt_09F69D58::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -57374,7 +57374,7 @@ vt_09F69D58::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -57386,97 +57386,97 @@ vt_09F69D58::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F6A008::
 	.2byte 0
@@ -57526,7 +57526,7 @@ vt_09F6A008::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -57604,7 +57604,7 @@ vt_09F6A008::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -57634,7 +57634,7 @@ vt_09F6A008::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -57646,97 +57646,97 @@ vt_09F6A008::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F6A2B8::
 	.2byte 0
@@ -57786,7 +57786,7 @@ vt_09F6A2B8::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B2958
@@ -57864,7 +57864,7 @@ vt_09F6A2B8::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -57894,7 +57894,7 @@ vt_09F6A2B8::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -57906,97 +57906,97 @@ vt_09F6A2B8::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F6A568::
 	.2byte 0
@@ -58046,7 +58046,7 @@ vt_09F6A568::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B2A80
@@ -58124,7 +58124,7 @@ vt_09F6A568::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -58154,7 +58154,7 @@ vt_09F6A568::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -58166,97 +58166,97 @@ vt_09F6A568::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F6A818::
 	.2byte 0
@@ -58306,7 +58306,7 @@ vt_09F6A818::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -58384,7 +58384,7 @@ vt_09F6A818::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -58414,7 +58414,7 @@ vt_09F6A818::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -58426,97 +58426,97 @@ vt_09F6A818::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F6AAC8::
 	.2byte 0
@@ -58566,7 +58566,7 @@ vt_09F6AAC8::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B2CBC
@@ -58644,7 +58644,7 @@ vt_09F6AAC8::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -58674,7 +58674,7 @@ vt_09F6AAC8::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -58686,97 +58686,97 @@ vt_09F6AAC8::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F6AD78::
 	.2byte 0
@@ -58826,7 +58826,7 @@ vt_09F6AD78::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -58934,7 +58934,7 @@ vt_09F6AD78::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -58946,97 +58946,97 @@ vt_09F6AD78::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F6B028::
 	.2byte 0
@@ -59086,7 +59086,7 @@ vt_09F6B028::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -59164,7 +59164,7 @@ vt_09F6B028::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -59194,7 +59194,7 @@ vt_09F6B028::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -59206,97 +59206,97 @@ vt_09F6B028::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F6B2D8::
 	.2byte 0
@@ -59346,7 +59346,7 @@ vt_09F6B2D8::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -59424,7 +59424,7 @@ vt_09F6B2D8::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -59454,7 +59454,7 @@ vt_09F6B2D8::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -59466,97 +59466,97 @@ vt_09F6B2D8::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F6B588::
 	.2byte 0
@@ -59606,7 +59606,7 @@ vt_09F6B588::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -59684,7 +59684,7 @@ vt_09F6B588::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -59714,7 +59714,7 @@ vt_09F6B588::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -59726,97 +59726,97 @@ vt_09F6B588::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B2F94
@@ -59872,7 +59872,7 @@ vt_09F6B848::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -59950,7 +59950,7 @@ vt_09F6B848::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -59980,7 +59980,7 @@ vt_09F6B848::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -59992,97 +59992,97 @@ vt_09F6B848::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F6BAF8::
 	.2byte 0
@@ -60132,7 +60132,7 @@ vt_09F6BAF8::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -60210,7 +60210,7 @@ vt_09F6BAF8::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -60240,7 +60240,7 @@ vt_09F6BAF8::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -60252,97 +60252,97 @@ vt_09F6BAF8::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F6BDA8::
 	.2byte 0
@@ -60392,7 +60392,7 @@ vt_09F6BDA8::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -60470,7 +60470,7 @@ vt_09F6BDA8::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -60500,7 +60500,7 @@ vt_09F6BDA8::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -60512,97 +60512,97 @@ vt_09F6BDA8::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F6C058::
 	.2byte 0
@@ -60652,7 +60652,7 @@ vt_09F6C058::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -60730,7 +60730,7 @@ vt_09F6C058::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -60760,7 +60760,7 @@ vt_09F6C058::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -60772,97 +60772,97 @@ vt_09F6C058::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F6C308::
 	.2byte 0
@@ -60912,7 +60912,7 @@ vt_09F6C308::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -60990,7 +60990,7 @@ vt_09F6C308::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -61020,7 +61020,7 @@ vt_09F6C308::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -61032,97 +61032,97 @@ vt_09F6C308::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F6C5B8::
 	.2byte 0
@@ -61172,7 +61172,7 @@ vt_09F6C5B8::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -61250,7 +61250,7 @@ vt_09F6C5B8::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -61280,7 +61280,7 @@ vt_09F6C5B8::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -61292,97 +61292,97 @@ vt_09F6C5B8::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F6C868::
 	.2byte 0
@@ -61432,7 +61432,7 @@ vt_09F6C868::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -61510,7 +61510,7 @@ vt_09F6C868::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -61540,7 +61540,7 @@ vt_09F6C868::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -61552,97 +61552,97 @@ vt_09F6C868::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F6CB18::
 	.2byte 0
@@ -61692,7 +61692,7 @@ vt_09F6CB18::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -61770,7 +61770,7 @@ vt_09F6CB18::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -61800,7 +61800,7 @@ vt_09F6CB18::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -61812,97 +61812,97 @@ vt_09F6CB18::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F6CDC8::
 	.2byte 0
@@ -61952,7 +61952,7 @@ vt_09F6CDC8::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -62030,7 +62030,7 @@ vt_09F6CDC8::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -62060,7 +62060,7 @@ vt_09F6CDC8::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -62072,97 +62072,97 @@ vt_09F6CDC8::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F6D078::
 	.2byte 0
@@ -62212,7 +62212,7 @@ vt_09F6D078::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -62290,7 +62290,7 @@ vt_09F6D078::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -62320,7 +62320,7 @@ vt_09F6D078::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -62332,97 +62332,97 @@ vt_09F6D078::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F6D328::
 	.2byte 0
@@ -62472,7 +62472,7 @@ vt_09F6D328::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -62550,7 +62550,7 @@ vt_09F6D328::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -62580,7 +62580,7 @@ vt_09F6D328::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -62592,97 +62592,97 @@ vt_09F6D328::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F6D5D8::
 	.2byte 0
@@ -62732,7 +62732,7 @@ vt_09F6D5D8::
 	.4byte sub_080B3A2C
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B39F4
@@ -62840,7 +62840,7 @@ vt_09F6D5D8::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -62852,97 +62852,97 @@ vt_09F6D5D8::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F6D888::
 	.2byte 0
@@ -62992,7 +62992,7 @@ vt_09F6D888::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -63070,7 +63070,7 @@ vt_09F6D888::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -63100,7 +63100,7 @@ vt_09F6D888::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -63112,97 +63112,97 @@ vt_09F6D888::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B3AD8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F6DB38::
 	.2byte 0
@@ -63252,7 +63252,7 @@ vt_09F6DB38::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -63330,7 +63330,7 @@ vt_09F6DB38::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -63360,7 +63360,7 @@ vt_09F6DB38::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -63372,97 +63372,97 @@ vt_09F6DB38::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B3AD8
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F6DDE8::
 	.2byte 0
@@ -63512,7 +63512,7 @@ vt_09F6DDE8::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -63590,7 +63590,7 @@ vt_09F6DDE8::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -63620,7 +63620,7 @@ vt_09F6DDE8::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -63632,97 +63632,97 @@ vt_09F6DDE8::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F6E098::
 	.2byte 0
@@ -63772,7 +63772,7 @@ vt_09F6E098::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -63850,7 +63850,7 @@ vt_09F6E098::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -63880,7 +63880,7 @@ vt_09F6E098::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -63892,97 +63892,97 @@ vt_09F6E098::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F6E348::
 	.2byte 0
@@ -64032,7 +64032,7 @@ vt_09F6E348::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -64110,7 +64110,7 @@ vt_09F6E348::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -64140,7 +64140,7 @@ vt_09F6E348::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -64152,82 +64152,82 @@ vt_09F6E348::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B3D50
@@ -64239,10 +64239,10 @@ vt_09F6E348::
 	.4byte sub_080B3D40
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F6E5F8::
 	.2byte 0
@@ -64292,7 +64292,7 @@ vt_09F6E5F8::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -64370,7 +64370,7 @@ vt_09F6E5F8::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -64400,7 +64400,7 @@ vt_09F6E5F8::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -64412,97 +64412,97 @@ vt_09F6E5F8::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F6E8A8::
 	.2byte 0
@@ -64552,7 +64552,7 @@ vt_09F6E8A8::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -64630,7 +64630,7 @@ vt_09F6E8A8::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -64660,7 +64660,7 @@ vt_09F6E8A8::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -64672,97 +64672,97 @@ vt_09F6E8A8::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F6EB58::
 	.2byte 0
@@ -64932,97 +64932,97 @@ vt_09F6EB58::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F6EE08::
 	.2byte 0
@@ -65072,7 +65072,7 @@ vt_09F6EE08::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -65180,7 +65180,7 @@ vt_09F6EE08::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -65192,97 +65192,97 @@ vt_09F6EE08::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F6F0B8::
 	.2byte 0
@@ -65332,7 +65332,7 @@ vt_09F6F0B8::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -65410,7 +65410,7 @@ vt_09F6F0B8::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -65440,7 +65440,7 @@ vt_09F6F0B8::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -65452,97 +65452,97 @@ vt_09F6F0B8::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F6F368::
 	.2byte 0
@@ -65592,7 +65592,7 @@ vt_09F6F368::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -65670,7 +65670,7 @@ vt_09F6F368::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -65700,7 +65700,7 @@ vt_09F6F368::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -65712,82 +65712,82 @@ vt_09F6F368::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B449C
@@ -65796,13 +65796,13 @@ vt_09F6F368::
 	.4byte sub_080B4498
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F6F618::
 	.2byte 0
@@ -65852,7 +65852,7 @@ vt_09F6F618::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -65930,7 +65930,7 @@ vt_09F6F618::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -65960,7 +65960,7 @@ vt_09F6F618::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -65972,97 +65972,97 @@ vt_09F6F618::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F6F8C8::
 	.2byte 0
@@ -66112,7 +66112,7 @@ vt_09F6F8C8::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -66190,7 +66190,7 @@ vt_09F6F8C8::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -66220,7 +66220,7 @@ vt_09F6F8C8::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -66232,97 +66232,97 @@ vt_09F6F8C8::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F6FB78::
 	.2byte 0
@@ -66372,7 +66372,7 @@ vt_09F6FB78::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -66450,7 +66450,7 @@ vt_09F6FB78::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -66480,7 +66480,7 @@ vt_09F6FB78::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -66492,97 +66492,97 @@ vt_09F6FB78::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F6FE28::
 	.2byte 0
@@ -66632,7 +66632,7 @@ vt_09F6FE28::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -66740,7 +66740,7 @@ vt_09F6FE28::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -66752,97 +66752,97 @@ vt_09F6FE28::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F700D8::
 	.2byte 0
@@ -66892,7 +66892,7 @@ vt_09F700D8::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -67000,7 +67000,7 @@ vt_09F700D8::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -67012,97 +67012,97 @@ vt_09F700D8::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F70388::
 	.2byte 0
@@ -67152,7 +67152,7 @@ vt_09F70388::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -67260,7 +67260,7 @@ vt_09F70388::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -67272,97 +67272,97 @@ vt_09F70388::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F70638::
 	.2byte 0
@@ -67412,7 +67412,7 @@ vt_09F70638::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -67490,7 +67490,7 @@ vt_09F70638::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -67520,7 +67520,7 @@ vt_09F70638::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -67532,97 +67532,97 @@ vt_09F70638::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F708E8::
 	.2byte 0
@@ -67672,7 +67672,7 @@ vt_09F708E8::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -67780,7 +67780,7 @@ vt_09F708E8::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -67792,97 +67792,97 @@ vt_09F708E8::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F70B98::
 	.2byte 0
@@ -67932,7 +67932,7 @@ vt_09F70B98::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -68040,7 +68040,7 @@ vt_09F70B98::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -68052,97 +68052,97 @@ vt_09F70B98::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F70E48::
 	.2byte 0
@@ -68192,7 +68192,7 @@ vt_09F70E48::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -68270,7 +68270,7 @@ vt_09F70E48::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -68300,7 +68300,7 @@ vt_09F70E48::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -68312,97 +68312,97 @@ vt_09F70E48::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F710F8::
 	.2byte 0
@@ -68452,7 +68452,7 @@ vt_09F710F8::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -68530,7 +68530,7 @@ vt_09F710F8::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -68560,7 +68560,7 @@ vt_09F710F8::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -68572,97 +68572,97 @@ vt_09F710F8::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F713A8::
 	.2byte 0
@@ -68712,7 +68712,7 @@ vt_09F713A8::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -68790,7 +68790,7 @@ vt_09F713A8::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -68820,7 +68820,7 @@ vt_09F713A8::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -68832,97 +68832,97 @@ vt_09F713A8::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4B44
@@ -68975,7 +68975,7 @@ vt_09F71660::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -69053,7 +69053,7 @@ vt_09F71660::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -69083,7 +69083,7 @@ vt_09F71660::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -69095,97 +69095,97 @@ vt_09F71660::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F71910::
 	.2byte 0
@@ -69235,7 +69235,7 @@ vt_09F71910::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -69313,7 +69313,7 @@ vt_09F71910::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -69343,7 +69343,7 @@ vt_09F71910::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -69355,97 +69355,97 @@ vt_09F71910::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F71BC0::
 	.2byte 0
@@ -69495,7 +69495,7 @@ vt_09F71BC0::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -69573,7 +69573,7 @@ vt_09F71BC0::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -69603,7 +69603,7 @@ vt_09F71BC0::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -69615,97 +69615,97 @@ vt_09F71BC0::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F71E70::
 	.2byte 0
@@ -69755,7 +69755,7 @@ vt_09F71E70::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -69833,7 +69833,7 @@ vt_09F71E70::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -69863,7 +69863,7 @@ vt_09F71E70::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -69875,97 +69875,97 @@ vt_09F71E70::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F72120::
 	.2byte 0
@@ -70015,7 +70015,7 @@ vt_09F72120::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -70093,7 +70093,7 @@ vt_09F72120::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -70123,7 +70123,7 @@ vt_09F72120::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -70135,97 +70135,97 @@ vt_09F72120::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte sub_080B4FC4
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 vt_09F723D0::
 	.2byte 0
@@ -96996,7 +96996,7 @@ _vt.12MonsterSkill::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082074
+	.4byte _._12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__12MonsterSkill
@@ -97038,7 +97038,7 @@ _vt.12MonsterSkill::
 	.4byte action_70__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808213C
+	.4byte playSfx__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte tellUseMessage__6Action
@@ -97116,7 +97116,7 @@ _vt.12MonsterSkill::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821A0
+	.4byte action_150__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -97146,7 +97146,7 @@ _vt.12MonsterSkill::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082088
+	.4byte fire__12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -97158,97 +97158,97 @@ _vt.12MonsterSkill::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821E4
+	.4byte action_1c0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080821F8
+	.4byte id__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082200
+	.4byte name__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082230
+	.4byte action_1d8__C12MonsterSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082240
+	.4byte action_1e0__12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082244
+	.4byte effect__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808224C
+	.4byte element__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082254
+	.4byte target__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808225C
+	.4byte attackMult__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082264
+	.4byte healLo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808226C
+	.4byte healHi__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082274
+	.4byte ailment__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808227C
+	.4byte ailmentChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082284
+	.4byte hasAction__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082294
+	.4byte priority__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808229C
+	.4byte getUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822C4
+	.4byte getForceUseMessage__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822DC
+	.4byte hasDim__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F0
+	.4byte animNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080822F8
+	.4byte successAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082300
+	.4byte critAnimNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082344
+	.4byte sfxNo__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808234C
+	.4byte hitChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082358
+	.4byte critChance__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082360
+	.4byte redirectable__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082374
+	.4byte userAttackSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080823C0
+	.4byte userCritSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808240C
+	.4byte userMissSfx__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082458
+	.4byte ppCost__C12MonsterSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082460
+	.4byte recolorValue__C12MonsterSkill
 
 _vt.16MonsterSkillRTTI::
 	.2byte 0

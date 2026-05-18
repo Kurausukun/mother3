@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080821A0:
+action_150__12MonsterSkill:
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r1, [r4, #0x1c]

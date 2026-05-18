@@ -2,7 +2,6 @@
 #include "base.h"
 #include "global.h"
 
-extern "C" ASM_FUNC("asm/non_matching/psi/sub_08082484.inc", void sub_08082484());
 extern "C" ASM_FUNC("asm/non_matching/psi/tellStatus.inc", void tellStatus());
 extern "C" ASM_FUNC("asm/non_matching/psi/sub_08082510.inc", void sub_08082510());
 extern "C" ASM_FUNC("asm/non_matching/psi/sub_0808264C.inc", void sub_0808264C());
