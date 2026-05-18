@@ -1666,7 +1666,7 @@ init__7PsiRTTI: @ 0x080C1714
 	push {lr}
 	movs r0, #0x4c
 	bl __builtin_new
-	bl sub_08083098
+	bl __3Psi
 	pop {r1}
 	bx r1
 
