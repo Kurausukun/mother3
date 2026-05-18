@@ -2,6 +2,7 @@
 #define BASE_H
 
 #include "allocator.h"
+#include "global.h"
 #include "singleton.h"
 #include "vector.h"
 
@@ -71,8 +72,9 @@ public:
 };
 
 struct Event : public Base {
-    Event() {}
-    ~Event() {}
+    virtual ~Event() {}
+
+    INLINE_VT_END
 };
 
 struct Color {

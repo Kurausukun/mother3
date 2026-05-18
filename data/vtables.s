@@ -105,7 +105,7 @@ _vt.5Event::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte temp_080977A0
+	.4byte _._5Event
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
