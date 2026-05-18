@@ -24,7 +24,7 @@ extern "C" ASM_FUNC("asm/non_matching/player/sub_0807AAEC.inc", void sub_0807AAE
 extern "C" ASM_FUNC("asm/non_matching/player/sub_0807AC28.inc", void sub_0807AC28());
 extern "C" ASM_FUNC("asm/non_matching/player/sub_0807AC60.inc", void sub_0807AC60());
 extern "C" ASM_FUNC("asm/non_matching/player/sub_0807ACA0.inc", void sub_0807ACA0());
-extern "C" ASM_FUNC("asm/non_matching/player/sub_0807ACF0.inc", void sub_0807ACF0());
+extern "C" ASM_FUNC("asm/non_matching/player/sub_0807ACF0.inc", void sub_0807ACF0()); // _._6Player
 extern "C" ASM_FUNC("asm/non_matching/player/sub_0807ADA4.inc", void sub_0807ADA4());
 extern "C" ASM_FUNC("asm/non_matching/player/sub_0807AEC8.inc", void sub_0807AEC8());
 extern "C" ASM_FUNC("asm/non_matching/player/sub_0807AF20.inc", void sub_0807AF20());
@@ -93,3 +93,18 @@ extern "C" ASM_FUNC("asm/non_matching/player/sub_0807C264.inc", void sub_0807C26
 extern "C" ASM_FUNC("asm/non_matching/player/sub_0807C324.inc", void sub_0807C324());
 extern "C" ASM_FUNC("asm/non_matching/player/sub_0807C378.inc", void sub_0807C378());
 extern "C" ASM_FUNC("asm/non_matching/player/sub_0807C4D4.inc", void _GLOBAL_I_PlayerRTTI());
+extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0807C4F0.inc", void sub_0807C4F0());
+extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0807C518.inc", void sub_0807C518());
+extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0807C540.inc", void sub_0807C540());
+extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0807C560.inc", void sub_0807C560());
+extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0807C588.inc", void sub_0807C588());
+extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0807C5A8.inc", void sub_0807C5A8());
+extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0807C5D0.inc", void sub_0807C5D0());
+extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0807C5F8.inc", void sub_0807C5F8());
+extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0807C610.inc", void sub_0807C610());
+extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0807C614.inc", void sub_0807C614());
+extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0807C634.inc", void sub_0807C634());
+extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0807C654.inc", void sub_0807C654());
+extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0807C674.inc", void sub_0807C674());
+extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0807C694.inc", void sub_0807C694());
+extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0807C6B8.inc", void sub_0807C6B8()); // 6Player
