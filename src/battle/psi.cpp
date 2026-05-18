@@ -81,3 +81,4 @@ extern "C" ASM_FUNC("asm/non_matching/psi/sub_0808304C.inc", void sub_0808304C()
 extern "C" ASM_FUNC("asm/non_matching/psi/sub_0808306C.inc", void sub_0808306C());
 extern "C" ASM_FUNC("asm/non_matching/psi/sub_08083074.inc", void sub_08083074());
 extern "C" ASM_FUNC("asm/non_matching/psi/sub_0808307C.inc", void _GLOBAL_I_PsiRTTI());
+extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08083098.inc", void __3Psi());
