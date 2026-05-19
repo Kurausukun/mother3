@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08082E1C:
+action_1d8__C3Psi:
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}

@@ -105,15 +105,15 @@ _0808BC08:
 	adds r2, r0, #0
 	mov r0, sp
 	mov r1, sb
-	bl sub_08082B78
+	bl __3PsiUsP4Unit
 	mov r0, sp
-	bl sub_0808306C
+	bl type__C3Psi
 	adds r4, r6, #0
 	adds r4, #0x4c
 	strb r0, [r4]
 	mov r0, sp
 	movs r1, #2
-	bl  sub_08082BA8
+	bl  _._3Psi
 	movs r1, #0
 	ldrsb r1, [r4, r1]
 	add r0, sp, #0x4c

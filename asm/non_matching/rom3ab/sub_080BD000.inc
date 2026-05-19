@@ -30,7 +30,7 @@ sub_080BD000:
 	bl sub_08073D98
 _080BD040:
 	adds r0, r5, #0
-	bl sub_08082D70
+	bl action_150__3Psi
 	pop {r4, r5}
 	pop {r0}
 	bx r0

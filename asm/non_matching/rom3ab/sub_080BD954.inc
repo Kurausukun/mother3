@@ -2,7 +2,7 @@
 sub_080BD954:
 	push {r4, r5, lr}
 	adds r4, r0, #0
-	bl sub_08083018
+	bl hitChance__C3Psi
 	adds r5, r0, #0
 	cmp r5, #0x63
 	bgt _080BD9D2

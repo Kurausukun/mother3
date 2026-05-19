@@ -51,9 +51,9 @@ sub_0808C1CC:
 	adds r2, r0, #0
 	mov r0, sp
 	adds r1, r4, #0
-	bl sub_08082B78
+	bl __3PsiUsP4Unit
 	mov r0, sp
-	bl sub_08083074
+	bl ppCost__C3Psi
 	movs r4, #0
 	cmp sb, r0
 	blt _0808C24C
@@ -61,7 +61,7 @@ sub_0808C1CC:
 _0808C24C:
 	mov r0, sp
 	movs r1, #2
-	bl  sub_08082BA8
+	bl  _._3Psi
 	cmp r4, #0
 	bne _0808C266
 	adds r0, r6, #0

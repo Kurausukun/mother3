@@ -39,9 +39,9 @@ _0808BA94:
 	adds r2, r0, #0
 	mov r0, sp
 	adds r1, r4, #0
-	bl sub_08082B78
+	bl __3PsiUsP4Unit
 	mov r0, sp
-	bl sub_0808306C
+	bl type__C3Psi
 	add r2, sp, #0x4c
 	strb r6, [r2]
 	lsls r1, r0, #1
@@ -100,7 +100,7 @@ _0808BB3A:
 	str r0, [r4, #4]
 	mov r0, sp
 	movs r1, #2
-	bl  sub_08082BA8
+	bl  _._3Psi
 	mov r6, r8
 _0808BB54:
 	ldr r1, [r7, #0x1c]

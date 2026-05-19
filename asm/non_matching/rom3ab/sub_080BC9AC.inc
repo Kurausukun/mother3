@@ -3,7 +3,7 @@ sub_080BC9AC:
 	push {lr}
 	ldr r2, _080BC9BC
 	str r2, [r0, #0x1c]
-	bl  sub_08082BA8
+	bl  _._3Psi
 	pop {r0}
 	bx r0
 	.align 2, 0

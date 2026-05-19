@@ -78179,7 +78179,7 @@ vt_09F77440::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082D70
+	.4byte action_150__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -78209,7 +78209,7 @@ vt_09F77440::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082BBC
+	.4byte fire__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -78221,100 +78221,100 @@ vt_09F77440::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DD0
+	.4byte action_1c0__3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DE4
+	.4byte id__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DEC
+	.4byte name__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082E1C
+	.4byte action_1d8__C3Psi
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F08
+	.4byte action_1e0__3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F0C
+	.4byte effect__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F14
+	.4byte element__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F1C
+	.4byte target__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F24
+	.4byte attackMult__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F2C
+	.4byte healLo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F34
+	.4byte healHi__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F3C
+	.4byte ailment__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F44
+	.4byte ailmentChance__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F4C
+	.4byte hasAction__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F60
+	.4byte priority__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F68
+	.4byte getUseMessage__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F90
+	.4byte getForceUseMessage__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FA8
+	.4byte hasDim__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FBC
+	.4byte animNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FC4
+	.4byte successAnimNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FCC
+	.4byte critAnimNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083010
+	.4byte sfxNo__C3Psi
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BD954
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083024
+	.4byte critChance__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808302C
+	.4byte redirectable__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083040
+	.4byte userAttackSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083044
+	.4byte userCritSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083048
+	.4byte userMissSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808304C
+	.4byte isOverworldUsable__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808306C
+	.4byte type__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083074
+	.4byte ppCost__C3Psi
 
 vt_09F776F8::
 	.2byte 0
@@ -78442,7 +78442,7 @@ vt_09F776F8::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082D70
+	.4byte action_150__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -78472,7 +78472,7 @@ vt_09F776F8::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082BBC
+	.4byte fire__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -78484,100 +78484,100 @@ vt_09F776F8::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DD0
+	.4byte action_1c0__3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DE4
+	.4byte id__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DEC
+	.4byte name__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082E1C
+	.4byte action_1d8__C3Psi
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F08
+	.4byte action_1e0__3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F0C
+	.4byte effect__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F14
+	.4byte element__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F1C
+	.4byte target__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F24
+	.4byte attackMult__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F2C
+	.4byte healLo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F34
+	.4byte healHi__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F3C
+	.4byte ailment__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F44
+	.4byte ailmentChance__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F4C
+	.4byte hasAction__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F60
+	.4byte priority__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F68
+	.4byte getUseMessage__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F90
+	.4byte getForceUseMessage__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FA8
+	.4byte hasDim__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FBC
+	.4byte animNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FC4
+	.4byte successAnimNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FCC
+	.4byte critAnimNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083010
+	.4byte sfxNo__C3Psi
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BD954
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083024
+	.4byte critChance__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808302C
+	.4byte redirectable__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083040
+	.4byte userAttackSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083044
+	.4byte userCritSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083048
+	.4byte userMissSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808304C
+	.4byte isOverworldUsable__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808306C
+	.4byte type__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083074
+	.4byte ppCost__C3Psi
 
 vt_09F779B0::
 	.2byte 0
@@ -78705,7 +78705,7 @@ vt_09F779B0::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082D70
+	.4byte action_150__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -78735,7 +78735,7 @@ vt_09F779B0::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082BBC
+	.4byte fire__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -78747,100 +78747,100 @@ vt_09F779B0::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DD0
+	.4byte action_1c0__3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DE4
+	.4byte id__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DEC
+	.4byte name__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082E1C
+	.4byte action_1d8__C3Psi
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F08
+	.4byte action_1e0__3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F0C
+	.4byte effect__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F14
+	.4byte element__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F1C
+	.4byte target__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F24
+	.4byte attackMult__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F2C
+	.4byte healLo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F34
+	.4byte healHi__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F3C
+	.4byte ailment__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F44
+	.4byte ailmentChance__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F4C
+	.4byte hasAction__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F60
+	.4byte priority__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F68
+	.4byte getUseMessage__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F90
+	.4byte getForceUseMessage__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FA8
+	.4byte hasDim__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FBC
+	.4byte animNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FC4
+	.4byte successAnimNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FCC
+	.4byte critAnimNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083010
+	.4byte sfxNo__C3Psi
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BD954
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083024
+	.4byte critChance__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808302C
+	.4byte redirectable__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083040
+	.4byte userAttackSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083044
+	.4byte userCritSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083048
+	.4byte userMissSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808304C
+	.4byte isOverworldUsable__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808306C
+	.4byte type__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083074
+	.4byte ppCost__C3Psi
 
 vt_09F77C68::
 	.2byte 0
@@ -78968,7 +78968,7 @@ vt_09F77C68::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082D70
+	.4byte action_150__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -78998,7 +78998,7 @@ vt_09F77C68::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082BBC
+	.4byte fire__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -79010,100 +79010,100 @@ vt_09F77C68::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DD0
+	.4byte action_1c0__3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DE4
+	.4byte id__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DEC
+	.4byte name__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082E1C
+	.4byte action_1d8__C3Psi
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F08
+	.4byte action_1e0__3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F0C
+	.4byte effect__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F14
+	.4byte element__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F1C
+	.4byte target__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F24
+	.4byte attackMult__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F2C
+	.4byte healLo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F34
+	.4byte healHi__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F3C
+	.4byte ailment__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F44
+	.4byte ailmentChance__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F4C
+	.4byte hasAction__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F60
+	.4byte priority__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F68
+	.4byte getUseMessage__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F90
+	.4byte getForceUseMessage__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FA8
+	.4byte hasDim__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FBC
+	.4byte animNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FC4
+	.4byte successAnimNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FCC
+	.4byte critAnimNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083010
+	.4byte sfxNo__C3Psi
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BD954
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083024
+	.4byte critChance__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808302C
+	.4byte redirectable__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083040
+	.4byte userAttackSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083044
+	.4byte userCritSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083048
+	.4byte userMissSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808304C
+	.4byte isOverworldUsable__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808306C
+	.4byte type__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083074
+	.4byte ppCost__C3Psi
 
 vt_09F77F20::
 	.2byte 0
@@ -79231,7 +79231,7 @@ vt_09F77F20::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082D70
+	.4byte action_150__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -79261,7 +79261,7 @@ vt_09F77F20::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082BBC
+	.4byte fire__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -79273,100 +79273,100 @@ vt_09F77F20::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DD0
+	.4byte action_1c0__3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DE4
+	.4byte id__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DEC
+	.4byte name__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082E1C
+	.4byte action_1d8__C3Psi
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F08
+	.4byte action_1e0__3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F0C
+	.4byte effect__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F14
+	.4byte element__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F1C
+	.4byte target__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F24
+	.4byte attackMult__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F2C
+	.4byte healLo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F34
+	.4byte healHi__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F3C
+	.4byte ailment__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F44
+	.4byte ailmentChance__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F4C
+	.4byte hasAction__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F60
+	.4byte priority__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F68
+	.4byte getUseMessage__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F90
+	.4byte getForceUseMessage__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FA8
+	.4byte hasDim__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FBC
+	.4byte animNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FC4
+	.4byte successAnimNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FCC
+	.4byte critAnimNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083010
+	.4byte sfxNo__C3Psi
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BD954
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083024
+	.4byte critChance__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808302C
+	.4byte redirectable__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083040
+	.4byte userAttackSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083044
+	.4byte userCritSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083048
+	.4byte userMissSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808304C
+	.4byte isOverworldUsable__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808306C
+	.4byte type__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083074
+	.4byte ppCost__C3Psi
 
 vt_09F781D8::
 	.2byte 0
@@ -79494,7 +79494,7 @@ vt_09F781D8::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082D70
+	.4byte action_150__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -79524,7 +79524,7 @@ vt_09F781D8::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082BBC
+	.4byte fire__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -79536,100 +79536,100 @@ vt_09F781D8::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DD0
+	.4byte action_1c0__3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DE4
+	.4byte id__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DEC
+	.4byte name__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082E1C
+	.4byte action_1d8__C3Psi
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F08
+	.4byte action_1e0__3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F0C
+	.4byte effect__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F14
+	.4byte element__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F1C
+	.4byte target__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F24
+	.4byte attackMult__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F2C
+	.4byte healLo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F34
+	.4byte healHi__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F3C
+	.4byte ailment__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F44
+	.4byte ailmentChance__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F4C
+	.4byte hasAction__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F60
+	.4byte priority__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F68
+	.4byte getUseMessage__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F90
+	.4byte getForceUseMessage__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FA8
+	.4byte hasDim__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FBC
+	.4byte animNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FC4
+	.4byte successAnimNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FCC
+	.4byte critAnimNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083010
+	.4byte sfxNo__C3Psi
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BD954
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083024
+	.4byte critChance__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808302C
+	.4byte redirectable__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083040
+	.4byte userAttackSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083044
+	.4byte userCritSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083048
+	.4byte userMissSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808304C
+	.4byte isOverworldUsable__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808306C
+	.4byte type__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083074
+	.4byte ppCost__C3Psi
 
 vt_09F78490::
 	.2byte 0
@@ -79757,7 +79757,7 @@ vt_09F78490::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082D70
+	.4byte action_150__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -79787,7 +79787,7 @@ vt_09F78490::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082BBC
+	.4byte fire__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -79799,100 +79799,100 @@ vt_09F78490::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DD0
+	.4byte action_1c0__3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DE4
+	.4byte id__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DEC
+	.4byte name__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082E1C
+	.4byte action_1d8__C3Psi
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F08
+	.4byte action_1e0__3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F0C
+	.4byte effect__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F14
+	.4byte element__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F1C
+	.4byte target__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F24
+	.4byte attackMult__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F2C
+	.4byte healLo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F34
+	.4byte healHi__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F3C
+	.4byte ailment__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F44
+	.4byte ailmentChance__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F4C
+	.4byte hasAction__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F60
+	.4byte priority__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F68
+	.4byte getUseMessage__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F90
+	.4byte getForceUseMessage__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FA8
+	.4byte hasDim__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FBC
+	.4byte animNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FC4
+	.4byte successAnimNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FCC
+	.4byte critAnimNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083010
+	.4byte sfxNo__C3Psi
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BD954
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083024
+	.4byte critChance__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808302C
+	.4byte redirectable__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083040
+	.4byte userAttackSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083044
+	.4byte userCritSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083048
+	.4byte userMissSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808304C
+	.4byte isOverworldUsable__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808306C
+	.4byte type__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083074
+	.4byte ppCost__C3Psi
 
 vt_09F78748::
 	.2byte 0
@@ -80020,7 +80020,7 @@ vt_09F78748::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082D70
+	.4byte action_150__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -80050,7 +80050,7 @@ vt_09F78748::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082BBC
+	.4byte fire__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -80062,100 +80062,100 @@ vt_09F78748::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DD0
+	.4byte action_1c0__3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DE4
+	.4byte id__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DEC
+	.4byte name__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082E1C
+	.4byte action_1d8__C3Psi
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F08
+	.4byte action_1e0__3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F0C
+	.4byte effect__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F14
+	.4byte element__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F1C
+	.4byte target__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F24
+	.4byte attackMult__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F2C
+	.4byte healLo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F34
+	.4byte healHi__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F3C
+	.4byte ailment__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F44
+	.4byte ailmentChance__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F4C
+	.4byte hasAction__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F60
+	.4byte priority__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F68
+	.4byte getUseMessage__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F90
+	.4byte getForceUseMessage__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FA8
+	.4byte hasDim__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FBC
+	.4byte animNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FC4
+	.4byte successAnimNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FCC
+	.4byte critAnimNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083010
+	.4byte sfxNo__C3Psi
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BD954
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083024
+	.4byte critChance__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808302C
+	.4byte redirectable__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083040
+	.4byte userAttackSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083044
+	.4byte userCritSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083048
+	.4byte userMissSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808304C
+	.4byte isOverworldUsable__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808306C
+	.4byte type__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083074
+	.4byte ppCost__C3Psi
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BCA88
@@ -80286,7 +80286,7 @@ vt_09F78A08::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082D70
+	.4byte action_150__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -80316,7 +80316,7 @@ vt_09F78A08::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082BBC
+	.4byte fire__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -80328,100 +80328,100 @@ vt_09F78A08::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DD0
+	.4byte action_1c0__3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DE4
+	.4byte id__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DEC
+	.4byte name__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082E1C
+	.4byte action_1d8__C3Psi
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F08
+	.4byte action_1e0__3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F0C
+	.4byte effect__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F14
+	.4byte element__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F1C
+	.4byte target__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F24
+	.4byte attackMult__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F2C
+	.4byte healLo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F34
+	.4byte healHi__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F3C
+	.4byte ailment__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F44
+	.4byte ailmentChance__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F4C
+	.4byte hasAction__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F60
+	.4byte priority__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F68
+	.4byte getUseMessage__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F90
+	.4byte getForceUseMessage__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FA8
+	.4byte hasDim__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FBC
+	.4byte animNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FC4
+	.4byte successAnimNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FCC
+	.4byte critAnimNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083010
+	.4byte sfxNo__C3Psi
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BD954
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083024
+	.4byte critChance__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808302C
+	.4byte redirectable__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083040
+	.4byte userAttackSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083044
+	.4byte userCritSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083048
+	.4byte userMissSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808304C
+	.4byte isOverworldUsable__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808306C
+	.4byte type__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083074
+	.4byte ppCost__C3Psi
 
 vt_09F78CC0::
 	.2byte 0
@@ -80579,7 +80579,7 @@ vt_09F78CC0::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082BBC
+	.4byte fire__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -80591,100 +80591,100 @@ vt_09F78CC0::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DD0
+	.4byte action_1c0__3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DE4
+	.4byte id__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DEC
+	.4byte name__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082E1C
+	.4byte action_1d8__C3Psi
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F08
+	.4byte action_1e0__3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F0C
+	.4byte effect__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F14
+	.4byte element__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F1C
+	.4byte target__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F24
+	.4byte attackMult__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F2C
+	.4byte healLo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F34
+	.4byte healHi__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F3C
+	.4byte ailment__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F44
+	.4byte ailmentChance__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F4C
+	.4byte hasAction__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F60
+	.4byte priority__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F68
+	.4byte getUseMessage__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F90
+	.4byte getForceUseMessage__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FA8
+	.4byte hasDim__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FBC
+	.4byte animNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FC4
+	.4byte successAnimNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FCC
+	.4byte critAnimNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083010
+	.4byte sfxNo__C3Psi
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BD954
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083024
+	.4byte critChance__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808302C
+	.4byte redirectable__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083040
+	.4byte userAttackSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083044
+	.4byte userCritSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083048
+	.4byte userMissSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808304C
+	.4byte isOverworldUsable__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808306C
+	.4byte type__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083074
+	.4byte ppCost__C3Psi
 
 vt_09F78F78::
 	.2byte 0
@@ -80812,7 +80812,7 @@ vt_09F78F78::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082D70
+	.4byte action_150__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -80842,7 +80842,7 @@ vt_09F78F78::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082BBC
+	.4byte fire__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -80854,100 +80854,100 @@ vt_09F78F78::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DD0
+	.4byte action_1c0__3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DE4
+	.4byte id__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DEC
+	.4byte name__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082E1C
+	.4byte action_1d8__C3Psi
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F08
+	.4byte action_1e0__3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F0C
+	.4byte effect__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F14
+	.4byte element__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F1C
+	.4byte target__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F24
+	.4byte attackMult__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F2C
+	.4byte healLo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F34
+	.4byte healHi__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F3C
+	.4byte ailment__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F44
+	.4byte ailmentChance__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F4C
+	.4byte hasAction__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F60
+	.4byte priority__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F68
+	.4byte getUseMessage__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F90
+	.4byte getForceUseMessage__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FA8
+	.4byte hasDim__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FBC
+	.4byte animNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FC4
+	.4byte successAnimNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FCC
+	.4byte critAnimNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083010
+	.4byte sfxNo__C3Psi
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BD954
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083024
+	.4byte critChance__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808302C
+	.4byte redirectable__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083040
+	.4byte userAttackSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083044
+	.4byte userCritSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083048
+	.4byte userMissSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808304C
+	.4byte isOverworldUsable__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808306C
+	.4byte type__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083074
+	.4byte ppCost__C3Psi
 
 vt_09F79230::
 	.2byte 0
@@ -81075,7 +81075,7 @@ vt_09F79230::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082D70
+	.4byte action_150__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -81105,7 +81105,7 @@ vt_09F79230::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082BBC
+	.4byte fire__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -81117,100 +81117,100 @@ vt_09F79230::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DD0
+	.4byte action_1c0__3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DE4
+	.4byte id__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DEC
+	.4byte name__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082E1C
+	.4byte action_1d8__C3Psi
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F08
+	.4byte action_1e0__3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F0C
+	.4byte effect__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F14
+	.4byte element__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F1C
+	.4byte target__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F24
+	.4byte attackMult__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F2C
+	.4byte healLo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F34
+	.4byte healHi__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F3C
+	.4byte ailment__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F44
+	.4byte ailmentChance__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F4C
+	.4byte hasAction__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F60
+	.4byte priority__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F68
+	.4byte getUseMessage__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F90
+	.4byte getForceUseMessage__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FA8
+	.4byte hasDim__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FBC
+	.4byte animNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FC4
+	.4byte successAnimNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FCC
+	.4byte critAnimNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083010
+	.4byte sfxNo__C3Psi
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BD954
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083024
+	.4byte critChance__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808302C
+	.4byte redirectable__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083040
+	.4byte userAttackSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083044
+	.4byte userCritSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083048
+	.4byte userMissSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808304C
+	.4byte isOverworldUsable__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808306C
+	.4byte type__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083074
+	.4byte ppCost__C3Psi
 
 vt_09F794E8::
 	.2byte 0
@@ -81338,7 +81338,7 @@ vt_09F794E8::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082D70
+	.4byte action_150__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -81368,7 +81368,7 @@ vt_09F794E8::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082BBC
+	.4byte fire__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -81380,100 +81380,100 @@ vt_09F794E8::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DD0
+	.4byte action_1c0__3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DE4
+	.4byte id__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DEC
+	.4byte name__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082E1C
+	.4byte action_1d8__C3Psi
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F08
+	.4byte action_1e0__3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F0C
+	.4byte effect__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F14
+	.4byte element__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F1C
+	.4byte target__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F24
+	.4byte attackMult__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F2C
+	.4byte healLo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F34
+	.4byte healHi__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F3C
+	.4byte ailment__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F44
+	.4byte ailmentChance__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F4C
+	.4byte hasAction__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F60
+	.4byte priority__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F68
+	.4byte getUseMessage__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F90
+	.4byte getForceUseMessage__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FA8
+	.4byte hasDim__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FBC
+	.4byte animNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FC4
+	.4byte successAnimNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FCC
+	.4byte critAnimNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083010
+	.4byte sfxNo__C3Psi
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BD954
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083024
+	.4byte critChance__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808302C
+	.4byte redirectable__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083040
+	.4byte userAttackSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083044
+	.4byte userCritSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083048
+	.4byte userMissSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808304C
+	.4byte isOverworldUsable__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808306C
+	.4byte type__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083074
+	.4byte ppCost__C3Psi
 
 __vt_5Goods::
 	.2byte 0
@@ -81601,7 +81601,7 @@ __vt_5Goods::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082D70
+	.4byte action_150__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -81631,7 +81631,7 @@ __vt_5Goods::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082BBC
+	.4byte fire__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -81643,100 +81643,100 @@ __vt_5Goods::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DD0
+	.4byte action_1c0__3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DE4
+	.4byte id__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DEC
+	.4byte name__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082E1C
+	.4byte action_1d8__C3Psi
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F08
+	.4byte action_1e0__3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F0C
+	.4byte effect__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F14
+	.4byte element__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F1C
+	.4byte target__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F24
+	.4byte attackMult__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F2C
+	.4byte healLo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F34
+	.4byte healHi__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F3C
+	.4byte ailment__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F44
+	.4byte ailmentChance__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F4C
+	.4byte hasAction__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F60
+	.4byte priority__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F68
+	.4byte getUseMessage__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F90
+	.4byte getForceUseMessage__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FA8
+	.4byte hasDim__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FBC
+	.4byte animNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FC4
+	.4byte successAnimNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FCC
+	.4byte critAnimNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083010
+	.4byte sfxNo__C3Psi
 	.2byte 0
 	.2byte 0
 	.4byte sub_080BD954
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083024
+	.4byte critChance__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808302C
+	.4byte redirectable__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083040
+	.4byte userAttackSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083044
+	.4byte userCritSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083048
+	.4byte userMissSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808304C
+	.4byte isOverworldUsable__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808306C
+	.4byte type__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083074
+	.4byte ppCost__C3Psi
 
 _vt.5Goods::
 	.2byte 0
@@ -97392,7 +97392,7 @@ _vt.3Psi::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082BA8
+	.4byte _._3Psi
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__3Psi
@@ -97512,7 +97512,7 @@ _vt.3Psi::
 	.4byte action_148__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082D70
+	.4byte action_150__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte ROMStr__C6ActionUs
@@ -97542,7 +97542,7 @@ _vt.3Psi::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082BBC
+	.4byte fire__3Psi
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -97554,100 +97554,100 @@ _vt.3Psi::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DD0
+	.4byte action_1c0__3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DE4
+	.4byte id__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082DEC
+	.4byte name__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082E1C
+	.4byte action_1d8__C3Psi
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F08
+	.4byte action_1e0__3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F0C
+	.4byte effect__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F14
+	.4byte element__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F1C
+	.4byte target__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F24
+	.4byte attackMult__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F2C
+	.4byte healLo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F34
+	.4byte healHi__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F3C
+	.4byte ailment__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F44
+	.4byte ailmentChance__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F4C
+	.4byte hasAction__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F60
+	.4byte priority__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F68
+	.4byte getUseMessage__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082F90
+	.4byte getForceUseMessage__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FA8
+	.4byte hasDim__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FBC
+	.4byte animNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FC4
+	.4byte successAnimNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082FCC
+	.4byte critAnimNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083010
+	.4byte sfxNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083018
+	.4byte hitChance__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083024
+	.4byte critChance__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808302C
+	.4byte redirectable__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083040
+	.4byte userAttackSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083044
+	.4byte userCritSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083048
+	.4byte userMissSfx__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808304C
+	.4byte isOverworldUsable__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808306C
+	.4byte type__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_08083074
+	.4byte ppCost__C3Psi
 
 _vt.7PsiRTTI::
 	.2byte 0
