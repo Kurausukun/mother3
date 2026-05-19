@@ -1,8 +1,6 @@
 // Auto-generated source file
 #include "battle/monsterSkill.h"
 
-Msg sub_08073444(u16);
-
 extern "C" ASM_FUNC("asm/non_matching/monsterskill/sub_08081994.inc", void sub_08081994());
 extern "C" ASM_FUNC("asm/non_matching/monsterskill/sub_080819BC.inc", void sub_080819BC());
 extern "C" ASM_FUNC("asm/non_matching/monsterskill/sub_080819E4.inc", void sub_080819E4());

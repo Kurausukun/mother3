@@ -65,10 +65,6 @@ public:
     u16 _4c;
 };
 
-Msg sub_08073444(u16 idx);
-
-//extern "C" void* getGoodsRTTI();
-
 RTTI_DECL(Goods);
 
 #endif  // BATTLE_GOODS_H

@@ -3,7 +3,6 @@
 
 extern "C" void* get_misctext_msg(u32, u32);
 extern "C" u16 get_misctext_len(u32);
-Msg sub_08073444(u16);
 
 extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0807C718.inc", void sub_0807C718());
 extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0807C8F8.inc", void sub_0807C8F8());
