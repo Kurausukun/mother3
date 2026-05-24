@@ -2,21 +2,8 @@
 #define BATTLE_CLOCK_H
 
 #include "base.h"
+#include "global.h"
 #include "singleton.h"
-
-class Clock : public Base {
-public:
-    Clock();
-    Clock(u32 time);
-    virtual ~Clock();
-
-    virtual void* getRTTI();
-
-    void sleep(s32 duration);
-    u32 getTime();
-
-    u32 mTime;
-};
 
 class PreSysClock : public Event {
 public:
@@ -26,11 +13,12 @@ public:
 
     virtual void* getRTTI();
 
-    u32 getTime();
+    u32 getTime() { return mTime; }
 
 private:
     u32 mTime;
 };
+RTTI_DECL_INLINE(PreSysClock);
 
 class SysClock : public Event {
 public:
@@ -40,11 +28,12 @@ public:
 
     virtual void* getRTTI();
 
-    u32 getTime();
+    u32 getTime() { return mTime; }
 
 private:
     u32 mTime;
 };
+RTTI_DECL_INLINE(SysClock);
 
 class PreAppClock : public Event {
 public:
@@ -54,11 +43,12 @@ public:
 
     virtual void* getRTTI();
 
-    u32 getTime();
+    u32 getTime() { return mTime; }
 
 private:
     u32 mTime;
 };
+RTTI_DECL_INLINE(PreAppClock);
 
 class AppClock : public Event {
 public:
@@ -68,11 +58,12 @@ public:
 
     virtual void* getRTTI();
 
-    u32 getTime();
+    u32 getTime() { return mTime; }
 
 private:
     u32 mTime;
 };
+RTTI_DECL_INLINE(AppClock);
 
 class PostAppClock : public Event {
 public:
@@ -82,11 +73,12 @@ public:
 
     virtual void* getRTTI();
 
-    u32 getTime();
+    u32 getTime() { return mTime; }
 
 private:
     u32 mTime;
 };
+RTTI_DECL_INLINE(PostAppClock);
 
 class PostSysClock : public Event {
 public:
@@ -96,18 +88,25 @@ public:
 
     virtual void* getRTTI();
 
-    u32 getTime();
+    u32 getTime() { return mTime; }
 
 private:
     u32 mTime;
 };
+RTTI_DECL_INLINE(PostSysClock);
 
-RTTI_DECL(PreSysClock)
-RTTI_DECL(SysClock)
-RTTI_DECL(PreAppClock)
-RTTI_DECL(AppClock)
-RTTI_DECL(PostAppClock)
-RTTI_DECL(PostSysClock)
-MANAGER_DECL(Clock)
+class Clock : public Base {
+public:
+    Clock();
+    virtual ~Clock();
+
+    virtual void* getRTTI();
+
+    void sleep(s32 duration);
+    u32 getTime();
+
+    u32 mTime;
+};
+MANAGER_DECL_INLINE(Clock);
 
 #endif  // BATTLE_CLOCK_H
