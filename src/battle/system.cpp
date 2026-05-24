@@ -8,9 +8,9 @@
 #include "battle/sndSystem.h"
 #include "structs.h"
 
-extern "C" void sub_0806E4C4();
-extern "C" void sub_0806B07C();
-extern "C" void sub_0806A9B0();
+extern "C" void destroy__16FntSystemManager();
+extern "C" void destroy__15BGEngineManager();
+extern "C" void destroy__14GEngineManager();
 extern "C" void destroy__10IrcManager();
 extern "C" u16 get_progression_flag(u32);
 extern "C" void incrementSavePlaytime();
@@ -18,8 +18,8 @@ extern "C" void DoReset();
 extern "C" void randomMT();
 extern "C" void seedMT(s32);
 extern "C" void sub_0805D210();
-extern "C" void sub_0806A974();
-extern "C" void sub_0806B040();
+extern "C" void makeInstance__14GEngineManager();
+extern "C" void makeInstance__15BGEngineManager();
 extern "C" void sub_0806CBE0();
 extern "C" void makeInstance__16FntSystemManager();
 
@@ -104,8 +104,8 @@ System::System() {
     SndSystemManager::makeInstance();
     SndSystemManager::get()->setUnk20(0x82);
 
-    sub_0806A974();
-    sub_0806B040();
+    makeInstance__14GEngineManager();
+    makeInstance__15BGEngineManager();
     ObjEngineManager::makeInstance();
     KeyPadManager::makeInstance();
     makeInstance__16FntSystemManager();
@@ -118,11 +118,11 @@ System::System() {
 System::~System() {
     delete mHandle;
 
-    sub_0806E4C4();
+    destroy__16FntSystemManager();
     KeyPadManager::destroy();
     ObjEngineManager::destroy();
-    sub_0806B07C();
-    sub_0806A9B0();
+    destroy__15BGEngineManager();
+    destroy__14GEngineManager();
     SndSystemManager::destroy();
     ClockManager::destroy();
     destroy__10IrcManager();

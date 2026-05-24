@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0806C428:
+makeInstance__17ObjChrPoolManager:
 	push {r4, lr}
 	ldr r1, _0806C450
 	ldr r0, [r1]

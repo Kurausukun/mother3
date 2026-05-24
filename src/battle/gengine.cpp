@@ -2,9 +2,9 @@
 #include "global.h"
 
 extern "C" ASM_FUNC("asm/non_matching/gengine/sub_0806A96C.inc", void sub_0806A96C());
-extern "C" ASM_FUNC("asm/non_matching/gengine/sub_0806A974.inc", void sub_0806A974());
+extern "C" ASM_FUNC("asm/non_matching/gengine/sub_0806A974.inc", void makeInstance__14GEngineManager());
 extern "C" ASM_FUNC("asm/non_matching/gengine/sub_0806A9A4.inc", void sub_0806A9A4());
-extern "C" ASM_FUNC("asm/non_matching/gengine/sub_0806A9B0.inc", void sub_0806A9B0());
+extern "C" ASM_FUNC("asm/non_matching/gengine/sub_0806A9B0.inc", void destroy__14GEngineManager());
 extern "C" ASM_FUNC("asm/non_matching/gengine/sub_0806A9EC.inc", void sub_0806A9EC());
 extern "C" ASM_FUNC("asm/non_matching/gengine/sub_0806A9F8.inc", void sub_0806A9F8());
 extern "C" ASM_FUNC("asm/non_matching/gengine/sub_0806AB84.inc", void sub_0806AB84());

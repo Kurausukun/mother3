@@ -5,7 +5,7 @@ sub_0806FC28:
 	adds r5, r1, #0
 	ldr r0, _0806FC50
 	str r0, [r4, #0x1c]
-	bl sub_0806B07C
+	bl destroy__15BGEngineManager
 	adds r0, r4, #0
 	adds r0, #0x20
 	movs r1, #2

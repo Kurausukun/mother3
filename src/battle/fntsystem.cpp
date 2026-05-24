@@ -286,7 +286,7 @@ extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E454.inc", void sub_0806
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E480.inc", void sub_0806E480());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E488.inc", void makeInstance__16FntSystemManager());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E4B8.inc", void sub_0806E4B8());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E4C4.inc", void sub_0806E4C4());
+extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E4C4.inc", void destroy__16FntSystemManager());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E500.inc", void getRTTI_9FntSystem());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E50C.inc", void __9FntSystem());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E618.inc", void sub_0806E618());

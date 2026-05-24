@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0806C464:
+destroy__17ObjChrPoolManager:
 	push {r4, r5, lr}
 	ldr r1, _0806C498
 	ldr r0, [r1]

@@ -12,7 +12,7 @@ __9EfcSystem:
 	strh r0, [r4, #0x28]
 	strh r0, [r4, #0x30]
 	strh r0, [r4, #0x38]
-	bl sub_0806B040
+	bl makeInstance__15BGEngineManager
 	adds r0, r4, #0
 	pop {r4}
 	pop {r1}

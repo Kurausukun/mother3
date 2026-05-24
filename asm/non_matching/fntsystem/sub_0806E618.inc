@@ -7,7 +7,7 @@ sub_0806E618:
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
 	bl sub_0806E640
-	bl sub_0806B07C
+	bl destroy__15BGEngineManager
 	adds r0, r4, #0
 	adds r1, r5, #0
 	bl _._4Base

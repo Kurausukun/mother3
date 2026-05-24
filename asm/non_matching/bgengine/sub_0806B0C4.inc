@@ -147,7 +147,7 @@ _0806B1E0:
 	str r0, [sp, #0x80]
 	cmp r0, #0
 	bge _0806B14C
-	bl sub_0806A974
+	bl makeInstance__14GEngineManager
 	adds r4, r0, #0
 	bl sub_0806AFF0
 	lsls r0, r0, #0x10

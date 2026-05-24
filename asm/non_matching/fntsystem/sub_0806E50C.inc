@@ -58,7 +58,7 @@ _0806E576:
 	subs r6, #1
 	cmp r6, #0
 	bge _0806E550
-	bl sub_0806B040
+	bl makeInstance__15BGEngineManager
 	adds r4, r0, #0
 	movs r1, #0x80
 	lsls r1, r1, #1

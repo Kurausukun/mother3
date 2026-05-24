@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0806A974:
+makeInstance__14GEngineManager:
 	push {r4, lr}
 	ldr r1, _0806A99C
 	ldr r0, [r1]

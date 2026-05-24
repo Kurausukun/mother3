@@ -2,9 +2,9 @@
 #include "global.h"
 
 extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806B038.inc", void sub_0806B038());
-extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806B040.inc", void sub_0806B040());
+extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806B040.inc", void makeInstance__15BGEngineManager());
 extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806B070.inc", void sub_0806B070());
-extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806B07C.inc", void sub_0806B07C());
+extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806B07C.inc", void destroy__15BGEngineManager());
 extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806B0B8.inc", void sub_0806B0B8());
 extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806B0C4.inc", void __8BGEngine());
 extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806B258.inc", void sub_0806B258());

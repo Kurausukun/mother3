@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0806B040:
+makeInstance__15BGEngineManager:
 	push {r4, lr}
 	ldr r1, _0806B068
 	ldr r0, [r1]

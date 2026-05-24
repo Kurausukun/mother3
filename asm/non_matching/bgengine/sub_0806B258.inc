@@ -14,7 +14,7 @@ sub_0806B258:
 	ands r1, r0
 	adds r0, r4, #0
 	bl sub_0806AF2C
-	bl sub_0806A9B0
+	bl destroy__14GEngineManager
 	adds r7, r6, #0
 	adds r7, #0x2c
 	adds r0, r6, #0

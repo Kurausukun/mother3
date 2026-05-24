@@ -6,17 +6,17 @@ extern ClockData callback_sub_0806C1D8;
 extern ClockData callback_sub_0806C3DC;
 
 // genengine
-extern "C" void* sub_0806A974();
+extern "C" void* makeInstance__14GEngineManager();
 extern "C" void sub_0806AFA4(void*, int);
 extern "C" void sub_0806AF58(void*, int);
 
 // objchrpool
-extern "C" void sub_0806C428();
+extern "C" void makeInstance__17ObjChrPoolManager();
 extern "C" void makeInstance__17ObjPltPoolManager();
 extern "C" void destroy__17ObjPltPoolManager();
-extern "C" void sub_0806C464();
+extern "C" void destroy__17ObjChrPoolManager();
 extern "C" void* sub_0806A9A4();
-extern "C" void sub_0806A9B0();
+extern "C" void destroy__14GEngineManager();
 extern "C" void sub_0806AFA4(void*, int);
 
 MANAGER_IMPL(ObjEngine);
@@ -39,14 +39,14 @@ ObjEngine::ObjEngine() {
     _944 = 0;
     _b4c = 0;
 
-    void* temp_r0_3 = sub_0806A974();
+    void* temp_r0_3 = makeInstance__14GEngineManager();
     sub_0806AFA4(temp_r0_3, 0xEF9F);
     sub_0806AF58(temp_r0_3, 0x1040);
 
     listen(ClockManager::get(), SysClock(), callback_sub_0806C1D8);
     listen(ClockManager::get(), PostSysClock(), callback_sub_0806C3DC);
 
-    sub_0806C428();
+    makeInstance__17ObjChrPoolManager();
     makeInstance__17ObjPltPoolManager();
 }
 #else
@@ -55,9 +55,9 @@ extern "C" ASM_FUNC("asm/non_matching/objengine/sub_0806BE68.inc", void __9ObjEn
 
 ObjEngine::~ObjEngine() {
     destroy__17ObjPltPoolManager();
-    sub_0806C464();
+    destroy__17ObjChrPoolManager();
     sub_0806AFA4(sub_0806A9A4(), 0xEF9F);
-    sub_0806A9B0();
+    destroy__14GEngineManager();
 
     UnkBar* temp = &this->_938;
     delete[] temp->_940;

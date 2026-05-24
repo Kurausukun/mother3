@@ -43,7 +43,7 @@ _0806BE86:
 	ldr r2, _0806BF4C
 	adds r0, r7, r2
 	str r1, [r0]
-	bl sub_0806A974
+	bl makeInstance__14GEngineManager
 	adds r4, r0, #0
 	ldr r1, _0806BF50
 	bl sub_0806AFA4
@@ -88,7 +88,7 @@ _0806BE86:
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl sub_0806C428
+	bl makeInstance__17ObjChrPoolManager
 	bl makeInstance__17ObjPltPoolManager
 	adds r0, r7, #0
 	add sp, #0x28
