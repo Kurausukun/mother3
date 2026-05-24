@@ -64,7 +64,7 @@ _08084F48:
 	bne _08084F40
 	ldr r3, _080850C4
 	adds r0, r7, r3
-	bl sub_08071F8C
+	bl __10KeyFocuser
 	movs r1, #0
 	add r0, sp, #0x34
 	strb r1, [r0]

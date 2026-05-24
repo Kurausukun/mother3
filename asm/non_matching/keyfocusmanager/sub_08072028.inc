@@ -1,8 +1,0 @@
-	.syntax unified
-get__22KeyFocusManagerManager:
-	ldr r0, _08072030
-	ldr r0, [r0]
-	bx lr
-	.align 2, 0
-_08072030: .4byte _22KeyFocusManagerManager.mSingleton
-	.syntax divided

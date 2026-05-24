@@ -86,7 +86,7 @@ _08083DAC:
 	movs r0, #0xfc
 	lsls r0, r0, #4
 	add r0, sl
-	bl sub_08071F8C
+	bl __10KeyFocuser
 	movs r4, #0
 	add r0, sp, #0x38
 	strb r4, [r0]

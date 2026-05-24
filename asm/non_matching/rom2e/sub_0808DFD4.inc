@@ -41,7 +41,7 @@ sub_0808DFD4:
 	mov r0, r8
 	adds r0, #0xfc
 	str r0, [sp, #0x4c]
-	bl sub_08071F8C
+	bl __10KeyFocuser
 	mov r1, r8
 	str r4, [r1, #0x24]
 	mov r0, r8

@@ -1,5 +1,7 @@
 #include "battle/clock.h"
 #include "battle/irc.h"
+#include "global.h"
+#include "battle/keypad.h"
 
 #ifdef NONMATCHING
 

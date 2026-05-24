@@ -3,6 +3,7 @@
 
 #include "base.h"
 #include "singleton.h"
+#include "battle/keyFocusManager.h"
 
 class Unit;
 class Player;
@@ -241,6 +242,7 @@ public:
     MonsterInfo* mMonsterInfo;
     Class2* _58;
     Sequencer* _5c;
+    KeyFocuser keyFocuser;
 };
 
 class RoundBegin : public Event {

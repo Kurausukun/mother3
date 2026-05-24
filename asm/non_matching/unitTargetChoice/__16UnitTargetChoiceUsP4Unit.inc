@@ -40,7 +40,7 @@ __16UnitTargetChoiceUsP4Unit:
 	adds r2, r2, r0
 	mov r8, r2
 	mov r0, r8
-	bl sub_08071F8C
+	bl __10KeyFocuser
 	ldr r0, [sp, #0x48]
 	adds r0, #0x5c
 	mov r1, sb

@@ -167,7 +167,7 @@ _080674D6:
 	movs r1, #0xa9
 	lsls r1, r1, #4
 	adds r0, r7, r1
-	bl sub_08071F8C
+	bl __10KeyFocuser
 	ldr r2, _080675F8
 	adds r1, r7, r2
 	movs r0, #5

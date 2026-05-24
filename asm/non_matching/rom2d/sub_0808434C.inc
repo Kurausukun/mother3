@@ -106,7 +106,7 @@ _080843D8:
 	bl sub_0808B0D8
 	ldr r0, _080846CC
 	add r0, sb
-	bl sub_08071F8C
+	bl __10KeyFocuser
 	movs r4, #0
 	add r0, sp, #0x38
 	strb r4, [r0]

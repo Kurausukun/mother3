@@ -46,7 +46,7 @@ sub_0806673C:
 	movs r0, #0xcd
 	lsls r0, r0, #3
 	add r0, sl
-	bl sub_08071F8C
+	bl __10KeyFocuser
 	ldr r1, _08066B30
 	add r1, sl
 	movs r0, #2

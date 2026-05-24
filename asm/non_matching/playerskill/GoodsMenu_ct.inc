@@ -199,7 +199,7 @@ _0807D4BC:
 	movs r0, #0xd3
 	lsls r0, r0, #3
 	add r0, sl
-	bl sub_08071F8C
+	bl __10KeyFocuser
 	ldr r4, [sp, #0x98]
 	mov r0, sl
 	str r4, [r0, #0x24]

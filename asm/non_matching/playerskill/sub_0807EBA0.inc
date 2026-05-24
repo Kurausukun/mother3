@@ -30,7 +30,7 @@ sub_0807EBA0:
 	movs r0, #0xa0
 	lsls r0, r0, #1
 	add r0, sl
-	bl sub_08071F8C
+	bl __10KeyFocuser
 	mov r3, sl
 	str r6, [r3, #0x24]
 	movs r1, #0

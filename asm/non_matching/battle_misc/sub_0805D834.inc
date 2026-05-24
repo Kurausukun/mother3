@@ -16,7 +16,7 @@ makeInstance__13BattleManager:
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
 	adds r0, #0x60
-	bl sub_08071F8C
+	bl __10KeyFocuser
 	str r4, [r5]
 _0805D85E:
 	ldr r0, _0805D86C

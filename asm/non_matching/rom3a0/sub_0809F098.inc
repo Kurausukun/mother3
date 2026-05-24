@@ -138,7 +138,7 @@ _0809F198:
 	b _0809F412
 _0809F1BC:
 	add r0, sp, #4
-	bl sub_08071F8C
+	bl __10KeyFocuser
 	mov r1, sl
 	ldr r0, [r1, #0x58]
 	add r7, sp, #0x24

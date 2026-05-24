@@ -83,6 +83,23 @@ struct Singleton {
         return const_classname_##CLASS;                                                            \
     }
 
+#define MANAGER_DECL_INLINE(CLASS)                                                                      \
+    extern const char const_classname_##CLASS[];                                                    \
+    struct CLASS##Manager : Singleton {                                                            \
+    public:                                                                                        \
+        static CLASS##Manager* manager();                                                          \
+        static CLASS* get();                                                                       \
+        static CLASS* makeInstance();                                                              \
+        static void destroy();                                                                     \
+        virtual const char* getName() { return const_classname_##CLASS; }                           \
+        virtual void* init() { return new CLASS; }                                                 \
+        INLINE_VT_END                                                                               \
+                                                                                                   \
+    private:                                                                                       \
+        static s32 mSingletonGuard;                                                                \
+        static CLASS* mSingleton;                                                                  \
+    };
+
 // TODO: "[CLASS]RTTI" classes might be more appropriately named "[CLASS]Singleton"?
 
 // TODO: rewrite this to work inside class definition
@@ -117,5 +134,17 @@ struct Singleton {
     }                                                                                               \
     /* CLASS::~CLASS() {} TODO: class destructor is inlined here, how do we generate this? */
 
+#define RTTI_DECL_INLINE(CLASS)                                                                      \
+    extern const char const_classname_##CLASS[];                                                    \
+    struct CLASS##RTTI : Singleton {                                                            \
+    public:                                                                                        \
+        virtual const char* getName() { return const_classname_##CLASS; }                           \
+        virtual void* init() { return new CLASS; }                                                 \
+        INLINE_VT_END                                                                               \
+                                                                                                    \
+        static void* get();                                                                         \
+    };
+
+#define DUMP_INLINE_RTTI(CLASS) DUMP_INLINE(CLASS##RTTI); DUMP_INLINE(CLASS);
 
 #endif  // SINGLETON_H

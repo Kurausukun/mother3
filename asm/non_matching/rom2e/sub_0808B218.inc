@@ -291,7 +291,7 @@ _0808B3AA:
 	bl sub_0808B218
 	ldr r3, _0808B680
 	adds r0, r7, r3
-	bl sub_08071F8C
+	bl __10KeyFocuser
 	ldr r0, [sp, #0xb8]
 	str r0, [r7, #0x24]
 	ldr r1, [sp, #0xe0]

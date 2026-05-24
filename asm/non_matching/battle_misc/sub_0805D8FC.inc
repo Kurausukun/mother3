@@ -12,7 +12,7 @@ __6BattleUs:
 	str r0, [r7, #0x1c]
 	adds r0, r7, #0
 	adds r0, #0x60
-	bl sub_08071F8C
+	bl __10KeyFocuser
 	movs r0, #0
 	strh r4, [r7, #0x24]
 	str r0, [r7, #0x28]

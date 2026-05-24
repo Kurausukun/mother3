@@ -80,7 +80,7 @@ _0808574A:
 	bne _08085742
 	ldr r0, _0808596C
 	add r0, sl
-	bl sub_08071F8C
+	bl __10KeyFocuser
 	movs r4, #0
 	movs r0, #0xe1
 	mov r1, sl

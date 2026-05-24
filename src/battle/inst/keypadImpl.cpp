@@ -1,0 +1,23 @@
+#include "battle/keypad.h"
+
+DUMP_INLINE_RTTI(SelectKeyLongPress);
+DUMP_INLINE_RTTI(SelectKeyPress);
+DUMP_INLINE_RTTI(StartKeyLongPress);
+DUMP_INLINE_RTTI(StartKeyPress);
+DUMP_INLINE_RTTI(RKeyLongPress);
+DUMP_INLINE_RTTI(RKeyPress);
+DUMP_INLINE_RTTI(LKeyLongPress);
+DUMP_INLINE_RTTI(LKeyPress);
+DUMP_INLINE_RTTI(BKeyLongPress);
+DUMP_INLINE_RTTI(BKeyPress);
+DUMP_INLINE_RTTI(AKeyLongPress);
+DUMP_INLINE_RTTI(AKeyPress);
+DUMP_INLINE_RTTI(RightKeyLongPress);
+DUMP_INLINE_RTTI(RightKeyPress);
+DUMP_INLINE_RTTI(LeftKeyLongPress);
+DUMP_INLINE_RTTI(LeftKeyPress);
+DUMP_INLINE_RTTI(DownKeyLongPress);
+DUMP_INLINE_RTTI(DownKeyPress);
+DUMP_INLINE_RTTI(UpKeyLongPress);
+DUMP_INLINE_RTTI(UpKeyPress);
+DUMP_INLINE(KeyPadManager);

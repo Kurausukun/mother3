@@ -91,9 +91,7 @@ NONMATCH("asm/non_matching/keypad/sub_0806CD5C.inc",
 }
 END_NONMATCH
 
-// Regression due to the singleton impls on keys/keypad, come back to this later!
-NONMATCH("asm/non_matching/keypad/emitNewKeys.inc",
-                    void KeyPad::emitNewKeys()) {
+void KeyPad::emitNewKeys() {
     if (new_keys & DPAD_UP) {
         emit(UpKeyPress());
     }
@@ -156,4 +154,3 @@ NONMATCH("asm/non_matching/keypad/emitNewKeys.inc",
         emit(SelectKeyLongPress());
     }
 }
-END_NONMATCH

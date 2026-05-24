@@ -32,7 +32,7 @@ _0808E37E:
 	movs r4, #0x9b
 	lsls r4, r4, #2
 	adds r0, r7, r4
-	bl sub_08071F8C
+	bl __10KeyFocuser
 	movs r0, #0
 	strh r0, [r7, #0x24]
 	mov sl, r8

@@ -176,7 +176,7 @@ _0808CC84:
 	bl sub_0808B218
 	ldr r0, _0808CFD8
 	add r0, sb
-	bl sub_08071F8C
+	bl __10KeyFocuser
 	ldr r4, [sp, #0x90]
 	mov r0, sb
 	str r4, [r0, #0x24]

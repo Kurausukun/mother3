@@ -132,7 +132,9 @@ SECTIONS
         build/mother3/src/battle/goods2.o(.gnu.linkonce.t.*);
 
         build/mother3/src/rom3b.o(.text);
-        build/mother3/src/inst.o(.text);
+        build/mother3/src/battle/inst/inst.o(.text);
+        build/mother3/src/battle/inst/keypadImpl.o(.text);
+        build/mother3/src/battle/inst/inst2.o(.text);
 
         build/mother3/data/data1.o(.rodata);
         build/mother3/src/data/directionData.o(.rodata);
