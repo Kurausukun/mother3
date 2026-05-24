@@ -19,6 +19,6 @@ _08065D84:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08065D90: .4byte gUnknown_020040EC
-_08065D94: .4byte gUnknown_020040F0
+_08065D90: .4byte _13SndMonManager.mSingletonGuard
+_08065D94: .4byte _13SndMonManager.mSingleton
 	.syntax divided

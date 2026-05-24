@@ -10,6 +10,6 @@ _GLOBAL_I_SndMonManager:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0806628C: .4byte gUnknown_020040E0
+_0806628C: .4byte sSndMonManager
 _08066290: .4byte _vt.13SndMonManager
 	.syntax divided

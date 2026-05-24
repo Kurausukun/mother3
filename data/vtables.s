@@ -89726,16 +89726,16 @@ _vt.12PostSysClock::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-_vt.21PostSysClockSingleton::
+_vt.16PostSysClockRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte getName__21PostSysClockSingleton
+	.4byte getName__16PostSysClockRTTI
 	.2byte 0
 	.2byte 0
-	.4byte init__21PostSysClockSingleton
+	.4byte init__16PostSysClockRTTI
 
 _vt.12PostAppClock::
 	.2byte 0
@@ -89778,16 +89778,16 @@ _vt.12PostAppClock::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-_vt.21PostAppClockSingleton::
+_vt.16PostAppClockRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte getName__21PostAppClockSingleton
+	.4byte getName__16PostAppClockRTTI
 	.2byte 0
 	.2byte 0
-	.4byte init__21PostAppClockSingleton
+	.4byte init__16PostAppClockRTTI
 
 _vt.8AppClock::
 	.2byte 0
@@ -89830,16 +89830,16 @@ _vt.8AppClock::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-_vt.17AppClockSingleton::
+_vt.12AppClockRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte getName__17AppClockSingleton
+	.4byte getName__12AppClockRTTI
 	.2byte 0
 	.2byte 0
-	.4byte init__17AppClockSingleton
+	.4byte init__12AppClockRTTI
 
 _vt.11PreAppClock::
 	.2byte 0
@@ -89882,16 +89882,16 @@ _vt.11PreAppClock::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-_vt.20PreAppClockSingleton::
+_vt.15PreAppClockRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte getName__20PreAppClockSingleton
+	.4byte getName__15PreAppClockRTTI
 	.2byte 0
 	.2byte 0
-	.4byte init__20PreAppClockSingleton
+	.4byte init__15PreAppClockRTTI
 
 _vt.8SysClock::
 	.2byte 0
@@ -89934,16 +89934,16 @@ _vt.8SysClock::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-_vt.17SysClockSingleton::
+_vt.12SysClockRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte getName__17SysClockSingleton
+	.4byte getName__12SysClockRTTI
 	.2byte 0
 	.2byte 0
-	.4byte init__17SysClockSingleton
+	.4byte init__12SysClockRTTI
 
 _vt.11PreSysClock::
 	.2byte 0
@@ -89986,16 +89986,16 @@ _vt.11PreSysClock::
 	.2byte 0
 	.4byte clearNullOutgoing__4Base
 
-_vt.20PreSysClockSingleton::
+_vt.15PreSysClockRTTI::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte getName__20PreSysClockSingleton
+	.4byte getName__15PreSysClockRTTI
 	.2byte 0
 	.2byte 0
-	.4byte init__20PreSysClockSingleton
+	.4byte init__15PreSysClockRTTI
 
 _vt.Q211BattleFader1A::
 	.2byte 0
@@ -93461,7 +93461,7 @@ _vt.15KeyFocusManager::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080723FC
+	.4byte _._15KeyFocusManager
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__15KeyFocusManager
