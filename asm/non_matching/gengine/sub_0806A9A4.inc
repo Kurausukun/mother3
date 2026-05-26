@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0806A9A4:
+get__14GEngineManager:
 	ldr r0, _0806A9AC
 	ldr r0, [r0]
 	bx lr

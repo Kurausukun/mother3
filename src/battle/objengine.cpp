@@ -7,6 +7,8 @@ extern ClockData callback_sub_0806C3DC;
 
 // genengine
 extern "C" void* makeInstance__14GEngineManager();
+extern "C" void* get__14GEngineManager();
+extern "C" void destroy__14GEngineManager();
 extern "C" void sub_0806AFA4(void*, int);
 extern "C" void sub_0806AF58(void*, int);
 
@@ -15,9 +17,6 @@ extern "C" void makeInstance__17ObjChrPoolManager();
 extern "C" void makeInstance__17ObjPltPoolManager();
 extern "C" void destroy__17ObjPltPoolManager();
 extern "C" void destroy__17ObjChrPoolManager();
-extern "C" void* sub_0806A9A4();
-extern "C" void destroy__14GEngineManager();
-extern "C" void sub_0806AFA4(void*, int);
 
 MANAGER_IMPL(ObjEngine);
 
@@ -56,7 +55,7 @@ extern "C" ASM_FUNC("asm/non_matching/objengine/sub_0806BE68.inc", void __9ObjEn
 ObjEngine::~ObjEngine() {
     destroy__17ObjPltPoolManager();
     destroy__17ObjChrPoolManager();
-    sub_0806AFA4(sub_0806A9A4(), 0xEF9F);
+    sub_0806AFA4(get__14GEngineManager(), 0xEF9F);
     destroy__14GEngineManager();
 
     UnkBar* temp = &this->_938;

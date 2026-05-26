@@ -88731,7 +88731,7 @@ _vt.6SndMon::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08065F98
+	.4byte dt__6SndMon
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__6SndMon
@@ -90011,10 +90011,10 @@ _vt.7GEngine::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806AB84
+	.4byte dt__7GEngine
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806A9EC
+	.4byte getRTTI__7GEngine
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -90063,10 +90063,10 @@ _vt.8BGEngine::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806B258
+	.4byte dt__8BGEngine
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806B0B8
+	.4byte getRTTI__8BGEngine
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base

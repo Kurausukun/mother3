@@ -95,7 +95,7 @@ _0805D9C6:
 	ldr r0, [r7, #0x30]
 	adds r1, r5, #0
 	bl set4__11BattleFaderUi
-	bl sub_0806B070
+	bl get__15BGEngineManager
 	adds r4, r0, #0
 	adds r0, r7, #0
 	bl battle_150__6Battle

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0806B258:
+dt__8BGEngine:
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -7,7 +7,7 @@ sub_0806B258:
 	mov r8, r1
 	ldr r0, _0806B2C4
 	str r0, [r6, #0x1c]
-	bl sub_0806A9A4
+	bl get__14GEngineManager
 	adds r4, r0, #0
 	bl sub_0806AFF0
 	ldr r1, _0806B2C8

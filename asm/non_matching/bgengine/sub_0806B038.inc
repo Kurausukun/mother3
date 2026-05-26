@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0806B038:
+manager__15BGEngineManager:
 	ldr r0, _0806B03C
 	bx lr
 	.align 2, 0

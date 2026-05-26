@@ -6,7 +6,7 @@ sub_0806E640:
 	mov r5, r8
 	push {r5, r6, r7}
 	sub sp, #8
-	bl sub_0806B070
+	bl get__15BGEngineManager
 	mov r8, r0
 	movs r1, #0
 	bl sub_0806B95C

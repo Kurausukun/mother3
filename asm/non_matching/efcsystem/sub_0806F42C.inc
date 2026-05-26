@@ -14,7 +14,7 @@ sub_0806F42C:
 	movs r1, #0
 	ldrsh r4, [r0, r1]
 	asrs r4, r4, #8
-	bl sub_0806B070
+	bl get__15BGEngineManager
 	adds r1, r0, #0
 	mov r0, sp
 	bl sub_0806BAEC
@@ -27,7 +27,7 @@ sub_0806F42C:
 	movs r1, #0
 	ldrsh r4, [r0, r1]
 	asrs r4, r4, #8
-	bl sub_0806B070
+	bl get__15BGEngineManager
 	adds r1, r0, #0
 	add r0, sp, #4
 	bl sub_0806BAEC

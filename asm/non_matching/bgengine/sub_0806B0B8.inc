@@ -1,7 +1,7 @@
 	.syntax unified
-sub_0806B0B8:
+getRTTI__8BGEngine:
 	push {lr}
-	bl sub_0806B038
+	bl manager__15BGEngineManager
 	pop {r1}
 	bx r1
 	.align 2, 0

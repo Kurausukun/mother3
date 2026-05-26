@@ -3,11 +3,11 @@ sub_08066444:
 	push {r4, r5, r6, lr}
 	sub sp, #0x168
 	adds r5, r0, #0
-	bl sub_0806B070
+	bl get__15BGEngineManager
 	movs r1, #1
 	movs r2, #0
 	bl sub_0806BA38
-	bl sub_0806B070
+	bl get__15BGEngineManager
 	movs r1, #2
 	movs r2, #0
 	bl sub_0806BA38

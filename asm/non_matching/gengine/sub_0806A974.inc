@@ -10,7 +10,7 @@ makeInstance__14GEngineManager:
 	ldr r4, _0806A9A0
 	movs r0, #0x7c
 	bl __builtin_new
-	bl sub_0806A9F8
+	bl __7GEngine
 	str r0, [r4]
 _0806A990:
 	ldr r0, _0806A9A0

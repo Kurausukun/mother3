@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08065D98:
+get__13SndMonManager:
 	ldr r0, _08065DA0
 	ldr r0, [r0]
 	bx lr

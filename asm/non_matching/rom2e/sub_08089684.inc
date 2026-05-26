@@ -24,7 +24,7 @@ sub_08089684:
 	strh r0, [r1]
 	adds r1, #2
 	strh r0, [r1]
-	bl sub_0806B070
+	bl get__15BGEngineManager
 	movs r1, #1
 	bl sub_0806BB20
 	str r0, [r5, #0x48]

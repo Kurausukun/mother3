@@ -1,13 +1,15 @@
 // Auto-generated source file
 #include "global.h"
+#include "singleton.h"
 
-extern "C" ASM_FUNC("asm/non_matching/gengine/sub_0806A96C.inc", void sub_0806A96C());
+MANAGER_DECL(GEngine);
+extern "C" ASM_FUNC("asm/non_matching/gengine/sub_0806A96C.inc", void manager__14GEngineManager());
 extern "C" ASM_FUNC("asm/non_matching/gengine/sub_0806A974.inc", void makeInstance__14GEngineManager());
-extern "C" ASM_FUNC("asm/non_matching/gengine/sub_0806A9A4.inc", void sub_0806A9A4());
+extern "C" ASM_FUNC("asm/non_matching/gengine/sub_0806A9A4.inc", void get__14GEngineManager());
 extern "C" ASM_FUNC("asm/non_matching/gengine/sub_0806A9B0.inc", void destroy__14GEngineManager());
-extern "C" ASM_FUNC("asm/non_matching/gengine/sub_0806A9EC.inc", void sub_0806A9EC());
-extern "C" ASM_FUNC("asm/non_matching/gengine/sub_0806A9F8.inc", void sub_0806A9F8());
-extern "C" ASM_FUNC("asm/non_matching/gengine/sub_0806AB84.inc", void sub_0806AB84());
+extern "C" ASM_FUNC("asm/non_matching/gengine/sub_0806A9EC.inc", void getRTTI__7GEngine());
+extern "C" ASM_FUNC("asm/non_matching/gengine/sub_0806A9F8.inc", void __7GEngine());
+extern "C" ASM_FUNC("asm/non_matching/gengine/sub_0806AB84.inc", void dt__7GEngine());
 extern "C" ASM_FUNC("asm/non_matching/gengine/sub_0806AB98.inc", void sub_0806AB98());
 extern "C" ASM_FUNC("asm/non_matching/gengine/sub_0806AB9C.inc", void sub_0806AB9C());
 extern "C" ASM_FUNC("asm/non_matching/gengine/sub_0806ABA0.inc", void sub_0806ABA0());

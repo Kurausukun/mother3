@@ -26,7 +26,7 @@ _08089D38:
 	movs r3, #8
 	bl sub_08069558
 	adds r5, r0, #0
-	bl sub_0806B070
+	bl get__15BGEngineManager
 	movs r1, #3
 	bl sub_0806BA4C
 	adds r4, r0, #0

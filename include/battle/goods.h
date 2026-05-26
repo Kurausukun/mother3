@@ -9,7 +9,7 @@ struct GoodsInfo;
 
 class Goods : public Action {
 public:
-    Goods();
+    Goods() {}
     Goods(u16 id, Unit* user, u16 a2);
     virtual ~Goods() override;
 

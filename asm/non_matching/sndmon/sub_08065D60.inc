@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08065D60:
+manager__13SndMonManager:
 	ldr r0, _08065D64
 	bx lr
 	.align 2, 0

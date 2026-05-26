@@ -186,7 +186,7 @@ init__14GEngineManager: @ 0x080C0D1C
 	push {lr}
 	movs r0, #0x7c
 	bl __builtin_new
-	bl sub_0806A9F8
+	bl __7GEngine
 	pop {r1}
 	bx r1
 

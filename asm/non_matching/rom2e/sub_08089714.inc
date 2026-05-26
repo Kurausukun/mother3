@@ -33,7 +33,7 @@ _08089750:
 	cmp r4, #0
 	bne _0808972A
 _08089756:
-	bl sub_0806B070
+	bl get__15BGEngineManager
 	ldr r2, [r6, #0x48]
 	movs r1, #1
 	bl sub_0806BACC

@@ -3,7 +3,7 @@ sub_0808661C:
 	push {r4, r5, lr}
 	sub sp, #0xc
 	adds r5, r0, #0
-	bl sub_0806B070
+	bl get__15BGEngineManager
 	mov r2, sp
 	movs r4, #0
 	mov r1, sp
@@ -15,7 +15,7 @@ sub_0808661C:
 	strh r4, [r1]
 	strh r4, [r1, #2]
 	bl sub_0806C028
-	bl sub_0806A9A4
+	bl get__14GEngineManager
 	add r1, sp, #8
 	strh r4, [r1]
 	strh r4, [r1, #2]

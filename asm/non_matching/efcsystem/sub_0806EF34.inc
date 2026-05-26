@@ -5,7 +5,7 @@ sub_0806EF34:
 	push {r7}
 	sub sp, #8
 	adds r7, r0, #0
-	bl sub_0806A9A4
+	bl get__14GEngineManager
 	adds r4, r0, #0
 	movs r1, #1
 	bl sub_0806AB98
@@ -55,7 +55,7 @@ sub_0806EF34:
 	adds r0, r4, #0
 	movs r1, #0
 	bl sub_0806ABE4
-	bl sub_0806B070
+	bl get__15BGEngineManager
 	mov r8, r0
 	movs r6, #0
 	adds r4, r7, #0

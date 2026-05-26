@@ -77,7 +77,7 @@ _0808A95C:
 	add r5, sp, #4
 	strh r2, [r5]
 	strh r2, [r5, #2]
-	bl sub_0806B070
+	bl get__15BGEngineManager
 	adds r1, r0, #0
 	add r0, sp, #8
 	bl sub_0806BAEC
@@ -117,7 +117,7 @@ _0808A95C:
 	strh r1, [r0, #2]
 	ldr r0, [sp, #0x10]
 	str r0, [sp, #4]
-	bl sub_0806B070
+	bl get__15BGEngineManager
 	adds r1, r5, #0
 	bl sub_0806BA6C
 	bl get__16ObjEngineManager
@@ -160,7 +160,7 @@ _0808A95C:
 	bl get__16ObjEngineManager
 	adds r1, r5, #0
 	bl sub_0806C028
-	bl sub_0806A9A4
+	bl get__14GEngineManager
 	adds r1, r0, #0
 	add r0, sp, #0x20
 	bl sub_0806AC10
@@ -196,7 +196,7 @@ _0808A95C:
 	strh r1, [r0, #2]
 	ldr r0, [sp, #0x28]
 	str r0, [sp, #4]
-	bl sub_0806A9A4
+	bl get__14GEngineManager
 	adds r1, r5, #0
 	bl sub_0806ABB8
 	ldr r0, [sp]

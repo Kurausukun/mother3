@@ -6,8 +6,8 @@ sub_0805BA98:
 	lsls r1, r1, #0xa
 	bl init__15SystemAllocatorP3FitUi
 	bl makeInstance__13SystemManager
-	bl sub_08065D68
-	bl sub_08065D98
+	bl makeInstance__13SndMonManager
+	bl get__13SndMonManager
 	ldr r1, [r0, #0x1c]
 	adds r1, #0x68
 	movs r3, #0
@@ -15,7 +15,7 @@ sub_0805BA98:
 	adds r0, r0, r2
 	ldr r1, [r1, #4]
 	bl _call_via_r1
-	bl sub_08065DA4
+	bl destroy__13SndMonManager
 	bl destroy__13SystemManager
 	bl destroy__15SystemAllocator
 	pop {r0}
