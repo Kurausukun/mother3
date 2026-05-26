@@ -2,7 +2,6 @@
 #include "global.h"
 #include "singleton.h"
 
-MANAGER_DECL(GEngine);
 extern "C" ASM_FUNC("asm/non_matching/gengine/sub_0806A96C.inc", void manager__14GEngineManager());
 extern "C" ASM_FUNC("asm/non_matching/gengine/sub_0806A974.inc", void makeInstance__14GEngineManager());
 extern "C" ASM_FUNC("asm/non_matching/gengine/sub_0806A9A4.inc", void get__14GEngineManager());
