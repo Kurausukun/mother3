@@ -7,6 +7,7 @@
 #include "battle/player.h"
 #include "battle/rhythm.h"
 #include "enums.h"
+#include "factory.h"
 
 extern "C" bool typeIsMonster(Unit*);
 extern "C" Monster* dynaCastMonster(Unit*);
@@ -121,8 +122,6 @@ public:
         }
         return false;
     }
-
-    // INLINE_VT_END
 };
 
 class NewYearsEveBomb : public DefaultGoods {
@@ -220,8 +219,6 @@ public:
         return Goods::hasDim();
     }
 
-    INLINE_VT_END
-
     bool _50;
 };
 
@@ -261,7 +258,6 @@ public:
     s32 healLo() const { return Goods::healLo() * _50 >> 8; }
     s32 healHi() const { return Goods::healHi() * _50 >> 8; }
 
-    INLINE_VT_END
 
     u16 _50;
 };
@@ -296,8 +292,6 @@ public:
             PlayAnimation(Animation::HardHit, getUser(), target);
         }
     }
-
-    INLINE_VT_END
 };
 
 class AncientBanana : public DefaultGoods {
@@ -314,7 +308,6 @@ public:
         ROMStr(0x190).print(Color(0, 0, 0), true);
     }
 
-    INLINE_VT_END
 };
 
 class BugSpray : public DefaultGoods {
@@ -332,7 +325,6 @@ public:
             }
         }
     }
-    INLINE_VT_END
 };
 
 class PeculiarCheese : public DefaultGoods {
@@ -365,7 +357,6 @@ public:
         InitHeal(target, hp, 1);
     }
 
-    INLINE_VT_END
 };
 
 class DoggyFood : public DefaultGoods {
@@ -381,7 +372,6 @@ public:
         }
     }
 
-    INLINE_VT_END
 };
 
 class LottoMeal : public DefaultGoods {
@@ -444,7 +434,6 @@ public:
         }
     }
 
-    INLINE_VT_END
 };
 
 class EnemyBufferizer : public DefaultGoods {
@@ -459,7 +448,6 @@ public:
         return IsBossBattle();
     }
 
-    INLINE_VT_END
 };
 
 class EnemyWimperizer : public DefaultGoods {
@@ -474,7 +462,6 @@ public:
         return IsBossBattle();
     }
 
-    INLINE_VT_END
 };
 
 class AttackAttractor : public DefaultGoods {
@@ -507,7 +494,6 @@ public:
         ROMStr(0x159).print(Color(0, 0, 0), true);
     }
 
-    INLINE_VT_END
 };
 
 class MadeYouLook : public DefaultGoods {
@@ -558,7 +544,6 @@ public:
         ROMStr(0x176).print(Color(0, 0, 0), true);
     }
 
-    INLINE_VT_END
 };
 
 class PaperFan : public DefaultGoods {
@@ -578,7 +563,6 @@ public:
         }
     }
 
-    INLINE_VT_END
 };
 
 class SecretHerb : public DefaultGoods {
@@ -604,7 +588,6 @@ public:
     }
     END_NONMATCH
 
-    INLINE_VT_END
 };
 
 class CupOfLifenoodles : public DefaultGoods {
@@ -631,7 +614,6 @@ public:
     }
     END_NONMATCH
 
-    INLINE_VT_END
 };
 
 class ShieldSnatcher : public DefaultGoods {
@@ -659,7 +641,6 @@ public:
         }
     }
 
-    INLINE_VT_END
 };
 
 class DragoFang : public DefaultGoods {
@@ -695,7 +676,6 @@ public:
 
     void tellMissed(Unit* target) { ROMStr(0x18a).print(Color(0, 0, 0), true); }
 
-    INLINE_VT_END
 };
 
 class TriviaCard1 : public DefaultGoods {
@@ -767,7 +747,6 @@ public:
         }
     }
 
-    INLINE_VT_END
 };
 
 class TriviaCard2 : public DefaultGoods {
@@ -832,7 +811,6 @@ public:
         }
     }
 
-    INLINE_VT_END
 };
 
 class TriviaCard3 : public DefaultGoods {
@@ -897,7 +875,6 @@ public:
         }
     }
 
-    INLINE_VT_END
 };
 
 class TriviaCard4 : public DefaultGoods {
@@ -974,7 +951,36 @@ public:
         }
     }
 
-    INLINE_VT_END
 };
+
+class GoodsFactory {
+public:
+    static void init();
+    static void put(u16 id, void* (*spawn)(u16 id, Unit* user, u16 a2));
+    static void* create(u16 id, Unit* user, u16 a2);
+};
+
+FACTORY(DefaultGoods, u16, Unit*, u16);
+FACTORY(NewYearsEveBomb, u16, Unit*, u16);
+FACTORY(SaltwaterGun, u16, Unit*, u16);
+FACTORY(HoneyShower, u16, Unit*, u16);
+FACTORY(AncientBanana, u16, Unit*, u16);
+FACTORY(BugSpray, u16, Unit*, u16);
+FACTORY(PeculiarCheese, u16, Unit*, u16);
+FACTORY(DoggyFood, u16, Unit*, u16);
+FACTORY(LottoMeal, u16, Unit*, u16);
+FACTORY(EnemyBufferizer, u16, Unit*, u16);
+FACTORY(EnemyWimperizer, u16, Unit*, u16);
+FACTORY(AttackAttractor, u16, Unit*, u16);
+FACTORY(MadeYouLook, u16, Unit*, u16);
+FACTORY(PaperFan, u16, Unit*, u16);
+FACTORY(SecretHerb, u16, Unit*, u16);
+FACTORY(CupOfLifenoodles, u16, Unit*, u16);
+FACTORY(ShieldSnatcher, u16, Unit*, u16);
+FACTORY(DragoFang, u16, Unit*, u16);
+FACTORY(TriviaCard1, u16, Unit*, u16);
+FACTORY(TriviaCard2, u16, Unit*, u16);
+FACTORY(TriviaCard3, u16, Unit*, u16);
+FACTORY(TriviaCard4, u16, Unit*, u16);
 
 #endif  // BATTLE_GOODS_IMPL_H

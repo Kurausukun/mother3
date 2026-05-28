@@ -38,6 +38,7 @@ SECTIONS
         build/mother3/src/battle/guest.o(.text);
         build/mother3/src/battle/guestFactory.o(.text);
         build/mother3/src/battle/goods.o(.text);
+        build/mother3/src/battle/goodsFactory.o(.text);
         build/mother3/src/battle/sndmon.o(.text);
         build/mother3/src/battle/code_0805D74C.o(.text);
         build/mother3/src/singleton.o(.text);
@@ -128,7 +129,6 @@ SECTIONS
         build/mother3/src/battle/monsterImpl2.o(.text);
         build/mother3/src/rom3ab.o(.text);
         build/mother3/src/battle/goods2.o(.text);
-        build/mother3/src/battle/goodsImpl.o(.text);
         build/mother3/src/battle/goods2.o(.gnu.linkonce.t.*);
 
         build/mother3/src/rom3b.o(.text);

@@ -1,5 +1,4 @@
 #include "battle/guestFactory.h"
-#include "enums.h"
 
 extern void* (*sGuestSpawners[])(u16 id);
 

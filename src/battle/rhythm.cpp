@@ -23,7 +23,7 @@ extern "C" BattleFader* sub_080725A8();
 extern "C" Action* sub_08064574(u16 arg0);
 extern "C" void* sub_08061A4C(u16 arg0);                      // TODO: confirm return type
 extern "C" void* sub_08064950(u16 arg0);                      // TODO: confirm return type
-extern "C" void* sub_08065148(u16 arg0, u32 arg1, u16 arg2);  // TODO: confirm return type
+extern "C" void* create__12GoodsFactoryUsP4UnitUs(u16 arg0, Unit* arg1, u16 arg2);  // TODO: confirm return type
 extern "C" void* sub_08062368(u16 arg0);                      // TODO: confirm return type
 
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_080736F8.inc", void sub_080736F8());
@@ -50,8 +50,8 @@ extern "C" void* sub_08074010(u16 arg0) {
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08074020.inc", void sub_08074020());
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_0807404C.inc", void sub_0807404C());
 
-extern "C" void* sub_08074098(u16 arg0, u32 arg1, u16 arg2) {
-    return sub_08065148(arg0, arg1, arg2);
+extern "C" void* sub_08074098(u16 arg0, Unit* arg1, u16 arg2) {
+    return create__12GoodsFactoryUsP4UnitUs(arg0, arg1, arg2);
 }
 
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_080740AC.inc", void sub_080740AC());

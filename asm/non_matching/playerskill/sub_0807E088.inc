@@ -87,7 +87,7 @@ _0807E0F6:
 	lsrs r2, r2, #0x10
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_08065148
+	bl create__12GoodsFactoryUsP4UnitUs
 	str r0, [r6, #0x38]
 	adds r0, r6, #0
 	movs r1, #2

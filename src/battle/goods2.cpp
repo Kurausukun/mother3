@@ -4,28 +4,6 @@ extern "C" {
 
 void* __5Goods();
 void* __builtin_new(u32);
-void* __11TriviaCard4UsP4UnitUs(void*, u16, Unit*, u32);
-void* __11TriviaCard3UsP4UnitUs(void*, u16, Unit*, u32);
-void* __11TriviaCard2UsP4UnitUs(void*, u16, Unit*, u32);
-void* __11TriviaCard1UsP4UnitUs(void*, u16, Unit*, u32);
-void* __9DragoFangUsP4UnitUs(void*, u16, Unit*, u32);
-void* __14ShieldSnatcherUsP4UnitUs(void*, u16, Unit*, u32);
-void* __16CupOfLifenoodlesUsP4UnitUs(void*, u16, Unit*, u32);
-void* __10SecretHerbUsP4UnitUs(void*, u16, Unit*, u32);
-void* __8PaperFanUsP4UnitUs(void*, u16, Unit*, u32);
-void* __11MadeYouLookUsP4UnitUs(void*, u16, Unit*, u32);
-void* __15AttackAttractorUsP4UnitUs(void*, u16, Unit*, u32);
-void* __15EnemyWimperizerUsP4UnitUs(void*, u16, Unit*, u32);
-void* __15EnemyBufferizerUsP4UnitUs(void*, u16, Unit*, u32);
-void* __9LottoMealUsP4UnitUs(void*, u16, Unit*, u32);
-void* __9DoggyFoodUsP4UnitUs(void*, u16, Unit*, u32);
-void* __14PeculiarCheeseUsP4UnitUs(void*, u16, Unit*, u32);
-void* __8BugSprayUsP4UnitUs(void*, u16, Unit*, u32);
-void* __13AncientBananaUsP4UnitUs(void*, u16, Unit*, u32);
-void* __11HoneyShowerUsP4UnitUs(void*, u16, Unit*, u32);
-void* __12SaltwaterGunUsP4UnitUs(void*, u16, Unit*, u32);
-void* __15NewYearsEveBombUsP4UnitUs(void*, u16, Unit*, u32);
-void* __12DefaultGoodsUsP4UnitUs(void*, u16, Unit*, u32);
 
 void* init__9GoodsRTTI() {
     __builtin_new(0x50);
@@ -36,94 +14,94 @@ extern const char const_classname_Goods[];  // "Goods"
 const char* getName__9GoodsRTTI() {
     return const_classname_Goods;
 }
+}
 
-void* sub_080BDAD8(u16 id, Unit* user, u16 r2) {
+void* TriviaCard4Factory::create(u16 id, Unit* user, u16 r2) {
     return new TriviaCard4(id, user, r2);
 }
 
-void* sub_080BDB00(u16 id, Unit* user, u16 r2) {
+void* TriviaCard3Factory::create(u16 id, Unit* user, u16 r2) {
     return new TriviaCard3(id, user, r2);
 }
 
-void* sub_080BDB28(u16 id, Unit* user, u16 r2) {
+void* TriviaCard2Factory::create(u16 id, Unit* user, u16 r2) {
     return new TriviaCard2(id, user, r2);
 }
 
-void* sub_080BDB50(u16 id, Unit* user, u16 r2) {
+void* TriviaCard1Factory::create(u16 id, Unit* user, u16 r2) {
     return new TriviaCard1(id, user, r2);
 }
 
-void* sub_080BDB78(u16 id, Unit* user, u16 r2) {
+void* DragoFangFactory::create(u16 id, Unit* user, u16 r2) {
     return new DragoFang(id, user, r2);
 }
 
-void* sub_080BDBA0(u16 id, Unit* user, u16 r2) {
+void* ShieldSnatcherFactory::create(u16 id, Unit* user, u16 r2) {
     return new ShieldSnatcher(id, user, r2);
 }
 
-void* sub_080BDBC8(u16 id, Unit* user, u16 r2) {
+void* CupOfLifenoodlesFactory::create(u16 id, Unit* user, u16 r2) {
     return new CupOfLifenoodles(id, user, r2);
 }
 
-void* sub_080BDBF0(u16 id, Unit* user, u16 r2) {
+void* SecretHerbFactory::create(u16 id, Unit* user, u16 r2) {
     return new SecretHerb(id, user, r2);
 }
 
-void* sub_080BDC18(u16 id, Unit* user, u16 r2) {
+void* PaperFanFactory::create(u16 id, Unit* user, u16 r2) {
     return new PaperFan(id, user, r2);
 }
 
-void* sub_080BDC40(u16 id, Unit* user, u16 r2) {
+void* MadeYouLookFactory::create(u16 id, Unit* user, u16 r2) {
     return new MadeYouLook(id, user, r2);
 }
 
-void* sub_080BDC68(u16 id, Unit* user, u16 r2) {
+void* AttackAttractorFactory::create(u16 id, Unit* user, u16 r2) {
     return new AttackAttractor(id, user, r2);
 }
 
-void* sub_080BDC90(u16 id, Unit* user, u16 r2) {
+void* EnemyWimperizerFactory::create(u16 id, Unit* user, u16 r2) {
     return new EnemyWimperizer(id, user, r2);
 }
 
-void* sub_080BDCB8(u16 id, Unit* user, u16 r2) {
+void* EnemyBufferizerFactory::create(u16 id, Unit* user, u16 r2) {
     return new EnemyBufferizer(id, user, r2);
 }
 
-void* sub_080BDCE0(u16 id, Unit* user, u16 r2) {
+void* LottoMealFactory::create(u16 id, Unit* user, u16 r2) {
     return new LottoMeal(id, user, r2);
 }
 
-void* sub_080BDD08(u16 id, Unit* user, u16 r2) {
+void* DoggyFoodFactory::create(u16 id, Unit* user, u16 r2) {
     return new DoggyFood(id, user, r2);
 }
 
-void* sub_080BDD30(u16 id, Unit* user, u16 r2) {
+void* PeculiarCheeseFactory::create(u16 id, Unit* user, u16 r2) {
     return new PeculiarCheese(id, user, r2);
 }
 
-void* sub_080BDD58(u16 id, Unit* user, u16 r2) {
+void* BugSprayFactory::create(u16 id, Unit* user, u16 r2) {
     return new BugSpray(id, user, r2);
 }
 
-void* sub_080BDD80(u16 id, Unit* user, u16 r2) {
+void* AncientBananaFactory::create(u16 id, Unit* user, u16 r2) {
     return new AncientBanana(id, user, r2);
 }
 
-void* sub_080BDDA8(u16 id, Unit* user, u16 r2) {
+void* HoneyShowerFactory::create(u16 id, Unit* user, u16 r2) {
     return new HoneyShower(id, user, r2);
 }
 
-void* sub_080BDDD0(u16 id, Unit* user, u16 r2) {
+void* SaltwaterGunFactory::create(u16 id, Unit* user, u16 r2) {
     return new SaltwaterGun(id, user, r2);
 }
 
-void* sub_080BDDF8(u16 id, Unit* user, u16 r2) {
+void* NewYearsEveBombFactory::create(u16 id, Unit* user, u16 r2) {
     return new NewYearsEveBomb(id, user, r2);
 }
 
-void* MakeInstance__H1Z12DefaultGoods_UsP4UnitUs_PX01(u16 id, Unit* user, u16 r2) {
+void* DefaultGoodsFactory::create(u16 id, Unit* user, u16 r2) {
     return new DefaultGoods(id, (void*)user, r2);
-}
 }
 
 TriviaCard4::TriviaCard4(u16 id, Unit* user, u16 a3) : DefaultGoods(id, user, a3) {}

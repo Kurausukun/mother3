@@ -211,7 +211,7 @@ _0805D9C6:
 	bl sub_08060F80
 	bl sub_08061974
 	bl sub_08064834
-	bl sub_08065014
+	bl init__12GoodsFactory
 	bl sub_08065168
 	bl init__12GuestFactory
 	bl sub_08062308
