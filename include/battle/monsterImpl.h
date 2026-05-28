@@ -666,6 +666,7 @@ public:
 };
 
 class Clayman : public DefaultMonster {
+public:
     Clayman(u16 idx, u16 id);
     virtual ~Clayman() override {}
 
@@ -750,6 +751,7 @@ class Clayman : public DefaultMonster {
 
     INLINE_VT_END
 
+private:
     s32 mPhase;
 };
 
