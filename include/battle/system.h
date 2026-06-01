@@ -34,6 +34,6 @@ public:
 
     SARHandle* mHandle;
 };
-MANAGER_DECL(System)
+MANAGER_DECL_INLINE(System);
 
 #endif  // BATTLE_SYSTEM_H

@@ -120,7 +120,8 @@ SECTIONS
         *libc.a:*(.text);
 
         *.o(.gnu.linkonce.t._._6ResPtr);
-        build/mother3/src/rom3.o(.text);
+        build/mother3/src/battle/system.o(.gnu.linkonce.t.*);
+        *.o(.gnu.linkonce.t._._5Event);
         build/mother3/src/rom3a0.o(.text);
         build/mother3/src/rom3a1.o(.text);
         build/mother3/asm/monsterImplTmp.o(.text);
@@ -130,10 +131,10 @@ SECTIONS
         build/mother3/src/rom3ab.o(.text);
         build/mother3/src/battle/goods2.o(.text);
         build/mother3/src/battle/goods2.o(.gnu.linkonce.t.*);
-
         build/mother3/src/rom3b.o(.text);
         build/mother3/src/battle/inst/inst.o(.text);
         build/mother3/src/battle/inst/keypadImpl.o(.text);
+        build/mother3/src/battle/keypad.o(.gnu.linkonce.t.*);
         build/mother3/src/battle/inst/inst2.o(.text);
 
         build/mother3/data/data1.o(.rodata);

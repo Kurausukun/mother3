@@ -20,4 +20,3 @@ DUMP_INLINE_RTTI(DownKeyLongPress);
 DUMP_INLINE_RTTI(DownKeyPress);
 DUMP_INLINE_RTTI(UpKeyLongPress);
 DUMP_INLINE_RTTI(UpKeyPress);
-DUMP_INLINE(KeyPadManager);

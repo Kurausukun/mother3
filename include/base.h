@@ -73,8 +73,6 @@ public:
 
 struct Event : public Base {
     virtual ~Event() {}
-
-    INLINE_VT_END
 };
 
 struct Color {
