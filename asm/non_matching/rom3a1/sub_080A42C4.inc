@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A42C4:
+__11MechaTurtleUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -82,6 +82,6 @@ _080A4378: .4byte _vt.13UnitTurnBegin
 _080A437C: .4byte gUnknown_080F8E5C
 _080A4380: .4byte _vt.11UnitTurnEnd
 _080A4384: .4byte gUnknown_080F8E64
-_080A4388: .4byte vt_09F5C818
-_080A438C: .4byte vt_09F5C890
+_080A4388: .4byte _vt.11MechaTurtle.10UnitObject
+_080A438C: .4byte _vt.11MechaTurtle
 	.syntax divided

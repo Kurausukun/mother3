@@ -8,7 +8,7 @@ create__11FuelFactoryUs:
 	lsls r0, r0, #1
 	bl __builtin_new
 	adds r1, r4, #0
-	bl sub_080A008C
+	bl __4FuelUs
 	pop {r4}
 	pop {r1}
 	bx r1

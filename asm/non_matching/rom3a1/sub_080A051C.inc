@@ -169,7 +169,7 @@ _080A064E:
 	adds r1, r1, r0
 	ldrh r0, [r1]
 	mov r1, r8
-	bl sub_08074124
+	bl getGuestSkill
 	adds r4, r0, #0
 	ldr r0, [sp, #8]
 	cmp r0, #0

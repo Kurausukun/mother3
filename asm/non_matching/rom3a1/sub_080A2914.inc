@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A2914:
+__13EerieSmile4thUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -82,6 +82,6 @@ _080A29C8: .4byte _vt.13UnitTurnBegin
 _080A29CC: .4byte gUnknown_080F8E5C
 _080A29D0: .4byte _vt.11UnitTurnEnd
 _080A29D4: .4byte gUnknown_080F8E64
-_080A29D8: .4byte vt_09F53608
-_080A29DC: .4byte vt_09F53680
+_080A29D8: .4byte _vt.13EerieSmile4th.10UnitObject
+_080A29DC: .4byte _vt.13EerieSmile4th
 	.syntax divided

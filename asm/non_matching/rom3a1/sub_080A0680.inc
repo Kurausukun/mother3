@@ -87,7 +87,7 @@ _080A072C:
 	movs r0, #0x19
 _080A072E:
 	adds r1, r4, #0
-	bl sub_08074124
+	bl getGuestSkill
 _080A0734:
 	pop {r4}
 	pop {r1}

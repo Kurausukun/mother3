@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809FE04:
+__6FassadUs:
 	push {r4, r5, r6, lr}
 	mov r6, sb
 	mov r5, r8
@@ -84,13 +84,13 @@ sub_0809FE04:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0809FEC0: .4byte vt_09F4D280
-_0809FEC4: .4byte vt_09F4D2F8
+_0809FEC0: .4byte _vt.12DefaultGuest.10UnitObject
+_0809FEC4: .4byte _vt.12DefaultGuest
 _0809FEC8: .4byte _vt.5Event
 _0809FECC: .4byte _vt.13UnitTurnBegin
 _0809FED0: .4byte gUnknown_080F741C
 _0809FED4: .4byte _vt.11UnitTurnEnd
 _0809FED8: .4byte gUnknown_080F7424
-_0809FEDC: .4byte vt_09F4C0D0
-_0809FEE0: .4byte vt_09F4C148
+_0809FEDC: .4byte _vt.6Fassad.10UnitObject
+_0809FEE0: .4byte _vt.6Fassad
 	.syntax divided

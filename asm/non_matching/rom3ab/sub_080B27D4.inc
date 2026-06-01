@@ -7,5 +7,5 @@ sub_080B27D4:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080B27E4: .4byte vt_09F72120
+_080B27E4: .4byte _vt.19DefaultMonsterSkill
 	.syntax divided

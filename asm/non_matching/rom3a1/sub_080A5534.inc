@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A5534:
+__12SootDumplingUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -82,6 +82,6 @@ _080A55E8: .4byte _vt.13UnitTurnBegin
 _080A55EC: .4byte gUnknown_080F8E5C
 _080A55F0: .4byte _vt.11UnitTurnEnd
 _080A55F4: .4byte gUnknown_080F8E64
-_080A55F8: .4byte vt_09F62FD8
-_080A55FC: .4byte vt_09F63050
+_080A55F8: .4byte _vt.12SootDumpling.10UnitObject
+_080A55FC: .4byte _vt.12SootDumpling
 	.syntax divided

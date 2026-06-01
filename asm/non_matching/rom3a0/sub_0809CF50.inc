@@ -22,6 +22,6 @@ sub_0809CF50:
 	.align 2, 0
 _0809CF7C: .4byte vt_09F48200
 _0809CF80: .4byte vt_09F48278
-_0809CF84: .4byte vt_09F48BF8
-_0809CF88: .4byte vt_09F48C70
+_0809CF84: .4byte _vt.13DefaultPlayer.10UnitObject
+_0809CF88: .4byte _vt.13DefaultPlayer
 	.syntax divided

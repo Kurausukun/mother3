@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A1B98:
+__5PorkyUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, sb
 	mov r5, r8
@@ -104,6 +104,6 @@ _080A1C7C: .4byte _vt.13UnitTurnBegin
 _080A1C80: .4byte gUnknown_080F8E5C
 _080A1C84: .4byte _vt.11UnitTurnEnd
 _080A1C88: .4byte gUnknown_080F8E64
-_080A1C8C: .4byte vt_09F4F2E0
-_080A1C90: .4byte vt_09F4F358
+_080A1C8C: .4byte _vt.5Porky.10UnitObject
+_080A1C90: .4byte _vt.5Porky
 	.syntax divided

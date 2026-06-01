@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A1AC4:
+__21AbsolutelySafeCapsuleUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -86,6 +86,6 @@ _080A1B80: .4byte _vt.13UnitTurnBegin
 _080A1B84: .4byte gUnknown_080F8E5C
 _080A1B88: .4byte _vt.11UnitTurnEnd
 _080A1B8C: .4byte gUnknown_080F8E64
-_080A1B90: .4byte vt_09F4EE30
-_080A1B94: .4byte vt_09F4EEA8
+_080A1B90: .4byte _vt.21AbsolutelySafeCapsule.10UnitObject
+_080A1B94: .4byte _vt.21AbsolutelySafeCapsule
 	.syntax divided

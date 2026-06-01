@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809FD44:
+__5IoniaUs:
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -69,13 +69,13 @@ sub_0809FD44:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0809FDE0: .4byte vt_09F4D280
-_0809FDE4: .4byte vt_09F4D2F8
+_0809FDE0: .4byte _vt.12DefaultGuest.10UnitObject
+_0809FDE4: .4byte _vt.12DefaultGuest
 _0809FDE8: .4byte _vt.5Event
 _0809FDEC: .4byte _vt.13UnitTurnBegin
 _0809FDF0: .4byte gUnknown_080F741C
 _0809FDF4: .4byte _vt.11UnitTurnEnd
 _0809FDF8: .4byte gUnknown_080F7424
-_0809FDFC: .4byte vt_09F4BD50
-_0809FE00: .4byte vt_09F4BDC8
+_0809FDFC: .4byte _vt.5Ionia.10UnitObject
+_0809FE00: .4byte _vt.5Ionia
 	.syntax divided

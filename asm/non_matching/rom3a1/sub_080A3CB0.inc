@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A3CB0:
+__9MinorRoboUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, sb
 	mov r5, r8
@@ -92,6 +92,6 @@ _080A3D78: .4byte _vt.13UnitTurnBegin
 _080A3D7C: .4byte gUnknown_080F8E5C
 _080A3D80: .4byte _vt.11UnitTurnEnd
 _080A3D84: .4byte gUnknown_080F8E64
-_080A3D88: .4byte vt_09F5A708
-_080A3D8C: .4byte vt_09F5A780
+_080A3D88: .4byte _vt.9MinorRobo.10UnitObject
+_080A3D8C: .4byte _vt.9MinorRobo
 	.syntax divided

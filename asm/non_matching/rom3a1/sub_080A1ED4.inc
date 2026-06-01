@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A1ED4:
+__19NaturalKillerCyborgUsUs:
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -100,6 +100,6 @@ _080A1FA8: .4byte _vt.13UnitTurnBegin
 _080A1FAC: .4byte gUnknown_080F8E5C
 _080A1FB0: .4byte _vt.11UnitTurnEnd
 _080A1FB4: .4byte gUnknown_080F8E64
-_080A1FB8: .4byte vt_09F501A0
-_080A1FBC: .4byte vt_09F50218
+_080A1FB8: .4byte _vt.19NaturalKillerCyborg.10UnitObject
+_080A1FBC: .4byte _vt.19NaturalKillerCyborg
 	.syntax divided

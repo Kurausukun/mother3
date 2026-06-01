@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A3A38:
+__15MissMarshmallowUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, sb
 	mov r5, r8
@@ -92,6 +92,6 @@ _080A3B00: .4byte _vt.13UnitTurnBegin
 _080A3B04: .4byte gUnknown_080F8E5C
 _080A3B08: .4byte _vt.11UnitTurnEnd
 _080A3B0C: .4byte gUnknown_080F8E64
-_080A3B10: .4byte vt_09F598E0
-_080A3B14: .4byte vt_09F59958
+_080A3B10: .4byte _vt.15MissMarshmallow.10UnitObject
+_080A3B14: .4byte _vt.15MissMarshmallow
 	.syntax divided

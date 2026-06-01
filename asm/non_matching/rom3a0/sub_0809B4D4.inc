@@ -43,7 +43,7 @@ _0809B51E:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0809B52C: .4byte vt_09F46450
+_0809B52C: .4byte _vt.13DefaultBattle
 _0809B530: .4byte 0x00000F84
 _0809B534: .4byte 0x00000F78
 _0809B538: .4byte 0x00000F6C

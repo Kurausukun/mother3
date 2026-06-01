@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A3E8C:
+__11AtomicRobotUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -87,6 +87,6 @@ _080A3F48: .4byte _vt.13UnitTurnBegin
 _080A3F4C: .4byte gUnknown_080F8E5C
 _080A3F50: .4byte _vt.11UnitTurnEnd
 _080A3F54: .4byte gUnknown_080F8E64
-_080A3F58: .4byte vt_09F5B088
-_080A3F5C: .4byte vt_09F5B100
+_080A3F58: .4byte _vt.11AtomicRobot.10UnitObject
+_080A3F5C: .4byte _vt.11AtomicRobot
 	.syntax divided

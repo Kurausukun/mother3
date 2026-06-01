@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A3478:
+__12SteelGorillaUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, sb
 	mov r5, r8
@@ -90,6 +90,6 @@ _080A353C: .4byte _vt.13UnitTurnBegin
 _080A3540: .4byte gUnknown_080F8E5C
 _080A3544: .4byte _vt.11UnitTurnEnd
 _080A3548: .4byte gUnknown_080F8E64
-_080A354C: .4byte vt_09F577D0
-_080A3550: .4byte vt_09F57848
+_080A354C: .4byte _vt.12SteelGorilla.10UnitObject
+_080A3550: .4byte _vt.12SteelGorilla
 	.syntax divided

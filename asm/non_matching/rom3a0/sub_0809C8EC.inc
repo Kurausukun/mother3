@@ -47,7 +47,7 @@ _0809C938:
 	movs r0, #6
 _0809C952:
 	adds r1, r4, #0
-	bl sub_08073F88
+	bl getPlayerSkill
 	bl triggerMonsterSkill
 	b _0809C96E
 _0809C95E:
@@ -55,7 +55,7 @@ _0809C95E:
 	bgt _0809C96E
 	movs r0, #7
 	adds r1, r4, #0
-	bl sub_08073F88
+	bl getPlayerSkill
 	bl triggerMonsterSkill
 _0809C96E:
 	pop {r4}

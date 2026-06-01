@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A1630:
+create__15PseudoorFactoryUsUs:
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -12,7 +12,7 @@ sub_080A1630:
 	bl __builtin_new
 	adds r1, r4, #0
 	adds r2, r5, #0
-	bl sub_080A4BE4
+	bl __8PseudoorUsUs
 	pop {r4, r5}
 	pop {r1}
 	bx r1

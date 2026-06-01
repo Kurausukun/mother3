@@ -6,6 +6,7 @@
 class Player : public Unit {
 public:
     Player();
+    Player(u16, u16);
     virtual ~Player();
 
     virtual void player_2c0();

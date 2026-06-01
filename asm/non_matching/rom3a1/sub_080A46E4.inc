@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A46E4:
+__8PigtuniaUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -82,6 +82,6 @@ _080A4798: .4byte _vt.13UnitTurnBegin
 _080A479C: .4byte gUnknown_080F8E5C
 _080A47A0: .4byte _vt.11UnitTurnEnd
 _080A47A4: .4byte gUnknown_080F8E64
-_080A47A8: .4byte vt_09F5DFA0
-_080A47AC: .4byte vt_09F5E018
+_080A47A8: .4byte _vt.8Pigtunia.10UnitObject
+_080A47AC: .4byte _vt.8Pigtunia
 	.syntax divided

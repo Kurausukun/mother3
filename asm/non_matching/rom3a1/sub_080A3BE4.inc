@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A3BE4:
+__10BatteryManUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -82,6 +82,6 @@ _080A3C98: .4byte _vt.13UnitTurnBegin
 _080A3C9C: .4byte gUnknown_080F8E5C
 _080A3CA0: .4byte _vt.11UnitTurnEnd
 _080A3CA4: .4byte gUnknown_080F8E64
-_080A3CA8: .4byte vt_09F5A258
-_080A3CAC: .4byte vt_09F5A2D0
+_080A3CA8: .4byte _vt.10BatteryMan.10UnitObject
+_080A3CAC: .4byte _vt.10BatteryMan
 	.syntax divided

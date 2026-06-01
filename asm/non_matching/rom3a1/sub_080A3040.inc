@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A3040:
+__10NavySquealUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -82,6 +82,6 @@ _080A30F4: .4byte _vt.13UnitTurnBegin
 _080A30F8: .4byte gUnknown_080F8E5C
 _080A30FC: .4byte _vt.11UnitTurnEnd
 _080A3100: .4byte gUnknown_080F8E64
-_080A3104: .4byte vt_09F56038
-_080A3108: .4byte vt_09F560B0
+_080A3104: .4byte _vt.10NavySqueal.10UnitObject
+_080A3108: .4byte _vt.10NavySqueal
 	.syntax divided

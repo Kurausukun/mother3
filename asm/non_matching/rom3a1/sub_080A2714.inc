@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A2714:
+__11BarrierTrioUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, sb
 	mov r5, r8
@@ -128,6 +128,6 @@ _080A2830: .4byte _vt.13UnitTurnBegin
 _080A2834: .4byte gUnknown_080F8E5C
 _080A2838: .4byte _vt.11UnitTurnEnd
 _080A283C: .4byte gUnknown_080F8E64
-_080A2840: .4byte vt_09F52C70
-_080A2844: .4byte vt_09F52CE8
+_080A2840: .4byte _vt.11BarrierTrio.10UnitObject
+_080A2844: .4byte _vt.11BarrierTrio
 	.syntax divided

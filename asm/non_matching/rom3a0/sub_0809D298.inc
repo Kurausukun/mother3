@@ -224,7 +224,7 @@ _0809D418:
 	adds r0, r0, r5
 	ldrh r0, [r0]
 	adds r1, r7, #0
-	bl sub_08074098
+	bl getGoods
 	adds r4, r0, #0
 	bl sub_08072A88__Fv
 	adds r1, r0, #0
@@ -240,7 +240,7 @@ _0809D488:
 	movs r0, #2
 _0809D48A:
 	adds r1, r7, #0
-	bl sub_08073F88
+	bl getPlayerSkill
 	bl triggerMonsterSkill
 _0809D494:
 	adds r4, r0, #0

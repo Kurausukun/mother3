@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080BC4B4:
+__10DefaultPsiUsP4Unit:
 	push {r4, lr}
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
@@ -12,5 +12,5 @@ sub_080BC4B4:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080BC4CC: .4byte __vt_5Goods
+_080BC4CC: .4byte _vt.10DefaultPsi
 	.syntax divided

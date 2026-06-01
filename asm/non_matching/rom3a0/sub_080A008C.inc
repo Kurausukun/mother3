@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A008C:
+__4FuelUs:
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -69,13 +69,13 @@ sub_080A008C:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080A0128: .4byte vt_09F4D280
-_080A012C: .4byte vt_09F4D2F8
+_080A0128: .4byte _vt.12DefaultGuest.10UnitObject
+_080A012C: .4byte _vt.12DefaultGuest
 _080A0130: .4byte _vt.5Event
 _080A0134: .4byte _vt.13UnitTurnBegin
 _080A0138: .4byte gUnknown_080F741C
 _080A013C: .4byte _vt.11UnitTurnEnd
 _080A0140: .4byte gUnknown_080F7424
-_080A0144: .4byte vt_09F4CB80
-_080A0148: .4byte vt_09F4CBF8
+_080A0144: .4byte _vt.4Fuel.10UnitObject
+_080A0148: .4byte _vt.4Fuel
 	.syntax divided

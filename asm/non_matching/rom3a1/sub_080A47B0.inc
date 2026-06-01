@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A47B0:
+__11CattlesnakeUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -82,6 +82,6 @@ _080A4864: .4byte _vt.13UnitTurnBegin
 _080A4868: .4byte gUnknown_080F8E5C
 _080A486C: .4byte _vt.11UnitTurnEnd
 _080A4870: .4byte gUnknown_080F8E64
-_080A4874: .4byte vt_09F5E450
-_080A4878: .4byte vt_09F5E4C8
+_080A4874: .4byte _vt.11Cattlesnake.10UnitObject
+_080A4878: .4byte _vt.11Cattlesnake
 	.syntax divided

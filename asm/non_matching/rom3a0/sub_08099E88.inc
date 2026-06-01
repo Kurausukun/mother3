@@ -58,9 +58,9 @@ _08099EF0:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08099F00: .4byte vt_09F458E8
+_08099F00: .4byte _vt.16MaskedManBattleA
 _08099F04: .4byte 0x00000F98
-_08099F08: .4byte vt_09F46450
+_08099F08: .4byte _vt.13DefaultBattle
 _08099F0C: .4byte 0x00000F84
 _08099F10: .4byte 0x00000F78
 _08099F14: .4byte 0x00000F6C

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08061004:
+create__13PlayerFactoryUsUs:
 	push {lr}
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
@@ -13,5 +13,5 @@ sub_08061004:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08061020: .4byte gUnknown_020021C0
+_08061020: .4byte sPlayerSpawners
 	.syntax divided

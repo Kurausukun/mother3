@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0805EFFC:
+create__13BattleFactoryUs:
 	push {lr}
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
@@ -11,5 +11,5 @@ sub_0805EFFC:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0805F014: .4byte gUnknown_02002018
+_0805F014: .4byte sBattleSpawners
 	.syntax divided

@@ -7,5 +7,5 @@ sub_0809FC10:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0809FC20: .4byte vt_09F4B6A8
+_0809FC20: .4byte _vt.18DefaultPlayerSkill
 	.syntax divided

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A33AC:
+__10ScaredyBotUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -82,6 +82,6 @@ _080A3460: .4byte _vt.13UnitTurnBegin
 _080A3464: .4byte gUnknown_080F8E5C
 _080A3468: .4byte _vt.11UnitTurnEnd
 _080A346C: .4byte gUnknown_080F8E64
-_080A3470: .4byte vt_09F57320
-_080A3474: .4byte vt_09F57398
+_080A3470: .4byte _vt.10ScaredyBot.10UnitObject
+_080A3474: .4byte _vt.10ScaredyBot
 	.syntax divided

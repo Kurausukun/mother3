@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A3B18:
+__11SurpriseBoxUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -82,6 +82,6 @@ _080A3BCC: .4byte _vt.13UnitTurnBegin
 _080A3BD0: .4byte gUnknown_080F8E5C
 _080A3BD4: .4byte _vt.11UnitTurnEnd
 _080A3BD8: .4byte gUnknown_080F8E64
-_080A3BDC: .4byte vt_09F59DA8
-_080A3BE0: .4byte vt_09F59E20
+_080A3BDC: .4byte _vt.11SurpriseBox.10UnitObject
+_080A3BE0: .4byte _vt.11SurpriseBox
 	.syntax divided

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A2460:
+__12MaskedMan1stUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, sb
 	mov r5, r8
@@ -110,6 +110,6 @@ _080A2550: .4byte _vt.13UnitTurnBegin
 _080A2554: .4byte gUnknown_080F8E5C
 _080A2558: .4byte _vt.11UnitTurnEnd
 _080A255C: .4byte gUnknown_080F8E64
-_080A2560: .4byte vt_09F51E28
-_080A2564: .4byte vt_09F51EA0
+_080A2560: .4byte _vt.12MaskedMan1st.10UnitObject
+_080A2564: .4byte _vt.12MaskedMan1st
 	.syntax divided

@@ -15,7 +15,7 @@ sub_080A0374:
 	movs r0, #0x1e
 _080A0390:
 	adds r1, r4, #0
-	bl sub_08074124
+	bl getGuestSkill
 	pop {r4}
 	pop {r1}
 	bx r1

@@ -9,9 +9,9 @@ sub_0805D8C8:
 	str r0, [r1]
 	cmp r0, #1
 	bne _0805D8E8
-	bl sub_0805EF90
+	bl init__13BattleFactory
 	adds r0, r4, #0
-	bl sub_0805EFFC
+	bl create__13BattleFactoryUs
 	ldr r1, _0805D8F8
 	str r0, [r1]
 _0805D8E8:

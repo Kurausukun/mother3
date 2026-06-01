@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A0E74:
+create__21MechaPorky0607FactoryUsUs:
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -12,7 +12,7 @@ sub_080A0E74:
 	bl __builtin_new
 	adds r1, r4, #0
 	adds r2, r5, #0
-	bl sub_080A1C94
+	bl __14MechaPorky0607UsUs
 	pop {r4, r5}
 	pop {r1}
 	bx r1

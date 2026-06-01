@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A2EA8:
+__10MasterEddyUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -82,6 +82,6 @@ _080A2F5C: .4byte _vt.13UnitTurnBegin
 _080A2F60: .4byte gUnknown_080F8E5C
 _080A2F64: .4byte _vt.11UnitTurnEnd
 _080A2F68: .4byte gUnknown_080F8E64
-_080A2F6C: .4byte vt_09F556D8
-_080A2F70: .4byte vt_09F55750
+_080A2F6C: .4byte _vt.10MasterEddy.10UnitObject
+_080A2F70: .4byte _vt.10MasterEddy
 	.syntax divided

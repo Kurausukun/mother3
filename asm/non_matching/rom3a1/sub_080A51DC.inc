@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A51DC:
+__4TreeUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, sb
 	mov r5, r8
@@ -93,6 +93,6 @@ _080A52A4: .4byte _vt.13UnitTurnBegin
 _080A52A8: .4byte gUnknown_080F8E5C
 _080A52AC: .4byte _vt.11UnitTurnEnd
 _080A52B0: .4byte gUnknown_080F8E64
-_080A52B4: .4byte vt_09F61D18
-_080A52B8: .4byte vt_09F61D90
+_080A52B4: .4byte _vt.4Tree.10UnitObject
+_080A52B8: .4byte _vt.4Tree
 	.syntax divided

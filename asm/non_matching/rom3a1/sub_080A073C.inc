@@ -9,6 +9,6 @@ sub_080A073C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080A0750: .4byte vt_09F4D280
-_080A0754: .4byte vt_09F4D2F8
+_080A0750: .4byte _vt.12DefaultGuest.10UnitObject
+_080A0754: .4byte _vt.12DefaultGuest
 	.syntax divided

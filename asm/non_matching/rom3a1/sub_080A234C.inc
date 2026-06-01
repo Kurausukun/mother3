@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A234C:
+__9MiracleFassadUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, sb
 	mov r5, r8
@@ -116,6 +116,6 @@ _080A2448: .4byte _vt.13UnitTurnBegin
 _080A244C: .4byte gUnknown_080F8E5C
 _080A2450: .4byte _vt.11UnitTurnEnd
 _080A2454: .4byte gUnknown_080F8E64
-_080A2458: .4byte vt_09F51958
-_080A245C: .4byte vt_09F519D0
+_080A2458: .4byte _vt.9MiracleFassad.10UnitObject
+_080A245C: .4byte _vt.9MiracleFassad
 	.syntax divided

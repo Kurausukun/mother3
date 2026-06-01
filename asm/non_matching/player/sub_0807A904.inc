@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0807A904:
+__6PlayerUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, sb
 	mov r5, r8
@@ -191,7 +191,7 @@ sub_0807A904:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0807AAB4: .4byte vt_09F82070
+_0807AAB4: .4byte _vt.6Player.10UnitObject
 _0807AAB8: .4byte _vt.6Player
 _0807AABC: .4byte gCharStats
 _0807AAC0: .4byte gLevelStatTable

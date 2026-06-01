@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A29E0:
+__8TitanianUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -82,6 +82,6 @@ _080A2A94: .4byte _vt.13UnitTurnBegin
 _080A2A98: .4byte gUnknown_080F8E5C
 _080A2A9C: .4byte _vt.11UnitTurnEnd
 _080A2AA0: .4byte gUnknown_080F8E64
-_080A2AA4: .4byte vt_09F53AB8
-_080A2AA8: .4byte vt_09F53B30
+_080A2AA4: .4byte _vt.8Titanian.10UnitObject
+_080A2AA8: .4byte _vt.8Titanian
 	.syntax divided

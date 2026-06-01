@@ -7,5 +7,5 @@ sub_080BC5C4:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080BC5D4: .4byte __vt_5Goods
+_080BC5D4: .4byte _vt.10DefaultPsi
 	.syntax divided

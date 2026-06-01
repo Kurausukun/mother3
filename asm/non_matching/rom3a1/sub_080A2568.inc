@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A2568:
+__9HuggyBombUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, sb
 	mov r5, r8
@@ -92,6 +92,6 @@ _080A2630: .4byte _vt.13UnitTurnBegin
 _080A2634: .4byte gUnknown_080F8E5C
 _080A2638: .4byte _vt.11UnitTurnEnd
 _080A263C: .4byte gUnknown_080F8E64
-_080A2640: .4byte vt_09F522E0
-_080A2644: .4byte vt_09F52358
+_080A2640: .4byte _vt.9HuggyBomb.10UnitObject
+_080A2644: .4byte _vt.9HuggyBomb
 	.syntax divided

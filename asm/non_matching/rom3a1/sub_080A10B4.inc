@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A10B4:
+create__16MonkalrusFactoryUsUs:
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -12,7 +12,7 @@ sub_080A10B4:
 	bl __builtin_new
 	adds r1, r4, #0
 	adds r2, r5, #0
-	bl sub_080A2B78
+	bl __9MonkalrusUsUs
 	pop {r4, r5}
 	pop {r1}
 	bx r1

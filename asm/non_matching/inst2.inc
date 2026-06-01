@@ -353,7 +353,7 @@ init__10PlayerRTTI: @ 0x080C166C
 	movs r0, #0x87
 	lsls r0, r0, #2
 	bl __builtin_new
-	bl sub_0807C6B8
+	bl __6Player
 	pop {r1}
 	bx r1
 	.align 2, 0

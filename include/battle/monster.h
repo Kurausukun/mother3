@@ -169,7 +169,7 @@ public:
         Clayman = 0x4,
         MechaDrago = 0x5,
         PorkTank = 0x6,
-        MrGenerator = 0x7,
+        MrGenetor = 0x7,
         MoleCricket1st = 0x8,
         EerieSmile1st = 0x9,
         BrightSmile = 0xA,

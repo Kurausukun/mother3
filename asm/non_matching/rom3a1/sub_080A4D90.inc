@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A4D90:
+__8ArachnidUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, sb
 	mov r5, r8
@@ -92,6 +92,6 @@ _080A4E58: .4byte _vt.13UnitTurnBegin
 _080A4E5C: .4byte gUnknown_080F8E5C
 _080A4E60: .4byte _vt.11UnitTurnEnd
 _080A4E64: .4byte gUnknown_080F8E64
-_080A4E68: .4byte vt_09F60550
-_080A4E6C: .4byte vt_09F605C8
+_080A4E68: .4byte _vt.8Arachnid.10UnitObject
+_080A4E6C: .4byte _vt.8Arachnid
 	.syntax divided

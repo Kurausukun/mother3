@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A3D90:
+__11SadJunkHeapUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -104,6 +104,6 @@ _080A3E74: .4byte _vt.13UnitTurnBegin
 _080A3E78: .4byte gUnknown_080F8E5C
 _080A3E7C: .4byte _vt.11UnitTurnEnd
 _080A3E80: .4byte gUnknown_080F8E64
-_080A3E84: .4byte vt_09F5ABD0
-_080A3E88: .4byte vt_09F5AC48
+_080A3E84: .4byte _vt.11SadJunkHeap.10UnitObject
+_080A3E88: .4byte _vt.11SadJunkHeap
 	.syntax divided

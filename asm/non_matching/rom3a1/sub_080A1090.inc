@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A1090:
+create__20EerieSmile2ndFactoryUsUs:
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -12,7 +12,7 @@ sub_080A1090:
 	bl __builtin_new
 	adds r1, r4, #0
 	adds r2, r5, #0
-	bl sub_080A2AAC
+	bl __13EerieSmile2ndUsUs
 	pop {r4, r5}
 	pop {r1}
 	bx r1

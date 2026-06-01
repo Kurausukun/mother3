@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08097A94:
+__16MaskedManBattleAUs:
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	lsls r1, r1, #0x10
@@ -84,9 +84,9 @@ _08097AFC:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08097B44: .4byte vt_09F46450
+_08097B44: .4byte _vt.13DefaultBattle
 _08097B48: .4byte 0x00000F6C
-_08097B4C: .4byte vt_09F458E8
+_08097B4C: .4byte _vt.16MaskedManBattleA
 _08097B50: .4byte 0x00000F94
 _08097B54: .4byte gCharStats
 _08097B58: .4byte 0x00000F98

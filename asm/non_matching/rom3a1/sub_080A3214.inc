@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A3214:
+__7HotheadUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -82,6 +82,6 @@ _080A32C8: .4byte _vt.13UnitTurnBegin
 _080A32CC: .4byte gUnknown_080F8E5C
 _080A32D0: .4byte _vt.11UnitTurnEnd
 _080A32D4: .4byte gUnknown_080F8E64
-_080A32D8: .4byte vt_09F569C0
-_080A32DC: .4byte vt_09F56A38
+_080A32D8: .4byte _vt.7Hothead.10UnitObject
+_080A32DC: .4byte _vt.7Hothead
 	.syntax divided

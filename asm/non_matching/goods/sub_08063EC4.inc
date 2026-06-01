@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08063EC4:
+create__14MonsterFactoryUsUs:
 	push {lr}
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
@@ -13,5 +13,5 @@ sub_08063EC4:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08063EE0: .4byte gUnknown_02002540
+_08063EE0: .4byte sMonsterSpawners
 	.syntax divided

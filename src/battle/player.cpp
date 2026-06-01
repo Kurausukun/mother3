@@ -19,7 +19,7 @@ Msg createPlayerName(u16 pl) {
     return Msg::genMisctextMsg(gCharStats[pl].name, 8);
 }
 
-extern "C" ASM_FUNC("asm/non_matching/player/sub_0807A904.inc", void sub_0807A904());
+extern "C" ASM_FUNC("asm/non_matching/player/sub_0807A904.inc", void __6PlayerUsUs());
 extern "C" ASM_FUNC("asm/non_matching/player/sub_0807AAEC.inc", void sub_0807AAEC());
 extern "C" ASM_FUNC("asm/non_matching/player/sub_0807AC28.inc", void sub_0807AC28());
 extern "C" ASM_FUNC("asm/non_matching/player/sub_0807AC60.inc", void sub_0807AC60());
@@ -107,4 +107,4 @@ extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0807C634.inc", void sub_08
 extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0807C654.inc", void sub_0807C654());
 extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0807C674.inc", void sub_0807C674());
 extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0807C694.inc", void sub_0807C694());
-extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0807C6B8.inc", void sub_0807C6B8()); // 6Player
+extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0807C6B8.inc", void __6Player()); // 6Player

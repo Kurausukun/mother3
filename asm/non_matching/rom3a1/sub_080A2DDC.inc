@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A2DDC:
+__12ZombieshroomUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -82,6 +82,6 @@ _080A2E90: .4byte _vt.13UnitTurnBegin
 _080A2E94: .4byte gUnknown_080F8E5C
 _080A2E98: .4byte _vt.11UnitTurnEnd
 _080A2E9C: .4byte gUnknown_080F8E64
-_080A2EA0: .4byte vt_09F55228
-_080A2EA4: .4byte vt_09F552A0
+_080A2EA0: .4byte _vt.12Zombieshroom.10UnitObject
+_080A2EA4: .4byte _vt.12Zombieshroom
 	.syntax divided

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809C540:
+__13DefaultPlayerUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -9,7 +9,7 @@ sub_0809C540:
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_0807A904
+	bl __6PlayerUsUs
 	ldr r0, _0809C5CC
 	str r0, [r5, #0x20]
 	ldr r0, _0809C5D0
@@ -62,8 +62,8 @@ sub_0809C540:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0809C5CC: .4byte vt_09F48BF8
-_0809C5D0: .4byte vt_09F48C70
+_0809C5CC: .4byte _vt.13DefaultPlayer.10UnitObject
+_0809C5D0: .4byte _vt.13DefaultPlayer
 _0809C5D4: .4byte _vt.5Event
 _0809C5D8: .4byte _vt.13UnitTurnBegin
 _0809C5DC: .4byte gUnknown_080F52C8

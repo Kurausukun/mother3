@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A50FC:
+__9MrPassionUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, sb
 	mov r5, r8
@@ -93,6 +93,6 @@ _080A51C4: .4byte _vt.13UnitTurnBegin
 _080A51C8: .4byte gUnknown_080F8E5C
 _080A51CC: .4byte _vt.11UnitTurnEnd
 _080A51D0: .4byte gUnknown_080F8E64
-_080A51D4: .4byte vt_09F61850
-_080A51D8: .4byte vt_09F618C8
+_080A51D4: .4byte _vt.9MrPassion.10UnitObject
+_080A51D8: .4byte _vt.9MrPassion
 	.syntax divided

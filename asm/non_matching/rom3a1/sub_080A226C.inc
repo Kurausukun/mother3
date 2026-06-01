@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A226C:
+__14PorkLieutenantUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, sb
 	mov r5, r8
@@ -92,6 +92,6 @@ _080A2334: .4byte _vt.13UnitTurnBegin
 _080A2338: .4byte gUnknown_080F8E5C
 _080A233C: .4byte _vt.11UnitTurnEnd
 _080A2340: .4byte gUnknown_080F8E64
-_080A2344: .4byte vt_09F514A8
-_080A2348: .4byte vt_09F51520
+_080A2344: .4byte _vt.14PorkLieutenant.10UnitObject
+_080A2348: .4byte _vt.14PorkLieutenant
 	.syntax divided

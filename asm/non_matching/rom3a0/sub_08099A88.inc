@@ -82,7 +82,7 @@ _08099AAA:
 	ldrsh r5, [r4, r2]
 	adds r5, r1, r5
 	movs r0, #0x19
-	bl sub_08073F88
+	bl getPlayerSkill
 	adds r1, r0, #0
 	ldr r2, [r4, #4]
 	adds r0, r5, #0

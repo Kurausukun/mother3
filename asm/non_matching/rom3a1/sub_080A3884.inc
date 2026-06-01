@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A3884:
+__7BroTeamUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -82,6 +82,6 @@ _080A3938: .4byte _vt.13UnitTurnBegin
 _080A393C: .4byte gUnknown_080F8E5C
 _080A3940: .4byte _vt.11UnitTurnEnd
 _080A3944: .4byte gUnknown_080F8E64
-_080A3948: .4byte vt_09F58F60
-_080A394C: .4byte vt_09F58FD8
+_080A3948: .4byte _vt.7BroTeam.10UnitObject
+_080A394C: .4byte _vt.7BroTeam
 	.syntax divided

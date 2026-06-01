@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A3554:
+__7TenYetiUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -82,6 +82,6 @@ _080A3608: .4byte _vt.13UnitTurnBegin
 _080A360C: .4byte gUnknown_080F8E5C
 _080A3610: .4byte _vt.11UnitTurnEnd
 _080A3614: .4byte gUnknown_080F8E64
-_080A3618: .4byte vt_09F57C98
-_080A361C: .4byte vt_09F57D10
+_080A3618: .4byte _vt.7TenYeti.10UnitObject
+_080A361C: .4byte _vt.7TenYeti
 	.syntax divided

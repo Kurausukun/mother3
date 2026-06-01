@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A16C0:
+create__16OhSoSnakeFactoryUsUs:
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -12,7 +12,7 @@ sub_080A16C0:
 	bl __builtin_new
 	adds r1, r4, #0
 	adds r2, r5, #0
-	bl sub_080A4F3C
+	bl __9OhSoSnakeUsUs
 	pop {r4, r5}
 	pop {r1}
 	bx r1

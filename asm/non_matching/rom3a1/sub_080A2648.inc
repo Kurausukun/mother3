@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A2648:
+__7TLCTreeUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -82,6 +82,6 @@ _080A26FC: .4byte _vt.13UnitTurnBegin
 _080A2700: .4byte gUnknown_080F8E5C
 _080A2704: .4byte _vt.11UnitTurnEnd
 _080A2708: .4byte gUnknown_080F8E64
-_080A270C: .4byte vt_09F527C0
-_080A2710: .4byte vt_09F52838
+_080A270C: .4byte _vt.7TLCTree.10UnitObject
+_080A2710: .4byte _vt.7TLCTree
 	.syntax divided

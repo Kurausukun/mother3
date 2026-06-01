@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A1654:
+create__19RockingGhostFactoryUsUs:
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -12,7 +12,7 @@ sub_080A1654:
 	bl __builtin_new
 	adds r1, r4, #0
 	adds r2, r5, #0
-	bl sub_080A4CC4
+	bl __12RockingGhostUsUs
 	pop {r4, r5}
 	pop {r1}
 	bx r1

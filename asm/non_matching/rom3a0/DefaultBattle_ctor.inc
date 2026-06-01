@@ -1,5 +1,5 @@
 	.syntax unified
-DefaultBattle_ctor:
+__13DefaultBattleUs:
 	push {r4, lr}
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
@@ -38,6 +38,6 @@ DefaultBattle_ctor:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08097D68: .4byte vt_09F46450
+_08097D68: .4byte _vt.13DefaultBattle
 _08097D6C: .4byte 0x00000F6C
 	.syntax divided

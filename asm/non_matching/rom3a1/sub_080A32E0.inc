@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A32E0:
+__8BlazeflyUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -82,6 +82,6 @@ _080A3394: .4byte _vt.13UnitTurnBegin
 _080A3398: .4byte gUnknown_080F8E5C
 _080A339C: .4byte _vt.11UnitTurnEnd
 _080A33A0: .4byte gUnknown_080F8E64
-_080A33A4: .4byte vt_09F56E70
-_080A33A8: .4byte vt_09F56EE8
+_080A33A4: .4byte _vt.8Blazefly.10UnitObject
+_080A33A8: .4byte _vt.8Blazefly
 	.syntax divided

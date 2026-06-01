@@ -43,7 +43,7 @@ _08098926:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08098934: .4byte vt_09F46450
+_08098934: .4byte _vt.13DefaultBattle
 _08098938: .4byte 0x00000F84
 _0809893C: .4byte 0x00000F78
 _08098940: .4byte 0x00000F6C

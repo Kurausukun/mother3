@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A495C:
+__10SandLizardUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -82,6 +82,6 @@ _080A4A10: .4byte _vt.13UnitTurnBegin
 _080A4A14: .4byte gUnknown_080F8E5C
 _080A4A18: .4byte _vt.11UnitTurnEnd
 _080A4A1C: .4byte gUnknown_080F8E64
-_080A4A20: .4byte vt_09F5EDC8
-_080A4A24: .4byte vt_09F5EE40
+_080A4A20: .4byte _vt.10SandLizard.10UnitObject
+_080A4A24: .4byte _vt.10SandLizard
 	.syntax divided

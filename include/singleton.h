@@ -93,7 +93,6 @@ struct Singleton {
         static void destroy();                                                                     \
         virtual const char* getName() { return const_classname_##CLASS; }                           \
         virtual void* init() { return new CLASS; }                                                 \
-        INLINE_VT_END                                                                               \
                                                                                                    \
     private:                                                                                       \
         static s32 mSingletonGuard;                                                                \

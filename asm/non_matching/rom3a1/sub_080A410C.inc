@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A410C:
+__20WomanizingPigmask1stUsUs:
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -99,6 +99,6 @@ _080A41E0: .4byte _vt.13UnitTurnBegin
 _080A41E4: .4byte gUnknown_080F8E5C
 _080A41E8: .4byte _vt.11UnitTurnEnd
 _080A41EC: .4byte gUnknown_080F8E64
-_080A41F0: .4byte vt_09F5BEB8
-_080A41F4: .4byte vt_09F5BF30
+_080A41F0: .4byte _vt.20WomanizingPigmask1st.10UnitObject
+_080A41F4: .4byte _vt.20WomanizingPigmask1st
 	.syntax divided

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A4CC4:
+__12RockingGhostUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -82,6 +82,6 @@ _080A4D78: .4byte _vt.13UnitTurnBegin
 _080A4D7C: .4byte gUnknown_080F8E5C
 _080A4D80: .4byte _vt.11UnitTurnEnd
 _080A4D84: .4byte gUnknown_080F8E64
-_080A4D88: .4byte vt_09F600A0
-_080A4D8C: .4byte vt_09F60118
+_080A4D88: .4byte _vt.12RockingGhost.10UnitObject
+_080A4D8C: .4byte _vt.12RockingGhost
 	.syntax divided

@@ -43,7 +43,7 @@ sub_080A039C:
 _080A03F4:
 	movs r0, #0x21
 	adds r1, r5, #0
-	bl sub_08074124
+	bl getGuestSkill
 	b _080A0434
 _080A03FE:
 	movs r1, #0x84

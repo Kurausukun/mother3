@@ -82,7 +82,7 @@ extern "C" ASM_FUNC("asm/non_matching/rom3ab/sub_080AFC84.inc", void sub_080AFC8
 extern "C" ASM_FUNC("asm/non_matching/rom3ab/sub_080AFCA4.inc", void sub_080AFCA4());
 extern "C" ASM_FUNC("asm/non_matching/rom3ab/sub_080AFCC4.inc", void sub_080AFCC4());
 extern "C" ASM_FUNC("asm/non_matching/rom3ab/sub_080AFCE4.inc", void sub_080AFCE4());
-extern "C" ASM_FUNC("asm/non_matching/rom3ab/sub_080AFD04.inc", void sub_080AFD04());
+extern "C" ASM_FUNC("asm/non_matching/rom3ab/sub_080AFD04.inc", void create__26DefaultMonsterSkillFactoryUsP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/rom3ab/sub_080AFD24.inc", void sub_080AFD24());
 extern "C" ASM_FUNC("asm/non_matching/rom3ab/sub_080AFD40.inc", void sub_080AFD40());
 extern "C" ASM_FUNC("asm/non_matching/rom3ab/sub_080AFD5C.inc", void sub_080AFD5C());
@@ -164,7 +164,7 @@ extern "C" ASM_FUNC("asm/non_matching/rom3ab/sub_080B05C8.inc", void sub_080B05C
 extern "C" ASM_FUNC("asm/non_matching/rom3ab/sub_080B05E4.inc", void sub_080B05E4());
 extern "C" ASM_FUNC("asm/non_matching/rom3ab/sub_080B0604.inc", void sub_080B0604());
 extern "C" ASM_FUNC("asm/non_matching/rom3ab/sub_080B0624.inc", void sub_080B0624());
-extern "C" ASM_FUNC("asm/non_matching/rom3ab/sub_080B0640.inc", void sub_080B0640());
+extern "C" ASM_FUNC("asm/non_matching/rom3ab/sub_080B0640.inc", void __19DefaultMonsterSkillUsP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/rom3ab/sub_080B065C.inc", void sub_080B065C());
 extern "C" ASM_FUNC("asm/non_matching/rom3ab/sub_080B0758.inc", void sub_080B0758());
 extern "C" ASM_FUNC("asm/non_matching/rom3ab/sub_080B0774.inc", void sub_080B0774());
@@ -753,7 +753,7 @@ extern "C" ASM_FUNC("asm/non_matching/rom3ab/sub_080BC2A4.inc", void sub_080BC2A
 extern "C" ASM_FUNC("asm/non_matching/rom3ab/sub_080BC2C4.inc", void sub_080BC2C4());
 extern "C" ASM_FUNC("asm/non_matching/rom3ab/sub_080BC2E4.inc", void sub_080BC2E4());
 extern "C" ASM_FUNC("asm/non_matching/rom3ab/sub_080BC304.inc", void sub_080BC304());
-extern "C" ASM_FUNC("asm/non_matching/rom3ab/sub_080BC324.inc", void sub_080BC324());
+extern "C" ASM_FUNC("asm/non_matching/rom3ab/sub_080BC324.inc", void create__17DefaultPsiFactoryUsP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/rom3ab/sub_080BC344.inc", void sub_080BC344());
 extern "C" ASM_FUNC("asm/non_matching/rom3ab/sub_080BC360.inc", void sub_080BC360());
 extern "C" ASM_FUNC("asm/non_matching/rom3ab/sub_080BC37C.inc", void sub_080BC37C());
@@ -767,7 +767,7 @@ extern "C" ASM_FUNC("asm/non_matching/rom3ab/sub_080BC440.inc", void sub_080BC44
 extern "C" ASM_FUNC("asm/non_matching/rom3ab/sub_080BC460.inc", void sub_080BC460());
 extern "C" ASM_FUNC("asm/non_matching/rom3ab/sub_080BC47C.inc", void sub_080BC47C());
 extern "C" ASM_FUNC("asm/non_matching/rom3ab/sub_080BC498.inc", void sub_080BC498());
-extern "C" ASM_FUNC("asm/non_matching/rom3ab/sub_080BC4B4.inc", void sub_080BC4B4());
+extern "C" ASM_FUNC("asm/non_matching/rom3ab/sub_080BC4B4.inc", void __10DefaultPsiUsP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/rom3ab/sub_080BC4D0.inc", void sub_080BC4D0());
 extern "C" ASM_FUNC("asm/non_matching/rom3ab/sub_080BC5C4.inc", void sub_080BC5C4());
 extern "C" ASM_FUNC("asm/non_matching/rom3ab/sub_080BC5D8.inc", void sub_080BC5D8());

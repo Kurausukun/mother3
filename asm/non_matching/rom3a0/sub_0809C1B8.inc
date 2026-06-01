@@ -7,7 +7,7 @@ sub_0809C1B8:
 	lsrs r1, r1, #0x10
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
-	bl sub_0807A904
+	bl __6PlayerUsUs
 	ldr r0, _0809C270
 	str r0, [r7, #0x20]
 	ldr r0, _0809C274
@@ -78,8 +78,8 @@ _0809C25C:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0809C270: .4byte vt_09F48BF8
-_0809C274: .4byte vt_09F48C70
+_0809C270: .4byte _vt.13DefaultPlayer.10UnitObject
+_0809C274: .4byte _vt.13DefaultPlayer
 _0809C278: .4byte _vt.5Event
 _0809C27C: .4byte _vt.13UnitTurnBegin
 _0809C280: .4byte gUnknown_080F52C8

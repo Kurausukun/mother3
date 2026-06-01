@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A41F8:
+__11WoundupBearUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -82,6 +82,6 @@ _080A42AC: .4byte _vt.13UnitTurnBegin
 _080A42B0: .4byte gUnknown_080F8E5C
 _080A42B4: .4byte _vt.11UnitTurnEnd
 _080A42B8: .4byte gUnknown_080F8E64
-_080A42BC: .4byte vt_09F5C368
-_080A42C0: .4byte vt_09F5C3E0
+_080A42BC: .4byte _vt.11WoundupBear.10UnitObject
+_080A42C0: .4byte _vt.11WoundupBear
 	.syntax divided

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A218C:
+__12UpgradedRoboUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, sb
 	mov r5, r8
@@ -92,6 +92,6 @@ _080A2254: .4byte _vt.13UnitTurnBegin
 _080A2258: .4byte gUnknown_080F8E5C
 _080A225C: .4byte _vt.11UnitTurnEnd
 _080A2260: .4byte gUnknown_080F8E64
-_080A2264: .4byte vt_09F50FF8
-_080A2268: .4byte vt_09F51070
+_080A2264: .4byte _vt.12UpgradedRobo.10UnitObject
+_080A2268: .4byte _vt.12UpgradedRobo
 	.syntax divided

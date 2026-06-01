@@ -20,11 +20,11 @@ extern "C" s32 sub_08069558(s32 min, s32 max, s32 step, s32 duration);
 extern "C" BattleFader* sub_08072568();
 extern "C" BattleFader* sub_08072588();
 extern "C" BattleFader* sub_080725A8();
-extern "C" Action* sub_08064574(u16 arg0);
-extern "C" void* sub_08061A4C(u16 arg0);                      // TODO: confirm return type
-extern "C" void* sub_08064950(u16 arg0);                      // TODO: confirm return type
-extern "C" void* create__12GoodsFactoryUsP4UnitUs(u16 arg0, Unit* arg1, u16 arg2);  // TODO: confirm return type
-extern "C" void* sub_08062368(u16 arg0);                      // TODO: confirm return type
+extern "C" Action* create__19MonsterSkillFactoryUsP4Unit(u16 arg0, Unit* user);
+extern "C" Action* create__18PlayerSkillFactoryUsP4Unit(u16 arg0, Unit* user);                      // TODO: confirm return type
+extern "C" Action* create__10PsiFactoryUsP4Unit(u16 arg0, Unit* user);                      // TODO: confirm return type
+extern "C" Action* create__12GoodsFactoryUsP4UnitUs(u16 arg0, Unit* arg1, u16 arg2);  // TODO: confirm return type
+extern "C" Action* create__10GuestSkillFactoryUsP4Unit(u16 arg0, Unit* user);                      // TODO: confirm return type
 
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_080736F8.inc", void sub_080736F8());
 extern "C" ASM_FUNC("asm/non_matching/rhythm/hitPlayer.inc", void hitPlayer());
@@ -36,21 +36,21 @@ extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08073D98.inc", void sub_08073D9
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08073E3C.inc", void sub_08073E3C());
 extern "C" ASM_FUNC("asm/non_matching/rhythm/tellStatusWoreOff.inc", void tellStatusWoreOff());
 
-extern "C" void* sub_08073F88(u16 arg0) {
-    return sub_08061A4C(arg0);
+extern "C" Action* getPlayerSkill(u16 arg0, Unit* user) {
+    return create__18PlayerSkillFactoryUsP4Unit(arg0, user);
 }
 
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08073F98.inc", void sub_08073F98());
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08073FC4.inc", void sub_08073FC4());
 
-extern "C" void* sub_08074010(u16 arg0) {
-    return sub_08064950(arg0);
+extern "C" void* getPsi(u16 arg0, Unit* user) {
+    return create__10PsiFactoryUsP4Unit(arg0, user);
 }
 
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08074020.inc", void sub_08074020());
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_0807404C.inc", void sub_0807404C());
 
-extern "C" void* sub_08074098(u16 arg0, Unit* arg1, u16 arg2) {
+extern "C" Action* getGoods(u16 arg0, Unit* arg1, u16 arg2) {
     return create__12GoodsFactoryUsP4UnitUs(arg0, arg1, arg2);
 }
 
@@ -60,15 +60,15 @@ extern "C" bool IsGoodsAndType(Action* action, u16 id) {
     return action && action->getRTTI() == GoodsRTTI::get() && action->id() == id;
 }
 
-extern "C" void* sub_08074124(u16 arg0) {
-    return sub_08062368(arg0);
+extern "C" Action* getGuestSkill(u16 arg0, Unit* user) {
+    return create__10GuestSkillFactoryUsP4Unit(arg0, user);
 }
 
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08074134.inc", void sub_08074134());
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08074160.inc", void sub_08074160());
 
-extern "C" Action* getMonsterSkill(u16 arg0) {
-    return sub_08064574(arg0);
+extern "C" Action* getMonsterSkill(u16 arg0, Unit* user) {
+    return create__19MonsterSkillFactoryUsP4Unit(arg0, user);
 }
 
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_080741BC.inc", void sub_080741BC());

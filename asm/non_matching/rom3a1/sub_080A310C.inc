@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A310C:
+__9NewFassadUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, sb
 	mov r5, r8
@@ -110,6 +110,6 @@ _080A31FC: .4byte _vt.13UnitTurnBegin
 _080A3200: .4byte gUnknown_080F8E5C
 _080A3204: .4byte _vt.11UnitTurnEnd
 _080A3208: .4byte gUnknown_080F8E64
-_080A320C: .4byte vt_09F564E8
-_080A3210: .4byte vt_09F56560
+_080A320C: .4byte _vt.9NewFassad.10UnitObject
+_080A3210: .4byte _vt.9NewFassad
 	.syntax divided

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A487C:
+__10StickyGlopUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, sb
 	mov r5, r8
@@ -92,6 +92,6 @@ _080A4944: .4byte _vt.13UnitTurnBegin
 _080A4948: .4byte gUnknown_080F8E5C
 _080A494C: .4byte _vt.11UnitTurnEnd
 _080A4950: .4byte gUnknown_080F8E64
-_080A4954: .4byte vt_09F5E900
-_080A4958: .4byte vt_09F5E978
+_080A4954: .4byte _vt.10StickyGlop.10UnitObject
+_080A4958: .4byte _vt.10StickyGlop
 	.syntax divided

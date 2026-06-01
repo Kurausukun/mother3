@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A4BE4:
+__8PseudoorUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, sb
 	mov r5, r8
@@ -92,6 +92,6 @@ _080A4CAC: .4byte _vt.13UnitTurnBegin
 _080A4CB0: .4byte gUnknown_080F8E5C
 _080A4CB4: .4byte _vt.11UnitTurnEnd
 _080A4CB8: .4byte gUnknown_080F8E64
-_080A4CBC: .4byte vt_09F5FBF0
-_080A4CC0: .4byte vt_09F5FC68
+_080A4CBC: .4byte _vt.8Pseudoor.10UnitObject
+_080A4CC0: .4byte _vt.8Pseudoor
 	.syntax divided

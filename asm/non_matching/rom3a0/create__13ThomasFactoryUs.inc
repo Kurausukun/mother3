@@ -8,7 +8,7 @@ create__13ThomasFactoryUs:
 	lsls r0, r0, #1
 	bl __builtin_new
 	adds r1, r4, #0
-	bl sub_080A014C
+	bl __6ThomasUs
 	pop {r4}
 	pop {r1}
 	bx r1

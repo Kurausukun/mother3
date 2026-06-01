@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A4618:
+__10StickySlugUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -82,6 +82,6 @@ _080A46CC: .4byte _vt.13UnitTurnBegin
 _080A46D0: .4byte gUnknown_080F8E5C
 _080A46D4: .4byte _vt.11UnitTurnEnd
 _080A46D8: .4byte gUnknown_080F8E64
-_080A46DC: .4byte vt_09F5DAF0
-_080A46E0: .4byte vt_09F5DB68
+_080A46DC: .4byte _vt.10StickySlug.10UnitObject
+_080A46E0: .4byte _vt.10StickySlug
 	.syntax divided

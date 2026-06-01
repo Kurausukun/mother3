@@ -8,7 +8,7 @@ create__12IoniaFactoryUs:
 	lsls r0, r0, #1
 	bl __builtin_new
 	adds r1, r4, #0
-	bl sub_0809FD44
+	bl __5IoniaUs
 	pop {r4}
 	pop {r1}
 	bx r1

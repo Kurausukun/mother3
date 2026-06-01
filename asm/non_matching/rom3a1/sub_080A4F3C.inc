@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A4F3C:
+__9OhSoSnakeUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, sb
 	mov r5, r8
@@ -92,6 +92,6 @@ _080A5004: .4byte _vt.13UnitTurnBegin
 _080A5008: .4byte gUnknown_080F8E5C
 _080A500C: .4byte _vt.11UnitTurnEnd
 _080A5010: .4byte gUnknown_080F8E64
-_080A5014: .4byte vt_09F60EB0
-_080A5018: .4byte vt_09F60F28
+_080A5014: .4byte _vt.9OhSoSnake.10UnitObject
+_080A5018: .4byte _vt.9OhSoSnake
 	.syntax divided

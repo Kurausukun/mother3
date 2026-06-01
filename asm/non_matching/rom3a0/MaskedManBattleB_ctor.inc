@@ -1,5 +1,5 @@
 	.syntax unified
-MaskedManBattleB_ctor:
+create__23MaskedManBattleBFactoryUs:
 	push {r4, lr}
 	adds r4, r0, #0
 	lsls r4, r4, #0x10
@@ -7,7 +7,7 @@ MaskedManBattleB_ctor:
 	ldr r0, _0809794C
 	bl __builtin_new
 	adds r1, r4, #0
-	bl sub_08097A28
+	bl __16MaskedManBattleBUs
 	pop {r4}
 	pop {r1}
 	bx r1

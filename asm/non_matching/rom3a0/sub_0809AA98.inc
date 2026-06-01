@@ -169,7 +169,7 @@ sub_0809AA98:
 	bl _._3Msg
 	movs r0, #0xc
 	adds r1, r7, #0
-	bl sub_08073F88
+	bl getPlayerSkill
 	bl triggerMonsterSkill
 	ldr r3, [r6, #0x1c]
 	add r3, sb
@@ -215,7 +215,7 @@ sub_0809AA98:
 	bl _._3Msg
 	movs r0, #0xe
 	adds r1, r7, #0
-	bl sub_08073F88
+	bl getPlayerSkill
 	bl triggerMonsterSkill
 	ldr r1, [r6, #0x1c]
 	movs r3, #0x8a
@@ -299,7 +299,7 @@ sub_0809AA98:
 	bl _._3Msg
 	movs r0, #0x10
 	adds r1, r7, #0
-	bl sub_08073F88
+	bl getPlayerSkill
 	bl triggerMonsterSkill
 	ldr r1, [r6, #0x1c]
 	add r1, sl
@@ -380,7 +380,7 @@ sub_0809AA98:
 	bl _._3Msg
 	movs r0, #0x12
 	adds r1, r7, #0
-	bl sub_08073F88
+	bl getPlayerSkill
 	bl triggerMonsterSkill
 	ldr r1, [r6, #0x1c]
 	add r1, sl

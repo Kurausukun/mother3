@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A539C:
+__11WalkingBushUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -82,6 +82,6 @@ _080A5450: .4byte _vt.13UnitTurnBegin
 _080A5454: .4byte gUnknown_080F8E5C
 _080A5458: .4byte _vt.11UnitTurnEnd
 _080A545C: .4byte gUnknown_080F8E64
-_080A5460: .4byte vt_09F62678
-_080A5464: .4byte vt_09F626F0
+_080A5460: .4byte _vt.11WalkingBush.10UnitObject
+_080A5464: .4byte _vt.11WalkingBush
 	.syntax divided

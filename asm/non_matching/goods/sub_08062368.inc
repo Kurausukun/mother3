@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08062368:
+create__10GuestSkillFactoryUsP4Unit:
 	push {lr}
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
@@ -11,5 +11,5 @@ sub_08062368:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08062380: .4byte gUnknown_02002378
+_08062380: .4byte sGuestSkillSpawners
 	.syntax divided

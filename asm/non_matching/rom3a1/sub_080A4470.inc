@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A4470:
+__10BeatenDrumUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, sb
 	mov r5, r8
@@ -90,6 +90,6 @@ _080A4534: .4byte _vt.13UnitTurnBegin
 _080A4538: .4byte gUnknown_080F8E5C
 _080A453C: .4byte _vt.11UnitTurnEnd
 _080A4540: .4byte gUnknown_080F8E64
-_080A4544: .4byte vt_09F5D190
-_080A4548: .4byte vt_09F5D208
+_080A4544: .4byte _vt.10BeatenDrum.10UnitObject
+_080A4548: .4byte _vt.10BeatenDrum
 	.syntax divided

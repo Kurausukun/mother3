@@ -8,7 +8,7 @@ create__11WessFactoryUs:
 	lsls r0, r0, #1
 	bl __builtin_new
 	adds r1, r4, #0
-	bl sub_0809FEE4
+	bl __4WessUs
 	pop {r4}
 	pop {r1}
 	bx r1

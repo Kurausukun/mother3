@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A3620:
+__9ChillyDogUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -82,6 +82,6 @@ _080A36D4: .4byte _vt.13UnitTurnBegin
 _080A36D8: .4byte gUnknown_080F8E5C
 _080A36DC: .4byte _vt.11UnitTurnEnd
 _080A36E0: .4byte gUnknown_080F8E64
-_080A36E4: .4byte vt_09F58148
-_080A36E8: .4byte vt_09F581C0
+_080A36E4: .4byte _vt.9ChillyDog.10UnitObject
+_080A36E8: .4byte _vt.9ChillyDog
 	.syntax divided

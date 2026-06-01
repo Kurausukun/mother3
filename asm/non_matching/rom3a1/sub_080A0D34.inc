@@ -7,5 +7,5 @@ sub_080A0D34:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080A0D44: .4byte vt_09F4E080
+_080A0D44: .4byte _vt.17DefaultGuestSkill
 	.syntax divided

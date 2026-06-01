@@ -126,7 +126,7 @@ _0807FD60:
 	bl _call_via_r1
 	adds r1, r0, #0
 	adds r0, r4, #0
-	bl sub_08073F88
+	bl getPlayerSkill
 	adds r1, r0, #0
 	str r1, [r5, #0x38]
 	adds r0, r5, #0

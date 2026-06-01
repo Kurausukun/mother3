@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A4390:
+__11JealousBassUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, sb
 	mov r5, r8
@@ -92,6 +92,6 @@ _080A4458: .4byte _vt.13UnitTurnBegin
 _080A445C: .4byte gUnknown_080F8E5C
 _080A4460: .4byte _vt.11UnitTurnEnd
 _080A4464: .4byte gUnknown_080F8E64
-_080A4468: .4byte vt_09F5CCC8
-_080A446C: .4byte vt_09F5CD40
+_080A4468: .4byte _vt.11JealousBass.10UnitObject
+_080A446C: .4byte _vt.11JealousBass
 	.syntax divided

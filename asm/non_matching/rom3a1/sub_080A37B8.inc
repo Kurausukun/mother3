@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A37B8:
+__15AlmostMechaLionUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -82,6 +82,6 @@ _080A386C: .4byte _vt.13UnitTurnBegin
 _080A3870: .4byte gUnknown_080F8E5C
 _080A3874: .4byte _vt.11UnitTurnEnd
 _080A3878: .4byte gUnknown_080F8E64
-_080A387C: .4byte vt_09F58AA8
-_080A3880: .4byte vt_09F58B20
+_080A387C: .4byte _vt.15AlmostMechaLion.10UnitObject
+_080A3880: .4byte _vt.15AlmostMechaLion
 	.syntax divided

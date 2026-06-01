@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A0EBC:
+create__26NaturalKillerCyborgFactoryUsUs:
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -12,7 +12,7 @@ sub_080A0EBC:
 	bl __builtin_new
 	adds r1, r4, #0
 	adds r2, r5, #0
-	bl sub_080A1ED4
+	bl __19NaturalKillerCyborgUsUs
 	pop {r4, r5}
 	pop {r1}
 	bx r1

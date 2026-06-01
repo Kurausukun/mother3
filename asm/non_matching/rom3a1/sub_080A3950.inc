@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A3950:
+__9MrGenetorUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, sb
 	mov r5, r8
@@ -95,6 +95,6 @@ _080A3A20: .4byte _vt.13UnitTurnBegin
 _080A3A24: .4byte gUnknown_080F8E5C
 _080A3A28: .4byte _vt.11UnitTurnEnd
 _080A3A2C: .4byte gUnknown_080F8E64
-_080A3A30: .4byte vt_09F59410
-_080A3A34: .4byte vt_09F59488
+_080A3A30: .4byte _vt.9MrGenetor.10UnitObject
+_080A3A34: .4byte _vt.9MrGenetor
 	.syntax divided

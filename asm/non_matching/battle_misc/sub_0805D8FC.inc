@@ -208,15 +208,15 @@ _0805D9C6:
 	ldr r1, [r1, #4]
 	bl _call_via_r1
 	bl sub_08064590
-	bl sub_08060F80
-	bl sub_08061974
-	bl sub_08064834
+	bl init__13PlayerFactory
+	bl init__18PlayerSkillFactory
+	bl init__10PsiFactory
 	bl init__12GoodsFactory
 	bl sub_08065168
 	bl init__12GuestFactory
-	bl sub_08062308
-	bl sub_08063AD0
-	bl sub_08063EE4
+	bl init__17GuestSkillFactory
+	bl init__14MonsterFactory
+	bl init__19MonsterSkillFactory
 	bl get__13KeyPadManager
 	adds r6, r0, #0
 	add r0, sp, #0x1c

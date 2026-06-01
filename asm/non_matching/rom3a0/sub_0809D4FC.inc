@@ -9,6 +9,6 @@ sub_0809D4FC:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0809D510: .4byte vt_09F48BF8
-_0809D514: .4byte vt_09F48C70
+_0809D510: .4byte _vt.13DefaultPlayer.10UnitObject
+_0809D514: .4byte _vt.13DefaultPlayer
 	.syntax divided

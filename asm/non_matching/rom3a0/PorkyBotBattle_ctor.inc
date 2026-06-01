@@ -1,5 +1,5 @@
 	.syntax unified
-PorkyBotBattle_ctor:
+create__21PorkyBotBattleFactoryUs:
 	push {r4, lr}
 	adds r4, r0, #0
 	lsls r4, r4, #0x10
@@ -7,7 +7,7 @@ PorkyBotBattle_ctor:
 	ldr r0, _080979EC
 	bl __builtin_new
 	adds r1, r4, #0
-	bl sub_08097BC8
+	bl __14PorkyBotBattleUs
 	pop {r4}
 	pop {r1}
 	bx r1

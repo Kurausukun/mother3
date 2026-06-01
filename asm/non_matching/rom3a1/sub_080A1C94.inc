@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A1C94:
+__14MechaPorky0607UsUs:
 	push {r4, r5, r6, lr}
 	mov r6, sl
 	mov r5, sb
@@ -120,6 +120,6 @@ _080A1D9C: .4byte _vt.13UnitTurnBegin
 _080A1DA0: .4byte gUnknown_080F8E5C
 _080A1DA4: .4byte _vt.11UnitTurnEnd
 _080A1DA8: .4byte gUnknown_080F8E64
-_080A1DAC: .4byte vt_09F4F810
-_080A1DB0: .4byte vt_09F4F888
+_080A1DAC: .4byte _vt.14MechaPorky0607.10UnitObject
+_080A1DB0: .4byte _vt.14MechaPorky0607
 	.syntax divided

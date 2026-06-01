@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A4E70:
+__11MobileGraveUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -82,6 +82,6 @@ _080A4F24: .4byte _vt.13UnitTurnBegin
 _080A4F28: .4byte gUnknown_080F8E5C
 _080A4F2C: .4byte _vt.11UnitTurnEnd
 _080A4F30: .4byte gUnknown_080F8E64
-_080A4F34: .4byte vt_09F60A00
-_080A4F38: .4byte vt_09F60A78
+_080A4F34: .4byte _vt.11MobileGrave.10UnitObject
+_080A4F38: .4byte _vt.11MobileGrave
 	.syntax divided

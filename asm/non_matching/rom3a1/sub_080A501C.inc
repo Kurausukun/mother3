@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A501C:
+__7ClaymanUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, sb
 	mov r5, r8
@@ -92,6 +92,6 @@ _080A50E4: .4byte _vt.13UnitTurnBegin
 _080A50E8: .4byte gUnknown_080F8E5C
 _080A50EC: .4byte _vt.11UnitTurnEnd
 _080A50F0: .4byte gUnknown_080F8E64
-_080A50F4: .4byte vt_09F61380
-_080A50F8: .4byte vt_09F613F8
+_080A50F4: .4byte _vt.7Clayman.10UnitObject
+_080A50F8: .4byte _vt.7Clayman
 	.syntax divided

@@ -79,6 +79,6 @@ _0807AD74:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0807AD9C: .4byte vt_09F82070
+_0807AD9C: .4byte _vt.6Player.10UnitObject
 _0807ADA0: .4byte _vt.6Player
 	.syntax divided

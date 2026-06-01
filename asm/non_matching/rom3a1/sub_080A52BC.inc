@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A52BC:
+__12BaldingEagleUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, sb
 	mov r5, r8
@@ -92,6 +92,6 @@ _080A5384: .4byte _vt.13UnitTurnBegin
 _080A5388: .4byte gUnknown_080F8E5C
 _080A538C: .4byte _vt.11UnitTurnEnd
 _080A5390: .4byte gUnknown_080F8E64
-_080A5394: .4byte vt_09F621C8
-_080A5398: .4byte vt_09F62240
+_080A5394: .4byte _vt.12BaldingEagle.10UnitObject
+_080A5398: .4byte _vt.12BaldingEagle
 	.syntax divided

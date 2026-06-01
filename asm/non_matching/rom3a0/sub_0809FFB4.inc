@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809FFB4:
+__4AlecUs:
 	push {r4, r5, r6, lr}
 	mov r6, sb
 	mov r5, r8
@@ -82,13 +82,13 @@ sub_0809FFB4:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080A0068: .4byte vt_09F4D280
-_080A006C: .4byte vt_09F4D2F8
+_080A0068: .4byte _vt.12DefaultGuest.10UnitObject
+_080A006C: .4byte _vt.12DefaultGuest
 _080A0070: .4byte _vt.5Event
 _080A0074: .4byte _vt.13UnitTurnBegin
 _080A0078: .4byte gUnknown_080F741C
 _080A007C: .4byte _vt.11UnitTurnEnd
 _080A0080: .4byte gUnknown_080F7424
-_080A0084: .4byte vt_09F4C7F0
-_080A0088: .4byte vt_09F4C868
+_080A0084: .4byte _vt.4Alec.10UnitObject
+_080A0088: .4byte _vt.4Alec
 	.syntax divided

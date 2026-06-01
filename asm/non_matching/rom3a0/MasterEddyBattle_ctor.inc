@@ -1,5 +1,5 @@
 	.syntax unified
-MasterEddyBattle_ctor:
+create__23MasterEddyBattleFactoryUs:
 	push {r4, lr}
 	adds r4, r0, #0
 	lsls r4, r4, #0x10
@@ -8,7 +8,7 @@ MasterEddyBattle_ctor:
 	lsls r0, r0, #4
 	bl __builtin_new
 	adds r1, r4, #0
-	bl sub_08097C34
+	bl __16MasterEddyBattleUs
 	pop {r4}
 	pop {r1}
 	bx r1

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A2848:
+__9DragonflyUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -82,6 +82,6 @@ _080A28FC: .4byte _vt.13UnitTurnBegin
 _080A2900: .4byte gUnknown_080F8E5C
 _080A2904: .4byte _vt.11UnitTurnEnd
 _080A2908: .4byte gUnknown_080F8E64
-_080A290C: .4byte vt_09F53158
-_080A2910: .4byte vt_09F531D0
+_080A290C: .4byte _vt.9Dragonfly.10UnitObject
+_080A2910: .4byte _vt.9Dragonfly
 	.syntax divided

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A3F60:
+__9BarricadeUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -82,6 +82,6 @@ _080A4014: .4byte _vt.13UnitTurnBegin
 _080A4018: .4byte gUnknown_080F8E5C
 _080A401C: .4byte _vt.11UnitTurnEnd
 _080A4020: .4byte gUnknown_080F8E64
-_080A4024: .4byte vt_09F5B538
-_080A4028: .4byte vt_09F5B5B0
+_080A4024: .4byte _vt.9Barricade.10UnitObject
+_080A4028: .4byte _vt.9Barricade
 	.syntax divided

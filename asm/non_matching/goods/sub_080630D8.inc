@@ -15,7 +15,7 @@ sub_080630D8:
 	lsrs r0, r0, #0x10
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08063EC4
+	bl create__14MonsterFactoryUsUs
 	str r0, [sp, #0x44]
 	ldr r2, [r0, #0x20]
 	adds r0, #0x20

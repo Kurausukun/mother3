@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A169C:
+create__18MobileGraveFactoryUsUs:
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -12,7 +12,7 @@ sub_080A169C:
 	bl __builtin_new
 	adds r1, r4, #0
 	adds r2, r5, #0
-	bl sub_080A4E70
+	bl __11MobileGraveUsUs
 	pop {r4, r5}
 	pop {r1}
 	bx r1

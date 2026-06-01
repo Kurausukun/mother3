@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809FEE4:
+__4WessUs:
 	push {r4, r5, r6, lr}
 	mov r6, sb
 	mov r5, r8
@@ -77,13 +77,13 @@ sub_0809FEE4:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0809FF90: .4byte vt_09F4D280
-_0809FF94: .4byte vt_09F4D2F8
+_0809FF90: .4byte _vt.12DefaultGuest.10UnitObject
+_0809FF94: .4byte _vt.12DefaultGuest
 _0809FF98: .4byte _vt.5Event
 _0809FF9C: .4byte _vt.13UnitTurnBegin
 _0809FFA0: .4byte gUnknown_080F741C
 _0809FFA4: .4byte _vt.11UnitTurnEnd
 _0809FFA8: .4byte gUnknown_080F7424
-_0809FFAC: .4byte vt_09F4C468
-_0809FFB0: .4byte vt_09F4C4E0
+_0809FFAC: .4byte _vt.4Wess.10UnitObject
+_0809FFB0: .4byte _vt.4Wess
 	.syntax divided

@@ -18,7 +18,7 @@ sub_080A0978:
 _080A0998:
 	adds r0, r1, #0
 	adds r1, r4, #0
-	bl sub_08074124
+	bl getGuestSkill
 	pop {r4}
 	pop {r1}
 	bx r1

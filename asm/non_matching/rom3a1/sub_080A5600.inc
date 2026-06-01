@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A5600:
+__15BakedYammonsterUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, sb
 	mov r5, r8
@@ -92,6 +92,6 @@ _080A56C8: .4byte _vt.13UnitTurnBegin
 _080A56CC: .4byte gUnknown_080F8E5C
 _080A56D0: .4byte _vt.11UnitTurnEnd
 _080A56D4: .4byte gUnknown_080F8E64
-_080A56D8: .4byte vt_09F63488
-_080A56DC: .4byte vt_09F63500
+_080A56D8: .4byte _vt.15BakedYammonster.10UnitObject
+_080A56DC: .4byte _vt.15BakedYammonster
 	.syntax divided

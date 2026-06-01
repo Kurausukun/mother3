@@ -92,7 +92,7 @@ _0808C266:
 	bl _call_via_r1
 	adds r1, r0, #0
 	adds r0, r4, #0
-	bl sub_08064950
+	bl create__10PsiFactoryUsP4Unit
 	str r0, [r6, #0x50]
 	adds r0, r6, #0
 	movs r1, #3

@@ -733,7 +733,7 @@ _vt.14RoundBeginRTTI::
 	.2byte 0
 	.4byte init__14RoundBeginRTTI
 
-vt_09F45630::
+_vt.16MaskedManBattleB::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -996,7 +996,7 @@ vt_09F45630::
 	.2byte 0
 	.4byte sub_08097DE0
 
-vt_09F458E8::
+_vt.16MaskedManBattleA::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -1292,7 +1292,7 @@ vt_09F458E8::
 	.2byte 0
 	.4byte sub_080989D8
 
-vt_09F45BF8::
+_vt.11PorkyBattle::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -1567,7 +1567,7 @@ vt_09F45BF8::
 	.2byte 0
 	.4byte sub_08099F74
 
-vt_09F45ED0::
+_vt.14PorkyBotBattle::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -1845,7 +1845,7 @@ vt_09F45ED0::
 	.2byte 0
 	.4byte sub_0809A920
 
-vt_09F461B0::
+_vt.16MasterEddyBattle::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -2101,7 +2101,7 @@ vt_09F46280::
 	.2byte 0
 	.4byte sub_0809B53C
 
-vt_09F46450::
+_vt.13DefaultBattle::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -5946,7 +5946,7 @@ vt_09F48778::
 	.2byte 0
 	.4byte sub_0809D004
 
-vt_09F48BF8::
+_vt.13DefaultPlayer.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -5993,7 +5993,7 @@ vt_09F48BF8::
 	.2byte 0
 	.4byte sub_0807C4F0
 
-vt_09F48C70::
+_vt.13DefaultPlayer::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -10078,7 +10078,7 @@ vt_09F4B3B0::
 	.2byte 0
 	.4byte sub_0809E8F0
 
-vt_09F4B6A8::
+_vt.18DefaultPlayerSkill::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -10727,7 +10727,7 @@ _vt.9GuestRTTI::
 	.2byte 0
 	.4byte sub_0809FC24
 
-vt_09F4BD50::
+_vt.5Ionia.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -10774,7 +10774,7 @@ vt_09F4BD50::
 	.2byte 0
 	.4byte object_70__5Guest
 
-vt_09F4BDC8::
+_vt.5Ionia::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -11067,7 +11067,7 @@ vt_09F4BDC8::
 	.2byte 0
 	.4byte sub_080A09C4
 
-vt_09F4C0D0::
+_vt.6Fassad.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -11114,7 +11114,7 @@ vt_09F4C0D0::
 	.2byte 0
 	.4byte object_70__5Guest
 
-vt_09F4C148::
+_vt.6Fassad::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -11416,7 +11416,7 @@ vt_09F4C148::
 	.2byte 0
 	.4byte sub_080A0300
 
-vt_09F4C468::
+_vt.4Wess.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -11463,7 +11463,7 @@ vt_09F4C468::
 	.2byte 0
 	.4byte object_70__5Guest
 
-vt_09F4C4E0::
+_vt.4Wess::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -11759,7 +11759,7 @@ vt_09F4C4E0::
 	.2byte 0
 	.4byte sub_080A051C
 
-vt_09F4C7F0::
+_vt.4Alec.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -11806,7 +11806,7 @@ vt_09F4C7F0::
 	.2byte 0
 	.4byte object_70__5Guest
 
-vt_09F4C868::
+_vt.4Alec::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -12105,7 +12105,7 @@ vt_09F4C868::
 	.2byte 0
 	.4byte sub_080A07C0
 
-vt_09F4CB80::
+_vt.4Fuel.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -12152,7 +12152,7 @@ vt_09F4CB80::
 	.2byte 0
 	.4byte object_70__5Guest
 
-vt_09F4CBF8::
+_vt.4Fuel::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -12445,7 +12445,7 @@ vt_09F4CBF8::
 	.2byte 0
 	.4byte sub_080A09C4
 
-vt_09F4CF00::
+_vt.6Thomas.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -12492,7 +12492,7 @@ vt_09F4CF00::
 	.2byte 0
 	.4byte object_70__5Guest
 
-vt_09F4CF78::
+_vt.6Thomas::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -12785,7 +12785,7 @@ vt_09F4CF78::
 	.2byte 0
 	.4byte sub_080A09C4
 
-vt_09F4D280::
+_vt.12DefaultGuest.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -12832,7 +12832,7 @@ vt_09F4D280::
 	.2byte 0
 	.4byte object_70__5Guest
 
-vt_09F4D2F8::
+_vt.12DefaultGuest::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -14141,7 +14141,7 @@ vt_09F4DDE0::
 	.2byte 0
 	.4byte action_298__10GuestSkill
 
-vt_09F4E080::
+_vt.17DefaultGuestSkill::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -14537,7 +14537,7 @@ _vt.15struct_08063998::
 	.2byte 0
 	.4byte sub_08063A90
 
-vt_09F4E490::
+_vt.12MaskedMan3rd.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -14584,7 +14584,7 @@ vt_09F4E490::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F4E508::
+_vt.12MaskedMan3rd::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -14991,7 +14991,7 @@ vt_09F4E508::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F4E940::
+_vt.12MaskedMan2nd.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -15038,7 +15038,7 @@ vt_09F4E940::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F4E9B8::
+_vt.12MaskedMan2nd::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -15471,7 +15471,7 @@ vt_09F4EDB0::
 	.2byte 0
 	.4byte sub_080A59BC
 
-vt_09F4EE30::
+_vt.21AbsolutelySafeCapsule.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -15518,7 +15518,7 @@ vt_09F4EE30::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F4EEA8::
+_vt.21AbsolutelySafeCapsule::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -15925,7 +15925,7 @@ vt_09F4EEA8::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F4F2E0::
+_vt.5Porky.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -15972,7 +15972,7 @@ vt_09F4F2E0::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F4F358::
+_vt.5Porky::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -16427,7 +16427,7 @@ vt_09F4F358::
 	.2byte 0
 	.4byte sub_080A60A4
 
-vt_09F4F810::
+_vt.14MechaPorky0607.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -16474,7 +16474,7 @@ vt_09F4F810::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F4F888::
+_vt.14MechaPorky0607::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -16890,7 +16890,7 @@ vt_09F4F888::
 	.2byte 0
 	.4byte sub_080A6998
 
-vt_09F4FCD8::
+_vt.10MechaPorky.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -16937,7 +16937,7 @@ vt_09F4FCD8::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F4FD50::
+_vt.10MechaPorky::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -17353,7 +17353,7 @@ vt_09F4FD50::
 	.2byte 0
 	.4byte sub_080A6B6C
 
-vt_09F501A0::
+_vt.19NaturalKillerCyborg.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -17400,7 +17400,7 @@ vt_09F501A0::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F50218::
+_vt.19NaturalKillerCyborg::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -17831,7 +17831,7 @@ vt_09F50218::
 	.2byte 0
 	.4byte sub_080A7064
 
-vt_09F50690::
+_vt.14PorkColonel2nd.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -17878,7 +17878,7 @@ vt_09F50690::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F50708::
+_vt.14PorkColonel2nd::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -18285,7 +18285,7 @@ vt_09F50708::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F50B40::
+_vt.12NuclearRobot.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -18332,7 +18332,7 @@ vt_09F50B40::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F50BB8::
+_vt.12NuclearRobot::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -18742,7 +18742,7 @@ vt_09F50BB8::
 	.2byte 0
 	.4byte sub_080A78D0
 
-vt_09F50FF8::
+_vt.12UpgradedRobo.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -18789,7 +18789,7 @@ vt_09F50FF8::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F51070::
+_vt.12UpgradedRobo::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -19196,7 +19196,7 @@ vt_09F51070::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F514A8::
+_vt.14PorkLieutenant.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -19243,7 +19243,7 @@ vt_09F514A8::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F51520::
+_vt.14PorkLieutenant::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -19650,7 +19650,7 @@ vt_09F51520::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F51958::
+_vt.9MiracleFassad.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -19697,7 +19697,7 @@ vt_09F51958::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F519D0::
+_vt.9MiracleFassad::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -20116,7 +20116,7 @@ vt_09F519D0::
 	.2byte 0
 	.4byte sub_080A7DA0
 
-vt_09F51E28::
+_vt.12MaskedMan1st.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -20163,7 +20163,7 @@ vt_09F51E28::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F51EA0::
+_vt.12MaskedMan1st::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -20573,7 +20573,7 @@ vt_09F51EA0::
 	.2byte 0
 	.4byte sub_080A8660
 
-vt_09F522E0::
+_vt.9HuggyBomb.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -20620,7 +20620,7 @@ vt_09F522E0::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F52358::
+_vt.9HuggyBomb::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -21045,7 +21045,7 @@ vt_09F52358::
 	.2byte 0
 	.4byte sub_080A8814
 
-vt_09F527C0::
+_vt.7TLCTree.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -21092,7 +21092,7 @@ vt_09F527C0::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F52838::
+_vt.7TLCTree::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -21499,7 +21499,7 @@ vt_09F52838::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F52C70::
+_vt.11BarrierTrio.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -21546,7 +21546,7 @@ vt_09F52C70::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F52CE8::
+_vt.11BarrierTrio::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -21974,7 +21974,7 @@ vt_09F52CE8::
 	.2byte 0
 	.4byte sub_080A8E18
 
-vt_09F53158::
+_vt.9Dragonfly.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -22021,7 +22021,7 @@ vt_09F53158::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F531D0::
+_vt.9Dragonfly::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -22428,7 +22428,7 @@ vt_09F531D0::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F53608::
+_vt.13EerieSmile4th.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -22475,7 +22475,7 @@ vt_09F53608::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F53680::
+_vt.13EerieSmile4th::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -22882,7 +22882,7 @@ vt_09F53680::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F53AB8::
+_vt.8Titanian.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -22929,7 +22929,7 @@ vt_09F53AB8::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F53B30::
+_vt.8Titanian::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -23336,7 +23336,7 @@ vt_09F53B30::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F53F68::
+_vt.13EerieSmile2nd.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -23383,7 +23383,7 @@ vt_09F53F68::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F53FE0::
+_vt.13EerieSmile2nd::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -23790,7 +23790,7 @@ vt_09F53FE0::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F54418::
+_vt.9Monkalrus.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -23837,7 +23837,7 @@ vt_09F54418::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F54490::
+_vt.9Monkalrus::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -24244,7 +24244,7 @@ vt_09F54490::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F548C8::
+_vt.13EerieSmile1st.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -24291,7 +24291,7 @@ vt_09F548C8::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F54940::
+_vt.13EerieSmile1st::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -24698,7 +24698,7 @@ vt_09F54940::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F54D78::
+_vt.13EerieSmile3rd.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -24745,7 +24745,7 @@ vt_09F54D78::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F54DF0::
+_vt.13EerieSmile3rd::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -25152,7 +25152,7 @@ vt_09F54DF0::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F55228::
+_vt.12Zombieshroom.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -25199,7 +25199,7 @@ vt_09F55228::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F552A0::
+_vt.12Zombieshroom::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -25606,7 +25606,7 @@ vt_09F552A0::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F556D8::
+_vt.10MasterEddy.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -25653,7 +25653,7 @@ vt_09F556D8::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F55750::
+_vt.10MasterEddy::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -26060,7 +26060,7 @@ vt_09F55750::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F55B88::
+_vt.10FishRoeMan.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -26107,7 +26107,7 @@ vt_09F55B88::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F55C00::
+_vt.10FishRoeMan::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -26514,7 +26514,7 @@ vt_09F55C00::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F56038::
+_vt.10NavySqueal.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -26561,7 +26561,7 @@ vt_09F56038::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F560B0::
+_vt.10NavySqueal::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -26968,7 +26968,7 @@ vt_09F560B0::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F564E8::
+_vt.9NewFassad.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -27015,7 +27015,7 @@ vt_09F564E8::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F56560::
+_vt.9NewFassad::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -27437,7 +27437,7 @@ vt_09F56560::
 	.2byte 0
 	.4byte sub_080AA080
 
-vt_09F569C0::
+_vt.7Hothead.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -27484,7 +27484,7 @@ vt_09F569C0::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F56A38::
+_vt.7Hothead::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -27891,7 +27891,7 @@ vt_09F56A38::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F56E70::
+_vt.8Blazefly.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -27938,7 +27938,7 @@ vt_09F56E70::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F56EE8::
+_vt.8Blazefly::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -28345,7 +28345,7 @@ vt_09F56EE8::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F57320::
+_vt.10ScaredyBot.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -28392,7 +28392,7 @@ vt_09F57320::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F57398::
+_vt.10ScaredyBot::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -28799,7 +28799,7 @@ vt_09F57398::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F577D0::
+_vt.12SteelGorilla.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -28846,7 +28846,7 @@ vt_09F577D0::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F57848::
+_vt.12SteelGorilla::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -29262,7 +29262,7 @@ vt_09F57848::
 	.2byte 0
 	.4byte sub_080AA5D8
 
-vt_09F57C98::
+_vt.7TenYeti.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -29309,7 +29309,7 @@ vt_09F57C98::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F57D10::
+_vt.7TenYeti::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -29716,7 +29716,7 @@ vt_09F57D10::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F58148::
+_vt.9ChillyDog.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -29763,7 +29763,7 @@ vt_09F58148::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F581C0::
+_vt.9ChillyDog::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -30170,7 +30170,7 @@ vt_09F581C0::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F585F8::
+_vt.13PorkCommander.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -30217,7 +30217,7 @@ vt_09F585F8::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F58670::
+_vt.13PorkCommander::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -30624,7 +30624,7 @@ vt_09F58670::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F58AA8::
+_vt.15AlmostMechaLion.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -30671,7 +30671,7 @@ vt_09F58AA8::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F58B20::
+_vt.15AlmostMechaLion::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -31081,7 +31081,7 @@ vt_09F58B20::
 	.2byte 0
 	.4byte sub_080AAAF4
 
-vt_09F58F60::
+_vt.7BroTeam.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -31128,7 +31128,7 @@ vt_09F58F60::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F58FD8::
+_vt.7BroTeam::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -31535,7 +31535,7 @@ vt_09F58FD8::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F59410::
+_vt.9MrGenetor.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -31582,7 +31582,7 @@ vt_09F59410::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F59488::
+_vt.9MrGenetor::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -32001,7 +32001,7 @@ vt_09F59488::
 	.2byte 0
 	.4byte sub_080AAE54
 
-vt_09F598E0::
+_vt.15MissMarshmallow.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -32048,7 +32048,7 @@ vt_09F598E0::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F59958::
+_vt.15MissMarshmallow::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -32464,7 +32464,7 @@ vt_09F59958::
 	.2byte 0
 	.4byte sub_080AB184
 
-vt_09F59DA8::
+_vt.11SurpriseBox.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -32511,7 +32511,7 @@ vt_09F59DA8::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F59E20::
+_vt.11SurpriseBox::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -32918,7 +32918,7 @@ vt_09F59E20::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F5A258::
+_vt.10BatteryMan.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -32965,7 +32965,7 @@ vt_09F5A258::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F5A2D0::
+_vt.10BatteryMan::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -33372,7 +33372,7 @@ vt_09F5A2D0::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F5A708::
+_vt.9MinorRobo.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -33419,7 +33419,7 @@ vt_09F5A708::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F5A780::
+_vt.9MinorRobo::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -33835,7 +33835,7 @@ vt_09F5A780::
 	.2byte 0
 	.4byte sub_080AB438
 
-vt_09F5ABD0::
+_vt.11SadJunkHeap.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -33882,7 +33882,7 @@ vt_09F5ABD0::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F5AC48::
+_vt.11SadJunkHeap::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -34292,7 +34292,7 @@ vt_09F5AC48::
 	.2byte 0
 	.4byte sub_080AB924
 
-vt_09F5B088::
+_vt.11AtomicRobot.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -34339,7 +34339,7 @@ vt_09F5B088::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F5B100::
+_vt.11AtomicRobot::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -34746,7 +34746,7 @@ vt_09F5B100::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F5B538::
+_vt.9Barricade.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -34793,7 +34793,7 @@ vt_09F5B538::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F5B5B0::
+_vt.9Barricade::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -35200,7 +35200,7 @@ vt_09F5B5B0::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F5B9E8::
+_vt.20WomanizingPigMask2nd.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -35247,7 +35247,7 @@ vt_09F5B9E8::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F5BA60::
+_vt.20WomanizingPigMask2nd::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -35666,7 +35666,7 @@ vt_09F5BA60::
 	.2byte 0
 	.4byte sub_080ABBC0
 
-vt_09F5BEB8::
+_vt.20WomanizingPigmask1st.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -35713,7 +35713,7 @@ vt_09F5BEB8::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F5BF30::
+_vt.20WomanizingPigmask1st::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -36120,7 +36120,7 @@ vt_09F5BF30::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F5C368::
+_vt.11WoundupBear.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -36167,7 +36167,7 @@ vt_09F5C368::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F5C3E0::
+_vt.11WoundupBear::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -36574,7 +36574,7 @@ vt_09F5C3E0::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F5C818::
+_vt.11MechaTurtle.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -36621,7 +36621,7 @@ vt_09F5C818::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F5C890::
+_vt.11MechaTurtle::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -37028,7 +37028,7 @@ vt_09F5C890::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F5CCC8::
+_vt.11JealousBass.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -37075,7 +37075,7 @@ vt_09F5CCC8::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F5CD40::
+_vt.11JealousBass::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -37491,7 +37491,7 @@ vt_09F5CD40::
 	.2byte 0
 	.4byte sub_080AC37C
 
-vt_09F5D190::
+_vt.10BeatenDrum.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -37538,7 +37538,7 @@ vt_09F5D190::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F5D208::
+_vt.10BeatenDrum::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -37945,7 +37945,7 @@ vt_09F5D208::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F5D640::
+_vt.13WailingGuitar.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -37992,7 +37992,7 @@ vt_09F5D640::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F5D6B8::
+_vt.13WailingGuitar::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -38399,7 +38399,7 @@ vt_09F5D6B8::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F5DAF0::
+_vt.10StickySlug.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -38446,7 +38446,7 @@ vt_09F5DAF0::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F5DB68::
+_vt.10StickySlug::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -38853,7 +38853,7 @@ vt_09F5DB68::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F5DFA0::
+_vt.8Pigtunia.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -38900,7 +38900,7 @@ vt_09F5DFA0::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F5E018::
+_vt.8Pigtunia::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -39307,7 +39307,7 @@ vt_09F5E018::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F5E450::
+_vt.11Cattlesnake.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -39354,7 +39354,7 @@ vt_09F5E450::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F5E4C8::
+_vt.11Cattlesnake::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -39761,7 +39761,7 @@ vt_09F5E4C8::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F5E900::
+_vt.10StickyGlop.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -39808,7 +39808,7 @@ vt_09F5E900::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F5E978::
+_vt.10StickyGlop::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -40224,7 +40224,7 @@ vt_09F5E978::
 	.2byte 0
 	.4byte sub_080AC8E8
 
-vt_09F5EDC8::
+_vt.10SandLizard.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -40271,7 +40271,7 @@ vt_09F5EDC8::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F5EE40::
+_vt.10SandLizard::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -40678,7 +40678,7 @@ vt_09F5EE40::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F5F278::
+_vt.8PorkTank.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -40725,7 +40725,7 @@ vt_09F5F278::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F5F2F0::
+_vt.8PorkTank::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -41141,7 +41141,7 @@ vt_09F5F2F0::
 	.2byte 0
 	.4byte sub_080ACB58
 
-vt_09F5F740::
+_vt.11PorkSoldier.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -41188,7 +41188,7 @@ vt_09F5F740::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F5F7B8::
+_vt.11PorkSoldier::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -41595,7 +41595,7 @@ vt_09F5F7B8::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F5FBF0::
+_vt.8Pseudoor.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -41642,7 +41642,7 @@ vt_09F5FBF0::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F5FC68::
+_vt.8Pseudoor::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -42049,7 +42049,7 @@ vt_09F5FC68::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F600A0::
+_vt.12RockingGhost.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -42096,7 +42096,7 @@ vt_09F600A0::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F60118::
+_vt.12RockingGhost::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -42503,7 +42503,7 @@ vt_09F60118::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F60550::
+_vt.8Arachnid.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -42550,7 +42550,7 @@ vt_09F60550::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F605C8::
+_vt.8Arachnid::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -42957,7 +42957,7 @@ vt_09F605C8::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F60A00::
+_vt.11MobileGrave.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -43004,7 +43004,7 @@ vt_09F60A00::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F60A78::
+_vt.11MobileGrave::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -43411,7 +43411,7 @@ vt_09F60A78::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F60EB0::
+_vt.9OhSoSnake.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -43458,7 +43458,7 @@ vt_09F60EB0::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F60F28::
+_vt.9OhSoSnake::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -43877,7 +43877,7 @@ vt_09F60F28::
 	.2byte 0
 	.4byte sub_080AD3A4
 
-vt_09F61380::
+_vt.7Clayman.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -43924,7 +43924,7 @@ vt_09F61380::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F613F8::
+_vt.7Clayman::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -44343,7 +44343,7 @@ vt_09F613F8::
 	.2byte 0
 	.4byte m_450__7Claymanib
 
-vt_09F61850::
+_vt.9MrPassion.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -44390,7 +44390,7 @@ vt_09F61850::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F618C8::
+_vt.9MrPassion::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -44806,7 +44806,7 @@ vt_09F618C8::
 	.2byte 0
 	.4byte calcActionPhaseTwo__9MrPassion
 
-vt_09F61D18::
+_vt.4Tree.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -44853,7 +44853,7 @@ vt_09F61D18::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F61D90::
+_vt.4Tree::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -45260,7 +45260,7 @@ vt_09F61D90::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F621C8::
+_vt.12BaldingEagle.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -45307,7 +45307,7 @@ vt_09F621C8::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F62240::
+_vt.12BaldingEagle::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -45714,7 +45714,7 @@ vt_09F62240::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F62678::
+_vt.11WalkingBush.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -45761,7 +45761,7 @@ vt_09F62678::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F626F0::
+_vt.11WalkingBush::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -46168,7 +46168,7 @@ vt_09F626F0::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F62B28::
+_vt.9PotatoBug.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -46215,7 +46215,7 @@ vt_09F62B28::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F62BA0::
+_vt.9PotatoBug::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -46622,7 +46622,7 @@ vt_09F62BA0::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F62FD8::
+_vt.12SootDumpling.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -46669,7 +46669,7 @@ vt_09F62FD8::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F63050::
+_vt.12SootDumpling::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -47076,7 +47076,7 @@ vt_09F63050::
 	.2byte 0
 	.4byte getHealthPercent__14DefaultMonsteri
 
-vt_09F63488::
+_vt.15BakedYammonster.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
@@ -47123,7 +47123,7 @@ vt_09F63488::
 	.2byte 0
 	.4byte sub_08081994
 
-vt_09F63500::
+_vt.15BakedYammonster::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -69967,7 +69967,7 @@ vt_09F71E70::
 	.2byte 0
 	.4byte recolorValue__C12MonsterSkill
 
-vt_09F72120::
+_vt.19DefaultMonsterSkill::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -81475,7 +81475,7 @@ vt_09F794E8::
 	.2byte 0
 	.4byte ppCost__C3Psi
 
-__vt_5Goods::
+_vt.10DefaultPsi::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -94955,7 +94955,7 @@ _vt.6Action::
 	.2byte 0
 	.4byte __pure_virtual
 
-vt_09F82070::
+_vt.6Player.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
