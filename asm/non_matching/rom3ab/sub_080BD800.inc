@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080BD800:
+action_a0__11PkThunderGOP4Unit:
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0

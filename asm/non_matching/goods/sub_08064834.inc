@@ -86,17 +86,17 @@ _08064838:
 	bx r0
 	.align 2, 0
 _08064908: .4byte create__17DefaultPsiFactoryUsP4Unit
-_0806490C: .4byte sub_080BC304
-_08064910: .4byte sub_080BC2E4
-_08064914: .4byte sub_080BC2C4
-_08064918: .4byte sub_080BC2A4
-_0806491C: .4byte sub_080BC284
-_08064920: .4byte sub_080BC264
-_08064924: .4byte sub_080BC244
-_08064928: .4byte sub_080BC224
-_0806492C: .4byte sub_080BC204
-_08064930: .4byte sub_080BC1E4
-_08064934: .4byte sub_080BC1C4
-_08064938: .4byte sub_080BC1A4
-_0806493C: .4byte sub_080BC184
+_0806490C: .4byte create__18PkThunderABFactoryUsP4Unit
+_08064910: .4byte create__18PkThunderGOFactoryUsP4Unit
+_08064914: .4byte create__15PkGroundFactoryUsP4Unit
+_08064918: .4byte create__16PsiMagnetFactoryUsP4Unit
+_0806491C: .4byte create__14LifeupGFactoryUsP4Unit
+_08064920: .4byte create__14PkFlashFactoryUsP4Unit
+_08064924: .4byte create__13ShieldFactoryUsP4Unit
+_08064928: .4byte create__14CounterFactoryUsP4Unit
+_0806492C: .4byte create__16PsiShieldFactoryUsP4Unit
+_08064930: .4byte create__17PsiCounterFactoryUsP4Unit
+_08064934: .4byte create__15HealingAFactoryUsP4Unit
+_08064938: .4byte create__15HealingBFactoryUsP4Unit
+_0806493C: .4byte create__16HealingGOFactoryUsP4Unit
 	.syntax divided

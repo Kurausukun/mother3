@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080BDAAC:
+_._10DefaultPsi:
 	push {lr}
 	ldr r2, _080BDABC
 	str r2, [r0, #0x1c]

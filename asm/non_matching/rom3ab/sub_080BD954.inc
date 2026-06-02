@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080BD954:
+hitChance__C10DefaultPsi:
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	bl hitChance__C3Psi

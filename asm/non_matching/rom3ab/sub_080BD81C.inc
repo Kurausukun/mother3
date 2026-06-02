@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080BD81C:
+_._11PkThunderGO:
 	push {lr}
 	ldr r2, _080BD82C
 	str r2, [r0, #0x1c]

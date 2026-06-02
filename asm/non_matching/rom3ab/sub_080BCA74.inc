@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080BCA74:
+_._6Shield:
 	push {lr}
 	ldr r2, _080BCA84
 	str r2, [r0, #0x1c]

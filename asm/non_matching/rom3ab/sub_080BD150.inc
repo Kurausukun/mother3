@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080BD150:
+tellResisted__9PsiMagnetP4Unit:
 	push {r4, lr}
 	sub sp, #0x10
 	adds r1, r0, #0

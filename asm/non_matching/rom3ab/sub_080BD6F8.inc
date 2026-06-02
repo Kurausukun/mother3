@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080BD6F8:
+_._8PkGround:
 	push {lr}
 	ldr r2, _080BD708
 	str r2, [r0, #0x1c]

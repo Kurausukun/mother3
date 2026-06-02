@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080BD940:
+_._11PkThunderAB:
 	push {lr}
 	ldr r2, _080BD950
 	str r2, [r0, #0x1c]

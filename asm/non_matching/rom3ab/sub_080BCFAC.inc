@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080BCFAC:
+onNoEffect__7LifeupGP4Unit:
 	push {r4, r5, lr}
 	adds r5, r1, #0
 	ldr r1, [r5, #0x1c]

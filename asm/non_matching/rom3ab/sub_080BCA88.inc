@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080BCA88:
+sub_080BCA88__7PkFlashP4Unit:
 	push {r4, lr}
 	adds r4, r1, #0
 	adds r0, r4, #0

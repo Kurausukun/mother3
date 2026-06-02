@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080BC8F8:
+onInflictStatus__7CounterP4Unit:
 	push {r4, r5, r6, lr}
 	mov r6, sb
 	mov r5, r8

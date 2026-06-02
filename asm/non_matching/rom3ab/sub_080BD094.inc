@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080BD094:
+onPsiDamage__9PsiMagnetP4Unit:
 	push {r4, r5, r6, lr}
 	sub sp, #0x10
 	adds r5, r0, #0

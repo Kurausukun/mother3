@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080BCFEC:
+_._7LifeupG:
 	push {lr}
 	ldr r2, _080BCFFC
 	str r2, [r0, #0x1c]

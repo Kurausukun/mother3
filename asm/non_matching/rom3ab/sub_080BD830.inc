@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080BD830:
+onPlayAnim__11PkThunderABP4Unitb:
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0

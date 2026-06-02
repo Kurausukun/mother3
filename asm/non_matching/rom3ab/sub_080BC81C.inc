@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080BC81C:
+_._10PsiCounter:
 	push {lr}
 	ldr r2, _080BC82C
 	str r2, [r0, #0x1c]

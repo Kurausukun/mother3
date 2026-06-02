@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080BD000:
+action_150__9PsiMagnet:
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r0, [r5, #0x4c]

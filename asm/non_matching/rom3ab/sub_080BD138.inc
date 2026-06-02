@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080BD138:
+calcDidHit__9PsiMagnetP4Unit:
 	push {lr}
 	movs r0, #0
 	movs r1, #0x63

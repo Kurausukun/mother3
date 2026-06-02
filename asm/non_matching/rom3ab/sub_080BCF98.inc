@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080BCF98:
+_._7PkFlash:
 	push {lr}
 	ldr r2, _080BCFA8
 	str r2, [r0, #0x1c]

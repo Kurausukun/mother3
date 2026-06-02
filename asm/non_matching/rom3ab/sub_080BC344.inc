@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080BC344:
+__9HealingGOUsP4Unit:
 	push {r4, lr}
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
@@ -12,5 +12,5 @@ sub_080BC344:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080BC35C: .4byte vt_09F77440
+_080BC35C: .4byte _vt.9HealingGO
 	.syntax divided

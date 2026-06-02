@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080BD294:
+calcDidHit__8PkGroundP4Unit:
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0

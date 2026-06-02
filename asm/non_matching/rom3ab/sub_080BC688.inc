@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080BC688:
+_._8HealingB:
 	push {lr}
 	ldr r2, _080BC698
 	str r2, [r0, #0x1c]

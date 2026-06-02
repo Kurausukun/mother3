@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080BC9AC:
+_._7Counter:
 	push {lr}
 	ldr r2, _080BC9BC
 	str r2, [r0, #0x1c]

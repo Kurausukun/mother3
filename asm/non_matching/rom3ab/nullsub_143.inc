@@ -1,5 +1,5 @@
 	.syntax unified
-nullsub_143:
+onPlayAnim__9PsiMagnetP4Unitb:
 	bx lr
 	.align 2, 0
 	.syntax divided

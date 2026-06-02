@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080BC5D8:
+onFail__8HealingBP4Unit:
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb

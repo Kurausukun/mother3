@@ -78053,13 +78053,13 @@ vt_09F772F8::
 	.2byte 0
 	.4byte sub_080828C8
 
-vt_09F77440::
+_vt.9HealingGO::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BC5C4
+	.4byte dt__9HealingGO
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__3Psi
@@ -78125,7 +78125,7 @@ vt_09F77440::
 	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BD9DC
+	.4byte tellResisted__10DefaultPsiP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onDamage__6ActionP4Unit
@@ -78164,7 +78164,7 @@ vt_09F77440::
 	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BC4D0
+	.4byte onFail__9HealingGOP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_130__6ActionP4UnitUsib
@@ -78290,7 +78290,7 @@ vt_09F77440::
 	.4byte sfxNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BD954
+	.4byte hitChance__C10DefaultPsi
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C3Psi
@@ -78316,13 +78316,13 @@ vt_09F77440::
 	.2byte 0
 	.4byte ppCost__C3Psi
 
-vt_09F776F8::
+_vt.8HealingB::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BC688
+	.4byte dt__8HealingB
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__3Psi
@@ -78388,7 +78388,7 @@ vt_09F776F8::
 	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BD9DC
+	.4byte tellResisted__10DefaultPsiP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onDamage__6ActionP4Unit
@@ -78427,7 +78427,7 @@ vt_09F776F8::
 	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BC5D8
+	.4byte onFail__8HealingBP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_130__6ActionP4UnitUsib
@@ -78553,7 +78553,7 @@ vt_09F776F8::
 	.4byte sfxNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BD954
+	.4byte hitChance__C10DefaultPsi
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C3Psi
@@ -78579,13 +78579,13 @@ vt_09F776F8::
 	.2byte 0
 	.4byte ppCost__C3Psi
 
-vt_09F779B0::
+_vt.8HealingA::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BC754
+	.4byte dt__8HealingA
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__3Psi
@@ -78651,7 +78651,7 @@ vt_09F779B0::
 	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BD9DC
+	.4byte tellResisted__10DefaultPsiP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onDamage__6ActionP4Unit
@@ -78690,7 +78690,7 @@ vt_09F779B0::
 	.4byte calcStatusInflict__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BC69C
+	.4byte onFail__8HealingAP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_130__6ActionP4UnitUsib
@@ -78816,7 +78816,7 @@ vt_09F779B0::
 	.4byte sfxNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BD954
+	.4byte hitChance__C10DefaultPsi
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C3Psi
@@ -78842,13 +78842,13 @@ vt_09F779B0::
 	.2byte 0
 	.4byte ppCost__C3Psi
 
-vt_09F77C68::
+_vt.10PsiCounter::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BC81C
+	.4byte dt__10PsiCounter
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__3Psi
@@ -78914,7 +78914,7 @@ vt_09F77C68::
 	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BD9DC
+	.4byte tellResisted__10DefaultPsiP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onDamage__6ActionP4Unit
@@ -78947,7 +78947,7 @@ vt_09F77C68::
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BC768
+	.4byte onInflictStatus__10PsiCounterP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -79079,7 +79079,7 @@ vt_09F77C68::
 	.4byte sfxNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BD954
+	.4byte hitChance__C10DefaultPsi
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C3Psi
@@ -79105,13 +79105,13 @@ vt_09F77C68::
 	.2byte 0
 	.4byte ppCost__C3Psi
 
-vt_09F77F20::
+_vt.9PsiShield::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BC8E4
+	.4byte dt__9PsiShield
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__3Psi
@@ -79177,7 +79177,7 @@ vt_09F77F20::
 	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BD9DC
+	.4byte tellResisted__10DefaultPsiP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onDamage__6ActionP4Unit
@@ -79210,7 +79210,7 @@ vt_09F77F20::
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BC830
+	.4byte onInflictStatus__9PsiShieldP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -79342,7 +79342,7 @@ vt_09F77F20::
 	.4byte sfxNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BD954
+	.4byte hitChance__C10DefaultPsi
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C3Psi
@@ -79368,13 +79368,13 @@ vt_09F77F20::
 	.2byte 0
 	.4byte ppCost__C3Psi
 
-vt_09F781D8::
+_vt.7Counter::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BC9AC
+	.4byte dt__7Counter
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__3Psi
@@ -79440,7 +79440,7 @@ vt_09F781D8::
 	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BD9DC
+	.4byte tellResisted__10DefaultPsiP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onDamage__6ActionP4Unit
@@ -79473,7 +79473,7 @@ vt_09F781D8::
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BC8F8
+	.4byte onInflictStatus__7CounterP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -79605,7 +79605,7 @@ vt_09F781D8::
 	.4byte sfxNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BD954
+	.4byte hitChance__C10DefaultPsi
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C3Psi
@@ -79631,13 +79631,13 @@ vt_09F781D8::
 	.2byte 0
 	.4byte ppCost__C3Psi
 
-vt_09F78490::
+_vt.6Shield::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BCA74
+	.4byte dt__6Shield
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__3Psi
@@ -79703,7 +79703,7 @@ vt_09F78490::
 	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BD9DC
+	.4byte tellResisted__10DefaultPsiP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onDamage__6ActionP4Unit
@@ -79736,7 +79736,7 @@ vt_09F78490::
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BC9C0
+	.4byte onInflictStatus__6ShieldP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -79868,7 +79868,7 @@ vt_09F78490::
 	.4byte sfxNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BD954
+	.4byte hitChance__C10DefaultPsi
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C3Psi
@@ -79894,13 +79894,13 @@ vt_09F78490::
 	.2byte 0
 	.4byte ppCost__C3Psi
 
-vt_09F78748::
+_vt.7PkFlash::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BCF98
+	.4byte dt__7PkFlash
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__3Psi
@@ -79966,7 +79966,7 @@ vt_09F78748::
 	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BD9DC
+	.4byte tellResisted__10DefaultPsiP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onDamage__6ActionP4Unit
@@ -79999,7 +79999,7 @@ vt_09F78748::
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BCDDC
+	.4byte onInflictStatus__7PkFlashP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -80131,7 +80131,7 @@ vt_09F78748::
 	.4byte sfxNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BD954
+	.4byte hitChance__C10DefaultPsi
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C3Psi
@@ -80158,15 +80158,15 @@ vt_09F78748::
 	.4byte ppCost__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BCA88
+	.4byte sub_080BCA88__7PkFlashP4Unit
 
-vt_09F78A08::
+_vt.7LifeupG::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BCFEC
+	.4byte dt__7LifeupG
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__3Psi
@@ -80232,7 +80232,7 @@ vt_09F78A08::
 	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BD9DC
+	.4byte tellResisted__10DefaultPsiP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onDamage__6ActionP4Unit
@@ -80256,533 +80256,7 @@ vt_09F78A08::
 	.4byte action_f8__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BCFAC
-	.2byte 0
-	.2byte 0
-	.4byte onPPHeal__6ActionP4Unit
-	.2byte 0
-	.2byte 0
-	.4byte onSuccess__6ActionP4Unit
-	.2byte 0
-	.2byte 0
-	.4byte onInflictStatus__6ActionP4Unit
-	.2byte 0
-	.2byte 0
-	.4byte calcStatusInflict__6ActionP4UnitUsib
-	.2byte 0
-	.2byte 0
-	.4byte onFail__6ActionP4Unit
-	.2byte 0
-	.2byte 0
-	.4byte action_130__6ActionP4UnitUsib
-	.2byte 0
-	.2byte 0
-	.4byte onPlayAnim__6ActionP4Unitb
-	.2byte 0
-	.2byte 0
-	.4byte action_140__6Action
-	.2byte 0
-	.2byte 0
-	.4byte action_148__6Action
-	.2byte 0
-	.2byte 0
-	.4byte action_150__3Psi
-	.2byte 0
-	.2byte 0
-	.4byte ROMStr__C6ActionUs
-	.2byte 0
-	.2byte 0
-	.4byte action_160__C6ActionUsRC3Msg
-	.2byte 0
-	.2byte 0
-	.4byte getUser__C6Action
-	.2byte 0
-	.2byte 0
-	.4byte addTarget__6ActionP4Unit
-	.2byte 0
-	.2byte 0
-	.4byte removeTarget__6ActionP4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clearTargets__6Action
-	.2byte 0
-	.2byte 0
-	.4byte numTargets__C6Action
-	.2byte 0
-	.2byte 0
-	.4byte getTarget__C6Actioni
-	.2byte 0
-	.2byte 0
-	.4byte getTargetIdx__6ActionP4Unit
-	.2byte 0
-	.2byte 0
-	.4byte fire__3Psi
-	.2byte 0
-	.2byte 0
-	.4byte action_1a8__6Action
-	.2byte 0
-	.2byte 0
-	.4byte action_1b0__6Action
-	.2byte 0
-	.2byte 0
-	.4byte action_1b8__6Action
-	.2byte 0
-	.2byte 0
-	.4byte action_1c0__3Psi
-	.2byte 0
-	.2byte 0
-	.4byte id__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte name__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte action_1d8__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte action_fixme__6Actioni
-	.2byte 0
-	.2byte 0
-	.4byte action_1e0__3Psi
-	.2byte 0
-	.2byte 0
-	.4byte effect__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte element__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte target__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte attackMult__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte healLo__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte healHi__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte ailment__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte ailmentChance__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte hasAction__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte priority__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte getUseMessage__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte getForceUseMessage__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte hasDim__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte animNo__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte successAnimNo__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte critAnimNo__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte sfxNo__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte sub_080BD954
-	.2byte 0
-	.2byte 0
-	.4byte critChance__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte redirectable__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte userAttackSfx__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte userCritSfx__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte userMissSfx__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte isOverworldUsable__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte type__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte ppCost__C3Psi
-
-vt_09F78CC0::
-	.2byte 0
-	.2byte 0
-	.4byte 0
-	.2byte 0
-	.2byte 0
-	.4byte sub_080BD1BC
-	.2byte 0
-	.2byte 0
-	.4byte getRTTI__3Psi
-	.2byte 0
-	.2byte 0
-	.4byte base_1c__4Base
-	.2byte 0
-	.2byte 0
-	.4byte base_24__4Base
-	.2byte 0
-	.2byte 0
-	.4byte base_2c__4Base
-	.2byte 0
-	.2byte 0
-	.4byte base_34__4Base
-	.2byte 0
-	.2byte 0
-	.4byte listen__4BasePvRC4BaseG9ClockData
-	.2byte 0
-	.2byte 0
-	.4byte base_44__4Base
-	.2byte 0
-	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
-	.2byte 0
-	.2byte 0
-	.4byte emit__4BaseRC4Base
-	.2byte 0
-	.2byte 0
-	.4byte base_5c__4Base
-	.2byte 0
-	.2byte 0
-	.4byte clearNullOutgoing__4Base
-	.2byte 0
-	.2byte 0
-	.4byte action_68__6Action
-	.2byte 0
-	.2byte 0
-	.4byte action_70__6Action
-	.2byte 0
-	.2byte 0
-	.4byte playSfx__6Action
-	.2byte 0
-	.2byte 0
-	.4byte tellUseMessage__6Action
-	.2byte 0
-	.2byte 0
-	.4byte playDim__6Action
-	.2byte 0
-	.2byte 0
-	.4byte playAnim__6Action
-	.2byte 0
-	.2byte 0
-	.4byte action_a0__6ActionP4Unit
-	.2byte 0
-	.2byte 0
-	.4byte sub_080BD138
-	.2byte 0
-	.2byte 0
-	.4byte sub_080BD050
-	.2byte 0
-	.2byte 0
-	.4byte sub_080BD194
-	.2byte 0
-	.2byte 0
-	.4byte sub_080BD150
-	.2byte 0
-	.2byte 0
-	.4byte onDamage__6ActionP4Unit
-	.2byte 0
-	.2byte 0
-	.4byte onAttack__6ActionP4Unit
-	.2byte 0
-	.2byte 0
-	.4byte action_d8__6ActionP4UnitT1
-	.2byte 0
-	.2byte 0
-	.4byte sub_080BD094
-	.2byte 0
-	.2byte 0
-	.4byte action_e8__6ActionP4UnitT1
-	.2byte 0
-	.2byte 0
-	.4byte calcCrit__6ActionP4Unit
-	.2byte 0
-	.2byte 0
-	.4byte action_f8__6ActionP4Unit
-	.2byte 0
-	.2byte 0
-	.4byte onNoEffect__6ActionP4Unit
-	.2byte 0
-	.2byte 0
-	.4byte onPPHeal__6ActionP4Unit
-	.2byte 0
-	.2byte 0
-	.4byte onSuccess__6ActionP4Unit
-	.2byte 0
-	.2byte 0
-	.4byte onInflictStatus__6ActionP4Unit
-	.2byte 0
-	.2byte 0
-	.4byte calcStatusInflict__6ActionP4UnitUsib
-	.2byte 0
-	.2byte 0
-	.4byte onFail__6ActionP4Unit
-	.2byte 0
-	.2byte 0
-	.4byte action_130__6ActionP4UnitUsib
-	.2byte 0
-	.2byte 0
-	.4byte nullsub_143
-	.2byte 0
-	.2byte 0
-	.4byte action_140__6Action
-	.2byte 0
-	.2byte 0
-	.4byte action_148__6Action
-	.2byte 0
-	.2byte 0
-	.4byte sub_080BD000
-	.2byte 0
-	.2byte 0
-	.4byte ROMStr__C6ActionUs
-	.2byte 0
-	.2byte 0
-	.4byte action_160__C6ActionUsRC3Msg
-	.2byte 0
-	.2byte 0
-	.4byte getUser__C6Action
-	.2byte 0
-	.2byte 0
-	.4byte addTarget__6ActionP4Unit
-	.2byte 0
-	.2byte 0
-	.4byte removeTarget__6ActionP4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clearTargets__6Action
-	.2byte 0
-	.2byte 0
-	.4byte numTargets__C6Action
-	.2byte 0
-	.2byte 0
-	.4byte getTarget__C6Actioni
-	.2byte 0
-	.2byte 0
-	.4byte getTargetIdx__6ActionP4Unit
-	.2byte 0
-	.2byte 0
-	.4byte fire__3Psi
-	.2byte 0
-	.2byte 0
-	.4byte action_1a8__6Action
-	.2byte 0
-	.2byte 0
-	.4byte action_1b0__6Action
-	.2byte 0
-	.2byte 0
-	.4byte action_1b8__6Action
-	.2byte 0
-	.2byte 0
-	.4byte action_1c0__3Psi
-	.2byte 0
-	.2byte 0
-	.4byte id__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte name__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte action_1d8__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte action_fixme__6Actioni
-	.2byte 0
-	.2byte 0
-	.4byte action_1e0__3Psi
-	.2byte 0
-	.2byte 0
-	.4byte effect__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte element__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte target__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte attackMult__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte healLo__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte healHi__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte ailment__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte ailmentChance__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte hasAction__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte priority__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte getUseMessage__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte getForceUseMessage__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte hasDim__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte animNo__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte successAnimNo__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte critAnimNo__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte sfxNo__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte sub_080BD954
-	.2byte 0
-	.2byte 0
-	.4byte critChance__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte redirectable__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte userAttackSfx__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte userCritSfx__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte userMissSfx__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte isOverworldUsable__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte type__C3Psi
-	.2byte 0
-	.2byte 0
-	.4byte ppCost__C3Psi
-
-vt_09F78F78::
-	.2byte 0
-	.2byte 0
-	.4byte 0
-	.2byte 0
-	.2byte 0
-	.4byte sub_080BD6F8
-	.2byte 0
-	.2byte 0
-	.4byte getRTTI__3Psi
-	.2byte 0
-	.2byte 0
-	.4byte base_1c__4Base
-	.2byte 0
-	.2byte 0
-	.4byte base_24__4Base
-	.2byte 0
-	.2byte 0
-	.4byte base_2c__4Base
-	.2byte 0
-	.2byte 0
-	.4byte base_34__4Base
-	.2byte 0
-	.2byte 0
-	.4byte listen__4BasePvRC4BaseG9ClockData
-	.2byte 0
-	.2byte 0
-	.4byte base_44__4Base
-	.2byte 0
-	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
-	.2byte 0
-	.2byte 0
-	.4byte emit__4BaseRC4Base
-	.2byte 0
-	.2byte 0
-	.4byte base_5c__4Base
-	.2byte 0
-	.2byte 0
-	.4byte clearNullOutgoing__4Base
-	.2byte 0
-	.2byte 0
-	.4byte action_68__6Action
-	.2byte 0
-	.2byte 0
-	.4byte action_70__6Action
-	.2byte 0
-	.2byte 0
-	.4byte playSfx__6Action
-	.2byte 0
-	.2byte 0
-	.4byte tellUseMessage__6Action
-	.2byte 0
-	.2byte 0
-	.4byte playDim__6Action
-	.2byte 0
-	.2byte 0
-	.4byte sub_080BD5B4
-	.2byte 0
-	.2byte 0
-	.4byte action_a0__6ActionP4Unit
-	.2byte 0
-	.2byte 0
-	.4byte sub_080BD294
-	.2byte 0
-	.2byte 0
-	.4byte tellMissed__6ActionP4Unit
-	.2byte 0
-	.2byte 0
-	.4byte isResisted__6ActionP4Unit
-	.2byte 0
-	.2byte 0
-	.4byte sub_080BD9DC
-	.2byte 0
-	.2byte 0
-	.4byte onDamage__6ActionP4Unit
-	.2byte 0
-	.2byte 0
-	.4byte onAttack__6ActionP4Unit
-	.2byte 0
-	.2byte 0
-	.4byte action_d8__6ActionP4UnitT1
-	.2byte 0
-	.2byte 0
-	.4byte sub_080BD1D0
-	.2byte 0
-	.2byte 0
-	.4byte action_e8__6ActionP4UnitT1
-	.2byte 0
-	.2byte 0
-	.4byte calcCrit__6ActionP4Unit
-	.2byte 0
-	.2byte 0
-	.4byte action_f8__6ActionP4Unit
-	.2byte 0
-	.2byte 0
-	.4byte onNoEffect__6ActionP4Unit
+	.4byte onNoEffect__7LifeupGP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onPPHeal__6ActionP4Unit
@@ -80923,7 +80397,7 @@ vt_09F78F78::
 	.4byte sfxNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BD954
+	.4byte hitChance__C10DefaultPsi
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C3Psi
@@ -80949,13 +80423,13 @@ vt_09F78F78::
 	.2byte 0
 	.4byte ppCost__C3Psi
 
-vt_09F79230::
+_vt.9PsiMagnet::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BD81C
+	.4byte dt__9PsiMagnet
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__3Psi
@@ -81006,22 +80480,22 @@ vt_09F79230::
 	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_144
+	.4byte playAnim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BD800
+	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BD774
+	.4byte calcDidHit__9PsiMagnetP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BD730
+	.4byte tellMissed__9PsiMagnetP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte isResisted__6ActionP4Unit
+	.4byte isResisted__9PsiMagnetP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BD9DC
+	.4byte tellResisted__9PsiMagnetP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onDamage__6ActionP4Unit
@@ -81033,7 +80507,7 @@ vt_09F79230::
 	.4byte action_d8__6ActionP4UnitT1
 	.2byte 0
 	.2byte 0
-	.4byte onPsiDamage__6ActionP4Unit
+	.4byte onPsiDamage__9PsiMagnetP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_e8__6ActionP4UnitT1
@@ -81066,7 +80540,270 @@ vt_09F79230::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BD70C
+	.4byte onPlayAnim__9PsiMagnetP4Unitb1
+	.2byte 0
+	.2byte 0
+	.4byte action_140__6Action
+	.2byte 0
+	.2byte 0
+	.4byte action_148__6Action
+	.2byte 0
+	.2byte 0
+	.4byte action_150__9PsiMagnet
+	.2byte 0
+	.2byte 0
+	.4byte ROMStr__C6ActionUs
+	.2byte 0
+	.2byte 0
+	.4byte action_160__C6ActionUsRC3Msg
+	.2byte 0
+	.2byte 0
+	.4byte getUser__C6Action
+	.2byte 0
+	.2byte 0
+	.4byte addTarget__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte removeTarget__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte clearTargets__6Action
+	.2byte 0
+	.2byte 0
+	.4byte numTargets__C6Action
+	.2byte 0
+	.2byte 0
+	.4byte getTarget__C6Actioni
+	.2byte 0
+	.2byte 0
+	.4byte getTargetIdx__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte fire__3Psi
+	.2byte 0
+	.2byte 0
+	.4byte action_1a8__6Action
+	.2byte 0
+	.2byte 0
+	.4byte action_1b0__6Action
+	.2byte 0
+	.2byte 0
+	.4byte action_1b8__6Action
+	.2byte 0
+	.2byte 0
+	.4byte action_1c0__3Psi
+	.2byte 0
+	.2byte 0
+	.4byte id__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte name__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte action_1d8__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte action_fixme__6Actioni
+	.2byte 0
+	.2byte 0
+	.4byte action_1e0__3Psi
+	.2byte 0
+	.2byte 0
+	.4byte effect__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte element__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte target__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte attackMult__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte healLo__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte healHi__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte ailment__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte ailmentChance__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte hasAction__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte priority__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte getUseMessage__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte getForceUseMessage__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte hasDim__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte animNo__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte successAnimNo__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte critAnimNo__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte sfxNo__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte hitChance__C10DefaultPsi
+	.2byte 0
+	.2byte 0
+	.4byte critChance__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte redirectable__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte userAttackSfx__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte userCritSfx__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte userMissSfx__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte isOverworldUsable__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte type__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte ppCost__C3Psi
+
+_vt.8PkGround::
+	.2byte 0
+	.2byte 0
+	.4byte 0
+	.2byte 0
+	.2byte 0
+	.4byte dt__8PkGround
+	.2byte 0
+	.2byte 0
+	.4byte getRTTI__3Psi
+	.2byte 0
+	.2byte 0
+	.4byte base_1c__4Base
+	.2byte 0
+	.2byte 0
+	.4byte base_24__4Base
+	.2byte 0
+	.2byte 0
+	.4byte base_2c__4Base
+	.2byte 0
+	.2byte 0
+	.4byte base_34__4Base
+	.2byte 0
+	.2byte 0
+	.4byte listen__4BasePvRC4BaseG9ClockData
+	.2byte 0
+	.2byte 0
+	.4byte base_44__4Base
+	.2byte 0
+	.2byte 0
+	.4byte base_4c__4BaseUiR4BaseUi
+	.2byte 0
+	.2byte 0
+	.4byte emit__4BaseRC4Base
+	.2byte 0
+	.2byte 0
+	.4byte base_5c__4Base
+	.2byte 0
+	.2byte 0
+	.4byte clearNullOutgoing__4Base
+	.2byte 0
+	.2byte 0
+	.4byte action_68__6Action
+	.2byte 0
+	.2byte 0
+	.4byte action_70__6Action
+	.2byte 0
+	.2byte 0
+	.4byte playSfx__6Action
+	.2byte 0
+	.2byte 0
+	.4byte tellUseMessage__6Action
+	.2byte 0
+	.2byte 0
+	.4byte playDim__6Action
+	.2byte 0
+	.2byte 0
+	.4byte playAnim__8PkGround
+	.2byte 0
+	.2byte 0
+	.4byte action_a0__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte calcDidHit__8PkGroundP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte tellMissed__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte isResisted__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte tellResisted__10DefaultPsiP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte onDamage__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte onAttack__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte action_d8__6ActionP4UnitT1
+	.2byte 0
+	.2byte 0
+	.4byte onPsiDamage__8PkGroundP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte action_e8__6ActionP4UnitT1
+	.2byte 0
+	.2byte 0
+	.4byte calcCrit__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte action_f8__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte onNoEffect__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte onPPHeal__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte onSuccess__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte onInflictStatus__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte calcStatusInflict__6ActionP4UnitUsib
+	.2byte 0
+	.2byte 0
+	.4byte onFail__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte action_130__6ActionP4UnitUsib
+	.2byte 0
+	.2byte 0
+	.4byte onPlayAnim__6ActionP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -81186,7 +80923,7 @@ vt_09F79230::
 	.4byte sfxNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BD954
+	.4byte hitChance__C10DefaultPsi
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C3Psi
@@ -81212,13 +80949,13 @@ vt_09F79230::
 	.2byte 0
 	.4byte ppCost__C3Psi
 
-vt_09F794E8::
+_vt.11PkThunderGO::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BD940
+	.4byte dt__11PkThunderGO
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__3Psi
@@ -81269,22 +81006,22 @@ vt_09F794E8::
 	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_145
+	.4byte playAnim__11PkThunderGO
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BD924
+	.4byte action_a0__11PkThunderGOP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BD898
+	.4byte calcDidHit__11PkThunderGOP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BD854
+	.4byte tellMissed__11PkThunderGOP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BD9DC
+	.4byte tellResisted__10DefaultPsiP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onDamage__6ActionP4Unit
@@ -81329,7 +81066,7 @@ vt_09F794E8::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BD830
+	.4byte onPlayAnim__11PkThunderGOP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
@@ -81449,7 +81186,270 @@ vt_09F794E8::
 	.4byte sfxNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BD954
+	.4byte hitChance__C10DefaultPsi
+	.2byte 0
+	.2byte 0
+	.4byte critChance__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte redirectable__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte userAttackSfx__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte userCritSfx__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte userMissSfx__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte isOverworldUsable__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte type__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte ppCost__C3Psi
+
+_vt.11PkThunderAB::
+	.2byte 0
+	.2byte 0
+	.4byte 0
+	.2byte 0
+	.2byte 0
+	.4byte dt__11PkThunderAB
+	.2byte 0
+	.2byte 0
+	.4byte getRTTI__3Psi
+	.2byte 0
+	.2byte 0
+	.4byte base_1c__4Base
+	.2byte 0
+	.2byte 0
+	.4byte base_24__4Base
+	.2byte 0
+	.2byte 0
+	.4byte base_2c__4Base
+	.2byte 0
+	.2byte 0
+	.4byte base_34__4Base
+	.2byte 0
+	.2byte 0
+	.4byte listen__4BasePvRC4BaseG9ClockData
+	.2byte 0
+	.2byte 0
+	.4byte base_44__4Base
+	.2byte 0
+	.2byte 0
+	.4byte base_4c__4BaseUiR4BaseUi
+	.2byte 0
+	.2byte 0
+	.4byte emit__4BaseRC4Base
+	.2byte 0
+	.2byte 0
+	.4byte base_5c__4Base
+	.2byte 0
+	.2byte 0
+	.4byte clearNullOutgoing__4Base
+	.2byte 0
+	.2byte 0
+	.4byte action_68__6Action
+	.2byte 0
+	.2byte 0
+	.4byte action_70__6Action
+	.2byte 0
+	.2byte 0
+	.4byte playSfx__6Action
+	.2byte 0
+	.2byte 0
+	.4byte tellUseMessage__6Action
+	.2byte 0
+	.2byte 0
+	.4byte playDim__6Action
+	.2byte 0
+	.2byte 0
+	.4byte playAnim__11PkThunderAB
+	.2byte 0
+	.2byte 0
+	.4byte action_a0__11PkThunderABP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte calcDidHit__11PkThunderABP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte tellMissed__11PkThunderABP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte isResisted__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte tellResisted__10DefaultPsiP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte onDamage__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte onAttack__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte action_d8__6ActionP4UnitT1
+	.2byte 0
+	.2byte 0
+	.4byte onPsiDamage__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte action_e8__6ActionP4UnitT1
+	.2byte 0
+	.2byte 0
+	.4byte calcCrit__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte action_f8__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte onNoEffect__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte onPPHeal__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte onSuccess__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte onInflictStatus__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte calcStatusInflict__6ActionP4UnitUsib
+	.2byte 0
+	.2byte 0
+	.4byte onFail__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte action_130__6ActionP4UnitUsib
+	.2byte 0
+	.2byte 0
+	.4byte onPlayAnim__11PkThunderABP4Unitb
+	.2byte 0
+	.2byte 0
+	.4byte action_140__6Action
+	.2byte 0
+	.2byte 0
+	.4byte action_148__6Action
+	.2byte 0
+	.2byte 0
+	.4byte action_150__3Psi
+	.2byte 0
+	.2byte 0
+	.4byte ROMStr__C6ActionUs
+	.2byte 0
+	.2byte 0
+	.4byte action_160__C6ActionUsRC3Msg
+	.2byte 0
+	.2byte 0
+	.4byte getUser__C6Action
+	.2byte 0
+	.2byte 0
+	.4byte addTarget__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte removeTarget__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte clearTargets__6Action
+	.2byte 0
+	.2byte 0
+	.4byte numTargets__C6Action
+	.2byte 0
+	.2byte 0
+	.4byte getTarget__C6Actioni
+	.2byte 0
+	.2byte 0
+	.4byte getTargetIdx__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte fire__3Psi
+	.2byte 0
+	.2byte 0
+	.4byte action_1a8__6Action
+	.2byte 0
+	.2byte 0
+	.4byte action_1b0__6Action
+	.2byte 0
+	.2byte 0
+	.4byte action_1b8__6Action
+	.2byte 0
+	.2byte 0
+	.4byte action_1c0__3Psi
+	.2byte 0
+	.2byte 0
+	.4byte id__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte name__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte action_1d8__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte action_fixme__6Actioni
+	.2byte 0
+	.2byte 0
+	.4byte action_1e0__3Psi
+	.2byte 0
+	.2byte 0
+	.4byte effect__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte element__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte target__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte attackMult__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte healLo__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte healHi__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte ailment__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte ailmentChance__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte hasAction__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte priority__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte getUseMessage__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte getForceUseMessage__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte hasDim__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte animNo__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte successAnimNo__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte critAnimNo__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte sfxNo__C3Psi
+	.2byte 0
+	.2byte 0
+	.4byte hitChance__C10DefaultPsi
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C3Psi
@@ -81481,7 +81481,7 @@ _vt.10DefaultPsi::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BDAAC
+	.4byte dt__10DefaultPsi
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__3Psi
@@ -81547,7 +81547,7 @@ _vt.10DefaultPsi::
 	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BD9DC
+	.4byte tellResisted__10DefaultPsiP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onDamage__6ActionP4Unit
@@ -81712,7 +81712,7 @@ _vt.10DefaultPsi::
 	.4byte sfxNo__C3Psi
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BD954
+	.4byte hitChance__C10DefaultPsi
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C3Psi

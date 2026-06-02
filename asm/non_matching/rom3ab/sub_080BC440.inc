@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080BC440:
+__9PsiMagnetUsP4Unit:
 	push {r4, lr}
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
@@ -14,5 +14,5 @@ sub_080BC440:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080BC45C: .4byte vt_09F78CC0
+_080BC45C: .4byte _vt.9PsiMagnet
 	.syntax divided

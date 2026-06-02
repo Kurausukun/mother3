@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080BC8E4:
+_._9PsiShield:
 	push {lr}
 	ldr r2, _080BC8F4
 	str r2, [r0, #0x1c]

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080BD1BC:
+_._9PsiMagnet:
 	push {lr}
 	ldr r2, _080BD1CC
 	str r2, [r0, #0x1c]

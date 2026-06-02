@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080BC408:
+__7PkFlashUsP4Unit:
 	push {r4, lr}
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
@@ -12,5 +12,5 @@ sub_080BC408:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080BC420: .4byte vt_09F78748
+_080BC420: .4byte _vt.7PkFlash
 	.syntax divided
