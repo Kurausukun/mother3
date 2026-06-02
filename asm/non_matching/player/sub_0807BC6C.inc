@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0807BC6C:
+unit_178__6Player:
 	adds r0, #0xf8
 	ldrh r0, [r0]
 	bx lr

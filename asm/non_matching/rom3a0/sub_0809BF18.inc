@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809BF18:
+__5ClausUsUs:
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -82,6 +82,6 @@ _0809BFD0: .4byte _vt.13UnitTurnBegin
 _0809BFD4: .4byte gUnknown_080F52C8
 _0809BFD8: .4byte _vt.11UnitTurnEnd
 _0809BFDC: .4byte gUnknown_080F52D0
-_0809BFE0: .4byte vt_09F46930
-_0809BFE4: .4byte vt_09F469A8
+_0809BFE0: .4byte _vt.5Claus.10UnitObject
+_0809BFE4: .4byte _vt.5Claus
 	.syntax divided

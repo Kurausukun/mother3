@@ -1,11 +1,11 @@
 	.syntax unified
-sub_0809D05C:
+_._5Flint:
 	push {lr}
 	ldr r2, _0809D070
 	str r2, [r0, #0x20]
 	ldr r2, _0809D074
 	str r2, [r0, #0x1c]
-	bl sub_0807ACF0
+	bl dt__6Player
 	pop {r0}
 	bx r0
 	.align 2, 0

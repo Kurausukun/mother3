@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809D0DC:
+critSfx__13DefaultPlayer:
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r1, [r4, #0x1c]
@@ -36,7 +36,7 @@ _0809D108:
 	cmp r0, #1
 	beq _0809D132
 	adds r0, r4, #0
-	bl sub_0807BD98
+	bl critSfx__6Player
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	b _0809D134

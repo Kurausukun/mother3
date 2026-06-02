@@ -3,7 +3,7 @@ sub_0809C818:
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0
-	bl sub_0807B4B8
+	bl unit_78__6PlayerP6Action
 	adds r0, r4, #0
 	movs r1, #0x31
 	bl sub_08073FC4

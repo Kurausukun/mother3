@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809CCB8:
+_._8Kumatora:
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -15,13 +15,13 @@ sub_0809CCB8:
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_0807ACF0
+	bl dt__6Player
 	pop {r4, r5}
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0809CCE4: .4byte vt_09F47D08
-_0809CCE8: .4byte vt_09F47D80
+_0809CCE4: .4byte _vt.8Kumatora.10UnitObject
+_0809CCE8: .4byte _vt.8Kumatora
 _0809CCEC: .4byte _vt.13DefaultPlayer.10UnitObject
 _0809CCF0: .4byte _vt.13DefaultPlayer
 	.syntax divided

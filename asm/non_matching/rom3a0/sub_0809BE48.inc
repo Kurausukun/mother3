@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809BE48:
+create__15KumatoraFactoryUsUs:
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -12,7 +12,7 @@ sub_0809BE48:
 	bl __builtin_new
 	adds r1, r4, #0
 	adds r2, r5, #0
-	bl sub_0809C294
+	bl __8KumatoraUsUs
 	pop {r4, r5}
 	pop {r1}
 	bx r1

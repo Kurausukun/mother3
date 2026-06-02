@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809BE24:
+create__13DusterFactoryUsUs:
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -12,7 +12,7 @@ sub_0809BE24:
 	bl __builtin_new
 	adds r1, r4, #0
 	adds r2, r5, #0
-	bl sub_0809C1B8
+	bl __6DusterUsUs
 	pop {r4, r5}
 	pop {r1}
 	bx r1

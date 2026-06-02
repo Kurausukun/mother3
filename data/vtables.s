@@ -2579,13 +2579,13 @@ vt_09F46900::
 	.2byte 0
 	.4byte sub_08060F7C
 
-vt_09F46930::
+_vt.5Claus.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
 	.2byte -32
 	.2byte 0
-	.4byte sub_0809C5E8
+	.4byte dt__5Claus
 	.2byte -32
 	.2byte 0
 	.4byte sub_0807C694
@@ -2626,13 +2626,13 @@ vt_09F46930::
 	.2byte 0
 	.4byte sub_0807C4F0
 
-vt_09F469A8::
+_vt.5Claus::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809C5E8
+	.4byte dt__5Claus
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__6Player
@@ -2671,16 +2671,16 @@ vt_09F469A8::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809D4B8
+	.4byte onAction__13DefaultPlayerP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B4B8
+	.4byte unit_78__6PlayerP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B4D8
+	.4byte unit_88__6PlayerP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_90__4UnitP6Action
@@ -2695,10 +2695,10 @@ vt_09F469A8::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B528
+	.4byte kill__6Player
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B5D4
+	.4byte revive__4Player
 	.2byte 0
 	.2byte 0
 	.4byte isAlive__4Unit
@@ -2707,7 +2707,7 @@ vt_09F469A8::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B450
+	.4byte onTurn__6Player
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -2728,19 +2728,19 @@ vt_09F469A8::
 	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B4F8
+	.4byte onNoStatus__6Player
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BBA4
+	.4byte setHP__6Playeri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BC18
+	.4byte setPP__6Playeri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxPP__4Uniti
@@ -2770,13 +2770,13 @@ vt_09F469A8::
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BC6C
+	.4byte unit_178__6Player
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BC74
+	.4byte id__C6Player
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BC80
+	.4byte name__C6Player
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -2785,7 +2785,7 @@ vt_09F469A8::
 	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BCF4
+	.4byte hp__C6Player
 	.2byte 0
 	.2byte 0
 	.4byte maxHP__C4Unit
@@ -2794,7 +2794,7 @@ vt_09F469A8::
 	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BD34
+	.4byte pp__C6Player
 	.2byte 0
 	.2byte 0
 	.4byte maxPP__C4Unit
@@ -2824,13 +2824,13 @@ vt_09F469A8::
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809D140
+	.4byte attackSfx__13DefaultPlayer
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809D0DC
+	.4byte critSfx__13DefaultPlayer
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809D078
+	.4byte missSfx__13DefaultPlayer
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -2935,7 +2935,7 @@ vt_09F469A8::
 	.4byte sub_0807B444
 	.2byte 0
 	.2byte 0
-	.4byte levelUp
+	.4byte levelUp__6Playeri
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807BAE4
@@ -3057,13 +3057,13 @@ vt_09F469A8::
 	.2byte 0
 	.4byte sub_0809D1A0
 
-vt_09F46E20::
+_vt.5Salsa.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
 	.2byte -32
 	.2byte 0
-	.4byte sub_0809C898
+	.4byte dt__5Salsa
 	.2byte -32
 	.2byte 0
 	.4byte sub_0807C694
@@ -3104,13 +3104,13 @@ vt_09F46E20::
 	.2byte 0
 	.4byte sub_0807C4F0
 
-vt_09F46E98::
+_vt.5Salsa::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809C898
+	.4byte dt__5Salsa
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__6Player
@@ -3149,7 +3149,7 @@ vt_09F46E98::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809D4B8
+	.4byte onAction__13DefaultPlayerP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809C818
@@ -3158,7 +3158,7 @@ vt_09F46E98::
 	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B4D8
+	.4byte unit_88__6PlayerP6Action
 	.2byte 0
 	.2byte 0
 	.4byte sub_0809C7EC
@@ -3173,10 +3173,10 @@ vt_09F46E98::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B528
+	.4byte kill__6Player
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B5D4
+	.4byte revive__4Player
 	.2byte 0
 	.2byte 0
 	.4byte isAlive__4Unit
@@ -3185,7 +3185,7 @@ vt_09F46E98::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B450
+	.4byte onTurn__6Player
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -3206,19 +3206,19 @@ vt_09F46E98::
 	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B4F8
+	.4byte onNoStatus__6Player
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BBA4
+	.4byte setHP__6Playeri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BC18
+	.4byte setPP__6Playeri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxPP__4Uniti
@@ -3248,13 +3248,13 @@ vt_09F46E98::
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BC6C
+	.4byte unit_178__6Player
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BC74
+	.4byte id__C6Player
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BC80
+	.4byte name__C6Player
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -3263,7 +3263,7 @@ vt_09F46E98::
 	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BCF4
+	.4byte hp__C6Player
 	.2byte 0
 	.2byte 0
 	.4byte maxHP__C4Unit
@@ -3272,7 +3272,7 @@ vt_09F46E98::
 	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BD34
+	.4byte pp__C6Player
 	.2byte 0
 	.2byte 0
 	.4byte maxPP__C4Unit
@@ -3302,13 +3302,13 @@ vt_09F46E98::
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809D140
+	.4byte attackSfx__13DefaultPlayer
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809D0DC
+	.4byte critSfx__13DefaultPlayer
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809D078
+	.4byte missSfx__13DefaultPlayer
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -3413,7 +3413,7 @@ vt_09F46E98::
 	.4byte sub_0807B444
 	.2byte 0
 	.2byte 0
-	.4byte levelUp
+	.4byte levelUp__6Playeri
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807BAE4
@@ -3538,13 +3538,13 @@ vt_09F46E98::
 	.2byte 0
 	.4byte sub_0809C840
 
-vt_09F47318::
+_vt.5Boney.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
 	.2byte -32
 	.2byte 0
-	.4byte sub_0809C8D0
+	.4byte dt__5Boney
 	.2byte -32
 	.2byte 0
 	.4byte sub_0807C694
@@ -3585,13 +3585,13 @@ vt_09F47318::
 	.2byte 0
 	.4byte sub_0807C4F0
 
-vt_09F47390::
+_vt.5Boney::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809C8D0
+	.4byte dt__5Boney
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__6Player
@@ -3630,16 +3630,16 @@ vt_09F47390::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809D4B8
+	.4byte onAction__13DefaultPlayerP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B4B8
+	.4byte unit_78__6PlayerP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B4D8
+	.4byte unit_88__6PlayerP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_90__4UnitP6Action
@@ -3654,10 +3654,10 @@ vt_09F47390::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B528
+	.4byte kill__6Player
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B5D4
+	.4byte revive__4Player
 	.2byte 0
 	.2byte 0
 	.4byte isAlive__4Unit
@@ -3666,7 +3666,7 @@ vt_09F47390::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B450
+	.4byte onTurn__6Player
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -3687,19 +3687,19 @@ vt_09F47390::
 	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B4F8
+	.4byte onNoStatus__6Player
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BBA4
+	.4byte setHP__6Playeri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BC18
+	.4byte setPP__6Playeri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxPP__4Uniti
@@ -3729,13 +3729,13 @@ vt_09F47390::
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BC6C
+	.4byte unit_178__6Player
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BC74
+	.4byte id__C6Player
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BC80
+	.4byte name__C6Player
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -3744,7 +3744,7 @@ vt_09F47390::
 	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BCF4
+	.4byte hp__C6Player
 	.2byte 0
 	.2byte 0
 	.4byte maxHP__C4Unit
@@ -3753,7 +3753,7 @@ vt_09F47390::
 	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BD34
+	.4byte pp__C6Player
 	.2byte 0
 	.2byte 0
 	.4byte maxPP__C4Unit
@@ -3783,13 +3783,13 @@ vt_09F47390::
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809D140
+	.4byte attackSfx__13DefaultPlayer
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809D0DC
+	.4byte critSfx__13DefaultPlayer
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809D078
+	.4byte missSfx__13DefaultPlayer
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -3894,7 +3894,7 @@ vt_09F47390::
 	.4byte sub_0807B444
 	.2byte 0
 	.2byte 0
-	.4byte levelUp
+	.4byte levelUp__6Playeri
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807BAE4
@@ -4019,13 +4019,13 @@ vt_09F47390::
 	.2byte 0
 	.4byte sub_0809C8B4
 
-vt_09F47810::
+_vt.6Duster.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
 	.2byte -32
 	.2byte 0
-	.4byte sub_0809CAB8
+	.4byte dt__6Duster
 	.2byte -32
 	.2byte 0
 	.4byte sub_0807C694
@@ -4066,13 +4066,13 @@ vt_09F47810::
 	.2byte 0
 	.4byte sub_0807C4F0
 
-vt_09F47888::
+_vt.6Duster::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809CAB8
+	.4byte dt__6Duster
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__6Player
@@ -4111,16 +4111,16 @@ vt_09F47888::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809D4B8
+	.4byte onAction__13DefaultPlayerP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B4B8
+	.4byte unit_78__6PlayerP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B4D8
+	.4byte unit_88__6PlayerP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_90__4UnitP6Action
@@ -4135,10 +4135,10 @@ vt_09F47888::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B528
+	.4byte kill__6Player
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B5D4
+	.4byte revive__4Player
 	.2byte 0
 	.2byte 0
 	.4byte isAlive__4Unit
@@ -4147,7 +4147,7 @@ vt_09F47888::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B450
+	.4byte onTurn__6Player
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -4168,19 +4168,19 @@ vt_09F47888::
 	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B4F8
+	.4byte onNoStatus__6Player
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BBA4
+	.4byte setHP__6Playeri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BC18
+	.4byte setPP__6Playeri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxPP__4Uniti
@@ -4210,13 +4210,13 @@ vt_09F47888::
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BC6C
+	.4byte unit_178__6Player
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BC74
+	.4byte id__C6Player
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BC80
+	.4byte name__C6Player
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -4225,7 +4225,7 @@ vt_09F47888::
 	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BCF4
+	.4byte hp__C6Player
 	.2byte 0
 	.2byte 0
 	.4byte maxHP__C4Unit
@@ -4234,7 +4234,7 @@ vt_09F47888::
 	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BD34
+	.4byte pp__C6Player
 	.2byte 0
 	.2byte 0
 	.4byte maxPP__C4Unit
@@ -4264,13 +4264,13 @@ vt_09F47888::
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809D140
+	.4byte attackSfx__13DefaultPlayer
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809D0DC
+	.4byte critSfx__13DefaultPlayer
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809D078
+	.4byte missSfx__13DefaultPlayer
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -4375,7 +4375,7 @@ vt_09F47888::
 	.4byte sub_0807B444
 	.2byte 0
 	.2byte 0
-	.4byte levelUp
+	.4byte levelUp__6Playeri
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807BAE4
@@ -4500,13 +4500,13 @@ vt_09F47888::
 	.2byte 0
 	.4byte sub_0809C974
 
-vt_09F47D08::
+_vt.8Kumatora.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
 	.2byte -32
 	.2byte 0
-	.4byte sub_0809CCB8
+	.4byte dt__8Kumatora
 	.2byte -32
 	.2byte 0
 	.4byte sub_0807C694
@@ -4547,13 +4547,13 @@ vt_09F47D08::
 	.2byte 0
 	.4byte sub_0807C4F0
 
-vt_09F47D80::
+_vt.8Kumatora::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809CCB8
+	.4byte dt__8Kumatora
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__6Player
@@ -4592,16 +4592,16 @@ vt_09F47D80::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809D4B8
+	.4byte onAction__13DefaultPlayerP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B4B8
+	.4byte unit_78__6PlayerP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B4D8
+	.4byte unit_88__6PlayerP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_90__4UnitP6Action
@@ -4616,10 +4616,10 @@ vt_09F47D80::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B528
+	.4byte kill__6Player
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B5D4
+	.4byte revive__4Player
 	.2byte 0
 	.2byte 0
 	.4byte isAlive__4Unit
@@ -4628,7 +4628,7 @@ vt_09F47D80::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B450
+	.4byte onTurn__6Player
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -4649,19 +4649,19 @@ vt_09F47D80::
 	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B4F8
+	.4byte onNoStatus__6Player
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BBA4
+	.4byte setHP__6Playeri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BC18
+	.4byte setPP__6Playeri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxPP__4Uniti
@@ -4691,13 +4691,13 @@ vt_09F47D80::
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BC6C
+	.4byte unit_178__6Player
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BC74
+	.4byte id__C6Player
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BC80
+	.4byte name__C6Player
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -4706,7 +4706,7 @@ vt_09F47D80::
 	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BCF4
+	.4byte hp__C6Player
 	.2byte 0
 	.2byte 0
 	.4byte maxHP__C4Unit
@@ -4715,7 +4715,7 @@ vt_09F47D80::
 	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BD34
+	.4byte pp__C6Player
 	.2byte 0
 	.2byte 0
 	.4byte maxPP__C4Unit
@@ -4745,13 +4745,13 @@ vt_09F47D80::
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809D140
+	.4byte attackSfx__13DefaultPlayer
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809D0DC
+	.4byte critSfx__13DefaultPlayer
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809D078
+	.4byte missSfx__13DefaultPlayer
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -4856,7 +4856,7 @@ vt_09F47D80::
 	.4byte sub_0807B444
 	.2byte 0
 	.2byte 0
-	.4byte levelUp
+	.4byte levelUp__6Playeri
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807BAE4
@@ -4981,13 +4981,13 @@ vt_09F47D80::
 	.2byte 0
 	.4byte sub_0809CBD0
 
-vt_09F48200::
+_vt.5Lucas.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
 	.2byte -32
 	.2byte 0
-	.4byte sub_0809CF50
+	.4byte dt__5Lucas
 	.2byte -32
 	.2byte 0
 	.4byte sub_0807C694
@@ -5028,13 +5028,13 @@ vt_09F48200::
 	.2byte 0
 	.4byte sub_0807C4F0
 
-vt_09F48278::
+_vt.5Lucas::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809CF50
+	.4byte dt__5Lucas
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__6Player
@@ -5073,16 +5073,16 @@ vt_09F48278::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809D4B8
+	.4byte onAction__13DefaultPlayerP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B4B8
+	.4byte unit_78__6PlayerP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B4D8
+	.4byte unit_88__6PlayerP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_90__4UnitP6Action
@@ -5097,10 +5097,10 @@ vt_09F48278::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B528
+	.4byte kill__6Player
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B5D4
+	.4byte revive__4Player
 	.2byte 0
 	.2byte 0
 	.4byte isAlive__4Unit
@@ -5109,7 +5109,7 @@ vt_09F48278::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B450
+	.4byte onTurn__6Player
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -5130,19 +5130,19 @@ vt_09F48278::
 	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B4F8
+	.4byte onNoStatus__6Player
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BBA4
+	.4byte setHP__6Playeri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BC18
+	.4byte setPP__6Playeri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxPP__4Uniti
@@ -5172,13 +5172,13 @@ vt_09F48278::
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BC6C
+	.4byte unit_178__6Player
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BC74
+	.4byte id__C6Player
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BC80
+	.4byte name__C6Player
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -5187,7 +5187,7 @@ vt_09F48278::
 	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BCF4
+	.4byte hp__C6Player
 	.2byte 0
 	.2byte 0
 	.4byte maxHP__C4Unit
@@ -5196,7 +5196,7 @@ vt_09F48278::
 	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BD34
+	.4byte pp__C6Player
 	.2byte 0
 	.2byte 0
 	.4byte maxPP__C4Unit
@@ -5226,13 +5226,13 @@ vt_09F48278::
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809D140
+	.4byte attackSfx__13DefaultPlayer
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809D0DC
+	.4byte critSfx__13DefaultPlayer
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809D078
+	.4byte missSfx__13DefaultPlayer
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -5337,7 +5337,7 @@ vt_09F48278::
 	.4byte sub_0807B444
 	.2byte 0
 	.2byte 0
-	.4byte levelUp
+	.4byte levelUp__6Playeri
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807BAE4
@@ -5465,13 +5465,13 @@ vt_09F48278::
 	.2byte 0
 	.4byte sub_0809CE68
 
-vt_09F48700::
+_vt.5Flint.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte 0
 	.2byte -32
 	.2byte 0
-	.4byte sub_0809D05C
+	.4byte dt__5Flint
 	.2byte -32
 	.2byte 0
 	.4byte sub_0807C694
@@ -5512,13 +5512,13 @@ vt_09F48700::
 	.2byte 0
 	.4byte sub_0807C4F0
 
-vt_09F48778::
+_vt.5Flint::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809D05C
+	.4byte dt__5Flint
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__6Player
@@ -5557,16 +5557,16 @@ vt_09F48778::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809D4B8
+	.4byte onAction__13DefaultPlayerP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B4B8
+	.4byte unit_78__6PlayerP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B4D8
+	.4byte unit_88__6PlayerP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_90__4UnitP6Action
@@ -5581,10 +5581,10 @@ vt_09F48778::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B528
+	.4byte kill__6Player
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B5D4
+	.4byte revive__4Player
 	.2byte 0
 	.2byte 0
 	.4byte isAlive__4Unit
@@ -5593,7 +5593,7 @@ vt_09F48778::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B450
+	.4byte onTurn__6Player
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -5614,19 +5614,19 @@ vt_09F48778::
 	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B4F8
+	.4byte onNoStatus__6Player
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BBA4
+	.4byte setHP__6Playeri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BC18
+	.4byte setPP__6Playeri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxPP__4Uniti
@@ -5656,13 +5656,13 @@ vt_09F48778::
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BC6C
+	.4byte unit_178__6Player
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BC74
+	.4byte id__C6Player
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BC80
+	.4byte name__C6Player
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -5671,7 +5671,7 @@ vt_09F48778::
 	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BCF4
+	.4byte hp__C6Player
 	.2byte 0
 	.2byte 0
 	.4byte maxHP__C4Unit
@@ -5680,7 +5680,7 @@ vt_09F48778::
 	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BD34
+	.4byte pp__C6Player
 	.2byte 0
 	.2byte 0
 	.4byte maxPP__C4Unit
@@ -5710,13 +5710,13 @@ vt_09F48778::
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809D140
+	.4byte attackSfx__13DefaultPlayer
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809D0DC
+	.4byte critSfx__13DefaultPlayer
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809D078
+	.4byte missSfx__13DefaultPlayer
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -5821,7 +5821,7 @@ vt_09F48778::
 	.4byte sub_0807B444
 	.2byte 0
 	.2byte 0
-	.4byte levelUp
+	.4byte levelUp__6Playeri
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807BAE4
@@ -5952,7 +5952,7 @@ _vt.13DefaultPlayer.10UnitObject::
 	.4byte 0
 	.2byte -32
 	.2byte 0
-	.4byte sub_0809D4FC
+	.4byte dt__13DefaultPlayer
 	.2byte -32
 	.2byte 0
 	.4byte sub_0807C694
@@ -5999,7 +5999,7 @@ _vt.13DefaultPlayer::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809D4FC
+	.4byte dt__13DefaultPlayer
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__6Player
@@ -6038,16 +6038,16 @@ _vt.13DefaultPlayer::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809D4B8
+	.4byte onAction__13DefaultPlayerP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B4B8
+	.4byte unit_78__6PlayerP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B4D8
+	.4byte unit_88__6PlayerP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_90__4UnitP6Action
@@ -6062,10 +6062,10 @@ _vt.13DefaultPlayer::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B528
+	.4byte kill__6Player
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B5D4
+	.4byte revive__4Player
 	.2byte 0
 	.2byte 0
 	.4byte isAlive__4Unit
@@ -6074,7 +6074,7 @@ _vt.13DefaultPlayer::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B450
+	.4byte onTurn__6Player
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -6095,19 +6095,19 @@ _vt.13DefaultPlayer::
 	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B4F8
+	.4byte onNoStatus__6Player
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BBA4
+	.4byte setHP__6Playeri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BC18
+	.4byte setPP__6Playeri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxPP__4Uniti
@@ -6137,13 +6137,13 @@ _vt.13DefaultPlayer::
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BC6C
+	.4byte unit_178__6Player
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BC74
+	.4byte id__C6Player
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BC80
+	.4byte name__C6Player
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -6152,7 +6152,7 @@ _vt.13DefaultPlayer::
 	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BCF4
+	.4byte hp__C6Player
 	.2byte 0
 	.2byte 0
 	.4byte maxHP__C4Unit
@@ -6161,7 +6161,7 @@ _vt.13DefaultPlayer::
 	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BD34
+	.4byte pp__C6Player
 	.2byte 0
 	.2byte 0
 	.4byte maxPP__C4Unit
@@ -6191,13 +6191,13 @@ _vt.13DefaultPlayer::
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809D140
+	.4byte attackSfx__13DefaultPlayer
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809D0DC
+	.4byte critSfx__13DefaultPlayer
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809D078
+	.4byte missSfx__13DefaultPlayer
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -6302,7 +6302,7 @@ _vt.13DefaultPlayer::
 	.4byte sub_0807B444
 	.2byte 0
 	.2byte 0
-	.4byte levelUp
+	.4byte levelUp__6Playeri
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807BAE4
@@ -94961,7 +94961,7 @@ _vt.6Player.10UnitObject::
 	.4byte 0
 	.2byte -32
 	.2byte 0
-	.4byte sub_0807ACF0
+	.4byte dt__6Player
 	.2byte -32
 	.2byte 0
 	.4byte sub_0807C694
@@ -95008,7 +95008,7 @@ _vt.6Player::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807ACF0
+	.4byte dt__6Player
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__6Player
@@ -95050,13 +95050,13 @@ _vt.6Player::
 	.4byte onAction__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B4B8
+	.4byte unit_78__6PlayerP6Action
 	.2byte 0
 	.2byte 0
 	.4byte onActionFinish__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B4D8
+	.4byte unit_88__6PlayerP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_90__4UnitP6Action
@@ -95071,10 +95071,10 @@ _vt.6Player::
 	.4byte nullsub_106__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B528
+	.4byte kill__6Player
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B5D4
+	.4byte revive__4Player
 	.2byte 0
 	.2byte 0
 	.4byte isAlive__4Unit
@@ -95083,7 +95083,7 @@ _vt.6Player::
 	.4byte isDead__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B450
+	.4byte onTurn__6Player
 	.2byte 0
 	.2byte 0
 	.4byte unit_d8__4UnitP6Action
@@ -95104,19 +95104,19 @@ _vt.6Player::
 	.4byte unit_100__4UnitP6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807B4F8
+	.4byte onNoStatus__6Player
 	.2byte 0
 	.2byte 0
 	.4byte setLevel__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BBA4
+	.4byte setHP__6Playeri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxHP__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BC18
+	.4byte setPP__6Playeri
 	.2byte 0
 	.2byte 0
 	.4byte setMaxPP__4Uniti
@@ -95146,13 +95146,13 @@ _vt.6Player::
 	.4byte unit_170__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BC6C
+	.4byte unit_178__6Player
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BC74
+	.4byte id__C6Player
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BC80
+	.4byte name__C6Player
 	.2byte 0
 	.2byte 0
 	.4byte level__C4Unit
@@ -95161,7 +95161,7 @@ _vt.6Player::
 	.4byte hpReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BCF4
+	.4byte hp__C6Player
 	.2byte 0
 	.2byte 0
 	.4byte maxHP__C4Unit
@@ -95170,7 +95170,7 @@ _vt.6Player::
 	.4byte ppReal__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BD34
+	.4byte pp__C6Player
 	.2byte 0
 	.2byte 0
 	.4byte maxPP__C4Unit
@@ -95200,13 +95200,13 @@ _vt.6Player::
 	.4byte unit_200__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BD74
+	.4byte attackSfx__6Player
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BD98
+	.4byte critSfx__6Player
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807BD9C
+	.4byte missSfx__6Player
 	.2byte 0
 	.2byte 0
 	.4byte unit_220__4UnitUi
@@ -95311,7 +95311,7 @@ _vt.6Player::
 	.4byte sub_0807B444
 	.2byte 0
 	.2byte 0
-	.4byte levelUp
+	.4byte levelUp__6Playeri
 	.2byte 0
 	.2byte 0
 	.4byte sub_0807BAE4

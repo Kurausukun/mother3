@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809C37C:
+__5LucasUsUs:
 	push {r4, r5, r6, r7, lr}
 	sub sp, #0x28
 	adds r7, r0, #0
@@ -91,6 +91,6 @@ _0809C44C: .4byte _vt.13UnitTurnBegin
 _0809C450: .4byte gUnknown_080F52C8
 _0809C454: .4byte _vt.11UnitTurnEnd
 _0809C458: .4byte gUnknown_080F52D0
-_0809C45C: .4byte vt_09F48200
-_0809C460: .4byte vt_09F48278
+_0809C45C: .4byte _vt.5Lucas.10UnitObject
+_0809C460: .4byte _vt.5Lucas
 	.syntax divided

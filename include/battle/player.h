@@ -62,6 +62,7 @@ public:
         Kumatora = 0x4,
         Boney = 0x5,
         Salsa = 0x6,
+        Claus = 0xD,
         NUM_PLAYERS = 0x7,
     };
 };

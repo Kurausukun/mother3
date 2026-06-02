@@ -1,11 +1,11 @@
 	.syntax unified
-sub_0809CAB8:
+_._6Duster:
 	push {lr}
 	ldr r2, _0809CACC
 	str r2, [r0, #0x20]
 	ldr r2, _0809CAD0
 	str r2, [r0, #0x1c]
-	bl sub_0807ACF0
+	bl dt__6Player
 	pop {r0}
 	bx r0
 	.align 2, 0

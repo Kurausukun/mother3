@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0807BD9C:
+missSfx__6Player:
 	movs r1, #0x80
 	lsls r1, r1, #1
 	adds r0, r0, r1

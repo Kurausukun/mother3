@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809D4B8:
+onAction__13DefaultPlayerP6Action:
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0

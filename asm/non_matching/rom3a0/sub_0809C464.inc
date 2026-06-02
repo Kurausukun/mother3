@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809C464:
+__5FlintUsUs:
 	push {r4, r5, r6, r7, lr}
 	sub sp, #0x28
 	adds r7, r0, #0
@@ -85,6 +85,6 @@ _0809C528: .4byte _vt.13UnitTurnBegin
 _0809C52C: .4byte gUnknown_080F52C8
 _0809C530: .4byte _vt.11UnitTurnEnd
 _0809C534: .4byte gUnknown_080F52D0
-_0809C538: .4byte vt_09F48700
-_0809C53C: .4byte vt_09F48778
+_0809C538: .4byte _vt.5Flint.10UnitObject
+_0809C53C: .4byte _vt.5Flint
 	.syntax divided

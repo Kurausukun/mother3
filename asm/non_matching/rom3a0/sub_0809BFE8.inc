@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809BFE8:
+__5SalsaUsUs:
 	push {r4, r5, r6, r7, lr}
 	sub sp, #0x28
 	adds r7, r0, #0
@@ -96,6 +96,6 @@ _0809C0C4: .4byte _vt.13UnitTurnBegin
 _0809C0C8: .4byte gUnknown_080F52C8
 _0809C0CC: .4byte _vt.11UnitTurnEnd
 _0809C0D0: .4byte gUnknown_080F52D0
-_0809C0D4: .4byte vt_09F46E20
-_0809C0D8: .4byte vt_09F46E98
+_0809C0D4: .4byte _vt.5Salsa.10UnitObject
+_0809C0D8: .4byte _vt.5Salsa
 	.syntax divided

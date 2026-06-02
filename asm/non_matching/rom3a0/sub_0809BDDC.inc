@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809BDDC:
+create__12SalsaFactoryUsUs:
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -12,7 +12,7 @@ sub_0809BDDC:
 	bl __builtin_new
 	adds r1, r4, #0
 	adds r2, r5, #0
-	bl sub_0809BFE8
+	bl __5SalsaUsUs
 	pop {r4, r5}
 	pop {r1}
 	bx r1

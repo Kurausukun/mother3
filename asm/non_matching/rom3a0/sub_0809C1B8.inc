@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809C1B8:
+__6DusterUsUs:
 	push {r4, r5, r6, r7, lr}
 	sub sp, #0x28
 	adds r7, r0, #0
@@ -85,6 +85,6 @@ _0809C27C: .4byte _vt.13UnitTurnBegin
 _0809C280: .4byte gUnknown_080F52C8
 _0809C284: .4byte _vt.11UnitTurnEnd
 _0809C288: .4byte gUnknown_080F52D0
-_0809C28C: .4byte vt_09F47810
-_0809C290: .4byte vt_09F47888
+_0809C28C: .4byte _vt.6Duster.10UnitObject
+_0809C290: .4byte _vt.6Duster
 	.syntax divided

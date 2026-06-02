@@ -36,11 +36,11 @@ _08060F84:
 	bx r0
 	.align 2, 0
 _08060FD4: .4byte create__20DefaultPlayerFactoryUsUs
-_08060FD8: .4byte sub_0809BE90
-_08060FDC: .4byte sub_0809BE6C
-_08060FE0: .4byte sub_0809BE48
-_08060FE4: .4byte sub_0809BE24
-_08060FE8: .4byte sub_0809BE00
-_08060FEC: .4byte sub_0809BDDC
-_08060FF0: .4byte sub_0809BDB8
+_08060FD8: .4byte create__12FlintFactoryUsUs
+_08060FDC: .4byte create__12LucasFactoryUsUs
+_08060FE0: .4byte create__15KumatoraFactoryUsUs
+_08060FE4: .4byte create__13DusterFactoryUsUs
+_08060FE8: .4byte create__12BoneyFactoryUsUs
+_08060FEC: .4byte create__12SalsaFactoryUsUs
+_08060FF0: .4byte create__12ClausFactoryUsUs
 	.syntax divided

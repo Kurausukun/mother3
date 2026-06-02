@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809C294:
+__8KumatoraUsUs:
 	push {r4, r5, r6, r7, lr}
 	sub sp, #0x28
 	adds r7, r0, #0
@@ -91,6 +91,6 @@ _0809C364: .4byte _vt.13UnitTurnBegin
 _0809C368: .4byte gUnknown_080F52C8
 _0809C36C: .4byte _vt.11UnitTurnEnd
 _0809C370: .4byte gUnknown_080F52D0
-_0809C374: .4byte vt_09F47D08
-_0809C378: .4byte vt_09F47D80
+_0809C374: .4byte _vt.8Kumatora.10UnitObject
+_0809C378: .4byte _vt.8Kumatora
 	.syntax divided
