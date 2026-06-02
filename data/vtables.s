@@ -80540,7 +80540,7 @@ _vt.9PsiMagnet::
 	.4byte action_130__6ActionP4UnitUsib
 	.2byte 0
 	.2byte 0
-	.4byte onPlayAnim__9PsiMagnetP4Unitb1
+	.4byte onPlayAnim__9PsiMagnetP4Unitb
 	.2byte 0
 	.2byte 0
 	.4byte action_140__6Action
