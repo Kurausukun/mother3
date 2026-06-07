@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809EBA8:
+sub_0809EBA8__4Bash:
 	push {lr}
 	movs r1, #0
 	ldr r0, [r0, #0x50]

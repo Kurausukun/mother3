@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809BCBC:
+battle_78__13DefaultBattle:
 	push {r4, lr}
 	adds r4, r0, #0
 	bl battle_78__6Battle

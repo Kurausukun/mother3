@@ -57,18 +57,18 @@ _08061978:
 	bx r0
 	.align 2, 0
 _08061A00: .4byte create__25DefaultPlayerSkillFactoryUsP4Unit
-_08061A04: .4byte sub_0809D860
-_08061A08: .4byte sub_0809D698
-_08061A0C: .4byte sub_0809D538
-_08061A10: .4byte sub_0809D678
-_08061A14: .4byte sub_0809D658
-_08061A18: .4byte sub_0809D638
-_08061A1C: .4byte sub_0809D618
-_08061A20: .4byte sub_0809D5F8
-_08061A24: .4byte sub_0809D5D8
-_08061A28: .4byte sub_0809D5B8
-_08061A2C: .4byte sub_0809D598
-_08061A30: .4byte sub_0809D578
-_08061A34: .4byte sub_0809D558
-_08061A38: .4byte sub_0809D518
+_08061A04: .4byte create__11BashFactoryUsP4Unit
+_08061A08: .4byte create__17WallStapleFactoryUsP4Unit
+_08061A0C: .4byte create__18SirenBeetleFactoryUsP4Unit
+_08061A10: .4byte create__20HypnoPendulumFactoryUsP4Unit
+_08061A14: .4byte create__16SmokeBombFactoryUsP4Unit
+_08061A18: .4byte create__16ScaryMaskFactoryUsP4Unit
+_08061A1C: .4byte create__18TickleStickFactoryUsP4Unit
+_08061A20: .4byte create__16ApologizeFactoryUsP4Unit
+_08061A24: .4byte create__16MakeLaughFactoryUsP4Unit
+_08061A28: .4byte create__12DanceFactoryUsP4Unit
+_08061A2C: .4byte create__10RunFactoryUsP4Unit
+_08061A30: .4byte create__26CantAttackMaskedManFactoryUsP4Unit
+_08061A34: .4byte create__16QuickFlipFactoryUsP4Unit
+_08061A38: .4byte create__12SniffFactoryUsP4Unit
 	.syntax divided

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809B488:
+battle_110__16MasterEddyBattle:
 	push {r4, lr}
 	sub sp, #8
 	adds r4, r0, #0

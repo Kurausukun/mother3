@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A0DD0:
+dt__17DefaultGuestSkill:
 	push {lr}
 	ldr r2, _080A0DE0
 	str r2, [r0, #0x1c]

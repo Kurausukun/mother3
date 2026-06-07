@@ -219,8 +219,6 @@ public:
 
     bool setBattleResult(s32, bool force);
     void sub_0805DC1C();
-    void sub_0805DC6C();
-    void sub_0805DDE4();
     Player* tryKillPlayer(Unit*);
     Player* getNextPlayer(Unit*);
     void sub_0805E808();

@@ -18,5 +18,5 @@ sub_08081FF4:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0808201C: .4byte vt_09F83418
+_0808201C: .4byte _vt.12BattleSprite
 	.syntax divided

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809F6DC:
+isResisted__4BashP4Unit:
 	movs r0, #0
 	bx lr
 	.syntax divided

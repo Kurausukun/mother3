@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809E694:
+tellUseMessage__9MakeLaugh:
 	push {r4, r5, lr}
 	sub sp, #0x10
 	adds r5, r0, #0

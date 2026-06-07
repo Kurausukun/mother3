@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809E884:
+dt__13HypnoPendulum:
 	push {lr}
 	ldr r2, _0809E894
 	str r2, [r0, #0x1c]

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809D970:
+__9MakeLaughUsP4Unit:
 	push {r4, lr}
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
@@ -12,5 +12,5 @@ sub_0809D970:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0809D988: .4byte vt_09F4A128
+_0809D988: .4byte _vt.9MakeLaugh
 	.syntax divided

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08097D70:
+battle_110__16MaskedManBattleB:
 	push {r4, lr}
 	sub sp, #8
 	adds r4, r0, #0

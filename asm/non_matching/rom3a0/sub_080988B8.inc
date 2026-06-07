@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080988B8:
+battle_88__16MaskedManBattleB:
 	push {lr}
 	sub sp, #8
 	movs r1, #0x80

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08099C50:
+battle_98__16MaskedManBattleA:
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	movs r7, #0

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809F840:
+action_1c0__5Sniff:
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r1, #0xa

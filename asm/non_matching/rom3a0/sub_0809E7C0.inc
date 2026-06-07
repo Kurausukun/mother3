@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809E7C0:
+isResisted__9ApologizeP4Unit:
 	push {lr}
 	adds r0, r1, #0
 	ldr r1, [r0, #0x1c]

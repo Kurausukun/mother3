@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08081D48:
+dt__12BattleSprite:
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -16,5 +16,5 @@ sub_08081D48:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08081D6C: .4byte vt_09F83418
+_08081D6C: .4byte _vt.12BattleSprite
 	.syntax divided

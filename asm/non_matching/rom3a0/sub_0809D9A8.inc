@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809D9A8:
+__11TickleStickUsP4Unit:
 	push {r4, lr}
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
@@ -12,5 +12,5 @@ sub_0809D9A8:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0809D9C0: .4byte vt_09F4A668
+_0809D9C0: .4byte _vt.11TickleStick
 	.syntax divided

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809DF04:
+tellResisted__11SirenBeetleP4Unit:
 	push {r4, lr}
 	sub sp, #4
 	ldr r3, [r0, #0x1c]

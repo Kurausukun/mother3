@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A0B54:
+getUseMessage__C12GuestSkill24:
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0

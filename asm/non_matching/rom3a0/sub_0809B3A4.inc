@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809B3A4:
+battle_90__14PorkyBotBattle:
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r1, [r4, #0x1c]

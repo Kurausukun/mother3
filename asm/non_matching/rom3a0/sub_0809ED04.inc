@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809ED04:
+sub_0809ED04__4Bash:
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}

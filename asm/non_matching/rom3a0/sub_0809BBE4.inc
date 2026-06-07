@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809BBE4:
+battle_1f8__13DefaultBattle:
 	push {r4, r5, lr}
 	ldr r4, [r0, #0x1c]
 	movs r1, #0x9a

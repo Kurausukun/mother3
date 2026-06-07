@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08099F18:
+battle_110__11PorkyBattle:
 	push {r4, lr}
 	sub sp, #8
 	adds r4, r0, #0

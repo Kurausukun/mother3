@@ -25156,11 +25156,11 @@ _._5Event:
 	.byte	0x1c
 	.4byte	0xe106
 	.byte	0x1
-	.ascii	"sub_0805DC6C\000"
+	.ascii	"battle_128\000"
 
 	.byte	0x5
 	.byte	0xcb
-	.ascii	"sub_0805DC6C__6Battle\000"
+	.ascii	"battle_128__6Battle\000"
 
 	.byte	0x1
 	.byte	0x8
@@ -25170,11 +25170,11 @@ _._5Event:
 	.byte	0x1c
 	.4byte	0xe139
 	.byte	0x1
-	.ascii	"sub_0805DDE4\000"
+	.ascii	"battle_130\000"
 
 	.byte	0x5
 	.byte	0xcc
-	.ascii	"sub_0805DDE4__6Battle\000"
+	.ascii	"battle_130__6Battle\000"
 
 	.byte	0x1
 	.byte	0x8

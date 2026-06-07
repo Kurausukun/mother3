@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809E8DC:
+dt__10WallStaple:
 	push {lr}
 	ldr r2, _0809E8EC
 	str r2, [r0, #0x1c]

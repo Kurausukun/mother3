@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809F6E0:
+dt__4Bash:
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -18,6 +18,6 @@ sub_0809F6E0:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0809F708: .4byte vt_09F4B3B0
+_0809F708: .4byte _vt.4Bash
 _0809F70C: .4byte _vt.18DefaultPlayerSkill
 	.syntax divided

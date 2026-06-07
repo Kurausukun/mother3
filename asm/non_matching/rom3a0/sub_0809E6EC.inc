@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809E6EC:
+dt__9MakeLaugh:
 	push {lr}
 	ldr r2, _0809E6FC
 	str r2, [r0, #0x1c]

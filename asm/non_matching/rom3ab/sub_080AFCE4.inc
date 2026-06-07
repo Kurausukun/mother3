@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080AFCE4:
+create__18ShootFlamesFactoryUsP4Unit:
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0

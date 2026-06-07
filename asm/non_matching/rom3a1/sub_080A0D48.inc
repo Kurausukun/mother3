@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A0D48:
+hitChance__C17DefaultGuestSkill:
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	bl hitChance__C10GuestSkill

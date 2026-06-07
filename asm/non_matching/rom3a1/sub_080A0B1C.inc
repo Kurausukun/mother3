@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A0B1C:
+__16FassadPunishizerUsP4Unit:
 	push {r4, lr}
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
@@ -12,5 +12,5 @@ sub_080A0B1C:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080A0B34: .4byte vt_09F4DDE0
+_080A0B34: .4byte _vt.16FassadPunishizer
 	.syntax divided

@@ -27,8 +27,8 @@ _0806230C:
 	bx r0
 	.align 2, 0
 _08062344: .4byte create__24DefaultGuestSkillFactoryUsP4Unit
-_08062348: .4byte sub_080A0A88
-_0806234C: .4byte sub_080A0A68
-_08062350: .4byte sub_080A0A48
-_08062354: .4byte sub_080A0A28
+_08062348: .4byte create__23FassadPunishizerFactoryUsP4Unit
+_0806234C: .4byte create__22AlecShakeWakeUpFactoryUsP4Unit
+_08062350: .4byte create__17AlecAttackFactoryUsP4Unit
+_08062354: .4byte create__19GuestSkill24FactoryUsP4Unit
 	.syntax divided

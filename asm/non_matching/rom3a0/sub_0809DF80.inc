@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809DF80:
+tellUseMessage__9QuickFlip:
 	push {r4, r5, r6, lr}
 	sub sp, #4
 	adds r6, r0, #0

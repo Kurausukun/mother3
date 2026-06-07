@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809E848:
+dt__11TickleStick:
 	push {lr}
 	ldr r2, _0809E858
 	str r2, [r0, #0x1c]

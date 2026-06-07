@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809DEB0:
+calcDidHit__11SirenBeetleP4Unit:
 	push {r4, r5, lr}
 	adds r0, r1, #0
 	bl dynaCastMonster

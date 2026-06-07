@@ -3,6 +3,32 @@
 
 #include "battle/action.h"
 
+struct PlayerSkillID {
+    enum {
+        Bash = 0x01,
+        Guard = 0x02,
+        Run = 0x03,
+        Duster_QuickFlip = 0x06,
+        Duster_ReverseKick = 0x07,
+        Lucas_CantAttackMaskedMan = 0x19,
+        Flint_Swing = 0x20,
+        Flint_PowerSmash = 0x21,
+        Flint_StrengthenUp = 0x22,
+        Flint_ToughenUp = 0x23,
+        Duster_WallStaple = 0x25,
+        Duster_SirenBeetle = 0x26,
+        Duster_HypnoPendulum = 0x27,
+        Duster_SmokeBomb = 0x28,
+        Duster_ScaryMask = 0x29,
+        Duster_TickleStick = 0x2A,
+        Boney_Sniff = 0x2C,
+        Salsa_Apologize = 0x2E,
+        Salsa_MakeLaugh = 0x2F,
+        Salsa_Dance = 0x30,
+        Salsa_Mimic = 0x31,
+    };
+};
+
 class PlayerSkill : public Action {
 public:
     PlayerSkill() {}

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809E7E0:
+tellUseMessage__9Apologize:
 	push {r4, r5, lr}
 	sub sp, #0x10
 	adds r5, r0, #0

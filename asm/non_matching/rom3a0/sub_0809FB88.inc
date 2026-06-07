@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809FB88:
+hitChance__C18DefaultPlayerSkill:
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	bl hitChance__C11PlayerSkill

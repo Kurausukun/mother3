@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809E120:
+dt__19CantAttackMaskedMan:
 	push {lr}
 	ldr r2, _0809E130
 	str r2, [r0, #0x1c]

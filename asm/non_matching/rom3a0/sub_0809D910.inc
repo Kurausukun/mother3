@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809D910:
+__3RunUsP4Unit:
 	push {r4, lr}
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
@@ -26,7 +26,7 @@ _0809D93A:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0809D944: .4byte vt_09F49BE8
+_0809D944: .4byte _vt.3Run
 _0809D948: .4byte gSave
 _0809D94C: .4byte gUnknown_02002214
 _0809D950: .4byte gUnknown_02002210

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809DD74:
+tellUseMessage__5Sniff:
 	push {lr}
 	bl tellUseMessage__6Action
 	ldr r0, _0809DD84

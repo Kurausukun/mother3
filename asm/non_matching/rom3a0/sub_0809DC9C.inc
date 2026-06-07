@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809DC9C:
+tellResisted__5SniffP4Unit:
 	push {r4, lr}
 	sub sp, #0x10
 	adds r4, r0, #0

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809EBBC:
+sub_0809EBBC__4Bash:
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r1, [r5, #0x1c]

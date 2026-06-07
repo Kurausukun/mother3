@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809FC10:
+dt__18DefaultPlayerSkill:
 	push {lr}
 	ldr r2, _0809FC20
 	str r2, [r0, #0x1c]

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809E5A0:
+dt__5Dance:
 	push {lr}
 	ldr r2, _0809E5B0
 	str r2, [r0, #0x1c]

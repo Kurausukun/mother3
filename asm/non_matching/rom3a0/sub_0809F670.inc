@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809F670:
+calcDidHit__4BashP4Unit:
 	push {r4, r5, lr}
 	sub sp, #0x10
 	adds r4, r0, #0

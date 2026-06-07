@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809E700:
+tellMissed__9ApologizeP4Unit:
 	push {r4, lr}
 	sub sp, #0x10
 	adds r1, r0, #0

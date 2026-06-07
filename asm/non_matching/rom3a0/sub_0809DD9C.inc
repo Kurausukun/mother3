@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809DD9C:
+tellMissed__11SirenBeetleP4Unit:
 	push {r4, lr}
 	sub sp, #0x10
 	adds r1, r0, #0

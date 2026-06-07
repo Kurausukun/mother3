@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809DD88:
+dt__5Sniff:
 	push {lr}
 	ldr r2, _0809DD98
 	str r2, [r0, #0x1c]

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A0B90:
+dt__12GuestSkill24:
 	push {lr}
 	ldr r2, _080A0BA0
 	str r2, [r0, #0x1c]

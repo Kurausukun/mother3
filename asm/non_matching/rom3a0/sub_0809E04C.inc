@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809E04C:
+dt__9QuickFlip:
 	push {lr}
 	ldr r2, _0809E05C
 	str r2, [r0, #0x1c]

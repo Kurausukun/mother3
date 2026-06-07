@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A0AE4:
+__10AlecAttackUsP4Unit:
 	push {r4, lr}
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
@@ -12,5 +12,5 @@ sub_080A0AE4:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080A0AFC: .4byte vt_09F4D8A0
+_080A0AFC: .4byte _vt.10AlecAttack
 	.syntax divided

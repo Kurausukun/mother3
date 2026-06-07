@@ -254,10 +254,10 @@ _vt.6Battle::
 	.4byte battle_120__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805DC6C__6Battle
+	.4byte battle_128__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805DDE4__6Battle
+	.4byte battle_130__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_138__6Battle
@@ -739,7 +739,7 @@ _vt.16MaskedManBattleB::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080988DC
+	.4byte dt__16MaskedManBattleB
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__6Battle
@@ -781,19 +781,19 @@ _vt.16MaskedManBattleB::
 	.4byte battle_70__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809886C
+	.4byte battle_78__16MaskedManBattleB
 	.2byte 0
 	.2byte 0
 	.4byte battle_80__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_080988B8
+	.4byte battle_88__16MaskedManBattleB
 	.2byte 0
 	.2byte 0
-	.4byte sub_08098868
+	.4byte battle_90__16MaskedManBattleB
 	.2byte 0
 	.2byte 0
-	.4byte sub_08098728
+	.4byte battle_98__16MaskedManBattleB
 	.2byte 0
 	.2byte 0
 	.4byte battle_a0__6Battle
@@ -838,7 +838,7 @@ _vt.16MaskedManBattleB::
 	.4byte battle_108__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_08097D70
+	.4byte battle_110__16MaskedManBattleB
 	.2byte 0
 	.2byte 0
 	.4byte battle_118__6Battle
@@ -847,10 +847,10 @@ _vt.16MaskedManBattleB::
 	.4byte battle_120__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805DC6C__6Battle
+	.4byte battle_128__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805DDE4__6Battle
+	.4byte battle_130__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_138__6Battle
@@ -925,7 +925,7 @@ _vt.16MaskedManBattleB::
 	.4byte battle_1f0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809BBE4
+	.4byte battle_1f8__13DefaultBattle
 	.2byte 0
 	.2byte 0
 	.4byte battle_200__6Battle
@@ -1002,7 +1002,7 @@ _vt.16MaskedManBattleA::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08099E88
+	.4byte dt__16MaskedManBattleA
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__6Battle
@@ -1044,7 +1044,7 @@ _vt.16MaskedManBattleA::
 	.4byte battle_70__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_08099E3C
+	.4byte battle_78__16MaskedManBattleA
 	.2byte 0
 	.2byte 0
 	.4byte battle_80__6Battle
@@ -1053,10 +1053,10 @@ _vt.16MaskedManBattleA::
 	.4byte battle_88__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_08099E38
+	.4byte battle_90__16MaskedManBattleA
 	.2byte 0
 	.2byte 0
-	.4byte sub_08099C50
+	.4byte battle_98__16MaskedManBattleA
 	.2byte 0
 	.2byte 0
 	.4byte battle_a0__6Battle
@@ -1101,7 +1101,7 @@ _vt.16MaskedManBattleA::
 	.4byte battle_108__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_08098944
+	.4byte battle_110__16MaskedManBattleA
 	.2byte 0
 	.2byte 0
 	.4byte battle_118__6Battle
@@ -1110,10 +1110,10 @@ _vt.16MaskedManBattleA::
 	.4byte battle_120__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805DC6C__6Battle
+	.4byte battle_128__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805DDE4__6Battle
+	.4byte battle_130__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_138__6Battle
@@ -1188,7 +1188,7 @@ _vt.16MaskedManBattleA::
 	.4byte battle_1f0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809BBE4
+	.4byte battle_1f8__13DefaultBattle
 	.2byte 0
 	.2byte 0
 	.4byte battle_200__6Battle
@@ -1298,7 +1298,7 @@ _vt.11PorkyBattle::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809A8B8
+	.4byte dt__11PorkyBattle
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__6Battle
@@ -1340,7 +1340,7 @@ _vt.11PorkyBattle::
 	.4byte battle_70__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809BCBC
+	.4byte battle_78__13DefaultBattle
 	.2byte 0
 	.2byte 0
 	.4byte battle_80__6Battle
@@ -1352,7 +1352,7 @@ _vt.11PorkyBattle::
 	.4byte battle_90__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809A7D8
+	.4byte battle_98__11PorkyBattle
 	.2byte 0
 	.2byte 0
 	.4byte battle_a0__6Battle
@@ -1397,7 +1397,7 @@ _vt.11PorkyBattle::
 	.4byte battle_108__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_08099F18
+	.4byte battle_110__11PorkyBattle
 	.2byte 0
 	.2byte 0
 	.4byte battle_118__6Battle
@@ -1406,10 +1406,10 @@ _vt.11PorkyBattle::
 	.4byte battle_120__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805DC6C__6Battle
+	.4byte battle_128__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805DDE4__6Battle
+	.4byte battle_130__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_138__6Battle
@@ -1484,7 +1484,7 @@ _vt.11PorkyBattle::
 	.4byte battle_1f0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809BBE4
+	.4byte battle_1f8__13DefaultBattle
 	.2byte 0
 	.2byte 0
 	.4byte battle_200__6Battle
@@ -1573,7 +1573,7 @@ _vt.14PorkyBotBattle::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809B420
+	.4byte dt__14PorkyBotBattle
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__6Battle
@@ -1615,7 +1615,7 @@ _vt.14PorkyBotBattle::
 	.4byte battle_70__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809BCBC
+	.4byte battle_78__13DefaultBattle
 	.2byte 0
 	.2byte 0
 	.4byte battle_80__6Battle
@@ -1627,7 +1627,7 @@ _vt.14PorkyBotBattle::
 	.4byte battle_90__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809B3A4
+	.4byte battle_90__14PorkyBotBattle
 	.2byte 0
 	.2byte 0
 	.4byte battle_a0__6Battle
@@ -1681,10 +1681,10 @@ _vt.14PorkyBotBattle::
 	.4byte battle_120__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805DC6C__6Battle
+	.4byte battle_128__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805DDE4__6Battle
+	.4byte battle_130__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_138__6Battle
@@ -1759,7 +1759,7 @@ _vt.14PorkyBotBattle::
 	.4byte battle_1f0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809BBE4
+	.4byte battle_1f8__13DefaultBattle
 	.2byte 0
 	.2byte 0
 	.4byte battle_200__6Battle
@@ -1851,7 +1851,7 @@ _vt.16MasterEddyBattle::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809B4D4
+	.4byte dt__16MasterEddyBattle
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__6Battle
@@ -1893,7 +1893,7 @@ _vt.16MasterEddyBattle::
 	.4byte battle_70__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809BCBC
+	.4byte battle_78__13DefaultBattle
 	.2byte 0
 	.2byte 0
 	.4byte battle_80__6Battle
@@ -1924,8 +1924,6 @@ _vt.16MasterEddyBattle::
 	.2byte 0
 	.2byte 0
 	.4byte battle_c8__6BattleUc
-
-vt_09F46280::
 	.2byte 0
 	.2byte 0
 	.4byte battle_d0__6Battle
@@ -1952,7 +1950,7 @@ vt_09F46280::
 	.4byte battle_108__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809B488
+	.4byte battle_110__16MasterEddyBattle
 	.2byte 0
 	.2byte 0
 	.4byte battle_118__6Battle
@@ -1961,10 +1959,10 @@ vt_09F46280::
 	.4byte battle_120__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805DC6C__6Battle
+	.4byte battle_128__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805DDE4__6Battle
+	.4byte battle_130__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_138__6Battle
@@ -2039,7 +2037,7 @@ vt_09F46280::
 	.4byte battle_1f0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809BBE4
+	.4byte battle_1f8__13DefaultBattle
 	.2byte 0
 	.2byte 0
 	.4byte battle_200__6Battle
@@ -2107,7 +2105,7 @@ _vt.13DefaultBattle::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809BD50
+	.4byte dt__13DefaultBattle
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__6Battle
@@ -2149,7 +2147,7 @@ _vt.13DefaultBattle::
 	.4byte battle_70__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809BCBC
+	.4byte battle_78__13DefaultBattle
 	.2byte 0
 	.2byte 0
 	.4byte battle_80__6Battle
@@ -2215,10 +2213,10 @@ _vt.13DefaultBattle::
 	.4byte battle_120__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805DC6C__6Battle
+	.4byte battle_128__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0805DDE4__6Battle
+	.4byte battle_130__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_138__6Battle
@@ -2293,7 +2291,7 @@ _vt.13DefaultBattle::
 	.4byte battle_1f0__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809BBE4
+	.4byte battle_1f8__13DefaultBattle
 	.2byte 0
 	.2byte 0
 	.4byte battle_200__6Battle
@@ -6468,13 +6466,13 @@ vt_09F490E8::
 	.2byte 0
 	.4byte tellPresent
 
-vt_09F49158::
+_vt.5Sniff::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809DD88
+	.4byte dt__5Sniff
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__11PlayerSkill
@@ -6519,7 +6517,7 @@ vt_09F49158::
 	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809DD74
+	.4byte tellUseMessage__5Sniff
 	.2byte 0
 	.2byte 0
 	.4byte playDim__6Action
@@ -6531,16 +6529,16 @@ vt_09F49158::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809DC2C
+	.4byte calcDidHit__5SniffP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809DA84
+	.4byte tellMissed__5SniffP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809DCE8
+	.4byte isResisted__5SniffP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809DC9C
+	.4byte tellResisted__5SniffP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onDamage__6ActionP4Unit
@@ -6570,7 +6568,7 @@ vt_09F49158::
 	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809DAD4
+	.4byte onSuccess__5SniffP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onInflictStatus__6ActionP4Unit
@@ -6624,7 +6622,7 @@ vt_09F49158::
 	.4byte getTargetIdx__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809F854
+	.4byte fire__5Sniff
 	.2byte 0
 	.2byte 0
 	.4byte action_1a8__6Action
@@ -6636,7 +6634,7 @@ vt_09F49158::
 	.4byte action_1b8__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809F840
+	.4byte action_1c0__5Sniff
 	.2byte 0
 	.2byte 0
 	.4byte id__C11PlayerSkill
@@ -6645,7 +6643,7 @@ vt_09F49158::
 	.4byte name__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080484
+	.4byte action_1d8__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
@@ -6705,7 +6703,7 @@ vt_09F49158::
 	.4byte sfxNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809FB88
+	.4byte hitChance__C18DefaultPlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C11PlayerSkill
@@ -6722,13 +6720,13 @@ vt_09F49158::
 	.2byte 0
 	.4byte userMissSfx__C11PlayerSkill
 
-vt_09F493F8::
+_vt.11SirenBeetle::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809DF6C
+	.4byte dt__11SirenBeetle
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__11PlayerSkill
@@ -6779,22 +6777,22 @@ vt_09F493F8::
 	.4byte playDim__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809DF50
+	.4byte playAnim__11SirenBeetle
 	.2byte 0
 	.2byte 0
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809DEB0
+	.4byte calcDidHit__11SirenBeetleP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809DD9C
+	.4byte tellMissed__11SirenBeetleP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809DF30
+	.4byte isResisted__11SirenBeetleP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809DF04
+	.4byte tellResisted__11SirenBeetleP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onDamage__6ActionP4Unit
@@ -6824,7 +6822,7 @@ vt_09F493F8::
 	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809DDE0
+	.4byte onSuccess__11SirenBeetleP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onInflictStatus__6ActionP4Unit
@@ -6959,7 +6957,7 @@ vt_09F493F8::
 	.4byte sfxNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809FB88
+	.4byte hitChance__C18DefaultPlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C11PlayerSkill
@@ -6979,13 +6977,13 @@ vt_09F493F8::
 	.2byte 0
 	.4byte sub_0809F9F0
 
-vt_09F496A0::
+_vt.9QuickFlip::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809E04C
+	.4byte dt__9QuickFlip
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__11PlayerSkill
@@ -7030,7 +7028,7 @@ vt_09F496A0::
 	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809DF80
+	.4byte tellUseMessage__9QuickFlip
 	.2byte 0
 	.2byte 0
 	.4byte playDim__6Action
@@ -7216,7 +7214,7 @@ vt_09F496A0::
 	.4byte sfxNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809FB88
+	.4byte hitChance__C18DefaultPlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C11PlayerSkill
@@ -7236,13 +7234,13 @@ vt_09F496A0::
 	.2byte 0
 	.4byte sub_0809F9F0
 
-vt_09F49948::
+_vt.19CantAttackMaskedMan::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809E120
+	.4byte dt__19CantAttackMaskedMan
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__11PlayerSkill
@@ -7287,7 +7285,7 @@ vt_09F49948::
 	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809E060
+	.4byte tellUseMessage__19CantAttackMaskedMan
 	.2byte 0
 	.2byte 0
 	.4byte playDim__6Action
@@ -7413,7 +7411,7 @@ vt_09F49948::
 	.4byte name__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080484
+	.4byte action_1d8__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
@@ -7473,7 +7471,7 @@ vt_09F49948::
 	.4byte sfxNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809FB88
+	.4byte hitChance__C18DefaultPlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C11PlayerSkill
@@ -7490,13 +7488,13 @@ vt_09F49948::
 	.2byte 0
 	.4byte userMissSfx__C11PlayerSkill
 
-vt_09F49BE8::
+_vt.3Run::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809E390
+	.4byte dt__3Run
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__11PlayerSkill
@@ -7541,7 +7539,7 @@ vt_09F49BE8::
 	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809E338
+	.4byte tellUseMessage__3Run
 	.2byte 0
 	.2byte 0
 	.4byte playDim__6Action
@@ -7553,10 +7551,10 @@ vt_09F49BE8::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809E244
+	.4byte calcDidHit__3RunP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809E134
+	.4byte tellMissed__3RunP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte isResisted__6ActionP4Unit
@@ -7592,7 +7590,7 @@ vt_09F49BE8::
 	.4byte onPPHeal__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809E1E0
+	.4byte onSuccess__3RunP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onInflictStatus__6ActionP4Unit
@@ -7667,7 +7665,7 @@ vt_09F49BE8::
 	.4byte name__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080484
+	.4byte action_1d8__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
@@ -7727,7 +7725,7 @@ vt_09F49BE8::
 	.4byte sfxNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809FB88
+	.4byte hitChance__C18DefaultPlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C11PlayerSkill
@@ -7744,13 +7742,13 @@ vt_09F49BE8::
 	.2byte 0
 	.4byte userMissSfx__C11PlayerSkill
 
-vt_09F49E88::
+_vt.5Dance::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809E5A0
+	.4byte dt__5Dance
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__11PlayerSkill
@@ -7849,7 +7847,7 @@ vt_09F49E88::
 	.4byte onSuccess__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809E3A4
+	.4byte onSuccess__5DanceP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte calcStatusInflict__6ActionP4UnitUsib
@@ -7921,7 +7919,7 @@ vt_09F49E88::
 	.4byte name__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080484
+	.4byte action_1d8__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
@@ -7981,7 +7979,7 @@ vt_09F49E88::
 	.4byte sfxNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809FB88
+	.4byte hitChance__C18DefaultPlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C11PlayerSkill
@@ -7998,13 +7996,13 @@ vt_09F49E88::
 	.2byte 0
 	.4byte userMissSfx__C11PlayerSkill
 
-vt_09F4A128::
+_vt.9MakeLaugh::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809E6EC
+	.4byte dt__9MakeLaugh
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__11PlayerSkill
@@ -8049,7 +8047,7 @@ vt_09F4A128::
 	.4byte playSfx__6Action
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809E694
+	.4byte tellUseMessage__9MakeLaugh
 	.2byte 0
 	.2byte 0
 	.4byte playDim__6Action
@@ -8061,270 +8059,16 @@ vt_09F4A128::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809E5F8
+	.4byte calcDidHit__9MakeLaughP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809E5B4
+	.4byte tellMissed__9MakeLaughP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809E674
+	.4byte isResisted__9MakeLaughP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809E630
-	.2byte 0
-	.2byte 0
-	.4byte onDamage__6ActionP4Unit
-	.2byte 0
-	.2byte 0
-	.4byte onAttack__6ActionP4Unit
-	.2byte 0
-	.2byte 0
-	.4byte action_d8__6ActionP4UnitT1
-	.2byte 0
-	.2byte 0
-	.4byte onPsiDamage__6ActionP4Unit
-	.2byte 0
-	.2byte 0
-	.4byte action_e8__6ActionP4UnitT1
-	.2byte 0
-	.2byte 0
-	.4byte calcCrit__6ActionP4Unit
-	.2byte 0
-	.2byte 0
-	.4byte action_f8__6ActionP4Unit
-	.2byte 0
-	.2byte 0
-	.4byte onNoEffect__6ActionP4Unit
-	.2byte 0
-	.2byte 0
-	.4byte onPPHeal__6ActionP4Unit
-	.2byte 0
-	.2byte 0
-	.4byte onSuccess__6ActionP4Unit
-	.2byte 0
-	.2byte 0
-	.4byte onInflictStatus__6ActionP4Unit
-	.2byte 0
-	.2byte 0
-	.4byte calcStatusInflict__6ActionP4UnitUsib
-	.2byte 0
-	.2byte 0
-	.4byte onFail__6ActionP4Unit
-	.2byte 0
-	.2byte 0
-	.4byte action_130__6ActionP4UnitUsib
-	.2byte 0
-	.2byte 0
-	.4byte onPlayAnim__6ActionP4Unitb
-	.2byte 0
-	.2byte 0
-	.4byte action_140__6Action
-	.2byte 0
-	.2byte 0
-	.4byte action_148__6Action
-	.2byte 0
-	.2byte 0
-	.4byte action_150__6Action
-	.2byte 0
-	.2byte 0
-	.4byte ROMStr__C6ActionUs
-	.2byte 0
-	.2byte 0
-	.4byte action_160__C6ActionUsRC3Msg
-	.2byte 0
-	.2byte 0
-	.4byte getUser__C6Action
-	.2byte 0
-	.2byte 0
-	.4byte addTarget__6ActionP4Unit
-	.2byte 0
-	.2byte 0
-	.4byte removeTarget__6ActionP4Unit
-	.2byte 0
-	.2byte 0
-	.4byte clearTargets__6Action
-	.2byte 0
-	.2byte 0
-	.4byte numTargets__C6Action
-	.2byte 0
-	.2byte 0
-	.4byte getTarget__C6Actioni
-	.2byte 0
-	.2byte 0
-	.4byte getTargetIdx__6ActionP4Unit
-	.2byte 0
-	.2byte 0
-	.4byte sub_0809F724
-	.2byte 0
-	.2byte 0
-	.4byte action_1a8__6Action
-	.2byte 0
-	.2byte 0
-	.4byte action_1b0__6Action
-	.2byte 0
-	.2byte 0
-	.4byte action_1b8__6Action
-	.2byte 0
-	.2byte 0
-	.4byte sub_0809F710
-	.2byte 0
-	.2byte 0
-	.4byte id__C11PlayerSkill
-	.2byte 0
-	.2byte 0
-	.4byte name__C11PlayerSkill
-	.2byte 0
-	.2byte 0
-	.4byte sub_08080484
-	.2byte 0
-	.2byte 0
-	.4byte action_fixme__6Actioni
-	.2byte 0
-	.2byte 0
-	.4byte action_1e0__11PlayerSkill
-	.2byte 0
-	.2byte 0
-	.4byte effect__C11PlayerSkill
-	.2byte 0
-	.2byte 0
-	.4byte element__C11PlayerSkill
-	.2byte 0
-	.2byte 0
-	.4byte target__C11PlayerSkill
-	.2byte 0
-	.2byte 0
-	.4byte attackMult__C11PlayerSkill
-	.2byte 0
-	.2byte 0
-	.4byte healLo__C11PlayerSkill
-	.2byte 0
-	.2byte 0
-	.4byte healHi__C11PlayerSkill
-	.2byte 0
-	.2byte 0
-	.4byte ailment__C11PlayerSkill
-	.2byte 0
-	.2byte 0
-	.4byte ailmentChance__C11PlayerSkill
-	.2byte 0
-	.2byte 0
-	.4byte hasAction__C11PlayerSkill
-	.2byte 0
-	.2byte 0
-	.4byte priority__C11PlayerSkill
-	.2byte 0
-	.2byte 0
-	.4byte getUseMessage__C11PlayerSkill
-	.2byte 0
-	.2byte 0
-	.4byte getForceUseMessage__C11PlayerSkill
-	.2byte 0
-	.2byte 0
-	.4byte hasDim__C11PlayerSkill
-	.2byte 0
-	.2byte 0
-	.4byte animNo__C11PlayerSkill
-	.2byte 0
-	.2byte 0
-	.4byte successAnimNo__C11PlayerSkill
-	.2byte 0
-	.2byte 0
-	.4byte critAnimNo__C11PlayerSkill
-	.2byte 0
-	.2byte 0
-	.4byte sfxNo__C11PlayerSkill
-	.2byte 0
-	.2byte 0
-	.4byte sub_0809FB88
-	.2byte 0
-	.2byte 0
-	.4byte critChance__C11PlayerSkill
-	.2byte 0
-	.2byte 0
-	.4byte redirectable__C11PlayerSkill
-	.2byte 0
-	.2byte 0
-	.4byte userAttackSfx__C11PlayerSkill
-	.2byte 0
-	.2byte 0
-	.4byte userCritSfx__C11PlayerSkill
-	.2byte 0
-	.2byte 0
-	.4byte userMissSfx__C11PlayerSkill
-
-vt_09F4A3C8::
-	.2byte 0
-	.2byte 0
-	.4byte 0
-	.2byte 0
-	.2byte 0
-	.4byte sub_0809E834
-	.2byte 0
-	.2byte 0
-	.4byte getRTTI__11PlayerSkill
-	.2byte 0
-	.2byte 0
-	.4byte base_1c__4Base
-	.2byte 0
-	.2byte 0
-	.4byte base_24__4Base
-	.2byte 0
-	.2byte 0
-	.4byte base_2c__4Base
-	.2byte 0
-	.2byte 0
-	.4byte base_34__4Base
-	.2byte 0
-	.2byte 0
-	.4byte listen__4BasePvRC4BaseG9ClockData
-	.2byte 0
-	.2byte 0
-	.4byte base_44__4Base
-	.2byte 0
-	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
-	.2byte 0
-	.2byte 0
-	.4byte emit__4BaseRC4Base
-	.2byte 0
-	.2byte 0
-	.4byte base_5c__4Base
-	.2byte 0
-	.2byte 0
-	.4byte clearNullOutgoing__4Base
-	.2byte 0
-	.2byte 0
-	.4byte action_68__6Action
-	.2byte 0
-	.2byte 0
-	.4byte action_70__6Action
-	.2byte 0
-	.2byte 0
-	.4byte playSfx__6Action
-	.2byte 0
-	.2byte 0
-	.4byte sub_0809E7E0
-	.2byte 0
-	.2byte 0
-	.4byte playDim__6Action
-	.2byte 0
-	.2byte 0
-	.4byte playAnim__6Action
-	.2byte 0
-	.2byte 0
-	.4byte action_a0__6ActionP4Unit
-	.2byte 0
-	.2byte 0
-	.4byte sub_0809E744
-	.2byte 0
-	.2byte 0
-	.4byte sub_0809E700
-	.2byte 0
-	.2byte 0
-	.4byte sub_0809E7C0
-	.2byte 0
-	.2byte 0
-	.4byte sub_0809E77C
+	.4byte tellResisted__9MakeLaughP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onDamage__6ActionP4Unit
@@ -8429,7 +8173,7 @@ vt_09F4A3C8::
 	.4byte name__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080484
+	.4byte action_1d8__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
@@ -8489,7 +8233,7 @@ vt_09F4A3C8::
 	.4byte sfxNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809FB88
+	.4byte hitChance__C18DefaultPlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C11PlayerSkill
@@ -8506,13 +8250,267 @@ vt_09F4A3C8::
 	.2byte 0
 	.4byte userMissSfx__C11PlayerSkill
 
-vt_09F4A668::
+_vt.9Apologize::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809E848
+	.4byte dt__9Apologize
+	.2byte 0
+	.2byte 0
+	.4byte getRTTI__11PlayerSkill
+	.2byte 0
+	.2byte 0
+	.4byte base_1c__4Base
+	.2byte 0
+	.2byte 0
+	.4byte base_24__4Base
+	.2byte 0
+	.2byte 0
+	.4byte base_2c__4Base
+	.2byte 0
+	.2byte 0
+	.4byte base_34__4Base
+	.2byte 0
+	.2byte 0
+	.4byte listen__4BasePvRC4BaseG9ClockData
+	.2byte 0
+	.2byte 0
+	.4byte base_44__4Base
+	.2byte 0
+	.2byte 0
+	.4byte base_4c__4BaseUiR4BaseUi
+	.2byte 0
+	.2byte 0
+	.4byte emit__4BaseRC4Base
+	.2byte 0
+	.2byte 0
+	.4byte base_5c__4Base
+	.2byte 0
+	.2byte 0
+	.4byte clearNullOutgoing__4Base
+	.2byte 0
+	.2byte 0
+	.4byte action_68__6Action
+	.2byte 0
+	.2byte 0
+	.4byte action_70__6Action
+	.2byte 0
+	.2byte 0
+	.4byte playSfx__6Action
+	.2byte 0
+	.2byte 0
+	.4byte tellUseMessage__9Apologize
+	.2byte 0
+	.2byte 0
+	.4byte playDim__6Action
+	.2byte 0
+	.2byte 0
+	.4byte playAnim__6Action
+	.2byte 0
+	.2byte 0
+	.4byte action_a0__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte calcDidHit__9ApologizeP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte tellMissed__9ApologizeP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte isResisted__9ApologizeP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte tellResisted__9ApologizeP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte onDamage__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte onAttack__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte action_d8__6ActionP4UnitT1
+	.2byte 0
+	.2byte 0
+	.4byte onPsiDamage__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte action_e8__6ActionP4UnitT1
+	.2byte 0
+	.2byte 0
+	.4byte calcCrit__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte action_f8__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte onNoEffect__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte onPPHeal__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte onSuccess__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte onInflictStatus__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte calcStatusInflict__6ActionP4UnitUsib
+	.2byte 0
+	.2byte 0
+	.4byte onFail__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte action_130__6ActionP4UnitUsib
+	.2byte 0
+	.2byte 0
+	.4byte onPlayAnim__6ActionP4Unitb
+	.2byte 0
+	.2byte 0
+	.4byte action_140__6Action
+	.2byte 0
+	.2byte 0
+	.4byte action_148__6Action
+	.2byte 0
+	.2byte 0
+	.4byte action_150__6Action
+	.2byte 0
+	.2byte 0
+	.4byte ROMStr__C6ActionUs
+	.2byte 0
+	.2byte 0
+	.4byte action_160__C6ActionUsRC3Msg
+	.2byte 0
+	.2byte 0
+	.4byte getUser__C6Action
+	.2byte 0
+	.2byte 0
+	.4byte addTarget__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte removeTarget__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte clearTargets__6Action
+	.2byte 0
+	.2byte 0
+	.4byte numTargets__C6Action
+	.2byte 0
+	.2byte 0
+	.4byte getTarget__C6Actioni
+	.2byte 0
+	.2byte 0
+	.4byte getTargetIdx__6ActionP4Unit
+	.2byte 0
+	.2byte 0
+	.4byte sub_0809F724
+	.2byte 0
+	.2byte 0
+	.4byte action_1a8__6Action
+	.2byte 0
+	.2byte 0
+	.4byte action_1b0__6Action
+	.2byte 0
+	.2byte 0
+	.4byte action_1b8__6Action
+	.2byte 0
+	.2byte 0
+	.4byte sub_0809F710
+	.2byte 0
+	.2byte 0
+	.4byte id__C11PlayerSkill
+	.2byte 0
+	.2byte 0
+	.4byte name__C11PlayerSkill
+	.2byte 0
+	.2byte 0
+	.4byte action_1d8__C11PlayerSkill
+	.2byte 0
+	.2byte 0
+	.4byte action_fixme__6Actioni
+	.2byte 0
+	.2byte 0
+	.4byte action_1e0__11PlayerSkill
+	.2byte 0
+	.2byte 0
+	.4byte effect__C11PlayerSkill
+	.2byte 0
+	.2byte 0
+	.4byte element__C11PlayerSkill
+	.2byte 0
+	.2byte 0
+	.4byte target__C11PlayerSkill
+	.2byte 0
+	.2byte 0
+	.4byte attackMult__C11PlayerSkill
+	.2byte 0
+	.2byte 0
+	.4byte healLo__C11PlayerSkill
+	.2byte 0
+	.2byte 0
+	.4byte healHi__C11PlayerSkill
+	.2byte 0
+	.2byte 0
+	.4byte ailment__C11PlayerSkill
+	.2byte 0
+	.2byte 0
+	.4byte ailmentChance__C11PlayerSkill
+	.2byte 0
+	.2byte 0
+	.4byte hasAction__C11PlayerSkill
+	.2byte 0
+	.2byte 0
+	.4byte priority__C11PlayerSkill
+	.2byte 0
+	.2byte 0
+	.4byte getUseMessage__C11PlayerSkill
+	.2byte 0
+	.2byte 0
+	.4byte getForceUseMessage__C11PlayerSkill
+	.2byte 0
+	.2byte 0
+	.4byte hasDim__C11PlayerSkill
+	.2byte 0
+	.2byte 0
+	.4byte animNo__C11PlayerSkill
+	.2byte 0
+	.2byte 0
+	.4byte successAnimNo__C11PlayerSkill
+	.2byte 0
+	.2byte 0
+	.4byte critAnimNo__C11PlayerSkill
+	.2byte 0
+	.2byte 0
+	.4byte sfxNo__C11PlayerSkill
+	.2byte 0
+	.2byte 0
+	.4byte hitChance__C18DefaultPlayerSkill
+	.2byte 0
+	.2byte 0
+	.4byte critChance__C11PlayerSkill
+	.2byte 0
+	.2byte 0
+	.4byte redirectable__C11PlayerSkill
+	.2byte 0
+	.2byte 0
+	.4byte userAttackSfx__C11PlayerSkill
+	.2byte 0
+	.2byte 0
+	.4byte userCritSfx__C11PlayerSkill
+	.2byte 0
+	.2byte 0
+	.4byte userMissSfx__C11PlayerSkill
+
+_vt.11TickleStick::
+	.2byte 0
+	.2byte 0
+	.4byte 0
+	.2byte 0
+	.2byte 0
+	.4byte dt__11TickleStick
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__11PlayerSkill
@@ -8743,7 +8741,7 @@ vt_09F4A668::
 	.4byte sfxNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809FB88
+	.4byte hitChance__C18DefaultPlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C11PlayerSkill
@@ -8763,13 +8761,13 @@ vt_09F4A668::
 	.2byte 0
 	.4byte sub_0809F9F0
 
-vt_09F4A910::
+_vt.9ScaryMask::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809E85C
+	.4byte dt__9ScaryMask
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__11PlayerSkill
@@ -9000,7 +8998,7 @@ vt_09F4A910::
 	.4byte sfxNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809FB88
+	.4byte hitChance__C18DefaultPlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C11PlayerSkill
@@ -9020,13 +9018,13 @@ vt_09F4A910::
 	.2byte 0
 	.4byte sub_0809F9F0
 
-vt_09F4ABB8::
+_vt.9SmokeBomb::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809E870
+	.4byte dt__9SmokeBomb
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__11PlayerSkill
@@ -9257,7 +9255,7 @@ vt_09F4ABB8::
 	.4byte sfxNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809FB88
+	.4byte hitChance__C18DefaultPlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C11PlayerSkill
@@ -9277,13 +9275,13 @@ vt_09F4ABB8::
 	.2byte 0
 	.4byte sub_0809F9F0
 
-vt_09F4AE60::
+_vt.13HypnoPendulum::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809E884
+	.4byte dt__13HypnoPendulum
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__11PlayerSkill
@@ -9514,7 +9512,7 @@ vt_09F4AE60::
 	.4byte sfxNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809FB88
+	.4byte hitChance__C18DefaultPlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C11PlayerSkill
@@ -9534,13 +9532,13 @@ vt_09F4AE60::
 	.2byte 0
 	.4byte sub_0809F9F0
 
-vt_09F4B108::
+_vt.10WallStaple::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809E8DC
+	.4byte dt__10WallStaple
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__11PlayerSkill
@@ -9606,7 +9604,7 @@ vt_09F4B108::
 	.4byte isResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809E898
+	.4byte tellResisted__10WallStapleP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onDamage__6ActionP4Unit
@@ -9771,7 +9769,7 @@ vt_09F4B108::
 	.4byte sfxNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809FB88
+	.4byte hitChance__C18DefaultPlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C11PlayerSkill
@@ -9791,13 +9789,13 @@ vt_09F4B108::
 	.2byte 0
 	.4byte sub_0809F9F0
 
-vt_09F4B3B0::
+_vt.4Bash::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809F6E0
+	.4byte dt__4Bash
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__11PlayerSkill
@@ -9854,13 +9852,13 @@ vt_09F4B3B0::
 	.4byte action_a0__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809F670
+	.4byte calcDidHit__4BashP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809F6DC
+	.4byte isResisted__4BashP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellResisted__6ActionP4Unit
@@ -9869,7 +9867,7 @@ vt_09F4B3B0::
 	.4byte onDamage__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809F098
+	.4byte onAttack__4BashP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte action_d8__6ActionP4UnitT1
@@ -9968,7 +9966,7 @@ vt_09F4B3B0::
 	.4byte name__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080484
+	.4byte action_1d8__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
@@ -10028,7 +10026,7 @@ vt_09F4B3B0::
 	.4byte sfxNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809F5B0
+	.4byte hitChance__C4BashP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C11PlayerSkill
@@ -10046,37 +10044,37 @@ vt_09F4B3B0::
 	.4byte userMissSfx__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809ED04
+	.4byte sub_0809ED04__4Bash
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809EC44
+	.4byte sub_0809EC44__4Bash
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809EC04
+	.4byte sub_0809EC04__4Bash
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809EBBC
+	.4byte sub_0809EBBC__4Bash
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809EBA8
+	.4byte sub_0809EBA8__4Bash
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809EB94
+	.4byte sub_0809EB94__4Bash
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809EAF0
+	.4byte sub_0809EAF0__4Bash
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809EAA4
+	.4byte sub_0809EAA4__4Bash
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809E954
+	.4byte sub_0809E954__4Bash
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809E910
+	.4byte sub_0809E910__4Bash
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809E8F0
+	.4byte sub_0809E8F0__4Bash
 
 _vt.18DefaultPlayerSkill::
 	.2byte 0
@@ -10084,7 +10082,7 @@ _vt.18DefaultPlayerSkill::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809FC10
+	.4byte dt__18DefaultPlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__11PlayerSkill
@@ -10255,7 +10253,7 @@ _vt.18DefaultPlayerSkill::
 	.4byte name__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080484
+	.4byte action_1d8__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
@@ -10315,7 +10313,7 @@ _vt.18DefaultPlayerSkill::
 	.4byte sfxNo__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809FB88
+	.4byte hitChance__C18DefaultPlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C11PlayerSkill
@@ -10722,10 +10720,10 @@ _vt.9GuestRTTI::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809FC38
+	.4byte getName__9GuestRTTI
 	.2byte 0
 	.2byte 0
-	.4byte sub_0809FC24
+	.4byte init__9GuestRTTI
 
 _vt.5Ionia.10UnitObject::
 	.2byte -32
@@ -13125,13 +13123,13 @@ _vt.12DefaultGuest::
 	.2byte 0
 	.4byte sub_080A09C4
 
-vt_09F4D600::
+_vt.12GuestSkill24::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A0B90
+	.4byte dt__12GuestSkill24
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__10GuestSkill
@@ -13341,7 +13339,7 @@ vt_09F4D600::
 	.4byte priority__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A0B54
+	.4byte getUseMessage__C12GuestSkill24
 	.2byte 0
 	.2byte 0
 	.4byte getForceUseMessage__C10GuestSkill
@@ -13362,7 +13360,7 @@ vt_09F4D600::
 	.4byte sfxNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A0D48
+	.4byte hitChance__C17DefaultGuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C10GuestSkill
@@ -13379,13 +13377,13 @@ vt_09F4D600::
 	.2byte 0
 	.4byte action_298__10GuestSkill
 
-vt_09F4D8A0::
+_vt.10AlecAttack::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A0BCC
+	.4byte dt__10AlecAttack
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__10GuestSkill
@@ -13448,7 +13446,7 @@ vt_09F4D8A0::
 	.4byte tellMissed__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A0BA4
+	.4byte isResisted__10AlecAttackP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte tellResisted__6ActionP4Unit
@@ -13616,7 +13614,7 @@ vt_09F4D8A0::
 	.4byte sfxNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A0D48
+	.4byte hitChance__C17DefaultGuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C10GuestSkill
@@ -13633,13 +13631,13 @@ vt_09F4D8A0::
 	.2byte 0
 	.4byte action_298__10GuestSkill
 
-vt_09F4DB40::
+_vt.15AlecShakeWakeUp::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A0C18
+	.4byte dt__15AlecShakeWakeUp
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__10GuestSkill
@@ -13708,7 +13706,7 @@ vt_09F4DB40::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A0BE0
+	.4byte onDamage__15AlecShakeWakeUpP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onAttack__6ActionP4Unit
@@ -13870,7 +13868,7 @@ vt_09F4DB40::
 	.4byte sfxNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A0D48
+	.4byte hitChance__C17DefaultGuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C10GuestSkill
@@ -13887,13 +13885,13 @@ vt_09F4DB40::
 	.2byte 0
 	.4byte action_298__10GuestSkill
 
-vt_09F4DDE0::
+_vt.16FassadPunishizer::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A0D34
+	.4byte dt__16FassadPunishizer
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__10GuestSkill
@@ -13962,7 +13960,7 @@ vt_09F4DDE0::
 	.4byte tellResisted__6ActionP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A0C2C
+	.4byte onDamage__16FassadPunishizerP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte onAttack__6ActionP4Unit
@@ -14124,7 +14122,7 @@ vt_09F4DDE0::
 	.4byte sfxNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A0D48
+	.4byte hitChance__C17DefaultGuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C10GuestSkill
@@ -14147,7 +14145,7 @@ _vt.17DefaultGuestSkill::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A0DD0
+	.4byte dt__17DefaultGuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__10GuestSkill
@@ -14378,7 +14376,7 @@ _vt.17DefaultGuestSkill::
 	.4byte sfxNo__C10GuestSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A0D48
+	.4byte hitChance__C17DefaultGuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte critChance__C10GuestSkill
@@ -96083,7 +96081,7 @@ _vt.11PlayerSkill::
 	.4byte name__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte sub_08080484
+	.4byte action_1d8__C11PlayerSkill
 	.2byte 0
 	.2byte 0
 	.4byte action_fixme__6Actioni
@@ -96874,13 +96872,13 @@ _vt.11MonsterRTTI::
 	.2byte 0
 	.4byte init__11MonsterRTTI
 
-vt_09F83418::
+_vt.12BattleSprite::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_08081D48
+	.4byte dt__12BattleSprite
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base

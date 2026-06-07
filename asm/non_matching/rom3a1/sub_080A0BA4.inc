@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A0BA4:
+isResisted__10AlecAttackP4Unit:
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	adds r4, r1, #0

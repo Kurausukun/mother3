@@ -108,7 +108,7 @@ __12BattleSpriteP7Monster:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08081D34: .4byte vt_09F83418
+_08081D34: .4byte _vt.12BattleSprite
 _08081D38: .4byte 0x00000179
 _08081D3C: .4byte _vt.6ResPtr
 _08081D40: .4byte 0x040000D4

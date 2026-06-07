@@ -119,6 +119,7 @@ SECTIONS
 
         *libc.a:*(.text);
 
+        /* this entire block of code is supposed to be the .gnu.linkonce.t section */
         *.o(.gnu.linkonce.t._._6ResPtr);
         build/mother3/src/battle/system.o(.gnu.linkonce.t.*);
         *.o(.gnu.linkonce.t._._5Event);

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809DF50:
+playAnim__11SirenBeetle:
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _0809DF68

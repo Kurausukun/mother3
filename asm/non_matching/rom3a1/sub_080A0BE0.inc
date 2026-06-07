@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A0BE0:
+onDamage__15AlecShakeWakeUpP4Unit:
 	push {r4, r5, r6, lr}
 	sub sp, #4
 	adds r4, r0, #0

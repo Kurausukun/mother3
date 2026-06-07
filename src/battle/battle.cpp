@@ -66,9 +66,9 @@ void Battle::sub_0805DC1C() {
     }
 }
 
-ASM_FUNC("asm/non_matching/battle/sub_0805DC6C.inc", void Battle::sub_0805DC6C());
+ASM_FUNC("asm/non_matching/battle/sub_0805DC6C.inc", void Battle::battle_128());
 
-void Battle::sub_0805DDE4() {
+void Battle::battle_130() {
     setBattleResult(5, false);
 }
 

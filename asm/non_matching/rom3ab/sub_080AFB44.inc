@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080AFB44:
+create__25MonsterComboAttackFactoryUsP4Unit:
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0

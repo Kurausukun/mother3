@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809F854:
+fire__5Sniff:
 	push {r4, r5, r6, lr}
 	sub sp, #0x14
 	adds r4, r0, #0

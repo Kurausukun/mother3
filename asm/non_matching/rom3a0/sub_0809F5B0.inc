@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809F5B0:
+hitChance__C4BashP4Unit:
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r1, [r4, #0x1c]

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809E834:
+dt__9Apologize:
 	push {lr}
 	ldr r2, _0809E844
 	str r2, [r0, #0x1c]

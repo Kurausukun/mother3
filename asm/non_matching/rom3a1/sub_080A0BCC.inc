@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A0BCC:
+dt__10AlecAttack:
 	push {lr}
 	ldr r2, _080A0BDC
 	str r2, [r0, #0x1c]

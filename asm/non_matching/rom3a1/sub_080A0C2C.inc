@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A0C2C:
+onDamage__16FassadPunishizerP4Unit:
 	push {r4, r5, r6, lr}
 	sub sp, #0x3c
 	adds r6, r0, #0

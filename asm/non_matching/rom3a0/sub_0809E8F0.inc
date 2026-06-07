@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809E8F0:
+sub_0809E8F0__4Bash:
 	push {lr}
 	adds r3, r0, #0
 	lsls r2, r2, #0x18

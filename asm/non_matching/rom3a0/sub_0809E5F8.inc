@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809E5F8:
+calcDidHit__9MakeLaughP4Unit:
 	push {r4, r5, lr}
 	adds r4, r1, #0
 	movs r0, #0

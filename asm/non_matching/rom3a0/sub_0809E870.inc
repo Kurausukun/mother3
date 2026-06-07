@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809E870:
+dt__9SmokeBomb:
 	push {lr}
 	ldr r2, _0809E880
 	str r2, [r0, #0x1c]

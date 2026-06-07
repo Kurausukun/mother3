@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809E338:
+tellUseMessage__3Run:
 	push {r4, lr}
 	sub sp, #0x10
 	adds r4, r0, #0

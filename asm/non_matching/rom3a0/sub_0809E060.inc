@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809E060:
+tellUseMessage__19CantAttackMaskedMan:
 	push {r4, r5, r6, lr}
 	mov r6, sl
 	mov r5, sb

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08080484:
+action_1d8__C11PlayerSkill:
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}

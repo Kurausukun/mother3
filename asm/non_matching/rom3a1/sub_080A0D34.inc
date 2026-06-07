@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A0D34:
+dt__16FassadPunishizer:
 	push {lr}
 	ldr r2, _080A0D44
 	str r2, [r0, #0x1c]

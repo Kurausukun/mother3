@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809DF6C:
+dt__11SirenBeetle:
 	push {lr}
 	ldr r2, _0809DF7C
 	str r2, [r0, #0x1c]

@@ -126,7 +126,7 @@ Msg PlayerSkill::name() const {
     return getName(id());
 }
 
-extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_08080484.inc", void sub_08080484());
+extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_08080484.inc", void action_1d8__C11PlayerSkill());
 extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_08080560.inc", void sub_08080560()); // unused?
 
 u32 PlayerSkill::action_1e0() {

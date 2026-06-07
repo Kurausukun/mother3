@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08099E38:
+battle_90__16MaskedManBattleA:
 	bx lr
 	.align 2, 0
 	.syntax divided

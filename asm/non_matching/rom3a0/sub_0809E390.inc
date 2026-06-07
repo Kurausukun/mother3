@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809E390:
+dt__3Run:
 	push {lr}
 	ldr r2, _0809E3A0
 	str r2, [r0, #0x1c]

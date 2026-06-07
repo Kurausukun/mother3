@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809DF30:
+isResisted__11SirenBeetleP4Unit:
 	push {lr}
 	adds r0, r1, #0
 	ldr r1, [r0, #0x1c]

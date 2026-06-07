@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A0C18:
+dt__15AlecShakeWakeUp:
 	push {lr}
 	ldr r2, _080A0C28
 	str r2, [r0, #0x1c]

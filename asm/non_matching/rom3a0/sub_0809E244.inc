@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809E244:
+calcDidHit__3RunP4Unit:
 	push {r4, r5, r6, lr}
 	movs r6, #0
 	movs r4, #0

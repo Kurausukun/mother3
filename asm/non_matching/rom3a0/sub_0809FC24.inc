@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0809FC24:
+init__9GuestRTTI:
 	push {lr}
 	movs r0, #0x82
 	lsls r0, r0, #1
