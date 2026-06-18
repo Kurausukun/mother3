@@ -32,6 +32,8 @@ expected/
 .idea/
 porymap.project.cfg
 .vscode/
+.zed/
+.clangd
 *.a
 .fuse_hidden*
 *.sna
