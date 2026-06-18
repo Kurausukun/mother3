@@ -34,7 +34,19 @@ extern "C" ASM_FUNC("asm/non_matching/rhythm/InitHeal.inc", void InitHeal());
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08073CF0.inc", void sub_08073CF0());
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08073D98.inc", void sub_08073D98());
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08073E3C.inc", void sub_08073E3C());
-extern "C" ASM_FUNC("asm/non_matching/rhythm/tellStatusWoreOff.inc", void tellStatusWoreOff());
+
+bool statusWearOff(Unit* unit, Status::Type type, bool print) {
+    if (unit->hasStatus(type) == 1){
+        Status* s = unit->findStatus(type);
+        
+        if (print == true && s){
+            s->woreOffMsg().print(Color(0, 0, 0), 1);
+        }
+            
+        return unit->removeOneStatus(type);
+    }
+    return false;
+}
 
 extern "C" Action* getPlayerSkill(u16 arg0, Unit* user) {
     return create__18PlayerSkillFactoryUsP4Unit(arg0, user);

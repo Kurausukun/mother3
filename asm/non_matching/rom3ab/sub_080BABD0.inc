@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080BABD0:
+_1c0__14StatusParamMod:
 	push {r4, r5, r6, r7, lr}
 	sub sp, #0x10
 	adds r6, r0, #0
@@ -18,7 +18,7 @@ sub_080BABD0:
 	adds r5, r0, #0
 	adds r1, r4, #0
 	movs r2, #0
-	bl tellStatusWoreOff
+	bl statusWearOff__FP4UnitUsb
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1

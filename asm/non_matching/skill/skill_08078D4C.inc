@@ -306,7 +306,7 @@ _08078F9C:
 	adds r0, r7, #0
 	movs r1, #0x17
 	movs r2, #1
-	bl tellStatusWoreOff
+	bl statusWearOff__FP4UnitUsb
 	b _0807900A
 _08078FE2:
 	ldr r1, [r7, #0x1c]
@@ -326,7 +326,7 @@ _08078FE2:
 	adds r0, r7, #0
 	movs r1, #0x16
 	movs r2, #1
-	bl tellStatusWoreOff
+	bl statusWearOff__FP4UnitUsb
 _0807900A:
 	add sp, #0x14
 	pop {r3}

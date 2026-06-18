@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080BAED8:
+_150__14StatusParamMod:
 	movs r0, #0
 	bx lr
 	.syntax divided

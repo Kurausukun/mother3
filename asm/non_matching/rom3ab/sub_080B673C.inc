@@ -1,14 +1,14 @@
 	.syntax unified
-sub_080B673C:
+__12StatusDefendUsP4Unit:
 	push {r4, lr}
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl __6StatusUsP4Unit
 	ldr r0, _080B67F8
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
-	bl sub_08082690
+	bl unit__C6Status
 	ldr r1, [r0, #0x1c]
 	movs r2, #0xe4
 	lsls r2, r2, #1
@@ -20,7 +20,7 @@ sub_080B673C:
 	bl _call_via_r1
 	str r0, [r4, #0x34]
 	adds r0, r4, #0
-	bl sub_08082690
+	bl unit__C6Status
 	ldr r1, [r0, #0x1c]
 	movs r2, #0xe8
 	lsls r2, r2, #1
@@ -32,7 +32,7 @@ sub_080B673C:
 	bl _call_via_r1
 	str r0, [r4, #0x38]
 	adds r0, r4, #0
-	bl sub_08082690
+	bl unit__C6Status
 	ldr r1, [r0, #0x1c]
 	movs r2, #0xec
 	lsls r2, r2, #1
@@ -44,7 +44,7 @@ sub_080B673C:
 	bl _call_via_r1
 	str r0, [r4, #0x3c]
 	adds r0, r4, #0
-	bl sub_08082690
+	bl unit__C6Status
 	ldr r1, [r0, #0x1c]
 	movs r2, #0xf0
 	lsls r2, r2, #1
@@ -56,7 +56,7 @@ sub_080B673C:
 	bl _call_via_r1
 	str r0, [r4, #0x40]
 	adds r0, r4, #0
-	bl sub_08082690
+	bl unit__C6Status
 	ldr r1, [r0, #0x1c]
 	movs r2, #0xf4
 	lsls r2, r2, #1
@@ -77,12 +77,12 @@ sub_080B673C:
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
 	movs r1, #1
-	bl sub_08082678
+	bl setRoundLimit__6StatusUs
 	adds r0, r4, #0
 	pop {r4}
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080B67F8: .4byte vt_09F754F8
-_080B67FC: .4byte vt_09F74F88
+_080B67F8: .4byte _vt.14StatusParamMod
+_080B67FC: .4byte _vt.12StatusDefend
 	.syntax divided

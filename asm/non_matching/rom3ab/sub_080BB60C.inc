@@ -1,8 +1,8 @@
 	.syntax unified
-sub_080BB60C:
+status_b0__11StatusSleep:
 	push {r4, lr}
 	adds r4, r0, #0
-	bl sub_08082670
+	bl status_b0__6Status
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1

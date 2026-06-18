@@ -24,7 +24,7 @@ _080BC600:
 	adds r0, r5, #0
 	adds r1, r4, #0
 	movs r2, #0
-	bl tellStatusWoreOff
+	bl statusWearOff__FP4UnitUsb
 	movs r3, #1
 	add r8, r3
 _080BC60E:

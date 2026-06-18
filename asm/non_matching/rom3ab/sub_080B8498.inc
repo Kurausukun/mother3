@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B8498:
+_160__14StatusParamsUp:
 	push {lr}
 	ldr r1, [r0, #0x1c]
 	adds r1, #0xe8

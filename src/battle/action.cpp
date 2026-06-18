@@ -17,7 +17,7 @@ extern "C" void hitPlayer(Unit*, u32, bool);
 extern "C" s32 randS32(s32, s32);
 
 extern "C" s32 sub_0807066C(s32, s32);
-extern "C" bool tellStatusWoreOff(Unit*, u32, u32);
+bool statusWearOff(Unit*, Status::Type, bool);
 extern "C" void sub_0807335C(u16);
 extern "C" void sub_080736F8(Unit*, u32);
 extern "C" u8 sub_0807404C(Action*, u32);
@@ -322,9 +322,9 @@ NONMATCH("asm/non_matching/skill/skill_08078D4C.inc", void Action::onDamage(Unit
         PlayAnimation(0x36, target, target);
         hitPlayer(getUser(), max(1, t), 1);
         PlayAnimation(successAnimNo(), target, getUser());
-        tellStatusWoreOff(target, Status::Counter, 1);
+        statusWearOff(target, Status::Counter, 1);
     } else if (target->hasStatus(Status::Shield) == 1) {
-        tellStatusWoreOff(target, Status::Shield, 1);
+        statusWearOff(target, Status::Shield, 1);
     }
 }
 END_NONMATCH
@@ -364,9 +364,9 @@ NONMATCH("asm/non_matching/skill/sub_08079018.inc", void Action::onAttack(Unit* 
         PlayAnimation(0x36, target, target);
         hitPlayer(getUser(), max(1, t), 1);
         PlayAnimation(successAnimNo(), target, getUser());
-        tellStatusWoreOff(target, Status::Counter, 1);
+        statusWearOff(target, Status::Counter, 1);
     } else if (target->hasStatus(Status::Shield) == 1) {
-        tellStatusWoreOff(target, Status::Shield, 1);
+        statusWearOff(target, Status::Shield, 1);
     }
 }
 END_NONMATCH
@@ -426,9 +426,9 @@ NONMATCH("asm/non_matching/skill/sub_080793B8.inc", void Action::onPsiDamage(Uni
             PlayAnimation(0x3c, target, target);
             hitPlayer(getUser(), max(1, t), 1);
             PlayAnimation(successAnimNo(), target, getUser());
-            tellStatusWoreOff(target, Status::PsiCounter, 1);
+            statusWearOff(target, Status::PsiCounter, 1);
         } else if (target->hasStatus(Status::PsiShield) == 1) {
-            tellStatusWoreOff(target, Status::PsiShield, 1);
+            statusWearOff(target, Status::PsiShield, 1);
         }
     }
 }
@@ -503,7 +503,7 @@ NONMATCH("asm/non_matching/skill/sub_08079EE4.inc",
         ROMStr(0xec).print(Color(0, 0, 0), 1);
         return false;
     } else {
-        return tellStatusWoreOff(target, status, unk);
+        return statusWearOff(target, status, unk);
     }
 }
 END_NONMATCH

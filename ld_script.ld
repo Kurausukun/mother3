@@ -72,6 +72,7 @@ SECTIONS
         build/mother3/src/battle/guestSkill.o(.text);
         build/mother3/src/battle/monster.o(.text);
         build/mother3/src/battle/monsterskill.o(.text);
+        build/mother3/src/battle/status.o(.text);
         build/mother3/src/battle/psi.o(.text);
         build/mother3/src/battle/rom2d.o(.text);
         build/mother3/src/battle/archive.o(.text);
@@ -150,7 +151,7 @@ SECTIONS
         build/mother3/src/data/guestSkillData.o(.rodata);
         build/mother3/src/data/monsterData.o(.rodata);
         build/mother3/src/data/monsterSkillData.o(.rodata);
-        build/mother3/data/data1b.o(.rodata);
+        build/mother3/src/data/gStatusData.o(.rodata);
         build/mother3/src/data/psiData.o(.rodata);
         build/mother3/src/data/itemData.o(.rodata);
         build/mother3/src/data/rhythmData.o(.rodata);

@@ -1,8 +1,8 @@
 	.syntax unified
-sub_080B9B34:
+status_90__19StatusDefDownStrong:
 	push {r4, lr}
 	adds r4, r0, #0
-	bl sub_08082660
+	bl status_90__6Status
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -17,7 +17,7 @@ sub_080B9B34:
 	adds r4, r0, #0
 	movs r1, #0x2d
 	movs r2, #0
-	bl tellStatusWoreOff
+	bl statusWearOff__FP4UnitUsb
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -25,7 +25,7 @@ sub_080B9B34:
 	adds r0, r4, #0
 	movs r1, #0x14
 	movs r2, #0
-	bl tellStatusWoreOff
+	bl statusWearOff__FP4UnitUsb
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -33,7 +33,7 @@ sub_080B9B34:
 	adds r0, r4, #0
 	movs r1, #0x22
 	movs r2, #0
-	bl tellStatusWoreOff
+	bl statusWearOff__FP4UnitUsb
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1

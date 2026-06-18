@@ -31,7 +31,7 @@ Msg createPlayerName(u16);
 extern "C" u8 sub_08072648(u32);
 
 extern Status::Type gUnknown_080FB078[];
-extern "C" void tellStatusWoreOff(Unit*, Status::Type, bool);
+bool statusWearOff(Unit*, Status::Type, bool);
 
 // TODO: move to DefaultGoods::isResisted
 // we are unable to inline DefaultGoods stuff at the moment
@@ -555,7 +555,7 @@ public:
         s32 count = target->getStatusTypeCount(Status::Strange);
         if (count > 0) {
             for (int i = 0; i < count; i++) {
-                tellStatusWoreOff(target, Status::Strange, i + 1 >= count);
+                statusWearOff(target, Status::Strange, i + 1 >= count);
             }
         } else {
             // But it didn't work on [05 EF][12 FF]!
@@ -580,7 +580,7 @@ public:
         for (int i = 0; i < 8; i++) {
             Status::Type t = gUnknown_080FB078[i];
             while (target->getStatusTypeCount(gUnknown_080FB078[i]) > 0) {
-                tellStatusWoreOff(target, gUnknown_080FB078[i], false);
+                statusWearOff(target, gUnknown_080FB078[i], false);
                 num++;
             }
         }
@@ -606,7 +606,7 @@ public:
         for (int i = 0; i < 8; i++) {
             Status::Type t = gUnknown_080FB078[i];
             while (target->getStatusTypeCount(gUnknown_080FB078[i]) > 0) {
-                tellStatusWoreOff(target, gUnknown_080FB078[i], false);
+                statusWearOff(target, gUnknown_080FB078[i], false);
                 num++;
             }
         }

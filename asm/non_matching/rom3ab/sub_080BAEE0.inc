@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080BAEE0:
+status_b0__14StatusParamMod:
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -7,7 +7,7 @@ sub_080BAEE0:
 	push {r5, r6, r7}
 	sub sp, #0x10
 	adds r7, r0, #0
-	bl sub_08082670
+	bl status_b0__6Status
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1

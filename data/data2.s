@@ -639,10 +639,10 @@ callback_sub_080817B0:
 const_classname_MonsterSkill:
     .incbin "baserom.gba", 0x0010BF68, 0x6A0
 
-    .global callback_sub_08082968
-callback_sub_08082968:
+    .global callback_status_roundBeginCallback__FP6Status
+callback_status_roundBeginCallback__FP6Status:
     .4byte 0xFFFF0000
-    .4byte sub_08082968+1
+    .4byte status_roundBeginCallback__FP6Status+1
 
     .global callback_sub_080829F4
 callback_sub_080829F4:
@@ -654,10 +654,10 @@ callback_sub_08082AA0:
     .4byte 0xFFFF0000
     .4byte sub_08082AA0+1
 
-    .global callback_sub_08082AC0
-callback_sub_08082AC0:
+    .global callback_status_roundEndCallback__FP6Status
+callback_status_roundEndCallback__FP6Status:
     .4byte 0xFFFF0000
-    .4byte sub_08082AC0+1
+    .4byte status_roundEndCallback__FP6Status+1
     .incbin "baserom.gba", 0x0010C628, 0x5DC
 
     .global const_classname_Psi

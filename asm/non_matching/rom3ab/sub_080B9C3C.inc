@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B9C3C:
+_150__16StatusDefDownMid:
 	push {lr}
 	ldr r1, [r0, #0x1c]
 	adds r1, #0xe8

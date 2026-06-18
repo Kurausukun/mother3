@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080BAD9C:
+_178__14StatusParamMod:
 	ldr r0, [r0, #0x4c]
 	bx lr
 	.syntax divided

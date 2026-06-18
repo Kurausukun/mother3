@@ -80,7 +80,7 @@ _0809EF4A:
 	movs r1, #0x16
 _0809EF58:
 	movs r2, #1
-	bl tellStatusWoreOff
+	bl statusWearOff__FP4UnitUsb
 	b _0809F08A
 _0809EF60:
 	ldr r1, [r7, #0x1c]

@@ -428,7 +428,7 @@ _08079704:
 	mov r0, r8
 	movs r1, #0x1a
 	movs r2, #1
-	bl tellStatusWoreOff
+	bl statusWearOff__FP4UnitUsb
 	b _08079774
 _0807974A:
 	mov r0, r8
@@ -449,7 +449,7 @@ _0807974A:
 	mov r0, r8
 	movs r1, #0x19
 	movs r2, #1
-	bl tellStatusWoreOff
+	bl statusWearOff__FP4UnitUsb
 _08079774:
 	add sp, #0x14
 	pop {r3}

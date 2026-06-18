@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B89C0:
+_150__17StatusDefUpStrong:
 	push {lr}
 	ldr r1, [r0, #0x1c]
 	adds r1, #0xe8

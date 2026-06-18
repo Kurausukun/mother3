@@ -1,10 +1,10 @@
 	.syntax unified
-sub_080BB8DC:
+onUnitTurnEnd__14StatusTimeBombP4Unit:
 	push {r4, r5, lr}
 	sub sp, #0x10
 	adds r4, r0, #0
 	adds r5, r1, #0
-	bl nullsub_40
+	bl onUnitTurnEnd__6StatusP4Unit
 	ldr r1, [r4, #0x1c]
 	adds r1, #0xe8
 	movs r2, #0
@@ -70,7 +70,7 @@ sub_080BB8DC:
 	lsrs r1, r1, #0x10
 	adds r0, r5, #0
 	movs r2, #0
-	bl tellStatusWoreOff
+	bl statusWearOff__FP4UnitUsb
 _080BB980:
 	add sp, #0x10
 	pop {r4, r5}

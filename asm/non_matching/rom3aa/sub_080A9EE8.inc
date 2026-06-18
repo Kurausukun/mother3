@@ -5,7 +5,7 @@ sub_080A9EE8:
 	lsls r4, r1, #0x10
 	lsrs r4, r4, #0x10
 	adds r1, r4, #0
-	bl removeOneStatus__4Uniti
+	bl removeOneStatus__4UnitUs
 	lsls r0, r0, #0x18
 	lsrs r6, r0, #0x18
 	cmp r4, #0x16

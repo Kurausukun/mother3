@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B5380:
+create__19StatusDefendFactoryUsP4Unit:
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -9,7 +9,7 @@ sub_080B5380:
 	bl __builtin_new
 	adds r1, r4, #0
 	adds r2, r5, #0
-	bl sub_080B673C
+	bl __12StatusDefendUsP4Unit
 	pop {r4, r5}
 	pop {r1}
 	bx r1

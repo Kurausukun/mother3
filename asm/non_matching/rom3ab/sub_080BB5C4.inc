@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080BB5C4:
+cleanup__11StatusSleep:
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r1, [r4, #0x1c]
@@ -27,7 +27,7 @@ sub_080BB5C4:
 	bl _call_via_r1
 _080BB600:
 	adds r0, r4, #0
-	bl nullsub_39
+	bl cleanup__6Status
 	pop {r4}
 	pop {r0}
 	bx r0

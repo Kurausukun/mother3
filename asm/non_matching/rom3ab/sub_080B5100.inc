@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B5100:
+create__28StatusMonkeyDanceDef2FactoryUsP4Unit:
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -9,7 +9,7 @@ sub_080B5100:
 	bl __builtin_new
 	adds r1, r4, #0
 	adds r2, r5, #0
-	bl sub_080B588C
+	bl __21StatusMonkeyDanceDef2UsP4Unit
 	pop {r4, r5}
 	pop {r1}
 	bx r1

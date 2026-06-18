@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080BA908:
+cleanup__12StatusDefend:
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	ldr r1, [r5, #0x1c]
@@ -34,7 +34,7 @@ sub_080BA908:
 	adds r0, r4, #0
 	bl _call_via_r2
 	adds r0, r5, #0
-	bl nullsub_39
+	bl cleanup__6Status
 	pop {r4, r5, r6}
 	pop {r0}
 	bx r0

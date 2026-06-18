@@ -1,11 +1,11 @@
 	.syntax unified
-sub_080BAB30:
+dt__12StatusCrying:
 	push {lr}
 	ldr r2, _080BAB40
 	str r2, [r0, #0x1c]
-	bl sub_0808264C
+	bl _._6Status
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080BAB40: .4byte vt_09F772F8
+_080BAB40: .4byte _vt.13DefaultStatus
 	.syntax divided

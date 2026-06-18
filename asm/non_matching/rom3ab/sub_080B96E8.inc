@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B96E8:
+_148__15StatusOffUpWeak:
 	push {lr}
 	ldr r1, [r0, #0x1c]
 	adds r1, #0xe8

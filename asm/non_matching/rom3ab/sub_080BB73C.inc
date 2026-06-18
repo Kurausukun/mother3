@@ -1,11 +1,11 @@
 	.syntax unified
-sub_080BB73C:
+dt__10StatusNumb:
 	push {lr}
 	ldr r2, _080BB74C
 	str r2, [r0, #0x1c]
-	bl sub_0808264C
+	bl _._6Status
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080BB74C: .4byte vt_09F772F8
+_080BB74C: .4byte _vt.13DefaultStatus
 	.syntax divided

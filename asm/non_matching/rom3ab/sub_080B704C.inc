@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B704C:
+fmtStatusMsg__21StatusMonkeyDanceDef2Us:
 	push {r4, r5, r6, r7, lr}
 	sub sp, #0x28
 	adds r6, r0, #0

@@ -1,8 +1,8 @@
 	.syntax unified
-sub_080BA960:
+status_b0__12StatusDefend:
 	push {r4, r5, r6, r7, lr}
 	adds r7, r0, #0
-	bl sub_08082670
+	bl status_b0__6Status
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1

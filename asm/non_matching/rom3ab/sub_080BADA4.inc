@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080BADA4:
+cleanup__14StatusParamMod:
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -129,7 +129,7 @@ sub_080BADA4:
 	adds r0, r5, #0
 	bl _call_via_r2
 	adds r0, r6, #0
-	bl nullsub_39
+	bl cleanup__6Status
 	pop {r3}
 	mov r8, r3
 	pop {r4, r5, r6}

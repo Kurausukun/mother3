@@ -1,10 +1,10 @@
 	.syntax unified
-sub_080B6B10:
+__13StatusRefreshUsP4Unit:
 	push {r4, lr}
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl sub_08082510
+	bl __6StatusUsP4Unit
 	ldr r0, _080B6B28
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
@@ -12,5 +12,5 @@ sub_080B6B10:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080B6B28: .4byte vt_09F76628
+_080B6B28: .4byte _vt.13StatusRefresh
 	.syntax divided

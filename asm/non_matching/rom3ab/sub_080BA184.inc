@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080BA184:
+_148__19StatusOffDownStrong:
 	push {lr}
 	ldr r1, [r0, #0x1c]
 	adds r1, #0xe8

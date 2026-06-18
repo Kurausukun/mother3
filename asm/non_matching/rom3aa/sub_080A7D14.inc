@@ -5,7 +5,7 @@ sub_080A7D14:
 	lsls r1, r1, #0x10
 	lsrs r5, r1, #0x10
 	adds r1, r5, #0
-	bl removeOneStatus__4Uniti
+	bl removeOneStatus__4UnitUs
 	lsls r0, r0, #0x18
 	lsrs r6, r0, #0x18
 	cmp r5, #0x16

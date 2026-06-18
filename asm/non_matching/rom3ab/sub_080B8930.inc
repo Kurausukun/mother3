@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B8930:
+fmtStatusMsg__17StatusDefUpStrongUs:
 	push {r4, r5, r6, r7, lr}
 	sub sp, #0x28
 	adds r6, r0, #0

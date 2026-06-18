@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B70DC:
+_150__21StatusMonkeyDanceDef2:
 	push {lr}
 	ldr r1, [r0, #0x1c]
 	adds r1, #0xe8

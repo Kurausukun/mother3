@@ -1,8 +1,8 @@
 	.syntax unified
-sub_080B7E0C:
+disableAllStatus__20StatusMonkeyDanceOff:
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
-	bl disableAllStatuses
+	bl disableAllStatuses__6Status
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1

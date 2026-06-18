@@ -562,7 +562,7 @@ _0809F534:
 	ldr r0, [sp, #0x80]
 	movs r1, #3
 	movs r2, #1
-	bl tellStatusWoreOff
+	bl statusWearOff__FP4UnitUsb
 _0809F584:
 	bl sub_08073270
 	mov r3, sl

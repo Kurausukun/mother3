@@ -55,9 +55,9 @@ extern "C" ASM_FUNC("asm/non_matching/goods/sub_08063EC4.inc", void create__14Mo
 extern "C" ASM_FUNC("asm/non_matching/goods/sub_08063EE4.inc", void init__19MonsterSkillFactory());
 extern "C" ASM_FUNC("asm/non_matching/goods/sub_08064564.inc", void put__19MonsterSkillFactoryUsP4Unit_Pv());
 extern "C" ASM_FUNC("asm/non_matching/goods/sub_08064574.inc", void create__19MonsterSkillFactoryUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/goods/sub_08064590.inc", void sub_08064590());
-extern "C" ASM_FUNC("asm/non_matching/goods/sub_08064808.inc", void sub_08064808());
-extern "C" ASM_FUNC("asm/non_matching/goods/sub_08064818.inc", void sub_08064818());
+extern "C" ASM_FUNC("asm/non_matching/goods/sub_08064590.inc", void init__13StatusFactory());
+extern "C" ASM_FUNC("asm/non_matching/goods/sub_08064808.inc", void put__13StatusFactoryUsP4Unit_Pv());
+extern "C" ASM_FUNC("asm/non_matching/goods/sub_08064818.inc", void create__13StatusFactoryUsP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/goods/sub_08064834.inc", void init__10PsiFactory());
 extern "C" ASM_FUNC("asm/non_matching/goods/sub_08064940.inc", void put__10PsiFactoryUsPFUsP4Unit_Pv());
 extern "C" ASM_FUNC("asm/non_matching/goods/sub_08064950.inc", void create__10PsiFactoryUsP4Unit());

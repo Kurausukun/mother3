@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080BACC0:
+_1b0__14StatusParamMod:
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r1, [r4, #0x1c]

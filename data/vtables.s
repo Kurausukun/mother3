@@ -2831,37 +2831,37 @@ _vt.5Claus::
 	.4byte missSfx__13DefaultPlayer
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -3309,37 +3309,37 @@ _vt.5Salsa::
 	.4byte missSfx__13DefaultPlayer
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -3790,37 +3790,37 @@ _vt.5Boney::
 	.4byte missSfx__13DefaultPlayer
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -4271,37 +4271,37 @@ _vt.6Duster::
 	.4byte missSfx__13DefaultPlayer
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -4752,37 +4752,37 @@ _vt.8Kumatora::
 	.4byte missSfx__13DefaultPlayer
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -5233,37 +5233,37 @@ _vt.5Lucas::
 	.4byte missSfx__13DefaultPlayer
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -5717,37 +5717,37 @@ _vt.5Flint::
 	.4byte missSfx__13DefaultPlayer
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -6198,37 +6198,37 @@ _vt.13DefaultPlayer::
 	.4byte missSfx__13DefaultPlayer
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -10640,37 +10640,37 @@ _vt.5Guest::
 	.4byte missSfx__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -10979,37 +10979,37 @@ _vt.5Ionia::
 	.4byte missSfx__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -11319,37 +11319,37 @@ _vt.6Fassad::
 	.4byte missSfx__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -11668,37 +11668,37 @@ _vt.4Wess::
 	.4byte missSfx__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -12011,37 +12011,37 @@ _vt.4Alec::
 	.4byte missSfx__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -12357,37 +12357,37 @@ _vt.4Fuel::
 	.4byte missSfx__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -12697,37 +12697,37 @@ _vt.6Thomas::
 	.4byte missSfx__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -13037,37 +13037,37 @@ _vt.12DefaultGuest::
 	.4byte missSfx__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -14789,37 +14789,37 @@ _vt.12MaskedMan3rd::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -15243,37 +15243,37 @@ _vt.12MaskedMan2nd::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -15723,37 +15723,37 @@ _vt.21AbsolutelySafeCapsule::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -16177,37 +16177,37 @@ _vt.5Porky::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -16679,37 +16679,37 @@ _vt.14MechaPorky0607::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -17142,37 +17142,37 @@ _vt.10MechaPorky::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -17605,37 +17605,37 @@ _vt.19NaturalKillerCyborg::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -18083,37 +18083,37 @@ _vt.14PorkColonel2nd::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -18537,37 +18537,37 @@ _vt.12NuclearRobot::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -18994,37 +18994,37 @@ _vt.12UpgradedRobo::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -19448,37 +19448,37 @@ _vt.14PorkLieutenant::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -19902,31 +19902,31 @@ _vt.9MiracleFassad::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
@@ -20368,37 +20368,37 @@ _vt.12MaskedMan1st::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -20825,37 +20825,37 @@ _vt.9HuggyBomb::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -21297,37 +21297,37 @@ _vt.7TLCTree::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -21751,37 +21751,37 @@ _vt.11BarrierTrio::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -22226,37 +22226,37 @@ _vt.9Dragonfly::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -22680,37 +22680,37 @@ _vt.13EerieSmile4th::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -23134,37 +23134,37 @@ _vt.8Titanian::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -23588,37 +23588,37 @@ _vt.13EerieSmile2nd::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -24042,37 +24042,37 @@ _vt.9Monkalrus::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -24496,37 +24496,37 @@ _vt.13EerieSmile1st::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -24950,37 +24950,37 @@ _vt.13EerieSmile3rd::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -25404,37 +25404,37 @@ _vt.12Zombieshroom::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -25858,37 +25858,37 @@ _vt.10MasterEddy::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -26312,37 +26312,37 @@ _vt.10FishRoeMan::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -26766,37 +26766,37 @@ _vt.10NavySqueal::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -27220,31 +27220,31 @@ _vt.9NewFassad::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
@@ -27689,37 +27689,37 @@ _vt.7Hothead::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -28143,37 +28143,37 @@ _vt.8Blazefly::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -28597,37 +28597,37 @@ _vt.10ScaredyBot::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -29051,37 +29051,37 @@ _vt.12SteelGorilla::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -29514,37 +29514,37 @@ _vt.7TenYeti::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -29968,37 +29968,37 @@ _vt.9ChillyDog::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -30422,37 +30422,37 @@ _vt.13PorkCommander::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -30876,37 +30876,37 @@ _vt.15AlmostMechaLion::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -31333,37 +31333,37 @@ _vt.7BroTeam::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -31787,37 +31787,37 @@ _vt.9MrGenetor::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -32253,37 +32253,37 @@ _vt.15MissMarshmallow::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -32716,37 +32716,37 @@ _vt.11SurpriseBox::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -33170,37 +33170,37 @@ _vt.10BatteryMan::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -33624,37 +33624,37 @@ _vt.9MinorRobo::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -34087,31 +34087,31 @@ _vt.11SadJunkHeap::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
@@ -34544,37 +34544,37 @@ _vt.11AtomicRobot::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -34998,37 +34998,37 @@ _vt.9Barricade::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -35452,37 +35452,37 @@ _vt.20WomanizingPigMask2nd::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -35918,37 +35918,37 @@ _vt.20WomanizingPigmask1st::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -36372,37 +36372,37 @@ _vt.11WoundupBear::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -36826,37 +36826,37 @@ _vt.11MechaTurtle::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -37280,37 +37280,37 @@ _vt.11JealousBass::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -37743,37 +37743,37 @@ _vt.10BeatenDrum::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -38197,37 +38197,37 @@ _vt.13WailingGuitar::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -38651,37 +38651,37 @@ _vt.10StickySlug::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -39105,37 +39105,37 @@ _vt.8Pigtunia::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -39559,37 +39559,37 @@ _vt.11Cattlesnake::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -40013,37 +40013,37 @@ _vt.10StickyGlop::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -40476,37 +40476,37 @@ _vt.10SandLizard::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -40930,37 +40930,37 @@ _vt.8PorkTank::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -41393,37 +41393,37 @@ _vt.11PorkSoldier::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -41847,37 +41847,37 @@ _vt.8Pseudoor::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -42301,37 +42301,37 @@ _vt.12RockingGhost::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -42755,37 +42755,37 @@ _vt.8Arachnid::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -43209,37 +43209,37 @@ _vt.11MobileGrave::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -43663,37 +43663,37 @@ _vt.9OhSoSnake::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -44129,37 +44129,37 @@ _vt.7Clayman::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -44595,37 +44595,37 @@ _vt.9MrPassion::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -45058,37 +45058,37 @@ _vt.4Tree::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -45512,37 +45512,37 @@ _vt.12BaldingEagle::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -45966,37 +45966,37 @@ _vt.11WalkingBush::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -46420,37 +46420,37 @@ _vt.9PotatoBug::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -46874,37 +46874,37 @@ _vt.12SootDumpling::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -47328,37 +47328,37 @@ _vt.15BakedYammonster::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -47782,37 +47782,37 @@ _vt.10MechaDrago::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -48239,37 +48239,37 @@ _vt.20ReconstructedCaribou::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -48693,37 +48693,37 @@ _vt.14DefaultMonster::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -70225,13 +70225,13 @@ _vt.19DefaultMonsterSkill::
 	.2byte 0
 	.4byte recolorValue__C12MonsterSkill
 
-vt_09F723D0::
+_vt.11StatusNoExp::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B6CC4
+	.4byte dt__11StatusNoExp
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -70267,96 +70267,96 @@ vt_09F723D0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828DC
+	.4byte fmtStatusMsg__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082664
+	.4byte status_98__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082668
+	.4byte status_a0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B6C60
+	.4byte disableAllStatuses__11StatusNoExp
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082670
+	.4byte status_b0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_39
+	.4byte cleanup__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 
-vt_09F72518::
+_vt.12StatusSmelly::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B6D3C
+	.4byte dt__12StatusSmelly
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -70392,96 +70392,96 @@ vt_09F72518::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828DC
+	.4byte fmtStatusMsg__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082664
+	.4byte status_98__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082668
+	.4byte status_a0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B6CD8
+	.4byte disableAllStatuses__12StatusSmelly
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082670
+	.4byte status_b0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_39
+	.4byte cleanup__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 
-vt_09F72660::
+_vt.13StatusStrange::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B6DB0
+	.4byte dt__13StatusStrange
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -70517,96 +70517,96 @@ vt_09F72660::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828DC
+	.4byte fmtStatusMsg__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082664
+	.4byte status_98__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082668
+	.4byte status_a0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B6D50
+	.4byte disableAllStatuses__13StatusStrange
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082670
+	.4byte status_b0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_39
+	.4byte cleanup__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 
-vt_09F727A8::
+_vt.20StatusMonkeyDanceIQ2::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B6EF4
+	.4byte dt__20StatusMonkeyDanceIQ2
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -70642,147 +70642,147 @@ vt_09F727A8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B6DC4
+	.4byte fmtStatusMsg__20StatusMonkeyDanceIQ2Us
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082664
+	.4byte status_98__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082668
+	.4byte status_a0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B6E90
+	.4byte disableAllStatuses__20StatusMonkeyDanceIQ2
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAEE0
+	.4byte status_b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA4
+	.4byte cleanup__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAEDC
+	.4byte _148__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED8
+	.4byte _150__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B6E54
+	.4byte _158__20StatusMonkeyDanceIQ2
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED0
+	.4byte _160__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAECC
+	.4byte _168__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA0
+	.4byte _170__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD9C
+	.4byte _178__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD98
+	.4byte _180__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD94
+	.4byte _188__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD90
+	.4byte _190__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD5C
+	.4byte _198__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD28
+	.4byte _1a0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACF4
+	.4byte _1a8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACC0
+	.4byte _1b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAC8C
+	.4byte _1b8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BABD0
+	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAB44
+	.4byte _1c8__14StatusParamMod
 
-vt_09F72978::
+_vt.20StatusMonkeyDanceSP2::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B7038
+	.4byte dt__20StatusMonkeyDanceSP2
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -70818,147 +70818,147 @@ vt_09F72978::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B6F08
+	.4byte fmtStatusMsg__20StatusMonkeyDanceSP2Us
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082664
+	.4byte status_98__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082668
+	.4byte status_a0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B6FD4
+	.4byte disableAllStatuses__20StatusMonkeyDanceSP2
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAEE0
+	.4byte status_b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA4
+	.4byte cleanup__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAEDC
+	.4byte _148__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED8
+	.4byte _150__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED4
+	.4byte _158__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B6F98
+	.4byte _160__20StatusMonkeyDanceSP2
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAECC
+	.4byte _168__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA0
+	.4byte _170__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD9C
+	.4byte _178__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD98
+	.4byte _180__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD94
+	.4byte _188__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD90
+	.4byte _190__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD5C
+	.4byte _198__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD28
+	.4byte _1a0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACF4
+	.4byte _1a8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACC0
+	.4byte _1b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAC8C
+	.4byte _1b8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BABD0
+	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAB44
+	.4byte _1c8__14StatusParamMod
 
-vt_09F72B48::
+_vt.21StatusMonkeyDanceDef2::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B7428
+	.4byte dt__21StatusMonkeyDanceDef2
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -70994,147 +70994,147 @@ vt_09F72B48::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B704C
+	.4byte fmtStatusMsg__21StatusMonkeyDanceDef2Us
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B7304
+	.4byte status_98__21StatusMonkeyDanceDef2
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B7248
+	.4byte status_a0__21StatusMonkeyDanceDef2
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B7118
+	.4byte disableAllStatuses__21StatusMonkeyDanceDef2
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAEE0
+	.4byte status_b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA4
+	.4byte cleanup__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAEDC
+	.4byte _148__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B70DC
+	.4byte _150__21StatusMonkeyDanceDef2
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED4
+	.4byte _158__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED0
+	.4byte _160__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAECC
+	.4byte _168__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA0
+	.4byte _170__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD9C
+	.4byte _178__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD98
+	.4byte _180__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD94
+	.4byte _188__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD90
+	.4byte _190__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD5C
+	.4byte _198__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD28
+	.4byte _1a0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACF4
+	.4byte _1a8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACC0
+	.4byte _1b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAC8C
+	.4byte _1b8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BABD0
+	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAB44
+	.4byte _1c8__14StatusParamMod
 
-vt_09F72D18::
+_vt.21StatusMonkeyDanceOff2::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B76D0
+	.4byte dt__21StatusMonkeyDanceOff2
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -71170,147 +71170,147 @@ vt_09F72D18::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B743C
+	.4byte fmtStatusMsg__21StatusMonkeyDanceOff2Us
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B7664
+	.4byte status_98__21StatusMonkeyDanceOff2
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B75FC
+	.4byte status_a0__21StatusMonkeyDanceOff2
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B7508
+	.4byte disableAllStatuses__21StatusMonkeyDanceOff2
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAEE0
+	.4byte status_b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA4
+	.4byte cleanup__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B74CC
+	.4byte _148__21StatusMonkeyDanceOff2
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED8
+	.4byte _150__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED4
+	.4byte _158__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED0
+	.4byte _160__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAECC
+	.4byte _168__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA0
+	.4byte _170__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD9C
+	.4byte _178__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD98
+	.4byte _180__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD94
+	.4byte _188__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD90
+	.4byte _190__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD5C
+	.4byte _198__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD28
+	.4byte _1a0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACF4
+	.4byte _1a8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACC0
+	.4byte _1b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAC8C
+	.4byte _1b8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BABD0
+	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAB44
+	.4byte _1c8__14StatusParamMod
 
-vt_09F72EE8::
+_vt.19StatusMonkeyDanceIQ::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B780C
+	.4byte dt__19StatusMonkeyDanceIQ
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -71346,147 +71346,147 @@ vt_09F72EE8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B76E4
+	.4byte fmtStatusMsg__19StatusMonkeyDanceIQUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082664
+	.4byte status_98__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082668
+	.4byte status_a0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B77A8
+	.4byte disableAllStatuses__19StatusMonkeyDanceIQ
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAEE0
+	.4byte status_b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA4
+	.4byte cleanup__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAEDC
+	.4byte _148__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED8
+	.4byte _150__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B7774
+	.4byte _158__19StatusMonkeyDanceIQ
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED0
+	.4byte _160__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAECC
+	.4byte _168__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA0
+	.4byte _170__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD9C
+	.4byte _178__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD98
+	.4byte _180__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD94
+	.4byte _188__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD90
+	.4byte _190__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD5C
+	.4byte _198__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD28
+	.4byte _1a0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACF4
+	.4byte _1a8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACC0
+	.4byte _1b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAC8C
+	.4byte _1b8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BABD0
+	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAB44
+	.4byte _1c8__14StatusParamMod
 
-vt_09F730B8::
+_vt.19StatusMonkeyDanceSP::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B7948
+	.4byte dt__19StatusMonkeyDanceSP
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -71522,147 +71522,147 @@ vt_09F730B8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B7820
+	.4byte fmtStatusMsg__19StatusMonkeyDanceSPUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082664
+	.4byte status_98__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082668
+	.4byte status_a0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B78E4
+	.4byte disableAllStatuses__19StatusMonkeyDanceSP
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAEE0
+	.4byte status_b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA4
+	.4byte cleanup__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAEDC
+	.4byte _148__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED8
+	.4byte _150__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED4
+	.4byte _158__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B78B0
+	.4byte _160__19StatusMonkeyDanceSP
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAECC
+	.4byte _168__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA0
+	.4byte _170__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD9C
+	.4byte _178__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD98
+	.4byte _180__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD94
+	.4byte _188__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD90
+	.4byte _190__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD5C
+	.4byte _198__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD28
+	.4byte _1a0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACF4
+	.4byte _1a8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACC0
+	.4byte _1b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAC8C
+	.4byte _1b8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BABD0
+	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAB44
+	.4byte _1c8__14StatusParamMod
 
-vt_09F73288::
+_vt.20StatusMonkeyDanceDef::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B7D30
+	.4byte dt__20StatusMonkeyDanceDef
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -71698,147 +71698,147 @@ vt_09F73288::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B795C
+	.4byte fmtStatusMsg__20StatusMonkeyDanceDefUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B7C0C
+	.4byte status_98__20StatusMonkeyDanceDef
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B7B54
+	.4byte status_a0__20StatusMonkeyDanceDef
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B7A24
+	.4byte disableAllStatuses__20StatusMonkeyDanceDef
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAEE0
+	.4byte status_b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA4
+	.4byte cleanup__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAEDC
+	.4byte _148__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B79EC
+	.4byte _150__20StatusMonkeyDanceDef
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED4
+	.4byte _158__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED0
+	.4byte _160__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAECC
+	.4byte _168__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA0
+	.4byte _170__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD9C
+	.4byte _178__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD98
+	.4byte _180__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD94
+	.4byte _188__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD90
+	.4byte _190__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD5C
+	.4byte _198__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD28
+	.4byte _1a0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACF4
+	.4byte _1a8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACC0
+	.4byte _1b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAC8C
+	.4byte _1b8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BABD0
+	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAB44
+	.4byte _1c8__14StatusParamMod
 
-vt_09F73458::
+_vt.20StatusMonkeyDanceOff::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B7FD4
+	.4byte dt__20StatusMonkeyDanceOff
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -71874,147 +71874,147 @@ vt_09F73458::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B7D44
+	.4byte fmtStatusMsg__20StatusMonkeyDanceOffUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B7F68
+	.4byte status_98__20StatusMonkeyDanceOff
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B7F00
+	.4byte status_a0__20StatusMonkeyDanceOff
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B7E0C
+	.4byte disableAllStatus__20StatusMonkeyDanceOff
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAEE0
+	.4byte status_b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA4
+	.4byte cleanup__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B7DD4
+	.4byte _148__20StatusMonkeyDanceOff
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED8
+	.4byte _150__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED4
+	.4byte _158__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED0
+	.4byte _160__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAECC
+	.4byte _168__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA0
+	.4byte _170__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD9C
+	.4byte _178__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD98
+	.4byte _180__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD94
+	.4byte _188__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD90
+	.4byte _190__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD5C
+	.4byte _198__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD28
+	.4byte _1a0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACF4
+	.4byte _1a8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACC0
+	.4byte _1b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAC8C
+	.4byte _1b8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BABD0
+	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAB44
+	.4byte _1c8__14StatusParamMod
 
-vt_09F73628::
+_vt.16StatusParamsDown::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B8484
+	.4byte dt__16StatusParamsDown
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -72050,147 +72050,147 @@ vt_09F73628::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828DC
+	.4byte fmtStatusMsg__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B8168
+	.4byte status_90__16StatusParamsDown
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082664
+	.4byte status_98__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082668
+	.4byte status_a0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B80D8
+	.4byte disableAllStatuses__16StatusParamsDown
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAEE0
+	.4byte status_b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA4
+	.4byte cleanup__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B809C
+	.4byte _148__16StatusParamsDown
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B8060
+	.4byte _150__16StatusParamsDown
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B8024
+	.4byte _158__16StatusParamsDown
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B7FE8
+	.4byte _160__16StatusParamsDown
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAECC
+	.4byte _168__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA0
+	.4byte _170__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD9C
+	.4byte _178__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD98
+	.4byte _180__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD94
+	.4byte _188__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD90
+	.4byte _190__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD5C
+	.4byte _198__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD28
+	.4byte _1a0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACF4
+	.4byte _1a8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACC0
+	.4byte _1b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAC8C
+	.4byte _1b8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BABD0
+	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAB44
+	.4byte _1c8__14StatusParamMod
 
-vt_09F737F8::
+_vt.14StatusParamsUp::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B891C
+	.4byte dt__14StatusParamsUp
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -72226,147 +72226,147 @@ vt_09F737F8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828DC
+	.4byte fmtStatusMsg__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B8600
+	.4byte status_90__14StatusParamsUp
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082664
+	.4byte status_98__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082668
+	.4byte status_a0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B8570
+	.4byte disableAllStatuses__14StatusParamsUp
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAEE0
+	.4byte status_b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA4
+	.4byte cleanup__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B853C
+	.4byte _148__14StatusParamsUp
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B8508
+	.4byte _150__14StatusParamsUp
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B84D0
+	.4byte _158__14StatusParamsUp
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B8498
+	.4byte _160__14StatusParamsUp
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAECC
+	.4byte _168__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA0
+	.4byte _170__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD9C
+	.4byte _178__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD98
+	.4byte _180__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD94
+	.4byte _188__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD90
+	.4byte _190__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD5C
+	.4byte _198__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD28
+	.4byte _1a0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACF4
+	.4byte _1a8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACC0
+	.4byte _1b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAC8C
+	.4byte _1b8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BABD0
+	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAB44
+	.4byte _1c8__14StatusParamMod
 
-vt_09F739C8::
+_vt.17StatusDefUpStrong::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B8BC4
+	.4byte dt__17StatusDefUpStrong
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -72402,147 +72402,147 @@ vt_09F739C8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B8930
+	.4byte fmtStatusMsg__17StatusDefUpStrongUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B8B60
+	.4byte status_90__17StatusDefUpStrong
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B8AD8
+	.4byte status_98__17StatusDefUpStrong
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B8A9C
+	.4byte status_a0__17StatusDefUpStrong
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B89F8
+	.4byte disableAllStatuses__17StatusDefUpStrong
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAEE0
+	.4byte status_b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA4
+	.4byte cleanup__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAEDC
+	.4byte _148__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B89C0
+	.4byte _150__17StatusDefUpStrong
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED4
+	.4byte _158__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED0
+	.4byte _160__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAECC
+	.4byte _168__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA0
+	.4byte _170__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD9C
+	.4byte _178__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD98
+	.4byte _180__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD94
+	.4byte _188__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD90
+	.4byte _190__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD5C
+	.4byte _198__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD28
+	.4byte _1a0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACF4
+	.4byte _1a8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACC0
+	.4byte _1b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAC8C
+	.4byte _1b8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BABD0
+	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAB44
+	.4byte _1c8__14StatusParamMod
 
-vt_09F73B98::
+_vt.14StatusDefUpMid::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B8E5C
+	.4byte dt__14StatusDefUpMid
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -72578,147 +72578,147 @@ vt_09F73B98::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B8BD8
+	.4byte fmtStatusMsg__14StatusDefUpMidUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B8D80
+	.4byte status_98__14StatusDefUpMid
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B8D44
+	.4byte status_a0__14StatusDefUpMid
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B8CA0
+	.4byte disableAllStatuses__14StatusDefUpMid
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAEE0
+	.4byte status_b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA4
+	.4byte cleanup__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAEDC
+	.4byte _148__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B8C68
+	.4byte _150__14StatusDefUpMid
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED4
+	.4byte _158__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED0
+	.4byte _160__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAECC
+	.4byte _168__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA0
+	.4byte _170__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD9C
+	.4byte _178__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD98
+	.4byte _180__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD94
+	.4byte _188__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD90
+	.4byte _190__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD5C
+	.4byte _198__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD28
+	.4byte _1a0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACF4
+	.4byte _1a8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACC0
+	.4byte _1b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAC8C
+	.4byte _1b8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BABD0
+	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAB44
+	.4byte _1c8__14StatusParamMod
 
-vt_09F73D68::
+_vt.15StatusDefUpWeak::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B9104
+	.4byte dt__15StatusDefUpWeak
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -72754,147 +72754,147 @@ vt_09F73D68::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B8E70
+	.4byte fmtStatusMsg__15StatusDefUpWeakUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B9044
+	.4byte status_98__15StatusDefUpWeak
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B8FDC
+	.4byte status_a0__15StatusDefUpWeak
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B8F38
+	.4byte disableAllStatuses__15StatusDefUpWeak
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAEE0
+	.4byte status_b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA4
+	.4byte cleanup__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAEDC
+	.4byte _148__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B8F00
+	.4byte _150__15StatusDefUpWeak
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED4
+	.4byte _158__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED0
+	.4byte _160__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAECC
+	.4byte _168__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA0
+	.4byte _170__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD9C
+	.4byte _178__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD98
+	.4byte _180__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD94
+	.4byte _188__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD90
+	.4byte _190__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD5C
+	.4byte _198__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD28
+	.4byte _1a0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACF4
+	.4byte _1a8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACC0
+	.4byte _1b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAC8C
+	.4byte _1b8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BABD0
+	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAB44
+	.4byte _1c8__14StatusParamMod
 
-vt_09F73F38::
+_vt.17StatusOffUpStrong::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B93AC
+	.4byte dt__17StatusOffUpStrong
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -72930,147 +72930,147 @@ vt_09F73F38::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B9118
+	.4byte fmtStatusMsg__17StatusOffUpStrongUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B9348
+	.4byte status_90__17StatusOffUpStrong
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B92C0
+	.4byte status_98__17StatusOffUpStrong
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B9284
+	.4byte status_a0__17StatusOffUpStrong
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B91E0
+	.4byte disableAllStatuses__17StatusOffUpStrong
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAEE0
+	.4byte status_b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA4
+	.4byte cleanup__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B91A8
+	.4byte _148__17StatusOffUpStrong
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED8
+	.4byte _150__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED4
+	.4byte _158__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED0
+	.4byte _160__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAECC
+	.4byte _168__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA0
+	.4byte _170__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD9C
+	.4byte _178__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD98
+	.4byte _180__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD94
+	.4byte _188__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD90
+	.4byte _190__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD5C
+	.4byte _198__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD28
+	.4byte _1a0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACF4
+	.4byte _1a8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACC0
+	.4byte _1b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAC8C
+	.4byte _1b8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BABD0
+	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAB44
+	.4byte _1c8__14StatusParamMod
 
-vt_09F74108::
+_vt.14StatusOffUpMid::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B9644
+	.4byte dt__14StatusOffUpMid
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -73106,147 +73106,147 @@ vt_09F74108::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B93C0
+	.4byte fmtStatusMsg__14StatusOffUpMidUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B9568
+	.4byte status_98__14StatusOffUpMid
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B952C
+	.4byte status_a0__14StatusOffUpMid
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B9488
+	.4byte disableAllStatuses__14StatusOffUpMid
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAEE0
+	.4byte status_b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA4
+	.4byte cleanup__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B9450
+	.4byte _148__14StatusOffUpMid
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED8
+	.4byte _150__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED4
+	.4byte _158__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED0
+	.4byte _160__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAECC
+	.4byte _168__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA0
+	.4byte _170__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD9C
+	.4byte _178__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD98
+	.4byte _180__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD94
+	.4byte _188__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD90
+	.4byte _190__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD5C
+	.4byte _198__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD28
+	.4byte _1a0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACF4
+	.4byte _1a8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACC0
+	.4byte _1b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAC8C
+	.4byte _1b8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BABD0
+	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAB44
+	.4byte _1c8__14StatusParamMod
 
-vt_09F742D8::
+_vt.15StatusOffUpWeak::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B98EC
+	.4byte dt__15StatusOffUpWeak
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -73282,147 +73282,147 @@ vt_09F742D8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B9658
+	.4byte fmtStatusMsg__15StatusOffUpWeakUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B982C
+	.4byte status_98__15StatusOffUpWeak
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B97C4
+	.4byte status_a0__15StatusOffUpWeak
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B9720
+	.4byte disableAllStatuses__15StatusOffUpWeak
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAEE0
+	.4byte status_b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA4
+	.4byte cleanup__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B96E8
+	.4byte _148__15StatusOffUpWeak
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED8
+	.4byte _150__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED4
+	.4byte _158__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED0
+	.4byte _160__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAECC
+	.4byte _168__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA0
+	.4byte _170__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD9C
+	.4byte _178__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD98
+	.4byte _180__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD94
+	.4byte _188__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD90
+	.4byte _190__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD5C
+	.4byte _198__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD28
+	.4byte _1a0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACF4
+	.4byte _1a8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACC0
+	.4byte _1b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAC8C
+	.4byte _1b8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BABD0
+	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAB44
+	.4byte _1c8__14StatusParamMod
 
-vt_09F744A8::
+_vt.19StatusDefDownStrong::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B9B98
+	.4byte dt__19StatusDefDownStrong
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -73458,147 +73458,147 @@ vt_09F744A8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B9900
+	.4byte fmtStatusMsg__19StatusDefDownStrongUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B9B34
+	.4byte status_90__19StatusDefDownStrong
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B9AAC
+	.4byte status_98__19StatusDefDownStrong
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B9A70
+	.4byte status_a0__19StatusDefDownStrong
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B99CC
+	.4byte disableAllStatuses__19StatusDefDownStrong
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAEE0
+	.4byte status_b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA4
+	.4byte cleanup__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAEDC
+	.4byte _148__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B9990
+	.4byte _150__19StatusDefDownStrong
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED4
+	.4byte _158__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED0
+	.4byte _160__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAECC
+	.4byte _168__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA0
+	.4byte _170__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD9C
+	.4byte _178__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD98
+	.4byte _180__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD94
+	.4byte _188__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD90
+	.4byte _190__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD5C
+	.4byte _198__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD28
+	.4byte _1a0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACF4
+	.4byte _1a8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACC0
+	.4byte _1b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAC8C
+	.4byte _1b8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BABD0
+	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAB44
+	.4byte _1c8__14StatusParamMod
 
-vt_09F74678::
+_vt.16StatusDefDownMid::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B9E34
+	.4byte dt__16StatusDefDownMid
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -73634,147 +73634,147 @@ vt_09F74678::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B9BAC
+	.4byte fmtStatusMsg__16StatusDefDownMidUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B9D58
+	.4byte status_90__16StatusDefDownMid
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B9D1C
+	.4byte status_98__16StatusDefDownMid
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B9C78
+	.4byte status_a0__16StatusDefDownMid
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAEE0
+	.4byte status_b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA4
+	.4byte cleanup__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAEDC
+	.4byte _148__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B9C3C
+	.4byte _150__16StatusDefDownMid
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED4
+	.4byte _158__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED0
+	.4byte _160__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAECC
+	.4byte _168__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA0
+	.4byte _170__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD9C
+	.4byte _178__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD98
+	.4byte _180__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD94
+	.4byte _188__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD90
+	.4byte _190__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD5C
+	.4byte _198__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD28
+	.4byte _1a0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACF4
+	.4byte _1a8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACC0
+	.4byte _1b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAC8C
+	.4byte _1b8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BABD0
+	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAB44
+	.4byte _1c8__14StatusParamMod
 
-vt_09F74848::
+_vt.17StatusDefDownWeak::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BA0E0
+	.4byte dt__17StatusDefDownWeak
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -73810,147 +73810,147 @@ vt_09F74848::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B9E48
+	.4byte fmtStatusMsg__17StatusDefDownWeakUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BA020
+	.4byte status_98__17StatusDefDownWeak
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B9FB8
+	.4byte status_a0__17StatusDefDownWeak
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B9F14
+	.4byte disableAllStatuses__17StatusDefDownWeak
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAEE0
+	.4byte status_b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA4
+	.4byte cleanup__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAEDC
+	.4byte _148__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080B9ED8
+	.4byte _150__17StatusDefDownWeak
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED4
+	.4byte _158__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED0
+	.4byte _160__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAECC
+	.4byte _168__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA0
+	.4byte _170__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD9C
+	.4byte _178__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD98
+	.4byte _180__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD94
+	.4byte _188__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD90
+	.4byte _190__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD5C
+	.4byte _198__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD28
+	.4byte _1a0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACF4
+	.4byte _1a8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACC0
+	.4byte _1b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAC8C
+	.4byte _1b8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BABD0
+	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAB44
+	.4byte _1c8__14StatusParamMod
 
-vt_09F74A18::
+_vt.19StatusOffDownStrong::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BA38C
+	.4byte dt__19StatusOffDownStrong
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -73986,147 +73986,147 @@ vt_09F74A18::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BA0F4
+	.4byte fmtStatusMsg__19StatusOffDownStrongUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BA328
+	.4byte status_90__19StatusOffDownStrong
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BA2A0
+	.4byte status_98__19StatusOffDownStrong
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BA264
+	.4byte status_a0__19StatusOffDownStrong
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BA1C0
+	.4byte disableAllStatuses__19StatusOffDownStrong
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAEE0
+	.4byte status_b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA4
+	.4byte cleanup__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BA184
+	.4byte _148__19StatusOffDownStrong
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED8
+	.4byte _150__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED4
+	.4byte _158__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED0
+	.4byte _160__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAECC
+	.4byte _168__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA0
+	.4byte _170__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD9C
+	.4byte _178__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD98
+	.4byte _180__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD94
+	.4byte _188__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD90
+	.4byte _190__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD5C
+	.4byte _198__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD28
+	.4byte _1a0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACF4
+	.4byte _1a8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACC0
+	.4byte _1b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAC8C
+	.4byte _1b8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BABD0
+	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAB44
+	.4byte _1c8__14StatusParamMod
 
-vt_09F74BE8::
+_vt.16StatusOffDownMid::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BA638
+	.4byte dt__16StatusOffDownMid
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -74162,147 +74162,147 @@ vt_09F74BE8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BA3A0
+	.4byte fmtStatusMsg__16StatusOffDownMidUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BA55C
+	.4byte status_98__16StatusOffDownMid
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BA510
+	.4byte disableAllStatuses__16StatusOffDownMid
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BA46C
+	.4byte status_b0__16StatusOffDownMid
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAEE0
+	.4byte status_b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA4
+	.4byte cleanup__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BA430
+	.4byte _148__16StatusOffDownMid
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED8
+	.4byte _150__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED4
+	.4byte _158__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED0
+	.4byte _160__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAECC
+	.4byte _168__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA0
+	.4byte _170__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD9C
+	.4byte _178__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD98
+	.4byte _180__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD94
+	.4byte _188__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD90
+	.4byte _190__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD5C
+	.4byte _198__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD28
+	.4byte _1a0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACF4
+	.4byte _1a8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACC0
+	.4byte _1b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAC8C
+	.4byte _1b8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BABD0
+	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAB44
+	.4byte _1c8__14StatusParamMod
 
-vt_09F74DB8::
+_vt.17StatusOffDownWeak::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BA8F4
+	.4byte dt__17StatusOffDownWeak
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -74338,147 +74338,147 @@ vt_09F74DB8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BA64C
+	.4byte fmtStatusMsg__17StatusOffDownWeakUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BA834
+	.4byte status_98__17StatusOffDownWeak
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BA7CC
+	.4byte status_a0__17StatusOffDownWeak
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BA718
+	.4byte disableAllStatuses__17StatusOffDownWeak
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAEE0
+	.4byte status_b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA4
+	.4byte cleanup__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BA6DC
+	.4byte _148__17StatusOffDownWeak
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED8
+	.4byte _150__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED4
+	.4byte _158__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED0
+	.4byte _160__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAECC
+	.4byte _168__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA0
+	.4byte _170__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD9C
+	.4byte _178__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD98
+	.4byte _180__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD94
+	.4byte _188__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD90
+	.4byte _190__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD5C
+	.4byte _198__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD28
+	.4byte _1a0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACF4
+	.4byte _1a8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACC0
+	.4byte _1b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAC8C
+	.4byte _1b8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BABD0
+	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAB44
+	.4byte _1c8__14StatusParamMod
 
-vt_09F74F88::
+_vt.12StatusDefend::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAA40
+	.4byte dt__12StatusDefend
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -74514,147 +74514,147 @@ vt_09F74F88::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828DC
+	.4byte fmtStatusMsg__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082664
+	.4byte status_98__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082668
+	.4byte status_a0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BA9DC
+	.4byte disableAllStatuses__12StatusDefend
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BA960
+	.4byte status_b0__12StatusDefend
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BA908
+	.4byte cleanup__12StatusDefend
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAEDC
+	.4byte _148__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED8
+	.4byte _150__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED4
+	.4byte _158__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED0
+	.4byte _160__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAECC
+	.4byte _168__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA0
+	.4byte _170__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD9C
+	.4byte _178__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD98
+	.4byte _180__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD94
+	.4byte _188__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD90
+	.4byte _190__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD5C
+	.4byte _198__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD28
+	.4byte _1a0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACF4
+	.4byte _1a8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACC0
+	.4byte _1b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAC8C
+	.4byte _1b8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BABD0
+	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAB44
+	.4byte _1c8__14StatusParamMod
 
-vt_09F75158::
+_vt.11StatusFleas::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAAB8
+	.4byte dt__11StatusFleas
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -74690,147 +74690,147 @@ vt_09F75158::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828DC
+	.4byte fmtStatusMsg__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082664
+	.4byte status_98__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082668
+	.4byte status_a0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAA54
+	.4byte disableAllStatuses__11StatusFleas
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAEE0
+	.4byte status_b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA4
+	.4byte cleanup__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAEDC
+	.4byte _148__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED8
+	.4byte _150__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED4
+	.4byte _158__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED0
+	.4byte _160__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAECC
+	.4byte _168__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA0
+	.4byte _170__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD9C
+	.4byte _178__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD98
+	.4byte _180__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD94
+	.4byte _188__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD90
+	.4byte _190__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD5C
+	.4byte _198__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD28
+	.4byte _1a0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACF4
+	.4byte _1a8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACC0
+	.4byte _1b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAC8C
+	.4byte _1b8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BABD0
+	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAB44
+	.4byte _1c8__14StatusParamMod
 
-vt_09F75328::
+_vt.12StatusCrying::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAB30
+	.4byte dt__12StatusCrying
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -74866,147 +74866,147 @@ vt_09F75328::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828DC
+	.4byte fmtStatusMsg__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082664
+	.4byte status_98__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082668
+	.4byte status_a0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAACC
+	.4byte disableAllStatuses__12StatusCrying
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAEE0
+	.4byte status_b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA4
+	.4byte cleanup__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAEDC
+	.4byte _148__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED8
+	.4byte _150__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED4
+	.4byte _158__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED0
+	.4byte _160__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAECC
+	.4byte _168__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA0
+	.4byte _170__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD9C
+	.4byte _178__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD98
+	.4byte _180__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD94
+	.4byte _188__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD90
+	.4byte _190__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD5C
+	.4byte _198__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD28
+	.4byte _1a0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACF4
+	.4byte _1a8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACC0
+	.4byte _1b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAC8C
+	.4byte _1b8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BABD0
+	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAB44
+	.4byte _1c8__14StatusParamMod
 
-vt_09F754F8::
+_vt.14StatusParamMod::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BB100
+	.4byte dt__14StatusParamMod
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -75042,147 +75042,147 @@ vt_09F754F8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828DC
+	.4byte fmtStatusMsg__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082664
+	.4byte status_98__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082668
+	.4byte status_a0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte disableAllStatuses
+	.4byte disableAllStatuses__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAEE0
+	.4byte status_b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA4
+	.4byte cleanup__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAEDC
+	.4byte _148__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED8
+	.4byte _150__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED4
+	.4byte _158__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAED0
+	.4byte _160__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAECC
+	.4byte _168__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BADA0
+	.4byte _170__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD9C
+	.4byte _178__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD98
+	.4byte _180__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD94
+	.4byte _188__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD90
+	.4byte _190__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD5C
+	.4byte _198__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAD28
+	.4byte _1a0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACF4
+	.4byte _1a8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BACC0
+	.4byte _1b0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAC8C
+	.4byte _1b8__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BABD0
+	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BAB44
+	.4byte _1c8__14StatusParamMod
 
-vt_09F756C8::
+_vt.18StatusNoBackSprite::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BB178
+	.4byte dt__18StatusNoBackSprite
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -75218,96 +75218,96 @@ vt_09F756C8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828DC
+	.4byte fmtStatusMsg__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082664
+	.4byte status_98__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082668
+	.4byte status_a0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BB114
+	.4byte disableAllStatuses__18StatusNoBackSprite
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082670
+	.4byte status_b0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_39
+	.4byte cleanup__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 
-vt_09F75810::
+_vt.13StatusStapled::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BB1F0
+	.4byte dt__13StatusStapled
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -75343,96 +75343,96 @@ vt_09F75810::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828DC
+	.4byte fmtStatusMsg__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082664
+	.4byte status_98__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082668
+	.4byte status_a0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BB18C
+	.4byte disableAllStatuses__13StatusStapled
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082670
+	.4byte status_b0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_39
+	.4byte cleanup__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 
-vt_09F75958::
+_vt.10StatusFell::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BB268
+	.4byte dt__10StatusFell
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -75468,96 +75468,96 @@ vt_09F75958::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828DC
+	.4byte fmtStatusMsg__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082664
+	.4byte status_98__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082668
+	.4byte status_a0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BB204
+	.4byte disableAllStatuses__10StatusFell
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082670
+	.4byte status_b0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_39
+	.4byte cleanup__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 
-vt_09F75AA0::
+_vt.10StatusDCMC::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BB2E0
+	.4byte dt__10StatusDCMC
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -75593,96 +75593,96 @@ vt_09F75AA0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828DC
+	.4byte fmtStatusMsg__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082664
+	.4byte status_98__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082668
+	.4byte status_a0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BB27C
+	.4byte disableAllStatuses__10StatusDCMC
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082670
+	.4byte status_b0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_39
+	.4byte cleanup__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 
-vt_09F75BE8::
+_vt.11StatusDance::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BB358
+	.4byte dt__11StatusDance
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -75718,96 +75718,96 @@ vt_09F75BE8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828DC
+	.4byte fmtStatusMsg__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082664
+	.4byte status_98__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082668
+	.4byte status_a0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BB2F4
+	.4byte disableAllStatuses__11StatusDance
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082670
+	.4byte status_b0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_39
+	.4byte cleanup__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 
-vt_09F75D30::
+_vt.14StatusLaughing::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BB3D0
+	.4byte dt__14StatusLaughing
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -75843,96 +75843,96 @@ vt_09F75D30::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828DC
+	.4byte fmtStatusMsg__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082664
+	.4byte status_98__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082668
+	.4byte status_a0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BB36C
+	.4byte disableAllStatuses__14StatusLaughing
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082670
+	.4byte status_b0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_39
+	.4byte cleanup__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 
-vt_09F75E78::
+_vt.16StatusApologetic::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BB448
+	.4byte dt__16StatusApologetic
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -75968,96 +75968,96 @@ vt_09F75E78::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828DC
+	.4byte fmtStatusMsg__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082664
+	.4byte status_98__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082668
+	.4byte status_a0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BB3E4
+	.4byte disableAllStatuses__16StatusApologetic
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082670
+	.4byte status_b0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_39
+	.4byte cleanup__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 
-vt_09F75FC0::
+_vt.12StatusFrozen::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BB4C0
+	.4byte dt__12StatusFrozen
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -76093,96 +76093,96 @@ vt_09F75FC0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828DC
+	.4byte fmtStatusMsg__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082664
+	.4byte status_98__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082668
+	.4byte status_a0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BB45C
+	.4byte disableAllStatuses__12StatusFrozen
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082670
+	.4byte status_b0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_39
+	.4byte cleanup__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 
-vt_09F76108::
+_vt.14StatusNauseous::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BB538
+	.4byte dt__14StatusNauseous
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -76218,96 +76218,96 @@ vt_09F76108::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828DC
+	.4byte fmtStatusMsg__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082664
+	.4byte status_98__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082668
+	.4byte status_a0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BB4D4
+	.4byte disableAllStatuses__14StatusNauseous
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082670
+	.4byte status_b0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_39
+	.4byte cleanup__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 
-vt_09F76250::
+_vt.15StatusForgetful::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BB5B0
+	.4byte dt__15StatusForgetful
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -76343,96 +76343,96 @@ vt_09F76250::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828DC
+	.4byte fmtStatusMsg__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082664
+	.4byte status_98__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082668
+	.4byte status_a0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BB54C
+	.4byte disableAllStatuses__15StatusForgetful
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082670
+	.4byte status_b0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_39
+	.4byte cleanup__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 
-vt_09F76398::
+_vt.11StatusSleep::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BB6C4
+	.4byte dt__11StatusSleep
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -76468,96 +76468,96 @@ vt_09F76398::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828DC
+	.4byte fmtStatusMsg__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082664
+	.4byte status_98__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082668
+	.4byte status_a0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BB660
+	.4byte disableAllStatuses__11StatusSleep
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BB60C
+	.4byte status_b0__11StatusSleep
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BB5C4
+	.4byte cleanup__11StatusSleep
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 
-vt_09F764E0::
+_vt.10StatusNumb::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BB73C
+	.4byte dt__10StatusNumb
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -76593,96 +76593,96 @@ vt_09F764E0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828DC
+	.4byte fmtStatusMsg__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082664
+	.4byte status_98__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082668
+	.4byte status_a0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BB6D8
+	.4byte disableAllStatuses__10StatusNumb
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082670
+	.4byte status_b0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_39
+	.4byte cleanup__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 
-vt_09F76628::
+_vt.13StatusRefresh::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BB850
+	.4byte dt__13StatusRefresh
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -76718,96 +76718,96 @@ vt_09F76628::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BB750
+	.4byte onUnitTurnBegin__13StatusRefreshP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828DC
+	.4byte fmtStatusMsg__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082664
+	.4byte status_98__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082668
+	.4byte status_a0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BB7EC
+	.4byte disableAllStatuses__13StatusRefresh
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082670
+	.4byte status_b0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_39
+	.4byte cleanup__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 
-vt_09F76770::
+_vt.12StatusEndure::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BB8C8
+	.4byte dt__12StatusEndure
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -76843,96 +76843,96 @@ vt_09F76770::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828DC
+	.4byte fmtStatusMsg__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082664
+	.4byte status_98__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082668
+	.4byte status_a0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BB864
+	.4byte disableAllStatuses__12StatusEndure
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082670
+	.4byte status_b0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_39
+	.4byte cleanup__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 
-vt_09F768B8::
+_vt.14StatusTimeBomb::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BB9EC
+	.4byte dt__14StatusTimeBomb
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -76968,96 +76968,96 @@ vt_09F768B8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BB8DC
+	.4byte onUnitTurnEnd__14StatusTimeBombP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828DC
+	.4byte fmtStatusMsg__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082664
+	.4byte status_98__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082668
+	.4byte status_a0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BB988
+	.4byte disableAllStatuses__14StatusTimeBomb
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082670
+	.4byte status_b0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_39
+	.4byte cleanup__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 
-vt_09F76A00::
+_vt.16StatusPsiCounter::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BBB24
+	.4byte dt__16StatusPsiCounter
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -77093,96 +77093,96 @@ vt_09F76A00::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828DC
+	.4byte fmtStatusMsg__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BBA60
+	.4byte status_90__16StatusPsiCounter
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082664
+	.4byte status_98__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082668
+	.4byte status_a0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BBA00
+	.4byte disableAllStatuses__16StatusPsiCounter
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082670
+	.4byte status_b0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_39
+	.4byte cleanup__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 
-vt_09F76B48::
+_vt.15StatusPsiShield::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BBC5C
+	.4byte dt__15StatusPsiShield
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -77218,96 +77218,96 @@ vt_09F76B48::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828DC
+	.4byte fmtStatusMsg__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BBB98
+	.4byte status_90__15StatusPsiShield
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082664
+	.4byte status_98__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082668
+	.4byte status_a0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BBB38
+	.4byte disableAllStatuses__15StatusPsiShield
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082670
+	.4byte status_b0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_39
+	.4byte cleanup__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 
-vt_09F76C90::
+_vt.18StatusElectrocuted::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BBCD4
+	.4byte dt__18StatusElectrocuted
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -77343,96 +77343,96 @@ vt_09F76C90::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828DC
+	.4byte fmtStatusMsg__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082664
+	.4byte status_98__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082668
+	.4byte status_a0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BBC70
+	.4byte disableAllStatuses__18StatusElectrocuted
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082670
+	.4byte status_b0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_39
+	.4byte cleanup__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 
-vt_09F76DD8::
+_vt.13StatusCounter::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BBE0C
+	.4byte dt__13StatusCounter
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -77468,96 +77468,96 @@ vt_09F76DD8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828DC
+	.4byte fmtStatusMsg__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BBD48
+	.4byte status_90__13StatusCounter
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082664
+	.4byte status_98__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082668
+	.4byte status_a0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BBCE8
+	.4byte disableAllStatuses__13StatusCounter
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082670
+	.4byte status_b0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_39
+	.4byte cleanup__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 
-vt_09F76F20::
+_vt.12StatusShield::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BBF44
+	.4byte dt__12StatusShield
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -77593,96 +77593,96 @@ vt_09F76F20::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828DC
+	.4byte fmtStatusMsg__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BBE80
+	.4byte status_90__12StatusShield
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082664
+	.4byte status_98__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082668
+	.4byte status_a0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BBE20
+	.4byte disableAllStatuses__12StatusShield
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082670
+	.4byte status_b0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_39
+	.4byte cleanup__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 
-vt_09F77068::
+_vt.12StatusOnFire::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BC050
+	.4byte dt__12StatusOnFire
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -77718,96 +77718,96 @@ vt_09F77068::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BBF58
+	.4byte onUnitTurnBegin__12StatusOnFireP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828DC
+	.4byte fmtStatusMsg__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082664
+	.4byte status_98__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082668
+	.4byte status_a0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BBFEC
+	.4byte disableAllStatuses__12StatusOnFire
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082670
+	.4byte status_b0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_39
+	.4byte cleanup__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 
-vt_09F771B0::
+_vt.12StatusPoison::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BC15C
+	.4byte dt__12StatusPoison
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -77843,96 +77843,96 @@ vt_09F771B0::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BC064
+	.4byte onUnitTurnBegin__12StatusPoisonP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828DC
+	.4byte fmtStatusMsg__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082664
+	.4byte status_98__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082668
+	.4byte status_a0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BC0F8
+	.4byte disableAllStatuses__12StatusPoison
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082670
+	.4byte status_b0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_39
+	.4byte cleanup__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 
-vt_09F772F8::
+_vt.13DefaultStatus::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080BC170
+	.4byte dt__13DefaultStatus
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -77968,88 +77968,88 @@ vt_09F772F8::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828DC
+	.4byte fmtStatusMsg__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082664
+	.4byte status_98__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082668
+	.4byte status_a0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte disableAllStatuses
+	.4byte disableAllStatuses__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082670
+	.4byte status_b0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_39
+	.4byte cleanup__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 
 _vt.9HealingGO::
 	.2byte 0
@@ -93984,37 +93984,37 @@ _vt.4Unit::
 	.4byte __pure_virtual
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -95207,37 +95207,37 @@ _vt.6Player::
 	.4byte missSfx__6Player
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -96688,37 +96688,37 @@ _vt.7Monster::
 	.4byte missSfx__7Monster
 	.2byte 0
 	.2byte 0
-	.4byte unit_220__4UnitUi
+	.4byte addCmd__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte unit_228__4UnitUi
+	.4byte removeOneCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_230__4Unit
+	.4byte clearAllCmds__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_238__C4Unit
+	.4byte cmdCount__C4Unit
 	.2byte 0
 	.2byte 0
-	.4byte unit_240__4Uniti
+	.4byte getCmdType__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_248__4Uniti
+	.4byte getCmd__4Uniti
 	.2byte 0
 	.2byte 0
-	.4byte unit_250__4UnitUs
+	.4byte hasCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_258__4UnitUs
+	.4byte getCmdIdx__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_260__4UnitUs
+	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte unit_268__4UnitUi
 	.2byte 0
 	.2byte 0
-	.4byte removeOneStatus__4Uniti
+	.4byte removeOneStatus__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeStatus__4UnitUs
@@ -97259,13 +97259,13 @@ _vt.16MonsterSkillRTTI::
 	.2byte 0
 	.4byte init__16MonsterSkillRTTI
 
-vt_09F83810::
+_vt.6Status::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808264C
+	.4byte _._6Status
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__4Base
@@ -97301,88 +97301,88 @@ vt_09F83810::
 	.4byte clearNullOutgoing__4Base
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082980
+	.4byte onRoundBegin__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082A10
+	.4byte onUnitTurnBegin__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_40
+	.4byte onUnitTurnEnd__6StatusP4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082AD8
+	.4byte onRoundEnd__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828DC
+	.4byte fmtStatusMsg__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082660
+	.4byte status_90__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082664
+	.4byte status_98__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082668
+	.4byte status_a0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte disableAllStatuses
+	.4byte disableAllStatuses__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082670
+	.4byte status_b0__6Status
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_39
+	.4byte cleanup__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082678
+	.4byte setRoundLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_0808267C
+	.4byte setRounds__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082680
+	.4byte setTurnLimit__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082684
+	.4byte setTurns__6StatusUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082688
+	.4byte type__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082690
+	.4byte unit__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_08082694
+	.4byte name__C6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C0
+	.4byte roundLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D0
+	.4byte rounds__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826C8
+	.4byte turnLimit__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826D8
+	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E0
+	.4byte status_data_2__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080826E8
+	.4byte inflictedMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827AC
+	.4byte activeMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080827F4
+	.4byte woreOffMsg__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828B4
+	.4byte removeOnDeath__6Status
 	.2byte 0
 	.2byte 0
-	.4byte sub_080828C8
+	.4byte status_bool_5__6Status
 
 _vt.3Psi::
 	.2byte 0

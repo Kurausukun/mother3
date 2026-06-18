@@ -207,7 +207,7 @@ _0805D9C6:
 	adds r0, r0, r2
 	ldr r1, [r1, #4]
 	bl _call_via_r1
-	bl sub_08064590
+	bl init__13StatusFactory
 	bl init__13PlayerFactory
 	bl init__18PlayerSkillFactory
 	bl init__10PsiFactory

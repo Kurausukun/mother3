@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08064808:
+put__13StatusFactoryUsP4Unit_Pv:
 	lsls r0, r0, #0x10
 	ldr r2, _08064814
 	lsrs r0, r0, #0xe

@@ -31,7 +31,7 @@ _080B3178:
 _080B3196:
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl tellStatusWoreOff
+	bl statusWearOff__FP4UnitUsb
 	movs r0, #1
 	add r8, r0
 _080B31A2:
