@@ -24,7 +24,7 @@ extern "C" Action* create__19MonsterSkillFactoryUsP4Unit(u16 arg0, Unit* user);
 extern "C" Action* create__18PlayerSkillFactoryUsP4Unit(u16 arg0, Unit* user);                      // TODO: confirm return type
 extern "C" Action* create__10PsiFactoryUsP4Unit(u16 arg0, Unit* user);                      // TODO: confirm return type
 extern "C" Action* create__12GoodsFactoryUsP4UnitUs(u16 arg0, Unit* arg1, u16 arg2);  // TODO: confirm return type
-extern "C" Action* create__10GuestSkillFactoryUsP4Unit(u16 arg0, Unit* user);                      // TODO: confirm return type
+extern "C" Action* create__17GuestSkillFactoryUsP4Unit(u16 arg0, Unit* user);                      // TODO: confirm return type
 
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_080736F8.inc", void sub_080736F8());
 extern "C" ASM_FUNC("asm/non_matching/rhythm/hitPlayer.inc", void hitPlayer());
@@ -73,7 +73,7 @@ extern "C" bool IsGoodsAndType(Action* action, u16 id) {
 }
 
 extern "C" Action* getGuestSkill(u16 arg0, Unit* user) {
-    return create__10GuestSkillFactoryUsP4Unit(arg0, user);
+    return create__17GuestSkillFactoryUsP4Unit(arg0, user);
 }
 
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08074134.inc", void sub_08074134());

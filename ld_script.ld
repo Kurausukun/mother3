@@ -37,6 +37,7 @@ SECTIONS
         build/mother3/src/battle/guest_misc.o(.text);
         build/mother3/src/battle/guest.o(.text);
         build/mother3/src/battle/guestFactory.o(.text);
+        build/mother3/src/battle/guestSkillFactory.o(.text);
         build/mother3/src/battle/goods.o(.text);
         build/mother3/src/battle/goodsFactory.o(.text);
         build/mother3/src/battle/sndmon.o(.text);
@@ -129,6 +130,7 @@ SECTIONS
         build/mother3/src/linkonce/playerskillImpl.o(.text);
         build/mother3/src/linkonce/guestImpl.o(.text);
         build/mother3/src/linkonce/guestskillImpl.o(.text);
+        build/mother3/src/linkonce/guestskillImpl.o(.gnu.linkonce.t.*);
         build/mother3/src/linkonce/monsterImpl0.o(.text);
         build/mother3/asm/monsterImplTmp.o(.text);
         build/mother3/src/linkonce/monsterImpl2.o(.text);

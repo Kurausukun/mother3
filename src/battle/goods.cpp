@@ -6,9 +6,6 @@ extern "C" void* get_misctext_msg(u32, u32);
 extern "C" u16 get_misctext_len(u32);
 extern "C" void* sub_08001BCC(u32);
 
-extern "C" ASM_FUNC("asm/non_matching/goods/sub_08062308.inc", void init__17GuestSkillFactory());
-extern "C" ASM_FUNC("asm/non_matching/goods/sub_08062358.inc", void put__10GuestSkillFactoryUsPFUsP4Unit_Pv());
-extern "C" ASM_FUNC("asm/non_matching/goods/sub_08062368.inc", void create__10GuestSkillFactoryUsP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/goods/MonsterInfo_ct.inc", void MonsterInfo_ct());
 extern "C" ASM_FUNC("asm/non_matching/goods/sub_08062448.inc", void sub_08062448());
 extern "C" ASM_FUNC("asm/non_matching/goods/sub_080625A4.inc", void sub_080625A4());

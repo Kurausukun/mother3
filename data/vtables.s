@@ -13129,7 +13129,7 @@ _vt.12GuestSkill24::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte dt__12GuestSkill24
+	.4byte _._12GuestSkill24
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__10GuestSkill
@@ -13383,7 +13383,7 @@ _vt.10AlecAttack::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte dt__10AlecAttack
+	.4byte _._10AlecAttack
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__10GuestSkill
@@ -13637,7 +13637,7 @@ _vt.15AlecShakeWakeUp::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte dt__15AlecShakeWakeUp
+	.4byte _._15AlecShakeWakeUp
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__10GuestSkill
@@ -13891,7 +13891,7 @@ _vt.16FassadPunishizer::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte dt__16FassadPunishizer
+	.4byte _._16FassadPunishizer
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__10GuestSkill
@@ -14145,7 +14145,7 @@ _vt.17DefaultGuestSkill::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte dt__17DefaultGuestSkill
+	.4byte _._17DefaultGuestSkill
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__10GuestSkill
