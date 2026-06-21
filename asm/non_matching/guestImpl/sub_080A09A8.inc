@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A09A8:
+dt__6Thomas:
 	push {lr}
 	ldr r2, _080A09BC
 	str r2, [r0, #0x20]

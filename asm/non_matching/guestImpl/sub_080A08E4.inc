@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A08E4:
+guest_2c0__4Alec:
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r0, #4

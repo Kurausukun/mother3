@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A043C:
+_e8__6Fassad:
 	push {r4, lr}
 	adds r4, r1, #0
 	cmp r4, r0

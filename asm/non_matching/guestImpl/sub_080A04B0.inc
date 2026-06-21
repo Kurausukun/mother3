@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A04B0:
+dt__6Fassad:
 	push {lr}
 	ldr r2, _080A04C4
 	str r2, [r0, #0x20]

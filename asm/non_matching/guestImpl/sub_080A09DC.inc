@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A09DC:
+onAction__12DefaultGuestP6Action:
 	push {r4, lr}
 	adds r4, r0, #0
 	bl onAction__4UnitP6Action

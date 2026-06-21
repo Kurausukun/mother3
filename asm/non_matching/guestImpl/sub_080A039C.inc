@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A039C:
+guest_2c0__6Fassad:
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	movs r0, #6

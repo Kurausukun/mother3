@@ -1,5 +1,5 @@
 	.syntax unified
-nullsub_56:
+_f0__12DefaultGuest:
 	bx lr
 	.align 2, 0
 	.syntax divided

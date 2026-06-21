@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A0300:
+_118__6Fassad:
 	push {r4, lr}
 	adds r4, r0, #0
 	lsls r2, r2, #0x18

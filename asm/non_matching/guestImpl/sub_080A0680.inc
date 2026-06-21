@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A0680:
+guest_2c0__4Wess:
 	push {r4, lr}
 	adds r4, r0, #0
 	bl IsBossBattle

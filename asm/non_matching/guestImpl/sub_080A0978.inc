@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A0978:
+guest_2c0__6Thomas:
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r0, #0

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A0A0C:
+dt__12DefaultGuest:
 	push {lr}
 	ldr r2, _080A0A20
 	str r2, [r0, #0x20]

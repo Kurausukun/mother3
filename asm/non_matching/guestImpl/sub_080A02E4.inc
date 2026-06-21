@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A02E4:
+dt__5Ionia:
 	push {lr}
 	ldr r2, _080A02F8
 	str r2, [r0, #0x20]

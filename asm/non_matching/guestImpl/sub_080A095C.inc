@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A095C:
+dt__4Fuel:
 	push {lr}
 	ldr r2, _080A0970
 	str r2, [r0, #0x20]

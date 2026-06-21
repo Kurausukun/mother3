@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A073C:
+dt__4Wess:
 	push {lr}
 	ldr r2, _080A0750
 	str r2, [r0, #0x20]

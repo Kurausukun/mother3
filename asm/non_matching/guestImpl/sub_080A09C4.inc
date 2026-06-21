@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080A09C4:
+_100__12DefaultGuest:
 	movs r1, #0x82
 	lsls r1, r1, #1
 	adds r0, r0, r1

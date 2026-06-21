@@ -10731,7 +10731,7 @@ _vt.5Ionia.10UnitObject::
 	.4byte 0
 	.2byte -32
 	.2byte 0
-	.4byte sub_080A02E4
+	.4byte dt__5Ionia
 	.2byte -32
 	.2byte 0
 	.4byte object_8__5Guesti
@@ -10778,7 +10778,7 @@ _vt.5Ionia::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A02E4
+	.4byte dt__5Ionia
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__5Guest
@@ -10817,7 +10817,7 @@ _vt.5Ionia::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A09DC
+	.4byte onAction__12DefaultGuestP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -11039,7 +11039,7 @@ _vt.5Ionia::
 	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A02BC
+	.4byte guest_2c0__5Ionia
 	.2byte 0
 	.2byte 0
 	.4byte guest_2e8__5GuestP6Action
@@ -11054,16 +11054,16 @@ _vt.5Ionia::
 	.4byte object_38__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_57
+	.4byte _e8__12DefaultGuest
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_56
+	.4byte _f0__12DefaultGuest
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A09D0
+	.4byte _f8__12DefaultGuest
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A09C4
+	.4byte _100__12DefaultGuest
 
 _vt.6Fassad.10UnitObject::
 	.2byte -32
@@ -11071,7 +11071,7 @@ _vt.6Fassad.10UnitObject::
 	.4byte 0
 	.2byte -32
 	.2byte 0
-	.4byte sub_080A04B0
+	.4byte dt__6Fassad
 	.2byte -32
 	.2byte 0
 	.4byte object_8__5Guesti
@@ -11118,7 +11118,7 @@ _vt.6Fassad::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A04B0
+	.4byte dt__6Fassad
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__5Guest
@@ -11157,7 +11157,7 @@ _vt.6Fassad::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A09DC
+	.4byte onAction__12DefaultGuestP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -11379,7 +11379,7 @@ _vt.6Fassad::
 	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A039C
+	.4byte guest_2c0__6Fassad
 	.2byte 0
 	.2byte 0
 	.4byte guest_2e8__5GuestP6Action
@@ -11394,25 +11394,25 @@ _vt.6Fassad::
 	.4byte object_38__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A043C
+	.4byte _e8__6Fassad
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_56
+	.4byte _f0__12DefaultGuest
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A09D0
+	.4byte _f8__12DefaultGuest
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A09C4
+	.4byte _100__12DefaultGuest
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A0374
+	.4byte _108__6Fassad
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A034C
+	.4byte _110__6Fassad
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A0300
+	.4byte _118__6Fassad
 
 _vt.4Wess.10UnitObject::
 	.2byte -32
@@ -11420,7 +11420,7 @@ _vt.4Wess.10UnitObject::
 	.4byte 0
 	.2byte -32
 	.2byte 0
-	.4byte sub_080A073C
+	.4byte dt__4Wess
 	.2byte -32
 	.2byte 0
 	.4byte object_8__5Guesti
@@ -11467,7 +11467,7 @@ _vt.4Wess::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A073C
+	.4byte dt__4Wess
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__5Guest
@@ -11506,7 +11506,7 @@ _vt.4Wess::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A04CC
+	.4byte onAction__4WessP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -11728,7 +11728,7 @@ _vt.4Wess::
 	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A0680
+	.4byte guest_2c0__4Wess
 	.2byte 0
 	.2byte 0
 	.4byte guest_2e8__5GuestP6Action
@@ -11743,19 +11743,19 @@ _vt.4Wess::
 	.4byte object_38__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_57
+	.4byte _e8__12DefaultGuest
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_56
+	.4byte _f0__12DefaultGuest
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A09D0
+	.4byte _f8__12DefaultGuest
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A09C4
+	.4byte _100__12DefaultGuest
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A051C
+	.4byte _108__4Wess
 
 _vt.4Alec.10UnitObject::
 	.2byte -32
@@ -11763,7 +11763,7 @@ _vt.4Alec.10UnitObject::
 	.4byte 0
 	.2byte -32
 	.2byte 0
-	.4byte sub_080A0918
+	.4byte dt__4Alec
 	.2byte -32
 	.2byte 0
 	.4byte object_8__5Guesti
@@ -11810,7 +11810,7 @@ _vt.4Alec::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A0918
+	.4byte dt__4Alec
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__5Guest
@@ -12071,7 +12071,7 @@ _vt.4Alec::
 	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A08E4
+	.4byte guest_2c0__4Alec
 	.2byte 0
 	.2byte 0
 	.4byte guest_2e8__5GuestP6Action
@@ -12086,22 +12086,22 @@ _vt.4Alec::
 	.4byte object_38__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_57
+	.4byte _e8__12DefaultGuest
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_56
+	.4byte _f0__12DefaultGuest
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A09D0
+	.4byte _f8__12DefaultGuest
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A09C4
+	.4byte _100__12DefaultGuest
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A0840
+	.4byte _108__4Alec
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A07C0
+	.4byte _110__4Alec
 
 _vt.4Fuel.10UnitObject::
 	.2byte -32
@@ -12109,7 +12109,7 @@ _vt.4Fuel.10UnitObject::
 	.4byte 0
 	.2byte -32
 	.2byte 0
-	.4byte sub_080A095C
+	.4byte dt__4Fuel
 	.2byte -32
 	.2byte 0
 	.4byte object_8__5Guesti
@@ -12156,7 +12156,7 @@ _vt.4Fuel::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A095C
+	.4byte dt__4Fuel
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__5Guest
@@ -12195,7 +12195,7 @@ _vt.4Fuel::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A09DC
+	.4byte onAction__12DefaultGuestP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -12417,7 +12417,7 @@ _vt.4Fuel::
 	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A0934
+	.4byte guest_2c0__4Fuel
 	.2byte 0
 	.2byte 0
 	.4byte guest_2e8__5GuestP6Action
@@ -12432,16 +12432,16 @@ _vt.4Fuel::
 	.4byte object_38__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_57
+	.4byte _e8__12DefaultGuest
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_56
+	.4byte _f0__12DefaultGuest
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A09D0
+	.4byte _f8__12DefaultGuest
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A09C4
+	.4byte _100__12DefaultGuest
 
 _vt.6Thomas.10UnitObject::
 	.2byte -32
@@ -12449,7 +12449,7 @@ _vt.6Thomas.10UnitObject::
 	.4byte 0
 	.2byte -32
 	.2byte 0
-	.4byte sub_080A09A8
+	.4byte dt__6Thomas
 	.2byte -32
 	.2byte 0
 	.4byte object_8__5Guesti
@@ -12496,7 +12496,7 @@ _vt.6Thomas::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A09A8
+	.4byte dt__6Thomas
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__5Guest
@@ -12535,7 +12535,7 @@ _vt.6Thomas::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A09DC
+	.4byte onAction__12DefaultGuestP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -12757,7 +12757,7 @@ _vt.6Thomas::
 	.4byte getStatusTypeCount__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A0978
+	.4byte guest_2c0__6Thomas
 	.2byte 0
 	.2byte 0
 	.4byte guest_2e8__5GuestP6Action
@@ -12772,16 +12772,16 @@ _vt.6Thomas::
 	.4byte object_38__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_57
+	.4byte _e8__12DefaultGuest
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_56
+	.4byte _f0__12DefaultGuest
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A09D0
+	.4byte _f8__12DefaultGuest
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A09C4
+	.4byte _100__12DefaultGuest
 
 _vt.12DefaultGuest.10UnitObject::
 	.2byte -32
@@ -12789,7 +12789,7 @@ _vt.12DefaultGuest.10UnitObject::
 	.4byte 0
 	.2byte -32
 	.2byte 0
-	.4byte sub_080A0A0C
+	.4byte dt__12DefaultGuest
 	.2byte -32
 	.2byte 0
 	.4byte object_8__5Guesti
@@ -12836,7 +12836,7 @@ _vt.12DefaultGuest::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A0A0C
+	.4byte dt__12DefaultGuest
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__5Guest
@@ -12875,7 +12875,7 @@ _vt.12DefaultGuest::
 	.4byte dispStatusMsg__4Unit
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A09DC
+	.4byte onAction__12DefaultGuestP6Action
 	.2byte 0
 	.2byte 0
 	.4byte unit_78__4UnitP6Action
@@ -13112,16 +13112,16 @@ _vt.12DefaultGuest::
 	.4byte object_38__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_57
+	.4byte _e8__12DefaultGuest
 	.2byte 0
 	.2byte 0
-	.4byte nullsub_56
+	.4byte _f0__12DefaultGuest
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A09D0
+	.4byte _f8__12DefaultGuest
 	.2byte 0
 	.2byte 0
-	.4byte sub_080A09C4
+	.4byte _100__12DefaultGuest
 
 _vt.12GuestSkill24::
 	.2byte 0
