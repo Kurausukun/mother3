@@ -10,7 +10,7 @@ sub_0802724C:
 	lsls r4, r4, #0x10
 	lsrs r4, r4, #0x10
 	adds r0, r5, #0
-	bl sub_0801B3D8
+	bl getMapGraphicsInfo
 	lsls r1, r4, #1
 	adds r0, r0, r1
 	ldrh r0, [r0]

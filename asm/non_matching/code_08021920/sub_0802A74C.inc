@@ -32,7 +32,7 @@ _0802A764:
 	beq _0802A7A8
 	adds r1, r0, #0
 	adds r0, r6, #0
-	bl sub_0802BA28
+	bl getEquippedItemIndex2
 	lsls r0, r0, #0x10
 	lsrs r1, r0, #0x10
 	asrs r0, r0, #0x10
@@ -56,7 +56,7 @@ _0802A7A8:
 	adds r0, r6, #0
 	adds r1, r5, #0
 	movs r2, #1
-	bl sub_0802A454
+	bl giveItemQuantity
 	adds r0, r6, #0
 	adds r1, r5, #0
 	bl heldItemIndex
@@ -67,7 +67,7 @@ _0802A7A8:
 	beq _0802A7DC
 	adds r0, r6, #0
 	movs r2, #1
-	bl sub_0802BA78
+	bl setEquipLyt2
 	strb r5, [r7]
 _0802A7DC:
 	mov r0, r8

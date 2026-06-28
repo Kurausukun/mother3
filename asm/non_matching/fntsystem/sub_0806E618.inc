@@ -15,5 +15,5 @@ sub_0806E618:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0806E63C: .4byte vt_09F7FF50
+_0806E63C: .4byte _vt.9FntSystem
 	.syntax divided

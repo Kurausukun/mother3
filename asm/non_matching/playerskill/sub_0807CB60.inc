@@ -12,11 +12,11 @@ sub_0807CB60:
 	bl sub_080706A0
 	mov r0, sp
 	adds r1, r4, #0
-	bl __11Unk0806D478P4Unk2
+	bl __9CCLHandleRC6ResPtr
 	ldr r0, _0807CBB4
 	str r0, [sp, #0x14]
 	mov r0, sp
-	bl sub_0806D53C
+	bl block__9CCLHandle
 	movs r2, #0
 	adds r1, r0, #0
 	adds r5, #0x28
@@ -32,7 +32,7 @@ _0807CB90:
 	bls _0807CB90
 	mov r0, sp
 	movs r1, #2
-	bl _._11Unk0806D478
+	bl _._9CCLHandle
 	add sp, #0x18
 	pop {r4, r5}
 	pop {r0}

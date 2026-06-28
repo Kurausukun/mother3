@@ -228,7 +228,7 @@ _0802B792:
 	beq _0802B82A
 	ldr r4, _0802B7D8
 	movs r0, #8
-	bl sub_08003D14
+	bl getCurrentTrack
 	lsls r0, r0, #0x10
 	lsrs r1, r0, #0x10
 	adds r3, r1, #0

@@ -58,10 +58,10 @@ extern "C" void sub_080007CC();
 extern "C" void sub_0803DBB8();
 extern "C" void sub_08003EF8();
 extern "C" void sub_080512CC(u32);
-extern "C" void sub_080037F0(u32);
+extern "C" void startSong_battle(u32);
 extern "C" void sub_08026C28();
 extern "C" void init_battle();
-extern "C" void sub_080037E4();
+extern "C" void snd_vsync_off();
 extern "C" void sub_08026CE4();
 extern "C" void sub_08026CD0();
 extern "C" void set_event_flag(u32, u32);
@@ -69,7 +69,7 @@ extern "C" void sub_08056740();
 extern "C" void sub_0805850C();
 extern "C" void sub_0805BA98();
 extern "C" void sub_0805A2DC();
-extern "C" void sub_080037D8();
+extern "C" void snd_vsync_on();
 extern "C" void sub_0805ACF4();
 extern "C" void IntrMain();
 extern "C" void snd_vsync();
@@ -234,7 +234,7 @@ void sub_080003D8(void) {
 void sub_080004D8() {
     if (gEncounter._0 == 3) {
         gEncounter.mIQ = 1;
-        sub_080037F0(0);
+        startSong_battle(0);
         sub_08026C28();
         gUnknown_02004848._0 = 5;
         gUnknown_02005080 = 3;
@@ -247,7 +247,7 @@ void sub_080004D8() {
     if (gEncounter._0 == 2) {
         gUnknown_02004848._0 = 9;
         gUnknown_02004100 = 4;
-        sub_080037E4();
+        snd_vsync_off();
         return;
     }
 
@@ -262,7 +262,7 @@ void sub_080004D8() {
             if (gSave._708 == 0) {
                 gUnknown_02004848._0 = 10;
                 gUnknown_020047D0 = 1;
-                sub_080037E4();
+                snd_vsync_off();
                 return;
             }
             set_event_flag(789, 0);
@@ -362,9 +362,9 @@ void sub_08000790() {
 }
 
 void sub_080007B0(void) {
-    sub_080037E4();
+    snd_vsync_off();
     sub_0805A2DC();
-    sub_080037D8();
+    snd_vsync_on();
     gUnknown_02004848._0 = 14;
 }
 
@@ -376,9 +376,9 @@ void sub_080007CC(void) {
         return;
     }
 
-    sub_080037E4();
+    snd_vsync_off();
     sub_0805ACF4();
-    sub_080037D8();
+    snd_vsync_on();
 
     switch (gUnknown_020051E0) {
     case 0:

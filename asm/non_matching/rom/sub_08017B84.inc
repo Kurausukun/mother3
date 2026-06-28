@@ -28,7 +28,7 @@ sub_08017B84:
 	movs r0, #0
 	adds r2, r5, #0
 	movs r3, #0x1f
-	bl sub_08002E34
+	bl lerp2
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	mov sb, r0
@@ -37,7 +37,7 @@ sub_08017B84:
 	movs r0, #0
 	adds r2, r5, #0
 	movs r3, #0x1f
-	bl sub_08002E34
+	bl lerp2
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	mov r8, r0
@@ -51,7 +51,7 @@ _08017BE2:
 	movs r1, #0
 	adds r2, r5, #0
 	movs r3, #0x1f
-	bl sub_08002E34
+	bl lerp2
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	mov sb, r0
@@ -60,7 +60,7 @@ _08017BE2:
 	movs r1, #0
 	adds r2, r5, #0
 	movs r3, #0x1f
-	bl sub_08002E34
+	bl lerp2
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	mov r8, r0
@@ -70,7 +70,7 @@ _08017BE2:
 _08017C10:
 	adds r2, r5, #0
 	movs r3, #0x1f
-	bl sub_08002E34
+	bl lerp2
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	str r0, [sp, #0xc]

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0806E50C:
+__9FntSystem:
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -118,7 +118,7 @@ _0806E576:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0806E608: .4byte vt_09F7FF50
+_0806E608: .4byte _vt.9FntSystem
 _0806E60C: .4byte _vt.3Unk
 _0806E610: .4byte _vt.12PostAppClock
 _0806E614: .4byte gUnknown_0810019C

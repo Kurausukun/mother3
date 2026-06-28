@@ -26,7 +26,7 @@ sub_08058548:
 	bl nullsub_9
 	bl sub_080585C4
 	bl nullsub_10
-	bl sub_080037E4
+	bl snd_vsync_off
 	mov r1, sb
 	strh r1, [r6]
 	ldrh r1, [r5]

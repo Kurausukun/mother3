@@ -24,7 +24,7 @@ sub_08033DA8:
 	cmp r4, #0
 	beq _08033DEE
 	movs r0, #5
-	bl sub_08003D14
+	bl getCurrentTrack
 	lsls r0, r0, #0x10
 	asrs r0, r0, #0x10
 	cmp r0, r4
@@ -45,7 +45,7 @@ _08033DFC:
 	cmp r4, #0
 	beq _08033E1E
 	movs r0, #5
-	bl sub_08003D14
+	bl getCurrentTrack
 	lsls r0, r0, #0x10
 	asrs r0, r0, #0x10
 	cmp r0, r4

@@ -21,7 +21,7 @@ _0802A63A:
 	mov r0, ip
 	adds r1, r3, #0
 	movs r2, #0
-	bl sub_0802BA78
+	bl setEquipLyt2
 	movs r0, #1
 	b _0802A66C
 _0802A660:

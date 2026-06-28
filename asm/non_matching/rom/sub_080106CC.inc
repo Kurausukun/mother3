@@ -9,7 +9,7 @@ sub_080106CC:
 	mov r0, sp
 	strh r1, [r0]
 	adds r0, r7, #0
-	bl sub_0801B3D8
+	bl getMapGraphicsInfo
 	adds r6, r0, #0
 	mov r0, sp
 	ldrh r0, [r0]

@@ -17,5 +17,5 @@ sub_0806FC28:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0806FC50: .4byte vt_09F80508
+_0806FC50: .4byte _vt.9EfcSystem
 	.syntax divided

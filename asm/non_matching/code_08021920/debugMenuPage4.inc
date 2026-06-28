@@ -7,7 +7,7 @@ debugMenuPage4:
 	ldrh r2, [r3]
 	cmp r2, #1
 	bne _0803A770
-	bl sub_0803A830
+	bl handleDebugPage4
 	b _0803A828
 _0803A770:
 	ldrh r1, [r3, #2]
@@ -66,7 +66,7 @@ _0803A7C0:
 	adds r0, r4, r1
 	movs r1, #0
 	bl sub_08009E38
-	bl sub_08039E88
+	bl initCurrentDebugPage
 	adds r2, r4, #0
 	adds r2, #0x56
 	ldrb r0, [r2]

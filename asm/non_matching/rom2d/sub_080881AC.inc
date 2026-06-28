@@ -80,10 +80,10 @@ sub_080881AC:
 	bl sub_0806B070
 	mov r8, r0
 	mov r0, sb
-	bl sub_0806D644
+	bl count__9CCGHandle
 	adds r4, r0, #0
 	mov r0, sb
-	bl sub_0806D648
+	bl block__9CCGHandle
 	str r0, [sp]
 	mov r0, r8
 	mov r1, sl
@@ -91,10 +91,10 @@ sub_080881AC:
 	adds r3, r4, #0
 	bl sub_0806B7B8
 	ldr r0, [sp, #0x60]
-	bl sub_0806D538
+	bl count__9CCLHandle
 	adds r4, r0, #0
 	ldr r0, [sp, #0x60]
-	bl sub_0806D53C
+	bl block__9CCLHandle
 	str r0, [sp]
 	mov r0, r8
 	mov r1, sl
@@ -107,7 +107,7 @@ sub_080881AC:
 	str r0, [sp, #0x30]
 	add r0, sp, #0x24
 	ldr r1, [sp, #0x2c]
-	bl sub_08087FD4
+	bl _fd4__8BGHandleRC6ResPtr
 	ldr r0, [sp, #0x24]
 	lsls r0, r0, #0x10
 	asrs r0, r0, #0x10

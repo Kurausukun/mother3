@@ -20,7 +20,7 @@ sub_08002E8C:
 	ldrsh r1, [r2, r3]
 	adds r2, r4, #0
 	adds r3, r5, #0
-	bl sub_08002E34
+	bl lerp2
 	mov r1, sb
 	strh r0, [r1]
 	movs r2, #2
@@ -30,7 +30,7 @@ sub_08002E8C:
 	ldrsh r1, [r3, r2]
 	adds r2, r4, #0
 	adds r3, r5, #0
-	bl sub_08002E34
+	bl lerp2
 	mov r3, sb
 	strh r0, [r3, #2]
 	pop {r3, r4}

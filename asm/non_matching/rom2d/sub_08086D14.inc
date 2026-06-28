@@ -2,7 +2,7 @@
 sub_08086D14:
 	push {r4, lr}
 	adds r4, r0, #0
-	bl sub_0806FF38
+	bl __5Sound
 	ldr r0, _08086D30
 	str r0, [r4, #0x1c]
 	movs r0, #0

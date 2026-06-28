@@ -8,29 +8,6 @@
 
 extern "C" s32 DivMod(s32, s32);
 
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_0806FF38.inc", void sub_0806FF38());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_0806FF6C.inc", void __5SoundUs());
-
-Sound::~Sound() {}
-
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_0806FFBC.inc", void sub_0806FFBC());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070048.inc", void play__5Soundb());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_080700E4.inc", void sub_080700E4());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070118.inc", void sub_08070118());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_0807014C.inc", void sub_0807014C());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_080701AC.inc", void isPlaying__5Sound());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_080701F8.inc", void sub_080701F8());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070250.inc", void sub_08070250());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_080702A8.inc", void sub_080702A8());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_080702C0.inc", void sub_080702C0());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_080702EC.inc", void sub_080702EC());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070320.inc", void sub_08070320());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_0807035C.inc", void sub_0807035C());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070360.inc", void sub_08070360());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070364.inc", void sub_08070364());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070368.inc", void sub_08070368());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070374.inc", void sub_08070374());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_0807038C.inc", void sub_0807038C());
 extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_080703A4.inc", void sub_080703A4());
 extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070414.inc", void sub_08070414());
 extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08070478.inc", void sub_08070478());

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0806EC50:
+getRTTI_9RasSystem:
 	push {lr}
 	bl sub_0806EBD0
 	pop {r1}

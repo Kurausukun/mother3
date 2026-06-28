@@ -107,7 +107,7 @@ _080265AA:
 	ldrh r0, [r0, #2]
 	strh r0, [r2, #2]
 	movs r0, #5
-	bl sub_08003BA8
+	bl musicPlayerStop_sfx
 	movs r0, #1
 	bl sub_0803C4DC
 	add sp, #4

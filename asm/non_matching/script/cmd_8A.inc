@@ -32,7 +32,7 @@ _080210E6:
 	movs r5, #0x41
 _080210F0:
 	adds r0, r5, #0
-	bl sub_08003E20
+	bl percentToMPlayVolume
 	lsls r0, r0, #0x10
 	lsrs r5, r0, #0x10
 	lsls r4, r7, #0x10
@@ -45,7 +45,7 @@ _080210F0:
 	cmp r1, r0
 	bne _0802117A
 	movs r0, #0
-	bl sub_08003D48
+	bl getMusicPlayerVolumePercent
 	adds r1, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
@@ -55,7 +55,7 @@ _080210F0:
 	adds r3, r6, #0
 	bl sub_08027B84
 	movs r0, #1
-	bl sub_08003D48
+	bl getMusicPlayerVolumePercent
 	adds r1, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
@@ -63,7 +63,7 @@ _080210F0:
 	b _08021170
 _08021134:
 	movs r0, #3
-	bl sub_08003D48
+	bl getMusicPlayerVolumePercent
 	adds r1, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
@@ -73,7 +73,7 @@ _08021134:
 	adds r3, r6, #0
 	bl sub_08027B84
 	movs r0, #4
-	bl sub_08003D48
+	bl getMusicPlayerVolumePercent
 	adds r1, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
@@ -82,7 +82,7 @@ _08021134:
 	adds r3, r6, #0
 	bl sub_08027B84
 	movs r0, #5
-	bl sub_08003D48
+	bl getMusicPlayerVolumePercent
 	adds r1, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
@@ -95,7 +95,7 @@ _08021170:
 _0802117A:
 	lsrs r4, r4, #0x10
 	adds r0, r4, #0
-	bl sub_08003D48
+	bl getMusicPlayerVolumePercent
 	adds r1, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10

@@ -44,7 +44,7 @@ sub_08055F44:
 	ldr r4, _08055FD0
 	adds r3, r3, r4
 	strb r6, [r3]
-	bl sub_08055FD4
+	bl setup_battle_music
 	pop {r4, r5, r6}
 	pop {r0}
 	bx r0

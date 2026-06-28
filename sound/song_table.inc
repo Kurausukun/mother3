@@ -1968,6 +1968,7 @@ gSongTable::	@ 0x08120E94
 	song gSong_08CD9300, 1, 1
 	song gSong_08CD9DF4, 1, 1
 	song gSong_08CDB088, 1, 1
+song_table_end::
 
 	.align 2
 dummy_song_header::

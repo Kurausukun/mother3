@@ -89,6 +89,11 @@ enum EquipFlags { _1, Flint, Lucas, Duster, Kumatora, Boney, Salsa, _80 };
 //     u32 battle_info;
 // };
 
+typedef struct Position {
+    u16 x;
+    u16 y;
+} Position;
+
 typedef struct Size {
     u16 w;
     s16 h;
@@ -104,7 +109,9 @@ typedef struct Object {
     s16 ypos;
     u8 _4_0 : 5;
     u8 _4_1 : 3;
-    u8 filler[0x1b];
+    u8 _5[0x13];
+    s32 _18;
+    u32 _1c;
     u16 _20;
     u16 _22;
     u8 _24[0x10];
@@ -293,6 +300,25 @@ typedef struct TransactionState {
 } TransactionState;
 static_assert(sizeof(TransactionState) == 0xC);
 
+typedef struct SoundUnkInfo {
+    u16 _0;
+    u16 _2;
+    u16 _4;
+    u16 _6;
+    u8 _8_1 : 1;
+    u8 _8_2 : 3;
+} SoundUnkInfo;
+static_assert(sizeof(SoundUnkInfo) == 0xC);
+
+typedef struct DebugMenuState {
+    u16 _0;
+    u16 numItems;
+    u16 itemIndex;
+    u16 _6[2];
+    u16 subItemIndex;
+} DebugMenuState;
+static_assert(sizeof(DebugMenuState) == 0xC);
+
 typedef struct struct_2018D00 {
     s32 _0;
     s32 hpMod;
@@ -326,6 +352,15 @@ typedef struct MenuGoodsEntry {
     u16 _2_1 : 6;
     u16 _2_40 : 1;
 } MenuGoodsEntry;
+
+typedef struct TownMapInfo {
+    u16 townMapID;
+    u16 topLeftX;
+    u16 topLeftY;
+    u16 bottomRightX;
+    u16 bottomRightY;
+    u16 _a;
+} TownMapInfo;
 
 typedef struct struct_02016028 {
     vu16 bldcnt;
@@ -372,8 +407,8 @@ typedef struct struct_02016028 {
     MenuGoodsEntry _3480[0x10];
     MenuGoodsEntry equippableItems[0x10];
     u8 pad_3500[0x351C - 0x3500];
-    u32 _351C;
-    u32 _3520;
+    u32 selectedTransactableDp;
+    u32 totalTransactableDp;
     u16 _3524;
     u16 _3526;
     u8 pad_3528[0x3530 - 0x3528];
@@ -385,18 +420,38 @@ typedef struct struct_02016028 {
     u8 _35ba_2 : 2;
     u8 _35ba_8 : 1;
     u8 pad_35bb;
-    TransactionState _35bc[7];
-    u8 _3610[2];
-    u16 _3612;
-    u8 pad_3614[0x3668 - 0x3614];
+    DebugMenuState debugMenuPages[6];
+    u8 _3604[0x360E - 0x3604];
+    u8 _360e_1 : 1;
+    u8 _360e_2 : 3;
+    u8 _360e_10 : 1;
+    u8 _360e_20 : 1;
+    u8 _360e_40 : 1;
+    u8 _360e_80 : 1;
+    u8 _360f[0x3612 - 0x360F];
+    u16 currentDebugPage;
+    u16 debugRoomID;
+    u16 debugObjectTable;
+    u16 debugBgm;
+    u16 debugEncounterBgm;
+    u32 debugDpPocket;
+    u32 debugDpBank;
+    u32 debugSessionPlaytime;
+    u8 pad_3628[0x3668 - 0x3628];
     u8 _3668_1 : 1;
     u8 _3668_2 : 1;
     u8 _3668_4 : 1;
     u8 _3668_8 : 1;
     u8 _3668_10 : 1;
     u8 _3668_20 : 1;
-    u8 _3668_40 : 2;
-    u8 pad_3669[0x3800 - 0x3669];
+    u8 _3668_40 : 1;
+    u8 _3668_80 : 1;
+    u8 pad_3669[0x3678 - 0x3669];
+    u16 mapTopLeftX;
+    u16 mapTopLeftY;
+    u16 mapBottomRightX;
+    u16 mapBottomRightY;
+    u8 pad_3680[0x3800 - 0x3680];
     s32 _3800[0xFF];
     s32 _3bfc[0x170];
     u16 _41bc;
@@ -477,7 +532,8 @@ typedef struct struct_02016028 {
     u8 _4ecf_10 : 1;
     u8 _4ed0[0x566C - 0x4ED0];
     u8 _566c_1 : 1;
-    u8 _566d[0x5778 - 0x566D];
+    u8 _566d[0x567c - 0x566D];
+    SoundUnkInfo _567c[21];
     u8 _5778[0xC5AD - 0x5778];
     u8 _c5ad_1 : 1;
     u8 _c5ae[0xC5B5 - 0xC5AE];
@@ -495,9 +551,10 @@ typedef struct struct_02016028 {
     u8 _121b6_2 : 1;
     u8 _121b6_4 : 6;
     u8 _121b7;
-    u8 _121b8_0 : 3;
-    u8 _121b8_3 : 1;
-    u8 _121b8_4 : 4;
+    u8 _121b8_1 : 3;
+    u8 _121b8_8 : 1;
+    u8 _121b8_10 : 1;
+    u8 _121b8_20 : 3;
     u8 _121b9;
     u8 _121ba;
     u8 _121bb_1 : 3;
@@ -579,7 +636,7 @@ typedef struct Save {
     u8 _735;
     u16 _736;
     u8 _738[12];
-    u32 _744;
+    u32 sessionPlaytime;
     u16 _748;
     u8 enemy_seen_front[0x20];
     u8 enemy_seen_back[0x20];
@@ -726,15 +783,6 @@ typedef struct struct_200D818 {
     s16 kindness;
     u16 _2e;
 } struct_200D818;
-
-typedef struct TownMapInfo {
-    u16 townMapID;
-    u16 topLeftX;
-    u16 topLeftY;
-    u16 bottomRightX;
-    u16 bottomRightY;
-    u16 _a;
-} TownMapInfo;
 
 typedef struct RhythmInfo {  // TODO: This should probably be part of a class?
     u16 id;                  // Entry ID (is there any point to this?)

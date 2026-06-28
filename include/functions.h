@@ -3,7 +3,8 @@
 
 #include "structs.h"
 
-typedef void (*DebugModeFunc)(InputState*, TransactionState*);
+typedef void (*DebugInitFunc)(DebugMenuState*);
+typedef void (*DebugModeFunc)(InputState*, DebugMenuState*);
 typedef void (*MenuHandlerFunc)(InputState*, MenuState*);
 typedef void (*Unk09B8FE24Func)();
 
@@ -28,10 +29,10 @@ void sub_0802610C(u32);
 void set_event_flag(u32, u32);
 void sub_08002938(u32, u32);
 void sub_08002950(u32, u32);
-u16 get_flag(u32);
+u16 get_flag(u16);
 u32 get_progression_flag(u32);
 u32 sub_080029D4(u32);
-void sub_080218B0(u32, u32);
+void scriptstack_push_eq(u32, u32);
 void sub_080028F4(u32, u32);
 u32 get_shop_flag(u32);
 void add_dp_to_pocket(s32);
@@ -45,7 +46,7 @@ void set_giftbox_flag(u32, u32);
 u32 get_giftbox_flag(u32);
 void sub_0802AF24(u32);
 void add_dp_to_bank(u32);
-u32 sub_0802B954(u32);
+s16 getPartyMemberByHeldItem(u16);
 void sub_0802AD88(u32, u32);
 void set_ailment(u32, u32, u32);
 u16 sub_0802A124(u16);

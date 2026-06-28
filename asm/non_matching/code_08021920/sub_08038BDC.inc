@@ -62,7 +62,7 @@ _08038C2A:
 	b _08038E64
 _08038C4C:
 	movs r0, #1
-	bl sub_08003D14
+	bl getCurrentTrack
 	lsls r0, r0, #0x10
 	asrs r0, r0, #0x10
 	cmp r0, #0xb7
@@ -84,7 +84,7 @@ _08038C80: .4byte 0x0000012B
 _08038C84: .4byte 0x00008495
 _08038C88:
 	movs r0, #1
-	bl sub_08003D14
+	bl getCurrentTrack
 	lsls r0, r0, #0x10
 	asrs r0, r0, #0x10
 	cmp r0, #0xb7
@@ -92,7 +92,7 @@ _08038C88:
 	b _08038E64
 _08038C98:
 	movs r0, #1
-	bl sub_08003B58
+	bl musicPlayerStop_bgm
 	b _08038E64
 _08038CA0:
 	ldr r1, _08038CD4
@@ -110,7 +110,7 @@ _08038CA0:
 	cmp r0, #0
 	blt _08038CF8
 	movs r0, #1
-	bl sub_08003D14
+	bl getCurrentTrack
 	lsls r0, r0, #0x10
 	asrs r0, r0, #0x10
 	cmp r0, #0xb7
@@ -126,13 +126,13 @@ _08038CE0:
 	movs r2, #0x15
 	mov r8, r2
 	movs r0, #1
-	bl sub_08003D14
+	bl getCurrentTrack
 	lsls r0, r0, #0x10
 	asrs r0, r0, #0x10
 	cmp r0, #0xb7
 	bne _08038CF8
 	movs r0, #1
-	bl sub_08003B58
+	bl musicPlayerStop_bgm
 _08038CF8:
 	ldr r7, _08038D7C
 	movs r5, #1

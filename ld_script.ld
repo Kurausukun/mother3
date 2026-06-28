@@ -58,6 +58,7 @@ SECTIONS
         build/mother3/src/battle/rassystem.o(.text);
         build/mother3/src/battle/efcsystem.o(.text);
         build/mother3/src/battle/sndsystem.o(.text);
+        build/mother3/src/battle/sound.o(.text);
         build/mother3/src/battle/keyfocusmanager.o(.text);
         build/mother3/src/battle/battleData.o(.text);
         build/mother3/src/battle/rhythm.o(.text);

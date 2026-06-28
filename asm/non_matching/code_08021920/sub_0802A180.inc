@@ -63,7 +63,7 @@ _0802A1D2:
 	adds r0, r5, #0
 	mov r1, sb
 	adds r2, r6, #0
-	bl sub_0802A454
+	bl giveItemQuantity
 	mov r1, r8
 	adds r0, r1, r6
 	lsls r0, r0, #0x10
@@ -78,7 +78,7 @@ _0802A220:
 	adds r0, r5, #0
 	mov r1, sb
 	adds r2, r4, #0
-	bl sub_0802A454
+	bl giveItemQuantity
 	mov r1, r8
 	adds r0, r1, r4
 	lsls r0, r0, #0x10

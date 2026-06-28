@@ -281,7 +281,7 @@ void Battle::onLose() {
 
 bool Battle::sub_0805E9BC() {
     if (sub_08072648(0x17) != true) {
-        sub_0806FDB0()->sndsystem_80(0);
+        SndSystemManager::get()->setUnk22(0);
         return true;
     } else {
         return false;

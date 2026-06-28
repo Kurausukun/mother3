@@ -10,7 +10,7 @@ sub_0806EBD8:
 	ldr r4, _0806EC04
 	movs r0, #0x38
 	bl __builtin_new
-	bl sub_0806EC5C
+	bl __9RasSystem
 	str r0, [r4]
 _0806EBF4:
 	ldr r0, _0806EC04

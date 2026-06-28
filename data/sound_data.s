@@ -10,3 +10,6 @@
 	.include "sound/song_table.inc"
 	.include "sound/direct_sound_data.inc"
 	.include "sound/song_data.inc"
+
+	.global gSongCount
+	.equ	gSongCount, (song_table_end - gSongTable) / 8

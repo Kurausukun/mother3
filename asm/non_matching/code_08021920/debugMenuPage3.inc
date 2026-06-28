@@ -1,4 +1,4 @@
-	.syntax unified
+  .syntax unified
 debugMenuPage3:
 	push {r4, lr}
 	sub sp, #0xc
@@ -7,7 +7,7 @@ debugMenuPage3:
 	ldrh r3, [r2]
 	cmp r3, #1
 	bne _0803A4E4
-	bl sub_0803A59C
+	bl handleDebugPage3
 	b _0803A594
 _0803A4E4:
 	ldrh r1, [r2, #2]
@@ -17,7 +17,7 @@ _0803A4E4:
 	beq _0803A4F8
 	adds r0, r2, #0
 	adds r1, r4, #0
-	bl sub_0803A644
+	bl debugChangeMapCoords
 	b _0803A594
 _0803A4F8:
 	movs r1, #0xc
@@ -65,7 +65,7 @@ _0803A536:
 	adds r0, r4, r1
 	movs r1, #0
 	bl sub_08009E38
-	bl sub_08039E88
+	bl initCurrentDebugPage
 	adds r2, r4, #0
 	adds r2, #0x56
 	ldrb r0, [r2]

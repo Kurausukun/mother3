@@ -24,12 +24,12 @@ sub_0807C718:
 	bl sub_080706A0
 	add r0, sp, #4
 	mov r1, r8
-	bl __11Unk0806D478P4Unk2
+	bl __9CCLHandleRC6ResPtr
 	ldr r3, _0807C8E0
 	mov sl, r3
 	str r3, [sp, #0x18]
 	add r0, sp, #4
-	bl sub_0806D53C
+	bl block__9CCLHandle
 	adds r1, r6, #0
 	adds r1, #0x28
 	ldr r4, _0807C8E4
@@ -39,7 +39,7 @@ sub_0807C718:
 	str r5, [r4, #8]
 	ldr r0, [r4, #8]
 	add r0, sp, #4
-	bl sub_0806D53C
+	bl block__9CCLHandle
 	adds r7, r6, #0
 	adds r7, #0x48
 	str r0, [r4]
@@ -185,7 +185,7 @@ sub_0807C718:
 	bl _._4Base
 	add r0, sp, #4
 	movs r1, #2
-	bl _._11Unk0806D478
+	bl _._9CCLHandle
 	adds r0, r6, #0
 	add sp, #0x34
 	pop {r3, r4, r5}

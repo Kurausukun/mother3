@@ -3,7 +3,7 @@
 
 #include "base.h"
 #include "structs.h"
-#include "battle/keyFocusManager.h"
+#include "battle/sound.h"
 
 struct ComboRhythm {
     ComboRhythm(s16 a, s16 b) : a(a), b(b) {}

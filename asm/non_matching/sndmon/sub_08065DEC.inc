@@ -134,7 +134,7 @@ _08065E8A:
 	bl sub_0806BE14
 	ldr r1, [r7, #0x28]
 	bl sub_0806C1C0
-	bl sub_0806FDB0__Fv
+	bl get__16SndSystemManager
 	ldr r1, [r0, #0x1c]
 	adds r1, #0x68
 	movs r3, #0

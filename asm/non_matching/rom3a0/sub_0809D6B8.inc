@@ -17,7 +17,7 @@ sub_0809D6B8:
 	bl _call_via_r1
 	adds r1, r0, #0
 	adds r0, r4, #0
-	bl sub_080702C0
+	bl setTempo__5Soundi
 _0809D6E4:
 	bl sub_08074614
 	cmp r0, #0

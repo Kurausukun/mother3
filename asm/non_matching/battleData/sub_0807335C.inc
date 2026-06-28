@@ -27,7 +27,7 @@ _0807338C:
 	bl __5SoundUs
 	mov r0, sp
 	movs r1, #0
-	bl play__5Soundb
+	bl play__5Soundi
 	mov r0, sp
 	movs r1, #2
 	bl _._5Sound
@@ -85,7 +85,7 @@ _08073408:
 	bl __5SoundUs
 	mov r0, sp
 	movs r1, #0
-	bl play__5Soundb
+	bl play__5Soundi
 	bl sub_08074614
 	ldr r1, [r0, #0x1c]
 	adds r1, #0xc8
@@ -96,7 +96,7 @@ _08073408:
 	bl _call_via_r1
 	adds r1, r0, #0
 	mov r0, sp
-	bl sub_080702C0
+	bl setTempo__5Soundi
 	mov r0, sp
 	movs r1, #2
 	bl _._5Sound

@@ -29,7 +29,7 @@ sub_08024874:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080248B8: .4byte gUnknown_0201B6A4
+_080248B8: .4byte gSoundUnkInfos
 _080248BC: .4byte 0xFFFFE00C
 _080248C0: .4byte gGame
 _080248C4: .4byte 0x00008495

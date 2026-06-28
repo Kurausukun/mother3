@@ -9,11 +9,11 @@ sub_080652A8:
 	lsls r1, r1, #1
 	adds r0, r4, r1
 	movs r1, #2
-	bl _._11Unk0806D478
+	bl _._9CCLHandle
 	adds r0, r4, #0
 	adds r0, #0xfc
 	movs r1, #2
-	bl _._11Unk0806D548
+	bl _._9CCGHandle
 	adds r0, r4, #0
 	adds r1, r5, #0
 	bl _._4Base

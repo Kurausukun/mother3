@@ -71,7 +71,7 @@ sub_08024744:
 	bl sub_0801B5E8
 	b _0802484E
 	.align 2, 0
-_080247D8: .4byte gUnknown_0201B6A4
+_080247D8: .4byte gSoundUnkInfos
 _080247DC: .4byte 0xFFFFE00C
 _080247E0: .4byte gGame
 _080247E4: .4byte 0x00008495

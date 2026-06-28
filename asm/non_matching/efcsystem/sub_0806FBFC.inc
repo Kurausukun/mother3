@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0806FBFC:
+__9EfcSystem:
 	push {r4, lr}
 	adds r4, r0, #0
 	bl __4Base
@@ -18,5 +18,5 @@ sub_0806FBFC:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0806FC24: .4byte vt_09F80508
+_0806FC24: .4byte _vt.9EfcSystem
 	.syntax divided

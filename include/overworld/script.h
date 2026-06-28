@@ -2,9 +2,19 @@
 #define OVERWORLD_SCRIPT_H
 
 #include "global.h"
+#include "structs.h"
 
 #define _22_5_DEGREES 0x1000
 #define _45_DEGREES 0x2000
+
+#define FRAMES_PER_SECOND 60
+#define FRAMES_PER_MINUTE (FRAMES_PER_SECOND * 60)
+#define FRAMES_PER_HOUR (FRAMES_PER_MINUTE * 60)
+
+#define SECONDS_TO_FRAMES(seconds) (seconds * FRAMES_PER_SECOND)
+#define HOURS_TO_FRAMES(hours) (hours * FRAMES_PER_HOUR)
+
+#define LEDERS_BELL_THRESHOLD (HOURS_TO_FRAMES(3))
 
 extern u16 (*gScriptCmdTable[])(s32* sp);
 
@@ -42,40 +52,52 @@ struct Game {
     u8 _1_80 : 1;
     u32 _2_1 : 7;
     u32 _2_40 : 4;
-    u32 _3_8 : 1;
+    u32 gbPlayerModeEnabled : 1;
     u32 _3_10 : 1;
     u32 _3_20 : 3;
     u32 _2_4 : 16;
-    u16 _6[4];
+    u16 _6;
+    u8 collisionEnabled : 1;
+    u8 _8_2 : 1;
+    u8 encountersEnabled : 1;
+    u8 obstacleEvasionEnabled : 1;
+    u8 displayProcessLoadEnabled : 1;
+    u8 gammaCorrectionEnabled : 1;
+    u8 _8_40 : 1;
+    u8 _8_80 : 1;
+    u8 _9;
+    u16 _a[2];
     u8 _e;
     u8 _f;
     u8 _10;
     u8 _11;
     u8 _12[0x1c - 0x12];
     BgFlags bg_flags[3];
-    u8 _28[0x595a - 0x28];
+    u32 _28;
+    u8 _2c[0x595a - 0x2c];
     u8 room_enter_dir;
     u8 _595b[0x5960 - 0x595b];
     u16 _5960;
     u8 _5962[0x5978 - 0x5962];
     u16 next_room;
     u16 _597a;
-    u16 _597c;
-    u16 _597e;
+    Position room_entered_from;
     u16 last_room;
     s16 _5982;
-    s16 _5984;
-    s16 _5986;
+    MovementVector _5984;
     u8 _5988[0x598C - 0x5988];
     u8 _598c_1 : 1;
     u8 _598c_2 : 1;
+    u8 _598c_4 : 1;
     u8 _598d[0x679c - 0x598D];
     u16 _679c;
     u16 _679e;
     u16 _67a0;
     u8 _67a2[0x67ac - 0x67a2];
     u16 cur_room;
-    u8 _67ae[0x67b8 - 0x67ae];
+    u16 cur_track; //67ae
+    u16 cur_track_alt; //67b0
+    u8 _67b2[0x67b8 - 0x67b2];
     s16 cam_target;
     u8 _67ba[0x67c0 - 0x67ba];
     u16 _67c0;
@@ -106,7 +128,8 @@ struct Game {
     u8 _8370;
     u8 _8371;
     u8 _8372;
-    u8 _8373[0x83a8 - 0x8373];
+    u8 _8373[0x83a4 - 0x8373];
+    s32 _83a4;
     u16 _83a8;
     u16 _83aa;
     u16 _83ac;
@@ -115,7 +138,12 @@ struct Game {
     u8 _8452[0x8462 - 0x8452];
     u16 _8462;
     u8 _8464[0x846f - 0x8464];
-    u8 _846f[0x8484 - 0x846f];
+    u8 _846f[0x847a - 0x846f];
+    s16 _847a; //847a
+    s16 _847c; //847c
+    u16 _847e;
+    u16 _8480;
+    u16 _8482;
     u32 _8484;
     u8 _8488[8];
     u32 _8490;
@@ -124,7 +152,9 @@ struct Game {
     u8 _8494_4 : 1;
     u8 _8494_5 : 1;
     s8 _8495;
-    u8 _8496[0x26];
+    u8 _8496_1 : 1;
+    u8 _8496_2 : 1;
+    u8 _8497[0x25];
     u8* script_pc;
     void* _84c0;
     s32 stack[1000];

@@ -24,10 +24,10 @@ sub_0809EBBC:
 	adds r5, #0x60
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_0806FFBC
+	bl setup__5SoundUs
 	adds r0, r5, #0
 	movs r1, #0
-	bl play__5Soundb
+	bl play__5Soundi
 	pop {r4, r5}
 	pop {r0}
 	bx r0

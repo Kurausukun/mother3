@@ -48,7 +48,7 @@ _0802A910:
 	ldrh r1, [r4]
 	adds r0, r7, #0
 	movs r2, #1
-	bl sub_0802A454
+	bl giveItemQuantity
 	movs r0, #0
 	strh r0, [r4]
 _0802A93A:
