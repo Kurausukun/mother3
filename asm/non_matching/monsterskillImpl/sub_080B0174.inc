@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B0174:
+__14MonsterSkillF1UsP4Unit:
 	push {r4, lr}
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
@@ -12,5 +12,5 @@ sub_080B0174:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080B018C: .4byte vt_09F6AD78
+_080B018C: .4byte _vt.14MonsterSkillF1
 	.syntax divided

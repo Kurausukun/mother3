@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B0BDC:
+sub_080B0BDC__17MechaStartBeeping:
 	movs r3, #0xc0
 	lsls r3, r3, #1
 	adds r1, r1, r3

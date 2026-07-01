@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B21D0:
+tellUseMessage__20SquawkingStickSqueak:
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r0, #0xac

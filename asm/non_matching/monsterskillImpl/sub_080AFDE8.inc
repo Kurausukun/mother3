@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080AFDE8:
+__17StrikeBarrierPoseUsP4Unit:
 	push {r4, lr}
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
@@ -12,5 +12,5 @@ sub_080AFDE8:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080AFE00: .4byte vt_09F65A20
+_080AFE00: .4byte _vt.17StrikeBarrierPose
 	.syntax divided

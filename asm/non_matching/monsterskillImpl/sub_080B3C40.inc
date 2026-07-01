@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B3C40:
+onPsiDamage__17MonsterPsiMagnetAP4Unit:
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}

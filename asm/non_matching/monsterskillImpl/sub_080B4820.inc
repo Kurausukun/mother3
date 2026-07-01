@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B4820:
+onDamage__19MasterEddyWhirlpoolP4Unit:
 	push {r4, lr}
 	sub sp, #0x10
 	adds r4, r0, #0

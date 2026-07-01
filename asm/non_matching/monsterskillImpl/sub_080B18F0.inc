@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B18F0:
+dt__14MarchingAttack:
 	push {lr}
 	ldr r2, _080B1900
 	str r2, [r0, #0x1c]

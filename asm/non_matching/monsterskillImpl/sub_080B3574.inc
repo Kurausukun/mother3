@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B3574:
+onInflictStatus__15MonsterCounterAP4Unit:
 	push {r4, r5, r6, lr}
 	mov r6, sb
 	mov r5, r8

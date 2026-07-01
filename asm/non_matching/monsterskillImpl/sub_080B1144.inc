@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B1144:
+dt__20MagmanEruptPyreflies:
 	push {lr}
 	ldr r2, _080B1154
 	str r2, [r0, #0x1c]

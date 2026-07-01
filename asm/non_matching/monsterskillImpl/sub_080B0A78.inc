@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B0A78:
+dt__22MiracleFassadEmitLight:
 	push {lr}
 	ldr r2, _080B0A88
 	str r2, [r0, #0x1c]

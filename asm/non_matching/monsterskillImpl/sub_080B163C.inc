@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B163C:
+dt__25FiercePorkTrooperAngerMax:
 	push {lr}
 	ldr r2, _080B164C
 	str r2, [r0, #0x1c]

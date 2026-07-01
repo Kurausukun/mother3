@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B4868:
+dt__19MasterEddyWhirlpool:
 	push {lr}
 	ldr r2, _080B4878
 	str r2, [r0, #0x1c]

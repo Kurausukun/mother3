@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B4638:
+playAnim__24NKCyborgEndOfCenturyBeam:
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	movs r6, #0

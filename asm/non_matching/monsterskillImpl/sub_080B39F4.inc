@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B39F4:
+tellUseMessage__14BatteryManJump:
 	push {r4, lr}
 	adds r4, r0, #0
 	bl tellUseMessage__6Action

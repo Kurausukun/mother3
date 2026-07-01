@@ -9,7 +9,7 @@ create__21CallForHelp3rdFactoryUsP4Unit:
 	bl __builtin_new
 	adds r1, r4, #0
 	adds r2, r5, #0
-	bl sub_080AFFE0
+	bl __14CallForHelp3rdUsP4Unit
 	pop {r4, r5}
 	pop {r1}
 	bx r1

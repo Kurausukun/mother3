@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B3DAC:
+playAnim__22MaskedManLightningBolt:
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	bl playAnim__6Action

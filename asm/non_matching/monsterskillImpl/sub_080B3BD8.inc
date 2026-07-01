@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B3BD8:
+onPlayAnim__17MonsterPsiMagnetAP4Unitb:
 	push {r4, lr}
 	sub sp, #0x10
 	adds r4, r0, #0

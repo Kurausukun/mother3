@@ -455,7 +455,7 @@ _080643B4: .4byte create__30CarpetMonsterYankCarpetFactoryUsP4Unit
 _080643B8: .4byte create__21MonsterShieldAFactoryUsP4Unit
 _080643BC: .4byte create__21MonsterPkFlashFactoryUsP4Unit
 _080643C0: .4byte 0x0000018F
-_080643C4: .4byte create__15MonsterCounterAUsP4Unit
+_080643C4: .4byte create__22MonsterCounterAFactoryUsP4Unit
 _080643C8: .4byte create__24MonsterPsiShieldAFactoryUsP4Unit
 _080643CC: .4byte create__25MonsterPsiCounterAFactoryUsP4Unit
 _080643D0: .4byte 0x000001A5
@@ -493,7 +493,7 @@ _0806444C: .4byte create__23MonsterPkFreezeGFactoryUsP4Unit
 _08064450: .4byte create__26MonsterLookOtherWayFactoryUsP4Unit
 _08064454: .4byte create__21MonsterSkill94FactoryUsP4Unit
 _08064458: .4byte 0x0000011D
-_0806445C: .4byte create__24SixteenBeatAttackFactoryUsP4Unit
+_0806445C: .4byte create__31MonsterSixteenBeatAttackFactoryUsP4Unit
 _08064460: .4byte create__21MarchingAttackFactoryUsP4Unit
 _08064464: .4byte create__21CallForHelp4thFactoryUsP4Unit
 _08064468: .4byte 0x0000012B

@@ -1,5 +1,5 @@
 	.syntax unified
-create__24SixteenBeatAttackFactoryUsP4Unit:
+create__31MonsterSixteenBeatAttackFactoryUsP4Unit:
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -9,7 +9,7 @@ create__24SixteenBeatAttackFactoryUsP4Unit:
 	bl __builtin_new
 	adds r1, r4, #0
 	adds r2, r5, #0
-	bl sub_080AFF54
+	bl __24MonsterSixteenBeatAttackUsP4Unit
 	pop {r4, r5}
 	pop {r1}
 	bx r1

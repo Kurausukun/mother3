@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B3AD8:
+name__C14MonsterPkLoveA:
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r1, _080B3AEC

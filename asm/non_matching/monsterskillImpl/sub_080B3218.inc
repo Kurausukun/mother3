@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B3218:
+dt__15MonsterHealingA:
 	push {lr}
 	ldr r2, _080B3228
 	str r2, [r0, #0x1c]

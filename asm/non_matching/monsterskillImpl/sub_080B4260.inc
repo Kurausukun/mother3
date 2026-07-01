@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B4260:
+dt__19RhinocerocketCharge:
 	push {lr}
 	ldr r2, _080B4270
 	str r2, [r0, #0x1c]

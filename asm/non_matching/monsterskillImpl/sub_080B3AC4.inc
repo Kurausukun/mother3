@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B3AC4:
+dt__14MonsterPkLoveO:
 	push {lr}
 	ldr r2, _080B3AD4
 	str r2, [r0, #0x1c]

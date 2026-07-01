@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B1C1C:
+calcDidHit__14MonsterSkill94P4Unit:
 	push {lr}
 	movs r0, #0
 	movs r1, #0x63

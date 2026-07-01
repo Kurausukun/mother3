@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080AFE3C:
+__20MagmanEruptPyrefliesUsP4Unit:
 	push {r4, lr}
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
@@ -12,5 +12,5 @@ sub_080AFE3C:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080AFE54: .4byte vt_09F66230
+_080AFE54: .4byte _vt.20MagmanEruptPyreflies
 	.syntax divided

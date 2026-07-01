@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B1DA8:
+isResisted__16MonsterPkFreezeGP4Unit:
 	push {lr}
 	bl sub_08072DFC__Fv
 	movs r1, #0

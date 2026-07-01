@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B0C78:
+calcDidHit__17MechaStartBeepingP4Unit:
 	push {r4, lr}
 	movs r0, #0
 	movs r1, #0x63

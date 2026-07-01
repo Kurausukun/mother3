@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B23B0:
+tellMissed__13GooeyGooSplitP4Unit:
 	push {r4, r5, r6, lr}
 	sub sp, #0x10
 	adds r5, r0, #0

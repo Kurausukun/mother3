@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B0604:
+__9BloodSuckUsP4Unit:
 	push {r4, lr}
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
@@ -14,5 +14,5 @@ sub_080B0604:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080B0620: .4byte vt_09F71BC0
+_080B0620: .4byte _vt.9BloodSuck
 	.syntax divided

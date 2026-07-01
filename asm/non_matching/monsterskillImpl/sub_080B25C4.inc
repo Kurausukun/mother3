@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B25C4:
+dt__23SandLizardEatDungBeetle:
 	push {lr}
 	ldr r2, _080B25D4
 	str r2, [r0, #0x1c]

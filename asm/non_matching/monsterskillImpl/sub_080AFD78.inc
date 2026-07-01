@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080AFD78:
+__22MiracleFassadEmitLightUsP4Unit:
 	push {r4, lr}
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
@@ -12,5 +12,5 @@ sub_080AFD78:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080AFD90: .4byte vt_09F64F60
+_080AFD90: .4byte _vt.22MiracleFassadEmitLight
 	.syntax divided

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B3D2C:
+dt__17MonsterPsiMagnetA:
 	push {lr}
 	ldr r2, _080B3D3C
 	str r2, [r0, #0x1c]

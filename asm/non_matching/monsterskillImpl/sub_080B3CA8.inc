@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B3CA8:
+calcDidHit__17MonsterPsiMagnetAP4Unit:
 	push {lr}
 	movs r0, #0
 	movs r1, #0x63

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B4B30:
+dt__21MechaTurtleMachineGun:
 	push {lr}
 	ldr r2, _080B4B40
 	str r2, [r0, #0x1c]

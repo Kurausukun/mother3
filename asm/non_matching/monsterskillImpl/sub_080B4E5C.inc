@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B4E5C:
+dt__19SpinSomethingAround:
 	push {lr}
 	ldr r2, _080B4E6C
 	str r2, [r0, #0x1c]

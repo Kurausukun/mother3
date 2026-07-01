@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B21E8:
+dt__20SquawkingStickSqueak:
 	push {lr}
 	ldr r2, _080B21F8
 	str r2, [r0, #0x1c]

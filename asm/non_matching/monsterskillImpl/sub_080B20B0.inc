@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B20B0:
+tellMissed__20SquawkingStickSqueakP4Unit:
 	push {r4, lr}
 	sub sp, #0x10
 	adds r1, r0, #0

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B3308:
+dt__13PowerUpSystem:
 	push {lr}
 	ldr r2, _080B3318
 	str r2, [r0, #0x1c]

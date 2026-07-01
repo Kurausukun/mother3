@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B3A70:
+dt__14BatteryManJump:
 	push {lr}
 	ldr r2, _080B3A80
 	str r2, [r0, #0x1c]

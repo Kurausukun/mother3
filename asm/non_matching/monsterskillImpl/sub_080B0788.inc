@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B0788:
+onSuccess__17FireflyBuzzAroundP4Unit:
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}

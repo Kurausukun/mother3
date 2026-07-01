@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B0774:
+dt__14CallForHelp6th:
 	push {lr}
 	ldr r2, _080B0784
 	str r2, [r0, #0x1c]

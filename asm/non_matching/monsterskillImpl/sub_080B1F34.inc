@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B1F34:
+tellUseMessage__16PigtuniaSowSeeds:
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _080B1F4C

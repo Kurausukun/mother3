@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B48F0:
+playAnim__19FishRoeManLeapMouth:
 	push {r4, lr}
 	adds r4, r0, #0
 	bl playAnim__6Action

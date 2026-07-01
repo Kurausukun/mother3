@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B4B00:
+dt__8HPSucker:
 	push {lr}
 	ldr r2, _080B4B10
 	str r2, [r0, #0x1c]

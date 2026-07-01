@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B4274:
+action_150__21FiercePorkTrooperJump:
 	push {r4, lr}
 	adds r4, r0, #0
 	bl sub_08073270

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B4E34:
+isResisted__19SpinSomethingAroundP4Unit:
 	push {lr}
 	adds r0, r1, #0
 	ldr r1, [r0, #0x1c]

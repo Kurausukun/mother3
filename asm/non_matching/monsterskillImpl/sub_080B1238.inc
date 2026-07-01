@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B1238:
+playAnim__14ShortCircuited:
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}

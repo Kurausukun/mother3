@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B2830:
+dt__17PseudoorShutDoors:
 	push {lr}
 	ldr r2, _080B2840
 	str r2, [r0, #0x1c]

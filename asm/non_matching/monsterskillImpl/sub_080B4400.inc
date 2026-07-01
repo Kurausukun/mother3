@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B4400:
+dt__21FiercePorkTrooperJump:
 	push {lr}
 	ldr r2, _080B4410
 	str r2, [r0, #0x1c]

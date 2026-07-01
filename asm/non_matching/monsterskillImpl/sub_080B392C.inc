@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B392C:
+dt__23CarpetMonsterYankCarpet:
 	push {lr}
 	ldr r2, _080B393C
 	str r2, [r0, #0x1c]

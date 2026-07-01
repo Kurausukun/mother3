@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B396C:
+action_f8__14BatteryManJumpP4Unit:
 	push {r4, r5, r6, lr}
 	sub sp, #0x10
 	adds r6, r0, #0

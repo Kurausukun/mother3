@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B04B0:
+__18MonsterComboAttackUsP4Unit:
 	push {r4, lr}
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
@@ -12,5 +12,5 @@ sub_080B04B0:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080B04C8: .4byte vt_09F6FB78
+_080B04C8: .4byte _vt.18MonsterComboAttack
 	.syntax divided

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B13D4:
+calcDidHit__13SoundAlarm2ndP4Unit:
 	push {r4, lr}
 	movs r4, #0
 	bl sub_08072DFC__Fv

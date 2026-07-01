@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B2B8C:
+dt__21WalkingBushieGreeting:
 	push {lr}
 	ldr r2, _080B2B9C
 	str r2, [r0, #0x1c]

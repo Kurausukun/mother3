@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B45E0:
+dt__18MonsterComboAttack:
 	push {lr}
 	ldr r2, _080B45F0
 	str r2, [r0, #0x1c]

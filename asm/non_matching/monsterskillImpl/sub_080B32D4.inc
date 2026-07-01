@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B32D4:
+dt__10PorkyCough:
 	push {lr}
 	ldr r2, _080B32E4
 	str r2, [r0, #0x1c]

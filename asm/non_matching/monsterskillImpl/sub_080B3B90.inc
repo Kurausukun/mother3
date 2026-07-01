@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B3B90:
+tellMissed__17MonsterPsiMagnetAP4Unit:
 	push {r4, lr}
 	sub sp, #0x10
 	adds r4, r0, #0

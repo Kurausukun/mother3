@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B4928:
+dt__19FishRoeManLeapMouth:
 	push {lr}
 	ldr r2, _080B4938
 	str r2, [r0, #0x1c]

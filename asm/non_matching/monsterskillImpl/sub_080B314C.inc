@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B314C:
+dt__14PaleGreenLight:
 	push {lr}
 	ldr r2, _080B315C
 	str r2, [r0, #0x1c]

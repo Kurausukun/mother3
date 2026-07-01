@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B195C:
+dt__24MonsterSixteenBeatAttack:
 	push {lr}
 	ldr r2, _080B196C
 	str r2, [r0, #0x1c]

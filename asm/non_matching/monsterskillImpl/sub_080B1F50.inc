@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B1F50:
+dt__16PigtuniaSowSeeds:
 	push {lr}
 	ldr r2, _080B1F60
 	str r2, [r0, #0x1c]

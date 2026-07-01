@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B05AC:
+__18PorkTankFireCannonUsP4Unit:
 	push {r4, lr}
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
@@ -12,5 +12,5 @@ sub_080B05AC:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080B05C4: .4byte vt_09F713A8
+_080B05C4: .4byte _vt.18PorkTankFireCannon
 	.syntax divided

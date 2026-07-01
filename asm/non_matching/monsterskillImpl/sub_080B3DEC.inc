@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B3DEC:
+dt__22MaskedManLightningBolt:
 	push {lr}
 	ldr r2, _080B3DFC
 	str r2, [r0, #0x1c]

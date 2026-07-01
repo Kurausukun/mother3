@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B4B14:
+action_a0__21MechaTurtleMachineGunP4Unit:
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0

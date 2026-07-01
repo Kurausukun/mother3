@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B4FC4:
+hitChance__C19DefaultMonsterSkill:
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	bl hitChance__C12MonsterSkill

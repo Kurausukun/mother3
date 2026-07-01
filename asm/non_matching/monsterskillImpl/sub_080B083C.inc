@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B083C:
+dt__17FireflyBuzzAround:
 	push {lr}
 	ldr r2, _080B084C
 	str r2, [r0, #0x1c]

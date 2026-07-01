@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B4DF0:
+tellResisted__19SpinSomethingAroundP4Unit:
 	push {r4, lr}
 	sub sp, #0x10
 	adds r1, r0, #0

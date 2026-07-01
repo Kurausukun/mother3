@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B2620:
+dt__15OhSoSnakeEmerge:
 	push {lr}
 	ldr r2, _080B2630
 	str r2, [r0, #0x1c]

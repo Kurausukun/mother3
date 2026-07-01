@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B4040:
+dt__13MonsterAttack:
 	push {lr}
 	ldr r2, _080B4050
 	str r2, [r0, #0x1c]

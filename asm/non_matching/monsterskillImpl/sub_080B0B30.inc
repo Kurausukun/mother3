@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B0B30:
+dt__15MonsterSkill237:
 	push {lr}
 	ldr r2, _080B0B40
 	str r2, [r0, #0x1c]

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B4288:
+onPlayAnim__21FiercePorkTrooperJumpP4Unitb:
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	adds r6, r1, #0

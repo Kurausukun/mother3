@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B3A2C:
+action_70__14BatteryManJump:
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	bl action_70__6Action

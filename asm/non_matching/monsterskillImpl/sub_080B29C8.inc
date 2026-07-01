@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B29C8:
+onSuccess__11CallForHelpP4Unit:
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}

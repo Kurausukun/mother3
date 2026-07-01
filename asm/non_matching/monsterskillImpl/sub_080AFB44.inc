@@ -9,7 +9,7 @@ create__25MonsterComboAttackFactoryUsP4Unit:
 	bl __builtin_new
 	adds r1, r4, #0
 	adds r2, r5, #0
-	bl sub_080B04B0
+	bl __18MonsterComboAttackUsP4Unit
 	pop {r4, r5}
 	pop {r1}
 	bx r1

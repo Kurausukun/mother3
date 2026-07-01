@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B331C:
+onInflictStatus__17MonsterPkFlash2ndP4Unit:
 	push {r4, r5, lr}
 	sub sp, #0x14
 	adds r4, r0, #0

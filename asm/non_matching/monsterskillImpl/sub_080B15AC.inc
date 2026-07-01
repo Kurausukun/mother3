@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B15AC:
+dt__24MissMarshmallowTickedOff:
 	push {lr}
 	ldr r2, _080B15BC
 	str r2, [r0, #0x1c]

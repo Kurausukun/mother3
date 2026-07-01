@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B1C9C:
+onSuccess__16MonsterPkFreezeGP4Unit:
 	push {r4, r5, r6, lr}
 	mov r6, sl
 	mov r5, sb

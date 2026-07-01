@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080AFFE0:
+__14CallForHelp3rdUsP4Unit:
 	push {r4, lr}
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
@@ -12,5 +12,5 @@ sub_080AFFE0:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080AFFF8: .4byte vt_09F68A80
+_080AFFF8: .4byte _vt.14CallForHelp3rd
 	.syntax divided

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B09F4:
+onSuccess__22MiracleFassadEmitLightP4Unit:
 	push {r4, r5, lr}
 	sub sp, #0x10
 	adds r4, r0, #0

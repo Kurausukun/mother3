@@ -9,7 +9,7 @@ create__29MaskedManLightningBoltFactoryUsP4Unit:
 	bl __builtin_new
 	adds r1, r4, #0
 	adds r2, r5, #0
-	bl sub_080B03C4
+	bl __22MaskedManLightningBoltUsP4Unit
 	pop {r4, r5}
 	pop {r1}
 	bx r1

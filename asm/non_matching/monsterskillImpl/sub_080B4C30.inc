@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B4C30:
+dt__18PorkTankFireCannon:
 	push {lr}
 	ldr r2, _080B4C40
 	str r2, [r0, #0x1c]

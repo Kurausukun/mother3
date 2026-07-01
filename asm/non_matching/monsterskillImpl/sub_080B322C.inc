@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B322C:
+tellMissed__20PigmaskMajorTimeBombP4Unit:
 	push {r4, lr}
 	sub sp, #0x10
 	adds r1, r0, #0

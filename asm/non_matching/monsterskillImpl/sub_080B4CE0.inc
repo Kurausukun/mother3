@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B4CE0:
+onPlayAnim__19SpinSomethingAroundP4Unitb:
 	push {r4, r5, r6, lr}
 	sub sp, #0x10
 	adds r4, r0, #0

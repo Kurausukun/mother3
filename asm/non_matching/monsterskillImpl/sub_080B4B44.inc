@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B4B44:
+sub_080B4B44__18PorkTankFireCannon:
 	push {r4, r5, r6, r7, lr}
 	sub sp, #4
 	adds r6, r1, #0

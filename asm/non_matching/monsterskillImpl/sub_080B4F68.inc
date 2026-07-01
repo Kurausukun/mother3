@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B4F68:
+playAnim__11ShootFlames:
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	movs r0, #0xc2

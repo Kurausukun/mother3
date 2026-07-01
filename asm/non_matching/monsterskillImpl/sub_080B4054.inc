@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B4054:
+action_150__19RhinocerocketCharge:
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, [r4, #0x4c]

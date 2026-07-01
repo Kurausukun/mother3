@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B3D48:
+userCritSfx__C26NewFassadMusicalHornAttack:
 	ldr r0, _080B3D4C
 	bx lr
 	.align 2, 0

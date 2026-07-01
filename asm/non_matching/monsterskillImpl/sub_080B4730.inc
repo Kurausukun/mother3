@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B4730:
+action_150__21PigmaskMajorThrowBomb:
 	push {r4, r5, r6, r7, lr}
 	sub sp, #0xc
 	adds r7, r0, #0

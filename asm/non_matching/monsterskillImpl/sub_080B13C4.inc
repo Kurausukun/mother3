@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B13C4:
+onSuccess__13SoundAlarm2ndP4Unit:
 	push {lr}
 	bl onSuccess__6ActionP4Unit
 	movs r0, #0xac

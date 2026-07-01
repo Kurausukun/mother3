@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B2D18:
+onSuccess__14MonsterSkillF1P4Unit:
 	push {r4, lr}
 	sub sp, #0x10
 	adds r4, r0, #0

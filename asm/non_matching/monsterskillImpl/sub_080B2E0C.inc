@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B2E0C:
+dt__17MonsterTurnAround:
 	push {lr}
 	ldr r2, _080B2E1C
 	str r2, [r0, #0x1c]

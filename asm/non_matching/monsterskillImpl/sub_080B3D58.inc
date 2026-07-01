@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B3D58:
+dt__26NewFassadMusicalHornAttack:
 	push {lr}
 	ldr r2, _080B3D68
 	str r2, [r0, #0x1c]

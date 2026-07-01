@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B4110:
+playSfx__19RhinocerocketCharge:
 	push {lr}
 	adds r1, r0, #0
 	ldr r0, [r1, #0x4c]

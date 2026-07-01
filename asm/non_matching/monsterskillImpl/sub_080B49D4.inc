@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B49D4:
+tellMissed__8HPSuckerP4Unit:
 	push {r4, lr}
 	sub sp, #0x10
 	adds r4, r0, #0

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B44A0:
+onAttack__22JealousBassJamSessionAP4Unit:
 	push {r4, r5, lr}
 	sub sp, #0x10
 	adds r4, r0, #0

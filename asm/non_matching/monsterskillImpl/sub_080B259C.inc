@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B259C:
+onSuccess__23SandLizardEatDungBeetleP4Unit:
 	push {r4, lr}
 	bl onSuccess__6ActionP4Unit
 	movs r0, #0x5d

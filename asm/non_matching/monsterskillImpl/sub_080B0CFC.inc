@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B0CFC:
+onSuccess__16TLCTreeBabyBirdsP4Unit:
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}

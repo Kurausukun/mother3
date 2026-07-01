@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B0DFC:
+onSuccess__17StrikeBarrierPoseP4Unit:
 	push {r4, r5, lr}
 	adds r4, r1, #0
 	bl onSuccess__6ActionP4Unit

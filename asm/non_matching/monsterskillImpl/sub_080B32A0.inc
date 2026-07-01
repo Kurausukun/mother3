@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B32A0:
+dt__20PigmaskMajorTimeBomb:
 	push {lr}
 	ldr r2, _080B32B0
 	str r2, [r0, #0x1c]

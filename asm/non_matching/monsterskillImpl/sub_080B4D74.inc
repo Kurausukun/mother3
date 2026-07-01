@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B4D74:
+onDamage__19SpinSomethingAroundP4Unit:
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	adds r6, r1, #0

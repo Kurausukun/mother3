@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B45F4:
+action_150__24NKCyborgEndOfCenturyBeam:
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r1, [r4, #0x1c]

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B4F54:
+dt__9BloodSuck:
 	push {lr}
 	ldr r2, _080B4F64
 	str r2, [r0, #0x1c]

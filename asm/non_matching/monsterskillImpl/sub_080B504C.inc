@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B504C:
+dt__19DefaultMonsterSkill:
 	push {lr}
 	ldr r2, _080B505C
 	str r2, [r0, #0x1c]

@@ -9,7 +9,7 @@ create__22MonsterSkill237FactoryUsP4Unit:
 	bl __builtin_new
 	adds r1, r4, #0
 	adds r2, r5, #0
-	bl sub_080AFD94
+	bl __15MonsterSkill237UsP4Unit
 	pop {r4, r5}
 	pop {r1}
 	bx r1

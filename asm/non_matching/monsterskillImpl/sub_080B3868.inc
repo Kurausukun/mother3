@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B3868:
+dt__14MonsterShieldA:
 	push {lr}
 	ldr r2, _080B3878
 	str r2, [r0, #0x1c]

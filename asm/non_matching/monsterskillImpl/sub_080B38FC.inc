@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B38FC:
+isResisted__23CarpetMonsterYankCarpetP4Unit:
 	push {r4, lr}
 	adds r4, r1, #0
 	bl isResisted__6ActionP4Unit

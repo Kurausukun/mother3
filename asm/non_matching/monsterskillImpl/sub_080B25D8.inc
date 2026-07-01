@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B25D8:
+tellUseMessage__15OhSoSnakeEmerge:
 	push {r4, lr}
 	adds r4, r0, #0
 	bl tellUseMessage__6Action

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B2054:
+calcDidHit__14CallForHelp3rdP4Unit:
 	push {r4, lr}
 	movs r0, #0
 	movs r1, #0x63

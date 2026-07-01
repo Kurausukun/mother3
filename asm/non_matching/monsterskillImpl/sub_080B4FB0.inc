@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B4FB0:
+dt__11ShootFlames:
 	push {lr}
 	ldr r2, _080B4FC0
 	str r2, [r0, #0x1c]

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B2E20:
+onFail__12ShieldKillerP4Unit:
 	push {r4, r5, r6, r7, lr}
 	sub sp, #0x14
 	adds r6, r0, #0

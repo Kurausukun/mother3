@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B27D4:
+dt__12MonsterGetUp:
 	push {lr}
 	ldr r2, _080B27E4
 	str r2, [r0, #0x1c]

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080AFD5C:
+__13SoundAlarm3rdUsP4Unit:
 	push {r4, lr}
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
@@ -12,5 +12,5 @@ sub_080AFD5C:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080AFD74: .4byte vt_09F64CB0
+_080AFD74: .4byte _vt.13SoundAlarm3rd
 	.syntax divided

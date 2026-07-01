@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B47E0:
+action_150__14ExplosiveBlast:
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r1, [r4, #0x1c]

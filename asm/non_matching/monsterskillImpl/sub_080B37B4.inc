@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B37B4:
+onInflictStatus__14MonsterShieldAP4Unit:
 	push {r4, r5, r6, lr}
 	mov r6, sb
 	mov r5, r8

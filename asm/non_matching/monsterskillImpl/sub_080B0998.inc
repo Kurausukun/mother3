@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B0998:
+dt__13SoundAlarm3rd:
 	push {lr}
 	ldr r2, _080B09A8
 	str r2, [r0, #0x1c]

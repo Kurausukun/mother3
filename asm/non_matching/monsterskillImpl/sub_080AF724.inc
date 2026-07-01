@@ -9,7 +9,7 @@ create__22DropFromCeilingFactoryUsP4Unit:
 	bl __builtin_new
 	adds r1, r4, #0
 	adds r2, r5, #0
-	bl sub_080B00DC
+	bl __15DropFromCeilingUsP4Unit
 	pop {r4, r5}
 	pop {r1}
 	bx r1

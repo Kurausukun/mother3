@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B3498:
+dt__18MonsterPsiCounterA:
 	push {lr}
 	ldr r2, _080B34A8
 	str r2, [r0, #0x1c]

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B32B4:
+onInflictStatus__10PorkyCoughP4Unit:
 	push {r4, lr}
 	adds r4, r1, #0
 	adds r0, r4, #0

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B4AE8:
+calcDidHit__8HPSuckerP4Unit:
 	push {lr}
 	movs r0, #0
 	movs r1, #0x63

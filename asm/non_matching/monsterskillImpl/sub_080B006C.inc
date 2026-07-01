@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B006C:
+__15OhSoSnakeEmergeUsP4Unit:
 	push {r4, lr}
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
@@ -12,5 +12,5 @@ sub_080B006C:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080B0084: .4byte vt_09F697F8
+_080B0084: .4byte _vt.15OhSoSnakeEmerge
 	.syntax divided

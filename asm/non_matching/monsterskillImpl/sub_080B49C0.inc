@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B49C0:
+dt__21MrGenetorDischargeZap:
 	push {lr}
 	ldr r2, _080B49D0
 	str r2, [r0, #0x1c]

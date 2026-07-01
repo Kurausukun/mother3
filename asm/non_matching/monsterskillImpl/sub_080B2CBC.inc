@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B2CBC:
+tellUseMessage__14CallForHelp2nd:
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _080B2CD4

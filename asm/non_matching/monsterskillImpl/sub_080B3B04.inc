@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B3B04:
+tellMissed__17MonsterPkThunderAP4Unit:
 	push {r4, lr}
 	sub sp, #0x10
 	adds r1, r0, #0

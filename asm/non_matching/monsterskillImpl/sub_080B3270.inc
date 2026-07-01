@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B3270:
+calcDidHit__20PigmaskMajorTimeBombP4Unit:
 	push {lr}
 	adds r0, r1, #0
 	ldr r1, [r0, #0x1c]

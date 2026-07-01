@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B4584:
+dt__16ClaymanCrashDown:
 	push {lr}
 	ldr r2, _080B4594
 	str r2, [r0, #0x1c]

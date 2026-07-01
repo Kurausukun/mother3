@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080AFDCC:
+__16TLCTreeBabyBirdsUsP4Unit:
 	push {r4, lr}
 	adds r4, r0, #0
 	lsls r1, r1, #0x10
@@ -12,5 +12,5 @@ sub_080AFDCC:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080AFDE4: .4byte vt_09F65770
+_080AFDE4: .4byte _vt.16TLCTreeBabyBirds
 	.syntax divided

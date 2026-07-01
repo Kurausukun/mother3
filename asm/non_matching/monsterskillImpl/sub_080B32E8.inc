@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B32E8:
+onInflictStatus__13PowerUpSystemP4Unit:
 	push {r4, lr}
 	adds r4, r1, #0
 	adds r0, r4, #0

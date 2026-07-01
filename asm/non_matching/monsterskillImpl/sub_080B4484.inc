@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B4484:
+dt__22JealousBassJamSessionB:
 	push {lr}
 	ldr r2, _080B4494
 	str r2, [r0, #0x1c]

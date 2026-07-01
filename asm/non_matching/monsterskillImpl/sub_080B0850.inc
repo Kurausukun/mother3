@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B0850:
+tellMissed__13SoundAlarm3rdP4Unit:
 	push {r4, lr}
 	sub sp, #0x10
 	adds r1, r0, #0

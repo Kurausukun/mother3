@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B2970:
+dt__15DropFromCeiling:
 	push {lr}
 	ldr r2, _080B2980
 	str r2, [r0, #0x1c]

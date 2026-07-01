@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B0E50:
+dt__17StrikeBarrierPose:
 	push {lr}
 	ldr r2, _080B0E60
 	str r2, [r0, #0x1c]

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B2F70:
+dt__12ShieldKiller:
 	push {lr}
 	ldr r2, _080B2F80
 	str r2, [r0, #0x1c]

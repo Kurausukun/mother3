@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B2764:
+tellUseMessage__10SoundAlarm:
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _080B277C

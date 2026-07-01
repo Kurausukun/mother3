@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B2F84:
+sub_080B2F84__14PaleGreenLight:
 	ldr r0, _080B2F90
 	lsls r1, r1, #1
 	adds r1, r1, r0

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B0CA4:
+dt__17MechaStartBeeping:
 	push {lr}
 	ldr r2, _080B0CB4
 	str r2, [r0, #0x1c]

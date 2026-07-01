@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B1468:
+dt__23MrGenetorFinishCharging:
 	push {lr}
 	ldr r2, _080B1478
 	str r2, [r0, #0x1c]

@@ -9,7 +9,7 @@ create__24StrikeBarrierPoseFactoryUsP4Unit:
 	bl __builtin_new
 	adds r1, r4, #0
 	adds r2, r5, #0
-	bl sub_080AFDE8
+	bl __17StrikeBarrierPoseUsP4Unit
 	pop {r4, r5}
 	pop {r1}
 	bx r1

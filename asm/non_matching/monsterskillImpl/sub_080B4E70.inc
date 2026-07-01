@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B4E70:
+onPlayAnim__9BloodSuckP4Unitb:
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}

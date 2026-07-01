@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B2588:
+dt__13GooeyGooSplit:
 	push {lr}
 	ldr r2, _080B2598
 	str r2, [r0, #0x1c]

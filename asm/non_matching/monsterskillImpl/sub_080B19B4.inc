@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B19B4:
+onSuccess__14MonsterSkill94P4Unit:
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb

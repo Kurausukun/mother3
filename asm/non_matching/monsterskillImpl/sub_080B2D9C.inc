@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B2D9C:
+onSuccess__17MonsterTurnAroundP4Unit:
 	push {r4, lr}
 	adds r4, r0, #0
 	bl onSuccess__6ActionP4Unit

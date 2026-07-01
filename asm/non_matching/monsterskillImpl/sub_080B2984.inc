@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B2984:
+tellMissed__11CallForHelpP4Unit:
 	push {r4, lr}
 	sub sp, #0x10
 	adds r1, r0, #0

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B480C:
+dt__14ExplosiveBlast:
 	push {lr}
 	ldr r2, _080B481C
 	str r2, [r0, #0x1c]

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B0DE8:
+dt__16TLCTreeBabyBirds:
 	push {lr}
 	ldr r2, _080B0DF8
 	str r2, [r0, #0x1c]

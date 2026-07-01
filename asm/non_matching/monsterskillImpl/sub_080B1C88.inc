@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B1C88:
+dt__19MonsterLookOtherWay:
 	push {lr}
 	ldr r2, _080B1C98
 	str r2, [r0, #0x1c]

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B00DC:
+__15DropFromCeilingUsP4Unit:
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	lsls r1, r1, #0x10
@@ -29,6 +29,6 @@ _080B010A:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080B0118: .4byte vt_09F6A2B8
+_080B0118: .4byte _vt.15DropFromCeiling
 _080B011C: .4byte gUnknown_080F9558
 	.syntax divided

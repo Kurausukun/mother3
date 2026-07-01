@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B3D6C:
+onAttack__22MaskedManLightningBoltP4Unit:
 	push {r4, lr}
 	adds r0, r1, #0
 	bl tryCastPlayer__5GoodsP4Unit

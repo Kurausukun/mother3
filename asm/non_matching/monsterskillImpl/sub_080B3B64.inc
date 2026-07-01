@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B3B64:
+calcDidHit__17MonsterPkThunderAP4Unit:
 	push {lr}
 	movs r0, #0
 	movs r1, #0x63

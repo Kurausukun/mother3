@@ -1,5 +1,5 @@
 	.syntax unified
-nullsub_142:
+playAnim__17MonsterPkThunderA:
 	bx lr
 	.align 2, 0
 	.syntax divided

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B1DBC:
+dt__16MonsterPkFreezeG:
 	push {lr}
 	ldr r2, _080B1DCC
 	str r2, [r0, #0x1c]

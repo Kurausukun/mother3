@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B33D0:
+dt__17MonsterPkFlash2nd:
 	push {lr}
 	ldr r2, _080B33E0
 	str r2, [r0, #0x1c]

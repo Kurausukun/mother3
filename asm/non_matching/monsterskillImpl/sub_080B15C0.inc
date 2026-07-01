@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B15C0:
+onSuccess__25FiercePorkTrooperAngerMaxP4Unit:
 	push {r4, r5, r6, lr}
 	adds r4, r1, #0
 	bl onSuccess__6ActionP4Unit

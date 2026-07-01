@@ -1,5 +1,5 @@
 	.syntax unified
-sub_080B4598:
+action_a0__26LordPassionThrowEverythingP4Unit:
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	adds r5, r1, #0
