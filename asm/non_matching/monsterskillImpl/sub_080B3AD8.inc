@@ -10,5 +10,5 @@ name__C14MonsterPkLoveA:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080B3AEC: .4byte gUnknown_02004F14
+_080B3AEC: .4byte gSave+0x6B4 @ gSave.fav_thing
 	.syntax divided

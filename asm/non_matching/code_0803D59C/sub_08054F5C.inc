@@ -9,7 +9,7 @@ sub_08054F5C:
 	ldr r0, _08054F6C
 	b _08054FAE
 	.align 2, 0
-_08054F6C: .4byte gUnknown_02004EE2
+_08054F6C: .4byte gSave+0x682 @ gSave.hinawa_name
 _08054F70:
 	subs r0, #5
 	lsls r0, r0, #0x10
@@ -19,7 +19,7 @@ _08054F70:
 	ldr r0, _08054F80
 	b _08054FAE
 	.align 2, 0
-_08054F80: .4byte gUnknown_02004EF2
+_08054F80: .4byte gSave+0x692 @ gSave.claus_name
 _08054F84:
 	adds r0, r4, #0
 	bl sub_08001D70

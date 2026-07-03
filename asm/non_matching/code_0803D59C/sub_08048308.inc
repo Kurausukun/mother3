@@ -64,17 +64,17 @@ _0804839E:
 	ldr r1, _080483A4
 	b _080483BA
 	.align 2, 0
-_080483A4: .4byte gUnknown_02004EE2
+_080483A4: .4byte gSave+0x682 @ gSave.hinawa_name
 _080483A8:
 	ldr r1, _080483AC
 	b _080483BA
 	.align 2, 0
-_080483AC: .4byte gUnknown_02004F02
+_080483AC: .4byte gSave+0x6A2 @ gSave.fav_food
 _080483B0:
 	ldr r1, _080483B4
 	b _080483BA
 	.align 2, 0
-_080483B4: .4byte gUnknown_02004F14
+_080483B4: .4byte gSave+0x6B4 @ gSave.fav_thing
 _080483B8:
 	ldr r1, _080483C4
 _080483BA:
@@ -83,7 +83,7 @@ _080483BA:
 	bl sub_080484FC
 	b _080483DA
 	.align 2, 0
-_080483C4: .4byte gUnknown_02004F26
+_080483C4: .4byte gSave+0x6C6 @ gSave.playername_short
 _080483C8:
 	ldr r1, _080483D4
 	adds r0, r5, #0
@@ -91,7 +91,7 @@ _080483C8:
 	bl sub_080484FC
 	b _080483DA
 	.align 2, 0
-_080483D4: .4byte gUnknown_02004F38
+_080483D4: .4byte gSave+0x6D8 @ gSave.playername
 _080483D8:
 	adds r0, r5, #0
 _080483DA:

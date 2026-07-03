@@ -12,7 +12,7 @@ _0802A992:
 	movs r0, #1
 	b _0802A9B0
 	.align 2, 0
-_0802A9A0: .4byte gUnknown_02004FEE
+_0802A9A0: .4byte gSave+0x78E @ gSave._78e
 _0802A9A4:
 	adds r0, r1, #1
 	lsls r0, r0, #0x10

@@ -88,7 +88,7 @@ _0802A970:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0802A97C: .4byte gUnknown_02004FEE
+_0802A97C: .4byte gSave+0x78E @ gSave._78e
 _0802A980: .4byte gSave
 _0802A984: .4byte 0x0000078E
 _0802A988: .4byte 0x0000078A

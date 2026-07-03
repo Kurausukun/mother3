@@ -111,7 +111,7 @@ _0802B268: .4byte 0x0000071E
 _0802B26C: .4byte 0x0000071B
 _0802B270: .4byte gUnknown_020041E8
 _0802B274: .4byte gUnknown_0200E06F
-_0802B278: .4byte gUnknown_02004F70
+_0802B278: .4byte gSave+0x710 @ gSave._710
 _0802B27C:
 	movs r0, #4
 	bl sub_0802B8C4
@@ -221,7 +221,7 @@ _0802B354: .4byte 0x00000735
 _0802B358: .4byte gUnknown_020042C0
 _0802B35C: .4byte gUnknown_0200E06F
 _0802B360: .4byte 0x0000072A
-_0802B364: .4byte gUnknown_02004F8A
+_0802B364: .4byte gSave+0x72A @ gSave._72a
 _0802B368:
 	movs r0, #0
 _0802B36A:

@@ -50,7 +50,7 @@ _08055BB4:
 	bl copyText
 	b _08055BD2
 	.align 2, 0
-_08055BC0: .4byte gUnknown_02004F26
+_08055BC0: .4byte gSave+0x6C6 @ gSave.playername_short
 _08055BC4: .4byte gUnknown_0201ABFA
 _08055BC8:
 	ldr r0, _08055BD8
@@ -61,6 +61,6 @@ _08055BD2:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08055BD8: .4byte gUnknown_02004F38
+_08055BD8: .4byte gSave+0x6D8 @ gSave.playername
 _08055BDC: .4byte gUnknown_0201AC1A
 	.syntax divided

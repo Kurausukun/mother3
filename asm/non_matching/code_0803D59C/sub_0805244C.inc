@@ -81,5 +81,5 @@ _080524CC:
 	bx r0
 	.align 2, 0
 _080524E4: .4byte gGoodsInfo+0x4
-_080524E8: .4byte gUnknown_02004870
+_080524E8: .4byte gSave+0x10 @ gSave.key_items
 	.syntax divided

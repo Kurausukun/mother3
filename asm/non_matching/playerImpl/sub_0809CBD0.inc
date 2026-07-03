@@ -108,5 +108,5 @@ _0809CC9E:
 	.align 2, 0
 _0809CCAC: .4byte gCharStats
 _0809CCB0: .4byte gLevelStatTable
-_0809CCB4: .4byte gUnknown_02004F94
+_0809CCB4: .4byte gSave+0x734 @ gSave._734
 	.syntax divided
