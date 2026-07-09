@@ -1,5 +1,4 @@
 #include "battle/guestSkillImpl.h"
-#include "global.h"
 
 void* GuestSkill24Factory::create(u16 id, Unit* user) {
     return new GuestSkill24(id, user);
