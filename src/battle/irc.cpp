@@ -117,21 +117,18 @@ void Irc::sub_08069BEC(u32 a1, Intr2 a2) {
     enableAll();
 }
 
-// // single instruction regswap
-// Irc::sub_08069C24(u32 idx, u32 unused, Intr2 x, u16 irq_set)
-extern "C" NONMATCH("asm/non_matching/BattleFader/sub_08069C24.inc",
-                    void sub_08069C24__3IrcUiUiG5Intr2Us(Irc* thisx, u32 idx, u32 unused, Intr2& x,
-                                                         u16 irq_set)) {
+extern "C" void sub_08069C24__3IrcUiUiG5Intr2Us(Irc* thisx, u32 idx, u32 unused, Intr2 x, 
+                                                        u16 irq_set) {
     Interrupt* i = &thisx->mIntrs[idx];
     i->states[i->enabled] = unused;
-    i->_18[i->enabled] = x;
-    if (!i->enabled) {
+    Interrupt* offset_i = (Interrupt*)((Intr2*)i + i->enabled);
+    offset_i->_18[0] = x;
+    if (i->enabled == 0) {
         REG_IE |= (1 << idx);
         REG_DISPSTAT |= irq_set;
     }
     i->enabled++;
 }
-END_NONMATCH
 
 void Irc::sub_08069C84(u32 a1, Intr2 a2) {
     disableAll();

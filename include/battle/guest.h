@@ -42,10 +42,7 @@ public:
     void object_20() override {}
     void object_28() override {}
     u32 object_30() override { return 0; }
-    void object_38() override {
-        num_active_listeners = 0;
-        lifetime = 0;
-    }
+    Object38_s16r2_t object_38() override { return Object38_s16r2_t(); }
     void object_40() override {
         num_active_listeners = 0;
         lifetime = 0;

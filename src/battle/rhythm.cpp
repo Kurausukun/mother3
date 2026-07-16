@@ -26,6 +26,8 @@ extern "C" Action* create__10PsiFactoryUsP4Unit(u16 arg0, Unit* user);          
 extern "C" Action* create__12GoodsFactoryUsP4UnitUs(u16 arg0, Unit* arg1, u16 arg2);  // TODO: confirm return type
 extern "C" Action* create__17GuestSkillFactoryUsP4Unit(u16 arg0, Unit* user);                      // TODO: confirm return type
 
+extern "C" s32 Remainder(s32, s32);
+
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_080736F8.inc", void sub_080736F8());
 extern "C" ASM_FUNC("asm/non_matching/rhythm/hitPlayer.inc", void hitPlayer());
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_0807392C.inc", void sub_0807392C());
@@ -242,7 +244,128 @@ extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_080747F4.inc", void sub_080747F
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08074854.inc", void sub_08074854());
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_0807487C.inc", void sub_0807487C());
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08074898.inc", void sub_08074898());
-extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_0807489C.inc", void sub_0807489C());
-extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_080748C8.inc", void sub_080748C8());
+extern "C" void sub_0807489C(RhythmBgm *rhythmGame) {
+    const u32 RHYTHM_LAG_OFFSET = 1;
+    s32 tick = rhythmGame->getPlayerClock();
+    rhythmGame->field_44 = Remainder(tick + RHYTHM_LAG_OFFSET, 0x18);
+    rhythmGame->field_40++;
+}
+
+//Fake Match
+extern "C" u32 vt_8RhythmIn asm("_vt.8RhythmIn");
+extern "C" u32 vt_9RhythmOut asm("_vt.9RhythmOut");
+extern "C" u32 vt_5Event asm("_vt.5Event");
+//End Fake Match
+extern "C" void sub_080748C8(RhythmBgm* rhythmGame) {;
+
+    //Meter Reset & Delta Calculation
+    if (rhythmGame->field_44 < rhythmGame->field_48) {
+            rhythmGame->field_50 = rhythmGame->field_40 - rhythmGame->field_4C;
+            rhythmGame->field_4C = rhythmGame->field_40;
+
+            u32 field44 = rhythmGame->field_44;
+            s32 field52 = rhythmGame->_pad52 - 0x18;
+            field44 -= field52;
+            rhythmGame->_pad54 = field44;
+            rhythmGame->_pad52 = rhythmGame->field_44;
+    }
+
+    rhythmGame->field_48 = rhythmGame->field_44; 
+    u32 previousHitState = rhythmGame->field_58;
+    //this is gross but needed for the match
+    s32 meterMax = (u16)rhythmGame->field_50;
+    s32 maxVal = 0;
+    s32 temp = 1; 
+    if (temp < meterMax) temp = meterMax; 
+    maxVal = temp;
+    //End Grossness
+    u32 scaledTick = rhythmGame->field_44 * maxVal;
+    u32 newHitState;
+    u8 greatWindow = ((u8*)rhythmGame->rhythmData)[4];
+
+    if ((scaledTick <= (greatWindow * 24)) ||
+        (scaledTick >= ((maxVal - greatWindow) * 24))) {
+        newHitState = 0;
+    }
+    else {
+        u8 goodWindow = (((u8*)rhythmGame->rhythmData)[5]);
+
+        if ((scaledTick <= ((goodWindow) * 24)) ||
+            (scaledTick >= ((maxVal - (goodWindow)) * 24))) {
+            newHitState = 1;
+        }
+        else {
+            newHitState = 2;
+        }
+    }
+
+    rhythmGame->field_58 = newHitState;
+
+    //Fake Match here I think
+    volatile u32* pHitState = &rhythmGame->field_58;
+
+    //Fake Match defs and boilerplate lol
+    struct VTableEntry {
+        s16 offset;
+        s16 pad;
+        void* emit;
+    };
+
+    enum BaseVTableIndex {
+        BASE_VT_DTOR_DELETING,  // 0
+        BASE_VT_DTOR_COMPLETE,  // 1
+        BASE_VT_GET_RTTI,       // 2
+        BASE_VT_1C,             // 3
+        BASE_VT_24,             // 4
+        BASE_VT_2C,             // 5
+        BASE_VT_34,             // 6
+        BASE_VT_LISTEN,         // 7
+        BASE_VT_44,             // 8
+        BASE_VT_4C,             // 9
+        BASE_VT_EMIT,           // 10
+        BASE_VT_5C,             // 11
+        BASE_VT_CLEARNULL       // 12
+    };
+
+    const u32 BASE_CLASS_VTABLE_LOCATION = sizeof(Base) - sizeof(void*);
+    const u32 BASE_EMIT_VTABLE_OFFSET = BASE_VT_EMIT * sizeof(VTableEntry);
+
+    if (previousHitState == 2) {
+        if (*pHitState != 2) {
+            VTableEntry* thunk = (VTableEntry*)(*(u8**)((u8*)rhythmGame + BASE_CLASS_VTABLE_LOCATION) + BASE_EMIT_VTABLE_OFFSET);
+            Base* receiver = (Base*)((u8*)rhythmGame + thunk->offset);
+
+            Base event;
+
+            void** eventVptr = (void**)((u8*)&event + BASE_CLASS_VTABLE_LOCATION);
+            void* restoreVtable = (void*)&vt_5Event;
+
+            //This is probably pointing to the vtable of a enterHitWindow event, vtable only appears to modify destructor and rtti
+            *eventVptr = (void*)&vt_8RhythmIn;
+            typedef s32 (*Emit_t)(Base*, Base*);
+            ((Emit_t)thunk->emit)(receiver, &event);
+            *eventVptr = restoreVtable;
+        }
+    } else if (*pHitState == 2) {
+        /*  The issue is that doing just this->emit() is because I can't get the virtual function address loading idioms to occur before the event constructor executes.
+            Ideally it would grab the address for this->emit then construct the event, then emit that event? Perhaps I need to do this->emit(event()), maybe someone who is more
+            familier with event creation then emit calling idioms in the codebase could help. Maybe this occurs elseware?   */
+
+        VTableEntry* thunk = (VTableEntry*)(*(u8**)((u8*)rhythmGame + BASE_CLASS_VTABLE_LOCATION) + BASE_EMIT_VTABLE_OFFSET );
+        Base* receiver = (Base*)((u8*)rhythmGame + thunk->offset);
+
+        Base event;
+
+        void** eventVptr = (void**)((u8*)&event + BASE_CLASS_VTABLE_LOCATION);
+        void* restoreVtable = (void*)&vt_5Event;
+
+        //This is probably pointing to the vtable of a exitHitWindow event, vtable only appears to modify destructor and rtti
+        *eventVptr = (void*)&vt_9RhythmOut;
+        typedef s32 (*Emit_t)(Base*, Base*);
+        ((Emit_t)thunk->emit)(receiver, &event);
+        *eventVptr = restoreVtable;
+    }
+    //End Fake Match
+}
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_080749D8.inc", void _GLOBAL_I_RhythmBgmRTTI());
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08074A1C.inc", void __9RhythmBgm());

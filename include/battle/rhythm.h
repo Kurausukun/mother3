@@ -42,7 +42,8 @@ struct RhythmBgm : Sound {
     u32 field_4C;            // 0x4c
     u16 field_50;            // 0x50
     u16 _pad52;              // 0x52 padding
-    u32 _pad54;              // 0x54 gap
+    u16 _pad54;              // 0x54 gap
+    u16 _pad56;              // 0x56 gap
     u32 field_58;            // 0x58
     u8 field_5C;             // 0x5c
 };
