@@ -5,23 +5,16 @@
 #include "structs.h"
 #include "battle/sound.h"
 
-// (existing includes already bring in Base, Event, Singleton, RTTI macros, etc.)
-#include "battle/sound.h"   // brings Base, Event, etc.
-
-// ---------- RhythmIn / RhythmOut event classes ----------
 class RhythmIn : public Event {
 public:
-    virtual ~RhythmIn();
     virtual void* getRTTI() asm("getRTTI__RhythmIn");
 };
 
 class RhythmOut : public Event {
 public:
-    virtual ~RhythmOut();
     virtual void* getRTTI();
 };
 
-// ---------- RTTI singletons ----------
 RTTI_DECL(RhythmIn);
 RTTI_DECL(RhythmOut);
 RTTI_DECL(RhythmBgm);

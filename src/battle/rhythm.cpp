@@ -289,15 +289,9 @@ extern "C" void sub_0807489C(RhythmBgm *rhythmGame) {
     rhythmGame->field_40++;
 }
 
-extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_080748C8.inc", void sub_080748C8());
-/*
-//Fake Match
-extern "C" u32 vt_8RhythmIn asm("_vt.8RhythmIn");
-extern "C" u32 vt_9RhythmOut asm("_vt.9RhythmOut");
-extern "C" u32 vt_5Event asm("_vt.5Event");
-//End Fake Match
+
 extern "C" void sub_080748C8(RhythmBgm* rhythmGame) {;
-    //PERFECT MATCH START
+
     //Meter Reset & Delta Calculation
     if (rhythmGame->field_44 < rhythmGame->field_48) {
             rhythmGame->field_50 = rhythmGame->field_40 - rhythmGame->field_4C;
@@ -310,17 +304,17 @@ extern "C" void sub_080748C8(RhythmBgm* rhythmGame) {;
             rhythmGame->_pad52 = rhythmGame->field_44;
     }
 
-    rhythmGame->field_48 = rhythmGame->field_44; 
+    rhythmGame->field_48 = rhythmGame->field_44;
     u32 previousHitState = rhythmGame->field_58;
-    //this is gross but needed for the match
     s32 meterMax = (u16)rhythmGame->field_50;
     s32 maxVal = 0;
     s32 temp = 1; 
     if (temp < meterMax) temp = meterMax; 
     maxVal = temp;
-    //End Grossness
+
     u32 scaledTick = rhythmGame->field_44 * maxVal;
     u32 newHitState;
+
     u8 greatWindow = ((u8*)rhythmGame->rhythmData)[4];
 
     if ((scaledTick <= (greatWindow * 24)) ||
@@ -339,70 +333,13 @@ extern "C" void sub_080748C8(RhythmBgm* rhythmGame) {;
         }
     }
 
-    rhythmGame->field_58 = newHitState;
-    //PERFECT MATCH END
-
-    //Fake Match here I think
+    rhythmGame->field_58 = newHitState;      
     volatile u32* pHitState = &rhythmGame->field_58;
 
-    //Fake Match defs and boilerplate lol
-    struct VTableEntry {
-        s16 offset;
-        s16 pad;
-        void* emit;
-    };
-
-    enum BaseVTableIndex {
-        BASE_VT_GET_RTTI,       // 2
-        BASE_VT_1C,             // 3
-        BASE_VT_24,             // 4
-        BASE_VT_2C,             // 5
-        BASE_VT_34,             // 6
-        BASE_VT_LISTEN,         // 7
-        BASE_VT_44,             // 8
-        BASE_VT_4C,             // 9
-        BASE_VT_EMIT,           // 10
-        BASE_VT_5C,             // 11
-        BASE_VT_CLEARNULL       // 12
-    };
-
-    const u32 BASE_CLASS_VTABLE_LOCATION = sizeof(Base) - sizeof(void*);
-    const u32 BASE_EMIT_VTABLE_OFFSET = BASE_VT_EMIT * sizeof(VTableEntry);
-
     if (previousHitState == 2) {
-        if (*pHitState != 2) {
-            VTableEntry* thunk = (VTableEntry*)(*(u8**)((u8*)rhythmGame + BASE_CLASS_VTABLE_LOCATION) + BASE_EMIT_VTABLE_OFFSET);
-            Base* receiver = (Base*)((u8*)rhythmGame + thunk->offset);
-
-            Base event;
-
-            void** eventVptr = (void**)((u8*)&event + BASE_CLASS_VTABLE_LOCATION);
-            void* restoreVtable = (void*)&vt_5Event;
-
-            //This is probably pointing to the vtable of a enterHitWindow event, vtable only appears to modify destructor and rtti
-            *eventVptr = (void*)&vt_8RhythmIn;
-            typedef s32 (*Emit_t)(Base*, Base*);
-            ((Emit_t)thunk->emit)(receiver, &event);
-            *eventVptr = restoreVtable;
-        }
-    } else if (*pHitState == 2) {
-        /*  The issue is that doing just this->emit() is because I can't get the virtual function address loading idioms to occur before the event constructor executes.
-            Ideally it would grab the address for this->emit then construct the event, then emit that event? Perhaps I need to do this->emit(event()), maybe someone who is more
-            familier with event creation then emit calling idioms in the codebase could help. Maybe this occurs elseware?   
-
-        VTableEntry* thunk = (VTableEntry*)(*(u8**)((u8*)rhythmGame + BASE_CLASS_VTABLE_LOCATION) + BASE_EMIT_VTABLE_OFFSET );
-        Base* receiver = (Base*)((u8*)rhythmGame + thunk->offset);
-
-        Base event;
-
-        void** eventVptr = (void**)((u8*)&event + BASE_CLASS_VTABLE_LOCATION);
-        void* restoreVtable = (void*)&vt_5Event;
-
-        //This is probably pointing to the vtable of a exitHitWindow event, vtable only appears to modify destructor and rtti
-        *eventVptr = (void*)&vt_9RhythmOut;
-        typedef s32 (*Emit_t)(Base*, Base*);
-        ((Emit_t)thunk->emit)(receiver, &event);
-        *eventVptr = restoreVtable;
+        if (*pHitState != 2) rhythmGame->emit(RhythmIn());
+    } else {
+        if (*pHitState == 2) rhythmGame->emit(RhythmOut());
     }
-    //End Fake Match
-}*/
+}
+

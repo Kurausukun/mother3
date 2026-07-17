@@ -1,3 +1,4 @@
+@ ORPHANED: matched in C/C++; kept for refere	
 	.syntax unified
 __9RhythmBgm:
 	push {r4, lr}
