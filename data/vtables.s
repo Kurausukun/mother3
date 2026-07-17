@@ -93624,7 +93624,7 @@ _vt.9RhythmBgm::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807473C
+	.4byte _._9RhythmBgm
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__9RhythmBgm

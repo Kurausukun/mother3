@@ -10,9 +10,6 @@
 #include "battle/unitTarget.h"
 #include "global.h"
 
-extern u32 sRhythmInRTTI;  // TODO: confirm type
-extern u32 sRhythmOutRTTI;  // TODO: confirm type
-extern u32 sRhythmBgmRTTI;  // TODO: confirm type
 extern Intr2 callback_sub_0807489C;
 extern ClockData callback_sub_080748C8;
 
@@ -27,9 +24,43 @@ extern "C" Action* create__12GoodsFactoryUsP4UnitUs(u16 arg0, Unit* arg1, u16 ar
 extern "C" Action* create__17GuestSkillFactoryUsP4Unit(u16 arg0, Unit* user);                      // TODO: confirm return type
 
 extern "C" s32 Remainder(s32, s32);
+extern "C" bool IsPlayer(Unit*);
+extern void* __builtin_new(s32);
+extern "C" void sub_08085FB0(s32, s32, s32 *);
+bool statusWearOff(Unit* unit, Status::Type type, bool print);
 
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_080736F8.inc", void sub_080736F8());
-extern "C" ASM_FUNC("asm/non_matching/rhythm/hitPlayer.inc", void hitPlayer());
+extern "C" s32 hitPlayer(Unit *arg0, s32 arg1, bool arg2) {
+
+    if (arg0->hasStatus(Status::Endure) == true) {
+        arg1 = 0;
+    }    
+    s32 temp_sb = arg0->hpReal();
+    arg0->setHP(arg0->hpReal() - arg1);
+    arg0->unit_170(arg0->unit_200() + arg1);
+
+    if (arg2 == 1) {
+        s32 temp_r5 = (s32)__builtin_new(0xAC);
+        Object38_s16r2_t sp34 = arg0->object_38();
+        sub_08085FB0(temp_r5, arg1, (s32*)&sp34);
+
+        if (IsPlayer(arg0) == true) {
+            if (arg0->hpReal() <= 0) {
+                PlayAnimation(0x4D, arg0, arg0);
+                ROMStrFmt(0x7B, arg0->name(), Msg(), Msg()).print(Color(), 1);
+            }
+        }
+    }
+
+    if ((s32)(temp_sb - arg0->hpReal()) > 0) {
+        if (arg0->hpReal() > 0) {
+            if ((arg0->hasStatus(Status::Sleep) == true) && (randS32(0, 0x63) <= 0x27)) {
+                statusWearOff(arg0, Status::Sleep, arg2);
+            }
+        }
+    }
+    return temp_sb - arg0->hpReal();
+}
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_0807392C.inc", void sub_0807392C());
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08073ABC.inc", void sub_08073ABC());
 extern "C" ASM_FUNC("asm/non_matching/rhythm/InitHeal.inc", void InitHeal());
@@ -187,29 +218,9 @@ extern "C" void sub_08074518(s32 min, s32 max, s32 duration, bool r3, bool r4, b
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_0807459C__FUsiii.inc", void sub_0807459C__FUsiii());
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08074614.inc", void sub_08074614());
 
-extern "C" u32* sub_08074630() {
-    return &sRhythmInRTTI;
-}
-
-extern "C" u32* getRTTI__RhythmIn() {
-    return sub_08074630();
-}
-
-extern "C" u32* sub_08074644() {
-    return &sRhythmOutRTTI;
-}
-
-extern "C" u32* getRTTI__9RhythmOut() {
-    return sub_08074644();
-}
-
-extern "C" u32* sub_08074658() {
-    return &sRhythmBgmRTTI;
-}
-
-extern "C" u32* getRTTI__9RhythmBgm() {
-    return sub_08074658();
-}
+RTTI_IMPL(RhythmIn);
+RTTI_IMPL(RhythmOut);
+RTTI_IMPL(RhythmBgm);
 
 RhythmBgm::RhythmBgm(u16 songNum) : Sound(songNum) {
     rhythmData = GetRhythmDataBySongNum(this, songNum);
@@ -237,13 +248,40 @@ extern "C" const RhythmInfo* GetRhythmDataBySongNum(RhythmBgm* game, u16 songNum
     return gRhythmData;
 }
 
-extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_0807473C.inc", void sub_0807473C());
-extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_0807476C.inc", void sub_0807476C());
-extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_080747CC.inc", void sub_080747CC());
+RhythmBgm::~RhythmBgm() {
+    IrcManager::get()->sub_08069C84((u32)this, callback_sub_0807489C);
+}
+extern "C" u16 sub_080747CC(void*, u16);
+extern "C" void sub_0807476C(RhythmBgm* arg0) {
+
+    u32 temp_r0 = arg0->field_5C - 1;
+    arg0->field_5C = temp_r0;
+    if ((temp_r0 << 0x18) == 0) {
+        arg0->setup(sub_080747CC(arg0, arg0->getIndex()));
+        arg0->play(0x00);
+    }
+}
+extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_080747CC.inc", u16 sub_080747CC(void*, u16));
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_080747F4.inc", void sub_080747F4());
-extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08074854.inc", void sub_08074854());
-extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_0807487C.inc", void sub_0807487C());
-extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08074898.inc", void sub_08074898());
+
+extern u32 gUnknown_081135A8;
+extern "C" u16 sub_08074854(RhythmBgm* arg0, u16 arg1) {
+    for(u32 var_r3 = 0, *var_r2 = &gUnknown_081135A8; ((s32)var_r3 <= 0x38); var_r2++, var_r3++) {
+        u16* temp = (u16*)var_r2;
+        if (temp[0] == arg1) return temp[1];
+    } 
+    return 0;
+}
+
+extern "C" s32 sub_0807066C(s32, s32);
+extern "C" s32 sub_0807487C(RhythmBgm* arg0) {
+    return sub_0807066C(0x64 * arg0->_pad54, arg0->field_50);
+}
+
+extern "C" s32 sub_08074898(RhythmBgm* arg0) {
+    return arg0->field_58;
+}
+
 extern "C" void sub_0807489C(RhythmBgm *rhythmGame) {
     const u32 RHYTHM_LAG_OFFSET = 1;
     s32 tick = rhythmGame->getPlayerClock();
@@ -251,13 +289,15 @@ extern "C" void sub_0807489C(RhythmBgm *rhythmGame) {
     rhythmGame->field_40++;
 }
 
+extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_080748C8.inc", void sub_080748C8());
+/*
 //Fake Match
 extern "C" u32 vt_8RhythmIn asm("_vt.8RhythmIn");
 extern "C" u32 vt_9RhythmOut asm("_vt.9RhythmOut");
 extern "C" u32 vt_5Event asm("_vt.5Event");
 //End Fake Match
 extern "C" void sub_080748C8(RhythmBgm* rhythmGame) {;
-
+    //PERFECT MATCH START
     //Meter Reset & Delta Calculation
     if (rhythmGame->field_44 < rhythmGame->field_48) {
             rhythmGame->field_50 = rhythmGame->field_40 - rhythmGame->field_4C;
@@ -300,6 +340,7 @@ extern "C" void sub_080748C8(RhythmBgm* rhythmGame) {;
     }
 
     rhythmGame->field_58 = newHitState;
+    //PERFECT MATCH END
 
     //Fake Match here I think
     volatile u32* pHitState = &rhythmGame->field_58;
@@ -312,8 +353,6 @@ extern "C" void sub_080748C8(RhythmBgm* rhythmGame) {;
     };
 
     enum BaseVTableIndex {
-        BASE_VT_DTOR_DELETING,  // 0
-        BASE_VT_DTOR_COMPLETE,  // 1
         BASE_VT_GET_RTTI,       // 2
         BASE_VT_1C,             // 3
         BASE_VT_24,             // 4
@@ -349,7 +388,7 @@ extern "C" void sub_080748C8(RhythmBgm* rhythmGame) {;
     } else if (*pHitState == 2) {
         /*  The issue is that doing just this->emit() is because I can't get the virtual function address loading idioms to occur before the event constructor executes.
             Ideally it would grab the address for this->emit then construct the event, then emit that event? Perhaps I need to do this->emit(event()), maybe someone who is more
-            familier with event creation then emit calling idioms in the codebase could help. Maybe this occurs elseware?   */
+            familier with event creation then emit calling idioms in the codebase could help. Maybe this occurs elseware?   
 
         VTableEntry* thunk = (VTableEntry*)(*(u8**)((u8*)rhythmGame + BASE_CLASS_VTABLE_LOCATION) + BASE_EMIT_VTABLE_OFFSET );
         Base* receiver = (Base*)((u8*)rhythmGame + thunk->offset);
@@ -366,6 +405,4 @@ extern "C" void sub_080748C8(RhythmBgm* rhythmGame) {;
         *eventVptr = restoreVtable;
     }
     //End Fake Match
-}
-extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_080749D8.inc", void _GLOBAL_I_RhythmBgmRTTI());
-extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08074A1C.inc", void __9RhythmBgm());
+}*/

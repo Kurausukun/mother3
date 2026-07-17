@@ -1,3 +1,4 @@
+@ ORPHANED: matched in C/C++; kept for reference.
 	.syntax unified
 sub_0807487C:
 	push {lr}

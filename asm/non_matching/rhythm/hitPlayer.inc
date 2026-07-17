@@ -1,3 +1,4 @@
+@ ORPHANED: matched in C/C++; kept for reference.
 	.syntax unified
 hitPlayer:
 	push {r4, r5, r6, r7, lr}
