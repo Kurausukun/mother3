@@ -30,7 +30,7 @@ bool statusWearOff(Unit* unit, Status::Type type, bool print);
 
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_080736F8.inc", void sub_080736F8());
 extern "C" s32 hitPlayer(Unit *arg0, s32 arg1, bool arg2) {
-
+    static const s32 SLEEP_WEAR_OFF_CHANCE = 0x27;
     if (arg0->hasStatus(Status::Endure) == true) {
         arg1 = 0;
     }    
@@ -53,7 +53,7 @@ extern "C" s32 hitPlayer(Unit *arg0, s32 arg1, bool arg2) {
 
     if ((s32)(temp_sb - arg0->hpReal()) > 0) {
         if (arg0->hpReal() > 0) {
-            if ((arg0->hasStatus(Status::Sleep) == true) && (randS32(0, 0x63) <= 0x27)) {
+            if ((arg0->hasStatus(Status::Sleep) == true) && (randS32(0, 0x63) <= SLEEP_WEAR_OFF_CHANCE)) {
                 statusWearOff(arg0, Status::Sleep, arg2);
             }
         }
