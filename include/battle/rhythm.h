@@ -5,20 +5,6 @@
 #include "structs.h"
 #include "battle/sound.h"
 
-class RhythmIn : public Event {
-public:
-    virtual void* getRTTI() asm("getRTTI__RhythmIn");
-};
-
-class RhythmOut : public Event {
-public:
-    virtual void* getRTTI();
-};
-
-RTTI_DECL(RhythmIn);
-RTTI_DECL(RhythmOut);
-RTTI_DECL(RhythmBgm);
-
 struct ComboRhythm {
     ComboRhythm(s16 a, s16 b) : a(a), b(b) {}
 
@@ -44,6 +30,20 @@ private:
     u8 filler[0x11a];
 };
 
+class RhythmIn : public Event {
+public:
+    virtual void* getRTTI() asm("getRTTI__RhythmIn");
+};
+
+RTTI_DECL(RhythmIn);
+
+class RhythmOut : public Event {
+public:
+    virtual void* getRTTI();
+};
+
+RTTI_DECL(RhythmOut);
+
 struct RhythmBgm : Sound {
     RhythmBgm() : Sound() {}
     RhythmBgm(u16 songNum);
@@ -63,6 +63,8 @@ struct RhythmBgm : Sound {
     u32 field_58;            // 0x58
     u8 field_5C;             // 0x5c
 };
+
+RTTI_DECL(RhythmBgm);
 
 extern "C" const RhythmInfo* GetRhythmDataBySongNum(RhythmBgm* game, u16 songNum);
 

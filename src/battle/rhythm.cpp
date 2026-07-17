@@ -25,7 +25,6 @@ extern "C" Action* create__17GuestSkillFactoryUsP4Unit(u16 arg0, Unit* user);   
 
 extern "C" s32 Remainder(s32, s32);
 extern "C" bool IsPlayer(Unit*);
-extern void* __builtin_new(s32);
 extern "C" void sub_08085FB0(s32, s32, s32 *);
 bool statusWearOff(Unit* unit, Status::Type type, bool print);
 
@@ -40,7 +39,7 @@ extern "C" s32 hitPlayer(Unit *arg0, s32 arg1, bool arg2) {
     arg0->unit_170(arg0->unit_200() + arg1);
 
     if (arg2 == 1) {
-        s32 temp_r5 = (s32)__builtin_new(0xAC);
+        s32 temp_r5 = (s32)(::operator new(0xAC));
         Object38_s16r2_t sp34 = arg0->object_38();
         sub_08085FB0(temp_r5, arg1, (s32*)&sp34);
 
@@ -214,9 +213,23 @@ extern "C" void sub_08074518(s32 min, s32 max, s32 duration, bool r3, bool r4, b
         setsleep(1);
     }
 }
-
-extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_0807459C__FUsiii.inc", void sub_0807459C__FUsiii());
-extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08074614.inc", void sub_08074614());
+class vt_09F80770 : public Base {
+public:
+    virtual bool sub_08070478(void* arg1, void* arg2, void* arg3, bool arg4);     // sub_08070478 (0x70)
+    virtual bool sub_08070578();           // sub_08070578 (0x74)
+    virtual void* sub_0807058C();           // sub_0807058C (0x78)
+};
+extern "C" vt_09F80770* sub_080725C8();    
+extern "C" void sub_0807459C__FUsiii(u16 arg0, void* arg1, void* arg2, bool arg3) {
+    if (arg0 != 0) {
+        sub_080725C8()->sub_08070478(arg1, new RhythmBgm(arg0), arg2, arg3);
+    } else {
+        sub_080725C8()->sub_08070478(arg1, 0, arg2, arg0);
+    }
+}
+extern "C" void* sub_08074614() {
+    return sub_080725C8()->sub_0807058C();
+}
 
 RTTI_IMPL(RhythmIn);
 RTTI_IMPL(RhythmOut);
@@ -251,20 +264,29 @@ extern "C" const RhythmInfo* GetRhythmDataBySongNum(RhythmBgm* game, u16 songNum
 RhythmBgm::~RhythmBgm() {
     IrcManager::get()->sub_08069C84((u32)this, callback_sub_0807489C);
 }
-extern "C" u16 sub_080747CC(void*, u16);
+extern "C" u16 sub_080747CC(RhythmBgm*, u16);
 extern "C" void sub_0807476C(RhythmBgm* arg0) {
-
-    u32 temp_r0 = arg0->field_5C - 1;
-    arg0->field_5C = temp_r0;
-    if ((temp_r0 << 0x18) == 0) {
+    if ((--arg0->field_5C << 0x18) == 0) {
         arg0->setup(sub_080747CC(arg0, arg0->getIndex()));
         arg0->play(0x00);
     }
 }
-extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_080747CC.inc", u16 sub_080747CC(void*, u16));
-extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_080747F4.inc", void sub_080747F4());
-
 extern u32 gUnknown_081135A8;
+extern "C" u16 sub_080747CC(RhythmBgm* arg0, u16 arg1) {
+    for(u32 var_r3 = 0, *var_r2 = &gUnknown_081135A8; ((s32)var_r3 <= 0x38); var_r2++, var_r3++) {
+        u16* temp = (u16*)var_r2;
+        if (temp[1] == arg1) return temp[0];
+    } 
+    return 0;
+}
+extern "C" u16 sub_08074854(RhythmBgm* arg0, u16 arg1);
+extern "C" void sub_080747F4(RhythmBgm* arg0) {
+    if ((arg0->field_5C++ << 0x18) == 0) {
+        arg0->setup(sub_08074854(arg0, arg0->getIndex()));
+        arg0->play(0x00);
+    }
+}
+
 extern "C" u16 sub_08074854(RhythmBgm* arg0, u16 arg1) {
     for(u32 var_r3 = 0, *var_r2 = &gUnknown_081135A8; ((s32)var_r3 <= 0x38); var_r2++, var_r3++) {
         u16* temp = (u16*)var_r2;
