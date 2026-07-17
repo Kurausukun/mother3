@@ -313,8 +313,6 @@ extern "C" void sub_0807489C(RhythmBgm *rhythmGame) {
 
 
 extern "C" void sub_080748C8(RhythmBgm* rhythmGame) {;
-
-    //Meter Reset & Delta Calculation
     if (rhythmGame->field_44 < rhythmGame->field_48) {
             rhythmGame->field_50 = rhythmGame->field_40 - rhythmGame->field_4C;
             rhythmGame->field_4C = rhythmGame->field_40;
