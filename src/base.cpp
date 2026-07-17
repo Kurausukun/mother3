@@ -607,8 +607,81 @@ _08068E8E:\n\
 	.align 2, 0\n\
     ");
 }
+void Base::emit(const Base &clock) {
+    
+    Vector<Listener*> *var_r8;
+    void *temp_r3 = ((Base&)clock).getRTTI();
+    void **sp0 = &temp_r3; //Might be a fake match? Hard to think of ways to get the compiler to emit a stack write that never gets read
 
-NAKED
+    SafeVector<Dispatcher> *temp_r0 = &this->outgoing;
+    s32 var_r2 = 0;
+    for (var_r2 = 0; var_r2 < temp_r0->size(); ++var_r2) {
+        
+        Dispatcher *var_r1 = temp_r0->data() + var_r2;
+        
+        if (var_r1->_0 == *sp0){
+            var_r8 = &var_r1->listeners;
+            goto dispatcher_handler;
+        }
+    }
+
+    var_r8 = NULL;
+    
+dispatcher_handler:
+    
+    if (var_r8 == 0) return;
+    
+    s32 var_r7 = var_r8->size();  
+    this->num_active_listeners++;
+    
+    for (s32 var_r5 = 0; var_r5 < var_r7; var_r5++) {
+
+
+        u32 offset = var_r5 * (sizeof(Listener *));
+        Listener **var_r2_2 = (Listener **)((u8 *)var_r8->data() + offset);
+        Listener *temp_r3_2 = *var_r2_2;
+        if (temp_r3_2 != NULL) { //If the listener exists
+            //Have this dispatcher emit to selected listener
+            (temp_r3_2->receiver->*(temp_r3_2->callback))((Base&)clock);
+            //Member pointer
+
+        } else {
+        
+            s32 temp_r3_3 = var_r8->size();
+            if (var_r5 < temp_r3_3) {
+                s32 temp = var_r5 + 1;
+                s32 temp_r0_2 = temp_r3_3 - temp;
+                
+
+                Listener** src = var_r2_2 + 1; 
+                
+                if (temp_r0_2 > 0) {
+                    s32 amountToCopy = temp_r0_2;
+                    Listener** dst = var_r2_2;
+                    do {
+                        *dst++ = *src++;
+                        amountToCopy--;
+                    } while (amountToCopy != 0);
+                }
+                
+                *(s32 *)((u8 *)var_r8 + 4) = (*(s32 *)((u8 *)var_r8 + 4) - 1);  //This is left in for right now because this member is private. Can fix later during class refactor
+            }
+            var_r5 -= 1;
+            var_r7 -= 1;
+        }
+    }
+
+    
+    s32 temp_r0_4 = (u16)(this->num_active_listeners) - 1;
+    this->num_active_listeners = temp_r0_4;
+    
+    if (((s16)temp_r0_4 <= 0)) {
+        if ((1 & this->lifetime)) {
+            delete this; //apparently calling the destructor uses flag 2 but delete uses flag 3
+        }
+    }
+}
+/*NAKED
 void Base::emit(const Base& base) {
     asm_unified("\n\
 	push {r4, r5, r6, r7, lr}\n\
@@ -771,7 +844,7 @@ _08068FB4:\n\
 	pop {r0}\n\
 	bx r0\n\
     ");
-}
+}*/
 
 NAKED
 void Base::releaseIncoming() {

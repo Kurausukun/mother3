@@ -29,7 +29,7 @@ struct Listener {
     Base* sender;
     Base* trigger;
     Base* receiver;
-    u32 callback;
+    void (Base::*callback)(Base&);
     u32 flags;
 };
 
