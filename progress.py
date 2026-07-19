@@ -5,13 +5,20 @@ import json
 import os
 import re
 
+
+def strip_comments(text):
+    # Remove block comments first, then line comments.
+    text = re.sub(r'/\*.*?\*/', '', text, flags=re.DOTALL)
+    text = re.sub(r'//.*', '', text)
+    return text
+
 def collect_non_matching_funcs():
     result = []
     for root, dirs, files in os.walk('src'):
         for file in files:
             if file.endswith('.cpp'):
                 with open(os.path.join(root, file), 'r') as f:
-                    data = f.read()
+                    data = strip_comments(f.read())
                     # Find all NONMATCH and ASM_FUNC macros
                     for match in re.findall(r'(NONMATCH|ASM_FUNC)\(".*",\W*\w*\W*(\w*).*\)', data):
                         result.append(match)

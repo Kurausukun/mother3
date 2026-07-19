@@ -1417,6 +1417,7 @@ extern "C" void sub_080088AC(u16 arg0, u16 arg1, u16 arg2, u16 arg3) {
     
     gSomeBlend._11C8B++;
 }
+
 //extern "C" ASM_FUNC("asm/non_matching/rom/draw_message.inc", void draw_message());
 extern "C" void sub_080089E0();
 extern "C" void sub_080089F0(void*);
@@ -1463,7 +1464,15 @@ extern "C" void draw_message(void) {
     
 
 }
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_080089E0.inc", void sub_080089E0());
+
+//extern "C" ASM_FUNC("asm/non_matching/rom/sub_080089E0.inc", void sub_080089E0());
+extern "C" void sub_08008F0C(void*);                                 /* extern */
+extern u8 gUnknown_0201B7A0;
+//Could be autogened code? Very small func. Just keep that in mind for later class refactoring
+extern "C" void sub_080089E0(void) {
+    sub_08008F0C(&gUnknown_0201B7A0);
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080089F0.inc", void sub_080089F0());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008BAC.inc", void sub_08008BAC());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008C28.inc", void sub_08008C28());
@@ -1486,7 +1495,7 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009A48.inc", void sub_08009A48()
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009AF4.inc", void sub_08009AF4());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009B98.inc", void sub_08009B98());
 //extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009C4C.inc", void sub_08009C4C());
-extern u8 gUnknown_0201B7A0;
+
 extern "C"void* sub_08009C4C(u16 arg0, u16 arg1) {
     return ((arg0 + (arg1 * 0x22)) * 4) + &gUnknown_0201B7A0;
 }
