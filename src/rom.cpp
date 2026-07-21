@@ -326,7 +326,7 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001EA4.inc", void sub_08001EA4()
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001F50.inc", void sub_08001F50());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001FB4.inc", void sub_08001FB4());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08002104.inc", void sub_08002104());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08002254.inc", void sub_08002254());
+extern "C" ASM_FUNC("asm/non_matching/rom/sub_08002254.inc", u16 sub_08002254(u16, u16));
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080023A4.inc", void sub_080023A4());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080023E0.inc", void sub_080023E0());
 
@@ -1480,7 +1480,18 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008C70.inc", void sub_08008C70()
 extern "C" ASM_FUNC("asm/non_matching/rom/nullsub_63.inc", void nullsub_63());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008D3C.inc", void sub_08008D3C());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008E08.inc", void sub_08008E08());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008ECC.inc", void sub_08008ECC());
+//extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008ECC.inc", void sub_08008ECC());
+typedef struct mystruct {
+    s16 _0;
+    s16 _2;
+};
+extern "C" void sub_08008ECC(u8* arg0,u8* arg1, mystruct* arg2) {
+    s32 temp_r0 = arg1 - arg0;
+    temp_r0 = Divide(temp_r0, 4);
+    arg2->_0 = (s16) (sub_08002FD4(temp_r0, 0x22) * 0xC);
+    arg2->_2 = (s16) ((&gSomeBlend)->_11C89 * Divide(temp_r0, 0x22));
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008F0C.inc", void sub_08008F0C());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009264.inc", void sub_08009264());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080092B0.inc", void sub_080092B0());
@@ -1496,7 +1507,7 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009AF4.inc", void sub_08009AF4()
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009B98.inc", void sub_08009B98());
 //extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009C4C.inc", void sub_08009C4C());
 
-extern "C"void* sub_08009C4C(u16 arg0, u16 arg1) {
+extern "C" void* sub_08009C4C(u16 arg0, u16 arg1) {
     return ((arg0 + (arg1 * 0x22)) * 4) + &gUnknown_0201B7A0;
 }
 
@@ -1504,7 +1515,11 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009C68.inc", void sub_08009C68()
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009C84.inc", void sub_08009C84());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009CD8.inc", void sub_08009CD8());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009D6C.inc", void sub_08009D6C());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009DDC.inc", void sub_08009DDC());
+//extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009DDC.inc", void sub_08009DDC());
+extern "C" u16 sub_08009DDC(u16 arg0) {
+    if ((gSomeBlend._11C92_1)) return gSomeBlend._11C88;  
+    return sub_08002254((gSomeBlend._11C92_2), arg0);
+}
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009E18.inc", void sub_08009E18());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009E38.inc", void sub_08009E38());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009F10.inc", void sub_08009F10());

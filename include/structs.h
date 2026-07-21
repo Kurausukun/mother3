@@ -547,7 +547,10 @@ typedef struct struct_02016028 {
     u8 _c5b6[0xC61C - 0xC5B6];
     u32 _c61c;
     void* _C620;
-    u8 pad_C624[0x11C8B - 0xC624];
+    u8 pad_C624[0x11C88 - 0xC624];
+    u8 _11C88;
+    u8 _11C89;
+    u8 pad_11C8A;
     u8 _11C8B;
     u8 pad_11C8C[0x11C92 - 0x11C8C];
     u8 _11C92_1 : 1;
