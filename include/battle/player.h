@@ -6,6 +6,7 @@
 class Player : public Unit {
 public:
     Player();
+    Player(u16, u16);
     virtual ~Player();
 
     virtual void player_2c0();
@@ -61,6 +62,7 @@ public:
         Kumatora = 0x4,
         Boney = 0x5,
         Salsa = 0x6,
+        Claus = 0xD,
         NUM_PLAYERS = 0x7,
     };
 };

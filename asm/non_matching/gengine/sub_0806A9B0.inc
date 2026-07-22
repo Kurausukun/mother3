@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0806A9B0:
+destroy__14GEngineManager:
 	push {r4, r5, lr}
 	ldr r1, _0806A9E4
 	ldr r0, [r1]
@@ -27,6 +27,6 @@ _0806A9DC:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0806A9E4: .4byte gUnknown_02001CD8
-_0806A9E8: .4byte gUnknown_02001CDC
+_0806A9E4: .4byte _14GEngineManager.mSingletonGuard
+_0806A9E8: .4byte _14GEngineManager.mSingleton
 	.syntax divided

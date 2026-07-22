@@ -197,7 +197,7 @@ _0806F1A2:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0806F1E0: .4byte _vt.3Unk
+_0806F1E0: .4byte _vt.5Event
 _0806F1E4: .4byte _vt.8AppClock
-_0806F1E8: .4byte gUnknown_081006B4
+_0806F1E8: .4byte callback_sub_0806F380
 	.syntax divided

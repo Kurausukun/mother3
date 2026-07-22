@@ -74,7 +74,7 @@ _0808B178: .4byte vt_09F85A30
 _0808B17C: .4byte 0x00000291
 _0808B180: .4byte 0x00000283
 _0808B184: .4byte _vt.6ResPtr
-_0808B188: .4byte _vt.3Unk
+_0808B188: .4byte _vt.5Event
 _0808B18C: .4byte _vt.11PreAppClock
-_0808B190: .4byte gUnknown_081178C4
+_0808B190: .4byte callback_sub_0808B1B8
 	.syntax divided

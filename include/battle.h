@@ -3,6 +3,7 @@
 
 #include "base.h"
 #include "singleton.h"
+#include "battle/keyFocusManager.h"
 
 class Unit;
 class Player;
@@ -152,7 +153,9 @@ struct Sequencer {
 class Battle : public Base {
 public:
     Battle();
+    Battle(u16 id);
     virtual ~Battle() override;
+    virtual void* getRTTI();
 
     virtual void battle_68();
     virtual void battle_70();
@@ -216,8 +219,6 @@ public:
 
     bool setBattleResult(s32, bool force);
     void sub_0805DC1C();
-    void sub_0805DC6C();
-    void sub_0805DDE4();
     Player* tryKillPlayer(Unit*);
     Player* getNextPlayer(Unit*);
     void sub_0805E808();
@@ -239,58 +240,75 @@ public:
     MonsterInfo* mMonsterInfo;
     Class2* _58;
     Sequencer* _5c;
+    KeyFocuser keyFocuser;
 };
 
-class RoundBegin : public Unk {
+class RoundBegin : public Event {
 public:
-    RoundBegin() : t(0) {}
-    RoundBegin(u16 t) : t(t) {}
+    RoundBegin() : mRoundNo(0) {}
+    RoundBegin(u16 r) : mRoundNo(r) {}
     virtual ~RoundBegin() {}
+    virtual void* getRTTI();
+    u16 round() { return mRoundNo; }
 
-    u16 t;
+    u16 mRoundNo;
 };
 
-class RoundEnd : public Unk {
+class RoundEnd : public Event {
 public:
-    RoundEnd() : t(0) {}
-    RoundEnd(u16 t) : t(t) {}
+    RoundEnd() : mRoundNo(0) {}
+    RoundEnd(u16 r) : mRoundNo(r) {}
     virtual ~RoundEnd() {}
+    virtual void* getRTTI();
+    u16 round() { return mRoundNo; }
 
-    u16 t;
+    u16 mRoundNo;
 };
 
-struct UnitTurnBegin : public Unk {
+struct UnitTurnBegin : public Event {
     UnitTurnBegin() {}
-    UnitTurnBegin(Unit* u) : u(u) {}
+    UnitTurnBegin(Unit* u) : mUnit(u) {}
     virtual ~UnitTurnBegin() {}
+    virtual void* getRTTI();
+    Unit* unit() { return mUnit; }
 
-    Unit* u;
+    Unit* mUnit;
 };
 
-struct UnitTurnEnd : public Unk {
+struct UnitTurnEnd : public Event {
     UnitTurnEnd() {}
-    UnitTurnEnd(Unit* u) : u(u) {}
+    UnitTurnEnd(Unit* u) : mUnit(u) {}
     virtual ~UnitTurnEnd() {}
+    virtual void* getRTTI();
+    Unit* unit() { return mUnit; }
 
-    Unit* u;
+    Unit* mUnit;
 };
 
-struct ShowDownAsWin : public Unk {
-    ShowDownAsWin() {}
+struct ShowDownAsWin : public Event {
     virtual ~ShowDownAsWin() {}
+    virtual void* getRTTI();
 };
 
-struct ShowDownAsLose : public Unk {
-    ShowDownAsLose() {}
+struct ShowDownAsLose : public Event {
     virtual ~ShowDownAsLose() {}
+    virtual void* getRTTI();
 };
 
-struct ShowDownAsEscape : public Unk {
-    ShowDownAsEscape() {}
+struct ShowDownAsEscape : public Event {
     virtual ~ShowDownAsEscape() {}
+    virtual void* getRTTI();
 };
 
-SINGLETON_DECL(Battle);
+RTTI_DECL(RoundBegin);
+RTTI_DECL(RoundEnd);
+RTTI_DECL(UnitTurnBegin);
+RTTI_DECL(UnitTurnEnd);
+RTTI_DECL(ShowDownAsWin);
+RTTI_DECL(ShowDownAsLose);
+RTTI_DECL(ShowDownAsEscape);
+
+MANAGER_DECL(Battle);
 
 extern "C" bool IsBossBattle();
 extern "C" s32 randS32_(u32, u32);

@@ -86,7 +86,7 @@ _08083DAC:
 	movs r0, #0xfc
 	lsls r0, r0, #4
 	add r0, sl
-	bl sub_08071F8C
+	bl __10KeyFocuser
 	movs r4, #0
 	add r0, sp, #0x38
 	strb r4, [r0]
@@ -297,9 +297,9 @@ _08083FB8: .4byte _vt.6ResPtr
 _08083FBC: .4byte gUnknown_08CE39F8
 _08083FC0: .4byte vt_09F83E40
 _08083FC4: .4byte 0x00000289
-_08083FC8: .4byte _vt.3Unk
+_08083FC8: .4byte _vt.5Event
 _08083FCC: .4byte _vt.9AKeyPress
-_08083FD0: .4byte gUnknown_0810E028
+_08083FD0: .4byte callback_sub_0808431C
 _08083FD4: .4byte _vt.13AKeyLongPress
 _08083FD8: .4byte _vt.9LKeyPress
 _08083FDC: .4byte _vt.13LKeyLongPress

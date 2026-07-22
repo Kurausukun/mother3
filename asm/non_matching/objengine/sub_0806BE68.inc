@@ -43,7 +43,7 @@ _0806BE86:
 	ldr r2, _0806BF4C
 	adds r0, r7, r2
 	str r1, [r0]
-	bl sub_0806A974
+	bl makeInstance__14GEngineManager
 	adds r4, r0, #0
 	ldr r1, _0806BF50
 	bl sub_0806AFA4
@@ -88,7 +88,7 @@ _0806BE86:
 	add r0, sp, #4
 	movs r1, #2
 	bl _._4Base
-	bl sub_0806C428
+	bl makeInstance__17ObjChrPoolManager
 	bl makeInstance__17ObjPltPoolManager
 	adds r0, r7, #0
 	add sp, #0x28
@@ -101,9 +101,9 @@ _0806BF44: .4byte 0x00000834
 _0806BF48: .4byte 0x00000938
 _0806BF4C: .4byte 0x00000B4C
 _0806BF50: .4byte 0x0000EF9F
-_0806BF54: .4byte _vt.3Unk
+_0806BF54: .4byte _vt.5Event
 _0806BF58: .4byte _vt.8SysClock
-_0806BF5C: .4byte gUnknown_080FF3FC
+_0806BF5C: .4byte callback_sub_0806C1D8
 _0806BF60: .4byte _vt.12PostSysClock
-_0806BF64: .4byte gUnknown_080FF404
+_0806BF64: .4byte callback_sub_0806C3DC
 	.syntax divided

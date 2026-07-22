@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0806E4C4:
+destroy__16FntSystemManager:
 	push {r4, r5, lr}
 	ldr r1, _0806E4F8
 	ldr r0, [r1]
@@ -27,6 +27,6 @@ _0806E4F0:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0806E4F8: .4byte gUnknown_02001E64
-_0806E4FC: .4byte gUnknown_02001E68
+_0806E4F8: .4byte _16FntSystemManager.mSingletonGuard
+_0806E4FC: .4byte _16FntSystemManager.mSingleton
 	.syntax divided

@@ -19,7 +19,7 @@ init_battle:
 	adds r0, r0, r2
 	ldr r1, [r1, #4]
 	bl _call_via_r1
-	bl sub_0805D880
+	bl destroy__13BattleManager
 	bl destroy__13SystemManager
 	bl destroy__15SystemAllocator
 	pop {r0}

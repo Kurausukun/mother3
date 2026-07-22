@@ -1,7 +1,7 @@
 	.syntax unified
-sub_0805D8BC:
+getRTTI__6Battle:
 	push {lr}
-	bl sub_0805D82C
+	bl manager__13BattleManager
 	pop {r1}
 	bx r1
 	.align 2, 0

@@ -30,11 +30,11 @@ private:
     u8 filler[0x11a];
 };
 
-struct RhythmGame : Sound {
-    RhythmGame(u16 songNum);
-    virtual ~RhythmGame();
+struct RhythmBgm : Sound {
+    RhythmBgm(u16 songNum);
+    virtual ~RhythmBgm();
 
-    u32 _38;  
+    u32 _38;
     const RhythmInfo* rhythmData;  // 0x3c
     u32 field_40;            // 0x40
     u32 field_44;            // 0x44
@@ -47,7 +47,7 @@ struct RhythmGame : Sound {
     u8 field_5C;             // 0x5c
 };
 
-extern "C" const RhythmInfo* GetRhythmDataBySongNum(RhythmGame* game, u16 songNum);
+extern "C" const RhythmInfo* GetRhythmDataBySongNum(RhythmBgm* game, u16 songNum);
 
 extern const RhythmInfo gRhythmData[];
 

@@ -1,7 +1,7 @@
 	.syntax unified
 sub_08086C78:
 	push {lr}
-	bl sub_08065D98
+	bl get__13SndMonManager
 	ldr r1, [r0, #0x1c]
 	adds r1, #0x88
 	movs r3, #0

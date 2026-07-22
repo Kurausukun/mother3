@@ -7,7 +7,7 @@ sub_0806BC3C:
 	push {r5, r6, r7}
 	sub sp, #8
 	str r0, [sp]
-	bl sub_0806A9A4
+	bl get__14GEngineManager
 	adds r7, r0, #0
 	movs r0, #0
 	mov sl, r0

@@ -10,21 +10,21 @@
 #include "battle/unitTarget.h"
 #include "global.h"
 
-extern u32 gUnknown_02002134;  // TODO: confirm type
-extern u32 gUnknown_02002128;  // TODO: confirm type
-extern u32 gUnknown_0200211C;  // TODO: confirm type
-extern Intr2 gUnknown_08105CD0;
-extern ClockData gUnknown_08105CD8;
+extern u32 sRhythmInRTTI;  // TODO: confirm type
+extern u32 sRhythmOutRTTI;  // TODO: confirm type
+extern u32 sRhythmBgmRTTI;  // TODO: confirm type
+extern Intr2 callback_sub_0807489C;
+extern ClockData callback_sub_080748C8;
 
 extern "C" s32 sub_08069558(s32 min, s32 max, s32 step, s32 duration);
 extern "C" BattleFader* sub_08072568();
 extern "C" BattleFader* sub_08072588();
 extern "C" BattleFader* sub_080725A8();
-extern "C" Action* sub_08064574(u16 arg0);
-extern "C" void* sub_08061A4C(u16 arg0);                      // TODO: confirm return type
-extern "C" void* sub_08064950(u16 arg0);                      // TODO: confirm return type
-extern "C" void* sub_08065148(u16 arg0, u32 arg1, u16 arg2);  // TODO: confirm return type
-extern "C" void* sub_08062368(u16 arg0);                      // TODO: confirm return type
+extern "C" Action* create__19MonsterSkillFactoryUsP4Unit(u16 arg0, Unit* user);
+extern "C" Action* create__18PlayerSkillFactoryUsP4Unit(u16 arg0, Unit* user);                      // TODO: confirm return type
+extern "C" Action* create__10PsiFactoryUsP4Unit(u16 arg0, Unit* user);                      // TODO: confirm return type
+extern "C" Action* create__12GoodsFactoryUsP4UnitUs(u16 arg0, Unit* arg1, u16 arg2);  // TODO: confirm return type
+extern "C" Action* create__17GuestSkillFactoryUsP4Unit(u16 arg0, Unit* user);                      // TODO: confirm return type
 
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_080736F8.inc", void sub_080736F8());
 extern "C" ASM_FUNC("asm/non_matching/rhythm/hitPlayer.inc", void hitPlayer());
@@ -34,41 +34,53 @@ extern "C" ASM_FUNC("asm/non_matching/rhythm/InitHeal.inc", void InitHeal());
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08073CF0.inc", void sub_08073CF0());
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08073D98.inc", void sub_08073D98());
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08073E3C.inc", void sub_08073E3C());
-extern "C" ASM_FUNC("asm/non_matching/rhythm/tellStatusWoreOff.inc", void tellStatusWoreOff());
 
-extern "C" void* sub_08073F88(u16 arg0) {
-    return sub_08061A4C(arg0);
+bool statusWearOff(Unit* unit, Status::Type type, bool print) {
+    if (unit->hasStatus(type) == 1){
+        Status* s = unit->findStatus(type);
+        
+        if (print == true && s){
+            s->woreOffMsg().print(Color(0, 0, 0), 1);
+        }
+            
+        return unit->removeOneStatus(type);
+    }
+    return false;
+}
+
+extern "C" Action* getPlayerSkill(u16 arg0, Unit* user) {
+    return create__18PlayerSkillFactoryUsP4Unit(arg0, user);
 }
 
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08073F98.inc", void sub_08073F98());
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08073FC4.inc", void sub_08073FC4());
 
-extern "C" void* sub_08074010(u16 arg0) {
-    return sub_08064950(arg0);
+extern "C" void* getPsi(u16 arg0, Unit* user) {
+    return create__10PsiFactoryUsP4Unit(arg0, user);
 }
 
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08074020.inc", void sub_08074020());
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_0807404C.inc", void sub_0807404C());
 
-extern "C" void* sub_08074098(u16 arg0, u32 arg1, u16 arg2) {
-    return sub_08065148(arg0, arg1, arg2);
+extern "C" Action* getGoods(u16 arg0, Unit* arg1, u16 arg2) {
+    return create__12GoodsFactoryUsP4UnitUs(arg0, arg1, arg2);
 }
 
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_080740AC.inc", void sub_080740AC());
 
 extern "C" bool IsGoodsAndType(Action* action, u16 id) {
-    return action && action->getRTTI() == getGoodsRTTI() && action->id() == id;
+    return action && action->getRTTI() == GoodsRTTI::get() && action->id() == id;
 }
 
-extern "C" void* sub_08074124(u16 arg0) {
-    return sub_08062368(arg0);
+extern "C" Action* getGuestSkill(u16 arg0, Unit* user) {
+    return create__17GuestSkillFactoryUsP4Unit(arg0, user);
 }
 
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08074134.inc", void sub_08074134());
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08074160.inc", void sub_08074160());
 
-extern "C" Action* getMonsterSkill(u16 arg0) {
-    return sub_08064574(arg0);
+extern "C" Action* getMonsterSkill(u16 arg0, Unit* user) {
+    return create__19MonsterSkillFactoryUsP4Unit(arg0, user);
 }
 
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_080741BC.inc", void sub_080741BC());
@@ -174,30 +186,30 @@ extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_0807459C__FUsiii.inc", void sub
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08074614.inc", void sub_08074614());
 
 extern "C" u32* sub_08074630() {
-    return &gUnknown_02002134;
+    return &sRhythmInRTTI;
 }
 
-extern "C" u32* sub_08074638() {
+extern "C" u32* getRTTI__RhythmIn() {
     return sub_08074630();
 }
 
 extern "C" u32* sub_08074644() {
-    return &gUnknown_02002128;
+    return &sRhythmOutRTTI;
 }
 
-extern "C" u32* sub_0807464C() {
+extern "C" u32* getRTTI__9RhythmOut() {
     return sub_08074644();
 }
 
 extern "C" u32* sub_08074658() {
-    return &gUnknown_0200211C;
+    return &sRhythmBgmRTTI;
 }
 
-extern "C" u32* sub_08074660() {
+extern "C" u32* getRTTI__9RhythmBgm() {
     return sub_08074658();
 }
 
-RhythmGame::RhythmGame(u16 songNum) : Sound(songNum) {
+RhythmBgm::RhythmBgm(u16 songNum) : Sound(songNum) {
     rhythmData = GetRhythmDataBySongNum(this, songNum);
     field_40 = 0;
     field_44 = 0;
@@ -207,12 +219,12 @@ RhythmGame::RhythmGame(u16 songNum) : Sound(songNum) {
     field_58 = 2;
     field_5C = 0;
 
-    IrcManager::get()->sub_08069A50((u32)this, gUnknown_08105CD0);
+    IrcManager::get()->sub_08069A50((u32)this, callback_sub_0807489C);
 
-    listen(ClockManager::get(), AppClock(), gUnknown_08105CD8);
+    listen(ClockManager::get(), AppClock(), callback_sub_080748C8);
 }
 
-extern "C" const RhythmInfo* GetRhythmDataBySongNum(RhythmGame* game, u16 songNum) {
+extern "C" const RhythmInfo* GetRhythmDataBySongNum(RhythmBgm* game, u16 songNum) {
     int i;
 
     for (i = 0; i < 119; i++) {
@@ -232,5 +244,5 @@ extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_0807487C.inc", void sub_0807487
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08074898.inc", void sub_08074898());
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_0807489C.inc", void sub_0807489C());
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_080748C8.inc", void sub_080748C8());
-extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_080749D8.inc", void sub_080749D8());
-extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08074A1C.inc", void sub_08074A1C());
+extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_080749D8.inc", void _GLOBAL_I_RhythmBgmRTTI());
+extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08074A1C.inc", void __9RhythmBgm());

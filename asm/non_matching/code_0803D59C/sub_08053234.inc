@@ -84,6 +84,6 @@ _080532B8:
 	.align 2, 0
 _080532D0: .4byte gUnknown_02019DE4
 _080532D4: .4byte 0x000004C6
-_080532D8: .4byte gUnknown_02004970
+_080532D8: .4byte gSave+0x110 @ gSave.item_guy
 _080532DC: .4byte gGoodsInfo+0x4
 	.syntax divided

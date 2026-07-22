@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0807B4B8:
+unit_78__6PlayerP6Action:
 	push {lr}
 	movs r1, #0x86
 	lsls r1, r1, #2

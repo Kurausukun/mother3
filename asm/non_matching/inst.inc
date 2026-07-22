@@ -1,899 +1,516 @@
-	.code	16
-.gcc2_compiled.:
-.text
-	.align	2, 0
-	.globl	init__12ClockManager
-	.type	 init__12ClockManager,function
-	.thumb_func
-init__12ClockManager:
-.LFB1:
-.LM1:
+.include "asm/macros.inc"
 
+.syntax unified
+.section .text
+
+    thumb_func_start init__12ClockManager
+init__12ClockManager:
 	push	{lr}
-.LBB2:
-	mov	r0, #36
+	movs	r0, #36
 	bl	__builtin_new
 	bl	__5Clock
-.LBE2:
 	pop	{r1}
 	bx	r1
-.LFE1:
-.Lfe1:
-	.size	 init__12ClockManager,.Lfe1-init__12ClockManager
-	.align	2, 0
-	.globl	getName__12ClockManager
-	.type	 getName__12ClockManager,function
-	.thumb_func
+
+	thumb_func_start getName__12ClockManager
 getName__12ClockManager:
-.LFB2:
-.LM2:
-
-.LBB3:
 	ldr	r0, .L17
-.LBE3:
 	bx	lr
-.L18:
 	.align	2, 0
-.L17:
-	.word	gUnknown_080FEF44
-.LFE2:
-.Lfe2:
-	.size	 getName__12ClockManager,.Lfe2-getName__12ClockManager
-	.align	2, 0
-	.globl	init__21PostSysClockSingleton
-	.type	 init__21PostSysClockSingleton,function
-	.thumb_func
-init__21PostSysClockSingleton:
-.LFB3:
-.LM3:
+.L17: .word	const_classname_Clock
 
+    thumb_func_start init__16PostSysClockRTTI
+init__16PostSysClockRTTI:
 	push	{lr}
-.LBB4:
-	mov	r0, #36
+	movs	r0, #36
 	bl	__builtin_new
 	bl	__12PostSysClock
-.LBE4:
 	pop	{r1}
 	bx	r1
-.LFE3:
-.Lfe3:
-	.size	 init__21PostSysClockSingleton,.Lfe3-init__21PostSysClockSingleton
-	.align	2, 0
-	.globl	getName__21PostSysClockSingleton
-	.type	 getName__21PostSysClockSingleton,function
-	.thumb_func
-getName__21PostSysClockSingleton:
-.LFB4:
-.LM4:
 
-.LBB5:
+    thumb_func_start getName__16PostSysClockRTTI
+getName__16PostSysClockRTTI:
 	ldr	r0, .L21
-.LBE5:
 	bx	lr
-.L22:
 	.align	2, 0
-.L21:
-	.word	gUnknown_080FEF2C
-.LFE4:
-.Lfe4:
-	.size	 getName__21PostSysClockSingleton,.Lfe4-getName__21PostSysClockSingleton
-	.align	2, 0
-	.globl	_._12PostSysClock
-	.type	 _._12PostSysClock,function
-	.thumb_func
+.L21: .word	const_classname_PostSysClock
+
+    thumb_func_start _._12PostSysClock
 _._12PostSysClock:
-.LFB5:
-.LM5:
-
 	push	{lr}
-.LBB6:
-.LBE6:
-.LM6:
-
-.LBB7:
 	ldr	r2, .L27
 	str	r2, [r0, #28]
-.LBB8:
-.LBE8:
 	bl	_._4Base
-.LBE7:
-.LM7:
-
 	pop	{r0}
 	bx	r0
-.L28:
 	.align	2, 0
-.L27:
-	.word	_vt.3Unk
-.LFE5:
-.Lfe5:
-	.size	 _._12PostSysClock,.Lfe5-_._12PostSysClock
-	.align	2, 0
-	.globl	init__21PostAppClockSingleton
-	.type	 init__21PostAppClockSingleton,function
-	.thumb_func
-init__21PostAppClockSingleton:
-.LFB6:
-.LM8:
+.L27: .word	_vt.5Event
 
+    thumb_func_start init__16PostAppClockRTTI
+init__16PostAppClockRTTI:
 	push	{lr}
-.LBB9:
-	mov	r0, #36
+	movs	r0, #36
 	bl	__builtin_new
 	bl	__12PostAppClock
-.LBE9:
 	pop	{r1}
 	bx	r1
-.LFE6:
-.Lfe6:
-	.size	 init__21PostAppClockSingleton,.Lfe6-init__21PostAppClockSingleton
-	.align	2, 0
-	.globl	getName__21PostAppClockSingleton
-	.type	 getName__21PostAppClockSingleton,function
-	.thumb_func
-getName__21PostAppClockSingleton:
-.LFB7:
-.LM9:
 
-.LBB10:
+    thumb_func_start getName__16PostAppClockRTTI
+getName__16PostAppClockRTTI:
 	ldr	r0, .L31
-.LBE10:
 	bx	lr
-.L32:
 	.align	2, 0
-.L31:
-	.word	gUnknown_080FEF0C
-.LFE7:
-.Lfe7:
-	.size	 getName__21PostAppClockSingleton,.Lfe7-getName__21PostAppClockSingleton
-	.align	2, 0
-	.globl	_._12PostAppClock
-	.type	 _._12PostAppClock,function
-	.thumb_func
+.L31: .word	const_classname_PostAppClock
+
+    thumb_func_start _._12PostAppClock
 _._12PostAppClock:
-.LFB8:
-.LM10:
-
 	push	{lr}
-.LBB11:
-.LBE11:
-.LM11:
-
-.LBB12:
 	ldr	r2, .L37
 	str	r2, [r0, #28]
-.LBB13:
-.LBE13:
 	bl	_._4Base
-.LBE12:
-.LM12:
-
 	pop	{r0}
 	bx	r0
-.L38:
 	.align	2, 0
-.L37:
-	.word	_vt.3Unk
-.LFE8:
-.Lfe8:
-	.size	 _._12PostAppClock,.Lfe8-_._12PostAppClock
-	.align	2, 0
-	.globl	init__17AppClockSingleton
-	.type	 init__17AppClockSingleton,function
-	.thumb_func
-init__17AppClockSingleton:
-.LFB9:
-.LM13:
+.L37: .word	_vt.5Event
 
+    thumb_func_start init__12AppClockRTTI
+init__12AppClockRTTI:
 	push	{lr}
-.LBB14:
-	mov	r0, #36
+	movs	r0, #36
 	bl	__builtin_new
 	bl	__8AppClock
-.LBE14:
 	pop	{r1}
 	bx	r1
-.LFE9:
-.Lfe9:
-	.size	 init__17AppClockSingleton,.Lfe9-init__17AppClockSingleton
-	.align	2, 0
-	.globl	getName__17AppClockSingleton
-	.type	 getName__17AppClockSingleton,function
-	.thumb_func
-getName__17AppClockSingleton:
-.LFB10:
-.LM14:
 
-.LBB15:
+    thumb_func_start getName__12AppClockRTTI
+getName__12AppClockRTTI:
 	ldr	r0, .L41
-.LBE15:
 	bx	lr
-.L42:
 	.align	2, 0
-.L41:
-	.word	gUnknown_080FEEF0
-.LFE10:
-.Lfe10:
-	.size	 getName__17AppClockSingleton,.Lfe10-getName__17AppClockSingleton
-	.align	2, 0
-	.globl	_._8AppClock
-	.type	 _._8AppClock,function
-	.thumb_func
+.L41: .word	const_classname_AppClock
+
+    thumb_func_start _._8AppClock
 _._8AppClock:
-.LFB11:
-.LM15:
-
 	push	{lr}
-.LBB16:
-.LBE16:
-.LM16:
-
-.LBB17:
 	ldr	r2, .L47
 	str	r2, [r0, #28]
-.LBB18:
-.LBE18:
 	bl	_._4Base
-.LBE17:
-.LM17:
-
 	pop	{r0}
 	bx	r0
-.L48:
 	.align	2, 0
-.L47:
-	.word	_vt.3Unk
-.LFE11:
-.Lfe11:
-	.size	 _._8AppClock,.Lfe11-_._8AppClock
-	.align	2, 0
-	.globl	init__20PreAppClockSingleton
-	.type	 init__20PreAppClockSingleton,function
-	.thumb_func
-init__20PreAppClockSingleton:
-.LFB12:
-.LM18:
+.L47: .word	_vt.5Event
 
+    thumb_func_start init__15PreAppClockRTTI
+init__15PreAppClockRTTI:
 	push	{lr}
-.LBB19:
-	mov	r0, #36
+	movs	r0, #36
 	bl	__builtin_new
 	bl	__11PreAppClock
-.LBE19:
 	pop	{r1}
 	bx	r1
-.LFE12:
-.Lfe12:
-	.size	 init__20PreAppClockSingleton,.Lfe12-init__20PreAppClockSingleton
-	.align	2, 0
-	.globl	getName__20PreAppClockSingleton
-	.type	 getName__20PreAppClockSingleton,function
-	.thumb_func
-getName__20PreAppClockSingleton:
-.LFB13:
-.LM19:
 
-.LBB20:
+    thumb_func_start getName__15PreAppClockRTTI
+getName__15PreAppClockRTTI:
 	ldr	r0, .L51
-.LBE20:
 	bx	lr
-.L52:
 	.align	2, 0
-.L51:
-	.word	gUnknown_080FEED8
-.LFE13:
-.Lfe13:
-	.size	 getName__20PreAppClockSingleton,.Lfe13-getName__20PreAppClockSingleton
-	.align	2, 0
-	.globl	_._11PreAppClock
-	.type	 _._11PreAppClock,function
-	.thumb_func
+.L51: .word	const_classname_PreAppClock
+
+    thumb_func_start _._11PreAppClock
 _._11PreAppClock:
-.LFB14:
-.LM20:
-
 	push	{lr}
-.LBB21:
-.LBE21:
-.LM21:
-
-.LBB22:
 	ldr	r2, .L57
 	str	r2, [r0, #28]
-.LBB23:
-.LBE23:
 	bl	_._4Base
-.LBE22:
-.LM22:
-
 	pop	{r0}
 	bx	r0
-.L58:
 	.align	2, 0
-.L57:
-	.word	_vt.3Unk
-.LFE14:
-.Lfe14:
-	.size	 _._11PreAppClock,.Lfe14-_._11PreAppClock
-	.align	2, 0
-	.globl	init__17SysClockSingleton
-	.type	 init__17SysClockSingleton,function
-	.thumb_func
-init__17SysClockSingleton:
-.LFB15:
-.LM23:
+.L57: .word	_vt.5Event
 
+    thumb_func_start init__12SysClockRTTI
+init__12SysClockRTTI:
 	push	{lr}
-.LBB24:
-	mov	r0, #36
+	movs	r0, #36
 	bl	__builtin_new
 	bl	__8SysClock
-.LBE24:
 	pop	{r1}
 	bx	r1
-.LFE15:
-.Lfe15:
-	.size	 init__17SysClockSingleton,.Lfe15-init__17SysClockSingleton
-	.align	2, 0
-	.globl	getName__17SysClockSingleton
-	.type	 getName__17SysClockSingleton,function
-	.thumb_func
-getName__17SysClockSingleton:
-.LFB16:
-.LM24:
 
-.LBB25:
+    thumb_func_start getName__12SysClockRTTI
+getName__12SysClockRTTI:
 	ldr	r0, .L61
-.LBE25:
 	bx	lr
-.L62:
 	.align	2, 0
-.L61:
-	.word	gUnknown_080FEEC0
-.LFE16:
-.Lfe16:
-	.size	 getName__17SysClockSingleton,.Lfe16-getName__17SysClockSingleton
-	.align	2, 0
-	.globl	_._8SysClock
-	.type	 _._8SysClock,function
-	.thumb_func
+.L61: .word	const_classname_SysClock
+
+    thumb_func_start _._8SysClock
 _._8SysClock:
-.LFB17:
-.LM25:
-
 	push	{lr}
-.LBB26:
-.LBE26:
-.LM26:
-
-.LBB27:
 	ldr	r2, .L67
 	str	r2, [r0, #28]
-.LBB28:
-.LBE28:
 	bl	_._4Base
-.LBE27:
-.LM27:
-
 	pop	{r0}
 	bx	r0
-.L68:
 	.align	2, 0
-.L67:
-	.word	_vt.3Unk
-.LFE17:
-.Lfe17:
-	.size	 _._8SysClock,.Lfe17-_._8SysClock
-	.align	2, 0
-	.globl	init__20PreSysClockSingleton
-	.type	 init__20PreSysClockSingleton,function
-	.thumb_func
-init__20PreSysClockSingleton:
-.LFB18:
-.LM28:
+.L67: .word	_vt.5Event
 
+    thumb_func_start init__15PreSysClockRTTI
+init__15PreSysClockRTTI:
 	push	{lr}
-.LBB29:
-	mov	r0, #36
+	movs	r0, #36
 	bl	__builtin_new
 	bl	__11PreSysClock
-.LBE29:
 	pop	{r1}
 	bx	r1
-.LFE18:
-.Lfe18:
-	.size	 init__20PreSysClockSingleton,.Lfe18-init__20PreSysClockSingleton
-	.align	2, 0
-	.globl	getName__20PreSysClockSingleton
-	.type	 getName__20PreSysClockSingleton,function
-	.thumb_func
-getName__20PreSysClockSingleton:
-.LFB19:
-.LM29:
 
-.LBB30:
+    thumb_func_start getName__15PreSysClockRTTI
+getName__15PreSysClockRTTI:
 	ldr	r0, .L71
-.LBE30:
 	bx	lr
-.L72:
 	.align	2, 0
-.L71:
-	.word	gUnknown_080FEEA8
-.LFE19:
-.Lfe19:
-	.size	 getName__20PreSysClockSingleton,.Lfe19-getName__20PreSysClockSingleton
-	.align	2, 0
-	.globl	_._11PreSysClock
-	.type	 _._11PreSysClock,function
-	.thumb_func
+.L71: .word	const_classname_PreSysClock
+
+    thumb_func_start _._11PreSysClock
 _._11PreSysClock:
-.LFB20:
-.LM30:
-
 	push	{lr}
-.LBB31:
-.LBE31:
-.LM31:
-
-.LBB32:
 	ldr	r2, .L77
 	str	r2, [r0, #28]
-.LBB33:
-.LBE33:
-	bl	_._4Base
-.LBE32:
-.LM32:
-
-	pop	{r0}
-	bx	r0
-.L78:
-	.align	2, 0
-.L77:
-	.word	_vt.3Unk
-.LFE20:
-.Lfe20:
-	.size	 _._11PreSysClock,.Lfe20-_._11PreSysClock
-	.weak	_vt.12ClockManager
-	.section .gnu.linkonce.d._vt.12ClockManager,"aw"
-	.align	2, 0
-	.type	 _vt.12ClockManager,object
-	.size	 _vt.12ClockManager,24
-_vt.12ClockManager:
-	.short	0
-	.short	0
-	.word	0
-	.short	0
-	.short	0
-	.word	getName__12ClockManager
-	.short	0
-	.short	0
-	.word	init__12ClockManager
-	.weak	_vt.21PostSysClockSingleton
-	.section .gnu.linkonce.d._vt.21PostSysClockSingleton,"aw"
-	.align	2, 0
-	.type	 _vt.21PostSysClockSingleton,object
-	.size	 _vt.21PostSysClockSingleton,24
-_vt.21PostSysClockSingleton:
-	.short	0
-	.short	0
-	.word	0
-	.short	0
-	.short	0
-	.word	getName__21PostSysClockSingleton
-	.short	0
-	.short	0
-	.word	init__21PostSysClockSingleton
-	.weak	_vt.21PostAppClockSingleton
-	.section .gnu.linkonce.d._vt.21PostAppClockSingleton,"aw"
-	.align	2, 0
-	.type	 _vt.21PostAppClockSingleton,object
-	.size	 _vt.21PostAppClockSingleton,24
-_vt.21PostAppClockSingleton:
-	.short	0
-	.short	0
-	.word	0
-	.short	0
-	.short	0
-	.word	getName__21PostAppClockSingleton
-	.short	0
-	.short	0
-	.word	init__21PostAppClockSingleton
-	.weak	_vt.17AppClockSingleton
-	.section .gnu.linkonce.d._vt.17AppClockSingleton,"aw"
-	.align	2, 0
-	.type	 _vt.17AppClockSingleton,object
-	.size	 _vt.17AppClockSingleton,24
-_vt.17AppClockSingleton:
-	.short	0
-	.short	0
-	.word	0
-	.short	0
-	.short	0
-	.word	getName__17AppClockSingleton
-	.short	0
-	.short	0
-	.word	init__17AppClockSingleton
-	.weak	_vt.20PreAppClockSingleton
-	.section .gnu.linkonce.d._vt.20PreAppClockSingleton,"aw"
-	.align	2, 0
-	.type	 _vt.20PreAppClockSingleton,object
-	.size	 _vt.20PreAppClockSingleton,24
-_vt.20PreAppClockSingleton:
-	.short	0
-	.short	0
-	.word	0
-	.short	0
-	.short	0
-	.word	getName__20PreAppClockSingleton
-	.short	0
-	.short	0
-	.word	init__20PreAppClockSingleton
-	.weak	_vt.17SysClockSingleton
-	.section .gnu.linkonce.d._vt.17SysClockSingleton,"aw"
-	.align	2, 0
-	.type	 _vt.17SysClockSingleton,object
-	.size	 _vt.17SysClockSingleton,24
-_vt.17SysClockSingleton:
-	.short	0
-	.short	0
-	.word	0
-	.short	0
-	.short	0
-	.word	getName__17SysClockSingleton
-	.short	0
-	.short	0
-	.word	init__17SysClockSingleton
-	.weak	_vt.20PreSysClockSingleton
-	.section .gnu.linkonce.d._vt.20PreSysClockSingleton,"aw"
-	.align	2, 0
-	.type	 _vt.20PreSysClockSingleton,object
-	.size	 _vt.20PreSysClockSingleton,24
-_vt.20PreSysClockSingleton:
-	.short	0
-	.short	0
-	.word	0
-	.short	0
-	.short	0
-	.word	getName__20PreSysClockSingleton
-	.short	0
-	.short	0
-	.word	init__20PreSysClockSingleton
-	.weak	_vt.12PostSysClock
-	.section .gnu.linkonce.d._vt.12PostSysClock,"aw"
-	.align	2, 0
-	.type	 _vt.12PostSysClock,object
-	.size	 _vt.12PostSysClock,104
-_vt.12PostSysClock:
-	.short	0
-	.short	0
-	.word	0
-	.short	0
-	.short	0
-	.word	_._12PostSysClock
-	.short	0
-	.short	0
-	.word	getRTTI__12PostSysClock
-	.short	0
-	.short	0
-	.word	base_1c__4Base
-	.short	0
-	.short	0
-	.word	base_24__4Base
-	.short	0
-	.short	0
-	.word	base_2c__4Base
-	.short	0
-	.short	0
-	.word	base_34__4Base
-	.short	0
-	.short	0
-	.word	listen__4BasePvRC4BaseG9ClockData
-	.short	0
-	.short	0
-	.word	base_44__4Base
-	.short	0
-	.short	0
-	.word	base_4c__4BaseUiR4BaseUi
-	.short	0
-	.short	0
-	.word	emit__4BaseR4Base
-	.short	0
-	.short	0
-	.word	base_5c__4Base
-	.short	0
-	.short	0
-	.word	clearNullOutgoing__4Base
-	.weak	_vt.12PostAppClock
-	.section .gnu.linkonce.d._vt.12PostAppClock,"aw"
-	.align	2, 0
-	.type	 _vt.12PostAppClock,object
-	.size	 _vt.12PostAppClock,104
-_vt.12PostAppClock:
-	.short	0
-	.short	0
-	.word	0
-	.short	0
-	.short	0
-	.word	_._12PostAppClock
-	.short	0
-	.short	0
-	.word	getRTTI__12PostAppClock
-	.short	0
-	.short	0
-	.word	base_1c__4Base
-	.short	0
-	.short	0
-	.word	base_24__4Base
-	.short	0
-	.short	0
-	.word	base_2c__4Base
-	.short	0
-	.short	0
-	.word	base_34__4Base
-	.short	0
-	.short	0
-	.word	listen__4BasePvRC4BaseG9ClockData
-	.short	0
-	.short	0
-	.word	base_44__4Base
-	.short	0
-	.short	0
-	.word	base_4c__4BaseUiR4BaseUi
-	.short	0
-	.short	0
-	.word	emit__4BaseR4Base
-	.short	0
-	.short	0
-	.word	base_5c__4Base
-	.short	0
-	.short	0
-	.word	clearNullOutgoing__4Base
-	.weak	_vt.8AppClock
-	.section .gnu.linkonce.d._vt.8AppClock,"aw"
-	.align	2, 0
-	.type	 _vt.8AppClock,object
-	.size	 _vt.8AppClock,104
-_vt.8AppClock:
-	.short	0
-	.short	0
-	.word	0
-	.short	0
-	.short	0
-	.word	_._8AppClock
-	.short	0
-	.short	0
-	.word	getRTTI__8AppClock
-	.short	0
-	.short	0
-	.word	base_1c__4Base
-	.short	0
-	.short	0
-	.word	base_24__4Base
-	.short	0
-	.short	0
-	.word	base_2c__4Base
-	.short	0
-	.short	0
-	.word	base_34__4Base
-	.short	0
-	.short	0
-	.word	listen__4BasePvRC4BaseG9ClockData
-	.short	0
-	.short	0
-	.word	base_44__4Base
-	.short	0
-	.short	0
-	.word	base_4c__4BaseUiR4BaseUi
-	.short	0
-	.short	0
-	.word	emit__4BaseR4Base
-	.short	0
-	.short	0
-	.word	base_5c__4Base
-	.short	0
-	.short	0
-	.word	clearNullOutgoing__4Base
-	.weak	_vt.11PreAppClock
-	.section .gnu.linkonce.d._vt.11PreAppClock,"aw"
-	.align	2, 0
-	.type	 _vt.11PreAppClock,object
-	.size	 _vt.11PreAppClock,104
-_vt.11PreAppClock:
-	.short	0
-	.short	0
-	.word	0
-	.short	0
-	.short	0
-	.word	_._11PreAppClock
-	.short	0
-	.short	0
-	.word	getRTTI__11PreAppClock
-	.short	0
-	.short	0
-	.word	base_1c__4Base
-	.short	0
-	.short	0
-	.word	base_24__4Base
-	.short	0
-	.short	0
-	.word	base_2c__4Base
-	.short	0
-	.short	0
-	.word	base_34__4Base
-	.short	0
-	.short	0
-	.word	listen__4BasePvRC4BaseG9ClockData
-	.short	0
-	.short	0
-	.word	base_44__4Base
-	.short	0
-	.short	0
-	.word	base_4c__4BaseUiR4BaseUi
-	.short	0
-	.short	0
-	.word	emit__4BaseR4Base
-	.short	0
-	.short	0
-	.word	base_5c__4Base
-	.short	0
-	.short	0
-	.word	clearNullOutgoing__4Base
-	.weak	_vt.8SysClock
-	.section .gnu.linkonce.d._vt.8SysClock,"aw"
-	.align	2, 0
-	.type	 _vt.8SysClock,object
-	.size	 _vt.8SysClock,104
-_vt.8SysClock:
-	.short	0
-	.short	0
-	.word	0
-	.short	0
-	.short	0
-	.word	_._8SysClock
-	.short	0
-	.short	0
-	.word	getRTTI__8SysClock
-	.short	0
-	.short	0
-	.word	base_1c__4Base
-	.short	0
-	.short	0
-	.word	base_24__4Base
-	.short	0
-	.short	0
-	.word	base_2c__4Base
-	.short	0
-	.short	0
-	.word	base_34__4Base
-	.short	0
-	.short	0
-	.word	listen__4BasePvRC4BaseG9ClockData
-	.short	0
-	.short	0
-	.word	base_44__4Base
-	.short	0
-	.short	0
-	.word	base_4c__4BaseUiR4BaseUi
-	.short	0
-	.short	0
-	.word	emit__4BaseR4Base
-	.short	0
-	.short	0
-	.word	base_5c__4Base
-	.short	0
-	.short	0
-	.word	clearNullOutgoing__4Base
-	.weak	_vt.11PreSysClock
-	.section .gnu.linkonce.d._vt.11PreSysClock,"aw"
-	.align	2, 0
-	.type	 _vt.11PreSysClock,object
-	.size	 _vt.11PreSysClock,104
-_vt.11PreSysClock:
-	.short	0
-	.short	0
-	.word	0
-	.short	0
-	.short	0
-	.word	_._11PreSysClock
-	.short	0
-	.short	0
-	.word	getRTTI__11PreSysClock
-	.short	0
-	.short	0
-	.word	base_1c__4Base
-	.short	0
-	.short	0
-	.word	base_24__4Base
-	.short	0
-	.short	0
-	.word	base_2c__4Base
-	.short	0
-	.short	0
-	.word	base_34__4Base
-	.short	0
-	.short	0
-	.word	listen__4BasePvRC4BaseG9ClockData
-	.short	0
-	.short	0
-	.word	base_44__4Base
-	.short	0
-	.short	0
-	.word	base_4c__4BaseUiR4BaseUi
-	.short	0
-	.short	0
-	.word	emit__4BaseR4Base
-	.short	0
-	.short	0
-	.word	base_5c__4Base
-	.short	0
-	.short	0
-	.word	clearNullOutgoing__4Base
-	.weak	_vt.3Unk
-	.section .gnu.linkonce.d._vt.3Unk,"aw"
-	.align	2, 0
-	.type	 _vt.3Unk,object
-	.size	 _vt.3Unk,104
-_vt.3Unk:
-	.short	0
-	.short	0
-	.word	0
-	.short	0
-	.short	0
-	.word	_._3Unk
-	.short	0
-	.short	0
-	.word	getRTTI__4Base
-	.short	0
-	.short	0
-	.word	base_1c__4Base
-	.short	0
-	.short	0
-	.word	base_24__4Base
-	.short	0
-	.short	0
-	.word	base_2c__4Base
-	.short	0
-	.short	0
-	.word	base_34__4Base
-	.short	0
-	.short	0
-	.word	listen__4BasePvRC4BaseG9ClockData
-	.short	0
-	.short	0
-	.word	base_44__4Base
-	.short	0
-	.short	0
-	.word	base_4c__4BaseUiR4BaseUi
-	.short	0
-	.short	0
-	.word	emit__4BaseR4Base
-	.short	0
-	.short	0
-	.word	base_5c__4Base
-	.short	0
-	.short	0
-	.word	clearNullOutgoing__4Base
-	.section .gnu.linkonce.t._._3Unk,"ax",%progbits
-	.align	2, 0
-	.weak	_._3Unk
-	.type	 _._3Unk,function
-	.thumb_func
-_._3Unk:
-.LFB21:
-.LSM0:
-
-	push	{lr}
-	ldr	r2, .L79
-	str	r2, [r0, #28]
-.LBB34:
-.LBE34:
 	bl	_._4Base
 	pop	{r0}
 	bx	r0
-.L80:
 	.align	2, 0
-.L79:
-	.word	_vt.3Unk
-.LFE21:
-.Lfe21:
-	.size	 _._3Unk,.Lfe21-_._3Unk
+.L77: .word	_vt.5Event
+
+	thumb_func_start init__14GEngineManager
+init__14GEngineManager: @ 0x080C0D1C
+	push {lr}
+	movs r0, #0x7c
+	bl __builtin_new
+	bl __7GEngine
+	pop {r1}
+	bx r1
+
+	thumb_func_start getName__14GEngineManager
+getName__14GEngineManager: @ 0x080C0D2C
+	ldr r0, _080C0D30 @ =const_classname_GEngine
+	bx lr
+	.align 2, 0
+_080C0D30: .4byte const_classname_GEngine
+
+	thumb_func_start init__15BGEngineManager
+init__15BGEngineManager: @ 0x080C0D34
+	push {lr}
+	movs r0, #0x88
+	lsls r0, r0, #1
+	bl __builtin_new
+	bl __8BGEngine
+	pop {r1}
+	bx r1
+	.align 2, 0
+
+	thumb_func_start getName__15BGEngineManager
+getName__15BGEngineManager: @ 0x080C0D48
+	ldr r0, _080C0D4C @ =const_classname_BGEngine
+	bx lr
+	.align 2, 0
+_080C0D4C: .4byte const_classname_BGEngine
+
+	thumb_func_start sub_080C0D50
+sub_080C0D50: @ 0x080C0D50
+	push {r4, r5, r6, r7, lr}
+	mov r7, sl
+	mov r6, sb
+	mov r5, r8
+	push {r5, r6, r7}
+	adds r5, r0, #0
+	adds r6, r1, #0
+	ldrh r0, [r6]
+	movs r7, #0
+	strh r0, [r5]
+	adds r4, r5, #4
+	adds r0, r6, #4
+	mov r8, r0
+	ldr r0, [r4, #8]
+	cmp r0, #0
+	beq _080C0D74
+	bl __builtin_vec_delete
+_080C0D74:
+	mov r1, r8
+	ldr r0, [r1, #4]
+	cmp r0, #0
+	bgt _080C0D8E
+	str r7, [r5, #4]
+	str r7, [r4, #4]
+	str r7, [r4, #8]
+	adds r7, r5, #0
+	adds r7, #0x18
+	movs r2, #0x18
+	adds r2, r2, r6
+	mov sb, r2
+	b _080C0DC0
+_080C0D8E:
+	str r0, [r5, #4]
+	str r0, [r4, #4]
+	lsls r0, r0, #1
+	bl __builtin_vec_new
+	str r0, [r4, #8]
+	mov r7, r8
+	ldr r3, [r7, #8]
+	adds r2, r0, #0
+	ldr r0, [r4, #4]
+	adds r7, r5, #0
+	adds r7, #0x18
+	movs r1, #0x18
+	adds r1, r1, r6
+	mov sb, r1
+	cmp r0, #0
+	ble _080C0DC0
+	adds r1, r0, #0
+_080C0DB2:
+	ldrh r0, [r3]
+	strh r0, [r2]
+	adds r3, #2
+	adds r2, #2
+	subs r1, #1
+	cmp r1, #0
+	bne _080C0DB2
+_080C0DC0:
+	ldrh r0, [r6, #0x10]
+	movs r2, #0
+	mov sl, r2
+	strh r0, [r5, #0x10]
+	ldrh r0, [r6, #0x12]
+	strh r0, [r5, #0x12]
+	ldrh r0, [r6, #0x14]
+	strh r0, [r5, #0x14]
+	ldrh r0, [r6, #0x16]
+	strh r0, [r5, #0x16]
+	adds r4, r7, #0
+	mov r8, sb
+	ldr r0, [r4, #8]
+	cmp r0, #0
+	beq _080C0DE2
+	bl __builtin_vec_delete
+_080C0DE2:
+	mov r3, r8
+	ldr r0, [r3, #4]
+	cmp r0, #0
+	bgt _080C0DF4
+	mov r7, sl
+	str r7, [r5, #0x18]
+	str r7, [r4, #4]
+	str r7, [r4, #8]
+	b _080C0E2E
+_080C0DF4:
+	str r0, [r5, #0x18]
+	str r0, [r7, #4]
+	lsls r0, r0, #5
+	bl __builtin_vec_new
+	str r0, [r7, #8]
+	mov r1, sb
+	ldr r1, [r1, #8]
+	mov r8, r1
+	mov sb, r0
+	ldr r0, [r7, #4]
+	cmp r0, #0
+	ble _080C0E2E
+	adds r2, r0, #0
+_080C0E10:
+	mov r1, sb
+	mov r0, r8
+	ldm r0!, {r3, r4, r7}
+	stm r1!, {r3, r4, r7}
+	ldm r0!, {r3, r4, r7}
+	stm r1!, {r3, r4, r7}
+	ldm r0!, {r3, r4}
+	stm r1!, {r3, r4}
+	movs r7, #0x20
+	add r8, r7
+	movs r0, #0x20
+	add sb, r0
+	subs r2, #1
+	cmp r2, #0
+	bne _080C0E10
+_080C0E2E:
+	ldr r0, [r6, #0x24]
+	str r0, [r5, #0x24]
+	ldr r0, [r6, #0x28]
+	str r0, [r5, #0x28]
+	ldr r0, [r6, #0x2c]
+	str r0, [r5, #0x2c]
+	ldr r0, [r6, #0x30]
+	str r0, [r5, #0x30]
+	ldrh r0, [r6, #0x34]
+	strh r0, [r5, #0x34]
+	adds r0, r5, #0
+	pop {r3, r4, r5}
+	mov r8, r3
+	mov sb, r4
+	mov sl, r5
+	pop {r4, r5, r6, r7}
+	pop {r1}
+	bx r1
+	.align 2, 0
+
+	thumb_func_start sub_080C0E54
+sub_080C0E54: @ 0x080C0E54
+	push {r4, r5, r6, r7, lr}
+	mov r7, r8
+	push {r7}
+	adds r4, r0, #0
+	adds r6, r1, #0
+	ldrh r0, [r6]
+	movs r2, #0
+	strh r0, [r4]
+	adds r5, r4, #4
+	adds r7, r6, #4
+	ldr r1, [r7, #4]
+	cmp r1, #0
+	bgt _080C0E7E
+	str r2, [r4, #4]
+	str r2, [r5, #4]
+	str r2, [r5, #8]
+	adds r7, r4, #0
+	adds r7, #0x18
+	adds r5, r6, #0
+	adds r5, #0x18
+	b _080C0EAE
+_080C0E7E:
+	ldr r0, [r6, #4]
+	str r0, [r4, #4]
+	str r1, [r5, #4]
+	lsls r0, r1, #1
+	bl __builtin_vec_new
+	str r0, [r5, #8]
+	ldr r3, [r7, #8]
+	adds r2, r0, #0
+	ldr r0, [r5, #4]
+	adds r7, r4, #0
+	adds r7, #0x18
+	adds r5, r6, #0
+	adds r5, #0x18
+	cmp r0, #0
+	ble _080C0EAE
+	adds r1, r0, #0
+_080C0EA0:
+	ldrh r0, [r3]
+	strh r0, [r2]
+	adds r3, #2
+	adds r2, #2
+	subs r1, #1
+	cmp r1, #0
+	bne _080C0EA0
+_080C0EAE:
+	ldrh r0, [r6, #0x10]
+	movs r2, #0
+	strh r0, [r4, #0x10]
+	ldrh r0, [r6, #0x12]
+	strh r0, [r4, #0x12]
+	ldrh r0, [r6, #0x14]
+	strh r0, [r4, #0x14]
+	ldrh r0, [r6, #0x16]
+	strh r0, [r4, #0x16]
+	ldr r1, [r5, #4]
+	cmp r1, #0
+	bgt _080C0ECE
+	str r2, [r4, #0x18]
+	str r2, [r7, #4]
+	str r2, [r7, #8]
+	b _080C0F08
+_080C0ECE:
+	ldr r0, [r6, #0x18]
+	str r0, [r4, #0x18]
+	str r1, [r7, #4]
+	lsls r0, r1, #5
+	bl __builtin_vec_new
+	str r0, [r7, #8]
+	ldr r5, [r5, #8]
+	mov ip, r5
+	mov r8, r0
+	ldr r0, [r7, #4]
+	cmp r0, #0
+	ble _080C0F08
+	adds r2, r0, #0
+_080C0EEA:
+	mov r1, r8
+	mov r0, ip
+	ldm r0!, {r3, r5, r7}
+	stm r1!, {r3, r5, r7}
+	ldm r0!, {r3, r5, r7}
+	stm r1!, {r3, r5, r7}
+	ldm r0!, {r3, r5}
+	stm r1!, {r3, r5}
+	movs r7, #0x20
+	add ip, r7
+	movs r0, #0x20
+	add r8, r0
+	subs r2, #1
+	cmp r2, #0
+	bne _080C0EEA
+_080C0F08:
+	ldr r0, [r6, #0x24]
+	str r0, [r4, #0x24]
+	ldr r0, [r6, #0x28]
+	str r0, [r4, #0x28]
+	ldr r0, [r6, #0x2c]
+	str r0, [r4, #0x2c]
+	ldr r0, [r6, #0x30]
+	str r0, [r4, #0x30]
+	ldrh r0, [r6, #0x34]
+	strh r0, [r4, #0x34]
+	adds r0, r4, #0
+	pop {r3}
+	mov r8, r3
+	pop {r4, r5, r6, r7}
+	pop {r1}
+	bx r1
+
+	thumb_func_start init__16ObjEngineManager
+init__16ObjEngineManager: @ 0x080C0F28
+	push {lr}
+	movs r0, #0xb5
+	lsls r0, r0, #4
+	bl __builtin_new
+	bl __9ObjEngine
+	pop {r1}
+	bx r1
+	.align 2, 0
+
+	thumb_func_start getName__16ObjEngineManager
+getName__16ObjEngineManager: @ 0x080C0F3C
+	ldr r0, _080C0F40 @ =const_classname_ObjEngine
+	bx lr
+	.align 2, 0
+_080C0F40: .4byte const_classname_ObjEngine
+
+	thumb_func_start init__17ObjChrPoolManager
+init__17ObjChrPoolManager: @ 0x080C0F44
+	push {lr}
+	movs r0, #0x50
+	bl __builtin_new
+	bl __10ObjChrPool
+	pop {r1}
+	bx r1
+
+	thumb_func_start getName__17ObjChrPoolManager
+getName__17ObjChrPoolManager: @ 0x080C0F54
+	ldr r0, _080C0F58 @ =const_classname_ObjChrPool
+	bx lr
+	.align 2, 0
+_080C0F58: .4byte const_classname_ObjChrPool
+
+	thumb_func_start init__17ObjPltPoolManager
+init__17ObjPltPoolManager: @ 0x080C0F5C
+	push {lr}
+	movs r0, #0x2c
+	bl __builtin_new
+	bl __10ObjPltPool
+	pop {r1}
+	bx r1
+
+	thumb_func_start getName__17ObjPltPoolManager
+getName__17ObjPltPoolManager: @ 0x080C0F6C
+	ldr r0, _080C0F70 @ =const_classname_ObjPltPool
+	bx lr
+	.align 2, 0
+_080C0F70: .4byte const_classname_ObjPltPool

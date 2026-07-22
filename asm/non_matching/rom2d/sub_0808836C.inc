@@ -47,7 +47,7 @@ sub_0808836C:
 	add r2, sp, #4
 	adds r3, r7, #0
 	bl sub_0808855C
-	bl sub_0806B070
+	bl get__15BGEngineManager
 	str r0, [sp, #0x24]
 	mov r0, r8
 	add r1, sp, #4

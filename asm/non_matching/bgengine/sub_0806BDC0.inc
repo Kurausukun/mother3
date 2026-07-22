@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0806BDC0:
+_GLOBAL_I_BGEngineManager:
 	push {r4, lr}
 	ldr r4, _0806BDD4
 	adds r0, r4, #0
@@ -10,6 +10,6 @@ sub_0806BDC0:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0806BDD4: .4byte gUnknown_02001CE0
-_0806BDD8: .4byte vt_09F7F018
+_0806BDD4: .4byte sBGEngineManager
+_0806BDD8: .4byte _vt.15BGEngineManager
 	.syntax divided

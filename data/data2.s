@@ -36,91 +36,91 @@ gUnknown_080FEDB4:
 gUnknown_080FEDC4:
     .incbin "baserom.gba", 0x000FEDC4, 0x1C
 
-    .global gUnknown_080FEDE0
-gUnknown_080FEDE0:
+    .global const_classname_Irc
+const_classname_Irc:
     .incbin "baserom.gba", 0x000FEDE0, 0xC8
 
-    .global gUnknown_080FEEA8
-gUnknown_080FEEA8:
+    .global const_classname_PreSysClock
+const_classname_PreSysClock:
     .incbin "baserom.gba", 0x000FEEA8, 0x18
 
-    .global gUnknown_080FEEC0
-gUnknown_080FEEC0:
+    .global const_classname_SysClock
+const_classname_SysClock:
     .incbin "baserom.gba", 0x000FEEC0, 0x18
 
-    .global gUnknown_080FEED8
-gUnknown_080FEED8:
+    .global const_classname_PreAppClock
+const_classname_PreAppClock:
     .incbin "baserom.gba", 0x000FEED8, 0x18
 
-    .global gUnknown_080FEEF0
-gUnknown_080FEEF0:
+    .global const_classname_AppClock
+const_classname_AppClock:
     .incbin "baserom.gba", 0x000FEEF0, 0x1C
 
-    .global gUnknown_080FEF0C
-gUnknown_080FEF0C:
+    .global const_classname_PostAppClock
+const_classname_PostAppClock:
     .incbin "baserom.gba", 0x000FEF0C, 0x20
 
-    .global gUnknown_080FEF2C
-gUnknown_080FEF2C:
+    .global const_classname_PostSysClock
+const_classname_PostSysClock:
     .incbin "baserom.gba", 0x000FEF2C, 0x18
 
-    .global gUnknown_080FEF44
-gUnknown_080FEF44:
+    .global const_classname_Clock
+const_classname_Clock:
     .incbin "baserom.gba", 0x000FEF44, 0x1F0
 
-    .global gUnknown_080FF134
-gUnknown_080FF134:
+    .global const_classname_GEngine
+const_classname_GEngine:
     .incbin "baserom.gba", 0x000FF134, 0x68
 
-    .global gUnknown_080FF19C
-gUnknown_080FF19C:
+    .global callback_sub_0806AC48
+callback_sub_0806AC48:
     .4byte 0xFFFF0000
     .4byte sub_0806AC48+1
     .incbin "baserom.gba", 0x000FF1A4, 0xD4
 
-    .global gUnknown_080FF278
-gUnknown_080FF278:
+    .global const_classname_BGEngine
+const_classname_BGEngine:
     .incbin "baserom.gba", 0x000FF278, 0x54
 
-    .global gUnknown_080FF2CC
-gUnknown_080FF2CC:
+    .global callback_bgengine_updateScrollHorizontal
+callback_bgengine_updateScrollHorizontal:
     .4byte 0xFFFF0000
     .4byte bgengine_updateScrollHorizontal+1
     .incbin "baserom.gba", 0x000FF2D4, 0xEC
 
-    .global gUnknown_080FF3C0
-gUnknown_080FF3C0:
+    .global const_classname_ObjEngine
+const_classname_ObjEngine:
     .incbin "baserom.gba", 0x000FF3C0, 0x3C
 
-    .global gUnknown_080FF3FC
-gUnknown_080FF3FC:
+    .global callback_sub_0806C1D8
+callback_sub_0806C1D8:
     .4byte 0xFFFF0000
     .4byte sub_0806C1D8+1
 
-    .global gUnknown_080FF404
-gUnknown_080FF404:
+    .global callback_sub_0806C3DC
+callback_sub_0806C3DC:
     .4byte 0xFFFF0000
     .4byte sub_0806C3DC+1
     .incbin "baserom.gba", 0x000FF40C, 0x104
 
-    .global gUnknown_080FF510
-gUnknown_080FF510:
+    .global const_classname_ObjChrPool
+const_classname_ObjChrPool:
     .incbin "baserom.gba", 0x000FF510, 0x24
 
-    .global gUnknown_080FF534
-gUnknown_080FF534:
+    .global callback_sub_0806C738
+callback_sub_0806C738:
     .4byte 0xFFFF0000
     .4byte sub_0806C738+1
     .incbin "baserom.gba", 0x000FF53C, 0x11C
 
-    .global gUnknown_080FF658
-gUnknown_080FF658:
+    .global const_classname_ObjPltPool
+const_classname_ObjPltPool:
     .incbin "baserom.gba", 0x000FF658, 0xC
 
-    .global gUnknown_080FF664
-gUnknown_080FF664:
+    .global callback_clear__10ObjPltPool
+callback_clear__10ObjPltPool:
     .4byte 0xFFFF0000
-    .4byte sub_0806CA24__10ObjPltPool+1
+    .4byte clear__10ObjPltPool+1
     .incbin "baserom.gba", 0x000FF66C, 0xC0
 
     .global const_classname_KeyPad
@@ -129,111 +129,111 @@ const_classname_KeyPad:
     .byte 0,0
     .incbin "baserom.gba", 0x000FF734, 0xC
 
-    .global gUnknown_080FF740
-gUnknown_080FF740:
+    .global const_classname_UpKeyPress
+const_classname_UpKeyPress:
     .incbin "baserom.gba", 0x000FF740, 0x1C
 
-    .global gUnknown_080FF75C
-gUnknown_080FF75C:
+    .global const_classname_UpKeyLongPress
+const_classname_UpKeyLongPress:
     .incbin "baserom.gba", 0x000FF75C, 0x20
 
-    .global gUnknown_080FF77C
-gUnknown_080FF77C:
+    .global const_classname_DownKeyPress
+const_classname_DownKeyPress:
     .incbin "baserom.gba", 0x000FF77C, 0x24
 
-    .global gUnknown_080FF7A0
-gUnknown_080FF7A0:
+    .global const_classname_DownKeyLongPress
+const_classname_DownKeyLongPress:
     .incbin "baserom.gba", 0x000FF7A0, 0x24
 
-    .global gUnknown_080FF7C4
-gUnknown_080FF7C4:
+    .global const_classname_LeftKeyPress
+const_classname_LeftKeyPress:
     .incbin "baserom.gba", 0x000FF7C4, 0x24
 
-    .global gUnknown_080FF7E8
-gUnknown_080FF7E8:
+    .global const_classname_LeftKeyLongPress
+const_classname_LeftKeyLongPress:
     .incbin "baserom.gba", 0x000FF7E8, 0x24
 
-    .global gUnknown_080FF80C
-gUnknown_080FF80C:
+    .global const_classname_RightKeyPress
+const_classname_RightKeyPress:
     .incbin "baserom.gba", 0x000FF80C, 0x24
 
-    .global gUnknown_080FF830
-gUnknown_080FF830:
+    .global const_classname_RightKeyLongPress
+const_classname_RightKeyLongPress:
     .incbin "baserom.gba", 0x000FF830, 0x20
 
-    .global gUnknown_080FF850
-gUnknown_080FF850:
+    .global const_classname_AKeyPress
+const_classname_AKeyPress:
     .incbin "baserom.gba", 0x000FF850, 0x1C
 
-    .global gUnknown_080FF86C
-gUnknown_080FF86C:
+    .global const_classname_AKeyLongPress
+const_classname_AKeyLongPress:
     .incbin "baserom.gba", 0x000FF86C, 0x1C
 
-    .global gUnknown_080FF888
-gUnknown_080FF888:
+    .global const_classname_BKeyPress
+const_classname_BKeyPress:
     .incbin "baserom.gba", 0x000FF888, 0x1C
 
-    .global gUnknown_080FF8A4
-gUnknown_080FF8A4:
+    .global const_classname_BKeyLongPress
+const_classname_BKeyLongPress:
     .incbin "baserom.gba", 0x000FF8A4, 0x1C
 
-    .global gUnknown_080FF8C0
-gUnknown_080FF8C0:
+    .global const_classname_LKeyPress
+const_classname_LKeyPress:
     .incbin "baserom.gba", 0x000FF8C0, 0x1C
 
-    .global gUnknown_080FF8DC
-gUnknown_080FF8DC:
+    .global const_classname_LKeyLongPress
+const_classname_LKeyLongPress:
     .incbin "baserom.gba", 0x000FF8DC, 0x1C
 
-    .global gUnknown_080FF8F8
-gUnknown_080FF8F8:
+    .global const_classname_RKeyPress
+const_classname_RKeyPress:
     .incbin "baserom.gba", 0x000FF8F8, 0x1C
 
-    .global gUnknown_080FF914
-gUnknown_080FF914:
+    .global const_classname_RKeyLongPress
+const_classname_RKeyLongPress:
     .incbin "baserom.gba", 0x000FF914, 0x20
 
-    .global gUnknown_080FF934
-gUnknown_080FF934:
+    .global const_classname_StartKeyPress
+const_classname_StartKeyPress:
     .incbin "baserom.gba", 0x000FF934, 0x24
 
-    .global gUnknown_080FF958
-gUnknown_080FF958:
+    .global const_classname_StartKeyLongPress
+const_classname_StartKeyLongPress:
     .incbin "baserom.gba", 0x000FF958, 0x24
 
-    .global gUnknown_080FF97C
-gUnknown_080FF97C:
+    .global const_classname_SelectKeyPress
+const_classname_SelectKeyPress:
     .incbin "baserom.gba", 0x000FF97C, 0x24
 
-    .global gUnknown_080FF9A0
-gUnknown_080FF9A0:
+    .global const_classname_SelectKeyLongPress
+const_classname_SelectKeyLongPress:
     .incbin "baserom.gba", 0x000FF9A0, 0x14
 
-    .global gUnknown_080FF9B4
-gUnknown_080FF9B4:
+    .global callback_update__6KeyPadP5Clock
+callback_update__6KeyPadP5Clock:
     .4byte 0xFFFF0000
-    .4byte sub_0806CD5C+1
+    .4byte update__6KeyPadP5Clock+1
 
-    .global gUnknown_080FF9BC
-gUnknown_080FF9BC:
+    .global callback_emitNewKeys__6KeyPad
+callback_emitNewKeys__6KeyPad:
     .4byte 0xFFFF0000
-    .4byte emitNewKeys+1
+    .4byte emitNewKeys__6KeyPad+1
     .incbin "baserom.gba", 0x000FF9C4, 0x378
 
-    .global gUnknown_080FFD3C
-gUnknown_080FFD3C:
+    .global callback_sub_0806D878
+callback_sub_0806D878:
     .4byte 0xFFFF0000
     .4byte sub_0806D878+1
     .incbin "baserom.gba", 0x000FFD44, 0x128
 
-    .global gUnknown_080FFE6C
-gUnknown_080FFE6C:
+    .global callback_sub_0806DBF8
+callback_sub_0806DBF8:
     .4byte 0xFFFF0000
     .4byte sub_0806DBF8+1
     .incbin "baserom.gba", 0x000FFE74, 0x128
 
-    .global gUnknown_080FFF9C
-gUnknown_080FFF9C:
+    .global callback_sub_0806DFF0
+callback_sub_0806DFF0:
     .4byte 0xFFFF0000
     .4byte sub_0806DFF0+1
     .incbin "baserom.gba", 0x000FFFA4, 0x1EC
@@ -243,14 +243,14 @@ const_classname_FntSystem:
     .ascii "FntSystem"
     .byte 0, 0, 0
 
-    .global gUnknown_0810019C
-gUnknown_0810019C:
+    .global callback_sub_0806E7B4
+callback_sub_0806E7B4:
     .4byte 0xFFFF0000
     .4byte sub_0806E7B4+1
     .incbin "baserom.gba", 0x001001A4, 0x140
 
-    .global gUnknown_081002E4
-gUnknown_081002E4:
+    .global callback_sub_0806EA88
+callback_sub_0806EA88:
     .4byte 0xFFFF0000
     .4byte sub_0806EA88+1
     .incbin "baserom.gba", 0x001002EC, 0x134
@@ -261,14 +261,14 @@ const_classname_RasSystem:
     .byte 0, 0, 0
     .incbin "baserom.gba", 0x0010042C, 0x140
 
-    .global gUnknown_0810056C
-gUnknown_0810056C:
+    .global callback_sub_0806EF34
+callback_sub_0806EF34:
     .4byte 0xFFFF0000
     .4byte sub_0806EF34+1
     .incbin "baserom.gba", 0x00100574, 0x140
 
-    .global gUnknown_081006B4
-gUnknown_081006B4:
+    .global callback_sub_0806F380
+callback_sub_0806F380:
     .4byte 0xFFFF0000
     .4byte sub_0806F380+1
 
@@ -276,20 +276,20 @@ gUnknown_081006B4:
 gUnknown_081006BC:
     .incbin "baserom.gba", 0x001006BC, 0x1140
 
-    .global gUnknown_081017FC
-gUnknown_081017FC:
+    .global callback_sub_0806F600
+callback_sub_0806F600:
     .4byte 0xFFFF0000
     .4byte sub_0806F600+1
     .incbin "baserom.gba", 0x00101804, 0x140
 
-    .global gUnknown_08101944
-gUnknown_08101944:
+    .global callback_sub_0806F8B0
+callback_sub_0806F8B0:
     .4byte 0xFFFF0000
     .4byte sub_0806F8B0+1
     .incbin "baserom.gba", 0x0010194C, 0x140
 
-    .global gUnknown_08101A8C
-gUnknown_08101A8C:
+    .global callback_sub_0806FA14
+callback_sub_0806FA14:
     .4byte 0xFFFF0000
     .4byte sub_0806FA14+1
     .incbin "baserom.gba", 0x00101A94, 0x14C
@@ -305,31 +305,31 @@ const_classname_SndSystem:
     .ascii "SndSystem"
     .byte 0, 0, 0
 
-    .global gUnknown_08101CBC
-gUnknown_08101CBC:
+    .global callback_main__9SndSystem
+callback_main__9SndSystem:
     .4byte 0xFFFF0000
-    .4byte sndsystem_main+1
+    .4byte main__9SndSystem+1
 
-    .global gUnknown_08101CC4
-gUnknown_08101CC4:
+    .global callback_vsync__9SndSystem
+callback_vsync__9SndSystem:
     .4byte 0xFFFF0000
-    .4byte sndsystem_vsync+1
+    .4byte vsync__9SndSystem+1
     .incbin "baserom.gba", 0x00101CCC, 0x1A0
 
-    .global gUnknown_08101E6C
-gUnknown_08101E6C:
+    .global callback_sub_080705A4
+callback_sub_080705A4:
     .4byte 0xFFFF0000
     .4byte sub_080705A4+1
     .incbin "baserom.gba", 0x00101E74, 0xC28
 
-    .global gUnknown_08102A9C
-gUnknown_08102A9C:
+    .global callback_sub_080710B0
+callback_sub_080710B0:
     .4byte 0xFFFF0000
     .4byte sub_080710B0+1
     .incbin "baserom.gba", 0x00102AA4, 0x830
 
-    .global gUnknown_081032D4
-gUnknown_081032D4:
+    .global callback_sub_080714E4
+callback_sub_080714E4:
     .4byte 0xFFFF0000
     .4byte sub_080714E4+1
 
@@ -345,403 +345,403 @@ gUnknown_081032E6:
 gUnknown_081032F0:
     .incbin "baserom.gba", 0x001032F0, 0x420
 
-    .global gUnknown_08103710
-gUnknown_08103710:
+    .global callback_sub_08071920
+callback_sub_08071920:
     .4byte 0xFFFF0000
     .4byte sub_08071920+1
     .incbin "baserom.gba", 0x00103718, 0x418
 
-    .global gUnknown_08103B30
-gUnknown_08103B30:
+    .global callback_sub_08071BA0
+callback_sub_08071BA0:
     .4byte 0xFFFF0000
     .4byte sub_08071BA0+1
     .incbin "baserom.gba", 0x00103B38, 0x418
 
-    .global gUnknown_08103F50
-gUnknown_08103F50:
+    .global callback_sub_08071CD4
+callback_sub_08071CD4:
     .4byte 0xFFFF0000
     .4byte sub_08071CD4+1
     .incbin "baserom.gba", 0x00103F58, 0x418
 
-    .global gUnknown_08104370
-gUnknown_08104370:
+    .global callback_sub_08071E08
+callback_sub_08071E08:
     .4byte 0xFFFF0000
     .4byte sub_08071E08+1
     .incbin "baserom.gba", 0x00104378, 0x418
 
-    .global gUnknown_08104790
-gUnknown_08104790:
+    .global callback_sub_08071F38
+callback_sub_08071F38:
     .4byte 0xFFFF0000
     .4byte sub_08071F38+1
     .incbin "baserom.gba", 0x00104798, 0x820
 
-    .global gUnknown_08104FB8
-gUnknown_08104FB8:
+    .global const_classname_KeyFocusManager
+const_classname_KeyFocusManager:
     .incbin "baserom.gba", 0x00104FB8, 0x10
 
-    .global gUnknown_08104FC8
-gUnknown_08104FC8:
+    .global callback_sub_08072518
+callback_sub_08072518:
     .4byte 0xFFFF0000
     .4byte sub_08072518+1
     .incbin "baserom.gba", 0x00104FD0, 0xBA4
 
-    .global gUnknown_08105B74
-gUnknown_08105B74:
+    .global const_classname_RhythmBgm
+const_classname_RhythmBgm:
     .incbin "baserom.gba", 0x00105B74, 0x18
 
-    .global gUnknown_08105B8C
-gUnknown_08105B8C:
+    .global const_classname_RhythmIn
+const_classname_RhythmIn:
     .incbin "baserom.gba", 0x00105B8C, 0x18
 
-    .global gUnknown_08105BA4
-gUnknown_08105BA4:
+    .global const_classname_RhythmOut
+const_classname_RhythmOut:
     .incbin "baserom.gba", 0x00105BA4, 0x12C
 
-    .global gUnknown_08105CD0
-gUnknown_08105CD0:
+    .global callback_sub_0807489C
+callback_sub_0807489C:
     .4byte 0xFFFF0000
     .4byte sub_0807489C+1
 
-    .global gUnknown_08105CD8
-gUnknown_08105CD8:
+    .global callback_sub_080748C8
+callback_sub_080748C8:
     .4byte 0xFFFF0000
     .4byte sub_080748C8+1
     .incbin "baserom.gba", 0x00105CE0, 0x568
 
-    .global gUnknown_08106248
-gUnknown_08106248:
+    .global const_classname_Suspend
+const_classname_Suspend:
     .incbin "baserom.gba", 0x00106248, 0x10
 
-    .global gUnknown_08106258
-gUnknown_08106258:
+    .global const_classname_Resume
+const_classname_Resume:
     .incbin "baserom.gba", 0x00106258, 0x14
 
-    .global gUnknown_0810626C
-gUnknown_0810626C:
+    .global const_classname_UnitJoin
+const_classname_UnitJoin:
     .incbin "baserom.gba", 0x0010626C, 0x18
 
-    .global gUnknown_08106284
-gUnknown_08106284:
+    .global const_classname_UnitRevive
+const_classname_UnitRevive:
     .incbin "baserom.gba", 0x00106284, 0x18
 
-    .global gUnknown_0810629C
-gUnknown_0810629C:
+    .global const_classname_UnitEscape
+const_classname_UnitEscape:
     .incbin "baserom.gba", 0x0010629C, 0x14
 
-    .global gUnknown_081062B0
-gUnknown_081062B0:
+    .global const_classname_UnitDie
+const_classname_UnitDie:
     .incbin "baserom.gba", 0x001062B0, 0xB0
 
     .global gUnknown_08106360
 gUnknown_08106360:
     .incbin "baserom.gba", 0x00106360, 0xD10
 
-    .global gUnknown_08107070
-gUnknown_08107070:
+    .global callback_sub_080775E8
+callback_sub_080775E8:
     .4byte 0xFFFF0000
     .4byte sub_080775E8+1
 
-    .global gUnknown_08107078
-gUnknown_08107078:
+    .global callback_sub_0807762C
+callback_sub_0807762C:
     .4byte 0xFFFF0000
     .4byte sub_0807762C+1
 
-    .global gUnknown_08107080
-gUnknown_08107080:
+    .global callback_sub_08077670
+callback_sub_08077670:
     .4byte 0xFFFF0000
     .4byte sub_08077670+1
 
-    .global gUnknown_08107088
-gUnknown_08107088:
+    .global callback_sub_080776AC
+callback_sub_080776AC:
     .4byte 0xFFFF0000
     .4byte sub_080776AC+1
 
-    .global gUnknown_08107090
-gUnknown_08107090:
+    .global callback_sub_080776E8
+callback_sub_080776E8:
     .4byte 0xFFFF0000
     .4byte sub_080776E8+1
 
-    .global gUnknown_08107098
-gUnknown_08107098:
+    .global callback_sub_08077704
+callback_sub_08077704:
     .4byte 0xFFFF0000
     .4byte sub_08077704+1
 
-    .global gUnknown_081070A0
-gUnknown_081070A0:
+    .global callback_sub_08077898
+callback_sub_08077898:
     .4byte 0xFFFF0000
     .4byte sub_08077898+1
 
-    .global gUnknown_081070A8
-gUnknown_081070A8:
+    .global callback_sub_08077A48
+callback_sub_08077A48:
     .4byte 0xFFFF0000
     .4byte sub_08077A48+1
     .incbin "baserom.gba", 0x001070B0, 0xD00
 
-    .global gUnknown_08107DB0
-gUnknown_08107DB0:
+    .global callback_unit_join_callback
+callback_unit_join_callback:
     .4byte 0xFFFF0000
     .4byte unit_join_callback+1
 
-    .global gUnknown_08107DB8
-gUnknown_08107DB8:
+    .global callback_unit_leave_callback
+callback_unit_leave_callback:
     .4byte 0xFFFF0000
     .4byte unit_leave_callback+1
     .incbin "baserom.gba", 0x00107DC0, 0x5F8
 
-    .global gUnknown_081083B8
-gUnknown_081083B8:
+    .global const_classname_Player
+const_classname_Player:
     .incbin "baserom.gba", 0x001083B8, 0x88
 
-    .global gUnknown_08108440
-gUnknown_08108440:
+    .global callback_sub_0807C1C8
+callback_sub_0807C1C8:
     .4byte 0xFFFF0000
     .4byte sub_0807C1C8+1
 
-    .global gUnknown_08108448
-gUnknown_08108448:
+    .global callback_sub_0807C244
+callback_sub_0807C244:
     .4byte 0xFFFF0000
     .4byte sub_0807C244+1
 
-    .global gUnknown_08108450
-gUnknown_08108450:
+    .global callback_sub_0807C264
+callback_sub_0807C264:
     .4byte 0xFFFF0000
     .4byte sub_0807C264+1
 
-    .global gUnknown_08108458
-gUnknown_08108458:
+    .global callback_sub_0807C324
+callback_sub_0807C324:
     .4byte 0xFFFF0000
     .4byte sub_0807C324+1
     .incbin "baserom.gba", 0x00108460, 0x680
 
-    .global gUnknown_08108AE0
-gUnknown_08108AE0:
+    .global callback_sub_0807CF5C
+callback_sub_0807CF5C:
     .4byte 0xFFFF0000
     .4byte sub_0807CF5C+1
     .incbin "baserom.gba", 0x00108AE8, 0x680
 
-    .global gUnknown_08109168
-gUnknown_08109168:
+    .global callback_sub_0807D280
+callback_sub_0807D280:
     .4byte 0xFFFF0000
     .4byte sub_0807D280+1
     .incbin "baserom.gba", 0x00109170, 0x680
 
-    .global gUnknown_081097F0
-gUnknown_081097F0:
+    .global callback_sub_0807E44C
+callback_sub_0807E44C:
     .4byte 0xFFFF0000
     .4byte sub_0807E44C+1
 
-    .global gUnknown_081097F8
-gUnknown_081097F8:
+    .global callback_sub_0807E48C
+callback_sub_0807E48C:
     .4byte 0xFFFF0000
     .4byte sub_0807E48C+1
 
-    .global gUnknown_08109800
-gUnknown_08109800:
+    .global callback_sub_0807E4CC
+callback_sub_0807E4CC:
     .4byte 0xFFFF0000
     .4byte sub_0807E4CC+1
 
-    .global gUnknown_08109808
-gUnknown_08109808:
+    .global callback_sub_0807E50C
+callback_sub_0807E50C:
     .4byte 0xFFFF0000
     .4byte sub_0807E50C+1
 
-    .global gUnknown_08109810
-gUnknown_08109810:
+    .global callback_sub_0807E54C
+callback_sub_0807E54C:
     .4byte 0xFFFF0000
     .4byte sub_0807E54C+1
 
-    .global gUnknown_08109818
-gUnknown_08109818:
+    .global callback_sub_0807E58C
+callback_sub_0807E58C:
     .4byte 0xFFFF0000
     .4byte sub_0807E58C+1
 
-    .global gUnknown_08109820
-gUnknown_08109820:
+    .global callback_sub_0807E5DC
+callback_sub_0807E5DC:
     .4byte 0xFFFF0000
     .4byte sub_0807E5DC+1
 
-    .global gUnknown_08109828
-gUnknown_08109828:
+    .global callback_sub_0807EB40
+callback_sub_0807EB40:
     .4byte 0xFFFF0000
     .4byte sub_0807EB40+1
 
-    .global gUnknown_08109830
-gUnknown_08109830:
+    .global callback_sub_0807EB58
+callback_sub_0807EB58:
     .4byte 0xFFFF0000
     .4byte sub_0807EB58+1
 
-    .global gUnknown_08109838
-gUnknown_08109838:
+    .global callback_sub_0807EB88
+callback_sub_0807EB88:
     .4byte 0xFFFF0000
     .4byte sub_0807EB88+1
     .incbin "baserom.gba", 0x00109840, 0x680
 
-    .global gUnknown_08109EC0
-gUnknown_08109EC0:
+    .global callback_sub_0808014C
+callback_sub_0808014C:
     .4byte 0xFFFF0000
     .4byte sub_0808014C+1
 
-    .global gUnknown_08109EC8
-gUnknown_08109EC8:
+    .global callback_sub_080801A4
+callback_sub_080801A4:
     .4byte 0xFFFF0000
     .4byte sub_080801A4+1
 
-    .global gUnknown_08109ED0
-gUnknown_08109ED0:
+    .global callback_sub_080801FC
+callback_sub_080801FC:
     .4byte 0xFFFF0000
     .4byte sub_080801FC+1
 
-    .global gUnknown_08109ED8
-gUnknown_08109ED8:
+    .global callback_sub_08080220
+callback_sub_08080220:
     .4byte 0xFFFF0000
     .4byte sub_08080220+1
 
-    .global gUnknown_08109EE0
-gUnknown_08109EE0:
+    .global callback_sub_08080244
+callback_sub_08080244:
     .4byte 0xFFFF0000
     .4byte sub_08080244+1
 
-    .global gUnknown_08109EE8
-gUnknown_08109EE8:
+    .global callback_sub_0808025C
+callback_sub_0808025C:
     .4byte 0xFFFF0000
     .4byte sub_0808025C+1
 
-    .global gUnknown_08109EF0
-gUnknown_08109EF0:
+    .global callback_sub_0808028C
+callback_sub_0808028C:
     .4byte 0xFFFF0000
     .4byte sub_0808028C+1
     .incbin "baserom.gba", 0x00109EF8, 0x60C
 
-    .global gUnknown_0810A504
-gUnknown_0810A504:
+    .global const_classname_PlayerSkill
+const_classname_PlayerSkill:
     .incbin "baserom.gba", 0x0010A504, 0x6A8
 
-    .global gUnknown_0810ABAC
-gUnknown_0810ABAC:
+    .global const_classname_GuestSkill
+const_classname_GuestSkill:
     .incbin "baserom.gba", 0x0010ABAC, 0x694
 
-    .global gUnknown_0810B240
-gUnknown_0810B240:
+    .global const_classname_Monster
+const_classname_Monster:
     .incbin "baserom.gba", 0x0010B240, 0x38
 
-    .global gUnknown_0810B278
-gUnknown_0810B278:
+    .global callback_sub_08081790
+callback_sub_08081790:
     .4byte 0xFFFF0000
     .4byte sub_08081790+1
 
-    .global gUnknown_0810B280
-gUnknown_0810B280:
+    .global callback_sub_080817B0
+callback_sub_080817B0:
         .4byte 0xFFFF0000
         .4byte sub_080817B0+1
     .incbin "baserom.gba", 0x0010B288, 0xCE0
 
-    .global gUnknown_0810BF68
-gUnknown_0810BF68:
+    .global const_classname_MonsterSkill
+const_classname_MonsterSkill:
     .incbin "baserom.gba", 0x0010BF68, 0x6A0
 
-    .global gUnknown_0810C608
-gUnknown_0810C608:
+    .global callback_status_roundBeginCallback__FP6Status
+callback_status_roundBeginCallback__FP6Status:
     .4byte 0xFFFF0000
-    .4byte sub_08082968+1
+    .4byte status_roundBeginCallback__FP6Status+1
 
-    .global gUnknown_0810C610
-gUnknown_0810C610:
+    .global callback_sub_080829F4
+callback_sub_080829F4:
     .4byte 0xFFFF0000
     .4byte sub_080829F4+1
 
-    .global gUnknown_0810C618
-gUnknown_0810C618:
+    .global callback_sub_08082AA0
+callback_sub_08082AA0:
     .4byte 0xFFFF0000
     .4byte sub_08082AA0+1
 
-    .global gUnknown_0810C620
-gUnknown_0810C620:
+    .global callback_status_roundEndCallback__FP6Status
+callback_status_roundEndCallback__FP6Status:
     .4byte 0xFFFF0000
-    .4byte sub_08082AC0+1
+    .4byte status_roundEndCallback__FP6Status+1
     .incbin "baserom.gba", 0x0010C628, 0x5DC
 
-    .global gUnknown_0810CC04
-gUnknown_0810CC04:
+    .global const_classname_Psi
+const_classname_Psi:
     .incbin "baserom.gba", 0x0010CC04, 0x1424
 
-    .global gUnknown_0810E028
-gUnknown_0810E028:
+    .global callback_sub_0808431C
+callback_sub_0808431C:
         .4byte 0xFFFF0000
         .4byte sub_0808431C+1
     .incbin "baserom.gba", 0x0010E030, 0x680
 
-    .global gUnknown_0810E6B0
-gUnknown_0810E6B0:
+    .global callback_sub_08084D8C
+callback_sub_08084D8C:
     .4byte 0xFFFF0000
     .4byte sub_08084D8C+1
 
-    .global gUnknown_0810E6B8
-gUnknown_0810E6B8:
+    .global callback_sub_08084DBC
+callback_sub_08084DBC:
     .4byte 0xFFFF0000
     .4byte sub_08084DBC+1
 
-    .global gUnknown_0810E6C0
-gUnknown_0810E6C0:
+    .global callback_sub_08084DEC
+callback_sub_08084DEC:
     .4byte 0xFFFF0000
     .4byte sub_08084DEC+1
     .incbin "baserom.gba", 0x0010E6C8, 0x680
 
-    .global gUnknown_0810ED48
-gUnknown_0810ED48:
+    .global callback_sub_080856D4
+callback_sub_080856D4:
     .4byte 0xFFFF0000
     .4byte sub_080856D4+1
     .incbin "baserom.gba", 0x0010ED50, 0x680
 
-    .global gUnknown_0810F3D0
-gUnknown_0810F3D0:
+    .global callback_sub_08085C84
+callback_sub_08085C84:
     .4byte 0xFFFF0000
     .4byte sub_08085C84+1
     .incbin "baserom.gba", 0x0010F3D8, 0x680
 
-    .global gUnknown_0810FA58
-gUnknown_0810FA58:
+    .global callback_sub_08085DF4
+callback_sub_08085DF4:
     .4byte 0xFFFF0000
     .4byte sub_08085DF4+1
     .incbin "baserom.gba", 0x0010FA60, 0x680
 
-    .global gUnknown_081100E0
-gUnknown_081100E0:
+    .global callback_sub_08085F80
+callback_sub_08085F80:
     .4byte 0xFFFF0000
     .4byte sub_08085F80+1
     .incbin "baserom.gba", 0x001100E8, 0x680
 
-    .global gUnknown_08110768
-gUnknown_08110768:
+    .global callback_sub_080860F4
+callback_sub_080860F4:
     .4byte 0xFFFF0000
     .4byte sub_080860F4+1
     .incbin "baserom.gba", 0x00110770, 0x680
 
-    .global gUnknown_08110DF0
-gUnknown_08110DF0:
+    .global callback_sub_080862A8
+callback_sub_080862A8:
     .4byte 0xFFFF0000
     .4byte sub_080862A8+1
     .incbin "baserom.gba", 0x00110DF8, 0x680
 
-    .global gUnknown_08111478
-gUnknown_08111478:
+    .global callback_sub_08086460
+callback_sub_08086460:
     .4byte 0xFFFF0000
     .4byte sub_08086460+1
     .incbin "baserom.gba", 0x00111480, 0x680
 
-    .global gUnknown_08111B00
-gUnknown_08111B00:
+    .global callback_sub_08086694
+callback_sub_08086694:
     .4byte 0xFFFF0000
     .4byte sub_08086694+1
     .incbin "baserom.gba", 0x00111B08, 0x680
 
-    .global gUnknown_08112188
-gUnknown_08112188:
+    .global callback_sub_08086820
+callback_sub_08086820:
     .4byte 0xFFFF0000
     .4byte sub_08086820+1
     .incbin "baserom.gba", 0x00112190, 0x680
 
-    .global gUnknown_08112810
-gUnknown_08112810:
+    .global callback_sub_08086AB0
+callback_sub_08086AB0:
     .4byte 0xFFFF0000
     .4byte sub_08086AB0+1
 
@@ -757,14 +757,14 @@ gUnknown_08112EA8:
 gUnknown_081135A8:
     .incbin "baserom.gba", 0x001135A8, 0xD5C
 
-    .global gUnknown_08114304
-gUnknown_08114304:
+    .global callback_sub_08086F80
+callback_sub_08086F80:
     .4byte 0xFFFF0000
     .4byte sub_08086F80+1
     .incbin "baserom.gba", 0x0011430C, 0xC78
 
-    .global gUnknown_08114F84
-gUnknown_08114F84:
+    .global callback_sub_08087AE0
+callback_sub_08087AE0:
     .4byte 0xFFFF0000
     .4byte sub_08087AE0+1
     .incbin "baserom.gba", 0x00114F8C, 0x700
@@ -797,187 +797,187 @@ gUnknown_08115A3C:
 gUnknown_08115A7C:
     .incbin "baserom.gba", 0x00115A7C, 0x430
 
-    .global gUnknown_08115EAC
-gUnknown_08115EAC:
+    .global callback_sub_08089A9C
+callback_sub_08089A9C:
     .4byte 0xFFFF0000
     .4byte sub_08089A9C+1
     .incbin "baserom.gba", 0x00115EB4, 0x158
 
-    .global gUnknown_0811600C
-gUnknown_0811600C:
+    .global callback_sub_08089F94
+callback_sub_08089F94:
     .4byte 0xFFFF0000
     .4byte sub_08089F94+1
     .incbin "baserom.gba", 0x00116014, 0x158
 
-    .global gUnknown_0811616C
-gUnknown_0811616C:
+    .global callback_sub_0808A230
+callback_sub_0808A230:
     .4byte 0xFFFF0000
     .4byte sub_0808A230+1
     .incbin "baserom.gba", 0x00116174, 0x158
 
-    .global gUnknown_081162CC
-gUnknown_081162CC:
+    .global callback_sub_0808A3C8
+callback_sub_0808A3C8:
     .4byte 0xFFFF0000
     .4byte sub_0808A3C8+1
     .incbin "baserom.gba", 0x001162D4, 0x158
 
-    .global gUnknown_0811642C
-gUnknown_0811642C:
+    .global callback_sub_0808A5CC
+callback_sub_0808A5CC:
     .4byte 0xFFFF0000
     .4byte sub_0808A5CC+1
     .incbin "baserom.gba", 0x00116434, 0x158
 
-    .global gUnknown_0811658C
-gUnknown_0811658C:
+    .global callback_sub_0808A8F0
+callback_sub_0808A8F0:
     .4byte 0xFFFF0000
     .4byte sub_0808A8F0+1
     .incbin "baserom.gba", 0x00116594, 0x158
 
-    .global gUnknown_081166EC
-gUnknown_081166EC:
+    .global callback_sub_0808AB4C
+callback_sub_0808AB4C:
     .4byte 0xFFFF0000
     .4byte sub_0808AB4C+1
     .incbin "baserom.gba", 0x001166F4, 0x158
 
-    .global gUnknown_0811684C
-gUnknown_0811684C:
+    .global callback_sub_0808ADD4
+callback_sub_0808ADD4:
     .4byte 0xFFFF0000
     .4byte sub_0808ADD4+1
     .incbin "baserom.gba", 0x00116854, 0x830
 
-    .global gUnknown_08117084
-gUnknown_08117084:
+    .global callback_sub_0808AF44
+callback_sub_0808AF44:
     .4byte 0xFFFF0000
     .4byte sub_0808AF44+1
     .incbin "baserom.gba", 0x0011708C, 0x418
 
-    .global gUnknown_081174A4
-gUnknown_081174A4:
+    .global callback_sub_0808B084
+callback_sub_0808B084:
     .4byte 0xFFFF0000
     .4byte sub_0808B084+1
     .incbin "baserom.gba", 0x001174AC, 0x418
 
-    .global gUnknown_081178C4
-gUnknown_081178C4:
+    .global callback_sub_0808B1B8
+callback_sub_0808B1B8:
     .4byte 0xFFFF0000
     .4byte sub_0808B1B8+1
     .incbin "baserom.gba", 0x001178CC, 0xA98
 
-    .global gUnknown_08118364
-gUnknown_08118364:
+    .global callback_sub_0808C59C
+callback_sub_0808C59C:
     .4byte 0xFFFF0000
     .4byte sub_0808C59C+1
 
-    .global gUnknown_0811836C
-gUnknown_0811836C:
+    .global callback_sub_0808C618
+callback_sub_0808C618:
     .4byte 0xFFFF0000
     .4byte sub_0808C618+1
 
-    .global gUnknown_08118374
-gUnknown_08118374:
+    .global callback_sub_0808C694
+callback_sub_0808C694:
     .4byte 0xFFFF0000
     .4byte sub_0808C694+1
 
-    .global gUnknown_0811837C
-gUnknown_0811837C:
+    .global callback_sub_0808C6D8
+callback_sub_0808C6D8:
     .4byte 0xFFFF0000
     .4byte sub_0808C6D8+1
 
-    .global gUnknown_08118384
-gUnknown_08118384:
+    .global callback_sub_0808C758
+callback_sub_0808C758:
     .4byte 0xFFFF0000
     .4byte sub_0808C758+1
 
-    .global gUnknown_0811838C
-gUnknown_0811838C:
+    .global callback_sub_0808CB78
+callback_sub_0808CB78:
     .4byte 0xFFFF0000
     .4byte sub_0808CB78+1
 
-    .global gUnknown_08118394
-gUnknown_08118394:
+    .global callback_sub_0808CB90
+callback_sub_0808CB90:
     .4byte 0xFFFF0000
     .4byte sub_0808CB90+1
 
-    .global gUnknown_0811839C
-gUnknown_0811839C:
+    .global callback_sub_0808CBC0
+callback_sub_0808CBC0:
     .4byte 0xFFFF0000
     .4byte sub_0808CBC0+1
     .incbin "baserom.gba", 0x001183A4, 0x680
 
-    .global gUnknown_08118A24
-gUnknown_08118A24:
+    .global callback_sub_0808DA04
+callback_sub_0808DA04:
     .4byte 0xFFFF0000
     .4byte sub_0808DA04+1
 
-    .global gUnknown_08118A2C
-gUnknown_08118A2C:
+    .global callback_sub_0808DA44
+callback_sub_0808DA44:
     .4byte 0xFFFF0000
     .4byte sub_0808DA44+1
 
-    .global gUnknown_08118A34
-gUnknown_08118A34:
+    .global callback_sub_0808DA84
+callback_sub_0808DA84:
     .4byte 0xFFFF0000
     .4byte sub_0808DA84+1
 
-    .global gUnknown_08118A3C
-gUnknown_08118A3C:
+    .global callback_sub_0808DAC4
+callback_sub_0808DAC4:
     .4byte 0xFFFF0000
     .4byte sub_0808DAC4+1
 
-    .global gUnknown_08118A44
-gUnknown_08118A44:
+    .global callback_sub_0808DB04
+callback_sub_0808DB04:
     .4byte 0xFFFF0000
     .4byte sub_0808DB04+1
 
-    .global gUnknown_08118A4C
-gUnknown_08118A4C:
+    .global callback_sub_0808DB44
+callback_sub_0808DB44:
     .4byte 0xFFFF0000
     .4byte sub_0808DB44+1
 
-    .global gUnknown_08118A54
-gUnknown_08118A54:
+    .global callback_sub_0808DB94
+callback_sub_0808DB94:
     .4byte 0xFFFF0000
     .4byte sub_0808DB94+1
 
-    .global gUnknown_08118A5C
-gUnknown_08118A5C:
+    .global callback_sub_0808DF84
+callback_sub_0808DF84:
     .4byte 0xFFFF0000
     .4byte sub_0808DF84+1
 
-    .global gUnknown_08118A64
-gUnknown_08118A64:
+    .global callback_sub_0808DF9C
+callback_sub_0808DF9C:
     .4byte 0xFFFF0000
     .4byte sub_0808DF9C+1
 
-    .global gUnknown_08118A6C
-gUnknown_08118A6C:
+    .global callback_sub_0808DFBC
+callback_sub_0808DFBC:
     .4byte 0xFFFF0000
     .4byte sub_0808DFBC+1
     .incbin "baserom.gba", 0x00118A74, 0x680
 
-    .global gUnknown_081190F4
-gUnknown_081190F4:
+    .global callback_sub_0808E2DC
+callback_sub_0808E2DC:
     .4byte 0xFFFF0000
     .4byte sub_0808E2DC+1
 
-    .global gUnknown_081190FC
-gUnknown_081190FC:
+    .global callback_sub_0808E300
+callback_sub_0808E300:
     .4byte 0xFFFF0000
     .4byte sub_0808E300+1
 
-    .global gUnknown_08119104
-gUnknown_08119104:
+    .global callback_sub_0808E318
+callback_sub_0808E318:
     .4byte 0xFFFF0000
     .4byte sub_0808E318+1
 
-    .global gUnknown_0811910C
-gUnknown_0811910C:
+    .global callback_sub_0808E338
+callback_sub_0808E338:
     .4byte 0xFFFF0000
     .4byte sub_0808E338+1
     .incbin "baserom.gba", 0x00119114, 0x428
 
-    .global gUnknown_0811953C
-gUnknown_0811953C:
+    .global callback_sub_0808E664
+callback_sub_0808E664:
     .4byte 0xFFFF0000
     .4byte sub_0808E664+1
 
@@ -985,8 +985,8 @@ gUnknown_0811953C:
 gUnknown_08119544:
     .incbin "baserom.gba", 0x00119544, 0x420
 
-    .global gUnknown_08119964
-gUnknown_08119964:
+    .global callback_sub_0808EAB0
+callback_sub_0808EAB0:
     .4byte 0xFFFF0000
     .4byte sub_0808EAB0+1
 

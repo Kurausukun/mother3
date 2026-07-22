@@ -58,7 +58,7 @@ _0806E576:
 	subs r6, #1
 	cmp r6, #0
 	bge _0806E550
-	bl sub_0806B040
+	bl makeInstance__15BGEngineManager
 	adds r4, r0, #0
 	movs r1, #0x80
 	lsls r1, r1, #1
@@ -119,7 +119,7 @@ _0806E576:
 	bx r1
 	.align 2, 0
 _0806E608: .4byte _vt.9FntSystem
-_0806E60C: .4byte _vt.3Unk
+_0806E60C: .4byte _vt.5Event
 _0806E610: .4byte _vt.12PostAppClock
-_0806E614: .4byte gUnknown_0810019C
+_0806E614: .4byte callback_sub_0806E7B4
 	.syntax divided

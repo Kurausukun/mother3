@@ -196,7 +196,7 @@ _08060642:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08060654: .4byte _vt.3Unk
+_08060654: .4byte _vt.5Event
 _08060658: .4byte _vt.7Suspend
 _0806065C: .4byte _vt.7UnitDie
 _08060660: .4byte _vt.6Resume

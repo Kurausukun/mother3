@@ -2,6 +2,7 @@
 #define BATTLE_KEYPAD_H
 
 #include "base.h"
+#include "global.h"
 #include "singleton.h"
 
 struct KeyPad : Base {
@@ -17,6 +18,9 @@ struct KeyPad : Base {
     u32 getKeys();
     u32 getNewKeys();
 
+    void update(Clock* clock);
+    void emitNewKeys();
+
     u16 _20;
     u16 _22;
     u16 keys;  // copy of keypad state
@@ -24,129 +28,146 @@ struct KeyPad : Base {
     u16 new_keys;
     u16 long_keys;
 };
-SINGLETON_DECL(KeyPad);
+MANAGER_DECL_INLINE(KeyPad);
 
-struct UpKeyPress : Unk {
-    inline UpKeyPress() {}
-    virtual ~UpKeyPress();
+struct UpKeyPress : Event {
+    inline virtual ~UpKeyPress() {}
+    INLINE_VT_END
     virtual void* getRTTI();
 };
-struct DownKeyPress : Unk {
-    inline DownKeyPress() {}
-    virtual ~DownKeyPress();
-    virtual void* getRTTI();
-};
-struct LeftKeyPress : Unk {
-    inline LeftKeyPress() {}
-    virtual ~LeftKeyPress();
-    virtual void* getRTTI();
-};
-struct RightKeyPress : Unk {
-    inline RightKeyPress() {}
-    virtual ~RightKeyPress();
-    virtual void* getRTTI();
-};
-struct AKeyPress : Unk {
-    inline AKeyPress() {}
-    virtual ~AKeyPress();
-    virtual void* getRTTI();
-};
-struct BKeyPress : Unk {
-    inline BKeyPress() {}
-    virtual ~BKeyPress();
-    virtual void* getRTTI();
-};
-struct RKeyPress : Unk {
-    inline RKeyPress() {}
-    virtual ~RKeyPress();
-    virtual void* getRTTI();
-};
-struct LKeyPress : Unk {
-    inline LKeyPress() {}
-    virtual ~LKeyPress();
-    virtual void* getRTTI();
-};
-struct StartKeyPress : Unk {
-    inline StartKeyPress() {}
-    virtual ~StartKeyPress();
-    virtual void* getRTTI();
-};
-struct SelectKeyPress : Unk {
-    inline SelectKeyPress() {}
-    virtual ~SelectKeyPress();
-    virtual void* getRTTI();
-};
+RTTI_DECL_INLINE(UpKeyPress);
 
-struct UpKeyLongPress : Unk {
-    inline UpKeyLongPress() {}
-    virtual ~UpKeyLongPress();
+struct UpKeyLongPress : Event {
+    inline virtual ~UpKeyLongPress() {}
+    INLINE_VT_END
     virtual void* getRTTI();
 };
-struct DownKeyLongPress : Unk {
-    inline DownKeyLongPress() {}
-    virtual ~DownKeyLongPress();
-    virtual void* getRTTI();
-};
-struct LeftKeyLongPress : Unk {
-    inline LeftKeyLongPress() {}
-    virtual ~LeftKeyLongPress();
-    virtual void* getRTTI();
-};
-struct RightKeyLongPress : Unk {
-    inline RightKeyLongPress() {}
-    virtual ~RightKeyLongPress();
-    virtual void* getRTTI();
-};
-struct AKeyLongPress : Unk {
-    inline AKeyLongPress() {}
-    virtual ~AKeyLongPress();
-    virtual void* getRTTI();
-};
-struct BKeyLongPress : Unk {
-    inline BKeyLongPress() {}
-    virtual ~BKeyLongPress();
-    virtual void* getRTTI();
-};
-struct RKeyLongPress : Unk {
-    inline RKeyLongPress() {}
-    virtual ~RKeyLongPress();
-    virtual void* getRTTI();
-};
-struct LKeyLongPress : Unk {
-    inline LKeyLongPress() {}
-    virtual ~LKeyLongPress();
-    virtual void* getRTTI();
-};
-struct StartKeyLongPress : Unk {
-    inline StartKeyLongPress() {}
-    virtual ~StartKeyLongPress();
-    virtual void* getRTTI();
-};
-struct SelectKeyLongPress : Unk {
-    inline SelectKeyLongPress() {}
-    virtual ~SelectKeyLongPress();
-    virtual void* getRTTI();
-};
+RTTI_DECL_INLINE(UpKeyLongPress);
 
-RTTI(UpKeyPress);
-RTTI(DownKeyPress);
-RTTI(LeftKeyPress);
-RTTI(RightKeyPress);
-RTTI(AKeyPress);
-RTTI(BKeyPress);
-RTTI(RKeyPress);
-RTTI(LKeyPress);
-RTTI(StartKeyPress);
-RTTI(SelectKeyPress);
-RTTI(UpKeyLongPress);
-RTTI(DownKeyLongPress);
-RTTI(LeftKeyLongPress);
-RTTI(RightKeyLongPress);
-RTTI(AKeyLongPress);
-RTTI(BKeyLongPress);
-RTTI(RKeyLongPress);
-RTTI(LKeyLongPress);
-RTTI(StartKeyLongPress);
-RTTI(SelectKeyLongPress);
+struct DownKeyPress : Event {
+    inline virtual ~DownKeyPress() {}
+    INLINE_VT_END
+    virtual void* getRTTI();
+};
+RTTI_DECL_INLINE(DownKeyPress);
+
+struct DownKeyLongPress : Event {
+    inline virtual ~DownKeyLongPress() {}
+    INLINE_VT_END
+    virtual void* getRTTI();
+};
+RTTI_DECL_INLINE(DownKeyLongPress);
+
+struct LeftKeyPress : Event {
+    inline virtual ~LeftKeyPress() {}
+    INLINE_VT_END
+    virtual void* getRTTI();
+};
+RTTI_DECL_INLINE(LeftKeyPress);
+
+struct LeftKeyLongPress : Event {
+    inline virtual ~LeftKeyLongPress() {}
+    INLINE_VT_END
+    virtual void* getRTTI();
+};
+RTTI_DECL_INLINE(LeftKeyLongPress);
+
+struct RightKeyPress : Event {
+    inline virtual ~RightKeyPress() {}
+    INLINE_VT_END
+    virtual void* getRTTI();
+};
+RTTI_DECL_INLINE(RightKeyPress);
+
+struct RightKeyLongPress : Event {
+    inline virtual ~RightKeyLongPress() {}
+    INLINE_VT_END
+    virtual void* getRTTI();
+};
+RTTI_DECL_INLINE(RightKeyLongPress);
+
+struct AKeyPress : Event {
+    inline virtual ~AKeyPress() {}
+    INLINE_VT_END
+    virtual void* getRTTI();
+};
+RTTI_DECL_INLINE(AKeyPress);
+
+struct AKeyLongPress : Event {
+    inline virtual ~AKeyLongPress() {}
+    INLINE_VT_END
+    virtual void* getRTTI();
+};
+RTTI_DECL_INLINE(AKeyLongPress);
+
+struct BKeyPress : Event {
+    inline virtual ~BKeyPress() {}
+    INLINE_VT_END
+    virtual void* getRTTI();
+};
+RTTI_DECL_INLINE(BKeyPress);
+
+struct BKeyLongPress : Event {
+    inline virtual ~BKeyLongPress() {}
+    INLINE_VT_END
+    virtual void* getRTTI();
+};
+RTTI_DECL_INLINE(BKeyLongPress);
+
+struct LKeyPress : Event {
+    inline virtual ~LKeyPress() {}
+    INLINE_VT_END
+    virtual void* getRTTI();
+};
+RTTI_DECL_INLINE(LKeyPress);
+
+struct LKeyLongPress : Event {
+    inline virtual ~LKeyLongPress() {}
+    INLINE_VT_END
+    virtual void* getRTTI();
+};
+RTTI_DECL_INLINE(LKeyLongPress);
+
+struct RKeyPress : Event {
+    inline virtual ~RKeyPress() {}
+    INLINE_VT_END
+    virtual void* getRTTI();
+};
+RTTI_DECL_INLINE(RKeyPress);
+
+struct RKeyLongPress : Event {
+    inline virtual ~RKeyLongPress() {}
+    INLINE_VT_END
+    virtual void* getRTTI();
+};
+RTTI_DECL_INLINE(RKeyLongPress);
+
+struct StartKeyPress : Event {
+    inline virtual ~StartKeyPress() {}
+    INLINE_VT_END
+    virtual void* getRTTI();
+};
+RTTI_DECL_INLINE(StartKeyPress);
+
+struct StartKeyLongPress : Event {
+    inline virtual ~StartKeyLongPress() {}
+    INLINE_VT_END
+    virtual void* getRTTI();
+};
+RTTI_DECL_INLINE(StartKeyLongPress);
+
+struct SelectKeyPress : Event {
+    inline virtual ~SelectKeyPress() {}
+    INLINE_VT_END
+    virtual void* getRTTI();
+};
+RTTI_DECL_INLINE(SelectKeyPress);
+
+struct SelectKeyLongPress : Event {
+    inline virtual ~SelectKeyLongPress() {}
+    INLINE_VT_END
+    virtual void* getRTTI();
+};
+RTTI_DECL_INLINE(SelectKeyLongPress);
 
 #endif  // BATTLE_KEYPAD_H

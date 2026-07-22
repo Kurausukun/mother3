@@ -34,7 +34,7 @@ _080559B0:
 	.align 2, 0
 _080559B4: .4byte gSomeBlend
 _080559B8: .4byte 0x00004DF4
-_080559BC: .4byte gUnknown_02004EE2
+_080559BC: .4byte gSave+0x682 @ gSave.hinawa_name
 _080559C0:
 	movs r4, #0
 	ldr r6, _08055A1C

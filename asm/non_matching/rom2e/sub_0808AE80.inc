@@ -46,7 +46,7 @@ sub_0808AE80:
 	bx r1
 	.align 2, 0
 _0808AEE4: .4byte vt_09F85880
-_0808AEE8: .4byte _vt.3Unk
+_0808AEE8: .4byte _vt.5Event
 _0808AEEC: .4byte _vt.12PostAppClock
-_0808AEF0: .4byte gUnknown_08117084
+_0808AEF0: .4byte callback_sub_0808AF44
 	.syntax divided

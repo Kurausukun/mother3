@@ -12,7 +12,7 @@ __9RasSystem:
 	movs r0, #0
 	strh r0, [r6, #0x20]
 	strh r0, [r6, #0x28]
-	bl sub_0806B040
+	bl makeInstance__15BGEngineManager
 	adds r4, r0, #0
 	mov r1, sp
 	movs r5, #0x80

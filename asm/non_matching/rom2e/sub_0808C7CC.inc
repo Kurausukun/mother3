@@ -72,7 +72,7 @@ _0808C82E:
 	adds r2, r0, #0
 	mov r0, sp
 	adds r1, r4, #0
-	bl sub_08082B78
+	bl __3PsiUsP4Unit
 	movs r0, #0xc4
 	mov r3, sl
 	muls r3, r0, r3
@@ -84,7 +84,7 @@ _0808C82E:
 	add r4, sp, #0x4c
 	adds r0, r4, #0
 	mov r1, sp
-	bl sub_08082DEC
+	bl name__C3Psi
 	adds r0, r7, #0
 	adds r1, r4, #0
 	bl sub_08071150
@@ -97,7 +97,7 @@ _0808C82E:
 	movs r1, #1
 	bl sub_0808E930
 	mov r0, sp
-	bl sub_08083074
+	bl ppCost__C3Psi
 	adds r1, r0, #0
 	adds r0, r6, #0
 	bl sub_0808E958
@@ -119,7 +119,7 @@ _0808C82E:
 	bl _call_via_r1
 	adds r4, r0, #0
 	mov r0, sp
-	bl sub_08083074
+	bl ppCost__C3Psi
 	cmp r4, r0
 	blt _0808C8F2
 	movs r0, #0
@@ -148,7 +148,7 @@ _0808C8F2:
 _0808C90C:
 	mov r0, sp
 	movs r1, #2
-	bl  sub_08082BA8
+	bl  _._3Psi
 	b _0808C944
 _0808C916:
 	movs r0, #0xc4
@@ -307,7 +307,7 @@ _0808C960:
 	adds r2, r0, #0
 	mov r0, sp
 	adds r1, r4, #0
-	bl sub_08082B78
+	bl __3PsiUsP4Unit
 	add r4, sp, #0x4c
 	adds r0, r4, #0
 	mov r1, sp
@@ -331,7 +331,7 @@ _0808C960:
 	bl _._3Msg
 	mov r0, sp
 	movs r1, #2
-	bl  sub_08082BA8
+	bl  _._3Psi
 	b _0808CAE8
 	.align 2, 0
 _0808CAB0: .4byte 0x00000564

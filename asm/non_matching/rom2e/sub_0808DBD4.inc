@@ -54,7 +54,7 @@ _0808DC10:
 	ldrsh r0, [r5, r2]
 	adds r4, r4, r0
 	mov r0, sp
-	bl sub_080803C8
+	bl getName__11PlayerSkillUs
 	ldr r2, [r5, #4]
 	adds r0, r4, #0
 	mov r1, sp
@@ -146,7 +146,7 @@ _0808DC88:
 	bl _call_via_r1
 	adds r1, r0, #0
 	adds r0, r4, #0
-	bl sub_08073F88
+	bl getPlayerSkill
 	mov r8, r0
 	ldr r1, [r0, #0x1c]
 	movs r0, #0xf0

@@ -20,7 +20,7 @@ sub_08021DC4:
 	b _08021E44
 	.align 2, 0
 _08021DEC: .4byte 0x0000FF26
-_08021DF0: .4byte gUnknown_02004EE2
+_08021DF0: .4byte gSave+0x682 @ gSave.hinawa_name
 _08021DF4:
 	subs r0, r4, #5
 	lsls r0, r0, #0x10
@@ -30,7 +30,7 @@ _08021DF4:
 	ldr r4, _08021E04
 	b _08021E44
 	.align 2, 0
-_08021E04: .4byte gUnknown_02004EF2
+_08021E04: .4byte gSave+0x692 @ gSave.claus_name
 _08021E08:
 	adds r0, r4, #0
 	bl sub_08001D70
@@ -105,7 +105,7 @@ _08021E9E:
 	ldr r4, _08021EA8
 	b _08021F30
 	.align 2, 0
-_08021EA8: .4byte gUnknown_02004EE2
+_08021EA8: .4byte gSave+0x682 @ gSave.hinawa_name
 _08021EAC:
 	subs r0, r4, #5
 	lsls r0, r0, #0x10
@@ -115,7 +115,7 @@ _08021EAC:
 	ldr r4, _08021EBC
 	b _08021F30
 	.align 2, 0
-_08021EBC: .4byte gUnknown_02004EF2
+_08021EBC: .4byte gSave+0x692 @ gSave.claus_name
 _08021EC0:
 	adds r0, r4, #0
 	bl sub_08001D70

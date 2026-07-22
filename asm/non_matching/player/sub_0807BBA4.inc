@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0807BBA4:
+setHP__6Playeri:
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	bl setHP__4Uniti

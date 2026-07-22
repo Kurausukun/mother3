@@ -538,7 +538,7 @@ _08028626:
 	.align 2, 0
 _08028698: .4byte gGame
 _0802869C: .4byte 0x000082AC
-_080286A0: .4byte gUnknown_02004A96
+_080286A0: .4byte gSave+0x236 @ gSave._236
 _080286A4: .4byte 0x00000682
 _080286A8: .4byte 0x0000FFFF
 _080286AC: .4byte gUnknown_02005080
@@ -647,5 +647,5 @@ _08028762:
 	.align 2, 0
 _08028774: .4byte gSave
 _08028778: .4byte 0x00000222
-_0802877C: .4byte gUnknown_02004A8C
+_0802877C: .4byte gSave+0x22C @ gSave._22c
 	.syntax divided

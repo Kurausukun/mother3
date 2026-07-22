@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0807C6B8:
+__6Player:
 	push {r4, lr}
 	adds r4, r0, #0
 	bl __4Unit
@@ -40,6 +40,6 @@ sub_0807C6B8:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0807C710: .4byte vt_09F82070
-_0807C714: .4byte vt_09F820E8
+_0807C710: .4byte _vt.6Player.10UnitObject
+_0807C714: .4byte _vt.6Player
 	.syntax divided

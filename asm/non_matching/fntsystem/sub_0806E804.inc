@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0806E804:
+_GLOBAL_I_FntSystemManager:
 	push {r4, lr}
 	ldr r4, _0806E818
 	adds r0, r4, #0
@@ -10,6 +10,6 @@ sub_0806E804:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0806E818: .4byte gUnknown_02001E58
+_0806E818: .4byte sFntSystemManager
 _0806E81C: .4byte _vt.16FntSystemManager
 	.syntax divided

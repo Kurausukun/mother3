@@ -23,7 +23,7 @@ sub_0807459C__FUsiii:
 	movs r0, #0x60
 	bl __builtin_new
 	adds r1, r6, #0
-	bl __10RhythmGameUs
+	bl __9RhythmBgmUs
 	adds r2, r0, #0
 	mov r0, sp
 	strb r7, [r0]

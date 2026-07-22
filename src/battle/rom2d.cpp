@@ -4,7 +4,6 @@
 
 extern "C" void LZ77UnCompWram(void*, void*);
 
-extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08083098.inc", void sub_08083098());
 extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_080830C4.inc", void sub_080830C4());
 extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_080830F0.inc", void sub_080830F0());
 extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08083144.inc", void sub_08083144());

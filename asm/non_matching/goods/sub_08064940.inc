@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08064940:
+put__10PsiFactoryUsPFUsP4Unit_Pv:
 	lsls r0, r0, #0x10
 	ldr r2, _0806494C
 	lsrs r0, r0, #0xe
@@ -7,5 +7,5 @@ sub_08064940:
 	str r1, [r0]
 	bx lr
 	.align 2, 0
-_0806494C: .4byte gUnknown_020034B0
+_0806494C: .4byte sPsiSpawners
 	.syntax divided

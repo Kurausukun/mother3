@@ -3,12 +3,6 @@
 
 #include "battle/action.h"
 
-struct GuestSkillInfo {
-    u8 id;
-    MoveInfo move;
-};
-extern const GuestSkillInfo gGuestSkillData[];
-
 class GuestSkill : public Action {
 public:
     GuestSkill() {}
@@ -47,9 +41,9 @@ public:
     u32 action_298() override;
 
 private:
-    const GuestSkillInfo* mInfo;
+    const PlayerSkillInfo* mInfo;
 };
 
-RTTI(GuestSkill);
+RTTI_DECL(GuestSkill);
 
 #endif  // BATTLE_GUEST_SKILL_H

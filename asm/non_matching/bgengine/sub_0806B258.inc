@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0806B258:
+dt__8BGEngine:
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -7,14 +7,14 @@ sub_0806B258:
 	mov r8, r1
 	ldr r0, _0806B2C4
 	str r0, [r6, #0x1c]
-	bl sub_0806A9A4
+	bl get__14GEngineManager
 	adds r4, r0, #0
 	bl sub_0806AFF0
 	ldr r1, _0806B2C8
 	ands r1, r0
 	adds r0, r4, #0
 	bl sub_0806AF2C
-	bl sub_0806A9B0
+	bl destroy__14GEngineManager
 	adds r7, r6, #0
 	adds r7, #0x2c
 	adds r0, r6, #0
@@ -52,6 +52,6 @@ _0806B2B2:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0806B2C4: .4byte vt_09F7EFB0
+_0806B2C4: .4byte _vt.8BGEngine
 _0806B2C8: .4byte 0x0000FFF8
 	.syntax divided

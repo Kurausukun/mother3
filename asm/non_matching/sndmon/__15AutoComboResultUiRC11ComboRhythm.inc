@@ -124,7 +124,7 @@ __15AutoComboResultUiRC11ComboRhythm:
 _08065974: .4byte vt_09F7E0D0
 _08065978: .4byte 0x0000027B
 _0806597C: .4byte _vt.6ResPtr
-_08065980: .4byte _vt.3Unk
+_08065980: .4byte _vt.5Event
 _08065984: .4byte _vt.12PostAppClock
 _08065988: .4byte gUnknown_080FCAB0
 	.syntax divided

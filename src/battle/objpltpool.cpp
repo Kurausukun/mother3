@@ -13,7 +13,7 @@ struct PoolElement {
 
 class ObjPltPool : public Base {
 public:
-    Vector<PoolElement> _20;
+    Vector<PoolElement> pool;
 
     ObjPltPool();
     virtual ~ObjPltPool();
@@ -23,20 +23,20 @@ public:
     s32 sub_0806C964(s32 searchValue);
     u16 sub_0806C9A0(int);
     s32 sub_0806C9D4(int);
-    void sub_0806CA24();
+    void clear();
 };
 
-extern ClockData gUnknown_080FF664;  // refers to sub_0806CA24
+extern ClockData callback_clear__10ObjPltPool;
 
 extern "C" ASM_FUNC("asm/non_matching/objpltpool/sub_0806C76C.inc", void sub_0806C76C());
 
-SINGLETON_DECL(ObjPltPool)
-RTTI(ObjPltPool)
+MANAGER_DECL(ObjPltPool)
+RTTI_DECL(ObjPltPool)
 
-SINGLETON_IMPL(ObjPltPool)
+MANAGER_IMPL(ObjPltPool)
 
 ObjPltPool::ObjPltPool() {
-    listen(ClockManager::get(), SysClock(), gUnknown_080FF664);
+    listen(ClockManager::get(), SysClock(), callback_clear__10ObjPltPool);
 }
 
 ObjPltPool::~ObjPltPool() {}
@@ -44,9 +44,9 @@ ObjPltPool::~ObjPltPool() {}
 extern "C" ASM_FUNC("asm/non_matching/objpltpool/sub_0806C898.inc", void sub_0806C898());
 
 s32 ObjPltPool::sub_0806C964(s32 searchValue) {
-    Vector<PoolElement>* data = &_20;
+    Vector<PoolElement>* data = &pool;
 
-    s32 count = _20.size();
+    s32 count = pool.size();
     if (count <= 0) {
         return count;
     }
@@ -56,7 +56,7 @@ s32 ObjPltPool::sub_0806C964(s32 searchValue) {
 
     while (left < right) {
         s32 mid = (left + right) / 2;
-        PoolElement* element = &_20[mid];
+        PoolElement* element = &pool[mid];
 
         if (element->_4 < searchValue) {
             left = mid + 1;
@@ -71,38 +71,37 @@ s32 ObjPltPool::sub_0806C964(s32 searchValue) {
 u16 ObjPltPool::sub_0806C9A0(int arg0) {
     s32 index = sub_0806C9D4(arg0);
 
-    if (index < _20.size()) {
-        PoolElement* element = &_20[index];
+    if (index < pool.size()) {
+        PoolElement* element = &pool[index];
         element->counter++;
-        return _20[index].value;
+        return pool[index].value;
     }
 
     return 0xFFFF;
 }
 
 s32 ObjPltPool::sub_0806C9D4(int searchValue) {
-    s32 count = _20.size();
+    s32 count = pool.size();
     if (count <= 0) {
         return count;
     }
 
     s32 left = 0;
-    s32 right = _20.size() - 1;
+    s32 right = pool.size() - 1;
 
     while (left < right) {
         s32 mid = (left + right) / 2;
 
-        if (_20[mid]._4 < searchValue) {
+        if (pool[mid]._4 < searchValue) {
             left = mid + 1;
         } else {
             right = mid;
         }
     }
 
-    return _20[left]._4 == searchValue ? left : count;
+    return pool[left]._4 == searchValue ? left : count;
 }
 
-// TODO: should ths be a function that takes ObjPltPool as an argument?
-void ObjPltPool::sub_0806CA24() {
-    _20.clear();
+void ObjPltPool::clear() {
+    pool.clear();
 }

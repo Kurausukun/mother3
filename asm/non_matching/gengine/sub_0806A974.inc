@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0806A974:
+makeInstance__14GEngineManager:
 	push {r4, lr}
 	ldr r1, _0806A99C
 	ldr r0, [r1]
@@ -10,7 +10,7 @@ sub_0806A974:
 	ldr r4, _0806A9A0
 	movs r0, #0x7c
 	bl __builtin_new
-	bl sub_0806A9F8
+	bl __7GEngine
 	str r0, [r4]
 _0806A990:
 	ldr r0, _0806A9A0
@@ -19,6 +19,6 @@ _0806A990:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0806A99C: .4byte gUnknown_02001CD8
-_0806A9A0: .4byte gUnknown_02001CDC
+_0806A99C: .4byte _14GEngineManager.mSingletonGuard
+_0806A9A0: .4byte _14GEngineManager.mSingleton
 	.syntax divided

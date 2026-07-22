@@ -1,0 +1,116 @@
+#include "battle.h"
+#include "battle/monster.h"
+#include "battle/player.h"
+
+extern "C" bool sub_080725E8();
+extern "C" Struct160* sub_08072608();
+extern "C" s32 getPartyCount();
+extern "C" Player* GetPlayer(s32);
+
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EF90.inc", void init__13BattleFactory());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EFEC.inc", void put__13BattleFactoryUsPFUs_Pv());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EFFC.inc", void create__13BattleFactoryUs());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805F018.inc", void sub_0805F018());
+extern "C" ASM_FUNC("asm/non_matching/guest/nullsub_26.inc", void nullsub_26());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805F0C8.inc", void sub_0805F0C8());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805F0FC.inc", void sub_0805F0FC());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805F134.inc", void sub_0805F134());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805F138.inc", void sub_0805F138());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805F140.inc", void sub_0805F140());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805F1C0.inc", void sub_0805F1C0());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805F448.inc", void sub_0805F448());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805F478.inc", void sub_0805F478());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805F624.inc", void sub_0805F624());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805F6B0.inc", void sub_0805F6B0());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805F788.inc", void sub_0805F788());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805F83C.inc", void sub_0805F83C());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805F840.inc", void sub_0805F840());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805F860.inc", void sub_0805F860());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805F8E8.inc", void sub_0805F8E8());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805F95C.inc", void sub_0805F95C());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805F98C.inc", void sub_0805F98C());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805FA48.inc", void sub_0805FA48());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805FA8C.inc", void sub_0805FA8C());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805FB30.inc", void sub_0805FB30());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805FBA8.inc", void sub_0805FBA8());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805FC18.inc", void sub_0805FC18());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805FC88.inc", void sub_0805FC88());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805FCF8.inc", void sub_0805FCF8());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805FE30.inc", void sub_0805FE30());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08060038.inc", void sub_08060038());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08060340.inc", void sub_08060340());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_080604CC.inc", void sub_080604CC());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08060664.inc", void sub_08060664());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_080608BC.inc", void sub_080608BC());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08060A48.inc", void sub_08060A48());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08060AE8.inc", void sub_08060AE8());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08060AEC.inc", void sub_08060AEC());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08060AF8.inc", void sub_08060AF8());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08060AFC.inc", void sub_08060AFC());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08060B08.inc", void sub_08060B08());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08060B0C.inc", void sub_08060B0C());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08060B14.inc", void sub_08060B14());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08060B20.inc", void sub_08060B20());
+extern "C" ASM_FUNC("asm/non_matching/guest/tellExperience.inc", void tellExperience());
+
+extern "C" bool metalMonkeyCheck(Unit* t) {
+    if (sub_080725E8() == true && (sub_08072608()->_0[0] == Monster::MetalMonkey)) {
+        ROMStrFmt(0x87, Msg(), Msg(), Msg()).print(Color::Black(), true);
+        return true;
+    }
+    return false;
+}
+
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08060D78.inc", void sub_08060D78());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08060DA0.inc", void sub_08060DA0());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08060DC0.inc", void sub_08060DC0());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08060DE0.inc", void sub_08060DE0());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08060E0C.inc", void sub_08060E0C());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08060E1C.inc", void sub_08060E1C());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08060E34.inc", void sub_08060E34());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08060E38.inc", void sub_08060E38());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08060E70.inc", void sub_08060E70());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08060E80.inc", void sub_08060E80());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08060E8C.inc", void sub_08060E8C());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08060EAC.inc", void sub_08060EAC());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08060EB0.inc", void sub_08060EB0());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08060ED4.inc", void sub_08060ED4());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08060F7C.inc", void sub_08060F7C());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08060F80.inc", void init__13PlayerFactory());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08060FF4.inc", void put__13PlayerFactoryUsPFUsUs_Pv()); //
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08061004.inc", void create__13PlayerFactoryUsUs()); //
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08061024.inc", void sub_08061024());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08061048.inc", void sub_08061048());
+extern "C" ASM_FUNC("asm/non_matching/guest/tellPresent.inc", void tellPresent());
+extern "C" ASM_FUNC("asm/non_matching/guest/druggedPresentCheck.inc", void druggedPresentCheck());
+
+extern "C" Player* reqInventorySlot() {
+    for (int i = 0; i < getPartyCount(); i++) {
+        Player* player = GetPlayer(i);
+        if (player->player_414() < 16) {
+            return player;
+        }
+    }
+
+    return NULL;
+}
+
+extern "C" ASM_FUNC("asm/non_matching/guest/tellPlayerInventoryFull.inc", void tellPlayerInventoryFull());
+extern "C" ASM_FUNC("asm/non_matching/guest/throwAwayItem.inc", void throwAwayItem());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08061678.inc", void sub_08061678());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_080616C4.inc", void sub_080616C4());
+extern "C" ASM_FUNC("asm/non_matching/guest/checkGiveUpItem.inc", void checkGiveUpItem());
+extern "C" ASM_FUNC("asm/non_matching/guest/tellGaveUpItem.inc", void tellGaveUpItem());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08061954.inc", void sub_08061954());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08061974.inc", void init__18PlayerSkillFactory());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08061A3C.inc", void put__18PlayerSkillFactoryUsPFUsP4Unit_Pv());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08061A4C.inc", void create__18PlayerSkillFactoryUsP4Unit());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08061A68.inc", void sub_08061A68());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08061AE8.inc", void sub_08061AE8());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08061B30.inc", void sub_08061B30());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08061B94.inc", void sub_08061B94());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08061C0C.inc", void sub_08061C0C());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08061C1C.inc", void sub_08061C1C());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08061CC8.inc", void sub_08061CC8());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08061DE4.inc", void sub_08061DE4());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08061DE8.inc", void sub_08061DE8());

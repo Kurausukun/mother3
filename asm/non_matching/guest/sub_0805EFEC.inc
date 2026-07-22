@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0805EFEC:
+put__13BattleFactoryUsPFUs_Pv:
 	lsls r0, r0, #0x10
 	ldr r2, _0805EFF8
 	lsrs r0, r0, #0xe
@@ -7,5 +7,5 @@ sub_0805EFEC:
 	str r1, [r0]
 	bx lr
 	.align 2, 0
-_0805EFF8: .4byte gUnknown_02002018
+_0805EFF8: .4byte sBattleSpawners
 	.syntax divided

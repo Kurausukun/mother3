@@ -12,7 +12,7 @@ sub_08073F98:
 	ldr r1, [r1, #0x14]
 	bl _call_via_r1
 	adds r4, r0, #0
-	bl sub_080803B4
+	bl get__15PlayerSkillRTTI
 	cmp r4, r0
 	bne _08073FBC
 	movs r5, #1

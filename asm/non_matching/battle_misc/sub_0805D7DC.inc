@@ -1,7 +1,7 @@
 	.syntax unified
-sub_0805D7DC:
+get__15UnitTurnEndRTTI:
 	ldr r0, _0805D7E0
 	bx lr
 	.align 2, 0
-_0805D7E0: .4byte gUnknown_02001FE0
+_0805D7E0: .4byte sUnitTurnEndRTTI
 	.syntax divided

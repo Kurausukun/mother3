@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0806C4A0:
+getRTTI__10ObjChrPool:
 	push {lr}
 	bl sub_0806C420
 	pop {r1}

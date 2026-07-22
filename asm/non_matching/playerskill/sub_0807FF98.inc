@@ -11,7 +11,7 @@ sub_0807FF98:
 	bl _call_via_r1
 	adds r1, r0, #0
 	movs r0, #3
-	bl sub_08073F88
+	bl getPlayerSkill
 	adds r1, r0, #0
 	str r1, [r4, #0x38]
 	adds r0, r4, #0

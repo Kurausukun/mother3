@@ -66,7 +66,7 @@ sub_08088044__11Unk08088018UsPvT2:
 	adds r2, r6, #0
 	adds r3, r5, #0
 	bl sub_0808855C
-	bl sub_0806B070
+	bl get__15BGEngineManager
 	adds r6, r0, #0
 	adds r1, r7, #0
 	bl sub_0806B814

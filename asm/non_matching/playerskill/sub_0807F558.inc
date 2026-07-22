@@ -11,7 +11,7 @@ sub_0807F558:
 	bl _call_via_r1
 	adds r1, r0, #0
 	movs r0, #1
-	bl sub_08061A4C
+	bl create__18PlayerSkillFactoryUsP4Unit
 	adds r1, r0, #0
 	str r1, [r4, #0x38]
 	adds r0, r4, #0

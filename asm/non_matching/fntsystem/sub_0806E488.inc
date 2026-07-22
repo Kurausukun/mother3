@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0806E488:
+makeInstance__16FntSystemManager:
 	push {r4, lr}
 	ldr r1, _0806E4B0
 	ldr r0, [r1]
@@ -19,6 +19,6 @@ _0806E4A4:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0806E4B0: .4byte gUnknown_02001E64
-_0806E4B4: .4byte gUnknown_02001E68
+_0806E4B0: .4byte _16FntSystemManager.mSingletonGuard
+_0806E4B4: .4byte _16FntSystemManager.mSingleton
 	.syntax divided

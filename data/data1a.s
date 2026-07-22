@@ -179,4 +179,3 @@ gUnknown_080C2A9C:
     .global gTownMapSizeTable
 gTownMapSizeTable:
     .incbin "baserom.gba", 0x000C2AF8, 0xF0
-    

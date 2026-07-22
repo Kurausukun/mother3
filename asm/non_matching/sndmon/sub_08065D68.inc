@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08065D68:
+makeInstance__13SndMonManager:
 	push {r4, lr}
 	ldr r1, _08065D90
 	ldr r0, [r1]
@@ -10,7 +10,7 @@ sub_08065D68:
 	ldr r4, _08065D94
 	movs r0, #0x38
 	bl __builtin_new
-	bl sub_08065DEC
+	bl __6SndMon
 	str r0, [r4]
 _08065D84:
 	ldr r0, _08065D94
@@ -19,6 +19,6 @@ _08065D84:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08065D90: .4byte gUnknown_020040EC
-_08065D94: .4byte gUnknown_020040F0
+_08065D90: .4byte _13SndMonManager.mSingletonGuard
+_08065D94: .4byte _13SndMonManager.mSingleton
 	.syntax divided

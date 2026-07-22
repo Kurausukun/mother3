@@ -57,7 +57,7 @@ _0806EEF6:
 	bx r0
 	.align 2, 0
 _0806EF04: .4byte vt_09F80168
-_0806EF08: .4byte gUnknown_0810056C
+_0806EF08: .4byte callback_sub_0806EF34
 _0806EF0C: .4byte 0x040000B0
 _0806EF10: .4byte 0x0000C5FF
 _0806EF14: .4byte 0x00007FFF

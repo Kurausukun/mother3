@@ -28,7 +28,7 @@ _0806E7C8:
 	cmp r4, r5
 	blt _0806E7C8
 _0806E7E8:
-	bl sub_0806B070
+	bl get__15BGEngineManager
 	add r1, sp, #4
 	str r1, [sp]
 	movs r1, #0

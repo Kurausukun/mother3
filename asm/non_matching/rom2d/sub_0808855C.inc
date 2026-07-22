@@ -33,7 +33,7 @@ sub_0808855C:
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	str r0, [sp, #0xc]
-	bl sub_0806B070
+	bl get__15BGEngineManager
 	adds r1, r0, #0
 	add r0, sp, #4
 	adds r2, r5, #0

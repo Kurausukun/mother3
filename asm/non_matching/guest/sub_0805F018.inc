@@ -65,7 +65,7 @@ sub_0805F018:
 	bx r1
 	.align 2, 0
 _0805F0AC: .4byte vt_09F466F0
-_0805F0B0: .4byte _vt.3Unk
+_0805F0B0: .4byte _vt.5Event
 _0805F0B4: .4byte _vt.13ShowDownAsWin
 _0805F0B8: .4byte gUnknown_080F3870
 _0805F0BC: .4byte _vt.8AppClock

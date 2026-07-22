@@ -62,4 +62,4 @@ extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FD10.inc", void sub_0806
 extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FD14.inc", void sub_0806FD14());
 extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FD1C.inc", void sub_0806FD1C());
 extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FD20.inc", void sub_0806FD20());
-extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FD5C.inc", void sub_0806FD5C());
+extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FD5C.inc", void _GLOBAL_I_EfcSystemManager());

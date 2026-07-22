@@ -6,7 +6,7 @@ sub_08065514:
 	mov r5, r8
 	push {r5, r6, r7}
 	adds r7, r0, #0
-	bl sub_0806BE14
+	bl get__16ObjEngineManager
 	mov r8, r0
 	adds r0, r7, #0
 	bl sub_080655B0

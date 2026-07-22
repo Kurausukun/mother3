@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0806A9F8:
+__7GEngine:
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -191,8 +191,8 @@ _0806AB10:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0806AB74: .4byte vt_09F7EF30
-_0806AB78: .4byte _vt.3Unk
+_0806AB74: .4byte _vt.7GEngine
+_0806AB78: .4byte _vt.5Event
 _0806AB7C: .4byte _vt.8SysClock
-_0806AB80: .4byte gUnknown_080FF19C
+_0806AB80: .4byte callback_sub_0806AC48
 	.syntax divided

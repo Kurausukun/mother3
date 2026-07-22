@@ -8,7 +8,7 @@ sub_0806F34C:
 	adds r6, r1, #0
 	mov r8, r2
 	adds r5, r3, #0
-	bl sub_0806B070
+	bl get__15BGEngineManager
 	ldrh r1, [r4, #0x2c]
 	adds r1, #2
 	lsls r1, r1, #0x10

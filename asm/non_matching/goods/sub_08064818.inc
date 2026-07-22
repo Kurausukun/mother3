@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08064818:
+create__13StatusFactoryUsP4Unit:
 	push {lr}
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10

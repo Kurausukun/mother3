@@ -2,8 +2,8 @@
 #include "battle/clock.h"
 #include "gba/gba.h"
 
-extern ClockData gUnknown_080FF9B4;
-extern ClockData gUnknown_080FF9BC;
+extern ClockData callback_update__6KeyPadP5Clock;
+extern ClockData callback_emitNewKeys__6KeyPad;
 
 RTTI_IMPL(UpKeyPress);
 RTTI_IMPL(UpKeyLongPress);
@@ -26,15 +26,15 @@ RTTI_IMPL(StartKeyLongPress);
 RTTI_IMPL(SelectKeyPress);
 RTTI_IMPL(SelectKeyLongPress);
 
-SINGLETON_IMPL(KeyPad)
+MANAGER_IMPL(KeyPad)
 
 KeyPad::KeyPad() : keys(0), new_keys(0), long_keys(0) {
     _20 = 0x2d;
     _22 = 0x8;  // START_BUTTON?
 
     CpuFill16(0, hold_timers, sizeof(hold_timers));
-    listen(ClockManager::get(), SysClock(), gUnknown_080FF9B4);
-    listen(ClockManager::get(), AppClock(), gUnknown_080FF9BC);
+    listen(ClockManager::get(), SysClock(), callback_update__6KeyPadP5Clock);
+    listen(ClockManager::get(), AppClock(), callback_emitNewKeys__6KeyPad);
 }
 
 KeyPad::~KeyPad() {}
@@ -63,97 +63,94 @@ u32 KeyPad::getNewKeys() {
     return new_keys;
 }
 
-extern "C" NONMATCH("asm/non_matching/keypad/sub_0806CD5C.inc",
-                    void sub_0806CD5C(KeyPad* kp, Clock* clock)) {
-    kp->new_keys = 0;
-    kp->long_keys = 0;
+NONMATCH("asm/non_matching/keypad/sub_0806CD5C.inc",
+                    void KeyPad::update(Clock* clock)) {
+    new_keys = 0;
+    long_keys = 0;
     if ((clock->mTime & 1) == 0) {
         u32 keys = REG_KEYINPUT ^ 0x3FF;
-        kp->new_keys = keys & ~kp->keys;
-        kp->keys = keys;
+        new_keys = keys & ~keys;
+        keys = keys;
     }
 
     for (int i = 0; i < 16; ++i) {
         u16 k = 1 << i;
 
-        if (kp->keys & k) {
-            kp->hold_timers[i]++;
-            if (kp->hold_timers[i] == kp->_20) {
-                kp->long_keys |= k;
-            } else if (kp->hold_timers[i] != kp->_20 + kp->_22) {
-                kp->long_keys &= ~k;
+        if (keys & k) {
+            hold_timers[i]++;
+            if (hold_timers[i] == _20) {
+                long_keys |= k;
+            } else if (hold_timers[i] != _20 + _22) {
+                long_keys &= ~k;
             } else {
-                kp->long_keys |= k;
-                kp->hold_timers[i] -= kp->_22;
+                long_keys |= k;
+                hold_timers[i] -= _22;
             }
         }
     }
 }
 END_NONMATCH
 
-// Regression due to the singleton impls on keys/keypad, come back to this later!
-extern "C" NONMATCH("asm/non_matching/keypad/emitNewKeys.inc",
-                    void emitNewKeys(KeyPad* kp)) {
-    if (kp->new_keys & DPAD_UP) {
-        kp->emit(UpKeyPress());
+void KeyPad::emitNewKeys() {
+    if (new_keys & DPAD_UP) {
+        emit(UpKeyPress());
     }
-    if (kp->new_keys & DPAD_DOWN) {
-        kp->emit(DownKeyPress());
+    if (new_keys & DPAD_DOWN) {
+        emit(DownKeyPress());
     }
-    if (kp->new_keys & DPAD_LEFT) {
-        kp->emit(LeftKeyPress());
+    if (new_keys & DPAD_LEFT) {
+        emit(LeftKeyPress());
     }
-    if (kp->new_keys & DPAD_RIGHT) {
-        kp->emit(RightKeyPress());
+    if (new_keys & DPAD_RIGHT) {
+        emit(RightKeyPress());
     }
-    if (kp->new_keys & A_BUTTON) {
-        kp->emit(AKeyPress());
+    if (new_keys & A_BUTTON) {
+        emit(AKeyPress());
     }
-    if (kp->new_keys & B_BUTTON) {
-        kp->emit(BKeyPress());
+    if (new_keys & B_BUTTON) {
+        emit(BKeyPress());
     }
-    if (kp->new_keys & R_BUTTON) {
-        kp->emit(RKeyPress());
+    if (new_keys & R_BUTTON) {
+        emit(RKeyPress());
     }
-    if (kp->new_keys & L_BUTTON) {
-        kp->emit(LKeyPress());
+    if (new_keys & L_BUTTON) {
+        emit(LKeyPress());
     }
-    if (kp->new_keys & START_BUTTON) {
-        kp->emit(StartKeyPress());
+    if (new_keys & START_BUTTON) {
+        emit(StartKeyPress());
     }
-    if (kp->new_keys & SELECT_BUTTON) {
-        kp->emit(SelectKeyPress());
+    if (new_keys & SELECT_BUTTON) {
+        emit(SelectKeyPress());
     }
 
-    if (kp->long_keys & DPAD_UP) {
-        kp->emit(UpKeyLongPress());
+    if (long_keys & DPAD_UP) {
+        emit(UpKeyLongPress());
     }
-    if (kp->long_keys & DPAD_DOWN) {
-        kp->emit(DownKeyLongPress());
+    if (long_keys & DPAD_DOWN) {
+        emit(DownKeyLongPress());
     }
-    if (kp->long_keys & DPAD_LEFT) {
-        kp->emit(LeftKeyLongPress());
+    if (long_keys & DPAD_LEFT) {
+        emit(LeftKeyLongPress());
     }
-    if (kp->long_keys & DPAD_RIGHT) {
-        kp->emit(RightKeyLongPress());
+    if (long_keys & DPAD_RIGHT) {
+        emit(RightKeyLongPress());
     }
-    if (kp->long_keys & A_BUTTON) {
-        kp->emit(AKeyLongPress());
+    if (long_keys & A_BUTTON) {
+        emit(AKeyLongPress());
     }
-    if (kp->long_keys & B_BUTTON) {
-        kp->emit(BKeyLongPress());
+    if (long_keys & B_BUTTON) {
+        emit(BKeyLongPress());
     }
-    if (kp->long_keys & L_BUTTON) {
-        kp->emit(LKeyLongPress());
+    if (long_keys & L_BUTTON) {
+        emit(LKeyLongPress());
     }
-    if (kp->long_keys & R_BUTTON) {
-        kp->emit(RKeyLongPress());
+    if (long_keys & R_BUTTON) {
+        emit(RKeyLongPress());
     }
-    if (kp->long_keys & START_BUTTON) {
-        kp->emit(StartKeyLongPress());
+    if (long_keys & START_BUTTON) {
+        emit(StartKeyLongPress());
     }
-    if (kp->long_keys & SELECT_BUTTON) {
-        kp->emit(SelectKeyLongPress());
+    if (long_keys & SELECT_BUTTON) {
+        emit(SelectKeyLongPress());
     }
 }
-END_NONMATCH

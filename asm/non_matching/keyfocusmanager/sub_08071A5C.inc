@@ -2,7 +2,7 @@
 sub_08071A5C:
 	push {r4, lr}
 	adds r4, r0, #0
-	bl sub_0806BE14
+	bl get__16ObjEngineManager
 	adds r4, #0x64
 	movs r1, #4
 	adds r2, r4, #0

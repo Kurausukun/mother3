@@ -68,7 +68,7 @@ public:
     Interrupt mIntrs[13];
 };
 
-SINGLETON_DECL(Irc)
-RTTI(Irc)
+MANAGER_DECL(Irc)
+RTTI_DECL(Irc)
 
 #endif  // BATTLE_IRC_H

@@ -32,7 +32,7 @@ _0808E37E:
 	movs r4, #0x9b
 	lsls r4, r4, #2
 	adds r0, r7, r4
-	bl sub_08071F8C
+	bl __10KeyFocuser
 	movs r0, #0
 	strh r0, [r7, #0x24]
 	mov sl, r8
@@ -276,9 +276,9 @@ _0808E5BC: .4byte vt_09F85DA8
 _0808E5C0: .4byte 0x000003A5
 _0808E5C4: .4byte 0x00000287
 _0808E5C8: .4byte _vt.6ResPtr
-_0808E5CC: .4byte _vt.3Unk
+_0808E5CC: .4byte _vt.5Event
 _0808E5D0: .4byte _vt.10UpKeyPress
-_0808E5D4: .4byte gUnknown_0811953C
+_0808E5D4: .4byte callback_sub_0808E664
 _0808E5D8: .4byte _vt.12DownKeyPress
 _0808E5DC: .4byte _vt.12LeftKeyPress
 _0808E5E0: .4byte _vt.13RightKeyPress

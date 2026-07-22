@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0806C428:
+makeInstance__17ObjChrPoolManager:
 	push {r4, lr}
 	ldr r1, _0806C450
 	ldr r0, [r1]
@@ -10,7 +10,7 @@ sub_0806C428:
 	ldr r4, _0806C454
 	movs r0, #0x50
 	bl __builtin_new
-	bl sub_0806C4AC
+	bl __10ObjChrPool
 	str r0, [r4]
 _0806C444:
 	ldr r0, _0806C454
@@ -19,6 +19,6 @@ _0806C444:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0806C450: .4byte gUnknown_02001D14
-_0806C454: .4byte gUnknown_02001D18
+_0806C450: .4byte _17ObjChrPoolManager.mSingletonGuard
+_0806C454: .4byte _17ObjChrPoolManager.mSingleton
 	.syntax divided

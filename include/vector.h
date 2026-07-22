@@ -62,6 +62,15 @@ struct Vector {
         return false;
     }
 
+    bool removeIdx(s32 i) {
+        if (i < mSize){
+            copy(&mStorage[i + 1], &mStorage[i], mSize - 1 - i);
+            mSize--;
+            return true;
+        }
+        return false;
+    }
+
     void removeAll(const T& value) {
         for (int i = 0; i < mSize; i++) {
             if (mStorage[i] == value) {

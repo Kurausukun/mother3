@@ -17,14 +17,14 @@ extern "C" s32 randrange(s32, s32);
 extern "C" s32 randrange2(s32, s32);
 extern "C" PartyInfo* getPartyInfo();
 
-extern ClockData gUnknown_08107070;
-extern ClockData gUnknown_08107078;
-extern ClockData gUnknown_08107080;
-extern ClockData gUnknown_08107088;
-extern ClockData gUnknown_08107090;
-extern ClockData gUnknown_08107098;
-extern ClockData gUnknown_081070A0;
-extern ClockData gUnknown_081070A8;
+extern ClockData callback_sub_080775E8;
+extern ClockData callback_sub_0807762C;
+extern ClockData callback_sub_08077670;
+extern ClockData callback_sub_080776AC;
+extern ClockData callback_sub_080776E8;
+extern ClockData callback_sub_08077704;
+extern ClockData callback_sub_08077898;
+extern ClockData callback_sub_08077A48;
 
 UnitTarget::UnitTarget(u16 target, Unit* unit) {
     mInfo = &gUnitTargetData[target];
@@ -323,21 +323,21 @@ extern "C" NONMATCH("asm/non_matching/unitTargetChoice/__16UnitTargetChoiceUsP4U
     thisx->_60 = 1;
     thisx->_64 = 0;
 
-    thisx->listen(&thisx->mKeyFocuser, LeftKeyPress(), gUnknown_08107070);
-    thisx->listen(&thisx->mKeyFocuser, LeftKeyLongPress(), gUnknown_08107070);
-    thisx->listen(&thisx->mKeyFocuser, RightKeyPress(), gUnknown_08107078);
-    thisx->listen(&thisx->mKeyFocuser, RightKeyLongPress(), gUnknown_08107078);
-    thisx->listen(&thisx->mKeyFocuser, AKeyPress(), gUnknown_08107080);
-    thisx->listen(&thisx->mKeyFocuser, AKeyLongPress(), gUnknown_08107080);
-    thisx->listen(&thisx->mKeyFocuser, LKeyPress(), gUnknown_08107080);
-    thisx->listen(&thisx->mKeyFocuser, LKeyLongPress(), gUnknown_08107080);
-    thisx->listen(&thisx->mKeyFocuser, BKeyPress(), gUnknown_08107088);
-    thisx->listen(getPartyInfo(), Suspend(), gUnknown_08107090);
-    thisx->listen(getPartyInfo(), UnitJoin(), gUnknown_08107098);
-    thisx->listen(getPartyInfo(), UnitRevive(), gUnknown_08107098);
-    thisx->listen(getPartyInfo(), UnitEscape(), gUnknown_081070A0);
-    thisx->listen(getPartyInfo(), UnitDie(), gUnknown_081070A0);
-    thisx->listen(getPartyInfo(), Resume(), gUnknown_081070A8);
+    thisx->listen(&thisx->mKeyFocuser, LeftKeyPress(), callback_sub_080775E8);
+    thisx->listen(&thisx->mKeyFocuser, LeftKeyLongPress(), callback_sub_080775E8);
+    thisx->listen(&thisx->mKeyFocuser, RightKeyPress(), callback_sub_0807762C);
+    thisx->listen(&thisx->mKeyFocuser, RightKeyLongPress(), callback_sub_0807762C);
+    thisx->listen(&thisx->mKeyFocuser, AKeyPress(), callback_sub_08077670);
+    thisx->listen(&thisx->mKeyFocuser, AKeyLongPress(), callback_sub_08077670);
+    thisx->listen(&thisx->mKeyFocuser, LKeyPress(), callback_sub_08077670);
+    thisx->listen(&thisx->mKeyFocuser, LKeyLongPress(), callback_sub_08077670);
+    thisx->listen(&thisx->mKeyFocuser, BKeyPress(), callback_sub_080776AC);
+    thisx->listen(getPartyInfo(), Suspend(), callback_sub_080776E8);
+    thisx->listen(getPartyInfo(), UnitJoin(), callback_sub_08077704);
+    thisx->listen(getPartyInfo(), UnitRevive(), callback_sub_08077704);
+    thisx->listen(getPartyInfo(), UnitEscape(), callback_sub_08077898);
+    thisx->listen(getPartyInfo(), UnitDie(), callback_sub_08077898);
+    thisx->listen(getPartyInfo(), Resume(), callback_sub_08077A48);
 }
 END_NONMATCH
 

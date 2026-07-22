@@ -65,5 +65,5 @@ sub_08055AB4:
 	.align 2, 0
 _08055B44: .4byte gUnknown_0200417E
 _08055B48: .4byte gUnknown_0201AA9A
-_08055B4C: .4byte gUnknown_02004EF2
+_08055B4C: .4byte gSave+0x692 @ gSave.claus_name
 	.syntax divided

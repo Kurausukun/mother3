@@ -199,7 +199,7 @@ _0807D4BC:
 	movs r0, #0xd3
 	lsls r0, r0, #3
 	add r0, sl
-	bl sub_08071F8C
+	bl __10KeyFocuser
 	ldr r4, [sp, #0x98]
 	mov r0, sl
 	str r4, [r0, #0x24]
@@ -757,31 +757,31 @@ _0807D804:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0807DA9C: .4byte _vt.3Unk
+_0807DA9C: .4byte _vt.5Event
 _0807DAA0: .4byte _vt.10UpKeyPress
-_0807DAA4: .4byte gUnknown_081097F0
+_0807DAA4: .4byte callback_sub_0807E44C
 _0807DAA8: .4byte _vt.14UpKeyLongPress
 _0807DAAC: .4byte _vt.12DownKeyPress
-_0807DAB0: .4byte gUnknown_081097F8
+_0807DAB0: .4byte callback_sub_0807E48C
 _0807DAB4: .4byte _vt.16DownKeyLongPress
 _0807DAB8: .4byte _vt.12LeftKeyPress
-_0807DABC: .4byte gUnknown_08109800
+_0807DABC: .4byte callback_sub_0807E4CC
 _0807DAC0: .4byte _vt.13RightKeyPress
-_0807DAC4: .4byte gUnknown_08109808
+_0807DAC4: .4byte callback_sub_0807E50C
 _0807DAC8: .4byte _vt.14SelectKeyPress
-_0807DACC: .4byte gUnknown_08109810
+_0807DACC: .4byte callback_sub_0807E54C
 _0807DAD0: .4byte _vt.9AKeyPress
-_0807DAD4: .4byte gUnknown_08109818
+_0807DAD4: .4byte callback_sub_0807E58C
 _0807DAD8: .4byte _vt.13AKeyLongPress
 _0807DADC: .4byte _vt.9LKeyPress
 _0807DAE0: .4byte _vt.13LKeyLongPress
 _0807DAE4: .4byte _vt.9BKeyPress
-_0807DAE8: .4byte gUnknown_08109820
+_0807DAE8: .4byte callback_sub_0807E5DC
 _0807DAEC: .4byte _vt.7Suspend
-_0807DAF0: .4byte gUnknown_08109828
+_0807DAF0: .4byte callback_sub_0807EB40
 _0807DAF4: .4byte _vt.10UnitEscape
-_0807DAF8: .4byte gUnknown_08109830
+_0807DAF8: .4byte callback_sub_0807EB58
 _0807DAFC: .4byte _vt.7UnitDie
 _0807DB00: .4byte _vt.6Resume
-_0807DB04: .4byte gUnknown_08109838
+_0807DB04: .4byte callback_sub_0807EB88
 	.syntax divided

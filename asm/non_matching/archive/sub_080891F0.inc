@@ -16,7 +16,7 @@ sub_080891F0:
 	ldr r0, [sp, #8]
 	bl sub_08088E60__15Struct_09F85088i
 	mov sl, r0
-	bl sub_0806B070
+	bl get__15BGEngineManager
 	adds r4, r0, #0
 	mov r0, sp
 	adds r1, r4, #0

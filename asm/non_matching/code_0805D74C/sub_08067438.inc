@@ -167,7 +167,7 @@ _080674D6:
 	movs r1, #0xa9
 	lsls r1, r1, #4
 	adds r0, r7, r1
-	bl sub_08071F8C
+	bl __10KeyFocuser
 	ldr r2, _080675F8
 	adds r1, r7, r2
 	movs r0, #5
@@ -1017,7 +1017,7 @@ _08067A40:
 _08067D30: .4byte 0x0000081C
 _08067D34: .4byte 0x00000958
 _08067D38: .4byte 0x000009F4
-_08067D3C: .4byte _vt.3Unk
+_08067D3C: .4byte _vt.5Event
 _08067D40: .4byte _vt.10UpKeyPress
 _08067D44: .4byte gUnknown_080FE670
 _08067D48: .4byte _vt.14UpKeyLongPress

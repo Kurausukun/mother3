@@ -2,7 +2,7 @@
 #include "battle/guestSkill.h"
 #include "enums.h"
 
-extern "C" const GuestSkillInfo gPlayerSkillData[] = {
+extern "C" const PlayerSkillInfo gPlayerSkillData[] = {
     {
         /*      ID */ 0x0,
         /*  EFFECT */ EffectType::Misc,

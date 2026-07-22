@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0806B0C4:
+__8BGEngine:
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -147,7 +147,7 @@ _0806B1E0:
 	str r0, [sp, #0x80]
 	cmp r0, #0
 	bge _0806B14C
-	bl sub_0806A974
+	bl makeInstance__14GEngineManager
 	adds r4, r0, #0
 	bl sub_0806AFF0
 	lsls r0, r0, #0x10
@@ -185,9 +185,9 @@ _0806B1E0:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0806B244: .4byte vt_09F7EFB0
+_0806B244: .4byte _vt.8BGEngine
 _0806B248: .4byte 0xFFF80000
-_0806B24C: .4byte _vt.3Unk
+_0806B24C: .4byte _vt.5Event
 _0806B250: .4byte _vt.8SysClock
-_0806B254: .4byte gUnknown_080FF2CC
+_0806B254: .4byte callback_bgengine_updateScrollHorizontal
 	.syntax divided

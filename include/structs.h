@@ -307,6 +307,7 @@ typedef struct SoundUnkInfo {
     u16 _6;
     u8 _8_1 : 1;
     u8 _8_2 : 3;
+    u16 _9;
 } SoundUnkInfo;
 static_assert(sizeof(SoundUnkInfo) == 0xC);
 

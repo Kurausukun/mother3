@@ -33,11 +33,13 @@ SECTIONS
         build/mother3/src/code_0803D59C.o(.text);
         build/mother3/src/common.o(.text);
         build/mother3/src/battle/system.o(.text);
-        build/mother3/src/battle/battle_misc.o(.text);
         build/mother3/src/battle/battle.o(.text);
+        build/mother3/src/battle/guest_misc.o(.text);
         build/mother3/src/battle/guest.o(.text);
         build/mother3/src/battle/guestFactory.o(.text);
+        build/mother3/src/battle/guestSkillFactory.o(.text);
         build/mother3/src/battle/goods.o(.text);
+        build/mother3/src/battle/goodsFactory.o(.text);
         build/mother3/src/battle/sndmon.o(.text);
         build/mother3/src/battle/code_0805D74C.o(.text);
         build/mother3/src/singleton.o(.text);
@@ -71,6 +73,7 @@ SECTIONS
         build/mother3/src/battle/guestSkill.o(.text);
         build/mother3/src/battle/monster.o(.text);
         build/mother3/src/battle/monsterskill.o(.text);
+        build/mother3/src/battle/status.o(.text);
         build/mother3/src/battle/psi.o(.text);
         build/mother3/src/battle/rom2d.o(.text);
         build/mother3/src/battle/archive.o(.text);
@@ -118,22 +121,29 @@ SECTIONS
 
         *libc.a:*(.text);
 
+        /* this entire block of code is supposed to be the .gnu.linkonce.t section */
         *.o(.gnu.linkonce.t._._6ResPtr);
-        build/mother3/src/rom3.o(.text);
-        build/mother3/src/rom3a0.o(.text);
-        build/mother3/src/rom3a1.o(.text);
+        build/mother3/src/battle/system.o(.gnu.linkonce.t.*);
+        *.o(.gnu.linkonce.t._._5Event);
+        build/mother3/src/linkonce/battleImpl.o(.text);
+        build/mother3/src/linkonce/playerImpl.o(.text);
+        build/mother3/src/linkonce/playerskillImpl.o(.text);
+        build/mother3/src/linkonce/guestImpl.o(.text);
+        build/mother3/src/linkonce/guestskillImpl.o(.text);
+        build/mother3/src/linkonce/guestskillImpl.o(.gnu.linkonce.t.*);
+        build/mother3/src/linkonce/monsterImpl0.o(.text);
         build/mother3/asm/monsterImplTmp.o(.text);
-        build/mother3/src/battle/monsterImpl.o(.text);
-        build/mother3/src/rom3aa.o(.text);
-        build/mother3/src/battle/monsterImpl2.o(.text);
-        build/mother3/src/rom3ab.o(.text);
-        build/mother3/src/battle/goods2.o(.text);
-        build/mother3/src/battle/goodsImpl.o(.text);
-        build/mother3/src/battle/goods2.o(.gnu.linkonce.t.*);
-
-        build/mother3/src/rom3b.o(.text);
-        build/mother3/src/inst.o(.text);
-        build/mother3/asm/rom4.o(.text);
+        build/mother3/src/linkonce/monsterImpl2.o(.text);
+        build/mother3/src/linkonce/monsterskillImpl.o(.text);
+        build/mother3/src/linkonce/statusImpl.o(.text);
+        build/mother3/src/linkonce/psiImpl.o(.text);
+        build/mother3/src/linkonce/goodsImpl.o(.text);
+        build/mother3/src/linkonce/goodsImpl.o(.gnu.linkonce.t.*);
+        build/mother3/src/linkonce/rom3b.o(.text);
+        build/mother3/src/linkonce/clockImpl.o(.text);
+        build/mother3/src/linkonce/keypadImpl.o(.text);
+        build/mother3/src/battle/keypad.o(.gnu.linkonce.t.*);
+        build/mother3/src/linkonce/inst2.o(.text);
 
         build/mother3/data/data1.o(.rodata);
         build/mother3/src/data/directionData.o(.rodata);
@@ -147,7 +157,7 @@ SECTIONS
         build/mother3/src/data/guestSkillData.o(.rodata);
         build/mother3/src/data/monsterData.o(.rodata);
         build/mother3/src/data/monsterSkillData.o(.rodata);
-        build/mother3/data/data1b.o(.rodata);
+        build/mother3/src/data/gStatusData.o(.rodata);
         build/mother3/src/data/psiData.o(.rodata);
         build/mother3/src/data/itemData.o(.rodata);
         build/mother3/src/data/rhythmData.o(.rodata);

@@ -77,7 +77,7 @@ sub_080881AC:
 	add r2, sp, #4
 	adds r3, r7, #0
 	bl sub_0808855C
-	bl sub_0806B070
+	bl get__15BGEngineManager
 	mov r8, r0
 	mov r0, sb
 	bl count__9CCGHandle

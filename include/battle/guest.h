@@ -95,6 +95,6 @@ void sub_0802A74C(CharStats*, s16*);
 void sub_0802A670(CharStats*, s16*);
 }
 
-RTTI(Guest);
+RTTI_DECL(Guest);
 
 #endif  // BATTLE_GUEST_H

@@ -9,17 +9,20 @@ public:
     SndSystem();
     virtual ~SndSystem();
 
-    void* getRTTI() override;
+    virtual void* getRTTI();
     virtual void vsyncOn();
     virtual void vsyncOff();
     virtual void setUnk20(u16);
     virtual void setUnk22(u8);
     virtual u16 getUnk20();
     virtual u8 getUnk22();
-    
+
+    void main();
+    void vsync();
+
     u16 _20;
     u8 _22;
 };
-SINGLETON_DECL(SndSystem);
+MANAGER_DECL(SndSystem);
 
 #endif  // BATTLE_SND_SYSTEM

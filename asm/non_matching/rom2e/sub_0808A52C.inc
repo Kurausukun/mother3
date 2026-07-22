@@ -56,7 +56,7 @@ sub_0808A52C:
 	.align 2, 0
 _0808A5A4: .4byte vt_09F85378
 _0808A5A8: .4byte vt_09F85540
-_0808A5AC: .4byte _vt.3Unk
+_0808A5AC: .4byte _vt.5Event
 _0808A5B0: .4byte _vt.8AppClock
-_0808A5B4: .4byte gUnknown_0811642C
+_0808A5B4: .4byte callback_sub_0808A5CC
 	.syntax divided

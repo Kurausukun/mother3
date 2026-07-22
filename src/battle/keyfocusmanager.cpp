@@ -2,9 +2,11 @@
 #include "battle/keyFocusManager.h"
 #include "battle/archive.h"
 #include "battle/clock.h"
+#include "battle/keypad.h"
 #include "battle/rhythm.h"
 #include "battle/system.h"
 #include "global.h"
+#include "singleton.h"
 
 extern "C" s32 DivMod(s32, s32);
 
@@ -369,11 +371,12 @@ public:
     void sub_080710BC(ComboRoot* other);
 };
 
-extern ClockData gUnknown_08102A9C;
+extern ClockData callback_sub_080710B0;
+extern ClockData callback_sub_08072518;
 
 ComboRoot::ComboRoot(u32 flag1, u32 flag2, u32 flag3, u32 flag4)
     : Combo(0, flag1, flag2, flag3, flag4) {
-    listen(ClockManager::get(), PreAppClock(), gUnknown_08102A9C);
+    listen(ClockManager::get(), PreAppClock(), callback_sub_080710B0);
 }
 
 ComboRoot::~ComboRoot() {
@@ -452,16 +455,48 @@ extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08071F14.inc", void su
 extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08071F28.inc", void sub_08071F28());
 extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08071F30.inc", void sub_08071F30());
 extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08071F38.inc", void sub_08071F38());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08071F8C.inc", void sub_08071F8C());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08071FF0.inc", void sub_08071FF0());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08071FF8.inc", void sub_08071FF8());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08072028.inc", void sub_08072028());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08072034.inc", void sub_08072034());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08072070.inc", void sub_08072070());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_0807207C.inc", void sub_0807207C());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_080723FC.inc", void sub_080723FC());
+
+KeyFocuser::KeyFocuser() {
+    KeyFocusManagerManager::makeInstance()->sub_08072424(this);
+}
+
+KeyFocuser::~KeyFocuser() {
+    KeyFocusManagerManager::get()->sub_0807248C();
+    KeyFocusManagerManager::destroy();
+}
+
+MANAGER_IMPL(KeyFocusManager);
+
+KeyFocusManager::KeyFocusManager() {
+    KeyPad* keypad = KeyPadManager::get();
+    keypad->set_20(0x1E);
+    keypad->set_22(6);
+    ClockData c;
+    listen(keypad, UpKeyPress(), c = callback_sub_08072518);
+    listen(keypad, UpKeyLongPress(), c);
+    listen(keypad, DownKeyPress(), c);
+    listen(keypad, DownKeyLongPress(), c);
+    listen(keypad, LeftKeyPress(), c);
+    listen(keypad, LeftKeyLongPress(), c);
+    listen(keypad, RightKeyPress(), c);
+    listen(keypad, RightKeyLongPress(), c);
+    listen(keypad, AKeyPress(), c);
+    listen(keypad, AKeyLongPress(), c);
+    listen(keypad, BKeyPress(), c);
+    listen(keypad, BKeyLongPress(), c);
+    listen(keypad, LKeyPress(), c);
+    listen(keypad, LKeyLongPress(), c);
+    listen(keypad, RKeyPress(), c);
+    listen(keypad, RKeyLongPress(), c);
+    listen(keypad, StartKeyPress(), c);
+    listen(keypad, StartKeyLongPress(), c);
+    listen(keypad, SelectKeyPress(), c);
+    listen(keypad, SelectKeyLongPress(), c);
+}
+
+KeyFocusManager::~KeyFocusManager() {}
+
 extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08072424.inc", void sub_08072424());
 extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_0807248C.inc", void sub_0807248C());
 extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_080724F8.inc", void sub_080724F8());
 extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_08072518.inc", void sub_08072518());
-extern "C" ASM_FUNC("asm/non_matching/keyfocusmanager/sub_0807254C.inc", void sub_0807254C());

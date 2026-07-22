@@ -80,7 +80,7 @@ _0808574A:
 	bne _08085742
 	ldr r0, _0808596C
 	add r0, sl
-	bl sub_08071F8C
+	bl __10KeyFocuser
 	movs r4, #0
 	movs r0, #0xe1
 	mov r1, sl
@@ -297,9 +297,9 @@ _08085960: .4byte _vt.6ResPtr
 _08085964: .4byte gUnknown_08CE39F8
 _08085968: .4byte vt_09F83E40
 _0808596C: .4byte 0x0000174C
-_08085970: .4byte _vt.3Unk
+_08085970: .4byte _vt.5Event
 _08085974: .4byte _vt.9AKeyPress
-_08085978: .4byte gUnknown_0810F3D0
+_08085978: .4byte callback_sub_08085C84
 _0808597C: .4byte _vt.13AKeyLongPress
 _08085980: .4byte _vt.9LKeyPress
 _08085984: .4byte _vt.13LKeyLongPress

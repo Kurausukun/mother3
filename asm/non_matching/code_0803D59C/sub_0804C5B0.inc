@@ -67,7 +67,7 @@ _0804C63E:
 	movs r2, #9
 	b _0804C66C
 	.align 2, 0
-_0804C644: .4byte gUnknown_02004F26
+_0804C644: .4byte gSave+0x6C6 @ gSave.playername_short
 _0804C648: .4byte 0x00004DB2
 _0804C64C:
 	ldrh r1, [r7]
@@ -96,6 +96,6 @@ _0804C66C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0804C684: .4byte gUnknown_02004F38
+_0804C684: .4byte gSave+0x6D8 @ gSave.playername
 _0804C688: .4byte 0x00004DD2
 	.syntax divided

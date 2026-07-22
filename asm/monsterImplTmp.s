@@ -310,37 +310,37 @@ _vt.10MechaDrago:
 	.word	missSfx__7Monster
 	.short	0
 	.short	0
-	.word	unit_220__4UnitUi
+	.word	addCmd__4UnitUi
 	.short	0
 	.short	0
-	.word	unit_228__4UnitUi
+	.word	removeOneCmd__4UnitUs
 	.short	0
 	.short	0
-	.word	unit_230__4Unit
+	.word	clearAllCmds__4Unit
 	.short	0
 	.short	0
-	.word	unit_238__C4Unit
+	.word	cmdCount__C4Unit
 	.short	0
 	.short	0
-	.word	unit_240__4Uniti
+	.word	getCmdType__4Uniti
 	.short	0
 	.short	0
-	.word	unit_248__4Uniti
+	.word	getCmd__4Uniti
 	.short	0
 	.short	0
-	.word	unit_250__4UnitUs
+	.word	hasCmd__4UnitUs
 	.short	0
 	.short	0
-	.word	unit_258__4UnitUs
+	.word	getCmdIdx__4UnitUs
 	.short	0
 	.short	0
-	.word	unit_260__4UnitUs
+	.word	findCmd__4UnitUs
 	.short	0
 	.short	0
 	.word	unit_268__4UnitUi
 	.short	0
 	.short	0
-	.word	removeOneStatus__4Uniti
+	.word	removeOneStatus__4UnitUs
 	.short	0
 	.short	0
 	.word	removeStatus__4UnitUs
@@ -736,37 +736,37 @@ _vt.20ReconstructedCaribou:
 	.word	missSfx__7Monster
 	.short	0
 	.short	0
-	.word	unit_220__4UnitUi
+	.word	addCmd__4UnitUi
 	.short	0
 	.short	0
-	.word	unit_228__4UnitUi
+	.word	removeOneCmd__4UnitUs
 	.short	0
 	.short	0
-	.word	unit_230__4Unit
+	.word	clearAllCmds__4Unit
 	.short	0
 	.short	0
-	.word	unit_238__C4Unit
+	.word	cmdCount__C4Unit
 	.short	0
 	.short	0
-	.word	unit_240__4Uniti
+	.word	getCmdType__4Uniti
 	.short	0
 	.short	0
-	.word	unit_248__4Uniti
+	.word	getCmd__4Uniti
 	.short	0
 	.short	0
-	.word	unit_250__4UnitUs
+	.word	hasCmd__4UnitUs
 	.short	0
 	.short	0
-	.word	unit_258__4UnitUs
+	.word	getCmdIdx__4UnitUs
 	.short	0
 	.short	0
-	.word	unit_260__4UnitUs
+	.word	findCmd__4UnitUs
 	.short	0
 	.short	0
 	.word	unit_268__4UnitUi
 	.short	0
 	.short	0
-	.word	removeOneStatus__4Uniti
+	.word	removeOneStatus__4UnitUs
 	.short	0
 	.short	0
 	.word	removeStatus__4UnitUs
@@ -1162,37 +1162,37 @@ _vt.14DefaultMonster:
 	.word	missSfx__7Monster
 	.short	0
 	.short	0
-	.word	unit_220__4UnitUi
+	.word	addCmd__4UnitUi
 	.short	0
 	.short	0
-	.word	unit_228__4UnitUi
+	.word	removeOneCmd__4UnitUs
 	.short	0
 	.short	0
-	.word	unit_230__4Unit
+	.word	clearAllCmds__4Unit
 	.short	0
 	.short	0
-	.word	unit_238__C4Unit
+	.word	cmdCount__C4Unit
 	.short	0
 	.short	0
-	.word	unit_240__4Uniti
+	.word	getCmdType__4Uniti
 	.short	0
 	.short	0
-	.word	unit_248__4Uniti
+	.word	getCmd__4Uniti
 	.short	0
 	.short	0
-	.word	unit_250__4UnitUs
+	.word	hasCmd__4UnitUs
 	.short	0
 	.short	0
-	.word	unit_258__4UnitUs
+	.word	getCmdIdx__4UnitUs
 	.short	0
 	.short	0
-	.word	unit_260__4UnitUs
+	.word	findCmd__4UnitUs
 	.short	0
 	.short	0
 	.word	unit_268__4UnitUi
 	.short	0
 	.short	0
-	.word	removeOneStatus__4Uniti
+	.word	removeOneStatus__4UnitUs
 	.short	0
 	.short	0
 	.word	removeStatus__4UnitUs
@@ -1524,7 +1524,7 @@ __10MechaDragoUsUs:
 .L295:
 	.word	_vt.14DefaultMonster.10UnitObject
 	.word	_vt.14DefaultMonster
-	.word	_vt.3Unk
+	.word	_vt.5Event
 	.word	_vt.13UnitTurnBegin
 	.word	gUnknown_080F8E5C
 	.word	_vt.11UnitTurnEnd
@@ -1740,7 +1740,7 @@ __20ReconstructedCaribouUsUs:
 .L303:
 	.word	_vt.14DefaultMonster.10UnitObject
 	.word	_vt.14DefaultMonster
-	.word	_vt.3Unk
+	.word	_vt.5Event
 	.word	_vt.13UnitTurnBegin
 	.word	gUnknown_080F8E5C
 	.word	_vt.11UnitTurnEnd
@@ -1943,7 +1943,7 @@ __14DefaultMonsterUsUs:
 .L311:
 	.word	_vt.14DefaultMonster.10UnitObject
 	.word	_vt.14DefaultMonster
-	.word	_vt.3Unk
+	.word	_vt.5Event
 	.word	_vt.13UnitTurnBegin
 	.word	gUnknown_080F8E5C
 	.word	_vt.11UnitTurnEnd
@@ -2172,18 +2172,18 @@ _vt.13UnitTurnBegin:
 	.short	0
 	.short	0
 	.word	clearNullOutgoing__4Base
-	.weak	_vt.3Unk
-	.section .gnu.linkonce.d._vt.3Unk,"aw"
+	.weak	_vt.5Event
+	.section .gnu.linkonce.d._vt.5Event,"aw"
 	.align	2, 0
-	.type	 _vt.3Unk,object
-	.size	 _vt.3Unk,104
-_vt.3Unk:
+	.type	 _vt.5Event,object
+	.size	 _vt.5Event,104
+_vt.5Event:
 	.short	0
 	.short	0
 	.word	0
 	.short	0
 	.short	0
-	.word	_._3Unk
+	.word	_._5Event
 	.short	0
 	.short	0
 	.word	getRTTI__4Base
@@ -2246,7 +2246,7 @@ _._11UnitTurnEnd:
 .L318:
 	.align	2, 0
 .L317:
-	.word	_vt.3Unk
+	.word	_vt.5Event
 .LFE13:
 .Lfe13:
 	.size	 _._11UnitTurnEnd,.Lfe13-_._11UnitTurnEnd
@@ -2279,17 +2279,17 @@ _._13UnitTurnBegin:
 .L320:
 	.align	2, 0
 .L319:
-	.word	_vt.3Unk
+	.word	_vt.5Event
 .LFE14:
 .Lfe14:
 	.size	 _._13UnitTurnBegin,.Lfe14-_._13UnitTurnBegin
 	.align	2, 0
-	.section .gnu.linkonce.t._._3Unk,"ax",%progbits
+	.section .gnu.linkonce.t._._5Event,"ax",%progbits
 	.align	2, 0
-	.weak	_._3Unk
-	.type	 _._3Unk,function
+	.weak	_._5Event
+	.type	 _._5Event,function
 	.thumb_func
-_._3Unk:
+_._5Event:
 .LFB15:
 .LSM13:
 
@@ -2304,10 +2304,10 @@ _._3Unk:
 .L322:
 	.align	2, 0
 .L321:
-	.word	_vt.3Unk
+	.word	_vt.5Event
 .LFE15:
 .Lfe15:
-	.size	 _._3Unk,.Lfe15-_._3Unk
+	.size	 _._5Event,.Lfe15-_._5Event
 
 	.section	.text
 .Letext0:
@@ -5675,7 +5675,7 @@ _._3Unk:
 
 	.byte	0x3
 	.byte	0x4c
-	.ascii	"__as__3UnkRC3Unk\000"
+	.ascii	"__as__5EventRC5Event\000"
 
 	.4byte	0xf82
 	.byte	0x1
@@ -5693,7 +5693,7 @@ _._3Unk:
 
 	.byte	0x3
 	.byte	0x4c
-	.ascii	"__3UnkRC3Unk\000"
+	.ascii	"__5EventRC5Event\000"
 
 	.4byte	0xf88
 	.byte	0x1
@@ -5711,7 +5711,7 @@ _._3Unk:
 
 	.byte	0x3
 	.byte	0x4a
-	.ascii	"__3Unk\000"
+	.ascii	"__5Event\000"
 
 	.4byte	0xf88
 	.byte	0x3
@@ -5730,7 +5730,7 @@ _._3Unk:
 
 	.byte	0x3
 	.byte	0x4b
-	.ascii	"_._3Unk\000"
+	.ascii	"_._5Event\000"
 
 	.byte	0x1
 	.byte	0x2
@@ -6900,7 +6900,7 @@ _._3Unk:
 	.byte	0xd8,0x1
 	.byte	0x3
 	.byte	0x1d
-	.ascii	"_dc\000"
+	.ascii	"mCmds\000"
 
 	.byte	0x6
 	.byte	0xa5
@@ -8215,11 +8215,11 @@ _._3Unk:
 	.byte	0x1b
 	.4byte	0x29b7
 	.byte	0x1
-	.ascii	"unit_220\000"
+	.ascii	"addCmd\000"
 
 	.byte	0x6
 	.byte	0x74
-	.ascii	"unit_220__4UnitUi\000"
+	.ascii	"addCmd__4UnitUi\000"
 
 	.4byte	0x5158
 	.byte	0x1
@@ -8237,11 +8237,11 @@ _._3Unk:
 	.byte	0x1b
 	.4byte	0x29f3
 	.byte	0x1
-	.ascii	"unit_228\000"
+	.ascii	"removeOneCmd\000"
 
 	.byte	0x6
 	.byte	0x75
-	.ascii	"unit_228__4UnitUi\000"
+	.ascii	"removeOneCmd__4UnitUs\000"
 
 	.4byte	0x2dc
 	.byte	0x1
@@ -8259,11 +8259,11 @@ _._3Unk:
 	.byte	0x1a
 	.4byte	0x2a24
 	.byte	0x1
-	.ascii	"unit_230\000"
+	.ascii	"clearAllCmds\000"
 
 	.byte	0x6
 	.byte	0x76
-	.ascii	"unit_230__4Unit\000"
+	.ascii	"clearAllCmds__4Unit\000"
 
 	.byte	0x1
 	.byte	0x2
@@ -8278,11 +8278,11 @@ _._3Unk:
 	.byte	0x1b
 	.4byte	0x2a5a
 	.byte	0x1
-	.ascii	"unit_238\000"
+	.ascii	"cmdCount\000"
 
 	.byte	0x6
 	.byte	0x77
-	.ascii	"unit_238__C4Unit\000"
+	.ascii	"cmdCount__C4Unit\000"
 
 	.4byte	0x2b1
 	.byte	0x1
@@ -8298,11 +8298,11 @@ _._3Unk:
 	.byte	0x1b
 	.4byte	0x2a95
 	.byte	0x1
-	.ascii	"unit_240\000"
+	.ascii	"getCmdType\000"
 
 	.byte	0x6
 	.byte	0x78
-	.ascii	"unit_240__4Uniti\000"
+	.ascii	"getCmdType__4Uniti\000"
 
 	.4byte	0x19ab
 	.byte	0x1
@@ -8320,11 +8320,11 @@ _._3Unk:
 	.byte	0x1b
 	.4byte	0x2ad0
 	.byte	0x1
-	.ascii	"unit_248\000"
+	.ascii	"getCmd\000"
 
 	.byte	0x6
 	.byte	0x79
-	.ascii	"unit_248__4Uniti\000"
+	.ascii	"getCmd__4Uniti\000"
 
 	.4byte	0x5158
 	.byte	0x1
@@ -8342,11 +8342,11 @@ _._3Unk:
 	.byte	0x1b
 	.4byte	0x2b0c
 	.byte	0x1
-	.ascii	"unit_250\000"
+	.ascii	"hasCmd\000"
 
 	.byte	0x6
 	.byte	0x7a
-	.ascii	"unit_250__4UnitUs\000"
+	.ascii	"hasCmd__4UnitUs\000"
 
 	.4byte	0x2dc
 	.byte	0x1
@@ -8364,11 +8364,11 @@ _._3Unk:
 	.byte	0x1b
 	.4byte	0x2b48
 	.byte	0x1
-	.ascii	"unit_258\000"
+	.ascii	"getCmdIdx\000"
 
 	.byte	0x6
 	.byte	0x7b
-	.ascii	"unit_258__4UnitUs\000"
+	.ascii	"getCmdIdx__4UnitUs\000"
 
 	.4byte	0x2b1
 	.byte	0x1
@@ -8386,11 +8386,11 @@ _._3Unk:
 	.byte	0x1b
 	.4byte	0x2b84
 	.byte	0x1
-	.ascii	"unit_260\000"
+	.ascii	"findCmd\000"
 
 	.byte	0x6
 	.byte	0x7c
-	.ascii	"unit_260__4UnitUs\000"
+	.ascii	"findCmd__4UnitUs\000"
 
 	.4byte	0x2b1
 	.byte	0x1
@@ -8434,7 +8434,7 @@ _._3Unk:
 
 	.byte	0x6
 	.byte	0x7e
-	.ascii	"removeOneStatus__4Uniti\000"
+	.ascii	"removeOneStatus__4UnitUs\000"
 
 	.4byte	0x2b1
 	.byte	0x1
@@ -25156,11 +25156,11 @@ _._3Unk:
 	.byte	0x1c
 	.4byte	0xe106
 	.byte	0x1
-	.ascii	"sub_0805DC6C\000"
+	.ascii	"battle_128\000"
 
 	.byte	0x5
 	.byte	0xcb
-	.ascii	"sub_0805DC6C__6Battle\000"
+	.ascii	"battle_128__6Battle\000"
 
 	.byte	0x1
 	.byte	0x8
@@ -25170,11 +25170,11 @@ _._3Unk:
 	.byte	0x1c
 	.4byte	0xe139
 	.byte	0x1
-	.ascii	"sub_0805DDE4\000"
+	.ascii	"battle_130\000"
 
 	.byte	0x5
 	.byte	0xcc
-	.ascii	"sub_0805DDE4__6Battle\000"
+	.ascii	"battle_130__6Battle\000"
 
 	.byte	0x1
 	.byte	0x8
@@ -26626,4 +26626,3 @@ _._3Unk:
 	.4byte	0x0
 .text
 	.align	2, 0
-

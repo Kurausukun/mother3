@@ -113,17 +113,17 @@ public:
     virtual u16 critSfx() = 0;
     virtual u16 missSfx() = 0;
 
-    virtual UnitCmd* unit_220(u32 a1);
-    virtual bool unit_228(u32 a1);
-    virtual void unit_230();
-    virtual s32 unit_238() const;
-    virtual u16 unit_240(s32 a1);
-    virtual UnitCmd* unit_248(s32 a1);
-    virtual bool unit_250(u16 a1);
-    virtual s32 unit_258(u16 a1);
-    virtual s32 unit_260(u16 a1);
+    virtual UnitCmd* addCmd(u32 a1);
+    virtual bool removeOneCmd(u16 a1);
+    virtual void clearAllCmds();
+    virtual s32 cmdCount() const;
+    virtual u16 getCmdType(s32 a1);
+    virtual UnitCmd* getCmd(s32 a1);
+    virtual bool hasCmd(u16 a1);
+    virtual s32 getCmdIdx(u16 a1);
+    virtual s32 findCmd(u16 a1);
     virtual u32 unit_268(u32 a1);
-    virtual s32 removeOneStatus(s32 idx);
+    virtual bool removeOneStatus(Status::Type type);
     virtual void removeStatus(Status::Type type);
     virtual void clearAllStatuses();
     virtual s32 statusCount() const;
@@ -162,26 +162,26 @@ private:
     /* 0x54 */ s32 _54;
     /* 0x58 */ s16 mStatusWeaknesses[64];
     /* 0xd8 */ u32 _d8;
-    /* 0xdc */ Vector<UnitCmd*> _dc;
+    /* 0xdc */ Vector<UnitCmd*> mCmds;
     /* 0xe8 */ Vector<Status*> mStatuses;
     /* 0xf4 */ ID _f4;
 };
 
-struct Suspend : Unk {
+struct Suspend : Event {
     Suspend() {}
     inline virtual ~Suspend();
 
     virtual void* getRTTI();
 };
 
-struct Resume : Unk {
+struct Resume : Event {
     Resume() {}
     inline virtual ~Resume();
 
     virtual void* getRTTI();
 };
 
-struct UnitMove : Unk {
+struct UnitMove : Event {
     UnitMove() {}
     UnitMove(u32 t) : t(t) {}
     virtual ~UnitMove() {}
@@ -301,11 +301,11 @@ struct TargetType {
     };
 };
 
-RTTI(Suspend);
-RTTI(Resume);
-RTTI(UnitJoin);
-RTTI(UnitRevive);
-RTTI(UnitEscape);
-RTTI(UnitDie);
+RTTI_DECL(Suspend);
+RTTI_DECL(Resume);
+RTTI_DECL(UnitJoin);
+RTTI_DECL(UnitRevive);
+RTTI_DECL(UnitEscape);
+RTTI_DECL(UnitDie);
 
 #endif  // BATTLE_UNIT_H

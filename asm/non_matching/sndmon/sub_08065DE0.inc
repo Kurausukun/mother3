@@ -1,7 +1,7 @@
 	.syntax unified
-sub_08065DE0:
+getRTTI__6SndMon:
 	push {lr}
-	bl sub_08065D60
+	bl manager__13SndMonManager
 	pop {r1}
 	bx r1
 	.align 2, 0

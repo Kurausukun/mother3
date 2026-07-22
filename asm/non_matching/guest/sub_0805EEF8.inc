@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0805EEF8:
+__13UnitTurnBegin:
 	push {r4, lr}
 	adds r4, r0, #0
 	bl __4Base

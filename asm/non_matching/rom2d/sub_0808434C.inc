@@ -106,7 +106,7 @@ _080843D8:
 	bl sub_0808B0D8
 	ldr r0, _080846CC
 	add r0, sb
-	bl sub_08071F8C
+	bl __10KeyFocuser
 	movs r4, #0
 	add r0, sp, #0x38
 	strb r4, [r0]
@@ -405,17 +405,17 @@ _080846C4: .4byte gUnknown_08CE39F8
 _080846C8: .4byte vt_09F83E40
 _080846CC: .4byte 0x0000106C
 _080846D0: .4byte 0x00000289
-_080846D4: .4byte _vt.3Unk
+_080846D4: .4byte _vt.5Event
 _080846D8: .4byte _vt.12LeftKeyPress
-_080846DC: .4byte gUnknown_0810E6B0
+_080846DC: .4byte callback_sub_08084D8C
 _080846E0: .4byte _vt.16LeftKeyLongPress
 _080846E4: .4byte _vt.13RightKeyPress
-_080846E8: .4byte gUnknown_0810E6B8
+_080846E8: .4byte callback_sub_08084DBC
 _080846EC: .4byte _vt.17RightKeyLongPress
 _080846F0: .4byte _vt.9BKeyPress
 _080846F4: .4byte _vt.13BKeyLongPress
 _080846F8: .4byte _vt.9AKeyPress
-_080846FC: .4byte gUnknown_0810E6C0
+_080846FC: .4byte callback_sub_08084DEC
 _08084700: .4byte _vt.13AKeyLongPress
 _08084704: .4byte _vt.9LKeyPress
 _08084708: .4byte _vt.13LKeyLongPress

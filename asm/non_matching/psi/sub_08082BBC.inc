@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08082BBC:
+fire__3Psi:
 	push {r4, r5, r6, lr}
 	sub sp, #0x18
 	adds r5, r0, #0

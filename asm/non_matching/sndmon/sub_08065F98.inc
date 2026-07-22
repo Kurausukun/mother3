@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08065F98:
+dt__6SndMon:
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	adds r5, r1, #0
@@ -51,5 +51,5 @@ _08065FF0:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08066000: .4byte vt_09F7E280
+_08066000: .4byte _vt.6SndMon
 	.syntax divided

@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08064564:
+put__19MonsterSkillFactoryUsP4Unit_Pv:
 	lsls r0, r0, #0x10
 	ldr r2, _08064570
 	lsrs r0, r0, #0xe
@@ -7,5 +7,5 @@ sub_08064564:
 	str r1, [r0]
 	bx lr
 	.align 2, 0
-_08064570: .4byte gUnknown_02002978
+_08064570: .4byte sMonsterSkillSpawners
 	.syntax divided

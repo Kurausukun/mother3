@@ -17,7 +17,7 @@ extern "C" void hitPlayer(Unit*, u32, bool);
 extern "C" s32 randS32(s32, s32);
 
 extern "C" s32 sub_0807066C(s32, s32);
-extern "C" bool tellStatusWoreOff(Unit*, u32, u32);
+bool statusWearOff(Unit*, Status::Type, bool);
 extern "C" void sub_0807335C(u16);
 extern "C" void sub_080736F8(Unit*, u32);
 extern "C" u8 sub_0807404C(Action*, u32);
@@ -26,8 +26,8 @@ extern "C" void InitHeal(Unit*, u32, u32);
 extern "C" void sub_08073D98(Unit*, u32, u32);
 extern "C" bool IsPlayer(Unit*);
 
-extern ClockData gUnknown_08107DB0;
-extern ClockData gUnknown_08107DB8;
+extern ClockData callback_unit_join_callback;
+extern ClockData callback_unit_leave_callback;
 
 extern "C" NONMATCH("asm/non_matching/skill/__5SkillUi.inc",
                     void __6ActionP4Unit(Action* thisx, Unit* user)) {
@@ -35,18 +35,18 @@ extern "C" NONMATCH("asm/non_matching/skill/__5SkillUi.inc",
     thisx->_40 = 0;
     thisx->_44 = 0;
 
-    thisx->listen(getPartyInfo(), UnitJoin(), gUnknown_08107DB0);
-    thisx->listen(getGuestInfo(), UnitJoin(), gUnknown_08107DB0);
-    thisx->listen(getMonsterInfo(), UnitJoin(), gUnknown_08107DB0);
-    thisx->listen(getPartyInfo(), UnitRevive(), gUnknown_08107DB0);
-    thisx->listen(getGuestInfo(), UnitRevive(), gUnknown_08107DB0);
-    thisx->listen(getMonsterInfo(), UnitRevive(), gUnknown_08107DB0);
-    thisx->listen(getPartyInfo(), UnitEscape(), gUnknown_08107DB8);
-    thisx->listen(getGuestInfo(), UnitEscape(), gUnknown_08107DB8);
-    thisx->listen(getMonsterInfo(), UnitEscape(), gUnknown_08107DB8);
-    thisx->listen(getPartyInfo(), UnitDie(), gUnknown_08107DB8);
-    thisx->listen(getGuestInfo(), UnitDie(), gUnknown_08107DB8);
-    thisx->listen(getMonsterInfo(), UnitDie(), gUnknown_08107DB8);
+    thisx->listen(getPartyInfo(), UnitJoin(), callback_unit_join_callback);
+    thisx->listen(getGuestInfo(), UnitJoin(), callback_unit_join_callback);
+    thisx->listen(getMonsterInfo(), UnitJoin(), callback_unit_join_callback);
+    thisx->listen(getPartyInfo(), UnitRevive(), callback_unit_join_callback);
+    thisx->listen(getGuestInfo(), UnitRevive(), callback_unit_join_callback);
+    thisx->listen(getMonsterInfo(), UnitRevive(), callback_unit_join_callback);
+    thisx->listen(getPartyInfo(), UnitEscape(), callback_unit_leave_callback);
+    thisx->listen(getGuestInfo(), UnitEscape(), callback_unit_leave_callback);
+    thisx->listen(getMonsterInfo(), UnitEscape(), callback_unit_leave_callback);
+    thisx->listen(getPartyInfo(), UnitDie(), callback_unit_leave_callback);
+    thisx->listen(getGuestInfo(), UnitDie(), callback_unit_leave_callback);
+    thisx->listen(getMonsterInfo(), UnitDie(), callback_unit_leave_callback);
 }
 END_NONMATCH
 
@@ -322,9 +322,9 @@ NONMATCH("asm/non_matching/skill/skill_08078D4C.inc", void Action::onDamage(Unit
         PlayAnimation(0x36, target, target);
         hitPlayer(getUser(), max(1, t), 1);
         PlayAnimation(successAnimNo(), target, getUser());
-        tellStatusWoreOff(target, Status::Counter, 1);
+        statusWearOff(target, Status::Counter, 1);
     } else if (target->hasStatus(Status::Shield) == 1) {
-        tellStatusWoreOff(target, Status::Shield, 1);
+        statusWearOff(target, Status::Shield, 1);
     }
 }
 END_NONMATCH
@@ -364,9 +364,9 @@ NONMATCH("asm/non_matching/skill/sub_08079018.inc", void Action::onAttack(Unit* 
         PlayAnimation(0x36, target, target);
         hitPlayer(getUser(), max(1, t), 1);
         PlayAnimation(successAnimNo(), target, getUser());
-        tellStatusWoreOff(target, Status::Counter, 1);
+        statusWearOff(target, Status::Counter, 1);
     } else if (target->hasStatus(Status::Shield) == 1) {
-        tellStatusWoreOff(target, Status::Shield, 1);
+        statusWearOff(target, Status::Shield, 1);
     }
 }
 END_NONMATCH
@@ -426,9 +426,9 @@ NONMATCH("asm/non_matching/skill/sub_080793B8.inc", void Action::onPsiDamage(Uni
             PlayAnimation(0x3c, target, target);
             hitPlayer(getUser(), max(1, t), 1);
             PlayAnimation(successAnimNo(), target, getUser());
-            tellStatusWoreOff(target, Status::PsiCounter, 1);
+            statusWearOff(target, Status::PsiCounter, 1);
         } else if (target->hasStatus(Status::PsiShield) == 1) {
-            tellStatusWoreOff(target, Status::PsiShield, 1);
+            statusWearOff(target, Status::PsiShield, 1);
         }
     }
 }
@@ -503,7 +503,7 @@ NONMATCH("asm/non_matching/skill/sub_08079EE4.inc",
         ROMStr(0xec).print(Color(0, 0, 0), 1);
         return false;
     } else {
-        return tellStatusWoreOff(target, status, unk);
+        return statusWearOff(target, status, unk);
     }
 }
 END_NONMATCH

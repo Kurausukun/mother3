@@ -103,7 +103,7 @@ _0808AC12:
 	bl sub_08069558
 	adds r6, r0, #0
 _0808AC18:
-	bl sub_0806B070
+	bl get__15BGEngineManager
 	movs r1, #1
 	bl sub_0806BA4C
 	adds r4, r0, #0
@@ -137,7 +137,7 @@ _0808AC18:
 	adds r0, r4, #0
 	bl setB4__11BattleFaderUi
 _0808AC6A:
-	bl sub_0806B070
+	bl get__15BGEngineManager
 	movs r1, #3
 	bl sub_0806BA4C
 	adds r4, r0, #0
@@ -171,6 +171,6 @@ _0808AC6A:
 	adds r0, r4, #0
 	bl setB4__11BattleFaderUi
 _0808ACBC:
-	bl sub_0806BE14
+	bl get__16ObjEngineManager
 	bl sub_0806C1CC
 	.syntax divided

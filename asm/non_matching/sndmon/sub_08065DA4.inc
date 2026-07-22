@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08065DA4:
+destroy__13SndMonManager:
 	push {r4, r5, lr}
 	ldr r1, _08065DD8
 	ldr r0, [r1]
@@ -27,6 +27,6 @@ _08065DD0:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08065DD8: .4byte gUnknown_020040EC
-_08065DDC: .4byte gUnknown_020040F0
+_08065DD8: .4byte _13SndMonManager.mSingletonGuard
+_08065DDC: .4byte _13SndMonManager.mSingleton
 	.syntax divided

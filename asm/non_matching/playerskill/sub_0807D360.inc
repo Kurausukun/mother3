@@ -3,9 +3,9 @@ sub_0807D360:
 	push {r4, r5, r6, lr}
 	sub sp, #4
 	adds r4, r0, #0
-	bl sub_0806BE14
+	bl get__16ObjEngineManager
 	adds r6, r0, #0
-	bl sub_0806B070
+	bl get__15BGEngineManager
 	adds r5, r0, #0
 	adds r4, #0x34
 	mov r0, sp

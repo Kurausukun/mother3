@@ -2,7 +2,8 @@
 #define BASE_H
 
 #include "allocator.h"
-#include "rtti.h"
+#include "global.h"
+#include "singleton.h"
 #include "vector.h"
 
 class Clock;
@@ -70,9 +71,8 @@ public:
     Vector<Listener*> incoming;
 };
 
-struct Unk : public Base {
-    Unk() {}
-    ~Unk() {}
+struct Event : public Base {
+    virtual ~Event() {}
 };
 
 struct Color {

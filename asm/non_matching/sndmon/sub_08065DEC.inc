@@ -74,7 +74,7 @@ _08065E8A:
 	ldr r0, [r7, #0x2c]
 	adds r1, r5, #0
 	bl set4__11BattleFaderUi
-	bl sub_0806B070
+	bl get__15BGEngineManager
 	adds r4, r0, #0
 	add r2, sp, #0x28
 	strh r5, [r2]
@@ -131,7 +131,7 @@ _08065E8A:
 	movs r1, #2
 	movs r2, #6
 	bl sub_0806BACC
-	bl sub_0806BE14
+	bl get__16ObjEngineManager
 	ldr r1, [r7, #0x28]
 	bl sub_0806C1C0
 	bl get__16SndSystemManager
@@ -167,8 +167,8 @@ _08065E8A:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08065F88: .4byte vt_09F7E280
-_08065F8C: .4byte _vt.3Unk
+_08065F88: .4byte _vt.6SndMon
+_08065F8C: .4byte _vt.5Event
 _08065F90: .4byte _vt.8AppClock
 _08065F94: .4byte gUnknown_080FD560
 	.syntax divided

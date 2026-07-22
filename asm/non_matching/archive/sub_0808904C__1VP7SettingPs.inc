@@ -8,7 +8,7 @@ sub_0808904C__1VP7SettingPs:
 	sub sp, #0x18
 	str r1, [sp, #8]
 	mov sl, r2
-	bl sub_0806B070
+	bl get__15BGEngineManager
 	adds r4, r0, #0
 	mov r0, sp
 	adds r1, r4, #0

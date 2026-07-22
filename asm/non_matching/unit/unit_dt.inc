@@ -14,7 +14,7 @@ unit_dt:
 	adds r0, r4, #0
 	bl clearAllStatuses__4Unit
 	adds r0, r4, #0
-	bl unit_230__4Unit
+	bl clearAllCmds__4Unit
 	adds r0, r4, #0
 	adds r0, #0xe8
 	ldr r0, [r0, #8]

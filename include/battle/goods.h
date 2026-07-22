@@ -9,10 +9,11 @@ struct GoodsInfo;
 
 class Goods : public Action {
 public:
-    Goods();
+    Goods() {}
     Goods(u16 id, Unit* user, u16 a2);
     virtual ~Goods() override;
 
+    virtual void* getRTTI();
     void action_150() override;
     Action* action_1c0() override;
     bool fire() override;
@@ -64,10 +65,6 @@ public:
     u16 _4c;
 };
 
-Msg sub_08073444(u16 idx);
-
-extern "C" void* getGoodsRTTI();
-
-RTTI(Goods);
+RTTI_DECL(Goods);
 
 #endif  // BATTLE_GOODS_H

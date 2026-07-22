@@ -11,7 +11,7 @@ unit_268__4UnitUi:
 	bl flagStuff__4UnitUs
 	adds r0, r7, #0
 	adds r1, r4, #0
-	bl sub_08064818
+	bl create__13StatusFactoryUsP4Unit
 	str r0, [sp]
 	ldr r1, [r0, #0x1c]
 	adds r1, #0xa8

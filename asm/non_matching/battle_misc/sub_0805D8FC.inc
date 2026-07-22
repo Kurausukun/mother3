@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0805D8FC:
+__6BattleUs:
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -12,7 +12,7 @@ sub_0805D8FC:
 	str r0, [r7, #0x1c]
 	adds r0, r7, #0
 	adds r0, #0x60
-	bl sub_08071F8C
+	bl __10KeyFocuser
 	movs r0, #0
 	strh r4, [r7, #0x24]
 	str r0, [r7, #0x28]
@@ -95,7 +95,7 @@ _0805D9C6:
 	ldr r0, [r7, #0x30]
 	adds r1, r5, #0
 	bl set4__11BattleFaderUi
-	bl sub_0806B070
+	bl get__15BGEngineManager
 	adds r4, r0, #0
 	adds r0, r7, #0
 	bl battle_150__6Battle
@@ -148,7 +148,7 @@ _0805D9C6:
 	adds r1, r0, #0
 	adds r0, r4, #0
 	bl sub_0806BA68
-	bl sub_0806BE14
+	bl get__16ObjEngineManager
 	ldr r1, [r7, #0x2c]
 	bl sub_0806C1C0
 	bl sub_0806EBD8
@@ -207,16 +207,16 @@ _0805D9C6:
 	adds r0, r0, r2
 	ldr r1, [r1, #4]
 	bl _call_via_r1
-	bl sub_08064590
-	bl sub_08060F80
-	bl sub_08061974
-	bl sub_08064834
-	bl sub_08065014
+	bl init__13StatusFactory
+	bl init__13PlayerFactory
+	bl init__18PlayerSkillFactory
+	bl init__10PsiFactory
+	bl init__12GoodsFactory
 	bl sub_08065168
 	bl init__12GuestFactory
-	bl sub_08062308
-	bl sub_08063AD0
-	bl sub_08063EE4
+	bl init__17GuestSkillFactory
+	bl init__14MonsterFactory
+	bl init__19MonsterSkillFactory
 	bl get__13KeyPadManager
 	adds r6, r0, #0
 	add r0, sp, #0x1c
@@ -247,12 +247,12 @@ _0805D9C6:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0805DB64: .4byte vt_09F45058
+_0805DB64: .4byte _vt.6Battle
 _0805DB68: .4byte 0x000003A9
 _0805DB6C: .4byte _vt.6ResPtr
 _0805DB70: .4byte 0x000003AA
 _0805DB74: .4byte 0x000003AB
-_0805DB78: .4byte _vt.3Unk
+_0805DB78: .4byte _vt.5Event
 _0805DB7C: .4byte _vt.13StartKeyPress
 _0805DB80: .4byte gUnknown_080F2B60
 	.syntax divided

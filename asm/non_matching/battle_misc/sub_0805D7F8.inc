@@ -1,7 +1,7 @@
 	.syntax unified
-sub_0805D7F8:
+getRTTI__13ShowDownAsWin:
 	push {lr}
-	bl sub_0805D7F0
+	bl get__17ShowDownAsWinRTTI
 	pop {r1}
 	bx r1
 	.align 2, 0

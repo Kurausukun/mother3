@@ -64,7 +64,7 @@ _08084F48:
 	bne _08084F40
 	ldr r3, _080850C4
 	adds r0, r7, r3
-	bl sub_08071F8C
+	bl __10KeyFocuser
 	movs r1, #0
 	add r0, sp, #0x34
 	strb r1, [r0]
@@ -208,9 +208,9 @@ _080850B8: .4byte _vt.6ResPtr
 _080850BC: .4byte gUnknown_08CE39F8
 _080850C0: .4byte vt_09F83E40
 _080850C4: .4byte 0x000014D0
-_080850C8: .4byte _vt.3Unk
+_080850C8: .4byte _vt.5Event
 _080850CC: .4byte _vt.9AKeyPress
-_080850D0: .4byte gUnknown_0810ED48
+_080850D0: .4byte callback_sub_080856D4
 _080850D4: .4byte _vt.13AKeyLongPress
 _080850D8: .4byte _vt.9LKeyPress
 _080850DC: .4byte _vt.13LKeyLongPress

@@ -46,7 +46,7 @@ Unit::Unit() : mWeaknessCount(0), _54(0) {
 extern "C" NONMATCH("asm/non_matching/unit/unit_dt.inc", void Unit_dt(Unit* t)) {
     t->nullsub_27();
     t->sub_08075840();
-    t->unit_230();
+    t->clearAllCmds();
 }
 END_NONMATCH
 
@@ -292,50 +292,61 @@ s32 Unit::unit_200() const {
     return _d8;
 }
 
-UnitCmd* Unit::unit_220(u32 a1) {
+UnitCmd* Unit::addCmd(u32 a1) {
     UnitCmd* u = sub_080651A4(a1, this);
     u->x_68();
-    _dc.append(u);
+    mCmds.append(u);
     return u;
 }
 
-ASM_FUNC("asm/non_matching/unit/unit_228__4UnitUi.inc", bool Unit::unit_228(u32 a1));
+bool Unit::removeOneCmd(u16 type){
+    s32 i = getCmdIdx(type);
+    
+    if (i < mCmds.size()){
+        mCmds[i]->x_70();
+        
+        delete mCmds[i];
 
-void Unit::unit_230(void) {
-    while (unit_238() > 0) {
-        unit_228(unit_240(0));
+        return mCmds.removeIdx(i);
+    }
+    return false;
+}
+
+void Unit::clearAllCmds(void) {
+    while (cmdCount() > 0) {
+        removeOneCmd(getCmdType(0));
     }
 }
 
-s32 Unit::unit_238() const {
-    return _dc.size();
+s32 Unit::cmdCount() const {
+    return mCmds.size();
 }
 
-u16 Unit::unit_240(s32 a1) {
-    return _dc[a1]->x_78();
+u16 Unit::getCmdType(s32 a1) {
+    return mCmds[a1]->x_78();
 }
 
-UnitCmd* Unit::unit_248(s32 a1) {
-    return _dc[a1];
+UnitCmd* Unit::getCmd(s32 a1) {
+    return mCmds[a1];
 }
 
-bool Unit::unit_250(u16 a1) {
-    return unit_258(a1) < unit_238();
+bool Unit::hasCmd(u16 a1) {
+    return getCmdIdx(a1) < cmdCount();
 }
 
-s32 Unit::unit_258(u16 a1) {
-    for (int i = 0; i < unit_238(); ++i) {
-        if (unit_240(i) == a1) {
+s32 Unit::getCmdIdx(u16 a1) {
+    for (int i = 0; i < cmdCount(); ++i) {
+        if (getCmdType(i) == a1) {
             return i;
         }
     }
-    return unit_238();
+    return cmdCount();
 }
 
-s32 Unit::unit_260(u16 a1) {
-    for (int i = 0; i < unit_238(); ++i) {
-        if (unit_240(i) == a1) {
-            return unit_240(i);
+s32 Unit::findCmd(u16 a1) {
+    for (int i = 0; i < cmdCount(); ++i) {
+        if (getCmdType(i) == a1) {
+            return getCmdType(i);
         }
     }
     return 0;
@@ -352,7 +363,18 @@ bool Unit::flagStuff(u16 idx) {
     return false;
 }
 
-ASM_FUNC("asm/non_matching/unit/unit_270__4UnitUi.inc", s32 Unit::removeOneStatus(s32 idx));
+bool Unit::removeOneStatus(Status::Type type){
+    s32 i = getStatusIdx(type);
+    
+    if (i < mStatuses.size()){
+        mStatuses[i]->cleanup();
+        
+        delete mStatuses[i];
+
+        return mStatuses.removeIdx(i);
+    }
+    return false;
+}
 
 void Unit::removeStatus(Status::Type type) {
     while (hasStatus(type) == 1) {
@@ -371,8 +393,7 @@ s32 Unit::statusCount() const {
 }
 
 Status::Type Unit::getStatusType(s32 idx) {
-    Status* s = mStatuses[idx];
-    return s->getStatusType();
+    return mStatuses[idx]->type();
 }
 
 Status* Unit::getStatus(s32 idx) {
@@ -392,8 +413,14 @@ s32 Unit::getStatusIdx(Status::Type type) {
     return statusCount();
 }
 
-ASM_FUNC("asm/non_matching/unit/unit_2b0__4UnitUs.inc",
-         Status* Unit::findStatus(Status::Type type));
+Status* Unit::findStatus(Status::Type type) {
+    for (s32 i = 0; i < statusCount(); i++){
+        if (getStatusType(i) == type) {
+            return mStatuses[i];
+        }
+    }
+    return 0;
+}
 
 s32 Unit::getStatusTypeCount(Status::Type type) {
     s32 num = 0;

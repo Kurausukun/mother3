@@ -1,14 +1,9 @@
 // Auto-generated source file
 #include "global.h"
 
-extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08064FCC.inc", void sub_08064FCC());
-extern "C" ASM_FUNC("asm/non_matching/sndmon/__5Goods.inc", void __5Goods());
-extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08065014.inc", void sub_08065014());
-extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08065138.inc", void sub_08065138());
-extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08065148.inc", void sub_08065148());
-extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08065168.inc", void sub_08065168());
-extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08065194.inc", void sub_08065194());
-extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_080651A4__FUsP4Unit.inc", void sub_080651A4__FUsP4Unit());
+extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08065168.inc", void sub_08065168()); // init some factory
+extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08065194.inc", void sub_08065194()); // put some factory
+extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_080651A4__FUsP4Unit.inc", void sub_080651A4__FUsP4Unit()); // create some factory
 extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_080651C0.inc", void sub_080651C0());
 extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_080652A8.inc", void sub_080652A8());
 extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_080652DC.inc", void sub_080652DC());
@@ -44,13 +39,13 @@ extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08065C28.inc", void sub_08065C2
 extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08065C34.inc", void sub_08065C34());
 extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08065CCC.inc", void sub_08065CCC());
 extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08065D40.inc", void sub_08065D40());
-extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08065D60.inc", void sub_08065D60());
-extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08065D68.inc", void sub_08065D68());
-extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08065D98.inc", void sub_08065D98());
-extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08065DA4.inc", void sub_08065DA4());
-extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08065DE0.inc", void sub_08065DE0());
-extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08065DEC.inc", void sub_08065DEC());
-extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08065F98.inc", void sub_08065F98());
+extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08065D60.inc", void manager__13SndMonManager());
+extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08065D68.inc", void makeInstance__13SndMonManager());
+extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08065D98.inc", void get__13SndMonManager());
+extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08065DA4.inc", void destroy__13SndMonManager());
+extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08065DE0.inc", void getRTTI__6SndMon());
+extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08065DEC.inc", void __6SndMon());
+extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08065F98.inc", void dt__6SndMon()); // _._6SndMon
 extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08066004.inc", void sub_08066004());
 extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_0806609C.inc", void sub_0806609C());
 extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08066108.inc", void sub_08066108());
@@ -61,4 +56,4 @@ extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08066250.inc", void sub_0806625
 extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08066254.inc", void sub_08066254());
 extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08066258.inc", void sub_08066258());
 extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_0806625C.inc", void sub_0806625C());
-extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08066278.inc", void sub_08066278());
+extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08066278.inc", void _GLOBAL_I_SndMonManager());

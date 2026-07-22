@@ -24,7 +24,7 @@ sub_08089684:
 	strh r0, [r1]
 	adds r1, #2
 	strh r0, [r1]
-	bl sub_0806B070
+	bl get__15BGEngineManager
 	movs r1, #1
 	bl sub_0806BB20
 	str r0, [r5, #0x48]
@@ -58,7 +58,7 @@ sub_08089684:
 	bx r1
 	.align 2, 0
 _08089704: .4byte vt_09F851D8
-_08089708: .4byte _vt.3Unk
+_08089708: .4byte _vt.5Event
 _0808970C: .4byte _vt.8AppClock
-_08089710: .4byte gUnknown_08115EAC
+_08089710: .4byte callback_sub_08089A9C
 	.syntax divided

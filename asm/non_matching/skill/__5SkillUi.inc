@@ -36,7 +36,7 @@ __5SkillUi:
 	ldr r1, _080781C4 @ =_vt.8UnitJoin
 	mov sl, r1
 	str r1, [sp, #0x20]
-	ldr r0, _080781C8 @ =gUnknown_08107DB0
+	ldr r0, _080781C8 @ =callback_unit_join_callback
 	ldr r4, [r0]
 	ldr r5, [r0, #4]
 	adds r7, r5, #0
@@ -46,7 +46,7 @@ __5SkillUi:
 	mov r1, sb
 	add r2, sp, #4
 	bl listen__4BasePvRC4BaseG9ClockData
-	ldr r0, _080781CC @ =_vt.3Unk
+	ldr r0, _080781CC @ =_vt.5Event
 	str r0, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -65,7 +65,7 @@ __5SkillUi:
 	mov r1, sb
 	add r2, sp, #4
 	bl listen__4BasePvRC4BaseG9ClockData
-	ldr r1, _080781CC @ =_vt.3Unk
+	ldr r1, _080781CC @ =_vt.5Event
 	str r1, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -84,7 +84,7 @@ __5SkillUi:
 	mov r1, sb
 	add r2, sp, #4
 	bl listen__4BasePvRC4BaseG9ClockData
-	ldr r0, _080781CC @ =_vt.3Unk
+	ldr r0, _080781CC @ =_vt.5Event
 	str r0, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -104,7 +104,7 @@ __5SkillUi:
 	mov r1, sb
 	add r2, sp, #4
 	bl listen__4BasePvRC4BaseG9ClockData
-	ldr r1, _080781CC @ =_vt.3Unk
+	ldr r1, _080781CC @ =_vt.5Event
 	str r1, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -123,7 +123,7 @@ __5SkillUi:
 	mov r1, sb
 	add r2, sp, #4
 	bl listen__4BasePvRC4BaseG9ClockData
-	ldr r0, _080781CC @ =_vt.3Unk
+	ldr r0, _080781CC @ =_vt.5Event
 	str r0, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -142,7 +142,7 @@ __5SkillUi:
 	mov r1, sb
 	add r2, sp, #4
 	bl listen__4BasePvRC4BaseG9ClockData
-	ldr r1, _080781CC @ =_vt.3Unk
+	ldr r1, _080781CC @ =_vt.5Event
 	str r1, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -156,7 +156,7 @@ __5SkillUi:
 	ldr r1, _080781D4 @ =_vt.10UnitEscape
 	mov sl, r1
 	str r1, [sp, #0x20]
-	ldr r0, _080781D8 @ =gUnknown_08107DB8
+	ldr r0, _080781D8 @ =callback_unit_leave_callback
 	ldr r4, [r0]
 	ldr r5, [r0, #4]
 	adds r7, r5, #0
@@ -166,7 +166,7 @@ __5SkillUi:
 	mov r1, sb
 	add r2, sp, #4
 	bl listen__4BasePvRC4BaseG9ClockData
-	ldr r0, _080781CC @ =_vt.3Unk
+	ldr r0, _080781CC @ =_vt.5Event
 	str r0, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -185,7 +185,7 @@ __5SkillUi:
 	mov r1, sb
 	add r2, sp, #4
 	bl listen__4BasePvRC4BaseG9ClockData
-	ldr r1, _080781CC @ =_vt.3Unk
+	ldr r1, _080781CC @ =_vt.5Event
 	str r1, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -204,7 +204,7 @@ __5SkillUi:
 	mov r1, sb
 	add r2, sp, #4
 	bl listen__4BasePvRC4BaseG9ClockData
-	ldr r0, _080781CC @ =_vt.3Unk
+	ldr r0, _080781CC @ =_vt.5Event
 	str r0, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -224,7 +224,7 @@ __5SkillUi:
 	mov r1, sb
 	add r2, sp, #4
 	bl listen__4BasePvRC4BaseG9ClockData
-	ldr r1, _080781CC @ =_vt.3Unk
+	ldr r1, _080781CC @ =_vt.5Event
 	str r1, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -243,7 +243,7 @@ __5SkillUi:
 	mov r1, sb
 	add r2, sp, #4
 	bl listen__4BasePvRC4BaseG9ClockData
-	ldr r0, _080781CC @ =_vt.3Unk
+	ldr r0, _080781CC @ =_vt.5Event
 	str r0, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -262,7 +262,7 @@ __5SkillUi:
 	mov r1, sb
 	add r2, sp, #4
 	bl listen__4BasePvRC4BaseG9ClockData
-	ldr r1, _080781CC @ =_vt.3Unk
+	ldr r1, _080781CC @ =_vt.5Event
 	str r1, [sp, #0x20]
 	add r0, sp, #4
 	movs r1, #2
@@ -279,10 +279,10 @@ __5SkillUi:
 	.align 2, 0
 _080781C0: .4byte _vt.6Action
 _080781C4: .4byte _vt.8UnitJoin
-_080781C8: .4byte gUnknown_08107DB0
-_080781CC: .4byte _vt.3Unk
+_080781C8: .4byte callback_unit_join_callback
+_080781CC: .4byte _vt.5Event
 _080781D0: .4byte _vt.10UnitRevive
 _080781D4: .4byte _vt.10UnitEscape
-_080781D8: .4byte gUnknown_08107DB8
+_080781D8: .4byte callback_unit_leave_callback
 _080781DC: .4byte _vt.7UnitDie
     .syntax divided

@@ -17,7 +17,7 @@ PreSysClockSingleton_get__Fv:
 .L17:
 	.align	2, 0
 .L16:
-	.word	sPreSysClockSingleton
+	.word	sPreSysClockRTTI
 .LFE1:
 .Lfe1:
 	.size	 PreSysClockSingleton_get__Fv,.Lfe1-PreSysClockSingleton_get__Fv
@@ -53,7 +53,7 @@ SysClockSingleton_get__Fv:
 .L21:
 	.align	2, 0
 .L20:
-	.word	sSysClockSingleton
+	.word	sSysClockRTTI
 .LFE3:
 .Lfe3:
 	.size	 SysClockSingleton_get__Fv,.Lfe3-SysClockSingleton_get__Fv
@@ -89,7 +89,7 @@ PreAppClockSingleton_get__Fv:
 .L25:
 	.align	2, 0
 .L24:
-	.word	sPreAppClockSingleton
+	.word	sPreAppClockRTTI
 .LFE5:
 .Lfe5:
 	.size	 PreAppClockSingleton_get__Fv,.Lfe5-PreAppClockSingleton_get__Fv
@@ -125,7 +125,7 @@ AppClockSingleton_get__Fv:
 .L29:
 	.align	2, 0
 .L28:
-	.word	sAppClockSingleton
+	.word	sAppClockRTTI
 .LFE7:
 .Lfe7:
 	.size	 AppClockSingleton_get__Fv,.Lfe7-AppClockSingleton_get__Fv
@@ -161,7 +161,7 @@ PostAppClockSingleton_get__Fv:
 .L33:
 	.align	2, 0
 .L32:
-	.word	sPostAppClockSingleton
+	.word	sPostAppClockRTTI
 .LFE9:
 .Lfe9:
 	.size	 PostAppClockSingleton_get__Fv,.Lfe9-PostAppClockSingleton_get__Fv
@@ -197,7 +197,7 @@ PostSysClockSingleton_get__Fv:
 .L37:
 	.align	2, 0
 .L36:
-	.word	sPostSysClockSingleton
+	.word	sPostSysClockRTTI
 .LFE11:
 .Lfe11:
 	.size	 PostSysClockSingleton_get__Fv,.Lfe11-PostSysClockSingleton_get__Fv
@@ -429,7 +429,7 @@ sleep__5Clocki:
 	bgt _0806A20C
 	b _0806A36A
 _0806A20C:
-	ldr r0, _0806A378 @ =_vt.3Unk
+	ldr r0, _0806A378 @ =_vt.5Event
 	mov sb, r0
 _0806A210:
 	adds r0, r7, #0
@@ -589,14 +589,14 @@ _0806A36A:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0806A378: .4byte _vt.3Unk
+_0806A378: .4byte _vt.5Event
 _0806A37C: .4byte _vt.11PreAppClock
 _0806A380: .4byte _vt.8AppClock
 _0806A384: .4byte _vt.12PostAppClock
 _0806A388: .4byte _vt.12PostSysClock
 _0806A38C: .4byte _vt.11PreSysClock
 _0806A390: .4byte _vt.8SysClock
-    
+
 .syntax divided
 	.code	16
 .LBE21:
@@ -631,41 +631,41 @@ getTime__5Clock:
 	.size	 sClockManager,12
 sClockManager:
 	.space	12
-	.globl	sPostSysClockSingleton
+	.globl	sPostSysClockRTTI
 	.align	2, 0
-	.type	 sPostSysClockSingleton,object
-	.size	 sPostSysClockSingleton,12
-sPostSysClockSingleton:
+	.type	 sPostSysClockRTTI,object
+	.size	 sPostSysClockRTTI,12
+sPostSysClockRTTI:
 	.space	12
-	.globl	sPostAppClockSingleton
+	.globl	sPostAppClockRTTI
 	.align	2, 0
-	.type	 sPostAppClockSingleton,object
-	.size	 sPostAppClockSingleton,12
-sPostAppClockSingleton:
+	.type	 sPostAppClockRTTI,object
+	.size	 sPostAppClockRTTI,12
+sPostAppClockRTTI:
 	.space	12
-	.globl	sAppClockSingleton
+	.globl	sAppClockRTTI
 	.align	2, 0
-	.type	 sAppClockSingleton,object
-	.size	 sAppClockSingleton,12
-sAppClockSingleton:
+	.type	 sAppClockRTTI,object
+	.size	 sAppClockRTTI,12
+sAppClockRTTI:
 	.space	12
-	.globl	sPreAppClockSingleton
+	.globl	sPreAppClockRTTI
 	.align	2, 0
-	.type	 sPreAppClockSingleton,object
-	.size	 sPreAppClockSingleton,12
-sPreAppClockSingleton:
+	.type	 sPreAppClockRTTI,object
+	.size	 sPreAppClockRTTI,12
+sPreAppClockRTTI:
 	.space	12
-	.globl	sSysClockSingleton
+	.globl	sSysClockRTTI
 	.align	2, 0
-	.type	 sSysClockSingleton,object
-	.size	 sSysClockSingleton,12
-sSysClockSingleton:
+	.type	 sSysClockRTTI,object
+	.size	 sSysClockRTTI,12
+sSysClockRTTI:
 	.space	12
-	.globl	sPreSysClockSingleton
+	.globl	sPreSysClockRTTI
 	.align	2, 0
-	.type	 sPreSysClockSingleton,object
-	.size	 sPreSysClockSingleton,12
-sPreSysClockSingleton:
+	.type	 sPreSysClockRTTI,object
+	.size	 sPreSysClockRTTI,12
+sPreSysClockRTTI:
 	.space	12
 .text
 	.align	2, 0
@@ -776,18 +776,18 @@ _GLOBAL_.I.PreSysClockSingleton_get__Fv:
 .L98:
 	.align	2, 0
 .L97:
-	.word	sPreSysClockSingleton
-	.word	_vt.20PreSysClockSingleton
-	.word	sSysClockSingleton
-	.word	_vt.17SysClockSingleton
-	.word	sPreAppClockSingleton
-	.word	_vt.20PreAppClockSingleton
-	.word	sAppClockSingleton
-	.word	_vt.17AppClockSingleton
-	.word	sPostAppClockSingleton
-	.word	_vt.21PostAppClockSingleton
-	.word	sPostSysClockSingleton
-	.word	_vt.21PostSysClockSingleton
+	.word	sPreSysClockRTTI
+	.word	_vt.15PreSysClockRTTI
+	.word	sSysClockRTTI
+	.word	_vt.12SysClockRTTI
+	.word	sPreAppClockRTTI
+	.word	_vt.15PreAppClockRTTI
+	.word	sAppClockRTTI
+	.word	_vt.12AppClockRTTI
+	.word	sPostAppClockRTTI
+	.word	_vt.16PostAppClockRTTI
+	.word	sPostSysClockRTTI
+	.word	_vt.16PostSysClockRTTI
 	.word	sClockManager
 	.word	_vt.12ClockManager
 .LFE22:

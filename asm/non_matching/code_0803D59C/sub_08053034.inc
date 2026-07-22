@@ -88,7 +88,7 @@ _080530DC: .4byte gShopInfo
 _080530E0: .4byte 0xFFFFC2BC
 _080530E4: .4byte gGoodsInfo
 _080530E8: .4byte gGoodsInfo+0x4
-_080530EC: .4byte gUnknown_02004870
+_080530EC: .4byte gSave+0x10 @ gSave.key_items
 _080530F0: .4byte 0x00002DF0
 _080530F4:
 	adds r0, r2, #0

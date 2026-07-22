@@ -107,5 +107,5 @@ _0802A8AA:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0802A8D0: .4byte gUnknown_02004FEE
+_0802A8D0: .4byte gSave+0x78E @ gSave._78e
 	.syntax divided

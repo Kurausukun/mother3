@@ -164,7 +164,7 @@ _08089E72:
 	strh r4, [r1, #2]
 	adds r0, r5, #0
 	bl sub_0806D83C__11Unk0806D64C
-	bl sub_0806B070
+	bl get__15BGEngineManager
 	movs r1, #1
 	mov r2, sl
 	bl sub_0806BACC
@@ -200,7 +200,7 @@ _08089E72:
 _08089F4C: .4byte vt_09F85378
 _08089F50: .4byte vt_09F852E0
 _08089F54: .4byte _vt.6ResPtr
-_08089F58: .4byte _vt.3Unk
+_08089F58: .4byte _vt.5Event
 _08089F5C: .4byte _vt.8AppClock
-_08089F60: .4byte gUnknown_0811600C
+_08089F60: .4byte callback_sub_08089F94
 	.syntax divided

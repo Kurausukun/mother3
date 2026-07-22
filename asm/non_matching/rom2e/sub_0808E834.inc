@@ -82,7 +82,7 @@ sub_0808E834:
 _0808E8E8: .4byte vt_09F85EC8
 _0808E8EC: .4byte _vt.6ResPtr
 _0808E8F0: .4byte 0x0000027B
-_0808E8F4: .4byte _vt.3Unk
+_0808E8F4: .4byte _vt.5Event
 _0808E8F8: .4byte _vt.8AppClock
-_0808E8FC: .4byte gUnknown_08119964
+_0808E8FC: .4byte callback_sub_0808EAB0
 	.syntax divided

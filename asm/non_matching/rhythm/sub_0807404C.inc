@@ -14,7 +14,7 @@ sub_0807404C:
 	ldr r1, [r1, #0x14]
 	bl _call_via_r1
 	adds r4, r0, #0
-	bl sub_08082ADC
+	bl get__7PsiRTTI
 	cmp r4, r0
 	bne _08074090
 	ldr r1, [r5, #0x1c]

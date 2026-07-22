@@ -1,13 +1,13 @@
 // Auto-generated source file
 #include "global.h"
 
-extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806B038.inc", void sub_0806B038());
-extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806B040.inc", void sub_0806B040());
-extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806B070.inc", void sub_0806B070());
-extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806B07C.inc", void sub_0806B07C());
-extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806B0B8.inc", void sub_0806B0B8());
-extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806B0C4.inc", void sub_0806B0C4());
-extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806B258.inc", void sub_0806B258());
+extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806B038.inc", void manager__15BGEngineManager());
+extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806B040.inc", void makeInstance__15BGEngineManager());
+extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806B070.inc", void get__15BGEngineManager());
+extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806B07C.inc", void destroy__15BGEngineManager());
+extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806B0B8.inc", void getRTTI__8BGEngine());
+extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806B0C4.inc", void __8BGEngine());
+extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806B258.inc", void dt__8BGEngine());
 extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806B2CC.inc", void sub_0806B2CC());
 extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806B3E0.inc", void sub_0806B3E0());
 extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806B3F4.inc", void sub_0806B3F4());
@@ -46,4 +46,4 @@ extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806BB20.inc", void sub_0806B
 extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806BB34.inc", void sub_0806BB34());
 extern "C" ASM_FUNC("asm/non_matching/bgengine/bgengine_updateScrollHorizontal.inc", void bgengine_updateScrollHorizontal());
 extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806BC3C.inc", void sub_0806BC3C());
-extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806BDC0.inc", void sub_0806BDC0());
+extern "C" ASM_FUNC("asm/non_matching/bgengine/sub_0806BDC0.inc", void _GLOBAL_I_BGEngineManager());

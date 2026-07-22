@@ -81,7 +81,7 @@ sub_080C0A20:
 	bx r1
 	.align 2, 0
 _080C0AD8: .4byte vt_09F7DD98
-_080C0ADC: .4byte _vt.3Unk
+_080C0ADC: .4byte _vt.5Event
 _080C0AE0: .4byte _vt.10RoundBegin
 _080C0AE4: .4byte gUnknown_080FB708
 _080C0AE8: .4byte _vt.13UnitTurnBegin

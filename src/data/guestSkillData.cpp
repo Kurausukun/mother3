@@ -1,7 +1,7 @@
 #include "battle/guestSkill.h"
 #include "enums.h"
 
-const GuestSkillInfo gGuestSkillData[] = {
+const PlayerSkillInfo gGuestSkillData[] = {
 	{
 		/*       ID       */                0x0, /*     EFFECT     */ EffectType::Attack,
 		/*    ELEMENT     */  ElementType::None, /*     TARGET     */   TargetType::Self,

@@ -21,7 +21,7 @@ _08001C78:
 	ldr r0, _08001C84
 	b _08001D22
 	.align 2, 0
-_08001C84: .4byte gUnknown_02004F02
+_08001C84: .4byte gSave+0x6A2 @ gSave.fav_food
 _08001C88:
 	cmp r2, #8
 	bne _08001D10
@@ -84,7 +84,7 @@ _08001CEC:
 	b _08001D22
 	.align 2, 0
 _08001D00: .4byte gUnknown_02015E26
-_08001D04: .4byte gUnknown_02004F14
+_08001D04: .4byte gSave+0x6B4 @ gSave.fav_thing
 _08001D08: .4byte 0x0000FFFF
 _08001D0C: .4byte gUnknown_08CDB8B4
 _08001D10:

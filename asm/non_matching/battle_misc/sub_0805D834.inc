@@ -1,5 +1,5 @@
 	.syntax unified
-sub_0805D834:
+makeInstance__13BattleManager:
 	push {r4, r5, lr}
 	ldr r1, _0805D868
 	ldr r0, [r1]
@@ -16,7 +16,7 @@ sub_0805D834:
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
 	adds r0, #0x60
-	bl sub_08071F8C
+	bl __10KeyFocuser
 	str r4, [r5]
 _0805D85E:
 	ldr r0, _0805D86C
@@ -25,7 +25,7 @@ _0805D85E:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0805D868: .4byte gUnknown_02002010
-_0805D86C: .4byte sBattleInstance
-_0805D870: .4byte vt_09F45058
+_0805D868: .4byte _13BattleManager.mSingletonGuard
+_0805D86C: .4byte _13BattleManager.mSingleton
+_0805D870: .4byte _vt.6Battle
 	.syntax divided
