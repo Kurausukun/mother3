@@ -254,6 +254,8 @@ typedef struct Unknown_02016078 {
     /* 0x2C4E / 0x2C9E */ vu8 b;
     /* 0x2C4F / 0x2C9F */ u8 pad_2C4F[0x2C50 - 0x2C4F];
 } Unknown_02016078;
+static_assert(sizeof(((Unknown_02016078*)0)->_0[0]) == 0x2);
+static_assert(sizeof(((Unknown_02016078*)0)->_0) == 0x800);
 
 typedef struct InputState {
     u16 justPressed;

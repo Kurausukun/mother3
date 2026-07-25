@@ -560,9 +560,36 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_08002AF4.inc", void sub_08002AF4()
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08002B1C.inc", void sub_08002B1C());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08002B60.inc", void sub_08002B60());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08002BA4.inc", void sub_08002BA4());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08002BCC.inc", void sub_08002BCC());
+//extern "C" ASM_FUNC("asm/non_matching/rom/sub_08002BCC.inc", void sub_08002BCC());
+extern "C" u16* sub_08002BCC(s32 arg0, u16 arg1) {
+    u16 temp_r1;
+    u16 var_r3;
+    u16* var_r2;
+
+    temp_r1 = arg1;
+    var_r2 = (u16*)arg0 + 1;
+    var_r3 = 0;
+    for (var_r3 = 0; var_r3 < temp_r1; var_r3++) {
+        var_r2 += (*var_r2) + 1;
+    }
+    return var_r2;
+}
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08002BF4.inc", void sub_08002BF4());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08002C20.inc", void sub_08002C20());
+//extern "C" ASM_FUNC("asm/non_matching/rom/sub_08002C20.inc", void sub_08002C20());
+typedef struct UnnamedStruct001 {
+    u16 a;
+    u8 b[2];
+} UnnamedStruct001;
+
+extern "C" u16 sub_08002C20(UnnamedStruct001* arg0) {
+    u8* var_r1 = &arg0->b[0];
+    u16 var_r3 = 0;
+    for(u16 var_r2 = 0; var_r2 < *(u16 *)arg0; var_r2++) {
+        var_r3 += var_r1[1];
+        var_r1 += 2;
+    }
+    return var_r3;
+}
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08002C4C.inc", void sub_08002C4C());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08002C54.inc", void sub_08002C54());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08002C5C.inc", void sub_08002C5C());
@@ -1417,10 +1444,11 @@ extern "C" void sub_080088AC(u16 arg0, u16 arg1, u16 arg2, u16 arg3) {
     
     gSomeBlend._11C8B++;
 }
-
+struct tempStruct;
+typedef struct tempStruct tempStruct;
 //extern "C" ASM_FUNC("asm/non_matching/rom/draw_message.inc", void draw_message());
 extern "C" void sub_080089E0();
-extern "C" void sub_080089F0(void*);
+extern "C" void sub_080089F0(tempStruct *arg0);
 extern "C" void sub_08008BAC(void*);
 extern "C" void sub_08008F0C(void*);
 extern "C" void sub_0800A07C();
@@ -1450,7 +1478,7 @@ extern "C" void draw_message(void) {
         sub_0800A0A4(&gSomeBlend._5778, 2);
     }
     if (gSomeBlend._11C8B != 0) {
-        void* target = &gSomeBlend._5778;
+        tempStruct* target = (tempStruct*)&gSomeBlend._5778;
         sub_080089F0(target);
         sub_08008BAC(target);
     }
@@ -1473,7 +1501,118 @@ extern "C" void sub_080089E0(void) {
     sub_08008F0C(&gUnknown_0201B7A0);
 }
 
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_080089F0.inc", void sub_080089F0());
+//extern "C" ASM_FUNC("asm/non_matching/rom/sub_080089F0.inc", void sub_080089F0());
+
+extern "C" void sub_08008C28(void*, u32);
+extern "C" void sub_08008ECC(u8* arg0, u8* arg1, s16* arg2);
+extern "C" s32 sub_08009C84(u16, u16);
+extern "C" s32 sub_08009CD8(u16, u16);
+extern "C" u32 sub_08009DDC(u16);
+
+typedef struct R4Bitfield {
+    u16 low12 : 12;
+    u16 high4 : 4;
+    u16 _2b1pad : 1;
+    u16 _2b2flag : 1;
+} R4Bitfield;
+
+typedef struct tempStruct {
+    u32 _0;
+    u8 pad_4[0x198 - 0x4];
+    s32 _198;
+    u8 pad_19A[0x260 - 0x19C];
+    u32* _260;
+    u8 pad_264[0x3228 - 0x0264];
+    u16 _3228;
+    u8 _322A_1 : 1;
+    u8 pad_322A_2 : 7;
+    u8 pad_322B;
+    R4Bitfield* _322C;
+    u8 pad_3230[0xC513 - 0x3230];
+    u8 _C513;
+} tempStruct;
+
+
+
+typedef struct R6Bitfield {
+    u32 R6field_00000007 : 3;
+    u32 R6field_00000078 : 4;
+    u32 R6field_0001FF80 : 10;
+    u32 R6flag_00020000 : 1;
+    
+} R6Bitfield;
+
+extern "C" void sub_080089F0(tempStruct *arg0) {
+    u32 local_buffer[3];
+    
+
+    arg0->_322C = 0;
+    R4Bitfield *var_r4 = (R4Bitfield*)arg0;
+    s32 *var_r8 = &arg0->_198;
+    u16 var_sl = arg0->_C513;
+    
+    if (var_sl == 0) return;
+    
+    s16 *SelectedInBuf2 = (s16 *) &local_buffer[2]; //r9
+    R6Bitfield *var_r6 = (R6Bitfield *) &arg0->_260;
+
+    while (true) {
+        
+        if ((*(u32*)var_r4 << (32 - 12)) != 0) {
+            
+            R4Bitfield* nextR4Field = arg0->_322C; 
+            nextR4Field++;
+            s16 *SelectedInBuf1 = (s16 *) &local_buffer[1]; //r5
+            if (var_r4 != nextR4Field) sub_08008ECC((u8*)arg0, (u8*)var_r4, SelectedInBuf1);
+            s32 temp = *(u32*)var_r4 << (32 - 18);
+            R6Bitfield *spC = (R6Bitfield *) (((u8 *) var_r8) + 0xC8);
+            if (temp >= 0) {
+
+                u16 var_r0_2 = SelectedInBuf1[0] / 8;
+                u32 UpperByteMask = 0xFFFF0000;
+                local_buffer[2] &= UpperByteMask;
+                local_buffer[2] |= var_r0_2;
+               
+                SelectedInBuf2[1] = SelectedInBuf1[1] / 8;
+                
+                var_r6->R6flag_00020000 = 0;
+                var_r6->R6field_00000078 = var_r4->high4;
+
+                var_r8[0] = sub_08009C84(SelectedInBuf2[0], SelectedInBuf2[1]);
+                var_r8[1] = sub_08009CD8(SelectedInBuf2[0], SelectedInBuf2[1]);
+
+                var_r6->R6field_0001FF80 = SelectedInBuf2[0] + (SelectedInBuf2[1] << 5);           
+                var_r6->R6field_00000007 = ((u16*)SelectedInBuf1)[0] & 7;
+                
+                sub_08008C28((void *)var_r8, ((R4Bitfield *)var_r4)->low12);
+                var_sl--;
+            }
+                
+            var_r4->_2b2flag = 1;
+            s32 callResult =  sub_08009DDC(((R4Bitfield *)var_r4)->low12);
+            SelectedInBuf1 = (s16*)(*(u16*)SelectedInBuf1); //clobber r5
+            u16* writeAddr = (u16*)&local_buffer[1];
+            callResult += (s32)SelectedInBuf1;
+            
+            writeAddr++;
+            writeAddr--;
+            *writeAddr = callResult;
+                    
+            arg0->_322A_1 = 1;
+            arg0->_3228 = spC->R6field_0001FF80;
+
+            CpuSmartSet(var_r8 + 2, (u8*) arg0 + 0x00003168, 0x60);
+            CpuSmartSet(var_r8 + 26, (u8*) arg0 + 0x000031C8, 0x60);
+
+            var_r6 += 0x33;
+            var_r8 += 0x33;
+            arg0->_322C = var_r4;
+
+        }
+        if ((void*)++var_r4 >= (void*)&arg0->_198) break;
+        if (var_sl == 0) break;
+    }
+}
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008BAC.inc", void sub_08008BAC());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008C28.inc", void sub_08008C28());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008C70.inc", void sub_08008C70());
@@ -1481,15 +1620,12 @@ extern "C" ASM_FUNC("asm/non_matching/rom/nullsub_63.inc", void nullsub_63());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008D3C.inc", void sub_08008D3C());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008E08.inc", void sub_08008E08());
 //extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008ECC.inc", void sub_08008ECC());
-typedef struct mystruct {
-    s16 _0;
-    s16 _2;
-};
-extern "C" void sub_08008ECC(u8* arg0,u8* arg1, mystruct* arg2) {
+
+extern "C" void sub_08008ECC(u8* arg0,u8* arg1, s16* arg2) {
     s32 temp_r0 = arg1 - arg0;
     temp_r0 = Divide(temp_r0, 4);
-    arg2->_0 = (s16) (sub_08002FD4(temp_r0, 0x22) * 0xC);
-    arg2->_2 = (s16) ((&gSomeBlend)->_11C89 * Divide(temp_r0, 0x22));
+    arg2[0]= (s16) (sub_08002FD4(temp_r0, 0x22) * 0xC);
+    arg2[1] = (s16) ((&gSomeBlend)->_11C89 * Divide(temp_r0, 0x22));
 }
 
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008F0C.inc", void sub_08008F0C());
@@ -1512,11 +1648,11 @@ extern "C" void* sub_08009C4C(u16 arg0, u16 arg1) {
 }
 
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009C68.inc", void sub_08009C68());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009C84.inc", void sub_08009C84());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009CD8.inc", void sub_08009CD8());
+extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009C84.inc", s32 sub_08009C84(u16, u16));
+extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009CD8.inc", s32 sub_08009CD8(u16, u16));
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009D6C.inc", void sub_08009D6C());
 //extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009DDC.inc", void sub_08009DDC());
-extern "C" u16 sub_08009DDC(u16 arg0) {
+extern "C" u32 sub_08009DDC(u16 arg0) {
     if ((gSomeBlend._11C92_1)) return gSomeBlend._11C88;  
     return sub_08002254((gSomeBlend._11C92_2), arg0);
 }

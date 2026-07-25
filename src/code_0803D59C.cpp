@@ -2473,7 +2473,66 @@ extern "C" void sub_08059094() {
 
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_080590E4.inc", void sub_080590E4());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08059128.inc", void sub_08059128());
-extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_080591BC.inc", void sub_080591BC());
+typedef struct __attribute__((packed, aligned(2))) TileInfoPacked { //for writing
+    u16 tile_num : 10;    // 0x04 bits 0-9 - Tile/character number
+    u16 priority : 2;     // 0x04 bits 10-11 - Pripalette_numity vs BG
+    u16 palette_num : 4;  // 0x04 bits 12-15 - Palette number
+} TileInfoPacked;
+
+static inline void WriteTileEntry(TileInfoPacked *entry, u32 val) {
+    entry->tile_num = val;
+    entry->palette_num = 0xF;
+}
+
+static_assert(sizeof(TileInfoPacked) == 2);
+
+typedef struct _020192BC {
+    u8  pad_000[0x484];
+    TileInfoPacked row_484[0x20];
+    TileInfoPacked row_4C4[0x20];
+    u8  pad_504[0x800 - 0x504];
+} _020192BC;
+const u8 PLAYER_NAME_BUFSIZE = 0xF;
+const u16 STRING_TERMINATOR = 0xFFFF;
+extern Save gSave;
+extern _020192BC gUnknown_020192BC;
+
+
+
+
+extern "C" void sub_080591BC(vu16 arg0) {
+    _020192BC *var_r1 = &gUnknown_020192BC;
+    if (arg0 != false) var_r1++;
+    
+    TileInfoPacked *pBuffer1 = var_r1->row_484;
+    TileInfoPacked *pBuffer2 = var_r1->row_4C4;
+    u16 index = 0;
+    u32 offset = offsetof(Save, playername);
+    if ((*(u16 *)(((u8 *)(&gSave)) + offset)) == STRING_TERMINATOR) return;
+        
+    while (true) {
+        u16 *LoadedBuffer = (u16 *)&gSave.playername;
+        u16 *pCurrentWCharacter = &LoadedBuffer[index];
+        u16 SelectedWCharacter = *pCurrentWCharacter;
+        if (SelectedWCharacter != 0xAC) {
+            
+            u32 field1 = ((TileInfo*)&pBuffer1[index])->tile_num + 0xFF64;
+            WriteTileEntry(pBuffer1 + index, SelectedWCharacter + field1);
+            
+            u32 field2 = ((TileInfo*)&pBuffer2[index])->tile_num + 0xFF84;
+            u32 SelectedWCharacter2 = (u32)(*pCurrentWCharacter);
+            WriteTileEntry(pBuffer2 + index, field2 + SelectedWCharacter2);
+            
+            //another option that matches here is to just do a call like this
+            //WriteTileEntry(pBuffer2 + index, field2 + (u32)(*pCurrentWCharacter));
+            //Yall can decide which is less fake matchy
+        }
+        index++;
+        if (index > PLAYER_NAME_BUFSIZE) break;
+        if (LoadedBuffer[index] == STRING_TERMINATOR) break;
+    }
+}
+
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_080592A8.inc", void sub_080592A8());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805931C.inc", void sub_0805931C());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08059358.inc", void sub_08059358());
