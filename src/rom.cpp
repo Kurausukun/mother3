@@ -64,7 +64,7 @@ extern "C" u16 get_flag(u16);
 extern "C" void incrementSessionPlaytime();
 
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080012BC.inc", void sub_080012BC());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001378.inc", void sub_08001378());
+extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001378.inc", s32 sub_08001378(Unknown_02016078*, u32, u16, u16));
 
 extern "C" void sub_080013D0(struct_02016028* arg0) {
     arg0->dispcnt = 0;
@@ -1501,36 +1501,46 @@ extern "C" void sub_080089E0(void) {
     sub_08008F0C(&gUnknown_0201B7A0);
 }
 
-//extern "C" ASM_FUNC("asm/non_matching/rom/sub_080089F0.inc", void sub_080089F0());
+extern "C" ASM_FUNC("asm/non_matching/rom/sub_080089F0.inc", void sub_080089F0());
 
 extern "C" void sub_08008C28(void*, u32);
 extern "C" void sub_08008ECC(u8* arg0, u8* arg1, s16* arg2);
 extern "C" s32 sub_08009C84(u16, u16);
 extern "C" s32 sub_08009CD8(u16, u16);
-extern "C" u32 sub_08009DDC(u16);
+extern "C" u16 sub_08009DDC(u16);
 
 typedef struct R4Bitfield {
-    u16 low12 : 12;
-    u16 high4 : 4;
-    u16 _2b1pad : 1;
-    u16 _2b2flag : 1;
+    u32 low12 : 12;
+    u32 high4 : 4;
+    u32 _2b1pad : 1;
+    u32 _2b2flag : 1;
+    u32 _2middle8 :8;
 } R4Bitfield;
 
 typedef struct tempStruct {
-    u32 _0;
+    R4Bitfield _0;
     u8 pad_4[0x198 - 0x4];
     s32 _198;
-    u8 pad_19A[0x260 - 0x19C];
-    u32* _260;
-    u8 pad_264[0x3228 - 0x0264];
+    s32 _19C;
+    u8 pad_19A[0x260 - 0x1A0];
+    s32* _260;
+    u8 pad_264[0x3168 - 0x264];
+    u8 _3168[0x60];
+    u8 _31C8[0x60];
     u16 _3228;
     u8 _322A_1 : 1;
     u8 pad_322A_2 : 7;
     u8 pad_322B;
     R4Bitfield* _322C;
-    u8 pad_3230[0xC513 - 0x3230];
+    R4Bitfield _3230;
+    u8 pad_3234[0x3670 - 0x3234];
+    s32 _3670;
+    s32 _3674;
+    u8 pad_3678[0xC513 - 0x3678];
     u8 _C513;
-} tempStruct;
+    u8 pad_C514[0xC518 - 0xC514];
+    u16 _C518;
+};
 
 
 
@@ -1542,7 +1552,7 @@ typedef struct R6Bitfield {
     
 } R6Bitfield;
 
-extern "C" void sub_080089F0(tempStruct *arg0) {
+/*extern "C" void sub_080089F0(tempStruct *arg0) {
     u32 local_buffer[3];
     
 
@@ -1612,7 +1622,7 @@ extern "C" void sub_080089F0(tempStruct *arg0) {
         if ((void*)++var_r4 >= (void*)&arg0->_198) break;
         if (var_sl == 0) break;
     }
-}
+}*/
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008BAC.inc", void sub_08008BAC());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008C28.inc", void sub_08008C28());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008C70.inc", void sub_08008C70());
@@ -1637,7 +1647,86 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_080093F0.inc", void sub_080093F0()
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0800946C.inc", void sub_0800946C());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009568.inc", void sub_08009568());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080096EC.inc", void sub_080096EC());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009828.inc", void sub_08009828());
+//extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009828.inc", void sub_08009828());
+extern "C" void sub_08009828(tempStruct *arg0_r8) {
+    u32 local_buffer[2];
+    arg0_r8->_322C = 0;
+    R4Bitfield *var_r4_r5;
+    s32 *var_r8_r7;
+    
+    switch ((s32)gGame.mode) {
+        case 4: case 5:
+            var_r4_r5 = &arg0_r8->_3230;
+            var_r8_r7 = &arg0_r8->_3670;
+            break;
+        default:
+            var_r4_r5 = &arg0_r8->_0;
+            var_r8_r7 = &arg0_r8->_198;
+            break;
+    }
+    R4Bitfield *holdVar_r4_r5 = var_r4_r5;
+    s32 *holdVar_r8_r7 = var_r8_r7;
+    u16 var_sl = arg0_r8->_C513;
+    if (var_sl == 0) return;
+    
+    s16 *SelectedInBuf1 = (s16*)&local_buffer[0];
+    R4Bitfield **nextR4Field;
+    s16 *SelectedInBuf2 = (s16*)&local_buffer[1];
+    
+    R6Bitfield* var_r6 = (R6Bitfield*)(var_r8_r7 + 0x32);
+    while (var_sl != 0) {
+        if (((*(u32*)var_r4_r5 << 0x14) >> 0x14) != 0) {
+            if (local_buffer);
+            if (((*(u32*)var_r4_r5 << 0x14) >> 0x14) == 0xFE0) {
+                var_r4_r5->low12 = 0;
+                var_sl -= 1;
+                arg0_r8->_C518 = var_r4_r5->_2middle8;
+                
+                var_r6 += 0x33;
+                var_r8_r7 += 0x33;
+                arg0_r8->_322C = 0;
+                continue;
+            } else {
+                nextR4Field = &arg0_r8->_322C;
+                if ((R4Bitfield*)var_r4_r5 != *nextR4Field + 1) {
+                    sub_08008ECC((u8*)holdVar_r4_r5, (u8*)var_r4_r5, (s16*)local_buffer);
+                    SelectedInBuf1[0] += arg0_r8->_C518;
+                }
+
+                u16 Var_r0_2 = SelectedInBuf1[0] / 8;
+                u32 Mask1 = 0xFFFF0000;
+                local_buffer[1] &= Mask1;
+                local_buffer[1] |= Var_r0_2;
+                SelectedInBuf2[1] = SelectedInBuf1[1] / 8;
+                           //5                     //03E0 5                       //FC00 5
+                s32 PackedBits = (&gSomeBlend)->_53b0;        
+                PackedBits += (SelectedInBuf2[0] << 5) + (SelectedInBuf2[1] << 10);
+                var_r6->R6field_00000078 = ((R4Bitfield*)var_r4_r5)->high4;
+                
+                var_r8_r7[0] = PackedBits;
+                var_r8_r7[1] = sub_08001378(&(&gSomeBlend)->_50, 0, SelectedInBuf2[0], SelectedInBuf2[1]);
+                var_r6->R6field_0001FF80 = PackedBits >> 0x5;
+                var_r6->R6field_00000007 = SelectedInBuf1[0] & 7;
+                sub_08008C28((void*)var_r8_r7, var_r4_r5->low12);
+                SelectedInBuf1[0] += sub_08009DDC(var_r4_r5->low12);
+                
+                var_sl -= 1;
+                
+                arg0_r8->_322A_1 = 1;
+                arg0_r8->_3228 = ((R6Bitfield*)var_r6)->R6field_0001FF80;
+
+                CpuSmartSet(var_r8_r7 + 2, arg0_r8->_3168, 0x60);
+                CpuSmartSet(var_r8_r7 + 0x1A, arg0_r8->_31C8, 0x60);
+
+            }
+            var_r6 += 0x33;
+            var_r8_r7 += 0x33;
+            arg0_r8->_322C = var_r4_r5;
+        }
+        var_r4_r5++;
+        if ((u8*)var_r4_r5 >= (u8*)holdVar_r8_r7) break;
+    }
+}
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009A48.inc", void sub_08009A48());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009AF4.inc", void sub_08009AF4());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009B98.inc", void sub_08009B98());
@@ -1652,7 +1741,7 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009C84.inc", s32 sub_08009C84(u1
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009CD8.inc", s32 sub_08009CD8(u16, u16));
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009D6C.inc", void sub_08009D6C());
 //extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009DDC.inc", void sub_08009DDC());
-extern "C" u32 sub_08009DDC(u16 arg0) {
+extern "C" u16 sub_08009DDC(u16 arg0) {
     if ((gSomeBlend._11C92_1)) return gSomeBlend._11C88;  
     return sub_08002254((gSomeBlend._11C92_2), arg0);
 }
