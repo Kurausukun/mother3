@@ -1501,7 +1501,7 @@ extern "C" void sub_080089E0(void) {
     sub_08008F0C(&gUnknown_0201B7A0);
 }
 
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_080089F0.inc", void sub_080089F0());
+//extern "C" ASM_FUNC("asm/non_matching/rom/sub_080089F0.inc", void sub_080089F0());
 
 extern "C" void sub_08008C28(void*, u32);
 extern "C" void sub_08008ECC(u8* arg0, u8* arg1, s16* arg2);
@@ -1552,7 +1552,7 @@ typedef struct R6Bitfield {
     
 } R6Bitfield;
 
-/*extern "C" void sub_080089F0(tempStruct *arg0) {
+extern "C" void sub_080089F0(tempStruct *arg0) {
     u32 local_buffer[3];
     
 
@@ -1599,14 +1599,17 @@ typedef struct R6Bitfield {
             }
                 
             var_r4->_2b2flag = 1;
-            s32 callResult =  sub_08009DDC(((R4Bitfield *)var_r4)->low12);
-            SelectedInBuf1 = (s16*)(*(u16*)SelectedInBuf1); //clobber r5
+            //FAKE MATCH
+            u32 callResult = ((u32 (*)(u16))sub_08009DDC)(((R4Bitfield *)var_r4)->low12);
+            
+            SelectedInBuf1 = (s16*)(*(u16*)SelectedInBuf1);
             u16* writeAddr = (u16*)&local_buffer[1];
             callResult += (s32)SelectedInBuf1;
-            
+
             writeAddr++;
             writeAddr--;
             *writeAddr = callResult;
+            //FAKE MATCH END
                     
             arg0->_322A_1 = 1;
             arg0->_3228 = spC->R6field_0001FF80;
@@ -1622,7 +1625,7 @@ typedef struct R6Bitfield {
         if ((void*)++var_r4 >= (void*)&arg0->_198) break;
         if (var_sl == 0) break;
     }
-}*/
+}
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008BAC.inc", void sub_08008BAC());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008C28.inc", void sub_08008C28());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008C70.inc", void sub_08008C70());
