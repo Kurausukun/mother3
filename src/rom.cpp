@@ -1503,7 +1503,7 @@ extern "C" void sub_080089E0(void) {
 
 //extern "C" ASM_FUNC("asm/non_matching/rom/sub_080089F0.inc", void sub_080089F0());
 
-extern "C" void sub_08008C28(void*, u32);
+extern "C" void sub_08008C28(void*, u16);
 extern "C" void sub_08008ECC(u8* arg0, u8* arg1, s16* arg2);
 extern "C" s32 sub_08009C84(u16, u16);
 extern "C" s32 sub_08009CD8(u16, u16);
@@ -1627,10 +1627,27 @@ extern "C" void sub_080089F0(tempStruct *arg0) {
     }
 }
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008BAC.inc", void sub_08008BAC());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008C28.inc", void sub_08008C28());
+//extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008C28.inc", void sub_08008C28());
+
+extern "C" void sub_08008C70(void*);                                /* extern */
+extern "C" void sub_08008D3C(void*, u16);                           /* extern */
+
+extern "C" void sub_08008C28(void* arg0, u16 arg1){
+    switch ((&gSomeBlend)->_11C92_2) {
+    case 0:
+        if(arg1) sub_08008C70(arg0);
+        else sub_08008C70(arg0);
+    case 1:
+        break;
+    case 2:
+        sub_08008D3C(arg0, arg1);
+        break;
+    }
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008C70.inc", void sub_08008C70());
 extern "C" ASM_FUNC("asm/non_matching/rom/nullsub_63.inc", void nullsub_63());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008D3C.inc", void sub_08008D3C());
+extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008D3C.inc", void sub_08008D3C(void*, u16));
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008E08.inc", void sub_08008E08());
 //extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008ECC.inc", void sub_08008ECC());
 
