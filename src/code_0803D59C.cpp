@@ -428,7 +428,101 @@ extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08042D48.inc", void sub_
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08042F50.inc", void sub_08042F50());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_080430B4.inc", void sub_080430B4());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_080431FC.inc", void sub_080431FC());
-extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0804337C.inc", void sub_0804337C());
+//extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0804337C.inc", void sub_0804337C());
+extern "C" u16* getMenuText(u16);                               /* extern */
+extern "C" void sub_08046A28(void*, s16, s16, s32, s32);             /* extern */
+extern "C" void sub_08046BA8(u32, s16, s16, s32, s32, s32, s32, s32, s32, s32); //VERIFY THIS SIGNATURE
+extern "C" void sub_08047CDC(u16*, u16, u16, s16, u16, u16);
+extern "C" u16* sub_08054FB8(u8);                               /* extern */
+extern s32 gUnknown_080C65D0;
+extern s32 gUnknown_080C65E4;
+
+typedef struct arg0struct {
+    u8 unk0;
+    u8 pad1[0x12 - 0x1];
+    u8 unk12;
+} arg0struct;
+
+typedef struct sub_0804337C_struct {
+    u8 pad0[0x8 - 0x0];
+    s32 unk8;
+    u8 padC [0x10 - 0xc];
+    s16 unk10;
+    u8 pad12 [0x16 - 0x12];
+    s16 unk16;
+    u8 pad18 [0x1c - 0x18];
+    s16 unk1C;
+    u8 pad1E [0x22 - 0x1e];
+    s16 unk22;
+    u8 pad24 [0x28 - 0x24];
+    s16 unk28;
+} arg1struct;
+
+extern "C" void sub_0804337C(arg0struct* arg0, sub_0804337C_struct* arg1, sub_0804337C_struct* arg2, u32 arg3, s32 arg4) {
+    
+    short sparg3 = (u16)arg3;
+    short sparg4 = (u16)arg4;
+    sub_08047CDC(sub_08054FB8(arg0->unk0), ((u32)(sparg3 << 0x10) + 0x080000) >> 0x10, ((u32)(sparg4 << 0x10) + 0x200000) >> 0x10, 9, 0xF, 1);
+    sub_08046BA8(arg0->unk12, sparg3 + 0x48, (sparg4 + 0x2C), 3, 1, 0x270, 0xB, 0, 0, 2);
+    sub_08046BA8(arg1->unk8, sparg3 + 0x48, sparg4 + 0x38, 3, 1, 0x270, 0xB, 0, 0, 2);
+    if (arg1->unk8 != arg2->unk8) {
+        if (arg1->unk8 < arg2->unk8) {
+            sub_08046A28(&gUnknown_080C65D0, ((sparg3) + 0x5E), sparg4 + 0x38, 0x20, 1);
+        } else {
+            sub_08046A28(&gUnknown_080C65E4, ((sparg3) + 0x5E), sparg4 + 0x38, 0x20, 1);
+        }
+        sub_08046BA8(arg2->unk8, (((sparg3 << 0x10) + 0x660000) >> 0x10), (((sparg4 << 0x10) + 0x380000) >> 0x10), 3, 1, 0x270, 0xB, 0, 0, 2);
+    }
+    sub_08046BA8(arg1->unk10, ((((s16)sparg3 << 0x10) + 0x480000) >> 0x10), ((sparg4 << 0x10) + 0x440000) >> 0x10, 3, 1, 0x270, 0xB, 0, 0, 2);
+    if (arg1->unk10 != arg2->unk10) {
+        if (arg1->unk10 < arg2->unk10) {
+            sub_08046A28(&gUnknown_080C65D0, ((sparg3) + 0x5E), (((sparg4 << 0x10) + 0x440000) >> 0x10), 0x20, 1);
+        } else {
+            sub_08046A28(&gUnknown_080C65E4, ((sparg3) + 0x5E), (((sparg4 << 0x10) + 0x440000) >> 0x10), 0x20, 1);
+        }
+        sub_08046BA8(arg2->unk10, (((sparg3 << 0x10) + 0x660000) >> 0x10), (((sparg4 << 0x10) + 0x440000) >> 0x10), 3, 1, 0x270, 0xB, 0, 0, 2);
+    }
+    sub_08046BA8(arg1->unk16, ((((s16)sparg3 << 0x10) + 0x480000) >> 0x10), (((sparg4 << 0x10) + 0x500000) >> 0x10), 3, 1, 0x270, 0xB, 0, 0, 2);
+    if (arg1->unk16 != arg2->unk16) {
+        if (arg1->unk16 < arg2->unk16) {
+            sub_08046A28(&gUnknown_080C65D0, (sparg3 + 0x5E), (((sparg4 << 0x10) + 0x500000) >> 0x10), 0x20, 1);
+        } else {
+            sub_08046A28(&gUnknown_080C65E4, (sparg3 + 0x5E), (((sparg4 << 0x10) + 0x500000) >> 0x10), 0x20, 1);
+        }
+        sub_08046BA8(arg2->unk16, (((sparg3 << 0x10) + 0x660000) >> 0x10), (((sparg4 << 0x10) + 0x500000) >> 0x10), 2, 1, 0x270, 0xB, 0, 0, 2);
+    }
+    sub_08046BA8(arg1->unk1C, ((((s16)sparg3 << 0x10) + 0x480000) >> 0x10), (((sparg4 << 0x10) + 0x5C0000) >> 0x10), 3, 1, 0x270, 0xB, 0, 0, 2);
+    if (arg1->unk1C != arg2->unk1C) {
+        if (arg1->unk1C < arg2->unk1C) {
+            sub_08046A28(&gUnknown_080C65D0, (sparg3 + 0x5E), (((sparg4 << 0x10) + 0x5C0000) >> 0x10), 0x20, 1);
+        } else {
+            sub_08046A28(&gUnknown_080C65E4, (sparg3 + 0x5E), (((sparg4 << 0x10) + 0x5C0000) >> 0x10), 0x20, 1);
+        }
+        sub_08046BA8(arg2->unk1C, (((sparg3 << 0x10) + 0x660000) >> 0x10), (((sparg4 << 0x10) + 0x5C0000) >> 0x10), 2, 1, 0x270, 0xB, 0, 0, 2);
+    }
+    sub_08046BA8(arg1->unk22, ((((s16)sparg3 << 0x10) + 0x480000) >> 0x10), (((sparg4 << 0x10) + 0x680000) >> 0x10), 3, 1, 0x270, 0xB, 0, 0, 2);
+    if (arg1->unk22 != arg2->unk22) {
+        if (arg1->unk22 < arg2->unk22) {
+            sub_08046A28(&gUnknown_080C65D0, (sparg3 + 0x5E), (((sparg4 << 0x10) + 0x680000) >> 0x10), 0x20, 1);
+        } else {
+            sub_08046A28(&gUnknown_080C65E4, (sparg3 + 0x5E), (((sparg4 << 0x10) + 0x680000) >> 0x10), 0x20, 1);
+        }
+        sub_08046BA8(arg2->unk22, (((sparg3 << 0x10) + 0x660000) >> 0x10), (((sparg4 << 0x10) + 0x680000) >> 0x10), 2, 1, 0x270, 0xB, 0, 0, 2);
+    }
+    sub_08046BA8(arg1->unk28, ((((s16)sparg3 << 0x10) + 0x480000) >> 0x10), ((sparg4 << 0x10) + 0x740000) >> 0x10, 3, 1, 0x270, 0xB, 0, 0, 2);
+    if (arg1->unk28 != arg2->unk28) {
+        if (arg1->unk28 < arg2->unk28) {
+            sub_08046A28(&gUnknown_080C65D0, (sparg3 + 0x5E), ((sparg4 << 0x10) + 0x740000) >> 0x10, 0x20, 1);
+        } else {
+            sub_08046A28(&gUnknown_080C65E4, (sparg3 + 0x5E), ((sparg4 << 0x10) + 0x740000) >> 0x10, 0x20, 1);
+        }
+        sub_08046BA8(arg2->unk28, (((sparg3 << 0x10) + 0x660000) >> 0x10), (((sparg4 << 0x10) + 0x740000) >> 0x10), 2, 1, 0x270, 0xB, 0, 0, 2);
+    }
+    sub_08047CDC(getMenuText(0x52), 0x86U, 0x20U, -1, 1, 1);
+    sub_08047CDC(getMenuText(0x54), 0x86U, 0x38U, -1, 1, 1);
+    sub_08047CDC(getMenuText(0x53), 0x86U, 0x50U, -1, 1, 1);
+    sub_08047CDC(getMenuText(0x55), 0x86U, 0x68U, -1, 1, 1);
+}
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0804389C.inc", void sub_0804389C());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08043EB4.inc", void sub_08043EB4());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_080441BC.inc", void sub_080441BC());
@@ -483,10 +577,10 @@ extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_080465F8.inc", void sub_
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_080467C0.inc", void sub_080467C0());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08046974.inc", void sub_08046974());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_080469CC.inc", void sub_080469CC());
-extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08046A28.inc", void sub_08046A28());
+extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08046A28.inc", void sub_08046A28(void*, s16, s16, s32, s32));
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08046A64.inc", void sub_08046A64());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08046AF8.inc", void sub_08046AF8());
-extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08046BA8.inc", void sub_08046BA8());
+extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08046BA8.inc", void sub_08046BA8(u32, s16, s16, s32, s32, s32, s32, s32, s32, s32));
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08046CE8.inc", void sub_08046CE8());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08046D0C.inc", void sub_08046D0C());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08046D2C.inc", void sub_08046D2C());
@@ -2076,7 +2170,7 @@ extern "C" u16 isItemIdEquipment(u16 item) {
 }
 
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08054F5C.inc", void sub_08054F5C());
-extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08054FB8.inc", void sub_08054FB8());
+extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08054FB8.inc", u16* sub_08054FB8(u8));
 
 extern "C" CharStats* getCharStats(u16 index) {
     return &gCharStats[index];
