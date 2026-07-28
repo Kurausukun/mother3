@@ -458,71 +458,37 @@ typedef struct sub_0804337C_struct {
     s16 unk28;
 } arg1struct;
 
-extern "C" void sub_0804337C(arg0struct* arg0, sub_0804337C_struct* arg1, sub_0804337C_struct* arg2, u32 arg3, s32 arg4) {
-    
-    short sparg3 = (u16)arg3;
-    short sparg4 = (u16)arg4;
-    sub_08047CDC(sub_08054FB8(arg0->unk0), ((u32)(sparg3 << 0x10) + 0x080000) >> 0x10, ((u32)(sparg4 << 0x10) + 0x200000) >> 0x10, 9, 0xF, 1);
-    sub_08046BA8(arg0->unk12, sparg3 + 0x48, (sparg4 + 0x2C), 3, 1, 0x270, 0xB, 0, 0, 2);
-    sub_08046BA8(arg1->unk8, sparg3 + 0x48, sparg4 + 0x38, 3, 1, 0x270, 0xB, 0, 0, 2);
-    if (arg1->unk8 != arg2->unk8) {
-        if (arg1->unk8 < arg2->unk8) {
-            sub_08046A28(&gUnknown_080C65D0, ((sparg3) + 0x5E), sparg4 + 0x38, 0x20, 1);
-        } else {
-            sub_08046A28(&gUnknown_080C65E4, ((sparg3) + 0x5E), sparg4 + 0x38, 0x20, 1);
-        }
-        sub_08046BA8(arg2->unk8, (((sparg3 << 0x10) + 0x660000) >> 0x10), (((sparg4 << 0x10) + 0x380000) >> 0x10), 3, 1, 0x270, 0xB, 0, 0, 2);
+#define FIELD_BLOCK(field, yoff, flag) \
+    sub_08046BA8(arg1->field, sparg3 + 0x48, sparg4 + (yoff), 3, 1, 0x270, 0xB, 0, 0, 2); \
+    if (arg1->field != arg2->field) { \
+        if (arg1->field < arg2->field) { \
+            sub_08046A28(&gUnknown_080C65D0, sparg3 + 0x5E, sparg4 + (yoff), 0x20, 1); \
+        } else { \
+            sub_08046A28(&gUnknown_080C65E4, sparg3 + 0x5E, sparg4 + (yoff), 0x20, 1); \
+        } \
+        sub_08046BA8(arg2->field, sparg3 + 0x66, sparg4 + (yoff), flag, 1, 0x270, 0xB, 0, 0, 2); \
     }
-    sub_08046BA8(arg1->unk10, ((((s16)sparg3 << 0x10) + 0x480000) >> 0x10), ((sparg4 << 0x10) + 0x440000) >> 0x10, 3, 1, 0x270, 0xB, 0, 0, 2);
-    if (arg1->unk10 != arg2->unk10) {
-        if (arg1->unk10 < arg2->unk10) {
-            sub_08046A28(&gUnknown_080C65D0, ((sparg3) + 0x5E), (((sparg4 << 0x10) + 0x440000) >> 0x10), 0x20, 1);
-        } else {
-            sub_08046A28(&gUnknown_080C65E4, ((sparg3) + 0x5E), (((sparg4 << 0x10) + 0x440000) >> 0x10), 0x20, 1);
-        }
-        sub_08046BA8(arg2->unk10, (((sparg3 << 0x10) + 0x660000) >> 0x10), (((sparg4 << 0x10) + 0x440000) >> 0x10), 3, 1, 0x270, 0xB, 0, 0, 2);
-    }
-    sub_08046BA8(arg1->unk16, ((((s16)sparg3 << 0x10) + 0x480000) >> 0x10), (((sparg4 << 0x10) + 0x500000) >> 0x10), 3, 1, 0x270, 0xB, 0, 0, 2);
-    if (arg1->unk16 != arg2->unk16) {
-        if (arg1->unk16 < arg2->unk16) {
-            sub_08046A28(&gUnknown_080C65D0, (sparg3 + 0x5E), (((sparg4 << 0x10) + 0x500000) >> 0x10), 0x20, 1);
-        } else {
-            sub_08046A28(&gUnknown_080C65E4, (sparg3 + 0x5E), (((sparg4 << 0x10) + 0x500000) >> 0x10), 0x20, 1);
-        }
-        sub_08046BA8(arg2->unk16, (((sparg3 << 0x10) + 0x660000) >> 0x10), (((sparg4 << 0x10) + 0x500000) >> 0x10), 2, 1, 0x270, 0xB, 0, 0, 2);
-    }
-    sub_08046BA8(arg1->unk1C, ((((s16)sparg3 << 0x10) + 0x480000) >> 0x10), (((sparg4 << 0x10) + 0x5C0000) >> 0x10), 3, 1, 0x270, 0xB, 0, 0, 2);
-    if (arg1->unk1C != arg2->unk1C) {
-        if (arg1->unk1C < arg2->unk1C) {
-            sub_08046A28(&gUnknown_080C65D0, (sparg3 + 0x5E), (((sparg4 << 0x10) + 0x5C0000) >> 0x10), 0x20, 1);
-        } else {
-            sub_08046A28(&gUnknown_080C65E4, (sparg3 + 0x5E), (((sparg4 << 0x10) + 0x5C0000) >> 0x10), 0x20, 1);
-        }
-        sub_08046BA8(arg2->unk1C, (((sparg3 << 0x10) + 0x660000) >> 0x10), (((sparg4 << 0x10) + 0x5C0000) >> 0x10), 2, 1, 0x270, 0xB, 0, 0, 2);
-    }
-    sub_08046BA8(arg1->unk22, ((((s16)sparg3 << 0x10) + 0x480000) >> 0x10), (((sparg4 << 0x10) + 0x680000) >> 0x10), 3, 1, 0x270, 0xB, 0, 0, 2);
-    if (arg1->unk22 != arg2->unk22) {
-        if (arg1->unk22 < arg2->unk22) {
-            sub_08046A28(&gUnknown_080C65D0, (sparg3 + 0x5E), (((sparg4 << 0x10) + 0x680000) >> 0x10), 0x20, 1);
-        } else {
-            sub_08046A28(&gUnknown_080C65E4, (sparg3 + 0x5E), (((sparg4 << 0x10) + 0x680000) >> 0x10), 0x20, 1);
-        }
-        sub_08046BA8(arg2->unk22, (((sparg3 << 0x10) + 0x660000) >> 0x10), (((sparg4 << 0x10) + 0x680000) >> 0x10), 2, 1, 0x270, 0xB, 0, 0, 2);
-    }
-    sub_08046BA8(arg1->unk28, ((((s16)sparg3 << 0x10) + 0x480000) >> 0x10), ((sparg4 << 0x10) + 0x740000) >> 0x10, 3, 1, 0x270, 0xB, 0, 0, 2);
-    if (arg1->unk28 != arg2->unk28) {
-        if (arg1->unk28 < arg2->unk28) {
-            sub_08046A28(&gUnknown_080C65D0, (sparg3 + 0x5E), ((sparg4 << 0x10) + 0x740000) >> 0x10, 0x20, 1);
-        } else {
-            sub_08046A28(&gUnknown_080C65E4, (sparg3 + 0x5E), ((sparg4 << 0x10) + 0x740000) >> 0x10, 0x20, 1);
-        }
-        sub_08046BA8(arg2->unk28, (((sparg3 << 0x10) + 0x660000) >> 0x10), (((sparg4 << 0x10) + 0x740000) >> 0x10), 2, 1, 0x270, 0xB, 0, 0, 2);
-    }
+
+extern "C" void sub_0804337C(arg0struct* arg0, sub_0804337C_struct* arg1, sub_0804337C_struct* arg2, s16 arg3, s16 arg4) {
+
+    s16 sparg3 = arg3;
+    s16 sparg4 = arg4;
+    sub_08047CDC(sub_08054FB8(arg0->unk0), sparg3 + 0x08, sparg4 + 0x20, 9, 0xF, 1);
+    sub_08046BA8(arg0->unk12, sparg3 + 0x48, sparg4 + 0x2C, 3, 1, 0x270, 0xB, 0, 0, 2);
+
+    FIELD_BLOCK(unk8, 0x38, 3); //TODO: use breakpoints to name these
+    FIELD_BLOCK(unk10, 0x44, 3);
+    FIELD_BLOCK(unk16, 0x50, 2);
+    FIELD_BLOCK(unk1C, 0x5c, 2);
+    FIELD_BLOCK(unk22, 0x68, 2);
+    FIELD_BLOCK(unk28, 0x74, 2);
+
     sub_08047CDC(getMenuText(0x52), 0x86U, 0x20U, -1, 1, 1);
     sub_08047CDC(getMenuText(0x54), 0x86U, 0x38U, -1, 1, 1);
     sub_08047CDC(getMenuText(0x53), 0x86U, 0x50U, -1, 1, 1);
     sub_08047CDC(getMenuText(0x55), 0x86U, 0x68U, -1, 1, 1);
 }
+
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0804389C.inc", void sub_0804389C());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08043EB4.inc", void sub_08043EB4());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_080441BC.inc", void sub_080441BC());
