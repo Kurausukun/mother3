@@ -18,6 +18,48 @@
 
 extern u16 (*gScriptCmdTable[])(s32* sp);
 
+namespace ScriptCoreOperations {
+    enum CoreCommands {
+        FRAME2STACK = 0x0,
+        PUSH_IMM = 0x1,
+        FRAME_ADDR = 0x2,
+        STACK2FRAME = 0x3,
+        EXTENDED = 0x4,
+        CALLF = 0x5,
+        RETF = 0x6,
+        CALL = 0x7,
+        RET = 0x8,
+        END = 0x9,
+        FRAME_PUSH = 0xA,
+        SP_ALLOC = 0xB,
+        JUMP = 0xC,
+        JUMP_IF = 0xD,
+        MATH = 0xE
+    };
+    enum CoreMathOperations {
+        NEGATIVE = 0x0,
+        ADD = 0x1,
+        SUBTRACT = 0x2,
+        MULTIPLY = 0x3,
+        DIVIDE = 0x4,
+        MODULO = 0x5,
+        INCREMENT = 0x6,
+        DECREMENT = 0x7,
+        AND = 0x8,
+        OR = 0x9,
+        IS_EQUAL = 0xA,
+        IS_NOT_EQUAL = 0xB,
+        IS_LESS_THAN = 0xC,
+        IS_GREATER_THAN = 0xD,
+        IS_LESS_THAN_OR_EQUAL = 0xE,
+        IS_GREATER_THAN_OR_EQUAL = 0xF,
+        COPY = 0x10,
+        POP_NOOP = 0x11,
+        POP_NOOP2 = 0x12,
+        NOOP = 0x13
+    };
+}
+
 enum Mode {
     MODE_NORMAL = 0x0,
     MODE_SCRIPT = 0x1,
