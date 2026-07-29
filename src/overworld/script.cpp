@@ -54,215 +54,254 @@ extern s32 sub_0801B414(u16);                              /* extern */
 extern void sub_08027904();
 extern void sub_080334D0(u8, u16);
 
-// not functionally equivalent
-NONMATCH("asm/non_matching/script/exec_cmd.inc", void exec_cmd(void* script, u16* unk)) {
-    void* v1 = script;
-    void* v2 = script;
-    u32 argc;
-    u32 tmp;
-
-    union {
-        struct {
-            s32 val;
-        } onearg;
-        struct {
-            u8 u8val;
-            u16 u16val;
-        } twoarg;
-        s32 raw;
-    };
-
+extern "C" void exec_cmd(void* script, u16* unk, u16 arg2) {
+    
+    u32 tmp; //Unified temp for all switch cases R4
+    u16 exec_check[2];
+    exec_check[0] = arg2;
+    
     if (gGame.state_10) {
-        v1 = sub_08027E60();
-        v2 = gGame._84c0;
+        script = sub_08027E60();
+    } else {
+        gGame._84c0 = script;
     }
-    gGame._84c0 = v2;
     gGame._9470 = unk;
-
-    u16 sp = gGame.sp;
-    bool ok = false;
-    do {
-        gGame.script_pc = sub_08021878(v2, &onearg.val, unk);
+    //needs to be halfword in sp 0 and bool exec_check[1] in sp 2
+    u16 sp = gGame.sp; //r5
+    s32* stackPtr = gGame.stack; //r6
+    u16* regs = gGame.registers;
+    u16* pFlag;
+    {
+        u16* tmp_ptr = &exec_check[1];
+        *tmp_ptr = 0;
+        pFlag = tmp_ptr;
+    }
+    s32 raw;
+    while (!*pFlag) {
+        gGame.script_pc = (u8*)sub_08021878(script, &raw, unk);
         switch (*gGame.script_pc) {
-        case 0x0:
-            gGame.stack[sp] = gGame.stack[gGame.registers[twoarg.u8val] + (u16)(raw >> 8)];
+        case 0x0: {
+            stackPtr[sp] = stackPtr[regs[((u8*)&raw)[0]] + (u16)(raw >> 8)];
             sp++;
             break;
-        case 0x1:
-            gGame.stack[sp] = raw;
+        }
+        case 0x1: {
+            stackPtr[sp] = raw;
             sp++;
             break;
-        case 0x2:
-            gGame.stack[sp] = gGame.registers[twoarg.u8val] + (u16)(raw >> 8);
+        }
+        case 0x2: {
+            stackPtr[sp] = regs[((u8*)&raw)[0]] + (u16)(raw >> 8);
             sp++;
             break;
-        case 0x3:
+        }
+        case 0x3: {
             sp--;
-            gGame.stack[gGame.registers[twoarg.u8val] + (u16)(raw >> 8)] = gGame.stack[sp];
+            stackPtr[regs[((u8*)&raw)[0]] + (u16)(raw >> 8)] = stackPtr[sp];
             break;
-        case 0x4:
-            gGame.state_40 = 0;
+        }
+        case 0x4: {
             gGame.sp = sp;
-            argc = sub_08021920((u16)(raw >> 8));
-            ok = exec_extended((u16)(raw >> 8), &gGame.stack[sp - 1]);
+            gGame.state_40 = 0;
+            u32 argc = (u16)sub_08021920((u16)(raw >> 8));
+            *pFlag = exec_extended((u16)(raw >> 8), &stackPtr[sp - 1]);
             if (gGame.state_20) {
                 return;
             }
-            if (!gGame.state_40) {
-                u32 temp;
-                u32 x;
+            if (gGame.state_40 == 0) {
+                vu16 x;
+                //just regswap diffs in this if
                 if (gGame.sp != sp) {
-                    x = 1;
-                    sp = gGame.sp - 1;
-                    temp = gGame.stack[sp];
+                    sp = gGame.sp;
+                    x = true;
+                    sp--;
+                    tmp = stackPtr[sp]; 
                 } else {
-                    x = 0;
-                    temp = 0;
+                    x = false;
+                    tmp = 0;
                 }
                 sp -= argc;
                 if (x) {
-                    gGame.stack[sp] = temp;
+                    stackPtr[sp] = tmp;
                     sp++;
                 }
             }
             break;
-        case 0x5:
+        }
+        case 0x5: {
             gGame.state_10 = 1;
-            v2 = sub_08027E60();
-            goto CASE_7;
-            // gGame.stack[sp] = gGame.registers[raw - 19];
-            // gGame.stack[sp + 1] = *unk;
-            // gGame.registers[raw - 19] = sp;
-            // *unk = (u16)(raw >> 8);
+            script = sub_08027E60();
+            tmp = ((u8*)&raw)[0] + 1;
+            stackPtr[sp] = regs[tmp];
+            stackPtr[sp + 1] = *unk;
+            regs[tmp] = sp;
+            *unk = ((u32)raw) >> 8;
             break;
-        case 0x6:
+        }
+        case 0x6: {
+            
             gGame.state_10 = 0;
-            tmp = gGame.stack[(u16)(sp - 1)];
-            sp = gGame.registers[twoarg.u8val];
-            gGame.registers[twoarg.u8val] = gGame.stack[sp];
-            *unk = gGame.stack[sp];
-            sp -= (u16)((u32)raw >> 8);
-            gGame.stack[sp] = tmp;
+            tmp = stackPtr[(u16)(sp - 1)];
+            sp = regs[((u8*)&raw)[0]];
+            regs[((u8*)&raw)[0]] = stackPtr[sp];
+            *unk = stackPtr[sp + 1];
+            sp -= (u32)raw >> 8;
+            stackPtr[sp] = tmp;
             sp++;
-            v2 = gGame._84c0;
+            script = gGame._84c0;
             break;
-        case 0x7:
-        CASE_7:
-            gGame.stack[sp] = gGame.registers[raw - 19];
-            gGame.stack[sp + 1] = *unk;
-            gGame.registers[raw - 19] = sp;
-            *unk = (u16)(raw >> 8);
+        }
+        case 0x7: {
+            tmp = ((u8*)&raw)[0] + 1;
+            stackPtr[sp] = regs[tmp];
+            stackPtr[sp + 1] = *unk;
+            regs[tmp] = sp;
+            *unk = ((u32)raw) >> 8;
             break;
-        case 0x8:
-            tmp = gGame.stack[sp - 1];
-            sp = gGame.registers[twoarg.u8val];
-            gGame.registers[twoarg.u8val] = gGame.stack[sp];
-            *unk = gGame.stack[sp + 1];
-            sp -= (u16)(raw >> 8);
-            gGame.stack[sp] = tmp;
+        }
+        case 0x8: {
+            tmp = stackPtr[--sp];
+            sp = regs[((u8*)&raw)[0]];
+            regs[((u8*)&raw)[0]] = stackPtr[sp];
+            u32 SavedNextStk = stackPtr[sp + 1];
+            *unk = (u16)SavedNextStk;
+            sp -= (u32)raw >> 8;
+            stackPtr[sp] = tmp;
             sp++;
-            if (gGame.stack[sp + 1] == 0) {
-                ok = 1;
+            if ((u16)SavedNextStk == 0) {
+                *pFlag = true;
                 sub_0801BF18();
             }
             break;
-        case 0x9:
-            ok = 1;
+        }
+        case 0x9: {
+            
+            *pFlag = true;
             sub_0801BF18();
             break;
-        case 0xA:
-            *(u16*)&gGame.stack[1000] = raw;
+        }
+        case 0xA: {
+            regs[1] = raw;
             break;
-        case 0xB:
+        }
+        case 0xB: {
             sp += raw;
             break;
-        case 0xC:
-            *unk = raw >> 8;
+        }
+        case 0xC: {
+            *unk = (u32)raw >> 8;
             break;
-        case 0xD:
+        }
+        case 0xD: {
             sp--;
-            if (gGame.stack[sp] == 0) {
-                *unk = raw >> 8;
-            }
-            break;
-        case 0xE:
-            switch (raw) {
-            case 0:
-                gGame.stack[sp - 1] = -gGame.stack[sp - 1];
-                break;
-            case 1:
-                sp--;
-                gGame.stack[sp - 1] += gGame.stack[sp];
-                break;
-            case 2:
-                sp--;
-                gGame.stack[sp - 1] -= gGame.stack[sp];
-                break;
-            case 3:
-                sp--;
-                gGame.stack[sp - 1] *= gGame.stack[sp];
-                break;
-            case 4:
-                sp--;
-                gGame.stack[sp - 1] /= gGame.stack[sp];
-                break;
-            case 5:
-                sp--;
-                gGame.stack[sp - 1] %= gGame.stack[sp];
-                break;
-            case 6:
-                gGame.stack[sp - 1]++;
-                break;
-            case 7:
-                gGame.stack[sp - 1]--;
-                break;
-            case 8:
-                sp--;
-                gGame.stack[sp - 1] &= gGame.stack[sp];
-                break;
-            case 9:
-                sp--;
-                gGame.stack[sp - 1] |= gGame.stack[sp];
-                break;
-            case 0xA:
-                sp--;
-                gGame.stack[sp - 1] = gGame.stack[sp - 1] == gGame.stack[sp];
-                break;
-            case 0xB:
-                sp--;
-                gGame.stack[sp - 1] = gGame.stack[sp - 1] != gGame.stack[sp];
-                break;
-            case 0xC:
-                sp--;
-                gGame.stack[sp - 1] = gGame.stack[sp - 1] < gGame.stack[sp];
-                break;
-            case 0xD:
-                sp--;
-                gGame.stack[sp - 1] = gGame.stack[sp] > gGame.stack[sp - 1];
-                break;
-            case 0xE:
-                sp--;
-                gGame.stack[sp - 1] = gGame.stack[sp - 1] <= gGame.stack[sp];
-                break;
-            case 0xF:
-                sp--;
-                gGame.stack[sp - 1] = gGame.stack[sp] <= gGame.stack[sp - 1];
-                break;
-            case 0x10:
-                gGame.stack[sp - 1] = gGame.stack[sp];
-                sp++;
-                break;
-            case 0x11:
-            case 0x12:
-                sp--;
-                break;
+            if (stackPtr[sp] == 0) {
+                *unk = (u32)raw >> 8;
             }
             break;
         }
-    } while (!ok);
+        case 0xE: {
+            switch (raw) {
+            case 0: {
+                stackPtr[sp - 1] = -stackPtr[sp - 1];
+                break;
+            }
+            case 1: {
+                sp--;
+                stackPtr[sp - 1] += stackPtr[sp];
+                break;
+            }
+            case 2: {
+                sp--;
+                stackPtr[sp - 1] -= stackPtr[sp];
+                break;
+            }
+            case 3: {
+                sp--;
+                stackPtr[sp - 1] *= stackPtr[sp];
+                break;
+            }
+            case 4: { //0x404
+                sp--;
+                stackPtr[sp - 1] /= stackPtr[sp];
+                break;
+            }
+            case 8: {
+                sp--;
+                stackPtr[sp - 1] &= stackPtr[sp];
+                break;
+            }
+            case 9: { //0x432
+                
+                sp--;
+                stackPtr[sp - 1] |= stackPtr[sp];
+                break;
+            }
+            case 5: {
+                sp--; //0x448
+                stackPtr[sp - 1] %= stackPtr[sp];
+                break;
+            }
+            case 6: {
+                stackPtr[sp - 1]++;
+                break;
+            }
+            case 7: { //0x46e
+                stackPtr[sp - 1]--;
+                break;
+            }
+            case 0xA: {
+                sp--;
+                stackPtr[sp - 1] = stackPtr[sp - 1] == stackPtr[sp];
+                break;
+            }
+            case 0xB: {
+                sp--;
+                stackPtr[sp - 1] = stackPtr[sp - 1] != stackPtr[sp];
+                break;
+            }
+            case 0xC: {
+                sp--;
+                stackPtr[sp - 1] = stackPtr[sp - 1] < stackPtr[sp];
+                break;
+            }
+            case 0xD: {
+                sp--;
+                stackPtr[sp - 1] = stackPtr[sp - 1] > stackPtr[sp];
+                break;
+            }
+            case 0xE: {
+                sp--;
+                stackPtr[sp - 1] = stackPtr[sp - 1] <= stackPtr[sp];
+                break;
+            }
+            case 0xF: {
+                sp--;
+                stackPtr[sp - 1] = stackPtr[sp - 1] >= stackPtr[sp];
+                break;
+            }
+            case 0x10: {
+                stackPtr[sp] = stackPtr[sp - 1];
+                sp++;
+                break;
+            }
+            case 0x11: {
+                
+            }
+            case 0x12:{
+                sp--;
+                break;
+            }
+            case 0x13: {
+                
+            }
+            }
+            break;
+        }
+        }
+    }
+        //needs to be two 16 bit values in stack 0 and 2
     gGame.sp = sp;
 }
-END_NONMATCH
 
 // verify if function name is accurate
 inline void scriptstack_pop() {
@@ -5313,7 +5352,30 @@ extern "C" s32 cmd_B1() {
     return 0;
 }
 
-extern "C" ASM_FUNC("asm/non_matching/script/sub_08021878.inc", u8* sub_08021878(void* r0, s32* r1, u16* r2));
+extern "C" s32* sub_08021878(void* arg0, s32* arg1, u16* arg2) {
+    typedef struct byter4 {
+        u8 unk0;
+        u8 unk1;
+        u8 unk2;
+        u8 unk3;
+    } byter4;
+
+    byter4* arg1view = (byter4*)arg1;
+    byter4* temp_r2 = (byter4*)arg0 + *arg2;
+    
+    arg1view->unk0 = temp_r2->unk1;
+    arg1view->unk1 = temp_r2->unk2;
+    arg1view->unk2 = temp_r2->unk3;
+    
+    if (temp_r2->unk3 & 0x80) {
+        arg1view->unk3 = 0xFF;
+    } else {
+        arg1view->unk3 = 0x00;
+    }
+    
+    ++*arg2;
+    return (s32*)temp_r2;
+}
 
 extern "C" void scriptstack_push_eq(u32 r0, u32 r1) {
     if (r0 == r1) {
