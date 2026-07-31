@@ -4,7 +4,7 @@
 extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08065168.inc", void sub_08065168()); // init some factory
 extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08065194.inc", void sub_08065194()); // put some factory
 extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_080651A4__FUsP4Unit.inc", void sub_080651A4__FUsP4Unit()); // create some factory
-extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_080651C0.inc", void sub_080651C0());
+extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_080651C0.inc", void __13UnnamedSndMon());
 extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_080652A8.inc", void sub_080652A8());
 extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_080652DC.inc", void sub_080652DC());
 extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_080652E4.inc", void sub_080652E4());

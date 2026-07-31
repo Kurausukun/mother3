@@ -1,4 +1,67 @@
 #include "global.h"
+#include "battle/playerskill.h"
+#include "battle/monster.h"
+#include "battle/rhythm.h"
+#include "battle/keyFocusManager.h"
+#include "battle/keypad.h"
+#include "battle/clock.h"
+#include "battle/goodsImpl.h"
+
+extern "C" void sub_08073270();
+extern "C" void* sub_08074614();
+
+extern "C" const ClockData gUnknown_080F5FE4;
+extern "C" const ClockData gUnknown_080F5FEC;
+extern "C" const ClockData gUnknown_080F5FF4;
+extern "C" const ClockData gUnknown_080F5FFC;
+
+class UnnamedSndMon : public Base {
+public:
+    UnnamedSndMon();
+    virtual ~UnnamedSndMon();
+
+    virtual void sub_080652DC(Object38_s16r2_t*);
+    virtual void sub_080652E4(s32);
+    virtual void sub_080652E8(s16);
+    virtual void sub_080652EC();
+    virtual void sub_080652F4();
+    virtual void sub_080652F8();
+    virtual void sub_080652FC();
+    virtual void sub_08065344();
+    virtual void sub_08065348();
+
+    u8 pad[0x11c - sizeof(Base)];
+};
+
+class Bash : public PlayerSkill {
+public:
+    Bash(u16 id, Unit* user);
+    virtual ~Bash();
+
+    virtual void sub_0809ED04__4Bash();
+    virtual bool sub_0809EC44__4Bash();
+    virtual bool sub_0809EC04__4Bash();
+    virtual bool sub_0809EBBC__4Bash(Unit*);
+    virtual bool sub_0809EBA8__4Bash(Monster*);
+    virtual void sub_0809EB94__4Bash(Monster*);
+    virtual void sub_0809EAF0__4Bash();
+    virtual void sub_0809EAA4__4Bash();
+    virtual void sub_0809E954__4Bash();
+    virtual void sub_0809E910__4Bash();
+    virtual void sub_0809E8F0__4Bash();
+
+    virtual u8 calcDidHit(Unit* target);
+    virtual bool isResisted(Unit* target);
+    virtual void onAttack(Unit* target);
+    virtual s32 hitChance() const;
+
+    u32 _4C;  // unconfirmed filler
+    u32 _50;
+    u32 _54;
+    u32 _58;
+    UnnamedSndMon* _BashTargetMonster;
+};
+
 
 extern "C" ASM_FUNC("asm/non_matching/playerskillImpl/create__12SniffFactoryUsP4Unit.inc", void create__12SniffFactoryUsP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/playerskillImpl/create__18SirenBeetleFactoryUsP4Unit.inc", void create__18SirenBeetleFactoryUsP4Unit());
@@ -90,7 +153,81 @@ extern "C" ASM_FUNC("asm/non_matching/playerskillImpl/sub_0809EC04__4Bash.inc", 
 extern "C" ASM_FUNC("asm/non_matching/playerskillImpl/sub_0809EC44__4Bash.inc", void sub_0809EC44__4Bash());
 extern "C" ASM_FUNC("asm/non_matching/playerskillImpl/sub_0809ED04__4Bash.inc", void sub_0809ED04__4Bash());
 extern "C" ASM_FUNC("asm/non_matching/playerskillImpl/sub_0809EEAC.inc", void sub_0809EEAC());
-extern "C" ASM_FUNC("asm/non_matching/playerskillImpl/onAttack__4BashP4Unit.inc", void onAttack__4BashP4Unit());
+//extern "C" ASM_FUNC("asm/non_matching/playerskillImpl/onAttack__4BashP4Unit.inc", void onAttack__4BashP4Unit());
+
+extern "C" void* sub_08074614();
+extern "C" const ClockData gUnknown_080F5FE4;
+extern "C" const ClockData gUnknown_080F5FEC;
+extern "C" const ClockData gUnknown_080F5FF4;
+extern "C" const ClockData gUnknown_080F5FFC;
+
+void Bash::onAttack(Unit* TargetedUnit) {
+    
+    Monster *targetMonster = dynaCastMonster(TargetedUnit);
+    Object38_s16r2_t sp68 = TargetedUnit->object_50();
+    this->_BashTargetMonster = new(UnnamedSndMon);
+    this->_BashTargetMonster->sub_080652DC(({
+        Object38_s16r2_t sp6c = TargetedUnit->object_38();
+        Object38_s16r2_t sp70(0, sp68.val2 / 2);
+        Object38_s16r2_t sp74 ((s32)sp6c.val1, sp6c.val2 - sp70.val2);
+        &sp74;
+    }));
+    this->_BashTargetMonster->sub_080652E4(TargetedUnit->object_48());
+    this->_BashTargetMonster->sub_080652E8(sp68.val1);
+
+    if ((u8)this->userAttackSfx(TargetedUnit) == true) {
+        bool sp88 = this->sub_0809EBBC__4Bash(TargetedUnit);
+        if (sp88 == true) {
+            KeyFocuser key; //sp4
+            
+            if (this->_58 != 4) {
+                this->listen(sub_08074614(), RhythmIn(),  gUnknown_080F5FE4);
+                this->listen(sub_08074614(), RhythmOut(), gUnknown_080F5FEC);
+                this->listen((void*)&key, AKeyPress(), gUnknown_080F5FF4);
+                this->listen((void*)&key, LKeyPress(), gUnknown_080F5FF4);
+                this->listen(ClockManager::get(), AppClock(), gUnknown_080F5FFC);
+                //0x246
+            } //its not doing the while check if the first if fails
+            this->_58 = sp88;
+            do {
+                setsleep(1);
+            } while (this->_58 != 4);
+            
+            this->base_4c(sub_08074614(), RhythmIn(), gUnknown_080F5FE4);
+            this->base_4c(sub_08074614(), RhythmOut(), gUnknown_080F5FEC);
+            this->base_4c((void*)&key, AKeyPress(), gUnknown_080F5FF4);
+            this->base_4c((void*)&key, LKeyPress(), gUnknown_080F5FF4);
+            this->base_4c(ClockManager::get(), AppClock(), gUnknown_080F5FFC);
+            
+        }//37a
+    }
+    if (this->sub_0809EC44__4Bash() == true){
+        new AutoCombo(this->_50, ComboRhythm(0x78, 0x28));
+        new AutoComboResult(this->_54, ComboRhythm(0x78, 0x34));
+    }//3ca
+    if (this->sub_0809EC04__4Bash() == true){
+        playSound(0x0000064c);
+        this->_BashTargetMonster->sub_08065348();
+    }//402
+    if (this->_BashTargetMonster != 0){
+        delete this->_BashTargetMonster;
+    }//41a
+    if (this->sub_0809EBA8__4Bash(targetMonster) == true){
+        this->sub_0809EB94__4Bash(targetMonster);
+        targetMonster->setDeathAnim(0);     
+    } else if (0 < TargetedUnit->hpReal()){
+        if (TargetedUnit->hasStatus(3) == 1){
+            if (0x27 >= randS32(0x0,0x63)){
+                statusWearOff(TargetedUnit, Status::Sleep, 1);
+                
+            }
+        } //29c
+    }//4ec
+    sub_08073270();
+    this->sub_0809EAF0__4Bash();
+        
+}
+
 extern "C" ASM_FUNC("asm/non_matching/playerskillImpl/hitChance__C4BashP4Unit.inc", void hitChance__C4BashP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/playerskillImpl/calcDidHit__4BashP4Unit.inc", void calcDidHit__4BashP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/playerskillImpl/isResisted__4BashP4Unit.inc", void isResisted__4BashP4Unit());

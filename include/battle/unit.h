@@ -14,8 +14,9 @@ inline s32 clampS32(s32 value, s32 min, s32 max) {
 
 struct Object38_s16r2_t {
     Object38_s16r2_t() : val1(0), val2(0) {}
-    u16 val1;
-    u16 val2;
+    Object38_s16r2_t(s32 v1, s32 v2) : val1(v1), val2(v2) {}
+    s16 val1;
+    s16 val2;
 };
 
 struct UnitObject {
@@ -29,12 +30,11 @@ struct UnitObject {
     virtual u32 object_30() = 0;
     virtual Object38_s16r2_t object_38() = 0;
     virtual void object_40() = 0;
-    virtual void object_48() = 0;
-    virtual u32 object_50() = 0;
-    virtual void object_58() = 0;
-    virtual u32 object_60() = 0;
+    virtual u32 object_48() = 0;
+    virtual Object38_s16r2_t object_50() = 0;
+    virtual u32 object_58() = 0;
+    virtual void object_60() = 0;
     virtual void object_68() = 0;
-    virtual void object_70() = 0;
 };
 
 struct ID {
@@ -139,7 +139,7 @@ public:
     virtual s32 getStatusIdx(Status::Type type);
     virtual Status* findStatus(Status::Type type);
     virtual s32 getStatusTypeCount(Status::Type type);
-
+   
     void kill();
     void revive();
 

@@ -41,6 +41,7 @@ void Guest::setupStats() {
 
 Guest::~Guest() {}
 
+
 u8 Guest::onTurn() {
     if (Unit::onTurn() != 1) {
         return false;
@@ -51,7 +52,7 @@ u8 Guest::onTurn() {
         return false;
     }
 
-    if (guest_2c8(tmp) != 1) {
+    if (guest_2e8(tmp) != 1) {
         delete tmp;
         return false;
     }
@@ -60,6 +61,7 @@ u8 Guest::onTurn() {
     delete tmp;
     return result;
 }
+
 
 Action* Guest::guest_2c0() {
     return NULL;

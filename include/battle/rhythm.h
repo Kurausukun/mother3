@@ -32,7 +32,7 @@ private:
 
 class RhythmIn : public Event {
 public:
-    virtual void* getRTTI() asm("getRTTI__RhythmIn");
+    virtual void* getRTTI();
 };
 
 RTTI_DECL(RhythmIn);

@@ -462,8 +462,11 @@ void Base::base_44() {
     releaseOutgoing();
 }
 
-NAKED
-void Base::base_4c(u32 mask, Base& base, u32 mask2) {
+// defined as extern "C" NAKED,
+// not `void Base::base_4c(...)`, because agbcc emits a extra `str r3, [sp]` spill
+// before the body 
+extern "C" NAKED void base_4c__4BasePvRC4BaseG9ClockData(void* target, const Base& trigger,
+                                                          ClockData callback) {
     asm_unified("\n\
 	sub sp, #4\n\
 	push {r4, r5, r6, r7, lr}\n\
