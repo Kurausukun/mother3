@@ -1695,14 +1695,27 @@ extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_080519C4.inc", void sub_
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08051A08.inc", void sub_08051A08());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08051A74.inc", void sub_08051A74());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08051B48.inc", void sub_08051B48());
-extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08051BDC.inc", void sub_08051BDC());
+
+extern "C" void copy_save_from_iwram(char* src) { // src seems to always be 0x03006D68
+    CpuSmartSet(src, &gSave, sizeof (Save));
+    CpuSmartSet((void*)(src + 0x898), &gCharStats[1], sizeof (CharStats) * 13); // FAKEMATCH, fix when iwram save copy is better understood
+    memclear(&gCharStats[0], 0x6C);
+    memclear(&gCharStats[14], 0xD8);
+}
+
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08051C28.inc", void sub_08051C28());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/nullsub_24.inc", void nullsub_24());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08051C38.inc", void sub_08051C38());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08051C74.inc", void sub_08051C74());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08051CF4.inc", void sub_08051CF4());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08051F80.inc", void sub_08051F80());
-extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08052054.inc", void sub_08052054());
+
+extern "C" void copy_save_to_iwram(char* dest) { // dest seems to always be 0x03006D68
+    CpuSmartSet(&gSave, dest, sizeof (Save));
+    dest += 0x898; // FAKEMATCH, see copy_save_from_iwram
+    CpuSmartSet(&gCharStats[1], dest, sizeof (CharStats) * 13);
+}
+
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08052088.inc", void sub_08052088());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08052094.inc", void sub_08052094());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_080520A0.inc", void sub_080520A0());

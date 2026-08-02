@@ -18,7 +18,7 @@ sub_08051F80:
 	bl sub_08052128
 	add r0, sp, #8
 	mov r8, r0
-	bl sub_08052054
+	bl copy_save_to_iwram
 	mov r0, sp
 	adds r1, r5, #0
 	bl sub_08001DC8

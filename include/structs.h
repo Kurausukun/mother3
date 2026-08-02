@@ -51,7 +51,7 @@ typedef struct CharStats {
     u8 inventory[16];
     u16 item_timers[16];
 } CharStats;
-extern CharStats gCharStats[];
+extern CharStats gCharStats[16];
 static_assert(sizeof(CharStats) == 0x6c);
 
 enum ItemType {
