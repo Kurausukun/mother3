@@ -293,10 +293,31 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001AAC.inc", void sub_08001AAC()
 extern "C" ASM_FUNC("asm/non_matching/rom/memclear.inc", void memclear());
 extern "C" ASM_FUNC("asm/non_matching/rom/CpuSmartSet.inc", void CpuSmartSet());
 extern "C" ASM_FUNC("asm/non_matching/rom/memFill.inc", void memFill());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001B9C.inc", void sub_08001B9C());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001BCC.inc", void sub_08001BCC());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001BFC.inc", void sub_08001BFC());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001C2C.inc", void sub_08001C2C());
+
+extern "C" void* sub_08001B9C(u16 id) {
+    u8* data = (u8*)Blob_GetEntry(&_binary_build_mother3_assets_misctext_bin_start, 1);
+    u16* offsets = (u16*)Blob_GetEntry(&_binary_build_mother3_assets_misctext_bin_start, 0);
+    return &data[offsets[id]];
+}
+
+extern "C" void* sub_08001BCC(u16 id) {
+    u8* data = (u8*)Blob_GetEntry(&_binary_build_mother3_assets_misctext_bin_start, 4);
+    u16* offsets = (u16*)Blob_GetEntry(&_binary_build_mother3_assets_misctext_bin_start, 3);
+    return &data[offsets[id]];
+}
+
+extern "C" void* sub_08001BFC(u16 id) {
+    u8* data = (u8*)Blob_GetEntry(&_binary_build_mother3_assets_misctext_bin_start, 10);
+    u16* offsets = (u16*)Blob_GetEntry(&_binary_build_mother3_assets_misctext_bin_start, 9);
+    return &data[offsets[id]];
+}
+
+extern "C" void* sub_08001C2C(u16 id) {
+    u8* data = (u8*)Blob_GetEntry(&_binary_build_mother3_assets_misctext_bin_start, 15);
+    u16* offsets = (u16*)Blob_GetEntry(&_binary_build_mother3_assets_misctext_bin_start, 14);
+    return &data[offsets[id]];
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/get_misctext_msg.inc", void get_misctext_msg());
 
 extern "C" u16 isCharIdOverworldPlayable(u16 playerID) {
