@@ -73,6 +73,19 @@ extern "C" ASM_FUNC("asm/non_matching/psiImpl/calcDidHit__11PkThunderABP4Unit.in
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/action_a0__11PkThunderABP4Unit.inc", void action_a0__11PkThunderABP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/playAnim__11PkThunderAB.inc", void playAnim__11PkThunderAB());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/dt__11PkThunderAB.inc", void dt__11PkThunderAB());
-extern "C" ASM_FUNC("asm/non_matching/psiImpl/hitChance__C10DefaultPsi.inc", void hitChance__C10DefaultPsi());
+
+s32 DefaultPsi::hitChance() const {
+    s32 chance = Psi::hitChance();
+
+    if (chance < 100) {
+        if (getUser()->hasStatus(Status::Crying) == true) {
+            if (effect() == EffectType::Damage || effect() == EffectType::Attack) {
+                chance = sub_0807066C(chance * 60, 100);
+            }
+        }
+    }
+    return chance;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/tellResisted__10DefaultPsiP4Unit.inc", void tellResisted__10DefaultPsiP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/dt__10DefaultPsi.inc", void dt__10DefaultPsi());
