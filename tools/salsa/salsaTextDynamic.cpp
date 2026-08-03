@@ -95,7 +95,7 @@ DynamicMessageBlock::DynamicMessageBlock(SalsaStream* stream, s32 messages_top, 
 
             // im letting these break on 0xFFFF, hopefully they dont overlap the above edge
             // cases
-            if (!message_headers[i + 1].is_duplicate) {
+            if (i + 1 < message_headers.size() && !message_headers[i + 1].is_duplicate) {
                 if (i != message_headers.size() - 1) {
                     msg_size = message_headers[i + 1].offset - message_off.offset;
                 } else {
