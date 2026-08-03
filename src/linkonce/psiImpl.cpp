@@ -1,5 +1,7 @@
 #include "global.h"
 
+#include "battle/psiImpl.h"
+
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/create__16HealingGOFactoryUsP4Unit.inc", void create__16HealingGOFactoryUsP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/create__15HealingBFactoryUsP4Unit.inc", void create__15HealingBFactoryUsP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/create__15HealingAFactoryUsP4Unit.inc", void create__15HealingAFactoryUsP4Unit());
@@ -27,7 +29,7 @@ extern "C" ASM_FUNC("asm/non_matching/psiImpl/__9PsiMagnetUsP4Unit.inc", void __
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/__8PkGroundUsP4Unit.inc", void __8PkGroundUsP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/__11PkThunderGOUsP4Unit.inc", void __11PkThunderGOUsP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/__11PkThunderABUsP4Unit.inc", void __11PkThunderABUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/psiImpl/__10DefaultPsiUsP4Unit.inc", void __10DefaultPsiUsP4Unit());
+DefaultPsi::DefaultPsi(u16 id, Unit* user) : Psi(id, user) {}
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/onFail__9HealingGOP4Unit.inc", void onFail__9HealingGOP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/dt__9HealingGO.inc", void dt__9HealingGO());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/onFail__8HealingBP4Unit.inc", void onFail__8HealingBP4Unit());
