@@ -17,7 +17,7 @@ sub_0804337C:
 	lsrs r0, r0, #0x10
 	str r0, [sp, #0x24]
 	ldrb r0, [r4]
-	bl sub_08054FB8
+	bl getCharName
 	ldr r2, [sp, #0x20]
 	lsls r1, r2, #0x10
 	asrs r7, r1, #0x10

@@ -740,7 +740,9 @@ typedef struct SoundPlayerEntry {
 extern const SoundPlayerEntry gSoundPlayerTable[];
 
 typedef struct SystemEntry {
-    u16 data[0x15];
+    u16 data[0x10];
+    u8 _20;
+    u8 _21[9];
     u8 _2A[8];
     u8 _32;
     u8 padding[0x64 - 0x33];

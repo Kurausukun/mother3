@@ -15,7 +15,7 @@ sub_08043EB4:
 	lsls r5, r5, #0x10
 	lsrs r5, r5, #0x10
 	ldrb r0, [r0]
-	bl sub_08054FB8
+	bl getCharName
 	lsls r4, r4, #0x10
 	asrs r6, r4, #0x10
 	movs r1, #0x80
