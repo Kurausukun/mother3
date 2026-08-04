@@ -1,5 +1,3 @@
-#include "global.h"
-
 #include "battle/psiImpl.h"
 
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/create__16HealingGOFactoryUsP4Unit.inc", void create__16HealingGOFactoryUsP4Unit());
@@ -87,5 +85,18 @@ s32 DefaultPsi::hitChance() const {
     return chance;
 }
 
-extern "C" ASM_FUNC("asm/non_matching/psiImpl/tellResisted__10DefaultPsiP4Unit.inc", void tellResisted__10DefaultPsiP4Unit());
+void DefaultPsi::tellResisted(Unit* target) {
+    if (isMonsterVariant(target, Monster::BarrierTrio) == true &&
+        target->getElementWeakness(element()) <= 0) {
+        playSound(0x50A);
+        PlayAnimation(Animation::WhiteFlash, target, target);
+
+        // The Barrier Pose made the [10 FF] dissipate![END]
+        action_160(0x4F3, name()).print(Color(0, 0, 0), true);
+        return;
+    }
+
+    Action::tellResisted(target);
+}
+
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/dt__10DefaultPsi.inc", void dt__10DefaultPsi());
