@@ -4,7 +4,7 @@ sub_08044560:
 	sub sp, #4
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
-	bl sub_08001BFC
+	bl misctext_get_psi_description
 	movs r1, #2
 	str r1, [sp]
 	movs r1, #0

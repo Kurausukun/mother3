@@ -17,7 +17,7 @@ action_1d8__C3Psi:
 	bl _call_via_r1
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
-	bl sub_08001BFC
+	bl misctext_get_psi_description
 	adds r1, r0, #0
 	ldr r2, _08082EB4
 	add r0, sp, #4

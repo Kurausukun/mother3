@@ -294,28 +294,32 @@ extern "C" ASM_FUNC("asm/non_matching/rom/memclear.inc", void memclear());
 extern "C" ASM_FUNC("asm/non_matching/rom/CpuSmartSet.inc", void CpuSmartSet());
 extern "C" ASM_FUNC("asm/non_matching/rom/memFill.inc", void memFill());
 
-extern "C" void* sub_08001B9C(u16 id) {
+extern "C" void* misctext_get_room_description(u16 index) {
     u8* data = (u8*)Blob_GetEntry(&_binary_build_mother3_assets_misctext_bin_start, 1);
     u16* offsets = (u16*)Blob_GetEntry(&_binary_build_mother3_assets_misctext_bin_start, 0);
-    return &data[offsets[id]];
+    
+    return &data[offsets[index]];
 }
 
-extern "C" void* sub_08001BCC(u16 id) {
+extern "C" void* misctext_get_goods_description(u16 index) {
     u8* data = (u8*)Blob_GetEntry(&_binary_build_mother3_assets_misctext_bin_start, 4);
     u16* offsets = (u16*)Blob_GetEntry(&_binary_build_mother3_assets_misctext_bin_start, 3);
-    return &data[offsets[id]];
+    
+    return &data[offsets[index]];
 }
 
-extern "C" void* sub_08001BFC(u16 id) {
+extern "C" void* misctext_get_psi_description(u16 index) {
     u8* data = (u8*)Blob_GetEntry(&_binary_build_mother3_assets_misctext_bin_start, 10);
     u16* offsets = (u16*)Blob_GetEntry(&_binary_build_mother3_assets_misctext_bin_start, 9);
-    return &data[offsets[id]];
+    
+    return &data[offsets[index]];
 }
 
-extern "C" void* sub_08001C2C(u16 id) {
+extern "C" void* misctext_get_skill_description(u16 index) {
     u8* data = (u8*)Blob_GetEntry(&_binary_build_mother3_assets_misctext_bin_start, 15);
     u16* offsets = (u16*)Blob_GetEntry(&_binary_build_mother3_assets_misctext_bin_start, 14);
-    return &data[offsets[id]];
+    
+    return &data[offsets[index]];
 }
 
 extern "C" ASM_FUNC("asm/non_matching/rom/get_misctext_msg.inc", void get_misctext_msg());

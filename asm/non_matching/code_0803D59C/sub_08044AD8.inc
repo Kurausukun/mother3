@@ -37,7 +37,7 @@ _08044B0A:
 	bl sub_08047CDC
 	b _08044C68
 _08044B22:
-	bl sub_08001B9C
+	bl misctext_get_room_description
 	adds r6, r0, #0
 	bl sub_080025D8
 	subs r0, r0, r6
