@@ -13,7 +13,7 @@ cmd_80:
 	bl scriptstack_peek
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
-	bl sub_08027F38
+	bl getCommonScriptLine
 	adds r7, r0, #0
 	adds r0, r4, #0
 	movs r1, #1
