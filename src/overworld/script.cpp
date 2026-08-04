@@ -48,7 +48,7 @@ extern void sub_08003AB8(u16, u16);
 extern void sub_08003B30(u16, u16);
 extern s32 sub_080222F8(u16);
 extern void sub_080250B4(s32, u16, u16);
-extern s32 sub_08027F38(u16);
+extern s32 getCommonScriptLine(u16);
 extern void memFill(void*, s32, s32);                       /* extern */
 extern s32 sub_0801B414(u16);                              /* extern */
 extern void sub_08027904();
@@ -1898,7 +1898,7 @@ _0801D784:\n\
 	lsls r1, r1, #0x10\n\
 	lsrs r1, r1, #0x10\n\
 	adds r0, r4, #0\n\
-	bl sub_08027F70\n\
+	bl getRoomScriptLine\n\
 	adds r4, r0, #0\n\
 	cmp r4, #0\n\
 	beq _0801D858\n\
@@ -2067,7 +2067,7 @@ _0801D8EC:\n\
 	bl scriptstack_peek\n\
 	lsls r0, r0, #0x10\n\
 	lsrs r0, r0, #0x10\n\
-	bl sub_08027F38\n\
+	bl getCommonScriptLine\n\
 	adds r4, r0, #0\n\
 	cmp r4, #0\n\
 	beq _0801D9B8\n\
@@ -4811,7 +4811,7 @@ extern "C" s32 cmd_7F(s32* sp) {
     if (a == 0) {
         unk = sub_080222F8(b);
     } else {
-        unk = sub_08027F38(b);
+        unk = getCommonScriptLine(b);
     }
     sub_080250B4(unk, c, d);
     return 0;
