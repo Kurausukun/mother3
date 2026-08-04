@@ -8,5 +8,5 @@ sub_08022354:
 	adds r0, r0, r1
 	bx lr
 	.align 2, 0
-_08022364: .4byte gUnknown_02004112
+_08022364: .4byte gCharStats+0x2 @ gCharStats[0].name
 	.syntax divided

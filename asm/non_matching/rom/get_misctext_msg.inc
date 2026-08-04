@@ -12,7 +12,7 @@ get_misctext_msg:
 	ldr r0, _08001C74
 	b _08001D22
 	.align 2, 0
-_08001C74: .4byte gUnknown_02004256
+_08001C74: .4byte gCharStats+0x146 @ gCharStats[3].name
 _08001C78:
 	cmp r2, #2
 	bne _08001C88

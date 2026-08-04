@@ -46,5 +46,5 @@ _08054FAE:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08054FB4: .4byte gUnknown_02004112
+_08054FB4: .4byte gCharStats+0x2 @ gCharStats[0].name
 	.syntax divided

@@ -80,7 +80,7 @@ _0804829C:
 	adds r4, r1, r0
 	b _080482F8
 	.align 2, 0
-_080482C0: .4byte gUnknown_02004112
+_080482C0: .4byte gCharStats+0x2 @ gCharStats[0].name
 _080482C4:
 	movs r0, #5
 	adds r1, r4, #0
@@ -97,7 +97,7 @@ _080482D2:
 	movs r0, #6
 	b _080482F0
 	.align 2, 0
-_080482E0: .4byte gUnknown_02004112
+_080482E0: .4byte gCharStats+0x2 @ gCharStats[0].name
 _080482E4:
 	movs r0, #8
 	adds r1, r4, #0
