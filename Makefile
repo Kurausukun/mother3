@@ -188,7 +188,7 @@ $(RODATA_ASM_BUILDDIR)/%.o: rodata_dep = $(shell $(SCANINC) -I include -I "" $(R
 endif
 
 #### Recipes ####
-   
+
 $(OBJ_DIR)/ld_script.ld: $(LDSCRIPT)
 	cp $(LDSCRIPT) $(OBJ_DIR)
 
