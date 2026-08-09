@@ -8,6 +8,7 @@ extern ClockData callback_sub_0806D878;
 
 extern "C" void __11Unk08088018(void*);
 extern "C" void LZ77UnCompWram(void*, void*);
+extern "C" void sub_0806E418(void*, s32);
 
 CCLHandle::CCLHandle() {  // __9CCLHandle
     mType = 0;
@@ -278,10 +279,21 @@ extern "C" ASM_FUNC("asm/non_matching/fntsystem/getTextAtOffset__3Msgi.inc", voi
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E33C.inc", void sub_0806E33C());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E344.inc", void sub_0806E344());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E34C.inc", void sub_0806E34C());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/concatenate__3MsgRC3Msg.inc", Msg* concatenate__3MsgRC3Msg());
+
+Msg* Msg::concatenate(const Msg& m) {
+    // Allocate more mem
+    sub_0806E418(this, this->mLen + m.mLen);
+
+    for (s32 i = 0; i < m.mLen; i++) {
+        this->mPtr[this->mLen++] = m.mPtr[i];
+    }
+
+    return this;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E3B4.inc", void sub_0806E3B4());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/len__3Msg.inc", void len__3Msg());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E418.inc", void sub_0806E418());
+extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E418.inc", void sub_0806E418(void*, s32));
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E454.inc", void sub_0806E454());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E480.inc", void sub_0806E480());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E488.inc", void makeInstance__16FntSystemManager());
