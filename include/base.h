@@ -99,6 +99,10 @@ public:
     void replace(const Msg&);
     Msg* concatenate(const Msg&);
 
+    enum CCode {
+        Break = 0xFF01,
+    };
+
 private:
     u16* mPtr;
     u16 _4;

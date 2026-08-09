@@ -550,28 +550,30 @@ bool Action::action_1b8() {
     return _40 == 5;
 }
 
-NONMATCH("asm/non_matching/skill/action_fixme__6Actioni.inc", Msg Action::action_fixme(s32 idx)) {
-    Msg m = action_1d8();
-    s32 i, j = 0;
-    s32 count = 0;
-    while (i < m.len()) {
-        if (m.getTextAtOffset(i)[0] == 0xFF01) {
-            if (++count > idx) {
+Msg Action::action_fixme(s32 idx) {
+    Msg msg = action_1d8();
+    s32 lineStart = 0;
+    s32 i = 0;
+    s32 breakCount = 0;
+
+    for (; i < msg.len(); i++) {
+        if (msg.getTextAtOffset(i)[0] == Msg::Break) {
+            breakCount++;
+
+            if (breakCount > idx) {
                 break;
-            } else {
-                j = i + 1;
             }
+
+            lineStart = i + 1;
         }
-        i++;
     }
 
-    if (idx < count + 1) {
-        return Msg(m.getTextAtOffset(i), i - j);
-    } else {
-        return Msg();
+    if (++breakCount > idx) {
+        return Msg(msg.getTextAtOffset(lineStart), i - lineStart);
     }
+
+    return Msg();
 }
-END_NONMATCH
 
 extern "C" void unit_join_callback(Action* s1, Action* s2) {
     if (s1->action_1b8() != 1) {
