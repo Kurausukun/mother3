@@ -25,7 +25,7 @@ _080734C0:
 	bne _080734E0
 	mov r0, sp
 	mov r1, sb
-	bl sub_0806E374__3MsgRC3Msg
+	bl concatenate__3MsgRC3Msg
 	b _080735B0
 	.align 2, 0
 _080734DC: .4byte 0x0000FF10
@@ -39,7 +39,7 @@ _080734E0:
 	bne _08073500
 	mov r0, sp
 	mov r1, r8
-	bl sub_0806E374__3MsgRC3Msg
+	bl concatenate__3MsgRC3Msg
 	b _080735B0
 	.align 2, 0
 _080734FC: .4byte 0x0000FF11
@@ -53,7 +53,7 @@ _08073500:
 	bne _08073520
 	mov r0, sp
 	ldr r1, [sp, #0x38]
-	bl sub_0806E374__3MsgRC3Msg
+	bl concatenate__3MsgRC3Msg
 	b _080735B0
 	.align 2, 0
 _0807351C: .4byte 0x0000FF12
@@ -96,7 +96,7 @@ _0807356C:
 	bl createPlayerName__FUs
 	mov r0, sp
 	adds r1, r7, #0
-	bl sub_0806E374__3MsgRC3Msg
+	bl concatenate__3MsgRC3Msg
 	adds r0, r7, #0
 	movs r1, #2
 	bl _._3Msg

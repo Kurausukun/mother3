@@ -11019,11 +11019,11 @@ _._5Event:
 	.byte	0x19
 	.4byte	0x4b09
 	.byte	0x1
-	.ascii	"sub_0806E334\000"
+	.ascii	"getTextAtOffset\000"
 
 	.byte	0x3
 	.byte	0x61
-	.ascii	"sub_0806E334__3Msgi\000"
+	.ascii	"getTextAtOffset__3Msgi\000"
 
 	.4byte	0x583c
 	.byte	0x1
@@ -11052,11 +11052,11 @@ _._5Event:
 	.byte	0x1c
 	.4byte	0x4b75
 	.byte	0x1
-	.ascii	"sub_0806E374\000"
+	.ascii	"concatenate\000"
 
 	.byte	0x3
 	.byte	0x63
-	.ascii	"sub_0806E374__3MsgRC3Msg\000"
+	.ascii	"concatenate__3MsgRC3Msg\000"
 
 	.byte	0x1
 	.byte	0x8

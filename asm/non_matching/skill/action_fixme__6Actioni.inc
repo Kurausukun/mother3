@@ -36,7 +36,7 @@ _0807A22C:
 	bge _0807A24A
 	mov r0, sp
 	adds r1, r5, #0
-	bl sub_0806E334__3Msgi
+	bl getTextAtOffset__3Msgi
 	ldrh r0, [r0]
 	cmp r0, sb
 	bne _0807A22A
@@ -49,7 +49,7 @@ _0807A24A:
 	ble _0807A26C
 	mov r0, sp
 	adds r1, r7, #0
-	bl sub_0806E334__3Msgi
+	bl getTextAtOffset__3Msgi
 	adds r1, r0, #0
 	subs r2, r5, r7
 	mov r0, r8

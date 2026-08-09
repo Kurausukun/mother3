@@ -283,7 +283,7 @@ _080853C8:
 	ldr r0, [sp, #8]
 	adds r0, r0, r4
 	adds r1, r6, #0
-	bl sub_0806E334__3Msgi
+	bl getTextAtOffset__3Msgi
 	ldrh r0, [r0]
 	movs r1, #0xff
 	lsls r1, r1, #8

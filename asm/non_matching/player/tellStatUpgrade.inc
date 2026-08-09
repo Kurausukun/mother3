@@ -31,7 +31,7 @@ tellStatUpgrade:
 	bl ROMStrFmt__FiRC3MsgN21
 	mov r0, r8
 	add r1, sp, #4
-	bl sub_0806E374__3MsgRC3Msg
+	bl concatenate__3MsgRC3Msg
 	add r0, sp, #4
 	movs r1, #2
 	bl _._3Msg

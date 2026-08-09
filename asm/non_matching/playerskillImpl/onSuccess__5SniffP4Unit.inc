@@ -46,7 +46,7 @@ _0809DAF0:
 	bl _call_via_r3
 	mov r0, sp
 	adds r1, r4, #0
-	bl sub_0806E374__3MsgRC3Msg
+	bl concatenate__3MsgRC3Msg
 	adds r0, r4, #0
 	movs r1, #2
 	bl _._3Msg
@@ -120,7 +120,7 @@ _0809DB5C:
 _0809DBD2:
 	mov r0, sp
 	mov r1, r8
-	bl sub_0806E374__3MsgRC3Msg
+	bl concatenate__3MsgRC3Msg
 	mov r0, r8
 	movs r1, #2
 	bl _._3Msg

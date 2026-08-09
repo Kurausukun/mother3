@@ -84,7 +84,8 @@ struct Color {
     u8 r, g, b;
 };
 
-struct Msg {
+class Msg {
+public:
     Msg();
     Msg(const void* ptr, u32 size);
     Msg(const Msg&);
@@ -94,13 +95,14 @@ struct Msg {
 
     void print(const Color&, bool);
     s32 len();
-    u16* sub_0806E334(s32 idx);
+    u16* getTextAtOffset(s32 idx);
     void replace(const Msg&);
-    void sub_0806E374(const Msg&);
+    Msg* concatenate(const Msg&);
 
-    u16* ptr;
+private:
+    u16* mPtr;
     u16 _4;
-    u16 _6;
+    u16 mLen;
 };
 
 Msg ROMStrFmt(s32, const Msg&, const Msg&, const Msg&);

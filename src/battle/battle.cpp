@@ -45,8 +45,8 @@ extern "C" ASM_FUNC("asm/non_matching/battle_misc/get__13BattleManager.inc", voi
 extern "C" ASM_FUNC("asm/non_matching/battle_misc/sub_0805D880.inc", void destroy__13BattleManager());
 extern "C" ASM_FUNC("asm/non_matching/battle_misc/sub_0805D8BC.inc", void getRTTI__6Battle());
 extern "C" ASM_FUNC("asm/non_matching/battle_misc/sub_0805D8C8.inc", void sub_0805D8C8());
-extern "C" ASM_FUNC("asm/non_matching/battle_misc/sub_0805D8FC.inc", void __6BattleUs()); // __6BattleUs
-extern "C" ASM_FUNC("asm/non_matching/battle_misc/sub_0805DB84.inc", void dt__6Battle()); // _._6Battle
+extern "C" ASM_FUNC("asm/non_matching/battle_misc/sub_0805D8FC.inc", void __6BattleUs());  // __6BattleUs
+extern "C" ASM_FUNC("asm/non_matching/battle_misc/sub_0805DB84.inc", void dt__6Battle());  // _._6Battle
 
 void Battle::sub_0805DC1C() {
     switch (mBattleResult) {
@@ -109,13 +109,13 @@ void Battle::battle_90() {
 
     switch (_38) {
     case 0:
-        m.sub_0806E374(sub_08072E18(0)->player_330());
+        m.concatenate(sub_08072E18(0)->player_330());
         break;
     case 1:
-        m.sub_0806E374(ROMStrFmt(0xb4, Msg(), Msg(), Msg()));
+        m.concatenate(ROMStrFmt(0xb4, Msg(), Msg(), Msg()));
         break;
     case 2:
-        m.sub_0806E374(ROMStrFmt(0xb5, Msg(), Msg(), Msg()));
+        m.concatenate(ROMStrFmt(0xb5, Msg(), Msg(), Msg()));
         break;
     }
 
@@ -479,18 +479,18 @@ Sequencer* Battle::battle_238() {
 
 extern "C" void nullsub_95() {}
 
-extern "C" ASM_FUNC("asm/non_matching/battle/sub_0805EDD8.inc", void _GLOBAL_I_BattleManager()); // BattleManager_global_init
-extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EE80.inc", void __6Battle()); // __6Battle
+extern "C" ASM_FUNC("asm/non_matching/battle/sub_0805EDD8.inc", void _GLOBAL_I_BattleManager());  // BattleManager_global_init
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EE80.inc", void __6Battle());  // __6Battle
 
-extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EEA0.inc", void u__11UnitTurnEnd()); // UnitTurnEnd::u() { return u; }
-extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EEA4.inc", void __11UnitTurnEndP4Unit()); // UnitTurnEnd::UnitTurnEnd(Unit* u) : u(u) {}
-extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EEC0.inc", void __11UnitTurnEnd()); // UnitTurnEnd::UnitTurnEnd() : u(0) {}
-extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EED8.inc", void u__13UnitTurnBegin()); // UnitTurnBegin::u() { return u; }
-extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EEDC.inc", void __13UnitTurnBeginP4Unit()); // UnitTurnBegin::UnitTurnBegin(Unit* u) : u(u) {}
-extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EEF8.inc", void __13UnitTurnBegin()); // UnitTurnBegin::UnitTurnBegin() : u(0) {}
-extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EF10.inc", void t___8RoundEnd()); // RoundEnd::t() { return t; }
-extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EF14.inc", void __8RoundEndUs()); // RoundEnd::RoundEnd(u16) : t(t) {}
-extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EF34.inc", void __8RoundEnd()); // RoundEnd::RoundEnd() : t(0) {}
-extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EF50.inc", void t__10RoundBegin()); // RoundBegin::t() { return t; }
-extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EF54.inc", void __10RoundBeginUs()); // RoundBegin::RoundBegin(u16) : t(t) {}
-extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EF74.inc", void __10RoundBegin()); // RoundBegin::RoundBegin() : t(0) {}
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EEA0.inc", void u__11UnitTurnEnd());       // UnitTurnEnd::u() { return u; }
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EEA4.inc", void __11UnitTurnEndP4Unit());  // UnitTurnEnd::UnitTurnEnd(Unit* u) : u(u) {}
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EEC0.inc", void __11UnitTurnEnd());        // UnitTurnEnd::UnitTurnEnd() : u(0) {}
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EED8.inc", void u__13UnitTurnBegin());     // UnitTurnBegin::u() { return u; }
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EEDC.inc", void __13UnitTurnBeginP4Unit());            // UnitTurnBegin::UnitTurnBegin(Unit* u) : u(u) {}
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EEF8.inc", void __13UnitTurnBegin());  // UnitTurnBegin::UnitTurnBegin() : u(0) {}
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EF10.inc", void t___8RoundEnd());      // RoundEnd::t() { return t; }
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EF14.inc", void __8RoundEndUs());      // RoundEnd::RoundEnd(u16) : t(t) {}
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EF34.inc", void __8RoundEnd());        // RoundEnd::RoundEnd() : t(0) {}
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EF50.inc", void t__10RoundBegin());    // RoundBegin::t() { return t; }
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EF54.inc", void __10RoundBeginUs());   // RoundBegin::RoundBegin(u16) : t(t) {}
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_0805EF74.inc", void __10RoundBegin());     // RoundBegin::RoundBegin() : t(0) {}

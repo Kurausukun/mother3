@@ -391,7 +391,7 @@ _0807B8DE:
 	adds r1, r0, #0
 	subs r1, #1
 	add r0, sp, #4
-	bl sub_0806E334__3Msgi
+	bl getTextAtOffset__3Msgi
 	ldrh r1, [r0]
 	ldr r0, _0807BA34
 	cmp r1, r0
@@ -401,7 +401,7 @@ _0807B8DE:
 	adds r1, r0, #0
 	subs r1, #1
 	add r0, sp, #4
-	bl sub_0806E334__3Msgi
+	bl getTextAtOffset__3Msgi
 	ldr r2, _0807BA38
 	adds r1, r2, #0
 	strh r1, [r0]

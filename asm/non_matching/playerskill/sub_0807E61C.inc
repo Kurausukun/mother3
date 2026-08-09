@@ -96,7 +96,7 @@ _0807E694:
 	bl name__C5Goods
 	mov r0, r8
 	adds r1, r7, #0
-	bl sub_0806E374__3MsgRC3Msg
+	bl concatenate__3MsgRC3Msg
 	adds r0, r7, #0
 	movs r1, #2
 	bl _._3Msg
@@ -112,7 +112,7 @@ _0807E6F4:
 	bl name__C5Goods
 	mov r0, r8
 	adds r1, r7, #0
-	bl sub_0806E374__3MsgRC3Msg
+	bl concatenate__3MsgRC3Msg
 	adds r0, r7, #0
 	movs r1, #2
 	bl _._3Msg

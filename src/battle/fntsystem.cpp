@@ -1,7 +1,7 @@
 // Auto-generated source file#include "battle/keypad.h"
 #include "base.h"
-#include "battle/clock.h"
 #include "battle/archive.h"
+#include "battle/clock.h"
 #include "global.h"
 
 extern ClockData callback_sub_0806D878;
@@ -274,11 +274,11 @@ extern "C" ASM_FUNC("asm/non_matching/fntsystem/genMisctextMsg__3MsgPvUi.inc", v
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/__3Msg.inc", void __3Msg());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/replace__3MsgRC3Msg.inc", void replace__3MsgRC3Msg());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E308.inc", void sub_0806E308());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E334__3Msgi.inc", void sub_0806E334__3Msgi());
+extern "C" ASM_FUNC("asm/non_matching/fntsystem/getTextAtOffset__3Msgi.inc", void getTextAtOffset__3Msgi());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E33C.inc", void sub_0806E33C());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E344.inc", void sub_0806E344());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E34C.inc", void sub_0806E34C());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E374__3MsgRC3Msg.inc", void sub_0806E374__3MsgRC3Msg());
+extern "C" ASM_FUNC("asm/non_matching/fntsystem/concatenate__3MsgRC3Msg.inc", Msg* concatenate__3MsgRC3Msg());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E3B4.inc", void sub_0806E3B4());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/len__3Msg.inc", void len__3Msg());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E418.inc", void sub_0806E418());

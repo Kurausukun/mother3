@@ -555,7 +555,7 @@ NONMATCH("asm/non_matching/skill/action_fixme__6Actioni.inc", Msg Action::action
     s32 i, j = 0;
     s32 count = 0;
     while (i < m.len()) {
-        if (*m.sub_0806E334(i) == 0xFF01) {
+        if (m.getTextAtOffset(i)[0] == 0xFF01) {
             if (++count > idx) {
                 break;
             } else {
@@ -566,7 +566,7 @@ NONMATCH("asm/non_matching/skill/action_fixme__6Actioni.inc", Msg Action::action
     }
 
     if (idx < count + 1) {
-        return Msg(m.sub_0806E334(i), i - j);
+        return Msg(m.getTextAtOffset(i), i - j);
     } else {
         return Msg();
     }
