@@ -275,7 +275,11 @@ extern "C" ASM_FUNC("asm/non_matching/fntsystem/genMisctextMsg__3MsgPvUi.inc", v
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/__3Msg.inc", void __3Msg());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/replace__3MsgRC3Msg.inc", void replace__3MsgRC3Msg());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E308.inc", void sub_0806E308());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/getTextAtOffset__3Msgi.inc", void getTextAtOffset__3Msgi());
+
+u16* Msg::getTextAtOffset(s32 idx) {
+    return &mPtr[idx];
+}
+
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E33C.inc", void sub_0806E33C());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E344.inc", void sub_0806E344());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E34C.inc", void sub_0806E34C());
