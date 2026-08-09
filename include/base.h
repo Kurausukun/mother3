@@ -96,7 +96,7 @@ public:
     void print(const Color&, bool);
     s32 len();
     u16* getTextAtOffset(s32 idx);
-    void replace(const Msg&);
+    Msg* replace(const Msg&);
     Msg* concatenate(const Msg&);
 
     enum CCode {

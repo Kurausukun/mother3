@@ -8,7 +8,8 @@ extern ClockData callback_sub_0806D878;
 
 extern "C" void __11Unk08088018(void*);
 extern "C" void LZ77UnCompWram(void*, void*);
-extern "C" void sub_0806E418(void*, s32);
+extern "C" void sub_0806E418(Msg*, s32);        // TODO: make Msg class method
+extern "C" void sub_0806E454(Msg*, u16*, u16);  // TODO: make Msg class method
 
 CCLHandle::CCLHandle() {  // __9CCLHandle
     mType = 0;
@@ -273,7 +274,13 @@ extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E150.inc", void sub_0806
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E1C8.inc", void sub_0806E1C8());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/genMisctextMsg__3MsgPvUi.inc", void genMisctextMsg__3MsgPvUi());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/__3Msg.inc", void __3Msg());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/replace__3MsgRC3Msg.inc", void replace__3MsgRC3Msg());
+
+Msg* Msg::replace(const Msg& m) {
+    sub_0806E418(this, m.mLen);
+    sub_0806E454(this, m.mPtr, m.mLen);
+    return this;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E308.inc", void sub_0806E308());
 
 u16* Msg::getTextAtOffset(s32 idx) {
@@ -285,7 +292,6 @@ extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E344.inc", void sub_0806
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E34C.inc", void sub_0806E34C());
 
 Msg* Msg::concatenate(const Msg& m) {
-    // Allocate more mem
     sub_0806E418(this, this->mLen + m.mLen);
 
     for (s32 i = 0; i < m.mLen; i++) {
@@ -301,8 +307,8 @@ s32 Msg::len() {
     return mLen;
 }
 
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E418.inc", void sub_0806E418(void*, s32));
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E454.inc", void sub_0806E454());
+extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E418.inc", void sub_0806E418(Msg*, s32));
+extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E454.inc", void sub_0806E454(Msg *, u16*, u16));
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E480.inc", void sub_0806E480());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E488.inc", void makeInstance__16FntSystemManager());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E4B8.inc", void sub_0806E4B8());
