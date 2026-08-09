@@ -1,6 +1,6 @@
 // Auto-generated source file
-#include "global.h"
 #include "battle/archive.h"
+#include "global.h"
 
 extern "C" void LZ77UnCompWram(void*, void*);
 

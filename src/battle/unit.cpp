@@ -299,12 +299,12 @@ UnitCmd* Unit::addCmd(u32 a1) {
     return u;
 }
 
-bool Unit::removeOneCmd(u16 type){
+bool Unit::removeOneCmd(u16 type) {
     s32 i = getCmdIdx(type);
-    
-    if (i < mCmds.size()){
+
+    if (i < mCmds.size()) {
         mCmds[i]->x_70();
-        
+
         delete mCmds[i];
 
         return mCmds.removeIdx(i);
@@ -363,12 +363,12 @@ bool Unit::flagStuff(u16 idx) {
     return false;
 }
 
-bool Unit::removeOneStatus(Status::Type type){
+bool Unit::removeOneStatus(Status::Type type) {
     s32 i = getStatusIdx(type);
-    
-    if (i < mStatuses.size()){
+
+    if (i < mStatuses.size()) {
         mStatuses[i]->cleanup();
-        
+
         delete mStatuses[i];
 
         return mStatuses.removeIdx(i);
@@ -414,7 +414,7 @@ s32 Unit::getStatusIdx(Status::Type type) {
 }
 
 Status* Unit::findStatus(Status::Type type) {
-    for (s32 i = 0; i < statusCount(); i++){
+    for (s32 i = 0; i < statusCount(); i++) {
         if (getStatusType(i) == type) {
             return mStatuses[i];
         }
