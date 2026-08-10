@@ -19,6 +19,7 @@ extern const DebugModeFunc gDebugFuncTable[6];
 extern u8 gUnknown_080C1FF8[];
 extern u8 gUnknown_080C1FE8[];
 extern DebugInitFunc gDebugMenuInitTable[];
+extern u16 gScriptLogic[];
 extern char _binary_build_mother3_assets_mainscript_bin_start;
 
 extern "C" void sub_080012BC(void*, s32, s32, s32);
@@ -419,7 +420,17 @@ extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08027DF4.inc", void sub_
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08027E0C.inc", void sub_08027E0C());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08027E60.inc", void* sub_08027E60());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08027E74.inc", void sub_08027E74());
-extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08027EF8.inc", void sub_08027EF8());
+//extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08027EF8.inc", void sub_08027EF8());
+extern "C" s32 sub_08027EF8(s32 arg0, u16 index, u16 arg2) {
+
+    u16* logic = (u16*)Blob_GetEntry(gScriptLogic, (u32) ((arg0 << 0x11) + 0x20000) >> 0x10);
+    
+    if (logic != gScriptLogic) {
+        return logic[index + 1] & arg2;
+    }
+
+    return 0;
+}
 
 extern "C" u16* getCommonScriptLine(u16 index) {
     u16* offsets = (u16*)Blob_GetEntry(&_binary_build_mother3_assets_mainscript_bin_start, 0);
