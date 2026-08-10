@@ -6,7 +6,7 @@ sub_0806E34C:
 	lsrs r5, r5, #0x10
 	ldrh r1, [r4, #6]
 	adds r1, #1
-	bl sub_0806E418
+	bl resize__3Msgi
 	ldrh r0, [r4, #6]
 	adds r1, r0, #1
 	strh r1, [r4, #6]

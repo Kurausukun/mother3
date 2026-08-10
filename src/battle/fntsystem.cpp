@@ -8,7 +8,6 @@ extern ClockData callback_sub_0806D878;
 
 extern "C" void __11Unk08088018(void*);
 extern "C" void LZ77UnCompWram(void*, void*);
-extern "C" void sub_0806E418(Msg*, s32);  // TODO: make Msg class method
 
 CCLHandle::CCLHandle() {  // __9CCLHandle
     mType = 0;
@@ -275,7 +274,7 @@ extern "C" ASM_FUNC("asm/non_matching/fntsystem/genMisctextMsg__3MsgPvUi.inc", v
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/__3Msg.inc", void __3Msg());
 
 Msg* Msg::replace(const Msg& m) {
-    sub_0806E418(this, m.mLen);
+    resize(m.mLen);
     setText(m.mText, m.mLen);
     return this;
 }
@@ -291,10 +290,10 @@ extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E344.inc", void sub_0806
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E34C.inc", void sub_0806E34C());
 
 Msg* Msg::concatenate(const Msg& m) {
-    sub_0806E418(this, this->mLen + m.mLen);
+    resize(mLen + m.mLen);
 
     for (s32 i = 0; i < m.mLen; i++) {
-        this->mText[this->mLen++] = m.mText[i];
+        mText[mLen++] = m.mText[i];
     }
 
     return this;
@@ -306,7 +305,22 @@ s32 Msg::len() {
     return mLen;
 }
 
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E418.inc", void sub_0806E418(Msg*, s32));
+void Msg::resize(s32 size) {
+    u16* oldText;
+
+    if (mCapacity < size) {
+        size = max(mCapacity * 2, size);
+        oldText = mText;
+        mText = new u16[size];
+        mCapacity = size;
+
+        setText(oldText, mLen);
+
+        if (oldText) {
+            delete[] oldText;
+        }
+    }
+}
 
 void Msg::setText(u16* textPtr, s32 len) {
     mLen = 0;

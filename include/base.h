@@ -105,6 +105,7 @@ public:
 
 private:
     void setText(u16* text, s32 len);
+    void resize(s32 size);
 
     u16* mText;
     u16 mCapacity;

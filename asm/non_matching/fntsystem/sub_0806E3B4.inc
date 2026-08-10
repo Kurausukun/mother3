@@ -8,7 +8,7 @@ sub_0806E3B4:
 	ldrh r0, [r4, #6]
 	adds r1, r1, r0
 	adds r0, r7, #0
-	bl sub_0806E418
+	bl resize__3Msgi
 	ldrh r0, [r7, #6]
 	subs r2, r0, #1
 	cmp r2, r6
