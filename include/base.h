@@ -94,9 +94,9 @@ public:
     static Msg genMisctextMsg(void*, u32 idx);
 
     void print(const Color&, bool);
-    s32 len();
+    s32 len() const;
     u16* getTextAtOffset(s32 idx);
-    u16* getTextAtOffset2(s32 idx);
+    u16* getTextAtOffset(s32 idx) const;
     Msg* replace(const Msg&);
     Msg* appendCharacter(u16);
     Msg* concatenate(const Msg&);

@@ -104,7 +104,7 @@ _0809DB5C:
 	adds r1, r5, #0
 	bl _call_via_r3
 	mov r0, sp
-	bl len__3Msg
+	bl len__C3Msg
 	cmp r0, #0
 	ble _0809DBD2
 	movs r0, #1

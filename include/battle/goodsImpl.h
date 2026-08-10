@@ -13,7 +13,7 @@ extern "C" bool typeIsMonster(Unit*);
 extern "C" Monster* dynaCastMonster(Unit*);
 extern "C" void setsleep(u32);
 extern "C" void PlaySoundBlocking(u32);
-extern "C" Unit* sub_08072EE4(u32);
+extern "C" Monster* sub_08072EE4(u16);
 extern "C" void playSound(u16);
 extern "C" s32 sub_0807066C(s32, s32);
 extern "C" void sub_08073E3C(Unit*, u32, u32);
@@ -21,14 +21,14 @@ extern "C" s32 randS32(s32, s32);
 extern "C" bool IsBossBattle();
 extern "C" void InitHeal(Unit*, u32, u32);
 extern "C" void sub_08073D98(Unit*, u32, u32);
-extern "C" u8 IsPlayerAndType(Unit*, u32);
+extern "C" bool IsPlayerAndType(Unit*, u16);
 extern "C" void hitPlayer(Unit*, u32, u32);
-extern "C" bool isMonsterVariant(Unit*, u32);
+extern "C" bool isMonsterVariant(Unit*, u16);
 extern "C" void sub_0807392C(Unit*, u32, u32);
-extern "C" void sub_08073198(u32, Unit*, Unit*);
+extern "C" bool sub_08073198(u16, Unit*, Unit*);
 extern "C" void sub_08073270();
 Msg createPlayerName(u16);
-extern "C" u8 sub_08072648(u32);
+extern "C" bool sub_08072648(u16);
 
 extern Status::Type gUnknown_080FB078[];
 bool statusWearOff(Unit*, Status::Type, bool);
@@ -258,7 +258,6 @@ public:
     s32 healLo() const { return Goods::healLo() * _50 >> 8; }
     s32 healHi() const { return Goods::healHi() * _50 >> 8; }
 
-
     u16 _50;
 };
 
@@ -307,7 +306,6 @@ public:
         // [04 EF][12 FF] slipped violently!
         ROMStr(0x190).print(Color(0, 0, 0), true);
     }
-
 };
 
 class BugSpray : public DefaultGoods {
@@ -356,7 +354,6 @@ public:
         ROMStr(hp >= 60 ? 0x186 : 0x187).print(Color(0, 0, 0), true);
         InitHeal(target, hp, 1);
     }
-
 };
 
 class DoggyFood : public DefaultGoods {
@@ -371,7 +368,6 @@ public:
             InitHeal(target, 6, 1);
         }
     }
-
 };
 
 class LottoMeal : public DefaultGoods {
@@ -433,7 +429,6 @@ public:
             break;
         }
     }
-
 };
 
 class EnemyBufferizer : public DefaultGoods {
@@ -447,7 +442,6 @@ public:
         }
         return IsBossBattle();
     }
-
 };
 
 class EnemyWimperizer : public DefaultGoods {
@@ -461,7 +455,6 @@ public:
         }
         return IsBossBattle();
     }
-
 };
 
 class AttackAttractor : public DefaultGoods {
@@ -493,7 +486,6 @@ public:
         // But it didn't work.
         ROMStr(0x159).print(Color(0, 0, 0), true);
     }
-
 };
 
 class MadeYouLook : public DefaultGoods {
@@ -543,7 +535,6 @@ public:
         // [04 EF][12 FF] was tricked into turning around!
         ROMStr(0x176).print(Color(0, 0, 0), true);
     }
-
 };
 
 class PaperFan : public DefaultGoods {
@@ -562,7 +553,6 @@ public:
             ROMStr(0x154).print(Color(0, 0, 0), true);
         }
     }
-
 };
 
 class SecretHerb : public DefaultGoods {
@@ -587,7 +577,6 @@ public:
         ROMStr(num > 0 ? 0x156 : 0x154).print(Color(0, 0, 0), 1);
     }
     END_NONMATCH
-
 };
 
 class CupOfLifenoodles : public DefaultGoods {
@@ -613,7 +602,6 @@ public:
         ROMStr(num > 0 ? 0x156 : 0x154).print(Color(0, 0, 0), true);
     }
     END_NONMATCH
-
 };
 
 class ShieldSnatcher : public DefaultGoods {
@@ -640,7 +628,6 @@ public:
             ROMStr(0x154).print(Color(0, 0, 0), true);
         }
     }
-
 };
 
 class DragoFang : public DefaultGoods {
@@ -675,7 +662,6 @@ public:
     }
 
     void tellMissed(Unit* target) { ROMStr(0x18a).print(Color(0, 0, 0), true); }
-
 };
 
 class TriviaCard1 : public DefaultGoods {
@@ -746,7 +732,6 @@ public:
             break;
         }
     }
-
 };
 
 class TriviaCard2 : public DefaultGoods {
@@ -810,7 +795,6 @@ public:
             break;
         }
     }
-
 };
 
 class TriviaCard3 : public DefaultGoods {
@@ -874,7 +858,6 @@ public:
             break;
         }
     }
-
 };
 
 class TriviaCard4 : public DefaultGoods {
@@ -950,7 +933,6 @@ public:
             break;
         }
     }
-
 };
 
 class GoodsFactory {

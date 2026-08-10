@@ -387,7 +387,7 @@ _0807B8DE:
 	add r1, sp, #4
 	bl tellStatUpgrade
 	add r0, sp, #4
-	bl len__3Msg
+	bl len__C3Msg
 	adds r1, r0, #0
 	subs r1, #1
 	add r0, sp, #4
@@ -397,7 +397,7 @@ _0807B8DE:
 	cmp r1, r0
 	bne _0807BA06
 	add r0, sp, #4
-	bl len__3Msg
+	bl len__C3Msg
 	adds r1, r0, #0
 	subs r1, #1
 	add r0, sp, #4

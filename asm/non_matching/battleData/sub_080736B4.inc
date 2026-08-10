@@ -5,7 +5,7 @@ sub_080736B4:
 	add sp, r4
 	adds r4, r0, #0
 	adds r5, r1, #0
-	bl len__3Msg
+	bl len__C3Msg
 	cmp r0, #0
 	ble _080736E4
 	mov r0, sp

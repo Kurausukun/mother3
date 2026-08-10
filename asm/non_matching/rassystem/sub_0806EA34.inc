@@ -10,7 +10,7 @@ sub_0806EA34:
 	bl __7SettingRC7Setting
 	adds r0, r6, #0
 	adds r0, #0x2c
-	bl len__3Msg
+	bl len__C3Msg
 	mov r1, sp
 	movs r2, #0
 	ldrsh r1, [r1, r2]

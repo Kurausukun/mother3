@@ -285,7 +285,7 @@ u16* Msg::getTextAtOffset(s32 idx) {
     return &mText[idx];
 }
 
-u16* Msg::getTextAtOffset2(s32 idx) {
+u16* Msg::getTextAtOffset(s32 idx) const {
     return &mText[idx];
 }
 
@@ -309,7 +309,7 @@ Msg* Msg::concatenate(const Msg& m) {
 
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E3B4.inc", void sub_0806E3B4());
 
-s32 Msg::len() {
+s32 Msg::len() const {
     return mLen;
 }
 

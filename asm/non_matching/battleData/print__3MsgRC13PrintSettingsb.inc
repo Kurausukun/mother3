@@ -7,7 +7,7 @@ print__3MsgRC13PrintSettingsb:
 	adds r4, r1, #0
 	lsls r2, r2, #0x18
 	lsrs r5, r2, #0x18
-	bl len__3Msg
+	bl len__C3Msg
 	cmp r0, #0
 	ble _0807361C
 	mov r0, sp
