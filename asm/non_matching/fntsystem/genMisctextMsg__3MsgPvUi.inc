@@ -24,7 +24,7 @@ _0806E252:
 _0806E260:
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl __3MsgPCvUi
+	bl __3MsgPCUsUi
 	adds r0, r6, #0
 	pop {r4, r5, r6}
 	pop {r1}

@@ -87,11 +87,11 @@ struct Color {
 class Msg {
 public:
     Msg();
-    Msg(const void* ptr, u32 size);
+    Msg(const u16*, u32);
     Msg(const Msg&);
     virtual ~Msg();
 
-    static Msg genMisctextMsg(void*, u32 idx);
+    static Msg genMisctextMsg(void*, u32);
 
     void print(const Color&, bool);
     s32 len() const;
@@ -107,7 +107,7 @@ public:
     };
 
 private:
-    void setText(u16* text, s32 len);
+    void setText(const u16* text, s32 len);
     void resize(s32 size);
 
     u16* mText;

@@ -271,7 +271,25 @@ extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E0FC.inc", void sub_0806
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E150.inc", void sub_0806E150());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E1C8.inc", void sub_0806E1C8());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/genMisctextMsg__3MsgPvUi.inc", void genMisctextMsg__3MsgPvUi());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/__3Msg.inc", void __3Msg());
+
+Msg::Msg() {
+    mText = 0;
+    mCapacity = 0;
+    mLen = 0;
+}
+
+Msg::Msg(const u16* textPtr, u32 len) {
+    mText = new u16[len];
+    mCapacity = len;
+    mLen = len;
+    setText(textPtr, len);
+}
+
+Msg::Msg(const Msg& m) {
+    mText = new u16[m.mLen];
+    mCapacity = m.mLen;
+    setText(m.mText, m.mLen);
+}
 
 Msg* Msg::replace(const Msg& m) {
     resize(m.mLen);
@@ -342,7 +360,7 @@ void Msg::resize(s32 size) {
     }
 }
 
-void Msg::setText(u16* textPtr, s32 len) {
+void Msg::setText(const u16* textPtr, s32 len) {
     mLen = 0;
 
     for (u16 i = 0; i < len; mLen++, i = mLen) {
