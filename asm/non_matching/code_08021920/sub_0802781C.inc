@@ -87,7 +87,7 @@ _08027876:
 _080278D0: .4byte gGame
 _080278D4: .4byte 0x00008376
 _080278D8: .4byte 0x0000835C
-_080278DC: .4byte gUnknown_09AF3790
+_080278DC: .4byte gMiscGfx
 _080278E0: .4byte gSave
 _080278E4: .4byte 0x0000081E
 _080278E8: .4byte gUnknown_03005494

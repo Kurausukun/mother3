@@ -48,6 +48,6 @@ _08032F44: .4byte 0x000121B6
 _08032F48: .4byte 0x000121A0
 _08032F4C: .4byte 0x000121A8
 _08032F50: .4byte 0x000121AC
-_08032F54: .4byte gUnknown_09AF3790
+_08032F54: .4byte gMiscGfx
 _08032F58: .4byte 0x000121A4
 	.syntax divided

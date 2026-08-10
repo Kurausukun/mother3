@@ -48,6 +48,6 @@ _08037BEC: .4byte 0x00003530
 _08037BF0: .4byte gGame
 _08037BF4: .4byte 0x000082B8
 _08037BF8: .4byte 0x0000351A
-_08037BFC: .4byte gUnknown_09AF3790
+_08037BFC: .4byte gMiscGfx
 _08037C00: .4byte 0x00003510
 	.syntax divided

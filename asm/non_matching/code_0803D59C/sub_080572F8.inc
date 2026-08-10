@@ -33,7 +33,7 @@ sub_080572F8:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08057340: .4byte gUnknown_09BCDD8C
+_08057340: .4byte gTitleScreenGfx
 _08057344: .4byte gSomeBlend
 _08057348: .4byte 0x00002CE4
 	.syntax divided

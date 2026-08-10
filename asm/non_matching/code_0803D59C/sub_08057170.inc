@@ -42,7 +42,7 @@ sub_08057170:
 	beq _080571F6
 	b _080571FE
 	.align 2, 0
-_080571D0: .4byte gUnknown_09BCDD8C
+_080571D0: .4byte gTitleScreenGfx
 _080571D4: .4byte 0x06008000
 _080571D8: .4byte gUnknown_02016078
 _080571DC: .4byte 0x00002C46

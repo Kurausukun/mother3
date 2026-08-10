@@ -57,6 +57,6 @@ _0800AF98:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0800AFB8: .4byte gUnknown_09AF3790
+_0800AFB8: .4byte gMiscGfx
 _0800AFBC: .4byte gUnknown_080C2008
 	.syntax divided

@@ -33,7 +33,7 @@ extern u8 gUnknown_09C5FD2C;
 extern u8 gUnknown_02015DC0;
 extern const u8 gUnknown_09C8DE98;  // Some sort of "archive" with sprites, palettes, etc.
 extern u8 gMenuTextPalette;
-extern const u8 gUnknown_09BCDD8C;
+extern const u8 gTitleScreenGfx;
 extern InputState gInputState;
 extern MonsterData gMonsterData[];
 extern MenuHandlerFunc gMenuFuncTable[0x13];
