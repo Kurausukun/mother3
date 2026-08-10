@@ -270,7 +270,17 @@ extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E098.inc", void sub_0806
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E0FC.inc", void sub_0806E0FC());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E150.inc", void sub_0806E150());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E1C8.inc", void sub_0806E1C8());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/genMisctextMsg__3MsgPvUi.inc", void genMisctextMsg__3MsgPvUi());
+
+Msg Msg::genMisctextMsg(u16* text, s32 len) {
+    s32 validChars = 0;
+
+    // TODO: Define enum value for 0xFFFF
+    while (validChars < len && text[validChars] != 0xFFFF) {
+        validChars++;
+    }
+
+    return Msg(text, validChars);
+}
 
 Msg::Msg() {
     mText = 0;
@@ -278,7 +288,7 @@ Msg::Msg() {
     mLen = 0;
 }
 
-Msg::Msg(const u16* textPtr, u32 len) {
+Msg::Msg(const u16* textPtr, s32 len) {
     mText = new u16[len];
     mCapacity = len;
     mLen = len;
