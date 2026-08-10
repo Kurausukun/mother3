@@ -20,7 +20,7 @@ _0806E42C:
 	ldrh r2, [r5, #6]
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl sub_0806E454
+	bl setText__3MsgPUsi
 	cmp r6, #0
 	beq _0806E44E
 	adds r0, r6, #0

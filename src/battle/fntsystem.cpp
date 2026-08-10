@@ -8,8 +8,7 @@ extern ClockData callback_sub_0806D878;
 
 extern "C" void __11Unk08088018(void*);
 extern "C" void LZ77UnCompWram(void*, void*);
-extern "C" void sub_0806E418(Msg*, s32);        // TODO: make Msg class method
-extern "C" void sub_0806E454(Msg*, u16*, u16);  // TODO: make Msg class method
+extern "C" void sub_0806E418(Msg*, s32);  // TODO: make Msg class method
 
 CCLHandle::CCLHandle() {  // __9CCLHandle
     mType = 0;
@@ -277,14 +276,14 @@ extern "C" ASM_FUNC("asm/non_matching/fntsystem/__3Msg.inc", void __3Msg());
 
 Msg* Msg::replace(const Msg& m) {
     sub_0806E418(this, m.mLen);
-    sub_0806E454(this, m.mPtr, m.mLen);
+    setText(m.mText, m.mLen);
     return this;
 }
 
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E308.inc", void sub_0806E308());
 
 u16* Msg::getTextAtOffset(s32 idx) {
-    return &mPtr[idx];
+    return &mText[idx];
 }
 
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E33C.inc", void sub_0806E33C());
@@ -295,7 +294,7 @@ Msg* Msg::concatenate(const Msg& m) {
     sub_0806E418(this, this->mLen + m.mLen);
 
     for (s32 i = 0; i < m.mLen; i++) {
-        this->mPtr[this->mLen++] = m.mPtr[i];
+        this->mText[this->mLen++] = m.mText[i];
     }
 
     return this;
@@ -308,7 +307,15 @@ s32 Msg::len() {
 }
 
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E418.inc", void sub_0806E418(Msg*, s32));
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E454.inc", void sub_0806E454(Msg *, u16*, u16));
+
+void Msg::setText(u16* textPtr, s32 len) {
+    mLen = 0;
+
+    for (u16 i = 0; i < len; mLen++, i = mLen) {
+        mText[i] = textPtr[i];
+    }
+}
+
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E480.inc", void sub_0806E480());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E488.inc", void makeInstance__16FntSystemManager());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E4B8.inc", void sub_0806E4B8());

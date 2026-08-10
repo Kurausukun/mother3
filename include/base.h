@@ -104,8 +104,10 @@ public:
     };
 
 private:
-    u16* mPtr;
-    u16 _4;
+    void setText(u16* text, s32 len);
+
+    u16* mText;
+    u16 mCapacity;
     u16 mLen;
 };
 

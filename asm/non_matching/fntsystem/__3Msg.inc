@@ -26,7 +26,7 @@ __3MsgPCvUi:
 	adds r0, r4, #0
 	adds r1, r6, #0
 	adds r2, r5, #0
-	bl sub_0806E454
+	bl setText__3MsgPUsi
 	adds r0, r4, #0
 	pop {r4, r5, r6}
 	pop {r1}
@@ -49,7 +49,7 @@ __3MsgRC3Msg:
 	ldr r1, [r4]
 	ldrh r2, [r4, #6]
 	adds r0, r5, #0
-	bl sub_0806E454
+	bl setText__3MsgPUsi
 	adds r0, r5, #0
 	pop {r4, r5}
 	pop {r1}
