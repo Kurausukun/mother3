@@ -14,7 +14,7 @@ sub_080840B8:
 _080840CE:
 	mov r0, r8
 	adds r1, r7, #0
-	bl sub_0806E33C
+	bl getTextAtOffset2__3Msgi
 	ldrh r1, [r0]
 	ldr r0, _080840F4
 	cmp r1, r0
@@ -107,7 +107,7 @@ _0808415E:
 	adds r4, r4, r0
 	mov r0, r8
 	adds r1, r7, #0
-	bl sub_0806E33C
+	bl getTextAtOffset2__3Msgi
 	ldrh r1, [r0]
 	ldr r2, [r5, #4]
 	adds r0, r4, #0

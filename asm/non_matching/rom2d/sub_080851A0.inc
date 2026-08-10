@@ -20,20 +20,20 @@ sub_080851A0:
 _080851C4:
 	ldr r0, [sp, #0x20]
 	adds r1, r5, #0
-	bl sub_0806E33C
+	bl getTextAtOffset2__3Msgi
 	ldrh r1, [r0]
 	add r0, sp, #0xc
 	bl sub_0806E34C
 	ldr r0, [sp, #0x20]
 	adds r1, r5, #0
-	bl sub_0806E33C
+	bl getTextAtOffset2__3Msgi
 	ldrh r1, [r0]
 	ldr r0, _080853C0
 	cmp r1, r0
 	beq _080851F8
 	ldr r0, [sp, #0x20]
 	adds r1, r5, #0
-	bl sub_0806E33C
+	bl getTextAtOffset2__3Msgi
 	ldrh r1, [r0]
 	ldr r0, _080853C4
 	adds r2, r5, #1
@@ -356,7 +356,7 @@ _0808544A:
 _08085458:
 	ldr r0, [sp, #0x20]
 	adds r1, r6, #0
-	bl sub_0806E33C
+	bl getTextAtOffset2__3Msgi
 	ldrh r1, [r0]
 	ldr r0, _0808547C
 	cmp r1, r0
@@ -450,7 +450,7 @@ _080854E8:
 	adds r4, r4, r0
 	ldr r0, [sp, #0x20]
 	adds r1, r6, #0
-	bl sub_0806E33C
+	bl getTextAtOffset2__3Msgi
 	ldrh r1, [r0]
 	ldr r2, [r5, #4]
 	adds r0, r4, #0

@@ -285,7 +285,10 @@ u16* Msg::getTextAtOffset(s32 idx) {
     return &mText[idx];
 }
 
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E33C.inc", void sub_0806E33C());
+u16* Msg::getTextAtOffset2(s32 idx) {
+    return &mText[idx];
+}
+
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E344.inc", void sub_0806E344());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E34C.inc", void sub_0806E34C());
 

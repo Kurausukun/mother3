@@ -19,7 +19,7 @@ sub_08084820:
 _08084844:
 	mov r0, sl
 	mov r1, sb
-	bl sub_0806E33C
+	bl getTextAtOffset2__3Msgi
 	ldrh r1, [r0]
 	ldr r0, _08084870
 	cmp r1, r0
@@ -279,7 +279,7 @@ _08084A22:
 _08084A34:
 	mov r0, sl
 	mov r1, sb
-	bl sub_0806E33C
+	bl getTextAtOffset2__3Msgi
 	ldrh r1, [r0]
 	ldr r0, _08084AE0
 	movs r2, #1
@@ -314,7 +314,7 @@ _08084A34:
 	adds r4, r4, r0
 	mov r0, sl
 	mov r1, sb
-	bl sub_0806E33C
+	bl getTextAtOffset2__3Msgi
 	ldrh r1, [r0]
 	ldr r2, [r5, #4]
 	adds r0, r4, #0

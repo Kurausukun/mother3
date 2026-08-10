@@ -96,6 +96,7 @@ public:
     void print(const Color&, bool);
     s32 len();
     u16* getTextAtOffset(s32 idx);
+    u16* getTextAtOffset2(s32 idx);
     Msg* replace(const Msg&);
     Msg* concatenate(const Msg&);
 
