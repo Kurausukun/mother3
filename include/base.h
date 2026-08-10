@@ -98,6 +98,7 @@ public:
     u16* getTextAtOffset(s32 idx);
     u16* getTextAtOffset2(s32 idx);
     Msg* replace(const Msg&);
+    Msg* appendCharacter(u16);
     Msg* concatenate(const Msg&);
 
     enum CCode {

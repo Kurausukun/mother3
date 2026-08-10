@@ -35,7 +35,7 @@ _0806E204:
 	ldrb r1, [r0]
 	adds r1, #0xcb
 	adds r0, r6, #0
-	bl sub_0806E34C
+	bl appendCharacter__3MsgUs
 	lsls r4, r4, #0x18
 	lsrs r2, r4, #0x18
 	cmp r2, #0

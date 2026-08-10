@@ -90,7 +90,7 @@ _0807E694:
 	bne _0807E6F4
 	mov r0, r8
 	ldr r1, _0807E6F0
-	bl sub_0806E34C
+	bl appendCharacter__3MsgUs
 	adds r0, r7, #0
 	mov r1, sp
 	bl name__C5Goods
@@ -106,7 +106,7 @@ _0807E6F0: .4byte 0x0000FF22
 _0807E6F4:
 	mov r0, r8
 	movs r1, #0
-	bl sub_0806E34C
+	bl appendCharacter__3MsgUs
 	adds r0, r7, #0
 	mov r1, sp
 	bl name__C5Goods

@@ -41,7 +41,7 @@ _080820C6:
 	bl _call_via_r2
 	ldr r1, _08082134
 	mov r0, sp
-	bl sub_0806E34C
+	bl appendCharacter__3MsgUs
 	ldr r3, [r5, #0x1c]
 	movs r0, #0xa8
 	lsls r0, r0, #1

@@ -290,7 +290,12 @@ u16* Msg::getTextAtOffset2(s32 idx) {
 }
 
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E344.inc", void sub_0806E344());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E34C.inc", void sub_0806E34C());
+
+Msg* Msg::appendCharacter(u16 c) {
+    resize(mLen + 1);
+    mText[mLen++] = c;
+    return this;
+}
 
 Msg* Msg::concatenate(const Msg& m) {
     resize(mLen + m.mLen);

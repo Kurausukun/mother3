@@ -121,7 +121,7 @@ _080735A0:
 	bl getTextAtOffset2__3Msgi
 	ldrh r1, [r0]
 	mov r0, sp
-	bl sub_0806E34C
+	bl appendCharacter__3MsgUs
 _080735B0:
 	adds r6, #1
 _080735B2:

@@ -23,7 +23,7 @@ _080851C4:
 	bl getTextAtOffset2__3Msgi
 	ldrh r1, [r0]
 	add r0, sp, #0xc
-	bl sub_0806E34C
+	bl appendCharacter__3MsgUs
 	ldr r0, [sp, #0x20]
 	adds r1, r5, #0
 	bl getTextAtOffset2__3Msgi

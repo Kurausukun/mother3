@@ -53,14 +53,14 @@ tellStatUpgrade:
 	bne _0807BAC4
 	ldr r1, _0807BAC0
 	mov r0, r8
-	bl sub_0806E34C
+	bl appendCharacter__3MsgUs
 	b _0807BACC
 	.align 2, 0
 _0807BAC0: .4byte 0x0000FF02
 _0807BAC4:
 	ldr r1, _0807BAE0
 	mov r0, r8
-	bl sub_0806E34C
+	bl appendCharacter__3MsgUs
 _0807BACC:
 	adds r7, #1
 _0807BACE:

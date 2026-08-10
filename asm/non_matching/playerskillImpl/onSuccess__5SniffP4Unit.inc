@@ -52,7 +52,7 @@ _0809DAF0:
 	bl _._3Msg
 	ldr r1, _0809DB58
 	mov r0, sp
-	bl sub_0806E34C
+	bl appendCharacter__3MsgUs
 	movs r6, #0
 	movs r1, #1
 	str r1, [sp, #0x1c]
@@ -116,7 +116,7 @@ _0809DB5C:
 	bne _0809DBD2
 	ldr r1, _0809DC28
 	mov r0, sp
-	bl sub_0806E34C
+	bl appendCharacter__3MsgUs
 _0809DBD2:
 	mov r0, sp
 	mov r1, r8
