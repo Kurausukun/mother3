@@ -307,7 +307,19 @@ Msg* Msg::concatenate(const Msg& m) {
     return this;
 }
 
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E3B4.inc", void sub_0806E3B4());
+Msg* Msg::insertAt(s32 idx, const Msg& m) {
+    resize(mLen + m.mLen);
+
+    for (s32 i = mLen - 1; i >= idx; i--) {
+        mText[idx + m.mLen + i] = mText[i];
+    }
+
+    for (s32 i = 0; i < m.mLen; i++) {
+        mText[idx + i] = m.mText[i];
+    }
+
+    return this;
+}
 
 s32 Msg::len() const {
     return mLen;

@@ -1,7 +1,6 @@
 #include "battle/guestSkill.h"
 
 // extern "C" Action* getName(Action*, u32);
-extern "C" Msg* __3Msg();
 
 RTTI_IMPL(GuestSkill);
 

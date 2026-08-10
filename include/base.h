@@ -95,11 +95,12 @@ public:
 
     void print(const Color&, bool);
     s32 len() const;
-    u16* getTextAtOffset(s32 idx);
-    u16* getTextAtOffset(s32 idx) const;
+    u16* getTextAtOffset(s32);
+    u16* getTextAtOffset(s32) const;
     Msg* replace(const Msg&);
     Msg* appendCharacter(u16);
     Msg* concatenate(const Msg&);
+    Msg* insertAt(s32, const Msg&);
 
     enum CCode {
         Break = 0xFF01,
