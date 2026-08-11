@@ -43,7 +43,8 @@ struct BattleGroup {
     /* 0x1 */ u8 enemies_count;
     /* 0x2 */ u8 enemies[5];
     /* 0x7 */ u8 beginning;
-    /* 0x8 */ u16 can_run;
+    /* 0x8 */ u8 can_run;
+    /* 0x9 */ u8 pad;
     /* 0xa */ u16 music_swirl;
     /* 0xc */ u16 music_battle;
     /* 0xe */ u16 music_victory;
