@@ -10974,7 +10974,7 @@ _._5Event:
 
 	.byte	0x3
 	.byte	0x5d
-	.ascii	"genMisctextMsg__3MsgPvUi\000"
+	.ascii	"genMisctextMsg__3MsgPUsi\000"
 
 	.4byte	0x4914
 	.byte	0x1

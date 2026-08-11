@@ -21,7 +21,7 @@ skill_1d8:
 	adds r1, r0, #0
 	ldr r2, _08064BFC @ =0x0000FFFF
 	add r0, sp, #4
-	bl genMisctextMsg__3MsgPvUi
+	bl genMisctextMsg__3MsgPUsi
 	ldr r1, [r5, #0x1c]
 	adds r1, r1, r4
 	movs r2, #0

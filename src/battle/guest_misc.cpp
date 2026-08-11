@@ -55,6 +55,7 @@ extern "C" ASM_FUNC("asm/non_matching/guest/tellExperience.inc", void tellExperi
 
 extern "C" bool metalMonkeyCheck(Unit* t) {
     if (sub_080725E8() == true && (sub_08072608()->_0[0] == Monster::MetalMonkey)) {
+        // It was a good experience![END]
         ROMStrFmt(0x87, Msg(), Msg(), Msg()).print(Color::Black(), true);
         return true;
     }
@@ -77,8 +78,8 @@ extern "C" ASM_FUNC("asm/non_matching/guest/sub_08060EB0.inc", void sub_08060EB0
 extern "C" ASM_FUNC("asm/non_matching/guest/sub_08060ED4.inc", void sub_08060ED4());
 extern "C" ASM_FUNC("asm/non_matching/guest/sub_08060F7C.inc", void sub_08060F7C());
 extern "C" ASM_FUNC("asm/non_matching/guest/sub_08060F80.inc", void init__13PlayerFactory());
-extern "C" ASM_FUNC("asm/non_matching/guest/sub_08060FF4.inc", void put__13PlayerFactoryUsPFUsUs_Pv()); //
-extern "C" ASM_FUNC("asm/non_matching/guest/sub_08061004.inc", void create__13PlayerFactoryUsUs()); //
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08060FF4.inc", void put__13PlayerFactoryUsPFUsUs_Pv());
+extern "C" ASM_FUNC("asm/non_matching/guest/sub_08061004.inc", void create__13PlayerFactoryUsUs());
 extern "C" ASM_FUNC("asm/non_matching/guest/sub_08061024.inc", void sub_08061024());
 extern "C" ASM_FUNC("asm/non_matching/guest/sub_08061048.inc", void sub_08061048());
 extern "C" ASM_FUNC("asm/non_matching/guest/tellPresent.inc", void tellPresent());
