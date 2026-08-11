@@ -269,7 +269,7 @@ extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806DFF0.inc", void sub_0806
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E098.inc", void sub_0806E098());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E0FC.inc", void sub_0806E0FC());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E150.inc", void sub_0806E150());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E1C8.inc", void sub_0806E1C8());
+extern "C" ASM_FUNC("asm/non_matching/fntsystem/bcd__3Msgi.inc", void bcd__3Msgi());
 
 Msg Msg::genMisctextMsg(u16* text, s32 len) {
     s32 validChars = 0;

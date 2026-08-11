@@ -304,7 +304,7 @@ _0807B8DE:
 	adds r1, r0, #0
 	add r6, sp, #0x28
 	adds r0, r6, #0
-	bl sub_0806E1C8
+	bl bcd__3Msgi
 	add r5, sp, #0x34
 	adds r0, r5, #0
 	bl __3Msg

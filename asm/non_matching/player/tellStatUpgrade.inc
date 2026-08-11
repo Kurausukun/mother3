@@ -16,7 +16,7 @@ tellStatUpgrade:
 	ble _0807BACE
 	add r6, sp, #0x10
 	adds r0, r6, #0
-	bl sub_0806E1C8
+	bl bcd__3Msgi
 	add r5, sp, #0x1c
 	adds r0, r5, #0
 	bl __3Msg
