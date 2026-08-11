@@ -174,5 +174,5 @@ _08026ADC:
 	.align 2, 0
 _08026AEC: .4byte gEncounter
 _08026AF0: .4byte 0x0000FFFF
-_08026AF4: .4byte gUnknown_020047EC
+_08026AF4: .4byte gEncounter+0xC @ gEncounter._c
 	.syntax divided
