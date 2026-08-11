@@ -356,7 +356,7 @@ bool Battle::isFightBoss() {
     return gEncounter._0 == 1;
 }
 
-BattleGroup* Battle::battle_178() {
+BattleGroup* Battle::battleGroup() {
     return &gBattleGroupTable[gEncounter._a];
 }
 
@@ -384,7 +384,7 @@ bool Battle::battle_1a8() {
     if (battle_160() == true) {
         return gEncounter._4 == false;
     } else if (isFightBoss() == true) {
-        return gEncounter._4 == false || battle_178()->_8 == true;
+        return gEncounter._4 == false || battleGroup()->can_run == true;
     } else if (battle_180() == true) {
         return true;
     }
@@ -423,7 +423,7 @@ u16 Battle::battle_1e8() {
     if (battle_160() == true) {
         return battle_168()->_e;
     } else if (isFightBoss() == true) {
-        return battle_178()->_c;
+        return battleGroup()->music_battle;
     } else if (battle_180() == true) {
         return battle_188()->_e;
     }
@@ -434,7 +434,7 @@ u16 Battle::battle_1f0() {
     if (battle_160() == true) {
         return battle_168()->_10;
     } else if (isFightBoss() == true) {
-        return battle_178()->_e;
+        return battleGroup()->music_victory;
     } else if (battle_180() == true) {
         return battle_188()->_10;
     }

@@ -39,8 +39,8 @@ extern "C" bool sub_08072648(u16 value) {
     return BattleManager::get()->isFightBoss() && BattleManager::get()->battle_138() == value;
 }
 
-extern "C" BattleGroup* sub_08072698() {
-    return BattleManager::get()->battle_178();
+extern "C" BattleGroup* getCurrentBattleGroup() {
+    return BattleManager::get()->battleGroup();
 }
 
 extern "C" bool sub_080726B8() {

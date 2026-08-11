@@ -284,7 +284,7 @@ _vt.6Battle::
 	.4byte isFightBoss__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_178__6Battle
+	.4byte battleGroup__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_180__6Battle
@@ -877,7 +877,7 @@ _vt.16MaskedManBattleB::
 	.4byte isFightBoss__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_178__6Battle
+	.4byte battleGroup__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_180__6Battle
@@ -1140,7 +1140,7 @@ _vt.16MaskedManBattleA::
 	.4byte isFightBoss__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_178__6Battle
+	.4byte battleGroup__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_180__6Battle
@@ -1436,7 +1436,7 @@ _vt.11PorkyBattle::
 	.4byte isFightBoss__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_178__6Battle
+	.4byte battleGroup__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_180__6Battle
@@ -1711,7 +1711,7 @@ _vt.14PorkyBotBattle::
 	.4byte isFightBoss__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_178__6Battle
+	.4byte battleGroup__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_180__6Battle
@@ -1989,7 +1989,7 @@ _vt.16MasterEddyBattle::
 	.4byte isFightBoss__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_178__6Battle
+	.4byte battleGroup__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_180__6Battle
@@ -2243,7 +2243,7 @@ _vt.13DefaultBattle::
 	.4byte isFightBoss__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_178__6Battle
+	.4byte battleGroup__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_180__6Battle

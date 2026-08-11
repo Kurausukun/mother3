@@ -24623,11 +24623,11 @@ _._5Event:
 	.byte	0x1b
 	.4byte	0xdacf
 	.byte	0x1
-	.ascii	"battle_178\000"
+	.ascii	"battleGroup\000"
 
 	.byte	0x5
 	.byte	0xaf
-	.ascii	"battle_178__6Battle\000"
+	.ascii	"battleGroup__6Battle\000"
 
 	.4byte	0xbe89
 	.byte	0x1
