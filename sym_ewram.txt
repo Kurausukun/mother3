@@ -180,7 +180,7 @@
 . = 0x00004110; gCharStats = .;
 . = 0x000047D0; gUnknown_020047D0 = .;
 . = 0x000047E0; gEncounter = .;
-. = 0x00004848; gUnknown_02004848 = .;
+. = 0x00004848; gEngineMode = .;
 . = 0x00004850; gUnknown_02004850 = .;
 . = 0x00004854; gUnknown_02004854 = .;
 . = 0x00004860; gSave = .;

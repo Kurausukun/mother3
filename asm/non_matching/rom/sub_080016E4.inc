@@ -26,5 +26,5 @@ _08001710:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08001714: .4byte gGameMode
+_08001714: .4byte gEngineMode
 	.syntax divided

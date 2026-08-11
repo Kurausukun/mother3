@@ -25,7 +25,7 @@ struct gameMode {
         Flags<u8> flags_u8;
     };
 };
-extern gameMode gGameMode;
+extern gameMode gEngineMode;
 
 struct struct_020047E0 {
     u8 _0;
@@ -122,7 +122,7 @@ extern "C" void AgbMain() {
 
     u32 keys = ~REG_KEYINPUT;
     if (((keys << 0x16) >> 0x16) == 0xf) {
-        u8* s = &gGameMode._0;
+        u8* s = &gEngineMode._0;
         s[1] |= 2;
     }
 
@@ -136,20 +136,20 @@ extern "C" void AgbMain() {
 
 void main_loop() {
     do {
-        switch (gGameMode._0) {
+        switch (gEngineMode._0) {
         case 0:
             init_all_data();
             sub_080003D8();
             if (gUnknown_02005084 != 6) {
                 sub_08000600();
             }
-            gGameMode._0 = 2;
+            gEngineMode._0 = 2;
             gUnknown_02005080 = 0;
             break;
         case 1:
             sub_08000920();
             sub_080003D8();
-            gGameMode._0 = 2;
+            gEngineMode._0 = 2;
             gUnknown_02005080 = 0;
             break;
         case 2 ... 7:
@@ -193,40 +193,40 @@ void sub_080003D8(void) {
     case 0:
         break;
     case 1:
-        gGameMode._0 = 8;
+        gEngineMode._0 = 8;
         break;
     case 2:
-        gGameMode._0 = 9;
+        gEngineMode._0 = 9;
         break;
     case 3:
         if (gSave._708 == 0) {
-            gGameMode._0 = 10;
+            gEngineMode._0 = 10;
             gUnknown_020047D0 = 1;
         } else {
             gUnknown_02004100 = 13;
             sub_0803DBB8();
             switch (gUnknown_020051E8) {
             case 4:
-                gGameMode._0 = 4;
+                gEngineMode._0 = 4;
                 gUnknown_02005080 = 2;
                 break;
             case 5:
-                gGameMode._0 = 10;
+                gEngineMode._0 = 10;
                 gUnknown_020047D0 = 1;
                 break;
             }
         }
         break;
     case 4:
-        gGameMode._0 = 10;
+        gEngineMode._0 = 10;
         gUnknown_020047D0 = 1;
         break;
     case 5:
-        gGameMode._0 = 10;
+        gEngineMode._0 = 10;
         gUnknown_020047D0 = 2;
         break;
     case 6:
-        gGameMode._0 = 11;
+        gEngineMode._0 = 11;
         break;
     }
 }
@@ -236,7 +236,7 @@ void sub_080004D8() {
         gEncounter.mIQ = 1;
         startSong_battle(0);
         sub_08026C28();
-        gGameMode._0 = 5;
+        gEngineMode._0 = 5;
         gUnknown_02005080 = 3;
         return;
     }
@@ -245,7 +245,7 @@ void sub_080004D8() {
     gEncounter._4 = 0;
 
     if (gEncounter._0 == 2) {
-        gGameMode._0 = 9;
+        gEngineMode._0 = 9;
         gUnknown_02004100 = 4;
         snd_vsync_off();
         return;
@@ -260,7 +260,7 @@ void sub_080004D8() {
             sub_08026CD0();
         } else {
             if (gSave._708 == 0) {
-                gGameMode._0 = 10;
+                gEngineMode._0 = 10;
                 gUnknown_020047D0 = 1;
                 snd_vsync_off();
                 return;
@@ -270,11 +270,11 @@ void sub_080004D8() {
             sub_0803DBB8();
             switch (gUnknown_020051E8) {
             case 4:
-                gGameMode._0 = 4;
+                gEngineMode._0 = 4;
                 gUnknown_02005080 = 2;
                 return;
             case 5:
-                gGameMode._0 = 10;
+                gEngineMode._0 = 10;
                 gUnknown_020047D0 = 1;
                 return;
             }
@@ -284,7 +284,7 @@ void sub_080004D8() {
         sub_08026CE4();
         break;
     }
-    gGameMode._0 = 5;
+    gEngineMode._0 = 5;
     gUnknown_02005080 = 3;
 }
 
@@ -293,23 +293,23 @@ void sub_08000600() {
     switch (gUnknown_020051E8) {
     case 0:
     case 2:
-        gGameMode._0 = 6;
+        gEngineMode._0 = 6;
         gUnknown_02005080 = 4;
         break;
     case 1:
-        gGameMode._0 = 6;
+        gEngineMode._0 = 6;
         gUnknown_02005080 = 0;
         break;
     case 5:
-        gGameMode._0 = 10;
+        gEngineMode._0 = 10;
         gUnknown_020047D0 = 1;
         break;
     case 3:
-        gGameMode._0 = 3;
+        gEngineMode._0 = 3;
         gUnknown_02005080 = 1;
         break;
     case 6:
-        gGameMode._0 = 8;
+        gEngineMode._0 = 8;
         break;
     }
 }
@@ -319,23 +319,23 @@ void sub_080006A0(void) {
     switch (gUnknown_02005084) {
     case 0:
     case 6:
-        gGameMode._0 = 0;
+        gEngineMode._0 = 0;
         gUnknown_02005080 = 6;
         gUnknown_02004100 = 11;
         break;
     case 1:
-        gGameMode._0 = 9;
+        gEngineMode._0 = 9;
         gUnknown_02004100 = 8;
         break;
     case 2:
-        gGameMode._0 = 12;
+        gEngineMode._0 = 12;
         break;
     case 4:
-        gGameMode._0 = 9;
+        gEngineMode._0 = 9;
         gUnknown_02004100 = 9;
         break;
     case 5:
-        gGameMode._0 = 7;
+        gEngineMode._0 = 7;
         gUnknown_02005080 = 5;
         break;
     }
@@ -345,11 +345,11 @@ void sub_08000748(void) {
     sub_0805850C();
     switch (gUnknown_02004854) {
     case 0:
-        gGameMode._0 = 6;
+        gEngineMode._0 = 6;
         gUnknown_02005080 = 4;
         break;
     case 1:
-        gGameMode._0 = 10;
+        gEngineMode._0 = 10;
         gUnknown_020047D0 = 1;
         break;
     }
@@ -357,7 +357,7 @@ void sub_08000748(void) {
 
 void sub_08000790() {
     sub_0805BA98();
-    gGameMode._0 = 10;
+    gEngineMode._0 = 10;
     gUnknown_020047D0 = 1;
 }
 
@@ -365,13 +365,13 @@ void sub_080007B0(void) {
     snd_vsync_off();
     sub_0805A2DC();
     snd_vsync_on();
-    gGameMode._0 = 14;
+    gEngineMode._0 = 14;
 }
 
 void sub_080007CC(void) {
-    u32 tmp = gGameMode.flags_s8._1;
+    u32 tmp = gEngineMode.flags_s8._1;
     if (tmp != 0) {
-        gGameMode._0 = 10;
+        gEngineMode._0 = 10;
         gUnknown_020047D0 = 0;
         return;
     }
@@ -382,14 +382,14 @@ void sub_080007CC(void) {
 
     switch (gUnknown_020051E0) {
     case 0:
-        gGameMode.flags_s8._1 = 1;
+        gEngineMode.flags_s8._1 = 1;
         break;
     case 1:
-        gGameMode.flags_s8._1 = 0;
+        gEngineMode.flags_s8._1 = 0;
         break;
     }
 
-    gGameMode._0 = 10;
+    gEngineMode._0 = 10;
     gUnknown_020047D0 = 0;
 }
 
@@ -419,8 +419,8 @@ extern "C" void sub_080008D0() {
 extern "C" void sub_080008DC() {}
 
 void seed_rng() {
-    gGameMode._0 = 13;
-    gGameMode.flags_s8._2 = 0;
+    gEngineMode._0 = 13;
+    gEngineMode.flags_s8._2 = 0;
     sub_0800303C(0x1105);
 }
 
@@ -589,18 +589,18 @@ void sub_08000BE8() {
 }
 
 extern "C" u8 sub_08000D54() {
-    return gGameMode.flags_u8._1;
+    return gEngineMode.flags_u8._1;
 }
 
 extern "C" void sub_08000D64(volatile u16 a) {
-    gGameMode.flags_s8._1 = a;
+    gEngineMode.flags_s8._1 = a;
 }
 
 extern "C" void sub_08000D88(void) {
     char* dest = (char*)IWRAM_START;
 
     for (u16 i = 0; i < 8; ++i, ++dest) {
-        u32 tmp = gGameMode.flags_u8._1;
+        u32 tmp = gEngineMode.flags_u8._1;
         if (tmp) {
             *dest = gUnknown_08CDB8A8[i];
         } else {
@@ -614,11 +614,11 @@ extern "C" void copy_ram_magic() {
 
     for (u16 i = 0; i < 8; ++i, ++dest) {
         if (*dest != gUnknown_08CDB8A8[i]) {
-            gGameMode.flags_u8._1 = 0;
+            gEngineMode.flags_u8._1 = 0;
             return;
         }
     }
-    gGameMode.flags_u8._1 = 1;
+    gEngineMode.flags_u8._1 = 1;
 }
 
 void clear_ram(void) {
