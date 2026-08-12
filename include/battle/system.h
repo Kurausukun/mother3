@@ -3,17 +3,7 @@
 
 #include "base.h"
 #include "singleton.h"
-
-struct SAREntry {
-    u32 offset;
-    u32 size;
-};
-
-struct SARHandle {
-    SARHandle();
-    virtual ~SARHandle();
-    char* ptr;
-};
+#include "battle/archive.h"
 
 class System : Base {
 public:

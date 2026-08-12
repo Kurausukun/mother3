@@ -1,5 +1,8 @@
 // Auto-generated source file
 #include "global.h"
+#include "battle/archive.h"
+
+extern char gBattleSAR;
 
 extern "C" ASM_FUNC("asm/non_matching/code_0805D74C/sub_08066294.inc", void sub_08066294());
 extern "C" ASM_FUNC("asm/non_matching/code_0805D74C/sub_080662B0.inc", void sub_080662B0());
@@ -61,8 +64,14 @@ extern "C" ASM_FUNC("asm/non_matching/code_0805D74C/sub_08068674.inc", void sub_
 extern "C" ASM_FUNC("asm/non_matching/code_0805D74C/sub_08068718.inc", void sub_08068718());
 extern "C" ASM_FUNC("asm/non_matching/code_0805D74C/sub_0806871C.inc", void sub_0806871C());
 extern "C" ASM_FUNC("asm/non_matching/code_0805D74C/sub_08068734.inc", void sub_08068734());
-extern "C" ASM_FUNC("asm/non_matching/code_0805D74C/__Q26System9SARHandle.inc", void __9SARHandle());
-extern "C" ASM_FUNC("asm/non_matching/code_0805D74C/sub_080687AC.inc", void sub_080687AC());
+
+SARHandle::SARHandle(){
+    ResPtrSized ref(&gBattleSAR, -1);
+    set(reinterpret_cast<ResPtr&>(ref));
+}
+
+SARHandle::~SARHandle() {}
+
 extern "C" ASM_FUNC("asm/non_matching/code_0805D74C/sub_080687C0.inc", void sub_080687C0());
 extern "C" ASM_FUNC("asm/non_matching/code_0805D74C/sub_080687DC.inc", void sub_080687DC());
 extern "C" ASM_FUNC("asm/non_matching/code_0805D74C/sub_080688B0.inc", void sub_080688B0());

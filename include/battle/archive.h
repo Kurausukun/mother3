@@ -2,7 +2,6 @@
 #define BATTLE_ARCHIVE_H
 
 #include "base.h"
-#include "battle/system.h"
 #include "global.h"
 #include "vector.h"
 
@@ -46,6 +45,16 @@ public:
 
     char* address;
     u32 size;
+};
+
+struct SAREntry {
+    u32 offset;
+    u32 size;
+};
+
+struct SARHandle : public ResPtr {
+    SARHandle();
+    virtual ~SARHandle();
 };
 
 class BGHandle {

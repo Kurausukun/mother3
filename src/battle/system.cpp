@@ -60,7 +60,7 @@ u16 ResPtr::type() const {
 
 
 extern "C" ResPtrSized LoadRes(SARHandle* archive, u32 idx) {
-    char* arc = archive->ptr;
+    char* arc = archive->address;
     if (!arc) {
         return ResPtrSized(0, 0);
     };

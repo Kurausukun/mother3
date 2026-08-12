@@ -89518,7 +89518,7 @@ _vt.9SARHandle::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080687AC
+	.4byte _._9SARHandle
 
 _vt.9Singleton::
 	.2byte 0
