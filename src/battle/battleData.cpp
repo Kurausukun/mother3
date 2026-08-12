@@ -386,7 +386,7 @@ Msg StrFmt(const Msg& templateStr, const Msg& arg1, const Msg& arg2, const Msg& 
     return Msg(formatted);
 }
 
-ASM_FUNC("asm/non_matching/battleData/print__3MsgRC13PrintSettingsb.inc",
+ASM_FUNC("asm/non_matching/battleData/print__3MsgRC5Colorb.inc",
          void Msg::print(const Color&, bool));
 
 extern "C" ASM_FUNC("asm/non_matching/battleData/sub_0807362C.inc",

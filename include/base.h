@@ -92,6 +92,7 @@ public:
     virtual ~Msg();
 
     static Msg genMisctextMsg(u16*, s32);
+    static Msg bcd(s32);
 
     void print(const Color&, bool);
     s32 len() const;

@@ -1,5 +1,5 @@
     .syntax unified
-print__3MsgRC13PrintSettingsb:
+print__3MsgRC5Colorb:
 	push {r4, r5, r6, lr}
 	ldr r4, _08073628 @ =0xFFFFF020
 	add sp, r4
