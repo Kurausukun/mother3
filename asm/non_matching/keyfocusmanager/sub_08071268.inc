@@ -39,7 +39,7 @@ sub_08071268:
 	bl sub_080706A0
 	adds r0, r6, #0
 	add r1, sp, #4
-	bl init__9CCGHandleRC6ResPtr
+	bl init__9CCGHandleRC11ResPtrSized
 	ldr r4, _08071320
 	str r4, [sp, #0xc]
 	ldr r1, _08071324
@@ -47,7 +47,7 @@ sub_08071268:
 	bl sub_080706A0
 	mov r0, r8
 	add r1, sp, #4
-	bl init__9CCLHandleRC6ResPtr
+	bl init__9CCLHandleRC11ResPtrSized
 	str r4, [sp, #0xc]
 	bl get__12ClockManager
 	adds r6, r0, #0
@@ -80,7 +80,7 @@ sub_08071268:
 	bx r1
 	.align 2, 0
 _0807131C: .4byte vt_09F80BB0
-_08071320: .4byte _vt.6ResPtr
+_08071320: .4byte _vt.11ResPtrSized
 _08071324: .4byte 0x0000027B
 _08071328: .4byte _vt.5Event
 _0807132C: .4byte _vt.8AppClock

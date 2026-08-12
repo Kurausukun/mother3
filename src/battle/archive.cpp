@@ -12,7 +12,7 @@ BXTHandle::BXTHandle() {
     mOffsets = NULL;
 }
 
-BXTHandle::BXTHandle(const ResPtr& ref) {
+BXTHandle::BXTHandle(const ResPtrSized& ref) {
     mType = 0;
     mCount = 0;
     mBlock = NULL;
@@ -22,7 +22,7 @@ BXTHandle::BXTHandle(const ResPtr& ref) {
 
 BXTHandle::~BXTHandle() {}
 
-bool BXTHandle::init(const ResPtr& ref) {
+bool BXTHandle::init(const ResPtrSized& ref) {
     mType = type(ref);
 
     switch (mType) {
@@ -33,14 +33,14 @@ bool BXTHandle::init(const ResPtr& ref) {
     return true;
 }
 
-u32 BXTHandle::type(const ResPtr& ref) const {
+u32 BXTHandle::type(const ResPtrSized& ref) const {
     if (RESOURCE(ref)->header != HEADER_BXT) {
         return 0;
     }
     return RESOURCE(ref)->type;
 }
 
-void BXTHandle::read(const ResPtr& ref) {
+void BXTHandle::read(const ResPtrSized& ref) {
     const Resource* bxt = RESOURCE(ref);
     mCount = bxt->count;
     mBlock = (const u8*)bxt;

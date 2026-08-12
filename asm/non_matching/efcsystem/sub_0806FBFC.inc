@@ -7,7 +7,7 @@ __9EfcSystem:
 	str r0, [r4, #0x1c]
 	adds r0, r4, #0
 	adds r0, #0x20
-	bl sub_0805D2A4
+	bl __6ResPtr
 	movs r0, #0
 	strh r0, [r4, #0x28]
 	strh r0, [r4, #0x30]

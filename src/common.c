@@ -1034,10 +1034,10 @@ ldr r1, _0805CF80 @ =gMonsterData\n\
 adds r0, r0, r1\n\
 str r0, [sp, #0x54]\n\
 add r0, sp, #0xc\n\
-bl sub_0805D2A4\n\
+bl __6ResPtr\n\
 add r0, sp, #0x14\n\
 mov sl, r0\n\
-ldr r1, _0805CF84 @ =_vt.6ResPtr\n\
+ldr r1, _0805CF84 @ =_vt.11ResPtrSized\n\
 mov sb, r1\n\
 str r1, [sp, #0x1c]\n\
 movs r0, #0\n\
@@ -1056,7 +1056,7 @@ str r1, [sp, #0x34]\n\
 str r0, [sp, #0x2c]\n\
 str r0, [r6, #4]\n\
 add r4, sp, #0x38\n\
-ldr r0, _0805CF88 @ =gUnknown_09C90960\n\
+ldr r0, _0805CF88 @ =gBattleSAR\n\
 movs r1, #1\n\
 rsbs r1, r1, #0\n\
 mov r2, sb\n\
@@ -1065,7 +1065,7 @@ str r0, [sp, #0x38]\n\
 str r1, [r4, #4]\n\
 add r0, sp, #0xc\n\
 adds r1, r4, #0\n\
-bl sub_0805D2D4\n\
+bl set__6ResPtrR6ResPtr\n\
 mov r3, sb\n\
 str r3, [sp, #0x40]\n\
 mov r6, sl\n\
@@ -1149,8 +1149,8 @@ b _0805CFBC\n\
 .align 2, 0\n\
 _0805CF7C: .4byte gUnknown_02005090\n\
 _0805CF80: .4byte gMonsterData\n\
-_0805CF84: .4byte _vt.6ResPtr\n\
-_0805CF88: .4byte gUnknown_09C90960\n\
+_0805CF84: .4byte _vt.11ResPtrSized\n\
+_0805CF88: .4byte gBattleSAR\n\
 _0805CF8C: .4byte 0x00000179\n\
 _0805CF90:\n\
 movs r0, #0xa\n\
@@ -1238,13 +1238,13 @@ ldr r1, [r3, #0x18]\n\
 adds r0, r6, #0\n\
 bl sub_0805D154\n\
 _0805D044:\n\
-ldr r0, _0805D068 @ =_vt.6ResPtr\n\
+ldr r0, _0805D068 @ =_vt.11ResPtrSized\n\
 str r0, [sp, #0x34]\n\
 str r0, [sp, #0x28]\n\
 str r0, [sp, #0x1c]\n\
 add r0, sp, #0xc\n\
 movs r1, #2\n\
-bl sub_0805D2B4\n\
+bl _._6ResPtr\n\
 movs r0, #1\n\
 add sp, #0x5c\n\
 pop {r3, r4, r5}\n\
@@ -1255,7 +1255,7 @@ pop {r4, r5, r6, r7}\n\
 pop {r1}\n\
 bx r1\n\
 .align 2, 0\n\
-_0805D068: .4byte _vt.6ResPtr\n\
+_0805D068: .4byte _vt.11ResPtrSized\n\
 ");
 }
 NAKED void sub_0805D06C() {
@@ -1586,59 +1586,5 @@ pop {r1}\n\
 bx r1\n\
 .align 2, 0\n\
 _0805D2A0: .4byte 0x0000FFFF\n\
-");
-}
-NAKED void sub_0805D2A4() {
-    asm_unified("\n\
-ldr r1, _0805D2B0 @ =vt_09F44F18\n\
-str r1, [r0, #4]\n\
-movs r1, #0\n\
-str r1, [r0]\n\
-bx lr\n\
-.align 2, 0\n\
-_0805D2B0: .4byte vt_09F44F18\n\
-");
-}
-NAKED void sub_0805D2B4() {
-    asm_unified("\n\
-push {lr}\n\
-adds r2, r0, #0\n\
-ldr r0, _0805D2D0 @ =vt_09F44F18\n\
-str r0, [r2, #4]\n\
-movs r0, #1\n\
-ands r0, r1\n\
-cmp r0, #0\n\
-beq _0805D2CA\n\
-adds r0, r2, #0\n\
-bl __builtin_delete\n\
-_0805D2CA:\n\
-pop {r0}\n\
-bx r0\n\
-.align 2, 0\n\
-_0805D2D0: .4byte vt_09F44F18\n\
-");
-}
-NAKED void sub_0805D2D4() {
-    asm_unified("\n\
-ldr r1, [r1]\n\
-str r1, [r0]\n\
-movs r0, #1\n\
-bx lr\n\
-");
-}
-NAKED void sub_0805D2DC() {
-    asm_unified("\n\
-push {lr}\n\
-ldr r0, [r0]\n\
-cmp r0, #0\n\
-beq _0805D2E8\n\
-ldrh r0, [r0, #4]\n\
-b _0805D2EA\n\
-_0805D2E8:\n\
-movs r0, #0\n\
-_0805D2EA:\n\
-pop {r1}\n\
-bx r1\n\
-.align 2, 0\n\
 ");
 }

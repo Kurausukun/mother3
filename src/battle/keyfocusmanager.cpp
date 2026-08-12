@@ -31,13 +31,13 @@ extern "C" void setsleep(s32 duration) {
     ClockManager::get()->sleep(duration);
 }
 
-extern "C" ResPtr sub_080706A0(u16 id) {
-    System::SARHandle* archive = SystemManager::get()->getHandle();
+extern "C" ResPtrSized sub_080706A0(u16 id) {
+    SARHandle* archive = SystemManager::get()->getHandle();
     return LoadRes(archive, id);
 }
 
 extern "C" Msg sub_080706D0(u16 id, u16 idx) {
-    System::SARHandle* archive = SystemManager::get()->getHandle();
+    SARHandle* archive = SystemManager::get()->getHandle();
     return BXTHandle(LoadRes(archive, id)).getMessage(idx);
 }
 

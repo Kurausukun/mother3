@@ -8,7 +8,7 @@ __9RasSystem:
 	str r0, [r6, #0x1c]
 	adds r0, r6, #0
 	adds r0, #0x30
-	bl sub_0805D2A4
+	bl __6ResPtr
 	movs r0, #0
 	strh r0, [r6, #0x20]
 	strh r0, [r6, #0x28]

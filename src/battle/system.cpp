@@ -41,13 +41,31 @@ SystemAllocator* gSystemAllocator;
 
 extern u8 sSystemAllocator[sizeof(SystemAllocator)];
 
-extern "C" ResPtr LoadRes(System::SARHandle* archive, u32 idx) {
+ResPtr::ResPtr() : address(0) {}
+
+ResPtr::~ResPtr() {}
+
+bool ResPtr::set(ResPtr& ref) {
+    address = ref.address;
+    return true;
+}
+
+u16 ResPtr::type() const {
+    if (address == 0) {
+        return 0;
+    }
+    
+    return *(u16*)(address + 4);
+}
+
+
+extern "C" ResPtrSized LoadRes(SARHandle* archive, u32 idx) {
     char* arc = archive->ptr;
     if (!arc) {
-        return ResPtr(0, 0);
+        return ResPtrSized(0, 0);
     };
     SAREntry* table = reinterpret_cast<SAREntry*>(arc + 8);
-    return ResPtr(arc + table[idx].offset, table[idx].size);
+    return ResPtrSized(arc + table[idx].offset, table[idx].size);
 }
 
 SystemAllocator* SystemAllocator::init(Fit* fit, u32 size) {
@@ -128,7 +146,7 @@ System::~System() {
     destroy__10IrcManager();
 }
 
-System::SARHandle* System::getHandle() {
+SARHandle* System::getHandle() {
     return mHandle;
 }
 

@@ -1,21 +1,22 @@
     .section .data
 
+.global _vt.11ResPtrSized
+_vt.11ResPtrSized:
+	.2byte 0
+	.2byte 0
+	.4byte 0
+	.2byte 0
+	.2byte 0
+	.4byte _._11ResPtrSized
+
 .global _vt.6ResPtr
-_vt.6ResPtr:
+_vt.6ResPtr::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
 	.4byte _._6ResPtr
-
-vt_09F44F18::
-	.2byte 0
-	.2byte 0
-	.4byte 0
-	.2byte 0
-	.2byte 0
-	.4byte sub_0805D2B4
 
 .global _vt.15SystemAllocator
 _vt.15SystemAllocator:
@@ -89511,7 +89512,7 @@ vt_09F7E988::
 	.2byte 0
 	.4byte sub_0806DBE4
 
-vt_09F7EA80::
+_vt.9SARHandle::
 	.2byte 0
 	.2byte 0
 	.4byte 0

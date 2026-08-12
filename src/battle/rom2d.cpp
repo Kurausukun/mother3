@@ -241,7 +241,7 @@ BGHandle::BGHandle() {
     mBlock = NULL;
 }
 
-BGHandle::BGHandle(const ResPtr& ref) {
+BGHandle::BGHandle(const ResPtrSized& ref) {
     mType = 0;
     mReserve = NULL;
     mCount = 0;
@@ -253,7 +253,7 @@ BGHandle::~BGHandle() {
     delete[] mReserve;
 }
 
-int BGHandle::init(const ResPtr& ref) {
+int BGHandle::init(const ResPtrSized& ref) {
     delete[] mReserve;
     mReserve = NULL;
 
@@ -271,7 +271,7 @@ int BGHandle::init(const ResPtr& ref) {
     return 1;
 }
 
-int BGHandle::type(const ResPtr& ref) {
+int BGHandle::type(const ResPtrSized& ref) {
     if (RESOURCE(ref)->header != HEADER_BG) {
         return 1;
     } else {
@@ -279,12 +279,12 @@ int BGHandle::type(const ResPtr& ref) {
     }
 }
 
-void BGHandle::read1(const ResPtr& ref) {
+void BGHandle::read1(const ResPtrSized& ref) {
     mCount = ref.size >> 1;
     mBlock = ref.address;
 }
 
-void BGHandle::read2(const ResPtr& ref) {
+void BGHandle::read2(const ResPtrSized& ref) {
     Resource* bg = RESOURCE(ref);
 
     mCount = bg->count;
@@ -295,7 +295,7 @@ void BGHandle::read2(const ResPtr& ref) {
     mBlock = mReserve;
 }
 
-void BGHandle::_fd4(const ResPtr& ref) {
+void BGHandle::_fd4(const ResPtrSized& ref) {
     mType = 256;
     _2 = 256;
 }

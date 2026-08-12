@@ -9,7 +9,7 @@ sub_0806FC28:
 	adds r0, r4, #0
 	adds r0, #0x20
 	movs r1, #2
-	bl sub_0805D2B4
+	bl _._6ResPtr
 	adds r0, r4, #0
 	adds r1, r5, #0
 	bl _._4Base
