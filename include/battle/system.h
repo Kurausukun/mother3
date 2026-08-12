@@ -9,14 +9,14 @@ struct SAREntry {
     u32 size;
 };
 
+struct SARHandle {
+    SARHandle();
+    virtual ~SARHandle();
+    char* ptr;
+};
+
 class System : Base {
 public:
-    struct SARHandle {
-        SARHandle();
-        virtual ~SARHandle();
-        char* ptr;
-    };
-
     System();
     virtual ~System();
 

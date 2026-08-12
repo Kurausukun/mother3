@@ -394,8 +394,8 @@ gUnknown_09C908E0::
 gUnknown_09C90920::
     .incbin "baserom.gba", 0x01C90920, 0x40
 
-    .global gUnknown_09C90960
-gUnknown_09C90960:
+    .global gBattleSAR
+gBattleSAR:
     .incbin "baserom.gba", 0x01C90960, 0x2b3e40
 
 gUnknown_09F447A0::

@@ -1,9 +1,9 @@
 	.syntax unified
-__Q26System9SARHandle:
+__9SARHandle:
 	push {r4, r5, lr}
 	sub sp, #0xc
 	adds r4, r0, #0
-	bl sub_0805D2A4
+	bl __6ResPtr
 	ldr r0, _080687A0
 	str r0, [r4, #4]
 	ldr r0, _080687A4
@@ -15,7 +15,7 @@ __Q26System9SARHandle:
 	str r1, [sp, #4]
 	adds r0, r4, #0
 	mov r1, sp
-	bl sub_0805D2D4
+	bl set__6ResPtrR6ResPtr
 	str r5, [sp, #8]
 	adds r0, r4, #0
 	add sp, #0xc
@@ -23,7 +23,7 @@ __Q26System9SARHandle:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080687A0: .4byte vt_09F7EA80
-_080687A4: .4byte gUnknown_09C90960
-_080687A8: .4byte _vt.6ResPtr
+_080687A0: .4byte _vt.9SARHandle
+_080687A4: .4byte gBattleSAR
+_080687A8: .4byte _vt.11ResPtrSized
 	.syntax divided
