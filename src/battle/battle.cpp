@@ -340,6 +340,7 @@ BattleFader* Battle::battle_150() {
     return _30;
 }
 
+// TODO: This returns a pointer, figure out what it is
 s32 Battle::battle_158() {
     return _34;
 }

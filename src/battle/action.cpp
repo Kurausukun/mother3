@@ -165,7 +165,7 @@ void Action::playSfx() {
 void Action::tellUseMessage() {
     Msg m = getUseMessage();
 
-    m.print(Color(0, 0, 0), true);
+    m.print(Color::Black(), true);
 }
 
 void Action::playDim() {
@@ -193,7 +193,7 @@ void Action::action_a0(Unit* target) {
     if (element() == ElementType::Thunder && IsPlayerAndType(target, Player::Lucas) == true &&
         getPartyInfo()->party_info_f8(0xc1) == true) {
         PlayAnimation(Animation::FranklinBadge, target, target);
-        ROMStr(0x188).print(Color(0, 0, 0), 1);
+        ROMStr(0x188).print(Color::Black(), 1);
         if (isMonsterVariant(getUser(), Monster::MaskedMan2nd) == true ||
             isMonsterVariant(getUser(), Monster::MaskedMan3rd) == true) {
             hitPlayer(getUser(), randS32(164, 186), 1);
@@ -268,7 +268,7 @@ bool Action::isResisted(Unit* target) {
 
 void Action::tellResisted(Unit* target) {
     // It had no visible effect on [25 EF][12 FF]!
-    ROMStr(0xec).print(Color(0, 0, 0), true);
+    ROMStr(0xec).print(Color::Black(), true);
 }
 
 u8 Action::calcDidHit(Unit* target) {
@@ -303,7 +303,7 @@ NONMATCH("asm/non_matching/skill/skill_08078D4C.inc", void Action::onDamage(Unit
             t /= 2;
         } else if (target->hasStatus(Status::Shield) == 1) {
             Status* s = target->findStatus(Status::Shield);
-            s->activeMsg().print(Color(0, 0, 0), 1);
+            s->activeMsg().print(Color::Black(), 1);
             PlayAnimation(0x33, target, target);
             t /= 2;
         }
@@ -318,7 +318,7 @@ NONMATCH("asm/non_matching/skill/skill_08078D4C.inc", void Action::onDamage(Unit
 
     if (target->hasStatus(Status::Counter) == 1) {
         Status* s = target->findStatus(Status::Counter);
-        s->activeMsg().print(Color(0, 0, 0), 1);
+        s->activeMsg().print(Color::Black(), 1);
         PlayAnimation(0x36, target, target);
         hitPlayer(getUser(), max(1, t), 1);
         PlayAnimation(successAnimNo(), target, getUser());
@@ -349,7 +349,7 @@ NONMATCH("asm/non_matching/skill/sub_08079018.inc", void Action::onAttack(Unit* 
         t /= 2;
     } else if (target->hasStatus(Status::Shield) == 1) {
         Status* s = target->findStatus(Status::Shield);
-        s->activeMsg().print(Color(0, 0, 0), 1);
+        s->activeMsg().print(Color::Black(), 1);
         PlayAnimation(0x33, target, target);
         t /= 2;
     }
@@ -360,7 +360,7 @@ NONMATCH("asm/non_matching/skill/sub_08079018.inc", void Action::onAttack(Unit* 
 
     if (target->hasStatus(Status::Counter) == 1) {
         Status* s = target->findStatus(Status::Counter);
-        s->activeMsg().print(Color(0, 0, 0), 1);
+        s->activeMsg().print(Color::Black(), 1);
         PlayAnimation(0x36, target, target);
         hitPlayer(getUser(), max(1, t), 1);
         PlayAnimation(successAnimNo(), target, getUser());
@@ -406,7 +406,7 @@ NONMATCH("asm/non_matching/skill/sub_080793B8.inc", void Action::onPsiDamage(Uni
             t /= 2;
         } else if (target->hasStatus(Status::PsiShield) == 1) {
             Status* s = target->findStatus(Status::PsiShield);
-            s->activeMsg().print(Color(0, 0, 0), 1);
+            s->activeMsg().print(Color::Black(), 1);
             PlayAnimation(0x39, target, target);
             t /= 2;
         }
@@ -422,7 +422,7 @@ NONMATCH("asm/non_matching/skill/sub_080793B8.inc", void Action::onPsiDamage(Uni
         IsMonsterSkillAndType(this, 101) != 1) {
         if (target->hasStatus(Status::PsiCounter) == 1) {
             Status* s = target->findStatus(Status::PsiCounter);
-            s->activeMsg().print(Color(0, 0, 0), 1);
+            s->activeMsg().print(Color::Black(), 1);
             PlayAnimation(0x3c, target, target);
             hitPlayer(getUser(), max(1, t), 1);
             PlayAnimation(successAnimNo(), target, getUser());
@@ -496,11 +496,11 @@ NONMATCH("asm/non_matching/skill/sub_08079EE4.inc",
          bool Action::action_130(Unit* target, u16 status, s32 chance, bool unk)) {
     if (target->hasStatus(status) != 1) {
         if (effect() == 6 && unk == 1) {
-            ROMStr(0xeb).print(Color(0, 0, 0), 1);
+            ROMStr(0xeb).print(Color::Black(), 1);
         }
         return false;
     } else if (randS32(0, 99) < chance) {
-        ROMStr(0xec).print(Color(0, 0, 0), 1);
+        ROMStr(0xec).print(Color::Black(), 1);
         return false;
     } else {
         return statusWearOff(target, status, unk);
