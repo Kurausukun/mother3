@@ -48,7 +48,7 @@
 . = 0x00001A50; gUnknown_02001A50 = .;
 . = 0x00001A58; gUnknown_02001A58 = .;
 . = 0x00001B58; gUnknown_02001B58 = .;
-. = 0x00001C58; gUnknown_02001C58 = .;
+. = 0x00001C58; gRNG = .;
 . = 0x00001C5C; sIrcManager = .;
 . = 0x00001C68; _10IrcManager.mSingletonGuard = .;
 . = 0x00001C6C; _10IrcManager.mSingleton = .;

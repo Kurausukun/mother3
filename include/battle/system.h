@@ -26,4 +26,6 @@ public:
 };
 MANAGER_DECL_INLINE(System);
 
+extern s32 gRNG;
+
 #endif  // BATTLE_SYSTEM_H

@@ -85,7 +85,7 @@ sub_0808A03C:
 	mov r1, r8
 	ldrh r0, [r1, #0xa]
 	ldrh r1, [r1, #0xc]
-	bl sub_0805D234
+	bl randRange__Fii
 	adds r1, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
@@ -98,14 +98,14 @@ sub_0808A03C:
 	mov r2, r8
 	ldrh r1, [r2, #0x16]
 	rsbs r0, r1, #0
-	bl sub_0805D234
+	bl randRange__Fii
 	mov r3, r8
 	ldrh r1, [r3, #0x10]
 	adds r1, r1, r0
 	strh r1, [r6]
 	ldrh r1, [r3, #0x16]
 	rsbs r0, r1, #0
-	bl sub_0805D234
+	bl randRange__Fii
 	mov r2, r8
 	ldrh r1, [r2, #0x12]
 	adds r1, r1, r0

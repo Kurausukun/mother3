@@ -45,7 +45,7 @@ sub_0806FA14:
 	ldr r5, _0806FB5C
 	movs r0, #0
 	adds r1, r5, #0
-	bl sub_0805D234
+	bl randRange__Fii
 	adds r4, r0, #0
 	ldr r3, [sp]
 	lsls r6, r3, #0x10
@@ -84,7 +84,7 @@ sub_0806FA14:
 	strh r0, [r7, #0x34]
 	movs r0, #0
 	movs r1, #0xff
-	bl sub_0805D234
+	bl randRange__Fii
 	ldrh r1, [r7, #0x34]
 	muls r0, r1, r0
 	strh r0, [r7, #0x34]

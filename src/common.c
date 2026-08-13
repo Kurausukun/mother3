@@ -8,7 +8,7 @@ bool8 ch_is_kumatora(CharStats* ch);
 bool8 sub_0805C58C(u8* data, s32);
 void sub_0805C548(u8*, s32, bool8);
 u32 sub_0805C168(s32 num);
-int sub_0805D234(int, int);
+int randRange(int, int);
 int Div(int, int);
 
 u32 getNeededXP(CharStats* ch, const LevelStats* ls, s32 level);
@@ -49,7 +49,7 @@ NONMATCH("asm/non_matching/common/sub_0805C114.inc",
     }
     tmp = (r2 - r0 != 0 ? Div(tmp, r2 - r0) : r2 - r4);
     tmp2 = tmp * (r1 - r3);
-    tmp2 = sub_0805D234(tmp2, tmp2 + sub_0805C168(r4));
+    tmp2 = randRange(tmp2, tmp2 + sub_0805C168(r4));
     r3 = r5;
     if (tmp2 < r5)
         r3 = tmp;
@@ -1494,97 +1494,5 @@ adds r0, r0, r1\n\
 pop {r4}\n\
 pop {r1}\n\
 bx r1\n\
-");
-}
-NAKED void sub_0805D210() {
-    asm_unified("\n\
-ldr r1, _0805D218 @ =gUnknown_02001C58\n\
-str r0, [r1]\n\
-bx lr\n\
-.align 2, 0\n\
-_0805D218: .4byte gUnknown_02001C58\n\
-");
-}
-NAKED void sub_0805D21C() {
-    asm_unified("\n\
-ldr r2, _0805D230 @ =gUnknown_02001C58\n\
-ldr r1, [r2]\n\
-adds r1, #8\n\
-lsls r0, r1, #3\n\
-adds r0, r0, r1\n\
-lsls r0, r0, #3\n\
-subs r0, r0, r1\n\
-adds r0, #0x25\n\
-str r0, [r2]\n\
-bx lr\n\
-.align 2, 0\n\
-_0805D230: .4byte gUnknown_02001C58\n\
-");
-}
-NAKED int sub_0805D234(int arg0, int arg1) {
-    asm_unified("\n\
-push {r4, lr}\n\
-ldr r4, _0805D25C @ =gUnknown_02001C58\n\
-ldr r3, [r4]\n\
-adds r3, #5\n\
-lsls r2, r3, #4\n\
-adds r2, r2, r3\n\
-lsls r2, r2, #2\n\
-subs r2, r2, r3\n\
-adds r2, #0x1f\n\
-str r2, [r4]\n\
-subs r3, r0, #1\n\
-subs r1, r1, r3\n\
-lsls r2, r2, #0x18\n\
-lsrs r2, r2, #0x18\n\
-muls r1, r2, r1\n\
-asrs r1, r1, #8\n\
-adds r0, r0, r1\n\
-pop {r4}\n\
-pop {r1}\n\
-bx r1\n\
-.align 2, 0\n\
-_0805D25C: .4byte gUnknown_02001C58\n\
-");
-}
-NAKED void sub_0805D260() {
-    asm_unified("\n\
-push {lr}\n\
-adds r2, r0, #0\n\
-movs r3, #0\n\
-cmp r1, #1\n\
-ble _0805D276\n\
-_0805D26A:\n\
-ldrh r0, [r2]\n\
-adds r3, r3, r0\n\
-adds r2, #2\n\
-subs r1, #4\n\
-cmp r1, #1\n\
-bgt _0805D26A\n\
-_0805D276:\n\
-cmp r1, #0\n\
-bge _0805D284\n\
-ldrh r1, [r2]\n\
-movs r0, #0xff\n\
-lsls r0, r0, #8\n\
-ands r0, r1\n\
-adds r3, r3, r0\n\
-_0805D284:\n\
-ldr r2, _0805D2A0 @ =0x0000FFFF\n\
-adds r0, r3, #0\n\
-ands r0, r2\n\
-lsrs r1, r3, #0x10\n\
-adds r3, r0, r1\n\
-adds r0, r3, #0\n\
-ands r0, r2\n\
-lsrs r1, r3, #0x10\n\
-adds r3, r0, r1\n\
-mvns r0, r3\n\
-lsls r0, r0, #0x10\n\
-lsrs r0, r0, #0x10\n\
-pop {r1}\n\
-bx r1\n\
-.align 2, 0\n\
-_0805D2A0: .4byte 0x0000FFFF\n\
 ");
 }

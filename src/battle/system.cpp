@@ -15,9 +15,8 @@ extern "C" void destroy__10IrcManager();
 extern "C" u16 get_progression_flag(u32);
 extern "C" void incrementSavePlaytime();
 extern "C" void DoReset();
-extern "C" void randomMT();
+extern "C" s32 randomMT();
 extern "C" void seedMT(s32);
-extern "C" void sub_0805D210();
 extern "C" void makeInstance__14GEngineManager();
 extern "C" void makeInstance__15BGEngineManager();
 extern "C" void sub_0806CBE0();
@@ -40,6 +39,66 @@ struct SystemAllocator : FitAllocator {
 SystemAllocator* gSystemAllocator;
 
 extern u8 sSystemAllocator[sizeof(SystemAllocator)];
+
+void setRNG(s32 seed) {
+    gRNG = seed;
+}
+
+void shuffleRNG() {
+    gRNG = ((gRNG + 8) * 0x47) + 0x25;
+}
+
+s32 randRange(s32 arg0, s32 arg1) {
+    register u32 r3 asm("r3") = gRNG + 5; // FAKEMATCH
+    s32 r2 = (r3 * 0x43) + 0x1F;
+    gRNG = r2;
+    r3 = arg0 - 1;
+    arg1 = arg1 - r3;
+    r2 = (u8)r2;
+    return arg0 + ((s32) (r2 * arg1) >> 8);
+}
+
+extern "C" NAKED void sub_0805D260() {
+    asm_unified("\n\
+push {lr}\n\
+adds r2, r0, #0\n\
+movs r3, #0\n\
+cmp r1, #1\n\
+ble _0805D276\n\
+_0805D26A:\n\
+ldrh r0, [r2]\n\
+adds r3, r3, r0\n\
+adds r2, #2\n\
+subs r1, #4\n\
+cmp r1, #1\n\
+bgt _0805D26A\n\
+_0805D276:\n\
+cmp r1, #0\n\
+bge _0805D284\n\
+ldrh r1, [r2]\n\
+movs r0, #0xff\n\
+lsls r0, r0, #8\n\
+ands r0, r1\n\
+adds r3, r3, r0\n\
+_0805D284:\n\
+ldr r2, _0805D2A0 @ =0x0000FFFF\n\
+adds r0, r3, #0\n\
+ands r0, r2\n\
+lsrs r1, r3, #0x10\n\
+adds r3, r0, r1\n\
+adds r0, r3, #0\n\
+ands r0, r2\n\
+lsrs r1, r3, #0x10\n\
+adds r3, r0, r1\n\
+mvns r0, r3\n\
+lsls r0, r0, #0x10\n\
+lsrs r0, r0, #0x10\n\
+pop {r1}\n\
+bx r1\n\
+.align 2, 0\n\
+_0805D2A0: .4byte 0x0000FFFF\n\
+");
+}
 
 ResPtr::ResPtr() : address(0) {}
 
@@ -110,9 +169,7 @@ MANAGER_IMPL(System)
 
 System::System() {
     seedMT(gSave.playtime + 0x1111);
-    randomMT();
-
-    sub_0805D210();
+    setRNG(randomMT());
 
     IrcManager::makeInstance();
     IrcManager::get()->init(&gIntrHandlers);
