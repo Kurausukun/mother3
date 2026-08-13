@@ -27,7 +27,7 @@ public:
     virtual ~ResPtr();
 
     bool set(ResPtr& ref);
-    u16 type() const;
+    s32 type() const;
     
     char* address;
 };
@@ -143,6 +143,6 @@ struct BattleMessage : Msg {
     BattleMessage(BXTHandle* handle, u32 index);
 };
 
-extern "C" ResPtrSized LoadRes(SARHandle* archive, u32 idx);
+extern "C" ResPtrSized LoadRes(ResPtr* archive, u32 idx);
 
 #endif  // BATTLE_ARCHIVE_H

@@ -3,7 +3,7 @@ sub_08089F94:
 	push {r4, r5, r6, r7, lr}
 	sub sp, #0xc
 	adds r4, r0, #0
-	bl sub_0806FBA8
+	bl get__16EfcSystemManager
 	adds r5, r0, #0
 	ldr r2, [r5, #0x1c]
 	adds r2, #0x88

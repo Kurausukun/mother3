@@ -32,7 +32,7 @@ sub_0808A03C:
 	mov r2, r8
 	ldr r3, [sp, #0x34]
 	str r2, [r3, #0x2c]
-	bl sub_0806FBA8
+	bl get__16EfcSystemManager
 	adds r4, r0, #0
 	ldr r2, [r4, #0x1c]
 	adds r2, #0x98

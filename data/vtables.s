@@ -92243,10 +92243,10 @@ _vt.9EfcSystem::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806FC28
+	.4byte _._9EfcSystem
 	.2byte 0
 	.2byte 0
-	.4byte getRTTI_9EfcSystem
+	.4byte getRTTI__9EfcSystem
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -92282,10 +92282,10 @@ _vt.9EfcSystem::
 	.4byte sub_0806FC54
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806FCC8
+	.4byte type__9EfcSystem
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806FCD4
+	.4byte loadEntry__9EfcSystemUi
 	.2byte 0
 	.2byte 0
 	.4byte sub_0806FCE8

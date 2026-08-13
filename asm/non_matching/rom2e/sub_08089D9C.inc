@@ -25,7 +25,7 @@ sub_08089D9C:
 	adds r0, r7, #0
 	adds r0, #0x34
 	bl __11Unk0806D64C
-	bl sub_0806FBA8
+	bl get__16EfcSystemManager
 	mov sb, r0
 	str r4, [r7, #0x2c]
 	ldr r2, [r0, #0x1c]

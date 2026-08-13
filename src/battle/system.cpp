@@ -109,7 +109,7 @@ bool ResPtr::set(ResPtr& ref) {
     return true;
 }
 
-u16 ResPtr::type() const {
+s32 ResPtr::type() const {
     if (address == 0) {
         return 0;
     }
@@ -118,7 +118,7 @@ u16 ResPtr::type() const {
 }
 
 
-extern "C" ResPtrSized LoadRes(SARHandle* archive, u32 idx) {
+extern "C" ResPtrSized LoadRes(ResPtr* archive, u32 idx) {
     char* arc = archive->address;
     if (!arc) {
         return ResPtrSized(0, 0);

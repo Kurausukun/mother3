@@ -175,7 +175,7 @@ _0805D9C6:
 	ldr r6, _0805DB6C
 	str r6, [sp, #0x18]
 	str r6, [sp, #0xc]
-	bl sub_0806FB78
+	bl makeInstance__16EfcSystemManager
 	adds r5, r0, #0
 	ldr r4, [r5, #0x1c]
 	adds r4, #0x68
