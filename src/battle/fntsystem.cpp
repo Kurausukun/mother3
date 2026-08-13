@@ -293,8 +293,7 @@ Msg Msg::bcd(s32 val) {
 Msg Msg::genMisctextMsg(u16* text, s32 len) {
     s32 validChars = 0;
 
-    // TODO: Define enum value for 0xFFFF
-    while (validChars < len && text[validChars] != 0xFFFF) {
+    while (validChars < len && text[validChars] != Msg::End) {
         validChars++;
     }
 

@@ -54,6 +54,8 @@ public:
     virtual u8 player_410(u32);
     virtual s32 player_414();
 
+    s32 tellStatUpgrade(Msg& levelUpMsg, s32 msgCounter, s32 statValue, u16 msgID);
+
     enum {
         None = 0x0,
         Flint = 0x1,

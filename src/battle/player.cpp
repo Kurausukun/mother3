@@ -39,7 +39,23 @@ extern "C" ASM_FUNC("asm/non_matching/player/sub_0807B4F8.inc", void onNoStatus_
 extern "C" ASM_FUNC("asm/non_matching/player/sub_0807B528.inc", void kill__6Player());
 extern "C" ASM_FUNC("asm/non_matching/player/sub_0807B5D4.inc", void revive__4Player());
 extern "C" ASM_FUNC("asm/non_matching/player/levelUp.inc", void levelUp__6Playeri());
-extern "C" ASM_FUNC("asm/non_matching/player/tellStatUpgrade.inc", void tellStatUpgrade());
+
+s32 Player::tellStatUpgrade(Msg& levelUpMsg, s32 msgCounter, s32 statValue, u16 msgID) {
+    if (statValue > 0) {
+        levelUpMsg.concatenate(ROMStrFmt(msgID, Msg::bcd(statValue), Msg(), Msg()));
+
+        if (msgCounter % 2 == 1) {
+            levelUpMsg.appendCharacter(Msg::Wait2);
+        } else {
+            levelUpMsg.appendCharacter(Msg::Break);
+        }
+
+        msgCounter++;
+    }
+
+    return msgCounter;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/player/sub_0807BAE4.inc", void sub_0807BAE4());
 extern "C" ASM_FUNC("asm/non_matching/player/sub_0807BB1C.inc", void sub_0807BB1C());
 extern "C" ASM_FUNC("asm/non_matching/player/sub_0807BBA4.inc", void setHP__6Playeri());

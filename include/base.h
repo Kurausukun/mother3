@@ -103,9 +103,7 @@ public:
     Msg* concatenate(const Msg&);
     Msg* insertAt(s32, const Msg&);
 
-    enum CCode {
-        Break = 0xFF01,
-    };
+    enum CCode { Break = 0xFF01, Wait2 = 0xFF02, End = 0xFFFF };
 
 private:
     void setText(const u16* text, s32 len);
