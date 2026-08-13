@@ -6,7 +6,7 @@
 static void main_loop();
 static void sub_080003D8();
 
-struct gameMode {
+struct engineMode {
     template <class T>
     struct Flags {
         T _1 : 1;
@@ -25,7 +25,7 @@ struct gameMode {
         Flags<u8> flags_u8;
     };
 };
-extern gameMode gEngineMode;
+extern engineMode gEngineMode;
 
 struct struct_020047E0 {
     u8 _0;
