@@ -92288,19 +92288,19 @@ _vt.9EfcSystem::
 	.4byte loadEntry__9EfcSystemUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806FCE8
+	.4byte get_28__9EfcSystem
 	.2byte 0
 	.2byte 0
 	.4byte sub_0806FCEC
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806FD10
+	.4byte get_30__9EfcSystem
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806FD14
+	.4byte sub_0806FD14__9EfcSystemi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806FD1C
+	.4byte get_38__9EfcSystem
 	.2byte 0
 	.2byte 0
 	.4byte sub_0806FD20

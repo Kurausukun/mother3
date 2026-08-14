@@ -71,9 +71,22 @@ ResPtrSized EfcSystem::loadEntry(u32 index) {
     return LoadRes(&res, index);
 }
 
-extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FCE8.inc", void sub_0806FCE8());
+u16 EfcSystem::get_28() {
+    return _28;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FCEC.inc", void sub_0806FCEC());
-extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FD10.inc", void sub_0806FD10());
-extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FD14.inc", void sub_0806FD14());
-extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FD1C.inc", void sub_0806FD1C());
+
+u16 EfcSystem::get_30() {
+    return _30;
+}
+
+s32 EfcSystem::sub_0806FD14(s32 arg1){
+    return _34 + (arg1 * 8);
+}
+
+u16 EfcSystem::get_38() {
+    return _38;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FD20.inc", void sub_0806FD20());

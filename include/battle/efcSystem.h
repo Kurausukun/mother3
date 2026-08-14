@@ -13,6 +13,10 @@ public:
     virtual void* getRTTI();
     virtual s32 type();
     virtual ResPtrSized loadEntry(u32);
+    virtual u16 get_28();
+    virtual u16 get_30();
+    virtual s32 sub_0806FD14(s32);
+    virtual u16 get_38();    
 
 private:
     ResPtr res;
