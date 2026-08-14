@@ -372,11 +372,9 @@ s32 Msg::len() const {
 }
 
 void Msg::resize(s32 size) {
-    u16* oldText;
-
     if (mCapacity < size) {
         size = max(mCapacity * 2, size);
-        oldText = mText;
+        u16* oldText = mText;
         mText = new u16[size];
         mCapacity = size;
 

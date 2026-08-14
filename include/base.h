@@ -104,13 +104,25 @@ public:
     Msg* insertAt(s32, const Msg&);
 
     enum CCode {
+
         Break = 0xFF01,
+
+        // User must press A to advance message, continues on new line
+        // TODO: Better name
         Wait2 = 0xFF02,
+
+        // Generic string substitution
+        FmtArg0 = 0xFF10,
+        FmtArg1 = 0xFF11,
+        FmtArg2 = 0xFF12,
+
+        // Create a pause in the text for N frames
         Pause5 = 0xFF30,
         Pause10 = 0xFF31,
         Pause30 = 0xFF32,
         Pause60 = 0xFF33,
         Pause90 = 0xFF34,
+
         End = 0xFFFF
     };
 

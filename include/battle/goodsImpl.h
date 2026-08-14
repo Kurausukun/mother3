@@ -303,7 +303,7 @@ public:
         playSound(0x55e);
 
         PlayAnimation(Animation::NoEffect, getUser(), getTarget(0));
-        // [04 EF][12 FF] slipped violently!
+        // [04 EF][FMT_ARG2] slipped violently!
         ROMStr(0x190).print(Color::Black(), true);
     }
 };
@@ -349,8 +349,8 @@ public:
         } else {
             hp = 20;
         }
-        // [12 FF] loves cheese!
-        // [12 FF] isn't too fond of cheese.
+        // [FMT_ARG2] loves cheese!
+        // [FMT_ARG2] isn't too fond of cheese.
         ROMStr(hp >= 60 ? 0x186 : 0x187).print(Color::Black(), true);
         InitHeal(target, hp, 1);
     }
@@ -474,7 +474,7 @@ public:
     }
 
     void tellResisted(Unit* target) {
-        // But it didn't work on [05 EF][12 FF]
+        // But it didn't work on [05 EF][FMT_ARG2]
         ROMStr(0x154).print(Color::Black(), true);
     }
 
@@ -521,7 +521,7 @@ public:
 
     void tellResisted(Unit* target) {
         PlaySoundBlocking(0x451);
-        // But it didn't work on [05 EF][12 FF]!
+        // But it didn't work on [05 EF][FMT_ARG2]!
         ROMStr(0x154).print(Color::Black(), true);
     }
 
@@ -532,7 +532,7 @@ public:
         Monster* m = dynaCastMonster(target);
         m->monster_300(true);
         sub_08073E3C(target, 0x33, 0);
-        // [04 EF][12 FF] was tricked into turning around!
+        // [04 EF][FMT_ARG2] was tricked into turning around!
         ROMStr(0x176).print(Color::Black(), true);
     }
 };
@@ -549,7 +549,7 @@ public:
                 statusWearOff(target, Status::Strange, i + 1 >= count);
             }
         } else {
-            // But it didn't work on [05 EF][12 FF]!
+            // But it didn't work on [05 EF][FMT_ARG2]!
             ROMStr(0x154).print(Color::Black(), true);
         }
     }
@@ -621,10 +621,10 @@ public:
             target->removeStatus(Status::PsiCounter);
             playSound(0x62b);
             PlayAnimation(Animation::KO, target, target);
-            // [24 EF][12 FF]'s shield disappeared!
+            // [24 EF][FMT_ARG2]'s shield disappeared!
             ROMStr(0x17a).print(Color::Black(), true);
         } else {
-            // But it didn't work on [05 EF][12 FF]!
+            // But it didn't work on [05 EF][FMT_ARG2]!
             ROMStr(0x154).print(Color::Black(), true);
         }
     }
@@ -653,17 +653,17 @@ public:
 
     void onSuccess(Unit* target) {
         Action::onSuccess(target);
-        // [11 FF] grasped the [10 FF] tightly and pounced on the [12 FF]![PAUSE30]
+        // [FMT_ARG1] grasped the [FMT_ARG0] tightly and pounced on the [FMT_ARG2]![PAUSE30]
         ROMStr(0x182).print(Color::Black(), true);
         PlaySoundBlocking(0x554);
         PlayAnimation(Animation::ShakeLong, target, target);
-        // It pierced the [12 FF]'s tough hide![PAUSE30][WAIT]The [12 FF] let out a howl!
+        // It pierced the [FMT_ARG2]'s tough hide![PAUSE30][WAIT]The [FMT_ARG2] let out a howl!
         ROMStr(0x183).print(Color::Black(), true);
     }
 
     void tellMissed(Unit* target) {
-        // 018A: With the [10 FF] in hand, [11 FF] sprung upon the [12 FF]![PAUSE30][WAIT]But the
-        // [12 FF]'s tough hide had already been pierced![END]
+        // 018A: With the [FMT_ARG0] in hand, [FMT_ARG1] sprung upon the
+        // [FMT_ARG2]![PAUSE30][WAIT]But the [FMT_ARG2]'s tough hide had already been pierced![END]
         ROMStr(0x18a).print(Color::Black(), true);
     }
 };

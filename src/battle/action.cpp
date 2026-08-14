@@ -267,7 +267,7 @@ bool Action::isResisted(Unit* target) {
 }
 
 void Action::tellResisted(Unit* target) {
-    // It had no visible effect on [25 EF][12 FF]!
+    // It had no visible effect on [25 EF][FMT_ARG2]!
     ROMStr(0xec).print(Color::Black(), true);
 }
 

@@ -360,18 +360,18 @@ Msg ROMStrFmt(s32 r0, const Msg& r1, const Msg& r2, const Msg& r3) {
     return StrFmt(sub_08073444(r0), r1, r2, r3);
 }
 
-Msg StrFmt(const Msg& templateStr, const Msg& arg1, const Msg& arg2, const Msg& arg3) {
+Msg StrFmt(const Msg& templateStr, const Msg& fmtArg0, const Msg& fmtArg1, const Msg& fmtArg2) {
     Msg formatted = Msg();
 
     // TODO: Identify message control codes
     for (s32 i = 0; i < templateStr.len(); i++) {
-        if (templateStr.getTextAtOffset(i)[0] == 0xFF10) {
-            formatted.concatenate(arg1);
-        } else if (templateStr.getTextAtOffset(i)[0] == 0xFF11) {
-            formatted.concatenate(arg2);
-        } else if (templateStr.getTextAtOffset(i)[0] == 0xFF12) {
-            formatted.concatenate(arg3);
-        } else if (templateStr.getTextAtOffset(i)[0] > 0xFF12 &&
+        if (templateStr.getTextAtOffset(i)[0] == Msg::FmtArg0) {
+            formatted.concatenate(fmtArg0);
+        } else if (templateStr.getTextAtOffset(i)[0] == Msg::FmtArg1) {
+            formatted.concatenate(fmtArg1);
+        } else if (templateStr.getTextAtOffset(i)[0] == Msg::FmtArg2) {
+            formatted.concatenate(fmtArg2);
+        } else if (templateStr.getTextAtOffset(i)[0] > Msg::FmtArg2 &&
                    templateStr.getTextAtOffset(i)[0] < 0xFF22) {
             formatted.concatenate(createPlayerName(templateStr.getTextAtOffset(i)[0] + 0xED));
         } else if (templateStr.getTextAtOffset(i)[0] == 0xFFE0) {
