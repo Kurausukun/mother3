@@ -53,4 +53,4 @@ private:
 
 RTTI_DECL(Psi);
 
-#endif // BATTLE_PSI_H
+#endif  // BATTLE_PSI_H

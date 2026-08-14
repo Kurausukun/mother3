@@ -1,28 +1,28 @@
 // Auto-generated source file
-#include "global.h"
 #include "battle.h"
+#include "global.h"
 #include "singleton.h"
 
 extern "C" ASM_FUNC("asm/non_matching/battleImpl/sub_080977B4.inc", void init__13BattleManager());
 extern "C" ASM_FUNC("asm/non_matching/battleImpl/sub_080977C4.inc", void getName__13BattleManager());
 RTTI_DEBUG_IMPL(ShowDownAsLose);
-extern "C" ASM_FUNC("asm/non_matching/battleImpl/sub_080977F4.inc", void dt__14ShowDownAsLose()); // _._14ShowDownAsLose
+extern "C" ASM_FUNC("asm/non_matching/battleImpl/sub_080977F4.inc", void dt__14ShowDownAsLose());  // _._14ShowDownAsLose
 RTTI_DEBUG_IMPL(ShowDownAsEscape);
-extern "C" ASM_FUNC("asm/non_matching/battleImpl/sub_08097830.inc", void dt__16ShowDownAsEscape()); // _._16ShowDownAsEscape
+extern "C" ASM_FUNC("asm/non_matching/battleImpl/sub_08097830.inc", void dt__16ShowDownAsEscape());  // _._16ShowDownAsEscape
 RTTI_DEBUG_IMPL(ShowDownAsWin);
-extern "C" ASM_FUNC("asm/non_matching/battleImpl/sub_0809786C.inc", void dt__13ShowDownAsWin()); // _._13ShowDownAsWin
+extern "C" ASM_FUNC("asm/non_matching/battleImpl/sub_0809786C.inc", void dt__13ShowDownAsWin());  // _._13ShowDownAsWin
 extern "C" ASM_FUNC("asm/non_matching/battleImpl/sub_08097880.inc", void init__15UnitTurnEndRTTI());
 extern "C" ASM_FUNC("asm/non_matching/battleImpl/sub_08097890.inc", void getName__15UnitTurnEndRTTI());
-extern "C" ASM_FUNC("asm/non_matching/battleImpl/sub_08097898.inc", void dt__11UnitTurnEnd()); // _._11UnitTurnEnd
+extern "C" ASM_FUNC("asm/non_matching/battleImpl/sub_08097898.inc", void dt__11UnitTurnEnd());  // _._11UnitTurnEnd
 extern "C" ASM_FUNC("asm/non_matching/battleImpl/sub_080978AC.inc", void init__17UnitTurnBeginRTTI());
 extern "C" ASM_FUNC("asm/non_matching/battleImpl/sub_080978BC.inc", void getName__17UnitTurnBeginRTTI());
-extern "C" ASM_FUNC("asm/non_matching/battleImpl/sub_080978C4.inc", void dt__13UnitTurnBegin()); // _._13UnitTurnBegin
+extern "C" ASM_FUNC("asm/non_matching/battleImpl/sub_080978C4.inc", void dt__13UnitTurnBegin());  // _._13UnitTurnBegin
 extern "C" ASM_FUNC("asm/non_matching/battleImpl/sub_080978D8.inc", void init__12RoundEndRTTI());
 extern "C" ASM_FUNC("asm/non_matching/battleImpl/sub_080978E8.inc", void getName__12RoundEndRTTI());
-extern "C" ASM_FUNC("asm/non_matching/battleImpl/sub_080978F0.inc", void dt__8RoundEnd()); // _._8RoundEnd
+extern "C" ASM_FUNC("asm/non_matching/battleImpl/sub_080978F0.inc", void dt__8RoundEnd());  // _._8RoundEnd
 extern "C" ASM_FUNC("asm/non_matching/battleImpl/sub_08097904.inc", void init__14RoundBeginRTTI());
 extern "C" ASM_FUNC("asm/non_matching/battleImpl/sub_08097914.inc", void getName__14RoundBeginRTTI());
-extern "C" ASM_FUNC("asm/non_matching/battleImpl/sub_0809791C.inc", void dt__10RoundBegin()); // _._10RoundBegin
+extern "C" ASM_FUNC("asm/non_matching/battleImpl/sub_0809791C.inc", void dt__10RoundBegin());  // _._10RoundBegin
 extern "C" ASM_FUNC("asm/non_matching/battleImpl/MaskedManBattleB_ctor.inc", void create__23MaskedManBattleBFactoryUs());
 extern "C" ASM_FUNC("asm/non_matching/battleImpl/MaskedManBattleA_ctor.inc", void create__23MaskedManBattleAFactoryUs());
 extern "C" ASM_FUNC("asm/non_matching/battleImpl/PorkyBattle_ctor.inc", void create__18PorkyBattleFactoryUs());

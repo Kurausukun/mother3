@@ -200,7 +200,7 @@ void Action::action_a0(Unit* target) {
         } else {
             hitPlayer(getUser(), max(0, action_e8(getUser(), target)), 1);
         }
-        PlayAnimation(3, getUser(), getUser());
+        PlayAnimation(Animation::QuickWhiteFlash, getUser(), getUser());
         return;
     }
 
@@ -304,7 +304,7 @@ NONMATCH("asm/non_matching/skill/skill_08078D4C.inc", void Action::onDamage(Unit
         } else if (target->hasStatus(Status::Shield) == 1) {
             Status* s = target->findStatus(Status::Shield);
             s->activeMsg().print(Color::Black(), 1);
-            PlayAnimation(0x33, target, target);
+            PlayAnimation(Animation::ShieldHit, target, target);
             t /= 2;
         }
     }
@@ -319,7 +319,7 @@ NONMATCH("asm/non_matching/skill/skill_08078D4C.inc", void Action::onDamage(Unit
     if (target->hasStatus(Status::Counter) == 1) {
         Status* s = target->findStatus(Status::Counter);
         s->activeMsg().print(Color::Black(), 1);
-        PlayAnimation(0x36, target, target);
+        PlayAnimation(Animation::CounterHit, target, target);
         hitPlayer(getUser(), max(1, t), 1);
         PlayAnimation(successAnimNo(), target, getUser());
         statusWearOff(target, Status::Counter, 1);
@@ -349,8 +349,8 @@ NONMATCH("asm/non_matching/skill/sub_08079018.inc", void Action::onAttack(Unit* 
         t /= 2;
     } else if (target->hasStatus(Status::Shield) == 1) {
         Status* s = target->findStatus(Status::Shield);
-        s->activeMsg().print(Color::Black(), 1);
-        PlayAnimation(0x33, target, target);
+        s->activeMsg().print(Color::Black(), true);
+        PlayAnimation(Animation::ShieldHit, target, target);
         t /= 2;
     }
 
@@ -360,8 +360,8 @@ NONMATCH("asm/non_matching/skill/sub_08079018.inc", void Action::onAttack(Unit* 
 
     if (target->hasStatus(Status::Counter) == 1) {
         Status* s = target->findStatus(Status::Counter);
-        s->activeMsg().print(Color::Black(), 1);
-        PlayAnimation(0x36, target, target);
+        s->activeMsg().print(Color::Black(), true);
+        PlayAnimation(Animation::CounterHit, target, target);
         hitPlayer(getUser(), max(1, t), 1);
         PlayAnimation(successAnimNo(), target, getUser());
         statusWearOff(target, Status::Counter, 1);
@@ -406,8 +406,8 @@ NONMATCH("asm/non_matching/skill/sub_080793B8.inc", void Action::onPsiDamage(Uni
             t /= 2;
         } else if (target->hasStatus(Status::PsiShield) == 1) {
             Status* s = target->findStatus(Status::PsiShield);
-            s->activeMsg().print(Color::Black(), 1);
-            PlayAnimation(0x39, target, target);
+            s->activeMsg().print(Color::Black(), true);
+            PlayAnimation(Animation::PsiShieldHit, target, target);
             t /= 2;
         }
     }
@@ -422,8 +422,8 @@ NONMATCH("asm/non_matching/skill/sub_080793B8.inc", void Action::onPsiDamage(Uni
         IsMonsterSkillAndType(this, 101) != 1) {
         if (target->hasStatus(Status::PsiCounter) == 1) {
             Status* s = target->findStatus(Status::PsiCounter);
-            s->activeMsg().print(Color::Black(), 1);
-            PlayAnimation(0x3c, target, target);
+            s->activeMsg().print(Color::Black(), true);
+            PlayAnimation(Animation::PsiCounterHit, target, target);
             hitPlayer(getUser(), max(1, t), 1);
             PlayAnimation(successAnimNo(), target, getUser());
             statusWearOff(target, Status::PsiCounter, 1);

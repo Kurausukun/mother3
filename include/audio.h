@@ -1,11 +1,13 @@
 #ifndef AUDIO_H
 #define AUDIO_H
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include "gba/m4a_internal.h"
 #include "global.h"
 #include "structs.h"
-
-extern "C" {
 
 void init_audio();
 void snd_restart();
@@ -44,7 +46,7 @@ void setup_overworld_music(u16, s16);
 void sub_08008704(u16, s16);
 void sub_0800882C();
 u8 getMusicIDForRoom(u16);
-//code_08021920
+// code_08021920
 void sub_08027AE0();
 void sub_08027B84(u16, u16, u16, u16);
 void sub_08027BD0(u16, s16, s16, u16);
@@ -53,9 +55,11 @@ void sub_08027C40(SoundUnkInfo*);
 void sub_08027C98(SoundUnkInfo*);
 void sub_08027CD8(SoundUnkInfo*);
 void sub_08027D1C(SoundUnkInfo*);
-//code_0803D59C
+// code_0803D59C
 void sub_080401BC();
 
+#ifdef __cplusplus
 }
+#endif
 
 #endif

@@ -43,7 +43,7 @@ bool statusWearOff(Unit* unit, Status::Type type, bool print) {
         Status* s = unit->findStatus(type);
 
         if (print == true && s) {
-            s->woreOffMsg().print(Color::Black(), 1);
+            s->woreOffMsg().print(Color(0, 0, 0), 1);
         }
 
         return unit->removeOneStatus(type);
