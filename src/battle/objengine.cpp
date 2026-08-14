@@ -1,5 +1,5 @@
-#include "battle/clock.h"
 #include "battle/objengine.h"
+#include "battle/clock.h"
 #include "global.h"
 
 extern ClockData callback_sub_0806C1D8;

@@ -1,4 +1,4 @@
-#include "global.h"
+#include "battle/psiImpl.h"
 
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/create__16HealingGOFactoryUsP4Unit.inc", void create__16HealingGOFactoryUsP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/create__15HealingBFactoryUsP4Unit.inc", void create__15HealingBFactoryUsP4Unit());
@@ -27,7 +27,7 @@ extern "C" ASM_FUNC("asm/non_matching/psiImpl/__9PsiMagnetUsP4Unit.inc", void __
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/__8PkGroundUsP4Unit.inc", void __8PkGroundUsP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/__11PkThunderGOUsP4Unit.inc", void __11PkThunderGOUsP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/__11PkThunderABUsP4Unit.inc", void __11PkThunderABUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/psiImpl/__10DefaultPsiUsP4Unit.inc", void __10DefaultPsiUsP4Unit());
+DefaultPsi::DefaultPsi(u16 id, Unit* user) : Psi(id, user) {}
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/onFail__9HealingGOP4Unit.inc", void onFail__9HealingGOP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/dt__9HealingGO.inc", void dt__9HealingGO());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/onFail__8HealingBP4Unit.inc", void onFail__8HealingBP4Unit());
@@ -71,6 +71,32 @@ extern "C" ASM_FUNC("asm/non_matching/psiImpl/calcDidHit__11PkThunderABP4Unit.in
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/action_a0__11PkThunderABP4Unit.inc", void action_a0__11PkThunderABP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/playAnim__11PkThunderAB.inc", void playAnim__11PkThunderAB());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/dt__11PkThunderAB.inc", void dt__11PkThunderAB());
-extern "C" ASM_FUNC("asm/non_matching/psiImpl/hitChance__C10DefaultPsi.inc", void hitChance__C10DefaultPsi());
-extern "C" ASM_FUNC("asm/non_matching/psiImpl/tellResisted__10DefaultPsiP4Unit.inc", void tellResisted__10DefaultPsiP4Unit());
+
+s32 DefaultPsi::hitChance() const {
+    s32 chance = Psi::hitChance();
+
+    if (chance < 100) {
+        if (getUser()->hasStatus(Status::Crying) == true) {
+            if (effect() == EffectType::Damage || effect() == EffectType::Attack) {
+                chance = sub_0807066C(chance * 60, 100);
+            }
+        }
+    }
+    return chance;
+}
+
+void DefaultPsi::tellResisted(Unit* target) {
+    if (isMonsterVariant(target, Monster::BarrierTrio) == true &&
+        target->getElementWeakness(element()) <= 0) {
+        playSound(0x50A);
+        PlayAnimation(Animation::WhiteFlash, target, target);
+
+        // The Barrier Pose made the [10 FF] dissipate![END]
+        action_160(0x4F3, name()).print(Color(0, 0, 0), true);
+        return;
+    }
+
+    Action::tellResisted(target);
+}
+
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/dt__10DefaultPsi.inc", void dt__10DefaultPsi());
