@@ -96,19 +96,19 @@ gMapInfoTable:
 gMapGraphicsTable:
     .incbin "baserom.gba", 0x00D34F44, 0x659C
 
-    .global gUnknown_08D3B4E0
-gUnknown_08D3B4E0:
+    .global gMapGfxInfoData
+gMapGfxInfoData:
     .incbin "baserom.gba", 0x00D3B4E0, 0x200E64
 
     .global gMapPalettes
 gMapPalettes:
     .incbin "baserom.gba", 0x00F3C344, 0x53CF8
 
-    .global gUnknown_08F9003C
-gUnknown_08F9003C:
+    .global gMapTilemapData
+gMapTilemapData:
     .incbin "baserom.gba", 0x00F9003C, 0xbd990
 
-gUnknown_0904D9CC::
+gMapTileData::
     .incbin "baserom.gba", 0x0104D9CC, 0xd04e8
 
 gDoorHotSpotTable::
@@ -117,7 +117,7 @@ gDoorHotSpotTable::
 gUnknown_0912C390::
     .incbin "baserom.gba", 0x0112C390, 0x67c8
 
-gUnknown_09132B58::
+gObjectData::
     .incbin "baserom.gba", 0x01132B58, 0x330b8
 
 gGiftBoxTable::

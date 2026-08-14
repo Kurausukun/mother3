@@ -18,6 +18,6 @@ sub_0801B498:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0801B4BC: .4byte gUnknown_09132B58
+_0801B4BC: .4byte gObjectData
 _0801B4C0: .4byte gGame
 	.syntax divided
