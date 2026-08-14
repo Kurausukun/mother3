@@ -106,4 +106,4 @@ extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0807C634.inc", void sub_08
 extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0807C654.inc", void sub_0807C654());
 extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0807C674.inc", void sub_0807C674());
 extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0807C694.inc", void sub_0807C694());
-extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0807C6B8.inc", void __6Player()); // 6Player
+extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0807C6B8.inc", void __6Player());  // 6Player

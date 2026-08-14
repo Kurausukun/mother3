@@ -1,4 +1,5 @@
 // Auto-generated source file
+#include "audio.h"
 #include "battle/guest.h"
 #include "battle/irc.h"
 #include "enums.h"
@@ -7,7 +8,6 @@
 #include "global.h"
 #include "m4a.h"
 #include "overworld/script.h"
-#include "audio.h"
 #include "structs.h"
 
 extern const char _binary_build_mother3_assets_misctext_bin_start;

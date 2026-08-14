@@ -10,7 +10,7 @@
 #include "battle/unitTarget.h"
 #include "global.h"
 
-extern u32 sRhythmInRTTI;  // TODO: confirm type
+extern u32 sRhythmInRTTI;   // TODO: confirm type
 extern u32 sRhythmOutRTTI;  // TODO: confirm type
 extern u32 sRhythmBgmRTTI;  // TODO: confirm type
 extern Intr2 callback_sub_0807489C;
@@ -21,10 +21,13 @@ extern "C" BattleFader* sub_08072568();
 extern "C" BattleFader* sub_08072588();
 extern "C" BattleFader* sub_080725A8();
 extern "C" Action* create__19MonsterSkillFactoryUsP4Unit(u16 arg0, Unit* user);
-extern "C" Action* create__18PlayerSkillFactoryUsP4Unit(u16 arg0, Unit* user);                      // TODO: confirm return type
-extern "C" Action* create__10PsiFactoryUsP4Unit(u16 arg0, Unit* user);                      // TODO: confirm return type
-extern "C" Action* create__12GoodsFactoryUsP4UnitUs(u16 arg0, Unit* arg1, u16 arg2);  // TODO: confirm return type
-extern "C" Action* create__17GuestSkillFactoryUsP4Unit(u16 arg0, Unit* user);                      // TODO: confirm return type
+extern "C" Action* create__18PlayerSkillFactoryUsP4Unit(u16 arg0,
+                                                        Unit* user);    // TODO: confirm return type
+extern "C" Action* create__10PsiFactoryUsP4Unit(u16 arg0, Unit* user);  // TODO: confirm return type
+extern "C" Action* create__12GoodsFactoryUsP4UnitUs(u16 arg0, Unit* arg1,
+                                                    u16 arg2);  // TODO: confirm return type
+extern "C" Action* create__17GuestSkillFactoryUsP4Unit(u16 arg0,
+                                                       Unit* user);  // TODO: confirm return type
 
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_080736F8.inc", void sub_080736F8());
 extern "C" ASM_FUNC("asm/non_matching/rhythm/hitPlayer.inc", void hitPlayer());
@@ -36,13 +39,13 @@ extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08073D98.inc", void sub_08073D9
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08073E3C.inc", void sub_08073E3C());
 
 bool statusWearOff(Unit* unit, Status::Type type, bool print) {
-    if (unit->hasStatus(type) == 1){
+    if (unit->hasStatus(type) == 1) {
         Status* s = unit->findStatus(type);
-        
-        if (print == true && s){
+
+        if (print == true && s) {
             s->woreOffMsg().print(Color(0, 0, 0), 1);
         }
-            
+
         return unit->removeOneStatus(type);
     }
     return false;

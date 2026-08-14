@@ -1,7 +1,7 @@
 // Auto-generated source file#include "battle/keypad.h"
 #include "base.h"
-#include "battle/clock.h"
 #include "battle/archive.h"
+#include "battle/clock.h"
 #include "global.h"
 
 extern ClockData callback_sub_0806D878;

@@ -17,11 +17,11 @@ Clock::~Clock() {}
 
 void Clock::sleep(s32 duration) {
     s32 dur = duration;
-    if (duration <= 0){
+    if (duration <= 0) {
         return;
     }
     do {
-        if (getTime() > 0){
+        if (getTime() > 0) {
             emit(PreAppClock(getTime()));
             emit(AppClock(getTime()));
             emit(PostAppClock(getTime()));

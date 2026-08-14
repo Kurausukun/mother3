@@ -1,6 +1,6 @@
 // Auto-generated source file
-#include "global.h"
 #include "battle/irc.h"
+#include "global.h"
 
 extern "C" ASM_FUNC("asm/non_matching/rom3b/sub_080C08A4.inc", void sub_080C08A4());
 extern "C" ASM_FUNC("asm/non_matching/rom3b/sub_080C08C4.inc", void sub_080C08C4());

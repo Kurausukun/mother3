@@ -63,8 +63,7 @@ u32 KeyPad::getNewKeys() {
     return new_keys;
 }
 
-NONMATCH("asm/non_matching/keypad/sub_0806CD5C.inc",
-                    void KeyPad::update(Clock* clock)) {
+NONMATCH("asm/non_matching/keypad/sub_0806CD5C.inc", void KeyPad::update(Clock* clock)) {
     new_keys = 0;
     long_keys = 0;
     if ((clock->mTime & 1) == 0) {
