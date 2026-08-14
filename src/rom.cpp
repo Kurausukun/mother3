@@ -11,6 +11,7 @@
 #include "structs.h"
 
 extern const char _binary_build_mother3_assets_misctext_bin_start;
+extern const char gMapPalettes;
 extern const IrqTable gUnknown_080C1A58;
 extern const u8 gMapMusicTable[0x3E8];
 extern IrqTable gIntrHandlers;
@@ -1916,7 +1917,11 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B3B4.inc", void sub_0801B3B4()
 extern "C" ASM_FUNC("asm/non_matching/rom/getMapGraphicsInfo.inc", MapGraphicsInfo* getMapGraphicsInfo(u16));
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B3F8.inc", void sub_0801B3F8());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B3FC.inc", void sub_0801B3FC());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B414.inc", void sub_0801B414());
+// extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B414.inc", void sub_0801B414());
+extern "C" const void* getMapPaletteTable(u16 index) {
+    return Blob_GetEntry(&gMapPalettes, index);
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B42C.inc", void sub_0801B42C());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B444.inc", void sub_0801B444());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B45C.inc", void sub_0801B45C());

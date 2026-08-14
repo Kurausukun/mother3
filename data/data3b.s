@@ -100,8 +100,8 @@ gMapGraphicsTable:
 gUnknown_08D3B4E0:
     .incbin "baserom.gba", 0x00D3B4E0, 0x200E64
 
-    .global gUnknown_08F3C344
-gUnknown_08F3C344:
+    .global gMapPalettes
+gMapPalettes:
     .incbin "baserom.gba", 0x00F3C344, 0x53CF8
 
     .global gUnknown_08F9003C
@@ -129,8 +129,8 @@ gDoorDestinationTable::
 gMapAnimationTable::
     .incbin "baserom.gba", 0x0116CB08, 0x14c74
 
-    .global gUnknown_0918177C
-gUnknown_0918177C:
+    .global gTextUnkTable
+gTextUnkTable:
     .incbin "baserom.gba", 0x0118177C, 0x17494
 
     .global gScriptLogic

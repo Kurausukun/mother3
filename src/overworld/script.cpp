@@ -50,7 +50,7 @@ extern s32 sub_080222F8(u16);
 extern void sub_080250B4(s32, u16, u16);
 extern s32 getCommonScriptLine(u16);
 extern void memFill(void*, s32, s32); /* extern */
-extern s32 sub_0801B414(u16);         /* extern */
+extern s32 getMapPaletteTable(u16);         /* extern */
 extern void sub_08027904();
 extern void sub_080334D0(u8, u16);
 
@@ -4709,7 +4709,7 @@ extern "C" s32 cmd_73(s32* sp) {
     u16 b = scriptstack_peek(sp, 2);
     u16 c = scriptstack_peek(sp, 1);
 
-    gGame._83a4 = sub_0801B414(scriptstack_peek(sp, 0));
+    gGame._83a4 = getMapPaletteTable(scriptstack_peek(sp, 0));
     u16 d = a == 0 ? 8 : 9;
     sub_080272F4(d, b, c);
 
@@ -4839,7 +4839,7 @@ extern "C" ASM_FUNC("asm/non_matching/script/cmd_disp_text_special.inc", void cm
 extern "C" s32 cmd_B9(s32* sp) {
     s16 a = scriptstack_peek(sp, 0);
     if (a != -1) {
-        gGame._28 = sub_0801B414((u16)a);
+        gGame._28 = getMapPaletteTable((u16)a);
         sub_08027904();
     }
 

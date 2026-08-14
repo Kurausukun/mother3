@@ -21,6 +21,7 @@ extern u8 gUnknown_080C1FE8[];
 extern DebugInitFunc gDebugMenuInitTable[];
 extern u16 gScriptLogic[];
 extern char _binary_build_mother3_assets_mainscript_bin_start;
+extern const char gTextUnkTable;
 
 extern "C" void sub_080012BC(void*, s32, s32, s32);
 extern "C" Object* get_obj_direct(u16 idx);
@@ -416,9 +417,17 @@ void sub_08027D1C(SoundUnkInfo* unk) {
 
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08027DC4.inc", void sub_08027DC4());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08027DE4.inc", void sub_08027DE4());
-extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08027DF4.inc", void sub_08027DF4());
+
+extern "C" const void* sub_08027DF4(u16 index) {
+    return Blob_GetEntry(&gTextUnkTable, index);
+}
+
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08027E0C.inc", void sub_08027E0C());
-extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08027E60.inc", void* sub_08027E60());
+
+extern "C" void* sub_08027E60() {
+    return Blob_GetEntry(&gScriptLogic, 1);
+}
+
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08027E74.inc", void sub_08027E74());
 
 extern "C" s32 sub_08027EF8(s32 arg0, u16 index, u16 arg2) {

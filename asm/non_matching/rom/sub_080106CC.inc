@@ -54,7 +54,7 @@ _08010724:
 	strh r7, [r2]
 _08010738:
 	ldrh r0, [r6, #0x18]
-	bl sub_0801B414
+	bl getMapPaletteTable
 	ldr r4, _0801077C
 	str r0, [r4, #0x28]
 	movs r2, #0xc0
