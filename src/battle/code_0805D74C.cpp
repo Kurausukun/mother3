@@ -1,6 +1,6 @@
 // Auto-generated source file
-#include "global.h"
 #include "battle/archive.h"
+#include "global.h"
 
 extern char gBattleSAR;
 
@@ -65,7 +65,7 @@ extern "C" ASM_FUNC("asm/non_matching/code_0805D74C/sub_08068718.inc", void sub_
 extern "C" ASM_FUNC("asm/non_matching/code_0805D74C/sub_0806871C.inc", void sub_0806871C());
 extern "C" ASM_FUNC("asm/non_matching/code_0805D74C/sub_08068734.inc", void sub_08068734());
 
-SARHandle::SARHandle(){
+SARHandle::SARHandle() {
     ResPtrSized ref(&gBattleSAR, -1);
     set(reinterpret_cast<ResPtr&>(ref));
 }

@@ -1,6 +1,6 @@
 // Auto-generated source file
-#include "global.h"
 #include "battle/efcSystem.h"
+#include "global.h"
 
 extern "C" void makeInstance__15BGEngineManager();
 extern "C" void destroy__15BGEngineManager();
@@ -53,7 +53,7 @@ extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FB64.inc", void sub_0806
 
 MANAGER_IMPL(EfcSystem);
 
-EfcSystem::EfcSystem() : _28(0), _30(0), _38(0){
+EfcSystem::EfcSystem() : _28(0), _30(0), _38(0) {
     makeInstance__15BGEngineManager();
 }
 
@@ -81,7 +81,7 @@ u16 EfcSystem::get_30() {
     return _30;
 }
 
-s32 EfcSystem::sub_0806FD14(s32 arg1){
+s32 EfcSystem::sub_0806FD14(s32 arg1) {
     return _34 + (arg1 * 8);
 }
 

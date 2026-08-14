@@ -49,13 +49,13 @@ void shuffleRNG() {
 }
 
 s32 randRange(s32 arg0, s32 arg1) {
-    register u32 r3 asm("r3") = gRNG + 5; // FAKEMATCH
+    register u32 r3 asm("r3") = gRNG + 5;  // FAKEMATCH
     s32 r2 = (r3 * 0x43) + 0x1F;
     gRNG = r2;
     r3 = arg0 - 1;
     arg1 = arg1 - r3;
     r2 = (u8)r2;
-    return arg0 + ((s32) (r2 * arg1) >> 8);
+    return arg0 + ((s32)(r2 * arg1) >> 8);
 }
 
 extern "C" NAKED void sub_0805D260() {
@@ -113,10 +113,9 @@ s32 ResPtr::type() const {
     if (address == 0) {
         return 0;
     }
-    
+
     return *(u16*)(address + 4);
 }
-
 
 extern "C" ResPtrSized LoadRes(ResPtr* archive, u32 idx) {
     char* arc = archive->address;
