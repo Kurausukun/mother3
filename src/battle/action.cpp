@@ -608,8 +608,6 @@ bool Action::fieldSet(s32 value, bool force = false) {
     return true;
 }
 
-// Msg ROMStrFmt(u32, const Msg&, const Msg&, const Msg&);
-
 Msg Action::ROMStr(u16 idx) const {
     return ROMStrFmt(idx, name(), getUser()->name(),
                      mNextTargets.size() > 0 ? mNextTargets[0]->name() : Msg());

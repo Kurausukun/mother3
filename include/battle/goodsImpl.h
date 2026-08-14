@@ -653,15 +653,19 @@ public:
 
     void onSuccess(Unit* target) {
         Action::onSuccess(target);
-        // [11 FF] grasped the [10 FF] tightly and pounced on the [12 FF]![32 FF]
+        // [11 FF] grasped the [10 FF] tightly and pounced on the [12 FF]![PAUSE30]
         ROMStr(0x182).print(Color::Black(), true);
         PlaySoundBlocking(0x554);
         PlayAnimation(Animation::ShakeLong, target, target);
-        // It pierced the [12 FF]'s tough hide![32 FF][WAIT]The [12 FF] let out a howl!
+        // It pierced the [12 FF]'s tough hide![PAUSE30][WAIT]The [12 FF] let out a howl!
         ROMStr(0x183).print(Color::Black(), true);
     }
 
-    void tellMissed(Unit* target) { ROMStr(0x18a).print(Color::Black(), true); }
+    void tellMissed(Unit* target) {
+        // 018A: With the [10 FF] in hand, [11 FF] sprung upon the [12 FF]![PAUSE30][WAIT]But the
+        // [12 FF]'s tough hide had already been pierced![END]
+        ROMStr(0x18a).print(Color::Black(), true);
+    }
 };
 
 class TriviaCard1 : public DefaultGoods {
