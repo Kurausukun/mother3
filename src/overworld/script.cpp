@@ -50,7 +50,7 @@ extern s32 sub_080222F8(u16);
 extern void sub_080250B4(s32, u16, u16);
 extern s32 getCommonScriptLine(u16);
 extern void memFill(void*, s32, s32); /* extern */
-extern s32 getMapPaletteTable(u16);         /* extern */
+extern s32 getMapPaletteTable(u16);   /* extern */
 extern void sub_08027904();
 extern void sub_080334D0(u8, u16);
 

@@ -1957,9 +1957,9 @@ extern "C" const void* getMapDoorsHotspots(u16 index, u16 type) {
 
     entry = index * 2;
     if (type != 2) {
-        entry |= 1; // read hotspot table for this room instead of door table
+        entry |= 1;  // read hotspot table for this room instead of door table
     }
-    
+
     return Blob_GetEntry(&gMapDoorHotspotTable, entry);
 }
 
