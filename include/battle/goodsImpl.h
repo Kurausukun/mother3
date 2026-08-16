@@ -13,7 +13,7 @@ extern "C" bool typeIsMonster(Unit*);
 extern "C" Monster* dynaCastMonster(Unit*);
 extern "C" void setsleep(u32);
 extern "C" void PlaySoundBlocking(u32);
-extern "C" Unit* sub_08072EE4(u32);
+extern "C" Monster* sub_08072EE4(u16);
 extern "C" void playSound(u16);
 extern "C" s32 sub_0807066C(s32, s32);
 extern "C" void sub_08073E3C(Unit*, u32, u32);
@@ -21,14 +21,14 @@ extern "C" s32 randS32(s32, s32);
 extern "C" bool IsBossBattle();
 extern "C" void InitHeal(Unit*, u32, u32);
 extern "C" void sub_08073D98(Unit*, u32, u32);
-extern "C" u8 IsPlayerAndType(Unit*, u32);
+extern "C" bool IsPlayerAndType(Unit*, u16);
 extern "C" void hitPlayer(Unit*, u32, u32);
-extern "C" bool isMonsterVariant(Unit*, u32);
+extern "C" bool isMonsterVariant(Unit*, u16);
 extern "C" void sub_0807392C(Unit*, u32, u32);
-extern "C" void sub_08073198(u32, Unit*, Unit*);
+extern "C" bool sub_08073198(u16, Unit*, Unit*);
 extern "C" void sub_08073270();
 Msg createPlayerName(u16);
-extern "C" u8 sub_08072648(u32);
+extern "C" bool sub_08072648(u16);
 
 extern Status::Type gUnknown_080FB078[];
 bool statusWearOff(Unit*, Status::Type, bool);
@@ -63,7 +63,7 @@ public:
                     // his food now
                     clearTargets();
                     addTarget(getUser());
-                    ROMStr(0x17e).print(Color(0, 0, 0), 1);
+                    ROMStr(0x17e).print(Color::Black(), 1);
                     return true;
                 }
             }
@@ -87,7 +87,7 @@ public:
     virtual bool dg_2(Unit* target) {
         Status* s = target->findStatus(Status::Nauseous);
         if (goods_2b0() == 4 && s != NULL) {
-            s->activeMsg().print(Color(0, 0, 0), 1);
+            s->activeMsg().print(Color::Black(), 1);
             return true;
         }
         return false;
@@ -189,7 +189,7 @@ public:
         }
 
         if (_50 == true) {
-            ROMStr(0x178).print(Color(0, 0, 0), 1);
+            ROMStr(0x178).print(Color::Black(), 1);
         }
     }
 
@@ -258,7 +258,6 @@ public:
     s32 healLo() const { return Goods::healLo() * _50 >> 8; }
     s32 healHi() const { return Goods::healHi() * _50 >> 8; }
 
-
     u16 _50;
 };
 
@@ -269,7 +268,7 @@ public:
 
     void onDamage(Unit* target) {
         if (randS32(0, 99) < 90) {
-            ROMStr(0x166).print(Color(0, 0, 0), 1);
+            ROMStr(0x166).print(Color::Black(), 1);
             playSound(0x452);
 
             int total_dmg = 0;
@@ -286,7 +285,7 @@ public:
             setsleep(25);
         } else {
             // bear appeared
-            ROMStr(0x167).print(Color(0, 0, 0), true);
+            ROMStr(0x167).print(Color::Black(), true);
             PlaySoundBlocking(0x453);
             hitPlayer(target, randS32(800, 860), 1);
             PlayAnimation(Animation::HardHit, getUser(), target);
@@ -304,10 +303,9 @@ public:
         playSound(0x55e);
 
         PlayAnimation(Animation::NoEffect, getUser(), getTarget(0));
-        // [04 EF][12 FF] slipped violently!
-        ROMStr(0x190).print(Color(0, 0, 0), true);
+        // [04 EF][FMT_ARG2] slipped violently!
+        ROMStr(0x190).print(Color::Black(), true);
     }
-
 };
 
 class BugSpray : public DefaultGoods {
@@ -321,7 +319,7 @@ public:
             if (m->type() == MonsterType::Bug) {
                 Action::onDamage(m);
             } else {
-                ROMStr(0x154).print(Color(0, 0, 0), true);
+                ROMStr(0x154).print(Color::Black(), true);
             }
         }
     }
@@ -351,12 +349,11 @@ public:
         } else {
             hp = 20;
         }
-        // [12 FF] loves cheese!
-        // [12 FF] isn't too fond of cheese.
-        ROMStr(hp >= 60 ? 0x186 : 0x187).print(Color(0, 0, 0), true);
+        // [FMT_ARG2] loves cheese!
+        // [FMT_ARG2] isn't too fond of cheese.
+        ROMStr(hp >= 60 ? 0x186 : 0x187).print(Color::Black(), true);
         InitHeal(target, hp, 1);
     }
-
 };
 
 class DoggyFood : public DefaultGoods {
@@ -371,7 +368,6 @@ public:
             InitHeal(target, 6, 1);
         }
     }
-
 };
 
 class LottoMeal : public DefaultGoods {
@@ -384,56 +380,55 @@ public:
         case 0:
             PlayAnimation(Animation::LifeUpG, target, target);
             InitHeal(target, randS32(80, 140), 1);
-            ROMStr(0x1cb).print(Color(0, 0, 0), true);
+            ROMStr(0x1cb).print(Color::Black(), true);
             break;
         case 1:
             PlayAnimation(Animation::PsiMagnetGainA, target, target);
             sub_08073D98(target, randS32(20, 50), 1);
-            ROMStr(0x1cc).print(Color(0, 0, 0), true);
+            ROMStr(0x1cc).print(Color::Black(), true);
             break;
         case 2:
             if (calcStatusInflict(target, Status::OffUpStrong, 100, true) == true) {
-                ROMStr(0x1cd).print(Color(0, 0, 0), true);
+                ROMStr(0x1cd).print(Color::Black(), true);
             }
             break;
         case 3:
             if (calcStatusInflict(target, Status::OffDownStrong, 100, true) == true) {
-                ROMStr(0x1ce).print(Color(0, 0, 0), true);
+                ROMStr(0x1ce).print(Color::Black(), true);
             }
             break;
         case 4:
             if (calcStatusInflict(target, Status::DefUpStrong, 100, true) == true) {
-                ROMStr(0x1cf).print(Color(0, 0, 0), true);
+                ROMStr(0x1cf).print(Color::Black(), true);
             }
             break;
         case 5:
             if (calcStatusInflict(target, Status::DefDownStrong, 100, true) == true) {
-                ROMStr(0x1d0).print(Color(0, 0, 0), true);
+                ROMStr(0x1d0).print(Color::Black(), true);
             }
             break;
         case 6:
             if (calcStatusInflict(target, Status::MonkeyDanceSP, 100, true) == true) {
-                ROMStr(0x1d1).print(Color(0, 0, 0), true);
+                ROMStr(0x1d1).print(Color::Black(), true);
             }
             break;
         case 7:
             if (calcStatusInflict(target, Status::MonkeyDanceSP2, 100, true) == true) {
-                ROMStr(0x1d2).print(Color(0, 0, 0), true);
+                ROMStr(0x1d2).print(Color::Black(), true);
             }
             break;
         case 8:
             if (calcStatusInflict(target, Status::Crying, 100, true) == true) {
-                ROMStr(0x1d3).print(Color(0, 0, 0), true);
+                ROMStr(0x1d3).print(Color::Black(), true);
             }
             break;
         case 9:
             if (calcStatusInflict(target, Status::Strange, 100, true) == true) {
-                ROMStr(0x1d4).print(Color(0, 0, 0), true);
+                ROMStr(0x1d4).print(Color::Black(), true);
             }
             break;
         }
     }
-
 };
 
 class EnemyBufferizer : public DefaultGoods {
@@ -447,7 +442,6 @@ public:
         }
         return IsBossBattle();
     }
-
 };
 
 class EnemyWimperizer : public DefaultGoods {
@@ -461,7 +455,6 @@ public:
         }
         return IsBossBattle();
     }
-
 };
 
 class AttackAttractor : public DefaultGoods {
@@ -481,8 +474,8 @@ public:
     }
 
     void tellResisted(Unit* target) {
-        // But it didn't work on [05 EF][12 FF]
-        ROMStr(0x154).print(Color(0, 0, 0), true);
+        // But it didn't work on [05 EF][FMT_ARG2]
+        ROMStr(0x154).print(Color::Black(), true);
     }
 
     void onInflictStatus(Unit* target) {
@@ -491,9 +484,8 @@ public:
             return;
         }
         // But it didn't work.
-        ROMStr(0x159).print(Color(0, 0, 0), true);
+        ROMStr(0x159).print(Color::Black(), true);
     }
-
 };
 
 class MadeYouLook : public DefaultGoods {
@@ -529,8 +521,8 @@ public:
 
     void tellResisted(Unit* target) {
         PlaySoundBlocking(0x451);
-        // But it didn't work on [05 EF][12 FF]!
-        ROMStr(0x154).print(Color(0, 0, 0), true);
+        // But it didn't work on [05 EF][FMT_ARG2]!
+        ROMStr(0x154).print(Color::Black(), true);
     }
 
     void onSuccess(Unit* target) {
@@ -540,10 +532,9 @@ public:
         Monster* m = dynaCastMonster(target);
         m->monster_300(true);
         sub_08073E3C(target, 0x33, 0);
-        // [04 EF][12 FF] was tricked into turning around!
-        ROMStr(0x176).print(Color(0, 0, 0), true);
+        // [04 EF][FMT_ARG2] was tricked into turning around!
+        ROMStr(0x176).print(Color::Black(), true);
     }
-
 };
 
 class PaperFan : public DefaultGoods {
@@ -558,11 +549,10 @@ public:
                 statusWearOff(target, Status::Strange, i + 1 >= count);
             }
         } else {
-            // But it didn't work on [05 EF][12 FF]!
-            ROMStr(0x154).print(Color(0, 0, 0), true);
+            // But it didn't work on [05 EF][FMT_ARG2]!
+            ROMStr(0x154).print(Color::Black(), true);
         }
     }
-
 };
 
 class SecretHerb : public DefaultGoods {
@@ -584,10 +574,9 @@ public:
                 num++;
             }
         }
-        ROMStr(num > 0 ? 0x156 : 0x154).print(Color(0, 0, 0), 1);
+        ROMStr(num > 0 ? 0x156 : 0x154).print(Color::Black(), 1);
     }
     END_NONMATCH
-
 };
 
 class CupOfLifenoodles : public DefaultGoods {
@@ -610,10 +599,9 @@ public:
                 num++;
             }
         }
-        ROMStr(num > 0 ? 0x156 : 0x154).print(Color(0, 0, 0), true);
+        ROMStr(num > 0 ? 0x156 : 0x154).print(Color::Black(), true);
     }
     END_NONMATCH
-
 };
 
 class ShieldSnatcher : public DefaultGoods {
@@ -633,14 +621,13 @@ public:
             target->removeStatus(Status::PsiCounter);
             playSound(0x62b);
             PlayAnimation(Animation::KO, target, target);
-            // [24 EF][12 FF]'s shield disappeared!
-            ROMStr(0x17a).print(Color(0, 0, 0), true);
+            // [24 EF][FMT_ARG2]'s shield disappeared!
+            ROMStr(0x17a).print(Color::Black(), true);
         } else {
-            // But it didn't work on [05 EF][12 FF]!
-            ROMStr(0x154).print(Color(0, 0, 0), true);
+            // But it didn't work on [05 EF][FMT_ARG2]!
+            ROMStr(0x154).print(Color::Black(), true);
         }
     }
-
 };
 
 class DragoFang : public DefaultGoods {
@@ -652,7 +639,7 @@ public:
 
     void tellResisted(Unit* target) {
         // This isn't the best time for that.
-        ROMStr(0x184).print(Color(0, 0, 0), true);
+        ROMStr(0x184).print(Color::Black(), true);
     }
 
     u8 calcDidHit(Unit* target) {
@@ -666,16 +653,19 @@ public:
 
     void onSuccess(Unit* target) {
         Action::onSuccess(target);
-        // [11 FF] grasped the [10 FF] tightly and pounced on the [12 FF]![32 FF]
-        ROMStr(0x182).print(Color(0, 0, 0), true);
+        // [FMT_ARG1] grasped the [FMT_ARG0] tightly and pounced on the [FMT_ARG2]![PAUSE30]
+        ROMStr(0x182).print(Color::Black(), true);
         PlaySoundBlocking(0x554);
         PlayAnimation(Animation::ShakeLong, target, target);
-        // It pierced the [12 FF]'s tough hide![32 FF][WAIT]The [12 FF] let out a howl!
-        ROMStr(0x183).print(Color(0, 0, 0), true);
+        // It pierced the [FMT_ARG2]'s tough hide![PAUSE30][WAIT]The [FMT_ARG2] let out a howl!
+        ROMStr(0x183).print(Color::Black(), true);
     }
 
-    void tellMissed(Unit* target) { ROMStr(0x18a).print(Color(0, 0, 0), true); }
-
+    void tellMissed(Unit* target) {
+        // 018A: With the [FMT_ARG0] in hand, [FMT_ARG1] sprung upon the
+        // [FMT_ARG2]![PAUSE30][WAIT]But the [FMT_ARG2]'s tough hide had already been pierced![END]
+        ROMStr(0x18a).print(Color::Black(), true);
+    }
 };
 
 class TriviaCard1 : public DefaultGoods {
@@ -699,7 +689,7 @@ public:
         return true;
     }
 
-    void tellResisted(Unit* target) { ROMStr(0x1ca).print(Color(0, 0, 0), true); }
+    void tellResisted(Unit* target) { ROMStr(0x1ca).print(Color::Black(), true); }
 
     void onSuccess(Unit* target) {
         if (typeIsMonster(target) != true)
@@ -710,43 +700,42 @@ public:
         case Monster::PorkLieutenant:
         case Monster::PorkColonel2nd:
             setsleep(60);
-            ROMStr(0x19a).print(Color(0, 0, 0), true);
+            ROMStr(0x19a).print(Color::Black(), true);
             setsleep(30);
             PlaySoundBlocking(0x61d);
-            ROMStr(0x198).print(Color(0, 0, 0), true);
+            ROMStr(0x198).print(Color::Black(), true);
             break;
         case Monster::WomanizingPigMask1st:
         case Monster::WomanizingPigMask2nd:
             setsleep(60);
-            ROMStr(0x19e).print(Color(0, 0, 0), true);
+            ROMStr(0x19e).print(Color::Black(), true);
             setsleep(30);
             PlaySoundBlocking(0x61e);
-            ROMStr(0x199).print(Color(0, 0, 0), true);
+            ROMStr(0x199).print(Color::Black(), true);
             break;
         case Monster::PorkSoldier:
             setsleep(60);
-            ROMStr(0x1a2).print(Color(0, 0, 0), true);
+            ROMStr(0x1a2).print(Color::Black(), true);
             setsleep(30);
             PlaySoundBlocking(0x61e);
-            ROMStr(0x199).print(Color(0, 0, 0), true);
+            ROMStr(0x199).print(Color::Black(), true);
             break;
         case Monster::PorkCommander:
             setsleep(60);
-            ROMStr(0x1a6).print(Color(0, 0, 0), true);
+            ROMStr(0x1a6).print(Color::Black(), true);
             setsleep(30);
             PlaySoundBlocking(0x61e);
-            ROMStr(0x199).print(Color(0, 0, 0), true);
+            ROMStr(0x199).print(Color::Black(), true);
             break;
         case Monster::NavySqueal:
             setsleep(60);
-            ROMStr(0x1ae).print(Color(0, 0, 0), true);
+            ROMStr(0x1ae).print(Color::Black(), true);
             setsleep(30);
             PlaySoundBlocking(0x61e);
-            ROMStr(0x199).print(Color(0, 0, 0), true);
+            ROMStr(0x199).print(Color::Black(), true);
             break;
         }
     }
-
 };
 
 class TriviaCard2 : public DefaultGoods {
@@ -769,7 +758,7 @@ public:
         return true;
     }
 
-    void tellResisted(Unit* target) { ROMStr(0x1ca).print(Color(0, 0, 0), 1); }
+    void tellResisted(Unit* target) { ROMStr(0x1ca).print(Color::Black(), 1); }
 
     void onSuccess(Unit* target) {
         if (typeIsMonster(target) != true)
@@ -780,37 +769,36 @@ public:
         case 0xab:
         case 0xad:
             setsleep(60);
-            ROMStr(0x19b).print(Color(0, 0, 0), 1);
+            ROMStr(0x19b).print(Color::Black(), 1);
             setsleep(30);
             PlaySoundBlocking(0x61d);
-            ROMStr(0x198).print(Color(0, 0, 0), 1);
+            ROMStr(0x198).print(Color::Black(), 1);
             break;
         case 0xe:
         case 0xf:
             setsleep(60);
-            ROMStr(0x19f).print(Color(0, 0, 0), 1);
+            ROMStr(0x19f).print(Color::Black(), 1);
             setsleep(30);
             PlaySoundBlocking(0x61e);
-            ROMStr(0x199).print(Color(0, 0, 0), 1);
+            ROMStr(0x199).print(Color::Black(), 1);
             break;
         case 0xac:
             setsleep(60);
-            ROMStr(0x1a7).print(Color(0, 0, 0), 1);
+            ROMStr(0x1a7).print(Color::Black(), 1);
             setsleep(30);
             PlaySoundBlocking(0x61e);
-            ROMStr(0x199).print(Color(0, 0, 0), 1);
+            ROMStr(0x199).print(Color::Black(), 1);
             break;
         case 0x1d:
         case 0xaa:
             setsleep(60);
-            ROMStr(0x1ab).print(Color(0, 0, 0), 1);
+            ROMStr(0x1ab).print(Color::Black(), 1);
             setsleep(30);
             PlaySoundBlocking(0x61e);
-            ROMStr(0x199).print(Color(0, 0, 0), 1);
+            ROMStr(0x199).print(Color::Black(), 1);
             break;
         }
     }
-
 };
 
 class TriviaCard3 : public DefaultGoods {
@@ -833,7 +821,7 @@ public:
         return true;
     }
 
-    void tellResisted(Unit* target) { ROMStr(0x1ca).print(Color(0, 0, 0), 1); }
+    void tellResisted(Unit* target) { ROMStr(0x1ca).print(Color::Black(), 1); }
 
     void onSuccess(Unit* target) {
         if (typeIsMonster(target) != true)
@@ -844,37 +832,36 @@ public:
         case 0xab:
         case 0xac:
             setsleep(60);
-            ROMStr(0x19c).print(Color(0, 0, 0), 1);
+            ROMStr(0x19c).print(Color::Black(), 1);
             setsleep(30);
             PlaySoundBlocking(0x61d);
-            ROMStr(0x198).print(Color(0, 0, 0), 1);
+            ROMStr(0x198).print(Color::Black(), 1);
             break;
         case 0xe:
         case 0xf:
             setsleep(60);
-            ROMStr(0x1a0).print(Color(0, 0, 0), 1);
+            ROMStr(0x1a0).print(Color::Black(), 1);
             setsleep(30);
             PlaySoundBlocking(0x61e);
-            ROMStr(0x199).print(Color(0, 0, 0), 1);
+            ROMStr(0x199).print(Color::Black(), 1);
             break;
         case 0xad:
             setsleep(60);
-            ROMStr(0x1b0).print(Color(0, 0, 0), 1);
+            ROMStr(0x1b0).print(Color::Black(), 1);
             setsleep(30);
             PlaySoundBlocking(0x61e);
-            ROMStr(0x199).print(Color(0, 0, 0), 1);
+            ROMStr(0x199).print(Color::Black(), 1);
             break;
         case 0x1d:
         case 0xaa:
             setsleep(60);
-            ROMStr(0x1ac).print(Color(0, 0, 0), 1);
+            ROMStr(0x1ac).print(Color::Black(), 1);
             setsleep(30);
             PlaySoundBlocking(0x61e);
-            ROMStr(0x199).print(Color(0, 0, 0), 1);
+            ROMStr(0x199).print(Color::Black(), 1);
             break;
         }
     }
-
 };
 
 class TriviaCard4 : public DefaultGoods {
@@ -897,7 +884,7 @@ public:
         return true;
     }
 
-    void tellResisted(Unit* target) { ROMStr(0x1ca).print(Color(0, 0, 0), 1); }
+    void tellResisted(Unit* target) { ROMStr(0x1ca).print(Color::Black(), 1); }
 
     void onSuccess(Unit* target) {
         if (typeIsMonster(target) != true)
@@ -907,50 +894,49 @@ public:
         case 0x1d:
         case 0xaa:
             setsleep(60);
-            ROMStr(0x19d).print(Color(0, 0, 0), 1);
+            ROMStr(0x19d).print(Color::Black(), 1);
             setsleep(30);
             PlaySoundBlocking(0x61d);
-            ROMStr(0x198).print(Color(0, 0, 0), 1);
+            ROMStr(0x198).print(Color::Black(), 1);
             break;
         case 0xe:
         case 0xf:
             setsleep(60);
-            ROMStr(0x1a1).print(Color(0, 0, 0), 1);
+            ROMStr(0x1a1).print(Color::Black(), 1);
             setsleep(30);
             PlaySoundBlocking(0x61e);
-            ROMStr(0x199).print(Color(0, 0, 0), 1);
+            ROMStr(0x199).print(Color::Black(), 1);
             break;
         case Monster::PorkSoldier:
             setsleep(60);
-            ROMStr(0x1a5).print(Color(0, 0, 0), 1);
+            ROMStr(0x1a5).print(Color::Black(), 1);
             setsleep(30);
             PlaySoundBlocking(0x61e);
-            ROMStr(0x199).print(Color(0, 0, 0), 1);
+            ROMStr(0x199).print(Color::Black(), 1);
             break;
         case 0xac:
             setsleep(60);
-            ROMStr(0x1a9).print(Color(0, 0, 0), 1);
+            ROMStr(0x1a9).print(Color::Black(), 1);
             setsleep(30);
             PlaySoundBlocking(0x61e);
-            ROMStr(0x199).print(Color(0, 0, 0), 1);
+            ROMStr(0x199).print(Color::Black(), 1);
             break;
         case 0xad:
             setsleep(60);
-            ROMStr(0x1b1).print(Color(0, 0, 0), 1);
+            ROMStr(0x1b1).print(Color::Black(), 1);
             setsleep(30);
             PlaySoundBlocking(0x61e);
-            ROMStr(0x199).print(Color(0, 0, 0), 1);
+            ROMStr(0x199).print(Color::Black(), 1);
             break;
         case 0xab:
             setsleep(60);
-            ROMStr(0x1ad).print(Color(0, 0, 0), 1);
+            ROMStr(0x1ad).print(Color::Black(), 1);
             setsleep(30);
             PlaySoundBlocking(0x61e);
-            ROMStr(0x199).print(Color(0, 0, 0), 1);
+            ROMStr(0x199).print(Color::Black(), 1);
             break;
         }
     }
-
 };
 
 class GoodsFactory {

@@ -1,7 +1,7 @@
 // Auto-generated source file
 #include "battle/playerskill.h"
 
-extern "C" void* get_misctext_msg(u32, u32);
+extern "C" u16* get_misctext_msg(u32, u32);
 extern "C" u16 get_misctext_len(u32);
 
 extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0807C718.inc", void sub_0807C718());

@@ -95,7 +95,7 @@ _0809CE0C:
 	ldrh r1, [r5]
 	mov r0, r8
 	movs r2, #1
-	bl sub_0805C300
+	bl setPsiLearned
 	ldr r2, [r6, #0x1c]
 	movs r0, #0xf6
 	lsls r0, r0, #2

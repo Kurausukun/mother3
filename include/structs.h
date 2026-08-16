@@ -631,12 +631,13 @@ typedef struct Save {
     u8 _71b;
     u16 _71c;
     u16 _71e;
-    u8 _720[10];
+    u8 lucasPsiFlags[10];  // 0x720
     u8 _72a[10];
     u8 _734;
     u8 _735;
     u16 _736;
-    u8 _738[12];
+    u16 _738;
+    u8 kumatoraPsiFlags[10];  // 73a
     u32 sessionPlaytime;
     u16 _748;
     u8 enemy_seen_front[0x20];

@@ -21,7 +21,7 @@ action_1d8__C11PlayerSkill:
 	adds r1, r0, #0
 	ldr r2, _0808051C
 	add r0, sp, #4
-	bl genMisctextMsg__3MsgPvUi
+	bl genMisctextMsg__3MsgPUsi
 	ldr r2, [r5, #0x1c]
 	movs r0, #0xe4
 	lsls r0, r0, #1

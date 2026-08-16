@@ -69,7 +69,7 @@ _0809CC56:
 	beq _0809CC96
 	adds r1, r0, #0
 	mov r0, r8
-	bl sub_0805C364
+	bl isPsiLearned
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1

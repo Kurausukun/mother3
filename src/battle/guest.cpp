@@ -2,7 +2,7 @@
 #include "battle.h"
 #include "battle/unitTarget.h"
 
-extern "C" void* get_misctext_msg(u32, u16);
+extern "C" u16* get_misctext_msg(u32, u16);
 extern "C" u16 get_misctext_len(u32);
 // extern "C" void genMisctextMsg(Base*, u32, u32);
 extern "C" Msg genMisctextMsg(void*, u32);

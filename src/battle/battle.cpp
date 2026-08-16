@@ -109,13 +109,13 @@ void Battle::battle_90() {
 
     switch (_38) {
     case 0:
-        m.sub_0806E374(sub_08072E18(0)->player_330());
+        m.concatenate(sub_08072E18(0)->player_330());
         break;
     case 1:
-        m.sub_0806E374(ROMStrFmt(0xb4, Msg(), Msg(), Msg()));
+        m.concatenate(ROMStrFmt(0xb4, Msg(), Msg(), Msg()));
         break;
     case 2:
-        m.sub_0806E374(ROMStrFmt(0xb5, Msg(), Msg(), Msg()));
+        m.concatenate(ROMStrFmt(0xb5, Msg(), Msg(), Msg()));
         break;
     }
 
@@ -340,6 +340,7 @@ BattleFader* Battle::battle_150() {
     return _30;
 }
 
+// TODO: This returns a pointer, figure out what it is
 s32 Battle::battle_158() {
     return _34;
 }

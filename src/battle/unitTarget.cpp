@@ -68,9 +68,9 @@ bool UnitTarget::targettingAlly() {
     case 17:
     case 18:
     case 19:
-        return 1;
+        return true;
     default:
-        return 0;
+        return false;
     }
 }
 
@@ -126,10 +126,7 @@ bool UnitTarget::attackdata_c0() const {
 }
 
 s32 UnitTarget::attackdata_c8() {
-    if (attackdata_68() != 1)
-        return 1;
-
-    if (attackdata_70() != 1)
+    if (attackdata_68() != true || attackdata_70() != true)
         return 1;
 
     return attackdata_110() < 1;
@@ -137,7 +134,7 @@ s32 UnitTarget::attackdata_c8() {
 
 bool UnitTarget::attackdata_68() {
     while (numTargets() > 0) {
-        removeTarget(attackdata_f0(0));
+        removeTarget(getTarget(0));
     }
 
     switch (getSelection()) {
@@ -218,16 +215,17 @@ s32 UnitTarget::numTargets() const {
 s32 UnitTarget::attackdata_e8() const {
     s32 a = numTargets();
     s32 b = attackdata_a0();
+
     if (b > a)
         b = a;
     return b;
 }
 
-Unit* UnitTarget::attackdata_f0(s32 idx) {
+Unit* UnitTarget::getTarget(s32 idx) {
     return mTargets[idx];
 }
 
-s32 UnitTarget::attackdata_f8(Unit* unit) const {
+s32 UnitTarget::getTargetIndex(Unit* unit) const {
     return mTargets.indexOf(unit);
 }
 
@@ -240,12 +238,12 @@ NONMATCH("asm/non_matching/unitTarget/attackdata_70.inc", bool UnitTarget::attac
     switch (attackdata_b8()) {
     case 0:
         for (int i = 0; i < attackdata_e8(); i++) {
-            attackdata_100(attackdata_f0(i));
+            attackdata_100(getTarget(i));
         }
         break;
     case 1:
         for (int i = 0; i < attackdata_a0(); i++) {
-            attackdata_100(attackdata_f0(Remainder(i, numTargets())));
+            attackdata_100(getTarget(Remainder(i, numTargets())));
         }
         break;
     case 2:
@@ -259,20 +257,22 @@ NONMATCH("asm/non_matching/unitTarget/attackdata_70.inc", bool UnitTarget::attac
                 mTargets[ib] = tmp;
             }
         }
+
         for (int i = 0; i < attackdata_e8(); i++) {
-            attackdata_100(attackdata_f0(i));
+            attackdata_100(getTarget(i));
         }
         break;
     case 3:
         for (int i = 0; i < attackdata_a0(); i++) {
-            attackdata_100(attackdata_f0(randS32(0, mTargets.size() - 1)));
+            attackdata_100(getTarget(randrange2(0, mTargets.size() - 1)));
         }
         break;
     case 4:
         Vector<Unit*> v;
         for (int i = 0; i < numTargets(); i++) {
-            v.append(attackdata_f0(i));
+            v.append(getTarget(i));
         }
+
         for (int i = 0; i < v.size(); i++) {
             for (int j = v.size() - 2; j >= i; j--) {
                 if (v[j]->hpReal() > v[j + 1]->hpReal()) {
@@ -282,6 +282,7 @@ NONMATCH("asm/non_matching/unitTarget/attackdata_70.inc", bool UnitTarget::attac
                 }
             }
         }
+
         for (int i = 0; i < attackdata_a0(); i++) {
             if (i >= v.size())
                 break;
@@ -289,6 +290,7 @@ NONMATCH("asm/non_matching/unitTarget/attackdata_70.inc", bool UnitTarget::attac
         }
         break;
     }
+
     return attackdata_110() > 0;
 }
 END_NONMATCH
@@ -344,6 +346,6 @@ UnitTargetChoice::~UnitTargetChoice() {
         delete _154[i];
     }
     for (int i = 0; i < numTargets(); i++) {
-        sub_08077CF0(attackdata_f0(i), 0);
+        sub_08077CF0(getTarget(i), 0);
     }
 }

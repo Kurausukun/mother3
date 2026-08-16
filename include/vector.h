@@ -35,12 +35,10 @@ struct Vector {
     }
 
     bool empty() const {
-        u32 ret;
         if (mSize > 0)
-            ret = 1;
-        else
-            ret = 0;
-        return ret;
+            return true;
+
+        return false;
     }
 
     static void copy(T* src, T* dest, s32 size) {
@@ -63,7 +61,7 @@ struct Vector {
     }
 
     bool removeIdx(s32 i) {
-        if (i < mSize){
+        if (i < mSize) {
             copy(&mStorage[i + 1], &mStorage[i], mSize - 1 - i);
             mSize--;
             return true;

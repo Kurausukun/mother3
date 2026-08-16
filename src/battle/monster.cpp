@@ -5,7 +5,7 @@
 
 RTTI_IMPL(Monster);
 
-extern "C" void* get_misctext_msg(u32, u32);
+extern "C" u16* get_misctext_msg(u32, u32);
 extern "C" u16 get_misctext_len(u32);
 
 extern MonsterData gMonsterData[];

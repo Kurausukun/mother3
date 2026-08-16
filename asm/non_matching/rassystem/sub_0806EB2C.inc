@@ -34,7 +34,7 @@ sub_0806EB2C:
 _0806EB6E:
 	mov r0, r8
 	adds r1, r5, #0
-	bl sub_0806E334__3Msgi
+	bl getTextAtOffset__3Msgi
 	ldrh r0, [r0]
 	str r0, [sp]
 	adds r0, r4, #0
@@ -59,13 +59,13 @@ _0806EB6E:
 	adds r5, #1
 _0806EBA6:
 	mov r0, r8
-	bl len__3Msg
+	bl len__C3Msg
 	cmp r5, r0
 	blt _0806EB6E
 	ldr r0, [r4, #0x38]
 	str r0, [r4, #0x44]
 	mov r0, sl
-	bl len__3Msg
+	bl len__C3Msg
 	adds r1, r4, #0
 	adds r1, #0x48
 	strb r0, [r1]

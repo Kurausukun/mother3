@@ -1437,13 +1437,13 @@ u16 cmd_E7(s32* sp) {
     u8 chr;
     u16 c;
     u32 idx;
-    s32 b;
+    s32 xp;
     Object* spr;
     CharStats* cd;
     u64 t;
 
     idx = scriptstack_peek(sp, 1);
-    b = scriptstack_peek(sp, 0);
+    xp = scriptstack_peek(sp, 0);
     scriptstack_push(0);
     spr = get_obj(idx);
     if (spr != 0) {
@@ -1452,7 +1452,7 @@ u16 cmd_E7(s32* sp) {
             cd = get_char_stats(chr);
             c = isCharIdOverworldPlayable(cd->charNo);
             if (c != 0) {
-                sub_0805BC8C(&t, cd->charNo, b);
+                sub_0805BC8C(&t, cd->charNo, xp);
                 gSomeBlend._121c8 = t;
                 scriptstack_push(gSomeBlend._121c8_b.b0 & 0xff);
                 if (gSomeBlend._121c8_b.b1 != 0) {
@@ -1606,7 +1606,7 @@ u16 cmd_set_psi(s32* sp) {
 	lsrs r1, r3, #0x10\n\
 	lsls r2, r2, #0x18\n\
 	lsrs r2, r2, #0x18\n\
-	bl sub_0805C300\n\
+	bl setPsiLearned\n\
 	b _0801D412\n\
 	.align 2, 0\n\
 _0801D370: .4byte gCharStats\n\
@@ -4745,7 +4745,6 @@ extern "C" s32 cmd_play_anim_above(s32* sp) {
     register s32 anim asm("r8") = (u16)scriptstack_peek(sp, 1);  // FAKEMATCH
     u16 c = scriptstack_peek(sp, 0);
     Object* obj = get_obj(idx);
-
     if (!obj) {
         return 0;
     }

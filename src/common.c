@@ -88,9 +88,11 @@ s32 sub_0805C21C(CharStats* ch) {
     if (ch_is_lucas(ch) == true) {
         return 80;
     }
+
     if (ch_is_kumatora(ch) == true) {
         return 80;
     }
+
     return 0;
 }
 
@@ -112,20 +114,20 @@ bool8 sub_0805C2AC(CharStats* ch, u16 r1) {
     return false;
 }
 
-void sub_0805C300(CharStats* ch, u16 r1, bool8 r2) {
+void setPsiLearned(CharStats* ch, u16 psiNo, bool8 isLearned) {
     if (ch_is_lucas(ch) == true) {
-        sub_0805C548(gSave._720, r1, r2 == true);
+        sub_0805C548(gSave.lucasPsiFlags, psiNo, isLearned == true);
     } else if (ch_is_kumatora(ch) == true) {
-        sub_0805C548(gSave._738 + 2, r1, r2 == true);
+        sub_0805C548(gSave.kumatoraPsiFlags, psiNo, isLearned == true);
     }
 }
 
-bool8 sub_0805C364(CharStats* ch, u16 r1) {
+bool8 isPsiLearned(CharStats* ch, u16 psiNo) {
     if (ch_is_lucas(ch) == true) {
-        return sub_0805C58C(gSave._720, r1) == true;
+        return sub_0805C58C(gSave.lucasPsiFlags, psiNo) == true;
     }
     if (ch_is_kumatora(ch) == true) {
-        return sub_0805C58C(gSave._738 + 2, r1) == true;
+        return sub_0805C58C(gSave.kumatoraPsiFlags, psiNo) == true;
     }
     return false;
 }
@@ -135,7 +137,7 @@ void sub_0805C3B8(CharStats* ch) {
         int i;
         for (i = 0; i < sub_0805C21C(ch); i++) {
             if (sub_0805C58C(gSave._710, i) == true) {
-                sub_0805C548(gSave._720, i, true);
+                sub_0805C548(gSave.lucasPsiFlags, i, true);
                 sub_0805C548(gSave._710, i, false);
             }
         }
@@ -143,20 +145,20 @@ void sub_0805C3B8(CharStats* ch) {
         int i;
         for (i = 0; i < sub_0805C21C(ch); i++) {
             if (sub_0805C58C(gSave._72a, i) == true) {
-                sub_0805C548(gSave._738 + 2, i, true);
+                sub_0805C548(gSave.kumatoraPsiFlags, i, true);
                 sub_0805C548(gSave._72a, i, false);
             }
         }
     }
 }
 
-void sub_0805C458(CharStats* ch, s32 r1) {
+void sub_0805C458(CharStats* ch, s32 level) {
     if (ch_is_lucas(ch) == true) {
         const LevelStats* ls = &gLevelStatTable[ch->charNo];
         int i;
         for (i = 0; i < 32; i++) {
-            if (ls->psi_learning_table[i].psi_no != 0 && r1 >= ls->psi_learning_table[i].level) {
-                sub_0805C548(gSave._720, ls->psi_learning_table[i].psi_no, true);
+            if (ls->psi_learning_table[i].psi_no != 0 && level >= ls->psi_learning_table[i].level) {
+                sub_0805C548(gSave.lucasPsiFlags, ls->psi_learning_table[i].psi_no, true);
                 sub_0805C548(gSave._710, ls->psi_learning_table[i].psi_no, false);
             }
         }
@@ -164,8 +166,8 @@ void sub_0805C458(CharStats* ch, s32 r1) {
         const LevelStats* ls = &gLevelStatTable[ch->charNo];
         int i;
         for (i = 0; i < 32; i++) {
-            if (ls->psi_learning_table[i].psi_no != 0 && r1 >= ls->psi_learning_table[i].level) {
-                sub_0805C548(gSave._738 + 2, ls->psi_learning_table[i].psi_no, true);
+            if (ls->psi_learning_table[i].psi_no != 0 && level >= ls->psi_learning_table[i].level) {
+                sub_0805C548(gSave.kumatoraPsiFlags, ls->psi_learning_table[i].psi_no, true);
                 sub_0805C548(gSave._72a, ls->psi_learning_table[i].psi_no, false);
             }
         }
