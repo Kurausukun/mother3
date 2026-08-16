@@ -4,7 +4,7 @@
 
 extern "C" u16* get_misctext_msg(u32, u32);
 extern "C" u16 get_misctext_len(u32);
-extern "C" void* misctext_get_goods_description(u32);
+extern "C" u16* misctext_get_goods_description(u32);
 
 extern "C" ASM_FUNC("asm/non_matching/goods/MonsterInfo_ct.inc", void MonsterInfo_ct());
 extern "C" ASM_FUNC("asm/non_matching/goods/sub_08062448.inc", void sub_08062448());

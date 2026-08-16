@@ -490,14 +490,14 @@ void init_save() {
 
     u16 tmp = get_misctext_len(5);
 
-    memFill(gSave.hinawa_name, sizeof gSave.hinawa_name, -1);
+    memFill(gSave.hinawa_name, sizeof(gSave.hinawa_name), -1);
     copyText(gSave.hinawa_name, get_misctext_msg(5, 8), tmp);
-    memFill(gSave.claus_name, sizeof gSave.claus_name, -1);
+    memFill(gSave.claus_name, sizeof(gSave.claus_name), -1);
     copyText(gSave.claus_name, get_misctext_msg(5, 5), tmp);
-    memFill(gSave.fav_food, sizeof gSave.fav_food, -1);
-    memFill(gSave.fav_thing, sizeof gSave.fav_thing, -1);
-    memFill(gSave.playername_short, sizeof gSave.playername_short, -1);
-    memFill(gSave.playername, sizeof gSave.playername, -1);
+    memFill(gSave.fav_food, sizeof(gSave.fav_food), -1);
+    memFill(gSave.fav_thing, sizeof(gSave.fav_thing), -1);
+    memFill(gSave.playername_short, sizeof(gSave.playername_short), -1);
+    memFill(gSave.playername, sizeof(gSave.playername), -1);
 
     gSave._6f8 = 0;
     gSave._6fa = 0;

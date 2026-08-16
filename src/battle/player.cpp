@@ -13,7 +13,7 @@ extern "C" void* getRTTI__6Player() {
 
 Msg createPlayerName(u16 pl) {
     if (pl == 14) {
-        return Msg::genMisctextMsg((u16*)&gSave.hinawa_name, 9);
+        return Msg::genMisctextMsg(gSave.hinawa_name, 9);
     }
     return Msg::genMisctextMsg((u16*)gCharStats[pl].name, 8);
 }

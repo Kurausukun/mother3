@@ -608,12 +608,12 @@ typedef struct Save {
     u8 _481;
     u16 _482[0x80];
     u16 _582[0x80];
-    u8 hinawa_name[0x10];
-    u8 claus_name[0x10];
-    u8 fav_food[0x12];
-    u8 fav_thing[0x12];
-    u8 playername_short[0x12];
-    u8 playername[0x20];
+    u16 hinawa_name[8];
+    u16 claus_name[8];
+    u16 fav_food[9];
+    u16 fav_thing[9];
+    u16 playername_short[9];
+    u16 playername[0x10];
     u16 _6f8;
     u16 _6fa;
     u16 _6fc;
@@ -811,7 +811,7 @@ typedef struct MapLayerAlphaInfo {
     u8 pad[0xC];
     MapLayerInfo layers[3];
 } MapLayerAlphaInfo;
-               
+
 typedef struct MapGraphicsInfo {
     s16 tileSetIndices[12];
     s16 paletteIndex;

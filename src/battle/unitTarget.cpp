@@ -235,6 +235,7 @@ NONMATCH("asm/non_matching/unitTarget/attackdata_70.inc", bool UnitTarget::attac
     while (attackdata_110() > 0) {
         attackdata_108(attackdata_118(0));
     }
+
     switch (attackdata_b8()) {
     case 0:
         for (int i = 0; i < attackdata_e8(); i++) {
@@ -264,7 +265,7 @@ NONMATCH("asm/non_matching/unitTarget/attackdata_70.inc", bool UnitTarget::attac
         break;
     case 3:
         for (int i = 0; i < attackdata_a0(); i++) {
-            attackdata_100(getTarget(randrange2(0, mTargets.size() - 1)));
+            attackdata_100(getTarget(randS32(0, mTargets.size() - 1)));
         }
         break;
     case 4:
