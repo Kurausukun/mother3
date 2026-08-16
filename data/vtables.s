@@ -94495,10 +94495,10 @@ _vt.10UnitTarget::
 	.4byte attackdata_e8__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte attackdata_f0__10UnitTargeti
+	.4byte getTarget__10UnitTargeti
 	.2byte 0
 	.2byte 0
-	.4byte attackdata_f8__C10UnitTargetP4Unit
+	.4byte getTargetIndex__C10UnitTargetP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte attackdata_100__10UnitTargetP4Unit
@@ -94608,10 +94608,10 @@ _vt.16UnitTargetChoice::
 	.4byte attackdata_e8__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte attackdata_f0__10UnitTargeti
+	.4byte getTarget__10UnitTargeti
 	.2byte 0
 	.2byte 0
-	.4byte attackdata_f8__C10UnitTargetP4Unit
+	.4byte getTargetIndex__C10UnitTargetP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte attackdata_100__10UnitTargetP4Unit

@@ -29,8 +29,8 @@ public:
     virtual bool removeTarget(Unit*);
     virtual s32 numTargets() const;
     virtual s32 attackdata_e8() const;
-    virtual Unit* attackdata_f0(s32 idx);
-    virtual s32 attackdata_f8(Unit*) const;
+    virtual Unit* getTarget(s32 idx);
+    virtual s32 getTargetIndex(Unit*) const;
     virtual Unit* attackdata_100(Unit*);
     virtual bool attackdata_108(Unit* u);
     virtual s32 attackdata_110() const;

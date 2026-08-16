@@ -8,7 +8,7 @@
 
 extern "C" s32 sub_0807066C(s32, s32);
 extern "C" void playSound(u16);
-extern "C" bool isMonsterVariant(Unit*, u32);
+extern "C" bool isMonsterVariant(Unit*, u16);
 extern "C" void PlayAnimation(u16, Unit*, Unit*);
 
 class DefaultPsi : public Psi {

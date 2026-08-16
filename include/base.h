@@ -15,10 +15,7 @@ template <typename T>
 struct SafeVector : public Vector<T> {
 public:
     SafeVector() {}
-    ~SafeVector() {
-        // clang cannot find "mSize" without `this->` ??
-        this->mSize = 0;
-    }
+    ~SafeVector() { mSize = 0; }
 };
 
 typedef void (*Callback)(Base*, Clock*);
