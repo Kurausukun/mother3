@@ -39,7 +39,7 @@ sub_0806ED2C:
 	adds r0, r4, #0
 	adds r0, #0x30
 	adds r1, r5, #0
-	bl sub_0805D2D4
+	bl set__6ResPtrR6ResPtr
 	b _0806ED8E
 	.align 2, 0
 _0806ED84: .4byte 0x20736172

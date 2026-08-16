@@ -13,8 +13,6 @@ extern "C" s32 GetMonsterCount();
 extern "C" Monster* GetMonster(s32);
 extern "C" Player* getPlayerByID(u16);
 extern "C" s32 Remainder(s32, s32);
-extern "C" s32 randrange(s32, s32);
-extern "C" s32 randrange2(s32, s32);
 extern "C" PartyInfo* getPartyInfo();
 
 extern ClockData callback_sub_080775E8;
@@ -252,9 +250,8 @@ NONMATCH("asm/non_matching/unitTarget/attackdata_70.inc", bool UnitTarget::attac
         h = numTargets() / 2;
         if (mTargets.size() > 0) {
             for (int i = 0; i < h; i++) {
-                s32 ia = randrange(0, mTargets.size() - 1);
-                s32 ib = randrange(0, mTargets.size() - 1);
-
+                s32 ia = randS32_(0, mTargets.size() - 1);
+                s32 ib = randS32_(0, mTargets.size() - 1);
                 Unit* tmp = mTargets[ia];
                 mTargets[ia] = mTargets[ib];
                 mTargets[ib] = tmp;

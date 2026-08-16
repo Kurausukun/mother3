@@ -88,36 +88,36 @@ gUnknown_08D2E1C0:
         .4byte sub_0803B58C+1
 
 
-    .global gMapInfoTable
-gMapInfoTable:
+    .global gMapLayerInfoTable
+gMapLayerInfoTable:
     .incbin "baserom.gba", 0x00D2E1D8, 0x6D6C
+
+    .global gMapGraphicsInfoTable
+gMapGraphicsInfoTable:
+    .incbin "baserom.gba", 0x00D34F44, 0x659C
 
     .global gMapGraphicsTable
 gMapGraphicsTable:
-    .incbin "baserom.gba", 0x00D34F44, 0x659C
-
-    .global gUnknown_08D3B4E0
-gUnknown_08D3B4E0:
     .incbin "baserom.gba", 0x00D3B4E0, 0x200E64
 
-    .global gUnknown_08F3C344
-gUnknown_08F3C344:
+    .global gMapPalettes
+gMapPalettes:
     .incbin "baserom.gba", 0x00F3C344, 0x53CF8
 
-    .global gUnknown_08F9003C
-gUnknown_08F9003C:
+    .global gMapTilemapData
+gMapTilemapData:
     .incbin "baserom.gba", 0x00F9003C, 0xbd990
 
-gUnknown_0904D9CC::
+gMapTileData::
     .incbin "baserom.gba", 0x0104D9CC, 0xd04e8
 
-gDoorHotSpotTable::
+gMapDoorHotspotTable::
     .incbin "baserom.gba", 0x0111DEB4, 0xe4dc
 
 gUnknown_0912C390::
     .incbin "baserom.gba", 0x0112C390, 0x67c8
 
-gUnknown_09132B58::
+gObjectData::
     .incbin "baserom.gba", 0x01132B58, 0x330b8
 
 gGiftBoxTable::
@@ -129,8 +129,8 @@ gDoorDestinationTable::
 gMapAnimationTable::
     .incbin "baserom.gba", 0x0116CB08, 0x14c74
 
-    .global gUnknown_0918177C
-gUnknown_0918177C:
+    .global gTextUnkTable
+gTextUnkTable:
     .incbin "baserom.gba", 0x0118177C, 0x17494
 
     .global gScriptLogic

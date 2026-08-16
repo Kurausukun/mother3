@@ -403,19 +403,19 @@ _08023C8C:
 	ldr r0, _08023C90
 	b _08023CB8
 	.align 2, 0
-_08023C90: .4byte gUnknown_020042C2
+_08023C90: .4byte gCharStats+0x1B2 @ gCharStats[4].name
 _08023C94:
 	ldr r1, _08023C9C
 	str r1, [sp, #8]
 	b _08023CBA
 	.align 2, 0
-_08023C9C: .4byte gUnknown_020041EA
+_08023C9C: .4byte gCharStats+0xDA @ gCharStats[2].name
 _08023CA0:
 	ldr r2, _08023CA8
 	str r2, [sp, #8]
 	b _08023CBA
 	.align 2, 0
-_08023CA8: .4byte gUnknown_0200417E
+_08023CA8: .4byte gCharStats+0x6E @ gCharStats[1].name
 _08023CAC:
 	ldr r3, _08023DD4
 	adds r0, r1, r3

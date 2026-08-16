@@ -88,6 +88,6 @@ _0806F8F2:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0806F968: .4byte gUnknown_080EF880
+_0806F968: .4byte gBattleSineTable
 _0806F96C: .4byte 0x000003FF
 	.syntax divided

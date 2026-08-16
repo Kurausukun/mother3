@@ -145,6 +145,6 @@ _0800AC90:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0800AC98: .4byte gUnknown_09AF3790
+_0800AC98: .4byte gMiscGfx
 _0800AC9C: .4byte gUnknown_080C2008
 	.syntax divided

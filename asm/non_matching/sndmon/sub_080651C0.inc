@@ -55,7 +55,7 @@ _080651EC:
 	bl sub_080706A0
 	adds r0, r5, #0
 	add r1, sp, #4
-	bl init__9CCGHandleRC6ResPtr
+	bl init__9CCGHandleRC11ResPtrSized
 	ldr r4, _08065298
 	str r4, [sp, #0xc]
 	movs r1, #0xa1
@@ -64,7 +64,7 @@ _080651EC:
 	bl sub_080706A0
 	adds r0, r6, #0
 	add r1, sp, #4
-	bl init__9CCLHandleRC6ResPtr
+	bl init__9CCLHandleRC11ResPtrSized
 	str r4, [sp, #0xc]
 	bl get__12ClockManager
 	adds r5, r0, #0
@@ -95,7 +95,7 @@ _080651EC:
 	.align 2, 0
 _08065290: .4byte vt_09F7DEB0
 _08065294: .4byte 0x000003FF
-_08065298: .4byte _vt.6ResPtr
+_08065298: .4byte _vt.11ResPtrSized
 _0806529C: .4byte _vt.5Event
 _080652A0: .4byte _vt.8AppClock
 _080652A4: .4byte gUnknown_080FBDA0

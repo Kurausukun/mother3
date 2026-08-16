@@ -18,7 +18,7 @@ _080B2334:
 	mov r8, r1
 	b _080B238A
 	.align 2, 0
-_080B233C: .4byte gUnknown_080EF880
+_080B233C: .4byte gBattleSineTable
 _080B2340:
 	strh r6, [r4]
 	strh r6, [r4, #2]

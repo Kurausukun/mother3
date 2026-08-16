@@ -30,7 +30,7 @@ _080484D0:
 	bl sub_080484FC
 	b _080484F6
 	.align 2, 0
-_080484E8: .4byte gUnknown_020041EA
+_080484E8: .4byte gCharStats+0xDA @ gCharStats[2].name
 _080484EC:
 	strh r4, [r5]
 	adds r5, #2

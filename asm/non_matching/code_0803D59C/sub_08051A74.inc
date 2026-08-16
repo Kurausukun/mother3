@@ -25,7 +25,7 @@ sub_08051A74:
 	beq _08051B38
 	add r6, sp, #8
 	adds r0, r6, #0
-	bl sub_08051BDC
+	bl copy_save_from_iwram
 	ldr r7, _08051B34
 	mov r0, sp
 	adds r1, r7, #0

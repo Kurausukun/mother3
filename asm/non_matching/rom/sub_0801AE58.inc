@@ -14,7 +14,7 @@ sub_0801AE58:
 	adds r0, r0, r1
 	ldrh r0, [r0]
 	movs r1, #2
-	bl sub_0801B45C
+	bl getMapDoorsHotspots
 	adds r6, r0, #0
 	ldr r1, _0801AEDC
 	ldr r0, [sp]

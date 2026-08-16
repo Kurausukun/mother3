@@ -13,13 +13,15 @@ extern StatMeter gPPStatMeters[6];
 extern Object gUnknown_0200C3C8[];
 extern Direction gDirectionTable[];
 extern struct_200D818 gUnknown_0200D818[];
-extern u16 gUnknown_020041EA;
 extern const u16 gSectorToDirection[];
 extern const u16 gSectorToDirectionExt[];
 extern const DebugModeFunc gDebugFuncTable[6];
 extern u8 gUnknown_080C1FF8[];
 extern u8 gUnknown_080C1FE8[];
 extern DebugInitFunc gDebugMenuInitTable[];
+extern u16 gScriptLogic[];
+extern char _binary_build_mother3_assets_mainscript_bin_start;
+extern const char gTextUnkTable;
 
 extern "C" void sub_080012BC(void*, s32, s32, s32);
 extern "C" Object* get_obj_direct(u16 idx);
@@ -63,6 +65,7 @@ extern "C" void sub_0803B5C4();
 extern "C" void sub_0803A844(InputState*, DebugMenuState*);
 extern "C" void sub_0803AAAC(InputState*, TransactionState*);
 extern "C" u16 isEquipLytSet2(CharStats* stats, u16 index);
+extern "C" void* Blob_GetEntry(const void* src, u16 index);
 
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08021920.inc", u32 sub_08021920(u32));
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08021930.inc", void sub_08021930());
@@ -75,7 +78,7 @@ extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08022024.inc", void sub_
 
 extern "C" s32 sub_080220EC(s32 r0, s32 r1, s32 r2) {
     if ((r0 << 0x10) == 0xFFE00000) {
-        return sub_080222C0(r2, &gUnknown_020041EA, get_misctext_len(6));
+        return sub_080222C0(r2, (u16*)&gCharStats[2].name, get_misctext_len(6));
     }
     return r2;
 }
@@ -414,13 +417,53 @@ void sub_08027D1C(SoundUnkInfo* unk) {
 
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08027DC4.inc", void sub_08027DC4());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08027DE4.inc", void sub_08027DE4());
-extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08027DF4.inc", void sub_08027DF4());
+
+extern "C" const void* sub_08027DF4(u16 index) {
+    return Blob_GetEntry(&gTextUnkTable, index);
+}
+
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08027E0C.inc", void sub_08027E0C());
-extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08027E60.inc", void* sub_08027E60());
+
+extern "C" void* sub_08027E60() {
+    return Blob_GetEntry(&gScriptLogic, 1);
+}
+
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08027E74.inc", void sub_08027E74());
-extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08027EF8.inc", void sub_08027EF8());
-extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08027F38.inc", void sub_08027F38());
-extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08027F70.inc", void sub_08027F70());
+
+extern "C" s32 sub_08027EF8(s32 arg0, u16 index, u16 arg2) {
+    u16* logic = (u16*)Blob_GetEntry(gScriptLogic, (u32)((arg0 << 0x11) + 0x20000) >> 0x10);
+
+    if (logic != gScriptLogic) {
+        return logic[index + 1] & arg2;
+    }
+
+    return 0;
+}
+
+extern "C" u16* getCommonScriptLine(u16 index) {
+    u16* offsets = (u16*)Blob_GetEntry(&_binary_build_mother3_assets_mainscript_bin_start, 0);
+
+    if ((char*)offsets != &_binary_build_mother3_assets_mainscript_bin_start) {
+        u8* data = (u8*)Blob_GetEntry(&_binary_build_mother3_assets_mainscript_bin_start, 1);
+        return (u16*)&data[offsets[index]];
+    }
+
+    return NULL;
+}
+
+extern "C" u16* getRoomScriptLine(u16 room, u16 index) {
+    u16* offsets =
+        (u16*)Blob_GetEntry(&_binary_build_mother3_assets_mainscript_bin_start, (room + 1) * 2);
+
+    if ((char*)offsets != &_binary_build_mother3_assets_mainscript_bin_start) {
+        u8* data = (u8*)Blob_GetEntry(&_binary_build_mother3_assets_mainscript_bin_start,
+                                      ((room + 1) * 2) + 1);
+        return (u16*)&data[offsets[index]];
+    }
+
+    return NULL;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08027FB8.inc", void sub_08027FB8());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08027FD8.inc", void sub_08027FD8());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08028020.inc", void sub_08028020());

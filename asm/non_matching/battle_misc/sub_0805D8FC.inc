@@ -175,7 +175,7 @@ _0805D9C6:
 	ldr r6, _0805DB6C
 	str r6, [sp, #0x18]
 	str r6, [sp, #0xc]
-	bl sub_0806FB78
+	bl makeInstance__16EfcSystemManager
 	adds r5, r0, #0
 	ldr r4, [r5, #0x1c]
 	adds r4, #0x68
@@ -249,7 +249,7 @@ _0805D9C6:
 	.align 2, 0
 _0805DB64: .4byte _vt.6Battle
 _0805DB68: .4byte 0x000003A9
-_0805DB6C: .4byte _vt.6ResPtr
+_0805DB6C: .4byte _vt.11ResPtrSized
 _0805DB70: .4byte 0x000003AA
 _0805DB74: .4byte 0x000003AB
 _0805DB78: .4byte _vt.5Event

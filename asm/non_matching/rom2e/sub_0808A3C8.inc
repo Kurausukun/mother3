@@ -95,7 +95,7 @@ _0808A438:
 	str r2, [sp, #0x14]
 	b _0808A502
 	.align 2, 0
-_0808A480: .4byte gUnknown_080EF880
+_0808A480: .4byte gBattleSineTable
 _0808A484:
 	ldr r1, [r5, #0x1c]
 	adds r1, #0xf0

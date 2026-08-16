@@ -3,7 +3,7 @@ sub_08089F94:
 	push {r4, r5, r6, r7, lr}
 	sub sp, #0xc
 	adds r4, r0, #0
-	bl sub_0806FBA8
+	bl get__16EfcSystemManager
 	adds r5, r0, #0
 	ldr r2, [r5, #0x1c]
 	adds r2, #0x88
@@ -64,7 +64,7 @@ sub_08089F94:
 	b _0808A034
 	.align 2, 0
 _0808A018: .4byte 0x0000FFFF
-_0808A01C: .4byte _vt.6ResPtr
+_0808A01C: .4byte _vt.11ResPtrSized
 _0808A020:
 	cmp r4, #0
 	beq _0808A034

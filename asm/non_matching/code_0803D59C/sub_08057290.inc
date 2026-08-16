@@ -37,7 +37,7 @@ _080572DC:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080572E4: .4byte gUnknown_09BCDD8C
+_080572E4: .4byte gTitleScreenGfx
 _080572E8: .4byte 0x06010000
 _080572EC: .4byte gUnknown_02016078
 _080572F0: .4byte 0x00002EAC

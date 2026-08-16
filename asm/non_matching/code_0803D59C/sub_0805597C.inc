@@ -67,7 +67,7 @@ _080559F0:
 	cmp r4, #7
 	blt _08055A0E
 	adds r0, r4, #0
-	bl sub_08054FB8
+	bl getCharName
 	adds r1, r0, #0
 	ldr r0, [r5]
 	movs r2, #9
@@ -138,7 +138,7 @@ _08055A86:
 	beq _08055AA0
 _08055A8A:
 	adds r0, r4, #0
-	bl sub_08054FB8
+	bl getCharName
 	adds r1, r0, #0
 	ldr r0, [r6]
 	movs r2, #9

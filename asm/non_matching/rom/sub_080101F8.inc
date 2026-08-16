@@ -36,7 +36,7 @@ sub_080101F8:
 	ldr r2, _08010324
 	adds r0, r0, r2
 	ldrh r0, [r0]
-	bl sub_0801B3B4
+	bl getMapLayerAlphaInfo
 	adds r1, r6, #0
 	ldm r0!, {r2, r3, r4}
 	stm r1!, {r2, r3, r4}

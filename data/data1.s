@@ -19,11 +19,7 @@ gUnknown_080C17A0:
 	
     .global gSineTable
 gSineTable:
-    .incbin "baserom.gba", 0x000C17D8, 0x28
-	
-    .global gUnknown_080C1800
-gUnknown_080C1800:
-    .incbin "baserom.gba", 0x000C1800, 0x258
+    .incbin "baserom.gba", 0x000C17D8, 0x280
 
 gUnknown_080C1A58::
     .word sub_080053D0+1

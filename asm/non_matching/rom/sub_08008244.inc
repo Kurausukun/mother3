@@ -51,7 +51,7 @@ sub_08008244:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080082C4: .4byte gUnknown_09AF3790
+_080082C4: .4byte gMiscGfx
 _080082C8: .4byte 0x0600B000
 _080082CC: .4byte gSomeBlend
 _080082D0: .4byte 0x000035BA

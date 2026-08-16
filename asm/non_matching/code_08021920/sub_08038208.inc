@@ -23,7 +23,7 @@ _0803822C: .4byte gSomeBlend
 _08038230: .4byte 0x00003531
 _08038234: .4byte gGame
 _08038238: .4byte 0x000082B8
-_0803823C: .4byte gUnknown_09AF3790
+_0803823C: .4byte gMiscGfx
 _08038240:
 	ldr r0, _0803828C
 	movs r1, #9
@@ -64,7 +64,7 @@ _08038284:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0803828C: .4byte gUnknown_09AF3790
+_0803828C: .4byte gMiscGfx
 _08038290: .4byte gUnknown_02018CE8
 _08038294: .4byte 0x0000F4FA
 _08038298: .4byte 0x00000871

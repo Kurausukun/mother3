@@ -48,9 +48,9 @@ extern void sub_08003AB8(u16, u16);
 extern void sub_08003B30(u16, u16);
 extern s32 sub_080222F8(u16);
 extern void sub_080250B4(s32, u16, u16);
-extern s32 sub_08027F38(u16);
+extern s32 getCommonScriptLine(u16);
 extern void memFill(void*, s32, s32); /* extern */
-extern s32 sub_0801B414(u16);         /* extern */
+extern s32 getMapPaletteTable(u16);   /* extern */
 extern void sub_08027904();
 extern void sub_080334D0(u8, u16);
 
@@ -1897,7 +1897,7 @@ _0801D784:\n\
 	lsls r1, r1, #0x10\n\
 	lsrs r1, r1, #0x10\n\
 	adds r0, r4, #0\n\
-	bl sub_08027F70\n\
+	bl getRoomScriptLine\n\
 	adds r4, r0, #0\n\
 	cmp r4, #0\n\
 	beq _0801D858\n\
@@ -2066,7 +2066,7 @@ _0801D8EC:\n\
 	bl scriptstack_peek\n\
 	lsls r0, r0, #0x10\n\
 	lsrs r0, r0, #0x10\n\
-	bl sub_08027F38\n\
+	bl getCommonScriptLine\n\
 	adds r4, r0, #0\n\
 	cmp r4, #0\n\
 	beq _0801D9B8\n\
@@ -3194,7 +3194,7 @@ u16 cmd_EB(s32* sp) {
 	ldr r1, _0801E6E8 @ =0x000067AC\n\
 	adds r0, r4, r1\n\
 	ldrh r0, [r0]\n\
-	bl sub_0801B3B4\n\
+	bl getMapLayerAlphaInfo\n\
 	ldr r5, _0801E6EC @ =0x000067C5\n\
 	adds r3, r4, r5\n\
 	ldrb r2, [r3]\n\
@@ -4709,7 +4709,7 @@ extern "C" s32 cmd_73(s32* sp) {
     u16 b = scriptstack_peek(sp, 2);
     u16 c = scriptstack_peek(sp, 1);
 
-    gGame._83a4 = sub_0801B414(scriptstack_peek(sp, 0));
+    gGame._83a4 = getMapPaletteTable(scriptstack_peek(sp, 0));
     u16 d = a == 0 ? 8 : 9;
     sub_080272F4(d, b, c);
 
@@ -4813,7 +4813,7 @@ extern "C" s32 cmd_7F(s32* sp) {
     if (a == 0) {
         unk = sub_080222F8(b);
     } else {
-        unk = sub_08027F38(b);
+        unk = getCommonScriptLine(b);
     }
     sub_080250B4(unk, c, d);
     return 0;
@@ -4838,7 +4838,7 @@ extern "C" ASM_FUNC("asm/non_matching/script/cmd_disp_text_special.inc", void cm
 extern "C" s32 cmd_B9(s32* sp) {
     s16 a = scriptstack_peek(sp, 0);
     if (a != -1) {
-        gGame._28 = sub_0801B414((u16)a);
+        gGame._28 = getMapPaletteTable((u16)a);
         sub_08027904();
     }
 

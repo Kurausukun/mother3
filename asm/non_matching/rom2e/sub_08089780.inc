@@ -4,7 +4,7 @@ sub_08089780:
 	adds r5, r0, #0
 	lsls r4, r1, #0x10
 	lsrs r4, r4, #0x10
-	bl sub_0806FBA8
+	bl get__16EfcSystemManager
 	ldr r1, [r0, #0x1c]
 	adds r1, #0xa8
 	movs r3, #0

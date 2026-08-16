@@ -41,8 +41,8 @@ gUnknown_09AEE4C4::
 gUnknown_09AF1ED0::
     .incbin "baserom.gba", 0x01AF1ED0, 0x18c0
 
-    .global gUnknown_09AF3790
-gUnknown_09AF3790:
+    .global gMiscGfx
+gMiscGfx:
     .incbin "baserom.gba", 0x01AF3790, 0x192c4
 
 gUnknown_09B0CA54::
@@ -347,8 +347,8 @@ gUnknown_09BCDD80::
 gUnknown_09BCDD86::
     .incbin "baserom.gba", 0x01BCDD86, 0x6
 
-    .global gUnknown_09BCDD8C
-gUnknown_09BCDD8C:
+    .global gTitleScreenGfx
+gTitleScreenGfx:
     .incbin "baserom.gba", 0x01BCDD8C, 0x91f40
 
 gUnknown_09C5FCCC::
@@ -394,8 +394,8 @@ gUnknown_09C908E0::
 gUnknown_09C90920::
     .incbin "baserom.gba", 0x01C90920, 0x40
 
-    .global gUnknown_09C90960
-gUnknown_09C90960:
+    .global gBattleSAR
+gBattleSAR:
     .incbin "baserom.gba", 0x01C90960, 0x2b3e40
 
 gUnknown_09F447A0::

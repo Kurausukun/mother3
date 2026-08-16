@@ -14,7 +14,7 @@ sub_08010624:
 	mov r8, r1
 _0801063C:
 	adds r0, r6, #0
-	bl sub_0801B4C4
+	bl getGiftBoxData
 	adds r4, r0, #0
 	ldrb r0, [r4]
 	lsls r0, r0, #0x1f

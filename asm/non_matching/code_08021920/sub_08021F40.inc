@@ -66,7 +66,7 @@ _08021FAC:
 	bl sub_080222C0
 	b _0802201E
 	.align 2, 0
-_08021FE0: .4byte gUnknown_02004112
+_08021FE0: .4byte gCharStats+0x2 @ gCharStats[0].name
 _08021FE4:
 	ldr r1, _08021FE8
 	b _08021FFE

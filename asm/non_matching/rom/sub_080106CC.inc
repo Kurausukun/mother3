@@ -24,7 +24,7 @@ _080106F6:
 	lsls r0, r5, #1
 	adds r0, r6, r0
 	ldrh r0, [r0]
-	bl sub_0801B3FC
+	bl getMapGraphics
 	lsls r1, r5, #2
 	add r1, r8
 	str r0, [r1]
@@ -54,7 +54,7 @@ _08010724:
 	strh r7, [r2]
 _08010738:
 	ldrh r0, [r6, #0x18]
-	bl sub_0801B414
+	bl getMapPaletteTable
 	ldr r4, _0801077C
 	str r0, [r4, #0x28]
 	movs r2, #0xc0
@@ -112,7 +112,7 @@ _080107A8:
 	adds r0, r5, r0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
-	bl sub_0801B42C
+	bl getMapTilemapData
 	adds r1, r6, #0
 	bl LZ77UnCompWram
 	adds r0, r5, #0
@@ -133,7 +133,7 @@ _080107CE:
 	adds r0, r0, r3
 	str r0, [r4]
 	adds r0, r7, #0
-	bl sub_0801B444
+	bl getMapTileData
 	ldr r1, [r4]
 	bl LZ77UnCompWram
 	add sp, #4

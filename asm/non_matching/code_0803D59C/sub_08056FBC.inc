@@ -68,5 +68,5 @@ _08057004:
 	.align 2, 0
 _08057038: .4byte gSomeBlend
 _0805703C: .4byte 0x00002CB1
-_08057040: .4byte gUnknown_09BCDD8C
+_08057040: .4byte gTitleScreenGfx
 	.syntax divided

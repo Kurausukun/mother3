@@ -17,7 +17,7 @@ CCLHandle::CCLHandle() {  // __9CCLHandle
     mBlock = NULL;
 }
 
-CCLHandle::CCLHandle(const ResPtr& ref) {
+CCLHandle::CCLHandle(const ResPtrSized& ref) {
     mType = 0;
     mCount = 0;
     mBlock = NULL;
@@ -26,7 +26,7 @@ CCLHandle::CCLHandle(const ResPtr& ref) {
 
 CCLHandle::~CCLHandle() {}
 
-int CCLHandle::init(const ResPtr& ref) {
+int CCLHandle::init(const ResPtrSized& ref) {
     mType = type(ref);
 
     switch (mType) {
@@ -41,7 +41,7 @@ int CCLHandle::init(const ResPtr& ref) {
     return 1;
 }
 
-int CCLHandle::type(const ResPtr& ref) {
+int CCLHandle::type(const ResPtrSized& ref) {
     if (RESOURCE(ref)->header != HEADER_CCL) {  // " lcc"
         return 1;
     } else {
@@ -49,12 +49,12 @@ int CCLHandle::type(const ResPtr& ref) {
     }
 }
 
-void CCLHandle::read1(const ResPtr& ref) {
+void CCLHandle::read1(const ResPtrSized& ref) {
     mCount = ref.size >> 5;
     mBlock = ref.address;
 }
 
-void CCLHandle::read2(const ResPtr& ref) {
+void CCLHandle::read2(const ResPtrSized& ref) {
     mCount = RESOURCE(ref)->count;
     mBlock = (void*)&RESOURCE(ref)->block;
 }
@@ -78,7 +78,7 @@ CCGHandle::CCGHandle() {
     mBlock = NULL;
 }
 
-CCGHandle::CCGHandle(const ResPtr& ref) {
+CCGHandle::CCGHandle(const ResPtrSized& ref) {
     mType = 0;
     mReserve = NULL;
     mCount = 0;
@@ -90,7 +90,7 @@ CCGHandle::~CCGHandle() {
     delete[] mReserve;
 }
 
-int CCGHandle::init(const ResPtr& ref) {
+int CCGHandle::init(const ResPtrSized& ref) {
     delete[] mReserve;
     mReserve = NULL;
 
@@ -108,7 +108,7 @@ int CCGHandle::init(const ResPtr& ref) {
     return 1;
 }
 
-int CCGHandle::type(const ResPtr& ref) {
+int CCGHandle::type(const ResPtrSized& ref) {
     if (RESOURCE(ref)->header != HEADER_CCG) {  // " gcc"
         return 1;
     } else {
@@ -116,12 +116,12 @@ int CCGHandle::type(const ResPtr& ref) {
     }
 }
 
-void CCGHandle::read1(const ResPtr& ref) {
+void CCGHandle::read1(const ResPtrSized& ref) {
     mCount = ref.size >> 5;
     mBlock = ref.address;
 }
 
-void CCGHandle::read2(const ResPtr& ref) {
+void CCGHandle::read2(const ResPtrSized& ref) {
     Resource* ccg = RESOURCE(ref);
 
     mCount = ccg->count;

@@ -12,7 +12,7 @@ _080747D6:
 	ldrh r0, [r2]
 	b _080747EE
 	.align 2, 0
-_080747E0: .4byte gUnknown_081135A8
+_080747E0: .4byte gBgmHypnosisMappings
 _080747E4:
 	adds r2, #4
 	adds r3, #1

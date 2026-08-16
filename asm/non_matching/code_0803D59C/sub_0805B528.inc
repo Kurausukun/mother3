@@ -95,7 +95,7 @@ _0805B5BA:
 	.align 2, 0
 _0805B5E0: .4byte gCharStats
 _0805B5E4: .4byte gLevelStatTable
-_0805B5E8: .4byte gUnknown_0200414C
-_0805B5EC: .4byte gUnknown_02004148
+_0805B5E8: .4byte gCharStats+0x3C @ gCharStats[0].inventory[0]
+_0805B5EC: .4byte gCharStats+0x38 @ gCharStats[0].equip_lyt
 _0805B5F0: .4byte gLevelStatTable + 4
 	.syntax divided

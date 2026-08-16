@@ -14,7 +14,7 @@ sub_0802724C:
 	lsls r1, r4, #1
 	adds r0, r0, r1
 	ldrh r0, [r0]
-	bl sub_0801B3FC
+	bl getMapGraphics
 	ldr r1, _080272D8
 	bl LZ77UnCompVram
 	movs r0, #0xc1
@@ -22,7 +22,7 @@ sub_0802724C:
 	bl sub_0803B800
 	mov r8, r0
 	adds r0, r5, #0
-	bl sub_0801B444
+	bl getMapTileData
 	mov r1, r8
 	bl LZ77UnCompWram
 	lsls r4, r4, #9
