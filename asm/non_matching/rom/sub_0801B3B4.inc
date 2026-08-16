@@ -15,5 +15,5 @@ sub_0801B3B4:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0801B3D4: .4byte gMapInfoTable
+_0801B3D4: .4byte gMapLayerInfoTable
 	.syntax divided

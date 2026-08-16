@@ -14,7 +14,8 @@ extern const char _binary_build_mother3_assets_misctext_bin_start;
 extern const char gMapPalettes;
 extern const char gMapTileData;
 extern const char gMapTilemapData;
-extern const char gMapGfxInfoData;
+extern const char gMapGraphicsTable;
+extern const MapGraphicsInfo gMapGraphicsInfoTable;
 extern const IrqTable gUnknown_080C1A58;
 extern const u8 gMapMusicTable[0x3E8];
 extern IrqTable gIntrHandlers;
@@ -60,7 +61,7 @@ extern "C" void sub_08036BA4(Object*);
 extern "C" void sub_0800BE04(Object*);
 extern "C" void sub_080052E4(s32);
 extern "C" void sub_0802610C(s32);
-extern "C" MapGraphicsInfo* getMapGraphicsInfo(u16);
+extern "C" const MapGraphicsInfo* getMapGraphicsInfo(u16);
 extern "C" DoorDestinationInfo* getDoorDestinationInfo(u16);
 extern "C" void sub_0805CD30(u16, u16, u8);
 extern "C" u32 sub_0805CDD8(u16, u8);
@@ -1895,7 +1896,7 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B144.inc", void sub_0801B144()
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B1BC.inc", void sub_0801B1BC());
 
 extern "C" u16 isMapGraphicsValid(u16 mapID) {
-    MapGraphicsInfo* graphicsInfo = getMapGraphicsInfo(mapID);
+    const MapGraphicsInfo* graphicsInfo = getMapGraphicsInfo(mapID);
 
     for (u16 i = 0; i < 12; i++) {
         if (graphicsInfo->tileSetIndices[i] == -1) {
@@ -1917,11 +1918,20 @@ extern "C" u8 getMusicIDForRoom(u16 roomIndex) {
 }
 
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B3B4.inc", void sub_0801B3B4());
-extern "C" ASM_FUNC("asm/non_matching/rom/getMapGraphicsInfo.inc", MapGraphicsInfo* getMapGraphicsInfo(u16));
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B3F8.inc", void sub_0801B3F8());
 
-extern "C" const void* getMapGfxInfoData(u16 index) {
-    return Blob_GetEntry(&gMapGfxInfoData, index);
+extern "C" const MapGraphicsInfo* getMapGraphicsInfo(u16 index) {
+    u8* table = (u8*)Blob_GetEntry(&gMapGraphicsInfoTable, 0);
+    return (MapGraphicsInfo*)(&table[index * 0x1a]);
+    // FAKEMATCH: Should be something like the following
+    // return &(((MapGraphicsInfo*)Blob_GetEntry(gMapGraphicsTable, 0))[index]);
+}
+
+extern "C" const void* nullsub_0801B3F8() {
+    return NULL;
+};
+
+extern "C" const void* getMapGraphics(u16 index) {
+    return Blob_GetEntry(&gMapGraphicsTable, index);
 }
 
 extern "C" const void* getMapPaletteTable(u16 index) {

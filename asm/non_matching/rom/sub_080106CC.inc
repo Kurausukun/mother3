@@ -24,7 +24,7 @@ _080106F6:
 	lsls r0, r5, #1
 	adds r0, r6, r0
 	ldrh r0, [r0]
-	bl getMapGfxInfoData
+	bl getMapGraphics
 	lsls r1, r5, #2
 	add r1, r8
 	str r0, [r1]

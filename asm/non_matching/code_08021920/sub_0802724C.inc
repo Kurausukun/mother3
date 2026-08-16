@@ -14,7 +14,7 @@ sub_0802724C:
 	lsls r1, r4, #1
 	adds r0, r0, r1
 	ldrh r0, [r0]
-	bl getMapGfxInfoData
+	bl getMapGraphics
 	ldr r1, _080272D8
 	bl LZ77UnCompVram
 	movs r0, #0xc1

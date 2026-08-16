@@ -88,16 +88,16 @@ gUnknown_08D2E1C0:
         .4byte sub_0803B58C+1
 
 
-    .global gMapInfoTable
-gMapInfoTable:
+    .global gMapLayerInfoTable
+gMapLayerInfoTable:
     .incbin "baserom.gba", 0x00D2E1D8, 0x6D6C
+
+    .global gMapGraphicsInfoTable
+gMapGraphicsInfoTable:
+    .incbin "baserom.gba", 0x00D34F44, 0x659C
 
     .global gMapGraphicsTable
 gMapGraphicsTable:
-    .incbin "baserom.gba", 0x00D34F44, 0x659C
-
-    .global gMapGfxInfoData
-gMapGfxInfoData:
     .incbin "baserom.gba", 0x00D3B4E0, 0x200E64
 
     .global gMapPalettes
