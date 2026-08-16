@@ -146,7 +146,7 @@ _080654A4:
 	bge _080654F2
 	b _080654F0
 	.align 2, 0
-_080654DC: .4byte gUnknown_080EF880
+_080654DC: .4byte gBattleSineTable
 _080654E0: .4byte 0x000003FF
 _080654E4:
 	movs r1, #0x28

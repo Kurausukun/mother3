@@ -749,12 +749,12 @@ callback_sub_08086AB0:
 gUnknown_08112818:
     .incbin "baserom.gba", 0x00112818, 0x690
 
-    .global gUnknown_08112EA8
-gUnknown_08112EA8:
+    .global gPlayerBashSfxChanceTable
+gPlayerBashSfxChanceTable:
     .incbin "baserom.gba", 0x00112EA8, 0x700
 
-    .global gUnknown_081135A8
-gUnknown_081135A8:
+    .global gBgmHypnosisMappings
+gBgmHypnosisMappings:
     .incbin "baserom.gba", 0x001135A8, 0xD5C
 
     .global callback_sub_08086F80

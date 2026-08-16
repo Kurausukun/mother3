@@ -35,7 +35,7 @@ _0807C1FE:
 	strh r4, [r0]
 	b _0807C23A
 	.align 2, 0
-_0807C22C: .4byte gUnknown_08112EA8
+_0807C22C: .4byte gPlayerBashSfxChanceTable
 _0807C230: .4byte 0x0000020A
 _0807C234:
 	adds r4, #1

@@ -56,7 +56,7 @@ _080713E4:
 	.align 2, 0
 _080713F0: .4byte 0x05F5E0FF
 _080713F4: .4byte 0x000003E7
-_080713F8: .4byte gUnknown_080F0C80
+_080713F8: .4byte gThreeDigitDisplayTable
 _080713FC:
 	adds r4, r1, #0
 	adds r6, r7, #0

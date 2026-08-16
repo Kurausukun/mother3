@@ -80,5 +80,5 @@ _080718B2:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080718BC: .4byte gUnknown_080F0C80
+_080718BC: .4byte gThreeDigitDisplayTable
 	.syntax divided

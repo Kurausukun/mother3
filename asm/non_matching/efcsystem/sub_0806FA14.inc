@@ -157,5 +157,5 @@ _0806FB0A:
 	bx r0
 	.align 2, 0
 _0806FB5C: .4byte 0x000003FF
-_0806FB60: .4byte gUnknown_080EF880
+_0806FB60: .4byte gBattleSineTable
 	.syntax divided
