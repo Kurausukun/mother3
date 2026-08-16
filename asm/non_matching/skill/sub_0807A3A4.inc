@@ -249,7 +249,7 @@ _0807A538:
 	bl attackdata_c8__10UnitTarget
 	ldr r1, [sp, #0x44]
 	mov r0, sp
-	bl attackdata_f8__C10UnitTargetP4Unit
+	bl getTargetIndex__C10UnitTargetP4Unit
 	adds r4, r0, #0
 	mov r0, sp
 	bl numTargets__C10UnitTarget

@@ -3,18 +3,21 @@
 namespace text {
 
 const std::unordered_map<u16, CCode> cc_map = {
-    {0x0000, {"NUL", 0}},      {0xD389, {"UNK_D389", 0}},    {0xD84D, {"UNK_D84D", 0}},
-    {0xFF00, {"@", 0}},        {0xFF01, {"BREAK", 0}},       {0xFF02, {"WAIT2", 0}},
-    {0xFF03, {"WAIT", 0}},     {0xFF04, {"PAUSE", 1}},       {0xFF05, {"COLOR", 1}},
-    {0xFF06, {"MENU", 1}},     {0xFF07, {"EVENT", 0}},       {0xFF08, {"SOUND", 1}},
-    {0xFF09, {"CENTER", 0}},   {0xFF0A, {"CENTER2", 0}},     {0xFF0B, {"ALTERNATEFONT", 0}},
-    {0xFF0C, {"CC_C", 1}},     {0xFF21, {"ITEM", 1}},        {0xFF22, {"CHARNAME2", 1}},
-    {0xFF23, {"CHARNAME", 1}}, {0xFF24, {"ENEMYNAME", 1}},   {0xFF25, {"CC_25", 1}},
-    {0xFF26, {"CC_26", 2}},    {0xFF42, {"CC_42", 1}},       {0xFF45, {"FAVFOOD", 0}},
-    {0xFF46, {"FAVTHING", 0}}, {0xFF47, {"PLAYERNAME2", 0}}, {0xFF48, {"PLAYERNAME", 0}},
-    {0xFF80, {"CC_80", 1}},    {0xFF81, {"CC_81", 0}},       {0xFF82, {"CC_82", 0}},
-    {0xFF83, {"CC_83", 0}},    {0xFF84, {"CC_84", 0}},       {0xFFE0, {"CC_E0", 0}},
-    {0xFFE1, {"CC_E1", 1}},    {0xFFFF, {"END", 0}},
+    {0x0000, {"NUL", 0}},         {0xD389, {"UNK_D389", 0}},   {0xD84D, {"UNK_D84D", 0}},
+    {0xFF00, {"@", 0}},           {0xFF01, {"BREAK", 0}},      {0xFF02, {"WAIT2", 0}},
+    {0xFF03, {"WAIT", 0}},        {0xFF04, {"PAUSE", 1}},      {0xFF05, {"COLOR", 1}},
+    {0xFF06, {"MENU", 1}},        {0xFF07, {"EVENT", 0}},      {0xFF08, {"SOUND", 1}},
+    {0xFF09, {"CENTER", 0}},      {0xFF0A, {"CENTER2", 0}},    {0xFF0B, {"ALTERNATEFONT", 0}},
+    {0xFF0C, {"CC_C", 1}},        {0xFF10, {"FMT_ARG0", 0}},   {0xFF11, {"FMT_ARG1", 0}},
+    {0xFF12, {"FMT_ARG2", 0}},    {0xFF21, {"ITEM", 1}},       {0xFF22, {"CHARNAME2", 1}},
+    {0xFF23, {"CHARNAME", 1}},    {0xFF24, {"ENEMYNAME", 1}},  {0xFF25, {"CC_25", 1}},
+    {0xFF26, {"CC_26", 2}},       {0xFF30, {"PAUSE5", 0}},     {0xFF31, {"PAUSE10", 0}},
+    {0xFF32, {"PAUSE30", 0}},     {0xFF33, {"PAUSE60", 0}},    {0xFF34, {"PAUSE90", 0}},
+    {0xFF42, {"CC_42", 1}},       {0xFF45, {"FAVFOOD", 0}},    {0xFF46, {"FAVTHING", 0}},
+    {0xFF47, {"PLAYERNAME2", 0}}, {0xFF48, {"PLAYERNAME", 0}}, {0xFF80, {"CC_80", 1}},
+    {0xFF81, {"CC_81", 0}},       {0xFF82, {"CC_82", 0}},      {0xFF83, {"CC_83", 0}},
+    {0xFF84, {"CC_84", 0}},       {0xFFE0, {"CC_E0", 0}},      {0xFFE1, {"CC_E1", 1}},
+    {0xFFFF, {"END", 0}},
 };
 
 // todo: implement this with wchar array? then create an inverted map
@@ -632,4 +635,4 @@ const std::vector<const char*> jp_charmap = {
     "?",    "?",    "?",    "?",    "?",    "?",    "?",    "?",    "?",    "?",    "?",    "?",
 };
 
-} // namespace text
+}  // namespace text

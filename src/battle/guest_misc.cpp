@@ -53,8 +53,9 @@ extern "C" ASM_FUNC("asm/non_matching/guest/sub_08060B14.inc", void sub_08060B14
 extern "C" ASM_FUNC("asm/non_matching/guest/sub_08060B20.inc", void sub_08060B20());
 extern "C" ASM_FUNC("asm/non_matching/guest/tellExperience.inc", void tellExperience());
 
-extern "C" bool metalMonkeyCheck(Unit* t) {
+extern "C" bool metalMonkeyCheck() {
     if (sub_080725E8() == true && (sub_08072608()->_0[0] == Monster::MetalMonkey)) {
+        // It was a good experience![END]
         ROMStrFmt(0x87, Msg(), Msg(), Msg()).print(Color::Black(), true);
         return true;
     }

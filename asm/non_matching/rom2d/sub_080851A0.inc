@@ -20,20 +20,20 @@ sub_080851A0:
 _080851C4:
 	ldr r0, [sp, #0x20]
 	adds r1, r5, #0
-	bl sub_0806E33C
+	bl getTextAtOffset__C3Msgi
 	ldrh r1, [r0]
 	add r0, sp, #0xc
-	bl sub_0806E34C
+	bl appendCharacter__3MsgUs
 	ldr r0, [sp, #0x20]
 	adds r1, r5, #0
-	bl sub_0806E33C
+	bl getTextAtOffset__C3Msgi
 	ldrh r1, [r0]
 	ldr r0, _080853C0
 	cmp r1, r0
 	beq _080851F8
 	ldr r0, [sp, #0x20]
 	adds r1, r5, #0
-	bl sub_0806E33C
+	bl getTextAtOffset__C3Msgi
 	ldrh r1, [r0]
 	ldr r0, _080853C4
 	adds r2, r5, #1
@@ -151,13 +151,13 @@ _080852C8:
 	mov r5, sl
 _080852CA:
 	ldr r0, [sp, #0x20]
-	bl len__3Msg
+	bl len__C3Msg
 	cmp r5, r0
 	bge _080852D6
 	b _080851C4
 _080852D6:
 	add r0, sp, #0xc
-	bl len__3Msg
+	bl len__C3Msg
 	cmp r0, #0
 	ble _080853A0
 	mov r7, sp
@@ -283,7 +283,7 @@ _080853C8:
 	ldr r0, [sp, #8]
 	adds r0, r0, r4
 	adds r1, r6, #0
-	bl sub_0806E334__3Msgi
+	bl getTextAtOffset__3Msgi
 	ldrh r0, [r0]
 	movs r1, #0xff
 	lsls r1, r1, #8
@@ -298,7 +298,7 @@ _080853E0:
 	lsls r4, r0, #2
 	ldr r0, [sp, #8]
 	adds r0, r0, r4
-	bl len__3Msg
+	bl len__C3Msg
 	cmp r6, r0
 	blt _080853C8
 	movs r0, #0xf
@@ -356,7 +356,7 @@ _0808544A:
 _08085458:
 	ldr r0, [sp, #0x20]
 	adds r1, r6, #0
-	bl sub_0806E33C
+	bl getTextAtOffset__C3Msgi
 	ldrh r1, [r0]
 	ldr r0, _0808547C
 	cmp r1, r0
@@ -450,7 +450,7 @@ _080854E8:
 	adds r4, r4, r0
 	ldr r0, [sp, #0x20]
 	adds r1, r6, #0
-	bl sub_0806E33C
+	bl getTextAtOffset__C3Msgi
 	ldrh r1, [r0]
 	ldr r2, [r5, #4]
 	adds r0, r4, #0
@@ -463,7 +463,7 @@ _0808552E:
 	adds r6, #1
 _08085530:
 	ldr r0, [sp, #0x20]
-	bl len__3Msg
+	bl len__C3Msg
 	cmp r6, r0
 	blt _08085458
 	add r0, sp, #0xc

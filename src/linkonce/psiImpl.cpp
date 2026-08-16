@@ -91,8 +91,8 @@ void DefaultPsi::tellResisted(Unit* target) {
         playSound(0x50A);
         PlayAnimation(Animation::WhiteFlash, target, target);
 
-        // The Barrier Pose made the [10 FF] dissipate![END]
-        action_160(0x4F3, name()).print(Color(0, 0, 0), true);
+        // The Barrier Pose made the [FMT_ARG0] dissipate![END]
+        action_160(0x4F3, name()).print(Color::Black(), true);
         return;
     }
 

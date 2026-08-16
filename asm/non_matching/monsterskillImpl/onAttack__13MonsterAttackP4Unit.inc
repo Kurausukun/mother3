@@ -195,7 +195,7 @@ _080B3F66:
 	bl _call_via_r3
 	mov r0, sl
 	mov r1, r8
-	bl sub_0806E374__3MsgRC3Msg
+	bl concatenate__3MsgRC3Msg
 	mov r0, r8
 	movs r1, #2
 	bl _._3Msg
@@ -210,7 +210,7 @@ _080B3F66:
 	bl name__C5Goods
 	mov r0, sl
 	mov r1, r8
-	bl sub_0806E374__3MsgRC3Msg
+	bl concatenate__3MsgRC3Msg
 	mov r0, r8
 	movs r1, #2
 	bl _._3Msg
@@ -228,7 +228,7 @@ _080B3F66:
 	bl _call_via_r3
 	mov r0, sl
 	mov r1, r8
-	bl sub_0806E374__3MsgRC3Msg
+	bl concatenate__3MsgRC3Msg
 	mov r0, r8
 	movs r1, #2
 	bl _._3Msg

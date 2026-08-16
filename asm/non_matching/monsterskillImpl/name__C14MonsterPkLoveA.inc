@@ -4,7 +4,7 @@ name__C14MonsterPkLoveA:
 	adds r4, r0, #0
 	ldr r1, _080B3AEC
 	movs r2, #9
-	bl genMisctextMsg__3MsgPvUi
+	bl genMisctextMsg__3MsgPUsi
 	adds r0, r4, #0
 	pop {r4}
 	pop {r1}

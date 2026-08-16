@@ -4,7 +4,7 @@ sub_0807367C:
 	ldr r4, _080736AC @ =0xFFFFE894
 	add sp, r4
 	adds r4, r0, #0
-	bl len__3Msg
+	bl len__C3Msg
 	cmp r0, #0
 	ble _080736A2
 	mov r0, sp

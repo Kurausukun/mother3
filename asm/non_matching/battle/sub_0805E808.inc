@@ -40,7 +40,7 @@ sub_0805E808:
 	bl __3Msg
 	ldr r1, _0805E8A0 @ =0x0000FF33
 	adds r0, r5, #0
-	bl sub_0806E34C
+	bl appendCharacter__3MsgUs
 	add r1, sp, #0xcc
 	strb r4, [r1]
 	strb r4, [r1, #1]

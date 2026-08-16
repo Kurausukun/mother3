@@ -66,13 +66,13 @@ _08077770:
 _08077788:
 	mov r0, sp
 	adds r1, r4, #0
-	bl attackdata_f0__10UnitTargeti
+	bl getTarget__10UnitTargeti
 	ldr r1, [r5, #0x20]
 	cmp r0, r1
 	beq _080777A8
 	mov r0, sp
 	adds r1, r4, #0
-	bl attackdata_f0__10UnitTargeti
+	bl getTarget__10UnitTargeti
 	adds r1, r0, #0
 	mov r0, sp
 	bl removeTarget__10UnitTargetP4Unit
@@ -146,7 +146,7 @@ _08077824:
 	adds r5, r6, r5
 	mov r0, sp
 	adds r1, r7, #0
-	bl attackdata_f0__10UnitTargeti
+	bl getTarget__10UnitTargeti
 	adds r1, r0, #0
 	ldr r2, [r4, #4]
 	adds r0, r5, #0

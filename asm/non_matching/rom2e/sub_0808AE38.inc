@@ -11,7 +11,7 @@ sub_0808AE38:
 	bl __3Msg
 	mov r0, sp
 	adds r1, r4, #0
-	bl sub_0806E34C
+	bl appendCharacter__3MsgUs
 	ldr r0, [r5, #0x1c]
 	adds r0, #0x80
 	movs r2, #0

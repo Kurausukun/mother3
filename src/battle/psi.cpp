@@ -2,7 +2,7 @@
 #include "battle/psi.h"
 #include "base.h"
 
-extern "C" void* get_misctext_msg(u32, u32);
+extern "C" u16* get_misctext_msg(u32, u32);
 extern "C" u16 get_misctext_len(u32);
 
 RTTI_IMPL(Psi);

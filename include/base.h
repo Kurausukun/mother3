@@ -15,10 +15,7 @@ template <typename T>
 struct SafeVector : public Vector<T> {
 public:
     SafeVector() {}
-    ~SafeVector() {
-        // clang cannot find "mSize" without `this->` ??
-        this->mSize = 0;
-    }
+    ~SafeVector() { mSize = 0; }
 };
 
 typedef void (*Callback)(Base*, Clock*);
@@ -84,23 +81,55 @@ struct Color {
     u8 r, g, b;
 };
 
-struct Msg {
+class Msg {
+public:
     Msg();
-    Msg(const void* ptr, u32 size);
+    Msg(const u16*, s32);
     Msg(const Msg&);
     virtual ~Msg();
 
-    static Msg genMisctextMsg(void*, u32 idx);
+    static Msg genMisctextMsg(u16*, s32);
+    static Msg bcd(s32);
 
     void print(const Color&, bool);
-    s32 len();
-    u16* sub_0806E334(s32 idx);
-    void replace(const Msg&);
-    void sub_0806E374(const Msg&);
+    s32 len() const;
+    u16* getTextAtOffset(s32);
+    u16* getTextAtOffset(s32) const;
+    Msg* replace(const Msg&);
+    Msg* appendCharacter(u16);
+    Msg* concatenate(const Msg&);
+    Msg* insertAt(s32, const Msg&);
 
-    u16* ptr;
-    u16 _4;
-    u16 _6;
+    enum CCode {
+
+        Break = 0xFF01,
+
+        // User must press A to advance message, continues on new line
+        // TODO: Better name
+        Wait2 = 0xFF02,
+
+        // Generic string substitution
+        FmtArg0 = 0xFF10,
+        FmtArg1 = 0xFF11,
+        FmtArg2 = 0xFF12,
+
+        // Create a pause in the text for N frames
+        Pause5 = 0xFF30,
+        Pause10 = 0xFF31,
+        Pause30 = 0xFF32,
+        Pause60 = 0xFF33,
+        Pause90 = 0xFF34,
+
+        End = 0xFFFF
+    };
+
+private:
+    void setText(const u16* text, s32 len);
+    void resize(s32 size);
+
+    u16* mText;
+    u16 mCapacity;
+    u16 mLen;
 };
 
 Msg ROMStrFmt(s32, const Msg&, const Msg&, const Msg&);

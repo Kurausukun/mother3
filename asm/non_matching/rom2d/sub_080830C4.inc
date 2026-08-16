@@ -14,7 +14,7 @@ sub_080830C4:
 	lsrs r2, r2, #0x10
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl genMisctextMsg__3MsgPvUi
+	bl genMisctextMsg__3MsgPUsi
 	adds r0, r5, #0
 	pop {r4, r5}
 	pop {r1}
