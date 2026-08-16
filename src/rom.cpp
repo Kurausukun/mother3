@@ -16,8 +16,12 @@ extern const char gMapTileData;
 extern const char gMapTilemapData;
 extern const char gMapGraphicsTable;
 extern const MapGraphicsInfo gMapGraphicsInfoTable;
-extern const IrqTable gUnknown_080C1A58;
+extern const MapLayerAlphaInfo gMapLayerInfoTable;
+extern const char gMapDoorHotspotTable;
+extern const char gObjectData;
+extern const char gGiftBoxTable;
 extern const u8 gMapMusicTable[0x3E8];
+extern const IrqTable gUnknown_080C1A58;
 extern IrqTable gIntrHandlers;
 extern u8 gUnknown_02004100[0x10];
 extern u8 gUnknown_02005080;
@@ -1917,7 +1921,9 @@ extern "C" u8 getMusicIDForRoom(u16 roomIndex) {
     return gMapMusicTable[roomIndex];
 }
 
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B3B4.inc", void sub_0801B3B4());
+extern "C" const MapLayerAlphaInfo* getMapLayerAlphaInfo(u16 index) {
+    return &(((MapLayerAlphaInfo*)Blob_GetEntry(&gMapLayerInfoTable, 0))[index]);
+}
 
 extern "C" const MapGraphicsInfo* getMapGraphicsInfo(u16 index) {
     u8* table = (u8*)Blob_GetEntry(&gMapGraphicsInfoTable, 0);
@@ -1946,10 +1952,26 @@ extern "C" const void* getMapTileData(u16 index) {
     return Blob_GetEntry(&gMapTileData, index);
 }
 
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B45C.inc", void sub_0801B45C());
+extern "C" const void* getMapDoorsHotspots(u16 index, u16 type) {
+    u16 entry;
+
+    entry = index * 2;
+    if (type != 2) {
+        entry |= 1; // read hotspot table for this room instead of door table
+    }
+    
+    return Blob_GetEntry(&gMapDoorHotspotTable, entry);
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B480.inc", void sub_0801B480());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B498.inc", void sub_0801B498());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B4C4.inc", void sub_0801B4C4());
+
+extern "C" const void* getMapObjectData(u16 arg0) {
+    return Blob_GetEntry(&gObjectData, (arg0 * 5) + (u16)gGame._2_40);
+}
+
+extern "C" void* getGiftBoxData(u16 index) {
+    return &(((char*)Blob_GetEntry(&gGiftBoxTable, 0))[index * 0x10]);
+}
 
 extern "C" DoorDestinationInfo* getDoorDestinationInfo(u16 index) {
     return &((DoorDestinationInfo*)Blob_GetEntry(&gDoorDestinationTable, 0))[index];

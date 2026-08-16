@@ -3194,7 +3194,7 @@ u16 cmd_EB(s32* sp) {
 	ldr r1, _0801E6E8 @ =0x000067AC\n\
 	adds r0, r4, r1\n\
 	ldrh r0, [r0]\n\
-	bl sub_0801B3B4\n\
+	bl getMapLayerAlphaInfo\n\
 	ldr r5, _0801E6EC @ =0x000067C5\n\
 	adds r3, r4, r5\n\
 	ldrb r2, [r3]\n\

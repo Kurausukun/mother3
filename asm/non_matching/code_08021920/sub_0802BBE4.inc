@@ -11,7 +11,7 @@ sub_0802BBE4:
 	ldr r1, _0802BC48
 	adds r0, r0, r1
 	ldrh r0, [r0]
-	bl sub_0801B498
+	bl getMapObjectData
 	mov sl, r0
 	ldr r0, [sp]
 	adds r0, #0xb4

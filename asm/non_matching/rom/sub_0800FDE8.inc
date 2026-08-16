@@ -77,7 +77,7 @@ sub_0800FDE8:
 	ldr r0, _0800FF50
 	adds r0, r0, r3
 	ldrh r0, [r0]
-	bl sub_0801B3B4
+	bl getMapLayerAlphaInfo
 	adds r1, r6, #0
 	ldm r0!, {r2, r3, r5}
 	stm r1!, {r2, r3, r5}

@@ -111,7 +111,7 @@ gMapTilemapData:
 gMapTileData::
     .incbin "baserom.gba", 0x0104D9CC, 0xd04e8
 
-gDoorHotSpotTable::
+gMapDoorHotspotTable::
     .incbin "baserom.gba", 0x0111DEB4, 0xe4dc
 
 gUnknown_0912C390::
