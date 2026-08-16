@@ -2094,7 +2094,7 @@ extern "C" u16 isItemIdEquipment(u16 item) {
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08054F5C.inc", void sub_08054F5C());
 
 extern "C" u16* getCharName(u16 index) {
-    return (u16*)gCharStats[index].name;
+    return gCharStats[index].name;
 }
 
 extern "C" CharStats* getCharStats(u16 index) {
@@ -2297,33 +2297,33 @@ extern "C" u16 sub_0805592C() {
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805597C.inc", void sub_0805597C());
 
 extern "C" void sub_08055AB4() {
-    copyText((u16*)&gCharStats[1].name, (u16*)&gSomeBlend.pad_4a31[0x41], 8);
-    copyText((u16*)&gCharStats[2].name, (u16*)&gSomeBlend.pad_4a31[0x1], 8);
-    copyText((u16*)&gCharStats[13].name, (u16*)&gSomeBlend.pad_4a31[0x21], 8);
-    copyText((u16*)&gSave.claus_name, (u16*)&gSomeBlend.pad_4a31[0x21], 8);
-    copyText((u16*)&gSave.hinawa_name, (u16*)&gSomeBlend.pad_4a31[0x61], 8);
-    copyText((u16*)&gCharStats[5].name, (u16*)&gSomeBlend.pad_4a31[0x81], 8);
-    copyText((u16*)&gSave.fav_food, (u16*)&gSomeBlend.pad_4a31[0xA1], 9);
-    copyText((u16*)&gSave.fav_thing, (u16*)&gSomeBlend.pad_4a31[0xC1], 9);
-    copyText((u16*)&gSave.playername_short, (u16*)&gSomeBlend.pad_4a31[0x1A1], 9);
+    copyText(gCharStats[1].name, (u16*)&gSomeBlend.pad_4a31[0x41], 8);
+    copyText(gCharStats[2].name, (u16*)&gSomeBlend.pad_4a31[0x1], 8);
+    copyText(gCharStats[13].name, (u16*)&gSomeBlend.pad_4a31[0x21], 8);
+    copyText(gSave.claus_name, (u16*)&gSomeBlend.pad_4a31[0x21], 8);
+    copyText(gSave.hinawa_name, (u16*)&gSomeBlend.pad_4a31[0x61], 8);
+    copyText(gCharStats[5].name, (u16*)&gSomeBlend.pad_4a31[0x81], 8);
+    copyText(gSave.fav_food, (u16*)&gSomeBlend.pad_4a31[0xA1], 9);
+    copyText(gSave.fav_thing, (u16*)&gSomeBlend.pad_4a31[0xC1], 9);
+    copyText(gSave.playername_short, (u16*)&gSomeBlend.pad_4a31[0x1A1], 9);
 }
 
 extern "C" void sub_08055B50(u16 arg0) {
     switch (arg0 - 10) {
     case 0:
-        copyText((u16*)&gCharStats[3].name, (u16*)&gSomeBlend._4b1a[0x58], 8);
+        copyText(gCharStats[3].name, (u16*)&gSomeBlend._4b1a[0x58], 8);
         return;
     case 1:
-        copyText((u16*)&gCharStats[6].name, (u16*)&gSomeBlend._4b1a[0x78], 8);
+        copyText(gCharStats[6].name, (u16*)&gSomeBlend._4b1a[0x78], 8);
         return;
     case 2:
-        copyText((u16*)&gCharStats[4].name, (u16*)&gSomeBlend._4b1a[0x98], 8);
+        copyText(gCharStats[4].name, (u16*)&gSomeBlend._4b1a[0x98], 8);
         return;
     case 3:
-        copyText((u16*)&gSave.playername_short, (u16*)&gSomeBlend._4b1a[0xB8], 9);
+        copyText(gSave.playername_short, (u16*)&gSomeBlend._4b1a[0xB8], 9);
         return;
     case 4:
-        copyText((u16*)&gSave.playername, (u16*)&gSomeBlend._4b1a[0xD8], 16);
+        copyText(gSave.playername, (u16*)&gSomeBlend._4b1a[0xD8], 16);
     default:
         return;
     }

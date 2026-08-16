@@ -28,7 +28,7 @@ typedef struct MoveInfo {
 typedef struct CharStats {
     u8 charNo;
     u8 spriteNo;
-    u8 name[16];
+    u16 name[8];
     u8 level;
     u32 xp;
     s32 curHP;
