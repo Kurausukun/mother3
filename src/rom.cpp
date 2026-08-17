@@ -303,11 +303,11 @@ extern "C" ASM_FUNC("asm/non_matching/rom/memclear.inc", void memclear());
 extern "C" ASM_FUNC("asm/non_matching/rom/CpuSmartSet.inc", void CpuSmartSet());
 extern "C" ASM_FUNC("asm/non_matching/rom/memFill.inc", void memFill());
 
-extern "C" void* misctext_get_room_description(u16 index) {
+extern "C" u16* misctext_get_room_description(u16 index) {
     u8* data = (u8*)Blob_GetEntry(&_binary_build_mother3_assets_misctext_bin_start, 1);
     u16* offsets = (u16*)Blob_GetEntry(&_binary_build_mother3_assets_misctext_bin_start, 0);
 
-    return &data[offsets[index]];
+    return (u16*)&data[offsets[index]];
 }
 
 extern "C" u16* misctext_get_goods_description(u16 index) {
@@ -393,7 +393,7 @@ extern "C" u16* getNthMemoPage(u16* buf, u16 line) {
         do {
             currentChar = *buf;
             buf++;
-        } while (currentChar != 0xFFFF && currentChar != 0xFF00);
+        } while (currentChar != Msg::End && currentChar != 0xFF00);
     }
 
     return buf;
