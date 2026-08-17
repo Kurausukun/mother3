@@ -38,7 +38,7 @@ _0805A002:
 _0805A01C:
 	ldr r0, _0805A098
 	movs r1, #1
-	bl sub_08000F04
+	bl resetOAMEntriesByCount
 	movs r3, #0
 	ldrsb r3, [r4, r3]
 	mov r2, sb

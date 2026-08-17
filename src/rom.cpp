@@ -366,13 +366,13 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_080023E0.inc", void sub_080023E0()
 
 extern "C" void copyText(u16* dest, u16* src, s16 len) {
     if (len == -1) {
-        while (*src != 0xFFFF) {
+        while (*src != Msg::End) {
             *dest = *src;
             src++;
             dest++;
         }
 
-        *dest = 0xFFFF;
+        *dest = Msg::End;
     } else {
         for (u16 i = 0; i < len; i++) {
             *dest = *src;

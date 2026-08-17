@@ -81,7 +81,7 @@ _08057608:
 _08057618:
 	ldr r0, _08057664
 	movs r1, #1
-	bl sub_08000F04
+	bl resetOAMEntriesByCount
 	ldr r2, [sp, #0x24]
 	lsls r1, r2, #0xe
 	ldr r2, [sp, #0x18]
