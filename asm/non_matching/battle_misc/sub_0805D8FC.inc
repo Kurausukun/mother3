@@ -34,7 +34,7 @@ __6BattleUs:
 	bl __11BattleFader
 	adds r4, r0, #0
 	str r4, [r7, #0x28]
-	bl sub_08000D54
+	bl get_enginemode_flag_1
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	movs r1, #0x80
@@ -58,7 +58,7 @@ _0805D95A:
 	bl __11BattleFader
 	adds r4, r0, #0
 	str r4, [r7, #0x2c]
-	bl sub_08000D54
+	bl get_enginemode_flag_1
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	adds r1, r5, #0
@@ -79,7 +79,7 @@ _0805D992:
 	bl __11BattleFader
 	adds r4, r0, #0
 	str r4, [r7, #0x30]
-	bl sub_08000D54
+	bl get_enginemode_flag_1
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	adds r1, r5, #0

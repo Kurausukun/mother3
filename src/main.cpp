@@ -1,5 +1,6 @@
 #include "battle/guest.h"
 #include "battle/irc.h"
+#include "gba/defines.h"
 #include "gba/gba.h"
 #include "structs.h"
 
@@ -588,11 +589,11 @@ void sub_08000BE8() {
     sub_0805B528();
 }
 
-extern "C" u8 sub_08000D54() {
+extern "C" u8 get_enginemode_flag_1() {
     return gEngineMode.flags_u8._1;
 }
 
-extern "C" void sub_08000D64(volatile u16 a) {
+extern "C" void set_enginemode_flag_1(volatile u16 a) {
     gEngineMode.flags_s8._1 = a;
 }
 
@@ -623,7 +624,7 @@ extern "C" void check_ram_magic() {
 
 void clear_ram(void) {
     sub_080019DC((void*)EWRAM_START, EWRAM_SIZE);
-    sub_080019DC(&gUnknown_03000008, 0x7D98);
+    sub_080019DC((void*)(IWRAM_START + 8), IWRAM_SIZE - 0x68);
 }
 
 void clear_gfx() {

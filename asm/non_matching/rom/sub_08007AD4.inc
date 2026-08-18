@@ -54,7 +54,7 @@ sub_08007AD4:
 	mov r1, r8
 	ands r0, r1
 	strb r0, [r2]
-	bl sub_08000D54
+	bl get_enginemode_flag_1
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	movs r1, #1

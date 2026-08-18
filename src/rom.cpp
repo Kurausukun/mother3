@@ -248,9 +248,10 @@ extern "C" void sub_080019A4(Unknown_02016078* arg0) {
 }
 
 extern "C" void sub_080019DC(void* dest, u32 size) {
-    s32 tmp = 0;
+    s32 value = 0;
+    
     vu32* dmaRegs = (vu32*)REG_ADDR_DMA3;
-    dmaRegs[0] = (uintptr_t)&tmp;
+    dmaRegs[0] = (uintptr_t)&value;
     dmaRegs[1] = (uintptr_t)dest;
 
     size /= 4;
@@ -268,9 +269,8 @@ extern "C" void sub_08001A14(void* src, void* dest, u32 size) {
     dmaRegs[1] = (uintptr_t)dest;
 
     size /= 2;
-    u32 flags = (DMA_ENABLE | DMA_START_NOW | DMA_16BIT | DMA_SRC_INC | DMA_DEST_INC) << 16;
-    dmaRegs[2] = flags | size;
-
+    dmaRegs[2] =
+        (size | ((DMA_ENABLE | DMA_START_NOW | DMA_16BIT | DMA_SRC_INC | DMA_DEST_INC) << 16));
     dmaRegs[2];
 
     // Wait for DMA to complete
@@ -286,9 +286,8 @@ extern "C" void sub_08001A38(void* dest, u32 size, int value) {
     dmaRegs[1] = (uintptr_t)dest;
 
     size /= 2;
-    u32 flags = (DMA_ENABLE | DMA_START_NOW | DMA_16BIT | DMA_SRC_FIXED | DMA_DEST_INC) << 16;
-    dmaRegs[2] = flags | size;
-
+    dmaRegs[2] =
+        (size | ((DMA_ENABLE | DMA_START_NOW | DMA_16BIT | DMA_SRC_FIXED | DMA_DEST_INC) << 16));
     dmaRegs[2];
 
     // Wait for DMA to complete
@@ -296,12 +295,68 @@ extern "C" void sub_08001A38(void* dest, u32 size, int value) {
     }
 }
 
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001A70.inc", void sub_08001A70());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001A94.inc", void sub_08001A94());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001AAC.inc", void sub_08001AAC());
-extern "C" ASM_FUNC("asm/non_matching/rom/memclear.inc", void memclear());
-extern "C" ASM_FUNC("asm/non_matching/rom/CpuSmartSet.inc", void CpuSmartSet());
-extern "C" ASM_FUNC("asm/non_matching/rom/memFill.inc", void memFill());
+extern "C" void sub_08001A70(void* dest, u32 size) {
+    s32 src = 0;
+    vu32* dmaRegs = (vu32*)REG_ADDR_DMA0;
+    dmaRegs[0] = (uintptr_t)&src;
+    dmaRegs[1] = (uintptr_t)dest;
+
+    size /= 4;
+    dmaRegs[2] =
+        (size | ((DMA_ENABLE | DMA_START_NOW | DMA_32BIT | DMA_SRC_FIXED | DMA_DEST_INC) << 16));
+    dmaRegs[2];
+}
+
+extern "C" void sub_08001A94(void* src, void* dest, u32 size) {
+    vu32* dmaRegs = (vu32*)REG_ADDR_DMA0;
+    dmaRegs[0] = (uintptr_t)src;
+    dmaRegs[1] = (uintptr_t)dest;
+
+    size /= 4;
+    dmaRegs[2] =
+        (size | ((DMA_ENABLE | DMA_START_NOW | DMA_32BIT | DMA_SRC_INC | DMA_DEST_INC) << 16));
+    dmaRegs[2];
+}
+
+extern "C" void sub_08001AAC(void* dest, u32 size, s32 value) {
+    vu32* dmaRegs = (vu32*)REG_ADDR_DMA0;
+    dmaRegs[0] = (uintptr_t)&value;
+    dmaRegs[1] = (uintptr_t)dest;
+
+    size /= 4;
+    dmaRegs[2] =
+        (size | ((DMA_ENABLE | DMA_START_NOW | DMA_32BIT | DMA_SRC_FIXED | DMA_DEST_INC) << 16));
+    dmaRegs[2];
+}
+
+extern "C" void memclear(void* buff, u32 size) {
+    if (size & 0x1F || (unsigned long)buff & 3) {
+        u16 tmp;
+        CpuSet(&(tmp = 0), buff, ((size << 0xA) >> 0xB) | CPU_SET_SRC_FIXED);
+    } else {
+        s32 tmp = 0;
+        CpuFastSet(&tmp, buff, ((size << 0x9) >> 0xB) | CPU_SET_SRC_FIXED);
+    }
+}
+
+extern "C" void CpuSmartSet(const void* src, void* dest, u32 control) {
+    if (0x1F & control || (u8)src & 3 || (u8)dest & 3) {
+        CpuSet(src, dest, (control << 0xA) >> 0xB);
+    } else {
+        CpuFastSet(src, dest, (control << 9) >> 0xB);
+    }
+}
+
+//extern "C" ASM_FUNC("asm/non_matching/rom/memFill.inc", void memFill());
+extern "C" void memFill(void* dest, u32 length, s32 value) {
+    if (length & 0x1F || (u32)dest & 3) {
+        u16 tmp = value;
+        CpuSet(&tmp, dest, ((length << 0xA) >> 0xB) | CPU_SET_SRC_FIXED);
+    } else {
+        u32 tmp = value;
+        CpuFastSet(&tmp, dest, ((length << 0x9) >> 0xB) | CPU_SET_SRC_FIXED);
+    }
+}
 
 extern "C" u16* misctext_get_room_description(u16 index) {
     u8* data = (u8*)Blob_GetEntry(&_binary_build_mother3_assets_misctext_bin_start, 1);

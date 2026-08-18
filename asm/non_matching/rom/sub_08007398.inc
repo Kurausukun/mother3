@@ -129,7 +129,7 @@ sub_08007398:
 	mov r0, sb
 	ands r1, r0
 	strb r1, [r7, #2]
-	bl sub_08000D54
+	bl get_enginemode_flag_1
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	ands r0, r5
