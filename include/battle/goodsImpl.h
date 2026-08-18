@@ -247,10 +247,11 @@ public:
         if (m == NULL)
             return;
 
-        if (m->type() == 4 || isMonsterVariant(m, Monster::StickySlug) == true ||
+        if (m->type() == MonsterType::Mechanical ||
+            isMonsterVariant(m, Monster::StickySlug) == true ||
             isMonsterVariant(m, Monster::SlimySlug) == true) {
             _50 = 0x100;
-        } else if (m->type() == 3) {
+        } else if (m->type() == MonsterType::MechanicalChimera) {
             _50 = 0x80;
         }
         Action::onDamage(target);
@@ -815,7 +816,7 @@ public:
         }
 
         Monster* m = dynaCastMonster(target);
-        if (m->type() == 7) {
+        if (m->type() == MonsterType::Person) {
             return false;
         }
         return true;
@@ -878,62 +879,89 @@ public:
         }
 
         Monster* m = dynaCastMonster(target);
-        if (m->type() == 7) {
+        if (m->type() == MonsterType::Person) {
             return false;
         }
         return true;
     }
 
-    void tellResisted(Unit* target) { ROMStr(0x1ca).print(Color::Black(), 1); }
+    void tellResisted(Unit* target) {
+        // It didn't get through to [05 EF][FMT_ARG2]![END]
+        ROMStr(0x1ca).print(Color::Black(), true);
+    }
 
     void onSuccess(Unit* target) {
         if (typeIsMonster(target) != true)
             return;
 
         switch (target->id()) {
-        case 0x1d:
-        case 0xaa:
+        case Monster::PorkColonel:
+        case Monster::PorkLieutenant:
             setsleep(60);
-            ROMStr(0x19d).print(Color::Black(), 1);
+
+            // [04 EF][FMT_ARG2] answered, "The Civil War!"[END]
+            ROMStr(0x19d).print(Color::Black(), true);
             setsleep(30);
             PlaySoundBlocking(0x61d);
-            ROMStr(0x198).print(Color::Black(), 1);
+
+            // It was the correct answer![END]
+            ROMStr(0x198).print(Color::Black(), true);
             break;
-        case 0xe:
-        case 0xf:
+        case Monster::WomanizingPigMask1st:
+        case Monster::WomanizingPigMask2nd:
             setsleep(60);
-            ROMStr(0x1a1).print(Color::Black(), 1);
+
+            // [04 EF][FMT_ARG2] answered, "OJ!"[END]
+            ROMStr(0x1a1).print(Color::Black(), true);
             setsleep(30);
             PlaySoundBlocking(0x61e);
-            ROMStr(0x199).print(Color::Black(), 1);
+
+            // It wasn't the correct answer![END]
+            ROMStr(0x199).print(Color::Black(), true);
             break;
         case Monster::PorkSoldier:
             setsleep(60);
-            ROMStr(0x1a5).print(Color::Black(), 1);
+
+            // [04 EF][FMT_ARG2] answered, "Prohibition!"[END]
+            ROMStr(0x1a5).print(Color::Black(), true);
             setsleep(30);
             PlaySoundBlocking(0x61e);
-            ROMStr(0x199).print(Color::Black(), 1);
+
+            // It wasn't the correct answer![END]
+            ROMStr(0x199).print(Color::Black(), true);
             break;
-        case 0xac:
+        case Monster::PorkCommander:
             setsleep(60);
-            ROMStr(0x1a9).print(Color::Black(), 1);
+
+            // [04 EF][FMT_ARG2] answered, "The Industrial Revolution!"[END]
+            ROMStr(0x1a9).print(Color::Black(), true);
             setsleep(30);
             PlaySoundBlocking(0x61e);
-            ROMStr(0x199).print(Color::Black(), 1);
+
+            // It wasn't the correct answer![END]
+            ROMStr(0x199).print(Color::Black(), true);
             break;
-        case 0xad:
+        case Monster::NavySqueal:
             setsleep(60);
-            ROMStr(0x1b1).print(Color::Black(), 1);
+
+            // [04 EF][FMT_ARG2] answered, "The Peasants' Revolt!"[END]
+            ROMStr(0x1b1).print(Color::Black(), true);
             setsleep(30);
             PlaySoundBlocking(0x61e);
-            ROMStr(0x199).print(Color::Black(), 1);
+
+            // It wasn't the correct answer![END]
+            ROMStr(0x199).print(Color::Black(), true);
             break;
-        case 0xab:
+        case Monster::PorkColonel2nd:
             setsleep(60);
-            ROMStr(0x1ad).print(Color::Black(), 1);
+
+            // [04 EF][FMT_ARG2] answered, "Battle of the Alamo!"[END]
+            ROMStr(0x1ad).print(Color::Black(), true);
             setsleep(30);
             PlaySoundBlocking(0x61e);
-            ROMStr(0x199).print(Color::Black(), 1);
+
+            // It wasn't the correct answer![END]
+            ROMStr(0x199).print(Color::Black(), true);
             break;
         }
     }
