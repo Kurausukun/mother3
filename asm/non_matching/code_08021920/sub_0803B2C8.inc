@@ -18,7 +18,7 @@ sub_0803B2C8:
 	movs r3, #3
 	bl sub_08039A74
 	ldrh r0, [r4]
-	bl sub_08001B9C
+	bl misctext_get_room_description
 	adds r4, r0, #0
 	ldr r0, _0803B3B4
 	adds r6, r5, r0

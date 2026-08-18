@@ -14,7 +14,7 @@ sub_0807CBB8:
 	bl sub_080706A0
 	mov r0, sp
 	adds r1, r4, #0
-	bl __9CCLHandleRC6ResPtr
+	bl __9CCLHandleRC11ResPtrSized
 	ldr r0, _0807CC74
 	str r0, [sp, #0x14]
 	mov r0, sp
@@ -91,5 +91,5 @@ _0807CBF4:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0807CC74: .4byte _vt.6ResPtr
+_0807CC74: .4byte _vt.11ResPtrSized
 	.syntax divided

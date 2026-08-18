@@ -39,11 +39,15 @@ struct Struct160 {
 extern Struct160 gUnknown_080C7D28[];
 
 struct BattleGroup {
-    u8 _0[0x8];
-    u8 _8;
-    u8 _9[3];
-    u16 _c;
-    u16 _e;
+    /* 0x0 */ u8 id;
+    /* 0x1 */ u8 enemies_count;
+    /* 0x2 */ u8 enemies[5];
+    /* 0x7 */ u8 beginning;
+    /* 0x8 */ u8 can_run;
+    /* 0x9 */ u8 pad;
+    /* 0xa */ u16 music_swirl;
+    /* 0xc */ u16 music_battle;
+    /* 0xe */ u16 music_victory;
 };
 extern BattleGroup gBattleGroupTable[];
 
@@ -191,7 +195,7 @@ public:
     virtual bool battle_160();
     virtual Struct160* battle_168();
     virtual bool isFightBoss();
-    virtual BattleGroup* battle_178();
+    virtual BattleGroup* battleGroup();
     virtual bool battle_180();
     virtual Struct160* battle_188();
     virtual bool battle_190();

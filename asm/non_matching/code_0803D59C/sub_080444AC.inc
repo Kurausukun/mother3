@@ -51,7 +51,7 @@ _08044504:
 	bl sub_08046A28
 _08044514:
 	adds r0, r4, #0
-	bl sub_08001BCC
+	bl misctext_get_goods_description
 	movs r1, #2
 	str r1, [sp]
 	movs r1, #0

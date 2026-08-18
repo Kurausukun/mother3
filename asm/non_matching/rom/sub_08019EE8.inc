@@ -34,7 +34,7 @@ sub_08019EE8:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08019F38: .4byte gUnknown_09AF3790
+_08019F38: .4byte gMiscGfx
 _08019F3C: .4byte gSomeBlend
 _08019F40: .4byte 0x00002C96
 	.syntax divided

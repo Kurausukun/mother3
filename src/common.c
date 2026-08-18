@@ -8,7 +8,7 @@ bool8 ch_is_kumatora(CharStats* ch);
 bool8 sub_0805C58C(u8* data, s32);
 void sub_0805C548(u8*, s32, bool8);
 u32 sub_0805C168(s32 num);
-int sub_0805D234(int, int);
+int randRange(int, int);
 int Div(int, int);
 
 u32 getNeededXP(CharStats* ch, const LevelStats* ls, s32 level);
@@ -49,7 +49,7 @@ NONMATCH("asm/non_matching/common/sub_0805C114.inc",
     }
     tmp = (r2 - r0 != 0 ? Div(tmp, r2 - r0) : r2 - r4);
     tmp2 = tmp * (r1 - r3);
-    tmp2 = sub_0805D234(tmp2, tmp2 + sub_0805C168(r4));
+    tmp2 = randRange(tmp2, tmp2 + sub_0805C168(r4));
     r3 = r5;
     if (tmp2 < r5)
         r3 = tmp;
@@ -88,9 +88,11 @@ s32 sub_0805C21C(CharStats* ch) {
     if (ch_is_lucas(ch) == true) {
         return 80;
     }
+
     if (ch_is_kumatora(ch) == true) {
         return 80;
     }
+
     return 0;
 }
 
@@ -112,20 +114,20 @@ bool8 sub_0805C2AC(CharStats* ch, u16 r1) {
     return false;
 }
 
-void sub_0805C300(CharStats* ch, u16 r1, bool8 r2) {
+void setPsiLearned(CharStats* ch, u16 psiNo, bool8 isLearned) {
     if (ch_is_lucas(ch) == true) {
-        sub_0805C548(gSave._720, r1, r2 == true);
+        sub_0805C548(gSave.lucasPsiFlags, psiNo, isLearned == true);
     } else if (ch_is_kumatora(ch) == true) {
-        sub_0805C548(gSave._738 + 2, r1, r2 == true);
+        sub_0805C548(gSave.kumatoraPsiFlags, psiNo, isLearned == true);
     }
 }
 
-bool8 sub_0805C364(CharStats* ch, u16 r1) {
+bool8 isPsiLearned(CharStats* ch, u16 psiNo) {
     if (ch_is_lucas(ch) == true) {
-        return sub_0805C58C(gSave._720, r1) == true;
+        return sub_0805C58C(gSave.lucasPsiFlags, psiNo) == true;
     }
     if (ch_is_kumatora(ch) == true) {
-        return sub_0805C58C(gSave._738 + 2, r1) == true;
+        return sub_0805C58C(gSave.kumatoraPsiFlags, psiNo) == true;
     }
     return false;
 }
@@ -135,7 +137,7 @@ void sub_0805C3B8(CharStats* ch) {
         int i;
         for (i = 0; i < sub_0805C21C(ch); i++) {
             if (sub_0805C58C(gSave._710, i) == true) {
-                sub_0805C548(gSave._720, i, true);
+                sub_0805C548(gSave.lucasPsiFlags, i, true);
                 sub_0805C548(gSave._710, i, false);
             }
         }
@@ -143,20 +145,20 @@ void sub_0805C3B8(CharStats* ch) {
         int i;
         for (i = 0; i < sub_0805C21C(ch); i++) {
             if (sub_0805C58C(gSave._72a, i) == true) {
-                sub_0805C548(gSave._738 + 2, i, true);
+                sub_0805C548(gSave.kumatoraPsiFlags, i, true);
                 sub_0805C548(gSave._72a, i, false);
             }
         }
     }
 }
 
-void sub_0805C458(CharStats* ch, s32 r1) {
+void sub_0805C458(CharStats* ch, s32 level) {
     if (ch_is_lucas(ch) == true) {
         const LevelStats* ls = &gLevelStatTable[ch->charNo];
         int i;
         for (i = 0; i < 32; i++) {
-            if (ls->psi_learning_table[i].psi_no != 0 && r1 >= ls->psi_learning_table[i].level) {
-                sub_0805C548(gSave._720, ls->psi_learning_table[i].psi_no, true);
+            if (ls->psi_learning_table[i].psi_no != 0 && level >= ls->psi_learning_table[i].level) {
+                sub_0805C548(gSave.lucasPsiFlags, ls->psi_learning_table[i].psi_no, true);
                 sub_0805C548(gSave._710, ls->psi_learning_table[i].psi_no, false);
             }
         }
@@ -164,8 +166,8 @@ void sub_0805C458(CharStats* ch, s32 r1) {
         const LevelStats* ls = &gLevelStatTable[ch->charNo];
         int i;
         for (i = 0; i < 32; i++) {
-            if (ls->psi_learning_table[i].psi_no != 0 && r1 >= ls->psi_learning_table[i].level) {
-                sub_0805C548(gSave._738 + 2, ls->psi_learning_table[i].psi_no, true);
+            if (ls->psi_learning_table[i].psi_no != 0 && level >= ls->psi_learning_table[i].level) {
+                sub_0805C548(gSave.kumatoraPsiFlags, ls->psi_learning_table[i].psi_no, true);
                 sub_0805C548(gSave._72a, ls->psi_learning_table[i].psi_no, false);
             }
         }
@@ -1034,10 +1036,10 @@ ldr r1, _0805CF80 @ =gMonsterData\n\
 adds r0, r0, r1\n\
 str r0, [sp, #0x54]\n\
 add r0, sp, #0xc\n\
-bl sub_0805D2A4\n\
+bl __6ResPtr\n\
 add r0, sp, #0x14\n\
 mov sl, r0\n\
-ldr r1, _0805CF84 @ =_vt.6ResPtr\n\
+ldr r1, _0805CF84 @ =_vt.11ResPtrSized\n\
 mov sb, r1\n\
 str r1, [sp, #0x1c]\n\
 movs r0, #0\n\
@@ -1056,7 +1058,7 @@ str r1, [sp, #0x34]\n\
 str r0, [sp, #0x2c]\n\
 str r0, [r6, #4]\n\
 add r4, sp, #0x38\n\
-ldr r0, _0805CF88 @ =gUnknown_09C90960\n\
+ldr r0, _0805CF88 @ =gBattleSAR\n\
 movs r1, #1\n\
 rsbs r1, r1, #0\n\
 mov r2, sb\n\
@@ -1065,7 +1067,7 @@ str r0, [sp, #0x38]\n\
 str r1, [r4, #4]\n\
 add r0, sp, #0xc\n\
 adds r1, r4, #0\n\
-bl sub_0805D2D4\n\
+bl set__6ResPtrR6ResPtr\n\
 mov r3, sb\n\
 str r3, [sp, #0x40]\n\
 mov r6, sl\n\
@@ -1149,8 +1151,8 @@ b _0805CFBC\n\
 .align 2, 0\n\
 _0805CF7C: .4byte gUnknown_02005090\n\
 _0805CF80: .4byte gMonsterData\n\
-_0805CF84: .4byte _vt.6ResPtr\n\
-_0805CF88: .4byte gUnknown_09C90960\n\
+_0805CF84: .4byte _vt.11ResPtrSized\n\
+_0805CF88: .4byte gBattleSAR\n\
 _0805CF8C: .4byte 0x00000179\n\
 _0805CF90:\n\
 movs r0, #0xa\n\
@@ -1238,13 +1240,13 @@ ldr r1, [r3, #0x18]\n\
 adds r0, r6, #0\n\
 bl sub_0805D154\n\
 _0805D044:\n\
-ldr r0, _0805D068 @ =_vt.6ResPtr\n\
+ldr r0, _0805D068 @ =_vt.11ResPtrSized\n\
 str r0, [sp, #0x34]\n\
 str r0, [sp, #0x28]\n\
 str r0, [sp, #0x1c]\n\
 add r0, sp, #0xc\n\
 movs r1, #2\n\
-bl sub_0805D2B4\n\
+bl _._6ResPtr\n\
 movs r0, #1\n\
 add sp, #0x5c\n\
 pop {r3, r4, r5}\n\
@@ -1255,7 +1257,7 @@ pop {r4, r5, r6, r7}\n\
 pop {r1}\n\
 bx r1\n\
 .align 2, 0\n\
-_0805D068: .4byte _vt.6ResPtr\n\
+_0805D068: .4byte _vt.11ResPtrSized\n\
 ");
 }
 NAKED void sub_0805D06C() {
@@ -1494,151 +1496,5 @@ adds r0, r0, r1\n\
 pop {r4}\n\
 pop {r1}\n\
 bx r1\n\
-");
-}
-NAKED void sub_0805D210() {
-    asm_unified("\n\
-ldr r1, _0805D218 @ =gUnknown_02001C58\n\
-str r0, [r1]\n\
-bx lr\n\
-.align 2, 0\n\
-_0805D218: .4byte gUnknown_02001C58\n\
-");
-}
-NAKED void sub_0805D21C() {
-    asm_unified("\n\
-ldr r2, _0805D230 @ =gUnknown_02001C58\n\
-ldr r1, [r2]\n\
-adds r1, #8\n\
-lsls r0, r1, #3\n\
-adds r0, r0, r1\n\
-lsls r0, r0, #3\n\
-subs r0, r0, r1\n\
-adds r0, #0x25\n\
-str r0, [r2]\n\
-bx lr\n\
-.align 2, 0\n\
-_0805D230: .4byte gUnknown_02001C58\n\
-");
-}
-NAKED int sub_0805D234(int arg0, int arg1) {
-    asm_unified("\n\
-push {r4, lr}\n\
-ldr r4, _0805D25C @ =gUnknown_02001C58\n\
-ldr r3, [r4]\n\
-adds r3, #5\n\
-lsls r2, r3, #4\n\
-adds r2, r2, r3\n\
-lsls r2, r2, #2\n\
-subs r2, r2, r3\n\
-adds r2, #0x1f\n\
-str r2, [r4]\n\
-subs r3, r0, #1\n\
-subs r1, r1, r3\n\
-lsls r2, r2, #0x18\n\
-lsrs r2, r2, #0x18\n\
-muls r1, r2, r1\n\
-asrs r1, r1, #8\n\
-adds r0, r0, r1\n\
-pop {r4}\n\
-pop {r1}\n\
-bx r1\n\
-.align 2, 0\n\
-_0805D25C: .4byte gUnknown_02001C58\n\
-");
-}
-NAKED void sub_0805D260() {
-    asm_unified("\n\
-push {lr}\n\
-adds r2, r0, #0\n\
-movs r3, #0\n\
-cmp r1, #1\n\
-ble _0805D276\n\
-_0805D26A:\n\
-ldrh r0, [r2]\n\
-adds r3, r3, r0\n\
-adds r2, #2\n\
-subs r1, #4\n\
-cmp r1, #1\n\
-bgt _0805D26A\n\
-_0805D276:\n\
-cmp r1, #0\n\
-bge _0805D284\n\
-ldrh r1, [r2]\n\
-movs r0, #0xff\n\
-lsls r0, r0, #8\n\
-ands r0, r1\n\
-adds r3, r3, r0\n\
-_0805D284:\n\
-ldr r2, _0805D2A0 @ =0x0000FFFF\n\
-adds r0, r3, #0\n\
-ands r0, r2\n\
-lsrs r1, r3, #0x10\n\
-adds r3, r0, r1\n\
-adds r0, r3, #0\n\
-ands r0, r2\n\
-lsrs r1, r3, #0x10\n\
-adds r3, r0, r1\n\
-mvns r0, r3\n\
-lsls r0, r0, #0x10\n\
-lsrs r0, r0, #0x10\n\
-pop {r1}\n\
-bx r1\n\
-.align 2, 0\n\
-_0805D2A0: .4byte 0x0000FFFF\n\
-");
-}
-NAKED void sub_0805D2A4() {
-    asm_unified("\n\
-ldr r1, _0805D2B0 @ =vt_09F44F18\n\
-str r1, [r0, #4]\n\
-movs r1, #0\n\
-str r1, [r0]\n\
-bx lr\n\
-.align 2, 0\n\
-_0805D2B0: .4byte vt_09F44F18\n\
-");
-}
-NAKED void sub_0805D2B4() {
-    asm_unified("\n\
-push {lr}\n\
-adds r2, r0, #0\n\
-ldr r0, _0805D2D0 @ =vt_09F44F18\n\
-str r0, [r2, #4]\n\
-movs r0, #1\n\
-ands r0, r1\n\
-cmp r0, #0\n\
-beq _0805D2CA\n\
-adds r0, r2, #0\n\
-bl __builtin_delete\n\
-_0805D2CA:\n\
-pop {r0}\n\
-bx r0\n\
-.align 2, 0\n\
-_0805D2D0: .4byte vt_09F44F18\n\
-");
-}
-NAKED void sub_0805D2D4() {
-    asm_unified("\n\
-ldr r1, [r1]\n\
-str r1, [r0]\n\
-movs r0, #1\n\
-bx lr\n\
-");
-}
-NAKED void sub_0805D2DC() {
-    asm_unified("\n\
-push {lr}\n\
-ldr r0, [r0]\n\
-cmp r0, #0\n\
-beq _0805D2E8\n\
-ldrh r0, [r0, #4]\n\
-b _0805D2EA\n\
-_0805D2E8:\n\
-movs r0, #0\n\
-_0805D2EA:\n\
-pop {r1}\n\
-bx r1\n\
-.align 2, 0\n\
 ");
 }

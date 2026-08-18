@@ -32,12 +32,12 @@ gUnknown_080EE85F:
 gUnknown_080EE87F:
     .incbin "baserom.gba", 0x000EE87F, 0x1001
 
-    .global gUnknown_080EF880
-gUnknown_080EF880:
+    .global gBattleSineTable
+gBattleSineTable:
     .incbin "baserom.gba", 0x000EF880, 0x1400
 
-    .global gUnknown_080F0C80
-gUnknown_080F0C80:
+    .global gThreeDigitDisplayTable
+gThreeDigitDisplayTable:
     .incbin "baserom.gba", 0x000F0C80, 0x1850
 
     .global const_classname_System

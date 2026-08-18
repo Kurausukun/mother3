@@ -29,6 +29,6 @@ sub_08057204:
 	.align 2, 0
 _08057240: .4byte gUnknown_02017878
 _08057244: .4byte 0x0600F800
-_08057248: .4byte gUnknown_09BCDD8C
+_08057248: .4byte gTitleScreenGfx
 _0805724C: .4byte 0x06008000
 	.syntax divided

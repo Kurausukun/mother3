@@ -45,7 +45,7 @@ extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08065D98.inc", void get__13SndM
 extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08065DA4.inc", void destroy__13SndMonManager());
 extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08065DE0.inc", void getRTTI__6SndMon());
 extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08065DEC.inc", void __6SndMon());
-extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08065F98.inc", void dt__6SndMon()); // _._6SndMon
+extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08065F98.inc", void dt__6SndMon());  // _._6SndMon
 extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08066004.inc", void sub_08066004());
 extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_0806609C.inc", void sub_0806609C());
 extern "C" ASM_FUNC("asm/non_matching/sndmon/sub_08066108.inc", void sub_08066108());

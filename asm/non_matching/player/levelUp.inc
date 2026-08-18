@@ -304,7 +304,7 @@ _0807B8DE:
 	adds r1, r0, #0
 	add r6, sp, #0x28
 	adds r0, r6, #0
-	bl sub_0806E1C8
+	bl bcd__3Msgi
 	add r5, sp, #0x34
 	adds r0, r5, #0
 	bl __3Msg
@@ -337,7 +337,7 @@ _0807B8DE:
 	adds r0, r7, #0
 	add r1, sp, #4
 	movs r2, #0
-	bl tellStatUpgrade
+	bl tellStatUpgrade__6PlayerR3MsgiiUs
 	adds r2, r0, #0
 	mov r1, sb
 	ldrb r3, [r1, #2]
@@ -345,7 +345,7 @@ _0807B8DE:
 	str r0, [sp]
 	adds r0, r7, #0
 	add r1, sp, #4
-	bl tellStatUpgrade
+	bl tellStatUpgrade__6PlayerR3MsgiiUs
 	adds r2, r0, #0
 	mov r0, sb
 	ldrb r3, [r0, #3]
@@ -353,7 +353,7 @@ _0807B8DE:
 	str r0, [sp]
 	adds r0, r7, #0
 	add r1, sp, #4
-	bl tellStatUpgrade
+	bl tellStatUpgrade__6PlayerR3MsgiiUs
 	adds r2, r0, #0
 	mov r1, sb
 	ldrb r3, [r1, #4]
@@ -361,7 +361,7 @@ _0807B8DE:
 	str r0, [sp]
 	adds r0, r7, #0
 	add r1, sp, #4
-	bl tellStatUpgrade
+	bl tellStatUpgrade__6PlayerR3MsgiiUs
 	adds r2, r0, #0
 	mov r0, sb
 	ldrb r3, [r0, #5]
@@ -369,7 +369,7 @@ _0807B8DE:
 	str r0, [sp]
 	adds r0, r7, #0
 	add r1, sp, #4
-	bl tellStatUpgrade
+	bl tellStatUpgrade__6PlayerR3MsgiiUs
 	adds r2, r0, #0
 	mov r1, sb
 	ldrb r3, [r1, #6]
@@ -377,7 +377,7 @@ _0807B8DE:
 	str r0, [sp]
 	adds r0, r7, #0
 	add r1, sp, #4
-	bl tellStatUpgrade
+	bl tellStatUpgrade__6PlayerR3MsgiiUs
 	adds r2, r0, #0
 	mov r0, sb
 	ldrb r3, [r0, #7]
@@ -385,23 +385,23 @@ _0807B8DE:
 	str r0, [sp]
 	adds r0, r7, #0
 	add r1, sp, #4
-	bl tellStatUpgrade
+	bl tellStatUpgrade__6PlayerR3MsgiiUs
 	add r0, sp, #4
-	bl len__3Msg
+	bl len__C3Msg
 	adds r1, r0, #0
 	subs r1, #1
 	add r0, sp, #4
-	bl sub_0806E334__3Msgi
+	bl getTextAtOffset__3Msgi
 	ldrh r1, [r0]
 	ldr r0, _0807BA34
 	cmp r1, r0
 	bne _0807BA06
 	add r0, sp, #4
-	bl len__3Msg
+	bl len__C3Msg
 	adds r1, r0, #0
 	subs r1, #1
 	add r0, sp, #4
-	bl sub_0806E334__3Msgi
+	bl getTextAtOffset__3Msgi
 	ldr r2, _0807BA38
 	adds r1, r2, #0
 	strh r1, [r0]

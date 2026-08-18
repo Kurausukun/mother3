@@ -7,7 +7,7 @@ sub_08036C24:
 	ldr r1, _08036C64
 	adds r0, r0, r1
 	ldrh r0, [r0]
-	bl sub_0801B498
+	bl getMapObjectData
 	adds r4, #0x85
 	ldrb r2, [r4]
 	subs r2, #5

@@ -65,7 +65,7 @@ sub_08007E54:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08007EE8: .4byte gUnknown_09AF3790
+_08007EE8: .4byte gMiscGfx
 _08007EEC: .4byte 0x0600A000
 _08007EF0: .4byte 0x06017E00
 _08007EF4: .4byte gSave

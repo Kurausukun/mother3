@@ -25,7 +25,7 @@ sub_08089D9C:
 	adds r0, r7, #0
 	adds r0, #0x34
 	bl __11Unk0806D64C
-	bl sub_0806FBA8
+	bl get__16EfcSystemManager
 	mov sb, r0
 	str r4, [r7, #0x2c]
 	ldr r2, [r0, #0x1c]
@@ -199,7 +199,7 @@ _08089E72:
 	.align 2, 0
 _08089F4C: .4byte vt_09F85378
 _08089F50: .4byte vt_09F852E0
-_08089F54: .4byte _vt.6ResPtr
+_08089F54: .4byte _vt.11ResPtrSized
 _08089F58: .4byte _vt.5Event
 _08089F5C: .4byte _vt.8AppClock
 _08089F60: .4byte callback_sub_08089F94

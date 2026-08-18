@@ -1,4 +1,5 @@
 // Auto-generated source file
+#include "audio.h"
 #include "battle/guest.h"
 #include "battle/irc.h"
 #include "enums.h"
@@ -7,12 +8,20 @@
 #include "global.h"
 #include "m4a.h"
 #include "overworld/script.h"
-#include "audio.h"
 #include "structs.h"
 
 extern const char _binary_build_mother3_assets_misctext_bin_start;
-extern const IrqTable gUnknown_080C1A58;
+extern const char gMapPalettes;
+extern const char gMapTileData;
+extern const char gMapTilemapData;
+extern const char gMapGraphicsTable;
+extern const MapGraphicsInfo gMapGraphicsInfoTable;
+extern const MapLayerAlphaInfo gMapLayerInfoTable;
+extern const char gMapDoorHotspotTable;
+extern const char gObjectData;
+extern const char gGiftBoxTable;
 extern const u8 gMapMusicTable[0x3E8];
+extern const IrqTable gUnknown_080C1A58;
 extern IrqTable gIntrHandlers;
 extern u8 gUnknown_02004100[0x10];
 extern u8 gUnknown_02005080;
@@ -56,7 +65,7 @@ extern "C" void sub_08036BA4(Object*);
 extern "C" void sub_0800BE04(Object*);
 extern "C" void sub_080052E4(s32);
 extern "C" void sub_0802610C(s32);
-extern "C" MapGraphicsInfo* getMapGraphicsInfo(u16);
+extern "C" const MapGraphicsInfo* getMapGraphicsInfo(u16);
 extern "C" DoorDestinationInfo* getDoorDestinationInfo(u16);
 extern "C" void sub_0805CD30(u16, u16, u8);
 extern "C" u32 sub_0805CDD8(u16, u8);
@@ -293,10 +302,35 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001AAC.inc", void sub_08001AAC()
 extern "C" ASM_FUNC("asm/non_matching/rom/memclear.inc", void memclear());
 extern "C" ASM_FUNC("asm/non_matching/rom/CpuSmartSet.inc", void CpuSmartSet());
 extern "C" ASM_FUNC("asm/non_matching/rom/memFill.inc", void memFill());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001B9C.inc", void sub_08001B9C());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001BCC.inc", void sub_08001BCC());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001BFC.inc", void sub_08001BFC());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001C2C.inc", void sub_08001C2C());
+
+extern "C" u16* misctext_get_room_description(u16 index) {
+    u8* data = (u8*)Blob_GetEntry(&_binary_build_mother3_assets_misctext_bin_start, 1);
+    u16* offsets = (u16*)Blob_GetEntry(&_binary_build_mother3_assets_misctext_bin_start, 0);
+
+    return (u16*)&data[offsets[index]];
+}
+
+extern "C" u16* misctext_get_goods_description(u16 index) {
+    u8* data = (u8*)Blob_GetEntry(&_binary_build_mother3_assets_misctext_bin_start, 4);
+    u16* offsets = (u16*)Blob_GetEntry(&_binary_build_mother3_assets_misctext_bin_start, 3);
+
+    return (u16*)&data[offsets[index]];
+}
+
+extern "C" u16* misctext_get_psi_description(u16 index) {
+    u8* data = (u8*)Blob_GetEntry(&_binary_build_mother3_assets_misctext_bin_start, 10);
+    u16* offsets = (u16*)Blob_GetEntry(&_binary_build_mother3_assets_misctext_bin_start, 9);
+
+    return (u16*)&data[offsets[index]];
+}
+
+extern "C" u16* misctext_get_skill_description(u16 index) {
+    u8* data = (u8*)Blob_GetEntry(&_binary_build_mother3_assets_misctext_bin_start, 15);
+    u16* offsets = (u16*)Blob_GetEntry(&_binary_build_mother3_assets_misctext_bin_start, 14);
+
+    return (u16*)&data[offsets[index]];
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/get_misctext_msg.inc", void get_misctext_msg());
 
 extern "C" u16 isCharIdOverworldPlayable(u16 playerID) {
@@ -2208,7 +2242,7 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B144.inc", void sub_0801B144()
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B1BC.inc", void sub_0801B1BC());
 
 extern "C" u16 isMapGraphicsValid(u16 mapID) {
-    MapGraphicsInfo* graphicsInfo = getMapGraphicsInfo(mapID);
+    const MapGraphicsInfo* graphicsInfo = getMapGraphicsInfo(mapID);
 
     for (u16 i = 0; i < 12; i++) {
         if (graphicsInfo->tileSetIndices[i] == -1) {
@@ -2229,17 +2263,57 @@ extern "C" u8 getMusicIDForRoom(u16 roomIndex) {
     return gMapMusicTable[roomIndex];
 }
 
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B3B4.inc", void sub_0801B3B4());
-extern "C" ASM_FUNC("asm/non_matching/rom/getMapGraphicsInfo.inc", MapGraphicsInfo* getMapGraphicsInfo(u16));
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B3F8.inc", void sub_0801B3F8());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B3FC.inc", void sub_0801B3FC());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B414.inc", void sub_0801B414());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B42C.inc", void sub_0801B42C());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B444.inc", void sub_0801B444());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B45C.inc", void sub_0801B45C());
+extern "C" const MapLayerAlphaInfo* getMapLayerAlphaInfo(u16 index) {
+    return &(((MapLayerAlphaInfo*)Blob_GetEntry(&gMapLayerInfoTable, 0))[index]);
+}
+
+extern "C" const MapGraphicsInfo* getMapGraphicsInfo(u16 index) {
+    u8* table = (u8*)Blob_GetEntry(&gMapGraphicsInfoTable, 0);
+    return (MapGraphicsInfo*)(&table[index * 0x1a]);
+    // FAKEMATCH: Should be something like the following
+    // return &(((MapGraphicsInfo*)Blob_GetEntry(gMapGraphicsTable, 0))[index]);
+}
+
+extern "C" const void* nullsub_0801B3F8() {
+    return NULL;
+};
+
+extern "C" const void* getMapGraphics(u16 index) {
+    return Blob_GetEntry(&gMapGraphicsTable, index);
+}
+
+extern "C" const void* getMapPaletteTable(u16 index) {
+    return Blob_GetEntry(&gMapPalettes, index);
+}
+
+extern "C" const void* getMapTilemapData(u16 index) {
+    return Blob_GetEntry(&gMapTilemapData, index);
+}
+
+extern "C" const void* getMapTileData(u16 index) {
+    return Blob_GetEntry(&gMapTileData, index);
+}
+
+extern "C" const void* getMapDoorsHotspots(u16 index, u16 type) {
+    u16 entry;
+
+    entry = index * 2;
+    if (type != 2) {
+        entry |= 1;  // read hotspot table for this room instead of door table
+    }
+
+    return Blob_GetEntry(&gMapDoorHotspotTable, entry);
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B480.inc", void sub_0801B480());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B498.inc", void sub_0801B498());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B4C4.inc", void sub_0801B4C4());
+
+extern "C" const void* getMapObjectData(u16 arg0) {
+    return Blob_GetEntry(&gObjectData, (arg0 * 5) + (u16)gGame._2_40);
+}
+
+extern "C" void* getGiftBoxData(u16 index) {
+    return &(((char*)Blob_GetEntry(&gGiftBoxTable, 0))[index * 0x10]);
+}
 
 extern "C" DoorDestinationInfo* getDoorDestinationInfo(u16 index) {
     return &((DoorDestinationInfo*)Blob_GetEntry(&gDoorDestinationTable, 0))[index];

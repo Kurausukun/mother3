@@ -49,7 +49,7 @@ _08021E08:
 	adds r4, r1, r0
 	b _08021E44
 	.align 2, 0
-_08021E2C: .4byte gUnknown_02004112
+_08021E2C: .4byte gCharStats+0x2 @ gCharStats[0].name
 _08021E30:
 	movs r0, #5
 	adds r1, r4, #0
@@ -134,7 +134,7 @@ _08021EC0:
 	adds r4, r1, r0
 	b _08021F30
 	.align 2, 0
-_08021EE4: .4byte gUnknown_02004112
+_08021EE4: .4byte gCharStats+0x2 @ gCharStats[0].name
 _08021EE8:
 	movs r0, #5
 	adds r1, r4, #0
@@ -151,7 +151,7 @@ _08021EF6:
 	movs r0, #6
 	b _08021F22
 	.align 2, 0
-_08021F04: .4byte gUnknown_02004112
+_08021F04: .4byte gCharStats+0x2 @ gCharStats[0].name
 _08021F08:
 	movs r0, #7
 	adds r1, r4, #0

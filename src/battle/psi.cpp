@@ -1,8 +1,8 @@
 // Auto-generated source file
-#include "base.h"
 #include "battle/psi.h"
+#include "base.h"
 
-extern "C" void* get_misctext_msg(u32, u32);
+extern "C" u16* get_misctext_msg(u32, u32);
 extern "C" u16 get_misctext_len(u32);
 
 RTTI_IMPL(Psi);
@@ -28,7 +28,7 @@ Action* Psi::action_1c0() {
 }
 
 u16 Psi::id() const {
-    return (u8) mInfo->psi_num;
+    return (u8)mInfo->psi_num;
 }
 
 Msg Psi::name() const {
@@ -137,12 +137,12 @@ u16 Psi::userMissSfx() const {
     return 0;
 }
 
-ASM_FUNC("asm/non_matching/psi/sub_0808304C.inc", bool Psi::isOverworldUsable() const); //0808304C
+ASM_FUNC("asm/non_matching/psi/sub_0808304C.inc", bool Psi::isOverworldUsable() const);  // 0808304C
 
 u32 Psi::type() const {
     return mInfo->type;
 }
 
 u16 Psi::ppCost() const {
-    return (u16) mInfo->pp_cost;
+    return (u16)mInfo->pp_cost;
 }

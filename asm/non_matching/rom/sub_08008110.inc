@@ -96,7 +96,7 @@ _080081D2:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080081D8: .4byte gUnknown_09AF3790
+_080081D8: .4byte gMiscGfx
 _080081DC: .4byte 0x0600D800
 _080081E0: .4byte gSomeBlend
 _080081E4: .4byte 0x000035BA

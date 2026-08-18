@@ -1,13 +1,15 @@
 // Auto-generated source file#include "battle/keypad.h"
 #include "base.h"
-#include "battle/clock.h"
 #include "battle/archive.h"
+#include "battle/clock.h"
 #include "global.h"
 
 extern ClockData callback_sub_0806D878;
 
 extern "C" void __11Unk08088018(void*);
 extern "C" void LZ77UnCompWram(void*, void*);
+extern "C" s32 Div(s32, s32);
+extern "C" s32 DivMod(s32, s32);
 
 CCLHandle::CCLHandle() {  // __9CCLHandle
     mType = 0;
@@ -15,7 +17,7 @@ CCLHandle::CCLHandle() {  // __9CCLHandle
     mBlock = NULL;
 }
 
-CCLHandle::CCLHandle(const ResPtr& ref) {
+CCLHandle::CCLHandle(const ResPtrSized& ref) {
     mType = 0;
     mCount = 0;
     mBlock = NULL;
@@ -24,7 +26,7 @@ CCLHandle::CCLHandle(const ResPtr& ref) {
 
 CCLHandle::~CCLHandle() {}
 
-int CCLHandle::init(const ResPtr& ref) {
+int CCLHandle::init(const ResPtrSized& ref) {
     mType = type(ref);
 
     switch (mType) {
@@ -39,7 +41,7 @@ int CCLHandle::init(const ResPtr& ref) {
     return 1;
 }
 
-int CCLHandle::type(const ResPtr& ref) {
+int CCLHandle::type(const ResPtrSized& ref) {
     if (RESOURCE(ref)->header != HEADER_CCL) {  // " lcc"
         return 1;
     } else {
@@ -47,12 +49,12 @@ int CCLHandle::type(const ResPtr& ref) {
     }
 }
 
-void CCLHandle::read1(const ResPtr& ref) {
+void CCLHandle::read1(const ResPtrSized& ref) {
     mCount = ref.size >> 5;
     mBlock = ref.address;
 }
 
-void CCLHandle::read2(const ResPtr& ref) {
+void CCLHandle::read2(const ResPtrSized& ref) {
     mCount = RESOURCE(ref)->count;
     mBlock = (void*)&RESOURCE(ref)->block;
 }
@@ -76,7 +78,7 @@ CCGHandle::CCGHandle() {
     mBlock = NULL;
 }
 
-CCGHandle::CCGHandle(const ResPtr& ref) {
+CCGHandle::CCGHandle(const ResPtrSized& ref) {
     mType = 0;
     mReserve = NULL;
     mCount = 0;
@@ -88,7 +90,7 @@ CCGHandle::~CCGHandle() {
     delete[] mReserve;
 }
 
-int CCGHandle::init(const ResPtr& ref) {
+int CCGHandle::init(const ResPtrSized& ref) {
     delete[] mReserve;
     mReserve = NULL;
 
@@ -106,7 +108,7 @@ int CCGHandle::init(const ResPtr& ref) {
     return 1;
 }
 
-int CCGHandle::type(const ResPtr& ref) {
+int CCGHandle::type(const ResPtrSized& ref) {
     if (RESOURCE(ref)->header != HEADER_CCG) {  // " gcc"
         return 1;
     } else {
@@ -114,12 +116,12 @@ int CCGHandle::type(const ResPtr& ref) {
     }
 }
 
-void CCGHandle::read1(const ResPtr& ref) {
+void CCGHandle::read1(const ResPtrSized& ref) {
     mCount = ref.size >> 5;
     mBlock = ref.address;
 }
 
-void CCGHandle::read2(const ResPtr& ref) {
+void CCGHandle::read2(const ResPtrSized& ref) {
     Resource* ccg = RESOURCE(ref);
 
     mCount = ccg->count;
@@ -269,20 +271,129 @@ extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806DFF0.inc", void sub_0806
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E098.inc", void sub_0806E098());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E0FC.inc", void sub_0806E0FC());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E150.inc", void sub_0806E150());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E1C8.inc", void sub_0806E1C8());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/genMisctextMsg__3MsgPvUi.inc", void genMisctextMsg__3MsgPvUi());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/__3Msg.inc", void __3Msg());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/replace__3MsgRC3Msg.inc", void replace__3MsgRC3Msg());
+
+Msg Msg::bcd(s32 val) {
+    u8 buffer[10];
+    u8 numDigits = 0;
+
+    do {
+        buffer[numDigits++] = DivMod(val, 10);
+        val = Div(val, 10);
+    } while (val > 0);
+
+    Msg valAsText = Msg();
+
+    for (u8 i = numDigits; i != 0; i--) {
+        valAsText.appendCharacter(buffer[i - 1] + 0xCB);
+    }
+
+    return valAsText;
+}
+
+Msg Msg::genMisctextMsg(u16* text, s32 len) {
+    s32 validChars = 0;
+
+    while (validChars < len && text[validChars] != Msg::End) {
+        validChars++;
+    }
+
+    return Msg(text, validChars);
+}
+
+Msg::Msg() {
+    mText = 0;
+    mCapacity = 0;
+    mLen = 0;
+}
+
+Msg::Msg(const u16* textPtr, s32 len) {
+    mText = new u16[len];
+    mCapacity = len;
+    mLen = len;
+    setText(textPtr, len);
+}
+
+Msg::Msg(const Msg& m) {
+    mText = new u16[m.mLen];
+    mCapacity = m.mLen;
+    setText(m.mText, m.mLen);
+}
+
+Msg* Msg::replace(const Msg& m) {
+    resize(m.mLen);
+    setText(m.mText, m.mLen);
+    return this;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E308.inc", void sub_0806E308());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E334__3Msgi.inc", void sub_0806E334__3Msgi());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E33C.inc", void sub_0806E33C());
+
+u16* Msg::getTextAtOffset(s32 idx) {
+    return &mText[idx];
+}
+
+u16* Msg::getTextAtOffset(s32 idx) const {
+    return &mText[idx];
+}
+
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E344.inc", void sub_0806E344());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E34C.inc", void sub_0806E34C());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E374__3MsgRC3Msg.inc", void sub_0806E374__3MsgRC3Msg());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E3B4.inc", void sub_0806E3B4());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/len__3Msg.inc", void len__3Msg());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E418.inc", void sub_0806E418());
-extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E454.inc", void sub_0806E454());
+
+Msg* Msg::appendCharacter(u16 c) {
+    resize(mLen + 1);
+    mText[mLen++] = c;
+    return this;
+}
+
+Msg* Msg::concatenate(const Msg& m) {
+    resize(mLen + m.mLen);
+
+    for (s32 i = 0; i < m.mLen; i++) {
+        mText[mLen++] = m.mText[i];
+    }
+
+    return this;
+}
+
+Msg* Msg::insertAt(s32 idx, const Msg& m) {
+    resize(mLen + m.mLen);
+
+    for (s32 i = mLen - 1; i >= idx; i--) {
+        mText[idx + m.mLen + i] = mText[i];
+    }
+
+    for (s32 i = 0; i < m.mLen; i++) {
+        mText[idx + i] = m.mText[i];
+    }
+
+    return this;
+}
+
+s32 Msg::len() const {
+    return mLen;
+}
+
+void Msg::resize(s32 size) {
+    if (mCapacity < size) {
+        size = max(mCapacity * 2, size);
+        u16* oldText = mText;
+        mText = new u16[size];
+        mCapacity = size;
+
+        setText(oldText, mLen);
+
+        if (oldText) {
+            delete[] oldText;
+        }
+    }
+}
+
+void Msg::setText(const u16* textPtr, s32 len) {
+    mLen = 0;
+
+    for (u16 i = 0; i < len; mLen++, i = mLen) {
+        mText[i] = textPtr[i];
+    }
+}
+
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E480.inc", void sub_0806E480());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E488.inc", void makeInstance__16FntSystemManager());
 extern "C" ASM_FUNC("asm/non_matching/fntsystem/sub_0806E4B8.inc", void sub_0806E4B8());

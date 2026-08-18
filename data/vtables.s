@@ -1,21 +1,22 @@
     .section .data
 
+.global _vt.11ResPtrSized
+_vt.11ResPtrSized:
+	.2byte 0
+	.2byte 0
+	.4byte 0
+	.2byte 0
+	.2byte 0
+	.4byte _._11ResPtrSized
+
 .global _vt.6ResPtr
-_vt.6ResPtr:
+_vt.6ResPtr::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
 	.4byte _._6ResPtr
-
-vt_09F44F18::
-	.2byte 0
-	.2byte 0
-	.4byte 0
-	.2byte 0
-	.2byte 0
-	.4byte sub_0805D2B4
 
 .global _vt.15SystemAllocator
 _vt.15SystemAllocator:
@@ -284,7 +285,7 @@ _vt.6Battle::
 	.4byte isFightBoss__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_178__6Battle
+	.4byte battleGroup__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_180__6Battle
@@ -877,7 +878,7 @@ _vt.16MaskedManBattleB::
 	.4byte isFightBoss__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_178__6Battle
+	.4byte battleGroup__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_180__6Battle
@@ -1140,7 +1141,7 @@ _vt.16MaskedManBattleA::
 	.4byte isFightBoss__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_178__6Battle
+	.4byte battleGroup__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_180__6Battle
@@ -1436,7 +1437,7 @@ _vt.11PorkyBattle::
 	.4byte isFightBoss__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_178__6Battle
+	.4byte battleGroup__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_180__6Battle
@@ -1711,7 +1712,7 @@ _vt.14PorkyBotBattle::
 	.4byte isFightBoss__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_178__6Battle
+	.4byte battleGroup__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_180__6Battle
@@ -1989,7 +1990,7 @@ _vt.16MasterEddyBattle::
 	.4byte isFightBoss__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_178__6Battle
+	.4byte battleGroup__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_180__6Battle
@@ -2243,7 +2244,7 @@ _vt.13DefaultBattle::
 	.4byte isFightBoss__6Battle
 	.2byte 0
 	.2byte 0
-	.4byte battle_178__6Battle
+	.4byte battleGroup__6Battle
 	.2byte 0
 	.2byte 0
 	.4byte battle_180__6Battle
@@ -89511,13 +89512,13 @@ vt_09F7E988::
 	.2byte 0
 	.4byte sub_0806DBE4
 
-vt_09F7EA80::
+_vt.9SARHandle::
 	.2byte 0
 	.2byte 0
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_080687AC
+	.4byte _._9SARHandle
 
 _vt.9Singleton::
 	.2byte 0
@@ -92242,10 +92243,10 @@ _vt.9EfcSystem::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806FC28
+	.4byte _._9EfcSystem
 	.2byte 0
 	.2byte 0
-	.4byte getRTTI_9EfcSystem
+	.4byte getRTTI__9EfcSystem
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -92281,25 +92282,25 @@ _vt.9EfcSystem::
 	.4byte sub_0806FC54
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806FCC8
+	.4byte type__9EfcSystem
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806FCD4
+	.4byte loadEntry__9EfcSystemUi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806FCE8
+	.4byte get_28__9EfcSystem
 	.2byte 0
 	.2byte 0
 	.4byte sub_0806FCEC
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806FD10
+	.4byte get_30__9EfcSystem
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806FD14
+	.4byte sub_0806FD14__9EfcSystemi
 	.2byte 0
 	.2byte 0
-	.4byte sub_0806FD1C
+	.4byte get_38__9EfcSystem
 	.2byte 0
 	.2byte 0
 	.4byte sub_0806FD20
@@ -94495,10 +94496,10 @@ _vt.10UnitTarget::
 	.4byte attackdata_e8__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte attackdata_f0__10UnitTargeti
+	.4byte getTarget__10UnitTargeti
 	.2byte 0
 	.2byte 0
-	.4byte attackdata_f8__C10UnitTargetP4Unit
+	.4byte getTargetIndex__C10UnitTargetP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte attackdata_100__10UnitTargetP4Unit
@@ -94608,10 +94609,10 @@ _vt.16UnitTargetChoice::
 	.4byte attackdata_e8__C10UnitTarget
 	.2byte 0
 	.2byte 0
-	.4byte attackdata_f0__10UnitTargeti
+	.4byte getTarget__10UnitTargeti
 	.2byte 0
 	.2byte 0
-	.4byte attackdata_f8__C10UnitTargetP4Unit
+	.4byte getTargetIndex__C10UnitTargetP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte attackdata_100__10UnitTargetP4Unit

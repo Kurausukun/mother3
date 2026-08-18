@@ -111,7 +111,6 @@ u32 MonsterSkill::priority() const {
     return mInfo->move.priority;
 }
 
-
 Msg MonsterSkill::getUseMessage() const {
     return ROMStr(mInfo->move.msg_no);
 }
@@ -164,7 +163,8 @@ u16 MonsterSkill::userAttackSfx() const {
         return mInfo->has_sound;
     }
 
-    else return 0;
+    else
+        return 0;
 }
 
 u16 MonsterSkill::userCritSfx() const {
@@ -176,7 +176,8 @@ u16 MonsterSkill::userCritSfx() const {
         return mInfo->has_sound + 1;
     }
 
-    else return 0;
+    else
+        return 0;
 }
 
 u16 MonsterSkill::userMissSfx() const {
@@ -188,7 +189,8 @@ u16 MonsterSkill::userMissSfx() const {
         return mInfo->has_sound + 2;
     }
 
-    else return 0;
+    else
+        return 0;
 }
 
 u16 MonsterSkill::ppCost() const {
@@ -196,5 +198,5 @@ u16 MonsterSkill::ppCost() const {
 }
 
 u8 MonsterSkill::recolorValue() const {
-    return (u8) mInfo->recolor_value;
+    return (u8)mInfo->recolor_value;
 }

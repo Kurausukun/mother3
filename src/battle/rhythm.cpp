@@ -18,10 +18,13 @@ extern "C" BattleFader* sub_08072568();
 extern "C" BattleFader* sub_08072588();
 extern "C" BattleFader* sub_080725A8();
 extern "C" Action* create__19MonsterSkillFactoryUsP4Unit(u16 arg0, Unit* user);
-extern "C" Action* create__18PlayerSkillFactoryUsP4Unit(u16 arg0, Unit* user);                      // TODO: confirm return type
-extern "C" Action* create__10PsiFactoryUsP4Unit(u16 arg0, Unit* user);                      // TODO: confirm return type
-extern "C" Action* create__12GoodsFactoryUsP4UnitUs(u16 arg0, Unit* arg1, u16 arg2);  // TODO: confirm return type
-extern "C" Action* create__17GuestSkillFactoryUsP4Unit(u16 arg0, Unit* user);                      // TODO: confirm return type
+extern "C" Action* create__18PlayerSkillFactoryUsP4Unit(u16 arg0,
+                                                        Unit* user);    // TODO: confirm return type
+extern "C" Action* create__10PsiFactoryUsP4Unit(u16 arg0, Unit* user);  // TODO: confirm return type
+extern "C" Action* create__12GoodsFactoryUsP4UnitUs(u16 arg0, Unit* arg1,
+                                                    u16 arg2);  // TODO: confirm return type
+extern "C" Action* create__17GuestSkillFactoryUsP4Unit(u16 arg0,
+                                                       Unit* user);  // TODO: confirm return type
 
 extern "C" s32 Remainder(s32, s32);
 extern "C" bool IsPlayer(Unit*);
@@ -68,13 +71,13 @@ extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08073D98.inc", void sub_08073D9
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08073E3C.inc", void sub_08073E3C());
 
 bool statusWearOff(Unit* unit, Status::Type type, bool print) {
-    if (unit->hasStatus(type) == 1){
+    if (unit->hasStatus(type) == 1) {
         Status* s = unit->findStatus(type);
-        
-        if (print == true && s){
+
+        if (print == true && s) {
             s->woreOffMsg().print(Color(0, 0, 0), 1);
         }
-            
+
         return unit->removeOneStatus(type);
     }
     return false;
@@ -271,9 +274,9 @@ extern "C" void sub_0807476C(RhythmBgm* arg0) {
         arg0->play(0x00);
     }
 }
-extern u32 gUnknown_081135A8;
+extern u32 gBgmHypnosisMappings;
 extern "C" u16 sub_080747CC(RhythmBgm* arg0, u16 arg1) {
-    for(u32 var_r3 = 0, *var_r2 = &gUnknown_081135A8; ((s32)var_r3 <= 0x38); var_r2++, var_r3++) {
+    for(u32 var_r3 = 0, *var_r2 = &gBgmHypnosisMappings; ((s32)var_r3 <= 0x38); var_r2++, var_r3++) {
         u16* temp = (u16*)var_r2;
         if (temp[1] == arg1) return temp[0];
     } 
@@ -288,7 +291,7 @@ extern "C" void sub_080747F4(RhythmBgm* arg0) {
 }
 
 extern "C" u16 sub_08074854(RhythmBgm* arg0, u16 arg1) {
-    for(u32 var_r3 = 0, *var_r2 = &gUnknown_081135A8; ((s32)var_r3 <= 0x38); var_r2++, var_r3++) {
+    for(u32 var_r3 = 0, *var_r2 = &gBgmHypnosisMappings; ((s32)var_r3 <= 0x38); var_r2++, var_r3++) {
         u16* temp = (u16*)var_r2;
         if (temp[0] == arg1) return temp[1];
     } 

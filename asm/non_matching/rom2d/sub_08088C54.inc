@@ -107,7 +107,7 @@ sub_08088C54:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08088D34: .4byte gUnknown_080EF880
+_08088D34: .4byte gBattleSineTable
 _08088D38: .4byte 0x000003FF
 _08088D3C: .4byte 0xFFFF0000
 _08088D40: .4byte 0x0000FFFF

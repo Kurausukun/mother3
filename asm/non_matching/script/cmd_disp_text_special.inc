@@ -11,7 +11,7 @@ cmd_disp_text_special:
 	bl scriptstack_peek
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
-	bl sub_08027F38
+	bl getCommonScriptLine
 	adds r6, r0, #0
 	movs r0, #1
 	bl sub_0800ADBC

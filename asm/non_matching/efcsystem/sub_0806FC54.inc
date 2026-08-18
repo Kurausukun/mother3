@@ -5,7 +5,7 @@ sub_0806FC54:
 	adds r5, r1, #0
 	adds r1, r2, #0
 	adds r0, #0x20
-	bl sub_0805D2D4
+	bl set__6ResPtrR6ResPtr
 	ldr r5, [r5]
 	ldrh r0, [r5, #4]
 	strh r0, [r4, #0x28]

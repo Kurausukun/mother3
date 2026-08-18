@@ -32,7 +32,7 @@ sub_0808A03C:
 	mov r2, r8
 	ldr r3, [sp, #0x34]
 	str r2, [r3, #0x2c]
-	bl sub_0806FBA8
+	bl get__16EfcSystemManager
 	adds r4, r0, #0
 	ldr r2, [r4, #0x1c]
 	adds r2, #0x98
@@ -85,7 +85,7 @@ sub_0808A03C:
 	mov r1, r8
 	ldrh r0, [r1, #0xa]
 	ldrh r1, [r1, #0xc]
-	bl sub_0805D234
+	bl randRange__Fii
 	adds r1, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
@@ -98,14 +98,14 @@ sub_0808A03C:
 	mov r2, r8
 	ldrh r1, [r2, #0x16]
 	rsbs r0, r1, #0
-	bl sub_0805D234
+	bl randRange__Fii
 	mov r3, r8
 	ldrh r1, [r3, #0x10]
 	adds r1, r1, r0
 	strh r1, [r6]
 	ldrh r1, [r3, #0x16]
 	rsbs r0, r1, #0
-	bl sub_0805D234
+	bl randRange__Fii
 	mov r2, r8
 	ldrh r1, [r2, #0x12]
 	adds r1, r1, r0
@@ -196,7 +196,7 @@ _0808A194:
 	.align 2, 0
 _0808A1E8: .4byte vt_09F85378
 _0808A1EC: .4byte vt_09F85410
-_0808A1F0: .4byte _vt.6ResPtr
+_0808A1F0: .4byte _vt.11ResPtrSized
 _0808A1F4: .4byte _vt.5Event
 _0808A1F8: .4byte _vt.8AppClock
 _0808A1FC: .4byte callback_sub_0808A230

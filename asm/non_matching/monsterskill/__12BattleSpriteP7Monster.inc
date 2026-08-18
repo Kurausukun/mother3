@@ -42,7 +42,7 @@ __12BattleSpriteP7Monster:
 	bl sub_080706A0
 	adds r0, r5, #0
 	mov r1, sp
-	bl init__9CCLHandleRC6ResPtr
+	bl init__9CCLHandleRC11ResPtrSized
 	ldr r1, _08081D3C
 	mov r8, r1
 	str r1, [sp, #8]
@@ -110,7 +110,7 @@ __12BattleSpriteP7Monster:
 	.align 2, 0
 _08081D34: .4byte _vt.12BattleSprite
 _08081D38: .4byte 0x00000179
-_08081D3C: .4byte _vt.6ResPtr
+_08081D3C: .4byte _vt.11ResPtrSized
 _08081D40: .4byte 0x040000D4
 _08081D44: .4byte 0x80000010
 	.syntax divided

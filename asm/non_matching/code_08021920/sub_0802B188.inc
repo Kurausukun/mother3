@@ -109,7 +109,7 @@ _0802B258:
 	.align 2, 0
 _0802B268: .4byte 0x0000071E
 _0802B26C: .4byte 0x0000071B
-_0802B270: .4byte gUnknown_020041E8
+_0802B270: .4byte gCharStats+0xD8 @ gCharStats[2]
 _0802B274: .4byte gUnknown_0200E06F
 _0802B278: .4byte gSave+0x710 @ gSave._710
 _0802B27C:
@@ -218,7 +218,7 @@ _0802B34C:
 	b _0802B36A
 	.align 2, 0
 _0802B354: .4byte 0x00000735
-_0802B358: .4byte gUnknown_020042C0
+_0802B358: .4byte gCharStats+0x1B0 @ gCharStats[4]
 _0802B35C: .4byte gUnknown_0200E06F
 _0802B360: .4byte 0x0000072A
 _0802B364: .4byte gSave+0x72A @ gSave._72a

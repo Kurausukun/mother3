@@ -119,7 +119,7 @@ public:
             PlayAnimation(Animation::YellowFlash, this, this);
             hitPlayer(a1->getUser(), 0x14, 1);
             PlayAnimation(Animation::NoEffect, a1->getUser(), a1->getUser());
-            // [10 FF] received an electric shock!
+            // [FMT_ARG0] received an electric shock!
             ROMStrFmt(0x27c, a1->getUser()->name(), Msg(), Msg()).print(Color::Black(), true);
         }
     }

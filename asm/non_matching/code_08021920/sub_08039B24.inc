@@ -13,7 +13,7 @@ sub_08039B24:
 	movs r0, #0
 	b _08039B54
 	.align 2, 0
-_08039B40: .4byte gUnknown_09AF3790
+_08039B40: .4byte gMiscGfx
 _08039B44:
 	adds r0, r5, #0
 	movs r1, #0x25

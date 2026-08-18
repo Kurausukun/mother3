@@ -21,7 +21,7 @@ fmtStatusMsg__16StatusOffDownMidUs:
 	rsbs r1, r1, #0
 _080BA3C8:
 	add r0, sp, #4
-	bl sub_0806E1C8
+	bl bcd__3Msgi
 	ldr r1, [r4, #0x1c]
 	adds r1, #0xe8
 	movs r2, #0

@@ -182,7 +182,7 @@ _080B1B02:
 	bl _call_via_r3
 	mov r0, sb
 	adds r1, r7, #0
-	bl sub_0806E374__3MsgRC3Msg
+	bl concatenate__3MsgRC3Msg
 	adds r0, r7, #0
 	movs r1, #2
 	bl _._3Msg
@@ -197,7 +197,7 @@ _080B1B02:
 	bl name__C5Goods
 	mov r0, sb
 	adds r1, r7, #0
-	bl sub_0806E374__3MsgRC3Msg
+	bl concatenate__3MsgRC3Msg
 	adds r0, r7, #0
 	movs r1, #2
 	bl _._3Msg
@@ -215,7 +215,7 @@ _080B1B02:
 	bl _call_via_r3
 	mov r0, sb
 	adds r1, r7, #0
-	bl sub_0806E374__3MsgRC3Msg
+	bl concatenate__3MsgRC3Msg
 	adds r0, r7, #0
 	movs r1, #2
 	bl _._3Msg

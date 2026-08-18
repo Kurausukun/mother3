@@ -30,7 +30,7 @@ _0805C134:
 	adds r1, r0, #0
 	adds r1, r4, r1
 	adds r0, r4, #0
-	bl sub_0805D234
+	bl randRange__Fii
 	adds r4, r0, #0
 	ldr r0, [sp, #0x18]
 	cmp r0, r4

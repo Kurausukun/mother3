@@ -1,7 +1,7 @@
 // Auto-generated source file
 #include "battle/playerskill.h"
 
-extern "C" void* get_misctext_msg(u32, u32);
+extern "C" u16* get_misctext_msg(u32, u32);
 extern "C" u16 get_misctext_len(u32);
 
 extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0807C718.inc", void sub_0807C718());
@@ -127,7 +127,7 @@ Msg PlayerSkill::name() const {
 }
 
 extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_08080484.inc", void action_1d8__C11PlayerSkill());
-extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_08080560.inc", void sub_08080560()); // unused?
+extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_08080560.inc", void sub_08080560());  // unused?
 
 u32 PlayerSkill::action_1e0() {
     return 0;

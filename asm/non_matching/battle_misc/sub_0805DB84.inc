@@ -16,7 +16,7 @@ dt__6Battle:
 	movs r1, #3
 	bl _call_via_r2
 _0805DBA4:
-	bl sub_0806FBB4
+	bl destroy__16EfcSystemManager
 	bl sub_0806EC14
 	ldr r2, [r4, #0x30]
 	cmp r2, #0

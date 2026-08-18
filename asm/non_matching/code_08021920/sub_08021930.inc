@@ -209,6 +209,6 @@ _08021AC6:
 	bx r0
 	.align 2, 0
 _08021AF0: .4byte gUnknown_0201AAE4
-_08021AF4: .4byte gUnknown_09AF3790
+_08021AF4: .4byte gMiscGfx
 _08021AF8: .4byte 0xFFFFEBCC
 	.syntax divided

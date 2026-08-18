@@ -55,7 +55,7 @@ sub_0808836C:
 	mov sl, r0
 	add r0, sp, #0x1c
 	mov r1, r8
-	bl _fd4__8BGHandleRC6ResPtr
+	bl _fd4__8BGHandleRC11ResPtrSized
 	ldr r0, [sp, #0x1c]
 	lsls r0, r0, #0x10
 	asrs r0, r0, #0x10

@@ -107,7 +107,7 @@ sub_080862D8:
 	bx r1
 	.align 2, 0
 _080863C4: .4byte vt_09F846C8
-_080863C8: .4byte gUnknown_080EF880
+_080863C8: .4byte gBattleSineTable
 _080863CC: .4byte 0xFFFE0C00
 _080863D0: .4byte 0xFFFE7000
 _080863D4: .4byte _vt.5Event

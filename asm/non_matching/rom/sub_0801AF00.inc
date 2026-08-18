@@ -13,7 +13,7 @@ sub_0801AF00:
 	adds r0, r0, r1
 	ldrh r0, [r0]
 	movs r1, #0xa
-	bl sub_0801B45C
+	bl getMapDoorsHotspots
 	adds r6, r0, #0
 	ldr r1, _0801AF80
 	ldr r0, [sp]

@@ -1,7 +1,7 @@
-#include "base.h"
 #include "battle/status.h"
-#include "battle/unit.h"
+#include "base.h"
 #include "battle.h"
+#include "battle/unit.h"
 
 bool statusWearOff(Unit*, Status::Type, bool);
 
@@ -14,7 +14,7 @@ Msg tellStatus(u16 arg1) {
     return ROMStrFmt((u16)(arg1 + 0x3F), Msg(), Msg(), Msg());
 }
 
-Status::Status(u16 type, Unit* unit){
+Status::Status(u16 type, Unit* unit) {
     mData = &gStatusData[type];
     mUnit = unit;
     mRoundLimit = 0;
@@ -70,7 +70,7 @@ void Status::setTurns(u16 turns) {
 
 Status::Type Status::type() const {
     return mData->type;
-} 
+}
 
 Unit* Status::unit() const {
     return mUnit;
@@ -101,7 +101,7 @@ u16 Status::status_data_2() {
 }
 
 Msg Status::inflictedMsg() {
-    if (unit()->getStatusTypeCount(type()) <= 1){
+    if (unit()->getStatusTypeCount(type()) <= 1) {
         return fmtStatusMsg(5 * type() + 0x50D);
     } else {
         return fmtStatusMsg(5 * type() + 0x511);
@@ -113,7 +113,7 @@ Msg Status::activeMsg() {
 }
 
 Msg Status::woreOffMsg() {
-    if (unit()->getStatusTypeCount(type()) <= 1){
+    if (unit()->getStatusTypeCount(type()) <= 1) {
         return fmtStatusMsg(5 * type() + 0x510);
     } else {
         return fmtStatusMsg(5 * type() + 0x50F);
@@ -128,7 +128,7 @@ bool Status::status_bool_5() {
     return mData->_5 == 1;
 }
 
-Msg Status::fmtStatusMsg(u16 idx){
+Msg Status::fmtStatusMsg(u16 idx) {
     return ROMStrFmt(idx, name(), unit()->name(), Msg());
 }
 
@@ -136,10 +136,10 @@ void status_roundBeginCallback(Status* s) {
     s->onRoundBegin();
 }
 
-bool Status::onRoundBegin(){
+bool Status::onRoundBegin() {
     mRounds++;
-    if (roundLimit() > 0){
-        if ((s16)mRounds >= roundLimit()){
+    if (roundLimit() > 0) {
+        if ((s16)mRounds >= roundLimit()) {
             statusWearOff(unit(), type(), 1);
             return false;
         }
@@ -150,9 +150,9 @@ bool Status::onRoundBegin(){
 extern "C" ASM_FUNC("asm/non_matching/psi/sub_080829F4.inc", void sub_080829F4());
 
 bool Status::onUnitTurnBegin(Unit* u) {
-    if (u == unit()){
-        if (turnLimit() > 0){
-            if ((s16)mTurns >= turnLimit()){
+    if (u == unit()) {
+        if (turnLimit() > 0) {
+            if ((s16)mTurns >= turnLimit()) {
                 statusWearOff(unit(), type(), 1);
                 return false;
             }

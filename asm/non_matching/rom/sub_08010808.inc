@@ -13,7 +13,7 @@ _0801081C:
 	lsls r0, r4, #1
 	adds r0, r6, r0
 	ldrh r0, [r0]
-	bl sub_0801B3FC
+	bl getMapGraphics
 	lsls r1, r4, #2
 	adds r1, r1, r7
 	str r0, [r1]

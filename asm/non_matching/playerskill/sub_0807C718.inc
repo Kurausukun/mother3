@@ -24,7 +24,7 @@ sub_0807C718:
 	bl sub_080706A0
 	add r0, sp, #4
 	mov r1, r8
-	bl __9CCLHandleRC6ResPtr
+	bl __9CCLHandleRC11ResPtrSized
 	ldr r3, _0807C8E0
 	mov sl, r3
 	str r3, [sp, #0x18]
@@ -197,7 +197,7 @@ sub_0807C718:
 	bx r1
 	.align 2, 0
 _0807C8DC: .4byte vt_09F82558
-_0807C8E0: .4byte _vt.6ResPtr
+_0807C8E0: .4byte _vt.11ResPtrSized
 _0807C8E4: .4byte 0x040000D4
 _0807C8E8: .4byte 0x80000010
 _0807C8EC: .4byte _vt.5Event

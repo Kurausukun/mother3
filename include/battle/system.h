@@ -3,20 +3,10 @@
 
 #include "base.h"
 #include "singleton.h"
-
-struct SAREntry {
-    u32 offset;
-    u32 size;
-};
+#include "battle/archive.h"
 
 class System : Base {
 public:
-    struct SARHandle {
-        SARHandle();
-        virtual ~SARHandle();
-        char* ptr;
-    };
-
     System();
     virtual ~System();
 
@@ -35,5 +25,7 @@ public:
     SARHandle* mHandle;
 };
 MANAGER_DECL_INLINE(System);
+
+extern s32 gRNG;
 
 #endif  // BATTLE_SYSTEM_H

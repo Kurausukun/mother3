@@ -28,6 +28,6 @@ sub_08008200:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0800823C: .4byte gUnknown_09AF3790
+_0800823C: .4byte gMiscGfx
 _08008240: .4byte gUnknown_02016078
 	.syntax divided

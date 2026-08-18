@@ -78,7 +78,7 @@ sub_0807D0EC:
 	bl sub_080706A0
 	adds r0, r7, #0
 	adds r1, r4, #0
-	bl init__9CCLHandleRC6ResPtr
+	bl init__9CCLHandleRC11ResPtrSized
 	mov r0, sl
 	str r0, [sp, #0x18]
 	bl get__12ClockManager
@@ -115,7 +115,7 @@ sub_0807D0EC:
 	.align 2, 0
 _0807D1E4: .4byte vt_09F82648
 _0807D1E8: .4byte gUnknown_08D0B010
-_0807D1EC: .4byte _vt.6ResPtr
+_0807D1EC: .4byte _vt.11ResPtrSized
 _0807D1F0: .4byte vt_09F826C8
 _0807D1F4: .4byte gUnknown_020021B8
 _0807D1F8: .4byte 0x00000109

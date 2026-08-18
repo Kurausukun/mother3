@@ -57,7 +57,7 @@ _080778D8:
 	bl attackdata_c8__10UnitTarget
 	mov r0, sp
 	mov r1, r8
-	bl attackdata_f8__C10UnitTargetP4Unit
+	bl getTargetIndex__C10UnitTargetP4Unit
 	adds r4, r0, #0
 	mov r0, sp
 	bl numTargets__C10UnitTarget
@@ -112,7 +112,7 @@ _08077976:
 	adds r5, r6, r5
 	mov r0, sp
 	adds r1, r7, #0
-	bl attackdata_f0__10UnitTargeti
+	bl getTarget__10UnitTargeti
 	adds r1, r0, #0
 	ldr r2, [r4, #4]
 	adds r0, r5, #0

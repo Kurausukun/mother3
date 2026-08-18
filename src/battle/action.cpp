@@ -165,7 +165,7 @@ void Action::playSfx() {
 void Action::tellUseMessage() {
     Msg m = getUseMessage();
 
-    m.print(Color(0, 0, 0), true);
+    m.print(Color::Black(), true);
 }
 
 void Action::playDim() {
@@ -193,14 +193,14 @@ void Action::action_a0(Unit* target) {
     if (element() == ElementType::Thunder && IsPlayerAndType(target, Player::Lucas) == true &&
         getPartyInfo()->party_info_f8(0xc1) == true) {
         PlayAnimation(Animation::FranklinBadge, target, target);
-        ROMStr(0x188).print(Color(0, 0, 0), 1);
+        ROMStr(0x188).print(Color::Black(), 1);
         if (isMonsterVariant(getUser(), Monster::MaskedMan2nd) == true ||
             isMonsterVariant(getUser(), Monster::MaskedMan3rd) == true) {
             hitPlayer(getUser(), randS32(164, 186), 1);
         } else {
             hitPlayer(getUser(), max(0, action_e8(getUser(), target)), 1);
         }
-        PlayAnimation(3, getUser(), getUser());
+        PlayAnimation(Animation::QuickWhiteFlash, getUser(), getUser());
         return;
     }
 
@@ -267,8 +267,8 @@ bool Action::isResisted(Unit* target) {
 }
 
 void Action::tellResisted(Unit* target) {
-    // It had no visible effect on [25 EF][12 FF]!
-    ROMStr(0xec).print(Color(0, 0, 0), true);
+    // It had no visible effect on [25 EF][FMT_ARG2]!
+    ROMStr(0xec).print(Color::Black(), true);
 }
 
 u8 Action::calcDidHit(Unit* target) {
@@ -303,8 +303,8 @@ NONMATCH("asm/non_matching/skill/skill_08078D4C.inc", void Action::onDamage(Unit
             t /= 2;
         } else if (target->hasStatus(Status::Shield) == 1) {
             Status* s = target->findStatus(Status::Shield);
-            s->activeMsg().print(Color(0, 0, 0), 1);
-            PlayAnimation(0x33, target, target);
+            s->activeMsg().print(Color::Black(), 1);
+            PlayAnimation(Animation::ShieldHit, target, target);
             t /= 2;
         }
     }
@@ -318,8 +318,8 @@ NONMATCH("asm/non_matching/skill/skill_08078D4C.inc", void Action::onDamage(Unit
 
     if (target->hasStatus(Status::Counter) == 1) {
         Status* s = target->findStatus(Status::Counter);
-        s->activeMsg().print(Color(0, 0, 0), 1);
-        PlayAnimation(0x36, target, target);
+        s->activeMsg().print(Color::Black(), 1);
+        PlayAnimation(Animation::CounterHit, target, target);
         hitPlayer(getUser(), max(1, t), 1);
         PlayAnimation(successAnimNo(), target, getUser());
         statusWearOff(target, Status::Counter, 1);
@@ -349,8 +349,8 @@ NONMATCH("asm/non_matching/skill/sub_08079018.inc", void Action::onAttack(Unit* 
         t /= 2;
     } else if (target->hasStatus(Status::Shield) == 1) {
         Status* s = target->findStatus(Status::Shield);
-        s->activeMsg().print(Color(0, 0, 0), 1);
-        PlayAnimation(0x33, target, target);
+        s->activeMsg().print(Color::Black(), true);
+        PlayAnimation(Animation::ShieldHit, target, target);
         t /= 2;
     }
 
@@ -360,8 +360,8 @@ NONMATCH("asm/non_matching/skill/sub_08079018.inc", void Action::onAttack(Unit* 
 
     if (target->hasStatus(Status::Counter) == 1) {
         Status* s = target->findStatus(Status::Counter);
-        s->activeMsg().print(Color(0, 0, 0), 1);
-        PlayAnimation(0x36, target, target);
+        s->activeMsg().print(Color::Black(), true);
+        PlayAnimation(Animation::CounterHit, target, target);
         hitPlayer(getUser(), max(1, t), 1);
         PlayAnimation(successAnimNo(), target, getUser());
         statusWearOff(target, Status::Counter, 1);
@@ -406,8 +406,8 @@ NONMATCH("asm/non_matching/skill/sub_080793B8.inc", void Action::onPsiDamage(Uni
             t /= 2;
         } else if (target->hasStatus(Status::PsiShield) == 1) {
             Status* s = target->findStatus(Status::PsiShield);
-            s->activeMsg().print(Color(0, 0, 0), 1);
-            PlayAnimation(0x39, target, target);
+            s->activeMsg().print(Color::Black(), true);
+            PlayAnimation(Animation::PsiShieldHit, target, target);
             t /= 2;
         }
     }
@@ -422,8 +422,8 @@ NONMATCH("asm/non_matching/skill/sub_080793B8.inc", void Action::onPsiDamage(Uni
         IsMonsterSkillAndType(this, 101) != 1) {
         if (target->hasStatus(Status::PsiCounter) == 1) {
             Status* s = target->findStatus(Status::PsiCounter);
-            s->activeMsg().print(Color(0, 0, 0), 1);
-            PlayAnimation(0x3c, target, target);
+            s->activeMsg().print(Color::Black(), true);
+            PlayAnimation(Animation::PsiCounterHit, target, target);
             hitPlayer(getUser(), max(1, t), 1);
             PlayAnimation(successAnimNo(), target, getUser());
             statusWearOff(target, Status::PsiCounter, 1);
@@ -496,11 +496,11 @@ NONMATCH("asm/non_matching/skill/sub_08079EE4.inc",
          bool Action::action_130(Unit* target, u16 status, s32 chance, bool unk)) {
     if (target->hasStatus(status) != 1) {
         if (effect() == 6 && unk == 1) {
-            ROMStr(0xeb).print(Color(0, 0, 0), 1);
+            ROMStr(0xeb).print(Color::Black(), 1);
         }
         return false;
     } else if (randS32(0, 99) < chance) {
-        ROMStr(0xec).print(Color(0, 0, 0), 1);
+        ROMStr(0xec).print(Color::Black(), 1);
         return false;
     } else {
         return statusWearOff(target, status, unk);
@@ -550,28 +550,30 @@ bool Action::action_1b8() {
     return _40 == 5;
 }
 
-NONMATCH("asm/non_matching/skill/action_fixme__6Actioni.inc", Msg Action::action_fixme(s32 idx)) {
-    Msg m = action_1d8();
-    s32 i, j = 0;
-    s32 count = 0;
-    while (i < m.len()) {
-        if (*m.sub_0806E334(i) == 0xFF01) {
-            if (++count > idx) {
+Msg Action::action_fixme(s32 idx) {
+    Msg msg = action_1d8();
+    s32 lineStart = 0;
+    s32 i = 0;
+    s32 breakCount = 0;
+
+    for (; i < msg.len(); i++) {
+        if (msg.getTextAtOffset(i)[0] == Msg::Break) {
+            breakCount++;
+
+            if (breakCount > idx) {
                 break;
-            } else {
-                j = i + 1;
             }
+
+            lineStart = i + 1;
         }
-        i++;
     }
 
-    if (idx < count + 1) {
-        return Msg(m.sub_0806E334(i), i - j);
-    } else {
-        return Msg();
+    if (++breakCount > idx) {
+        return Msg(msg.getTextAtOffset(lineStart), i - lineStart);
     }
+
+    return Msg();
 }
-END_NONMATCH
 
 extern "C" void unit_join_callback(Action* s1, Action* s2) {
     if (s1->action_1b8() != 1) {
@@ -605,8 +607,6 @@ bool Action::fieldSet(s32 value, bool force = false) {
     }
     return true;
 }
-
-// Msg ROMStrFmt(u32, const Msg&, const Msg&, const Msg&);
 
 Msg Action::ROMStr(u16 idx) const {
     return ROMStrFmt(idx, name(), getUser()->name(),

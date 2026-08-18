@@ -70,6 +70,6 @@ _0800AB54:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0800AB5C: .4byte gUnknown_09AF3790
+_0800AB5C: .4byte gMiscGfx
 _0800AB60: .4byte 0x00014F10
 	.syntax divided

@@ -32,7 +32,7 @@ _0809CFC8:
 	lsrs r4, r0, #0x10
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl sub_0805C364
+	bl isPsiLearned
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1

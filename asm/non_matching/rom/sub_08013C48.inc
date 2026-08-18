@@ -39,7 +39,7 @@ _08013C86:
 	ldrb r0, [r0]
 	strh r0, [r4, #0x10]
 	adds r0, r2, #0
-	bl sub_0801B414
+	bl getMapPaletteTable
 	movs r2, #0xc
 	ldrsh r1, [r4, r2]
 	lsls r1, r1, #5

@@ -53,7 +53,7 @@ _08044808:
 	cmp r0, #0
 	bne _08044840
 	ldrb r0, [r4]
-	bl sub_08054FB8
+	bl getCharName
 	adds r2, r6, #0
 	adds r2, #0x4e
 	lsls r2, r2, #0x10

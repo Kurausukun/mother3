@@ -69,7 +69,7 @@ _080624C8:
 	lsrs r0, r0, #0x18
 	cmp r0, #1
 	bne _08062526
-	bl sub_08072698
+	bl getCurrentBattleGroup
 	adds r7, r0, #0
 	movs r5, #0
 	ldrb r1, [r7, #1]

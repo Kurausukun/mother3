@@ -23,7 +23,7 @@ sub_0802D6A0:
 	ldr r1, _0802D768
 	adds r0, r0, r1
 	ldrh r0, [r0]
-	bl sub_0801B498
+	bl getMapObjectData
 	adds r6, r0, #0
 	adds r0, r5, #0
 	adds r0, #0x85

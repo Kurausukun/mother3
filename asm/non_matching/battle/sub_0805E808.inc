@@ -21,7 +21,7 @@ sub_0805E808:
 	adds r2, r6, #0
 	adds r3, r4, #0
 	bl sub_0806DDA0
-	ldr r0, _0805E89C @ =_vt.6ResPtr
+	ldr r0, _0805E89C @ =_vt.11ResPtrSized
 	str r0, [r4, #8]
 	str r0, [r6, #8]
 	str r0, [r5, #8]
@@ -40,7 +40,7 @@ sub_0805E808:
 	bl __3Msg
 	ldr r1, _0805E8A0 @ =0x0000FF33
 	adds r0, r5, #0
-	bl sub_0806E34C
+	bl appendCharacter__3MsgUs
 	add r1, sp, #0xcc
 	strb r4, [r1]
 	strb r4, [r1, #1]
@@ -61,6 +61,6 @@ sub_0805E808:
 	.align 2, 0
 _0805E894: .4byte 0x00000293
 _0805E898: .4byte 0x00000285
-_0805E89C: .4byte _vt.6ResPtr
+_0805E89C: .4byte _vt.11ResPtrSized
 _0805E8A0: .4byte 0x0000FF33
     .syntax divided

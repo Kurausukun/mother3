@@ -13,9 +13,9 @@ extern "C" void* getRTTI__6Player() {
 
 Msg createPlayerName(u16 pl) {
     if (pl == 14) {
-        return Msg::genMisctextMsg(&gSave.hinawa_name, 9);
+        return Msg::genMisctextMsg((u16*)&gSave.hinawa_name, 9);
     }
-    return Msg::genMisctextMsg(gCharStats[pl].name, 8);
+    return Msg::genMisctextMsg((u16*)gCharStats[pl].name, 8);
 }
 
 extern "C" ASM_FUNC("asm/non_matching/player/sub_0807A904.inc", void __6PlayerUsUs());
@@ -39,7 +39,23 @@ extern "C" ASM_FUNC("asm/non_matching/player/sub_0807B4F8.inc", void onNoStatus_
 extern "C" ASM_FUNC("asm/non_matching/player/sub_0807B528.inc", void kill__6Player());
 extern "C" ASM_FUNC("asm/non_matching/player/sub_0807B5D4.inc", void revive__4Player());
 extern "C" ASM_FUNC("asm/non_matching/player/levelUp.inc", void levelUp__6Playeri());
-extern "C" ASM_FUNC("asm/non_matching/player/tellStatUpgrade.inc", void tellStatUpgrade());
+
+s32 Player::tellStatUpgrade(Msg& levelUpMsg, s32 msgCounter, s32 statValue, u16 msgID) {
+    if (statValue > 0) {
+        levelUpMsg.concatenate(ROMStrFmt(msgID, Msg::bcd(statValue), Msg(), Msg()));
+
+        if (msgCounter % 2 == 1) {
+            levelUpMsg.appendCharacter(Msg::Wait2);
+        } else {
+            levelUpMsg.appendCharacter(Msg::Break);
+        }
+
+        msgCounter++;
+    }
+
+    return msgCounter;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/player/sub_0807BAE4.inc", void sub_0807BAE4());
 extern "C" ASM_FUNC("asm/non_matching/player/sub_0807BB1C.inc", void sub_0807BB1C());
 extern "C" ASM_FUNC("asm/non_matching/player/sub_0807BBA4.inc", void setHP__6Playeri());
@@ -106,4 +122,4 @@ extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0807C634.inc", void sub_08
 extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0807C654.inc", void sub_0807C654());
 extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0807C674.inc", void sub_0807C674());
 extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0807C694.inc", void sub_0807C694());
-extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0807C6B8.inc", void __6Player()); // 6Player
+extern "C" ASM_FUNC("asm/non_matching/playerskill/sub_0807C6B8.inc", void __6Player());  // 6Player

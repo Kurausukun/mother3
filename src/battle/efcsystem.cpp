@@ -1,5 +1,9 @@
 // Auto-generated source file
+#include "battle/efcSystem.h"
 #include "global.h"
+
+extern "C" void makeInstance__15BGEngineManager();
+extern "C" void destroy__15BGEngineManager();
 
 extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806EDF0.inc", void sub_0806EDF0());
 extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806EE90.inc", void sub_0806EE90());
@@ -46,20 +50,43 @@ extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806F97C.inc", void sub_0806
 extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FA00.inc", void sub_0806FA00());
 extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FA14.inc", void sub_0806FA14());
 extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FB64.inc", void sub_0806FB64());
-extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FB70.inc", void sub_0806FB70());
-extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FB78.inc", void sub_0806FB78());
-extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FBA8.inc", void sub_0806FBA8());
-extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FBB4.inc", void sub_0806FBB4());
-extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FBF0.inc", void getRTTI_9EfcSystem());
-extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FBFC.inc", void __9EfcSystem());
-extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FC28.inc", void sub_0806FC28());
+
+MANAGER_IMPL(EfcSystem);
+
+EfcSystem::EfcSystem() : _28(0), _30(0), _38(0) {
+    makeInstance__15BGEngineManager();
+}
+
+EfcSystem::~EfcSystem() {
+    destroy__15BGEngineManager();
+}
+
 extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FC54.inc", void sub_0806FC54());
-extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FCC8.inc", void sub_0806FCC8());
-extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FCD4.inc", void sub_0806FCD4());
-extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FCE8.inc", void sub_0806FCE8());
+
+s32 EfcSystem::type() {
+    return res.type();
+}
+
+ResPtrSized EfcSystem::loadEntry(u32 index) {
+    return LoadRes(&res, index);
+}
+
+u16 EfcSystem::get_28() {
+    return _28;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FCEC.inc", void sub_0806FCEC());
-extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FD10.inc", void sub_0806FD10());
-extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FD14.inc", void sub_0806FD14());
-extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FD1C.inc", void sub_0806FD1C());
+
+u16 EfcSystem::get_30() {
+    return _30;
+}
+
+s32 EfcSystem::sub_0806FD14(s32 arg1) {
+    return _34 + (arg1 * 8);
+}
+
+u16 EfcSystem::get_38() {
+    return _38;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FD20.inc", void sub_0806FD20());
-extern "C" ASM_FUNC("asm/non_matching/efcsystem/sub_0806FD5C.inc", void _GLOBAL_I_EfcSystemManager());

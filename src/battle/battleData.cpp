@@ -1,5 +1,6 @@
 #include "battle.h"
 #include "battle/fader.h"
+#include "battle/goodsImpl.h"
 #include "battle/guest.h"
 #include "battle/monster.h"
 #include "battle/player.h"
@@ -39,8 +40,8 @@ extern "C" bool sub_08072648(u16 value) {
     return BattleManager::get()->isFightBoss() && BattleManager::get()->battle_138() == value;
 }
 
-extern "C" BattleGroup* sub_08072698() {
-    return BattleManager::get()->battle_178();
+extern "C" BattleGroup* getCurrentBattleGroup() {
+    return BattleManager::get()->battleGroup();
 }
 
 extern "C" bool sub_080726B8() {
@@ -359,10 +360,33 @@ Msg ROMStrFmt(s32 r0, const Msg& r1, const Msg& r2, const Msg& r3) {
     return StrFmt(sub_08073444(r0), r1, r2, r3);
 }
 
-extern "C" ASM_FUNC("asm/non_matching/battleData/StrFmt.inc",
-                    Msg StrFmt(const Msg&, const Msg&, const Msg&, const Msg&));
+Msg StrFmt(const Msg& templateStr, const Msg& fmtArg0, const Msg& fmtArg1, const Msg& fmtArg2) {
+    Msg formatted = Msg();
 
-ASM_FUNC("asm/non_matching/battleData/print__3MsgRC13PrintSettingsb.inc",
+    // TODO: Identify message control codes
+    for (s32 i = 0; i < templateStr.len(); i++) {
+        if (templateStr.getTextAtOffset(i)[0] == Msg::FmtArg0) {
+            formatted.concatenate(fmtArg0);
+        } else if (templateStr.getTextAtOffset(i)[0] == Msg::FmtArg1) {
+            formatted.concatenate(fmtArg1);
+        } else if (templateStr.getTextAtOffset(i)[0] == Msg::FmtArg2) {
+            formatted.concatenate(fmtArg2);
+        } else if (templateStr.getTextAtOffset(i)[0] > Msg::FmtArg2 &&
+                   templateStr.getTextAtOffset(i)[0] < 0xFF22) {
+            formatted.concatenate(createPlayerName(templateStr.getTextAtOffset(i)[0] + 0xED));
+        } else if (templateStr.getTextAtOffset(i)[0] == 0xFFE0) {
+            formatted.concatenate(createPlayerName(Player::Lucas));
+        } else if (templateStr.getTextAtOffset(i)[0] == 0xFFE1) {
+            i++;
+        } else {
+            formatted.appendCharacter(templateStr.getTextAtOffset(i)[0]);
+        }
+    }
+
+    return Msg(formatted);
+}
+
+ASM_FUNC("asm/non_matching/battleData/print__3MsgRC5Colorb.inc",
          void Msg::print(const Color&, bool));
 
 extern "C" ASM_FUNC("asm/non_matching/battleData/sub_0807362C.inc",

@@ -51,7 +51,7 @@ typedef struct CharStats {
     u8 inventory[16];
     u16 item_timers[16];
 } CharStats;
-extern CharStats gCharStats[];
+extern CharStats gCharStats[16];
 static_assert(sizeof(CharStats) == 0x6c);
 
 enum ItemType {
@@ -646,12 +646,13 @@ typedef struct Save {
     u8 _71b;
     u16 _71c;
     u16 _71e;
-    u8 _720[10];
+    u8 lucasPsiFlags[10];  // 0x720
     u8 _72a[10];
     u8 _734;
     u8 _735;
     u16 _736;
-    u8 _738[12];
+    u16 _738;
+    u8 kumatoraPsiFlags[10];  // 73a
     u32 sessionPlaytime;
     u16 _748;
     u8 enemy_seen_front[0x20];
@@ -755,7 +756,9 @@ typedef struct SoundPlayerEntry {
 extern const SoundPlayerEntry gSoundPlayerTable[];
 
 typedef struct SystemEntry {
-    u16 data[0x15];
+    u16 data[0x10];
+    u8 _20;
+    u8 _21[9];
     u8 _2A[8];
     u8 _32;
     u8 padding[0x64 - 0x33];
@@ -808,6 +811,22 @@ typedef struct RhythmInfo {  // TODO: This should probably be part of a class?
 } RhythmInfo;  // note that in the final game, "great" and "okay" hits do the same thing, so
                // effectively only the "okay" window matters
 
+typedef struct MapLayerInfo {
+    u8 layerWidth : 3;
+    u8 layerHeight : 3;
+    u8 unk : 2;
+    u8 unk1[3];
+} MapLayerInfo;
+
+typedef struct MapLayerAlphaInfo {
+    u32 unk0 : 2;
+    u32 alpha1 : 4;
+    u32 alpha2 : 4;
+    u32 unk1 : 22;
+    u8 pad[0xC];
+    MapLayerInfo layers[3];
+} MapLayerAlphaInfo;
+               
 typedef struct MapGraphicsInfo {
     s16 tileSetIndices[12];
     s16 paletteIndex;

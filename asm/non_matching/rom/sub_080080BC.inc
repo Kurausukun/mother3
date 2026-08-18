@@ -11,6 +11,6 @@ sub_080080BC:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080080D4: .4byte gUnknown_09AF3790
+_080080D4: .4byte gMiscGfx
 _080080D8: .4byte 0x06014000
 	.syntax divided

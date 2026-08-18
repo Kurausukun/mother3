@@ -1,6 +1,6 @@
-#include "global.h"
-#include "battle/unit.h"
 #include "battle/goodsImpl.h"
+#include "battle/unit.h"
+#include "global.h"
 
 extern void* (*sGoodsSpawners[])(u16 id, Unit* user, u16 a2);
 

@@ -2,7 +2,6 @@
 #define BATTLE_ARCHIVE_H
 
 #include "base.h"
-#include "battle/system.h"
 #include "global.h"
 #include "vector.h"
 
@@ -22,9 +21,22 @@ struct Resource {
     u8 block[0];    //C
 };
 
-struct ResPtr {
-    inline ResPtr(char* address, u32 size) : address(address), size(size) {}
-    virtual ~ResPtr() {}
+class ResPtr {
+public:
+    ResPtr();
+    virtual ~ResPtr();
+
+    bool set(ResPtr& ref);
+    s32 type() const;
+    
+    char* address;
+};
+
+// TODO: make this derived from ResPtr
+class ResPtrSized {
+public:
+    inline ResPtrSized(char* address, u32 size) : address(address), size(size) {}
+    virtual ~ResPtrSized() {}
 
     // INLINE_VT_END
 
@@ -35,17 +47,27 @@ struct ResPtr {
     u32 size;
 };
 
+struct SAREntry {
+    u32 offset;
+    u32 size;
+};
+
+struct SARHandle : public ResPtr {
+    SARHandle();
+    virtual ~SARHandle();
+};
+
 class BGHandle {
 public:
     BGHandle();
-    BGHandle(const ResPtr& ref);
+    BGHandle(const ResPtrSized& ref);
     virtual ~BGHandle();
 
-    int init(const ResPtr& ref);
-    int type(const ResPtr& ref);
-    void read1(const ResPtr& ref);
-    void read2(const ResPtr& ref);
-    void _fd4(const ResPtr& ref);
+    int init(const ResPtrSized& ref);
+    int type(const ResPtrSized& ref);
+    void read1(const ResPtrSized& ref);
+    void read2(const ResPtrSized& ref);
+    void _fd4(const ResPtrSized& ref);
     u16 count() const;
     const void* block() const;
 
@@ -60,15 +82,15 @@ private:
 class BXTHandle {
 public:
     BXTHandle();
-    BXTHandle(const ResPtr& ptr);
+    BXTHandle(const ResPtrSized& ptr);
     virtual ~BXTHandle();
 
     Msg getMessage(u32 index);
-    u32 type(const ResPtr& ptr) const;
+    u32 type(const ResPtrSized& ptr) const;
     u32 count() const;
 
-    bool init(const ResPtr& ref);
-    void read(const ResPtr& ref);
+    bool init(const ResPtrSized& ref);
+    void read(const ResPtrSized& ref);
 
 private:
     u16 mType;
@@ -80,13 +102,13 @@ private:
 class CCGHandle {
 public:
     CCGHandle();
-    CCGHandle(const ResPtr&);
+    CCGHandle(const ResPtrSized&);
     virtual ~CCGHandle();
 
-    int init(const ResPtr&);
-    int type(const ResPtr&);
-    void read1(const ResPtr&);
-    void read2(const ResPtr&);
+    int init(const ResPtrSized&);
+    int type(const ResPtrSized&);
+    void read1(const ResPtrSized&);
+    void read2(const ResPtrSized&);
     u16 count();
     const void* block();
 
@@ -100,13 +122,13 @@ private:
 class CCLHandle {
 public:
     CCLHandle();
-    CCLHandle(const ResPtr&);
+    CCLHandle(const ResPtrSized&);
     virtual ~CCLHandle();
 
-    int init(const ResPtr&);
-    int type(const ResPtr&);
-    void read1(const ResPtr&);
-    void read2(const ResPtr&);
+    int init(const ResPtrSized&);
+    int type(const ResPtrSized&);
+    void read1(const ResPtrSized&);
+    void read2(const ResPtrSized&);
     u16 count();
     const void* block();
     const void* getPalette(u32 idx);
@@ -121,6 +143,6 @@ struct BattleMessage : Msg {
     BattleMessage(BXTHandle* handle, u32 index);
 };
 
-extern "C" ResPtr LoadRes(System::SARHandle* archive, u32 idx);
+extern "C" ResPtrSized LoadRes(ResPtr* archive, u32 idx);
 
 #endif  // BATTLE_ARCHIVE_H
