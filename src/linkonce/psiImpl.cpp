@@ -83,8 +83,11 @@ void PkThunderAB::tellMissed(Unit* target) {
 }
 
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/calcDidHit__11PkThunderABP4Unit.inc", void calcDidHit__11PkThunderABP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/psiImpl/action_a0__11PkThunderABP4Unit.inc", void action_a0__11PkThunderABP4Unit());
 
+void PkThunderAB::action_a0(Unit* target) {
+    Action::playAnim();
+    Action::action_a0(target);
+}
 void PkThunderAB::playAnim() {}
 
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/dt__11PkThunderAB.inc", void dt__11PkThunderAB());
