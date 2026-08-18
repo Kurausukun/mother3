@@ -81,7 +81,11 @@ void PkThunderGO::tellMissed(Unit* target) {
 }
 
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/calcDidHit__11PkThunderGOP4Unit.inc", void calcDidHit__11PkThunderGOP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/psiImpl/action_a0__11PkThunderGOP4Unit.inc", void action_a0__11PkThunderGOP4Unit());
+
+void PkThunderGO::action_a0(Unit* target) {
+    Action::playAnim();
+    Action::action_a0(target);
+}
 
 void PkThunderGO::playAnim() {}
 
