@@ -46,7 +46,7 @@ sub_08012DB0:
 	str r5, [r4, #4]
 	ldrh r0, [r4, #8]
 	ldrh r1, [r4, #0xa]
-	bl sub_08002FD4
+	bl RemainderNullOnDBZ
 	adds r1, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10

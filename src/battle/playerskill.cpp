@@ -217,7 +217,7 @@ bool PlayerSkill::redirectable() const {
     return mInfo->move.redirectable != 0;
 }
 
-//this can still match if const
+// this can still match if const
 u16 PlayerSkill::userAttackSfx(Unit* unit) const {
     return getUser()->attackSfx();
 }

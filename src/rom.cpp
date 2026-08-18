@@ -10,6 +10,41 @@
 #include "overworld/script.h"
 #include "structs.h"
 
+typedef struct UnkCharBitfield1 {
+    u32 low12 : 12;
+    u32 high4 : 4;
+    u32 _2b1pad : 1;
+    u32 _2b2flag : 1;
+    u32 _2middle8 : 8;
+} UnkCharBitfield1;
+
+typedef struct UnkCharBitfield2 {
+    u32 R6field_00000007 : 3;
+    u32 R6field_00000078 : 4;
+    u32 R6field_0001FF80 : 10;
+    u32 R6flag_00020000 : 1;
+} UnkCharBitfield2;
+
+struct unkMsgBuf;
+typedef struct unkMsgBuf unkMsgBuf;
+
+extern "C" void* sub_08009C4C(u16 x, u16 y);
+extern "C" void sub_080089E0();
+extern "C" void sub_080089F0(unkMsgBuf* UnkMsgBufStruct);
+extern "C" void sub_08008BAC(void*);
+extern "C" void sub_08008F0C(void*);
+extern "C" void sub_0800A07C();
+extern "C" void sub_0800A090();
+extern "C" void sub_0800A0A4(void*, s32);
+extern "C" void sub_08008C28(void*, u16);
+extern "C" void sub_08008ECC(u8* arrayBase, u8* charEntry, s16* arg2);
+extern "C" s32 sub_08009C84(u16, u16);
+extern "C" s32 sub_08009CD8(u16, u16);
+extern "C" u16 sub_08009DDC(u16);
+extern struct_02016028 gSomeBlend;
+extern Game gGame;
+extern u8 gUnknown_0201B7A0;
+
 extern const char _binary_build_mother3_assets_misctext_bin_start;
 extern const char gMapPalettes;
 extern const char gMapTileData;
@@ -39,6 +74,7 @@ extern s16 gMPlayVolumeStorageTable[];
 extern const DoorDestinationInfo gDoorDestinationTable[];
 
 extern "C" s32 Div(s32, s32);
+extern "C" s32 DivMod(s32, s32);
 extern "C" s32 Divide(s32 a, s32 b);
 extern "C" void sub_0803D474();
 extern "C" void sub_08005C38();
@@ -46,7 +82,7 @@ extern "C" void sub_080019DC(void* dest, u32 size);
 extern "C" void CpuFastSet(const void* src, void* dest, u32 control);
 extern "C" void sub_08000D88();
 extern "C" void sub_08090F90(s32);
-extern "C" s32 sub_08002FD4(s32, s32);
+extern "C" s32 RemainderNullOnDBZ(s32, s32);
 extern "C" const void* Blob_GetEntry(const void*, u16);
 extern "C" u16 sub_0801A638(u16);
 extern "C" MusicPlayerInfo* getMusicPlayer_sfx(u16);
@@ -407,7 +443,7 @@ extern "C" void breakIntoDigits(u16* digitBuffer, u32 value, u16 modifier, u16 n
 
     for (u16 i = 0; i < numDigits; i++, ptr--) {
         digitBuffer[i] = Divide(value, *ptr) + modifier;
-        value = sub_08002FD4(value, *ptr);
+        value = RemainderNullOnDBZ(value, *ptr);
     }
 }
 
@@ -594,35 +630,35 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_08002AF4.inc", void sub_08002AF4()
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08002B1C.inc", void sub_08002B1C());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08002B60.inc", void sub_08002B60());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08002BA4.inc", void sub_08002BA4());
-//extern "C" ASM_FUNC("asm/non_matching/rom/sub_08002BCC.inc", void sub_08002BCC());
-extern "C" u16* sub_08002BCC(s32 arg0, u16 arg1) {
-    u16 temp_r1;
-    u16 var_r3;
-    u16* var_r2;
+// extern "C" ASM_FUNC("asm/non_matching/rom/sub_08002BCC.inc", void sub_08002BCC());
+extern "C" u16* sub_08002BCC(s32 buffer, u16 index) {
+    u16 count;
+    u16 i;
+    u16* entry;
 
-    temp_r1 = arg1;
-    var_r2 = (u16*)arg0 + 1;
-    var_r3 = 0;
-    for (var_r3 = 0; var_r3 < temp_r1; var_r3++) {
-        var_r2 += (*var_r2) + 1;
+    count = index;
+    entry = (u16*)buffer + 1;
+    i = 0;
+    for (i = 0; i < count; i++) {
+        entry += (*entry) + 1;
     }
-    return var_r2;
+    return entry;
 }
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08002BF4.inc", void sub_08002BF4());
-//extern "C" ASM_FUNC("asm/non_matching/rom/sub_08002C20.inc", void sub_08002C20());
+// extern "C" ASM_FUNC("asm/non_matching/rom/sub_08002C20.inc", void sub_08002C20());
 typedef struct UnnamedStruct001 {
     u16 a;
     u8 b[2];
 } UnnamedStruct001;
 
 extern "C" u16 sub_08002C20(UnnamedStruct001* arg0) {
-    u8* var_r1 = &arg0->b[0];
-    u16 var_r3 = 0;
-    for(u16 var_r2 = 0; var_r2 < *(u16 *)arg0; var_r2++) {
-        var_r3 += var_r1[1];
-        var_r1 += 2;
+    u8* entry = &arg0->b[0];
+    u16 sum = 0;
+    for (u16 i = 0; i < *(u16*)arg0; i++) {
+        sum += entry[1];
+        entry += 2;
     }
-    return var_r3;
+    return sum;
 }
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08002C4C.inc", void sub_08002C4C());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08002C54.inc", void sub_08002C54());
@@ -660,7 +696,12 @@ extern "C" s32 Divide(s32 a, s32 b) {
     return Div(a, b);
 }
 
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08002FD4.inc", s32 sub_08002FD4(s32, s32));  // exact copy of "Remainder"
+extern "C" s32 RemainderNullOnDBZ(s32 arg0, s32 arg1) {
+    if (arg1 == 0) {
+        return NULL;
+    }
+    return DivMod(arg0, arg1);
+}
 
 extern "C" u16 sub_08002FE8() {
     extern u32 gUnknown_02015EA8;
@@ -1454,65 +1495,43 @@ extern "C" void sub_0800882C() {
     musicPlayerFadeOut_sfx(8, 4);
 }
 
-//extern "C" ASM_FUNC("asm/non_matching/rom/sub_080088AC.inc", void sub_080088AC());
-extern "C" void* sub_08009C4C(u16 arg1, u16 arg2);
-extern struct_02016028 gSomeBlend;
-extern "C" void sub_080088AC(u16 arg0, u16 arg1, u16 arg2, u16 arg3) {
-    struct BitMaskStruct {
-        u16 field_0 : 12;   
-        u16 field_C : 4;    
+// extern "C" ASM_FUNC("asm/non_matching/rom/sub_080088AC.inc", void sub_080088AC());
+extern "C" void sub_080088AC(u16 charCode, u16 x, u16 y, u16 palette) {
+    u32 value = charCode;
+    UnkCharBitfield1* entry = (UnkCharBitfield1*)sub_08009C4C(x, y);
 
-        u16 field_10 : 1;   
-        u16 field_11 : 1;   
-        u16 field_12 : 8;   
-        u16 field_1A : 6;   
-    };
+    entry->low12 = value;
+    entry->high4 = palette;
+    entry->_2b1pad = 0;
+    entry->_2middle8 = 0;
 
-    u32 temp = arg0;
-    BitMaskStruct* ptr = (BitMaskStruct*)sub_08009C4C(arg1, arg2);
-    
-    ptr->field_0 = temp;
-    ptr->field_C = arg3;
-    ptr->field_10 = 0;
-    ptr->field_12 = 0;
-    
     gSomeBlend._11C8B++;
 }
-struct tempStruct;
-typedef struct tempStruct tempStruct;
-//extern "C" ASM_FUNC("asm/non_matching/rom/draw_message.inc", void draw_message());
-extern "C" void sub_080089E0();
-extern "C" void sub_080089F0(tempStruct *arg0);
-extern "C" void sub_08008BAC(void*);
-extern "C" void sub_08008F0C(void*);
-extern "C" void sub_0800A07C();
-extern "C" void sub_0800A090();
-extern "C" void sub_0800A0A4(void*, s32);
-extern Game gGame;
-extern struct_02016028 gSomeBlend;
-
+// extern "C" ASM_FUNC("asm/non_matching/rom/draw_message.inc", void draw_message());
 extern "C" void draw_message(void) {
     if (gSomeBlend._566c_1) {
         sub_080089E0();
         return;
     }
     switch ((s32)gGame.mode) {
-        case 3: case 4: case 5:
-            return;
-        default:
-            break;
+    case 3:
+    case MODE_TITLE_CARD:
+    case 5:
+        return;
+    default:
+        break;
     }
 
-    vu16 temp_r3 = ((gSomeBlend._11C92_2) == 2) ? true : false;
+    vu16 flag = ((gSomeBlend._11C92_2) == 2) ? true : false;
 
     if (!gSomeBlend._121b6_1) {
         sub_08008F0C(&gSomeBlend._5778);
     }
-    if (temp_r3) {
+    if (flag) {
         sub_0800A0A4(&gSomeBlend._5778, 2);
     }
     if (gSomeBlend._11C8B != 0) {
-        tempStruct* target = (tempStruct*)&gSomeBlend._5778;
+        unkMsgBuf* target = (unkMsgBuf*)&gSomeBlend._5778;
         sub_080089F0(target);
         sub_08008BAC(target);
     }
@@ -1523,40 +1542,26 @@ extern "C" void draw_message(void) {
     if (gSomeBlend._11C92_20) {
         sub_0800A090();
     }
-    
-
 }
 
-//extern "C" ASM_FUNC("asm/non_matching/rom/sub_080089E0.inc", void sub_080089E0());
-extern "C" void sub_08008F0C(void*);                                 /* extern */
-extern u8 gUnknown_0201B7A0;
-//Could be autogened code? Very small func. Just keep that in mind for later class refactoring
+// extern "C" ASM_FUNC("asm/non_matching/rom/sub_080089E0.inc", void sub_080089E0());
 extern "C" void sub_080089E0(void) {
     sub_08008F0C(&gUnknown_0201B7A0);
 }
 
-//extern "C" ASM_FUNC("asm/non_matching/rom/sub_080089F0.inc", void sub_080089F0());
+// extern "C" ASM_FUNC("asm/non_matching/rom/sub_080089F0.inc", void sub_080089F0());
 
 extern "C" void sub_08008C28(void*, u16);
-extern "C" void sub_08008ECC(u8* arg0, u8* arg1, s16* arg2);
+extern "C" void sub_08008ECC(u8* arrayBase, u8* charEntry, s16* arg2);
 extern "C" s32 sub_08009C84(u16, u16);
 extern "C" s32 sub_08009CD8(u16, u16);
 extern "C" u16 sub_08009DDC(u16);
 
-typedef struct R4Bitfield {
-    u32 low12 : 12;
-    u32 high4 : 4;
-    u32 _2b1pad : 1;
-    u32 _2b2flag : 1;
-    u32 _2middle8 :8;
-} R4Bitfield;
-
-typedef struct tempStruct {
-    R4Bitfield _0;
-    u8 pad_4[0x198 - 0x4];
+// TODO figure out what the heck is going on in this struct and refactor it accordingly
+typedef struct unkMsgBuf {
+    UnkCharBitfield1 _0[102];
     s32 _198;
-    s32 _19C;
-    u8 pad_19A[0x260 - 0x1A0];
+    u8 pad_19A[0x260 - 0x19C];
     s32* _260;
     u8 pad_264[0x3168 - 0x264];
     u8 _3168[0x60];
@@ -1565,8 +1570,8 @@ typedef struct tempStruct {
     u8 _322A_1 : 1;
     u8 pad_322A_2 : 7;
     u8 pad_322B;
-    R4Bitfield* _322C;
-    R4Bitfield _3230;
+    UnkCharBitfield1* _322C;
+    UnkCharBitfield1 _3230;
     u8 pad_3234[0x3670 - 0x3234];
     s32 _3670;
     s32 _3674;
@@ -1575,67 +1580,96 @@ typedef struct tempStruct {
     u8 pad_C514[0xC518 - 0xC514];
     u16 _C518;
 };
+/* Couple of ideas, this may be what the original struct was but I am not sure.
+    Thought it might help to leave this hear for reference
+typedef struct BufferObject {
+    UnkCharBitfield2 _0;
+    u8 pad_4 [0x40-0x4];
+    s32 _40;
+    u8 pad_44[0x60 - 0x44];
+    u8 _60;
+    u8 pad_61 [0xc0 - 0x61];
+    u16 _c0;
+    u8 _c2_1 : 1;
+    u8 _c2_2 : 7;
+    u8 pad_c3;
+    UnkCharBitfield1* _c4;
+    UnkCharBitfield1* _c8;
+} BufferObject;
 
+typedef struct unkMsgBuf {
+    UnkCharBitfield1* _0[0x66];
+    BufferObject _198[0x66];
+    //u8 pad_19C[0x260 - 0x19C];
+    //s32* _260;
+    //u8 pad_264[0x3168 - 0x264];
+    //u8 _3168[0x60];    _198[60];
+    //u8 _31C8[0x60];    _198[60]._60;
+    //u16 _3228;         _198[60]._c0;
+    //u8 _322A_1 : 1;    _198[60]._c2_1;
+    //u8 pad_322A_2 : 7; _198[60]._c2_2;
+    //u8 pad_322B;       _198[60]._c3;
+    //UnkCharBitfield1* _322C; _198[60]._c4;
+    //UnkCharBitfield1 _3230;  _198[60]._c8;
+    //u8 pad_3234[0x3670 - 0x3234];
+    //s32 _3670;         _198[66]._40;
+    //s32 _3674;         _198[66]._44;
+    //u8 pad_3678[0xC513 - 0x3678];
+    u8 pad_52e0 [0xC513 - 0x52E0];
+    u8 _C513;
+    u8 pad_C514[0xC518 - 0xC514];
+    u16 _C518;
+};
+*/
 
-
-typedef struct R6Bitfield {
-    u32 R6field_00000007 : 3;
-    u32 R6field_00000078 : 4;
-    u32 R6field_0001FF80 : 10;
-    u32 R6flag_00020000 : 1;
-    
-} R6Bitfield;
-
-extern "C" void sub_080089F0(tempStruct *arg0) {
+extern "C" void sub_080089F0(unkMsgBuf* UnkMsgBufStruct) {
     u32 local_buffer[3];
-    
 
-    arg0->_322C = 0;
-    R4Bitfield *var_r4 = (R4Bitfield*)arg0;
-    s32 *var_r8 = &arg0->_198;
-    u16 var_sl = arg0->_C513;
-    
-    if (var_sl == 0) return;
-    
-    s16 *SelectedInBuf2 = (s16 *) &local_buffer[2]; //r9
-    R6Bitfield *var_r6 = (R6Bitfield *) &arg0->_260;
+    UnkMsgBufStruct->_322C = 0;
+    UnkCharBitfield1* _0Entry = (UnkCharBitfield1*)UnkMsgBufStruct;
+    s32* i_198Entry = &UnkMsgBufStruct->_198;
+    u16 Count = UnkMsgBufStruct->_C513;
+
+    if (Count == 0)
+        return;
+
+    s16* SelectedInBuf2 = (s16*)&local_buffer[2];  // r9
+    UnkCharBitfield2* j_198Entry = (UnkCharBitfield2*)&UnkMsgBufStruct->_260;
 
     while (true) {
-        
-        if ((*(u32*)var_r4 << (32 - 12)) != 0) {
-            
-            R4Bitfield* nextR4Field = arg0->_322C; 
-            nextR4Field++;
-            s16 *SelectedInBuf1 = (s16 *) &local_buffer[1]; //r5
-            if (var_r4 != nextR4Field) sub_08008ECC((u8*)arg0, (u8*)var_r4, SelectedInBuf1);
-            s32 temp = *(u32*)var_r4 << (32 - 18);
-            R6Bitfield *spC = (R6Bitfield *) (((u8 *) var_r8) + 0xC8);
-            if (temp >= 0) {
-
-                u16 var_r0_2 = SelectedInBuf1[0] / 8;
+        if ((*(u32*)_0Entry << (32 - 12)) != 0) {
+            UnkCharBitfield1* nextCharEntry = UnkMsgBufStruct->_322C;
+            nextCharEntry++;
+            s16* SelectedInBuf1 = (s16*)&local_buffer[1];  // r5
+            if (_0Entry != nextCharEntry)
+                sub_08008ECC((u8*)UnkMsgBufStruct, (u8*)_0Entry, SelectedInBuf1);
+            s32 flagCheck = *(u32*)_0Entry << (32 - 18);
+            UnkCharBitfield2* unk_198Element = (UnkCharBitfield2*)(((u8*)i_198Entry) + 0xC8);
+            if (flagCheck >= 0) {
+                u16 truncSelectedInBuf1 = SelectedInBuf1[0] / 8;
                 u32 UpperByteMask = 0xFFFF0000;
                 local_buffer[2] &= UpperByteMask;
-                local_buffer[2] |= var_r0_2;
-               
+                local_buffer[2] |= truncSelectedInBuf1;
+
                 SelectedInBuf2[1] = SelectedInBuf1[1] / 8;
-                
-                var_r6->R6flag_00020000 = 0;
-                var_r6->R6field_00000078 = var_r4->high4;
 
-                var_r8[0] = sub_08009C84(SelectedInBuf2[0], SelectedInBuf2[1]);
-                var_r8[1] = sub_08009CD8(SelectedInBuf2[0], SelectedInBuf2[1]);
+                j_198Entry->R6flag_00020000 = 0;
+                j_198Entry->R6field_00000078 = _0Entry->high4;
 
-                var_r6->R6field_0001FF80 = SelectedInBuf2[0] + (SelectedInBuf2[1] << 5);           
-                var_r6->R6field_00000007 = ((u16*)SelectedInBuf1)[0] & 7;
-                
-                sub_08008C28((void *)var_r8, ((R4Bitfield *)var_r4)->low12);
-                var_sl--;
+                i_198Entry[0] = sub_08009C84(SelectedInBuf2[0], SelectedInBuf2[1]);
+                i_198Entry[1] = sub_08009CD8(SelectedInBuf2[0], SelectedInBuf2[1]);
+
+                j_198Entry->R6field_0001FF80 = SelectedInBuf2[0] + (SelectedInBuf2[1] << 5);
+                j_198Entry->R6field_00000007 = ((u16*)SelectedInBuf1)[0] & 7;
+
+                sub_08008C28((void*)i_198Entry, ((UnkCharBitfield1*)_0Entry)->low12);
+                Count--;
             }
-                
-            var_r4->_2b2flag = 1;
-            //FAKE MATCH
-            u32 callResult = ((u32 (*)(u16))sub_08009DDC)(((R4Bitfield *)var_r4)->low12);
-            
+
+            _0Entry->_2b2flag = 1;
+            // FAKE MATCH
+            u32 callResult = ((u32 (*)(u16))sub_08009DDC)(((UnkCharBitfield1*)_0Entry)->low12);
+
             SelectedInBuf1 = (s16*)(*(u16*)SelectedInBuf1);
             u16* writeAddr = (u16*)&local_buffer[1];
             callResult += (s32)SelectedInBuf1;
@@ -1643,34 +1677,37 @@ extern "C" void sub_080089F0(tempStruct *arg0) {
             writeAddr++;
             writeAddr--;
             *writeAddr = callResult;
-            //FAKE MATCH END
-                    
-            arg0->_322A_1 = 1;
-            arg0->_3228 = spC->R6field_0001FF80;
+            // FAKE MATCH END
 
-            CpuSmartSet(var_r8 + 2, (u8*) arg0 + 0x00003168, 0x60);
-            CpuSmartSet(var_r8 + 26, (u8*) arg0 + 0x000031C8, 0x60);
+            UnkMsgBufStruct->_322A_1 = 1;
+            UnkMsgBufStruct->_3228 = unk_198Element->R6field_0001FF80;
 
-            var_r6 += 0x33;
-            var_r8 += 0x33;
-            arg0->_322C = var_r4;
+            CpuSmartSet((u8*)i_198Entry + 0x08, (u8*)UnkMsgBufStruct + 0x00003168, 0x60);
+            CpuSmartSet((u8*)i_198Entry + 0x68, (u8*)UnkMsgBufStruct + 0x000031C8, 0x60);
 
+            j_198Entry += 0x33;
+            i_198Entry += 0x33;
+            UnkMsgBufStruct->_322C = _0Entry;
         }
-        if ((void*)++var_r4 >= (void*)&arg0->_198) break;
-        if (var_sl == 0) break;
+        if ((void*)++_0Entry >= (void*)&UnkMsgBufStruct->_198)
+            break;
+        if (Count == 0)
+            break;
     }
 }
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008BAC.inc", void sub_08008BAC());
-//extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008C28.inc", void sub_08008C28());
+// extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008C28.inc", void sub_08008C28());
 
-extern "C" void sub_08008C70(void*);                                /* extern */
-extern "C" void sub_08008D3C(void*, u16);                           /* extern */
+extern "C" void sub_08008C70(void*);      /* extern */
+extern "C" void sub_08008D3C(void*, u16); /* extern */
 
-extern "C" void sub_08008C28(void* arg0, u16 arg1){
+extern "C" void sub_08008C28(void* arg0, u16 arg1) {
     switch ((&gSomeBlend)->_11C92_2) {
     case 0:
-        if(arg1) sub_08008C70(arg0);
-        else sub_08008C70(arg0);
+        if (arg1)
+            sub_08008C70(arg0);
+        else
+            sub_08008C70(arg0);
     case 1:
         break;
     case 2:
@@ -1683,13 +1720,13 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008C70.inc", void sub_08008C70()
 extern "C" ASM_FUNC("asm/non_matching/rom/nullsub_63.inc", void nullsub_63());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008D3C.inc", void sub_08008D3C(void*, u16));
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008E08.inc", void sub_08008E08());
-//extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008ECC.inc", void sub_08008ECC());
+// extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008ECC.inc", void sub_08008ECC());
 
-extern "C" void sub_08008ECC(u8* arg0,u8* arg1, s16* arg2) {
-    s32 temp_r0 = arg1 - arg0;
-    temp_r0 = Divide(temp_r0, 4);
-    arg2[0]= (s16) (sub_08002FD4(temp_r0, 0x22) * 0xC);
-    arg2[1] = (s16) ((&gSomeBlend)->_11C89 * Divide(temp_r0, 0x22));
+extern "C" void sub_08008ECC(u8* arrayBase, u8* charEntry, s16* arg2) {
+    s32 charIndex = charEntry - arrayBase;
+    charIndex = Divide(charIndex, 4);
+    arg2[0] = (s16)(RemainderNullOnDBZ(charIndex, 0x22) * 0xC);
+    arg2[1] = (s16)((&gSomeBlend)->_11C89 * Divide(charIndex, 0x22));
 }
 
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008F0C.inc", void sub_08008F0C());
@@ -1701,102 +1738,107 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_080093F0.inc", void sub_080093F0()
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0800946C.inc", void sub_0800946C());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009568.inc", void sub_08009568());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080096EC.inc", void sub_080096EC());
-//extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009828.inc", void sub_08009828());
-extern "C" void sub_08009828(tempStruct *arg0_r8) {
+// extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009828.inc", void sub_08009828());
+extern "C" void sub_08009828(unkMsgBuf* UnkMsgBufStruct) {
     u32 local_buffer[2];
-    arg0_r8->_322C = 0;
-    R4Bitfield *var_r4_r5;
-    s32 *var_r8_r7;
-    
+    UnkMsgBufStruct->_322C = 0;
+    UnkCharBitfield1* _0Entry;
+    s32* _198Entry;
+
     switch ((s32)gGame.mode) {
-        case 4: case 5:
-            var_r4_r5 = &arg0_r8->_3230;
-            var_r8_r7 = &arg0_r8->_3670;
-            break;
-        default:
-            var_r4_r5 = &arg0_r8->_0;
-            var_r8_r7 = &arg0_r8->_198;
-            break;
+    case MODE_TITLE_CARD:
+    case 5:
+        _0Entry = &UnkMsgBufStruct->_3230;
+        _198Entry = &UnkMsgBufStruct->_3670;
+        break;
+    default:
+        _0Entry = &UnkMsgBufStruct->_0[0];
+        _198Entry = &UnkMsgBufStruct->_198;
+        break;
     }
-    R4Bitfield *holdVar_r4_r5 = var_r4_r5;
-    s32 *holdVar_r8_r7 = var_r8_r7;
-    u16 var_sl = arg0_r8->_C513;
-    if (var_sl == 0) return;
-    
-    s16 *SelectedInBuf1 = (s16*)&local_buffer[0];
-    R4Bitfield **nextR4Field;
-    s16 *SelectedInBuf2 = (s16*)&local_buffer[1];
-    
-    R6Bitfield* var_r6 = (R6Bitfield*)(var_r8_r7 + 0x32);
-    while (var_sl != 0) {
-        if (((*(u32*)var_r4_r5 << 0x14) >> 0x14) != 0) {
-            if (local_buffer);
-            if (((*(u32*)var_r4_r5 << 0x14) >> 0x14) == 0xFE0) {
-                var_r4_r5->low12 = 0;
-                var_sl -= 1;
-                arg0_r8->_C518 = var_r4_r5->_2middle8;
-                
-                var_r6 += 0x33;
-                var_r8_r7 += 0x33;
-                arg0_r8->_322C = 0;
+    UnkCharBitfield1* buf1EntryBaseAddr = _0Entry;
+    s32* _198BaseAddr = _198Entry;
+    u16 Count = UnkMsgBufStruct->_C513;
+    if (Count == 0)
+        return;
+
+    s16* SelectedInBuf1 = (s16*)&local_buffer[0];
+    UnkCharBitfield1** nextBuf1Entry;
+    s16* SelectedInBuf2 = (s16*)&local_buffer[1];
+
+    UnkCharBitfield2* unk_198Element = (UnkCharBitfield2*)(_198Entry + 0x32);
+    while (Count != 0) {
+        if (((*(u32*)_0Entry << 0x14) >> 0x14) != 0) {
+            if (local_buffer)
+                ;
+            if (((*(u32*)_0Entry << 0x14) >> 0x14) == 0xFE0) {
+                _0Entry->low12 = 0;
+                Count--;
+                UnkMsgBufStruct->_C518 = _0Entry->_2middle8;
+
+                unk_198Element += 0x33;
+                _198Entry += 0x33;
+                UnkMsgBufStruct->_322C = 0;
                 continue;
             } else {
-                nextR4Field = &arg0_r8->_322C;
-                if ((R4Bitfield*)var_r4_r5 != *nextR4Field + 1) {
-                    sub_08008ECC((u8*)holdVar_r4_r5, (u8*)var_r4_r5, (s16*)local_buffer);
-                    SelectedInBuf1[0] += arg0_r8->_C518;
+                nextBuf1Entry = &UnkMsgBufStruct->_322C;
+                if ((UnkCharBitfield1*)_0Entry != *nextBuf1Entry + 1) {
+                    sub_08008ECC((u8*)buf1EntryBaseAddr, (u8*)_0Entry, (s16*)local_buffer);
+                    SelectedInBuf1[0] += UnkMsgBufStruct->_C518;
                 }
 
-                u16 Var_r0_2 = SelectedInBuf1[0] / 8;
-                u32 Mask1 = 0xFFFF0000;
-                local_buffer[1] &= Mask1;
-                local_buffer[1] |= Var_r0_2;
+                u16 truncSelectedInBuf1 = SelectedInBuf1[0] / 8;
+                u32 UpperByteMask = 0xFFFF0000;
+                local_buffer[1] &= UpperByteMask;
+                local_buffer[1] |= truncSelectedInBuf1;
                 SelectedInBuf2[1] = SelectedInBuf1[1] / 8;
-                           //5                     //03E0 5                       //FC00 5
-                s32 PackedBits = (&gSomeBlend)->_53b0;        
+
+                s32 PackedBits = (&gSomeBlend)->_53b0;
                 PackedBits += (SelectedInBuf2[0] << 5) + (SelectedInBuf2[1] << 10);
-                var_r6->R6field_00000078 = ((R4Bitfield*)var_r4_r5)->high4;
-                
-                var_r8_r7[0] = PackedBits;
-                var_r8_r7[1] = sub_08001378(&(&gSomeBlend)->_50, 0, SelectedInBuf2[0], SelectedInBuf2[1]);
-                var_r6->R6field_0001FF80 = PackedBits >> 0x5;
-                var_r6->R6field_00000007 = SelectedInBuf1[0] & 7;
-                sub_08008C28((void*)var_r8_r7, var_r4_r5->low12);
-                SelectedInBuf1[0] += sub_08009DDC(var_r4_r5->low12);
-                
-                var_sl -= 1;
-                
-                arg0_r8->_322A_1 = 1;
-                arg0_r8->_3228 = ((R6Bitfield*)var_r6)->R6field_0001FF80;
+                unk_198Element->R6field_00000078 = ((UnkCharBitfield1*)_0Entry)->high4;
 
-                CpuSmartSet(var_r8_r7 + 2, arg0_r8->_3168, 0x60);
-                CpuSmartSet(var_r8_r7 + 0x1A, arg0_r8->_31C8, 0x60);
+                _198Entry[0] = PackedBits;
+                _198Entry[1] =
+                    sub_08001378(&(&gSomeBlend)->_50, 0, SelectedInBuf2[0], SelectedInBuf2[1]);
+                unk_198Element->R6field_0001FF80 = PackedBits >> 0x5;
+                unk_198Element->R6field_00000007 = SelectedInBuf1[0] & 7;
+                sub_08008C28((void*)_198Entry, _0Entry->low12);
+                SelectedInBuf1[0] += sub_08009DDC(_0Entry->low12);
 
+                Count--;
+
+                UnkMsgBufStruct->_322A_1 = 1;
+                UnkMsgBufStruct->_3228 = ((UnkCharBitfield2*)unk_198Element)->R6field_0001FF80;
+
+                CpuSmartSet(_198Entry + 2, UnkMsgBufStruct->_3168, 0x60);
+                CpuSmartSet(_198Entry + 0x1A, UnkMsgBufStruct->_31C8, 0x60);
             }
-            var_r6 += 0x33;
-            var_r8_r7 += 0x33;
-            arg0_r8->_322C = var_r4_r5;
+            unk_198Element += 0x33;
+            _198Entry += 0x33;
+            UnkMsgBufStruct->_322C = _0Entry;
         }
-        var_r4_r5++;
-        if ((u8*)var_r4_r5 >= (u8*)holdVar_r8_r7) break;
+        _0Entry++;
+        if ((u8*)_0Entry >= (u8*)_198BaseAddr)
+            break;
     }
 }
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009A48.inc", void sub_08009A48());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009AF4.inc", void sub_08009AF4());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009B98.inc", void sub_08009B98());
-//extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009C4C.inc", void sub_08009C4C());
+// extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009C4C.inc", void sub_08009C4C());
 
-extern "C" void* sub_08009C4C(u16 arg0, u16 arg1) {
-    return ((arg0 + (arg1 * 0x22)) * 4) + &gUnknown_0201B7A0;
+extern "C" void* sub_08009C4C(u16 x, u16 y) {
+    return ((x + (y * 0x22)) * 4) + &gUnknown_0201B7A0;
 }
 
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009C68.inc", void sub_08009C68());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009C84.inc", s32 sub_08009C84(u16, u16));
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009CD8.inc", s32 sub_08009CD8(u16, u16));
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009D6C.inc", void sub_08009D6C());
-//extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009DDC.inc", void sub_08009DDC());
+// extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009DDC.inc", void sub_08009DDC());
 extern "C" u16 sub_08009DDC(u16 arg0) {
-    if ((gSomeBlend._11C92_1)) return gSomeBlend._11C88;  
+    if ((gSomeBlend._11C92_1))
+        return gSomeBlend._11C88;
     return sub_08002254((gSomeBlend._11C92_2), arg0);
 }
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009E18.inc", void sub_08009E18());

@@ -93697,7 +93697,7 @@ _vt.9RhythmBgm::
 	.4byte getIndex__5Sound
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807487C
+	.4byte getTempo__9RhythmBgm
 	.2byte 0
 	.2byte 0
 	.4byte getVolume__5Sound
@@ -93712,13 +93712,13 @@ _vt.9RhythmBgm::
 	.4byte getPlayerClock__5Sound
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807476C
+	.4byte sub_0807476C__9RhythmBgm
 	.2byte 0
 	.2byte 0
-	.4byte sub_080747F4
+	.4byte sub_080747F4__9RhythmBgm
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074898
+	.4byte sub_08074898__9RhythmBgm
 
 _vt.13RhythmBgmRTTI::
 	.2byte 0
@@ -98421,7 +98421,7 @@ vt_09F84278::
 	.2byte 0
 	.4byte sub_08070F74
 
-vt_09F843E8::
+_vt.11RhythmCombo::
 	.2byte 0
 	.2byte 0
 	.4byte 0

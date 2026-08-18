@@ -198,6 +198,13 @@ typedef struct TileInfo {
     u16 palette_num : 4;  // 0x04 bits 12-15 - Palette number
 } TileInfo;
 
+typedef struct __attribute__((packed, aligned(2))) TileInfoPacked {  // for writing
+    u16 tile_num : 10;    // 0x04 bits 0-9 - Tile/character number
+    u16 priority : 2;     // 0x04 bits 10-11 - Priority vs BG
+    u16 palette_num : 4;  // 0x04 bits 12-15 - Palette number
+} TileInfoPacked;
+static_assert(sizeof(TileInfoPacked) == 2);
+
 /* size: 8 bytes */
 typedef struct OAMEntry {
     // Attribute 0 (0x00-0x01)
@@ -826,7 +833,7 @@ typedef struct MapLayerAlphaInfo {
     u8 pad[0xC];
     MapLayerInfo layers[3];
 } MapLayerAlphaInfo;
-               
+
 typedef struct MapGraphicsInfo {
     s16 tileSetIndices[12];
     s16 paletteIndex;

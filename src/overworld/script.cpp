@@ -27,7 +27,7 @@ extern void sub_08026610(u8);
 extern void sub_08013EB8();
 extern void sub_08033548(u8);
 extern void sub_080274AC(s32, u16);
-extern u16 sub_08002FD4(u16, s32);
+extern u16 RemainderNullOnDBZ(u16, s32);
 extern s32 sub_08002474(s32, s32, s32);
 extern void sub_080272F4(u16, u16, u16);
 extern s32 sub_08022354(s32);
@@ -59,248 +59,247 @@ extern void sub_080334D0(u8, u16);
 #define SCRIPT_ARG_ADDR24(arg) ((u32)(arg) >> 8)
 
 void exec_cmd(void* script, u16* subroutine, u16 depricated_arg) {
-    u32 tmp; //Unified temp for all switch cases R4
+    u32 tmp;  // Unified temp for all switch cases R4
     u16 exec_check[2];
     exec_check[0] = depricated_arg;
-    
+
     if (gGame.state_10) {
         script = sub_08027E60();
     } else {
         gGame._84c0 = script;
     }
     gGame._9470 = subroutine;
-    //needs to be halfword in sp 0 and bool exec_check[1] in sp 2
+    // needs to be halfword in sp 0 and bool exec_check[1] in sp 2
     s32 scriptArg;
-    u16 sp = gGame.sp; //r5
-    s32* stack = gGame.stack; //r6
+    u16 sp = gGame.sp;         // r5
+    s32* stack = gGame.stack;  // r6
     u16* registers = gGame.registers;
     u16* tmp_ptr = &exec_check[1];
     *tmp_ptr = 0;
     u16* pFlag = tmp_ptr;
-    
 
     while (!*pFlag) {
         gGame.script_pc = (u8*)sub_08021878(script, &scriptArg, subroutine);
-        
+
         switch (*gGame.script_pc) {
             using namespace ScriptCoreOperations;
-            case FRAME2STACK: {
-                stack[sp] = stack[registers[SCRIPT_ARG_BYTE(scriptArg)] + SCRIPT_ARG_IMM16(scriptArg)];
-                sp++;
-                break;
+        case FRAME2STACK: {
+            stack[sp] = stack[registers[SCRIPT_ARG_BYTE(scriptArg)] + SCRIPT_ARG_IMM16(scriptArg)];
+            sp++;
+            break;
+        }
+        case PUSH_IMM: {
+            stack[sp] = scriptArg;
+            sp++;
+            break;
+        }
+        case FRAME_ADDR: {
+            stack[sp] = registers[SCRIPT_ARG_BYTE(scriptArg)] + SCRIPT_ARG_IMM16(scriptArg);
+            sp++;
+            break;
+        }
+        case STACK2FRAME: {
+            sp--;
+            stack[registers[SCRIPT_ARG_BYTE(scriptArg)] + SCRIPT_ARG_IMM16(scriptArg)] = stack[sp];
+            break;
+        }
+        case EXTENDED: {
+            gGame.sp = sp;
+            gGame.state_40 = 0;
+            u32 argc = (u16)sub_08021920(SCRIPT_ARG_IMM16(scriptArg));
+            *pFlag = exec_extended(SCRIPT_ARG_IMM16(scriptArg), &stack[sp - 1]);
+            if (gGame.state_20) {
+                return;
             }
-            case PUSH_IMM: {
-                stack[sp] = scriptArg;
-                sp++;
-                break;
-            }
-            case FRAME_ADDR: {
-                stack[sp] = registers[SCRIPT_ARG_BYTE(scriptArg)] + SCRIPT_ARG_IMM16(scriptArg);
-                sp++;
-                break;
-            }
-            case STACK2FRAME: {
-                sp--;
-                stack[registers[SCRIPT_ARG_BYTE(scriptArg)] + SCRIPT_ARG_IMM16(scriptArg)] = stack[sp];
-                break;
-            }
-            case EXTENDED: {
-                gGame.sp = sp;
-                gGame.state_40 = 0;
-                u32 argc = (u16)sub_08021920(SCRIPT_ARG_IMM16(scriptArg));
-                *pFlag = exec_extended(SCRIPT_ARG_IMM16(scriptArg), &stack[sp - 1]);
-                if (gGame.state_20) {
-                    return;
+            if (gGame.state_40 == 0) {
+                vu16 x;
+                if (gGame.sp != sp) {
+                    sp = gGame.sp;
+                    x = true;
+                    sp--;
+                    tmp = stack[sp];
+                } else {
+                    x = false;
+                    tmp = 0;
                 }
-                if (gGame.state_40 == 0) {
-                    vu16 x;
-                    if (gGame.sp != sp) {
-                        sp = gGame.sp;
-                        x = true;
-                        sp--;
-                        tmp = stack[sp]; 
-                    } else {
-                        x = false;
-                        tmp = 0;
-                    }
-                    sp -= argc;
-                    if (x) {
-                        stack[sp] = tmp;
-                        sp++;
-                    }
+                sp -= argc;
+                if (x) {
+                    stack[sp] = tmp;
+                    sp++;
                 }
-                break;
             }
-            case CALLF: {
-                gGame.state_10 = 1;
-                script = sub_08027E60();
-                tmp = SCRIPT_ARG_BYTE(scriptArg) + 1;
-                stack[sp] = registers[tmp];
-                stack[sp + 1] = *subroutine;
-                registers[tmp] = sp;
-                *subroutine = ((u32)scriptArg) >> 8;
-                break;
-            }
-            case RETF: {
-                
-                gGame.state_10 = 0;
-                tmp = stack[(u16)(sp - 1)];
-                sp = registers[SCRIPT_ARG_BYTE(scriptArg)];
-                registers[SCRIPT_ARG_BYTE(scriptArg)] = stack[sp];
-                *subroutine = stack[sp + 1];
-                sp -= SCRIPT_ARG_ADDR24(scriptArg);
-                stack[sp] = tmp;
-                sp++;
-                script = gGame._84c0;
-                break;
-            }
-            case CALL: {
-                tmp = SCRIPT_ARG_BYTE(scriptArg) + 1;
-                stack[sp] = registers[tmp];
-                stack[sp + 1] = *subroutine;
-                registers[tmp] = sp;
-                *subroutine = ((u32)scriptArg) >> 8;
-                break;
-            }
-            case RET: {
-                tmp = stack[--sp];
-                sp = registers[SCRIPT_ARG_BYTE(scriptArg)];
-                registers[SCRIPT_ARG_BYTE(scriptArg)] = stack[sp];
-                u32 SavedNextStk = stack[sp + 1];
-                *subroutine = (u16)SavedNextStk;
-                sp -= SCRIPT_ARG_ADDR24(scriptArg);
-                stack[sp] = tmp;
-                sp++;
-                if ((u16)SavedNextStk == 0) {
-                    *pFlag = true;
-                    sub_0801BF18();
-                }
-                break;
-            }
-            case END: {
+            break;
+        }
+        case CALLF: {
+            gGame.state_10 = 1;
+            script = sub_08027E60();
+            tmp = SCRIPT_ARG_BYTE(scriptArg) + 1;
+            stack[sp] = registers[tmp];
+            stack[sp + 1] = *subroutine;
+            registers[tmp] = sp;
+            *subroutine = ((u32)scriptArg) >> 8;
+            break;
+        }
+        case RETF: {
+            gGame.state_10 = 0;
+            tmp = stack[(u16)(sp - 1)];
+            sp = registers[SCRIPT_ARG_BYTE(scriptArg)];
+            registers[SCRIPT_ARG_BYTE(scriptArg)] = stack[sp];
+            *subroutine = stack[sp + 1];
+            sp -= SCRIPT_ARG_ADDR24(scriptArg);
+            stack[sp] = tmp;
+            sp++;
+            script = gGame._84c0;
+            break;
+        }
+        case CALL: {
+            tmp = SCRIPT_ARG_BYTE(scriptArg) + 1;
+            stack[sp] = registers[tmp];
+            stack[sp + 1] = *subroutine;
+            registers[tmp] = sp;
+            *subroutine = ((u32)scriptArg) >> 8;
+            break;
+        }
+        case RET: {
+            tmp = stack[--sp];
+            sp = registers[SCRIPT_ARG_BYTE(scriptArg)];
+            registers[SCRIPT_ARG_BYTE(scriptArg)] = stack[sp];
+            u32 SavedNextStk = stack[sp + 1];
+            *subroutine = (u16)SavedNextStk;
+            sp -= SCRIPT_ARG_ADDR24(scriptArg);
+            stack[sp] = tmp;
+            sp++;
+            if ((u16)SavedNextStk == 0) {
                 *pFlag = true;
                 sub_0801BF18();
-                break;
             }
-            case FRAME_PUSH: {
-                registers[1] = scriptArg;
-                break;
-            }
-            case SP_ALLOC: {
-                sp += scriptArg;
-                break;
-            }
-            case JUMP: {
+            break;
+        }
+        case END: {
+            *pFlag = true;
+            sub_0801BF18();
+            break;
+        }
+        case FRAME_PUSH: {
+            registers[1] = scriptArg;
+            break;
+        }
+        case SP_ALLOC: {
+            sp += scriptArg;
+            break;
+        }
+        case JUMP: {
+            *subroutine = SCRIPT_ARG_ADDR24(scriptArg);
+            break;
+        }
+        case JUMP_IF: {
+            sp--;
+            if (stack[sp] == 0) {
                 *subroutine = SCRIPT_ARG_ADDR24(scriptArg);
+            }
+            break;
+        }
+        case MATH: {
+            switch (scriptArg) {
+            case NEGATIVE: {
+                stack[sp - 1] = -stack[sp - 1];
                 break;
             }
-            case JUMP_IF: {
+            case ADD: {
                 sp--;
-                if (stack[sp] == 0) {
-                    *subroutine = SCRIPT_ARG_ADDR24(scriptArg);
-                }
+                stack[sp - 1] += stack[sp];
                 break;
             }
-            case MATH: {
-                switch (scriptArg) {
-                    case NEGATIVE: {
-                        stack[sp - 1] = -stack[sp - 1];
-                        break;
-                    }
-                    case ADD: {
-                        sp--;
-                        stack[sp - 1] += stack[sp];
-                        break;
-                    }
-                    case SUBTRACT: {
-                        sp--;
-                        stack[sp - 1] -= stack[sp];
-                        break;
-                    }
-                    case MULTIPLY: {
-                        sp--;
-                        stack[sp - 1] *= stack[sp];
-                        break;
-                    }
-                    case DIVIDE: { //0x404
-                        sp--;
-                        stack[sp - 1] /= stack[sp];
-                        break;
-                    }
-                    case AND: {
-                        sp--;
-                        stack[sp - 1] &= stack[sp];
-                        break;
-                    }
-                    case OR: { //0x432
+            case SUBTRACT: {
+                sp--;
+                stack[sp - 1] -= stack[sp];
+                break;
+            }
+            case MULTIPLY: {
+                sp--;
+                stack[sp - 1] *= stack[sp];
+                break;
+            }
+            case DIVIDE: {  // 0x404
+                sp--;
+                stack[sp - 1] /= stack[sp];
+                break;
+            }
+            case AND: {
+                sp--;
+                stack[sp - 1] &= stack[sp];
+                break;
+            }
+            case OR: {  // 0x432
 
-                        sp--;
-                        stack[sp - 1] |= stack[sp];
-                        break;
-                    }
-                    case MODULO: {
-                        sp--; //0x448
-                        stack[sp - 1] %= stack[sp];
-                        break;
-                    }
-                    case INCREMENT: {
-                        stack[sp - 1]++;
-                        break;
-                    }
-                    case DECREMENT: { //0x46e
-                        stack[sp - 1]--;
-                        break;
-                    }
-                    case IS_EQUAL: {
-                        sp--;
-                        stack[sp - 1] = stack[sp - 1] == stack[sp];
-                        break;
-                    }
-                    case IS_NOT_EQUAL: {
-                        sp--;
-                        stack[sp - 1] = stack[sp - 1] != stack[sp];
-                        break;
-                    }
-                    case IS_LESS_THAN: {
-                        sp--;
-                        stack[sp - 1] = stack[sp - 1] < stack[sp];
-                        break;
-                    }
-                    case IS_GREATER_THAN: {
-                        sp--;
-                        stack[sp - 1] = stack[sp - 1] > stack[sp];
-                        break;
-                    }
-                    case IS_LESS_THAN_OR_EQUAL: {
-                        sp--;
-                        stack[sp - 1] = stack[sp - 1] <= stack[sp];
-                        break;
-                    }
-                    case IS_GREATER_THAN_OR_EQUAL: {
-                        sp--;
-                        stack[sp - 1] = stack[sp - 1] >= stack[sp];
-                        break;
-                    }
-                    case COPY: {
-                        stack[sp] = stack[sp - 1];
-                        sp++;
-                        break;
-                    }
-                    case POP_NOOP: {
-                        sp--;
-                        break;
-                    }
-                    case POP_NOOP2:{
-                        sp--;
-                        break;
-                    }
-                    case NOOP: {}
-                    }
+                sp--;
+                stack[sp - 1] |= stack[sp];
                 break;
             }
+            case MODULO: {
+                sp--;  // 0x448
+                stack[sp - 1] %= stack[sp];
+                break;
+            }
+            case INCREMENT: {
+                stack[sp - 1]++;
+                break;
+            }
+            case DECREMENT: {  // 0x46e
+                stack[sp - 1]--;
+                break;
+            }
+            case IS_EQUAL: {
+                sp--;
+                stack[sp - 1] = stack[sp - 1] == stack[sp];
+                break;
+            }
+            case IS_NOT_EQUAL: {
+                sp--;
+                stack[sp - 1] = stack[sp - 1] != stack[sp];
+                break;
+            }
+            case IS_LESS_THAN: {
+                sp--;
+                stack[sp - 1] = stack[sp - 1] < stack[sp];
+                break;
+            }
+            case IS_GREATER_THAN: {
+                sp--;
+                stack[sp - 1] = stack[sp - 1] > stack[sp];
+                break;
+            }
+            case IS_LESS_THAN_OR_EQUAL: {
+                sp--;
+                stack[sp - 1] = stack[sp - 1] <= stack[sp];
+                break;
+            }
+            case IS_GREATER_THAN_OR_EQUAL: {
+                sp--;
+                stack[sp - 1] = stack[sp - 1] >= stack[sp];
+                break;
+            }
+            case COPY: {
+                stack[sp] = stack[sp - 1];
+                sp++;
+                break;
+            }
+            case POP_NOOP: {
+                sp--;
+                break;
+            }
+            case POP_NOOP2: {
+                sp--;
+                break;
+            }
+            case NOOP: {
+            }
+            }
+            break;
+        }
         }
     }
-        //needs to be two 16 bit values in stack 0 and 2
+    // needs to be two 16 bit values in stack 0 and 2
     gGame.sp = sp;
 }
 
@@ -378,7 +377,7 @@ u16 cmd_04(s32* sp) {
         scriptstack_push(0);
     return 0;
 }
-//Might be wait key press.
+// Might be wait key press.
 u16 cmd_05(s32* sp) {
     s32 temp;
 
@@ -5342,7 +5341,7 @@ extern "C" s32 cmd_AD(s32* sp) {
 
 extern "C" s32 cmd_AE(s32* sp) {
     s32 a = scriptstack_peek(sp, 0);
-    scriptstack_push(sub_08002FD4(sub_080031E0(), a));
+    scriptstack_push(RemainderNullOnDBZ(sub_080031E0(), a));
     return 0;
 }
 
@@ -5360,7 +5359,7 @@ extern "C" s32 cmd_B1() {
     return 0;
 }
 
-extern "C" s32* sub_08021878(void* arg0, s32* arg1, u16* arg2) {
+extern "C" s32* sub_08021878(void* script, s32* scriptArg, u16* subroutine) {
     typedef struct byter4 {
         u8 unk0;
         u8 unk1;
@@ -5368,21 +5367,21 @@ extern "C" s32* sub_08021878(void* arg0, s32* arg1, u16* arg2) {
         u8 unk3;
     } byter4;
 
-    byter4* arg1view = (byter4*)arg1;
-    byter4* temp_r2 = (byter4*)arg0 + *arg2;
-    
-    arg1view->unk0 = temp_r2->unk1;
-    arg1view->unk1 = temp_r2->unk2;
-    arg1view->unk2 = temp_r2->unk3;
-    
-    if (temp_r2->unk3 & 0x80) {
-        arg1view->unk3 = 0xFF;
+    byter4* argView = (byter4*)scriptArg;
+    byter4* scriptCommand = (byter4*)script + *subroutine;
+
+    argView->unk0 = scriptCommand->unk1;
+    argView->unk1 = scriptCommand->unk2;
+    argView->unk2 = scriptCommand->unk3;
+
+    if (scriptCommand->unk3 & 0x80) {
+        argView->unk3 = 0xFF;
     } else {
-        arg1view->unk3 = 0x00;
+        argView->unk3 = 0x00;
     }
-    
-    ++*arg2;
-    return (s32*)temp_r2;
+
+    ++*subroutine;
+    return (s32*)scriptCommand;
 }
 
 extern "C" void scriptstack_push_eq(u32 r0, u32 r1) {

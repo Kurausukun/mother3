@@ -52,7 +52,7 @@ sub_0803B008:
 	mov sb, r0
 	adds r0, r7, #0
 	adds r1, r5, #0
-	bl sub_08002FD4
+	bl RemainderNullOnDBZ
 	adds r7, r0, #0
 	str r6, [sp]
 	movs r0, #0xfc
@@ -84,7 +84,7 @@ sub_0803B008:
 	mov sb, r0
 	adds r0, r7, #0
 	adds r1, r5, #0
-	bl sub_08002FD4
+	bl RemainderNullOnDBZ
 	adds r7, r0, #0
 	str r6, [sp]
 	movs r0, #0xfc
@@ -112,7 +112,7 @@ sub_0803B008:
 	adds r5, r0, #0
 	adds r0, r7, #0
 	movs r1, #0x3c
-	bl sub_08002FD4
+	bl RemainderNullOnDBZ
 	str r6, [sp]
 	movs r1, #0xfc
 	lsls r1, r1, #2

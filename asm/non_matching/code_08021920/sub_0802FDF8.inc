@@ -48,7 +48,7 @@ _0802FE14:
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	movs r1, #0x64
-	bl sub_08002FD4
+	bl RemainderNullOnDBZ
 	cmp r0, #0x4f
 	bgt _0802FE72
 	adds r0, r4, #0

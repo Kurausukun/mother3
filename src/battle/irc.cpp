@@ -117,8 +117,8 @@ void Irc::sub_08069BEC(u32 a1, Intr2 a2) {
     enableAll();
 }
 
-extern "C" void sub_08069C24__3IrcUiUiG5Intr2Us(Irc* thisx, u32 idx, u32 unused, Intr2 x, 
-                                                        u16 irq_set) {
+extern "C" void sub_08069C24__3IrcUiUiG5Intr2Us(Irc* thisx, u32 idx, u32 unused, Intr2 x,
+                                                u16 irq_set) {
     Interrupt* i = &thisx->mIntrs[idx];
     i->states[i->enabled] = unused;
     Interrupt* offset_i = (Interrupt*)((Intr2*)i + i->enabled);

@@ -5,6 +5,7 @@
 #include "battle/fader.h"
 #include "battle/goods.h"
 #include "battle/irc.h"
+#include "battle/keyFocusManager.h"
 #include "battle/monster.h"
 #include "battle/monsterSkill.h"
 #include "battle/unitTarget.h"
@@ -12,11 +13,13 @@
 
 extern Intr2 callback_sub_0807489C;
 extern ClockData callback_sub_080748C8;
+extern u32 gBgmHypnosisMappings;
 
 extern "C" s32 sub_08069558(s32 min, s32 max, s32 step, s32 duration);
 extern "C" BattleFader* sub_08072568();
 extern "C" BattleFader* sub_08072588();
 extern "C" BattleFader* sub_080725A8();
+extern "C" vt_09F80770* sub_080725C8();
 extern "C" Action* create__19MonsterSkillFactoryUsP4Unit(u16 arg0, Unit* user);
 extern "C" Action* create__18PlayerSkillFactoryUsP4Unit(u16 arg0,
                                                         Unit* user);    // TODO: confirm return type
@@ -25,43 +28,42 @@ extern "C" Action* create__12GoodsFactoryUsP4UnitUs(u16 arg0, Unit* arg1,
                                                     u16 arg2);  // TODO: confirm return type
 extern "C" Action* create__17GuestSkillFactoryUsP4Unit(u16 arg0,
                                                        Unit* user);  // TODO: confirm return type
-
 extern "C" s32 Remainder(s32, s32);
 extern "C" bool IsPlayer(Unit*);
-extern "C" void sub_08085FB0(s32, s32, s32 *);
+extern "C" void sub_08085FB0(RhythmCombo*, s32, Object38_s16r2_t*);
+extern "C" s32 sub_0807066C(s32, s32);
 bool statusWearOff(Unit* unit, Status::Type type, bool print);
 
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_080736F8.inc", void sub_080736F8());
-extern "C" s32 hitPlayer(Unit *arg0, s32 arg1, bool arg2) {
+extern "C" s32 hitPlayer(Unit* target, s32 damage, bool print) {
     static const s32 SLEEP_WEAR_OFF_CHANCE = 0x27;
-    if (arg0->hasStatus(Status::Endure) == true) {
-        arg1 = 0;
-    }    
-    s32 temp_sb = arg0->hpReal();
-    arg0->setHP(arg0->hpReal() - arg1);
-    arg0->unit_170(arg0->unit_200() + arg1);
+    if (target->hasStatus(Status::Endure) == true) {
+        damage = 0;
+    }
+    s32 prevHP = target->hpReal();
+    target->setHP(target->hpReal() - damage);
+    target->unit_170(target->unit_200() + damage);
 
-    if (arg2 == 1) {
-        s32 temp_r5 = (s32)(::operator new(0xAC));
-        Object38_s16r2_t sp34 = arg0->object_38();
-        sub_08085FB0(temp_r5, arg1, (s32*)&sp34);
+    if (print == 1) {
+        new RhythmCombo(damage, &target->object_38());
 
-        if (IsPlayer(arg0) == true) {
-            if (arg0->hpReal() <= 0) {
-                PlayAnimation(0x4D, arg0, arg0);
-                ROMStrFmt(0x7B, arg0->name(), Msg(), Msg()).print(Color(), 1);
+        if (IsPlayer(target) == true) {
+            if (target->hpReal() <= 0) {
+                PlayAnimation(0x4D, target, target);
+                ROMStrFmt(0x7B, target->name(), Msg(), Msg()).print(Color(), 1);
             }
         }
     }
 
-    if ((s32)(temp_sb - arg0->hpReal()) > 0) {
-        if (arg0->hpReal() > 0) {
-            if ((arg0->hasStatus(Status::Sleep) == true) && (randS32(0, 0x63) <= SLEEP_WEAR_OFF_CHANCE)) {
-                statusWearOff(arg0, Status::Sleep, arg2);
+    if ((s32)(prevHP - target->hpReal()) > 0) {
+        if (target->hpReal() > 0) {
+            if ((target->hasStatus(Status::Sleep) == true) &&
+                (randS32(0, 0x63) <= SLEEP_WEAR_OFF_CHANCE)) {
+                statusWearOff(target, Status::Sleep, print);
             }
         }
     }
-    return temp_sb - arg0->hpReal();
+    return prevHP - target->hpReal();
 }
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_0807392C.inc", void sub_0807392C());
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08073ABC.inc", void sub_08073ABC());
@@ -216,18 +218,11 @@ extern "C" void sub_08074518(s32 min, s32 max, s32 duration, bool r3, bool r4, b
         setsleep(1);
     }
 }
-class vt_09F80770 : public Base {
-public:
-    virtual bool sub_08070478(void* arg1, void* arg2, void* arg3, bool arg4);     // sub_08070478 (0x70)
-    virtual bool sub_08070578();           // sub_08070578 (0x74)
-    virtual void* sub_0807058C();           // sub_0807058C (0x78)
-};
-extern "C" vt_09F80770* sub_080725C8();    
-extern "C" void sub_0807459C__FUsiii(u16 arg0, void* arg1, void* arg2, bool arg3) {
-    if (arg0 != 0) {
-        sub_080725C8()->sub_08070478(arg1, new RhythmBgm(arg0), arg2, arg3);
+extern "C" void sub_0807459C__FUsiii(u16 songNum, void* arg1, void* arg2, bool arg3) {
+    if (songNum != 0) {
+        sub_080725C8()->sub_08070478(arg1, new RhythmBgm(songNum), arg2, arg3);
     } else {
-        sub_080725C8()->sub_08070478(arg1, 0, arg2, arg0);
+        sub_080725C8()->sub_08070478(arg1, 0, arg2, songNum);
     }
 }
 extern "C" void* sub_08074614() {
@@ -239,7 +234,7 @@ RTTI_IMPL(RhythmOut);
 RTTI_IMPL(RhythmBgm);
 
 RhythmBgm::RhythmBgm(u16 songNum) : Sound(songNum) {
-    rhythmData = GetRhythmDataBySongNum(this, songNum);
+    rhythmData = GetRhythmDataBySongNum(songNum);
     field_40 = 0;
     field_44 = 0;
     field_48 = 0;
@@ -253,7 +248,7 @@ RhythmBgm::RhythmBgm(u16 songNum) : Sound(songNum) {
     listen(ClockManager::get(), AppClock(), callback_sub_080748C8);
 }
 
-extern "C" const RhythmInfo* GetRhythmDataBySongNum(RhythmBgm* game, u16 songNum) {
+const RhythmInfo* RhythmBgm::GetRhythmDataBySongNum(u16 songNum) {
     int i;
 
     for (i = 0; i < 119; i++) {
@@ -267,102 +262,98 @@ extern "C" const RhythmInfo* GetRhythmDataBySongNum(RhythmBgm* game, u16 songNum
 RhythmBgm::~RhythmBgm() {
     IrcManager::get()->sub_08069C84((u32)this, callback_sub_0807489C);
 }
-extern "C" u16 sub_080747CC(RhythmBgm*, u16);
-extern "C" void sub_0807476C(RhythmBgm* arg0) {
-    if ((--arg0->field_5C << 0x18) == 0) {
-        arg0->setup(sub_080747CC(arg0, arg0->getIndex()));
-        arg0->play(0x00);
+void RhythmBgm::sub_0807476C() {
+    if ((--field_5C << 0x18) == 0) {
+        setup(sub_080747CC(getIndex()));
+        play(0x00);
     }
 }
-extern u32 gBgmHypnosisMappings;
-extern "C" u16 sub_080747CC(RhythmBgm* arg0, u16 arg1) {
-    for(u32 var_r3 = 0, *var_r2 = &gBgmHypnosisMappings; ((s32)var_r3 <= 0x38); var_r2++, var_r3++) {
-        u16* temp = (u16*)var_r2;
-        if (temp[1] == arg1) return temp[0];
-    } 
+u16 RhythmBgm::sub_080747CC(u16 songNum) {
+    u32 index = 0;
+    u32* entry = &gBgmHypnosisMappings;
+    while ((s32)index <= 0x38) {
+        if (((u16*)entry)[1] == songNum)
+            return ((u16*)entry)[0];
+        entry++;
+        index++;
+    }
     return 0;
 }
-extern "C" u16 sub_08074854(RhythmBgm* arg0, u16 arg1);
-extern "C" void sub_080747F4(RhythmBgm* arg0) {
-    if ((arg0->field_5C++ << 0x18) == 0) {
-        arg0->setup(sub_08074854(arg0, arg0->getIndex()));
-        arg0->play(0x00);
+void RhythmBgm::sub_080747F4() {
+    if ((field_5C++ << 0x18) == 0) {
+        setup(sub_08074854(getIndex()));
+        play(0x00);
     }
 }
 
-extern "C" u16 sub_08074854(RhythmBgm* arg0, u16 arg1) {
-    for(u32 var_r3 = 0, *var_r2 = &gBgmHypnosisMappings; ((s32)var_r3 <= 0x38); var_r2++, var_r3++) {
-        u16* temp = (u16*)var_r2;
-        if (temp[0] == arg1) return temp[1];
-    } 
+u16 RhythmBgm::sub_08074854(u16 songNum) {
+    u32 index = 0, *entry = &gBgmHypnosisMappings;
+    while ((s32)index <= 0x38) {
+        if (((u16*)entry)[0] == songNum)
+            return ((u16*)entry)[1];
+        entry++;
+        index++;
+    }
     return 0;
 }
 
-extern "C" s32 sub_0807066C(s32, s32);
-extern "C" s32 sub_0807487C(RhythmBgm* arg0) {
-    return sub_0807066C(0x64 * arg0->_pad54, arg0->field_50);
+u32 RhythmBgm::getTempo() {
+    return sub_0807066C(0x64 * _pad54, field_50);
 }
 
-extern "C" s32 sub_08074898(RhythmBgm* arg0) {
-    return arg0->field_58;
+s32 RhythmBgm::sub_08074898() {
+    return field_58;
 }
 
-extern "C" void sub_0807489C(RhythmBgm *rhythmGame) {
+void RhythmBgm::sub_0807489C() {
     const u32 RHYTHM_LAG_OFFSET = 1;
-    s32 tick = rhythmGame->getPlayerClock();
-    rhythmGame->field_44 = Remainder(tick + RHYTHM_LAG_OFFSET, 0x18);
-    rhythmGame->field_40++;
+    s32 tick = getPlayerClock();
+    field_44 = Remainder(tick + RHYTHM_LAG_OFFSET, 0x18);
+    field_40++;
 }
 
-
-extern "C" void sub_080748C8(RhythmBgm* rhythmGame) {;
-    if (rhythmGame->field_44 < rhythmGame->field_48) {
-            rhythmGame->field_50 = rhythmGame->field_40 - rhythmGame->field_4C;
-            rhythmGame->field_4C = rhythmGame->field_40;
-
-            u32 field44 = rhythmGame->field_44;
-            s32 field52 = rhythmGame->_pad52 - 0x18;
-            field44 -= field52;
-            rhythmGame->_pad54 = field44;
-            rhythmGame->_pad52 = rhythmGame->field_44;
+void RhythmBgm::sub_080748C8() {
+    if (field_44 < field_48) {
+        field_50 = field_40 - field_4C;
+        field_4C = field_40;
+        _pad54 = (field_44 + 0x18) - _pad52;
+        _pad52 = field_44;
     }
 
-    rhythmGame->field_48 = rhythmGame->field_44;
-    u32 previousHitState = rhythmGame->field_58;
-    s32 meterMax = (u16)rhythmGame->field_50;
-    s32 maxVal = 0;
-    s32 temp = 1; 
-    if (temp < meterMax) temp = meterMax; 
-    maxVal = temp;
+    field_48 = field_44;
+    u32 previousHitState = field_58;
+    s32 beatLength = field_50, clampedBeatLength = 0, minBeatLength = 1;
+    if (minBeatLength < beatLength)
+        minBeatLength = beatLength;
+    clampedBeatLength = minBeatLength;
 
-    u32 scaledTick = rhythmGame->field_44 * maxVal;
+    u32 scaledTick = field_44 * clampedBeatLength;
     u32 newHitState;
 
-    u8 greatWindow = ((u8*)rhythmGame->rhythmData)[4];
+    u8 greatWindow = ((u8*)rhythmData)[4];
 
     if ((scaledTick <= (greatWindow * 24)) ||
-        (scaledTick >= ((maxVal - greatWindow) * 24))) {
+        (scaledTick >= ((clampedBeatLength - greatWindow) * 24))) {
         newHitState = 0;
-    }
-    else {
-        u8 goodWindow = (((u8*)rhythmGame->rhythmData)[5]);
+    } else {
+        u8 okayWindow = (((u8*)rhythmData)[5]);
 
-        if ((scaledTick <= ((goodWindow) * 24)) ||
-            (scaledTick >= ((maxVal - (goodWindow)) * 24))) {
+        if ((scaledTick <= ((okayWindow) * 24)) ||
+            (scaledTick >= ((clampedBeatLength - (okayWindow)) * 24))) {
             newHitState = 1;
-        }
-        else {
+        } else {
             newHitState = 2;
         }
     }
 
-    rhythmGame->field_58 = newHitState;      
-    volatile u32* pHitState = &rhythmGame->field_58;
+    field_58 = newHitState;
+    volatile u32* pHitState = &field_58;
 
     if (previousHitState == 2) {
-        if (*pHitState != 2) rhythmGame->emit(RhythmIn());
+        if (*pHitState != 2)
+            emit(RhythmIn());
     } else {
-        if (*pHitState == 2) rhythmGame->emit(RhythmOut());
+        if (*pHitState == 2)
+            emit(RhythmOut());
     }
 }
-

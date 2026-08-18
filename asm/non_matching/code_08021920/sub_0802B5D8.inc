@@ -282,7 +282,7 @@ _0802B806:
 	adds r0, r0, r1
 	ldr r0, [r0]
 	movs r1, #0xf0
-	bl sub_08002FD4
+	bl RemainderNullOnDBZ
 	cmp r0, #0
 	bne _0802B82A
 	lsrs r0, r4, #0x10

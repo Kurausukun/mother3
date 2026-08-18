@@ -10,7 +10,7 @@ sub_0800272C:
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	ldr r1, _0800275C
-	bl sub_08002FD4
+	bl RemainderNullOnDBZ
 	movs r1, #0xe9
 	lsls r1, r1, #3
 	adds r4, r4, r1

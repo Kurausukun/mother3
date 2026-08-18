@@ -39,7 +39,7 @@ _08041694:
 	adds r0, r4, r1
 	ldr r0, [r0]
 	movs r1, #0x5a
-	bl sub_08002FD4
+	bl RemainderNullOnDBZ
 	cmp r0, #0x3b
 	bgt _080416E0
 _080416B6:

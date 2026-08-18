@@ -115,7 +115,7 @@ _08034482:
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	movs r1, #2
-	bl sub_08002FD4
+	bl RemainderNullOnDBZ
 	ldr r2, _080344C0
 	adds r1, r6, r2
 	strh r0, [r1]

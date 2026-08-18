@@ -2,8 +2,8 @@
 #define BATTLE_H
 
 #include "base.h"
-#include "singleton.h"
 #include "battle/keyFocusManager.h"
+#include "singleton.h"
 
 class Unit;
 class Player;
@@ -11,6 +11,7 @@ class Monster;
 class Guest;
 class BattleFader;
 class Combo;
+class vt_09F80770;
 
 class BgClass : public Base {
 public:
@@ -191,7 +192,7 @@ public:
     virtual BattleFader* battle_140();
     virtual BattleFader* battle_148();
     virtual BattleFader* battle_150();
-    virtual s32 battle_158();
+    virtual vt_09F80770* battle_158();
     virtual bool battle_160();
     virtual Struct160* battle_168();
     virtual bool isFightBoss();
@@ -233,7 +234,7 @@ public:
     BattleFader* _28;
     BattleFader* _2c;
     BattleFader* _30;
-    s32 _34;
+    vt_09F80770* _34;
     s32 _38;
     s32 mRoundNo;
     s32 mBattleResult;

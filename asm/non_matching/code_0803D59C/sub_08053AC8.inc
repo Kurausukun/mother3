@@ -29,7 +29,7 @@ sub_08053AC8:
 	str r7, [sp, #0xc]
 	ldrh r0, [r5]
 	adds r1, r4, #0
-	bl sub_08002FD4
+	bl RemainderNullOnDBZ
 	lsls r0, r0, #0x10
 	lsrs r6, r0, #0x10
 	adds r2, r6, #0

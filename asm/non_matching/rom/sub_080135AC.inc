@@ -24,7 +24,7 @@ _080135CA:
 	ldr r4, [r5, #4]
 	ldrh r0, [r5, #8]
 	ldrh r1, [r5, #0xa]
-	bl sub_08002FD4
+	bl RemainderNullOnDBZ
 	adds r1, r0, #0
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
