@@ -40,7 +40,7 @@ extern struct_020047E0 gEncounter;
 
 extern "C" void clear_ram();
 extern "C" void clear_gfx();
-extern "C" void copy_ram_magic();
+extern "C" void check_ram_magic();
 extern "C" void setup_vectors();
 extern "C" void seed_rng();
 extern "C" void init_audio();
@@ -103,7 +103,7 @@ extern u8 gUnknown_020051E0;
 extern const IrqTable gUnknown_080C17A0;
 extern IrqTable gIntrHandlers;
 extern u8 gIntrVector;
-extern const char gUnknown_08CDB8A8[];
+extern const char gIwramMagic[];
 extern u8 gUnknown_03000008;
 extern void* gUnknown_02015E38;
 
@@ -116,7 +116,7 @@ extern "C" void AgbMain() {
 
     clear_ram();
     clear_gfx();
-    copy_ram_magic();
+    check_ram_magic();
     setup_vectors();
     seed_rng();
 
@@ -596,24 +596,24 @@ extern "C" void sub_08000D64(volatile u16 a) {
     gEngineMode.flags_s8._1 = a;
 }
 
-extern "C" void sub_08000D88(void) {
+extern "C" void write_ram_magic(void) {
     char* dest = (char*)IWRAM_START;
 
     for (u16 i = 0; i < 8; ++i, ++dest) {
         u32 tmp = gEngineMode.flags_u8._1;
         if (tmp) {
-            *dest = gUnknown_08CDB8A8[i];
+            *dest = gIwramMagic[i];
         } else {
             *dest = '\0';
         }
     }
 }
 
-extern "C" void copy_ram_magic() {
+extern "C" void check_ram_magic() {
     char* dest = (char*)IWRAM_START;
 
     for (u16 i = 0; i < 8; ++i, ++dest) {
-        if (*dest != gUnknown_08CDB8A8[i]) {
+        if (*dest != gIwramMagic[i]) {
             gEngineMode.flags_u8._1 = 0;
             return;
         }

@@ -44,7 +44,7 @@ extern "C" void sub_0803D474();
 extern "C" void sub_08005C38();
 extern "C" void sub_080019DC(void* dest, u32 size);
 extern "C" void CpuFastSet(const void* src, void* dest, u32 control);
-extern "C" void sub_08000D88();
+extern "C" void write_ram_magic();
 extern "C" void sub_08090F90(s32);
 extern "C" s32 sub_08002FD4(s32, s32);
 extern "C" const void* Blob_GetEntry(const void*, u16);
@@ -184,7 +184,7 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_080016E4.inc", void sub_080016E4()
 extern "C" void DoReset(void) {
     m4aMPlayAllStop();
     m4aSoundMain();
-    sub_08000D88();
+    write_ram_magic();
     REG_SOUNDCNT_X = 0;
     REG_IME = 0;
     sub_08090F90(0xFD);
