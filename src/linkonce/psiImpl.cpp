@@ -12,8 +12,10 @@ extern "C" ASM_FUNC("asm/non_matching/psiImpl/create__14LifeupGFactoryUsP4Unit.i
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/create__16PsiMagnetFactoryUsP4Unit.inc", void create__16PsiMagnetFactoryUsP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/create__15PkGroundFactoryUsP4Unit.inc", void create__15PkGroundFactoryUsP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/create__18PkThunderGOFactoryUsP4Unit.inc", void create__18PkThunderGOFactoryUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/psiImpl/create__18PkThunderABFactoryUsP4Unit.inc", void create__18PkThunderABFactoryUsP4Unit());
 
+void* PkThunderABFactory::create(u16 id, Unit* user) {
+    return new PkThunderAB(id, user);
+}
 void* DefaultPsiFactory::create(u16 id, Unit* user) {
     return new DefaultPsi(id, user);
 }
