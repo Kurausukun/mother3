@@ -67,7 +67,7 @@ extern "C" void sub_080052E4(s32);
 extern "C" void sub_0802610C(s32);
 extern "C" const MapGraphicsInfo* getMapGraphicsInfo(u16);
 extern "C" DoorDestinationInfo* getDoorDestinationInfo(u16);
-extern "C" void sub_0805CD30(u16, u16, u8);
+extern "C" void setEnemySpriteSeen(u16, u16, u8);
 extern "C" u32 sub_0805CDD8(u16, u8);
 extern "C" u16 get_flag(u16);
 extern "C" void incrementSessionPlaytime();
@@ -575,9 +575,9 @@ extern "C" u32 get_giftbox_flag(u16 idx) {
 
 extern "C" void sub_08002A58(u16 r0, u16 r1, vu16 r2) {
     if (r2) {
-        sub_0805CD30(r0, 1, r1);
+        setEnemySpriteSeen(r0, 1, r1);
     } else {
-        sub_0805CD30(r0, 0, r1);
+        setEnemySpriteSeen(r0, 0, r1);
     }
 }
 

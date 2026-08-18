@@ -88,7 +88,7 @@ extern "C" Action* getMonsterSkill(u16 arg0, Unit* user) {
 
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_080741BC.inc", void sub_080741BC());
 
-extern "C" u8 IsMonsterSkillAndType(Action* action, u16 id) {
+extern "C" bool IsMonsterSkillAndType(Action* action, u16 id) {
     return action && action->getRTTI() == MonsterSkillRTTI::get() && action->id() == id;
 }
 

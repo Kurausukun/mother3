@@ -30,7 +30,7 @@ sub_080AADD4:
 	lsrs r1, r1, #0x1f
 	adds r0, r4, #0
 	movs r2, #1
-	bl sub_0805CD30
+	bl setEnemySpriteSeen
 	cmp r5, #0
 	bne _080AAE36
 	ldr r1, [r6, #0x1c]

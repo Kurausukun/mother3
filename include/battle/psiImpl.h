@@ -16,8 +16,8 @@ public:
     DefaultPsi(u16 id, Unit* user);
     virtual ~DefaultPsi();
 
-    virtual s32 hitChance() const override;
     virtual void tellResisted(Unit* target) override;
+    virtual s32 hitChance() const override;
 };
 
 FACTORY(DefaultPsi, u16, Unit*);

@@ -21,7 +21,7 @@ bool statusWearOff(Unit*, Status::Type, bool);
 extern "C" void sub_0807335C(u16);
 extern "C" void sub_080736F8(Unit*, u32);
 extern "C" u8 sub_0807404C(Action*, u32);
-extern "C" u8 IsMonsterSkillAndType(Action*, u32);
+extern "C" bool IsMonsterSkillAndType(Action*, u32);
 extern "C" void InitHeal(Unit*, u32, u32);
 extern "C" void sub_08073D98(Unit*, u32, u32);
 extern "C" bool IsPlayer(Unit*);
