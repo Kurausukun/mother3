@@ -75,7 +75,11 @@ void PkThunderGO::onPlayAnim(Unit* target, bool crit) {
     Action::onPlayAnim(target, crit);
 }
 
-extern "C" ASM_FUNC("asm/non_matching/psiImpl/tellMissed__11PkThunderGOP4Unit.inc", void tellMissed__11PkThunderGOP4Unit());
+void PkThunderGO::tellMissed(Unit* target) {
+    // It didn't hit anyone![END]
+    ROMStr(0x136).print(Color::Black(), true);
+}
+
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/calcDidHit__11PkThunderGOP4Unit.inc", void calcDidHit__11PkThunderGOP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/action_a0__11PkThunderGOP4Unit.inc", void action_a0__11PkThunderGOP4Unit());
 
