@@ -43,7 +43,7 @@ _08025086:
 	movs r1, #0x30
 	movs r2, #1
 	rsbs r2, r2, #0
-	bl memFill
+	bl CpuMemFill
 	adds r0, r4, #0
 	adds r0, #0x30
 	ldrb r1, [r0]

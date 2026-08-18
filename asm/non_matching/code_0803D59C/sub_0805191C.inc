@@ -31,10 +31,10 @@ _08051952:
 	movs r1, #0x80
 	lsls r1, r1, #5
 	adds r0, r4, #0
-	bl memclear
+	bl CpuMemClear
 	adds r0, r5, #0
 	movs r1, #0xf4
-	bl memclear
+	bl CpuMemClear
 	adds r0, r6, #0
 	adds r1, r4, #0
 	movs r2, #1

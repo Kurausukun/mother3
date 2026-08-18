@@ -25,7 +25,7 @@ _08021C04:
 	rsbs r2, r2, #0
 	mov r0, sp
 	movs r1, #0x44
-	bl memFill
+	bl CpuMemFill
 	adds r4, r7, #0
 	mov r5, sp
 	movs r0, #0x42
@@ -117,7 +117,7 @@ _08021CC0:
 	rsbs r2, r2, #0
 	mov r0, sp
 	movs r1, #0x44
-	bl memFill
+	bl CpuMemFill
 	adds r4, r7, #0
 	mov r5, sp
 	movs r3, #0x42

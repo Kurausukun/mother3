@@ -64,7 +64,7 @@ _0801502A:
 	movs r1, #0xa0
 	lsls r1, r1, #1
 	mov r0, sl
-	bl memclear
+	bl CpuMemClear
 	ldr r1, _08015088
 	add r1, sl
 	ldrh r0, [r1]

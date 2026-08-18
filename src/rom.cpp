@@ -42,7 +42,7 @@ extern "C" s32 Div(s32, s32);
 extern "C" s32 Divide(s32 a, s32 b);
 extern "C" void sub_0803D474();
 extern "C" void sub_08005C38();
-extern "C" void sub_080019DC(void* dest, u32 size);
+extern "C" void Dma3Clear(void* dest, u32 size);
 extern "C" void CpuFastSet(const void* src, void* dest, u32 control);
 extern "C" void write_ram_magic();
 extern "C" void sub_08090F90(s32);
@@ -107,11 +107,11 @@ extern "C" void sub_080013D0(struct_02016028* arg0) {
 extern "C" void sub_08001454(Unknown_02016078* arg0) {
     arg0->_2C40 = arg0->_2C42 = arg0->_2C44 = arg0->_2C46 = 0;
 
-    sub_080019DC((void*)arg0->_0, 0x800);
-    sub_080019DC((void*)arg0->_800, 0x800);
-    sub_080019DC((void*)arg0->_1000, 0x800);
-    sub_080019DC((void*)arg0->_1800, 0x800);
-    sub_080019DC((void*)arg0->_2700, 0x400);
+    Dma3Clear((void*)arg0->_0, 0x800);
+    Dma3Clear((void*)arg0->_800, 0x800);
+    Dma3Clear((void*)arg0->_1000, 0x800);
+    Dma3Clear((void*)arg0->_1800, 0x800);
+    Dma3Clear((void*)arg0->_2700, 0x400);
 
     arg0->oam_counter = 0;
     arg0->_2C4A = 0;
@@ -215,7 +215,7 @@ extern "C" void sub_08001960(void) {
 }
 
 // TODO: probably Unknown_02016078
-extern "C" void sub_0800196C(u8* src) {
+extern "C" void Dma3CopyOam(u8* src) {
     vu32* dmaRegs = (vu32*)REG_ADDR_DMA3;
     dmaRegs[0] = (uintptr_t)&src[0x2000];
     dmaRegs[1] = (uintptr_t)OAM;
@@ -231,7 +231,7 @@ extern "C" void sub_0800196C(u8* src) {
     }
 }
 
-extern "C" void sub_080019A4(Unknown_02016078* arg0) {
+extern "C" void Dma3CopyPalettes(Unknown_02016078* arg0) {
     vu32* dmaRegs = (vu32*)REG_ADDR_DMA3;
     dmaRegs[0] = (uintptr_t)&arg0->_2700;
     dmaRegs[1] = (uintptr_t)PLTT;
@@ -247,7 +247,7 @@ extern "C" void sub_080019A4(Unknown_02016078* arg0) {
     }
 }
 
-extern "C" void sub_080019DC(void* dest, u32 size) {
+extern "C" void Dma3Clear(void* dest, u32 size) {
     s32 value = 0;
     
     vu32* dmaRegs = (vu32*)REG_ADDR_DMA3;
@@ -263,7 +263,7 @@ extern "C" void sub_080019DC(void* dest, u32 size) {
     }
 }
 
-extern "C" void sub_08001A14(void* src, void* dest, u32 size) {
+extern "C" void Dma3Copy(void* src, void* dest, u32 size) {
     vu32* dmaRegs = (vu32*)REG_ADDR_DMA3;
     dmaRegs[0] = (uintptr_t)src;
     dmaRegs[1] = (uintptr_t)dest;
@@ -278,7 +278,7 @@ extern "C" void sub_08001A14(void* src, void* dest, u32 size) {
     }
 }
 
-extern "C" void sub_08001A38(void* dest, u32 size, int value) {
+extern "C" void Dma3Fill(void* dest, u32 size, int value) {
     s16 temp = value;
 
     vu32* dmaRegs = (vu32*)REG_ADDR_DMA3;
@@ -295,7 +295,7 @@ extern "C" void sub_08001A38(void* dest, u32 size, int value) {
     }
 }
 
-extern "C" void sub_08001A70(void* dest, u32 size) {
+extern "C" void Dma0Clear(void* dest, u32 size) {
     s32 src = 0;
     vu32* dmaRegs = (vu32*)REG_ADDR_DMA0;
     dmaRegs[0] = (uintptr_t)&src;
@@ -307,7 +307,7 @@ extern "C" void sub_08001A70(void* dest, u32 size) {
     dmaRegs[2];
 }
 
-extern "C" void sub_08001A94(void* src, void* dest, u32 size) {
+extern "C" void Dma0Copy(void* src, void* dest, u32 size) {
     vu32* dmaRegs = (vu32*)REG_ADDR_DMA0;
     dmaRegs[0] = (uintptr_t)src;
     dmaRegs[1] = (uintptr_t)dest;
@@ -318,7 +318,7 @@ extern "C" void sub_08001A94(void* src, void* dest, u32 size) {
     dmaRegs[2];
 }
 
-extern "C" void sub_08001AAC(void* dest, u32 size, s32 value) {
+extern "C" void Dma0Fill(void* dest, u32 size, s32 value) {
     vu32* dmaRegs = (vu32*)REG_ADDR_DMA0;
     dmaRegs[0] = (uintptr_t)&value;
     dmaRegs[1] = (uintptr_t)dest;
@@ -329,7 +329,7 @@ extern "C" void sub_08001AAC(void* dest, u32 size, s32 value) {
     dmaRegs[2];
 }
 
-extern "C" void memclear(void* buff, u32 size) {
+extern "C" void CpuMemClear(void* buff, u32 size) {
     if (size & 0x1F || (unsigned long)buff & 3) {
         u16 tmp;
         CpuSet(&(tmp = 0), buff, ((size << 0xA) >> 0xB) | CPU_SET_SRC_FIXED);
@@ -347,8 +347,7 @@ extern "C" void CpuSmartSet(const void* src, void* dest, u32 control) {
     }
 }
 
-//extern "C" ASM_FUNC("asm/non_matching/rom/memFill.inc", void memFill());
-extern "C" void memFill(void* dest, u32 length, s32 value) {
+extern "C" void CpuMemFill(void* dest, u32 length, s32 value) {
     if (length & 0x1F || (u32)dest & 3) {
         u16 tmp = value;
         CpuSet(&tmp, dest, ((length << 0xA) >> 0xB) | CPU_SET_SRC_FIXED);
@@ -1130,7 +1129,7 @@ extern "C" void sub_08005364() {
     REG_IE &= ~3;
     REG_DISPSTAT &= ~0x18;
     memcpy(&gIntrHandlers, &gUnknown_080C1A58, sizeof(gUnknown_080C1A58));
-    sub_08001A14(&sub_0803D474, &gUnknown_03004B14, 0x100);
+    Dma3Copy(&sub_0803D474, &gUnknown_03004B14, 0x100);
     sub_08005C38();
     gUnknown_03004B0A = 0;
     REG_IME = 1;

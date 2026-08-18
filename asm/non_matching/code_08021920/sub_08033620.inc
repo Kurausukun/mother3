@@ -170,7 +170,7 @@ _08033746:
 	strh r0, [r1]
 	ldr r0, [r4, #0x2c]
 	movs r1, #8
-	bl memclear
+	bl CpuMemClear
 	b _080337A2
 _08033778:
 	adds r2, r4, #0
@@ -190,7 +190,7 @@ _08033778:
 	strh r0, [r1]
 	ldr r0, [r4, #0x2c]
 	movs r1, #8
-	bl memclear
+	bl CpuMemClear
 _080337A2:
 	pop {r4, r5}
 	pop {r0}

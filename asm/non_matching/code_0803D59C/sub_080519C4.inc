@@ -9,7 +9,7 @@ sub_080519C4:
 	movs r1, #0x80
 	lsls r1, r1, #5
 	mov r0, sp
-	bl memclear
+	bl CpuMemClear
 	adds r0, r4, #0
 	mov r1, sp
 	movs r2, #1

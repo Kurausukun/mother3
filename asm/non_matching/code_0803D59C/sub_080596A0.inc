@@ -142,7 +142,7 @@ _08059798:
 	adds r0, r4, r1
 	movs r1, #0x80
 	lsls r1, r1, #5
-	bl memclear
+	bl CpuMemClear
 	ldr r0, _080597E0
 	adds r4, r4, r0
 	ldrh r0, [r4]

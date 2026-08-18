@@ -21,7 +21,7 @@ sub_08002D18:
 	lsls r2, r6, #0x10
 	orrs r2, r6
 	adds r0, r5, #0
-	bl memFill
+	bl CpuMemFill
 	b _08002D74
 _08002D48:
 	movs r4, #0

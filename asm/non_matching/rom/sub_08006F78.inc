@@ -31,7 +31,7 @@ sub_08006F78:
 	adds r0, r3, r1
 	ldr r0, [r0]
 	movs r1, #0x80
-	bl memclear
+	bl CpuMemClear
 	b _08007240
 	.align 2, 0
 _08006FBC: .4byte 0x04000200
@@ -94,7 +94,7 @@ _08007006:
 	bl CpuSmartSet
 	adds r0, r4, #0
 	movs r1, #0x80
-	bl memclear
+	bl CpuMemClear
 _08007042:
 	ldr r2, _0800706C
 	adds r1, r6, r2
@@ -135,7 +135,7 @@ _08007070:
 	adds r0, r3, r1
 	ldr r0, [r0]
 	movs r1, #0x80
-	bl sub_080019DC
+	bl Dma3Clear
 	b _08007240
 	.align 2, 0
 _080070A0: .4byte gSomeBlend
@@ -150,7 +150,7 @@ _080070B0:
 	ldr r0, _080070D4
 	movs r1, #0x80
 	lsls r1, r1, #4
-	bl sub_080019DC
+	bl Dma3Clear
 _080070C2:
 	ldr r0, _080070D8
 	ldrb r0, [r0]
@@ -180,7 +180,7 @@ _080070F0:
 	adds r0, #8
 	ldr r1, [r4]
 	movs r2, #0x60
-	bl sub_08001A14
+	bl Dma3Copy
 	adds r0, r4, #0
 	adds r0, #0x68
 	ldr r1, [r4]
@@ -188,7 +188,7 @@ _080070F0:
 	lsls r2, r2, #3
 	adds r1, r1, r2
 	movs r2, #0x60
-	bl sub_08001A14
+	bl Dma3Copy
 	subs r0, r5, #1
 	lsls r0, r0, #0x10
 	lsrs r5, r0, #0x10
@@ -232,7 +232,7 @@ _08007142:
 	bl sub_08007318
 	adds r0, r4, #0
 	movs r1, #0x80
-	bl sub_080019DC
+	bl Dma3Clear
 	b _080071E0
 	.align 2, 0
 _08007168: .4byte 0x0000C516
@@ -260,7 +260,7 @@ _08007174:
 	movs r1, #0x80
 	lsls r1, r1, #4
 	adds r0, r4, #0
-	bl sub_080019DC
+	bl Dma3Clear
 	b _080071E0
 	.align 2, 0
 _080071A8: .4byte 0x0000C1E8
@@ -285,7 +285,7 @@ _080071B8:
 	movs r1, #0x80
 	lsls r1, r1, #4
 	adds r0, r4, #0
-	bl sub_080019DC
+	bl Dma3Clear
 _080071E0:
 	ldr r0, _08007224
 	adds r3, r6, r0

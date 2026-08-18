@@ -5,7 +5,7 @@ sub_0800A090:
 	movs r1, #1
 	bl sub_08009C4C
 	movs r1, #0x88
-	bl memclear
+	bl CpuMemClear
 	pop {r0}
 	bx r0
 	.syntax divided

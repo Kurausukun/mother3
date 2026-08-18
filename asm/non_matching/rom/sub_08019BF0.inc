@@ -109,7 +109,7 @@ _08019CAC:
 	ldr r1, _08019CC8
 	movs r2, #0x80
 	lsls r2, r2, #1
-	bl sub_08001A14
+	bl Dma3Copy
 	b _08019CF6
 	.align 2, 0
 _08019CC0: .4byte 0x000067AC

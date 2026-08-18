@@ -13,7 +13,7 @@ sub_0803FAC8:
 	lsls r1, r1, #0x13
 	movs r2, #0x80
 	lsls r2, r2, #3
-	bl sub_08001A14
+	bl Dma3Copy
 	adds r0, r4, #0
 	movs r1, #0x26
 	bl Blob_GetEntry

@@ -10,10 +10,10 @@ sub_080066B4:
 	mov sb, r0
 	adds r0, r3, #0
 	movs r1, #0x20
-	bl sub_080019DC
+	bl Dma3Clear
 	mov r0, sb
 	movs r1, #0x80
-	bl sub_080019DC
+	bl Dma3Clear
 	ldr r2, _08006728
 	ldr r1, _0800672C
 	adds r0, r2, r1
@@ -71,7 +71,7 @@ _08006740:
 	adds r1, r3, #0
 	adds r2, r6, #0
 	str r3, [sp]
-	bl sub_08001A14
+	bl Dma3Copy
 	adds r5, r5, r6
 	ldr r3, [sp]
 	movs r0, #0x80

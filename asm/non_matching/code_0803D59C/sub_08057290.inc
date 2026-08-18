@@ -31,7 +31,7 @@ sub_08057290:
 	bne _080572DC
 	adds r0, r5, #0
 	movs r1, #0x60
-	bl memclear
+	bl CpuMemClear
 _080572DC:
 	pop {r4, r5}
 	pop {r0}

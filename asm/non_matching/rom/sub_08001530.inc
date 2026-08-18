@@ -31,27 +31,27 @@ sub_08001530:
 	lsls r5, r5, #4
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl memclear
+	bl CpuMemClear
 	adds r0, r4, r5
 	adds r1, r5, #0
-	bl memclear
+	bl CpuMemClear
 	movs r1, #0x80
 	lsls r1, r1, #5
 	adds r0, r4, r1
 	adds r1, r5, #0
-	bl memclear
+	bl CpuMemClear
 	movs r2, #0xc0
 	lsls r2, r2, #5
 	adds r0, r4, r2
 	adds r1, r5, #0
-	bl memclear
+	bl CpuMemClear
 	movs r0, #0x9c
 	lsls r0, r0, #6
 	adds r5, r4, r0
 	movs r1, #0x80
 	lsls r1, r1, #3
 	adds r0, r5, #0
-	bl memclear
+	bl CpuMemClear
 	ldr r1, _080015F8
 	adds r0, r4, r1
 	ldrh r1, [r0]

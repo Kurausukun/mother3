@@ -29,7 +29,7 @@ sub_080031F0:
 	movs r1, #0x20
 	str r2, [sp]
 	str r3, [sp, #4]
-	bl memclear
+	bl CpuMemClear
 	ldrb r1, [r4, #0x1d]
 	movs r0, #2
 	rsbs r0, r0, #0

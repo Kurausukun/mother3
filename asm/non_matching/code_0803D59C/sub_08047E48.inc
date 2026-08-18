@@ -21,7 +21,7 @@ sub_08047E48:
 	adds r0, r4, #0
 	movs r1, #0x58
 	mov r2, r8
-	bl memFill
+	bl CpuMemFill
 	adds r0, r4, #0
 	add r1, sp, #8
 	bl sub_08048108

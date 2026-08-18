@@ -36,7 +36,7 @@ sub_080150F8:
 	adds r0, r0, r1
 	movs r1, #0xa0
 	lsls r1, r1, #1
-	bl memclear
+	bl CpuMemClear
 	bl sub_08016D08
 	bl sub_08016D54
 	movs r0, #0

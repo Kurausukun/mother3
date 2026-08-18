@@ -18,7 +18,7 @@ cmd_disp_text_special:
 	ldr r0, _080207E8
 	movs r1, #0x80
 	lsls r1, r1, #8
-	bl memclear
+	bl CpuMemClear
 	ldr r4, _080207EC
 	adds r0, r4, #0
 	movs r1, #0

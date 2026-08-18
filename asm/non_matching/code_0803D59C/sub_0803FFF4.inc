@@ -6,7 +6,7 @@ sub_0803FFF4:
 	ldr r1, _0804001C
 	ldrh r2, [r4, #0xe]
 	lsls r2, r2, #5
-	bl sub_08001A14
+	bl Dma3Copy
 	ldr r0, _08040020
 	ldr r1, [r4, #0x18]
 	movs r2, #0x12

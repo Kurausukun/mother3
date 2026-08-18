@@ -143,7 +143,7 @@ _08029C20:
 	movs r1, #0x82
 	lsls r1, r1, #3
 	adds r0, r4, #0
-	bl memclear
+	bl CpuMemClear
 	ldr r1, _08029C9C
 	adds r0, r4, r1
 	ldrb r1, [r0]

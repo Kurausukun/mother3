@@ -331,7 +331,7 @@ _08007654:
 	bl CpuSmartSet
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl memclear
+	bl CpuMemClear
 _08007682:
 	ldr r0, _080076AC
 	ldrb r0, [r0]
@@ -376,7 +376,7 @@ _080076E0:
 	rsbs r2, r2, #0
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl memFill
+	bl CpuMemFill
 	b _08007720
 	.align 2, 0
 _08007700: .4byte gUnknown_03005314
@@ -391,7 +391,7 @@ _08007708:
 	bl CpuSmartSet
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl memclear
+	bl CpuMemClear
 _08007720:
 	ldr r0, _08007754
 	ldr r1, _08007758

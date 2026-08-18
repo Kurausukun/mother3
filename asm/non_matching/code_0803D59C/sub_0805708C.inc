@@ -29,12 +29,12 @@ sub_0805708C:
 	adds r0, r6, #0
 	adds r1, r4, #0
 	adds r2, r5, #0
-	bl sub_08001A14
+	bl Dma3Copy
 	movs r2, #1
 	rsbs r2, r2, #0
 	adds r0, r6, #0
 	adds r1, r5, #0
-	bl sub_08001A38
+	bl Dma3Fill
 	pop {r4, r5, r6}
 	pop {r0}
 	bx r0

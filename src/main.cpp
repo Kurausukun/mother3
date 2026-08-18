@@ -82,13 +82,13 @@ extern "C" u32 get_flag(u32);
 extern "C" void init_save();
 extern "C" void sub_08000BE8();
 extern "C" u32 get_misctext_len(u32);
-extern "C" void memFill(void*, u32, s32);
+extern "C" void CpuMemFill(void*, u32, s32);
 extern "C" u32 get_misctext_msg(u32, u32);
 extern "C" void copyText(void*, u32, s16);
 extern "C" void sub_0800272C();
 extern "C" void sub_0805B528();
-extern "C" void sub_080019DC(void*, u32);
-extern "C" void memclear(void*, u32);
+extern "C" void Dma3Clear(void*, u32);
+extern "C" void CpuMemClear(void*, u32);
 
 void sub_08001158(u16, u16);
 
@@ -491,14 +491,14 @@ void init_save() {
 
     u16 tmp = get_misctext_len(5);
 
-    memFill(gSave.hinawa_name, sizeof gSave.hinawa_name, -1);
+    CpuMemFill(gSave.hinawa_name, sizeof gSave.hinawa_name, -1);
     copyText(gSave.hinawa_name, get_misctext_msg(5, 8), tmp);
-    memFill(gSave.claus_name, sizeof gSave.claus_name, -1);
+    CpuMemFill(gSave.claus_name, sizeof gSave.claus_name, -1);
     copyText(gSave.claus_name, get_misctext_msg(5, 5), tmp);
-    memFill(gSave.fav_food, sizeof gSave.fav_food, -1);
-    memFill(gSave.fav_thing, sizeof gSave.fav_thing, -1);
-    memFill(gSave.playername_short, sizeof gSave.playername_short, -1);
-    memFill(gSave.playername, sizeof gSave.playername, -1);
+    CpuMemFill(gSave.fav_food, sizeof gSave.fav_food, -1);
+    CpuMemFill(gSave.fav_thing, sizeof gSave.fav_thing, -1);
+    CpuMemFill(gSave.playername_short, sizeof gSave.playername_short, -1);
+    CpuMemFill(gSave.playername, sizeof gSave.playername, -1);
 
     gSave._6f8 = 0;
     gSave._6fa = 0;
@@ -551,7 +551,7 @@ void init_save() {
 void sub_08000BE8() {
     u32 tmp = get_misctext_len(5);
     for (u16 i = 0; i < 0x10; ++i) {
-        memFill(&gCharStats[i].name, sizeof gCharStats[i].name, -1);
+        CpuMemFill(&gCharStats[i].name, sizeof gCharStats[i].name, -1);
         copyText(&gCharStats[i].name, get_misctext_msg(6, i), tmp);
     }
     gCharStats[0].charNo = 0;
@@ -623,14 +623,14 @@ extern "C" void check_ram_magic() {
 }
 
 void clear_ram(void) {
-    sub_080019DC((void*)EWRAM_START, EWRAM_SIZE);
-    sub_080019DC((void*)(IWRAM_START + 8), IWRAM_SIZE - 0x68);
+    Dma3Clear((void*)EWRAM_START, EWRAM_SIZE);
+    Dma3Clear((void*)(IWRAM_START + 8), IWRAM_SIZE - 0x68);
 }
 
 void clear_gfx() {
-    memclear((void*)VRAM, VRAM_SIZE);
-    memclear((void*)PLTT, PLTT_SIZE);
-    memclear((void*)OAM, OAM_SIZE);
+    CpuMemClear((void*)VRAM, VRAM_SIZE);
+    CpuMemClear((void*)PLTT, PLTT_SIZE);
+    CpuMemClear((void*)OAM, OAM_SIZE);
 }
 
 extern "C" void sub_08000E5C(Unknown_02016078* arg0) {

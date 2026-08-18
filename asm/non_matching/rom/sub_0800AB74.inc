@@ -104,7 +104,7 @@ _0800AC30:
 	adds r0, r5, r0
 	movs r1, #0x20
 	ldr r2, _0800AC60
-	bl memFill
+	bl CpuMemFill
 	adds r0, r4, #1
 	lsls r0, r0, #0x10
 	lsrs r4, r0, #0x10

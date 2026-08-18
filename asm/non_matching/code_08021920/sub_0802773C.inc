@@ -33,7 +33,7 @@ _08027784:
 	movs r1, #0x80
 	lsls r1, r1, #3
 	adds r0, r4, #0
-	bl memclear
+	bl CpuMemClear
 	ldr r1, _080277BC
 	ldr r2, _080277C0
 	adds r0, r1, r2
@@ -63,7 +63,7 @@ _080277C8:
 	lsls r1, r1, #3
 	movs r2, #1
 	rsbs r2, r2, #0
-	bl memFill
+	bl CpuMemFill
 	ldr r1, _080277F8
 	ldr r2, _080277FC
 	adds r0, r1, r2
@@ -89,7 +89,7 @@ _08027808:
 	ldr r0, _08027818
 	movs r1, #0x80
 	lsls r1, r1, #3
-	bl memclear
+	bl CpuMemClear
 _08027812:
 	pop {r4}
 	pop {r0}

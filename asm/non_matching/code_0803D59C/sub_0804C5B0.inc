@@ -33,7 +33,7 @@ sub_0804C5B0:
 	rsbs r2, r2, #0
 	adds r0, r5, #0
 	movs r1, #0x20
-	bl memFill
+	bl CpuMemFill
 	cmp r4, #0xd
 	beq _0804C62C
 	cmp r4, #0xe

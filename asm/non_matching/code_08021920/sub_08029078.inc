@@ -14,7 +14,7 @@ sub_08029078:
 	movs r1, #0x82
 	lsls r1, r1, #3
 	mov r0, sp
-	bl memclear
+	bl CpuMemClear
 	mov r5, sp
 	movs r2, #0
 	ldr r3, _080290FC

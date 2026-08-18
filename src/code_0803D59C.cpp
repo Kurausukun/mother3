@@ -59,8 +59,8 @@ extern "C" void sub_0803E3D8();
 extern "C" void sub_0805AFCC();
 extern "C" void sub_080018F4();
 extern "C" void sub_0800160C(Unknown_02016078* dest, void* src, int index, u32 size);
-extern "C" void sub_08001A14(void* src, void* dest, u32 size);
-extern "C" void sub_08001A38(void* dest, u32 size, int value);
+extern "C" void Dma3Copy(void* src, void* dest, u32 size);
+extern "C" void Dma3Fill(void* dest, u32 size, int value);
 extern "C" void sub_08000E5C(void*);
 extern "C" void nullsub_11();
 extern "C" void pollInput(InputState*);
@@ -138,7 +138,7 @@ extern "C" void sub_08047CDC(u16*, u16, u16, s16, u16, u16);
 extern "C" u16* getMenuText(u16);
 extern "C" void sub_0804A188();
 extern "C" void sub_0804A550();
-extern "C" void memFill(void*, u16, s16);
+extern "C" void CpuMemFill(void*, u16, s16);
 extern "C" u16* getMemoEntryText(u16);
 extern "C" u16* getNthMemoPage(u16*, u16);
 extern "C" void sub_08048108(void*, void*);
@@ -547,7 +547,7 @@ extern "C" void loadMemoEntryPage(u16 entry, u16 pageNum) {
 
     buffer[pageLengthBytes / 2] = 0xFFFF;
 
-    memFill(&gSomeBlend.memoTextBuffer, sizeof buffer, -1);
+    CpuMemFill(&gSomeBlend.memoTextBuffer, sizeof buffer, -1);
     sub_08048108(&gSomeBlend.memoTextBuffer, buffer);
 }
 
@@ -1702,8 +1702,8 @@ extern "C" void copy_save_from_iwram(char* src) {  // src seems to always be 0x0
     CpuSmartSet((void*)(src + 0x898), &gCharStats[1],
                 sizeof(CharStats) *
                     13);  // FAKEMATCH, fix when iwram save copy is better understood
-    memclear(&gCharStats[0], 0x6C);
-    memclear(&gCharStats[14], 0xD8);
+    CpuMemClear(&gCharStats[0], 0x6C);
+    CpuMemClear(&gCharStats[14], 0xD8);
 }
 
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08051C28.inc", void sub_08051C28());
@@ -2605,8 +2605,8 @@ extern "C" void sub_0805A568(void) {
     void* temp_r0_2 = Blob_GetEntry(&gUnknown_09C8DE98, 1);
     sub_0800160C(&gSomeBlend._50, temp_r0_2, 0, 0x20);
     sub_0800160C(&gSomeBlend._50, temp_r0_2, 0x10, 0x20);
-    sub_08001A14((void*)&gSomeBlend._50._2700, &gSomeBlend._2cb4, 0x400);
-    sub_08001A38((void*)&gSomeBlend._50._2700, 0x400, -1);
+    Dma3Copy((void*)&gSomeBlend._50._2700, &gSomeBlend._2cb4, 0x400);
+    Dma3Fill((void*)&gSomeBlend._50._2700, 0x400, -1);
     gSomeBlend.dispcnt = 0x140U;
     gSomeBlend.bgcnt[0] = 8;
     gSomeBlend.bgcnt[1] = 0;
@@ -2646,7 +2646,7 @@ extern "C" void sub_08001778(void* arg1, u16 arg2, u16 cursorMin, u16 cursorMax)
 extern "C" void sub_080013D0(void*);
 extern "C" void sub_08001454(void*);
 extern "C" void resetInputState(InputState*, u16);
-extern "C" void sub_080019A4(void*);
+extern "C" void Dma3CopyPalettes(void*);
 
 extern "C" void sub_0805AE94(struct_02016028*, void*);
 extern "C" void sub_0805AEE0(void* arg1, Unknown_02016078* arg2);
@@ -2739,7 +2739,7 @@ extern "C" void sub_0805AE94(struct_02016028* arg0, void*) {
 }
 
 extern "C" void sub_0805AEE0(void* arg1, Unknown_02016078* arg2) {
-    sub_080019A4(arg2);
+    Dma3CopyPalettes(arg2);
 }
 
 extern "C" void sub_0805AEEC(void) {
@@ -2753,11 +2753,11 @@ extern "C" void sub_0805AEEC(void) {
 
 // GB player logo init
 extern "C" void sub_0805AF34(void) {
-    sub_08001A14((void*)gGBPlayerLogoGfx, BG_CHAR_ADDR(2), 0x4000);
-    sub_08001A14((void*)gGBPlayerLogoLayout, BG_SCREEN_ADDR(0), 0x500);
+    Dma3Copy((void*)gGBPlayerLogoGfx, BG_CHAR_ADDR(2), 0x4000);
+    Dma3Copy((void*)gGBPlayerLogoLayout, BG_SCREEN_ADDR(0), 0x500);
     sub_0800160C(&gSomeBlend._50, (void*)gGBPlayerLogoPalette, 0, 0x200);
-    sub_08001A14((void*)gSomeBlend._50._2700, (void*)&gSomeBlend._2CB0, 0x400);
-    sub_08001A38((void*)gSomeBlend._50._2700, 0x400, -1);
+    Dma3Copy((void*)gSomeBlend._50._2700, (void*)&gSomeBlend._2CB0, 0x400);
+    Dma3Fill((void*)gSomeBlend._50._2700, 0x400, -1);
 
     gSomeBlend.dispcnt = DISPCNT_BG0_ON;
     gSomeBlend.bgcnt[0] = BGCNT_256COLOR | BGCNT_CHARBASE(2) | BGCNT_SCREENBASE(0);

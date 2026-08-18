@@ -4,7 +4,7 @@ sub_0800A07C:
 	ldr r0, _0800A08C
 	movs r1, #0xcc
 	lsls r1, r1, #1
-	bl memclear
+	bl CpuMemClear
 	pop {r0}
 	bx r0
 	.align 2, 0

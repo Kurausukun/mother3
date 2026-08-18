@@ -4,7 +4,7 @@ sub_08015360:
 	ldr r0, _0801541C
 	movs r1, #0x80
 	lsls r1, r1, #3
-	bl memclear
+	bl CpuMemClear
 	bl sub_08004FB4
 	ldr r4, _08015420
 	adds r0, r4, #0

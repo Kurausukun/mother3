@@ -49,10 +49,10 @@ sub_08004794:
 	ldr r0, _080048C0
 	movs r1, #0x80
 	lsls r1, r1, #3
-	bl memclear
+	bl CpuMemClear
 	ldr r4, _080048C4
 	adds r0, r4, #0
-	bl sub_080019A4
+	bl Dma3CopyPalettes
 	ldr r0, _080048C8
 	adds r0, r0, r5
 	mov r8, r0

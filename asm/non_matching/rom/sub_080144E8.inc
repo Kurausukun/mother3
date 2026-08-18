@@ -37,17 +37,17 @@ sub_080144E8:
 	movs r5, #0xa0
 	lsls r5, r5, #1
 	adds r1, r5, #0
-	bl memclear
+	bl CpuMemClear
 	bl sub_08016CBC
 	bl sub_08016D54
 	ldr r0, _0801457C
 	adds r1, r5, #0
-	bl memclear
+	bl CpuMemClear
 	ldr r0, _08014580
 	adds r4, r4, r0
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl memclear
+	bl CpuMemClear
 	movs r0, #0
 	bl sub_08005900
 	pop {r4, r5}

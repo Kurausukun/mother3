@@ -12,7 +12,7 @@ sub_08051F80:
 	lsls r5, r5, #5
 	mov r0, sp
 	adds r1, r5, #0
-	bl memclear
+	bl CpuMemClear
 	mov r7, sp
 	mov r0, sp
 	bl sub_08052128
@@ -38,7 +38,7 @@ sub_08051F80:
 	lsrs r4, r4, #0x10
 	mov r0, sp
 	adds r1, r5, #0
-	bl memclear
+	bl CpuMemClear
 	mov r7, sp
 	mov r0, sp
 	bl sub_08052128
@@ -61,7 +61,7 @@ sub_08051F80:
 	lsrs r4, r4, #0x10
 	mov r0, sp
 	adds r1, r5, #0
-	bl memclear
+	bl CpuMemClear
 	mov r7, sp
 	mov r0, sp
 	bl sub_08052128

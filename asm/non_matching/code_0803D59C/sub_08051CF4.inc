@@ -258,7 +258,7 @@ _08051E1E:
 	rsbs r2, r2, #0
 	ldr r0, [sp, #0x34]
 	movs r1, #0x12
-	bl memFill
+	bl CpuMemFill
 	adds r1, r4, #2
 	ldr r0, [sp, #0x34]
 	movs r2, #9

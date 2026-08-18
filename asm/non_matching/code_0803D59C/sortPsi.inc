@@ -10,7 +10,7 @@ sortPsi:
 	adds r7, r4, #0
 	mov r0, sp
 	movs r1, #0x80
-	bl memclear
+	bl CpuMemClear
 	cmp r4, #1
 	beq _0805332C
 	cmp r4, #1

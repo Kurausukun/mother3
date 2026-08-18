@@ -20,7 +20,7 @@ _0803E0FC:
 	bl CpuSmartSet
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl memclear
+	bl CpuMemClear
 	ldr r0, _0803E168
 	adds r4, r4, r0
 	movs r0, #0

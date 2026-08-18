@@ -53,12 +53,12 @@ _080571E8:
 	rsbs r2, r2, #0
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl memFill
+	bl CpuMemFill
 	b _080571FE
 _080571F6:
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl memclear
+	bl CpuMemClear
 _080571FE:
 	pop {r4, r5, r6}
 	pop {r0}

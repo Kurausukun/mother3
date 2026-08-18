@@ -7,7 +7,7 @@ sub_08052A64:
 	movs r1, #0xa4
 	lsls r1, r1, #1
 	adds r0, r4, #0
-	bl memclear
+	bl CpuMemClear
 	ldr r0, _08052AEC
 	adds r1, r4, r0
 	movs r0, #0
