@@ -73,7 +73,9 @@ extern "C" ASM_FUNC("asm/non_matching/psiImpl/onPlayAnim__11PkThunderGOP4Unitb.i
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/tellMissed__11PkThunderGOP4Unit.inc", void tellMissed__11PkThunderGOP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/calcDidHit__11PkThunderGOP4Unit.inc", void calcDidHit__11PkThunderGOP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/action_a0__11PkThunderGOP4Unit.inc", void action_a0__11PkThunderGOP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/psiImpl/playAnim__11PkThunderGO.inc", void playAnim__11PkThunderGO());
+
+void PkThunderGO::playAnim() {}
+
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/dt__11PkThunderGO.inc", void dt__11PkThunderGO());
 
 void PkThunderAB::onPlayAnim(Unit* target, bool crit) {
