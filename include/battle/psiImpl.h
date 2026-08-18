@@ -20,6 +20,18 @@ public:
     virtual s32 hitChance() const override;
 };
 
+class PkThunderAB : public DefaultPsi {
+public:
+    PkThunderAB(u16 id, Unit* user);
+    virtual ~PkThunderAB();
+
+    virtual void playAnim() override;
+    virtual void action_a0(Unit* target) override;
+    virtual u8 calcDidHit(Unit* target) override;
+    virtual void tellMissed(Unit* target) override;
+    virtual void onPlayAnim(Unit* target, bool crit) override;
+};
+
 FACTORY(DefaultPsi, u16, Unit*);
 
 #endif  // BATTLE_PSI_IMPL_H

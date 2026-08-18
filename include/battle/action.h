@@ -59,9 +59,7 @@ public:
     virtual u16 id() const = 0;
     virtual Msg name() const = 0;
     virtual Msg action_1d8() const = 0;
-    //
     virtual Msg action_fixme(s32 idx);
-
     virtual u32 action_1e0() = 0;
     virtual u32 effect() const = 0;
     virtual u32 element() const = 0;

@@ -31,7 +31,9 @@ extern "C" ASM_FUNC("asm/non_matching/psiImpl/__9PsiMagnetUsP4Unit.inc", void __
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/__8PkGroundUsP4Unit.inc", void __8PkGroundUsP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/__11PkThunderGOUsP4Unit.inc", void __11PkThunderGOUsP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/__11PkThunderABUsP4Unit.inc", void __11PkThunderABUsP4Unit());
+
 DefaultPsi::DefaultPsi(u16 id, Unit* user) : Psi(id, user) {}
+
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/onFail__9HealingGOP4Unit.inc", void onFail__9HealingGOP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/dt__9HealingGO.inc", void dt__9HealingGO());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/onFail__8HealingBP4Unit.inc", void onFail__8HealingBP4Unit());
@@ -73,7 +75,9 @@ extern "C" ASM_FUNC("asm/non_matching/psiImpl/onPlayAnim__11PkThunderABP4Unitb.i
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/tellMissed__11PkThunderABP4Unit.inc", void tellMissed__11PkThunderABP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/calcDidHit__11PkThunderABP4Unit.inc", void calcDidHit__11PkThunderABP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/action_a0__11PkThunderABP4Unit.inc", void action_a0__11PkThunderABP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/psiImpl/playAnim__11PkThunderAB.inc", void playAnim__11PkThunderAB());
+
+void PkThunderAB::playAnim() {}
+
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/dt__11PkThunderAB.inc", void dt__11PkThunderAB());
 
 s32 DefaultPsi::hitChance() const {
