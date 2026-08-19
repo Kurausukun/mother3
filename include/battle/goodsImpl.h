@@ -643,7 +643,7 @@ public:
         ROMStr(0x184).print(Color::Black(), true);
     }
 
-    u8 calcDidHit(Unit* target) {
+    bool calcDidHit(Unit* target) {
         Unit* u = sub_08072EE4(5);
         if (u == NULL) {
             return false;

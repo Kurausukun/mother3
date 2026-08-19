@@ -27,7 +27,7 @@ public:
 
     virtual void playAnim() override;
     virtual void action_a0(Unit* target) override;
-    virtual u8 calcDidHit(Unit* target) override;
+    virtual bool calcDidHit(Unit* target) override;
     virtual void tellMissed(Unit* target) override;
     virtual void onPlayAnim(Unit* target, bool crit) override;
 };
@@ -39,7 +39,7 @@ public:
 
     virtual void playAnim() override;
     virtual void action_a0(Unit* target) override;
-    virtual u8 calcDidHit(Unit* target) override;
+    virtual bool calcDidHit(Unit* target) override;
     virtual void tellMissed(Unit* target) override;
     virtual void onPlayAnim(Unit* target, bool crit) override;
 };
@@ -50,7 +50,7 @@ public:
     virtual ~PkGround();
 
     virtual void playAnim() override;
-    virtual u8 calcDidHit(Unit* target) override;
+    virtual bool calcDidHit(Unit* target) override;
     virtual void onPsiDamage(Unit* target) override;
 };
 

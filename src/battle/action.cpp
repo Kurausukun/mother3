@@ -271,7 +271,7 @@ void Action::tellResisted(Unit* target) {
     ROMStr(0xec).print(Color::Black(), true);
 }
 
-u8 Action::calcDidHit(Unit* target) {
+bool Action::calcDidHit(Unit* target) {
     if (hitChance() >= 100)
         return true;
 

@@ -19,7 +19,7 @@ public:
     virtual void playDim();
     virtual void playAnim();
     virtual void action_a0(Unit* target);
-    virtual u8 calcDidHit(Unit* target);
+    virtual bool calcDidHit(Unit* target);
     virtual void tellMissed(Unit* target);
     virtual bool isResisted(Unit* target);
     virtual void tellResisted(Unit* target);
