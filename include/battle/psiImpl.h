@@ -44,8 +44,19 @@ public:
     virtual void onPlayAnim(Unit* target, bool crit) override;
 };
 
+class PkGround : public DefaultPsi {
+public:
+    PkGround(u16 id, Unit* user);
+    virtual ~PkGround();
+
+    virtual void playAnim() override;
+    virtual u8 calcDidHit(Unit* target) override;
+    virtual void onPsiDamage(Unit* target) override;
+};
+
 FACTORY(DefaultPsi, u16, Unit*);
 FACTORY(PkThunderAB, u16, Unit*);
 FACTORY(PkThunderGO, u16, Unit*);
+FACTORY(PkGround, u16, Unit*);
 
 #endif  // BATTLE_PSI_IMPL_H
