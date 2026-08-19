@@ -1,6 +1,7 @@
 #include "battle/psiImpl.h"
 #include "battle.h"
 
+extern "C" bool typeIsMonster(Unit*);
 extern "C" Monster* dynaCastMonster(Unit* u);
 extern "C" void hitPlayer(Unit*, u32, u32);
 extern "C" s32 GetMonsterCount();
@@ -106,7 +107,53 @@ void PkGround::onPsiDamage(Unit* target) {
     onPlayAnim(m, false);
 }
 
-extern "C" ASM_FUNC("asm/non_matching/psiImpl/calcDidHit__8PkGroundP4Unit.inc", void calcDidHit__8PkGroundP4Unit());
+bool PkGround::calcDidHit(Unit* target) {
+    if (typeIsMonster(target) == true) {
+        switch (target->id()) {
+        case Monster::MrPassion:
+        case Monster::BrightSmile:
+        case Monster::JealousBass:
+        case Monster::KingStatue:
+        case Monster::NewFassad:
+        case Monster::LordPassion:
+        case Monster::MiracleFassad:
+        case Monster::Phenomenon:
+        case Monster::RhinoBooster:
+        case Monster::Blazefly:
+        case Monster::MrBatty:
+        case Monster::Firefly:
+        case Monster::FlyingMouse:
+        case Monster::CFJellyfish:
+        case Monster::BaldingEagle:
+        case Monster::LostSpirit:
+        case Monster::GhostSword:
+        case Monster::GhostShield:
+        case Monster::OshoeCape:
+        case Monster::SaraSahara:
+        case Monster::StinkyGhost:
+        case Monster::ArtsyGhost:
+        case Monster::Dragonfly:
+        case Monster::SkyTitany:
+        case Monster::RhinoRhocket:
+        case Monster::SoaringMouse:
+        case Monster::ShortCircuitZap:
+        case Monster::ReconMech:
+        case Monster::ElderBatty:
+        case Monster::WailingGuitar:
+        case Monster::MensRoomSign:
+        case Monster::NavySqueal:
+        case Monster::MasterEddy:
+        case Monster::BlueBaldingEagle:
+        case Monster::SecurityRobo:
+        case Monster::BotherWind:
+            return false;
+        default:
+            break;
+        }
+    }
+
+    return Action::calcDidHit(target);
+}
 
 void PkGround::playAnim() {
     Vector<Unit*> prevTargets;
