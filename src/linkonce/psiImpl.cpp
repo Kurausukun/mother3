@@ -3,6 +3,8 @@
 
 extern "C" Monster* dynaCastMonster(Unit* u);
 extern "C" void hitPlayer(Unit*, u32, u32);
+extern "C" s32 GetMonsterCount();
+extern "C" Unit* GetMonster(s32);
 
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/create__16HealingGOFactoryUsP4Unit.inc", void create__16HealingGOFactoryUsP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/create__15HealingBFactoryUsP4Unit.inc", void create__15HealingBFactoryUsP4Unit());
@@ -105,7 +107,32 @@ void PkGround::onPsiDamage(Unit* target) {
 }
 
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/calcDidHit__8PkGroundP4Unit.inc", void calcDidHit__8PkGroundP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/psiImpl/playAnim__8PkGround.inc", void playAnim__8PkGround());
+
+void PkGround::playAnim() {
+    Vector<Unit*> prevTargets;
+
+    // Cache old targets
+    for (s32 i = 0; i < numTargets(); i++) {
+        prevTargets.append(getTarget(i));
+    }
+
+    clearTargets();
+
+    // Target and animate
+    for (s32 i = 0; i < GetMonsterCount(); i++) {
+        addTarget(GetMonster(i));
+    }
+
+    Action::playAnim();
+
+    // Restore old targets
+    clearTargets();
+
+    for (s32 i = 0; i < prevTargets.size(); i++) {
+        addTarget(prevTargets[i]);
+    }
+}
+
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/dt__8PkGround.inc", void dt__8PkGround());
 
 void PkThunderGO::onPlayAnim(Unit* target, bool crit) {
