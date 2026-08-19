@@ -1,4 +1,8 @@
 #include "battle/psiImpl.h"
+#include "battle.h"
+
+extern "C" Monster* dynaCastMonster(Unit* u);
+extern "C" void hitPlayer(Unit*, u32, u32);
 
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/create__16HealingGOFactoryUsP4Unit.inc", void create__16HealingGOFactoryUsP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/create__15HealingBFactoryUsP4Unit.inc", void create__15HealingBFactoryUsP4Unit());
@@ -68,7 +72,38 @@ extern "C" ASM_FUNC("asm/non_matching/psiImpl/calcDidHit__9PsiMagnetP4Unit.inc",
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/tellResisted__9PsiMagnetP4Unit.inc", void tellResisted__9PsiMagnetP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/isResisted__9PsiMagnetP4Unit.inc", void isResisted__9PsiMagnetP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/dt__9PsiMagnet.inc", void dt__9PsiMagnet());
-extern "C" ASM_FUNC("asm/non_matching/psiImpl/onPsiDamage__8PkGroundP4Unit.inc", void onPsiDamage__8PkGroundP4Unit());
+
+void PkGround::onPsiDamage(Unit* target) {
+    Monster* m = dynaCastMonster(target);
+
+    if (m == NULL) {
+        return;
+    }
+
+    s32 lowerBoundScale = 0;
+    s32 upperBoundScale = 0;
+
+    switch (m->battlePos()) {
+    case 0:  // TODO: Define enum
+        lowerBoundScale = 12;
+        upperBoundScale = 13;
+        break;
+    case 1:
+        lowerBoundScale = 7;
+        upperBoundScale = 8;
+        break;
+    case 2:
+        lowerBoundScale = 2;
+        upperBoundScale = 3;
+        break;
+    }
+
+    s32 damage = randS32(sub_0807066C(m->maxHP() * lowerBoundScale, 100),
+                         sub_0807066C(m->maxHP() * upperBoundScale, 100));
+    hitPlayer(m, max(1, damage), true);
+    onPlayAnim(m, false);
+}
+
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/calcDidHit__8PkGroundP4Unit.inc", void calcDidHit__8PkGroundP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/playAnim__8PkGround.inc", void playAnim__8PkGround());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/dt__8PkGround.inc", void dt__8PkGround());
