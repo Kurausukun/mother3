@@ -139,43 +139,43 @@ public:
             Unit* t = getTarget(i);
             if (typeIsMonster(t) == true) {
                 switch (t->id()) {
-                case 1:
-                case 2:
-                case 3:
-                case 4:
-                case 5:
-                case 6:
-                case 7:
-                case 0xb:
-                case 0xc:
-                case 0xd:
-                case 0xe:
-                case 0xf:
-                case 0x10:
-                case 0x11:
-                case 0x13:
-                case 0x16:
-                case 0x18:
-                case 0x1a:
-                case 0x1b:
-                case 0x1c:
-                case 0x2e:
-                case 0x54:
-                case 0x5c:
-                case 0x65:
-                case 0x7c:
-                case 0x7d:
-                case 0x8e:
-                case 0x91:
-                case 0xa2:
-                case 0xa9:
-                case 0xae:
-                case 0xb4:
-                case 0xb5:
-                case 0xbb:
-                case 0xbc:
-                case 0xbd:
-                case 0xbe:
+                case Monster::ReconstructedCaribou:
+                case Monster::MrPassion:
+                case Monster::OhSoSnake:
+                case Monster::Clayman:
+                case Monster::MechaDrago:
+                case Monster::PorkTank:
+                case Monster::MrGenetor:
+                case Monster::Porky:
+                case Monster::NaturalKillerCyborg:
+                case Monster::MaskedMan1st:
+                case Monster::WomanizingPigMask1st:
+                case Monster::WomanizingPigMask2nd:
+                case Monster::JealousBass:
+                case Monster::AbsolutelySafeCapsule:
+                case Monster::Porky02:
+                case Monster::NewFassad:
+                case Monster::LordPassion:
+                case Monster::Porky03:
+                case Monster::Porky08:
+                case Monster::MiracleFassad:
+                case Monster::Porky01:
+                case Monster::BarrierTrio:
+                case Monster::EerieSmile3rd:
+                case Monster::Zombieshroom:
+                case Monster::MissMarshmallow:
+                case Monster::AlmostMechaLion:
+                case Monster::SteelGorilla:
+                case Monster::Porky07:
+                case Monster::SadJunkHeap:
+                case Monster::Porky06:
+                case Monster::MasterEddy:
+                case Monster::Porky09:
+                case Monster::Porky10:
+                case Monster::Porky04:
+                case Monster::Porky05:
+                case Monster::MaskedMan2nd:
+                case Monster::MaskedMan3rd:
                     return true;
                 }
             }
@@ -189,7 +189,8 @@ public:
         }
 
         if (_50 == true) {
-            ROMStr(0x178).print(Color::Black(), 1);
+            // [PAUSE60] But it was a dud...[END]
+            ROMStr(0x178).print(Color::Black(), true);
         }
     }
 
