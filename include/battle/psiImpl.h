@@ -54,9 +54,18 @@ public:
     virtual void onPsiDamage(Unit* target) override;
 };
 
+class PsiMagnet : public DefaultPsi {
+public:
+    PsiMagnet(u16 id, Unit* user);
+    virtual ~PsiMagnet();
+
+    virtual void onPlayAnim(Unit* target, bool crit) override;
+};
+
 FACTORY(DefaultPsi, u16, Unit*);
 FACTORY(PkThunderAB, u16, Unit*);
 FACTORY(PkThunderGO, u16, Unit*);
 FACTORY(PkGround, u16, Unit*);
+FACTORY(PsiMagnet, u16, Unit*);
 
 #endif  // BATTLE_PSI_IMPL_H
