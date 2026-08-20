@@ -19,7 +19,7 @@ sub_0804A628:
 	beq _0804A666
 	b _0804A6EE
 	.align 2, 0
-_0804A650: .4byte gSomeBlend+0x50 @ gSomeBlend._50
+_0804A650: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _0804A654: .4byte 0x000041DC
 _0804A658: .4byte 0x00004178
 _0804A65C:

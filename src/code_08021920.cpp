@@ -1417,7 +1417,7 @@ extern "C" void sub_08037AF4() {
     gSomeBlend._35ba_1 = 0;
     gSomeBlend._3530 = 0;
     gSomeBlend._3531 = 2;
-    sub_080012BC(&gSomeBlend._50, 0, 0, 1);
+    sub_080012BC(&gSomeBlend.gfx, 0, 0, 1);
 }
 
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08037B4C.inc", void sub_08037B4C());

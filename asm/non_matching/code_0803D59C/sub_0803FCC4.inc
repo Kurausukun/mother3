@@ -30,5 +30,5 @@ _0803FD00: .4byte gMenuData
 _0803FD04: .4byte 0x06001000
 _0803FD08: .4byte gSave
 _0803FD0C: .4byte 0x0000081E
-_0803FD10: .4byte gSomeBlend+0x50 @ gSomeBlend._50
+_0803FD10: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 	.syntax divided

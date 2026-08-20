@@ -64,7 +64,7 @@ _0804A924:
 	b _0804A936
 	.align 2, 0
 _0804A92C: .4byte 0xFFFF0000
-_0804A930: .4byte gSomeBlend+0x50 @ gSomeBlend._50
+_0804A930: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _0804A934:
 	ldrh r1, [r6, #2]
 _0804A936:
@@ -199,5 +199,5 @@ _0804AA24:
 	bx r0
 	.align 2, 0
 _0804AA30: .4byte 0x0000FFFF
-_0804AA34: .4byte gSomeBlend+0x50 @ gSomeBlend._50
+_0804AA34: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 	.syntax divided

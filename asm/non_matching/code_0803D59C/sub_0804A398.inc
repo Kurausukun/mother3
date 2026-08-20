@@ -34,7 +34,7 @@ _0804A3B0:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0804A3DC: .4byte gSomeBlend+0x50 @ gSomeBlend._50
+_0804A3DC: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _0804A3E0: .4byte 0xFFFFFC00
 _0804A3E4: .4byte 0x000002C3
 _0804A3E8: .4byte gSomeBlend

@@ -232,7 +232,7 @@ typedef struct Entry8Byte_Alt {
 } Entry8Byte_Alt;
 static_assert(sizeof(OAMEntry) == 0x8);
 
-typedef struct Unknown_02016078 {
+typedef struct GraphicsBuffer {
     /* 0x0000 / 0x0050 */ u16 _0[0x400];
     /* 0x0800 / 0x0850 */ u16 _800[0x400];
     /* 0x1000 / 0x1050 */ u16 _1000[0x400];
@@ -253,7 +253,7 @@ typedef struct Unknown_02016078 {
     /* 0x2C4D / 0x2C9D */ vu8 g;
     /* 0x2C4E / 0x2C9E */ vu8 b;
     /* 0x2C4F / 0x2C9F */ u8 pad_2C4F[0x2C50 - 0x2C4F];
-} Unknown_02016078;
+} GraphicsBuffer;
 
 typedef struct InputState {
     u16 justPressed;
@@ -391,7 +391,7 @@ typedef struct struct_02016028 {
     vu32 _44;
     vu32 _48;
     vu32 _4C;
-    Unknown_02016078 _50;
+    GraphicsBuffer gfx;
     InputState input;
     void* _2CB0;
     u16 _2cb4[0x12];

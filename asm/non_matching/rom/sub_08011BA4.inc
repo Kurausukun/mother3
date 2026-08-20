@@ -58,7 +58,7 @@ sub_08011BA4:
 	ldr r2, _08011C28
 	b _08011C2E
 	.align 2, 0
-_08011C1C: .4byte gSomeBlend+0x50 @ gSomeBlend._50
+_08011C1C: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _08011C20: .4byte gGame
 _08011C24: .4byte 0x00004008
 _08011C28: .4byte 0x040000D4

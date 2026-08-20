@@ -29,5 +29,5 @@ sub_0804A6F4:
 	bx r0
 	.align 2, 0
 _0804A730: .4byte gMenuData
-_0804A734: .4byte gSomeBlend+0x50 @ gSomeBlend._50
+_0804A734: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 	.syntax divided

@@ -44,7 +44,7 @@ sub_08057170:
 	.align 2, 0
 _080571D0: .4byte gTitleScreenGfx
 _080571D4: .4byte 0x06008000
-_080571D8: .4byte gSomeBlend+0x50 @ gSomeBlend._50
+_080571D8: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _080571DC: .4byte 0x00002C46
 _080571E0: .4byte 0x00002CAC
 _080571E4: .4byte gUnknown_020047D0

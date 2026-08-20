@@ -104,27 +104,27 @@ extern "C" void sub_080013D0(struct_02016028* arg0) {
     }
 }
 
-extern "C" void sub_08001454(Unknown_02016078* arg0) {
-    arg0->_2C40 = arg0->_2C42 = arg0->_2C44 = arg0->_2C46 = 0;
+extern "C" void sub_08001454(GraphicsBuffer* gfx) {
+    gfx->_2C40 = gfx->_2C42 = gfx->_2C44 = gfx->_2C46 = 0;
 
-    Dma3Clear((void*)arg0->_0, 0x800);
-    Dma3Clear((void*)arg0->_800, 0x800);
-    Dma3Clear((void*)arg0->_1000, 0x800);
-    Dma3Clear((void*)arg0->_1800, 0x800);
-    Dma3Clear((void*)arg0->_2700, 0x400);
+    Dma3Clear((void*)gfx->_0, 0x800);
+    Dma3Clear((void*)gfx->_800, 0x800);
+    Dma3Clear((void*)gfx->_1000, 0x800);
+    Dma3Clear((void*)gfx->_1800, 0x800);
+    Dma3Clear((void*)gfx->_2700, 0x400);
 
-    arg0->oam_counter = 0;
-    arg0->_2C4A = 0;
-    arg0->r = 0;
-    arg0->g = 0;
-    arg0->b = 0;
+    gfx->oam_counter = 0;
+    gfx->_2C4A = 0;
+    gfx->r = 0;
+    gfx->g = 0;
+    gfx->b = 0;
 
-    arg0->_2700[0][0] = RGB(arg0->r, arg0->g, arg0->b);
+    gfx->_2700[0][0] = RGB(gfx->r, gfx->g, gfx->b);
 }
 
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001530.inc", void sub_08001530());
 
-extern "C" void sub_0800160C(Unknown_02016078* dest, void* src, u16 index, u16 size) {
+extern "C" void sub_0800160C(GraphicsBuffer* dest, void* src, u16 index, u16 size) {
     CpuFastSet(src, (void*)dest->_2700[index], size / 4);
 }
 
@@ -214,7 +214,7 @@ extern "C" void sub_08001960(void) {
     VBlankIntrWait();
 }
 
-// TODO: probably Unknown_02016078
+// TODO: probably GraphicsBuffer
 extern "C" void Dma3CopyOam(u8* src) {
     vu32* dmaRegs = (vu32*)REG_ADDR_DMA3;
     dmaRegs[0] = (uintptr_t)&src[0x2000];
@@ -231,9 +231,9 @@ extern "C" void Dma3CopyOam(u8* src) {
     }
 }
 
-extern "C" void Dma3CopyPalettes(Unknown_02016078* arg0) {
+extern "C" void Dma3CopyPalettes(GraphicsBuffer* gfx) {
     vu32* dmaRegs = (vu32*)REG_ADDR_DMA3;
-    dmaRegs[0] = (uintptr_t)&arg0->_2700;
+    dmaRegs[0] = (uintptr_t)&gfx->_2700;
     dmaRegs[1] = (uintptr_t)PLTT;
 
     u32 size = PLTT_SIZE / 2;
@@ -1228,16 +1228,16 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_08007AD4.inc", void sub_08007AD4()
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08007CC0.inc", void sub_08007CC0());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08007CE8.inc", void sub_08007CE8());
 
-extern "C" void sub_08007D18(Unknown_02016078* arg0) {
+extern "C" void sub_08007D18(GraphicsBuffer* gfx) {
     if (gGame._595b[0] == 2) {
-        arg0->r = 31;
-        arg0->g = 31;
-        arg0->b = 31;
-        *(vu16*)PLTT = RGB(arg0->r, arg0->g, arg0->b);
+        gfx->r = 31;
+        gfx->g = 31;
+        gfx->b = 31;
+        *(vu16*)PLTT = RGB(gfx->r, gfx->g, gfx->b);
     } else {
-        arg0->r = 0;
-        arg0->g = 0;
-        arg0->b = 0;
+        gfx->r = 0;
+        gfx->g = 0;
+        gfx->b = 0;
     }
 }
 

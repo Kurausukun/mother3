@@ -57,7 +57,7 @@ extern "C" void sub_0803FB60();
 extern "C" void sub_0803E3D8();
 extern "C" void sub_0805AFCC();
 extern "C" void sub_080018F4();
-extern "C" void sub_0800160C(Unknown_02016078* dest, void* src, int index, u32 size);
+extern "C" void sub_0800160C(GraphicsBuffer* dest, void* src, int index, u32 size);
 extern "C" void Dma3Copy(void* src, void* dest, u32 size);
 extern "C" void Dma3Fill(void* dest, u32 size, int value);
 extern "C" void sub_08000E5C(void*);
@@ -334,8 +334,8 @@ extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0803F8F8.inc", void sub_
 extern "C" void sub_0803FA8C() {
     sub_0803FAC8();
     sub_0803FB60();
-    sub_0800160C(&gSomeBlend._50, &gMenuTextPalette, 0, 0x20);
-    sub_0800160C(&gSomeBlend._50, &gMenuTextPalette, 0x1E, 0x20);
+    sub_0800160C(&gSomeBlend.gfx, &gMenuTextPalette, 0, 0x20);
+    sub_0800160C(&gSomeBlend.gfx, &gMenuTextPalette, 0x1E, 0x20);
     sub_08056584(0, 1);
 }
 
@@ -799,8 +799,8 @@ extern "C" void sub_0804A188() {
 extern "C" void sub_0804A1C0(u16 index) {
     if (gSomeBlend._4262 != index) {
         gSomeBlend._4262 = index;
-        CpuSmartSet(Blob_GetEntry(gMenuData, index), sub_08001378(&gSomeBlend._50, 2, 0, 0), 0x800);
-        gSomeBlend._50._2C44 = 1;
+        CpuSmartSet(Blob_GetEntry(gMenuData, index), sub_08001378(&gSomeBlend.gfx, 2, 0, 0), 0x800);
+        gSomeBlend.gfx._2C44 = 1;
     }
 }
 
@@ -809,13 +809,13 @@ extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0804A2E0.inc", void sub_
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0804A398.inc", void sub_0804A398());
 
 extern "C" void sub_0804A3F0() {
-    u16* tile = sub_08001378(&gSomeBlend._50, 2, 1, 0x12);
+    u16* tile = sub_08001378(&gSomeBlend.gfx, 2, 1, 0x12);
 
     for (u16 i = 0; i < 0x12; i++) {
         ((TileInfo*)&tile[i])->tile_num = 0x2C3;
     }
 
-    gSomeBlend._50._2C44 = 1;
+    gSomeBlend.gfx._2C44 = 1;
 }
 
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0804A448.inc", void sub_0804A448(u16));
@@ -1118,7 +1118,7 @@ extern "C" void menuGoods(InputState* input, MenuState* menu) {
         CURSOR_NO_CHANGE) {
         gSomeBlend._4264 = (s8)menu->currentTab;
         setMenuGoods();
-        sub_080012BC(&gSomeBlend._50, &gSomeBlend._423c, 1, 1);
+        sub_080012BC(&gSomeBlend.gfx, &gSomeBlend._423c, 1, 1);
         sub_08046D90();
         return;
     }
@@ -1171,7 +1171,7 @@ extern "C" void menuSkills(InputState* input, MenuState* menu) {
     if (input->justPressed & B_BUTTON) {
         play_sound(SFX_MENU_CANCEL);
         setMenuStatus();
-        sub_080012BC(&gSomeBlend._50, &gSomeBlend._423c, 1, 1);
+        sub_080012BC(&gSomeBlend.gfx, &gSomeBlend._423c, 1, 1);
         sub_08046D90();
         sub_08049AF8(gSomeBlend._4ed0);
         gSomeBlend._44f3_8 = 1;
@@ -1183,7 +1183,7 @@ extern "C" void menuSkills(InputState* input, MenuState* menu) {
         gSomeBlend._4264 = menu->currentTab;
         menu->cursorPos = 0;
         menu->scrollOffset = 0;
-        sub_080012BC(&gSomeBlend._50, &gSomeBlend._423c, 1, 1);
+        sub_080012BC(&gSomeBlend.gfx, &gSomeBlend._423c, 1, 1);
         sub_08052DBC(getBufferedCharStats(menu->currentTab));
         sub_08046D90();
         gSomeBlend._44f3_8 = 1;
@@ -1254,7 +1254,7 @@ extern "C" void menuMemoView(InputState* input, MenuState* menu) {
     if (input->justPressed & B_BUTTON) {
         play_sound(SFX_MENU_CANCEL);
         setMenuMemoSelect();
-        sub_080012BC(&gSomeBlend._50, &gSomeBlend._424c, 1, 1);
+        sub_080012BC(&gSomeBlend.gfx, &gSomeBlend._424c, 1, 1);
         sub_08046D90();
         gSomeBlend._41e6_1 = 0;
     }
@@ -1422,7 +1422,7 @@ extern "C" void sub_0804E078(InputState* input, MenuState* menu) {
 
         if (signedIndex < 4) {
             if (signedIndex >= 0) {
-                sub_080012BC(&gSomeBlend._50, &gSomeBlend._4244, 1, 1);
+                sub_080012BC(&gSomeBlend.gfx, &gSomeBlend._4244, 1, 1);
                 sub_08049DC4();
             }
         }
@@ -1484,7 +1484,7 @@ extern "C" void advanceMemoEntry(MenuState* menu) {
         loadMemoEntryPage(menu->currentTab, menu->cursorPos);
     }
 
-    sub_080012BC(&gSomeBlend._50, &gSomeBlend._424c, 1, 1);
+    sub_080012BC(&gSomeBlend.gfx, &gSomeBlend._424c, 1, 1);
     sub_08046D90();
     gSomeBlend._41e6_1 = 0;
 }
@@ -2473,7 +2473,7 @@ extern "C" void sub_080585F8() {
 
 extern "C" void sub_08058614(void) {
     if (gUnknown_02015DC0 != 0) {
-        sub_08000E5C(&gSomeBlend._50);
+        sub_08000E5C(&gSomeBlend.gfx);
     }
 }
 extern "C" void sub_08058630() {
@@ -2521,7 +2521,7 @@ extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08058FE4.inc", void sub_
 extern "C" void sub_08059094() {
     LZ77UnCompVram(Blob_GetEntry(&gUnknown_09C5FD2C, 0x4C), (void*)0x06008000);
     void* ptr = Blob_GetEntry(&gUnknown_09C5FD2C, 0x4D);
-    sub_0800160C(&gSomeBlend._50, ptr, 0xE, 0x40);
+    sub_0800160C(&gSomeBlend.gfx, ptr, 0xE, 0x40);
     CpuSmartSet(ptr, &gSomeBlend._4294, 0x40);
 }
 
@@ -2602,10 +2602,10 @@ extern "C" void sub_0805A568(void) {
     gSomeBlend._2CB0 = Blob_GetEntry(&gUnknown_09C8DE98, 4);
 
     void* temp_r0_2 = Blob_GetEntry(&gUnknown_09C8DE98, 1);
-    sub_0800160C(&gSomeBlend._50, temp_r0_2, 0, 0x20);
-    sub_0800160C(&gSomeBlend._50, temp_r0_2, 0x10, 0x20);
-    Dma3Copy((void*)&gSomeBlend._50._2700, &gSomeBlend._2cb4, 0x400);
-    Dma3Fill((void*)&gSomeBlend._50._2700, 0x400, -1);
+    sub_0800160C(&gSomeBlend.gfx, temp_r0_2, 0, 0x20);
+    sub_0800160C(&gSomeBlend.gfx, temp_r0_2, 0x10, 0x20);
+    Dma3Copy((void*)&gSomeBlend.gfx._2700, &gSomeBlend._2cb4, 0x400);
+    Dma3Fill((void*)&gSomeBlend.gfx._2700, 0x400, -1);
     gSomeBlend.dispcnt = 0x140U;
     gSomeBlend.bgcnt[0] = 8;
     gSomeBlend.bgcnt[1] = 0;
@@ -2648,7 +2648,7 @@ extern "C" void resetInputState(InputState*, u16);
 extern "C" void Dma3CopyPalettes(void*);
 
 extern "C" void sub_0805AE94(struct_02016028*, void*);
-extern "C" void sub_0805AEE0(void* arg1, Unknown_02016078* arg2);
+extern "C" void sub_0805AEE0(void* arg1, GraphicsBuffer* gfx);
 
 // gb player check entry?
 extern "C" void sub_0805ACF4(void) {
@@ -2719,8 +2719,8 @@ extern "C" void sub_0805AE4C(s8 arg0) {
 
 extern "C" void sub_0805AE64(void) {
     gUnknown_02015E00._8++;
-    sub_0805AE94(&gSomeBlend, &gSomeBlend._50);
-    sub_0805AEE0(&gSomeBlend, &gSomeBlend._50);
+    sub_0805AE94(&gSomeBlend, &gSomeBlend.gfx);
+    sub_0805AEE0(&gSomeBlend, &gSomeBlend.gfx);
 }
 
 extern "C" void sub_0805AE94(struct_02016028* arg0, void*) {
@@ -2737,8 +2737,8 @@ extern "C" void sub_0805AE94(struct_02016028* arg0, void*) {
     REG_BLDY = arg0->bldy;
 }
 
-extern "C" void sub_0805AEE0(void* arg1, Unknown_02016078* arg2) {
-    Dma3CopyPalettes(arg2);
+extern "C" void sub_0805AEE0(void* arg1, GraphicsBuffer* gfx) {
+    Dma3CopyPalettes(gfx);
 }
 
 extern "C" void sub_0805AEEC(void) {
@@ -2746,7 +2746,7 @@ extern "C" void sub_0805AEEC(void) {
     gUnknown_02015E00._c_1 = 0;
     gUnknown_02015E00._8 = 0;
     sub_080013D0(&gSomeBlend);
-    sub_08001454(&gSomeBlend._50);
+    sub_08001454(&gSomeBlend.gfx);
     resetInputState(&gSomeBlend.input, 2);
 }
 
@@ -2754,9 +2754,9 @@ extern "C" void sub_0805AEEC(void) {
 extern "C" void sub_0805AF34(void) {
     Dma3Copy((void*)gGBPlayerLogoGfx, BG_CHAR_ADDR(2), 0x4000);
     Dma3Copy((void*)gGBPlayerLogoLayout, BG_SCREEN_ADDR(0), 0x500);
-    sub_0800160C(&gSomeBlend._50, (void*)gGBPlayerLogoPalette, 0, 0x200);
-    Dma3Copy((void*)gSomeBlend._50._2700, (void*)&gSomeBlend._2CB0, 0x400);
-    Dma3Fill((void*)gSomeBlend._50._2700, 0x400, -1);
+    sub_0800160C(&gSomeBlend.gfx, (void*)gGBPlayerLogoPalette, 0, 0x200);
+    Dma3Copy((void*)gSomeBlend.gfx._2700, (void*)&gSomeBlend._2CB0, 0x400);
+    Dma3Fill((void*)gSomeBlend.gfx._2700, 0x400, -1);
 
     gSomeBlend.dispcnt = DISPCNT_BG0_ON;
     gSomeBlend.bgcnt[0] = BGCNT_256COLOR | BGCNT_CHARBASE(2) | BGCNT_SCREENBASE(0);

@@ -93,7 +93,7 @@ _08008328:
 	bx r0
 	.align 2, 0
 _08008394: .4byte gMiscGfx
-_08008398: .4byte gSomeBlend+0x50 @ gSomeBlend._50
+_08008398: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _0800839C: .4byte 0xFFFFFC00
 _080083A0: .4byte 0x000003FF
 _080083A4: .4byte 0x00002C90

@@ -40,6 +40,6 @@ sub_0805708C:
 	bx r0
 	.align 2, 0
 _080570E4: .4byte gTitleScreenGfx
-_080570E8: .4byte gSomeBlend+0x50 @ gSomeBlend._50
+_080570E8: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _080570EC: .4byte 0x00002CAC
 	.syntax divided

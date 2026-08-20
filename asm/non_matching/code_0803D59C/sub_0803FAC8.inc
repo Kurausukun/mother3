@@ -59,7 +59,7 @@ _0803FB42:
 	.align 2, 0
 _0803FB48: .4byte gUnknown_02004100
 _0803FB4C: .4byte gMenuData
-_0803FB50: .4byte gSomeBlend+0x50 @ gSomeBlend._50
+_0803FB50: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _0803FB54: .4byte 0x06001000
 _0803FB58: .4byte gSave
 _0803FB5C: .4byte 0x0000081E

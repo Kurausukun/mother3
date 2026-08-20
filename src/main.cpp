@@ -633,10 +633,10 @@ void clear_gfx() {
     CpuMemClear((void*)OAM, OAM_SIZE);
 }
 
-extern "C" void sub_08000E5C(Unknown_02016078* arg0) {
-    // Entry8Byte* ptr1 = &arg0->entries_2000[0];
+extern "C" void sub_08000E5C(GraphicsBuffer* gfx) {
+    // Entry8Byte* ptr1 = &gfx->entries_2000[0];
 
-    OAMEntry* oam_ptr = arg0->oam;
+    OAMEntry* oam_ptr = gfx->oam;
     u16 i;
 
     // Initialize OAM entries
@@ -649,7 +649,7 @@ extern "C" void sub_08000E5C(Unknown_02016078* arg0) {
         oam_ptr->rot_scale = 2;
     }
 
-    Entry8Byte_Alt* ptr2 = &arg0->entries_2500[0];
+    Entry8Byte_Alt* ptr2 = &gfx->entries_2500[0];
 
     // Clear second array (32 entries)
     for (i = 0; i < 32; i++, ptr2++) {
@@ -660,11 +660,11 @@ extern "C" void sub_08000E5C(Unknown_02016078* arg0) {
     }
 
     // Clear additional fields
-    arg0->oam_counter = 0;
-    arg0->_2C4A = 0;
+    gfx->oam_counter = 0;
+    gfx->_2C4A = 0;
 }
 
-extern "C" OAMEntry* sub_08000F04(Unknown_02016078* graphics, u16 count) {
+extern "C" OAMEntry* sub_08000F04(GraphicsBuffer* graphics, u16 count) {
     OAMEntry* first_entry = &graphics->oam[graphics->oam_counter];  // Starting OAM entry
     OAMEntry* current_entry = first_entry;
 
@@ -684,7 +684,7 @@ extern "C" OAMEntry* sub_08000F04(Unknown_02016078* graphics, u16 count) {
     return first_entry;
 }
 
-static void sub_08000FA0(Unknown_02016078* graphics, u16 count, u16 priority) {
+static void sub_08000FA0(GraphicsBuffer* graphics, u16 count, u16 priority) {
     // Start from the last allocated OAM entry and work backwards
     OAMEntry* current_entry = sub_08000F04(graphics, 0) - 1;
 
@@ -694,7 +694,7 @@ static void sub_08000FA0(Unknown_02016078* graphics, u16 count, u16 priority) {
     }
 }
 
-static Entry8Byte_Alt* sub_08000FE4(Unknown_02016078* graphics, u16 count) {
+static Entry8Byte_Alt* sub_08000FE4(GraphicsBuffer* graphics, u16 count) {
     Entry8Byte_Alt* first_entry = &graphics->entries_2500[graphics->_2C4A];
     graphics->_2C4A += count;
     return first_entry;

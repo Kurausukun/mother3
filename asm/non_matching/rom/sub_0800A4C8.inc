@@ -201,6 +201,6 @@ _0800A506:
 	bx r0
 	.align 2, 0
 _0800A66C: .4byte 0xFFFF0000
-_0800A670: .4byte gSomeBlend+0x50 @ gSomeBlend._50
+_0800A670: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _0800A674: .4byte 0x0000FFFF
 	.syntax divided

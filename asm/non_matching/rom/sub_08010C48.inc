@@ -191,7 +191,7 @@ _08010D9C:
 	mov sl, r1
 	b _08010DF4
 	.align 2, 0
-_08010DC4: .4byte gSomeBlend+0x50 @ gSomeBlend._50
+_08010DC4: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _08010DC8: .4byte gGame
 _08010DCC: .4byte 0x00004088
 _08010DD0: .4byte gUnknown_08D2D310

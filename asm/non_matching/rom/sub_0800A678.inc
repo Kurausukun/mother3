@@ -87,7 +87,7 @@ _0800A700:
 	b _0800A73E
 	.align 2, 0
 _0800A724: .4byte 0xFFFF0000
-_0800A728: .4byte gSomeBlend+0x50 @ gSomeBlend._50
+_0800A728: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _0800A72C:
 	mov r1, r8
 	adds r0, r1, r6
@@ -142,7 +142,7 @@ _0800A756:
 	b _0800A7D0
 	.align 2, 0
 _0800A794: .4byte 0x0000FFFF
-_0800A798: .4byte gSomeBlend+0x50 @ gSomeBlend._50
+_0800A798: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _0800A79C:
 	mov r2, sl
 	ldrh r1, [r2, #0x1e]
@@ -251,7 +251,7 @@ _0800A83E:
 	ldrh r0, [r4, #6]
 	b _0800A8C0
 	.align 2, 0
-_0800A874: .4byte gSomeBlend+0x50 @ gSomeBlend._50
+_0800A874: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _0800A878: .4byte 0x0000FFFF
 _0800A87C:
 	mov r0, sb
@@ -299,5 +299,5 @@ _0800A8C0:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0800A8D8: .4byte gSomeBlend+0x50 @ gSomeBlend._50
+_0800A8D8: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 	.syntax divided

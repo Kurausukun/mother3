@@ -39,7 +39,7 @@ _080572DC:
 	.align 2, 0
 _080572E4: .4byte gTitleScreenGfx
 _080572E8: .4byte 0x06010000
-_080572EC: .4byte gSomeBlend+0x50 @ gSomeBlend._50
+_080572EC: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _080572F0: .4byte 0x00002EAC
 _080572F4: .4byte gUnknown_020047D0
 	.syntax divided

@@ -100,7 +100,7 @@ _08011CF0:
 	blo _08011CF0
 	b _08011D88
 	.align 2, 0
-_08011D20: .4byte gSomeBlend+0x50 @ gSomeBlend._50
+_08011D20: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _08011D24: .4byte gGame
 _08011D28: .4byte 0x00004008
 _08011D2C: .4byte 0x040000D4

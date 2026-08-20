@@ -118,6 +118,6 @@ _0803FC5C: .4byte gMenuData
 _0803FC60: .4byte 0x06017000
 _0803FC64: .4byte gSave
 _0803FC68: .4byte 0x0000081E
-_0803FC6C: .4byte gSomeBlend+0x50 @ gSomeBlend._50
+_0803FC6C: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _0803FC70: .4byte 0x06017EC0
 	.syntax divided

@@ -119,6 +119,6 @@ _0804A7F0:
 	bx r0
 	.align 2, 0
 _0804A8A8: .4byte 0xFFFF0000
-_0804A8AC: .4byte gSomeBlend+0x50 @ gSomeBlend._50
+_0804A8AC: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _0804A8B0: .4byte 0x0000FFFF
 	.syntax divided

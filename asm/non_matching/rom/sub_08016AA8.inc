@@ -28,5 +28,5 @@ _08016ADC:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08016AE0: .4byte gSomeBlend+0x50 @ gSomeBlend._50
+_08016AE0: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 	.syntax divided

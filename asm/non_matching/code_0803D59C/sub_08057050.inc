@@ -23,5 +23,5 @@ sub_08057050:
 	.align 2, 0
 _08057080: .4byte gTitleScreenGfx
 _08057084: .4byte 0x06017EC0
-_08057088: .4byte gSomeBlend+0x50 @ gSomeBlend._50
+_08057088: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 	.syntax divided

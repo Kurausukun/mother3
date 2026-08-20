@@ -38,7 +38,7 @@ cmd_disp_text_special:
 	b _08020846
 	.align 2, 0
 _080207E8: .4byte 0x06008000
-_080207EC: .4byte gSomeBlend+0x50 @ gSomeBlend._50
+_080207EC: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _080207F0: .4byte gUnknown_080C1B60
 _080207F4:
 	cmp r5, #2

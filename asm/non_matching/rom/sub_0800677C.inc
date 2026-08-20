@@ -23,6 +23,6 @@ sub_0800677C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080067AC: .4byte gSomeBlend+0x50 @ gSomeBlend._50
+_080067AC: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _080067B0: .4byte 0x06006000
 	.syntax divided

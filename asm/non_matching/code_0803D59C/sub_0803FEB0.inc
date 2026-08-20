@@ -26,5 +26,5 @@ sub_0803FEB0:
 	.align 2, 0
 _0803FEE8: .4byte gMenuData
 _0803FEEC: .4byte 0x06001000
-_0803FEF0: .4byte gSomeBlend+0x50 @ gSomeBlend._50
+_0803FEF0: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 	.syntax divided

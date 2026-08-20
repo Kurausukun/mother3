@@ -39,5 +39,5 @@ _0803FF06:
 	bx r0
 	.align 2, 0
 _0803FF48: .4byte 0x06017C00
-_0803FF4C: .4byte gSomeBlend+0x50 @ gSomeBlend._50
+_0803FF4C: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 	.syntax divided
