@@ -81,7 +81,7 @@ _0804A322:
 	bx r0
 	.align 2, 0
 _0804A380: .4byte gMenuData
-_0804A384: .4byte gUnknown_02016078
+_0804A384: .4byte gSomeBlend+0x50 @ gSomeBlend._50
 _0804A388: .4byte 0xFFFFFC00
 _0804A38C: .4byte 0x000003FF
 _0804A390: .4byte gSomeBlend

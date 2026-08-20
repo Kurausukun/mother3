@@ -22,5 +22,5 @@ sub_08058FAC:
 	bx r0
 	.align 2, 0
 _08058FDC: .4byte gUnknown_09C5FD2C
-_08058FE0: .4byte gUnknown_02016078
+_08058FE0: .4byte gSomeBlend+0x50 @ gSomeBlend._50
 	.syntax divided

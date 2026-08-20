@@ -81,7 +81,7 @@ sub_08011ABC:
 	b _08011B76
 	.align 2, 0
 _08011B60: .4byte 0x0000FFFF
-_08011B64: .4byte gUnknown_02016078
+_08011B64: .4byte gSomeBlend+0x50 @ gSomeBlend._50
 _08011B68: .4byte gGame
 _08011B6C: .4byte 0x00004008
 _08011B70: .4byte 0x040000D4

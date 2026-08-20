@@ -68,6 +68,6 @@ _0800804E:
 	bx r0
 	.align 2, 0
 _08008090: .4byte gUnknown_09B0CA54
-_08008094: .4byte gUnknown_02016078
+_08008094: .4byte gSomeBlend+0x50 @ gSomeBlend._50
 _08008098: .4byte 0xFFFFD000
 	.syntax divided

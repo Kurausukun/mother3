@@ -20,6 +20,6 @@ sub_08016EE8:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08016F14: .4byte gUnknown_02016078
+_08016F14: .4byte gSomeBlend+0x50 @ gSomeBlend._50
 _08016F18: .4byte gUnknown_03005314
 	.syntax divided

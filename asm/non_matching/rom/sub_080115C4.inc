@@ -163,7 +163,7 @@ _080116BE:
 	adds r1, r4, #0
 	b _08011718
 	.align 2, 0
-_0801170C: .4byte gUnknown_02016078
+_0801170C: .4byte gSomeBlend+0x50 @ gSomeBlend._50
 _08011710:
 	lsls r1, r6, #1
 	mov r3, r8

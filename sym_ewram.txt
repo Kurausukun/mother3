@@ -286,7 +286,6 @@
 . = 0x00015F78; gUnknown_02015F78 = .;
 *libc.a:syscalls.o(.bss);
 . = 0x00016028; gSomeBlend = .;
-. = 0x00016078; gUnknown_02016078 = .;
 . = 0x00016878; gUnknown_02016878 = .;
 . = 0x00017878; gUnknown_02017878 = .;
 . = 0x00018778; gUnknown_02018778 = .;

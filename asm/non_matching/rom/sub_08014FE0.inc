@@ -33,7 +33,7 @@ _0801500E:
 	adds r0, r6, r1
 	b _0801502A
 	.align 2, 0
-_0801501C: .4byte gUnknown_02016078
+_0801501C: .4byte gSomeBlend+0x50 @ gSomeBlend._50
 _08015020: .4byte 0x000131C0
 _08015024: .4byte 0xFFFFC000
 _08015028:

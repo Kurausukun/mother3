@@ -194,7 +194,7 @@ _080113A4:
 	mov sl, r1
 	b _080113FC
 	.align 2, 0
-_080113CC: .4byte gUnknown_02016078
+_080113CC: .4byte gSomeBlend+0x50 @ gSomeBlend._50
 _080113D0: .4byte gGame
 _080113D4: .4byte 0x00004088
 _080113D8: .4byte gUnknown_08D2D310

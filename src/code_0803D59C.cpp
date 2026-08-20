@@ -40,7 +40,6 @@ extern MenuHandlerFunc gMenuFuncTable[0x13];
 extern u8 gMenuData[];
 extern u8 gUnknown_0200F920[];
 extern u8 gUnknown_02004100[];
-extern TileInfo gUnknown_02016078[];
 extern MenuHandlerFunc gUnknown_09B8FF14[];
 extern u8 gUnknown_0201AEF8[];
 extern u8 gUnknown_0201A520;
@@ -810,7 +809,7 @@ extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0804A2E0.inc", void sub_
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0804A398.inc", void sub_0804A398());
 
 extern "C" void sub_0804A3F0() {
-    u16* tile = sub_08001378(&gUnknown_02016078, 2, 1, 0x12);
+    u16* tile = sub_08001378(&gSomeBlend._50, 2, 1, 0x12);
 
     for (u16 i = 0; i < 0x12; i++) {
         ((TileInfo*)&tile[i])->tile_num = 0x2C3;

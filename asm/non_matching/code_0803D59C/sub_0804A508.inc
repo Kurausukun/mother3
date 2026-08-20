@@ -28,6 +28,6 @@ sub_0804A508:
 	bx r0
 	.align 2, 0
 _0804A544: .4byte gMenuData
-_0804A548: .4byte gUnknown_02016078
+_0804A548: .4byte gSomeBlend+0x50 @ gSomeBlend._50
 _0804A54C: .4byte 0x00002C46
 	.syntax divided

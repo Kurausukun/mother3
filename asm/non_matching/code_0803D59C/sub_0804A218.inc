@@ -91,7 +91,7 @@ _0804A264:
 	bx r0
 	.align 2, 0
 _0804A2CC: .4byte gMenuData
-_0804A2D0: .4byte gUnknown_02016078
+_0804A2D0: .4byte gSomeBlend+0x50 @ gSomeBlend._50
 _0804A2D4: .4byte 0xFFFFFC00
 _0804A2D8: .4byte 0x000003FF
 _0804A2DC: .4byte 0x00002C94

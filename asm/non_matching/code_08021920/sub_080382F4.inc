@@ -24,7 +24,7 @@ sub_080382F4:
 	movs r0, #0
 	b _0803838C
 	.align 2, 0
-_08038324: .4byte gUnknown_02016078
+_08038324: .4byte gSomeBlend+0x50 @ gSomeBlend._50
 _08038328:
 	movs r6, #0
 	adds r0, #1

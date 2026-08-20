@@ -21,5 +21,5 @@ sub_0803FE7C:
 	bx r0
 	.align 2, 0
 _0803FEA8: .4byte gMenuData
-_0803FEAC: .4byte gUnknown_02016078
+_0803FEAC: .4byte gSomeBlend+0x50 @ gSomeBlend._50
 	.syntax divided

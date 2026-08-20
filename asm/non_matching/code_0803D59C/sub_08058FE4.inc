@@ -16,7 +16,7 @@ sub_08058FE4:
 	bl sub_0800160C
 	b _0805907E
 	.align 2, 0
-_08059008: .4byte gUnknown_02016078
+_08059008: .4byte gSomeBlend+0x50 @ gSomeBlend._50
 _0805900C:
 	ldr r4, _0805903C
 	adds r0, r4, #0
@@ -40,7 +40,7 @@ _0805900C:
 	b _08059072
 	.align 2, 0
 _0805903C: .4byte gUnknown_09C5FD2C
-_08059040: .4byte gUnknown_02016078
+_08059040: .4byte gSomeBlend+0x50 @ gSomeBlend._50
 _08059044:
 	ldr r4, _08059084
 	adds r0, r4, #0
@@ -74,7 +74,7 @@ _0805907E:
 	bx r0
 	.align 2, 0
 _08059084: .4byte gUnknown_09C5FD2C
-_08059088: .4byte gUnknown_02016078
+_08059088: .4byte gSomeBlend+0x50 @ gSomeBlend._50
 _0805908C: .4byte gSomeBlend
 _08059090: .4byte 0x00002750
 	.syntax divided

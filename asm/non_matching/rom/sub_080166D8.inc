@@ -91,7 +91,7 @@ _08016772:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08016794: .4byte gUnknown_02016078
+_08016794: .4byte gSomeBlend+0x50 @ gSomeBlend._50
 _08016798: .4byte gGame
 _0801679C: .4byte 0x0000595E
 _080167A0: .4byte 0x00005962

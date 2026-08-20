@@ -18,5 +18,5 @@ sub_0803FFF4:
 	.align 2, 0
 _08040018: .4byte gUnknown_02005090
 _0804001C: .4byte 0x06013C00
-_08040020: .4byte gUnknown_02016078
+_08040020: .4byte gSomeBlend+0x50 @ gSomeBlend._50
 	.syntax divided
