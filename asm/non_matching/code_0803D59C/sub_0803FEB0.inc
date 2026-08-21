@@ -16,7 +16,7 @@ sub_0803FEB0:
 	ldr r0, _0803FEF0
 	movs r2, #2
 	movs r3, #0x20
-	bl sub_0800160C
+	bl CpuCopyPaletteToGfxBuffer
 	movs r0, #2
 	movs r1, #1
 	bl sub_08056584

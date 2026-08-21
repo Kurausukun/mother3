@@ -177,7 +177,7 @@ _0803F8CE:
 	ldr r0, _0803F8F4
 	movs r2, #0x10
 	movs r3, #0xe0
-	bl sub_0800160C
+	bl CpuCopyPaletteToGfxBuffer
 	add sp, #0xc
 	pop {r3, r4, r5}
 	mov r8, r3

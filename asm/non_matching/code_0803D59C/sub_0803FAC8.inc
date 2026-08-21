@@ -21,7 +21,7 @@ sub_0803FAC8:
 	ldr r0, _0803FB50
 	movs r2, #1
 	movs r3, #0x20
-	bl sub_0800160C
+	bl CpuCopyPaletteToGfxBuffer
 	movs r0, #1
 	movs r1, #1
 	bl sub_08056584
@@ -48,7 +48,7 @@ _0803FB04:
 	ldr r0, _0803FB50
 	movs r2, #2
 	movs r3, #0xc0
-	bl sub_0800160C
+	bl CpuCopyPaletteToGfxBuffer
 	movs r0, #2
 	movs r1, #6
 	bl sub_08056584

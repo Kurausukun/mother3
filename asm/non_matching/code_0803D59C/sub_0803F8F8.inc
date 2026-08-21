@@ -182,7 +182,7 @@ _0803FA5E:
 	adds r0, r7, r2
 	movs r2, #0x10
 	movs r3, #0xe0
-	bl sub_0800160C
+	bl CpuCopyPaletteToGfxBuffer
 _0803FA72:
 	pop {r3, r4, r5}
 	mov r8, r3

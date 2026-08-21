@@ -33,7 +33,7 @@ _0803FF06:
 	ldr r0, _0803FF4C
 	movs r2, #0x11
 	movs r3, #0x20
-	bl sub_0800160C
+	bl CpuCopyPaletteToGfxBuffer
 	pop {r4, r5, r6, r7}
 	pop {r0}
 	bx r0

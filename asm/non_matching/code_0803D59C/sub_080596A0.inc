@@ -162,7 +162,7 @@ _080597E4:
 	adds r0, r4, #0
 	movs r2, #0xe
 	movs r3, #0x40
-	bl sub_0800160C
+	bl CpuCopyPaletteToGfxBuffer
 	subs r4, #0x50
 	ldrh r0, [r5, #6]
 	ldrh r1, [r4, #0x1a]

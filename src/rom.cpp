@@ -111,7 +111,7 @@ extern "C" void sub_08001454(GraphicsBuffer* gfx) {
     Dma3Clear((void*)gfx->_800, 0x800);
     Dma3Clear((void*)gfx->_1000, 0x800);
     Dma3Clear((void*)gfx->_1800, 0x800);
-    Dma3Clear((void*)gfx->_2700, 0x400);
+    Dma3Clear((void*)gfx->palettes, 0x400);
 
     gfx->oam_counter = 0;
     gfx->_2C4A = 0;
@@ -119,13 +119,13 @@ extern "C" void sub_08001454(GraphicsBuffer* gfx) {
     gfx->g = 0;
     gfx->b = 0;
 
-    gfx->_2700[0][0] = RGB(gfx->r, gfx->g, gfx->b);
+    gfx->palettes[0][0] = RGB(gfx->r, gfx->g, gfx->b);
 }
 
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001530.inc", void sub_08001530());
 
-extern "C" void sub_0800160C(GraphicsBuffer* dest, void* src, u16 index, u16 size) {
-    CpuFastSet(src, (void*)dest->_2700[index], size / 4);
+extern "C" void CpuCopyPaletteToGfxBuffer(GraphicsBuffer* dest, void* src, u16 index, u16 size) {
+    CpuFastSet(src, (void*)dest->palettes[index], size / 4);
 }
 
 extern "C" void resetInputState(InputState* input, u16 arg1) {
@@ -214,10 +214,9 @@ extern "C" void sub_08001960(void) {
     VBlankIntrWait();
 }
 
-// TODO: probably GraphicsBuffer
-extern "C" void Dma3CopyOam(u8* src) {
+extern "C" void Dma3CopyOamFromGfxBuffer(GraphicsBuffer* gfx) {
     vu32* dmaRegs = (vu32*)REG_ADDR_DMA3;
-    dmaRegs[0] = (uintptr_t)&src[0x2000];
+    dmaRegs[0] = (uintptr_t)&gfx->oam;
     dmaRegs[1] = (uintptr_t)OAM;
 
     u32 size = OAM_SIZE / 2;
@@ -231,9 +230,9 @@ extern "C" void Dma3CopyOam(u8* src) {
     }
 }
 
-extern "C" void Dma3CopyPalettes(GraphicsBuffer* gfx) {
+extern "C" void Dma3CopyPalettesFromGfxBuffer(GraphicsBuffer* gfx) {
     vu32* dmaRegs = (vu32*)REG_ADDR_DMA3;
-    dmaRegs[0] = (uintptr_t)&gfx->_2700;
+    dmaRegs[0] = (uintptr_t)&gfx->palettes;
     dmaRegs[1] = (uintptr_t)PLTT;
 
     u32 size = PLTT_SIZE / 2;

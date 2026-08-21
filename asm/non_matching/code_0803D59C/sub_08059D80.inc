@@ -46,7 +46,7 @@ _08059D98:
 	adds r0, r6, #0
 	adds r0, #0x50
 	movs r3, #0x20
-	bl sub_0800160C
+	bl CpuCopyPaletteToGfxBuffer
 	b _08059E0A
 	.align 2, 0
 _08059DE4: .4byte gSomeBlend

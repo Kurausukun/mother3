@@ -57,7 +57,7 @@ extern "C" void sub_0803FB60();
 extern "C" void sub_0803E3D8();
 extern "C" void sub_0805AFCC();
 extern "C" void sub_080018F4();
-extern "C" void sub_0800160C(GraphicsBuffer* dest, void* src, int index, u32 size);
+extern "C" void CpuCopyPaletteToGfxBuffer(GraphicsBuffer* dest, void* src, int index, u32 size);
 extern "C" void Dma3Copy(void* src, void* dest, u32 size);
 extern "C" void Dma3Fill(void* dest, u32 size, int value);
 extern "C" void sub_08000E5C(void*);
@@ -334,8 +334,8 @@ extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0803F8F8.inc", void sub_
 extern "C" void sub_0803FA8C() {
     sub_0803FAC8();
     sub_0803FB60();
-    sub_0800160C(&gSomeBlend.gfx, &gMenuTextPalette, 0, 0x20);
-    sub_0800160C(&gSomeBlend.gfx, &gMenuTextPalette, 0x1E, 0x20);
+    CpuCopyPaletteToGfxBuffer(&gSomeBlend.gfx, &gMenuTextPalette, 0, 0x20);
+    CpuCopyPaletteToGfxBuffer(&gSomeBlend.gfx, &gMenuTextPalette, 0x1E, 0x20);
     sub_08056584(0, 1);
 }
 
@@ -2521,7 +2521,7 @@ extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08058FE4.inc", void sub_
 extern "C" void sub_08059094() {
     LZ77UnCompVram(Blob_GetEntry(&gUnknown_09C5FD2C, 0x4C), (void*)0x06008000);
     void* ptr = Blob_GetEntry(&gUnknown_09C5FD2C, 0x4D);
-    sub_0800160C(&gSomeBlend.gfx, ptr, 0xE, 0x40);
+    CpuCopyPaletteToGfxBuffer(&gSomeBlend.gfx, ptr, 0xE, 0x40);
     CpuSmartSet(ptr, &gSomeBlend._4294, 0x40);
 }
 
@@ -2602,10 +2602,10 @@ extern "C" void sub_0805A568(void) {
     gSomeBlend._2CB0 = Blob_GetEntry(&gUnknown_09C8DE98, 4);
 
     void* temp_r0_2 = Blob_GetEntry(&gUnknown_09C8DE98, 1);
-    sub_0800160C(&gSomeBlend.gfx, temp_r0_2, 0, 0x20);
-    sub_0800160C(&gSomeBlend.gfx, temp_r0_2, 0x10, 0x20);
-    Dma3Copy((void*)&gSomeBlend.gfx._2700, &gSomeBlend._2cb4, 0x400);
-    Dma3Fill((void*)&gSomeBlend.gfx._2700, 0x400, -1);
+    CpuCopyPaletteToGfxBuffer(&gSomeBlend.gfx, temp_r0_2, 0, 0x20);
+    CpuCopyPaletteToGfxBuffer(&gSomeBlend.gfx, temp_r0_2, 0x10, 0x20);
+    Dma3Copy((void*)&gSomeBlend.gfx.palettes, &gSomeBlend._2cb4, 0x400);
+    Dma3Fill((void*)&gSomeBlend.gfx.palettes, 0x400, -1);
     gSomeBlend.dispcnt = 0x140U;
     gSomeBlend.bgcnt[0] = 8;
     gSomeBlend.bgcnt[1] = 0;
@@ -2645,7 +2645,7 @@ extern "C" void sub_08001778(void* arg1, u16 arg2, u16 cursorMin, u16 cursorMax)
 extern "C" void sub_080013D0(void*);
 extern "C" void sub_08001454(void*);
 extern "C" void resetInputState(InputState*, u16);
-extern "C" void Dma3CopyPalettes(void*);
+extern "C" void Dma3CopyPalettesFromGfxBuffer(GraphicsBuffer*);
 
 extern "C" void sub_0805AE94(struct_02016028*, void*);
 extern "C" void sub_0805AEE0(void* arg1, GraphicsBuffer* gfx);
@@ -2738,7 +2738,7 @@ extern "C" void sub_0805AE94(struct_02016028* arg0, void*) {
 }
 
 extern "C" void sub_0805AEE0(void* arg1, GraphicsBuffer* gfx) {
-    Dma3CopyPalettes(gfx);
+    Dma3CopyPalettesFromGfxBuffer(gfx);
 }
 
 extern "C" void sub_0805AEEC(void) {
@@ -2754,9 +2754,9 @@ extern "C" void sub_0805AEEC(void) {
 extern "C" void sub_0805AF34(void) {
     Dma3Copy((void*)gGBPlayerLogoGfx, BG_CHAR_ADDR(2), 0x4000);
     Dma3Copy((void*)gGBPlayerLogoLayout, BG_SCREEN_ADDR(0), 0x500);
-    sub_0800160C(&gSomeBlend.gfx, (void*)gGBPlayerLogoPalette, 0, 0x200);
-    Dma3Copy((void*)gSomeBlend.gfx._2700, (void*)&gSomeBlend._2CB0, 0x400);
-    Dma3Fill((void*)gSomeBlend.gfx._2700, 0x400, -1);
+    CpuCopyPaletteToGfxBuffer(&gSomeBlend.gfx, (void*)gGBPlayerLogoPalette, 0, 0x200);
+    Dma3Copy((void*)gSomeBlend.gfx.palettes, (void*)&gSomeBlend._2CB0, 0x400);
+    Dma3Fill((void*)gSomeBlend.gfx.palettes, 0x400, -1);
 
     gSomeBlend.dispcnt = DISPCNT_BG0_ON;
     gSomeBlend.bgcnt[0] = BGCNT_256COLOR | BGCNT_CHARBASE(2) | BGCNT_SCREENBASE(0);

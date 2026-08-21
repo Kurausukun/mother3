@@ -195,7 +195,7 @@ _0803F5A8:
 	ldr r1, [r5, #0x20]
 	movs r2, #0x10
 	movs r3, #0x20
-	bl sub_0800160C
+	bl CpuCopyPaletteToGfxBuffer
 	add sp, #0xc
 	pop {r3, r4, r5}
 	mov r8, r3

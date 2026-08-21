@@ -17,7 +17,7 @@ sub_08057170:
 	adds r0, r4, #0
 	movs r2, #0
 	adds r3, r6, #0
-	bl sub_0800160C
+	bl CpuCopyPaletteToGfxBuffer
 	movs r0, #8
 	bl sub_0805734C
 	ldr r0, _080571DC

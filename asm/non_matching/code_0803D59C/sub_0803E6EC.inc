@@ -19,7 +19,7 @@ sub_0803E6EC:
 	adds r0, r4, #0
 	bl sub_0803EA4C
 	adds r0, r5, #0
-	bl Dma3CopyPalettes
+	bl Dma3CopyPalettesFromGfxBuffer
 	pop {r4, r5}
 	pop {r0}
 	bx r0

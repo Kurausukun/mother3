@@ -73,7 +73,7 @@ _0803FFCA:
 	lsrs r2, r2, #0x10
 	ldr r0, _0803FFF0
 	movs r3, #0x20
-	bl sub_0800160C
+	bl CpuCopyPaletteToGfxBuffer
 	adds r0, r4, #1
 	lsls r0, r0, #0x10
 	lsrs r4, r0, #0x10

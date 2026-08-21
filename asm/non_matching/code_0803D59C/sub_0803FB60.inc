@@ -69,7 +69,7 @@ _0803FBD8:
 	lsls r3, r3, #1
 	adds r0, r4, #0
 	movs r2, #0x15
-	bl sub_0800160C
+	bl CpuCopyPaletteToGfxBuffer
 	ldr r0, _0803FC58
 	ldrb r0, [r0]
 	cmp r0, #0xa
@@ -84,7 +84,7 @@ _0803FBD8:
 	adds r0, r4, #0
 	movs r2, #0x14
 	movs r3, #0x20
-	bl sub_0800160C
+	bl CpuCopyPaletteToGfxBuffer
 _0803FC1C:
 	ldr r0, _0803FC58
 	ldrb r0, [r0]
@@ -106,7 +106,7 @@ _0803FC1C:
 	ldr r0, _0803FC6C
 	movs r2, #0x1f
 	movs r3, #0x20
-	bl sub_0800160C
+	bl CpuCopyPaletteToGfxBuffer
 _0803FC4E:
 	pop {r4, r5}
 	pop {r0}

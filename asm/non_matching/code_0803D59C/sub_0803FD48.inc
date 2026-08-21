@@ -53,7 +53,7 @@ _0803FD88:
 	movs r3, #0x80
 	lsls r3, r3, #1
 	movs r2, #2
-	bl sub_0800160C
+	bl CpuCopyPaletteToGfxBuffer
 	movs r0, #2
 	movs r1, #8
 	bl sub_08056584
@@ -67,7 +67,7 @@ _0803FDDC:
 	ldr r0, _0803FDF0
 	movs r2, #2
 	movs r3, #0xa0
-	bl sub_0800160C
+	bl CpuCopyPaletteToGfxBuffer
 	movs r0, #2
 	movs r1, #5
 	bl sub_08056584
@@ -95,7 +95,7 @@ _0803FDF4:
 	ldr r0, _0803FE44
 	movs r2, #2
 	movs r3, #0x60
-	bl sub_0800160C
+	bl CpuCopyPaletteToGfxBuffer
 	movs r0, #2
 	movs r1, #3
 	bl sub_08056584

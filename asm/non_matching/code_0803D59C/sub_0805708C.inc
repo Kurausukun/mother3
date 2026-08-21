@@ -18,7 +18,7 @@ sub_0805708C:
 	adds r0, r4, #0
 	movs r2, #0
 	movs r3, #0xc0
-	bl sub_0800160C
+	bl CpuCopyPaletteToGfxBuffer
 	movs r0, #0x9c
 	lsls r0, r0, #6
 	adds r6, r4, r0

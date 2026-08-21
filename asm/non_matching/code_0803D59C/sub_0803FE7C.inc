@@ -13,7 +13,7 @@ sub_0803FE7C:
 	ldr r0, _0803FEAC
 	movs r2, #2
 	movs r3, #0x60
-	bl sub_0800160C
+	bl CpuCopyPaletteToGfxBuffer
 	movs r0, #2
 	movs r1, #3
 	bl sub_08056584

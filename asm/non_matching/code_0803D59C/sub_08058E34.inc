@@ -126,7 +126,7 @@ _08058F4A:
 	adds r0, r4, #0
 	movs r2, #0
 	adds r3, r5, #0
-	bl sub_0800160C
+	bl CpuCopyPaletteToGfxBuffer
 	movs r0, #0x9c
 	lsls r0, r0, #6
 	adds r1, r4, r0

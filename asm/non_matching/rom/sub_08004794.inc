@@ -52,7 +52,7 @@ sub_08004794:
 	bl CpuMemClear
 	ldr r4, _080048C4
 	adds r0, r4, #0
-	bl Dma3CopyPalettes
+	bl Dma3CopyPalettesFromGfxBuffer
 	ldr r0, _080048C8
 	adds r0, r0, r5
 	mov r8, r0

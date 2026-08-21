@@ -3,7 +3,7 @@ sub_08056C8C:
 	push {r4, r5, lr}
 	adds r4, r1, #0
 	adds r0, r4, #0
-	bl Dma3CopyOam
+	bl Dma3CopyOamFromGfxBuffer
 	ldr r5, _08056CB8
 	adds r0, r5, #0
 	bl sub_08056CC0
@@ -14,7 +14,7 @@ sub_08056C8C:
 	adds r1, r5, #0
 	bl sub_08056D78
 	adds r0, r4, #0
-	bl Dma3CopyPalettes
+	bl Dma3CopyPalettesFromGfxBuffer
 	pop {r4, r5}
 	pop {r0}
 	bx r0
