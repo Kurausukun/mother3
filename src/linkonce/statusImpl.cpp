@@ -1,5 +1,4 @@
-// Auto-generated source file
-#include "global.h"
+#include "battle/statusImpl.h"
 
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/create__18StatusNoExpFactoryUsP4Unit.inc", void create__18StatusNoExpFactoryUsP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/create__19StatusSmellyFactoryUsP4Unit.inc", void create__19StatusSmellyFactoryUsP4Unit());
@@ -102,7 +101,7 @@ extern "C" ASM_FUNC("asm/non_matching/statusImpl/__13StatusCounterUsP4Unit.inc",
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/__12StatusShieldUsP4Unit.inc", void __12StatusShieldUsP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/__12StatusOnFireUsP4Unit.inc", void __12StatusOnFireUsP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/__12StatusPoisonUsP4Unit.inc", void __12StatusPoisonUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__13DefaultStatusUsP4Unit.inc", void __13DefaultStatusUsP4Unit());
+DefaultStatus::DefaultStatus(u16 type, Unit* unit) : Status(type, unit) {}
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/disableAllStatuses__11StatusNoExp.inc", void disableAllStatuses__11StatusNoExp());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/dt__11StatusNoExp.inc", void dt__11StatusNoExp());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/disableAllStatuses__12StatusSmelly.inc", void disableAllStatuses__12StatusSmelly());
