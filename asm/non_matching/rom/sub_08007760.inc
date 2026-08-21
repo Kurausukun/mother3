@@ -152,7 +152,7 @@ _08007844:
 	adds r4, r5, #0
 	adds r4, #0x50
 	adds r0, r4, #0
-	bl sub_08001454
+	bl DmaClearGraphicsBuffer
 	ldr r1, _080078E8
 	adds r0, r5, r1
 	movs r1, #0
@@ -183,7 +183,7 @@ _080078EC:
 	adds r4, r5, #0
 	adds r4, #0x50
 	adds r0, r4, #0
-	bl sub_08001454
+	bl DmaClearGraphicsBuffer
 	ldr r2, _08007A38
 	adds r0, r5, r2
 	movs r1, #0

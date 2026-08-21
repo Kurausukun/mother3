@@ -168,7 +168,7 @@ _080074E4:
 	mov r4, sl
 	adds r4, #0x50
 	adds r0, r4, #0
-	bl sub_08001454
+	bl DmaClearGraphicsBuffer
 	ldr r0, _08007570
 	add r0, sl
 	movs r1, #0

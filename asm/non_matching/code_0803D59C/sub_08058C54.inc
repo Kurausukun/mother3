@@ -31,7 +31,7 @@ sub_08058C54:
 	adds r6, r4, #0
 	adds r6, #0x50
 	adds r0, r6, #0
-	bl sub_08001454
+	bl DmaClearGraphicsBuffer
 	ldr r1, _08058CDC
 	adds r0, r4, r1
 	movs r1, #2

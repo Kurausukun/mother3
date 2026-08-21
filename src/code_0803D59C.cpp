@@ -2643,7 +2643,7 @@ extern "C" void sub_08001960();
 extern "C" void sub_0805AE64();
 extern "C" void sub_08001778(void* arg1, u16 arg2, u16 cursorMin, u16 cursorMax);
 extern "C" void sub_080013D0(void*);
-extern "C" void sub_08001454(void*);
+extern "C" void DmaClearGraphicsBuffer(void*);
 extern "C" void resetInputState(InputState*, u16);
 extern "C" void Dma3CopyPalettesFromGfxBuffer(GraphicsBuffer*);
 
@@ -2746,7 +2746,7 @@ extern "C" void sub_0805AEEC(void) {
     gUnknown_02015E00._c_1 = 0;
     gUnknown_02015E00._8 = 0;
     sub_080013D0(&gSomeBlend);
-    sub_08001454(&gSomeBlend.gfx);
+    DmaClearGraphicsBuffer(&gSomeBlend.gfx);
     resetInputState(&gSomeBlend.input, 2);
 }
 

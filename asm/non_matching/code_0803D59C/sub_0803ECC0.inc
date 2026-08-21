@@ -79,7 +79,7 @@ _0803ED52:
 	adds r4, r5, #0
 	adds r4, #0x50
 	adds r0, r4, #0
-	bl sub_08001530
+	bl CpuClearGraphicsBuffer
 	ldr r1, _0803EDA4
 	adds r0, r5, r1
 	movs r1, #2
@@ -103,7 +103,7 @@ _0803EDA8:
 	adds r4, r5, #0
 	adds r4, #0x50
 	adds r0, r4, #0
-	bl sub_08001454
+	bl DmaClearGraphicsBuffer
 	ldr r1, _0803EE0C
 	adds r0, r5, r1
 	movs r1, #2

@@ -1,3 +1,4 @@
+#include "gba/io_reg.h"
 #include "battle/system.h"
 #include <stddef.h>
 #include "battle/archive.h"
@@ -288,7 +289,7 @@ void system_callback(System* system) {
 
 void System::checkResetKeys() {
     u16 keys = KeyPadManager::get()->getKeys();
-    if (keys == 0xF)
+    if (keys == (A_BUTTON | B_BUTTON | SELECT_BUTTON | START_BUTTON))
         DoReset();
 }
 

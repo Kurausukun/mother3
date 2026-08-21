@@ -2,6 +2,7 @@
 #include "battle/irc.h"
 #include "gba/defines.h"
 #include "gba/gba.h"
+#include "gba/io_reg.h"
 #include "structs.h"
 
 static void main_loop();
@@ -105,7 +106,6 @@ extern const IrqTable gUnknown_080C17A0;
 extern IrqTable gIntrHandlers;
 extern u8 gIntrVector;
 extern const char gIwramMagic[];
-extern u8 gUnknown_03000008;
 extern void* gUnknown_02015E38;
 
 extern "C" void AgbMain() {
@@ -122,9 +122,8 @@ extern "C" void AgbMain() {
     seed_rng();
 
     u32 keys = ~REG_KEYINPUT;
-    if (((keys << 0x16) >> 0x16) == 0xf) {
-        u8* s = &gEngineMode._0;
-        s[1] |= 2;
+    if (((keys << 0x16) >> 0x16) == (A_BUTTON | B_BUTTON | SELECT_BUTTON | START_BUTTON)) {
+        gEngineMode.flags_u8._2 = 1;
     }
 
     init_audio();

@@ -10,6 +10,27 @@
 #include "overworld/script.h"
 #include "structs.h"
 
+struct engineMode {
+    template <class T>
+    struct Flags {
+        T _1 : 1;
+        T _2 : 1;
+        T _4 : 1;
+        T _8 : 1;
+        T _10 : 1;
+        T _20 : 1;
+        T _40 : 1;
+        T _80 : 1;
+    };
+
+    u8 _0;
+    union __attribute__((packed)) {  // FIXME
+        Flags<s8> flags_s8;
+        Flags<u8> flags_u8;
+    };
+};
+extern engineMode gEngineMode;
+
 extern const char _binary_build_mother3_assets_misctext_bin_start;
 extern const char gMapPalettes;
 extern const char gMapTileData;
@@ -38,12 +59,14 @@ extern s16 gMPlayVolumeTable[];
 extern s16 gMPlayVolumeStorageTable[];
 extern const DoorDestinationInfo gDoorDestinationTable[];
 
+extern "C" void DoReset();
 extern "C" s32 Div(s32, s32);
 extern "C" s32 Divide(s32 a, s32 b);
 extern "C" void sub_0803D474();
 extern "C" void sub_08005C38();
 extern "C" void Dma3Clear(void* dest, u32 size);
 extern "C" void CpuFastSet(const void* src, void* dest, u32 control);
+extern "C" void CpuMemClear(void* buff, u32 size);
 extern "C" void write_ram_magic();
 extern "C" void sub_08090F90(s32);
 extern "C" s32 sub_08002FD4(s32, s32);
@@ -51,7 +74,7 @@ extern "C" const void* Blob_GetEntry(const void*, u16);
 extern "C" u16 sub_0801A638(u16);
 extern "C" MusicPlayerInfo* getMusicPlayer_sfx(u16);
 extern "C" void sub_0801A238(s32, MovementVector*);
-extern "C" void sub_080016E4();
+extern "C" void CheckSoftResetKeys(InputState*);
 extern "C" void mode_debug_menu(InputState*);
 extern "C" void sub_0800B00C(InputState*);
 extern "C" void sub_0800BB54(InputState*);
@@ -104,7 +127,7 @@ extern "C" void sub_080013D0(struct_02016028* arg0) {
     }
 }
 
-extern "C" void sub_08001454(GraphicsBuffer* gfx) {
+extern "C" void DmaClearGraphicsBuffer(GraphicsBuffer* gfx) {
     gfx->_2C40 = gfx->_2C42 = gfx->_2C44 = gfx->_2C46 = 0;
 
     Dma3Clear((void*)gfx->_0, 0x800);
@@ -122,7 +145,23 @@ extern "C" void sub_08001454(GraphicsBuffer* gfx) {
     gfx->palettes[0][0] = RGB(gfx->r, gfx->g, gfx->b);
 }
 
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001530.inc", void sub_08001530());
+extern "C" void CpuClearGraphicsBuffer(GraphicsBuffer* gfx) {
+    gfx->_2C40 = gfx->_2C42 = gfx->_2C44 = gfx->_2C46 = 0;
+
+    CpuMemClear((void*)gfx->_0, 0x800);
+    CpuMemClear((void*)gfx->_800, 0x800);
+    CpuMemClear((void*)gfx->_1000, 0x800);
+    CpuMemClear((void*)gfx->_1800, 0x800);
+    CpuMemClear((void*)gfx->palettes, 0x400);
+
+    gfx->oam_counter = 0;
+    gfx->_2C4A = 0;
+    gfx->r = 0;
+    gfx->g = 0;
+    gfx->b = 0;
+
+    gfx->palettes[0][0] = RGB(gfx->r, gfx->g, gfx->b);
+}
 
 extern "C" void CpuCopyPaletteToGfxBuffer(GraphicsBuffer* dest, void* src, u16 index, u16 size) {
     CpuFastSet(src, (void*)dest->palettes[index], size / 4);
@@ -179,7 +218,19 @@ extern "C" void pollInput(InputState* input) {
     input->pressedPending |= input->justPressed;
 }
 
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_080016E4.inc", void sub_080016E4());
+extern "C" void CheckSoftResetKeys(InputState* input) {
+    if ((input->_6 == 3) && gEngineMode.flags_s8._2 < 0) {
+        if (input->pressed == 0) {
+            gEngineMode.flags_s8._2 = 0;
+        } else {
+            return;
+        }
+    }
+
+    if (input->pressed == (A_BUTTON | B_BUTTON | SELECT_BUTTON | START_BUTTON)) {
+        DoReset();
+    }
+}
 
 extern "C" void DoReset(void) {
     m4aMPlayAllStop();
@@ -1091,7 +1142,7 @@ extern "C" ASM_FUNC("asm/non_matching/rom/nullsub_1.inc", void nullsub_1());
 extern "C" ASM_FUNC("asm/non_matching/rom/nullsub_2.inc", void nullsub_2());
 
 extern "C" void exec_mode(InputState* input) {
-    sub_080016E4();
+    CheckSoftResetKeys(input);
     switch (gGame.mode) {
     case MODE_NORMAL:
         sub_0800B00C(input);
