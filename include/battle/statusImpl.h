@@ -5,6 +5,32 @@
 #include "unit.h"
 #include "factory.h"
 
+class StatusParamMod : public Status {
+public:
+    typedef u16 Type;
+
+    StatusParamMod(u16 type, Unit* unit);
+    virtual ~StatusParamMod();
+
+    virtual s32 _148();
+    virtual s32 _150();
+    virtual s32 _158();
+    virtual s32 _160();
+    virtual s32 _168();
+    virtual s32 _170();
+    virtual s32 _178();
+    virtual s32 _180();
+    virtual s32 _188();
+    virtual s32 _190();
+    virtual s32 _198();
+    virtual s32 _1a0();
+    virtual s32 _1a8();
+    virtual s32 _1b0();
+    virtual s32 _1b8();
+    virtual bool _1c0(u16, u16);
+    virtual bool _1c8(u16);
+};
+
 class StatusPoison : public Status {
 public:
     typedef u16 Type;
@@ -29,6 +55,15 @@ public:
 
     StatusSleep(u16 type, Unit* unit);
     virtual ~StatusSleep();
+    virtual bool disableAllStatuses();
+};
+
+class StatusStrange : public Status {
+public:
+    typedef u16 Type;
+
+    StatusStrange(u16 type, Unit* unit);
+    virtual ~StatusStrange();
     virtual bool disableAllStatuses();
 };
 
@@ -149,12 +184,122 @@ public:
     virtual bool disableAllStatuses();
 };
 
+class StatusOffDownWeak : public StatusParamMod {
+public:
+    typedef u16 Type;
+
+    StatusOffDownWeak(u16 type, Unit* unit);
+    virtual ~StatusOffDownWeak();
+    virtual bool disableAllStatuses();
+};
+
+class StatusOffDownStrong : public StatusParamMod {
+public:
+    typedef u16 Type;
+
+    StatusOffDownStrong(u16 type, Unit* unit);
+    virtual ~StatusOffDownStrong();
+    virtual bool disableAllStatuses();
+};
+
+class StatusDefDownWeak : public StatusParamMod {
+public:
+    typedef u16 Type;
+
+    StatusDefDownWeak(u16 type, Unit* unit);
+    virtual ~StatusDefDownWeak();
+    virtual bool disableAllStatuses();
+};
+
+class StatusDefDownStrong : public StatusParamMod {
+public:
+    typedef u16 Type;
+
+    StatusDefDownStrong(u16 type, Unit* unit);
+    virtual ~StatusDefDownStrong();
+    virtual bool disableAllStatuses();
+};
+
+class StatusShield : public Status {
+public:
+    typedef u16 Type;
+
+    StatusShield(u16 type, Unit* unit);
+    virtual ~StatusShield();
+    virtual bool disableAllStatuses();
+};
+
+class StatusCounter : public Status {
+public:
+    typedef u16 Type;
+
+    StatusCounter(u16 type, Unit* unit);
+    virtual ~StatusCounter();
+    virtual bool disableAllStatuses();
+};
+
 class StatusElectrocuted : public Status {
 public:
     typedef u16 Type;
 
     StatusElectrocuted(u16 type, Unit* unit);
     virtual ~StatusElectrocuted();
+    virtual bool disableAllStatuses();
+};
+
+class StatusPsiShield : public Status {
+public:
+    typedef u16 Type;
+
+    StatusPsiShield(u16 type, Unit* unit);
+    virtual ~StatusPsiShield();
+    virtual bool disableAllStatuses();
+};
+
+class StatusPsiCounter : public Status {
+public:
+    typedef u16 Type;
+
+    StatusPsiCounter(u16 type, Unit* unit);
+    virtual ~StatusPsiCounter();
+    virtual bool disableAllStatuses();
+};
+
+class StatusOffUpWeak : public StatusParamMod {
+public:
+    typedef u16 Type;
+
+    StatusOffUpWeak(u16 type, Unit* unit);
+    virtual ~StatusOffUpWeak();
+    virtual bool disableAllStatuses();
+};
+
+class StatusOffUpStrong : public StatusParamMod {
+public:
+    typedef u16 Type;
+
+    StatusOffUpStrong(u16 type, Unit* unit);
+    virtual ~StatusOffUpStrong();
+    virtual bool disableAllStatuses();
+};
+
+class StatusDefUpWeak : public StatusParamMod {
+public:
+    typedef u16 Type;
+
+    StatusDefUpWeak(u16 type, Unit* unit);
+    virtual ~StatusDefUpWeak();
+    virtual bool disableAllStatuses();
+};
+
+class StatusDefUpStrong : public StatusParamMod {
+public:
+    typedef u16 Type;
+
+    StatusDefUpStrong(u16 type, Unit* unit);
+    virtual ~StatusDefUpStrong();
+    virtual Msg fmtStatusMsg(u16 msg);
+    virtual bool status_a0();
     virtual bool disableAllStatuses();
 };
 
@@ -167,6 +312,16 @@ public:
     virtual bool disableAllStatuses();
 };
 
+class StatusOffDownMid : public StatusParamMod {
+public:
+    typedef u16 Type;
+
+    StatusOffDownMid(u16 type, Unit* unit);
+    virtual ~StatusOffDownMid();
+    virtual bool status_a0();
+    virtual bool disableAllStatuses();
+};
+
 class StatusTimeBomb : public Status {
 public:
     typedef u16 Type;
@@ -175,6 +330,25 @@ public:
     virtual ~StatusTimeBomb();
     virtual bool disableAllStatuses();
 };
+
+class StatusParamsUp : public StatusParamMod {
+public:
+    typedef u16 Type;
+
+    StatusParamsUp(u16 type, Unit* unit);
+    virtual ~StatusParamsUp();
+    virtual bool disableAllStatuses();
+};
+
+class StatusParamsDown : public StatusParamMod {
+public:
+    typedef u16 Type;
+
+    StatusParamsDown(u16 type, Unit* unit);
+    virtual ~StatusParamsDown();
+    virtual bool disableAllStatuses();
+};
+
 
 class StatusRefresh : public Status {
 public:
@@ -194,6 +368,24 @@ public:
     virtual bool disableAllStatuses();
 };
 
+class StatusMonkeyDanceOff : public StatusParamMod {
+public:
+    typedef u16 Type;
+
+    StatusMonkeyDanceOff(u16 type, Unit* unit);
+    virtual ~StatusMonkeyDanceOff();
+    virtual bool disableAllStatuses();
+};
+
+class StatusMonkeyDanceDef : public StatusParamMod {
+public:
+    typedef u16 Type;
+
+    StatusMonkeyDanceDef(u16 type, Unit* unit);
+    virtual ~StatusMonkeyDanceDef();
+    virtual bool disableAllStatuses();
+};
+
 class StatusMonkeyDanceSP : public Status {
 public:
     typedef u16 Type;
@@ -209,6 +401,24 @@ public:
 
     StatusMonkeyDanceIQ(u16 type, Unit* unit);
     virtual ~StatusMonkeyDanceIQ();
+    virtual bool disableAllStatuses();
+};
+
+class StatusMonkeyDanceOff2 : public StatusParamMod {
+public:
+    typedef u16 Type;
+
+    StatusMonkeyDanceOff2(u16 type, Unit* unit);
+    virtual ~StatusMonkeyDanceOff2();
+    virtual bool disableAllStatuses();
+};
+
+class StatusMonkeyDanceDef2 : public Status {
+public:
+    typedef u16 Type;
+
+    StatusMonkeyDanceDef2(u16 type, Unit* unit);
+    virtual ~StatusMonkeyDanceDef2();
     virtual bool disableAllStatuses();
 };
 
@@ -239,6 +449,24 @@ public:
     virtual bool disableAllStatuses();
 };
 
+class StatusOffUpMid : public StatusParamMod {
+public:
+    typedef u16 Type;
+
+    StatusOffUpMid(u16 type, Unit* unit);
+    virtual ~StatusOffUpMid();
+    virtual bool disableAllStatuses();
+};
+
+class StatusDefUpMid : public StatusParamMod {
+public:
+    typedef u16 Type;
+
+    StatusDefUpMid(u16 type, Unit* unit);
+    virtual ~StatusDefUpMid();
+    virtual bool disableAllStatuses();
+};
+
 class StatusNoBackSprite : public Status {
 public:
     typedef u16 Type;
@@ -246,43 +474,6 @@ public:
     StatusNoBackSprite(u16 type, Unit* unit);
     virtual ~StatusNoBackSprite();
     virtual bool disableAllStatuses();
-};
-
-class StatusParamMod : public Status {
-public:
-    typedef u16 Type;
-
-    StatusParamMod(u16 type, Unit* unit);
-    virtual ~StatusParamMod();
-
-    virtual s32 _148();
-    virtual s32 _150();
-    virtual s32 _158();
-    virtual s32 _160();
-    virtual s32 _168();
-    virtual s32 _170();
-    virtual s32 _178();
-    virtual s32 _180();
-    virtual s32 _188();
-    virtual s32 _190();
-    virtual s32 _198();
-    virtual s32 _1a0();
-    virtual s32 _1a8();
-    virtual s32 _1b0();
-    virtual s32 _1b8();
-    virtual bool _1c0(u16, u16);
-    virtual bool _1c8(u16);
-};
-
-class StatusDefUpStrong : public StatusParamMod {
-public:
-    typedef u16 Type;
-    
-    StatusDefUpStrong(u16 type, Unit* unit);
-    virtual ~StatusDefUpStrong();
-    
-    virtual Msg fmtStatusMsg(u16 msg);
-    virtual bool status_a0();
 };
 
 class DefaultStatus : public Status {

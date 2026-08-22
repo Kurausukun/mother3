@@ -71899,7 +71899,7 @@ _vt.20StatusMonkeyDanceOff::
 	.4byte status_a0__20StatusMonkeyDanceOff
 	.2byte 0
 	.2byte 0
-	.4byte disableAllStatus__20StatusMonkeyDanceOff
+	.4byte disableAllStatuses__20StatusMonkeyDanceOff
 	.2byte 0
 	.2byte 0
 	.4byte status_b0__14StatusParamMod
@@ -74184,10 +74184,10 @@ _vt.16StatusOffDownMid::
 	.4byte status_98__16StatusOffDownMid
 	.2byte 0
 	.2byte 0
+	.4byte status_a0__16StatusOffDownMid
+	.2byte 0
+	.2byte 0
 	.4byte disableAllStatuses__16StatusOffDownMid
-	.2byte 0
-	.2byte 0
-	.4byte status_b0__16StatusOffDownMid
 	.2byte 0
 	.2byte 0
 	.4byte status_b0__14StatusParamMod
