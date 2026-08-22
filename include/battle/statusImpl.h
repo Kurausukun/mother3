@@ -204,6 +204,7 @@ public:
 
     StatusOffDownWeak(u16 type, Unit* unit);
     virtual ~StatusOffDownWeak();
+    virtual Msg fmtStatusMsg(u16 msg);
     virtual bool disableAllStatuses();
 };
 
@@ -213,6 +214,7 @@ public:
 
     StatusOffDownStrong(u16 type, Unit* unit);
     virtual ~StatusOffDownStrong();
+    virtual Msg fmtStatusMsg(u16 msg);
     virtual bool disableAllStatuses();
 };
 
@@ -222,6 +224,7 @@ public:
 
     StatusDefDownWeak(u16 type, Unit* unit);
     virtual ~StatusDefDownWeak();
+    virtual Msg fmtStatusMsg(u16 msg);
     virtual bool disableAllStatuses();
 };
 
@@ -231,6 +234,7 @@ public:
 
     StatusDefDownStrong(u16 type, Unit* unit);
     virtual ~StatusDefDownStrong();
+    virtual Msg fmtStatusMsg(u16 msg);
     virtual bool disableAllStatuses();
 };
 
@@ -285,6 +289,7 @@ public:
 
     StatusOffUpWeak(u16 type, Unit* unit);
     virtual ~StatusOffUpWeak();
+    virtual Msg fmtStatusMsg(u16 msg);
     virtual bool disableAllStatuses();
 };
 
@@ -294,6 +299,7 @@ public:
 
     StatusOffUpStrong(u16 type, Unit* unit);
     virtual ~StatusOffUpStrong();
+    virtual Msg fmtStatusMsg(u16 msg);
     virtual bool disableAllStatuses();
 };
 
@@ -303,6 +309,7 @@ public:
 
     StatusDefUpWeak(u16 type, Unit* unit);
     virtual ~StatusDefUpWeak();
+    virtual Msg fmtStatusMsg(u16 msg);
     virtual bool disableAllStatuses();
 };
 
@@ -332,6 +339,7 @@ public:
 
     StatusOffDownMid(u16 type, Unit* unit);
     virtual ~StatusOffDownMid();
+    virtual Msg fmtStatusMsg(u16 msg);
     virtual bool status_a0();
     virtual bool disableAllStatuses();
 };
@@ -342,6 +350,7 @@ public:
 
     StatusDefDownMid(u16 type, Unit* unit);
     virtual ~StatusDefDownMid();
+    virtual Msg fmtStatusMsg(u16 msg);
     virtual bool status_a0();
     virtual bool disableAllStatuses();
 };
@@ -362,6 +371,7 @@ public:
     StatusParamsUp(u16 type, Unit* unit);
     virtual ~StatusParamsUp();
     virtual bool disableAllStatuses();
+    virtual Msg fmtStatusMsg(u16 msg);
 };
 
 class StatusParamsDown : public StatusParamMod {
@@ -371,6 +381,7 @@ public:
     StatusParamsDown(u16 type, Unit* unit);
     virtual ~StatusParamsDown();
     virtual bool disableAllStatuses();
+    virtual Msg fmtStatusMsg(u16 msg);
 };
 
 
@@ -398,6 +409,7 @@ public:
 
     StatusMonkeyDanceOff(u16 type, Unit* unit);
     virtual ~StatusMonkeyDanceOff();
+    virtual Msg fmtStatusMsg(u16 msg);
     virtual bool disableAllStatuses();
 };
 
@@ -407,6 +419,7 @@ public:
 
     StatusMonkeyDanceDef(u16 type, Unit* unit);
     virtual ~StatusMonkeyDanceDef();
+    virtual Msg fmtStatusMsg(u16 msg);
     virtual bool disableAllStatuses();
 };
 
@@ -416,6 +429,7 @@ public:
 
     StatusMonkeyDanceSP(u16 type, Unit* unit);
     virtual ~StatusMonkeyDanceSP();
+    virtual Msg fmtStatusMsg(u16 msg);
     virtual bool disableAllStatuses();
 };
 
@@ -425,6 +439,7 @@ public:
 
     StatusMonkeyDanceIQ(u16 type, Unit* unit);
     virtual ~StatusMonkeyDanceIQ();
+    virtual Msg fmtStatusMsg(u16 msg);
     virtual bool disableAllStatuses();
 };
 
@@ -434,6 +449,7 @@ public:
 
     StatusMonkeyDanceOff2(u16 type, Unit* unit);
     virtual ~StatusMonkeyDanceOff2();
+    virtual Msg fmtStatusMsg(u16 msg);
     virtual bool disableAllStatuses();
 };
 
@@ -443,6 +459,7 @@ public:
 
     StatusMonkeyDanceDef2(u16 type, Unit* unit);
     virtual ~StatusMonkeyDanceDef2();
+    virtual Msg fmtStatusMsg(u16 msg);
     virtual bool disableAllStatuses();
 };
 
@@ -452,6 +469,7 @@ public:
 
     StatusMonkeyDanceSP2(u16 type, Unit* unit);
     virtual ~StatusMonkeyDanceSP2();
+    virtual Msg fmtStatusMsg(u16 msg);
     virtual bool disableAllStatuses();
 };
 
@@ -461,6 +479,7 @@ public:
 
     StatusMonkeyDanceIQ2(u16 type, Unit* unit);
     virtual ~StatusMonkeyDanceIQ2();
+    virtual Msg fmtStatusMsg(u16 msg);
     virtual bool disableAllStatuses();
 };
 
@@ -479,6 +498,7 @@ public:
 
     StatusOffUpMid(u16 type, Unit* unit);
     virtual ~StatusOffUpMid();
+    virtual Msg fmtStatusMsg(u16 msg);
     virtual bool disableAllStatuses();
 };
 
@@ -488,6 +508,7 @@ public:
 
     StatusDefUpMid(u16 type, Unit* unit);
     virtual ~StatusDefUpMid();
+    virtual Msg fmtStatusMsg(u16 msg);
     virtual bool disableAllStatuses();
 };
 

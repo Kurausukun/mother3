@@ -139,7 +139,15 @@ bool StatusStrange::disableAllStatuses() {
 };
 
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/dt__13StatusStrange.inc", void dt__13StatusStrange());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/fmtStatusMsg__20StatusMonkeyDanceIQ2Us.inc", void fmtStatusMsg__20StatusMonkeyDanceIQ2Us());
+
+Msg StatusMonkeyDanceIQ2::fmtStatusMsg(u16 msg) {
+    s32 val = this->_1a8();
+    if (val < 0) {
+        val = -val;
+    }
+    return ROMStrFmt(msg, Msg::bcd(val), this->unit()->name(), Msg::Msg());
+};
+
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/_158__20StatusMonkeyDanceIQ2.inc", void _158__20StatusMonkeyDanceIQ2());
 
 bool StatusMonkeyDanceIQ2::disableAllStatuses() {
@@ -152,7 +160,15 @@ bool StatusMonkeyDanceIQ2::disableAllStatuses() {
 };
 
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/dt__20StatusMonkeyDanceIQ2.inc", void dt__20StatusMonkeyDanceIQ2());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/fmtStatusMsg__20StatusMonkeyDanceSP2Us.inc", void fmtStatusMsg__20StatusMonkeyDanceSP2Us());
+
+Msg StatusMonkeyDanceSP2::fmtStatusMsg(u16 msg) {
+    s32 val = this->_1b0();
+    if (val < 0) {
+        val = -val;
+    }
+    return ROMStrFmt(msg, Msg::bcd(val), this->unit()->name(), Msg::Msg());
+};
+
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/_160__20StatusMonkeyDanceSP2.inc", void _160__20StatusMonkeyDanceSP2());
 
 bool StatusMonkeyDanceSP2::disableAllStatuses() {
@@ -165,13 +181,29 @@ bool StatusMonkeyDanceSP2::disableAllStatuses() {
 };
 
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/dt__20StatusMonkeyDanceSP2.inc", void dt__20StatusMonkeyDanceSP2());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/fmtStatusMsg__21StatusMonkeyDanceDef2Us.inc", void fmtStatusMsg__21StatusMonkeyDanceDef2Us());
+
+Msg StatusMonkeyDanceDef2::fmtStatusMsg(u16 msg) {
+    s32 val = this->_1a0();
+    if (val < 0) {
+        val = -val;
+    }
+    return ROMStrFmt(msg, Msg::bcd(val), this->unit()->name(), Msg::Msg());
+};
+
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/_150__21StatusMonkeyDanceDef2.inc", void _150__21StatusMonkeyDanceDef2());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/disableAllStatuses__21StatusMonkeyDanceDef2.inc", void disableAllStatuses__21StatusMonkeyDanceDef2());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_a0__21StatusMonkeyDanceDef2.inc", void status_a0__21StatusMonkeyDanceDef2());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_98__21StatusMonkeyDanceDef2.inc", void status_98__21StatusMonkeyDanceDef2());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/dt__21StatusMonkeyDanceDef2.inc", void dt__21StatusMonkeyDanceDef2());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/fmtStatusMsg__21StatusMonkeyDanceOff2Us.inc", void fmtStatusMsg__21StatusMonkeyDanceOff2Us());
+
+Msg StatusMonkeyDanceOff2::fmtStatusMsg(u16 msg) {
+    s32 val = this->_198();
+    if (val < 0) {
+        val = -val;
+    }
+    return ROMStrFmt(msg, Msg::bcd(val), this->unit()->name(), Msg::Msg());
+};
+
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/_148__21StatusMonkeyDanceOff2.inc", void _148__21StatusMonkeyDanceOff2());
 
 bool StatusMonkeyDanceOff2::disableAllStatuses() {
@@ -189,7 +221,15 @@ bool StatusMonkeyDanceOff2::disableAllStatuses() {
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_a0__21StatusMonkeyDanceOff2.inc", void status_a0__21StatusMonkeyDanceOff2());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_98__21StatusMonkeyDanceOff2.inc", void status_98__21StatusMonkeyDanceOff2());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/dt__21StatusMonkeyDanceOff2.inc", void dt__21StatusMonkeyDanceOff2());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/fmtStatusMsg__19StatusMonkeyDanceIQUs.inc", void fmtStatusMsg__19StatusMonkeyDanceIQUs());
+
+Msg StatusMonkeyDanceIQ::fmtStatusMsg(u16 msg) {
+    s32 val = this->_1a8();
+    if (val < 0) {
+        val = -val;
+    }
+    return ROMStrFmt(msg, Msg::bcd(val), this->unit()->name(), Msg::Msg());
+};
+
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/_158__19StatusMonkeyDanceIQ.inc", void _158__19StatusMonkeyDanceIQ());
 
 bool StatusMonkeyDanceIQ::disableAllStatuses() {
@@ -202,7 +242,15 @@ bool StatusMonkeyDanceIQ::disableAllStatuses() {
 };
 
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/dt__19StatusMonkeyDanceIQ.inc", void dt__19StatusMonkeyDanceIQ());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/fmtStatusMsg__19StatusMonkeyDanceSPUs.inc", void fmtStatusMsg__19StatusMonkeyDanceSPUs());
+
+Msg StatusMonkeyDanceSP::fmtStatusMsg(u16 msg) {
+    s32 val = this->_1b0();
+    if (val < 0) {
+        val = -val;
+    }
+    return ROMStrFmt(msg, Msg::bcd(val), this->unit()->name(), Msg::Msg());
+};
+
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/_160__19StatusMonkeyDanceSP.inc", void _160__19StatusMonkeyDanceSP());
 
 bool StatusMonkeyDanceSP::disableAllStatuses() {
@@ -215,14 +263,30 @@ bool StatusMonkeyDanceSP::disableAllStatuses() {
 };
 
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/dt__19StatusMonkeyDanceSP.inc", void dt__19StatusMonkeyDanceSP());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/fmtStatusMsg__20StatusMonkeyDanceDefUs.inc", void fmtStatusMsg__20StatusMonkeyDanceDefUs());
+
+Msg StatusMonkeyDanceDef::fmtStatusMsg(u16 msg) {
+    s32 val = this->_1a0();
+    if (val < 0) {
+        val = -val;
+    }
+    return ROMStrFmt(msg, Msg::bcd(val), this->unit()->name(), Msg::Msg());
+};
+
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/_150__20StatusMonkeyDanceDef.inc", void _150__20StatusMonkeyDanceDef());
 
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/disableAllStatuses__20StatusMonkeyDanceDef.inc", void disableAllStatuses__20StatusMonkeyDanceDef());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_a0__20StatusMonkeyDanceDef.inc", void status_a0__20StatusMonkeyDanceDef());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_98__20StatusMonkeyDanceDef.inc", void status_98__20StatusMonkeyDanceDef());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/dt__20StatusMonkeyDanceDef.inc", void dt__20StatusMonkeyDanceDef());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/fmtStatusMsg__20StatusMonkeyDanceOffUs.inc", void fmtStatusMsg__20StatusMonkeyDanceOffUs());
+
+Msg StatusMonkeyDanceOff::fmtStatusMsg(u16 msg) {
+    s32 val = this->_198();
+    if (val < 0) {
+        val = -val;
+    }
+    return ROMStrFmt(msg, Msg::bcd(val), this->unit()->name(), Msg::Msg());
+};
+
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/_148__20StatusMonkeyDanceOff.inc", void _148__20StatusMonkeyDanceOff());
 
 bool StatusMonkeyDanceOff::disableAllStatuses() {
@@ -297,7 +361,15 @@ bool StatusDefUpStrong::status_a0() {
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_98__17StatusDefUpStrong.inc", void status_98__17StatusDefUpStrong());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_90__17StatusDefUpStrong.inc", void status_90__17StatusDefUpStrong());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/dt__17StatusDefUpStrong.inc", void dt__17StatusDefUpStrong());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/fmtStatusMsg__14StatusDefUpMidUs.inc", void fmtStatusMsg__14StatusDefUpMidUs());
+
+Msg StatusDefUpMid::fmtStatusMsg(u16 msg) {
+    s32 val = this->_1a0();
+    if (val < 0) {
+        val = -val;
+    }
+    return ROMStrFmt(msg, Msg::bcd(val), this->unit()->name(), Msg::Msg());
+};
+
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/_150__14StatusDefUpMid.inc", void _150__14StatusDefUpMid());
 
 bool StatusDefUpMid::disableAllStatuses() {
@@ -311,7 +383,15 @@ bool StatusDefUpMid::disableAllStatuses() {
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_a0__14StatusDefUpMid.inc", void status_a0__14StatusDefUpMid());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_98__14StatusDefUpMid.inc", void status_98__14StatusDefUpMid());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/dt__14StatusDefUpMid.inc", void dt__14StatusDefUpMid());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/fmtStatusMsg__15StatusDefUpWeakUs.inc", void fmtStatusMsg__15StatusDefUpWeakUs());
+
+Msg StatusDefUpWeak::fmtStatusMsg(u16 msg) {
+    s32 val = this->_1a0();
+    if (val < 0) {
+        val = -val;
+    }
+    return ROMStrFmt(msg, Msg::bcd(val), this->unit()->name(), Msg::Msg());
+};
+
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/_150__15StatusDefUpWeak.inc", void _150__15StatusDefUpWeak());
 
 bool StatusDefUpWeak::disableAllStatuses() {
@@ -325,7 +405,15 @@ bool StatusDefUpWeak::disableAllStatuses() {
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_a0__15StatusDefUpWeak.inc", void status_a0__15StatusDefUpWeak());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_98__15StatusDefUpWeak.inc", void status_98__15StatusDefUpWeak());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/dt__15StatusDefUpWeak.inc", void dt__15StatusDefUpWeak());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/fmtStatusMsg__17StatusOffUpStrongUs.inc", void fmtStatusMsg__17StatusOffUpStrongUs());
+
+Msg StatusOffUpStrong::fmtStatusMsg(u16 msg) {
+    s32 val = this->_198();
+    if (val < 0) {
+        val = -val;
+    }
+    return ROMStrFmt(msg, Msg::bcd(val), this->unit()->name(), Msg::Msg());
+};
+
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/_148__17StatusOffUpStrong.inc", void _148__17StatusOffUpStrong());
 
 bool StatusOffUpStrong::disableAllStatuses() {
@@ -340,7 +428,15 @@ extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_a0__17StatusOffUpStrong.
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_98__17StatusOffUpStrong.inc", void status_98__17StatusOffUpStrong());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_90__17StatusOffUpStrong.inc", void status_90__17StatusOffUpStrong());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/dt__17StatusOffUpStrong.inc", void dt__17StatusOffUpStrong());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/fmtStatusMsg__14StatusOffUpMidUs.inc", void fmtStatusMsg__14StatusOffUpMidUs());
+
+Msg StatusOffUpMid::fmtStatusMsg(u16 msg) {
+    s32 val = this->_198();
+    if (val < 0) {
+        val = -val;
+    }
+    return ROMStrFmt(msg, Msg::bcd(val), this->unit()->name(), Msg::Msg());
+};
+
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/_148__14StatusOffUpMid.inc", void _148__14StatusOffUpMid());
 
 bool StatusOffUpMid::disableAllStatuses() {
@@ -354,7 +450,15 @@ bool StatusOffUpMid::disableAllStatuses() {
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_a0__14StatusOffUpMid.inc", void status_a0__14StatusOffUpMid());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_98__14StatusOffUpMid.inc", void status_98__14StatusOffUpMid());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/dt__14StatusOffUpMid.inc", void dt__14StatusOffUpMid());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/fmtStatusMsg__15StatusOffUpWeakUs.inc", void fmtStatusMsg__15StatusOffUpWeakUs());
+
+Msg StatusOffUpWeak::fmtStatusMsg(u16 msg) {
+    s32 val = this->_198();
+    if (val < 0) {
+        val = -val;
+    }
+    return ROMStrFmt(msg, Msg::bcd(val), this->unit()->name(), Msg::Msg());
+};
+
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/_148__15StatusOffUpWeak.inc", void _148__15StatusOffUpWeak());
 
 bool StatusOffUpWeak::disableAllStatuses() {
@@ -368,7 +472,15 @@ bool StatusOffUpWeak::disableAllStatuses() {
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_a0__15StatusOffUpWeak.inc", void status_a0__15StatusOffUpWeak());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_98__15StatusOffUpWeak.inc", void status_98__15StatusOffUpWeak());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/dt__15StatusOffUpWeak.inc", void dt__15StatusOffUpWeak());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/fmtStatusMsg__19StatusDefDownStrongUs.inc", void fmtStatusMsg__19StatusDefDownStrongUs());
+
+Msg StatusDefDownStrong::fmtStatusMsg(u16 msg) {
+    s32 val = this->_1a0();
+    if (val < 0) {
+        val = -val;
+    }
+    return ROMStrFmt(msg, Msg::bcd(val), this->unit()->name(), Msg::Msg());
+};
+
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/_150__19StatusDefDownStrong.inc", void _150__19StatusDefDownStrong());
 
 bool StatusDefDownStrong::disableAllStatuses() {
@@ -383,13 +495,29 @@ extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_a0__19StatusDefDownStron
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_98__19StatusDefDownStrong.inc", void status_98__19StatusDefDownStrong());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_90__19StatusDefDownStrong.inc", void status_90__19StatusDefDownStrong());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/dt__19StatusDefDownStrong.inc", void dt__19StatusDefDownStrong());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/fmtStatusMsg__16StatusDefDownMidUs.inc", void fmtStatusMsg__16StatusDefDownMidUs());
+
+Msg StatusDefDownMid::fmtStatusMsg(u16 msg) {
+    s32 val = this->_1a0();
+    if (val < 0) {
+        val = -val;
+    }
+    return ROMStrFmt(msg, Msg::bcd(val), this->unit()->name(), Msg::Msg());
+};
+
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/_150__16StatusDefDownMid.inc", void _150__16StatusDefDownMid());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_a0__16StatusDefDownMid.inc", void status_a0__16StatusDefDownMid());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_98__16StatusDefDownMid.inc", void status_98__16StatusDefDownMid());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_90__16StatusDefDownMid.inc", void status_90__16StatusDefDownMid());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/dt__16StatusDefDownMid.inc", void dt__16StatusDefDownMid());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/fmtStatusMsg__17StatusDefDownWeakUs.inc", void fmtStatusMsg__17StatusDefDownWeakUs());
+
+Msg StatusDefDownWeak::fmtStatusMsg(u16 msg) {
+    s32 val = this->_1a0();
+    if (val < 0) {
+        val = -val;
+    }
+    return ROMStrFmt(msg, Msg::bcd(val), this->unit()->name(), Msg::Msg());
+};
+
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/_150__17StatusDefDownWeak.inc", void _150__17StatusDefDownWeak());
 
 bool StatusDefDownWeak::disableAllStatuses() {
@@ -403,7 +531,15 @@ bool StatusDefDownWeak::disableAllStatuses() {
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_a0__17StatusDefDownWeak.inc", void status_a0__17StatusDefDownWeak());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_98__17StatusDefDownWeak.inc", void status_98__17StatusDefDownWeak());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/dt__17StatusDefDownWeak.inc", void dt__17StatusDefDownWeak());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/fmtStatusMsg__19StatusOffDownStrongUs.inc", void fmtStatusMsg__19StatusOffDownStrongUs());
+
+Msg StatusOffDownStrong::fmtStatusMsg(u16 msg) {
+    s32 val = this->_198();
+    if (val < 0) {
+        val = -val;
+    }
+    return ROMStrFmt(msg, Msg::bcd(val), this->unit()->name(), Msg::Msg());
+};
+
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/_148__19StatusOffDownStrong.inc", void _148__19StatusOffDownStrong());
 
 bool StatusOffDownStrong::disableAllStatuses() {
@@ -418,7 +554,15 @@ extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_a0__19StatusOffDownStron
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_98__19StatusOffDownStrong.inc", void status_98__19StatusOffDownStrong());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_90__19StatusOffDownStrong.inc", void status_90__19StatusOffDownStrong());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/dt__19StatusOffDownStrong.inc", void dt__19StatusOffDownStrong());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/fmtStatusMsg__16StatusOffDownMidUs.inc", void fmtStatusMsg__16StatusOffDownMidUs());
+
+Msg StatusOffDownMid::fmtStatusMsg(u16 msg) {
+    s32 val = this->_198();
+    if (val < 0) {
+        val = -val;
+    }
+    return ROMStrFmt(msg, Msg::bcd(val), this->unit()->name(), Msg::Msg());
+};
+
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/_148__16StatusOffDownMid.inc", void _148__16StatusOffDownMid());
 
 bool StatusOffDownMid::disableAllStatuses() {
@@ -438,7 +582,15 @@ bool StatusOffDownMid::status_a0() {
 
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_98__16StatusOffDownMid.inc", void status_98__16StatusOffDownMid());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/dt__16StatusOffDownMid.inc", void dt__16StatusOffDownMid());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/fmtStatusMsg__17StatusOffDownWeakUs.inc", void fmtStatusMsg__17StatusOffDownWeakUs());
+
+Msg StatusOffDownWeak::fmtStatusMsg(u16 msg) {
+    s32 val = this->_198();
+    if (val < 0) {
+        val = -val;
+    }
+    return ROMStrFmt(msg, Msg::bcd(val), this->unit()->name(), Msg::Msg());
+};
+
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/_148__17StatusOffDownWeak.inc", void _148__17StatusOffDownWeak());
 
 bool StatusOffDownWeak::disableAllStatuses() {
