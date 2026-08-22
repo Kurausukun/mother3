@@ -9,8 +9,21 @@ class StatusParamMod : public Status {
 public:
     typedef u16 Type;
 
-    StatusParamMod(u16 type, Unit* unit);
+    StatusParamMod(u16 type, Unit* unit) : Status(type, unit) {
+        _34 = this->unit()->offense();
+        _38 = this->unit()->defense();
+        _3c = this->unit()->iq();
+        _40 = this->unit()->speed();
+        _44 = this->unit()->kindness();
+        _48 = 0;
+        _4c = 0;
+        _50 = 0;
+        _54 = 0;
+        _58 = 0;
+    }
     virtual ~StatusParamMod();
+
+    s32 _38, _3c, _40, _44, _48, _4c, _50, _54, _58;
 
     virtual s32 _148();
     virtual s32 _150();
@@ -30,6 +43,7 @@ public:
     virtual bool _1c0(u16, u16);
     virtual bool _1c8(u16);
 };
+
 
 class StatusPoison : public Status {
 public:
@@ -67,7 +81,7 @@ public:
     virtual bool disableAllStatuses();
 };
 
-class StatusCrying : public Status {
+class StatusCrying : public StatusParamMod {
 public:
     typedef u16 Type;
 
@@ -94,7 +108,7 @@ public:
     virtual bool disableAllStatuses();
 };
 
-class StatusFleas : public Status {
+class StatusFleas : public StatusParamMod {
 public:
     typedef u16 Type;
 
@@ -166,7 +180,7 @@ public:
     virtual bool disableAllStatuses();
 };
 
-class StatusDefend : public Status {
+class StatusDefend : public StatusParamMod {
 public:
     typedef u16 Type;
 
@@ -322,6 +336,16 @@ public:
     virtual bool disableAllStatuses();
 };
 
+class StatusDefDownMid : public StatusParamMod {
+public:
+    typedef u16 Type;
+
+    StatusDefDownMid(u16 type, Unit* unit);
+    virtual ~StatusDefDownMid();
+    virtual bool status_a0();
+    virtual bool disableAllStatuses();
+};
+
 class StatusTimeBomb : public Status {
 public:
     typedef u16 Type;
@@ -386,7 +410,7 @@ public:
     virtual bool disableAllStatuses();
 };
 
-class StatusMonkeyDanceSP : public Status {
+class StatusMonkeyDanceSP : public StatusParamMod {
 public:
     typedef u16 Type;
 
@@ -395,7 +419,7 @@ public:
     virtual bool disableAllStatuses();
 };
 
-class StatusMonkeyDanceIQ : public Status {
+class StatusMonkeyDanceIQ : public StatusParamMod {
 public:
     typedef u16 Type;
 
@@ -413,7 +437,7 @@ public:
     virtual bool disableAllStatuses();
 };
 
-class StatusMonkeyDanceDef2 : public Status {
+class StatusMonkeyDanceDef2 : public StatusParamMod {
 public:
     typedef u16 Type;
 
@@ -422,7 +446,7 @@ public:
     virtual bool disableAllStatuses();
 };
 
-class StatusMonkeyDanceSP2 : public Status {
+class StatusMonkeyDanceSP2 : public StatusParamMod {
 public:
     typedef u16 Type;
 
@@ -431,7 +455,7 @@ public:
     virtual bool disableAllStatuses();
 };
 
-class StatusMonkeyDanceIQ2 : public Status {
+class StatusMonkeyDanceIQ2 : public StatusParamMod {
 public:
     typedef u16 Type;
 

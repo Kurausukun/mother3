@@ -119,7 +119,6 @@ public:
     /* 0x30 */ s16 mTurnLimit;
     /* 0x32 */ s16 mTurns;
     /* 0x34 */ s32 _34;
-    /* 0x38 */ s32 _38;
-};  // size: 0x3C
+};  // size: 0x38
 
 #endif  // BATTLE_STATUS_H

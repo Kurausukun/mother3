@@ -1,5 +1,9 @@
 #include "battle/statusImpl.h"
 
+#define CAST_U16(x)  ({u16 _r; asm("" : "=r"(_r) : "0"(x)); _r;}) // Workaround for strange bug with the compiler not casting u16
+
+extern "C" s32 randS32(s32, s32);
+
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/create__18StatusNoExpFactoryUsP4Unit.inc", void create__18StatusNoExpFactoryUsP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/create__19StatusSmellyFactoryUsP4Unit.inc", void create__19StatusSmellyFactoryUsP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/create__20StatusStrangeFactoryUsP4Unit.inc", void create__20StatusStrangeFactoryUsP4Unit());
@@ -52,55 +56,55 @@ extern "C" ASM_FUNC("asm/non_matching/statusImpl/create__19StatusOnFireFactoryUs
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/create__19StatusPoisonFactoryUsP4Unit.inc", void create__19StatusPoisonFactoryUsP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/create__20DefaultStatusFactoryUsP4Unit.inc", void create__20DefaultStatusFactoryUsP4Unit());
 StatusNoExp::StatusNoExp(u16 id, Unit* user) : Status(id, user) {}
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__12StatusSmellyUsP4Unit.inc", void __12StatusSmellyUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__13StatusStrangeUsP4Unit.inc", void __13StatusStrangeUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__20StatusMonkeyDanceIQ2UsP4Unit.inc", void __20StatusMonkeyDanceIQ2UsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__20StatusMonkeyDanceSP2UsP4Unit.inc", void __20StatusMonkeyDanceSP2UsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__21StatusMonkeyDanceDef2UsP4Unit.inc", void __21StatusMonkeyDanceDef2UsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__21StatusMonkeyDanceOff2UsP4Unit.inc", void __21StatusMonkeyDanceOff2UsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__19StatusMonkeyDanceIQUsP4Unit.inc", void __19StatusMonkeyDanceIQUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__19StatusMonkeyDanceSPUsP4Unit.inc", void __19StatusMonkeyDanceSPUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__20StatusMonkeyDanceDefUsP4Unit.inc", void __20StatusMonkeyDanceDefUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__20StatusMonkeyDanceOffUsP4Unit.inc", void __20StatusMonkeyDanceOffUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__16StatusParamsDownUsP4Unit.inc", void __16StatusParamsDownUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__14StatusParamsUpUsP4Unit.inc", void __14StatusParamsUpUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__17StatusDefUpStrongUsP4Unit.inc", void __17StatusDefUpStrongUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__14StatusDefUpMidUsP4Unit.inc", void __14StatusDefUpMidUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__15StatusDefUpWeakUsP4Unit.inc", void __15StatusDefUpWeakUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__17StatusOffUpStrongUsP4Unit.inc", void __17StatusOffUpStrongUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__14StatusOffUpMidUsP4Unit.inc", void __14StatusOffUpMidUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__15StatusOffUpWeakUsP4Unit.inc", void __15StatusOffUpWeakUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__19StatusDefDownStrongUsP4Unit.inc", void __19StatusDefDownStrongUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__16StatusDefDownMidUsP4Unit.inc", void __16StatusDefDownMidUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__17StatusDefDownWeakUsP4Unit.inc", void __17StatusDefDownWeakUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__19StatusOffDownStrongUsP4Unit.inc", void __19StatusOffDownStrongUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__16StatusOffDownMidUsP4Unit.inc", void __16StatusOffDownMidUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__17StatusOffDownWeakUsP4Unit.inc", void __17StatusOffDownWeakUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__12StatusDefendUsP4Unit.inc", void __12StatusDefendUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__11StatusFleasUsP4Unit.inc", void __11StatusFleasUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__12StatusCryingUsP4Unit.inc", void __12StatusCryingUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__18StatusNoBackSpriteUsP4Unit.inc", void __18StatusNoBackSpriteUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__13StatusStapledUsP4Unit.inc", void __13StatusStapledUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__10StatusFellUsP4Unit.inc", void __10StatusFellUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__10StatusDCMCUsP4Unit.inc", void __10StatusDCMCUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__11StatusDanceUsP4Unit.inc", void __11StatusDanceUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__14StatusLaughingUsP4Unit.inc", void __14StatusLaughingUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__16StatusApologeticUsP4Unit.inc", void __16StatusApologeticUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__12StatusFrozenUsP4Unit.inc", void __12StatusFrozenUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__14StatusNauseousUsP4Unit.inc", void __14StatusNauseousUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__15StatusForgetfulUsP4Unit.inc", void __15StatusForgetfulUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__11StatusSleepUsP4Unit.inc", void __11StatusSleepUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__10StatusNumbUsP4Unit.inc", void __10StatusNumbUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__13StatusRefreshUsP4Unit.inc", void __13StatusRefreshUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__12StatusEndureUsP4Unit.inc", void __12StatusEndureUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__14StatusTimeBombUsP4Unit.inc", void __14StatusTimeBombUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__16StatusPsiCounterUsP4Unit.inc", void __16StatusPsiCounterUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__15StatusPsiShieldUsP4Unit.inc", void __15StatusPsiShieldUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__18StatusElectrocutedUsP4Unit.inc", void __18StatusElectrocutedUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__13StatusCounterUsP4Unit.inc", void __13StatusCounterUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__12StatusShieldUsP4Unit.inc", void __12StatusShieldUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__12StatusOnFireUsP4Unit.inc", void __12StatusOnFireUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/__12StatusPoisonUsP4Unit.inc", void __12StatusPoisonUsP4Unit());
+StatusSmelly::StatusSmelly(u16 id, Unit* user) : Status(id, user) {}
+StatusStrange::StatusStrange(u16 id, Unit* user) : Status(id, user) {}
+StatusMonkeyDanceIQ2::StatusMonkeyDanceIQ2(u16 id, Unit* user) : StatusParamMod(id, user) {}
+StatusMonkeyDanceSP2::StatusMonkeyDanceSP2(u16 id, Unit* user) : StatusParamMod(id, user) {}
+StatusMonkeyDanceDef2::StatusMonkeyDanceDef2(u16 id, Unit* user) : StatusParamMod(id, user) {}
+StatusMonkeyDanceOff2::StatusMonkeyDanceOff2(u16 id, Unit* user) : StatusParamMod(id, user) {}
+StatusMonkeyDanceIQ::StatusMonkeyDanceIQ(u16 id, Unit* user) : StatusParamMod(id, user) {}
+StatusMonkeyDanceSP::StatusMonkeyDanceSP(u16 id, Unit* user) : StatusParamMod(id, user) {}
+StatusMonkeyDanceDef::StatusMonkeyDanceDef(u16 id, Unit* user) : StatusParamMod(id, user) {}
+StatusMonkeyDanceOff::StatusMonkeyDanceOff(u16 id, Unit* user) : StatusParamMod(id, user) {}
+StatusParamsDown::StatusParamsDown(u16 id, Unit* user) : StatusParamMod(id, user) {}
+StatusParamsUp::StatusParamsUp(u16 id, Unit* user) : StatusParamMod(id, user) {}
+StatusDefUpStrong::StatusDefUpStrong(u16 id, Unit* user) : StatusParamMod(id, user) {}
+StatusDefUpMid::StatusDefUpMid(u16 id, Unit* user) : StatusParamMod(id, user) {}
+StatusDefUpWeak::StatusDefUpWeak(u16 id, Unit* user) : StatusParamMod(id, user) {}
+StatusOffUpStrong::StatusOffUpStrong(u16 id, Unit* user) : StatusParamMod(id, user) {}
+StatusOffUpMid::StatusOffUpMid(u16 id, Unit* user) : StatusParamMod(id, user) {}
+StatusOffUpWeak::StatusOffUpWeak(u16 id, Unit* user) : StatusParamMod(id, user) {}
+StatusDefDownStrong::StatusDefDownStrong(u16 id, Unit* user) : StatusParamMod(id, user) {}
+StatusDefDownMid::StatusDefDownMid(u16 id, Unit* user) : StatusParamMod(id, user) {}
+StatusDefDownWeak::StatusDefDownWeak(u16 id, Unit* user) : StatusParamMod(id, user) {}
+StatusOffDownStrong::StatusOffDownStrong(u16 id, Unit* user) : StatusParamMod(id, user) {}
+StatusOffDownMid::StatusOffDownMid(u16 id, Unit* user) : StatusParamMod(id, user) {}
+StatusOffDownWeak::StatusOffDownWeak(u16 id, Unit* user) : StatusParamMod(id, user) {}
+StatusDefend::StatusDefend(u16 type, Unit* unit) : StatusParamMod(type, unit) { setRoundLimit(1); }
+StatusFleas::StatusFleas(u16 id, Unit* user) : StatusParamMod(id, user) {}
+StatusCrying::StatusCrying(u16 id, Unit* user) : StatusParamMod(id, user) {}
+StatusNoBackSprite::StatusNoBackSprite(u16 type, Unit* unit) : Status(type, unit) { setRoundLimit(1); }
+StatusStapled::StatusStapled(u16 id, Unit* user) : Status(id, user) {}
+StatusFell::StatusFell(u16 type, Unit* unit) : Status(type, unit) { setTurnLimit(CAST_U16(randS32(1, 2))); }
+StatusDCMC::StatusDCMC(u16 type, Unit* unit) : Status(type, unit) { setTurnLimit(CAST_U16(randS32(2, 3))); }
+StatusDance::StatusDance(u16 id, Unit* user) : Status(id, user) {}
+StatusLaughing::StatusLaughing(u16 id, Unit* user) : Status(id, user) {}
+StatusApologetic::StatusApologetic(u16 id, Unit* user) : Status(id, user) {}
+StatusFrozen::StatusFrozen(u16 id, Unit* user) : Status(id, user) {}
+StatusNauseous::StatusNauseous(u16 id, Unit* user) : Status(id, user) {}
+StatusForgetful::StatusForgetful(u16 type, Unit* unit) : Status(type, unit) { setRoundLimit(6); }
+StatusSleep::StatusSleep(u16 type, Unit* unit) : Status(type, unit) { setTurnLimit(CAST_U16(randS32(2, 3))); }
+StatusNumb::StatusNumb(u16 type, Unit* unit) : Status(type, unit) { setRoundLimit(6); }
+StatusRefresh::StatusRefresh(u16 id, Unit* user) : Status(id, user) {}
+StatusEndure::StatusEndure(u16 id, Unit* user) : Status(id, user) {}
+StatusTimeBomb::StatusTimeBomb(u16 type, Unit* unit) : Status(type, unit) { _34 = randS32(2, 3); }
+StatusPsiCounter::StatusPsiCounter(u16 id, Unit* user) : Status(id, user) {}
+StatusPsiShield::StatusPsiShield(u16 id, Unit* user) : Status(id, user) {}
+StatusElectrocuted::StatusElectrocuted(u16 id, Unit* user) : Status(id, user) {}
+StatusCounter::StatusCounter(u16 id, Unit* user) : Status(id, user) {}
+StatusShield::StatusShield(u16 id, Unit* user) : Status(id, user) {}
+StatusOnFire::StatusOnFire(u16 type, Unit* unit) : Status(type, unit) { setTurnLimit(CAST_U16(randS32(1, 2))); }
+StatusPoison::StatusPoison(u16 id, Unit* user) : Status(id, user) {}
 DefaultStatus::DefaultStatus(u16 type, Unit* unit) : Status(type, unit) {}
 
 bool StatusNoExp::disableAllStatuses() {
