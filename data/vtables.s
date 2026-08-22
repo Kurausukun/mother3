@@ -70775,7 +70775,7 @@ _vt.20StatusMonkeyDanceIQ2::
 	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1c8__14StatusParamMod
+	.4byte _1c8__14StatusParamModUs
 
 _vt.20StatusMonkeyDanceSP2::
 	.2byte 0
@@ -70951,7 +70951,7 @@ _vt.20StatusMonkeyDanceSP2::
 	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1c8__14StatusParamMod
+	.4byte _1c8__14StatusParamModUs
 
 _vt.21StatusMonkeyDanceDef2::
 	.2byte 0
@@ -71127,7 +71127,7 @@ _vt.21StatusMonkeyDanceDef2::
 	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1c8__14StatusParamMod
+	.4byte _1c8__14StatusParamModUs
 
 _vt.21StatusMonkeyDanceOff2::
 	.2byte 0
@@ -71303,7 +71303,7 @@ _vt.21StatusMonkeyDanceOff2::
 	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1c8__14StatusParamMod
+	.4byte _1c8__14StatusParamModUs
 
 _vt.19StatusMonkeyDanceIQ::
 	.2byte 0
@@ -71479,7 +71479,7 @@ _vt.19StatusMonkeyDanceIQ::
 	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1c8__14StatusParamMod
+	.4byte _1c8__14StatusParamModUs
 
 _vt.19StatusMonkeyDanceSP::
 	.2byte 0
@@ -71655,7 +71655,7 @@ _vt.19StatusMonkeyDanceSP::
 	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1c8__14StatusParamMod
+	.4byte _1c8__14StatusParamModUs
 
 _vt.20StatusMonkeyDanceDef::
 	.2byte 0
@@ -71831,7 +71831,7 @@ _vt.20StatusMonkeyDanceDef::
 	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1c8__14StatusParamMod
+	.4byte _1c8__14StatusParamModUs
 
 _vt.20StatusMonkeyDanceOff::
 	.2byte 0
@@ -72007,7 +72007,7 @@ _vt.20StatusMonkeyDanceOff::
 	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1c8__14StatusParamMod
+	.4byte _1c8__14StatusParamModUs
 
 _vt.16StatusParamsDown::
 	.2byte 0
@@ -72183,7 +72183,7 @@ _vt.16StatusParamsDown::
 	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1c8__14StatusParamMod
+	.4byte _1c8__14StatusParamModUs
 
 _vt.14StatusParamsUp::
 	.2byte 0
@@ -72359,7 +72359,7 @@ _vt.14StatusParamsUp::
 	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1c8__14StatusParamMod
+	.4byte _1c8__14StatusParamModUs
 
 _vt.17StatusDefUpStrong::
 	.2byte 0
@@ -72535,7 +72535,7 @@ _vt.17StatusDefUpStrong::
 	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1c8__14StatusParamMod
+	.4byte _1c8__14StatusParamModUs
 
 _vt.14StatusDefUpMid::
 	.2byte 0
@@ -72711,7 +72711,7 @@ _vt.14StatusDefUpMid::
 	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1c8__14StatusParamMod
+	.4byte _1c8__14StatusParamModUs
 
 _vt.15StatusDefUpWeak::
 	.2byte 0
@@ -72887,7 +72887,7 @@ _vt.15StatusDefUpWeak::
 	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1c8__14StatusParamMod
+	.4byte _1c8__14StatusParamModUs
 
 _vt.17StatusOffUpStrong::
 	.2byte 0
@@ -73063,7 +73063,7 @@ _vt.17StatusOffUpStrong::
 	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1c8__14StatusParamMod
+	.4byte _1c8__14StatusParamModUs
 
 _vt.14StatusOffUpMid::
 	.2byte 0
@@ -73239,7 +73239,7 @@ _vt.14StatusOffUpMid::
 	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1c8__14StatusParamMod
+	.4byte _1c8__14StatusParamModUs
 
 _vt.15StatusOffUpWeak::
 	.2byte 0
@@ -73415,7 +73415,7 @@ _vt.15StatusOffUpWeak::
 	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1c8__14StatusParamMod
+	.4byte _1c8__14StatusParamModUs
 
 _vt.19StatusDefDownStrong::
 	.2byte 0
@@ -73591,7 +73591,7 @@ _vt.19StatusDefDownStrong::
 	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1c8__14StatusParamMod
+	.4byte _1c8__14StatusParamModUs
 
 _vt.16StatusDefDownMid::
 	.2byte 0
@@ -73767,7 +73767,7 @@ _vt.16StatusDefDownMid::
 	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1c8__14StatusParamMod
+	.4byte _1c8__14StatusParamModUs
 
 _vt.17StatusDefDownWeak::
 	.2byte 0
@@ -73943,7 +73943,7 @@ _vt.17StatusDefDownWeak::
 	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1c8__14StatusParamMod
+	.4byte _1c8__14StatusParamModUs
 
 _vt.19StatusOffDownStrong::
 	.2byte 0
@@ -74119,7 +74119,7 @@ _vt.19StatusOffDownStrong::
 	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1c8__14StatusParamMod
+	.4byte _1c8__14StatusParamModUs
 
 _vt.16StatusOffDownMid::
 	.2byte 0
@@ -74295,7 +74295,7 @@ _vt.16StatusOffDownMid::
 	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1c8__14StatusParamMod
+	.4byte _1c8__14StatusParamModUs
 
 _vt.17StatusOffDownWeak::
 	.2byte 0
@@ -74471,7 +74471,7 @@ _vt.17StatusOffDownWeak::
 	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1c8__14StatusParamMod
+	.4byte _1c8__14StatusParamModUs
 
 _vt.12StatusDefend::
 	.2byte 0
@@ -74647,7 +74647,7 @@ _vt.12StatusDefend::
 	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1c8__14StatusParamMod
+	.4byte _1c8__14StatusParamModUs
 
 _vt.11StatusFleas::
 	.2byte 0
@@ -74823,7 +74823,7 @@ _vt.11StatusFleas::
 	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1c8__14StatusParamMod
+	.4byte _1c8__14StatusParamModUs
 
 _vt.12StatusCrying::
 	.2byte 0
@@ -74999,7 +74999,7 @@ _vt.12StatusCrying::
 	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1c8__14StatusParamMod
+	.4byte _1c8__14StatusParamModUs
 
 _vt.14StatusParamMod::
 	.2byte 0
@@ -75175,7 +75175,7 @@ _vt.14StatusParamMod::
 	.4byte _1c0__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1c8__14StatusParamMod
+	.4byte _1c8__14StatusParamModUs
 
 _vt.18StatusNoBackSprite::
 	.2byte 0

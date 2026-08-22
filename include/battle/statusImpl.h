@@ -206,6 +206,7 @@ public:
     virtual ~StatusOffDownWeak();
     virtual Msg fmtStatusMsg(u16 msg);
     virtual bool disableAllStatuses();
+    virtual s32 _148();
 };
 
 class StatusOffDownStrong : public StatusParamMod {
@@ -216,6 +217,7 @@ public:
     virtual ~StatusOffDownStrong();
     virtual Msg fmtStatusMsg(u16 msg);
     virtual bool disableAllStatuses();
+    virtual s32 _148();
 };
 
 class StatusDefDownWeak : public StatusParamMod {
@@ -226,6 +228,7 @@ public:
     virtual ~StatusDefDownWeak();
     virtual Msg fmtStatusMsg(u16 msg);
     virtual bool disableAllStatuses();
+    virtual s32 _150();
 };
 
 class StatusDefDownStrong : public StatusParamMod {
@@ -236,6 +239,7 @@ public:
     virtual ~StatusDefDownStrong();
     virtual Msg fmtStatusMsg(u16 msg);
     virtual bool disableAllStatuses();
+    virtual s32 _150();
 };
 
 class StatusShield : public Status {
@@ -291,6 +295,7 @@ public:
     virtual ~StatusOffUpWeak();
     virtual Msg fmtStatusMsg(u16 msg);
     virtual bool disableAllStatuses();
+    virtual s32 _148();
 };
 
 class StatusOffUpStrong : public StatusParamMod {
@@ -301,6 +306,7 @@ public:
     virtual ~StatusOffUpStrong();
     virtual Msg fmtStatusMsg(u16 msg);
     virtual bool disableAllStatuses();
+    virtual s32 _148();
 };
 
 class StatusDefUpWeak : public StatusParamMod {
@@ -311,6 +317,7 @@ public:
     virtual ~StatusDefUpWeak();
     virtual Msg fmtStatusMsg(u16 msg);
     virtual bool disableAllStatuses();
+    virtual s32 _150();
 };
 
 class StatusDefUpStrong : public StatusParamMod {
@@ -322,6 +329,7 @@ public:
     virtual Msg fmtStatusMsg(u16 msg);
     virtual bool status_a0();
     virtual bool disableAllStatuses();
+    virtual s32 _150();
 };
 
 class StatusDance : public Status {
@@ -342,6 +350,7 @@ public:
     virtual Msg fmtStatusMsg(u16 msg);
     virtual bool status_a0();
     virtual bool disableAllStatuses();
+    virtual s32 _148();
 };
 
 class StatusDefDownMid : public StatusParamMod {
@@ -353,6 +362,7 @@ public:
     virtual Msg fmtStatusMsg(u16 msg);
     virtual bool status_a0();
     virtual bool disableAllStatuses();
+    virtual s32 _150();
 };
 
 class StatusTimeBomb : public Status {
@@ -372,6 +382,10 @@ public:
     virtual ~StatusParamsUp();
     virtual bool disableAllStatuses();
     virtual Msg fmtStatusMsg(u16 msg);
+    virtual s32 _148();
+    virtual s32 _150();
+    virtual s32 _158();
+    virtual s32 _160();
 };
 
 class StatusParamsDown : public StatusParamMod {
@@ -382,6 +396,10 @@ public:
     virtual ~StatusParamsDown();
     virtual bool disableAllStatuses();
     virtual Msg fmtStatusMsg(u16 msg);
+    virtual s32 _148();
+    virtual s32 _150();
+    virtual s32 _158();
+    virtual s32 _160();
 };
 
 
@@ -411,6 +429,7 @@ public:
     virtual ~StatusMonkeyDanceOff();
     virtual Msg fmtStatusMsg(u16 msg);
     virtual bool disableAllStatuses();
+    virtual s32 _148();
 };
 
 class StatusMonkeyDanceDef : public StatusParamMod {
@@ -421,6 +440,7 @@ public:
     virtual ~StatusMonkeyDanceDef();
     virtual Msg fmtStatusMsg(u16 msg);
     virtual bool disableAllStatuses();
+    virtual s32 _150();
 };
 
 class StatusMonkeyDanceSP : public StatusParamMod {
@@ -431,6 +451,7 @@ public:
     virtual ~StatusMonkeyDanceSP();
     virtual Msg fmtStatusMsg(u16 msg);
     virtual bool disableAllStatuses();
+    virtual s32 _160();
 };
 
 class StatusMonkeyDanceIQ : public StatusParamMod {
@@ -441,6 +462,7 @@ public:
     virtual ~StatusMonkeyDanceIQ();
     virtual Msg fmtStatusMsg(u16 msg);
     virtual bool disableAllStatuses();
+    virtual s32 _158();
 };
 
 class StatusMonkeyDanceOff2 : public StatusParamMod {
@@ -451,6 +473,7 @@ public:
     virtual ~StatusMonkeyDanceOff2();
     virtual Msg fmtStatusMsg(u16 msg);
     virtual bool disableAllStatuses();
+    virtual s32 _148();
 };
 
 class StatusMonkeyDanceDef2 : public StatusParamMod {
@@ -461,6 +484,7 @@ public:
     virtual ~StatusMonkeyDanceDef2();
     virtual Msg fmtStatusMsg(u16 msg);
     virtual bool disableAllStatuses();
+    virtual s32 _150();
 };
 
 class StatusMonkeyDanceSP2 : public StatusParamMod {
@@ -471,6 +495,7 @@ public:
     virtual ~StatusMonkeyDanceSP2();
     virtual Msg fmtStatusMsg(u16 msg);
     virtual bool disableAllStatuses();
+    virtual s32 _160();
 };
 
 class StatusMonkeyDanceIQ2 : public StatusParamMod {
@@ -481,6 +506,7 @@ public:
     virtual ~StatusMonkeyDanceIQ2();
     virtual Msg fmtStatusMsg(u16 msg);
     virtual bool disableAllStatuses();
+    virtual s32 _158();
 };
 
 class StatusEndure : public Status {
@@ -500,6 +526,7 @@ public:
     virtual ~StatusOffUpMid();
     virtual Msg fmtStatusMsg(u16 msg);
     virtual bool disableAllStatuses();
+    virtual s32 _148();
 };
 
 class StatusDefUpMid : public StatusParamMod {
@@ -510,6 +537,7 @@ public:
     virtual ~StatusDefUpMid();
     virtual Msg fmtStatusMsg(u16 msg);
     virtual bool disableAllStatuses();
+    virtual s32 _150();
 };
 
 class StatusNoBackSprite : public Status {
