@@ -70,7 +70,9 @@ extern "C" ASM_FUNC("asm/non_matching/psiImpl/dt__7PkFlash.inc", void dt__7PkFla
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/onNoEffect__7LifeupGP4Unit.inc", void onNoEffect__7LifeupGP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/dt__7LifeupG.inc", void dt__7LifeupG());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/action_150__9PsiMagnet.inc", void action_150__9PsiMagnet());
-extern "C" ASM_FUNC("asm/non_matching/psiImpl/onPlayAnim__9PsiMagnetP4Unitb.inc", void onPlayAnim__9PsiMagnetP4Unitb());
+
+void PsiMagnet::onPlayAnim(Unit* target, bool crit) {}
+
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/tellMissed__9PsiMagnetP4Unit.inc", void tellMissed__9PsiMagnetP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/onPsiDamage__9PsiMagnetP4Unit.inc", void onPsiDamage__9PsiMagnetP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/calcDidHit__9PsiMagnetP4Unit.inc", void calcDidHit__9PsiMagnetP4Unit());
