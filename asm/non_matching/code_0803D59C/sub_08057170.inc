@@ -17,7 +17,7 @@ sub_08057170:
 	adds r0, r4, #0
 	movs r2, #0
 	adds r3, r6, #0
-	bl sub_0800160C
+	bl CpuCopyPaletteToGfxBuffer
 	movs r0, #8
 	bl sub_0805734C
 	ldr r0, _080571DC
@@ -44,7 +44,7 @@ sub_08057170:
 	.align 2, 0
 _080571D0: .4byte gTitleScreenGfx
 _080571D4: .4byte 0x06008000
-_080571D8: .4byte gUnknown_02016078
+_080571D8: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _080571DC: .4byte 0x00002C46
 _080571E0: .4byte 0x00002CAC
 _080571E4: .4byte gUnknown_020047D0
@@ -53,12 +53,12 @@ _080571E8:
 	rsbs r2, r2, #0
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl memFill
+	bl CpuMemFill
 	b _080571FE
 _080571F6:
 	adds r0, r5, #0
 	adds r1, r6, #0
-	bl memclear
+	bl CpuMemClear
 _080571FE:
 	pop {r4, r5, r6}
 	pop {r0}

@@ -43,19 +43,19 @@ sub_08009E38:
 	lsls r4, r4, #1
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl sub_080019DC
+	bl Dma3Clear
 	adds r4, r5, r4
 	ldr r1, _08009EC4
 	adds r0, r4, #0
-	bl sub_080019DC
+	bl Dma3Clear
 	ldr r1, _08009EC8
 	adds r0, r5, r1
 	movs r1, #0x60
-	bl sub_080019DC
+	bl Dma3Clear
 	ldr r2, _08009ECC
 	adds r0, r5, r2
 	movs r1, #0x60
-	bl sub_080019DC
+	bl Dma3Clear
 	b _08009EFA
 	.align 2, 0
 _08009EB4: .4byte 0x0000C513
@@ -70,19 +70,19 @@ _08009ED0:
 	lsls r4, r4, #1
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl memclear
+	bl CpuMemClear
 	adds r4, r5, r4
 	ldr r1, _08009F04
 	adds r0, r4, #0
-	bl memclear
+	bl CpuMemClear
 	ldr r1, _08009F08
 	adds r0, r5, r1
 	movs r1, #0x60
-	bl memclear
+	bl CpuMemClear
 	ldr r2, _08009F0C
 	adds r0, r5, r2
 	movs r1, #0x60
-	bl memclear
+	bl CpuMemClear
 _08009EFA:
 	add sp, #4
 	pop {r4, r5}

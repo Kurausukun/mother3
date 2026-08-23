@@ -49,8 +49,8 @@ extern void sub_08003B30(u16, u16);
 extern s32 sub_080222F8(u16);
 extern void sub_080250B4(s32, u16, u16);
 extern s32 getCommonScriptLine(u16);
-extern void memFill(void*, s32, s32); /* extern */
-extern s32 getMapPaletteTable(u16);   /* extern */
+extern void CpuMemFill(void*, s32, s32); /* extern */
+extern s32 getMapPaletteTable(u16);      /* extern */
 extern void sub_08027904();
 extern void sub_080334D0(u8, u16);
 
@@ -1770,7 +1770,7 @@ u16 cmd_put_ocho(s32* sp) {
     gSave._78c = 0;
     gSave._78b = 0;
     gSave._78a = 0;
-    memclear(gSave._78e, 0x80);
+    CpuMemClear(gSave._78e, 0x80);
     cnt = 0;
     for (u16 i = 0; i < gGame.party_count; ++i) {
         cd = get_char_stats(i);
@@ -4396,7 +4396,7 @@ u16 cmd_C5(s32* sp) {
         case 2:
         case 4:
             CpuSmartSet(gUnknown_030055F4, &gGame._948c[0x16E], 0xa0);
-            memclear(gUnknown_030055F4, 0xa0);
+            CpuMemClear(gUnknown_030055F4, 0xa0);
             break;
         }
         sub_08036BEC(obj, &sz);
@@ -4429,7 +4429,7 @@ u16 cmd_C5(s32* sp) {
         case 2:
         case 4:
             CpuSmartSet(gUnknown_030055F4, &gGame._948c[0x16e], 0xa0);
-            memclear(gUnknown_030055F4, 0xa0);
+            CpuMemClear(gUnknown_030055F4, 0xa0);
         }
         sub_08034FFC();
     }
@@ -4856,9 +4856,9 @@ extern "C" s32 cmd_B9(s32* sp) {
     }
 
     if (gGame._595b[0] == 2) {
-        memFill(&gUnknown_03005314, 0x400, -1);
+        CpuMemFill(&gUnknown_03005314, 0x400, -1);
     } else {
-        memclear(&gUnknown_03005314, 0x400);
+        CpuMemClear(&gUnknown_03005314, 0x400);
     }
 
     return 0;

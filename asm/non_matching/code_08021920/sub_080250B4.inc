@@ -41,7 +41,7 @@ sub_080250B4:
 	rsbs r2, r2, #0
 	adds r0, r4, #0
 	movs r1, #0x1a
-	bl memFill
+	bl CpuMemFill
 	ldrh r1, [r7]
 	ldr r0, _08025128
 	cmp r1, r0

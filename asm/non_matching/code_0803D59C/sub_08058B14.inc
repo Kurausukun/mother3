@@ -56,7 +56,7 @@ _08058B7A:
 	adds r1, r7, #0
 	adds r2, r4, #0
 	str r3, [sp, #4]
-	bl sub_08001A14
+	bl Dma3Copy
 	adds r7, r7, r4
 	ldr r3, [sp, #4]
 	adds r0, r3, #1

@@ -35,11 +35,11 @@ sub_080142F0:
 	lsls r6, r6, #1
 	adds r1, r6, #0
 	movs r2, #0xf0
-	bl memFill
+	bl CpuMemFill
 	ldr r1, _08014390
 	adds r0, r4, r1
 	adds r1, r6, #0
-	bl memclear
+	bl CpuMemClear
 	ldr r1, _08014394
 	ldrh r0, [r4, #0x22]
 	strh r0, [r1]

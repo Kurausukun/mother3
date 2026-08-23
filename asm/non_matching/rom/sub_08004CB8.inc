@@ -120,11 +120,11 @@ _08004DA6:
 	ldr r0, _08004E40
 	movs r1, #0x80
 	lsls r1, r1, #8
-	bl memclear
+	bl CpuMemClear
 	ldr r0, _08004E44
 	movs r1, #0x80
 	lsls r1, r1, #4
-	bl memclear
+	bl CpuMemClear
 	ldr r1, _08004E48
 	movs r4, #0
 	strb r6, [r1]

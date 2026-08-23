@@ -13,7 +13,7 @@ sub_08059C50:
 	ldr r2, _08059D70
 	adds r0, r0, r2
 	movs r1, #0xa
-	bl memclear
+	bl CpuMemClear
 	ldr r0, _08059D74
 	ldr r7, [r0, #0xc]
 	ldrh r6, [r0, #0x10]

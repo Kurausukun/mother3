@@ -38,24 +38,24 @@ _080064DA:
 	ldr r2, _0800657C
 	adds r0, r3, #0
 	movs r1, #0x20
-	bl sub_08001A38
+	bl Dma3Fill
 	ldr r4, _08006580
 	mov r0, sb
 	movs r1, #0x80
 	adds r2, r4, #0
-	bl sub_08001A38
+	bl Dma3Fill
 	movs r0, #0xe0
 	lsls r0, r0, #2
 	add r0, sb
 	movs r1, #0xc0
 	lsls r1, r1, #1
 	adds r2, r4, #0
-	bl sub_08001A38
+	bl Dma3Fill
 	mov r0, sb
 	adds r0, #0x80
 	movs r1, #0xc0
 	lsls r1, r1, #2
-	bl sub_080019DC
+	bl Dma3Clear
 	ldr r2, _08006584
 	ldr r1, _08006588
 	adds r0, r2, r1
@@ -118,7 +118,7 @@ _0800659C:
 	adds r1, r3, #0
 	adds r2, r7, #0
 	str r3, [sp, #4]
-	bl sub_08001A14
+	bl Dma3Copy
 	adds r5, r5, r7
 	ldr r3, [sp, #4]
 	movs r0, #0x80
@@ -143,24 +143,24 @@ _080065CA:
 	ldr r2, _08006658
 	adds r0, r3, #0
 	movs r1, #0x20
-	bl memFill
+	bl CpuMemFill
 	ldr r4, _0800665C
 	mov r0, sb
 	movs r1, #0x80
 	adds r2, r4, #0
-	bl memFill
+	bl CpuMemFill
 	movs r0, #0xe0
 	lsls r0, r0, #2
 	add r0, sb
 	movs r1, #0xc0
 	lsls r1, r1, #1
 	adds r2, r4, #0
-	bl memFill
+	bl CpuMemFill
 	mov r0, sb
 	adds r0, #0x80
 	movs r1, #0xc0
 	lsls r1, r1, #2
-	bl memclear
+	bl CpuMemClear
 	ldr r2, _08006660
 	ldr r1, _08006664
 	adds r0, r2, r1

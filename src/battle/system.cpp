@@ -6,6 +6,7 @@
 #include "battle/keypad.h"
 #include "battle/objengine.h"
 #include "battle/sndSystem.h"
+#include "gba/io_reg.h"
 #include "structs.h"
 
 extern "C" void destroy__16FntSystemManager();
@@ -288,7 +289,7 @@ void system_callback(System* system) {
 
 void System::checkResetKeys() {
     u16 keys = KeyPadManager::get()->getKeys();
-    if (keys == 0xF)
+    if (keys == (A_BUTTON | B_BUTTON | SELECT_BUTTON | START_BUTTON))
         DoReset();
 }
 

@@ -5,7 +5,7 @@ sub_08052DBC:
 	ldr r4, _08052DE4
 	adds r0, r4, #0
 	movs r1, #0x80
-	bl memclear
+	bl CpuMemClear
 	ldr r0, _08052DE8
 	adds r4, r4, r0
 	movs r0, #0

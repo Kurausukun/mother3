@@ -14,7 +14,7 @@ sub_08040164:
 	lsls r5, r5, #4
 	adds r1, r4, #0
 	adds r2, r5, #0
-	bl sub_08001A14
+	bl Dma3Copy
 	movs r1, #0xd0
 	lsls r1, r1, #6
 	adds r0, r7, r1
@@ -22,7 +22,7 @@ sub_08040164:
 	movs r2, #0x80
 	lsls r2, r2, #3
 	adds r1, r4, #0
-	bl sub_08001A14
+	bl Dma3Copy
 	adds r0, r6, #0
 	movs r1, #0x1b
 	bl Blob_GetEntry

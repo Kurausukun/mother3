@@ -30,12 +30,12 @@ sub_08059940:
 	movs r5, #0xa0
 	lsls r5, r5, #1
 	adds r1, r5, #0
-	bl memclear
+	bl CpuMemClear
 	ldr r0, _080599A4
 	adds r4, r4, r0
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl memclear
+	bl CpuMemClear
 	movs r0, #0
 	bl sub_08058718
 	pop {r4, r5}

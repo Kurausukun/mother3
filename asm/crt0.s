@@ -19,7 +19,7 @@ Start: @ 0x08000000
 Init:
 	mov r0, #0x12
 	msr cpsr_fc, r0
-	ldr sp, sp_irq @ =gUnknown_03007FA0
+	ldr sp, sp_irq @ =GBA_sp_irq
 	mov r0, #0x1f
 	msr cpsr_fc, r0
 	ldr sp, sp_sys @ =gUnknown_03007E00
@@ -34,7 +34,7 @@ Init:
 
 	.align 2, 0
 sp_sys: .4byte gUnknown_03007E00
-sp_irq: .4byte gUnknown_03007FA0
+sp_irq: .4byte GBA_sp_irq
 
     .arm
     .align 2, 0

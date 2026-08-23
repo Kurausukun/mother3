@@ -14,7 +14,7 @@ sub_080506A4:
 	blt _080506C2
 _080506BC:
 	adds r0, r1, #0
-	bl sub_080016E4
+	bl CheckSoftResetKeys
 _080506C2:
 	pop {r0}
 	bx r0

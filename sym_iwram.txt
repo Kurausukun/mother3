@@ -1,5 +1,4 @@
 . = 0x00000000; SoundMainRAM_Buffer = .;
-. = 0x00000008; gUnknown_03000008 = .;
 . = 0x00000400; gMPlayTrack_Player1 = .;
 . = 0x00000720; gMPlayTrack_Player2 = .;
 . = 0x00000A40; gMPlayTrack_Player3 = .;
@@ -12,9 +11,6 @@
 . = 0x00001800; gMPlayTrack_Player10 = .;
 . = 0x00001B20; gSoundInfo = .;
 . = 0x00002AD0; gMPlayJumpTable = .;
-. = 0x00002AD4; gUnknown_03002AD4 = .;
-. = 0x00002B58; gUnknown_03002B58 = .;
-. = 0x00002B5C; gUnknown_03002B5C = .;
 . = 0x00002B60; gCgbChans = .;
 . = 0x00002C60; gMPlayInfo_Player6 = .;
 . = 0x00002CA0; gMPlayInfo_Player10 = .;
@@ -71,8 +67,7 @@
 . = 0x00005714; gUnknown_03005714 = .;
 . = 0x00005715; gUnknown_03005715 = .;
 . = 0x00007E00; gUnknown_03007E00 = .;
-. = 0x00007F00; gUnknown_03007F00 = .;
-. = 0x00007FA0; gUnknown_03007FA0 = .;
-. = 0x00007FF0; gUnknown_03007FF0 = .;
+. = 0x00007F00; GBA_sp_sys = .;
+. = 0x00007FA0; GBA_sp_irq = .;
 . = 0x00007FF8; gUnknown_03007FF8 = .;
 . = 0x00007FFC; gUnknown_03007FFC = .;

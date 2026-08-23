@@ -27,7 +27,7 @@ sub_08011F18:
 	bl CpuSmartSet
 	b _08011F64
 	.align 2, 0
-_08011F50: .4byte gUnknown_02016078
+_08011F50: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _08011F54: .4byte 0x06006000
 _08011F58:
 	ldr r0, _08011F6C

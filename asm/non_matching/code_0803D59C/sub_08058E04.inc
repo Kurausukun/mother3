@@ -13,10 +13,10 @@ sub_08058E04:
 	ldr r0, _08058E30
 	movs r2, #0x10
 	movs r3, #0xe0
-	bl sub_0800160C
+	bl CpuCopyPaletteToGfxBuffer
 	pop {r0}
 	bx r0
 	.align 2, 0
 _08058E2C: .4byte 0x06017800
-_08058E30: .4byte gUnknown_02016078
+_08058E30: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 	.syntax divided

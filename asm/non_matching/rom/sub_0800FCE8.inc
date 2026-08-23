@@ -77,7 +77,7 @@ _0800FD50:
 	.align 2, 0
 _0800FD94: .4byte 0x00005970
 _0800FD98: .4byte 0x00005972
-_0800FD9C: .4byte gUnknown_02016078
+_0800FD9C: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _0800FDA0: .4byte gGame
 _0800FDA4: .4byte 0x000067AC
 	.syntax divided

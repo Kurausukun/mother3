@@ -10,7 +10,7 @@ sub_08057250:
 	lsls r3, r3, #2
 	adds r0, r4, #0
 	movs r2, #0
-	bl sub_0800160C
+	bl CpuCopyPaletteToGfxBuffer
 	movs r1, #0x9c
 	lsls r1, r1, #6
 	adds r0, r4, r1
@@ -25,6 +25,6 @@ sub_08057250:
 	bx r0
 	.align 2, 0
 _08057284: .4byte gTitleScreenGfx
-_08057288: .4byte gUnknown_02016078
+_08057288: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _0805728C: .4byte 0x00002CAC
 	.syntax divided

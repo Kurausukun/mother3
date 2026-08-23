@@ -20,16 +20,16 @@ sub_08003EF8:
 	movs r2, #1
 	rsbs r2, r2, #0
 	adds r1, r4, #0
-	bl memFill
+	bl CpuMemFill
 	movs r0, #0xc0
 	lsls r0, r0, #0x13
 	movs r1, #0xc0
 	lsls r1, r1, #9
-	bl memclear
+	bl CpuMemClear
 	movs r0, #0xe0
 	lsls r0, r0, #0x13
 	adds r1, r4, #0
-	bl memclear
+	bl CpuMemClear
 	b _08003F4C
 	.align 2, 0
 _08003F40: .4byte gUnknown_02005080

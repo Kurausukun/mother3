@@ -12,11 +12,11 @@ sub_08009F10:
 	adds r0, r4, r1
 	movs r1, #0x88
 	lsls r1, r1, #3
-	bl sub_080019DC
+	bl Dma3Clear
 	ldr r1, _08009F3C
 	adds r0, r4, r1
 	ldr r1, _08009F40
-	bl sub_080019DC
+	bl Dma3Clear
 	b _08009F5A
 	.align 2, 0
 _08009F38: .4byte 0x00003230
@@ -27,11 +27,11 @@ _08009F44:
 	adds r0, r4, r1
 	movs r1, #0x88
 	lsls r1, r1, #3
-	bl memclear
+	bl CpuMemClear
 	ldr r1, _08009F68
 	adds r0, r4, r1
 	ldr r1, _08009F6C
-	bl memclear
+	bl CpuMemClear
 _08009F5A:
 	add sp, #4
 	pop {r4}

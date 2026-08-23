@@ -54,7 +54,7 @@ sub_08007AD4:
 	mov r1, r8
 	ands r0, r1
 	strb r0, [r2]
-	bl sub_08000D54
+	bl get_enginemode_flag_1
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	movs r1, #1
@@ -81,7 +81,7 @@ sub_08007AD4:
 	adds r4, r7, #0
 	adds r4, #0x50
 	adds r0, r4, #0
-	bl sub_08001454
+	bl DmaClearGraphicsBuffer
 	ldr r1, _08007C90
 	adds r0, r7, r1
 	movs r1, #0

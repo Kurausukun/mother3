@@ -45,7 +45,7 @@ _08047FF2:
 	adds r0, r4, #0
 	movs r1, #0x30
 	adds r2, r7, #0
-	bl memFill
+	bl CpuMemFill
 	adds r0, r4, #0
 	add r1, sp, #4
 	bl sub_08048108

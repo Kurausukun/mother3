@@ -10,6 +10,27 @@
 #include "overworld/script.h"
 #include "structs.h"
 
+struct engineMode {
+    template <class T>
+    struct Flags {
+        T _1 : 1;
+        T _2 : 1;
+        T _4 : 1;
+        T _8 : 1;
+        T _10 : 1;
+        T _20 : 1;
+        T _40 : 1;
+        T _80 : 1;
+    };
+
+    u8 _0;
+    union __attribute__((packed)) {  // FIXME
+        Flags<s8> flags_s8;
+        Flags<u8> flags_u8;
+    };
+};
+extern engineMode gEngineMode;
+
 extern const char _binary_build_mother3_assets_misctext_bin_start;
 extern const char gMapPalettes;
 extern const char gMapTileData;
@@ -38,20 +59,22 @@ extern s16 gMPlayVolumeTable[];
 extern s16 gMPlayVolumeStorageTable[];
 extern const DoorDestinationInfo gDoorDestinationTable[];
 
+extern "C" void DoReset();
 extern "C" s32 Div(s32, s32);
 extern "C" s32 Divide(s32 a, s32 b);
 extern "C" void sub_0803D474();
 extern "C" void sub_08005C38();
-extern "C" void sub_080019DC(void* dest, u32 size);
+extern "C" void Dma3Clear(void* dest, u32 size);
 extern "C" void CpuFastSet(const void* src, void* dest, u32 control);
-extern "C" void sub_08000D88();
+extern "C" void CpuMemClear(void* buff, u32 size);
+extern "C" void write_ram_magic();
 extern "C" void sub_08090F90(s32);
 extern "C" s32 sub_08002FD4(s32, s32);
 extern "C" const void* Blob_GetEntry(const void*, u16);
 extern "C" u16 sub_0801A638(u16);
 extern "C" MusicPlayerInfo* getMusicPlayer_sfx(u16);
 extern "C" void sub_0801A238(s32, MovementVector*);
-extern "C" void sub_080016E4();
+extern "C" void CheckSoftResetKeys(InputState*);
 extern "C" void mode_debug_menu(InputState*);
 extern "C" void sub_0800B00C(InputState*);
 extern "C" void sub_0800BB54(InputState*);
@@ -104,28 +127,44 @@ extern "C" void sub_080013D0(struct_02016028* arg0) {
     }
 }
 
-extern "C" void sub_08001454(Unknown_02016078* arg0) {
-    arg0->_2C40 = arg0->_2C42 = arg0->_2C44 = arg0->_2C46 = 0;
+extern "C" void DmaClearGraphicsBuffer(GraphicsBuffer* gfx) {
+    gfx->_2C40 = gfx->_2C42 = gfx->_2C44 = gfx->_2C46 = 0;
 
-    sub_080019DC((void*)arg0->_0, 0x800);
-    sub_080019DC((void*)arg0->_800, 0x800);
-    sub_080019DC((void*)arg0->_1000, 0x800);
-    sub_080019DC((void*)arg0->_1800, 0x800);
-    sub_080019DC((void*)arg0->_2700, 0x400);
+    Dma3Clear((void*)gfx->_0, 0x800);
+    Dma3Clear((void*)gfx->_800, 0x800);
+    Dma3Clear((void*)gfx->_1000, 0x800);
+    Dma3Clear((void*)gfx->_1800, 0x800);
+    Dma3Clear((void*)gfx->palettes, 0x400);
 
-    arg0->oam_counter = 0;
-    arg0->_2C4A = 0;
-    arg0->r = 0;
-    arg0->g = 0;
-    arg0->b = 0;
+    gfx->oam_counter = 0;
+    gfx->_2C4A = 0;
+    gfx->r = 0;
+    gfx->g = 0;
+    gfx->b = 0;
 
-    arg0->_2700[0][0] = RGB(arg0->r, arg0->g, arg0->b);
+    gfx->palettes[0][0] = RGB(gfx->r, gfx->g, gfx->b);
 }
 
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001530.inc", void sub_08001530());
+extern "C" void CpuClearGraphicsBuffer(GraphicsBuffer* gfx) {
+    gfx->_2C40 = gfx->_2C42 = gfx->_2C44 = gfx->_2C46 = 0;
 
-extern "C" void sub_0800160C(Unknown_02016078* dest, void* src, u16 index, u16 size) {
-    CpuFastSet(src, (void*)dest->_2700[index], size / 4);
+    CpuMemClear((void*)gfx->_0, 0x800);
+    CpuMemClear((void*)gfx->_800, 0x800);
+    CpuMemClear((void*)gfx->_1000, 0x800);
+    CpuMemClear((void*)gfx->_1800, 0x800);
+    CpuMemClear((void*)gfx->palettes, 0x400);
+
+    gfx->oam_counter = 0;
+    gfx->_2C4A = 0;
+    gfx->r = 0;
+    gfx->g = 0;
+    gfx->b = 0;
+
+    gfx->palettes[0][0] = RGB(gfx->r, gfx->g, gfx->b);
+}
+
+extern "C" void CpuCopyPaletteToGfxBuffer(GraphicsBuffer* dest, void* src, u16 index, u16 size) {
+    CpuFastSet(src, (void*)dest->palettes[index], size / 4);
 }
 
 extern "C" void resetInputState(InputState* input, u16 arg1) {
@@ -179,12 +218,24 @@ extern "C" void pollInput(InputState* input) {
     input->pressedPending |= input->justPressed;
 }
 
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_080016E4.inc", void sub_080016E4());
+extern "C" void CheckSoftResetKeys(InputState* input) {
+    if ((input->_6 == 3) && gEngineMode.flags_s8._2 < 0) {
+        if (input->pressed == 0) {
+            gEngineMode.flags_s8._2 = 0;
+        } else {
+            return;
+        }
+    }
+
+    if (input->pressed == (A_BUTTON | B_BUTTON | SELECT_BUTTON | START_BUTTON)) {
+        DoReset();
+    }
+}
 
 extern "C" void DoReset(void) {
     m4aMPlayAllStop();
     m4aSoundMain();
-    sub_08000D88();
+    write_ram_magic();
     REG_SOUNDCNT_X = 0;
     REG_IME = 0;
     sub_08090F90(0xFD);
@@ -214,10 +265,9 @@ extern "C" void sub_08001960(void) {
     VBlankIntrWait();
 }
 
-// TODO: probably Unknown_02016078
-extern "C" void sub_0800196C(u8* src) {
+extern "C" void Dma3CopyOamFromGfxBuffer(GraphicsBuffer* gfx) {
     vu32* dmaRegs = (vu32*)REG_ADDR_DMA3;
-    dmaRegs[0] = (uintptr_t)&src[0x2000];
+    dmaRegs[0] = (uintptr_t)&gfx->oam;
     dmaRegs[1] = (uintptr_t)OAM;
 
     u32 size = OAM_SIZE / 2;
@@ -231,9 +281,9 @@ extern "C" void sub_0800196C(u8* src) {
     }
 }
 
-extern "C" void sub_080019A4(Unknown_02016078* arg0) {
+extern "C" void Dma3CopyPalettesFromGfxBuffer(GraphicsBuffer* gfx) {
     vu32* dmaRegs = (vu32*)REG_ADDR_DMA3;
-    dmaRegs[0] = (uintptr_t)&arg0->_2700;
+    dmaRegs[0] = (uintptr_t)&gfx->palettes;
     dmaRegs[1] = (uintptr_t)PLTT;
 
     u32 size = PLTT_SIZE / 2;
@@ -247,10 +297,11 @@ extern "C" void sub_080019A4(Unknown_02016078* arg0) {
     }
 }
 
-extern "C" void sub_080019DC(void* dest, u32 size) {
-    s32 tmp = 0;
+extern "C" void Dma3Clear(void* dest, u32 size) {
+    s32 value = 0;
+
     vu32* dmaRegs = (vu32*)REG_ADDR_DMA3;
-    dmaRegs[0] = (uintptr_t)&tmp;
+    dmaRegs[0] = (uintptr_t)&value;
     dmaRegs[1] = (uintptr_t)dest;
 
     size /= 4;
@@ -262,15 +313,14 @@ extern "C" void sub_080019DC(void* dest, u32 size) {
     }
 }
 
-extern "C" void sub_08001A14(void* src, void* dest, u32 size) {
+extern "C" void Dma3Copy(void* src, void* dest, u32 size) {
     vu32* dmaRegs = (vu32*)REG_ADDR_DMA3;
     dmaRegs[0] = (uintptr_t)src;
     dmaRegs[1] = (uintptr_t)dest;
 
     size /= 2;
-    u32 flags = (DMA_ENABLE | DMA_START_NOW | DMA_16BIT | DMA_SRC_INC | DMA_DEST_INC) << 16;
-    dmaRegs[2] = flags | size;
-
+    dmaRegs[2] =
+        (size | ((DMA_ENABLE | DMA_START_NOW | DMA_16BIT | DMA_SRC_INC | DMA_DEST_INC) << 16));
     dmaRegs[2];
 
     // Wait for DMA to complete
@@ -278,7 +328,7 @@ extern "C" void sub_08001A14(void* src, void* dest, u32 size) {
     }
 }
 
-extern "C" void sub_08001A38(void* dest, u32 size, int value) {
+extern "C" void Dma3Fill(void* dest, u32 size, int value) {
     s16 temp = value;
 
     vu32* dmaRegs = (vu32*)REG_ADDR_DMA3;
@@ -286,9 +336,8 @@ extern "C" void sub_08001A38(void* dest, u32 size, int value) {
     dmaRegs[1] = (uintptr_t)dest;
 
     size /= 2;
-    u32 flags = (DMA_ENABLE | DMA_START_NOW | DMA_16BIT | DMA_SRC_FIXED | DMA_DEST_INC) << 16;
-    dmaRegs[2] = flags | size;
-
+    dmaRegs[2] =
+        (size | ((DMA_ENABLE | DMA_START_NOW | DMA_16BIT | DMA_SRC_FIXED | DMA_DEST_INC) << 16));
     dmaRegs[2];
 
     // Wait for DMA to complete
@@ -296,12 +345,67 @@ extern "C" void sub_08001A38(void* dest, u32 size, int value) {
     }
 }
 
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001A70.inc", void sub_08001A70());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001A94.inc", void sub_08001A94());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001AAC.inc", void sub_08001AAC());
-extern "C" ASM_FUNC("asm/non_matching/rom/memclear.inc", void memclear());
-extern "C" ASM_FUNC("asm/non_matching/rom/CpuSmartSet.inc", void CpuSmartSet());
-extern "C" ASM_FUNC("asm/non_matching/rom/memFill.inc", void memFill());
+extern "C" void Dma0Clear(void* dest, u32 size) {
+    s32 src = 0;
+    vu32* dmaRegs = (vu32*)REG_ADDR_DMA0;
+    dmaRegs[0] = (uintptr_t)&src;
+    dmaRegs[1] = (uintptr_t)dest;
+
+    size /= 4;
+    dmaRegs[2] =
+        (size | ((DMA_ENABLE | DMA_START_NOW | DMA_32BIT | DMA_SRC_FIXED | DMA_DEST_INC) << 16));
+    dmaRegs[2];
+}
+
+extern "C" void Dma0Copy(void* src, void* dest, u32 size) {
+    vu32* dmaRegs = (vu32*)REG_ADDR_DMA0;
+    dmaRegs[0] = (uintptr_t)src;
+    dmaRegs[1] = (uintptr_t)dest;
+
+    size /= 4;
+    dmaRegs[2] =
+        (size | ((DMA_ENABLE | DMA_START_NOW | DMA_32BIT | DMA_SRC_INC | DMA_DEST_INC) << 16));
+    dmaRegs[2];
+}
+
+extern "C" void Dma0Fill(void* dest, u32 size, s32 value) {
+    vu32* dmaRegs = (vu32*)REG_ADDR_DMA0;
+    dmaRegs[0] = (uintptr_t)&value;
+    dmaRegs[1] = (uintptr_t)dest;
+
+    size /= 4;
+    dmaRegs[2] =
+        (size | ((DMA_ENABLE | DMA_START_NOW | DMA_32BIT | DMA_SRC_FIXED | DMA_DEST_INC) << 16));
+    dmaRegs[2];
+}
+
+extern "C" void CpuMemClear(void* buff, u32 size) {
+    if (size & 0x1F || (unsigned long)buff & 3) {
+        u16 tmp;
+        CpuSet(&(tmp = 0), buff, ((size << 0xA) >> 0xB) | CPU_SET_SRC_FIXED);
+    } else {
+        s32 tmp = 0;
+        CpuFastSet(&tmp, buff, ((size << 0x9) >> 0xB) | CPU_SET_SRC_FIXED);
+    }
+}
+
+extern "C" void CpuSmartSet(const void* src, void* dest, u32 control) {
+    if (0x1F & control || (u8)src & 3 || (u8)dest & 3) {
+        CpuSet(src, dest, (control << 0xA) >> 0xB);
+    } else {
+        CpuFastSet(src, dest, (control << 9) >> 0xB);
+    }
+}
+
+extern "C" void CpuMemFill(void* dest, u32 length, s32 value) {
+    if (length & 0x1F || (u32)dest & 3) {
+        u16 tmp = value;
+        CpuSet(&tmp, dest, ((length << 0xA) >> 0xB) | CPU_SET_SRC_FIXED);
+    } else {
+        u32 tmp = value;
+        CpuFastSet(&tmp, dest, ((length << 0x9) >> 0xB) | CPU_SET_SRC_FIXED);
+    }
+}
 
 extern "C" u16* misctext_get_room_description(u16 index) {
     u8* data = (u8*)Blob_GetEntry(&_binary_build_mother3_assets_misctext_bin_start, 1);
@@ -1038,7 +1142,7 @@ extern "C" ASM_FUNC("asm/non_matching/rom/nullsub_1.inc", void nullsub_1());
 extern "C" ASM_FUNC("asm/non_matching/rom/nullsub_2.inc", void nullsub_2());
 
 extern "C" void exec_mode(InputState* input) {
-    sub_080016E4();
+    CheckSoftResetKeys(input);
     switch (gGame.mode) {
     case MODE_NORMAL:
         sub_0800B00C(input);
@@ -1075,7 +1179,7 @@ extern "C" void sub_08005364() {
     REG_IE &= ~3;
     REG_DISPSTAT &= ~0x18;
     memcpy(&gIntrHandlers, &gUnknown_080C1A58, sizeof(gUnknown_080C1A58));
-    sub_08001A14(&sub_0803D474, &gUnknown_03004B14, 0x100);
+    Dma3Copy(&sub_0803D474, &gUnknown_03004B14, 0x100);
     sub_08005C38();
     gUnknown_03004B0A = 0;
     REG_IME = 1;
@@ -1174,16 +1278,16 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_08007AD4.inc", void sub_08007AD4()
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08007CC0.inc", void sub_08007CC0());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08007CE8.inc", void sub_08007CE8());
 
-extern "C" void sub_08007D18(Unknown_02016078* arg0) {
+extern "C" void sub_08007D18(GraphicsBuffer* gfx) {
     if (gGame._595b[0] == 2) {
-        arg0->r = 31;
-        arg0->g = 31;
-        arg0->b = 31;
-        *(vu16*)PLTT = RGB(arg0->r, arg0->g, arg0->b);
+        gfx->r = 31;
+        gfx->g = 31;
+        gfx->b = 31;
+        *(vu16*)PLTT = RGB(gfx->r, gfx->g, gfx->b);
     } else {
-        arg0->r = 0;
-        arg0->g = 0;
-        arg0->b = 0;
+        gfx->r = 0;
+        gfx->g = 0;
+        gfx->b = 0;
     }
 }
 

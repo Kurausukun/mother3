@@ -115,6 +115,6 @@ _0800AAAC:
 	bx r0
 	.align 2, 0
 _0800AABC: .4byte 0xFFFF0000
-_0800AAC0: .4byte gUnknown_02016078
+_0800AAC0: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _0800AAC4: .4byte 0x0000FFFF
 	.syntax divided

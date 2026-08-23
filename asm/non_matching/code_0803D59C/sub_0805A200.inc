@@ -77,6 +77,6 @@ _0805A288:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0805A298: .4byte gUnknown_02016078
+_0805A298: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _0805A29C: .4byte 0x000001FF
 	.syntax divided

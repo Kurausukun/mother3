@@ -33,7 +33,7 @@ _0805187C:
 	movs r1, #0x80
 	lsls r1, r1, #5
 	adds r0, r5, #0
-	bl memclear
+	bl CpuMemClear
 	adds r1, r6, #0
 	adds r1, #0xd0
 	adds r0, r7, #0

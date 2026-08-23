@@ -10,7 +10,7 @@ sub_0805255C:
 	ldr r4, _0805262C
 	adds r0, r4, #0
 	movs r1, #0x40
-	bl memclear
+	bl CpuMemClear
 	ldr r0, _08052630
 	adds r1, r4, r0
 	movs r0, #0

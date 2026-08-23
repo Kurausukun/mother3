@@ -33,7 +33,7 @@ sub_0804FF30:
 	ldr r2, _0804FF90
 	adds r0, r6, r2
 	movs r1, #0x54
-	bl memclear
+	bl CpuMemClear
 	b _0804FFA6
 	.align 2, 0
 _0804FF80: .4byte gUnknown_02018E68

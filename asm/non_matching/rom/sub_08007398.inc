@@ -129,7 +129,7 @@ sub_08007398:
 	mov r0, sb
 	ands r1, r0
 	strb r1, [r7, #2]
-	bl sub_08000D54
+	bl get_enginemode_flag_1
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	ands r0, r5
@@ -168,7 +168,7 @@ _080074E4:
 	mov r4, sl
 	adds r4, #0x50
 	adds r0, r4, #0
-	bl sub_08001454
+	bl DmaClearGraphicsBuffer
 	ldr r0, _08007570
 	add r0, sl
 	movs r1, #0
@@ -331,7 +331,7 @@ _08007654:
 	bl CpuSmartSet
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl memclear
+	bl CpuMemClear
 _08007682:
 	ldr r0, _080076AC
 	ldrb r0, [r0]
@@ -376,7 +376,7 @@ _080076E0:
 	rsbs r2, r2, #0
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl memFill
+	bl CpuMemFill
 	b _08007720
 	.align 2, 0
 _08007700: .4byte gUnknown_03005314
@@ -391,7 +391,7 @@ _08007708:
 	bl CpuSmartSet
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl memclear
+	bl CpuMemClear
 _08007720:
 	ldr r0, _08007754
 	ldr r1, _08007758

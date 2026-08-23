@@ -286,12 +286,10 @@
 . = 0x00015F78; gUnknown_02015F78 = .;
 *libc.a:syscalls.o(.bss);
 . = 0x00016028; gSomeBlend = .;
-. = 0x00016078; gUnknown_02016078 = .;
 . = 0x00016878; gUnknown_02016878 = .;
 . = 0x00017878; gUnknown_02017878 = .;
 . = 0x00018778; gUnknown_02018778 = .;
 . = 0x000189B8; gUnknown_020189B8 = .;
-. = 0x00018CC8; gInputState = .;
 . = 0x00018CD8; gUnknown_02018CD8 = .;
 . = 0x00018CDC; gUnknown_02018CDC = .;
 . = 0x00018CE8; gUnknown_02018CE8 = .;

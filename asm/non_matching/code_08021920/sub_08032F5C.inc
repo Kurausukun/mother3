@@ -11,11 +11,11 @@ sub_08032F5C:
 	movs r4, #0x80
 	lsls r4, r4, #1
 	adds r2, r4, #0
-	bl sub_08001A14
+	bl Dma3Copy
 	ldr r0, _08032F84
 	ldr r1, _08032F88
 	adds r2, r4, #0
-	bl sub_08001A14
+	bl Dma3Copy
 	pop {r4}
 	pop {r0}
 	bx r0

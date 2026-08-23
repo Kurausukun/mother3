@@ -13,7 +13,7 @@ sub_080067B4:
 	adds r0, r0, r1
 	ldrh r1, [r2, #6]
 	lsls r1, r1, #6
-	bl sub_08001A70
+	bl Dma0Clear
 	pop {r0}
 	bx r0
 	.align 2, 0

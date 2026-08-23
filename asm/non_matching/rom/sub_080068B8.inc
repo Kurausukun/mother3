@@ -29,7 +29,7 @@ _080068F2:
 	adds r0, r0, r1
 	adds r1, r5, #0
 	movs r2, #0x20
-	bl sub_08001A14
+	bl Dma3Copy
 	adds r5, #0x20
 	ldr r0, _0800691C
 	ldr r1, _08006920
@@ -56,7 +56,7 @@ _0800692E:
 	adds r0, r0, r1
 	adds r1, r5, #0
 	movs r2, #0x20
-	bl sub_08001A14
+	bl Dma3Copy
 	pop {r4, r5}
 	pop {r0}
 	bx r0

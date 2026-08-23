@@ -22,7 +22,7 @@ _0803FB88:
 	movs r2, #0x80
 	lsls r2, r2, #6
 	adds r0, r3, #0
-	bl sub_08001A14
+	bl Dma3Copy
 	b _0803FBBC
 	.align 2, 0
 _0803FB98: .4byte 0x06013000
@@ -40,7 +40,7 @@ _0803FBB0:
 	movs r2, #0x80
 	lsls r2, r2, #7
 	adds r0, r3, #0
-	bl sub_08001A14
+	bl Dma3Copy
 _0803FBBC:
 	ldr r0, _0803FC58
 	ldrb r0, [r0]
@@ -69,7 +69,7 @@ _0803FBD8:
 	lsls r3, r3, #1
 	adds r0, r4, #0
 	movs r2, #0x15
-	bl sub_0800160C
+	bl CpuCopyPaletteToGfxBuffer
 	ldr r0, _0803FC58
 	ldrb r0, [r0]
 	cmp r0, #0xa
@@ -84,7 +84,7 @@ _0803FBD8:
 	adds r0, r4, #0
 	movs r2, #0x14
 	movs r3, #0x20
-	bl sub_0800160C
+	bl CpuCopyPaletteToGfxBuffer
 _0803FC1C:
 	ldr r0, _0803FC58
 	ldrb r0, [r0]
@@ -98,7 +98,7 @@ _0803FC1C:
 	ldr r1, _0803FC70
 	movs r2, #0xa0
 	lsls r2, r2, #1
-	bl sub_08001A14
+	bl Dma3Copy
 	adds r0, r4, #0
 	movs r1, #0x57
 	bl Blob_GetEntry
@@ -106,7 +106,7 @@ _0803FC1C:
 	ldr r0, _0803FC6C
 	movs r2, #0x1f
 	movs r3, #0x20
-	bl sub_0800160C
+	bl CpuCopyPaletteToGfxBuffer
 _0803FC4E:
 	pop {r4, r5}
 	pop {r0}
@@ -118,6 +118,6 @@ _0803FC5C: .4byte gMenuData
 _0803FC60: .4byte 0x06017000
 _0803FC64: .4byte gSave
 _0803FC68: .4byte 0x0000081E
-_0803FC6C: .4byte gUnknown_02016078
+_0803FC6C: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _0803FC70: .4byte 0x06017EC0
 	.syntax divided

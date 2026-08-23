@@ -29,7 +29,7 @@ sub_08040024:
 	adds r0, r5, #0
 	movs r2, #0xd
 	movs r3, #0x20
-	bl sub_0800160C
+	bl CpuCopyPaletteToGfxBuffer
 	movs r0, #0xd
 	movs r1, #1
 	bl sub_08056584

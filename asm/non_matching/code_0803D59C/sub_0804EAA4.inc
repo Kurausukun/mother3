@@ -78,7 +78,7 @@ _0804EB24:
 	ldr r1, [r1]
 	movs r2, #0xe4
 	lsls r2, r2, #1
-	bl sub_08001A14
+	bl Dma3Copy
 _0804EB52:
 	pop {r4}
 	pop {r0}

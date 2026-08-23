@@ -49,10 +49,10 @@ sub_08004794:
 	ldr r0, _080048C0
 	movs r1, #0x80
 	lsls r1, r1, #3
-	bl memclear
+	bl CpuMemClear
 	ldr r4, _080048C4
 	adds r0, r4, #0
-	bl sub_080019A4
+	bl Dma3CopyPalettesFromGfxBuffer
 	ldr r0, _080048C8
 	adds r0, r0, r5
 	mov r8, r0
@@ -134,7 +134,7 @@ _080048B4: .4byte 0x00005962
 _080048B8: .4byte 0x00005960
 _080048BC: .4byte 0x0000595C
 _080048C0: .4byte gUnknown_03005314
-_080048C4: .4byte gUnknown_02016078
+_080048C4: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _080048C8: .4byte 0x00008462
 _080048CC: .4byte 0x00008494
 _080048D0: .4byte 0x00009480

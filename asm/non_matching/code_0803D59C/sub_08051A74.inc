@@ -9,7 +9,7 @@ sub_08051A74:
 	lsls r5, r5, #5
 	mov r0, sp
 	adds r1, r5, #0
-	bl memclear
+	bl CpuMemClear
 	adds r0, r4, #0
 	mov r1, sp
 	movs r2, #1
@@ -33,7 +33,7 @@ sub_08051A74:
 	bl CpuSmartSet
 	mov r0, sp
 	adds r1, r5, #0
-	bl memclear
+	bl CpuMemClear
 	adds r0, r4, #0
 	mov r1, sp
 	movs r2, #1
@@ -57,7 +57,7 @@ sub_08051A74:
 	bl CpuSmartSet
 	mov r0, sp
 	adds r1, r5, #0
-	bl memclear
+	bl CpuMemClear
 	adds r0, r4, #0
 	mov r1, sp
 	movs r2, #1

@@ -63,7 +63,7 @@ _0804A5AE:
 	movs r1, #1
 	b _0804A5EE
 	.align 2, 0
-_0804A5D0: .4byte gUnknown_02016078
+_0804A5D0: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _0804A5D4: .4byte 0x000041DC
 _0804A5D8: .4byte gUnknown_0200F920
 _0804A5DC: .4byte 0x000041E4

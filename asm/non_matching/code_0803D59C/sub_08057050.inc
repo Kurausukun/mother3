@@ -16,12 +16,12 @@ sub_08057050:
 	ldr r0, _08057088
 	movs r2, #0x1f
 	movs r3, #0x20
-	bl sub_0800160C
+	bl CpuCopyPaletteToGfxBuffer
 	pop {r4}
 	pop {r0}
 	bx r0
 	.align 2, 0
 _08057080: .4byte gTitleScreenGfx
 _08057084: .4byte 0x06017EC0
-_08057088: .4byte gUnknown_02016078
+_08057088: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 	.syntax divided

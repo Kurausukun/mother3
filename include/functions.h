@@ -58,7 +58,7 @@ void heal_hp(u16, s16);
 u32 sub_0802AF88(s16);
 void sub_0802AFBC(s16);
 void restore_pp(u16, s16);
-void memclear(void*, u32);
+void CpuMemClear(void*, u32);
 u16 sub_0802A98C();
 void sub_0800A240(u8*);
 void sub_08009E38(u8*, u32);

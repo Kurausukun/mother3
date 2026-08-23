@@ -58,12 +58,12 @@ sub_08056E68:
 	str r0, [r1]
 	movs r1, #0xa0
 	lsls r1, r1, #1
-	bl memclear
+	bl CpuMemClear
 	adds r0, r4, #0
 	bl sub_080013D0
 	adds r0, r4, #0
 	adds r0, #0x50
-	bl sub_08001454
+	bl DmaClearGraphicsBuffer
 	ldr r1, _08056F4C
 	adds r0, r4, r1
 	movs r1, #3

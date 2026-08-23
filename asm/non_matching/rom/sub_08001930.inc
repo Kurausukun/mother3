@@ -19,7 +19,7 @@ _08001944:
 	ldr r0, [r1, #4]
 	movs r1, #0xa0
 	lsls r1, r1, #1
-	bl sub_080019DC
+	bl Dma3Clear
 _08001958:
 	add sp, #4
 	pop {r0}
