@@ -33,7 +33,7 @@ private:
 
 class RhythmCombo : public Base {
 public:
-    RhythmCombo(s32, Object38_s16r2_t*);
+    RhythmCombo(s32, UnitObject_s16r2*);
     virtual ~RhythmCombo();
 
 private:

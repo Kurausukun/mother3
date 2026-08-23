@@ -12,9 +12,9 @@ inline s32 clampS32(s32 value, s32 min, s32 max) {
     return value;
 }
 
-struct Object38_s16r2_t {
-    Object38_s16r2_t() : val1(0), val2(0) {}
-    Object38_s16r2_t(s32 v1, s32 v2) : val1(v1), val2(v2) {}
+struct UnitObject_s16r2 {
+    UnitObject_s16r2() : val1(0), val2(0) {}
+    UnitObject_s16r2(s32 v1, s32 v2) : val1(v1), val2(v2) {}
     s16 val1;
     s16 val2;
 };
@@ -28,10 +28,10 @@ struct UnitObject {
     virtual void object_20() = 0;
     virtual void object_28() = 0;
     virtual u32 object_30() = 0;
-    virtual Object38_s16r2_t object_38() = 0;
+    virtual UnitObject_s16r2 object_38() = 0;
     virtual void object_40() = 0;
     virtual u32 object_48() = 0;
-    virtual Object38_s16r2_t object_50() = 0;
+    virtual UnitObject_s16r2 object_50() = 0;
     virtual u32 object_58() = 0;
     virtual void object_60() = 0;
     virtual void object_68() = 0;

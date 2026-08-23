@@ -10,7 +10,7 @@ public:
     UnnamedSndMon();
     virtual ~UnnamedSndMon();
 
-    virtual void sub_080652DC(Object38_s16r2_t*);
+    virtual void sub_080652DC(UnitObject_s16r2*);
     virtual void sub_080652E4(s32);
     virtual void sub_080652E8(s16);
     virtual void sub_080652EC();

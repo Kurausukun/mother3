@@ -30,7 +30,7 @@ extern "C" Action* create__17GuestSkillFactoryUsP4Unit(u16 arg0,
                                                        Unit* user);  // TODO: confirm return type
 extern "C" s32 Remainder(s32, s32);
 extern "C" bool IsPlayer(Unit*);
-extern "C" void sub_08085FB0(RhythmCombo*, s32, Object38_s16r2_t*);
+extern "C" void sub_08085FB0(RhythmCombo*, s32, UnitObject_s16r2*);
 extern "C" s32 sub_0807066C(s32, s32);
 bool statusWearOff(Unit* unit, Status::Type type, bool print);
 

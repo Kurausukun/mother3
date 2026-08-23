@@ -96,7 +96,7 @@ _08073AF2:
 	adds r0, r5, #0
 	adds r1, r6, #0
 	adds r2, r4, #0
-	bl __11RhythmComboiP16Object38_s16r2_t
+	bl __11RhythmComboiP16UnitObject_s16r2
 	adds r0, r7, #0
 	bl IsPlayer
 	lsls r0, r0, #0x18

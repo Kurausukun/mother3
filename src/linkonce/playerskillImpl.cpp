@@ -110,12 +110,12 @@ extern "C" ASM_FUNC("asm/non_matching/playerskillImpl/sub_0809EEAC.inc", void su
 
 void Bash::onAttack(Unit* TargetedUnit) {
     Monster* targetMonster = dynaCastMonster(TargetedUnit);
-    Object38_s16r2_t sp68 = TargetedUnit->object_50();
+    UnitObject_s16r2 sp68 = TargetedUnit->object_50();
     this->_BashTargetMonster = new (UnnamedSndMon);
     this->_BashTargetMonster->sub_080652DC(({
-        Object38_s16r2_t sp6c = TargetedUnit->object_38();
-        Object38_s16r2_t sp70(0, sp68.val2 / 2);
-        Object38_s16r2_t sp74((s32)sp6c.val1, sp6c.val2 - sp70.val2);
+        UnitObject_s16r2 sp6c = TargetedUnit->object_38();
+        UnitObject_s16r2 sp70(0, sp68.val2 / 2);
+        UnitObject_s16r2 sp74((s32)sp6c.val1, sp6c.val2 - sp70.val2);
         &sp74;
     }));
     this->_BashTargetMonster->sub_080652E4(TargetedUnit->object_48());

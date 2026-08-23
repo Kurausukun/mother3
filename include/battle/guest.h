@@ -58,14 +58,14 @@ public:
     void object_20() override {}
     void object_28() override {}
     u32 object_30() override { return 0; }
-    virtual Object38_s16r2_t imposter_object_38() { return Object38_s16r2_t(); }
-    Object38_s16r2_t object_38() override { return Object38_s16r2_t(); }
+    virtual UnitObject_s16r2 imposter_object_38() { return UnitObject_s16r2(); }
+    UnitObject_s16r2 object_38() override { return UnitObject_s16r2(); }
     void object_40() override {
         num_active_listeners = 0;
         lifetime = 0;
     }
     u32 object_48() override { return 0; }
-    Object38_s16r2_t object_50() override { return Object38_s16r2_t(); }
+    UnitObject_s16r2 object_50() override { return UnitObject_s16r2(); }
     u32 object_58() override { return 0; }
     void object_60() override {}
     void object_68() override {}

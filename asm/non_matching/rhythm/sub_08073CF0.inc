@@ -58,7 +58,7 @@ sub_08073CF0:
 	adds r0, r4, #0
 	mov r1, sb
 	mov r2, sp
-	bl __11RhythmComboiP16Object38_s16r2_t
+	bl __11RhythmComboiP16UnitObject_s16r2
 _08073D72:
 	ldr r1, [r7, #0x1c]
 	add r1, r8
