@@ -54,312 +54,314 @@ typedef struct sub_0804337C_struct {
     s16 speed;
 } arg1struct;
 
-enum MenuTextID {
-    MENUTEXT_UNUSED_0 = 0x0,    // [END]
-    MENUTEXT_UNUSED_1 = 0x1,    // ??????????[END]
-    MENUTEXT_UNUSED_2 = 0x2,    // ------[END]
-    MENUTEXT_YES = 0x3,         // Yes[END]
-    MENUTEXT_NO = 0x4,          // No[END]
-    MENUTEXT_END = 0x5,         // End[END]
-    MENUTEXT_UNUSED_6 = 0x6,    // [END]
-    MENUTEXT_UNUSED_7 = 0x7,    // [END]
-    MENUTEXT_UNUSED_8 = 0x8,    // [END]
-    MENUTEXT_UNUSED_9 = 0x9,    // [END]
-    MENUTEXT_UNUSED_A = 0xA,    // [END]
-    MENUTEXT_UNUSED_B = 0xB,    // [END]
-    MENUTEXT_UNUSED_C = 0xC,    // [END]
-    MENUTEXT_UNUSED_D = 0xD,    // [END]
-    MENUTEXT_UNUSED_E = 0xE,    // [END]
-    MENUTEXT_UNUSED_F = 0xF,    // [END]
-    MENUTEXT_UNUSED_10 = 0x10,  // [END]
-    MENUTEXT_UNUSED_11 = 0x11,  // [END]
-    MENUTEXT_UNUSED_12 = 0x12,  // [END]
-    MENUTEXT_UNUSED_13 = 0x13,  // [END]
-    MENUTEXT_NO_DATA = 0x14,    // No Data[END]
-    MENUTEXT_SAVING_POWER_OFF_WARNING =
-        0x15,  // Saving...[BREAK]Please do not turn off the power.[END]
-    MENUTEXT_LOADING_POWER_OFF_WARNING =
-        0x16,  // Loading...[BREAK]Please do not turn off the power.[END]
-    MENUTEXT_COPYING_POWER_OFF_WARNING =
-        0x17,                           // Copying...[BREAK]Please do not turn off the power.[END]
-    MENUTEXT_SAVE_TO_THIS_FILE = 0x18,  // OK to overwrite this file?[END]
-    MENUTEXT_DATA_IS_CORRUPT = 0x19,    // Data is corrupt.[END]
-    MENUTEXT_UNABLE_TO_SAVE = 0x1A,     // Unable to save.[END]
-    MENUTEXT_UNABLE_TO_COPY = 0x1B,     // Unable to copy.[END]
-    MENUTEXT_ERASE_THIS_SAVE = 0x1C,    // This will erase this save file.[BREAK]Is that okay?[END]
-    MENUTEXT_ERASE_ALL_SAVE = 0x1D,     // This will erase all save files.[END]
-    MENUTEXT_COPY_THIS_FILE =
-        0x1E,  // This will copy this file to the other slot.[BREAK]Is that okay?[END]
-    MENUTEXT_OVERWRITE_SAVE_FILE =
-        0x1F,  // There is another save file there.[BREAK]Overwrite it?[END]
-    MENUTEXT_DATA_CORRUPT_SAVE_DELETED = 0x20,  // Data corrupt.[BREAK]Save file(s) deleted.[END]
-    MENUTEXT_IS_THAT_OKAY = 0x21,               // Is that okay?[END]
-    MENUTEXT_UNUSED_22 = 0x22,                  // [END]
-    MENUTEXT_CONTINUE = 0x23,                   // Continue[END]
-    MENUTEXT_DELETE = 0x24,                     // Delete[END]
-    MENUTEXT_COPY = 0x25,                       // Copy[END]
-    MENUTEXT_TEXT_SPEED = 0x26,                 // Text Speed[END]
-    MENUTEXT_WINDOW_COLOR = 0x27,               // Window Color[END]
-    MENUTEXT_FAST = 0x28,                       // Fast[END]
-    MENUTEXT_MEDIUM = 0x29,                     // Medium[END]
-    MENUTEXT_SLOW = 0x2A,                       // Slow[END]
-    MENUTEXT_PLAIN = 0x2B,                      // Plain[END]
-    MENUTEXT_MINT = 0x2C,                       // Mint[END]
-    MENUTEXT_STRAWBERRY = 0x2D,                 // Strawberry[END]
-    MENUTEXT_BANANA = 0x2E,                     // Banana[END]
-    MENUTEXT_PEANUT = 0x2F,                     // Peanut[END]
-    MENUTEXT_GRAPE = 0x30,                      // Grape[END]
-    MENUTEXT_MELON = 0x31,                      // Melon[END]
-    MENUTEXT_IS_THIS_OKAY = 0x32,               // Is this okay?[END]
-    MENUTEXT_INVALID_DUPLICATE_NAME = 0x33,     // Invalid / duplicate name[END]
-    MENUTEXT_TRY_AGAIN = 0x34,                  // Try again?[END]
-    MENUTEXT_UNUSED_35 = 0x35,                  // [END]
-    MENUTEXT_UNUSED_36 = 0x36,                  // [END]
-    MENUTEXT_UNUSED_37 = 0x37,                  // [END]
-    MENUTEXT_UNUSED_38 = 0x38,                  // [END]
-    MENUTEXT_UNUSED_39 = 0x39,                  // [END]
-    MENUTEXT_UNUSED_3A = 0x3A,                  // [END]
-    MENUTEXT_ON_WHOM = 0x3B,                    // On whom?[END]
-    MENUTEXT_MENU = 0x3C,                       // Menu[END]
-    MENUTEXT_TO_WHOM = 0x3D,                    // To whom?[END]
-    MENUTEXT_USE = 0x3E,                        // Use[END]
-    MENUTEXT_GIVE = 0x3F,                       // Give[END]
-    MENUTEXT_DROP = 0x40,                       // Drop[END]
-    MENUTEXT_GOODS = 0x41,                      // Goods[END]
-    MENUTEXT_EQUIP = 0x42,                      // Equip[END]
-    MENUTEXT_PSI = 0x43,                        // PSI[END]
-    MENUTEXT_STATUS = 0x44,                     // Status[END]
-    MENUTEXT_MEMO = 0x45,                       // Memo[END]
-    MENUTEXT_BATTLE_MEMORY = 0x46,              // Battle Memory[END]
-    MENUTEXT_LEVEL = 0x47,                      // Level[END]
-    MENUTEXT_OFFENSE = 0x48,                    // Offense[END]
-    MENUTEXT_DEFENSE = 0x49,                    // Defense[END]
-    MENUTEXT_IQ = 0x4A,                         // IQ[END]
-    MENUTEXT_SPEED = 0x4B,                      // Speed[END]
-    MENUTEXT_EXP = 0x4C,                        // EXP[END]
-    MENUTEXT_NEXT_LEVEL = 0x4D,                 // Next Level[END]
-    MENUTEXT_HP = 0x4E,                         // HP[END]
-    MENUTEXT_MAX_HP = 0x4F,                     // Max. HP[END]
-    MENUTEXT_PP = 0x50,                         // PP[END]
-    MENUTEXT_MAX_PP = 0x51,                     // Max. PP[END]
-    MENUTEXT_WEAPON = 0x52,                     // Weapon[END]
-    MENUTEXT_HEAD = 0x53,                       // Head[END]
-    MENUTEXT_BODY = 0x54,                       // Body[END]
-    MENUTEXT_OTHER = 0x55,                      // Other[END]
-    MENUTEXT_SKILLS = 0x56,                     // Skills[END]
-    MENUTEXT_UNUSED_57 = 0x57,                  // ------[END]
-    MENUTEXT_NONE = 0x58,                       // None[END]
-    MENUTEXT_UNUSED_59 = 0x59,                  // [END]
-    MENUTEXT_USE_ON_WHOM = 0x5A,                // Use on whom?[END]
-    MENUTEXT_UNUSED_5B = 0x5B,                  // [END]
-    MENUTEXT_CANT_BE_USED = 0x5C,               // can't be used.[END]
-    MENUTEXT_BRUTE_FORCE = 0x5D,                // Brute Force[END]
-    MENUTEXT_THIEF_TOOLS = 0x5E,                // Thief Tools[END]
-    MENUTEXT_SNIFF = 0x5F,                      // Sniff[END]
-    MENUTEXT_MONKEY_TRICKS = 0x60,              // Monkey Tricks[END]
-    MENUTEXT_NONE_2 = 0x61,                     // None[END]
-    MENUTEXT_A_BUTTON_FOR_SKILL_INFO = 0x62,    // Press the A Button for skill info.[END]
-    MENUTEXT_POISON = 0x63,                     // Poison[END]
-    MENUTEXT_NUMB = 0x64,                       // Numb[END]
-    MENUTEXT_SLEEP = 0x65,                      // Sleep[END]
-    MENUTEXT_STRANGE = 0x66,                    // Strange[END]
-    MENUTEXT_CRYING = 0x67,                     // Crying[END]
-    MENUTEXT_FORGETFUL = 0x68,                  // Forgetful[END]
-    MENUTEXT_NAUSEATED = 0x69,                  // Nauseated[END]
-    MENUTEXT_FLEAS = 0x6A,                      // Fleas[END]
-    MENUTEXT_UNUSED_6B = 0x6B,                  // [END]
-    MENUTEXT_UNUSED_6C = 0x6C,                  // [END]
-    MENUTEXT_UNUSED_6D = 0x6D,                  // [END]
-    MENUTEXT_UNUSED_6E = 0x6E,                  // [END]
-    MENUTEXT_UNUSED_6F = 0x6F,                  // [END]
-    MENUTEXT_UNUSED_70 = 0x70,                  // [END]
-    MENUTEXT_UNUSED_71 = 0x71,                  // [END]
-    MENUTEXT_UNUSED_72 = 0x72,                  // [END]
-    MENUTEXT_UNUSED_73 = 0x73,                  // [END]
-    MENUTEXT_UNUSED_74 = 0x74,                  // [END]
-    MENUTEXT_UNUSED_75 = 0x75,                  // [END]
-    MENUTEXT_UNUSED_76 = 0x76,                  // [END]
-    MENUTEXT_UNUSED_77 = 0x77,                  // [END]
-    MENUTEXT_SHOP = 0x78,                       // Shop[END]
-    MENUTEXT_BUY = 0x79,                        // Buy[END]
-    MENUTEXT_SELL = 0x7A,                       // Sell[END]
-    MENUTEXT_END_2 = 0x7B,                      // End[END]
-    MENUTEXT_BUY_2 = 0x7C,                      // Buy [11 EF][END]
-    MENUTEXT_SELL_2 = 0x7D,                     // Sell [14 EF][END]
-    MENUTEXT_FOR_DP = 0x7E,                     //  for [A3 FF] DP?[END]
-    MENUTEXT_SELL_YOUR = 0x7F,                  // Sell your [END]
-    MENUTEXT_EQUIP_2 = 0x80,                    // Equip [13 EF][END]
-    MENUTEXT_THROW_AWAY = 0x81,                 // Throw away [14 EF][END]
-    MENUTEXT_STILL_EQUIPPED_OK_ANYWAY = 0x82,   // Still equipped. OK anyway?[END]
-    MENUTEXT_CANT_HOLD_ANYMORE_ITEMS =
-        0x83,                           // Inventory full.[BREAK]Can't hold any more items.[END]
-    MENUTEXT_UNUSED_84 = 0x84,          // [END]
-    MENUTEXT_UNUSED_85 = 0x85,          // [END]
-    MENUTEXT_UNUSED_86 = 0x86,          // [END]
-    MENUTEXT_ITEM_GUY = 0x87,           // Item Guy[END]
-    MENUTEXT_DEPOSIT_ITEM_GUY = 0x88,   // Deposit[END]
-    MENUTEXT_WITHDRAW_ITEM_GUY = 0x89,  // Withdraw[END]
-    MENUTEXT_END_3 = 0x8A,              // End[END]
-    MENUTEXT_FULL_CANT_WITHDRAW_ITEM_GUY =
-        0x8B,                         // Inventory full.[BREAK]Can't withdraw any more items.[END]
-    MENUTEXT_PROLOGUE = 0x8C,         // Prologue[END]
-    MENUTEXT_CHAPTER_1 = 0x8D,        // Chapter 1[END]
-    MENUTEXT_CHAPTER_2 = 0x8E,        // Chapter 2[END]
-    MENUTEXT_CHAPTER_3 = 0x8F,        // Chapter 3[END]
-    MENUTEXT_CHAPTER_4 = 0x90,        // Chapter 4[END]
-    MENUTEXT_CHAPTER_5 = 0x91,        // Chapter 5[END]
-    MENUTEXT_CHAPTER_6 = 0x92,        // Chapter 6[END]
-    MENUTEXT_CHAPTER_7 = 0x93,        // Chapter 7[END]
-    MENUTEXT_CHAPTER_8 = 0x94,        // Chapter 8[END]
-    MENUTEXT_PROLOGUE_END = 0x95,     // Prologue End[END]
-    MENUTEXT_CHAPTER_1_END = 0x96,    // Chapter 1 End[END]
-    MENUTEXT_CHAPTER_2_END = 0x97,    // Chapter 2 End[END]
-    MENUTEXT_CHAPTER_3_END = 0x98,    // Chapter 3 End[END]
-    MENUTEXT_CHAPTER_4_END = 0x99,    // Chapter 4 End[END]
-    MENUTEXT_CHAPTER_5_END = 0x9A,    // Chapter 5 End[END]
-    MENUTEXT_CHAPTER_6_END = 0x9B,    // Chapter 6 End[END]
-    MENUTEXT_CHAPTER_7_END = 0x9C,    // Chapter 7 End[END]
-    MENUTEXT_CHAPTER_8_END = 0x9D,    // Chapter 8 End[END]
-    MENUTEXT_UNUSED_9E = 0x9E,        // [END]
-    MENUTEXT_UNUSED_9F = 0x9F,        // [END]
-    MENUTEXT_RECOVERED_HP = 0xA0,     // [A0 FF] recovered [A3 FF] HP![END]
-    MENUTEXT_HP_IS_MAXED_OUT = 0xA1,  // [A0 FF]'s HP is maxed out![END]
-    MENUTEXT_RECOVERED_PP = 0xA2,     // [A0 FF] recovered [A3 FF] PP![END]
-    MENUTEXT_PP_IS_MAXED_OUT = 0xA3,  // [A0 FF]'s PP is maxed out![END]
-    MENUTEXT_POISON_DISAPPEARED_FROM_BODY =
-        0xA4,                            // The poison disappeared from [A0 FF]'s[BREAK]body![END]
-    MENUTEXT_NUMBNESS_IS_GONE = 0xA5,    // [A0 FF]'s numbness is gone![END]
-    MENUTEXT_IS_BACK_TO_NORMAL = 0xA6,   // [A0 FF] is back to normal![END]
-    MENUTEXT_REMEMBERED_SKILLS = 0xA7,   // [A0 FF] remembered skills![END]
-    MENUTEXT_FELT_BETTER = 0xA8,         // [A0 FF] felt better![END]
-    MENUTEXT_FLEAS_ARE_ALL_GONE = 0xA9,  // [A0 FF]'s fleas are all gone![END]
-    MENUTEXT_IS_BACK_TO_PERFECT_HEALTH = 0xAA,  // [A0 FF] is back to perfect health![END]
-    MENUTEXT_THERE_WAS_NO_EFFECT_ON = 0xAB,     // There was no effect on [A0 FF]![END]
-    MENUTEXT_CANT_BE_USED_HERE = 0xAC,          // [A1 FF] can't be used here.[END]
-    MENUTEXT_CANT_BE_USED_HERE_2 = 0xAD,        // [A2 FF] can't be used here.[END]
-    MENUTEXT_DEAD_CANT_EAT_OR_DRINK =
-        0xAE,  // [A0 FF] isn't in any condition to[BREAK]eat or drink.[END]
-    MENUTEXT_DEAD_CANT_USE_ITEM =
-        0xAF,  // [A0 FF] isn't in a good enough[BREAK]condition to use that.[END]
-    MENUTEXT_LOVES_CHEESE = 0xB0,             // [A0 FF] loves cheese![END]
-    MENUTEXT_ISNT_FOND_OF_CHEESE = 0xB1,      // [A0 FF] isn't too fond of cheese.[END]
-    MENUTEXT_MADE_A_COMEBACK = 0xB2,          // [A0 FF] made a comeback![END]
-    MENUTEXT_UNUSED_B3 = 0xB3,                // [END]
-    MENUTEXT_HAS_X_OF_THIS_ITEM = 0xB4,       // [A1 FF] - [A0 FF] has [A3 FF] of this item.[END]
-    MENUTEXT_HAS_ONE_OF_THIS_ITEM = 0xB5,     // [A1 FF] - [A0 FF] has one of this item.[END]
-    MENUTEXT_DOESNT_HAVE_ANY_OF_ITEM = 0xB6,  // [A1 FF] - [A0 FF] doesn't have any.[END]
-    MENUTEXT_INVENTORY_IS_FULL = 0xB7,        // [A0 FF]'s inventory is full.[END]
-    MENUTEXT_HAS_THIS_EQUIPPED = 0xB8,        // [A1 FF] - [A0 FF] has this equipped.[END]
-    MENUTEXT_EQUIPPED = 0xB9,                 // [A0 FF] equipped [13 EF][A1 FF]![END]
-    MENUTEXT_CAN_BE_EQUIPPED = 0xBA,          // [12 EF][A1 FF] can be equipped[20 EF][END]
-    MENUTEXT_CANT_BE_USED_HERE_3 = 0xBB,      // [12 EF][A1 FF] can't be used here.[END]
-    MENUTEXT_THREW_AWAY = 0xBC,               // Threw away [13 EF][A1 FF].[END]
-    MENUTEXT_YOU_CANT_THROW_AWAY = 0xBD,      // You can't throw away [13 EF][A1 FF].[END]
-    MENUTEXT_UNUSED_BE = 0xBE,                // [END]
-    MENUTEXT_UNUSED_BF = 0xBF,                // [END]
-    MENUTEXT_UNUSED_C0 = 0xC0,                // [END]
-    MENUTEXT_UNUSED_C1 = 0xC1,                // [END]
-    MENUTEXT_UNUSED_C2 = 0xC2,                // [END]
-    MENUTEXT_UNUSED_C3 = 0xC3,                // [END]
-    MENUTEXT_UNUSED_C4 = 0xC4,                // [END]
-    MENUTEXT_UNUSED_C5 = 0xC5,                // [END]
-    MENUTEXT_UNUSED_C6 = 0xC6,                // [END]
-    MENUTEXT_UNUSED_C7 = 0xC7,                // [END]
-    MENUTEXT_FUNNY_STICK_BROUGHT_HAPPINESS =
-        0xC8,  // The Funny Stick brought feelings of happiness.[END]
-    MENUTEXT_YOU_LEARNED_MORE_ABOUT_DCMC =
-        0xC9,  // You learned more about the DCMC than you knew[BREAK]before![END]
-    MENUTEXT_NOT_SOMETHING_YOUD_WANNA_EAT =
-        0xCA,  // That's not really something you'd want to eat...[END]
-    MENUTEXT_NOT_SOMETHING_YOUD_WANNA_EAT_2 =
-        0xCB,  // That's not really something you'd want to eat...[END]
-    MENUTEXT_YOU_NEED_SOME_BIG_TIME =
-        0xCC,  // You need some big-time courage to eat[BREAK]something like this.[END]
-    MENUTEXT_CHICK_WARM_HEART =
-        0xCD,  // The sight of the baby chick warmed [A0 FF]'s[BREAK]heart.[END]
-    MENUTEXT_CHICKEN_DASHED_OFF = 0xCE,    // The chicken dashed off at breakneck speed![END]
-    MENUTEXT_NOT_THE_TIME_TO_USE = 0xCF,   // This isn't the time to use that.[END]
-    MENUTEXT_HANDS_ARE_STICKY_NOW = 0xD0,  // [A0 FF]'s hands are sticky now.[END]
-    MENUTEXT_TOO_SMALL_TO_ENTER =
-        0xD1,                     // Definitely way too small for a person to[BREAK]enter.[END]
-    MENUTEXT_UNUSED_D2 = 0xD2,    // [END]
-    MENUTEXT_UNUSED_D3 = 0xD3,    // [END]
-    MENUTEXT_UNUSED_D4 = 0xD4,    // [END]
-    MENUTEXT_UNUSED_D5 = 0xD5,    // [END]
-    MENUTEXT_UNUSED_D6 = 0xD6,    // [END]
-    MENUTEXT_UNUSED_D7 = 0xD7,    // [END]
-    MENUTEXT_UNUSED_D8 = 0xD8,    // [END]
-    MENUTEXT_UNUSED_D9 = 0xD9,    // [END]
-    MENUTEXT_UNUSED_DA = 0xDA,    // [END]
-    MENUTEXT_UNUSED_DB = 0xDB,    // [END]
-    MENUTEXT_NAME_LUCAS = 0xDC,   // The younger twin brother.[BREAK]A gentle boy.[END]]
-    MENUTEXT_NAME_CLAUS = 0xDD,   // The older twin brother.[BREAK]An energetic boy.[END]
-    MENUTEXT_NAME_FLINT = 0xDE,   // The strong, kind,[BREAK]and dependable father.[END]
-    MENUTEXT_NAME_HINAWA = 0xDF,  // The beloved mother![END]
-    MENUTEXT_NAME_BONEY = 0xE0,   // The brave and smart dog.[END]
-    MENUTEXT_NAME_SALSA = 0xE1,  // A monkey who will endure[BREAK]anything for his girlfriend.[END]
-    MENUTEXT_NAME_DUSTER = 0xE2,    // A strange but nice guy[BREAK]with unexpected skills.[END]
-    MENUTEXT_NAME_KUMATORA = 0xE3,  // A strong, wise, and rather[BREAK]masculine girl.[END]
-    MENUTEXT_NAME_FAVORITE_FOOD = 0xE4,   // What's your favorite[BREAK]homemade food?[END]
-    MENUTEXT_NAME_FAVORITE_THING = 0xE5,  // What's your favorite[BREAK]thing?[END]
-    MENUTEXT_UNUSED_E6 = 0xE6,            // [END]
-    MENUTEXT_UNUSED_E7 = 0xE7,            // [END]
-    MENUTEXT_UNUSED_E8 = 0xE8,            // [END]
-    MENUTEXT_UNUSED_E9 = 0xE9,            // [END]
-    MENUTEXT_ENTER_YOUR_NAME = 0xEA,      // Please enter your name.[END]
-    MENUTEXT_CONFIRM_YOUR_NAME = 0xEB,    // Please confirm your name.[END]
-    MENUTEXT_UNUSED_EC = 0xEC,            // [END]
-    MENUTEXT_UNUSED_ED = 0xED,            // [END]
-    MENUTEXT_UNUSED_EE = 0xEE,            // [END]
-    MENUTEXT_UNUSED_EF = 0xEF,            // [END]
-    MENUTEXT_UNUSED_F0 = 0xF0,            // [END]
-    MENUTEXT_UNUSED_F1 = 0xF1,            // [END]
-    MENUTEXT_UNUSED_F2 = 0xF2,            // [END]
-    MENUTEXT_UNUSED_F3 = 0xF3,            // [END]
-    MENUTEXT_UNUSED_F4 = 0xF4,            // [END]
-    MENUTEXT_UNUSED_F5 = 0xF5,            // [END]
-    MENUTEXT_UNUSED_F6 = 0xF6,            // [END]
-    MENUTEXT_UNUSED_F7 = 0xF7,            // [END]
-    MENUTEXT_UNUSED_F8 = 0xF8,            // [END]
-    MENUTEXT_UNUSED_F9 = 0xF9,            // [END]
-    MENUTEXT_NAMESCREEN1_ROW1 = 0xFA,     // ABCDEabcde01234[END]
-    MENUTEXT_NAMESCREEN1_ROW2 = 0xFB,     // FGHIJfghij56789[END]
-    MENUTEXT_NAMESCREEN1_ROW3 = 0xFC,     // KLMNOklmno*~"@[SMALLBULLET][END]
-    MENUTEXT_NAMESCREEN1_ROW4 = 0xFD,     // PQRSTpqrst<>'=/[END]
-    MENUTEXT_NAMESCREEN1_ROW5 = 0xFE,     // UVWXYuvwxy+-[NOTE]$%[END]
-    MENUTEXT_NAMESCREEN1_ROW6 = 0xFF,     // Z(){}z!?., :;&[LARGECIRCLE][END]
-    MENUTEXT_UNUSED_100 = 0x100,          // [END]
-    MENUTEXT_UNUSED_101 = 0x101,          // [END]
-    MENUTEXT_UNUSED_102 = 0x102,          // [END]
-    MENUTEXT_UNUSED_103 = 0x103,          // [END]
-    MENUTEXT_NAMESCREEN2_ROW1 = 0x104,    // ABCDEabcde01234[END]
-    MENUTEXT_NAMESCREEN2_ROW2 = 0x105,    // FGHIJfghij56789[END]
-    MENUTEXT_NAMESCREEN2_ROW3 = 0x106,    // KLMNOklmno*~"@[SMALLBULLET][END]
-    MENUTEXT_NAMESCREEN2_ROW4 = 0x107,    // PQRSTpqrst<>'=/[END]
-    MENUTEXT_NAMESCREEN2_ROW5 = 0x108,    // UVWXYuvwxy+-[NOTE]$%[END]
-    MENUTEXT_NAMESCREEN2_ROW6 = 0x109,    // Z(){}z!?., :;&[LARGECIRCLE][END]
-    MENUTEXT_UNUSED_10A = 0x10A,          // [END]
-    MENUTEXT_UNUSED_10B = 0x10B,          // [END]
-    MENUTEXT_UNUSED_10C = 0x10C,          // [END]
-    MENUTEXT_UNUSED_10D = 0x10D,          // [END]
-    MENUTEXT_NAMESCREEN3_ROW1 = 0x10E,    // ABCDEabcde01234[END]
-    MENUTEXT_NAMESCREEN3_ROW2 = 0x10F,    // FGHIJfghij56789[END]
-    MENUTEXT_NAMESCREEN3_ROW3 = 0x110,    // KLMNOklmno*~"@[SMALLBULLET][END]
-    MENUTEXT_NAMESCREEN3_ROW4 = 0x111,    // PQRSTpqrst<>'=/[END]
-    MENUTEXT_NAMESCREEN3_ROW5 = 0x112,    // UVWXYuvwxy+-[NOTE]$%[END]
-    MENUTEXT_NAMESCREEN3_ROW6 = 0x113,    // Z(){}z!?., :;&[LARGECIRCLE][END]
-    MENUTEXT_UNUSED_114 = 0x114,          // [END]
-    MENUTEXT_UNUSED_115 = 0x115,          // [END]
-    MENUTEXT_UNUSED_116 = 0x116,          // [END]
-    MENUTEXT_UNUSED_117 = 0x117,          // [END]
-    MENUTEXT_NAMESCREEN4_ROW1 = 0x118,    // ABCDEabcde01234[END]
-    MENUTEXT_NAMESCREEN4_ROW2 = 0x119,    // FGHIJfghij56789[END]
-    MENUTEXT_NAMESCREEN4_ROW3 = 0x11A,    // KLMNOklmno*~"@[SMALLBULLET][END]
-    MENUTEXT_NAMESCREEN4_ROW4 = 0x11B,    // PQRSTpqrst<>'=/[END]
-    MENUTEXT_NAMESCREEN4_ROW5 = 0x11C,    // UVWXYuvwxy+-[NOTE]$%[END]
-    MENUTEXT_NAMESCREEN4_ROW6 = 0x11D,    // Z(){}z!?., :;&[LARGECIRCLE][END]
-    MENUTEXT_UNUSED_11E = 0x11E,          // [END]
-    MENUTEXT_UNUSED_11F = 0x11F,          // [END]
+// Menu1 text IDs. The Mother 3 translation project tools
+// groups these under menu1.txt 
+enum Menus1Text {
+    MENU1TEXT_UNUSED_0 = 0x0,    // 
+    MENU1TEXT_UNUSED_1 = 0x1,    // ??????????
+    MENU1TEXT_UNUSED_2 = 0x2,    // ------
+    MENU1TEXT_YES = 0x3,         // Yes
+    MENU1TEXT_NO = 0x4,          // No
+    MENU1TEXT_END = 0x5,         // End
+    MENU1TEXT_UNUSED_6 = 0x6,    // 
+    MENU1TEXT_UNUSED_7 = 0x7,    // 
+    MENU1TEXT_UNUSED_8 = 0x8,    // 
+    MENU1TEXT_UNUSED_9 = 0x9,    // 
+    MENU1TEXT_UNUSED_A = 0xA,    // 
+    MENU1TEXT_UNUSED_B = 0xB,    // 
+    MENU1TEXT_UNUSED_C = 0xC,    // 
+    MENU1TEXT_UNUSED_D = 0xD,    // 
+    MENU1TEXT_UNUSED_E = 0xE,    // 
+    MENU1TEXT_UNUSED_F = 0xF,    // 
+    MENU1TEXT_UNUSED_10 = 0x10,  // 
+    MENU1TEXT_UNUSED_11 = 0x11,  // 
+    MENU1TEXT_UNUSED_12 = 0x12,  // 
+    MENU1TEXT_UNUSED_13 = 0x13,  // 
+    MENU1TEXT_NO_DATA = 0x14,    // No Data
+    MENU1TEXT_SAVING_POWER_OFF_WARNING =
+        0x15,  // Saving...[BREAK]Please do not turn off the power.
+    MENU1TEXT_LOADING_POWER_OFF_WARNING =
+        0x16,  // Loading...[BREAK]Please do not turn off the power.
+    MENU1TEXT_COPYING_POWER_OFF_WARNING =
+        0x17,                           // Copying...[BREAK]Please do not turn off the power.
+    MENU1TEXT_SAVE_TO_THIS_FILE = 0x18,  // OK to overwrite this file?
+    MENU1TEXT_DATA_IS_CORRUPT = 0x19,    // Data is corrupt.
+    MENU1TEXT_UNABLE_TO_SAVE = 0x1A,     // Unable to save.
+    MENU1TEXT_UNABLE_TO_COPY = 0x1B,     // Unable to copy.
+    MENU1TEXT_ERASE_THIS_SAVE = 0x1C,    // This will erase this save file.[BREAK]Is that okay?
+    MENU1TEXT_ERASE_ALL_SAVE = 0x1D,     // This will erase all save files.[BREAK]Is that okay?
+    MENU1TEXT_COPY_THIS_FILE =
+        0x1E,  // This will copy this file to the other slot.[BREAK]Is that okay?
+    MENU1TEXT_OVERWRITE_SAVE_FILE =
+        0x1F,  // There is another save file there.[BREAK]Overwrite it?
+    MENU1TEXT_DATA_CORRUPT_SAVE_DELETED = 0x20,  // Data corrupt.[BREAK]Save file(s) deleted.
+    MENU1TEXT_UNUSED_21 = 0x21,                  // ENGLISH OVERRIDE: Is that okay?
+    MENU1TEXT_UNUSED_22 = 0x22,                  // 
+    MENU1TEXT_CONTINUE = 0x23,                   // Continue
+    MENU1TEXT_DELETE = 0x24,                     // Delete
+    MENU1TEXT_COPY = 0x25,                       // Copy
+    MENU1TEXT_TEXT_SPEED = 0x26,                 // Text Speed
+    MENU1TEXT_WINDOW_COLOR = 0x27,               // Window Color
+    MENU1TEXT_FAST = 0x28,                       // Fast
+    MENU1TEXT_MEDIUM = 0x29,                     // Medium
+    MENU1TEXT_SLOW = 0x2A,                       // Slow
+    MENU1TEXT_PLAIN = 0x2B,                      // Plain
+    MENU1TEXT_MINT = 0x2C,                       // Mint
+    MENU1TEXT_STRAWBERRY = 0x2D,                 // Strawberry
+    MENU1TEXT_BANANA = 0x2E,                     // Banana
+    MENU1TEXT_PEANUT = 0x2F,                     // Peanut
+    MENU1TEXT_GRAPE = 0x30,                      // Grape
+    MENU1TEXT_MELON = 0x31,                      // Melon
+    MENU1TEXT_IS_THIS_OKAY = 0x32,               // Is this okay?
+    MENU1TEXT_INVALID_DUPLICATE_NAME = 0x33,     // Invalid / duplicate name
+    MENU1TEXT_TRY_AGAIN = 0x34,                  // Try again?
+    MENU1TEXT_UNUSED_35 = 0x35,                  // 
+    MENU1TEXT_UNUSED_36 = 0x36,                  // 
+    MENU1TEXT_UNUSED_37 = 0x37,                  // 
+    MENU1TEXT_UNUSED_38 = 0x38,                  // 
+    MENU1TEXT_UNUSED_39 = 0x39,                  // 
+    MENU1TEXT_UNUSED_3A = 0x3A,                  // 
+    MENU1TEXT_UNUSED_3B = 0x3B,                  // ENGLISH OVERRIDE:On whom?
+    MENU1TEXT_DO_WHAT = 0x3C,                    // Do what?
+    MENU1TEXT_TO_WHOM = 0x3D,                    // To whom?
+    MENU1TEXT_USE = 0x3E,                        // Use
+    MENU1TEXT_GIVE = 0x3F,                       // Give
+    MENU1TEXT_DROP = 0x40,                       // Drop
+    MENU1TEXT_GOODS = 0x41,                      // Goods
+    MENU1TEXT_EQUIP = 0x42,                      // Equip
+    MENU1TEXT_PSI = 0x43,                        // PSI
+    MENU1TEXT_STATUS = 0x44,                     // Status
+    MENU1TEXT_MEMO = 0x45,                       // Memo
+    MENU1TEXT_BATTLE_MEMORY = 0x46,              // Battle Memory
+    MENU1TEXT_LEVEL = 0x47,                      // Level
+    MENU1TEXT_OFFENSE = 0x48,                    // Offense
+    MENU1TEXT_DEFENSE = 0x49,                    // Defense
+    MENU1TEXT_IQ = 0x4A,                         // IQ
+    MENU1TEXT_SPEED = 0x4B,                      // Speed
+    MENU1TEXT_EXP = 0x4C,                        // EXP
+    MENU1TEXT_NEXT_LEVEL = 0x4D,                 // Next Level
+    MENU1TEXT_HP = 0x4E,                         // HP
+    MENU1TEXT_MAX_HP = 0x4F,                     // Max. HP
+    MENU1TEXT_PP = 0x50,                         // PP
+    MENU1TEXT_MAX_PP = 0x51,                     // Max. PP
+    MENU1TEXT_WEAPON = 0x52,                     // Weapon
+    MENU1TEXT_HEAD = 0x53,                       // Head
+    MENU1TEXT_BODY = 0x54,                       // Body
+    MENU1TEXT_OTHER = 0x55,                      // Other
+    MENU1TEXT_SKILLS = 0x56,                     // Skills
+    MENU1TEXT_NONE = 0x57,                       // None
+    MENU1TEXT_UNEQUIP = 0x58,                    // Unequip
+    MENU1TEXT_UNUSED_59 = 0x59,                  // 
+    MENU1TEXT_USE_ON_WHOM = 0x5A,                // Use on whom?
+    MENU1TEXT_UNUSED_5B = 0x5B,                  // 
+    MENU1TEXT_CANT_BE_USED = 0x5C,               // can't be used.
+    MENU1TEXT_BRUTE_FORCE = 0x5D,                // Brute Force
+    MENU1TEXT_THIEF_TOOLS = 0x5E,                // Thief Tools
+    MENU1TEXT_SNIFF = 0x5F,                      // Sniff
+    MENU1TEXT_MONKEY_TRICKS = 0x60,              // Monkey Tricks
+    MENU1TEXT_NONE_2 = 0x61,                     // None
+    MENU1TEXT_A_BUTTON_FOR_SKILL_INFO = 0x62,    // Press the A Button for skill info.
+    MENU1TEXT_POISON = 0x63,                     // Poison
+    MENU1TEXT_NUMB = 0x64,                       // Numb
+    MENU1TEXT_SLEEP = 0x65,                      // Sleep
+    MENU1TEXT_STRANGE = 0x66,                    // Strange
+    MENU1TEXT_CRYING = 0x67,                     // Crying
+    MENU1TEXT_FORGETFUL = 0x68,                  // Forgetful
+    MENU1TEXT_NAUSEATED = 0x69,                  // Nauseated
+    MENU1TEXT_FLEAS = 0x6A,                      // Fleas
+    MENU1TEXT_UNUSED_6B = 0x6B,                  // 
+    MENU1TEXT_UNUSED_6C = 0x6C,                  // 
+    MENU1TEXT_UNUSED_6D = 0x6D,                  // 
+    MENU1TEXT_UNUSED_6E = 0x6E,                  // 
+    MENU1TEXT_UNUSED_6F = 0x6F,                  // 
+    MENU1TEXT_UNUSED_70 = 0x70,                  // 
+    MENU1TEXT_UNUSED_71 = 0x71,                  // 
+    MENU1TEXT_UNUSED_72 = 0x72,                  // 
+    MENU1TEXT_UNUSED_73 = 0x73,                  // 
+    MENU1TEXT_UNUSED_74 = 0x74,                  // 
+    MENU1TEXT_UNUSED_75 = 0x75,                  // 
+    MENU1TEXT_UNUSED_76 = 0x76,                  // 
+    MENU1TEXT_UNUSED_77 = 0x77,                  // 
+    MENU1TEXT_SHOP = 0x78,                       // Shop
+    MENU1TEXT_BUY = 0x79,                        // Buy
+    MENU1TEXT_SELL = 0x7A,                       // Sell
+    MENU1TEXT_END_2 = 0x7B,                      // End
+    MENU1TEXT_BUY_2 = 0x7C,                      // Buy [11 EF]
+    MENU1TEXT_SELL_2 = 0x7D,                     // Sell [14 EF]
+    MENU1TEXT_FOR_DP = 0x7E,                     //  for [A3 FF] DP?
+    MENU1TEXT_SELL_YOUR = 0x7F,                  // Sell your 
+    MENU1TEXT_EQUIP_2 = 0x80,                    // Equip [13 EF]
+    MENU1TEXT_THROW_AWAY = 0x81,                 // Throw away [14 EF]
+    MENU1TEXT_STILL_EQUIPPED_OK_ANYWAY = 0x82,   // Still equipped. OK anyway?
+    MENU1TEXT_CANT_HOLD_ANYMORE_ITEMS =
+        0x83,                           // Inventory full.[BREAK]Can't hold any more items.
+    MENU1TEXT_UNUSED_84 = 0x84,          // 
+    MENU1TEXT_UNUSED_85 = 0x85,          // 
+    MENU1TEXT_UNUSED_86 = 0x86,          // 
+    MENU1TEXT_ITEM_GUY = 0x87,           // Item Guy
+    MENU1TEXT_DEPOSIT_ITEM_GUY = 0x88,   // Deposit
+    MENU1TEXT_WITHDRAW_ITEM_GUY = 0x89,  // Withdraw
+    MENU1TEXT_END_3 = 0x8A,              // End
+    MENU1TEXT_FULL_CANT_WITHDRAW_ITEM_GUY =
+        0x8B,                         // Inventory full.[BREAK]Can't withdraw any more items.
+    MENU1TEXT_PROLOGUE = 0x8C,         // Prologue
+    MENU1TEXT_CHAPTER_1 = 0x8D,        // Chapter 1
+    MENU1TEXT_CHAPTER_2 = 0x8E,        // Chapter 2
+    MENU1TEXT_CHAPTER_3 = 0x8F,        // Chapter 3
+    MENU1TEXT_CHAPTER_4 = 0x90,        // Chapter 4
+    MENU1TEXT_CHAPTER_5 = 0x91,        // Chapter 5
+    MENU1TEXT_CHAPTER_6 = 0x92,        // Chapter 6
+    MENU1TEXT_CHAPTER_7 = 0x93,        // Chapter 7
+    MENU1TEXT_CHAPTER_8 = 0x94,        // Chapter 8
+    MENU1TEXT_PROLOGUE_END = 0x95,     // Prologue End
+    MENU1TEXT_CHAPTER_1_END = 0x96,    // Chapter 1 End
+    MENU1TEXT_CHAPTER_2_END = 0x97,    // Chapter 2 End
+    MENU1TEXT_CHAPTER_3_END = 0x98,    // Chapter 3 End
+    MENU1TEXT_CHAPTER_4_END = 0x99,    // Chapter 4 End
+    MENU1TEXT_CHAPTER_5_END = 0x9A,    // Chapter 5 End
+    MENU1TEXT_CHAPTER_6_END = 0x9B,    // Chapter 6 End
+    MENU1TEXT_CHAPTER_7_END = 0x9C,    // Chapter 7 End
+    MENU1TEXT_CHAPTER_8_END = 0x9D,    // Chapter 8 End
+    MENU1TEXT_UNUSED_9E = 0x9E,        // 
+    MENU1TEXT_UNUSED_9F = 0x9F,        // 
+    MENU1TEXT_RECOVERED_HP = 0xA0,     // [A0 FF] recovered [A3 FF] HP!
+    MENU1TEXT_HP_IS_MAXED_OUT = 0xA1,  // [A0 FF]'s HP is maxed out!
+    MENU1TEXT_RECOVERED_PP = 0xA2,     // [A0 FF] recovered [A3 FF] PP!
+    MENU1TEXT_PP_IS_MAXED_OUT = 0xA3,  // [A0 FF]'s PP is maxed out!
+    MENU1TEXT_POISON_DISAPPEARED_FROM_BODY =
+        0xA4,                            // The poison disappeared from [A0 FF]'s[BREAK]body!
+    MENU1TEXT_NUMBNESS_IS_GONE = 0xA5,    // [A0 FF]'s numbness is gone!
+    MENU1TEXT_IS_BACK_TO_NORMAL = 0xA6,   // [A0 FF] is back to normal!
+    MENU1TEXT_REMEMBERED_SKILLS = 0xA7,   // [A0 FF] remembered skills!
+    MENU1TEXT_FELT_BETTER = 0xA8,         // [A0 FF] felt better!
+    MENU1TEXT_FLEAS_ARE_ALL_GONE = 0xA9,  // [A0 FF]'s fleas are all gone!
+    MENU1TEXT_IS_BACK_TO_PERFECT_HEALTH = 0xAA,  // [A0 FF] is back to perfect health!
+    MENU1TEXT_THERE_WAS_NO_EFFECT_ON = 0xAB,     // There was no effect on [A0 FF]!
+    MENU1TEXT_CANT_BE_USED_HERE = 0xAC,          // [A1 FF] can't be used here.
+    MENU1TEXT_CANT_BE_USED_HERE_2 = 0xAD,        // [A2 FF] can't be used here.
+    MENU1TEXT_DEAD_CANT_EAT_OR_DRINK =
+        0xAE,  // [A0 FF] isn't in any condition to[BREAK]eat or drink.
+    MENU1TEXT_DEAD_CANT_USE_ITEM =
+        0xAF,  // [A0 FF] isn't in a good enough[BREAK]condition to use that.
+    MENU1TEXT_LOVES_CHEESE = 0xB0,             // [A0 FF] loves cheese!
+    MENU1TEXT_ISNT_FOND_OF_CHEESE = 0xB1,      // [A0 FF] isn't too fond of cheese.
+    MENU1TEXT_MADE_A_COMEBACK = 0xB2,          // [A0 FF] made a comeback!
+    MENU1TEXT_UNUSED_B3 = 0xB3,                // 
+    MENU1TEXT_HAS_X_OF_THIS_ITEM = 0xB4,       // [A1 FF] - [A0 FF] has [A3 FF] of this item.
+    MENU1TEXT_HAS_ONE_OF_THIS_ITEM = 0xB5,     // [A1 FF] - [A0 FF] has one of this item.
+    MENU1TEXT_DOESNT_HAVE_ANY_OF_ITEM = 0xB6,  // [A1 FF] - [A0 FF] doesn't have any.
+    MENU1TEXT_INVENTORY_IS_FULL = 0xB7,        // [A0 FF]'s inventory is full.
+    MENU1TEXT_HAS_THIS_EQUIPPED = 0xB8,        // [A1 FF] - [A0 FF] has this equipped.
+    MENU1TEXT_EQUIPPED = 0xB9,                 // [A0 FF] equipped [13 EF][A1 FF]!
+    MENU1TEXT_CAN_BE_EQUIPPED = 0xBA,          // [12 EF][A1 FF] can be equipped[20 EF]
+    MENU1TEXT_CANT_BE_USED_HERE_3 = 0xBB,      // [12 EF][A1 FF] can't be used here.
+    MENU1TEXT_THREW_AWAY = 0xBC,               // Threw away [13 EF][A1 FF].
+    MENU1TEXT_YOU_CANT_THROW_AWAY = 0xBD,      // You can't throw away [13 EF][A1 FF].
+    MENU1TEXT_UNUSED_BE = 0xBE,                // 
+    MENU1TEXT_UNUSED_BF = 0xBF,                // 
+    MENU1TEXT_UNUSED_C0 = 0xC0,                // 
+    MENU1TEXT_UNUSED_C1 = 0xC1,                // 
+    MENU1TEXT_UNUSED_C2 = 0xC2,                // 
+    MENU1TEXT_UNUSED_C3 = 0xC3,                // 
+    MENU1TEXT_UNUSED_C4 = 0xC4,                // 
+    MENU1TEXT_UNUSED_C5 = 0xC5,                // 
+    MENU1TEXT_UNUSED_C6 = 0xC6,                // 
+    MENU1TEXT_UNUSED_C7 = 0xC7,                // 
+    MENU1TEXT_FUNNY_STICK_BROUGHT_HAPPINESS =
+        0xC8,  // The Funny Stick brought feelings of happiness.
+    MENU1TEXT_YOU_LEARNED_MORE_ABOUT_DCMC =
+        0xC9,  // You learned more about the DCMC than you knew[BREAK]before!
+    MENU1TEXT_NOT_SOMETHING_YOUD_WANNA_EAT =
+        0xCA,  // That's not really something you'd want to eat...
+    MENU1TEXT_NOT_SOMETHING_YOUD_WANNA_EAT_2 =
+        0xCB,  // That's not really something you'd want to eat...
+    MENU1TEXT_YOU_NEED_SOME_BIG_TIME =
+        0xCC,  // You need some big-time courage to eat[BREAK]something like this.
+    MENU1TEXT_CHICK_WARM_HEART =
+        0xCD,  // The sight of the baby chick warmed [A0 FF]'s[BREAK]heart.
+    MENU1TEXT_CHICKEN_DASHED_OFF = 0xCE,    // The chicken dashed off at breakneck speed!
+    MENU1TEXT_NOT_THE_TIME_TO_USE = 0xCF,   // This isn't the time to use that.
+    MENU1TEXT_HANDS_ARE_STICKY_NOW = 0xD0,  // [A0 FF]'s hands are sticky now.
+    MENU1TEXT_TOO_SMALL_TO_ENTER =
+        0xD1,                     // Definitely way too small for a person to[BREAK]enter.
+    MENU1TEXT_UNUSED_D2 = 0xD2,    // 
+    MENU1TEXT_UNUSED_D3 = 0xD3,    // 
+    MENU1TEXT_UNUSED_D4 = 0xD4,    // 
+    MENU1TEXT_UNUSED_D5 = 0xD5,    // 
+    MENU1TEXT_UNUSED_D6 = 0xD6,    // 
+    MENU1TEXT_UNUSED_D7 = 0xD7,    // 
+    MENU1TEXT_UNUSED_D8 = 0xD8,    // 
+    MENU1TEXT_UNUSED_D9 = 0xD9,    // 
+    MENU1TEXT_UNUSED_DA = 0xDA,    // 
+    MENU1TEXT_UNUSED_DB = 0xDB,    // 
+    MENU1TEXT_NAME_LUCAS = 0xDC,   // The younger twin brother.[BREAK]A gentle boy.]
+    MENU1TEXT_NAME_CLAUS = 0xDD,   // The older twin brother.[BREAK]An energetic boy.
+    MENU1TEXT_NAME_FLINT = 0xDE,   // The strong, kind,[BREAK]and dependable father.
+    MENU1TEXT_NAME_HINAWA = 0xDF,  // The beloved mother!
+    MENU1TEXT_NAME_BONEY = 0xE0,   // The brave and smart dog.
+    MENU1TEXT_NAME_SALSA = 0xE1,  // A monkey who will endure[BREAK]anything for his girlfriend.
+    MENU1TEXT_NAME_DUSTER = 0xE2,    // A strange but nice guy[BREAK]with unexpected skills.
+    MENU1TEXT_NAME_KUMATORA = 0xE3,  // A strong, wise, and rather[BREAK]masculine girl.
+    MENU1TEXT_NAME_FAVORITE_FOOD = 0xE4,   // What's your favorite[BREAK]homemade food?
+    MENU1TEXT_NAME_FAVORITE_THING = 0xE5,  // What's your favorite[BREAK]thing?
+    MENU1TEXT_IS_THAT_OKAY = 0xE6,         // Is this okay? [BREAK] Yes No
+    MENU1TEXT_FAVORITE_FOOD = 0xE7,        // Favorite food
+    MENU1TEXT_FAVORITE_THING = 0xE8,       // Favorite Thing
+    MENU1TEXT_MESSAGE_SPEED = 0xE9,            // Message speed
+    MENU1TEXT_ENTER_YOUR_NAME = 0xEA,      // Please enter your name.
+    MENU1TEXT_ENTER_YOUR_NAME_WITH_ALPHABET = 0xEB,    // Please enter your own name using the alphabet.
+    MENU1TEXT_UNUSED_EC = 0xEC,            // 
+    MENU1TEXT_UNUSED_ED = 0xED,            // 
+    MENU1TEXT_UNUSED_EE = 0xEE,            // 
+    MENU1TEXT_UNUSED_EF = 0xEF,            // 
+    MENU1TEXT_UNUSED_F0 = 0xF0,            // 
+    MENU1TEXT_UNUSED_F1 = 0xF1,            // 
+    MENU1TEXT_UNUSED_F2 = 0xF2,            // 
+    MENU1TEXT_UNUSED_F3 = 0xF3,            // 
+    MENU1TEXT_UNUSED_F4 = 0xF4,            // 
+    MENU1TEXT_UNUSED_F5 = 0xF5,            // 
+    MENU1TEXT_UNUSED_F6 = 0xF6,            // 
+    MENU1TEXT_UNUSED_F7 = 0xF7,            // 
+    MENU1TEXT_UNUSED_F8 = 0xF8,            // 
+    MENU1TEXT_UNUSED_F9 = 0xF9,            // 
+    MENU1TEXT_NAMESCREEN1_ROW1 = 0xFA,     // あいうえおはひふへほがぎぐげご
+    MENU1TEXT_NAMESCREEN1_ROW2 = 0xFB,     // かきくけこまみむめもざじずぜぞ
+    MENU1TEXT_NAMESCREEN1_ROW3 = 0xFC,     // さしすせそや?ゆ?よだぢづでど
+    MENU1TEXT_NAMESCREEN1_ROW4 = 0xFD,     // たちつてとらりるれろばびぶべぼ
+    MENU1TEXT_NAMESCREEN1_ROW5 = 0xFE,     // なにぬねのわ?を?んぱぴぷぺぽ
+    MENU1TEXT_NAMESCREEN1_ROW6 = 0xFF,     // ぁぃぅぇぉゃ?ゅ?ょ・??っー
+    MENU1TEXT_UNUSED_100 = 0x100,          // ???????????????
+    MENU1TEXT_UNUSED_101 = 0x101,          // 
+    MENU1TEXT_UNUSED_102 = 0x102,          // 
+    MENU1TEXT_UNUSED_103 = 0x103,          // 
+    MENU1TEXT_NAMESCREEN2_ROW1 = 0x104,    // アイウエオハヒフヘホガギグゲゴ
+    MENU1TEXT_NAMESCREEN2_ROW2 = 0x105,    // カキクケコマミムメモザジズゼゾ
+    MENU1TEXT_NAMESCREEN2_ROW3 = 0x106,    // サシスセソヤ?ユ?ヨダヂヅデド
+    MENU1TEXT_NAMESCREEN2_ROW4 = 0x107,    // タチツテトラリルレロバビブベボ
+    MENU1TEXT_NAMESCREEN2_ROW5 = 0x108,    // ナニヌネノワ?ヲ?ンパピプペポ
+    MENU1TEXT_NAMESCREEN2_ROW6 = 0x109,    // ァィゥェォャ?ュ?ョ・??ッー
+    MENU1TEXT_UNUSED_10A = 0x10A,          // ??????????????
+    MENU1TEXT_UNUSED_10B = 0x10B,          // 
+    MENU1TEXT_UNUSED_10C = 0x10C,          // 
+    MENU1TEXT_UNUSED_10D = 0x10D,          // 
+    MENU1TEXT_NAMESCREEN3_ROW1 = 0x10E,    // ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯ
+    MENU1TEXT_NAMESCREEN3_ROW2 = 0x10F,    // ＰＱＲＳＴＵＶＷＸＹＺ[01F6][01F7][01F8][01ED]
+    MENU1TEXT_NAMESCREEN3_ROW3 = 0x110,    // ａｂｃｄｅｆｇｈｉｊｋｌｍｎｏ
+    MENU1TEXT_NAMESCREEN3_ROW4 = 0x111,    // ｐｑｒｓｔｕｖｗｘｙｚ，．：；
+    MENU1TEXT_NAMESCREEN3_ROW5 = 0x112,    // ０１２３４５６７８９＋−±×÷
+    MENU1TEXT_NAMESCREEN3_ROW6 = 0x113,    // ＠（）＆・〜、。‐＄？！♂♀♪
+    MENU1TEXT_UNUSED_114 = 0x114,          // ???????????????
+    MENU1TEXT_UNUSED_115 = 0x115,          // 
+    MENU1TEXT_UNUSED_116 = 0x116,          // 
+    MENU1TEXT_UNUSED_117 = 0x117,          // 
+    MENU1TEXT_NAMESCREEN4_ROW1 = 0x118,    // ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯ
+    MENU1TEXT_NAMESCREEN4_ROW2 = 0x119,    // ＰＱＲＳＴＵＶＷＸＹＺ????
+    MENU1TEXT_NAMESCREEN4_ROW3 = 0x11A,    // ??????????????
+    MENU1TEXT_NAMESCREEN4_ROW4 = 0x11B,    // ??????????????
+    MENU1TEXT_NAMESCREEN4_ROW5 = 0x11C,    // ??????????????
+    MENU1TEXT_NAMESCREEN4_ROW6 = 0x11D,    // ??????????????
+    MENU1TEXT_UNUSED_11E = 0x11E,          // 
+    MENU1TEXT_UNUSED_11F = 0x11F,          // 
 };
 
 const u8 PLAYER_NAME_BUFSIZE = 0xF;
@@ -483,14 +485,14 @@ extern "C" u16 isEquipLytSet(CharStats*, u16);
 extern "C" u16 isCharStatsOverworldPlayable(CharStats* stats);
 extern "C" u16 sub_0805592C();
 extern "C" void sub_08047CDC(u16*, u16, u16, s16, u16, u16);
-extern "C" u16* getMenuText(u16);
+extern "C" u16* getMenus1Text(u16);
 extern "C" void sub_0804A188();
 extern "C" void sub_0804A550();
 extern "C" void memFill(void*, u16, s16);
 extern "C" u16* getMemoEntryText(u16);
 extern "C" u16* getNthMemoPage(u16*, u16);
 extern "C" void sub_08048108(void*, void*);
-extern "C" u16* getMenuText(u16);                        /* extern */
+extern "C" u16* getMenus1Text(u16);                        /* extern */
 extern "C" void sub_08046A28(void*, s16, s16, s32, s32); /* extern */
 extern "C" void sub_08046BA8(u32, s16, s16, s32, s32, s32, s32, s32, s32,
                              s32);  // VERIFY THIS SIGNATURE
@@ -812,10 +814,10 @@ extern "C" void sub_0804337C(arg0struct* charInfo, sub_0804337C_struct* oldStats
     FIELD_BLOCK(iq, 0x68, 2);
     FIELD_BLOCK(speed, 0x74, 2);
 
-    sub_08047CDC(getMenuText(MENUTEXT_WEAPON), 0x86U, 0x20U, -1, 1, 1);
-    sub_08047CDC(getMenuText(MENUTEXT_BODY), 0x86U, 0x38U, -1, 1, 1);
-    sub_08047CDC(getMenuText(MENUTEXT_HEAD), 0x86U, 0x50U, -1, 1, 1);
-    sub_08047CDC(getMenuText(MENUTEXT_OTHER), 0x86U, 0x68U, -1, 1, 1);
+    sub_08047CDC(getMenus1Text(MENU1TEXT_WEAPON), 0x86U, 0x20U, -1, 1, 1);
+    sub_08047CDC(getMenus1Text(MENU1TEXT_BODY), 0x86U, 0x38U, -1, 1, 1);
+    sub_08047CDC(getMenus1Text(MENU1TEXT_HEAD), 0x86U, 0x50U, -1, 1, 1);
+    sub_08047CDC(getMenus1Text(MENU1TEXT_OTHER), 0x86U, 0x68U, -1, 1, 1);
 }
 
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0804389C.inc", void sub_0804389C());
@@ -851,9 +853,9 @@ extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/nullsub_081.inc", void nulls
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/nullsub_082.inc", void nullsub_082());
 
 extern "C" void sub_08045C34() {
-    sub_08047CDC(getMenuText(0x18), gSomeBlend._4234 + 0x14, gSomeBlend._4236 + 0xC, -1, 0xF, 0);
-    sub_08047CDC(getMenuText(3), gSomeBlend._4234 + 0x34, gSomeBlend._4236 + 0x1E, -1, 0xF, 0);
-    sub_08047CDC(getMenuText(4), gSomeBlend._4234 + 0x68, gSomeBlend._4236 + 0x1E, -1, 0xF, 0);
+    sub_08047CDC(getMenus1Text(0x18), gSomeBlend._4234 + 0x14, gSomeBlend._4236 + 0xC, -1, 0xF, 0);
+    sub_08047CDC(getMenus1Text(3), gSomeBlend._4234 + 0x34, gSomeBlend._4236 + 0x1E, -1, 0xF, 0);
+    sub_08047CDC(getMenus1Text(4), gSomeBlend._4234 + 0x68, gSomeBlend._4236 + 0x1E, -1, 0xF, 0);
 }
 
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08045CD0.inc", void sub_08045CD0());
@@ -953,7 +955,7 @@ extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_080485C4.inc", void sub_
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0804863C.inc", void sub_0804863C());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0804865C.inc", void sub_0804865C());
 
-extern "C" u16* getMenuText(u16 index) {
+extern "C" u16* getMenus1Text(u16 index) {
     u16* textOffsets = (u16*)Blob_GetEntry(&gMenuData, 0x58);
 
     if (textOffsets) {
@@ -2650,7 +2652,7 @@ extern "C" u16 sub_080558CC(u16 promptId) {
     }
 
     u16* ptr = gSomeBlend.menuTextBuffer;
-    u16* unk = getMenuText(0);
+    u16* unk = getMenus1Text(0);
 
     for (u16 i = 0; i < 9 && *ptr != 0xFFFF; i++, ptr++) {
         if (*ptr == 0xFFFF) {
@@ -2667,7 +2669,7 @@ extern "C" u16 sub_080558CC(u16 promptId) {
 
 extern "C" u16 sub_0805592C() {
     u16* ptr = gSomeBlend.menuTextBuffer;
-    u16* unk = getMenuText(0);
+    u16* unk = getMenus1Text(0);
 
     for (u16 i = 0; i < 0x10 && *ptr != 0xFFFF; i++, ptr++) {
         if (*ptr == 0xFFFF) {

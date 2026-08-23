@@ -19,7 +19,7 @@ _080470C6:
 	cmp r0, #0
 	bne _080470EC
 	movs r0, #2
-	bl getMenuText
+	bl getMenus1Text
 	lsls r2, r4, #0x11
 	movs r1, #0xc0
 	lsls r1, r1, #0xa
@@ -58,7 +58,7 @@ _08047108:
 	cmp r0, #0
 	blt _080471A4
 	movs r0, #0x47
-	bl getMenuText
+	bl getMenus1Text
 	movs r5, #1
 	rsbs r5, r5, #0
 	movs r4, #1
@@ -68,42 +68,42 @@ _08047108:
 	adds r3, r5, #0
 	bl sub_08047B9C
 	movs r0, #0x4f
-	bl getMenuText
+	bl getMenus1Text
 	str r4, [sp]
 	movs r1, #1
 	movs r2, #4
 	adds r3, r5, #0
 	bl sub_08047B9C
 	movs r0, #0x51
-	bl getMenuText
+	bl getMenus1Text
 	str r4, [sp]
 	movs r1, #1
 	movs r2, #5
 	adds r3, r5, #0
 	bl sub_08047B9C
 	movs r0, #0x48
-	bl getMenuText
+	bl getMenus1Text
 	str r4, [sp]
 	movs r1, #1
 	movs r2, #6
 	adds r3, r5, #0
 	bl sub_08047B9C
 	movs r0, #0x49
-	bl getMenuText
+	bl getMenus1Text
 	str r4, [sp]
 	movs r1, #1
 	movs r2, #7
 	adds r3, r5, #0
 	bl sub_08047B9C
 	movs r0, #0x4a
-	bl getMenuText
+	bl getMenus1Text
 	str r4, [sp]
 	movs r1, #1
 	movs r2, #8
 	adds r3, r5, #0
 	bl sub_08047B9C
 	movs r0, #0x4b
-	bl getMenuText
+	bl getMenus1Text
 	str r4, [sp]
 	movs r1, #1
 	movs r2, #9

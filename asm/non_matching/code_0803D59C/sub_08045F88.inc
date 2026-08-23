@@ -12,7 +12,7 @@ sub_08045F88:
 	adds r0, r0, r1
 	adds r4, r4, r0
 	movs r0, #0x3c
-	bl getMenuText
+	bl getMenus1Text
 	movs r7, #1
 	rsbs r7, r7, #0
 	movs r5, #0xf
@@ -29,7 +29,7 @@ sub_08045F88:
 	cmp r0, #0x20
 	bne _08046008
 	movs r0, #0x3e
-	bl getMenuText
+	bl getMenus1Text
 	str r5, [sp]
 	str r6, [sp, #4]
 	movs r1, #0x18
@@ -37,7 +37,7 @@ sub_08045F88:
 	adds r3, r7, #0
 	bl sub_08047CDC
 	movs r0, #0x3f
-	bl getMenuText
+	bl getMenus1Text
 	str r5, [sp]
 	str r6, [sp, #4]
 	movs r1, #0x18
@@ -45,7 +45,7 @@ sub_08045F88:
 	adds r3, r7, #0
 	bl sub_08047CDC
 	movs r0, #0x40
-	bl getMenuText
+	bl getMenus1Text
 	str r5, [sp]
 	str r6, [sp, #4]
 	movs r1, #0x18
@@ -57,7 +57,7 @@ sub_08045F88:
 _08046004: .4byte gUnknown_02018E28
 _08046008:
 	movs r0, #0x3f
-	bl getMenuText
+	bl getMenus1Text
 	str r5, [sp]
 	str r6, [sp, #4]
 	movs r1, #0x18
@@ -65,7 +65,7 @@ _08046008:
 	adds r3, r7, #0
 	bl sub_08047CDC
 	movs r0, #0x40
-	bl getMenuText
+	bl getMenus1Text
 	str r5, [sp]
 	str r6, [sp, #4]
 	movs r1, #0x18
@@ -74,7 +74,7 @@ _08046008:
 	bl sub_08047CDC
 _08046030:
 	movs r0, #0x3d
-	bl getMenuText
+	bl getMenus1Text
 	movs r3, #1
 	rsbs r3, r3, #0
 	movs r1, #0xf

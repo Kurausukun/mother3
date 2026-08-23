@@ -3,7 +3,7 @@ sub_08045E04:
 	push {r4, r5, r6, lr}
 	sub sp, #8
 	movs r0, #0x3c
-	bl getMenuText
+	bl getMenus1Text
 	movs r6, #1
 	rsbs r6, r6, #0
 	movs r4, #0xf
@@ -21,7 +21,7 @@ sub_08045E04:
 	cmp r0, #3
 	bne _08045E78
 	movs r0, #0x3e
-	bl getMenuText
+	bl getMenus1Text
 	str r4, [sp]
 	str r5, [sp, #4]
 	movs r1, #0x18
@@ -29,7 +29,7 @@ sub_08045E04:
 	adds r3, r6, #0
 	bl sub_08047CDC
 	movs r0, #0x3f
-	bl getMenuText
+	bl getMenus1Text
 	str r4, [sp]
 	str r5, [sp, #4]
 	movs r1, #0x18
@@ -37,7 +37,7 @@ sub_08045E04:
 	adds r3, r6, #0
 	bl sub_08047CDC
 	movs r0, #0x40
-	bl getMenuText
+	bl getMenus1Text
 	str r4, [sp]
 	str r5, [sp, #4]
 	movs r1, #0x18
@@ -50,7 +50,7 @@ _08045E70: .4byte gSomeBlend
 _08045E74: .4byte 0x000041D3
 _08045E78:
 	movs r0, #0x3f
-	bl getMenuText
+	bl getMenus1Text
 	str r4, [sp]
 	str r5, [sp, #4]
 	movs r1, #0x18
@@ -58,7 +58,7 @@ _08045E78:
 	adds r3, r6, #0
 	bl sub_08047CDC
 	movs r0, #0x40
-	bl getMenuText
+	bl getMenus1Text
 	str r4, [sp]
 	str r5, [sp, #4]
 	movs r1, #0x18

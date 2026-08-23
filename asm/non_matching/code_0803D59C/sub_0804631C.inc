@@ -12,7 +12,7 @@ sub_0804631C:
 	cmp r0, #0
 	bge _0804634C
 	movs r0, #0xb9
-	bl getMenuText
+	bl getMenus1Text
 	adds r4, r0, #0
 	movs r1, #0x1c
 	movs r2, #0x87
@@ -50,7 +50,7 @@ _0804634C:
 	lsls r4, r4, #0x10
 	lsrs r4, r4, #0x10
 	movs r0, #0x80
-	bl getMenuText
+	bl getMenus1Text
 	adds r4, #1
 	ldr r1, _080463F4
 	adds r5, r5, r1
@@ -68,7 +68,7 @@ _0804634C:
 	adds r3, r4, #0
 	bl sub_08047CDC
 	movs r0, #3
-	bl getMenuText
+	bl getMenus1Text
 	mov r1, r8
 	str r1, [sp]
 	str r6, [sp, #4]
@@ -77,7 +77,7 @@ _0804634C:
 	adds r3, r4, #0
 	bl sub_08047CDC
 	movs r0, #4
-	bl getMenuText
+	bl getMenus1Text
 	mov r2, r8
 	str r2, [sp]
 	str r6, [sp, #4]
