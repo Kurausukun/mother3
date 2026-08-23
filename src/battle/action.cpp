@@ -22,7 +22,7 @@ extern "C" void sub_0807335C(u16);
 extern "C" void sub_080736F8(Unit*, u32);
 extern "C" u8 sub_0807404C(Action*, u32);
 extern "C" bool IsMonsterSkillAndType(Action*, u32);
-extern "C" void InitHeal(Unit*, u32, u32);
+extern "C" s32 InitHeal(Unit*, u32, u32);
 extern "C" void sub_08073D98(Unit*, u32, u32);
 extern "C" bool IsPlayer(Unit*);
 
@@ -460,13 +460,13 @@ bool Action::calcCrit(Unit* target) {
 void Action::action_f8(Unit* target) {
     s32 val = randS32(healLo(), healHi());
     s32 val2 = sub_0807066C(val * getUser()->kindness(), 100);
-    InitHeal(target, val + val2, 1);
+    InitHeal(target, val + val2, true);
 }
 
 void Action::onNoEffect(Unit* target) {
     s32 val = randS32(healLo(), healHi());
     s32 val2 = sub_0807066C(val * getUser()->kindness(), 100);
-    InitHeal(target, val + val2, 1);
+    InitHeal(target, val + val2, true);
 }
 
 void Action::onPPHeal(Unit* target) {

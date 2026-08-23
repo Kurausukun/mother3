@@ -19,7 +19,7 @@ extern "C" s32 sub_0807066C(s32, s32);
 extern "C" void sub_08073E3C(Unit*, u32, u32);
 extern "C" s32 randS32(s32, s32);
 extern "C" bool IsBossBattle();
-extern "C" void InitHeal(Unit*, u32, u32);
+extern "C" s32 InitHeal(Unit*, u32, bool);
 extern "C" void sub_08073D98(Unit*, u32, u32);
 extern "C" bool IsPlayerAndType(Unit*, u16);
 extern "C" void hitPlayer(Unit*, u32, u32);
@@ -354,7 +354,7 @@ public:
         // [FMT_ARG2] loves cheese!
         // [FMT_ARG2] isn't too fond of cheese.
         ROMStr(hp >= 60 ? 0x186 : 0x187).print(Color::Black(), true);
-        InitHeal(target, hp, 1);
+        InitHeal(target, hp, true);
     }
 };
 
@@ -367,7 +367,7 @@ public:
         if (IsPlayerAndType(target, Player::Boney) == true) {
             Action::action_f8(target);
         } else {
-            InitHeal(target, 6, 1);
+            InitHeal(target, 6, true);
         }
     }
 };
@@ -381,51 +381,61 @@ public:
         switch (randS32(0, 9)) {
         case 0:
             PlayAnimation(Animation::LifeUpG, target, target);
-            InitHeal(target, randS32(80, 140), 1);
+            InitHeal(target, randS32(80, 140), true);
+            // [04 EF][FMT_ARG2] felt better![END]
             ROMStr(0x1cb).print(Color::Black(), true);
             break;
         case 1:
             PlayAnimation(Animation::PsiMagnetGainA, target, target);
             sub_08073D98(target, randS32(20, 50), 1);
+            // [04 EF][FMT_ARG2] was able to relax![END]
             ROMStr(0x1cc).print(Color::Black(), true);
             break;
         case 2:
             if (calcStatusInflict(target, Status::OffUpStrong, 100, true) == true) {
+                // [04 EF][FMT_ARG2] became lively and animated![END]
                 ROMStr(0x1cd).print(Color::Black(), true);
             }
             break;
         case 3:
             if (calcStatusInflict(target, Status::OffDownStrong, 100, true) == true) {
+                // [04 EF][FMT_ARG2] felt unnerved![END]
                 ROMStr(0x1ce).print(Color::Black(), true);
             }
             break;
         case 4:
             if (calcStatusInflict(target, Status::DefUpStrong, 100, true) == true) {
+                // [04 EF][FMT_ARG2] was scared stiff![END]
                 ROMStr(0x1cf).print(Color::Black(), true);
             }
             break;
         case 5:
             if (calcStatusInflict(target, Status::DefDownStrong, 100, true) == true) {
+                // [04 EF][FMT_ARG2] felt weak and powerless![END]
                 ROMStr(0x1d0).print(Color::Black(), true);
             }
             break;
         case 6:
             if (calcStatusInflict(target, Status::MonkeyDanceSP, 100, true) == true) {
+                // [04 EF][FMT_ARG2]'s body became lighter![END]
                 ROMStr(0x1d1).print(Color::Black(), true);
             }
             break;
         case 7:
             if (calcStatusInflict(target, Status::MonkeyDanceSP2, 100, true) == true) {
+                // [04 EF][FMT_ARG2]'s body became heavier![END]
                 ROMStr(0x1d2).print(Color::Black(), true);
             }
             break;
         case 8:
             if (calcStatusInflict(target, Status::Crying, 100, true) == true) {
+                // [04 EF][FMT_ARG2] felt sad and empty![END]
                 ROMStr(0x1d3).print(Color::Black(), true);
             }
             break;
         case 9:
             if (calcStatusInflict(target, Status::Strange, 100, true) == true) {
+                // [04 EF][FMT_ARG2] was overcome by indecent feelings![END]
                 ROMStr(0x1d4).print(Color::Black(), true);
             }
             break;
