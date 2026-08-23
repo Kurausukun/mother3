@@ -23,7 +23,7 @@ public:
     }
     virtual ~StatusParamMod();
 
-    s32 mDefenseBase, mIQBase, mSpeedBase, mKindnessBase, mOffenseDelta, mDefenseDelta, mIQDelta, mSpeedDelta, mKindnessDelta;
+    s32 mOffenseBase, mDefenseBase, mIQBase, mSpeedBase, mKindnessBase, mOffenseDelta, mDefenseDelta, mIQDelta, mSpeedDelta, mKindnessDelta;
 
     virtual s32 offenseMod();
     virtual s32 defenseMod();
@@ -51,6 +51,7 @@ public:
 
     StatusPoison(u16 type, Unit* unit);
     virtual ~StatusPoison();
+    virtual bool onUnitTurnBegin(Unit* unit);
     virtual bool disableAllStatuses();
 };
 
@@ -123,6 +124,7 @@ public:
 
     StatusOnFire(u16 type, Unit* unit);
     virtual ~StatusOnFire();
+    virtual bool onUnitTurnBegin(Unit* unit);
     virtual bool disableAllStatuses();
 };
 
@@ -371,7 +373,10 @@ public:
 
     StatusTimeBomb(u16 type, Unit* unit);
     virtual ~StatusTimeBomb();
+    virtual void onUnitTurnEnd(Unit* unit);
     virtual bool disableAllStatuses();
+
+    s32 mDetonationTurns;
 };
 
 class StatusParamsUp : public StatusParamMod {
@@ -409,6 +414,7 @@ public:
 
     StatusRefresh(u16 type, Unit* unit);
     virtual ~StatusRefresh();
+    virtual bool onUnitTurnBegin(Unit* unit);
     virtual bool disableAllStatuses();
 };
 

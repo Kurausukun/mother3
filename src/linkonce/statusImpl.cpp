@@ -1,4 +1,5 @@
 #include "battle/statusImpl.h"
+#include "enums.h"
 
 #define CAST_U16(x)  ({u16 _r; asm("" : "=r"(_r) : "0"(x)); _r;}) // Workaround for strange bug with the compiler not casting u16
 
@@ -7,6 +8,8 @@ bool statusWearOff(Unit*, Status::Type, bool);
 extern "C" void PlayAnimation(u16, Unit*, Unit*);
 extern "C" bool sub_08073E3C(Unit*, u32, u32);
 extern "C" s32 sub_0807066C(s32, s32);
+extern "C" void hitPlayer(Unit*, u32, u32);
+extern "C" void InitHeal(Unit*, u32, bool);
 
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/create__18StatusNoExpFactoryUsP4Unit.inc", void create__18StatusNoExpFactoryUsP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/create__19StatusSmellyFactoryUsP4Unit.inc", void create__19StatusSmellyFactoryUsP4Unit());
@@ -101,7 +104,7 @@ StatusSleep::StatusSleep(u16 type, Unit* unit) : Status(type, unit) { setTurnLim
 StatusNumb::StatusNumb(u16 type, Unit* unit) : Status(type, unit) { setRoundLimit(6); }
 StatusRefresh::StatusRefresh(u16 type, Unit* unit) : Status(type, unit) {}
 StatusEndure::StatusEndure(u16 type, Unit* unit) : Status(type, unit) {}
-StatusTimeBomb::StatusTimeBomb(u16 type, Unit* unit) : Status(type, unit) { mOffenseBase = randS32(2, 3); }
+StatusTimeBomb::StatusTimeBomb(u16 type, Unit* unit) : Status(type, unit) { mDetonationTurns = randS32(2, 3); }
 StatusPsiCounter::StatusPsiCounter(u16 type, Unit* unit) : Status(type, unit) {}
 StatusPsiShield::StatusPsiShield(u16 type, Unit* unit) : Status(type, unit) {}
 StatusElectrocuted::StatusElectrocuted(u16 type, Unit* unit) : Status(type, unit) {}
@@ -816,7 +819,23 @@ bool StatusNumb::disableAllStatuses() {
 }
 
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/dt__10StatusNumb.inc", void dt__10StatusNumb());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/onUnitTurnBegin__13StatusRefreshP4Unit.inc", void onUnitTurnBegin__13StatusRefreshP4Unit());
+
+bool StatusRefresh::onUnitTurnBegin(Unit* unit) {
+    if (Status::onUnitTurnBegin(unit) != true) return false;
+    
+    if (unit == this->unit()) {
+        this->activeMsg().print(Color::Black(), true);
+
+        s32 healAmount = sub_0807066C(unit->maxHP(), 10);
+        s32 finalHeal = 1;
+        if (finalHeal < healAmount) finalHeal = healAmount;
+        InitHeal(unit, finalHeal, true);
+        
+        PlayAnimation(Animation::LifeUpB, unit, unit);
+    }
+    
+    return true;
+}
 
 bool StatusRefresh::disableAllStatuses() {
     if (Status::disableAllStatuses() != true) {
@@ -839,7 +858,22 @@ bool StatusEndure::disableAllStatuses() {
 }
 
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/dt__12StatusEndure.inc", void dt__12StatusEndure());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/onUnitTurnEnd__14StatusTimeBombP4Unit.inc", void onUnitTurnEnd__14StatusTimeBombP4Unit());
+
+void StatusTimeBomb::onUnitTurnEnd(Unit* unit) {
+    Status::onUnitTurnEnd(unit);
+    
+    if (unit == this->unit()) {
+        if (turns() >= mDetonationTurns) {
+            activeMsg().print(Color::Black(), true);
+            
+            PlayAnimation(Animation::HardHit, unit, unit);
+            
+            hitPlayer(unit, randS32(130, 150), true);
+            
+            statusWearOff(unit, type(), false);
+        }
+    }
+}
 
 bool StatusTimeBomb::disableAllStatuses() {
     if (Status::disableAllStatuses() != true) {
@@ -910,7 +944,19 @@ bool StatusShield::disableAllStatuses() {
 
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_90__12StatusShield.inc", void status_90__12StatusShield());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/dt__12StatusShield.inc", void dt__12StatusShield());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/onUnitTurnBegin__12StatusOnFireP4Unit.inc", void onUnitTurnBegin__12StatusOnFireP4Unit());
+
+bool StatusOnFire::onUnitTurnBegin(Unit* unit) {
+    if (Status::onUnitTurnBegin(unit) != true) return false;
+    
+    if (unit == this->unit()) {
+        this->activeMsg().print(Color::Black(), true);
+        
+        hitPlayer(unit, sub_0807066C(unit->maxHP(), 20), true);
+        
+        PlayAnimation(Animation::Reject, unit, unit); 
+    }
+    return true;
+}
 
 bool StatusOnFire::disableAllStatuses() {
     if (Status::disableAllStatuses() != true) {
@@ -922,7 +968,19 @@ bool StatusOnFire::disableAllStatuses() {
 }
 
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/dt__12StatusOnFire.inc", void dt__12StatusOnFire());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/onUnitTurnBegin__12StatusPoisonP4Unit.inc", void onUnitTurnBegin__12StatusPoisonP4Unit());
+
+bool StatusPoison::onUnitTurnBegin(Unit* unit) {
+    if (Status::onUnitTurnBegin(unit) != true) return false;
+    
+    if (unit == this->unit()) {
+        this->activeMsg().print(Color::Black(), true);
+        
+        hitPlayer(unit, sub_0807066C(unit->maxHP(), 20), true);
+        
+        PlayAnimation(Animation::Reject, unit, unit); 
+    }
+    return true;
+}
 
 bool StatusPoison::disableAllStatuses() {
     if (Status::disableAllStatuses() != true) {
