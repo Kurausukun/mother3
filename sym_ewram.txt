@@ -290,7 +290,6 @@
 . = 0x00017878; gUnknown_02017878 = .;
 . = 0x00018778; gUnknown_02018778 = .;
 . = 0x000189B8; gUnknown_020189B8 = .;
-. = 0x00018CC8; gInputState = .;
 . = 0x00018CD8; gUnknown_02018CD8 = .;
 . = 0x00018CDC; gUnknown_02018CDC = .;
 . = 0x00018CE8; gUnknown_02018CE8 = .;

@@ -34,7 +34,6 @@ extern u8 gUnknown_02015DC0;
 extern const u8 gUnknown_09C8DE98;  // Some sort of "archive" with sprites, palettes, etc.
 extern u8 gMenuTextPalette;
 extern const u8 gTitleScreenGfx;
-extern InputState gInputState;
 extern MonsterData gMonsterData[];
 extern MenuHandlerFunc gMenuFuncTable[0x13];
 extern u8 gMenuData[];
@@ -2466,7 +2465,7 @@ extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/nullsub_10.inc", void nullsu
 
 extern "C" void sub_080585F8() {
     sub_08058614();
-    pollInput(&gInputState);
+    pollInput(&gSomeBlend.input);
     sub_08058630();
     nullsub_11();
 }
@@ -2477,7 +2476,7 @@ extern "C" void sub_08058614(void) {
     }
 }
 extern "C" void sub_08058630() {
-    sub_08059500(&gInputState);
+    sub_08059500(&gSomeBlend.input);
 }
 
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/nullsub_11.inc", void nullsub_11());
