@@ -140,6 +140,8 @@ extern "C" void CpuMemFill(void*, u16, s16);
 extern "C" u16* getMemoEntryText(u16);
 extern "C" u16* getNthMemoPage(u16*, u16);
 extern "C" void sub_08048108(void*, void*);
+extern "C" u16* get_misctext_msg(s32, u16);
+extern "C" s16 sub_08001D70(u16);
 
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0803D678.inc", void sub_0803D678());
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0803D6C8.inc", void sub_0803D6C8());
@@ -2089,10 +2091,23 @@ extern "C" u16 isItemIdEquipment(u16 item) {
     return false;
 }
 
-extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08054F5C.inc", void sub_08054F5C());
+extern "C" u16* getCharNameAlt(u16 index) {
+    s16 altIndex;
+    
+    if (index == 8) {
+        return gSave.hinawa_name;
+    } else if (((index - 5U) << 0x10 >> 0x10) <= 2) { // FAKEMATCH
+        return gSave.claus_name;
+    } else if ((altIndex = sub_08001D70(index)) != -1) {
+        return gCharStats[altIndex].name;
+    } else {
+        return get_misctext_msg(5, index);
+    }
+}
+
 
 extern "C" u16* getCharName(u16 index) {
-    return (u16*)gCharStats[index].name;
+    return gCharStats[index].name;
 }
 
 extern "C" CharStats* getCharStats(u16 index) {
