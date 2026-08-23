@@ -113,6 +113,9 @@ void Bash::onAttack(Unit* TargetedUnit) {
     UnitObject_s16r2 sp68 = TargetedUnit->object_50();
     this->_BashTargetMonster = new (UnnamedSndMon);
     this->_BashTargetMonster->sub_080652DC(({
+        /* Turning this into an inline function also matches but returning a pointer to sp74 
+           which was constructed in an inlined function would be undefined behavior so I
+           choose to use a GCC extension */
         UnitObject_s16r2 sp6c = TargetedUnit->object_38();
         UnitObject_s16r2 sp70(0, sp68.val2 / 2);
         UnitObject_s16r2 sp74((s32)sp6c.val1, sp6c.val2 - sp70.val2);
