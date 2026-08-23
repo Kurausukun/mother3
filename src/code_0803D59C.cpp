@@ -2093,10 +2093,10 @@ extern "C" u16 isItemIdEquipment(u16 item) {
 
 extern "C" u16* getCharNameAlt(u16 index) {
     s16 altIndex;
-    
+
     if (index == 8) {
         return gSave.hinawa_name;
-    } else if (((index - 5U) << 0x10 >> 0x10) <= 2) { // FAKEMATCH
+    } else if (((index - 5U) << 0x10 >> 0x10) <= 2) {  // FAKEMATCH
         return gSave.claus_name;
     } else if ((altIndex = sub_08001D70(index)) != -1) {
         return gCharStats[altIndex].name;
@@ -2104,7 +2104,6 @@ extern "C" u16* getCharNameAlt(u16 index) {
         return get_misctext_msg(5, index);
     }
 }
-
 
 extern "C" u16* getCharName(u16 index) {
     return gCharStats[index].name;

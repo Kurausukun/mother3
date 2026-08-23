@@ -1,4 +1,3 @@
-#include "gba/io_reg.h"
 #include "battle/system.h"
 #include <stddef.h>
 #include "battle/archive.h"
@@ -7,6 +6,7 @@
 #include "battle/keypad.h"
 #include "battle/objengine.h"
 #include "battle/sndSystem.h"
+#include "gba/io_reg.h"
 #include "structs.h"
 
 extern "C" void destroy__16FntSystemManager();

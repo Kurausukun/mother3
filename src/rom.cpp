@@ -299,7 +299,7 @@ extern "C" void Dma3CopyPalettesFromGfxBuffer(GraphicsBuffer* gfx) {
 
 extern "C" void Dma3Clear(void* dest, u32 size) {
     s32 value = 0;
-    
+
     vu32* dmaRegs = (vu32*)REG_ADDR_DMA3;
     dmaRegs[0] = (uintptr_t)&value;
     dmaRegs[1] = (uintptr_t)dest;
