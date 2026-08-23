@@ -70727,49 +70727,49 @@ _vt.20StatusMonkeyDanceIQ2::
 	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte _148__14StatusParamMod
+	.4byte offenseMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _150__14StatusParamMod
+	.4byte defenseMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _158__20StatusMonkeyDanceIQ2
+	.4byte iqMod__20StatusMonkeyDanceIQ2
 	.2byte 0
 	.2byte 0
-	.4byte _160__14StatusParamMod
+	.4byte speedMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _168__14StatusParamMod
+	.4byte kindnessMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _170__14StatusParamMod
+	.4byte offenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _178__14StatusParamMod
+	.4byte defenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _180__14StatusParamMod
+	.4byte iqDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _188__14StatusParamMod
+	.4byte speedDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _190__14StatusParamMod
+	.4byte kindnessDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _198__14StatusParamMod
+	.4byte offenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a0__14StatusParamMod
+	.4byte defenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a8__14StatusParamMod
+	.4byte iqChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b0__14StatusParamMod
+	.4byte speedChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b8__14StatusParamMod
+	.4byte kindnessChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
 	.4byte _1c0__14StatusParamMod
@@ -70903,49 +70903,49 @@ _vt.20StatusMonkeyDanceSP2::
 	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte _148__14StatusParamMod
+	.4byte offenseMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _150__14StatusParamMod
+	.4byte defenseMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _158__14StatusParamMod
+	.4byte iqMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _160__20StatusMonkeyDanceSP2
+	.4byte speedMod__20StatusMonkeyDanceSP2
 	.2byte 0
 	.2byte 0
-	.4byte _168__14StatusParamMod
+	.4byte kindnessMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _170__14StatusParamMod
+	.4byte offenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _178__14StatusParamMod
+	.4byte defenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _180__14StatusParamMod
+	.4byte iqDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _188__14StatusParamMod
+	.4byte speedDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _190__14StatusParamMod
+	.4byte kindnessDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _198__14StatusParamMod
+	.4byte offenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a0__14StatusParamMod
+	.4byte defenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a8__14StatusParamMod
+	.4byte iqChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b0__14StatusParamMod
+	.4byte speedChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b8__14StatusParamMod
+	.4byte kindnessChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
 	.4byte _1c0__14StatusParamMod
@@ -71079,49 +71079,49 @@ _vt.21StatusMonkeyDanceDef2::
 	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte _148__14StatusParamMod
+	.4byte offenseMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _150__21StatusMonkeyDanceDef2
+	.4byte defenseMod__21StatusMonkeyDanceDef2
 	.2byte 0
 	.2byte 0
-	.4byte _158__14StatusParamMod
+	.4byte iqMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _160__14StatusParamMod
+	.4byte speedMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _168__14StatusParamMod
+	.4byte kindnessMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _170__14StatusParamMod
+	.4byte offenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _178__14StatusParamMod
+	.4byte defenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _180__14StatusParamMod
+	.4byte iqDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _188__14StatusParamMod
+	.4byte speedDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _190__14StatusParamMod
+	.4byte kindnessDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _198__14StatusParamMod
+	.4byte offenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a0__14StatusParamMod
+	.4byte defenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a8__14StatusParamMod
+	.4byte iqChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b0__14StatusParamMod
+	.4byte speedChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b8__14StatusParamMod
+	.4byte kindnessChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
 	.4byte _1c0__14StatusParamMod
@@ -71255,49 +71255,49 @@ _vt.21StatusMonkeyDanceOff2::
 	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte _148__21StatusMonkeyDanceOff2
+	.4byte offenseMod__21StatusMonkeyDanceOff2
 	.2byte 0
 	.2byte 0
-	.4byte _150__14StatusParamMod
+	.4byte defenseMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _158__14StatusParamMod
+	.4byte iqMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _160__14StatusParamMod
+	.4byte speedMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _168__14StatusParamMod
+	.4byte kindnessMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _170__14StatusParamMod
+	.4byte offenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _178__14StatusParamMod
+	.4byte defenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _180__14StatusParamMod
+	.4byte iqDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _188__14StatusParamMod
+	.4byte speedDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _190__14StatusParamMod
+	.4byte kindnessDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _198__14StatusParamMod
+	.4byte offenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a0__14StatusParamMod
+	.4byte defenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a8__14StatusParamMod
+	.4byte iqChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b0__14StatusParamMod
+	.4byte speedChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b8__14StatusParamMod
+	.4byte kindnessChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
 	.4byte _1c0__14StatusParamMod
@@ -71431,49 +71431,49 @@ _vt.19StatusMonkeyDanceIQ::
 	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte _148__14StatusParamMod
+	.4byte offenseMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _150__14StatusParamMod
+	.4byte defenseMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _158__19StatusMonkeyDanceIQ
+	.4byte iqMod__19StatusMonkeyDanceIQ
 	.2byte 0
 	.2byte 0
-	.4byte _160__14StatusParamMod
+	.4byte speedMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _168__14StatusParamMod
+	.4byte kindnessMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _170__14StatusParamMod
+	.4byte offenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _178__14StatusParamMod
+	.4byte defenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _180__14StatusParamMod
+	.4byte iqDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _188__14StatusParamMod
+	.4byte speedDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _190__14StatusParamMod
+	.4byte kindnessDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _198__14StatusParamMod
+	.4byte offenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a0__14StatusParamMod
+	.4byte defenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a8__14StatusParamMod
+	.4byte iqChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b0__14StatusParamMod
+	.4byte speedChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b8__14StatusParamMod
+	.4byte kindnessChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
 	.4byte _1c0__14StatusParamMod
@@ -71607,49 +71607,49 @@ _vt.19StatusMonkeyDanceSP::
 	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte _148__14StatusParamMod
+	.4byte offenseMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _150__14StatusParamMod
+	.4byte defenseMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _158__14StatusParamMod
+	.4byte iqMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _160__19StatusMonkeyDanceSP
+	.4byte speedMod__19StatusMonkeyDanceSP
 	.2byte 0
 	.2byte 0
-	.4byte _168__14StatusParamMod
+	.4byte kindnessMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _170__14StatusParamMod
+	.4byte offenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _178__14StatusParamMod
+	.4byte defenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _180__14StatusParamMod
+	.4byte iqDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _188__14StatusParamMod
+	.4byte speedDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _190__14StatusParamMod
+	.4byte kindnessDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _198__14StatusParamMod
+	.4byte offenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a0__14StatusParamMod
+	.4byte defenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a8__14StatusParamMod
+	.4byte iqChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b0__14StatusParamMod
+	.4byte speedChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b8__14StatusParamMod
+	.4byte kindnessChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
 	.4byte _1c0__14StatusParamMod
@@ -71783,49 +71783,49 @@ _vt.20StatusMonkeyDanceDef::
 	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte _148__14StatusParamMod
+	.4byte offenseMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _150__20StatusMonkeyDanceDef
+	.4byte defenseMod__20StatusMonkeyDanceDef
 	.2byte 0
 	.2byte 0
-	.4byte _158__14StatusParamMod
+	.4byte iqMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _160__14StatusParamMod
+	.4byte speedMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _168__14StatusParamMod
+	.4byte kindnessMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _170__14StatusParamMod
+	.4byte offenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _178__14StatusParamMod
+	.4byte defenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _180__14StatusParamMod
+	.4byte iqDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _188__14StatusParamMod
+	.4byte speedDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _190__14StatusParamMod
+	.4byte kindnessDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _198__14StatusParamMod
+	.4byte offenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a0__14StatusParamMod
+	.4byte defenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a8__14StatusParamMod
+	.4byte iqChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b0__14StatusParamMod
+	.4byte speedChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b8__14StatusParamMod
+	.4byte kindnessChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
 	.4byte _1c0__14StatusParamMod
@@ -71959,49 +71959,49 @@ _vt.20StatusMonkeyDanceOff::
 	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte _148__20StatusMonkeyDanceOff
+	.4byte offenseMod__20StatusMonkeyDanceOff
 	.2byte 0
 	.2byte 0
-	.4byte _150__14StatusParamMod
+	.4byte defenseMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _158__14StatusParamMod
+	.4byte iqMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _160__14StatusParamMod
+	.4byte speedMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _168__14StatusParamMod
+	.4byte kindnessMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _170__14StatusParamMod
+	.4byte offenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _178__14StatusParamMod
+	.4byte defenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _180__14StatusParamMod
+	.4byte iqDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _188__14StatusParamMod
+	.4byte speedDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _190__14StatusParamMod
+	.4byte kindnessDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _198__14StatusParamMod
+	.4byte offenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a0__14StatusParamMod
+	.4byte defenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a8__14StatusParamMod
+	.4byte iqChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b0__14StatusParamMod
+	.4byte speedChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b8__14StatusParamMod
+	.4byte kindnessChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
 	.4byte _1c0__14StatusParamMod
@@ -72135,49 +72135,49 @@ _vt.16StatusParamsDown::
 	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte _148__16StatusParamsDown
+	.4byte offenseMod__16StatusParamsDown
 	.2byte 0
 	.2byte 0
-	.4byte _150__16StatusParamsDown
+	.4byte defenseMod__16StatusParamsDown
 	.2byte 0
 	.2byte 0
-	.4byte _158__16StatusParamsDown
+	.4byte iqMod__16StatusParamsDown
 	.2byte 0
 	.2byte 0
-	.4byte _160__16StatusParamsDown
+	.4byte speedMod__16StatusParamsDown
 	.2byte 0
 	.2byte 0
-	.4byte _168__14StatusParamMod
+	.4byte kindnessMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _170__14StatusParamMod
+	.4byte offenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _178__14StatusParamMod
+	.4byte defenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _180__14StatusParamMod
+	.4byte iqDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _188__14StatusParamMod
+	.4byte speedDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _190__14StatusParamMod
+	.4byte kindnessDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _198__14StatusParamMod
+	.4byte offenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a0__14StatusParamMod
+	.4byte defenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a8__14StatusParamMod
+	.4byte iqChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b0__14StatusParamMod
+	.4byte speedChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b8__14StatusParamMod
+	.4byte kindnessChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
 	.4byte _1c0__14StatusParamMod
@@ -72311,49 +72311,49 @@ _vt.14StatusParamsUp::
 	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte _148__14StatusParamsUp
+	.4byte offenseMod__14StatusParamsUp
 	.2byte 0
 	.2byte 0
-	.4byte _150__14StatusParamsUp
+	.4byte defenseMod__14StatusParamsUp
 	.2byte 0
 	.2byte 0
-	.4byte _158__14StatusParamsUp
+	.4byte iqMod__14StatusParamsUp
 	.2byte 0
 	.2byte 0
-	.4byte _160__14StatusParamsUp
+	.4byte speedMod__14StatusParamsUp
 	.2byte 0
 	.2byte 0
-	.4byte _168__14StatusParamMod
+	.4byte kindnessMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _170__14StatusParamMod
+	.4byte offenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _178__14StatusParamMod
+	.4byte defenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _180__14StatusParamMod
+	.4byte iqDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _188__14StatusParamMod
+	.4byte speedDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _190__14StatusParamMod
+	.4byte kindnessDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _198__14StatusParamMod
+	.4byte offenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a0__14StatusParamMod
+	.4byte defenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a8__14StatusParamMod
+	.4byte iqChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b0__14StatusParamMod
+	.4byte speedChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b8__14StatusParamMod
+	.4byte kindnessChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
 	.4byte _1c0__14StatusParamMod
@@ -72487,49 +72487,49 @@ _vt.17StatusDefUpStrong::
 	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte _148__14StatusParamMod
+	.4byte offenseMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _150__17StatusDefUpStrong
+	.4byte defenseMod__17StatusDefUpStrong
 	.2byte 0
 	.2byte 0
-	.4byte _158__14StatusParamMod
+	.4byte iqMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _160__14StatusParamMod
+	.4byte speedMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _168__14StatusParamMod
+	.4byte kindnessMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _170__14StatusParamMod
+	.4byte offenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _178__14StatusParamMod
+	.4byte defenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _180__14StatusParamMod
+	.4byte iqDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _188__14StatusParamMod
+	.4byte speedDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _190__14StatusParamMod
+	.4byte kindnessDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _198__14StatusParamMod
+	.4byte offenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a0__14StatusParamMod
+	.4byte defenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a8__14StatusParamMod
+	.4byte iqChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b0__14StatusParamMod
+	.4byte speedChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b8__14StatusParamMod
+	.4byte kindnessChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
 	.4byte _1c0__14StatusParamMod
@@ -72663,49 +72663,49 @@ _vt.14StatusDefUpMid::
 	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte _148__14StatusParamMod
+	.4byte offenseMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _150__14StatusDefUpMid
+	.4byte defenseMod__14StatusDefUpMid
 	.2byte 0
 	.2byte 0
-	.4byte _158__14StatusParamMod
+	.4byte iqMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _160__14StatusParamMod
+	.4byte speedMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _168__14StatusParamMod
+	.4byte kindnessMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _170__14StatusParamMod
+	.4byte offenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _178__14StatusParamMod
+	.4byte defenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _180__14StatusParamMod
+	.4byte iqDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _188__14StatusParamMod
+	.4byte speedDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _190__14StatusParamMod
+	.4byte kindnessDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _198__14StatusParamMod
+	.4byte offenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a0__14StatusParamMod
+	.4byte defenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a8__14StatusParamMod
+	.4byte iqChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b0__14StatusParamMod
+	.4byte speedChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b8__14StatusParamMod
+	.4byte kindnessChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
 	.4byte _1c0__14StatusParamMod
@@ -72839,49 +72839,49 @@ _vt.15StatusDefUpWeak::
 	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte _148__14StatusParamMod
+	.4byte offenseMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _150__15StatusDefUpWeak
+	.4byte defenseMod__15StatusDefUpWeak
 	.2byte 0
 	.2byte 0
-	.4byte _158__14StatusParamMod
+	.4byte iqMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _160__14StatusParamMod
+	.4byte speedMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _168__14StatusParamMod
+	.4byte kindnessMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _170__14StatusParamMod
+	.4byte offenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _178__14StatusParamMod
+	.4byte defenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _180__14StatusParamMod
+	.4byte iqDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _188__14StatusParamMod
+	.4byte speedDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _190__14StatusParamMod
+	.4byte kindnessDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _198__14StatusParamMod
+	.4byte offenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a0__14StatusParamMod
+	.4byte defenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a8__14StatusParamMod
+	.4byte iqChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b0__14StatusParamMod
+	.4byte speedChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b8__14StatusParamMod
+	.4byte kindnessChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
 	.4byte _1c0__14StatusParamMod
@@ -73015,49 +73015,49 @@ _vt.17StatusOffUpStrong::
 	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte _148__17StatusOffUpStrong
+	.4byte offenseMod__17StatusOffUpStrong
 	.2byte 0
 	.2byte 0
-	.4byte _150__14StatusParamMod
+	.4byte defenseMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _158__14StatusParamMod
+	.4byte iqMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _160__14StatusParamMod
+	.4byte speedMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _168__14StatusParamMod
+	.4byte kindnessMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _170__14StatusParamMod
+	.4byte offenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _178__14StatusParamMod
+	.4byte defenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _180__14StatusParamMod
+	.4byte iqDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _188__14StatusParamMod
+	.4byte speedDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _190__14StatusParamMod
+	.4byte kindnessDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _198__14StatusParamMod
+	.4byte offenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a0__14StatusParamMod
+	.4byte defenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a8__14StatusParamMod
+	.4byte iqChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b0__14StatusParamMod
+	.4byte speedChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b8__14StatusParamMod
+	.4byte kindnessChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
 	.4byte _1c0__14StatusParamMod
@@ -73191,49 +73191,49 @@ _vt.14StatusOffUpMid::
 	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte _148__14StatusOffUpMid
+	.4byte offenseMod__14StatusOffUpMid
 	.2byte 0
 	.2byte 0
-	.4byte _150__14StatusParamMod
+	.4byte defenseMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _158__14StatusParamMod
+	.4byte iqMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _160__14StatusParamMod
+	.4byte speedMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _168__14StatusParamMod
+	.4byte kindnessMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _170__14StatusParamMod
+	.4byte offenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _178__14StatusParamMod
+	.4byte defenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _180__14StatusParamMod
+	.4byte iqDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _188__14StatusParamMod
+	.4byte speedDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _190__14StatusParamMod
+	.4byte kindnessDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _198__14StatusParamMod
+	.4byte offenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a0__14StatusParamMod
+	.4byte defenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a8__14StatusParamMod
+	.4byte iqChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b0__14StatusParamMod
+	.4byte speedChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b8__14StatusParamMod
+	.4byte kindnessChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
 	.4byte _1c0__14StatusParamMod
@@ -73367,49 +73367,49 @@ _vt.15StatusOffUpWeak::
 	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte _148__15StatusOffUpWeak
+	.4byte offenseMod__15StatusOffUpWeak
 	.2byte 0
 	.2byte 0
-	.4byte _150__14StatusParamMod
+	.4byte defenseMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _158__14StatusParamMod
+	.4byte iqMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _160__14StatusParamMod
+	.4byte speedMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _168__14StatusParamMod
+	.4byte kindnessMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _170__14StatusParamMod
+	.4byte offenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _178__14StatusParamMod
+	.4byte defenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _180__14StatusParamMod
+	.4byte iqDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _188__14StatusParamMod
+	.4byte speedDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _190__14StatusParamMod
+	.4byte kindnessDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _198__14StatusParamMod
+	.4byte offenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a0__14StatusParamMod
+	.4byte defenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a8__14StatusParamMod
+	.4byte iqChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b0__14StatusParamMod
+	.4byte speedChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b8__14StatusParamMod
+	.4byte kindnessChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
 	.4byte _1c0__14StatusParamMod
@@ -73543,49 +73543,49 @@ _vt.19StatusDefDownStrong::
 	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte _148__14StatusParamMod
+	.4byte offenseMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _150__19StatusDefDownStrong
+	.4byte defenseMod__19StatusDefDownStrong
 	.2byte 0
 	.2byte 0
-	.4byte _158__14StatusParamMod
+	.4byte iqMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _160__14StatusParamMod
+	.4byte speedMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _168__14StatusParamMod
+	.4byte kindnessMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _170__14StatusParamMod
+	.4byte offenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _178__14StatusParamMod
+	.4byte defenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _180__14StatusParamMod
+	.4byte iqDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _188__14StatusParamMod
+	.4byte speedDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _190__14StatusParamMod
+	.4byte kindnessDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _198__14StatusParamMod
+	.4byte offenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a0__14StatusParamMod
+	.4byte defenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a8__14StatusParamMod
+	.4byte iqChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b0__14StatusParamMod
+	.4byte speedChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b8__14StatusParamMod
+	.4byte kindnessChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
 	.4byte _1c0__14StatusParamMod
@@ -73719,49 +73719,49 @@ _vt.16StatusDefDownMid::
 	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte _148__14StatusParamMod
+	.4byte offenseMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _150__16StatusDefDownMid
+	.4byte defenseMod__16StatusDefDownMid
 	.2byte 0
 	.2byte 0
-	.4byte _158__14StatusParamMod
+	.4byte iqMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _160__14StatusParamMod
+	.4byte speedMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _168__14StatusParamMod
+	.4byte kindnessMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _170__14StatusParamMod
+	.4byte offenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _178__14StatusParamMod
+	.4byte defenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _180__14StatusParamMod
+	.4byte iqDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _188__14StatusParamMod
+	.4byte speedDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _190__14StatusParamMod
+	.4byte kindnessDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _198__14StatusParamMod
+	.4byte offenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a0__14StatusParamMod
+	.4byte defenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a8__14StatusParamMod
+	.4byte iqChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b0__14StatusParamMod
+	.4byte speedChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b8__14StatusParamMod
+	.4byte kindnessChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
 	.4byte _1c0__14StatusParamMod
@@ -73895,49 +73895,49 @@ _vt.17StatusDefDownWeak::
 	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte _148__14StatusParamMod
+	.4byte offenseMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _150__17StatusDefDownWeak
+	.4byte defenseMod__17StatusDefDownWeak
 	.2byte 0
 	.2byte 0
-	.4byte _158__14StatusParamMod
+	.4byte iqMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _160__14StatusParamMod
+	.4byte speedMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _168__14StatusParamMod
+	.4byte kindnessMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _170__14StatusParamMod
+	.4byte offenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _178__14StatusParamMod
+	.4byte defenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _180__14StatusParamMod
+	.4byte iqDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _188__14StatusParamMod
+	.4byte speedDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _190__14StatusParamMod
+	.4byte kindnessDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _198__14StatusParamMod
+	.4byte offenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a0__14StatusParamMod
+	.4byte defenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a8__14StatusParamMod
+	.4byte iqChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b0__14StatusParamMod
+	.4byte speedChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b8__14StatusParamMod
+	.4byte kindnessChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
 	.4byte _1c0__14StatusParamMod
@@ -74071,49 +74071,49 @@ _vt.19StatusOffDownStrong::
 	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte _148__19StatusOffDownStrong
+	.4byte offenseMod__19StatusOffDownStrong
 	.2byte 0
 	.2byte 0
-	.4byte _150__14StatusParamMod
+	.4byte defenseMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _158__14StatusParamMod
+	.4byte iqMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _160__14StatusParamMod
+	.4byte speedMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _168__14StatusParamMod
+	.4byte kindnessMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _170__14StatusParamMod
+	.4byte offenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _178__14StatusParamMod
+	.4byte defenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _180__14StatusParamMod
+	.4byte iqDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _188__14StatusParamMod
+	.4byte speedDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _190__14StatusParamMod
+	.4byte kindnessDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _198__14StatusParamMod
+	.4byte offenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a0__14StatusParamMod
+	.4byte defenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a8__14StatusParamMod
+	.4byte iqChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b0__14StatusParamMod
+	.4byte speedChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b8__14StatusParamMod
+	.4byte kindnessChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
 	.4byte _1c0__14StatusParamMod
@@ -74247,49 +74247,49 @@ _vt.16StatusOffDownMid::
 	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte _148__16StatusOffDownMid
+	.4byte offenseMod__16StatusOffDownMid
 	.2byte 0
 	.2byte 0
-	.4byte _150__14StatusParamMod
+	.4byte defenseMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _158__14StatusParamMod
+	.4byte iqMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _160__14StatusParamMod
+	.4byte speedMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _168__14StatusParamMod
+	.4byte kindnessMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _170__14StatusParamMod
+	.4byte offenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _178__14StatusParamMod
+	.4byte defenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _180__14StatusParamMod
+	.4byte iqDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _188__14StatusParamMod
+	.4byte speedDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _190__14StatusParamMod
+	.4byte kindnessDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _198__14StatusParamMod
+	.4byte offenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a0__14StatusParamMod
+	.4byte defenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a8__14StatusParamMod
+	.4byte iqChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b0__14StatusParamMod
+	.4byte speedChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b8__14StatusParamMod
+	.4byte kindnessChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
 	.4byte _1c0__14StatusParamMod
@@ -74423,49 +74423,49 @@ _vt.17StatusOffDownWeak::
 	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte _148__17StatusOffDownWeak
+	.4byte offenseMod__17StatusOffDownWeak
 	.2byte 0
 	.2byte 0
-	.4byte _150__14StatusParamMod
+	.4byte defenseMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _158__14StatusParamMod
+	.4byte iqMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _160__14StatusParamMod
+	.4byte speedMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _168__14StatusParamMod
+	.4byte kindnessMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _170__14StatusParamMod
+	.4byte offenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _178__14StatusParamMod
+	.4byte defenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _180__14StatusParamMod
+	.4byte iqDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _188__14StatusParamMod
+	.4byte speedDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _190__14StatusParamMod
+	.4byte kindnessDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _198__14StatusParamMod
+	.4byte offenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a0__14StatusParamMod
+	.4byte defenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a8__14StatusParamMod
+	.4byte iqChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b0__14StatusParamMod
+	.4byte speedChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b8__14StatusParamMod
+	.4byte kindnessChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
 	.4byte _1c0__14StatusParamMod
@@ -74599,49 +74599,49 @@ _vt.12StatusDefend::
 	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte _148__14StatusParamMod
+	.4byte offenseMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _150__14StatusParamMod
+	.4byte defenseMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _158__14StatusParamMod
+	.4byte iqMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _160__14StatusParamMod
+	.4byte speedMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _168__14StatusParamMod
+	.4byte kindnessMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _170__14StatusParamMod
+	.4byte offenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _178__14StatusParamMod
+	.4byte defenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _180__14StatusParamMod
+	.4byte iqDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _188__14StatusParamMod
+	.4byte speedDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _190__14StatusParamMod
+	.4byte kindnessDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _198__14StatusParamMod
+	.4byte offenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a0__14StatusParamMod
+	.4byte defenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a8__14StatusParamMod
+	.4byte iqChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b0__14StatusParamMod
+	.4byte speedChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b8__14StatusParamMod
+	.4byte kindnessChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
 	.4byte _1c0__14StatusParamMod
@@ -74775,49 +74775,49 @@ _vt.11StatusFleas::
 	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte _148__14StatusParamMod
+	.4byte offenseMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _150__14StatusParamMod
+	.4byte defenseMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _158__14StatusParamMod
+	.4byte iqMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _160__14StatusParamMod
+	.4byte speedMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _168__14StatusParamMod
+	.4byte kindnessMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _170__14StatusParamMod
+	.4byte offenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _178__14StatusParamMod
+	.4byte defenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _180__14StatusParamMod
+	.4byte iqDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _188__14StatusParamMod
+	.4byte speedDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _190__14StatusParamMod
+	.4byte kindnessDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _198__14StatusParamMod
+	.4byte offenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a0__14StatusParamMod
+	.4byte defenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a8__14StatusParamMod
+	.4byte iqChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b0__14StatusParamMod
+	.4byte speedChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b8__14StatusParamMod
+	.4byte kindnessChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
 	.4byte _1c0__14StatusParamMod
@@ -74951,49 +74951,49 @@ _vt.12StatusCrying::
 	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte _148__14StatusParamMod
+	.4byte offenseMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _150__14StatusParamMod
+	.4byte defenseMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _158__14StatusParamMod
+	.4byte iqMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _160__14StatusParamMod
+	.4byte speedMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _168__14StatusParamMod
+	.4byte kindnessMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _170__14StatusParamMod
+	.4byte offenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _178__14StatusParamMod
+	.4byte defenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _180__14StatusParamMod
+	.4byte iqDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _188__14StatusParamMod
+	.4byte speedDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _190__14StatusParamMod
+	.4byte kindnessDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _198__14StatusParamMod
+	.4byte offenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a0__14StatusParamMod
+	.4byte defenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a8__14StatusParamMod
+	.4byte iqChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b0__14StatusParamMod
+	.4byte speedChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b8__14StatusParamMod
+	.4byte kindnessChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
 	.4byte _1c0__14StatusParamMod
@@ -75127,49 +75127,49 @@ _vt.14StatusParamMod::
 	.4byte status_bool_5__6Status
 	.2byte 0
 	.2byte 0
-	.4byte _148__14StatusParamMod
+	.4byte offenseMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _150__14StatusParamMod
+	.4byte defenseMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _158__14StatusParamMod
+	.4byte iqMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _160__14StatusParamMod
+	.4byte speedMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _168__14StatusParamMod
+	.4byte kindnessMod__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _170__14StatusParamMod
+	.4byte offenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _178__14StatusParamMod
+	.4byte defenseDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _180__14StatusParamMod
+	.4byte iqDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _188__14StatusParamMod
+	.4byte speedDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _190__14StatusParamMod
+	.4byte kindnessDelta__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _198__14StatusParamMod
+	.4byte offenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a0__14StatusParamMod
+	.4byte defenseChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1a8__14StatusParamMod
+	.4byte iqChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b0__14StatusParamMod
+	.4byte speedChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
-	.4byte _1b8__14StatusParamMod
+	.4byte kindnessChange__14StatusParamMod
 	.2byte 0
 	.2byte 0
 	.4byte _1c0__14StatusParamMod

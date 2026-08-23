@@ -118,7 +118,7 @@ public:
     /* 0x2E */ s16 mRounds;
     /* 0x30 */ s16 mTurnLimit;
     /* 0x32 */ s16 mTurns;
-    /* 0x34 */ s32 _34;
+    /* 0x34 */ s32 mOffenseBase;
 };  // size: 0x38
 
 #endif  // BATTLE_STATUS_H
