@@ -66,6 +66,5 @@ FACTORY(DefaultPsi, u16, Unit*);
 FACTORY(PkThunderAB, u16, Unit*);
 FACTORY(PkThunderGO, u16, Unit*);
 FACTORY(PkGround, u16, Unit*);
-FACTORY(PsiMagnet, u16, Unit*);
 
 #endif  // BATTLE_PSI_IMPL_H
