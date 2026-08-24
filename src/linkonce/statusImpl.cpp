@@ -226,7 +226,15 @@ bool StatusMonkeyDanceOff2::disableAllStatuses() {
     return false;
 }
 
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_a0__21StatusMonkeyDanceOff2.inc", void status_a0__21StatusMonkeyDanceOff2());
+bool StatusMonkeyDanceOff2::status_a0() {
+    if (Status::status_a0() == true) return true;
+    Unit* unused = this->unit();
+
+    if (this->_1c8(Status::MonkeyDanceOff) == true) return true;
+    if (this->_1c8(Status::OffUpWeak) == true) return true;
+    return false;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_98__21StatusMonkeyDanceOff2.inc", void status_98__21StatusMonkeyDanceOff2());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/dt__21StatusMonkeyDanceOff2.inc", void dt__21StatusMonkeyDanceOff2());
 
@@ -309,7 +317,15 @@ bool StatusMonkeyDanceOff::disableAllStatuses() {
     return false;
 }
 
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_a0__20StatusMonkeyDanceOff.inc", void status_a0__20StatusMonkeyDanceOff());
+bool StatusMonkeyDanceOff::status_a0() {
+    if (Status::status_a0() == true) return true;
+    Unit* unused = this->unit();
+
+    if (this->_1c8(Status::MonkeyDanceOff2) == true) return true;
+    if (this->_1c8(Status::OffDownWeak) == true) return true;
+    return false;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_98__20StatusMonkeyDanceOff.inc", void status_98__20StatusMonkeyDanceOff());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/dt__20StatusMonkeyDanceOff.inc", void dt__20StatusMonkeyDanceOff());
 
@@ -390,7 +406,12 @@ bool StatusDefUpMid::disableAllStatuses() {
     return false;
 }
 
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_a0__14StatusDefUpMid.inc", void status_a0__14StatusDefUpMid());
+bool StatusDefUpMid::status_a0() {
+    if (Status::status_a0() == true) return true;
+    if (_1c8(Status::DefDownMid) == true) return true;
+    return false;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_98__14StatusDefUpMid.inc", void status_98__14StatusDefUpMid());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/dt__14StatusDefUpMid.inc", void dt__14StatusDefUpMid());
 
@@ -412,7 +433,14 @@ bool StatusDefUpWeak::disableAllStatuses() {
     return false;
 }
 
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_a0__15StatusDefUpWeak.inc", void status_a0__15StatusDefUpWeak());
+bool StatusDefUpWeak::status_a0() {
+    if (Status::status_a0() == true) return true;
+    Unit* unused = this->unit();
+    if (this->_1c8(Status::MonkeyDanceDef2) == true) return true;
+    if (this->_1c8(Status::DefDownWeak) == true) return true;
+    return false;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_98__15StatusDefUpWeak.inc", void status_98__15StatusDefUpWeak());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/dt__15StatusDefUpWeak.inc", void dt__15StatusDefUpWeak());
 
@@ -434,7 +462,12 @@ bool StatusOffUpStrong::disableAllStatuses() {
     return false;
 }
 
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_a0__17StatusOffUpStrong.inc", void status_a0__17StatusOffUpStrong());
+bool StatusOffUpStrong::status_a0() {
+    if (Status::status_a0() == true) return true;
+    if (_1c8(Status::OffDownStrong) == true) return true;
+    return false;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_98__17StatusOffUpStrong.inc", void status_98__17StatusOffUpStrong());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_90__17StatusOffUpStrong.inc", void status_90__17StatusOffUpStrong());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/dt__17StatusOffUpStrong.inc", void dt__17StatusOffUpStrong());
@@ -457,7 +490,12 @@ bool StatusOffUpMid::disableAllStatuses() {
     return false;
 }
 
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_a0__14StatusOffUpMid.inc", void status_a0__14StatusOffUpMid());
+bool StatusOffUpMid::status_a0() {
+    if (Status::status_a0() == true) return true;
+    if (_1c8(Status::OffDownMid) == true) return true;
+    return false;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_98__14StatusOffUpMid.inc", void status_98__14StatusOffUpMid());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/dt__14StatusOffUpMid.inc", void dt__14StatusOffUpMid());
 
@@ -479,7 +517,14 @@ bool StatusOffUpWeak::disableAllStatuses() {
     return false;
 }
 
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_a0__15StatusOffUpWeak.inc", void status_a0__15StatusOffUpWeak());
+bool StatusOffUpWeak::status_a0() {
+    if (Status::status_a0() == true) return true;
+    Unit* unused = this->unit();
+    if (this->_1c8(Status::MonkeyDanceOff2) == true) return true;
+    if (this->_1c8(Status::OffDownWeak) == true) return true;
+    return false;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_98__15StatusOffUpWeak.inc", void status_98__15StatusOffUpWeak());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/dt__15StatusOffUpWeak.inc", void dt__15StatusOffUpWeak());
 
@@ -501,7 +546,12 @@ bool StatusDefDownStrong::disableAllStatuses() {
     return false;
 }
 
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_a0__19StatusDefDownStrong.inc", void status_a0__19StatusDefDownStrong());
+bool StatusDefDownStrong::status_a0() {
+    if (Status::status_a0() == true) return true;
+    if (_1c8(Status::DefUpStrong) == true) return true;
+    return false;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_98__19StatusDefDownStrong.inc", void status_98__19StatusDefDownStrong());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_90__19StatusDefDownStrong.inc", void status_90__19StatusDefDownStrong());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/dt__19StatusDefDownStrong.inc", void dt__19StatusDefDownStrong());
@@ -516,7 +566,14 @@ Msg StatusDefDownMid::fmtStatusMsg(u16 msg) {
 
 s32 StatusDefDownMid::defenseMod() { return -sub_0807066C(this->unit()->defense() * 30, 100); }
 
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_a0__16StatusDefDownMid.inc", void status_a0__16StatusDefDownMid());
+bool StatusDefDownMid::status_a0() {
+    if (Status::disableAllStatuses() == true) return true;
+    if (this->unit()->hasStatus(Status::DefDownStrong) == true) return true;
+    if (this->unit()->hasStatus(Status::ParamsUp) == true) return true;
+    if (this->unit()->hasStatus(Status::ParamsDown) == true) return true;
+    return false;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_98__16StatusDefDownMid.inc", void status_98__16StatusDefDownMid());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_90__16StatusDefDownMid.inc", void status_90__16StatusDefDownMid());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/dt__16StatusDefDownMid.inc", void dt__16StatusDefDownMid());
@@ -539,7 +596,14 @@ bool StatusDefDownWeak::disableAllStatuses() {
     return false;
 }
 
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_a0__17StatusDefDownWeak.inc", void status_a0__17StatusDefDownWeak());
+bool StatusDefDownWeak::status_a0() {
+    if (Status::status_a0() == true) return true;
+    Unit* unused = this->unit();
+    if (this->_1c8(Status::MonkeyDanceDef) == true) return true;
+    if (this->_1c8(Status::DefUpWeak) == true) return true;
+    return false;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_98__17StatusDefDownWeak.inc", void status_98__17StatusDefDownWeak());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/dt__17StatusDefDownWeak.inc", void dt__17StatusDefDownWeak());
 
@@ -561,7 +625,12 @@ bool StatusOffDownStrong::disableAllStatuses() {
     return false;
 }
 
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_a0__19StatusOffDownStrong.inc", void status_a0__19StatusOffDownStrong());
+bool StatusOffDownStrong::status_a0() {
+    if (Status::status_a0() == true) return true;
+    if (_1c8(Status::OffUpStrong) == true) return true;
+    return false;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_98__19StatusOffDownStrong.inc", void status_98__19StatusOffDownStrong());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_90__19StatusOffDownStrong.inc", void status_90__19StatusOffDownStrong());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/dt__19StatusOffDownStrong.inc", void dt__19StatusOffDownStrong());
@@ -606,14 +675,21 @@ s32 StatusOffDownWeak::offenseMod() { return -sub_0807066C(this->unit()->offense
 
 bool StatusOffDownWeak::disableAllStatuses() {
     if (Status::disableAllStatuses() == true) return true;
-    Unit* u = unit();
+    Unit* unused = unit();
     if (unit()->hasStatus(Status::OffDownStrong) == true) return true;
     if (unit()->hasStatus(Status::ParamsUp) == true) return true;
     if (unit()->hasStatus(Status::ParamsDown) == true) return true;
     return false;
 }
 
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_a0__17StatusOffDownWeak.inc", void status_a0__17StatusOffDownWeak());
+bool StatusOffDownWeak::status_a0() {
+    if (Status::status_a0() == true) return true;
+    Unit* unused = this->unit();
+    if (this->_1c8(Status::MonkeyDanceOff) == true) return true;
+    if (this->_1c8(Status::OffUpWeak) == true) return true;
+    return false;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_98__17StatusOffDownWeak.inc", void status_98__17StatusOffDownWeak());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/dt__17StatusOffDownWeak.inc", void dt__17StatusOffDownWeak());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/cleanup__12StatusDefend.inc", void cleanup__12StatusDefend());
@@ -675,7 +751,17 @@ s32 StatusParamMod::iqDelta() { return this->mIQDelta; }
 s32 StatusParamMod::defenseDelta() { return this->mDefenseDelta; }
 s32 StatusParamMod::offenseDelta() { return this->mOffenseDelta; }
 
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/cleanup__14StatusParamMod.inc", void cleanup__14StatusParamMod());
+void StatusParamMod::cleanup() {
+    Unit* targetUnit = this->unit();
+    
+    targetUnit->setOffense(targetUnit->offense() - this->mOffenseDelta);
+    targetUnit->setDefense(targetUnit->defense() - this->mDefenseDelta);
+    targetUnit->setIQ(targetUnit->iq() - this->mIQDelta);
+    targetUnit->setSpeed(targetUnit->speed() - this->mSpeedDelta);
+    targetUnit->setKindness(targetUnit->kindness() - this->mKindnessDelta);
+    
+    Status::cleanup();
+}
 
 s32 StatusParamMod::kindnessMod() { return 0; }
 s32 StatusParamMod::speedMod() { return 0; }
