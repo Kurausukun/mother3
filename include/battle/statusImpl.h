@@ -23,6 +23,7 @@ public:
     }
     virtual ~StatusParamMod();
     virtual void cleanup();
+    virtual bool status_b0();
 
     s32 mOffenseBase, mDefenseBase, mIQBase, mSpeedBase, mKindnessBase, mOffenseDelta, mDefenseDelta, mIQDelta, mSpeedDelta, mKindnessDelta;
 
@@ -192,6 +193,8 @@ public:
     virtual ~StatusDefend();
     virtual void cleanup();
     virtual bool disableAllStatuses();
+    virtual bool status_b0();
+    s16 _5c;
 };
 
 class StatusNoExp : public Status {
@@ -212,6 +215,7 @@ public:
     virtual Msg fmtStatusMsg(u16 msg);
     virtual bool disableAllStatuses();
     virtual s32 offenseMod();
+    virtual bool status_98();
     virtual bool status_a0();
 };
 
@@ -222,6 +226,8 @@ public:
     StatusOffDownStrong(u16 type, Unit* unit);
     virtual ~StatusOffDownStrong();
     virtual Msg fmtStatusMsg(u16 msg);
+    virtual bool status_90();
+    virtual bool status_98();
     virtual bool status_a0();
     virtual bool disableAllStatuses();
     virtual s32 offenseMod();
@@ -234,6 +240,7 @@ public:
     StatusDefDownWeak(u16 type, Unit* unit);
     virtual ~StatusDefDownWeak();
     virtual Msg fmtStatusMsg(u16 msg);
+    virtual bool status_98();
     virtual bool status_a0();
     virtual bool disableAllStatuses();
     virtual s32 defenseMod();
@@ -246,8 +253,9 @@ public:
     StatusDefDownStrong(u16 type, Unit* unit);
     virtual ~StatusDefDownStrong();
     virtual Msg fmtStatusMsg(u16 msg);
-    virtual bool status_a0();
+    virtual bool status_90();
     virtual bool status_98();
+    virtual bool status_a0();
     virtual bool disableAllStatuses();
     virtual s32 defenseMod();
 };
@@ -259,6 +267,7 @@ public:
     StatusShield(u16 type, Unit* unit);
     virtual ~StatusShield();
     virtual bool disableAllStatuses();
+    virtual bool status_90();
 };
 
 class StatusCounter : public Status {
@@ -268,6 +277,7 @@ public:
     StatusCounter(u16 type, Unit* unit);
     virtual ~StatusCounter();
     virtual bool disableAllStatuses();
+    virtual bool status_90();
 };
 
 class StatusElectrocuted : public Status {
@@ -286,6 +296,7 @@ public:
     StatusPsiShield(u16 type, Unit* unit);
     virtual ~StatusPsiShield();
     virtual bool disableAllStatuses();
+    virtual bool status_90();
 };
 
 class StatusPsiCounter : public Status {
@@ -295,6 +306,7 @@ public:
     StatusPsiCounter(u16 type, Unit* unit);
     virtual ~StatusPsiCounter();
     virtual bool disableAllStatuses();
+    virtual bool status_90();
 };
 
 class StatusOffUpWeak : public StatusParamMod {
@@ -306,6 +318,7 @@ public:
     virtual Msg fmtStatusMsg(u16 msg);
     virtual bool disableAllStatuses();
     virtual s32 offenseMod();
+    virtual bool status_98();
     virtual bool status_a0();
 };
 
@@ -316,6 +329,8 @@ public:
     StatusOffUpStrong(u16 type, Unit* unit);
     virtual ~StatusOffUpStrong();
     virtual Msg fmtStatusMsg(u16 msg);
+    virtual bool status_90();
+    virtual bool status_98();
     virtual bool status_a0();
     virtual bool disableAllStatuses();
     virtual s32 offenseMod();
@@ -330,6 +345,7 @@ public:
     virtual Msg fmtStatusMsg(u16 msg);
     virtual bool disableAllStatuses();
     virtual s32 defenseMod();
+    virtual bool status_98();
     virtual bool status_a0();
 };
 
@@ -340,6 +356,8 @@ public:
     StatusDefUpStrong(u16 type, Unit* unit);
     virtual ~StatusDefUpStrong();
     virtual Msg fmtStatusMsg(u16 msg);
+    virtual bool status_90();
+    virtual bool status_98();
     virtual bool status_a0();
     virtual bool disableAllStatuses();
     virtual s32 defenseMod();
@@ -361,6 +379,7 @@ public:
     StatusOffDownMid(u16 type, Unit* unit);
     virtual ~StatusOffDownMid();
     virtual Msg fmtStatusMsg(u16 msg);
+    virtual bool status_98();
     virtual bool status_a0();
     virtual bool disableAllStatuses();
     virtual s32 offenseMod();
@@ -373,6 +392,8 @@ public:
     StatusDefDownMid(u16 type, Unit* unit);
     virtual ~StatusDefDownMid();
     virtual Msg fmtStatusMsg(u16 msg);
+    virtual bool status_90();
+    virtual bool status_98();
     virtual bool status_a0();
     virtual bool disableAllStatuses();
     virtual s32 defenseMod();
@@ -402,6 +423,7 @@ public:
     virtual s32 defenseMod();
     virtual s32 iqMod();
     virtual s32 speedMod();
+    virtual bool status_90();
 };
 
 class StatusParamsDown : public StatusParamMod {
@@ -416,6 +438,7 @@ public:
     virtual s32 defenseMod();
     virtual s32 iqMod();
     virtual s32 speedMod();
+    virtual bool status_90();
 };
 
 
@@ -447,6 +470,7 @@ public:
     virtual Msg fmtStatusMsg(u16 msg);
     virtual bool disableAllStatuses();
     virtual s32 offenseMod();
+    virtual bool status_98();
     virtual bool status_a0();
 };
 
@@ -490,6 +514,7 @@ public:
     StatusMonkeyDanceOff2(u16 type, Unit* unit);
     virtual ~StatusMonkeyDanceOff2();
     virtual Msg fmtStatusMsg(u16 msg);
+    virtual bool status_98();
     virtual bool disableAllStatuses();
     virtual s32 offenseMod();
     virtual bool status_a0();
@@ -544,6 +569,7 @@ public:
     StatusOffUpMid(u16 type, Unit* unit);
     virtual ~StatusOffUpMid();
     virtual Msg fmtStatusMsg(u16 msg);
+    virtual bool status_98();
     virtual bool status_a0();
     virtual bool disableAllStatuses();
     virtual s32 offenseMod();
@@ -556,6 +582,7 @@ public:
     StatusDefUpMid(u16 type, Unit* unit);
     virtual ~StatusDefUpMid();
     virtual Msg fmtStatusMsg(u16 msg);
+    virtual bool status_98();
     virtual bool status_a0();
     virtual bool disableAllStatuses();
     virtual s32 defenseMod();
@@ -575,5 +602,57 @@ public:
     DefaultStatus(u16 type, Unit* unit);
     virtual ~DefaultStatus();
 };
+
+FACTORY(StatusNoExp, u16, Unit*);
+FACTORY(StatusSmelly, u16, Unit*);
+FACTORY(StatusStrange, u16, Unit*);
+FACTORY(StatusMonkeyDanceIQ2, u16, Unit*);
+FACTORY(StatusMonkeyDanceSP2, u16, Unit*);
+FACTORY(StatusMonkeyDanceDef2, u16, Unit*);
+FACTORY(StatusMonkeyDanceOff2, u16, Unit*);
+FACTORY(StatusMonkeyDanceIQ, u16, Unit*);
+FACTORY(StatusMonkeyDanceSP, u16, Unit*);
+FACTORY(StatusMonkeyDanceDef, u16, Unit*);
+FACTORY(StatusMonkeyDanceOff, u16, Unit*);
+FACTORY(StatusParamsDown, u16, Unit*);
+FACTORY(StatusParamsUp, u16, Unit*);
+FACTORY(StatusDefUpStrong, u16, Unit*);
+FACTORY(StatusDefUpMid, u16, Unit*);
+FACTORY(StatusDefUpWeak, u16, Unit*);
+FACTORY(StatusOffUpStrong, u16, Unit*);
+FACTORY(StatusOffUpMid, u16, Unit*);
+FACTORY(StatusOffUpWeak, u16, Unit*);
+FACTORY(StatusDefDownStrong, u16, Unit*);
+FACTORY(StatusDefDownMid, u16, Unit*);
+FACTORY(StatusDefDownWeak, u16, Unit*);
+FACTORY(StatusOffDownStrong, u16, Unit*);
+FACTORY(StatusOffDownMid, u16, Unit*);
+FACTORY(StatusOffDownWeak, u16, Unit*);
+FACTORY(StatusDefend, u16, Unit*);
+FACTORY(StatusFleas, u16, Unit*);
+FACTORY(StatusCrying, u16, Unit*);
+FACTORY(StatusNoBackSprite, u16, Unit*);
+FACTORY(StatusStapled, u16, Unit*);
+FACTORY(StatusFell, u16, Unit*);
+FACTORY(StatusDCMC, u16, Unit*);
+FACTORY(StatusDance, u16, Unit*);
+FACTORY(StatusLaughing, u16, Unit*);
+FACTORY(StatusApologetic, u16, Unit*);
+FACTORY(StatusFrozen, u16, Unit*);
+FACTORY(StatusNauseous, u16, Unit*);
+FACTORY(StatusForgetful, u16, Unit*);
+FACTORY(StatusSleep, u16, Unit*);
+FACTORY(StatusNumb, u16, Unit*);
+FACTORY(StatusRefresh, u16, Unit*);
+FACTORY(StatusEndure, u16, Unit*);
+//FACTORY(StatusTimeBomb);
+FACTORY(StatusPsiCounter, u16, Unit*);
+FACTORY(StatusPsiShield, u16, Unit*);
+FACTORY(StatusElectrocuted, u16, Unit*);
+FACTORY(StatusCounter, u16, Unit*);
+FACTORY(StatusShield, u16, Unit*);
+FACTORY(StatusOnFire, u16, Unit*);
+FACTORY(StatusPoison, u16, Unit*);
+FACTORY(DefaultStatus, u16, Unit*);
 
 #endif  // BATTLE_STATUS_IMPL_H

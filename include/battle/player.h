@@ -27,7 +27,7 @@ public:
     virtual void player_338();
     virtual void player_340();
     virtual void player_348();
-    virtual void player_350();
+    virtual void player_350(s32);
     virtual void player_358();
     virtual void player_360();
     virtual void player_368();
@@ -36,7 +36,7 @@ public:
     virtual void player_380();
     virtual void player_388();
     virtual void player_390();
-    virtual void player_398();
+    virtual s32 player_398();
     virtual void player_3a0();
     virtual void player_3a8();
     virtual void player_3b0();
