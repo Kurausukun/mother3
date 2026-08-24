@@ -67,7 +67,7 @@ extern "C" void sub_080052E4(s32);
 extern "C" void sub_0802610C(s32);
 extern "C" const MapGraphicsInfo* getMapGraphicsInfo(u16);
 extern "C" DoorDestinationInfo* getDoorDestinationInfo(u16);
-extern "C" void sub_0805CD30(u16, u16, u8);
+extern "C" void setEnemySpriteSeen(u16, u16, u8);
 extern "C" u32 sub_0805CDD8(u16, u8);
 extern "C" u16 get_flag(u16);
 extern "C" void incrementSessionPlaytime();
@@ -366,13 +366,13 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_080023E0.inc", void sub_080023E0()
 
 extern "C" void copyText(u16* dest, u16* src, s16 len) {
     if (len == -1) {
-        while (*src != 0xFFFF) {
+        while (*src != Msg::End) {
             *dest = *src;
             src++;
             dest++;
         }
 
-        *dest = 0xFFFF;
+        *dest = Msg::End;
     } else {
         for (u16 i = 0; i < len; i++) {
             *dest = *src;
@@ -393,7 +393,7 @@ extern "C" u16* getNthMemoPage(u16* buf, u16 line) {
         do {
             currentChar = *buf;
             buf++;
-        } while (currentChar != 0xFFFF && currentChar != 0xFF00);
+        } while (currentChar != Msg::End && currentChar != 0xFF00);
     }
 
     return buf;
@@ -575,9 +575,9 @@ extern "C" u32 get_giftbox_flag(u16 idx) {
 
 extern "C" void sub_08002A58(u16 r0, u16 r1, vu16 r2) {
     if (r2) {
-        sub_0805CD30(r0, 1, r1);
+        setEnemySpriteSeen(r0, 1, r1);
     } else {
-        sub_0805CD30(r0, 0, r1);
+        setEnemySpriteSeen(r0, 0, r1);
     }
 }
 

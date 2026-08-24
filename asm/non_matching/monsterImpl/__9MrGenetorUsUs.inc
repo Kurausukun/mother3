@@ -78,7 +78,7 @@ __9MrGenetorUsUs:
 	str r1, [r0]
 	adds r0, r5, #0
 	movs r1, #0x18
-	bl unit_268__4UnitUi
+	bl unit_268__4UnitUs
 	adds r0, r5, #0
 	add sp, #0x28
 	pop {r3, r4}

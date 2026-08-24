@@ -28,7 +28,7 @@ typedef struct MoveInfo {
 typedef struct CharStats {
     u8 charNo;
     u8 spriteNo;
-    u8 name[16];
+    u16 name[8];
     u8 level;
     u32 xp;
     s32 curHP;
@@ -230,7 +230,7 @@ typedef struct Entry8Byte_Alt {
     volatile u16 field4;  // 0x04
     volatile u16 field6;  // 0x06
 } Entry8Byte_Alt;
-static_assert(sizeof(OAMEntry) == 0x8);
+static_assert(sizeof(Entry8Byte_Alt) == 0x8);
 
 typedef struct Unknown_02016078 {
     /* 0x0000 / 0x0050 */ u16 _0[0x400];
@@ -608,12 +608,12 @@ typedef struct Save {
     u8 _481;
     u16 _482[0x80];
     u16 _582[0x80];
-    u8 hinawa_name[0x10];
-    u8 claus_name[0x10];
-    u8 fav_food[0x12];
-    u8 fav_thing[0x12];
-    u8 playername_short[0x12];
-    u8 playername[0x20];
+    u16 hinawa_name[8];
+    u16 claus_name[8];
+    u16 fav_food[9];
+    u16 fav_thing[9];
+    u16 playername_short[9];
+    u16 playername[0x10];
     u16 _6f8;
     u16 _6fa;
     u16 _6fc;
@@ -811,7 +811,7 @@ typedef struct MapLayerAlphaInfo {
     u8 pad[0xC];
     MapLayerInfo layers[3];
 } MapLayerAlphaInfo;
-               
+
 typedef struct MapGraphicsInfo {
     s16 tileSetIndices[12];
     s16 paletteIndex;

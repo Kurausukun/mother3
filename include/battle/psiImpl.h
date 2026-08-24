@@ -16,10 +16,55 @@ public:
     DefaultPsi(u16 id, Unit* user);
     virtual ~DefaultPsi();
 
-    virtual s32 hitChance() const override;
     virtual void tellResisted(Unit* target) override;
+    virtual s32 hitChance() const override;
+};
+
+class PkThunderAB : public DefaultPsi {
+public:
+    PkThunderAB(u16 id, Unit* user);
+    virtual ~PkThunderAB();
+
+    virtual void playAnim() override;
+    virtual void action_a0(Unit* target) override;
+    virtual bool calcDidHit(Unit* target) override;
+    virtual void tellMissed(Unit* target) override;
+    virtual void onPlayAnim(Unit* target, bool crit) override;
+};
+
+class PkThunderGO : public DefaultPsi {
+public:
+    PkThunderGO(u16 id, Unit* user);
+    virtual ~PkThunderGO();
+
+    virtual void playAnim() override;
+    virtual void action_a0(Unit* target) override;
+    virtual bool calcDidHit(Unit* target) override;
+    virtual void tellMissed(Unit* target) override;
+    virtual void onPlayAnim(Unit* target, bool crit) override;
+};
+
+class PkGround : public DefaultPsi {
+public:
+    PkGround(u16 id, Unit* user);
+    virtual ~PkGround();
+
+    virtual void playAnim() override;
+    virtual bool calcDidHit(Unit* target) override;
+    virtual void onPsiDamage(Unit* target) override;
+};
+
+class PsiMagnet : public DefaultPsi {
+public:
+    PsiMagnet(u16 id, Unit* user);
+    virtual ~PsiMagnet();
+
+    virtual void onPlayAnim(Unit* target, bool crit) override;
 };
 
 FACTORY(DefaultPsi, u16, Unit*);
+FACTORY(PkThunderAB, u16, Unit*);
+FACTORY(PkThunderGO, u16, Unit*);
+FACTORY(PkGround, u16, Unit*);
 
 #endif  // BATTLE_PSI_IMPL_H

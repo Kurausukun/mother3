@@ -74,7 +74,7 @@ _08079AAC:
 	adds r0, r4, r0
 	ldr r1, [r1, #4]
 	bl _call_via_r1
-	bl sub_08072BBC
+	bl IsGuest
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -91,7 +91,7 @@ _08079AF0:
 	cmp r0, #1
 	beq _08079B10
 	adds r0, r6, #0
-	bl sub_08072BBC
+	bl IsGuest
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -242,7 +242,7 @@ _08079C00:
 	adds r0, r4, r0
 	ldr r1, [r1, #4]
 	bl _call_via_r1
-	bl sub_08072BBC
+	bl IsGuest
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -259,7 +259,7 @@ _08079C44:
 	cmp r0, #1
 	beq _08079C64
 	adds r0, r6, #0
-	bl sub_08072BBC
+	bl IsGuest
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -394,7 +394,7 @@ _08079D36:
 	adds r0, r4, r0
 	ldr r1, [r1, #4]
 	bl _call_via_r1
-	bl sub_08072BBC
+	bl IsGuest
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
@@ -411,7 +411,7 @@ _08079D7A:
 	cmp r0, #1
 	beq _08079D9A
 	adds r0, r6, #0
-	bl sub_08072BBC
+	bl IsGuest
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1

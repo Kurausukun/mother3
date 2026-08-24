@@ -1,4 +1,11 @@
 #include "battle/psiImpl.h"
+#include "battle.h"
+
+extern "C" bool typeIsMonster(Unit*);
+extern "C" Monster* dynaCastMonster(Unit* u);
+extern "C" void hitPlayer(Unit*, u32, u32);
+extern "C" s32 GetMonsterCount();
+extern "C" Unit* GetMonster(s32);
 
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/create__16HealingGOFactoryUsP4Unit.inc", void create__16HealingGOFactoryUsP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/create__15HealingBFactoryUsP4Unit.inc", void create__15HealingBFactoryUsP4Unit());
@@ -10,10 +17,23 @@ extern "C" ASM_FUNC("asm/non_matching/psiImpl/create__13ShieldFactoryUsP4Unit.in
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/create__14PkFlashFactoryUsP4Unit.inc", void create__14PkFlashFactoryUsP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/create__14LifeupGFactoryUsP4Unit.inc", void create__14LifeupGFactoryUsP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/create__16PsiMagnetFactoryUsP4Unit.inc", void create__16PsiMagnetFactoryUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/psiImpl/create__15PkGroundFactoryUsP4Unit.inc", void create__15PkGroundFactoryUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/psiImpl/create__18PkThunderGOFactoryUsP4Unit.inc", void create__18PkThunderGOFactoryUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/psiImpl/create__18PkThunderABFactoryUsP4Unit.inc", void create__18PkThunderABFactoryUsP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/psiImpl/create__17DefaultPsiFactoryUsP4Unit.inc", void create__17DefaultPsiFactoryUsP4Unit());
+
+void* PkGroundFactory::create(u16 id, Unit* user) {
+    return new PkGround(id, user);
+}
+
+void* PkThunderGOFactory::create(u16 id, Unit* user) {
+    return new PkThunderGO(id, user);
+}
+
+void* PkThunderABFactory::create(u16 id, Unit* user) {
+    return new PkThunderAB(id, user);
+}
+
+void* DefaultPsiFactory::create(u16 id, Unit* user) {
+    return new DefaultPsi(id, user);
+}
+
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/__9HealingGOUsP4Unit.inc", void __9HealingGOUsP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/__8HealingBUsP4Unit.inc", void __8HealingBUsP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/__8HealingAUsP4Unit.inc", void __8HealingAUsP4Unit());
@@ -27,7 +47,9 @@ extern "C" ASM_FUNC("asm/non_matching/psiImpl/__9PsiMagnetUsP4Unit.inc", void __
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/__8PkGroundUsP4Unit.inc", void __8PkGroundUsP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/__11PkThunderGOUsP4Unit.inc", void __11PkThunderGOUsP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/__11PkThunderABUsP4Unit.inc", void __11PkThunderABUsP4Unit());
+
 DefaultPsi::DefaultPsi(u16 id, Unit* user) : Psi(id, user) {}
+
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/onFail__9HealingGOP4Unit.inc", void onFail__9HealingGOP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/dt__9HealingGO.inc", void dt__9HealingGO());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/onFail__8HealingBP4Unit.inc", void onFail__8HealingBP4Unit());
@@ -48,28 +70,161 @@ extern "C" ASM_FUNC("asm/non_matching/psiImpl/dt__7PkFlash.inc", void dt__7PkFla
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/onNoEffect__7LifeupGP4Unit.inc", void onNoEffect__7LifeupGP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/dt__7LifeupG.inc", void dt__7LifeupG());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/action_150__9PsiMagnet.inc", void action_150__9PsiMagnet());
-extern "C" ASM_FUNC("asm/non_matching/psiImpl/onPlayAnim__9PsiMagnetP4Unitb.inc", void onPlayAnim__9PsiMagnetP4Unitb());
+
+void PsiMagnet::onPlayAnim(Unit* target, bool crit) {}
+
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/tellMissed__9PsiMagnetP4Unit.inc", void tellMissed__9PsiMagnetP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/onPsiDamage__9PsiMagnetP4Unit.inc", void onPsiDamage__9PsiMagnetP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/calcDidHit__9PsiMagnetP4Unit.inc", void calcDidHit__9PsiMagnetP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/tellResisted__9PsiMagnetP4Unit.inc", void tellResisted__9PsiMagnetP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/isResisted__9PsiMagnetP4Unit.inc", void isResisted__9PsiMagnetP4Unit());
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/dt__9PsiMagnet.inc", void dt__9PsiMagnet());
-extern "C" ASM_FUNC("asm/non_matching/psiImpl/onPsiDamage__8PkGroundP4Unit.inc", void onPsiDamage__8PkGroundP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/psiImpl/calcDidHit__8PkGroundP4Unit.inc", void calcDidHit__8PkGroundP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/psiImpl/playAnim__8PkGround.inc", void playAnim__8PkGround());
+
+void PkGround::onPsiDamage(Unit* target) {
+    Monster* m = dynaCastMonster(target);
+
+    if (m == NULL) {
+        return;
+    }
+
+    s32 lowerBoundScale = 0;
+    s32 upperBoundScale = 0;
+
+    switch (m->battlePos()) {
+    case 0:  // TODO: Define enum
+        lowerBoundScale = 12;
+        upperBoundScale = 13;
+        break;
+    case 1:
+        lowerBoundScale = 7;
+        upperBoundScale = 8;
+        break;
+    case 2:
+        lowerBoundScale = 2;
+        upperBoundScale = 3;
+        break;
+    }
+
+    s32 damage = randS32(sub_0807066C(m->maxHP() * lowerBoundScale, 100),
+                         sub_0807066C(m->maxHP() * upperBoundScale, 100));
+    hitPlayer(m, max(1, damage), true);
+    onPlayAnim(m, false);
+}
+
+bool PkGround::calcDidHit(Unit* target) {
+    if (typeIsMonster(target) == true) {
+        switch (target->id()) {
+        case Monster::MrPassion:
+        case Monster::BrightSmile:
+        case Monster::JealousBass:
+        case Monster::KingStatue:
+        case Monster::NewFassad:
+        case Monster::LordPassion:
+        case Monster::MiracleFassad:
+        case Monster::Phenomenon:
+        case Monster::RhinoBooster:
+        case Monster::Blazefly:
+        case Monster::MrBatty:
+        case Monster::Firefly:
+        case Monster::FlyingMouse:
+        case Monster::CFJellyfish:
+        case Monster::BaldingEagle:
+        case Monster::LostSpirit:
+        case Monster::GhostSword:
+        case Monster::GhostShield:
+        case Monster::OshoeCape:
+        case Monster::SaraSahara:
+        case Monster::StinkyGhost:
+        case Monster::ArtsyGhost:
+        case Monster::Dragonfly:
+        case Monster::SkyTitany:
+        case Monster::RhinoRhocket:
+        case Monster::SoaringMouse:
+        case Monster::ShortCircuitZap:
+        case Monster::ReconMech:
+        case Monster::ElderBatty:
+        case Monster::WailingGuitar:
+        case Monster::MensRoomSign:
+        case Monster::NavySqueal:
+        case Monster::MasterEddy:
+        case Monster::BlueBaldingEagle:
+        case Monster::SecurityRobo:
+        case Monster::BotherWind:
+            return false;
+        default:
+            break;
+        }
+    }
+
+    return Action::calcDidHit(target);
+}
+
+void PkGround::playAnim() {
+    Vector<Unit*> prevTargets;
+
+    // Cache old targets
+    for (s32 i = 0; i < numTargets(); i++) {
+        prevTargets.append(getTarget(i));
+    }
+
+    clearTargets();
+
+    // Target and animate
+    for (s32 i = 0; i < GetMonsterCount(); i++) {
+        addTarget(GetMonster(i));
+    }
+
+    Action::playAnim();
+
+    // Restore old targets
+    clearTargets();
+
+    for (s32 i = 0; i < prevTargets.size(); i++) {
+        addTarget(prevTargets[i]);
+    }
+}
+
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/dt__8PkGround.inc", void dt__8PkGround());
-extern "C" ASM_FUNC("asm/non_matching/psiImpl/onPlayAnim__11PkThunderGOP4Unitb.inc", void onPlayAnim__11PkThunderGOP4Unitb());
-extern "C" ASM_FUNC("asm/non_matching/psiImpl/tellMissed__11PkThunderGOP4Unit.inc", void tellMissed__11PkThunderGOP4Unit());
+
+void PkThunderGO::onPlayAnim(Unit* target, bool crit) {
+    PlayAnimation(Animation::PKThunderBoltGO, target, target);
+    Action::onPlayAnim(target, crit);
+}
+
+void PkThunderGO::tellMissed(Unit* target) {
+    // It didn't hit anyone![END]
+    ROMStr(0x136).print(Color::Black(), true);
+}
+
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/calcDidHit__11PkThunderGOP4Unit.inc", void calcDidHit__11PkThunderGOP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/psiImpl/action_a0__11PkThunderGOP4Unit.inc", void action_a0__11PkThunderGOP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/psiImpl/playAnim__11PkThunderGO.inc", void playAnim__11PkThunderGO());
+
+void PkThunderGO::action_a0(Unit* target) {
+    Action::playAnim();
+    Action::action_a0(target);
+}
+
+void PkThunderGO::playAnim() {}
+
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/dt__11PkThunderGO.inc", void dt__11PkThunderGO());
-extern "C" ASM_FUNC("asm/non_matching/psiImpl/onPlayAnim__11PkThunderABP4Unitb.inc", void onPlayAnim__11PkThunderABP4Unitb());
-extern "C" ASM_FUNC("asm/non_matching/psiImpl/tellMissed__11PkThunderABP4Unit.inc", void tellMissed__11PkThunderABP4Unit());
+
+void PkThunderAB::onPlayAnim(Unit* target, bool crit) {
+    PlayAnimation(Animation::PKThunderBoltAB, target, target);
+    Action::onPlayAnim(target, crit);
+}
+
+void PkThunderAB::tellMissed(Unit* target) {
+    // It didn't hit anyone![END]
+    ROMStr(0x136).print(Color::Black(), true);
+}
+
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/calcDidHit__11PkThunderABP4Unit.inc", void calcDidHit__11PkThunderABP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/psiImpl/action_a0__11PkThunderABP4Unit.inc", void action_a0__11PkThunderABP4Unit());
-extern "C" ASM_FUNC("asm/non_matching/psiImpl/playAnim__11PkThunderAB.inc", void playAnim__11PkThunderAB());
+
+void PkThunderAB::action_a0(Unit* target) {
+    Action::playAnim();
+    Action::action_a0(target);
+}
+void PkThunderAB::playAnim() {}
+
 extern "C" ASM_FUNC("asm/non_matching/psiImpl/dt__11PkThunderAB.inc", void dt__11PkThunderAB());
 
 s32 DefaultPsi::hitChance() const {

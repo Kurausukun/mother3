@@ -20,6 +20,9 @@ public:
     virtual Msg name() const;
     virtual Msg action_1d8() const;
     virtual u32 action_1e0();
+    virtual u32 action_288() override;
+    virtual u32 action_290() override;
+    virtual u32 action_298() override;
     virtual u32 effect() const;
     virtual u32 element() const;
     virtual u32 target() const;

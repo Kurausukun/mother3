@@ -78,7 +78,7 @@ extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08022024.inc", void sub_
 
 extern "C" s32 sub_080220EC(s32 r0, s32 r1, s32 r2) {
     if ((r0 << 0x10) == 0xFFE00000) {
-        return sub_080222C0(r2, (u16*)&gCharStats[2].name, get_misctext_len(6));
+        return sub_080222C0(r2, gCharStats[2].name, get_misctext_len(6));
     }
     return r2;
 }
