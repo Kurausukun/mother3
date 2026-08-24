@@ -36,7 +36,22 @@ extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08073ABC.inc", void sub_08073AB
 extern "C" ASM_FUNC("asm/non_matching/rhythm/InitHeal.inc", void InitHeal());
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08073CF0.inc", void sub_08073CF0());
 extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08073D98.inc", void sub_08073D98());
-extern "C" ASM_FUNC("asm/non_matching/rhythm/sub_08073E3C.inc", void sub_08073E3C());
+
+extern "C" bool sub_08073E3C(Unit* target, Status::Type statusID, bool playEffects) {
+    u16 unkStatusID = target->unit_268(statusID);
+
+    if (unkStatusID == statusID) {
+        Status* status = target->findStatus(unkStatusID);
+
+        if (playEffects == true && status != NULL) {
+            PlayAnimation(status->animNo(), target, target);
+            status->inflictedMsg().print(Color::Black(), true);
+        }
+        return true;
+    }
+
+    return false;
+}
 
 bool statusWearOff(Unit* unit, Status::Type type, bool print) {
     if (unit->hasStatus(type) == 1) {

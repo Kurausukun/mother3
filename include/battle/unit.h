@@ -122,7 +122,7 @@ public:
     virtual bool hasCmd(u16 a1);
     virtual s32 getCmdIdx(u16 a1);
     virtual s32 findCmd(u16 a1);
-    virtual u32 unit_268(u32 a1);
+    virtual Status::Type unit_268(Status::Type status);
     virtual bool removeOneStatus(Status::Type type);
     virtual void removeStatus(Status::Type type);
     virtual void clearAllStatuses();

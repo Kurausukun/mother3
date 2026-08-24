@@ -2859,7 +2859,7 @@ _vt.5Claus::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -3337,7 +3337,7 @@ _vt.5Salsa::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -3818,7 +3818,7 @@ _vt.5Boney::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -4299,7 +4299,7 @@ _vt.6Duster::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -4780,7 +4780,7 @@ _vt.8Kumatora::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -5261,7 +5261,7 @@ _vt.5Lucas::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -5745,7 +5745,7 @@ _vt.5Flint::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -6226,7 +6226,7 @@ _vt.13DefaultPlayer::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -10668,7 +10668,7 @@ _vt.5Guest::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -11007,7 +11007,7 @@ _vt.5Ionia::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -11347,7 +11347,7 @@ _vt.6Fassad::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -11696,7 +11696,7 @@ _vt.4Wess::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -12039,7 +12039,7 @@ _vt.4Alec::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -12385,7 +12385,7 @@ _vt.4Fuel::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -12725,7 +12725,7 @@ _vt.6Thomas::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -13065,7 +13065,7 @@ _vt.12DefaultGuest::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -14817,7 +14817,7 @@ _vt.12MaskedMan3rd::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -15271,7 +15271,7 @@ _vt.12MaskedMan2nd::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -15751,7 +15751,7 @@ _vt.21AbsolutelySafeCapsule::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -16205,7 +16205,7 @@ _vt.5Porky::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -16707,7 +16707,7 @@ _vt.14MechaPorky0607::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -17170,7 +17170,7 @@ _vt.10MechaPorky::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -17633,7 +17633,7 @@ _vt.19NaturalKillerCyborg::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -18111,7 +18111,7 @@ _vt.14PorkColonel2nd::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -18565,7 +18565,7 @@ _vt.12NuclearRobot::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -19022,7 +19022,7 @@ _vt.12UpgradedRobo::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -19476,7 +19476,7 @@ _vt.14PorkLieutenant::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -19930,7 +19930,7 @@ _vt.9MiracleFassad::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A7D14
@@ -20396,7 +20396,7 @@ _vt.12MaskedMan1st::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -20853,7 +20853,7 @@ _vt.9HuggyBomb::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -21325,7 +21325,7 @@ _vt.7TLCTree::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -21779,7 +21779,7 @@ _vt.11BarrierTrio::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -22254,7 +22254,7 @@ _vt.9Dragonfly::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -22708,7 +22708,7 @@ _vt.13EerieSmile4th::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -23162,7 +23162,7 @@ _vt.8Titanian::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -23616,7 +23616,7 @@ _vt.13EerieSmile2nd::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -24070,7 +24070,7 @@ _vt.9Monkalrus::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -24524,7 +24524,7 @@ _vt.13EerieSmile1st::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -24978,7 +24978,7 @@ _vt.13EerieSmile3rd::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -25432,7 +25432,7 @@ _vt.12Zombieshroom::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -25886,7 +25886,7 @@ _vt.10MasterEddy::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -26340,7 +26340,7 @@ _vt.10FishRoeMan::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -26794,7 +26794,7 @@ _vt.10NavySqueal::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -27248,7 +27248,7 @@ _vt.9NewFassad::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080A9EE8
@@ -27717,7 +27717,7 @@ _vt.7Hothead::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -28171,7 +28171,7 @@ _vt.8Blazefly::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -28625,7 +28625,7 @@ _vt.10ScaredyBot::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -29079,7 +29079,7 @@ _vt.12SteelGorilla::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -29542,7 +29542,7 @@ _vt.7TenYeti::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -29996,7 +29996,7 @@ _vt.9ChillyDog::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -30450,7 +30450,7 @@ _vt.13PorkCommander::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -30904,7 +30904,7 @@ _vt.15AlmostMechaLion::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -31361,7 +31361,7 @@ _vt.7BroTeam::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -31815,7 +31815,7 @@ _vt.9MrGenetor::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -32281,7 +32281,7 @@ _vt.15MissMarshmallow::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -32744,7 +32744,7 @@ _vt.11SurpriseBox::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -33198,7 +33198,7 @@ _vt.10BatteryMan::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -33652,7 +33652,7 @@ _vt.9MinorRobo::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -34115,7 +34115,7 @@ _vt.11SadJunkHeap::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte sub_080AB7C4
@@ -34572,7 +34572,7 @@ _vt.11AtomicRobot::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -35026,7 +35026,7 @@ _vt.9Barricade::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -35480,7 +35480,7 @@ _vt.20WomanizingPigMask2nd::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -35946,7 +35946,7 @@ _vt.20WomanizingPigmask1st::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -36400,7 +36400,7 @@ _vt.11WoundupBear::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -36854,7 +36854,7 @@ _vt.11MechaTurtle::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -37308,7 +37308,7 @@ _vt.11JealousBass::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -37771,7 +37771,7 @@ _vt.10BeatenDrum::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -38225,7 +38225,7 @@ _vt.13WailingGuitar::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -38679,7 +38679,7 @@ _vt.10StickySlug::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -39133,7 +39133,7 @@ _vt.8Pigtunia::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -39587,7 +39587,7 @@ _vt.11Cattlesnake::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -40041,7 +40041,7 @@ _vt.10StickyGlop::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -40504,7 +40504,7 @@ _vt.10SandLizard::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -40958,7 +40958,7 @@ _vt.8PorkTank::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -41421,7 +41421,7 @@ _vt.11PorkSoldier::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -41875,7 +41875,7 @@ _vt.8Pseudoor::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -42329,7 +42329,7 @@ _vt.12RockingGhost::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -42783,7 +42783,7 @@ _vt.8Arachnid::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -43237,7 +43237,7 @@ _vt.11MobileGrave::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -43691,7 +43691,7 @@ _vt.9OhSoSnake::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -44157,7 +44157,7 @@ _vt.7Clayman::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -44623,7 +44623,7 @@ _vt.9MrPassion::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -45086,7 +45086,7 @@ _vt.4Tree::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -45540,7 +45540,7 @@ _vt.12BaldingEagle::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -45994,7 +45994,7 @@ _vt.11WalkingBush::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -46448,7 +46448,7 @@ _vt.9PotatoBug::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -46902,7 +46902,7 @@ _vt.12SootDumpling::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -47356,7 +47356,7 @@ _vt.15BakedYammonster::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -47810,7 +47810,7 @@ _vt.10MechaDrago::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -48267,7 +48267,7 @@ _vt.20ReconstructedCaribou::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -48721,7 +48721,7 @@ _vt.14DefaultMonster::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -94012,7 +94012,7 @@ _vt.4Unit::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -95235,7 +95235,7 @@ _vt.6Player::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs
@@ -96716,7 +96716,7 @@ _vt.7Monster::
 	.4byte findCmd__4UnitUs
 	.2byte 0
 	.2byte 0
-	.4byte unit_268__4UnitUi
+	.4byte unit_268__4UnitUs
 	.2byte 0
 	.2byte 0
 	.4byte removeOneStatus__4UnitUs

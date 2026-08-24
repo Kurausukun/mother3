@@ -337,7 +337,7 @@ _vt.10MechaDrago:
 	.word	findCmd__4UnitUs
 	.short	0
 	.short	0
-	.word	unit_268__4UnitUi
+	.word	unit_268__4UnitUs
 	.short	0
 	.short	0
 	.word	removeOneStatus__4UnitUs
@@ -763,7 +763,7 @@ _vt.20ReconstructedCaribou:
 	.word	findCmd__4UnitUs
 	.short	0
 	.short	0
-	.word	unit_268__4UnitUi
+	.word	unit_268__4UnitUs
 	.short	0
 	.short	0
 	.word	removeOneStatus__4UnitUs
@@ -1189,7 +1189,7 @@ _vt.14DefaultMonster:
 	.word	findCmd__4UnitUs
 	.short	0
 	.short	0
-	.word	unit_268__4UnitUi
+	.word	unit_268__4UnitUs
 	.short	0
 	.short	0
 	.word	removeOneStatus__4UnitUs
@@ -8412,7 +8412,7 @@ _._5Event:
 
 	.byte	0x6
 	.byte	0x7d
-	.ascii	"unit_268__4UnitUi\000"
+	.ascii	"unit_268__4UnitUs\000"
 
 	.4byte	0x2f9
 	.byte	0x1
