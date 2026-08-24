@@ -9,7 +9,7 @@ class Unit;
 struct StatusData {
     u8 type;
     u8 turn_limit;
-    u16 _2;
+    u16 anim_no;
     bool8 remove_on_death;
     bool8 _5;
     u16 pad;
@@ -49,7 +49,7 @@ public:
     /* 0x100 */ virtual s32 rounds();
     /* 0x108 */ virtual s32 turnLimit();
     /* 0x110 */ virtual s32 turns();
-    /* 0x118 */ virtual u16 status_data_2();
+    /* 0x118 */ virtual u16 animNo();
     /* 0x120 */ virtual Msg inflictedMsg();
     /* 0x128 */ virtual Msg activeMsg();
     /* 0x130 */ virtual Msg woreOffMsg();

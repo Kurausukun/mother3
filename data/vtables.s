@@ -70334,7 +70334,7 @@ _vt.11StatusNoExp::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -70459,7 +70459,7 @@ _vt.12StatusSmelly::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -70584,7 +70584,7 @@ _vt.13StatusStrange::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -70709,7 +70709,7 @@ _vt.20StatusMonkeyDanceIQ2::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -70885,7 +70885,7 @@ _vt.20StatusMonkeyDanceSP2::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -71061,7 +71061,7 @@ _vt.21StatusMonkeyDanceDef2::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -71237,7 +71237,7 @@ _vt.21StatusMonkeyDanceOff2::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -71413,7 +71413,7 @@ _vt.19StatusMonkeyDanceIQ::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -71589,7 +71589,7 @@ _vt.19StatusMonkeyDanceSP::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -71765,7 +71765,7 @@ _vt.20StatusMonkeyDanceDef::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -71941,7 +71941,7 @@ _vt.20StatusMonkeyDanceOff::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -72117,7 +72117,7 @@ _vt.16StatusParamsDown::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -72293,7 +72293,7 @@ _vt.14StatusParamsUp::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -72469,7 +72469,7 @@ _vt.17StatusDefUpStrong::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -72645,7 +72645,7 @@ _vt.14StatusDefUpMid::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -72821,7 +72821,7 @@ _vt.15StatusDefUpWeak::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -72997,7 +72997,7 @@ _vt.17StatusOffUpStrong::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -73173,7 +73173,7 @@ _vt.14StatusOffUpMid::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -73349,7 +73349,7 @@ _vt.15StatusOffUpWeak::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -73525,7 +73525,7 @@ _vt.19StatusDefDownStrong::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -73701,7 +73701,7 @@ _vt.16StatusDefDownMid::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -73877,7 +73877,7 @@ _vt.17StatusDefDownWeak::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -74053,7 +74053,7 @@ _vt.19StatusOffDownStrong::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -74229,7 +74229,7 @@ _vt.16StatusOffDownMid::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -74405,7 +74405,7 @@ _vt.17StatusOffDownWeak::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -74581,7 +74581,7 @@ _vt.12StatusDefend::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -74757,7 +74757,7 @@ _vt.11StatusFleas::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -74933,7 +74933,7 @@ _vt.12StatusCrying::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -75109,7 +75109,7 @@ _vt.14StatusParamMod::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -75285,7 +75285,7 @@ _vt.18StatusNoBackSprite::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -75410,7 +75410,7 @@ _vt.13StatusStapled::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -75535,7 +75535,7 @@ _vt.10StatusFell::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -75660,7 +75660,7 @@ _vt.10StatusDCMC::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -75785,7 +75785,7 @@ _vt.11StatusDance::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -75910,7 +75910,7 @@ _vt.14StatusLaughing::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -76035,7 +76035,7 @@ _vt.16StatusApologetic::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -76160,7 +76160,7 @@ _vt.12StatusFrozen::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -76285,7 +76285,7 @@ _vt.14StatusNauseous::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -76410,7 +76410,7 @@ _vt.15StatusForgetful::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -76535,7 +76535,7 @@ _vt.11StatusSleep::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -76660,7 +76660,7 @@ _vt.10StatusNumb::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -76785,7 +76785,7 @@ _vt.13StatusRefresh::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -76910,7 +76910,7 @@ _vt.12StatusEndure::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -77035,7 +77035,7 @@ _vt.14StatusTimeBomb::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -77160,7 +77160,7 @@ _vt.16StatusPsiCounter::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -77285,7 +77285,7 @@ _vt.15StatusPsiShield::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -77410,7 +77410,7 @@ _vt.18StatusElectrocuted::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -77535,7 +77535,7 @@ _vt.13StatusCounter::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -77660,7 +77660,7 @@ _vt.12StatusShield::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -77785,7 +77785,7 @@ _vt.12StatusOnFire::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -77910,7 +77910,7 @@ _vt.12StatusPoison::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -78035,7 +78035,7 @@ _vt.13DefaultStatus::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status
@@ -97368,7 +97368,7 @@ _vt.6Status::
 	.4byte turns__6Status
 	.2byte 0
 	.2byte 0
-	.4byte status_data_2__6Status
+	.4byte animNo__6Status
 	.2byte 0
 	.2byte 0
 	.4byte inflictedMsg__6Status

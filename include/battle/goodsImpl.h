@@ -16,7 +16,7 @@ extern "C" void PlaySoundBlocking(u32);
 extern "C" Monster* sub_08072EE4(u16);
 extern "C" void playSound(u16);
 extern "C" s32 sub_0807066C(s32, s32);
-extern "C" void sub_08073E3C(Unit*, u32, u32);
+extern "C" bool sub_08073E3C(Unit*, u32, u32);
 extern "C" s32 randS32(s32, s32);
 extern "C" bool IsBossBattle();
 extern "C" s32 InitHeal(Unit*, u32, bool);
@@ -543,7 +543,7 @@ public:
 
         Monster* m = dynaCastMonster(target);
         m->monster_300(true);
-        sub_08073E3C(target, 0x33, 0);
+        sub_08073E3C(target, Status::NoBackSprite, 0);
         // [04 EF][FMT_ARG2] was tricked into turning around!
         ROMStr(0x176).print(Color::Black(), true);
     }
