@@ -202,8 +202,8 @@ Msg StatusMonkeyDanceDef2::fmtStatusMsg(u16 msg) {
 s32 StatusMonkeyDanceDef2::defenseMod() { return -sub_0807066C(this->unit()->defense() * 20, 100); }
 
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/disableAllStatuses__21StatusMonkeyDanceDef2.inc", void disableAllStatuses__21StatusMonkeyDanceDef2());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_a0__21StatusMonkeyDanceDef2.inc", void status_a0__21StatusMonkeyDanceDef2());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_98__21StatusMonkeyDanceDef2.inc", void status_98__21StatusMonkeyDanceDef2());
+extern "C" ASM_FUNC("asm/non_matching/statusImpl/cancelOpposite__21StatusMonkeyDanceDef2.inc", void cancelOpposite__21StatusMonkeyDanceDef2());
+extern "C" ASM_FUNC("asm/non_matching/statusImpl/applyStackStatus__21StatusMonkeyDanceDef2.inc", void applyStackStatus__21StatusMonkeyDanceDef2());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/dt__21StatusMonkeyDanceDef2.inc", void dt__21StatusMonkeyDanceDef2());
 
 Msg StatusMonkeyDanceOff2::fmtStatusMsg(u16 msg) {
@@ -228,21 +228,21 @@ bool StatusMonkeyDanceOff2::disableAllStatuses() {
     return false;
 }
 
-bool StatusMonkeyDanceOff2::status_a0() {
-    if (Status::status_a0() == true) return true;
+bool StatusMonkeyDanceOff2::cancelOpposite() {
+    if (Status::cancelOpposite() == true) return true;
     Unit* unused = this->unit();
 
-    if (this->_1c8(Status::MonkeyDanceOff) == true) return true;
-    if (this->_1c8(Status::OffUpWeak) == true) return true;
+    if (this->dispelStatus(Status::MonkeyDanceOff) == true) return true;
+    if (this->dispelStatus(Status::OffUpWeak) == true) return true;
     return false;
 }
 
-bool StatusMonkeyDanceOff2::status_98() {
-    if (Status::status_98() == true) return true;
+bool StatusMonkeyDanceOff2::applyStackStatus() {
+    if (Status::applyStackStatus() == true) return true;
     Unit* unused = this->unit();
 
-    if (this->_1c0(Status::OffUpMid, Status::OffUpWeak) == true) return true;
-    if (this->_1c0(Status::OffUpStrong, Status::OffUpMid) == true) return true;
+    if (this->replaceStatus(Status::OffUpMid, Status::OffUpWeak) == true) return true;
+    if (this->replaceStatus(Status::OffUpStrong, Status::OffUpMid) == true) return true;
 
     return false;
 }
@@ -302,8 +302,8 @@ Msg StatusMonkeyDanceDef::fmtStatusMsg(u16 msg) {
 s32 StatusMonkeyDanceDef::defenseMod() { return sub_0807066C(this->unit()->defense() * 20, 100); }
 
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/disableAllStatuses__20StatusMonkeyDanceDef.inc", void disableAllStatuses__20StatusMonkeyDanceDef());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_a0__20StatusMonkeyDanceDef.inc", void status_a0__20StatusMonkeyDanceDef());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_98__20StatusMonkeyDanceDef.inc", void status_98__20StatusMonkeyDanceDef());
+extern "C" ASM_FUNC("asm/non_matching/statusImpl/cancelOpposite__20StatusMonkeyDanceDef.inc", void cancelOpposite__20StatusMonkeyDanceDef());
+extern "C" ASM_FUNC("asm/non_matching/statusImpl/applyStackStatus__20StatusMonkeyDanceDef.inc", void applyStackStatus__20StatusMonkeyDanceDef());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/dt__20StatusMonkeyDanceDef.inc", void dt__20StatusMonkeyDanceDef());
 
 Msg StatusMonkeyDanceOff::fmtStatusMsg(u16 msg) {
@@ -328,21 +328,21 @@ bool StatusMonkeyDanceOff::disableAllStatuses() {
     return false;
 }
 
-bool StatusMonkeyDanceOff::status_a0() {
-    if (Status::status_a0() == true) return true;
+bool StatusMonkeyDanceOff::cancelOpposite() {
+    if (Status::cancelOpposite() == true) return true;
     Unit* unused = this->unit();
 
-    if (this->_1c8(Status::MonkeyDanceOff2) == true) return true;
-    if (this->_1c8(Status::OffDownWeak) == true) return true;
+    if (this->dispelStatus(Status::MonkeyDanceOff2) == true) return true;
+    if (this->dispelStatus(Status::OffDownWeak) == true) return true;
     return false;
 }
 
-bool StatusMonkeyDanceOff::status_98() {
-    if (Status::status_98() == true) return true;
+bool StatusMonkeyDanceOff::applyStackStatus() {
+    if (Status::applyStackStatus() == true) return true;
     Unit* unused = this->unit();
 
-    if (this->_1c0(Status::OffDownMid, Status::OffDownWeak) == true) return true;
-    if (this->_1c0(Status::OffDownStrong, Status::OffDownMid) == true) return true;
+    if (this->replaceStatus(Status::OffDownMid, Status::OffDownWeak) == true) return true;
+    if (this->replaceStatus(Status::OffDownStrong, Status::OffDownMid) == true) return true;
 
     return false;
 }
@@ -361,8 +361,8 @@ bool StatusParamsDown::disableAllStatuses() {
     return false;
 }
 
-bool StatusParamsDown::status_90() {
-    if (Status::status_90() == true) return true;
+bool StatusParamsDown::removeConflicting() {
+    if (Status::removeConflicting() == true) return true;
     Unit* u = this->unit();
     
     if (u->hasStatus(Status::MonkeyDanceOff) == true) {
@@ -450,8 +450,8 @@ bool StatusParamsUp::disableAllStatuses() {
     return false;
 }
 
-bool StatusParamsUp::status_90() {
-    if (Status::status_90() == true) return true;
+bool StatusParamsUp::removeConflicting() {
+    if (Status::removeConflicting() == true) return true;
     Unit* u = this->unit();
     
     if (u->hasStatus(Status::MonkeyDanceOff) == true) {
@@ -546,25 +546,25 @@ bool StatusDefUpStrong::disableAllStatuses() {
     return false;
 }
 
-bool StatusDefUpStrong::status_a0() {
-    if (Status::status_a0() == true) return true;
-    if (_1c8(Status::DefDownStrong) == true) return true;
+bool StatusDefUpStrong::cancelOpposite() {
+    if (Status::cancelOpposite() == true) return true;
+    if (dispelStatus(Status::DefDownStrong) == true) return true;
     return false;
 }
 
-bool StatusDefUpStrong::status_98() {
-    if (Status::status_98() == true) return true;
+bool StatusDefUpStrong::applyStackStatus() {
+    if (Status::applyStackStatus() == true) return true;
     Unit* unused = this->unit();
 
-    if (this->_1c0(Status::MonkeyDanceDef, Status::DefUpMid) == true) return true;
-    if (this->_1c0(Status::DefDownWeak, Status::DefUpMid) == true) return true;
-    if (this->_1c0(Status::DefDownMid, Status::DefUpWeak) == true) return true;
+    if (this->replaceStatus(Status::MonkeyDanceDef, Status::DefUpMid) == true) return true;
+    if (this->replaceStatus(Status::DefDownWeak, Status::DefUpMid) == true) return true;
+    if (this->replaceStatus(Status::DefDownMid, Status::DefUpWeak) == true) return true;
 
     return false;
 }
 
-bool StatusDefUpStrong::status_90() {
-    if (Status::status_90() == true) return true;
+bool StatusDefUpStrong::removeConflicting() {
+    if (Status::removeConflicting() == true) return true;
     Unit* u = this->unit();
     
     if (statusWearOff(u, Status::MonkeyDanceDef, false) == true) return false;
@@ -594,22 +594,22 @@ bool StatusDefUpMid::disableAllStatuses() {
     return false;
 }
 
-bool StatusDefUpMid::status_a0() {
-    if (Status::status_a0() == true) return true;
-    if (_1c8(Status::DefDownMid) == true) return true;
+bool StatusDefUpMid::cancelOpposite() {
+    if (Status::cancelOpposite() == true) return true;
+    if (dispelStatus(Status::DefDownMid) == true) return true;
     return false;
 }
 
-bool StatusDefUpMid::status_98() {
-    if (Status::status_98() == true) return true;
+bool StatusDefUpMid::applyStackStatus() {
+    if (Status::applyStackStatus() == true) return true;
     Unit* unused = this->unit();
     
-    if (this->_1c0(Status::MonkeyDanceDef, Status::DefUpStrong) == true) return true;
-    if (this->_1c0(Status::DefUpWeak, Status::DefUpStrong) == true) return true;
-    if (this->_1c0(Status::DefUpMid, Status::DefUpStrong) == true) return true;
-    if (this->_1c0(Status::MonkeyDanceDef, Status::DefUpWeak) == true) return true;
-    if (this->_1c0(Status::DefDownWeak, Status::DefUpWeak) == true) return true;
-    if (this->_1c0(Status::DefDownStrong, Status::DefDownWeak) == true) return true;
+    if (this->replaceStatus(Status::MonkeyDanceDef, Status::DefUpStrong) == true) return true;
+    if (this->replaceStatus(Status::DefUpWeak, Status::DefUpStrong) == true) return true;
+    if (this->replaceStatus(Status::DefUpMid, Status::DefUpStrong) == true) return true;
+    if (this->replaceStatus(Status::MonkeyDanceDef, Status::DefUpWeak) == true) return true;
+    if (this->replaceStatus(Status::DefDownWeak, Status::DefUpWeak) == true) return true;
+    if (this->replaceStatus(Status::DefDownStrong, Status::DefDownWeak) == true) return true;
 
     return false;
 }
@@ -634,23 +634,23 @@ bool StatusDefUpWeak::disableAllStatuses() {
     return false;
 }
 
-bool StatusDefUpWeak::status_a0() {
-    if (Status::status_a0() == true) return true;
+bool StatusDefUpWeak::cancelOpposite() {
+    if (Status::cancelOpposite() == true) return true;
     Unit* unused = this->unit();
-    if (this->_1c8(Status::MonkeyDanceDef2) == true) return true;
-    if (this->_1c8(Status::DefDownWeak) == true) return true;
+    if (this->dispelStatus(Status::MonkeyDanceDef2) == true) return true;
+    if (this->dispelStatus(Status::DefDownWeak) == true) return true;
     return false;
 }
 
-bool StatusDefUpWeak::status_98() {
-    if (Status::status_98() == true) return true;
+bool StatusDefUpWeak::applyStackStatus() {
+    if (Status::applyStackStatus() == true) return true;
     Unit* unused = this->unit();
 
-    if (this->_1c0(Status::MonkeyDanceDef, Status::DefUpMid) == true) return true;
-    if (this->_1c0(Status::DefUpWeak, Status::DefUpMid) == true) return true;
-    if (this->_1c0(Status::DefUpMid, Status::DefUpStrong) == true) return true;
-    if (this->_1c0(Status::DefDownMid, Status::DefDownWeak) == true) return true;
-    if (this->_1c0(Status::DefDownStrong, Status::DefDownMid) == true) return true;
+    if (this->replaceStatus(Status::MonkeyDanceDef, Status::DefUpMid) == true) return true;
+    if (this->replaceStatus(Status::DefUpWeak, Status::DefUpMid) == true) return true;
+    if (this->replaceStatus(Status::DefUpMid, Status::DefUpStrong) == true) return true;
+    if (this->replaceStatus(Status::DefDownMid, Status::DefDownWeak) == true) return true;
+    if (this->replaceStatus(Status::DefDownStrong, Status::DefDownMid) == true) return true;
 
     return false;
 }
@@ -675,25 +675,25 @@ bool StatusOffUpStrong::disableAllStatuses() {
     return false;
 }
 
-bool StatusOffUpStrong::status_a0() {
-    if (Status::status_a0() == true) return true;
-    if (_1c8(Status::OffDownStrong) == true) return true;
+bool StatusOffUpStrong::cancelOpposite() {
+    if (Status::cancelOpposite() == true) return true;
+    if (dispelStatus(Status::OffDownStrong) == true) return true;
     return false;
 }
 
-bool StatusOffUpStrong::status_98() {
-    if (Status::status_98() == true) return true;
+bool StatusOffUpStrong::applyStackStatus() {
+    if (Status::applyStackStatus() == true) return true;
     Unit* unused = this->unit();
 
-    if (this->_1c0(Status::MonkeyDanceOff2, Status::OffUpMid) == true) return true;
-    if (this->_1c0(Status::OffDownWeak, Status::OffUpMid) == true) return true;
-    if (this->_1c0(Status::OffDownMid, Status::OffUpWeak) == true) return true;
+    if (this->replaceStatus(Status::MonkeyDanceOff2, Status::OffUpMid) == true) return true;
+    if (this->replaceStatus(Status::OffDownWeak, Status::OffUpMid) == true) return true;
+    if (this->replaceStatus(Status::OffDownMid, Status::OffUpWeak) == true) return true;
 
     return false;
 }
 
-bool StatusOffUpStrong::status_90() {
-    if (Status::status_90() == true) return true;
+bool StatusOffUpStrong::removeConflicting() {
+    if (Status::removeConflicting() == true) return true;
     Unit* u = this->unit();
     
     if (statusWearOff(u, Status::MonkeyDanceOff, false) == true) return true;
@@ -723,22 +723,22 @@ bool StatusOffUpMid::disableAllStatuses() {
     return false;
 }
 
-bool StatusOffUpMid::status_a0() {
-    if (Status::status_a0() == true) return true;
-    if (_1c8(Status::OffDownMid) == true) return true;
+bool StatusOffUpMid::cancelOpposite() {
+    if (Status::cancelOpposite() == true) return true;
+    if (dispelStatus(Status::OffDownMid) == true) return true;
     return false;
 }
 
-bool StatusOffUpMid::status_98() {
-    if (Status::status_98() == true) return true;
+bool StatusOffUpMid::applyStackStatus() {
+    if (Status::applyStackStatus() == true) return true;
     Unit* unused = this->unit();
 
-    if (this->_1c0(Status::MonkeyDanceOff, Status::OffUpStrong) == true) return true;
-    if (this->_1c0(Status::OffUpWeak, Status::OffUpStrong) == true) return true;
-    if (this->_1c0(Status::OffUpMid, Status::OffUpStrong) == true) return true;
-    if (this->_1c0(Status::MonkeyDanceOff2, Status::OffUpWeak) == true) return true;
-    if (this->_1c0(Status::OffDownWeak, Status::OffUpWeak) == true) return true;
-    if (this->_1c0(Status::OffDownStrong, Status::OffDownWeak) == true) return true;
+    if (this->replaceStatus(Status::MonkeyDanceOff, Status::OffUpStrong) == true) return true;
+    if (this->replaceStatus(Status::OffUpWeak, Status::OffUpStrong) == true) return true;
+    if (this->replaceStatus(Status::OffUpMid, Status::OffUpStrong) == true) return true;
+    if (this->replaceStatus(Status::MonkeyDanceOff2, Status::OffUpWeak) == true) return true;
+    if (this->replaceStatus(Status::OffDownWeak, Status::OffUpWeak) == true) return true;
+    if (this->replaceStatus(Status::OffDownStrong, Status::OffDownWeak) == true) return true;
 
     return false;
 }
@@ -763,23 +763,23 @@ bool StatusOffUpWeak::disableAllStatuses() {
     return false;
 }
 
-bool StatusOffUpWeak::status_a0() {
-    if (Status::status_a0() == true) return true;
+bool StatusOffUpWeak::cancelOpposite() {
+    if (Status::cancelOpposite() == true) return true;
     Unit* unused = this->unit();
-    if (this->_1c8(Status::MonkeyDanceOff2) == true) return true;
-    if (this->_1c8(Status::OffDownWeak) == true) return true;
+    if (this->dispelStatus(Status::MonkeyDanceOff2) == true) return true;
+    if (this->dispelStatus(Status::OffDownWeak) == true) return true;
     return false;
 }
 
-bool StatusOffUpWeak::status_98() {
-    if (Status::status_98() == true) return true;
+bool StatusOffUpWeak::applyStackStatus() {
+    if (Status::applyStackStatus() == true) return true;
     Unit* unused = this->unit();
 
-    if (this->_1c0(Status::MonkeyDanceOff, Status::OffUpMid) == true) return true;
-    if (this->_1c0(Status::OffUpWeak, Status::OffUpMid) == true) return true;
-    if (this->_1c0(Status::OffUpMid, Status::OffUpStrong) == true) return true;
-    if (this->_1c0(Status::OffDownMid, Status::OffDownWeak) == true) return true;
-    if (this->_1c0(Status::OffDownStrong, Status::OffDownMid) == true) return true;
+    if (this->replaceStatus(Status::MonkeyDanceOff, Status::OffUpMid) == true) return true;
+    if (this->replaceStatus(Status::OffUpWeak, Status::OffUpMid) == true) return true;
+    if (this->replaceStatus(Status::OffUpMid, Status::OffUpStrong) == true) return true;
+    if (this->replaceStatus(Status::OffDownMid, Status::OffDownWeak) == true) return true;
+    if (this->replaceStatus(Status::OffDownStrong, Status::OffDownMid) == true) return true;
 
     return false;
 }
@@ -804,25 +804,25 @@ bool StatusDefDownStrong::disableAllStatuses() {
     return false;
 }
 
-bool StatusDefDownStrong::status_a0() {
-    if (Status::status_a0() == true) return true;
-    if (_1c8(Status::DefUpStrong) == true) return true;
+bool StatusDefDownStrong::cancelOpposite() {
+    if (Status::cancelOpposite() == true) return true;
+    if (dispelStatus(Status::DefUpStrong) == true) return true;
     return false;
 }
 
-bool StatusDefDownStrong::status_98() {
-    if (Status::status_98() == true) return true;
+bool StatusDefDownStrong::applyStackStatus() {
+    if (Status::applyStackStatus() == true) return true;
     Unit* unused = this->unit();
 
-    if (this->_1c0(Status::MonkeyDanceDef, Status::DefDownMid) == true) return true;
-    if (this->_1c0(Status::DefUpWeak, Status::DefDownMid) == true) return true;
-    if (this->_1c0(Status::DefUpMid, Status::DefDownWeak) == true) return true;
+    if (this->replaceStatus(Status::MonkeyDanceDef, Status::DefDownMid) == true) return true;
+    if (this->replaceStatus(Status::DefUpWeak, Status::DefDownMid) == true) return true;
+    if (this->replaceStatus(Status::DefUpMid, Status::DefDownWeak) == true) return true;
 
     return false;
 }
 
-bool StatusDefDownStrong::status_90() {
-    if (Status::status_90() == true) return true;
+bool StatusDefDownStrong::removeConflicting() {
+    if (Status::removeConflicting() == true) return true;
     Unit* u = this->unit();
     
     if (statusWearOff(u, Status::MonkeyDanceDef2, false) == true) return true;
@@ -852,24 +852,24 @@ bool StatusDefDownMid::disableAllStatuses() {
     return false;
 }
 
-bool StatusDefDownMid::status_a0() {
-    if (Status::status_a0() == true) return true;
+bool StatusDefDownMid::cancelOpposite() {
+    if (Status::cancelOpposite() == true) return true;
 
-    if (this->_1c8(Status::DefUpMid) == true) return true;
+    if (this->dispelStatus(Status::DefUpMid) == true) return true;
 
     return false;
 }
 
-bool StatusDefDownMid::status_98() {
-    if (Status::status_98() == true) return true;
+bool StatusDefDownMid::applyStackStatus() {
+    if (Status::applyStackStatus() == true) return true;
     Unit* unused = this->unit(); 
     
-    if (this->_1c0(Status::MonkeyDanceDef, Status::DefDownWeak) == true) return true;
-    if (this->_1c0(Status::DefUpWeak, Status::DefDownWeak) == true) return true;
-    if (this->_1c0(Status::DefUpStrong, Status::DefUpWeak) == true) return true;
-    if (this->_1c0(Status::MonkeyDanceDef2, Status::DefDownStrong) == true) return true;
-    if (this->_1c0(Status::DefDownWeak, Status::DefDownStrong) == true) return true;
-    if (this->_1c0(Status::DefDownMid, Status::DefDownStrong) == true) return true;
+    if (this->replaceStatus(Status::MonkeyDanceDef, Status::DefDownWeak) == true) return true;
+    if (this->replaceStatus(Status::DefUpWeak, Status::DefDownWeak) == true) return true;
+    if (this->replaceStatus(Status::DefUpStrong, Status::DefUpWeak) == true) return true;
+    if (this->replaceStatus(Status::MonkeyDanceDef2, Status::DefDownStrong) == true) return true;
+    if (this->replaceStatus(Status::DefDownWeak, Status::DefDownStrong) == true) return true;
+    if (this->replaceStatus(Status::DefDownMid, Status::DefDownStrong) == true) return true;
 
     return false;
 }
@@ -894,23 +894,23 @@ bool StatusDefDownWeak::disableAllStatuses() {
     return false;
 }
 
-bool StatusDefDownWeak::status_a0() {
-    if (Status::status_a0() == true) return true;
+bool StatusDefDownWeak::cancelOpposite() {
+    if (Status::cancelOpposite() == true) return true;
     Unit* unused = this->unit();
-    if (this->_1c8(Status::MonkeyDanceDef) == true) return true;
-    if (this->_1c8(Status::DefUpWeak) == true) return true;
+    if (this->dispelStatus(Status::MonkeyDanceDef) == true) return true;
+    if (this->dispelStatus(Status::DefUpWeak) == true) return true;
     return false;
 }
 
-bool StatusDefDownWeak::status_98() {
-    if (Status::status_98() == true) return true;
+bool StatusDefDownWeak::applyStackStatus() {
+    if (Status::applyStackStatus() == true) return true;
     Unit* unused = this->unit();
 
-    if (this->_1c0(Status::DefUpMid, Status::DefUpWeak) == true) return true;
-    if (this->_1c0(Status::DefUpStrong, Status::DefUpMid) == true) return true;
-    if (this->_1c0(Status::MonkeyDanceDef2, Status::DefDownMid) == true) return true;
-    if (this->_1c0(Status::DefDownWeak, Status::DefDownMid) == true) return true;
-    if (this->_1c0(Status::DefDownMid, Status::DefDownStrong) == true) return true;
+    if (this->replaceStatus(Status::DefUpMid, Status::DefUpWeak) == true) return true;
+    if (this->replaceStatus(Status::DefUpStrong, Status::DefUpMid) == true) return true;
+    if (this->replaceStatus(Status::MonkeyDanceDef2, Status::DefDownMid) == true) return true;
+    if (this->replaceStatus(Status::DefDownWeak, Status::DefDownMid) == true) return true;
+    if (this->replaceStatus(Status::DefDownMid, Status::DefDownStrong) == true) return true;
 
     return false;
 }
@@ -935,25 +935,25 @@ bool StatusOffDownStrong::disableAllStatuses() {
     return false;
 }
 
-bool StatusOffDownStrong::status_a0() {
-    if (Status::status_a0() == true) return true;
-    if (_1c8(Status::OffUpStrong) == true) return true;
+bool StatusOffDownStrong::cancelOpposite() {
+    if (Status::cancelOpposite() == true) return true;
+    if (dispelStatus(Status::OffUpStrong) == true) return true;
     return false;
 }
 
-bool StatusOffDownStrong::status_98() {
-    if (Status::status_98() == true) return true;
+bool StatusOffDownStrong::applyStackStatus() {
+    if (Status::applyStackStatus() == true) return true;
     Unit* unused = this->unit();
 
-    if (this->_1c0(Status::MonkeyDanceOff, Status::OffDownMid) == true) return true;
-    if (this->_1c0(Status::OffUpWeak, Status::OffDownMid) == true) return true;
-    if (this->_1c0(Status::OffUpMid, Status::OffDownWeak) == true) return true;
+    if (this->replaceStatus(Status::MonkeyDanceOff, Status::OffDownMid) == true) return true;
+    if (this->replaceStatus(Status::OffUpWeak, Status::OffDownMid) == true) return true;
+    if (this->replaceStatus(Status::OffUpMid, Status::OffDownWeak) == true) return true;
 
     return false;
 }
 
-bool StatusOffDownStrong::status_90() {
-    if (Status::status_90() == true) return true;
+bool StatusOffDownStrong::removeConflicting() {
+    if (Status::removeConflicting() == true) return true;
     Unit* u = this->unit();
     
     if (statusWearOff(u, Status::MonkeyDanceOff, false) == true) return true;
@@ -983,23 +983,23 @@ bool StatusOffDownMid::disableAllStatuses() {
     return false;
 }
 
-bool StatusOffDownMid::status_a0() {
-    if (Status::status_a0() == true) return true;
+bool StatusOffDownMid::cancelOpposite() {
+    if (Status::cancelOpposite() == true) return true;
     Unit* unused = unit();
-    if (_1c8(Status::OffUpMid) == true) return true;
+    if (dispelStatus(Status::OffUpMid) == true) return true;
     return false;
 }
 
-bool StatusOffDownMid::status_98() {
-    if (Status::status_98() == true) return true;
+bool StatusOffDownMid::applyStackStatus() {
+    if (Status::applyStackStatus() == true) return true;
     Unit* unused = this->unit();
 
-    if (this->_1c0(Status::MonkeyDanceOff, Status::OffDownWeak) == true) return true;
-    if (this->_1c0(Status::OffUpWeak, Status::OffDownWeak) == true) return true;
-    if (this->_1c0(Status::OffUpStrong, Status::OffUpWeak) == true) return true;
-    if (this->_1c0(Status::MonkeyDanceOff, Status::OffDownStrong) == true) return true;
-    if (this->_1c0(Status::OffDownWeak, Status::OffDownStrong) == true) return true;
-    if (this->_1c0(Status::OffDownMid, Status::OffDownStrong) == true) return true;
+    if (this->replaceStatus(Status::MonkeyDanceOff, Status::OffDownWeak) == true) return true;
+    if (this->replaceStatus(Status::OffUpWeak, Status::OffDownWeak) == true) return true;
+    if (this->replaceStatus(Status::OffUpStrong, Status::OffUpWeak) == true) return true;
+    if (this->replaceStatus(Status::MonkeyDanceOff, Status::OffDownStrong) == true) return true;
+    if (this->replaceStatus(Status::OffDownWeak, Status::OffDownStrong) == true) return true;
+    if (this->replaceStatus(Status::OffDownMid, Status::OffDownStrong) == true) return true;
 
     return false;
 }
@@ -1025,23 +1025,23 @@ bool StatusOffDownWeak::disableAllStatuses() {
     return false;
 }
 
-bool StatusOffDownWeak::status_a0() {
-    if (Status::status_a0() == true) return true;
+bool StatusOffDownWeak::cancelOpposite() {
+    if (Status::cancelOpposite() == true) return true;
     Unit* unused = this->unit();
-    if (this->_1c8(Status::MonkeyDanceOff) == true) return true;
-    if (this->_1c8(Status::OffUpWeak) == true) return true;
+    if (this->dispelStatus(Status::MonkeyDanceOff) == true) return true;
+    if (this->dispelStatus(Status::OffUpWeak) == true) return true;
     return false;
 }
 
-bool StatusOffDownWeak::status_98() {
-    if (Status::status_98() == true) return true;
+bool StatusOffDownWeak::applyStackStatus() {
+    if (Status::applyStackStatus() == true) return true;
     Unit* unused = this->unit();
 
-    if (this->_1c0(Status::OffUpMid, Status::OffUpWeak) == true) return true;
-    if (this->_1c0(Status::OffUpStrong, Status::OffUpMid) == true) return true;
-    if (this->_1c0(Status::MonkeyDanceOff, Status::OffDownMid) == true) return true;
-    if (this->_1c0(Status::OffDownWeak, Status::OffDownMid) == true) return true;
-    if (this->_1c0(Status::OffDownMid, Status::OffDownStrong) == true) return true;
+    if (this->replaceStatus(Status::OffUpMid, Status::OffUpWeak) == true) return true;
+    if (this->replaceStatus(Status::OffUpStrong, Status::OffUpMid) == true) return true;
+    if (this->replaceStatus(Status::MonkeyDanceOff, Status::OffDownMid) == true) return true;
+    if (this->replaceStatus(Status::OffDownWeak, Status::OffDownMid) == true) return true;
+    if (this->replaceStatus(Status::OffDownMid, Status::OffDownStrong) == true) return true;
 
     return false;
 }
@@ -1055,8 +1055,8 @@ void StatusDefend::cleanup() {
     Status::cleanup();
 }
 
-bool StatusDefend::status_b0() {
-    if (Status::status_b0() != true) return false;
+bool StatusDefend::applyStatModifiers() {
+    if (Status::applyStatModifiers() != true) return false;
 
     Player* player = (Player*)Goods::tryCastPlayer(this->unit());
     s16 val = player->player_398();
@@ -1099,7 +1099,7 @@ bool StatusCrying::disableAllStatuses() {
 
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/dt__12StatusCrying.inc", void dt__12StatusCrying());
 
-bool StatusParamMod::_1c8(u16 type) {
+bool StatusParamMod::dispelStatus(u16 type) {
     Unit* unit = this->unit();
     if (statusWearOff(unit, type, false) != true) return false;
     
@@ -1108,7 +1108,7 @@ bool StatusParamMod::_1c8(u16 type) {
     return true;
 }
 
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/_1c0__14StatusParamMod.inc", void _1c0__14StatusParamMod());
+extern "C" ASM_FUNC("asm/non_matching/statusImpl/replaceStatus__14StatusParamMod.inc", void replaceStatus__14StatusParamMod());
 
 s32 StatusParamMod::kindnessChange() { return this->unit()->kindness() - this->mKindnessBase; }
 s32 StatusParamMod::speedChange() { return this->unit()->speed() - this->mSpeedBase; }
@@ -1140,8 +1140,8 @@ s32 StatusParamMod::iqMod() { return 0; }
 s32 StatusParamMod::defenseMod() { return 0; }
 s32 StatusParamMod::offenseMod() { return 0; }
 
-bool StatusParamMod::status_b0() {
-    if (Status::status_b0() != true) return false;
+bool StatusParamMod::applyStatModifiers() {
+    if (Status::applyStatModifiers() != true) return false;
     Unit* u = this->unit();
     
     s32 oldOffense = u->offense();
@@ -1277,7 +1277,7 @@ bool StatusForgetful::disableAllStatuses() {
 
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/dt__15StatusForgetful.inc", void dt__15StatusForgetful());
 extern "C" ASM_FUNC("asm/non_matching/statusImpl/cleanup__11StatusSleep.inc", void cleanup__11StatusSleep());
-extern "C" ASM_FUNC("asm/non_matching/statusImpl/status_b0__11StatusSleep.inc", void status_b0__11StatusSleep());
+extern "C" ASM_FUNC("asm/non_matching/statusImpl/applyStatModifiers__11StatusSleep.inc", void applyStatModifiers__11StatusSleep());
 
 bool StatusSleep::disableAllStatuses() {
     if (Status::disableAllStatuses() != true) {
@@ -1376,8 +1376,8 @@ bool StatusPsiCounter::disableAllStatuses() {
     return true;
 }
 
-bool StatusPsiCounter::status_90() {
-    if (Status::status_90() == true) return true;
+bool StatusPsiCounter::removeConflicting() {
+    if (Status::removeConflicting() == true) return true;
 
     Unit* u = this->unit();
 
@@ -1409,8 +1409,8 @@ bool StatusPsiShield::disableAllStatuses() {
     return true;
 }
 
-bool StatusPsiShield::status_90() {
-    if (Status::status_90() == true) return true;
+bool StatusPsiShield::removeConflicting() {
+    if (Status::removeConflicting() == true) return true;
 
     Unit* u = this->unit();
 
@@ -1453,8 +1453,8 @@ bool StatusCounter::disableAllStatuses() {
     return true;
 }
 
-bool StatusCounter::status_90() {
-    if (Status::status_90() == true) return true;
+bool StatusCounter::removeConflicting() {
+    if (Status::removeConflicting() == true) return true;
 
     Unit* u = this->unit();
 
@@ -1486,8 +1486,8 @@ bool StatusShield::disableAllStatuses() {
     return true;
 }
 
-bool StatusShield::status_90() {
-    if (Status::status_90() == true) return true;
+bool StatusShield::removeConflicting() {
+    if (Status::removeConflicting() == true) return true;
 
     Unit* u = this->unit();
 

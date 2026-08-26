@@ -32,11 +32,11 @@ public:
     /* 0x78 */ virtual void onUnitTurnEnd(Unit* unit);
     /* 0x80 */ virtual void onRoundEnd();
     /* 0x88 */ virtual Msg fmtStatusMsg(u16 msg);
-    /* 0x90 */ virtual bool status_90();
-    /* 0x98 */ virtual bool status_98();
-    /* 0xA0 */ virtual bool status_a0();
+    /* 0x90 */ virtual bool removeConflicting();
+    /* 0x98 */ virtual bool applyStackStatus();
+    /* 0xA0 */ virtual bool cancelOpposite();
     /* 0xA8 */ virtual bool disableAllStatuses();
-    /* 0xB0 */ virtual bool status_b0();
+    /* 0xB0 */ virtual bool applyStatModifiers();
     /* 0xB8 */ virtual void cleanup();
     /* 0xC0 */ virtual void setRoundLimit(s32 rounds);
     /* 0xC8 */ virtual void setRounds(s32 rounds);

@@ -30,15 +30,15 @@ Status::Status(u16 type, Unit* unit) {
 
 Status::~Status() {}
 
-bool Status::status_90() {
+bool Status::removeConflicting() {
     return false;
 }
 
-bool Status::status_98() {
+bool Status::applyStackStatus() {
     return false;
 }
 
-bool Status::status_a0() {
+bool Status::cancelOpposite() {
     return false;
 }
 
@@ -46,7 +46,7 @@ bool Status::disableAllStatuses() {
     return false;
 }
 
-bool Status::status_b0() {
+bool Status::applyStatModifiers() {
     return true;
 }
 

@@ -1,8 +1,8 @@
 	.syntax unified
-status_98__21StatusMonkeyDanceDef2:
+applyStackStatus__21StatusMonkeyDanceDef2:
 	push {r4, lr}
 	adds r4, r0, #0
-	bl status_98__6Status
+	bl applyStackStatus__6Status
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1

@@ -1,8 +1,8 @@
 	.syntax unified
-status_b0__11StatusSleep:
+applyStatModifiers__11StatusSleep:
 	push {r4, lr}
 	adds r4, r0, #0
-	bl status_b0__6Status
+	bl applyStatModifiers__6Status
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	cmp r0, #1
