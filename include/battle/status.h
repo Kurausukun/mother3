@@ -38,10 +38,10 @@ public:
     /* 0xA8 */ virtual bool disableAllStatuses();
     /* 0xB0 */ virtual bool status_b0();
     /* 0xB8 */ virtual void cleanup();
-    /* 0xC0 */ virtual void setRoundLimit(u16 rounds);
-    /* 0xC8 */ virtual void setRounds(u16 rounds);
-    /* 0xD0 */ virtual void setTurnLimit(u16 turns);
-    /* 0xD8 */ virtual void setTurns(u16 turns);
+    /* 0xC0 */ virtual void setRoundLimit(s32 rounds);
+    /* 0xC8 */ virtual void setRounds(s32 rounds);
+    /* 0xD0 */ virtual void setTurnLimit(s32 turns);
+    /* 0xD8 */ virtual void setTurns(s32 turns);
     /* 0xE0 */ virtual Type type() const;
     /* 0xE8 */ virtual Unit* unit() const;
     /* 0xF0 */ virtual Msg name() const;

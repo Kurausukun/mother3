@@ -52,19 +52,19 @@ bool Status::status_b0() {
 
 void Status::cleanup() {}
 
-void Status::setRoundLimit(u16 rounds) {
+void Status::setRoundLimit(s32 rounds) {
     mRoundLimit = rounds;
 }
 
-void Status::setRounds(u16 rounds) {
+void Status::setRounds(s32 rounds) {
     mRounds = rounds;
 }
 
-void Status::setTurnLimit(u16 turns) {
+void Status::setTurnLimit(s32 turns) {
     mTurnLimit = turns;
 }
 
-void Status::setTurns(u16 turns) {
+void Status::setTurns(s32 turns) {
     mTurns = turns;
 }
 

@@ -3,8 +3,6 @@
 #include "battle/goods.h"
 #include "enums.h"
 
-#define CAST_U16(x)  ({u16 _r; asm("" : "=r"(_r) : "0"(x)); _r;}) // Workaround for strange bug with the compiler not casting u16
-
 extern "C" s32 randS32(s32, s32);
 bool statusWearOff(Unit*, Status::Type, bool);
 extern "C" void PlayAnimation(u16, Unit*, Unit*);
@@ -96,15 +94,15 @@ StatusFleas::StatusFleas(u16 type, Unit* unit) : StatusParamMod(type, unit) {}
 StatusCrying::StatusCrying(u16 type, Unit* unit) : StatusParamMod(type, unit) {}
 StatusNoBackSprite::StatusNoBackSprite(u16 type, Unit* unit) : Status(type, unit) { setRoundLimit(1); }
 StatusStapled::StatusStapled(u16 type, Unit* unit) : Status(type, unit) {}
-StatusFell::StatusFell(u16 type, Unit* unit) : Status(type, unit) { setTurnLimit(CAST_U16(randS32(1, 2))); }
-StatusDCMC::StatusDCMC(u16 type, Unit* unit) : Status(type, unit) { setTurnLimit(CAST_U16(randS32(2, 3))); }
+StatusFell::StatusFell(u16 type, Unit* unit) : Status(type, unit) { setTurnLimit(randS32(1, 2)); }
+StatusDCMC::StatusDCMC(u16 type, Unit* unit) : Status(type, unit) { setTurnLimit(randS32(2, 3)); }
 StatusDance::StatusDance(u16 type, Unit* unit) : Status(type, unit) {}
 StatusLaughing::StatusLaughing(u16 type, Unit* unit) : Status(type, unit) {}
 StatusApologetic::StatusApologetic(u16 type, Unit* unit) : Status(type, unit) {}
 StatusFrozen::StatusFrozen(u16 type, Unit* unit) : Status(type, unit) {}
 StatusNauseous::StatusNauseous(u16 type, Unit* unit) : Status(type, unit) {}
 StatusForgetful::StatusForgetful(u16 type, Unit* unit) : Status(type, unit) { setRoundLimit(6); }
-StatusSleep::StatusSleep(u16 type, Unit* unit) : Status(type, unit) { setTurnLimit(CAST_U16(randS32(2, 3))); }
+StatusSleep::StatusSleep(u16 type, Unit* unit) : Status(type, unit) { setTurnLimit(randS32(2, 3)); }
 StatusNumb::StatusNumb(u16 type, Unit* unit) : Status(type, unit) { setRoundLimit(6); }
 StatusRefresh::StatusRefresh(u16 type, Unit* unit) : Status(type, unit) {}
 StatusEndure::StatusEndure(u16 type, Unit* unit) : Status(type, unit) {}
@@ -114,7 +112,7 @@ StatusPsiShield::StatusPsiShield(u16 type, Unit* unit) : Status(type, unit) {}
 StatusElectrocuted::StatusElectrocuted(u16 type, Unit* unit) : Status(type, unit) {}
 StatusCounter::StatusCounter(u16 type, Unit* unit) : Status(type, unit) {}
 StatusShield::StatusShield(u16 type, Unit* unit) : Status(type, unit) {}
-StatusOnFire::StatusOnFire(u16 type, Unit* unit) : Status(type, unit) { setTurnLimit(CAST_U16(randS32(1, 2))); }
+StatusOnFire::StatusOnFire(u16 type, Unit* unit) : Status(type, unit) { setTurnLimit(randS32(1, 2)); }
 StatusPoison::StatusPoison(u16 type, Unit* unit) : Status(type, unit) {}
 DefaultStatus::DefaultStatus(u16 type, Unit* unit) : Status(type, unit) {}
 
@@ -846,7 +844,7 @@ Msg StatusDefDownMid::fmtStatusMsg(u16 msg) {
 
 s32 StatusDefDownMid::defenseMod() { return -sub_0807066C(this->unit()->defense() * 30, 100); }
 
-bool StatusDefDownMid::status_a0() {
+bool StatusDefDownMid::disableAllStatuses() {
     if (Status::disableAllStatuses() == true) return true;
     if (this->unit()->hasStatus(Status::DefDownStrong) == true) return true;
     if (this->unit()->hasStatus(Status::ParamsUp) == true) return true;
@@ -854,7 +852,7 @@ bool StatusDefDownMid::status_a0() {
     return false;
 }
 
-bool StatusDefDownMid::status_98() {
+bool StatusDefDownMid::status_a0() {
     if (Status::status_a0() == true) return true;
 
     if (this->_1c8(Status::DefUpMid) == true) return true;
@@ -862,7 +860,7 @@ bool StatusDefDownMid::status_98() {
     return false;
 }
 
-bool StatusDefDownMid::status_90() {
+bool StatusDefDownMid::status_98() {
     if (Status::status_98() == true) return true;
     Unit* unused = this->unit(); 
     
