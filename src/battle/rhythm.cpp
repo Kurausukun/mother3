@@ -307,8 +307,7 @@ s32 RhythmBgm::sub_08074898() {
 
 void RhythmBgm::sub_0807489C() {
     const u32 RHYTHM_LAG_OFFSET = 1;
-    s32 tick = getPlayerClock();
-    field_44 = Remainder(tick + RHYTHM_LAG_OFFSET, 0x18);
+    field_44 = Remainder(getPlayerClock() + RHYTHM_LAG_OFFSET, 0x18);
     field_40++;
 }
 
