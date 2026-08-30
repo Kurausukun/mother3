@@ -198,6 +198,13 @@ typedef struct TileInfo {
     u16 palette_num : 4;  // 0x04 bits 12-15 - Palette number
 } TileInfo;
 
+typedef struct __attribute__((packed, aligned(2))) TileInfoPacked {  // for writing
+    u16 tile_num : 10;    // 0x04 bits 0-9 - Tile/character number
+    u16 priority : 2;     // 0x04 bits 10-11 - Priority vs BG
+    u16 palette_num : 4;  // 0x04 bits 12-15 - Palette number
+} TileInfoPacked;
+static_assert(sizeof(TileInfoPacked) == 2);
+
 /* size: 8 bytes */
 typedef struct OAMEntry {
     // Attribute 0 (0x00-0x01)
@@ -254,6 +261,8 @@ typedef struct Unknown_02016078 {
     /* 0x2C4E / 0x2C9E */ vu8 b;
     /* 0x2C4F / 0x2C9F */ u8 pad_2C4F[0x2C50 - 0x2C4F];
 } Unknown_02016078;
+static_assert(sizeof(((Unknown_02016078*)0)->_0[0]) == 0x2);
+static_assert(sizeof(((Unknown_02016078*)0)->_0) == 0x800);
 
 typedef struct InputState {
     u16 justPressed;
@@ -531,7 +540,9 @@ typedef struct struct_02016028 {
     u8 _4ece_20 : 3;
     u8 _4ecf_1 : 4;
     u8 _4ecf_10 : 1;
-    u8 _4ed0[0x566C - 0x4ED0];
+    u8 _4ed0[0x53B0 - 0x4ED0];
+    u32 _53b0;
+    u8 pad_53b4[0x566C - 0x53b4];
     u8 _566c_1 : 1;
     u8 _566d[0x567c - 0x566D];
     SoundUnkInfo _567c[21];
@@ -547,7 +558,18 @@ typedef struct struct_02016028 {
     u8 _c5b6[0xC61C - 0xC5B6];
     u32 _c61c;
     void* _C620;
-    u8 pad_C624[0x121b6 - 0xC624];
+    u8 pad_C624[0x11C88 - 0xC624];
+    u8 _11C88;
+    u8 _11C89;
+    u8 pad_11C8A;
+    u8 _11C8B;
+    u8 pad_11C8C[0x11C92 - 0x11C8C];
+    u8 _11C92_1 : 1;
+    u8 _11C92_2 : 3;
+    u8 _11C92_10 : 1;
+    u8 _11C92_20 : 1;
+    u8 _11C92_40 : 2;
+    u8 pad_11C93[0x121B6 - 0x11C93];
     u8 _121b6_1 : 1;
     u8 _121b6_2 : 1;
     u8 _121b6_4 : 6;
@@ -811,7 +833,7 @@ typedef struct MapLayerAlphaInfo {
     u8 pad[0xC];
     MapLayerInfo layers[3];
 } MapLayerAlphaInfo;
-               
+
 typedef struct MapGraphicsInfo {
     s16 tileSetIndices[12];
     s16 paletteIndex;

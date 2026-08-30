@@ -36,33 +36,6 @@ public:
 
     void setupStats();
 
-    void object_8(s32 r0) override {}
-    void object_10() override {}
-    void object_18() override {}
-    void object_20() override {}
-    void object_28() override {}
-    u32 object_30() override { return 0; }
-    void object_38() override {
-        num_active_listeners = 0;
-        lifetime = 0;
-    }
-    void object_40() override {
-        num_active_listeners = 0;
-        lifetime = 0;
-    }
-    void object_48() override {
-        num_active_listeners = 0;
-        lifetime = 0;
-    }
-    u32 object_50() override { return 0; }
-    void object_58() override {
-        num_active_listeners = 0;
-        lifetime = 0;
-    }
-    u32 object_60() override { return 0; }
-    void object_68() override {}
-    void object_70() override {}
-
     void* getRTTI() override;
     u8 onTurn() override;
     u16 unit_178() override;
@@ -74,11 +47,29 @@ public:
     u16 missSfx() override;
 
     virtual Action* guest_2c0();
-    virtual bool guest_2c8(Action*);
+    virtual bool guest_2e8(Action* action);
     virtual void onRoundBegin();
     virtual void onRoundEnd();
-    virtual void guest_2e0();
-    virtual bool guest_2e8(Action* action);
+    
+
+    void object_8(s32 r0) override {}
+    void object_10() override {}
+    void object_18() override {}
+    void object_20() override {}
+    void object_28() override {}
+    u32 object_30() override { return 0; }
+    virtual UnitObject_s16r2 imposter_object_38() { return UnitObject_s16r2(); }
+    UnitObject_s16r2 object_38() override { return UnitObject_s16r2(); }
+    void object_40() override {
+        num_active_listeners = 0;
+        lifetime = 0;
+    }
+    u32 object_48() override { return 0; }
+    UnitObject_s16r2 object_50() override { return UnitObject_s16r2(); }
+    u32 object_58() override { return 0; }
+    void object_60() override {}
+    void object_68() override {}
+
 
     u16 mID;
     u16 _fa;

@@ -3,7 +3,7 @@ sub_080446E8:
 	push {r4, r5, r6, r7, lr}
 	sub sp, #8
 	movs r0, #0x79
-	bl getMenuText
+	bl getMenus1Text
 	movs r6, #1
 	rsbs r6, r6, #0
 	movs r5, #0xf
@@ -15,7 +15,7 @@ sub_080446E8:
 	adds r3, r6, #0
 	bl sub_08047CDC
 	movs r0, #0x7a
-	bl getMenuText
+	bl getMenus1Text
 	str r5, [sp]
 	str r4, [sp, #4]
 	movs r1, #0x14
@@ -23,7 +23,7 @@ sub_080446E8:
 	adds r3, r6, #0
 	bl sub_08047CDC
 	movs r0, #0x7b
-	bl getMenuText
+	bl getMenus1Text
 	str r5, [sp]
 	str r4, [sp, #4]
 	movs r1, #0x14

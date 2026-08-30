@@ -10,7 +10,7 @@ sub_080464A8:
 	movs r2, #0x86
 	bl sub_08046974
 	movs r0, #0x82
-	bl getMenuText
+	bl getMenus1Text
 	movs r6, #1
 	rsbs r6, r6, #0
 	movs r5, #0xf
@@ -22,7 +22,7 @@ sub_080464A8:
 	adds r3, r6, #0
 	bl sub_08047CDC
 	movs r0, #3
-	bl getMenuText
+	bl getMenus1Text
 	str r5, [sp]
 	str r4, [sp, #4]
 	movs r1, #0x44
@@ -30,7 +30,7 @@ sub_080464A8:
 	adds r3, r6, #0
 	bl sub_08047CDC
 	movs r0, #4
-	bl getMenuText
+	bl getMenus1Text
 	str r5, [sp]
 	str r4, [sp, #4]
 	movs r1, #0x94

@@ -46,7 +46,7 @@ _0804259A:
 	adds r0, #0x23
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
-	bl getMenuText
+	bl getMenus1Text
 	ldr r1, _0804260C
 	adds r6, r7, r1
 	ldrh r1, [r6]
@@ -109,7 +109,7 @@ _08042622:
 	adds r0, #0x28
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
-	bl getMenuText
+	bl getMenus1Text
 	ldr r5, _08042694
 	adds r6, r7, r5
 	ldrh r1, [r6]
@@ -172,7 +172,7 @@ _080426AA:
 	adds r0, #0x2b
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
-	bl getMenuText
+	bl getMenus1Text
 	ldr r5, _08042744
 	adds r6, r7, r5
 	ldrh r1, [r6]
@@ -250,7 +250,7 @@ _08042750: .4byte gUnknown_0201A210
 _08042754: .4byte gUnknown_020050C0
 _08042758:
 	movs r0, #0x14
-	bl getMenuText
+	bl getMenus1Text
 	movs r3, #1
 	rsbs r3, r3, #0
 	movs r1, #0xf
@@ -284,7 +284,7 @@ _0804278C:
 _08042798: .4byte gUnknown_020050C0
 _0804279C:
 	movs r0, #0x14
-	bl getMenuText
+	bl getMenus1Text
 	movs r3, #1
 	rsbs r3, r3, #0
 	movs r1, #0xf

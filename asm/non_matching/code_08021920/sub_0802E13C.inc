@@ -13,7 +13,7 @@ sub_0802E13C:
 	lsrs r0, r0, #0x10
 	movs r2, #4
 	ldrsh r1, [r5, r2]
-	bl sub_08002FD4
+	bl RemainderNullOnDBZ
 	ldr r2, [r4, #0x2c]
 	ldrh r1, [r5, #2]
 	adds r1, r1, r0

@@ -62,7 +62,7 @@ public:
     virtual s32 hitChance() const;
     virtual s32 critChance() const;
     virtual bool redirectable() const;
-    virtual u16 userAttackSfx() const;
+    virtual u16 userAttackSfx(Unit*) const;
     virtual u16 userCritSfx() const;
     virtual u16 userMissSfx() const;
 

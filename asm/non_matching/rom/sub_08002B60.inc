@@ -12,7 +12,7 @@ sub_08002B60:
 	ldrh r0, [r4]
 	cmp r0, r1
 	blo _08002B82
-	bl sub_08002FD4
+	bl RemainderNullOnDBZ
 	strh r0, [r4]
 _08002B82:
 	adds r3, r5, #2

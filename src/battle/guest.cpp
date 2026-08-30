@@ -51,7 +51,7 @@ u8 Guest::onTurn() {
         return false;
     }
 
-    if (guest_2c8(tmp) != 1) {
+    if (guest_2e8(tmp) != 1) {
         delete tmp;
         return false;
     }

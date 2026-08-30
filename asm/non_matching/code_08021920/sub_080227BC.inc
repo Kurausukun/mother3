@@ -135,7 +135,7 @@ _080228B4:
 	ldr r0, [r0]
 	ldr r2, _080228F0
 	ldrh r1, [r2]
-	bl sub_08002FD4
+	bl RemainderNullOnDBZ
 	cmp r0, #0
 	bne _080228FC
 	ldrh r0, [r4]

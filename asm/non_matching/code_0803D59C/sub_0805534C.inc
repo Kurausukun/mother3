@@ -162,7 +162,7 @@ _08055474:
 _0805547E:
 	movs r0, #0xa9
 _08055480:
-	bl getMenuText
+	bl getMenus1Text
 	pop {r4, r5, r6}
 	pop {r1}
 	bx r1

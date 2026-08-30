@@ -38,7 +38,7 @@ _08044EC2:
 	cmp r4, #0
 	beq _08044EE8
 	movs r0, #0xb4
-	bl getMenuText
+	bl getMenus1Text
 	adds r1, r0, #0
 	ldr r2, _08044EE4
 	adds r0, r7, r2
@@ -49,7 +49,7 @@ _08044EE4: .4byte 0x000044F0
 _08044EE8:
 	movs r0, #0xb6
 _08044EEA:
-	bl getMenuText
+	bl getMenus1Text
 	adds r1, r0, #0
 _08044EF0:
 	adds r0, r1, #0

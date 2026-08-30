@@ -304,7 +304,7 @@ _08043FF4:
 	movs r3, #3
 	bl sub_08046BA8
 	movs r0, #0x52
-	bl getMenuText
+	bl getMenus1Text
 	movs r4, #1
 	rsbs r4, r4, #0
 	mov r2, sl
@@ -315,7 +315,7 @@ _08043FF4:
 	adds r3, r4, #0
 	bl sub_08047CDC
 	movs r0, #0x54
-	bl getMenuText
+	bl getMenus1Text
 	mov r1, sl
 	str r1, [sp]
 	str r1, [sp, #4]
@@ -324,7 +324,7 @@ _08043FF4:
 	adds r3, r4, #0
 	bl sub_08047CDC
 	movs r0, #0x53
-	bl getMenuText
+	bl getMenus1Text
 	mov r2, sl
 	str r2, [sp]
 	str r2, [sp, #4]
@@ -333,7 +333,7 @@ _08043FF4:
 	adds r3, r4, #0
 	bl sub_08047CDC
 	movs r0, #0x55
-	bl getMenuText
+	bl getMenus1Text
 	mov r1, sl
 	str r1, [sp]
 	str r1, [sp, #4]
@@ -342,7 +342,7 @@ _08043FF4:
 	adds r3, r4, #0
 	bl sub_08047CDC
 	movs r0, #0x56
-	bl getMenuText
+	bl getMenus1Text
 	mov r2, sl
 	str r2, [sp]
 	str r2, [sp, #4]

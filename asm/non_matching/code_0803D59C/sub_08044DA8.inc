@@ -56,7 +56,7 @@ _08044E14:
 	beq _08044E30
 	movs r0, #0xaf
 _08044E22:
-	bl getMenuText
+	bl getMenus1Text
 	adds r4, r0, #0
 	b _08044E70
 	.align 2, 0

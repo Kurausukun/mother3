@@ -26,7 +26,7 @@ sub_08018880:
 _080188AC: .4byte gSomeBlend
 _080188B0:
 	adds r1, r6, #1
-	bl sub_08002FD4
+	bl RemainderNullOnDBZ
 	lsls r0, r0, #0x10
 	lsrs r7, r0, #0x10
 	ldr r0, _080188DC

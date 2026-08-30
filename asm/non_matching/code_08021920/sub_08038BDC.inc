@@ -241,7 +241,7 @@ _08038DB0:
 _08038DD6:
 	ldr r0, [sp, #8]
 	movs r1, #4
-	bl sub_08002FD4
+	bl RemainderNullOnDBZ
 	lsls r0, r0, #0x10
 	lsrs r4, r0, #0x10
 	cmp r4, #3

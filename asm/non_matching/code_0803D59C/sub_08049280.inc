@@ -9,7 +9,7 @@ sub_08049280:
 	bl Divide
 	adds r5, r0, #0
 	movs r1, #0x22
-	bl sub_08002FD4
+	bl RemainderNullOnDBZ
 	lsls r1, r0, #1
 	adds r1, r1, r0
 	lsls r1, r1, #2

@@ -21,7 +21,7 @@ sub_0802F3B8:
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	adds r1, r4, #0
-	bl sub_08002FD4
+	bl RemainderNullOnDBZ
 	ldr r3, [r5, #0x2c]
 	adds r1, r5, #0
 	adds r1, #0xc3

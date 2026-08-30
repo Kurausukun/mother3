@@ -20,7 +20,7 @@ extern "C" BattleFader* sub_080725A8() {
     return BattleManager::get()->battle_150();
 }
 
-extern "C" s32 sub_080725C8() {
+extern "C" vt_09F80770* sub_080725C8() {
     return BattleManager::get()->battle_158();
 }
 

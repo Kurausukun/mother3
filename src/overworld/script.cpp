@@ -27,7 +27,7 @@ extern void sub_08026610(u8);
 extern void sub_08013EB8();
 extern void sub_08033548(u8);
 extern void sub_080274AC(s32, u16);
-extern u16 sub_08002FD4(u16, s32);
+extern u16 RemainderNullOnDBZ(u16, s32);
 extern s32 sub_08002474(s32, s32, s32);
 extern void sub_080272F4(u16, u16, u16);
 extern s32 sub_08022354(s32);
@@ -54,215 +54,254 @@ extern s32 getMapPaletteTable(u16);   /* extern */
 extern void sub_08027904();
 extern void sub_080334D0(u8, u16);
 
-// not functionally equivalent
-NONMATCH("asm/non_matching/script/exec_cmd.inc", void exec_cmd(void* script, u16* unk)) {
-    void* v1 = script;
-    void* v2 = script;
-    u32 argc;
-    u32 tmp;
+#define SCRIPT_ARG_BYTE(arg) (((u8*)&(arg))[0])
+#define SCRIPT_ARG_IMM16(arg) ((u16)((arg) >> 8))
+#define SCRIPT_ARG_ADDR24(arg) ((u32)(arg) >> 8)
 
-    union {
-        struct {
-            s32 val;
-        } onearg;
-        struct {
-            u8 u8val;
-            u16 u16val;
-        } twoarg;
-        s32 raw;
-    };
+void exec_cmd(void* script, u16* subroutine, u16 depricated_arg) {
+    u32 tmp;  // Unified temp for all switch cases R4
+    u16 exec_check[2];
+    exec_check[0] = depricated_arg;
 
     if (gGame.state_10) {
-        v1 = sub_08027E60();
-        v2 = gGame._84c0;
+        script = sub_08027E60();
+    } else {
+        gGame._84c0 = script;
     }
-    gGame._84c0 = v2;
-    gGame._9470 = unk;
+    gGame._9470 = subroutine;
+    // needs to be halfword in sp 0 and bool exec_check[1] in sp 2
+    s32 scriptArg;
+    u16 sp = gGame.sp;         // r5
+    s32* stack = gGame.stack;  // r6
+    u16* registers = gGame.registers;
+    u16* tmp_ptr = &exec_check[1];
+    *tmp_ptr = 0;
+    u16* pFlag = tmp_ptr;
 
-    u16 sp = gGame.sp;
-    bool ok = false;
-    do {
-        gGame.script_pc = sub_08021878(v2, &onearg.val, unk);
+    while (!*pFlag) {
+        gGame.script_pc = (u8*)sub_08021878(script, &scriptArg, subroutine);
+
         switch (*gGame.script_pc) {
-        case 0x0:
-            gGame.stack[sp] = gGame.stack[gGame.registers[twoarg.u8val] + (u16)(raw >> 8)];
+            using namespace ScriptCoreOperations;
+        case FRAME2STACK: {
+            stack[sp] = stack[registers[SCRIPT_ARG_BYTE(scriptArg)] + SCRIPT_ARG_IMM16(scriptArg)];
             sp++;
             break;
-        case 0x1:
-            gGame.stack[sp] = raw;
+        }
+        case PUSH_IMM: {
+            stack[sp] = scriptArg;
             sp++;
             break;
-        case 0x2:
-            gGame.stack[sp] = gGame.registers[twoarg.u8val] + (u16)(raw >> 8);
+        }
+        case FRAME_ADDR: {
+            stack[sp] = registers[SCRIPT_ARG_BYTE(scriptArg)] + SCRIPT_ARG_IMM16(scriptArg);
             sp++;
             break;
-        case 0x3:
+        }
+        case STACK2FRAME: {
             sp--;
-            gGame.stack[gGame.registers[twoarg.u8val] + (u16)(raw >> 8)] = gGame.stack[sp];
+            stack[registers[SCRIPT_ARG_BYTE(scriptArg)] + SCRIPT_ARG_IMM16(scriptArg)] = stack[sp];
             break;
-        case 0x4:
-            gGame.state_40 = 0;
+        }
+        case EXTENDED: {
             gGame.sp = sp;
-            argc = sub_08021920((u16)(raw >> 8));
-            ok = exec_extended((u16)(raw >> 8), &gGame.stack[sp - 1]);
+            gGame.state_40 = 0;
+            u32 argc = (u16)sub_08021920(SCRIPT_ARG_IMM16(scriptArg));
+            *pFlag = exec_extended(SCRIPT_ARG_IMM16(scriptArg), &stack[sp - 1]);
             if (gGame.state_20) {
                 return;
             }
-            if (!gGame.state_40) {
-                u32 temp;
-                u32 x;
+            if (gGame.state_40 == 0) {
+                vu16 x;
                 if (gGame.sp != sp) {
-                    x = 1;
-                    sp = gGame.sp - 1;
-                    temp = gGame.stack[sp];
+                    sp = gGame.sp;
+                    x = true;
+                    sp--;
+                    tmp = stack[sp];
                 } else {
-                    x = 0;
-                    temp = 0;
+                    x = false;
+                    tmp = 0;
                 }
                 sp -= argc;
                 if (x) {
-                    gGame.stack[sp] = temp;
+                    stack[sp] = tmp;
                     sp++;
                 }
             }
             break;
-        case 0x5:
+        }
+        case CALLF: {
             gGame.state_10 = 1;
-            v2 = sub_08027E60();
-            goto CASE_7;
-            // gGame.stack[sp] = gGame.registers[raw - 19];
-            // gGame.stack[sp + 1] = *unk;
-            // gGame.registers[raw - 19] = sp;
-            // *unk = (u16)(raw >> 8);
+            script = sub_08027E60();
+            tmp = SCRIPT_ARG_BYTE(scriptArg) + 1;
+            stack[sp] = registers[tmp];
+            stack[sp + 1] = *subroutine;
+            registers[tmp] = sp;
+            *subroutine = ((u32)scriptArg) >> 8;
             break;
-        case 0x6:
+        }
+        case RETF: {
             gGame.state_10 = 0;
-            tmp = gGame.stack[(u16)(sp - 1)];
-            sp = gGame.registers[twoarg.u8val];
-            gGame.registers[twoarg.u8val] = gGame.stack[sp];
-            *unk = gGame.stack[sp];
-            sp -= (u16)((u32)raw >> 8);
-            gGame.stack[sp] = tmp;
+            tmp = stack[(u16)(sp - 1)];
+            sp = registers[SCRIPT_ARG_BYTE(scriptArg)];
+            registers[SCRIPT_ARG_BYTE(scriptArg)] = stack[sp];
+            *subroutine = stack[sp + 1];
+            sp -= SCRIPT_ARG_ADDR24(scriptArg);
+            stack[sp] = tmp;
             sp++;
-            v2 = gGame._84c0;
+            script = gGame._84c0;
             break;
-        case 0x7:
-        CASE_7:
-            gGame.stack[sp] = gGame.registers[raw - 19];
-            gGame.stack[sp + 1] = *unk;
-            gGame.registers[raw - 19] = sp;
-            *unk = (u16)(raw >> 8);
+        }
+        case CALL: {
+            tmp = SCRIPT_ARG_BYTE(scriptArg) + 1;
+            stack[sp] = registers[tmp];
+            stack[sp + 1] = *subroutine;
+            registers[tmp] = sp;
+            *subroutine = ((u32)scriptArg) >> 8;
             break;
-        case 0x8:
-            tmp = gGame.stack[sp - 1];
-            sp = gGame.registers[twoarg.u8val];
-            gGame.registers[twoarg.u8val] = gGame.stack[sp];
-            *unk = gGame.stack[sp + 1];
-            sp -= (u16)(raw >> 8);
-            gGame.stack[sp] = tmp;
+        }
+        case RET: {
+            tmp = stack[--sp];
+            sp = registers[SCRIPT_ARG_BYTE(scriptArg)];
+            registers[SCRIPT_ARG_BYTE(scriptArg)] = stack[sp];
+            u32 SavedNextStk = stack[sp + 1];
+            *subroutine = (u16)SavedNextStk;
+            sp -= SCRIPT_ARG_ADDR24(scriptArg);
+            stack[sp] = tmp;
             sp++;
-            if (gGame.stack[sp + 1] == 0) {
-                ok = 1;
+            if ((u16)SavedNextStk == 0) {
+                *pFlag = true;
                 sub_0801BF18();
             }
             break;
-        case 0x9:
-            ok = 1;
+        }
+        case END: {
+            *pFlag = true;
             sub_0801BF18();
             break;
-        case 0xA:
-            *(u16*)&gGame.stack[1000] = raw;
+        }
+        case FRAME_PUSH: {
+            registers[1] = scriptArg;
             break;
-        case 0xB:
-            sp += raw;
+        }
+        case SP_ALLOC: {
+            sp += scriptArg;
             break;
-        case 0xC:
-            *unk = raw >> 8;
+        }
+        case JUMP: {
+            *subroutine = SCRIPT_ARG_ADDR24(scriptArg);
             break;
-        case 0xD:
+        }
+        case JUMP_IF: {
             sp--;
-            if (gGame.stack[sp] == 0) {
-                *unk = raw >> 8;
-            }
-            break;
-        case 0xE:
-            switch (raw) {
-            case 0:
-                gGame.stack[sp - 1] = -gGame.stack[sp - 1];
-                break;
-            case 1:
-                sp--;
-                gGame.stack[sp - 1] += gGame.stack[sp];
-                break;
-            case 2:
-                sp--;
-                gGame.stack[sp - 1] -= gGame.stack[sp];
-                break;
-            case 3:
-                sp--;
-                gGame.stack[sp - 1] *= gGame.stack[sp];
-                break;
-            case 4:
-                sp--;
-                gGame.stack[sp - 1] /= gGame.stack[sp];
-                break;
-            case 5:
-                sp--;
-                gGame.stack[sp - 1] %= gGame.stack[sp];
-                break;
-            case 6:
-                gGame.stack[sp - 1]++;
-                break;
-            case 7:
-                gGame.stack[sp - 1]--;
-                break;
-            case 8:
-                sp--;
-                gGame.stack[sp - 1] &= gGame.stack[sp];
-                break;
-            case 9:
-                sp--;
-                gGame.stack[sp - 1] |= gGame.stack[sp];
-                break;
-            case 0xA:
-                sp--;
-                gGame.stack[sp - 1] = gGame.stack[sp - 1] == gGame.stack[sp];
-                break;
-            case 0xB:
-                sp--;
-                gGame.stack[sp - 1] = gGame.stack[sp - 1] != gGame.stack[sp];
-                break;
-            case 0xC:
-                sp--;
-                gGame.stack[sp - 1] = gGame.stack[sp - 1] < gGame.stack[sp];
-                break;
-            case 0xD:
-                sp--;
-                gGame.stack[sp - 1] = gGame.stack[sp] > gGame.stack[sp - 1];
-                break;
-            case 0xE:
-                sp--;
-                gGame.stack[sp - 1] = gGame.stack[sp - 1] <= gGame.stack[sp];
-                break;
-            case 0xF:
-                sp--;
-                gGame.stack[sp - 1] = gGame.stack[sp] <= gGame.stack[sp - 1];
-                break;
-            case 0x10:
-                gGame.stack[sp - 1] = gGame.stack[sp];
-                sp++;
-                break;
-            case 0x11:
-            case 0x12:
-                sp--;
-                break;
+            if (stack[sp] == 0) {
+                *subroutine = SCRIPT_ARG_ADDR24(scriptArg);
             }
             break;
         }
-    } while (!ok);
+        case MATH: {
+            switch (scriptArg) {
+            case NEGATIVE: {
+                stack[sp - 1] = -stack[sp - 1];
+                break;
+            }
+            case ADD: {
+                sp--;
+                stack[sp - 1] += stack[sp];
+                break;
+            }
+            case SUBTRACT: {
+                sp--;
+                stack[sp - 1] -= stack[sp];
+                break;
+            }
+            case MULTIPLY: {
+                sp--;
+                stack[sp - 1] *= stack[sp];
+                break;
+            }
+            case DIVIDE: {  // 0x404
+                sp--;
+                stack[sp - 1] /= stack[sp];
+                break;
+            }
+            case AND: {
+                sp--;
+                stack[sp - 1] &= stack[sp];
+                break;
+            }
+            case OR: {  // 0x432
+
+                sp--;
+                stack[sp - 1] |= stack[sp];
+                break;
+            }
+            case MODULO: {
+                sp--;  // 0x448
+                stack[sp - 1] %= stack[sp];
+                break;
+            }
+            case INCREMENT: {
+                stack[sp - 1]++;
+                break;
+            }
+            case DECREMENT: {  // 0x46e
+                stack[sp - 1]--;
+                break;
+            }
+            case IS_EQUAL: {
+                sp--;
+                stack[sp - 1] = stack[sp - 1] == stack[sp];
+                break;
+            }
+            case IS_NOT_EQUAL: {
+                sp--;
+                stack[sp - 1] = stack[sp - 1] != stack[sp];
+                break;
+            }
+            case IS_LESS_THAN: {
+                sp--;
+                stack[sp - 1] = stack[sp - 1] < stack[sp];
+                break;
+            }
+            case IS_GREATER_THAN: {
+                sp--;
+                stack[sp - 1] = stack[sp - 1] > stack[sp];
+                break;
+            }
+            case IS_LESS_THAN_OR_EQUAL: {
+                sp--;
+                stack[sp - 1] = stack[sp - 1] <= stack[sp];
+                break;
+            }
+            case IS_GREATER_THAN_OR_EQUAL: {
+                sp--;
+                stack[sp - 1] = stack[sp - 1] >= stack[sp];
+                break;
+            }
+            case COPY: {
+                stack[sp] = stack[sp - 1];
+                sp++;
+                break;
+            }
+            case POP_NOOP: {
+                sp--;
+                break;
+            }
+            case POP_NOOP2: {
+                sp--;
+                break;
+            }
+            case NOOP: {
+            }
+            }
+            break;
+        }
+        }
+    }
+    // needs to be two 16 bit values in stack 0 and 2
     gGame.sp = sp;
 }
-END_NONMATCH
 
 // verify if function name is accurate
 inline void scriptstack_pop() {
@@ -338,7 +377,7 @@ u16 cmd_04(s32* sp) {
         scriptstack_push(0);
     return 0;
 }
-
+// Might be wait key press.
 u16 cmd_05(s32* sp) {
     s32 temp;
 
@@ -5302,7 +5341,7 @@ extern "C" s32 cmd_AD(s32* sp) {
 
 extern "C" s32 cmd_AE(s32* sp) {
     s32 a = scriptstack_peek(sp, 0);
-    scriptstack_push(sub_08002FD4(sub_080031E0(), a));
+    scriptstack_push(RemainderNullOnDBZ(sub_080031E0(), a));
     return 0;
 }
 
@@ -5320,7 +5359,30 @@ extern "C" s32 cmd_B1() {
     return 0;
 }
 
-extern "C" ASM_FUNC("asm/non_matching/script/sub_08021878.inc", u8* sub_08021878(void* r0, s32* r1, u16* r2));
+extern "C" s32* sub_08021878(void* script, s32* scriptArg, u16* subroutine) {
+    typedef struct byter4 {
+        u8 unk0;
+        u8 unk1;
+        u8 unk2;
+        u8 unk3;
+    } byter4;
+
+    byter4* argView = (byter4*)scriptArg;
+    byter4* scriptCommand = (byter4*)script + *subroutine;
+
+    argView->unk0 = scriptCommand->unk1;
+    argView->unk1 = scriptCommand->unk2;
+    argView->unk2 = scriptCommand->unk3;
+
+    if (scriptCommand->unk3 & 0x80) {
+        argView->unk3 = 0xFF;
+    } else {
+        argView->unk3 = 0x00;
+    }
+
+    ++*subroutine;
+    return (s32*)scriptCommand;
+}
 
 extern "C" void scriptstack_push_eq(u32 r0, u32 r1) {
     if (r0 == r1) {

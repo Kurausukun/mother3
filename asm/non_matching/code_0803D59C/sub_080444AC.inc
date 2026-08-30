@@ -26,7 +26,7 @@ _080444D4:
 	adds r0, r0, r1
 	ldr r0, [r0]
 	movs r1, #0x5a
-	bl sub_08002FD4
+	bl RemainderNullOnDBZ
 	cmp r0, #0x3b
 	bgt _08044504
 	ldr r0, _08044500

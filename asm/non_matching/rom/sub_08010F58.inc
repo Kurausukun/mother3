@@ -47,7 +47,7 @@ sub_08010F58:
 	bne _08010FC8
 _08010FB6:
 	adds r0, r6, #0
-	bl sub_08002FD4
+	bl RemainderNullOnDBZ
 	lsls r0, r0, #0x10
 	lsrs r6, r0, #0x10
 	b _08010FCE
@@ -131,7 +131,7 @@ _08011042:
 _08011058:
 	adds r0, r1, #0
 	ldr r1, [sp, #0x18]
-	bl sub_08002FD4
+	bl RemainderNullOnDBZ
 	adds r1, r0, #0
 	lsls r1, r1, #0x10
 	asrs r1, r1, #0x10
