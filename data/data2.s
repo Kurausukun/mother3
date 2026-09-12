@@ -644,15 +644,15 @@ callback_status_roundBeginCallback__FP6Status:
     .4byte 0xFFFF0000
     .4byte status_roundBeginCallback__FP6Status+1
 
-    .global callback_sub_080829F4
-callback_sub_080829F4:
+    .global callback_status_unitTurnBeginCallback__FP6StatusR13UnitTurnBegin
+callback_status_unitTurnBeginCallback__FP6StatusR13UnitTurnBegin:
     .4byte 0xFFFF0000
-    .4byte sub_080829F4+1
+    .4byte status_unitTurnBeginCallback__FP6StatusR13UnitTurnBegin+1
 
-    .global callback_sub_08082AA0
-callback_sub_08082AA0:
+    .global callback_status_unitTurnEndCallback__FP6StatusR11UnitTurnEnd
+callback_status_unitTurnEndCallback__FP6StatusR11UnitTurnEnd:
     .4byte 0xFFFF0000
-    .4byte sub_08082AA0+1
+    .4byte status_unitTurnEndCallback__FP6StatusR11UnitTurnEnd+1
 
     .global callback_status_roundEndCallback__FP6Status
 callback_status_roundEndCallback__FP6Status:
