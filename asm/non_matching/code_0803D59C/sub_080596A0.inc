@@ -142,7 +142,7 @@ _08059798:
 	adds r0, r4, r1
 	movs r1, #0x80
 	lsls r1, r1, #5
-	bl memclear
+	bl CpuMemClear
 	ldr r0, _080597E0
 	adds r4, r4, r0
 	ldrh r0, [r4]
@@ -162,7 +162,7 @@ _080597E4:
 	adds r0, r4, #0
 	movs r2, #0xe
 	movs r3, #0x40
-	bl sub_0800160C
+	bl CpuCopyPaletteToGfxBuffer
 	subs r4, #0x50
 	ldrh r0, [r5, #6]
 	ldrh r1, [r4, #0x1a]
@@ -172,6 +172,6 @@ _080597FC:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08059804: .4byte gUnknown_02016078
+_08059804: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _08059808: .4byte 0x00004244
 	.syntax divided

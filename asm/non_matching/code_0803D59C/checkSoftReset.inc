@@ -7,7 +7,7 @@ checkSoftReset:
 	cmp r0, #0
 	bne _0805981E
 	adds r0, r1, #0
-	bl sub_080016E4
+	bl CheckSoftResetKeys
 _0805981E:
 	pop {r0}
 	bx r0

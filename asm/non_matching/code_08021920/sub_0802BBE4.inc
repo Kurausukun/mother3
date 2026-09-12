@@ -875,7 +875,7 @@ _0802C2AC:
 _0802C2C6:
 	ldr r0, [r7, #0x2c]
 	movs r1, #8
-	bl memclear
+	bl CpuMemClear
 	mov r6, sl
 	ldrb r0, [r6, #0x12]
 	lsls r0, r0, #4

@@ -9,7 +9,7 @@ sub_08057F74:
 	cmp r0, #2
 	bls _08057F8A
 	adds r0, r1, #0
-	bl sub_080016E4
+	bl CheckSoftResetKeys
 _08057F8A:
 	pop {r0}
 	bx r0

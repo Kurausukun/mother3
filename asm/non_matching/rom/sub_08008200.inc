@@ -29,5 +29,5 @@ sub_08008200:
 	bx r0
 	.align 2, 0
 _0800823C: .4byte gMiscGfx
-_08008240: .4byte gUnknown_02016078
+_08008240: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 	.syntax divided

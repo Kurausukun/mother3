@@ -103,5 +103,5 @@ _0804AAE8:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0804AAFC: .4byte gUnknown_02016078
+_0804AAFC: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 	.syntax divided

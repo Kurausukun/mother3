@@ -41,7 +41,7 @@ _0804D1C4:
 	ldr r1, [r1]
 	movs r2, #0xe4
 	lsls r2, r2, #1
-	bl sub_08001A14
+	bl Dma3Copy
 	ldr r2, _0804D234
 	adds r0, r2, #0
 	adds r0, #0x60

@@ -23,7 +23,7 @@ sub_08051C74:
 	movs r1, #0x80
 	lsls r1, r1, #5
 	adds r0, r6, #0
-	bl memclear
+	bl CpuMemClear
 	ldr r4, _08051CEC
 	adds r0, r4, #0
 	adds r1, r6, #0

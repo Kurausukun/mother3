@@ -17,7 +17,7 @@ sub_0800724C:
 	ldr r1, _0800727C
 	movs r2, #0x80
 	lsls r2, r2, #5
-	bl sub_08001A94
+	bl Dma0Copy
 	b _0800728C
 	.align 2, 0
 _08007274: .4byte gGame
@@ -28,7 +28,7 @@ _08007280:
 	movs r2, #0x80
 	lsls r2, r2, #4
 	adds r0, r5, #0
-	bl sub_08001A14
+	bl Dma3Copy
 _0800728C:
 	ldr r2, _08007300
 	adds r7, r5, r2
@@ -39,7 +39,7 @@ _0800728C:
 	lsls r2, r2, #4
 	adds r0, r5, r2
 	ldr r1, _08007304
-	bl sub_08001A14
+	bl Dma3Copy
 _080072A2:
 	ldr r0, _08007308
 	adds r6, r5, r0
@@ -52,7 +52,7 @@ _080072A2:
 	ldr r1, _0800730C
 	movs r2, #0x80
 	lsls r2, r2, #4
-	bl sub_08001A14
+	bl Dma3Copy
 _080072BC:
 	ldr r2, _08007310
 	adds r4, r5, r2
@@ -65,7 +65,7 @@ _080072BC:
 	ldr r1, _08007314
 	movs r2, #0x80
 	lsls r2, r2, #4
-	bl sub_08001A14
+	bl Dma3Copy
 _080072D6:
 	ldrh r0, [r4]
 	movs r0, #0

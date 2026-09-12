@@ -126,7 +126,7 @@ _08058F4A:
 	adds r0, r4, #0
 	movs r2, #0
 	adds r3, r5, #0
-	bl sub_0800160C
+	bl CpuCopyPaletteToGfxBuffer
 	movs r0, #0x9c
 	lsls r0, r0, #6
 	adds r1, r4, r0
@@ -147,6 +147,6 @@ _08058F4A:
 	bx r0
 	.align 2, 0
 _08058FA0: .4byte gUnknown_09C5FD2C
-_08058FA4: .4byte gUnknown_02016078
+_08058FA4: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _08058FA8: .4byte 0x00002C46
 	.syntax divided

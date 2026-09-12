@@ -17,7 +17,7 @@ sub_0805A520:
 	bl sub_080013D0
 	adds r0, r4, #0
 	adds r0, #0x50
-	bl sub_08001454
+	bl DmaClearGraphicsBuffer
 	ldr r0, _0805A564
 	adds r4, r4, r0
 	adds r0, r4, #0

@@ -52,14 +52,14 @@ _08046E10:
 	adds r1, r0, r4
 	b _08046E46
 	.align 2, 0
-_08046E18: .4byte gUnknown_02016078
+_08046E18: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _08046E1C: .4byte 0x000041F4
 _08046E20:
 	ldr r0, _08046E28
 	ldr r2, _08046E2C
 	b _08046E44
 	.align 2, 0
-_08046E28: .4byte gUnknown_02016078
+_08046E28: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _08046E2C: .4byte 0x000041FC
 _08046E30:
 	ldr r0, _08046E38
@@ -67,7 +67,7 @@ _08046E30:
 	adds r1, r0, r4
 	b _08046E46
 	.align 2, 0
-_08046E38: .4byte gUnknown_02016078
+_08046E38: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _08046E3C: .4byte 0x00004204
 _08046E40:
 	ldr r0, _08046E50
@@ -80,7 +80,7 @@ _08046E46:
 	bl sub_080012BC
 	b _08046E6E
 	.align 2, 0
-_08046E50: .4byte gUnknown_02016078
+_08046E50: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _08046E54: .4byte 0x000041EC
 _08046E58:
 	ldr r0, _08046EA0
@@ -119,7 +119,7 @@ _08046E6E:
 	b _08046EE0
 	.align 2, 0
 _08046EA0: .4byte gUnknown_02004100
-_08046EA4: .4byte gUnknown_02016078
+_08046EA4: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _08046EA8: .4byte 0x000041EC
 _08046EAC: .4byte gSomeBlend
 _08046EB0: .4byte 0x000041C6

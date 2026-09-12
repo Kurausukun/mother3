@@ -24,7 +24,7 @@ sub_08050458:
 	movs r2, #1
 	rsbs r2, r2, #0
 	movs r1, #0x12
-	bl memFill
+	bl CpuMemFill
 	ldrh r0, [r7, #2]
 	ldr r2, _080504E0
 	adds r2, r2, r5
@@ -90,7 +90,7 @@ _080504FC:
 	movs r2, #1
 	rsbs r2, r2, #0
 	movs r1, #0x12
-	bl memFill
+	bl CpuMemFill
 	ldrh r0, [r7, #2]
 	ldr r2, _080505CC
 	adds r2, r2, r4

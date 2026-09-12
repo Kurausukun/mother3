@@ -13,7 +13,7 @@ sub_0800190C:
 	movs r1, #0xa0
 	lsls r1, r1, #2
 	adds r0, r2, #0
-	bl sub_080019DC
+	bl Dma3Clear
 	pop {r0}
 	bx r0
 	.align 2, 0

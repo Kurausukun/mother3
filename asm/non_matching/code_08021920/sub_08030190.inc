@@ -13,7 +13,7 @@ sub_08030190:
 	ldr r1, _08030244
 	adds r0, r4, r1
 	movs r1, #0xa
-	bl memclear
+	bl CpuMemClear
 	ldr r2, _08030248
 	adds r0, r4, r2
 	ldr r0, [r0]

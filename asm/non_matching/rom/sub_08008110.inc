@@ -7,7 +7,7 @@ sub_08008110:
 	ldr r1, _080081DC
 	movs r2, #0xc0
 	lsls r2, r2, #5
-	bl sub_08001A14
+	bl Dma3Copy
 	ldr r0, _080081E0
 	ldr r1, _080081E4
 	adds r0, r0, r1
@@ -84,7 +84,7 @@ _0800817E:
 	ldr r1, _080081FC
 	movs r2, #0xc0
 	lsls r2, r2, #4
-	bl sub_08001A14
+	bl Dma3Copy
 	adds r0, r4, #0
 	movs r1, #0x1f
 	bl Blob_GetEntry

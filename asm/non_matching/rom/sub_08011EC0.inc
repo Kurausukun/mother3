@@ -15,7 +15,7 @@ sub_08011EC0:
 	ldr r1, _08011F14
 	movs r2, #0xa0
 	lsls r2, r2, #7
-	bl sub_08001A14
+	bl Dma3Copy
 	adds r4, #1
 	lsls r4, r4, #0x10
 	lsrs r4, r4, #0x10

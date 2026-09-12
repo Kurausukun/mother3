@@ -5,7 +5,7 @@ sub_08016E64:
 	movs r1, #0x80
 	lsls r1, r1, #3
 	adds r0, r4, #0
-	bl memclear
+	bl CpuMemClear
 	ldr r0, _08016EB8
 	ldrb r0, [r0, #3]
 	lsls r0, r0, #0x1a

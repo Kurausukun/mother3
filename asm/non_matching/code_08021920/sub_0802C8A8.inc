@@ -667,7 +667,7 @@ _0802CD84:
 	strh r0, [r3]
 	ldr r0, [r7, #0x2c]
 	movs r1, #8
-	bl memclear
+	bl CpuMemClear
 	ldr r0, [sp, #0x10]
 	cmp r0, #0
 	beq _0802CE08

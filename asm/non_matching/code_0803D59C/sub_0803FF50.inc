@@ -73,7 +73,7 @@ _0803FFCA:
 	lsrs r2, r2, #0x10
 	ldr r0, _0803FFF0
 	movs r3, #0x20
-	bl sub_0800160C
+	bl CpuCopyPaletteToGfxBuffer
 	adds r0, r4, #1
 	lsls r0, r0, #0x10
 	lsrs r4, r0, #0x10
@@ -86,5 +86,5 @@ _0803FFEA:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0803FFF0: .4byte gUnknown_02016078
+_0803FFF0: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 	.syntax divided

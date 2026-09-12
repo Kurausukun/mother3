@@ -92,7 +92,7 @@ _0803EF78:
 	ldr r0, _0803EF84
 	ldr r1, _0803EF88
 	movs r2, #0x20
-	bl sub_08001A14
+	bl Dma3Copy
 	b _0803F024
 	.align 2, 0
 _0803EF84: .4byte gUnknown_0200F98E

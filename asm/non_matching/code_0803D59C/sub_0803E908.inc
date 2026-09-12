@@ -21,7 +21,7 @@ _0803E928:
 	adds r0, #8
 	ldr r1, [r4]
 	movs r2, #0x60
-	bl sub_08001A14
+	bl Dma3Copy
 	adds r0, r4, #0
 	adds r0, #0x68
 	ldr r1, [r4]
@@ -29,7 +29,7 @@ _0803E928:
 	lsls r3, r3, #3
 	adds r1, r1, r3
 	movs r2, #0x60
-	bl sub_08001A14
+	bl Dma3Copy
 	ldrh r0, [r5]
 	subs r0, #1
 	strh r0, [r5]

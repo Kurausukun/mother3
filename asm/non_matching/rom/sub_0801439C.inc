@@ -65,11 +65,11 @@ _08014416:
 	movs r4, #0xa0
 	lsls r4, r4, #1
 	adds r1, r4, #0
-	bl memclear
+	bl CpuMemClear
 	ldr r1, _08014460
 	adds r0, r7, r1
 	adds r1, r4, #0
-	bl memclear
+	bl CpuMemClear
 	movs r0, #0
 	bl sub_08005900
 	add sp, #8

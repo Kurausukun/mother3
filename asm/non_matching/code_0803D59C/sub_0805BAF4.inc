@@ -1,7 +1,7 @@
 	.syntax unified
 sub_0805BAF4:
 	push {lr}
-	bl sub_08000D54
+	bl get_enginemode_flag_1
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	ldr r1, _0805BB0C

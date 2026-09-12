@@ -82,7 +82,7 @@ _0800FC68:
 	ldr r0, _0800FCE4
 	movs r1, #0x80
 	lsls r1, r1, #3
-	bl memclear
+	bl CpuMemClear
 _0800FCBC:
 	add sp, #8
 	pop {r4}

@@ -258,11 +258,11 @@ _08009128: .4byte 0x0000FFFF
 _0800912C:
 	adds r0, r7, #4
 	movs r1, #0x40
-	bl memclear
+	bl CpuMemClear
 	adds r0, r7, #0
 	adds r0, #0x44
 	movs r1, #0x40
-	bl memclear
+	bl CpuMemClear
 	ldr r0, [sp, #0xc]
 	str r0, [r7]
 	ldrb r0, [r6]

@@ -28,7 +28,7 @@ cmd_80:
 	ldr r0, _080206B4
 	movs r1, #0x80
 	lsls r1, r1, #8
-	bl memclear
+	bl CpuMemClear
 	ldr r4, _080206B8
 	adds r0, r4, #0
 	movs r1, #0
@@ -48,7 +48,7 @@ cmd_80:
 	b _08020744
 	.align 2, 0
 _080206B4: .4byte 0x06008000
-_080206B8: .4byte gUnknown_02016078
+_080206B8: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _080206BC: .4byte gUnknown_080C1B60
 _080206C0:
 	cmp r5, #2

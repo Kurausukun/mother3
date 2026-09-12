@@ -391,7 +391,7 @@ _0802D212:
 	strh r1, [r6]
 	ldr r0, [r7, #0x2c]
 	movs r1, #8
-	bl memclear
+	bl CpuMemClear
 	ldrb r0, [r5, #0x12]
 	lsls r0, r0, #4
 	adds r0, #8

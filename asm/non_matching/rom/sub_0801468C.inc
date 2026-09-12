@@ -68,11 +68,11 @@ _0801470A:
 	lsls r4, r4, #1
 	adds r1, r4, #0
 	movs r2, #0xf0
-	bl memFill
+	bl CpuMemFill
 	ldr r3, _0801477C
 	adds r0, r6, r3
 	adds r1, r4, #0
-	bl memclear
+	bl CpuMemClear
 	ldr r1, _08014780
 	ldrh r0, [r6, #0x22]
 	strh r0, [r1]
