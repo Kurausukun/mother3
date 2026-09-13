@@ -141,10 +141,10 @@ u8 Battle::battle_a0() {
     if (mRoundNo < 1) {
         if (battle_1a0() == 1) {
             for (int i = 0; i < getPartyCount(); i++) {
-                GetPlayer(i)->unit_268(Status::NoBackSprite);
+                GetPlayer(i)->unit_268(0x33);
             }
             for (int i = 0; i < sub_08072C60(); i++) {
-                sub_08072C7C(i)->unit_268(Status::NoBackSprite);
+                sub_08072C7C(i)->unit_268(0x33);
             }
         }
     }

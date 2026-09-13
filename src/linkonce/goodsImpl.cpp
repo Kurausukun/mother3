@@ -124,6 +124,5 @@ BugSpray::BugSpray(u16 id, Unit* user, u16 a3) : DefaultGoods(id, user, a3) {}
 AncientBanana::AncientBanana(u16 id, Unit* user, u16 a3) : DefaultGoods(id, user, a3) {}
 HoneyShower::HoneyShower(u16 id, Unit* user, u16 a3) : DefaultGoods(id, user, a3) {}
 SaltwaterGun::SaltwaterGun(u16 id, Unit* user, u16 a3) : DefaultGoods(id, user, a3), _50(0x100) {}
-NewYearsEveBomb::NewYearsEveBomb(u16 id, Unit* user, u16 a3)
-    : DefaultGoods(id, user, a3), _50(false) {}
+NewYearsEveBomb::NewYearsEveBomb(u16 id, Unit* user, u16 a3) : DefaultGoods(id, user, a3), _50(0) {}
 DefaultGoods::DefaultGoods(u16 id, void* user, u16 r2) : Goods(id, (Unit*)user, r2) {}

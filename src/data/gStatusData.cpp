@@ -1,11 +1,10 @@
 #include "battle/status.h"
-#include "enums.h"
 
 const StatusData gStatusData[] = {
     {
         /*              ID */ Status::None,
         /*      TURN LIMIT */ 0x1,
-        /*         ANIM_NO */ Animation::None,
+        /*            UNK2 */ 0x0,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -13,7 +12,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::Poison,
         /*      TURN LIMIT */ 0x0,
-        /*         ANIM_NO */ Animation::FeelWeird,
+        /*            UNK2 */ 0xa9,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 1,
         /*         PADDING */ 0,
@@ -21,7 +20,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::Numb,
         /*      TURN LIMIT */ 0x0,
-        /*         ANIM_NO */ Animation::FeelWeird,
+        /*            UNK2 */ 0xa9,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -29,7 +28,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::Sleep,
         /*      TURN LIMIT */ 0x3,
-        /*         ANIM_NO */ Animation::FeelWeird,
+        /*            UNK2 */ 0xa9,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -37,7 +36,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::Strange,
         /*      TURN LIMIT */ 0x0,
-        /*         ANIM_NO */ Animation::FeelWeird,
+        /*            UNK2 */ 0xa9,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 1,
         /*         PADDING */ 0,
@@ -45,7 +44,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::Crying,
         /*      TURN LIMIT */ 0x0,
-        /*         ANIM_NO */ Animation::FeelWeird,
+        /*            UNK2 */ 0xa9,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -53,7 +52,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::Forgetful,
         /*      TURN LIMIT */ 0x0,
-        /*         ANIM_NO */ Animation::FeelWeird,
+        /*            UNK2 */ 0xa9,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -61,7 +60,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::Nauseous,
         /*      TURN LIMIT */ 0x0,
-        /*         ANIM_NO */ Animation::FeelWeird,
+        /*            UNK2 */ 0xa9,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 1,
         /*         PADDING */ 0,
@@ -69,7 +68,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::Fleas,
         /*      TURN LIMIT */ 0x0,
-        /*         ANIM_NO */ Animation::FeelWeird,
+        /*            UNK2 */ 0xa9,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 1,
         /*         PADDING */ 0,
@@ -77,7 +76,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::OnFire,
         /*      TURN LIMIT */ 0x3,
-        /*         ANIM_NO */ Animation::FeelWeird,
+        /*            UNK2 */ 0xa9,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -85,7 +84,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::Frozen,
         /*      TURN LIMIT */ 0x2,
-        /*         ANIM_NO */ Animation::FeelWeird,
+        /*            UNK2 */ 0xa9,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -93,7 +92,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::Smelly,
         /*      TURN LIMIT */ 0x0,
-        /*         ANIM_NO */ Animation::FeelWeird,
+        /*            UNK2 */ 0xa9,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -101,7 +100,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::DCMC,
         /*      TURN LIMIT */ 0x2,
-        /*         ANIM_NO */ Animation::FeelWeird,
+        /*            UNK2 */ 0xa9,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -109,7 +108,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::Stapled,
         /*      TURN LIMIT */ 0x2,
-        /*         ANIM_NO */ Animation::FeelWeird,
+        /*            UNK2 */ 0xa9,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -117,7 +116,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::Apologetic,
         /*      TURN LIMIT */ 0x0,
-        /*         ANIM_NO */ Animation::FeelWeird,
+        /*            UNK2 */ 0xa9,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -125,7 +124,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::Laughing,
         /*      TURN LIMIT */ 0x2,
-        /*         ANIM_NO */ Animation::FeelWeird,
+        /*            UNK2 */ 0xa9,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -133,7 +132,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::Defense,
         /*      TURN LIMIT */ 0x1,
-        /*         ANIM_NO */ Animation::None,
+        /*            UNK2 */ 0x0,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -141,7 +140,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::NoExp,
         /*      TURN LIMIT */ 0x0,
-        /*         ANIM_NO */ Animation::None,
+        /*            UNK2 */ 0x0,
         /* REMOVE ON DEATH */ 0,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -149,7 +148,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::OffDownWeak,
         /*      TURN LIMIT */ 0x0,
-        /*         ANIM_NO */ Animation::OffenseDown,
+        /*            UNK2 */ 0xac,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -157,7 +156,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::OffDownStrong,
         /*      TURN LIMIT */ 0x0,
-        /*         ANIM_NO */ Animation::OffenseDown,
+        /*            UNK2 */ 0xac,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -165,7 +164,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::DefDownWeak,
         /*      TURN LIMIT */ 0x0,
-        /*         ANIM_NO */ Animation::DefenseDown,
+        /*            UNK2 */ 0xae,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -173,7 +172,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::DefDownStrong,
         /*      TURN LIMIT */ 0x0,
-        /*         ANIM_NO */ Animation::DefenseDown,
+        /*            UNK2 */ 0xae,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -181,7 +180,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::Shield,
         /*      TURN LIMIT */ 0x0,
-        /*         ANIM_NO */ Animation::Shield,
+        /*            UNK2 */ 0x32,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -189,7 +188,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::Counter,
         /*      TURN LIMIT */ 0x0,
-        /*         ANIM_NO */ Animation::Counter,
+        /*            UNK2 */ 0x35,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -197,7 +196,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::Electrocuted,
         /*      TURN LIMIT */ 0x0,
-        /*         ANIM_NO */ Animation::None,
+        /*            UNK2 */ 0x0,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -205,7 +204,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::PsiShield,
         /*      TURN LIMIT */ 0x0,
-        /*         ANIM_NO */ Animation::PsiShield,
+        /*            UNK2 */ 0x38,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -213,7 +212,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::PsiCounter,
         /*      TURN LIMIT */ 0x0,
-        /*         ANIM_NO */ Animation::PsiCounter,
+        /*            UNK2 */ 0x3b,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -221,7 +220,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::OffUpWeak,
         /*      TURN LIMIT */ 0x0,
-        /*         ANIM_NO */ Animation::OffenseUp,
+        /*            UNK2 */ 0xab,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -229,7 +228,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::OffUpStrong,
         /*      TURN LIMIT */ 0x0,
-        /*         ANIM_NO */ Animation::OffenseUp,
+        /*            UNK2 */ 0xab,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -237,7 +236,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::DefUpWeak,
         /*      TURN LIMIT */ 0x0,
-        /*         ANIM_NO */ Animation::DefenseUp,
+        /*            UNK2 */ 0xad,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -245,7 +244,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::DefUpStrong,
         /*      TURN LIMIT */ 0x0,
-        /*         ANIM_NO */ Animation::DefenseUp,
+        /*            UNK2 */ 0xad,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -253,7 +252,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::EscapeFail,
         /*      TURN LIMIT */ 0x0,
-        /*         ANIM_NO */ Animation::None,
+        /*            UNK2 */ 0x0,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -261,7 +260,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::Dance,
         /*      TURN LIMIT */ 0x2,
-        /*         ANIM_NO */ Animation::FeelWeird,
+        /*            UNK2 */ 0xa9,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -269,7 +268,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::OffDownMid,
         /*      TURN LIMIT */ 0x0,
-        /*         ANIM_NO */ Animation::OffenseDown,
+        /*            UNK2 */ 0xac,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -277,7 +276,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::DefDownMid,
         /*      TURN LIMIT */ 0x0,
-        /*         ANIM_NO */ Animation::DefenseDown,
+        /*            UNK2 */ 0xae,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -285,7 +284,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::TimeBomb,
         /*      TURN LIMIT */ 0x0,
-        /*         ANIM_NO */ Animation::HardHit,
+        /*            UNK2 */ 0x4b,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -293,7 +292,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::ParamsUp,
         /*      TURN LIMIT */ 0x0,
-        /*         ANIM_NO */ Animation::PPUp,
+        /*            UNK2 */ 0xaf,
         /* REMOVE ON DEATH */ 0,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -301,7 +300,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::ParamsDown,
         /*      TURN LIMIT */ 0x0,
-        /*         ANIM_NO */ Animation::DefenseDown,
+        /*            UNK2 */ 0xae,
         /* REMOVE ON DEATH */ 0,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -309,7 +308,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::Refresh,
         /*      TURN LIMIT */ 0x5,
-        /*         ANIM_NO */ Animation::Refresh,
+        /*            UNK2 */ 0x22,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -317,7 +316,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::Fell,
         /*      TURN LIMIT */ 0x2,
-        /*         ANIM_NO */ Animation::FeelWeird,
+        /*            UNK2 */ 0xa9,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -325,7 +324,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::MonkeyDanceOff,
         /*      TURN LIMIT */ 0x0,
-        /*         ANIM_NO */ Animation::OffenseUp,
+        /*            UNK2 */ 0xab,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -333,7 +332,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::MonkeyDanceDef,
         /*      TURN LIMIT */ 0x0,
-        /*         ANIM_NO */ Animation::DefenseUp,
+        /*            UNK2 */ 0xad,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -341,7 +340,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::MonkeyDanceSP,
         /*      TURN LIMIT */ 0x0,
-        /*         ANIM_NO */ Animation::SpeedUp,
+        /*            UNK2 */ 0xb1,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -349,7 +348,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::MonkeyDanceIQ,
         /*      TURN LIMIT */ 0x0,
-        /*         ANIM_NO */ Animation::SpeedUp,
+        /*            UNK2 */ 0xb1,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -357,7 +356,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::MonkeyDanceOff2,
         /*      TURN LIMIT */ 0x0,
-        /*         ANIM_NO */ Animation::OffenseDown,
+        /*            UNK2 */ 0xac,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -365,7 +364,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::MonkeyDanceDef2,
         /*      TURN LIMIT */ 0x0,
-        /*         ANIM_NO */ Animation::DefenseDown,
+        /*            UNK2 */ 0xae,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -373,7 +372,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::MonkeyDanceSP2,
         /*      TURN LIMIT */ 0x0,
-        /*         ANIM_NO */ Animation::SpeedDown,
+        /*            UNK2 */ 0xb2,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -381,7 +380,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::MonkeyDanceIQ2,
         /*      TURN LIMIT */ 0x0,
-        /*         ANIM_NO */ Animation::SpeedDown,
+        /*            UNK2 */ 0xb2,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -389,7 +388,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::Endure,
         /*      TURN LIMIT */ 0x0,
-        /*         ANIM_NO */ Animation::None,
+        /*            UNK2 */ 0x0,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -397,7 +396,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::OffUpMid,
         /*      TURN LIMIT */ 0x0,
-        /*         ANIM_NO */ Animation::OffenseUp,
+        /*            UNK2 */ 0xab,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -405,7 +404,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::DefUpMid,
         /*      TURN LIMIT */ 0x0,
-        /*         ANIM_NO */ Animation::DefenseUp,
+        /*            UNK2 */ 0xad,
         /* REMOVE ON DEATH */ 1,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,
@@ -413,7 +412,7 @@ const StatusData gStatusData[] = {
     {
         /*              ID */ Status::NoBackSprite,
         /*      TURN LIMIT */ 0x1,
-        /*         ANIM_NO */ Animation::None,
+        /*            UNK2 */ 0x0,
         /* REMOVE ON DEATH */ 0,
         /*           BOOL5 */ 0,
         /*         PADDING */ 0,

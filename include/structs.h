@@ -230,7 +230,7 @@ typedef struct Entry8Byte_Alt {
     volatile u16 field4;  // 0x04
     volatile u16 field6;  // 0x06
 } Entry8Byte_Alt;
-static_assert(sizeof(Entry8Byte_Alt) == 0x8);
+static_assert(sizeof(OAMEntry) == 0x8);
 
 typedef struct GraphicsBuffer {
     /* 0x0000 / 0x0050 */ u16 _0[0x400];
@@ -811,7 +811,7 @@ typedef struct MapLayerAlphaInfo {
     u8 pad[0xC];
     MapLayerInfo layers[3];
 } MapLayerAlphaInfo;
-
+               
 typedef struct MapGraphicsInfo {
     s16 tileSetIndices[12];
     s16 paletteIndex;
