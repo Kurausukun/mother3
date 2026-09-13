@@ -96,8 +96,8 @@ s32 Status::turns() {
     return mTurns;
 }
 
-u16 Status::animNo() {
-    return mData->anim_no;
+u16 Status::status_data_2() {
+    return mData->_2;
 }
 
 Msg Status::inflictedMsg() {
