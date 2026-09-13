@@ -111,7 +111,7 @@ _080305FA:
 	movs r2, #1
 	rsbs r2, r2, #0
 	movs r1, #0xd
-	bl memFill
+	bl CpuMemFill
 	mov r0, r8
 	strh r0, [r7]
 	mov r0, sp

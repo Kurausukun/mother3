@@ -46,7 +46,7 @@ sub_0803ECC0:
 	ldr r0, _0803ED40
 	movs r2, #0xe4
 	lsls r2, r2, #1
-	bl sub_08001A14
+	bl Dma3Copy
 	b _0803ED52
 	.align 2, 0
 _0803ED24: .4byte gUnknown_0200F920
@@ -63,7 +63,7 @@ _0803ED44:
 	ldr r0, _0803ED90
 	movs r2, #0xe4
 	lsls r2, r2, #1
-	bl sub_08001A14
+	bl Dma3Copy
 _0803ED52:
 	ldr r5, _0803ED94
 	ldr r0, _0803ED98
@@ -79,7 +79,7 @@ _0803ED52:
 	adds r4, r5, #0
 	adds r4, #0x50
 	adds r0, r4, #0
-	bl sub_08001530
+	bl CpuClearGraphicsBuffer
 	ldr r1, _0803EDA4
 	adds r0, r5, r1
 	movs r1, #2
@@ -103,7 +103,7 @@ _0803EDA8:
 	adds r4, r5, #0
 	adds r4, #0x50
 	adds r0, r4, #0
-	bl sub_08001454
+	bl DmaClearGraphicsBuffer
 	ldr r1, _0803EE0C
 	adds r0, r5, r1
 	movs r1, #2

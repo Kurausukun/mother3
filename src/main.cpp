@@ -1,6 +1,8 @@
 #include "battle/guest.h"
 #include "battle/irc.h"
+#include "gba/defines.h"
 #include "gba/gba.h"
+#include "gba/io_reg.h"
 #include "structs.h"
 
 static void main_loop();
@@ -40,7 +42,7 @@ extern struct_020047E0 gEncounter;
 
 extern "C" void clear_ram();
 extern "C" void clear_gfx();
-extern "C" void copy_ram_magic();
+extern "C" void check_ram_magic();
 extern "C" void setup_vectors();
 extern "C" void seed_rng();
 extern "C" void init_audio();
@@ -81,13 +83,13 @@ extern "C" u32 get_flag(u32);
 extern "C" void init_save();
 extern "C" void sub_08000BE8();
 extern "C" u32 get_misctext_len(u32);
-extern "C" void memFill(void*, u32, s32);
+extern "C" void CpuMemFill(void*, u32, s32);
 extern "C" u32 get_misctext_msg(u32, u32);
 extern "C" void copyText(void*, u32, s16);
 extern "C" void sub_0800272C();
 extern "C" void sub_0805B528();
-extern "C" void sub_080019DC(void*, u32);
-extern "C" void memclear(void*, u32);
+extern "C" void Dma3Clear(void*, u32);
+extern "C" void CpuMemClear(void*, u32);
 
 void sub_08001158(u16, u16);
 
@@ -103,8 +105,7 @@ extern u8 gUnknown_020051E0;
 extern const IrqTable gUnknown_080C17A0;
 extern IrqTable gIntrHandlers;
 extern u8 gIntrVector;
-extern const char gUnknown_08CDB8A8[];
-extern u8 gUnknown_03000008;
+extern const char gIwramMagic[];
 extern void* gUnknown_02015E38;
 
 extern "C" void AgbMain() {
@@ -116,14 +117,13 @@ extern "C" void AgbMain() {
 
     clear_ram();
     clear_gfx();
-    copy_ram_magic();
+    check_ram_magic();
     setup_vectors();
     seed_rng();
 
     u32 keys = ~REG_KEYINPUT;
-    if (((keys << 0x16) >> 0x16) == 0xf) {
-        u8* s = &gEngineMode._0;
-        s[1] |= 2;
+    if (((keys << 0x16) >> 0x16) == (A_BUTTON | B_BUTTON | SELECT_BUTTON | START_BUTTON)) {
+        gEngineMode.flags_u8._2 = 1;
     }
 
     init_audio();
@@ -490,14 +490,14 @@ void init_save() {
 
     u16 tmp = get_misctext_len(5);
 
-    memFill(gSave.hinawa_name, sizeof gSave.hinawa_name, -1);
+    CpuMemFill(gSave.hinawa_name, sizeof gSave.hinawa_name, -1);
     copyText(gSave.hinawa_name, get_misctext_msg(5, 8), tmp);
-    memFill(gSave.claus_name, sizeof gSave.claus_name, -1);
+    CpuMemFill(gSave.claus_name, sizeof gSave.claus_name, -1);
     copyText(gSave.claus_name, get_misctext_msg(5, 5), tmp);
-    memFill(gSave.fav_food, sizeof gSave.fav_food, -1);
-    memFill(gSave.fav_thing, sizeof gSave.fav_thing, -1);
-    memFill(gSave.playername_short, sizeof gSave.playername_short, -1);
-    memFill(gSave.playername, sizeof gSave.playername, -1);
+    CpuMemFill(gSave.fav_food, sizeof gSave.fav_food, -1);
+    CpuMemFill(gSave.fav_thing, sizeof gSave.fav_thing, -1);
+    CpuMemFill(gSave.playername_short, sizeof gSave.playername_short, -1);
+    CpuMemFill(gSave.playername, sizeof gSave.playername, -1);
 
     gSave._6f8 = 0;
     gSave._6fa = 0;
@@ -550,7 +550,7 @@ void init_save() {
 void sub_08000BE8() {
     u32 tmp = get_misctext_len(5);
     for (u16 i = 0; i < 0x10; ++i) {
-        memFill(&gCharStats[i].name, sizeof gCharStats[i].name, -1);
+        CpuMemFill(&gCharStats[i].name, sizeof gCharStats[i].name, -1);
         copyText(&gCharStats[i].name, get_misctext_msg(6, i), tmp);
     }
     gCharStats[0].charNo = 0;
@@ -588,32 +588,32 @@ void sub_08000BE8() {
     sub_0805B528();
 }
 
-extern "C" u8 sub_08000D54() {
+extern "C" u8 get_enginemode_flag_1() {
     return gEngineMode.flags_u8._1;
 }
 
-extern "C" void sub_08000D64(volatile u16 a) {
+extern "C" void set_enginemode_flag_1(volatile u16 a) {
     gEngineMode.flags_s8._1 = a;
 }
 
-extern "C" void sub_08000D88(void) {
+extern "C" void write_ram_magic(void) {
     char* dest = (char*)IWRAM_START;
 
     for (u16 i = 0; i < 8; ++i, ++dest) {
         u32 tmp = gEngineMode.flags_u8._1;
         if (tmp) {
-            *dest = gUnknown_08CDB8A8[i];
+            *dest = gIwramMagic[i];
         } else {
             *dest = '\0';
         }
     }
 }
 
-extern "C" void copy_ram_magic() {
+extern "C" void check_ram_magic() {
     char* dest = (char*)IWRAM_START;
 
     for (u16 i = 0; i < 8; ++i, ++dest) {
-        if (*dest != gUnknown_08CDB8A8[i]) {
+        if (*dest != gIwramMagic[i]) {
             gEngineMode.flags_u8._1 = 0;
             return;
         }
@@ -622,20 +622,20 @@ extern "C" void copy_ram_magic() {
 }
 
 void clear_ram(void) {
-    sub_080019DC((void*)EWRAM_START, EWRAM_SIZE);
-    sub_080019DC(&gUnknown_03000008, 0x7D98);
+    Dma3Clear((void*)EWRAM_START, EWRAM_SIZE);
+    Dma3Clear((void*)(IWRAM_START + 8), IWRAM_SIZE - 0x68);
 }
 
 void clear_gfx() {
-    memclear((void*)VRAM, VRAM_SIZE);
-    memclear((void*)PLTT, PLTT_SIZE);
-    memclear((void*)OAM, OAM_SIZE);
+    CpuMemClear((void*)VRAM, VRAM_SIZE);
+    CpuMemClear((void*)PLTT, PLTT_SIZE);
+    CpuMemClear((void*)OAM, OAM_SIZE);
 }
 
-extern "C" void sub_08000E5C(Unknown_02016078* arg0) {
-    // Entry8Byte* ptr1 = &arg0->entries_2000[0];
+extern "C" void sub_08000E5C(GraphicsBuffer* gfx) {
+    // Entry8Byte* ptr1 = &gfx->entries_2000[0];
 
-    OAMEntry* oam_ptr = arg0->oam;
+    OAMEntry* oam_ptr = gfx->oam;
     u16 i;
 
     // Initialize OAM entries
@@ -648,7 +648,7 @@ extern "C" void sub_08000E5C(Unknown_02016078* arg0) {
         oam_ptr->rot_scale = 2;
     }
 
-    Entry8Byte_Alt* ptr2 = &arg0->entries_2500[0];
+    Entry8Byte_Alt* ptr2 = &gfx->entries_2500[0];
 
     // Clear second array (32 entries)
     for (i = 0; i < 32; i++, ptr2++) {
@@ -659,11 +659,11 @@ extern "C" void sub_08000E5C(Unknown_02016078* arg0) {
     }
 
     // Clear additional fields
-    arg0->oam_counter = 0;
-    arg0->_2C4A = 0;
+    gfx->oam_counter = 0;
+    gfx->_2C4A = 0;
 }
 
-extern "C" OAMEntry* sub_08000F04(Unknown_02016078* graphics, u16 count) {
+extern "C" OAMEntry* sub_08000F04(GraphicsBuffer* graphics, u16 count) {
     OAMEntry* first_entry = &graphics->oam[graphics->oam_counter];  // Starting OAM entry
     OAMEntry* current_entry = first_entry;
 
@@ -683,7 +683,7 @@ extern "C" OAMEntry* sub_08000F04(Unknown_02016078* graphics, u16 count) {
     return first_entry;
 }
 
-static void sub_08000FA0(Unknown_02016078* graphics, u16 count, u16 priority) {
+static void sub_08000FA0(GraphicsBuffer* graphics, u16 count, u16 priority) {
     // Start from the last allocated OAM entry and work backwards
     OAMEntry* current_entry = sub_08000F04(graphics, 0) - 1;
 
@@ -693,7 +693,7 @@ static void sub_08000FA0(Unknown_02016078* graphics, u16 count, u16 priority) {
     }
 }
 
-static Entry8Byte_Alt* sub_08000FE4(Unknown_02016078* graphics, u16 count) {
+static Entry8Byte_Alt* sub_08000FE4(GraphicsBuffer* graphics, u16 count) {
     Entry8Byte_Alt* first_entry = &graphics->entries_2500[graphics->_2C4A];
     graphics->_2C4A += count;
     return first_entry;

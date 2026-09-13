@@ -48,7 +48,7 @@ sub_08036A90:
 	strb r0, [r2]
 	ldr r0, [r5, #0x2c]
 	movs r1, #8
-	bl memclear
+	bl CpuMemClear
 	adds r0, r5, #0
 	bl sub_0802DE5C
 _08036AFC:

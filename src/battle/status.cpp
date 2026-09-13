@@ -6,8 +6,8 @@
 bool statusWearOff(Unit*, Status::Type, bool);
 
 extern ClockData callback_status_roundBeginCallback__FP6Status;
-extern ClockData callback_sub_080829F4;
-extern ClockData callback_sub_08082AA0;
+extern ClockData callback_status_unitTurnBeginCallback__FP6StatusR13UnitTurnBegin;
+extern ClockData callback_status_unitTurnEndCallback__FP6StatusR11UnitTurnEnd;
 extern ClockData callback_status_roundEndCallback__FP6Status;
 
 Msg tellStatus(u16 arg1) {
@@ -23,22 +23,22 @@ Status::Status(u16 type, Unit* unit) {
     mTurns = 0;
 
     listen(BattleManager::get(), RoundBegin(), callback_status_roundBeginCallback__FP6Status);
-    listen(BattleManager::get(), UnitTurnBegin(), callback_sub_080829F4);
-    listen(BattleManager::get(), UnitTurnEnd(), callback_sub_08082AA0);
+    listen(BattleManager::get(), UnitTurnBegin(), callback_status_unitTurnBeginCallback__FP6StatusR13UnitTurnBegin);
+    listen(BattleManager::get(), UnitTurnEnd(), callback_status_unitTurnEndCallback__FP6StatusR11UnitTurnEnd);
     listen(BattleManager::get(), RoundEnd(), callback_status_roundEndCallback__FP6Status);
 }
 
 Status::~Status() {}
 
-bool Status::status_90() {
+bool Status::removeConflicting() {
     return false;
 }
 
-bool Status::status_98() {
+bool Status::applyStackStatus() {
     return false;
 }
 
-bool Status::status_a0() {
+bool Status::cancelOpposite() {
     return false;
 }
 
@@ -46,25 +46,25 @@ bool Status::disableAllStatuses() {
     return false;
 }
 
-bool Status::status_b0() {
+bool Status::applyStatModifiers() {
     return true;
 }
 
 void Status::cleanup() {}
 
-void Status::setRoundLimit(u16 rounds) {
+void Status::setRoundLimit(s32 rounds) {
     mRoundLimit = rounds;
 }
 
-void Status::setRounds(u16 rounds) {
+void Status::setRounds(s32 rounds) {
     mRounds = rounds;
 }
 
-void Status::setTurnLimit(u16 turns) {
+void Status::setTurnLimit(s32 turns) {
     mTurnLimit = turns;
 }
 
-void Status::setTurns(u16 turns) {
+void Status::setTurns(s32 turns) {
     mTurns = turns;
 }
 
@@ -147,7 +147,9 @@ bool Status::onRoundBegin() {
     return true;
 }
 
-extern "C" ASM_FUNC("asm/non_matching/psi/sub_080829F4.inc", void sub_080829F4());
+void status_unitTurnBeginCallback(Status* s, UnitTurnBegin& e) {
+    s->onUnitTurnBegin(e.unit());
+}
 
 bool Status::onUnitTurnBegin(Unit* u) {
     if (u == unit()) {
@@ -162,7 +164,9 @@ bool Status::onUnitTurnBegin(Unit* u) {
     return true;
 }
 
-extern "C" ASM_FUNC("asm/non_matching/psi/sub_08082AA0.inc", void sub_08082AA0());
+void status_unitTurnEndCallback(Status* s, UnitTurnEnd& e) {
+    s->onUnitTurnEnd(e.unit());
+}
 
 void Status::onUnitTurnEnd(Unit* unit) {}
 

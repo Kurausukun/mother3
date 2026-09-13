@@ -214,11 +214,11 @@ _08004B08:
 	ldr r0, _08004B9C
 	movs r1, #0x80
 	lsls r1, r1, #8
-	bl memclear
+	bl CpuMemClear
 	ldr r0, _08004BA0
 	movs r1, #0x80
 	lsls r1, r1, #4
-	bl memclear
+	bl CpuMemClear
 	ldr r0, _08004B80
 	movs r4, #0
 	mov r1, sl

@@ -195,7 +195,7 @@ _0803F750:
 	ldr r1, [r5, #0x20]
 	movs r2, #0x10
 	movs r3, #0x20
-	bl sub_0800160C
+	bl CpuCopyPaletteToGfxBuffer
 	add sp, #0xc
 	pop {r3, r4, r5}
 	mov r8, r3
@@ -205,5 +205,5 @@ _0803F750:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0803F770: .4byte gUnknown_02016078
+_0803F770: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 	.syntax divided

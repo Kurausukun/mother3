@@ -133,7 +133,7 @@ _08004640: .4byte gSomeBlend
 _08004644: .4byte 0x000121B6
 _08004648: .4byte 0x04000130
 _0800464C: .4byte 0x000003FF
-_08004650: .4byte gInputState
+_08004650: .4byte gSomeBlend+0x2CA0 @ gSomeBlend.input
 _08004654: .4byte gGame
 _08004658: .4byte 0x00009D14
 _0800465C: .4byte 0x000082B9

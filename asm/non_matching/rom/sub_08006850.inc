@@ -4,7 +4,7 @@ sub_08006850:
 	ldr r0, _08006860
 	ldr r2, _08006864
 	movs r1, #0x20
-	bl sub_08001A38
+	bl Dma3Fill
 	pop {r0}
 	bx r0
 	.align 2, 0

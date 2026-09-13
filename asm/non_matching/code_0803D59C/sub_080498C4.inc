@@ -13,5 +13,5 @@ sub_080498C4:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080498E0: .4byte gUnknown_02016078
+_080498E0: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 	.syntax divided

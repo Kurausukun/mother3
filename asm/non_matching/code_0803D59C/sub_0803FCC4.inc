@@ -18,7 +18,7 @@ sub_0803FCC4:
 	ldr r0, _0803FD10
 	movs r2, #2
 	movs r3, #0x40
-	bl sub_0800160C
+	bl CpuCopyPaletteToGfxBuffer
 	movs r0, #2
 	movs r1, #2
 	bl sub_08056584
@@ -30,5 +30,5 @@ _0803FD00: .4byte gMenuData
 _0803FD04: .4byte 0x06001000
 _0803FD08: .4byte gSave
 _0803FD0C: .4byte 0x0000081E
-_0803FD10: .4byte gUnknown_02016078
+_0803FD10: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 	.syntax divided

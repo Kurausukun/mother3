@@ -16,7 +16,7 @@ sub_08058BCC:
 	ldr r1, _08058C44
 	movs r2, #0x80
 	lsls r2, r2, #5
-	bl sub_08001A94
+	bl Dma0Copy
 _08058BF0:
 	ldr r2, _08058C48
 	adds r0, r4, r2
@@ -29,7 +29,7 @@ _08058BF0:
 	ldr r1, _08058C4C
 	movs r2, #0x80
 	lsls r2, r2, #4
-	bl sub_08001A94
+	bl Dma0Copy
 _08058C0A:
 	ldr r2, _08058C48
 	adds r0, r4, r2

@@ -180,11 +180,11 @@ _08049440:
 	adds r0, r5, #4
 	movs r1, #0x40
 	str r3, [sp, #0x28]
-	bl memclear
+	bl CpuMemClear
 	adds r0, r5, #0
 	adds r0, #0x44
 	movs r1, #0x40
-	bl memclear
+	bl CpuMemClear
 	ldr r0, [sp]
 	ldrh r1, [r0]
 	ldr r2, _080495A4

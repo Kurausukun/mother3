@@ -92,7 +92,7 @@ _08011E34:
 	blo _08011E34
 	b _08011EA8
 	.align 2, 0
-_08011E5C: .4byte gUnknown_02016078
+_08011E5C: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _08011E60: .4byte gGame
 _08011E64: .4byte 0x00004008
 _08011E68: .4byte 0x040000D4

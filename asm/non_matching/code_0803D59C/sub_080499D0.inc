@@ -39,20 +39,20 @@ _08049A06:
 	lsls r4, r4, #3
 	adds r0, r5, #0
 	adds r1, r4, #0
-	bl memclear
+	bl CpuMemClear
 	adds r4, r5, r4
 	movs r1, #0xff
 	lsls r1, r1, #5
 	adds r0, r4, #0
-	bl memclear
+	bl CpuMemClear
 	ldr r1, _08049AD0
 	adds r0, r5, r1
 	movs r1, #0x60
-	bl memclear
+	bl CpuMemClear
 	ldr r1, _08049AD4
 	adds r0, r5, r1
 	movs r1, #0x60
-	bl memclear
+	bl CpuMemClear
 	mov r0, sp
 	ldrh r0, [r0]
 	cmp r0, #0

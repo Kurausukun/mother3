@@ -11,7 +11,7 @@ sub_080223F4:
 	rsbs r2, r2, #0
 	adds r0, r4, #0
 	movs r1, #0x1c
-	bl memFill
+	bl CpuMemFill
 	movs r6, #0
 	ldrh r0, [r5]
 	ldr r1, _08022444

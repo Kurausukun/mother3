@@ -7,7 +7,7 @@ sub_0803FC74:
 	ldr r1, _0803FC90
 	movs r2, #0x80
 	lsls r2, r2, #7
-	bl sub_08001A14
+	bl Dma3Copy
 	pop {r0}
 	bx r0
 	.align 2, 0

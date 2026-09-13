@@ -61,11 +61,11 @@ _08004C30:
 	ldr r0, _08004CAC
 	movs r1, #0x80
 	lsls r1, r1, #8
-	bl memclear
+	bl CpuMemClear
 	ldr r0, _08004CB0
 	movs r1, #0x80
 	lsls r1, r1, #4
-	bl memclear
+	bl CpuMemClear
 	ldr r0, _08004C98
 	movs r4, #0
 	strb r7, [r0]

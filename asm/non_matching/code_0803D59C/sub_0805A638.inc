@@ -145,7 +145,7 @@ _0805A756:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0805A760: .4byte gUnknown_02016078
+_0805A760: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _0805A764: .4byte 0x00002C50
 _0805A768: .4byte gSomeBlend
 _0805A76C: .4byte 0x00002CA2

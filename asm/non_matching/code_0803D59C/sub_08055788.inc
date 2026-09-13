@@ -6,7 +6,7 @@ sub_08055788:
 	rsbs r2, r2, #0
 	adds r0, r4, #0
 	movs r1, #0xd2
-	bl memFill
+	bl CpuMemFill
 	adds r4, #0xd6
 	ldrh r0, [r4]
 	lsls r1, r0, #0x17
