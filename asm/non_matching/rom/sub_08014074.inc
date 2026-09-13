@@ -7,7 +7,7 @@ sub_08014074:
 	lsls r1, r1, #3
 	movs r2, #1
 	rsbs r2, r2, #0
-	bl memFill
+	bl CpuMemFill
 	ldr r0, _080140BC
 	ldr r1, _080140C0
 	ldr r1, [r1]

@@ -124,7 +124,7 @@ _08005A02:
 	ldr r1, _08005A14
 	movs r2, #0x80
 	lsls r2, r2, #1
-	bl sub_08001A14
+	bl Dma3Copy
 	b _08005A24
 	.align 2, 0
 _08005A10: .4byte sub_0803D3FC
@@ -134,7 +134,7 @@ _08005A18:
 	ldr r1, _08005A34
 	movs r2, #0x80
 	lsls r2, r2, #1
-	bl sub_08001A14
+	bl Dma3Copy
 _08005A24:
 	ldr r1, _08005A38
 	movs r0, #1

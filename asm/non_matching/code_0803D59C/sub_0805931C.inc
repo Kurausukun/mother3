@@ -8,7 +8,7 @@ sub_0805931C:
 	movs r1, #0x80
 	lsls r1, r1, #5
 	adds r0, r4, #0
-	bl memclear
+	bl CpuMemClear
 	ldr r1, _08059350
 	adds r0, r4, r1
 	bl sub_08059358

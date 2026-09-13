@@ -23,7 +23,7 @@ sub_08004FB4:
 	bl nullsub_3
 	b _080050E6
 	.align 2, 0
-_08004FE8: .4byte gInputState
+_08004FE8: .4byte gSomeBlend+0x2CA0 @ gSomeBlend.input
 _08004FEC: .4byte gGame
 _08004FF0: .4byte 0xFFFFD360
 _08004FF4:
@@ -142,7 +142,7 @@ _080050E6:
 	bx r0
 	.align 2, 0
 _080050EC: .4byte 0xFFFFD360
-_080050F0: .4byte gInputState
+_080050F0: .4byte gSomeBlend+0x2CA0 @ gSomeBlend.input
 _080050F4: .4byte gGame
 _080050F8: .4byte 0x00009D14
 	.syntax divided

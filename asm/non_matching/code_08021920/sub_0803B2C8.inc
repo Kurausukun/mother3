@@ -25,7 +25,7 @@ sub_0803B2C8:
 	ldr r2, _0803B3B8
 	adds r0, r6, #0
 	movs r1, #0x1c
-	bl memFill
+	bl CpuMemFill
 	ldr r1, _0803B3BC
 	adds r5, r1, #0
 	strh r5, [r6, #0x1a]

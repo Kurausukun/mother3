@@ -11,10 +11,10 @@ sub_080491F0:
 	mov r8, r5
 	adds r0, r6, #0
 	movs r1, #0x60
-	bl memclear
+	bl CpuMemClear
 	adds r0, r7, #0
 	movs r1, #0x60
-	bl memclear
+	bl CpuMemClear
 	adds r1, r4, #0
 	adds r1, #0xc0
 	ldrh r0, [r1]

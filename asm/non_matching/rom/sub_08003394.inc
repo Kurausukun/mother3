@@ -16,7 +16,7 @@ sub_08003394:
 	lsrs r6, r6, #0x10
 	movs r1, #0x20
 	str r3, [sp]
-	bl memclear
+	bl CpuMemClear
 	ldrb r1, [r5, #0x1d]
 	movs r0, #2
 	rsbs r0, r0, #0

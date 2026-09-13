@@ -11885,11 +11885,11 @@ _._5Event:
 	.byte	0x1a
 	.4byte	0x538d
 	.byte	0x1
-	.ascii	"status_90\000"
+	.ascii	"removeConflicting\000"
 
 	.byte	0x7
 	.byte	0x12
-	.ascii	"status_90__6Status\000"
+	.ascii	"removeConflicting__6Status\000"
 
 	.byte	0x1
 	.byte	0x2
@@ -11904,11 +11904,11 @@ _._5Event:
 	.byte	0x1a
 	.4byte	0x53c2
 	.byte	0x1
-	.ascii	"status_98\000"
+	.ascii	"applyStackStatus\000"
 
 	.byte	0x7
 	.byte	0x13
-	.ascii	"status_98__6Status\000"
+	.ascii	"applyStackStatus__6Status\000"
 
 	.byte	0x1
 	.byte	0x2
@@ -11923,11 +11923,11 @@ _._5Event:
 	.byte	0x1a
 	.4byte	0x53f7
 	.byte	0x1
-	.ascii	"status_a0\000"
+	.ascii	"cancelOpposite\000"
 
 	.byte	0x7
 	.byte	0x14
-	.ascii	"status_a0__6Status\000"
+	.ascii	"cancelOpposite__6Status\000"
 
 	.byte	0x1
 	.byte	0x2
@@ -11961,11 +11961,11 @@ _._5Event:
 	.byte	0x1a
 	.4byte	0x5461
 	.byte	0x1
-	.ascii	"status_b0\000"
+	.ascii	"applyStatModifiers\000"
 
 	.byte	0x7
 	.byte	0x16
-	.ascii	"status_b0__6Status\000"
+	.ascii	"applyStatModifiers__6Status\000"
 
 	.byte	0x1
 	.byte	0x2

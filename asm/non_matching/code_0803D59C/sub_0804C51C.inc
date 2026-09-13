@@ -31,7 +31,7 @@ _0804C54E:
 	adds r0, r4, r2
 	movs r1, #0x20
 	adds r2, r7, #0
-	bl memFill
+	bl CpuMemFill
 	movs r1, #2
 	ldrsh r0, [r5, r1]
 	cmp r0, r7

@@ -5,9 +5,10 @@
 gUnknown_08CDB4B0:
     .incbin "baserom.gba", 0xcdb4b0, 0x3f8
 
-    .global gUnknown_08CDB8A8
-gUnknown_08CDB8A8:
-    .incbin "baserom.gba", 0x00CDB8A8, 0xC
+    .global gIwramMagic
+gIwramMagic:
+    .ascii "M3 GBSON"
+    .4byte 0
 
     .global gUnknown_08CDB8B4
 gUnknown_08CDB8B4:

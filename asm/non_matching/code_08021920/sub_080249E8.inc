@@ -41,7 +41,7 @@ sub_080249E8:
 	adds r0, #0x2c
 	movs r1, #0xfa
 	lsls r1, r1, #4
-	bl memclear
+	bl CpuMemClear
 	movs r1, #0
 	ldr r3, _08024A70
 	movs r2, #0

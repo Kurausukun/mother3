@@ -59,7 +59,7 @@ extern "C" void sub_0800A1C4(void*);
 extern "C" void handleDebugPage1(InputState*, DebugMenuState*);
 extern "C" void debugChangeCurrentRoom(InputState*, DebugMenuState*);
 extern "C" void sub_0803A458(InputState*, DebugMenuState*);
-extern "C" void sub_08000D64(u16);
+extern "C" void set_enginemode_flag_1(u16);
 extern "C" void debugChangeMapCoords(InputState*, DebugMenuState*);
 extern "C" void sub_0803B5C4();
 extern "C" void sub_0803A844(InputState*, DebugMenuState*);
@@ -1417,7 +1417,7 @@ extern "C" void sub_08037AF4() {
     gSomeBlend._35ba_1 = 0;
     gSomeBlend._3530 = 0;
     gSomeBlend._3531 = 2;
-    sub_080012BC(&gSomeBlend._50, 0, 0, 1);
+    sub_080012BC(&gSomeBlend.gfx, 0, 0, 1);
 }
 
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08037B4C.inc", void sub_08037B4C());
@@ -1732,7 +1732,7 @@ extern "C" void handleDebugPage3(InputState* input, DebugMenuState* state) {
         play_sound(SFX_MENU_SELECT);
         gSomeBlend._3668_10 = 1;
         gGame.gbPlayerModeEnabled ^= 1;
-        sub_08000D64(gGame.gbPlayerModeEnabled);
+        set_enginemode_flag_1(gGame.gbPlayerModeEnabled);
         sub_0803B5C4();
         break;
     case 2:

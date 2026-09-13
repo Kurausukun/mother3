@@ -9,7 +9,7 @@ sub_08013880:
 	lsrs r7, r1, #0x10
 	mov r0, sp
 	movs r1, #0xa0
-	bl memclear
+	bl CpuMemClear
 	ldr r5, _080138A0
 	movs r6, #0
 	movs r4, #0

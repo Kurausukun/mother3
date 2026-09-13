@@ -232,7 +232,7 @@ typedef struct Entry8Byte_Alt {
 } Entry8Byte_Alt;
 static_assert(sizeof(Entry8Byte_Alt) == 0x8);
 
-typedef struct Unknown_02016078 {
+typedef struct GraphicsBuffer {
     /* 0x0000 / 0x0050 */ u16 _0[0x400];
     /* 0x0800 / 0x0850 */ u16 _800[0x400];
     /* 0x1000 / 0x1050 */ u16 _1000[0x400];
@@ -241,7 +241,7 @@ typedef struct Unknown_02016078 {
     /* 0x2400 / 0x2450 */ u8 pad_2400[0x2500 - 0x2400];
     /* 0x2500 / 0x2550 */ Entry8Byte_Alt entries_2500[32];
     /* 0x2600 / 0x2650 */ u8 pad_2600[0x2700 - 0x2600];
-    /* 0x2700 / 0x2750 */ vu16 _2700[0x20][0x10];
+    /* 0x2700 / 0x2750 */ vu16 palettes[0x20][0x10];
     /* 0x2C00 / 0x2C50 */ u8 pad_2C00[0x2C40 - 0x2B00];
     /* 0x2C40 / 0x2C90 */ vu16 _2C40;
     /* 0x2C42 / 0x2C92 */ vu16 _2C42;
@@ -253,7 +253,7 @@ typedef struct Unknown_02016078 {
     /* 0x2C4D / 0x2C9D */ vu8 g;
     /* 0x2C4E / 0x2C9E */ vu8 b;
     /* 0x2C4F / 0x2C9F */ u8 pad_2C4F[0x2C50 - 0x2C4F];
-} Unknown_02016078;
+} GraphicsBuffer;
 
 typedef struct InputState {
     u16 justPressed;
@@ -391,7 +391,7 @@ typedef struct struct_02016028 {
     vu32 _44;
     vu32 _48;
     vu32 _4C;
-    Unknown_02016078 _50;
+    GraphicsBuffer gfx;
     InputState input;
     void* _2CB0;
     u16 _2cb4[0x12];
@@ -613,7 +613,7 @@ typedef struct Save {
     u16 fav_food[9];
     u16 fav_thing[9];
     u16 playername_short[9];
-    u16 playername[0x10];
+    u16 playername[16];
     u16 _6f8;
     u16 _6fa;
     u16 _6fc;

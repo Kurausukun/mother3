@@ -8,7 +8,7 @@ sub_08008244:
 	ldr r1, _080082C8
 	movs r2, #0xb0
 	lsls r2, r2, #6
-	bl sub_08001A14
+	bl Dma3Copy
 	adds r0, r4, #0
 	movs r1, #0x27
 	bl Blob_GetEntry
@@ -27,7 +27,7 @@ sub_08008244:
 	ldr r1, _080082D4
 	movs r2, #0x80
 	lsls r2, r2, #3
-	bl sub_08001A14
+	bl Dma3Copy
 	adds r0, r4, #0
 	movs r1, #0x2b
 	bl Blob_GetEntry
@@ -40,7 +40,7 @@ sub_08008244:
 	ldr r1, _080082D8
 	movs r2, #0xc0
 	lsls r2, r2, #4
-	bl sub_08001A14
+	bl Dma3Copy
 	adds r0, r4, #0
 	movs r1, #0x1f
 	bl Blob_GetEntry

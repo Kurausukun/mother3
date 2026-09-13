@@ -14,7 +14,7 @@ _08006884:
 	adds r0, r0, r1
 	adds r1, r5, #0
 	movs r2, #0x20
-	bl sub_08001A14
+	bl Dma3Copy
 	adds r5, #0x20
 _0800689C:
 	adds r0, r4, #1

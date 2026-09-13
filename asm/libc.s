@@ -45,14 +45,14 @@ sub_08090F90: @ 0x08090F90
 	ldr r3, _08090FA0 @ =0x04000208
 	movs r2, #0
 	strb r2, [r3]
-	ldr r1, _08090FA4 @ =gUnknown_03007F00
+	ldr r1, _08090FA4 @ =GBA_sp_sys
 	mov sp, r1
 	svc #1
 	svc #0
 	movs r0, r0
 	.align 2, 0
 _08090FA0: .4byte 0x04000208
-_08090FA4: .4byte gUnknown_03007F00
+_08090FA4: .4byte GBA_sp_sys
 
 	thumb_func_start sub_08090FA8
 sub_08090FA8: @ 0x08090FA8

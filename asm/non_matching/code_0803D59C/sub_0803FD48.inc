@@ -53,7 +53,7 @@ _0803FD88:
 	movs r3, #0x80
 	lsls r3, r3, #1
 	movs r2, #2
-	bl sub_0800160C
+	bl CpuCopyPaletteToGfxBuffer
 	movs r0, #2
 	movs r1, #8
 	bl sub_08056584
@@ -62,18 +62,18 @@ _0803FD88:
 _0803FDCC: .4byte 0x06001000
 _0803FDD0: .4byte gMenuData
 _0803FDD4: .4byte gUnknown_02004100
-_0803FDD8: .4byte gUnknown_02016078
+_0803FDD8: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _0803FDDC:
 	ldr r0, _0803FDF0
 	movs r2, #2
 	movs r3, #0xa0
-	bl sub_0800160C
+	bl CpuCopyPaletteToGfxBuffer
 	movs r0, #2
 	movs r1, #5
 	bl sub_08056584
 	b _0803FE2E
 	.align 2, 0
-_0803FDF0: .4byte gUnknown_02016078
+_0803FDF0: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _0803FDF4:
 	ldr r4, _0803FE34
 	adds r0, r4, #0
@@ -95,7 +95,7 @@ _0803FDF4:
 	ldr r0, _0803FE44
 	movs r2, #2
 	movs r3, #0x60
-	bl sub_0800160C
+	bl CpuCopyPaletteToGfxBuffer
 	movs r0, #2
 	movs r1, #3
 	bl sub_08056584
@@ -108,5 +108,5 @@ _0803FE34: .4byte gMenuData
 _0803FE38: .4byte 0x06001000
 _0803FE3C: .4byte gSave
 _0803FE40: .4byte 0x0000081E
-_0803FE44: .4byte gUnknown_02016078
+_0803FE44: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 	.syntax divided

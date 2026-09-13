@@ -62,10 +62,10 @@ sub_08005D54:
 	adds r0, r4, #0
 	adds r1, r2, #0
 	adds r2, r5, #0
-	bl sub_08001A14
+	bl Dma3Copy
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_080019DC
+	bl Dma3Clear
 _08005DDE:
 	ldr r0, _08005F2C
 	ldrh r0, [r0]
@@ -78,7 +78,7 @@ _08005DDE:
 	adds r0, r4, #0
 	adds r1, r5, #0
 	adds r2, r6, #0
-	bl sub_08001A14
+	bl Dma3Copy
 	ldr r1, _08005F64
 	adds r0, r4, r1
 	ldrh r1, [r5]
@@ -86,7 +86,7 @@ _08005DDE:
 	strh r1, [r0, #0x28]
 	adds r0, r4, #0
 	adds r1, r6, #0
-	bl sub_080019DC
+	bl Dma3Clear
 _08005E0A:
 	ldr r0, _08005F30
 	ldrh r0, [r0]
@@ -98,7 +98,7 @@ _08005E0A:
 	lsls r2, r2, #1
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_08001A14
+	bl Dma3Copy
 	ldr r2, _08005F70
 	adds r4, r4, r2
 	ldrh r0, [r5]
@@ -115,7 +115,7 @@ _08005E2C:
 	lsls r2, r2, #1
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_08001A14
+	bl Dma3Copy
 	ldr r0, _08005F7C
 	adds r4, r4, r0
 	ldrh r0, [r5]
@@ -132,7 +132,7 @@ _08005E4E:
 	lsls r2, r2, #1
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_08001A14
+	bl Dma3Copy
 	ldr r1, _08005F88
 	adds r4, r4, r1
 	ldrh r0, [r5]
@@ -149,7 +149,7 @@ _08005E70:
 	lsls r2, r2, #1
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_08001A14
+	bl Dma3Copy
 	ldr r2, _08005F94
 	adds r4, r4, r2
 	ldrh r0, [r5]
@@ -166,7 +166,7 @@ _08005E92:
 	lsls r2, r2, #1
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_08001A14
+	bl Dma3Copy
 	ldr r0, _08005FA0
 	adds r4, r4, r0
 	ldrh r0, [r5]
@@ -183,7 +183,7 @@ _08005EB4:
 	lsls r2, r2, #1
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_08001A14
+	bl Dma3Copy
 	ldr r1, _08005FAC
 	adds r4, r4, r1
 	ldrh r0, [r5]

@@ -12,7 +12,7 @@ sub_08022694:
 	ldr r2, _080226FC
 	adds r0, r6, #0
 	movs r1, #0x28
-	bl memFill
+	bl CpuMemFill
 	ldr r0, _08022700
 	adds r1, r4, r0
 	ldr r0, _08022704

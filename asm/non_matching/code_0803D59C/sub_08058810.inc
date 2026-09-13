@@ -29,10 +29,10 @@ sub_08058810:
 	adds r0, r4, #0
 	adds r1, r2, #0
 	adds r2, r5, #0
-	bl sub_08001A14
+	bl Dma3Copy
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_080019DC
+	bl Dma3Clear
 _08058856:
 	ldr r0, _08058870
 	ldr r1, _08058874

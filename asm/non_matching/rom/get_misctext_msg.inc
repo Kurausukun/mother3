@@ -38,7 +38,7 @@ _08001C88:
 	rsbs r2, r2, #0
 	adds r0, r4, #0
 	movs r1, #0x19
-	bl memFill
+	bl CpuMemFill
 	movs r0, #0xeb
 	strh r0, [r4]
 	movs r0, #0xe6

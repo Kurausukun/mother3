@@ -247,6 +247,6 @@ _08013194:
 	bx r0
 	.align 2, 0
 _080131A4: .4byte 0xFFFFFC3F
-_080131A8: .4byte gUnknown_02016078
+_080131A8: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _080131AC: .4byte 0x06006800
 	.syntax divided

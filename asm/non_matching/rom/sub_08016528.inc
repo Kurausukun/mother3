@@ -45,7 +45,7 @@ _08016566:
 	lsls r1, r1, #1
 	lsrs r2, r3, #0x10
 	orrs r2, r3
-	bl memFill
+	bl CpuMemFill
 	b _080165CC
 	.align 2, 0
 _0801658C: .4byte 0x00005968

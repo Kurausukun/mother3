@@ -9,7 +9,7 @@ sub_080528A0:
 	adds r7, r2, #0
 	adds r0, r4, #0
 	movs r1, #0x80
-	bl memclear
+	bl CpuMemClear
 	movs r0, #0
 	strh r0, [r7]
 	adds r0, r6, #0

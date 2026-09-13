@@ -4,7 +4,7 @@ sub_08052100:
 	ldr r4, _08052124
 	adds r0, r4, #0
 	movs r1, #0xf4
-	bl memclear
+	bl CpuMemClear
 	movs r1, #0
 	movs r0, #2
 	strh r0, [r4]

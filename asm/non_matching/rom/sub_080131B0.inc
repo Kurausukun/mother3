@@ -241,6 +241,6 @@ _08013388: .4byte 0xFFFFFC3F
 _0801338C: .4byte 0xFFFFBFFF
 _08013390: .4byte 0xFFFF7FFF
 _08013394: .4byte 0xFFFFC3FF
-_08013398: .4byte gUnknown_02016078
+_08013398: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _0801339C: .4byte 0x06006800
 	.syntax divided

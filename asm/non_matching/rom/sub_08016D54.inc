@@ -107,7 +107,7 @@ _08016E06:
 	b _08016E32
 	.align 2, 0
 _08016E20: .4byte gGame
-_08016E24: .4byte gUnknown_02016078
+_08016E24: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _08016E28: .4byte gSomeBlend
 _08016E2C: .4byte 0x00002C92
 _08016E30:

@@ -9,7 +9,7 @@ sub_08051B48:
 	lsls r5, r5, #5
 	mov r0, sp
 	adds r1, r5, #0
-	bl memclear
+	bl CpuMemClear
 	adds r0, r4, #0
 	mov r1, sp
 	movs r2, #1
@@ -25,7 +25,7 @@ sub_08051B48:
 	beq _08051BCC
 	mov r0, sp
 	adds r1, r5, #0
-	bl memclear
+	bl CpuMemClear
 	adds r0, r4, #0
 	mov r1, sp
 	movs r2, #1
@@ -41,7 +41,7 @@ sub_08051B48:
 	beq _08051BCC
 	mov r0, sp
 	adds r1, r5, #0
-	bl memclear
+	bl CpuMemClear
 	adds r0, r4, #0
 	mov r1, sp
 	movs r2, #1

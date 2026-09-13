@@ -54,7 +54,7 @@ _0800131E:
 	ldrh r1, [r4, #4]
 	lsls r1, r1, #1
 	adds r0, r5, #0
-	bl sub_080019DC
+	bl Dma3Clear
 	adds r5, #0x40
 	adds r0, r6, #1
 	lsls r0, r0, #0x10
@@ -74,7 +74,7 @@ _0800133C:
 	adds r5, r0, #0
 	movs r1, #0x80
 	lsls r1, r1, #4
-	bl sub_080019DC
+	bl Dma3Clear
 _08001352:
 	mov r0, sp
 	ldrh r0, [r0]
