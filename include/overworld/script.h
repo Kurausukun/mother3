@@ -95,8 +95,8 @@ struct Game {
     u16 _67a0;
     u8 _67a2[0x67ac - 0x67a2];
     u16 cur_room;
-    u16 cur_track; //67ae
-    u16 cur_track_alt; //67b0
+    u16 cur_track;      // 67ae
+    u16 cur_track_alt;  // 67b0
     u8 _67b2[0x67b8 - 0x67b2];
     s16 cam_target;
     u8 _67ba[0x67c0 - 0x67ba];
@@ -139,8 +139,8 @@ struct Game {
     u16 _8462;
     u8 _8464[0x846f - 0x8464];
     u8 _846f[0x847a - 0x846f];
-    s16 _847a; //847a
-    s16 _847c; //847c
+    s16 _847a;
+    s16 _847c;
     u16 _847e;
     u16 _8480;
     u16 _8482;

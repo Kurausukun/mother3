@@ -16,10 +16,10 @@ extern "C" void PlaySoundBlocking(u32);
 extern "C" Monster* sub_08072EE4(u16);
 extern "C" void playSound(u16);
 extern "C" s32 sub_0807066C(s32, s32);
-extern "C" void sub_08073E3C(Unit*, u32, u32);
+extern "C" bool sub_08073E3C(Unit*, Status::Type, bool);
 extern "C" s32 randS32(s32, s32);
 extern "C" bool IsBossBattle();
-extern "C" void InitHeal(Unit*, u32, u32);
+extern "C" s32 InitHeal(Unit*, u32, bool);
 extern "C" void sub_08073D98(Unit*, u32, u32);
 extern "C" bool IsPlayerAndType(Unit*, u16);
 extern "C" void hitPlayer(Unit*, u32, u32);
@@ -139,43 +139,43 @@ public:
             Unit* t = getTarget(i);
             if (typeIsMonster(t) == true) {
                 switch (t->id()) {
-                case 1:
-                case 2:
-                case 3:
-                case 4:
-                case 5:
-                case 6:
-                case 7:
-                case 0xb:
-                case 0xc:
-                case 0xd:
-                case 0xe:
-                case 0xf:
-                case 0x10:
-                case 0x11:
-                case 0x13:
-                case 0x16:
-                case 0x18:
-                case 0x1a:
-                case 0x1b:
-                case 0x1c:
-                case 0x2e:
-                case 0x54:
-                case 0x5c:
-                case 0x65:
-                case 0x7c:
-                case 0x7d:
-                case 0x8e:
-                case 0x91:
-                case 0xa2:
-                case 0xa9:
-                case 0xae:
-                case 0xb4:
-                case 0xb5:
-                case 0xbb:
-                case 0xbc:
-                case 0xbd:
-                case 0xbe:
+                case Monster::ReconstructedCaribou:
+                case Monster::MrPassion:
+                case Monster::OhSoSnake:
+                case Monster::Clayman:
+                case Monster::MechaDrago:
+                case Monster::PorkTank:
+                case Monster::MrGenetor:
+                case Monster::Porky:
+                case Monster::NaturalKillerCyborg:
+                case Monster::MaskedMan1st:
+                case Monster::WomanizingPigMask1st:
+                case Monster::WomanizingPigMask2nd:
+                case Monster::JealousBass:
+                case Monster::AbsolutelySafeCapsule:
+                case Monster::Porky02:
+                case Monster::NewFassad:
+                case Monster::LordPassion:
+                case Monster::Porky03:
+                case Monster::Porky08:
+                case Monster::MiracleFassad:
+                case Monster::Porky01:
+                case Monster::BarrierTrio:
+                case Monster::EerieSmile3rd:
+                case Monster::Zombieshroom:
+                case Monster::MissMarshmallow:
+                case Monster::AlmostMechaLion:
+                case Monster::SteelGorilla:
+                case Monster::Porky07:
+                case Monster::SadJunkHeap:
+                case Monster::Porky06:
+                case Monster::MasterEddy:
+                case Monster::Porky09:
+                case Monster::Porky10:
+                case Monster::Porky04:
+                case Monster::Porky05:
+                case Monster::MaskedMan2nd:
+                case Monster::MaskedMan3rd:
                     return true;
                 }
             }
@@ -189,7 +189,8 @@ public:
         }
 
         if (_50 == true) {
-            ROMStr(0x178).print(Color::Black(), 1);
+            // [PAUSE60] But it was a dud...[END]
+            ROMStr(0x178).print(Color::Black(), true);
         }
     }
 
@@ -247,10 +248,11 @@ public:
         if (m == NULL)
             return;
 
-        if (m->type() == 4 || isMonsterVariant(m, Monster::StickySlug) == true ||
+        if (m->type() == MonsterType::Mechanical ||
+            isMonsterVariant(m, Monster::StickySlug) == true ||
             isMonsterVariant(m, Monster::SlimySlug) == true) {
             _50 = 0x100;
-        } else if (m->type() == 3) {
+        } else if (m->type() == MonsterType::MechanicalChimera) {
             _50 = 0x80;
         }
         Action::onDamage(target);
@@ -352,7 +354,7 @@ public:
         // [FMT_ARG2] loves cheese!
         // [FMT_ARG2] isn't too fond of cheese.
         ROMStr(hp >= 60 ? 0x186 : 0x187).print(Color::Black(), true);
-        InitHeal(target, hp, 1);
+        InitHeal(target, hp, true);
     }
 };
 
@@ -365,7 +367,7 @@ public:
         if (IsPlayerAndType(target, Player::Boney) == true) {
             Action::action_f8(target);
         } else {
-            InitHeal(target, 6, 1);
+            InitHeal(target, 6, true);
         }
     }
 };
@@ -379,51 +381,61 @@ public:
         switch (randS32(0, 9)) {
         case 0:
             PlayAnimation(Animation::LifeUpG, target, target);
-            InitHeal(target, randS32(80, 140), 1);
+            InitHeal(target, randS32(80, 140), true);
+            // [04 EF][FMT_ARG2] felt better![END]
             ROMStr(0x1cb).print(Color::Black(), true);
             break;
         case 1:
             PlayAnimation(Animation::PsiMagnetGainA, target, target);
             sub_08073D98(target, randS32(20, 50), 1);
+            // [04 EF][FMT_ARG2] was able to relax![END]
             ROMStr(0x1cc).print(Color::Black(), true);
             break;
         case 2:
             if (calcStatusInflict(target, Status::OffUpStrong, 100, true) == true) {
+                // [04 EF][FMT_ARG2] became lively and animated![END]
                 ROMStr(0x1cd).print(Color::Black(), true);
             }
             break;
         case 3:
             if (calcStatusInflict(target, Status::OffDownStrong, 100, true) == true) {
+                // [04 EF][FMT_ARG2] felt unnerved![END]
                 ROMStr(0x1ce).print(Color::Black(), true);
             }
             break;
         case 4:
             if (calcStatusInflict(target, Status::DefUpStrong, 100, true) == true) {
+                // [04 EF][FMT_ARG2] was scared stiff![END]
                 ROMStr(0x1cf).print(Color::Black(), true);
             }
             break;
         case 5:
             if (calcStatusInflict(target, Status::DefDownStrong, 100, true) == true) {
+                // [04 EF][FMT_ARG2] felt weak and powerless![END]
                 ROMStr(0x1d0).print(Color::Black(), true);
             }
             break;
         case 6:
             if (calcStatusInflict(target, Status::MonkeyDanceSP, 100, true) == true) {
+                // [04 EF][FMT_ARG2]'s body became lighter![END]
                 ROMStr(0x1d1).print(Color::Black(), true);
             }
             break;
         case 7:
             if (calcStatusInflict(target, Status::MonkeyDanceSP2, 100, true) == true) {
+                // [04 EF][FMT_ARG2]'s body became heavier![END]
                 ROMStr(0x1d2).print(Color::Black(), true);
             }
             break;
         case 8:
             if (calcStatusInflict(target, Status::Crying, 100, true) == true) {
+                // [04 EF][FMT_ARG2] felt sad and empty![END]
                 ROMStr(0x1d3).print(Color::Black(), true);
             }
             break;
         case 9:
             if (calcStatusInflict(target, Status::Strange, 100, true) == true) {
+                // [04 EF][FMT_ARG2] was overcome by indecent feelings![END]
                 ROMStr(0x1d4).print(Color::Black(), true);
             }
             break;
@@ -531,7 +543,7 @@ public:
 
         Monster* m = dynaCastMonster(target);
         m->monster_300(true);
-        sub_08073E3C(target, 0x33, 0);
+        sub_08073E3C(target, Status::NoBackSprite, false);
         // [04 EF][FMT_ARG2] was tricked into turning around!
         ROMStr(0x176).print(Color::Black(), true);
     }
@@ -642,7 +654,7 @@ public:
         ROMStr(0x184).print(Color::Black(), true);
     }
 
-    u8 calcDidHit(Unit* target) {
+    bool calcDidHit(Unit* target) {
         Unit* u = sub_08072EE4(5);
         if (u == NULL) {
             return false;
@@ -815,7 +827,7 @@ public:
         }
 
         Monster* m = dynaCastMonster(target);
-        if (m->type() == 7) {
+        if (m->type() == MonsterType::Person) {
             return false;
         }
         return true;
@@ -878,62 +890,89 @@ public:
         }
 
         Monster* m = dynaCastMonster(target);
-        if (m->type() == 7) {
+        if (m->type() == MonsterType::Person) {
             return false;
         }
         return true;
     }
 
-    void tellResisted(Unit* target) { ROMStr(0x1ca).print(Color::Black(), 1); }
+    void tellResisted(Unit* target) {
+        // It didn't get through to [05 EF][FMT_ARG2]![END]
+        ROMStr(0x1ca).print(Color::Black(), true);
+    }
 
     void onSuccess(Unit* target) {
         if (typeIsMonster(target) != true)
             return;
 
         switch (target->id()) {
-        case 0x1d:
-        case 0xaa:
+        case Monster::PorkColonel:
+        case Monster::PorkLieutenant:
             setsleep(60);
-            ROMStr(0x19d).print(Color::Black(), 1);
+
+            // [04 EF][FMT_ARG2] answered, "The Civil War!"[END]
+            ROMStr(0x19d).print(Color::Black(), true);
             setsleep(30);
             PlaySoundBlocking(0x61d);
-            ROMStr(0x198).print(Color::Black(), 1);
+
+            // It was the correct answer![END]
+            ROMStr(0x198).print(Color::Black(), true);
             break;
-        case 0xe:
-        case 0xf:
+        case Monster::WomanizingPigMask1st:
+        case Monster::WomanizingPigMask2nd:
             setsleep(60);
-            ROMStr(0x1a1).print(Color::Black(), 1);
+
+            // [04 EF][FMT_ARG2] answered, "OJ!"[END]
+            ROMStr(0x1a1).print(Color::Black(), true);
             setsleep(30);
             PlaySoundBlocking(0x61e);
-            ROMStr(0x199).print(Color::Black(), 1);
+
+            // It wasn't the correct answer![END]
+            ROMStr(0x199).print(Color::Black(), true);
             break;
         case Monster::PorkSoldier:
             setsleep(60);
-            ROMStr(0x1a5).print(Color::Black(), 1);
+
+            // [04 EF][FMT_ARG2] answered, "Prohibition!"[END]
+            ROMStr(0x1a5).print(Color::Black(), true);
             setsleep(30);
             PlaySoundBlocking(0x61e);
-            ROMStr(0x199).print(Color::Black(), 1);
+
+            // It wasn't the correct answer![END]
+            ROMStr(0x199).print(Color::Black(), true);
             break;
-        case 0xac:
+        case Monster::PorkCommander:
             setsleep(60);
-            ROMStr(0x1a9).print(Color::Black(), 1);
+
+            // [04 EF][FMT_ARG2] answered, "The Industrial Revolution!"[END]
+            ROMStr(0x1a9).print(Color::Black(), true);
             setsleep(30);
             PlaySoundBlocking(0x61e);
-            ROMStr(0x199).print(Color::Black(), 1);
+
+            // It wasn't the correct answer![END]
+            ROMStr(0x199).print(Color::Black(), true);
             break;
-        case 0xad:
+        case Monster::NavySqueal:
             setsleep(60);
-            ROMStr(0x1b1).print(Color::Black(), 1);
+
+            // [04 EF][FMT_ARG2] answered, "The Peasants' Revolt!"[END]
+            ROMStr(0x1b1).print(Color::Black(), true);
             setsleep(30);
             PlaySoundBlocking(0x61e);
-            ROMStr(0x199).print(Color::Black(), 1);
+
+            // It wasn't the correct answer![END]
+            ROMStr(0x199).print(Color::Black(), true);
             break;
-        case 0xab:
+        case Monster::PorkColonel2nd:
             setsleep(60);
-            ROMStr(0x1ad).print(Color::Black(), 1);
+
+            // [04 EF][FMT_ARG2] answered, "Battle of the Alamo!"[END]
+            ROMStr(0x1ad).print(Color::Black(), true);
             setsleep(30);
             PlaySoundBlocking(0x61e);
-            ROMStr(0x199).print(Color::Black(), 1);
+
+            // It wasn't the correct answer![END]
+            ROMStr(0x199).print(Color::Black(), true);
             break;
         }
     }

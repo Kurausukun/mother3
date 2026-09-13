@@ -838,7 +838,7 @@ pop {r1}\n\
 bx r1\n\
 ");
 }
-NAKED void sub_0805CD30() {
+NAKED void setEnemySpriteSeen() {
     asm_unified("\n\
 push {r4, r5, r6, lr}\n\
 adds r4, r1, #0\n\

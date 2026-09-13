@@ -25,7 +25,7 @@ sub_0805A844:
 	lsrs r6, r4, #0x10
 	ldr r0, _0805A8FC
 	ldrh r1, [r7]
-	bl sub_08000F04
+	bl resetOAMEntriesByCount
 	adds r4, r0, #0
 	adds r3, r7, #2
 	movs r5, #0

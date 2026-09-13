@@ -187,11 +187,11 @@ void sub_08072B70() {
     } while (getPartyInfo()->party_info_88() == true);
 }
 
-extern "C" bool sub_08072BBC(Unit* u) {
+extern "C" bool IsGuest(Unit* u) {
     return u && u->getRTTI() == GuestRTTI::get();
 }
 
-extern "C" bool sub_08072BE8(Unit* u, u16 id) {
+extern "C" bool IsGuestAndType(Unit* u, u16 id) {
     return u && u->getRTTI() == GuestRTTI::get() && u->id() == id;
 }
 

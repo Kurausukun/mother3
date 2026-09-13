@@ -19,7 +19,7 @@ public:
     virtual void playDim();
     virtual void playAnim();
     virtual void action_a0(Unit* target);
-    virtual u8 calcDidHit(Unit* target);
+    virtual bool calcDidHit(Unit* target);
     virtual void tellMissed(Unit* target);
     virtual bool isResisted(Unit* target);
     virtual void tellResisted(Unit* target);
@@ -59,9 +59,7 @@ public:
     virtual u16 id() const = 0;
     virtual Msg name() const = 0;
     virtual Msg action_1d8() const = 0;
-    //
     virtual Msg action_fixme(s32 idx);
-
     virtual u32 action_1e0() = 0;
     virtual u32 effect() const = 0;
     virtual u32 element() const = 0;

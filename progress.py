@@ -147,11 +147,8 @@ def main():
         adjective = "decompiled" if not args.matching else "matched"
 
         print("src:  {:>9} / {:>8} total bytes {:<10} {:>9.4f}%".format(src, total, adjective, round(src_percent, 4)))
-        # print()
         print("data: {:>9} / {:>8} total bytes analysed   {:>9.4f}%".format(src_data, data_total, round(src_data_percent, 4)))
 
-        with open("cur_progress.txt", "w") as f:
-            f.write(f"{src_percent:.2f}%\n")
     else:
         print("Unknown format argument: " + args.format)
 

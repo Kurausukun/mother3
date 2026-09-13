@@ -53,7 +53,7 @@ _0805A0FC:
 	str r0, [sp, #0xc]
 	ldr r0, _0805A198
 	movs r1, #1
-	bl sub_08000F04
+	bl resetOAMEntriesByCount
 	movs r3, #0
 	ldrsb r3, [r5, r3]
 	ldr r2, [sp]

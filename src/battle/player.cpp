@@ -13,9 +13,9 @@ extern "C" void* getRTTI__6Player() {
 
 Msg createPlayerName(u16 pl) {
     if (pl == 14) {
-        return Msg::genMisctextMsg((u16*)&gSave.hinawa_name, 9);
+        return Msg::genMisctextMsg(gSave.hinawa_name, 9);
     }
-    return Msg::genMisctextMsg((u16*)gCharStats[pl].name, 8);
+    return Msg::genMisctextMsg(gCharStats[pl].name, 8);
 }
 
 extern "C" ASM_FUNC("asm/non_matching/player/sub_0807A904.inc", void __6PlayerUsUs());

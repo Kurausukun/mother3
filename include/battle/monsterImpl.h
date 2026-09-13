@@ -13,14 +13,14 @@ extern ClockData gUnknown_080F8E64;
 extern "C" Action* getMonsterSkill(u32, Unit*);
 extern s32 gUnknown_080F8E6C[];
 extern "C" s32 sub_0807066C(s32, s32);
-extern "C" void sub_0805CD30(u16, u16, u16);
+extern "C" void setEnemySpriteSeen(u16, u16, u8);
 extern "C" void playSound(u16);
 extern "C" void hitPlayer(Unit*, u32, u32);
 extern "C" bool triggerMonsterSkill(Action*);
 s32 sub_08072DFC();
 Monster* sub_08072E18(s32);
 extern "C" bool sub_080742EC(Action*, Monster*);
-extern "C" u8 IsMonsterSkillAndType(Action*, u32);
+extern "C" bool IsMonsterSkillAndType(Action*, u32);
 extern "C" bool IsGoodsAndType(Action*, u32);
 extern "C" s32 GetMonsterCount();
 extern "C" Unit* GetMonster(s32);
@@ -146,7 +146,7 @@ public:
 
     void monster_300(s32 a1) override {
         Monster::monster_300(a1);
-        sub_0805CD30(id(), surprised() != 0, true);
+        setEnemySpriteSeen(id(), surprised() != 0, true);
     }
 
     virtual void setActionCount(u32 value) { mActionCount = value; }

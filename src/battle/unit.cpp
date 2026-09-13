@@ -352,7 +352,7 @@ s32 Unit::findCmd(u16 a1) {
     return 0;
 }
 
-ASM_FUNC("asm/non_matching/unit/unit_268__4UnitUi.inc", u32 Unit::unit_268(u32 a1));
+ASM_FUNC("asm/non_matching/unit/unit_268__4UnitUs.inc", Status::Type Unit::unit_268(Status::Type status));
 
 bool Unit::flagStuff(u16 idx) {
     u16 x = idx - 1;

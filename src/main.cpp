@@ -553,6 +553,7 @@ void sub_08000BE8() {
         CpuMemFill(&gCharStats[i].name, sizeof gCharStats[i].name, -1);
         copyText(&gCharStats[i].name, get_misctext_msg(6, i), tmp);
     }
+
     gCharStats[0].charNo = 0;
     gCharStats[0].spriteNo = 0;
     gCharStats[1].charNo = 1;
@@ -685,7 +686,7 @@ extern "C" OAMEntry* sub_08000F04(GraphicsBuffer* graphics, u16 count) {
 
 static void sub_08000FA0(GraphicsBuffer* graphics, u16 count, u16 priority) {
     // Start from the last allocated OAM entry and work backwards
-    OAMEntry* current_entry = sub_08000F04(graphics, 0) - 1;
+    OAMEntry* current_entry = resetOAMEntriesByCount(graphics, 0) - 1;
 
     // Update priority for 'count' entries working backwards
     for (u16 i = 0; i < count; i++, current_entry--) {
