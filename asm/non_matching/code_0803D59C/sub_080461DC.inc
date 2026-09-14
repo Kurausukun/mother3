@@ -5,7 +5,7 @@ sub_080461DC:
 	push {r7}
 	sub sp, #8
 	movs r0, #0x3d
-	bl getMenuText
+	bl getMenus1Text
 	movs r3, #1
 	rsbs r3, r3, #0
 	movs r1, #0xf

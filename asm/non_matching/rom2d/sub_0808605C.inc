@@ -16,5 +16,5 @@ sub_0808605C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08086080: .4byte vt_09F843E8
+_08086080: .4byte _vt.11RhythmCombo
 	.syntax divided

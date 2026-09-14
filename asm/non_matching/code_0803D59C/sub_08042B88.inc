@@ -4,7 +4,7 @@ sub_08042B88:
 	sub sp, #8
 	adds r6, r0, #0
 	movs r0, #0x26
-	bl getMenuText
+	bl getMenus1Text
 	movs r5, #1
 	rsbs r5, r5, #0
 	movs r4, #0xf
@@ -18,7 +18,7 @@ sub_08042B88:
 	movs r0, #1
 	bl sub_08047E04
 	movs r0, #0x27
-	bl getMenuText
+	bl getMenus1Text
 	str r4, [sp]
 	str r7, [sp, #4]
 	movs r1, #0x88
@@ -28,7 +28,7 @@ sub_08042B88:
 	movs r0, #1
 	bl sub_08047E04
 	movs r0, #5
-	bl getMenuText
+	bl getMenus1Text
 	str r4, [sp]
 	str r7, [sp, #4]
 	movs r1, #0x88

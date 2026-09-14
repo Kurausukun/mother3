@@ -64,7 +64,7 @@ _0804433E:
 	cmp r0, r5
 	beq _0804437E
 	lsrs r0, r1, #0x10
-	bl getMenuText
+	bl getMenus1Text
 	lsls r1, r4, #0x10
 	movs r2, #0x80
 	lsls r2, r2, #0xb

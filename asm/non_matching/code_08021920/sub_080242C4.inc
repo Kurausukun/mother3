@@ -104,7 +104,7 @@ _0802438A:
 	adds r0, r3, r2
 	ldrh r0, [r0]
 	movs r1, #0xf0
-	bl sub_08002FD4
+	bl RemainderNullOnDBZ
 	lsls r0, r0, #0x10
 	lsrs r4, r0, #0x10
 	cmp r4, #0x1f

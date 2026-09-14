@@ -17,7 +17,7 @@ sub_08044F00:
 	adds r0, r0, r1
 	strh r4, [r0]
 	movs r0, #0xb7
-	bl getMenuText
+	bl getMenus1Text
 	movs r1, #0x10
 	movs r2, #0x87
 	bl sub_08047F28

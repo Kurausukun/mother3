@@ -9,7 +9,7 @@ sub_08044598:
 	cmp r0, #0
 	beq _080445C8
 	movs r0, #0x62
-	bl getMenuText
+	bl getMenus1Text
 	movs r1, #2
 	str r1, [sp]
 	movs r1, #0

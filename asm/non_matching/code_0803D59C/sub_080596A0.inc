@@ -69,7 +69,7 @@ _08059724:
 	ldr r0, _0805974C
 	ldr r0, [r0, #8]
 	movs r1, #4
-	bl sub_08002FD4
+	bl RemainderNullOnDBZ
 	cmp r0, #0
 	bne _080597E4
 	ldrh r0, [r5, #6]

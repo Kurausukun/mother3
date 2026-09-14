@@ -459,7 +459,7 @@ _0800DDFA:
 	movs r1, #0
 	ldrsh r0, [r6, r1]
 	ldr r1, [sp, #0x14]
-	bl sub_08002FD4
+	bl RemainderNullOnDBZ
 	add r1, sp, #0xc
 	strh r0, [r1]
 _0800DE14:
@@ -615,7 +615,7 @@ _0800DF2E:
 	movs r3, #0
 	ldrsh r0, [r6, r3]
 	ldr r1, [sp, #0x14]
-	bl sub_08002FD4
+	bl RemainderNullOnDBZ
 	add r1, sp, #0xc
 	strh r0, [r1]
 _0800DF48:

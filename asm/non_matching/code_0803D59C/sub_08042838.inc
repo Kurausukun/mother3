@@ -66,7 +66,7 @@ _0804289E:
 	lsls r0, r0, #2
 	adds r0, r0, r2
 	ldrh r0, [r0, #6]
-	bl getMenuText
+	bl getMenus1Text
 	movs r3, #1
 	rsbs r3, r3, #0
 	movs r1, #0xf
@@ -144,7 +144,7 @@ _0804293E:
 	lsls r0, r0, #2
 	adds r0, r0, r2
 	ldrh r0, [r0, #6]
-	bl getMenuText
+	bl getMenus1Text
 	movs r3, #1
 	rsbs r3, r3, #0
 	movs r1, #0xf

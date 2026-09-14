@@ -57,7 +57,7 @@ _vt.6System::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -130,7 +130,7 @@ _vt.5Event::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -171,7 +171,7 @@ _vt.6Battle::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -400,7 +400,7 @@ _vt.14ShowDownAsLose::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -452,7 +452,7 @@ _vt.16ShowDownAsEscape::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -504,7 +504,7 @@ _vt.13ShowDownAsWin::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -556,7 +556,7 @@ _vt.11UnitTurnEnd::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -608,7 +608,7 @@ _vt.13UnitTurnBegin::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -660,7 +660,7 @@ _vt.8RoundEnd::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -712,7 +712,7 @@ _vt.10RoundBegin::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -764,7 +764,7 @@ _vt.16MaskedManBattleB::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -1027,7 +1027,7 @@ _vt.16MaskedManBattleA::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -1323,7 +1323,7 @@ _vt.11PorkyBattle::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -1598,7 +1598,7 @@ _vt.14PorkyBotBattle::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -1876,7 +1876,7 @@ _vt.16MasterEddyBattle::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -2130,7 +2130,7 @@ _vt.13DefaultBattle::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -2384,7 +2384,7 @@ vt_09F466F0::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -2431,7 +2431,7 @@ vt_09F46768::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -2487,7 +2487,7 @@ vt_09F467F8::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -2655,7 +2655,7 @@ _vt.5Claus::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -3133,7 +3133,7 @@ _vt.5Salsa::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -3614,7 +3614,7 @@ _vt.5Boney::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -4095,7 +4095,7 @@ _vt.6Duster::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -4576,7 +4576,7 @@ _vt.8Kumatora::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -5057,7 +5057,7 @@ _vt.5Lucas::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -5541,7 +5541,7 @@ _vt.5Flint::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -6022,7 +6022,7 @@ _vt.13DefaultPlayer::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -6453,7 +6453,7 @@ vt_09F490E8::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -6497,7 +6497,7 @@ _vt.5Sniff::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -6713,7 +6713,7 @@ _vt.5Sniff::
 	.4byte redirectable__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte userAttackSfx__C11PlayerSkill
+	.4byte userAttackSfx__C11PlayerSkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte userCritSfx__C11PlayerSkill
@@ -6751,7 +6751,7 @@ _vt.11SirenBeetle::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -6967,7 +6967,7 @@ _vt.11SirenBeetle::
 	.4byte redirectable__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte userAttackSfx__C11PlayerSkill
+	.4byte userAttackSfx__C11PlayerSkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte userCritSfx__C11PlayerSkill
@@ -7008,7 +7008,7 @@ _vt.9QuickFlip::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -7224,7 +7224,7 @@ _vt.9QuickFlip::
 	.4byte redirectable__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte userAttackSfx__C11PlayerSkill
+	.4byte userAttackSfx__C11PlayerSkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte userCritSfx__C11PlayerSkill
@@ -7265,7 +7265,7 @@ _vt.19CantAttackMaskedMan::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -7481,7 +7481,7 @@ _vt.19CantAttackMaskedMan::
 	.4byte redirectable__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte userAttackSfx__C11PlayerSkill
+	.4byte userAttackSfx__C11PlayerSkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte userCritSfx__C11PlayerSkill
@@ -7519,7 +7519,7 @@ _vt.3Run::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -7735,7 +7735,7 @@ _vt.3Run::
 	.4byte redirectable__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte userAttackSfx__C11PlayerSkill
+	.4byte userAttackSfx__C11PlayerSkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte userCritSfx__C11PlayerSkill
@@ -7773,7 +7773,7 @@ _vt.5Dance::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -7989,7 +7989,7 @@ _vt.5Dance::
 	.4byte redirectable__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte userAttackSfx__C11PlayerSkill
+	.4byte userAttackSfx__C11PlayerSkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte userCritSfx__C11PlayerSkill
@@ -8027,7 +8027,7 @@ _vt.9MakeLaugh::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -8243,7 +8243,7 @@ _vt.9MakeLaugh::
 	.4byte redirectable__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte userAttackSfx__C11PlayerSkill
+	.4byte userAttackSfx__C11PlayerSkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte userCritSfx__C11PlayerSkill
@@ -8281,7 +8281,7 @@ _vt.9Apologize::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -8497,7 +8497,7 @@ _vt.9Apologize::
 	.4byte redirectable__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte userAttackSfx__C11PlayerSkill
+	.4byte userAttackSfx__C11PlayerSkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte userCritSfx__C11PlayerSkill
@@ -8535,7 +8535,7 @@ _vt.11TickleStick::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -8751,7 +8751,7 @@ _vt.11TickleStick::
 	.4byte redirectable__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte userAttackSfx__C11PlayerSkill
+	.4byte userAttackSfx__C11PlayerSkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte userCritSfx__C11PlayerSkill
@@ -8792,7 +8792,7 @@ _vt.9ScaryMask::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -9008,7 +9008,7 @@ _vt.9ScaryMask::
 	.4byte redirectable__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte userAttackSfx__C11PlayerSkill
+	.4byte userAttackSfx__C11PlayerSkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte userCritSfx__C11PlayerSkill
@@ -9049,7 +9049,7 @@ _vt.9SmokeBomb::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -9265,7 +9265,7 @@ _vt.9SmokeBomb::
 	.4byte redirectable__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte userAttackSfx__C11PlayerSkill
+	.4byte userAttackSfx__C11PlayerSkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte userCritSfx__C11PlayerSkill
@@ -9306,7 +9306,7 @@ _vt.13HypnoPendulum::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -9522,7 +9522,7 @@ _vt.13HypnoPendulum::
 	.4byte redirectable__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte userAttackSfx__C11PlayerSkill
+	.4byte userAttackSfx__C11PlayerSkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte userCritSfx__C11PlayerSkill
@@ -9563,7 +9563,7 @@ _vt.10WallStaple::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -9779,7 +9779,7 @@ _vt.10WallStaple::
 	.4byte redirectable__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte userAttackSfx__C11PlayerSkill
+	.4byte userAttackSfx__C11PlayerSkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte userCritSfx__C11PlayerSkill
@@ -9820,7 +9820,7 @@ _vt.4Bash::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -10036,7 +10036,7 @@ _vt.4Bash::
 	.4byte redirectable__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte userAttackSfx__C11PlayerSkill
+	.4byte userAttackSfx__C11PlayerSkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte userCritSfx__C11PlayerSkill
@@ -10107,7 +10107,7 @@ _vt.18DefaultPlayerSkill::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -10323,7 +10323,7 @@ _vt.18DefaultPlayerSkill::
 	.4byte redirectable__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte userAttackSfx__C11PlayerSkill
+	.4byte userAttackSfx__C11PlayerSkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte userCritSfx__C11PlayerSkill
@@ -10361,7 +10361,7 @@ vt_09F4B948::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -10414,6 +10414,9 @@ _vt.5Guest.10UnitObject::
 	.4byte object_30__5Guest
 	.2byte -32
 	.2byte 0
+	.4byte object_38__5Guest
+	.2byte -32
+	.2byte 0
 	.4byte object_40__5Guest
 	.2byte -32
 	.2byte 0
@@ -10430,9 +10433,6 @@ _vt.5Guest.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte object_68__5Guest
-	.2byte -32
-	.2byte 0
-	.4byte object_70__5Guest
 
 _vt.5Guest::
 	.2byte 0
@@ -10464,7 +10464,7 @@ _vt.5Guest::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -10713,7 +10713,7 @@ _vt.5Guest::
 	.4byte onRoundEnd__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte object_38__5Guest
+	.4byte imposter_object_38__5Guest
 
 _vt.9GuestRTTI::
 	.2byte 0
@@ -10753,6 +10753,9 @@ _vt.5Ionia.10UnitObject::
 	.4byte object_30__5Guest
 	.2byte -32
 	.2byte 0
+	.4byte object_38__5Guest
+	.2byte -32
+	.2byte 0
 	.4byte object_40__5Guest
 	.2byte -32
 	.2byte 0
@@ -10769,9 +10772,6 @@ _vt.5Ionia.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte object_68__5Guest
-	.2byte -32
-	.2byte 0
-	.4byte object_70__5Guest
 
 _vt.5Ionia::
 	.2byte 0
@@ -10803,7 +10803,7 @@ _vt.5Ionia::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -11052,7 +11052,7 @@ _vt.5Ionia::
 	.4byte onRoundEnd__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte object_38__5Guest
+	.4byte imposter_object_38__5Guest
 	.2byte 0
 	.2byte 0
 	.4byte _e8__12DefaultGuest
@@ -11093,6 +11093,9 @@ _vt.6Fassad.10UnitObject::
 	.4byte object_30__5Guest
 	.2byte -32
 	.2byte 0
+	.4byte object_38__5Guest
+	.2byte -32
+	.2byte 0
 	.4byte object_40__5Guest
 	.2byte -32
 	.2byte 0
@@ -11109,9 +11112,6 @@ _vt.6Fassad.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte object_68__5Guest
-	.2byte -32
-	.2byte 0
-	.4byte object_70__5Guest
 
 _vt.6Fassad::
 	.2byte 0
@@ -11143,7 +11143,7 @@ _vt.6Fassad::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -11392,7 +11392,7 @@ _vt.6Fassad::
 	.4byte onRoundEnd__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte object_38__5Guest
+	.4byte imposter_object_38__5Guest
 	.2byte 0
 	.2byte 0
 	.4byte _e8__6Fassad
@@ -11442,6 +11442,9 @@ _vt.4Wess.10UnitObject::
 	.4byte object_30__5Guest
 	.2byte -32
 	.2byte 0
+	.4byte object_38__5Guest
+	.2byte -32
+	.2byte 0
 	.4byte object_40__5Guest
 	.2byte -32
 	.2byte 0
@@ -11458,9 +11461,6 @@ _vt.4Wess.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte object_68__5Guest
-	.2byte -32
-	.2byte 0
-	.4byte object_70__5Guest
 
 _vt.4Wess::
 	.2byte 0
@@ -11492,7 +11492,7 @@ _vt.4Wess::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -11741,7 +11741,7 @@ _vt.4Wess::
 	.4byte onRoundEnd__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte object_38__5Guest
+	.4byte imposter_object_38__5Guest
 	.2byte 0
 	.2byte 0
 	.4byte _e8__12DefaultGuest
@@ -11785,6 +11785,9 @@ _vt.4Alec.10UnitObject::
 	.4byte object_30__5Guest
 	.2byte -32
 	.2byte 0
+	.4byte object_38__5Guest
+	.2byte -32
+	.2byte 0
 	.4byte object_40__5Guest
 	.2byte -32
 	.2byte 0
@@ -11801,9 +11804,6 @@ _vt.4Alec.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte object_68__5Guest
-	.2byte -32
-	.2byte 0
-	.4byte object_70__5Guest
 
 _vt.4Alec::
 	.2byte 0
@@ -11835,7 +11835,7 @@ _vt.4Alec::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -12084,7 +12084,7 @@ _vt.4Alec::
 	.4byte onRoundEnd__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte object_38__5Guest
+	.4byte imposter_object_38__5Guest
 	.2byte 0
 	.2byte 0
 	.4byte _e8__12DefaultGuest
@@ -12131,6 +12131,9 @@ _vt.4Fuel.10UnitObject::
 	.4byte object_30__5Guest
 	.2byte -32
 	.2byte 0
+	.4byte object_38__5Guest
+	.2byte -32
+	.2byte 0
 	.4byte object_40__5Guest
 	.2byte -32
 	.2byte 0
@@ -12147,9 +12150,6 @@ _vt.4Fuel.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte object_68__5Guest
-	.2byte -32
-	.2byte 0
-	.4byte object_70__5Guest
 
 _vt.4Fuel::
 	.2byte 0
@@ -12181,7 +12181,7 @@ _vt.4Fuel::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -12430,7 +12430,7 @@ _vt.4Fuel::
 	.4byte onRoundEnd__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte object_38__5Guest
+	.4byte imposter_object_38__5Guest
 	.2byte 0
 	.2byte 0
 	.4byte _e8__12DefaultGuest
@@ -12471,6 +12471,9 @@ _vt.6Thomas.10UnitObject::
 	.4byte object_30__5Guest
 	.2byte -32
 	.2byte 0
+	.4byte object_38__5Guest
+	.2byte -32
+	.2byte 0
 	.4byte object_40__5Guest
 	.2byte -32
 	.2byte 0
@@ -12487,9 +12490,6 @@ _vt.6Thomas.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte object_68__5Guest
-	.2byte -32
-	.2byte 0
-	.4byte object_70__5Guest
 
 _vt.6Thomas::
 	.2byte 0
@@ -12521,7 +12521,7 @@ _vt.6Thomas::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -12770,7 +12770,7 @@ _vt.6Thomas::
 	.4byte onRoundEnd__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte object_38__5Guest
+	.4byte imposter_object_38__5Guest
 	.2byte 0
 	.2byte 0
 	.4byte _e8__12DefaultGuest
@@ -12811,6 +12811,9 @@ _vt.12DefaultGuest.10UnitObject::
 	.4byte object_30__5Guest
 	.2byte -32
 	.2byte 0
+	.4byte object_38__5Guest
+	.2byte -32
+	.2byte 0
 	.4byte object_40__5Guest
 	.2byte -32
 	.2byte 0
@@ -12827,9 +12830,6 @@ _vt.12DefaultGuest.10UnitObject::
 	.2byte -32
 	.2byte 0
 	.4byte object_68__5Guest
-	.2byte -32
-	.2byte 0
-	.4byte object_70__5Guest
 
 _vt.12DefaultGuest::
 	.2byte 0
@@ -12861,7 +12861,7 @@ _vt.12DefaultGuest::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -13110,7 +13110,7 @@ _vt.12DefaultGuest::
 	.4byte onRoundEnd__5Guest
 	.2byte 0
 	.2byte 0
-	.4byte object_38__5Guest
+	.4byte imposter_object_38__5Guest
 	.2byte 0
 	.2byte 0
 	.4byte _e8__12DefaultGuest
@@ -13154,7 +13154,7 @@ _vt.12GuestSkill24::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -13408,7 +13408,7 @@ _vt.10AlecAttack::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -13662,7 +13662,7 @@ _vt.15AlecShakeWakeUp::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -13916,7 +13916,7 @@ _vt.16FassadPunishizer::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -14170,7 +14170,7 @@ _vt.17DefaultGuestSkill::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -14424,7 +14424,7 @@ vt_09F4E320::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -14613,7 +14613,7 @@ _vt.12MaskedMan3rd::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -15067,7 +15067,7 @@ _vt.12MaskedMan2nd::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -15547,7 +15547,7 @@ _vt.21AbsolutelySafeCapsule::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -16001,7 +16001,7 @@ _vt.5Porky::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -16503,7 +16503,7 @@ _vt.14MechaPorky0607::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -16966,7 +16966,7 @@ _vt.10MechaPorky::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -17429,7 +17429,7 @@ _vt.19NaturalKillerCyborg::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -17907,7 +17907,7 @@ _vt.14PorkColonel2nd::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -18361,7 +18361,7 @@ _vt.12NuclearRobot::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -18818,7 +18818,7 @@ _vt.12UpgradedRobo::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -19272,7 +19272,7 @@ _vt.14PorkLieutenant::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -19726,7 +19726,7 @@ _vt.9MiracleFassad::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -20192,7 +20192,7 @@ _vt.12MaskedMan1st::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -20649,7 +20649,7 @@ _vt.9HuggyBomb::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -21121,7 +21121,7 @@ _vt.7TLCTree::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -21575,7 +21575,7 @@ _vt.11BarrierTrio::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -22050,7 +22050,7 @@ _vt.9Dragonfly::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -22504,7 +22504,7 @@ _vt.13EerieSmile4th::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -22958,7 +22958,7 @@ _vt.8Titanian::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -23412,7 +23412,7 @@ _vt.13EerieSmile2nd::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -23866,7 +23866,7 @@ _vt.9Monkalrus::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -24320,7 +24320,7 @@ _vt.13EerieSmile1st::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -24774,7 +24774,7 @@ _vt.13EerieSmile3rd::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -25228,7 +25228,7 @@ _vt.12Zombieshroom::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -25682,7 +25682,7 @@ _vt.10MasterEddy::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -26136,7 +26136,7 @@ _vt.10FishRoeMan::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -26590,7 +26590,7 @@ _vt.10NavySqueal::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -27044,7 +27044,7 @@ _vt.9NewFassad::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -27513,7 +27513,7 @@ _vt.7Hothead::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -27967,7 +27967,7 @@ _vt.8Blazefly::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -28421,7 +28421,7 @@ _vt.10ScaredyBot::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -28875,7 +28875,7 @@ _vt.12SteelGorilla::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -29338,7 +29338,7 @@ _vt.7TenYeti::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -29792,7 +29792,7 @@ _vt.9ChillyDog::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -30246,7 +30246,7 @@ _vt.13PorkCommander::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -30700,7 +30700,7 @@ _vt.15AlmostMechaLion::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -31157,7 +31157,7 @@ _vt.7BroTeam::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -31611,7 +31611,7 @@ _vt.9MrGenetor::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -32077,7 +32077,7 @@ _vt.15MissMarshmallow::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -32540,7 +32540,7 @@ _vt.11SurpriseBox::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -32994,7 +32994,7 @@ _vt.10BatteryMan::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -33448,7 +33448,7 @@ _vt.9MinorRobo::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -33911,7 +33911,7 @@ _vt.11SadJunkHeap::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -34368,7 +34368,7 @@ _vt.11AtomicRobot::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -34822,7 +34822,7 @@ _vt.9Barricade::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -35276,7 +35276,7 @@ _vt.20WomanizingPigMask2nd::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -35742,7 +35742,7 @@ _vt.20WomanizingPigmask1st::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -36196,7 +36196,7 @@ _vt.11WoundupBear::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -36650,7 +36650,7 @@ _vt.11MechaTurtle::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -37104,7 +37104,7 @@ _vt.11JealousBass::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -37567,7 +37567,7 @@ _vt.10BeatenDrum::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -38021,7 +38021,7 @@ _vt.13WailingGuitar::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -38475,7 +38475,7 @@ _vt.10StickySlug::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -38929,7 +38929,7 @@ _vt.8Pigtunia::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -39383,7 +39383,7 @@ _vt.11Cattlesnake::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -39837,7 +39837,7 @@ _vt.10StickyGlop::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -40300,7 +40300,7 @@ _vt.10SandLizard::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -40754,7 +40754,7 @@ _vt.8PorkTank::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -41217,7 +41217,7 @@ _vt.11PorkSoldier::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -41671,7 +41671,7 @@ _vt.8Pseudoor::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -42125,7 +42125,7 @@ _vt.12RockingGhost::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -42579,7 +42579,7 @@ _vt.8Arachnid::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -43033,7 +43033,7 @@ _vt.11MobileGrave::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -43487,7 +43487,7 @@ _vt.9OhSoSnake::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -43953,7 +43953,7 @@ _vt.7Clayman::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -44419,7 +44419,7 @@ _vt.9MrPassion::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -44882,7 +44882,7 @@ _vt.4Tree::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -45336,7 +45336,7 @@ _vt.12BaldingEagle::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -45790,7 +45790,7 @@ _vt.11WalkingBush::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -46244,7 +46244,7 @@ _vt.9PotatoBug::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -46698,7 +46698,7 @@ _vt.12SootDumpling::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -47152,7 +47152,7 @@ _vt.15BakedYammonster::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -47606,7 +47606,7 @@ _vt.10MechaDrago::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -48063,7 +48063,7 @@ _vt.20ReconstructedCaribou::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -48517,7 +48517,7 @@ _vt.14DefaultMonster::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -48924,7 +48924,7 @@ _vt.14CallForHelp6th::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -49184,7 +49184,7 @@ _vt.17FireflyBuzzAround::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -49444,7 +49444,7 @@ _vt.13SoundAlarm3rd::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -49704,7 +49704,7 @@ _vt.22MiracleFassadEmitLight::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -49964,7 +49964,7 @@ _vt.15MonsterSkill237::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -50224,7 +50224,7 @@ _vt.17MechaStartBeeping::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -50484,7 +50484,7 @@ _vt.16TLCTreeBabyBirds::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -50744,7 +50744,7 @@ _vt.17StrikeBarrierPose::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -51004,7 +51004,7 @@ _vt.19BarrierTrioDropPose::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -51264,7 +51264,7 @@ _vt.18BarrierPoseCrushed::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -51524,7 +51524,7 @@ _vt.20MagmanEruptPyreflies::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -51784,7 +51784,7 @@ _vt.20PigmaskCaptainRunOff::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -52044,7 +52044,7 @@ _vt.14ShortCircuited::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -52304,7 +52304,7 @@ _vt.13SoundAlarm2nd::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -52564,7 +52564,7 @@ _vt.23MrGenetorFinishCharging::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -52824,7 +52824,7 @@ _vt.24MissMarshmallowTickedOff::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -53084,7 +53084,7 @@ _vt.25FiercePorkTrooperAngerMax::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -53344,7 +53344,7 @@ _vt.14CallForHelp5th::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -53604,7 +53604,7 @@ _vt.14CallForHelp4th::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -53864,7 +53864,7 @@ _vt.14MarchingAttack::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -54124,7 +54124,7 @@ _vt.24MonsterSixteenBeatAttack::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -54384,7 +54384,7 @@ _vt.14MonsterSkill94::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -54644,7 +54644,7 @@ _vt.19MonsterLookOtherWay::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -54904,7 +54904,7 @@ _vt.16MonsterPkFreezeG::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -55164,7 +55164,7 @@ _vt.16PigtuniaSowSeeds::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -55424,7 +55424,7 @@ _vt.14CallForHelp3rd::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -55684,7 +55684,7 @@ _vt.20SquawkingStickSqueak::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -55944,7 +55944,7 @@ _vt.15MonsterSkill156::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -56204,7 +56204,7 @@ _vt.13GooeyGooSplit::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -56467,7 +56467,7 @@ _vt.23SandLizardEatDungBeetle::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -56727,7 +56727,7 @@ _vt.15OhSoSnakeEmerge::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -56987,7 +56987,7 @@ _vt.10SoundAlarm::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -57247,7 +57247,7 @@ _vt.12MonsterGetUp::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -57507,7 +57507,7 @@ _vt.17PseudoorShutDoors::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -57767,7 +57767,7 @@ _vt.15DropFromCeiling::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -58027,7 +58027,7 @@ _vt.11CallForHelp::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -58287,7 +58287,7 @@ _vt.21WalkingBushieGreeting::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -58547,7 +58547,7 @@ _vt.14CallForHelp2nd::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -58807,7 +58807,7 @@ _vt.14MonsterSkillF1::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -59067,7 +59067,7 @@ _vt.17MonsterTurnAround::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -59327,7 +59327,7 @@ _vt.12ShieldKiller::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -59587,7 +59587,7 @@ _vt.14PaleGreenLight::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -59853,7 +59853,7 @@ _vt.15MonsterHealingA::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -60113,7 +60113,7 @@ _vt.20PigmaskMajorTimeBomb::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -60373,7 +60373,7 @@ _vt.10PorkyCough::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -60633,7 +60633,7 @@ _vt.13PowerUpSystem::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -60893,7 +60893,7 @@ _vt.17MonsterPkFlash2nd::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -61153,7 +61153,7 @@ _vt.18MonsterPsiCounterA::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -61413,7 +61413,7 @@ _vt.17MonsterPsiShieldA::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -61673,7 +61673,7 @@ _vt.15MonsterCounterA::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -61933,7 +61933,7 @@ _vt.14MonsterPkFlash::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -62193,7 +62193,7 @@ _vt.14MonsterShieldA::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -62453,7 +62453,7 @@ _vt.23CarpetMonsterYankCarpet::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -62713,7 +62713,7 @@ _vt.14BatteryManJump::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -62973,7 +62973,7 @@ _vt.14MonsterPkLoveO::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -63233,7 +63233,7 @@ _vt.14MonsterPkLoveA::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -63493,7 +63493,7 @@ _vt.17MonsterPkThunderA::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -63753,7 +63753,7 @@ _vt.17MonsterPsiMagnetA::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -64013,7 +64013,7 @@ _vt.26NewFassadMusicalHornAttack::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -64273,7 +64273,7 @@ _vt.22MaskedManLightningBolt::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -64533,7 +64533,7 @@ _vt.13MonsterAttack::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -64793,7 +64793,7 @@ _vt.19RhinocerocketCharge::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -65053,7 +65053,7 @@ _vt.21FiercePorkTrooperJump::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -65313,7 +65313,7 @@ _vt.22JealousBassJamSessionB::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -65573,7 +65573,7 @@ _vt.22JealousBassJamSessionA::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -65833,7 +65833,7 @@ _vt.16ClaymanCrashDown::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -66093,7 +66093,7 @@ _vt.26LordPassionThrowEverything::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -66353,7 +66353,7 @@ _vt.18MonsterComboAttack::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -66613,7 +66613,7 @@ _vt.24NKCyborgEndOfCenturyBeam::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -66873,7 +66873,7 @@ _vt.21PigmaskMajorThrowBomb::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -67133,7 +67133,7 @@ _vt.14ExplosiveBlast::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -67393,7 +67393,7 @@ _vt.19MasterEddyWhirlpool::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -67653,7 +67653,7 @@ _vt.19FishRoeManLeapMouth::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -67913,7 +67913,7 @@ _vt.21MrGenetorDischargeZap::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -68173,7 +68173,7 @@ _vt.8HPSucker::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -68433,7 +68433,7 @@ _vt.21MechaTurtleMachineGun::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -68693,7 +68693,7 @@ _vt.18PorkTankFireCannon::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -68956,7 +68956,7 @@ _vt.18OhSoSnakeDiveWater::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -69216,7 +69216,7 @@ _vt.19SpinSomethingAround::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -69476,7 +69476,7 @@ _vt.9BloodSuck::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -69736,7 +69736,7 @@ _vt.11ShootFlames::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -69996,7 +69996,7 @@ _vt.19DefaultMonsterSkill::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -70256,7 +70256,7 @@ _vt.11StatusNoExp::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -70381,7 +70381,7 @@ _vt.12StatusSmelly::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -70506,7 +70506,7 @@ _vt.13StatusStrange::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -70631,7 +70631,7 @@ _vt.20StatusMonkeyDanceIQ2::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -70807,7 +70807,7 @@ _vt.20StatusMonkeyDanceSP2::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -70983,7 +70983,7 @@ _vt.21StatusMonkeyDanceDef2::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -71159,7 +71159,7 @@ _vt.21StatusMonkeyDanceOff2::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -71335,7 +71335,7 @@ _vt.19StatusMonkeyDanceIQ::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -71511,7 +71511,7 @@ _vt.19StatusMonkeyDanceSP::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -71687,7 +71687,7 @@ _vt.20StatusMonkeyDanceDef::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -71863,7 +71863,7 @@ _vt.20StatusMonkeyDanceOff::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -72039,7 +72039,7 @@ _vt.16StatusParamsDown::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -72215,7 +72215,7 @@ _vt.14StatusParamsUp::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -72391,7 +72391,7 @@ _vt.17StatusDefUpStrong::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -72567,7 +72567,7 @@ _vt.14StatusDefUpMid::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -72743,7 +72743,7 @@ _vt.15StatusDefUpWeak::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -72919,7 +72919,7 @@ _vt.17StatusOffUpStrong::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -73095,7 +73095,7 @@ _vt.14StatusOffUpMid::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -73271,7 +73271,7 @@ _vt.15StatusOffUpWeak::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -73447,7 +73447,7 @@ _vt.19StatusDefDownStrong::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -73623,7 +73623,7 @@ _vt.16StatusDefDownMid::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -73799,7 +73799,7 @@ _vt.17StatusDefDownWeak::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -73975,7 +73975,7 @@ _vt.19StatusOffDownStrong::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -74151,7 +74151,7 @@ _vt.16StatusOffDownMid::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -74327,7 +74327,7 @@ _vt.17StatusOffDownWeak::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -74503,7 +74503,7 @@ _vt.12StatusDefend::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -74679,7 +74679,7 @@ _vt.11StatusFleas::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -74855,7 +74855,7 @@ _vt.12StatusCrying::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -75031,7 +75031,7 @@ _vt.14StatusParamMod::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -75207,7 +75207,7 @@ _vt.18StatusNoBackSprite::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -75332,7 +75332,7 @@ _vt.13StatusStapled::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -75457,7 +75457,7 @@ _vt.10StatusFell::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -75582,7 +75582,7 @@ _vt.10StatusDCMC::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -75707,7 +75707,7 @@ _vt.11StatusDance::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -75832,7 +75832,7 @@ _vt.14StatusLaughing::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -75957,7 +75957,7 @@ _vt.16StatusApologetic::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -76082,7 +76082,7 @@ _vt.12StatusFrozen::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -76207,7 +76207,7 @@ _vt.14StatusNauseous::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -76332,7 +76332,7 @@ _vt.15StatusForgetful::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -76457,7 +76457,7 @@ _vt.11StatusSleep::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -76582,7 +76582,7 @@ _vt.10StatusNumb::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -76707,7 +76707,7 @@ _vt.13StatusRefresh::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -76832,7 +76832,7 @@ _vt.12StatusEndure::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -76957,7 +76957,7 @@ _vt.14StatusTimeBomb::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -77082,7 +77082,7 @@ _vt.16StatusPsiCounter::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -77207,7 +77207,7 @@ _vt.15StatusPsiShield::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -77332,7 +77332,7 @@ _vt.18StatusElectrocuted::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -77457,7 +77457,7 @@ _vt.13StatusCounter::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -77582,7 +77582,7 @@ _vt.12StatusShield::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -77707,7 +77707,7 @@ _vt.12StatusOnFire::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -77832,7 +77832,7 @@ _vt.12StatusPoison::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -77957,7 +77957,7 @@ _vt.13DefaultStatus::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -78082,7 +78082,7 @@ _vt.9HealingGO::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -78345,7 +78345,7 @@ _vt.8HealingB::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -78608,7 +78608,7 @@ _vt.8HealingA::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -78871,7 +78871,7 @@ _vt.10PsiCounter::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -79134,7 +79134,7 @@ _vt.9PsiShield::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -79397,7 +79397,7 @@ _vt.7Counter::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -79660,7 +79660,7 @@ _vt.6Shield::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -79923,7 +79923,7 @@ _vt.7PkFlash::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -80189,7 +80189,7 @@ _vt.7LifeupG::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -80452,7 +80452,7 @@ _vt.9PsiMagnet::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -80715,7 +80715,7 @@ _vt.8PkGround::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -80978,7 +80978,7 @@ _vt.11PkThunderGO::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -81241,7 +81241,7 @@ _vt.11PkThunderAB::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -81504,7 +81504,7 @@ _vt.10DefaultPsi::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -81767,7 +81767,7 @@ _vt.5Goods::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -82047,7 +82047,7 @@ _vt.11TriviaCard4::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -82325,7 +82325,7 @@ _vt.11TriviaCard3::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -82603,7 +82603,7 @@ _vt.11TriviaCard2::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -82881,7 +82881,7 @@ _vt.11TriviaCard1::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -83159,7 +83159,7 @@ _vt.9DragoFang::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -83437,7 +83437,7 @@ _vt.14ShieldSnatcher::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -83715,7 +83715,7 @@ _vt.16CupOfLifenoodles::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -83993,7 +83993,7 @@ _vt.10SecretHerb::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -84271,7 +84271,7 @@ _vt.8PaperFan::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -84549,7 +84549,7 @@ _vt.11MadeYouLook::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -84827,7 +84827,7 @@ _vt.15AttackAttractor::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -85105,7 +85105,7 @@ _vt.15EnemyWimperizer::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -85383,7 +85383,7 @@ _vt.15EnemyBufferizer::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -85661,7 +85661,7 @@ _vt.9LottoMeal::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -85939,7 +85939,7 @@ _vt.9DoggyFood::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -86217,7 +86217,7 @@ _vt.14PeculiarCheese::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -86495,7 +86495,7 @@ _vt.8BugSpray::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -86773,7 +86773,7 @@ _vt.13AncientBanana::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -87051,7 +87051,7 @@ _vt.11HoneyShower::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -87329,7 +87329,7 @@ _vt.12SaltwaterGun::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -87607,7 +87607,7 @@ _vt.15NewYearsEveBomb::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -87888,7 +87888,7 @@ _vt.12DefaultGoods::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -88166,7 +88166,7 @@ vt_09F7DC80::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -88273,7 +88273,7 @@ vt_09F7DD98::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -88380,7 +88380,7 @@ vt_09F7DEB0::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -88448,7 +88448,7 @@ vt_09F7DF60::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -88588,7 +88588,7 @@ vt_09F7E0D0::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -88754,7 +88754,7 @@ _vt.6SndMon::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -88821,7 +88821,7 @@ vt_09F7E328::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -88895,7 +88895,7 @@ vt_09F7E3E8::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -88939,7 +88939,7 @@ vt_09F7E458::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -89025,7 +89025,7 @@ vt_09F7E538::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -89138,7 +89138,7 @@ vt_09F7E660::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -89233,7 +89233,7 @@ vt_09F7E758::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -89352,7 +89352,7 @@ vt_09F7E890::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -89447,7 +89447,7 @@ vt_09F7E988::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -89561,7 +89561,7 @@ _vt.4Base::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -89610,7 +89610,7 @@ _vt.3Irc::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -89662,7 +89662,7 @@ _vt.5Clock::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -89714,7 +89714,7 @@ _vt.12PostSysClock::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -89766,7 +89766,7 @@ _vt.12PostAppClock::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -89818,7 +89818,7 @@ _vt.8AppClock::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -89870,7 +89870,7 @@ _vt.11PreAppClock::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -89922,7 +89922,7 @@ _vt.8SysClock::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -89974,7 +89974,7 @@ _vt.11PreSysClock::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -90034,7 +90034,7 @@ _vt.7GEngine::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -90086,7 +90086,7 @@ _vt.8BGEngine::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -90138,7 +90138,7 @@ _vt.9ObjEngine::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -90190,7 +90190,7 @@ _vt.10ObjChrPool::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -90242,7 +90242,7 @@ _vt.10ObjPltPool::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -90294,7 +90294,7 @@ _vt.18SelectKeyLongPress::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -90346,7 +90346,7 @@ _vt.14SelectKeyPress::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -90398,7 +90398,7 @@ _vt.17StartKeyLongPress::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -90450,7 +90450,7 @@ _vt.13StartKeyPress::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -90502,7 +90502,7 @@ _vt.13RKeyLongPress::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -90554,7 +90554,7 @@ _vt.9RKeyPress::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -90606,7 +90606,7 @@ _vt.13LKeyLongPress::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -90658,7 +90658,7 @@ _vt.9LKeyPress::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -90710,7 +90710,7 @@ _vt.13BKeyLongPress::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -90762,7 +90762,7 @@ _vt.9BKeyPress::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -90814,7 +90814,7 @@ _vt.13AKeyLongPress::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -90866,7 +90866,7 @@ _vt.9AKeyPress::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -90918,7 +90918,7 @@ _vt.17RightKeyLongPress::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -90970,7 +90970,7 @@ _vt.13RightKeyPress::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -91022,7 +91022,7 @@ _vt.16LeftKeyLongPress::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -91074,7 +91074,7 @@ _vt.12LeftKeyPress::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -91126,7 +91126,7 @@ _vt.16DownKeyLongPress::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -91178,7 +91178,7 @@ _vt.12DownKeyPress::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -91230,7 +91230,7 @@ _vt.14UpKeyLongPress::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -91282,7 +91282,7 @@ _vt.10UpKeyPress::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -91334,7 +91334,7 @@ _vt.6KeyPad::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -91402,7 +91402,7 @@ _vt.11Unk0806D64C::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -91479,7 +91479,7 @@ vt_09F7FD18::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -91574,7 +91574,7 @@ vt_09F7FE10::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -91698,7 +91698,7 @@ _vt.9FntSystem::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -91756,7 +91756,7 @@ vt_09F7FFE0::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -91836,7 +91836,7 @@ _vt.9RasSystem::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -91909,7 +91909,7 @@ vt_09F80168::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -91989,7 +91989,7 @@ vt_09F80238::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -92090,7 +92090,7 @@ vt_09F80340::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -92149,7 +92149,7 @@ vt_09F803D8::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -92208,7 +92208,7 @@ vt_09F80470::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -92267,7 +92267,7 @@ _vt.9EfcSystem::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -92346,7 +92346,7 @@ _vt.9SndSystem::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -92416,7 +92416,7 @@ _vt.5Sound::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -92508,7 +92508,7 @@ vt_09F80770::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -92558,7 +92558,7 @@ _vt.5Combo::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -92698,7 +92698,7 @@ _vt.9ComboRoot::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -92838,7 +92838,7 @@ vt_09F80AD0::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -92924,7 +92924,7 @@ vt_09F80BB0::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -93007,7 +93007,7 @@ vt_09F80C88::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -93063,7 +93063,7 @@ vt_09F80D18::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -93158,7 +93158,7 @@ vt_09F80E10::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -93253,7 +93253,7 @@ vt_09F80F08::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -93348,7 +93348,7 @@ vt_09F81000::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -93443,7 +93443,7 @@ _vt.10KeyFocuser::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -93484,7 +93484,7 @@ _vt.15KeyFocusManager::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -93545,7 +93545,7 @@ _vt.9RhythmOut::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -93576,7 +93576,7 @@ _vt.8RhythmIn::
 	.4byte _._8RhythmIn
 	.2byte 0
 	.2byte 0
-	.4byte getRTTI__RhythmIn
+	.4byte getRTTI__8RhythmIn
 	.2byte 0
 	.2byte 0
 	.4byte base_1c__4Base
@@ -93597,7 +93597,7 @@ _vt.8RhythmIn::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -93625,7 +93625,7 @@ _vt.9RhythmBgm::
 	.4byte 0
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807473C
+	.4byte _._9RhythmBgm
 	.2byte 0
 	.2byte 0
 	.4byte getRTTI__9RhythmBgm
@@ -93649,7 +93649,7 @@ _vt.9RhythmBgm::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -93697,7 +93697,7 @@ _vt.9RhythmBgm::
 	.4byte getIndex__5Sound
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807487C
+	.4byte getTempo__9RhythmBgm
 	.2byte 0
 	.2byte 0
 	.4byte getVolume__5Sound
@@ -93712,13 +93712,13 @@ _vt.9RhythmBgm::
 	.4byte getPlayerClock__5Sound
 	.2byte 0
 	.2byte 0
-	.4byte sub_0807476C
+	.4byte sub_0807476C__9RhythmBgm
 	.2byte 0
 	.2byte 0
-	.4byte sub_080747F4
+	.4byte sub_080747F4__9RhythmBgm
 	.2byte 0
 	.2byte 0
-	.4byte sub_08074898
+	.4byte sub_08074898__9RhythmBgm
 
 _vt.13RhythmBgmRTTI::
 	.2byte 0
@@ -93808,7 +93808,7 @@ _vt.4Unit::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -94074,7 +94074,7 @@ _vt.7UnitDie::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -94126,7 +94126,7 @@ _vt.10UnitEscape::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -94178,7 +94178,7 @@ _vt.10UnitRevive::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -94230,7 +94230,7 @@ _vt.8UnitJoin::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -94282,7 +94282,7 @@ _vt.6Resume::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -94334,7 +94334,7 @@ _vt.7Suspend::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -94433,7 +94433,7 @@ _vt.10UnitTarget::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -94546,7 +94546,7 @@ _vt.16UnitTargetChoice::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -94730,7 +94730,7 @@ _vt.6Action::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -95031,7 +95031,7 @@ _vt.6Player::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -95461,7 +95461,7 @@ vt_09F82558::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -95553,7 +95553,7 @@ vt_09F82648::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -95603,7 +95603,7 @@ vt_09F826C8::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -95689,7 +95689,7 @@ vt_09F827A8::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -95781,7 +95781,7 @@ vt_09F82898::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -95876,7 +95876,7 @@ vt_09F82990::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -95935,7 +95935,7 @@ _vt.11PlayerSkill::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -96151,7 +96151,7 @@ _vt.11PlayerSkill::
 	.4byte redirectable__C11PlayerSkill
 	.2byte 0
 	.2byte 0
-	.4byte userAttackSfx__C11PlayerSkill
+	.4byte userAttackSfx__C11PlayerSkillP4Unit
 	.2byte 0
 	.2byte 0
 	.4byte userCritSfx__C11PlayerSkill
@@ -96200,7 +96200,7 @@ _vt.10GuestSkill::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -96512,7 +96512,7 @@ _vt.7Monster::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -96903,7 +96903,7 @@ _vt.12BattleSprite::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -97019,7 +97019,7 @@ _vt.12MonsterSkill::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -97290,7 +97290,7 @@ _vt.6Status::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -97415,7 +97415,7 @@ _vt.3Psi::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -97689,7 +97689,7 @@ vt_09F83C28::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -97787,7 +97787,7 @@ vt_09F83D28::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -97840,7 +97840,7 @@ vt_09F83DB0::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -97896,7 +97896,7 @@ vt_09F83E40::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -97982,7 +97982,7 @@ vt_09F83F20::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -98071,7 +98071,7 @@ vt_09F84008::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -98121,7 +98121,7 @@ vt_09F84088::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -98171,7 +98171,7 @@ vt_09F84108::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -98311,7 +98311,7 @@ vt_09F84278::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -98421,7 +98421,7 @@ vt_09F84278::
 	.2byte 0
 	.4byte sub_08070F74
 
-vt_09F843E8::
+_vt.11RhythmCombo::
 	.2byte 0
 	.2byte 0
 	.4byte 0
@@ -98451,7 +98451,7 @@ vt_09F843E8::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -98591,7 +98591,7 @@ vt_09F84558::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -98731,7 +98731,7 @@ vt_09F846C8::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -98871,7 +98871,7 @@ vt_09F84838::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -98975,7 +98975,7 @@ vt_09F84948::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -99040,7 +99040,7 @@ vt_09F849F0::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -99135,7 +99135,7 @@ vt_09F84AE8::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -99268,7 +99268,7 @@ vt_09F84C40::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -99379,7 +99379,7 @@ vt_09F84D58::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -99420,7 +99420,7 @@ vt_09F84DC0::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -99542,7 +99542,7 @@ vt_09F84F00::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -99721,7 +99721,7 @@ vt_09F850A8::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -99780,7 +99780,7 @@ vt_09F85140::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -99839,7 +99839,7 @@ vt_09F851D8::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -99940,7 +99940,7 @@ vt_09F852E0::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -99999,7 +99999,7 @@ vt_09F85378::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -100058,7 +100058,7 @@ vt_09F85410::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -100117,7 +100117,7 @@ vt_09F854A8::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -100176,7 +100176,7 @@ vt_09F85540::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -100235,7 +100235,7 @@ vt_09F855D8::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -100294,7 +100294,7 @@ vt_09F85670::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -100353,7 +100353,7 @@ vt_09F85708::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -100412,7 +100412,7 @@ vt_09F857A0::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -100498,7 +100498,7 @@ vt_09F85880::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -100569,7 +100569,7 @@ vt_09F85938::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -100664,7 +100664,7 @@ vt_09F85A30::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -100759,7 +100759,7 @@ vt_09F85B28::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -100860,7 +100860,7 @@ vt_09F85C30::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -100952,7 +100952,7 @@ vt_09F85D20::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -101005,7 +101005,7 @@ vt_09F85DA8::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base
@@ -101119,7 +101119,7 @@ vt_09F85EC8::
 	.4byte base_44__4Base
 	.2byte 0
 	.2byte 0
-	.4byte base_4c__4BaseUiR4BaseUi
+	.4byte base_4c__4BasePvRC4BaseG9ClockData
 	.2byte 0
 	.2byte 0
 	.4byte emit__4BaseRC4Base

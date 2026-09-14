@@ -27,7 +27,7 @@ _08047AA2:
 	cmp r0, #0
 	bne _08047ACC
 	movs r0, #0x58
-	bl getMenuText
+	bl getMenus1Text
 	adds r2, r5, #2
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10

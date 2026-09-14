@@ -1337,11 +1337,15 @@ _call_via_r5: @ 0x08091948
 	bx r5
 	nop
 
+	thumb_func_start _call_via_r6
+_call_via_r6: @ 0x0809194C
 	thumb_func_start sub_0809194C
 sub_0809194C: @ 0x0809194C
 	bx r6
 	nop
 
+	thumb_func_start _call_via_r7
+_call_via_r7: @ 0x08091950
 	thumb_func_start sub_08091950
 sub_08091950: @ 0x08091950
 	bx r7

@@ -54,7 +54,7 @@ sub_0801124C:
 _080112B6:
 	adds r0, r6, #0
 	ldr r1, [sp, #0x14]
-	bl sub_08002FD4
+	bl RemainderNullOnDBZ
 	lsls r0, r0, #0x10
 	lsrs r6, r0, #0x10
 	b _080112D4
@@ -148,7 +148,7 @@ _0801135A:
 _08011370:
 	adds r0, r1, #0
 	adds r1, r4, #0
-	bl sub_08002FD4
+	bl RemainderNullOnDBZ
 	adds r2, r0, #0
 	lsls r2, r2, #0x10
 	asrs r2, r2, #0x10

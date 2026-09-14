@@ -462,8 +462,11 @@ void Base::base_44() {
     releaseOutgoing();
 }
 
-NAKED
-void Base::base_4c(u32 mask, Base& base, u32 mask2) {
+// defined as extern "C" NAKED,
+// not void Base::base_4c(), because agbcc emits a extra str r3, [sp]
+
+extern "C" NAKED void base_4c__4BasePvRC4BaseG9ClockData(void* target, const Base& trigger,
+                                                         ClockData callback) {
     asm_unified("\n\
 	sub sp, #4\n\
 	push {r4, r5, r6, r7, lr}\n\
@@ -607,171 +610,218 @@ _08068E8E:\n\
 	.align 2, 0\n\
     ");
 }
+void Base::emit(const Base& clock) {
+    Vector<Listener*>* listeners;
+    void* eventRTTI = ((Base&)clock).getRTTI();
+    void** sp0 = &eventRTTI;  // Might be a fake match? Hard to think of ways to get the compiler to
+                              // emit a stack write that never gets read
 
-NAKED
+    SafeVector<Dispatcher>* outgoing = &this->outgoing;
+    s32 i = 0;
+    for (i = 0; i < outgoing->size(); ++i) {
+        Dispatcher* dispatcher = (outgoing->data()) + i;
+
+        if (dispatcher->_0 == *sp0) {
+            listeners = &dispatcher->listeners;
+            goto dispatcher_handler;
+        }
+    }
+
+    listeners = NULL;
+
+dispatcher_handler:
+
+    if (listeners == 0)
+        return;
+
+    s32 remainingCount = listeners->size();
+    this->num_active_listeners++;
+
+    for (s32 listenerIdx = 0; listenerIdx < remainingCount; listenerIdx++) {
+        Listener* listener = (*listeners)[listenerIdx];
+        if (listener != NULL) {
+            (listener->receiver->*(listener->callback))((Base&)clock);
+
+        } else {
+            listeners->removeIdx(listenerIdx);
+            listenerIdx--;
+            remainingCount--;
+        }
+    }
+
+    s32 newActiveCount = (u16)(this->num_active_listeners) - 1;
+    this->num_active_listeners = newActiveCount;
+
+    if (((s16)newActiveCount <= 0)) {
+        if ((1 & this->lifetime)) {
+            delete this;
+        }
+    }
+}
+/*NAKED
 void Base::emit(const Base& base) {
     asm_unified("\n\
-	push {r4, r5, r6, r7, lr}\n\
-	mov r7, sl\n\
-	mov r6, sb\n\
-	mov r5, r8\n\
-	push {r5, r6, r7}\n\
-	sub sp, #0xc\n\
-	mov sb, r0\n\
-	mov sl, r1\n\
-	ldr r1, [r1, #0x1c]\n\
-	movs r2, #0x10\n\
-	ldrsh r0, [r1, r2]\n\
-	add r0, sl\n\
-	ldr r1, [r1, #0x14]\n\
-	bl _call_via_r1\n\
-	adds r3, r0, #0\n\
-	str r3, [sp]\n\
-	mov r0, sb\n\
-	adds r0, #4\n\
-	movs r2, #0\n\
-	ldr r1, [r0, #4]\n\
-	cmp r2, r1\n\
-	bge _08068EE8\n\
-	adds r4, r3, #0\n\
-	adds r3, r1, #0\n\
-	ldr r1, [r0, #8]\n\
+    push {r4, r5, r6, r7, lr}\n\
+    mov r7, sl\n\
+    mov r6, sb\n\
+    mov r5, r8\n\
+    push {r5, r6, r7}\n\
+    sub sp, #0xc\n\
+    mov sb, r0\n\
+    mov sl, r1\n\
+    ldr r1, [r1, #0x1c]\n\
+    movs r2, #0x10\n\
+    ldrsh r0, [r1, r2]\n\
+    add r0, sl\n\
+    ldr r1, [r1, #0x14]\n\
+    bl _call_via_r1\n\
+    adds r3, r0, #0\n\
+    str r3, [sp]\n\
+    mov r0, sb\n\
+    adds r0, #4\n\
+    movs r2, #0\n\
+    ldr r1, [r0, #4]\n\
+    cmp r2, r1\n\
+    bge _08068EE8\n\
+    adds r4, r3, #0\n\
+    adds r3, r1, #0\n\
+    ldr r1, [r0, #8]\n\
 _08068ED4:\n\
-	ldr r0, [r1]\n\
-	cmp r0, r4\n\
-	bne _08068EE0\n\
-	adds r1, #4\n\
-	mov r8, r1\n\
-	b _08068EEC\n\
+    ldr r0, [r1]\n\
+    cmp r0, r4\n\
+    bne _08068EE0\n\
+    adds r1, #4\n\
+    mov r8, r1\n\
+    b _08068EEC\n\
 _08068EE0:\n\
-	adds r1, #0x10\n\
-	adds r2, #1\n\
-	cmp r2, r3\n\
-	blt _08068ED4\n\
+    adds r1, #0x10\n\
+    adds r2, #1\n\
+    cmp r2, r3\n\
+    blt _08068ED4\n\
 _08068EE8:\n\
-	movs r3, #0\n\
-	mov r8, r3\n\
+    movs r3, #0\n\
+    mov r8, r3\n\
 _08068EEC:\n\
-	mov r0, r8\n\
-	cmp r0, #0\n\
-	beq _08068FB4\n\
-	ldr r7, [r0, #4]\n\
-	mov r1, sb\n\
-	ldrh r0, [r1]\n\
-	adds r0, #1\n\
-	strh r0, [r1]\n\
-	movs r5, #0\n\
-	cmp r5, r7\n\
-	bge _08068F8C\n\
+    mov r0, r8\n\
+    cmp r0, #0\n\
+    beq _08068FB4\n\
+    ldr r7, [r0, #4]\n\
+    mov r1, sb\n\
+    ldrh r0, [r1]\n\
+    adds r0, #1\n\
+    strh r0, [r1]\n\
+    movs r5, #0\n\
+    cmp r5, r7\n\
+    bge _08068F8C\n\
 _08068F02:\n\
-	lsls r1, r5, #2\n\
-	mov r2, r8\n\
-	ldr r0, [r2, #8]\n\
-	adds r2, r0, r1\n\
-	ldr r3, [r2]\n\
-	cmp r3, #0\n\
-	beq _08068F58\n\
-	movs r0, #0xe\n\
-	ldrsh r4, [r3, r0]\n\
-	cmp r4, #0\n\
-	ble _08068F36\n\
-	movs r1, #0x10\n\
-	ldrsh r0, [r3, r1]\n\
-	ldr r2, [r3, #8]\n\
-	adds r0, r2, r0\n\
-	ldr r1, [r0]\n\
-	lsls r0, r4, #3\n\
-	adds r0, r0, r1\n\
-	adds r6, r0, #0\n\
-	subs r6, #8\n\
-	ldr r0, [r6]\n\
-	ldr r1, [r6, #4]\n\
-	str r0, [sp, #4]\n\
-	str r1, [sp, #8]\n\
-	ldr r6, [sp, #8]\n\
-	b _08068F3A\n\
+    lsls r1, r5, #2\n\
+    mov r2, r8\n\
+    ldr r0, [r2, #8]\n\
+    adds r2, r0, r1\n\
+    ldr r3, [r2]\n\
+    cmp r3, #0\n\
+    beq _08068F58\n\
+    movs r0, #0xe\n\
+    ldrsh r4, [r3, r0]\n\
+    cmp r4, #0\n\
+    ble _08068F36\n\
+    movs r1, #0x10\n\
+    ldrsh r0, [r3, r1]\n\
+    ldr r2, [r3, #8]\n\
+    adds r0, r2, r0\n\
+    ldr r1, [r0]\n\
+    lsls r0, r4, #3\n\
+    adds r0, r0, r1\n\
+    adds r6, r0, #0\n\
+    subs r6, #8\n\
+    ldr r0, [r6]\n\
+    ldr r1, [r6, #4]\n\
+    str r0, [sp, #4]\n\
+    str r1, [sp, #8]\n\
+    ldr r6, [sp, #8]\n\
+    b _08068F3A\n\
 _08068F36:\n\
-	ldr r6, [r3, #0x10]\n\
-	ldr r2, [r3, #8]\n\
+    ldr r6, [r3, #0x10]\n\
+    ldr r2, [r3, #8]\n\
 _08068F3A:\n\
-	movs r0, #0xc\n\
-	ldrsh r1, [r3, r0]\n\
-	cmp r4, #0\n\
-	ble _08068F4C\n\
-	ldr r3, [sp, #4]\n\
-	lsls r0, r3, #0x10\n\
-	asrs r0, r0, #0x10\n\
-	adds r0, r0, r1\n\
-	b _08068F4E\n\
+    movs r0, #0xc\n\
+    ldrsh r1, [r3, r0]\n\
+    cmp r4, #0\n\
+    ble _08068F4C\n\
+    ldr r3, [sp, #4]\n\
+    lsls r0, r3, #0x10\n\
+    asrs r0, r0, #0x10\n\
+    adds r0, r0, r1\n\
+    b _08068F4E\n\
 _08068F4C:\n\
-	adds r0, r1, #0\n\
+    adds r0, r1, #0\n\
 _08068F4E:\n\
-	adds r0, r2, r0\n\
-	mov r1, sl\n\
-	bl sub_0809194C\n\
-	b _08068F86\n\
+    adds r0, r2, r0\n\
+    mov r1, sl\n\
+    bl sub_0809194C\n\
+    b _08068F86\n\
 _08068F58:\n\
-	mov r0, r8\n\
-	ldr r3, [r0, #4]\n\
-	subs r1, r5, #1\n\
-	mov ip, r1\n\
-	subs r6, r7, #1\n\
-	cmp r5, r3\n\
-	bge _08068F82\n\
-	adds r0, r5, #1\n\
-	subs r0, r3, r0\n\
-	adds r4, r2, #4\n\
-	cmp r0, #0\n\
-	ble _08068F7C\n\
-	adds r1, r0, #0\n\
+    mov r0, r8\n\
+    ldr r3, [r0, #4]\n\
+    subs r1, r5, #1\n\
+    mov ip, r1\n\
+    subs r6, r7, #1\n\
+    cmp r5, r3\n\
+    bge _08068F82\n\
+    adds r0, r5, #1\n\
+    subs r0, r3, r0\n\
+    adds r4, r2, #4\n\
+    cmp r0, #0\n\
+    ble _08068F7C\n\
+    adds r1, r0, #0\n\
 _08068F72:\n\
-	ldm r4!, {r0}\n\
-	stm r2!, {r0}\n\
-	subs r1, #1\n\
-	cmp r1, #0\n\
-	bne _08068F72\n\
+    ldm r4!, {r0}\n\
+    stm r2!, {r0}\n\
+    subs r1, #1\n\
+    cmp r1, #0\n\
+    bne _08068F72\n\
 _08068F7C:\n\
-	subs r0, r3, #1\n\
-	mov r2, r8\n\
-	str r0, [r2, #4]\n\
+    subs r0, r3, #1\n\
+    mov r2, r8\n\
+    str r0, [r2, #4]\n\
 _08068F82:\n\
-	mov r5, ip\n\
-	adds r7, r6, #0\n\
+    mov r5, ip\n\
+    adds r7, r6, #0\n\
 _08068F86:\n\
-	adds r5, #1\n\
-	cmp r5, r7\n\
-	blt _08068F02\n\
+    adds r5, #1\n\
+    cmp r5, r7\n\
+    blt _08068F02\n\
 _08068F8C:\n\
-	mov r3, sb\n\
-	ldrh r0, [r3]\n\
-	subs r0, #1\n\
-	strh r0, [r3]\n\
-	lsls r0, r0, #0x10\n\
-	cmp r0, #0\n\
-	bgt _08068FB4\n\
-	ldrh r1, [r3, #2]\n\
-	movs r0, #1\n\
-	ands r0, r1\n\
-	cmp r0, #0\n\
-	beq _08068FB4\n\
-	ldr r1, [r3, #0x1c]\n\
-	movs r2, #8\n\
-	ldrsh r0, [r1, r2]\n\
-	add r0, sb\n\
-	ldr r2, [r1, #0xc]\n\
-	movs r1, #3\n\
-	bl _call_via_r2\n\
+    mov r3, sb\n\
+    ldrh r0, [r3]\n\
+    subs r0, #1\n\
+    strh r0, [r3]\n\
+    lsls r0, r0, #0x10\n\
+    cmp r0, #0\n\
+    bgt _08068FB4\n\
+    ldrh r1, [r3, #2]\n\
+    movs r0, #1\n\
+    ands r0, r1\n\
+    cmp r0, #0\n\
+    beq _08068FB4\n\
+    ldr r1, [r3, #0x1c]\n\
+    movs r2, #8\n\
+    ldrsh r0, [r1, r2]\n\
+    add r0, sb\n\
+    ldr r2, [r1, #0xc]\n\
+    movs r1, #3\n\
+    bl _call_via_r2\n\
 _08068FB4:\n\
-	add sp, #0xc\n\
-	pop {r3, r4, r5}\n\
-	mov r8, r3\n\
-	mov sb, r4\n\
-	mov sl, r5\n\
-	pop {r4, r5, r6, r7}\n\
-	pop {r0}\n\
-	bx r0\n\
+    add sp, #0xc\n\
+    pop {r3, r4, r5}\n\
+    mov r8, r3\n\
+    mov sb, r4\n\
+    mov sl, r5\n\
+    pop {r4, r5, r6, r7}\n\
+    pop {r0}\n\
+    bx r0\n\
     ");
-}
+}*/
 
 NAKED
 void Base::releaseIncoming() {

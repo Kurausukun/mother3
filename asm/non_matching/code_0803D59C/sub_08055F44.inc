@@ -5,7 +5,7 @@ sub_08055F44:
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	movs r1, #3
-	bl sub_08002FD4
+	bl RemainderNullOnDBZ
 	ldr r3, _08055FAC
 	ldr r1, _08055FB0
 	adds r4, r3, r1

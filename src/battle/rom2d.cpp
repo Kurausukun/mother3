@@ -97,7 +97,7 @@ extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08085E24.inc", void sub_08085E24
 extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08085EE8.inc", void sub_08085EE8());
 extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08085F10.inc", void sub_08085F10());
 extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08085F80.inc", void sub_08085F80());
-extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08085FB0.inc", void sub_08085FB0());
+extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08085FB0.inc", void __11RhythmComboiP16UnitObject_s16r2());
 extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_0808605C.inc", void sub_0808605C());
 extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_08086084.inc", void sub_08086084());
 extern "C" ASM_FUNC("asm/non_matching/rom2d/sub_080860F4.inc", void sub_080860F4());

@@ -12,6 +12,15 @@ public:
     virtual ~KeyFocuser();
 };
 
+class vt_09F80770 : public Base {
+public:
+    virtual ~vt_09F80770();  // sub_08070414 (0x08)
+    virtual bool sub_08070478(void* arg1, void* arg2, void* arg3,
+                              bool arg4);  // sub_08070478 (0x70)
+    virtual bool sub_08070578();           // sub_08070578 (0x74)
+    virtual void* sub_0807058C();          // sub_0807058C (0x78)
+};
+
 class KeyFocusManager : public Base {
 public:
     KeyFocusManager();

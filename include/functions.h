@@ -104,7 +104,7 @@ void sub_08033620(u32, u32);
 void sub_08036B34(u32);
 void updateObjDirection(u16, u16);
 void* sub_08027E60();
-u8* sub_08021878(void*, s32*, u16*);
+s32* sub_08021878(void* arg0, s32* arg1, u16* arg2);
 u32 sub_08021920(u32);
 u16 exec_extended(u16, s32*);
 void sub_080338D8(u8, s32);

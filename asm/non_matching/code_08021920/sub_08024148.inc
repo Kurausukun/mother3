@@ -142,7 +142,7 @@ _08024258:
 	adds r0, r0, r2
 	ldr r0, [r0]
 	ldrh r1, [r6]
-	bl sub_08002FD4
+	bl RemainderNullOnDBZ
 	cmp r0, #0
 	bne _08024274
 	ldr r0, _080242BC

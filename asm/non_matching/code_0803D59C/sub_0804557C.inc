@@ -25,7 +25,7 @@ sub_0804557C:
 	mov sb, r0
 	mov r0, sl
 	adds r1, r5, #0
-	bl sub_08002FD4
+	bl RemainderNullOnDBZ
 	mov sl, r0
 	ldrh r0, [r4]
 	adds r6, r0, #0
@@ -203,7 +203,7 @@ _0804571A:
 	adds r7, r0, #0
 	mov r0, sl
 	adds r1, r4, #0
-	bl sub_08002FD4
+	bl RemainderNullOnDBZ
 	mov r1, sp
 	ldrh r0, [r1, #0x1a]
 	adds r4, r0, #0

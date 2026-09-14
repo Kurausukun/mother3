@@ -26,7 +26,7 @@ struct Listener {
     Base* sender;
     Base* trigger;
     Base* receiver;
-    u32 callback;
+    void (Base::*callback)(Base&);
     u32 flags;
 };
 
@@ -54,7 +54,7 @@ public:
     virtual void base_34();
     virtual void listen(void* target, const Base& trigger, ClockData callback);
     virtual void base_44();
-    virtual void base_4c(u32 mask, Base& base, u32 mask2);
+    virtual void base_4c(void* target, const Base& trigger, ClockData callback);
     virtual void emit(const Base& clock);
     virtual void base_5c();
     virtual void clearNullOutgoing();

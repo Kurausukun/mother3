@@ -40,7 +40,7 @@ _0802B19A:
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	movs r1, #0xf
-	bl sub_08002FD4
+	bl RemainderNullOnDBZ
 	adds r0, #0x64
 	lsls r0, r0, #4
 	ldr r2, _0802B200
@@ -144,7 +144,7 @@ _0802B27C:
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	movs r1, #0xf
-	bl sub_08002FD4
+	bl RemainderNullOnDBZ
 	adds r0, #0x64
 	lsls r0, r0, #4
 	movs r2, #0xe7

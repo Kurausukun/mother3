@@ -33,7 +33,7 @@ _08003500:
 	strh r0, [r5, #0x12]
 	ldrh r0, [r5, #0x12]
 	ldrh r1, [r5, #0x10]
-	bl sub_08002FD4
+	bl RemainderNullOnDBZ
 	adds r4, r0, #0
 	cmp r4, #0
 	bne _0800354A

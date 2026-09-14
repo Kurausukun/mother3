@@ -47,7 +47,7 @@ _08047B64:
 _08047B68:
 	movs r0, #0x60
 _08047B6A:
-	bl getMenuText
+	bl getMenus1Text
 	movs r3, #1
 	rsbs r3, r3, #0
 	movs r1, #0xf
@@ -58,7 +58,7 @@ _08047B6A:
 	b _08047B96
 _08047B80:
 	movs r0, #0x61
-	bl getMenuText
+	bl getMenus1Text
 	movs r3, #1
 	rsbs r3, r3, #0
 	movs r1, #0xf

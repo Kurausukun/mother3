@@ -84,7 +84,7 @@ _08042FDA:
 	bl sub_080430B4
 	bl sub_08044614
 	movs r0, #0x42
-	bl getMenuText
+	bl getMenus1Text
 	movs r3, #1
 	rsbs r3, r3, #0
 	movs r1, #0xf

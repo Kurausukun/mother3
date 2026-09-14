@@ -65,7 +65,7 @@ sub_080422B4:
 	bl sub_08046A28
 _08042336:
 	movs r0, #0x87
-	bl getMenuText
+	bl getMenus1Text
 	movs r3, #1
 	rsbs r3, r3, #0
 	movs r1, #0xf
@@ -230,7 +230,7 @@ _0804247C:
 	cmp r0, #0
 	bne _080424CC
 	movs r0, #0x57
-	bl getMenuText
+	bl getMenus1Text
 	movs r3, #1
 	rsbs r3, r3, #0
 	movs r1, #0xf

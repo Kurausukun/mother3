@@ -341,7 +341,7 @@ BattleFader* Battle::battle_150() {
 }
 
 // TODO: This returns a pointer, figure out what it is
-s32 Battle::battle_158() {
+vt_09F80770* Battle::battle_158() {
     return _34;
 }
 

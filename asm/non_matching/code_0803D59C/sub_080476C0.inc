@@ -44,7 +44,7 @@ _08047710: .4byte gSomeBlend
 _08047714: .4byte 0x0000427C
 _08047718:
 	movs r0, #1
-	bl getMenuText
+	bl getMenus1Text
 	adds r2, r5, #2
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10

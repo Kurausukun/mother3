@@ -5,7 +5,7 @@ sub_0805791C:
 	adds r4, r0, #0
 	ldr r0, [r4, #0x24]
 	movs r1, #8
-	bl sub_08002FD4
+	bl RemainderNullOnDBZ
 	cmp r0, #0
 	bne _0805794A
 	ldr r2, _080579A4

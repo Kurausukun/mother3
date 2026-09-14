@@ -400,12 +400,12 @@ const_classname_RhythmOut:
     .global callback_sub_0807489C
 callback_sub_0807489C:
     .4byte 0xFFFF0000
-    .4byte sub_0807489C+1
+    .4byte sub_0807489C__9RhythmBgm+1
 
     .global callback_sub_080748C8
 callback_sub_080748C8:
     .4byte 0xFFFF0000
-    .4byte sub_080748C8+1
+    .4byte sub_080748C8__9RhythmBgm+1
     .incbin "baserom.gba", 0x00105CE0, 0x568
 
     .global const_classname_Suspend

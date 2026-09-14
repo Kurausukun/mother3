@@ -53,7 +53,7 @@ sub_08010C48:
 	bge _08010CC8
 _08010CB2:
 	adds r0, r6, #0
-	bl sub_08002FD4
+	bl RemainderNullOnDBZ
 	lsls r0, r0, #0x10
 	lsrs r6, r0, #0x10
 	b _08010CCE
@@ -145,7 +145,7 @@ _08010D52:
 _08010D68:
 	adds r0, r1, #0
 	adds r1, r4, #0
-	bl sub_08002FD4
+	bl RemainderNullOnDBZ
 	adds r1, r0, #0
 	lsls r1, r1, #0x10
 	asrs r1, r1, #0x10

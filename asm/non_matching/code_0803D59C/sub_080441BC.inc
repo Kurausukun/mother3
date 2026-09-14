@@ -21,7 +21,7 @@ sub_080441BC:
 	movs r1, #0x1e
 	bl Divide
 	movs r1, #8
-	bl sub_08002FD4
+	bl RemainderNullOnDBZ
 	lsls r0, r0, #0x10
 	lsrs r1, r0, #0x10
 	movs r2, #0xe0

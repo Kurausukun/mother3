@@ -125,7 +125,7 @@ _08055684:
 _08055688:
 	movs r0, #0xab
 _0805568A:
-	bl getMenuText
+	bl getMenus1Text
 	pop {r1}
 	bx r1
 	.align 2, 0

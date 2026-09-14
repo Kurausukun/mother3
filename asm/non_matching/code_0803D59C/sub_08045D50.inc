@@ -9,7 +9,7 @@ sub_08045D50:
 	ldr r0, _08045DF8
 	adds r4, r4, r0
 	ldrh r0, [r4]
-	bl getMenuText
+	bl getMenus1Text
 	ldrh r1, [r4]
 	movs r3, #0x14
 	cmp r1, #0x1f
@@ -41,7 +41,7 @@ _08045D74:
 	str r5, [sp, #4]
 	bl sub_08047CDC
 	movs r0, #3
-	bl getMenuText
+	bl getMenus1Text
 	mov r2, r8
 	ldrh r1, [r2]
 	adds r1, #0x3c
@@ -56,7 +56,7 @@ _08045D74:
 	mov r3, sb
 	bl sub_08047CDC
 	movs r0, #4
-	bl getMenuText
+	bl getMenus1Text
 	mov r3, r8
 	ldrh r1, [r3]
 	adds r1, #0x70
