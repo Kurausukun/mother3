@@ -3035,9 +3035,9 @@ extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805A508.inc", void sub_
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805A520.inc", void sub_0805A520());
 
 extern "C" void sub_0805A568(void) {
-    LZ77UnCompVram(Blob_GetEntry(&gUnknown_09C8DE98, 0), (void*)0x06008000);
-    LZ77UnCompVram(Blob_GetEntry(&gUnknown_09C8DE98, 2), (void*)0x06000000);
-    LZ77UnCompVram(Blob_GetEntry(&gUnknown_09C8DE98, 3), (void*)0x06010000);
+    LZ77UnCompVram(Blob_GetEntry(&gUnknown_09C8DE98, 0), (void*)(VRAM + 0x8000));
+    LZ77UnCompVram(Blob_GetEntry(&gUnknown_09C8DE98, 2), (void*)VRAM);
+    LZ77UnCompVram(Blob_GetEntry(&gUnknown_09C8DE98, 3), (void*)(VRAM + 0x10000));
     gSomeBlend._2CB0 = Blob_GetEntry(&gUnknown_09C8DE98, 4);
 
     void* temp_r0_2 = Blob_GetEntry(&gUnknown_09C8DE98, 1);

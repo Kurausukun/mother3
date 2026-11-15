@@ -8,7 +8,7 @@
 
 extern "C" {
 
-extern u16 gUnknown_03005314;
+extern u16 gPaletteBufferIwram;
 extern u32 gUnknown_030055F4[];
 extern u32 gUnknown_0200DEBC[];
 extern u8 gUnknown_02004100[0x10];
@@ -50,7 +50,6 @@ extern s32 sub_080222F8(u16);
 extern void sub_080250B4(s32, u16, u16);
 extern s32 getCommonScriptLine(u16);
 extern void CpuMemFill(void*, s32, s32); /* extern */
-extern s32 getMapPaletteTable(u16);      /* extern */
 extern void sub_08027904();
 extern void sub_080334D0(u8, u16);
 
@@ -450,7 +449,7 @@ u16 cmd_reload_room() {
     if (gGame._8484 != 0) {
         gSomeBlend._121bb_10 = 1;
         sub_0800AD6C();
-        CpuSmartSet(&gGame._9488, &gUnknown_03005314, 0x400);
+        CpuSmartSet(&gGame._9488, &gPaletteBufferIwram, PLTT_SIZE);
         gGame.mode = MODE_FADE_IN;
         sub_08013D38();
         sub_0802610C(0);
@@ -2274,7 +2273,7 @@ u16 cmd_3A(s32* sp) {
     sub_0800ACA0(0);
     gSomeBlend._121bb_8 = 1;
     gSomeBlend._121bb_10 = 0;
-    gSomeBlend._121bc[8] = 80;
+    gSomeBlend._121be[6] = 80;
     return 1;
 }
 
@@ -2543,7 +2542,7 @@ u16 cmd_3F(s32* sp) {
     v4 = scriptstack_peek(sp, 0);
     if (v2 <= 8 && v3 <= 5) {
         for (i = 0; i <= 2; i++) {
-            if ((i || gGame.mapLayerInfo._3_1 << 31) && (i != 1 || gGame.mapLayerInfo._5_8 >= 0))
+            if ((i || gGame.mapLayersInfo._3_1 << 31) && (i != 1 || gGame.mapLayersInfo._5_8 >= 0))
                 sub_08018910(i, v2, v3, v4);
         }
     }
@@ -2659,7 +2658,7 @@ u16 cmd_41(s32* sp) {
             break;
         case 5:
             for (i = 0; i <= 2; ++i) {
-                if ((i || gGame.mapLayerInfo._3_1 << 31) && (i != 1 || gGame.mapLayerInfo._5_8 >= 0))
+                if ((i || gGame.mapLayersInfo._3_1 << 31) && (i != 1 || gGame.mapLayersInfo._5_8 >= 0))
                     sub_08018988(i, v3, &vec);
             }
             break;
@@ -3233,7 +3232,7 @@ u16 cmd_EB(s32* sp) {
 	ldr r1, _0801E6E8 @ =0x000067AC\n\
 	adds r0, r4, r1\n\
 	ldrh r0, [r0]\n\
-	bl getMapLayerAlphaInfo\n\
+	bl getMapLayersInfo\n\
 	ldr r5, _0801E6EC @ =0x000067C5\n\
 	adds r3, r4, r5\n\
 	ldrb r2, [r3]\n\
@@ -4689,7 +4688,7 @@ extern "C" s32 cmd_set_fade(s32* sp) {
 
 extern "C" s32 cmd_fade_in(s32* sp) {
     if (gGame._595b[0] != 1) {
-        CpuSmartSet(&gGame._9488, &gUnknown_03005314, 0x400);
+        CpuSmartSet(&gGame._9488, &gPaletteBufferIwram, PLTT_SIZE);
         u8 lastGameMode = gGame.mode;
         gSomeBlend.bldcnt = 0;
         gSomeBlend.bldalpha = 0;
@@ -4707,7 +4706,7 @@ extern "C" s32 cmd_fade_in(s32* sp) {
 
 extern "C" s32 cmd_play_fade(s32* sp) {
     if (gGame._595b[1] != 1) {
-        CpuSmartSet((u32*)&gUnknown_03005314, (u16*)&gGame._9488, 0x400);
+        CpuSmartSet((u32*)&gPaletteBufferIwram, (u16*)&gGame._9488, PLTT_SIZE);
         u8 lastGameMode = gGame.mode;
         gGame.mode = MODE_LOAD_ROOM;
         gGame._5960 = scriptstack_peek(sp, 0);
@@ -4748,7 +4747,7 @@ extern "C" s32 cmd_73(s32* sp) {
     u16 b = scriptstack_peek(sp, 2);
     u16 c = scriptstack_peek(sp, 1);
 
-    gGame._83a4 = getMapPaletteTable(scriptstack_peek(sp, 0));
+    gGame._83a4 = (void*)getMapPaletteTable(scriptstack_peek(sp, 0));
     u16 d = a == 0 ? 8 : 9;
     sub_080272F4(d, b, c);
 
@@ -4877,7 +4876,7 @@ extern "C" ASM_FUNC("asm/non_matching/script/cmd_disp_text_special.inc", void cm
 extern "C" s32 cmd_B9(s32* sp) {
     s16 a = scriptstack_peek(sp, 0);
     if (a != -1) {
-        gGame._28 = getMapPaletteTable((u16)a);
+        gGame.mapPalettesPtr = (void*)getMapPaletteTable((u16)a);
         sub_08027904();
     }
 
@@ -4895,9 +4894,9 @@ extern "C" s32 cmd_B9(s32* sp) {
     }
 
     if (gGame._595b[0] == 2) {
-        CpuMemFill(&gUnknown_03005314, 0x400, -1);
+        CpuMemFill(&gPaletteBufferIwram, PLTT_SIZE, -1);
     } else {
-        CpuMemClear(&gUnknown_03005314, 0x400);
+        CpuMemClear(&gPaletteBufferIwram, PLTT_SIZE);
     }
 
     return 0;

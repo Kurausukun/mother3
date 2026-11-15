@@ -10,7 +10,6 @@
 
 extern StatMeter gHPStatMeters[5];
 extern StatMeter gPPStatMeters[6];
-extern Object gUnknown_0200C3C8[];
 extern Direction gDirectionTable[];
 extern struct_200D818 gUnknown_0200D818[];
 extern const u16 gSectorToDirection[];
@@ -22,6 +21,7 @@ extern DebugInitFunc gDebugMenuInitTable[];
 extern u16 gScriptLogic[];
 extern char _binary_build_mother3_assets_mainscript_bin_start;
 extern const char gTextUnkTable;
+extern u8 gMiscGfx;
 
 extern "C" void sub_080012BC(void*, s32, s32, s32);
 extern "C" Object* get_obj_direct(u16 idx);
@@ -1361,7 +1361,7 @@ extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08036B6C.inc", void sub_
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08036BA4.inc", void sub_08036BA4());
 
 extern "C" Object* get_obj_direct(u16 id) {
-    return &gUnknown_0200C3C8[id];
+    return &gGame.objects[id];
 }
 
 extern "C" void getTilePosFromObj(Object* obj, Vector2i* pos) {
@@ -1549,7 +1549,15 @@ extern "C" ASM_FUNC("asm/non_matching/code_08021920/navigateWrapping2DMenu.inc",
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08039934.inc", void sub_08039934());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08039A18.inc", void sub_08039A18());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08039A74.inc", void sub_08039A74());
-extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08039B24.inc", void sub_08039B24());
+
+extern "C" void* sub_08039B24(u16 arg0) {
+    u16* unk = (u16*)Blob_GetEntry(&gMiscGfx, 0x24);
+    if (unk) {
+        return (void*)((u32)Blob_GetEntry(&gMiscGfx, 0x25) + unk[arg0]);
+    } else 
+        return NULL;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08039B5C.inc", void sub_08039B5C());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08039B88.inc", void sub_08039B88());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08039C04.inc", void sub_08039C04());
