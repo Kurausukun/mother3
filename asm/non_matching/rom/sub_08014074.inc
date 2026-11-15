@@ -33,7 +33,7 @@ sub_08014074:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080140B8: .4byte gUnknown_03005314
+_080140B8: .4byte gPaletteBufferIwram
 _080140BC: .4byte gUnknown_02000008
 _080140C0: .4byte gUnknown_02000028
 _080140C4: .4byte gGame

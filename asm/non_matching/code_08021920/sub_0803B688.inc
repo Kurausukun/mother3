@@ -75,6 +75,6 @@ _0803B708:
 	bx r0
 	.align 2, 0
 _0803B718: .4byte gGame
-_0803B71C: .4byte gUnknown_03005314
+_0803B71C: .4byte gPaletteBufferIwram
 _0803B720: .4byte gUnknown_0202AE78
 	.syntax divided

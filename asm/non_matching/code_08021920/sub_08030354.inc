@@ -57,7 +57,7 @@ _08030376:
 	adds r0, r2, #0
 	adds r1, r4, #0
 	movs r2, #0x20
-	bl sub_08016F4C
+	bl copyPalettesToBufferIwram
 	ldr r3, _080303FC
 	adds r0, r3, #0
 	ldrh r5, [r5]

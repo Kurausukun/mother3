@@ -8,7 +8,7 @@ sub_08008D3C:
 	lsls r4, r1, #0x10
 	lsrs r4, r4, #0x10
 	adds r0, r4, #0
-	bl sub_08009D6C
+	bl getAddressofGlyphBitmap
 	ldr r1, [r0]
 	str r1, [sp]
 	ldr r1, [r0, #4]

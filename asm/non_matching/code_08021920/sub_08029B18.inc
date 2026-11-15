@@ -183,7 +183,7 @@ _08029C88: .4byte gGame
 _08029C8C: .4byte 0x00008299
 _08029C90: .4byte gSave
 _08029C94: .4byte 0x0000829A
-_08029C98: .4byte gUnknown_0200C3C8
+_08029C98: .4byte gGame+0x67C8 @ gGame.objects
 _08029C9C: .4byte 0x00001AD1
 _08029CA0: .4byte 0x00001450
 _08029CA4: .4byte 0x06010000

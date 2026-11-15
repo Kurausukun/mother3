@@ -25,7 +25,7 @@ sub_08007E54:
 	bl Blob_GetEntry
 	movs r1, #0xc
 	movs r2, #0x20
-	bl sub_08016F4C
+	bl copyPalettesToBufferIwram
 	movs r0, #0xc
 	movs r1, #1
 	bl sub_0803B688
@@ -60,7 +60,7 @@ sub_08007E54:
 	ldr r0, _08007F14
 	movs r1, #0x1f
 	movs r2, #0x20
-	bl sub_08016F4C
+	bl copyPalettesToBufferIwram
 	pop {r4}
 	pop {r0}
 	bx r0

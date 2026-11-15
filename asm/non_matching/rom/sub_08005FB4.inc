@@ -253,7 +253,7 @@ _08006190:
 	.align 2, 0
 _080061A0: .4byte 0x04000020
 _080061A4: .4byte 0x0FFF0000
-_080061A8: .4byte gUnknown_03005314
+_080061A8: .4byte gPaletteBufferIwram
 _080061AC: .4byte 0x00002C4C
 _080061B0: .4byte 0x00002C4E
 _080061B4: .4byte gGame

@@ -133,7 +133,7 @@ _080048B0: .4byte gGame
 _080048B4: .4byte 0x00005962
 _080048B8: .4byte 0x00005960
 _080048BC: .4byte 0x0000595C
-_080048C0: .4byte gUnknown_03005314
+_080048C0: .4byte gPaletteBufferIwram
 _080048C4: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _080048C8: .4byte 0x00008462
 _080048CC: .4byte 0x00008494

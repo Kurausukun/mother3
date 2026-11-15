@@ -110,7 +110,7 @@ _08017FF8:
 	strh r0, [r6, #4]
 	b _080180F6
 	.align 2, 0
-_0801806C: .4byte gUnknown_02005C1C
+_0801806C: .4byte gGame+0x1C @ gGame.mapLayersInfo.dims
 _08018070: .4byte 0x00005894
 _08018074: .4byte 0x000058C9
 _08018078: .4byte gGame

@@ -1,11 +1,11 @@
 	.syntax unified
-sub_08008C70:
+create10x10GlyphForChar:
 	push {r4, r5, r6, r7, lr}
 	sub sp, #0x30
 	adds r6, r0, #0
 	lsls r0, r1, #0x10
 	lsrs r0, r0, #0x10
-	bl sub_08009D6C
+	bl getAddressofGlyphBitmap
 	adds r4, r0, #0
 	movs r0, #0x10
 	adds r0, r0, r4

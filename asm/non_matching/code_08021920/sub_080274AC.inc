@@ -41,7 +41,7 @@ sub_080274AC:
 	beq _08027512
 	b _08027584
 	.align 2, 0
-_08027504: .4byte gUnknown_03005314
+_08027504: .4byte gPaletteBufferIwram
 _08027508: .4byte gUnknown_0200F208
 _0802750C:
 	cmp r5, #2
@@ -212,7 +212,7 @@ _08027664: .4byte 0x000083AE
 _08027668: .4byte 0x000083AF
 _0802766C: .4byte gUnknown_0200DF84
 _08027670: .4byte 0x00001104
-_08027674: .4byte gUnknown_03005314
+_08027674: .4byte gPaletteBufferIwram
 _08027678: .4byte 0x00001284
 _0802767C: .4byte 0x00001484
 	.syntax divided

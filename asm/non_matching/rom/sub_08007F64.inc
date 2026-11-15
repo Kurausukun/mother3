@@ -26,7 +26,7 @@ sub_08007F64:
 	adds r0, r0, r1
 	movs r1, #0xd
 	movs r2, #0x20
-	bl sub_08016F4C
+	bl copyPalettesToBufferIwram
 	movs r0, #0xd
 	movs r1, #1
 	bl sub_0803B688

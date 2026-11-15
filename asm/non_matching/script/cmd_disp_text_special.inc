@@ -28,7 +28,7 @@ cmd_disp_text_special:
 	ldr r0, _080207F0
 	movs r1, #0xc
 	movs r2, #0x20
-	bl sub_08016F4C
+	bl copyPalettesToBufferIwram
 	cmp r5, #1
 	beq _08020814
 	cmp r5, #1

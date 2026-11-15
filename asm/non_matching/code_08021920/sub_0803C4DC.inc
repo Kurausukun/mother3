@@ -42,7 +42,7 @@ _0803C4F8:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0803C534: .4byte gUnknown_03005314
+_0803C534: .4byte gPaletteBufferIwram
 _0803C538: .4byte gUnknown_0200F088
 _0803C53C: .4byte gUnknown_020050C0
 _0803C540: .4byte gUnknown_0200F488

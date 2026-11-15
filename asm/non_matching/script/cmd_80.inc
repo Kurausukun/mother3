@@ -38,7 +38,7 @@ cmd_80:
 	ldr r0, _080206BC
 	movs r1, #0xc
 	movs r2, #0x20
-	bl sub_08016F4C
+	bl copyPalettesToBufferIwram
 	cmp r5, #1
 	beq _080206E4
 	cmp r5, #1

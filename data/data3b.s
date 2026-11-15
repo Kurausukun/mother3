@@ -88,12 +88,12 @@ gUnknown_08D2E1C0:
         .4byte sub_0803B58C+1
 
 
-    .global gMapLayerInfoTable
-gMapLayerInfoTable:
+    .global gMapLayersInfoTable
+gMapLayersInfoTable:
     .incbin "baserom.gba", 0x00D2E1D8, 0x6D6C
 
-    .global gMapGraphicsInfoTable
-gMapGraphicsInfoTable:
+    .global gMapGfxPalInfoTable
+gMapGfxPalInfoTable:
     .incbin "baserom.gba", 0x00D34F44, 0x659C
 
     .global gMapGraphicsTable
@@ -104,11 +104,11 @@ gMapGraphicsTable:
 gMapPalettes:
     .incbin "baserom.gba", 0x00F3C344, 0x53CF8
 
-    .global gMapTilemapData
-gMapTilemapData:
+    .global gCompressedMapCellData
+gCompressedMapCellData:
     .incbin "baserom.gba", 0x00F9003C, 0xbd990
 
-gMapTileData::
+gCompressedMapMetatileData::
     .incbin "baserom.gba", 0x0104D9CC, 0xd04e8
 
 gMapDoorHotspotTable::

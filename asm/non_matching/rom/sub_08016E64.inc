@@ -39,7 +39,7 @@ sub_08016E64:
 	bl CpuSmartSet
 	b _08016ECA
 	.align 2, 0
-_08016EB4: .4byte gUnknown_03005314
+_08016EB4: .4byte gPaletteBufferIwram
 _08016EB8: .4byte gGame
 _08016EBC: .4byte gSomeBlend
 _08016EC0: .4byte 0x000131D0

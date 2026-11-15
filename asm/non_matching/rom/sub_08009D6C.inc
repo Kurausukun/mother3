@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08009D6C:
+getAddressofGlyphBitmap:
 	push {lr}
 	lsls r0, r0, #0x10
 	lsrs r3, r0, #0x10

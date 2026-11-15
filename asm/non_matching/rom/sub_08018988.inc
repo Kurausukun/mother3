@@ -153,7 +153,7 @@ _08018AA4:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08018AB4: .4byte gUnknown_02005C1C
+_08018AB4: .4byte gGame+0x1C @ gGame.mapLayersInfo.dims
 _08018AB8: .4byte 0x00005894
 _08018ABC: .4byte gGame
 _08018AC0: .4byte 0x000067AC

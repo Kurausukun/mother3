@@ -12,6 +12,6 @@ sub_08006944:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08006960: .4byte gUnknown_0200C3C8
+_08006960: .4byte gGame+0x67C8 @ gGame.objects
 _08006964: .4byte 0xFFFFF2B8
 	.syntax divided

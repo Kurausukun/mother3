@@ -281,7 +281,7 @@ _08015CA8:
 	bx r1
 	.align 2, 0
 _08015CB8: .4byte 0x00005962
-_08015CBC: .4byte gUnknown_03005314
+_08015CBC: .4byte gPaletteBufferIwram
 _08015CC0: .4byte gUnknown_02000028
 _08015CC4: .4byte gUnknown_02000008
 _08015CC8: .4byte gSomeBlend

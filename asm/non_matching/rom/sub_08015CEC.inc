@@ -115,7 +115,7 @@ _08015DD0: .4byte 0x00011D9C
 _08015DD4: .4byte gUnknown_080C2A90
 _08015DD8: .4byte gGame
 _08015DDC: .4byte 0x00005962
-_08015DE0: .4byte gUnknown_03005314
+_08015DE0: .4byte gPaletteBufferIwram
 _08015DE4: .4byte gUnknown_02000028
 _08015DE8: .4byte gUnknown_02000008
 _08015DEC: .4byte 0x00011D9F

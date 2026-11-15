@@ -27,7 +27,7 @@ _080306D8:
 	bl sub_08036DDC
 	movs r1, #0x10
 	movs r2, #0xe0
-	bl sub_08016F4C
+	bl copyPalettesToBufferIwram
 	pop {r4}
 	pop {r0}
 	bx r0

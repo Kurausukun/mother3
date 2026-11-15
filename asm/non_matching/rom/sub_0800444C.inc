@@ -46,5 +46,5 @@ _080044A4: .4byte 0x00009D14
 _080044A8: .4byte 0x000067C4
 _080044AC: .4byte 0x000067AC
 _080044B0: .4byte 0x00009488
-_080044B4: .4byte gUnknown_03005314
+_080044B4: .4byte gPaletteBufferIwram
 	.syntax divided

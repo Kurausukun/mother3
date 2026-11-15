@@ -89,7 +89,7 @@ _0801540C:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0801541C: .4byte gUnknown_03005314
+_0801541C: .4byte gPaletteBufferIwram
 _08015420: .4byte gUnknown_02000008
 _08015424: .4byte gSomeBlend
 _08015428: .4byte 0x0001ED11

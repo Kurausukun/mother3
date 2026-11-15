@@ -23,7 +23,7 @@ _08017F60:
 	movs r0, #0
 	b _08017F8A
 	.align 2, 0
-_08017F74: .4byte gUnknown_03005314
+_08017F74: .4byte gPaletteBufferIwram
 _08017F78: .4byte 0x00007FFF
 _08017F7C:
 	adds r3, #2

@@ -4,7 +4,7 @@ sub_0800FDA8:
 	ldr r4, _0800FDE0
 	adds r0, r4, #0
 	bl sub_080101F8
-	bl sub_08019F90
+	bl loadTownMapBounds
 	ldr r0, _0800FDE4
 	adds r4, r4, r0
 	ldrh r0, [r4]

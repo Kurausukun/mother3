@@ -5,7 +5,7 @@ sub_0800932C:
 	adds r5, r0, #0
 	lsls r0, r1, #0x10
 	lsrs r0, r0, #0x10
-	bl sub_08009D6C
+	bl getAddressofGlyphBitmap
 	adds r3, r0, #0
 	movs r2, #0
 	add r6, sp, #0x18

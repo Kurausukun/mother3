@@ -250,7 +250,7 @@ _08017166:
 	ldr r0, [r0]
 	mov pc, r0
 	.align 2, 0
-_08017170: .4byte gUnknown_03005314
+_08017170: .4byte gPaletteBufferIwram
 _08017174: .4byte _08017178
 _08017178:
 	.4byte _080171A8
