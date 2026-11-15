@@ -39,14 +39,14 @@ typedef struct MapCell {
     u16 vflip : 1;
 } MapCell;
 
-typedef struct MapLayerInfo {
-    u8 layerWidth : 3;    // width in Chunks (16 tiles/256px)
-    u8 layerHeight : 3;   // height in Chunks (16 tiles/256px)
+typedef struct MapLayerDimensions {
+    u8 width : 3;    // width in Chunks (16 tiles/256px)
+    u8 height : 3;   // height in Chunks (16 tiles/256px)
     u8 unk : 2;
     u8 unk1[3];
-} MapLayerInfo;
+} MapLayerDimensions;
 
-typedef struct MapLayerAlphaInfo {
+typedef struct MapLayersInfo {
     u32 blendMode : 2;
     u32 alpha1 : 4;
     u32 alpha2 : 4;
@@ -63,18 +63,18 @@ typedef struct MapLayerAlphaInfo {
     u32 _3_1 : 1;
     u32 _3_2 : 7;
     u8 _4;
-    u8 _5_1 : 3;
+    s8 _5_1 : 3;
     s8 _5_8 : 1;
     u8 _5_10 : 4;
     u8 _6[2];
     s16 _8[4];
-    MapLayerInfo layers[3];
-} MapLayerAlphaInfo;
+    MapLayerDimensions dims[3];
+} MapLayersInfo;
 
-typedef struct MapGraphicsInfo {
+typedef struct MapGfxPalInfo {
     s16 tileSetIndices[12];
     s16 paletteIndex;
-} MapGraphicsInfo;
+} MapGfxPalInfo;
 
 typedef struct DoorDestinationInfo {
     u8 _0;
@@ -102,11 +102,11 @@ typedef struct BgLayerState {
 } BgLayerState;
 
 extern const char gMapPalettes;
-extern const char gMapTileData;
-extern const char gMapTilemapData;
+extern const char gCompressedMapMetatileData;
+extern const char gCompressedMapCellData;
 extern const char gMapGraphicsTable;
-extern const MapGraphicsInfo gMapGraphicsInfoTable;
-extern const MapLayerAlphaInfo gMapLayerInfoTable;
+extern const MapGfxPalInfo gMapGfxPalInfoTable;
+extern const MapLayersInfo gMapLayersInfoTable;
 extern const char gMapDoorHotspotTable;
 extern const char gObjectData;
 extern const char gGiftBoxTable;
@@ -131,7 +131,15 @@ u16 mapCellGetMinitileIndex(MapCell*, u16);
 u16 getMapLayerHeightInChunks(u16);
 u16 getMapLayerWidthInChunks(u16);
 u16 sub_0801AA70(u16, Vector2i*);
-const MapGraphicsInfo* getMapGraphicsInfo(u16);
+const MapLayersInfo* getMapLayersInfo(u16);
+const MapGfxPalInfo* getMapGfxPalInfo(u16);
+const void* getMapGraphics(u16);
+const void* getMapPaletteTable(u16);
+const void* getCompressedMapCellData(u16);
+const void* getCompressedMapMetatileData(u16);
+const void* getMapDoorsHotspots(u16, u16);
+const void* getMapObjectData(u16);
+void* getGiftBoxData(u16);
 DoorDestinationInfo* getDoorDestinationInfo(u16);
 
 #ifdef __cplusplus

@@ -101,13 +101,13 @@ struct Game {
     u8 _8_80 : 1;
     u8 _9;
     u16 _a;
-    MapLayerAlphaInfo mapLayerInfo;
-    u32 _28;
-    u8 _2c[0x5c - 0x2c];
-    u16* mapTilemaps[3];
-    u8 _68[0x4088 - 0x68];
-    Metatile* mapMetatiles;
-    u8 _408c[0x58ac - 0x408c];
+    MapLayersInfo mapLayersInfo; // 0xc
+    void* mapPalettesPtr;
+    void* mapGraphicsPtr[12]; // 0x2c
+    u16* mapCellsPtr[3]; // 0x5c
+    u16 mapCells[8208]; // 0x68
+    Metatile* mapMetatilesPtr;
+    Metatile mapMetatiles[772];
     s32* _58ac;
     BgLayerState mapBgLayerStates[3];
     u8 _5958[0x595a - 0x5958];
@@ -130,11 +130,11 @@ struct Game {
     u16 _679e;
     u16 _67a0;
     u8 _67a2[0x67ac - 0x67a2];
-    u16 cur_room;
-    u16 cur_track; //67ae
-    u16 cur_track_alt; //67b0
+    u16 cur_room; // 0x67ac
+    u16 cur_track; // 0x67ae
+    u16 cur_track_alt; // 0x67b0
     u8 _67b2[0x67b8 - 0x67b2];
-    s16 cam_target;
+    s16 cam_target; // 0x67b8
     u8 _67ba[0x67c0 - 0x67ba];
     u16 _67c0;
     u16 _67c2;
@@ -142,7 +142,9 @@ struct Game {
     u8 _67c4_10 : 1;
     u8 _67c4_20 : 1;
     u8 _67c4_40 : 1;
-    u8 _67c5[0x7d08 - 0x67c5];
+    u8 _67c5[0x67c8 - 0x67c5];
+    Object objects[25]; // 0x67c8
+    u8 _7c18[0x7d08 - 0x7c18];
     u32 path_memory[0x140];
     u8 _8208[0x8299 - 0x8208];
     u8 party_count;
@@ -165,7 +167,7 @@ struct Game {
     u8 _8371;
     u8 _8372;
     u8 _8373[0x83a4 - 0x8373];
-    s32 _83a4;
+    void* _83a4;
     u16 _83a8;
     u16 _83aa;
     u16 _83ac;

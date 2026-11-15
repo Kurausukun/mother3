@@ -190,8 +190,6 @@ typedef struct Object {
     u8 _cc_80 : 1;
 } Object;
 
-extern Object gUnknown_0200C3C8[];
-
 typedef struct TileInfo {
     u16 tile_num : 10;    // 0x04 bits 0-9 - Tile/character number
     u16 priority : 2;     // 0x04 bits 10-11 - Priority vs BG
@@ -419,8 +417,11 @@ typedef struct struct_02016028 {
     u8 _3532;
     u8 pad_3533[0x35BA - 0x3533];
     u8 _35ba_1 : 1;
-    u8 _35ba_2 : 2;
+    u8 _35ba_2 : 1;
+    u8 _35ba_4 : 1;
     u8 _35ba_8 : 1;
+    u8 _35ba_10 : 3;
+    u8 _35ba_80 : 1;
     u8 pad_35bb;
     DebugMenuState debugMenuPages[6];
     u8 _3604[0x360E - 0x3604];
@@ -550,7 +551,8 @@ typedef struct struct_02016028 {
     u8 _c5b6[0xC61C - 0xC5B6];
     u32 _c61c;
     void* _C620;
-    u8 pad_C624[0x11C88 - 0xC624];
+    u8 pad_C624[0x11C84 - 0xC624];
+    u8* _11C84;
     u8 _11C88;
     u8 _11C89;
     u8 pad_11C8A;
@@ -566,7 +568,9 @@ typedef struct struct_02016028 {
     u8 _121b6_2 : 1;
     u8 _121b6_4 : 6;
     u8 _121b7;
-    u8 _121b8_1 : 3;
+    u8 _121b8_1 : 1;
+    u8 _121b8_2 : 1;
+    u8 _121b8_4 : 1;
     u8 _121b8_8 : 1;
     u8 _121b8_10 : 1;
     u8 _121b8_20 : 3;
@@ -575,7 +579,8 @@ typedef struct struct_02016028 {
     u8 _121bb_1 : 3;
     u8 _121bb_8 : 1;
     u8 _121bb_10 : 1;
-    u8 _121bc[0x121C8 - 0x121BC];
+    u16 _121bc;
+    u8 _121be[0x121C8 - 0x121BE];
 
     union {
         u64 _121c8;
@@ -598,6 +603,7 @@ typedef struct struct_02016028 {
     u8 _1ed10_10 : 1;
     u8 _1ed10_20 : 1;
 } struct_02016028;
+extern struct_02016028 gSomeBlend;
 
 typedef struct Save {
     u8 party[5];
@@ -664,9 +670,7 @@ typedef struct Save {
     u8 _80e[0x10];
     u8 _81e;
 } Save;
-
 extern Save gSave;
-extern struct_02016028 gSomeBlend;
 
 typedef struct LevelUpExpInfo {
     u32 ch_no;
