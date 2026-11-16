@@ -20,12 +20,12 @@ sub_080115C4:
 	lsls r4, r4, #0x10
 	lsrs r7, r4, #0x10
 	adds r0, r6, #0
-	bl sub_0801A61C
+	bl getMapLayerWidthInPixels
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x14
 	str r0, [sp, #0x18]
 	adds r0, r6, #0
-	bl sub_0801A638
+	bl getMapLayerHeightInPixels
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x14
 	str r0, [sp, #0x1c]
@@ -40,7 +40,7 @@ _0801160A:
 	lsls r2, r3, #0x10
 	asrs r2, r2, #0x10
 	adds r0, r6, #0
-	bl sub_0801A904
+	bl getMapCellFromMapLayer
 	str r0, [sp, #4]
 	ldr r5, _0801170C
 	adds r4, r6, #1
@@ -50,7 +50,7 @@ _0801160A:
 	adds r1, r4, #0
 	mov r2, sb
 	adds r3, r7, #0
-	bl sub_08001378
+	bl GetBgLayerTilemap
 	mov r8, r0
 	adds r3, r7, #1
 	lsls r3, r3, #0x10
@@ -58,7 +58,7 @@ _0801160A:
 	adds r0, r5, #0
 	adds r1, r4, #0
 	mov r2, sb
-	bl sub_08001378
+	bl GetBgLayerTilemap
 	adds r7, r0, #0
 	movs r4, #0
 _08011646:
@@ -85,10 +85,10 @@ _08011660:
 _0801166A:
 	lsrs r0, r2, #0x1c
 	lsrs r1, r1, #0x1a
-	bl sub_0801AD4C
+	bl getMetatileFromTileset
 	str r0, [sp, #8]
 	ldr r0, [sp, #4]
-	bl sub_0801AE18
+	bl mapCellGetMinitileIndexOrder
 	str r0, [sp, #0x14]
 	ldr r1, [sp, #4]
 	ldr r0, [r1]

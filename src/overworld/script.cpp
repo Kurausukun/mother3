@@ -8,7 +8,7 @@
 
 extern "C" {
 
-extern u16 gUnknown_03005314;
+extern u16 gPaletteBufferIwram;
 extern u32 gUnknown_030055F4[];
 extern u32 gUnknown_0200DEBC[];
 extern u8 gUnknown_02004100[0x10];
@@ -50,7 +50,6 @@ extern s32 sub_080222F8(u16);
 extern void sub_080250B4(s32, u16, u16);
 extern s32 getCommonScriptLine(u16);
 extern void CpuMemFill(void*, s32, s32); /* extern */
-extern s32 getMapPaletteTable(u16);      /* extern */
 extern void sub_08027904();
 extern void sub_080334D0(u8, u16);
 
@@ -450,7 +449,7 @@ u16 cmd_reload_room() {
     if (gGame._8484 != 0) {
         gSomeBlend._121bb_10 = 1;
         sub_0800AD6C();
-        CpuSmartSet(&gGame._9488, &gUnknown_03005314, 0x400);
+        CpuSmartSet(&gGame._9488, &gPaletteBufferIwram, PLTT_SIZE);
         gGame.mode = MODE_FADE_IN;
         sub_08013D38();
         sub_0802610C(0);
@@ -1106,26 +1105,26 @@ u16 cmd_29(s32* sp) {
     return 0;
 }
 
-void sub_08029684(u32, u32, u32, Size*);
-void sub_08029FC8(u32, u32, u32, Size*);
+void sub_08029684(u32, u32, u32, Vector2i*);
+void sub_08029FC8(u32, u32, u32, Vector2i*);
 
 u16 cmd_31(s32* sp) {
     u16 a;
     u16 b;
     u16 c;
     u16 d;
-    Size sz;
+    Vector2i size;
 
     a = scriptstack_peek(sp, 4);
     b = scriptstack_peek(sp, 3);
     c = scriptstack_peek(sp, 2);
-    sz.w = c;
+    size.x = c;
     d = scriptstack_peek(sp, 1);
-    sz.h = d;
+    size.y = d;
     c = scriptstack_peek(sp, 0);
-    sz.w += 8;
+    size.x += 8;
     if (a < 5) {
-        sub_08029684(a, b, c, &sz);
+        sub_08029684(a, b, c, &size);
     }
     return 0;
 }
@@ -1458,17 +1457,17 @@ u16 cmd_E6(s32* sp) {
     u16 b;
     u16 c;
     u32 d;
-    Size sz;
+    Vector2i size;
 
     a = scriptstack_peek(sp, 4);
     b = scriptstack_peek(sp, 3);
     c = scriptstack_peek(sp, 2);
-    sz.w = c;
+    size.x = c;
     d = scriptstack_peek(sp, 1);
-    sz.h = d;
+    size.y = d;
     c = scriptstack_peek(sp, 0);
-    sz.w += 8;
-    sub_08029FC8(a, b, c, &sz);
+    size.x += 8;
+    sub_08029FC8(a, b, c, &size);
     return 0;
 }
 
@@ -2274,7 +2273,7 @@ u16 cmd_3A(s32* sp) {
     sub_0800ACA0(0);
     gSomeBlend._121bb_8 = 1;
     gSomeBlend._121bb_10 = 0;
-    gSomeBlend._121bc[8] = 80;
+    gSomeBlend._121be[6] = 80;
     return 1;
 }
 
@@ -2543,7 +2542,7 @@ u16 cmd_3F(s32* sp) {
     v4 = scriptstack_peek(sp, 0);
     if (v2 <= 8 && v3 <= 5) {
         for (i = 0; i <= 2; i++) {
-            if ((i || gGame._f << 0x1f) && (i != 1 || (gGame._11 << 0x1c) >= 0))
+            if ((i || gGame.mapLayersInfo._3_1 << 31) && (i != 1 || gGame.mapLayersInfo._5_8 >= 0))
                 sub_08018910(i, v2, v3, v4);
         }
     }
@@ -2641,15 +2640,15 @@ u16 cmd_41(s32* sp) {
     u16 v3;
     Object* spr;
     u16 i;
-    Size y;
-    MovementVector vec;
+    Vector2i y;
+    Vector2i vec;
 
     v2 = scriptstack_peek(sp, 1);
     v3 = scriptstack_peek(sp, 0);
     spr = get_obj(v2);
     if (spr) {
-        sub_08036BEC(spr, &y);
-        sub_08010528(&vec, y.w, y.h);
+        getTilePosFromObj(spr, &y);
+        sub_08010528(&vec, y.x, y.y);
         sub_0801059C(&vec);
         switch (gGame.state_1) {
         case 2:
@@ -2659,7 +2658,7 @@ u16 cmd_41(s32* sp) {
             break;
         case 5:
             for (i = 0; i <= 2; ++i) {
-                if ((i || gGame._f << 31) && (i != 1 || (gGame._11 << 0x1c) >= 0))
+                if ((i || gGame.mapLayersInfo._3_1 << 31) && (i != 1 || gGame.mapLayersInfo._5_8 >= 0))
                     sub_08018988(i, v3, &vec);
             }
             break;
@@ -3233,7 +3232,7 @@ u16 cmd_EB(s32* sp) {
 	ldr r1, _0801E6E8 @ =0x000067AC\n\
 	adds r0, r4, r1\n\
 	ldrh r0, [r0]\n\
-	bl getMapLayerAlphaInfo\n\
+	bl getMapLayersInfo\n\
 	ldr r5, _0801E6EC @ =0x000067C5\n\
 	adds r3, r4, r5\n\
 	ldrb r2, [r3]\n\
@@ -3311,12 +3310,12 @@ u16 cmd_F0(s32* sp) {
 
 u16 cmd_F1(s32* sp) {
     u16 v1;
-    u16 v3[2];
+    Vector2u pos;
 
     v1 = scriptstack_peek(sp, 0);
-    u16* p = v3;
-    sub_0801A594(v1, v3);
-    sub_0801097C(v1, v3[0], p[1]);
+    Vector2u* p = &pos;
+    sub_0801A594(v1, &pos);
+    sub_0801097C(v1, pos.x, p->y);
     return 0;
 }
 
@@ -3625,12 +3624,12 @@ _0801EB0C: .4byte 0x0000FFFF\n\
 
 u16 cmd_54(s32* sp) {
     register u32 idx asm("r6");
-    Size size;
+    Vector2i size;
     u16 a, b;
 
     idx = scriptstack_peek(sp, 4);
-    size.w = scriptstack_peek(sp, 3);
-    size.h = scriptstack_peek(sp, 2);
+    size.x = scriptstack_peek(sp, 3);
+    size.y = scriptstack_peek(sp, 2);
     b = scriptstack_peek(sp, 1);
     a = scriptstack_peek(sp, 0);
 
@@ -3643,10 +3642,10 @@ u16 cmd_54(s32* sp) {
         obj->_87 = 3;
     }
 
-    size.w *= 16;
-    size.h *= 16;
-    size.w += 8;
-    size.h += 8;
+    size.x <<= 4;
+    size.y <<= 4;
+    size.x += 8;
+    size.y += 8;
     if (b < 6 && a < 4) {
         sub_08036EB8(obj, 0, &size, b, a, 0);
     }
@@ -3675,34 +3674,34 @@ u16 cmd_55(s32* sp) {
         obj->_87 = 3;
     }
 
-    Size sz;
-    sub_08036BEC(obj2, &sz);
+    Vector2i size;
+    getTilePosFromObj(obj2, &size);
 
     if (b == 0) {
         if (obj->xpos > obj2->xpos) {
-            sz.w += obj->_a6 + obj2->_a6;
+            size.x += obj->_a6 + obj2->_a6;
         } else if (obj->xpos < obj2->xpos) {
-            sz.w -= obj->_a6 + obj2->_a6;
+            size.x -= obj->_a6 + obj2->_a6;
         }
     } else {
         if (obj->ypos > obj2->ypos) {
-            sz.h += obj->_a8 + obj2->_a8;
+            size.y += obj->_a8 + obj2->_a8;
         } else if (obj->ypos < obj2->ypos) {
-            sz.h -= obj->_a8 + obj2->_a8;
+            size.y -= obj->_a8 + obj2->_a8;
         }
     }
 
     if (a < 6) {
-        sub_08036EB8(obj, 0, &sz, a, 2, 0);
+        sub_08036EB8(obj, 0, &size, a, 2, 0);
     }
     return 0;
 }
 
 u16 cmd_56(s32* sp) {
     s32 idx = scriptstack_peek(sp, 3);
-    Size sz;
-    sz.w = scriptstack_peek(sp, 2);
-    sz.h = scriptstack_peek(sp, 1);
+    Vector2i size;
+    size.x = scriptstack_peek(sp, 2);
+    size.y = scriptstack_peek(sp, 1);
     u16 a = scriptstack_peek(sp, 0);
 
     Object* obj = get_obj(idx);
@@ -3712,9 +3711,9 @@ u16 cmd_56(s32* sp) {
     if (idx == -2) {
         obj->_87 = 3;
     }
-    sz.w += 8;
-    sz.h += 8;
-    sub_08035DFC(obj, a, &sz);
+    size.x += 8;
+    size.y += 8;
+    sub_08035DFC(obj, a, &size);
     return 0;
 }
 
@@ -3730,15 +3729,15 @@ u16 cmd_57(s32* sp) {
         obj->_87 = 3;
     }
 
-    Size sz;
-    sub_08036BEC(obj, &sz);
+    Vector2i size;
+    getTilePosFromObj(obj, &size);
 
     // matching hack
     u32 tmp = 0;
     tmp = 0xf;
 
     if (b < 6) {
-        sub_08036EB8(obj, 0, &sz, b, 2, 0);
+        sub_08036EB8(obj, 0, &size, b, 2, 0);
         if (a < 8) {
             obj->_c7_4 = a;
         } else {
@@ -3973,10 +3972,10 @@ u16 cmd_5C(s32* sp) {
     if (obj == 0) {
         return 0;
     }
-    Size sz;
-    sub_08036BEC(obj, &sz);
-    scriptstack_set(sp, 1, (s16)sz.w + 8);
-    scriptstack_set(sp, 0, sz.h + 8);
+    Vector2i size;
+    getTilePosFromObj(obj, &size);
+    scriptstack_set(sp, 1, size.x + 8);
+    scriptstack_set(sp, 0, size.y + 8);
     return 0;
 }
 
@@ -4400,7 +4399,7 @@ u16 cmd_C5(s32* sp) {
     u16 c = scriptstack_peek(sp, 0);
     u16 d;
     Object* obj2;
-    Size sz;
+    Vector2i size;
 
     if (b != 0)
         return 0;
@@ -4438,7 +4437,7 @@ u16 cmd_C5(s32* sp) {
             CpuMemClear(gUnknown_030055F4, 0xa0);
             break;
         }
-        sub_08036BEC(obj, &sz);
+        getTilePosFromObj(obj, &size);
         obj->ypos += 64;
         return 0;
 
@@ -4446,8 +4445,8 @@ u16 cmd_C5(s32* sp) {
         gGame._829b = 0;
         gGame._82ac = 0xFFFF;
         sub_08030550(obj, gCharStats[obj->_86].spriteNo, 0);
-        sub_08036BEC(obj, &sz);
-        sub_08029FC8(gGame._82b9[0xbc], gGame.cur_room, 2, &sz);
+        getTilePosFromObj(obj, &size);
+        sub_08029FC8(gGame._82b9[0xbc], gGame.cur_room, 2, &size);
         sub_0802C8A8(&gGame._82b9[3], 0);
         switch (d) {
         case 0:
@@ -4540,14 +4539,14 @@ u16 cmd_D5(s32* sp) {
     u16 b = scriptstack_peek(sp, 0);
     Object* obj = get_obj(a);
     Object* obj2;
-    Size sz;
-    Size* unused = &sz;  // needed for matching
+    Vector2i size;
+    Vector2i* unused = &size;  // needed for matching
 
     if (obj) {
         obj2 = sub_08035138(gGame.party_count);
-        sz.w = obj2->xpos >> 4;
-        sz.h = obj2->ypos >> 4;
-        sub_08035DFC(obj, b, &sz);
+        size.x = obj2->xpos >> 4;
+        size.y = obj2->ypos >> 4;
+        sub_08035DFC(obj, b, &size);
         obj->_c7_4 = obj2->_4_0;
     }
     return 0;
@@ -4593,7 +4592,7 @@ u16 cmd_D9(s32* sp) {
 }
 
 u16 cmd_DA(s32* sp) {
-    Size sz;
+    Vector2i size;
     s32 a = scriptstack_peek(sp, 1);
     (void)scriptstack_peek(sp, 0);
     Object* obj = get_obj(a);
@@ -4604,9 +4603,9 @@ u16 cmd_DA(s32* sp) {
         obj->_b8[2] = 1;
         obj->_b8[1] = 1;
         obj->_b8[0] = 1;
-        sub_08036BEC(obj, &sz);
-        sz.h -= 0xA0;
-        sub_08035DFC(obj, 0x28, &sz);
+        getTilePosFromObj(obj, &size);
+        size.y -= 0xA0;
+        sub_08035DFC(obj, 0x28, &size);
         sub_080362C0(obj, 0x100, 0x100, 0, 0x200, 0, 0x1E);
     }
 
@@ -4689,7 +4688,7 @@ extern "C" s32 cmd_set_fade(s32* sp) {
 
 extern "C" s32 cmd_fade_in(s32* sp) {
     if (gGame._595b[0] != 1) {
-        CpuSmartSet(&gGame._9488, &gUnknown_03005314, 0x400);
+        CpuSmartSet(&gGame._9488, &gPaletteBufferIwram, PLTT_SIZE);
         u8 lastGameMode = gGame.mode;
         gSomeBlend.bldcnt = 0;
         gSomeBlend.bldalpha = 0;
@@ -4707,7 +4706,7 @@ extern "C" s32 cmd_fade_in(s32* sp) {
 
 extern "C" s32 cmd_play_fade(s32* sp) {
     if (gGame._595b[1] != 1) {
-        CpuSmartSet((u32*)&gUnknown_03005314, (u16*)&gGame._9488, 0x400);
+        CpuSmartSet((u32*)&gPaletteBufferIwram, (u16*)&gGame._9488, PLTT_SIZE);
         u8 lastGameMode = gGame.mode;
         gGame.mode = MODE_LOAD_ROOM;
         gGame._5960 = scriptstack_peek(sp, 0);
@@ -4748,7 +4747,7 @@ extern "C" s32 cmd_73(s32* sp) {
     u16 b = scriptstack_peek(sp, 2);
     u16 c = scriptstack_peek(sp, 1);
 
-    gGame._83a4 = getMapPaletteTable(scriptstack_peek(sp, 0));
+    gGame._83a4 = (void*)getMapPaletteTable(scriptstack_peek(sp, 0));
     u16 d = a == 0 ? 8 : 9;
     sub_080272F4(d, b, c);
 
@@ -4877,7 +4876,7 @@ extern "C" ASM_FUNC("asm/non_matching/script/cmd_disp_text_special.inc", void cm
 extern "C" s32 cmd_B9(s32* sp) {
     s16 a = scriptstack_peek(sp, 0);
     if (a != -1) {
-        gGame._28 = getMapPaletteTable((u16)a);
+        gGame.mapPalettesPtr = (void*)getMapPaletteTable((u16)a);
         sub_08027904();
     }
 
@@ -4895,9 +4894,9 @@ extern "C" s32 cmd_B9(s32* sp) {
     }
 
     if (gGame._595b[0] == 2) {
-        CpuMemFill(&gUnknown_03005314, 0x400, -1);
+        CpuMemFill(&gPaletteBufferIwram, PLTT_SIZE, -1);
     } else {
-        CpuMemClear(&gUnknown_03005314, 0x400);
+        CpuMemClear(&gPaletteBufferIwram, PLTT_SIZE);
     }
 
     return 0;

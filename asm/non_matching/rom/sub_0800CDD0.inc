@@ -293,7 +293,7 @@ _0800D000:
 	cmp r0, #0
 	blt _0800D024
 	adds r4, r0, #0
-	bl sub_0801A5EC
+	bl getMapMainLayerWidthInPixels
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	subs r0, #1
@@ -302,7 +302,7 @@ _0800D000:
 	ldrh r0, [r6]
 	b _0800D026
 _0800D01C:
-	bl sub_0801A5EC
+	bl getMapMainLayerWidthInPixels
 	subs r0, #1
 	b _0800D026
 _0800D024:
@@ -316,7 +316,7 @@ _0800D026:
 	blt _0800D050
 	movs r3, #2
 	ldrsh r4, [r5, r3]
-	bl sub_0801A604
+	bl getMapMainLayerHeightInPixels
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	subs r0, #1
@@ -325,7 +325,7 @@ _0800D026:
 	ldrh r0, [r5, #2]
 	b _0800D052
 _0800D048:
-	bl sub_0801A604
+	bl getMapMainLayerHeightInPixels
 	subs r0, #1
 	b _0800D052
 _0800D050:
@@ -337,7 +337,7 @@ _0800D052:
 	cmp r0, #0
 	blt _0800D078
 	adds r4, r0, #0
-	bl sub_0801A5EC
+	bl getMapMainLayerWidthInPixels
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	subs r0, #1
@@ -346,7 +346,7 @@ _0800D052:
 	ldrh r0, [r7]
 	b _0800D07A
 _0800D070:
-	bl sub_0801A5EC
+	bl getMapMainLayerWidthInPixels
 	subs r0, #1
 	b _0800D07A
 _0800D078:
@@ -360,7 +360,7 @@ _0800D07A:
 	blt _0800D0A4
 	movs r3, #2
 	ldrsh r4, [r5, r3]
-	bl sub_0801A604
+	bl getMapMainLayerHeightInPixels
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	subs r0, #1
@@ -369,7 +369,7 @@ _0800D07A:
 	ldrh r0, [r5, #2]
 	b _0800D0A6
 _0800D09C:
-	bl sub_0801A604
+	bl getMapMainLayerHeightInPixels
 	subs r0, #1
 	b _0800D0A6
 _0800D0A4:

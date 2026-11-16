@@ -126,7 +126,7 @@ _0803740E:
 	mov r0, sp
 	movs r3, #0
 	ldrsh r4, [r0, r3]
-	bl sub_0801A5EC
+	bl getMapMainLayerWidthInPixels
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	subs r0, #1
@@ -136,7 +136,7 @@ _0803740E:
 	ldrh r1, [r0]
 	b _0803743C
 _08037432:
-	bl sub_0801A5EC
+	bl getMapMainLayerWidthInPixels
 	subs r1, r0, #1
 	b _0803743C
 _0803743A:
@@ -151,7 +151,7 @@ _0803743C:
 	blt _08037468
 	movs r0, #2
 	ldrsh r4, [r5, r0]
-	bl sub_0801A604
+	bl getMapMainLayerHeightInPixels
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	subs r0, #1
@@ -160,7 +160,7 @@ _0803743C:
 	ldrh r1, [r5, #2]
 	b _0803746A
 _08037460:
-	bl sub_0801A604
+	bl getMapMainLayerHeightInPixels
 	subs r1, r0, #1
 	b _0803746A
 _08037468:
@@ -173,7 +173,7 @@ _0803746A:
 	cmp r0, #0
 	blt _08037492
 	adds r4, r0, #0
-	bl sub_0801A5EC
+	bl getMapMainLayerWidthInPixels
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	subs r0, #1
@@ -182,7 +182,7 @@ _0803746A:
 	ldrh r0, [r6]
 	b _08037494
 _0803748A:
-	bl sub_0801A5EC
+	bl getMapMainLayerWidthInPixels
 	subs r0, #1
 	b _08037494
 _08037492:
@@ -196,7 +196,7 @@ _08037494:
 	blt _080374BE
 	movs r3, #2
 	ldrsh r4, [r5, r3]
-	bl sub_0801A604
+	bl getMapMainLayerHeightInPixels
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	subs r0, #1
@@ -205,7 +205,7 @@ _08037494:
 	ldrh r1, [r5, #2]
 	b _080374C0
 _080374B6:
-	bl sub_0801A604
+	bl getMapMainLayerHeightInPixels
 	subs r1, r0, #1
 	b _080374C0
 _080374BE:

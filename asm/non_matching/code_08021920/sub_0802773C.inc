@@ -18,7 +18,7 @@ sub_0802773C:
 	ldr r0, [r0]
 	mov pc, r0
 	.align 2, 0
-_08027760: .4byte gUnknown_03005314
+_08027760: .4byte gPaletteBufferIwram
 _08027764: .4byte gUnknown_0200F088
 _08027768: .4byte 0xFFFFC4D3
 _0802776C: .4byte _08027770
@@ -53,7 +53,7 @@ _08027784:
 	bl CpuSmartSet
 	b _08027812
 	.align 2, 0
-_080277B8: .4byte gUnknown_03005314
+_080277B8: .4byte gPaletteBufferIwram
 _080277BC: .4byte gGame
 _080277C0: .4byte 0x00008494
 _080277C4: .4byte gUnknown_020291F8
@@ -80,7 +80,7 @@ _080277C8:
 	strb r2, [r1]
 	b _08027812
 	.align 2, 0
-_080277F4: .4byte gUnknown_03005314
+_080277F4: .4byte gPaletteBufferIwram
 _080277F8: .4byte gSomeBlend
 _080277FC: .4byte 0x00002C9C
 _08027800: .4byte 0x00002C9D
@@ -95,5 +95,5 @@ _08027812:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08027818: .4byte gUnknown_03005314
+_08027818: .4byte gPaletteBufferIwram
 	.syntax divided

@@ -146,7 +146,7 @@ _08012910:
 	ldrb r0, [r6]
 	lsls r0, r0, #0x1d
 	lsrs r0, r0, #0x1e
-	bl sub_0801A61C
+	bl getMapLayerWidthInPixels
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x14
 	ldr r2, _080129B8

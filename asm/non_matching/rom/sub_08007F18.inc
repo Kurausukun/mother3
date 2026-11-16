@@ -14,7 +14,7 @@ sub_08007F18:
 	bl Blob_GetEntry
 	movs r1, #0x1c
 	movs r2, #0x20
-	bl sub_08016F4C
+	bl copyPalettesToBufferIwram
 	adds r0, r4, #0
 	movs r1, #0xd
 	bl Blob_GetEntry

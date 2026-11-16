@@ -5,11 +5,11 @@ sub_08035AEC:
 	adds r4, r0, #0
 	add r5, sp, #4
 	adds r1, r5, #0
-	bl sub_08036BEC
-	bl sub_0801A5EC
+	bl getTilePosFromObj
+	bl getMapMainLayerWidthInPixels
 	lsls r0, r0, #0x10
 	lsrs r6, r0, #0x10
-	bl sub_0801A604
+	bl getMapMainLayerHeightInPixels
 	lsls r0, r0, #0x10
 	lsrs r2, r0, #0x10
 	mov r1, sp

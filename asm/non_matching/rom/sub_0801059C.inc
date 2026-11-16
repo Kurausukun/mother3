@@ -2,10 +2,10 @@
 sub_0801059C:
 	push {r4, r5, lr}
 	adds r4, r0, #0
-	bl sub_0801A5EC
+	bl getMapMainLayerWidthInPixels
 	lsls r0, r0, #0x10
 	lsrs r5, r0, #0x10
-	bl sub_0801A604
+	bl getMapMainLayerHeightInPixels
 	lsls r0, r0, #0x10
 	lsrs r1, r0, #0x10
 	ldr r0, _080105F0

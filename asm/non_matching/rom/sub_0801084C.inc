@@ -73,7 +73,7 @@ _080108C4:
 	cmp r1, #3
 	bne _080108FC
 	adds r0, r4, #0
-	bl sub_0801A61C
+	bl getMapLayerWidthInPixels
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, sb
@@ -100,7 +100,7 @@ _080108FC:
 	cmp r0, #3
 	bne _08010932
 	adds r0, r4, #0
-	bl sub_0801A638
+	bl getMapLayerHeightInPixels
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r0, sb

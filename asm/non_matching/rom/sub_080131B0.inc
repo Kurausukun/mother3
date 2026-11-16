@@ -113,7 +113,7 @@ _0801325E:
 	ldr r0, _08013398
 	adds r2, r5, #0
 	adds r3, r4, #0
-	bl sub_08001378
+	bl GetBgLayerTilemap
 	mov r8, r0
 	mov r2, sb
 	ldr r0, [r2]

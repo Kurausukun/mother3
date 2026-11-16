@@ -471,7 +471,7 @@ _0807D658:
 	.align 2, 0
 _0807D7E0: .4byte vt_09F827A8
 _0807D7E4: .4byte _vt.11ResPtrSized
-_0807D7E8: .4byte gUnknown_08CE39F8
+_0807D7E8: .4byte gFontGfxMain
 _0807D7EC: .4byte vt_09F7E458
 _0807D7F0: .4byte 0x00000414
 _0807D7F4: .4byte 0x0000051C

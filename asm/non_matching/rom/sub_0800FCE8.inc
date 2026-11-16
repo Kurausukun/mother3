@@ -6,7 +6,7 @@ sub_0800FCE8:
 	adds r0, r4, #0
 	movs r1, #1
 	bl sub_0800FDE8
-	bl sub_08019F90
+	bl loadTownMapBounds
 	ldr r1, _0800FD10
 	adds r0, r4, r1
 	ldrb r0, [r0]

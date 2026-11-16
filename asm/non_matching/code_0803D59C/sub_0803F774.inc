@@ -100,7 +100,7 @@ _0803F7C4:
 	strb r2, [r6, #0xd]
 	ldrh r0, [r6, #4]
 	str r3, [sp, #8]
-	bl sub_08036D60
+	bl getSpriteGfxBank0
 	str r0, [r7]
 	ldr r0, [sp]
 	str r0, [r7, #4]
@@ -172,7 +172,7 @@ _0803F8B2:
 	b _0803F79E
 _0803F8CE:
 	movs r0, #0
-	bl sub_08036DDC
+	bl getSpritePalette
 	adds r1, r0, #0
 	ldr r0, _0803F8F4
 	movs r2, #0x10

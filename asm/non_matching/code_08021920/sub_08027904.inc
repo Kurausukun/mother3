@@ -7,7 +7,7 @@ sub_08027904:
 	lsls r5, r5, #1
 	movs r1, #0
 	adds r2, r5, #0
-	bl sub_08016F4C
+	bl copyPalettesToBufferIwram
 	movs r0, #0
 	movs r1, #0xc
 	bl sub_0803B688
@@ -22,6 +22,6 @@ sub_08027904:
 	bx r0
 	.align 2, 0
 _08027934: .4byte gGame
-_08027938: .4byte gUnknown_03005314
+_08027938: .4byte gPaletteBufferIwram
 _0802793C: .4byte 0x00009488
 	.syntax divided

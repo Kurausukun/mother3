@@ -24,7 +24,7 @@ _0802936C:
 	.4byte _08029398
 	.4byte _08029398
 _0802938C:
-	bl sub_0801A5EC
+	bl getMapMainLayerWidthInPixels
 	subs r0, #0x10
 	strh r0, [r4]
 	ldrh r0, [r5, #2]
@@ -37,7 +37,7 @@ _08029398:
 _080293A0:
 	ldrh r0, [r5]
 	strh r0, [r4]
-	bl sub_0801A604
+	bl getMapMainLayerHeightInPixels
 	subs r0, #8
 	b _080293B2
 _080293AC:

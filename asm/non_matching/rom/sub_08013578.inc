@@ -11,11 +11,11 @@ sub_08013578:
 	lsrs r4, r4, #0x10
 	lsls r5, r5, #0x10
 	lsrs r5, r5, #0x10
-	bl sub_0801AD4C
+	bl getMetatileFromTileset
 	adds r6, r0, #0
 	adds r0, r4, #0
 	adds r1, r5, #0
-	bl sub_0801AD4C
+	bl getMetatileFromTileset
 	adds r1, r0, #0
 	adds r0, r6, #0
 	movs r2, #8

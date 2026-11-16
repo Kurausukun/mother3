@@ -31,7 +31,7 @@ _080369C2:
 	mov r4, sp
 	adds r0, r5, #0
 	mov r1, sp
-	bl sub_08036BEC
+	bl getTilePosFromObj
 	ldrh r1, [r4, #2]
 	lsls r0, r1, #0x10
 	asrs r0, r0, #0x10

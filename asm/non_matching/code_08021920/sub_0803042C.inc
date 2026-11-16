@@ -50,7 +50,7 @@ _08030452:
 	movs r2, #0
 	strb r2, [r6, #0x12]
 	ldrh r0, [r6, #0xc]
-	bl sub_08036D60
+	bl getSpriteGfxBank0
 	str r0, [r6, #4]
 	mov r0, r8
 	str r0, [r6, #8]

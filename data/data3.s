@@ -90,16 +90,16 @@ gUnknown_08CDB9F8:
 gUnknown_08CDF9F8:
     .incbin "baserom.gba", 0x00CDF9F8, 0x4000
 
-    .global gUnknown_08CE39F8
-gUnknown_08CE39F8:
+    .global gFontGfxMain
+gFontGfxMain:
     .incbin "baserom.gba", 0x00CE39F8, 0x27618
 
-    .global gUnknown_08D0B010
-gUnknown_08D0B010:
+    .global gFontGfxSmall
+gFontGfxSmall:
     .incbin "baserom.gba", 0x00D0B010, 0x11E68
 
-    .global gUnknown_08D1CE78
-gUnknown_08D1CE78:
+    .global gFontGfxMrSaturn
+gFontGfxMrSaturn:
     .incbin "baserom.gba", 0x00D1CE78, 0x2000
 
 //     .global _binary_build_mother3_assets_misctext_bin_start

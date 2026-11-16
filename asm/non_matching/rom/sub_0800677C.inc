@@ -6,7 +6,7 @@ sub_0800677C:
 	ldrh r2, [r4]
 	ldrh r3, [r4, #2]
 	movs r1, #0
-	bl sub_08001378
+	bl GetBgLayerTilemap
 	movs r2, #0
 	ldrsh r1, [r4, r2]
 	movs r3, #2

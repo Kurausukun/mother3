@@ -44,7 +44,7 @@ _080012F6:
 	ldrh r3, [r4, #2]
 	mov r0, r8
 	adds r1, r7, #0
-	bl sub_08001378
+	bl GetBgLayerTilemap
 	adds r5, r0, #0
 	movs r6, #0
 	ldrh r0, [r4, #6]
@@ -70,7 +70,7 @@ _0800133C:
 	adds r1, r7, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_08001378
+	bl GetBgLayerTilemap
 	adds r5, r0, #0
 	movs r1, #0x80
 	lsls r1, r1, #4

@@ -92,7 +92,7 @@ _08012A4A:
 	ldrb r0, [r4]
 	lsls r0, r0, #0x1d
 	lsrs r0, r0, #0x1e
-	bl sub_0801A61C
+	bl getMapLayerWidthInPixels
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x14
 	ldrb r1, [r4]

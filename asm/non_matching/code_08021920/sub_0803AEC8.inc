@@ -9,7 +9,7 @@ sub_0803AEC8:
 	mov sl, r0
 	movs r0, #0
 	add r1, sp, #0x18
-	bl sub_08036C00
+	bl getTilePosFromObjId
 	ldr r4, _0803AF38
 	ldr r1, _0803AF3C
 	adds r0, r4, r1

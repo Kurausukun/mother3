@@ -42,7 +42,7 @@ _0800F9E6:
 	add r4, sp, #4
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl sub_08036BEC
+	bl getTilePosFromObj
 	ldrh r1, [r4]
 	mov r0, sp
 	ldrh r0, [r0]

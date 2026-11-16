@@ -316,8 +316,8 @@ gUnknown_080C7668::
     .4byte nullsub_92+1
     .4byte nullsub_92+1
 
-    .global gUnknown_080C76A0
-gUnknown_080C76A0:
+    .global gCreditsSpritePlacementData
+gCreditsSpritePlacementData:
     .incbin "baserom.gba", 0x000C76A0, 0x688
 
     .global gUnknown_080C7D28

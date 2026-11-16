@@ -62,7 +62,7 @@ _0804AA94:
 	lsrs r3, r3, #0x10
 	ldr r0, _0804AAFC
 	mov r1, sb
-	bl sub_08001378
+	bl GetBgLayerTilemap
 	adds r2, r0, #0
 	movs r3, #0
 	ldrh r0, [r4, #4]

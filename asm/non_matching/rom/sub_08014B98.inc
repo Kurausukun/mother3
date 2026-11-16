@@ -45,7 +45,7 @@ sub_08014B98:
 	ldrb r0, [r0]
 	add r4, sp, #4
 	adds r1, r4, #0
-	bl sub_08036C00
+	bl getTilePosFromObjId
 	ldrh r1, [r4]
 	mov r0, sp
 	ldrh r0, [r0]

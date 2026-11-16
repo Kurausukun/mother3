@@ -32,6 +32,6 @@ _08058D1A:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08058D44: .4byte gUnknown_080C76A0
+_08058D44: .4byte gCreditsSpritePlacementData
 _08058D48: .4byte gSomeBlend
 	.syntax divided

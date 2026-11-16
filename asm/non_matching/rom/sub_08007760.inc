@@ -319,7 +319,7 @@ _080079C0:
 	adds r0, r4, #0
 	movs r1, #0xe
 	movs r2, #0x40
-	bl sub_08016F4C
+	bl copyPalettesToBufferIwram
 	ldr r1, _08007A84
 	adds r0, r4, #0
 	movs r2, #0x40

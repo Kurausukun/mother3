@@ -18,7 +18,7 @@ _08006308:
 	cmp r0, #0
 	bge _08006316
 	ldrh r0, [r4, #4]
-	bl sub_08010808
+	bl loadMapGraphicsToVram
 _08006316:
 	ldrb r0, [r4]
 	lsls r0, r0, #0x1d

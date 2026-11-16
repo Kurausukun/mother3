@@ -59,7 +59,7 @@ _0800A6B6:
 	ldr r1, [sp, #8]
 	mov r2, r8
 	mov r3, sb
-	bl sub_08001378
+	bl GetBgLayerTilemap
 	adds r5, r0, #0
 	movs r6, #0
 	ldrh r0, [r4, #4]
@@ -135,7 +135,7 @@ _0800A756:
 	ldr r1, [sp, #8]
 	mov r2, r8
 	mov r3, sb
-	bl sub_08001378
+	bl GetBgLayerTilemap
 	adds r5, r0, #0
 	movs r6, #0
 	ldrh r0, [r4, #4]
@@ -199,7 +199,7 @@ _0800A7FA:
 	ldr r1, [sp, #8]
 	mov r2, r8
 	adds r3, r4, #0
-	bl sub_08001378
+	bl GetBgLayerTilemap
 	adds r5, r0, #0
 	mov r0, sl
 	ldrh r1, [r0, #0xe]
@@ -262,7 +262,7 @@ _0800A87C:
 	ldr r1, [sp, #8]
 	mov r2, r8
 	adds r3, r4, #0
-	bl sub_08001378
+	bl GetBgLayerTilemap
 	adds r5, r0, #0
 	mov r2, sl
 	ldrh r1, [r2, #0x16]

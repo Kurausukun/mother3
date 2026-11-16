@@ -52,7 +52,7 @@ sub_08011ABC:
 	ldr r0, _08011B64
 	adds r2, r4, #0
 	adds r3, r5, #0
-	bl sub_08001378
+	bl GetBgLayerTilemap
 	adds r4, r0, #0
 	add r6, sl
 	ldr r1, [sp]
@@ -69,7 +69,7 @@ sub_08011ABC:
 	mov r1, sb
 	adds r2, r6, #0
 	mov r3, r8
-	bl sub_08001378
+	bl GetBgLayerTilemap
 	adds r3, r0, #0
 	ldr r0, _08011B68
 	ldrh r1, [r0, #2]

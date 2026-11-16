@@ -15,13 +15,13 @@ sub_0801A868:
 	rsbs r0, r0, #0
 	cmp r1, r0
 	bne _0801A890
-	bl sub_0801A604
+	bl getMapMainLayerHeightInPixels
 	b _0801A896
 	.align 2, 0
 _0801A88C: .4byte gUnknown_02000040
 _0801A890:
 	lsrs r0, r2, #0x10
-	bl sub_0801A638
+	bl getMapLayerHeightInPixels
 _0801A896:
 	lsls r0, r0, #0x10
 	lsrs r2, r0, #0x10

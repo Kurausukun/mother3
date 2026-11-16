@@ -11,7 +11,7 @@ sub_08036960:
 	lsrs r1, r1, #0x10
 	adds r5, #0x88
 	ldrh r0, [r5]
-	bl sub_08036E0C
+	bl getSpriteInfo
 	bl sub_08002C54
 	adds r4, #1
 	lsls r4, r4, #0x10

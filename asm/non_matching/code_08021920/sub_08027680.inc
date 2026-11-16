@@ -45,7 +45,7 @@ sub_08027680:
 	bl CpuSmartSet
 	b _08027736
 	.align 2, 0
-_080276E0: .4byte gUnknown_03005314
+_080276E0: .4byte gPaletteBufferIwram
 _080276E4: .4byte gUnknown_0200F088
 _080276E8:
 	ldrb r0, [r4, #0x1c]

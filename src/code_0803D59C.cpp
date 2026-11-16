@@ -377,9 +377,9 @@ extern const IrqTable gUnknown_080C7628;
 extern const IrqTable gUnknown_080C7DB0;
 extern const IrqTable gUnknown_080C5FA0;
 extern u16 gUnknown_03004B00;
-extern u8 gUnknown_09C5FD2C;
+extern u8 gCreditsGfx;
 extern u8 gUnknown_02015DC0;
-extern const u8 gUnknown_09C8DE98;  // Some sort of "archive" with sprites, palettes, etc.
+extern const u8 gHealthSafetyScreenGfx;
 extern u8 gMenuTextPalette;
 extern const u8 gTitleScreenGfx;
 extern MonsterData gMonsterData[];
@@ -448,7 +448,7 @@ extern "C" void setShopSubmenu(MenuState*);
 extern "C" void sub_0804A448(u16);
 extern "C" void sub_0804A1C0(u16);
 extern "C" void sub_0804A508(s32);
-extern "C" u16* sub_08001378(void*, s32, s32, s32);
+extern "C" u16* GetBgLayerTilemap(GraphicsBuffer*, u16, u16, u16);
 extern "C" void sub_0804A218(u16);
 extern "C" void sub_0804A2E0(u16);
 extern "C" void sub_0804A398();
@@ -1190,8 +1190,8 @@ extern "C" void sub_0804A188() {
 extern "C" void sub_0804A1C0(u16 index) {
     if (gSomeBlend._4262 != index) {
         gSomeBlend._4262 = index;
-        CpuSmartSet(Blob_GetEntry(gMenuData, index), sub_08001378(&gSomeBlend.gfx, 2, 0, 0), 0x800);
-        gSomeBlend.gfx._2C44 = 1;
+        CpuSmartSet(Blob_GetEntry(gMenuData, index), GetBgLayerTilemap(&gSomeBlend.gfx, 2, 0, 0), BG_SCREEN_SIZE);
+        gSomeBlend.gfx.bg_dirty[2] = 1;
     }
 }
 
@@ -1200,13 +1200,13 @@ extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0804A2E0.inc", void sub_
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0804A398.inc", void sub_0804A398());
 
 extern "C" void sub_0804A3F0() {
-    u16* tile = sub_08001378(&gSomeBlend.gfx, 2, 1, 0x12);
+    u16* tile = GetBgLayerTilemap(&gSomeBlend.gfx, 2, 1, 0x12);
 
     for (u16 i = 0; i < 0x12; i++) {
         ((TileInfo*)&tile[i])->tile_num = 0x2C3;
     }
 
-    gSomeBlend.gfx._2C44 = 1;
+    gSomeBlend.gfx.bg_dirty[2] = 1;
 }
 
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0804A448.inc", void sub_0804A448(u16));
@@ -2922,8 +2922,8 @@ extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08058FAC.inc", void sub_
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08058FE4.inc", void sub_08058FE4());
 
 extern "C" void sub_08059094() {
-    LZ77UnCompVram(Blob_GetEntry(&gUnknown_09C5FD2C, 0x4C), (void*)0x06008000);
-    void* ptr = Blob_GetEntry(&gUnknown_09C5FD2C, 0x4D);
+    LZ77UnCompVram(Blob_GetEntry(&gCreditsGfx, 0x4C), (void*)0x06008000);
+    void* ptr = Blob_GetEntry(&gCreditsGfx, 0x4D);
     CpuCopyPaletteToGfxBuffer(&gSomeBlend.gfx, ptr, 0xE, 0x40);
     CpuSmartSet(ptr, &gSomeBlend._4294, 0x40);
 }
@@ -3035,16 +3035,16 @@ extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805A508.inc", void sub_
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805A520.inc", void sub_0805A520());
 
 extern "C" void sub_0805A568(void) {
-    LZ77UnCompVram(Blob_GetEntry(&gUnknown_09C8DE98, 0), (void*)0x06008000);
-    LZ77UnCompVram(Blob_GetEntry(&gUnknown_09C8DE98, 2), (void*)0x06000000);
-    LZ77UnCompVram(Blob_GetEntry(&gUnknown_09C8DE98, 3), (void*)0x06010000);
-    gSomeBlend._2CB0 = Blob_GetEntry(&gUnknown_09C8DE98, 4);
+    LZ77UnCompVram(Blob_GetEntry(&gHealthSafetyScreenGfx, 0), (void*)(VRAM + 0x8000));
+    LZ77UnCompVram(Blob_GetEntry(&gHealthSafetyScreenGfx, 2), (void*)VRAM);
+    LZ77UnCompVram(Blob_GetEntry(&gHealthSafetyScreenGfx, 3), (void*)(VRAM + 0x10000));
+    gSomeBlend._2CB0 = Blob_GetEntry(&gHealthSafetyScreenGfx, 4);
 
-    void* temp_r0_2 = Blob_GetEntry(&gUnknown_09C8DE98, 1);
+    void* temp_r0_2 = Blob_GetEntry(&gHealthSafetyScreenGfx, 1);
     CpuCopyPaletteToGfxBuffer(&gSomeBlend.gfx, temp_r0_2, 0, 0x20);
     CpuCopyPaletteToGfxBuffer(&gSomeBlend.gfx, temp_r0_2, 0x10, 0x20);
-    Dma3Copy((void*)&gSomeBlend.gfx.palettes, &gSomeBlend._2cb4, 0x400);
-    Dma3Fill((void*)&gSomeBlend.gfx.palettes, 0x400, -1);
+    Dma3Copy((void*)&gSomeBlend.gfx.palettes, &gSomeBlend._2cb4, PLTT_SIZE);
+    Dma3Fill((void*)&gSomeBlend.gfx.palettes, PLTT_SIZE, -1);
     gSomeBlend.dispcnt = 0x140U;
     gSomeBlend.bgcnt[0] = 8;
     gSomeBlend.bgcnt[1] = 0;
@@ -3194,8 +3194,8 @@ extern "C" void sub_0805AF34(void) {
     Dma3Copy((void*)gGBPlayerLogoGfx, BG_CHAR_ADDR(2), 0x4000);
     Dma3Copy((void*)gGBPlayerLogoLayout, BG_SCREEN_ADDR(0), 0x500);
     CpuCopyPaletteToGfxBuffer(&gSomeBlend.gfx, (void*)gGBPlayerLogoPalette, 0, 0x200);
-    Dma3Copy((void*)gSomeBlend.gfx.palettes, (void*)&gSomeBlend._2CB0, 0x400);
-    Dma3Fill((void*)gSomeBlend.gfx.palettes, 0x400, -1);
+    Dma3Copy((void*)gSomeBlend.gfx.palettes, (void*)&gSomeBlend._2CB0, PLTT_SIZE);
+    Dma3Fill((void*)gSomeBlend.gfx.palettes, PLTT_SIZE, -1);
 
     gSomeBlend.dispcnt = DISPCNT_BG0_ON;
     gSomeBlend.bgcnt[0] = BGCNT_256COLOR | BGCNT_CHARBASE(2) | BGCNT_SCREENBASE(0);

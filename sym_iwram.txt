@@ -60,7 +60,7 @@
 . = 0x00004E14; gUnknown_03004E14 = .;
 . = 0x00004E15; gUnknown_03004E15 = .;
 . = 0x00004F14; gOAMObjBuffer = .;
-. = 0x00005314; gUnknown_03005314 = .;
+. = 0x00005314; gPaletteBufferIwram = .;
 . = 0x00005494; gUnknown_03005494 = .;
 . = 0x000054D4; gUnknown_030054D4 = .;
 . = 0x000055F4; gUnknown_030055F4 = .;

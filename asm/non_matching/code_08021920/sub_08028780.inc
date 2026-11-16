@@ -533,7 +533,7 @@ _0802898C:
 	ldrh r2, [r2, #2]
 	lsls r2, r2, #0x10
 	asrs r2, r2, #0x14
-	bl sub_0801A978
+	bl getMetatileFromMapLayer
 	str r0, [r7, #0x18]
 _08028BC8:
 	adds r0, r7, #0

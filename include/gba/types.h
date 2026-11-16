@@ -117,6 +117,14 @@ struct PlttData
     u16 unused_15:1;
 } /*__attribute__((packed))*/;
 
+struct BgScreenEntry
+{
+    u16 tile:10;  // 0x0 - 0x9
+    u16 hflip:1;  // 0xA
+    u16 vflip:1;  // 0xB
+    u16 paletteNum:4;  // 0xC - 0xF
+};
+
 struct OamData
 {
     /*0x00*/ u32 y:8;

@@ -27,5 +27,5 @@ _0803D09C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0803D0A4: .4byte gUnknown_03005314
+_0803D0A4: .4byte gPaletteBufferIwram
 	.syntax divided

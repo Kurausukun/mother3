@@ -19,7 +19,7 @@ sub_080382F4:
 	ldrh r2, [r5]
 	ldrh r3, [r5, #2]
 	movs r1, #0
-	bl sub_08001378
+	bl GetBgLayerTilemap
 	adds r3, r0, #0
 	movs r0, #0
 	b _0803838C

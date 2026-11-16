@@ -37,12 +37,12 @@ _08039304: .4byte gGame
 _08039308: .4byte 0x000067AC
 _0803930C: .4byte gTownMapInfoTable
 _08039310:
-	bl sub_0801A5EC
+	bl getMapMainLayerWidthInPixels
 	adds r6, r0, #0
 	lsls r6, r6, #0x10
 	lsrs r6, r6, #0x10
 	mov sl, r6
-	bl sub_0801A604
+	bl getMapMainLayerHeightInPixels
 	adds r2, r0, #0
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10

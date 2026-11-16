@@ -55,7 +55,7 @@ sub_08034DA8:
 	mov r5, sp
 	adds r0, r6, #0
 	mov r1, sp
-	bl sub_08036BEC
+	bl getTilePosFromObj
 	ldrb r0, [r7]
 	lsls r0, r0, #0x1b
 	lsrs r0, r0, #0x1e
@@ -80,7 +80,7 @@ sub_08034DA8:
 	lsls r2, r2, #0x10
 	asrs r2, r2, #0x14
 	adds r0, r3, #0
-	bl sub_0801A978
+	bl getMetatileFromMapLayer
 	str r0, [r6, #0x18]
 	ldr r0, [r0]
 	lsls r0, r0, #0x18

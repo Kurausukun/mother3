@@ -40,7 +40,7 @@ _0800ABB8:
 	lsrs r3, r3, #0x10
 	adds r0, r1, #0
 	adds r1, r6, #0
-	bl sub_08001378
+	bl GetBgLayerTilemap
 	str r0, [r5, #0x74]
 	ldr r1, _0800AC54
 	str r1, [r5, #0x78]

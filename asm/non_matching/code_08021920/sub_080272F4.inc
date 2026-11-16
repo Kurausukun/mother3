@@ -15,7 +15,7 @@ sub_080272F4:
 	b _08027354
 	.align 2, 0
 _08027310: .4byte gUnknown_0200F088
-_08027314: .4byte gUnknown_03005314
+_08027314: .4byte gPaletteBufferIwram
 _08027318:
 	subs r0, r6, #4
 	cmp r0, #7
@@ -47,7 +47,7 @@ _08027354:
 	bl CpuSmartSet
 	b _08027374
 	.align 2, 0
-_08027360: .4byte gUnknown_03005314
+_08027360: .4byte gPaletteBufferIwram
 _08027364: .4byte gUnknown_0200F088
 _08027368:
 	ldr r0, _08027384
@@ -65,7 +65,7 @@ _08027374:
 	b _080273F0
 	.align 2, 0
 _08027384: .4byte gUnknown_0200F088
-_08027388: .4byte gUnknown_03005314
+_08027388: .4byte gPaletteBufferIwram
 _0802738C:
 	cmp r4, #2
 	beq _080273D0

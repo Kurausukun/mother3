@@ -4,7 +4,7 @@ sub_08034608:
 	sub sp, #8
 	adds r5, r0, #0
 	mov r1, sp
-	bl sub_08036BEC
+	bl getTilePosFromObj
 	ldr r0, [r5, #0x40]
 	ldrb r0, [r0, #5]
 	lsrs r0, r0, #6

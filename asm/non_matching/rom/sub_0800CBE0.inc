@@ -4,7 +4,7 @@ sub_0800CBE0:
 	sub sp, #8
 	adds r6, r0, #0
 	mov r1, sp
-	bl sub_08036BEC
+	bl getTilePosFromObj
 	movs r2, #1
 	ldr r1, _0800CC30
 	ldr r0, [sp, #4]
@@ -28,7 +28,7 @@ sub_0800CBE0:
 	mov r0, sp
 	movs r1, #0
 	ldrsh r4, [r0, r1]
-	bl sub_0801A5EC
+	bl getMapMainLayerWidthInPixels
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	subs r0, #1
@@ -40,7 +40,7 @@ sub_0800CBE0:
 	.align 2, 0
 _0800CC30: .4byte 0xFFFF0000
 _0800CC34:
-	bl sub_0801A5EC
+	bl getMapMainLayerWidthInPixels
 	subs r1, r0, #1
 	b _0800CC3E
 _0800CC3C:
@@ -55,7 +55,7 @@ _0800CC3E:
 	blt _0800CC6A
 	movs r0, #2
 	ldrsh r4, [r5, r0]
-	bl sub_0801A604
+	bl getMapMainLayerHeightInPixels
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	subs r0, #1
@@ -64,7 +64,7 @@ _0800CC3E:
 	ldrh r0, [r5, #2]
 	b _0800CC6C
 _0800CC62:
-	bl sub_0801A604
+	bl getMapMainLayerHeightInPixels
 	subs r0, #1
 	b _0800CC6C
 _0800CC6A:

@@ -26,7 +26,7 @@ sub_08007F64:
 	adds r0, r0, r1
 	movs r1, #0xd
 	movs r2, #0x20
-	bl sub_08016F4C
+	bl copyPalettesToBufferIwram
 	movs r0, #0xd
 	movs r1, #1
 	bl sub_0803B688
@@ -37,7 +37,7 @@ sub_08007F64:
 _08007FB0: .4byte gSomeBlend
 _08007FB4: .4byte 0x000121C0
 _08007FB8: .4byte gUnknown_080C2A90
-_08007FBC: .4byte gUnknown_09B0CA54
+_08007FBC: .4byte gBattleSwirlGfx
 _08007FC0: .4byte 0x0600F000
 _08007FC4: .4byte 0x000121C1
 	.syntax divided

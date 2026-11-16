@@ -273,28 +273,28 @@ gUnknown_08D2D62E:
 gUnknown_08D2D634:
     .incbin "baserom.gba", 0x00D2D634, 0x8
 
-    .global gUnknown_08D2D63C
-gUnknown_08D2D63C:
+    .global gDefaultMapCell
+gDefaultMapCell:
     .incbin "baserom.gba", 0x00D2D63C, 0x4
 
-    .global gUnknown_08D2D640
-gUnknown_08D2D640:
+    .global gDefaultMetatile
+gDefaultMetatile:
     .incbin "baserom.gba", 0x00D2D640, 0x4
 
-    .global gUnknown_08D2D644
-gUnknown_08D2D644:
+    .global gMapCellMinitileOrder_HVFlipped
+gMapCellMinitileOrder_HVFlipped:
     .incbin "baserom.gba", 0x00D2D644, 0x4
 
-    .global gUnknown_08D2D648
-gUnknown_08D2D648:
+    .global gMapCellMinitileOrder_HFlipped
+gMapCellMinitileOrder_HFlipped:
     .incbin "baserom.gba", 0x00D2D648, 0x4
 
-    .global gUnknown_08D2D64C
-gUnknown_08D2D64C:
+    .global gMapCellMinitileOrder_VFlipped
+gMapCellMinitileOrder_VFlipped:
     .incbin "baserom.gba", 0x00D2D64C, 0x4
 
-    .global gUnknown_08D2D650
-gUnknown_08D2D650:
+    .global gMapCellMinitileOrder_Default
+gMapCellMinitileOrder_Default:
     .incbin "baserom.gba", 0x00D2D650, 0x4
 
     .global gUnknown_08D2D654

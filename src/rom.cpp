@@ -3,6 +3,7 @@
 #include "battle/guest.h"
 #include "battle/irc.h"
 #include "enums.h"
+#include "gba/defines.h"
 #include "gba/gba.h"
 #include "gba/macro.h"
 #include "global.h"
@@ -66,32 +67,26 @@ struct engineMode {
 extern engineMode gEngineMode;
 
 extern const char _binary_build_mother3_assets_misctext_bin_start;
-extern const char gMapPalettes;
-extern const char gMapTileData;
-extern const char gMapTilemapData;
-extern const char gMapGraphicsTable;
-extern const MapGraphicsInfo gMapGraphicsInfoTable;
-extern const MapLayerAlphaInfo gMapLayerInfoTable;
-extern const char gMapDoorHotspotTable;
-extern const char gObjectData;
-extern const char gGiftBoxTable;
-extern const u8 gMapMusicTable[0x3E8];
 extern const IrqTable gUnknown_080C1A58;
 extern IrqTable gIntrHandlers;
 extern u8 gUnknown_02004100[0x10];
 extern u8 gUnknown_02005080;
 extern u8 gUnknown_020051E4;
+extern u16 gUnknown_020281F8;
 extern u8 gUnknown_03004B14;
 extern u16 gUnknown_03004B00;
 extern u16 gUnknown_03004B02;
 extern u16 gUnknown_03004B0A;
+extern u16 gUnknown_08D2D634[];
 extern u16 gAudioSynced;
 extern u32 gUnknown_08CDB95C[];
 extern s16 gMPlayTrackTable[];
 extern s16 gMPlayPrevTrackTable[];
 extern s16 gMPlayVolumeTable[];
 extern s16 gMPlayVolumeStorageTable[];
-extern const DoorDestinationInfo gDoorDestinationTable[];
+extern u16 gPaletteBufferIwram[];
+extern const TownMapInfo gTownMapInfoTable[];
+extern u8 gMiscGfx;
 
 extern "C" void DoReset();
 extern "C" s32 Div(s32, s32);
@@ -106,9 +101,6 @@ extern "C" void write_ram_magic();
 extern "C" void sub_08090F90(s32);
 extern "C" s32 RemainderNullOnDBZ(s32, s32);
 extern "C" const void* Blob_GetEntry(const void*, u16);
-extern "C" u16 sub_0801A638(u16);
-extern "C" MusicPlayerInfo* getMusicPlayer_sfx(u16);
-extern "C" void sub_0801A238(s32, MovementVector*);
 extern "C" void CheckSoftResetKeys(InputState*);
 extern "C" void mode_debug_menu(InputState*);
 extern "C" void sub_0800B00C(InputState*);
@@ -123,15 +115,43 @@ extern "C" void sub_08036BA4(Object*);
 extern "C" void sub_0800BE04(Object*);
 extern "C" void sub_080052E4(s32);
 extern "C" void sub_0802610C(s32);
-extern "C" const MapGraphicsInfo* getMapGraphicsInfo(u16);
-extern "C" DoorDestinationInfo* getDoorDestinationInfo(u16);
 extern "C" void sub_0805CD30(u16, u16, u8);
 extern "C" u32 sub_0805CDD8(u16, u8);
 extern "C" u16 get_flag(u16);
 extern "C" void incrementSessionPlaytime();
+extern "C" void copyTilemapToGfxBufferBg3(u16* src);
+extern "C" void copyPalettesToBufferIwram(void* src, u16 idx, u16 size);
+extern "C" void sub_080082DC(u32);
+extern "C" void sub_08008200(u16);
+extern "C" void create10x10GlyphForChar(void*);      /* extern */
+extern "C" void sub_08008D3C(void*, u16); /* extern */
+
 
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080012BC.inc", void sub_080012BC());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08001378.inc", s32 sub_08001378(GraphicsBuffer*, u32, u16, u16));
+
+extern "C" u16* GetBgLayerTilemap(GraphicsBuffer* gfx, u16 layer, u16 x, u16 y) {
+    u16* map;
+
+    switch (layer) {
+    case 0:
+        map = gfx->bg[0];
+        break;
+    case 1:
+        map = gfx->bg[1];
+        break;
+    case 2:
+        map = gfx->bg[2];
+        break;
+    case 3:
+        map = gfx->bg[3];
+        break;
+    default:
+        return NULL;
+    }
+
+    map += x + (y * 32);
+    return map;
+}
 
 extern "C" void sub_080013D0(struct_02016028* arg0) {
     arg0->dispcnt = 0;
@@ -163,13 +183,13 @@ extern "C" void sub_080013D0(struct_02016028* arg0) {
 }
 
 extern "C" void DmaClearGraphicsBuffer(GraphicsBuffer* gfx) {
-    gfx->_2C40 = gfx->_2C42 = gfx->_2C44 = gfx->_2C46 = 0;
+    gfx->bg_dirty[0] = gfx->bg_dirty[1] = gfx->bg_dirty[2] = gfx->bg_dirty[3] = 0;
 
-    Dma3Clear((void*)gfx->_0, 0x800);
-    Dma3Clear((void*)gfx->_800, 0x800);
-    Dma3Clear((void*)gfx->_1000, 0x800);
-    Dma3Clear((void*)gfx->_1800, 0x800);
-    Dma3Clear((void*)gfx->palettes, 0x400);
+    Dma3Clear(&gfx->bg[0], BG_SCREEN_SIZE);
+    Dma3Clear(&gfx->bg[1], BG_SCREEN_SIZE);
+    Dma3Clear(&gfx->bg[2], BG_SCREEN_SIZE);
+    Dma3Clear(&gfx->bg[3], BG_SCREEN_SIZE);
+    Dma3Clear((void*)gfx->palettes, PLTT_SIZE);
 
     gfx->oam_counter = 0;
     gfx->_2C4A = 0;
@@ -181,13 +201,13 @@ extern "C" void DmaClearGraphicsBuffer(GraphicsBuffer* gfx) {
 }
 
 extern "C" void CpuClearGraphicsBuffer(GraphicsBuffer* gfx) {
-    gfx->_2C40 = gfx->_2C42 = gfx->_2C44 = gfx->_2C46 = 0;
+    gfx->bg_dirty[0] = gfx->bg_dirty[1] = gfx->bg_dirty[2] = gfx->bg_dirty[3] = 0;
 
-    CpuMemClear((void*)gfx->_0, 0x800);
-    CpuMemClear((void*)gfx->_800, 0x800);
-    CpuMemClear((void*)gfx->_1000, 0x800);
-    CpuMemClear((void*)gfx->_1800, 0x800);
-    CpuMemClear((void*)gfx->palettes, 0x400);
+    CpuMemClear(&gfx->bg[0], BG_SCREEN_SIZE);
+    CpuMemClear(&gfx->bg[1], BG_SCREEN_SIZE);
+    CpuMemClear(&gfx->bg[2], BG_SCREEN_SIZE);
+    CpuMemClear(&gfx->bg[3], BG_SCREEN_SIZE);
+    CpuMemClear((void*)gfx->palettes, PLTT_SIZE);
 
     gfx->oam_counter = 0;
     gfx->_2C4A = 0;
@@ -1336,7 +1356,24 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_08006ACC.inc", void sub_08006ACC()
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08006B40.inc", void sub_08006B40());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08006E80.inc", void sub_08006E80());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08006F78.inc", void sub_08006F78());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0800724C.inc", void sub_0800724C());
+
+extern "C" void GfxBufferWriteBgToVram(s32 unused, GraphicsBuffer* gfx) {
+    if (gfx->bg_dirty[0]) {
+        if (gGame._3_20 < 0)
+            Dma0Copy(&gUnknown_020281F8, BG_SCREEN_ADDR(30), (BG_SCREEN_SIZE * 2));   // alternate BG0 source
+        else
+            Dma3Copy(gfx->bg[0], BG_SCREEN_ADDR(12), BG_SCREEN_SIZE);
+    }
+    if (gfx->bg_dirty[1]) 
+        Dma3Copy(gfx->bg[1], BG_SCREEN_ADDR(13), BG_SCREEN_SIZE);
+    if (gfx->bg_dirty[2]) 
+        Dma3Copy(gfx->bg[2], BG_SCREEN_ADDR(14), BG_SCREEN_SIZE);
+    if (gfx->bg_dirty[3]) 
+        Dma3Copy(gfx->bg[3], BG_SCREEN_ADDR(15), BG_SCREEN_SIZE);
+    
+    gfx->bg_dirty[0] = gfx->bg_dirty[1] = gfx->bg_dirty[2] = gfx->bg_dirty[3] = 0;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08007318.inc", void sub_08007318());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08007358.inc", void sub_08007358());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08007398.inc", void sub_08007398());
@@ -1366,17 +1403,87 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_08007F18.inc", void sub_08007F18()
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08007F64.inc", void sub_08007F64());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08007FC8.inc", void sub_08007FC8());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0800800C.inc", void sub_0800800C());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0800809C.inc", void sub_0800809C());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_080080BC.inc", void sub_080080BC());
+
+extern "C" void sub_0800809C() {
+    CpuSmartSet(Blob_GetEntry(&gMiscGfx, 0x20), OBJ_VRAM1, 0x400);
+}
+
+extern "C" void sub_080080BC() {
+    CpuSmartSet(Blob_GetEntry(&gMiscGfx, 0x22), OBJ_VRAM1, 0x400);
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080080DC.inc", void sub_080080DC());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008110.inc", void sub_08008110());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008200.inc", void sub_08008200());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008244.inc", void sub_08008244());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_080082DC.inc", void sub_080082DC());
-extern "C" ASM_FUNC("asm/non_matching/rom/nullsub_4.inc", void nullsub_4());
-extern "C" ASM_FUNC("asm/non_matching/rom/nullsub_5.inc", void nullsub_5());
-extern "C" ASM_FUNC("asm/non_matching/rom/nullsub_61.inc", void nullsub_61());
-extern "C" ASM_FUNC("asm/non_matching/rom/nullsub_62.inc", void nullsub_62());
+
+extern "C" void sub_08008110() {
+    u16 var_r7;
+
+    Dma3Copy((void*)Blob_GetEntry(&gMiscGfx, 0xE), (void*)0x0600D800, 0x1800);
+
+    if (gSomeBlend._35ba_4) {
+        var_r7 = 0x16;
+    } else {
+        var_r7 = 0x1A;
+    }
+    
+    u16 var_r5 = 0;
+    for (u16 charID = 0; charID < gGame.party_count; charID++) {
+        CharStats* charStats = get_char_stats(charID);
+        if (charStats->charNo && isCharIdOverworldPlayable((u16) charStats->charNo)) {
+            var_r5 += 1;
+        }
+    }
+
+    if (var_r5 != 0) {
+        var_r5 -= 1;
+    }
+
+    sub_08008200(var_r7 + var_r5);
+    
+    if (gSomeBlend._121b9 << 0x1C >= 0) {
+        copyPalettesToBufferIwram((void*)Blob_GetEntry(&gMiscGfx, gSave._81e + 0xF), 0xD, 0x20);
+        Dma3Copy((void*)Blob_GetEntry(&gMiscGfx, 0x1E), (void*)0x06014C00, 0xC00);
+        copyPalettesToBufferIwram((void*)Blob_GetEntry(&gMiscGfx, 0x1F), 0x1E, 0x20);
+    }
+}
+
+extern "C" void sub_08008200(u16 arg0) {
+    const void* unk = Blob_GetEntry(&gMiscGfx, arg0);
+    GraphicsBuffer* gfx = &gSomeBlend.gfx;
+    
+    CpuSmartSet(unk, GetBgLayerTilemap(gfx, 0, 0, 0), BG_SCREEN_SIZE);
+    gfx->bg_dirty[0] = 1;
+}
+
+extern "C" void sub_08008244(void) {
+    Dma3Copy((void*)Blob_GetEntry(&gMiscGfx, 0x26), (void*)0x0600B000, 0x2C00);
+    copyPalettesToBufferIwram((void*)Blob_GetEntry(&gMiscGfx, 0x27), 0xE, 0x20);
+    sub_080082DC(gSomeBlend._35ba_80);
+    Dma3Copy((void*)Blob_GetEntry(&gMiscGfx, 0x2A), (void*)0x06014800, 0x400);
+    copyPalettesToBufferIwram((void*)Blob_GetEntry(&gMiscGfx, 0x2B), 0x1D, 0x20);
+    Dma3Copy((void*)Blob_GetEntry(&gMiscGfx, 0x1E), (void*)0x06014C00, 0xC00);
+    copyPalettesToBufferIwram((void*)Blob_GetEntry(&gMiscGfx, 0x1F), 0x1E, 0x20);
+}
+
+extern "C" void sub_080082DC(u32 arg0) {
+    arg0 = ((arg0 << 0x10) + 0x280000) >> 0x10; // fakematch?
+    u16* src = (u16*)Blob_GetEntry(&gMiscGfx, arg0);
+    u16* dest = GetBgLayerTilemap(&gSomeBlend.gfx, 0, 0, 0);
+    
+    for (u16 i = 0; i < 0x14; src += 0x20, dest += 0x20, i++){
+        for (u16 j = 0; j < 0x1E; j++){
+            dest[j] = src[j];
+            ((TileInfo*)&dest[j])->tile_num += 0x180;
+            ((TileInfo*)&dest[j])->palette_num += 0xE;
+        }
+    }
+
+    gSomeBlend.gfx.bg_dirty[0] = 1;
+}
+
+extern "C" void nullsub_4() {}
+extern "C" void nullsub_5() {}
+extern "C" void nullsub_61() {}
+extern "C" void nullsub_62() {}
 
 extern "C" void setup_overworld_music(u16 room, s16 vol) {
     s16 mpIndex, mpIndex_alt;
@@ -1799,18 +1906,15 @@ extern "C" void sub_080089F0(unkMsgBuf* UnkMsgBufStruct) {
     }
 }
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008BAC.inc", void sub_08008BAC());
+
 // extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008C28.inc", void sub_08008C28());
-
-extern "C" void sub_08008C70(void*);      /* extern */
-extern "C" void sub_08008D3C(void*, u16); /* extern */
-
 extern "C" void sub_08008C28(void* arg0, u16 arg1) {
     switch ((&gSomeBlend)->_11C92_2) {
     case 0:
         if (arg1)
-            sub_08008C70(arg0);
+            create10x10GlyphForChar(arg0);
         else
-            sub_08008C70(arg0);
+            create10x10GlyphForChar(arg0);
     case 1:
         break;
     case 2:
@@ -1819,7 +1923,7 @@ extern "C" void sub_08008C28(void* arg0, u16 arg1) {
     }
 }
 
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008C70.inc", void sub_08008C70());
+extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008C70.inc", void create10x10GlyphForChar());
 extern "C" ASM_FUNC("asm/non_matching/rom/nullsub_63.inc", void nullsub_63());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008D3C.inc", void sub_08008D3C(void*, u16));
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08008E08.inc", void sub_08008E08());
@@ -1901,8 +2005,8 @@ extern "C" void sub_08009828(unkMsgBuf* UnkMsgBufStruct) {
                 unk_198Element->R6field_00000078 = ((UnkCharBitfield1*)_0Entry)->high4;
 
                 _198Entry[0] = PackedBits;
-                _198Entry[1] =
-                    sub_08001378(&(&gSomeBlend)->gfx, 0, SelectedInBuf2[0], SelectedInBuf2[1]);
+                _198Entry[1] = (s32)GetBgLayerTilemap(&(&gSomeBlend)->gfx, 0, SelectedInBuf2[0],
+                                                 SelectedInBuf2[1]);
                 unk_198Element->R6field_0001FF80 = PackedBits >> 0x5;
                 unk_198Element->R6field_00000007 = SelectedInBuf1[0] & 7;
                 sub_08008C28((void*)_198Entry, _0Entry->low12);
@@ -1937,7 +2041,20 @@ extern "C" void* sub_08009C4C(u16 x, u16 y) {
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009C68.inc", void sub_08009C68());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009C84.inc", s32 sub_08009C84(u16, u16));
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009CD8.inc", s32 sub_08009CD8(u16, u16));
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009D6C.inc", void sub_08009D6C());
+
+extern "C" void* getAddressofGlyphBitmap(u16 arg0) {
+    switch (gSomeBlend._11C92_2) {
+    case 0:
+        return gSomeBlend._11C84 + (arg0 * 22) + 2;
+    case 1:
+        return gSomeBlend._11C84 + (arg0 * 10) + 2;
+    case 2:
+        return gSomeBlend._11C84 + (arg0 * 32);
+    default:
+        return 0;
+    }
+}
+
 // extern "C" ASM_FUNC("asm/non_matching/rom/sub_08009DDC.inc", void sub_08009DDC());
 extern "C" u16 sub_08009DDC(u16 arg0) {
     if ((gSomeBlend._11C92_1))
@@ -2076,7 +2193,18 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801059C.inc", void sub_0801059C()
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080105F4.inc", void sub_080105F4());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08010624.inc", void sub_08010624());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080106CC.inc", void sub_080106CC());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08010808.inc", void sub_08010808());
+
+extern "C" void loadMapGraphicsToVram(u16 map) {
+    const MapGfxPalInfo* map_gfxpal_info = getMapGfxPalInfo(map);
+    u32 vram_dest = VRAM;
+    
+    for (u16 i = 0; i < 12; i++) {
+        const void* map_gfx = (void*)getMapGraphics(map_gfxpal_info->tileSetIndices[i]);
+        gGame.mapGraphicsPtr[i] = (void*)map_gfx;
+        LZ77UnCompVram(map_gfx, (void*)vram_dest);
+        vram_dest += 0x800;
+    }
+}
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801084C.inc", void sub_0801084C());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801097C.inc", void sub_0801097C());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08010A40.inc", void sub_08010A40());
@@ -2085,9 +2213,50 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_08010F58.inc", void sub_08010F58()
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801124C.inc", void sub_0801124C());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08011564.inc", void sub_08011564());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080115C4.inc", void sub_080115C4());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_080117C4.inc", void sub_080117C4());
+
+// Expands one map cell into its 2x2 BG screen entries at dest (32 entries per row)
+extern "C" NONMATCH("asm/non_matching/rom/sub_080117C4.inc", void sub_080117C4(u16* dest, MapCell* cell)) {
+    u16* destBottom = dest + 32;
+    Metatile* metatile = getMetatileFromTileset(cell->tileset, cell->metatile);
+    u8* order = mapCellGetMinitileIndexOrder(cell);
+    u32 tileBase = cell->tileset << 6;
+    u32 hflip = cell->hflip;
+    u32 vflip = cell->vflip;
+    u32 palette = cell->palette << 12;
+    u16 i;
+
+    for (i = 0; i < 2; i++) {
+        u8* p = &order[i];
+        u8 n = p[0];
+        if (metatile->flags_u32 & (0x10000 << n)) {
+            Minitile* minitile = (Minitile*)&metatile->minitiles[n];
+            dest[i] = (minitile->tile + tileBase) | (hflip ^ minitile->hflip) << 10 |
+                     (vflip ^ minitile->vflip) << 11 | palette;
+        } else {
+            dest[i] = 0;
+        }
+
+        n = p[2];
+        if (metatile->flags_u32 & (0x10000 << n)) {
+            Minitile* minitile = (Minitile*)&metatile->minitiles[n];
+            destBottom[i] = (minitile->tile + tileBase) | (hflip ^ minitile->hflip) << 10 |
+                           (vflip ^ minitile->vflip) << 11 | palette;
+        } else {
+            destBottom[i] = 0;
+        }
+    }
+}
+END_NONMATCH
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080118D0.inc", void sub_080118D0());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08011A40.inc", void sub_08011A40());
+
+extern "C" void mapCellToBgScreenEntry(u16* entry, MapCell* cell, Minitile* minitile) {
+    *entry = minitile->tile + (cell->tileset << 6)
+    | (cell->hflip ^ minitile->hflip) << 10
+    | (cell->vflip ^ minitile->vflip) << 11
+    | cell->palette << 12;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08011A80.inc", void sub_08011A80());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08011ABC.inc", void sub_08011ABC());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08011BA4.inc", void sub_08011BA4());
@@ -2259,9 +2428,20 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_08016D08.inc", void sub_08016D08()
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08016D54.inc", void sub_08016D54());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08016E44.inc", void sub_08016E44());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08016E64.inc", void sub_08016E64());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08016EE8.inc", void sub_08016EE8());
+
+extern "C" void clearGfxBg0AndPaletteBuffer(void) {
+    GraphicsBuffer* gfx = &gSomeBlend.gfx;
+    CpuMemClear(&gfx->bg[0], BG_SCREEN_SIZE);
+    gfx->bg_dirty[0] = 1;
+    CpuMemClear(&gPaletteBufferIwram, PLTT_SIZE);
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08016F1C.inc", void sub_08016F1C());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08016F4C.inc", void sub_08016F4C());
+
+extern "C" void copyPalettesToBufferIwram(void* src, u16 idx, u16 size) {
+    CpuFastSet(src, &gPaletteBufferIwram[idx << 4], size / 4);
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08016F68.inc", void sub_08016F68());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080172D4.inc", void sub_080172D4());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_080173B8.inc", void sub_080173B8());
@@ -2306,65 +2486,260 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_08019BF0.inc", void sub_08019BF0()
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08019D04.inc", void sub_08019D04());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08019D9C.inc", void sub_08019D9C());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08019E40.inc", void sub_08019E40());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08019EE8.inc", void sub_08019EE8());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08019F44.inc", void sub_08019F44());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_08019F90.inc", void sub_08019F90());
+
+extern "C" void sub_08019EE8(u16 arg0) {
+    LZ77UnCompVram((void*)Blob_GetEntry(&gMiscGfx, 0x2C), (void*)VRAM);
+    copyPalettesToBufferIwram((void*)Blob_GetEntry(&gMiscGfx, 0x2D), 0, 0x40);
+    copyTilemapToGfxBufferBg3((u16*)Blob_GetEntry(&gMiscGfx, arg0 + 0x2E));
+    gSomeBlend.gfx.bg_dirty[3] = 1;
+}
+
+extern "C" void copyTilemapToGfxBufferBg3(u16* src) {
+    u16* dest = GetBgLayerTilemap(&gSomeBlend.gfx, 3, 0, 0);
+    
+    for (u16 i = 0; i < 0x20; src += 0x20, dest += 0x20, i++){
+        for (u16 j = 0; j < 0x20; j++){
+            dest[j] = src[j];
+        }
+    }
+}
+
+extern "C" void loadTownMapBounds(void) {
+    const TownMapInfo* town_map = &gTownMapInfoTable[gGame.cur_room];
+    
+    gSomeBlend.mapTopLeftX = town_map->topLeftX;
+    gSomeBlend.mapTopLeftY = town_map->topLeftY;
+    gSomeBlend.mapBottomRightX = town_map->bottomRightX;
+    gSomeBlend.mapBottomRightY = town_map->bottomRightY;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_08019FE4.inc", void sub_08019FE4());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801A1B8.inc", void sub_0801A1B8());
 
-extern "C" void sub_0801A218(MovementVector* vec) {
+extern "C" void sub_0801A218(Vector2i* vec) {
     for (u16 i = 0; i < 3; i++)
         sub_0801A238(i, vec);
 }
 
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801A238.inc", void sub_0801A238(s32, MovementVector*));
+extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801A238.inc", void sub_0801A238(s32, Vector2i*));
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801A2B4.inc", void sub_0801A2B4());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801A2DC.inc", void sub_0801A2DC());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801A3AC.inc", void sub_0801A3AC());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801A3D8.inc", void sub_0801A3D8());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801A434.inc", void sub_0801A434());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801A530.inc", void sub_0801A530());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801A548.inc", void sub_0801A548());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801A57C.inc", void sub_0801A57C());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801A594.inc", void sub_0801A594());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801A5C0.inc", void sub_0801A5C0());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801A5EC.inc", void sub_0801A5EC());
 
-extern "C" u16 sub_0801A604() {
-    return sub_0801A638(gGame._e >> 6);
+extern "C" void sub_0801A530(Vector2u* pos) {
+    sub_0801A548(gGame.mapLayersInfo.mainLayer, pos);
 }
 
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801A61C.inc", void sub_0801A61C());
-
-extern "C" u16 sub_0801A638(u16 index) {
-    u8 flags = gGame.bg_flags[index]._0_1;
-    return (flags + 1) << 8;
+extern "C" void sub_0801A548(u16 layer, Vector2u* pos) {
+    pos->x = gGame.mapBgLayerStates[layer]._4 >> 4;
+    pos->y = gGame.mapBgLayerStates[layer]._6 >> 4;
 }
 
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801A650.inc", void sub_0801A650());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801A678.inc", void sub_0801A678());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801A694.inc", void sub_0801A694());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801A6AC.inc", void sub_0801A6AC());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801A6C4.inc", void sub_0801A6C4());
+extern "C" void sub_0801A57C(Vector2u* pos) {
+    sub_0801A594(gGame.mapLayersInfo.mainLayer, pos);
+}
+
+extern "C" void sub_0801A594(u16 layer, Vector2u* pos) {
+    pos->x = gGame.mapBgLayerStates[layer]._0.x;
+    pos->y = gGame.mapBgLayerStates[layer]._0.y;
+}
+
+extern "C" void sub_0801A5C0(Rectangle* out) {
+    Rectangle* rect = &gGame.mapBgLayerStates[gGame.mapLayersInfo.mainLayer]._10;
+    out->pos.x = rect->pos.x;
+    out->pos.y = rect->pos.y;
+    out->size.x = rect->size.x;
+    out->size.y = rect->size.y;
+}
+
+extern "C" u16 getMapMainLayerWidthInPixels() {
+    return getMapLayerWidthInPixels(gGame.mapLayersInfo.mainLayer);
+}
+
+extern "C" u16 getMapMainLayerHeightInPixels() {
+    return getMapLayerHeightInPixels(gGame.mapLayersInfo.mainLayer);
+}
+
+extern "C" u16 getMapLayerWidthInPixels(u16 layer) {
+    return (gGame.mapLayersInfo.dims[layer].width + 1) << 8;
+}
+
+extern "C" u16 getMapLayerHeightInPixels(u16 layer) {
+    return (gGame.mapLayersInfo.dims[layer].height + 1) << 8;
+}
+
+extern "C" u16 getMapLayerTotalChunks(u16 layer) {
+    return getMapLayerWidthInChunks(layer) * getMapLayerHeightInChunks(layer);
+}
+
+extern "C" u16 getMapLayerWidthInChunks(u16 layer) {
+    return gGame.mapLayersInfo.dims[layer].width + 1;
+}
+
+extern "C" u16 getMapLayerHeightInChunks(u16 layer) {
+    return gGame.mapLayersInfo.dims[layer].height + 1;
+}
+
+extern "C" u16 sub_0801A6AC() {
+    return gUnknown_08D2D634[gGame.mapLayersInfo.mainLayer];
+}
+
+extern "C" s16 sub_0801A6C4(u16 arg0) {
+    return gGame.mapLayersInfo._8[arg0];
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801A6D8.inc", void sub_0801A6D8());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801A764.inc", void sub_0801A764());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801A7AC.inc", void sub_0801A7AC());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801A7CC.inc", void sub_0801A7CC());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801A868.inc", void sub_0801A868());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801A904.inc", void sub_0801A904());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801A978.inc", void sub_0801A978());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801A9D8.inc", void sub_0801A9D8());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801AA1C.inc", void sub_0801AA1C());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801AA70.inc", void sub_0801AA70());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801AAB0.inc", void sub_0801AAB0());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801AB00.inc", void sub_0801AB00());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801AB38.inc", void sub_0801AB38());
+
+extern "C" MapCell* getMapCellFromMapLayer(u16 layer, s16 x, s16 y) {
+    u16 width = getMapLayerWidthInPixels(layer) >> 4;
+    u16 height = getMapLayerHeightInPixels(layer) >> 4;
+
+    if (x < 0 || x >= width || y < 0 || y >= height) {
+        return &gDefaultMapCell;
+    }
+
+    u16* map = gGame.mapCellsPtr[layer];
+    u32 avg = ((x * 2) + (y * (width * 2))) / 2;
+    return (MapCell*)&map[avg];
+}
+
+extern "C" Metatile* getMetatileFromMapLayer(u16 layer, s16 x, s16 y) {
+    u16 width = getMapLayerWidthInPixels(layer) >> 4;
+    u16 height = getMapLayerHeightInPixels(layer) >> 4;
+
+    if (x < 0 || x >= width || y < 0 || y >= height) {
+        return &gDefaultMetatile;
+    }
+    
+    MapCell* cell = getMapCellFromMapLayer(layer, x, y);
+    return getMetatileFromTileset(cell->tileset, cell->metatile);
+}
+
+extern "C" u16 sub_0801A9D8(u16 layer, s32 arg1, Vector2i* pos) {
+    u32 col = gGame.collisionEnabled;
+    if (col & gGame._8_2
+        && getMetatileFromMapLayer(layer, pos->x >> 4, pos->y >> 4)->flags_u32 & arg1)
+        return true;
+    else 
+        return false;
+}
+
+extern "C" u16 sub_0801AA1C(u16 layer, Vector2i* pos, Vector2i* dir) {
+    s32 dirType = sub_0801AA70(layer, pos);
+
+    if (dirType == 0)
+        return 0;
+
+    switch (dirType) {
+    case 1:
+        if (dir->y > 0)
+            return 1;
+        break;
+    case 2:
+        if (dir->y < 0)
+            return 1;
+        break;
+    case 3:
+        if (dir->x > 0)
+            return 1;
+        break;
+    case 4:
+        if (dir->x < 0)
+            return 1;
+        break;
+    }
+    return 0;
+}
+
+extern "C" u16 sub_0801AA70(u16 layer, Vector2i* pos) {
+    u32 col = gGame.collisionEnabled;
+    if (col & gGame._8_2) {
+        MetatileFlags flags = getMetatileFromMapLayer(layer, pos->x >> 4, pos->y >> 4)->flags;
+        return flags.dir;
+    }
+    return 0;
+}
+
+extern "C" u16 sub_0801AAB0(u16 layer, Vector2i* pos) {
+    u32 col = gGame.collisionEnabled;
+    if (col & gGame._8_2) {
+        MetatileFlags flags = getMetatileFromMapLayer(layer, pos->x >> 4, pos->y >> 4)->flags;
+        u16 dirType = flags.dir;
+        if (dirType != 0) {
+            u16 speed = flags.speed;
+            if (speed != 0) {
+                return speed * 2;
+            }
+        }
+    }
+    return 1;
+}
+
+extern "C" u16 sub_0801AB00(u16 layer, Vector2i* pos) {
+    if (gGame._829b == 6) {
+        return sub_0801A9D8(layer, 0x04000011, pos);
+    } else {
+        return sub_0801A9D8(layer, 0x04000001, pos);
+    }
+}
+
+extern "C" u16 sub_0801AB38(u16 layer, Vector2i* pos) {
+    return sub_0801A9D8(layer, 3, pos);
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801AB50.inc", void sub_0801AB50());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801AD4C.inc", void sub_0801AD4C());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801AD84.inc", void sub_0801AD84());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801ADA0.inc", void sub_0801ADA0());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801ADCC.inc", void sub_0801ADCC());
-extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801AE18.inc", void sub_0801AE18());
+
+extern "C" Metatile* getMetatileFromTileset(u16 tileset, u16 index) {
+    if (tileset >= 12 || index >= 64) {
+        return &gUnknown_02000038;
+    }
+
+    Metatile* metatiles = gGame.mapMetatilesPtr;
+    u32 i = ((tileset * 64 * sizeof(Metatile)) + (index * sizeof(Metatile))) / sizeof(Metatile); // (tileset * 64) + index
+    return &metatiles[i];
+}
+
+extern "C" s32* sub_0801AD84(u16 index) {
+    s32* unk = gGame._58ac;
+    return &unk[index * 2];
+}
+
+extern "C" Minitile* getMinitileFromMetatile(MapCell* cell, Metatile* metatile, u16 index){
+    u16 n = mapCellGetMinitileIndex(cell, index);
+
+    if (metatile->flags_u32 & (0x10000 << n))
+        return (Minitile*)&metatile->minitiles[n];
+    else return 0;
+}
+
+extern "C" u16 mapCellGetMinitileIndex(MapCell* cell, u16 index) {
+    if (cell->hflip && cell->vflip)
+        return gMapCellMinitileOrder_HVFlipped[index];
+    else if (cell->hflip)
+        return gMapCellMinitileOrder_HFlipped[index];
+    else if (cell->vflip)
+        return gMapCellMinitileOrder_VFlipped[index];
+    else 
+        return index;
+}
+
+extern "C" u8* mapCellGetMinitileIndexOrder(MapCell* cell) {
+    if (cell->hflip && cell->vflip)
+        return gMapCellMinitileOrder_HVFlipped;
+    else if (cell->hflip)
+        return gMapCellMinitileOrder_HFlipped;
+    else if (cell->vflip)
+        return gMapCellMinitileOrder_VFlipped;
+    else
+        return gMapCellMinitileOrder_Default;
+}
+
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801AE58.inc", void sub_0801AE58());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801AF00.inc", void sub_0801AF00());
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801AFA4.inc", void sub_0801AFA4());
@@ -2387,7 +2762,7 @@ extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B144.inc", void sub_0801B144()
 extern "C" ASM_FUNC("asm/non_matching/rom/sub_0801B1BC.inc", void sub_0801B1BC());
 
 extern "C" u16 isMapGraphicsValid(u16 mapID) {
-    const MapGraphicsInfo* graphicsInfo = getMapGraphicsInfo(mapID);
+    const MapGfxPalInfo* graphicsInfo = getMapGfxPalInfo(mapID);
 
     for (u16 i = 0; i < 12; i++) {
         if (graphicsInfo->tileSetIndices[i] == -1) {
@@ -2408,15 +2783,15 @@ extern "C" u8 getMusicIDForRoom(u16 roomIndex) {
     return gMapMusicTable[roomIndex];
 }
 
-extern "C" const MapLayerAlphaInfo* getMapLayerAlphaInfo(u16 index) {
-    return &(((MapLayerAlphaInfo*)Blob_GetEntry(&gMapLayerInfoTable, 0))[index]);
+extern "C" const MapLayersInfo* getMapLayersInfo(u16 index) {
+    return &(((MapLayersInfo*)Blob_GetEntry(&gMapLayersInfoTable, 0))[index]);
 }
 
-extern "C" const MapGraphicsInfo* getMapGraphicsInfo(u16 index) {
-    u8* table = (u8*)Blob_GetEntry(&gMapGraphicsInfoTable, 0);
-    return (MapGraphicsInfo*)(&table[index * 0x1a]);
+extern "C" const MapGfxPalInfo* getMapGfxPalInfo(u16 index) {
+    u8* table = (u8*)Blob_GetEntry(&gMapGfxPalInfoTable, 0);
+    return (MapGfxPalInfo*)(&table[index * 0x1a]);
     // FAKEMATCH: Should be something like the following
-    // return &(((MapGraphicsInfo*)Blob_GetEntry(gMapGraphicsTable, 0))[index]);
+    // return &(((MapGfxPalInfo*)Blob_GetEntry(gMapGraphicsTable, 0))[index]);
 }
 
 extern "C" const void* nullsub_0801B3F8() {
@@ -2431,12 +2806,12 @@ extern "C" const void* getMapPaletteTable(u16 index) {
     return Blob_GetEntry(&gMapPalettes, index);
 }
 
-extern "C" const void* getMapTilemapData(u16 index) {
-    return Blob_GetEntry(&gMapTilemapData, index);
+extern "C" const void* getCompressedMapCellData(u16 index) {
+    return Blob_GetEntry(&gCompressedMapCellData, index);
 }
 
-extern "C" const void* getMapTileData(u16 index) {
-    return Blob_GetEntry(&gMapTileData, index);
+extern "C" const void* getCompressedMapMetatileData(u16 index) {
+    return Blob_GetEntry(&gCompressedMapMetatileData, index);
 }
 
 extern "C" const void* getMapDoorsHotspots(u16 index, u16 type) {

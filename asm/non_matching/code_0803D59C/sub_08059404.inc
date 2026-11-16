@@ -89,7 +89,7 @@ _08059472:
 	beq _080594CA
 	b _080594D6
 	.align 2, 0
-_080594B0: .4byte gUnknown_09C5FCCC
+_080594B0: .4byte gCreditsSpritePlacementTable
 _080594B4: .4byte gUnknown_02018D74
 _080594B8: .4byte 0xFFFFD2B4
 _080594BC: .4byte 0x00002D99

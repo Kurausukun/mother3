@@ -18,7 +18,7 @@ sub_0800E5FC:
 	ldrsh r4, [r5, r0]
 	adds r4, #0x10
 	adds r0, r6, #0
-	bl sub_0801A638
+	bl getMapLayerHeightInPixels
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r4, r0

@@ -23,7 +23,7 @@ sub_0801097C:
 	cmp r0, #3
 	bne _080109C4
 	adds r0, r5, #0
-	bl sub_0801A638
+	bl getMapLayerHeightInPixels
 	lsls r0, r0, #0x10
 	movs r1, #0x80
 	lsls r1, r1, #0x11

@@ -6,15 +6,15 @@ sub_0802781C:
 	movs r2, #0xc0
 	lsls r2, r2, #1
 	movs r1, #0
-	bl sub_08016F4C
+	bl copyPalettesToBufferIwram
 	movs r0, #0
 	movs r1, #0xc
 	bl sub_0803B688
 	movs r0, #0
-	bl sub_08036DDC
+	bl getSpritePalette
 	movs r1, #0x10
 	movs r2, #0xe0
-	bl sub_08016F4C
+	bl copyPalettesToBufferIwram
 	movs r4, #0
 	ldr r1, _080278D4
 	adds r0, r5, r1
@@ -34,7 +34,7 @@ _08027852:
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
 	movs r2, #0x20
-	bl sub_08016F4C
+	bl copyPalettesToBufferIwram
 	adds r0, r4, #1
 	lsls r0, r0, #0x10
 	lsrs r4, r0, #0x10
@@ -51,7 +51,7 @@ _08027876:
 	bl Blob_GetEntry
 	movs r1, #0xc
 	movs r2, #0x20
-	bl sub_08016F4C
+	bl copyPalettesToBufferIwram
 	movs r0, #0xc
 	movs r1, #1
 	bl sub_0803B688

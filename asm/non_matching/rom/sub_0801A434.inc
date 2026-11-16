@@ -88,7 +88,7 @@ sub_0801A434:
 	ldr r0, _0801A528
 	adds r1, r5, r0
 	movs r0, #0
-	bl sub_08036C00
+	bl getTilePosFromObjId
 	ldr r1, _0801A52C
 	adds r5, r5, r1
 	adds r0, r5, #0

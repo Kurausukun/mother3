@@ -24,7 +24,7 @@ _080104D8:
 	.4byte _08010500
 	.4byte _08010500
 _080104F8:
-	bl sub_0801A5EC
+	bl getMapMainLayerWidthInPixels
 	subs r0, #0xf0
 	b _08010502
 _08010500:
@@ -37,7 +37,7 @@ _08010502:
 _0801050A:
 	ldrh r0, [r5]
 	strh r0, [r4]
-	bl sub_0801A604
+	bl getMapMainLayerHeightInPixels
 	subs r0, #0xa0
 	strh r0, [r4, #2]
 	b _08010520

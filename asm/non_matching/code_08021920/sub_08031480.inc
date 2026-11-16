@@ -118,7 +118,7 @@ _0803154A:
 	ldrb r0, [r0]
 	lsls r0, r0, #0x19
 	lsrs r0, r0, #0x1e
-	bl sub_0801A61C
+	bl getMapLayerWidthInPixels
 	b _08031584
 	.align 2, 0
 _0803156C: .4byte gUnknown_02001004
@@ -127,7 +127,7 @@ _08031574: .4byte gGame
 _08031578: .4byte gUnknown_080C2112
 _0803157C: .4byte 0x00009D10
 _08031580:
-	bl sub_0801A5EC
+	bl getMapMainLayerWidthInPixels
 _08031584:
 	lsls r0, r0, #0x10
 	lsrs r2, r0, #0x10
@@ -198,12 +198,12 @@ _080315F4:
 	ldrb r0, [r0]
 	lsls r0, r0, #0x19
 	lsrs r0, r0, #0x1e
-	bl sub_0801A638
+	bl getMapLayerHeightInPixels
 	b _08031620
 	.align 2, 0
 _08031618: .4byte 0xFFFF0000
 _0803161C:
-	bl sub_0801A604
+	bl getMapMainLayerHeightInPixels
 _08031620:
 	lsls r0, r0, #0x10
 	lsrs r2, r0, #0x10

@@ -110,7 +110,7 @@ _08017FF8:
 	strh r0, [r6, #4]
 	b _080180F6
 	.align 2, 0
-_0801806C: .4byte gUnknown_02005C1C
+_0801806C: .4byte gGame+0x1C @ gGame.mapLayersInfo.dims
 _08018070: .4byte 0x00005894
 _08018074: .4byte 0x000058C9
 _08018078: .4byte gGame
@@ -256,7 +256,7 @@ _08018188:
 	ands r5, r4
 	orrs r5, r0
 	mov r0, sb
-	bl sub_0801A61C
+	bl getMapLayerWidthInPixels
 	ldrh r1, [r6, #4]
 	lsls r1, r1, #0x10
 	asrs r1, r1, #0x14
@@ -284,7 +284,7 @@ _080181CC:
 	ands r5, r1
 	orrs r5, r0
 	mov r0, sb
-	bl sub_0801A61C
+	bl getMapLayerWidthInPixels
 	mov r2, sl
 	ldrh r1, [r2]
 	lsls r1, r1, #0x10
@@ -301,7 +301,7 @@ _080181CC:
 _080181F8: .4byte 0xFFFF0000
 _080181FC:
 	mov r0, sb
-	bl sub_0801A61C
+	bl getMapLayerWidthInPixels
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	movs r1, #0x80
@@ -331,7 +331,7 @@ _080181FC:
 _08018234: .4byte 0xFFFF0000
 _08018238:
 	mov r0, sb
-	bl sub_0801A61C
+	bl getMapLayerWidthInPixels
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	movs r2, #0x80
@@ -413,7 +413,7 @@ _08018292:
 	ands r5, r4
 	orrs r5, r0
 	mov r0, sb
-	bl sub_0801A638
+	bl getMapLayerHeightInPixels
 	asrs r2, r5, #0x10
 	ldrh r1, [r6, #6]
 	lsls r1, r1, #0x10
@@ -439,7 +439,7 @@ _08018308:
 	ands r5, r1
 	orrs r5, r0
 	mov r0, sb
-	bl sub_0801A638
+	bl getMapLayerHeightInPixels
 	asrs r2, r5, #0x10
 	mov r3, sl
 	ldrh r1, [r3, #2]
@@ -456,7 +456,7 @@ _08018308:
 _08018334: .4byte 0x0000FFFF
 _08018338:
 	mov r0, sb
-	bl sub_0801A638
+	bl getMapLayerHeightInPixels
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	movs r4, #0x80
@@ -486,7 +486,7 @@ _08018368:
 _08018370: .4byte 0x0000FFFF
 _08018374:
 	mov r0, sb
-	bl sub_0801A638
+	bl getMapLayerHeightInPixels
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	movs r1, #0x80
@@ -540,11 +540,11 @@ _080183C8:
 	ldr r4, [sp, #0x10]
 	strb r1, [r4, #0xc]
 	mov r0, sb
-	bl sub_0801A61C
+	bl getMapLayerWidthInPixels
 	lsls r0, r0, #0x10
 	lsrs r4, r0, #0x14
 	mov r0, sb
-	bl sub_0801A638
+	bl getMapLayerHeightInPixels
 	lsls r0, r0, #0x10
 	lsrs r2, r0, #0x14
 	adds r0, r2, #0

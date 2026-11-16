@@ -46,7 +46,7 @@ _0804A7F0:
 	ldrh r3, [r4, #2]
 	mov r0, r8
 	adds r1, r7, #0
-	bl sub_08001378
+	bl GetBgLayerTilemap
 	adds r2, r0, #0
 	lsls r6, r6, #0xc
 	mov r0, sb
@@ -65,7 +65,7 @@ _0804A7F0:
 	ldrh r3, [r4, #2]
 	mov r0, r8
 	adds r1, r7, #0
-	bl sub_08001378
+	bl GetBgLayerTilemap
 	adds r2, r0, #0
 	mov r0, sb
 	ldrh r1, [r0, #4]
@@ -82,7 +82,7 @@ _0804A7F0:
 	lsrs r3, r3, #0x10
 	mov r0, r8
 	adds r1, r7, #0
-	bl sub_08001378
+	bl GetBgLayerTilemap
 	adds r2, r0, #0
 	mov r0, sb
 	ldrh r1, [r0, #0xc]
@@ -104,7 +104,7 @@ _0804A7F0:
 	lsrs r3, r3, #0x10
 	mov r0, r8
 	adds r1, r7, #0
-	bl sub_08001378
+	bl GetBgLayerTilemap
 	adds r2, r0, #0
 	mov r1, sb
 	ldrh r0, [r1, #0x10]

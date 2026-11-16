@@ -10,7 +10,7 @@ sub_0800C694:
 	adds r7, r1, #0
 	add r4, sp, #4
 	adds r1, r4, #0
-	bl sub_08036BEC
+	bl getTilePosFromObj
 	movs r0, #0x85
 	adds r0, r0, r6
 	mov r8, r0
@@ -38,7 +38,7 @@ sub_0800C694:
 	lsls r2, r2, #0x10
 	asrs r2, r2, #0x14
 	adds r0, r3, #0
-	bl sub_0801A978
+	bl getMetatileFromMapLayer
 	str r0, [r6, #0x18]
 	adds r2, r6, #0
 	adds r2, #0xbf
@@ -183,7 +183,7 @@ _0800C808:
 	cmp r0, #0
 	blt _0800C830
 	adds r4, r0, #0
-	bl sub_0801A5EC
+	bl getMapMainLayerWidthInPixels
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	subs r0, #1
@@ -193,7 +193,7 @@ _0800C808:
 	ldrh r0, [r1]
 	b _0800C832
 _0800C828:
-	bl sub_0801A5EC
+	bl getMapMainLayerWidthInPixels
 	subs r0, #1
 	b _0800C832
 _0800C830:
@@ -208,7 +208,7 @@ _0800C832:
 	blt _0800C85E
 	movs r0, #2
 	ldrsh r4, [r5, r0]
-	bl sub_0801A604
+	bl getMapMainLayerHeightInPixels
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	subs r0, #1
@@ -217,7 +217,7 @@ _0800C832:
 	ldrh r0, [r5, #2]
 	b _0800C860
 _0800C856:
-	bl sub_0801A604
+	bl getMapMainLayerHeightInPixels
 	subs r0, #1
 	b _0800C860
 _0800C85E:
@@ -368,7 +368,7 @@ _0800C910:
 	cmp r0, #0
 	blt _0800C994
 	adds r4, r0, #0
-	bl sub_0801A5EC
+	bl getMapMainLayerWidthInPixels
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	subs r0, #1
@@ -380,7 +380,7 @@ _0800C910:
 	.align 2, 0
 _0800C988: .4byte gGame
 _0800C98C:
-	bl sub_0801A5EC
+	bl getMapMainLayerWidthInPixels
 	subs r0, #1
 	b _0800C996
 _0800C994:
@@ -395,7 +395,7 @@ _0800C996:
 	blt _0800C9C2
 	movs r0, #2
 	ldrsh r4, [r5, r0]
-	bl sub_0801A604
+	bl getMapMainLayerHeightInPixels
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	subs r0, #1
@@ -404,7 +404,7 @@ _0800C996:
 	ldrh r0, [r5, #2]
 	b _0800C9C4
 _0800C9BA:
-	bl sub_0801A604
+	bl getMapMainLayerHeightInPixels
 	subs r0, #1
 	b _0800C9C4
 _0800C9C2:
@@ -566,7 +566,7 @@ _0800CA86:
 	cmp r0, #0
 	blt _0800CB06
 	adds r4, r0, #0
-	bl sub_0801A5EC
+	bl getMapMainLayerWidthInPixels
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	subs r0, #1
@@ -576,7 +576,7 @@ _0800CA86:
 	ldrh r0, [r1]
 	b _0800CB08
 _0800CAFE:
-	bl sub_0801A5EC
+	bl getMapMainLayerWidthInPixels
 	subs r0, #1
 	b _0800CB08
 _0800CB06:
@@ -591,7 +591,7 @@ _0800CB08:
 	blt _0800CB34
 	movs r0, #2
 	ldrsh r4, [r5, r0]
-	bl sub_0801A604
+	bl getMapMainLayerHeightInPixels
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	subs r0, #1
@@ -600,7 +600,7 @@ _0800CB08:
 	ldrh r0, [r5, #2]
 	b _0800CB36
 _0800CB2C:
-	bl sub_0801A604
+	bl getMapMainLayerHeightInPixels
 	subs r0, #1
 	b _0800CB36
 _0800CB34:

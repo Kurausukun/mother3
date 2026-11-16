@@ -200,8 +200,6 @@
 . = 0x00005BF0; gUnknown_02005BF0 = .;
 . = 0x00005C00; gGame = .;
 . = 0x00005C0C; gUnknown_02005C0C = .;
-. = 0x00005C1C; gUnknown_02005C1C = .;
-. = 0x00005C2C; gUnknown_02005C2C = .;
 . = 0x0000B4B0; gUnknown_0200B4B0 = .;
 . = 0x0000B4B8; gUnknown_0200B4B8 = .;
 . = 0x0000B55B; gUnknown_0200B55B = .;
@@ -222,7 +220,6 @@
 . = 0x0000C3A4; gUnknown_0200C3A4 = .;
 . = 0x0000C3A6; gUnknown_0200C3A6 = .;
 . = 0x0000C3B6; gUnknown_0200C3B6 = .;
-. = 0x0000C3C8; gUnknown_0200C3C8 = .;
 . = 0x0000D818; gUnknown_0200D818 = .;
 . = 0x0000D908; gUnknown_0200D908 = .;
 . = 0x0000DD08; gUnknown_0200DD08 = .;

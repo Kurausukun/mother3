@@ -89,20 +89,20 @@ enum EquipFlags { _1, Flint, Lucas, Duster, Kumatora, Boney, Salsa, _80 };
 //     u32 battle_info;
 // };
 
-typedef struct Position {
+typedef struct Vector2u {
     u16 x;
     u16 y;
-} Position;
+} Vector2u;
 
-typedef struct Size {
-    u16 w;
-    s16 h;
-} Size;
-
-typedef struct MovementVector {
+typedef struct Vector2i {
     s16 x;
     s16 y;
-} MovementVector;
+} Vector2i;
+
+typedef struct Rectangle {
+    Vector2i pos;
+    Vector2u size;
+} Rectangle;
 
 typedef struct Object {
     s16 xpos;
@@ -115,7 +115,7 @@ typedef struct Object {
     u16 _20;
     u16 _22;
     u8 _24[0x10];
-    MovementVector* speed;
+    Vector2i* speed;
     u8 _38[4];
     u32 _3c;
     u8 _40[0x34];
@@ -190,8 +190,6 @@ typedef struct Object {
     u8 _cc_80 : 1;
 } Object;
 
-extern Object gUnknown_0200C3C8[];
-
 typedef struct TileInfo {
     u16 tile_num : 10;    // 0x04 bits 0-9 - Tile/character number
     u16 priority : 2;     // 0x04 bits 10-11 - Priority vs BG
@@ -240,20 +238,14 @@ typedef struct Entry8Byte_Alt {
 static_assert(sizeof(OAMEntry) == 0x8);
 
 typedef struct GraphicsBuffer {
-    /* 0x0000 / 0x0050 */ u16 _0[0x400];
-    /* 0x0800 / 0x0850 */ u16 _800[0x400];
-    /* 0x1000 / 0x1050 */ u16 _1000[0x400];
-    /* 0x1800 / 0x1850 */ u16 _1800[0x400];
+    /* 0x0000 / 0x0050 */ u16 bg[4][0x400];
     /* 0x2000 / 0x2050 */ OAMEntry oam[128];
     /* 0x2400 / 0x2450 */ u8 pad_2400[0x2500 - 0x2400];
     /* 0x2500 / 0x2550 */ Entry8Byte_Alt entries_2500[32];
     /* 0x2600 / 0x2650 */ u8 pad_2600[0x2700 - 0x2600];
     /* 0x2700 / 0x2750 */ vu16 palettes[0x20][0x10];
     /* 0x2C00 / 0x2C50 */ u8 pad_2C00[0x2C40 - 0x2B00];
-    /* 0x2C40 / 0x2C90 */ vu16 _2C40;
-    /* 0x2C42 / 0x2C92 */ vu16 _2C42;
-    /* 0x2C44 / 0x2C94 */ vu16 _2C44;
-    /* 0x2C46 / 0x2C96 */ vu16 _2C46;
+    /* 0x2C40 / 0x2C90 */ vu16 bg_dirty[4];
     /* 0x2C48 / 0x2C98 */ vu16 oam_counter;
     /* 0x2C4A / 0x2C9A */ vu16 _2C4A;
     /* 0x2C4C / 0x2C9C */ vu8 r;
@@ -425,8 +417,11 @@ typedef struct struct_02016028 {
     u8 _3532;
     u8 pad_3533[0x35BA - 0x3533];
     u8 _35ba_1 : 1;
-    u8 _35ba_2 : 2;
+    u8 _35ba_2 : 1;
+    u8 _35ba_4 : 1;
     u8 _35ba_8 : 1;
+    u8 _35ba_10 : 3;
+    u8 _35ba_80 : 1;
     u8 pad_35bb;
     DebugMenuState debugMenuPages[6];
     u8 _3604[0x360E - 0x3604];
@@ -556,7 +551,8 @@ typedef struct struct_02016028 {
     u8 _c5b6[0xC61C - 0xC5B6];
     u32 _c61c;
     void* _C620;
-    u8 pad_C624[0x11C88 - 0xC624];
+    u8 pad_C624[0x11C84 - 0xC624];
+    u8* _11C84;
     u8 _11C88;
     u8 _11C89;
     u8 pad_11C8A;
@@ -572,7 +568,9 @@ typedef struct struct_02016028 {
     u8 _121b6_2 : 1;
     u8 _121b6_4 : 6;
     u8 _121b7;
-    u8 _121b8_1 : 3;
+    u8 _121b8_1 : 1;
+    u8 _121b8_2 : 1;
+    u8 _121b8_4 : 1;
     u8 _121b8_8 : 1;
     u8 _121b8_10 : 1;
     u8 _121b8_20 : 3;
@@ -581,7 +579,8 @@ typedef struct struct_02016028 {
     u8 _121bb_1 : 3;
     u8 _121bb_8 : 1;
     u8 _121bb_10 : 1;
-    u8 _121bc[0x121C8 - 0x121BC];
+    u16 _121bc;
+    u8 _121be[0x121C8 - 0x121BE];
 
     union {
         u64 _121c8;
@@ -604,6 +603,7 @@ typedef struct struct_02016028 {
     u8 _1ed10_10 : 1;
     u8 _1ed10_20 : 1;
 } struct_02016028;
+extern struct_02016028 gSomeBlend;
 
 typedef struct Save {
     u8 party[5];
@@ -670,9 +670,7 @@ typedef struct Save {
     u8 _80e[0x10];
     u8 _81e;
 } Save;
-
 extern Save gSave;
-extern struct_02016028 gSomeBlend;
 
 typedef struct LevelUpExpInfo {
     u32 ch_no;
@@ -815,35 +813,5 @@ typedef struct RhythmInfo {  // TODO: This should probably be part of a class?
     u8 okayWindow;           // Number of frames allowed for an "okay" hit
 } RhythmInfo;  // note that in the final game, "great" and "okay" hits do the same thing, so
                // effectively only the "okay" window matters
-
-typedef struct MapLayerInfo {
-    u8 layerWidth : 3;
-    u8 layerHeight : 3;
-    u8 unk : 2;
-    u8 unk1[3];
-} MapLayerInfo;
-
-typedef struct MapLayerAlphaInfo {
-    u32 unk0 : 2;
-    u32 alpha1 : 4;
-    u32 alpha2 : 4;
-    u32 unk1 : 22;
-    u8 pad[0xC];
-    MapLayerInfo layers[3];
-} MapLayerAlphaInfo;
-
-typedef struct MapGraphicsInfo {
-    s16 tileSetIndices[12];
-    s16 paletteIndex;
-} MapGraphicsInfo;
-
-typedef struct DoorDestinationInfo {
-    u8 _0;
-    u8 collsionEnabled;
-    u16 _2;
-    u16 mapID;
-    u8 xPos;
-    u8 yPos;
-} DoorDestinationInfo;
 
 #endif  // STRUCTS_H

@@ -11,20 +11,20 @@ sub_0800DA8C:
 	mov r8, r2
 	add r4, sp, #4
 	adds r1, r4, #0
-	bl sub_08036BEC
+	bl getTilePosFromObj
 	adds r5, r6, #0
 	adds r5, #0xbd
 	ldrb r0, [r5]
 	lsls r0, r0, #0x19
 	lsrs r0, r0, #0x1e
-	bl sub_0801A61C
+	bl getMapLayerWidthInPixels
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	str r0, [sp, #0x14]
 	ldrb r0, [r5]
 	lsls r0, r0, #0x19
 	lsrs r0, r0, #0x1e
-	bl sub_0801A638
+	bl getMapLayerHeightInPixels
 	mov r1, sp
 	movs r0, #0
 	strh r0, [r1]

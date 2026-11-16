@@ -23,7 +23,7 @@ _0800FC20:
 	ldrh r1, [r0]
 	adds r0, r4, #0
 	bl sub_0800FDE8
-	bl sub_08019F90
+	bl loadTownMapBounds
 	ldr r0, _0800FCC8
 	adds r4, r4, r0
 	ldrb r0, [r4]
@@ -97,5 +97,5 @@ _0800FCD4: .4byte gGame
 _0800FCD8: .4byte 0x000067AC
 _0800FCDC: .4byte 0x0000595C
 _0800FCE0: .4byte 0x0000598C
-_0800FCE4: .4byte gUnknown_03005314
+_0800FCE4: .4byte gPaletteBufferIwram
 	.syntax divided

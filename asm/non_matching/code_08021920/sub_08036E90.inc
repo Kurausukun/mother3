@@ -9,7 +9,7 @@ sub_08036E90:
 	bl sub_08036D18
 	adds r4, r0, #0
 	movs r0, #0
-	bl sub_08036DDC
+	bl getSpritePalette
 	ldrb r1, [r4, #1]
 	lsls r1, r1, #0x1c
 	lsrs r1, r1, #0x17

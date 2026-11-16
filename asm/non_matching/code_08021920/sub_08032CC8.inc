@@ -69,7 +69,7 @@ _08032D18:
 	mov r4, sp
 	adds r0, r5, #0
 	mov r1, sp
-	bl sub_08036BEC
+	bl getTilePosFromObj
 	ldr r1, _08032D7C
 	ldr r0, _08032D80
 	adds r1, r1, r0

@@ -16,7 +16,7 @@ sub_08038F90:
 	strh r0, [r4, #0x1a]
 	movs r0, #0
 	add r1, sp, #8
-	bl sub_08036C00
+	bl getTilePosFromObjId
 	ldr r3, _08039020
 	adds r5, r4, r3
 	adds r0, r5, #0

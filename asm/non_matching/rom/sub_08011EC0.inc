@@ -24,7 +24,7 @@ sub_08011EC0:
 	bl Blob_GetEntry
 	movs r1, #0xc
 	movs r2, #0x80
-	bl sub_08016F4C
+	bl copyPalettesToBufferIwram
 	movs r0, #0xc
 	movs r1, #4
 	bl sub_0803B688
@@ -35,6 +35,6 @@ sub_08011EC0:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08011F10: .4byte gUnknown_09B18308
+_08011F10: .4byte gTownMapGfx
 _08011F14: .4byte 0x06008000
 	.syntax divided

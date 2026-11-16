@@ -30,7 +30,7 @@ _0800F472:
 	add r4, sp, #8
 	adds r0, r7, #0
 	adds r1, r4, #0
-	bl sub_08036BEC
+	bl getTilePosFromObj
 	lsls r1, r5, #0x10
 	asrs r1, r1, #0x10
 	ldrh r0, [r4]
@@ -47,7 +47,7 @@ _0800F472:
 	blt _0800F4D8
 	movs r1, #0
 	ldrsh r4, [r6, r1]
-	bl sub_0801A5EC
+	bl getMapMainLayerWidthInPixels
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	subs r0, #1
@@ -59,7 +59,7 @@ _0800F472:
 _0800F4C8: .4byte gGame
 _0800F4CC: .4byte 0x000082A6
 _0800F4D0:
-	bl sub_0801A5EC
+	bl getMapMainLayerWidthInPixels
 	subs r0, #1
 	b _0800F4DA
 _0800F4D8:
@@ -73,7 +73,7 @@ _0800F4DA:
 	blt _0800F504
 	movs r0, #2
 	ldrsh r4, [r5, r0]
-	bl sub_0801A604
+	bl getMapMainLayerHeightInPixels
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	subs r0, #1
@@ -82,7 +82,7 @@ _0800F4DA:
 	ldrh r0, [r5, #2]
 	b _0800F506
 _0800F4FC:
-	bl sub_0801A604
+	bl getMapMainLayerHeightInPixels
 	subs r0, #1
 	b _0800F506
 _0800F504:

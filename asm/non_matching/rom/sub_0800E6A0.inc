@@ -18,7 +18,7 @@ sub_0800E6A0:
 	ldrsh r4, [r0, r1]
 	adds r4, #0x10
 	adds r0, r5, #0
-	bl sub_0801A61C
+	bl getMapLayerWidthInPixels
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	cmp r4, r0

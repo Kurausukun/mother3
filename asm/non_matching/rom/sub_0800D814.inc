@@ -9,7 +9,7 @@ sub_0800D814:
 	adds r7, r2, #0
 	add r4, sp, #4
 	adds r1, r4, #0
-	bl sub_08036BEC
+	bl getTilePosFromObj
 	ldr r0, [r5, #0x18]
 	ldr r0, [r0]
 	movs r1, #0xc0

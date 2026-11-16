@@ -5,11 +5,11 @@ sub_0801A238:
 	lsls r0, r0, #0x10
 	lsrs r4, r0, #0x10
 	adds r0, r4, #0
-	bl sub_0801A61C
+	bl getMapLayerWidthInPixels
 	lsls r0, r0, #0x10
 	lsrs r6, r0, #0x10
 	adds r0, r4, #0
-	bl sub_0801A638
+	bl getMapLayerHeightInPixels
 	lsls r0, r0, #0x10
 	lsrs r7, r0, #0x10
 	ldr r1, _0801A26C

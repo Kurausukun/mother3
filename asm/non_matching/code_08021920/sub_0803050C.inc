@@ -7,7 +7,7 @@ sub_0803050C:
 	lsrs r0, r0, #0x10
 	lsls r5, r5, #0x10
 	lsrs r5, r5, #0x10
-	bl sub_08036DF4
+	bl getSpriteInfoBank0
 	adds r4, r0, #0
 	bl sub_08002C4C
 	adds r6, r0, #0

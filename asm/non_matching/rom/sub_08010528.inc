@@ -20,7 +20,7 @@ _08010542:
 	lsrs r0, r0, #0x1f
 	cmp r0, #0
 	beq _0801055A
-	bl sub_0801A5EC
+	bl getMapMainLayerWidthInPixels
 	ldr r1, _08010570
 	adds r0, r0, r1
 	ldrh r2, [r4]
@@ -45,7 +45,7 @@ _08010574:
 	lsrs r0, r0, #0x1f
 	cmp r0, #0
 	beq _0801058C
-	bl sub_0801A604
+	bl getMapMainLayerHeightInPixels
 	ldr r1, _08010598
 	adds r0, r0, r1
 	ldrh r2, [r4, #2]

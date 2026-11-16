@@ -16,7 +16,7 @@ sub_0800D0F0:
 	add r4, sp, #4
 	adds r0, r6, #0
 	adds r1, r4, #0
-	bl sub_08036BEC
+	bl getTilePosFromObj
 	movs r0, #0xa8
 	lsls r0, r0, #1
 	bl get_flag
@@ -179,7 +179,7 @@ _0800D24E:
 	bne _0800D280
 	adds r0, r6, #0
 	mov r1, r8
-	bl sub_08036BEC
+	bl getTilePosFromObj
 	ldrh r0, [r7]
 	mov r1, r8
 	ldrh r1, [r1]
@@ -198,7 +198,7 @@ _0800D280:
 	cmp r0, #0
 	blt _0800D2A8
 	adds r4, r0, #0
-	bl sub_0801A5EC
+	bl getMapMainLayerWidthInPixels
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	subs r0, #1
@@ -208,7 +208,7 @@ _0800D280:
 	ldrh r0, [r1]
 	b _0800D2AA
 _0800D2A0:
-	bl sub_0801A5EC
+	bl getMapMainLayerWidthInPixels
 	subs r0, #1
 	b _0800D2AA
 _0800D2A8:
@@ -223,7 +223,7 @@ _0800D2AA:
 	blt _0800D2D6
 	movs r0, #2
 	ldrsh r4, [r5, r0]
-	bl sub_0801A604
+	bl getMapMainLayerHeightInPixels
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	subs r0, #1
@@ -232,7 +232,7 @@ _0800D2AA:
 	ldrh r0, [r5, #2]
 	b _0800D2D8
 _0800D2CE:
-	bl sub_0801A604
+	bl getMapMainLayerHeightInPixels
 	subs r0, #1
 	b _0800D2D8
 _0800D2D6:
@@ -259,7 +259,7 @@ _0800D2D8:
 _0800D2FE:
 	adds r0, r6, #0
 	mov r1, r8
-	bl sub_08036BEC
+	bl getTilePosFromObj
 	ldr r2, [sp, #0x24]
 	ldrb r0, [r2]
 	lsls r0, r0, #0x19
@@ -271,7 +271,7 @@ _0800D2FE:
 	bne _0800D338
 	adds r0, r6, #0
 	mov r1, r8
-	bl sub_08036BEC
+	bl getTilePosFromObj
 	ldrh r0, [r7]
 	mov r1, r8
 	ldrh r1, [r1]
@@ -290,7 +290,7 @@ _0800D338:
 	cmp r0, #0
 	blt _0800D360
 	adds r4, r0, #0
-	bl sub_0801A5EC
+	bl getMapMainLayerWidthInPixels
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	subs r0, #1
@@ -300,7 +300,7 @@ _0800D338:
 	ldrh r0, [r1]
 	b _0800D362
 _0800D358:
-	bl sub_0801A5EC
+	bl getMapMainLayerWidthInPixels
 	subs r0, #1
 	b _0800D362
 _0800D360:
@@ -315,7 +315,7 @@ _0800D362:
 	blt _0800D38E
 	movs r0, #2
 	ldrsh r4, [r5, r0]
-	bl sub_0801A604
+	bl getMapMainLayerHeightInPixels
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	subs r0, #1
@@ -324,7 +324,7 @@ _0800D362:
 	ldrh r0, [r5, #2]
 	b _0800D390
 _0800D386:
-	bl sub_0801A604
+	bl getMapMainLayerHeightInPixels
 	subs r0, #1
 	b _0800D390
 _0800D38E:

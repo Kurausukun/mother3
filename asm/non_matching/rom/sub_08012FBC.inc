@@ -36,7 +36,7 @@ _08012FEC:
 	ldrb r0, [r0]
 	lsls r0, r0, #0x1d
 	lsrs r0, r0, #0x1e
-	bl sub_0801A61C
+	bl getMapLayerWidthInPixels
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x14
 	str r0, [sp, #0x14]
@@ -164,7 +164,7 @@ _08013072:
 	ldr r0, _080131A8
 	mov r2, r8
 	ldr r3, [sp, #0x10]
-	bl sub_08001378
+	bl GetBgLayerTilemap
 	ldr r1, [r6]
 	ldrb r1, [r1]
 	lsls r1, r1, #0x1d

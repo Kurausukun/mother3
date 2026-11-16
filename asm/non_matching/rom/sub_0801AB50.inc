@@ -10,7 +10,7 @@ sub_0801AB50:
 	adds r7, r0, #0
 	mov r4, sp
 	mov r1, sp
-	bl sub_08036BEC
+	bl getTilePosFromObj
 	ldrh r0, [r4, #2]
 	adds r0, #0x10
 	strh r0, [r4, #2]
@@ -133,7 +133,7 @@ _0801AC4E:
 	mov r4, sp
 	adds r0, r7, #0
 	mov r1, sp
-	bl sub_08036BEC
+	bl getTilePosFromObj
 	ldrh r0, [r4, #2]
 	adds r0, #0x10
 	strh r0, [r4, #2]
@@ -175,7 +175,7 @@ _0801AC7C:
 _0801ACA8:
 	adds r0, r7, #0
 	mov r1, sp
-	bl sub_08036BEC
+	bl getTilePosFromObj
 	ldrb r0, [r6]
 	lsls r0, r0, #0x19
 	lsrs r0, r0, #0x1e

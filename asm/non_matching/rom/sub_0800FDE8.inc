@@ -77,7 +77,7 @@ sub_0800FDE8:
 	ldr r0, _0800FF50
 	adds r0, r0, r3
 	ldrh r0, [r0]
-	bl getMapLayerAlphaInfo
+	bl getMapLayersInfo
 	adds r1, r6, #0
 	ldm r0!, {r2, r3, r5}
 	stm r1!, {r2, r3, r5}
@@ -272,11 +272,11 @@ _0800FFDA:
 	strh r3, [r4]
 	strh r3, [r4, #2]
 	adds r0, r7, #0
-	bl sub_0801A61C
+	bl getMapLayerWidthInPixels
 	subs r0, #0xf0
 	strh r0, [r4, #4]
 	adds r0, r7, #0
-	bl sub_0801A638
+	bl getMapLayerHeightInPixels
 	subs r0, #0xa0
 	strh r0, [r4, #6]
 	adds r0, r7, #1

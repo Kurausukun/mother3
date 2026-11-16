@@ -110,7 +110,7 @@ _0803F492:
 	adds r0, r0, r5
 	mov r8, r0
 	ldrh r0, [r0]
-	bl sub_08036D60
+	bl getSpriteGfxBank0
 	str r0, [r5, #0x18]
 	ldr r0, _0803F58C
 	str r0, [r5, #0x1c]
@@ -174,7 +174,7 @@ _0803F492:
 	adds r0, r2, r1
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
-	bl sub_08036DDC
+	bl getSpritePalette
 	b _0803F5A8
 	.align 2, 0
 _0803F588: .4byte 0x0000FFFF
@@ -183,7 +183,7 @@ _0803F590: .4byte 0x0000026B
 _0803F594: .4byte 0x0000FF01
 _0803F598:
 	movs r0, #0
-	bl sub_08036DDC
+	bl getSpritePalette
 	str r0, [r5, #0x20]
 	ldrb r1, [r6, #1]
 	lsls r1, r1, #0x1c

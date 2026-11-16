@@ -97,7 +97,7 @@ _08013ADA:
 	bl sub_08003278
 	b _08013B42
 	.align 2, 0
-_08013B04: .4byte gUnknown_03005314
+_08013B04: .4byte gPaletteBufferIwram
 _08013B08:
 	lsls r3, r2, #0x19
 	lsrs r3, r3, #0x1c
@@ -114,7 +114,7 @@ _08013B08:
 	bl sub_08003314
 	b _08013B42
 	.align 2, 0
-_08013B28: .4byte gUnknown_03005314
+_08013B28: .4byte gPaletteBufferIwram
 _08013B2C:
 	lsls r2, r2, #0x19
 	lsrs r2, r2, #0x1c
@@ -148,5 +148,5 @@ _08013B5A:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08013B68: .4byte gUnknown_03005314
+_08013B68: .4byte gPaletteBufferIwram
 	.syntax divided

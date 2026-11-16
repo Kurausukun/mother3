@@ -19,7 +19,7 @@ sub_080359DC:
 	ldrh r2, [r5, #2]
 	lsls r2, r2, #0x10
 	asrs r2, r2, #0x18
-	bl sub_0801A978
+	bl getMetatileFromMapLayer
 	adds r1, r5, #0
 	adds r1, #0xbd
 	ldrb r1, [r1]

@@ -70,7 +70,7 @@ _08009D50:
 	adds r1, r4, #0
 	adds r2, r6, #0
 _08009D5E:
-	bl sub_08001378
+	bl GetBgLayerTilemap
 	pop {r4, r5, r6}
 	pop {r1}
 	bx r1

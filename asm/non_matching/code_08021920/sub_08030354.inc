@@ -38,7 +38,7 @@ _08030376:
 	adds r0, r0, r3
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
-	bl sub_08036DDC
+	bl getSpritePalette
 	adds r2, r0, #0
 	lsls r0, r6, #2
 	ldr r3, _080303F8
@@ -57,7 +57,7 @@ _08030376:
 	adds r0, r2, #0
 	adds r1, r4, #0
 	movs r2, #0x20
-	bl sub_08016F4C
+	bl copyPalettesToBufferIwram
 	ldr r3, _080303FC
 	adds r0, r3, #0
 	ldrh r5, [r5]

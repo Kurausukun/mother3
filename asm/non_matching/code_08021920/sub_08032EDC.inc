@@ -13,12 +13,12 @@ sub_08032EDC:
 	ands r0, r1
 	strb r0, [r2]
 	movs r0, #0xfe
-	bl sub_08036DF4
+	bl getSpriteInfoBank0
 	ldr r2, _08032F48
 	adds r1, r4, r2
 	str r0, [r1]
 	movs r0, #0xa6
-	bl sub_08036DF4
+	bl getSpriteInfoBank0
 	adds r5, r0, #0
 	bl sub_08002C4C
 	movs r1, #2

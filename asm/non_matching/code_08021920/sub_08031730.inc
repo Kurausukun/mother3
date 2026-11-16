@@ -26,7 +26,7 @@ sub_08031730:
 	bl sub_08036CD0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
-	bl sub_0801A61C
+	bl getMapLayerWidthInPixels
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	add r1, sp, #8
@@ -84,7 +84,7 @@ _080317C6:
 	bl sub_08036CD0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
-	bl sub_0801A638
+	bl getMapLayerHeightInPixels
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	add r2, sp, #8

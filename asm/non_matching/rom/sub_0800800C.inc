@@ -15,7 +15,7 @@ sub_0800800C:
 	movs r1, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_08001378
+	bl GetBgLayerTilemap
 	adds r5, r0, #0
 	movs r0, #0
 	movs r1, #0xe0
@@ -67,7 +67,7 @@ _0800804E:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08008090: .4byte gUnknown_09B0CA54
+_08008090: .4byte gBattleSwirlGfx
 _08008094: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _08008098: .4byte 0xFFFFD000
 	.syntax divided

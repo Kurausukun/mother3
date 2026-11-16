@@ -22,6 +22,6 @@ sub_0803D0A8:
 	bx r0
 	.align 2, 0
 _0803D0D4: .4byte gUnknown_020050C0
-_0803D0D8: .4byte gUnknown_03005314
+_0803D0D8: .4byte gPaletteBufferIwram
 _0803D0DC: .4byte gUnknown_0200F088
 	.syntax divided

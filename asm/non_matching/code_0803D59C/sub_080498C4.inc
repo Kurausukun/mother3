@@ -9,7 +9,7 @@ sub_080498C4:
 	lsrs r3, r3, #0x10
 	ldr r0, _080498E0
 	movs r1, #1
-	bl sub_08001378
+	bl GetBgLayerTilemap
 	pop {r1}
 	bx r1
 	.align 2, 0

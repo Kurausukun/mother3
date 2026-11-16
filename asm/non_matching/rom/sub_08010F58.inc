@@ -24,12 +24,12 @@ sub_08010F58:
 	lsls r5, r5, #0x10
 	lsrs r5, r5, #0x10
 	str r5, [sp, #0xc]
-	bl sub_0801A61C
+	bl getMapLayerWidthInPixels
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x14
 	str r0, [sp, #0x18]
 	ldr r0, [sp, #4]
-	bl sub_0801A638
+	bl getMapLayerHeightInPixels
 	lsls r0, r0, #0x10
 	lsrs r1, r0, #0x14
 	ldr r2, _08010FC4
@@ -88,7 +88,7 @@ _08010FF8:
 	lsls r6, r6, #0x10
 	asrs r2, r6, #0x10
 	ldr r0, [sp, #4]
-	bl sub_0801A904
+	bl getMapCellFromMapLayer
 	str r0, [sp, #0x10]
 	ldr r5, _080110B4
 	ldr r4, [sp, #4]
@@ -99,7 +99,7 @@ _08010FF8:
 	adds r1, r4, #0
 	mov r2, r8
 	adds r3, r7, #0
-	bl sub_08001378
+	bl GetBgLayerTilemap
 	mov sb, r0
 	adds r3, r7, #1
 	lsls r3, r3, #0x10
@@ -107,7 +107,7 @@ _08010FF8:
 	adds r0, r5, #0
 	adds r1, r4, #0
 	mov r2, r8
-	bl sub_08001378
+	bl GetBgLayerTilemap
 	mov r8, r0
 	movs r1, #0
 	str r1, [sp, #0x14]
@@ -138,7 +138,7 @@ _08011058:
 	ldr r0, [sp, #4]
 	ldr r3, [sp, #0x20]
 	asrs r2, r3, #0x10
-	bl sub_0801A904
+	bl getMapCellFromMapLayer
 	str r0, [sp, #0x10]
 _08011072:
 	ldr r4, [sp, #0x10]

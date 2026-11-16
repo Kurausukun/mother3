@@ -64,7 +64,7 @@ _0800AA38:
 	ldr r1, [sp, #8]
 	mov r2, sb
 	mov r3, r8
-	bl sub_08001378
+	bl GetBgLayerTilemap
 	adds r5, r0, #0
 	movs r4, #0
 	movs r0, #1

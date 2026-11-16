@@ -146,7 +146,7 @@ _08058F4A:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08058FA0: .4byte gUnknown_09C5FD2C
+_08058FA0: .4byte gCreditsGfx
 _08058FA4: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _08058FA8: .4byte 0x00002C46
 	.syntax divided

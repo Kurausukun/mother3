@@ -79,7 +79,7 @@ _08018A0A:
 	cmp r0, #0
 	bge _08018A44
 	adds r0, r5, #0
-	bl sub_0801A61C
+	bl getMapLayerWidthInPixels
 	adds r4, r0, #0
 	lsls r4, r4, #0x10
 	lsrs r4, r4, #0x10
@@ -101,7 +101,7 @@ _08018A44:
 	cmp r0, #0
 	bge _08018A72
 	adds r0, r5, #0
-	bl sub_0801A638
+	bl getMapLayerHeightInPixels
 	adds r4, r0, #0
 	lsls r4, r4, #0x10
 	lsrs r4, r4, #0x10
@@ -153,7 +153,7 @@ _08018AA4:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08018AB4: .4byte gUnknown_02005C1C
+_08018AB4: .4byte gGame+0x1C @ gGame.mapLayersInfo.dims
 _08018AB8: .4byte 0x00005894
 _08018ABC: .4byte gGame
 _08018AC0: .4byte 0x000067AC

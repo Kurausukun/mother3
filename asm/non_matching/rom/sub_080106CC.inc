@@ -9,7 +9,7 @@ sub_080106CC:
 	mov r0, sp
 	strh r1, [r0]
 	adds r0, r7, #0
-	bl getMapGraphicsInfo
+	bl getMapGfxPalInfo
 	adds r6, r0, #0
 	mov r0, sp
 	ldrh r0, [r0]
@@ -40,7 +40,7 @@ _080106F6:
 	bls _080106F6
 	b _08010738
 	.align 2, 0
-_08010720: .4byte gUnknown_02005C2C
+_08010720: .4byte gGame+0x2c @ gGame.mapGraphicsPtr
 _08010724:
 	ldr r2, _08010770
 	ldr r0, _08010774
@@ -60,7 +60,7 @@ _08010738:
 	movs r2, #0xc0
 	lsls r2, r2, #1
 	movs r1, #0
-	bl sub_08016F4C
+	bl copyPalettesToBufferIwram
 	movs r0, #0
 	movs r1, #0xc
 	bl sub_0803B688
@@ -112,11 +112,11 @@ _080107A8:
 	adds r0, r5, r0
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
-	bl getMapTilemapData
+	bl getCompressedMapCellData
 	adds r1, r6, #0
 	bl LZ77UnCompWram
 	adds r0, r5, #0
-	bl sub_0801A650
+	bl getMapLayerTotalChunks
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #7
 	adds r6, r6, r0
@@ -133,7 +133,7 @@ _080107CE:
 	adds r0, r0, r3
 	str r0, [r4]
 	adds r0, r7, #0
-	bl getMapTileData
+	bl getCompressedMapMetatileData
 	ldr r1, [r4]
 	bl LZ77UnCompWram
 	add sp, #4

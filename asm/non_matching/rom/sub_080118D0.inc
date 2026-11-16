@@ -26,7 +26,7 @@ sub_080118D0:
 	bl sub_0801AD84
 	adds r7, r0, #0
 	adds r0, r4, #0
-	bl sub_0801AE18
+	bl mapCellGetMinitileIndexOrder
 	str r0, [sp, #0xc]
 	ldr r0, [r4]
 	lsls r1, r0, #0x11
@@ -141,28 +141,28 @@ _080119DA:
 	lsrs r0, r0, #0x1c
 	lsls r1, r1, #0x1a
 	lsrs r1, r1, #0x1a
-	bl sub_0801AD4C
+	bl getMetatileFromTileset
 	adds r7, r0, #0
 	movs r6, #0
 _080119EC:
 	adds r0, r4, #0
 	adds r1, r7, #0
 	adds r2, r6, #0
-	bl sub_0801ADA0
+	bl getMinitileFromMetatile
 	adds r2, r0, #0
 	cmp r2, #0
 	beq _08011A06
 	lsls r0, r6, #1
 	add r0, r8
 	adds r1, r4, #0
-	bl sub_08011A40
+	bl mapCellToBgScreenEntry
 _08011A06:
 	adds r2, r6, #2
 	lsls r2, r2, #0x10
 	lsrs r2, r2, #0x10
 	adds r0, r4, #0
 	adds r1, r7, #0
-	bl sub_0801ADA0
+	bl getMinitileFromMetatile
 	adds r2, r0, #0
 	cmp r2, #0
 	beq _08011A26
@@ -170,7 +170,7 @@ _08011A06:
 	ldr r1, [sp, #0x10]
 	adds r0, r1, r0
 	adds r1, r4, #0
-	bl sub_08011A40
+	bl mapCellToBgScreenEntry
 _08011A26:
 	adds r0, r6, #1
 	lsls r0, r0, #0x10

@@ -21,6 +21,6 @@ sub_08015278:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080152AC: .4byte gUnknown_03005314
+_080152AC: .4byte gPaletteBufferIwram
 _080152B0: .4byte gUnknown_02000008
 	.syntax divided

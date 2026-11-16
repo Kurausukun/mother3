@@ -1,5 +1,5 @@
 	.syntax unified
-sub_08036E0C:
+getSpriteInfo:
 	push {r4, r5, r6, r7, lr}
 	lsls r0, r0, #0x10
 	lsrs r5, r0, #0x10
@@ -18,7 +18,7 @@ sub_08036E0C:
 	beq _08036E3E
 	b _08036E64
 	.align 2, 0
-_08036E30: .4byte gUnknown_09A442A4
+_08036E30: .4byte gSpriteInfoBank0
 _08036E34:
 	cmp r6, #2
 	beq _08036E4C
@@ -32,7 +32,7 @@ _08036E42:
 	ldr r0, _08036E48
 	b _08036E4E
 	.align 2, 0
-_08036E48: .4byte gUnknown_09AE0638
+_08036E48: .4byte gSpriteInfoBank1
 _08036E4C:
 	ldr r0, _08036E58
 _08036E4E:
@@ -40,7 +40,7 @@ _08036E4E:
 	bl Blob_GetEntry
 	b _08036E64
 	.align 2, 0
-_08036E58: .4byte gUnknown_09AEE4C4
+_08036E58: .4byte gSpriteInfoBank2
 _08036E5C:
 	ldr r0, _08036E6C
 	adds r1, r5, #0
@@ -50,5 +50,5 @@ _08036E64:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08036E6C: .4byte gUnknown_09AF1ED0
+_08036E6C: .4byte gSpriteInfoBank3
 	.syntax divided

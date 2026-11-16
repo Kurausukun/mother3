@@ -56,7 +56,7 @@ _08010A94:
 	cmp r0, #3
 	bne _08010AD0
 	adds r0, r5, #0
-	bl sub_0801A638
+	bl getMapLayerHeightInPixels
 	lsls r0, r0, #0x10
 	movs r1, #0x80
 	lsls r1, r1, #0x11
@@ -102,7 +102,7 @@ _08010AF4:
 	cmp r0, #3
 	bne _08010B30
 	adds r0, r5, #0
-	bl sub_0801A638
+	bl getMapLayerHeightInPixels
 	lsls r0, r0, #0x10
 	movs r1, #0x80
 	lsls r1, r1, #0x11
@@ -152,7 +152,7 @@ _08010B5E:
 	cmp r0, #3
 	bne _08010B94
 	adds r0, r5, #0
-	bl sub_0801A61C
+	bl getMapLayerWidthInPixels
 	lsls r0, r0, #0x10
 	movs r1, #0x80
 	lsls r1, r1, #0x11
@@ -196,7 +196,7 @@ _08010BBC:
 	cmp r0, #3
 	bne _08010BF8
 	adds r0, r5, #0
-	bl sub_0801A61C
+	bl getMapLayerWidthInPixels
 	lsls r0, r0, #0x10
 	movs r1, #0x80
 	lsls r1, r1, #0x11

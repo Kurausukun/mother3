@@ -350,5 +350,5 @@ _0802933C: .4byte 0x0000FFFF
 _08029340: .4byte gGame
 _08029344: .4byte 0x0000829B
 _08029348: .4byte 0x000082AC
-_0802934C: .4byte gUnknown_0200C3C8
+_0802934C: .4byte gGame+0x67C8 @ gGame.objects
 	.syntax divided

@@ -361,7 +361,7 @@ _080076C4: .4byte 0xFFFFD538
 _080076C8: .4byte 0xFFFFDE44
 _080076CC: .4byte 0x0000CA40
 _080076D0: .4byte 0x0000CA41
-_080076D4: .4byte gUnknown_03005314
+_080076D4: .4byte gPaletteBufferIwram
 _080076D8: .4byte 0x00009488
 _080076DC: .4byte gEncounter
 _080076E0:
@@ -379,7 +379,7 @@ _080076E0:
 	bl CpuMemFill
 	b _08007720
 	.align 2, 0
-_08007700: .4byte gUnknown_03005314
+_08007700: .4byte gPaletteBufferIwram
 _08007704: .4byte gUnknown_0200F088
 _08007708:
 	ldr r4, _0800774C
@@ -416,7 +416,7 @@ _0800773C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0800774C: .4byte gUnknown_03005314
+_0800774C: .4byte gPaletteBufferIwram
 _08007750: .4byte gUnknown_0200F088
 _08007754: .4byte gGame
 _08007758: .4byte 0x00008494

@@ -61,7 +61,7 @@ _0800623E:
 	adds r0, r4, r1
 	ldr r2, _08006284
 	adds r1, r4, r2
-	bl sub_0800724C
+	bl GfxBufferWriteBgToVram
 	ldrb r0, [r5]
 	cmp r0, #5
 	bgt _0800628C
@@ -108,7 +108,7 @@ _080062AA:
 _080062BC: .4byte gUnknown_0201B7A0
 _080062C0: .4byte gUnknown_02000000
 _080062C4: .4byte gUnknown_02000004
-_080062C8: .4byte gUnknown_03005314
+_080062C8: .4byte gPaletteBufferIwram
 _080062CC:
 	ldr r1, _080062E4
 	ldr r0, _080062E8
@@ -125,6 +125,6 @@ _080062DE:
 	bx r0
 	.align 2, 0
 _080062E4: .4byte 0x040000D4
-_080062E8: .4byte gUnknown_03005314
+_080062E8: .4byte gPaletteBufferIwram
 _080062EC: .4byte 0x84000100
 	.syntax divided

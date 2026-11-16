@@ -41,13 +41,13 @@ sub_08011BA4:
 	adds r1, r4, #0
 	adds r2, r5, #0
 	adds r3, r6, #0
-	bl sub_08001378
+	bl GetBgLayerTilemap
 	adds r5, r0, #0
 	mov r0, sl
 	adds r1, r4, #0
 	mov r2, r8
 	mov r3, sb
-	bl sub_08001378
+	bl GetBgLayerTilemap
 	adds r3, r0, #0
 	ldr r0, _08011C20
 	ldrh r1, [r0, #2]

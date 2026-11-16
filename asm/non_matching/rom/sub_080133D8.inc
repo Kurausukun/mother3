@@ -66,7 +66,7 @@ _0801344E:
 	lsls r2, r3, #0x10
 	asrs r2, r2, #0x10
 	mov r0, sl
-	bl sub_0801A904
+	bl getMapCellFromMapLayer
 	adds r4, r0, #0
 	ldr r7, [sp, #0x18]
 	movs r0, #0
@@ -164,7 +164,7 @@ _0801351C:
 	ldr r0, _08013574
 	ldr r5, [sp, #0x2c]
 	lsrs r1, r5, #0x10
-	bl sub_08001378
+	bl GetBgLayerTilemap
 	adds r1, r0, #0
 _08013528:
 	adds r0, r1, #0

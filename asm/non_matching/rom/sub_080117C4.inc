@@ -15,10 +15,10 @@ sub_080117C4:
 	lsrs r0, r0, #0x1c
 	lsls r1, r1, #0x1a
 	lsrs r1, r1, #0x1a
-	bl sub_0801AD4C
+	bl getMetatileFromTileset
 	str r0, [sp]
 	adds r0, r4, #0
-	bl sub_0801AE18
+	bl mapCellGetMinitileIndexOrder
 	str r0, [sp, #8]
 	ldr r0, [r4]
 	movs r1, #0xf0

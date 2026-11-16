@@ -21,7 +21,7 @@ sub_08011F74:
 	adds r1, r5, #0
 	movs r2, #0
 	movs r3, #0
-	bl sub_08001378
+	bl GetBgLayerTilemap
 	adds r5, r0, #0
 	ldr r1, _08012020
 	adds r0, r4, r1
@@ -82,7 +82,7 @@ _08011FC8:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08012018: .4byte gUnknown_09B18308
+_08012018: .4byte gTownMapGfx
 _0801201C: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _08012020: .4byte 0x0000361C
 _08012024: .4byte 0x0000361E
