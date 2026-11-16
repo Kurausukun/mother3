@@ -67,7 +67,7 @@ _08040116:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08040158: .4byte gUnknown_09B0CA54
+_08040158: .4byte gBattleSwirlGfx
 _0804015C: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _08040160: .4byte 0xFFFFD000
 	.syntax divided

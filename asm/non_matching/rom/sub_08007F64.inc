@@ -37,7 +37,7 @@ sub_08007F64:
 _08007FB0: .4byte gSomeBlend
 _08007FB4: .4byte 0x000121C0
 _08007FB8: .4byte gUnknown_080C2A90
-_08007FBC: .4byte gUnknown_09B0CA54
+_08007FBC: .4byte gBattleSwirlGfx
 _08007FC0: .4byte 0x0600F000
 _08007FC4: .4byte 0x000121C1
 	.syntax divided

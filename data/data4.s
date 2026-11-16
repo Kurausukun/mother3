@@ -10,45 +10,45 @@ gUnknown_09433D7C:
 gUnknown_09436C68:
     .incbin "baserom.gba", 0x01436C68, 0x177c
 
-    .global gUnknown_094383E4
-gUnknown_094383E4:
+    .global gSpriteGfxBank0
+gSpriteGfxBank0:
     .incbin "baserom.gba", 0x014383E4, 0x51384c
 
-    .global gUnknown_0994BC30
-gUnknown_0994BC30:
+    .global gSpriteGfxBank1
+gSpriteGfxBank1:
     .incbin "baserom.gba", 0x0194BC30, 0xb5688
 
-    .global gUnknown_09A012B8
-gUnknown_09A012B8:
+    .global gSpriteGfxBank2
+gSpriteGfxBank2:
     .incbin "baserom.gba", 0x01A012B8, 0x357e8
 
-    .global gUnknown_09A36AA0
-gUnknown_09A36AA0:
+    .global gSpriteGfxBank3
+gSpriteGfxBank3:
     .incbin "baserom.gba", 0x01A36AA0, 0xaaa8
 
-gUnknown_09A41548::
+gSpritePalettes::
     .incbin "baserom.gba", 0x01A41548, 0x2d5c
 
-gUnknown_09A442A4::
+gSpriteInfoBank0::
     .incbin "baserom.gba", 0x01A442A4, 0x9c394
 
-gUnknown_09AE0638::
+gSpriteInfoBank1::
     .incbin "baserom.gba", 0x01AE0638, 0xde8c
 
-gUnknown_09AEE4C4::
+gSpriteInfoBank2::
     .incbin "baserom.gba", 0x01AEE4C4, 0x3a0c
 
-gUnknown_09AF1ED0::
+gSpriteInfoBank3::
     .incbin "baserom.gba", 0x01AF1ED0, 0x18c0
 
     .global gMiscGfx
 gMiscGfx:
     .incbin "baserom.gba", 0x01AF3790, 0x192c4
 
-gUnknown_09B0CA54::
+gBattleSwirlGfx::
     .incbin "baserom.gba", 0x01B0CA54, 0xb8b4
 
-gUnknown_09B18308::
+gTownMapGfx::
     .incbin "baserom.gba", 0x01B18308, 0x77954
 
 gUnknown_09B8FC5C::
@@ -351,41 +351,41 @@ gUnknown_09BCDD86::
 gTitleScreenGfx:
     .incbin "baserom.gba", 0x01BCDD8C, 0x91f40
 
-gUnknown_09C5FCCC::
-    .4byte gUnknown_080C76A0 + 8
-    .4byte gUnknown_080C76A0 + 104
-    .4byte gUnknown_080C76A0 + 260
-    .4byte gUnknown_080C76A0 + 332
-    .4byte gUnknown_080C76A0 + 380
-    .4byte gUnknown_080C76A0 + 452
-    .4byte gUnknown_080C76A0 + 500
-    .4byte gUnknown_080C76A0 + 536
-    .4byte gUnknown_080C76A0 + 560
-    .4byte gUnknown_080C76A0 + 632
-    .4byte gUnknown_080C76A0 + 680
-    .4byte gUnknown_080C76A0 + 752
-    .4byte gUnknown_080C76A0 + 776
-    .4byte gUnknown_080C76A0 + 848
-    .4byte gUnknown_080C76A0 + 932
-    .4byte gUnknown_080C76A0 + 1016
-    .4byte gUnknown_080C76A0 + 1064
-    .4byte gUnknown_080C76A0 + 1148
-    .4byte gUnknown_080C76A0 + 1256
-    .4byte gUnknown_080C76A0 + 1400
-    .4byte gUnknown_080C76A0 + 1436
-    .4byte gUnknown_080C76A0 + 1592
-    .4byte gUnknown_080C76A0 + 1652
-    .4byte gUnknown_080C76A0 + 1724
+gCreditsSpritePlacementTable::
+    .4byte gCreditsSpritePlacementData + 8
+    .4byte gCreditsSpritePlacementData + 104
+    .4byte gCreditsSpritePlacementData + 260
+    .4byte gCreditsSpritePlacementData + 332
+    .4byte gCreditsSpritePlacementData + 380
+    .4byte gCreditsSpritePlacementData + 452
+    .4byte gCreditsSpritePlacementData + 500
+    .4byte gCreditsSpritePlacementData + 536
+    .4byte gCreditsSpritePlacementData + 560
+    .4byte gCreditsSpritePlacementData + 632
+    .4byte gCreditsSpritePlacementData + 680
+    .4byte gCreditsSpritePlacementData + 752
+    .4byte gCreditsSpritePlacementData + 776
+    .4byte gCreditsSpritePlacementData + 848
+    .4byte gCreditsSpritePlacementData + 932
+    .4byte gCreditsSpritePlacementData + 1016
+    .4byte gCreditsSpritePlacementData + 1064
+    .4byte gCreditsSpritePlacementData + 1148
+    .4byte gCreditsSpritePlacementData + 1256
+    .4byte gCreditsSpritePlacementData + 1400
+    .4byte gCreditsSpritePlacementData + 1436
+    .4byte gCreditsSpritePlacementData + 1592
+    .4byte gCreditsSpritePlacementData + 1652
+    .4byte gCreditsSpritePlacementData + 1724
 
-    .global gUnknown_09C5FD2C
-gUnknown_09C5FD2C:
+    .global gCreditsGfx
+gCreditsGfx:
     .incbin "baserom.gba", 0x01C5FD2C, 0x2e16c
 
-gUnknown_09C8DE98::
+gHealthSafetyScreenGfx::
     .incbin "baserom.gba", 0x01C8DE98, 0x14f8
 
-    .global gUnknown_09C8F390
-gUnknown_09C8F390:
+    .global gSoundPlayerTrackTitles
+gSoundPlayerTrackTitles:
     .incbin "baserom.gba", 0x01C8F390, 0x1550
 
 gUnknown_09C908E0::

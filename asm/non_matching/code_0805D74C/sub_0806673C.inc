@@ -451,7 +451,7 @@ _08066A14:
 	.align 2, 0
 _08066B1C: .4byte vt_09F7E538
 _08066B20: .4byte 0x000004D4
-_08066B24: .4byte gUnknown_08CE39F8
+_08066B24: .4byte gFontGfxMain
 _08066B28: .4byte _vt.11ResPtrSized
 _08066B2C: .4byte vt_09F7E458
 _08066B30: .4byte 0x0000043C

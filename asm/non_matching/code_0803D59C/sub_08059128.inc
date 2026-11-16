@@ -73,6 +73,6 @@ _08059172:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080591B4: .4byte gUnknown_09C5FD2C
+_080591B4: .4byte gCreditsGfx
 _080591B8: .4byte gUnknown_020192BC
 	.syntax divided

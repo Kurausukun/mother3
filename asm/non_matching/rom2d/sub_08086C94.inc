@@ -43,7 +43,7 @@ _08086CC0:
 	b _08086D06
 	.align 2, 0
 _08086CF0: .4byte gSoundPlayerTable
-_08086CF4: .4byte gUnknown_09C8F390
+_08086CF4: .4byte gSoundPlayerTrackTitles
 _08086CF8: .4byte _vt.11ResPtrSized
 _08086CFC:
 	ldr r1, _08086D10

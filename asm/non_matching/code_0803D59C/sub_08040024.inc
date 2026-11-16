@@ -40,7 +40,7 @@ sub_08040024:
 _08040078: .4byte gSomeBlend
 _0804007C: .4byte 0x0000C5C1
 _08040080: .4byte gUnknown_080C714C
-_08040084: .4byte gUnknown_09B0CA54
+_08040084: .4byte gBattleSwirlGfx
 _08040088: .4byte 0x06007000
 _0804008C: .4byte 0x0000C5C2
 	.syntax divided

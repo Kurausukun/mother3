@@ -35,6 +35,6 @@ sub_08011EC0:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08011F10: .4byte gUnknown_09B18308
+_08011F10: .4byte gTownMapGfx
 _08011F14: .4byte 0x06008000
 	.syntax divided

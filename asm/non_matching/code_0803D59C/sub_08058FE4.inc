@@ -8,7 +8,7 @@ sub_08058FE4:
 	cmp r0, #0xc
 	beq _08059044
 	movs r0, #0
-	bl sub_08036DDC
+	bl getSpritePalette
 	adds r1, r0, #0
 	ldr r0, _08059008
 	movs r2, #0x10
@@ -39,7 +39,7 @@ _0805900C:
 	bl CpuCopyPaletteToGfxBuffer
 	b _08059072
 	.align 2, 0
-_0805903C: .4byte gUnknown_09C5FD2C
+_0805903C: .4byte gCreditsGfx
 _08059040: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _08059044:
 	ldr r4, _08059084
@@ -73,7 +73,7 @@ _0805907E:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08059084: .4byte gUnknown_09C5FD2C
+_08059084: .4byte gCreditsGfx
 _08059088: .4byte gSomeBlend+0x50 @ gSomeBlend.gfx
 _0805908C: .4byte gSomeBlend
 _08059090: .4byte 0x00002750

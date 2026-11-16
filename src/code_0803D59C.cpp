@@ -377,9 +377,9 @@ extern const IrqTable gUnknown_080C7628;
 extern const IrqTable gUnknown_080C7DB0;
 extern const IrqTable gUnknown_080C5FA0;
 extern u16 gUnknown_03004B00;
-extern u8 gUnknown_09C5FD2C;
+extern u8 gCreditsGfx;
 extern u8 gUnknown_02015DC0;
-extern const u8 gUnknown_09C8DE98;  // Some sort of "archive" with sprites, palettes, etc.
+extern const u8 gHealthSafetyScreenGfx;
 extern u8 gMenuTextPalette;
 extern const u8 gTitleScreenGfx;
 extern MonsterData gMonsterData[];
@@ -2922,8 +2922,8 @@ extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08058FAC.inc", void sub_
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_08058FE4.inc", void sub_08058FE4());
 
 extern "C" void sub_08059094() {
-    LZ77UnCompVram(Blob_GetEntry(&gUnknown_09C5FD2C, 0x4C), (void*)0x06008000);
-    void* ptr = Blob_GetEntry(&gUnknown_09C5FD2C, 0x4D);
+    LZ77UnCompVram(Blob_GetEntry(&gCreditsGfx, 0x4C), (void*)0x06008000);
+    void* ptr = Blob_GetEntry(&gCreditsGfx, 0x4D);
     CpuCopyPaletteToGfxBuffer(&gSomeBlend.gfx, ptr, 0xE, 0x40);
     CpuSmartSet(ptr, &gSomeBlend._4294, 0x40);
 }
@@ -3035,12 +3035,12 @@ extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805A508.inc", void sub_
 extern "C" ASM_FUNC("asm/non_matching/code_0803D59C/sub_0805A520.inc", void sub_0805A520());
 
 extern "C" void sub_0805A568(void) {
-    LZ77UnCompVram(Blob_GetEntry(&gUnknown_09C8DE98, 0), (void*)(VRAM + 0x8000));
-    LZ77UnCompVram(Blob_GetEntry(&gUnknown_09C8DE98, 2), (void*)VRAM);
-    LZ77UnCompVram(Blob_GetEntry(&gUnknown_09C8DE98, 3), (void*)(VRAM + 0x10000));
-    gSomeBlend._2CB0 = Blob_GetEntry(&gUnknown_09C8DE98, 4);
+    LZ77UnCompVram(Blob_GetEntry(&gHealthSafetyScreenGfx, 0), (void*)(VRAM + 0x8000));
+    LZ77UnCompVram(Blob_GetEntry(&gHealthSafetyScreenGfx, 2), (void*)VRAM);
+    LZ77UnCompVram(Blob_GetEntry(&gHealthSafetyScreenGfx, 3), (void*)(VRAM + 0x10000));
+    gSomeBlend._2CB0 = Blob_GetEntry(&gHealthSafetyScreenGfx, 4);
 
-    void* temp_r0_2 = Blob_GetEntry(&gUnknown_09C8DE98, 1);
+    void* temp_r0_2 = Blob_GetEntry(&gHealthSafetyScreenGfx, 1);
     CpuCopyPaletteToGfxBuffer(&gSomeBlend.gfx, temp_r0_2, 0, 0x20);
     CpuCopyPaletteToGfxBuffer(&gSomeBlend.gfx, temp_r0_2, 0x10, 0x20);
     Dma3Copy((void*)&gSomeBlend.gfx.palettes, &gSomeBlend._2cb4, PLTT_SIZE);

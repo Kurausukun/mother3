@@ -114,7 +114,7 @@ sub_0807D0EC:
 	bx r1
 	.align 2, 0
 _0807D1E4: .4byte vt_09F82648
-_0807D1E8: .4byte gUnknown_08D0B010
+_0807D1E8: .4byte gFontGfxSmall
 _0807D1EC: .4byte _vt.11ResPtrSized
 _0807D1F0: .4byte vt_09F826C8
 _0807D1F4: .4byte gUnknown_020021B8

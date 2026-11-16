@@ -152,7 +152,7 @@ sub_08066584:
 	bx r1
 	.align 2, 0
 _080666DC: .4byte vt_09F7E3E8
-_080666E0: .4byte gUnknown_08CE39F8
+_080666E0: .4byte gFontGfxMain
 _080666E4: .4byte _vt.11ResPtrSized
 _080666E8: .4byte vt_09F7E458
 _080666EC: .4byte 0x00000289

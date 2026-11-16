@@ -294,7 +294,7 @@ _08083EAC:
 	.align 2, 0
 _08083FB4: .4byte vt_09F83DB0
 _08083FB8: .4byte _vt.11ResPtrSized
-_08083FBC: .4byte gUnknown_08CE39F8
+_08083FBC: .4byte gFontGfxMain
 _08083FC0: .4byte vt_09F83E40
 _08083FC4: .4byte 0x00000289
 _08083FC8: .4byte _vt.5Event
