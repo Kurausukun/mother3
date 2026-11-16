@@ -21,6 +21,15 @@ extern DebugInitFunc gDebugMenuInitTable[];
 extern u16 gScriptLogic[];
 extern char _binary_build_mother3_assets_mainscript_bin_start;
 extern const char gTextUnkTable;
+extern u8 gSpriteGfxBank0;
+extern u8 gSpriteGfxBank1;
+extern u8 gSpriteGfxBank2;
+extern u8 gSpriteGfxBank3;
+extern u8 gSpritePalettes;
+extern u8 gSpriteInfoBank0;
+extern u8 gSpriteInfoBank1;
+extern u8 gSpriteInfoBank2;
+extern u8 gSpriteInfoBank3;
 extern u8 gMiscGfx;
 
 extern "C" void sub_080012BC(void*, s32, s32, s32);
@@ -1385,12 +1394,55 @@ extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08036CE0.inc", void sub_
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08036D00.inc", void sub_08036D00());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08036D18.inc", void sub_08036D18());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08036D3C.inc", struct C2Struct* sub_08036D3C(u16));
-extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08036D60.inc", void sub_08036D60());
-extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08036D78.inc", void sub_08036D78());
-extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08036DDC.inc", void sub_08036DDC());
-extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08036DF4.inc", void sub_08036DF4());
-extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08036E0C.inc", void sub_08036E0C());
-extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08036E70.inc", void sub_08036E70());
+
+extern "C" const void* getSpriteGfxBank0(u16 index) {
+    return Blob_GetEntry(&gSpriteGfxBank0, index);
+}
+
+extern "C" NONMATCH("asm/non_matching/code_08021920/sub_08036D78.inc", void* getSpriteGfx(u16 index, u16 bank)) {
+    Blob_GetEntry(&gSpriteGfxBank0, index);
+    
+    switch (bank) {
+    case 0:
+        return Blob_GetEntry(&gSpriteGfxBank0, index);
+    case 1:
+        return Blob_GetEntry(&gSpriteGfxBank1, index);
+    case 2:
+        return Blob_GetEntry(&gSpriteGfxBank2, index);
+    case 3:
+        return Blob_GetEntry(&gSpriteGfxBank3, index);
+    }
+}
+END_NONMATCH;
+
+extern "C" const void* getSpritePalette(u16 index) {
+    return Blob_GetEntry(&gSpritePalettes, index);
+}
+
+extern "C" const void* getSpriteInfoBank0(u16 index) {
+    return Blob_GetEntry(&gSpriteInfoBank0, index);
+}
+
+extern "C" NONMATCH("asm/non_matching/code_08021920/sub_08036E0C.inc", void* getSpriteInfo(u16 index, u16 bank)) {
+    Blob_GetEntry(&gSpriteInfoBank0, index);
+    
+    switch (bank) {
+    case 0:
+        return Blob_GetEntry(&gSpriteInfoBank0, index);
+    case 1:
+        return Blob_GetEntry(&gSpriteInfoBank1, index);
+    case 2:
+        return Blob_GetEntry(&gSpriteInfoBank2, index);
+    case 3:
+        return Blob_GetEntry(&gSpriteInfoBank3, index);
+    }
+}
+END_NONMATCH;
+
+extern "C" void* sub_08036E70(u16 arg0) {
+    return (void*)((u32)getSpriteGfxBank0(0x3E8) + (arg0 * 0x120));
+}
+
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08036E90.inc", void sub_08036E90());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08036EB8.inc", void sub_08036EB8());
 extern "C" ASM_FUNC("asm/non_matching/code_08021920/sub_08037020.inc", void sub_08037020());

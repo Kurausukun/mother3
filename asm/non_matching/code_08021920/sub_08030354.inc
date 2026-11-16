@@ -38,7 +38,7 @@ _08030376:
 	adds r0, r0, r3
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
-	bl sub_08036DDC
+	bl getSpritePalette
 	adds r2, r0, #0
 	lsls r0, r6, #2
 	ldr r3, _080303F8

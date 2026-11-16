@@ -11,7 +11,7 @@ sub_0802781C:
 	movs r1, #0xc
 	bl sub_0803B688
 	movs r0, #0
-	bl sub_08036DDC
+	bl getSpritePalette
 	movs r1, #0x10
 	movs r2, #0xe0
 	bl copyPalettesToBufferIwram

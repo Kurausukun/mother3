@@ -82,7 +82,7 @@ _08030BF2:
 	mov sl, r1
 	adds r5, r0, r1
 	ldrh r0, [r5, #0x2c]
-	bl sub_08036DF4
+	bl getSpriteInfoBank0
 	adds r4, r0, #0
 	bl sub_08002C4C
 	adds r7, r0, #0

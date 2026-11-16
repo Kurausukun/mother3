@@ -2,13 +2,13 @@
 sub_08058E04:
 	push {lr}
 	movs r0, #0xa6
-	bl sub_08036D60
+	bl getSpriteGfxBank0
 	ldr r1, _08058E2C
 	movs r2, #0x80
 	lsls r2, r2, #3
 	bl CpuSmartSet
 	movs r0, #0
-	bl sub_08036DDC
+	bl getSpritePalette
 	adds r1, r0, #0
 	ldr r0, _08058E30
 	movs r2, #0x10

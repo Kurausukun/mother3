@@ -105,7 +105,7 @@ _0803F934:
 	mov r1, ip
 	strb r1, [r0]
 	ldrh r0, [r6]
-	bl sub_08036D60
+	bl getSpriteGfxBank0
 	str r0, [r7, #0x18]
 	ldr r0, _0803FA84
 	str r0, [r7, #0x1c]
@@ -176,7 +176,7 @@ _0803F934:
 	strb r0, [r2]
 _0803FA5E:
 	movs r0, #0
-	bl sub_08036DDC
+	bl getSpritePalette
 	adds r1, r0, #0
 	ldr r2, _0803FA88
 	adds r0, r7, r2

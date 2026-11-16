@@ -3,13 +3,13 @@ sub_0803F3B0:
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	movs r0, #0xfe
-	bl sub_08036DF4
+	bl getSpriteInfoBank0
 	ldr r4, _0803F414
 	ldr r2, _0803F418
 	adds r1, r4, r2
 	str r0, [r1]
 	movs r0, #0xa6
-	bl sub_08036DF4
+	bl getSpriteInfoBank0
 	adds r5, r0, #0
 	bl sub_08002C4C
 	movs r1, #2

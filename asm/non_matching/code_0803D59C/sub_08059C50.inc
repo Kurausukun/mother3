@@ -63,7 +63,7 @@ _08059CCA:
 	movs r0, #0
 	strb r0, [r1]
 	ldrh r0, [r4, #0x3e]
-	bl sub_08036D60
+	bl getSpriteGfxBank0
 	str r0, [r4, #0xc]
 	str r7, [r4, #0x10]
 	adds r0, r4, #0

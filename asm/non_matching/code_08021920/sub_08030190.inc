@@ -109,7 +109,7 @@ _08030270:
 	movs r0, #0
 	strb r0, [r1]
 	ldrh r0, [r4]
-	bl sub_08036D60
+	bl getSpriteGfxBank0
 	str r0, [r5, #0x24]
 	mov r0, r8
 	str r0, [r5, #0x28]

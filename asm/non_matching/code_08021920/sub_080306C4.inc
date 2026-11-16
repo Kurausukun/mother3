@@ -12,19 +12,19 @@ sub_080306C4:
 	ldr r4, _0803071C
 _080306D8:
 	movs r0, #0xfe
-	bl sub_08036D60
+	bl getSpriteGfxBank0
 	movs r2, #0x80
 	lsls r2, r2, #5
 	adds r1, r4, #0
 	bl CpuSmartSet
 	movs r0, #0xa6
-	bl sub_08036D60
+	bl getSpriteGfxBank0
 	ldr r1, _08030720
 	movs r2, #0x80
 	lsls r2, r2, #3
 	bl CpuSmartSet
 	movs r0, #0
-	bl sub_08036DDC
+	bl getSpritePalette
 	movs r1, #0x10
 	movs r2, #0xe0
 	bl copyPalettesToBufferIwram

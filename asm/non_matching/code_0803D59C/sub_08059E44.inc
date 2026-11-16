@@ -41,7 +41,7 @@ _08059E6C:
 	ldrh r0, [r5, #0x3e]
 	lsls r1, r1, #0x1a
 	lsrs r1, r1, #0x1e
-	bl sub_08036E0C
+	bl getSpriteInfo
 	adds r4, r0, #0
 	bl sub_08002C4C
 	adds r7, r0, #0
@@ -64,7 +64,7 @@ _08059E6C:
 	b _08059ECE
 _08059EC8:
 	ldrh r0, [r5, #0x3e]
-	bl sub_08036D78
+	bl getSpriteGfx
 _08059ECE:
 	str r0, [r5, #8]
 	mov r3, r8
